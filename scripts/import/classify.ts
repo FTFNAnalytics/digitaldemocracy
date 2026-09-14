@@ -14,16 +14,38 @@ export function classifyRelativePath(relativePath: string): {
   return { documentType: "unknown", adapter: "unknown" };
 }
 
-function globMatch(pattern: string, value: string): boolean {
-  const regex = new RegExp(
-    `^${pattern
-      .replace(/[.+^${}()|[\]\\]/g, "\\$&")
-      .replace(/\*\*/g, ":::GLOBSTAR:::")
-      .replace(/\*/g, "[^/]*")
-      .replace(/:::GLOBSTAR:::/g, ".*")}$`,
-    "i",
-  );
-  return regex.test(value);
+export function globMatch(pattern: string, value: string): boolean {
+  let i = 0;
+  let regex = "^";
+  while (i < pattern.length) {
+    if (pattern.startsWith("**/", i)) {
+      regex += "(?:.*/)?";
+      i += 3;
+    } else if (pattern.startsWith("**", i)) {
+      regex += ".*";
+      i += 2;
+    } else if (pattern[i] === "*") {
+      regex += "[^/]*";
+      i += 1;
+    } else if (pattern[i] === "{") {
+      const end = pattern.indexOf("}", i);
+      const options = pattern
+        .slice(i + 1, end)
+        .split(",")
+        .map(escapeRegex);
+      regex += `(?:${options.join("|")})`;
+      i = end + 1;
+    } else {
+      regex += escapeRegex(pattern[i]!);
+      i += 1;
+    }
+  }
+  regex += "$";
+  return new RegExp(regex, "i").test(value);
+}
+
+function escapeRegex(value: string): string {
+  return value.replace(/[.+^${}()|[\]\\]/g, "\\$&");
 }
 
 export function adapterStatus(adapter: string): "ready" | "stub" {

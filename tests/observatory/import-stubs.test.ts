@@ -39,5 +39,8 @@ describe("input classification", () => {
     expect(classifyRelativePath("Data/polling_context.json").documentType).toBe("polling_context");
     expect(classifyRelativePath("Data/Ecuador.json").documentType).toBe("country_record");
     expect(classifyRelativePath("Briefings/EC-P-1.html").documentType).toBe("office_briefing_html");
+    expect(classifyRelativePath("Briefings/nested/EC-P-1.html").documentType).toBe(
+      "office_briefing_html",
+    );
   });
 });
