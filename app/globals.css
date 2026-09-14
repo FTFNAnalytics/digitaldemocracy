@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0a192f;
+  --navy-800: #112240;
+  --navy-700: #163050;
+  --navy-600: #1d3a5c;
+  --accent: #a2ff00;
+  --accent-soft: #c8ff5c;
+  --accent-ink: #142200;
+  --mist: #e8eef4;
+  --paper: #ffffff;
+  --ink: #0f172a;
+  --muted: #5b6b80;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-navy-600: var(--navy-600);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-ink: var(--accent-ink);
+  --color-mist: var(--mist);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-plus-jakarta);
+  --shadow-card: 0 18px 40px -24px rgb(10 25 47 / 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7.5rem;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.circuit-panel {
+  background-color: #f7fafc;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgb(10 25 47 / 0.08) 1px, transparent 0),
+    linear-gradient(135deg, transparent 40%, rgb(162 255 0 / 0.06) 100%);
+  background-size: 22px 22px, auto;
+}
+
+.node-pulse {
+  animation: node-pulse 3.6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes node-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .node-pulse {
+    animation: none;
+  }
+}
