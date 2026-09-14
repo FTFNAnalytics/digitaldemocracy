@@ -19,8 +19,8 @@ export default function Home() {
       >
         Skip to content
       </a>
+      <PrototypeBanner />
       <div className="sticky top-0 z-50">
-        <PrototypeBanner />
         <Header />
       </div>
       <main id="content">

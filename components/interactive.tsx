@@ -8,7 +8,7 @@ import { emailError, requiredText } from "@/lib/validation";
 function FieldError({ id, message }: { id?: string; message?: string }) {
   if (!message) return null;
   return (
-    <p id={id} className="mt-1.5 text-sm text-red-300" role="alert">
+    <p id={id} className="mt-1.5 text-sm text-[#ff8b8b]" role="alert">
       {message}
     </p>
   );
@@ -231,7 +231,7 @@ export function Header() {
   }, [open]);
 
   return (
-    <header className="bg-navy/95 backdrop-blur-md">
+    <header className="relative bg-navy/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-8">
         <LogoLink />
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
@@ -272,7 +272,10 @@ export function Header() {
         </button>
       </div>
       {open ? (
-        <div id="mobile-nav" className="border-t border-white/10 bg-navy px-5 py-4 lg:hidden">
+        <div
+          id="mobile-nav"
+          className="absolute inset-x-0 top-full z-40 min-h-[calc(100dvh-4.5rem)] border-t border-white/10 bg-navy px-5 py-6 lg:hidden"
+        >
           <nav className="flex flex-col gap-1" aria-label="Mobile">
             {navLinks.map((link) => (
               <a
