@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useId, useState } from "react";
-import { navLinks } from "@/lib/content";
+import Link from "next/link";
+import { navLinks, productLinks } from "@/lib/content";
 import { cn } from "@/lib/cn";
 import { emailError, requiredText } from "@/lib/validation";
 
@@ -206,7 +207,9 @@ export function Header() {
   const [active, setActive] = useState("#home");
 
   useEffect(() => {
-    const ids = navLinks.map((l) => l.href.slice(1));
+    const ids = navLinks
+      .filter((l) => l.href.startsWith("#"))
+      .map((l) => l.href.slice(1));
     const observer = new IntersectionObserver(
       (entries) => {
         const visible = entries
@@ -249,6 +252,15 @@ export function Header() {
               {link.label}
             </a>
           ))}
+          {productLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="rounded-full px-3 py-2 text-sm font-semibold tracking-wide text-accent transition hover:text-accent-soft"
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
         <a
           href="#connect"
@@ -286,6 +298,16 @@ export function Header() {
               >
                 {link.label}
               </a>
+            ))}
+            {productLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="rounded-xl px-3 py-3 text-base font-semibold text-accent hover:bg-navy-800"
+              >
+                {link.label}
+              </Link>
             ))}
             <a
               href="#connect"

@@ -23,6 +23,10 @@ export const navLinks = [
   { href: "#connect", label: "Connect" },
 ] as const;
 
+export const productLinks = [
+  { href: "/electiondatabase", label: "Election database" },
+] as const;
+
 export const about = {
   mission: [
     "The Center for Digital Democracy is an independent research and policy institute dedicated to ensuring that digital technologies strengthen—rather than erode—democratic life. We study how platforms, data markets, and emerging AI systems shape public discourse, civic participation, and the integrity of elections.",
