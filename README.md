@@ -15,7 +15,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-The **Subnational Election Observatory** lives at [`/electiondatabase`](/electiondatabase). It is an additional product area — the marketing homepage is unchanged. Research pages load the versioned Latin America release: 18,229 current offices, 414 historical offices, 40,509 histories, and 18,643 full briefings. Research coverage remains partial. See [integration status and operations](docs/electiondatabase-progress.md).
+The **Subnational Election Observatory** lives at [`/electiondatabase`](/electiondatabase). It is an additional product area — the marketing homepage is unchanged. Research pages load the versioned Latin America release: 18,229 current offices, 414 historical offices, 40,509 histories, and 18,643 full briefings. Research coverage remains partial. See [integration status and operations](docs/electiondatabase-progress.md). The original implementation brief is preserved in [`docs/implementation-brief.md`](docs/implementation-brief.md).
 
 ## Scripts
 
