@@ -17,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 The **Subnational Election Observatory** lives at [`/electiondatabase`](/electiondatabase). It is an additional product area — the marketing homepage is unchanged. Research pages load the versioned Latin America release plus standalone country packages under `data/countries/*` (Europe and New Zealand as supplied). Research coverage remains partial. See [integration status](docs/electiondatabase-progress.md) and [country-package mapping](docs/electiondatabase-country-packages.md). The original implementation brief is preserved in [`docs/implementation-brief.md`](docs/implementation-brief.md).
 
-The observatory is being restructured as the **Election Atlas** at `/atlas`, with SQLite on the VPS as the master store, Europe as the first vertical, and regional calendars/indexes shipping before municipal completeness. `/electiondatabase` will redirect to `/atlas` equivalents when implementation starts; this repository still serves the current observatory until then. The accepted plan (pending further feedback) is [`docs/atlas-plan.md`](docs/atlas-plan.md).
+The observatory is being restructured as the **Election Atlas** at `/atlas`, with SQLite on the VPS as the master store, Europe as the first vertical, and regional calendars/indexes shipping before municipal completeness. `/electiondatabase` stays live until **cutover**, when working `/atlas` destinations exist and redirects plus SEO ship together; office and event URLs will not bounce to Atlas home. The plan (revised with review acceptance criteria, still pending further audit before implementation) is [`docs/atlas-plan.md`](docs/atlas-plan.md).
 
 ## Scripts
 
