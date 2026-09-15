@@ -1,6 +1,13 @@
-import { coverageStatusLabel, valueStatusLabel } from "@/lib/observatory/format";
+import {
+  coverageStatusLabel,
+  valueStatusLabel,
+} from "@/lib/observatory/format";
 import { metricBadgeLabel } from "@/lib/observatory/metrics";
-import type { CoverageStatus, MetricReviewStatus, ValueStatus } from "@/schemas/v1/normalized";
+import type {
+  CoverageStatus,
+  MetricReviewStatus,
+  ValueStatus,
+} from "@/schemas/v1/normalized";
 import { cn } from "@/lib/cn";
 
 function Pill({
@@ -27,7 +34,11 @@ function Pill({
 
 export function CoveragePill({ status }: { status: CoverageStatus }) {
   const tone =
-    status === "available" ? "ok" : status === "not_supplied" || status === "screened_out" ? "mute" : "warn";
+    status === "available"
+      ? "ok"
+      : status === "not_supplied" || status === "screened_out"
+        ? "mute"
+        : "warn";
   return (
     <Pill tone={tone}>
       <StatusMark status={status} />
@@ -42,7 +53,9 @@ export function ValuePill({ status }: { status: ValueStatus }) {
       ? "ok"
       : status === "zero"
         ? "neutral"
-        : status === "unknown" || status === "structurally_unavailable" || status === "not_applicable"
+        : status === "unknown" ||
+            status === "structurally_unavailable" ||
+            status === "not_applicable"
           ? "mute"
           : "warn";
   return (
@@ -53,13 +66,28 @@ export function ValuePill({ status }: { status: ValueStatus }) {
   );
 }
 
-export function MetricPill({ status }: { status: MetricReviewStatus }) {
+export function MetricPill({
+  status,
+  kind = "competition_index",
+  scoreGate = null,
+}: {
+  status: MetricReviewStatus;
+  kind?: string;
+  scoreGate?: boolean | null;
+}) {
+  if (
+    status === "cleared" &&
+    (kind !== "competition_index" || scoreGate !== true)
+  )
+    status = "provisional";
   const tone =
     status === "cleared" ? "ok" : status === "provisional" ? "warn" : "mute";
   return (
     <Pill tone={tone}>
       <StatusMark status={status} />
-      {metricBadgeLabel(status)}
+      {kind === "competition_index"
+        ? metricBadgeLabel(status)
+        : `${status.charAt(0).toUpperCase() + status.slice(1)} volatility`}
     </Pill>
   );
 }
@@ -70,15 +98,25 @@ function StatusMark({ status }: { status: string }) {
       ? "●"
       : status === "zero"
         ? "0"
-        : status === "unknown" || status === "not_supplied" || status === "ineligible"
+        : status === "unknown" ||
+            status === "not_supplied" ||
+            status === "ineligible"
           ? "○"
-          : status === "provisional" || status === "partial" || status === "fixture_only"
+          : status === "provisional" ||
+              status === "partial" ||
+              status === "fixture_only"
             ? "△"
             : "□";
   return <span aria-hidden>{symbol}</span>;
 }
 
-export function EmptyState({ title, children }: { title: string; children: React.ReactNode }) {
+export function EmptyState({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="circuit-panel rounded-2xl border border-dashed border-navy/20 px-5 py-8">
       <p className="obs-heading text-lg">{title}</p>

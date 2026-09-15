@@ -3,7 +3,7 @@
  * Conceptual entities (no hosted database required). Unknown upstream fields
  * belong in `extensions.raw` and must survive a round-trip.
  */
-export const NORMALIZED_SCHEMA_VERSION = "1.0.0";
+export const NORMALIZED_SCHEMA_VERSION = "1.1.0";
 
 export type CoverageStatus =
   | "available"
@@ -64,8 +64,10 @@ export type BallotBasis =
   | "electors"
   | "unknown";
 
-export type EventKind = "ordinary" | "special" | "repeated" | "indirect";
+export type EventKind = "ordinary" | "special" | "repeated" | "indirect" | "unknown";
 export type LegalOutcome =
+  | "unknown"
+  | "not_held"
   | "certified"
   | "annulled"
   | "preliminary"
@@ -204,6 +206,8 @@ export type OfficeRecord = {
 export type ResultRow = {
   id: string;
   label: string;
+  candidate?: string | null;
+  extensions?: Extensions;
   partyCode: string;
   partyNamespace: string;
   votes: NumericValue;
@@ -267,9 +271,13 @@ export type OfficeholderObservation = {
   sourceIds: string[];
   /** Dated observation — not automatically current tenure. */
   impliesCurrentTenure: false;
+  observationType?: string;
+  notes?: string;
+  extensions?: Extensions;
 };
 
 export type RegisterObservation = {
+  extensions?: Extensions;
   id: string;
   geographyId: string;
   officeId: string | null;
@@ -280,6 +288,7 @@ export type RegisterObservation = {
 };
 
 export type PollObservation = {
+  extensions?: Extensions;
   id: string;
   pollster: string;
   population: string;
@@ -353,6 +362,8 @@ export type BriefingArtifact = {
   checksum: string | null;
   available: boolean;
   notes: string;
+  bytes?: number;
+  originalPath?: string;
 };
 
 export type NormalizedDataset = {

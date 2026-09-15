@@ -116,7 +116,7 @@ export const INPUT_MANIFEST: InputManifestEntry[] = [
   {
     documentType: "country_record",
     adapter: "country-json",
-    glob: ["Data/*.json"],
+    glob: ["Data/{Antigua_and_Barbuda,Argentina,Bahamas,Belize,Brazil,Colombia,Costa_Rica,Cuba,Dominica,Dominican_Republic,Ecuador,El_Salvador,Guatemala,Guyana,Haiti,Jamaica,Mexico,Paraguay,Peru,Saint_Kitts_and_Nevis,Trinidad_and_Tobago}.json"],
     disposition: "import",
     notes:
       "Main country records with country, coverage, offices, histories, rosters, issues, sources, polling. Exclude files matched by more specific adapters (those adapters are listed first).",

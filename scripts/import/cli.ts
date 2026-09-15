@@ -3,12 +3,13 @@
  * Deterministic import entry.
  *
  * Default: require Latin_America_Races_and_Briefings.zip and fail clearly
- * when it is absent. Adapters are stubs until the real package can be
- * inventoried.
+ * when it is absent. Import validates source identities and references before
+ * publishing the normalized release.
  *
  * --fixtures writes a reconciliation report describing the synthetic
  * smoke-test dataset. It does not claim research coverage is complete.
  */
+import { importRelease } from "./release";
 import { mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { INPUT_MANIFEST, RELEASE_PACKAGE_FILENAME } from "../../schemas/v1/input-manifest";
@@ -60,13 +61,13 @@ function fixtureReport(): ReconciliationReport {
       {
         code: "FIXTURE_ONLY",
         severity: "warning",
-        message: `No ${RELEASE_PACKAGE_FILENAME} inventory was performed. Public research pages must stay in the awaiting-release state.`,
+        message: `This fixture-only run does not inventory ${RELEASE_PACKAGE_FILENAME} or change the real research release.`,
       },
     ],
     unimportedFiles: [
       {
         path: RELEASE_PACKAGE_FILENAME,
-        reason: "Package not supplied to this working tree.",
+        reason: "Fixture mode does not load the research package.",
       },
     ],
     notes: [
@@ -132,15 +133,7 @@ function main() {
     process.exit(1);
   }
 
-  console.error(
-    [
-      `Found ${zip}`,
-      "Country-record adapters are not yet bound to inspected file shapes.",
-      "Refusing to guess election records from an unreviewed package.",
-      "Next step: inventory the zip, confirm filename-to-office mappings, then implement South America adapters.",
-    ].join("\n"),
-  );
-  process.exit(2);
+  importRelease(zip);
 }
 
 main();

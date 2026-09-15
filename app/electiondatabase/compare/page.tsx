@@ -8,7 +8,6 @@ import { formatResearchDate } from "@/lib/observatory/dates";
 import { parseOfficeListParam } from "@/lib/observatory/filters";
 import {
   compareCompatibility,
-  getCurrentOffices,
   getOffice,
   metricsForOffice,
   selectedEventsForOffice,
@@ -18,7 +17,9 @@ import { obsRoutes } from "@/lib/observatory/routes";
 
 export const metadata: Metadata = { title: "Compare offices" };
 
-type Props = { searchParams: Promise<Record<string, string | string[] | undefined>> };
+type Props = {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
 
 export default async function ComparePage({ searchParams }: Props) {
   const params = await searchParams;
@@ -26,10 +27,11 @@ export default async function ComparePage({ searchParams }: Props) {
   const singles = ["a", "b", "c", "d"]
     .map((key) => (Array.isArray(params[key]) ? params[key][0] : params[key]))
     .filter((value): value is string => Boolean(value));
-  const ids = (fromList.length ? fromList : singles).slice(0, 4);
-  const offices = ids.map((id) => getOffice(id)).filter((office): office is NonNullable<typeof office> => Boolean(office));
+  const ids = [...new Set(fromList.length ? fromList : singles)].slice(0, 4);
+  const offices = ids
+    .map((id) => getOffice(id))
+    .filter((office): office is NonNullable<typeof office> => Boolean(office));
   const notes = compareCompatibility(offices.map((office) => office.id));
-  const catalog = getCurrentOffices();
 
   return (
     <>
@@ -43,33 +45,35 @@ export default async function ComparePage({ searchParams }: Props) {
           {
             key: "a",
             label: "Office A",
-            type: "select",
-            options: catalog.map((office) => ({ value: office.id, label: office.names.official })),
+            placeholder: "Office ID, e.g. EC-P-1",
           },
           {
             key: "b",
             label: "Office B",
-            type: "select",
-            options: catalog.map((office) => ({ value: office.id, label: office.names.official })),
+            placeholder: "Office ID, e.g. EC-P-1",
           },
           {
             key: "c",
             label: "Office C",
-            type: "select",
-            options: catalog.map((office) => ({ value: office.id, label: office.names.official })),
+            placeholder: "Office ID, e.g. EC-P-1",
           },
           {
             key: "d",
             label: "Office D",
-            type: "select",
-            options: catalog.map((office) => ({ value: office.id, label: office.names.official })),
+            placeholder: "Office ID, e.g. EC-P-1",
           },
         ]}
         submitLabel="Compare"
       />
 
       {offices.length < 2 ? (
-        <p className="text-sm text-navy/70">Select at least two offices. Filters stay in the URL.</p>
+        <p className="text-sm text-navy/70">
+          Enter at least two office IDs from the{" "}
+          <Link href={obsRoutes.explorer} className="obs-link">
+            explorer
+          </Link>{" "}
+          or office pages. Filters stay in the URL.
+        </p>
       ) : (
         <>
           {notes.length > 0 ? (
@@ -89,12 +93,18 @@ export default async function ComparePage({ searchParams }: Props) {
               return (
                 <section key={office.id} className="obs-card p-4">
                   <h2 className="obs-heading text-xl">
-                    <Link href={obsRoutes.office(office.id)} className="hover:text-navy-600">
+                    <Link
+                      href={obsRoutes.office(office.id)}
+                      className="hover:text-navy-600"
+                    >
                       {office.names.official}
                     </Link>
                   </h2>
                   <p className="mt-1 text-sm text-navy/65">
-                    Next: {office.nextElection ? formatResearchDate(office.nextElection.date) : "—"}
+                    Next:{" "}
+                    {office.nextElection
+                      ? formatResearchDate(office.nextElection.date)
+                      : "—"}
                   </p>
                   <h3 className="mt-4 text-xs font-semibold uppercase tracking-wider text-navy/55">
                     Selected cycles
@@ -102,7 +112,10 @@ export default async function ComparePage({ searchParams }: Props) {
                   <DataTable
                     caption={`Selected cycles for ${office.id}`}
                     columns={["Date", "Outcome"]}
-                    rows={selected.map((event) => [formatResearchDate(event.date), event.legalOutcome])}
+                    rows={selected.map((event) => [
+                      formatResearchDate(event.date),
+                      event.legalOutcome,
+                    ])}
                     empty="No selected cycles."
                   />
                   <h3 className="mt-4 text-xs font-semibold uppercase tracking-wider text-navy/55">
@@ -110,11 +123,19 @@ export default async function ComparePage({ searchParams }: Props) {
                   </h3>
                   <ul className="mt-2 space-y-2 text-sm">
                     {metrics.map((metric) => (
-                      <li key={metric.id} className="flex flex-wrap items-center justify-between gap-2">
+                      <li
+                        key={metric.id}
+                        className="flex flex-wrap items-center justify-between gap-2"
+                      >
                         <span>
-                          {metric.kind.replaceAll("_", " ")} · {formatNumeric(metric.value)}
+                          {metric.kind.replaceAll("_", " ")} ·{" "}
+                          {formatNumeric(metric.value)}
                         </span>
-                        <MetricPill status={metric.reviewStatus} />
+                        <MetricPill
+                          status={metric.reviewStatus}
+                          kind={metric.kind}
+                          scoreGate={metric.scoreGate}
+                        />
                       </li>
                     ))}
                   </ul>

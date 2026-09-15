@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { OfficeBriefing } from "@/components/observatory/office-briefing";
-import { getOffice, getOffices } from "@/lib/observatory/load";
+import { getOffice } from "@/lib/observatory/load";
 
 type Props = { params: Promise<{ officeId: string }> };
-
-export function generateStaticParams() {
-  return getOffices().map((office) => ({ officeId: office.id }));
-}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { officeId } = await params;

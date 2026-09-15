@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/observatory/chrome";
 import { getDataset } from "@/lib/observatory/load";
-import { RELEASE_PACKAGE_FILENAME } from "@/schemas/v1/input-manifest";
 
 export const metadata: Metadata = { title: "Release history" };
 
@@ -18,19 +17,20 @@ export default function ReleasesPage() {
       <article className="obs-card p-5">
         <h2 className="obs-heading text-2xl">{release.id}</h2>
         <p className="mt-2 text-sm text-navy/70">
-          Schema {release.schemaVersion} · methods {release.methodVersion} · provenance{" "}
-          {release.provenance.kind}
+          Schema {release.schemaVersion} · methods {release.methodVersion} ·
+          provenance {release.provenance.kind}
         </p>
         <p className="mt-3 text-navy/80">{release.provenance.notes}</p>
         <p className="mt-3 text-sm text-navy/70">
-          Research coverage complete: {String(release.researchCoverageComplete)}. Snapshot:{" "}
-          {release.snapshotLabel ?? "none"}.
+          Research coverage complete: {String(release.researchCoverageComplete)}
+          . Snapshot: {release.snapshotLabel ?? "none"}.
         </p>
       </article>
       <p className="mt-6 text-sm text-navy/70">
-        No prior public research release is available in this repository. The next real row should
-        appear after {RELEASE_PACKAGE_FILENAME} is imported. Importing a later release must produce
-        a reviewable diff; that path is not active yet.
+        This is the first imported research release. Its manifest records
+        original file checksums, validated counts, and known source-summary
+        discrepancies. Subsequent imports are reviewed through repository
+        changes.
       </p>
     </>
   );

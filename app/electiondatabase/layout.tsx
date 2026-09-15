@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import type { Metadata } from "next";
 import { Container } from "@/components/container";
 import {
@@ -12,10 +13,14 @@ export const metadata: Metadata = {
     template: "%s · Subnational Election Observatory",
   },
   description:
-    "Searchable subnational election research from the Center for Digital Democracy. Latin America import is awaiting the release package.",
+    "Searchable subnational election research from the Center for Digital Democracy. Explore imported Latin America records, original evidence, and remaining research gaps.",
 };
 
-export default function ObservatoryLayout({ children }: { children: React.ReactNode }) {
+export default function ObservatoryLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div className="observatory min-h-screen bg-mist text-ink">
       <a

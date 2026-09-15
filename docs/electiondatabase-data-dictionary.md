@@ -29,3 +29,13 @@ Authoritative TypeScript types live in `schemas/v1/normalized.ts`. This page is 
 ## Dates
 
 `ResearchDate.label` is the display form. Month-precision dates must not carry a `day`.
+
+## Imported release additions (schema 1.1.0)
+
+- `extensions.raw` retains source-specific evidence and qualifications without inventing a universal field mapping. Original country documents and supporting text files remain separately downloadable.
+- `ElectionEvent.legalOutcome` adds `unknown` and `not_held`. Statistical completeness and elected flags do not prove legal certification. `EventKind` adds `unknown` when no supported mapping exists.
+- `ResultRow.candidate` preserves a candidate name separately from party/list identity. Unknown votes or seats remain null, recorded zero remains zero, and original row fields are preserved in `extensions.raw`.
+- `OfficeholderObservation` adds observation type and notes. A dated roster observation never implies current tenure without separate evidence.
+- Register observations preserve July/August counts, changes, spending limits, administrative codes and source locators in `extensions.raw`; these are not historical turnout.
+- Source IDs are country-namespaced. The original source ID is retained after the `country--` prefix; references absent from a source catalogue are explicit unresolved references, with no invented URL.
+- Artifact records add original path and byte size. Compressed server objects decompress to the exact original source checksum. Briefing HTML is sanitized for display; the original archive is a separate artifact.

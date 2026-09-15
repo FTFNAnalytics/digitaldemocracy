@@ -14,23 +14,25 @@ export default function AboutPage() {
       />
       <div className="max-w-3xl space-y-4 text-[1.02rem] leading-relaxed text-navy/85">
         <p>
-          Users include researchers, journalists, public officials, and interested citizens. The
-          first intended content is the Latin America and Caribbean research package, with South
-          America as the default landing region.
+          Users include researchers, journalists, public officials, and
+          interested citizens. The first intended content is the Latin America
+          and Caribbean research package, with South America as the default
+          landing region.
         </p>
         <p>
-          This website does not invent organizational history, staff, institutional partnerships,
-          endorsements, or a Git hosting identity beyond the repository that already hosts the
-          Center’s public site.
+          This website does not invent organizational history, staff,
+          institutional partnerships, endorsements, or a Git hosting identity
+          beyond the repository that already hosts the Center’s public site.
         </p>
         <p>
-          English is the initial interface language. Original-language evidence is preserved. UI
-          strings are structured so they can be localized later; translations are not fabricated
-          here.
+          English is the initial interface language. Original-language evidence
+          is preserved. UI strings are structured so they can be localized
+          later; translations are not fabricated here.
         </p>
         <p>
-          Software delivery of this first slice (routes, schemas, import stubs, and labelled
-          fixtures) is in progress. Research coverage is not complete.
+          The Latin America research release is integrated. Source evidence and
+          remaining requirements are available for review. Research coverage is
+          not complete.
         </p>
       </div>
     </>

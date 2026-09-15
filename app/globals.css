@@ -184,3 +184,13 @@ body {
     animation: none;
   }
 }
+
+.original-briefing { color: var(--color-navy); overflow-wrap: anywhere; line-height: 1.65; }
+.original-briefing h1, .original-briefing h2, .original-briefing h3 { font-weight: 700; margin: 1.5rem 0 .75rem; }
+.original-briefing h1 { font-size: 1.75rem; }
+.original-briefing h2 { font-size: 1.4rem; }
+.original-briefing p, .original-briefing ul { margin: .75rem 0; }
+.original-briefing a { text-decoration: underline; }
+.original-briefing table { display: block; overflow-x: auto; width: 100%; margin: 1rem 0; border-collapse: collapse; }
+.original-briefing th, .original-briefing td { border: 1px solid #ccd2dc; padding: .5rem; text-align: left; min-width: 5rem; }
+.original-briefing th { background: #eef1f5; }

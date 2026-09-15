@@ -1,3 +1,4 @@
+import { paginate, Pagination } from "@/components/observatory/pagination";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/observatory/chrome";
@@ -17,7 +18,9 @@ import { obsRoutes } from "@/lib/observatory/routes";
 
 export const metadata: Metadata = { title: "Election explorer" };
 
-type Props = { searchParams: Promise<Record<string, string | string[] | undefined>> };
+type Props = {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
 
 export default async function ExplorerPage({ searchParams }: Props) {
   const params = await searchParams;
@@ -25,8 +28,8 @@ export default async function ExplorerPage({ searchParams }: Props) {
   const offices = filterOffices(filters);
   const countries = getCountries();
   const regions = getDataset().regions;
-  const areas = getDataset().geographies;
 
+  const paged = paginate(offices, params);
   return (
     <>
       <PageHeader
@@ -41,7 +44,10 @@ export default async function ExplorerPage({ searchParams }: Props) {
             key: "region",
             label: "Region",
             type: "select",
-            options: regions.map((region) => ({ value: region.id, label: region.name })),
+            options: regions.map((region) => ({
+              value: region.id,
+              label: region.name,
+            })),
           },
           {
             key: "country",
@@ -55,8 +61,7 @@ export default async function ExplorerPage({ searchParams }: Props) {
           {
             key: "area",
             label: "Area",
-            type: "select",
-            options: areas.map((area) => ({ value: area.id, label: area.names.official })),
+            placeholder: "Geography ID (or search place above)",
           },
           {
             key: "tier",
@@ -72,14 +77,22 @@ export default async function ExplorerPage({ searchParams }: Props) {
             key: "officeType",
             label: "Office type",
             type: "select",
-            options: [
-              { value: "governor", label: "Governor" },
-              { value: "mayor", label: "Mayor" },
-              { value: "council", label: "Council" },
-            ],
+            options: [...new Set(getDataset().offices.map((o) => o.officeType))]
+              .sort()
+              .map((value) => ({ value, label: value })),
           },
-          { key: "dateFrom", label: "Date from (year)", type: "number", placeholder: "2026" },
-          { key: "dateTo", label: "Date to (year)", type: "number", placeholder: "2028" },
+          {
+            key: "dateFrom",
+            label: "Date from (year)",
+            type: "number",
+            placeholder: "2026",
+          },
+          {
+            key: "dateTo",
+            label: "Date to (year)",
+            type: "number",
+            placeholder: "2028",
+          },
           {
             key: "dateCertainty",
             label: "Date certainty",
@@ -135,20 +148,38 @@ export default async function ExplorerPage({ searchParams }: Props) {
           },
         ]}
       />
-      <p className="mb-3 text-sm text-navy/65">{offices.length} offices in this view.</p>
+      <p className="mb-3 text-sm text-navy/65">
+        {offices.length} offices in this view.
+      </p>
+      <Pagination result={paged} params={params} />
       <DataTable
         caption="Filtered offices"
         columns={["Office", "Country", "Area", "Next date", "Metric"]}
-        rows={offices.map((office) => {
+        rows={paged.items.map((office) => {
           const metric = metricsForOffice(office.id)[0];
           return [
-            <Link key={office.id} href={obsRoutes.office(office.id)} className="obs-link">
+            <Link
+              key={office.id}
+              href={obsRoutes.office(office.id)}
+              className="obs-link"
+            >
               {office.names.official}
             </Link>,
             office.countryId,
             getGeography(office.geographyId)?.names.official ?? "—",
-            office.nextElection ? formatResearchDate(office.nextElection.date) : "—",
-            metric ? <MetricPill key={`${office.id}-m`} status={metric.reviewStatus} /> : "None",
+            office.nextElection
+              ? formatResearchDate(office.nextElection.date)
+              : "—",
+            metric ? (
+              <MetricPill
+                key={`${office.id}-m`}
+                status={metric.reviewStatus}
+                kind={metric.kind}
+                scoreGate={metric.scoreGate}
+              />
+            ) : (
+              "None"
+            ),
           ];
         })}
         empty="No offices match these filters."

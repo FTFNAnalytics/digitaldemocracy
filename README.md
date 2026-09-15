@@ -15,7 +15,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-The **Subnational Election Observatory** lives at [`/electiondatabase`](/electiondatabase). It is an additional product area — the marketing homepage is unchanged. Research pages are awaiting `Latin_America_Races_and_Briefings.zip` and do not invent real elections. See `docs/electiondatabase-progress.md`.
+The **Subnational Election Observatory** lives at [`/electiondatabase`](/electiondatabase). It is an additional product area — the marketing homepage is unchanged. Research pages load the versioned Latin America release: 18,229 current offices, 414 historical offices, 40,509 histories, and 18,643 full briefings. Research coverage remains partial. See [integration status and operations](docs/electiondatabase-progress.md).
 
 ## Scripts
 
@@ -25,9 +25,10 @@ The **Subnational Election Observatory** lives at [`/electiondatabase`](/electio
 | `npm run build` | Production build (must succeed) |
 | `npm start` / `npm run preview` | Serve the production build |
 | `npm run lint` | ESLint |
-| `npm test` | Unit and smoke tests (fixtures + script stubs) |
+| `npm test` | Adapter and semantic tests; fixtures are test-only |
 | `npm run import:data` | Import the Latin America zip (fails clearly if missing) |
-| `npm run validate:data` | Validate an imported release (fails clearly if missing) |
+| `npm run validate:data` | Validate normalized records and checksums (no original ZIP required) |
+| `npm run validate:evidence` | Compare every historical row and office selection against original source objects |
 | `npm run import:data -- --fixtures` | Write a fixture reconciliation report only |
 | `npm run validate:data -- --fixtures` | Validate the synthetic smoke-test dataset |
 
