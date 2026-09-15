@@ -17,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 The **Subnational Election Observatory** lives at [`/electiondatabase`](/electiondatabase). It is an additional product area — the marketing homepage is unchanged. Research pages load the versioned Latin America release plus standalone country packages under `data/countries/*` (Europe and New Zealand as supplied). Research coverage remains partial. See [integration status](docs/electiondatabase-progress.md) and [country-package mapping](docs/electiondatabase-country-packages.md). The original implementation brief is preserved in [`docs/implementation-brief.md`](docs/implementation-brief.md).
 
-The observatory is being restructured as the **Election Atlas** at `/atlas`, with SQLite on the VPS as the master store, Europe as the first vertical, and regional calendars/indexes shipping before municipal completeness. `/electiondatabase` stays live until **cutover**, when working `/atlas` destinations exist and redirects plus SEO ship together; office and event URLs will not bounce to Atlas home. The plan (revised after two second-pass audits; Phase 1 un-gated once Justin disposes this revision) is [`docs/atlas-plan.md`](docs/atlas-plan.md).
+The observatory is being restructured as the **Election Atlas** at `/atlas`, with SQLite on the VPS as the master store, Europe as the first vertical, and regional calendars/indexes shipping before municipal completeness. `/electiondatabase` stays live until **cutover**, when working `/atlas` destinations exist and redirects plus SEO ship together; office and event URLs will not bounce to Atlas home. The plan is [`docs/atlas-plan.md`](docs/atlas-plan.md). Phase 1 scaffolding (paths, gitignore, migrate/import entrypoints, bootstrap `schema_version`) is described in [`docs/atlas-phase1.md`](docs/atlas-phase1.md). There is still **no** `/atlas` route.
 
 ## Scripts
 
@@ -30,6 +30,8 @@ The observatory is being restructured as the **Election Atlas** at `/atlas`, wit
 | `npm test` | Adapter and semantic tests; fixtures are test-only |
 | `npm run import:data` | Import the Latin America zip (fails clearly if missing) |
 | `npm run import:countries` | Inventory and validate `data/countries/*` standalone packages |
+| `npm run migrate:atlas` | Apply Atlas SQL migrations to `ATLAS_SQLITE_PATH` (bootstrap `schema_version` only) |
+| `npm run import:atlas` | Ingest into the Atlas SQLite master (stub: fails until reviewed DDL and Albania ingest land) |
 | `npm run import:data -- --countries` | Same country-package import when the Latin America zip is absent |
 | `npm run validate:data` | Validate Latin America records, country packages, and the merged dataset |
 | `npm run validate:evidence` | Compare every historical row and office selection against original source objects |
@@ -73,6 +75,17 @@ npm run validate:data
 ```
 
 That is intentional: the Latin America importer will not invent elections, and the country adapter will not pretend Europe has Latin America completeness.
+
+### Election Atlas SQLite path
+
+`npm run migrate:atlas` and `npm run import:atlas` read **`ATLAS_SQLITE_PATH`**.
+
+| Environment | Path |
+| --- | --- |
+| Local / CI default | `data/master/atlas.sqlite` (gitignored) |
+| Production VPS | `/var/lib/cdd/atlas.sqlite` (set `ATLAS_SQLITE_PATH`) |
+
+Creating the VPS path is ops hygiene only. Phase 1 is not complete until Albania storage proof and the named CI tests in the plan pass. Full entity DDL, the Albania tier file, and Albania ingest are still waiting on reviewed ChatGPT artifacts — see [`docs/atlas-phase1.md`](docs/atlas-phase1.md).
 
 ## License
 

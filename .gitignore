@@ -52,3 +52,13 @@ next-env.d.ts
 # Transactional import staging and recovery copies
 /data/research.staging/
 /data/research.previous/
+
+# Election Atlas SQLite master — never commit the database file
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+/data/master/*
+!/data/master/.gitkeep
+!/data/master/README.md
+/data/exports/

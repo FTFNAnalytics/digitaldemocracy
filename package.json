@@ -12,6 +12,8 @@
     "seo:assets": "node scripts/generate-seo-assets.mjs",
     "import:data": "node --import tsx scripts/import/cli.ts",
     "import:countries": "node --import tsx scripts/import/countries.ts",
+    "migrate:atlas": "node --experimental-sqlite --no-warnings --import tsx scripts/atlas/migrate.ts",
+    "import:atlas": "node --import tsx scripts/atlas/import.ts",
     "validate:data": "node --import tsx scripts/validate/cli.ts",
     "validate:evidence": "node --import tsx scripts/validate/release-evidence.ts"
   },

@@ -6,6 +6,7 @@ export default defineConfig({
     environment: "node",
     env: { OBSERVATORY_FIXTURES: "1" },
     include: ["tests/**/*.test.ts"],
+    execArgv: ["--experimental-sqlite", "--no-warnings"],
   },
   resolve: {
     alias: {

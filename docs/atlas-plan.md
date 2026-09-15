@@ -1,6 +1,6 @@
 # Election Atlas — restructuring plan
 
-**Status:** Revised after two second-pass audits. This PR remains **documentation only** (this document and the README pointer). No Atlas UI, SQLite schema, import scripts, or redirects land here.
+**Status:** Phase 0 plan is on main. Phase 1 **scaffolding** (gitignore, `ATLAS_SQLITE_PATH`, migrate/import entrypoints, bootstrap `schema_version`) is tracked in [`docs/atlas-phase1.md`](atlas-phase1.md). Full Albania storage proof still waits on reviewed entity DDL, the Albania tier file, and the Albania map. No `/atlas` UI or redirects.
 
 **Phase 0** (this plan) merges when Justin says. **Phase 1 is un-gated by Justin’s disposition on this revision** — it does not wait on open-ended further audits. After Phase 1 exits, **stop for Phase 2 review**.
 
@@ -623,9 +623,9 @@ Operational detail for the live observatory remains in [`docs/electiondatabase-p
 - Observatory routes live under `/electiondatabase` (`lib/observatory/routes.ts`).
 - Latin America release loads from `data/research`; country packages merge at runtime via `lib/observatory/adapters/`.
 - Observatory home still highlights South America. Atlas landing will highlight Europe; that is independent of keeping already-public URLs working.
-- There is **no** SQLite master and **no** `/atlas` route yet.
+- There is **no** `/atlas` route yet. Phase 1 scaffolding can create a gitignored bootstrap SQLite file (`schema_version` / `atlas_meta` only); that is not Albania storage proof.
 - `data/incoming/` has no zip (only README / `.gitkeep`). `data/overrides/` is not present yet. Fixtures stay under `tests/fixtures/` (test-only).
-- `.gitignore` does not yet ignore `*.sqlite` (Phase 1).
+- `.gitignore` ignores `*.sqlite` / WAL / SHM and `data/master/` database files (Phase 1 scaffolding).
 
 ### Regional coverage counting
 
