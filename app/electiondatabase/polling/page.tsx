@@ -64,11 +64,11 @@ export default async function PollingPage({ searchParams }: Props) {
           {polls.map((poll) => {
             const office = poll.officeId ? getOffice(poll.officeId) : null;
             return (
-              <article key={poll.id} className="rounded-sm border border-obs-rule bg-white p-5">
-                <p className="text-xs font-semibold uppercase tracking-wider text-obs-teal">
+              <article key={poll.id} className="obs-card p-5">
+                <p className="obs-kicker">
                   {poll.scope} · {poll.questionType.replaceAll("_", " ")}
                 </p>
-                <h2 className="mt-1 font-serif text-2xl text-navy">{poll.pollster}</h2>
+                <h2 className="mt-1 obs-heading text-2xl">{poll.pollster}</h2>
                 <p className="mt-2 text-sm text-navy/75">{poll.questionText}</p>
                 <p className="mt-2 text-sm text-navy/65">
                   Population: {poll.population}. Fieldwork {formatResearchDate(poll.fieldwork)}
@@ -79,7 +79,7 @@ export default async function PollingPage({ searchParams }: Props) {
                 {office ? (
                   <p className="mt-2 text-sm">
                     Attached only to{" "}
-                    <Link href={obsRoutes.office(office.id)} className="text-obs-teal hover:underline">
+                    <Link href={obsRoutes.office(office.id)} className="obs-link">
                       {office.names.official}
                     </Link>
                     .

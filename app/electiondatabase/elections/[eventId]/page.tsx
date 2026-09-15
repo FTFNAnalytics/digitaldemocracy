@@ -47,7 +47,7 @@ export default async function EventPage({ params }: Props) {
       >
         <p className="mt-3 text-sm text-navy/70">
           {office ? (
-            <Link href={obsRoutes.office(office.id)} className="text-obs-teal hover:underline">
+            <Link href={obsRoutes.office(office.id)} className="obs-link">
               {office.names.official}
             </Link>
           ) : (
@@ -68,7 +68,7 @@ export default async function EventPage({ params }: Props) {
       </dl>
 
       <section className="mb-8">
-        <h2 className="font-serif text-2xl text-navy">Candidate and list results</h2>
+        <h2 className="obs-heading text-2xl">Candidate and list results</h2>
         {event.resultRows.length === 0 ? (
           <p className="mt-3 text-sm text-navy/70">No result rows — this event has not been held or returns were not supplied.</p>
         ) : (
@@ -101,7 +101,7 @@ export default async function EventPage({ params }: Props) {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-2xl text-navy">Proceedings</h2>
+        <h2 className="obs-heading text-2xl">Proceedings</h2>
         <p className="mt-2 text-sm text-navy/70">
           A recount is a result version, not an extra election. Annulments remain evidence without
           becoming valid completed cycles.
@@ -124,11 +124,11 @@ export default async function EventPage({ params }: Props) {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-2xl text-navy">Sources</h2>
+        <h2 className="obs-heading text-2xl">Sources</h2>
         <ul className="mt-2 space-y-1 text-sm">
           {sources.map((source) => (
             <li key={source.id}>
-              <Link href={`${obsRoutes.sources}#${source.id}`} className="text-obs-teal hover:underline">
+              <Link href={`${obsRoutes.sources}#${source.id}`} className="obs-link">
                 {source.publisher}: {source.title}
               </Link>
             </li>
@@ -143,7 +143,7 @@ export default async function EventPage({ params }: Props) {
 
 function Fact({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-sm border border-obs-rule bg-white px-3 py-2">
+    <div className="obs-card px-3 py-2">
       <dt className="text-xs font-semibold uppercase tracking-wider text-navy/55">{label}</dt>
       <dd className="mt-1 text-navy">{value}</dd>
     </div>

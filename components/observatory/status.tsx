@@ -13,11 +13,11 @@ function Pill({
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1.5 rounded-sm border px-2 py-0.5 text-xs font-medium",
-        tone === "neutral" && "border-navy/20 bg-white text-navy",
+        "inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-semibold",
+        tone === "neutral" && "border-navy/15 bg-white text-navy",
         tone === "warn" && "border-amber-800/30 bg-amber-50 text-amber-950",
-        tone === "ok" && "border-teal-800/25 bg-teal-50 text-teal-950",
-        tone === "mute" && "border-dashed border-navy/30 bg-obs-paper text-navy/70",
+        tone === "ok" && "border-accent/70 bg-accent text-accent-ink",
+        tone === "mute" && "border-dashed border-navy/30 bg-mist text-navy/70",
       )}
     >
       {children}
@@ -80,9 +80,9 @@ function StatusMark({ status }: { status: string }) {
 
 export function EmptyState({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="rounded-sm border border-dashed border-navy/25 bg-white px-5 py-8">
-      <p className="font-serif text-lg text-navy">{title}</p>
-      <div className="mt-2 text-sm leading-relaxed text-navy/70">{children}</div>
+    <div className="circuit-panel rounded-2xl border border-dashed border-navy/20 px-5 py-8">
+      <p className="obs-heading text-lg">{title}</p>
+      <div className="mt-2 text-sm leading-relaxed text-muted">{children}</div>
     </div>
   );
 }

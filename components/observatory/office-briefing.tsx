@@ -55,7 +55,7 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
         description={`${officeStatusLabel(office.status)}. Identifiers stay separate from display names.`}
       >
         <p className="mt-3 text-sm text-navy/70">
-          <Link href={obsRoutes.country(office.countryId)} className="text-obs-teal hover:underline">
+          <Link href={obsRoutes.country(office.countryId)} className="obs-link">
             {country?.names.official ?? office.countryId}
           </Link>
           {geo ? ` · ${geo.names.official}` : ""}
@@ -65,7 +65,7 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
       </PageHeader>
 
       <section className="mb-8">
-        <h2 className="font-serif text-2xl text-navy">1. What office, where, and when is the next election?</h2>
+        <h2 className="obs-heading text-2xl">1. What office, where, and when is the next election?</h2>
         <dl className="mt-3 grid gap-3 sm:grid-cols-2">
           <Fact label="Geography" value={geo?.names.official ?? "Unknown"} />
           <Fact
@@ -76,7 +76,7 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
             label="Linked upcoming event"
             value={
               next?.eventId ? (
-                <Link href={obsRoutes.event(next.eventId)} className="text-obs-teal hover:underline">
+                <Link href={obsRoutes.event(next.eventId)} className="obs-link">
                   {next.eventId}
                 </Link>
               ) : (
@@ -98,7 +98,7 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-2xl text-navy">2. How certain is that date?</h2>
+        <h2 className="obs-heading text-2xl">2. How certain is that date?</h2>
         {next ? (
           <p className="mt-3 text-navy/80">
             {formatResearchDate(next.date)} is{" "}
@@ -112,9 +112,9 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-2xl text-navy">3. Who won earlier selected elections?</h2>
+        <h2 className="obs-heading text-2xl">3. Who won earlier selected elections?</h2>
         {office.structuralLimitation ? (
-          <p className="mt-3 rounded-sm border border-amber-800/25 bg-amber-50 px-3 py-2 text-sm text-amber-950">
+          <p className="mt-3 rounded-2xl border border-amber-800/25 bg-amber-50 px-3 py-2 text-sm text-amber-950">
             {office.structuralLimitation}
           </p>
         ) : null}
@@ -123,10 +123,10 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
         ) : (
           <div className="mt-4 space-y-6">
             {selected.map((event) => (
-              <div key={event.id} className="rounded-sm border border-obs-rule bg-white p-4">
+              <div key={event.id} className="obs-card p-4">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 className="font-serif text-xl text-navy">
-                    <Link href={obsRoutes.event(event.id)} className="hover:text-obs-teal">
+                  <h3 className="obs-heading text-xl">
+                    <Link href={obsRoutes.event(event.id)} className="hover:text-navy-600">
                       {formatResearchDate(event.date)}
                     </Link>
                   </h3>
@@ -166,11 +166,11 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
         )}
         {other.length > 0 ? (
           <div className="mt-6">
-            <h3 className="font-serif text-xl text-navy">Other events (not selected cycles)</h3>
+            <h3 className="obs-heading text-xl">Other events (not selected cycles)</h3>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">
               {other.map((event) => (
                 <li key={event.id}>
-                  <Link href={obsRoutes.event(event.id)} className="text-obs-teal hover:underline">
+                  <Link href={obsRoutes.event(event.id)} className="obs-link">
                     {formatResearchDate(event.date)}
                   </Link>{" "}
                   · {eventKindLabel(event.kind)} · {legalOutcomeLabel(event.legalOutcome)}
@@ -182,15 +182,15 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-2xl text-navy">4. Competition and volatility</h2>
+        <h2 className="obs-heading text-2xl">4. Competition and volatility</h2>
         {metrics.length === 0 ? (
           <p className="mt-3 text-navy/70">No metric observations supplied.</p>
         ) : (
           <div className="mt-4 space-y-4">
             {metrics.map((metric) => (
-              <div key={metric.id} className="rounded-sm border border-obs-rule bg-white p-4">
+              <div key={metric.id} className="obs-card p-4">
                 <div className="flex flex-wrap items-center gap-2">
-                  <h3 className="font-serif text-xl capitalize text-navy">
+                  <h3 className="obs-heading text-xl capitalize">
                     {metric.kind.replaceAll("_", " ")}
                   </h3>
                   <MetricPill status={metric.reviewStatus} />
@@ -217,7 +217,7 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-2xl text-navy">5. Officeholder evidence</h2>
+        <h2 className="obs-heading text-2xl">5. Officeholder evidence</h2>
         <p className="mt-2 text-sm text-navy/65">
           Dated roster observations are not automatically current tenure.{" "}
           {office.status === "current"
@@ -241,7 +241,7 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
         )}
         {registers.length > 0 ? (
           <div className="mt-4">
-            <h3 className="font-serif text-lg text-navy">Electoral register observations</h3>
+            <h3 className="obs-heading text-lg">Electoral register observations</h3>
             <p className="mt-1 text-sm text-navy/65">
               Dated elector counts stay distinct from turnout and are not summed across overlapping
               contests.
@@ -260,13 +260,13 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-2xl text-navy">6. Polling context</h2>
+        <h2 className="obs-heading text-2xl">6. Polling context</h2>
         {localPolls.length === 0 ? (
           <p className="mt-3 text-navy/70">No local poll supplied.</p>
         ) : (
           <ul className="mt-3 space-y-3">
             {localPolls.map((poll) => (
-              <li key={poll.id} className="rounded-sm border border-obs-rule bg-white p-4">
+              <li key={poll.id} className="obs-card p-4">
                 <p className="font-medium text-navy">{poll.pollster}</p>
                 <p className="text-sm text-navy/70">
                   {poll.questionType.replaceAll("_", " ")} · fieldwork {formatResearchDate(poll.fieldwork)}
@@ -279,7 +279,7 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
         {national.length > 0 ? (
           <p className="mt-3 text-sm text-navy/70">
             National context is listed on the{" "}
-            <Link href={`${obsRoutes.polling}?country=${office.countryId}&scope=national`} className="text-obs-teal hover:underline">
+            <Link href={`${obsRoutes.polling}?country=${office.countryId}&scope=national`} className="obs-link">
               polling page
             </Link>
             . It is not a local forecast.
@@ -288,13 +288,13 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
       </section>
 
       <section className="mb-8">
-        <h2 className="font-serif text-2xl text-navy">7. Unresolved issues and sources</h2>
+        <h2 className="obs-heading text-2xl">7. Unresolved issues and sources</h2>
         {issues.length === 0 ? (
           <p className="mt-3 text-navy/70">No open research issues attached to this office.</p>
         ) : (
           <ul className="mt-3 space-y-2 text-sm">
             {issues.map((issue) => (
-              <li key={issue.id} className="rounded-sm border border-obs-rule bg-white p-3">
+              <li key={issue.id} className="obs-card p-3">
                 <p className="font-medium text-navy">
                   {issue.category.replaceAll("_", " ")} · {issue.resolutionState}
                 </p>
@@ -303,11 +303,11 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
             ))}
           </ul>
         )}
-        <h3 className="mt-6 font-serif text-xl text-navy">Sources</h3>
+        <h3 className="mt-6 obs-heading text-xl">Sources</h3>
         <ul className="mt-2 space-y-1 text-sm">
           {sources.map((source) => (
             <li key={source.id}>
-              <Link href={`${obsRoutes.sources}#${source.id}`} className="text-obs-teal hover:underline">
+              <Link href={`${obsRoutes.sources}#${source.id}`} className="obs-link">
                 {source.publisher}: {source.title}
               </Link>
               <span className="text-navy/55"> · rights {source.dataRights}</span>
@@ -327,7 +327,7 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
 
 function Fact({ label, value }: { label: string; value: React.ReactNode }) {
   return (
-    <div className="rounded-sm border border-obs-rule bg-white px-3 py-2">
+    <div className="obs-card px-3 py-2">
       <dt className="text-xs font-semibold uppercase tracking-wider text-navy/55">{label}</dt>
       <dd className="mt-1 text-navy">{value}</dd>
     </div>

@@ -25,7 +25,7 @@ export default function DownloadsPage() {
       </EmptyState>
       <ul className="mt-6 space-y-3 text-sm">
         {artifacts.map((artifact) => (
-          <li key={artifact.id} className="rounded-sm border border-obs-rule bg-white px-4 py-3">
+          <li key={artifact.id} className="obs-card px-4 py-3">
             <p className="font-medium text-navy">
               {artifact.format.toUpperCase()} · {artifact.available ? "Available" : "Unavailable"}
             </p>

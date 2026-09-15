@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Source_Serif_4 } from "next/font/google";
+import { Container } from "@/components/container";
 import {
   ObservatoryBanner,
   ObservatoryFooter,
   ObservatoryHeader,
 } from "@/components/observatory/chrome";
-
-const sourceSerif = Source_Serif_4({
-  variable: "--font-source-serif",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: {
@@ -23,17 +17,19 @@ export const metadata: Metadata = {
 
 export default function ObservatoryLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className={`${sourceSerif.variable} observatory min-h-screen bg-obs-paper text-navy`}>
+    <div className="observatory min-h-screen bg-mist text-ink">
       <a
         href="#observatory-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-navy focus:px-3 focus:py-2 focus:text-sm focus:text-white"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-accent-ink"
       >
         Skip to observatory content
       </a>
-      <ObservatoryBanner />
-      <ObservatoryHeader />
-      <main id="observatory-content" className="mx-auto w-full max-w-6xl px-5 py-10 sm:px-8">
-        {children}
+      <div className="sticky top-0 z-50">
+        <ObservatoryBanner />
+        <ObservatoryHeader />
+      </div>
+      <main id="observatory-content">
+        <Container className="py-10">{children}</Container>
       </main>
       <ObservatoryFooter />
     </div>

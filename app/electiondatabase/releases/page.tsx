@@ -15,8 +15,8 @@ export default function ReleasesPage() {
         title="Release history"
         description="Version, dates, changed records, added evidence, known gaps, and links to prior releases when those releases actually exist."
       />
-      <article className="rounded-sm border border-obs-rule bg-white p-5">
-        <h2 className="font-serif text-2xl text-navy">{release.id}</h2>
+      <article className="obs-card p-5">
+        <h2 className="obs-heading text-2xl">{release.id}</h2>
         <p className="mt-2 text-sm text-navy/70">
           Schema {release.schemaVersion} · methods {release.methodVersion} · provenance{" "}
           {release.provenance.kind}

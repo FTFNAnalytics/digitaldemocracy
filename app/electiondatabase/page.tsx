@@ -27,33 +27,25 @@ export default function ObservatoryHomePage() {
       />
 
       <div className="grid gap-6 lg:grid-cols-[1.4fr_0.8fr]">
-        <section className="rounded-sm border border-obs-rule bg-white p-6">
-          <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-obs-teal">
-            Priority region
-          </p>
-          <h2 className="mt-2 font-serif text-2xl text-navy">{southAmerica?.name}</h2>
-          <p className="mt-2 text-sm leading-relaxed text-navy/75">{southAmerica?.notes}</p>
+        <section className="circuit-panel rounded-3xl p-6 sm:p-8">
+          <p className="obs-kicker">Priority region</p>
+          <h2 className="obs-heading text-2xl sm:text-3xl">{southAmerica?.name}</h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted">{southAmerica?.notes}</p>
           <div className="mt-3">
             <CoveragePill status={southAmerica?.status ?? "not_supplied"} />
           </div>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link
-              href={obsRoutes.regions}
-              className="rounded-sm bg-navy px-4 py-2 text-sm font-semibold text-white hover:bg-navy-700"
-            >
+            <Link href={obsRoutes.regions} className="obs-btn">
               Enter South America
             </Link>
-            <Link
-              href={obsRoutes.explorer}
-              className="rounded-sm border border-navy/20 px-4 py-2 text-sm font-medium text-navy hover:bg-obs-paper"
-            >
+            <Link href={obsRoutes.explorer} className="obs-btn-secondary">
               Open the explorer
             </Link>
           </div>
         </section>
 
-        <aside className="rounded-sm border border-obs-rule bg-white p-6">
-          <h2 className="font-serif text-xl text-navy">Release window</h2>
+        <aside className="obs-card p-6">
+          <h2 className="obs-heading text-xl">Release window</h2>
           <p className="mt-2 text-sm text-navy/75">
             Expected inclusive window from the build prompt (not yet imported):{" "}
             <span className="tabular-nums">
@@ -74,7 +66,7 @@ export default function ObservatoryHomePage() {
       </div>
 
       <section className="mt-10">
-        <h2 className="font-serif text-2xl text-navy">Coverage totals</h2>
+        <h2 className="obs-heading text-2xl">Coverage totals</h2>
         <p className="mt-2 max-w-3xl text-sm text-navy/70">
           Denominators stay explicit. Fixture counts are labelled and excluded from any
           “research complete” claim. Unknown real-world totals remain unknown.
@@ -99,7 +91,7 @@ export default function ObservatoryHomePage() {
       </section>
 
       <section className="mt-10">
-        <h2 className="font-serif text-2xl text-navy">Upcoming elections</h2>
+        <h2 className="obs-heading text-2xl">Upcoming elections</h2>
         <p className="mt-2 text-sm text-navy/70">
           Searchable list of next dates in the loaded dataset. Partial dates keep their
           supplied precision.
@@ -122,7 +114,7 @@ export default function ObservatoryHomePage() {
                   formatResearchDate(event.date),
                   event.date.certainty,
                   office ? (
-                    <Link key={event.id} href={obsRoutes.office(office.id)} className="text-obs-teal hover:underline">
+                    <Link key={event.id} href={obsRoutes.office(office.id)} className="obs-link">
                       {office.names.short}
                     </Link>
                   ) : (
@@ -152,9 +144,9 @@ function TotalCard({
   note: string;
 }) {
   return (
-    <div className="rounded-sm border border-obs-rule bg-white px-4 py-3">
+    <div className="obs-card px-4 py-3">
       <dt className="text-xs font-semibold uppercase tracking-wider text-navy/55">{label}</dt>
-      <dd className="mt-1 font-serif text-3xl tabular-nums text-navy">{value}</dd>
+      <dd className="mt-1 obs-heading text-3xl tabular-nums">{value}</dd>
       <p className="mt-1 text-xs text-navy/60">{note}</p>
     </div>
   );

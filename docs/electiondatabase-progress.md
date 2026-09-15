@@ -28,6 +28,7 @@ Search paths: repo root, `data/incoming/`, `incoming/`, `research/`.
 - Synthetic fixture dataset labelled `synthetic_fixture` (`data/normalized/synthetic-fixture-v0.ts`).
 - URL-persisted filters on explorer, compare, calendar, polling, coverage, sources.
 - Marketing header / research / footer links to `/electiondatabase`.
+- Observatory chrome uses the same CDD tokens as the marketing site (navy, lime accent, mist/paper, Plus Jakarta) plus shared `Logo`, `Container`, `circuit-panel`, and `obs-*` primitives — not a separate teal/serif research skin.
 - CI formula, Pedersen helper, date precision rules, missing-vs-zero helpers, tests.
 
 ## What is not implemented

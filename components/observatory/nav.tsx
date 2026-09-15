@@ -9,7 +9,7 @@ export function ObservatoryNav() {
   const pathname = usePathname();
 
   return (
-    <nav aria-label="Observatory" className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+    <nav aria-label="Observatory" className="flex flex-wrap items-center gap-x-1 gap-y-1 text-sm">
       {obsNav.map((item) => {
         const active =
           item.href === OBS_BASE
@@ -20,15 +20,15 @@ export function ObservatoryNav() {
             key={item.href}
             href={item.href}
             className={cn(
-              "border-b-2 py-1 font-medium",
-              active ? "border-navy text-navy" : "border-transparent text-navy/70 hover:text-navy",
+              "rounded-full px-3 py-1.5 font-semibold tracking-wide transition",
+              active ? "text-accent" : "text-white/80 hover:text-accent",
             )}
           >
             {item.label}
           </Link>
         );
       })}
-      <span className="hidden text-navy/30 sm:inline" aria-hidden>
+      <span className="hidden px-1 text-white/25 sm:inline" aria-hidden>
         ·
       </span>
       {obsSecondaryNav.map((item) => (
@@ -36,8 +36,8 @@ export function ObservatoryNav() {
           key={item.href}
           href={item.href}
           className={cn(
-            "py-1 text-navy/65 hover:text-navy",
-            pathname === item.href && "font-semibold text-navy",
+            "rounded-full px-3 py-1.5 text-white/65 transition hover:text-accent",
+            pathname === item.href && "font-semibold text-accent",
           )}
         >
           {item.label}

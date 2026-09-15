@@ -142,7 +142,7 @@ export default async function ExplorerPage({ searchParams }: Props) {
         rows={offices.map((office) => {
           const metric = metricsForOffice(office.id)[0];
           return [
-            <Link key={office.id} href={obsRoutes.office(office.id)} className="text-obs-teal hover:underline">
+            <Link key={office.id} href={obsRoutes.office(office.id)} className="obs-link">
               {office.names.official}
             </Link>,
             office.countryId,

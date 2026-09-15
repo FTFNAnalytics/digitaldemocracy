@@ -1,19 +1,21 @@
 import Link from "next/link";
+import { Logo } from "@/components/brand";
+import { Container } from "@/components/container";
+import { ObservatoryNav } from "@/components/observatory/nav";
 import { org } from "@/lib/content";
 import { isFixtureOnlyDataset } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
 import { RELEASE_PACKAGE_FILENAME } from "@/schemas/v1/input-manifest";
-import { ObservatoryNav } from "@/components/observatory/nav";
 
 export function ObservatoryBanner() {
   const fixture = isFixtureOnlyDataset();
   return (
-    <div className="border-b border-obs-rule bg-[#fff7d6] px-4 py-2.5 text-center text-sm text-navy">
+    <div className="bg-navy-800 px-4 py-2 text-center text-xs text-white/80">
       <p>
-        <span className="mr-2 inline-flex rounded-sm bg-navy px-1.5 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wider text-white">
+        <span className="mr-2 inline-flex rounded-full bg-accent px-2 py-0.5 text-[0.65rem] font-bold uppercase tracking-wider text-accent-ink">
           {fixture ? "Synthetic fixtures" : "Partial import"}
         </span>
-        Research is awaiting <span className="font-semibold">{RELEASE_PACKAGE_FILENAME}</span>.
+        Research is awaiting <span className="font-semibold text-accent">{RELEASE_PACKAGE_FILENAME}</span>.
         Nothing on these pages is completed Latin America coverage.
       </p>
     </div>
@@ -22,27 +24,26 @@ export function ObservatoryBanner() {
 
 export function ObservatoryHeader() {
   return (
-    <header className="obs-chrome border-b border-obs-rule bg-obs-paper/95 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-3 sm:px-8">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <div className="flex flex-wrap items-center gap-4">
-            <Link href={obsRoutes.home} className="group leading-tight">
-              <span className="block text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-obs-teal">
-                {org.name}
-              </span>
-              <span className="block font-serif text-lg font-semibold text-navy group-hover:text-obs-teal">
-                Subnational Election Observatory
-              </span>
-            </Link>
-          </div>
+    <header className="obs-chrome relative bg-navy/95 backdrop-blur-md">
+      <Container className="flex flex-wrap items-center justify-between gap-3 py-3">
+        <div className="flex flex-wrap items-center gap-4">
+          <Logo href="/" />
+          <span className="hidden h-8 w-px bg-white/15 sm:block" aria-hidden />
           <Link
-            href="/"
-            className="text-sm font-medium text-obs-teal underline-offset-4 hover:underline"
+            href={obsRoutes.home}
+            className="text-sm font-bold text-white hover:text-accent"
           >
-            Back to the Center
+            Election database
           </Link>
         </div>
-        <ObservatoryNav />
+        <Link href="/" className="obs-btn">
+          Back to the Center
+        </Link>
+      </Container>
+      <div className="border-t border-white/10">
+        <Container className="py-2">
+          <ObservatoryNav />
+        </Container>
       </div>
     </header>
   );
@@ -50,22 +51,22 @@ export function ObservatoryHeader() {
 
 export function ObservatoryFooter() {
   return (
-    <footer className="obs-chrome mt-16 border-t border-obs-rule bg-white">
-      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-8 text-sm text-navy/70 sm:px-8 sm:flex-row sm:justify-between">
+    <footer className="obs-chrome mt-16 bg-navy-800 text-white">
+      <Container className="flex flex-col gap-3 py-8 text-sm text-white/70 sm:flex-row sm:justify-between">
         <p>
           {org.name} · Subnational Election Observatory. Public reading of research
           records; no login required.
         </p>
         <p>
-          <Link href={obsRoutes.methodology} className="text-obs-teal hover:underline">
+          <Link href={obsRoutes.methodology} className="font-semibold text-accent hover:text-accent-soft">
             Methodology
           </Link>
           {" · "}
-          <Link href={obsRoutes.about} className="text-obs-teal hover:underline">
+          <Link href={obsRoutes.about} className="font-semibold text-accent hover:text-accent-soft">
             About
           </Link>
         </p>
-      </div>
+      </Container>
     </footer>
   );
 }
@@ -82,17 +83,12 @@ export function PageHeader({
   children?: React.ReactNode;
 }) {
   return (
-    <header className="mb-8 border-b border-obs-rule pb-6">
-      {eyebrow ? (
-        <p className="mb-2 text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-obs-teal">
-          {eyebrow}
-        </p>
-      ) : null}
-      <h1 className="font-serif text-3xl font-semibold tracking-tight text-navy sm:text-4xl">
-        {title}
-      </h1>
+    <header className="mb-8 border-b border-navy/10 pb-6">
+      <div className="mb-4 h-1 w-12 rounded-full bg-accent" />
+      {eyebrow ? <p className="obs-kicker">{eyebrow}</p> : null}
+      <h1 className="obs-heading text-3xl tracking-tight sm:text-4xl">{title}</h1>
       {description ? (
-        <p className="mt-3 max-w-3xl text-[1.02rem] leading-relaxed text-navy/75">{description}</p>
+        <p className="mt-3 max-w-3xl text-[1.02rem] leading-relaxed text-muted">{description}</p>
       ) : null}
       {children}
     </header>
@@ -110,15 +106,15 @@ export function CiteBlock({
 }) {
   const fixture = isFixtureOnlyDataset();
   return (
-    <section className="mt-10 rounded-sm border border-obs-rule bg-white p-5 print:break-inside-avoid">
-      <h2 className="font-serif text-xl text-navy">Cite this record</h2>
+    <section className="obs-card mt-10 p-5 print:break-inside-avoid">
+      <h2 className="obs-heading text-xl">Cite this record</h2>
       <p className="mt-2 text-sm leading-relaxed text-navy/80">
         {org.name}. “{title}.” <em>Subnational Election Observatory</em>, release
         synthetic-fixture-v0 (not a research snapshot). {path}.
         {extra ? ` ${extra}` : ""}
       </p>
       {fixture ? (
-        <p className="mt-2 text-sm text-navy/60">
+        <p className="mt-2 text-sm text-muted">
           Synthetic fixture — not a citable research record. Await the Latin America
           release package before quoting figures.
         </p>

@@ -53,7 +53,7 @@ export default async function CalendarPage({ searchParams }: Props) {
 
       {filters.view === "month" ? (
         <section>
-          <h2 className="font-serif text-2xl text-navy">
+          <h2 className="obs-heading text-2xl">
             Month view · {String(month).padStart(2, "0")}/{year}
           </h2>
           <MonthGrid year={year} month={month} eventDays={inMonth.map((event) => event.date.day ?? 0)} />
@@ -63,7 +63,7 @@ export default async function CalendarPage({ searchParams }: Props) {
               return (
                 <li key={event.id}>
                   {formatResearchDate(event.date)} ·{" "}
-                  <Link href={obsRoutes.event(event.id)} className="text-obs-teal hover:underline">
+                  <Link href={obsRoutes.event(event.id)} className="obs-link">
                     {office?.names.short ?? event.officeId}
                   </Link>
                 </li>
@@ -76,15 +76,15 @@ export default async function CalendarPage({ searchParams }: Props) {
         </section>
       ) : (
         <section>
-          <h2 className="font-serif text-2xl text-navy">Agenda</h2>
+          <h2 className="obs-heading text-2xl">Agenda</h2>
           <ol className="mt-4 space-y-3">
             {dated.map((event) => {
               const office = getOffice(event.officeId);
               return (
-                <li key={event.id} className="rounded-sm border border-obs-rule bg-white px-4 py-3">
+                <li key={event.id} className="obs-card px-4 py-3">
                   <p className="tabular-nums text-sm text-navy/60">{formatResearchDate(event.date)}</p>
                   <p className="font-medium text-navy">
-                    <Link href={obsRoutes.event(event.id)} className="hover:text-obs-teal">
+                    <Link href={obsRoutes.event(event.id)} className="hover:text-navy-600">
                       {office?.names.official ?? event.officeId}
                     </Link>
                   </p>
@@ -97,7 +97,7 @@ export default async function CalendarPage({ searchParams }: Props) {
       )}
 
       <section className="mt-10">
-        <h2 className="font-serif text-2xl text-navy">Partial or conditional dates</h2>
+        <h2 className="obs-heading text-2xl">Partial or conditional dates</h2>
         <p className="mt-2 text-sm text-navy/70">
           These dates do not have a confirmed calendar day, or are conditional. They are listed
           here instead of being pinned to a fabricated day.
@@ -106,12 +106,12 @@ export default async function CalendarPage({ searchParams }: Props) {
           {partial.map((event) => {
             const office = getOffice(event.officeId);
             return (
-              <li key={event.id} className="rounded-sm border border-dashed border-navy/25 bg-white px-4 py-3 text-sm">
+              <li key={event.id} className="rounded-2xl border border-dashed border-navy/20 bg-white px-4 py-3 text-sm">
                 <span className="font-medium">{formatResearchDate(event.date)}</span>
                 {" · "}
                 {dateCertaintyLabel(event.date.certainty)}
                 {" · "}
-                <Link href={obsRoutes.event(event.id)} className="text-obs-teal hover:underline">
+                <Link href={obsRoutes.event(event.id)} className="obs-link">
                   {office?.names.short ?? event.id}
                 </Link>
               </li>
@@ -142,12 +142,12 @@ function MonthGrid({
   const marks = new Set(eventDays.filter(Boolean));
 
   return (
-    <table className="mt-4 w-full border-collapse text-sm">
+    <table className="obs-card mt-4 w-full border-collapse text-sm">
       <caption className="sr-only">Calendar month {month}/{year}</caption>
       <thead>
         <tr>
           {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
-            <th key={day} className="border border-obs-rule px-1 py-1 text-navy/60">
+            <th key={day} className="border border-navy/20 bg-navy px-1 py-2 text-white">
               {day}
             </th>
           ))}
@@ -159,10 +159,12 @@ function MonthGrid({
             {row.map((day, cellIndex) => (
               <td
                 key={cellIndex}
-                className={`h-14 border border-obs-rule px-1 align-top ${day && marks.has(day) ? "bg-teal-50" : "bg-white"}`}
+                className={`h-14 border border-navy/10 px-1 align-top ${day && marks.has(day) ? "bg-accent/25" : "bg-white"}`}
               >
                 {day ?? ""}
-                {day && marks.has(day) ? <span className="block text-[0.65rem] text-obs-teal">event</span> : null}
+                {day && marks.has(day) ? (
+                  <span className="block text-[0.65rem] font-bold text-navy">● event</span>
+                ) : null}
               </td>
             ))}
           </tr>

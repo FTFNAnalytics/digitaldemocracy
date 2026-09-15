@@ -46,7 +46,7 @@ export default async function SourcesPage({ searchParams }: Props) {
       />
       <p className="mt-4 text-sm text-navy/60">
         Fixture sources only. Real catalogue rows appear after{" "}
-        <Link href={obsRoutes.downloads} className="text-obs-teal hover:underline">
+        <Link href={obsRoutes.downloads} className="obs-link">
           a release import
         </Link>
         .

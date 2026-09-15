@@ -73,7 +73,7 @@ export default async function ComparePage({ searchParams }: Props) {
       ) : (
         <>
           {notes.length > 0 ? (
-            <div className="mb-6 rounded-sm border border-amber-800/25 bg-amber-50 p-4 text-sm text-amber-950">
+            <div className="mb-6 rounded-2xl border border-amber-800/25 bg-amber-50 p-4 text-sm text-amber-950">
               <p className="font-semibold">Comparison limits</p>
               <ul className="mt-2 list-disc pl-5">
                 {notes.map((note) => (
@@ -87,9 +87,9 @@ export default async function ComparePage({ searchParams }: Props) {
               const selected = selectedEventsForOffice(office.id);
               const metrics = metricsForOffice(office.id);
               return (
-                <section key={office.id} className="rounded-sm border border-obs-rule bg-white p-4">
-                  <h2 className="font-serif text-xl text-navy">
-                    <Link href={obsRoutes.office(office.id)} className="hover:text-obs-teal">
+                <section key={office.id} className="obs-card p-4">
+                  <h2 className="obs-heading text-xl">
+                    <Link href={obsRoutes.office(office.id)} className="hover:text-navy-600">
                       {office.names.official}
                     </Link>
                   </h2>

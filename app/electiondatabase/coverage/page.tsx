@@ -36,12 +36,12 @@ export default async function CoveragePage({ searchParams }: Props) {
       />
 
       <section className="mb-10">
-        <h2 className="font-serif text-2xl text-navy">Countries and territories</h2>
+        <h2 className="obs-heading text-2xl">Countries and territories</h2>
         <DataTable
           caption="Country coverage"
           columns={["Polity", "Kind", "Status", "Notes"]}
           rows={countries.map((country) => [
-            <Link key={country.id} href={obsRoutes.country(country.id)} className="text-obs-teal hover:underline">
+            <Link key={country.id} href={obsRoutes.country(country.id)} className="obs-link">
               {country.names.official}
             </Link>,
             country.kind.replaceAll("_", " "),
@@ -52,7 +52,7 @@ export default async function CoveragePage({ searchParams }: Props) {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-navy">Office-level completion queue</h2>
+        <h2 className="obs-heading text-2xl">Office-level completion queue</h2>
         <p className="mt-2 text-sm text-navy/70">
           Filters for missing returns, registry gaps, structural exceptions, and unresolved events.
         </p>
@@ -90,7 +90,7 @@ export default async function CoveragePage({ searchParams }: Props) {
             const office = getOffice(item.officeId);
             return [
               office ? (
-                <Link key={item.id} href={obsRoutes.office(office.id)} className="text-obs-teal hover:underline">
+                <Link key={item.id} href={obsRoutes.office(office.id)} className="obs-link">
                   {office.names.short}
                 </Link>
               ) : (

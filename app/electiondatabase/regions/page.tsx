@@ -22,13 +22,13 @@ export default function RegionsPage() {
         {regions.map((region) => {
           const regionCountries = countries.filter((country) => country.regionId === region.id);
           return (
-            <section key={region.id} className="rounded-sm border border-obs-rule bg-white p-5">
+            <section key={region.id} className="obs-card p-5">
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div>
-                  <h2 className="font-serif text-2xl text-navy">
+                  <h2 className="obs-heading text-2xl">
                     {region.name}
                     {region.isDefaultLanding ? (
-                      <span className="ml-2 text-sm font-sans font-medium text-obs-teal">
+                      <span className="ml-2 inline-flex rounded-full bg-accent px-2 py-0.5 text-[0.65rem] font-bold uppercase tracking-wider text-accent-ink">
                         Default landing
                       </span>
                     ) : null}
@@ -38,12 +38,12 @@ export default function RegionsPage() {
                 <CoveragePill status={region.status} />
               </div>
               {regionCountries.length > 0 ? (
-                <ul className="mt-4 divide-y divide-obs-rule border-t border-obs-rule">
+                <ul className="mt-4 divide-y divide-navy/10 border-t border-navy/10">
                   {regionCountries.map((country) => (
                     <li key={country.id} className="flex flex-wrap items-center justify-between gap-2 py-3">
                       <Link
                         href={obsRoutes.country(country.id)}
-                        className="font-medium text-obs-teal hover:underline"
+                        className="obs-link"
                       >
                         {country.names.official}
                       </Link>
