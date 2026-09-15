@@ -1,0 +1,181 @@
+{
+  "schema_version": "europe-country-extract/1",
+  "country": "Andorra",
+  "country_code": "AD",
+  "region": "Europe",
+  "research_checked_through": "2026-09-11",
+  "packaged_on": "2026-09-15",
+  "window": {
+    "start": "2026-09-08",
+    "end": "2028-03-08",
+    "inclusive": true
+  },
+  "coverage_complete": false,
+  "site_ingestion_status": "pending_adapter",
+  "archive": {
+    "filename": "Europe_Excluding_Russia_Election_Data_2026-09-15.zip",
+    "bytes": 183958382,
+    "sha256": "93a31ec920c770e752cf7f130ffb8a546dce4510a41d9371d5f49239fa2b4ce9"
+  },
+  "source_inputs": {
+    "Europe_Excluding_Russia/Europe_Excluding_Russia.xlsx": {
+      "sha256": "b11dab577fb1746eddeb3aef72af7b097bcc4601828e1efbca1db3d6f6b98665",
+      "bytes": 10931972
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-01.html": {
+      "sha256": "6e21fa152a497bcb9e2f6dd0d09bd99f8d2d64b2aac01d79b46676e00b8904e8",
+      "bytes": 6067
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-02.html": {
+      "sha256": "7e576f4adbce3dfecd13ee5ab2e2bad1ad070a9967c07ba091bd3a11c8f8f3a6",
+      "bytes": 6874
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-03.html": {
+      "sha256": "6d72b14c7c01c0a161837cac95097e0134150febe78f67082e3b941570afc6f3",
+      "bytes": 6715
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-04.html": {
+      "sha256": "ae2661d5579def4bb2e379d7ce02afd961ee22b8f784a461b127d11b9035cc82",
+      "bytes": 6330
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-05.html": {
+      "sha256": "425543504f9c560a81613e7c912f4f461250f3e38db1f1bf2cd8e977fc946cff",
+      "bytes": 6682
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-06.html": {
+      "sha256": "9ccca81668c8423004f0340e79885898bd8481e45acfc4c445f83683399b677c",
+      "bytes": 6535
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-07.html": {
+      "sha256": "68c7a8d6a987c7d047c51b390dcc4c0ea2de0aaf3b5972571e3b0104857e9265",
+      "bytes": 6911
+    },
+    "Europe_Excluding_Russia/Europe_Country_Coverage.csv": {
+      "sha256": "20fb347ab5e37e60e732edf819d0ccfb431f007dcb925a20aa716e4abd07dc80",
+      "bytes": 32833
+    },
+    "Europe_Excluding_Russia/Europe_History_Index.csv": {
+      "sha256": "33b469577b0e89a062391a72d511871bf3e8f9e9f001cf947b9865da6ac01319",
+      "bytes": 34344677
+    }
+  },
+  "table_row_counts": {
+    "Country coverage": 1,
+    "Country notes": 1,
+    "Parameters": 12,
+    "Office register": 7,
+    "Election calendar": 1,
+    "Polling evidence": 1,
+    "History index": 21,
+    "Detailed returns": 53,
+    "Governing control": 7,
+    "Read me": 13,
+    "Sources": 10
+  },
+  "individual_briefings": 7,
+  "source_link_counts": {
+    "registered": 10,
+    "inline_only": 3
+  },
+  "files": {
+    "briefings/AD-M-01.html": {
+      "sha256": "6e21fa152a497bcb9e2f6dd0d09bd99f8d2d64b2aac01d79b46676e00b8904e8",
+      "bytes": 6067,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-01.html"
+    },
+    "briefings/AD-M-02.html": {
+      "sha256": "7e576f4adbce3dfecd13ee5ab2e2bad1ad070a9967c07ba091bd3a11c8f8f3a6",
+      "bytes": 6874,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-02.html"
+    },
+    "briefings/AD-M-03.html": {
+      "sha256": "6d72b14c7c01c0a161837cac95097e0134150febe78f67082e3b941570afc6f3",
+      "bytes": 6715,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-03.html"
+    },
+    "briefings/AD-M-04.html": {
+      "sha256": "ae2661d5579def4bb2e379d7ce02afd961ee22b8f784a461b127d11b9035cc82",
+      "bytes": 6330,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-04.html"
+    },
+    "briefings/AD-M-05.html": {
+      "sha256": "425543504f9c560a81613e7c912f4f461250f3e38db1f1bf2cd8e977fc946cff",
+      "bytes": 6682,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-05.html"
+    },
+    "briefings/AD-M-06.html": {
+      "sha256": "9ccca81668c8423004f0340e79885898bd8481e45acfc4c445f83683399b677c",
+      "bytes": 6535,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-06.html"
+    },
+    "briefings/AD-M-07.html": {
+      "sha256": "68c7a8d6a987c7d047c51b390dcc4c0ea2de0aaf3b5972571e3b0104857e9265",
+      "bytes": 6911,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AD-M-07.html"
+    },
+    "source-links.json": {
+      "sha256": "7f205b4df588912af5525e8c39b5338c4c9bc1738db6a70dac963f051f57cd5e",
+      "bytes": 1036
+    },
+    "tables/country-coverage.json": {
+      "sha256": "7cb2c04f9bc63673d6cacbc6b7d08870364810810f0a064a3ff872f9f1047504",
+      "bytes": 266
+    },
+    "tables/country-notes.json": {
+      "sha256": "3a0d6ca6f8fadb4bd5218cea23f086c46aa58c604dbc42c8af390d9eb6683d8f",
+      "bytes": 656
+    },
+    "tables/parameters.json": {
+      "sha256": "47d666fd87eb6c3db5882213d2ef10f36c994fa9f31859aafde37fdb613343e2",
+      "bytes": 991
+    },
+    "tables/office-register.json": {
+      "sha256": "318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f",
+      "bytes": 5134
+    },
+    "tables/election-calendar.json": {
+      "sha256": "aa444f13e0864e3e2cee3903249be2cc456d6449c89d9dabe655bd4f3da624a4",
+      "bytes": 536
+    },
+    "tables/polling-evidence.json": {
+      "sha256": "38f381504737bbd9cabb078cb22be7ceae36a64fe05df181568a88048e0f0cca",
+      "bytes": 1719
+    },
+    "tables/history-index.json": {
+      "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+      "bytes": 6758
+    },
+    "tables/detailed-returns.json": {
+      "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+      "bytes": 15425
+    },
+    "tables/governing-control.json": {
+      "sha256": "fa0dcd8db2d960f0392cf887f42778a44a30a152775cb0f0b1e2e11aa81dcc81",
+      "bytes": 6045
+    },
+    "tables/read-me.json": {
+      "sha256": "ac783fd2d95bfb0359c71873c3e0f3e86e11e54564551aaa84440207e49f2540",
+      "bytes": 3671
+    },
+    "tables/sources.json": {
+      "sha256": "6d43c254e4316b41459ebe30bec3422495ef9ec2cfd73e1e576e89f55d7fd1d2",
+      "bytes": 1941
+    },
+    "cached-formulas.json": {
+      "sha256": "c77493381853ff38ed8762c801369010a5eb04f1c9265e11d5737a4d938aee62",
+      "bytes": 8231
+    },
+    "coverage.json": {
+      "sha256": "e0968e7dc3537644912b7bf2b96f8b32d4cc88bb10f162a2bd0b59a1311c18ce",
+      "bytes": 814
+    },
+    "history-index-crosscheck.json": {
+      "sha256": "b3f3f4bf53c2b4ab40c76f3bec49e2493cb4a66182fabc5dad03976260218a17",
+      "bytes": 6720
+    },
+    "andorra.html": {
+      "sha256": "c40580331a968e652146090c605eb361c16cda2232732b1b51705c32a68dfb08",
+      "bytes": 910
+    }
+  }
+}
