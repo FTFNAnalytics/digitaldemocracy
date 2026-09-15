@@ -1,6 +1,8 @@
 # Election Atlas — restructuring plan
 
-**Status:** Plan revised with Justin’s review acceptance criteria. Still pending further audit feedback before implementation. This PR remains **documentation only** (this document and the existing README pointer). No Atlas UI, SQLite schema, import scripts, or redirects land here.
+**Status:** Revised after two second-pass audits. This PR remains **documentation only** (this document and the README pointer). No Atlas UI, SQLite schema, import scripts, or redirects land here.
+
+**Phase 0** (this plan) merges when Justin says. **Phase 1 is un-gated by Justin’s disposition on this revision** — it does not wait on open-ended further audits. After Phase 1 exits, **stop for Phase 2 review**.
 
 **Product:** Center for Digital Democracy — Election Atlas  
 **Repository:** [FTFNAnalytics/digitaldemocracy](https://github.com/FTFNAnalytics/digitaldemocracy)  
@@ -49,15 +51,15 @@ Creating the directory or an empty file at `/var/lib/cdd/atlas.sqlite` is **path
 
 Ship **Europe** first: country packages under `data/countries/*` that are European, plus any Europe-bound uploads.
 
-Russia remains excluded from the European build. Latin America, Oceania (New Zealand), Australia, and Japan stay ingestible later; they are not the launch vertical and must not displace Europe as the Atlas default.
+Russia remains excluded from the European build. Latin America and New Zealand are **Phase 2 / cutover-gate ingest inputs** so already-public offices and events exist in SQLite before redirects need them. That continuity is **not** an expansion of the launch vertical and must not displace Europe as the Atlas default landing.
 
-Continuity for already-public non-European URLs is a **cutover requirement**, not a reason to expand the launch vertical. See [Redirect strategy](#redirect-strategy).
+Australia and Japan stay not-yet-supplied. See [Redirect strategy](#redirect-strategy) and [Phases](#phases).
 
 ### 4. Depth — regional first; municipal later
 
 Ship **regional** calendars and indexes as we build. Municipal coverage arrives later as packages arrive. **Do not block launch** on full municipal coverage.
 
-How regional coverage is counted is defined under [Regional coverage counting](#regional-coverage-counting). Do not treat workbook calendar labels such as “Regional / municipal” as proof that regional offices exist.
+How regional coverage is counted is defined under [Regional coverage counting](#regional-coverage-counting). Do not treat workbook calendar labels such as “Regional / municipal” as proof that regional offices exist. Today’s checked-in Europe packages may have a **zero regional-tier numerator**; that is an explicit empty state, not a Phase 1 failure.
 
 ---
 
@@ -68,7 +70,7 @@ How regional coverage is counted is defined under [Regional coverage counting](#
 3. Keep the **marketing site, SEO, and existing research packages**. The Atlas is a product-area restructure, not a site rewrite.
 4. Preserve research semantics already encoded in schema v1 (missing ≠ zero, date certainty, score gates, sourced IDs). Atlas storage changes the **runtime**, not the **rules**.
 5. Leave a clean ingest path from frozen country packages and the Latin America release into SQLite, so later packages drop in without inventing a second identity system.
-6. At **cutover**, existing public observatory links (including non-European office/event URLs) still reach the same record or a clear record page — without expanding the Europe-first launch vertical.
+6. At **cutover**, one data plane: every surviving research page reads the **published master** (same publication / release set). Existing public links (including non-European office/event URLs) reach the same record or a clear record page — without expanding the Europe-first launch vertical.
 7. Compute **derived tightness metrics only after** a successful master load (Phase 4). Do not bake tightness into package adapters or chase-tool exports.
 
 ---
@@ -93,10 +95,10 @@ How regional coverage is counted is defined under [Regional coverage counting](#
 
 | Asset | What changes |
 | --- | --- |
-| Public base path | `/electiondatabase` → `/atlas`, with redirects **at cutover** (destinations already work). |
+| Public base path | `/electiondatabase` → `/atlas`, with redirects **at cutover** (destinations already work; one data plane). |
 | Master store | In-memory gzip + country-package merge → SQLite master on the VPS. |
 | Default vertical | Observatory home today highlights South America. Atlas **landing** highlights **Europe**. Already-public non-European records remain reachable. |
-| Query path | `lib/observatory/load.ts` process cache of JSON.gz → queries against SQLite (read-only in the web process). |
+| Query path | `lib/observatory/load.ts` process cache of JSON.gz → queries against SQLite (read-only in the web process). After cutover, leftover `/electiondatabase` pages (if any) read the same published master. |
 | Country-package adapters (PR #10) | **Temporary bridges** into the master. Keep them working until a replacement ingest is proven. See [PR #10 adapters](#pr-10-adapters-temporary-bridges). |
 | Generated JSON in `public/data` | Optional debug/export only; not how the Atlas reads production data. |
 | Launch depth | Regional calendars/indexes ship as packages exist. Municipal completeness is not a launch gate. |
@@ -120,10 +122,35 @@ Split these. Do not use one row for both.
 
 | Entity | Identity | Role |
 | --- | --- | --- |
-| **Dataset release** (immutable) | `release_id` | A **published** snapshot: schema/method versions, research window, input checksums, validated counts, provenance. Created only after an ingest attempt validates. Never mutated in place; a later successful load is a new release (or a new release version) with a crosswalk to the previous `release_id`. Failed loads do not mint a release. |
-| **Ingest attempt / run** (audit) | `attempt_id` | Operational record: started/succeeded/failed, operator/script, input paths and checksums, row counts, error text, timestamps, pointer to the published `release_id` on success. Failed attempts are **audit trail only** — they are not public releases and must not change what the site shows. |
+| **Dataset release** (immutable) | `release_id` | A **published** snapshot of **one source-dataset lineage** (see below). Created only after an ingest attempt of that lineage validates. Never mutated in place. Failed loads do not mint a release. |
+| **Ingest attempt / run** (audit) | `attempt_id` | Operational record: started/succeeded/failed, operator/script, input paths and checksums, row counts, error text, timestamps, pointer to the lineage `release_id` on success. Failed attempts are **audit trail only**. An unchanged re-import still creates a **new attempt** and must keep the **same** `release_id`. |
+| **Publication** (the swapped DB file) | The **set of `release_id`s** contained in the published master | What the site is serving right now. Atomic rename replaces the whole publication. Pages cite the lineage `release_id` of the record, not “whatever attempt last swapped the file.” |
 
-Public pages cite `release_id`. Operators debug with `attempt_id`.
+Public record pages cite that record’s lineage `release_id`. Operators debug with `attempt_id`. The `/atlas/releases` index lists published lineage releases (and may show the current publication set), never failed attempts.
+
+#### `release_id` hash inputs and lineage
+
+Prefer **per source-dataset lineage**, not one global hash of the whole VPS file.
+
+Examples of lineages: the Latin America zip derivative (`latin-america-fe5e91689def` today), each European country package (or a declared Europe-extract lineage), the New Zealand batch.
+
+`release_id` is content-derived from, and only from:
+
+1. The lineage’s package / normalized input checksums
+2. Applicable files under `data/overrides/` for that lineage
+3. Adapter, method, and schema **versions** used to load it
+
+Do **not** fold unrelated lineages into the hash. Re-importing Albania with unchanged Albania bytes, overrides, and adapter/schema versions yields a new `attempt_id` and the **same** Albania `release_id`, even if Latin America already sits in the same SQLite file.
+
+#### How a Latin America office cites `release_id` after a Europe re-import
+
+A Brazil (or other LatAm) office page cites the **Latin America lineage** `release_id` (today `latin-america-fe5e91689def` until that lineage’s hash inputs change). A later successful Europe ingest:
+
+- writes a new Europe `attempt_id`
+- changes the Europe lineage `release_id` only if Europe packages, Europe overrides, or Europe adapter/method/schema versions changed
+- atomically publishes a new **publication set** that still includes the unchanged LatAm `release_id`
+
+The LatAm office citation does not jump to the Europe `release_id` and does not change because the file was swapped. Cite-this-record blocks show organization, page title, **lineage `release_id` / snapshot**, URL, and sources.
 
 ### Other master entities
 
@@ -132,9 +159,9 @@ Public pages cite `release_id`. Operators debug with `attempt_id`.
 | **Region** | `region_id` (`europe`, `south-america`, …) | Availability: available / partial / screened_out / not_supplied / fixture_only. Europe is the Atlas **default landing**. |
 | **Country / territory** | stable slug (`country_id`) | Sovereign vs territory stay separate. Screening carries an as-of date. Russia is out of the Europe build. |
 | **Geographic unit** | `geography_id` | Parent geography, aliases, source codes, effective dates. Geometry only when sourced. |
-| **Office** | upstream `office_id` (e.g. `AL-01-M`) | Tier/type, current vs historical, registry qualification. `current` ≠ current tenure. |
-| **Election event / contest** | `event_id` / `history_key` | Date with precision and certainty, event kind, selected-history role, ballot basis, legal outcome. |
-| **Proceeding / result version** | `proceeding_id` | Round, recount, annulment, certification, supersession. |
+| **Office** | `(id_namespace, office_id)` e.g. `AL-01-M` | Tier/type, current vs historical, registry qualification. `current` ≠ current tenure. |
+| **Election event / contest** | `(id_namespace, office_id, history_key)` plus `event_id` | Date with precision and certainty, event kind, selected-history role, ballot basis, legal outcome. **Office namespace is part of the event key and every event FK.** |
+| **Proceeding / result version** | `proceeding_id` | Round, recount, annulment, certification, supersession. FKs carry the same office namespace as the parent event. |
 | **Result row** | `result_row_id` | Candidate/list, party namespace, votes/shares, seats, evidence. Missing ≠ zero. |
 | **Party / group mapping** | `party_mapping_id` | Original label/code scoped by country/source/election; mapped group with uncertainty. |
 | **Officeholder observation** | `officeholder_id` | Dated roster/term; never automatically current tenure. |
@@ -142,11 +169,13 @@ Public pages cite `release_id`. Operators debug with `attempt_id`.
 | **Poll observation** | `poll_id` | National vs local; local polls attach only to a named office. |
 | **Imported metric observation** | `metric_id` | Competition index and grouped Pedersen as **imported** (with `score_gate`, review status). Not tightness. |
 | **Derived tightness observation** | `tightness_id` | **Phase 4 only.** Written after master load from eligible events; never invented during ingest. |
-| **Evidence / source** | `source_id` | Publisher, title, URL, hash/locator, data rights (unknown unless supplied). |
+| **Evidence / source** | `source_id` when resolved | Publisher, title, URL, hash/locator, data rights (unknown unless supplied). |
+| **Unresolved evidence token** | explicit token, not an FK | Source references that do not match a catalogue row. See [Unresolved evidence](#unresolved-evidence). |
 | **Research issue / coverage gap** | `issue_id` | Category, resolution state, required evidence. Aligns with chase-tool work items. |
 | **Completion / chase item** | `chase_item_id` when supplied | Office- or country-level remaining work. Maps to the existing completion queue. |
 | **Briefing / artifact** | `artifact_id` | Path, checksum, availability. Original binaries stay off git. |
 | **Identity crosswalk** | `(id_namespace, source_id, atlas_id)` | Required before new Atlas keys are minted. See [Identity scope, uniqueness, and crosswalk](#identity-scope-uniqueness-and-crosswalk). |
+| **Office tier classification** | per-country checked-in file | Authoritative `GovernmentTier` mapping for that package. See [Regional coverage counting](#regional-coverage-counting). |
 | **Calendar cohort / index projection** | derived view or table | Regional calendars and country indexes. Rebuilt from master, not hand-edited. |
 
 Preserve existing `offices[].id`, `histories[]._key`, source IDs, and package office IDs.
@@ -157,25 +186,37 @@ Approve DDL only if it implements these rules. Random IDs on each import are for
 
 | Entity | Scope of uniqueness | Crosswalk / preservation |
 | --- | --- | --- |
-| Dataset release | Global among **published** releases. `release_id` is content-derived from schema/method versions + input checksums (plus an explicit label if two validated loads would otherwise collide). | Map to today’s observatory `release.id` (e.g. `latin-america-fe5e91689def`) and to package archive checksums. |
-| Ingest attempt | Global. `attempt_id` is unique, never reused, never equal to a `release_id`. | Optional FK to the published `release_id` on success; null on failure. |
+| Dataset release | Unique among published releases **within a lineage**. `release_id` hashes that lineage’s packages + `data/overrides/` + adapter/method/schema versions. | Map to today’s observatory `release.id` (e.g. `latin-america-fe5e91689def`) and to package archive checksums. |
+| Ingest attempt | Global. `attempt_id` is unique, never reused, never equal to a `release_id`. | FK to the lineage `release_id` on success; null on failure. Unchanged re-import → new attempt, same `release_id`. |
+| Publication | The published file is identified by its **set of lineage `release_id`s**. | LatAm pages keep citing the LatAm member of that set after a Europe-only re-import. |
 | Region | Global `region_id`. | Stable strings already used in schema v1. |
 | Country / territory | Global `country_id` (slug). `country_code` unique where present; compound codes allowed (`GG-ALD`). | Package folder slug, `manifest.country` / `country_code`, observatory `countries[].id`. |
 | Geographic unit | Unique within `country_id` for a given effective interval. | Source codes and aliases; parent FK. Names are not keys. |
-| Office | Unique within an ID namespace as `(id_namespace, office_id)`. Default namespace is the upstream observatory/package office ID. | **Preserve** `AL-01-M`, `AD-M-05`, `GG-ALD-STATES`, Latin America office IDs, NZ race IDs. If an Atlas surrogate is ever required, mint a deterministic namespaced key and **store the crosswalk before use**. |
-| Event | `(office_id, history_key)` unique. `event_id` globally unique within the dataset. | Preserve `histories[]._key` and today’s event IDs so old `/elections/:id` links resolve. |
-| Proceeding | Unique per event + proceeding kind/sequence. | Supersession points at the surviving proceeding; withdrawn/annulled rows remain addressable. |
+| Office | Unique as `(id_namespace, office_id)`. Default namespace is the upstream observatory/package office ID space. | **Preserve** `AL-01-M`, `AD-M-05`, `GG-ALD-STATES`, Latin America office IDs, NZ race IDs. If an Atlas surrogate is ever required, mint a deterministic namespaced key and **store the crosswalk before use**. |
+| Event | Unique as `(id_namespace, office_id, history_key)`. `event_id` unique within the dataset. **Every event FK includes `id_namespace` (or a surrogate that embeds it).** | Preserve `histories[]._key` and today’s event IDs so old `/elections/:id` links resolve. Do not key events on bare `office_id` alone. |
+| Proceeding | Unique per namespaced event + proceeding kind/sequence. | Supersession points at the surviving proceeding; withdrawn/annulled rows remain addressable. |
 | Result row | Unique per proceeding/event + source row identity. | Missing ≠ zero; do not reuse a result_row_id for a different candidate. |
 | Party mapping | Scoped by country + source + election context. The same code in two namespaces is two mappings. | Do not equate successor movements without evidence. |
-| Source | Country-namespaced. Preserve original source ID after the existing `country--` prefix where that contract already applies. | Unresolved references stay unresolved; do not invent URLs. |
+| Source | Country-namespaced when resolved. Preserve original source ID after the existing `country--` prefix where that contract already applies. | Unresolved tokens are **not** source FKs. |
 | Artifact / briefing | Checksum + original path. | Byte identity, not filename guess. |
 
 Additional rules:
 
 - Names, labels, and slugs used for display are not primary keys.
-- Repeat import of the same bytes yields the same identities and content hashes. Operational timestamps on the **attempt** may change; research dates and `release_id` must not.
+- Repeat import of the same lineage hash inputs yields the same identities, research dates, and `release_id`. Operational timestamps on the **attempt** may change.
 - Absence of a row in a later **incomplete** package is not a delete (see [Conflict display and correction precedence](#conflict-display-and-correction-precedence)).
 - Fixtures (`FIX-*` / `FXT-*`) stay in a fixture namespace and never enter a published release.
+
+### Unresolved evidence
+
+A source token that does not match a catalogue row is **explicit unresolved evidence**:
+
+- Store it as an unresolved-evidence record (original token, country/office/event locator, why unresolved).
+- Do **not** insert a dangling `source_id` FK.
+- Do **not** fabricate a URL or publisher to make the FK succeed.
+- Display copy states that the reference is unresolved. Validation may **warn**; it must not “fix” the token.
+
+Broken FKs to offices, events, geographies, or **resolved** sources still fail closed (see acceptance checks). Unresolved evidence is a different state, not a broken reference.
 
 ---
 
@@ -190,16 +231,19 @@ Additional rules:
 | Local / CI | `data/master/atlas.sqlite` (gitignored) or a temp path | Created by npm scripts. Never commit the DB file. |
 | Override | `ATLAS_SQLITE_PATH` | Single explicit path for import, migrate, and app read. |
 
-**Path readiness vs Phase 1.** mkdir/`chown` of `/var/lib/cdd` (or touching an empty `atlas.sqlite`) only proves the VPS path and permissions. Phase 1 is complete only when checked-in migrations exist, a bounded European import has published a validated release into that file, and a failed import has been shown **not** to clobber the previous published data.
+**Path readiness vs Phase 1.** mkdir/`chown` of `/var/lib/cdd` (or touching an empty `atlas.sqlite`) only proves the VPS path and permissions. It is **not** a Phase 1 exit. Phase 1 exits only when the [Phase 1 checklist](#phase-1--albania-storage-proof-no-route-changes) is done, including Albania import proof and named CI tests.
 
 Git contains:
 
 - SQL migrations / DDL (versioned)
 - import adapters and npm script entrypoints
 - schema/types that describe master tables
+- per-country tier-classification files
 - checksums and release manifests
 
 Git does **not** contain `.sqlite`, Parquet dumps, or the Latin America zip. Optional JSON/Parquet exports may be written under a gitignored `data/exports/` (or similar) for debug.
+
+**Reproducibility.** The published master must be **rebuildable from git + checksummed off-git inputs** (Latin America zip, Europe archive when a package still needs it). VPS backups are for **speed** of restore, not the sole recovery path.
 
 ### How imports run
 
@@ -221,19 +265,34 @@ Until those scripts exist, today’s commands remain:
 - `npm run import:data` — Latin America zip → `data/research`
 - `npm run import:countries` — inventory `data/countries/*` (PR #10)
 
-The implementing PR should wire those existing importers as **bridges**: they read the same inputs and **upsert the SQLite master**, instead of (or in addition to) merging in memory.
+The implementing PR should wire those existing importers as **bridges**: they read the same inputs and **upsert the SQLite master**, instead of (or in addition to) merging in memory. Bridges must use the checked-in [tier-classification files](#regional-coverage-counting), not calendar cohort strings.
 
-### Atomic publication
+### Atomic publication (one protocol)
 
-A failed import must leave the **last validated published data** visible.
+A failed import must leave the **last validated published data** visible. Use this protocol; do not invent a second one.
 
-1. Record an ingest **attempt** (`started`).
-2. Write into a staging database or a single SQLite transaction that is not yet the published file.
-3. Run validation (identities, references, missing-vs-zero, date precision, score gates, fixture exclusion).
-4. On success: backup the current published file (if any), atomically replace it (e.g. `rename` of a fully synced staging file onto `atlas.sqlite`), record `attempt` = succeeded and mint/publish the immutable **release**.
-5. On failure: abort; do not replace the published file; record `attempt` = failed with errors. The site keeps serving the previous release.
+1. **Serialize.** One writer (lockfile or equivalent). Concurrent `import:atlas` / `migrate:atlas` is an error.
+2. **Durable attempt row first.** Append `attempt_id` = started to an attempt log that **does not live only inside the staging file** (sibling log DB/file on the same filesystem, or a table in the published DB that staging never replaces wholesale). Staging rollback must not erase the attempt.
+3. **Stage on the same filesystem** as the published file (`atlas.sqlite.staging` next to `atlas.sqlite`, or equivalent). Do not stage on a different mount if rename would copy.
+4. Load into staging. Validate (identities, namespaced FKs, missing-vs-zero, date precision, score gates, fixture exclusion, unresolved-evidence tokens).
+5. On **failure:** leave published file untouched; mark attempt failed; return non-zero. Site keeps serving the previous publication.
+6. On **success:**
+   - Copy an **off-VPS recoverable backup** of the current published file (if any) **before** production publication. Also keep on-VPS copies: **last N** plus **one per lineage `release_id`** in the publication set.
+   - **WAL checkpoint** the staging DB so the file to rename is a consistent main database, not an uncheckpointed WAL pair.
+   - Ensure **release metadata is inside the file being published** (lineage `release_id`s, checksums, schema version) so it is visible atomically with the data.
+   - `fsync` staging; **atomic rename** onto `atlas.sqlite`; `fsync` the directory.
+   - Mark attempt succeeded with the lineage `release_id`(s) published.
+7. Readers are read-only (`query_only`). After rename, reopen connections so the app does not keep a deleted inode.
 
-Never publish a half-written master. Never mint a `release_id` for a failed attempt.
+Never mint a `release_id` for a failed attempt. Unchanged successful re-import: new attempt, same lineage `release_id`, new publication swap (content-identical for that lineage).
+
+**Startup reconciliation.** If a previous publish was interrupted (staging present, rename incomplete, WAL leftover, or attempt = started with no terminal status), the app/importer on start must recover to the last good published file (or refuse to serve research) and mark the attempt failed or resume only from a documented safe point. Do not serve a half-renamed master.
+
+**Migrate-then-deploy.** Apply migrations that the new app requires **before** switching the web process to that app version. If a live migrate of the published file is unavoidable, take an explicit brief **503** (or equivalent) rather than letting mixed schema/app versions serve pages.
+
+**SQLite journaling.** WAL on staging and published as needed so `www-data` can read the published file while the importer writes staging. The web process must not have write permission.
+
+Optional JSON/Parquet dumps are written **after** successful publication, never as the write-ahead path.
 
 ### Conflict display and correction precedence
 
@@ -241,7 +300,7 @@ Short rule set — apply in this order:
 
 1. **Package / immutable source wins** for a given field unless a documented editorial override exists under `data/overrides/` with provenance (source, date, claim, affected IDs).
 2. **Never infer deletion** from an incomplete package. A package that omits an office, event, or source that a previous validated release still carries does not delete that record. Removal requires an explicit withdrawal (below).
-3. **Conflicting claims are shown with sources.** When two sourced values disagree (chase-tool vs package, two dated observations, mirrored files), keep both with provenance. Do not silently prefer the website, the newest file, or a numeric average.
+3. **If neither rule selects a single value** (two sourced claims, no override): **retain both with sources** and **withhold** any single resolved calendar date or metric value. Do not average, pick newest, or let the website invent a winner.
 4. Overrides never rewrite frozen extract bytes. They apply at ingest into the master and remain reviewable in git.
 
 ### Withdrawal and supersession
@@ -249,21 +308,7 @@ Short rule set — apply in this order:
 - **Withdrawal** of a published record is explicit: a sourced withdrawal/supersession row (who, when, why, replacement ID if any). Silence is not withdrawal.
 - **Supersession** of results uses the existing proceeding model (recount, annulment, certification). Annulled and superseded evidence remains addressable; it is not a second election and is not deleted.
 - Withdrawn or superseded offices/events keep their IDs so old URLs still resolve to a record page that states the status.
-- A corrected re-import is a new ingest attempt. If it validates, it publishes a new release; the previous release remains auditable.
-
-### Import serialization, journaling, and readers
-
-- **One writer.** Serialize imports and migrations (lockfile or equivalent). Concurrent `import:atlas` is an error.
-- **SQLite journaling.** Use WAL (or an equivalent read-safe arrangement) so `www-data` can read the **published** file while an importer writes **staging**. Do not give the web process write permission.
-- Readers open the published DB read-only (`query_only` / immutable as appropriate). After atomic replace, recycle or reopen connections so the app does not keep a deleted inode.
-- Optional JSON/Parquet dumps are written after successful publication, never as the write-ahead path.
-
-### Backup, restore, migration recovery, compatibility
-
-- **Backup** the published DB before every migration and every publication swap. Store backups on the VPS (not git), named by `release_id` + timestamp.
-- **Restore check:** a cutover gate is restoring a backup into a scratch path and confirming the app can read it (record counts, a known office ID, schema version).
-- **Migration recovery:** a failed migration does not publish. Restore the pre-migration backup. Do not hand-edit the live file.
-- **App/schema compatibility:** the app records the minimum schema version it can serve. If the DB is older, newer-incompatible, or has no published release, refuse to pretend research is loaded (fail clearly in production; fixtures remain opt-in and non-production).
+- A **corrected** re-import (hash inputs changed) is a new ingest attempt that publishes a **new** lineage `release_id`. An **unchanged** re-import is a new attempt with the **same** `release_id`.
 
 ### Where off-git inputs can be recovered
 
@@ -274,7 +319,7 @@ Short rule set — apply in this order:
 | Europe workbook `Europe_Excluding_Russia.xlsx` | No | SHA-256 `b11dab577fb1746eddeb3aef72af7b097bcc4601828e1efbca1db3d6f6b98665` on extract manifests. |
 | Armenia packed payload | Chunks in git | Reassemble via `manifest.chunks`; `payload_sha256` `f55265273c849d248baf0037e4149e17a0329318d21a794e966cebbaa32012ca`. Companion XLSX lives inside the tarball, not as a public artifact host. |
 | New Zealand `dataset.json` | Yes | File hash `6d73c7075fc04be9cec3fdda37810e5195748c77e25df2e62998e2d4721d2133` (SHA-256 of the committed file as of this plan revision). |
-| SQLite master / backups | No | VPS backup set keyed by `release_id`. Optional post-publish JSON/Parquet is debug, not the restore path unless a runbook says otherwise. |
+| SQLite master / backups | No | Rebuild from git + checksummed off-git inputs. On-VPS: last N + one per lineage `release_id`. Off-VPS copy required before production publication. Optional post-publish JSON/Parquet is debug. |
 | Synthetic fixtures | Tests only | Must not be used to recover production. |
 
 ### PR #10 adapters (temporary bridges)
@@ -285,6 +330,7 @@ For the Atlas they are **temporary bridges into the master**:
 
 - Keep using them so frozen packages (`site_ingestion_status: pending_adapter`) do not need byte-level rewrites.
 - Point their output at SQLite upserts rather than a long-term in-process merge.
+- **Ban calendar cohort strings as tier classifiers** in bridges; use the checked-in per-country tier file.
 - Do **not** replace working bridges early. Replacement is a later PR after a bounded SQLite ingest is proven.
 - Do not treat adapter-in-memory merge as the architecture to extend for municipal coverage or tightness.
 
@@ -298,10 +344,19 @@ These are different events:
 
 | Event | What it is | Redirects? |
 | --- | --- | --- |
-| **Implementation starts** | Schema, migrations, bounded import, `/atlas` shell, compatibility views. `/electiondatabase` stays live. | **No.** |
-| **Cutover** | The **release** in which every URL that will receive a redirect already has a working `/atlas` destination (same record, or a clear record page — not Atlas home as a dump). Backups/restore, record parity, and query-string behaviour have passed the [cutover gate](#cutover-gate). | **Yes**, together with SEO. |
+| **Implementation starts** | Schema, Albania storage proof, `/atlas` shell, Phase 2 continuity ingest. `/electiondatabase` stays live. | **No.** |
+| **Cutover** | Destinations already work; named cutover-gate inputs are in SQLite; one data plane; [cutover checklist](#cutover-gate) signed with evidence. | **Yes**, together with SEO. |
 
 Do not flip `/electiondatabase` redirects when `/atlas` is only a Europe landing page that 404s offices. Do not treat “we started Atlas work” as cutover.
+
+### One data plane (partial cutover)
+
+After cutover there is **one published master** (one publication set). Rules:
+
+- Any `/electiondatabase` route that **survives** cutover (not yet redirected) must **read that published master**, not leftover gzip shards or an in-memory package merge from a different load.
+- Prefer redirecting a surface once its `/atlas` destination works. **Explorer is a cutover requirement** (so it is not left on a second data plane). Advanced compare/polling still wait unless a harvested old URL requires a compatibility view.
+- Redirects still fire **only** when the destination works.
+- Office and event URLs **never** redirect to Atlas home.
 
 ### What may redirect, and where
 
@@ -309,39 +364,42 @@ Permanent redirects (HTTP 308 or Next.js `permanent: true`) at cutover. **Preser
 
 **Do not** redirect office/event URLs — or already-public non-European observatory URLs — to Atlas home.
 
-| Old path | Cutover destination | Notes |
-| --- | --- | --- |
-| `/electiondatabase` | `/atlas` | Atlas landing is **Europe**. This is the only home→home redirect. |
-| `/electiondatabase/regions` | `/atlas/regions` | |
-| `/electiondatabase/countries/:id` | `/atlas/countries/:id` | Includes Latin America and NZ country IDs already public. |
-| `/electiondatabase/explorer` | `/atlas/explorer` if that surface exists at cutover; otherwise keep serving the old explorer until it does | Do not send explorer-with-filters to `/atlas` home. |
-| `/electiondatabase/offices/:id` | `/atlas/offices/:id` | **Same office record** (or a clear record page). Never `/atlas`. Includes non-European IDs. |
-| `/electiondatabase/offices/:id/original` | `/atlas/offices/:id/original` | Same briefing record. |
-| `/electiondatabase/elections/:id` | `/atlas/elections/:id` | **Same event record**. Never `/atlas` home. |
-| `/electiondatabase/compare` | `/atlas/compare` only if compare exists at cutover | Otherwise defer this redirect. Do not dump to home. |
-| `/electiondatabase/calendar` | `/atlas/calendar` | Regional calendar is in scope; date uncertainty preserved. |
-| `/electiondatabase/polling` | `/atlas/polling` only if that page exists at cutover | Advanced polling waits; do not redirect to home. |
-| `/electiondatabase/coverage` | `/atlas/coverage` | Honest labels; regional counting rules apply. |
-| `/electiondatabase/sources` | `/atlas/sources` if present at cutover; else keep old path until it is | |
-| `/electiondatabase/downloads` | `/atlas/downloads` if present; else defer | |
-| `/electiondatabase/methodology` | `/atlas/methodology` | |
-| `/electiondatabase/releases` | `/atlas/releases` | Published releases only, not failed attempts. |
-| `/electiondatabase/about` | `/atlas/about` | |
-| `/electiondatabase/artifacts/:id` | `/atlas/artifacts/:id` | Same artifact. |
+| Old path | Cutover destination | Canonical after cutover | Query params |
+| --- | --- | --- | --- |
+| `/electiondatabase` | `/atlas` | `/atlas` | n/a (Europe landing) |
+| `/electiondatabase/regions` | `/atlas/regions` | `/atlas/regions` | preserve if used |
+| `/electiondatabase/countries/:id` | `/atlas/countries/:id` | `/atlas/countries/:id` | preserve |
+| `/electiondatabase/explorer` | `/atlas/explorer` (**required** at cutover) | `/atlas/explorer` | preserve `q`, `region`, filters |
+| `/electiondatabase/offices/:id` | `/atlas/offices/:id` | `/atlas/offices/:id` | never `/atlas` home |
+| `/electiondatabase/offices/:id/original` | `/atlas/offices/:id/original` | `/atlas/offices/:id/original` | n/a |
+| `/electiondatabase/elections/:id` | `/atlas/elections/:id` | `/atlas/elections/:id` | never `/atlas` home |
+| `/electiondatabase/compare` | `/atlas/compare` only if required by harvested URLs or a shipped compatibility view; else **do not redirect to home** — keep old path on the **master** or omit redirect until the surface exists | matching canonical when shipped | preserve office IDs |
+| `/electiondatabase/calendar` | `/atlas/calendar` | `/atlas/calendar` | preserve month/filters; uncertain dates stay labelled |
+| `/electiondatabase/polling` | same rule as compare (advanced polling waits) | when shipped | do not dump to home |
+| `/electiondatabase/coverage` | `/atlas/coverage` | `/atlas/coverage` | preserve |
+| `/electiondatabase/sources` | `/atlas/sources` if present; else leftover reads **master** | when shipped | preserve |
+| `/electiondatabase/downloads` | `/atlas/downloads` if present; else leftover reads **master** | when shipped | preserve |
+| `/electiondatabase/methodology` | `/atlas/methodology` | `/atlas/methodology` | n/a |
+| `/electiondatabase/releases` | `/atlas/releases` | `/atlas/releases` | published lineage releases only |
+| `/electiondatabase/about` | `/atlas/about` | `/atlas/about` | n/a |
+| `/electiondatabase/artifacts/:id` | `/atlas/artifacts/:id` | `/atlas/artifacts/:id` | same artifact |
 
 Unknown slugs still 404 (as today). Marketing homepage is never the fallback for a research URL.
 
+The cutover PR checks this table in a [checked-in checklist](#cutover-gate) with evidence links (not a verbal “looks fine”).
+
 ### Minimal record-detail / compatibility views
 
-Bring these **forward** so cutover is possible without waiting for full Phase 3 surfaces:
+Bring these **forward** (Phase 2) so cutover is possible without waiting for full Phase 3 surfaces:
 
 - Office detail sufficient to identify the office, geography, tier, next-election date **with certainty/precision intact**, selected histories, and status (including withdrawn/superseded).
 - Event detail sufficient to identify the contest, date uncertainty, legal outcome, and result rows (missing ≠ zero).
 - Original briefing route where a briefing already exists.
 - Country index pages for **already-public** countries, including non-European ones, even though Europe is the default landing.
-- Coverage labels that do not pretend municipal or non-European completeness.
+- Explorer reading the published master.
+- Coverage labels that do not pretend municipal or non-European completeness, and that state an **empty regional numerator** when that is the fact.
 
-These compatibility views are a cutover requirement. They are **not** a decision to make Latin America or Oceania the launch vertical, to ship advanced compare/polling, or to wait for full municipal coverage.
+These views plus **Phase 2 ingest of Latin America and New Zealand** (named cutover-gate inputs) are how already-public offices/events exist in SQLite **before** redirects need them. They are **not** a decision to make Latin America or Oceania the launch vertical.
 
 SEO follow-through in the **same cutover change** as redirects: canonical URLs, sitemap, robots, Open Graph, and JSON-LD `url` / `urlTemplate` move to `/atlas`. Marketing nav labels may say “Election Atlas” while keeping the rest of the homepage copy.
 
@@ -353,60 +411,71 @@ Do **not** add these redirects in this documentation PR.
 
 Implementation PRs should land in this order. Each phase must leave `npm run build` green and must not invent election results. Phases 1–2 can proceed on the VPS and in git **without** retiring `/electiondatabase`. Redirects wait for cutover.
 
-Gated on Justin’s further audits: see [Immediate build order](#immediate-build-order-accepted-next-steps).
+See [Immediate build order](#immediate-build-order).
 
-### Phase 0 — Foundations (plan + inventory; no runtime change)
+### Phase 0 — Amend this plan (this PR)
 
 - Record accepted decisions (URL, SQLite, Europe, regional depth).
-- Inventory actual ingest inputs by checksum, country, tier, adapter, validation status, and coverage gaps ([Current repository snapshot](#current-repository-snapshot)).
-- Define regional coverage counting, identity rules, atomic publication, and cutover.
-- Specify VPS path, permissions, `ATLAS_SQLITE_PATH`, and npm script contract. Path readiness ≠ Phase 1.
-- **Exit:** Revised plan on the Atlas-plan branch / `main` when merged. Site still serves `/electiondatabase`. No SQLite schema code and no Atlas UI in this documentation PR.
+- Inventory actual ingest inputs; define regional coverage counting, identity rules, atomic publication, one data plane, and cutover.
+- **Exit:** Justin says merge. Site still serves `/electiondatabase`. No schema or Atlas UI in this PR.
 
-A later Phase 0/1 implementation slice (separate PR, after further audit) may add migrations, gitignore for `*.sqlite`, and script stubs without moving routes or flipping redirects.
+### Phase 1 — Albania storage proof (no route changes)
 
-### Phase 1 — Minimum schema and a bounded European import proof
+Separate **European storage proof** from **regional calendar proof**. Phase 1 is storage + identity + publication protocol. It is **not** a regional-calendar launch and is **not** failed if Albania’s regional numerator is zero.
 
-- Check in SQLite DDL/migrations covering provenance, release vs ingest-attempt tracking, and stable identities/crosswalks — reviewed against the identity table above.
-- Create the VPS path if needed (**path readiness**). Publish data into it only after a validated import.
-- **One bounded European import proof** (a single country package or a declared small set), then expand to other European packages / Europe-bound uploads. PR #10 adapters act as bridges; do not replace them yet.
-- Demonstrate atomic publication: a failed import leaves the last validated data visible; a corrected import publishes a new release; an unchanged re-import is deterministic.
-- Optional JSON/Parquet export for debug; master remains SQLite.
-- Keep `/electiondatabase` serving. **No public redirects.**
-- **Do not** compute tightness.
-- **Exit:** At least one validated European load in SQLite; failed-import rollback proven; Latin America still available as an input, not the default landing.
+Named bounded proof: **Albania** only (not a grab-bag of Europe; **Armenia is last** among early European targets and is not Phase 1).
 
-Empty `atlas.sqlite` on disk without that proof is not an exit.
+Phase 1 PR contents:
 
-### Phase 2 — SQLite-backed `/atlas` shell (still not cutover)
+- No public route changes
+- `.gitignore` for `*.sqlite` / `data/master/`
+- `ATLAS_SQLITE_PATH`
+- `migrate:atlas` / `import:atlas` entrypoints
+- DDL reviewed against the identity table (lineage `release_id` vs `attempt_id`, namespaced office/event keys, unresolved evidence, publication set)
+- Albania **tier-classification file** (checked in; DDL-like review)
+- Albania import proof into SQLite (atomic publish, failed-import rollback, unchanged re-import → new attempt / same `release_id`)
+- Named ingest acceptance rows as **required automated CI tests**
+- VPS path readiness allowed as ops hygiene — **not** an exit
 
-- Ship an `/atlas` shell reading SQLite: Europe landing, country indexes, regional calendar, coverage labels, and **minimal record-detail / compatibility views** for continuity (offices, events, original briefings, already-public non-European records).
-- Europe is the default landing vertical.
-- Regional calendars/indexes render from master using [Regional coverage counting](#regional-coverage-counting). Municipal rows may appear when a package has them; absence is labelled, not blocked.
-- `/electiondatabase` remains the public canonical path until the cutover gate passes.
-- Marketing site unchanged except optional non-canonical Atlas links for internal review.
-- **Exit:** A researcher can open `/atlas`, see Europe regional coverage honestly, open a country index and calendar, and open the same office/event via `/atlas/...` IDs that exist today under `/electiondatabase` — **before** redirects flip.
+**Exit:** CI green on those tests; Albania lineage published in a local/CI DB rebuildable from git + checksums. Then **stop for Phase 2 review**. Empty `/var/lib/cdd/atlas.sqlite` is not an exit.
+
+Keep `/electiondatabase` on the current loaders. **No public redirects. No tightness.**
+
+### Phase 2 — Continuity ingest + `/atlas` shell (still not cutover)
+
+**Named cutover-gate inputs (ingest in this phase, before redirects):** Latin America release, New Zealand package, and remaining early European packages as reviewed (Andorra, Alderney, …; **Armenia last** among those early targets). Europe remains the Atlas **default landing**. Continuity ingest ≠ expanding launch scope.
+
+**Minimum-content floor** for the SQLite-backed `/atlas` shell:
+
+| Surface | Floor |
+| --- | --- |
+| Landing | Europe default; honest partial coverage |
+| Country indexes | Every country in the publication set that is already public today |
+| Regional calendar | Projected from `tier = regional` only; **explicit empty state** if the European numerator is zero (expected with today’s packages) |
+| Coverage labels | Regional counting rules; no PR-count KPIs |
+| Office / event / original briefing | Minimal compatibility views for **all already-public IDs** (LatAm + NZ + Europe in SQLite) |
+| Explorer | Required (one data plane / cutover) |
+
+Regional **calendar proof** lives here, not in Phase 1. A zero regional-tier numerator is a labelled empty calendar, not a blocker.
+
+`/electiondatabase` remains canonical until the cutover gate passes. Leftover observatory pages that still run in this phase should be moving onto the master; they must not mix gzip-only reads with Atlas SQLite reads for the same records.
+
+**Exit:** Named cutover-gate inputs are in the published master; `/atlas` meets the floor; already-public office/event IDs resolve on `/atlas` **before** redirects flip.
 
 ### Cutover gate (after Phase 2 destinations work)
 
-Not a separate product phase with new research scope. It is the release that is allowed to retire `/electiondatabase`.
+Not a new research-scope phase. The release allowed to retire `/electiondatabase`.
 
-Required before redirects + SEO ship **together**:
+Redirects + SEO ship **together** only after the [checked-in cutover checklist](#cutover-checklist) has evidence links. Ingest-style rows that can be automated stay in CI; **cutover rows are a checklist with evidence**, not a vibe pass.
 
-- Backup and restore check of the published SQLite file.
-- Record parity: published IDs for already-public offices/events still resolve; missing ≠ zero; uncertain dates not coerced; score gates still withhold; fixtures excluded.
-- Old-link destinations exist (office/event/country/original briefing) and do **not** land on Atlas home.
-- Query strings preserved on explorer/calendar/compare where those surfaces exist.
-- Then enable the redirect table and SEO retarget in the same change.
+### Phase 3 — Expanded Atlas surfaces and **new packages only**
 
-### Phase 3 — Expanded Atlas surfaces and further ingest
-
-- Fuller explorer, coverage, sources, downloads, methodology, releases — reading SQLite.
-- Ingest remaining packages (Latin America release, New Zealand, later Europe uploads) into the same master without changing the Europe-first **default landing**.
-- Municipal packages attach as they arrive; launch is not waiting on them.
+- Fuller coverage, sources, downloads, methodology, and remaining product surfaces reading SQLite.
+- Ingest **new** packages only (later Europe uploads, municipal packages as they arrive, any newly supplied Australia/Japan, new overrides). Do **not** describe Latin America or New Zealand as Phase 3 ingest — they are Phase 2 / cutover-gate inputs.
+- Municipal completeness still does not block launch.
 - Retire in-memory gzip merge as the primary query path once Atlas reads and cutover are proven.
-- Advanced compare/polling wait unless already required for a specific old-link destination.
-- **Exit:** One master, one public path after cutover, existing research still cited with original IDs; coverage remains partial where research is partial.
+- Advanced compare/polling wait unless already required for a harvested old-link destination.
+- **Exit:** One master, one public path after cutover, existing research still cited with original IDs and lineage `release_id`s; coverage remains partial where research is partial.
 
 ### Phase 4 — Derived tightness metrics (after master load)
 
@@ -419,24 +488,26 @@ Required before redirects + SEO ship **together**:
 
 ---
 
-## Immediate build order (accepted next steps)
+## Immediate build order
 
-Gated on Justin’s further audits. Do not skip the gate into schema/import PRs.
+**Phase 0:** Amend plan (this PR) → merge when Justin says.
 
-1. **Finalize plan + inventory** — this revision; remaining audit feedback may still edit counting rules or identity details.
-2. **Minimum schema + migrations** — provenance, dataset release vs ingest attempt, stable identities and crosswalks. No public route change.
-3. **One bounded European import proof**, then expand to further European packages.
-4. **SQLite-backed `/atlas` shell** — Europe landing, country indexes, regional calendar, coverage labels, minimal detail for continuity (including already-public non-European records).
-5. **Gate cutover** (backups/restore, record parity, old-link destinations, query params) **then** redirects + SEO together.
+**Phase 1:** Un-gated by Justin’s disposition on this revision. No route changes; `.gitignore` sqlite; `ATLAS_SQLITE_PATH`; migrate/import entrypoints; DDL vs identity table; Albania tier file; Albania import proof; named CI tests; VPS path readiness ≠ exit.
+
+**Then stop for Phase 2 review.**
+
+Phase 2 (after that review): LatAm + NZ + remaining early Europe ingest; `/atlas` shell at the minimum-content floor; regional calendar proof (including empty numerator); explorer on the master.
+
+Then cutover checklist → redirects + SEO together.
 
 ---
 
 ## What waits
 
-Not launch blockers; not part of the immediate build order:
+Not launch blockers; not part of Phase 1:
 
 - Full municipal coverage for Europe or anywhere else.
-- Expanded non-European research as **launch scope** (Latin America and NZ remain ingest inputs and cutover-continuity records, not the default vertical).
+- Expanded non-European research as **launch scope** (Latin America and NZ are Phase 2 continuity ingest / cutover-gate inputs, not the default vertical).
 - Advanced compare and polling products beyond what old-link continuity requires.
 - Replacing working PR #10 bridge adapters early.
 - Derived tightness (Phase 4).
@@ -450,10 +521,10 @@ The chase tool is the research-operations surface for collecting dates, sources,
 | Topic | Alignment |
 | --- | --- |
 | **Direction of data** | Chase tool → packages / uploads → Atlas import scripts → SQLite master. Atlas does not become the place researchers first record a date. |
-| **Identities** | Office IDs, country slugs, history keys, and source IDs used in chase exports must round-trip into master entities. If the chase tool supplies a `chase_item_id`, store it on the completion/issue row. |
-| **Calendars** | Regional calendars are projections of chased dates (called / statutory / expected / conditional / unknown). Do not “confirm” a date the chase tool left uncertain. Filtering must preserve uncertainty (see [Regional coverage counting](#regional-coverage-counting)). |
+| **Identities** | Office IDs, country slugs, history keys, and source IDs used in chase exports must round-trip, **including office namespace on event keys**. If the chase tool supplies a `chase_item_id`, store it on the completion/issue row. |
+| **Calendars** | Regional calendars are projections of chased dates. Do not “confirm” a date the chase tool left uncertain. Use interval-overlap filtering and a separate unknown-date section ([Regional coverage counting](#regional-coverage-counting)). |
 | **Coverage queue** | Atlas `coverage` / issues map to chase remaining-work items. Closing a gap happens in research + git/package update, then re-import — not by editing SQLite by hand on the VPS. |
-| **Conflicts** | Same precedence as ingest: package wins unless documented override; never infer deletion; conflicting claims shown with sources. |
+| **Conflicts** | Package wins unless documented override; incomplete package ≠ deletion; if neither selects, retain both and withhold a single resolved calendar/metric value. |
 | **Europe first** | Chase and ingest prioritize European regional calendars and indexes. Municipal chase items may exist in packages; Atlas will show them when present and will not wait for a full municipal chase. |
 | **Adapters** | PR #10 adapters may translate chase/package tables into master rows. They are bridges, not a second chase UI, and are not replaced early. |
 | **Tightness** | Not a chase-tool field. Chase captures evidence and eligibility; Atlas **derives** tightness in Phase 4 after load. |
@@ -471,30 +542,48 @@ Software success is not research completeness. Research coverage remains partial
 | Metric | Target |
 | --- | --- |
 | Public path | After cutover, `/atlas` is canonical; `/electiondatabase` redirects per the table. Before cutover, `/electiondatabase` remains live. |
-| Master store | Production reads `/var/lib/cdd/atlas.sqlite` (or the app-local equivalent). No SQLite binary in git. Path existence alone is not success. |
-| Ingest | `npm` import scripts create/update that DB from checked-in schemas + European packages / Europe-bound uploads. |
+| One data plane | After cutover, every surviving research page reads the published master (same publication set). |
+| Master store | Production reads `/var/lib/cdd/atlas.sqlite` (or the app-local equivalent). No SQLite binary in git. Path existence alone is not success. Rebuildable from git + checksummed off-git inputs. |
+| Ingest | `npm` import scripts create/update that DB from checked-in schemas. Phase 1 = Albania storage proof; Phase 2 = named cutover-gate inputs (LatAm, NZ, remaining early Europe). |
 | First vertical | Europe is the Atlas default landing; Russia excluded; coverage labelled using [Regional coverage counting](#regional-coverage-counting). |
-| Depth | Regional calendars and indexes are usable at launch. Municipal completeness is **not** a launch criterion. |
+| Depth | Regional calendars and indexes are usable at launch, including an honest **empty** regional numerator. Municipal completeness is **not** a launch criterion. |
 | Continuity | Marketing site still ships. Already-public office/event URLs keep reaching the same record (or a clear record page), including non-European IDs. |
 | Tightness | Absent until Phase 4; then only from master-loaded eligible events. |
 | Quality bar | `npm test`, `npm run lint`, `npm run validate:data`, and `npm run build` stay green. |
 
-### Acceptance checks (review bar)
+### Ingest acceptance — required automated CI tests (Phase 1 PR)
 
-These must be demonstrable before cutover, and as soon as imports exist for the ingest-related rows.
+These rows **must** be automated tests in the Phase 1 PR (not manual-only):
 
 | Check | Passes when |
 | --- | --- |
-| **Unchanged re-import** | Importing the same inputs twice yields the same identities, research dates, and content hashes. Attempt timestamps may differ; `release_id` does not. |
-| **Corrected import** | A sourced correction (override or new package bytes) publishes a new release; previous release remains auditable; IDs of unchanged records are preserved. |
-| **Failed-import rollback** | A deliberately failing import leaves the last validated published data visible; the failed attempt is logged and is not a release. |
-| **Broken references** | Validation fails closed on dangling office/event/source/geography FKs. The site does not publish a release with broken references. |
-| **Preserved IDs** | Upstream office IDs, history keys, source IDs, and already-public event IDs round-trip. No random IDs. |
+| **Unchanged re-import** | Same lineage hash inputs twice → same identities, research dates, content hashes, and **`release_id`**. New `attempt_id` each time. |
+| **Corrected import** | Changed package bytes or `data/overrides/` → new lineage `release_id`; previous release auditable; unchanged record IDs preserved. |
+| **Failed-import rollback** | Deliberate failure leaves last validated published data visible; failed attempt logged **outside** discarded staging; not a release. |
+| **Broken references** | Dangling office/event/geography/**resolved-source** FKs fail closed. Unresolved evidence tokens are explicit records, not fabricated FKs/URLs. |
+| **Preserved IDs + namespace** | Upstream office IDs, history keys, source IDs, already-public event IDs round-trip. Event keys/FKs carry `id_namespace`. No random IDs. |
 | **Missing vs zero** | Recorded zero stays zero; unknown/null stays missing; they never collapse. |
-| **Uncertain dates** | Month/year/range/conditional/unknown stay at that precision. No invented day. Calendar filters do not drop or “confirm” uncertain dates. |
-| **Score gates** | `score_gate: false` never displays as cleared CI. Incomplete series stay withheld. |
+| **Uncertain dates** | Month/year/range/conditional/unknown stay at that precision. No invented day. Interval-overlap filtering; unknown dates are not confirmed in-window. |
+| **Score gates** | `score_gate: false` never displays as cleared CI. Incomplete series stay withheld. Withheld when conflicts do not resolve to one metric. |
 | **Fixture exclusion** | `FIX-*` / `FXT-*` / `OBSERVATORY_FIXTURES` never appear in a published production release or public Atlas totals. |
-| **Redirect + query-string continuity** | At cutover, mapped old paths reach the correct `/atlas` record; office/event URLs never bounce to Atlas home; explorer/calendar query strings that the destination understands are preserved. |
+| **Tier file** | Albania (then other countries) classification file drives tier; calendar cohort strings are not classifiers. |
+
+### Cutover checklist
+
+Checked in with the cutover PR. Each row needs an **evidence link** (log excerpt, test output, screenshot path, or CI run). Not a substitute for Phase 1 CI.
+
+| Row | Evidence |
+| --- | --- |
+| **Pre-cutover access-log harvest** | Harvest of real `/electiondatabase` URLs (offices, events, explorer query strings, countries) used to drive destination tests. |
+| **Named cutover-gate inputs in master** | LatAm + NZ + required Europe lineages present; publication set listed. |
+| **Record parity** | Harvested office/event IDs resolve on `/atlas`; missing ≠ zero; dates/score gates/fixtures as in CI. |
+| **Route-level destination / canonical / query-param** | Every row in the redirect table: destination exists, canonical matches, query params preserved where specified; office/event never → `/atlas` home. |
+| **Sitemap / canonical parity** | Sitemap URLs, `alternates.canonical`, OG/JSON-LD match `/atlas` after cutover; no leftover canonicals pointing at retired paths for redirected pages. |
+| **One data plane** | No surviving `/electiondatabase` page reads gzip/package merge instead of the published master. Explorer is on `/atlas`. |
+| **Backup / restore** | Off-VPS backup taken before production publication; restore into scratch path serves a known office ID and schema version. |
+| **Startup reconciliation** | Documented recovery from interrupted rename/WAL (test or drill). |
+| **Post-cutover 404 monitoring** | Watch harvested URLs and sitemap paths for 404/redirect loops after flip; owner + window named. |
+| **Redirect + query-string continuity** | Same as route-level row, exercised against the harvest. |
 
 Honesty: UI never presents fixture data as production research; never presents Latin America completeness as European completeness; never presents PR-era office counts as current Atlas coverage.
 
@@ -510,13 +599,16 @@ Honesty: UI never presents fixture data as production research; never presents L
 - Treating PR #10 in-memory adapters as the permanent query layer, **or** replacing those working bridges before a SQLite ingest is proven.
 - Computing tightness (or any new derived index) during package ingest or inside chase-tool.
 - Redirecting office/event (or other already-public record) URLs to Atlas home.
+- Mixing gzip-shard reads and SQLite reads after cutover.
 - Hosted Postgres/MySQL, login, or a chase-tool admin clone on the public site.
 - Live scraping or API credentials as a prerequisite to build.
 - Including Russia in the Europe vertical.
 - Invented geometry, national-to-local swing models, or treating national polling as a local forecast.
 - Claiming research coverage is complete because the software build passed.
 - Treating VPS path creation as Phase 1 complete.
+- Treating Albania storage proof as regional calendar proof.
 - Promoting historical PR office counts (including PR #10’s “202 European package offices”) into current coverage claims.
+- Open-ended “pending further audits” before Phase 1 after Justin disposes this revision.
 
 ---
 
@@ -533,31 +625,39 @@ Operational detail for the live observatory remains in [`docs/electiondatabase-p
 - Observatory home still highlights South America. Atlas landing will highlight Europe; that is independent of keeping already-public URLs working.
 - There is **no** SQLite master and **no** `/atlas` route yet.
 - `data/incoming/` has no zip (only README / `.gitkeep`). `data/overrides/` is not present yet. Fixtures stay under `tests/fixtures/` (test-only).
+- `.gitignore` does not yet ignore `*.sqlite` (Phase 1).
 
 ### Regional coverage counting
 
-Use this definition in Atlas coverage labels, calendars, and success checks. Do not use concatenated workbook calendar **Tier** strings as the office-tier classifier.
+Use this definition in Atlas coverage labels, calendars, and success checks.
 
-1. **Classify geography and tier on the office**, from sourced office type + geography, using schema v1 `GovernmentTier` (`national_context` / `regional` / `municipal` / `council` / `other`). Calendar cohort labels such as Albania/Andorra `Regional / municipal` are **cohort descriptors**, not evidence that `tier = regional`.
+1. **Checked-in per-country tier-classification file** (reviewed like DDL). It maps each office ID in that package to schema v1 `GovernmentTier` (`national_context` / `regional` / `municipal` / `council` / `other`) from sourced office type + geography — **not** from workbook calendar cohort **Tier** strings. Bridges **must not** classify from labels such as Albania/Andorra `Regional / municipal`.
 2. **Numerator (regional offices):** current tracked offices in the published master with `tier = regional` for the stated country or region.
 3. **Denominator:** the sourced regional-office universe when the package or register states one (count of regional offices on the planning map / statutory list, with as-of date). If the universe is unknown, the denominator stays **unknown** — do not invent “all European regions” or “all NUTS-2 units”.
-4. **No applicable regional tier:** if a country’s supplied register contains no regional offices (example below: Albania municipal-only, Andorra parish councils, Alderney territorial legislature), say **no regional tier in this package**. That is not “0% regional coverage” of a fake regional universe, and it does not block shipping a regional calendar for countries that *do* have regional offices.
-5. **Calendar filtering:** include called, statutory, expected, conditional, and unknown dates. Filter by office/cohort tier independently of date certainty. Year-only and missing-day values keep that precision. Conditional dates stay in a labelled section. Do not drop uncertain dates from the regional calendar because they sort poorly.
+4. **No applicable regional tier / empty numerator:** if a country’s supplied register contains no regional offices, say **no regional tier in this package**. That is not “0% of a fake regional universe.” **Today’s checked-in Europe packages (Albania, Andorra, Alderney; Armenia pending classification file) may yield a European regional numerator of zero.** Phase 2’s regional calendar must show that empty state explicitly. It does not fail Phase 1 storage proof and does not block shipping the calendar shell.
+5. **Calendar filtering:**
+   - **Interval overlap** for partial dates: a month- or year-precision value is in a filter window if its interval **overlaps** the window, not only if a missing day was invented as day 1.
+   - **Unknown dates** go in a **separate labelled section**. Unknown is **not** confirmed in-window.
+   - Called, statutory, expected, and conditional dates remain distinct. Conditional stays labelled. Year-only and missing-day values keep that precision.
+   - Filter by office tier from the classification file, independently of calendar cohort strings.
 6. **Municipal rows** may appear in the same country package; they are not counted in the regional numerator. Launch does not wait for them.
+7. **Storage proof ≠ calendar proof.** Phase 1 Albania import can succeed with zero regional-tier offices. Phase 2 proves the regional calendar against whatever numerator the classification files yield.
 
 ### Input inventory (this revision)
 
 Shared Europe archive (off-git): `Europe_Excluding_Russia_Election_Data_2026-09-15.zip`, SHA-256 `93a31ec920c770e752cf7f130ffb8a546dce4510a41d9371d5f49239fa2b4ce9`. Shared workbook SHA-256 `b11dab577fb1746eddeb3aef72af7b097bcc4601828e1efbca1db3d6f6b98665`. Window 2026-09-08–2028-03-08 inclusive. Russia excluded. Package `coverage_complete` is false. Frozen extracts keep `site_ingestion_status: pending_adapter` (Armenia: `website_ingestion: pending`). Website adapters consume them at load time; that is **not** a published SQLite release.
 
+**Early European target order:** **Albania** (Phase 1 bounded proof) → Andorra / Alderney (Phase 2, after review) → **Armenia last** among those early targets (packed payload; overlapping history index).
+
 | Input | Country / scope | Adapter / kind | Checksums (plan revision) | Register / tier (from package files, not PR copy) | Validation status | Coverage gaps (as stated on the package) |
 | --- | --- | --- | --- | --- | --- | --- |
-| `data/countries/albania` | Albania (Europe, sovereign) | `europe-country-extract/1` → `europe.ts` | Archive/xlsx as above; `tables/office-register.json` SHA-256 `7d5a3735e83f95ee82deb76c60c6d391fa5faadfd3f660fe71ca8ca0ca05ad62`; `coverage.json` `7687efabe16f9e0a91037964814907d9d928b050864d3637a60703683c4973b0` | 122 office-register rows, all classified **municipal** (mayor + municipal council). Calendar cohort tier string is `Regional / municipal` with **no scheduled day**. **No regional-tier offices in this package.** | Package `coverage_complete: false`. `npm run import:countries` adapter validation reported no errors at last local run; research is not complete. Country `validate.py` exists. | Next polling date uncollected; 2019 boycott blocks comparable scores (0 competition / 0 volatility); proposed 46-municipality 2027 map unverified; remaining officeholders. |
-| `data/countries/andorra` | Andorra (Europe, sovereign) | `europe-country-extract/1` → `europe.ts` | Archive/xlsx as above; `tables/office-register.json` SHA-256 `318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f` | 7 communal councils, classified **municipal**. Calendar `Regional / municipal`, date pending. **No regional-tier offices in this package.** | Same as Albania (`coverage_complete: false`, `pending_adapter`). | Exact late-2027 polling day uncollected; no parish vote estimate from national sample. |
-| `data/countries/alderney` | Alderney (Europe, **territory** `GG-ALD`) | `europe-country-extract/1` → `europe.ts` | Archive/xlsx as above; `tables/office-register.json` SHA-256 `46dcd2afececa8e2ab46383d306003b941e6ca0ef9dac8e77dfc4435444a72f9` | 2 offices (States members, plebiscite), classified **other** (territorial legislature). Calendar dates 2026-11-21 / 2026-12-12 are **conditional** (proposal not finally verified). **No regional-tier offices in this package.** | Same pending_adapter / incomplete coverage. | Final 2026 approval text and primary numerical comparison pending. |
-| `data/countries/armenia` | Armenia (Europe, sovereign) | `armenia-packed-europe/1` → `armenia.ts` | `payload_sha256` `f55265273c849d248baf0037e4149e17a0329318d21a794e966cebbaa32012ca`; inventory `e265bc4de47deaf710b248f88c059cd19d6c203236a1a3d7a5ad9ed824ad782e` | Manifest summary: 71 office records, 33 histories, 2 calendar cohorts. Companion histories overlap the regional history index (do not add). Tier mix must be classified from unpacked office names at ingest — do not copy a PR office total as “regional coverage.” | `website_ingestion: pending`. Packed payload verifies by chunk SHA-256. | Upcoming community roster partly confirmed; consolidation blocks three comparable cycles; `three_entries: 0`; remaining 2027 decrees. |
-| `data/countries/new-zealand` | New Zealand (Oceania) — **not** the launch vertical | `nz-research-batch/1` → `new-zealand.ts` | SHA-256 of committed `dataset.json` `6d73c7075fc04be9cec3fdda37810e5195748c77e25df2e62998e2d4721d2133` | 4 local by-election offices (`councillor` / `community_board_member` → council). Not a national or regional register. | `site_ingestion_status: pending_adapter`. `coverage.national_screen_complete: false`. | National screen missing; 2022 Buller mirror preliminary; STV stage reports missing; metrics withheld. Already public at `/electiondatabase`; required for cutover continuity, not for Europe launch scope. |
-| `data/research` Latin America release `latin-america-fe5e91689def` | Americas (South America default on **today’s** observatory home) | zip adapter `scripts/import/normalize.ts` → `data/research` | Immutable zip SHA-256 `fe5e91689def5b3e6824c761b5ffb8fb2118847b9f3e0811fb76ba093453b23f` | Release manifest `validatedCounts` (recomputed from normalized records, `researchCoverageComplete: false`): 18,229 current offices, 414 historical offices, 40,509 histories, 269,740 result rows, 18,643 briefings. Those figures are **this release’s own validated counts**, not Atlas Europe coverage and not a PR highlight reel. | Current observatory production load. Evidence validator exists. Zip itself is off-git. | Research remaining work is in the completion queue / country notes. Australia and Japan still **not supplied**. |
+| `data/countries/albania` | Albania (Europe, sovereign) — **Phase 1 proof** | `europe-country-extract/1` → `europe.ts` | Archive/xlsx as above; `tables/office-register.json` SHA-256 `7d5a3735e83f95ee82deb76c60c6d391fa5faadfd3f660fe71ca8ca0ca05ad62`; `coverage.json` `7687efabe16f9e0a91037964814907d9d928b050864d3637a60703683c4973b0` | 122 office-register rows: mayor + municipal council. Calendar cohort string `Regional / municipal` is **not** a classifier. Phase 1 adds a checked-in tier file expected to mark these **municipal**. **No regional-tier offices in this package.** | Package `coverage_complete: false`. `npm run import:countries` adapter validation reported no errors at last local run; research is not complete. Country `validate.py` exists. | Next polling date uncollected; 2019 boycott blocks comparable scores (0 competition / 0 volatility); proposed 46-municipality 2027 map unverified; remaining officeholders. |
+| `data/countries/andorra` | Andorra (Europe, sovereign) | `europe-country-extract/1` → `europe.ts` | Archive/xlsx as above; `tables/office-register.json` SHA-256 `318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f` | 7 communal councils. Calendar `Regional / municipal` is not a classifier; expected **municipal**. **No regional-tier offices in this package.** | Same as Albania (`coverage_complete: false`, `pending_adapter`). | Exact late-2027 polling day uncollected; no parish vote estimate from national sample. |
+| `data/countries/alderney` | Alderney (Europe, **territory** `GG-ALD`) | `europe-country-extract/1` → `europe.ts` | Archive/xlsx as above; `tables/office-register.json` SHA-256 `46dcd2afececa8e2ab46383d306003b941e6ca0ef9dac8e77dfc4435444a72f9` | 2 offices (States members, plebiscite). Expected **other** (territorial legislature). Calendar dates 2026-11-21 / 2026-12-12 are **conditional**. **No regional-tier offices in this package.** | Same pending_adapter / incomplete coverage. | Final 2026 approval text and primary numerical comparison pending. |
+| `data/countries/armenia` | Armenia (Europe, sovereign) — **last among early targets** | `armenia-packed-europe/1` → `armenia.ts` | `payload_sha256` `f55265273c849d248baf0037e4149e17a0329318d21a794e966cebbaa32012ca`; inventory `e265bc4de47deaf710b248f88c059cd19d6c203236a1a3d7a5ad9ed824ad782e` | Manifest summary: 71 office records, 33 histories, 2 calendar cohorts. Companion histories overlap the regional history index (do not add). Tier mix **only** from a future classification file, not from PR office totals or calendar strings. | `website_ingestion: pending`. Packed payload verifies by chunk SHA-256. | Upcoming community roster partly confirmed; consolidation blocks three comparable cycles; `three_entries: 0`; remaining 2027 decrees. |
+| `data/countries/new-zealand` | New Zealand (Oceania) — **Phase 2 cutover-gate input, not launch vertical** | `nz-research-batch/1` → `new-zealand.ts` | SHA-256 of committed `dataset.json` `6d73c7075fc04be9cec3fdda37810e5195748c77e25df2e62998e2d4721d2133` | 4 local by-election offices (`councillor` / `community_board_member` → council). Not a national or regional register. | `site_ingestion_status: pending_adapter`. `coverage.national_screen_complete: false`. | National screen missing; 2022 Buller mirror preliminary; STV stage reports missing; metrics withheld. Already public at `/electiondatabase`. |
+| `data/research` Latin America release `latin-america-fe5e91689def` | Americas — **Phase 2 cutover-gate input**; South America is default on **today’s** observatory home only | zip adapter `scripts/import/normalize.ts` → `data/research` | Immutable zip SHA-256 `fe5e91689def5b3e6824c761b5ffb8fb2118847b9f3e0811fb76ba093453b23f` | Release manifest `validatedCounts` (recomputed from normalized records, `researchCoverageComplete: false`): 18,229 current offices, 414 historical offices, 40,509 histories, 269,740 result rows, 18,643 briefings. Those figures are **this lineage’s own validated counts**, not Atlas Europe coverage. | Current observatory production load. Evidence validator exists. Zip itself is off-git. | Research remaining work is in the completion queue / country notes. Australia and Japan still **not supplied**. |
 | Synthetic fixtures | Fixtureland only | `data/normalized/synthetic-fixture-v0.ts` | n/a | Excluded from all published totals. | Tests / `OBSERVATORY_FIXTURES=1` non-production only. | Must never be imported into the Atlas master as research. |
-| Europe-bound uploads in `data/incoming/` | none on disk at this revision | — | — | — | Absent | Future Europe zips/uploads are in-scope ingest once present and checksummed. |
+| Europe-bound uploads in `data/incoming/` | none on disk at this revision | — | — | — | Absent | **New** packages after cutover-gate inputs are Phase 3 ingest once present and checksummed. |
 
 Package-register office totals above (122 / 7 / 2 / 71 / 4) are **file inventory**, not a claim that Atlas regional coverage equals 202 European offices or that municipal registers are launch-complete.
