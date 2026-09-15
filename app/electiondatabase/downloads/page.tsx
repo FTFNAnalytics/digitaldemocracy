@@ -7,7 +7,10 @@ import {
   type Query,
 } from "@/components/observatory/pagination";
 import { getDataset } from "@/lib/observatory/load";
-export const metadata: Metadata = { title: "Downloads" };
+import { pageMeta, staticPageSeo } from "@/lib/seo";
+
+export const metadata: Metadata = pageMeta(staticPageSeo.downloads);
+
 export default async function DownloadsPage({
   searchParams,
 }: {

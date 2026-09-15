@@ -1,14 +1,24 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getOffice } from "@/lib/observatory/load";
+import { getCountry, getOffice } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
 import { PageHeader } from "@/components/observatory/chrome";
 import { originalBriefing } from "@/lib/observatory/briefings";
-export default async function OriginalBriefing({
-  params,
-}: {
-  params: Promise<{ officeId: string }>;
-}) {
+import { originalBriefingPageMeta } from "@/lib/seo";
+
+type Props = { params: Promise<{ officeId: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { officeId } = await params;
+  const office = getOffice(officeId);
+  if (!office) {
+    return { title: "Briefing not found", robots: { index: false, follow: true } };
+  }
+  return originalBriefingPageMeta(office, getCountry(office.countryId));
+}
+
+export default async function OriginalBriefing({ params }: Props) {
   const { officeId } = await params;
   const office = getOffice(officeId);
   if (!office) notFound();

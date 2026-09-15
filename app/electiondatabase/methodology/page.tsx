@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/observatory/chrome";
 import { CI_METHOD_VERSION, PEDERSEN_METHOD_VERSION } from "@/lib/observatory/metrics";
+import { pageMeta, staticPageSeo } from "@/lib/seo";
 import { RELEASE_PACKAGE_FILENAME } from "@/schemas/v1/input-manifest";
 
-export const metadata: Metadata = { title: "Methodology" };
+export const metadata: Metadata = pageMeta(staticPageSeo.methodology);
 
 export default function MethodologyPage() {
   return (

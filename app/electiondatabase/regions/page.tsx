@@ -4,8 +4,9 @@ import { PageHeader } from "@/components/observatory/chrome";
 import { CoveragePill } from "@/components/observatory/status";
 import { getCountries, getRegions } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
+import { pageMeta, staticPageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Regions" };
+export const metadata: Metadata = pageMeta(staticPageSeo.regions);
 
 export default function RegionsPage() {
   const regions = getRegions();

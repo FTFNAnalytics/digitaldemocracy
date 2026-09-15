@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/observatory/chrome";
 import { getDataset } from "@/lib/observatory/load";
+import { pageMeta, staticPageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Release history" };
+export const metadata: Metadata = pageMeta(staticPageSeo.releases);
 
 export default function ReleasesPage() {
   const release = getDataset().release;

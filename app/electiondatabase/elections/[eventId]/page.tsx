@@ -23,13 +23,21 @@ import {
 } from "@/lib/observatory/load";
 import { toPercent } from "@/lib/observatory/metrics";
 import { obsRoutes } from "@/lib/observatory/routes";
+import { eventPageMeta } from "@/lib/seo";
 
 type Props = { params: Promise<{ eventId: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { eventId } = await params;
   const event = getEvent(eventId);
-  return { title: event ? formatResearchDate(event.date) : "Election" };
+  if (!event) {
+    return { title: "Election not found", robots: { index: false, follow: true } };
+  }
+  return eventPageMeta(
+    event,
+    getOffice(event.officeId),
+    getCountry(event.countryId),
+  );
 }
 
 export default async function EventPage({ params }: Props) {

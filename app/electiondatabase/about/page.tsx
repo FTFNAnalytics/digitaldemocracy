@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/observatory/chrome";
 import { org } from "@/lib/content";
+import { pageMeta, staticPageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "About" };
+export const metadata: Metadata = pageMeta(staticPageSeo.observatoryAbout);
 
 export default function AboutPage() {
   return (
