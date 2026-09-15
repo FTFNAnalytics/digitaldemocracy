@@ -2,13 +2,14 @@
 /**
  * Integrity, count, link, and methodology checks.
  *
- * Default: fail if the Latin America release zip is missing.
+ * Default: validate the versioned normalized research release.
  * --fixtures: validate the synthetic dataset used for smoke tests.
  */
+import { validateDataset } from "./dataset";
+import { loadResearch } from "../../lib/observatory/research";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
-import { RELEASE_PACKAGE_FILENAME } from "../../schemas/v1/input-manifest";
-import { missingZipMessage, resolveReleaseZip } from "../lib/release-paths";
+import { missingZipMessage } from "../lib/release-paths";
 import { syntheticFixtureDataset } from "../../data/normalized/synthetic-fixture-v0";
 import { assertNotCoercedToFirstOfMonth } from "../../lib/observatory/dates";
 import {
@@ -119,7 +120,7 @@ function validateFixtures() {
   }
 
   console.log("Fixture validation passed.");
-  console.log("Research coverage remains incomplete: Latin America release package is not imported.");
+  console.log("Synthetic fixtures are test data and do not establish research completeness.");
 }
 
 function main() {
@@ -138,17 +139,11 @@ function main() {
     process.exit(0);
   }
 
-  const zip = resolveReleaseZip(zipArg);
-  if (!zip) {
-    fail(missingZipMessage(zipArg));
-  }
-
-  fail(
-    [
-      `Found ${zip} but release-data validation is not implemented until adapters are bound.`,
-      `Do not treat the presence of ${RELEASE_PACKAGE_FILENAME} as completed research coverage.`,
-    ].join("\n"),
-  );
+  const manifest = path.join(process.cwd(), "data/research/manifest.json");
+  if (!existsSync(manifest)) fail(missingZipMessage(zipArg));
+  const result = validateDataset(loadResearch(process.cwd()));
+  if (result.errors.length) fail(result.errors.join("\n"));
+  console.log(JSON.stringify(result));
 }
 
 main();

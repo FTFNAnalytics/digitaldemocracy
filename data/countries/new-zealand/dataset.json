@@ -1,0 +1,813 @@
+{
+  "conventions": {
+    "counts": "Candidate marks in multi-seat FPP elections are not unique voters. Do not sum them into ballot turnout.",
+    "names": "Historical spelling/capitalization follows published tables; name similarity is not an established identity link.",
+    "null": "Unknown, uncollected or withheld; never substitute zero.",
+    "scope": "Initial local by-election research. National parliamentary elections are outside scope; no claim that these four are all New Zealand races.",
+    "source_inheritance": "Historical result rows inherit source_ids from their historical event. Current candidate rows carry source_ids.",
+    "window": "Window applies to upcoming elections. Historical evidence deliberately predates it."
+  },
+  "country": "New Zealand",
+  "country_code": "NZ",
+  "coverage": {
+    "candidate_rows": 11,
+    "historical_candidate_rows": 36,
+    "historical_events": 3,
+    "latest_three_history_complete": false,
+    "national_screen_complete": false,
+    "official_final_historical_events": 2,
+    "provisional_historical_events": 1,
+    "upcoming_races": 4
+  },
+  "histories": [
+    {
+      "ballot_total": null,
+      "blank_papers": 1,
+      "candidate_table_complete": true,
+      "declaration_date": "2025-10-16",
+      "election_date": "2025-10-11",
+      "election_type": "ordinary",
+      "electoral_system": "FPP",
+      "evidence_status": "official_final_table_reviewed",
+      "id": "NZ-BULLER-WESTPORT-2025",
+      "informal_papers": 7,
+      "metrics": {
+        "competitiveness_index": null,
+        "pedersen_volatility": null,
+        "reason": "Multi-seat candidate marks are not mutually exclusive party vote shares or unique voters. No validated party grouping, comparable denominator or method for this by-election has been established.",
+        "status": "withheld"
+      },
+      "related_race_id": "NZ-BULLER-WESTPORT-2026",
+      "results": [
+        {
+          "affiliation": "Independent",
+          "elected": true,
+          "id": "NZ-BULLER-WESTPORT-2025-R01",
+          "name": "Shayne BARRY",
+          "vote_share": null,
+          "votes": 1460
+        },
+        {
+          "affiliation": "Independent",
+          "elected": true,
+          "id": "NZ-BULLER-WESTPORT-2025-R02",
+          "name": "Colin REIDY",
+          "vote_share": null,
+          "votes": 1176
+        },
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-BULLER-WESTPORT-2025-R03",
+          "name": "Philip RUTHERFORD",
+          "vote_share": null,
+          "votes": 1167
+        },
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-BULLER-WESTPORT-2025-R04",
+          "name": "Ray CURNOW",
+          "vote_share": null,
+          "votes": 1136
+        },
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-BULLER-WESTPORT-2025-R05",
+          "name": "Dave HINGSTON",
+          "vote_share": null,
+          "votes": 1113
+        },
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-BULLER-WESTPORT-2025-R06",
+          "name": "Paul REYNOLDS",
+          "vote_share": null,
+          "votes": 1104
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2025-R07",
+          "name": "Stephanie NEWBURRY",
+          "vote_share": null,
+          "votes": 1100
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2025-R08",
+          "name": "Nick GEAR",
+          "vote_share": null,
+          "votes": 1029
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2025-R09",
+          "name": "Ross WYLDE",
+          "vote_share": null,
+          "votes": 1005
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2025-R10",
+          "name": "Pat O'DEA",
+          "vote_share": null,
+          "votes": 878
+        },
+        {
+          "affiliation": "Independent",
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2025-R11",
+          "name": "Veronica L DE FRIEZ",
+          "vote_share": null,
+          "votes": 725
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2025-R12",
+          "name": "Andrew BASHER",
+          "vote_share": null,
+          "votes": 720
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2025-R13",
+          "name": "Philip GRAFTON",
+          "vote_share": null,
+          "votes": 717
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2025-R14",
+          "name": "Andrew BEAUMONT",
+          "vote_share": null,
+          "votes": 559
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2025-R15",
+          "name": "Jim HILTON",
+          "vote_share": null,
+          "votes": 517
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2025-R16",
+          "name": "Pauline HAMILL",
+          "vote_share": null,
+          "votes": 488
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2025-R17",
+          "name": "Grant WESTON",
+          "vote_share": null,
+          "votes": 484
+        }
+      ],
+      "seats": 6,
+      "source_ids": [
+        "NZ-S02"
+      ],
+      "vote_unit": "candidate_marks"
+    },
+    {
+      "ballot_total": null,
+      "blank_papers": 50,
+      "candidate_table_complete": true,
+      "declaration_date": "2022-10-14",
+      "election_date": "2022-10-08",
+      "election_type": "ordinary",
+      "electoral_system": "FPP",
+      "evidence_status": "provisional_legacy_mirror",
+      "id": "NZ-BULLER-WESTPORT-2022",
+      "informal_papers": 3,
+      "metrics": {
+        "competitiveness_index": null,
+        "pedersen_volatility": null,
+        "reason": "Multi-seat candidate marks are not mutually exclusive party vote shares or unique voters. No validated party grouping, comparable denominator or method for this by-election has been established.",
+        "status": "withheld"
+      },
+      "related_race_id": "NZ-BULLER-WESTPORT-2026",
+      "results": [
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-BULLER-WESTPORT-2022-R01",
+          "name": "Joanne HOWARD",
+          "vote_share": null,
+          "votes": 1532
+        },
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-BULLER-WESTPORT-2022-R02",
+          "name": "Phil GRAFTON",
+          "vote_share": null,
+          "votes": 1342
+        },
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-BULLER-WESTPORT-2022-R03",
+          "name": "Grant WESTON",
+          "vote_share": null,
+          "votes": 1323
+        },
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-BULLER-WESTPORT-2022-R04",
+          "name": "Annelise PFAHLERT",
+          "vote_share": null,
+          "votes": 1260
+        },
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-BULLER-WESTPORT-2022-R05",
+          "name": "Andrew BASHER",
+          "vote_share": null,
+          "votes": 1149
+        },
+        {
+          "affiliation": "Independent",
+          "elected": true,
+          "id": "NZ-BULLER-WESTPORT-2022-R06",
+          "name": "Colin REIDY",
+          "vote_share": null,
+          "votes": 1026
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2022-R07",
+          "name": "Andrew BEAUMONT",
+          "vote_share": null,
+          "votes": 849
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2022-R08",
+          "name": "Ruth VAEGA",
+          "vote_share": null,
+          "votes": 840
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2022-R09",
+          "name": "Rehia MCDONALD",
+          "vote_share": null,
+          "votes": 832
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2022-R10",
+          "name": "Douglas PHILLIPS",
+          "vote_share": null,
+          "votes": 707
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2022-R11",
+          "name": "Anni KOLFF",
+          "vote_share": null,
+          "votes": 482
+        },
+        {
+          "affiliation": null,
+          "elected": false,
+          "id": "NZ-BULLER-WESTPORT-2022-R12",
+          "name": "Mikaere STEELE CLARKSON",
+          "vote_share": null,
+          "votes": 168
+        }
+      ],
+      "seats": 6,
+      "source_ids": [
+        "NZ-S03"
+      ],
+      "vote_unit": "candidate_marks"
+    },
+    {
+      "ballot_total": null,
+      "blank_papers": 3,
+      "candidate_table_complete": true,
+      "declaration_date": "2025-10-17",
+      "election_date": "2025-10-11",
+      "election_type": "ordinary",
+      "electoral_system": "FPP",
+      "evidence_status": "official_final_table_reviewed",
+      "id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2025",
+      "informal_papers": 0,
+      "metrics": {
+        "competitiveness_index": null,
+        "pedersen_volatility": null,
+        "reason": "Multi-seat candidate marks are not mutually exclusive party vote shares or unique voters. No validated party grouping, comparable denominator or method for this by-election has been established.",
+        "status": "withheld"
+      },
+      "related_race_id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2026",
+      "results": [
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2025-R01",
+          "name": "Anne Wai Chin CHENG",
+          "vote_share": null,
+          "votes": 416
+        },
+        {
+          "affiliation": "Independent",
+          "elected": false,
+          "id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2025-R02",
+          "name": "Stephen Robert CROW",
+          "vote_share": null,
+          "votes": 297
+        },
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2025-R03",
+          "name": "Geoff DAVIDSON",
+          "vote_share": null,
+          "votes": 421
+        },
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2025-R04",
+          "name": "Tim DICKEY",
+          "vote_share": null,
+          "votes": 446
+        },
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2025-R05",
+          "name": "Benjamin Bryce MARTIN",
+          "vote_share": null,
+          "votes": 417
+        },
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2025-R06",
+          "name": "Elizabeth Anne RITCHIE",
+          "vote_share": null,
+          "votes": 386
+        },
+        {
+          "affiliation": null,
+          "elected": true,
+          "id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2025-R07",
+          "name": "Arna SMITH",
+          "vote_share": null,
+          "votes": 337
+        }
+      ],
+      "seats": 6,
+      "source_ids": [
+        "NZ-S05"
+      ],
+      "vote_unit": "candidate_marks"
+    }
+  ],
+  "races": [
+    {
+      "authority": "Buller District Council",
+      "candidate_roster_status": "complete_as_published",
+      "candidates": [
+        {
+          "affiliation": null,
+          "elected": null,
+          "id": "NZ-BULLER-WESTPORT-2026-C01",
+          "name": "Douglas Ward",
+          "source_ids": [
+            "NZ-S01"
+          ],
+          "votes": null
+        },
+        {
+          "affiliation": null,
+          "elected": null,
+          "id": "NZ-BULLER-WESTPORT-2026-C02",
+          "name": "Glen Palmer",
+          "source_ids": [
+            "NZ-S01"
+          ],
+          "votes": null
+        },
+        {
+          "affiliation": null,
+          "elected": null,
+          "id": "NZ-BULLER-WESTPORT-2026-C03",
+          "name": "Paul McCormack",
+          "source_ids": [
+            "NZ-S01"
+          ],
+          "votes": null
+        },
+        {
+          "affiliation": null,
+          "elected": null,
+          "id": "NZ-BULLER-WESTPORT-2026-C04",
+          "name": "Pauline Hamill",
+          "source_ids": [
+            "NZ-S01"
+          ],
+          "votes": null
+        },
+        {
+          "affiliation": null,
+          "elected": null,
+          "id": "NZ-BULLER-WESTPORT-2026-C05",
+          "name": "Jack Hill",
+          "source_ids": [
+            "NZ-S01"
+          ],
+          "votes": null
+        },
+        {
+          "affiliation": null,
+          "elected": null,
+          "id": "NZ-BULLER-WESTPORT-2026-C06",
+          "name": "Andrew Dunlop",
+          "source_ids": [
+            "NZ-S01"
+          ],
+          "votes": null
+        }
+      ],
+      "close_time_local": "12:00",
+      "country_code": "NZ",
+      "date_precision": "day",
+      "district": "Westport Ward",
+      "election_date": "2026-10-16",
+      "election_type": "by_election",
+      "electoral_system": "FPP",
+      "evidence_status": "official_page_reviewed",
+      "id": "NZ-BULLER-WESTPORT-2026",
+      "metrics": {
+        "competitiveness_index": null,
+        "pedersen_volatility": null,
+        "reason": "No result yet. Historical evidence and a ballot-compatible method are required; missing metrics are not zero.",
+        "status": "withheld"
+      },
+      "nominations_close": "2026-08-06",
+      "nominations_open": "2026-07-09",
+      "notes": "FPP designation also supported by council electoral-system resolution in NZ-S02.",
+      "office_type": "councillor",
+      "seats_to_fill": 1,
+      "source_ids": [
+        "NZ-S01",
+        "NZ-S02"
+      ],
+      "time_zone": "Pacific/Auckland",
+      "vacancy": {
+        "cause": "resignation",
+        "current_holder": null,
+        "former_holder": "Colin Reidy",
+        "status": "vacant"
+      },
+      "voting_documents_from": "2026-09-14",
+      "voting_method": "postal"
+    },
+    {
+      "authority": "Clutha District Council",
+      "candidate_roster_status": "not_yet_imported",
+      "candidates": [],
+      "close_time_local": null,
+      "country_code": "NZ",
+      "date_precision": "day",
+      "district": "Lawrence-Tuapeka Community Board",
+      "election_date": "2026-10-16",
+      "election_type": "by_election",
+      "electoral_system": "FPP",
+      "evidence_status": "initial_official_notice_reviewed",
+      "id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2026",
+      "metrics": {
+        "competitiveness_index": null,
+        "pedersen_volatility": null,
+        "reason": "No result yet. Historical evidence and a ballot-compatible method are required; missing metrics are not zero.",
+        "status": "withheld"
+      },
+      "nominations_close": "2026-08-06",
+      "nominations_open": "2026-07-09",
+      "notes": "Scheduled date from initial notice. Review later notice to confirm contest status and candidate roster; empty candidate array does not mean unopposed.",
+      "office_type": "community_board_member",
+      "seats_to_fill": 1,
+      "source_ids": [
+        "NZ-S04"
+      ],
+      "time_zone": "Pacific/Auckland",
+      "vacancy": {
+        "cause": "resignation",
+        "current_holder": null,
+        "former_holder": "Anne Cheng",
+        "status": "vacant"
+      },
+      "voting_documents_from": "2026-09-16",
+      "voting_method": "postal"
+    },
+    {
+      "authority": "Porirua City Council",
+      "candidate_roster_status": "complete_in_official_indexed_release",
+      "candidates": [
+        {
+          "affiliation": null,
+          "elected": null,
+          "id": "NZ-PORIRUA-ONEPOTO-2026-C01",
+          "name": "Joanne Dow",
+          "source_ids": [
+            "NZ-S08"
+          ],
+          "votes": null
+        },
+        {
+          "affiliation": null,
+          "elected": null,
+          "id": "NZ-PORIRUA-ONEPOTO-2026-C02",
+          "name": "Caroline Mareko",
+          "source_ids": [
+            "NZ-S08"
+          ],
+          "votes": null
+        },
+        {
+          "affiliation": null,
+          "elected": null,
+          "id": "NZ-PORIRUA-ONEPOTO-2026-C03",
+          "name": "Zac Painting",
+          "source_ids": [
+            "NZ-S08"
+          ],
+          "votes": null
+        },
+        {
+          "affiliation": null,
+          "elected": null,
+          "id": "NZ-PORIRUA-ONEPOTO-2026-C04",
+          "name": "Siobhan Samuel",
+          "source_ids": [
+            "NZ-S08"
+          ],
+          "votes": null
+        },
+        {
+          "affiliation": null,
+          "elected": null,
+          "id": "NZ-PORIRUA-ONEPOTO-2026-C05",
+          "name": "Jess Te Huia",
+          "source_ids": [
+            "NZ-S08"
+          ],
+          "votes": null
+        }
+      ],
+      "close_time_local": "12:00",
+      "country_code": "NZ",
+      "date_precision": "day",
+      "district": "Onepoto General Ward",
+      "election_date": "2026-10-16",
+      "election_type": "by_election",
+      "electoral_system": "STV",
+      "evidence_status": "official_indexed_evidence_pending_full_review",
+      "id": "NZ-PORIRUA-ONEPOTO-2026",
+      "metrics": {
+        "competitiveness_index": null,
+        "pedersen_volatility": null,
+        "reason": "No result yet. Historical evidence and a ballot-compatible method are required; missing metrics are not zero.",
+        "status": "withheld"
+      },
+      "notes": "Dates and roster require full-notice recheck; source pages intermittently blocked retrieval.",
+      "office_type": "councillor",
+      "seats_to_fill": 1,
+      "source_ids": [
+        "NZ-S06",
+        "NZ-S07",
+        "NZ-S08",
+        "NZ-S09"
+      ],
+      "time_zone": "Pacific/Auckland",
+      "vacancy": {
+        "cause": "death",
+        "current_holder": null,
+        "former_holder": "Mike Duncan",
+        "status": "vacant"
+      },
+      "voting_method": "postal"
+    },
+    {
+      "authority": "Wellington City Council",
+      "candidate_roster_status": "nominations_not_final",
+      "candidates": [],
+      "close_time_local": "12:00",
+      "country_code": "NZ",
+      "date_precision": "day",
+      "district": "Takapū/Northern General Ward",
+      "election_date": "2026-12-11",
+      "election_type": "by_election",
+      "electoral_system": "STV",
+      "evidence_status": "official_indexed_evidence_pending_full_review",
+      "id": "NZ-WELLINGTON-TAKAPU-NORTHERN-2026",
+      "metrics": {
+        "competitiveness_index": null,
+        "pedersen_volatility": null,
+        "reason": "No result yet. Historical evidence and a ballot-compatible method are required; missing metrics are not zero.",
+        "status": "withheld"
+      },
+      "notes": "Do not infer an uncontested election from an empty roster. Final nomination notice and historical STV returns remain outstanding.",
+      "office_type": "councillor",
+      "seats_to_fill": 1,
+      "source_ids": [
+        "NZ-S10",
+        "NZ-S11"
+      ],
+      "time_zone": "Pacific/Auckland",
+      "vacancy": {
+        "cause": "death",
+        "current_holder": null,
+        "former_holder": "Tony Randle",
+        "status": "vacant"
+      },
+      "voting_method": "postal"
+    }
+  ],
+  "region": "Oceania",
+  "release_status": "initial_partial_research",
+  "research_gaps": [
+    {
+      "priority": "high",
+      "race_id": null,
+      "task": "Complete a national council and community-board screen for additional in-window by-elections. This batch is not a census."
+    },
+    {
+      "priority": "high",
+      "race_id": "NZ-BULLER-WESTPORT-2026",
+      "task": "Replace the provisional 2022 mirror with a signed or production-hosted return; recover 2019 and review intervening by-elections and boundary comparability."
+    },
+    {
+      "priority": "high",
+      "race_id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2026",
+      "task": "Read the later nomination/day-of-election notice, import candidates and confirm contest status and closing time."
+    },
+    {
+      "priority": "high",
+      "race_id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2026",
+      "task": "Recover 2022 and the 2020 board by-election from NZ-S12; review event selection before calling the history a latest-three set."
+    },
+    {
+      "priority": "high",
+      "race_id": "NZ-PORIRUA-ONEPOTO-2026",
+      "task": "Recheck full official notices and candidate profiles; recover 2025 and 2022 STV stage reports and establish a pre-2022 boundary crosswalk."
+    },
+    {
+      "priority": "high",
+      "race_id": "NZ-WELLINGTON-TAKAPU-NORTHERN-2026",
+      "task": "Review full notice and final nominations; recover 2025, 2022 and 2019 STV stage reports and check boundary continuity."
+    },
+    {
+      "priority": "high",
+      "race_id": null,
+      "task": "Add an explicit adapter and ingestion tests before exposing this research batch in the observatory. Existing Latin America importer does not consume it."
+    },
+    {
+      "priority": "medium",
+      "race_id": null,
+      "task": "Collect officeholder context, boundaries, polling and briefings; assess enacted governance changes separately from proposed reforms."
+    }
+  ],
+  "research_window": {
+    "end": "2028-03-08",
+    "inclusive": true,
+    "start": "2026-09-08"
+  },
+  "schema_version": "nz-research-batch/1",
+  "site_ingestion_status": "pending_adapter",
+  "snapshot_date": "2026-09-15",
+  "sources": [
+    {
+      "checked_on": "2026-09-15",
+      "id": "NZ-S01",
+      "notes": "One vacancy after Colin Reidy resigned; voting 14 September to noon 16 October 2026; six named nominees.",
+      "publisher": "Buller District Council",
+      "review_status": "page_reviewed",
+      "title": "2026 Westport Ward by-election",
+      "url": "https://bullerdc.govt.nz/your-council/council-elections/2026-westport-ward-by-election/"
+    },
+    {
+      "checked_on": "2026-09-15",
+      "id": "NZ-S02",
+      "notes": "2025 Westport final candidate results, six seats, informal and blank papers. Council-wide turnout is not a Westport denominator. Page also records the council decision to retain FPP for 2025 and 2028.",
+      "publisher": "Buller District Council",
+      "review_status": "page_reviewed",
+      "title": "Results from previous elections",
+      "url": "https://bullerdc.govt.nz/your-council/council-elections/results-from-previous-elections/"
+    },
+    {
+      "checked_on": "2026-09-15",
+      "id": "NZ-S03",
+      "notes": "2022 Westport table records six elected candidates and a declaration dated 14 October 2022. Public council-branded mirror; verify against a signed return or production archive before analytical use.",
+      "publisher": "Buller District Council branding; legacy mirror",
+      "review_status": "provisional_legacy_mirror",
+      "title": "Council elections (legacy mirror)",
+      "url": "https://app-bdcdev.azurewebsites.net/your-council/council-elections/"
+    },
+    {
+      "checked_on": "2026-09-15",
+      "id": "NZ-S04",
+      "notes": "Notice dated 9 July 2026: one vacancy after Anne Cheng resigned; FPP postal election on 16 October; nominations 9 July to 6 August; voting documents from 16 September. Later nomination notice and roster still need full review.",
+      "publisher": "Clutha District Council",
+      "review_status": "page_reviewed",
+      "title": "Lawrence-Tuapeka Community Board By-Election",
+      "url": "https://www.cluthadc.govt.nz/council/news?item=id:2ys4k3f7k1cxbyb5totq"
+    },
+    {
+      "checked_on": "2026-09-15",
+      "id": "NZ-S05",
+      "notes": "Use the final declaration dated 17 October, not the preliminary or progress tables lower on the page. Community board has six elected seats. Anne Wai Chin Cheng's 416 board votes must not be confused with her 289 council ward votes.",
+      "publisher": "Clutha District Council",
+      "review_status": "page_reviewed",
+      "title": "Results - Local Body Elections 2025",
+      "url": "https://www.cluthadc.govt.nz/council/elections/results-local-body-elections-2025"
+    },
+    {
+      "checked_on": "2026-09-15",
+      "id": "NZ-S06",
+      "notes": "Official indexed timetable gives a noon 16 October 2026 close. Full-page retrieval was intermittent and later returned 403; review the original notice before operational use.",
+      "publisher": "Porirua City Council",
+      "review_status": "search_excerpt_only",
+      "title": "Council elections 2026",
+      "url": "https://poriruacity.govt.nz/your-council/mayor-councillors/elections-2026/"
+    },
+    {
+      "checked_on": "2026-09-15",
+      "id": "NZ-S07",
+      "notes": "Official indexed release identifies Mike Duncan's death in June as the vacancy cause and confirms five candidates. Full page not successfully retained for review.",
+      "publisher": "Porirua City Council",
+      "review_status": "search_excerpt_only",
+      "title": "Voting packs for by-election on their way",
+      "url": "https://poriruacity.govt.nz/your-council/news/voting-packs-for-by-election-on-their-way/"
+    },
+    {
+      "checked_on": "2026-09-15",
+      "id": "NZ-S08",
+      "notes": "Official indexed release dated 6 August names Joanne Dow, Caroline Mareko, Zac Painting, Siobhan Samuel and Jess Te Huia. Full-page retrieval returned 403.",
+      "publisher": "Porirua City Council",
+      "review_status": "search_excerpt_only",
+      "title": "Five candidates confirmed for Onepoto General Ward By-election",
+      "url": "https://poriruacity.govt.nz/your-council/news/five-candidates-confirmed-for-onepoto-general-ward-by-election/"
+    },
+    {
+      "checked_on": "2026-09-15",
+      "id": "NZ-S09",
+      "notes": "Council states mayor and councillor elections use STV, with ranked candidate preferences.",
+      "publisher": "Porirua City Council",
+      "review_status": "indexed_text_reviewed",
+      "title": "How voting works",
+      "url": "https://poriruacity.govt.nz/your-council/mayor-councillors/elections-2026/vote-poti/how-to-vote/"
+    },
+    {
+      "checked_on": "2026-09-15",
+      "id": "NZ-S10",
+      "notes": "Official indexed release dated 3 September gives 11 December 2026 and identifies Tony Randle's death. Full-page retrieval failed.",
+      "publisher": "Wellington City Council",
+      "review_status": "search_excerpt_only",
+      "title": "Nominations now open for Takapū/Northern Ward by-election",
+      "url": "https://wellington.govt.nz/news-and-events/news-and-information/our-wellington/2026/09/northern-by-election"
+    },
+    {
+      "checked_on": "2026-09-15",
+      "id": "NZ-S11",
+      "notes": "Official indexed notice gives STV postal voting and a noon 11 December 2026 close. Full notice and final nomination roster require review.",
+      "publisher": "Wellington City Council",
+      "review_status": "search_excerpt_only",
+      "title": "Notice of By-election for the Takapū/Northern General Ward",
+      "url": "https://wellington.govt.nz/have-your-say/public-inputs/public-notices/open/other/notice-of-by-election-for-the-takapu-northern-general-ward"
+    },
+    {
+      "checked_on": "2026-09-15",
+      "id": "NZ-S12",
+      "notes": "Archive lists 2022 results and 2019/2020 results, including a Lawrence-Tuapeka board by-election. Follow these before selecting the latest three comparable historical events.",
+      "publisher": "Clutha District Council",
+      "review_status": "page_reviewed",
+      "title": "Previous Elections",
+      "url": "https://www.cluthadc.govt.nz/council/elections/previous-elections"
+    }
+  ]
+}

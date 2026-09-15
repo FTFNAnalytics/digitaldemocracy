@@ -4,7 +4,12 @@ import { PageHeader } from "@/components/observatory/chrome";
 import { CoveragePill, EmptyState } from "@/components/observatory/status";
 import { DataTable } from "@/components/observatory/table";
 import { formatResearchDate } from "@/lib/observatory/dates";
-import { getCountry, getDefaultRegion, getDataset, upcomingEvents } from "@/lib/observatory/load";
+import {
+  getCountry,
+  getDefaultRegion,
+  getDataset,
+  upcomingEvents,
+} from "@/lib/observatory/load";
 import { getOffice } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
 import { RELEASE_PACKAGE_FILENAME } from "@/schemas/v1/input-manifest";
@@ -16,14 +21,16 @@ export const metadata: Metadata = {
 export default function ObservatoryHomePage() {
   const release = getDataset().release;
   const southAmerica = getDefaultRegion();
-  const upcoming = upcomingEvents();
+  const upcoming = upcomingEvents()
+    .filter((e) => getCountry(e.countryId)?.regionId === "south-america")
+    .slice(0, 20);
 
   return (
     <>
       <PageHeader
         eyebrow="The Center for Digital Democracy"
         title="Subnational Election Observatory"
-        description="A public research publication for regional, municipal, and council elections: searchable, comparable, and downloadable once a validated release is imported. South America is the default landing region and the first import priority."
+        description="A public research publication for regional, municipal, and council elections: searchable, comparable, and downloadable. Start with South America and explore the imported Latin America release."
       />
 
       <div className="grid gap-6 lg:grid-cols-[1.4fr_0.8fr]">
@@ -36,8 +43,12 @@ export default function ObservatoryHomePage() {
             <p className="mb-2 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-accent">
               Priority region
             </p>
-            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{southAmerica?.name}</h2>
-            <p className="mt-2 text-sm leading-relaxed text-white/70">{southAmerica?.notes}</p>
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
+              {southAmerica?.name}
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-white/70">
+              {southAmerica?.notes}
+            </p>
             <div className="mt-3">
               <CoveragePill status={southAmerica?.status ?? "not_supplied"} />
             </div>
@@ -58,20 +69,20 @@ export default function ObservatoryHomePage() {
         <aside className="obs-card p-6">
           <h2 className="obs-heading text-xl">Release window</h2>
           <p className="mt-2 text-sm text-navy/75">
-            Expected inclusive window from the build prompt (not yet imported):{" "}
+            Imported inclusive research window:{" "}
             <span className="tabular-nums">
               {release.window.startLabel}–{release.window.endLabel}
             </span>
             .
           </p>
           <p className="mt-3 text-sm text-navy/75">
-            Snapshot: {release.snapshotLabel ?? "not imported"}. Retrieval range:{" "}
-            {release.retrievalRangeLabel ?? "not imported"}.
+            Snapshot: {release.snapshotLabel ?? "not imported"}. Retrieval
+            range: {release.retrievalRangeLabel ?? "not imported"}.
           </p>
           <p className="mt-3 text-xs text-navy/55">
-            Handoff headline counts (12,738 South American current offices, and the broader
-            18,229 figure) are reconciliation expectations for the missing zip — they are not
-            shown as live coverage totals.
+            Totals below are recomputed from imported records. An imported
+            office does not imply complete returns, certified outcomes, or
+            confirmed current officeholders.
           </p>
         </aside>
       </div>
@@ -79,24 +90,25 @@ export default function ObservatoryHomePage() {
       <section className="mt-10">
         <h2 className="obs-heading text-2xl">Coverage totals</h2>
         <p className="mt-2 max-w-3xl text-sm text-navy/70">
-          Denominators stay explicit. Fixture counts are labelled and excluded from any
-          “research complete” claim. Unknown real-world totals remain unknown.
+          Denominators distinguish tracked current offices, historical
+          predecessors, and historical event records. Research completeness
+          remains a separate assessment.
         </p>
         <dl className="mt-4 grid gap-3 sm:grid-cols-3">
           <TotalCard
             label="Tracked current offices (imported)"
-            value="—"
-            note={`Awaiting ${RELEASE_PACKAGE_FILENAME}`}
+            value={release.validatedCounts.currentOffices.toLocaleString()}
+            note="Tracked offices across the imported release"
           />
           <TotalCard
             label="Historical offices (imported)"
-            value="—"
-            note="Excluded from current-office totals once imported"
+            value={release.validatedCounts.historicalOffices.toLocaleString()}
+            note="Excluded from current-office totals"
           />
           <TotalCard
-            label="Synthetic fixture offices (smoke tests)"
-            value={String(release.validatedCounts.currentOffices)}
-            note="Not Latin America research"
+            label="Historical event records"
+            value={release.validatedCounts.histories.toLocaleString()}
+            note={`${release.validatedCounts.resultRows.toLocaleString()} result rows; evidence status varies`}
           />
         </dl>
       </section>
@@ -104,13 +116,14 @@ export default function ObservatoryHomePage() {
       <section className="mt-10">
         <h2 className="obs-heading text-2xl">Upcoming elections</h2>
         <p className="mt-2 text-sm text-navy/70">
-          Searchable list of next dates in the loaded dataset. Partial dates keep their
-          supplied precision.
+          Searchable list of next dates in the loaded dataset. Partial dates
+          keep their supplied precision.
         </p>
         {upcoming.length === 0 ? (
           <div className="mt-4">
             <EmptyState title="No upcoming elections imported">
-              Drop {RELEASE_PACKAGE_FILENAME} and run <code>npm run import:data</code>.
+              Drop {RELEASE_PACKAGE_FILENAME} and run{" "}
+              <code>npm run import:data</code>.
             </EmptyState>
           </div>
         ) : (
@@ -125,7 +138,11 @@ export default function ObservatoryHomePage() {
                   formatResearchDate(event.date),
                   event.date.certainty,
                   office ? (
-                    <Link key={event.id} href={obsRoutes.office(office.id)} className="obs-link">
+                    <Link
+                      key={event.id}
+                      href={obsRoutes.office(office.id)}
+                      className="obs-link"
+                    >
                       {office.names.short}
                     </Link>
                   ) : (
@@ -136,7 +153,11 @@ export default function ObservatoryHomePage() {
               })}
             />
             <p className="mt-2 text-xs text-navy/55">
-              Rows above are synthetic fixtures used to prove the table and URL routes.
+              First 20 South American entries.{" "}
+              <Link href={obsRoutes.calendar} className="obs-link">
+                Browse the full calendar
+              </Link>
+              .
             </p>
           </div>
         )}
@@ -156,7 +177,9 @@ function TotalCard({
 }) {
   return (
     <div className="obs-card px-4 py-3">
-      <dt className="text-xs font-semibold uppercase tracking-wider text-navy/55">{label}</dt>
+      <dt className="text-xs font-semibold uppercase tracking-wider text-navy/55">
+        {label}
+      </dt>
       <dd className="mt-1 obs-heading text-3xl tabular-nums">{value}</dd>
       <p className="mt-1 text-xs text-navy/60">{note}</p>
     </div>

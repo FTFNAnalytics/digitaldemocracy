@@ -6,7 +6,7 @@ import { DataTable } from "@/components/observatory/table";
 import { formatResearchDate } from "@/lib/observatory/dates";
 import { parsePollingFilters } from "@/lib/observatory/filters";
 import { formatNumeric, formatShare } from "@/lib/observatory/format";
-import { getCountries, getDataset, getOffice } from "@/lib/observatory/load";
+import { getCountries, getDataset, getOffice, sourcesByIds } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
 
 export const metadata: Metadata = { title: "Polling" };
@@ -70,6 +70,8 @@ export default async function PollingPage({ searchParams }: Props) {
                 </p>
                 <h2 className="mt-1 obs-heading text-2xl">{poll.pollster}</h2>
                 <p className="mt-2 text-sm text-navy/75">{poll.questionText}</p>
+                {poll.questionType === 'presidential_approval' && poll.extensions?.raw?.incumbent_candidate ? <p className="mt-2 text-sm">Named officeholder in this observation: {String(poll.extensions.raw.incumbent_candidate)}</p> : null}
+                {poll.extensions?.raw?.margin_of_error_pp != null ? <p className="mt-2 text-sm">Reported margin of error: ±{String(poll.extensions.raw.margin_of_error_pp)} percentage points.</p> : null}
                 <p className="mt-2 text-sm text-navy/65">
                   Population: {poll.population}. Fieldwork {formatResearchDate(poll.fieldwork)}
                   {poll.published ? ` · published ${formatResearchDate(poll.published)}` : ""}. Sample{" "}
@@ -100,6 +102,8 @@ export default async function PollingPage({ searchParams }: Props) {
                   />
                 </div>
                 <p className="mt-3 text-sm text-navy/70">{poll.localConclusionNote}</p>
+                {poll.extensions?.raw?.interpretation ? <p className="mt-2 text-sm">{String(poll.extensions.raw.interpretation)}</p> : null}
+                <ul className="mt-3 space-y-1 text-sm">{sourcesByIds(poll.sourceIds).map(source=><li key={source.id}><Link className="obs-link" href={`${obsRoutes.sources}?q=${encodeURIComponent(source.id)}`}>{source.title}</Link></li>)}</ul>
               </article>
             );
           })}

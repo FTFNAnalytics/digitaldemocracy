@@ -39,12 +39,12 @@ export function UrlFilterForm({
   }
 
   return (
-    <form onSubmit={onSubmit} className="obs-card mb-6 grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-3">
+    <form action={pathname} method="get" onSubmit={onSubmit} className="obs-card mb-6 grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-3">
       {fields.map((field) => {
         const current = searchParams.get(field.key) ?? field.defaultValue ?? "";
         const active = Boolean(current);
         return (
-          <label key={field.key} className="block text-sm">
+          <label key={`${field.key}:${current}`} className="block text-sm">
             <span className="mb-1 block font-medium text-navy">{field.label}</span>
             {field.type === "select" ? (
               <select

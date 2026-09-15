@@ -3,9 +3,9 @@ import { spawnSync } from "node:child_process";
 import path from "node:path";
 import { classifyRelativePath } from "../../scripts/import/classify";
 
-describe("import and validate stubs", () => {
+describe("import and validation commands", () => {
   it("fails clearly when the Latin America zip is missing", () => {
-    const result = spawnSync("npx", ["tsx", "scripts/import/cli.ts"], {
+    const result = spawnSync(process.execPath, ["--import", "tsx", "scripts/import/cli.ts"], {
       cwd: path.join(import.meta.dirname, "../.."),
       encoding: "utf8",
     });
@@ -14,17 +14,8 @@ describe("import and validate stubs", () => {
     expect(result.stderr).toContain("will not invent");
   });
 
-  it("fails validate:data without the zip", () => {
-    const result = spawnSync("npx", ["tsx", "scripts/validate/cli.ts"], {
-      cwd: path.join(import.meta.dirname, "../.."),
-      encoding: "utf8",
-    });
-    expect(result.status).toBe(1);
-    expect(result.stderr).toContain("Latin_America_Races_and_Briefings.zip");
-  });
-
   it("validates fixtures", () => {
-    const result = spawnSync("npx", ["tsx", "scripts/validate/cli.ts", "--fixtures"], {
+    const result = spawnSync(process.execPath, ["--import", "tsx", "scripts/validate/cli.ts", "--fixtures"], {
       cwd: path.join(import.meta.dirname, "../.."),
       encoding: "utf8",
     });

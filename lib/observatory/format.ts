@@ -82,7 +82,11 @@ export function legalOutcomeLabel(outcome: string): string {
     case "annulled":
       return "Annulled";
     case "preliminary":
-      return "Preliminary / not yet held";
+      return "Preliminary";
+    case "not_held":
+      return "Not yet held";
+    case "unknown":
+      return "Legal certification not established";
     case "disputed":
       return "Disputed";
     case "superseded":

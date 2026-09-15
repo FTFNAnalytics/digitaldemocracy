@@ -1,24 +1,38 @@
+import { paginate, Pagination } from "@/components/observatory/pagination";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/observatory/chrome";
 import { UrlFilterForm } from "@/components/observatory/filters";
-import { dateCertaintyLabel, formatResearchDate, isPartialDate, researchDateSortKey } from "@/lib/observatory/dates";
+import {
+  dateCertaintyLabel,
+  formatResearchDate,
+  isPartialDate,
+  researchDateSortKey,
+} from "@/lib/observatory/dates";
 import { parseCalendarFilters } from "@/lib/observatory/filters";
-import { getEvents, getOffice } from "@/lib/observatory/load";
+import { upcomingEvents, getOffice } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
 
 export const metadata: Metadata = { title: "Calendar" };
 
-type Props = { searchParams: Promise<Record<string, string | string[] | undefined>> };
+type Props = {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
 
 export default async function CalendarPage({ searchParams }: Props) {
   const params = await searchParams;
   const filters = parseCalendarFilters(params);
-  const events = getEvents()
+  const events = upcomingEvents()
     .slice()
     .sort((a, b) => researchDateSortKey(a.date) - researchDateSortKey(b.date));
-  const dated = events.filter((event) => !isPartialDate(event.date) && event.date.certainty !== "conditional");
-  const partial = events.filter((event) => isPartialDate(event.date) || event.date.certainty === "conditional");
+  const dated = events.filter(
+    (event) =>
+      !isPartialDate(event.date) && event.date.certainty !== "conditional",
+  );
+  const partial = events.filter(
+    (event) =>
+      isPartialDate(event.date) || event.date.certainty === "conditional",
+  );
 
   const monthKey = filters.month || "2027-10";
   const [yearStr, monthStr] = monthKey.split("-");
@@ -29,6 +43,11 @@ export default async function CalendarPage({ searchParams }: Props) {
     (event) => event.date.year === year && event.date.month === month,
   );
 
+  const agendaPage = paginate(
+    filters.view === "month" ? inMonth : dated,
+    params,
+  );
+  const partialPage = paginate(partial, params, "partialPage");
   return (
     <>
       <PageHeader
@@ -51,14 +70,19 @@ export default async function CalendarPage({ searchParams }: Props) {
         ]}
       />
 
+      <Pagination result={agendaPage} params={params} />
       {filters.view === "month" ? (
         <section>
           <h2 className="obs-heading text-2xl">
             Month view · {String(month).padStart(2, "0")}/{year}
           </h2>
-          <MonthGrid year={year} month={month} eventDays={inMonth.map((event) => event.date.day ?? 0)} />
+          <MonthGrid
+            year={year}
+            month={month}
+            eventDays={agendaPage.items.map((event) => event.date.day ?? 0)}
+          />
           <ul className="mt-4 space-y-2 text-sm">
-            {inMonth.map((event) => {
+            {agendaPage.items.map((event) => {
               const office = getOffice(event.officeId);
               return (
                 <li key={event.id}>
@@ -71,24 +95,33 @@ export default async function CalendarPage({ searchParams }: Props) {
             })}
           </ul>
           {inMonth.length === 0 ? (
-            <p className="mt-3 text-sm text-navy/70">No day-certain events in this month.</p>
+            <p className="mt-3 text-sm text-navy/70">
+              No day-certain events in this month.
+            </p>
           ) : null}
         </section>
       ) : (
         <section>
           <h2 className="obs-heading text-2xl">Agenda</h2>
           <ol className="mt-4 space-y-3">
-            {dated.map((event) => {
+            {agendaPage.items.map((event) => {
               const office = getOffice(event.officeId);
               return (
                 <li key={event.id} className="obs-card px-4 py-3">
-                  <p className="tabular-nums text-sm text-navy/60">{formatResearchDate(event.date)}</p>
+                  <p className="tabular-nums text-sm text-navy/60">
+                    {formatResearchDate(event.date)}
+                  </p>
                   <p className="font-medium text-navy">
-                    <Link href={obsRoutes.event(event.id)} className="hover:text-navy-600">
+                    <Link
+                      href={obsRoutes.event(event.id)}
+                      className="hover:text-navy-600"
+                    >
                       {office?.names.official ?? event.officeId}
                     </Link>
                   </p>
-                  <p className="text-sm text-navy/65">{dateCertaintyLabel(event.date.certainty)}</p>
+                  <p className="text-sm text-navy/65">
+                    {dateCertaintyLabel(event.date.certainty)}
+                  </p>
                 </li>
               );
             })}
@@ -99,15 +132,21 @@ export default async function CalendarPage({ searchParams }: Props) {
       <section className="mt-10">
         <h2 className="obs-heading text-2xl">Partial or conditional dates</h2>
         <p className="mt-2 text-sm text-navy/70">
-          These dates do not have a confirmed calendar day, or are conditional. They are listed
-          here instead of being pinned to a fabricated day.
+          These dates do not have a confirmed calendar day, or are conditional.
+          They are listed here instead of being pinned to a fabricated day.
         </p>
+        <Pagination result={partialPage} params={params} />
         <ul className="mt-4 space-y-2">
-          {partial.map((event) => {
+          {partialPage.items.map((event) => {
             const office = getOffice(event.officeId);
             return (
-              <li key={event.id} className="rounded-2xl border border-dashed border-navy/20 bg-white px-4 py-3 text-sm">
-                <span className="font-medium">{formatResearchDate(event.date)}</span>
+              <li
+                key={event.id}
+                className="rounded-2xl border border-dashed border-navy/20 bg-white px-4 py-3 text-sm"
+              >
+                <span className="font-medium">
+                  {formatResearchDate(event.date)}
+                </span>
                 {" · "}
                 {dateCertaintyLabel(event.date.certainty)}
                 {" · "}
@@ -143,11 +182,16 @@ function MonthGrid({
 
   return (
     <table className="obs-card mt-4 w-full border-collapse text-sm">
-      <caption className="sr-only">Calendar month {month}/{year}</caption>
+      <caption className="sr-only">
+        Calendar month {month}/{year}
+      </caption>
       <thead>
         <tr>
           {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
-            <th key={day} className="border border-navy/20 bg-navy px-1 py-2 text-white">
+            <th
+              key={day}
+              className="border border-navy/20 bg-navy px-1 py-2 text-white"
+            >
               {day}
             </th>
           ))}
@@ -163,7 +207,9 @@ function MonthGrid({
               >
                 {day ?? ""}
                 {day && marks.has(day) ? (
-                  <span className="block text-[0.65rem] font-bold text-navy">● event</span>
+                  <span className="block text-[0.65rem] font-bold text-navy">
+                    ● event
+                  </span>
                 ) : null}
               </td>
             ))}
@@ -176,7 +222,8 @@ function MonthGrid({
 
 function chunk<T>(items: T[], size: number): T[][] {
   const rows: T[][] = [];
-  for (let i = 0; i < items.length; i += size) rows.push(items.slice(i, i + size));
+  for (let i = 0; i < items.length; i += size)
+    rows.push(items.slice(i, i + size));
   const last = rows[rows.length - 1];
   if (last && last.length < size) {
     last.push(...Array.from({ length: size - last.length }, () => null as T));

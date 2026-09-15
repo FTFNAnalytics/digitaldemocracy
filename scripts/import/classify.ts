@@ -49,5 +49,5 @@ function escapeRegex(value: string): string {
 }
 
 export function adapterStatus(adapter: string): "ready" | "stub" {
-  return adapter === "unknown" ? "stub" : "stub";
+  return ["country-json", "country-screen", "polling-context", "completion-queue-csv", "briefing-html"].includes(adapter) ? "ready" : "stub";
 }

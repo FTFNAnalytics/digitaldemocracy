@@ -3,9 +3,9 @@ import { Logo } from "@/components/brand";
 import { Container } from "@/components/container";
 import { ObservatoryNav } from "@/components/observatory/nav";
 import { org } from "@/lib/content";
-import { isFixtureOnlyDataset } from "@/lib/observatory/load";
+import { isFixtureOnlyDataset, getDataset } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
-import { RELEASE_PACKAGE_FILENAME } from "@/schemas/v1/input-manifest";
+
 
 export function ObservatoryBanner() {
   const fixture = isFixtureOnlyDataset();
@@ -13,10 +13,9 @@ export function ObservatoryBanner() {
     <div className="bg-navy-800 px-4 py-2 text-center text-xs text-white/80">
       <p>
         <span className="mr-2 inline-flex rounded-full bg-accent px-2 py-0.5 text-[0.65rem] font-bold uppercase tracking-wider text-accent-ink">
-          {fixture ? "Synthetic fixtures" : "Partial import"}
+          {fixture ? "Synthetic fixtures" : "Partial research"}
         </span>
-        Research is awaiting <span className="font-semibold text-accent">{RELEASE_PACKAGE_FILENAME}</span>.
-        Nothing on these pages is completed Latin America coverage.
+        {fixture ? "Synthetic test data." : `Research snapshot ${getDataset().release.snapshotLabel}. Evidence gaps remain; see Coverage for requirements.`}
       </p>
     </div>
   );
@@ -110,7 +109,7 @@ export function CiteBlock({
       <h2 className="obs-heading text-xl">Cite this record</h2>
       <p className="mt-2 text-sm leading-relaxed text-navy/80">
         {org.name}. “{title}.” <em>Subnational Election Observatory</em>, release
-        synthetic-fixture-v0 (not a research snapshot). {path}.
+        {getDataset().release.id}, snapshot {getDataset().release.snapshotLabel}. {path}.
         {extra ? ` ${extra}` : ""}
       </p>
       {fixture ? (
