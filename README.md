@@ -15,25 +15,33 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+The **Subnational Election Observatory** lives at [`/electiondatabase`](/electiondatabase). It is an additional product area — the marketing homepage is unchanged. Research pages load the versioned Latin America release: 18,229 current offices, 414 historical offices, 40,509 histories, and 18,643 full briefings. Research coverage remains partial. See [integration status and operations](docs/electiondatabase-progress.md).
+
 ## Scripts
 
 | Command | What it does |
 | --- | --- |
 | `npm run dev` | Start the Next.js dev server |
 | `npm run build` | Production build (must succeed) |
-| `npm start` | Serve the production build |
+| `npm start` / `npm run preview` | Serve the production build |
 | `npm run lint` | ESLint |
+| `npm test` | Adapter and semantic tests; fixtures are test-only |
+| `npm run import:data` | Import the Latin America zip (fails clearly if missing) |
+| `npm run validate:data` | Validate normalized records and checksums (no original ZIP required) |
+| `npm run validate:evidence` | Compare every historical row and office selection against original source objects |
+| `npm run import:data -- --fixtures` | Write a fixture reconciliation report only |
+| `npm run validate:data -- --fixtures` | Validate the synthetic smoke-test dataset |
 
 ## Stack
 
 - [Next.js](https://nextjs.org) App Router
 - TypeScript
 - Tailwind CSS
-- React (client components only for the header, forms, and back-to-top control)
+- React (client components for the header, forms, back-to-top, observatory nav, and URL filters)
 
 ## Site map
 
-Single page with in-page anchors:
+Marketing homepage with in-page anchors:
 
 1. **Home** — hero, headline *Advancing Tech Policy for Better Democratic Outcomes*
 2. **About** — mission copy and checkmark priorities
@@ -41,6 +49,19 @@ Single page with in-page anchors:
 4. **Initiatives** — four pillars on a dark band
 5. **Events** — upcoming briefings and workshops
 6. **Connect** — contact form and newsletter signup
+7. **Election database** — `/electiondatabase` observatory (see docs)
+
+Observatory routes (nested under `/electiondatabase`): home, regions, countries, explorer, offices, elections, compare, calendar, polling, coverage, sources, downloads, methodology, releases, about.
+
+### Import the Latin America package
+
+```bash
+# place Latin_America_Races_and_Briefings.zip in data/incoming/ (not committed)
+npm run import:data
+npm run validate:data
+```
+
+Without the zip those commands exit non-zero and print the missing dependency. That is intentional.
 
 ## License
 

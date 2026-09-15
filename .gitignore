@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# bulky research archives — keep checksums in Git, not the zip
+*.zip
+/data/incoming/*
+!/data/incoming/.gitkeep
+!/data/incoming/README.md
+/data/raw/
+/data/releases/reconciliation-report.json
+
+# Transactional import staging and recovery copies
+/data/research.staging/
+/data/research.previous/

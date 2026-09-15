@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { cn } from "@/lib/cn";
 
 type IconName =
@@ -133,9 +134,15 @@ export function Icon({
   }
 }
 
-export function Logo({ compact = false }: { compact?: boolean }) {
-  return (
-    <a href="#home" className="group flex items-center gap-3">
+export function Logo({
+  compact = false,
+  href = "#home",
+}: {
+  compact?: boolean;
+  href?: string;
+}) {
+  const mark = (
+    <>
       <span className="relative grid h-10 w-10 place-items-center rounded-full border border-accent/70 bg-navy-800 shadow-[0_0_0_3px_rgb(162_255_0_/_0.12)]">
         <span className="absolute h-2 w-2 rounded-full bg-accent" />
         <span className="absolute -left-0.5 top-2 h-1.5 w-1.5 rounded-full bg-accent/90" />
@@ -149,6 +156,20 @@ export function Logo({ compact = false }: { compact?: boolean }) {
           Digital Democracy
         </span>
       </span>
+    </>
+  );
+
+  if (href.startsWith("/")) {
+    return (
+      <Link href={href} className="group flex items-center gap-3">
+        {mark}
+      </Link>
+    );
+  }
+
+  return (
+    <a href={href} className="group flex items-center gap-3">
+      {mark}
     </a>
   );
 }

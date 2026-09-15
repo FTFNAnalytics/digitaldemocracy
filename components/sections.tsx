@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   about,
   events,
@@ -149,6 +150,24 @@ export function Research() {
             ))}
           </ul>
         </div>
+        <div className="mb-12 rounded-3xl border border-navy/10 bg-white p-6 sm:p-8">
+          <p className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-navy-600">
+            New product area
+          </p>
+          <h3 className="mt-2 text-2xl font-bold text-navy">Subnational Election Observatory</h3>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
+            Searchable subnational election research — South America first — at{" "}
+            <span className="font-semibold text-navy">/electiondatabase</span>. The public
+            catalogue is awaiting the Latin America release package and does not invent
+            real-world races.
+          </p>
+          <Link
+            href="/electiondatabase"
+            className="mt-5 inline-flex rounded-full bg-navy px-5 py-2.5 text-sm font-bold text-white hover:bg-navy-700"
+          >
+            Open the election database
+          </Link>
+        </div>
         <SectionHeading eyebrow="Workstreams" title="Research" />
         <div className="grid gap-6 sm:grid-cols-2">
           {researchCards.map((card) => (
@@ -277,6 +296,11 @@ export function Footer() {
         <Container className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between">
           <Logo />
           <ul className="flex flex-wrap gap-4 text-sm text-white/60">
+            <li>
+              <Link href="/electiondatabase" className="hover:text-accent">
+                Election database
+              </Link>
+            </li>
             {social.map((item) => (
               <li key={item.label}>
                 <a href={item.href} className="hover:text-accent">
