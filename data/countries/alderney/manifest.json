@@ -1,0 +1,126 @@
+{
+  "schema_version": "europe-country-extract/1",
+  "country": "Alderney",
+  "country_code": "GG-ALD",
+  "region": "Europe",
+  "research_checked_through": "2026-09-11",
+  "packaged_on": "2026-09-15",
+  "window": {
+    "start": "2026-09-08",
+    "end": "2028-03-08",
+    "inclusive": true
+  },
+  "coverage_complete": false,
+  "site_ingestion_status": "pending_adapter",
+  "archive": {
+    "filename": "Europe_Excluding_Russia_Election_Data_2026-09-15.zip",
+    "bytes": 183958382,
+    "sha256": "93a31ec920c770e752cf7f130ffb8a546dce4510a41d9371d5f49239fa2b4ce9"
+  },
+  "source_inputs": {
+    "Europe_Excluding_Russia/Europe_Excluding_Russia.xlsx": {
+      "sha256": "b11dab577fb1746eddeb3aef72af7b097bcc4601828e1efbca1db3d6f6b98665",
+      "bytes": 10931972
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/GG-ALD-PLEB.html": {
+      "sha256": "8060e3375a502e9726bdbbbb936619041230df8c025d148619f4c2cb31aa924e",
+      "bytes": 5797
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/GG-ALD-STATES.html": {
+      "sha256": "2c8a28053072aa7c4cbdbca20baea69c69779355ac5874c6af201f5a7fe42689",
+      "bytes": 10197
+    },
+    "Europe_Excluding_Russia/Europe_Country_Coverage.csv": {
+      "sha256": "20fb347ab5e37e60e732edf819d0ccfb431f007dcb925a20aa716e4abd07dc80",
+      "bytes": 32833
+    },
+    "Europe_Excluding_Russia/Europe_History_Index.csv": {
+      "sha256": "33b469577b0e89a062391a72d511871bf3e8f9e9f001cf947b9865da6ac01319",
+      "bytes": 34344677
+    }
+  },
+  "table_row_counts": {
+    "Country coverage": 1,
+    "Country notes": 1,
+    "Parameters": 12,
+    "Office register": 2,
+    "Election calendar": 1,
+    "History index": 6,
+    "Detailed returns": 27,
+    "Read me": 13,
+    "Sources": 6
+  },
+  "individual_briefings": 2,
+  "source_link_counts": {
+    "registered": 6,
+    "inline_only": 1
+  },
+  "files": {
+    "briefings/GG-ALD-PLEB.html": {
+      "sha256": "8060e3375a502e9726bdbbbb936619041230df8c025d148619f4c2cb31aa924e",
+      "bytes": 5797,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/GG-ALD-PLEB.html"
+    },
+    "briefings/GG-ALD-STATES.html": {
+      "sha256": "2c8a28053072aa7c4cbdbca20baea69c69779355ac5874c6af201f5a7fe42689",
+      "bytes": 10197,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/GG-ALD-STATES.html"
+    },
+    "source-links.json": {
+      "sha256": "67601afc7f397412a1248e4b816facc89d2b8695cc3c9d6b336c091c4f961d2b",
+      "bytes": 680
+    },
+    "tables/country-coverage.json": {
+      "sha256": "4851320d0e452c036f20964543a4b8baec7162dfb35afd54e4ad0113d2ec4b06",
+      "bytes": 266
+    },
+    "tables/country-notes.json": {
+      "sha256": "ac12dd8d01ca1d7094dd751b52e26b159e4b563f30940b134a0b48117b07dba8",
+      "bytes": 586
+    },
+    "tables/parameters.json": {
+      "sha256": "47d666fd87eb6c3db5882213d2ef10f36c994fa9f31859aafde37fdb613343e2",
+      "bytes": 991
+    },
+    "tables/office-register.json": {
+      "sha256": "46dcd2afececa8e2ab46383d306003b941e6ca0ef9dac8e77dfc4435444a72f9",
+      "bytes": 1378
+    },
+    "tables/election-calendar.json": {
+      "sha256": "ed18050130ba80a3726c45154d841c0f3c64b3d505437f62fa34f1c2540623bc",
+      "bytes": 767
+    },
+    "tables/history-index.json": {
+      "sha256": "69b395678fad074a0166fe7c2da5eb370999a9b05f9b91d551a6d8b8a588c56f",
+      "bytes": 2416
+    },
+    "tables/detailed-returns.json": {
+      "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+      "bytes": 8824
+    },
+    "tables/read-me.json": {
+      "sha256": "ac783fd2d95bfb0359c71873c3e0f3e86e11e54564551aaa84440207e49f2540",
+      "bytes": 3671
+    },
+    "tables/sources.json": {
+      "sha256": "2f5834dbb9ac87ba23559bb111b85e8bcf2c06b2b63aa8c44e877076f3f758bd",
+      "bytes": 1137
+    },
+    "cached-formulas.json": {
+      "sha256": "cf91a89916bfee20482202176c1d3b79070e07c906d6090c991ecf8a6847d050",
+      "bytes": 2403
+    },
+    "coverage.json": {
+      "sha256": "1c4f621adf53cc8f9cfcc8aac2ead67572130ee39bacb5bbd8f293eb02980b85",
+      "bytes": 768
+    },
+    "history-index-crosscheck.json": {
+      "sha256": "f3e1bd1e5ffac9f5be0996165018231785fd6f37be5cb809dcf5749eef70131d",
+      "bytes": 2388
+    },
+    "alderney.html": {
+      "sha256": "f49db332f790fcdd50d235475feb2f817788f63f97149444c8b760c910c896ab",
+      "bytes": 578
+    }
+  }
+}
