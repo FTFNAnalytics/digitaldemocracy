@@ -1,0 +1,1300 @@
+{
+  "schema_version": "europe-country-extract/1",
+  "country": "Albania",
+  "country_code": "AL",
+  "region": "Europe",
+  "research_checked_through": "2026-09-11",
+  "packaged_on": "2026-09-15",
+  "window": {
+    "start": "2026-09-08",
+    "end": "2028-03-08",
+    "inclusive": true
+  },
+  "coverage_complete": false,
+  "site_ingestion_status": "pending_adapter",
+  "archive": {
+    "filename": "Europe_Excluding_Russia_Election_Data_2026-09-15.zip",
+    "bytes": 183958382,
+    "sha256": "93a31ec920c770e752cf7f130ffb8a546dce4510a41d9371d5f49239fa2b4ce9"
+  },
+  "source_inputs": {
+    "Europe_Excluding_Russia/Europe_Excluding_Russia.xlsx": {
+      "sha256": "b11dab577fb1746eddeb3aef72af7b097bcc4601828e1efbca1db3d6f6b98665",
+      "bytes": 10931972
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-01-C.html": {
+      "sha256": "8acf83e20bbc6f7138a041350e5804a39be3a4338a8f9b2badeb3a7c198d21c5",
+      "bytes": 12205
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-01-M.html": {
+      "sha256": "6b301813b9d3b94afe603706981b3839102448c275c16e9cb3badbb01381e962",
+      "bytes": 7594
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-02-C.html": {
+      "sha256": "d6ed1a26456220318900975beeb8c12c333e29bf6a988919a86598a9a1f5b01b",
+      "bytes": 10934
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-02-M.html": {
+      "sha256": "44fc9cd91df6de5e6770275ea65ac00d776a3b4b692199a4b768667d08d81e24",
+      "bytes": 6371
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-03-C.html": {
+      "sha256": "f5823e3beea0b46c4fdf43c515cf5af114d2f4dd37b979dfef64e18b4194dcb2",
+      "bytes": 9103
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-03-M.html": {
+      "sha256": "c0bc6bd7ec67d6f7955a612c04fcf254682e9c6515944b590be0bfc0ecf3fa68",
+      "bytes": 6045
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-04-C.html": {
+      "sha256": "af3c69f62ba7627cda21a07258d74aae6ac0bf92087dc79cf5bcecbf26b79c32",
+      "bytes": 8243
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-04-M.html": {
+      "sha256": "6639006e8e314dd670f01065941ed21e3067d3f35eddeb2e32e02f48a2613817",
+      "bytes": 6158
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-05-C.html": {
+      "sha256": "2b6b857291a07ad9c6c9d52df996ca29ce9a6ac648b07c1f27fba39965d1faef",
+      "bytes": 11891
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-05-M.html": {
+      "sha256": "2cd4df320a036b8108e404e29749440359195bae3b87cc99af3f5e87b5fc23f4",
+      "bytes": 6251
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-06-C.html": {
+      "sha256": "1e290ab2bcd191fa371ef2806abc6b8dc8b9f6afa2805ecc2907e48e61cd6a7f",
+      "bytes": 17200
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-06-M.html": {
+      "sha256": "b83460a2fdd9d2f091beb4763f4a1743100a603c4a4da67ad462d067b129eb22",
+      "bytes": 6258
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-07-C.html": {
+      "sha256": "75d559a82ec117e3e27e0038a445734c4c5835f13122e2961cf512491aa49989",
+      "bytes": 12234
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-07-M.html": {
+      "sha256": "12541fdda1bb50686b03bb4a31951938e3023165d59be12eaadff3f64d1b6948",
+      "bytes": 8192
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-08-C.html": {
+      "sha256": "aedbab34b17ac2c86059602b8858b30a635ef80b4309f54d1cb19b0bebfeca9a",
+      "bytes": 16713
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-08-M.html": {
+      "sha256": "b2fc9ddbf88951343b90474eae9fc0c49ee8a64e470085714c26e7058f596c43",
+      "bytes": 6034
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-09-C.html": {
+      "sha256": "d6b1eaf892848e76cd3ee437f72965351fb1c082b0b91e1ba6d4fcfd44c7c53d",
+      "bytes": 14703
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-09-M.html": {
+      "sha256": "8cf824aa39dfd115ffdb396a871c6d8dee93366b6ea8caea63bcf7c024be931e",
+      "bytes": 7226
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-10-C.html": {
+      "sha256": "ceecb03f4505d01832d4d0259613411cf23535707d82d74027e1b4bad81693f5",
+      "bytes": 15007
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-10-M.html": {
+      "sha256": "611233e240a1c910eb968f0640c6fd4befbc1f0f4fefd776965bbfb4cf4ea42f",
+      "bytes": 7592
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-11-C.html": {
+      "sha256": "17d31cd1259d7946899af3db999cc2870b29d0955e687ef1eb5f8aad5d3c4bc5",
+      "bytes": 14662
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-11-M.html": {
+      "sha256": "3a14f63dd7e451cf8cb71b6ed05272e579d709e43cdd2cc72ed4e61b4cd15504",
+      "bytes": 6140
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-12-C.html": {
+      "sha256": "fc5e16c313980ae6660f29d22ef1b8c24a51d793917e35eae028588360c06eda",
+      "bytes": 10974
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-12-M.html": {
+      "sha256": "44c0e3255411d15021d8573ba2ede1642a5e3d9912b06643005737e6360340ca",
+      "bytes": 6383
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-13-C.html": {
+      "sha256": "edecc9901d07061e9ad9d47855af870cc5ac3bc224c21d89ccbb167387c5e336",
+      "bytes": 11528
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-13-M.html": {
+      "sha256": "060cddf358134dd5c96cb2f5a4322ae493401e276a28c4aacab66c4d46853f80",
+      "bytes": 6389
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-14-C.html": {
+      "sha256": "4503f64b893176a9a43db0ec3896501674dbea4025e020a117740824a78fb2cc",
+      "bytes": 10758
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-14-M.html": {
+      "sha256": "62c20f8762301c8e16e543a9bcbf52ff758ce9ce7bbbefe844ef02912cee72eb",
+      "bytes": 7564
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-15-C.html": {
+      "sha256": "8e88cc4db6baff2c5adddc8e604212261aa3a591c036536e91389804762d2b24",
+      "bytes": 14042
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-15-M.html": {
+      "sha256": "1f0b5546054ea3bc54f9fc9c07b330e1cfe21b1aa2329b0e961627f0d6852de8",
+      "bytes": 6171
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-16-C.html": {
+      "sha256": "584c07e540e4f1cb59fd52e7bb2d9dabbc22dd7d572741172e7fae1997c148e2",
+      "bytes": 14694
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-16-M.html": {
+      "sha256": "efcf77aa601e3f1a1308dadde7b6d0a4515c054a15bb0a22587d101182d60a2d",
+      "bytes": 6285
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-17-C.html": {
+      "sha256": "f755e2c7aaeb12fb88b616d2b17caac0a34f52bc5e0f051ca06b0811424fa6dc",
+      "bytes": 14763
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-17-M.html": {
+      "sha256": "8b34350f3f8ea68539fb69fb4ef5c09b683444ddc4226a2bdc7fa2d4e6037416",
+      "bytes": 6029
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-18-C.html": {
+      "sha256": "e190ed8e187ca24c3045538d7746f0f1ae0d29099fa9d910ac540026bc90287f",
+      "bytes": 10189
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-18-M.html": {
+      "sha256": "4ff739edccc83eb61c5eebf9b2cc192bef4c643fe25f927a3521527f1e4847c8",
+      "bytes": 6139
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-19-C.html": {
+      "sha256": "1c57242950cb943139332037e42177a8a5e66079742fcbe03b9349d194fd386e",
+      "bytes": 15436
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-19-M.html": {
+      "sha256": "d2cebc81209d4b3a83202ed803f23992a13bab32573e2cd1ecb670155356a309",
+      "bytes": 6049
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-20-C.html": {
+      "sha256": "103ce6feb0a9c0356fa78a8d484a8e4789b926ce72614db011510800a2e19554",
+      "bytes": 11580
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-20-M.html": {
+      "sha256": "8db1775078a41a111a6bb4f683a8c7c8df8bd9a1d17d165a033549353aa243e2",
+      "bytes": 5927
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-21-C.html": {
+      "sha256": "4d3e05de445d11acde6b3380e85915f716266297972111f44c4eeded765f73d1",
+      "bytes": 12842
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-21-M.html": {
+      "sha256": "34b0281226be4fe4d23bc092760e6465b806f30c520c16226b7b7e589aff9023",
+      "bytes": 6390
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-22-C.html": {
+      "sha256": "0568a057af56772e48ca85469af1a1273abe6618f362a86b201bc50fe97e373d",
+      "bytes": 12307
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-22-M.html": {
+      "sha256": "e22fcbcff2091486123c45bce5e5cbbfdf41357c4865d32aeb1810d817838e3a",
+      "bytes": 7476
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-23-C.html": {
+      "sha256": "c5b06c293a6caa642a1d71c0854f5ffdd2679b8c0cc9f7d19d932083d19f06b9",
+      "bytes": 12734
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-23-M.html": {
+      "sha256": "9fa4e7409b74ac1697b1a098003c8006f9824541e66e1d20d880101e272d42c8",
+      "bytes": 6209
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-24-C.html": {
+      "sha256": "2afc452fae2a1d8e093a44c47c217d31ac4008e7ffa1e7b252e067e3fde38783",
+      "bytes": 10320
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-24-M.html": {
+      "sha256": "4f152eb8c484a6203e4ddd207f698750963c77c7a10469842513a9ddc578dcd0",
+      "bytes": 6273
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-25-C.html": {
+      "sha256": "d3f5a5899e148689bf209bf256b5e4c48004f5c0ddab1c2533d0c5a276b94fb3",
+      "bytes": 9693
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-25-M.html": {
+      "sha256": "0fbeb3a9b8d824422c69a96d359fbecff677dbc71d675e709ef788a62113b204",
+      "bytes": 6139
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-26-C.html": {
+      "sha256": "a49ecca357a76f3ef76306c8cb0018fd5b4d6205b541597856a7951d03c42e94",
+      "bytes": 8464
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-26-M.html": {
+      "sha256": "036c39e7d0b9c7ee5654147d1640f5e9faca3dda6a538f6a8f1e0fc643cb6fdb",
+      "bytes": 6537
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-27-C.html": {
+      "sha256": "0bea850e49022b5c218a67c911548b18efed4fda45c5e41f4ec3396fcad0b77f",
+      "bytes": 12153
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-27-M.html": {
+      "sha256": "de3f5c261d81b2b3bbaaf6f6f97982918c53ad0fa4617bd2f5f93c96dc44e111",
+      "bytes": 6172
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-28-C.html": {
+      "sha256": "2fdb5c85869f6de29746957ff50defbbc611825fb95c96fb37368af85dc239c6",
+      "bytes": 16558
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-28-M.html": {
+      "sha256": "9af76ffe540df32a022b8643d6d819c08f97156414cf215822c4178c71bcd01d",
+      "bytes": 6674
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-29-C.html": {
+      "sha256": "9f6b63dccd660b88e4f506d44fffeafb33d7350c4e54732e2609fbbc3b1888ea",
+      "bytes": 8665
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-29-M.html": {
+      "sha256": "94bd926c2930af76f48883d936ab1b752e8d006b042736538de504b337d630ac",
+      "bytes": 6153
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-30-C.html": {
+      "sha256": "cc42943908edcc8eb683cdba114b616b14af8b7d109c82f56c34a285b991a8cf",
+      "bytes": 11539
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-30-M.html": {
+      "sha256": "d2f269ab77ab92b7cc7b22dfd0e42aacbf2944ae748e6c5bdb67588f05483cce",
+      "bytes": 6637
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-31-C.html": {
+      "sha256": "ee872726505d7b77c4498552138111d76fc508801e4302588d029adeca5b2be3",
+      "bytes": 15179
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-31-M.html": {
+      "sha256": "9cc6f9578d5461cbc62c944bcc2fe09aa95bab517d7a6b8f0ad83f12150bec6c",
+      "bytes": 6343
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-32-C.html": {
+      "sha256": "016dadf8f11f60b48763693d07a34e2ff57577e558ed98403d2275ef5ffe6f8a",
+      "bytes": 10562
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-32-M.html": {
+      "sha256": "0074057ea309e09c1a195690bb5e53ec25f5c04606d24ddb8eefc378bac0fdb3",
+      "bytes": 7701
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-33-C.html": {
+      "sha256": "14dc2d3a04543b8da0481b38daef25c9d0f6b54dd0bd4c09fbc97bd3c8c93824",
+      "bytes": 12756
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-33-M.html": {
+      "sha256": "886411a1576f30deb9eaca539bc4a8598877a18ffe1c42b2f4c17f483ee65058",
+      "bytes": 6452
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-34-C.html": {
+      "sha256": "1ddb2d14204fb9f4949e82f9281ee9c23c726c61230a18609c270dbb4a83ef9f",
+      "bytes": 10552
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-34-M.html": {
+      "sha256": "39d1bc93bbc05237bcad26ab18fd39cfdc57778c84cf3039f2583efe5a7d1587",
+      "bytes": 7475
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-35-C.html": {
+      "sha256": "f52c6f9067c27ff7c6889a691dc0fd781847266ff931bfbf9d522812547bda8e",
+      "bytes": 13560
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-35-M.html": {
+      "sha256": "6e689ab45a50156b61565774a72f4b4913bc39f4698b3440e26740cd72e488c5",
+      "bytes": 6270
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-36-C.html": {
+      "sha256": "57ce84ff88ce78578e405fce72df4424ad019e5d24d90c93db5bb95a7d4be4e6",
+      "bytes": 12852
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-36-M.html": {
+      "sha256": "47fe268fe4235619cdc0aa9d79f7559be6c8986d4afe69bc8007a6514a756448",
+      "bytes": 5912
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-37-C.html": {
+      "sha256": "8c181c327039729041932bcfa8b0ce8b5e73b304f5ef3754498018a18a15ecd1",
+      "bytes": 15087
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-37-M.html": {
+      "sha256": "6b74cd9a444b1484a40bed605216323faf0fb84a1b9dc6aecedf643c291fb422",
+      "bytes": 6434
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-38-C.html": {
+      "sha256": "522ae95899a82016ef6280e8bc5ed34c6044376bf47c496f1ef0a504f083221a",
+      "bytes": 7857
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-38-M.html": {
+      "sha256": "7e086db822e6065a8613230948eb048c88b0cc09f87e114c7fc1cd3f5479dd92",
+      "bytes": 6054
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-39-C.html": {
+      "sha256": "553f45b09daeae8056b6d0530a5bcffdb614a82684bf8b621337a75aab5d99d7",
+      "bytes": 15658
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-39-M.html": {
+      "sha256": "07ab584a4c3f381cc6987e2cf668ddd6dc88fd92533d14a5c4db023a270eccdc",
+      "bytes": 5992
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-40-C.html": {
+      "sha256": "cf34ef8df2ba7bbdd8d20e4c90137c10e3af9d9cad9db5b6ff1d2a09687d89af",
+      "bytes": 19569
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-40-M.html": {
+      "sha256": "2b1f7be8f1d7a4ae039d792de14ae4f50c6dd1b808dbbcbdf15dc217faf8732d",
+      "bytes": 7411
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-41-C.html": {
+      "sha256": "78c9fc984e230a5bffad02a32012a7ea6cc05a37dc1107b5bca200bf7330e4ea",
+      "bytes": 17165
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-41-M.html": {
+      "sha256": "8ec7e99345ae277aff4780398dd027c83576f967e8cda7e16fa2f3fd4ddd3c01",
+      "bytes": 6183
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-42-C.html": {
+      "sha256": "77f893b0942d24958e113b183b9e1d6476c7abc4824849acf3a5dec603b87f71",
+      "bytes": 15472
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-42-M.html": {
+      "sha256": "3a7978c779f9d23e7ca34ac5fc473f00e27736da25594a01f7dd14c377947ea5",
+      "bytes": 6271
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-43-C.html": {
+      "sha256": "0751067d809c721b3274ce5c886a6690b1e5662849cfaf08463fcecc04b3042e",
+      "bytes": 17008
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-43-M.html": {
+      "sha256": "877bbd89f9de082949b8dbf1a6732acc7f65a8b146e2fde7db64b695c23e6eb0",
+      "bytes": 6404
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-44-C.html": {
+      "sha256": "267e6e43156e1346816580d287e1f50d74322b876bb319a1b2a10cad6c69333b",
+      "bytes": 14463
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-44-M.html": {
+      "sha256": "93ee88e5fb7e9ee7ea442d2a7f4d7e026db79c29d18c63308f3f40982e48e84f",
+      "bytes": 6282
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-45-C.html": {
+      "sha256": "943b13bf87fe8c3903554d8fa0f029e6ecb4286f5a5d88585249a998b6882fe7",
+      "bytes": 14008
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-45-M.html": {
+      "sha256": "34224fc7204ffe6e07dd62fb3b5dc612c78fa65ada331dc9ef95636d80810a0d",
+      "bytes": 6141
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-46-C.html": {
+      "sha256": "0d9805eb36ebf20df3afc6a7fda670e85bec20ac25e567b6f01869f7da69ee90",
+      "bytes": 16052
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-46-M.html": {
+      "sha256": "0d88227eec1d98840de1a1d01c816f09b073ed4abc56e79d11f30acfcd549809",
+      "bytes": 6073
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-47-C.html": {
+      "sha256": "70f9fd1c50bef38d7582602fcbb4d3a061e79d97b3e10b4334e39b3af9f60be3",
+      "bytes": 14410
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-47-M.html": {
+      "sha256": "6828c5c34f274dba727f5a49a9c69bdeda96462988c7db81d2a6880f9b68c73f",
+      "bytes": 6129
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-48-C.html": {
+      "sha256": "e2d9677d95d150f1d16ffc091c331b52f79c60eb5d4251c46cbf32c00dbcde51",
+      "bytes": 14928
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-48-M.html": {
+      "sha256": "5bee24925a6a0a5f338c0212d9cf4321d920e45115e4485294f7b5f184719f9f",
+      "bytes": 7662
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-49-C.html": {
+      "sha256": "7847c8071d9212aa981db58524a3118005f6028d18d747b91df0c32f8e4deb10",
+      "bytes": 12082
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-49-M.html": {
+      "sha256": "cce1294729129c3df1461980522fba02d2b87cc7877a8730da49f541584c59f7",
+      "bytes": 6267
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-50-C.html": {
+      "sha256": "c0a230fb8fdc1ee82fb451963ae7deb890f03c217141dbabe421985501684232",
+      "bytes": 13759
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-50-M.html": {
+      "sha256": "b43fa43c58fd2dda293345d5ba87083b07b52c4b7e4a2e4043c89339f56a4fc4",
+      "bytes": 6408
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-51-C.html": {
+      "sha256": "6bfd0c184492aed1f6d8fedb48b91e5f1ef6fb9e539622b7ff02e8d284d7aa23",
+      "bytes": 11207
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-51-M.html": {
+      "sha256": "a28a327697ca915c18ac15584105f5c5dec3edf3a7e76fbb1d7e67c308aa60d9",
+      "bytes": 7429
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-52-C.html": {
+      "sha256": "4e5b090a2eb32c87954a93fd6cd91c2f2e119dd30ea9400bb44876b1692079c4",
+      "bytes": 9533
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-52-M.html": {
+      "sha256": "4c9967b606be3cb22fc5be77fa9e68503bd40298bf1e092cd8f6cbb9e6a9b045",
+      "bytes": 7921
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-53-C.html": {
+      "sha256": "c6074b9e8cb4a4037e365a0e06afc697e8ca1389c8bd7053d180f1ded02e4018",
+      "bytes": 18133
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-53-M.html": {
+      "sha256": "b47d8d8759a2ad15a0c7933ac4e94a7ba0f1e1441593736feb0c8d37cff9b093",
+      "bytes": 7362
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-54-C.html": {
+      "sha256": "d3976e522159e2eb9f29e34fdde5e15c48195fa6fe6a590dcb502e59e78f7a50",
+      "bytes": 11828
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-54-M.html": {
+      "sha256": "05d6fa55c25907c83312d148c248f8622ce54b7d387130b19751e5a1f7d8901d",
+      "bytes": 7334
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-55-C.html": {
+      "sha256": "b8aa2d585336c618bcd5631246163a959efa8d2cfef00f51cd3ff9346415eae6",
+      "bytes": 10747
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-55-M.html": {
+      "sha256": "65c518d60cc351e8d1f8fe092ebc68d66e6ce1842d98bb52e96c0f719cbcd1a9",
+      "bytes": 6161
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-56-C.html": {
+      "sha256": "26168a79b32b479e3167a73ffe13f8f76c9271777368cd719472b652390213be",
+      "bytes": 9110
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-56-M.html": {
+      "sha256": "4881d74ed0332c79b8b45a0a84cfc20809562ea2eb4fc46669d391e8a45b5230",
+      "bytes": 6324
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-57-C.html": {
+      "sha256": "84f1c119821a916e162403e5d250a43a0132986e7404e614f9bb3d677e3c4a73",
+      "bytes": 11321
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-57-M.html": {
+      "sha256": "54a3ed078a8181ea59110d75c078e6155dc65f204ad6d43fbb4f91e365f31e00",
+      "bytes": 7719
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-58-C.html": {
+      "sha256": "caa08dc86ed867af7f2a305420eb5ce6feeb1e75182ceaa2f74e21bd2d7ce184",
+      "bytes": 9323
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-58-M.html": {
+      "sha256": "f24be5fe98bb8ae34589f5586923a074cf8503cb3265e3b6805add6b4fa01984",
+      "bytes": 6399
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-59-C.html": {
+      "sha256": "5d9632bace52b4cfdc0c2e3823fbc27da8ce082585dbed9e16170af9a63c1348",
+      "bytes": 13145
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-59-M.html": {
+      "sha256": "9808a5f1e58d21fd5b9886ba78de9f4682d938643ac54d8b53e27a0a4c7608e2",
+      "bytes": 6317
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-60-C.html": {
+      "sha256": "2160719ba9a156e4c6e5c68035cf3cb9bacc237134d2db6f9d35092a6ac9a07c",
+      "bytes": 11077
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-60-M.html": {
+      "sha256": "463dc1bea0124dc57a05cdb569a538806a4ef2c5493b6298b0a5cf71fe454d67",
+      "bytes": 6583
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-61-C.html": {
+      "sha256": "eab6734cc99f2518112f409363d0c8d4cf7151c68d33b8a54c59e23a9cf7c69f",
+      "bytes": 13235
+    },
+    "Europe_Excluding_Russia/Office_Briefings/Offices/AL-61-M.html": {
+      "sha256": "d5664531cfa15e86a4d8977ea6bbdc87ee309ce6f139437cb171502ccdb616c0",
+      "bytes": 7871
+    },
+    "Europe_Excluding_Russia/Europe_Country_Coverage.csv": {
+      "sha256": "20fb347ab5e37e60e732edf819d0ccfb431f007dcb925a20aa716e4abd07dc80",
+      "bytes": 32833
+    },
+    "Europe_Excluding_Russia/Europe_History_Index.csv": {
+      "sha256": "33b469577b0e89a062391a72d511871bf3e8f9e9f001cf947b9865da6ac01319",
+      "bytes": 34344677
+    }
+  },
+  "table_row_counts": {
+    "Country coverage": 1,
+    "Country notes": 1,
+    "Parameters": 12,
+    "Office register": 122,
+    "Election calendar": 1,
+    "Polling evidence": 1,
+    "History index": 366,
+    "Detailed returns": 3843,
+    "Governing control": 45,
+    "Read me": 13,
+    "Sources": 182
+  },
+  "individual_briefings": 122,
+  "source_link_counts": {
+    "registered": 182,
+    "inline_only": 3
+  },
+  "files": {
+    "briefings/AL-01-C.html": {
+      "sha256": "8acf83e20bbc6f7138a041350e5804a39be3a4338a8f9b2badeb3a7c198d21c5",
+      "bytes": 12205,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-01-C.html"
+    },
+    "briefings/AL-01-M.html": {
+      "sha256": "6b301813b9d3b94afe603706981b3839102448c275c16e9cb3badbb01381e962",
+      "bytes": 7594,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-01-M.html"
+    },
+    "briefings/AL-02-C.html": {
+      "sha256": "d6ed1a26456220318900975beeb8c12c333e29bf6a988919a86598a9a1f5b01b",
+      "bytes": 10934,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-02-C.html"
+    },
+    "briefings/AL-02-M.html": {
+      "sha256": "44fc9cd91df6de5e6770275ea65ac00d776a3b4b692199a4b768667d08d81e24",
+      "bytes": 6371,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-02-M.html"
+    },
+    "briefings/AL-03-C.html": {
+      "sha256": "f5823e3beea0b46c4fdf43c515cf5af114d2f4dd37b979dfef64e18b4194dcb2",
+      "bytes": 9103,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-03-C.html"
+    },
+    "briefings/AL-03-M.html": {
+      "sha256": "c0bc6bd7ec67d6f7955a612c04fcf254682e9c6515944b590be0bfc0ecf3fa68",
+      "bytes": 6045,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-03-M.html"
+    },
+    "briefings/AL-04-C.html": {
+      "sha256": "af3c69f62ba7627cda21a07258d74aae6ac0bf92087dc79cf5bcecbf26b79c32",
+      "bytes": 8243,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-04-C.html"
+    },
+    "briefings/AL-04-M.html": {
+      "sha256": "6639006e8e314dd670f01065941ed21e3067d3f35eddeb2e32e02f48a2613817",
+      "bytes": 6158,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-04-M.html"
+    },
+    "briefings/AL-05-C.html": {
+      "sha256": "2b6b857291a07ad9c6c9d52df996ca29ce9a6ac648b07c1f27fba39965d1faef",
+      "bytes": 11891,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-05-C.html"
+    },
+    "briefings/AL-05-M.html": {
+      "sha256": "2cd4df320a036b8108e404e29749440359195bae3b87cc99af3f5e87b5fc23f4",
+      "bytes": 6251,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-05-M.html"
+    },
+    "briefings/AL-06-C.html": {
+      "sha256": "1e290ab2bcd191fa371ef2806abc6b8dc8b9f6afa2805ecc2907e48e61cd6a7f",
+      "bytes": 17200,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-06-C.html"
+    },
+    "briefings/AL-06-M.html": {
+      "sha256": "b83460a2fdd9d2f091beb4763f4a1743100a603c4a4da67ad462d067b129eb22",
+      "bytes": 6258,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-06-M.html"
+    },
+    "briefings/AL-07-C.html": {
+      "sha256": "75d559a82ec117e3e27e0038a445734c4c5835f13122e2961cf512491aa49989",
+      "bytes": 12234,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-07-C.html"
+    },
+    "briefings/AL-07-M.html": {
+      "sha256": "12541fdda1bb50686b03bb4a31951938e3023165d59be12eaadff3f64d1b6948",
+      "bytes": 8192,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-07-M.html"
+    },
+    "briefings/AL-08-C.html": {
+      "sha256": "aedbab34b17ac2c86059602b8858b30a635ef80b4309f54d1cb19b0bebfeca9a",
+      "bytes": 16713,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-08-C.html"
+    },
+    "briefings/AL-08-M.html": {
+      "sha256": "b2fc9ddbf88951343b90474eae9fc0c49ee8a64e470085714c26e7058f596c43",
+      "bytes": 6034,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-08-M.html"
+    },
+    "briefings/AL-09-C.html": {
+      "sha256": "d6b1eaf892848e76cd3ee437f72965351fb1c082b0b91e1ba6d4fcfd44c7c53d",
+      "bytes": 14703,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-09-C.html"
+    },
+    "briefings/AL-09-M.html": {
+      "sha256": "8cf824aa39dfd115ffdb396a871c6d8dee93366b6ea8caea63bcf7c024be931e",
+      "bytes": 7226,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-09-M.html"
+    },
+    "briefings/AL-10-C.html": {
+      "sha256": "ceecb03f4505d01832d4d0259613411cf23535707d82d74027e1b4bad81693f5",
+      "bytes": 15007,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-10-C.html"
+    },
+    "briefings/AL-10-M.html": {
+      "sha256": "611233e240a1c910eb968f0640c6fd4befbc1f0f4fefd776965bbfb4cf4ea42f",
+      "bytes": 7592,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-10-M.html"
+    },
+    "briefings/AL-11-C.html": {
+      "sha256": "17d31cd1259d7946899af3db999cc2870b29d0955e687ef1eb5f8aad5d3c4bc5",
+      "bytes": 14662,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-11-C.html"
+    },
+    "briefings/AL-11-M.html": {
+      "sha256": "3a14f63dd7e451cf8cb71b6ed05272e579d709e43cdd2cc72ed4e61b4cd15504",
+      "bytes": 6140,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-11-M.html"
+    },
+    "briefings/AL-12-C.html": {
+      "sha256": "fc5e16c313980ae6660f29d22ef1b8c24a51d793917e35eae028588360c06eda",
+      "bytes": 10974,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-12-C.html"
+    },
+    "briefings/AL-12-M.html": {
+      "sha256": "44c0e3255411d15021d8573ba2ede1642a5e3d9912b06643005737e6360340ca",
+      "bytes": 6383,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-12-M.html"
+    },
+    "briefings/AL-13-C.html": {
+      "sha256": "edecc9901d07061e9ad9d47855af870cc5ac3bc224c21d89ccbb167387c5e336",
+      "bytes": 11528,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-13-C.html"
+    },
+    "briefings/AL-13-M.html": {
+      "sha256": "060cddf358134dd5c96cb2f5a4322ae493401e276a28c4aacab66c4d46853f80",
+      "bytes": 6389,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-13-M.html"
+    },
+    "briefings/AL-14-C.html": {
+      "sha256": "4503f64b893176a9a43db0ec3896501674dbea4025e020a117740824a78fb2cc",
+      "bytes": 10758,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-14-C.html"
+    },
+    "briefings/AL-14-M.html": {
+      "sha256": "62c20f8762301c8e16e543a9bcbf52ff758ce9ce7bbbefe844ef02912cee72eb",
+      "bytes": 7564,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-14-M.html"
+    },
+    "briefings/AL-15-C.html": {
+      "sha256": "8e88cc4db6baff2c5adddc8e604212261aa3a591c036536e91389804762d2b24",
+      "bytes": 14042,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-15-C.html"
+    },
+    "briefings/AL-15-M.html": {
+      "sha256": "1f0b5546054ea3bc54f9fc9c07b330e1cfe21b1aa2329b0e961627f0d6852de8",
+      "bytes": 6171,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-15-M.html"
+    },
+    "briefings/AL-16-C.html": {
+      "sha256": "584c07e540e4f1cb59fd52e7bb2d9dabbc22dd7d572741172e7fae1997c148e2",
+      "bytes": 14694,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-16-C.html"
+    },
+    "briefings/AL-16-M.html": {
+      "sha256": "efcf77aa601e3f1a1308dadde7b6d0a4515c054a15bb0a22587d101182d60a2d",
+      "bytes": 6285,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-16-M.html"
+    },
+    "briefings/AL-17-C.html": {
+      "sha256": "f755e2c7aaeb12fb88b616d2b17caac0a34f52bc5e0f051ca06b0811424fa6dc",
+      "bytes": 14763,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-17-C.html"
+    },
+    "briefings/AL-17-M.html": {
+      "sha256": "8b34350f3f8ea68539fb69fb4ef5c09b683444ddc4226a2bdc7fa2d4e6037416",
+      "bytes": 6029,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-17-M.html"
+    },
+    "briefings/AL-18-C.html": {
+      "sha256": "e190ed8e187ca24c3045538d7746f0f1ae0d29099fa9d910ac540026bc90287f",
+      "bytes": 10189,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-18-C.html"
+    },
+    "briefings/AL-18-M.html": {
+      "sha256": "4ff739edccc83eb61c5eebf9b2cc192bef4c643fe25f927a3521527f1e4847c8",
+      "bytes": 6139,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-18-M.html"
+    },
+    "briefings/AL-19-C.html": {
+      "sha256": "1c57242950cb943139332037e42177a8a5e66079742fcbe03b9349d194fd386e",
+      "bytes": 15436,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-19-C.html"
+    },
+    "briefings/AL-19-M.html": {
+      "sha256": "d2cebc81209d4b3a83202ed803f23992a13bab32573e2cd1ecb670155356a309",
+      "bytes": 6049,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-19-M.html"
+    },
+    "briefings/AL-20-C.html": {
+      "sha256": "103ce6feb0a9c0356fa78a8d484a8e4789b926ce72614db011510800a2e19554",
+      "bytes": 11580,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-20-C.html"
+    },
+    "briefings/AL-20-M.html": {
+      "sha256": "8db1775078a41a111a6bb4f683a8c7c8df8bd9a1d17d165a033549353aa243e2",
+      "bytes": 5927,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-20-M.html"
+    },
+    "briefings/AL-21-C.html": {
+      "sha256": "4d3e05de445d11acde6b3380e85915f716266297972111f44c4eeded765f73d1",
+      "bytes": 12842,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-21-C.html"
+    },
+    "briefings/AL-21-M.html": {
+      "sha256": "34b0281226be4fe4d23bc092760e6465b806f30c520c16226b7b7e589aff9023",
+      "bytes": 6390,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-21-M.html"
+    },
+    "briefings/AL-22-C.html": {
+      "sha256": "0568a057af56772e48ca85469af1a1273abe6618f362a86b201bc50fe97e373d",
+      "bytes": 12307,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-22-C.html"
+    },
+    "briefings/AL-22-M.html": {
+      "sha256": "e22fcbcff2091486123c45bce5e5cbbfdf41357c4865d32aeb1810d817838e3a",
+      "bytes": 7476,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-22-M.html"
+    },
+    "briefings/AL-23-C.html": {
+      "sha256": "c5b06c293a6caa642a1d71c0854f5ffdd2679b8c0cc9f7d19d932083d19f06b9",
+      "bytes": 12734,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-23-C.html"
+    },
+    "briefings/AL-23-M.html": {
+      "sha256": "9fa4e7409b74ac1697b1a098003c8006f9824541e66e1d20d880101e272d42c8",
+      "bytes": 6209,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-23-M.html"
+    },
+    "briefings/AL-24-C.html": {
+      "sha256": "2afc452fae2a1d8e093a44c47c217d31ac4008e7ffa1e7b252e067e3fde38783",
+      "bytes": 10320,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-24-C.html"
+    },
+    "briefings/AL-24-M.html": {
+      "sha256": "4f152eb8c484a6203e4ddd207f698750963c77c7a10469842513a9ddc578dcd0",
+      "bytes": 6273,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-24-M.html"
+    },
+    "briefings/AL-25-C.html": {
+      "sha256": "d3f5a5899e148689bf209bf256b5e4c48004f5c0ddab1c2533d0c5a276b94fb3",
+      "bytes": 9693,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-25-C.html"
+    },
+    "briefings/AL-25-M.html": {
+      "sha256": "0fbeb3a9b8d824422c69a96d359fbecff677dbc71d675e709ef788a62113b204",
+      "bytes": 6139,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-25-M.html"
+    },
+    "briefings/AL-26-C.html": {
+      "sha256": "a49ecca357a76f3ef76306c8cb0018fd5b4d6205b541597856a7951d03c42e94",
+      "bytes": 8464,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-26-C.html"
+    },
+    "briefings/AL-26-M.html": {
+      "sha256": "036c39e7d0b9c7ee5654147d1640f5e9faca3dda6a538f6a8f1e0fc643cb6fdb",
+      "bytes": 6537,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-26-M.html"
+    },
+    "briefings/AL-27-C.html": {
+      "sha256": "0bea850e49022b5c218a67c911548b18efed4fda45c5e41f4ec3396fcad0b77f",
+      "bytes": 12153,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-27-C.html"
+    },
+    "briefings/AL-27-M.html": {
+      "sha256": "de3f5c261d81b2b3bbaaf6f6f97982918c53ad0fa4617bd2f5f93c96dc44e111",
+      "bytes": 6172,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-27-M.html"
+    },
+    "briefings/AL-28-C.html": {
+      "sha256": "2fdb5c85869f6de29746957ff50defbbc611825fb95c96fb37368af85dc239c6",
+      "bytes": 16558,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-28-C.html"
+    },
+    "briefings/AL-28-M.html": {
+      "sha256": "9af76ffe540df32a022b8643d6d819c08f97156414cf215822c4178c71bcd01d",
+      "bytes": 6674,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-28-M.html"
+    },
+    "briefings/AL-29-C.html": {
+      "sha256": "9f6b63dccd660b88e4f506d44fffeafb33d7350c4e54732e2609fbbc3b1888ea",
+      "bytes": 8665,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-29-C.html"
+    },
+    "briefings/AL-29-M.html": {
+      "sha256": "94bd926c2930af76f48883d936ab1b752e8d006b042736538de504b337d630ac",
+      "bytes": 6153,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-29-M.html"
+    },
+    "briefings/AL-30-C.html": {
+      "sha256": "cc42943908edcc8eb683cdba114b616b14af8b7d109c82f56c34a285b991a8cf",
+      "bytes": 11539,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-30-C.html"
+    },
+    "briefings/AL-30-M.html": {
+      "sha256": "d2f269ab77ab92b7cc7b22dfd0e42aacbf2944ae748e6c5bdb67588f05483cce",
+      "bytes": 6637,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-30-M.html"
+    },
+    "briefings/AL-31-C.html": {
+      "sha256": "ee872726505d7b77c4498552138111d76fc508801e4302588d029adeca5b2be3",
+      "bytes": 15179,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-31-C.html"
+    },
+    "briefings/AL-31-M.html": {
+      "sha256": "9cc6f9578d5461cbc62c944bcc2fe09aa95bab517d7a6b8f0ad83f12150bec6c",
+      "bytes": 6343,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-31-M.html"
+    },
+    "briefings/AL-32-C.html": {
+      "sha256": "016dadf8f11f60b48763693d07a34e2ff57577e558ed98403d2275ef5ffe6f8a",
+      "bytes": 10562,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-32-C.html"
+    },
+    "briefings/AL-32-M.html": {
+      "sha256": "0074057ea309e09c1a195690bb5e53ec25f5c04606d24ddb8eefc378bac0fdb3",
+      "bytes": 7701,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-32-M.html"
+    },
+    "briefings/AL-33-C.html": {
+      "sha256": "14dc2d3a04543b8da0481b38daef25c9d0f6b54dd0bd4c09fbc97bd3c8c93824",
+      "bytes": 12756,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-33-C.html"
+    },
+    "briefings/AL-33-M.html": {
+      "sha256": "886411a1576f30deb9eaca539bc4a8598877a18ffe1c42b2f4c17f483ee65058",
+      "bytes": 6452,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-33-M.html"
+    },
+    "briefings/AL-34-C.html": {
+      "sha256": "1ddb2d14204fb9f4949e82f9281ee9c23c726c61230a18609c270dbb4a83ef9f",
+      "bytes": 10552,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-34-C.html"
+    },
+    "briefings/AL-34-M.html": {
+      "sha256": "39d1bc93bbc05237bcad26ab18fd39cfdc57778c84cf3039f2583efe5a7d1587",
+      "bytes": 7475,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-34-M.html"
+    },
+    "briefings/AL-35-C.html": {
+      "sha256": "f52c6f9067c27ff7c6889a691dc0fd781847266ff931bfbf9d522812547bda8e",
+      "bytes": 13560,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-35-C.html"
+    },
+    "briefings/AL-35-M.html": {
+      "sha256": "6e689ab45a50156b61565774a72f4b4913bc39f4698b3440e26740cd72e488c5",
+      "bytes": 6270,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-35-M.html"
+    },
+    "briefings/AL-36-C.html": {
+      "sha256": "57ce84ff88ce78578e405fce72df4424ad019e5d24d90c93db5bb95a7d4be4e6",
+      "bytes": 12852,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-36-C.html"
+    },
+    "briefings/AL-36-M.html": {
+      "sha256": "47fe268fe4235619cdc0aa9d79f7559be6c8986d4afe69bc8007a6514a756448",
+      "bytes": 5912,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-36-M.html"
+    },
+    "briefings/AL-37-C.html": {
+      "sha256": "8c181c327039729041932bcfa8b0ce8b5e73b304f5ef3754498018a18a15ecd1",
+      "bytes": 15087,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-37-C.html"
+    },
+    "briefings/AL-37-M.html": {
+      "sha256": "6b74cd9a444b1484a40bed605216323faf0fb84a1b9dc6aecedf643c291fb422",
+      "bytes": 6434,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-37-M.html"
+    },
+    "briefings/AL-38-C.html": {
+      "sha256": "522ae95899a82016ef6280e8bc5ed34c6044376bf47c496f1ef0a504f083221a",
+      "bytes": 7857,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-38-C.html"
+    },
+    "briefings/AL-38-M.html": {
+      "sha256": "7e086db822e6065a8613230948eb048c88b0cc09f87e114c7fc1cd3f5479dd92",
+      "bytes": 6054,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-38-M.html"
+    },
+    "briefings/AL-39-C.html": {
+      "sha256": "553f45b09daeae8056b6d0530a5bcffdb614a82684bf8b621337a75aab5d99d7",
+      "bytes": 15658,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-39-C.html"
+    },
+    "briefings/AL-39-M.html": {
+      "sha256": "07ab584a4c3f381cc6987e2cf668ddd6dc88fd92533d14a5c4db023a270eccdc",
+      "bytes": 5992,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-39-M.html"
+    },
+    "briefings/AL-40-C.html": {
+      "sha256": "cf34ef8df2ba7bbdd8d20e4c90137c10e3af9d9cad9db5b6ff1d2a09687d89af",
+      "bytes": 19569,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-40-C.html"
+    },
+    "briefings/AL-40-M.html": {
+      "sha256": "2b1f7be8f1d7a4ae039d792de14ae4f50c6dd1b808dbbcbdf15dc217faf8732d",
+      "bytes": 7411,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-40-M.html"
+    },
+    "briefings/AL-41-C.html": {
+      "sha256": "78c9fc984e230a5bffad02a32012a7ea6cc05a37dc1107b5bca200bf7330e4ea",
+      "bytes": 17165,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-41-C.html"
+    },
+    "briefings/AL-41-M.html": {
+      "sha256": "8ec7e99345ae277aff4780398dd027c83576f967e8cda7e16fa2f3fd4ddd3c01",
+      "bytes": 6183,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-41-M.html"
+    },
+    "briefings/AL-42-C.html": {
+      "sha256": "77f893b0942d24958e113b183b9e1d6476c7abc4824849acf3a5dec603b87f71",
+      "bytes": 15472,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-42-C.html"
+    },
+    "briefings/AL-42-M.html": {
+      "sha256": "3a7978c779f9d23e7ca34ac5fc473f00e27736da25594a01f7dd14c377947ea5",
+      "bytes": 6271,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-42-M.html"
+    },
+    "briefings/AL-43-C.html": {
+      "sha256": "0751067d809c721b3274ce5c886a6690b1e5662849cfaf08463fcecc04b3042e",
+      "bytes": 17008,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-43-C.html"
+    },
+    "briefings/AL-43-M.html": {
+      "sha256": "877bbd89f9de082949b8dbf1a6732acc7f65a8b146e2fde7db64b695c23e6eb0",
+      "bytes": 6404,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-43-M.html"
+    },
+    "briefings/AL-44-C.html": {
+      "sha256": "267e6e43156e1346816580d287e1f50d74322b876bb319a1b2a10cad6c69333b",
+      "bytes": 14463,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-44-C.html"
+    },
+    "briefings/AL-44-M.html": {
+      "sha256": "93ee88e5fb7e9ee7ea442d2a7f4d7e026db79c29d18c63308f3f40982e48e84f",
+      "bytes": 6282,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-44-M.html"
+    },
+    "briefings/AL-45-C.html": {
+      "sha256": "943b13bf87fe8c3903554d8fa0f029e6ecb4286f5a5d88585249a998b6882fe7",
+      "bytes": 14008,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-45-C.html"
+    },
+    "briefings/AL-45-M.html": {
+      "sha256": "34224fc7204ffe6e07dd62fb3b5dc612c78fa65ada331dc9ef95636d80810a0d",
+      "bytes": 6141,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-45-M.html"
+    },
+    "briefings/AL-46-C.html": {
+      "sha256": "0d9805eb36ebf20df3afc6a7fda670e85bec20ac25e567b6f01869f7da69ee90",
+      "bytes": 16052,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-46-C.html"
+    },
+    "briefings/AL-46-M.html": {
+      "sha256": "0d88227eec1d98840de1a1d01c816f09b073ed4abc56e79d11f30acfcd549809",
+      "bytes": 6073,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-46-M.html"
+    },
+    "briefings/AL-47-C.html": {
+      "sha256": "70f9fd1c50bef38d7582602fcbb4d3a061e79d97b3e10b4334e39b3af9f60be3",
+      "bytes": 14410,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-47-C.html"
+    },
+    "briefings/AL-47-M.html": {
+      "sha256": "6828c5c34f274dba727f5a49a9c69bdeda96462988c7db81d2a6880f9b68c73f",
+      "bytes": 6129,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-47-M.html"
+    },
+    "briefings/AL-48-C.html": {
+      "sha256": "e2d9677d95d150f1d16ffc091c331b52f79c60eb5d4251c46cbf32c00dbcde51",
+      "bytes": 14928,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-48-C.html"
+    },
+    "briefings/AL-48-M.html": {
+      "sha256": "5bee24925a6a0a5f338c0212d9cf4321d920e45115e4485294f7b5f184719f9f",
+      "bytes": 7662,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-48-M.html"
+    },
+    "briefings/AL-49-C.html": {
+      "sha256": "7847c8071d9212aa981db58524a3118005f6028d18d747b91df0c32f8e4deb10",
+      "bytes": 12082,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-49-C.html"
+    },
+    "briefings/AL-49-M.html": {
+      "sha256": "cce1294729129c3df1461980522fba02d2b87cc7877a8730da49f541584c59f7",
+      "bytes": 6267,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-49-M.html"
+    },
+    "briefings/AL-50-C.html": {
+      "sha256": "c0a230fb8fdc1ee82fb451963ae7deb890f03c217141dbabe421985501684232",
+      "bytes": 13759,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-50-C.html"
+    },
+    "briefings/AL-50-M.html": {
+      "sha256": "b43fa43c58fd2dda293345d5ba87083b07b52c4b7e4a2e4043c89339f56a4fc4",
+      "bytes": 6408,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-50-M.html"
+    },
+    "briefings/AL-51-C.html": {
+      "sha256": "6bfd0c184492aed1f6d8fedb48b91e5f1ef6fb9e539622b7ff02e8d284d7aa23",
+      "bytes": 11207,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-51-C.html"
+    },
+    "briefings/AL-51-M.html": {
+      "sha256": "a28a327697ca915c18ac15584105f5c5dec3edf3a7e76fbb1d7e67c308aa60d9",
+      "bytes": 7429,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-51-M.html"
+    },
+    "briefings/AL-52-C.html": {
+      "sha256": "4e5b090a2eb32c87954a93fd6cd91c2f2e119dd30ea9400bb44876b1692079c4",
+      "bytes": 9533,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-52-C.html"
+    },
+    "briefings/AL-52-M.html": {
+      "sha256": "4c9967b606be3cb22fc5be77fa9e68503bd40298bf1e092cd8f6cbb9e6a9b045",
+      "bytes": 7921,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-52-M.html"
+    },
+    "briefings/AL-53-C.html": {
+      "sha256": "c6074b9e8cb4a4037e365a0e06afc697e8ca1389c8bd7053d180f1ded02e4018",
+      "bytes": 18133,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-53-C.html"
+    },
+    "briefings/AL-53-M.html": {
+      "sha256": "b47d8d8759a2ad15a0c7933ac4e94a7ba0f1e1441593736feb0c8d37cff9b093",
+      "bytes": 7362,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-53-M.html"
+    },
+    "briefings/AL-54-C.html": {
+      "sha256": "d3976e522159e2eb9f29e34fdde5e15c48195fa6fe6a590dcb502e59e78f7a50",
+      "bytes": 11828,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-54-C.html"
+    },
+    "briefings/AL-54-M.html": {
+      "sha256": "05d6fa55c25907c83312d148c248f8622ce54b7d387130b19751e5a1f7d8901d",
+      "bytes": 7334,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-54-M.html"
+    },
+    "briefings/AL-55-C.html": {
+      "sha256": "b8aa2d585336c618bcd5631246163a959efa8d2cfef00f51cd3ff9346415eae6",
+      "bytes": 10747,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-55-C.html"
+    },
+    "briefings/AL-55-M.html": {
+      "sha256": "65c518d60cc351e8d1f8fe092ebc68d66e6ce1842d98bb52e96c0f719cbcd1a9",
+      "bytes": 6161,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-55-M.html"
+    },
+    "briefings/AL-56-C.html": {
+      "sha256": "26168a79b32b479e3167a73ffe13f8f76c9271777368cd719472b652390213be",
+      "bytes": 9110,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-56-C.html"
+    },
+    "briefings/AL-56-M.html": {
+      "sha256": "4881d74ed0332c79b8b45a0a84cfc20809562ea2eb4fc46669d391e8a45b5230",
+      "bytes": 6324,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-56-M.html"
+    },
+    "briefings/AL-57-C.html": {
+      "sha256": "84f1c119821a916e162403e5d250a43a0132986e7404e614f9bb3d677e3c4a73",
+      "bytes": 11321,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-57-C.html"
+    },
+    "briefings/AL-57-M.html": {
+      "sha256": "54a3ed078a8181ea59110d75c078e6155dc65f204ad6d43fbb4f91e365f31e00",
+      "bytes": 7719,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-57-M.html"
+    },
+    "briefings/AL-58-C.html": {
+      "sha256": "caa08dc86ed867af7f2a305420eb5ce6feeb1e75182ceaa2f74e21bd2d7ce184",
+      "bytes": 9323,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-58-C.html"
+    },
+    "briefings/AL-58-M.html": {
+      "sha256": "f24be5fe98bb8ae34589f5586923a074cf8503cb3265e3b6805add6b4fa01984",
+      "bytes": 6399,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-58-M.html"
+    },
+    "briefings/AL-59-C.html": {
+      "sha256": "5d9632bace52b4cfdc0c2e3823fbc27da8ce082585dbed9e16170af9a63c1348",
+      "bytes": 13145,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-59-C.html"
+    },
+    "briefings/AL-59-M.html": {
+      "sha256": "9808a5f1e58d21fd5b9886ba78de9f4682d938643ac54d8b53e27a0a4c7608e2",
+      "bytes": 6317,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-59-M.html"
+    },
+    "briefings/AL-60-C.html": {
+      "sha256": "2160719ba9a156e4c6e5c68035cf3cb9bacc237134d2db6f9d35092a6ac9a07c",
+      "bytes": 11077,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-60-C.html"
+    },
+    "briefings/AL-60-M.html": {
+      "sha256": "463dc1bea0124dc57a05cdb569a538806a4ef2c5493b6298b0a5cf71fe454d67",
+      "bytes": 6583,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-60-M.html"
+    },
+    "briefings/AL-61-C.html": {
+      "sha256": "eab6734cc99f2518112f409363d0c8d4cf7151c68d33b8a54c59e23a9cf7c69f",
+      "bytes": 13235,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-61-C.html"
+    },
+    "briefings/AL-61-M.html": {
+      "sha256": "d5664531cfa15e86a4d8977ea6bbdc87ee309ce6f139437cb171502ccdb616c0",
+      "bytes": 7871,
+      "source_entry": "Europe_Excluding_Russia/Office_Briefings/Offices/AL-61-M.html"
+    },
+    "source-links.json": {
+      "sha256": "68a7ad49b82fd481d4d88862ce6b684d7b35c59192faca731d3c91784a2c5485",
+      "bytes": 13599
+    },
+    "tables/country-coverage.json": {
+      "sha256": "0d9385e9d017c66e237c96c6daef11f029412215cb4e291f132022decebe7c57",
+      "bytes": 272
+    },
+    "tables/country-notes.json": {
+      "sha256": "10a2258dfc68d6caa8a2b73aa5311cea42919b9bc499d0d925a2085d8f77b4c7",
+      "bytes": 1034
+    },
+    "tables/parameters.json": {
+      "sha256": "47d666fd87eb6c3db5882213d2ef10f36c994fa9f31859aafde37fdb613343e2",
+      "bytes": 991
+    },
+    "tables/office-register.json": {
+      "sha256": "7d5a3735e83f95ee82deb76c60c6d391fa5faadfd3f660fe71ca8ca0ca05ad62",
+      "bytes": 66480
+    },
+    "tables/election-calendar.json": {
+      "sha256": "9bfe06c00e2e97f55efea778c7116a5c3ce50ce8b3b6d16fa665ea9084925282",
+      "bytes": 628
+    },
+    "tables/polling-evidence.json": {
+      "sha256": "a9a69e4e2d456858b7afb82da28c2b1256172b8434577e07d05f242b5ca734e5",
+      "bytes": 1197
+    },
+    "tables/history-index-001.json": {
+      "sha256": "ebfd3c286d5571c8f791c837f23d87e3c7b8c60506c20a109a71a027ad447cf6",
+      "bytes": 76905
+    },
+    "tables/history-index-002.json": {
+      "sha256": "fcc02c7355a78cf08ccef045ae2aa5abdd90951571fddd3b250712f12cbb09a1",
+      "bytes": 75566
+    },
+    "tables/detailed-returns-001.json": {
+      "sha256": "55c5518ab9f7a356a85a8e1c009788a13bddc78816802dd8c0bb7b0955cc6849",
+      "bytes": 76628
+    },
+    "tables/detailed-returns-002.json": {
+      "sha256": "5fc3efd0b9db24a00758107c89b4d9521f3e62c802149af1a7a8c041d979a743",
+      "bytes": 77097
+    },
+    "tables/detailed-returns-003.json": {
+      "sha256": "cad5ae45f06f6fccbf8b17c7bf0d09e206f15587e6ae2e358254aefa556360e1",
+      "bytes": 76652
+    },
+    "tables/detailed-returns-004.json": {
+      "sha256": "29a6f712934709ba37e6ac3a4ee49bd23f5c6b194d2d29f4d1cf81c6e894c03c",
+      "bytes": 76812
+    },
+    "tables/detailed-returns-005.json": {
+      "sha256": "bcc30918f9d68dfe9880269c6e8027b1e9af2ce8b2200dfbcc0ca0dc0fafbbd7",
+      "bytes": 76704
+    },
+    "tables/detailed-returns-006.json": {
+      "sha256": "31af51dc538c50472e9881beb426478c88c01d8a391269cb1ef03bf3ebb26e1b",
+      "bytes": 77028
+    },
+    "tables/detailed-returns-007.json": {
+      "sha256": "37a76f46721a25fe3405fef33570a93eaf6ee2696a74adff440b6b079837d963",
+      "bytes": 77040
+    },
+    "tables/detailed-returns-008.json": {
+      "sha256": "74a86e40c53a9b716467a48a8feec85ce09f197000af7da100256f23cf539e80",
+      "bytes": 76998
+    },
+    "tables/detailed-returns-009.json": {
+      "sha256": "7c2e90cd1f1cf9928b8749b1995774bb4ce68f069f14e50f383198287139407d",
+      "bytes": 76987
+    },
+    "tables/detailed-returns-010.json": {
+      "sha256": "9f215092f2f142553f12f9331c8f231e4b4e784ecc80a5e2931d2d7abb7be366",
+      "bytes": 76848
+    },
+    "tables/detailed-returns-011.json": {
+      "sha256": "1b4270fe89161fbf880dad9d3ddb969d4f5cf4a6317243094fdbcce995bb50f3",
+      "bytes": 76804
+    },
+    "tables/detailed-returns-012.json": {
+      "sha256": "4db95351872d0e51f817b355c385cce5de317fa0692f975fc4d3288d206e6d5c",
+      "bytes": 77086
+    },
+    "tables/detailed-returns-013.json": {
+      "sha256": "9b218ed411bf536ee58c95514ab01206bcee6daf9a7b45a54b07bd7a561a7161",
+      "bytes": 76851
+    },
+    "tables/detailed-returns-014.json": {
+      "sha256": "92497b57c500a3e464fd5ae10216fc4d9dee5992295882e86f5706fc0649ff6e",
+      "bytes": 76969
+    },
+    "tables/detailed-returns-015.json": {
+      "sha256": "fed607dd36ef557babb5529ae4a070b57a36f44e3abcdaeceab040847b269247",
+      "bytes": 77066
+    },
+    "tables/detailed-returns-016.json": {
+      "sha256": "3393886784d69216f51e59012fbd72b01780bbb55b80a152edcf39c58d563fa2",
+      "bytes": 77055
+    },
+    "tables/detailed-returns-017.json": {
+      "sha256": "1235b4c9b95788f024007c29839b2de6a1a094c4d9a5f07c74e65722c649d933",
+      "bytes": 76663
+    },
+    "tables/detailed-returns-018.json": {
+      "sha256": "f52dc73a16900b2a9ee84d1915b25c789ea394a29ee5f5aacd8038b1738e8232",
+      "bytes": 76834
+    },
+    "tables/detailed-returns-019.json": {
+      "sha256": "5f4e580cd35a10c8298389e3ea0f847dc1b5e27dc68b0bb0dbaad156aded964d",
+      "bytes": 77057
+    },
+    "tables/detailed-returns-020.json": {
+      "sha256": "0649679844fe8639e259929e870d6b1283a605c940a1146f914221b3b275d4ad",
+      "bytes": 76813
+    },
+    "tables/detailed-returns-021.json": {
+      "sha256": "6dc72c7b14a0e1466b86844fe52b2a60cc56d622fa2e1249fbaff321a128963b",
+      "bytes": 38262
+    },
+    "tables/governing-control.json": {
+      "sha256": "2dd1ffa7f1ac6f906c73c2dc94bea69f43215da1f6bf8902ea09603084cc14fd",
+      "bytes": 28838
+    },
+    "tables/read-me.json": {
+      "sha256": "ac783fd2d95bfb0359c71873c3e0f3e86e11e54564551aaa84440207e49f2540",
+      "bytes": 3671
+    },
+    "tables/sources.json": {
+      "sha256": "131233b1eb5abdfa5b696c7693e84dd59df8f9da6069ace0a1740fac93f57826",
+      "bytes": 38946
+    },
+    "cached-formulas.json": {
+      "sha256": "fd32ef9da55a076f60a427da8a42047fa6d7b88483fd62578efac35a5860452b",
+      "bytes": 133733
+    },
+    "coverage.json": {
+      "sha256": "7687efabe16f9e0a91037964814907d9d928b050864d3637a60703683c4973b0",
+      "bytes": 1201
+    },
+    "history-index-crosscheck.json": {
+      "sha256": "e03ba01d67be1f61af93fffaa2b0465beab9774820ab10b7f13f5ceeb5166d58",
+      "bytes": 152851
+    },
+    "albania.html": {
+      "sha256": "0922d304c1593b435c0de6290910b8f7134f6972ae7d0173513581abddabb45f",
+      "bytes": 8772
+    }
+  }
+}
