@@ -22,6 +22,20 @@ describe("import and validation commands", () => {
     expect(result.status).toBe(0);
     expect(result.stdout).toContain("Fixture validation passed");
   });
+
+  it("imports standalone country packages without the Latin America zip", () => {
+    const result = spawnSync(
+      process.execPath,
+      ["--import", "tsx", "scripts/import/cli.ts", "--countries"],
+      {
+        cwd: path.join(import.meta.dirname, "../.."),
+        encoding: "utf8",
+      },
+    );
+    expect(result.status).toBe(0);
+    expect(result.stdout).toContain("import:countries");
+    expect(result.stdout).toContain("albania");
+  });
 });
 
 describe("input classification", () => {

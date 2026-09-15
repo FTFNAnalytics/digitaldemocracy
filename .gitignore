@@ -47,6 +47,7 @@ next-env.d.ts
 !/data/incoming/README.md
 /data/raw/
 /data/releases/reconciliation-report.json
+/data/releases/country-packages-report.json
 
 # Transactional import staging and recovery copies
 /data/research.staging/

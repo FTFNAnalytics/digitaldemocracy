@@ -1,6 +1,6 @@
 # Election database — integration status and operations
 
-The existing Next.js framework now loads the Latin America research release at `/electiondatabase`. South America is the default region. This change builds on `cursor/electiondatabase-7dd2` (framework PR #2); it does not publish or merge the site.
+The existing Next.js framework now loads the Latin America research release at `/electiondatabase`, and also ingests standalone country packages under `data/countries/*`. South America remains the default region. Europe and Oceania become **partial** only for the packages actually present; Australia and Japan stay not-yet-supplied. See [country-package mapping](electiondatabase-country-packages.md).
 
 ## Verified research input
 
@@ -18,7 +18,7 @@ Input: `Latin_America_Races_and_Briefings.zip`, 127,077,676 bytes. The complete 
 | South American current tracked offices | 12,738 |
 | South American office-level completion requirements | 12,738 |
 
-The fixed inclusive research window is 2026-09-08 through 2028-03-08. This is an imported research snapshot, not a live results feed. Integration is complete for this supplied package; **research coverage remains incomplete**. Europe, Australia, New Zealand and Japan are marked not supplied. Absence from this release does not establish the status of research held elsewhere.
+The fixed inclusive research window is 2026-09-08 through 2028-03-08. This is an imported research snapshot, not a live results feed. Integration is complete for the Latin America package plus the standalone country folders currently in git; **research coverage remains incomplete**. Europe is partial (Albania, Alderney, Andorra, Armenia). Oceania is partial (New Zealand by-elections only). Australia and Japan are still not supplied. Absence from a package does not establish the status of research held elsewhere.
 
 The importer recomputes counts instead of trusting the malformed `release_summary.json.totals` and stale `Data/Build_Status.json.briefings` fields. The manifest records these discrepancies. Supporting JSON files are classified separately from country records.
 
@@ -61,6 +61,7 @@ Upload the original binary files at their archive-relative paths, and the comple
 
 ```bash
 npm run import:data -- --zip /absolute/path/Latin_America_Races_and_Briefings.zip
+npm run import:countries
 npm run validate:data
 npm run validate:evidence
 ```
@@ -78,7 +79,8 @@ The manifest records input checksums, normalized bundle hashes, briefing hashes,
 | `scripts/import/release.ts` | Archive import, sanitization, manifest and atomic publication |
 | `scripts/validate/dataset.ts` | Referential, numeric, count and eligibility checks |
 | `scripts/validate/release-evidence.ts` | Independent comparison to preserved original country documents |
-| `lib/observatory/research.ts` | Checked, server-side compressed data loader |
+| `lib/observatory/adapters/` | Standalone `data/countries/*` inventory, Europe/NZ/Armenia adapters, merge |
+| `lib/observatory/research.ts` | Checked, server-side compressed Latin America loader; observatory merge happens in `load.ts` |
 | `lib/observatory/load.ts` | Cached record indexes and filters |
 | `data/research/countries/*.json.gz` | Normalized country datasets |
 | `data/research/briefings/*.json.gz` | Sanitized original briefings, grouped by country |

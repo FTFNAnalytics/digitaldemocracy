@@ -29,6 +29,7 @@ import {
   sourcesByIds,
 } from "@/lib/observatory/load";
 import { toPercent } from "@/lib/observatory/metrics";
+import { hasOriginalBriefing } from "@/lib/observatory/briefings";
 import { obsRoutes } from "@/lib/observatory/routes";
 import type { OfficeRecord } from "@/schemas/v1/normalized";
 
@@ -78,14 +79,22 @@ export function OfficeBriefing({ office }: { office: OfficeRecord }) {
         </p>
       </PageHeader>
 
-      <p className="mb-6">
-        <Link
-          href={`${obsRoutes.office(office.id)}/original`}
-          className="obs-link"
-        >
-          Read the complete original research briefing
-        </Link>
-      </p>
+      {hasOriginalBriefing(office.countryId, office.id) ? (
+        <p className="mb-6">
+          <Link
+            href={`${obsRoutes.office(office.id)}/original`}
+            className="obs-link"
+          >
+            Read the complete original research briefing
+          </Link>
+        </p>
+      ) : (
+        <p className="mb-6 text-sm text-navy/65">
+          No sanitized original HTML briefing was supplied for this office.
+          Structured records, sources and caveats from the country package are
+          shown below.
+        </p>
+      )}
       {office.extensions?.raw?.note ? (
         <p className="mb-6 obs-card p-4 text-sm">
           {String(office.extensions.raw.note)}

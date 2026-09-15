@@ -1,4 +1,4 @@
-import { loadResearch } from "./research";
+import { loadObservatoryDataset } from "./research";
 import { syntheticFixtureDataset } from "@/data/normalized/synthetic-fixture-v0";
 import type {
   CountryRecord,
@@ -16,7 +16,7 @@ export function getDataset(): NormalizedDataset {
     process.env.NODE_ENV !== "production"
   )
     return syntheticFixtureDataset;
-  return (cached ??= loadResearch());
+  return (cached ??= loadObservatoryDataset());
 }
 let lookupCache: ReturnType<typeof makeLookups> | undefined;
 function grouped<T>(rows: T[], key: (r: T) => string) {

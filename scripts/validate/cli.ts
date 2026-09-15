@@ -7,6 +7,10 @@
  */
 import { validateDataset } from "./dataset";
 import { loadResearch } from "../../lib/observatory/research";
+import {
+  attachCountryPackages,
+  validateCountryPackages,
+} from "../../lib/observatory/adapters";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { missingZipMessage } from "../lib/release-paths";
@@ -141,9 +145,32 @@ function main() {
 
   const manifest = path.join(process.cwd(), "data/research/manifest.json");
   if (!existsSync(manifest)) fail(missingZipMessage(zipArg));
-  const result = validateDataset(loadResearch(process.cwd()));
-  if (result.errors.length) fail(result.errors.join("\n"));
-  console.log(JSON.stringify(result));
+
+  const latin = loadResearch(process.cwd());
+  const latinResult = validateDataset(latin);
+  if (latinResult.errors.length) fail(latinResult.errors.join("\n"));
+
+  const countries = validateCountryPackages(process.cwd());
+  if (countries.errors.length) {
+    fail(`Country package validation failed:\n- ${countries.errors.join("\n- ")}`);
+  }
+
+  const merged = attachCountryPackages(latin, process.cwd());
+  const mergedResult = validateDataset(merged);
+  if (mergedResult.errors.length) fail(mergedResult.errors.join("\n"));
+
+  console.log(
+    JSON.stringify({
+      latinAmerica: latinResult,
+      countryPackages: {
+        packages: countries.summaries,
+        skipped: countries.skipped,
+        checks: countries.summaries.length,
+      },
+      merged: mergedResult,
+      researchCoverageComplete: false,
+    }),
+  );
 }
 
 main();
