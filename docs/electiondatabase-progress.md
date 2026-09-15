@@ -22,6 +22,18 @@ The fixed inclusive research window is 2026-09-08 through 2028-03-08. This is an
 
 The importer recomputes counts instead of trusting the malformed `release_summary.json.totals` and stale `Data/Build_Status.json.briefings` fields. The manifest records these discrepancies. Supporting JSON files are classified separately from country records.
 
+Standalone country packages under `data/countries/*` are inventoried at load time and merged into the observatory dataset. They do **not** rewrite `data/research`. Europe is partial (Albania, Alderney, Andorra, Armenia). Oceania is partial (New Zealand by-elections only). Working country routes:
+
+| Route | Package content |
+| --- | --- |
+| `/electiondatabase/countries/albania` | 122 current offices, selected histories, sanitized briefings |
+| `/electiondatabase/countries/alderney` | Territory; 2 offices; 2026 States date is **conditional** |
+| `/electiondatabase/countries/andorra` | 7 communes; year-only histories stay year precision |
+| `/electiondatabase/countries/armenia` | 71 offices; 33 companion histories only (index not added on top) |
+| `/electiondatabase/countries/new-zealand` | 4 by-election offices; no HTML briefings; upcoming races have no results |
+
+Unknown slugs still 404. Regions / explorer / calendar show these records with **partial** coverage. Australia and Japan stay not-yet-supplied. South America remains the default landing region.
+
 ## What is available
 
 - Real office, country, historical-event, polling, coverage, source and release pages; stable original office IDs and selected-history keys.
@@ -96,4 +108,5 @@ The manifest records input checksums, normalized bundle hashes, briefing hashes,
 - Repeat import: all 141 output files were byte-identical.
 - Production route checks cover the homepage, Ecuador explorer pagination, an Ecuador office and original briefing, Chile country/polling pages, month calendar, completion queue pagination, sources, downloads, comparisons and an unknown-office 404.
 - Standalone-server checks also verify Chile polling from the shared register and an artifact download against its exact SHA-256.
-- All 21 tests, lint and the production build pass. CI runs the same checks plus both full data validators. Research gaps remain visible regardless of software checks passing.
+- Country-package route checks cover Albania, Alderney, Andorra, Armenia and New Zealand country pages (200), an unknown-country 404, Europe and Oceania explorer filters, calendar inclusion of dated/conditional package events, an Albania original briefing (scripts stripped), and a New Zealand office that has structured records but no HTML briefing.
+- Adapter tests plus import/SEO suites pass (`vitest run`). Lint and the production build pass. CI runs the same checks plus both full data validators. Research gaps remain visible regardless of software checks passing.

@@ -458,7 +458,10 @@ export function normalizeEuropeExtract(
 
   const briefingDir = path.join(inventory.dir, "briefings");
   const briefingCount = existsSync(briefingDir)
-    ? readdirSync(briefingDir).filter((n) => n.endsWith(".html")).length
+    ? readdirSync(briefingDir).filter((name) => {
+        if (!name.endsWith(".html")) return false;
+        return officeIds.has(name.replace(/\.html$/, ""));
+      }).length
     : 0;
   d.release.validatedCounts.briefings = briefingCount;
   d.sources = [...sourceMap.values()].map((s) => ({

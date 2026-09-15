@@ -33,7 +33,15 @@ export function loadPackageBriefings(
   } else if (pkg.kind === "europe-country-extract/1") {
     const dir = path.join(pkg.dir, "briefings");
     if (existsSync(dir)) {
-      const names = readdirSync(dir).filter((file) => file.endsWith(".html"));
+      const names = readdirSync(dir).filter((file) => {
+        if (!file.endsWith(".html")) return false;
+        const id = file.replace(/\.html$/, "");
+        // Country-folder navigation HTML is not an office briefing.
+        return (
+          id !== countryId &&
+          !/^(index|start_here|readme)$/i.test(id)
+        );
+      });
       const ids = names.map((name) => name.replace(/\.html$/, ""));
       const links = officeLinkMap([...new Set([...officeIds, ...ids])]);
       for (const name of names) {

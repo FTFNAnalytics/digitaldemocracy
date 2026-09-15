@@ -52,7 +52,7 @@ Alderney is a **territory** (`GG-ALD` is not treated as a separate ISO sovereign
 
 ### Armenia packed payload
 
-Concatenate `manifest.chunks` in listed order, verify `payload_sha256`, gunzip, then read the ustar archive. Do not add history-index rows on top of companion histories: they overlap. Offices with zero recorded cycles still appear as current tracked offices when the register lists them. Competition scores stay withheld (`three_entries` is 0).
+Concatenate `manifest.chunks` in listed order, verify `payload_sha256`, gunzip, then read the ustar archive. Do not add history-index rows on top of companion histories: they overlap. The adapter emits companion histories first and uses the regional history index only for offices that have no companion row. Offices with zero recorded cycles still appear as current tracked offices when the register lists them. Competition scores stay withheld (`three_entries` is 0).
 
 ### New Zealand batch
 
@@ -85,5 +85,7 @@ After merge:
 - Briefing index HTML (`albania.html`, …) is navigation for the downloaded folder, not an office record.
 - Later European uploads can drop in as new `data/countries/<slug>` folders; re-run `npm run import:countries` and `npm run validate:data`.
 - NZ still needs a national screen, replacement of the 2022 mirror, and STV stage reports before latest-three or competitiveness claims.
+- Observatory home still highlights South America only; Europe and Oceania are reached from Regions, explorer (`?region=europe` / `?region=oceania`), and calendar.
+- Package `site_ingestion_status` / `website_ingestion` fields stay `pending_adapter` so frozen extract bytes do not change. The website adapter consumes them without rewriting those files.
 
 Research coverage remains incomplete.

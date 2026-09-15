@@ -145,6 +145,7 @@ describe("Europe workbook adapter", () => {
     expect(dataset.offices).toHaveLength(122);
     expect(dataset.events.filter((event) => event.selectedHistoryRole === "selected")).toHaveLength(366);
     expect(dataset.countries[0]?.names.official).toBe("Albania");
+    expect(dataset.offices.every((office) => office.id !== "albania")).toBe(true);
     const belsh = dataset.offices.find((office) => office.id === "AL-13-M");
     expect(belsh?.names.official).toContain("Belsh");
     const ci = dataset.metrics.find(
@@ -165,6 +166,9 @@ describe("Armenia packed adapter", () => {
     const dataset = normalizeCountryPackage(inventory);
     expect(validateDataset(dataset).errors).toEqual([]);
     expect(dataset.offices).toHaveLength(71);
+    expect(
+      dataset.events.filter((event) => event.selectedHistoryRole === "selected"),
+    ).toHaveLength(33);
     expect(dataset.countries[0]?.regionId).toBe("europe");
     expect(
       dataset.metrics
@@ -209,16 +213,25 @@ describe("region merge", () => {
         notes: "Not in the Latin America zip.",
       },
     ];
-    const extras = inventoryCountryPackages(root)
-      .packages.filter((row) => row.slug === "andorra" || row.slug === "new-zealand")
-      .map((row) => normalizeCountryPackage(row));
+    const extras = inventoryCountryPackages(root).packages.map((row) =>
+      normalizeCountryPackage(row),
+    );
     const merged = mergeCountryPackages(latin, extras);
     expect(merged.regions.find((row) => row.id === "europe")?.status).toBe("partial");
     expect(merged.regions.find((row) => row.id === "oceania")?.status).toBe("partial");
     expect(merged.regions.find((row) => row.id === "australia")?.status).toBe("not_supplied");
     expect(merged.regions.find((row) => row.id === "south-america")?.status).toBe("partial");
     expect(merged.release.researchCoverageComplete).toBe(false);
-    expect(merged.countries.map((row) => row.id).sort()).toEqual(["andorra", "new-zealand"]);
+    expect(merged.countries.map((row) => row.id).sort()).toEqual([
+      "albania",
+      "alderney",
+      "andorra",
+      "armenia",
+      "new-zealand",
+    ]);
+    expect(merged.countries.find((row) => row.id === "alderney")?.kind).toBe(
+      "territory",
+    );
   });
 });
 

@@ -187,10 +187,14 @@ export function normalizeArmeniaPackage(
         geometryAvailable: false,
       });
     }
-    const selected = [
-      ...companionHistories.filter((h) => cellText(h["Jurisdiction ID"]) === oid),
-      ...indexHistories.filter((h) => cellText(h["Office ID"]) === oid),
-    ];
+    const companionForOffice = companionHistories.filter(
+      (h) => cellText(h["Jurisdiction ID"]) === oid,
+    );
+    // History-index rows overlap companion histories. Do not add them together.
+    const selected =
+      companionForOffice.length > 0
+        ? companionForOffice
+        : indexHistories.filter((h) => cellText(h["Office ID"]) === oid);
     const selectedKeys = [
       ...new Set(
         selected.map((h) =>
@@ -344,6 +348,11 @@ export function normalizeArmeniaPackage(
     });
   };
 
+  const officesWithCompanion = new Set(
+    companionHistories
+      .map((row) => cellText(row["Jurisdiction ID"]))
+      .filter(Boolean),
+  );
   for (const row of companionHistories) {
     emitHistory(
       cellText(row["Jurisdiction ID"]),
@@ -356,8 +365,10 @@ export function normalizeArmeniaPackage(
     );
   }
   for (const row of indexHistories) {
+    const oid = cellText(row["Office ID"]);
+    if (officesWithCompanion.has(oid)) continue;
     emitHistory(
-      cellText(row["Office ID"]),
+      oid,
       row["Year"],
       row["Ballot date if recorded"],
       row,
