@@ -9,7 +9,7 @@ import { PRODUCTION_ATLAS_SQLITE_PATH } from "../../lib/atlas/paths";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
 
-function runAtlasScript(script: string, env: NodeJS.ProcessEnv) {
+function runAtlasScript(script: string, env: Record<string, string | undefined>) {
   const experimental = script.includes("migrate.ts");
   const args = [
     ...(experimental ? ["--experimental-sqlite", "--no-warnings"] : []),

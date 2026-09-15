@@ -26,7 +26,7 @@ function trimEnv(value: string | undefined): string | undefined {
  * (or the app-local fallback documented in docs/atlas-plan.md).
  */
 export function resolveAtlasSqlitePath(
-  env: NodeJS.ProcessEnv = process.env,
+  env: Record<string, string | undefined> = process.env,
   cwd = process.cwd(),
 ): string {
   const override = trimEnv(env[ATLAS_SQLITE_ENV]);
