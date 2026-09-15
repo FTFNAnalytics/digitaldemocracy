@@ -12,11 +12,10 @@ import {
 } from "@/lib/observatory/load";
 import { getOffice } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
+import { pageMeta, staticPageSeo } from "@/lib/seo";
 import { RELEASE_PACKAGE_FILENAME } from "@/schemas/v1/input-manifest";
 
-export const metadata: Metadata = {
-  title: "Home",
-};
+export const metadata: Metadata = pageMeta(staticPageSeo.observatory);
 
 export default function ObservatoryHomePage() {
   const release = getDataset().release;

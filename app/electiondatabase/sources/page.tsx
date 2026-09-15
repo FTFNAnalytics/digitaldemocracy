@@ -6,8 +6,9 @@ import { UrlFilterForm } from "@/components/observatory/filters";
 import { DataTable } from "@/components/observatory/table";
 import { getDataset } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
+import { pageMeta, staticPageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Sources" };
+export const metadata: Metadata = pageMeta(staticPageSeo.sources);
 
 type Props = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;

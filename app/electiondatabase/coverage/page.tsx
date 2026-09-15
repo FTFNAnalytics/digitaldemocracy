@@ -8,8 +8,9 @@ import { DataTable } from "@/components/observatory/table";
 import { parseCoverageFilters } from "@/lib/observatory/filters";
 import { getCountries, getDataset, getOffice } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
+import { pageMeta, staticPageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Coverage" };
+export const metadata: Metadata = pageMeta(staticPageSeo.coverage);
 
 type Props = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;

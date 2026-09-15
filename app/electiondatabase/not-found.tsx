@@ -1,5 +1,9 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { obsRoutes } from "@/lib/observatory/routes";
+import { missingRecordMeta } from "@/lib/seo";
+
+export const metadata: Metadata = missingRecordMeta;
 
 export default function ObservatoryNotFound() {
   return (

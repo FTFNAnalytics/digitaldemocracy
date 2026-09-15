@@ -15,8 +15,9 @@ import {
   metricsForOffice,
 } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
+import { pageMeta, staticPageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Election explorer" };
+export const metadata: Metadata = pageMeta(staticPageSeo.explorer);
 
 type Props = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;

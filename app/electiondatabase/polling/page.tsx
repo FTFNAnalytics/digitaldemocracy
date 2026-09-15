@@ -8,8 +8,9 @@ import { parsePollingFilters } from "@/lib/observatory/filters";
 import { formatNumeric, formatShare } from "@/lib/observatory/format";
 import { getCountries, getDataset, getOffice, sourcesByIds } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
+import { pageMeta, staticPageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Polling" };
+export const metadata: Metadata = pageMeta(staticPageSeo.polling);
 
 type Props = { searchParams: Promise<Record<string, string | string[] | undefined>> };
 

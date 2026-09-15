@@ -14,8 +14,9 @@ import {
 } from "@/lib/observatory/load";
 import { formatNumeric } from "@/lib/observatory/format";
 import { obsRoutes } from "@/lib/observatory/routes";
+import { pageMeta, staticPageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Compare offices" };
+export const metadata: Metadata = pageMeta(staticPageSeo.compare);
 
 type Props = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;

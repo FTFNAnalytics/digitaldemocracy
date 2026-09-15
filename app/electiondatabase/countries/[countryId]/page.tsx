@@ -18,6 +18,7 @@ import {
   nationalPolls,
 } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
+import { countryPageMeta } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ countryId: string }>;
@@ -27,7 +28,10 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { countryId } = await params;
   const country = getCountry(countryId);
-  return { title: country?.names.official ?? "Country" };
+  if (!country) {
+    return { title: "Country not found", robots: { index: false, follow: true } };
+  }
+  return countryPageMeta(country);
 }
 
 export default async function CountryPage({ params, searchParams }: Props) {

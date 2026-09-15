@@ -9,6 +9,7 @@
     "preview": "npm start",
     "lint": "eslint",
     "test": "vitest run",
+    "seo:assets": "node scripts/generate-seo-assets.mjs",
     "import:data": "node --import tsx scripts/import/cli.ts",
     "validate:data": "node --import tsx scripts/validate/cli.ts",
     "validate:evidence": "node --import tsx scripts/validate/release-evidence.ts"

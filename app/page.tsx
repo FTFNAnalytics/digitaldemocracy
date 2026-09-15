@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { BackToTop, Header } from "@/components/interactive";
 import {
   About,
@@ -9,6 +10,9 @@ import {
   PrototypeBanner,
   Research,
 } from "@/components/sections";
+import { pageMeta, staticPageSeo } from "@/lib/seo";
+
+export const metadata: Metadata = pageMeta(staticPageSeo.home);
 
 export default function Home() {
   return (

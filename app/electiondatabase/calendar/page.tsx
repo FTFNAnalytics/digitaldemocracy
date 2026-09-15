@@ -12,8 +12,9 @@ import {
 import { parseCalendarFilters } from "@/lib/observatory/filters";
 import { upcomingEvents, getOffice } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
+import { pageMeta, staticPageSeo } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Calendar" };
+export const metadata: Metadata = pageMeta(staticPageSeo.calendar);
 
 type Props = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
