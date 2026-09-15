@@ -27,20 +27,31 @@ export default function ObservatoryHomePage() {
       />
 
       <div className="grid gap-6 lg:grid-cols-[1.4fr_0.8fr]">
-        <section className="circuit-panel rounded-3xl p-6 sm:p-8">
-          <p className="obs-kicker">Priority region</p>
-          <h2 className="obs-heading text-2xl sm:text-3xl">{southAmerica?.name}</h2>
-          <p className="mt-2 text-sm leading-relaxed text-muted">{southAmerica?.notes}</p>
-          <div className="mt-3">
-            <CoveragePill status={southAmerica?.status ?? "not_supplied"} />
-          </div>
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Link href={obsRoutes.regions} className="obs-btn">
-              Enter South America
-            </Link>
-            <Link href={obsRoutes.explorer} className="obs-btn-secondary">
-              Open the explorer
-            </Link>
+        <section className="relative overflow-hidden rounded-3xl bg-navy p-6 text-white sm:p-8">
+          <div
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgb(162_255_0/0.16)_1px,transparent_0)] bg-[size:22px_22px]"
+            aria-hidden
+          />
+          <div className="relative">
+            <p className="mb-2 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-accent">
+              Priority region
+            </p>
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">{southAmerica?.name}</h2>
+            <p className="mt-2 text-sm leading-relaxed text-white/70">{southAmerica?.notes}</p>
+            <div className="mt-3">
+              <CoveragePill status={southAmerica?.status ?? "not_supplied"} />
+            </div>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <Link href={obsRoutes.regions} className="obs-btn">
+                Enter South America
+              </Link>
+              <Link
+                href={obsRoutes.explorer}
+                className="inline-flex items-center rounded-full border border-white/25 px-5 py-2.5 text-sm font-bold text-white hover:border-accent hover:text-accent"
+              >
+                Open the explorer
+              </Link>
+            </div>
           </div>
         </section>
 
