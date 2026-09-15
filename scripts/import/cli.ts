@@ -11,6 +11,7 @@
  *
  * --countries inventories data/countries/* without requiring the Latin
  * America zip. Combine with a zip path to import both.
+ */
 import { importRelease } from "./release";
 import { importCountryPackages } from "./countries";
 import { mkdirSync, writeFileSync } from "node:fs";
