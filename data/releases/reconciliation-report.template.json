@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": null,
+  "releaseId": null,
+  "status": "blocked",
+  "blocker": {
+    "missing": ["Latin_America_Races_and_Briefings.zip"],
+    "message": "Template only. A real report is written by npm run import:data."
+  },
+  "inventory": [],
+  "legacyDefects": [
+    {
+      "file": "release_summary.json",
+      "field": "totals",
+      "issue": "Malformed totals field containing a territory record.",
+      "handling": "Do not use to populate dashboard counters. Recompute from normalized records."
+    },
+    {
+      "file": "Data/Build_Status.json",
+      "field": "briefing count (top-level)",
+      "issue": "Stale top-level briefing count of 18,528 reported in the handoff notes.",
+      "handling": "Reconcile against actual office records and briefing files after import."
+    }
+  ],
+  "totals": {
+    "source": "unavailable",
+    "currentOffices": null,
+    "historicalOffices": null,
+    "histories": null,
+    "resultRows": null,
+    "briefings": null,
+    "notes": "Do not display handoff headline counts as live totals."
+  },
+  "discrepancies": [],
+  "unimportedFiles": [
+    {
+      "path": "Latin_America_Races_and_Briefings.zip",
+      "reason": "Required input is missing."
+    }
+  ],
+  "notes": [
+    "Replace this template by running npm run import:data once the zip is available."
+  ]
+}
