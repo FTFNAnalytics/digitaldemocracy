@@ -8,8 +8,12 @@
  *
  * --fixtures writes a reconciliation report describing the synthetic
  * smoke-test dataset. It does not claim research coverage is complete.
+ *
+ * --countries inventories data/countries/* without requiring the Latin
+ * America zip. Combine with a zip path to import both.
  */
 import { importRelease } from "./release";
+import { importCountryPackages } from "./countries";
 import { mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { INPUT_MANIFEST, RELEASE_PACKAGE_FILENAME } from "../../schemas/v1/input-manifest";
@@ -114,6 +118,7 @@ function blockedReport(message: string): ReconciliationReport {
 
 function main() {
   const fixtures = hasFlag("--fixtures");
+  const countries = hasFlag("--countries");
   const zipArg = argValue("--zip");
   const outDir = argValue("--out") ?? path.join(process.cwd(), "data/releases");
 
@@ -125,6 +130,14 @@ function main() {
     process.exit(0);
   }
 
+  if (countries && !zipArg) {
+    const zip = resolveReleaseZip();
+    if (!zip) {
+      importCountryPackages(process.cwd(), outDir);
+      process.exit(0);
+    }
+  }
+
   const zip = resolveReleaseZip(zipArg);
   if (!zip) {
     const message = missingZipMessage(zipArg);
@@ -134,6 +147,7 @@ function main() {
   }
 
   importRelease(zip);
+  if (countries) importCountryPackages(process.cwd(), outDir);
 }
 
 main();

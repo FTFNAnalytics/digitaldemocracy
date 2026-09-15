@@ -3,7 +3,9 @@ import path from "node:path";
 import { gunzipSync } from "node:zlib";
 import { createHash } from "node:crypto";
 import type { NormalizedDataset } from "../../schemas/v1/normalized";
+import { attachCountryPackages } from "./adapters";
 
+/** Latin America release only. Country packages are attached in loadObservatoryDataset. */
 export function loadResearch(root = process.cwd()): NormalizedDataset {
   const dir = path.join(root, "data/research");
   const manifest = JSON.parse(
@@ -26,4 +28,9 @@ export function loadResearch(root = process.cwd()): NormalizedDataset {
     }
   }
   return data;
+}
+
+/** Latin America release plus standalone `data/countries/*` packages. */
+export function loadObservatoryDataset(root = process.cwd()): NormalizedDataset {
+  return attachCountryPackages(loadResearch(root), root);
 }

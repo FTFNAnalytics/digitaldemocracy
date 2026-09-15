@@ -10,8 +10,8 @@ import {
 import path from "node:path";
 import { gzipSync } from "node:zlib";
 import { unzipSync } from "fflate";
-import sanitizeHtml from "sanitize-html";
 import { classifyRelativePath } from "./classify";
+import { cleanBriefing } from "./briefing-html";
 import {
   normalizeCountry,
   emptyDataset,
@@ -64,48 +64,8 @@ export function csvRows(input: string): Record<string, string>[] {
     .filter((r) => r.some(Boolean))
     .map((r) => Object.fromEntries(header.map((h, i) => [h, r[i] || ""])));
 }
-export function cleanBriefing(
-  html: string,
-  links: Map<string, string>,
-): string {
-  return sanitizeHtml(html, {
-    allowedTags: sanitizeHtml.defaults.allowedTags.concat([
-      "h1",
-      "h2",
-      "h3",
-      "h4",
-      "details",
-      "summary",
-      "section",
-      "article",
-    ]),
-    allowedAttributes: {
-      a: ["href", "rel"],
-      td: ["colspan", "rowspan"],
-      th: ["colspan", "rowspan"],
-      "*": ["id"],
-    },
-    allowedSchemes: ["http", "https"],
-    transformTags: {
-      a: (_tag, attrs) => {
-        let href = attrs.href || "";
-        const tail = href.split("/").pop() || "";
-        if (links.has(tail))
-          href = `/electiondatabase/offices/${encodeURIComponent(links.get(tail)!)}`;
-        else if (
-          href === "Start_Here.html" ||
-          href.endsWith("/Start_Here.html")
-        )
-          href = "/electiondatabase";
-        else if (href.endsWith("Methodology.html"))
-          href = "/electiondatabase/methodology";
-        else if (!/^https?:\/\//i.test(href) && !href.startsWith("#"))
-          href = "";
-        return { tagName: "a", attribs: { href, rel: "noreferrer noopener" } };
-      },
-    },
-  });
-}
+export { cleanBriefing } from "./briefing-html";
+
 export function importRelease(zipPath: string, root = process.cwd()) {
   const start = Date.now();
   const bytes = readFileSync(zipPath);

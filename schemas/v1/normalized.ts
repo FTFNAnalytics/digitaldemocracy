@@ -12,7 +12,10 @@ export type CoverageStatus =
   | "not_supplied"
   | "fixture_only";
 
-export type ProvenanceKind = "latin_america_release" | "synthetic_fixture";
+export type ProvenanceKind =
+  | "latin_america_release"
+  | "synthetic_fixture"
+  | "country_package";
 
 export type DateCertainty =
   | "called"

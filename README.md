@@ -15,7 +15,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-The **Subnational Election Observatory** lives at [`/electiondatabase`](/electiondatabase). It is an additional product area — the marketing homepage is unchanged. Research pages load the versioned Latin America release: 18,229 current offices, 414 historical offices, 40,509 histories, and 18,643 full briefings. Research coverage remains partial. See [integration status and operations](docs/electiondatabase-progress.md). The original implementation brief is preserved in [`docs/implementation-brief.md`](docs/implementation-brief.md).
+The **Subnational Election Observatory** lives at [`/electiondatabase`](/electiondatabase). It is an additional product area — the marketing homepage is unchanged. Research pages load the versioned Latin America release plus standalone country packages under `data/countries/*` (Europe and New Zealand as supplied). Research coverage remains partial. See [integration status](docs/electiondatabase-progress.md) and [country-package mapping](docs/electiondatabase-country-packages.md). The original implementation brief is preserved in [`docs/implementation-brief.md`](docs/implementation-brief.md).
 
 ## Scripts
 
@@ -27,7 +27,9 @@ The **Subnational Election Observatory** lives at [`/electiondatabase`](/electio
 | `npm run lint` | ESLint |
 | `npm test` | Adapter and semantic tests; fixtures are test-only |
 | `npm run import:data` | Import the Latin America zip (fails clearly if missing) |
-| `npm run validate:data` | Validate normalized records and checksums (no original ZIP required) |
+| `npm run import:countries` | Inventory and validate `data/countries/*` standalone packages |
+| `npm run import:data -- --countries` | Same country-package import when the Latin America zip is absent |
+| `npm run validate:data` | Validate Latin America records, country packages, and the merged dataset |
 | `npm run validate:evidence` | Compare every historical row and office selection against original source objects |
 | `npm run import:data -- --fixtures` | Write a fixture reconciliation report only |
 | `npm run validate:data -- --fixtures` | Validate the synthetic smoke-test dataset |
@@ -61,7 +63,14 @@ npm run import:data
 npm run validate:data
 ```
 
-Without the zip those commands exit non-zero and print the missing dependency. That is intentional.
+Without the zip, `npm run import:data` still exits non-zero. Country folders use a separate path:
+
+```bash
+npm run import:countries
+npm run validate:data
+```
+
+That is intentional: the Latin America importer will not invent elections, and the country adapter will not pretend Europe has Latin America completeness.
 
 ## License
 

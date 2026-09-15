@@ -24,3 +24,7 @@ Mapping is from the build prompt’s documented export, not from an inspected zi
 | Unknown files | `unimportedFiles[]` | Must be listed with a reason. |
 
 Unknown upstream fields: `extensions.raw`.
+
+## Standalone country packages (`data/countries/*`)
+
+See [electiondatabase-country-packages.md](electiondatabase-country-packages.md) for the Europe workbook, Armenia packed payload, and New Zealand batch mappings. Those adapters are additive: they do not change Latin America counts in `data/research/manifest.json`. Merged observatory totals in the running site include both sources and stay labelled incomplete.
