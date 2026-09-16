@@ -124,6 +124,15 @@ export const staticPageSeo = {
       "Latin America elections",
     ],
   },
+  atlas: {
+    title: `Election Atlas · ${SITE_NAME}`,
+    description:
+      "Europe-first Election Atlas MVP: countries and offices loaded from the Atlas SQLite master, with tier and election listings. Latin America is not the launch vertical.",
+    path: "/atlas",
+    image: "atlas",
+    absoluteTitle: true,
+    keywords: ["election atlas", "subnational elections", "Europe elections"],
+  },
   observatoryAbout: {
     title: `About the observatory · ${OBSERVATORY_NAME}`,
     description:
@@ -217,6 +226,7 @@ export const staticPageSeo = {
 export const STATIC_SITEMAP_PATHS = [
   staticPageSeo.home.path,
   staticPageSeo.observatory.path,
+  staticPageSeo.atlas.path,
   staticPageSeo.observatoryAbout.path,
   staticPageSeo.regions.path,
   staticPageSeo.explorer.path,

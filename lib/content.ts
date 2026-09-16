@@ -25,6 +25,7 @@ export const navLinks = [
 
 export const productLinks = [
   { href: "/electiondatabase", label: "Election database" },
+  { href: "/atlas", label: "Election Atlas" },
 ] as const;
 
 export const about = {

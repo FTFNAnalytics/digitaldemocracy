@@ -43,6 +43,7 @@ describe("seo helpers", () => {
   it("covers observatory indexes without exploding into office URLs", () => {
     expect(STATIC_SITEMAP_PATHS).toContain("/");
     expect(STATIC_SITEMAP_PATHS).toContain("/electiondatabase");
+    expect(STATIC_SITEMAP_PATHS).toContain("/atlas");
     expect(STATIC_SITEMAP_PATHS).toContain("/electiondatabase/explorer");
     expect(STATIC_SITEMAP_PATHS).toContain("/electiondatabase/calendar");
     expect(STATIC_SITEMAP_PATHS).toContain("/electiondatabase/methodology");

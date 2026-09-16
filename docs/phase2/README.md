@@ -26,6 +26,6 @@ Prompt D continuity field maps live here. Prompt E/G LatAm/NZ tier files are che
 | [Continuity_NZ_Field_Map.md](Continuity_NZ_Field_Map.md) | New Zealand → Atlas column map |
 | [Continuity_Identity_Rules.md](Continuity_Identity_Rules.md) | Namespaces, fingerprint, multi-lineage protocol |
 | [Continuity_Acceptance_Examples.md](Continuity_Acceptance_Examples.md) | Twelve worked examples |
-| [Continuity_Import.md](Continuity_Import.md) | How to run `import:atlas` for approved packs; what is skipped |
+| [Continuity_Import.md](Continuity_Import.md) | How to run `import:atlas` for approved packs; `/atlas` SQLite UI; what is skipped |
 | [tier-drafts/](tier-drafts/Phase2_Tier_Policy_Application_Report.md) | Prompt E/G packs (Batch A+B approved; 10 still draft; Prompt G: 5,426 clearances / 1,425 residuals; Mexico inventory non-executable) |
 | [decisions/](decisions/README.md) | Prompt F pack: Mexico withhold-all-67 **accepted** 2026-09-16; [Batch A](decisions/Batch_A_Tier_Pack_Approvals.md) and [Batch B](decisions/Batch_B_Tier_Pack_Approvals.md) packs approved; residual-heavy packs still draft |

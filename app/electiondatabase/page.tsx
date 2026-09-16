@@ -30,7 +30,15 @@ export default function ObservatoryHomePage() {
         eyebrow="The Center for Digital Democracy"
         title="Subnational Election Observatory"
         description="A public research publication for regional, municipal, and council elections: searchable, comparable, and downloadable. Start with South America and explore the imported Latin America release."
-      />
+      >
+        <p className="mt-4 text-sm text-navy/70">
+          The SQLite-backed Election Atlas MVP is at{" "}
+          <Link href="/atlas" className="obs-link">
+            /atlas
+          </Link>
+          . This observatory catalogue stays at /electiondatabase.
+        </p>
+      </PageHeader>
 
       <div className="grid gap-6 lg:grid-cols-[1.4fr_0.8fr]">
         <section className="relative overflow-hidden rounded-3xl bg-navy p-6 text-white sm:p-8">

@@ -59,3 +59,9 @@ Prompt H residual clearances, Mexico’s 95 sibling shares, and live cutover rem
 The existing Albania CLI test uses `ATLAS_IMPORT_SCOPE=albania` so it stays a fast Albania-only proof.
 
 Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of a few minutes (LatAm projection + ~146k result rows). Use `albania` or `nz` when you only need those lineages.
+
+## `/atlas` UI
+
+The public MVP at `/atlas` reads the same SQLite file (`ATLAS_SQLITE_PATH`, else `data/master/atlas.sqlite` locally, `/var/lib/cdd/atlas.sqlite` in production). Missing or empty databases render an empty state. `/electiondatabase` is unchanged; it includes a soft link to `/atlas`.
+
+`npm run dev` / `build` / `start` pass `--experimental-sqlite` so Next can read `node:sqlite`.

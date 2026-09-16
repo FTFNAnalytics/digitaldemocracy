@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && node scripts/prepare-standalone.mjs",
-    "start": "node .next/standalone/server.js",
+    "dev": "node --experimental-sqlite --no-warnings ./node_modules/next/dist/bin/next dev",
+    "build": "node --experimental-sqlite --no-warnings ./node_modules/next/dist/bin/next build && node scripts/prepare-standalone.mjs",
+    "start": "node --experimental-sqlite --no-warnings .next/standalone/server.js",
     "preview": "npm start",
     "lint": "eslint",
     "test": "node --experimental-sqlite --no-warnings ./node_modules/vitest/vitest.mjs run",
