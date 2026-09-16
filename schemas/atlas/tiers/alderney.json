@@ -1,0 +1,72 @@
+{
+  "status": "draft_for_human_review",
+  "country_slug": "alderney",
+  "prompt": "phase0_prompt_a",
+  "source_register": {
+    "path": "data/countries/alderney/tables/office-register.json",
+    "sha256": "46dcd2afececa8e2ab46383d306003b941e6ca0ef9dac8e77dfc4435444a72f9",
+    "bytes": 1378
+  },
+  "classification_vocabulary": [
+    "national",
+    "regional",
+    "municipal",
+    "council",
+    "other"
+  ],
+  "schema_compatibility": {
+    "national": "national_context",
+    "regional": "regional",
+    "municipal": "municipal",
+    "council": "council",
+    "other": "other"
+  },
+  "rules": [
+    {
+      "id": "alderney-territorial-other",
+      "statement": "GG-ALD-STATES and GG-ALD-PLEB → other, with human_review_required. Territorial legislature / representation; do not multiply seat counts into office IDs."
+    }
+  ],
+  "notes": [
+    "Alderney is a territory (GG-ALD), not a sovereign. Proposed `other` still needs human OK.",
+    "Calendar dates 2026-11-21 / 2026-12-12 are conditional and are not classifiers.",
+    "Regional numerator for this package is 0."
+  ],
+  "counts_by_proposed_tier": {
+    "national": 0,
+    "regional": 0,
+    "municipal": 0,
+    "council": 0,
+    "other": 2
+  },
+  "classifications": [
+    {
+      "office_id": "GG-ALD-PLEB",
+      "tier": "other",
+      "schema_v1_tier": "other",
+      "jurisdiction": "Alderney",
+      "office": "Plebiscite nominating two Guernsey States representatives",
+      "rationale": "Plebiscite nominating two Guernsey States representatives is territorial representation. Accepted Phase 0 Prompt A maps GG-ALD-PLEB to other. The two representatives are a description of this single office_id; do not mint two IDs from the seat count. Proposed `other` is not final until human sign-off.",
+      "confidence": "pending_human_review",
+      "human_review_required": true,
+      "human_review": {
+        "queue": "tier_mapping",
+        "notes": "Territorial legislature / representation. Do not multiply seat counts into office IDs. Human OK required before treating `other` as final."
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "tier": "other",
+      "schema_v1_tier": "other",
+      "jurisdiction": "Alderney",
+      "office": "States members (five of ten ordinary seats)",
+      "rationale": "States of Alderney is a territorial legislature, not a municipal council and not a regional government of a sovereign. Accepted Phase 0 Prompt A maps GG-ALD-STATES to other. The register describes 'five of ten ordinary seats' on this single office_id; do not multiply that seat count into additional office IDs. Proposed `other` is not final until human sign-off.",
+      "confidence": "pending_human_review",
+      "human_review_required": true,
+      "human_review": {
+        "queue": "tier_mapping",
+        "notes": "Territorial legislature / representation. Do not multiply seat counts into office IDs. Human OK required before treating `other` as final."
+      }
+    }
+  ]
+}
