@@ -43,8 +43,9 @@ files is not Albania storage proof and is not a populated regional calendar.
 
 22 additional files (21 Latin America office-bearing countries + New Zealand)
 are checked in as **`draft_for_human_review`**. Checking them in does **not**
-approve them. Continuity ingest/publish remains **blocked** until these drafts
-are approved and Mexico share-domain overrides are accepted.
+approve them. Prompt G applied category-policy clearances only; packs remain
+draft. Continuity ingest/publish remains **blocked** until these drafts
+are approved. Mexico share-domain withhold-all-67 is already accepted separately.
 
 Do not treat proposed-tier counts as approved coverage. Office IDs and proposed
 labels come from the Prompt E pack; they are not invented here. Albania,

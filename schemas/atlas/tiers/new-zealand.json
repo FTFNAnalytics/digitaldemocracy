@@ -35,9 +35,9 @@
     {
       "office_id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2026",
       "tier": "other",
-      "rationale": "Office NZ-CLUTHA-LAWRENCE-TUAPEKA-2026: supplied office_type='community_board_member', authority='Clutha District Council', district='Lawrence-Tuapeka Community Board'. This is a community-board member within the named district council area. Proposed other conservatively for the distinct community institution; review whether Atlas municipal grouping should include community boards.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office NZ-CLUTHA-LAWRENCE-TUAPEKA-2026: supplied office_type='community_board_member', authority='Clutha District Council', district='Lawrence-Tuapeka Community Board'. The distinct subordinate community, parish, section, district or populated-centre institution remains other under the Atlas category policy. Preserve its supplied office type and jurisdiction; no parent geography, municipal peer status or regional authority is inferred. Applied category policy submunicipal_scope from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/countries/new-zealand/dataset.json",

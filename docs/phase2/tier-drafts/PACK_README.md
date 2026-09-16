@@ -2,7 +2,9 @@
 
 **Drafts only for continuity tiers.** Continuity publish remains blocked until tier packs are approved; importer and cutover CI also remain required. Mexico share withhold-all-67 was accepted by Justin on 2026-09-16.
 
-Prompt F decision drafts are checked in under `docs/phase2/decisions/`. Justin accepted Mexico withhold-all-67 on 2026-09-16; the discoverable override is `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json`. `mexico-share-domain-PROPOSED.json` and `mexico-share-domain-DRAFT.json` remain non-executable history. 95 sibling rows still need event-level reconciliation. Tier category policies could clear 5,426 of 6,851 flags if accepted; 1,425 residuals remain. No tier values or pack statuses are flipped. Do not treat the patch appendix as applied.
+Prompt F decision drafts are checked in under `docs/phase2/decisions/`. Justin accepted Mexico withhold-all-67 on 2026-09-16; the discoverable override is `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json`. `mexico-share-domain-PROPOSED.json` and `mexico-share-domain-DRAFT.json` remain non-executable history. 95 sibling rows still need event-level reconciliation.
+
+Prompt G applied category-policy clearances only (5,426 flags) to the 22 LatAm/NZ files; packs remain **`draft_for_human_review`**. 1,425 residual rows are unchanged; 1,116 `tier_uncertain` flags remain. Batch A hashes are unchanged. No pack approvals. Mexico override untouched. See [Phase2_Tier_Policy_Application_Report.md](Phase2_Tier_Policy_Application_Report.md).
 
 Prepared against merged main `9065dcdfc0cbc78171dad35b60742ae232b6dd00`. This note is the Prompt E review-pack guidance, placed here rather than at the repository root. Checking in drafts does not approve them or authorize ingestion.
 
@@ -51,6 +53,7 @@ Reports and support:
 - `docs/phase2/tier-drafts/Mexico_Share_Domain_Override_Draft.md`
 - `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain-DRAFT.json` (non-executable inventory, never an accepted override)
 - `docs/phase2/tier-drafts/validation.json`
+- Prompt G policy application: `Phase2_Tier_Policy_Application_Report.md`, `policy-application-inventory.json`, `policy-application-validation.json` (drafts only; 5,426 clearances / 1,425 residuals)
 - Prompt F pack: `docs/phase2/decisions/` including historical `mexico-share-domain-PROPOSED.json` (`production_accepted=false`)
 - Accepted Mexico override: `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (Justin 2026-09-16 withhold-all-67; `production_accepted=true`)
 

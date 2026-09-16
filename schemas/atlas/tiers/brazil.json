@@ -313,9 +313,9 @@
     {
       "office_id": "BR-DF-G",
       "tier": "regional",
-      "rationale": "Office BR-DF-G: supplied officeType='Governor'; office name='Federal District — Governor'; linked geography='Federal District / DF'; original locality='Federal District', region='DF'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BR-DF-G: supplied officeType='Governor'; office name='Federal District — Governor'; linked geography='Federal District / DF'; original locality='Federal District', region='DF'. The named federal-district executive and chamber remain regional institutions; ordinary district wards are outside this rule. Applied category policy federal_district_scope from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/brazil.json.gz",
@@ -337,9 +337,9 @@
     {
       "office_id": "BR-DF-A",
       "tier": "regional",
-      "rationale": "Office BR-DF-A: supplied officeType='District Legislative Chamber'; office name='Federal District — District Legislative Chamber'; linked geography='Federal District / DF'; original locality='Federal District', region='DF'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BR-DF-A: supplied officeType='District Legislative Chamber'; office name='Federal District — District Legislative Chamber'; linked geography='Federal District / DF'; original locality='Federal District', region='DF'. The named federal-district executive and chamber remain regional institutions; ordinary district wards are outside this rule. Applied category policy federal_district_scope from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/brazil.json.gz",

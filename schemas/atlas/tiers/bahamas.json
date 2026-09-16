@@ -25,9 +25,9 @@
     {
       "office_id": "BS-D-NORTH-ABACO",
       "tier": "municipal",
-      "rationale": "Office BS-D-NORTH-ABACO: supplied officeType='District council — indirect formation'; office name='North Abaco — District council — indirect formation'; linked geography='North Abaco / Family Islands / Grand Bahama'; original locality='North Abaco', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-NORTH-ABACO: supplied officeType='District council — indirect formation'; office name='North Abaco — District council — indirect formation'; linked geography='North Abaco / Family Islands / Grand Bahama'; original locality='North Abaco', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -49,9 +49,9 @@
     {
       "office_id": "BS-D-CENTRAL-ABACO",
       "tier": "municipal",
-      "rationale": "Office BS-D-CENTRAL-ABACO: supplied officeType='District council — indirect formation'; office name='Central Abaco — District council — indirect formation'; linked geography='Central Abaco / Family Islands / Grand Bahama'; original locality='Central Abaco', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-CENTRAL-ABACO: supplied officeType='District council — indirect formation'; office name='Central Abaco — District council — indirect formation'; linked geography='Central Abaco / Family Islands / Grand Bahama'; original locality='Central Abaco', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -73,9 +73,9 @@
     {
       "office_id": "BS-D-SOUTH-ABACO",
       "tier": "municipal",
-      "rationale": "Office BS-D-SOUTH-ABACO: supplied officeType='District council — indirect formation'; office name='South Abaco — District council — indirect formation'; linked geography='South Abaco / Family Islands / Grand Bahama'; original locality='South Abaco', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-SOUTH-ABACO: supplied officeType='District council — indirect formation'; office name='South Abaco — District council — indirect formation'; linked geography='South Abaco / Family Islands / Grand Bahama'; original locality='South Abaco', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -97,9 +97,9 @@
     {
       "office_id": "BS-D-NORTH-ANDROS",
       "tier": "municipal",
-      "rationale": "Office BS-D-NORTH-ANDROS: supplied officeType='District council — indirect formation'; office name='North Andros — District council — indirect formation'; linked geography='North Andros / Family Islands / Grand Bahama'; original locality='North Andros', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-NORTH-ANDROS: supplied officeType='District council — indirect formation'; office name='North Andros — District council — indirect formation'; linked geography='North Andros / Family Islands / Grand Bahama'; original locality='North Andros', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -121,9 +121,9 @@
     {
       "office_id": "BS-D-CENTRAL-ANDROS",
       "tier": "municipal",
-      "rationale": "Office BS-D-CENTRAL-ANDROS: supplied officeType='District council — indirect formation'; office name='Central Andros — District council — indirect formation'; linked geography='Central Andros / Family Islands / Grand Bahama'; original locality='Central Andros', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-CENTRAL-ANDROS: supplied officeType='District council — indirect formation'; office name='Central Andros — District council — indirect formation'; linked geography='Central Andros / Family Islands / Grand Bahama'; original locality='Central Andros', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -145,9 +145,9 @@
     {
       "office_id": "BS-D-SOUTH-ANDROS",
       "tier": "municipal",
-      "rationale": "Office BS-D-SOUTH-ANDROS: supplied officeType='District council — indirect formation'; office name='South Andros — District council — indirect formation'; linked geography='South Andros / Family Islands / Grand Bahama'; original locality='South Andros', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-SOUTH-ANDROS: supplied officeType='District council — indirect formation'; office name='South Andros — District council — indirect formation'; linked geography='South Andros / Family Islands / Grand Bahama'; original locality='South Andros', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -169,9 +169,9 @@
     {
       "office_id": "BS-D-CAT-ISLAND",
       "tier": "municipal",
-      "rationale": "Office BS-D-CAT-ISLAND: supplied officeType='District council — indirect formation'; office name='Cat Island — District council — indirect formation'; linked geography='Cat Island / Family Islands / Grand Bahama'; original locality='Cat Island', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-CAT-ISLAND: supplied officeType='District council — indirect formation'; office name='Cat Island — District council — indirect formation'; linked geography='Cat Island / Family Islands / Grand Bahama'; original locality='Cat Island', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -193,9 +193,9 @@
     {
       "office_id": "BS-D-CENTRAL-ELEUTHERA",
       "tier": "municipal",
-      "rationale": "Office BS-D-CENTRAL-ELEUTHERA: supplied officeType='District council — indirect formation'; office name='Central Eleuthera — District council — indirect formation'; linked geography='Central Eleuthera / Family Islands / Grand Bahama'; original locality='Central Eleuthera', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-CENTRAL-ELEUTHERA: supplied officeType='District council — indirect formation'; office name='Central Eleuthera — District council — indirect formation'; linked geography='Central Eleuthera / Family Islands / Grand Bahama'; original locality='Central Eleuthera', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -217,9 +217,9 @@
     {
       "office_id": "BS-D-SOUTH-ELEUTHERA",
       "tier": "municipal",
-      "rationale": "Office BS-D-SOUTH-ELEUTHERA: supplied officeType='District council — indirect formation'; office name='South Eleuthera — District council — indirect formation'; linked geography='South Eleuthera / Family Islands / Grand Bahama'; original locality='South Eleuthera', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-SOUTH-ELEUTHERA: supplied officeType='District council — indirect formation'; office name='South Eleuthera — District council — indirect formation'; linked geography='South Eleuthera / Family Islands / Grand Bahama'; original locality='South Eleuthera', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -241,9 +241,9 @@
     {
       "office_id": "BS-D-EXUMA",
       "tier": "municipal",
-      "rationale": "Office BS-D-EXUMA: supplied officeType='District council — indirect formation'; office name='Exuma — District council — indirect formation'; linked geography='Exuma / Family Islands / Grand Bahama'; original locality='Exuma', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-EXUMA: supplied officeType='District council — indirect formation'; office name='Exuma — District council — indirect formation'; linked geography='Exuma / Family Islands / Grand Bahama'; original locality='Exuma', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -265,9 +265,9 @@
     {
       "office_id": "BS-D-EAST-GRAND-BAHAMA",
       "tier": "municipal",
-      "rationale": "Office BS-D-EAST-GRAND-BAHAMA: supplied officeType='District council — indirect formation'; office name='East Grand Bahama — District council — indirect formation'; linked geography='East Grand Bahama / Family Islands / Grand Bahama'; original locality='East Grand Bahama', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-EAST-GRAND-BAHAMA: supplied officeType='District council — indirect formation'; office name='East Grand Bahama — District council — indirect formation'; linked geography='East Grand Bahama / Family Islands / Grand Bahama'; original locality='East Grand Bahama', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -289,9 +289,9 @@
     {
       "office_id": "BS-D-WEST-GRAND-BAHAMA",
       "tier": "municipal",
-      "rationale": "Office BS-D-WEST-GRAND-BAHAMA: supplied officeType='District council — indirect formation'; office name='West Grand Bahama — District council — indirect formation'; linked geography='West Grand Bahama / Family Islands / Grand Bahama'; original locality='West Grand Bahama', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-WEST-GRAND-BAHAMA: supplied officeType='District council — indirect formation'; office name='West Grand Bahama — District council — indirect formation'; linked geography='West Grand Bahama / Family Islands / Grand Bahama'; original locality='West Grand Bahama', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -313,9 +313,9 @@
     {
       "office_id": "BS-D-LONG-ISLAND",
       "tier": "municipal",
-      "rationale": "Office BS-D-LONG-ISLAND: supplied officeType='District council — indirect formation'; office name='Long Island — District council — indirect formation'; linked geography='Long Island / Family Islands / Grand Bahama'; original locality='Long Island', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-LONG-ISLAND: supplied officeType='District council — indirect formation'; office name='Long Island — District council — indirect formation'; linked geography='Long Island / Family Islands / Grand Bahama'; original locality='Long Island', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -337,9 +337,9 @@
     {
       "office_id": "BS-D-ACKLINS",
       "tier": "municipal",
-      "rationale": "Office BS-D-ACKLINS: supplied officeType='District council — direct election'; office name='Acklins — District council — direct election'; linked geography='Acklins / Family Islands / Grand Bahama'; original locality='Acklins', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-ACKLINS: supplied officeType='District council — direct election'; office name='Acklins — District council — direct election'; linked geography='Acklins / Family Islands / Grand Bahama'; original locality='Acklins', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -361,9 +361,9 @@
     {
       "office_id": "BS-D-BERRY-ISLANDS",
       "tier": "municipal",
-      "rationale": "Office BS-D-BERRY-ISLANDS: supplied officeType='District council — direct election'; office name='Berry Islands — District council — direct election'; linked geography='Berry Islands / Family Islands / Grand Bahama'; original locality='Berry Islands', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-BERRY-ISLANDS: supplied officeType='District council — direct election'; office name='Berry Islands — District council — direct election'; linked geography='Berry Islands / Family Islands / Grand Bahama'; original locality='Berry Islands', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -385,9 +385,9 @@
     {
       "office_id": "BS-D-BIMINI",
       "tier": "municipal",
-      "rationale": "Office BS-D-BIMINI: supplied officeType='District council — direct election'; office name='Bimini — District council — direct election'; linked geography='Bimini / Family Islands / Grand Bahama'; original locality='Bimini', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-BIMINI: supplied officeType='District council — direct election'; office name='Bimini — District council — direct election'; linked geography='Bimini / Family Islands / Grand Bahama'; original locality='Bimini', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -409,9 +409,9 @@
     {
       "office_id": "BS-D-CITY-OF-FREEPORT",
       "tier": "municipal",
-      "rationale": "Office BS-D-CITY-OF-FREEPORT: supplied officeType='District council — direct election'; office name='City of Freeport — District council — direct election'; linked geography='City of Freeport / Family Islands / Grand Bahama'; original locality='City of Freeport', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-CITY-OF-FREEPORT: supplied officeType='District council — direct election'; office name='City of Freeport — District council — direct election'; linked geography='City of Freeport / Family Islands / Grand Bahama'; original locality='City of Freeport', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -433,9 +433,9 @@
     {
       "office_id": "BS-D-CROOKED-ISLAND-AND-LONG-CAY",
       "tier": "municipal",
-      "rationale": "Office BS-D-CROOKED-ISLAND-AND-LONG-CAY: supplied officeType='District council — direct election'; office name='Crooked Island and Long Cay — District council — direct election'; linked geography='Crooked Island and Long Cay / Family Islands / Grand Bahama'; original locality='Crooked Island and Long Cay', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-CROOKED-ISLAND-AND-LONG-CAY: supplied officeType='District council — direct election'; office name='Crooked Island and Long Cay — District council — direct election'; linked geography='Crooked Island and Long Cay / Family Islands / Grand Bahama'; original locality='Crooked Island and Long Cay', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -457,9 +457,9 @@
     {
       "office_id": "BS-D-EXUMA-CAYS",
       "tier": "municipal",
-      "rationale": "Office BS-D-EXUMA-CAYS: supplied officeType='District council — direct election'; office name='Exuma Cays — District council — direct election'; linked geography='Exuma Cays / Family Islands / Grand Bahama'; original locality='Exuma Cays', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-EXUMA-CAYS: supplied officeType='District council — direct election'; office name='Exuma Cays — District council — direct election'; linked geography='Exuma Cays / Family Islands / Grand Bahama'; original locality='Exuma Cays', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -481,9 +481,9 @@
     {
       "office_id": "BS-D-GRAND-CAY",
       "tier": "municipal",
-      "rationale": "Office BS-D-GRAND-CAY: supplied officeType='District council — direct election'; office name='Grand Cay — District council — direct election'; linked geography='Grand Cay / Family Islands / Grand Bahama'; original locality='Grand Cay', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-GRAND-CAY: supplied officeType='District council — direct election'; office name='Grand Cay — District council — direct election'; linked geography='Grand Cay / Family Islands / Grand Bahama'; original locality='Grand Cay', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -505,9 +505,9 @@
     {
       "office_id": "BS-D-GREAT-ABACO-CAYS",
       "tier": "municipal",
-      "rationale": "Office BS-D-GREAT-ABACO-CAYS: supplied officeType='District council — direct election'; office name='Great Abaco Cays — District council — direct election'; linked geography='Great Abaco Cays / Family Islands / Grand Bahama'; original locality='Great Abaco Cays', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-GREAT-ABACO-CAYS: supplied officeType='District council — direct election'; office name='Great Abaco Cays — District council — direct election'; linked geography='Great Abaco Cays / Family Islands / Grand Bahama'; original locality='Great Abaco Cays', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -529,9 +529,9 @@
     {
       "office_id": "BS-D-GREEN-TURTLE-CAY",
       "tier": "municipal",
-      "rationale": "Office BS-D-GREEN-TURTLE-CAY: supplied officeType='District council — direct election'; office name='Green Turtle Cay — District council — direct election'; linked geography='Green Turtle Cay / Family Islands / Grand Bahama'; original locality='Green Turtle Cay', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-GREEN-TURTLE-CAY: supplied officeType='District council — direct election'; office name='Green Turtle Cay — District council — direct election'; linked geography='Green Turtle Cay / Family Islands / Grand Bahama'; original locality='Green Turtle Cay', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -553,9 +553,9 @@
     {
       "office_id": "BS-D-HARBOUR-ISLAND",
       "tier": "municipal",
-      "rationale": "Office BS-D-HARBOUR-ISLAND: supplied officeType='District council — direct election'; office name='Harbour Island — District council — direct election'; linked geography='Harbour Island / Family Islands / Grand Bahama'; original locality='Harbour Island', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-HARBOUR-ISLAND: supplied officeType='District council — direct election'; office name='Harbour Island — District council — direct election'; linked geography='Harbour Island / Family Islands / Grand Bahama'; original locality='Harbour Island', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -577,9 +577,9 @@
     {
       "office_id": "BS-D-INAGUA",
       "tier": "municipal",
-      "rationale": "Office BS-D-INAGUA: supplied officeType='District council — direct election'; office name='Inagua — District council — direct election'; linked geography='Inagua / Family Islands / Grand Bahama'; original locality='Inagua', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-INAGUA: supplied officeType='District council — direct election'; office name='Inagua — District council — direct election'; linked geography='Inagua / Family Islands / Grand Bahama'; original locality='Inagua', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -601,9 +601,9 @@
     {
       "office_id": "BS-D-MANGROVE-CAY",
       "tier": "municipal",
-      "rationale": "Office BS-D-MANGROVE-CAY: supplied officeType='District council — direct election'; office name='Mangrove Cay — District council — direct election'; linked geography='Mangrove Cay / Family Islands / Grand Bahama'; original locality='Mangrove Cay', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-MANGROVE-CAY: supplied officeType='District council — direct election'; office name='Mangrove Cay — District council — direct election'; linked geography='Mangrove Cay / Family Islands / Grand Bahama'; original locality='Mangrove Cay', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -625,9 +625,9 @@
     {
       "office_id": "BS-D-MAYAGUANA",
       "tier": "municipal",
-      "rationale": "Office BS-D-MAYAGUANA: supplied officeType='District council — direct election'; office name='Mayaguana — District council — direct election'; linked geography='Mayaguana / Family Islands / Grand Bahama'; original locality='Mayaguana', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-MAYAGUANA: supplied officeType='District council — direct election'; office name='Mayaguana — District council — direct election'; linked geography='Mayaguana / Family Islands / Grand Bahama'; original locality='Mayaguana', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -649,9 +649,9 @@
     {
       "office_id": "BS-D-MOORES-ISLAND",
       "tier": "municipal",
-      "rationale": "Office BS-D-MOORES-ISLAND: supplied officeType='District council — direct election'; office name='Moores Island — District council — direct election'; linked geography='Moores Island / Family Islands / Grand Bahama'; original locality='Moores Island', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-MOORES-ISLAND: supplied officeType='District council — direct election'; office name='Moores Island — District council — direct election'; linked geography='Moores Island / Family Islands / Grand Bahama'; original locality='Moores Island', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -673,9 +673,9 @@
     {
       "office_id": "BS-D-NORTH-ELEUTHERA",
       "tier": "municipal",
-      "rationale": "Office BS-D-NORTH-ELEUTHERA: supplied officeType='District council — direct election'; office name='North Eleuthera — District council — direct election'; linked geography='North Eleuthera / Family Islands / Grand Bahama'; original locality='North Eleuthera', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-NORTH-ELEUTHERA: supplied officeType='District council — direct election'; office name='North Eleuthera — District council — direct election'; linked geography='North Eleuthera / Family Islands / Grand Bahama'; original locality='North Eleuthera', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -697,9 +697,9 @@
     {
       "office_id": "BS-D-RAGGED-ISLAND",
       "tier": "municipal",
-      "rationale": "Office BS-D-RAGGED-ISLAND: supplied officeType='District council — direct election'; office name='Ragged Island — District council — direct election'; linked geography='Ragged Island / Family Islands / Grand Bahama'; original locality='Ragged Island', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-RAGGED-ISLAND: supplied officeType='District council — direct election'; office name='Ragged Island — District council — direct election'; linked geography='Ragged Island / Family Islands / Grand Bahama'; original locality='Ragged Island', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -721,9 +721,9 @@
     {
       "office_id": "BS-D-RUM-CAY",
       "tier": "municipal",
-      "rationale": "Office BS-D-RUM-CAY: supplied officeType='District council — direct election'; office name='Rum Cay — District council — direct election'; linked geography='Rum Cay / Family Islands / Grand Bahama'; original locality='Rum Cay', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-RUM-CAY: supplied officeType='District council — direct election'; office name='Rum Cay — District council — direct election'; linked geography='Rum Cay / Family Islands / Grand Bahama'; original locality='Rum Cay', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -745,9 +745,9 @@
     {
       "office_id": "BS-D-SAN-SALVADOR",
       "tier": "municipal",
-      "rationale": "Office BS-D-SAN-SALVADOR: supplied officeType='District council — direct election'; office name='San Salvador — District council — direct election'; linked geography='San Salvador / Family Islands / Grand Bahama'; original locality='San Salvador', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-SAN-SALVADOR: supplied officeType='District council — direct election'; office name='San Salvador — District council — direct election'; linked geography='San Salvador / Family Islands / Grand Bahama'; original locality='San Salvador', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -769,9 +769,9 @@
     {
       "office_id": "BS-D-SPANISH-WELLS",
       "tier": "municipal",
-      "rationale": "Office BS-D-SPANISH-WELLS: supplied officeType='District council — direct election'; office name='Spanish Wells — District council — direct election'; linked geography='Spanish Wells / Family Islands / Grand Bahama'; original locality='Spanish Wells', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-SPANISH-WELLS: supplied officeType='District council — direct election'; office name='Spanish Wells — District council — direct election'; linked geography='Spanish Wells / Family Islands / Grand Bahama'; original locality='Spanish Wells', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",
@@ -793,9 +793,9 @@
     {
       "office_id": "BS-D-SWEETINGS-CAY",
       "tier": "municipal",
-      "rationale": "Office BS-D-SWEETINGS-CAY: supplied officeType='District council — direct election'; office name='Sweeting’s Cay — District council — direct election'; linked geography='Sweeting’s Cay / Family Islands / Grand Bahama'; original locality='Sweeting’s Cay', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office BS-D-SWEETINGS-CAY: supplied officeType='District council — direct election'; office name='Sweeting’s Cay — District council — direct election'; linked geography='Sweeting’s Cay / Family Islands / Grand Bahama'; original locality='Sweeting’s Cay', region='Family Islands / Grand Bahama'. The named Bahamas local district council remains municipal as a municipality-equivalent institution. Indirect formation remains distinct from a direct popular ballot; boundary and election-method caveats remain in the research. Applied category policy district_local_government from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/bahamas.json.gz",

@@ -25,9 +25,9 @@
     {
       "office_id": "GY-PR-2.06",
       "tier": "municipal",
-      "rationale": "Office GY-PR-2.06: supplied officeType='Local council PR component'; office name='ABERDEEN/ZORG-EN-VLYGT — Local council PR component'; linked geography='ABERDEEN/ZORG-EN-VLYGT / Region 2'; original locality='ABERDEEN/ZORG-EN-VLYGT', region='Region 2'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-2.06: supplied officeType='Local council PR component'; office name='ABERDEEN/ZORG-EN-VLYGT — Local council PR component'; linked geography='ABERDEEN/ZORG-EN-VLYGT / Region 2'; original locality='ABERDEEN/ZORG-EN-VLYGT', region='Region 2'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -49,9 +49,9 @@
     {
       "office_id": "GY-PR-6.14",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.14: supplied officeType='Local council PR component'; office name='ADVENTURE/NO. 28 OR BUSH LOT — Local council PR component'; linked geography='ADVENTURE/NO. 28 OR BUSH LOT / Region 6'; original locality='ADVENTURE/NO. 28 OR BUSH LOT', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.14: supplied officeType='Local council PR component'; office name='ADVENTURE/NO. 28 OR BUSH LOT — Local council PR component'; linked geography='ADVENTURE/NO. 28 OR BUSH LOT / Region 6'; original locality='ADVENTURE/NO. 28 OR BUSH LOT', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -73,9 +73,9 @@
     {
       "office_id": "GY-PR-2.07",
       "tier": "municipal",
-      "rationale": "Office GY-PR-2.07: supplied officeType='Local council PR component'; office name='ANNANDALE/RIVERSTOWN — Local council PR component'; linked geography='ANNANDALE/RIVERSTOWN / Region 2'; original locality='ANNANDALE/RIVERSTOWN', region='Region 2'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-2.07: supplied officeType='Local council PR component'; office name='ANNANDALE/RIVERSTOWN — Local council PR component'; linked geography='ANNANDALE/RIVERSTOWN / Region 2'; original locality='ANNANDALE/RIVERSTOWN', region='Region 2'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -97,9 +97,9 @@
     {
       "office_id": "GY-PR-9.02",
       "tier": "municipal",
-      "rationale": "Office GY-PR-9.02: supplied officeType='Local council PR component'; office name='ARANAPUTA/UPPER BURRO BURRO — Local council PR component'; linked geography='ARANAPUTA/UPPER BURRO BURRO / Region 9'; original locality='ARANAPUTA/UPPER BURRO BURRO', region='Region 9'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-9.02: supplied officeType='Local council PR component'; office name='ARANAPUTA/UPPER BURRO BURRO — Local council PR component'; linked geography='ARANAPUTA/UPPER BURRO BURRO / Region 9'; original locality='ARANAPUTA/UPPER BURRO BURRO', region='Region 9'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -121,9 +121,9 @@
     {
       "office_id": "GY-PR-5.07",
       "tier": "municipal",
-      "rationale": "Office GY-PR-5.07: supplied officeType='Local council PR component'; office name='BATH/WOODLEY PARK — Local council PR component'; linked geography='BATH/WOODLEY PARK / Region 5'; original locality='BATH/WOODLEY PARK', region='Region 5'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-5.07: supplied officeType='Local council PR component'; office name='BATH/WOODLEY PARK — Local council PR component'; linked geography='BATH/WOODLEY PARK / Region 5'; original locality='BATH/WOODLEY PARK', region='Region 5'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -145,9 +145,9 @@
     {
       "office_id": "GY-PR-4.12",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.12: supplied officeType='Local council PR component'; office name='BETERVERWAGTING/TRIUMPH — Local council PR component'; linked geography='BETERVERWAGTING/TRIUMPH / Region 4'; original locality='BETERVERWAGTING/TRIUMPH', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.12: supplied officeType='Local council PR component'; office name='BETERVERWAGTING/TRIUMPH — Local council PR component'; linked geography='BETERVERWAGTING/TRIUMPH / Region 4'; original locality='BETERVERWAGTING/TRIUMPH', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -169,9 +169,9 @@
     {
       "office_id": "GY-PR-4.11",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.11: supplied officeType='Local council PR component'; office name='BETTER HOPE/LA BONNE INTENTION — Local council PR component'; linked geography='BETTER HOPE/LA BONNE INTENTION / Region 4'; original locality='BETTER HOPE/LA BONNE INTENTION', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.11: supplied officeType='Local council PR component'; office name='BETTER HOPE/LA BONNE INTENTION — Local council PR component'; linked geography='BETTER HOPE/LA BONNE INTENTION / Region 4'; original locality='BETTER HOPE/LA BONNE INTENTION', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -193,9 +193,9 @@
     {
       "office_id": "GY-PR-6.17",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.17: supplied officeType='Local council PR component'; office name='BLACK BUSH POLDER — Local council PR component'; linked geography='BLACK BUSH POLDER / Region 6'; original locality='BLACK BUSH POLDER', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.17: supplied officeType='Local council PR component'; office name='BLACK BUSH POLDER — Local council PR component'; linked geography='BLACK BUSH POLDER / Region 6'; original locality='BLACK BUSH POLDER', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -217,9 +217,9 @@
     {
       "office_id": "GY-PR-5.10",
       "tier": "municipal",
-      "rationale": "Office GY-PR-5.10: supplied officeType='Local council PR component'; office name='BLAIRMONT/GELDERLAND — Local council PR component'; linked geography='BLAIRMONT/GELDERLAND / Region 5'; original locality='BLAIRMONT/GELDERLAND', region='Region 5'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-5.10: supplied officeType='Local council PR component'; office name='BLAIRMONT/GELDERLAND — Local council PR component'; linked geography='BLAIRMONT/GELDERLAND / Region 5'; original locality='BLAIRMONT/GELDERLAND', region='Region 5'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -241,9 +241,9 @@
     {
       "office_id": "GY-PR-6.12",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.12: supplied officeType='Local council PR component'; office name='BLOOMFIELD/WHIM — Local council PR component'; linked geography='BLOOMFIELD/WHIM / Region 6'; original locality='BLOOMFIELD/WHIM', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.12: supplied officeType='Local council PR component'; office name='BLOOMFIELD/WHIM — Local council PR component'; linked geography='BLOOMFIELD/WHIM / Region 6'; original locality='BLOOMFIELD/WHIM', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -265,9 +265,9 @@
     {
       "office_id": "GY-PR-4.14",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.14: supplied officeType='Local council PR component'; office name='BUXTON/FOULIS — Local council PR component'; linked geography='BUXTON/FOULIS / Region 4'; original locality='BUXTON/FOULIS', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.14: supplied officeType='Local council PR component'; office name='BUXTON/FOULIS — Local council PR component'; linked geography='BUXTON/FOULIS / Region 4'; original locality='BUXTON/FOULIS', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -289,9 +289,9 @@
     {
       "office_id": "GY-PR-3.08",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.08: supplied officeType='Local council PR component'; office name='CANALS POLDER — Local council PR component'; linked geography='CANALS POLDER / Region 3'; original locality='CANALS POLDER', region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.08: supplied officeType='Local council PR component'; office name='CANALS POLDER — Local council PR component'; linked geography='CANALS POLDER / Region 3'; original locality='CANALS POLDER', region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -313,9 +313,9 @@
     {
       "office_id": "GY-PR-6.08",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.08: supplied officeType='Local council PR component'; office name='CANE FIELD/ENTERPRISE — Local council PR component'; linked geography='CANE FIELD/ENTERPRISE / Region 6'; original locality='CANE FIELD/ENTERPRISE', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.08: supplied officeType='Local council PR component'; office name='CANE FIELD/ENTERPRISE — Local council PR component'; linked geography='CANE FIELD/ENTERPRISE / Region 6'; original locality='CANE FIELD/ENTERPRISE', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -337,9 +337,9 @@
     {
       "office_id": "GY-PR-4.18",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.18: supplied officeType='Local council PR component'; office name='CANE GROVE — Local council PR component'; linked geography='CANE GROVE / Region 4'; original locality='CANE GROVE', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.18: supplied officeType='Local council PR component'; office name='CANE GROVE — Local council PR component'; linked geography='CANE GROVE / Region 4'; original locality='CANE GROVE', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -361,9 +361,9 @@
     {
       "office_id": "GY-PR-2.03",
       "tier": "municipal",
-      "rationale": "Office GY-PR-2.03: supplied officeType='Local council PR component'; office name='CHARITY/URASARA — Local council PR component'; linked geography='CHARITY/URASARA / Region 2'; original locality='CHARITY/URASARA', region='Region 2'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-2.03: supplied officeType='Local council PR component'; office name='CHARITY/URASARA — Local council PR component'; linked geography='CHARITY/URASARA / Region 2'; original locality='CHARITY/URASARA', region='Region 2'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -385,9 +385,9 @@
     {
       "office_id": "GY-PR-6.21",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.21: supplied officeType='Local council PR component'; office name='CRABWOOD CREEK/MOLESON — Local council PR component'; linked geography='CRABWOOD CREEK/MOLESON / Region 6'; original locality='CRABWOOD CREEK/MOLESON', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.21: supplied officeType='Local council PR component'; office name='CRABWOOD CREEK/MOLESON — Local council PR component'; linked geography='CRABWOOD CREEK/MOLESON / Region 6'; original locality='CRABWOOD CREEK/MOLESON', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -409,9 +409,9 @@
     {
       "office_id": "GY-PR-4.07",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.07: supplied officeType='Local council PR component'; office name='DIAMOND PLACE/GOLDEN GROVE — Local council PR component'; linked geography='DIAMOND PLACE/GOLDEN GROVE / Region 4'; original locality='DIAMOND PLACE/GOLDEN GROVE', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.07: supplied officeType='Local council PR component'; office name='DIAMOND PLACE/GOLDEN GROVE — Local council PR component'; linked geography='DIAMOND PLACE/GOLDEN GROVE / Region 4'; original locality='DIAMOND PLACE/GOLDEN GROVE', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -433,9 +433,9 @@
     {
       "office_id": "GY-PR-4.08",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.08: supplied officeType='Local council PR component'; office name='ECCLES/RAMSBURG — Local council PR component'; linked geography='ECCLES/RAMSBURG / Region 4'; original locality='ECCLES/RAMSBURG', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.08: supplied officeType='Local council PR component'; office name='ECCLES/RAMSBURG — Local council PR component'; linked geography='ECCLES/RAMSBURG / Region 4'; original locality='ECCLES/RAMSBURG', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -457,9 +457,9 @@
     {
       "office_id": "GY-PR-6.03",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.03: supplied officeType='Local council PR component'; office name='ENFIELD/NEW DOE PARK — Local council PR component'; linked geography='ENFIELD/NEW DOE PARK / Region 6'; original locality='ENFIELD/NEW DOE PARK', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.03: supplied officeType='Local council PR component'; office name='ENFIELD/NEW DOE PARK — Local council PR component'; linked geography='ENFIELD/NEW DOE PARK / Region 6'; original locality='ENFIELD/NEW DOE PARK', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -481,9 +481,9 @@
     {
       "office_id": "GY-PR-4.15",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.15: supplied officeType='Local council PR component'; office name='ENMORE/HOPE — Local council PR component'; linked geography='ENMORE/HOPE / Region 4'; original locality='ENMORE/HOPE', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.15: supplied officeType='Local council PR component'; office name='ENMORE/HOPE — Local council PR component'; linked geography='ENMORE/HOPE / Region 4'; original locality='ENMORE/HOPE', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -505,9 +505,9 @@
     {
       "office_id": "GY-PR-2.04",
       "tier": "municipal",
-      "rationale": "Office GY-PR-2.04: supplied officeType='Local council PR component'; office name='EVERGREEN/PARADISE — Local council PR component'; linked geography='EVERGREEN/PARADISE / Region 2'; original locality='EVERGREEN/PARADISE', region='Region 2'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-2.04: supplied officeType='Local council PR component'; office name='EVERGREEN/PARADISE — Local council PR component'; linked geography='EVERGREEN/PARADISE / Region 2'; original locality='EVERGREEN/PARADISE', region='Region 2'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -529,9 +529,9 @@
     {
       "office_id": "GY-PR-6.06",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.06: supplied officeType='Local council PR component'; office name='GIBRALTAR/FYRISH — Local council PR component'; linked geography='GIBRALTAR/FYRISH / Region 6'; original locality='GIBRALTAR/FYRISH', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.06: supplied officeType='Local council PR component'; office name='GIBRALTAR/FYRISH — Local council PR component'; linked geography='GIBRALTAR/FYRISH / Region 6'; original locality='GIBRALTAR/FYRISH', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -553,9 +553,9 @@
     {
       "office_id": "GY-PR-6.18",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.18: supplied officeType='Local council PR component'; office name='GOOD HOPE/NO. 51 — Local council PR component'; linked geography='GOOD HOPE/NO. 51 / Region 6'; original locality='GOOD HOPE/NO. 51', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.18: supplied officeType='Local council PR component'; office name='GOOD HOPE/NO. 51 — Local council PR component'; linked geography='GOOD HOPE/NO. 51 / Region 6'; original locality='GOOD HOPE/NO. 51', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -577,9 +577,9 @@
     {
       "office_id": "GY-PR-2.08",
       "tier": "municipal",
-      "rationale": "Office GY-PR-2.08: supplied officeType='Local council PR component'; office name='GOOD HOPE/POMONA — Local council PR component'; linked geography='GOOD HOPE/POMONA / Region 2'; original locality='GOOD HOPE/POMONA', region='Region 2'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-2.08: supplied officeType='Local council PR component'; office name='GOOD HOPE/POMONA — Local council PR component'; linked geography='GOOD HOPE/POMONA / Region 2'; original locality='GOOD HOPE/POMONA', region='Region 2'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -601,9 +601,9 @@
     {
       "office_id": "GY-PR-4.04",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.04: supplied officeType='Local council PR component'; office name='GOOD SUCCESS/CALEDONIA — Local council PR component'; linked geography='GOOD SUCCESS/CALEDONIA / Region 4'; original locality='GOOD SUCCESS/CALEDONIA', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.04: supplied officeType='Local council PR component'; office name='GOOD SUCCESS/CALEDONIA — Local council PR component'; linked geography='GOOD SUCCESS/CALEDONIA / Region 4'; original locality='GOOD SUCCESS/CALEDONIA', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -625,9 +625,9 @@
     {
       "office_id": "GY-PR-3.05",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.05: supplied officeType='Local council PR component'; office name='GREENWICH PARK/VERGENOEGEN — Local council PR component'; linked geography='GREENWICH PARK/VERGENOEGEN / Region 3'; original locality='GREENWICH PARK/VERGENOEGEN', region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.05: supplied officeType='Local council PR component'; office name='GREENWICH PARK/VERGENOEGEN — Local council PR component'; linked geography='GREENWICH PARK/VERGENOEGEN / Region 3'; original locality='GREENWICH PARK/VERGENOEGEN', region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -649,9 +649,9 @@
     {
       "office_id": "GY-PR-3.11",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.11: supplied officeType='Local council PR component'; office name='HAGUE/BLANKENBURG — Local council PR component'; linked geography='HAGUE/BLANKENBURG / Region 3'; original locality='HAGUE/BLANKENBURG', region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.11: supplied officeType='Local council PR component'; office name='HAGUE/BLANKENBURG — Local council PR component'; linked geography='HAGUE/BLANKENBURG / Region 3'; original locality='HAGUE/BLANKENBURG', region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -673,9 +673,9 @@
     {
       "office_id": "GY-PR-5.02",
       "tier": "municipal",
-      "rationale": "Office GY-PR-5.02: supplied officeType='Local council PR component'; office name='HAMLET/CHANCE — Local council PR component'; linked geography='HAMLET/CHANCE / Region 5'; original locality='HAMLET/CHANCE', region='Region 5'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-5.02: supplied officeType='Local council PR component'; office name='HAMLET/CHANCE — Local council PR component'; linked geography='HAMLET/CHANCE / Region 5'; original locality='HAMLET/CHANCE', region='Region 5'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -697,9 +697,9 @@
     {
       "office_id": "GY-PR-4.16",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.16: supplied officeType='Local council PR component'; office name='HASLINGTON/GROVE — Local council PR component'; linked geography='HASLINGTON/GROVE / Region 4'; original locality='HASLINGTON/GROVE', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.16: supplied officeType='Local council PR component'; office name='HASLINGTON/GROVE — Local council PR component'; linked geography='HASLINGTON/GROVE / Region 4'; original locality='HASLINGTON/GROVE', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -721,9 +721,9 @@
     {
       "office_id": "GY-PR-4.01",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.01: supplied officeType='Local council PR component'; office name='HAURARUNI/YAROWKABRA — Local council PR component'; linked geography='HAURARUNI/YAROWKABRA / Region 4'; original locality='HAURARUNI/YAROWKABRA', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.01: supplied officeType='Local council PR component'; office name='HAURARUNI/YAROWKABRA — Local council PR component'; linked geography='HAURARUNI/YAROWKABRA / Region 4'; original locality='HAURARUNI/YAROWKABRA', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -745,9 +745,9 @@
     {
       "office_id": "GY-PR-4.05",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.05: supplied officeType='Local council PR component'; office name='HERSTELLING/ LITTLE DIAMOND — Local council PR component'; linked geography='HERSTELLING/ LITTLE DIAMOND / Region 4'; original locality='HERSTELLING/ LITTLE DIAMOND', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.05: supplied officeType='Local council PR component'; office name='HERSTELLING/ LITTLE DIAMOND — Local council PR component'; linked geography='HERSTELLING/ LITTLE DIAMOND / Region 4'; original locality='HERSTELLING/ LITTLE DIAMOND', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -769,9 +769,9 @@
     {
       "office_id": "GY-PR-3.04",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.04: supplied officeType='Local council PR component'; office name='HYDRONIE/GOOD HOPE — Local council PR component'; linked geography='HYDRONIE/GOOD HOPE / Region 3'; original locality='HYDRONIE/GOOD HOPE', region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.04: supplied officeType='Local council PR component'; office name='HYDRONIE/GOOD HOPE — Local council PR component'; linked geography='HYDRONIE/GOOD HOPE / Region 3'; original locality='HYDRONIE/GOOD HOPE', region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -793,9 +793,9 @@
     {
       "office_id": "GY-PR-4.10",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.10: supplied officeType='Local council PR component'; office name='INDUSTRY/PLAISANCE — Local council PR component'; linked geography='INDUSTRY/PLAISANCE / Region 4'; original locality='INDUSTRY/PLAISANCE', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.10: supplied officeType='Local council PR component'; office name='INDUSTRY/PLAISANCE — Local council PR component'; linked geography='INDUSTRY/PLAISANCE / Region 4'; original locality='INDUSTRY/PLAISANCE', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -817,9 +817,9 @@
     {
       "office_id": "GY-PR-6.09",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.09: supplied officeType='Local council PR component'; office name='KILCOY/HAMPSHIRE — Local council PR component'; linked geography='KILCOY/HAMPSHIRE / Region 6'; original locality='KILCOY/HAMPSHIRE', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.09: supplied officeType='Local council PR component'; office name='KILCOY/HAMPSHIRE — Local council PR component'; linked geography='KILCOY/HAMPSHIRE / Region 6'; original locality='KILCOY/HAMPSHIRE', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -841,9 +841,9 @@
     {
       "office_id": "GY-PR-6.05",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.05: supplied officeType='Local council PR component'; office name='KINTYRE/NO. 37 BORLAM — Local council PR component'; linked geography='KINTYRE/NO. 37 BORLAM / Region 6'; original locality='KINTYRE/NO. 37 BORLAM', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.05: supplied officeType='Local council PR component'; office name='KINTYRE/NO. 37 BORLAM — Local council PR component'; linked geography='KINTYRE/NO. 37 BORLAM / Region 6'; original locality='KINTYRE/NO. 37 BORLAM', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -865,9 +865,9 @@
     {
       "office_id": "GY-PR-10.02",
       "tier": "municipal",
-      "rationale": "Office GY-PR-10.02: supplied officeType='Local council PR component'; office name='KWAKWANI — Local council PR component'; linked geography='KWAKWANI / Region 10'; original locality='KWAKWANI', region='Region 10'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-10.02: supplied officeType='Local council PR component'; office name='KWAKWANI — Local council PR component'; linked geography='KWAKWANI / Region 10'; original locality='KWAKWANI', region='Region 10'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -889,9 +889,9 @@
     {
       "office_id": "GY-PR-3.09",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.09: supplied officeType='Local council PR component'; office name='LA GRANGE/NISMES — Local council PR component'; linked geography='LA GRANGE/NISMES / Region 3'; original locality='LA GRANGE/NISMES', region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.09: supplied officeType='Local council PR component'; office name='LA GRANGE/NISMES — Local council PR component'; linked geography='LA GRANGE/NISMES / Region 3'; original locality='LA GRANGE/NISMES', region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -913,9 +913,9 @@
     {
       "office_id": "GY-PR-3.12",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.12: supplied officeType='Local council PR component'; office name='LA JALOUSIE/NOUVELLE FLANDERS — Local council PR component'; linked geography='LA JALOUSIE/NOUVELLE FLANDERS / Region 3'; original locality='LA JALOUSIE/NOUVELLE FLANDERS', region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.12: supplied officeType='Local council PR component'; office name='LA JALOUSIE/NOUVELLE FLANDERS — Local council PR component'; linked geography='LA JALOUSIE/NOUVELLE FLANDERS / Region 3'; original locality='LA JALOUSIE/NOUVELLE FLANDERS', region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -937,9 +937,9 @@
     {
       "office_id": "GY-PR-4.02",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.02: supplied officeType='Local council PR component'; office name='LAMAHA/YAROWKABRA — Local council PR component'; linked geography='LAMAHA/YAROWKABRA / Region 4'; original locality='LAMAHA/YAROWKABRA', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.02: supplied officeType='Local council PR component'; office name='LAMAHA/YAROWKABRA — Local council PR component'; linked geography='LAMAHA/YAROWKABRA / Region 4'; original locality='LAMAHA/YAROWKABRA', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -961,9 +961,9 @@
     {
       "office_id": "GY-PR-6.13",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.13: supplied officeType='Local council PR component'; office name='LANCASTER/HOGSTYE — Local council PR component'; linked geography='LANCASTER/HOGSTYE / Region 6'; original locality='LANCASTER/HOGSTYE', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.13: supplied officeType='Local council PR component'; office name='LANCASTER/HOGSTYE — Local council PR component'; linked geography='LANCASTER/HOGSTYE / Region 6'; original locality='LANCASTER/HOGSTYE', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -985,9 +985,9 @@
     {
       "office_id": "GY-PR-3.02",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.02: supplied officeType='Local council PR component'; office name='LEGUAN — Local council PR component'; linked geography='LEGUAN / Region 3'; original locality='LEGUAN', region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.02: supplied officeType='Local council PR component'; office name='LEGUAN — Local council PR component'; linked geography='LEGUAN / Region 3'; original locality='LEGUAN', region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1009,9 +1009,9 @@
     {
       "office_id": "GY-PR-6.16",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.16: supplied officeType='Local council PR component'; office name='MACEDONIA/JOPPA — Local council PR component'; linked geography='MACEDONIA/JOPPA / Region 6'; original locality='MACEDONIA/JOPPA', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.16: supplied officeType='Local council PR component'; office name='MACEDONIA/JOPPA — Local council PR component'; linked geography='MACEDONIA/JOPPA / Region 6'; original locality='MACEDONIA/JOPPA', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1033,9 +1033,9 @@
     {
       "office_id": "GY-PR-5.03",
       "tier": "municipal",
-      "rationale": "Office GY-PR-5.03: supplied officeType='Local council PR component'; office name='MAHAICONY/ABARY — Local council PR component'; linked geography='MAHAICONY/ABARY / Region 5'; original locality='MAHAICONY/ABARY', region='Region 5'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-5.03: supplied officeType='Local council PR component'; office name='MAHAICONY/ABARY — Local council PR component'; linked geography='MAHAICONY/ABARY / Region 5'; original locality='MAHAICONY/ABARY', region='Region 5'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1057,9 +1057,9 @@
     {
       "office_id": "GY-PR-6.15",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.15: supplied officeType='Local council PR component'; office name='MAIDA/TARLOGIE — Local council PR component'; linked geography='MAIDA/TARLOGIE / Region 6'; original locality='MAIDA/TARLOGIE', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.15: supplied officeType='Local council PR component'; office name='MAIDA/TARLOGIE — Local council PR component'; linked geography='MAIDA/TARLOGIE / Region 6'; original locality='MAIDA/TARLOGIE', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1081,9 +1081,9 @@
     {
       "office_id": "GY-PR-3.14",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.14: supplied officeType='Local council PR component'; office name=\"MALGRE' TOUT/MEER-ZORGEN — Local council PR component\"; linked geography=\"MALGRE' TOUT/MEER-ZORGEN / Region 3\"; original locality=\"MALGRE' TOUT/MEER-ZORGEN\", region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.14: supplied officeType='Local council PR component'; office name=\"MALGRE' TOUT/MEER-ZORGEN — Local council PR component\"; linked geography=\"MALGRE' TOUT/MEER-ZORGEN / Region 3\"; original locality=\"MALGRE' TOUT/MEER-ZORGEN\", region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1105,9 +1105,9 @@
     {
       "office_id": "GY-PR-4.06",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.06: supplied officeType='Local council PR component'; office name='MOCHA/ARCADIA — Local council PR component'; linked geography='MOCHA/ARCADIA / Region 4'; original locality='MOCHA/ARCADIA', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.06: supplied officeType='Local council PR component'; office name='MOCHA/ARCADIA — Local council PR component'; linked geography='MOCHA/ARCADIA / Region 4'; original locality='MOCHA/ARCADIA', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1129,9 +1129,9 @@
     {
       "office_id": "GY-PR-4.13",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.13: supplied officeType='Local council PR component'; office name='MON REPOS/LA RECONNAISSANCE — Local council PR component'; linked geography='MON REPOS/LA RECONNAISSANCE / Region 4'; original locality='MON REPOS/LA RECONNAISSANCE', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.13: supplied officeType='Local council PR component'; office name='MON REPOS/LA RECONNAISSANCE — Local council PR component'; linked geography='MON REPOS/LA RECONNAISSANCE / Region 4'; original locality='MON REPOS/LA RECONNAISSANCE', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1153,9 +1153,9 @@
     {
       "office_id": "GY-PR-3.03",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.03: supplied officeType='Local council PR component'; office name='MORA/PARIKA — Local council PR component'; linked geography='MORA/PARIKA / Region 3'; original locality='MORA/PARIKA', region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.03: supplied officeType='Local council PR component'; office name='MORA/PARIKA — Local council PR component'; linked geography='MORA/PARIKA / Region 3'; original locality='MORA/PARIKA', region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1177,9 +1177,9 @@
     {
       "office_id": "GY-PR-2.01",
       "tier": "municipal",
-      "rationale": "Office GY-PR-2.01: supplied officeType='Local council PR component'; office name='MORUKA/PROVIDENCE — Local council PR component'; linked geography='MORUKA/PROVIDENCE / Region 2'; original locality='MORUKA/PROVIDENCE', region='Region 2'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-2.01: supplied officeType='Local council PR component'; office name='MORUKA/PROVIDENCE — Local council PR component'; linked geography='MORUKA/PROVIDENCE / Region 2'; original locality='MORUKA/PROVIDENCE', region='Region 2'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1201,9 +1201,9 @@
     {
       "office_id": "GY-PR-2.05",
       "tier": "municipal",
-      "rationale": "Office GY-PR-2.05: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF ANNA REGINA — Local council PR component'; linked geography='MUNICIPALITY OF ANNA REGINA / Region 2'; original locality='MUNICIPALITY OF ANNA REGINA', region='Region 2'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-2.05: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF ANNA REGINA — Local council PR component'; linked geography='MUNICIPALITY OF ANNA REGINA / Region 2'; original locality='MUNICIPALITY OF ANNA REGINA', region='Region 2'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1225,9 +1225,9 @@
     {
       "office_id": "GY-PR-7.01",
       "tier": "municipal",
-      "rationale": "Office GY-PR-7.01: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF BARTICA — Local council PR component'; linked geography='MUNICIPALITY OF BARTICA / Region 7'; original locality='MUNICIPALITY OF BARTICA', region='Region 7'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-7.01: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF BARTICA — Local council PR component'; linked geography='MUNICIPALITY OF BARTICA / Region 7'; original locality='MUNICIPALITY OF BARTICA', region='Region 7'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1249,9 +1249,9 @@
     {
       "office_id": "GY-PR-6.22",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.22: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF CORRIVERTON — Local council PR component'; linked geography='MUNICIPALITY OF CORRIVERTON / Region 6'; original locality='MUNICIPALITY OF CORRIVERTON', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.22: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF CORRIVERTON — Local council PR component'; linked geography='MUNICIPALITY OF CORRIVERTON / Region 6'; original locality='MUNICIPALITY OF CORRIVERTON', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1273,9 +1273,9 @@
     {
       "office_id": "GY-PR-4.09",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.09: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF GEORGETOWN — Local council PR component'; linked geography='MUNICIPALITY OF GEORGETOWN / Region 4'; original locality='MUNICIPALITY OF GEORGETOWN', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.09: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF GEORGETOWN — Local council PR component'; linked geography='MUNICIPALITY OF GEORGETOWN / Region 4'; original locality='MUNICIPALITY OF GEORGETOWN', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1297,9 +1297,9 @@
     {
       "office_id": "GY-PR-9.01",
       "tier": "municipal",
-      "rationale": "Office GY-PR-9.01: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF LETHEM — Local council PR component'; linked geography='MUNICIPALITY OF LETHEM / Region 9'; original locality='MUNICIPALITY OF LETHEM', region='Region 9'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-9.01: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF LETHEM — Local council PR component'; linked geography='MUNICIPALITY OF LETHEM / Region 9'; original locality='MUNICIPALITY OF LETHEM', region='Region 9'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1321,9 +1321,9 @@
     {
       "office_id": "GY-PR-10.01",
       "tier": "municipal",
-      "rationale": "Office GY-PR-10.01: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF LINDEN — Local council PR component'; linked geography='MUNICIPALITY OF LINDEN / Region 10'; original locality='MUNICIPALITY OF LINDEN', region='Region 10'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-10.01: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF LINDEN — Local council PR component'; linked geography='MUNICIPALITY OF LINDEN / Region 10'; original locality='MUNICIPALITY OF LINDEN', region='Region 10'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1345,9 +1345,9 @@
     {
       "office_id": "GY-PR-1.02",
       "tier": "municipal",
-      "rationale": "Office GY-PR-1.02: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF MABARUMA — Local council PR component'; linked geography='MUNICIPALITY OF MABARUMA / Region 1'; original locality='MUNICIPALITY OF MABARUMA', region='Region 1'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-1.02: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF MABARUMA — Local council PR component'; linked geography='MUNICIPALITY OF MABARUMA / Region 1'; original locality='MUNICIPALITY OF MABARUMA', region='Region 1'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1369,9 +1369,9 @@
     {
       "office_id": "GY-PR-8.01",
       "tier": "municipal",
-      "rationale": "Office GY-PR-8.01: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF MAHDIA — Local council PR component'; linked geography='MUNICIPALITY OF MAHDIA / Region 8'; original locality='MUNICIPALITY OF MAHDIA', region='Region 8'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-8.01: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF MAHDIA — Local council PR component'; linked geography='MUNICIPALITY OF MAHDIA / Region 8'; original locality='MUNICIPALITY OF MAHDIA', region='Region 8'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1393,9 +1393,9 @@
     {
       "office_id": "GY-PR-6.04",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.04: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF NEW AMSTERDAM — Local council PR component'; linked geography='MUNICIPALITY OF NEW AMSTERDAM / Region 6'; original locality='MUNICIPALITY OF NEW AMSTERDAM', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.04: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF NEW AMSTERDAM — Local council PR component'; linked geography='MUNICIPALITY OF NEW AMSTERDAM / Region 6'; original locality='MUNICIPALITY OF NEW AMSTERDAM', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1417,9 +1417,9 @@
     {
       "office_id": "GY-PR-6.10",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.10: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF ROSE HALL — Local council PR component'; linked geography='MUNICIPALITY OF ROSE HALL / Region 6'; original locality='MUNICIPALITY OF ROSE HALL', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.10: supplied officeType='Local council PR component'; office name='MUNICIPALITY OF ROSE HALL — Local council PR component'; linked geography='MUNICIPALITY OF ROSE HALL / Region 6'; original locality='MUNICIPALITY OF ROSE HALL', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1441,9 +1441,9 @@
     {
       "office_id": "GY-PR-6.20",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.20: supplied officeType='Local council PR component'; office name='NO. 64/NO. 74 — Local council PR component'; linked geography='NO. 64/NO. 74 / Region 6'; original locality='NO. 64/NO. 74', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.20: supplied officeType='Local council PR component'; office name='NO. 64/NO. 74 — Local council PR component'; linked geography='NO. 64/NO. 74 / Region 6'; original locality='NO. 64/NO. 74', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1465,9 +1465,9 @@
     {
       "office_id": "GY-PR-6.19",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.19: supplied officeType='Local council PR component'; office name='NO.52/NO.63 — Local council PR component'; linked geography='NO.52/NO.63 / Region 6'; original locality='NO.52/NO.63', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.19: supplied officeType='Local council PR component'; office name='NO.52/NO.63 — Local council PR component'; linked geography='NO.52/NO.63 / Region 6'; original locality='NO.52/NO.63', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1489,9 +1489,9 @@
     {
       "office_id": "GY-PR-6.07",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.07: supplied officeType='Local council PR component'; office name='ORDNANCE/FORT LANDS NO.38 — Local council PR component'; linked geography='ORDNANCE/FORT LANDS NO.38 / Region 6'; original locality='ORDNANCE/FORT LANDS NO.38', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.07: supplied officeType='Local council PR component'; office name='ORDNANCE/FORT LANDS NO.38 — Local council PR component'; linked geography='ORDNANCE/FORT LANDS NO.38 / Region 6'; original locality='ORDNANCE/FORT LANDS NO.38', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1513,9 +1513,9 @@
     {
       "office_id": "GY-PR-6.01",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.01: supplied officeType='Local council PR component'; office name='PLEGT ANKER/KORTBERAADT — Local council PR component'; linked geography='PLEGT ANKER/KORTBERAADT / Region 6'; original locality='PLEGT ANKER/KORTBERAADT', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.01: supplied officeType='Local council PR component'; office name='PLEGT ANKER/KORTBERAADT — Local council PR component'; linked geography='PLEGT ANKER/KORTBERAADT / Region 6'; original locality='PLEGT ANKER/KORTBERAADT', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1537,9 +1537,9 @@
     {
       "office_id": "GY-PR-1.01",
       "tier": "municipal",
-      "rationale": "Office GY-PR-1.01: supplied officeType='Local council PR component'; office name='PORT KAITUMA MATTHEWS RIDGE/ARAKAKA — Local council PR component'; linked geography='PORT KAITUMA MATTHEWS RIDGE/ARAKAKA / Region 1'; original locality='PORT KAITUMA MATTHEWS RIDGE/ARAKAKA', region='Region 1'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-1.01: supplied officeType='Local council PR component'; office name='PORT KAITUMA MATTHEWS RIDGE/ARAKAKA — Local council PR component'; linked geography='PORT KAITUMA MATTHEWS RIDGE/ARAKAKA / Region 1'; original locality='PORT KAITUMA MATTHEWS RIDGE/ARAKAKA', region='Region 1'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1561,9 +1561,9 @@
     {
       "office_id": "GY-PR-6.11",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.11: supplied officeType='Local council PR component'; office name='PORT MOURANT/JOHNS — Local council PR component'; linked geography='PORT MOURANT/JOHNS / Region 6'; original locality='PORT MOURANT/JOHNS', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.11: supplied officeType='Local council PR component'; office name='PORT MOURANT/JOHNS — Local council PR component'; linked geography='PORT MOURANT/JOHNS / Region 6'; original locality='PORT MOURANT/JOHNS', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1585,9 +1585,9 @@
     {
       "office_id": "GY-PR-5.04",
       "tier": "municipal",
-      "rationale": "Office GY-PR-5.04: supplied officeType='Local council PR component'; office name='PROFIT/RISING SUN — Local council PR component'; linked geography='PROFIT/RISING SUN / Region 5'; original locality='PROFIT/RISING SUN', region='Region 5'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-5.04: supplied officeType='Local council PR component'; office name='PROFIT/RISING SUN — Local council PR component'; linked geography='PROFIT/RISING SUN / Region 5'; original locality='PROFIT/RISING SUN', region='Region 5'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1609,9 +1609,9 @@
     {
       "office_id": "GY-PR-5.05",
       "tier": "municipal",
-      "rationale": "Office GY-PR-5.05: supplied officeType='Local council PR component'; office name='SEAFIELD/TEMPIE — Local council PR component'; linked geography='SEAFIELD/TEMPIE / Region 5'; original locality='SEAFIELD/TEMPIE', region='Region 5'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-5.05: supplied officeType='Local council PR component'; office name='SEAFIELD/TEMPIE — Local council PR component'; linked geography='SEAFIELD/TEMPIE / Region 5'; original locality='SEAFIELD/TEMPIE', region='Region 5'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1633,9 +1633,9 @@
     {
       "office_id": "GY-PR-4.03",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.03: supplied officeType='Local council PR component'; office name='SOESDYKE/HUIST COVERDEN — Local council PR component'; linked geography='SOESDYKE/HUIST COVERDEN / Region 4'; original locality='SOESDYKE/HUIST COVERDEN', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.03: supplied officeType='Local council PR component'; office name='SOESDYKE/HUIST COVERDEN — Local council PR component'; linked geography='SOESDYKE/HUIST COVERDEN / Region 4'; original locality='SOESDYKE/HUIST COVERDEN', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1657,9 +1657,9 @@
     {
       "office_id": "GY-PR-3.07",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.07: supplied officeType='Local council PR component'; office name='STEWARTVILLE/CORNELIA IDA — Local council PR component'; linked geography='STEWARTVILLE/CORNELIA IDA / Region 3'; original locality='STEWARTVILLE/CORNELIA IDA', region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.07: supplied officeType='Local council PR component'; office name='STEWARTVILLE/CORNELIA IDA — Local council PR component'; linked geography='STEWARTVILLE/CORNELIA IDA / Region 3'; original locality='STEWARTVILLE/CORNELIA IDA', region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1681,9 +1681,9 @@
     {
       "office_id": "GY-PR-3.13",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.13: supplied officeType='Local council PR component'; office name='THE BEST/ KLIEN POUDEROYEN — Local council PR component'; linked geography='THE BEST/ KLIEN POUDEROYEN / Region 3'; original locality='THE BEST/ KLIEN POUDEROYEN', region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.13: supplied officeType='Local council PR component'; office name='THE BEST/ KLIEN POUDEROYEN — Local council PR component'; linked geography='THE BEST/ KLIEN POUDEROYEN / Region 3'; original locality='THE BEST/ KLIEN POUDEROYEN', region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1705,9 +1705,9 @@
     {
       "office_id": "GY-PR-2.02",
       "tier": "municipal",
-      "rationale": "Office GY-PR-2.02: supplied officeType='Local council PR component'; office name='THE NILE/COZIER — Local council PR component'; linked geography='THE NILE/COZIER / Region 2'; original locality='THE NILE/COZIER', region='Region 2'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-2.02: supplied officeType='Local council PR component'; office name='THE NILE/COZIER — Local council PR component'; linked geography='THE NILE/COZIER / Region 2'; original locality='THE NILE/COZIER', region='Region 2'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1729,9 +1729,9 @@
     {
       "office_id": "GY-PR-3.10",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.10: supplied officeType='Local council PR component'; office name='TOEVLUGT/PATENTIA — Local council PR component'; linked geography='TOEVLUGT/PATENTIA / Region 3'; original locality='TOEVLUGT/PATENTIA', region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.10: supplied officeType='Local council PR component'; office name='TOEVLUGT/PATENTIA — Local council PR component'; linked geography='TOEVLUGT/PATENTIA / Region 3'; original locality='TOEVLUGT/PATENTIA', region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1753,9 +1753,9 @@
     {
       "office_id": "GY-PR-3.06",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.06: supplied officeType='Local council PR component'; office name='TUSCHEN/UITVLUGT — Local council PR component'; linked geography='TUSCHEN/UITVLUGT / Region 3'; original locality='TUSCHEN/UITVLUGT', region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.06: supplied officeType='Local council PR component'; office name='TUSCHEN/UITVLUGT — Local council PR component'; linked geography='TUSCHEN/UITVLUGT / Region 3'; original locality='TUSCHEN/UITVLUGT', region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1777,9 +1777,9 @@
     {
       "office_id": "GY-PR-5.06",
       "tier": "municipal",
-      "rationale": "Office GY-PR-5.06: supplied officeType='Local council PR component'; office name='UNION/NAARSTIGHEID — Local council PR component'; linked geography='UNION/NAARSTIGHEID / Region 5'; original locality='UNION/NAARSTIGHEID', region='Region 5'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-5.06: supplied officeType='Local council PR component'; office name='UNION/NAARSTIGHEID — Local council PR component'; linked geography='UNION/NAARSTIGHEID / Region 5'; original locality='UNION/NAARSTIGHEID', region='Region 5'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1801,9 +1801,9 @@
     {
       "office_id": "GY-PR-4.17",
       "tier": "municipal",
-      "rationale": "Office GY-PR-4.17: supplied officeType='Local council PR component'; office name='UNITY/VEREENIGING — Local council PR component'; linked geography='UNITY/VEREENIGING / Region 4'; original locality='UNITY/VEREENIGING', region='Region 4'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-4.17: supplied officeType='Local council PR component'; office name='UNITY/VEREENIGING — Local council PR component'; linked geography='UNITY/VEREENIGING / Region 4'; original locality='UNITY/VEREENIGING', region='Region 4'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1825,9 +1825,9 @@
     {
       "office_id": "GY-PR-3.01",
       "tier": "municipal",
-      "rationale": "Office GY-PR-3.01: supplied officeType='Local council PR component'; office name='WAKENAAM — Local council PR component'; linked geography='WAKENAAM / Region 3'; original locality='WAKENAAM', region='Region 3'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-3.01: supplied officeType='Local council PR component'; office name='WAKENAAM — Local council PR component'; linked geography='WAKENAAM / Region 3'; original locality='WAKENAAM', region='Region 3'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1849,9 +1849,9 @@
     {
       "office_id": "GY-PR-5.08",
       "tier": "municipal",
-      "rationale": "Office GY-PR-5.08: supplied officeType='Local council PR component'; office name='WOODLANDS/BEL AIR — Local council PR component'; linked geography='WOODLANDS/BEL AIR / Region 5'; original locality='WOODLANDS/BEL AIR', region='Region 5'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-5.08: supplied officeType='Local council PR component'; office name='WOODLANDS/BEL AIR — Local council PR component'; linked geography='WOODLANDS/BEL AIR / Region 5'; original locality='WOODLANDS/BEL AIR', region='Region 5'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1873,9 +1873,9 @@
     {
       "office_id": "GY-PR-5.01",
       "tier": "municipal",
-      "rationale": "Office GY-PR-5.01: supplied officeType='Local council PR component'; office name='WOODLANDS/FARM — Local council PR component'; linked geography='WOODLANDS/FARM / Region 5'; original locality='WOODLANDS/FARM', region='Region 5'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-5.01: supplied officeType='Local council PR component'; office name='WOODLANDS/FARM — Local council PR component'; linked geography='WOODLANDS/FARM / Region 5'; original locality='WOODLANDS/FARM', region='Region 5'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1897,9 +1897,9 @@
     {
       "office_id": "GY-PR-6.02",
       "tier": "municipal",
-      "rationale": "Office GY-PR-6.02: supplied officeType='Local council PR component'; office name='WYBURG/CARACAS — Local council PR component'; linked geography='WYBURG/CARACAS / Region 6'; original locality='WYBURG/CARACAS', region='Region 6'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-6.02: supplied officeType='Local council PR component'; office name='WYBURG/CARACAS — Local council PR component'; linked geography='WYBURG/CARACAS / Region 6'; original locality='WYBURG/CARACAS', region='Region 6'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
@@ -1921,9 +1921,9 @@
     {
       "office_id": "GY-PR-5.09",
       "tier": "municipal",
-      "rationale": "Office GY-PR-5.09: supplied officeType='Local council PR component'; office name='ZEELUST/ROSIGNOL — Local council PR component'; linked geography='ZEELUST/ROSIGNOL / Region 5'; original locality='ZEELUST/ROSIGNOL', region='Region 5'. The office is explicitly a local council PR component for the named locality, not a Region council. Proposed municipal for the local-government institution; review municipality/neighbourhood scope and preserve component-only status. A component and a whole council must not be added as disjoint units.",
-      "human_review_required": true,
-      "tier_uncertain": true,
+      "rationale": "Office GY-PR-5.09: supplied officeType='Local council PR component'; office name='ZEELUST/ROSIGNOL — Local council PR component'; linked geography='ZEELUST/ROSIGNOL / Region 5'; original locality='ZEELUST/ROSIGNOL', region='Region 5'. The named local council PR component remains municipal. Preserve component-only status and council-size caveats; a component and whole council are not disjoint units. Applied category policy local_council_component from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
       "evidence": [
         {
           "input_path": "data/research/countries/guyana.json.gz",
