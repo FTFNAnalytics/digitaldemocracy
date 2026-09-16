@@ -1,0 +1,31 @@
+{
+  "status": "passed_draft_and_source_checks",
+  "checks": {
+    "mexico_source_row_identity_and_values": 67,
+    "raw_alternate_fields_preserved": 67,
+    "full_primary_keys": 201,
+    "contract_shaped_changes": 201,
+    "proposed_decisions_withhold": 201,
+    "claim_source_and_locator_checks": 804,
+    "atomic_bundles": 67,
+    "event_groups": 27,
+    "unchanged_sibling_rows_identified": 95,
+    "tier_original_files_still_draft_and_hash_matched": 22,
+    "focused_office_patch_entries": 6851,
+    "conditional_clearances": 5426,
+    "remaining_human_review_flags": 1425,
+    "remaining_tier_uncertainty": 106,
+    "category_exemplars_and_checklists": 12,
+    "country_batch_coverage": 22,
+    "tier_value_changes": 0,
+    "pack_status_changes": 0,
+    "protected_ddl_and_albania_hashes_unchanged": true
+  },
+  "not_run": [
+    "Primary official total/denominator certification",
+    "Justin acceptance",
+    "Importer implementation or SQLite research loading",
+    "Multi-lineage publication/rollback/route CI"
+  ],
+  "publication_status": "BLOCKED; recommendations and appendix are drafts only."
+}

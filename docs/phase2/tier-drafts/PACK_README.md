@@ -2,6 +2,8 @@
 
 **Drafts only. No tiers or Mexico overrides are approved. Continuity publish remains blocked until tiers are approved and Mexico overrides are accepted; importer and cutover CI also remain required.**
 
+Prompt F decision drafts are checked in under `docs/phase2/decisions/` (nothing approved or applied). Mexico recommend withhold-all-67. Tier category policies could clear 5,426 flags with 1,425 residual. Do not treat the patch appendix or `mexico-share-domain-PROPOSED.json` as accepted/executable.
+
 Prepared against merged main `9065dcdfc0cbc78171dad35b60742ae232b6dd00`. This note is the Prompt E review-pack guidance, placed here rather than at the repository root. Checking in drafts does not approve them or authorize ingestion.
 
 All office/event identities use `cdd-observatory-v1`. LatAm files belong only to `latin-america-fe5e91689def`; NZ belongs only to `country-package-new-zealand`. Preserve lineage ownership after Europe re-imports. Europe remains the default landing, Phase 1 stays Albania-only, and no positive regional count is required.
@@ -49,5 +51,6 @@ Reports and support:
 - `docs/phase2/tier-drafts/Mexico_Share_Domain_Override_Draft.md`
 - `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain-DRAFT.json` (non-executable inventory, never an accepted override)
 - `docs/phase2/tier-drafts/validation.json`
+- Prompt F decision drafts: `docs/phase2/decisions/` plus `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain-PROPOSED.json` (withhold-all-67 recommendation; still `production_accepted=false` / non-executable)
 
 No importer/UI code, SQLite rows, frozen input edits, approvals or public route changes are part of this handoff.
