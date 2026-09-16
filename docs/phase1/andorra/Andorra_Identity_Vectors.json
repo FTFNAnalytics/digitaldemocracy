@@ -1,0 +1,1402 @@
+{
+  "status": "documentation_only",
+  "id_namespace": "cdd-observatory-v1",
+  "lineage_id": "country-package-andorra",
+  "offices": [
+    {
+      "office_id": "AD-M-05",
+      "geography_id": "geo-59eee2ef1a3df387bf66a0f6",
+      "jurisdiction": "Andorra la Vella",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/office-register.json",
+        "sha256": "318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f",
+        "json_pointer": "/rows/0",
+        "sheet": "Office register",
+        "source_row": 126,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-01",
+      "geography_id": "geo-36b8dc9620cf766f48db2bee",
+      "jurisdiction": "Canillo",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/office-register.json",
+        "sha256": "318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f",
+        "json_pointer": "/rows/1",
+        "sheet": "Office register",
+        "source_row": 127,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-02",
+      "geography_id": "geo-77f9d074222def8cfec4d3db",
+      "jurisdiction": "Encamp",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/office-register.json",
+        "sha256": "318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f",
+        "json_pointer": "/rows/2",
+        "sheet": "Office register",
+        "source_row": 128,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "geography_id": "geo-0c64b49ec3938c508ee9c4d1",
+      "jurisdiction": "Escaldes-Engordany",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/office-register.json",
+        "sha256": "318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f",
+        "json_pointer": "/rows/3",
+        "sheet": "Office register",
+        "source_row": 129,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-04",
+      "geography_id": "geo-0f76b2e75af4d0f456bdd5a6",
+      "jurisdiction": "La Massana",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/office-register.json",
+        "sha256": "318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f",
+        "json_pointer": "/rows/4",
+        "sheet": "Office register",
+        "source_row": 130,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-03",
+      "geography_id": "geo-e5bb0b1b7b64d5b72362a1f6",
+      "jurisdiction": "Ordino",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/office-register.json",
+        "sha256": "318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f",
+        "json_pointer": "/rows/5",
+        "sheet": "Office register",
+        "source_row": 131,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-06",
+      "geography_id": "geo-0b914f9f4a92b2a6a7e1f876",
+      "jurisdiction": "Sant Julià de Lòria",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/office-register.json",
+        "sha256": "318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f",
+        "json_pointer": "/rows/6",
+        "sheet": "Office register",
+        "source_row": 132,
+        "column": null,
+        "html_anchor_index": null
+      }
+    }
+  ],
+  "events": [
+    {
+      "office_id": "AD-M-05",
+      "history_key": "AD-M-05::2023::2023-12-17",
+      "event_id": "event-321b029bb122c1284e83dd89",
+      "date_id": "date-0ecd8b20f6a8c3221bf2be84a21d404a604d604200000ab6ffec6e793eac4228",
+      "label": "2023-12-17",
+      "precision": "day",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/0",
+        "sheet": "History index",
+        "source_row": 374,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-05",
+      "history_key": "AD-M-05::2019::",
+      "event_id": "event-02706181e65e03e35a10c899",
+      "date_id": "date-7b79df0c40343166701f0f59344247757cbd2dfc6aff6ae17318f9aafecd2724",
+      "label": "2019",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/1",
+        "sheet": "History index",
+        "source_row": 375,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-05",
+      "history_key": "AD-M-05::2015::",
+      "event_id": "event-aa8c0308dc1f11c4b2845eb1",
+      "date_id": "date-646734a0566996d62948761d9dce79510aa201f8aff10f299480a39eccc070da",
+      "label": "2015",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/2",
+        "sheet": "History index",
+        "source_row": 376,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-01",
+      "history_key": "AD-M-01::2023::2023-12-17",
+      "event_id": "event-17ac36c1fea4c91d3563cf16",
+      "date_id": "date-d1d58282004edc7548ed0bc96ab701f24b0ce4851ea0d9035072a1e7450b24bc",
+      "label": "2023-12-17",
+      "precision": "day",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/3",
+        "sheet": "History index",
+        "source_row": 377,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-01",
+      "history_key": "AD-M-01::2019::",
+      "event_id": "event-fa26d57063b093e8b83a1c07",
+      "date_id": "date-22c10413c96809f44711c68e280c9d56769629c0ce925c6abea39ad40adc40a6",
+      "label": "2019",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/4",
+        "sheet": "History index",
+        "source_row": 378,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-01",
+      "history_key": "AD-M-01::2015::",
+      "event_id": "event-1f6fa9a4633e92627153f7cf",
+      "date_id": "date-24bd5b1f163dbdc9c92702a4951f64506bf2845f77956a84082cc7e0df301cd3",
+      "label": "2015",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/5",
+        "sheet": "History index",
+        "source_row": 379,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-02",
+      "history_key": "AD-M-02::2023::2023-12-17",
+      "event_id": "event-5fd4005316e7c08cdab5cf96",
+      "date_id": "date-48a786795cb26006dc75f218ad8937e49155e3b44565f15a735785d1e06f3377",
+      "label": "2023-12-17",
+      "precision": "day",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/6",
+        "sheet": "History index",
+        "source_row": 380,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-02",
+      "history_key": "AD-M-02::2019::",
+      "event_id": "event-fbebc19143ed8936e31786d2",
+      "date_id": "date-e3c3e1e1f074a2acc5c837bff02a8c2b9fbac828ee8cae9a3892443b06eaab09",
+      "label": "2019",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/7",
+        "sheet": "History index",
+        "source_row": 381,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-02",
+      "history_key": "AD-M-02::2015::",
+      "event_id": "event-b43ff88dfd15ad9d35b9a6d4",
+      "date_id": "date-7a7d3d22ef4d03d08ce19dd43aeb25f9e51c4bb6d2f35855a81876bcc23f32eb",
+      "label": "2015",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/8",
+        "sheet": "History index",
+        "source_row": 382,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "history_key": "AD-M-07::2023::2023-12-17",
+      "event_id": "event-f2d98003bb0b98752a9eaaa3",
+      "date_id": "date-ebaba8ca6f8c9dfd3112cab2d91e643eca236109b1ac7c4d7623b8d9e2510384",
+      "label": "2023-12-17",
+      "precision": "day",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/9",
+        "sheet": "History index",
+        "source_row": 383,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "history_key": "AD-M-07::2019::",
+      "event_id": "event-17479e7269c6d84fb1120096",
+      "date_id": "date-1584155f075ed55c13aefe29e8a121505048118b9a9def2cf667f3fa5a056dcc",
+      "label": "2019",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/10",
+        "sheet": "History index",
+        "source_row": 384,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "history_key": "AD-M-07::2015::",
+      "event_id": "event-ec12a13108f816c7c60e0009",
+      "date_id": "date-84b774bb3698c9c138364b79081a20513f47dccbf7f118f1ce89c70f85fa7b7b",
+      "label": "2015",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/11",
+        "sheet": "History index",
+        "source_row": 385,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-04",
+      "history_key": "AD-M-04::2023::2023-12-17",
+      "event_id": "event-205bc0747a1441f30027123f",
+      "date_id": "date-696c8625cf58738a82743f6dd0adbbdc7209992099bd8b76394cfde06f10eea9",
+      "label": "2023-12-17",
+      "precision": "day",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/12",
+        "sheet": "History index",
+        "source_row": 386,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-04",
+      "history_key": "AD-M-04::2019::",
+      "event_id": "event-89de0d42d2da61f68ed76ccd",
+      "date_id": "date-2894588714dfe9e7ad2bdc84c6d7798c2a178db4fe55083382282ed663530040",
+      "label": "2019",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/13",
+        "sheet": "History index",
+        "source_row": 387,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-04",
+      "history_key": "AD-M-04::2015::",
+      "event_id": "event-7d9c415c1c596a541908fc6f",
+      "date_id": "date-38531d39137733bf56889a2b9a3f121aa8a5053432fc42a1dfc54258c46d0f23",
+      "label": "2015",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/14",
+        "sheet": "History index",
+        "source_row": 388,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-03",
+      "history_key": "AD-M-03::2023::2023-12-17",
+      "event_id": "event-31d0e87cfec3990b5d386b72",
+      "date_id": "date-57c0870107af543acea2d9e50a5c5a884390e9c1f047126bdd4f145404f9b926",
+      "label": "2023-12-17",
+      "precision": "day",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/15",
+        "sheet": "History index",
+        "source_row": 389,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-03",
+      "history_key": "AD-M-03::2019::",
+      "event_id": "event-63858d914376dc87fec0c381",
+      "date_id": "date-eb6b09f1336bae1afea4c19ef8fbff2d8388c65b41396abef392d504e5e7382f",
+      "label": "2019",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/16",
+        "sheet": "History index",
+        "source_row": 390,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-03",
+      "history_key": "AD-M-03::2015::",
+      "event_id": "event-c7f15785f8332d5d94426888",
+      "date_id": "date-4f2e9b322b2c6d1ee3cc7d074563b772e2ee25b9d8290953205a330aa302b0e5",
+      "label": "2015",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/17",
+        "sheet": "History index",
+        "source_row": 391,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-06",
+      "history_key": "AD-M-06::2023::2023-12-17",
+      "event_id": "event-ea44abc21762a02e4904b677",
+      "date_id": "date-acb460ae45a5d78b9a69fa9db48768ca222010c2bcd2b84bb030c84ddd931b32",
+      "label": "2023-12-17",
+      "precision": "day",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/18",
+        "sheet": "History index",
+        "source_row": 392,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-06",
+      "history_key": "AD-M-06::2019::",
+      "event_id": "event-62acd6fda6a8251ca0dd27dd",
+      "date_id": "date-a3b0541fcc6ffb86200f6d1fbb13536ffd0e2b110902113b91c356211a1cf029",
+      "label": "2019",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/19",
+        "sheet": "History index",
+        "source_row": 393,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-06",
+      "history_key": "AD-M-06::2015::",
+      "event_id": "event-da9e8c2fc79a418f4d92c0d2",
+      "date_id": "date-8d5fbec3b5d1ca0c4a00fb84203a438ff955cc2f52145dd051be16572741a663",
+      "label": "2015",
+      "precision": "year",
+      "certainty": "unknown",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "json_pointer": "/rows/20",
+        "sheet": "History index",
+        "source_row": 394,
+        "column": null,
+        "html_anchor_index": null
+      }
+    }
+  ],
+  "results": [
+    {
+      "office_id": "AD-M-05",
+      "history_key": "AD-M-05::2023::2023-12-17",
+      "event_id": "event-321b029bb122c1284e83dd89",
+      "result_row_id": "event-321b029bb122c1284e83dd89-r0",
+      "candidate_or_list_label": "ENCLAR",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/0",
+        "sheet": "Detailed returns",
+        "source_row": 3872,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-05",
+      "history_key": "AD-M-05::2023::2023-12-17",
+      "event_id": "event-321b029bb122c1284e83dd89",
+      "result_row_id": "event-321b029bb122c1284e83dd89-r1",
+      "candidate_or_list_label": "DEMÒCRATES + PROGRESSISTES SDP + INDEPENDENTS",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/1",
+        "sheet": "Detailed returns",
+        "source_row": 3873,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-05",
+      "history_key": "AD-M-05::2019::",
+      "event_id": "event-02706181e65e03e35a10c899",
+      "result_row_id": "event-02706181e65e03e35a10c899-r0",
+      "candidate_or_list_label": "En Comú per Andorra la Vella",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/2",
+        "sheet": "Detailed returns",
+        "source_row": 3874,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-05",
+      "history_key": "AD-M-05::2019::",
+      "event_id": "event-02706181e65e03e35a10c899",
+      "result_row_id": "event-02706181e65e03e35a10c899-r1",
+      "candidate_or_list_label": "Partit Socialdemòcrata i Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/3",
+        "sheet": "Detailed returns",
+        "source_row": 3875,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-05",
+      "history_key": "AD-M-05::2019::",
+      "event_id": "event-02706181e65e03e35a10c899",
+      "result_row_id": "event-02706181e65e03e35a10c899-r2",
+      "candidate_or_list_label": "Terceravia + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/4",
+        "sheet": "Detailed returns",
+        "source_row": 3876,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-05",
+      "history_key": "AD-M-05::2015::",
+      "event_id": "event-aa8c0308dc1f11c4b2845eb1",
+      "result_row_id": "event-aa8c0308dc1f11c4b2845eb1-r0",
+      "candidate_or_list_label": "Demòcrates per Andorra + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/5",
+        "sheet": "Detailed returns",
+        "source_row": 3877,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-05",
+      "history_key": "AD-M-05::2015::",
+      "event_id": "event-aa8c0308dc1f11c4b2845eb1",
+      "result_row_id": "event-aa8c0308dc1f11c4b2845eb1-r1",
+      "candidate_or_list_label": "Partit Socialdemòcrata + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/6",
+        "sheet": "Detailed returns",
+        "source_row": 3878,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-05",
+      "history_key": "AD-M-05::2015::",
+      "event_id": "event-aa8c0308dc1f11c4b2845eb1",
+      "result_row_id": "event-aa8c0308dc1f11c4b2845eb1-r2",
+      "candidate_or_list_label": "Coalició d’Independents + Liberals d’Andorra",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/7",
+        "sheet": "Detailed returns",
+        "source_row": 3879,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-05",
+      "history_key": "AD-M-05::2015::",
+      "event_id": "event-aa8c0308dc1f11c4b2845eb1",
+      "result_row_id": "event-aa8c0308dc1f11c4b2845eb1-r3",
+      "candidate_or_list_label": "Sentit Comú",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/8",
+        "sheet": "Detailed returns",
+        "source_row": 3880,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-01",
+      "history_key": "AD-M-01::2023::2023-12-17",
+      "event_id": "event-17ac36c1fea4c91d3563cf16",
+      "result_row_id": "event-17ac36c1fea4c91d3563cf16-r0",
+      "candidate_or_list_label": "DEMÒCRATES + INDEPENDENTS",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/9",
+        "sheet": "Detailed returns",
+        "source_row": 3881,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-01",
+      "history_key": "AD-M-01::2019::",
+      "event_id": "event-fa26d57063b093e8b83a1c07",
+      "result_row_id": "event-fa26d57063b093e8b83a1c07-r0",
+      "candidate_or_list_label": "Demòcrates + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/10",
+        "sheet": "Detailed returns",
+        "source_row": 3882,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-01",
+      "history_key": "AD-M-01::2019::",
+      "event_id": "event-fa26d57063b093e8b83a1c07",
+      "result_row_id": "event-fa26d57063b093e8b83a1c07-r1",
+      "candidate_or_list_label": "Objectiu Comú",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/11",
+        "sheet": "Detailed returns",
+        "source_row": 3883,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-01",
+      "history_key": "AD-M-01::2015::",
+      "event_id": "event-1f6fa9a4633e92627153f7cf",
+      "result_row_id": "event-1f6fa9a4633e92627153f7cf-r0",
+      "candidate_or_list_label": "Demòcrates per Andorra + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/12",
+        "sheet": "Detailed returns",
+        "source_row": 3884,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-02",
+      "history_key": "AD-M-02::2023::2023-12-17",
+      "event_id": "event-5fd4005316e7c08cdab5cf96",
+      "result_row_id": "event-5fd4005316e7c08cdab5cf96-r0",
+      "candidate_or_list_label": "UNITS PER AL PROGRÉS+DEMÒCRATES+INDEPENDENTS",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/13",
+        "sheet": "Detailed returns",
+        "source_row": 3885,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-02",
+      "history_key": "AD-M-02::2023::2023-12-17",
+      "event_id": "event-5fd4005316e7c08cdab5cf96",
+      "result_row_id": "event-5fd4005316e7c08cdab5cf96-r1",
+      "candidate_or_list_label": "AVANCEM",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/14",
+        "sheet": "Detailed returns",
+        "source_row": 3886,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-02",
+      "history_key": "AD-M-02::2019::",
+      "event_id": "event-fbebc19143ed8936e31786d2",
+      "result_row_id": "event-fbebc19143ed8936e31786d2-r0",
+      "candidate_or_list_label": "En Comú per Encamp",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/15",
+        "sheet": "Detailed returns",
+        "source_row": 3887,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-02",
+      "history_key": "AD-M-02::2019::",
+      "event_id": "event-fbebc19143ed8936e31786d2",
+      "result_row_id": "event-fbebc19143ed8936e31786d2-r1",
+      "candidate_or_list_label": "Partit Socialdemòcrata i Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/16",
+        "sheet": "Detailed returns",
+        "source_row": 3888,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-02",
+      "history_key": "AD-M-02::2019::",
+      "event_id": "event-fbebc19143ed8936e31786d2",
+      "result_row_id": "event-fbebc19143ed8936e31786d2-r2",
+      "candidate_or_list_label": "Agrupament Encampadà",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/17",
+        "sheet": "Detailed returns",
+        "source_row": 3889,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-02",
+      "history_key": "AD-M-02::2019::",
+      "event_id": "event-fbebc19143ed8936e31786d2",
+      "result_row_id": "event-fbebc19143ed8936e31786d2-r3",
+      "candidate_or_list_label": "Terceravia + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/18",
+        "sheet": "Detailed returns",
+        "source_row": 3890,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-02",
+      "history_key": "AD-M-02::2015::",
+      "event_id": "event-b43ff88dfd15ad9d35b9a6d4",
+      "result_row_id": "event-b43ff88dfd15ad9d35b9a6d4-r0",
+      "candidate_or_list_label": "Units per al Progrés + Demòcrates per Andorra",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/19",
+        "sheet": "Detailed returns",
+        "source_row": 3891,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-02",
+      "history_key": "AD-M-02::2015::",
+      "event_id": "event-b43ff88dfd15ad9d35b9a6d4",
+      "result_row_id": "event-b43ff88dfd15ad9d35b9a6d4-r1",
+      "candidate_or_list_label": "Liberals d’Andorra + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/20",
+        "sheet": "Detailed returns",
+        "source_row": 3892,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-02",
+      "history_key": "AD-M-02::2015::",
+      "event_id": "event-b43ff88dfd15ad9d35b9a6d4",
+      "result_row_id": "event-b43ff88dfd15ad9d35b9a6d4-r2",
+      "candidate_or_list_label": "Partit Socialdemòcrata + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/21",
+        "sheet": "Detailed returns",
+        "source_row": 3893,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "history_key": "AD-M-07::2023::2023-12-17",
+      "event_id": "event-f2d98003bb0b98752a9eaaa3",
+      "result_row_id": "event-f2d98003bb0b98752a9eaaa3-r0",
+      "candidate_or_list_label": "CONSENS PER ESCALDES-ENGORDANY",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/22",
+        "sheet": "Detailed returns",
+        "source_row": 3894,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "history_key": "AD-M-07::2023::2023-12-17",
+      "event_id": "event-f2d98003bb0b98752a9eaaa3",
+      "result_row_id": "event-f2d98003bb0b98752a9eaaa3-r1",
+      "candidate_or_list_label": "DEMÒCRATES + ACCIÓ + SDP + INDEPENDENTS",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/23",
+        "sheet": "Detailed returns",
+        "source_row": 3895,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "history_key": "AD-M-07::2019::",
+      "event_id": "event-17479e7269c6d84fb1120096",
+      "result_row_id": "event-17479e7269c6d84fb1120096-r0",
+      "candidate_or_list_label": "Partit Socialdemòcrata i Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/24",
+        "sheet": "Detailed returns",
+        "source_row": 3896,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "history_key": "AD-M-07::2019::",
+      "event_id": "event-17479e7269c6d84fb1120096",
+      "result_row_id": "event-17479e7269c6d84fb1120096-r1",
+      "candidate_or_list_label": "Demòcrates + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/25",
+        "sheet": "Detailed returns",
+        "source_row": 3897,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "history_key": "AD-M-07::2019::",
+      "event_id": "event-17479e7269c6d84fb1120096",
+      "result_row_id": "event-17479e7269c6d84fb1120096-r2",
+      "candidate_or_list_label": "Unió per Escaldes-Engordany",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/26",
+        "sheet": "Detailed returns",
+        "source_row": 3898,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "history_key": "AD-M-07::2019::",
+      "event_id": "event-17479e7269c6d84fb1120096",
+      "result_row_id": "event-17479e7269c6d84fb1120096-r3",
+      "candidate_or_list_label": "Terceravia + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/27",
+        "sheet": "Detailed returns",
+        "source_row": 3899,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "history_key": "AD-M-07::2015::",
+      "event_id": "event-ec12a13108f816c7c60e0009",
+      "result_row_id": "event-ec12a13108f816c7c60e0009-r0",
+      "candidate_or_list_label": "Demòcrates per Andorra",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/28",
+        "sheet": "Detailed returns",
+        "source_row": 3900,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "history_key": "AD-M-07::2015::",
+      "event_id": "event-ec12a13108f816c7c60e0009",
+      "result_row_id": "event-ec12a13108f816c7c60e0009-r1",
+      "candidate_or_list_label": "Liberals d’Andorra + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/29",
+        "sheet": "Detailed returns",
+        "source_row": 3901,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "history_key": "AD-M-07::2015::",
+      "event_id": "event-ec12a13108f816c7c60e0009",
+      "result_row_id": "event-ec12a13108f816c7c60e0009-r2",
+      "candidate_or_list_label": "Partit Socialdemòcrata + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/30",
+        "sheet": "Detailed returns",
+        "source_row": 3902,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-07",
+      "history_key": "AD-M-07::2015::",
+      "event_id": "event-ec12a13108f816c7c60e0009",
+      "result_row_id": "event-ec12a13108f816c7c60e0009-r3",
+      "candidate_or_list_label": "Sentit Comú",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/31",
+        "sheet": "Detailed returns",
+        "source_row": 3903,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-04",
+      "history_key": "AD-M-04::2023::2023-12-17",
+      "event_id": "event-205bc0747a1441f30027123f",
+      "result_row_id": "event-205bc0747a1441f30027123f-r0",
+      "candidate_or_list_label": "CIUTADANS COMPROMESOS + DA + INDEPENDENTS",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/32",
+        "sheet": "Detailed returns",
+        "source_row": 3904,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-04",
+      "history_key": "AD-M-04::2023::2023-12-17",
+      "event_id": "event-205bc0747a1441f30027123f",
+      "result_row_id": "event-205bc0747a1441f30027123f-r1",
+      "candidate_or_list_label": "AMB SENY",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/33",
+        "sheet": "Detailed returns",
+        "source_row": 3905,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-04",
+      "history_key": "AD-M-04::2019::",
+      "event_id": "event-89de0d42d2da61f68ed76ccd",
+      "result_row_id": "event-89de0d42d2da61f68ed76ccd-r0",
+      "candidate_or_list_label": "Ciutadans Compromesos + DA + LA",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/34",
+        "sheet": "Detailed returns",
+        "source_row": 3906,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-04",
+      "history_key": "AD-M-04::2015::",
+      "event_id": "event-7d9c415c1c596a541908fc6f",
+      "result_row_id": "event-7d9c415c1c596a541908fc6f-r0",
+      "candidate_or_list_label": "Ciutadans Compromesos",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/35",
+        "sheet": "Detailed returns",
+        "source_row": 3907,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-04",
+      "history_key": "AD-M-04::2015::",
+      "event_id": "event-7d9c415c1c596a541908fc6f",
+      "result_row_id": "event-7d9c415c1c596a541908fc6f-r1",
+      "candidate_or_list_label": "Demòcrates per Andorra",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/36",
+        "sheet": "Detailed returns",
+        "source_row": 3908,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-03",
+      "history_key": "AD-M-03::2023::2023-12-17",
+      "event_id": "event-31d0e87cfec3990b5d386b72",
+      "result_row_id": "event-31d0e87cfec3990b5d386b72-r0",
+      "candidate_or_list_label": "ACCIÓ COMUNAL D'ORDINO+DEMÒCRATES+INDEPENDENTS+PROGRESSISTES SDP",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/37",
+        "sheet": "Detailed returns",
+        "source_row": 3909,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-03",
+      "history_key": "AD-M-03::2023::2023-12-17",
+      "event_id": "event-31d0e87cfec3990b5d386b72",
+      "result_row_id": "event-31d0e87cfec3990b5d386b72-r1",
+      "candidate_or_list_label": "UNITS PER ORDINO",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/38",
+        "sheet": "Detailed returns",
+        "source_row": 3910,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-03",
+      "history_key": "AD-M-03::2019::",
+      "event_id": "event-63858d914376dc87fec0c381",
+      "result_row_id": "event-63858d914376dc87fec0c381-r0",
+      "candidate_or_list_label": "En Comú per Ordino",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/39",
+        "sheet": "Detailed returns",
+        "source_row": 3911,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-03",
+      "history_key": "AD-M-03::2019::",
+      "event_id": "event-63858d914376dc87fec0c381",
+      "result_row_id": "event-63858d914376dc87fec0c381-r1",
+      "candidate_or_list_label": "Per Ordino",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/40",
+        "sheet": "Detailed returns",
+        "source_row": 3912,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-03",
+      "history_key": "AD-M-03::2019::",
+      "event_id": "event-63858d914376dc87fec0c381",
+      "result_row_id": "event-63858d914376dc87fec0c381-r2",
+      "candidate_or_list_label": "MovemOrdino",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/41",
+        "sheet": "Detailed returns",
+        "source_row": 3913,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-03",
+      "history_key": "AD-M-03::2019::",
+      "event_id": "event-63858d914376dc87fec0c381",
+      "result_row_id": "event-63858d914376dc87fec0c381-r3",
+      "candidate_or_list_label": "Terceravia + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/42",
+        "sheet": "Detailed returns",
+        "source_row": 3914,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-03",
+      "history_key": "AD-M-03::2015::",
+      "event_id": "event-c7f15785f8332d5d94426888",
+      "result_row_id": "event-c7f15785f8332d5d94426888-r0",
+      "candidate_or_list_label": "Acció Comunal d’Ordino + Demòcrates per Andorra",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/43",
+        "sheet": "Detailed returns",
+        "source_row": 3915,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-03",
+      "history_key": "AD-M-03::2015::",
+      "event_id": "event-c7f15785f8332d5d94426888",
+      "result_row_id": "event-c7f15785f8332d5d94426888-r1",
+      "candidate_or_list_label": "Liberals d’Andorra + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/44",
+        "sheet": "Detailed returns",
+        "source_row": 3916,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-06",
+      "history_key": "AD-M-06::2023::2023-12-17",
+      "event_id": "event-ea44abc21762a02e4904b677",
+      "result_row_id": "event-ea44abc21762a02e4904b677-r0",
+      "candidate_or_list_label": "DESPERTA LAURÈDIA",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/45",
+        "sheet": "Detailed returns",
+        "source_row": 3917,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-06",
+      "history_key": "AD-M-06::2023::2023-12-17",
+      "event_id": "event-ea44abc21762a02e4904b677",
+      "result_row_id": "event-ea44abc21762a02e4904b677-r1",
+      "candidate_or_list_label": "UNIÓ LAUREDIANA + DEMÒCRATES + ACCIÓ + INDEPENDENTS",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/46",
+        "sheet": "Detailed returns",
+        "source_row": 3918,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-06",
+      "history_key": "AD-M-06::2023::2023-12-17",
+      "event_id": "event-ea44abc21762a02e4904b677",
+      "result_row_id": "event-ea44abc21762a02e4904b677-r2",
+      "candidate_or_list_label": "PER SANT JULIÀ",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/47",
+        "sheet": "Detailed returns",
+        "source_row": 3919,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-06",
+      "history_key": "AD-M-06::2019::",
+      "event_id": "event-62acd6fda6a8251ca0dd27dd",
+      "result_row_id": "event-62acd6fda6a8251ca0dd27dd-r0",
+      "candidate_or_list_label": "Terceravia + Unió Laurediana + Independents",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/48",
+        "sheet": "Detailed returns",
+        "source_row": 3920,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-06",
+      "history_key": "AD-M-06::2019::",
+      "event_id": "event-62acd6fda6a8251ca0dd27dd",
+      "result_row_id": "event-62acd6fda6a8251ca0dd27dd-r1",
+      "candidate_or_list_label": "Desperta Laurèdia",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/49",
+        "sheet": "Detailed returns",
+        "source_row": 3921,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-06",
+      "history_key": "AD-M-06::2019::",
+      "event_id": "event-62acd6fda6a8251ca0dd27dd",
+      "result_row_id": "event-62acd6fda6a8251ca0dd27dd-r2",
+      "candidate_or_list_label": "Units pel Canvi",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/50",
+        "sheet": "Detailed returns",
+        "source_row": 3922,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-06",
+      "history_key": "AD-M-06::2015::",
+      "event_id": "event-da9e8c2fc79a418f4d92c0d2",
+      "result_row_id": "event-da9e8c2fc79a418f4d92c0d2-r0",
+      "candidate_or_list_label": "Laurèdia en Comú",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/51",
+        "sheet": "Detailed returns",
+        "source_row": 3923,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "AD-M-06",
+      "history_key": "AD-M-06::2015::",
+      "event_id": "event-da9e8c2fc79a418f4d92c0d2",
+      "result_row_id": "event-da9e8c2fc79a418f4d92c0d2-r1",
+      "candidate_or_list_label": "Liberals d’Andorra + Unió Laurediana",
+      "origin": {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "json_pointer": "/rows/52",
+        "sheet": "Detailed returns",
+        "source_row": 3924,
+        "column": null,
+        "html_anchor_index": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.eleccions.ad/documentacio/anteriors/EC_2015.pdf",
+      "source_id": "andorra--S8c221f7ad3",
+      "bridge_url_alias": "andorra--url-81c714686c3e7b262602745e"
+    },
+    {
+      "url": "https://www.eleccions.ad/documentacio/anteriors/EC_2019.pdf",
+      "source_id": "andorra--S8552cf6cc0",
+      "bridge_url_alias": "andorra--url-b5691987dd464159cdae80d7"
+    },
+    {
+      "url": "https://www.eleccions.ad/resultats",
+      "source_id": "andorra--S6550aa0914",
+      "bridge_url_alias": "andorra--url-af1b164b6b3206a3d8ee9824"
+    },
+    {
+      "url": "https://www.canillo.ad/composicio-institucional",
+      "source_id": "andorra--Sb5260d316a",
+      "bridge_url_alias": "andorra--url-e096f2191a7b410e5185b92e"
+    },
+    {
+      "url": "https://www.comuencamp.ad/el-comu/composicio-del-comu/carrecs-electes/laura-mas-barrionuevo",
+      "source_id": "andorra--Sb773dc13c8",
+      "bridge_url_alias": "andorra--url-e847dc156d121ea266474914"
+    },
+    {
+      "url": "https://www.ordino.ad/comu/el-comu",
+      "source_id": "andorra--S85bc12751f",
+      "bridge_url_alias": "andorra--url-c0d6bb6ab21a0c5d7d1b0d59"
+    },
+    {
+      "url": "https://www.lamassana.ad/carrecs-electes",
+      "source_id": "andorra--S2925f461d4",
+      "bridge_url_alias": "andorra--url-99926d178797070f5756d039"
+    },
+    {
+      "url": "https://www.andorralavella.ad/comu/inici",
+      "source_id": "andorra--S949a9cee2c",
+      "bridge_url_alias": "andorra--url-cd268065d22179ad4a1202e0"
+    },
+    {
+      "url": "https://comusantjulia.ad/ca/el-comu/composicio-del-consell-de-comu/",
+      "source_id": "andorra--S22f3be43c0",
+      "bridge_url_alias": "andorra--url-9375e831b87f17204834b0c4"
+    },
+    {
+      "url": "https://www.diariandorra.ad/nacional/260714/gili-atribueix-nerviosime-l-anunci-les-accions-judicials-govern_200542.html",
+      "source_id": "andorra--S113ac2f338",
+      "bridge_url_alias": "andorra--url-40a7bfcf5b3a2474ae23d4d4"
+    },
+    {
+      "url": "https://ari.ad/images/imgs/actualitat/enquesta_politica/INFORME%20POLITICA%202026%20DESCRIPTIU_final1.pdf",
+      "source_id": "andorra--url-fd7dc5383492957949089c8d",
+      "bridge_url_alias": "andorra--url-fd7dc5383492957949089c8d"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_elections_in_2027",
+      "source_id": "andorra--url-cf2bb89cf27bd488108c1dea",
+      "bridge_url_alias": "andorra--url-cf2bb89cf27bd488108c1dea"
+    },
+    {
+      "url": "https://www.eleccions.ad/",
+      "source_id": "andorra--url-ead54d34308b4a918dfe86a5",
+      "bridge_url_alias": "andorra--url-ead54d34308b4a918dfe86a5"
+    }
+  ]
+}

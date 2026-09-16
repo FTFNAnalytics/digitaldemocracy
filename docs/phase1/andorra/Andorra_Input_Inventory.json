@@ -1,0 +1,218 @@
+{
+  "status": "documentation_only",
+  "pinned_commit": "bc1d1a9b1c437ca0da309e3820967d4e29ff919d",
+  "main_commit": "9065dcdfc0cbc78171dad35b60742ae232b6dd00",
+  "hash_inputs": {
+    "canonicalization": "atlas-c14n/1",
+    "hash_algorithm": "sha256",
+    "lineage_id": "country-package-andorra",
+    "inputs": [
+      {
+        "input_path": "data/countries/andorra/README.md",
+        "input_kind": "package",
+        "sha256": "a7f7ea93fe7ae278db8dd41f7a89700d22779feae524e5d6c6297792c23349ed",
+        "byte_count": 5297
+      },
+      {
+        "input_path": "data/countries/andorra/andorra.html",
+        "input_kind": "artifact",
+        "sha256": "c40580331a968e652146090c605eb361c16cda2232732b1b51705c32a68dfb08",
+        "byte_count": 910
+      },
+      {
+        "input_path": "data/countries/andorra/briefings/AD-M-01.html",
+        "input_kind": "artifact",
+        "sha256": "6e21fa152a497bcb9e2f6dd0d09bd99f8d2d64b2aac01d79b46676e00b8904e8",
+        "byte_count": 6067
+      },
+      {
+        "input_path": "data/countries/andorra/briefings/AD-M-02.html",
+        "input_kind": "artifact",
+        "sha256": "7e576f4adbce3dfecd13ee5ab2e2bad1ad070a9967c07ba091bd3a11c8f8f3a6",
+        "byte_count": 6874
+      },
+      {
+        "input_path": "data/countries/andorra/briefings/AD-M-03.html",
+        "input_kind": "artifact",
+        "sha256": "6d72b14c7c01c0a161837cac95097e0134150febe78f67082e3b941570afc6f3",
+        "byte_count": 6715
+      },
+      {
+        "input_path": "data/countries/andorra/briefings/AD-M-04.html",
+        "input_kind": "artifact",
+        "sha256": "ae2661d5579def4bb2e379d7ce02afd961ee22b8f784a461b127d11b9035cc82",
+        "byte_count": 6330
+      },
+      {
+        "input_path": "data/countries/andorra/briefings/AD-M-05.html",
+        "input_kind": "artifact",
+        "sha256": "425543504f9c560a81613e7c912f4f461250f3e38db1f1bf2cd8e977fc946cff",
+        "byte_count": 6682
+      },
+      {
+        "input_path": "data/countries/andorra/briefings/AD-M-06.html",
+        "input_kind": "artifact",
+        "sha256": "9ccca81668c8423004f0340e79885898bd8481e45acfc4c445f83683399b677c",
+        "byte_count": 6535
+      },
+      {
+        "input_path": "data/countries/andorra/briefings/AD-M-07.html",
+        "input_kind": "artifact",
+        "sha256": "68c7a8d6a987c7d047c51b390dcc4c0ea2de0aaf3b5972571e3b0104857e9265",
+        "byte_count": 6911
+      },
+      {
+        "input_path": "data/countries/andorra/cached-formulas.json",
+        "input_kind": "package",
+        "sha256": "c77493381853ff38ed8762c801369010a5eb04f1c9265e11d5737a4d938aee62",
+        "byte_count": 8231
+      },
+      {
+        "input_path": "data/countries/andorra/coverage.json",
+        "input_kind": "package",
+        "sha256": "e0968e7dc3537644912b7bf2b96f8b32d4cc88bb10f162a2bd0b59a1311c18ce",
+        "byte_count": 814
+      },
+      {
+        "input_path": "data/countries/andorra/extract.py",
+        "input_kind": "package",
+        "sha256": "e97427bbbbdd6ff21b5edcbfd1bf0b308b820df90270758f356145a9baeab991",
+        "byte_count": 11131
+      },
+      {
+        "input_path": "data/countries/andorra/history-index-crosscheck.json",
+        "input_kind": "package",
+        "sha256": "b3f3f4bf53c2b4ab40c76f3bec49e2493cb4a66182fabc5dad03976260218a17",
+        "byte_count": 6720
+      },
+      {
+        "input_path": "data/countries/andorra/manifest.json",
+        "input_kind": "package",
+        "sha256": "6bf316e03ed7ed856b34ccb66438e847b67f6f44c0ccdaebd0e98b2fddf2564c",
+        "byte_count": 6716
+      },
+      {
+        "input_path": "data/countries/andorra/source-links.json",
+        "input_kind": "package",
+        "sha256": "7f205b4df588912af5525e8c39b5338c4c9bc1738db6a70dac963f051f57cd5e",
+        "byte_count": 1036
+      },
+      {
+        "input_path": "data/countries/andorra/tables/country-coverage.json",
+        "input_kind": "package",
+        "sha256": "7cb2c04f9bc63673d6cacbc6b7d08870364810810f0a064a3ff872f9f1047504",
+        "byte_count": 266
+      },
+      {
+        "input_path": "data/countries/andorra/tables/country-notes.json",
+        "input_kind": "package",
+        "sha256": "3a0d6ca6f8fadb4bd5218cea23f086c46aa58c604dbc42c8af390d9eb6683d8f",
+        "byte_count": 656
+      },
+      {
+        "input_path": "data/countries/andorra/tables/detailed-returns.json",
+        "input_kind": "package",
+        "sha256": "bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1",
+        "byte_count": 15425
+      },
+      {
+        "input_path": "data/countries/andorra/tables/election-calendar.json",
+        "input_kind": "package",
+        "sha256": "aa444f13e0864e3e2cee3903249be2cc456d6449c89d9dabe655bd4f3da624a4",
+        "byte_count": 536
+      },
+      {
+        "input_path": "data/countries/andorra/tables/governing-control.json",
+        "input_kind": "package",
+        "sha256": "fa0dcd8db2d960f0392cf887f42778a44a30a152775cb0f0b1e2e11aa81dcc81",
+        "byte_count": 6045
+      },
+      {
+        "input_path": "data/countries/andorra/tables/history-index.json",
+        "input_kind": "package",
+        "sha256": "d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686",
+        "byte_count": 6758
+      },
+      {
+        "input_path": "data/countries/andorra/tables/office-register.json",
+        "input_kind": "package",
+        "sha256": "318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f",
+        "byte_count": 5134
+      },
+      {
+        "input_path": "data/countries/andorra/tables/parameters.json",
+        "input_kind": "package",
+        "sha256": "47d666fd87eb6c3db5882213d2ef10f36c994fa9f31859aafde37fdb613343e2",
+        "byte_count": 991
+      },
+      {
+        "input_path": "data/countries/andorra/tables/polling-evidence.json",
+        "input_kind": "package",
+        "sha256": "38f381504737bbd9cabb078cb22be7ceae36a64fe05df181568a88048e0f0cca",
+        "byte_count": 1719
+      },
+      {
+        "input_path": "data/countries/andorra/tables/read-me.json",
+        "input_kind": "package",
+        "sha256": "ac783fd2d95bfb0359c71873c3e0f3e86e11e54564551aaa84440207e49f2540",
+        "byte_count": 3671
+      },
+      {
+        "input_path": "data/countries/andorra/tables/sources.json",
+        "input_kind": "package",
+        "sha256": "6d43c254e4316b41459ebe30bec3422495ef9ec2cfd73e1e576e89f55d7fd1d2",
+        "byte_count": 1941
+      },
+      {
+        "input_path": "data/countries/andorra/validate.py",
+        "input_kind": "package",
+        "sha256": "89a93343433f2cc4c7c5f339b12a661cf9d85c5e2c7261f94e0f5d3df4fc5c8b",
+        "byte_count": 5846
+      },
+      {
+        "input_path": "schemas/atlas/tiers/andorra.json",
+        "input_kind": "tier_classification",
+        "sha256": "b3dfa904894f9c83c79989186aa2651f565ac89701e131d91952cbce67237014",
+        "byte_count": 4373
+      }
+    ],
+    "overrides": [],
+    "adapter_version": "atlas-andorra-field-map/1",
+    "method_version": "atlas-preserve-evidence/1",
+    "schema_version": "atlas-master/1",
+    "schema_inputs": [
+      {
+        "input_path": "0001_atlas_attempt_log.sql",
+        "sha256": "e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1"
+      },
+      {
+        "input_path": "0002_atlas_master.sql",
+        "sha256": "1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da"
+      }
+    ]
+  },
+  "hash_inputs_canonical_json": "{\"adapter_version\":\"atlas-andorra-field-map/1\",\"canonicalization\":\"atlas-c14n/1\",\"hash_algorithm\":\"sha256\",\"inputs\":[{\"byte_count\":5297,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/README.md\",\"sha256\":\"a7f7ea93fe7ae278db8dd41f7a89700d22779feae524e5d6c6297792c23349ed\"},{\"byte_count\":910,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/andorra/andorra.html\",\"sha256\":\"c40580331a968e652146090c605eb361c16cda2232732b1b51705c32a68dfb08\"},{\"byte_count\":6067,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/andorra/briefings/AD-M-01.html\",\"sha256\":\"6e21fa152a497bcb9e2f6dd0d09bd99f8d2d64b2aac01d79b46676e00b8904e8\"},{\"byte_count\":6874,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/andorra/briefings/AD-M-02.html\",\"sha256\":\"7e576f4adbce3dfecd13ee5ab2e2bad1ad070a9967c07ba091bd3a11c8f8f3a6\"},{\"byte_count\":6715,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/andorra/briefings/AD-M-03.html\",\"sha256\":\"6d72b14c7c01c0a161837cac95097e0134150febe78f67082e3b941570afc6f3\"},{\"byte_count\":6330,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/andorra/briefings/AD-M-04.html\",\"sha256\":\"ae2661d5579def4bb2e379d7ce02afd961ee22b8f784a461b127d11b9035cc82\"},{\"byte_count\":6682,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/andorra/briefings/AD-M-05.html\",\"sha256\":\"425543504f9c560a81613e7c912f4f461250f3e38db1f1bf2cd8e977fc946cff\"},{\"byte_count\":6535,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/andorra/briefings/AD-M-06.html\",\"sha256\":\"9ccca81668c8423004f0340e79885898bd8481e45acfc4c445f83683399b677c\"},{\"byte_count\":6911,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/andorra/briefings/AD-M-07.html\",\"sha256\":\"68c7a8d6a987c7d047c51b390dcc4c0ea2de0aaf3b5972571e3b0104857e9265\"},{\"byte_count\":8231,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/cached-formulas.json\",\"sha256\":\"c77493381853ff38ed8762c801369010a5eb04f1c9265e11d5737a4d938aee62\"},{\"byte_count\":814,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/coverage.json\",\"sha256\":\"e0968e7dc3537644912b7bf2b96f8b32d4cc88bb10f162a2bd0b59a1311c18ce\"},{\"byte_count\":11131,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/extract.py\",\"sha256\":\"e97427bbbbdd6ff21b5edcbfd1bf0b308b820df90270758f356145a9baeab991\"},{\"byte_count\":6720,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/history-index-crosscheck.json\",\"sha256\":\"b3f3f4bf53c2b4ab40c76f3bec49e2493cb4a66182fabc5dad03976260218a17\"},{\"byte_count\":6716,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/manifest.json\",\"sha256\":\"6bf316e03ed7ed856b34ccb66438e847b67f6f44c0ccdaebd0e98b2fddf2564c\"},{\"byte_count\":1036,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/source-links.json\",\"sha256\":\"7f205b4df588912af5525e8c39b5338c4c9bc1738db6a70dac963f051f57cd5e\"},{\"byte_count\":266,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/tables/country-coverage.json\",\"sha256\":\"7cb2c04f9bc63673d6cacbc6b7d08870364810810f0a064a3ff872f9f1047504\"},{\"byte_count\":656,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/tables/country-notes.json\",\"sha256\":\"3a0d6ca6f8fadb4bd5218cea23f086c46aa58c604dbc42c8af390d9eb6683d8f\"},{\"byte_count\":15425,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/tables/detailed-returns.json\",\"sha256\":\"bc9ffbbc55cde4155028fb88d0e805910d82888a0a95ec2a09790cf459dba5d1\"},{\"byte_count\":536,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/tables/election-calendar.json\",\"sha256\":\"aa444f13e0864e3e2cee3903249be2cc456d6449c89d9dabe655bd4f3da624a4\"},{\"byte_count\":6045,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/tables/governing-control.json\",\"sha256\":\"fa0dcd8db2d960f0392cf887f42778a44a30a152775cb0f0b1e2e11aa81dcc81\"},{\"byte_count\":6758,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/tables/history-index.json\",\"sha256\":\"d5532e56a0b38600091719935d9e013059be16b72916948657f719e974aaf686\"},{\"byte_count\":5134,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/tables/office-register.json\",\"sha256\":\"318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f\"},{\"byte_count\":991,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/tables/parameters.json\",\"sha256\":\"47d666fd87eb6c3db5882213d2ef10f36c994fa9f31859aafde37fdb613343e2\"},{\"byte_count\":1719,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/tables/polling-evidence.json\",\"sha256\":\"38f381504737bbd9cabb078cb22be7ceae36a64fe05df181568a88048e0f0cca\"},{\"byte_count\":3671,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/tables/read-me.json\",\"sha256\":\"ac783fd2d95bfb0359c71873c3e0f3e86e11e54564551aaa84440207e49f2540\"},{\"byte_count\":1941,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/tables/sources.json\",\"sha256\":\"6d43c254e4316b41459ebe30bec3422495ef9ec2cfd73e1e576e89f55d7fd1d2\"},{\"byte_count\":5846,\"input_kind\":\"package\",\"input_path\":\"data/countries/andorra/validate.py\",\"sha256\":\"89a93343433f2cc4c7c5f339b12a661cf9d85c5e2c7261f94e0f5d3df4fc5c8b\"},{\"byte_count\":4373,\"input_kind\":\"tier_classification\",\"input_path\":\"schemas/atlas/tiers/andorra.json\",\"sha256\":\"b3dfa904894f9c83c79989186aa2651f565ac89701e131d91952cbce67237014\"}],\"lineage_id\":\"country-package-andorra\",\"method_version\":\"atlas-preserve-evidence/1\",\"overrides\":[],\"schema_inputs\":[{\"input_path\":\"0001_atlas_attempt_log.sql\",\"sha256\":\"e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1\"},{\"input_path\":\"0002_atlas_master.sql\",\"sha256\":\"1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da\"}],\"schema_version\":\"atlas-master/1\"}",
+  "candidate_fingerprint_sha256": "55e3c53d76c1f4a520b1ce02f55f9c1d09670dea3b9ebadffa41b7d80e3da983",
+  "candidate_release_id": "country-package-andorra--sha256-55e3c53d76c1f4a520b1ce02f55f9c1d09670dea3b9ebadffa41b7d80e3da983",
+  "not_a_published_release": true,
+  "verified_counts": {
+    "current_offices": 7,
+    "historical_offices": 0,
+    "geographies": 7,
+    "selected_histories": 21,
+    "result_rows": 53,
+    "control_observations_retained": 7,
+    "national_polls_retained": 1,
+    "source_catalogue_rows": 10,
+    "inline_only_sources": 3,
+    "sources": 13,
+    "briefings_retained": 7,
+    "municipal_offices": 7,
+    "regional_offices": 0,
+    "proceedings": 0,
+    "party_mappings": 0,
+    "package_files_retained": 27
+  },
+  "manifest_listed_files": 23,
+  "approved_tier_unchanged": true
+}
