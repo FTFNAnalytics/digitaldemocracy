@@ -328,6 +328,14 @@ export function listAtlasRegionalCalendar(
   denominatorKnown: boolean;
 } {
   const offices = listAtlasOffices(countryId, sqlitePath).filter((row) => row.tier === "regional");
+  if (countryId === "andorra") {
+    return {
+      offices,
+      count: offices.length,
+      label: "No regional tier in this package; seven municipal councils.",
+      denominatorKnown: false,
+    };
+  }
   if (countryId === "alderney") {
     return {
       offices,

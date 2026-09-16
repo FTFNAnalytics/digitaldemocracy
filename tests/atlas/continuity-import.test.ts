@@ -5,6 +5,7 @@ import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
 import { importAlbania } from "../../lib/atlas/albania/import";
 import { importAlderney } from "../../lib/atlas/alderney/import";
+import { importAndorra } from "../../lib/atlas/andorra/import";
 import { importAtlasLineages, parseImportScope } from "../../lib/atlas/continuity/import";
 import { NZ_LINEAGE_ID } from "../../lib/atlas/continuity/nz";
 import {
@@ -13,6 +14,7 @@ import {
 } from "../../lib/atlas/continuity/approved";
 import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
 import { LINEAGE_ID as ALDERNEY_LINEAGE } from "../../lib/atlas/alderney/identity";
+import { LINEAGE_ID as ANDORRA_LINEAGE } from "../../lib/atlas/andorra/identity";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
 
@@ -57,6 +59,7 @@ describe("approved-pack gate", () => {
   it("parses ATLAS_IMPORT_SCOPE and rejects unknown values", () => {
     expect(parseImportScope("all")).toBe("all");
     expect(parseImportScope("albania")).toBe("albania");
+    expect(parseImportScope("andorra")).toBe("andorra");
     expect(parseImportScope("alderney")).toBe("alderney");
     expect(parseImportScope("latam")).toBe("latam");
     expect(parseImportScope("nz")).toBe("nz");
@@ -119,6 +122,44 @@ describe("multi-lineage continuity import", () => {
       db.close();
     }
   });
+
+  it("imports Albania then Andorra into one master without dropping Albania", () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-andorra-"));
+    tempDirs.push(dir);
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+    const albania = importAlbania({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "albania-andorra-test",
+    });
+    expect(albania.counts.current_offices).toBe(122);
+    const andorra = importAndorra({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "albania-andorra-test",
+    });
+    expect(andorra.counts.current_offices).toBe(7);
+    expect(andorra.counts.regional_offices).toBe(0);
+    const db = new DatabaseSync(sqlitePath, { readOnly: true });
+    try {
+      expect(
+        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
+      ).toBe(122);
+      expect(
+        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ANDORRA_LINEAGE)?.n),
+      ).toBe(7);
+      const lineages = db
+        .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
+        .all()
+        .map((row) => String(row.lineage_id));
+      expect(lineages).toEqual([ALBANIA_LINEAGE, ANDORRA_LINEAGE].sort());
+    } finally {
+      db.close();
+    }
+  }, 180_000);
 
   it("imports Albania then Alderney into one master without dropping Albania", () => {
     const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-alderney-"));

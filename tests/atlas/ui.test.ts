@@ -3,6 +3,7 @@ import { mkdtempSync, rmSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { importAlderney } from "../../lib/atlas/alderney/import";
+import { importAndorra } from "../../lib/atlas/andorra/import";
 import { importNewZealand } from "../../lib/atlas/continuity/nz";
 import { migrateMasterDatabase } from "../../lib/atlas/apply-migrations";
 import { loadAtlasCatalog, getAtlasCountry, listAtlasOffices, listAtlasRegionalCalendar } from "../../lib/atlas/read";
@@ -62,6 +63,31 @@ describe("Atlas SQLite UI catalog", () => {
     expect(offices).toHaveLength(4);
     expect(offices.some((row) => row.officeId === "NZ-BULLER-WESTPORT-2026")).toBe(true);
     expect(getAtlasCountry("argentina", sqlitePath)).toBeNull();
+  });
+
+  it("shows Andorra's honest empty regional calendar after import", () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-andorra-ui-"));
+    tempDirs.push(dir);
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+    importAndorra({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "atlas-ui-test",
+    });
+    const catalog = loadAtlasCatalog(sqlitePath);
+    expect(catalog.status).toBe("ready");
+    expect(catalog.countries.map((row) => row.countryId)).toEqual(["andorra"]);
+    expect(catalog.countries[0]?.officeCount).toBe(7);
+    const country = getAtlasCountry("andorra", sqlitePath);
+    expect(country?.name).toBe("Andorra");
+    expect(listAtlasOffices("andorra", sqlitePath)).toHaveLength(7);
+    const regional = listAtlasRegionalCalendar("andorra", sqlitePath);
+    expect(regional.offices).toEqual([]);
+    expect(regional.count).toBe(0);
+    expect(regional.label).toBe("No regional tier in this package; seven municipal councils.");
+    expect(regional.denominatorKnown).toBe(false);
   });
 
   it("shows Alderney's honest empty regional calendar after import", () => {

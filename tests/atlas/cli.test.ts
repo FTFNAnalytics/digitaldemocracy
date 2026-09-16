@@ -199,6 +199,46 @@ describe("atlas CLI stubs", () => {
   );
 
   it(
+    "import:atlas loads Andorra into temporary databases",
+    () => {
+      const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-andorra-cli-"));
+      tempDirs.push(dir);
+      const sqlitePath = path.join(dir, "atlas.sqlite");
+      const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+      const result = runAtlasScript("scripts/atlas/import.ts", {
+        ATLAS_SQLITE_PATH: sqlitePath,
+        ATLAS_ATTEMPTS_SQLITE_PATH: attemptsPath,
+        ATLAS_OPERATOR: "atlas-cli-test",
+        ATLAS_IMPORT_SCOPE: "andorra",
+        OBSERVATORY_FIXTURES: "",
+      });
+      expect(result.status, result.stderr).toBe(0);
+      expect(result.stdout).toContain("import:atlas");
+      expect(result.stdout).toContain("lineage=country-package-andorra");
+      expect(result.stdout).toContain("andorra_offices=7");
+      expect(result.stdout).toContain("andorra_selected_histories=21");
+      expect(result.stdout).toContain("andorra_result_rows=53");
+      expect(result.stdout).toContain("andorra_regional=0");
+
+      const master = new DatabaseSync(sqlitePath, { readOnly: true });
+      try {
+        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 7 });
+        expect(
+          master.prepare("SELECT geography_id FROM office WHERE office_id = 'AD-M-05'").get(),
+        ).toMatchObject({ geography_id: "geo-59eee2ef1a3df387bf66a0f6" });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'regional'")
+            .get(),
+        ).toMatchObject({ n: 0 });
+      } finally {
+        master.close();
+      }
+    },
+    60_000,
+  );
+
+  it(
     "import:atlas loads Alderney into temporary databases",
     () => {
       const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-alderney-cli-"));

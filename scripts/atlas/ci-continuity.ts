@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Alderney + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -13,6 +13,7 @@ import { NZ_LINEAGE_ID } from "../../lib/atlas/continuity/nz";
 import { draftContinuityPacks } from "../../lib/atlas/continuity/approved";
 import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
 import { LINEAGE_ID as ALDERNEY_LINEAGE } from "../../lib/atlas/alderney/identity";
+import { LINEAGE_ID as ANDORRA_LINEAGE } from "../../lib/atlas/andorra/identity";
 
 function fail(message: string): never {
   console.error(`test:atlas-import failed: ${message}`);
@@ -37,6 +38,15 @@ function main() {
     );
     if (result.albania?.counts.current_offices !== 122) {
       fail(`Albania offices ${String(result.albania?.counts.current_offices)}`);
+    }
+    if (result.andorra?.counts.current_offices !== 7) {
+      fail(`Andorra offices ${String(result.andorra?.counts.current_offices)}`);
+    }
+    if (result.andorra?.counts.regional_offices !== 0) {
+      fail(`Andorra regional ${String(result.andorra?.counts.regional_offices)}`);
+    }
+    if (result.andorra?.counts.selected_histories !== 21) {
+      fail(`Andorra events ${String(result.andorra?.counts.selected_histories)}`);
     }
     if (result.alderney?.counts.current_offices !== 2) {
       fail(`Alderney offices ${String(result.alderney?.counts.current_offices)}`);
@@ -69,8 +79,20 @@ function main() {
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ALBANIA_LINEAGE]) !== 122) {
         fail("Albania office rows");
       }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ANDORRA_LINEAGE]) !== 7) {
+        fail("Andorra office rows");
+      }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ALDERNEY_LINEAGE]) !== 2) {
         fail("Alderney office rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'regional'",
+          [ANDORRA_LINEAGE],
+        ) !== 0
+      ) {
+        fail("Andorra regional rows");
       }
       if (
         count(
@@ -151,7 +173,13 @@ function main() {
         .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
         .all()
         .map((row) => String(row.lineage_id));
-      const expectedLineages = [ALBANIA_LINEAGE, ALDERNEY_LINEAGE, NZ_LINEAGE_ID, LATAM_LINEAGE_ID].sort();
+      const expectedLineages = [
+        ALBANIA_LINEAGE,
+        ALDERNEY_LINEAGE,
+        ANDORRA_LINEAGE,
+        NZ_LINEAGE_ID,
+        LATAM_LINEAGE_ID,
+      ].sort();
       if (JSON.stringify(lineages) !== JSON.stringify(expectedLineages)) {
         fail(`publication_release ${lineages.join(",")}`);
       }
@@ -160,7 +188,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 alderney=2 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });
