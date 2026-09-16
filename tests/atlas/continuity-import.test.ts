@@ -12,7 +12,6 @@ import {
   draftContinuityPacks,
 } from "../../lib/atlas/continuity/approved";
 import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
-import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
 
@@ -72,108 +71,48 @@ describe("multi-lineage continuity import", () => {
     }
   });
 
-  it(
-    "imports Albania plus approved Batch A+B packs and skips residual drafts",
-    () => {
-      const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-continuity-"));
-      tempDirs.push(dir);
-      const sqlitePath = path.join(dir, "atlas.sqlite");
-      const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
-      const result = importAtlasLineages(
-        {
-          root: repoRoot,
-          sqlitePath,
-          attemptsPath,
-          operator: "continuity-test",
-        },
-        "all",
-      );
-
-      expect(result.albania?.counts.current_offices).toBe(122);
-      expect(result.latam?.counts.offices).toBe(6361);
-      expect(result.nz?.counts.offices).toBe(4);
-      expect(result.nz?.counts.events).toBe(7);
-      expect(result.nz?.counts.result_rows).toBe(36);
-      expect(result.latam?.skippedDraftCountries).toEqual(
-        draftContinuityPacks(repoRoot)
-          .filter((pack) => pack.lineageId === LATAM_LINEAGE_ID)
-          .map((pack) => pack.countryId)
-          .sort(),
-      );
-
-      const db = new DatabaseSync(sqlitePath, { readOnly: true });
-      try {
-        expect(
-          Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
-        ).toBe(122);
-        expect(
-          Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(LATAM_LINEAGE_ID)?.n),
-        ).toBe(6361);
-        expect(
-          Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(NZ_LINEAGE_ID)?.n),
-        ).toBe(4);
-
-        const approved = [
-          "bahamas",
-          "belize",
-          "brazil",
-          "colombia",
-          "cuba",
-          "dominica",
-          "dominican-republic",
-          "guatemala",
-          "jamaica",
-          "mexico",
-          "paraguay",
-        ];
-        for (const country of approved) {
-          const n = Number(
-            db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND country_id = ?").get(LATAM_LINEAGE_ID, country)
-              ?.n,
-          );
-          expect(n, country).toBeGreaterThan(0);
-        }
-        for (const pack of result.latam!.skippedDraftCountries) {
-          expect(
-            Number(
-              db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND country_id = ?").get(LATAM_LINEAGE_ID, pack)
-                ?.n,
-            ),
-          ).toBe(0);
-        }
-
-        expect(
-          Number(
-            db
-              .prepare(
-                `SELECT COUNT(*) AS n FROM result_row
-                 WHERE lineage_id = ? AND country_id = 'mexico' AND share IS NULL AND share_status = 'unknown' AND evidence_status = 'disputed'`,
-              )
-              .get(LATAM_LINEAGE_ID)?.n,
-          ),
-        ).toBe(67);
-        expect(
-          Number(
-            db
-              .prepare(
-                `SELECT COUNT(*) AS n FROM result_row
-                 WHERE lineage_id = ? AND country_id = 'mexico' AND share IS NOT NULL AND share > 100`,
-              )
-              .get(LATAM_LINEAGE_ID)?.n,
-          ),
-        ).toBe(0);
-
-        const lineages = db
-          .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
-          .all()
-          .map((row) => String(row.lineage_id));
-        expect(lineages).toEqual([ALBANIA_LINEAGE, NZ_LINEAGE_ID, LATAM_LINEAGE_ID].sort());
-      } finally {
-        db.close();
-      }
-    },
-    600_000,
-  );
+  it("imports Albania then New Zealand into one master without dropping Albania", () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-nz-"));
+    tempDirs.push(dir);
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+    const result = importAtlasLineages(
+      {
+        root: repoRoot,
+        sqlitePath,
+        attemptsPath,
+        operator: "albania-nz-test",
+      },
+      "albania",
+    );
+    expect(result.albania?.counts.current_offices).toBe(122);
+    const nz = importAtlasLineages(
+      {
+        root: repoRoot,
+        sqlitePath,
+        attemptsPath,
+        operator: "albania-nz-test",
+      },
+      "nz",
+    );
+    expect(nz.nz?.counts.offices).toBe(4);
+    const db = new DatabaseSync(sqlitePath, { readOnly: true });
+    try {
+      expect(
+        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
+      ).toBe(122);
+      expect(
+        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(NZ_LINEAGE_ID)?.n),
+      ).toBe(4);
+      const lineages = db
+        .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
+        .all()
+        .map((row) => String(row.lineage_id));
+      expect(lineages).toEqual([ALBANIA_LINEAGE, NZ_LINEAGE_ID].sort());
+    } finally {
+      db.close();
+    }
+  });
 
   it("keeps the Albania-only importer working after continuity modules land", () => {
     const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-only-"));

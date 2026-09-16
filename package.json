@@ -9,6 +9,7 @@
     "preview": "npm start",
     "lint": "eslint",
     "test": "node --experimental-sqlite --no-warnings ./node_modules/vitest/vitest.mjs run",
+    "test:atlas-import": "node --experimental-sqlite --no-warnings --import tsx scripts/atlas/ci-continuity.ts",
     "seo:assets": "node scripts/generate-seo-assets.mjs",
     "import:data": "node --import tsx scripts/import/cli.ts",
     "import:countries": "node --import tsx scripts/import/countries.ts",

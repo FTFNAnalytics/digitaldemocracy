@@ -48,13 +48,17 @@ Prompt H residual clearances, Mexico’s 95 sibling shares, and live cutover rem
 
 ## CI
 
-`tests/atlas/continuity-import.test.ts` builds a temp SQLite, runs the full approved set, and asserts:
+`tests/atlas/continuity-import.test.ts` covers the approved-pack gate, Albania-only import, and Albania+NZ serial publication.
+
+`npm run test:atlas-import` (wired in GitHub CI after `npm test`) builds a temp SQLite and asserts the full approved set:
 
 - Albania 122 offices / 0 regional
 - 6,361 approved LatAm offices
 - New Zealand 4 offices / 7 events / 36 historical results
 - draft country offices absent
 - 67 Mexico withhold rows and zero `share > 100` Mexico rows
+
+The full import is a dedicated CI script rather than a Vitest case so the ~3 minute LatAm projection does not trip Vitest's worker RPC timeout.
 
 The existing Albania CLI test uses `ATLAS_IMPORT_SCOPE=albania` so it stays a fast Albania-only proof.
 
