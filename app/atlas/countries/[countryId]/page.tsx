@@ -9,7 +9,7 @@ import {
 import { AtlasPageHeader } from "@/components/atlas/chrome";
 import { EmptyState } from "@/components/observatory/status";
 import { DataTable } from "@/components/observatory/table";
-import { formatAtlasDate, formatAtlasTier, getAtlasCountry, listAtlasOffices, loadAtlasCatalog } from "@/lib/atlas/read";
+import { formatAtlasDate, formatAtlasTier, getAtlasCountry, listAtlasOffices, listAtlasRegionalCalendar, loadAtlasCatalog } from "@/lib/atlas/read";
 import { atlasRoutes } from "@/lib/atlas/routes";
 
 type Props = {
@@ -44,6 +44,7 @@ export default async function AtlasCountryPage({ params, searchParams }: Props) 
   const country = getAtlasCountry(countryId);
   if (!country) notFound();
   const offices = listAtlasOffices(countryId);
+  const regional = listAtlasRegionalCalendar(countryId);
   const paged = paginate(offices, query, "page", 50);
 
   return (
@@ -68,6 +69,39 @@ export default async function AtlasCountryPage({ params, searchParams }: Props) 
       </p>
 
       <section>
+        <h2 className="obs-heading text-2xl">Regional calendar</h2>
+        <p className="mt-2 text-sm text-navy/70">
+          Regional listings use stored approved tier=regional only. A zero numerator is not a
+          sourced denominator. Conditional other-tier dates are not counted as regional.
+        </p>
+        {regional.count === 0 ? (
+          <div className="mt-4">
+            <EmptyState title="No regional-tier offices">
+              <p>{regional.label}</p>
+              {regional.denominatorKnown ? null : (
+                <p className="mt-2">Regional universe denominator is unknown.</p>
+              )}
+            </EmptyState>
+          </div>
+        ) : (
+          <div className="mt-4">
+            <DataTable
+              caption={`Regional-tier offices in ${country.name}`}
+              columns={["Office", "Type", "Status"]}
+              empty="No regional-tier offices."
+              rows={regional.offices.map((office) => [
+                <Link key={office.officeId} href={atlasRoutes.office(office.officeId)} className="obs-link">
+                  {office.name}
+                </Link>,
+                office.officeType,
+                office.officeStatus,
+              ])}
+            />
+          </div>
+        )}
+      </section>
+
+      <section className="mt-10">
         <h2 className="obs-heading text-2xl">Offices and tiers</h2>
         <p className="mt-2 text-sm text-navy/70">
           Tiers come from approved classification files. Next-election labels keep their supplied
@@ -87,7 +121,7 @@ export default async function AtlasCountryPage({ params, searchParams }: Props) 
               office.officeType,
               office.officeStatus,
               office.nextLabel
-                ? `${formatAtlasDate(office)}${office.nextPrecision ? ` (${office.nextPrecision})` : ""}`
+                ? `${formatAtlasDate(office)}${office.nextPrecision ? ` (${office.nextPrecision}${office.nextCertainty ? `, ${office.nextCertainty}` : ""})` : ""}`
                 : "not supplied",
             ])}
           />

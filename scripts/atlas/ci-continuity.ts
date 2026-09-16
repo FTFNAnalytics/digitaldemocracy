@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Alderney + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -12,6 +12,7 @@ import { LATAM_LINEAGE_ID } from "../../lib/atlas/continuity/latam";
 import { NZ_LINEAGE_ID } from "../../lib/atlas/continuity/nz";
 import { draftContinuityPacks } from "../../lib/atlas/continuity/approved";
 import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
+import { LINEAGE_ID as ALDERNEY_LINEAGE } from "../../lib/atlas/alderney/identity";
 
 function fail(message: string): never {
   console.error(`test:atlas-import failed: ${message}`);
@@ -37,6 +38,18 @@ function main() {
     if (result.albania?.counts.current_offices !== 122) {
       fail(`Albania offices ${String(result.albania?.counts.current_offices)}`);
     }
+    if (result.alderney?.counts.current_offices !== 2) {
+      fail(`Alderney offices ${String(result.alderney?.counts.current_offices)}`);
+    }
+    if (result.alderney?.counts.other_offices !== 2) {
+      fail(`Alderney other ${String(result.alderney?.counts.other_offices)}`);
+    }
+    if (result.alderney?.counts.regional_offices !== 0) {
+      fail(`Alderney regional ${String(result.alderney?.counts.regional_offices)}`);
+    }
+    if (result.alderney?.counts.selected_histories !== 6) {
+      fail(`Alderney events ${String(result.alderney?.counts.selected_histories)}`);
+    }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
     if (result.nz?.counts.events !== 7) fail(`NZ events ${String(result.nz?.counts.events)}`);
@@ -55,6 +68,27 @@ function main() {
     try {
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ALBANIA_LINEAGE]) !== 122) {
         fail("Albania office rows");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ALDERNEY_LINEAGE]) !== 2) {
+        fail("Alderney office rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'regional'",
+          [ALDERNEY_LINEAGE],
+        ) !== 0
+      ) {
+        fail("Alderney regional rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM research_date WHERE lineage_id = ? AND certainty = 'conditional'",
+          [ALDERNEY_LINEAGE],
+        ) !== 2
+      ) {
+        fail("Alderney conditional dates");
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [LATAM_LINEAGE_ID]) !== 10227) {
         fail("LatAm office rows");
@@ -117,7 +151,7 @@ function main() {
         .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
         .all()
         .map((row) => String(row.lineage_id));
-      const expectedLineages = [ALBANIA_LINEAGE, NZ_LINEAGE_ID, LATAM_LINEAGE_ID].sort();
+      const expectedLineages = [ALBANIA_LINEAGE, ALDERNEY_LINEAGE, NZ_LINEAGE_ID, LATAM_LINEAGE_ID].sort();
       if (JSON.stringify(lineages) !== JSON.stringify(expectedLineages)) {
         fail(`publication_release ${lineages.join(",")}`);
       }
@@ -126,7 +160,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 alderney=2 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

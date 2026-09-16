@@ -197,6 +197,52 @@ describe("atlas CLI stubs", () => {
     },
     180_000,
   );
+
+  it(
+    "import:atlas loads Alderney into temporary databases",
+    () => {
+      const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-alderney-cli-"));
+      tempDirs.push(dir);
+      const sqlitePath = path.join(dir, "atlas.sqlite");
+      const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+      const result = runAtlasScript("scripts/atlas/import.ts", {
+        ATLAS_SQLITE_PATH: sqlitePath,
+        ATLAS_ATTEMPTS_SQLITE_PATH: attemptsPath,
+        ATLAS_OPERATOR: "atlas-cli-test",
+        ATLAS_IMPORT_SCOPE: "alderney",
+        OBSERVATORY_FIXTURES: "",
+      });
+      expect(result.status, result.stderr).toBe(0);
+      expect(result.stdout).toContain("import:atlas");
+      expect(result.stdout).toContain("lineage=country-package-alderney");
+      expect(result.stdout).toContain("alderney_offices=2");
+      expect(result.stdout).toContain("alderney_other=2");
+      expect(result.stdout).toContain("alderney_selected_histories=6");
+      expect(result.stdout).toContain("alderney_result_rows=27");
+      expect(result.stdout).toContain("alderney_regional=0");
+
+      const master = new DatabaseSync(sqlitePath, { readOnly: true });
+      try {
+        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 2 });
+        expect(
+          master.prepare("SELECT geography_id FROM office WHERE office_id = 'GG-ALD-STATES'").get(),
+        ).toMatchObject({ geography_id: "geo-5b23b4b4235736678bfe4b68" });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'regional'")
+            .get(),
+        ).toMatchObject({ n: 0 });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM research_date WHERE certainty = 'conditional'")
+            .get(),
+        ).toMatchObject({ n: 2 });
+      } finally {
+        master.close();
+      }
+    },
+    60_000,
+  );
 });
 
 describe("gitignore sqlite binaries", () => {
