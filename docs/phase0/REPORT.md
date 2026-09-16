@@ -10,7 +10,7 @@ Checked-in early European packages: Albania, Andorra, Alderney, Armenia. Combine
 | --- | --- | ---: | --- | ---: |
 | Albania | `europe-country-extract/1` | 122 | municipal (61 mayors + 61 councils) | 0 |
 | Andorra | `europe-country-extract/1` | 7 | municipal (communal councils) | 0 |
-| Alderney | `europe-country-extract/1` | 2 | other (draft; human OK required) | 0 |
+| Alderney | `europe-country-extract/1` | 2 | other (**approved** 2026-09-16) | 0 |
 | Armenia | `armenia-packed-europe/1` | 71 | municipal (community offices) | 0 |
 
 Workbook calendar strings such as Albania/Andorra `Regional / municipal` are **not** classifiers. Classification files are at `schemas/atlas/tiers/<slug>.json`. Each file's `office_id` set equals its source register exactly.
@@ -31,9 +31,9 @@ Andorra's seven communal councils are municipal. The package is the labelled emp
 
 Armenia stays last among early European targets. Packed payload register: 71 community offices, all municipal. Proportional councils elect the mayor; missing mayor rows were not invented. Boundary/calendar flags: `AM-ARARAT-C`, `AM-MASIS-C`, `AM-PAMBAK-C`, `AM-VANADZOR-C`, `AM-VEDI-C` (Prompt A token `AM-VEDI` is not a register ID).
 
-## Alderney human review
+## Alderney `other` approved
 
-`GG-ALD-STATES` and `GG-ALD-PLEB` are proposed `other` (territorial legislature / representation). Seat counts are not extra office IDs. Human OK is required before treating `other` as final.
+`GG-ALD-STATES` and `GG-ALD-PLEB` are **approved** `other` (territorial legislature / representation). Seat counts are not extra office IDs. Product owner approved 2026-09-16. Channel Islands are low priority for the broader Atlas.
 
 ## LatAm + NZ continuity counts
 

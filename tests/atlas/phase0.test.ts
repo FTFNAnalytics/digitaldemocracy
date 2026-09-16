@@ -68,9 +68,8 @@ describe("Phase 0 tier-classification drafts", () => {
   const armenia = readJson<TierFile>("schemas/atlas/tiers/armenia.json");
   const files = { albania, andorra, alderney, armenia };
 
-  it("uses draft_for_human_review and maps national to national_context", () => {
+  it("maps national to national_context and keeps Europe regional at zero", () => {
     for (const [slug, file] of Object.entries(files)) {
-      expect(file.status, slug).toBe("draft_for_human_review");
       expect(file.country_slug).toBe(slug);
       expect(file.classification_vocabulary).toEqual([
         "national",
@@ -83,6 +82,10 @@ describe("Phase 0 tier-classification drafts", () => {
       expect(file.rules.length).toBeGreaterThan(0);
       expect(file.counts_by_proposed_tier.regional).toBe(0);
     }
+    expect(albania.status).toBe("draft_for_human_review");
+    expect(andorra.status).toBe("draft_for_human_review");
+    expect(armenia.status).toBe("draft_for_human_review");
+    expect(alderney.status).toBe("approved");
   });
 
   it("matches each source register office_id set exactly", () => {
@@ -130,13 +133,20 @@ describe("Phase 0 tier-classification drafts", () => {
     );
   });
 
-  it("flags Alderney other as human-review tier_mapping", () => {
+  it("keeps approved Alderney other without human-review flags", () => {
+    const approved = alderney as TierFile & {
+      approval?: { by?: string; date?: string };
+    };
+    expect(approved.status).toBe("approved");
+    expect(approved.approval).toMatchObject({ by: "product_owner", date: "2026-09-16" });
     for (const row of alderney.classifications) {
       expect(row.tier).toBe("other");
       expect(row.schema_v1_tier).toBe("other");
-      expect(row.human_review_required).toBe(true);
-      expect(row.human_review?.queue).toBe("tier_mapping");
+      expect(row.human_review_required).toBeUndefined();
+      expect(row.human_review).toBeUndefined();
+      expect(row).not.toHaveProperty("tier_uncertain");
       expect(row.rationale).toMatch(/seat/i);
+      expect(row.rationale).not.toMatch(/not final/i);
     }
     expect(alderney.classifications.map((row) => row.office_id).sort()).toEqual([
       "GG-ALD-PLEB",
@@ -225,13 +235,24 @@ describe("Phase 0 inventory artifacts", () => {
     ]);
   });
 
-  it("lists Alderney tier_mapping items and Armenia boundary/calendar flags", () => {
+  it("resolves Alderney tier_mapping and keeps Armenia boundary/calendar flags", () => {
     const review = readJson<{
       items: Array<{ queue: string; office_id: string; prompt_token?: string; proposed_tier: string }>;
+      resolved: Array<{
+        queue: string;
+        office_id: string;
+        proposed_tier: string;
+        status: string;
+        resolved_at: string;
+      }>;
     }>("docs/phase0/human-review.json");
-    const alderney = review.items.filter((row) => row.queue === "tier_mapping");
+    expect(review.items.filter((row) => row.queue === "tier_mapping")).toEqual([]);
+    const alderney = review.resolved.filter((row) => row.queue === "tier_mapping");
     expect(alderney.map((row) => row.office_id).sort()).toEqual(["GG-ALD-PLEB", "GG-ALD-STATES"]);
-    expect(alderney.every((row) => row.proposed_tier === "other")).toBe(true);
+    expect(alderney.every((row) => row.proposed_tier === "other" && row.status === "resolved")).toBe(
+      true,
+    );
+    expect(alderney.every((row) => row.resolved_at === "2026-09-16")).toBe(true);
     const armenia = review.items.filter((row) => row.queue === "boundary_calendar");
     expect(armenia.map((row) => row.office_id)).toEqual([
       "AM-ARARAT-C",

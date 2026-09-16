@@ -1,6 +1,6 @@
 # Election Atlas — restructuring plan
 
-**Status:** Phase 0 plan is on main. Phase 1 **scaffolding** (gitignore, `ATLAS_SQLITE_PATH`, migrate/import entrypoints, bootstrap `schema_version`) is tracked in [`docs/atlas-phase1.md`](atlas-phase1.md). Phase 0 inventory and `draft_for_human_review` tier files are in [`docs/phase0/`](phase0/REPORT.md) and [`schemas/atlas/tiers/`](../schemas/atlas/tiers/README.md). Full Albania storage proof still waits on reviewed entity DDL, human review of the Albania tier draft, and the Albania map. Alderney `other` is not final until human OK. No `/atlas` UI or redirects.
+**Status:** Phase 0 plan is on main. Phase 1 **scaffolding** (gitignore, `ATLAS_SQLITE_PATH`, migrate/import entrypoints, bootstrap `schema_version`) is tracked in [`docs/atlas-phase1.md`](atlas-phase1.md). Phase 0 inventory and tier files are in [`docs/phase0/`](phase0/REPORT.md) and [`schemas/atlas/tiers/`](../schemas/atlas/tiers/README.md) (Alderney `other` **approved** 2026-09-16; other Europe files remain `draft_for_human_review`). Full Albania storage proof still waits on reviewed entity DDL, human review of the Albania tier draft, and the Albania map. No `/atlas` UI or redirects.
 
 **Phase 0** (this plan) merges when Justin says. **Phase 1 is un-gated by Justin’s disposition on this revision** — it does not wait on open-ended further audits. After Phase 1 exits, **stop for Phase 2 review**.
 

@@ -7,24 +7,25 @@ schema v1 `GovernmentTier` (`national_context` / `regional` / `municipal` /
 These files are the Atlas classifiers. Workbook calendar cohort strings such as
 Albania `Regional / municipal` are **not** classifiers.
 
-All files in this folder are **`draft_for_human_review`**. They were rebuilt from
-each package’s office register (one row per `office_id`; no invented IDs). See
-[docs/phase0/REPORT.md](../../../docs/phase0/REPORT.md).
+Files were rebuilt from each package’s office register (one row per `office_id`;
+no invented IDs). See [docs/phase0/REPORT.md](../../../docs/phase0/REPORT.md).
+Albania, Andorra, and Armenia remain **`draft_for_human_review`**. Alderney
+`other` is **`approved`**.
 
 | File | Register rows | Proposed tier | Human review |
 | --- | ---: | --- | --- |
 | [`albania.json`](albania.json) | 122 | `municipal` (61 mayors + 61 councils) | Draft only; no regional offices |
 | [`andorra.json`](andorra.json) | 7 | `municipal` (communal councils) | Empty regional-calendar demo |
-| [`alderney.json`](alderney.json) | 2 | `other` | **Human OK required** before treating `other` as final |
+| [`alderney.json`](alderney.json) | 2 | `other` | **Approved** 2026-09-16 (product owner). Channel Islands are low priority for the broader Atlas. |
 | [`armenia.json`](armenia.json) | 71 | `municipal` (community offices) | Boundary/calendar flags; keep municipal |
 
 Vocabulary uses `national` as a proposed label. `schema_compatibility` maps
 `national` → schema v1 `national_context`.
 
-**Alderney:** `GG-ALD-STATES` and `GG-ALD-PLEB` are proposed `other` (territorial
-legislature / representation). Seat counts are not extra office IDs. Do not
-treat `other` as final until a human signs the
-[tier_mapping](../../../docs/phase0/human-review.json) items.
+**Alderney:** `GG-ALD-STATES` and `GG-ALD-PLEB` are **approved** `other`
+(territorial legislature / representation). Seat counts are not extra office
+IDs. Product owner approved 2026-09-16; Channel Islands remain low priority
+for the broader Atlas.
 
 **Armenia** is last among early European targets. Proportional councils elect
 the mayor; missing mayor rows were not invented. Prompt token `AM-VEDI` is

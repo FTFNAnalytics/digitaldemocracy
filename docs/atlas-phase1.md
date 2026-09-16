@@ -19,14 +19,14 @@ in [docs/phase0/REPORT.md](phase0/REPORT.md).
 | `npm run import:atlas` | `scripts/atlas/import.ts` — exits non-zero with a blocked message |
 | Migrations folder | `schemas/atlas/migrations/0001_schema_version.sql` (`schema_version` + `atlas_meta`) |
 | Phase 0 inventory | `docs/phase0/` (`REPORT.md`, `inventory.json`, `continuity-counts.json`, `human-review.json`) |
-| Tier-classification drafts | `schemas/atlas/tiers/{albania,andorra,alderney,armenia}.json` (`draft_for_human_review`) |
+| Tier-classification files | `schemas/atlas/tiers/{albania,andorra,armenia}.json` (`draft_for_human_review`); `alderney.json` (`approved`) |
 
 `migrate:atlas` may create a local gitignored DB with meta tables. That is **not**
 Albania storage proof and is **not** a Phase 1 exit.
 
 The Albania tier file is now checked in as a **draft**. It is not an accepted
-classifier until reviewed like DDL. Alderney’s proposed `other` still needs
-**human OK** before it is treated as final.
+classifier until reviewed like DDL. Alderney `other` is **approved**
+(2026-09-16); Channel Islands are low priority for the broader Atlas.
 
 ## Phase 1 exit criteria (not claimed here)
 
@@ -51,7 +51,7 @@ A zero regional-tier numerator for Albania does not fail storage proof.
 | --- | --- |
 | Full entity DDL | Still blocked. Must implement identity/uniqueness/crosswalk rules in the plan. |
 | Albania tier file | Draft at `schemas/atlas/tiers/albania.json` (122 municipal office IDs). Needs human review before ingest. |
-| Alderney `other` | Draft at `schemas/atlas/tiers/alderney.json`. Human OK required before treating `other` as final. |
+| Alderney `other` | **Approved** 2026-09-16 at `schemas/atlas/tiers/alderney.json`. Channel Islands are low priority for the broader Atlas. |
 | Albania map | Proposed 46-municipality 2027 map is unverified in the package; geometry is not invented. |
 
 Also out of scope until later phases: `/atlas` UI, redirects, VPS deploy, Latin America / NZ ingest, tightness. Armenia remains last among early European targets.

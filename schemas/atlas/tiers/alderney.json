@@ -1,5 +1,5 @@
 {
-  "status": "draft_for_human_review",
+  "status": "approved",
   "country_slug": "alderney",
   "prompt": "phase0_prompt_a",
   "source_register": {
@@ -21,14 +21,20 @@
     "council": "council",
     "other": "other"
   },
+  "approval": {
+    "by": "product_owner",
+    "date": "2026-09-16",
+    "notes": "Product owner approved 2026-09-16. Channel Islands are low priority for the broader Atlas."
+  },
   "rules": [
     {
       "id": "alderney-territorial-other",
-      "statement": "GG-ALD-STATES and GG-ALD-PLEB → other, with human_review_required. Territorial legislature / representation; do not multiply seat counts into office IDs."
+      "statement": "GG-ALD-STATES and GG-ALD-PLEB → other. Territorial legislature / representation; do not multiply seat counts into office IDs."
     }
   ],
   "notes": [
-    "Alderney is a territory (GG-ALD), not a sovereign. Proposed `other` still needs human OK.",
+    "Alderney is a territory (GG-ALD), not a sovereign. Product owner approved `other` on 2026-09-16.",
+    "Channel Islands are low priority for the broader Atlas.",
     "Calendar dates 2026-11-21 / 2026-12-12 are conditional and are not classifiers.",
     "Regional numerator for this package is 0."
   ],
@@ -46,13 +52,8 @@
       "schema_v1_tier": "other",
       "jurisdiction": "Alderney",
       "office": "Plebiscite nominating two Guernsey States representatives",
-      "rationale": "Plebiscite nominating two Guernsey States representatives is territorial representation. Accepted Phase 0 Prompt A maps GG-ALD-PLEB to other. The two representatives are a description of this single office_id; do not mint two IDs from the seat count. Proposed `other` is not final until human sign-off.",
-      "confidence": "pending_human_review",
-      "human_review_required": true,
-      "human_review": {
-        "queue": "tier_mapping",
-        "notes": "Territorial legislature / representation. Do not multiply seat counts into office IDs. Human OK required before treating `other` as final."
-      }
+      "rationale": "Plebiscite nominating two Guernsey States representatives is territorial representation. Accepted Phase 0 Prompt A maps GG-ALD-PLEB to other. The two representatives are a description of this single office_id; do not mint two IDs from the seat count.",
+      "confidence": "high"
     },
     {
       "office_id": "GG-ALD-STATES",
@@ -60,13 +61,8 @@
       "schema_v1_tier": "other",
       "jurisdiction": "Alderney",
       "office": "States members (five of ten ordinary seats)",
-      "rationale": "States of Alderney is a territorial legislature, not a municipal council and not a regional government of a sovereign. Accepted Phase 0 Prompt A maps GG-ALD-STATES to other. The register describes 'five of ten ordinary seats' on this single office_id; do not multiply that seat count into additional office IDs. Proposed `other` is not final until human sign-off.",
-      "confidence": "pending_human_review",
-      "human_review_required": true,
-      "human_review": {
-        "queue": "tier_mapping",
-        "notes": "Territorial legislature / representation. Do not multiply seat counts into office IDs. Human OK required before treating `other` as final."
-      }
+      "rationale": "States of Alderney is a territorial legislature, not a municipal council and not a regional government of a sovereign. Accepted Phase 0 Prompt A maps GG-ALD-STATES to other. The register describes 'five of ten ordinary seats' on this single office_id; do not multiply that seat count into additional office IDs.",
+      "confidence": "high"
     }
   ]
 }

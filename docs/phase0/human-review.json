@@ -3,26 +3,6 @@
   "phase": 0,
   "items": [
     {
-      "id": "alderney-gg-ald-states-tier-mapping",
-      "queue": "tier_mapping",
-      "country_slug": "alderney",
-      "office_id": "GG-ALD-STATES",
-      "proposed_tier": "other",
-      "schema_v1_tier": "other",
-      "human_review_required": true,
-      "notes": "Territorial legislature (States of Alderney). The office register lists one office for States members (five of ten ordinary seats). Do not multiply the five seats into five office IDs. Proposed `other` needs human OK before it is treated as final."
-    },
-    {
-      "id": "alderney-gg-ald-pleb-tier-mapping",
-      "queue": "tier_mapping",
-      "country_slug": "alderney",
-      "office_id": "GG-ALD-PLEB",
-      "proposed_tier": "other",
-      "schema_v1_tier": "other",
-      "human_review_required": true,
-      "notes": "Territorial representation: plebiscite nominating two Guernsey States representatives. One office_id; do not mint two IDs from the two seats. Proposed `other` needs human OK before it is treated as final."
-    },
-    {
       "id": "armenia-am-ararat-c-boundary-calendar",
       "queue": "boundary_calendar",
       "country_slug": "armenia",
@@ -81,6 +61,34 @@
       "tier_unchanged": true,
       "human_review_required": true,
       "notes": "Prompt A listed AM-VEDI; the office register contains AM-VEDI-C only — do not invent AM-VEDI. Calendar cohort C118 notes Vedi (and Talin) also held a separate 2021 poll; 2027 dates and boundaries remain pending. Keep municipal."
+    }
+  ],
+  "resolved": [
+    {
+      "id": "alderney-gg-ald-states-tier-mapping",
+      "queue": "tier_mapping",
+      "country_slug": "alderney",
+      "office_id": "GG-ALD-STATES",
+      "proposed_tier": "other",
+      "schema_v1_tier": "other",
+      "human_review_required": false,
+      "status": "resolved",
+      "resolved_at": "2026-09-16",
+      "resolved_by": "product_owner",
+      "notes": "Product owner approved territorial-legislature mapping to other on 2026-09-16. One office_id for States members (five of ten ordinary seats); do not multiply seats into IDs. Channel Islands are low priority for the broader Atlas."
+    },
+    {
+      "id": "alderney-gg-ald-pleb-tier-mapping",
+      "queue": "tier_mapping",
+      "country_slug": "alderney",
+      "office_id": "GG-ALD-PLEB",
+      "proposed_tier": "other",
+      "schema_v1_tier": "other",
+      "human_review_required": false,
+      "status": "resolved",
+      "resolved_at": "2026-09-16",
+      "resolved_by": "product_owner",
+      "notes": "Product owner approved territorial-representation mapping to other on 2026-09-16. One office_id for the plebiscite nominating two Guernsey States representatives; do not mint two IDs from the two seats. Channel Islands are low priority for the broader Atlas."
     }
   ]
 }
