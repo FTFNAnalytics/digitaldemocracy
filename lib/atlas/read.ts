@@ -318,6 +318,35 @@ export function getAtlasCountry(
   }
 }
 
+export function listAtlasRegionalCalendar(
+  countryId: string,
+  sqlitePath = resolveAtlasSqlitePath(),
+): {
+  offices: AtlasOfficeRow[];
+  count: number;
+  label: string;
+  denominatorKnown: boolean;
+} {
+  const offices = listAtlasOffices(countryId, sqlitePath).filter((row) => row.tier === "regional");
+  if (countryId === "andorra") {
+    return {
+      offices,
+      count: offices.length,
+      label: "No regional tier in this package; seven municipal councils.",
+      denominatorKnown: false,
+    };
+  }
+  return {
+    offices,
+    count: offices.length,
+    label:
+      offices.length === 0
+        ? "No regional-tier offices are stored for this country."
+        : `${offices.length} regional-tier office${offices.length === 1 ? "" : "s"}.`,
+    denominatorKnown: false,
+  };
+}
+
 export function listAtlasOffices(
   countryId: string,
   sqlitePath = resolveAtlasSqlitePath(),
