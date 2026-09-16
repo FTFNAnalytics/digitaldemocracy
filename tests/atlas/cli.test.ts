@@ -4,7 +4,7 @@ import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
-import { atlasImportBlockedMessage } from "../../lib/atlas/import-status";
+import { atlasImportStatusMessage } from "../../lib/atlas/import-status";
 import {
   PRODUCTION_ATLAS_ATTEMPTS_SQLITE_PATH,
   PRODUCTION_ATLAS_SQLITE_PATH,
@@ -36,7 +36,7 @@ const MASTER_TABLES = [
 ];
 
 function runAtlasScript(script: string, env: Record<string, string | undefined>) {
-  const experimental = script.includes("migrate.ts");
+  const experimental = script.includes("migrate.ts") || script.includes("import.ts");
   const args = [
     ...(experimental ? ["--experimental-sqlite", "--no-warnings"] : []),
     "--import",
@@ -88,7 +88,7 @@ describe("atlas CLI stubs", () => {
     expect(first.stdout).toContain(attemptsPath);
     expect(first.stdout).toContain("0001_atlas_attempt_log");
     expect(first.stdout).toContain("0002_atlas_master");
-    expect(first.stdout).toContain("import:atlas remains blocked");
+    expect(first.stdout).not.toContain("import:atlas remains blocked");
 
     expect(tableNames(attemptsPath)).toEqual(["ingest_attempt", "schema_migration"]);
     expect(tableNames(sqlitePath)).toEqual(MASTER_TABLES);
@@ -149,20 +149,53 @@ describe("atlas CLI stubs", () => {
     expect(`${result.stderr}${result.stdout}`).toMatch(/Unexpected existing schema/);
   });
 
-  it("import:atlas fails clearly until the Albania importer lands", () => {
-    const result = runAtlasScript("scripts/atlas/import.ts", {});
-    expect(result.status).toBe(1);
-    expect(result.stderr).toContain("Election Atlas import is not available yet");
-    expect(result.stderr).toContain("Prompt C documentation is complete");
-    expect(result.stderr).toContain("albania.json is approved");
-    expect(result.stderr).toContain("importer is implemented");
-    expect(result.stderr).toContain("Albania");
-    expect(result.stderr).toContain(PRODUCTION_ATLAS_SQLITE_PATH);
-    expect(result.stderr).toContain(PRODUCTION_ATLAS_ATTEMPTS_SQLITE_PATH);
-    expect(result.stderr).toContain("/electiondatabase");
-    expect(result.stderr).not.toContain("invent");
-    expect(atlasImportBlockedMessage()).toContain("docs/atlas-phase1.md");
-  });
+  it(
+    "import:atlas loads Albania into temporary databases",
+    () => {
+      const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-cli-"));
+      tempDirs.push(dir);
+      const sqlitePath = path.join(dir, "atlas.sqlite");
+      const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+      const result = runAtlasScript("scripts/atlas/import.ts", {
+        ATLAS_SQLITE_PATH: sqlitePath,
+        ATLAS_ATTEMPTS_SQLITE_PATH: attemptsPath,
+        ATLAS_OPERATOR: "atlas-cli-test",
+        OBSERVATORY_FIXTURES: "",
+      });
+      expect(result.status, result.stderr).toBe(0);
+      expect(result.stdout).toContain("import:atlas");
+      expect(result.stdout).toContain("offices=122");
+      expect(result.stdout).toContain("selected_histories=366");
+      expect(result.stdout).toContain("result_rows=3843");
+      expect(result.stdout).toContain("regional=0");
+      expect(result.stderr).not.toContain("Election Atlas import is not available yet");
+
+      const attempts = new DatabaseSync(attemptsPath, { readOnly: true });
+      try {
+        const row = attempts.prepare("SELECT status, successful_release_id FROM ingest_attempt").get();
+        expect(row?.status).toBe("succeeded");
+        expect(row?.successful_release_id).toBeTruthy();
+      } finally {
+        attempts.close();
+      }
+
+      const master = new DatabaseSync(sqlitePath, { readOnly: true });
+      try {
+        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 122 });
+        expect(
+          master.prepare("SELECT geography_id FROM office WHERE office_id = 'AL-13-M'").get(),
+        ).toMatchObject({ geography_id: "geo-99a7b8d0e325a448c5e7c7ca" });
+      } finally {
+        master.close();
+      }
+
+      expect(atlasImportStatusMessage()).toContain("Albania import is available");
+      expect(atlasImportStatusMessage()).toContain(PRODUCTION_ATLAS_SQLITE_PATH);
+      expect(atlasImportStatusMessage()).toContain(PRODUCTION_ATLAS_ATTEMPTS_SQLITE_PATH);
+      expect(atlasImportStatusMessage()).toContain("/electiondatabase");
+    },
+    180_000,
+  );
 });
 
 describe("gitignore sqlite binaries", () => {

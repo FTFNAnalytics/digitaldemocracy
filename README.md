@@ -17,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 The **Subnational Election Observatory** lives at [`/electiondatabase`](/electiondatabase). It is an additional product area — the marketing homepage is unchanged. Research pages load the versioned Latin America release plus standalone country packages under `data/countries/*` (Europe and New Zealand as supplied). Research coverage remains partial. See [integration status](docs/electiondatabase-progress.md) and [country-package mapping](docs/electiondatabase-country-packages.md). The original implementation brief is preserved in [`docs/implementation-brief.md`](docs/implementation-brief.md).
 
-The observatory is being restructured as the **Election Atlas** at `/atlas`, with SQLite on the VPS as the master store, Europe as the first vertical, and regional calendars/indexes shipping before municipal completeness. `/electiondatabase` stays live until **cutover**, when working `/atlas` destinations exist and redirects plus SEO ship together; office and event URLs will not bounce to Atlas home. The plan is [`docs/atlas-plan.md`](docs/atlas-plan.md). Phase 1 scaffolding (paths, gitignore, migrate/import entrypoints, Prompt B DDL, completed Prompt C Albania docs) is described in [`docs/atlas-phase1.md`](docs/atlas-phase1.md). Prompt B rationale, the completed Prompt C checklist, and Albania field map / identity / acceptance docs are in [`docs/phase1/`](docs/phase1/Phase1_DDL_Rationale.md). There is still **no** `/atlas` route.
+The observatory is being restructured as the **Election Atlas** at `/atlas`, with SQLite on the VPS as the master store, Europe as the first vertical, and regional calendars/indexes shipping before municipal completeness. `/electiondatabase` stays live until **cutover**, when working `/atlas` destinations exist and redirects plus SEO ship together; office and event URLs will not bounce to Atlas home. The plan is [`docs/atlas-plan.md`](docs/atlas-plan.md). Phase 1 (paths, gitignore, migrate/import, Prompt B DDL, Prompt C Albania docs, Albania `import:atlas`) is described in [`docs/atlas-phase1.md`](docs/atlas-phase1.md). Prompt B rationale, the Prompt C checklist, and Albania field map / identity / acceptance docs are in [`docs/phase1/`](docs/phase1/Phase1_DDL_Rationale.md). There is still **no** `/atlas` route.
 
 ## Scripts
 
@@ -31,7 +31,7 @@ The observatory is being restructured as the **Election Atlas** at `/atlas`, wit
 | `npm run import:data` | Import the Latin America zip (fails clearly if missing) |
 | `npm run import:countries` | Inventory and validate `data/countries/*` standalone packages |
 | `npm run migrate:atlas` | Apply `0001_atlas_attempt_log.sql` to `ATLAS_ATTEMPTS_SQLITE_PATH` and `0002_atlas_master.sql` to `ATLAS_SQLITE_PATH` |
-| `npm run import:atlas` | Ingest into the Atlas SQLite master (stub: fails until the Albania importer is implemented) |
+| `npm run import:atlas` | Ingest the frozen Albania package into the Atlas SQLite master (temp paths in CI; never the VPS DB unless set) |
 | `npm run import:data -- --countries` | Same country-package import when the Latin America zip is absent |
 | `npm run validate:data` | Validate Latin America records, country packages, and the merged dataset |
 | `npm run validate:evidence` | Compare every historical row and office selection against original source objects |
@@ -85,7 +85,7 @@ That is intentional: the Latin America importer will not invent elections, and t
 | Local / CI default | `data/master/atlas.sqlite` (gitignored) | `data/master/atlas-attempts.sqlite` (gitignored) |
 | Production VPS | `/var/lib/cdd/atlas.sqlite` (set `ATLAS_SQLITE_PATH`) | `/var/lib/cdd/atlas-attempts.sqlite` (set `ATLAS_ATTEMPTS_SQLITE_PATH`) |
 
-Creating the VPS path is ops hygiene only. Phase 1 is not complete until Albania storage proof and the named CI tests in the plan pass. Prompt B DDL, Prompt C documentation, and the approved Albania municipal tier file are checked in; `import:atlas` stays blocked until the importer is implemented — see [`docs/atlas-phase1.md`](docs/atlas-phase1.md), [`docs/phase1/Albania_Field_Map.md`](docs/phase1/Albania_Field_Map.md), [`docs/phase1/Albania_Identity_Rules.md`](docs/phase1/Albania_Identity_Rules.md), and [`docs/phase1/Albania_Acceptance_Examples.md`](docs/phase1/Albania_Acceptance_Examples.md).
+Creating the VPS path is ops hygiene only. Phase 1 storage proof is the Albania importer plus the named CI tests in [`docs/atlas-phase1.md`](docs/atlas-phase1.md). Prompt B DDL, Prompt C documentation, the approved Albania municipal tier file, and `import:atlas` are checked in — see [`docs/phase1/Albania_Field_Map.md`](docs/phase1/Albania_Field_Map.md), [`docs/phase1/Albania_Identity_Rules.md`](docs/phase1/Albania_Identity_Rules.md), and [`docs/phase1/Albania_Acceptance_Examples.md`](docs/phase1/Albania_Acceptance_Examples.md). There is still **no** `/atlas` route.
 
 ## License
 

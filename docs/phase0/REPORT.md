@@ -17,7 +17,7 @@ Workbook calendar strings such as Albania/Andorra `Regional / municipal` are **n
 
 ## Albania storage proof
 
-Albania is the Phase 1 **storage-proof** target, not a regional-calendar launch. Justin **approved** the 122-row municipal classifier on 2026-09-16 (`schemas/atlas/tiers/albania.json`; regional=0 is intentional). Albania import proof and the unverified 2027 map are **not** in this change. `npm run import:atlas` remains blocked until the importer is implemented. The importer must hash the accepted tier-file bytes (there is no self-hash field).
+Albania is the Phase 1 **storage-proof** target, not a regional-calendar launch. Justin **approved** the 122-row municipal classifier on 2026-09-16 (`schemas/atlas/tiers/albania.json`; regional=0 is intentional). `npm run import:atlas` loads that approved file and the frozen package into SQLite. The importer must hash the accepted tier-file bytes (there is no self-hash field). The unverified 2027 map is **not** invented.
 
 ## Regional calendar proof
 

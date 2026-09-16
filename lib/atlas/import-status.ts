@@ -5,31 +5,38 @@ import {
   resolveAtlasSqlitePath,
 } from "./paths";
 
-export const ATLAS_IMPORT_BLOCKED_CODE = "ATLAS_IMPORT_BLOCKED";
+/** @deprecated Import is implemented; kept so older callers still resolve. */
+export const ATLAS_IMPORT_BLOCKED_CODE = "ATLAS_IMPORT_IMPLEMENTED";
 
-export function atlasImportBlockedMessage(
+export function atlasImportStatusMessage(
   sqlitePath = resolveAtlasSqlitePath(),
   attemptsPath = resolveAtlasAttemptsSqlitePath(),
 ): string {
   return [
-    "Election Atlas import is not available yet.",
+    "Election Atlas Albania import is available.",
     "",
-    "npm run import:atlas remains blocked until the Albania importer is implemented.",
-    "schemas/atlas/tiers/albania.json is approved (122 municipal; regional=0). Prompt C documentation is complete. Prompt B DDL is checked in (0001_atlas_attempt_log.sql / 0002_atlas_master.sql) but does not ingest Albania.",
+    "npm run import:atlas loads the frozen Albania package into SQLite (atomic publish + durable attempt ledger).",
+    "Use ATLAS_SQLITE_PATH and ATLAS_ATTEMPTS_SQLITE_PATH. CI/tests must use temporary paths, never the VPS production DB.",
     "",
     `Resolved ATLAS_SQLITE_PATH: ${sqlitePath}`,
     `Resolved ATLAS_ATTEMPTS_SQLITE_PATH: ${attemptsPath}`,
     `Production VPS path (set ATLAS_SQLITE_PATH to use it): ${PRODUCTION_ATLAS_SQLITE_PATH}`,
     `Production VPS attempt ledger (set ATLAS_ATTEMPTS_SQLITE_PATH to use it): ${PRODUCTION_ATLAS_ATTEMPTS_SQLITE_PATH}`,
     "",
-    "Blocked on remaining artifacts / review:",
-    "  - Albania importer implementation (Prompt C docs are complete; Albania tiers are approved)",
-    "  - Albania map (proposed 46-municipality 2027 map remains unverified)",
+    "Still out of scope for this importer:",
+    "  - /atlas routes or redirects (live observatory remains /electiondatabase)",
+    "  - Latin America / New Zealand ingest",
+    "  - tightness / computed competition tables",
+    "  - Albania 46-municipality 2027 map (unverified; geometry is not invented)",
     "",
-    "Still required for Phase 1 exit (see docs/atlas-plan.md and docs/atlas-phase1.md):",
-    "  - Albania import proof (atomic publish, failed-import rollback, unchanged re-import)",
-    "  - Named ingest acceptance tests in CI",
-    "",
-    "The live observatory remains at /electiondatabase. This stub does not add /atlas routes or redirects.",
+    "See docs/atlas-phase1.md and docs/phase1/Prompt_C_Field_Map_and_CI.md.",
   ].join("\n");
+}
+
+/** @deprecated Use atlasImportStatusMessage. Import is no longer blocked. */
+export function atlasImportBlockedMessage(
+  sqlitePath = resolveAtlasSqlitePath(),
+  attemptsPath = resolveAtlasAttemptsSqlitePath(),
+): string {
+  return atlasImportStatusMessage(sqlitePath, attemptsPath);
 }
