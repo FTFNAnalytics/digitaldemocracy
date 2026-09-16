@@ -8,7 +8,9 @@ Prompt C gates are automated versus deferred.
 
 Phase 0 inventory drafts (Europe packages, tier files, LatAm/NZ continuity) live
 in [docs/phase0/REPORT.md](phase0/REPORT.md). Prompt B / Prompt C artifacts live in
-[docs/phase1/](phase1/Phase1_DDL_Rationale.md).
+[docs/phase1/](phase1/Phase1_DDL_Rationale.md). Prompt D continuity documentation
+(LatAm/NZ field maps; implementation CI Not run) lives in
+[docs/phase2/](phase2/README.md).
 
 ## What this PR lands
 
@@ -29,6 +31,7 @@ in [docs/phase0/REPORT.md](phase0/REPORT.md). Prompt B / Prompt C artifacts live
 | Albania acceptance examples | [docs/phase1/Albania_Acceptance_Examples.md](phase1/Albania_Acceptance_Examples.md) |
 | Named CI | `tests/atlas/import.test.ts` (Prompt C gates) and `tests/atlas/cli.test.ts` (migrate + import CLI) |
 | Phase 0 inventory | `docs/phase0/` (`REPORT.md`, `inventory.json`, `continuity-counts.json`, `human-review.json`) |
+| Prompt D continuity docs | [docs/phase2/](phase2/README.md) — field maps, identity rules, acceptance examples, checklist (**documentation complete; importer CI Not run**) |
 | Tier-classification files | `schemas/atlas/tiers/albania.json` (**approved** municipal); `alderney.json` (**approved** `other`); `{andorra,armenia}.json` (`draft_for_human_review`) |
 
 `migrate:atlas` may create local gitignored DBs with empty typed tables. Empty schema is **not** Phase 1 exit. `import:atlas` against the frozen Albania package is the storage proof: 122 offices, 366 selected histories, 3,843 result rows, 122 municipal / 0 regional, 185 sources (182 catalogue + 3 inline), 122 briefings retained, proceedings=0, party_mappings=0.
@@ -111,5 +114,6 @@ Deferred Prompt C rows above are **not** waived. They remain required before cla
 | Albania tier file | **Approved** 2026-09-16 at `schemas/atlas/tiers/albania.json` (122 municipal office IDs; regional=0 intentional). |
 | Alderney `other` | **Approved** 2026-09-16 at `schemas/atlas/tiers/alderney.json`. |
 | Albania map | Proposed 46-municipality 2027 map is unverified in the package; geometry is not invented. |
+| Prompt D continuity docs | **Documentation complete** in [docs/phase2/](phase2/README.md). No LatAm/NZ importer, invented tiers, or Mexico share edits. |
 
-Also out of scope until later phases: `/atlas` UI, redirects, VPS deploy, Latin America / NZ ingest, tightness. Armenia remains last among early European targets.
+Also out of scope until later phases: `/atlas` UI, redirects, VPS deploy, Latin America / NZ ingest, tightness. Armenia remains last among early European targets. Prompt D prerequisites still open: 21 LatAm country tier files + NZ tier file (approved), Mexico share overrides, multi-lineage import.

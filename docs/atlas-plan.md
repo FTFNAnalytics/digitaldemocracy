@@ -1,6 +1,6 @@
 # Election Atlas — restructuring plan
 
-**Status:** Phase 0 plan is on main. Phase 1 **scaffolding** (gitignore, `ATLAS_SQLITE_PATH` / `ATLAS_ATTEMPTS_SQLITE_PATH`, migrate/import entrypoints, Prompt B DDL, completed Prompt C Albania docs, Albania importer) is tracked in [`docs/atlas-phase1.md`](atlas-phase1.md). Phase 0 inventory and tier files are in [`docs/phase0/`](phase0/REPORT.md) and [`schemas/atlas/tiers/`](../schemas/atlas/tiers/README.md) (Albania municipal and Alderney `other` **approved** 2026-09-16; Andorra and Armenia remain `draft_for_human_review`). Prompt B draft DDL is in [`schemas/atlas/migrations/`](../schemas/atlas/migrations/README.md); Albania storage proof is `import:atlas` against the frozen package. No `/atlas` UI or redirects.
+**Status:** Phase 0 plan is on main. Phase 1 **scaffolding** (gitignore, `ATLAS_SQLITE_PATH` / `ATLAS_ATTEMPTS_SQLITE_PATH`, migrate/import entrypoints, Prompt B DDL, completed Prompt C Albania docs, Albania importer) is tracked in [`docs/atlas-phase1.md`](atlas-phase1.md). Phase 0 inventory and tier files are in [`docs/phase0/`](phase0/REPORT.md) and [`schemas/atlas/tiers/`](../schemas/atlas/tiers/README.md) (Albania municipal and Alderney `other` **approved** 2026-09-16; Andorra and Armenia remain `draft_for_human_review`). Prompt B draft DDL is in [`schemas/atlas/migrations/`](../schemas/atlas/migrations/README.md); Albania storage proof is `import:atlas` against the frozen package. Prompt D continuity documentation (LatAm/NZ; CI Not run) is in [`docs/phase2/`](phase2/README.md). No `/atlas` UI or redirects.
 
 **Phase 0** (this plan) merges when Justin says. **Phase 1 is un-gated by Justin’s disposition on this revision** — it does not wait on open-ended further audits. After Phase 1 exits, **stop for Phase 2 review**.
 
@@ -442,6 +442,8 @@ Phase 1 PR contents:
 Keep `/electiondatabase` on the current loaders. **No public redirects. No tightness.**
 
 ### Phase 2 — Continuity ingest + `/atlas` shell (still not cutover)
+
+Field maps and CI gates for LatAm/NZ continuity are documented in [`docs/phase2/`](phase2/README.md) (Prompt D; implementation CI Not run). Do not invent tiers or alter Mexico share values in this documentation PR.
 
 **Named cutover-gate inputs (ingest in this phase, before redirects):** Latin America release, New Zealand package, and remaining early European packages as reviewed (Andorra, Alderney, …; **Armenia last** among those early targets). Europe remains the Atlas **default landing**. Continuity ingest ≠ expanding launch scope.
 
