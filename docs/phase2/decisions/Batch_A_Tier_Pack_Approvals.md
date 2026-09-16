@@ -1,6 +1,6 @@
 # Batch A tier pack approvals
 
-**Justin approved Batch A on 2026-09-16.** These six continuity packs are `approved`. Prompt G classification bytes are unchanged except top-level `status` → `approved`. Zero focused-review flags. Mexico share-domain override is untouched. Continuity ingest remains **blocked** until the remaining 16 packs and the continuity importer land.
+**Justin approved Batch A on 2026-09-16.** These six continuity packs are `approved`. Prompt G classification bytes are unchanged except top-level `status` → `approved`. Zero focused-review flags. Mexico share-domain override is untouched.
 
 ## Approved countries (1,321 offices)
 
@@ -17,6 +17,6 @@ Classification rows (`office_id`, `tier`, flags, rationale, evidence), `counts_b
 
 ## Still draft
 
-The other 16 LatAm/NZ packs remain `draft_for_human_review`: antigua-and-barbuda, argentina, bahamas, brazil, colombia, costa-rica, dominican-republic, ecuador, el-salvador, guyana, haiti, mexico, new-zealand, peru, saint-kitts-and-nevis, trinidad-and-tobago.
+See [Batch_B_Tier_Pack_Approvals.md](Batch_B_Tier_Pack_Approvals.md) for the later zero-flag approvals. Ten residual-heavy packs remain `draft_for_human_review`.
 
-This does **not** approve remaining Prompt F category policies, Mexico’s tier pack, or continuity publication.
+This document records Batch A only. It does **not** approve remaining Prompt F residual policies or continuity publication.

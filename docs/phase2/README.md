@@ -1,6 +1,6 @@
 # Election Atlas — Phase 2 continuity documentation
 
-Prompt D continuity field maps live here. Prompt E/G LatAm/NZ tier files are checked in; **Batch A is approved** (2026-09-16) and the other 16 packs remain **`draft_for_human_review`**. Prompt F decision drafts live under [decisions/](decisions/README.md). **Mexico share disposition is accepted** (withhold-all-67, 2026-09-16). Continuity ingest remains **blocked** on the remaining tier packs, importer, and Prompt D gates. This directory is **documentation only**.
+Prompt D continuity field maps live here. Prompt E/G LatAm/NZ tier files are checked in; **Batch A and Batch B are approved** (2026-09-16; 12 packs) and the remaining **10 residual-heavy packs** stay **`draft_for_human_review`**. Prompt F decision drafts live under [decisions/](decisions/README.md). **Mexico share disposition is accepted** (withhold-all-67, 2026-09-16). Continuity ingest remains **blocked** on those residual packs, importer, and Prompt D gates. This directory is **documentation only**.
 
 1. **Prompt D is documentation-complete; implementation CI is Not run.** The checklist marks every required map output Done and every importer/CI gate Not run. No LatAm or NZ importer is in this change.
 
@@ -13,11 +13,11 @@ Prompt D continuity field maps live here. Prompt E/G LatAm/NZ tier files are che
    - LatAm 40,509 historical subtotal = 36,750 selected + 3,759 other; total events 58,658 with 18,149 prospective.
    - 67 Mexico result rows with share>100 / `percent_0_100` are a **hard LatAm publish blocker** unless a reviewed override withholds or corrects them. Justin accepted withhold-all-67 on 2026-09-16; do not clamp, scale, or drop those rows.
 
-4. **Prompt E/G packs are checked in; Batch A is approved.** 21 LatAm country files + `new-zealand.json` live under `schemas/atlas/tiers/`. Justin approved Batch A (belize, dominica, cuba, jamaica, guatemala, paraguay) on 2026-09-16; the other 16 remain **`draft_for_human_review`**. The Mexico share-domain inventory at `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain-DRAFT.json` remains non-executable history. Continuity ingest remains **blocked** until remaining packs and the importer land.
+4. **Prompt E/G packs are checked in; Batch A+B are approved.** 21 LatAm country files + `new-zealand.json` live under `schemas/atlas/tiers/`. Justin approved Batches A and B (12 packs) on 2026-09-16; the remaining 10 residual-heavy packs stay **`draft_for_human_review`**. The Mexico share-domain inventory at `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain-DRAFT.json` remains non-executable history. Continuity ingest remains **blocked** until remaining packs and the importer land.
 
-5. **Mexico share disposition accepted; Prompt G applied category-policy clearances; Batch A packs approved.** Justin accepted withhold-all-67 on 2026-09-16 (America/Edmonton). Discoverable override: `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (`production_accepted=true`; untouched by this approval). Historical proposal remains `docs/phase2/decisions/mexico-share-domain-PROPOSED.json`. Prompt G revised the 22 LatAm/NZ tier files in place: 5,426 flag clearances / 1,425 residuals / 1,116 `tier_uncertain` remaining. See [tier-drafts/](tier-drafts/Phase2_Tier_Policy_Application_Report.md), [decisions/Batch_A_Tier_Pack_Approvals.md](decisions/Batch_A_Tier_Pack_Approvals.md), and [decisions/](decisions/README.md).
+5. **Mexico share disposition accepted; Prompt G applied category-policy clearances; Batch A+B packs approved.** Justin accepted withhold-all-67 on 2026-09-16 (America/Edmonton). Discoverable override: `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (`production_accepted=true`; untouched by this approval). Historical proposal remains `docs/phase2/decisions/mexico-share-domain-PROPOSED.json`. See [tier-drafts/](tier-drafts/Phase2_Tier_Policy_Application_Report.md), [decisions/Batch_A_Tier_Pack_Approvals.md](decisions/Batch_A_Tier_Pack_Approvals.md), [decisions/Batch_B_Tier_Pack_Approvals.md](decisions/Batch_B_Tier_Pack_Approvals.md), and [decisions/](decisions/README.md).
 
-6. **Do not** implement a LatAm/NZ importer in this change. **Do not** approve the remaining 16 continuity packs here. **Do not** modify frozen research bytes.
+6. **Do not** implement a LatAm/NZ importer in this Batch B change. **Do not** approve the remaining 10 residual-heavy packs here. **Do not** modify frozen research bytes.
 
 | File | Role |
 | --- | --- |
@@ -26,5 +26,5 @@ Prompt D continuity field maps live here. Prompt E/G LatAm/NZ tier files are che
 | [Continuity_NZ_Field_Map.md](Continuity_NZ_Field_Map.md) | New Zealand → Atlas column map |
 | [Continuity_Identity_Rules.md](Continuity_Identity_Rules.md) | Namespaces, fingerprint, multi-lineage protocol |
 | [Continuity_Acceptance_Examples.md](Continuity_Acceptance_Examples.md) | Twelve worked examples |
-| [tier-drafts/](tier-drafts/Phase2_Tier_Policy_Application_Report.md) | Prompt E/G packs (Batch A approved; 16 still draft; Prompt G: 5,426 clearances / 1,425 residuals; Mexico inventory non-executable) |
-| [decisions/](decisions/README.md) | Prompt F pack: Mexico withhold-all-67 **accepted** 2026-09-16; [Batch A packs approved](decisions/Batch_A_Tier_Pack_Approvals.md); remaining tier policies still draft |
+| [tier-drafts/](tier-drafts/Phase2_Tier_Policy_Application_Report.md) | Prompt E/G packs (Batch A+B approved; 10 still draft; Prompt G: 5,426 clearances / 1,425 residuals; Mexico inventory non-executable) |
+| [decisions/](decisions/README.md) | Prompt F pack: Mexico withhold-all-67 **accepted** 2026-09-16; [Batch A](decisions/Batch_A_Tier_Pack_Approvals.md) and [Batch B](decisions/Batch_B_Tier_Pack_Approvals.md) packs approved; residual-heavy packs still draft |
