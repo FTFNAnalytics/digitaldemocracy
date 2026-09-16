@@ -39,5 +39,46 @@ bytes; this schema has no self-hash field.
 Phase 1 still needs the Albania importer and import proof. Checking in these
 files is not Albania storage proof and is not a populated regional calendar.
 
+## Prompt E continuity drafts (LatAm + New Zealand)
+
+22 additional files (21 Latin America office-bearing countries + New Zealand)
+are checked in as **`draft_for_human_review`**. Checking them in does **not**
+approve them. Continuity ingest/publish remains **blocked** until these drafts
+are approved and Mexico share-domain overrides are accepted.
+
+Do not treat proposed-tier counts as approved coverage. Office IDs and proposed
+labels come from the Prompt E pack; they are not invented here. Albania,
+Andorra, Alderney, and Armenia files above are unchanged.
+
+| File | Offices | Historical | Status |
+| --- | ---: | ---: | --- |
+| [`antigua-and-barbuda.json`](antigua-and-barbuda.json) | 1 | 0 | **draft_for_human_review** |
+| [`argentina.json`](argentina.json) | 3560 | 120 | **draft_for_human_review** |
+| [`bahamas.json`](bahamas.json) | 33 | 0 | **draft_for_human_review** |
+| [`belize.json`](belize.json) | 19 | 0 | **draft_for_human_review** |
+| [`brazil.json`](brazil.json) | 62 | 0 | **draft_for_human_review** |
+| [`colombia.json`](colombia.json) | 2307 | 0 | **draft_for_human_review** |
+| [`costa-rica.json`](costa-rica.json) | 670 | 4 | **draft_for_human_review** |
+| [`cuba.json`](cuba.json) | 168 | 0 | **draft_for_human_review** |
+| [`dominica.json`](dominica.json) | 25 | 0 | **draft_for_human_review** |
+| [`dominican-republic.json`](dominican-republic.json) | 786 | 0 | **draft_for_human_review** |
+| [`ecuador.json`](ecuador.json) | 1297 | 2 | **draft_for_human_review** |
+| [`el-salvador.json`](el-salvador.json) | 306 | 262 | **draft_for_human_review** |
+| [`guatemala.json`](guatemala.json) | 340 | 0 | **draft_for_human_review** |
+| [`guyana.json`](guyana.json) | 83 | 3 | **draft_for_human_review** |
+| [`haiti.json`](haiti.json) | 1153 | 0 | **draft_for_human_review** |
+| [`jamaica.json`](jamaica.json) | 243 | 0 | **draft_for_human_review** |
+| [`mexico.json`](mexico.json) | 1852 | 0 | **draft_for_human_review** |
+| [`paraguay.json`](paraguay.json) | 526 | 0 | **draft_for_human_review** |
+| [`peru.json`](peru.json) | 5039 | 11 | **draft_for_human_review** |
+| [`saint-kitts-and-nevis.json`](saint-kitts-and-nevis.json) | 6 | 0 | **draft_for_human_review** |
+| [`trinidad-and-tobago.json`](trinidad-and-tobago.json) | 167 | 12 | **draft_for_human_review** |
+| [`new-zealand.json`](new-zealand.json) | 4 | 0 | **draft_for_human_review** |
+| **TOTAL (these drafts)** | **18647** | **414** | still draft |
+
+15 status-only LatAm countries have no tier file and no dummy offices. Pack
+report, review queue, and Mexico non-executable inventory live in
+[docs/phase2/tier-drafts/](../../../docs/phase2/tier-drafts/Phase2_Tier_Pack_Report.md).
+
 See [docs/atlas-plan.md](../../../docs/atlas-plan.md) (Regional coverage counting)
 and [docs/atlas-phase1.md](../../../docs/atlas-phase1.md).

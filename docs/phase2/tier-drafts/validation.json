@@ -1,0 +1,108 @@
+{
+  "status": "passed_document_and_input_checks",
+  "baseline_commit": "9065dcdfc0cbc78171dad35b60742ae232b6dd00",
+  "checks": [
+    {
+      "check": "Frozen LatAm ID/count reconciliation",
+      "status": "pass",
+      "detail": {
+        "offices": 18643,
+        "current": 18229,
+        "historical": 414,
+        "events": 58658,
+        "result_rows": 269740
+      }
+    },
+    {
+      "check": "File inventory",
+      "status": "pass",
+      "detail": "Exactly 21 LatAm files + NZ; none for 15 status-only countries; no Europe files in output."
+    },
+    {
+      "check": "Exact full office sets and namespace collision guard",
+      "status": "pass",
+      "detail": {
+        "total": 18647,
+        "historical_retained": 414,
+        "missing": 0,
+        "extra": 0,
+        "duplicates": 0,
+        "fixture_ids": 0
+      }
+    },
+    {
+      "check": "Resolved hashed evidence pointers",
+      "status": "pass",
+      "detail": {
+        "pointers": 55933,
+        "failures": 0,
+        "compression_rule": "sha256 hashes compressed bytes; JSON pointer addresses decoded object"
+      }
+    },
+    {
+      "check": "Draft flags and review queue",
+      "status": "pass",
+      "detail": {
+        "all_files_draft": true,
+        "focused_offices": 6851,
+        "resolved": 0,
+        "tier_counts": {
+          "municipal": 12194,
+          "other": 5961,
+          "regional": 393,
+          "unknown": 99
+        }
+      }
+    },
+    {
+      "check": "All 22 draft hashes and report histograms",
+      "status": "pass",
+      "detail": "Matched exact output bytes, including final newline."
+    },
+    {
+      "check": "Main contract and frozen byte preservation",
+      "status": "pass",
+      "detail": {
+        "tracked_files_matched_to_main": 386,
+        "commit": "9065dcdfc0cbc78171dad35b60742ae232b6dd00",
+        "changed": 0
+      }
+    },
+    {
+      "check": "Existing Europe namespace collision check",
+      "status": "pass",
+      "detail": {
+        "europe_ids_inspected": 202,
+        "collisions": 0,
+        "europe_files_modified": 0
+      }
+    },
+    {
+      "check": "Mexico exception and raw alternate fidelity",
+      "status": "pass",
+      "detail": {
+        "rows": 67,
+        "events": 27,
+        "offices": 27,
+        "expected_original_matches": 67,
+        "draft_decisions": 67,
+        "accepted_corrections": 0,
+        "automatic_substitutions": 0
+      }
+    },
+    {
+      "check": "Non-executable override inventory",
+      "status": "pass",
+      "detail": "DRAFT_NOT_ACCEPTED; production_accepted=false; executable_override=false; no changes[]; not atlas-override/1."
+    }
+  ],
+  "not_run": [
+    "Statutory primary-source research revalidation",
+    "Human tier approval",
+    "Human Mexico override acceptance",
+    "Atlas importer or SQLite research load",
+    "Multi-lineage publication/rollback/citation CI",
+    "Route/cutover CI"
+  ],
+  "publication_readiness": "BLOCKED: tiers unapproved; all 67 Mexico decisions unaccepted; implementation CI remains required."
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "atlas-tier-classification/1",
+  "lineage_id": "latin-america-fe5e91689def",
+  "country_slug": "antigua-and-barbuda",
+  "country_id": "antigua-and-barbuda",
+  "status": "draft_for_human_review",
+  "source_inputs": [
+    {
+      "input_path": "data/research/countries/antigua-and-barbuda.json.gz",
+      "sha256": "525145b32596a539a17e568f199175498e4c3cabd761365df70e0c1b59ab194c"
+    },
+    {
+      "input_path": "data/research/objects/9a52f33edfc55850392f77278b6a804e21fbf9ebb37f0a7142c7809116c5457e.gz",
+      "sha256": "ce34aa33a692aae19744dd5969e1859d31f7466198f7a4b359f72d2c685ae2dc"
+    }
+  ],
+  "counts_by_proposed_tier": {
+    "national": 0,
+    "regional": 0,
+    "municipal": 0,
+    "other": 1,
+    "unknown": 0
+  },
+  "classifications": [
+    {
+      "office_id": "AG-BARBUDA-COUNCIL",
+      "tier": "other",
+      "rationale": "Office AG-BARBUDA-COUNCIL: supplied officeType='Council — staggered elected-seat renewal'; office name='Barbuda Council — Council — staggered elected-seat renewal'; linked geography='Barbuda Council / Barbuda'; original locality='Barbuda Council', region='Barbuda'. The named island council/assembly is an island institution, not a national chamber or a municipality. Proposed other conservatively pending an explicit island-government regional-versus-other review; constituency members follow their institution, not constituency size.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/antigua-and-barbuda.json.gz",
+          "sha256": "525145b32596a539a17e568f199175498e4c3cabd761365df70e0c1b59ab194c",
+          "json_pointer": "/offices/0"
+        },
+        {
+          "input_path": "data/research/countries/antigua-and-barbuda.json.gz",
+          "sha256": "525145b32596a539a17e568f199175498e4c3cabd761365df70e0c1b59ab194c",
+          "json_pointer": "/geographies/0"
+        },
+        {
+          "input_path": "data/research/objects/9a52f33edfc55850392f77278b6a804e21fbf9ebb37f0a7142c7809116c5457e.gz",
+          "sha256": "ce34aa33a692aae19744dd5969e1859d31f7466198f7a4b359f72d2c685ae2dc",
+          "json_pointer": "/offices/0"
+        }
+      ]
+    }
+  ]
+}

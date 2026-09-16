@@ -1,0 +1,1514 @@
+{
+  "schema_version": "atlas-tier-classification/1",
+  "lineage_id": "latin-america-fe5e91689def",
+  "country_slug": "brazil",
+  "country_id": "brazil",
+  "status": "draft_for_human_review",
+  "source_inputs": [
+    {
+      "input_path": "data/research/countries/brazil.json.gz",
+      "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b"
+    },
+    {
+      "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+      "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb"
+    }
+  ],
+  "counts_by_proposed_tier": {
+    "national": 0,
+    "regional": 54,
+    "municipal": 8,
+    "other": 0,
+    "unknown": 0
+  },
+  "classifications": [
+    {
+      "office_id": "BR-AC-G",
+      "tier": "regional",
+      "rationale": "Office BR-AC-G: supplied officeType='Governor'; office name='Acre — Governor'; linked geography='Acre / AC'; original locality='Acre', region='AC'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/0"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/0"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/0"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-AC-A",
+      "tier": "regional",
+      "rationale": "Office BR-AC-A: supplied officeType='State legislative assembly'; office name='Acre — State legislative assembly'; linked geography='Acre / AC'; original locality='Acre', region='AC'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/1"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/0"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/1"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-AL-G",
+      "tier": "regional",
+      "rationale": "Office BR-AL-G: supplied officeType='Governor'; office name='Alagoas — Governor'; linked geography='Alagoas / AL'; original locality='Alagoas', region='AL'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/2"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/1"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/2"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-AL-A",
+      "tier": "regional",
+      "rationale": "Office BR-AL-A: supplied officeType='State legislative assembly'; office name='Alagoas — State legislative assembly'; linked geography='Alagoas / AL'; original locality='Alagoas', region='AL'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/3"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/1"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/3"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-AM-G",
+      "tier": "regional",
+      "rationale": "Office BR-AM-G: supplied officeType='Governor'; office name='Amazonas — Governor'; linked geography='Amazonas / AM'; original locality='Amazonas', region='AM'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/4"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/2"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/4"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-AM-A",
+      "tier": "regional",
+      "rationale": "Office BR-AM-A: supplied officeType='State legislative assembly'; office name='Amazonas — State legislative assembly'; linked geography='Amazonas / AM'; original locality='Amazonas', region='AM'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/5"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/2"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/5"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-AP-G",
+      "tier": "regional",
+      "rationale": "Office BR-AP-G: supplied officeType='Governor'; office name='Amapá — Governor'; linked geography='Amapá / AP'; original locality='Amapá', region='AP'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/6"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/3"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/6"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-AP-A",
+      "tier": "regional",
+      "rationale": "Office BR-AP-A: supplied officeType='State legislative assembly'; office name='Amapá — State legislative assembly'; linked geography='Amapá / AP'; original locality='Amapá', region='AP'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/7"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/3"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/7"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-BA-G",
+      "tier": "regional",
+      "rationale": "Office BR-BA-G: supplied officeType='Governor'; office name='Bahia — Governor'; linked geography='Bahia / BA'; original locality='Bahia', region='BA'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/8"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/4"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/8"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-BA-A",
+      "tier": "regional",
+      "rationale": "Office BR-BA-A: supplied officeType='State legislative assembly'; office name='Bahia — State legislative assembly'; linked geography='Bahia / BA'; original locality='Bahia', region='BA'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/9"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/4"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/9"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-CE-G",
+      "tier": "regional",
+      "rationale": "Office BR-CE-G: supplied officeType='Governor'; office name='Ceará — Governor'; linked geography='Ceará / CE'; original locality='Ceará', region='CE'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/10"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/5"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/10"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-CE-A",
+      "tier": "regional",
+      "rationale": "Office BR-CE-A: supplied officeType='State legislative assembly'; office name='Ceará — State legislative assembly'; linked geography='Ceará / CE'; original locality='Ceará', region='CE'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/11"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/5"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/11"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-DF-G",
+      "tier": "regional",
+      "rationale": "Office BR-DF-G: supplied officeType='Governor'; office name='Federal District — Governor'; linked geography='Federal District / DF'; original locality='Federal District', region='DF'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/12"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/6"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/12"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-DF-A",
+      "tier": "regional",
+      "rationale": "Office BR-DF-A: supplied officeType='District Legislative Chamber'; office name='Federal District — District Legislative Chamber'; linked geography='Federal District / DF'; original locality='Federal District', region='DF'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/13"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/6"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/13"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-ES-G",
+      "tier": "regional",
+      "rationale": "Office BR-ES-G: supplied officeType='Governor'; office name='Espírito Santo — Governor'; linked geography='Espírito Santo / ES'; original locality='Espírito Santo', region='ES'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/14"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/7"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/14"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-ES-A",
+      "tier": "regional",
+      "rationale": "Office BR-ES-A: supplied officeType='State legislative assembly'; office name='Espírito Santo — State legislative assembly'; linked geography='Espírito Santo / ES'; original locality='Espírito Santo', region='ES'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/15"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/7"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/15"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-GO-G",
+      "tier": "regional",
+      "rationale": "Office BR-GO-G: supplied officeType='Governor'; office name='Goiás — Governor'; linked geography='Goiás / GO'; original locality='Goiás', region='GO'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/16"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/8"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/16"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-GO-A",
+      "tier": "regional",
+      "rationale": "Office BR-GO-A: supplied officeType='State legislative assembly'; office name='Goiás — State legislative assembly'; linked geography='Goiás / GO'; original locality='Goiás', region='GO'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/17"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/8"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/17"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-MA-G",
+      "tier": "regional",
+      "rationale": "Office BR-MA-G: supplied officeType='Governor'; office name='Maranhão — Governor'; linked geography='Maranhão / MA'; original locality='Maranhão', region='MA'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/18"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/9"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/18"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-MA-A",
+      "tier": "regional",
+      "rationale": "Office BR-MA-A: supplied officeType='State legislative assembly'; office name='Maranhão — State legislative assembly'; linked geography='Maranhão / MA'; original locality='Maranhão', region='MA'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/19"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/9"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/19"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-MG-G",
+      "tier": "regional",
+      "rationale": "Office BR-MG-G: supplied officeType='Governor'; office name='Minas Gerais — Governor'; linked geography='Minas Gerais / MG'; original locality='Minas Gerais', region='MG'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/20"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/10"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/20"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-MG-A",
+      "tier": "regional",
+      "rationale": "Office BR-MG-A: supplied officeType='State legislative assembly'; office name='Minas Gerais — State legislative assembly'; linked geography='Minas Gerais / MG'; original locality='Minas Gerais', region='MG'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/21"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/10"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/21"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-MS-G",
+      "tier": "regional",
+      "rationale": "Office BR-MS-G: supplied officeType='Governor'; office name='Mato Grosso do Sul — Governor'; linked geography='Mato Grosso do Sul / MS'; original locality='Mato Grosso do Sul', region='MS'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/22"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/11"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/22"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-MS-A",
+      "tier": "regional",
+      "rationale": "Office BR-MS-A: supplied officeType='State legislative assembly'; office name='Mato Grosso do Sul — State legislative assembly'; linked geography='Mato Grosso do Sul / MS'; original locality='Mato Grosso do Sul', region='MS'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/23"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/11"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/23"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-MT-G",
+      "tier": "regional",
+      "rationale": "Office BR-MT-G: supplied officeType='Governor'; office name='Mato Grosso — Governor'; linked geography='Mato Grosso / MT'; original locality='Mato Grosso', region='MT'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/24"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/12"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/24"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-MT-A",
+      "tier": "regional",
+      "rationale": "Office BR-MT-A: supplied officeType='State legislative assembly'; office name='Mato Grosso — State legislative assembly'; linked geography='Mato Grosso / MT'; original locality='Mato Grosso', region='MT'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/25"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/12"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/25"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-PA-G",
+      "tier": "regional",
+      "rationale": "Office BR-PA-G: supplied officeType='Governor'; office name='Pará — Governor'; linked geography='Pará / PA'; original locality='Pará', region='PA'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/26"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/13"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/26"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-PA-A",
+      "tier": "regional",
+      "rationale": "Office BR-PA-A: supplied officeType='State legislative assembly'; office name='Pará — State legislative assembly'; linked geography='Pará / PA'; original locality='Pará', region='PA'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/27"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/13"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/27"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-PB-G",
+      "tier": "regional",
+      "rationale": "Office BR-PB-G: supplied officeType='Governor'; office name='Paraíba — Governor'; linked geography='Paraíba / PB'; original locality='Paraíba', region='PB'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/28"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/14"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/28"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-PB-A",
+      "tier": "regional",
+      "rationale": "Office BR-PB-A: supplied officeType='State legislative assembly'; office name='Paraíba — State legislative assembly'; linked geography='Paraíba / PB'; original locality='Paraíba', region='PB'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/29"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/14"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/29"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-PE-G",
+      "tier": "regional",
+      "rationale": "Office BR-PE-G: supplied officeType='Governor'; office name='Pernambuco — Governor'; linked geography='Pernambuco / PE'; original locality='Pernambuco', region='PE'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/30"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/15"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/30"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-PE-A",
+      "tier": "regional",
+      "rationale": "Office BR-PE-A: supplied officeType='State legislative assembly'; office name='Pernambuco — State legislative assembly'; linked geography='Pernambuco / PE'; original locality='Pernambuco', region='PE'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/31"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/15"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/31"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-PI-G",
+      "tier": "regional",
+      "rationale": "Office BR-PI-G: supplied officeType='Governor'; office name='Piauí — Governor'; linked geography='Piauí / PI'; original locality='Piauí', region='PI'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/32"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/16"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/32"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-PI-A",
+      "tier": "regional",
+      "rationale": "Office BR-PI-A: supplied officeType='State legislative assembly'; office name='Piauí — State legislative assembly'; linked geography='Piauí / PI'; original locality='Piauí', region='PI'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/33"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/16"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/33"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-PR-G",
+      "tier": "regional",
+      "rationale": "Office BR-PR-G: supplied officeType='Governor'; office name='Paraná — Governor'; linked geography='Paraná / PR'; original locality='Paraná', region='PR'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/34"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/17"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/34"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-PR-A",
+      "tier": "regional",
+      "rationale": "Office BR-PR-A: supplied officeType='State legislative assembly'; office name='Paraná — State legislative assembly'; linked geography='Paraná / PR'; original locality='Paraná', region='PR'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/35"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/17"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/35"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-RJ-G",
+      "tier": "regional",
+      "rationale": "Office BR-RJ-G: supplied officeType='Governor'; office name='Rio de Janeiro — Governor'; linked geography='Rio de Janeiro / RJ'; original locality='Rio de Janeiro', region='RJ'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/36"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/18"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/36"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-RJ-A",
+      "tier": "regional",
+      "rationale": "Office BR-RJ-A: supplied officeType='State legislative assembly'; office name='Rio de Janeiro — State legislative assembly'; linked geography='Rio de Janeiro / RJ'; original locality='Rio de Janeiro', region='RJ'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/37"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/18"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/37"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-RN-G",
+      "tier": "regional",
+      "rationale": "Office BR-RN-G: supplied officeType='Governor'; office name='Rio Grande do Norte — Governor'; linked geography='Rio Grande do Norte / RN'; original locality='Rio Grande do Norte', region='RN'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/38"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/19"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/38"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-RN-A",
+      "tier": "regional",
+      "rationale": "Office BR-RN-A: supplied officeType='State legislative assembly'; office name='Rio Grande do Norte — State legislative assembly'; linked geography='Rio Grande do Norte / RN'; original locality='Rio Grande do Norte', region='RN'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/39"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/19"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/39"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-RO-G",
+      "tier": "regional",
+      "rationale": "Office BR-RO-G: supplied officeType='Governor'; office name='Rondônia — Governor'; linked geography='Rondônia / RO'; original locality='Rondônia', region='RO'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/40"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/20"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/40"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-RO-A",
+      "tier": "regional",
+      "rationale": "Office BR-RO-A: supplied officeType='State legislative assembly'; office name='Rondônia — State legislative assembly'; linked geography='Rondônia / RO'; original locality='Rondônia', region='RO'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/41"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/20"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/41"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-RR-G",
+      "tier": "regional",
+      "rationale": "Office BR-RR-G: supplied officeType='Governor'; office name='Roraima — Governor'; linked geography='Roraima / RR'; original locality='Roraima', region='RR'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/42"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/21"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/42"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-RR-A",
+      "tier": "regional",
+      "rationale": "Office BR-RR-A: supplied officeType='State legislative assembly'; office name='Roraima — State legislative assembly'; linked geography='Roraima / RR'; original locality='Roraima', region='RR'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/43"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/21"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/43"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-RS-G",
+      "tier": "regional",
+      "rationale": "Office BR-RS-G: supplied officeType='Governor'; office name='Rio Grande do Sul — Governor'; linked geography='Rio Grande do Sul / RS'; original locality='Rio Grande do Sul', region='RS'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/44"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/22"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/44"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-RS-A",
+      "tier": "regional",
+      "rationale": "Office BR-RS-A: supplied officeType='State legislative assembly'; office name='Rio Grande do Sul — State legislative assembly'; linked geography='Rio Grande do Sul / RS'; original locality='Rio Grande do Sul', region='RS'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/45"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/22"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/45"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-SC-G",
+      "tier": "regional",
+      "rationale": "Office BR-SC-G: supplied officeType='Governor'; office name='Santa Catarina — Governor'; linked geography='Santa Catarina / SC'; original locality='Santa Catarina', region='SC'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/46"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/23"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/46"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-SC-A",
+      "tier": "regional",
+      "rationale": "Office BR-SC-A: supplied officeType='State legislative assembly'; office name='Santa Catarina — State legislative assembly'; linked geography='Santa Catarina / SC'; original locality='Santa Catarina', region='SC'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/47"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/23"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/47"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-SE-G",
+      "tier": "regional",
+      "rationale": "Office BR-SE-G: supplied officeType='Governor'; office name='Sergipe — Governor'; linked geography='Sergipe / SE'; original locality='Sergipe', region='SE'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/48"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/24"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/48"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-SE-A",
+      "tier": "regional",
+      "rationale": "Office BR-SE-A: supplied officeType='State legislative assembly'; office name='Sergipe — State legislative assembly'; linked geography='Sergipe / SE'; original locality='Sergipe', region='SE'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/49"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/24"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/49"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-SP-G",
+      "tier": "regional",
+      "rationale": "Office BR-SP-G: supplied officeType='Governor'; office name='São Paulo — Governor'; linked geography='São Paulo / SP'; original locality='São Paulo', region='SP'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/50"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/25"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/50"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-SP-A",
+      "tier": "regional",
+      "rationale": "Office BR-SP-A: supplied officeType='State legislative assembly'; office name='São Paulo — State legislative assembly'; linked geography='São Paulo / SP'; original locality='São Paulo', region='SP'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/51"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/25"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/51"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-TO-G",
+      "tier": "regional",
+      "rationale": "Office BR-TO-G: supplied officeType='Governor'; office name='Tocantins — Governor'; linked geography='Tocantins / TO'; original locality='Tocantins', region='TO'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/52"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/26"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/52"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-TO-A",
+      "tier": "regional",
+      "rationale": "Office BR-TO-A: supplied officeType='State legislative assembly'; office name='Tocantins — State legislative assembly'; linked geography='Tocantins / TO'; original locality='Tocantins', region='TO'. The institution is the executive or representative body of the named state, department, province or region. Its office function and geography jointly support regional; no calendar cohort or legacy tier is used.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/53"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/26"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/53"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-M-MA-c3e30ecf3f",
+      "tier": "municipal",
+      "rationale": "Office BR-M-MA-c3e30ecf3f: supplied officeType='Mayor and vice mayor joint ticket'; office name='Nova Olinda do Maranhão — Mayor and vice mayor joint ticket'; linked geography='Nova Olinda do Maranhão / MA'; original locality='Nova Olinda do Maranhão', region='MA'. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/54"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/27"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/54"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-M-PR-9c21214df7",
+      "tier": "municipal",
+      "rationale": "Office BR-M-PR-9c21214df7: supplied officeType='Mayor and vice mayor joint ticket'; office name='Santana do Itararé — Mayor and vice mayor joint ticket'; linked geography='Santana do Itararé / PR'; original locality='Santana do Itararé', region='PR'. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/55"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/28"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/55"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-M-SE-d913e5c29d",
+      "tier": "municipal",
+      "rationale": "Office BR-M-SE-d913e5c29d: supplied officeType='Mayor and vice mayor joint ticket'; office name='Porto de Folha — Mayor and vice mayor joint ticket'; linked geography='Porto de Folha / SE'; original locality='Porto de Folha', region='SE'. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/56"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/29"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/56"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-M-SP-2fdbf7a6ed",
+      "tier": "municipal",
+      "rationale": "Office BR-M-SP-2fdbf7a6ed: supplied officeType='Mayor and vice mayor joint ticket'; office name='Macedônia — Mayor and vice mayor joint ticket'; linked geography='Macedônia / SP'; original locality='Macedônia', region='SP'. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/57"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/30"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/57"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-M-SP-ae5eecec4b",
+      "tier": "municipal",
+      "rationale": "Office BR-M-SP-ae5eecec4b: supplied officeType='Mayor and vice mayor joint ticket'; office name='Martinópolis — Mayor and vice mayor joint ticket'; linked geography='Martinópolis / SP'; original locality='Martinópolis', region='SP'. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/58"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/31"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/58"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-M-SP-58a43bfb60",
+      "tier": "municipal",
+      "rationale": "Office BR-M-SP-58a43bfb60: supplied officeType='Mayor and vice mayor joint ticket'; office name='Narandiba — Mayor and vice mayor joint ticket'; linked geography='Narandiba / SP'; original locality='Narandiba', region='SP'. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/59"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/32"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/59"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-M-RJ-3e85f31655",
+      "tier": "municipal",
+      "rationale": "Office BR-M-RJ-3e85f31655: supplied officeType='Mayor and vice mayor joint ticket'; office name='Itaguaí — Mayor and vice mayor joint ticket'; linked geography='Itaguaí / RJ'; original locality='Itaguaí', region='RJ'. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/60"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/33"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/60"
+        }
+      ]
+    },
+    {
+      "office_id": "BR-M-TO-131dbd3813",
+      "tier": "municipal",
+      "rationale": "Office BR-M-TO-131dbd3813: supplied officeType='Mayor and vice mayor joint ticket'; office name='Goiatins — Mayor and vice mayor joint ticket'; linked geography='Goiatins / TO'; original locality='Goiatins', region='TO'. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/offices/61"
+        },
+        {
+          "input_path": "data/research/countries/brazil.json.gz",
+          "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+          "json_pointer": "/geographies/34"
+        },
+        {
+          "input_path": "data/research/objects/6b2487aba50c91dc1c9aef843cfef401e100e6c8aff583255e1dd933172079e8.gz",
+          "sha256": "d593b00a0b083cdd06e3342af15094a9b661075d0bb32cba7487574042c3acbb",
+          "json_pointer": "/offices/61"
+        }
+      ]
+    }
+  ]
+}

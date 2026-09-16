@@ -1,0 +1,818 @@
+{
+  "schema_version": "atlas-tier-classification/1",
+  "lineage_id": "latin-america-fe5e91689def",
+  "country_slug": "bahamas",
+  "country_id": "bahamas",
+  "status": "draft_for_human_review",
+  "source_inputs": [
+    {
+      "input_path": "data/research/countries/bahamas.json.gz",
+      "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a"
+    },
+    {
+      "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+      "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3"
+    }
+  ],
+  "counts_by_proposed_tier": {
+    "national": 0,
+    "regional": 0,
+    "municipal": 33,
+    "other": 0,
+    "unknown": 0
+  },
+  "classifications": [
+    {
+      "office_id": "BS-D-NORTH-ABACO",
+      "tier": "municipal",
+      "rationale": "Office BS-D-NORTH-ABACO: supplied officeType='District council — indirect formation'; office name='North Abaco — District council — indirect formation'; linked geography='North Abaco / Family Islands / Grand Bahama'; original locality='North Abaco', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/0"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/0"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/0"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-CENTRAL-ABACO",
+      "tier": "municipal",
+      "rationale": "Office BS-D-CENTRAL-ABACO: supplied officeType='District council — indirect formation'; office name='Central Abaco — District council — indirect formation'; linked geography='Central Abaco / Family Islands / Grand Bahama'; original locality='Central Abaco', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/1"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/1"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/1"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-SOUTH-ABACO",
+      "tier": "municipal",
+      "rationale": "Office BS-D-SOUTH-ABACO: supplied officeType='District council — indirect formation'; office name='South Abaco — District council — indirect formation'; linked geography='South Abaco / Family Islands / Grand Bahama'; original locality='South Abaco', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/2"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/2"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/2"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-NORTH-ANDROS",
+      "tier": "municipal",
+      "rationale": "Office BS-D-NORTH-ANDROS: supplied officeType='District council — indirect formation'; office name='North Andros — District council — indirect formation'; linked geography='North Andros / Family Islands / Grand Bahama'; original locality='North Andros', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/3"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/3"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/3"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-CENTRAL-ANDROS",
+      "tier": "municipal",
+      "rationale": "Office BS-D-CENTRAL-ANDROS: supplied officeType='District council — indirect formation'; office name='Central Andros — District council — indirect formation'; linked geography='Central Andros / Family Islands / Grand Bahama'; original locality='Central Andros', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/4"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/4"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/4"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-SOUTH-ANDROS",
+      "tier": "municipal",
+      "rationale": "Office BS-D-SOUTH-ANDROS: supplied officeType='District council — indirect formation'; office name='South Andros — District council — indirect formation'; linked geography='South Andros / Family Islands / Grand Bahama'; original locality='South Andros', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/5"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/5"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/5"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-CAT-ISLAND",
+      "tier": "municipal",
+      "rationale": "Office BS-D-CAT-ISLAND: supplied officeType='District council — indirect formation'; office name='Cat Island — District council — indirect formation'; linked geography='Cat Island / Family Islands / Grand Bahama'; original locality='Cat Island', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/6"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/6"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/6"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-CENTRAL-ELEUTHERA",
+      "tier": "municipal",
+      "rationale": "Office BS-D-CENTRAL-ELEUTHERA: supplied officeType='District council — indirect formation'; office name='Central Eleuthera — District council — indirect formation'; linked geography='Central Eleuthera / Family Islands / Grand Bahama'; original locality='Central Eleuthera', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/7"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/7"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/7"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-SOUTH-ELEUTHERA",
+      "tier": "municipal",
+      "rationale": "Office BS-D-SOUTH-ELEUTHERA: supplied officeType='District council — indirect formation'; office name='South Eleuthera — District council — indirect formation'; linked geography='South Eleuthera / Family Islands / Grand Bahama'; original locality='South Eleuthera', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/8"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/8"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/8"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-EXUMA",
+      "tier": "municipal",
+      "rationale": "Office BS-D-EXUMA: supplied officeType='District council — indirect formation'; office name='Exuma — District council — indirect formation'; linked geography='Exuma / Family Islands / Grand Bahama'; original locality='Exuma', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/9"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/9"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/9"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-EAST-GRAND-BAHAMA",
+      "tier": "municipal",
+      "rationale": "Office BS-D-EAST-GRAND-BAHAMA: supplied officeType='District council — indirect formation'; office name='East Grand Bahama — District council — indirect formation'; linked geography='East Grand Bahama / Family Islands / Grand Bahama'; original locality='East Grand Bahama', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/10"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/10"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/10"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-WEST-GRAND-BAHAMA",
+      "tier": "municipal",
+      "rationale": "Office BS-D-WEST-GRAND-BAHAMA: supplied officeType='District council — indirect formation'; office name='West Grand Bahama — District council — indirect formation'; linked geography='West Grand Bahama / Family Islands / Grand Bahama'; original locality='West Grand Bahama', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/11"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/11"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/11"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-LONG-ISLAND",
+      "tier": "municipal",
+      "rationale": "Office BS-D-LONG-ISLAND: supplied officeType='District council — indirect formation'; office name='Long Island — District council — indirect formation'; linked geography='Long Island / Family Islands / Grand Bahama'; original locality='Long Island', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/12"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/12"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/12"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-ACKLINS",
+      "tier": "municipal",
+      "rationale": "Office BS-D-ACKLINS: supplied officeType='District council — direct election'; office name='Acklins — District council — direct election'; linked geography='Acklins / Family Islands / Grand Bahama'; original locality='Acklins', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/13"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/13"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/13"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-BERRY-ISLANDS",
+      "tier": "municipal",
+      "rationale": "Office BS-D-BERRY-ISLANDS: supplied officeType='District council — direct election'; office name='Berry Islands — District council — direct election'; linked geography='Berry Islands / Family Islands / Grand Bahama'; original locality='Berry Islands', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/14"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/14"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/14"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-BIMINI",
+      "tier": "municipal",
+      "rationale": "Office BS-D-BIMINI: supplied officeType='District council — direct election'; office name='Bimini — District council — direct election'; linked geography='Bimini / Family Islands / Grand Bahama'; original locality='Bimini', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/15"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/15"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/15"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-CITY-OF-FREEPORT",
+      "tier": "municipal",
+      "rationale": "Office BS-D-CITY-OF-FREEPORT: supplied officeType='District council — direct election'; office name='City of Freeport — District council — direct election'; linked geography='City of Freeport / Family Islands / Grand Bahama'; original locality='City of Freeport', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/16"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/16"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/16"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-CROOKED-ISLAND-AND-LONG-CAY",
+      "tier": "municipal",
+      "rationale": "Office BS-D-CROOKED-ISLAND-AND-LONG-CAY: supplied officeType='District council — direct election'; office name='Crooked Island and Long Cay — District council — direct election'; linked geography='Crooked Island and Long Cay / Family Islands / Grand Bahama'; original locality='Crooked Island and Long Cay', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/17"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/17"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/17"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-EXUMA-CAYS",
+      "tier": "municipal",
+      "rationale": "Office BS-D-EXUMA-CAYS: supplied officeType='District council — direct election'; office name='Exuma Cays — District council — direct election'; linked geography='Exuma Cays / Family Islands / Grand Bahama'; original locality='Exuma Cays', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/18"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/18"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/18"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-GRAND-CAY",
+      "tier": "municipal",
+      "rationale": "Office BS-D-GRAND-CAY: supplied officeType='District council — direct election'; office name='Grand Cay — District council — direct election'; linked geography='Grand Cay / Family Islands / Grand Bahama'; original locality='Grand Cay', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/19"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/19"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/19"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-GREAT-ABACO-CAYS",
+      "tier": "municipal",
+      "rationale": "Office BS-D-GREAT-ABACO-CAYS: supplied officeType='District council — direct election'; office name='Great Abaco Cays — District council — direct election'; linked geography='Great Abaco Cays / Family Islands / Grand Bahama'; original locality='Great Abaco Cays', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/20"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/20"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/20"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-GREEN-TURTLE-CAY",
+      "tier": "municipal",
+      "rationale": "Office BS-D-GREEN-TURTLE-CAY: supplied officeType='District council — direct election'; office name='Green Turtle Cay — District council — direct election'; linked geography='Green Turtle Cay / Family Islands / Grand Bahama'; original locality='Green Turtle Cay', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/21"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/21"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/21"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-HARBOUR-ISLAND",
+      "tier": "municipal",
+      "rationale": "Office BS-D-HARBOUR-ISLAND: supplied officeType='District council — direct election'; office name='Harbour Island — District council — direct election'; linked geography='Harbour Island / Family Islands / Grand Bahama'; original locality='Harbour Island', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/22"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/22"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/22"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-INAGUA",
+      "tier": "municipal",
+      "rationale": "Office BS-D-INAGUA: supplied officeType='District council — direct election'; office name='Inagua — District council — direct election'; linked geography='Inagua / Family Islands / Grand Bahama'; original locality='Inagua', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/23"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/23"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/23"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-MANGROVE-CAY",
+      "tier": "municipal",
+      "rationale": "Office BS-D-MANGROVE-CAY: supplied officeType='District council — direct election'; office name='Mangrove Cay — District council — direct election'; linked geography='Mangrove Cay / Family Islands / Grand Bahama'; original locality='Mangrove Cay', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/24"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/24"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/24"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-MAYAGUANA",
+      "tier": "municipal",
+      "rationale": "Office BS-D-MAYAGUANA: supplied officeType='District council — direct election'; office name='Mayaguana — District council — direct election'; linked geography='Mayaguana / Family Islands / Grand Bahama'; original locality='Mayaguana', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/25"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/25"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/25"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-MOORES-ISLAND",
+      "tier": "municipal",
+      "rationale": "Office BS-D-MOORES-ISLAND: supplied officeType='District council — direct election'; office name='Moores Island — District council — direct election'; linked geography='Moores Island / Family Islands / Grand Bahama'; original locality='Moores Island', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/26"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/26"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/26"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-NORTH-ELEUTHERA",
+      "tier": "municipal",
+      "rationale": "Office BS-D-NORTH-ELEUTHERA: supplied officeType='District council — direct election'; office name='North Eleuthera — District council — direct election'; linked geography='North Eleuthera / Family Islands / Grand Bahama'; original locality='North Eleuthera', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/27"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/27"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/27"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-RAGGED-ISLAND",
+      "tier": "municipal",
+      "rationale": "Office BS-D-RAGGED-ISLAND: supplied officeType='District council — direct election'; office name='Ragged Island — District council — direct election'; linked geography='Ragged Island / Family Islands / Grand Bahama'; original locality='Ragged Island', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/28"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/28"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/28"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-RUM-CAY",
+      "tier": "municipal",
+      "rationale": "Office BS-D-RUM-CAY: supplied officeType='District council — direct election'; office name='Rum Cay — District council — direct election'; linked geography='Rum Cay / Family Islands / Grand Bahama'; original locality='Rum Cay', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/29"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/29"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/29"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-SAN-SALVADOR",
+      "tier": "municipal",
+      "rationale": "Office BS-D-SAN-SALVADOR: supplied officeType='District council — direct election'; office name='San Salvador — District council — direct election'; linked geography='San Salvador / Family Islands / Grand Bahama'; original locality='San Salvador', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/30"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/30"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/30"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-SPANISH-WELLS",
+      "tier": "municipal",
+      "rationale": "Office BS-D-SPANISH-WELLS: supplied officeType='District council — direct election'; office name='Spanish Wells — District council — direct election'; linked geography='Spanish Wells / Family Islands / Grand Bahama'; original locality='Spanish Wells', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/31"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/31"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/31"
+        }
+      ]
+    },
+    {
+      "office_id": "BS-D-SWEETINGS-CAY",
+      "tier": "municipal",
+      "rationale": "Office BS-D-SWEETINGS-CAY: supplied officeType='District council — direct election'; office name='Sweeting’s Cay — District council — direct election'; linked geography='Sweeting’s Cay / Family Islands / Grand Bahama'; original locality='Sweeting’s Cay', region='Family Islands / Grand Bahama'. The office and note identify a local district council for the named island district. Proposed municipal as local government; confirm treatment of Bahamas districts rather than infer regional from district size. Indirect formation, where supplied, remains distinct from a direct popular ballot.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/offices/32"
+        },
+        {
+          "input_path": "data/research/countries/bahamas.json.gz",
+          "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+          "json_pointer": "/geographies/32"
+        },
+        {
+          "input_path": "data/research/objects/2173b663f3f6926663cbaadfff90b24f4e6d169f2ae36e7c42ecc7eed350fae6.gz",
+          "sha256": "216defb305ea547e76681fcd7fc68c609dd8d90c56fb6d149f9ce5e13041eae3",
+          "json_pointer": "/offices/32"
+        }
+      ]
+    }
+  ]
+}
