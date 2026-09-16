@@ -16,8 +16,9 @@ import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
 const repoRoot = path.join(import.meta.dirname, "../..");
 
 describe("approved-pack gate", () => {
-  it("exposes 12 approved continuity packs and 10 residual drafts", () => {
+  it("exposes 14 approved continuity packs and 8 residual drafts", () => {
     expect(approvedContinuityPacks(repoRoot).map((pack) => pack.countryId).sort()).toEqual([
+      "argentina",
       "bahamas",
       "belize",
       "brazil",
@@ -25,6 +26,7 @@ describe("approved-pack gate", () => {
       "cuba",
       "dominica",
       "dominican-republic",
+      "el-salvador",
       "guatemala",
       "jamaica",
       "mexico",
@@ -33,10 +35,8 @@ describe("approved-pack gate", () => {
     ]);
     expect(draftContinuityPacks(repoRoot).map((pack) => pack.countryId).sort()).toEqual([
       "antigua-and-barbuda",
-      "argentina",
       "costa-rica",
       "ecuador",
-      "el-salvador",
       "guyana",
       "haiti",
       "peru",
@@ -44,8 +44,12 @@ describe("approved-pack gate", () => {
       "trinidad-and-tobago",
     ]);
     for (const pack of approvedContinuityPacks(repoRoot)) {
-      expect(pack.focusedReviews).toBe(0);
       expect(pack.status).toBe("approved");
+      if (pack.countryId === "argentina") {
+        expect(pack.focusedReviews).toBe(97);
+      } else {
+        expect(pack.focusedReviews).toBe(0);
+      }
     }
   });
 

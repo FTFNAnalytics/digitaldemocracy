@@ -1,6 +1,6 @@
 # Continuity import — approved packs
 
-Justin authorized full proceed on 2026-09-16. `npm run import:atlas` loads **Albania** plus **approved** LatAm/NZ packs into the Atlas SQLite master. It does **not** import the ten residual-heavy draft packs, deploy to the VPS, or declare cutover.
+Justin authorized full proceed on 2026-09-16. `npm run import:atlas` loads **Albania** plus **approved** LatAm/NZ packs into the Atlas SQLite master. It does **not** import the remaining residual-heavy draft packs, deploy to the VPS, or declare cutover.
 
 ## How to run
 
@@ -26,13 +26,14 @@ Each lineage is a **serial** attempt/swap. Unrelated lineages already in the pub
 
 Production VPS path remains `/var/lib/cdd/atlas.sqlite` (or `ATLAS_SQLITE_PATH`). This importer does not SSH or copy files to the VPS.
 
-## What is loaded (Batch A + Batch B)
+## What is loaded (Batch A + Batch B + El Salvador + Argentina)
 
-Approved continuity countries (12 packs):
+Approved continuity countries (14 packs):
 
-- LatAm: bahamas, belize, brazil, colombia, cuba, dominica, dominican-republic, guatemala, jamaica, mexico, paraguay
+- LatAm: argentina, bahamas, belize, brazil, colombia, cuba, dominica, dominican-republic, el-salvador, guatemala, jamaica, mexico, paraguay
 - NZ: new-zealand
 - Albania remains the Phase 1 storage-proof lineage (`country-package-albania`)
+- Andorra is an approved Phase 0 Europe pack (not a LatAm continuity lineage)
 
 Mexico result rows that violate `percent_0_100` are **withheld** using the accepted override `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (share NULL / share_status unknown / evidence_status disputed). Original values stay in `raw_json`. Denominators are not invented.
 
@@ -42,9 +43,9 @@ Status-only LatAm countries from `base.json.gz` (no offices) are imported as cou
 
 Draft residual-heavy packs are **not** imported:
 
-antigua-and-barbuda, argentina, costa-rica, ecuador, el-salvador, guyana, haiti, peru, saint-kitts-and-nevis, trinidad-and-tobago.
+antigua-and-barbuda, costa-rica, ecuador, guyana, haiti, peru, saint-kitts-and-nevis, trinidad-and-tobago.
 
-Prompt H residual clearances, Mexico’s 95 sibling shares, and live cutover remain out of scope.
+Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain out of scope.
 
 ## CI
 
@@ -53,7 +54,7 @@ Prompt H residual clearances, Mexico’s 95 sibling shares, and live cutover rem
 `npm run test:atlas-import` (wired in GitHub CI after `npm test`) builds a temp SQLite and asserts the full approved set:
 
 - Albania 122 offices / 0 regional
-- 6,361 approved LatAm offices
+- 10,227 approved LatAm offices (Batch A+B + El Salvador + Argentina)
 - New Zealand 4 offices / 7 events / 36 historical results
 - draft country offices absent
 - 67 Mexico withhold rows and zero `share > 100` Mexico rows

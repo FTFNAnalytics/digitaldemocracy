@@ -1,6 +1,6 @@
 # Election Atlas — Phase 2 continuity documentation
 
-Prompt D continuity field maps live here. Prompt E/G LatAm/NZ tier files are checked in; **Batch A and Batch B are approved** (2026-09-16; 12 packs) and the remaining **10 residual-heavy packs** stay **`draft_for_human_review`**. Prompt F decision drafts live under [decisions/](decisions/README.md). **Mexico share disposition is accepted** (withhold-all-67, 2026-09-16). **Approved packs import** via `npm run import:atlas`; residual-heavy drafts are skipped. Live VPS cutover remains out of scope.
+Prompt D continuity field maps live here. Prompt E/G LatAm/NZ tier files are checked in; **Batch A, Batch B, El Salvador, and Argentina are approved** (2026-09-16) and the remaining **8 residual-heavy packs** stay **`draft_for_human_review`**. Andorra is an approved Phase 0 Europe pack. Prompt F decision drafts live under [decisions/](decisions/README.md). **Mexico share disposition is accepted** (withhold-all-67, 2026-09-16). **Approved packs import** via `npm run import:atlas`; residual-heavy drafts are skipped. Live VPS cutover remains out of scope.
 
 1. **Prompt D maps are the import contract; approved packs now load.** `npm run import:atlas` (default `ATLAS_IMPORT_SCOPE=all`) imports Albania plus Batch A+B packs. Residual-heavy drafts are skipped. See [Continuity_Import.md](Continuity_Import.md).
 
@@ -13,13 +13,13 @@ Prompt D continuity field maps live here. Prompt E/G LatAm/NZ tier files are che
    - LatAm 40,509 historical subtotal = 36,750 selected + 3,759 other; total events 58,658 with 18,149 prospective.
    - 67 Mexico result rows with share>100 / `percent_0_100` are a **hard LatAm publish blocker** unless a reviewed override withholds or corrects them. Justin accepted withhold-all-67 on 2026-09-16; do not clamp, scale, or drop those rows.
 
-4. **Prompt E/G packs are checked in; Batch A+B are approved.** 21 LatAm country files + `new-zealand.json` live under `schemas/atlas/tiers/`. Justin approved Batches A and B (12 packs) on 2026-09-16; the remaining 10 residual-heavy packs stay **`draft_for_human_review`**. The Mexico share-domain inventory at `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain-DRAFT.json` remains non-executable history. `import:atlas` loads approved packs only.
+4. **Prompt E/G packs are checked in; Batch A+B plus El Salvador and Argentina are approved.** 21 LatAm country files + `new-zealand.json` live under `schemas/atlas/tiers/`. Justin approved Batches A and B, then El Salvador and Argentina (2026-09-16); the remaining 8 residual-heavy packs stay **`draft_for_human_review`**. The Mexico share-domain inventory at `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain-DRAFT.json` remains non-executable history. `import:atlas` loads approved packs only.
 
 5. **Mexico share disposition accepted; Prompt G applied category-policy clearances; Batch A+B packs approved.** Justin accepted withhold-all-67 on 2026-09-16 (America/Edmonton). Discoverable override: `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (`production_accepted=true`; untouched by this approval). Historical proposal remains `docs/phase2/decisions/mexico-share-domain-PROPOSED.json`. See [tier-drafts/](tier-drafts/Phase2_Tier_Policy_Application_Report.md), [decisions/Batch_A_Tier_Pack_Approvals.md](decisions/Batch_A_Tier_Pack_Approvals.md), [decisions/Batch_B_Tier_Pack_Approvals.md](decisions/Batch_B_Tier_Pack_Approvals.md), and [decisions/](decisions/README.md).
 
-6. **Do not** approve the remaining 10 residual-heavy packs here. **Do not** modify frozen research bytes. **Do not** SSH/deploy to VPS from this PR.
+6. **Do not** approve Haiti or the other large-queue residual-heavy packs here. **Do not** modify frozen research bytes. **Do not** SSH/deploy to VPS from this PR.
 
-7. **Prompt H residual review pack** lives under [residuals/](residuals/README.md). 1,425 residuals inventoried. **Justin accepted all 285 conditional clearances on 2026-09-16** (El Salvador 262 including retained crosswalk caveat + Argentina 23); those `human_review_required` flags are cleared. Haiti 1,004 keep-open; **1,140 residuals still open**; 1,010 uncertainty-only still deferred. **No residual packs approved** (el-salvador / argentina remain `draft_for_human_review`). Batch A/B and Mexico override untouched.
+7. **Prompt H residual review pack** lives under [residuals/](residuals/README.md). 1,425 residuals inventoried. **Justin accepted all 285 conditional clearances on 2026-09-16** (El Salvador 262 including retained crosswalk caveat + Argentina 23). **Justin then approved the El Salvador, Argentina, and Andorra packs** (status only; Argentina still has 97 focused-review rows). Haiti 1,004 keep-open; **1,140 residuals still open**; 1,010 uncertainty-only still deferred.
 
 | File | Role |
 | --- | --- |
@@ -29,6 +29,6 @@ Prompt D continuity field maps live here. Prompt E/G LatAm/NZ tier files are che
 | [Continuity_Identity_Rules.md](Continuity_Identity_Rules.md) | Namespaces, fingerprint, multi-lineage protocol |
 | [Continuity_Acceptance_Examples.md](Continuity_Acceptance_Examples.md) | Twelve worked examples |
 | [Continuity_Import.md](Continuity_Import.md) | How to run `import:atlas` for approved packs; `/atlas` SQLite UI; what is skipped |
-| [tier-drafts/](tier-drafts/Phase2_Tier_Policy_Application_Report.md) | Prompt E/G packs (Batch A+B approved; 10 still draft; Prompt G: 5,426 clearances; Prompt H: +285 residual clearances; 1,140 residuals still open; Mexico inventory non-executable) |
-| [decisions/](decisions/README.md) | Prompt F pack: Mexico withhold-all-67 **accepted** 2026-09-16; [Batch A](decisions/Batch_A_Tier_Pack_Approvals.md) and [Batch B](decisions/Batch_B_Tier_Pack_Approvals.md) packs approved; [Prompt H 285](decisions/Prompt_H_285_Clearances_Accepted.md) residual clearances accepted; residual-heavy packs still draft |
-| [residuals/](residuals/README.md) | Prompt H pack: 1,425 inventoried; **285 clearances applied** 2026-09-16 (ES+AR); 1,140 still open; 1,010 uncertainty-only deferred; packs still draft |
+| [tier-drafts/](tier-drafts/Phase2_Tier_Policy_Application_Report.md) | Prompt E/G packs (Batch A+B + ES/AR approved; 8 still draft; Prompt G: 5,426 clearances; Prompt H: +285 residual clearances; 1,140 residuals still open; Mexico inventory non-executable) |
+| [decisions/](decisions/README.md) | Prompt F pack: Mexico withhold-all-67 **accepted** 2026-09-16; [Batch A](decisions/Batch_A_Tier_Pack_Approvals.md), [Batch B](decisions/Batch_B_Tier_Pack_Approvals.md), and [ES+AR+Andorra](decisions/ES_AR_Andorra_Pack_Approvals.md) packs approved; 8 residual-heavy packs still draft |
+| [residuals/](residuals/README.md) | Prompt H pack: 1,425 inventoried; **285 clearances applied** 2026-09-16 (ES+AR); ES/AR packs later approved; 1,140 still open; 1,010 uncertainty-only deferred |

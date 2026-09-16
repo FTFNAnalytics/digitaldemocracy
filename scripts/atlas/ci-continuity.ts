@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + approved Batch A+B packs into a temp SQLite.
+ * CI proof: import Albania + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -37,7 +37,7 @@ function main() {
     if (result.albania?.counts.current_offices !== 122) {
       fail(`Albania offices ${String(result.albania?.counts.current_offices)}`);
     }
-    if (result.latam?.counts.offices !== 6361) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
+    if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
     if (result.nz?.counts.events !== 7) fail(`NZ events ${String(result.nz?.counts.events)}`);
     if (result.nz?.counts.result_rows !== 36) fail(`NZ results ${String(result.nz?.counts.result_rows)}`);
@@ -56,13 +56,14 @@ function main() {
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ALBANIA_LINEAGE]) !== 122) {
         fail("Albania office rows");
       }
-      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [LATAM_LINEAGE_ID]) !== 6361) {
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [LATAM_LINEAGE_ID]) !== 10227) {
         fail("LatAm office rows");
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [NZ_LINEAGE_ID]) !== 4) {
         fail("NZ office rows");
       }
       const approved = [
+        "argentina",
         "bahamas",
         "belize",
         "brazil",
@@ -70,6 +71,7 @@ function main() {
         "cuba",
         "dominica",
         "dominican-republic",
+        "el-salvador",
         "guatemala",
         "jamaica",
         "mexico",
@@ -124,7 +126,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 latam=6361 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });
