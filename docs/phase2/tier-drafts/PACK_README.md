@@ -1,10 +1,10 @@
 # Phase 2 continuity tier drafts
 
-**Drafts only for continuity tiers.** Continuity publish remains blocked until tier packs are approved; importer and cutover CI also remain required. Mexico share withhold-all-67 was accepted by Justin on 2026-09-16.
+Continuity publish remains blocked until remaining tier packs are approved; importer and cutover CI also remain required. Mexico share withhold-all-67 was accepted by Justin on 2026-09-16. Batch A packs were approved 2026-09-16; 16 packs remain draft.
 
 Prompt F decision drafts are checked in under `docs/phase2/decisions/`. Justin accepted Mexico withhold-all-67 on 2026-09-16; the discoverable override is `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json`. `mexico-share-domain-PROPOSED.json` and `mexico-share-domain-DRAFT.json` remain non-executable history. 95 sibling rows still need event-level reconciliation.
 
-Prompt G applied category-policy clearances only (5,426 flags) to the 22 LatAm/NZ files; packs remain **`draft_for_human_review`**. 1,425 residual rows are unchanged; 1,116 `tier_uncertain` flags remain. Batch A hashes are unchanged. No pack approvals. Mexico override untouched. See [Phase2_Tier_Policy_Application_Report.md](Phase2_Tier_Policy_Application_Report.md).
+Prompt G applied category-policy clearances only (5,426 flags) to the 22 LatAm/NZ files. **Justin approved Batch A on 2026-09-16** (belize, dominica, cuba, jamaica, guatemala, paraguay); those six files are `approved` (status flip only). The other 16 packs remain **`draft_for_human_review`**. 1,425 residual rows and 5,426 resolved clearances are unchanged. Mexico override untouched. See [Phase2_Tier_Policy_Application_Report.md](Phase2_Tier_Policy_Application_Report.md) and [../decisions/Batch_A_Tier_Pack_Approvals.md](../decisions/Batch_A_Tier_Pack_Approvals.md).
 
 Prepared against merged main `9065dcdfc0cbc78171dad35b60742ae232b6dd00`. This note is the Prompt E review-pack guidance, placed here rather than at the repository root. Checking in drafts does not approve them or authorize ingestion.
 
@@ -16,9 +16,9 @@ Evidence pointers are RFC6901 pointers into decoded JSON. For `.gz` input_path, 
 
 All 18,643 LatAm offices (including 414 historical) and all four NZ office IDs appear exactly once. No files or dummy offices are generated for the 15 status-only countries. Counts count office records, not nonoverlapping electorates, distinct governments, confirmed future ballots or regional-universe coverage.
 
-Every file has status draft_for_human_review. A row with human_review_required=false merely has no special tier question beyond pack approval. Flags mark focused institutional/scope/history review. A known proposed tier can have tier_uncertain=true; do not count it as approved coverage. Historical boundary flags alone do not change an explicit municipal institution to unknown. The 99 generic historical institution rows remain unknown pending evidence.
+Batch A files have status `approved`. The other 16 files remain `draft_for_human_review`. A row with human_review_required=false merely has no special tier question beyond pack approval. Flags mark focused institutional/scope/history review. A known proposed tier can have tier_uncertain=true; do not count it as approved coverage. Historical boundary flags alone do not change an explicit municipal institution to unknown. The 99 generic historical institution rows remain unknown pending evidence.
 
-Open review themes: island institutions; school districts; submunicipal bodies (including populated-centre municipalities and community boards); rural local commissions; Bahamas districts; Guyana PR-component councils; Trinidad corporations; autonomous/federal districts; provincial conventions/audit bodies; historical bindings. The complete office-specific queue is in `docs/phase2/tier-drafts/human-review.json`; its resolved array is empty.
+Open review themes: island institutions; school districts; submunicipal bodies (including populated-centre municipalities and community boards); rural local commissions; Bahamas districts; Guyana PR-component councils; Trinidad corporations; autonomous/federal districts; provincial conventions/audit bodies; historical bindings. The complete office-specific queue is in `docs/phase2/tier-drafts/human-review.json` (1,425 open residual items; 5,426 resolved category-policy clearances).
 
 Files:
 
@@ -57,4 +57,4 @@ Reports and support:
 - Prompt F pack: `docs/phase2/decisions/` including historical `mexico-share-domain-PROPOSED.json` (`production_accepted=false`)
 - Accepted Mexico override: `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (Justin 2026-09-16 withhold-all-67; `production_accepted=true`)
 
-No importer/UI code, SQLite research load, frozen input edits, tier-pack approvals or public route changes are part of this handoff. Mexico withhold-all-67 is recorded in the accepted override file.
+No importer/UI code, SQLite research load, frozen input edits or public route changes are part of this handoff. Batch A pack approvals are recorded in `docs/phase2/decisions/Batch_A_Tier_Pack_Approvals.md`. Mexico withhold-all-67 is recorded in the accepted override file.
