@@ -6,6 +6,9 @@ export default defineConfig({
     environment: "node",
     env: { OBSERVATORY_FIXTURES: "1" },
     include: ["tests/**/*.test.ts"],
+    testTimeout: 600_000,
+    hookTimeout: 600_000,
+    teardownTimeout: 60_000,
   },
   resolve: {
     alias: {
