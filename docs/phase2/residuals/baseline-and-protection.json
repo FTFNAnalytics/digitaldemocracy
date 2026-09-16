@@ -1,0 +1,214 @@
+{
+  "schema_version": "atlas-residual-review/1",
+  "status": "draft_for_human_review",
+  "production_accepted": false,
+  "applied_changes": [],
+  "baseline_main": "9065dcdfc0cbc78171dad35b60742ae232b6dd00",
+  "prompt_g_head": "3e92b8b40b472539ba33d1e23f736872b53470aa",
+  "inspected_pr19_head": "3af7dfa3ce23cc14480bc718e065b265e3a2f10c",
+  "batch_a_approval_commit": "035f26e427266acc55bbbfec58e45b1661a77b88",
+  "approved_packs_observed": [
+    "bahamas",
+    "belize",
+    "brazil",
+    "colombia",
+    "cuba",
+    "dominica",
+    "dominican-republic",
+    "guatemala",
+    "jamaica",
+    "mexico",
+    "new-zealand",
+    "paraguay"
+  ],
+  "new_pack_approvals": [],
+  "note": "No tier JSON bytes, approved-pack statuses, source inputs or Mexico override bytes were rewritten. All proposed dispositions await Justin.",
+  "protected_files": {
+    "data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain-DRAFT.json": {
+      "sha256": "caf141acf7a23566cf1d33cd870acb3664cccf4ffc560feee01e95224cb9def6",
+      "git_blob": "886c1a5862e244e2681cc6cabb15b38e9548e63b"
+    },
+    "data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json": {
+      "sha256": "5107ff27900cc449267fa1810ed92e247de85ec44c86b94685d785f62d2daaa9",
+      "git_blob": "a0952c0c92ff59b3725d13958df27c11e60f3781"
+    },
+    "schemas/atlas/migrations/0001_atlas_attempt_log.sql": {
+      "sha256": "e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1",
+      "git_blob": "74c160dd4aa293ed0ce576c2a23a9e8fd175c02d"
+    },
+    "schemas/atlas/migrations/0002_atlas_master.sql": {
+      "sha256": "1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da",
+      "git_blob": "993d6cc69161e6ca294f10af6f8dab250798de59"
+    },
+    "schemas/atlas/migrations/README.md": {
+      "sha256": "ac339efd00bd5d8df8827d9aaf4a9a09ff66cd696848c095658178170afe94bd",
+      "git_blob": "7184998369f2edc7d8303fe586332571b714d3ca"
+    },
+    "schemas/atlas/tiers/README.md": {
+      "sha256": "09706ea4c88295f5db26764c2bd899a52482f5d7e46c63e1bed8decfaa1807a7",
+      "git_blob": "6674132d09a64cc8d74a5f1c4467e12bc8a29dc7"
+    },
+    "schemas/atlas/tiers/albania.json": {
+      "sha256": "53a31d441761952a9f511c58a397e7877616c0ad6af30dce7587bcb6bcbbd93d",
+      "git_blob": "e24bf5d1c366b37086afae372b91c9e48c3c6539"
+    },
+    "schemas/atlas/tiers/alderney.json": {
+      "sha256": "e321762fb97ea8971e999fb699113312c80ddf171bcc3f40cd929252c6cd7fb7",
+      "git_blob": "a3e57bed14e7b2dc228dbdf14ccfe2b18ee1a9c9"
+    },
+    "schemas/atlas/tiers/andorra.json": {
+      "sha256": "01f979656017fa3a79d484db60ee138d3661bad23a6c464fdb5df4d1c6cdbc87",
+      "git_blob": "ca516aa4c13024aa77d875c8c285ce002b07d3a6"
+    },
+    "schemas/atlas/tiers/antigua-and-barbuda.json": {
+      "sha256": "0b31a8f398733e1fb3ca8996fcc60ed74fc7b150dd3f669afe745b8b8ac4c53d",
+      "git_blob": "58e7f4886aa3e56ecad66981ad9cd748ca80f179"
+    },
+    "schemas/atlas/tiers/argentina.json": {
+      "sha256": "e1e27f81bb2df6137c13bb30e58144d1fcdaeec3479f3d9bd42c45588eafffaf",
+      "git_blob": "87db68e2ec03ba0ffcd3f6bf054c9226521b97a3"
+    },
+    "schemas/atlas/tiers/armenia.json": {
+      "sha256": "9b100ffab2b9f878914721711d4878567868bd5ac923b294af02ef15bbfaefe5",
+      "git_blob": "d77523da0d2719079bb6704f58a9cce314a00a60"
+    },
+    "schemas/atlas/tiers/bahamas.json": {
+      "sha256": "62abaf50f4c466fd20e029f9fa2822679d9bc4bf3408fd1d28db7d226eefdea0",
+      "git_blob": "7af520640ae6bb14540278ce73c3ea2c7e68858c"
+    },
+    "schemas/atlas/tiers/belize.json": {
+      "sha256": "3a3debb0eb68bd3e4f76e8e0eb8792163c0996106743d24dbe824f4f4bcbf416",
+      "git_blob": "4072e8fd6a65dd7fae3eab018d272acad421637d"
+    },
+    "schemas/atlas/tiers/brazil.json": {
+      "sha256": "66147d032f88cfead40d9b3d340d011f07ad9dcff04e2e35d3d80dbb59c06526",
+      "git_blob": "3d9c50cf1acd959b28e03511050d60c27cd3a27b"
+    },
+    "schemas/atlas/tiers/colombia.json": {
+      "sha256": "be19471793216f78b0dca0dd41f6c1083102580b924cba344a911c55491d2b3f",
+      "git_blob": "a24cc5ab59c67d9db3f78db0ed08872b41448e0f"
+    },
+    "schemas/atlas/tiers/costa-rica.json": {
+      "sha256": "51065bd53aa60685a9d4c875a64716b92e0477c28d9afdee4eea377167bffd06",
+      "git_blob": "9ab48a3e6a2e00a3c358334f61210dcf50acf9e4"
+    },
+    "schemas/atlas/tiers/cuba.json": {
+      "sha256": "94de9fd55cfd647aaa3a2d7a1146b796377f4f52baad127d603f7afff48a31ea",
+      "git_blob": "972c5a046444bbd4c95018fabb40b240fde1dfa3"
+    },
+    "schemas/atlas/tiers/dominica.json": {
+      "sha256": "b400b4a03bafd305a228f1890132b7d9f2112aeb9bf687ffcf8efa41f496391d",
+      "git_blob": "3823c36d1f472a65bc74512325a6743d91c837e2"
+    },
+    "schemas/atlas/tiers/dominican-republic.json": {
+      "sha256": "ea2e1bc647bbcafff58aa6f3db249f6d27aa67241df450b3922265b4a55a15ab",
+      "git_blob": "e5c08e2b58f41b8692c63a7ba00397c1a3cbd8d8"
+    },
+    "schemas/atlas/tiers/ecuador.json": {
+      "sha256": "5cda935a02f86d37659fb23902d7ae605ecdd5bbf80690ff9888cf1e0aa2a762",
+      "git_blob": "61cc31bc05b10fc9eac2ca130c556d0b719350b4"
+    },
+    "schemas/atlas/tiers/el-salvador.json": {
+      "sha256": "fb83d13490131fe99bf3da5d1c8e03818125ec4eba3290c362cc2bb535a82906",
+      "git_blob": "a7da24cb254508a35403887704290b608453230b"
+    },
+    "schemas/atlas/tiers/guatemala.json": {
+      "sha256": "3f62704e3736df95bba2847fadeab152f2578b1147a11152cf3f52b2b181fd80",
+      "git_blob": "6ca98b054aeb1ec2495643ce312a14db7c85594a"
+    },
+    "schemas/atlas/tiers/guyana.json": {
+      "sha256": "739d2bfba31ac904aaec3eeaf891f03612897759bbb19a5396d245afbc00dbfe",
+      "git_blob": "2b1a9e5406b2b7dfde018753d142b52136b102c6"
+    },
+    "schemas/atlas/tiers/haiti.json": {
+      "sha256": "dd4938cd5fa0abc969d8ae6e57543d617d3157db130778d780c85e1dc90f02ae",
+      "git_blob": "e8b2dfabe01065a4c3a757e3cc2c563baec52360"
+    },
+    "schemas/atlas/tiers/jamaica.json": {
+      "sha256": "45397276058dc52220fc3921d2e2e09f366252317673e11f803e0b7eab818f2c",
+      "git_blob": "513e5d5af4081174864dc463d9e1cc302a504435"
+    },
+    "schemas/atlas/tiers/mexico.json": {
+      "sha256": "fc0fc95e1a090992fac40d2852abdb244a05f9ca6b780b96b70efb7730f46483",
+      "git_blob": "5e9fc04f83f6dc6b607d781fcdf6f3182b28eb95"
+    },
+    "schemas/atlas/tiers/new-zealand.json": {
+      "sha256": "35d1e29a5ce88f336f32829b1b83af5643510825025d672c471eed20b893ed57",
+      "git_blob": "5ef6b49f0dcd7f3cb3798b056d9c6aaeda72b290"
+    },
+    "schemas/atlas/tiers/paraguay.json": {
+      "sha256": "af670652e7c3555f6efb2284683f2428f715cc9961bc14a0c661414a611bf936",
+      "git_blob": "6b3ccad7de7f98effb4d276bc5aac142690bddb8"
+    },
+    "schemas/atlas/tiers/peru.json": {
+      "sha256": "9483875e4e6aabdf938324aa1849549519962bfe26dde5b359ca00b4e23addfd",
+      "git_blob": "0ae3a9303b221257d50faeaf3952bb26f5c82886"
+    },
+    "schemas/atlas/tiers/saint-kitts-and-nevis.json": {
+      "sha256": "6ce07e599a5378ea650167609cdc468fe3abc584975a582cf234f7b54a9c5171",
+      "git_blob": "2289a6f67ed5a18452c14d0c8bc0e8b3ed93980c"
+    },
+    "schemas/atlas/tiers/trinidad-and-tobago.json": {
+      "sha256": "905efa7ac69bde731823eeb41d0dc71cd0d05d0e8217d11b5e2e936b582a236f",
+      "git_blob": "e4a18043ebb1a591dcc1299fb79395a5dc495efb"
+    }
+  },
+  "source_hashes": {
+    "data/research/objects/a390e6035e4258292050514ae457a75f478044333d7a02bfbb45e4a4680ea366.gz": "74b12423619b4da46dd4e0aa7837b8956c4b7e0e84a9f1e4088fb107daf3685a",
+    "data/research/objects/aff4104a2a7aaccc0a2cac6dc83e6ab91939add9e1d9026c656433f822c323b6.gz": "24b067ee40b42266d8f34b2f54388ea732a3a1b282e1d1a7fcdcfe4d0f7050a1",
+    "data/research/objects/f0a8f66dbc5298b8c14d77902a9bde128d16014adb78043161dee2c7df96fff9.gz": "806db069fd534e23de726607a2e9d166c8758e0b7dcf6c9e411293e5408d4ba4",
+    "data/research/countries/el-salvador.json.gz": "054963989fbb273a7390d41ce474b8eb8833eeda1ec6888dca56b350a1c60f0e",
+    "data/research/manifest.json": "010001d254827c882f028c4e118fa322ddaa0ef75f32aead9886a634e43f21e1",
+    "data/research/countries/antigua-and-barbuda.json.gz": "525145b32596a539a17e568f199175498e4c3cabd761365df70e0c1b59ab194c",
+    "data/research/objects/9a52f33edfc55850392f77278b6a804e21fbf9ebb37f0a7142c7809116c5457e.gz": "ce34aa33a692aae19744dd5969e1859d31f7466198f7a4b359f72d2c685ae2dc",
+    "data/research/countries/argentina.json.gz": "737190b6be8bbb4759df22cb80d1ac5ee4b3907b3d20575972bce7bf58c57753",
+    "data/research/objects/c71ac02e35eba8b660519ff8a757dd0d10494d2d0769b4b21431fd8330422dcc.gz": "87b95237dcbf134132569b279f2d49482810a8117ce25c26ca7e747a1c47c4ea",
+    "data/research/countries/costa-rica.json.gz": "148944324ed2fb996d9c947d40cf7a22389b09a1e554d2c00b0df30e4b898c72",
+    "data/research/objects/16f0dd230dc7f91fba5be3ad5ac04e7d9257eb51e51bdb6d961e21d0929c49b5.gz": "2446d5d7b5bb088f0b847e5ff480cd70fdd79c3841d631ec621b4c3c3763ea1e",
+    "data/research/countries/ecuador.json.gz": "b836ff24d2c52c40fb9672d733b401727998c24bacac533c64eb66941bacd03f",
+    "data/research/objects/1b01b784f95b559294ee78310fc82db4a3825218b7b6372eafb7a5d2e053b53b.gz": "add56bc0aabcfd45458b525937872f68476b0931c02c50da857e986a8bfe06cd",
+    "data/research/objects/b4b8dfdf829848676a8e203b3e4d7385db27505acb89cab069919d650913bfd2.gz": "ad6c7ebfc2389103cea70a19f4f3ff759b68c7ac55a8dae0b8633149cd0c9ccc",
+    "data/research/countries/guyana.json.gz": "9ea1f9916b800217d8beac228849ace5ba495fcfa4fad1113b4173bd13154fc3",
+    "data/research/objects/aa7626577ec2311481176e59e5df43c6ca35f5dcea82297546ee7335e49764e3.gz": "f310426af01807787d5a0bef9403b26c627f46fdb52bac841cbc0be92d928812",
+    "data/research/countries/haiti.json.gz": "983b816321a91a61400be56ae0b8ba962c842d8f276aefea1b4acb0b33c9be3c",
+    "data/research/objects/3af6796cf18e39da03eb6de9237b10415d3810d1658a59ceaf0803255a54cd08.gz": "af102e47ccbeb498dde648111eff34de6be9714358cc01330cbb4ef910b9522f",
+    "data/research/countries/peru.json.gz": "df3410f20296e4916878e69d2ccfdbb4330d13509d0d8e325f6dcc9a193d4c23",
+    "data/research/objects/90614055154c2abc5877e7300ddf95bb6998ec0de52aee017155bf47c8aeb214.gz": "abe6688a4c88cd0c769ff8077746445b7ed44cdccc83ddee2e51c9e1f508365a",
+    "data/research/countries/saint-kitts-and-nevis.json.gz": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+    "data/research/objects/ac259514244fcc6f322be7c947b9e724e47b89e7665a23196cf1f9a5347b6c62.gz": "6b430fe5f0c965dd252454ee97df7e53eca45acce676e30775fd61e5ce58b376",
+    "data/research/countries/trinidad-and-tobago.json.gz": "86954158796e7f671256a7a0dea542f74996cc139fccaf7ce22802080f221b87",
+    "data/research/objects/60d5c7ee809c1eb53ede401066618e7b48afd2f2b7abfaa033a582e42e90468d.gz": "6e4cea2e75bd99f23fc1bbd425e5501bacd61d906ad801db1043678cb26fda61"
+  },
+  "supplementary_checks": {
+    "haiti": {
+      "exact_variant_bridge_rows": 140,
+      "legacy_section_reference_rows": 570,
+      "municipal_geographic_bridge_rows": 149,
+      "section_identity_still_provisional": true
+    },
+    "el-salvador": {
+      "predecessor_bridge_rows": 262,
+      "unique_current_targets": 44,
+      "analytical_aggregate_rows": 88,
+      "source": {
+        "dataRights": "unknown",
+        "datesLabel": "2026-09-12T18:20:12Z",
+        "fileHash": "b4e003f5cc34288e9f8a30bd26e05db056185d3bbe8a70e24ecb911fff4d7901",
+        "id": "el-salvador--Sb4e003f5cc",
+        "locator": null,
+        "publisher": "El Salvador",
+        "supportedRecordIds": [
+          "el-salvador"
+        ],
+        "title": "UNDP 2024 municipal map, district lists for all 44 municipalities",
+        "url": "https://www.undp.org/sites/g/files/zskgke326/files/2024-08/pdfmapasocioeconomico13agosto.pdf"
+      },
+      "referenced_primary_response_in_archive_inventory": false,
+      "remote_check": "Official UNDP PDF fetch failed because 16,880,092-byte content exceeded reader limit. No primary pages were reviewed. These are recommendations based on exact retained crosswalk records, not fresh certification."
+    },
+    "guyana": {
+      "retained_name_bridges": 21,
+      "matches_for_three_residual_ids": 0
+    }
+  }
+}

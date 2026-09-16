@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "review_status": "draft_for_human_review",
+  "residual_rows": 1425,
+  "office_ids_missing": 0,
+  "office_ids_added": 0,
+  "source_evidence_pointer_checks": 4275,
+  "tier_uncertain_actual": 1116,
+  "optional_deferred_rows": 1010,
+  "batches": 16,
+  "proposed_full_clearances": 285,
+  "applied_changes": 0,
+  "tier_json_files_written": 0,
+  "tier_corrections_proposed": 0,
+  "approved_batch_A_unchanged": true,
+  "approved_batch_B_observed_and_unchanged": true,
+  "Mexico_override_unchanged": true,
+  "protected_worktree_files_unchanged": 0,
+  "git_worktree_status_unchanged": true,
+  "all_source_files_match_pinned_git_bytes": true,
+  "residual_tier_files_identical_to_prompt_G": true,
+  "not_run": [
+    "Primary UNDP page certification",
+    "Justin decisions",
+    "Importer or SQLite research load",
+    "VPS / publication / cutover CI"
+  ]
+}
