@@ -1,0 +1,626 @@
+{
+  "schema_version": "atlas-tier-classification/1",
+  "lineage_id": "latin-america-fe5e91689def",
+  "country_slug": "dominica",
+  "country_id": "dominica",
+  "status": "approved",
+  "source_inputs": [
+    {
+      "input_path": "data/research/countries/dominica.json.gz",
+      "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883"
+    },
+    {
+      "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+      "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e"
+    }
+  ],
+  "counts_by_proposed_tier": {
+    "national": 0,
+    "regional": 0,
+    "municipal": 25,
+    "other": 0,
+    "unknown": 0
+  },
+  "classifications": [
+    {
+      "office_id": "DM-C-BAGATELLE",
+      "tier": "municipal",
+      "rationale": "Office DM-C-BAGATELLE: supplied officeType='Village council — elected seats'; office name='Bagatelle/Fond St. Jean/Pointe Carib — Village council — elected seats'; linked geography='Bagatelle/Fond St. Jean/Pointe Carib / Dominica'; original locality='Bagatelle/Fond St. Jean/Pointe Carib', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/0"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/0"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/0"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-BELLEVUE-CHOPIN",
+      "tier": "municipal",
+      "rationale": "Office DM-C-BELLEVUE-CHOPIN: supplied officeType='Village council — elected seats'; office name='Bellevue Chopin — Village council — elected seats'; linked geography='Bellevue Chopin / Dominica'; original locality='Bellevue Chopin', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/1"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/1"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/1"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-BOETICA",
+      "tier": "municipal",
+      "rationale": "Office DM-C-BOETICA: supplied officeType='Village council — elected seats'; office name='Boetica — Village council — elected seats'; linked geography='Boetica / Dominica'; original locality='Boetica', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/2"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/2"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/2"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-CAMPBELL",
+      "tier": "municipal",
+      "rationale": "Office DM-C-CAMPBELL: supplied officeType='Village council — elected seats'; office name='Campbell/Despor — Village council — elected seats'; linked geography='Campbell/Despor / Dominica'; original locality='Campbell/Despor', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/3"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/3"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/3"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-CASTLE-BRUCE",
+      "tier": "municipal",
+      "rationale": "Office DM-C-CASTLE-BRUCE: supplied officeType='Village council — elected seats'; office name='Castle Bruce/Tranto/Dix Pas — Village council — elected seats'; linked geography='Castle Bruce/Tranto/Dix Pas / Dominica'; original locality='Castle Bruce/Tranto/Dix Pas', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/4"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/4"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/4"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-CLIFTON",
+      "tier": "municipal",
+      "rationale": "Office DM-C-CLIFTON: supplied officeType='Village council — elected seats'; office name='Clifton/Cocoyer/Capuchin — Village council — elected seats'; linked geography='Clifton/Cocoyer/Capuchin / Dominica'; original locality='Clifton/Cocoyer/Capuchin', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/5"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/5"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/5"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-COULIBISTRIE",
+      "tier": "municipal",
+      "rationale": "Office DM-C-COULIBISTRIE: supplied officeType='Village council — elected seats'; office name='Coulibistrie/Morne Rachette — Village council — elected seats'; linked geography='Coulibistrie/Morne Rachette / Dominica'; original locality='Coulibistrie/Morne Rachette', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/6"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/6"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/6"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-DELICES",
+      "tier": "municipal",
+      "rationale": "Office DM-C-DELICES: supplied officeType='Village council — elected seats'; office name='Delices/Carib/La Roche/Victoria — Village council — elected seats'; linked geography='Delices/Carib/La Roche/Victoria / Dominica'; original locality='Delices/Carib/La Roche/Victoria', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/7"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/7"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/7"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-DUBLANC",
+      "tier": "municipal",
+      "rationale": "Office DM-C-DUBLANC: supplied officeType='Village council — elected seats'; office name='Dublanc/Bioche — Village council — elected seats'; linked geography='Dublanc/Bioche / Dominica'; original locality='Dublanc/Bioche', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/8"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/8"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/8"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-GIRAUDEL",
+      "tier": "municipal",
+      "rationale": "Office DM-C-GIRAUDEL: supplied officeType='Village council — elected seats'; office name='Giraudel/Eggleston — Village council — elected seats'; linked geography='Giraudel/Eggleston / Dominica'; original locality='Giraudel/Eggleston', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/9"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/9"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/9"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-GOOD-HOPE",
+      "tier": "municipal",
+      "rationale": "Office DM-C-GOOD-HOPE: supplied officeType='Village council — elected seats'; office name='Good Hope — Village council — elected seats'; linked geography='Good Hope / Dominica'; original locality='Good Hope', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/10"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/10"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/10"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-GRAND-BAY",
+      "tier": "municipal",
+      "rationale": "Office DM-C-GRAND-BAY: supplied officeType='Village council — elected seats'; office name='Grand Bay — Village council — elected seats'; linked geography='Grand Bay / Dominica'; original locality='Grand Bay', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/11"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/11"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/11"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-GRAND-FOND",
+      "tier": "municipal",
+      "rationale": "Office DM-C-GRAND-FOND: supplied officeType='Village council — elected seats'; office name='Grand Fond — Village council — elected seats'; linked geography='Grand Fond / Dominica'; original locality='Grand Fond', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/12"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/12"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/12"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-LOUBIERE",
+      "tier": "municipal",
+      "rationale": "Office DM-C-LOUBIERE: supplied officeType='Village council — elected seats'; office name='Loubiere/Madrelle/Fond Baron — Village council — elected seats'; linked geography='Loubiere/Madrelle/Fond Baron / Dominica'; original locality='Loubiere/Madrelle/Fond Baron', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/13"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/13"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/13"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-MAHAUT",
+      "tier": "municipal",
+      "rationale": "Office DM-C-MAHAUT: supplied officeType='Village council — elected seats'; office name='Mahaut/Jimmit/Tarreau — Village council — elected seats'; linked geography='Mahaut/Jimmit/Tarreau / Dominica'; original locality='Mahaut/Jimmit/Tarreau', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/14"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/14"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/14"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-MORNE-JAUNE",
+      "tier": "municipal",
+      "rationale": "Office DM-C-MORNE-JAUNE: supplied officeType='Village council — elected seats'; office name='Morne Jaune/Riviere Cyrique — Village council — elected seats'; linked geography='Morne Jaune/Riviere Cyrique / Dominica'; original locality='Morne Jaune/Riviere Cyrique', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/15"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/15"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/15"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-MORNE-PROSPER",
+      "tier": "municipal",
+      "rationale": "Office DM-C-MORNE-PROSPER: supplied officeType='Village council — elected seats'; office name='Morne Prosper — Village council — elected seats'; linked geography='Morne Prosper / Dominica'; original locality='Morne Prosper', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/16"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/16"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/16"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-PENVILLE",
+      "tier": "municipal",
+      "rationale": "Office DM-C-PENVILLE: supplied officeType='Village council — elected seats'; office name='Penville — Village council — elected seats'; linked geography='Penville / Dominica'; original locality='Penville', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/17"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/17"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/17"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-PETITE-SOUFRIERE",
+      "tier": "municipal",
+      "rationale": "Office DM-C-PETITE-SOUFRIERE: supplied officeType='Village council — elected seats'; office name='Petite Soufriere/San Sauveur — Village council — elected seats'; linked geography='Petite Soufriere/San Sauveur / Dominica'; original locality='Petite Soufriere/San Sauveur', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/18"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/18"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/18"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-POINTE-MICHEL",
+      "tier": "municipal",
+      "rationale": "Office DM-C-POINTE-MICHEL: supplied officeType='Village council — elected seats'; office name='Pointe Michel — Village council — elected seats'; linked geography='Pointe Michel / Dominica'; original locality='Pointe Michel', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/19"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/19"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/19"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-PORTSMOUTH",
+      "tier": "municipal",
+      "rationale": "Office DM-C-PORTSMOUTH: supplied officeType='Town council — elected seats'; office name='Portsmouth — Town council — elected seats'; linked geography='Portsmouth / Dominica'; original locality='Portsmouth', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/20"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/20"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/20"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-SOUFRIERE",
+      "tier": "municipal",
+      "rationale": "Office DM-C-SOUFRIERE: supplied officeType='Village council — elected seats'; office name='Soufriere/Scotts Head — Village council — elected seats'; linked geography='Soufriere/Scotts Head / Dominica'; original locality='Soufriere/Scotts Head', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/21"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/21"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/21"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-TETE-MORNE",
+      "tier": "municipal",
+      "rationale": "Office DM-C-TETE-MORNE: supplied officeType='Village council — elected seats'; office name='Tete Morne — Village council — elected seats'; linked geography='Tete Morne / Dominica'; original locality='Tete Morne', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/22"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/22"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/22"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-TRAFALGAR",
+      "tier": "municipal",
+      "rationale": "Office DM-C-TRAFALGAR: supplied officeType='Village council — elected seats'; office name='Trafalgar/Shawford/Fond Canie — Village council — elected seats'; linked geography='Trafalgar/Shawford/Fond Canie / Dominica'; original locality='Trafalgar/Shawford/Fond Canie', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/23"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/23"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/23"
+        }
+      ]
+    },
+    {
+      "office_id": "DM-C-WOODFORD-HILL",
+      "tier": "municipal",
+      "rationale": "Office DM-C-WOODFORD-HILL: supplied officeType='Village council — elected seats'; office name='Woodford Hill — Village council — elected seats'; linked geography='Woodford Hill / Dominica'; original locality='Woodford Hill', region='Dominica'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/offices/24"
+        },
+        {
+          "input_path": "data/research/countries/dominica.json.gz",
+          "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+          "json_pointer": "/geographies/24"
+        },
+        {
+          "input_path": "data/research/objects/00aab95bbcb037ae369cbcd942e609182fe96f955f0a3cd0396ee4d2108b11df.gz",
+          "sha256": "08a3e46c98953ad73920e0fbc95256c211de9ff4d1a4d1d1d9c963592785008e",
+          "json_pointer": "/offices/24"
+        }
+      ]
+    }
+  ]
+}

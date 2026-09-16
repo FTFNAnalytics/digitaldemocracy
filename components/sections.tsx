@@ -161,12 +161,20 @@ export function Research() {
             catalogue is awaiting the Latin America release package and does not invent
             real-world races.
           </p>
-          <Link
-            href="/electiondatabase"
-            className="mt-5 inline-flex rounded-full bg-navy px-5 py-2.5 text-sm font-bold text-white hover:bg-navy-700"
-          >
-            Open the election database
-          </Link>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link
+              href="/electiondatabase"
+              className="inline-flex rounded-full bg-navy px-5 py-2.5 text-sm font-bold text-white hover:bg-navy-700"
+            >
+              Open the election database
+            </Link>
+            <Link
+              href="/atlas"
+              className="inline-flex rounded-full border border-navy/20 px-5 py-2.5 text-sm font-bold text-navy hover:border-navy"
+            >
+              Election Atlas MVP
+            </Link>
+          </div>
         </div>
         <SectionHeading eyebrow="Workstreams" title="Research" />
         <div className="grid gap-6 sm:grid-cols-2">
@@ -299,6 +307,11 @@ export function Footer() {
             <li>
               <Link href="/electiondatabase" className="hover:text-accent">
                 Election database
+              </Link>
+            </li>
+            <li>
+              <Link href="/atlas" className="hover:text-accent">
+                Election Atlas
               </Link>
             </li>
             {social.map((item) => (

@@ -1,0 +1,78 @@
+{
+  "schema_version": "atlas-tier-classification/1",
+  "lineage_id": "country-package-new-zealand",
+  "country_slug": "new-zealand",
+  "country_id": "new-zealand",
+  "status": "approved",
+  "source_inputs": [
+    {
+      "input_path": "data/countries/new-zealand/dataset.json",
+      "sha256": "6d73c7075fc04be9cec3fdda37810e5195748c77e25df2e62998e2d4721d2133"
+    }
+  ],
+  "counts_by_proposed_tier": {
+    "national": 0,
+    "regional": 0,
+    "municipal": 3,
+    "other": 1,
+    "unknown": 0
+  },
+  "classifications": [
+    {
+      "office_id": "NZ-BULLER-WESTPORT-2026",
+      "tier": "municipal",
+      "rationale": "Office NZ-BULLER-WESTPORT-2026: supplied office_type='councillor', authority='Buller District Council', district='Westport Ward'. This is a councillor seat in the named city/district council, elected in its ward. Proposed municipal follows that institution, not the size or name of its ward. This is not a regional council seat.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/new-zealand/dataset.json",
+          "sha256": "6d73c7075fc04be9cec3fdda37810e5195748c77e25df2e62998e2d4721d2133",
+          "json_pointer": "/races/0"
+        }
+      ]
+    },
+    {
+      "office_id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2026",
+      "tier": "other",
+      "rationale": "Office NZ-CLUTHA-LAWRENCE-TUAPEKA-2026: supplied office_type='community_board_member', authority='Clutha District Council', district='Lawrence-Tuapeka Community Board'. The distinct subordinate community, parish, section, district or populated-centre institution remains other under the Atlas category policy. Preserve its supplied office type and jurisdiction; no parent geography, municipal peer status or regional authority is inferred. Applied category policy submunicipal_scope from docs/phase2/decisions/Phase2_Tier_Category_Policy_DRAFT.md, accepted for this draft flag-clearance scope by Justin's current instruction. This resolves the category-policy flag only; the country pack remains draft_for_human_review and is not pack-approved.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/new-zealand/dataset.json",
+          "sha256": "6d73c7075fc04be9cec3fdda37810e5195748c77e25df2e62998e2d4721d2133",
+          "json_pointer": "/races/1"
+        }
+      ]
+    },
+    {
+      "office_id": "NZ-PORIRUA-ONEPOTO-2026",
+      "tier": "municipal",
+      "rationale": "Office NZ-PORIRUA-ONEPOTO-2026: supplied office_type='councillor', authority='Porirua City Council', district='Onepoto General Ward'. This is a councillor seat in the named city/district council, elected in its ward. Proposed municipal follows that institution, not the size or name of its ward. This is not a regional council seat.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/new-zealand/dataset.json",
+          "sha256": "6d73c7075fc04be9cec3fdda37810e5195748c77e25df2e62998e2d4721d2133",
+          "json_pointer": "/races/2"
+        }
+      ]
+    },
+    {
+      "office_id": "NZ-WELLINGTON-TAKAPU-NORTHERN-2026",
+      "tier": "municipal",
+      "rationale": "Office NZ-WELLINGTON-TAKAPU-NORTHERN-2026: supplied office_type='councillor', authority='Wellington City Council', district='Takapū/Northern General Ward'. This is a councillor seat in the named city/district council, elected in its ward. Proposed municipal follows that institution, not the size or name of its ward. This is not a regional council seat.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/new-zealand/dataset.json",
+          "sha256": "6d73c7075fc04be9cec3fdda37810e5195748c77e25df2e62998e2d4721d2133",
+          "json_pointer": "/races/3"
+        }
+      ]
+    }
+  ]
+}

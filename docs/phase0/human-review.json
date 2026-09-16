@@ -102,6 +102,19 @@
       "resolved_at": "2026-09-16",
       "resolved_by": "product_owner",
       "notes": "Product owner approved territorial-representation mapping to other on 2026-09-16. One office_id for the plebiscite nominating two Guernsey States representatives; do not mint two IDs from the two seats. Channel Islands are low priority for the broader Atlas."
+    },
+    {
+      "id": "andorra-municipal-tier-classification",
+      "queue": "tier_mapping",
+      "country_slug": "andorra",
+      "office_count": 7,
+      "proposed_tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "human_review_required": false,
+      "status": "resolved",
+      "resolved_at": "2026-09-16",
+      "resolved_by": "product_owner",
+      "notes": "Justin approved all 7 Andorra communal-council office-register rows as municipal on 2026-09-16. Regional count is 0 (empty regional-calendar demo)."
     }
   ]
 }

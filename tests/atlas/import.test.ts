@@ -29,7 +29,7 @@ function hashFile(relative: string): string {
 function latestAttempt(attemptsPath: string): Record<string, unknown> {
   const db = openAtlasDatabase(attemptsPath, { readOnly: true });
   try {
-    const row = db.prepare("SELECT * FROM ingest_attempt ORDER BY started_at DESC, attempt_id DESC LIMIT 1").get();
+    const row = db.prepare("SELECT * FROM ingest_attempt ORDER BY started_at DESC, rowid DESC LIMIT 1").get();
     if (!row) throw new Error("No ingest_attempt rows");
     return row;
   } finally {

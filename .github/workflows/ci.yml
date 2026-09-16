@@ -16,6 +16,7 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm test
+      - run: npm run test:atlas-import
       - run: npm run validate:data -- --fixtures
       - run: npm run validate:data
       - run: npm run validate:evidence

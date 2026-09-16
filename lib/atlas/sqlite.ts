@@ -67,6 +67,20 @@ export function insertRow(db: DatabaseSync, table: string, row: Record<string, u
   db.prepare(sql).run(...columns.map((column) => row[column] ?? null));
 }
 
+export function insertMany(db: DatabaseSync, table: string, rows: Record<string, unknown>[]): void {
+  if (rows.length === 0) return;
+  const columns = Object.keys(rows[0]!);
+  const placeholders = columns.map(() => "?").join(", ");
+  const sql = `INSERT INTO ${table} (${columns.join(", ")}) VALUES (${placeholders})`;
+  if (/\bOR\s+REPLACE\b/i.test(sql)) {
+    throw new Error("INSERT OR REPLACE is prohibited");
+  }
+  const stmt = db.prepare(sql);
+  for (const row of rows) {
+    stmt.run(...columns.map((column) => row[column] ?? null));
+  }
+}
+
 export function userTables(db: DatabaseSync): string[] {
   return db
     .prepare(

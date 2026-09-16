@@ -1,0 +1,482 @@
+{
+  "schema_version": "atlas-tier-classification/1",
+  "lineage_id": "latin-america-fe5e91689def",
+  "country_slug": "belize",
+  "country_id": "belize",
+  "status": "approved",
+  "source_inputs": [
+    {
+      "input_path": "data/research/countries/belize.json.gz",
+      "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631"
+    },
+    {
+      "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+      "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c"
+    }
+  ],
+  "counts_by_proposed_tier": {
+    "national": 0,
+    "regional": 0,
+    "municipal": 19,
+    "other": 0,
+    "unknown": 0
+  },
+  "classifications": [
+    {
+      "office_id": "BZ-BELIZECITY-M",
+      "tier": "municipal",
+      "rationale": "Office BZ-BELIZECITY-M: supplied officeType='Mayor'; office name='BELIZE CITY — Mayor'; linked geography='BELIZE CITY'; original locality='BELIZE CITY', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/0"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/0"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/0"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-BELIZECITY-C",
+      "tier": "municipal",
+      "rationale": "Office BZ-BELIZECITY-C: supplied officeType='Municipal council'; office name='BELIZE CITY — Municipal council'; linked geography='BELIZE CITY'; original locality='BELIZE CITY', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/1"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/0"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/1"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-BELMOPAN-M",
+      "tier": "municipal",
+      "rationale": "Office BZ-BELMOPAN-M: supplied officeType='Mayor'; office name='BELMOPAN — Mayor'; linked geography='BELMOPAN'; original locality='BELMOPAN', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/2"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/1"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/2"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-BELMOPAN-C",
+      "tier": "municipal",
+      "rationale": "Office BZ-BELMOPAN-C: supplied officeType='Municipal council'; office name='BELMOPAN — Municipal council'; linked geography='BELMOPAN'; original locality='BELMOPAN', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/3"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/1"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/3"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-BENQUEVIEJODELCARMEN-M",
+      "tier": "municipal",
+      "rationale": "Office BZ-BENQUEVIEJODELCARMEN-M: supplied officeType='Mayor'; office name='BENQUE VIEJO DEL CARMEN — Mayor'; linked geography='BENQUE VIEJO DEL CARMEN'; original locality='BENQUE VIEJO DEL CARMEN', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/4"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/2"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/4"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-BENQUEVIEJODELCARMEN-C",
+      "tier": "municipal",
+      "rationale": "Office BZ-BENQUEVIEJODELCARMEN-C: supplied officeType='Municipal council'; office name='BENQUE VIEJO DEL CARMEN — Municipal council'; linked geography='BENQUE VIEJO DEL CARMEN'; original locality='BENQUE VIEJO DEL CARMEN', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/5"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/2"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/5"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-COROZAL-M",
+      "tier": "municipal",
+      "rationale": "Office BZ-COROZAL-M: supplied officeType='Mayor'; office name='COROZAL — Mayor'; linked geography='COROZAL'; original locality='COROZAL', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/6"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/3"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/6"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-COROZAL-C",
+      "tier": "municipal",
+      "rationale": "Office BZ-COROZAL-C: supplied officeType='Municipal council'; office name='COROZAL — Municipal council'; linked geography='COROZAL'; original locality='COROZAL', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/7"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/3"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/7"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-DANGRIGA-M",
+      "tier": "municipal",
+      "rationale": "Office BZ-DANGRIGA-M: supplied officeType='Mayor'; office name='DANGRIGA — Mayor'; linked geography='DANGRIGA'; original locality='DANGRIGA', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/8"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/4"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/8"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-DANGRIGA-C",
+      "tier": "municipal",
+      "rationale": "Office BZ-DANGRIGA-C: supplied officeType='Municipal council'; office name='DANGRIGA — Municipal council'; linked geography='DANGRIGA'; original locality='DANGRIGA', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/9"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/4"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/9"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-ORANGEWALK-M",
+      "tier": "municipal",
+      "rationale": "Office BZ-ORANGEWALK-M: supplied officeType='Mayor'; office name='ORANGE WALK — Mayor'; linked geography='ORANGE WALK'; original locality='ORANGE WALK', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/10"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/5"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/10"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-ORANGEWALK-C",
+      "tier": "municipal",
+      "rationale": "Office BZ-ORANGEWALK-C: supplied officeType='Municipal council'; office name='ORANGE WALK — Municipal council'; linked geography='ORANGE WALK'; original locality='ORANGE WALK', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/11"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/5"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/11"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-PUNTAGORDA-M",
+      "tier": "municipal",
+      "rationale": "Office BZ-PUNTAGORDA-M: supplied officeType='Mayor'; office name='PUNTA GORDA — Mayor'; linked geography='PUNTA GORDA'; original locality='PUNTA GORDA', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/12"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/6"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/12"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-PUNTAGORDA-C",
+      "tier": "municipal",
+      "rationale": "Office BZ-PUNTAGORDA-C: supplied officeType='Municipal council'; office name='PUNTA GORDA — Municipal council'; linked geography='PUNTA GORDA'; original locality='PUNTA GORDA', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/13"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/6"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/13"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-SANIGNACIOSANTAELENA-M",
+      "tier": "municipal",
+      "rationale": "Office BZ-SANIGNACIOSANTAELENA-M: supplied officeType='Mayor'; office name='SAN IGNACIO/SANTA ELENA — Mayor'; linked geography='SAN IGNACIO/SANTA ELENA'; original locality='SAN IGNACIO/SANTA ELENA', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/14"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/7"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/14"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-SANIGNACIOSANTAELENA-C",
+      "tier": "municipal",
+      "rationale": "Office BZ-SANIGNACIOSANTAELENA-C: supplied officeType='Municipal council'; office name='SAN IGNACIO/SANTA ELENA — Municipal council'; linked geography='SAN IGNACIO/SANTA ELENA'; original locality='SAN IGNACIO/SANTA ELENA', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/15"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/7"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/15"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-SANPEDRO-M",
+      "tier": "municipal",
+      "rationale": "Office BZ-SANPEDRO-M: supplied officeType='Mayor'; office name='SAN PEDRO — Mayor'; linked geography='SAN PEDRO'; original locality='SAN PEDRO', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/16"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/8"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/16"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-SANPEDRO-C",
+      "tier": "municipal",
+      "rationale": "Office BZ-SANPEDRO-C: supplied officeType='Municipal council'; office name='SAN PEDRO — Municipal council'; linked geography='SAN PEDRO'; original locality='SAN PEDRO', region=''. The office explicitly identifies a municipal institution or mayor in the supplied locality. Province/district names in the geography locate that municipality and do not turn its office into a regional institution.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/17"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/8"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/17"
+        }
+      ]
+    },
+    {
+      "office_id": "BZ-V-SAN-LAZARO-MEMBER",
+      "tier": "municipal",
+      "rationale": "Office BZ-V-SAN-LAZARO-MEMBER: supplied officeType='Village council member vacancy'; office name='San Lazaro — Village council member vacancy'; linked geography='San Lazaro / Orange Walk District'; original locality='San Lazaro', region='Orange Walk District'. The institution is an elected village/town local council or a seat in that council in the named locality. Proposed municipal for general local government; a vacancy does not create a different geographic tier.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/offices/18"
+        },
+        {
+          "input_path": "data/research/countries/belize.json.gz",
+          "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+          "json_pointer": "/geographies/9"
+        },
+        {
+          "input_path": "data/research/objects/73f2e816e81d9a87693a2fcead3f9d0a30b3879913d422bf9300e19afdcdb8fe.gz",
+          "sha256": "cdf9ce9e5ad26bad800a54a0ee25be9d314e32b62b6fbd4e77f81f407af5217c",
+          "json_pointer": "/offices/18"
+        }
+      ]
+    }
+  ]
+}

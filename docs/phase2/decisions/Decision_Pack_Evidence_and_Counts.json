@@ -1,0 +1,73 @@
+{
+  "status": "DRAFT_ANALYSIS_ONLY",
+  "baseline_main": "9065dcdfc0cbc78171dad35b60742ae232b6dd00",
+  "prompt_e_pr_head": "4479c57eccd0d05d48abce2d3407ad3f032a2590",
+  "source_inputs": [
+    {
+      "input_path": "data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain-DRAFT.json",
+      "sha256": "caf141acf7a23566cf1d33cd870acb3664cccf4ffc560feee01e95224cb9def6"
+    },
+    {
+      "input_path": "docs/phase2/tier-drafts/human-review.json",
+      "sha256": "c691f8462625aed4e7a7c8d281d6be4919d3df51c13452990b0aba0064b5e00d"
+    },
+    {
+      "input_path": "docs/phase2/tier-drafts/Phase2_Tier_Pack_Report.md",
+      "sha256": "b26bbfbbf269cb15b0fff4568fcf653acd8b6861a75199a88d6d954b0e1787f4"
+    },
+    {
+      "input_path": "data/research/countries/mexico.json.gz",
+      "sha256": "a8080cf83f12ede942158d0457f91074a61ab4311e96074fa4bd713eadae5b9e"
+    }
+  ],
+  "mexico": {
+    "recommendations": {
+      "accepted": 0,
+      "withhold": 67,
+      "needs_human_review": 0
+    },
+    "groups": 27,
+    "changes": 201,
+    "event_rows": 162,
+    "unchanged_sibling_rows": 95,
+    "alternate_formula_exact_matches": 67,
+    "reported_formula_max_absolute_error": 4.916853413305944e-08,
+    "ratio_min": 2.485998045087358,
+    "ratio_max": 296.0878644683588,
+    "missing_original_api_responses": 27
+  },
+  "tier_policy": {
+    "original_flags": 6851,
+    "would_clear_human_review": 5426,
+    "would_retain_human_review": 1425,
+    "would_retain_tier_uncertainty": 106,
+    "tier_values_changed": 0,
+    "pack_statuses_changed": 0,
+    "remaining_by_country": {
+      "antigua-and-barbuda": 1,
+      "argentina": 120,
+      "costa-rica": 4,
+      "ecuador": 2,
+      "el-salvador": 262,
+      "guyana": 3,
+      "haiti": 1004,
+      "peru": 11,
+      "saint-kitts-and-nevis": 6,
+      "trinidad-and-tobago": 12
+    }
+  },
+  "retrieval_limits": [
+    {
+      "url": "https://iepcjalisco.org.mx/node/34619",
+      "result": "Indexed primary results page; direct web fetch returned 502. No row-level total accepted from search snippets."
+    },
+    {
+      "url": "https://www2.iepcjalisco.org.mx/publicaciones/wp-content/uploads/2021/11/Memoria-Electoral-Proceso-Electoral-Local-Concurrente-2017-2018.pdf",
+      "result": "Web fetch reported 53,078,476-byte content too large; report not read and no figures taken from it."
+    },
+    {
+      "url": "https://sicee-api.ine.mx/api/v1/local/cards/getTarjOnceTablasamunicipiosLoc",
+      "result": "Read-only web open did not return usable response; exact original POST/query reconstruction was not validated. No refetch claimed."
+    }
+  ]
+}

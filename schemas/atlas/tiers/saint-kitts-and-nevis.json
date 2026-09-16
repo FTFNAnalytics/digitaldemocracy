@@ -1,0 +1,170 @@
+{
+  "schema_version": "atlas-tier-classification/1",
+  "lineage_id": "latin-america-fe5e91689def",
+  "country_slug": "saint-kitts-and-nevis",
+  "country_id": "saint-kitts-and-nevis",
+  "status": "draft_for_human_review",
+  "source_inputs": [
+    {
+      "input_path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+      "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224"
+    },
+    {
+      "input_path": "data/research/objects/ac259514244fcc6f322be7c947b9e724e47b89e7665a23196cf1f9a5347b6c62.gz",
+      "sha256": "6b430fe5f0c965dd252454ee97df7e53eca45acce676e30775fd61e5ce58b376"
+    }
+  ],
+  "counts_by_proposed_tier": {
+    "national": 0,
+    "regional": 0,
+    "municipal": 0,
+    "other": 6,
+    "unknown": 0
+  },
+  "classifications": [
+    {
+      "office_id": "KN-NEVIS-ASSEMBLY",
+      "tier": "other",
+      "rationale": "Office KN-NEVIS-ASSEMBLY: supplied officeType='Island Assembly — five elected seats'; office name='Nevis Island Assembly — Island Assembly — five elected seats'; linked geography='Nevis Island Assembly / Nevis'; original locality='Nevis Island Assembly', region='Nevis'. The named island council/assembly is an island institution, not a national chamber or a municipality. Proposed other conservatively pending an explicit island-government regional-versus-other review; constituency members follow their institution, not constituency size.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+          "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+          "json_pointer": "/offices/0"
+        },
+        {
+          "input_path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+          "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+          "json_pointer": "/geographies/0"
+        },
+        {
+          "input_path": "data/research/objects/ac259514244fcc6f322be7c947b9e724e47b89e7665a23196cf1f9a5347b6c62.gz",
+          "sha256": "6b430fe5f0c965dd252454ee97df7e53eca45acce676e30775fd61e5ce58b376",
+          "json_pointer": "/offices/0"
+        }
+      ]
+    },
+    {
+      "office_id": "KN-NEVIS-1",
+      "tier": "other",
+      "rationale": "Office KN-NEVIS-1: supplied officeType='Elected Island Assembly member'; office name=\"St Paul's (Nevis 1) — Elected Island Assembly member\"; linked geography=\"St Paul's (Nevis 1) / Nevis\"; original locality=\"St Paul's (Nevis 1)\", region='Nevis'. The named island council/assembly is an island institution, not a national chamber or a municipality. Proposed other conservatively pending an explicit island-government regional-versus-other review; constituency members follow their institution, not constituency size.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+          "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+          "json_pointer": "/offices/1"
+        },
+        {
+          "input_path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+          "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+          "json_pointer": "/geographies/1"
+        },
+        {
+          "input_path": "data/research/objects/ac259514244fcc6f322be7c947b9e724e47b89e7665a23196cf1f9a5347b6c62.gz",
+          "sha256": "6b430fe5f0c965dd252454ee97df7e53eca45acce676e30775fd61e5ce58b376",
+          "json_pointer": "/offices/1"
+        }
+      ]
+    },
+    {
+      "office_id": "KN-NEVIS-2",
+      "tier": "other",
+      "rationale": "Office KN-NEVIS-2: supplied officeType='Elected Island Assembly member'; office name=\"St John's (Nevis 2) — Elected Island Assembly member\"; linked geography=\"St John's (Nevis 2) / Nevis\"; original locality=\"St John's (Nevis 2)\", region='Nevis'. The named island council/assembly is an island institution, not a national chamber or a municipality. Proposed other conservatively pending an explicit island-government regional-versus-other review; constituency members follow their institution, not constituency size.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+          "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+          "json_pointer": "/offices/2"
+        },
+        {
+          "input_path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+          "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+          "json_pointer": "/geographies/2"
+        },
+        {
+          "input_path": "data/research/objects/ac259514244fcc6f322be7c947b9e724e47b89e7665a23196cf1f9a5347b6c62.gz",
+          "sha256": "6b430fe5f0c965dd252454ee97df7e53eca45acce676e30775fd61e5ce58b376",
+          "json_pointer": "/offices/2"
+        }
+      ]
+    },
+    {
+      "office_id": "KN-NEVIS-3",
+      "tier": "other",
+      "rationale": "Office KN-NEVIS-3: supplied officeType='Elected Island Assembly member'; office name=\"St George's (Nevis 3) — Elected Island Assembly member\"; linked geography=\"St George's (Nevis 3) / Nevis\"; original locality=\"St George's (Nevis 3)\", region='Nevis'. The named island council/assembly is an island institution, not a national chamber or a municipality. Proposed other conservatively pending an explicit island-government regional-versus-other review; constituency members follow their institution, not constituency size.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+          "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+          "json_pointer": "/offices/3"
+        },
+        {
+          "input_path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+          "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+          "json_pointer": "/geographies/3"
+        },
+        {
+          "input_path": "data/research/objects/ac259514244fcc6f322be7c947b9e724e47b89e7665a23196cf1f9a5347b6c62.gz",
+          "sha256": "6b430fe5f0c965dd252454ee97df7e53eca45acce676e30775fd61e5ce58b376",
+          "json_pointer": "/offices/3"
+        }
+      ]
+    },
+    {
+      "office_id": "KN-NEVIS-4",
+      "tier": "other",
+      "rationale": "Office KN-NEVIS-4: supplied officeType='Elected Island Assembly member'; office name=\"St James' (Nevis 4) — Elected Island Assembly member\"; linked geography=\"St James' (Nevis 4) / Nevis\"; original locality=\"St James' (Nevis 4)\", region='Nevis'. The named island council/assembly is an island institution, not a national chamber or a municipality. Proposed other conservatively pending an explicit island-government regional-versus-other review; constituency members follow their institution, not constituency size.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+          "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+          "json_pointer": "/offices/4"
+        },
+        {
+          "input_path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+          "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+          "json_pointer": "/geographies/4"
+        },
+        {
+          "input_path": "data/research/objects/ac259514244fcc6f322be7c947b9e724e47b89e7665a23196cf1f9a5347b6c62.gz",
+          "sha256": "6b430fe5f0c965dd252454ee97df7e53eca45acce676e30775fd61e5ce58b376",
+          "json_pointer": "/offices/4"
+        }
+      ]
+    },
+    {
+      "office_id": "KN-NEVIS-5",
+      "tier": "other",
+      "rationale": "Office KN-NEVIS-5: supplied officeType='Elected Island Assembly member'; office name=\"St Thomas' (Nevis 5) — Elected Island Assembly member\"; linked geography=\"St Thomas' (Nevis 5) / Nevis\"; original locality=\"St Thomas' (Nevis 5)\", region='Nevis'. The named island council/assembly is an island institution, not a national chamber or a municipality. Proposed other conservatively pending an explicit island-government regional-versus-other review; constituency members follow their institution, not constituency size.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+          "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+          "json_pointer": "/offices/5"
+        },
+        {
+          "input_path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+          "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+          "json_pointer": "/geographies/5"
+        },
+        {
+          "input_path": "data/research/objects/ac259514244fcc6f322be7c947b9e724e47b89e7665a23196cf1f9a5347b6c62.gz",
+          "sha256": "6b430fe5f0c965dd252454ee97df7e53eca45acce676e30775fd61e5ce58b376",
+          "json_pointer": "/offices/5"
+        }
+      ]
+    }
+  ]
+}

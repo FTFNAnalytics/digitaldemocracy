@@ -15,21 +15,17 @@ function listFiles(dir: string): string[] {
 }
 
 describe("Phase 1 public routes", () => {
-  it("does not add an /atlas app route", () => {
-    expect(existsSync(path.join(repoRoot, "app/atlas"))).toBe(false);
-  });
-
   it("keeps the observatory base path at /electiondatabase", () => {
     expect(OBS_BASE).toBe("/electiondatabase");
   });
 
-  it("does not add /atlas sitemap entries or Next.js redirects", () => {
-    expect(STATIC_SITEMAP_PATHS.some((route) => route === "/atlas" || route.startsWith("/atlas/"))).toBe(
-      false,
-    );
+  it("adds a public /atlas app route without replacing /electiondatabase", () => {
+    expect(existsSync(path.join(repoRoot, "app/atlas/page.tsx"))).toBe(true);
+    expect(STATIC_SITEMAP_PATHS).toContain("/atlas");
+    expect(STATIC_SITEMAP_PATHS).toContain("/electiondatabase");
     const nextConfig = readFileSync(path.join(repoRoot, "next.config.ts"), "utf8");
-    expect(nextConfig).not.toMatch(/\/atlas/);
+    expect(nextConfig).not.toMatch(/destination:\s*["']\/atlas/);
     const appFiles = listFiles(path.join(repoRoot, "app"));
-    expect(appFiles.some((file) => file.includes(`${path.sep}atlas${path.sep}`))).toBe(false);
+    expect(appFiles.some((file) => file.includes(`${path.sep}electiondatabase${path.sep}`))).toBe(true);
   });
 });

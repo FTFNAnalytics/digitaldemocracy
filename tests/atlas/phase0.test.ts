@@ -83,7 +83,7 @@ describe("Phase 0 tier-classification drafts", () => {
       expect(file.counts_by_proposed_tier.regional).toBe(0);
     }
     expect(albania.status).toBe("approved");
-    expect(andorra.status).toBe("draft_for_human_review");
+    expect(andorra.status).toBe("approved");
     expect(armenia.status).toBe("draft_for_human_review");
     expect(alderney.status).toBe("approved");
   });

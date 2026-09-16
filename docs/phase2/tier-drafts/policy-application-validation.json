@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "draft_packs": 22,
+  "office_ids_preserved": 18647,
+  "historical_offices_preserved": 414,
+  "exact_authorized_rows_changed": 5426,
+  "residual_rows_preserved_in_full": 1425,
+  "tier_uncertain_remaining": 1116,
+  "deferred_residual_uncertainty_changes": 1010,
+  "tier_value_changes": 0,
+  "pack_approvals": 0,
+  "open_queue": 1425,
+  "resolved_draft_category_queue": 5426,
+  "source_file_hashes_verified": 43,
+  "batch_a_zero_flags": true,
+  "protected_ddl_and_albania_hashes_match": true,
+  "mexico_override": "Outside write scope; no override copied, modified or acceptance re-evaluated.",
+  "not_run": [
+    "Importer/SQLite research load",
+    "Publication and citation CI",
+    "Country pack acceptance"
+  ],
+  "publication_status": "Not unblocked by this draft revision"
+}
