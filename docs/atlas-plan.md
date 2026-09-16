@@ -1,6 +1,6 @@
 # Election Atlas — restructuring plan
 
-**Status:** Phase 0 plan is on main. Phase 1 **scaffolding** (gitignore, `ATLAS_SQLITE_PATH`, migrate/import entrypoints, bootstrap `schema_version`) is tracked in [`docs/atlas-phase1.md`](atlas-phase1.md). Phase 0 inventory and tier files are in [`docs/phase0/`](phase0/REPORT.md) and [`schemas/atlas/tiers/`](../schemas/atlas/tiers/README.md) (Alderney `other` **approved** 2026-09-16; other Europe files remain `draft_for_human_review`). Full Albania storage proof still waits on reviewed entity DDL, human review of the Albania tier draft, and the Albania map. No `/atlas` UI or redirects.
+**Status:** Phase 0 plan is on main. Phase 1 **scaffolding** (gitignore, `ATLAS_SQLITE_PATH` / `ATLAS_ATTEMPTS_SQLITE_PATH`, migrate/import entrypoints, Prompt B DDL) is tracked in [`docs/atlas-phase1.md`](atlas-phase1.md). Phase 0 inventory and tier files are in [`docs/phase0/`](phase0/REPORT.md) and [`schemas/atlas/tiers/`](../schemas/atlas/tiers/README.md) (Alderney `other` **approved** 2026-09-16; other Europe files remain `draft_for_human_review`). Prompt B draft DDL is in [`schemas/atlas/migrations/`](../schemas/atlas/migrations/README.md); Albania storage proof still waits on Prompt C field map/importer, human review of the Albania tier draft, and the Albania map. No `/atlas` UI or redirects.
 
 **Phase 0** (this plan) merges when Justin says. **Phase 1 is un-gated by Justin’s disposition on this revision** — it does not wait on open-ended further audits. After Phase 1 exits, **stop for Phase 2 review**.
 
@@ -623,7 +623,7 @@ Operational detail for the live observatory remains in [`docs/electiondatabase-p
 - Observatory routes live under `/electiondatabase` (`lib/observatory/routes.ts`).
 - Latin America release loads from `data/research`; country packages merge at runtime via `lib/observatory/adapters/`.
 - Observatory home still highlights South America. Atlas landing will highlight Europe; that is independent of keeping already-public URLs working.
-- There is **no** `/atlas` route yet. Phase 1 scaffolding can create a gitignored bootstrap SQLite file (`schema_version` / `atlas_meta` only); that is not Albania storage proof.
+- There is **no** `/atlas` route yet. Phase 1 scaffolding can create gitignored SQLite files (`atlas.sqlite` + sibling `atlas-attempts.sqlite`) from Prompt B DDL with **zero** research rows; that is not Albania storage proof.
 - `data/incoming/` has no zip (only README / `.gitkeep`). `data/overrides/` is not present yet. Fixtures stay under `tests/fixtures/` (test-only).
 - `.gitignore` ignores `*.sqlite` / WAL / SHM and `data/master/` database files (Phase 1 scaffolding).
 

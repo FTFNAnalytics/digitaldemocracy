@@ -1,23 +1,29 @@
 #!/usr/bin/env npx tsx
 /**
- * Apply checked-in Atlas SQL migrations to ATLAS_SQLITE_PATH.
+ * Apply checked-in Atlas SQL migrations to two databases:
+ *   - 0001_atlas_attempt_log.sql → ATLAS_ATTEMPTS_SQLITE_PATH
+ *   - 0002_atlas_master.sql      → ATLAS_SQLITE_PATH
  *
- * Bootstrap only: schema_version + atlas_meta. Full entity DDL waits for
- * review against docs/atlas-plan.md identity rules. See docs/atlas-phase1.md.
+ * Each SQL file already contains BEGIN IMMEDIATE / COMMIT and must be
+ * executed outside an existing transaction. Do not wrap exec in BEGIN.
+ * Never apply either file to the other database.
+ *
+ * See docs/atlas-phase1.md and docs/phase1/Phase1_DDL_Rationale.md.
  */
 import { mkdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
-import { listAtlasMigrations } from "../../lib/atlas/migrations";
-import { resolveAtlasSqlitePath } from "../../lib/atlas/paths";
+import {
+  ATLAS_ATTEMPT_LOG_FILENAME,
+  ATLAS_MASTER_FILENAME,
+  ATLAS_MIGRATIONS_DIR,
+  listAtlasMigrationsForTarget,
+  type AtlasMigration,
+} from "../../lib/atlas/migrations";
+import { resolveAtlasAttemptsSqlitePath, resolveAtlasSqlitePath } from "../../lib/atlas/paths";
 
-const SCHEMA_VERSION_DDL = `
-CREATE TABLE IF NOT EXISTS schema_version (
-  version INTEGER NOT NULL PRIMARY KEY,
-  name TEXT NOT NULL UNIQUE,
-  applied_at TEXT NOT NULL
-);
-`;
+const EXPECTED_ATTEMPT_DESCRIPTION = "Atlas durable attempt ledger draft";
+const EXPECTED_MASTER_DESCRIPTION = "Atlas Phase 1 master draft";
 
 function openDatabase(filePath: string): DatabaseSync {
   mkdirSync(path.dirname(filePath), { recursive: true });
@@ -26,64 +32,99 @@ function openDatabase(filePath: string): DatabaseSync {
   return db;
 }
 
-function appliedVersions(db: DatabaseSync): Set<number> {
-  db.exec(SCHEMA_VERSION_DDL);
-  const rows = db.prepare("SELECT version FROM schema_version").all();
-  return new Set(rows.map((row) => Number(row.version)));
+function userTables(db: DatabaseSync): string[] {
+  return db
+    .prepare(
+      "SELECT name FROM sqlite_master WHERE type = 'table' AND name NOT LIKE 'sqlite_%' ORDER BY name",
+    )
+    .all()
+    .map((row) => String(row.name));
 }
 
-function applyMigrations(root: string, filePath: string): { applied: string[]; skipped: string[] } {
+function schemaMigrationRow(db: DatabaseSync): { version: number; description: string } | undefined {
+  const tables = userTables(db);
+  if (!tables.includes("schema_migration")) return undefined;
+  const row = db.prepare("SELECT version, description FROM schema_migration WHERE version = 1").get();
+  if (!row) return undefined;
+  return { version: Number(row.version), description: String(row.description) };
+}
+
+function applySqlFile(root: string, filePath: string, migration: AtlasMigration, expectedDescription: string): "applied" | "skipped" {
   const db = openDatabase(filePath);
-  const applied: string[] = [];
-  const skipped: string[] = [];
+  const label = `${String(migration.version).padStart(4, "0")}_${migration.name}`;
   try {
-    const done = appliedVersions(db);
-    const migrations = listAtlasMigrations(root);
-    if (migrations.length === 0) {
-      throw new Error("No Atlas SQL migrations found under schemas/atlas/migrations.");
-    }
-    for (const migration of migrations) {
-      const label = `${String(migration.version).padStart(4, "0")}_${migration.name}`;
-      if (done.has(migration.version)) {
-        skipped.push(label);
-        continue;
+    const existing = schemaMigrationRow(db);
+    const tables = userTables(db);
+    if (existing) {
+      if (existing.description !== expectedDescription) {
+        throw new Error(
+          `Unexpected schema_migration description at ${filePath}: ${JSON.stringify(existing.description)}. Expected ${JSON.stringify(expectedDescription)}.`,
+        );
       }
-      const sql = readFileSync(path.join(root, "schemas/atlas/migrations", migration.filename), "utf8");
-      db.exec("BEGIN;");
+      return "skipped";
+    }
+    if (tables.length > 0) {
+      throw new Error(
+        `Unexpected existing schema at ${filePath} (${tables.join(", ")}). ${label} must be applied to a new empty database. Refusing to migrate an unidentified/live file.`,
+      );
+    }
+
+    const sql = readFileSync(path.join(root, ATLAS_MIGRATIONS_DIR, migration.filename), "utf8");
+    try {
+      db.exec(sql);
+    } catch (error) {
       try {
-        db.exec(sql);
-        db.prepare(
-          "INSERT INTO schema_version (version, name, applied_at) VALUES (?, ?, ?)",
-        ).run(migration.version, migration.name, new Date().toISOString());
-        db.exec("COMMIT;");
-      } catch (error) {
         db.exec("ROLLBACK;");
-        throw error;
+      } catch {
+        // Ignore rollback failures when no transaction is open.
       }
-      applied.push(label);
+      throw error;
     }
+
+    const applied = schemaMigrationRow(db);
+    if (!applied || applied.description !== expectedDescription) {
+      throw new Error(`Migration ${label} did not record expected schema_migration at ${filePath}.`);
+    }
+    return "applied";
   } finally {
     db.close();
   }
-  return { applied, skipped };
+}
+
+function requireOne(migrations: AtlasMigration[], filename: string): AtlasMigration {
+  if (migrations.length !== 1 || migrations[0].filename !== filename) {
+    throw new Error(
+      `Expected exactly ${filename} for this database, found ${migrations.map((m) => m.filename).join(", ") || "(none)"}.`,
+    );
+  }
+  return migrations[0];
 }
 
 function main() {
   const root = process.cwd();
   const sqlitePath = resolveAtlasSqlitePath();
-  const { applied, skipped } = applyMigrations(root, sqlitePath);
+  const attemptsPath = resolveAtlasAttemptsSqlitePath();
+
+  const attemptMigration = requireOne(listAtlasMigrationsForTarget(root, "attempts"), ATLAS_ATTEMPT_LOG_FILENAME);
+  const masterMigration = requireOne(listAtlasMigrationsForTarget(root, "master"), ATLAS_MASTER_FILENAME);
+
+  const attemptResult = applySqlFile(root, attemptsPath, attemptMigration, EXPECTED_ATTEMPT_DESCRIPTION);
+  const masterResult = applySqlFile(root, sqlitePath, masterMigration, EXPECTED_MASTER_DESCRIPTION);
 
   console.log("migrate:atlas");
+  console.log(`ATLAS_ATTEMPTS_SQLITE_PATH=${attemptsPath}`);
   console.log(`ATLAS_SQLITE_PATH=${sqlitePath}`);
-  if (applied.length === 0) {
-    console.log("No new migrations. Bootstrap schema_version is already applied.");
-  } else {
-    console.log(`Applied: ${applied.join(", ")}`);
-  }
-  if (skipped.length > 0) {
-    console.log(`Already applied: ${skipped.join(", ")}`);
-  }
-  console.log("Entity DDL is not included. Albania ingest is still blocked. See docs/atlas-phase1.md.");
+  console.log(
+    attemptResult === "applied"
+      ? `Applied to attempts DB: ${ATLAS_ATTEMPT_LOG_FILENAME.replace(/\.sql$/, "")}`
+      : `Already applied to attempts DB: ${ATLAS_ATTEMPT_LOG_FILENAME.replace(/\.sql$/, "")}`,
+  );
+  console.log(
+    masterResult === "applied"
+      ? `Applied to master DB: ${ATLAS_MASTER_FILENAME.replace(/\.sql$/, "")}`
+      : `Already applied to master DB: ${ATLAS_MASTER_FILENAME.replace(/\.sql$/, "")}`,
+  );
+  console.log("import:atlas remains blocked until Prompt C field map and importer. See docs/phase1/.");
 }
 
 main();

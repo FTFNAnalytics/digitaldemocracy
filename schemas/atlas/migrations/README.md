@@ -1,11 +1,16 @@
 # Atlas SQL migrations
 
-Versioned DDL for the Election Atlas SQLite master (`ATLAS_SQLITE_PATH`).
+Prompt B uses **two databases**. Do not apply both files to the same SQLite file.
 
-Filename pattern: `NNNN_name.sql` (four-digit version, snake_case name).
+| File | Database | Path override | Default |
+| --- | --- | --- | --- |
+| `0001_atlas_attempt_log.sql` | Durable attempt ledger only | `ATLAS_ATTEMPTS_SQLITE_PATH` | `data/master/atlas-attempts.sqlite` |
+| `0002_atlas_master.sql` | Master / staging only | `ATLAS_SQLITE_PATH` | `data/master/atlas.sqlite` |
 
-`0001_schema_version.sql` is **bootstrap only** (`schema_version` + `atlas_meta`). It is not the Atlas entity schema.
+Each file is a self-contained draft (`BEGIN IMMEDIATE` / `COMMIT`, `schema_migration`, STRICT tables). Execute it on a **new empty** database, outside an existing transaction. Never run either file against an unidentified or live database.
 
-Do not add office, event, geography, or release tables here until the ChatGPT DDL draft is reviewed against the identity rules in [docs/atlas-plan.md](../../../docs/atlas-plan.md).
+The previous bootstrap (`0001_schema_version.sql` / `schema_version` + `atlas_meta`) is replaced by these two numbered migrations. That bootstrap was not the Atlas entity schema.
 
-Apply with `npm run migrate:atlas`.
+Apply with `npm run migrate:atlas`. `npm run import:atlas` stays blocked until Prompt C.
+
+Rationale: [docs/phase1/Phase1_DDL_Rationale.md](../../../docs/phase1/Phase1_DDL_Rationale.md). Field-map / CI handoff: [docs/phase1/Prompt_C_Field_Map_and_CI.md](../../../docs/phase1/Prompt_C_Field_Map_and_CI.md).
