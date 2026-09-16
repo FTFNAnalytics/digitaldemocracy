@@ -21,6 +21,8 @@ Prompt D continuity field maps live here. Prompt E/G LatAm/NZ tier files are che
 
 7. **Prompt H residual review pack** lives under [residuals/](residuals/README.md). 1,425 residuals inventoried. **Justin accepted all 285 conditional clearances on 2026-09-16** (El Salvador 262 including retained crosswalk caveat + Argentina 23). **Justin then approved the El Salvador, Argentina, and Andorra packs** (status only; Argentina still has 97 focused-review rows). Haiti 1,004 keep-open; **1,140 residuals still open**; 1,010 uncertainty-only still deferred.
 
+8. **Prompt I residual closeout pack landed as drafts** under [closeout/](closeout/Phase2_Residual_Closeout_Report.md). `applied_changes=0`; 1,140 residuals keep-open/defer; 1,010 uncertainty-only still deferred. No tier JSON rewritten; no pack status flips; Mexico override untouched.
+
 | File | Role |
 | --- | --- |
 | [Prompt_D_Continuity_Checklist.md](Prompt_D_Continuity_Checklist.md) | Required outputs and CI gates (execution Not run) |
@@ -32,3 +34,4 @@ Prompt D continuity field maps live here. Prompt E/G LatAm/NZ tier files are che
 | [tier-drafts/](tier-drafts/Phase2_Tier_Policy_Application_Report.md) | Prompt E/G packs (Batch A+B + ES/AR approved; 8 still draft; Prompt G: 5,426 clearances; Prompt H: +285 residual clearances; 1,140 residuals still open; Mexico inventory non-executable) |
 | [decisions/](decisions/README.md) | Prompt F pack: Mexico withhold-all-67 **accepted** 2026-09-16; [Batch A](decisions/Batch_A_Tier_Pack_Approvals.md), [Batch B](decisions/Batch_B_Tier_Pack_Approvals.md), and [ES+AR+Andorra](decisions/ES_AR_Andorra_Pack_Approvals.md) packs approved; 8 residual-heavy packs still draft |
 | [residuals/](residuals/README.md) | Prompt H pack: 1,425 inventoried; **285 clearances applied** 2026-09-16 (ES+AR); ES/AR packs later approved; 1,140 still open; 1,010 uncertainty-only deferred |
+| [closeout/](closeout/Phase2_Residual_Closeout_Report.md) | Prompt I residual closeout pack (**DRAFT**; `applied_changes=0`; 1,140 keep-open/defer; 1,010 uncertainty deferred; no tier JSON rewritten) |
