@@ -1,0 +1,260 @@
+{
+  "status": "draft_for_human_review",
+  "phase": 0,
+  "prompt": "phase0_prompt_a",
+  "scope": {
+    "europe_packages": [
+      "albania",
+      "alderney",
+      "andorra",
+      "armenia"
+    ],
+    "europe_package_count": 4,
+    "regional_offices": 0,
+    "albania_storage_proof": "phase_1_target_not_imported",
+    "populated_regional_calendar_proof": false,
+    "andorra_empty_state_demo": true,
+    "armenia_order": "last_among_early_europe_targets"
+  },
+  "packages": [
+    {
+      "slug": "albania",
+      "country": "Albania",
+      "polity": "sovereign_country",
+      "role": "phase_1_storage_proof",
+      "adapter_kind": "europe-country-extract/1",
+      "adapter": "europe-workbook-extract",
+      "dir": "data/countries/albania",
+      "site_ingestion_status": "pending_adapter",
+      "coverage_complete": false,
+      "office_count": 122,
+      "counts_by_proposed_tier": {
+        "national": 0,
+        "regional": 0,
+        "municipal": 122,
+        "council": 0,
+        "other": 0
+      },
+      "tier_file": "schemas/atlas/tiers/albania.json",
+      "checksums": {
+        "manifest.json": {
+          "path": "data/countries/albania/manifest.json",
+          "sha256": "182dc3b5d90538b9d42463f5ab9fdbe9cc6f87014775ad8de44710f4bf137429",
+          "bytes": 57461
+        },
+        "coverage.json": {
+          "path": "data/countries/albania/coverage.json",
+          "sha256": "7687efabe16f9e0a91037964814907d9d928b050864d3637a60703683c4973b0",
+          "bytes": 1201
+        },
+        "tables/office-register.json": {
+          "path": "data/countries/albania/tables/office-register.json",
+          "sha256": "7d5a3735e83f95ee82deb76c60c6d391fa5faadfd3f660fe71ca8ca0ca05ad62",
+          "bytes": 66480
+        },
+        "tables/election-calendar.json": {
+          "path": "data/countries/albania/tables/election-calendar.json",
+          "sha256": "9bfe06c00e2e97f55efea778c7116a5c3ce50ce8b3b6d16fa665ea9084925282",
+          "bytes": 628
+        }
+      },
+      "validation_notes": [
+        "Office-register SHA-256 recomputed from in-repo bytes.",
+        "122 register rows: 61 Mayor + 61 Municipal council, all municipal.",
+        "Tier municipal approved 2026-09-16 by Justin (product owner). Regional=0 is intentional.",
+        "Calendar cohort string 'Regional / municipal' ignored.",
+        "Package coverage_complete is false. Country validate.py exists.",
+        "Albania SQLite ingest is not in this PR."
+      ]
+    },
+    {
+      "slug": "andorra",
+      "country": "Andorra",
+      "polity": "sovereign_country",
+      "role": "empty_regional_calendar_demo",
+      "adapter_kind": "europe-country-extract/1",
+      "adapter": "europe-workbook-extract",
+      "dir": "data/countries/andorra",
+      "site_ingestion_status": "pending_adapter",
+      "coverage_complete": false,
+      "office_count": 7,
+      "counts_by_proposed_tier": {
+        "national": 0,
+        "regional": 0,
+        "municipal": 7,
+        "council": 0,
+        "other": 0
+      },
+      "tier_file": "schemas/atlas/tiers/andorra.json",
+      "checksums": {
+        "manifest.json": {
+          "path": "data/countries/andorra/manifest.json",
+          "sha256": "6bf316e03ed7ed856b34ccb66438e847b67f6f44c0ccdaebd0e98b2fddf2564c",
+          "bytes": 6716
+        },
+        "coverage.json": {
+          "path": "data/countries/andorra/coverage.json",
+          "sha256": "e0968e7dc3537644912b7bf2b96f8b32d4cc88bb10f162a2bd0b59a1311c18ce",
+          "bytes": 814
+        },
+        "tables/office-register.json": {
+          "path": "data/countries/andorra/tables/office-register.json",
+          "sha256": "318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f",
+          "bytes": 5134
+        },
+        "tables/election-calendar.json": {
+          "path": "data/countries/andorra/tables/election-calendar.json",
+          "sha256": "aa444f13e0864e3e2cee3903249be2cc456d6449c89d9dabe655bd4f3da624a4",
+          "bytes": 536
+        }
+      },
+      "validation_notes": [
+        "7 communal councils, all proposed municipal.",
+        "No regional-tier offices; explicit empty regional calendar state.",
+        "Calendar cohort string 'Regional / municipal' ignored."
+      ]
+    },
+    {
+      "slug": "alderney",
+      "country": "Alderney",
+      "polity": "territory",
+      "role": "early_europe_target",
+      "adapter_kind": "europe-country-extract/1",
+      "adapter": "europe-workbook-extract",
+      "dir": "data/countries/alderney",
+      "site_ingestion_status": "pending_adapter",
+      "coverage_complete": false,
+      "office_count": 2,
+      "counts_by_proposed_tier": {
+        "national": 0,
+        "regional": 0,
+        "municipal": 0,
+        "council": 0,
+        "other": 2
+      },
+      "tier_file": "schemas/atlas/tiers/alderney.json",
+      "checksums": {
+        "manifest.json": {
+          "path": "data/countries/alderney/manifest.json",
+          "sha256": "5fe0d0984027f5b4deb1f8e0fe36528cced9665d9f12b56963cdde414349d2d0",
+          "bytes": 4335
+        },
+        "coverage.json": {
+          "path": "data/countries/alderney/coverage.json",
+          "sha256": "1c4f621adf53cc8f9cfcc8aac2ead67572130ee39bacb5bbd8f293eb02980b85",
+          "bytes": 768
+        },
+        "tables/office-register.json": {
+          "path": "data/countries/alderney/tables/office-register.json",
+          "sha256": "46dcd2afececa8e2ab46383d306003b941e6ca0ef9dac8e77dfc4435444a72f9",
+          "bytes": 1378
+        },
+        "tables/election-calendar.json": {
+          "path": "data/countries/alderney/tables/election-calendar.json",
+          "sha256": "ed18050130ba80a3726c45154d841c0f3c64b3d505437f62fa34f1c2540623bc",
+          "bytes": 767
+        }
+      },
+      "validation_notes": [
+        "Two register offices: GG-ALD-STATES and GG-ALD-PLEB.",
+        "Tier other approved 2026-09-16 by product owner. Channel Islands are low priority for the broader Atlas.",
+        "Do not multiply seat counts into office IDs.",
+        "2026 calendar dates remain conditional."
+      ]
+    },
+    {
+      "slug": "armenia",
+      "country": "Armenia",
+      "polity": "sovereign_country",
+      "role": "last_among_early_europe_targets",
+      "adapter_kind": "armenia-packed-europe/1",
+      "adapter": "armenia-packed-payload",
+      "dir": "data/countries/armenia",
+      "site_ingestion_status": "pending",
+      "coverage_complete": false,
+      "office_count": 71,
+      "counts_by_proposed_tier": {
+        "national": 0,
+        "regional": 0,
+        "municipal": 71,
+        "council": 0,
+        "other": 0
+      },
+      "tier_file": "schemas/atlas/tiers/armenia.json",
+      "checksums": {
+        "manifest.json": {
+          "path": "data/countries/armenia/manifest.json",
+          "sha256": "b13baa955ae2c4335b3d7c85a276564c1280172ac95330489ce7ae8cdb9a4bfe",
+          "bytes": 2047
+        },
+        "coverage.json": {
+          "path": "data/countries/armenia/coverage.json",
+          "sha256": "64ec81c7f12297742e4fcd219cf094e80e39cc68597feb1206bee0e65a209fcb",
+          "bytes": 784
+        },
+        "inventory.json": {
+          "path": "inventory.json",
+          "access": "armenia-packed-europe/1 unpack",
+          "sha256": "e265bc4de47deaf710b248f88c059cd19d6c203236a1a3d7a5ad9ed824ad782e",
+          "bytes": 34442,
+          "manifest_sha256": "e265bc4de47deaf710b248f88c059cd19d6c203236a1a3d7a5ad9ed824ad782e",
+          "checksum_verified": true
+        },
+        "payload_sha256": "f55265273c849d248baf0037e4149e17a0329318d21a794e966cebbaa32012ca",
+        "unpacked_office_register": {
+          "path": "tables/master/office-register.json",
+          "sha256": "23588bdc55fc7a6dff8cf322adedd9df085088f12fb018401dda6df5f1ae759d",
+          "bytes": 28953
+        }
+      },
+      "validation_notes": [
+        "71 community office-register rows from the packed payload; no invented IDs.",
+        "Proportional councils elect the mayor; missing mayor rows were not added.",
+        "Prompt token AM-VEDI maps to register office_id AM-VEDI-C.",
+        "Companion histories overlap the regional history index and must not be summed.",
+        "website_ingestion is pending."
+      ]
+    },
+    {
+      "slug": "new-zealand",
+      "country": "New Zealand",
+      "polity": "sovereign_country",
+      "role": "phase_2_cutover_gate_input",
+      "adapter_kind": "nz-research-batch/1",
+      "adapter": "new-zealand-batch",
+      "dir": "data/countries/new-zealand",
+      "site_ingestion_status": "pending_adapter",
+      "coverage_complete": false,
+      "office_count": 4,
+      "tier_file": null,
+      "checksums": {
+        "dataset.json": {
+          "path": "data/countries/new-zealand/dataset.json",
+          "sha256": "6d73c7075fc04be9cec3fdda37810e5195748c77e25df2e62998e2d4721d2133",
+          "bytes": 27946
+        }
+      },
+      "validation_notes": [
+        "Oceania continuity input. Four by-election offices in dataset.json races[].",
+        "No Europe regional claim. Not classified in this Phase 0 Europe pass."
+      ]
+    }
+  ],
+  "europe_totals": {
+    "offices": 202,
+    "counts_by_proposed_tier": {
+      "national": 0,
+      "regional": 0,
+      "municipal": 200,
+      "council": 0,
+      "other": 2
+    },
+    "regional_offices": 0
+  },
+  "latin_america_lineage": "latin-america-fe5e91689def",
+  "continuity": {
+    "latin_america": "docs/phase0/continuity-counts.json",
+    "new_zealand_offices": 4
+  },
+  "human_review": "docs/phase0/human-review.json"
+}

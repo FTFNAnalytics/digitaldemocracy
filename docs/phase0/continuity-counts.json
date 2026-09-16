@@ -1,0 +1,602 @@
+{
+  "status": "draft_for_human_review",
+  "phase": 0,
+  "latin_america": {
+    "lineage_id": "latin-america-fe5e91689def",
+    "package_sha256": "fe5e91689def5b3e6824c761b5ffb8fb2118847b9f3e0811fb76ba093453b23f",
+    "manifest": {
+      "path": "data/research/manifest.json",
+      "sha256": "010001d254827c882f028c4e118fa322ddaa0ef75f32aead9886a634e43f21e1",
+      "bytes": 5616423
+    },
+    "base": {
+      "path": "data/research/base.json.gz",
+      "sha256": "7920209e27dbe40397bd1de50a93534a4a9ebe4e4de625de4e160c9ac1d189ed",
+      "bytes": 382144,
+      "manifest_sha256": "7920209e27dbe40397bd1de50a93534a4a9ebe4e4de625de4e160c9ac1d189ed",
+      "checksum_verified": true,
+      "offices": 0,
+      "note": "base.json.gz holds screens/territories/queue metadata, not office shards"
+    },
+    "totals": {
+      "manifest_validatedCounts": {
+        "currentOffices": 18229,
+        "historicalOffices": 414,
+        "histories": 40509,
+        "resultRows": 269740,
+        "briefings": 18643,
+        "recomputedFromNormalizedRecords": true
+      },
+      "recomputed_from_country_and_briefing_shards": {
+        "currentOffices": 18229,
+        "historicalOffices": 414,
+        "histories": 40509,
+        "resultRows": 269740,
+        "briefings": 18643
+      },
+      "match": true,
+      "verification": "recomputed_from_committed_research_derivatives",
+      "researchCoverageComplete": false
+    },
+    "country_shards": [
+      {
+        "path": "data/research/countries/antigua-and-barbuda.json.gz",
+        "sha256": "525145b32596a539a17e568f199175498e4c3cabd761365df70e0c1b59ab194c",
+        "manifest_sha256": "525145b32596a539a17e568f199175498e4c3cabd761365df70e0c1b59ab194c",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 1,
+          "currentOffices": 1,
+          "historicalOffices": 0,
+          "histories": 3,
+          "resultRows": 9
+        },
+        "counts_by_schema_v1_tier": {
+          "other": 1
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/argentina.json.gz",
+        "sha256": "737190b6be8bbb4759df22cb80d1ac5ee4b3907b3d20575972bce7bf58c57753",
+        "manifest_sha256": "737190b6be8bbb4759df22cb80d1ac5ee4b3907b3d20575972bce7bf58c57753",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 3560,
+          "currentOffices": 3440,
+          "historicalOffices": 120,
+          "histories": 7939,
+          "resultRows": 34797
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 2979,
+          "other": 427,
+          "regional": 154
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/bahamas.json.gz",
+        "sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+        "manifest_sha256": "9e2e381294b17b4feba47b6b9f3d3131a00f2725a10d220a7e099481373a256a",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 33,
+          "currentOffices": 33,
+          "historicalOffices": 0,
+          "histories": 0,
+          "resultRows": 0
+        },
+        "counts_by_schema_v1_tier": {
+          "other": 33
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/belize.json.gz",
+        "sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+        "manifest_sha256": "865c184747266867a057f349ed6d844d841223c4601bc89c017229628aa3e631",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 19,
+          "currentOffices": 19,
+          "historicalOffices": 0,
+          "histories": 57,
+          "resultRows": 203
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 18,
+          "other": 1
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/brazil.json.gz",
+        "sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+        "manifest_sha256": "2902ff58fb1519242a34cacc79b0ec5d637c8788dec5b24b8730df6248c47e8b",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 62,
+          "currentOffices": 62,
+          "historicalOffices": 0,
+          "histories": 201,
+          "resultRows": 2817
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 8,
+          "regional": 54
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/colombia.json.gz",
+        "sha256": "4a5a308ef44f5a77cf73bd0d3619aab93c995738c23b490113c1a69ff3bf9834",
+        "manifest_sha256": "4a5a308ef44f5a77cf73bd0d3619aab93c995738c23b490113c1a69ff3bf9834",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 2307,
+          "currentOffices": 2307,
+          "historicalOffices": 0,
+          "histories": 6825,
+          "resultRows": 45783
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 2243,
+          "regional": 64
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/costa-rica.json.gz",
+        "sha256": "148944324ed2fb996d9c947d40cf7a22389b09a1e554d2c00b0df30e4b898c72",
+        "manifest_sha256": "148944324ed2fb996d9c947d40cf7a22389b09a1e554d2c00b0df30e4b898c72",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 670,
+          "currentOffices": 666,
+          "historicalOffices": 4,
+          "histories": 1973,
+          "resultRows": 14398
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 168,
+          "other": 502
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/cuba.json.gz",
+        "sha256": "da5b03d1a23730338b879202fbe5d578a710356b2da332b8d2a9cef022ce1bd8",
+        "manifest_sha256": "da5b03d1a23730338b879202fbe5d578a710356b2da332b8d2a9cef022ce1bd8",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 168,
+          "currentOffices": 168,
+          "historicalOffices": 0,
+          "histories": 0,
+          "resultRows": 0
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 168
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/dominica.json.gz",
+        "sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+        "manifest_sha256": "e12e3f0b64d41fb8ec1eafe1ed69c87e88b483aeafe409a303dbb67ad81a9883",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 25,
+          "currentOffices": 25,
+          "historicalOffices": 0,
+          "histories": 133,
+          "resultRows": 567
+        },
+        "counts_by_schema_v1_tier": {
+          "other": 25
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/dominican-republic.json.gz",
+        "sha256": "4f2bd1a8729e69021adfc0a15789f2a5fd2e9b7f5ee3509aed31f4bd8a604744",
+        "manifest_sha256": "4f2bd1a8729e69021adfc0a15789f2a5fd2e9b7f5ee3509aed31f4bd8a604744",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 786,
+          "currentOffices": 786,
+          "historicalOffices": 0,
+          "histories": 2356,
+          "resultRows": 12715
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 316,
+          "other": 470
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/ecuador.json.gz",
+        "sha256": "b836ff24d2c52c40fb9672d733b401727998c24bacac533c64eb66941bacd03f",
+        "manifest_sha256": "b836ff24d2c52c40fb9672d733b401727998c24bacac533c64eb66941bacd03f",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 1297,
+          "currentOffices": 1295,
+          "historicalOffices": 2,
+          "histories": 3857,
+          "resultRows": 23362
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 446,
+          "other": 828,
+          "regional": 23
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/el-salvador.json.gz",
+        "sha256": "054963989fbb273a7390d41ce474b8eb8833eeda1ec6888dca56b350a1c60f0e",
+        "manifest_sha256": "054963989fbb273a7390d41ce474b8eb8833eeda1ec6888dca56b350a1c60f0e",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 306,
+          "currentOffices": 44,
+          "historicalOffices": 262,
+          "histories": 569,
+          "resultRows": 2773
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 44,
+          "other": 262
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/guatemala.json.gz",
+        "sha256": "b409d93a99fbd7be59c9ec380e26b3b90f2fbb64c83db40c5419f0dde5a61b68",
+        "manifest_sha256": "b409d93a99fbd7be59c9ec380e26b3b90f2fbb64c83db40c5419f0dde5a61b68",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 340,
+          "currentOffices": 340,
+          "historicalOffices": 0,
+          "histories": 1017,
+          "resultRows": 9121
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 340
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/guyana.json.gz",
+        "sha256": "9ea1f9916b800217d8beac228849ace5ba495fcfa4fad1113b4173bd13154fc3",
+        "manifest_sha256": "9ea1f9916b800217d8beac228849ace5ba495fcfa4fad1113b4173bd13154fc3",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 83,
+          "currentOffices": 80,
+          "historicalOffices": 3,
+          "histories": 231,
+          "resultRows": 519
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 80,
+          "other": 3
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/haiti.json.gz",
+        "sha256": "983b816321a91a61400be56ae0b8ba962c842d8f276aefea1b4acb0b33c9be3c",
+        "manifest_sha256": "983b816321a91a61400be56ae0b8ba962c842d8f276aefea1b4acb0b33c9be3c",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 1153,
+          "currentOffices": 1153,
+          "historicalOffices": 0,
+          "histories": 69,
+          "resultRows": 69
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 149,
+          "other": 1004
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/jamaica.json.gz",
+        "sha256": "ca20f25291c85462a08d695c495ba3b6ba3914c31cb60b1407ad83d9fc9ebbdf",
+        "manifest_sha256": "ca20f25291c85462a08d695c495ba3b6ba3914c31cb60b1407ad83d9fc9ebbdf",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 243,
+          "currentOffices": 243,
+          "historicalOffices": 0,
+          "histories": 737,
+          "resultRows": 1651
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 243
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/mexico.json.gz",
+        "sha256": "a8080cf83f12ede942158d0457f91074a61ab4311e96074fa4bd713eadae5b9e",
+        "manifest_sha256": "a8080cf83f12ede942158d0457f91074a61ab4311e96074fa4bd713eadae5b9e",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 1852,
+          "currentOffices": 1852,
+          "historicalOffices": 0,
+          "histories": 5227,
+          "resultRows": 62812
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 1804,
+          "other": 48
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/paraguay.json.gz",
+        "sha256": "dcf64007ccee6190986c766b5c8d938d406cc6d45413fb0f6bb28aeee2906fe2",
+        "manifest_sha256": "dcf64007ccee6190986c766b5c8d938d406cc6d45413fb0f6bb28aeee2906fe2",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 526,
+          "currentOffices": 526,
+          "historicalOffices": 0,
+          "histories": 2954,
+          "resultRows": 10635
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 526
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/peru.json.gz",
+        "sha256": "df3410f20296e4916878e69d2ccfdbb4330d13509d0d8e325f6dcc9a193d4c23",
+        "manifest_sha256": "df3410f20296e4916878e69d2ccfdbb4330d13509d0d8e325f6dcc9a193d4c23",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 5039,
+          "currentOffices": 5028,
+          "historicalOffices": 11,
+          "histories": 5882,
+          "resultRows": 46278
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 4978,
+          "other": 11,
+          "regional": 50
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/saint-kitts-and-nevis.json.gz",
+        "sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+        "manifest_sha256": "faac6189be865894375abaeccc68761bf74ef7e21209ce516a8ed84dffcc3224",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 6,
+          "currentOffices": 6,
+          "historicalOffices": 0,
+          "histories": 19,
+          "resultRows": 41
+        },
+        "counts_by_schema_v1_tier": {
+          "other": 6
+        },
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/countries/trinidad-and-tobago.json.gz",
+        "sha256": "86954158796e7f671256a7a0dea542f74996cc139fccaf7ce22802080f221b87",
+        "manifest_sha256": "86954158796e7f671256a7a0dea542f74996cc139fccaf7ce22802080f221b87",
+        "checksum_verified": true,
+        "counts": {
+          "offices": 167,
+          "currentOffices": 155,
+          "historicalOffices": 12,
+          "histories": 460,
+          "resultRows": 1190
+        },
+        "counts_by_schema_v1_tier": {
+          "municipal": 14,
+          "other": 153
+        },
+        "verification": "recomputed_from_gzip"
+      }
+    ],
+    "briefing_shards": [
+      {
+        "path": "data/research/briefings/antigua-and-barbuda.json.gz",
+        "sha256": "2145646a03e910a6d95d27393544e6de1ca10fc7873782c15ef2cb55d380e5f1",
+        "manifest_sha256": "2145646a03e910a6d95d27393544e6de1ca10fc7873782c15ef2cb55d380e5f1",
+        "briefings": 1,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/argentina.json.gz",
+        "sha256": "7b514d2b306a4df535bbee9422ae8f59c69a00743a6d68eb5c57b0b3083864ff",
+        "manifest_sha256": "7b514d2b306a4df535bbee9422ae8f59c69a00743a6d68eb5c57b0b3083864ff",
+        "briefings": 3560,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/bahamas.json.gz",
+        "sha256": "06e7960583376251dc742e22eca28016d96b642193913a6f86e771e307e6cee8",
+        "manifest_sha256": "06e7960583376251dc742e22eca28016d96b642193913a6f86e771e307e6cee8",
+        "briefings": 33,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/belize.json.gz",
+        "sha256": "cf44bfa2c78bcc80d868f134161c4a0b8ff8e4dea1b248456f2c8764d96caf80",
+        "manifest_sha256": "cf44bfa2c78bcc80d868f134161c4a0b8ff8e4dea1b248456f2c8764d96caf80",
+        "briefings": 19,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/brazil.json.gz",
+        "sha256": "9fff0a8b0a09db901d54079d35c6df5426734376282ed97512aadc40d2393e7a",
+        "manifest_sha256": "9fff0a8b0a09db901d54079d35c6df5426734376282ed97512aadc40d2393e7a",
+        "briefings": 62,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/colombia.json.gz",
+        "sha256": "a1fade07536a4a78524fb78b73a5eb7c751e63dc20d3e76b4ccedca02c73eeb6",
+        "manifest_sha256": "a1fade07536a4a78524fb78b73a5eb7c751e63dc20d3e76b4ccedca02c73eeb6",
+        "briefings": 2307,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/costa-rica.json.gz",
+        "sha256": "606dd5e3fbab1b4f8d921835378e4eafc4bbaf4d199dde1f2069903f29e1f665",
+        "manifest_sha256": "606dd5e3fbab1b4f8d921835378e4eafc4bbaf4d199dde1f2069903f29e1f665",
+        "briefings": 670,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/cuba.json.gz",
+        "sha256": "639e412172c73b818d9228a0be756f8f846f4d3654e443bee28c7df05b2ad88e",
+        "manifest_sha256": "639e412172c73b818d9228a0be756f8f846f4d3654e443bee28c7df05b2ad88e",
+        "briefings": 168,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/dominica.json.gz",
+        "sha256": "283d35e0c3906bde1279a7e16bb9390292096a29055e620434e1782fa756f6d2",
+        "manifest_sha256": "283d35e0c3906bde1279a7e16bb9390292096a29055e620434e1782fa756f6d2",
+        "briefings": 25,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/dominican-republic.json.gz",
+        "sha256": "43929971329e4d78176f2201381fb21541ac315b0644cd3c632ed13379e487b5",
+        "manifest_sha256": "43929971329e4d78176f2201381fb21541ac315b0644cd3c632ed13379e487b5",
+        "briefings": 786,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/ecuador.json.gz",
+        "sha256": "0e16eb82dd2f457db0c1e82fa9f30bcf9afc41f3f75097a21591c75c5dd59827",
+        "manifest_sha256": "0e16eb82dd2f457db0c1e82fa9f30bcf9afc41f3f75097a21591c75c5dd59827",
+        "briefings": 1297,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/el-salvador.json.gz",
+        "sha256": "d1a45e2f786991f66644779a0e2aed1bcf07a898bedb96c33aae3b094a04ac49",
+        "manifest_sha256": "d1a45e2f786991f66644779a0e2aed1bcf07a898bedb96c33aae3b094a04ac49",
+        "briefings": 306,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/guatemala.json.gz",
+        "sha256": "c1998846af37dc492a51e12e0426f8446886f26ffcebddb1154e98adef5e5308",
+        "manifest_sha256": "c1998846af37dc492a51e12e0426f8446886f26ffcebddb1154e98adef5e5308",
+        "briefings": 340,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/guyana.json.gz",
+        "sha256": "756a0395c927c1ff270e40b760a2a006c3848e388d43aeb958ecfa43adeab2cb",
+        "manifest_sha256": "756a0395c927c1ff270e40b760a2a006c3848e388d43aeb958ecfa43adeab2cb",
+        "briefings": 83,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/haiti.json.gz",
+        "sha256": "6f41e496a1ae0813607e32d4e9ae4c4b6a3bafefb493a941f1bd53916bf01f51",
+        "manifest_sha256": "6f41e496a1ae0813607e32d4e9ae4c4b6a3bafefb493a941f1bd53916bf01f51",
+        "briefings": 1153,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/jamaica.json.gz",
+        "sha256": "01742ce16fec7979c6d31f7a1438602d5466a0620e2aa8029d49bc5e075ec560",
+        "manifest_sha256": "01742ce16fec7979c6d31f7a1438602d5466a0620e2aa8029d49bc5e075ec560",
+        "briefings": 243,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/mexico.json.gz",
+        "sha256": "60c248b4245a1d80da68e707f88aa67095cfcb9385647e72fb88a4edb405be8d",
+        "manifest_sha256": "60c248b4245a1d80da68e707f88aa67095cfcb9385647e72fb88a4edb405be8d",
+        "briefings": 1852,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/paraguay.json.gz",
+        "sha256": "c4fa66a3d33fb0a9c8713b1489293d3321f4814ab5bbbf1f196bfed71843f5b3",
+        "manifest_sha256": "c4fa66a3d33fb0a9c8713b1489293d3321f4814ab5bbbf1f196bfed71843f5b3",
+        "briefings": 526,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/peru.json.gz",
+        "sha256": "4c0cb95bd5a3e999ac2f741c070d8830ba4d07fd7951e89fc1e9b8af74c59938",
+        "manifest_sha256": "4c0cb95bd5a3e999ac2f741c070d8830ba4d07fd7951e89fc1e9b8af74c59938",
+        "briefings": 5039,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/saint-kitts-and-nevis.json.gz",
+        "sha256": "6e57dfb185dbf1dc19b5077edfc75e9bda3753c29110ebec495d8f83635680b8",
+        "manifest_sha256": "6e57dfb185dbf1dc19b5077edfc75e9bda3753c29110ebec495d8f83635680b8",
+        "briefings": 6,
+        "verification": "recomputed_from_gzip"
+      },
+      {
+        "path": "data/research/briefings/trinidad-and-tobago.json.gz",
+        "sha256": "ee3b5589256755806428f6d8c40a2b1e3f6fbb57bf909f1d68f2715ee8bc5ee1",
+        "manifest_sha256": "ee3b5589256755806428f6d8c40a2b1e3f6fbb57bf909f1d68f2715ee8bc5ee1",
+        "briefings": 167,
+        "verification": "recomputed_from_gzip"
+      }
+    ],
+    "note": "These figures are this Latin America lineage's own validated counts, not Atlas Europe coverage. Shard schema_v1_tier values come from the existing observatory adapter and are continuity inventory only."
+  },
+  "new_zealand": {
+    "package_dir": "data/countries/new-zealand",
+    "adapter_kind": "nz-research-batch/1",
+    "dataset": {
+      "path": "data/countries/new-zealand/dataset.json",
+      "sha256": "6d73c7075fc04be9cec3fdda37810e5195748c77e25df2e62998e2d4721d2133",
+      "bytes": 27946
+    },
+    "office_count": 4,
+    "offices": [
+      {
+        "office_id": "NZ-BULLER-WESTPORT-2026",
+        "office_type": "councillor",
+        "schema_v1_tier_expected_by_plan": "council"
+      },
+      {
+        "office_id": "NZ-CLUTHA-LAWRENCE-TUAPEKA-2026",
+        "office_type": "community_board_member",
+        "schema_v1_tier_expected_by_plan": "council"
+      },
+      {
+        "office_id": "NZ-PORIRUA-ONEPOTO-2026",
+        "office_type": "councillor",
+        "schema_v1_tier_expected_by_plan": "council"
+      },
+      {
+        "office_id": "NZ-WELLINGTON-TAKAPU-NORTHERN-2026",
+        "office_type": "councillor",
+        "schema_v1_tier_expected_by_plan": "council"
+      }
+    ],
+    "verification": "recomputed_from_dataset.json_races",
+    "note": "Four local by-election offices. Not a national or regional register. Phase 2 cutover-gate input, not the Europe launch vertical."
+  },
+  "note": "Recomputed from committed files where possible. Counts that cannot be verified from in-repo bytes are marked unverified rather than invented. Latin America regional-tier offices in these shards are Americas continuity, not Europe regional proof."
+}

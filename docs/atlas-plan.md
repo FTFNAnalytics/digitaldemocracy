@@ -1,6 +1,6 @@
 # Election Atlas — restructuring plan
 
-**Status:** Revised after two second-pass audits. This PR remains **documentation only** (this document and the README pointer). No Atlas UI, SQLite schema, import scripts, or redirects land here.
+**Status:** Phase 0 plan is on main. Phase 1 **scaffolding** (gitignore, `ATLAS_SQLITE_PATH` / `ATLAS_ATTEMPTS_SQLITE_PATH`, migrate/import entrypoints, Prompt B DDL, completed Prompt C Albania docs, Albania importer) is tracked in [`docs/atlas-phase1.md`](atlas-phase1.md). Phase 0 inventory and tier files are in [`docs/phase0/`](phase0/REPORT.md) and [`schemas/atlas/tiers/`](../schemas/atlas/tiers/README.md) (Albania municipal and Alderney `other` **approved** 2026-09-16; Andorra and Armenia remain `draft_for_human_review`). Prompt B draft DDL is in [`schemas/atlas/migrations/`](../schemas/atlas/migrations/README.md); Albania storage proof is `import:atlas` against the frozen package. Prompt D continuity documentation (LatAm/NZ; CI Not run) is in [`docs/phase2/`](phase2/README.md). No `/atlas` UI or redirects.
 
 **Phase 0** (this plan) merges when Justin says. **Phase 1 is un-gated by Justin’s disposition on this revision** — it does not wait on open-ended further audits. After Phase 1 exits, **stop for Phase 2 review**.
 
@@ -443,6 +443,8 @@ Keep `/electiondatabase` on the current loaders. **No public redirects. No tight
 
 ### Phase 2 — Continuity ingest + `/atlas` shell (still not cutover)
 
+Field maps and CI gates for LatAm/NZ continuity are documented in [`docs/phase2/`](phase2/README.md) (Prompt D; implementation CI Not run). Do not invent tiers or alter Mexico share values in this documentation PR.
+
 **Named cutover-gate inputs (ingest in this phase, before redirects):** Latin America release, New Zealand package, and remaining early European packages as reviewed (Andorra, Alderney, …; **Armenia last** among those early targets). Europe remains the Atlas **default landing**. Continuity ingest ≠ expanding launch scope.
 
 **Minimum-content floor** for the SQLite-backed `/atlas` shell:
@@ -623,9 +625,9 @@ Operational detail for the live observatory remains in [`docs/electiondatabase-p
 - Observatory routes live under `/electiondatabase` (`lib/observatory/routes.ts`).
 - Latin America release loads from `data/research`; country packages merge at runtime via `lib/observatory/adapters/`.
 - Observatory home still highlights South America. Atlas landing will highlight Europe; that is independent of keeping already-public URLs working.
-- There is **no** SQLite master and **no** `/atlas` route yet.
+- There is **no** `/atlas` route yet. Phase 1 scaffolding can create gitignored SQLite files (`atlas.sqlite` + sibling `atlas-attempts.sqlite`) from Prompt B DDL with **zero** research rows; that is not Albania storage proof.
 - `data/incoming/` has no zip (only README / `.gitkeep`). `data/overrides/` is not present yet. Fixtures stay under `tests/fixtures/` (test-only).
-- `.gitignore` does not yet ignore `*.sqlite` (Phase 1).
+- `.gitignore` ignores `*.sqlite` / WAL / SHM and `data/master/` database files (Phase 1 scaffolding).
 
 ### Regional coverage counting
 

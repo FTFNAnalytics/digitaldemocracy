@@ -1,0 +1,1269 @@
+{
+  "status": "approved",
+  "country_slug": "albania",
+  "prompt": "phase0_prompt_a",
+  "source_register": {
+    "path": "data/countries/albania/tables/office-register.json",
+    "sha256": "7d5a3735e83f95ee82deb76c60c6d391fa5faadfd3f660fe71ca8ca0ca05ad62",
+    "bytes": 66480
+  },
+  "classification_vocabulary": [
+    "national",
+    "regional",
+    "municipal",
+    "council",
+    "other"
+  ],
+  "schema_compatibility": {
+    "national": "national_context",
+    "regional": "regional",
+    "municipal": "municipal",
+    "council": "council",
+    "other": "other"
+  },
+  "approval": {
+    "by": "product_owner",
+    "date": "2026-09-16",
+    "notes": "Justin approved 2026-09-16 for Phase 1 Albania storage proof. All 122 office-register rows are municipal. Regional count is 0 by design."
+  },
+  "rules": [
+    {
+      "id": "albania-all-municipal",
+      "statement": "All offices → municipal (61 mayors + 61 councils). Ignore calendar 'Regional / municipal' labels. Do not invent office IDs."
+    }
+  ],
+  "notes": [
+    "Approved by Justin 2026-09-16 for Phase 1 Albania storage proof; regional=0 is intentional.",
+    "Phase 1 storage-proof target. Regional numerator for this package is 0.",
+    "Proposed 46-municipality 2027 map remains unverified and is not used here."
+  ],
+  "counts_by_proposed_tier": {
+    "national": 0,
+    "regional": 0,
+    "municipal": 122,
+    "council": 0,
+    "other": 0
+  },
+  "classifications": [
+    {
+      "office_id": "AL-13-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Belsh",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-13-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Belsh",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-01-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Berat",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-01-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Berat",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-06-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Bulqizë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-06-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Bulqizë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-14-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Cërrik",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-14-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Cërrik",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-55-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Delvinë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-55-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Delvinë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-33-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Devoll",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-33-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Devoll",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-07-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Dibër",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-07-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Dibër",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-05-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Dimal",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-05-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Dimal",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-20-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Divjakë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-20-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Divjakë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-26-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Dropull",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-26-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Dropull",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-10-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Durrës",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-10-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Durrës",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-15-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Elbasan",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-15-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Elbasan",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-21-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Fier",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-21-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Fier",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-56-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Finiq",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-56-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Finiq",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-45-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Fushë-Arrëz",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-45-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Fushë-Arrëz",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-27-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Gjirokastër",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-27-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Gjirokastër",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-16-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Gramsh",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-16-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Gramsh",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-39-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Has",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-39-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Has",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-57-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Himarë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-57-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Himarë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-50-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kamëz",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-50-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kamëz",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-51-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kavajë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-51-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kavajë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-08-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Klos",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-08-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Klos",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-34-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kolonjë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-34-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kolonjë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-58-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Konispol",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-58-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Konispol",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-35-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Korçë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-35-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Korçë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-11-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Krujë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-11-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Krujë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-40-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kukës",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-40-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kukës",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-42-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kurbin",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-42-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kurbin",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-02-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kuçovë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-02-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kuçovë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-28-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Këlcyrë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-28-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Këlcyrë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-43-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Lezhë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-43-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Lezhë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-29-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Libohovë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-29-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Libohovë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-17-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Librazhd",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-17-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Librazhd",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-22-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Lushnje",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-22-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Lushnje",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-36-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Maliq",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-36-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Maliq",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-23-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Mallakastër",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-23-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Mallakastër",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-46-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Malësi E Madhe",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-46-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Malësi E Madhe",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-09-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Mat",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-09-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Mat",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-30-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Memaliaj",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-30-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Memaliaj",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-44-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Mirditë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-44-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Mirditë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-24-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Patos",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-24-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Patos",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-18-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Peqin",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-18-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Peqin",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-37-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Pogradec",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-37-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Pogradec",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-03-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Poliçan",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-03-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Poliçan",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-19-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Prrenjas",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-19-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Prrenjas",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-47-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Pukë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-47-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Pukë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-38-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Pustec",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-38-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Pustec",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-31-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Përmet",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-31-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Përmet",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-25-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Roskovec",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-25-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Roskovec",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-52-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Rrogozhinë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-52-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Rrogozhinë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-59-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Sarandë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-59-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Sarandë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-60-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Selenicë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-60-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Selenicë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-12-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Shijak",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-12-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Shijak",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-48-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Shkodër",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-48-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Shkodër",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-04-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Skrapar",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-04-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Skrapar",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-32-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Tepelenë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-32-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Tepelenë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-53-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Tiranë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-53-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Tiranë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-41-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Tropojë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-41-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Tropojë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-49-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Vau-Dejës",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-49-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Vau-Dejës",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-61-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Vlorë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-61-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Vlorë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-54-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Vorë",
+      "office": "Mayor",
+      "rationale": "Sourced office type is Mayor of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AL-54-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Vorë",
+      "office": "Municipal council",
+      "rationale": "Sourced office type is Municipal council of a municipality on the current 61-municipality map. Accepted Phase 0 Prompt A classifies every Albania office-register row as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    }
+  ]
+}

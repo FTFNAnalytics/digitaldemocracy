@@ -1,0 +1,113 @@
+{
+  "status": "draft_for_human_review",
+  "country_slug": "andorra",
+  "prompt": "phase0_prompt_a",
+  "source_register": {
+    "path": "data/countries/andorra/tables/office-register.json",
+    "sha256": "318db6770a7458b3479a4dcdefeff1b54072f3e50dd05319cd26952776d3076f",
+    "bytes": 5134
+  },
+  "classification_vocabulary": [
+    "national",
+    "regional",
+    "municipal",
+    "council",
+    "other"
+  ],
+  "schema_compatibility": {
+    "national": "national_context",
+    "regional": "regional",
+    "municipal": "municipal",
+    "council": "council",
+    "other": "other"
+  },
+  "rules": [
+    {
+      "id": "andorra-all-municipal",
+      "statement": "All communal councils → municipal. Expect 7. Calendar labels are not classifiers."
+    }
+  ],
+  "notes": [
+    "Empty regional-calendar demo: this package has no regional-tier offices.",
+    "Regional numerator for this package is 0."
+  ],
+  "counts_by_proposed_tier": {
+    "national": 0,
+    "regional": 0,
+    "municipal": 7,
+    "council": 0,
+    "other": 0
+  },
+  "classifications": [
+    {
+      "office_id": "AD-M-05",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Andorra la Vella",
+      "office": "Communal council",
+      "rationale": "Sourced office type is Communal council (parish). Accepted Phase 0 Prompt A classifies every Andorra communal council as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AD-M-01",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Canillo",
+      "office": "Communal council",
+      "rationale": "Sourced office type is Communal council (parish). Accepted Phase 0 Prompt A classifies every Andorra communal council as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AD-M-02",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Encamp",
+      "office": "Communal council",
+      "rationale": "Sourced office type is Communal council (parish). Accepted Phase 0 Prompt A classifies every Andorra communal council as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AD-M-07",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Escaldes-Engordany",
+      "office": "Communal council",
+      "rationale": "Sourced office type is Communal council (parish). Accepted Phase 0 Prompt A classifies every Andorra communal council as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AD-M-04",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "La Massana",
+      "office": "Communal council",
+      "rationale": "Sourced office type is Communal council (parish). Accepted Phase 0 Prompt A classifies every Andorra communal council as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AD-M-03",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Ordino",
+      "office": "Communal council",
+      "rationale": "Sourced office type is Communal council (parish). Accepted Phase 0 Prompt A classifies every Andorra communal council as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AD-M-06",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Sant Julià de Lòria",
+      "office": "Communal council",
+      "rationale": "Sourced office type is Communal council (parish). Accepted Phase 0 Prompt A classifies every Andorra communal council as municipal. Workbook calendar cohort string 'Regional / municipal' is not a classifier.",
+      "confidence": "high",
+      "human_review_required": false
+    }
+  ]
+}

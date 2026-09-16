@@ -1,0 +1,782 @@
+{
+  "status": "draft_for_human_review",
+  "country_slug": "armenia",
+  "prompt": "phase0_prompt_a",
+  "source_register": {
+    "path": "tables/master/office-register.json",
+    "package_dir": "data/countries/armenia",
+    "access": "armenia-packed-europe/1 unpack of concatenated payload chunks",
+    "sha256": "23588bdc55fc7a6dff8cf322adedd9df085088f12fb018401dda6df5f1ae759d",
+    "bytes": 28953,
+    "payload_sha256": "f55265273c849d248baf0037e4149e17a0329318d21a794e966cebbaa32012ca"
+  },
+  "classification_vocabulary": [
+    "national",
+    "regional",
+    "municipal",
+    "council",
+    "other"
+  ],
+  "schema_compatibility": {
+    "national": "national_context",
+    "regional": "regional",
+    "municipal": "municipal",
+    "council": "council",
+    "other": "other"
+  },
+  "rules": [
+    {
+      "id": "armenia-all-municipal",
+      "statement": "All community offices → municipal (71). Proportional councils elect mayor — do not invent missing mayor rows. Flag listed boundary/calendar offices without changing municipal tier."
+    }
+  ],
+  "notes": [
+    "Armenia is last among early European targets.",
+    "Companion histories overlap the regional history index; do not add those datasets.",
+    "Regional numerator for this package is 0."
+  ],
+  "counts_by_proposed_tier": {
+    "national": 0,
+    "regional": 0,
+    "municipal": 71,
+    "council": 0,
+    "other": 0
+  },
+  "classifications": [
+    {
+      "office_id": "AM-ABOVYAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Abovyan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-AKHURYAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Akhuryan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-AKUNK-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Akunk",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-ALAGYAZ-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Alagyaz",
+      "office": "Mayor",
+      "rationale": "Sourced community office is Mayor on a majoritarian register row that already exists. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent additional mayor rows for proportional councils.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-ALAGYAZ-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Alagyaz",
+      "office": "Municipal council (majoritarian)",
+      "rationale": "Sourced community office is a majoritarian municipal council. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Companion mayor rows are used only when the register already lists them.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-ALAVERDI-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Alaverdi",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-AMASIA-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Amasia",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-APARAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Aparan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-ARAKS-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Araks",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-ARARAT-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Ararat",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": true,
+      "human_review": {
+        "queue": "boundary_calendar",
+        "prompt_token": "AM-ARARAT-C",
+        "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (1 of three cycles). Keep municipal. Do not invent a mayor office_id — proportional councils elect the mayor."
+      }
+    },
+    {
+      "office_id": "AM-ARENI-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Areni",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-AREVUT-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Arevut",
+      "office": "Mayor",
+      "rationale": "Sourced community office is Mayor on a majoritarian register row that already exists. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent additional mayor rows for proportional councils.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-AREVUT-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Arevut",
+      "office": "Municipal council (majoritarian)",
+      "rationale": "Sourced community office is a majoritarian municipal council. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Companion mayor rows are used only when the register already lists them.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-ARMAVIR-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Armavir",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-ARTASHAT-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Artashat",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-ARTIK-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Artik",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-ARZNI-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Arzni",
+      "office": "Mayor",
+      "rationale": "Sourced community office is Mayor on a majoritarian register row that already exists. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent additional mayor rows for proportional councils.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-ARZNI-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Arzni",
+      "office": "Municipal council (majoritarian)",
+      "rationale": "Sourced community office is a majoritarian municipal council. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Companion mayor rows are used only when the register already lists them.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-ASHOTSK-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Ashotsk",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-ASHTARAK-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Ashtarak",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-BAGHRAMYAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Baghramyan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-BERD-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Berd",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-BYUREGHAVAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Byureghavan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-CHAMBARAK-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Chambarak",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-CHARENTSAVAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Charentsavan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-DILIJAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Dilijan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-FERIK-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Ferik",
+      "office": "Mayor",
+      "rationale": "Sourced community office is Mayor on a majoritarian register row that already exists. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent additional mayor rows for proportional councils.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-FERIK-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Ferik",
+      "office": "Municipal council (majoritarian)",
+      "rationale": "Sourced community office is a majoritarian municipal council. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Companion mayor rows are used only when the register already lists them.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-FIOLETOVO-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Fioletovo",
+      "office": "Mayor",
+      "rationale": "Sourced community office is Mayor on a majoritarian register row that already exists. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent additional mayor rows for proportional councils.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-FIOLETOVO-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Fioletovo",
+      "office": "Municipal council (majoritarian)",
+      "rationale": "Sourced community office is a majoritarian municipal council. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Companion mayor rows are used only when the register already lists them.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-GARNI-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Garni",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-GAVAR-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Gavar",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-GORIS-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Goris",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-GYULAGARAK-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Gyulagarak",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-HRAZDAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Hrazdan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-IJEVAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Ijevan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-JERMUK-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Jermuk",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-JRVEZH-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Jrvezh",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-KAJARAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kajaran",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-KAPAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Kapan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-LERMONTOVO-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Lermontovo",
+      "office": "Mayor",
+      "rationale": "Sourced community office is Mayor on a majoritarian register row that already exists. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent additional mayor rows for proportional councils.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-LERMONTOVO-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Lermontovo",
+      "office": "Municipal council (majoritarian)",
+      "rationale": "Sourced community office is a majoritarian municipal council. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Companion mayor rows are used only when the register already lists them.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-LORIBERD-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Lori Berd",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-MARTUNI-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Martuni",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-MASIS-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Masis",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": true,
+      "human_review": {
+        "queue": "boundary_calendar",
+        "prompt_token": "AM-MASIS-C",
+        "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (1 of three cycles). Keep municipal. Do not invent a mayor office_id."
+      }
+    },
+    {
+      "office_id": "AM-MEGHRI-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Meghri",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-METSADZOR-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Metsadzor",
+      "office": "Mayor",
+      "rationale": "Sourced community office is Mayor on a majoritarian register row that already exists. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent additional mayor rows for proportional councils.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-METSADZOR-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Metsadzor",
+      "office": "Municipal council (majoritarian)",
+      "rationale": "Sourced community office is a majoritarian municipal council. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Companion mayor rows are used only when the register already lists them.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-METSAMOR-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Metsamor",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-NAIRI-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Nairi",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-NORHACHN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Nor Hachn",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-NOYEMBERYAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Noyemberyan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-PAMBAK-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Pambak",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": true,
+      "human_review": {
+        "queue": "boundary_calendar",
+        "prompt_token": "AM-PAMBAK-C",
+        "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (0 of three cycles). Keep municipal. Do not invent a mayor office_id."
+      }
+    },
+    {
+      "office_id": "AM-SEVAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Sevan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-SHAMIRAM-M",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Shamiram",
+      "office": "Mayor",
+      "rationale": "Sourced community office is Mayor on a majoritarian register row that already exists. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent additional mayor rows for proportional councils.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-SHAMIRAM-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Shamiram",
+      "office": "Municipal council (majoritarian)",
+      "rationale": "Sourced community office is a majoritarian municipal council. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Companion mayor rows are used only when the register already lists them.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-SPITAK-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Spitak",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-STEPANAVAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Stepanavan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-TALIN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Talin",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-TASHIR-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Tashir",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-TATEV-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Tatev",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-TEGH-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Tegh",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-TSAGHKADZOR-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Tsaghkadzor",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-TSAGHKAHOVIT-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Tsaghkahovit",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-TUMANYAN-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Tumanyan",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-VANADZOR-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Vanadzor",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": true,
+      "human_review": {
+        "queue": "boundary_calendar",
+        "prompt_token": "AM-VANADZOR-C",
+        "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (1 of three cycles). Keep municipal. Do not invent a mayor office_id."
+      }
+    },
+    {
+      "office_id": "AM-VARDENIS-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Vardenis",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-VAYK-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Vayk",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-VEDI-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Vedi",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": true,
+      "human_review": {
+        "queue": "boundary_calendar",
+        "prompt_token": "AM-VEDI",
+        "notes": "Prompt A listed AM-VEDI; the office register contains AM-VEDI-C only — do not invent AM-VEDI. Calendar cohort C118 notes Vedi (and Talin) also held a separate 2021 poll; 2027 dates and boundaries remain pending. Keep municipal."
+      }
+    },
+    {
+      "office_id": "AM-YEGHEGIS-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Yeghegis",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    },
+    {
+      "office_id": "AM-YEGHEGNADZOR-C",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "jurisdiction": "Yeghegnadzor",
+      "office": "Municipal council (proportional; mayor elected by council)",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "confidence": "high",
+      "human_review_required": false
+    }
+  ]
+}

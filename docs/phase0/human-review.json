@@ -1,0 +1,107 @@
+{
+  "status": "draft_for_human_review",
+  "phase": 0,
+  "items": [
+    {
+      "id": "armenia-am-ararat-c-boundary-calendar",
+      "queue": "boundary_calendar",
+      "country_slug": "armenia",
+      "office_id": "AM-ARARAT-C",
+      "prompt_token": "AM-ARARAT-C",
+      "proposed_tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "tier_unchanged": true,
+      "human_review_required": true,
+      "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (1 of three cycles). Keep municipal. Do not invent a mayor office_id — proportional councils elect the mayor."
+    },
+    {
+      "id": "armenia-am-masis-c-boundary-calendar",
+      "queue": "boundary_calendar",
+      "country_slug": "armenia",
+      "office_id": "AM-MASIS-C",
+      "prompt_token": "AM-MASIS-C",
+      "proposed_tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "tier_unchanged": true,
+      "human_review_required": true,
+      "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (1 of three cycles). Keep municipal. Do not invent a mayor office_id."
+    },
+    {
+      "id": "armenia-am-pambak-c-boundary-calendar",
+      "queue": "boundary_calendar",
+      "country_slug": "armenia",
+      "office_id": "AM-PAMBAK-C",
+      "prompt_token": "AM-PAMBAK-C",
+      "proposed_tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "tier_unchanged": true,
+      "human_review_required": true,
+      "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (0 of three cycles). Keep municipal. Do not invent a mayor office_id."
+    },
+    {
+      "id": "armenia-am-vanadzor-c-boundary-calendar",
+      "queue": "boundary_calendar",
+      "country_slug": "armenia",
+      "office_id": "AM-VANADZOR-C",
+      "prompt_token": "AM-VANADZOR-C",
+      "proposed_tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "tier_unchanged": true,
+      "human_review_required": true,
+      "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (1 of three cycles). Keep municipal. Do not invent a mayor office_id."
+    },
+    {
+      "id": "armenia-am-vedi-c-boundary-calendar",
+      "queue": "boundary_calendar",
+      "country_slug": "armenia",
+      "office_id": "AM-VEDI-C",
+      "prompt_token": "AM-VEDI",
+      "proposed_tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "tier_unchanged": true,
+      "human_review_required": true,
+      "notes": "Prompt A listed AM-VEDI; the office register contains AM-VEDI-C only — do not invent AM-VEDI. Calendar cohort C118 notes Vedi (and Talin) also held a separate 2021 poll; 2027 dates and boundaries remain pending. Keep municipal."
+    }
+  ],
+  "resolved": [
+    {
+      "id": "albania-municipal-tier-classification",
+      "queue": "tier_mapping",
+      "country_slug": "albania",
+      "office_count": 122,
+      "proposed_tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "human_review_required": false,
+      "status": "resolved",
+      "resolved_at": "2026-09-16",
+      "resolved_by": "product_owner",
+      "notes": "Justin approved all 122 Albania office-register rows as municipal on 2026-09-16 for Phase 1 storage proof. Regional count is 0 by design. Do not invent regional or national offices."
+    },
+    {
+      "id": "alderney-gg-ald-states-tier-mapping",
+      "queue": "tier_mapping",
+      "country_slug": "alderney",
+      "office_id": "GG-ALD-STATES",
+      "proposed_tier": "other",
+      "schema_v1_tier": "other",
+      "human_review_required": false,
+      "status": "resolved",
+      "resolved_at": "2026-09-16",
+      "resolved_by": "product_owner",
+      "notes": "Product owner approved territorial-legislature mapping to other on 2026-09-16. One office_id for States members (five of ten ordinary seats); do not multiply seats into IDs. Channel Islands are low priority for the broader Atlas."
+    },
+    {
+      "id": "alderney-gg-ald-pleb-tier-mapping",
+      "queue": "tier_mapping",
+      "country_slug": "alderney",
+      "office_id": "GG-ALD-PLEB",
+      "proposed_tier": "other",
+      "schema_v1_tier": "other",
+      "human_review_required": false,
+      "status": "resolved",
+      "resolved_at": "2026-09-16",
+      "resolved_by": "product_owner",
+      "notes": "Product owner approved territorial-representation mapping to other on 2026-09-16. One office_id for the plebiscite nominating two Guernsey States representatives; do not mint two IDs from the two seats. Channel Islands are low priority for the broader Atlas."
+    }
+  ]
+}
