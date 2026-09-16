@@ -391,7 +391,7 @@ export function projectLatAm(inventory: LatAmInventory): ContinuityProjection {
           sha256: sha,
           pointer: `/offices/${i}/nextElection/date`,
         });
-        nextHistoryKey = typeof next.eventId === "string" ? next.eventId : null;
+        nextHistoryKey = typeof next?.eventId === "string" ? next.eventId : null;
       }
       offices.push({
         id_namespace: N,
