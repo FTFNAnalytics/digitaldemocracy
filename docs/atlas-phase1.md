@@ -29,6 +29,7 @@ in [docs/phase0/REPORT.md](phase0/REPORT.md). Prompt B / Prompt C artifacts live
 | Albania field map | [docs/phase1/Albania_Field_Map.md](phase1/Albania_Field_Map.md) |
 | Albania identity rules | [docs/phase1/Albania_Identity_Rules.md](phase1/Albania_Identity_Rules.md) |
 | Albania acceptance examples | [docs/phase1/Albania_Acceptance_Examples.md](phase1/Albania_Acceptance_Examples.md) |
+| Andorra Prompt J field map | [docs/phase1/andorra/](phase1/andorra/Prompt_J_Field_Map_and_CI.md) — Europe #2 mapping **Done**; importer CI **Not run** (Albania remains Phase 1 storage proof) |
 | Named CI | `tests/atlas/import.test.ts` (Prompt C gates) and `tests/atlas/cli.test.ts` (migrate + import CLI) |
 | Phase 0 inventory | `docs/phase0/` (`REPORT.md`, `inventory.json`, `continuity-counts.json`, `human-review.json`) |
 | Prompt D continuity docs | [docs/phase2/](phase2/README.md) — field maps, identity rules, acceptance examples, checklist (**documentation complete; importer CI Not run**) |
@@ -44,7 +45,10 @@ the accepted bytes (SHA-256 `53a31d441761952a9f511c58a397e7877616c0ad6af30dce758
 Do not reuse a draft-path fingerprint.
 
 Alderney `other` is **approved** (2026-09-16); Channel Islands are low priority
-for the broader Atlas. Andorra and Armenia remain drafts.
+for the broader Atlas. Andorra Prompt J docs are in
+[docs/phase1/andorra/](phase1/andorra/README.md) (mapping Done; execution CI Not run);
+Albania remains Phase 1 storage proof and Andorra is Europe #2 field map.
+Armenia remains `draft_for_human_review`.
 
 ### Fingerprint `schema_inputs` paths
 
@@ -115,5 +119,6 @@ Deferred Prompt C rows above are **not** waived. They remain required before cla
 | Alderney `other` | **Approved** 2026-09-16 at `schemas/atlas/tiers/alderney.json`. |
 | Albania map | Proposed 46-municipality 2027 map is unverified in the package; geometry is not invented. |
 | Prompt D continuity docs | **Documentation complete** in [docs/phase2/](phase2/README.md). No LatAm/NZ importer, invented tiers, or Mexico share edits. |
+| Andorra Prompt J field map | **Documentation complete** in [docs/phase1/andorra/](phase1/andorra/README.md). Mapping Done; importer CI Not run. Approved `andorra.json` bytes unchanged. |
 
 Also out of scope until later phases: `/atlas` UI, redirects, VPS deploy, Latin America / NZ ingest, tightness. Armenia remains last among early European targets. Prompt D prerequisites still open: 21 LatAm country tier files + NZ tier file (approved), Mexico share overrides, multi-lineage import.
