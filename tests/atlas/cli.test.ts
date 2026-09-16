@@ -160,6 +160,7 @@ describe("atlas CLI stubs", () => {
         ATLAS_SQLITE_PATH: sqlitePath,
         ATLAS_ATTEMPTS_SQLITE_PATH: attemptsPath,
         ATLAS_OPERATOR: "atlas-cli-test",
+        ATLAS_IMPORT_SCOPE: "albania",
         OBSERVATORY_FIXTURES: "",
       });
       expect(result.status, result.stderr).toBe(0);

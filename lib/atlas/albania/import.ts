@@ -180,15 +180,15 @@ export function importAlbania(options: ImportAlbaniaOptions): ImportAlbaniaResul
 }
 
 export function assertAlbaniaFidelity(db: DatabaseSync, projection?: AlbaniaProjection): void {
-  const offices = countRows(db, "office");
-  const events = countRows(db, "election_event");
-  const results = countRows(db, "result_row");
-  const geos = countRows(db, "geography");
-  const municipal = countRows(db, "office_tier_classification", "tier = 'municipal'");
-  const regional = countRows(db, "office_tier_classification", "tier = 'regional'");
-  const sources = countRows(db, "source");
-  const proceedings = countRows(db, "proceeding");
-  const parties = countRows(db, "party_mapping");
+  const offices = countRows(db, "office", "lineage_id = ?", [LINEAGE_ID]);
+  const events = countRows(db, "election_event", "lineage_id = ?", [LINEAGE_ID]);
+  const results = countRows(db, "result_row", "lineage_id = ?", [LINEAGE_ID]);
+  const geos = countRows(db, "geography", "lineage_id = ?", [LINEAGE_ID]);
+  const municipal = countRows(db, "office_tier_classification", "lineage_id = ? AND tier = 'municipal'", [LINEAGE_ID]);
+  const regional = countRows(db, "office_tier_classification", "lineage_id = ? AND tier = 'regional'", [LINEAGE_ID]);
+  const sources = countRows(db, "source", "lineage_id = ?", [LINEAGE_ID]);
+  const proceedings = countRows(db, "proceeding", "lineage_id = ?", [LINEAGE_ID]);
+  const parties = countRows(db, "party_mapping", "lineage_id = ?", [LINEAGE_ID]);
   if (offices !== EXPECTED_COUNTS.current_offices) throw new Error(`office count ${offices}`);
   if (events !== EXPECTED_COUNTS.selected_histories) throw new Error(`event count ${events}`);
   if (results !== EXPECTED_COUNTS.result_rows) throw new Error(`result count ${results}`);
