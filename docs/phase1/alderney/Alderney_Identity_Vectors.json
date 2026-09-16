@@ -1,0 +1,748 @@
+{
+  "status": "documentation_only",
+  "id_namespace": "cdd-observatory-v1",
+  "lineage_id": "country-package-alderney",
+  "offices": [
+    {
+      "office_id": "GG-ALD-PLEB",
+      "jurisdiction": "Alderney",
+      "office_type": "Plebiscite nominating two Guernsey States representatives",
+      "geography_id": "geo-e421db320af0c5c106f24293",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/office-register.json",
+        "sha256": "46dcd2afececa8e2ab46383d306003b941e6ca0ef9dac8e77dfc4435444a72f9",
+        "json_pointer": "/rows/0",
+        "sheet": "Office register",
+        "source_row": 124,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "jurisdiction": "Alderney",
+      "office_type": "States members (five of ten ordinary seats)",
+      "geography_id": "geo-5b23b4b4235736678bfe4b68",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/office-register.json",
+        "sha256": "46dcd2afececa8e2ab46383d306003b941e6ca0ef9dac8e77dfc4435444a72f9",
+        "json_pointer": "/rows/1",
+        "sheet": "Office register",
+        "source_row": 125,
+        "column": null,
+        "html_anchor_index": null
+      }
+    }
+  ],
+  "events": [
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2024::2024-12-07",
+      "event_id": "event-7fa40c8eb8a5b88a5a05ec45",
+      "date_id": "date-6ea5673a9cbf11bd957448940a583fefad6301d22d30c2b30a1c742102a0a7ab",
+      "label": "2024-12-07",
+      "precision": "day",
+      "certainty": "unknown",
+      "selected_history_role": "selected",
+      "event_kind": "ordinary",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/history-index.json",
+        "sha256": "69b395678fad074a0166fe7c2da5eb370999a9b05f9b91d551a6d8b8a588c56f",
+        "json_pointer": "/rows/0",
+        "sheet": "History index",
+        "source_row": 368,
+        "column": null,
+        "html_anchor_index": null
+      },
+      "heading": {
+        "input_path": "data/countries/alderney/briefings/GG-ALD-PLEB.html",
+        "sha256": "8060e3375a502e9726bdbbbb936619041230df8c025d148619f4c2cb31aa924e",
+        "h3_index": 0,
+        "section": "Recorded historical entries",
+        "text": "2024-12-07 — Ordinary partial renewal"
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2022::2022-12-10",
+      "event_id": "event-eec888d9838b64f289a1ad59",
+      "date_id": "date-53ea588b3e93e846c869722082a53fa011fcdd56d7ed88c55c9351d68bf952a8",
+      "label": "2022-12-10",
+      "precision": "day",
+      "certainty": "unknown",
+      "selected_history_role": "selected",
+      "event_kind": "ordinary",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/history-index.json",
+        "sha256": "69b395678fad074a0166fe7c2da5eb370999a9b05f9b91d551a6d8b8a588c56f",
+        "json_pointer": "/rows/1",
+        "sheet": "History index",
+        "source_row": 369,
+        "column": null,
+        "html_anchor_index": null
+      },
+      "heading": {
+        "input_path": "data/countries/alderney/briefings/GG-ALD-PLEB.html",
+        "sha256": "8060e3375a502e9726bdbbbb936619041230df8c025d148619f4c2cb31aa924e",
+        "h3_index": 1,
+        "section": "Recorded historical entries",
+        "text": "2022-12-10 — Ordinary partial renewal"
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2020::2020-12-12",
+      "event_id": "event-79e05b5ff2039ec0e7058810",
+      "date_id": "date-78a9c4023b113cf4cf9bd669e5b73fbe0b12af6ac5317415c01cbd98edcbd03f",
+      "label": "2020-12-12",
+      "precision": "day",
+      "certainty": "unknown",
+      "selected_history_role": "selected",
+      "event_kind": "ordinary",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/history-index.json",
+        "sha256": "69b395678fad074a0166fe7c2da5eb370999a9b05f9b91d551a6d8b8a588c56f",
+        "json_pointer": "/rows/2",
+        "sheet": "History index",
+        "source_row": 370,
+        "column": null,
+        "html_anchor_index": null
+      },
+      "heading": {
+        "input_path": "data/countries/alderney/briefings/GG-ALD-PLEB.html",
+        "sha256": "8060e3375a502e9726bdbbbb936619041230df8c025d148619f4c2cb31aa924e",
+        "h3_index": 2,
+        "section": "Recorded historical entries",
+        "text": "2020-12-12 — Ordinary partial renewal"
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2025::2025-03-08",
+      "event_id": "event-1e4346e3f46e487f877780f8",
+      "date_id": "date-f1311bb3d4c70d101faebecab0a79a7923b6235eddd3cbdcb6f08d0043c6adb4",
+      "label": "2025-03-08",
+      "precision": "day",
+      "certainty": "unknown",
+      "selected_history_role": "selected",
+      "event_kind": "special",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/history-index.json",
+        "sha256": "69b395678fad074a0166fe7c2da5eb370999a9b05f9b91d551a6d8b8a588c56f",
+        "json_pointer": "/rows/3",
+        "sheet": "History index",
+        "source_row": 371,
+        "column": null,
+        "html_anchor_index": null
+      },
+      "heading": {
+        "input_path": "data/countries/alderney/briefings/GG-ALD-STATES.html",
+        "sha256": "2c8a28053072aa7c4cbdbca20baea69c69779355ac5874c6af201f5a7fe42689",
+        "h3_index": 0,
+        "section": "Recorded historical entries",
+        "text": "2025-03-08 — Replacement election"
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2024::2024-11-16",
+      "event_id": "event-ecff7753d46fc4a6a17b6398",
+      "date_id": "date-0df4c2dab93527a1295d04ec52910e48649ff5d961557d842ed85558036a1246",
+      "label": "2024-11-16",
+      "precision": "day",
+      "certainty": "unknown",
+      "selected_history_role": "selected",
+      "event_kind": "ordinary",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/history-index.json",
+        "sha256": "69b395678fad074a0166fe7c2da5eb370999a9b05f9b91d551a6d8b8a588c56f",
+        "json_pointer": "/rows/4",
+        "sheet": "History index",
+        "source_row": 372,
+        "column": null,
+        "html_anchor_index": null
+      },
+      "heading": {
+        "input_path": "data/countries/alderney/briefings/GG-ALD-STATES.html",
+        "sha256": "2c8a28053072aa7c4cbdbca20baea69c69779355ac5874c6af201f5a7fe42689",
+        "h3_index": 1,
+        "section": "Recorded historical entries",
+        "text": "2024-11-16 — Ordinary partial renewal"
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2023::2023-02-18",
+      "event_id": "event-af8620342d4afdb8a7f9b8db",
+      "date_id": "date-94d658cb9ee027e38091684a3d93298fd7b0a3aca01118b1cee5b0af5ed2b2b3",
+      "label": "2023-02-18",
+      "precision": "day",
+      "certainty": "unknown",
+      "selected_history_role": "selected",
+      "event_kind": "special",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/history-index.json",
+        "sha256": "69b395678fad074a0166fe7c2da5eb370999a9b05f9b91d551a6d8b8a588c56f",
+        "json_pointer": "/rows/5",
+        "sheet": "History index",
+        "source_row": 373,
+        "column": null,
+        "html_anchor_index": null
+      },
+      "heading": {
+        "input_path": "data/countries/alderney/briefings/GG-ALD-STATES.html",
+        "sha256": "2c8a28053072aa7c4cbdbca20baea69c69779355ac5874c6af201f5a7fe42689",
+        "h3_index": 2,
+        "section": "Recorded historical entries",
+        "text": "2023-02-18 — Replacement election"
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "next-f2267589582f25eae0c65e96",
+      "event_id": "next-f2267589582f25eae0c65e96",
+      "date_id": "date-ccd6826dfd61d30518eda1a224817bc1c8e121531c5076deafcef8e8ce3446a7",
+      "label": "2026-12-12",
+      "precision": "day",
+      "certainty": "conditional",
+      "selected_history_role": "none",
+      "event_kind": "unknown",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/office-register.json",
+        "sha256": "46dcd2afececa8e2ab46383d306003b941e6ca0ef9dac8e77dfc4435444a72f9",
+        "json_pointer": "/rows/0/4",
+        "sheet": "Office register",
+        "source_row": 124,
+        "column": "Next polling date",
+        "html_anchor_index": null
+      },
+      "certainty_origin": {
+        "input_path": "data/countries/alderney/tables/election-calendar.json",
+        "sha256": "ed18050130ba80a3726c45154d841c0f3c64b3d505437f62fa34f1c2540623bc",
+        "json_pointer": "/rows/0/6",
+        "sheet": "Election calendar",
+        "source_row": 70,
+        "column": "Date status",
+        "html_anchor_index": null
+      },
+      "calendar_date_origin": {
+        "input_path": "data/countries/alderney/tables/election-calendar.json",
+        "sha256": "ed18050130ba80a3726c45154d841c0f3c64b3d505437f62fa34f1c2540623bc",
+        "json_pointer": "/rows/0/5",
+        "sheet": "Election calendar",
+        "source_row": 70,
+        "column": "End or runoff date",
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "next-166ad22fe0872fb2402d3f93",
+      "event_id": "next-166ad22fe0872fb2402d3f93",
+      "date_id": "date-ff80f2bcf352db84b3fd35265a67c4353ff39a17a88b91c63ff5195029045745",
+      "label": "2026-11-21",
+      "precision": "day",
+      "certainty": "conditional",
+      "selected_history_role": "none",
+      "event_kind": "unknown",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/office-register.json",
+        "sha256": "46dcd2afececa8e2ab46383d306003b941e6ca0ef9dac8e77dfc4435444a72f9",
+        "json_pointer": "/rows/1/4",
+        "sheet": "Office register",
+        "source_row": 125,
+        "column": "Next polling date",
+        "html_anchor_index": null
+      },
+      "certainty_origin": {
+        "input_path": "data/countries/alderney/tables/election-calendar.json",
+        "sha256": "ed18050130ba80a3726c45154d841c0f3c64b3d505437f62fa34f1c2540623bc",
+        "json_pointer": "/rows/0/6",
+        "sheet": "Election calendar",
+        "source_row": 70,
+        "column": "Date status",
+        "html_anchor_index": null
+      },
+      "calendar_date_origin": {
+        "input_path": "data/countries/alderney/tables/election-calendar.json",
+        "sha256": "ed18050130ba80a3726c45154d841c0f3c64b3d505437f62fa34f1c2540623bc",
+        "json_pointer": "/rows/0/4",
+        "sheet": "Election calendar",
+        "source_row": 70,
+        "column": "First or scheduled date",
+        "html_anchor_index": null
+      }
+    }
+  ],
+  "results": [
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2024::2024-12-07",
+      "event_id": "event-7fa40c8eb8a5b88a5a05ec45",
+      "result_row_id": "event-7fa40c8eb8a5b88a5a05ec45-r0",
+      "candidate_or_list_label": "Edward Hill",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/0",
+        "sheet": "Detailed returns",
+        "source_row": 3845,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2024::2024-12-07",
+      "event_id": "event-7fa40c8eb8a5b88a5a05ec45",
+      "result_row_id": "event-7fa40c8eb8a5b88a5a05ec45-r1",
+      "candidate_or_list_label": "Alex Snowdon",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/1",
+        "sheet": "Detailed returns",
+        "source_row": 3846,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2024::2024-12-07",
+      "event_id": "event-7fa40c8eb8a5b88a5a05ec45",
+      "result_row_id": "event-7fa40c8eb8a5b88a5a05ec45-r2",
+      "candidate_or_list_label": "Stuart Clark",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/2",
+        "sheet": "Detailed returns",
+        "source_row": 3847,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2024::2024-12-07",
+      "event_id": "event-7fa40c8eb8a5b88a5a05ec45",
+      "result_row_id": "event-7fa40c8eb8a5b88a5a05ec45-r3",
+      "candidate_or_list_label": "Iain MacFarlane",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/3",
+        "sheet": "Detailed returns",
+        "source_row": 3848,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2024::2024-12-07",
+      "event_id": "event-7fa40c8eb8a5b88a5a05ec45",
+      "result_row_id": "event-7fa40c8eb8a5b88a5a05ec45-r4",
+      "candidate_or_list_label": "Steve Roberts",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/4",
+        "sheet": "Detailed returns",
+        "source_row": 3849,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2024::2024-12-07",
+      "event_id": "event-7fa40c8eb8a5b88a5a05ec45",
+      "result_row_id": "event-7fa40c8eb8a5b88a5a05ec45-r5",
+      "candidate_or_list_label": "Bruce Woodhead",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/5",
+        "sheet": "Detailed returns",
+        "source_row": 3850,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2022::2022-12-10",
+      "event_id": "event-eec888d9838b64f289a1ad59",
+      "result_row_id": "event-eec888d9838b64f289a1ad59-r0",
+      "candidate_or_list_label": "Alexander Snowdon",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/6",
+        "sheet": "Detailed returns",
+        "source_row": 3851,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2022::2022-12-10",
+      "event_id": "event-eec888d9838b64f289a1ad59",
+      "result_row_id": "event-eec888d9838b64f289a1ad59-r1",
+      "candidate_or_list_label": "Steve Roberts",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/7",
+        "sheet": "Detailed returns",
+        "source_row": 3852,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2022::2022-12-10",
+      "event_id": "event-eec888d9838b64f289a1ad59",
+      "result_row_id": "event-eec888d9838b64f289a1ad59-r2",
+      "candidate_or_list_label": "Bruce Woodhead",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/8",
+        "sheet": "Detailed returns",
+        "source_row": 3853,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2020::2020-12-12",
+      "event_id": "event-79e05b5ff2039ec0e7058810",
+      "result_row_id": "event-79e05b5ff2039ec0e7058810-r0",
+      "candidate_or_list_label": "Alexander Snowdon",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/9",
+        "sheet": "Detailed returns",
+        "source_row": 3854,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2020::2020-12-12",
+      "event_id": "event-79e05b5ff2039ec0e7058810",
+      "result_row_id": "event-79e05b5ff2039ec0e7058810-r1",
+      "candidate_or_list_label": "Steve Roberts",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/10",
+        "sheet": "Detailed returns",
+        "source_row": 3855,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-PLEB",
+      "history_key": "GG-ALD-PLEB::2020::2020-12-12",
+      "event_id": "event-79e05b5ff2039ec0e7058810",
+      "result_row_id": "event-79e05b5ff2039ec0e7058810-r2",
+      "candidate_or_list_label": "Kevin Gentle",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/11",
+        "sheet": "Detailed returns",
+        "source_row": 3856,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2025::2025-03-08",
+      "event_id": "event-1e4346e3f46e487f877780f8",
+      "result_row_id": "event-1e4346e3f46e487f877780f8-r0",
+      "candidate_or_list_label": "Jeannie Cameron",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/12",
+        "sheet": "Detailed returns",
+        "source_row": 3857,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2025::2025-03-08",
+      "event_id": "event-1e4346e3f46e487f877780f8",
+      "result_row_id": "event-1e4346e3f46e487f877780f8-r1",
+      "candidate_or_list_label": "Veronica Taylor",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/13",
+        "sheet": "Detailed returns",
+        "source_row": 3858,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2025::2025-03-08",
+      "event_id": "event-1e4346e3f46e487f877780f8",
+      "result_row_id": "event-1e4346e3f46e487f877780f8-r2",
+      "candidate_or_list_label": "Haydn Bateman",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/14",
+        "sheet": "Detailed returns",
+        "source_row": 3859,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2025::2025-03-08",
+      "event_id": "event-1e4346e3f46e487f877780f8",
+      "result_row_id": "event-1e4346e3f46e487f877780f8-r3",
+      "candidate_or_list_label": "Lin Maurice",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/15",
+        "sheet": "Detailed returns",
+        "source_row": 3860,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2024::2024-11-16",
+      "event_id": "event-ecff7753d46fc4a6a17b6398",
+      "result_row_id": "event-ecff7753d46fc4a6a17b6398-r0",
+      "candidate_or_list_label": "Edward Hill",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/16",
+        "sheet": "Detailed returns",
+        "source_row": 3861,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2024::2024-11-16",
+      "event_id": "event-ecff7753d46fc4a6a17b6398",
+      "result_row_id": "event-ecff7753d46fc4a6a17b6398-r1",
+      "candidate_or_list_label": "Iain MacFarlane",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/17",
+        "sheet": "Detailed returns",
+        "source_row": 3862,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2024::2024-11-16",
+      "event_id": "event-ecff7753d46fc4a6a17b6398",
+      "result_row_id": "event-ecff7753d46fc4a6a17b6398-r2",
+      "candidate_or_list_label": "Alex Snowdon",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/18",
+        "sheet": "Detailed returns",
+        "source_row": 3863,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2024::2024-11-16",
+      "event_id": "event-ecff7753d46fc4a6a17b6398",
+      "result_row_id": "event-ecff7753d46fc4a6a17b6398-r3",
+      "candidate_or_list_label": "Stuart Clark",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/19",
+        "sheet": "Detailed returns",
+        "source_row": 3864,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2024::2024-11-16",
+      "event_id": "event-ecff7753d46fc4a6a17b6398",
+      "result_row_id": "event-ecff7753d46fc4a6a17b6398-r4",
+      "candidate_or_list_label": "Kevin Gentle",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/20",
+        "sheet": "Detailed returns",
+        "source_row": 3865,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2024::2024-11-16",
+      "event_id": "event-ecff7753d46fc4a6a17b6398",
+      "result_row_id": "event-ecff7753d46fc4a6a17b6398-r5",
+      "candidate_or_list_label": "Rosemary Hanbury",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/21",
+        "sheet": "Detailed returns",
+        "source_row": 3866,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2024::2024-11-16",
+      "event_id": "event-ecff7753d46fc4a6a17b6398",
+      "result_row_id": "event-ecff7753d46fc4a6a17b6398-r6",
+      "candidate_or_list_label": "Haydn Bateman",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/22",
+        "sheet": "Detailed returns",
+        "source_row": 3867,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2024::2024-11-16",
+      "event_id": "event-ecff7753d46fc4a6a17b6398",
+      "result_row_id": "event-ecff7753d46fc4a6a17b6398-r7",
+      "candidate_or_list_label": "Boyd Kelly",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/23",
+        "sheet": "Detailed returns",
+        "source_row": 3868,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2024::2024-11-16",
+      "event_id": "event-ecff7753d46fc4a6a17b6398",
+      "result_row_id": "event-ecff7753d46fc4a6a17b6398-r8",
+      "candidate_or_list_label": "Lin Maurice",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/24",
+        "sheet": "Detailed returns",
+        "source_row": 3869,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2023::2023-02-18",
+      "event_id": "event-af8620342d4afdb8a7f9b8db",
+      "result_row_id": "event-af8620342d4afdb8a7f9b8db-r0",
+      "candidate_or_list_label": "Derwent Smithurst",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/25",
+        "sheet": "Detailed returns",
+        "source_row": 3870,
+        "column": null,
+        "html_anchor_index": null
+      }
+    },
+    {
+      "office_id": "GG-ALD-STATES",
+      "history_key": "GG-ALD-STATES::2023::2023-02-18",
+      "event_id": "event-af8620342d4afdb8a7f9b8db",
+      "result_row_id": "event-af8620342d4afdb8a7f9b8db-r1",
+      "candidate_or_list_label": "Frederick George Fisher III",
+      "origin": {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "json_pointer": "/rows/26",
+        "sheet": "Detailed returns",
+        "source_row": 3871,
+        "column": null,
+        "html_anchor_index": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/2024_Alderney_general_election",
+      "source_id": "alderney--S5951ed7d0e",
+      "bridge_url_alias": "alderney--url-f4ddef124d321842f7f7d256"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2020_Alderney_general_election",
+      "source_id": "alderney--S0de41a07b0",
+      "bridge_url_alias": "alderney--url-4cfcab1b8e361f9a1ebcfddf"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2022_Alderney_general_election",
+      "source_id": "alderney--S2f99c8c631",
+      "bridge_url_alias": "alderney--url-6fdadfd4fb43c9c48445d21f"
+    },
+    {
+      "url": "https://www.bailiwickexpress.com/news-ge/pair-elected-to-states-of-alderney/",
+      "source_id": "alderney--S93e7bbcb1f",
+      "bridge_url_alias": "alderney--url-dcebeb9f15dcf54ffb5f207f"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2022_Alderney_plebiscite_election",
+      "source_id": "alderney--S9aeaf25f1f",
+      "bridge_url_alias": "alderney--url-6d86ee104878c137143f2017"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/2020_Alderney_plebiscite_election",
+      "source_id": "alderney--Se0d7a871d4",
+      "bridge_url_alias": "alderney--url-69e61649f436c6556c18be9b"
+    },
+    {
+      "url": "https://alderney.gov.gg/CHttpHandler.ashx?id=202055&p=0",
+      "source_id": "alderney--url-5eba820f0cac748728ed06f2",
+      "bridge_url_alias": "alderney--url-5eba820f0cac748728ed06f2"
+    }
+  ]
+}

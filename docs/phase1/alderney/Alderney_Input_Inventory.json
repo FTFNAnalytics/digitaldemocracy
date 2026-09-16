@@ -1,0 +1,214 @@
+{
+  "status": "documentation_only",
+  "pinned_main_commit": "73b69bdd607c2ed5f70a93b52b5cd0c66f4155c9",
+  "approved_tier_sha256": "e321762fb97ea8971e999fb699113312c80ddf171bcc3f40cd929252c6cd7fb7",
+  "approved_tier_unchanged": true,
+  "hash_inputs": {
+    "canonicalization": "atlas-c14n/1",
+    "hash_algorithm": "sha256",
+    "lineage_id": "country-package-alderney",
+    "inputs": [
+      {
+        "input_path": "data/countries/alderney/README.md",
+        "input_kind": "package",
+        "sha256": "e3e1753da01dd92d89bcbdbf0e7cfe864c6a0eb21619b2dd48fd931fc27b84ce",
+        "byte_count": 5237
+      },
+      {
+        "input_path": "data/countries/alderney/alderney.html",
+        "input_kind": "artifact",
+        "sha256": "f49db332f790fcdd50d235475feb2f817788f63f97149444c8b760c910c896ab",
+        "byte_count": 578
+      },
+      {
+        "input_path": "data/countries/alderney/briefings/GG-ALD-PLEB.html",
+        "input_kind": "artifact",
+        "sha256": "8060e3375a502e9726bdbbbb936619041230df8c025d148619f4c2cb31aa924e",
+        "byte_count": 5797
+      },
+      {
+        "input_path": "data/countries/alderney/briefings/GG-ALD-STATES.html",
+        "input_kind": "artifact",
+        "sha256": "2c8a28053072aa7c4cbdbca20baea69c69779355ac5874c6af201f5a7fe42689",
+        "byte_count": 10197
+      },
+      {
+        "input_path": "data/countries/alderney/cached-formulas.json",
+        "input_kind": "package",
+        "sha256": "cf91a89916bfee20482202176c1d3b79070e07c906d6090c991ecf8a6847d050",
+        "byte_count": 2403
+      },
+      {
+        "input_path": "data/countries/alderney/coverage.json",
+        "input_kind": "package",
+        "sha256": "1c4f621adf53cc8f9cfcc8aac2ead67572130ee39bacb5bbd8f293eb02980b85",
+        "byte_count": 768
+      },
+      {
+        "input_path": "data/countries/alderney/extract.py",
+        "input_kind": "package",
+        "sha256": "44ab5b6b370265abd42ef42fde30a5175295e56ee6e47056aebf876856021d72",
+        "byte_count": 11139
+      },
+      {
+        "input_path": "data/countries/alderney/history-index-crosscheck.json",
+        "input_kind": "package",
+        "sha256": "f3e1bd1e5ffac9f5be0996165018231785fd6f37be5cb809dcf5749eef70131d",
+        "byte_count": 2388
+      },
+      {
+        "input_path": "data/countries/alderney/manifest.json",
+        "input_kind": "package",
+        "sha256": "5fe0d0984027f5b4deb1f8e0fe36528cced9665d9f12b56963cdde414349d2d0",
+        "byte_count": 4335
+      },
+      {
+        "input_path": "data/countries/alderney/source-links.json",
+        "input_kind": "package",
+        "sha256": "67601afc7f397412a1248e4b816facc89d2b8695cc3c9d6b336c091c4f961d2b",
+        "byte_count": 680
+      },
+      {
+        "input_path": "data/countries/alderney/tables/country-coverage.json",
+        "input_kind": "package",
+        "sha256": "4851320d0e452c036f20964543a4b8baec7162dfb35afd54e4ad0113d2ec4b06",
+        "byte_count": 266
+      },
+      {
+        "input_path": "data/countries/alderney/tables/country-notes.json",
+        "input_kind": "package",
+        "sha256": "ac12dd8d01ca1d7094dd751b52e26b159e4b563f30940b134a0b48117b07dba8",
+        "byte_count": 586
+      },
+      {
+        "input_path": "data/countries/alderney/tables/detailed-returns.json",
+        "input_kind": "package",
+        "sha256": "e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f",
+        "byte_count": 8824
+      },
+      {
+        "input_path": "data/countries/alderney/tables/election-calendar.json",
+        "input_kind": "package",
+        "sha256": "ed18050130ba80a3726c45154d841c0f3c64b3d505437f62fa34f1c2540623bc",
+        "byte_count": 767
+      },
+      {
+        "input_path": "data/countries/alderney/tables/history-index.json",
+        "input_kind": "package",
+        "sha256": "69b395678fad074a0166fe7c2da5eb370999a9b05f9b91d551a6d8b8a588c56f",
+        "byte_count": 2416
+      },
+      {
+        "input_path": "data/countries/alderney/tables/office-register.json",
+        "input_kind": "package",
+        "sha256": "46dcd2afececa8e2ab46383d306003b941e6ca0ef9dac8e77dfc4435444a72f9",
+        "byte_count": 1378
+      },
+      {
+        "input_path": "data/countries/alderney/tables/parameters.json",
+        "input_kind": "package",
+        "sha256": "47d666fd87eb6c3db5882213d2ef10f36c994fa9f31859aafde37fdb613343e2",
+        "byte_count": 991
+      },
+      {
+        "input_path": "data/countries/alderney/tables/read-me.json",
+        "input_kind": "package",
+        "sha256": "ac783fd2d95bfb0359c71873c3e0f3e86e11e54564551aaa84440207e49f2540",
+        "byte_count": 3671
+      },
+      {
+        "input_path": "data/countries/alderney/tables/sources.json",
+        "input_kind": "package",
+        "sha256": "2f5834dbb9ac87ba23559bb111b85e8bcf2c06b2b63aa8c44e877076f3f758bd",
+        "byte_count": 1137
+      },
+      {
+        "input_path": "data/countries/alderney/validate.py",
+        "input_kind": "package",
+        "sha256": "db5052dc81d412ac44c89a4f334ab51ff843ecac027c07f07c69e12b4d75c50c",
+        "byte_count": 6001
+      },
+      {
+        "input_path": "schemas/atlas/tiers/alderney.json",
+        "input_kind": "tier_classification",
+        "sha256": "e321762fb97ea8971e999fb699113312c80ddf171bcc3f40cd929252c6cd7fb7",
+        "byte_count": 2523
+      }
+    ],
+    "overrides": [],
+    "adapter_version": "atlas-alderney-field-map/1",
+    "method_version": "atlas-preserve-evidence/1",
+    "schema_version": "atlas-master/1",
+    "schema_inputs": [
+      {
+        "input_path": "0001_atlas_attempt_log.sql",
+        "sha256": "e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1"
+      },
+      {
+        "input_path": "0002_atlas_master.sql",
+        "sha256": "1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da"
+      }
+    ]
+  },
+  "hash_inputs_canonical_json": "{\"adapter_version\":\"atlas-alderney-field-map/1\",\"canonicalization\":\"atlas-c14n/1\",\"hash_algorithm\":\"sha256\",\"inputs\":[{\"byte_count\":5237,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/README.md\",\"sha256\":\"e3e1753da01dd92d89bcbdbf0e7cfe864c6a0eb21619b2dd48fd931fc27b84ce\"},{\"byte_count\":578,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/alderney/alderney.html\",\"sha256\":\"f49db332f790fcdd50d235475feb2f817788f63f97149444c8b760c910c896ab\"},{\"byte_count\":5797,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/alderney/briefings/GG-ALD-PLEB.html\",\"sha256\":\"8060e3375a502e9726bdbbbb936619041230df8c025d148619f4c2cb31aa924e\"},{\"byte_count\":10197,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/alderney/briefings/GG-ALD-STATES.html\",\"sha256\":\"2c8a28053072aa7c4cbdbca20baea69c69779355ac5874c6af201f5a7fe42689\"},{\"byte_count\":2403,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/cached-formulas.json\",\"sha256\":\"cf91a89916bfee20482202176c1d3b79070e07c906d6090c991ecf8a6847d050\"},{\"byte_count\":768,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/coverage.json\",\"sha256\":\"1c4f621adf53cc8f9cfcc8aac2ead67572130ee39bacb5bbd8f293eb02980b85\"},{\"byte_count\":11139,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/extract.py\",\"sha256\":\"44ab5b6b370265abd42ef42fde30a5175295e56ee6e47056aebf876856021d72\"},{\"byte_count\":2388,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/history-index-crosscheck.json\",\"sha256\":\"f3e1bd1e5ffac9f5be0996165018231785fd6f37be5cb809dcf5749eef70131d\"},{\"byte_count\":4335,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/manifest.json\",\"sha256\":\"5fe0d0984027f5b4deb1f8e0fe36528cced9665d9f12b56963cdde414349d2d0\"},{\"byte_count\":680,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/source-links.json\",\"sha256\":\"67601afc7f397412a1248e4b816facc89d2b8695cc3c9d6b336c091c4f961d2b\"},{\"byte_count\":266,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/tables/country-coverage.json\",\"sha256\":\"4851320d0e452c036f20964543a4b8baec7162dfb35afd54e4ad0113d2ec4b06\"},{\"byte_count\":586,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/tables/country-notes.json\",\"sha256\":\"ac12dd8d01ca1d7094dd751b52e26b159e4b563f30940b134a0b48117b07dba8\"},{\"byte_count\":8824,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/tables/detailed-returns.json\",\"sha256\":\"e29313264a4ef724736d6dd34074a24888168264af414f91f0c7d53af2c2ea8f\"},{\"byte_count\":767,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/tables/election-calendar.json\",\"sha256\":\"ed18050130ba80a3726c45154d841c0f3c64b3d505437f62fa34f1c2540623bc\"},{\"byte_count\":2416,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/tables/history-index.json\",\"sha256\":\"69b395678fad074a0166fe7c2da5eb370999a9b05f9b91d551a6d8b8a588c56f\"},{\"byte_count\":1378,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/tables/office-register.json\",\"sha256\":\"46dcd2afececa8e2ab46383d306003b941e6ca0ef9dac8e77dfc4435444a72f9\"},{\"byte_count\":991,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/tables/parameters.json\",\"sha256\":\"47d666fd87eb6c3db5882213d2ef10f36c994fa9f31859aafde37fdb613343e2\"},{\"byte_count\":3671,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/tables/read-me.json\",\"sha256\":\"ac783fd2d95bfb0359c71873c3e0f3e86e11e54564551aaa84440207e49f2540\"},{\"byte_count\":1137,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/tables/sources.json\",\"sha256\":\"2f5834dbb9ac87ba23559bb111b85e8bcf2c06b2b63aa8c44e877076f3f758bd\"},{\"byte_count\":6001,\"input_kind\":\"package\",\"input_path\":\"data/countries/alderney/validate.py\",\"sha256\":\"db5052dc81d412ac44c89a4f334ab51ff843ecac027c07f07c69e12b4d75c50c\"},{\"byte_count\":2523,\"input_kind\":\"tier_classification\",\"input_path\":\"schemas/atlas/tiers/alderney.json\",\"sha256\":\"e321762fb97ea8971e999fb699113312c80ddf171bcc3f40cd929252c6cd7fb7\"}],\"lineage_id\":\"country-package-alderney\",\"method_version\":\"atlas-preserve-evidence/1\",\"overrides\":[],\"schema_inputs\":[{\"input_path\":\"0001_atlas_attempt_log.sql\",\"sha256\":\"e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1\"},{\"input_path\":\"0002_atlas_master.sql\",\"sha256\":\"1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da\"}],\"schema_version\":\"atlas-master/1\"}",
+  "candidate_fingerprint_sha256": "c692ba2d1329e5af1a23f3f9484771b330bd8388348197552aef56dd25bc2706",
+  "candidate_release_id": "country-package-alderney--sha256-c692ba2d1329e5af1a23f3f9484771b330bd8388348197552aef56dd25bc2706",
+  "not_a_published_release": true,
+  "verified_counts": {
+    "current_offices": 2,
+    "historical_offices": 0,
+    "geographies": 2,
+    "selected_histories": 6,
+    "prospective_events": 2,
+    "total_events": 8,
+    "research_dates": 8,
+    "result_rows": 27,
+    "control_observations_supplied": 0,
+    "poll_records_supplied": 0,
+    "source_catalogue_rows": 6,
+    "inline_only_sources": 1,
+    "sources": 7,
+    "briefings_retained": 2,
+    "other_offices": 2,
+    "regional_offices": 0,
+    "municipal_offices": 0,
+    "proceedings": 0,
+    "party_mappings": 0,
+    "package_files_retained": 20,
+    "retained_inputs": 21
+  },
+  "absent_optional_tables": [
+    "tables/governing-control.json",
+    "tables/polling-evidence.json"
+  ],
+  "recovery_metadata_from_manifest": {
+    "archive": {
+      "filename": "Europe_Excluding_Russia_Election_Data_2026-09-15.zip",
+      "bytes": 183958382,
+      "sha256": "93a31ec920c770e752cf7f130ffb8a546dce4510a41d9371d5f49239fa2b4ce9"
+    },
+    "source_inputs": {
+      "Europe_Excluding_Russia/Europe_Excluding_Russia.xlsx": {
+        "sha256": "b11dab577fb1746eddeb3aef72af7b097bcc4601828e1efbca1db3d6f6b98665",
+        "bytes": 10931972
+      },
+      "Europe_Excluding_Russia/Office_Briefings/Offices/GG-ALD-PLEB.html": {
+        "sha256": "8060e3375a502e9726bdbbbb936619041230df8c025d148619f4c2cb31aa924e",
+        "bytes": 5797
+      },
+      "Europe_Excluding_Russia/Office_Briefings/Offices/GG-ALD-STATES.html": {
+        "sha256": "2c8a28053072aa7c4cbdbca20baea69c69779355ac5874c6af201f5a7fe42689",
+        "bytes": 10197
+      },
+      "Europe_Excluding_Russia/Europe_Country_Coverage.csv": {
+        "sha256": "20fb347ab5e37e60e732edf819d0ccfb431f007dcb925a20aa716e4abd07dc80",
+        "bytes": 32833
+      },
+      "Europe_Excluding_Russia/Europe_History_Index.csv": {
+        "sha256": "33b469577b0e89a062391a72d511871bf3e8f9e9f001cf947b9865da6ac01319",
+        "bytes": 34344677
+      }
+    }
+  },
+  "off_git_archive_reverified_this_prompt": false
+}
