@@ -31,7 +31,7 @@ The observatory is being restructured as the **Election Atlas** at `/atlas`, wit
 | `npm run import:data` | Import the Latin America zip (fails clearly if missing) |
 | `npm run import:countries` | Inventory and validate `data/countries/*` standalone packages |
 | `npm run migrate:atlas` | Apply `0001_atlas_attempt_log.sql` to `ATLAS_ATTEMPTS_SQLITE_PATH` and `0002_atlas_master.sql` to `ATLAS_SQLITE_PATH` |
-| `npm run import:atlas` | Ingest into the Atlas SQLite master (stub: fails until an approved Albania tier file and importer implementation) |
+| `npm run import:atlas` | Ingest into the Atlas SQLite master (stub: fails until the Albania importer is implemented) |
 | `npm run import:data -- --countries` | Same country-package import when the Latin America zip is absent |
 | `npm run validate:data` | Validate Latin America records, country packages, and the merged dataset |
 | `npm run validate:evidence` | Compare every historical row and office selection against original source objects |
@@ -85,7 +85,7 @@ That is intentional: the Latin America importer will not invent elections, and t
 | Local / CI default | `data/master/atlas.sqlite` (gitignored) | `data/master/atlas-attempts.sqlite` (gitignored) |
 | Production VPS | `/var/lib/cdd/atlas.sqlite` (set `ATLAS_SQLITE_PATH`) | `/var/lib/cdd/atlas-attempts.sqlite` (set `ATLAS_ATTEMPTS_SQLITE_PATH`) |
 
-Creating the VPS path is ops hygiene only. Phase 1 is not complete until Albania storage proof and the named CI tests in the plan pass. Prompt B DDL and Prompt C documentation are checked in; `import:atlas` stays blocked until `schemas/atlas/tiers/albania.json` is accepted with `status: "approved"` **and** the importer is implemented — see [`docs/atlas-phase1.md`](docs/atlas-phase1.md), [`docs/phase1/Albania_Field_Map.md`](docs/phase1/Albania_Field_Map.md), [`docs/phase1/Albania_Identity_Rules.md`](docs/phase1/Albania_Identity_Rules.md), and [`docs/phase1/Albania_Acceptance_Examples.md`](docs/phase1/Albania_Acceptance_Examples.md).
+Creating the VPS path is ops hygiene only. Phase 1 is not complete until Albania storage proof and the named CI tests in the plan pass. Prompt B DDL, Prompt C documentation, and the approved Albania municipal tier file are checked in; `import:atlas` stays blocked until the importer is implemented — see [`docs/atlas-phase1.md`](docs/atlas-phase1.md), [`docs/phase1/Albania_Field_Map.md`](docs/phase1/Albania_Field_Map.md), [`docs/phase1/Albania_Identity_Rules.md`](docs/phase1/Albania_Identity_Rules.md), and [`docs/phase1/Albania_Acceptance_Examples.md`](docs/phase1/Albania_Acceptance_Examples.md).
 
 ## License
 

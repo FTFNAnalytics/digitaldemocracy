@@ -8,7 +8,7 @@ Checked-in early European packages: Albania, Andorra, Alderney, Armenia. Combine
 
 | Package | Adapter | Register offices | Proposed tier | Regional |
 | --- | --- | ---: | --- | ---: |
-| Albania | `europe-country-extract/1` | 122 | municipal (61 mayors + 61 councils) | 0 |
+| Albania | `europe-country-extract/1` | 122 | municipal (61 mayors + 61 councils; **approved** 2026-09-16) | 0 |
 | Andorra | `europe-country-extract/1` | 7 | municipal (communal councils) | 0 |
 | Alderney | `europe-country-extract/1` | 2 | other (**approved** 2026-09-16) | 0 |
 | Armenia | `armenia-packed-europe/1` | 71 | municipal (community offices) | 0 |
@@ -17,7 +17,7 @@ Workbook calendar strings such as Albania/Andorra `Regional / municipal` are **n
 
 ## Albania storage proof
 
-Albania is the Phase 1 **storage-proof** target, not a regional-calendar launch. This inventory supplies the 122-row municipal draft that ingest will need. SQLite entity DDL, Albania import proof, and the unverified 2027 map are **not** in this change. `npm run import:atlas` remains blocked.
+Albania is the Phase 1 **storage-proof** target, not a regional-calendar launch. Justin **approved** the 122-row municipal classifier on 2026-09-16 (`schemas/atlas/tiers/albania.json`; regional=0 is intentional). Albania import proof and the unverified 2027 map are **not** in this change. `npm run import:atlas` remains blocked until the importer is implemented. The importer must hash the accepted tier-file bytes (there is no self-hash field).
 
 ## Regional calendar proof
 

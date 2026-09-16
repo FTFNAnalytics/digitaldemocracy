@@ -2,8 +2,8 @@
 /**
  * Ingest recognized inputs into the Atlas SQLite master.
  *
- * Phase 1 stub: fails clearly until an approved Albania tier file and
- * importer implementation land. Prompt C documentation is complete.
+ * Phase 1 stub: fails clearly until the Albania importer is implemented.
+ * Albania tiers are approved; Prompt C documentation is complete.
  * Does not ingest Albania or any other package.
  *
  * See docs/atlas-plan.md Phase 1, docs/atlas-phase1.md, and

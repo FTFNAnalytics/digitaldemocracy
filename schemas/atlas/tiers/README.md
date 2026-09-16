@@ -9,12 +9,12 @@ Albania `Regional / municipal` are **not** classifiers.
 
 Files were rebuilt from each package’s office register (one row per `office_id`;
 no invented IDs). See [docs/phase0/REPORT.md](../../../docs/phase0/REPORT.md).
-Albania, Andorra, and Armenia remain **`draft_for_human_review`**. Alderney
-`other` is **`approved`**.
+Albania municipal and Alderney `other` are **`approved`**. Andorra and Armenia
+remain **`draft_for_human_review`**.
 
 | File | Register rows | Proposed tier | Human review |
 | --- | ---: | --- | --- |
-| [`albania.json`](albania.json) | 122 | `municipal` (61 mayors + 61 councils) | Draft only; no regional offices |
+| [`albania.json`](albania.json) | 122 | `municipal` (61 mayors + 61 councils) | **Approved** 2026-09-16 (Justin). Regional=0 is intentional. |
 | [`andorra.json`](andorra.json) | 7 | `municipal` (communal councils) | Empty regional-calendar demo |
 | [`alderney.json`](alderney.json) | 2 | `other` | **Approved** 2026-09-16 (product owner). Channel Islands are low priority for the broader Atlas. |
 | [`armenia.json`](armenia.json) | 71 | `municipal` (community offices) | Boundary/calendar flags; keep municipal |
@@ -31,9 +31,13 @@ for the broader Atlas.
 the mayor; missing mayor rows were not invented. Prompt token `AM-VEDI` is
 register `AM-VEDI-C`.
 
-Phase 1 still needs reviewed entity DDL and Albania import proof. Checking in
-these drafts is not Albania storage proof and is not a populated regional
-calendar.
+**Albania:** all 122 office-register rows are **approved** `municipal` (Justin,
+2026-09-16) for Phase 1 storage proof. Regional count is 0 by design. Do not
+invent regional or national offices. The importer must hash the accepted file
+bytes; this schema has no self-hash field.
+
+Phase 1 still needs the Albania importer and import proof. Checking in these
+files is not Albania storage proof and is not a populated regional calendar.
 
 See [docs/atlas-plan.md](../../../docs/atlas-plan.md) (Regional coverage counting)
 and [docs/atlas-phase1.md](../../../docs/atlas-phase1.md).

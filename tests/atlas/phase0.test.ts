@@ -82,7 +82,7 @@ describe("Phase 0 tier-classification drafts", () => {
       expect(file.rules.length).toBeGreaterThan(0);
       expect(file.counts_by_proposed_tier.regional).toBe(0);
     }
-    expect(albania.status).toBe("draft_for_human_review");
+    expect(albania.status).toBe("approved");
     expect(andorra.status).toBe("draft_for_human_review");
     expect(armenia.status).toBe("draft_for_human_review");
     expect(alderney.status).toBe("approved");
@@ -131,6 +131,29 @@ describe("Phase 0 tier-classification drafts", () => {
         statement: expect.stringMatching(/Ignore calendar/i),
       }),
     );
+  });
+
+  it("keeps approved Albania municipal without blocking review flags", () => {
+    const approved = albania as TierFile & {
+      approval?: { by?: string; date?: string; notes?: string };
+    };
+    expect(approved.status).toBe("approved");
+    expect(approved.approval).toMatchObject({ by: "product_owner", date: "2026-09-16" });
+    expect(approved.approval?.notes).toMatch(/Justin approved/i);
+    expect(approved.approval?.notes).toMatch(/regional count is 0/i);
+    expect(albania.classifications).toHaveLength(122);
+    expect(albania.counts_by_proposed_tier.municipal).toBe(122);
+    expect(albania.counts_by_proposed_tier.regional).toBe(0);
+    expect(albania.source_register.sha256).toBe(
+      "7d5a3735e83f95ee82deb76c60c6d391fa5faadfd3f660fe71ca8ca0ca05ad62",
+    );
+    for (const row of albania.classifications) {
+      expect(row.tier).toBe("municipal");
+      expect(row.schema_v1_tier).toBe("municipal");
+      expect(row.human_review_required).not.toBe(true);
+      expect(row.human_review).toBeUndefined();
+      expect(row).not.toHaveProperty("tier_uncertain");
+    }
   });
 
   it("keeps approved Alderney other without human-review flags", () => {
@@ -235,19 +258,36 @@ describe("Phase 0 inventory artifacts", () => {
     ]);
   });
 
-  it("resolves Alderney tier_mapping and keeps Armenia boundary/calendar flags", () => {
+  it("resolves Albania and Alderney tier_mapping and keeps Armenia boundary/calendar flags", () => {
     const review = readJson<{
-      items: Array<{ queue: string; office_id: string; prompt_token?: string; proposed_tier: string }>;
-      resolved: Array<{
+      items: Array<{
         queue: string;
         office_id: string;
+        prompt_token?: string;
+        proposed_tier: string;
+        country_slug?: string;
+      }>;
+      resolved: Array<{
+        queue: string;
+        office_id?: string;
+        country_slug?: string;
         proposed_tier: string;
         status: string;
         resolved_at: string;
+        office_count?: number;
       }>;
     }>("docs/phase0/human-review.json");
     expect(review.items.filter((row) => row.queue === "tier_mapping")).toEqual([]);
-    const alderney = review.resolved.filter((row) => row.queue === "tier_mapping");
+    const albania = review.resolved.filter((row) => row.country_slug === "albania");
+    expect(albania).toHaveLength(1);
+    expect(albania[0]).toMatchObject({
+      queue: "tier_mapping",
+      proposed_tier: "municipal",
+      office_count: 122,
+      status: "resolved",
+      resolved_at: "2026-09-16",
+    });
+    const alderney = review.resolved.filter((row) => row.country_slug === "alderney");
     expect(alderney.map((row) => row.office_id).sort()).toEqual(["GG-ALD-PLEB", "GG-ALD-STATES"]);
     expect(alderney.every((row) => row.proposed_tier === "other" && row.status === "resolved")).toBe(
       true,

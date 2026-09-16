@@ -18,7 +18,7 @@ in [docs/phase0/REPORT.md](phase0/REPORT.md). Prompt B / Prompt C artifacts live
 | Path override | `ATLAS_SQLITE_PATH` via `lib/atlas/paths.ts`. Default: `data/master/atlas.sqlite`. Production: `/var/lib/cdd/atlas.sqlite` |
 | Attempt ledger path | `ATLAS_ATTEMPTS_SQLITE_PATH`. Default: `data/master/atlas-attempts.sqlite`. Production: `/var/lib/cdd/atlas-attempts.sqlite` |
 | `npm run migrate:atlas` | `scripts/atlas/migrate.ts` — applies attempt-log SQL to the attempts DB and master SQL to the master DB |
-| `npm run import:atlas` | `scripts/atlas/import.ts` — exits non-zero until an **approved** Albania tier file and importer implementation |
+| `npm run import:atlas` | `scripts/atlas/import.ts` — exits non-zero until the Albania importer is implemented |
 | Attempt-log DDL | `schemas/atlas/migrations/0001_atlas_attempt_log.sql` (**attempts DB only**) |
 | Master DDL | `schemas/atlas/migrations/0002_atlas_master.sql` (**master/staging only**) |
 | Prompt B rationale | [docs/phase1/Phase1_DDL_Rationale.md](phase1/Phase1_DDL_Rationale.md) |
@@ -27,7 +27,7 @@ in [docs/phase0/REPORT.md](phase0/REPORT.md). Prompt B / Prompt C artifacts live
 | Albania identity rules | [docs/phase1/Albania_Identity_Rules.md](phase1/Albania_Identity_Rules.md) |
 | Albania acceptance examples | [docs/phase1/Albania_Acceptance_Examples.md](phase1/Albania_Acceptance_Examples.md) |
 | Phase 0 inventory | `docs/phase0/` (`REPORT.md`, `inventory.json`, `continuity-counts.json`, `human-review.json`) |
-| Tier-classification files | `schemas/atlas/tiers/{albania,andorra,armenia}.json` (`draft_for_human_review`); `alderney.json` (`approved`) |
+| Tier-classification files | `schemas/atlas/tiers/albania.json` (**approved** municipal); `alderney.json` (**approved** `other`); `{andorra,armenia}.json` (`draft_for_human_review`) |
 
 `migrate:atlas` may create local gitignored DBs with empty typed tables. That is
 **not** Albania storage proof and is **not** a Phase 1 exit. Schema creates
@@ -37,14 +37,14 @@ in [docs/phase0/REPORT.md](phase0/REPORT.md). Prompt B / Prompt C artifacts live
 acceptance examples, and the completed checklist. It is **not** Albania ingest
 and does **not** unblock `import:atlas`.
 
-`import:atlas` stays blocked until **both**:
+**Albania tiers are approved.** Justin approved `schemas/atlas/tiers/albania.json`
+on 2026-09-16: 122 municipal offices, regional=0 by design. There is no
+self-hash field; the importer must hash the accepted bytes (do not reuse a
+draft-path hash). `import:atlas` stays blocked until the Albania importer is
+implemented.
 
-1. `schemas/atlas/tiers/albania.json` is accepted with `status: "approved"` (Justin must explicitly approve; this PR does not change the draft), and
-2. the Albania importer is implemented.
-
-The Albania tier file remains `draft_for_human_review`. It is not an accepted
-classifier until reviewed like DDL. Alderney `other` is **approved**
-(2026-09-16); Channel Islands are low priority for the broader Atlas.
+Alderney `other` is **approved** (2026-09-16); Channel Islands are low priority
+for the broader Atlas. Andorra and Armenia remain drafts.
 
 ### Fingerprint `schema_inputs` paths
 
@@ -68,7 +68,7 @@ From [atlas-plan.md](atlas-plan.md) Phase 1. Exit only when all of these are don
 3. `ATLAS_SQLITE_PATH` (this PR) and `ATLAS_ATTEMPTS_SQLITE_PATH` (this PR).
 4. `migrate:atlas` / `import:atlas` entrypoints (this PR; import is still a stub).
 5. **DDL reviewed** against the identity table (lineage `release_id` vs `attempt_id`, namespaced office/event keys, unresolved evidence, publication set). Prompt B draft is checked in; it is not Albania ingest.
-6. **Albania tier-classification file** checked in (draft in this PR; still needs human review, not calendar cohort strings).
+6. **Albania tier-classification file** checked in and **approved** (122 municipal; not calendar cohort strings).
 7. **Albania import proof** into SQLite (atomic publish, failed-import rollback, unchanged re-import → new `attempt_id` / same `release_id`).
 8. Named ingest acceptance rows as **required automated CI tests**.
 9. VPS path readiness allowed as ops hygiene — **not** an exit.
@@ -82,8 +82,8 @@ A zero regional-tier numerator for Albania does not fail storage proof.
 | --- | --- |
 | Full entity DDL | Prompt B draft checked in (`0001_atlas_attempt_log.sql` + `0002_atlas_master.sql`). Not Albania storage proof. |
 | Prompt C field map | **Documentation complete.** [Checklist](phase1/Prompt_C_Field_Map_and_CI.md), [field map](phase1/Albania_Field_Map.md), [identity rules](phase1/Albania_Identity_Rules.md), [acceptance examples](phase1/Albania_Acceptance_Examples.md). Mapping specified; importer CI has not run. |
-| Albania importer | Still blocked. Needs approved `schemas/atlas/tiers/albania.json` **and** importer implementation. `import:atlas` exits non-zero. |
-| Albania tier file | Draft at `schemas/atlas/tiers/albania.json` (122 municipal office IDs). Needs explicit human approval before ingest. Do not silently set `approved`. |
+| Albania importer | Still blocked. Albania tiers are approved; `import:atlas` exits non-zero until importer implementation. |
+| Albania tier file | **Approved** 2026-09-16 at `schemas/atlas/tiers/albania.json` (122 municipal office IDs; regional=0 intentional). Hash accepted bytes at import time. |
 | Alderney `other` | **Approved** 2026-09-16 at `schemas/atlas/tiers/alderney.json`. Channel Islands are low priority for the broader Atlas. |
 | Albania map | Proposed 46-municipality 2027 map is unverified in the package; geometry is not invented. |
 

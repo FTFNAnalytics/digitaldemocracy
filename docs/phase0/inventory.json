@@ -60,7 +60,8 @@
       },
       "validation_notes": [
         "Office-register SHA-256 recomputed from in-repo bytes.",
-        "122 register rows: 61 Mayor + 61 Municipal council, all proposed municipal.",
+        "122 register rows: 61 Mayor + 61 Municipal council, all municipal.",
+        "Tier municipal approved 2026-09-16 by Justin (product owner). Regional=0 is intentional.",
         "Calendar cohort string 'Regional / municipal' ignored.",
         "Package coverage_complete is false. Country validate.py exists.",
         "Albania SQLite ingest is not in this PR."

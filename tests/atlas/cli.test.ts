@@ -149,14 +149,14 @@ describe("atlas CLI stubs", () => {
     expect(`${result.stderr}${result.stdout}`).toMatch(/Unexpected existing schema/);
   });
 
-  it("import:atlas fails clearly until approved Albania tier file and importer land", () => {
+  it("import:atlas fails clearly until the Albania importer lands", () => {
     const result = runAtlasScript("scripts/atlas/import.ts", {});
     expect(result.status).toBe(1);
     expect(result.stderr).toContain("Election Atlas import is not available yet");
     expect(result.stderr).toContain("Prompt C documentation is complete");
-    expect(result.stderr).toContain("status approved");
+    expect(result.stderr).toContain("albania.json is approved");
+    expect(result.stderr).toContain("importer is implemented");
     expect(result.stderr).toContain("Albania");
-    expect(result.stderr).toContain("tier-classification");
     expect(result.stderr).toContain(PRODUCTION_ATLAS_SQLITE_PATH);
     expect(result.stderr).toContain(PRODUCTION_ATLAS_ATTEMPTS_SQLITE_PATH);
     expect(result.stderr).toContain("/electiondatabase");

@@ -65,6 +65,19 @@
   ],
   "resolved": [
     {
+      "id": "albania-municipal-tier-classification",
+      "queue": "tier_mapping",
+      "country_slug": "albania",
+      "office_count": 122,
+      "proposed_tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "human_review_required": false,
+      "status": "resolved",
+      "resolved_at": "2026-09-16",
+      "resolved_by": "product_owner",
+      "notes": "Justin approved all 122 Albania office-register rows as municipal on 2026-09-16 for Phase 1 storage proof. Regional count is 0 by design. Do not invent regional or national offices."
+    },
+    {
       "id": "alderney-gg-ald-states-tier-mapping",
       "queue": "tier_mapping",
       "country_slug": "alderney",
