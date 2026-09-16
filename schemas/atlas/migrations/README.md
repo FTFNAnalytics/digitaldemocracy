@@ -11,6 +11,4 @@ Each file is a self-contained draft (`BEGIN IMMEDIATE` / `COMMIT`, `schema_migra
 
 The previous bootstrap (`0001_schema_version.sql` / `schema_version` + `atlas_meta`) is replaced by these two numbered migrations. That bootstrap was not the Atlas entity schema.
 
-Apply with `npm run migrate:atlas`. `npm run import:atlas` stays blocked until Prompt C.
-
-Rationale: [docs/phase1/Phase1_DDL_Rationale.md](../../../docs/phase1/Phase1_DDL_Rationale.md). Field-map / CI handoff: [docs/phase1/Prompt_C_Field_Map_and_CI.md](../../../docs/phase1/Prompt_C_Field_Map_and_CI.md).
+Apply with `npm run migrate:atlas`. `npm run import:atlas` stays blocked until an approved Albania tier file and importer implementation. Prompt C documentation is complete: [field map](../../../docs/phase1/Albania_Field_Map.md), [identity rules](../../../docs/phase1/Albania_Identity_Rules.md), [acceptance examples](../../../docs/phase1/Albania_Acceptance_Examples.md), [checklist](../../../docs/phase1/Prompt_C_Field_Map_and_CI.md).
