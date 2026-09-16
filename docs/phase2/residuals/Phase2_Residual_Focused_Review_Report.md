@@ -1,8 +1,10 @@
 # Phase 2 residual focused-review report — DRAFT
 
-**DRAFT — pending Justin. No changes applied; no tier JSON bytes rewritten.** All exact rows, current rationales, hashed pointers and evidence records are in `residual-open-inventory.json`. Country-pack approval and any optional uncertainty-only edit are separate decisions.
+**Later write (2026-09-16):** Justin accepted the 285 `clear_flag` members (H2-01 / H3-01 / H3-02). Those flags are applied; see [Phase2_Residual_Clearance_Application_Report.md](Phase2_Residual_Clearance_Application_Report.md). Keep-open / defer batches and the 1,010 uncertainty-only appendix remain unapplied. Country packs are still not approved.
 
-**All 1,425 residual rows are accounted for. No tier JSON bytes were rewritten, no country pack was approved, and the accepted Mexico share override was untouched.**
+**Original Prompt H review text follows (inventory snapshot before the 285-row write).** All exact pre-application rows, current rationales at review time, hashed pointers and evidence records are in `residual-open-inventory.json`. Country-pack approval and any optional uncertainty-only edit are separate decisions.
+
+**All 1,425 residual rows were accounted for in this review. The subsequent accepted write rewrote only El Salvador and Argentina clearance rows; no country pack was approved, and the accepted Mexico share override was untouched.**
 
 Baseline main `9065dcdfc0cbc78171dad35b60742ae232b6dd00`; Prompt G `3e92b8b40b472539ba33d1e23f736872b53470aa`; Batch A approval `035f26e427266acc55bbbfec58e45b1661a77b88`. PR #19 now has head `3af7dfa3ce23cc14480bc718e065b265e3a2f10c` with Batch B also approved. The ten residual tier files and all open queue items are identical to G; current PR hashes guard this pack. All twelve approved Batch A/B files are protected. The upstream PR also contains implementation work; it was outside this review and no importer, UI, DDL or VPS work was performed.
 

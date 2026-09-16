@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "review_status": "draft_for_human_review",
+  "review_status": "prompt_h_285_applied_packs_still_draft",
   "residual_rows": 1425,
   "office_ids_missing": 0,
   "office_ids_added": 0,
@@ -9,8 +9,8 @@
   "optional_deferred_rows": 1010,
   "batches": 16,
   "proposed_full_clearances": 285,
-  "applied_changes": 0,
-  "tier_json_files_written": 0,
+  "applied_changes": 285,
+  "tier_json_files_written": 2,
   "tier_corrections_proposed": 0,
   "approved_batch_A_unchanged": true,
   "approved_batch_B_observed_and_unchanged": true,
@@ -20,9 +20,31 @@
   "all_source_files_match_pinned_git_bytes": true,
   "residual_tier_files_identical_to_prompt_G": true,
   "not_run": [
-    "Primary UNDP page certification",
-    "Justin decisions",
-    "Importer or SQLite research load",
+    "Primary UNDP page certification (waived by Justin for H2-01)",
+    "Residual-heavy country pack approvals",
+    "Optional 1,010 uncertainty-only edits",
     "VPS / publication / cutover CI"
-  ]
+  ],
+  "residual_rows_inventoried": 1425,
+  "residual_rows_still_open": 1140,
+  "applied_batches": [
+    "H2-01",
+    "H3-01",
+    "H3-02"
+  ],
+  "applied_by_batch": {
+    "H2-01": 262,
+    "H3-01": 19,
+    "H3-02": 4
+  },
+  "tier_value_changes": 0,
+  "pack_approvals": 0,
+  "el_salvador_status": "draft_for_human_review",
+  "argentina_status": "draft_for_human_review",
+  "el_salvador_post_sha256": "40f5b3ee3579072dd30749900b076619a1557f5e5233435c35bf651b151a107d",
+  "argentina_post_sha256": "9bbb8b088dbbc094cf6a657bd280038d817e8e5d3c2d3803d8f0e303d0b945fb",
+  "el_salvador_crosswalk_caveat_accepted": true,
+  "primary_pdf_reverification_required": false,
+  "accepted_by": "Justin",
+  "accepted_at": "2026-09-16"
 }

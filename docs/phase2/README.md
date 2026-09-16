@@ -19,7 +19,7 @@ Prompt D continuity field maps live here. Prompt E/G LatAm/NZ tier files are che
 
 6. **Do not** approve the remaining 10 residual-heavy packs here. **Do not** modify frozen research bytes. **Do not** SSH/deploy to VPS from this PR.
 
-7. **Prompt H residual review pack landed as drafts** under [residuals/](residuals/Phase2_Residual_Focused_Review_Report.md). 1,425 residuals inventoried; 285 conditional clearances proposed (El Salvador 262 + Argentina 23) pending Justin; Haiti 1,004 keep-open; 1,010 uncertainty-only still deferred. No tier JSON rewritten; no residual packs approved; proposed-clearance-batches.json is not applied.
+7. **Prompt H residual review pack** lives under [residuals/](residuals/README.md). 1,425 residuals inventoried. **Justin accepted all 285 conditional clearances on 2026-09-16** (El Salvador 262 including retained crosswalk caveat + Argentina 23); those `human_review_required` flags are cleared. Haiti 1,004 keep-open; **1,140 residuals still open**; 1,010 uncertainty-only still deferred. **No residual packs approved** (el-salvador / argentina remain `draft_for_human_review`). Batch A/B and Mexico override untouched.
 
 | File | Role |
 | --- | --- |
@@ -29,6 +29,6 @@ Prompt D continuity field maps live here. Prompt E/G LatAm/NZ tier files are che
 | [Continuity_Identity_Rules.md](Continuity_Identity_Rules.md) | Namespaces, fingerprint, multi-lineage protocol |
 | [Continuity_Acceptance_Examples.md](Continuity_Acceptance_Examples.md) | Twelve worked examples |
 | [Continuity_Import.md](Continuity_Import.md) | How to run `import:atlas` for approved packs; `/atlas` SQLite UI; what is skipped |
-| [tier-drafts/](tier-drafts/Phase2_Tier_Policy_Application_Report.md) | Prompt E/G packs (Batch A+B approved; 10 still draft; Prompt G: 5,426 clearances / 1,425 residuals; Mexico inventory non-executable) |
-| [decisions/](decisions/README.md) | Prompt F pack: Mexico withhold-all-67 **accepted** 2026-09-16; [Batch A](decisions/Batch_A_Tier_Pack_Approvals.md) and [Batch B](decisions/Batch_B_Tier_Pack_Approvals.md) packs approved; residual-heavy packs still draft |
-| [residuals/](residuals/Phase2_Residual_Focused_Review_Report.md) | Prompt H residual focused-review pack (**DRAFT**; 1,425 inventoried; 285 proposed clearances pending Justin; no flags cleared) |
+| [tier-drafts/](tier-drafts/Phase2_Tier_Policy_Application_Report.md) | Prompt E/G packs (Batch A+B approved; 10 still draft; Prompt G: 5,426 clearances; Prompt H: +285 residual clearances; 1,140 residuals still open; Mexico inventory non-executable) |
+| [decisions/](decisions/README.md) | Prompt F pack: Mexico withhold-all-67 **accepted** 2026-09-16; [Batch A](decisions/Batch_A_Tier_Pack_Approvals.md) and [Batch B](decisions/Batch_B_Tier_Pack_Approvals.md) packs approved; [Prompt H 285](decisions/Prompt_H_285_Clearances_Accepted.md) residual clearances accepted; residual-heavy packs still draft |
+| [residuals/](residuals/README.md) | Prompt H pack: 1,425 inventoried; **285 clearances applied** 2026-09-16 (ES+AR); 1,140 still open; 1,010 uncertainty-only deferred; packs still draft |

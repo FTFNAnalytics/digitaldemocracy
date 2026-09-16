@@ -1,6 +1,8 @@
 # H3 — Argentina
 
-**DRAFT — pending Justin. No changes applied; no tier JSON bytes rewritten.** All exact rows, current rationales, hashed pointers and evidence records are in `residual-open-inventory.json`. Country-pack approval and any optional uncertainty-only edit are separate decisions.
+**Partially applied 2026-09-16:** Justin accepted H3-01 (19) and H3-02 (4) `clear_flag` rows. Keep-open / defer batches were not applied. The Argentina pack remains `draft_for_human_review`. See [Phase2_Residual_Clearance_Application_Report.md](Phase2_Residual_Clearance_Application_Report.md).
+
+**Original Prompt H memo follows.** All exact pre-application rows, current rationales, hashed pointers and evidence records are in `residual-open-inventory.json`. Country-pack approval and any optional uncertainty-only edit are separate decisions.
 
 Split **120** rows into six evidence-based batches. Propose clearing only 23 generic historical-binding flags: 19 named Santa Fe mayors and four Córdoba shared-ballot/audit offices whose exact notes explain that they are outside the tracking window. This recommendation concerns the reason for focused review; frozen historical/reference status remains unchanged. No current-tenure, successor or future-date assertion follows.
 
