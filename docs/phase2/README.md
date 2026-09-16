@@ -1,6 +1,6 @@
 # Election Atlas — Phase 2 continuity documentation
 
-Prompt D continuity field maps live here. Prompt E LatAm/NZ tier drafts are checked in and remain **`draft_for_human_review`**. Prompt F recommendations only live under [decisions/](decisions/README.md); **nothing is approved or applied**. Continuity ingest is blocked. This directory is **documentation only**.
+Prompt D continuity field maps live here. Prompt E LatAm/NZ tier drafts are checked in and remain **`draft_for_human_review`**. Prompt F decision drafts live under [decisions/](decisions/README.md). **Mexico share disposition is accepted** (withhold-all-67, 2026-09-16). Continuity ingest remains **blocked** on approved tier packs and remaining Prompt D gates. This directory is **documentation only**.
 
 1. **Prompt D is documentation-complete; implementation CI is Not run.** The checklist marks every required map output Done and every importer/CI gate Not run. No LatAm or NZ importer is in this change.
 
@@ -11,13 +11,13 @@ Prompt D continuity field maps live here. Prompt E LatAm/NZ tier drafts are chec
 
 3. **Material findings**
    - LatAm 40,509 historical subtotal = 36,750 selected + 3,759 other; total events 58,658 with 18,149 prospective.
-   - 67 Mexico result rows with share>100 / `percent_0_100` are a **hard LatAm publish blocker** until reviewed overrides. Do not clamp, scale, or drop those rows.
+   - 67 Mexico result rows with share>100 / `percent_0_100` are a **hard LatAm publish blocker** unless a reviewed override withholds or corrects them. Justin accepted withhold-all-67 on 2026-09-16; do not clamp, scale, or drop those rows.
 
-4. **Prompt E drafts are checked in and still draft.** 21 LatAm country files + `new-zealand.json` live under `schemas/atlas/tiers/` with status **`draft_for_human_review`**. The Mexico share-domain inventory is at `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain-DRAFT.json` (`production_accepted=false`, non-executable; not an accepted override). Continuity ingest remains **blocked** until tiers are approved and Mexico overrides are accepted. Multi-lineage import implementation is still required.
+4. **Prompt E drafts are checked in and still draft.** 21 LatAm country files + `new-zealand.json` live under `schemas/atlas/tiers/` with status **`draft_for_human_review`**. The Mexico share-domain inventory at `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain-DRAFT.json` remains non-executable history. Continuity ingest remains **blocked** until tiers are approved. Multi-lineage import implementation is still required.
 
-5. **Prompt F recommendations only; nothing approved/applied.** See [decisions/](decisions/README.md). Mexico proposal: withhold all 67 shares (201 scalar changes in 67 bundles) in `decisions/mexico-share-domain-PROPOSED.json` (`production_accepted=false` / `executable_override=false`; not on a production override discovery path). 95 sibling rows are unchanged but need event-level reconciliation. Tier category policies **could** clear 5,426 of 6,851 flags if accepted; 1,425 residuals remain. No tier values or pack statuses are flipped in this PR; the patch appendix is not applied.
+5. **Mexico share disposition accepted; Prompt F tier policies still recommendations only.** Justin accepted withhold-all-67 on 2026-09-16 (America/Edmonton). Discoverable override: `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (`production_accepted=true`, `executable_override=true`, 201 withhold changes / 67 bundles). Historical proposal remains `docs/phase2/decisions/mexico-share-domain-PROPOSED.json`. 95 sibling rows are unchanged and still need event-level reconciliation. Tier category policies **could** clear 5,426 of 6,851 flags if accepted; 1,425 residuals remain. No tier values or pack statuses are flipped; the patch appendix is not applied. LatAm continuity remains blocked on approved tier packs and remaining Prompt D gates. See [decisions/](decisions/README.md).
 
-6. **Do not** implement a LatAm/NZ importer in this change. **Do not** invent or approve tiers or fix Mexico shares. **Do not** modify frozen research bytes.
+6. **Do not** implement a LatAm/NZ importer in this change. **Do not** invent or approve tiers or apply the tier patch appendix. **Do not** modify frozen research bytes.
 
 | File | Role |
 | --- | --- |
@@ -27,4 +27,4 @@ Prompt D continuity field maps live here. Prompt E LatAm/NZ tier drafts are chec
 | [Continuity_Identity_Rules.md](Continuity_Identity_Rules.md) | Namespaces, fingerprint, multi-lineage protocol |
 | [Continuity_Acceptance_Examples.md](Continuity_Acceptance_Examples.md) | Twelve worked examples |
 | [tier-drafts/](tier-drafts/Phase2_Tier_Pack_Report.md) | Prompt E draft pack (still draft; Mexico inventory non-executable; continuity ingest blocked) |
-| [decisions/](decisions/README.md) | Prompt F recommendations only (withhold-all-67 / 201 scalars; 95 siblings need event-level reconciliation; 5,426 of 6,851 flags could clear; 1,425 residual; nothing approved/applied) |
+| [decisions/](decisions/README.md) | Prompt F pack: Mexico withhold-all-67 **accepted** 2026-09-16; tier policies still draft (5,426/6,851 could clear; 1,425 residual; not applied) |

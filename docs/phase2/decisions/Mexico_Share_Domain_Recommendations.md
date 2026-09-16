@@ -1,6 +1,6 @@
-# Mexico share-domain recommendations — DRAFT
+# Mexico share-domain recommendations — DRAFT (withhold accepted)
 
-**Recommendation: explicitly withhold the resolved share for all 67 listed rows. Accept zero numeric replacements on the evidence currently available. This is a proposal for Justin; nothing is accepted or executable.**
+**Justin accepted withhold-all-67 as proposed on 2026-09-16 (America/Edmonton).** The discoverable override is `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (`production_accepted=true`, `executable_override=true`, 201 withhold changes in 67 bundles). This document and `mexico-share-domain-PROPOSED.json` remain the historical proposal (`production_accepted=false`). No numeric alternate was selected. 95 sibling rows are unchanged and still need event-level reconciliation. Continuity tier packs are not approved.
 
 Baseline main `9065dcdfc0cbc78171dad35b60742ae232b6dd00`; Prompt E is in [draft PR #19](https://github.com/FTFNAnalytics/digitaldemocracy/pull/19), head `4479c57eccd0d05d48abce2d3407ad3f032a2590`. The PR's tier report matches the saved Prompt E report byte-for-byte (Git blob `e97c052ea26fcbeda1967b79a3b461a3dee8752a`). Input tier hashes and all 67 original guards remain pinned to Prompt E. Governing override shape is Albania Identity Rules, “Override and binding input contract,” and Continuity Identity Rules, “Incomplete refresh, overrides and conflicts.” No frozen research, DDL or Albania file changes.
 
@@ -218,4 +218,4 @@ M denotes data/research/countries/mexico.json.gz; its SHA-256 is `a8080cf83f12ed
 
 ## Still blocked
 
-No approval is recorded. No importer or SQLite research load ran. All 22 continuity tier packs still need explicit acceptance, along with Mexico dispositions and the full Prompt D multi-lineage/publication/cutover gates. Europe remains the default landing and citations remain per lineage. This document does not declare continuity publish unblocked.
+Mexico share disposition is accepted (withhold-all-67). No importer or SQLite research load ran. All 22 continuity tier packs still need explicit acceptance, along with the full Prompt D multi-lineage/publication/cutover gates. Europe remains the default landing and citations remain per lineage. This document does not declare continuity publish unblocked.

@@ -1,8 +1,8 @@
 # Phase 2 continuity tier drafts
 
-**Drafts only. No tiers or Mexico overrides are approved. Continuity publish remains blocked until tiers are approved and Mexico overrides are accepted; importer and cutover CI also remain required.**
+**Drafts only for continuity tiers.** Continuity publish remains blocked until tier packs are approved; importer and cutover CI also remain required. Mexico share withhold-all-67 was accepted by Justin on 2026-09-16.
 
-Prompt F recommendations only are checked in under `docs/phase2/decisions/` (nothing approved or applied). Mexico proposal: withhold all 67 shares (201 scalar changes in 67 bundles); 95 sibling rows unchanged but need event-level reconciliation. Tier category policies could clear 5,426 of 6,851 flags if accepted; 1,425 residuals remain. No tier values or pack statuses are flipped. Do not treat the patch appendix or `docs/phase2/decisions/mexico-share-domain-PROPOSED.json` as accepted/executable.
+Prompt F decision drafts are checked in under `docs/phase2/decisions/`. Justin accepted Mexico withhold-all-67 on 2026-09-16; the discoverable override is `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json`. `mexico-share-domain-PROPOSED.json` and `mexico-share-domain-DRAFT.json` remain non-executable history. 95 sibling rows still need event-level reconciliation. Tier category policies could clear 5,426 of 6,851 flags if accepted; 1,425 residuals remain. No tier values or pack statuses are flipped. Do not treat the patch appendix as applied.
 
 Prepared against merged main `9065dcdfc0cbc78171dad35b60742ae232b6dd00`. This note is the Prompt E review-pack guidance, placed here rather than at the repository root. Checking in drafts does not approve them or authorize ingestion.
 
@@ -51,6 +51,7 @@ Reports and support:
 - `docs/phase2/tier-drafts/Mexico_Share_Domain_Override_Draft.md`
 - `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain-DRAFT.json` (non-executable inventory, never an accepted override)
 - `docs/phase2/tier-drafts/validation.json`
-- Prompt F recommendations: `docs/phase2/decisions/` including `mexico-share-domain-PROPOSED.json` (withhold-all-67 / 201 scalars; `production_accepted=false`; not on a production override path)
+- Prompt F pack: `docs/phase2/decisions/` including historical `mexico-share-domain-PROPOSED.json` (`production_accepted=false`)
+- Accepted Mexico override: `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (Justin 2026-09-16 withhold-all-67; `production_accepted=true`)
 
-No importer/UI code, SQLite rows, frozen input edits, approvals or public route changes are part of this handoff.
+No importer/UI code, SQLite research load, frozen input edits, tier-pack approvals or public route changes are part of this handoff. Mexico withhold-all-67 is recorded in the accepted override file.
