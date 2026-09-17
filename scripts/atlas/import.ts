@@ -2,7 +2,7 @@
 /**
  * Import approved Atlas lineages into SQLite.
  *
- * Default scope is Albania + Andorra + Alderney + approved LatAm packs + New Zealand
+ * Default scope is Albania + Andorra + Alderney + Armenia + approved LatAm packs + New Zealand
  * (`ATLAS_IMPORT_SCOPE=all`). Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -68,6 +68,20 @@ function main() {
       console.log(`alderney_result_rows=${result.alderney.counts.result_rows}`);
       console.log(`alderney_sources=${result.alderney.counts.sources}`);
       console.log(`alderney_regional=${result.alderney.counts.regional_offices}`);
+    }
+    if (result.armenia) {
+      console.log("lineage=country-package-armenia");
+      console.log(`armenia_attempt_id=${result.armenia.attemptId}`);
+      console.log(`armenia_release_id=${result.armenia.releaseId}`);
+      console.log(`armenia_fingerprint_sha256=${result.armenia.fingerprint}`);
+      console.log(`armenia_reused_release=${result.armenia.reusedRelease ? "yes" : "no"}`);
+      console.log(`armenia_offices=${result.armenia.counts.current_offices}`);
+      console.log(`armenia_municipal=${result.armenia.counts.municipal_offices}`);
+      console.log(`armenia_selected_histories=${result.armenia.counts.selected_histories}`);
+      console.log(`armenia_prospective_events=${result.armenia.counts.prospective_events}`);
+      console.log(`armenia_result_rows=${result.armenia.counts.result_rows}`);
+      console.log(`armenia_sources=${result.armenia.counts.sources}`);
+      console.log(`armenia_regional=${result.armenia.counts.regional_offices}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");

@@ -1,11 +1,12 @@
 import { importAlbania, type ImportAlbaniaOptions, type ImportAlbaniaResult } from "../albania/import";
 import { importAlderney, type ImportAlderneyResult } from "../alderney/import";
 import { importAndorra, type ImportAndorraResult } from "../andorra/import";
+import { importArmenia, type ImportArmeniaResult } from "../armenia/import";
 import { importLatAm } from "./latam";
 import { importNewZealand } from "./nz";
 import type { ContinuityImportOptions, ContinuityImportResult } from "./run";
 
-export type ImportScope = "albania" | "andorra" | "alderney" | "latam" | "nz" | "all";
+export type ImportScope = "albania" | "andorra" | "alderney" | "armenia" | "latam" | "nz" | "all";
 
 export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): ImportScope {
   const raw = (value ?? "all").trim().toLowerCase();
@@ -13,19 +14,21 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     raw === "albania" ||
     raw === "andorra" ||
     raw === "alderney" ||
+    raw === "armenia" ||
     raw === "latam" ||
     raw === "nz" ||
     raw === "all"
   ) {
     return raw;
   }
-  throw new Error(`Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|latam|nz|all`);
+  throw new Error(`Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|latam|nz|all`);
 }
 
 export type MultiLineageImportResult = {
   albania?: ImportAlbaniaResult;
   andorra?: ImportAndorraResult;
   alderney?: ImportAlderneyResult;
+  armenia?: ImportArmeniaResult;
   latam?: ContinuityImportResult;
   nz?: ContinuityImportResult;
 };
@@ -43,6 +46,9 @@ export function importAtlasLineages(
   }
   if (scope === "alderney" || scope === "all") {
     result.alderney = importAlderney(options);
+  }
+  if (scope === "armenia" || scope === "all") {
+    result.armenia = importArmenia(options);
   }
   if (scope === "latam" || scope === "all") {
     result.latam = importLatAm(options);

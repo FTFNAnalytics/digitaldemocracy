@@ -4,6 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import { importAlderney } from "../../lib/atlas/alderney/import";
 import { importAndorra } from "../../lib/atlas/andorra/import";
+import { importArmenia } from "../../lib/atlas/armenia/import";
 import { importNewZealand } from "../../lib/atlas/continuity/nz";
 import { migrateMasterDatabase } from "../../lib/atlas/apply-migrations";
 import { loadAtlasCatalog, getAtlasCountry, listAtlasOffices, listAtlasRegionalCalendar } from "../../lib/atlas/read";
@@ -118,6 +119,38 @@ describe("Atlas SQLite UI catalog", () => {
     expect(regional.count).toBe(0);
     expect(regional.label).toBe(
       "No regional tier in this package; two territorial office/contest records classified other.",
+    );
+    expect(regional.denominatorKnown).toBe(false);
+  });
+
+  it("shows Armenia's honest empty regional calendar after import", () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-armenia-ui-"));
+    tempDirs.push(dir);
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+    importArmenia({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "atlas-ui-test",
+    });
+    const catalog = loadAtlasCatalog(sqlitePath);
+    expect(catalog.status).toBe("ready");
+    expect(catalog.countries.map((row) => row.countryId)).toEqual(["armenia"]);
+    expect(catalog.countries[0]?.officeCount).toBe(71);
+    const country = getAtlasCountry("armenia", sqlitePath);
+    expect(country?.name).toBe("Armenia");
+    expect(country?.polityKind).toBe("sovereign_country");
+    const offices = listAtlasOffices("armenia", sqlitePath);
+    expect(offices).toHaveLength(71);
+    expect(offices.every((row) => row.tier === "municipal")).toBe(true);
+    expect(offices.find((row) => row.officeId === "AM-AKHURYAN-C")?.nextCertainty).toBe("called");
+    expect(offices.find((row) => row.officeId === "AM-VEDI-C")?.nextCertainty).toBeNull();
+    const regional = listAtlasRegionalCalendar("armenia", sqlitePath);
+    expect(regional.offices).toEqual([]);
+    expect(regional.count).toBe(0);
+    expect(regional.label).toBe(
+      "No regional offices in the supplied Armenia package; 71 municipal offices. Research coverage remains partial.",
     );
     expect(regional.denominatorKnown).toBe(false);
   });
