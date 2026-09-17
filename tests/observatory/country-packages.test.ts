@@ -18,8 +18,16 @@ const root = path.join(import.meta.dirname, "../..");
 describe("country package inventory", () => {
   it("classifies every present standalone folder", () => {
     const { packages, skipped } = inventoryCountryPackages(root);
-    expect(skipped.map((row) => row.slug)).toEqual(["austria"]);
-    expect(skipped[0]?.reason).toMatch(/XZ payload has no observatory adapter/i);
+    expect(skipped.map((row) => row.slug)).toEqual([
+      "austria",
+      "bosnia-and-herzegovina",
+    ]);
+    expect(skipped.find((row) => row.slug === "austria")?.reason).toMatch(
+      /XZ payload has no observatory adapter/i,
+    );
+    expect(
+      skipped.find((row) => row.slug === "bosnia-and-herzegovina")?.reason,
+    ).toMatch(/website ingestion pending/);
     expect(packages.map((row) => row.slug).sort()).toEqual([
       "albania",
       "alderney",
