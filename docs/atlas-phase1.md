@@ -34,10 +34,11 @@ summarized at the top of [atlas-plan.md](atlas-plan.md).
 | Andorra Prompt J field map | [docs/phase1/andorra/](phase1/andorra/Prompt_J_Field_Map_and_CI.md) — Europe #2 mapping **Done**; importer landed (PR #23) |
 | Armenia Prompt L field map | [docs/phase1/armenia/](phase1/armenia/Prompt_L_Tiers_Field_Map_and_CI.md) — Europe #4 mapping **Done**; importer landed (PR #26) |
 | Austria Prompt N field map | [docs/phase1/austria/](phase1/austria/Prompt_N_Tiers_Field_Map_and_CI.md) — mapping **Done**; importer CI **Not run** (package on main via PR #11; Atlas importer waits) |
+| Bosnia Prompt O field map | [docs/phase1/bosnia-and-herzegovina/](phase1/bosnia-and-herzegovina/Prompt_O_Tiers_Field_Map_and_CI.md) — mapping **Done**; importer CI **Not run** (package on main via PR #15; Atlas importer waits) |
 | Named CI | `tests/atlas/import.test.ts` (Prompt C gates) and `tests/atlas/cli.test.ts` (migrate + import CLI) |
 | Phase 0 inventory | `docs/phase0/` (`REPORT.md`, `inventory.json`, `continuity-counts.json`, `human-review.json`) |
 | Prompt D continuity docs | [docs/phase2/](phase2/README.md) — field maps, identity rules, acceptance examples, checklist; approved-pack importer CI runs (`npm run test:atlas-import`) |
-| Tier-classification files | `schemas/atlas/tiers/albania.json` (**approved** municipal); `alderney.json` (**approved** `other`); `andorra.json` (**approved** municipal, Justin 2026-09-16); `armenia.json` (**approved** municipal, Prompt L 2026-09-17; five boundary/calendar reviews remain open); `austria.json` (**approved** 2,034 municipal / 4 regional, Prompt N 2026-09-17; package on main via PR #11; St. Georgen 2015 hold retained; Atlas importer waits) |
+| Tier-classification files | `schemas/atlas/tiers/albania.json` (**approved** municipal); `alderney.json` (**approved** `other`); `andorra.json` (**approved** municipal, Justin 2026-09-16); `armenia.json` (**approved** municipal, Prompt L 2026-09-17; five boundary/calendar reviews remain open); `austria.json` (**approved** 2,034 municipal / 4 regional, Prompt N 2026-09-17; package on main via PR #11; St. Georgen 2015 hold retained; Atlas importer waits); `bosnia-and-herzegovina.json` (**approved** all 13 regional, Prompt O 2026-09-17; package on main via PR #15; RS presidential / coalition / calendar notes retained; Atlas importer waits) |
 
 `migrate:atlas` may create local gitignored DBs with empty typed tables. Empty schema is **not** Phase 1 exit. `import:atlas` against the frozen Albania package is the storage proof: 122 offices, 366 selected histories, 3,843 result rows, 122 municipal / 0 regional, 185 sources (182 catalogue + 3 inline), 122 briefings retained, proceedings=0, party_mappings=0.
 
@@ -62,6 +63,13 @@ Austria Prompt N docs are in
 geographic tiers are **approved** (2,034 municipal / 4 regional). The Austria
 package is on main (PR #11, `f0f2c86`); the Atlas importer waits. Publication hold
 `AT-OOE-41119-M::2015::` and open calendar/boundary notes remain.
+Bosnia Prompt O docs are in
+[docs/phase1/bosnia-and-herzegovina/](phase1/bosnia-and-herzegovina/README.md)
+(mapping Done; execution CI Not run); geographic tiers are **approved** (all 13
+regional). The Bosnia package is on main (PR #15, `33454ab`); the Atlas importer
+waits. Open RS presidential replacement/repeat, governing coalition, and
+2026-10-04 calendar-certainty notes remain; do not invent Brčko or municipal
+offices.
 
 ### Fingerprint `schema_inputs` paths
 
@@ -135,5 +143,6 @@ Deferred Prompt C rows above are **not** waived. They remain required before cla
 | Andorra Prompt J field map | **Documentation complete** in [docs/phase1/andorra/](phase1/andorra/README.md). Importer landed (PR #23). |
 | Alderney Prompt K / Armenia Prompt L | Importers landed (PRs #24 / #26). Tiers approved. |
 | Austria Prompt N field map | **Documentation complete** in [docs/phase1/austria/](phase1/austria/README.md). Mapping Done; importer CI Not run. Package on main via PR #11. Approved `austria.json` is 2,034 municipal / 4 regional. |
+| Bosnia Prompt O field map | **Documentation complete** in [docs/phase1/bosnia-and-herzegovina/](phase1/bosnia-and-herzegovina/README.md). Mapping Done; importer CI Not run. Package on main via PR #15. Approved `bosnia-and-herzegovina.json` is all 13 regional. |
 
 Still out of scope: `/atlas/explorer`, redirects, cutover, residual-heavy draft packs, tightness, and an Austria Atlas importer. Austria **package** and Prompt N approved tiers are on main (PRs #11 / #28). Prompt M 95 sibling withholds: disposition accepted 2026-09-17 and docs PR #27 landed; production override remains 67.
