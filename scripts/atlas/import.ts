@@ -2,7 +2,7 @@
 /**
  * Import approved Atlas lineages into SQLite.
  *
- * Default scope is Albania + Andorra + approved LatAm packs + New Zealand
+ * Default scope is Albania + Andorra + Alderney + approved LatAm packs + New Zealand
  * (`ATLAS_IMPORT_SCOPE=all`). Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -54,6 +54,20 @@ function main() {
       console.log(`andorra_sources=${result.andorra.counts.sources}`);
       console.log(`andorra_municipal=${result.andorra.counts.municipal_offices}`);
       console.log(`andorra_regional=${result.andorra.counts.regional_offices}`);
+    }
+    if (result.alderney) {
+      console.log("lineage=country-package-alderney");
+      console.log(`alderney_attempt_id=${result.alderney.attemptId}`);
+      console.log(`alderney_release_id=${result.alderney.releaseId}`);
+      console.log(`alderney_fingerprint_sha256=${result.alderney.fingerprint}`);
+      console.log(`alderney_reused_release=${result.alderney.reusedRelease ? "yes" : "no"}`);
+      console.log(`alderney_offices=${result.alderney.counts.current_offices}`);
+      console.log(`alderney_other=${result.alderney.counts.other_offices}`);
+      console.log(`alderney_selected_histories=${result.alderney.counts.selected_histories}`);
+      console.log(`alderney_prospective_events=${result.alderney.counts.prospective_events}`);
+      console.log(`alderney_result_rows=${result.alderney.counts.result_rows}`);
+      console.log(`alderney_sources=${result.alderney.counts.sources}`);
+      console.log(`alderney_regional=${result.alderney.counts.regional_offices}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");

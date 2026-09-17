@@ -2,6 +2,7 @@ import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { mkdtempSync, rmSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
+import { importAlderney } from "../../lib/atlas/alderney/import";
 import { importAndorra } from "../../lib/atlas/andorra/import";
 import { importNewZealand } from "../../lib/atlas/continuity/nz";
 import { migrateMasterDatabase } from "../../lib/atlas/apply-migrations";
@@ -86,6 +87,38 @@ describe("Atlas SQLite UI catalog", () => {
     expect(regional.offices).toEqual([]);
     expect(regional.count).toBe(0);
     expect(regional.label).toBe("No regional tier in this package; seven municipal councils.");
+    expect(regional.denominatorKnown).toBe(false);
+  });
+
+  it("shows Alderney's honest empty regional calendar after import", () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-alderney-ui-"));
+    tempDirs.push(dir);
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+    importAlderney({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "atlas-ui-test",
+    });
+    const catalog = loadAtlasCatalog(sqlitePath);
+    expect(catalog.status).toBe("ready");
+    expect(catalog.countries.map((row) => row.countryId)).toEqual(["alderney"]);
+    expect(catalog.countries[0]?.officeCount).toBe(2);
+    const country = getAtlasCountry("alderney", sqlitePath);
+    expect(country?.name).toBe("Alderney");
+    expect(country?.polityKind).toBe("territory");
+    const offices = listAtlasOffices("alderney", sqlitePath);
+    expect(offices).toHaveLength(2);
+    expect(offices.every((row) => row.tier === "other")).toBe(true);
+    expect(offices.find((row) => row.officeId === "GG-ALD-STATES")?.nextCertainty).toBe("conditional");
+    expect(offices.find((row) => row.officeId === "GG-ALD-PLEB")?.nextCertainty).toBe("conditional");
+    const regional = listAtlasRegionalCalendar("alderney", sqlitePath);
+    expect(regional.offices).toEqual([]);
+    expect(regional.count).toBe(0);
+    expect(regional.label).toBe(
+      "No regional tier in this package; two territorial office/contest records classified other.",
+    );
     expect(regional.denominatorKnown).toBe(false);
   });
 });

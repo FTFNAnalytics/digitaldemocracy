@@ -72,7 +72,7 @@ export default async function AtlasCountryPage({ params, searchParams }: Props) 
         <h2 className="obs-heading text-2xl">Regional calendar</h2>
         <p className="mt-2 text-sm text-navy/70">
           Regional listings use stored approved tier=regional only. A zero numerator is not a
-          sourced denominator.
+          sourced denominator. Conditional other-tier dates are not counted as regional.
         </p>
         {regional.count === 0 ? (
           <div className="mt-4">
@@ -121,7 +121,7 @@ export default async function AtlasCountryPage({ params, searchParams }: Props) 
               office.officeType,
               office.officeStatus,
               office.nextLabel
-                ? `${formatAtlasDate(office)}${office.nextPrecision ? ` (${office.nextPrecision})` : ""}`
+                ? `${formatAtlasDate(office)}${office.nextPrecision ? ` (${office.nextPrecision}${office.nextCertainty ? `, ${office.nextCertainty}` : ""})` : ""}`
                 : "not supplied",
             ])}
           />

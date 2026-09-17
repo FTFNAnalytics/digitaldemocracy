@@ -1,6 +1,6 @@
 # Continuity import — approved packs
 
-Justin authorized full proceed on 2026-09-16. `npm run import:atlas` loads **Albania**, **Andorra**, and **approved** LatAm/NZ packs into the Atlas SQLite master. It does **not** import the remaining residual-heavy draft packs, deploy to the VPS, or declare cutover.
+Justin authorized full proceed on 2026-09-16. `npm run import:atlas` loads **Albania**, **Andorra**, **Alderney**, and **approved** LatAm/NZ packs into the Atlas SQLite master. It does **not** import the remaining residual-heavy draft packs, deploy to the VPS, or declare cutover.
 
 ## How to run
 
@@ -17,9 +17,10 @@ Scopes:
 
 | `ATLAS_IMPORT_SCOPE` | What loads |
 | --- | --- |
-| `all` (default) | Albania, Andorra, then approved LatAm, then New Zealand |
+| `all` (default) | Albania, Andorra, Alderney, then approved LatAm, then New Zealand |
 | `albania` | Frozen Albania package only |
 | `andorra` | Frozen Andorra package only (7 municipal / 0 regional) |
+| `alderney` | Frozen Alderney package only (2 other / 0 regional; conditional 2026 dates) |
 | `latam` | Approved Latin America packs + Mexico withhold-all-67 override |
 | `nz` | Approved New Zealand package |
 
@@ -35,6 +36,7 @@ Approved continuity countries (14 packs):
 - NZ: new-zealand
 - Albania remains the Phase 1 storage-proof lineage (`country-package-albania`)
 - Andorra is Europe #2 (`country-package-andorra`): 7 municipal communal councils, 0 regional. Run with `ATLAS_IMPORT_SCOPE=andorra`.
+- Alderney is Europe #3 (`country-package-alderney`; 2 other / 0 regional). Run with `ATLAS_IMPORT_SCOPE=alderney`.
 
 Mexico result rows that violate `percent_0_100` are **withheld** using the accepted override `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (share NULL / share_status unknown / evidence_status disputed). Original values stay in `raw_json`. Denominators are not invented.
 
@@ -50,12 +52,13 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 
 ## CI
 
-`tests/atlas/continuity-import.test.ts` covers the approved-pack gate, Albania-only import, and Albania+NZ serial publication.
+`tests/atlas/continuity-import.test.ts` covers the approved-pack gate, Albania-only import, Albania+NZ serial publication, Albania+Andorra serial publication, and Albania+Alderney serial publication.
 
 `npm run test:atlas-import` (wired in GitHub CI after `npm test`) builds a temp SQLite and asserts the full approved set:
 
 - Albania 122 offices / 0 regional
 - Andorra 7 municipal offices / 0 regional / 21 events / 53 results
+- Alderney 2 other offices / 0 regional / 2 conditional dates
 - 10,227 approved LatAm offices (Batch A+B + El Salvador + Argentina)
 - New Zealand 4 offices / 7 events / 36 historical results
 - draft country offices absent
@@ -63,9 +66,15 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 
 The full import is a dedicated CI script rather than a Vitest case so the ~3 minute LatAm projection does not trip Vitest's worker RPC timeout.
 
-The existing Albania CLI test uses `ATLAS_IMPORT_SCOPE=albania` so it stays a fast Albania-only proof. Andorra uses `ATLAS_IMPORT_SCOPE=andorra`.
+The existing Albania CLI test uses `ATLAS_IMPORT_SCOPE=albania` so it stays a fast Albania-only proof. Andorra uses `ATLAS_IMPORT_SCOPE=andorra`. Alderney uses `ATLAS_IMPORT_SCOPE=alderney`:
 
-Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of a few minutes (LatAm projection + ~146k result rows). Use `albania` or `nz` when you only need those lineages.
+```bash
+export ATLAS_SQLITE_PATH=/tmp/atlas.sqlite
+export ATLAS_ATTEMPTS_SQLITE_PATH=/tmp/atlas-attempts.sqlite
+ATLAS_IMPORT_SCOPE=alderney npm run import:atlas
+```
+
+Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of a few minutes (LatAm projection + ~146k result rows). Use `albania`, `andorra`, `alderney`, or `nz` when you only need those lineages.
 
 ## `/atlas` UI
 

@@ -336,6 +336,14 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "alderney") {
+    return {
+      offices,
+      count: offices.length,
+      label: "No regional tier in this package; two territorial office/contest records classified other.",
+      denominatorKnown: false,
+    };
+  }
   return {
     offices,
     count: offices.length,
