@@ -60,8 +60,8 @@ approved Batch A, Batch B, El Salvador, and Argentina on 2026-09-16**. The
 remaining 8 residual-heavy packs stay **`draft_for_human_review`**. Approved
 packs import via `npm run import:atlas`; residual-heavy drafts are skipped.
 Cutover remains blocked. Mexico share-domain withhold-all-67 is the live
-production override; Prompt M 95 sibling withholds are accepted pending land
-(PR #27).
+production override; Prompt M 95 sibling withholds are accepted (docs PR #27
+landed) and are not executable yet.
 
 Do not treat proposed-tier counts as approved coverage. Office IDs and proposed
 labels come from the Prompt E pack; they are not invented here. Albania,
