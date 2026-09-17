@@ -16,6 +16,13 @@ type Classification = {
   confidence: string;
   human_review_required?: boolean;
   human_review?: { queue?: string; prompt_token?: string };
+  tier_uncertain?: boolean;
+  boundary_calendar_review?: {
+    status?: string;
+    human_review_required?: boolean;
+    scope?: string;
+    prior_phase0_review?: { queue?: string; prompt_token?: string };
+  };
 };
 
 type TierFile = {
@@ -84,7 +91,7 @@ describe("Phase 0 tier-classification drafts", () => {
     }
     expect(albania.status).toBe("approved");
     expect(andorra.status).toBe("approved");
-    expect(armenia.status).toBe("draft_for_human_review");
+    expect(armenia.status).toBe("approved");
     expect(alderney.status).toBe("approved");
   });
 
@@ -177,20 +184,44 @@ describe("Phase 0 tier-classification drafts", () => {
     ]);
   });
 
-  it("keeps Armenia municipal while flagging boundary/calendar offices", () => {
+  it("keeps approved Armenia municipal with five open boundary/calendar reviews", () => {
+    const approved = armenia as TierFile & {
+      approval?: {
+        authority?: string;
+        date?: string;
+        scope?: string;
+        predecessor_sha256?: string;
+      };
+    };
+    expect(approved.status).toBe("approved");
+    expect(approved.approval).toMatchObject({
+      authority: "Explicit user authorization in Prompt L",
+      date: "2026-09-17",
+      predecessor_sha256: "9b100ffab2b9f878914721711d4878567868bd5ac923b294af02ef15bbfaefe5",
+    });
+    expect(approved.approval?.scope).toMatch(/71 municipal/i);
+    expect(approved.approval?.scope).toMatch(/0 regional/i);
+    expect(sha256("schemas/atlas/tiers/armenia.json")).toBe(
+      "2905af1a2a1465f32e457657f5a900c556757b7964f37c8c57adeb86d4a80b7a",
+    );
     const flagged = ["AM-ARARAT-C", "AM-MASIS-C", "AM-PAMBAK-C", "AM-VANADZOR-C", "AM-VEDI-C"];
     for (const row of armenia.classifications) {
       expect(row.tier).toBe("municipal");
       expect(row.schema_v1_tier).toBe("municipal");
+      expect(row.human_review_required).toBe(false);
+      expect(row.human_review).toBeUndefined();
+      expect(row.tier_uncertain).not.toBe(true);
       if (flagged.includes(row.office_id)) {
-        expect(row.human_review_required).toBe(true);
-        expect(row.human_review?.queue).toBe("boundary_calendar");
+        expect(row.boundary_calendar_review?.status).toBe("open");
+        expect(row.boundary_calendar_review?.human_review_required).toBe(true);
+        expect(row.boundary_calendar_review?.scope).toBe("research_boundary_and_calendar_only");
+        expect(row.boundary_calendar_review?.prior_phase0_review?.queue).toBe("boundary_calendar");
       } else {
-        expect(row.human_review_required).toBe(false);
+        expect(row.boundary_calendar_review).toBeUndefined();
       }
     }
     const vedi = armenia.classifications.find((row) => row.office_id === "AM-VEDI-C");
-    expect(vedi?.human_review?.prompt_token).toBe("AM-VEDI");
+    expect(vedi?.boundary_calendar_review?.prior_phase0_review?.prompt_token).toBe("AM-VEDI");
   });
 });
 

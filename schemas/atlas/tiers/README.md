@@ -9,14 +9,14 @@ Albania `Regional / municipal` are **not** classifiers.
 
 Files were rebuilt from each package’s office register (one row per `office_id`;
 no invented IDs). See [docs/phase0/REPORT.md](../../../docs/phase0/REPORT.md).
-Albania municipal and Alderney `other` are **`approved`**. Andorra is **`approved`** (Justin 2026-09-16; 7 communal councils). Armenia remains **`draft_for_human_review`**.
+Albania municipal and Alderney `other` are **`approved`**. Andorra is **`approved`** (Justin 2026-09-16; 7 communal councils). Armenia is **`approved`** (Prompt L 2026-09-17; 71 municipal / 0 regional). Five Armenia boundary/calendar research reviews remain open separately from geographic-tier approval.
 
 | File | Register rows | Proposed tier | Human review |
 | --- | ---: | --- | --- |
 | [`albania.json`](albania.json) | 122 | `municipal` (61 mayors + 61 councils) | **Approved** 2026-09-16 (Justin). Regional=0 is intentional. |
 | [`andorra.json`](andorra.json) | 7 | `municipal` (communal councils) | **Approved** 2026-09-16 (Justin). Empty regional-calendar demo |
 | [`alderney.json`](alderney.json) | 2 | `other` | **Approved** 2026-09-16 (product owner). Channel Islands are low priority for the broader Atlas. |
-| [`armenia.json`](armenia.json) | 71 | `municipal` (community offices) | Boundary/calendar flags; keep municipal |
+| [`armenia.json`](armenia.json) | 71 | `municipal` (community offices) | **Approved** 2026-09-17 (Prompt L). Geographic tiers only; 5 boundary/calendar reviews remain open |
 
 Vocabulary uses `national` as a proposed label. `schema_compatibility` maps
 `national` → schema v1 `national_context`.
@@ -26,9 +26,12 @@ Vocabulary uses `national` as a proposed label. `schema_compatibility` maps
 IDs. Product owner approved 2026-09-16; Channel Islands remain low priority
 for the broader Atlas.
 
-**Armenia** is last among early European targets. Proportional councils elect
-the mayor; missing mayor rows were not invented. Prompt token `AM-VEDI` is
-register `AM-VEDI-C`.
+**Armenia** is last among early European targets and is **approved** municipal
+(Prompt L, 2026-09-17; SHA-256
+`2905af1a2a1465f32e457657f5a900c556757b7964f37c8c57adeb86d4a80b7a`).
+Proportional councils elect the mayor; missing mayor rows were not invented.
+Prompt token `AM-VEDI` is register `AM-VEDI-C`. Five nested
+`boundary_calendar_review` records remain `open`.
 
 **Albania:** all 122 office-register rows are **approved** `municipal` (Justin,
 2026-09-16) for Phase 1 storage proof. Regional count is 0 by design. Do not
