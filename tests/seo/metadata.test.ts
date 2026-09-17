@@ -44,6 +44,7 @@ describe("seo helpers", () => {
     expect(STATIC_SITEMAP_PATHS).toContain("/");
     expect(STATIC_SITEMAP_PATHS).toContain("/electiondatabase");
     expect(STATIC_SITEMAP_PATHS).toContain("/atlas");
+    expect(STATIC_SITEMAP_PATHS).toContain("/atlas/explorer");
     expect(STATIC_SITEMAP_PATHS).toContain("/electiondatabase/explorer");
     expect(STATIC_SITEMAP_PATHS).toContain("/electiondatabase/calendar");
     expect(STATIC_SITEMAP_PATHS).toContain("/electiondatabase/methodology");

@@ -1,5 +1,7 @@
 import { existsSync } from "node:fs";
 import type { DatabaseSync } from "node:sqlite";
+import type { AtlasExplorerFilters } from "./filters";
+import { emptyAtlasExplorerFilters } from "./filters";
 import { resolveAtlasSqlitePath } from "./paths";
 import { openAtlasDatabase, tableExists } from "./sqlite";
 
@@ -60,6 +62,22 @@ export type AtlasOfficeRow = {
   nextCertainty: string | null;
 };
 
+export type AtlasOfficeDetail = AtlasOfficeRow & {
+  lineageId: string;
+  idNamespace: string;
+};
+
+export type AtlasExplorerOffice = AtlasOfficeRow & {
+  countryName: string;
+  regionId: string;
+};
+
+export type AtlasExplorerFacets = {
+  countries: Array<{ value: string; label: string }>;
+  regions: Array<{ value: string; label: string }>;
+  tiers: Array<{ value: string; label: string }>;
+};
+
 export type AtlasEventRow = {
   eventId: string;
   historyKey: string;
@@ -74,6 +92,36 @@ export type AtlasEventRow = {
   dateYear: number | null;
   resultCount: number;
 };
+
+export type AtlasEventDetail = AtlasEventRow & {
+  idNamespace: string;
+  countryId: string;
+  countryName: string | null;
+  officeName: string;
+  shareUnit: string;
+  comparability: string | null;
+  recordState: string;
+};
+
+export type AtlasProceedingRow = {
+  proceedingId: string;
+  kind: string;
+  sequenceNo: number | null;
+  supersedesId: string | null;
+  legalOutcome: string;
+};
+
+/**
+ * Bare public-ID lookup used by `/atlas/offices/:id` and `/atlas/elections/:id`.
+ *
+ * Prompt B uniqueness is `(id_namespace, office_id)` / `(id_namespace, event_id)`,
+ * not a global unique public ID. An ambiguous bare ID must not silently pick a
+ * namespace.
+ */
+export type AtlasPublicIdLookup<T> =
+  | { status: "found"; record: T }
+  | { status: "missing" }
+  | { status: "ambiguous"; namespaces: string[] };
 
 export type AtlasResultRow = {
   resultRowId: string;
@@ -122,10 +170,74 @@ function lineageRank(lineageId: string): number {
   return 2;
 }
 
+function includesInsensitive(haystack: string, needle: string): boolean {
+  return haystack.toLowerCase().includes(needle.toLowerCase());
+}
+
+const OFFICE_COLUMNS = `o.office_id, o.country_id, o.name, o.office_type, o.office_status, o.lineage_id, o.id_namespace,
+                  g.name AS geography_name, t.tier, t.review_status,
+                  d.label AS next_label, d.precision AS next_precision, d.certainty AS next_certainty`;
+
+const OFFICE_JOINS = `FROM office o
+           LEFT JOIN geography g ON g.country_id = o.country_id AND g.geography_id = o.geography_id
+           LEFT JOIN office_tier_classification t
+             ON t.id_namespace = o.id_namespace AND t.office_id = o.office_id
+           LEFT JOIN research_date d ON d.date_id = o.next_date_id`;
+
+const OFFICE_SELECT = `SELECT ${OFFICE_COLUMNS} ${OFFICE_JOINS}`;
+
+function mapOfficeRow(row: Record<string, unknown>): AtlasOfficeRow {
+  return {
+    officeId: text(row.office_id),
+    countryId: text(row.country_id),
+    name: text(row.name),
+    officeType: text(row.office_type),
+    officeStatus: text(row.office_status),
+    geographyName: textOrNull(row.geography_name),
+    tier: textOrNull(row.tier),
+    reviewStatus: textOrNull(row.review_status),
+    nextLabel: textOrNull(row.next_label),
+    nextPrecision: textOrNull(row.next_precision),
+    nextCertainty: textOrNull(row.next_certainty),
+  };
+}
+
+function mapOfficeDetail(row: Record<string, unknown>): AtlasOfficeDetail {
+  return {
+    ...mapOfficeRow(row),
+    lineageId: text(row.lineage_id),
+    idNamespace: text(row.id_namespace),
+  };
+}
+
+function mapEventRow(row: Record<string, unknown>): AtlasEventRow {
+  return {
+    eventId: text(row.event_id),
+    historyKey: text(row.history_key),
+    officeId: text(row.office_id),
+    eventKind: text(row.event_kind),
+    selectedHistoryRole: text(row.selected_history_role),
+    legalOutcome: text(row.legal_outcome),
+    electoralSystem: textOrNull(row.electoral_system),
+    ballotBasis: text(row.ballot_basis),
+    dateLabel: textOrNull(row.date_label),
+    datePrecision: textOrNull(row.date_precision),
+    dateYear: numOrNull(row.date_year),
+    resultCount: num(row.result_count),
+  };
+}
+
 export function formatAtlasTier(tier: string | null): string {
   if (tier == null || tier === "") return "unknown";
   if (tier === "national_context") return "national context";
   return tier.replaceAll("_", " ");
+}
+
+export function formatAtlasRegion(regionId: string): string {
+  if (regionId === "europe") return "Europe";
+  if (regionId === "americas") return "Americas";
+  if (regionId === "oceania") return "Oceania";
+  return regionId;
 }
 
 export function formatAtlasDate(row: {
@@ -373,31 +485,12 @@ export function listAtlasOffices(
       if (!tableExists(db, "office")) return [];
       return db
         .prepare(
-          `SELECT o.office_id, o.country_id, o.name, o.office_type, o.office_status,
-                  g.name AS geography_name, t.tier, t.review_status,
-                  d.label AS next_label, d.precision AS next_precision, d.certainty AS next_certainty
-           FROM office o
-           LEFT JOIN geography g ON g.country_id = o.country_id AND g.geography_id = o.geography_id
-           LEFT JOIN office_tier_classification t
-             ON t.id_namespace = o.id_namespace AND t.office_id = o.office_id
-           LEFT JOIN research_date d ON d.date_id = o.next_date_id
+          `${OFFICE_SELECT}
            WHERE o.country_id = ?
            ORDER BY o.name, o.office_id`,
         )
         .all(countryId)
-        .map((row) => ({
-          officeId: text(row.office_id),
-          countryId: text(row.country_id),
-          name: text(row.name),
-          officeType: text(row.office_type),
-          officeStatus: text(row.office_status),
-          geographyName: textOrNull(row.geography_name),
-          tier: textOrNull(row.tier),
-          reviewStatus: textOrNull(row.review_status),
-          nextLabel: textOrNull(row.next_label),
-          nextPrecision: textOrNull(row.next_precision),
-          nextCertainty: textOrNull(row.next_certainty),
-        }));
+        .map((row) => mapOfficeRow(row));
     });
   } catch {
     return [];
@@ -407,42 +500,31 @@ export function listAtlasOffices(
 export function getAtlasOffice(
   officeId: string,
   sqlitePath = resolveAtlasSqlitePath(),
-): (AtlasOfficeRow & { lineageId: string }) | null {
-  if (!existsSync(sqlitePath)) return null;
+): AtlasOfficeDetail | null {
+  const lookup = lookupAtlasOffice(officeId, sqlitePath);
+  return lookup.status === "found" ? lookup.record : null;
+}
+
+export function lookupAtlasOffice(
+  officeId: string,
+  sqlitePath = resolveAtlasSqlitePath(),
+): AtlasPublicIdLookup<AtlasOfficeDetail> {
+  if (!existsSync(sqlitePath)) return { status: "missing" };
   try {
     return withDatabase(sqlitePath, (db) => {
-      if (!tableExists(db, "office")) return null;
-      const row = db
-        .prepare(
-          `SELECT o.office_id, o.country_id, o.name, o.office_type, o.office_status, o.lineage_id,
-                  g.name AS geography_name, t.tier, t.review_status,
-                  d.label AS next_label, d.precision AS next_precision, d.certainty AS next_certainty
-           FROM office o
-           LEFT JOIN geography g ON g.country_id = o.country_id AND g.geography_id = o.geography_id
-           LEFT JOIN office_tier_classification t
-             ON t.id_namespace = o.id_namespace AND t.office_id = o.office_id
-           LEFT JOIN research_date d ON d.date_id = o.next_date_id
-           WHERE o.office_id = ?`,
-        )
-        .get(officeId);
-      if (!row) return null;
-      return {
-        officeId: text(row.office_id),
-        countryId: text(row.country_id),
-        name: text(row.name),
-        officeType: text(row.office_type),
-        officeStatus: text(row.office_status),
-        geographyName: textOrNull(row.geography_name),
-        tier: textOrNull(row.tier),
-        reviewStatus: textOrNull(row.review_status),
-        nextLabel: textOrNull(row.next_label),
-        nextPrecision: textOrNull(row.next_precision),
-        nextCertainty: textOrNull(row.next_certainty),
-        lineageId: text(row.lineage_id),
-      };
+      if (!tableExists(db, "office")) return { status: "missing" };
+      const rows = db.prepare(`${OFFICE_SELECT} WHERE o.office_id = ?`).all(officeId);
+      if (rows.length === 0) return { status: "missing" };
+      if (rows.length > 1) {
+        return {
+          status: "ambiguous",
+          namespaces: rows.map((row) => text(row.id_namespace)),
+        };
+      }
+      return { status: "found", record: mapOfficeDetail(rows[0]!) };
     });
   } catch {
-    return null;
+    return { status: "missing" };
   }
 }
 
@@ -468,20 +550,7 @@ export function listAtlasEvents(
                     d.year DESC, d.month DESC, d.day DESC, e.event_id`,
         )
         .all(officeId)
-        .map((row) => ({
-          eventId: text(row.event_id),
-          historyKey: text(row.history_key),
-          officeId: text(row.office_id),
-          eventKind: text(row.event_kind),
-          selectedHistoryRole: text(row.selected_history_role),
-          legalOutcome: text(row.legal_outcome),
-          electoralSystem: textOrNull(row.electoral_system),
-          ballotBasis: text(row.ballot_basis),
-          dateLabel: textOrNull(row.date_label),
-          datePrecision: textOrNull(row.date_precision),
-          dateYear: numOrNull(row.date_year),
-          resultCount: num(row.result_count),
-        }));
+        .map((row) => mapEventRow(row));
     });
   } catch {
     return [];
@@ -519,6 +588,180 @@ export function listAtlasResults(
           electedFlag: numOrNull(row.elected_flag),
           evidenceStatus: text(row.evidence_status),
         }));
+    });
+  } catch {
+    return [];
+  }
+}
+
+const EVENT_DETAIL_SELECT = `SELECT e.event_id, e.history_key, e.office_id, e.event_kind, e.selected_history_role,
+                  e.legal_outcome, e.electoral_system, e.ballot_basis, e.comparability, e.share_unit,
+                  e.record_state, e.id_namespace,
+                  d.label AS date_label, d.precision AS date_precision, d.year AS date_year,
+                  o.country_id, o.name AS office_name, c.name AS country_name,
+                  (SELECT COUNT(*) FROM result_row r
+                    WHERE r.id_namespace = e.id_namespace AND r.office_id = e.office_id AND r.history_key = e.history_key) AS result_count
+           FROM election_event e
+           LEFT JOIN research_date d ON d.date_id = e.date_id
+           LEFT JOIN office o ON o.id_namespace = e.id_namespace AND o.office_id = e.office_id
+           LEFT JOIN country c ON c.country_id = o.country_id`;
+
+function mapEventDetail(row: Record<string, unknown>): AtlasEventDetail {
+  return {
+    ...mapEventRow(row),
+    idNamespace: text(row.id_namespace),
+    countryId: text(row.country_id),
+    countryName: textOrNull(row.country_name),
+    officeName: text(row.office_name) || text(row.office_id),
+    shareUnit: text(row.share_unit),
+    comparability: textOrNull(row.comparability),
+    recordState: text(row.record_state),
+  };
+}
+
+export function getAtlasEvent(
+  eventId: string,
+  sqlitePath = resolveAtlasSqlitePath(),
+): AtlasEventDetail | null {
+  const lookup = lookupAtlasEvent(eventId, sqlitePath);
+  return lookup.status === "found" ? lookup.record : null;
+}
+
+export function lookupAtlasEvent(
+  eventId: string,
+  sqlitePath = resolveAtlasSqlitePath(),
+): AtlasPublicIdLookup<AtlasEventDetail> {
+  if (!existsSync(sqlitePath)) return { status: "missing" };
+  try {
+    return withDatabase(sqlitePath, (db) => {
+      if (!tableExists(db, "election_event")) return { status: "missing" };
+      const rows = db.prepare(`${EVENT_DETAIL_SELECT} WHERE e.event_id = ?`).all(eventId);
+      if (rows.length === 0) return { status: "missing" };
+      if (rows.length > 1) {
+        return {
+          status: "ambiguous",
+          namespaces: rows.map((row) => text(row.id_namespace)),
+        };
+      }
+      return { status: "found", record: mapEventDetail(rows[0]!) };
+    });
+  } catch {
+    return { status: "missing" };
+  }
+}
+
+export function listAtlasProceedings(
+  officeId: string,
+  historyKey: string,
+  sqlitePath = resolveAtlasSqlitePath(),
+): AtlasProceedingRow[] {
+  if (!existsSync(sqlitePath)) return [];
+  try {
+    return withDatabase(sqlitePath, (db) => {
+      if (!tableExists(db, "proceeding")) return [];
+      return db
+        .prepare(
+          `SELECT proceeding_id, kind, sequence_no, supersedes_id, legal_outcome
+           FROM proceeding
+           WHERE office_id = ? AND history_key = ?
+           ORDER BY sequence_no, proceeding_id`,
+        )
+        .all(officeId, historyKey)
+        .map((row) => ({
+          proceedingId: text(row.proceeding_id),
+          kind: text(row.kind),
+          sequenceNo: numOrNull(row.sequence_no),
+          supersedesId: textOrNull(row.supersedes_id),
+          legalOutcome: text(row.legal_outcome),
+        }));
+    });
+  } catch {
+    return [];
+  }
+}
+
+export function listAtlasExplorerFacets(
+  sqlitePath = resolveAtlasSqlitePath(),
+): AtlasExplorerFacets {
+  const catalog = loadAtlasCatalog(sqlitePath);
+  const countries = catalog.countries.map((country) => ({
+    value: country.countryId,
+    label: country.name,
+  }));
+  const regionIds = [...new Set(catalog.countries.map((country) => country.regionId))].sort(
+    (a, b) => regionRank(a) - regionRank(b) || a.localeCompare(b),
+  );
+  const regions = regionIds.map((regionId) => ({
+    value: regionId,
+    label: formatAtlasRegion(regionId),
+  }));
+
+  if (catalog.status !== "ready") {
+    return { countries, regions, tiers: [] };
+  }
+
+  try {
+    const tiers = withDatabase(sqlitePath, (db) => {
+      if (!tableExists(db, "office")) return [];
+      const found = new Set<string>();
+      for (const row of db.prepare(`SELECT DISTINCT t.tier ${OFFICE_JOINS}`).all()) {
+        found.add(textOrNull(row.tier) ?? "");
+      }
+      return [...found]
+        .sort((a, b) => a.localeCompare(b))
+        .map((tier) => ({
+          value: tier === "" ? "unknown" : tier,
+          label: formatAtlasTier(tier === "" ? null : tier),
+        }));
+    });
+    return { countries, regions, tiers };
+  } catch {
+    return { countries, regions, tiers: [] };
+  }
+}
+
+export function listAtlasExplorerOffices(
+  filters: AtlasExplorerFilters = emptyAtlasExplorerFilters(),
+  sqlitePath = resolveAtlasSqlitePath(),
+): AtlasExplorerOffice[] {
+  if (!existsSync(sqlitePath)) return [];
+  try {
+    return withDatabase(sqlitePath, (db) => {
+      if (!tableExists(db, "office")) return [];
+      const rows = db
+        .prepare(
+          `SELECT ${OFFICE_COLUMNS}, c.name AS country_name, c.region_id
+           ${OFFICE_JOINS}
+           JOIN country c ON c.country_id = o.country_id`,
+        )
+        .all()
+        .map((row) => ({
+          ...mapOfficeRow(row),
+          countryName: text(row.country_name),
+          regionId: text(row.region_id),
+        }));
+
+      return rows
+        .filter((office) => {
+          if (filters.country && office.countryId !== filters.country) return false;
+          if (filters.region && office.regionId !== filters.region) return false;
+          if (filters.tier) {
+            const tier = office.tier ?? "unknown";
+            if (tier !== filters.tier) return false;
+          }
+          if (filters.q) {
+            const blob = `${office.officeId} ${office.name} ${office.countryId} ${office.countryName} ${office.geographyName ?? ""}`;
+            if (!includesInsensitive(blob, filters.q)) return false;
+          }
+          return true;
+        })
+        .sort(
+          (a, b) =>
+            regionRank(a.regionId) - regionRank(b.regionId) ||
+            a.countryName.localeCompare(b.countryName) ||
+            a.name.localeCompare(b.name) ||
+            a.officeId.localeCompare(b.officeId),
+        );
     });
   } catch {
     return [];

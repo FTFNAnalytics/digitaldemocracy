@@ -81,6 +81,43 @@ Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of a fe
 
 ## `/atlas` UI
 
-The public MVP at `/atlas` reads the same SQLite file (`ATLAS_SQLITE_PATH`, else `data/master/atlas.sqlite` locally, `/var/lib/cdd/atlas.sqlite` in production). Missing or empty databases render an empty state. `/electiondatabase` is unchanged; it includes a soft link to `/atlas`.
+The public MVP at `/atlas` reads the same SQLite file (`ATLAS_SQLITE_PATH`, else `data/master/atlas.sqlite` locally, `/var/lib/cdd/atlas.sqlite` in production). Missing or empty databases render an empty state. `/electiondatabase` is unchanged; it includes a soft link to `/atlas`. **No `/electiondatabase` redirects** ship with this floor.
+
+Phase 2 floor surfaces (still not cutover):
+
+| Surface | Behaviour |
+| --- | --- |
+| `/atlas` | Europe-first index of loaded countries/offices |
+| `/atlas/explorer` | Search/filter offices (`q`, `country`, `tier`, `region`); filters and pagination persist in the URL |
+| `/atlas/countries/:id` | Country index + regional calendar empty state |
+| `/atlas/offices/:id` | Soft compatibility: observatory public office IDs resolve when present as `office.office_id` |
+| `/atlas/elections/:id` | Soft compatibility: observatory public event IDs resolve when present as `election_event.event_id` |
+
+Prompt B uniqueness is `(id_namespace, office_id)` and `(id_namespace, event_id)`, not a global public ID. A bare observatory ID that matches more than one namespace is **not** silently resolved.
+
+**Original briefing parity is schema-blocked.** `retained_input` stores path + SHA-256, not HTML. There is no briefing-body table, so `/atlas/offices/:id/original` is not served from SQLite. Do not mix gzip/package HTML with Atlas SQLite reads for the same records. Observatory original briefings stay at `/electiondatabase/offices/:id/original`.
 
 `npm run dev` / `build` / `start` pass `--experimental-sqlite` so Next can read `node:sqlite`.
+
+### Verify a local SQLite-backed `/atlas` explorer
+
+Loaded database:
+
+```bash
+export ATLAS_SQLITE_PATH=/tmp/atlas.sqlite
+export ATLAS_ATTEMPTS_SQLITE_PATH=/tmp/atlas-attempts.sqlite
+npm run import:atlas          # or ATLAS_IMPORT_SCOPE=nz for a fast smoke
+npm run dev                   # Next reads ATLAS_SQLITE_PATH
+```
+
+Open `/atlas`, `/atlas/explorer`, `/atlas/offices/NZ-BULLER-WESTPORT-2026`, and `/atlas/elections/next-154f7bfa6ea99d09c5a47d7c`. `/electiondatabase` must still render.
+
+Missing database (explorer EmptyState):
+
+```bash
+export ATLAS_SQLITE_PATH=/tmp/atlas-missing.sqlite
+export ATLAS_ATTEMPTS_SQLITE_PATH=/tmp/atlas-attempts.sqlite
+npm run dev
+```
+
+`/atlas/explorer` should show EmptyState with the resolved `ATLAS_SQLITE_PATH`. Do not point these env vars at `/var/lib/cdd/atlas.sqlite` unless you mean to read production.
