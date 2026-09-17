@@ -390,11 +390,15 @@ export function assertArmeniaFidelity(db: DatabaseSync, projection?: ArmeniaProj
     const unresolved = countRows(db, "unresolved_evidence", "lineage_id = ?", [ARMENIA_LINEAGE]);
     if (unresolved !== 0) throw new Error(`Frozen baseline unresolved_evidence ${unresolved}`);
     const controlInput = db
-      .prepare("SELECT 1 AS ok FROM retained_input WHERE input_path LIKE '%/tables/governing-control.json'")
-      .get();
+      .prepare(
+        "SELECT 1 AS ok FROM retained_input WHERE lineage_id = ? AND input_path = 'data/countries/armenia/unpacked/tables/governing-control.json'",
+      )
+      .get(ARMENIA_LINEAGE);
     const pollInput = db
-      .prepare("SELECT 1 AS ok FROM retained_input WHERE input_path LIKE '%/tables/polling-evidence.json'")
-      .get();
+      .prepare(
+        "SELECT 1 AS ok FROM retained_input WHERE lineage_id = ? AND input_path = 'data/countries/armenia/unpacked/tables/polling-evidence.json'",
+      )
+      .get(ARMENIA_LINEAGE);
     if (controlInput || pollInput) {
       throw new Error("Absent optional observation tables must not be fabricated");
     }
