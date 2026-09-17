@@ -29,6 +29,16 @@ export function classifyCountryPackage(
   const manifest = readJson(path.join(dir, "manifest.json"));
   const dataset = readJson(path.join(dir, "dataset.json"));
 
+  if (slug === "bosnia-and-herzegovina") {
+    return {
+      slug,
+      dir,
+      kind: "unknown",
+      reason:
+        "Bosnia gzip packed payload has no observatory adapter yet; the Atlas importer is not implemented in this change.",
+    };
+  }
+
   if (dataset?.schema_version === "nz-research-batch/1") {
     return {
       slug,

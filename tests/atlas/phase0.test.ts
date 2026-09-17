@@ -99,6 +99,42 @@ print(json.dumps({
   };
 }
 
+function bosniaRegisterIds(): { ids: string[]; registerSha256: string; payloadSha256: string } {
+  const script = `
+import gzip, hashlib, io, json, tarfile, sys
+from pathlib import Path
+root = Path(sys.argv[1])
+manifest = json.loads((root / "manifest.json").read_text())
+raw = b"".join((root / name).read_bytes() for name in manifest["chunks"])
+payload_sha256 = hashlib.sha256(raw).hexdigest()
+assert payload_sha256 == manifest["payload_sha256"]
+with tarfile.open(fileobj=io.BytesIO(gzip.decompress(raw)), mode="r:") as tar:
+    member = tar.extractfile("tables/master/office-register.json")
+    assert member is not None
+    data = member.read()
+table = json.loads(data)
+office_col = table["columns"].index("Office ID")
+ids = [row[office_col] for row in table["rows"]]
+print(json.dumps({
+    "ids": ids,
+    "registerSha256": hashlib.sha256(data).hexdigest(),
+    "payloadSha256": payload_sha256,
+}))
+`;
+  const result = spawnSync(
+    "python3",
+    ["-c", script, path.join(repoRoot, "data/countries/bosnia-and-herzegovina")],
+    { encoding: "utf8", maxBuffer: 32 * 1024 * 1024 },
+  );
+  expect(result.status).toBe(0);
+  expect(result.stderr).toBe("");
+  return JSON.parse(result.stdout) as {
+    ids: string[];
+    registerSha256: string;
+    payloadSha256: string;
+  };
+}
+
 function expectExactIds(file: TierFile, expected: string[]) {
   const got = file.classifications.map((row) => row.office_id);
   expect(got).toEqual(expected);
@@ -344,6 +380,7 @@ describe("Phase 0 tier-classification drafts", () => {
         };
         predecessor_draft_sha256?: string;
         notes?: Array<{ scope?: string; status?: string; office_ids?: string[] }>;
+        source_register: { path: string; sha256: string; payload_sha256?: string };
       }
     >("schemas/atlas/tiers/bosnia-and-herzegovina.json");
     expect(bosnia.status).toBe("approved");
@@ -427,6 +464,13 @@ describe("Phase 0 tier-classification drafts", () => {
     });
     expect(bosnia.source_register.sha256).toBe(
       "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+    );
+    const packed = bosniaRegisterIds();
+    expectExactIds(bosnia, packed.ids);
+    expect(bosnia.source_register.sha256).toBe(packed.registerSha256);
+    expect(bosnia.source_register.payload_sha256).toBe(packed.payloadSha256);
+    expect(packed.payloadSha256).toBe(
+      "5fb08d2c43f2fff0526c7aa3e95bbd00186aa6a401f409346dd3dbd11ce09c89",
     );
   });
 });

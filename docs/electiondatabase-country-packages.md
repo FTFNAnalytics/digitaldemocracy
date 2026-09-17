@@ -23,6 +23,7 @@ The frozen extracts keep `site_ingestion_status: pending_adapter` so their bytes
 | `europe-country-extract/1` | Albania, Alderney, Andorra | `manifest.json` + `tables/*.json` + `briefings/*.html` | `lib/observatory/adapters/europe.ts` |
 | `armenia-packed-europe/1` | Armenia | split `payload/data.tar.gz.part*` | unpack, then master office register + companion histories/returns |
 | *(none yet)* | Austria | split `payload/data.tar.xz.part*` | **Present on disk** (PR #11). Observatory adapter and Atlas importer are **not** in this change; the folder is skipped until those land. |
+| *(none yet)* | Bosnia and Herzegovina | split `payload/data.tar.gz.part*` | **Present on disk** (PR #15). Same gzip packing as Armenia, but no observatory adapter or Atlas importer in this change; the folder is skipped so the Armenia loader cannot mis-ingest it. |
 | `nz-research-batch/1` | New Zealand | `dataset.json` | `lib/observatory/adapters/new-zealand.ts` |
 
 Unknown folders are listed as skipped. The loader will not invent a country from a bare directory.
@@ -72,7 +73,7 @@ Concatenate `manifest.chunks` in listed order, verify `payload_sha256`, gunzip, 
 After merge:
 
 - **South / Central / North America and Caribbean** — unchanged Latin America status (partial / screened as already imported). South America remains the default landing region.
-- **Europe (Russia excluded)** — `partial` because Albania, Alderney, Andorra and Armenia packages are adapted. Austria is on disk (`data/countries/austria`) but has no observatory adapter yet. Not a complete European register.
+- **Europe (Russia excluded)** — `partial` because Albania, Alderney, Andorra and Armenia packages are adapted. Austria is on disk (`data/countries/austria`) but has no observatory adapter yet. Bosnia and Herzegovina is on disk (`data/countries/bosnia-and-herzegovina`, PR #15) but is skipped until an adapter/importer lands. Not a complete European register.
 - **Oceania** — replaces the empty `new-zealand` placeholder when the NZ package is present. Partial: four by-elections only.
 - **Australia, Japan** — still **not yet supplied**.
 
