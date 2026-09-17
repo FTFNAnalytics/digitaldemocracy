@@ -8,7 +8,7 @@ import { importArmenia } from "../../lib/atlas/armenia/import";
 import { importNewZealand } from "../../lib/atlas/continuity/nz";
 import { migrateMasterDatabase } from "../../lib/atlas/apply-migrations";
 import { loadAtlasCatalog, getAtlasCountry, listAtlasOffices, listAtlasRegionalCalendar, listAtlasExplorerOffices, lookupAtlasEvent, lookupAtlasOffice } from "../../lib/atlas/read";
-import { parseAtlasExplorerFilters, serializeAtlasExplorerFilters } from "../../lib/atlas/filters";
+import { parseAtlasExplorerFilters, serializeAtlasExplorerFilters, emptyAtlasExplorerFilters } from "../../lib/atlas/filters";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
 
@@ -78,7 +78,7 @@ describe("Atlas SQLite UI catalog", () => {
     expect(lookupAtlasEvent("missing-event-id", sqlitePath)).toEqual({ status: "missing" });
     expect(lookupAtlasOffice("missing-office-id", sqlitePath)).toEqual({ status: "missing" });
 
-    const explorer = listAtlasExplorerOffices({}, sqlitePath);
+    const explorer = listAtlasExplorerOffices(emptyAtlasExplorerFilters(), sqlitePath);
     expect(explorer).toHaveLength(4);
     expect(explorer.every((row) => row.regionId === "oceania")).toBe(true);
     expect(listAtlasExplorerOffices({ q: "westport", country: "", tier: "", region: "" }, sqlitePath).map((row) => row.officeId)).toEqual([
