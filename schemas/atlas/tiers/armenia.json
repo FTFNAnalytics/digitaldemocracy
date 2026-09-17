@@ -1,5 +1,5 @@
 {
-  "status": "draft_for_human_review",
+  "status": "approved",
   "country_slug": "armenia",
   "prompt": "phase0_prompt_a",
   "source_register": {
@@ -33,7 +33,11 @@
   "notes": [
     "Armenia is last among early European targets.",
     "Companion histories overlap the regional history index; do not add those datasets.",
-    "Regional numerator for this package is 0."
+    "Regional numerator for this package is 0.",
+    "Prompt L approves geographic tiers only. Row-level human_review_required and tier_uncertain refer to tier review; separately scoped boundary_calendar_review remains open for five offices.",
+    "The register includes 55 proportional councils, 8 majoritarian councils and 8 existing mayor offices; all 71 IDs are preserved. No additional mayor offices are created.",
+    "Legacy council vocabulary metadata is unused. council is not a schema-v1 geographic tier; only municipal values occur here.",
+    "The prior Phase 0 prompt token without the Vedi council suffix is historical review text, not an office ID or a crosswalk alias."
   ],
   "counts_by_proposed_tier": {
     "national": 0,
@@ -139,13 +143,54 @@
       "schema_v1_tier": "municipal",
       "jurisdiction": "Ararat",
       "office": "Municipal council (proportional; mayor elected by council)",
-      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council. Prompt L approves the municipal geographic tier only; boundary/calendar questions remain open in boundary_calendar_review and do not authorize new offices, a merger, or a postponement.",
       "confidence": "high",
-      "human_review_required": true,
-      "human_review": {
-        "queue": "boundary_calendar",
-        "prompt_token": "AM-ARARAT-C",
-        "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (1 of three cycles). Keep municipal. Do not invent a mayor office_id — proportional councils elect the mayor."
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "boundary_calendar_review": {
+        "status": "open",
+        "human_review_required": true,
+        "scope": "research_boundary_and_calendar_only",
+        "notes": "2026 cohort. Exact community polling day remains to be confirmed. The public elects the council; there is no separate direct mayoral ballot. Municipal mergers and the switch from majoritarian to proportional voting prevent automatic comparisons with predecessor towns. A further merger proposal requires monitoring before the ballot roster is final. ",
+        "calendar_source": "https://www.decentralization.am/en/news/single/327",
+        "next_polling_date": null,
+        "evidence": [
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/master/office-register.json",
+            "archive_entry": "tables/master/office-register.json",
+            "sha256": "23588bdc55fc7a6dff8cf322adedd9df085088f12fb018401dda6df5f1ae759d",
+            "json_pointer": "/rows/9/3",
+            "sheet": "Office register",
+            "source_row": 142,
+            "column": "Office",
+            "html_anchor_index": null
+          },
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/companion/jurisdictions.json",
+            "archive_entry": "tables/companion/jurisdictions.json",
+            "sha256": "ac67a83d49336bd08b8b89c8db4598c2ac5a9065925fdfc1cfb6df93605f86be",
+            "json_pointer": "/rows/13/20",
+            "sheet": "Jurisdictions",
+            "source_row": 15,
+            "column": "Notes",
+            "html_anchor_index": null
+          },
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/companion/jurisdictions.json",
+            "archive_entry": "tables/companion/jurisdictions.json",
+            "sha256": "ac67a83d49336bd08b8b89c8db4598c2ac5a9065925fdfc1cfb6df93605f86be",
+            "json_pointer": "/rows/13/22",
+            "sheet": "Jurisdictions",
+            "source_row": 15,
+            "column": "Calendar source",
+            "html_anchor_index": null
+          }
+        ],
+        "prior_phase0_review": {
+          "queue": "boundary_calendar",
+          "prompt_token": "AM-ARARAT-C",
+          "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (1 of three cycles). Keep municipal. Do not invent a mayor office_id — proportional councils elect the mayor."
+        }
       }
     },
     {
@@ -494,13 +539,54 @@
       "schema_v1_tier": "municipal",
       "jurisdiction": "Masis",
       "office": "Municipal council (proportional; mayor elected by council)",
-      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council. Prompt L approves the municipal geographic tier only; boundary/calendar questions remain open in boundary_calendar_review and do not authorize new offices, a merger, or a postponement.",
       "confidence": "high",
-      "human_review_required": true,
-      "human_review": {
-        "queue": "boundary_calendar",
-        "prompt_token": "AM-MASIS-C",
-        "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (1 of three cycles). Keep municipal. Do not invent a mayor office_id."
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "boundary_calendar_review": {
+        "status": "open",
+        "human_review_required": true,
+        "scope": "research_boundary_and_calendar_only",
+        "notes": "2026 cohort. Exact community polling day remains to be confirmed. The public elects the council; there is no separate direct mayoral ballot. Municipal mergers and the switch from majoritarian to proportional voting prevent automatic comparisons with predecessor towns. September 2026 reports of a proposed delay require enacted-law verification; no postponement is assumed. The latest reported top-two list margin is at most 10 points: competitive coalition formation watch; three-cycle index withheld. ",
+        "calendar_source": "https://www.decentralization.am/en/news/single/327",
+        "next_polling_date": null,
+        "evidence": [
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/master/office-register.json",
+            "archive_entry": "tables/master/office-register.json",
+            "sha256": "23588bdc55fc7a6dff8cf322adedd9df085088f12fb018401dda6df5f1ae759d",
+            "json_pointer": "/rows/44/3",
+            "sheet": "Office register",
+            "source_row": 177,
+            "column": "Office",
+            "html_anchor_index": null
+          },
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/companion/jurisdictions.json",
+            "archive_entry": "tables/companion/jurisdictions.json",
+            "sha256": "ac67a83d49336bd08b8b89c8db4598c2ac5a9065925fdfc1cfb6df93605f86be",
+            "json_pointer": "/rows/14/20",
+            "sheet": "Jurisdictions",
+            "source_row": 16,
+            "column": "Notes",
+            "html_anchor_index": null
+          },
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/companion/jurisdictions.json",
+            "archive_entry": "tables/companion/jurisdictions.json",
+            "sha256": "ac67a83d49336bd08b8b89c8db4598c2ac5a9065925fdfc1cfb6df93605f86be",
+            "json_pointer": "/rows/14/22",
+            "sheet": "Jurisdictions",
+            "source_row": 16,
+            "column": "Calendar source",
+            "html_anchor_index": null
+          }
+        ],
+        "prior_phase0_review": {
+          "queue": "boundary_calendar",
+          "prompt_token": "AM-MASIS-C",
+          "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (1 of three cycles). Keep municipal. Do not invent a mayor office_id."
+        }
       }
     },
     {
@@ -579,13 +665,54 @@
       "schema_v1_tier": "municipal",
       "jurisdiction": "Pambak",
       "office": "Municipal council (proportional; mayor elected by council)",
-      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council. Prompt L approves the municipal geographic tier only; boundary/calendar questions remain open in boundary_calendar_review and do not authorize new offices, a merger, or a postponement.",
       "confidence": "high",
-      "human_review_required": true,
-      "human_review": {
-        "queue": "boundary_calendar",
-        "prompt_token": "AM-PAMBAK-C",
-        "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (0 of three cycles). Keep municipal. Do not invent a mayor office_id."
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "boundary_calendar_review": {
+        "status": "open",
+        "human_review_required": true,
+        "scope": "research_boundary_and_calendar_only",
+        "notes": "2026 cohort. Exact community polling day remains to be confirmed. The public elects the council; there is no separate direct mayoral ballot. Municipal mergers and the switch from majoritarian to proportional voting prevent automatic comparisons with predecessor towns. A further merger proposal requires monitoring before the ballot roster is final. ",
+        "calendar_source": "https://www.decentralization.am/en/news/single/327",
+        "next_polling_date": null,
+        "evidence": [
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/master/office-register.json",
+            "archive_entry": "tables/master/office-register.json",
+            "sha256": "23588bdc55fc7a6dff8cf322adedd9df085088f12fb018401dda6df5f1ae759d",
+            "json_pointer": "/rows/52/3",
+            "sheet": "Office register",
+            "source_row": 185,
+            "column": "Office",
+            "html_anchor_index": null
+          },
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/companion/jurisdictions.json",
+            "archive_entry": "tables/companion/jurisdictions.json",
+            "sha256": "ac67a83d49336bd08b8b89c8db4598c2ac5a9065925fdfc1cfb6df93605f86be",
+            "json_pointer": "/rows/31/20",
+            "sheet": "Jurisdictions",
+            "source_row": 33,
+            "column": "Notes",
+            "html_anchor_index": null
+          },
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/companion/jurisdictions.json",
+            "archive_entry": "tables/companion/jurisdictions.json",
+            "sha256": "ac67a83d49336bd08b8b89c8db4598c2ac5a9065925fdfc1cfb6df93605f86be",
+            "json_pointer": "/rows/31/22",
+            "sheet": "Jurisdictions",
+            "source_row": 33,
+            "column": "Calendar source",
+            "html_anchor_index": null
+          }
+        ],
+        "prior_phase0_review": {
+          "queue": "boundary_calendar",
+          "prompt_token": "AM-PAMBAK-C",
+          "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (0 of three cycles). Keep municipal. Do not invent a mayor office_id."
+        }
       }
     },
     {
@@ -714,13 +841,54 @@
       "schema_v1_tier": "municipal",
       "jurisdiction": "Vanadzor",
       "office": "Municipal council (proportional; mayor elected by council)",
-      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council. Prompt L approves the municipal geographic tier only; boundary/calendar questions remain open in boundary_calendar_review and do not authorize new offices, a merger, or a postponement.",
       "confidence": "high",
-      "human_review_required": true,
-      "human_review": {
-        "queue": "boundary_calendar",
-        "prompt_token": "AM-VANADZOR-C",
-        "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (1 of three cycles). Keep municipal. Do not invent a mayor office_id."
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "boundary_calendar_review": {
+        "status": "open",
+        "human_review_required": true,
+        "scope": "research_boundary_and_calendar_only",
+        "notes": "2026 cohort. Exact community polling day remains to be confirmed. The public elects the council; there is no separate direct mayoral ballot. Municipal mergers and the switch from majoritarian to proportional voting prevent automatic comparisons with predecessor towns. September 2026 reports of a proposed delay require enacted-law verification; no postponement is assumed. A further merger proposal requires monitoring before the ballot roster is final. ",
+        "calendar_source": "https://www.decentralization.am/en/news/single/327",
+        "next_polling_date": null,
+        "evidence": [
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/master/office-register.json",
+            "archive_entry": "tables/master/office-register.json",
+            "sha256": "23588bdc55fc7a6dff8cf322adedd9df085088f12fb018401dda6df5f1ae759d",
+            "json_pointer": "/rows/65/3",
+            "sheet": "Office register",
+            "source_row": 198,
+            "column": "Office",
+            "html_anchor_index": null
+          },
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/companion/jurisdictions.json",
+            "archive_entry": "tables/companion/jurisdictions.json",
+            "sha256": "ac67a83d49336bd08b8b89c8db4598c2ac5a9065925fdfc1cfb6df93605f86be",
+            "json_pointer": "/rows/27/20",
+            "sheet": "Jurisdictions",
+            "source_row": 29,
+            "column": "Notes",
+            "html_anchor_index": null
+          },
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/companion/jurisdictions.json",
+            "archive_entry": "tables/companion/jurisdictions.json",
+            "sha256": "ac67a83d49336bd08b8b89c8db4598c2ac5a9065925fdfc1cfb6df93605f86be",
+            "json_pointer": "/rows/27/22",
+            "sheet": "Jurisdictions",
+            "source_row": 29,
+            "column": "Calendar source",
+            "html_anchor_index": null
+          }
+        ],
+        "prior_phase0_review": {
+          "queue": "boundary_calendar",
+          "prompt_token": "AM-VANADZOR-C",
+          "notes": "Boundary/calendar review: next polling date is uncollected; historical coverage is PARTIAL (1 of three cycles). Keep municipal. Do not invent a mayor office_id."
+        }
       }
     },
     {
@@ -749,13 +917,54 @@
       "schema_v1_tier": "municipal",
       "jurisdiction": "Vedi",
       "office": "Municipal council (proportional; mayor elected by council)",
-      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council.",
+      "rationale": "Sourced community office is a proportional municipal council that elects the mayor. Accepted Phase 0 Prompt A classifies all Armenia community offices as municipal. Do not invent a missing mayor office_id for this council. Prompt L approves the municipal geographic tier only; boundary/calendar questions remain open in boundary_calendar_review and do not authorize new offices, a merger, or a postponement.",
       "confidence": "high",
-      "human_review_required": true,
-      "human_review": {
-        "queue": "boundary_calendar",
-        "prompt_token": "AM-VEDI",
-        "notes": "Prompt A listed AM-VEDI; the office register contains AM-VEDI-C only — do not invent AM-VEDI. Calendar cohort C118 notes Vedi (and Talin) also held a separate 2021 poll; 2027 dates and boundaries remain pending. Keep municipal."
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "boundary_calendar_review": {
+        "status": "open",
+        "human_review_required": true,
+        "scope": "research_boundary_and_calendar_only",
+        "notes": "2027 cohort. Exact community polling day remains to be confirmed. The public elects the council; there is no separate direct mayoral ballot. Municipal mergers and the switch from majoritarian to proportional voting prevent automatic comparisons with predecessor towns. A further merger proposal requires monitoring before the ballot roster is final. The March 2022 replacement election follows a December 2021 council poll; both are actual separate elections. The latest reported top-two list margin is at most 10 points: competitive coalition formation watch; three-cycle index withheld. The consolidated municipality began in 2021; 2016 town council (5 RPA, 1 PAP, 5 independent councillors) is predecessor context on narrower boundaries and is not inserted as a third comparable cycle. ",
+        "calendar_source": "https://radar.am/hy/news/social-2522386319/",
+        "next_polling_date": null,
+        "evidence": [
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/master/office-register.json",
+            "archive_entry": "tables/master/office-register.json",
+            "sha256": "23588bdc55fc7a6dff8cf322adedd9df085088f12fb018401dda6df5f1ae759d",
+            "json_pointer": "/rows/68/3",
+            "sheet": "Office register",
+            "source_row": 201,
+            "column": "Office",
+            "html_anchor_index": null
+          },
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/companion/jurisdictions.json",
+            "archive_entry": "tables/companion/jurisdictions.json",
+            "sha256": "ac67a83d49336bd08b8b89c8db4598c2ac5a9065925fdfc1cfb6df93605f86be",
+            "json_pointer": "/rows/15/20",
+            "sheet": "Jurisdictions",
+            "source_row": 17,
+            "column": "Notes",
+            "html_anchor_index": null
+          },
+          {
+            "input_path": "data/countries/armenia/unpacked/tables/companion/jurisdictions.json",
+            "archive_entry": "tables/companion/jurisdictions.json",
+            "sha256": "ac67a83d49336bd08b8b89c8db4598c2ac5a9065925fdfc1cfb6df93605f86be",
+            "json_pointer": "/rows/15/22",
+            "sheet": "Jurisdictions",
+            "source_row": 17,
+            "column": "Calendar source",
+            "html_anchor_index": null
+          }
+        ],
+        "prior_phase0_review": {
+          "queue": "boundary_calendar",
+          "prompt_token": "AM-VEDI",
+          "notes": "Prompt A listed AM-VEDI; the office register contains AM-VEDI-C only — do not invent AM-VEDI. Calendar cohort C118 notes Vedi (and Talin) also held a separate 2021 poll; 2027 dates and boundaries remain pending. Keep municipal."
+        }
       }
     },
     {
@@ -778,5 +987,12 @@
       "confidence": "high",
       "human_review_required": false
     }
-  ]
+  ],
+  "approval": {
+    "authority": "Explicit user authorization in Prompt L",
+    "date": "2026-09-17",
+    "scope": "Geographic tiers only: 71 municipal, 0 regional. Five boundary/calendar research reviews retained open.",
+    "predecessor_sha256": "9b100ffab2b9f878914721711d4878567868bd5ac923b294af02ef15bbfaefe5",
+    "pinned_main_commit": "7af805b5dbb123c4cd3f0e6ccd2ea63bc5f34d45"
+  }
 }
