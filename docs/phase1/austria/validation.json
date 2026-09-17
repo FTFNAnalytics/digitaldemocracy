@@ -1,0 +1,487 @@
+{
+  "status": "documentation_and_tier_draft_checks_passed",
+  "pinned_main_commit": "6e6426fe17f6f542b58b68f8607124e007b852ff",
+  "pinned_package_commit": "6b38848d76a815f7dd0bcae3d49a25e6dca9e1af",
+  "package_pr": 11,
+  "tier_status": "draft_for_human_review",
+  "tier_sha256": "9181e0af7f9dd0e3b2a92520de1cb990901c08b6f68afd165608eaf66282283d",
+  "verified_counts": {
+    "current_offices": 2038,
+    "municipal_offices_proposed": 2034,
+    "regional_offices_proposed": 4,
+    "approved_austria_classifications": 0,
+    "focused_tier_reviews": 4,
+    "geographies": 2038,
+    "mayor_offices": 1017,
+    "municipal_council_offices": 1017,
+    "companion_offices": 2034,
+    "companion_histories": 5944,
+    "index_histories": 5956,
+    "overlap_histories": 5944,
+    "index_only_histories": 12,
+    "total_events": 5956,
+    "prospective_events": 0,
+    "unknown_next_dates": 2038,
+    "historical_dates_day": 58,
+    "historical_dates_year": 5898,
+    "calendar_cohorts": 8,
+    "calendar_nonnull_dates": 0,
+    "result_rows": 16336,
+    "master_catalogue_rows": 71,
+    "companion_catalogue_rows": 86,
+    "overlapping_catalogue_ids": 64,
+    "distinct_catalogue_sources": 93,
+    "inline_only_sources": 4,
+    "sources": 97,
+    "office_briefings": 2038,
+    "country_briefings": 1,
+    "poll_records_retained": 1,
+    "control_observations_supplied": 0,
+    "proceedings": 0,
+    "party_mappings": 0,
+    "outer_package_files": 25,
+    "payload_member_files": 2058,
+    "retained_inputs": 2084
+  },
+  "applied_changes": 0,
+  "repository_files_changed": 0,
+  "frozen_research_changes": 0,
+  "other_country_or_continuity_or_Mexico_changes": 0,
+  "DDL_changes": 0,
+  "importer_code_written": false,
+  "SQLite_rows_loaded": 0,
+  "importer_publication_CI": "Not run",
+  "application_test_lint_build": "Not run",
+  "VPS_work": "Not run",
+  "UI_work": "Not run",
+  "destination_columns": 223,
+  "destination_tables": 20,
+  "source_tables": 15,
+  "worked_examples": 17,
+  "locators_checked": 44650,
+  "source_package_validator": {
+    "command": "python data/countries/austria/validate.py",
+    "cwd": "isolated immutable PR package materialization",
+    "exit_code": 0,
+    "stdout": "PASS: Austria: 2038 offices, 5956 history entries, 2058 verified payload files"
+  },
+  "recovery_note": "19 binary chunks were regenerated from the checksum-verified original shared ZIP using frozen extract.py in a separate scratch copy, then matched to PR blob SHA and manifest SHA256 before copying into immutable materialization.",
+  "protected_bytes_scope": "All materialized main contracts and PR package files reverified against immutable git blobs. Existing repository clean; no remote writes. Other-country and Mexico files were not opened for mutation.",
+  "protected_pinned_files": [
+    {
+      "path": "docs/atlas-plan.md",
+      "sha256": "b8b953b8ce3649e4153fc6e460a391b4c40c7d8954c934f95133599c62001195",
+      "git_blob_sha": "f42209188911e4dac1c5ac2197f9fd0a1c346fbc"
+    },
+    {
+      "path": "data/countries/austria/manifest.json",
+      "sha256": "5ef4dc399994624994d9809801a1c3c48482f591586a5bfef026f7aa92c719d8",
+      "git_blob_sha": "546f9de2bec761a5794c3c401c2145c6326c8fdd"
+    },
+    {
+      "path": "data/countries/austria/README.md",
+      "sha256": "ee184b2fc28dd858576c8663963182e106414c6e92c5cb08c3647686aca1df81",
+      "git_blob_sha": "0e7fb576fdc1d71c90f000c51ac8a3eb4dfd0d6a"
+    },
+    {
+      "path": "data/countries/austria/coverage.json",
+      "sha256": "04de40b0b52fd3c2905aa2e52f78c094473a92df031a34e30e987743e3422e81",
+      "git_blob_sha": "999e09b91495ff053195fa6b7dfcccd454e04246"
+    },
+    {
+      "path": "data/countries/austria/extract.py",
+      "sha256": "af18bdb75b378b78803723fccc1f9d333b4909952d4a15d682a43bad8784fe25",
+      "git_blob_sha": "ba9973afc151c54bc5df20817d5edbabd3f1d06e"
+    },
+    {
+      "path": "data/countries/austria/validate.py",
+      "sha256": "3101dc95312dd3e926ba2d02aee4d1563828ee2649ba2a2c123b7a35d5e20c5e",
+      "git_blob_sha": "b218e285ffb19a51220af27c44b4527350fa9c6d"
+    },
+    {
+      "path": "data/countries/austria/.gitattributes",
+      "sha256": "8ff6b62cc6e8936633815df991e3490e578e76834ab971d7a3431ea945cacbb1",
+      "git_blob_sha": "0ebc8eef4d7d76ebaacde4735e2e32096de09e64"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part011",
+      "sha256": "a5321d157ab9511be9db010042ae5fa215a99de235260c8bbcc7f70e5c1a7add",
+      "git_blob_sha": "cbf8c222e383b73867e54b6a525d79943f4a9808"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part006",
+      "sha256": "56668405be45ba89ec64021af098ae53ff2e5f21849f001c9bcf18238f43d01e",
+      "git_blob_sha": "5668ca2790c8832880faa692ec11f002b0465ceb"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part012",
+      "sha256": "999467339b21ace79219f5334a17eb4a4cc40afd2565d67d066e12789fa843fe",
+      "git_blob_sha": "43b466f9f419c11e394b10ce4343b84b637cecdf"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part002",
+      "sha256": "65cbaec72adb19ab380bfb6d781aa608082bb6c43aabc911ba970d5eaadb3525",
+      "git_blob_sha": "7aa1bbfd51be246edd1c23ce8baae7f9738db9cf"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part016",
+      "sha256": "40d10d5757038647080cf701f695881bb328bdf42b5cbf0b0f15c460a43e2b8c",
+      "git_blob_sha": "21903dbe66095009eadbd3974baeff0cd70be47c"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part001",
+      "sha256": "50f8a7b495c817fef8445d29f6f7dd08c6c85f01b43f903a4eb9a220be7a7b52",
+      "git_blob_sha": "6495b53bfa81b13577cc295f9b632b92410b35df"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part007",
+      "sha256": "019e6c216bec2a62498024da1417ec1a4450b23b89ebd59c816c74256ecfa30d",
+      "git_blob_sha": "003213e829870bef69e7f88e725382ea2abe4f9e"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part019",
+      "sha256": "2a19637c0873d28633a61385c66399fca850f88e8dd9d9d388254826e52153f3",
+      "git_blob_sha": "82af38caae08644a86a8c1de7b7c475933e2c5a1"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part004",
+      "sha256": "e90064f6f8905fd80d8d1a4b9db97d57621cc3c9608402bcb350c4a3f95bfcde",
+      "git_blob_sha": "c5b28284721efb175b34f85e0a49bc4f1b6a0479"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part018",
+      "sha256": "b90bb753a602905c90081feb6cd37465ef4a938e47325b2e640b9a69fe81812f",
+      "git_blob_sha": "e9eaf9531386fc5422cf5038208463613a8de200"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part005",
+      "sha256": "6474ed0793181eec534f314842401c9fec80790e086cb6c8dff5cfb2debb3533",
+      "git_blob_sha": "7f08421c9609cce26340f472b808948d0b098c42"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part003",
+      "sha256": "b520117b0655a9f74068b2f6606897ec36e1bb3e7563ce2f38bf4c6bda5313e9",
+      "git_blob_sha": "e36f98af2ddf6704564550e505a2fc08b5159e72"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part009",
+      "sha256": "492eff00b2d4bd42d43b5a4049e0191ee3c53d01d4cc60ecf2656237d0122b65",
+      "git_blob_sha": "3fae3363bd664a049916df248f1aee54bb03e110"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part014",
+      "sha256": "971e12206234af9a1b13317c8313e8e09d826529ae6a5c636573630c893ad047",
+      "git_blob_sha": "6b84b3a5a4baefdaaef9c9fa47eb58b895617580"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part010",
+      "sha256": "22891b4ac3fecd9482b0bf06f550bb2672ebf24fd02bf3c6f3f3538a1f764394",
+      "git_blob_sha": "2329637a6e93b910bc3733edb36bc566401058d0"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part013",
+      "sha256": "3d0f05315e86da6c5632b72733575c8512a29b6b000151506da2c09bc3164f02",
+      "git_blob_sha": "ab95f2b2542b4f4d768dd349a9274127315ab68d"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part017",
+      "sha256": "b765d17bcc593d06c3d9a577d82eb5796c3675d09574758f31a2298a2ed97b92",
+      "git_blob_sha": "5d75aca0b8c3e10a910d25d357cb620dd79ad723"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part015",
+      "sha256": "c2bd54daa5f9cddf649a32d88949a8b51f21fd14bc75ca5dcaef101f79b50c54",
+      "git_blob_sha": "8925616ccd8742458b550190b2b8a592ad0a471d"
+    },
+    {
+      "path": "data/countries/austria/payload/data.tar.xz.part008",
+      "sha256": "074ff1c20fb203d9088dc44f25c58737588e27f28456ec84bb87621dea2ea832",
+      "git_blob_sha": "d26f4f22a316b0efce6aca701c2439963efd1952"
+    },
+    {
+      "path": "lib/atlas/identity.ts",
+      "sha256": "8be58bfe59a32110cfe6635c7d51ca73cd469b984179a7ab6083522698626444",
+      "git_blob_sha": "197328049f153f96c1147afe962d6c9f20404187"
+    },
+    {
+      "path": "lib/observatory/adapters/inventory.ts",
+      "sha256": "ede87d431ccc5647335f0768167cbfdac12131beabbb9fd53db97c891b87f53d",
+      "git_blob_sha": "75ce52fdb8fd33aca68a1861a9787c0fa8eba61a"
+    },
+    {
+      "path": "lib/observatory/adapters/tables.ts",
+      "sha256": "fd2c8e73e0aacd5739f06801eabd96d7e5c403b8abf7b8e2a0ac68e1fc3a5109",
+      "git_blob_sha": "d5fd4090fa3af82c493f4ed46e72f5114baab6a5"
+    },
+    {
+      "path": "lib/observatory/adapters/armenia.ts",
+      "sha256": "bf4d7747186e788a8d775a100ebe15c4b4dc3d8cfe8f0cc45b1c1edba9b8b6ac",
+      "git_blob_sha": "50dc7f2ff2c3d845c597440faca3d75cdb6e90f8"
+    },
+    {
+      "path": "lib/observatory/adapters/europe.ts",
+      "sha256": "031b031fe8dbb08d906925be0701e9c3e9d39fca667fd1e03d906cef58e8bb4c",
+      "git_blob_sha": "61a9b3534239cd9e82692b37254efbece0d2eefb"
+    },
+    {
+      "path": "docs/phase1/Albania_Field_Map.md",
+      "sha256": "b2386dc56c19fccb13f91c8acd2b07a1f662a6a6f7b8da5abe55149b3e4c27fb",
+      "git_blob_sha": "d058051f0919dde48d0e6941bcdb5f4135d316b5"
+    },
+    {
+      "path": "docs/phase1/Albania_Acceptance_Examples.md",
+      "sha256": "43cca0f54e46afb8eda65713c14c1d0ac7a9f406ac34ad069530411c6da46b40",
+      "git_blob_sha": "1294fce3daefb9b0763a6818437a7848a5b1971a"
+    },
+    {
+      "path": "docs/phase1/Phase1_DDL_Rationale.md",
+      "sha256": "90bb905e8303812c92f861f8e6a7571e570dab653360f2965e681e84fc652806",
+      "git_blob_sha": "345836a5ae775839c2aef6ffe10dc48951d1a246"
+    },
+    {
+      "path": "docs/phase1/Albania_Identity_Rules.md",
+      "sha256": "def15d98a8bf41cad8623bc09b65ee55af499edb2dc1c4c65a41216d95ed4d0c",
+      "git_blob_sha": "3c0ea8878608533543cf5c04c76aececb5c311db"
+    },
+    {
+      "path": "docs/phase1/Prompt_C_Field_Map_and_CI.md",
+      "sha256": "db6aacce8f3d353b730339e06c79027bd27f543eb1f913f0d9be4655b671239d",
+      "git_blob_sha": "e9ba63400d63b1897b4a2737478c478515a221da"
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Acceptance_Examples.md",
+      "sha256": "b4a0f73099edf06d988fc798e31ba0bd8827009613b27b82995ddddc44bf343e",
+      "git_blob_sha": "cd73f0bb04243ed3fa9fb1e74023117dcd8d98d8"
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Input_Inventory.json",
+      "sha256": "b4a97e07a0ac118570f293baf208ff6679763f740950ec46ba640a94322a27cd",
+      "git_blob_sha": "b7a89477e1cf08063ffa56975a299fd9f36026ac"
+    },
+    {
+      "path": "docs/phase1/armenia/validation.json",
+      "sha256": "44fbf7c4ce250c1d264197c8d2de1bee442ce3b6f3fa2ebd3b609dc303da81ad",
+      "git_blob_sha": "f85e291c78af18bae1a2869dfc07627934b10c5e"
+    },
+    {
+      "path": "docs/phase1/armenia/README.md",
+      "sha256": "5c3f453d0b0972c0818e25aac422a3a9689c32f4bd06f4f433709dce001d39c7",
+      "git_blob_sha": "b39d4b4fc28895bc77fdb6944f36920d0294ff09"
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Identity_Vectors.json",
+      "sha256": "6ac9dc488252bacace33e6324be331f716dbfcf29acc1a3e43c6b75d8e702b0f",
+      "git_blob_sha": "cff032eb6339e3596a68712ac9b007c1cff5673e"
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Identity_Rules.md",
+      "sha256": "9d076e4641556d4b1b5bd03656bc7190b4c9af3c9d937ac79bf9ddc4de147858",
+      "git_blob_sha": "02fd73c353b3e48b477daffa9047ab82ce2a680e"
+    },
+    {
+      "path": "docs/phase1/armenia/Prompt_L_Tiers_Field_Map_and_CI.md",
+      "sha256": "1a3faba9097ecb80a5ea5da59d61f400e40537902f9764943ca1f5f0fdba6fd8",
+      "git_blob_sha": "77c30fb71ceec27fe8caf29dedab5c6cc3989284"
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Field_Map.md",
+      "sha256": "d9009d6f594b6f416fab5732891d33ae888b593483f8bf6b31c296b66e92d390",
+      "git_blob_sha": "a6cc6d02c9816176066dd65c41b873b10cba853b"
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Field_Map.md",
+      "sha256": "689a4f9fe6878747617b2d8e1939e5cf1e1a21196cfb6e989fc6b1fbceb8a95a",
+      "git_blob_sha": "c4c58724a407cebafa3348b6527eb8c72d1142ae"
+    },
+    {
+      "path": "docs/phase1/andorra/validation.json",
+      "sha256": "e024b82a73fd87423c3b6a433335926bca54d8eced0275cbf1c290d7200d73e4",
+      "git_blob_sha": "4806f75ba85928ddb4fe63b38aa572608997e647"
+    },
+    {
+      "path": "docs/phase1/andorra/README.md",
+      "sha256": "f1a45b115b129a0ed6b95b8ce6a63258ee07fa94144d23e36da95913bf5537b1",
+      "git_blob_sha": "42d514be79bd6f2f769763d63875cb5ac78bc2af"
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Input_Inventory.json",
+      "sha256": "edbe91f086c50be5d8e6cf1a41822ae38656ee14b2ea5b40dac1c5c4e9a5e502",
+      "git_blob_sha": "e59846f5970826285d15298496539ea00fdd7ebc"
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Identity_Rules.md",
+      "sha256": "0fdbe91ba08b0a93df0d9d5986e7a7c2311fcd6333440325c610ae24648b14cf",
+      "git_blob_sha": "2c508a61e80db6f11c65e6465f0705c40a55c45d"
+    },
+    {
+      "path": "docs/phase1/andorra/Prompt_J_Field_Map_and_CI.md",
+      "sha256": "a54957388301689ef62e3f2e8d070816a36a482725dddcce7e29bea38a38fa57",
+      "git_blob_sha": "6611e86e5f581e048f8b78b4ce3afc5d129069f0"
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Identity_Vectors.json",
+      "sha256": "f6816fd1dd008d6900f7240f0e2e20f89dc020ad0ab879de813bd48687c94dae",
+      "git_blob_sha": "febf05af2de96459e535ad6802c12dda25a92463"
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Acceptance_Examples.md",
+      "sha256": "884e3ecdf80323b63f888ac52567e0b9465101edf444c42c332f015954661354",
+      "git_blob_sha": "a9a7ea491e332e926210a547a11160fb995c63c6"
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Identity_Vectors.json",
+      "sha256": "f72120451c361dd9dd607ee91a619e42be638757466a22119c68a8534f49f525",
+      "git_blob_sha": "e83cf1b2d60fa8bacb3dfc50b12814830011aeab"
+    },
+    {
+      "path": "docs/phase1/alderney/validation.json",
+      "sha256": "368203ecad35c7177aa3ad24d87d9c6c17e82d096e7d602d933c616335f36f57",
+      "git_blob_sha": "6416d2b89bfd2499a2d20d18482f9e373a508f5e"
+    },
+    {
+      "path": "docs/phase1/alderney/README.md",
+      "sha256": "a1bb05f5f92c5f1a3f9211f05e39b436ac1230e59ba62245b6ad057ecdc6a09f",
+      "git_blob_sha": "09535554217efb46a415ec5812c359be178a27b4"
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Identity_Rules.md",
+      "sha256": "70d7d8bb32e1aff5c2e8114ecda98689f56253611cb38d90c4fc84bc710516ff",
+      "git_blob_sha": "8bf338ece929de5ed47de40b07dffa6a4e6f16a5"
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Acceptance_Examples.md",
+      "sha256": "ac4fb64b1a803d3b24c9f88459fa55b60e3f70291c021d4253f6f400e4482f69",
+      "git_blob_sha": "69fd1a480b929b2c7b1ff83dcc55d04b8c6e5908"
+    },
+    {
+      "path": "docs/phase1/alderney/Prompt_K_Field_Map_and_CI.md",
+      "sha256": "6f7ee2cd5c75c26434377dcea3ecb2f5a8549182fe1ab50dd5cbe1ae6c86bab1",
+      "git_blob_sha": "84a106f19c3d0071fef9d17fd0ce0da581b6ebbf"
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Input_Inventory.json",
+      "sha256": "f59eb0ae26cbeafa7504872f4003db112d4b0d3cc6cb5c000b0b9e66750df18e",
+      "git_blob_sha": "ce2328c0af758a3e746b26b4b871900df49a9b40"
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Field_Map.md",
+      "sha256": "27b19c201b7e9516bde710575731c06336db4e0d87ddb380bf9c1583ced4acf0",
+      "git_blob_sha": "40b87ff4044e4e41d2207c8ff04e9fcd71860f29"
+    },
+    {
+      "path": "schemas/atlas/migrations/0002_atlas_master.sql",
+      "sha256": "1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da",
+      "git_blob_sha": "993d6cc69161e6ca294f10af6f8dab250798de59"
+    },
+    {
+      "path": "schemas/atlas/migrations/README.md",
+      "sha256": "ac339efd00bd5d8df8827d9aaf4a9a09ff66cd696848c095658178170afe94bd",
+      "git_blob_sha": "7184998369f2edc7d8303fe586332571b714d3ca"
+    },
+    {
+      "path": "schemas/atlas/migrations/0001_atlas_attempt_log.sql",
+      "sha256": "e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1",
+      "git_blob_sha": "74c160dd4aa293ed0ce576c2a23a9e8fd175c02d"
+    },
+    {
+      "path": "schemas/atlas/tiers/albania.json",
+      "sha256": "53a31d441761952a9f511c58a397e7877616c0ad6af30dce7587bcb6bcbbd93d",
+      "git_blob_sha": "e24bf5d1c366b37086afae372b91c9e48c3c6539"
+    },
+    {
+      "path": "schemas/atlas/tiers/armenia.json",
+      "sha256": "2905af1a2a1465f32e457657f5a900c556757b7964f37c8c57adeb86d4a80b7a",
+      "git_blob_sha": "8addba0ea08db5aeea6582e6d4aa56dd560db56b"
+    },
+    {
+      "path": "scripts/import/normalize.ts",
+      "sha256": "54450ad61e54d14aa142a69a205ebd42d2b4fac8165da91e55a62f298ba3f06a",
+      "git_blob_sha": "6eb59a159eebf134a8527435b9890c80669ea7f4"
+    }
+  ],
+  "JS_vector_validation": "PASS: independent JavaScript canonical fingerprint;2038 geography,5956 event/date,16336 result,97 URL-alias vectors",
+  "checks": {
+    "pins_exact": true,
+    "Austria_absent_current_main": true,
+    "all_pinned_files_protected_byte_exact": true,
+    "columns223_tables20": true,
+    "DDL_column_set:dataset_lineage": true,
+    "mapped_column_set:dataset_lineage": true,
+    "DDL_column_set:dataset_release": true,
+    "mapped_column_set:dataset_release": true,
+    "DDL_column_set:retained_input": true,
+    "mapped_column_set:retained_input": true,
+    "DDL_column_set:country": true,
+    "mapped_column_set:country": true,
+    "DDL_column_set:geography": true,
+    "mapped_column_set:geography": true,
+    "DDL_column_set:office": true,
+    "mapped_column_set:office": true,
+    "DDL_column_set:office_tier_classification": true,
+    "mapped_column_set:office_tier_classification": true,
+    "DDL_column_set:research_date": true,
+    "mapped_column_set:research_date": true,
+    "DDL_column_set:election_event": true,
+    "mapped_column_set:election_event": true,
+    "DDL_column_set:proceeding": true,
+    "mapped_column_set:proceeding": true,
+    "DDL_column_set:result_row": true,
+    "mapped_column_set:result_row": true,
+    "DDL_column_set:party_mapping": true,
+    "mapped_column_set:party_mapping": true,
+    "DDL_column_set:source": true,
+    "mapped_column_set:source": true,
+    "DDL_column_set:record_locator": true,
+    "mapped_column_set:record_locator": true,
+    "DDL_column_set:evidence_link": true,
+    "mapped_column_set:evidence_link": true,
+    "DDL_column_set:unresolved_evidence": true,
+    "mapped_column_set:unresolved_evidence": true,
+    "DDL_column_set:identity_crosswalk": true,
+    "mapped_column_set:identity_crosswalk": true,
+    "DDL_column_set:publication_release": true,
+    "mapped_column_set:publication_release": true,
+    "DDL_column_set:publication_receipt": true,
+    "mapped_column_set:publication_receipt": true,
+    "DDL_column_set:ingest_attempt": true,
+    "mapped_column_set:ingest_attempt": true,
+    "2084_effective_input_hashes": true,
+    "schema_hash:0001_atlas_attempt_log.sql": true,
+    "schema_hash:0002_atlas_master.sql": true,
+    "exact_tier2038_set": true,
+    "draft_only_counts": true,
+    "focused_reviews_four": true,
+    "tier_sha_pinned": true,
+    "source_register_hash_bytes": true,
+    "notes_no_invented_IDs": true,
+    "actual_types": true,
+    "no_companion_four_regional": true,
+    "15_source_tables_all_columns_documented": true,
+    "5944_overlap12_additions": true,
+    "46_citation_differences_and_one_named_hold": true,
+    "event_ID_set": true,
+    "date_precision58day5898year": true,
+    "day_valid_year_not_promoted": true,
+    "no_next_dates": true,
+    "5956_dates_no_next": true,
+    "D16336_unique5944_events": true,
+    "semantic_bindings_unique": true,
+    "numeric_domains": true,
+    "numeric_value_status_roundtrip": true,
+    "seats_zero400_missing7180": true,
+    "H_limit_flags": true,
+    "sources97_unique": true,
+    "HD_resolved_ID_URL_agreement": true,
+    "all_HTML_urls_resolve": true,
+    "all_emitted_locators_hash_pointer_and_sheet_row": true,
+    "17_examples": true,
+    "26_mapping_Done": true,
+    "18_execution_Not_run": true,
+    "Markdown_relative_links_exist": true,
+    "repo_clean": true,
+    "only_Austria_tier_deliverable": true,
+    "independent_JS_vectors": true,
+    "package_validator_PASS": true
+  },
+  "manifest_policy": "Every payload except SHA256SUMS itself; external receipt gives manifest/ZIP hashes. ZIP readback verifies exact path set, every digest and CRC."
+}

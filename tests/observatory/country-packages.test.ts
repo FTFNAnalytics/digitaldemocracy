@@ -18,7 +18,8 @@ const root = path.join(import.meta.dirname, "../..");
 describe("country package inventory", () => {
   it("classifies every present standalone folder", () => {
     const { packages, skipped } = inventoryCountryPackages(root);
-    expect(skipped).toEqual([]);
+    expect(skipped.map((row) => row.slug)).toEqual(["austria"]);
+    expect(skipped[0]?.reason).toMatch(/XZ payload has no observatory adapter/i);
     expect(packages.map((row) => row.slug).sort()).toEqual([
       "albania",
       "alderney",

@@ -31,10 +31,11 @@ in [docs/phase0/REPORT.md](phase0/REPORT.md). Prompt B / Prompt C artifacts live
 | Albania acceptance examples | [docs/phase1/Albania_Acceptance_Examples.md](phase1/Albania_Acceptance_Examples.md) |
 | Andorra Prompt J field map | [docs/phase1/andorra/](phase1/andorra/Prompt_J_Field_Map_and_CI.md) — Europe #2 mapping **Done**; importer CI **Not run** (Albania remains Phase 1 storage proof) |
 | Armenia Prompt L field map | [docs/phase1/armenia/](phase1/armenia/Prompt_L_Tiers_Field_Map_and_CI.md) — Europe #4 mapping **Done**; importer CI **Not run** |
+| Austria Prompt N field map | [docs/phase1/austria/](phase1/austria/Prompt_N_Tiers_Field_Map_and_CI.md) — mapping **Done**; importer CI **Not run** (package on main via PR #11; Atlas importer waits) |
 | Named CI | `tests/atlas/import.test.ts` (Prompt C gates) and `tests/atlas/cli.test.ts` (migrate + import CLI) |
 | Phase 0 inventory | `docs/phase0/` (`REPORT.md`, `inventory.json`, `continuity-counts.json`, `human-review.json`) |
 | Prompt D continuity docs | [docs/phase2/](phase2/README.md) — field maps, identity rules, acceptance examples, checklist (**documentation complete; importer CI Not run**) |
-| Tier-classification files | `schemas/atlas/tiers/albania.json` (**approved** municipal); `alderney.json` (**approved** `other`); `andorra.json` (**approved** municipal, Justin 2026-09-16); `armenia.json` (**approved** municipal, Prompt L 2026-09-17; five boundary/calendar reviews remain open) |
+| Tier-classification files | `schemas/atlas/tiers/albania.json` (**approved** municipal); `alderney.json` (**approved** `other`); `andorra.json` (**approved** municipal, Justin 2026-09-16); `armenia.json` (**approved** municipal, Prompt L 2026-09-17; five boundary/calendar reviews remain open); `austria.json` (**approved** 2,034 municipal / 4 regional, Prompt N 2026-09-17; package on main via PR #11; St. Georgen 2015 hold retained; Atlas importer waits) |
 
 `migrate:atlas` may create local gitignored DBs with empty typed tables. Empty schema is **not** Phase 1 exit. `import:atlas` against the frozen Albania package is the storage proof: 122 offices, 366 selected histories, 3,843 result rows, 122 municipal / 0 regional, 185 sources (182 catalogue + 3 inline), 122 briefings retained, proceedings=0, party_mappings=0.
 
@@ -53,6 +54,11 @@ Armenia Prompt L docs are in
 [docs/phase1/armenia/](phase1/armenia/README.md) (mapping Done; execution CI Not run);
 geographic tiers are **approved** (71 municipal / 0 regional). Five boundary/calendar
 research reviews remain open separately from tier approval.
+Austria Prompt N docs are in
+[docs/phase1/austria/](phase1/austria/README.md) (mapping Done; execution CI Not run);
+geographic tiers are **approved** (2,034 municipal / 4 regional). The Austria
+package is on main (PR #11, `f0f2c86`); the Atlas importer waits. Publication hold
+`AT-OOE-41119-M::2015::` and open calendar/boundary notes remain.
 
 ### Fingerprint `schema_inputs` paths
 
@@ -124,5 +130,6 @@ Deferred Prompt C rows above are **not** waived. They remain required before cla
 | Albania map | Proposed 46-municipality 2027 map is unverified in the package; geometry is not invented. |
 | Prompt D continuity docs | **Documentation complete** in [docs/phase2/](phase2/README.md). No LatAm/NZ importer, invented tiers, or Mexico share edits. |
 | Andorra Prompt J field map | **Documentation complete** in [docs/phase1/andorra/](phase1/andorra/README.md). Mapping Done; importer CI Not run. Approved `andorra.json` bytes unchanged. |
+| Austria Prompt N field map | **Documentation complete** in [docs/phase1/austria/](phase1/austria/README.md). Mapping Done; importer CI Not run. Package on main via PR #11. Approved `austria.json` is 2,034 municipal / 4 regional. |
 
 Also out of scope until later phases: `/atlas` UI, redirects, VPS deploy, Latin America / NZ ingest, tightness. Armenia remains last among early European targets. Prompt D prerequisites still open: 21 LatAm country tier files + NZ tier file (approved), Mexico share overrides, multi-lineage import.

@@ -9,7 +9,7 @@ Albania `Regional / municipal` are **not** classifiers.
 
 Files were rebuilt from each package’s office register (one row per `office_id`;
 no invented IDs). See [docs/phase0/REPORT.md](../../../docs/phase0/REPORT.md).
-Albania municipal and Alderney `other` are **`approved`**. Andorra is **`approved`** (Justin 2026-09-16; 7 communal councils). Armenia is **`approved`** (Prompt L 2026-09-17; 71 municipal / 0 regional). Five Armenia boundary/calendar research reviews remain open separately from geographic-tier approval.
+Albania municipal and Alderney `other` are **`approved`**. Andorra is **`approved`** (Justin 2026-09-16; 7 communal councils). Armenia is **`approved`** (Prompt L 2026-09-17; 71 municipal / 0 regional). Five Armenia boundary/calendar research reviews remain open separately from geographic-tier approval. Austria is **`approved`** (Prompt N 2026-09-17; 2,034 municipal / 4 regional). The Austria package is on main (PR #11, `f0f2c86`); the Atlas importer waits. The St. Georgen am Walde 2015 publication hold and open calendar/boundary research notes remain.
 
 | File | Register rows | Proposed tier | Human review |
 | --- | ---: | --- | --- |
@@ -17,6 +17,7 @@ Albania municipal and Alderney `other` are **`approved`**. Andorra is **`approve
 | [`andorra.json`](andorra.json) | 7 | `municipal` (communal councils) | **Approved** 2026-09-16 (Justin). Empty regional-calendar demo |
 | [`alderney.json`](alderney.json) | 2 | `other` | **Approved** 2026-09-16 (product owner). Channel Islands are low priority for the broader Atlas. |
 | [`armenia.json`](armenia.json) | 71 | `municipal` (community offices) | **Approved** 2026-09-17 (Prompt L). Geographic tiers only; 5 boundary/calendar reviews remain open |
+| [`austria.json`](austria.json) | 2038 | `municipal` (2034) + `regional` (4) | **Approved** 2026-09-17 (Justin / Prompt N). Package on main (PR #11); Atlas importer waits. Hold `AT-OOE-41119-M::2015::` retained |
 
 Vocabulary uses `national` as a proposed label. `schema_compatibility` maps
 `national` → schema v1 `national_context`.
@@ -32,6 +33,16 @@ for the broader Atlas.
 Proportional councils elect the mayor; missing mayor rows were not invented.
 Prompt token `AM-VEDI` is register `AM-VEDI-C`. Five nested
 `boundary_calendar_review` records remain `open`.
+
+**Austria** is **approved** (Prompt N, Justin 2026-09-17 America/Edmonton;
+SHA-256 `1c303f748b6fa706bea71d750b5e50be8ab27acc7baf166fe01e0b85e9da69eb`;
+predecessor draft `9181e0af7f9dd0e3b2a92520de1cb990901c08b6f68afd165608eaf66282283d`).
+Exact 2,038 office IDs: 2,034 municipal + 4 regional (`AT-KTN-A`, `AT-NOE-A`,
+`AU-ab9fc7cefb`, `AU-9560299fb9`). Geographic-tier approval does not invent
+prospective polling dates. Publication hold `AT-OOE-41119-M::2015::` (St. Georgen
+am Walde first-ballot vs decisive yes/no) and all `notes[]` calendar/boundary
+research items remain open. The country package is on main (PR #11, `f0f2c86`);
+Atlas importer CI waits.
 
 **Albania:** all 122 office-register rows are **approved** `municipal` (Justin,
 2026-09-16) for Phase 1 storage proof. Regional count is 0 by design. Do not
@@ -52,7 +63,7 @@ Mexico share-domain withhold-all-67 is already accepted separately.
 
 Do not treat proposed-tier counts as approved coverage. Office IDs and proposed
 labels come from the Prompt E pack; they are not invented here. Albania,
-Andorra, Alderney, and Armenia files above are unchanged.
+Andorra, Alderney, Armenia, and Austria files above are unchanged.
 
 | File | Offices | Historical | Status |
 | --- | ---: | ---: | --- |
