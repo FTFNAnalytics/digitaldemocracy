@@ -1,0 +1,720 @@
+{
+  "status": "documentation_only_draft",
+  "pinned_main_commit": "6e6426fe17f6f542b58b68f8607124e007b852ff",
+  "pinned_package_commit": "98408339e233e8580ec535cc24e8762ff5c6533f",
+  "package_pr": 15,
+  "package_branch": "codex/europe-bosnia-and-herzegovina",
+  "main_has_package": false,
+  "pin_method": "GitHub main ref and immutable recursive trees; text checked against git blob IDs; payload reproduced from verified original archive in isolated scratch copy and matched to PR git blob +manifest SHA256.",
+  "tier_candidate_path": "schemas/atlas/tiers/bosnia-and-herzegovina.json",
+  "tier_candidate_sha256": "3d0be674f3d5b77b3a92362b82815d7bd3305473820e3279999fc82e5f3c51c1",
+  "source_register": {
+    "path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+    "archive_entry": "tables/master/office-register.json",
+    "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+    "bytes": 5386,
+    "payload_sha256": "5fb08d2c43f2fff0526c7aa3e95bbd00186aa6a401f409346dd3dbd11ce09c89"
+  },
+  "verified_counts": {
+    "current_offices": 13,
+    "geographies": 13,
+    "entity_offices": 3,
+    "cantonal_assembly_offices": 10,
+    "regional_offices_proposed": 13,
+    "municipal_offices_proposed": 0,
+    "other_offices_proposed": 0,
+    "approved_classifications": 0,
+    "focused_tier_reviews": 3,
+    "companion_offices": 0,
+    "master_histories": 39,
+    "index_histories": 39,
+    "overlap_histories": 39,
+    "selected_histories": 39,
+    "prospective_events": 13,
+    "total_events": 52,
+    "research_dates": 52,
+    "historical_dates_year": 39,
+    "prospective_dates_day_expected": 13,
+    "calendar_cohorts": 1,
+    "detailed_return_rows": 749,
+    "companion_full_result_rows": 0,
+    "source_catalogue_rows": 28,
+    "inline_only_sources": 2,
+    "sources": 30,
+    "office_briefings": 13,
+    "country_briefings": 1,
+    "poll_records_supplied": 0,
+    "control_observations_supplied": 0,
+    "proceedings": 0,
+    "party_mappings": 0,
+    "outer_package_files": 7,
+    "payload_member_files": 27,
+    "retained_inputs": 35
+  },
+  "hash_inputs": {
+    "canonicalization": "atlas-c14n/1",
+    "hash_algorithm": "sha256",
+    "lineage_id": "country-package-bosnia-and-herzegovina",
+    "inputs": [
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/.gitattributes",
+        "input_kind": "package",
+        "sha256": "8ff6b62cc6e8936633815df991e3490e578e76834ab971d7a3431ea945cacbb1",
+        "byte_count": 23
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/README.md",
+        "input_kind": "package",
+        "sha256": "15f6863da005b6975a66a79e242a6d3c3c116cbcd309c7cddb611bec3eae9589",
+        "byte_count": 3515
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/coverage.json",
+        "input_kind": "package",
+        "sha256": "c339077846a0104e61491238ceb0e78afeabc2a6f6891dbafbc3200ec87728c5",
+        "byte_count": 665
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/extract.py",
+        "input_kind": "package",
+        "sha256": "a832ec09ed10fe655b05adc916e266a037b1815411acf430874c4df3a72ff67d",
+        "byte_count": 12147
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/manifest.json",
+        "input_kind": "package",
+        "sha256": "c284f05cff3d4e3690ac6a19715e70966b72376fef8ce26ced69713d097afa4b",
+        "byte_count": 2085
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/payload/data.tar.gz.part001",
+        "input_kind": "artifact",
+        "sha256": "5fb08d2c43f2fff0526c7aa3e95bbd00186aa6a401f409346dd3dbd11ce09c89",
+        "byte_count": 75544
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-201.html",
+        "input_kind": "artifact",
+        "sha256": "e4e28a10c6b9dc802fa8af0a2bc1df3aef3ae472cfd79ed3bdafa72c946bf27a",
+        "byte_count": 11663
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-202.html",
+        "input_kind": "artifact",
+        "sha256": "05d7b91b169d111d05352b015503e9d8d655c42d4dcae8a52f8e9835af63ae30",
+        "byte_count": 9339
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-203.html",
+        "input_kind": "artifact",
+        "sha256": "39241a2da6bf93c60be346effa590bc9d3c0f69efcebf063f1511f639ea273cb",
+        "byte_count": 11897
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-204.html",
+        "input_kind": "artifact",
+        "sha256": "91a1177060d3c5cf1435c76bac6bcb4317b647e2f6e6a9e06432e30b0ed908bc",
+        "byte_count": 10813
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-205.html",
+        "input_kind": "artifact",
+        "sha256": "0cd3e801be4f64a185dca7bc58e8a2ac4509bb2792790825b0afc1f6c0380eb5",
+        "byte_count": 10201
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-206.html",
+        "input_kind": "artifact",
+        "sha256": "367120ee52232cd8e48be05fbcd9790014fce5d5503d9eae422769826ad41575",
+        "byte_count": 10546
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-207.html",
+        "input_kind": "artifact",
+        "sha256": "55196e28ce717480544d7650a757791d6fff6ad02ac7b8b7deca6ad84e181082",
+        "byte_count": 11330
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-208.html",
+        "input_kind": "artifact",
+        "sha256": "e0de34a9c229ec89a47f83576765ee156552870d9b01f1a6138fe427995e44cc",
+        "byte_count": 8838
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-209.html",
+        "input_kind": "artifact",
+        "sha256": "4c3a06d6997fd6e1a571a96055c4d284611503f6404ad9f8565be2b32ad47cfa",
+        "byte_count": 11947
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-210.html",
+        "input_kind": "artifact",
+        "sha256": "94a4c57ef63b7673735e2af821ce4ee16e3ac7fe4a7fa379863539382ce26818",
+        "byte_count": 11260
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-F.html",
+        "input_kind": "artifact",
+        "sha256": "172747ce9fe4e09fdc828bb99e988209b469b45d34fd3e18392fcacd83a556f8",
+        "byte_count": 15828
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-G.html",
+        "input_kind": "artifact",
+        "sha256": "e18d366e85cb7be226b5227b76e40a6361b937e34e9b6c6c6e0722a91d2333fd",
+        "byte_count": 14683
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-R.html",
+        "input_kind": "artifact",
+        "sha256": "3d30b96074515450b2999a7f0dcf1c0fb6f4821210cafb2354d579c6956d9fff",
+        "byte_count": 16120
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/bosnia_and_herzegovina.html",
+        "input_kind": "artifact",
+        "sha256": "8b7565c683a91b413f9630e5cc0ef47bbb1f0a25199b34363c67f3aff225b34f",
+        "byte_count": 135376
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/formula-cache.json",
+        "input_kind": "package",
+        "sha256": "9fd100bc0ab26310463627144053227e68c8ef5d00d32f60bba2a18dddbf54a9",
+        "byte_count": 15386
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/history-index.json",
+        "input_kind": "package",
+        "sha256": "4970ace42cc87e80ddb70a859c6fcd02d165197354bf34aab7caa432e70d9c2d",
+        "byte_count": 21726
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/inventory.json",
+        "input_kind": "package",
+        "sha256": "078ab3447a2e98daadb382396464c884ca5b72186546108fa81cab847652119f",
+        "byte_count": 8132
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/source-links.json",
+        "input_kind": "package",
+        "sha256": "26e76698fe13b627cc612c1d93cb424d70fc45bd8f661f3219db9538bbafd0a0",
+        "byte_count": 2260
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-coverage.json",
+        "input_kind": "package",
+        "sha256": "15933c3b7f5c0d1e5ada9d83b3fec3b73407584f3a84004e04617bdf3f37df12",
+        "byte_count": 285
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+        "input_kind": "package",
+        "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+        "byte_count": 504
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/detailed-returns.json",
+        "input_kind": "package",
+        "sha256": "7d3123dcded64515eafd3d0d2041181bef236d868750964f4e0858576440e479",
+        "byte_count": 227922
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/election-calendar.json",
+        "input_kind": "package",
+        "sha256": "d0498141997f7437cd61d67959617cf7b2f52ebc94afe0fe44b005f5a6d468fd",
+        "byte_count": 555
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/history-index.json",
+        "input_kind": "package",
+        "sha256": "833cfe5104faf5d506b12f4407629b1ee4531fb2df6bfa59c5ecd0961ba3082f",
+        "byte_count": 13313
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+        "input_kind": "package",
+        "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+        "byte_count": 5386
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/parameters.json",
+        "input_kind": "package",
+        "sha256": "47d666fd87eb6c3db5882213d2ef10f36c994fa9f31859aafde37fdb613343e2",
+        "byte_count": 991
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/read-me.json",
+        "input_kind": "package",
+        "sha256": "ac783fd2d95bfb0359c71873c3e0f3e86e11e54564551aaa84440207e49f2540",
+        "byte_count": 3671
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/sources.json",
+        "input_kind": "package",
+        "sha256": "589fa89fe80df78e52a543099d1ff21d9f217b095f317e046ca9bc4069dfc133",
+        "byte_count": 5674
+      },
+      {
+        "input_path": "data/countries/bosnia-and-herzegovina/validate.py",
+        "input_kind": "package",
+        "sha256": "e147e2937bbdbdee07892d9a0e90983beda0435db729e3f9d480b6ded3582a63",
+        "byte_count": 3021
+      },
+      {
+        "input_path": "schemas/atlas/tiers/bosnia-and-herzegovina.json",
+        "input_kind": "tier_classification",
+        "sha256": "3d0be674f3d5b77b3a92362b82815d7bd3305473820e3279999fc82e5f3c51c1",
+        "byte_count": 32412
+      }
+    ],
+    "overrides": [],
+    "adapter_version": "atlas-bosnia-and-herzegovina-field-map/1",
+    "method_version": "atlas-preserve-evidence/1",
+    "schema_version": "atlas-master/1",
+    "schema_inputs": [
+      {
+        "input_path": "0001_atlas_attempt_log.sql",
+        "sha256": "e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1"
+      },
+      {
+        "input_path": "0002_atlas_master.sql",
+        "sha256": "1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da"
+      }
+    ]
+  },
+  "hash_inputs_canonical_json": "{\"adapter_version\":\"atlas-bosnia-and-herzegovina-field-map/1\",\"canonicalization\":\"atlas-c14n/1\",\"hash_algorithm\":\"sha256\",\"inputs\":[{\"byte_count\":23,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/.gitattributes\",\"sha256\":\"8ff6b62cc6e8936633815df991e3490e578e76834ab971d7a3431ea945cacbb1\"},{\"byte_count\":3515,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/README.md\",\"sha256\":\"15f6863da005b6975a66a79e242a6d3c3c116cbcd309c7cddb611bec3eae9589\"},{\"byte_count\":665,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/coverage.json\",\"sha256\":\"c339077846a0104e61491238ceb0e78afeabc2a6f6891dbafbc3200ec87728c5\"},{\"byte_count\":12147,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/extract.py\",\"sha256\":\"a832ec09ed10fe655b05adc916e266a037b1815411acf430874c4df3a72ff67d\"},{\"byte_count\":2085,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/manifest.json\",\"sha256\":\"c284f05cff3d4e3690ac6a19715e70966b72376fef8ce26ced69713d097afa4b\"},{\"byte_count\":75544,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/payload/data.tar.gz.part001\",\"sha256\":\"5fb08d2c43f2fff0526c7aa3e95bbd00186aa6a401f409346dd3dbd11ce09c89\"},{\"byte_count\":11663,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-201.html\",\"sha256\":\"e4e28a10c6b9dc802fa8af0a2bc1df3aef3ae472cfd79ed3bdafa72c946bf27a\"},{\"byte_count\":9339,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-202.html\",\"sha256\":\"05d7b91b169d111d05352b015503e9d8d655c42d4dcae8a52f8e9835af63ae30\"},{\"byte_count\":11897,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-203.html\",\"sha256\":\"39241a2da6bf93c60be346effa590bc9d3c0f69efcebf063f1511f639ea273cb\"},{\"byte_count\":10813,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-204.html\",\"sha256\":\"91a1177060d3c5cf1435c76bac6bcb4317b647e2f6e6a9e06432e30b0ed908bc\"},{\"byte_count\":10201,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-205.html\",\"sha256\":\"0cd3e801be4f64a185dca7bc58e8a2ac4509bb2792790825b0afc1f6c0380eb5\"},{\"byte_count\":10546,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-206.html\",\"sha256\":\"367120ee52232cd8e48be05fbcd9790014fce5d5503d9eae422769826ad41575\"},{\"byte_count\":11330,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-207.html\",\"sha256\":\"55196e28ce717480544d7650a757791d6fff6ad02ac7b8b7deca6ad84e181082\"},{\"byte_count\":8838,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-208.html\",\"sha256\":\"e0de34a9c229ec89a47f83576765ee156552870d9b01f1a6138fe427995e44cc\"},{\"byte_count\":11947,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-209.html\",\"sha256\":\"4c3a06d6997fd6e1a571a96055c4d284611503f6404ad9f8565be2b32ad47cfa\"},{\"byte_count\":11260,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-210.html\",\"sha256\":\"94a4c57ef63b7673735e2af821ce4ee16e3ac7fe4a7fa379863539382ce26818\"},{\"byte_count\":15828,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-F.html\",\"sha256\":\"172747ce9fe4e09fdc828bb99e988209b469b45d34fd3e18392fcacd83a556f8\"},{\"byte_count\":14683,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-G.html\",\"sha256\":\"e18d366e85cb7be226b5227b76e40a6361b937e34e9b6c6c6e0722a91d2333fd\"},{\"byte_count\":16120,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-R.html\",\"sha256\":\"3d30b96074515450b2999a7f0dcf1c0fb6f4821210cafb2354d579c6956d9fff\"},{\"byte_count\":135376,\"input_kind\":\"artifact\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/bosnia_and_herzegovina.html\",\"sha256\":\"8b7565c683a91b413f9630e5cc0ef47bbb1f0a25199b34363c67f3aff225b34f\"},{\"byte_count\":15386,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/formula-cache.json\",\"sha256\":\"9fd100bc0ab26310463627144053227e68c8ef5d00d32f60bba2a18dddbf54a9\"},{\"byte_count\":21726,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/history-index.json\",\"sha256\":\"4970ace42cc87e80ddb70a859c6fcd02d165197354bf34aab7caa432e70d9c2d\"},{\"byte_count\":8132,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/inventory.json\",\"sha256\":\"078ab3447a2e98daadb382396464c884ca5b72186546108fa81cab847652119f\"},{\"byte_count\":2260,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/source-links.json\",\"sha256\":\"26e76698fe13b627cc612c1d93cb424d70fc45bd8f661f3219db9538bbafd0a0\"},{\"byte_count\":285,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-coverage.json\",\"sha256\":\"15933c3b7f5c0d1e5ada9d83b3fec3b73407584f3a84004e04617bdf3f37df12\"},{\"byte_count\":504,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json\",\"sha256\":\"b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556\"},{\"byte_count\":227922,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/tables/master/detailed-returns.json\",\"sha256\":\"7d3123dcded64515eafd3d0d2041181bef236d868750964f4e0858576440e479\"},{\"byte_count\":555,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/tables/master/election-calendar.json\",\"sha256\":\"d0498141997f7437cd61d67959617cf7b2f52ebc94afe0fe44b005f5a6d468fd\"},{\"byte_count\":13313,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/tables/master/history-index.json\",\"sha256\":\"833cfe5104faf5d506b12f4407629b1ee4531fb2df6bfa59c5ecd0961ba3082f\"},{\"byte_count\":5386,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json\",\"sha256\":\"504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4\"},{\"byte_count\":991,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/tables/master/parameters.json\",\"sha256\":\"47d666fd87eb6c3db5882213d2ef10f36c994fa9f31859aafde37fdb613343e2\"},{\"byte_count\":3671,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/tables/master/read-me.json\",\"sha256\":\"ac783fd2d95bfb0359c71873c3e0f3e86e11e54564551aaa84440207e49f2540\"},{\"byte_count\":5674,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/unpacked/tables/master/sources.json\",\"sha256\":\"589fa89fe80df78e52a543099d1ff21d9f217b095f317e046ca9bc4069dfc133\"},{\"byte_count\":3021,\"input_kind\":\"package\",\"input_path\":\"data/countries/bosnia-and-herzegovina/validate.py\",\"sha256\":\"e147e2937bbdbdee07892d9a0e90983beda0435db729e3f9d480b6ded3582a63\"},{\"byte_count\":32412,\"input_kind\":\"tier_classification\",\"input_path\":\"schemas/atlas/tiers/bosnia-and-herzegovina.json\",\"sha256\":\"3d0be674f3d5b77b3a92362b82815d7bd3305473820e3279999fc82e5f3c51c1\"}],\"lineage_id\":\"country-package-bosnia-and-herzegovina\",\"method_version\":\"atlas-preserve-evidence/1\",\"overrides\":[],\"schema_inputs\":[{\"input_path\":\"0001_atlas_attempt_log.sql\",\"sha256\":\"e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1\"},{\"input_path\":\"0002_atlas_master.sql\",\"sha256\":\"1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da\"}],\"schema_version\":\"atlas-master/1\"}",
+  "draft_fingerprint_sha256": "a51de5f8c31439521fb50220dabe3ea6c742095983ced8892a932235752dc99b",
+  "draft_candidate_release_id": "country-package-bosnia-and-herzegovina--sha256-a51de5f8c31439521fb50220dabe3ea6c742095983ced8892a932235752dc99b",
+  "publishable": false,
+  "publish_blocker": "Tier draft requires Justin acceptance; website ingestion pending. No importer/SQLite/publication executed.",
+  "payload_sha256": "5fb08d2c43f2fff0526c7aa3e95bbd00186aa6a401f409346dd3dbd11ce09c89",
+  "archive_sha256": "93a31ec920c770e752cf7f130ffb8a546dce4510a41d9371d5f49239fa2b4ce9",
+  "shared_archive_reverified": true,
+  "workbook_provenance": {
+    "Europe_Excluding_Russia/Europe_Excluding_Russia.xlsx": {
+      "bytes": 10931972,
+      "sha256": "b11dab577fb1746eddeb3aef72af7b097bcc4601828e1efbca1db3d6f6b98665",
+      "source": {
+        "archive": "Europe_Excluding_Russia_Package.zip",
+        "entry": "Europe_Excluding_Russia/Europe_Excluding_Russia.xlsx"
+      },
+      "verified_from_shared_archive": true
+    }
+  },
+  "manifest": {
+    "country": "Bosnia and Herzegovina",
+    "research_snapshot": "2026-09-11",
+    "packaged": "2026-09-15",
+    "window": {
+      "start": "2026-09-08",
+      "end": "2028-03-08",
+      "inclusive": true
+    },
+    "website_ingestion": "pending",
+    "archive_name": "Europe_Excluding_Russia_Election_Data_2026-09-15.zip",
+    "archive_sha256": "93a31ec920c770e752cf7f130ffb8a546dce4510a41d9371d5f49239fa2b4ce9",
+    "summary": {
+      "country": "Bosnia and Herzegovina",
+      "office_records": 13,
+      "history_entries": 39,
+      "calendar_cohorts": 1,
+      "companion_offices": 0,
+      "offices_outside_companion": [
+        "BA-201",
+        "BA-202",
+        "BA-203",
+        "BA-204",
+        "BA-205",
+        "BA-206",
+        "BA-207",
+        "BA-208",
+        "BA-209",
+        "BA-210",
+        "BA-F",
+        "BA-G",
+        "BA-R"
+      ],
+      "companion_full_result_rows": 0,
+      "office_briefings": 13,
+      "table_row_counts": {
+        "master/country-coverage": 1,
+        "master/country-notes": 1,
+        "master/parameters": 12,
+        "master/office-register": 13,
+        "master/election-calendar": 1,
+        "master/history-index": 39,
+        "master/detailed-returns": 749,
+        "master/read-me": 13,
+        "master/sources": 28
+      }
+    },
+    "compression": "Concatenate chunks in manifest order to obtain a gzip-compressed POSIX tar archive.",
+    "payload_sha256": "5fb08d2c43f2fff0526c7aa3e95bbd00186aa6a401f409346dd3dbd11ce09c89",
+    "chunks": {
+      "payload/data.tar.gz.part001": {
+        "sha256": "5fb08d2c43f2fff0526c7aa3e95bbd00186aa6a401f409346dd3dbd11ce09c89",
+        "bytes": 75544
+      }
+    },
+    "transformations": [
+      "Original country and office HTML bytes preserved unchanged. Selected master workbook rows are extracted; the original master XLSX remains in the regional ZIP, with its source checksum retained.",
+      "Table arrays preserve row order, headers, original source row numbers, numeric precision and nulls. Recognized Excel dates converted using 1900 epoch to ISO dates; partial date strings remain unchanged.",
+      "Formula text, attributes and original caches retained separately; formulas are not recalculated.",
+      "History index is filtered from the regional CSV and overlaps the master History index table. Do not sum these datasets.",
+      "Master Parameters and Read me are regional methodology, not country totals."
+    ],
+    "inventory": {
+      "path": "inventory.json",
+      "sha256": "078ab3447a2e98daadb382396464c884ca5b72186546108fa81cab847652119f",
+      "bytes": 8132
+    }
+  },
+  "outer_file_inventory": [
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/.gitattributes",
+      "input_kind": "package",
+      "sha256": "8ff6b62cc6e8936633815df991e3490e578e76834ab971d7a3431ea945cacbb1",
+      "byte_count": 23
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/README.md",
+      "input_kind": "package",
+      "sha256": "15f6863da005b6975a66a79e242a6d3c3c116cbcd309c7cddb611bec3eae9589",
+      "byte_count": 3515
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/coverage.json",
+      "input_kind": "package",
+      "sha256": "c339077846a0104e61491238ceb0e78afeabc2a6f6891dbafbc3200ec87728c5",
+      "byte_count": 665
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/extract.py",
+      "input_kind": "package",
+      "sha256": "a832ec09ed10fe655b05adc916e266a037b1815411acf430874c4df3a72ff67d",
+      "byte_count": 12147
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/manifest.json",
+      "input_kind": "package",
+      "sha256": "c284f05cff3d4e3690ac6a19715e70966b72376fef8ce26ced69713d097afa4b",
+      "byte_count": 2085
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/payload/data.tar.gz.part001",
+      "input_kind": "artifact",
+      "sha256": "5fb08d2c43f2fff0526c7aa3e95bbd00186aa6a401f409346dd3dbd11ce09c89",
+      "byte_count": 75544
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/validate.py",
+      "input_kind": "package",
+      "sha256": "e147e2937bbdbdee07892d9a0e90983beda0435db729e3f9d480b6ded3582a63",
+      "byte_count": 3021
+    }
+  ],
+  "unpacked_member_inventory": [
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-201.html",
+      "input_kind": "artifact",
+      "sha256": "e4e28a10c6b9dc802fa8af0a2bc1df3aef3ae472cfd79ed3bdafa72c946bf27a",
+      "byte_count": 11663
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-202.html",
+      "input_kind": "artifact",
+      "sha256": "05d7b91b169d111d05352b015503e9d8d655c42d4dcae8a52f8e9835af63ae30",
+      "byte_count": 9339
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-203.html",
+      "input_kind": "artifact",
+      "sha256": "39241a2da6bf93c60be346effa590bc9d3c0f69efcebf063f1511f639ea273cb",
+      "byte_count": 11897
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-204.html",
+      "input_kind": "artifact",
+      "sha256": "91a1177060d3c5cf1435c76bac6bcb4317b647e2f6e6a9e06432e30b0ed908bc",
+      "byte_count": 10813
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-205.html",
+      "input_kind": "artifact",
+      "sha256": "0cd3e801be4f64a185dca7bc58e8a2ac4509bb2792790825b0afc1f6c0380eb5",
+      "byte_count": 10201
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-206.html",
+      "input_kind": "artifact",
+      "sha256": "367120ee52232cd8e48be05fbcd9790014fce5d5503d9eae422769826ad41575",
+      "byte_count": 10546
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-207.html",
+      "input_kind": "artifact",
+      "sha256": "55196e28ce717480544d7650a757791d6fff6ad02ac7b8b7deca6ad84e181082",
+      "byte_count": 11330
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-208.html",
+      "input_kind": "artifact",
+      "sha256": "e0de34a9c229ec89a47f83576765ee156552870d9b01f1a6138fe427995e44cc",
+      "byte_count": 8838
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-209.html",
+      "input_kind": "artifact",
+      "sha256": "4c3a06d6997fd6e1a571a96055c4d284611503f6404ad9f8565be2b32ad47cfa",
+      "byte_count": 11947
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-210.html",
+      "input_kind": "artifact",
+      "sha256": "94a4c57ef63b7673735e2af821ce4ee16e3ac7fe4a7fa379863539382ce26818",
+      "byte_count": 11260
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-F.html",
+      "input_kind": "artifact",
+      "sha256": "172747ce9fe4e09fdc828bb99e988209b469b45d34fd3e18392fcacd83a556f8",
+      "byte_count": 15828
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-G.html",
+      "input_kind": "artifact",
+      "sha256": "e18d366e85cb7be226b5227b76e40a6361b937e34e9b6c6c6e0722a91d2333fd",
+      "byte_count": 14683
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/Offices/BA-R.html",
+      "input_kind": "artifact",
+      "sha256": "3d30b96074515450b2999a7f0dcf1c0fb6f4821210cafb2354d579c6956d9fff",
+      "byte_count": 16120
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/Office_Briefings/bosnia_and_herzegovina.html",
+      "input_kind": "artifact",
+      "sha256": "8b7565c683a91b413f9630e5cc0ef47bbb1f0a25199b34363c67f3aff225b34f",
+      "byte_count": 135376
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/formula-cache.json",
+      "input_kind": "package",
+      "sha256": "9fd100bc0ab26310463627144053227e68c8ef5d00d32f60bba2a18dddbf54a9",
+      "byte_count": 15386
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/history-index.json",
+      "input_kind": "package",
+      "sha256": "4970ace42cc87e80ddb70a859c6fcd02d165197354bf34aab7caa432e70d9c2d",
+      "byte_count": 21726
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/inventory.json",
+      "input_kind": "package",
+      "sha256": "078ab3447a2e98daadb382396464c884ca5b72186546108fa81cab847652119f",
+      "byte_count": 8132
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/source-links.json",
+      "input_kind": "package",
+      "sha256": "26e76698fe13b627cc612c1d93cb424d70fc45bd8f661f3219db9538bbafd0a0",
+      "byte_count": 2260
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-coverage.json",
+      "input_kind": "package",
+      "sha256": "15933c3b7f5c0d1e5ada9d83b3fec3b73407584f3a84004e04617bdf3f37df12",
+      "byte_count": 285
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+      "input_kind": "package",
+      "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+      "byte_count": 504
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/detailed-returns.json",
+      "input_kind": "package",
+      "sha256": "7d3123dcded64515eafd3d0d2041181bef236d868750964f4e0858576440e479",
+      "byte_count": 227922
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/election-calendar.json",
+      "input_kind": "package",
+      "sha256": "d0498141997f7437cd61d67959617cf7b2f52ebc94afe0fe44b005f5a6d468fd",
+      "byte_count": 555
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/history-index.json",
+      "input_kind": "package",
+      "sha256": "833cfe5104faf5d506b12f4407629b1ee4531fb2df6bfa59c5ecd0961ba3082f",
+      "byte_count": 13313
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+      "input_kind": "package",
+      "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+      "byte_count": 5386
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/parameters.json",
+      "input_kind": "package",
+      "sha256": "47d666fd87eb6c3db5882213d2ef10f36c994fa9f31859aafde37fdb613343e2",
+      "byte_count": 991
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/read-me.json",
+      "input_kind": "package",
+      "sha256": "ac783fd2d95bfb0359c71873c3e0f3e86e11e54564551aaa84440207e49f2540",
+      "byte_count": 3671
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/sources.json",
+      "input_kind": "package",
+      "sha256": "589fa89fe80df78e52a543099d1ff21d9f217b095f317e046ca9bc4069dfc133",
+      "byte_count": 5674
+    }
+  ],
+  "value_status_counts": {
+    "Votes or marks": {
+      "recorded": 749
+    },
+    "Share on stated basis": {
+      "recorded": 749
+    },
+    "Seats": {
+      "recorded": 293,
+      "zero": 369,
+      "unknown": 87
+    }
+  },
+  "history_coverage_counts": {
+    "Full reported party/candidate vector": 26,
+    "Major parties plus published residual Others; no within-Others breakdown": 10,
+    "Full reported party result vector; CEC-citing secondary transcription": 2,
+    "Full reported candidate vote vector": 1
+  },
+  "comparability_counts": {
+    "Eligible vote basis": 36,
+    "Unscored / inapplicable": 3
+  },
+  "research_reviews": [
+    {
+      "scope": "presidential_event_reconciliation",
+      "status": "open",
+      "office_ids": [
+        "BA-G"
+      ],
+      "note": "Republika Srpska replacement/repeat presidential events still require reconciliation. Preserve the three supplied regular-cycle histories; no new dates, proceedings or results are created.",
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/7",
+          "sheet": "Office register",
+          "source_row": 2249,
+          "column": null,
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "scope": "governing_coalition_history",
+      "status": "open",
+      "office_ids": [
+        "BA-205",
+        "BA-210",
+        "BA-206",
+        "BA-F",
+        "BA-207",
+        "BA-202",
+        "BA-R",
+        "BA-G",
+        "BA-209",
+        "BA-203",
+        "BA-201",
+        "BA-208",
+        "BA-204"
+      ],
+      "note": "Governing coalition histories require reconciliation. Historical leaders/results are not current governing control; no control observations supplied.",
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "scope": "calendar_certainty",
+      "status": "open",
+      "office_ids": [
+        "BA-205",
+        "BA-210",
+        "BA-206",
+        "BA-F",
+        "BA-207",
+        "BA-202",
+        "BA-R",
+        "BA-G",
+        "BA-209",
+        "BA-203",
+        "BA-201",
+        "BA-208",
+        "BA-204"
+      ],
+      "note": "All source register rows give 2026-10-04. Preserve day precision with expected certainty from Scheduled cycle / expected; details vary. No claim of a freshly verified legal call.",
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/election-calendar.json",
+          "archive_entry": "tables/master/election-calendar.json",
+          "sha256": "d0498141997f7437cd61d67959617cf7b2f52ebc94afe0fe44b005f5a6d468fd",
+          "json_pointer": "/rows/0/6",
+          "sheet": "Election calendar",
+          "source_row": 21,
+          "column": "Date status",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "scope": "not_supplied",
+      "status": "open",
+      "office_ids": [],
+      "note": "No Brčko office or municipal office appears in the register. Do not create a dummy office or reinterpret BA-G. No explicit parent-geography relationships are supplied; retain institution scope and jurisdiction with nullable parents.",
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "",
+          "sheet": "Office register",
+          "source_row": null,
+          "column": null,
+          "html_anchor_index": null
+        }
+      ]
+    }
+  ],
+  "package_validation": "PASS: Bosnia and Herzegovina: 13 offices, 39 history entries, 27 verified payload files",
+  "applied_changes": 0,
+  "importer_ci": "Not run"
+}

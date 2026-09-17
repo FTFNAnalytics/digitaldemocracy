@@ -1,7 +1,14 @@
 import { readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 
-const PHASE0_SLUGS = new Set(["albania", "andorra", "alderney", "armenia", "austria"]);
+const PHASE0_SLUGS = new Set([
+  "albania",
+  "andorra",
+  "alderney",
+  "armenia",
+  "austria",
+  "bosnia-and-herzegovina",
+]);
 
 export type ContinuityTierPack = {
   countryId: string;

@@ -1,0 +1,393 @@
+{
+  "status": "documentation_and_tier_draft_checks_passed",
+  "pinned_main_commit": "6e6426fe17f6f542b58b68f8607124e007b852ff",
+  "pinned_package_commit": "98408339e233e8580ec535cc24e8762ff5c6533f",
+  "package_pr": 15,
+  "tier_status": "draft_for_human_review",
+  "tier_sha256": "3d0be674f3d5b77b3a92362b82815d7bd3305473820e3279999fc82e5f3c51c1",
+  "verified_counts": {
+    "current_offices": 13,
+    "geographies": 13,
+    "entity_offices": 3,
+    "cantonal_assembly_offices": 10,
+    "regional_offices_proposed": 13,
+    "municipal_offices_proposed": 0,
+    "other_offices_proposed": 0,
+    "approved_classifications": 0,
+    "focused_tier_reviews": 3,
+    "companion_offices": 0,
+    "master_histories": 39,
+    "index_histories": 39,
+    "overlap_histories": 39,
+    "selected_histories": 39,
+    "prospective_events": 13,
+    "total_events": 52,
+    "research_dates": 52,
+    "historical_dates_year": 39,
+    "prospective_dates_day_expected": 13,
+    "calendar_cohorts": 1,
+    "detailed_return_rows": 749,
+    "companion_full_result_rows": 0,
+    "source_catalogue_rows": 28,
+    "inline_only_sources": 2,
+    "sources": 30,
+    "office_briefings": 13,
+    "country_briefings": 1,
+    "poll_records_supplied": 0,
+    "control_observations_supplied": 0,
+    "proceedings": 0,
+    "party_mappings": 0,
+    "outer_package_files": 7,
+    "payload_member_files": 27,
+    "retained_inputs": 35
+  },
+  "applied_changes": 0,
+  "repository_files_changed": 0,
+  "frozen_research_changes": 0,
+  "other_country_or_continuity_or_Mexico_changes": 0,
+  "DDL_changes": 0,
+  "importer_code_written": false,
+  "SQLite_rows_loaded": 0,
+  "importer_publication_CI": "Not run",
+  "application_test_lint_build": "Not run",
+  "VPS_work": "Not run",
+  "UI_work": "Not run",
+  "destination_columns": 223,
+  "destination_tables": 20,
+  "source_tables": 9,
+  "worked_examples": 17,
+  "locators_checked": 1010,
+  "source_package_validator": {
+    "command": "python data/countries/bosnia-and-herzegovina/validate.py",
+    "cwd": "isolated immutable PR package materialization",
+    "exit_code": 0,
+    "stdout": "PASS: Bosnia and Herzegovina: 13 offices, 39 history entries, 27 verified payload files"
+  },
+  "recovery_note": "Reproduced payload from checksum-verified original Europe archive using frozen extract.py in separate scratch copy; matched PR git blob and manifest SHA256 before validation.",
+  "protected_bytes_scope": "All materialized main contracts/PR package files reverified against immutable git blobs. Existing repository clean;no remote writes. Other-country/Mexico/continuity files never opened for mutation.",
+  "protected_pinned_files": [
+    {
+      "path": "docs/atlas-plan.md",
+      "sha256": "b8b953b8ce3649e4153fc6e460a391b4c40c7d8954c934f95133599c62001195",
+      "git_blob_sha": "f42209188911e4dac1c5ac2197f9fd0a1c346fbc"
+    },
+    {
+      "path": "data/countries/bosnia-and-herzegovina/manifest.json",
+      "sha256": "c284f05cff3d4e3690ac6a19715e70966b72376fef8ce26ced69713d097afa4b",
+      "git_blob_sha": "4cbe5bd8759d7cdfb6692cfd879629b84bb2647a"
+    },
+    {
+      "path": "data/countries/bosnia-and-herzegovina/README.md",
+      "sha256": "15f6863da005b6975a66a79e242a6d3c3c116cbcd309c7cddb611bec3eae9589",
+      "git_blob_sha": "cfe4e9ababb78c103af07865e619e71ef57d6a3e"
+    },
+    {
+      "path": "data/countries/bosnia-and-herzegovina/coverage.json",
+      "sha256": "c339077846a0104e61491238ceb0e78afeabc2a6f6891dbafbc3200ec87728c5",
+      "git_blob_sha": "df0f7a7086c4e916c291e72961682c8cd05997e3"
+    },
+    {
+      "path": "data/countries/bosnia-and-herzegovina/extract.py",
+      "sha256": "a832ec09ed10fe655b05adc916e266a037b1815411acf430874c4df3a72ff67d",
+      "git_blob_sha": "96978f2b88f1e1791e9af730810ecb5c479c5f8a"
+    },
+    {
+      "path": "data/countries/bosnia-and-herzegovina/validate.py",
+      "sha256": "e147e2937bbdbdee07892d9a0e90983beda0435db729e3f9d480b6ded3582a63",
+      "git_blob_sha": "5ce299016d91c3aaaf79c9ef7051f9a9d365542b"
+    },
+    {
+      "path": "data/countries/bosnia-and-herzegovina/.gitattributes",
+      "sha256": "8ff6b62cc6e8936633815df991e3490e578e76834ab971d7a3431ea945cacbb1",
+      "git_blob_sha": "0ebc8eef4d7d76ebaacde4735e2e32096de09e64"
+    },
+    {
+      "path": "data/countries/bosnia-and-herzegovina/payload/data.tar.gz.part001",
+      "sha256": "5fb08d2c43f2fff0526c7aa3e95bbd00186aa6a401f409346dd3dbd11ce09c89",
+      "git_blob_sha": "d69c335251712984059b0656431187e64f77d6a3"
+    },
+    {
+      "path": "lib/atlas/identity.ts",
+      "sha256": "8be58bfe59a32110cfe6635c7d51ca73cd469b984179a7ab6083522698626444",
+      "git_blob_sha": "197328049f153f96c1147afe962d6c9f20404187"
+    },
+    {
+      "path": "lib/observatory/adapters/inventory.ts",
+      "sha256": "ede87d431ccc5647335f0768167cbfdac12131beabbb9fd53db97c891b87f53d",
+      "git_blob_sha": "75ce52fdb8fd33aca68a1861a9787c0fa8eba61a"
+    },
+    {
+      "path": "lib/observatory/adapters/tables.ts",
+      "sha256": "fd2c8e73e0aacd5739f06801eabd96d7e5c403b8abf7b8e2a0ac68e1fc3a5109",
+      "git_blob_sha": "d5fd4090fa3af82c493f4ed46e72f5114baab6a5"
+    },
+    {
+      "path": "lib/observatory/adapters/armenia.ts",
+      "sha256": "bf4d7747186e788a8d775a100ebe15c4b4dc3d8cfe8f0cc45b1c1edba9b8b6ac",
+      "git_blob_sha": "50dc7f2ff2c3d845c597440faca3d75cdb6e90f8"
+    },
+    {
+      "path": "lib/observatory/adapters/europe.ts",
+      "sha256": "031b031fe8dbb08d906925be0701e9c3e9d39fca667fd1e03d906cef58e8bb4c",
+      "git_blob_sha": "61a9b3534239cd9e82692b37254efbece0d2eefb"
+    },
+    {
+      "path": "docs/phase1/Albania_Field_Map.md",
+      "sha256": "b2386dc56c19fccb13f91c8acd2b07a1f662a6a6f7b8da5abe55149b3e4c27fb",
+      "git_blob_sha": "d058051f0919dde48d0e6941bcdb5f4135d316b5"
+    },
+    {
+      "path": "docs/phase1/Albania_Acceptance_Examples.md",
+      "sha256": "43cca0f54e46afb8eda65713c14c1d0ac7a9f406ac34ad069530411c6da46b40",
+      "git_blob_sha": "1294fce3daefb9b0763a6818437a7848a5b1971a"
+    },
+    {
+      "path": "docs/phase1/Phase1_DDL_Rationale.md",
+      "sha256": "90bb905e8303812c92f861f8e6a7571e570dab653360f2965e681e84fc652806",
+      "git_blob_sha": "345836a5ae775839c2aef6ffe10dc48951d1a246"
+    },
+    {
+      "path": "docs/phase1/Albania_Identity_Rules.md",
+      "sha256": "def15d98a8bf41cad8623bc09b65ee55af499edb2dc1c4c65a41216d95ed4d0c",
+      "git_blob_sha": "3c0ea8878608533543cf5c04c76aececb5c311db"
+    },
+    {
+      "path": "docs/phase1/Prompt_C_Field_Map_and_CI.md",
+      "sha256": "db6aacce8f3d353b730339e06c79027bd27f543eb1f913f0d9be4655b671239d",
+      "git_blob_sha": "e9ba63400d63b1897b4a2737478c478515a221da"
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Acceptance_Examples.md",
+      "sha256": "b4a0f73099edf06d988fc798e31ba0bd8827009613b27b82995ddddc44bf343e",
+      "git_blob_sha": "cd73f0bb04243ed3fa9fb1e74023117dcd8d98d8"
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Input_Inventory.json",
+      "sha256": "b4a97e07a0ac118570f293baf208ff6679763f740950ec46ba640a94322a27cd",
+      "git_blob_sha": "b7a89477e1cf08063ffa56975a299fd9f36026ac"
+    },
+    {
+      "path": "docs/phase1/armenia/validation.json",
+      "sha256": "44fbf7c4ce250c1d264197c8d2de1bee442ce3b6f3fa2ebd3b609dc303da81ad",
+      "git_blob_sha": "f85e291c78af18bae1a2869dfc07627934b10c5e"
+    },
+    {
+      "path": "docs/phase1/armenia/README.md",
+      "sha256": "5c3f453d0b0972c0818e25aac422a3a9689c32f4bd06f4f433709dce001d39c7",
+      "git_blob_sha": "b39d4b4fc28895bc77fdb6944f36920d0294ff09"
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Identity_Vectors.json",
+      "sha256": "6ac9dc488252bacace33e6324be331f716dbfcf29acc1a3e43c6b75d8e702b0f",
+      "git_blob_sha": "cff032eb6339e3596a68712ac9b007c1cff5673e"
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Identity_Rules.md",
+      "sha256": "9d076e4641556d4b1b5bd03656bc7190b4c9af3c9d937ac79bf9ddc4de147858",
+      "git_blob_sha": "02fd73c353b3e48b477daffa9047ab82ce2a680e"
+    },
+    {
+      "path": "docs/phase1/armenia/Prompt_L_Tiers_Field_Map_and_CI.md",
+      "sha256": "1a3faba9097ecb80a5ea5da59d61f400e40537902f9764943ca1f5f0fdba6fd8",
+      "git_blob_sha": "77c30fb71ceec27fe8caf29dedab5c6cc3989284"
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Field_Map.md",
+      "sha256": "d9009d6f594b6f416fab5732891d33ae888b593483f8bf6b31c296b66e92d390",
+      "git_blob_sha": "a6cc6d02c9816176066dd65c41b873b10cba853b"
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Field_Map.md",
+      "sha256": "689a4f9fe6878747617b2d8e1939e5cf1e1a21196cfb6e989fc6b1fbceb8a95a",
+      "git_blob_sha": "c4c58724a407cebafa3348b6527eb8c72d1142ae"
+    },
+    {
+      "path": "docs/phase1/andorra/validation.json",
+      "sha256": "e024b82a73fd87423c3b6a433335926bca54d8eced0275cbf1c290d7200d73e4",
+      "git_blob_sha": "4806f75ba85928ddb4fe63b38aa572608997e647"
+    },
+    {
+      "path": "docs/phase1/andorra/README.md",
+      "sha256": "f1a45b115b129a0ed6b95b8ce6a63258ee07fa94144d23e36da95913bf5537b1",
+      "git_blob_sha": "42d514be79bd6f2f769763d63875cb5ac78bc2af"
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Input_Inventory.json",
+      "sha256": "edbe91f086c50be5d8e6cf1a41822ae38656ee14b2ea5b40dac1c5c4e9a5e502",
+      "git_blob_sha": "e59846f5970826285d15298496539ea00fdd7ebc"
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Identity_Rules.md",
+      "sha256": "0fdbe91ba08b0a93df0d9d5986e7a7c2311fcd6333440325c610ae24648b14cf",
+      "git_blob_sha": "2c508a61e80db6f11c65e6465f0705c40a55c45d"
+    },
+    {
+      "path": "docs/phase1/andorra/Prompt_J_Field_Map_and_CI.md",
+      "sha256": "a54957388301689ef62e3f2e8d070816a36a482725dddcce7e29bea38a38fa57",
+      "git_blob_sha": "6611e86e5f581e048f8b78b4ce3afc5d129069f0"
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Identity_Vectors.json",
+      "sha256": "f6816fd1dd008d6900f7240f0e2e20f89dc020ad0ab879de813bd48687c94dae",
+      "git_blob_sha": "febf05af2de96459e535ad6802c12dda25a92463"
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Acceptance_Examples.md",
+      "sha256": "884e3ecdf80323b63f888ac52567e0b9465101edf444c42c332f015954661354",
+      "git_blob_sha": "a9a7ea491e332e926210a547a11160fb995c63c6"
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Identity_Vectors.json",
+      "sha256": "f72120451c361dd9dd607ee91a619e42be638757466a22119c68a8534f49f525",
+      "git_blob_sha": "e83cf1b2d60fa8bacb3dfc50b12814830011aeab"
+    },
+    {
+      "path": "docs/phase1/alderney/validation.json",
+      "sha256": "368203ecad35c7177aa3ad24d87d9c6c17e82d096e7d602d933c616335f36f57",
+      "git_blob_sha": "6416d2b89bfd2499a2d20d18482f9e373a508f5e"
+    },
+    {
+      "path": "docs/phase1/alderney/README.md",
+      "sha256": "a1bb05f5f92c5f1a3f9211f05e39b436ac1230e59ba62245b6ad057ecdc6a09f",
+      "git_blob_sha": "09535554217efb46a415ec5812c359be178a27b4"
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Identity_Rules.md",
+      "sha256": "70d7d8bb32e1aff5c2e8114ecda98689f56253611cb38d90c4fc84bc710516ff",
+      "git_blob_sha": "8bf338ece929de5ed47de40b07dffa6a4e6f16a5"
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Acceptance_Examples.md",
+      "sha256": "ac4fb64b1a803d3b24c9f88459fa55b60e3f70291c021d4253f6f400e4482f69",
+      "git_blob_sha": "69fd1a480b929b2c7b1ff83dcc55d04b8c6e5908"
+    },
+    {
+      "path": "docs/phase1/alderney/Prompt_K_Field_Map_and_CI.md",
+      "sha256": "6f7ee2cd5c75c26434377dcea3ecb2f5a8549182fe1ab50dd5cbe1ae6c86bab1",
+      "git_blob_sha": "84a106f19c3d0071fef9d17fd0ce0da581b6ebbf"
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Input_Inventory.json",
+      "sha256": "f59eb0ae26cbeafa7504872f4003db112d4b0d3cc6cb5c000b0b9e66750df18e",
+      "git_blob_sha": "ce2328c0af758a3e746b26b4b871900df49a9b40"
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Field_Map.md",
+      "sha256": "27b19c201b7e9516bde710575731c06336db4e0d87ddb380bf9c1583ced4acf0",
+      "git_blob_sha": "40b87ff4044e4e41d2207c8ff04e9fcd71860f29"
+    },
+    {
+      "path": "schemas/atlas/migrations/0002_atlas_master.sql",
+      "sha256": "1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da",
+      "git_blob_sha": "993d6cc69161e6ca294f10af6f8dab250798de59"
+    },
+    {
+      "path": "schemas/atlas/migrations/README.md",
+      "sha256": "ac339efd00bd5d8df8827d9aaf4a9a09ff66cd696848c095658178170afe94bd",
+      "git_blob_sha": "7184998369f2edc7d8303fe586332571b714d3ca"
+    },
+    {
+      "path": "schemas/atlas/migrations/0001_atlas_attempt_log.sql",
+      "sha256": "e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1",
+      "git_blob_sha": "74c160dd4aa293ed0ce576c2a23a9e8fd175c02d"
+    },
+    {
+      "path": "schemas/atlas/tiers/albania.json",
+      "sha256": "53a31d441761952a9f511c58a397e7877616c0ad6af30dce7587bcb6bcbbd93d",
+      "git_blob_sha": "e24bf5d1c366b37086afae372b91c9e48c3c6539"
+    },
+    {
+      "path": "schemas/atlas/tiers/armenia.json",
+      "sha256": "2905af1a2a1465f32e457657f5a900c556757b7964f37c8c57adeb86d4a80b7a",
+      "git_blob_sha": "8addba0ea08db5aeea6582e6d4aa56dd560db56b"
+    },
+    {
+      "path": "scripts/import/normalize.ts",
+      "sha256": "54450ad61e54d14aa142a69a205ebd42d2b4fac8165da91e55a62f298ba3f06a",
+      "git_blob_sha": "6eb59a159eebf134a8527435b9890c80669ea7f4"
+    }
+  ],
+  "JS_vector_validation": "PASS: independent JavaScript canonical fingerprint;13 geography,52 event/date,749 result,30 source URL-alias vectors",
+  "checks": {
+    "pins_exact": true,
+    "Bosnia_absent_current_main": true,
+    "all_materialized_pinned_bytes_unchanged": true,
+    "223_columns20_tables": true,
+    "DDL_column_set:dataset_lineage": true,
+    "mapped_column_set:dataset_lineage": true,
+    "DDL_column_set:dataset_release": true,
+    "mapped_column_set:dataset_release": true,
+    "DDL_column_set:retained_input": true,
+    "mapped_column_set:retained_input": true,
+    "DDL_column_set:country": true,
+    "mapped_column_set:country": true,
+    "DDL_column_set:geography": true,
+    "mapped_column_set:geography": true,
+    "DDL_column_set:office": true,
+    "mapped_column_set:office": true,
+    "DDL_column_set:office_tier_classification": true,
+    "mapped_column_set:office_tier_classification": true,
+    "DDL_column_set:research_date": true,
+    "mapped_column_set:research_date": true,
+    "DDL_column_set:election_event": true,
+    "mapped_column_set:election_event": true,
+    "DDL_column_set:proceeding": true,
+    "mapped_column_set:proceeding": true,
+    "DDL_column_set:result_row": true,
+    "mapped_column_set:result_row": true,
+    "DDL_column_set:party_mapping": true,
+    "mapped_column_set:party_mapping": true,
+    "DDL_column_set:source": true,
+    "mapped_column_set:source": true,
+    "DDL_column_set:record_locator": true,
+    "mapped_column_set:record_locator": true,
+    "DDL_column_set:evidence_link": true,
+    "mapped_column_set:evidence_link": true,
+    "DDL_column_set:unresolved_evidence": true,
+    "mapped_column_set:unresolved_evidence": true,
+    "DDL_column_set:identity_crosswalk": true,
+    "mapped_column_set:identity_crosswalk": true,
+    "DDL_column_set:publication_release": true,
+    "mapped_column_set:publication_release": true,
+    "DDL_column_set:publication_receipt": true,
+    "mapped_column_set:publication_receipt": true,
+    "DDL_column_set:ingest_attempt": true,
+    "mapped_column_set:ingest_attempt": true,
+    "35_input_hashes": true,
+    "schema_hash:0001_atlas_attempt_log.sql": true,
+    "schema_hash:0002_atlas_master.sql": true,
+    "exact13office_ID_set": true,
+    "all_draft_regional": true,
+    "three_entity_reviews": true,
+    "notes_only_existing_IDs": true,
+    "tier_hash": true,
+    "register_hash_bytes": true,
+    "entity_and_canton_types": true,
+    "BA_G_President_RS": true,
+    "no_companion": true,
+    "9_source_tables_all_columns": true,
+    "39_exact_history_keys_overlap": true,
+    "all_H_IX_values_normalize_exactly": true,
+    "52_unique_events_dates": true,
+    "roles39selected13next": true,
+    "dates39year13expected_day": true,
+    "source_calendar_qualifier": true,
+    "749_unique_results39events": true,
+    "749_unique_semantic_bindings": true,
+    "numeric_value_status_roundtrip": true,
+    "domain_checks": true,
+    "seats_zero369_missing87": true,
+    "13_geography_bindings": true,
+    "sources28plus2": true,
+    "all_HTML_urls_resolve": true,
+    "all_locators_hash_pointer_source_row": true,
+    "17_examples": true,
+    "26_Done20_Not_run": true,
+    "Markdown_links_exist": true,
+    "repository_clean": true,
+    "only_Bosnia_tier_deliverable": true,
+    "independent_JS_vectors": true,
+    "package_validator_PASS": true
+  },
+  "manifest_policy": "SHA256SUMS covers every payload except itself;external receipt gives manifest/ZIP digests. ZIP readback verifies exact file set,hashes and CRC."
+}
