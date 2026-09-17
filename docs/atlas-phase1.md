@@ -4,13 +4,15 @@ Working notes for the first implementation PR. The contract remains
 [atlas-plan.md](atlas-plan.md). This file records what has landed and which
 Prompt C gates are automated versus deferred.
 
-`/electiondatabase` stays the live observatory. **No `/atlas` routes or redirects.**
+`/electiondatabase` stays the live observatory until cutover. **`/atlas` index /
+countries / offices exist.** **No redirects.** `/atlas/explorer` is not on main.
 
 Phase 0 inventory drafts (Europe packages, tier files, LatAm/NZ continuity) live
 in [docs/phase0/REPORT.md](phase0/REPORT.md). Prompt B / Prompt C artifacts live in
 [docs/phase1/](phase1/Phase1_DDL_Rationale.md). Prompt D continuity documentation
-(LatAm/NZ field maps; implementation CI Not run) lives in
-[docs/phase2/](phase2/README.md).
+and approved-pack import live in [docs/phase2/](phase2/README.md)
+(`npm run test:atlas-import` runs in CI). Live `main` as of 2026-09-17 is
+summarized at the top of [atlas-plan.md](atlas-plan.md).
 
 ## What this PR lands
 
@@ -20,7 +22,7 @@ in [docs/phase0/REPORT.md](phase0/REPORT.md). Prompt B / Prompt C artifacts live
 | Path override | `ATLAS_SQLITE_PATH` via `lib/atlas/paths.ts`. Default: `data/master/atlas.sqlite`. Production: `/var/lib/cdd/atlas.sqlite` |
 | Attempt ledger path | `ATLAS_ATTEMPTS_SQLITE_PATH`. Default: `data/master/atlas-attempts.sqlite`. Production: `/var/lib/cdd/atlas-attempts.sqlite` |
 | `npm run migrate:atlas` | `scripts/atlas/migrate.ts` — applies attempt-log SQL to the attempts DB and master SQL to the master DB |
-| `npm run import:atlas` | `scripts/atlas/import.ts` — Albania Phase 1 importer (atomic publish + durable attempt ledger) |
+| `npm run import:atlas` | `scripts/atlas/import.ts` — Albania Phase 1 importer plus Andorra / Alderney / Armenia and approved LatAm/NZ continuity (`ATLAS_IMPORT_SCOPE`) |
 | Albania importer | `lib/atlas/albania/` (`import.ts`, `inventory.ts`, `project.ts`, `write.ts`) plus shared `lib/atlas/{ledger,publish,sqlite,identity,apply-migrations}.ts` |
 | Attempt-log DDL | `schemas/atlas/migrations/0001_atlas_attempt_log.sql` (**attempts DB only**) |
 | Master DDL | `schemas/atlas/migrations/0002_atlas_master.sql` (**master/staging only**) |
@@ -29,12 +31,12 @@ in [docs/phase0/REPORT.md](phase0/REPORT.md). Prompt B / Prompt C artifacts live
 | Albania field map | [docs/phase1/Albania_Field_Map.md](phase1/Albania_Field_Map.md) |
 | Albania identity rules | [docs/phase1/Albania_Identity_Rules.md](phase1/Albania_Identity_Rules.md) |
 | Albania acceptance examples | [docs/phase1/Albania_Acceptance_Examples.md](phase1/Albania_Acceptance_Examples.md) |
-| Andorra Prompt J field map | [docs/phase1/andorra/](phase1/andorra/Prompt_J_Field_Map_and_CI.md) — Europe #2 mapping **Done**; importer CI **Not run** (Albania remains Phase 1 storage proof) |
-| Armenia Prompt L field map | [docs/phase1/armenia/](phase1/armenia/Prompt_L_Tiers_Field_Map_and_CI.md) — Europe #4 mapping **Done**; importer CI **Not run** |
+| Andorra Prompt J field map | [docs/phase1/andorra/](phase1/andorra/Prompt_J_Field_Map_and_CI.md) — Europe #2 mapping **Done**; importer landed (PR #23) |
+| Armenia Prompt L field map | [docs/phase1/armenia/](phase1/armenia/Prompt_L_Tiers_Field_Map_and_CI.md) — Europe #4 mapping **Done**; importer landed (PR #26) |
 | Austria Prompt N field map | [docs/phase1/austria/](phase1/austria/Prompt_N_Tiers_Field_Map_and_CI.md) — mapping **Done**; importer CI **Not run** (package on main via PR #11; Atlas importer waits) |
 | Named CI | `tests/atlas/import.test.ts` (Prompt C gates) and `tests/atlas/cli.test.ts` (migrate + import CLI) |
 | Phase 0 inventory | `docs/phase0/` (`REPORT.md`, `inventory.json`, `continuity-counts.json`, `human-review.json`) |
-| Prompt D continuity docs | [docs/phase2/](phase2/README.md) — field maps, identity rules, acceptance examples, checklist (**documentation complete; importer CI Not run**) |
+| Prompt D continuity docs | [docs/phase2/](phase2/README.md) — field maps, identity rules, acceptance examples, checklist; approved-pack importer CI runs (`npm run test:atlas-import`) |
 | Tier-classification files | `schemas/atlas/tiers/albania.json` (**approved** municipal); `alderney.json` (**approved** `other`); `andorra.json` (**approved** municipal, Justin 2026-09-16); `armenia.json` (**approved** municipal, Prompt L 2026-09-17; five boundary/calendar reviews remain open); `austria.json` (**approved** 2,034 municipal / 4 regional, Prompt N 2026-09-17; package on main via PR #11; St. Georgen 2015 hold retained; Atlas importer waits) |
 
 `migrate:atlas` may create local gitignored DBs with empty typed tables. Empty schema is **not** Phase 1 exit. `import:atlas` against the frozen Albania package is the storage proof: 122 offices, 366 selected histories, 3,843 result rows, 122 municipal / 0 regional, 185 sources (182 catalogue + 3 inline), 122 briefings retained, proceedings=0, party_mappings=0.
@@ -48,12 +50,13 @@ Do not reuse a draft-path fingerprint.
 
 Alderney `other` is **approved** (2026-09-16); Channel Islands are low priority
 for the broader Atlas. Andorra Prompt J docs are in
-[docs/phase1/andorra/](phase1/andorra/README.md) (mapping Done; execution CI Not run);
-Albania remains Phase 1 storage proof and Andorra is Europe #2 field map.
-Armenia Prompt L docs are in
-[docs/phase1/armenia/](phase1/armenia/README.md) (mapping Done; execution CI Not run);
-geographic tiers are **approved** (71 municipal / 0 regional). Five boundary/calendar
-research reviews remain open separately from tier approval.
+[docs/phase1/andorra/](phase1/andorra/README.md); the Andorra importer landed
+(PR #23). Alderney Prompt K docs are in
+[docs/phase1/alderney/](phase1/alderney/README.md); the Alderney importer landed
+(PR #24). Armenia Prompt L docs are in
+[docs/phase1/armenia/](phase1/armenia/README.md); the Armenia importer landed
+(PR #26). Geographic tiers are **approved** (71 municipal / 0 regional). Five
+boundary/calendar research reviews remain open separately from tier approval.
 Austria Prompt N docs are in
 [docs/phase1/austria/](phase1/austria/README.md) (mapping Done; execution CI Not run);
 geographic tiers are **approved** (2,034 municipal / 4 regional). The Austria
@@ -97,13 +100,13 @@ Gates from [Prompt_C_Field_Map_and_CI.md](phase1/Prompt_C_Field_Map_and_CI.md)
 | Publication continuity | **Deferred.** **TODO (Prompt C “Publication continuity”):** small metadata fixture for additional lineage IDs without a LatAm load. | — |
 | Filesystem publication / recovery | **Partial.** Same-FS staging, WAL checkpoint, atomic rename, fsync, writer lock, interrupted `started` reconciliation. **TODO (Prompt C “Filesystem publication / recovery”):** busy WAL, fsync failure injection, crash-before/after-rename, never-delete-live-WAL probes. | `lib/atlas/publish.ts`, `lib/atlas/ledger.ts` |
 | Restore | **Deferred.** **TODO (Prompt C “Restore”):** restore a known prior snapshot into a scratch path and verify schema/release/office content. Prior release metadata is retained on corrected import; full snapshot restore is not yet a named test. | — |
-| Existing project gates | **Required in CI.** `npm test`, `npm run lint`, `npm run validate:data`, `npm run build`. No public route changes. | `.github/workflows/ci.yml`, `tests/atlas/routes.test.ts` |
+| Existing project gates | **Required in CI.** `npm test`, `npm run lint`, `npm run validate:data`, `npm run build`. `/atlas` index/countries/offices exist; `/electiondatabase` still live; no redirects. | `.github/workflows/ci.yml`, `tests/atlas/routes.test.ts` |
 
 ## Phase 1 exit criteria (not all claimed here)
 
 From [atlas-plan.md](atlas-plan.md) Phase 1. Exit only when all of these are done:
 
-1. No public route changes (still true after this PR).
+1. Phase 1 PRs added no public routes. Later PRs added `/atlas` index/countries/offices; `/electiondatabase` remains live; **no redirects**.
 2. `.gitignore` for `*.sqlite` / `data/master/` (this PR).
 3. `ATLAS_SQLITE_PATH` (this PR) and `ATLAS_ATTEMPTS_SQLITE_PATH` (this PR).
 4. `migrate:atlas` / `import:atlas` entrypoints (this PR; import is the Albania importer).
@@ -128,8 +131,9 @@ Deferred Prompt C rows above are **not** waived. They remain required before cla
 | Albania tier file | **Approved** 2026-09-16 at `schemas/atlas/tiers/albania.json` (122 municipal office IDs; regional=0 intentional). |
 | Alderney `other` | **Approved** 2026-09-16 at `schemas/atlas/tiers/alderney.json`. |
 | Albania map | Proposed 46-municipality 2027 map is unverified in the package; geometry is not invented. |
-| Prompt D continuity docs | **Documentation complete** in [docs/phase2/](phase2/README.md). No LatAm/NZ importer, invented tiers, or Mexico share edits. |
-| Andorra Prompt J field map | **Documentation complete** in [docs/phase1/andorra/](phase1/andorra/README.md). Mapping Done; importer CI Not run. Approved `andorra.json` bytes unchanged. |
+| Prompt D continuity docs | **Documentation complete** in [docs/phase2/](phase2/README.md). Approved LatAm/NZ packs import; residual-heavy drafts skipped. No invented tiers. Production Mexico override still original 67. |
+| Andorra Prompt J field map | **Documentation complete** in [docs/phase1/andorra/](phase1/andorra/README.md). Importer landed (PR #23). |
+| Alderney Prompt K / Armenia Prompt L | Importers landed (PRs #24 / #26). Tiers approved. |
 | Austria Prompt N field map | **Documentation complete** in [docs/phase1/austria/](phase1/austria/README.md). Mapping Done; importer CI Not run. Package on main via PR #11. Approved `austria.json` is 2,034 municipal / 4 regional. |
 
-Also out of scope until later phases: `/atlas` UI, redirects, VPS deploy, Latin America / NZ ingest, tightness. Armenia remains last among early European targets. Prompt D prerequisites still open: 21 LatAm country tier files + NZ tier file (approved), Mexico share overrides, multi-lineage import.
+Still out of scope: `/atlas/explorer`, redirects, cutover, residual-heavy draft packs, tightness, and an Austria Atlas importer. Austria **package** and Prompt N approved tiers are on main (PRs #11 / #28). Prompt M 95 sibling withholds: disposition accepted 2026-09-17 and docs PR #27 landed; production override remains 67.

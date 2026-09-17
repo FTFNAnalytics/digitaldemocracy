@@ -1,8 +1,8 @@
 # Election Atlas — restructuring plan
 
-**Status:** Phase 0 plan is on main. Phase 1 **scaffolding** (gitignore, `ATLAS_SQLITE_PATH` / `ATLAS_ATTEMPTS_SQLITE_PATH`, migrate/import entrypoints, Prompt B DDL, completed Prompt C Albania docs, Albania importer) is tracked in [`docs/atlas-phase1.md`](atlas-phase1.md). Phase 0 inventory and tier files are in [`docs/phase0/`](phase0/REPORT.md) and [`schemas/atlas/tiers/`](../schemas/atlas/tiers/README.md) (Albania municipal and Alderney `other` **approved** 2026-09-16; Andorra and Armenia remain `draft_for_human_review`). Prompt B draft DDL is in [`schemas/atlas/migrations/`](../schemas/atlas/migrations/README.md); Albania storage proof is `import:atlas` against the frozen package. Prompt D continuity documentation (LatAm/NZ; CI Not run) is in [`docs/phase2/`](phase2/README.md). No `/atlas` UI or redirects.
+**Status (2026-09-17):** Phase 0 plan is on main. Phase 1 Albania storage proof and early-Europe/continuity ingest are on main and live on the VPS at `/atlas` — Albania, Andorra, Alderney, Armenia, plus **approved** LatAm/NZ packs. Albania municipal and Alderney `other` are **approved**; Andorra, Armenia, and Austria geographic tiers are **approved**. `/atlas` UI exists (index / countries / offices). `/atlas/explorer` is **not** on main. Cutover from `/electiondatabase` is **not** done — do not flip redirects. Locked decisions (`/atlas`, SQLite, Europe-first) stand. See [Current state (2026-09-17)](#current-state-2026-09-17). Working notes: [`docs/atlas-phase1.md`](atlas-phase1.md), [`docs/phase2/`](phase2/README.md), [`schemas/atlas/tiers/`](../schemas/atlas/tiers/README.md).
 
-**Phase 0** (this plan) merges when Justin says. **Phase 1 is un-gated by Justin’s disposition on this revision** — it does not wait on open-ended further audits. After Phase 1 exits, **stop for Phase 2 review**.
+**Phase 0** (this plan) is merged. **Phase 1 Albania storage proof has landed.** Phase 2 continuity ingest of approved packs and the `/atlas` shell (index / countries / offices) have landed; explorer, remaining residual-heavy packs, an Austria Atlas importer, and cutover have not. The Austria **package** and Prompt N approved tiers are on main (PRs #11 / #28); the Atlas importer waits.
 
 **Product:** Center for Digital Democracy — Election Atlas  
 **Repository:** [FTFNAnalytics/digitaldemocracy](https://github.com/FTFNAnalytics/digitaldemocracy)  
@@ -10,6 +10,28 @@
 **Target public research app:** Election Atlas at `/atlas`
 
 This plan is the working agreement for how the observatory becomes the Atlas. It does not reopen the four product-owner decisions below. Later implementation PRs execute the phases; they do not renegotiate URL, storage, first vertical, or launch depth.
+
+---
+
+## Current state (2026-09-17)
+
+Verified against `FTFNAnalytics/digitaldemocracy` `main` (`3ef34d3`, Prompt N PR #28 merged after Austria package PR #11 `f0f2c86` and Prompt M docs PR #27). Do not treat the figures below as live VPS office totals; they are statuses and dispositions, not a coverage KPI.
+
+| Surface | On main / live | Notes |
+| --- | --- | --- |
+| VPS `/atlas` | Live | Early Europe (Albania, Andorra, Alderney, Armenia) plus approved LatAm/NZ continuity. `/electiondatabase` remains the public observatory. |
+| `/atlas` UI | Index, countries, offices | `app/atlas/page.tsx`, `countries/[countryId]`, `offices/[officeId]`. Reads Atlas SQLite. |
+| `/atlas/explorer` | **Not on main** | Still required at cutover. Do not claim done. |
+| Redirects / cutover | **Not done** | No `/electiondatabase` → `/atlas` redirects in `next.config.ts`. Do not flip. |
+| Albania | Importer + municipal tiers **approved** (2026-09-16) | Phase 1 storage proof. Regional=0 by design. |
+| Andorra | Importer (PR #23) + municipal tiers **approved** (2026-09-16) | Europe #2. |
+| Alderney | Importer (PR #24) + `other` **approved** (2026-09-16) | Europe #3. Channel Islands remain low priority. |
+| Armenia | Importer (PR #26) + municipal tiers **approved** (Prompt L, 2026-09-17) | Europe #4. Five boundary/calendar reviews remain open. |
+| LatAm / NZ continuity | Approved packs import via `import:atlas` | 8 residual-heavy packs stay `draft_for_human_review` and are skipped. |
+| Mexico shares | Production override still original **67** | Justin accepted Prompt M **95 sibling withholds** (2026-09-17) as disposition. Docs PR [#27](https://github.com/FTFNAnalytics/digitaldemocracy/pull/27) **landed**; the production override is unchanged until a later importer amendment. |
+| Austria | Package + Prompt N tiers **on main** | Country package landed in PR [#11](https://github.com/FTFNAnalytics/digitaldemocracy/pull/11) (`f0f2c86`). Approved `schemas/atlas/tiers/austria.json` landed in PR [#28](https://github.com/FTFNAnalytics/digitaldemocracy/pull/28) (`3ef34d3`; 2,034 municipal + 4 regional; St. Georgen 2015 hold and calendar notes retained). Atlas importer still waits; observatory skips the XZ payload. |
+
+Inventory, identity rules, and cutover checklists below remain the contract. The [Current repository snapshot](#current-repository-snapshot) is Phase 0 inventory context, not this as-of date.
 
 ---
 
@@ -443,7 +465,7 @@ Keep `/electiondatabase` on the current loaders. **No public redirects. No tight
 
 ### Phase 2 — Continuity ingest + `/atlas` shell (still not cutover)
 
-Field maps and CI gates for LatAm/NZ continuity are documented in [`docs/phase2/`](phase2/README.md) (Prompt D; implementation CI Not run). Do not invent tiers or alter Mexico share values in this documentation PR.
+Field maps and CI gates for LatAm/NZ continuity are documented in [`docs/phase2/`](phase2/README.md). Approved-pack import CI runs (`npm run test:atlas-import`); residual-heavy drafts are skipped. Do not invent tiers or alter Mexico share values in a documentation PR. Production Mexico override is still original 67; Prompt M 95 sibling withholds are accepted as disposition (docs PR #27 landed) and are not executable yet (see [Current state](#current-state-2026-09-17)).
 
 **Named cutover-gate inputs (ingest in this phase, before redirects):** Latin America release, New Zealand package, and remaining early European packages as reviewed (Andorra, Alderney, …; **Armenia last** among those early targets). Europe remains the Atlas **default landing**. Continuity ingest ≠ expanding launch scope.
 
@@ -616,7 +638,7 @@ Honesty: UI never presents fixture data as production research; never presents L
 
 ## Current repository snapshot
 
-Context for Phase 0 inventory. **Not** Atlas launch coverage. Do not freeze these row counts as product KPIs; re-inventory from checksums and registers when implementation starts. Do not promote historical PR counts into current coverage claims.
+Context for Phase 0 inventory. **Not** Atlas launch coverage. For live `main` as of 2026-09-17, see [Current state](#current-state-2026-09-17). Do not freeze these row counts as product KPIs; do not promote historical PR counts into current coverage claims.
 
 Operational detail for the live observatory remains in [`docs/electiondatabase-progress.md`](electiondatabase-progress.md) and [`docs/electiondatabase-country-packages.md`](electiondatabase-country-packages.md). Those docs describe the system as it is; this plan describes the system as it will be.
 
@@ -624,9 +646,9 @@ Operational detail for the live observatory remains in [`docs/electiondatabase-p
 
 - Observatory routes live under `/electiondatabase` (`lib/observatory/routes.ts`).
 - Latin America release loads from `data/research`; country packages merge at runtime via `lib/observatory/adapters/`.
-- Observatory home still highlights South America. Atlas landing will highlight Europe; that is independent of keeping already-public URLs working.
-- There is **no** `/atlas` route yet. Phase 1 scaffolding can create gitignored SQLite files (`atlas.sqlite` + sibling `atlas-attempts.sqlite`) from Prompt B DDL with **zero** research rows; that is not Albania storage proof.
-- `data/incoming/` has no zip (only README / `.gitkeep`). `data/overrides/` is not present yet. Fixtures stay under `tests/fixtures/` (test-only).
+- Observatory home still highlights South America. `/atlas` landing highlights Europe; that is independent of keeping already-public URLs working.
+- `/atlas` index / countries / offices now exist and read SQLite. `/atlas/explorer` is **not** on main. Cutover redirects are **not** on. Phase 0 scaffolding created gitignored SQLite files; Albania storage proof and approved-pack ingest have since landed.
+- `data/incoming/` has no zip (only README / `.gitkeep`). Mexico share-domain production override lives under `data/overrides/atlas/latin-america-fe5e91689def/` (original 67). Fixtures stay under `tests/fixtures/` (test-only).
 - `.gitignore` ignores `*.sqlite` / WAL / SHM and `data/master/` database files (Phase 1 scaffolding).
 
 ### Regional coverage counting
@@ -636,7 +658,7 @@ Use this definition in Atlas coverage labels, calendars, and success checks.
 1. **Checked-in per-country tier-classification file** (reviewed like DDL). It maps each office ID in that package to schema v1 `GovernmentTier` (`national_context` / `regional` / `municipal` / `council` / `other`) from sourced office type + geography — **not** from workbook calendar cohort **Tier** strings. Bridges **must not** classify from labels such as Albania/Andorra `Regional / municipal`.
 2. **Numerator (regional offices):** current tracked offices in the published master with `tier = regional` for the stated country or region.
 3. **Denominator:** the sourced regional-office universe when the package or register states one (count of regional offices on the planning map / statutory list, with as-of date). If the universe is unknown, the denominator stays **unknown** — do not invent “all European regions” or “all NUTS-2 units”.
-4. **No applicable regional tier / empty numerator:** if a country’s supplied register contains no regional offices, say **no regional tier in this package**. That is not “0% of a fake regional universe.” **Today’s checked-in Europe packages (Albania, Andorra, Alderney; Armenia pending classification file) may yield a European regional numerator of zero.** Phase 2’s regional calendar must show that empty state explicitly. It does not fail Phase 1 storage proof and does not block shipping the calendar shell.
+4. **No applicable regional tier / empty numerator:** if a country’s supplied register contains no regional offices, say **no regional tier in this package**. That is not “0% of a fake regional universe.” **Today’s checked-in Europe packages with approved classifiers on main (Albania, Andorra, Alderney, Armenia) may yield a European regional numerator of zero.** Austria is now on main with **4** approved regional offices (Prompt N PR #28); the Atlas importer still waits. Phase 2’s regional calendar must show empty or partial states explicitly. It does not fail Phase 1 storage proof and does not block shipping the calendar shell.
 5. **Calendar filtering:**
    - **Interval overlap** for partial dates: a month- or year-precision value is in a filter window if its interval **overlaps** the window, not only if a missing day was invented as day 1.
    - **Unknown dates** go in a **separate labelled section**. Unknown is **not** confirmed in-window.
