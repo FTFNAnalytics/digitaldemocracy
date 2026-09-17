@@ -49,17 +49,19 @@ Atlas importer CI waits.
 invent regional or national offices. The importer must hash the accepted file
 bytes; this schema has no self-hash field.
 
-Phase 1 still needs the Albania importer and import proof. Checking in these
-files is not Albania storage proof and is not a populated regional calendar.
+Phase 1 Albania importer and import proof have landed. Checking in these
+files is not a populated regional calendar.
 
 ## Prompt E continuity packs (LatAm + New Zealand)
 
 22 additional files (21 Latin America office-bearing countries + New Zealand)
 are checked in. Prompt G applied category-policy clearances only. **Justin
 approved Batch A, Batch B, El Salvador, and Argentina on 2026-09-16**. The
-remaining 8 residual-heavy packs stay **`draft_for_human_review`**. Continuity
-ingest/publish remains **blocked** until remaining packs land.
-Mexico share-domain withhold-all-67 is already accepted separately.
+remaining 8 residual-heavy packs stay **`draft_for_human_review`**. Approved
+packs import via `npm run import:atlas`; residual-heavy drafts are skipped.
+Cutover remains blocked. Mexico share-domain withhold-all-67 is the live
+production override; Prompt M 95 sibling withholds are accepted pending land
+(PR #27).
 
 Do not treat proposed-tier counts as approved coverage. Office IDs and proposed
 labels come from the Prompt E pack; they are not invented here. Albania,
