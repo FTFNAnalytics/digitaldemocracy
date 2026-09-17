@@ -136,4 +136,4 @@ Deferred Prompt C rows above are **not** waived. They remain required before cla
 | Alderney Prompt K / Armenia Prompt L | Importers landed (PRs #24 / #26). Tiers approved. |
 | Austria Prompt N field map | **Documentation complete** in [docs/phase1/austria/](phase1/austria/README.md). Mapping Done; importer CI Not run. Package on main via PR #11. Approved `austria.json` is 2,034 municipal / 4 regional. |
 
-Still out of scope: `/atlas/explorer`, redirects, cutover, residual-heavy draft packs, tightness, Austria (package PR #11 open; Prompt N tiers approved but not on main). Prompt M 95 sibling withholds: disposition accepted 2026-09-17, docs PR #27 pending land; production override remains 67.
+Still out of scope: `/atlas/explorer`, redirects, cutover, residual-heavy draft packs, tightness. Austria **package** is on main (PR #11 merged); Prompt N approved tiers are still landing separately (PR #28). Prompt M 95 sibling withholds: disposition accepted 2026-09-17, docs PR #27 pending land; production override remains 67.

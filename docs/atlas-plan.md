@@ -2,7 +2,7 @@
 
 **Status (2026-09-17):** Phase 0 plan is on main. Phase 1 Albania storage proof and early-Europe/continuity ingest are on main and live on the VPS at `/atlas` — Albania, Andorra, Alderney, Armenia, plus **approved** LatAm/NZ packs. Albania municipal and Alderney `other` are **approved**; Andorra and Armenia geographic tiers are **approved**. `/atlas` UI exists (index / countries / offices). `/atlas/explorer` is **not** on main. Cutover from `/electiondatabase` is **not** done — do not flip redirects. Locked decisions (`/atlas`, SQLite, Europe-first) stand. See [Current state (2026-09-17)](#current-state-2026-09-17). Working notes: [`docs/atlas-phase1.md`](atlas-phase1.md), [`docs/phase2/`](phase2/README.md), [`schemas/atlas/tiers/`](../schemas/atlas/tiers/README.md).
 
-**Phase 0** (this plan) is merged. **Phase 1 Albania storage proof has landed.** Phase 2 continuity ingest of approved packs and the `/atlas` shell (index / countries / offices) have landed; explorer, remaining residual-heavy packs, Austria, and cutover have not.
+**Phase 0** (this plan) is merged. **Phase 1 Albania storage proof has landed.** Phase 2 continuity ingest of approved packs and the `/atlas` shell (index / countries / offices) have landed; explorer, remaining residual-heavy packs, Austria Prompt N tiers, and cutover have not. The Austria **package** is on main (PR #11 merged); Prompt N approved tiers are still landing separately.
 
 **Product:** Center for Digital Democracy — Election Atlas  
 **Repository:** [FTFNAnalytics/digitaldemocracy](https://github.com/FTFNAnalytics/digitaldemocracy)  
@@ -15,7 +15,7 @@ This plan is the working agreement for how the observatory becomes the Atlas. It
 
 ## Current state (2026-09-17)
 
-Verified against `FTFNAnalytics/digitaldemocracy` `main` (`6e6426f`, Armenia importer PR #26). Do not treat the figures below as live VPS office totals; they are statuses and dispositions, not a coverage KPI.
+Verified against `FTFNAnalytics/digitaldemocracy` `main` (`f0f2c86`, Austria package PR #11 merged). Do not treat the figures below as live VPS office totals; they are statuses and dispositions, not a coverage KPI.
 
 | Surface | On main / live | Notes |
 | --- | --- | --- |
@@ -29,7 +29,7 @@ Verified against `FTFNAnalytics/digitaldemocracy` `main` (`6e6426f`, Armenia imp
 | Armenia | Importer (PR #26) + municipal tiers **approved** (Prompt L, 2026-09-17) | Europe #4. Five boundary/calendar reviews remain open. |
 | LatAm / NZ continuity | Approved packs import via `import:atlas` | 8 residual-heavy packs stay `draft_for_human_review` and are skipped. |
 | Mexico shares | Production override still original **67** | Justin accepted Prompt M **95 sibling withholds** (2026-09-17) as disposition. Docs PR [#27](https://github.com/FTFNAnalytics/digitaldemocracy/pull/27) is **open** — disposition accepted **pending land**. Executable amendment of the production override waits on a later importer change. |
-| Austria | **Not on main** | Justin approved Prompt N tiers **2034 municipal + 4 regional** (2026-09-17); St. Georgen 2015 hold and calendar notes retained. Package PR [#11](https://github.com/FTFNAnalytics/digitaldemocracy/pull/11) is **open**. No Prompt N land PR is open as of this refresh. |
+| Austria | Package **on main** | Country package landed in PR [#11](https://github.com/FTFNAnalytics/digitaldemocracy/pull/11) (`f0f2c86`). Prompt N approved tiers are still landing separately (PR [#28](https://github.com/FTFNAnalytics/digitaldemocracy/pull/28) open; St. Georgen 2015 hold and calendar notes retained). No `schemas/atlas/tiers/austria.json` on main yet. |
 
 Inventory, identity rules, and cutover checklists below remain the contract. The [Current repository snapshot](#current-repository-snapshot) is Phase 0 inventory context, not this as-of date.
 
@@ -658,7 +658,7 @@ Use this definition in Atlas coverage labels, calendars, and success checks.
 1. **Checked-in per-country tier-classification file** (reviewed like DDL). It maps each office ID in that package to schema v1 `GovernmentTier` (`national_context` / `regional` / `municipal` / `council` / `other`) from sourced office type + geography — **not** from workbook calendar cohort **Tier** strings. Bridges **must not** classify from labels such as Albania/Andorra `Regional / municipal`.
 2. **Numerator (regional offices):** current tracked offices in the published master with `tier = regional` for the stated country or region.
 3. **Denominator:** the sourced regional-office universe when the package or register states one (count of regional offices on the planning map / statutory list, with as-of date). If the universe is unknown, the denominator stays **unknown** — do not invent “all European regions” or “all NUTS-2 units”.
-4. **No applicable regional tier / empty numerator:** if a country’s supplied register contains no regional offices, say **no regional tier in this package**. That is not “0% of a fake regional universe.” **Today’s checked-in Europe packages on main (Albania, Andorra, Alderney, Armenia) may yield a European regional numerator of zero.** Austria Prompt N (4 regional) is approved but not on main. Phase 2’s regional calendar must show that empty state explicitly. It does not fail Phase 1 storage proof and does not block shipping the calendar shell.
+4. **No applicable regional tier / empty numerator:** if a country’s supplied register contains no regional offices, say **no regional tier in this package**. That is not “0% of a fake regional universe.” **Today’s checked-in Europe packages with approved classifiers on main (Albania, Andorra, Alderney, Armenia) may yield a European regional numerator of zero.** The Austria package is on main; Prompt N approved tiers are still landing separately. Phase 2’s regional calendar must show that empty state explicitly. It does not fail Phase 1 storage proof and does not block shipping the calendar shell.
 5. **Calendar filtering:**
    - **Interval overlap** for partial dates: a month- or year-precision value is in a filter window if its interval **overlaps** the window, not only if a missing day was invented as day 1.
    - **Unknown dates** go in a **separate labelled section**. Unknown is **not** confirmed in-window.
