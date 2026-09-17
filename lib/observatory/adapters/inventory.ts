@@ -56,6 +56,17 @@ export function classifyCountryPackage(
   }
 
   if (manifest?.chunks && manifest.payload_sha256 && manifest.country) {
+    const chunkNames = Object.keys(manifest.chunks as Record<string, unknown>);
+    const gzipPacked = chunkNames.some((name) => name.includes(".tar.gz."));
+    if (!gzipPacked) {
+      return {
+        slug,
+        dir,
+        kind: "unknown",
+        reason:
+          "Packed Europe payload is not armenia-packed-europe/1 gzip tar chunks. Austria's XZ payload has no observatory adapter yet; the Atlas importer is not implemented in this change.",
+      };
+    }
     return {
       slug,
       dir,

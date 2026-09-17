@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { spawnSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
@@ -59,6 +60,42 @@ function armeniaRegisterIds(): { ids: string[]; registerSha256: string } {
   return {
     ids: zipTable(table).map((row) => String(row["Office ID"])),
     registerSha256: createHash("sha256").update(bytes!).digest("hex"),
+  };
+}
+
+function austriaRegisterIds(): { ids: string[]; registerSha256: string; payloadSha256: string } {
+  const script = `
+import hashlib, io, json, lzma, tarfile, sys
+from pathlib import Path
+root = Path(sys.argv[1])
+manifest = json.loads((root / "manifest.json").read_text())
+raw = b"".join((root / name).read_bytes() for name in manifest["chunks"])
+payload_sha256 = hashlib.sha256(raw).hexdigest()
+assert payload_sha256 == manifest["payload_sha256"]
+with tarfile.open(fileobj=io.BytesIO(lzma.decompress(raw)), mode="r:") as tar:
+    member = tar.extractfile("tables/master/office-register.json")
+    assert member is not None
+    data = member.read()
+table = json.loads(data)
+office_col = table["columns"].index("Office ID")
+ids = [row[office_col] for row in table["rows"]]
+print(json.dumps({
+    "ids": ids,
+    "registerSha256": hashlib.sha256(data).hexdigest(),
+    "payloadSha256": payload_sha256,
+}))
+`;
+  const result = spawnSync(
+    "python3",
+    ["-c", script, path.join(repoRoot, "data/countries/austria")],
+    { encoding: "utf8", maxBuffer: 32 * 1024 * 1024 },
+  );
+  expect(result.status).toBe(0);
+  expect(result.stderr).toBe("");
+  return JSON.parse(result.stdout) as {
+    ids: string[];
+    registerSha256: string;
+    payloadSha256: string;
   };
 }
 
@@ -284,6 +321,15 @@ describe("Phase 0 tier-classification drafts", () => {
     });
     expect(austria.notes?.every((note) => note.status === "open")).toBe(true);
     expect(austria.notes).toHaveLength(19);
+    const packed = austriaRegisterIds();
+    expectExactIds(austria, packed.ids);
+    expect(austria.source_register.sha256).toBe(packed.registerSha256);
+    expect(austria.source_register.sha256).toBe(
+      "19e208d578151c01b669e13c3345d88a2cba591517a129f66a228b80b2cc1d68",
+    );
+    expect(packed.payloadSha256).toBe(
+      "8a777132ffec2fff55e36d4bbfbb890b012fd98707132ace7e7c15ef344dc362",
+    );
   });
 });
 
