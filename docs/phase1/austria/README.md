@@ -1,0 +1,5 @@
+# Austria Prompt N tiers and field map
+
+Albania remains Phase 1 storage proof. Andorra is Europe #2 field map. Alderney is Europe #3 field map. Armenia is Europe #4 field map. Austria is Prompt N (2,034 municipal / 4 regional). Mapping is **Done**; importer/publication CI is **Not run**. The Austria country package is **not** on main (`data/countries/austria` absent); the importer waits on that package. Approved tier bytes at `schemas/atlas/tiers/austria.json` are `1c303f748b6fa706bea71d750b5e50be8ab27acc7baf166fe01e0b85e9da69eb` (predecessor draft `9181e0af7f9dd0e3b2a92520de1cb990901c08b6f68afd165608eaf66282283d`). Justin approved 2026-09-17 (America/Edmonton). Publication hold `AT-OOE-41119-M::2015::` (St. Georgen am Walde) and all open calendar/boundary research notes remain.
+
+Start with [Austria_Field_Map.md](Austria_Field_Map.md), then [Austria_Identity_Rules.md](Austria_Identity_Rules.md), [Austria_Acceptance_Examples.md](Austria_Acceptance_Examples.md), and [Prompt_N_Tiers_Field_Map_and_CI.md](Prompt_N_Tiers_Field_Map_and_CI.md). Acceptance receipt: [Prompt_N_Austria_Tiers_Accepted.md](Prompt_N_Austria_Tiers_Accepted.md).

@@ -223,6 +223,68 @@ describe("Phase 0 tier-classification drafts", () => {
     const vedi = armenia.classifications.find((row) => row.office_id === "AM-VEDI-C");
     expect(vedi?.boundary_calendar_review?.prior_phase0_review?.prompt_token).toBe("AM-VEDI");
   });
+
+  it("keeps approved Austria 2034 municipal / 4 regional with retained holds", () => {
+    const austria = readJson<TierFile & {
+      approval?: {
+        by?: string;
+        accepted_by?: string;
+        date?: string;
+        timezone?: string;
+        notes?: string;
+      };
+      predecessor_draft_sha256?: string;
+      notes?: Array<{ scope?: string; status?: string; office_ids?: string[] }>;
+    }>("schemas/atlas/tiers/austria.json");
+    expect(austria.status).toBe("approved");
+    expect(austria.country_slug).toBe("austria");
+    expect(austria.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-17",
+      timezone: "America/Edmonton",
+    });
+    expect(austria.approval?.notes).toMatch(/2034 municipal \+ 4 regional/i);
+    expect(austria.approval?.notes).toMatch(/AT-OOE-41119-M::2015::/);
+    expect(austria.predecessor_draft_sha256).toBe(
+      "9181e0af7f9dd0e3b2a92520de1cb990901c08b6f68afd165608eaf66282283d",
+    );
+    expect(sha256("schemas/atlas/tiers/austria.json")).toBe(
+      "1c303f748b6fa706bea71d750b5e50be8ab27acc7baf166fe01e0b85e9da69eb",
+    );
+    expect(austria.classifications).toHaveLength(2038);
+    expect(austria.counts_by_proposed_tier).toEqual({
+      national: 0,
+      regional: 4,
+      municipal: 2034,
+      council: 0,
+      other: 0,
+    });
+    const regional = austria.classifications.filter((row) => row.tier === "regional");
+    const municipal = austria.classifications.filter((row) => row.tier === "municipal");
+    expect(regional.map((row) => row.office_id)).toEqual([
+      "AT-KTN-A",
+      "AT-NOE-A",
+      "AU-ab9fc7cefb",
+      "AU-9560299fb9",
+    ]);
+    expect(municipal).toHaveLength(2034);
+    expect(new Set(austria.classifications.map((row) => row.office_id)).size).toBe(2038);
+    expect(
+      austria.classifications.every(
+        (row) => row.tier === row.schema_v1_tier && (row.tier === "municipal" || row.tier === "regional"),
+      ),
+    ).toBe(true);
+    expect(regional.every((row) => row.human_review_required === true)).toBe(true);
+    expect(municipal.every((row) => row.human_review_required === false)).toBe(true);
+    const hold = austria.notes?.find((note) => note.scope === "history_stage_binding_conflict");
+    expect(hold).toMatchObject({
+      status: "open",
+      office_ids: ["AT-OOE-41119-M"],
+    });
+    expect(austria.notes?.every((note) => note.status === "open")).toBe(true);
+    expect(austria.notes).toHaveLength(19);
+  });
 });
 
 describe("Phase 0 inventory artifacts", () => {
