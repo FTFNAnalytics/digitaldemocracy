@@ -283,6 +283,58 @@ describe("atlas CLI stubs", () => {
     },
     60_000,
   );
+
+  it(
+    "import:atlas loads Armenia into temporary databases",
+    () => {
+      const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-armenia-cli-"));
+      tempDirs.push(dir);
+      const sqlitePath = path.join(dir, "atlas.sqlite");
+      const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+      const result = runAtlasScript("scripts/atlas/import.ts", {
+        ATLAS_SQLITE_PATH: sqlitePath,
+        ATLAS_ATTEMPTS_SQLITE_PATH: attemptsPath,
+        ATLAS_OPERATOR: "atlas-cli-test",
+        ATLAS_IMPORT_SCOPE: "armenia",
+        OBSERVATORY_FIXTURES: "",
+      });
+      expect(result.status, result.stderr).toBe(0);
+      expect(result.stdout).toContain("import:atlas");
+      expect(result.stdout).toContain("lineage=country-package-armenia");
+      expect(result.stdout).toContain("armenia_offices=71");
+      expect(result.stdout).toContain("armenia_municipal=71");
+      expect(result.stdout).toContain("armenia_selected_histories=33");
+      expect(result.stdout).toContain("armenia_prospective_events=30");
+      expect(result.stdout).toContain("armenia_result_rows=97");
+      expect(result.stdout).toContain("armenia_regional=0");
+
+      const master = new DatabaseSync(sqlitePath, { readOnly: true });
+      try {
+        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 71 });
+        expect(
+          master.prepare("SELECT geography_id FROM office WHERE office_id = 'AM-ABOVYAN-C'").get(),
+        ).toMatchObject({ geography_id: "geo-06fbdce1451cf0b0fa2be8db" });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'regional'")
+            .get(),
+        ).toMatchObject({ n: 0 });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'municipal'")
+            .get(),
+        ).toMatchObject({ n: 71 });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM research_date WHERE certainty = 'called'")
+            .get(),
+        ).toMatchObject({ n: 30 });
+      } finally {
+        master.close();
+      }
+    },
+    180_000,
+  );
 });
 
 describe("gitignore sqlite binaries", () => {

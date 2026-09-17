@@ -192,6 +192,7 @@ export type Locator = {
   column: string | null;
   html_anchor_index: number | null;
   retained_input_path?: string;
+  archive_entry?: string;
 };
 
 export function locator(partial: Partial<Locator> & Pick<Locator, "input_path">): Locator {
@@ -204,6 +205,7 @@ export function locator(partial: Partial<Locator> & Pick<Locator, "input_path">)
     column: partial.column ?? null,
     html_anchor_index: partial.html_anchor_index ?? null,
     ...(partial.retained_input_path ? { retained_input_path: partial.retained_input_path } : {}),
+    ...(partial.archive_entry ? { archive_entry: partial.archive_entry } : {}),
   };
 }
 

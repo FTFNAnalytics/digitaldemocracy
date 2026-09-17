@@ -344,6 +344,14 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "armenia") {
+    return {
+      offices,
+      count: offices.length,
+      label: "No regional offices in the supplied Armenia package; 71 municipal offices. Research coverage remains partial.",
+      denominatorKnown: false,
+    };
+  }
   return {
     offices,
     count: offices.length,
