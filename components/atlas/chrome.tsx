@@ -30,6 +30,12 @@ export function AtlasHeader() {
         </div>
         <div className="flex flex-wrap items-center gap-3">
           <Link
+            href={atlasRoutes.explorer}
+            className="text-sm font-semibold text-white/80 hover:text-accent"
+          >
+            Explorer
+          </Link>
+          <Link
             href="/electiondatabase"
             className="text-sm font-semibold text-white/80 hover:text-accent"
           >
@@ -53,6 +59,10 @@ export function AtlasFooter() {
           records; no login required.
         </p>
         <p>
+          <Link href={atlasRoutes.explorer} className="font-semibold text-accent hover:text-accent-soft">
+            Explorer
+          </Link>
+          {" · "}
           <Link href="/electiondatabase" className="font-semibold text-accent hover:text-accent-soft">
             Subnational Election Observatory
           </Link>

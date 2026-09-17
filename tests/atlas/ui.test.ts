@@ -7,7 +7,8 @@ import { importAndorra } from "../../lib/atlas/andorra/import";
 import { importArmenia } from "../../lib/atlas/armenia/import";
 import { importNewZealand } from "../../lib/atlas/continuity/nz";
 import { migrateMasterDatabase } from "../../lib/atlas/apply-migrations";
-import { loadAtlasCatalog, getAtlasCountry, listAtlasOffices, listAtlasRegionalCalendar } from "../../lib/atlas/read";
+import { loadAtlasCatalog, getAtlasCountry, listAtlasOffices, listAtlasRegionalCalendar, listAtlasExplorerOffices, lookupAtlasEvent, lookupAtlasOffice } from "../../lib/atlas/read";
+import { parseAtlasExplorerFilters, serializeAtlasExplorerFilters, emptyAtlasExplorerFilters } from "../../lib/atlas/filters";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
 
@@ -30,6 +31,9 @@ describe("Atlas SQLite UI catalog", () => {
     expect(catalog.status).toBe("missing");
     expect(catalog.countries).toEqual([]);
     expect(catalog.message).toMatch(/No Atlas SQLite file/);
+    expect(listAtlasExplorerOffices({ q: "westport", country: "", tier: "", region: "" }, missing)).toEqual([]);
+    expect(lookupAtlasEvent("next-154f7bfa6ea99d09c5a47d7c", missing)).toEqual({ status: "missing" });
+    expect(lookupAtlasOffice("NZ-BULLER-WESTPORT-2026", missing)).toEqual({ status: "missing" });
   });
 
   it("renders an empty-database state after migrate with no import", () => {
@@ -64,6 +68,24 @@ describe("Atlas SQLite UI catalog", () => {
     expect(offices).toHaveLength(4);
     expect(offices.some((row) => row.officeId === "NZ-BULLER-WESTPORT-2026")).toBe(true);
     expect(getAtlasCountry("argentina", sqlitePath)).toBeNull();
+    expect(lookupAtlasOffice("NZ-BULLER-WESTPORT-2026", sqlitePath).status).toBe("found");
+    const event = lookupAtlasEvent("next-154f7bfa6ea99d09c5a47d7c", sqlitePath);
+    expect(event.status).toBe("found");
+    if (event.status === "found") {
+      expect(event.record.officeId).toBe("NZ-BULLER-WESTPORT-2026");
+      expect(event.record.selectedHistoryRole).toBe("none");
+    }
+    expect(lookupAtlasEvent("missing-event-id", sqlitePath)).toEqual({ status: "missing" });
+    expect(lookupAtlasOffice("missing-office-id", sqlitePath)).toEqual({ status: "missing" });
+
+    const explorer = listAtlasExplorerOffices(emptyAtlasExplorerFilters(), sqlitePath);
+    expect(explorer).toHaveLength(4);
+    expect(explorer.every((row) => row.regionId === "oceania")).toBe(true);
+    expect(listAtlasExplorerOffices({ q: "westport", country: "", tier: "", region: "" }, sqlitePath).map((row) => row.officeId)).toEqual([
+      "NZ-BULLER-WESTPORT-2026",
+    ]);
+    expect(listAtlasExplorerOffices({ q: "", country: "new-zealand", tier: "municipal", region: "" }, sqlitePath)).toHaveLength(3);
+    expect(listAtlasExplorerOffices({ q: "", country: "", tier: "", region: "europe" }, sqlitePath)).toEqual([]);
   });
 
   it("shows Andorra's honest empty regional calendar after import", () => {
@@ -84,6 +106,7 @@ describe("Atlas SQLite UI catalog", () => {
     const country = getAtlasCountry("andorra", sqlitePath);
     expect(country?.name).toBe("Andorra");
     expect(listAtlasOffices("andorra", sqlitePath)).toHaveLength(7);
+    expect(listAtlasExplorerOffices({ q: "", country: "andorra", tier: "", region: "europe" }, sqlitePath)).toHaveLength(7);
     const regional = listAtlasRegionalCalendar("andorra", sqlitePath);
     expect(regional.offices).toEqual([]);
     expect(regional.count).toBe(0);
@@ -145,6 +168,7 @@ describe("Atlas SQLite UI catalog", () => {
     expect(offices).toHaveLength(71);
     expect(offices.every((row) => row.tier === "municipal")).toBe(true);
     expect(offices.find((row) => row.officeId === "AM-AKHURYAN-C")?.nextCertainty).toBe("called");
+    expect(lookupAtlasOffice("AM-AKHURYAN-C", sqlitePath).status).toBe("found");
     expect(offices.find((row) => row.officeId === "AM-VEDI-C")?.nextCertainty).toBeNull();
     const regional = listAtlasRegionalCalendar("armenia", sqlitePath);
     expect(regional.offices).toEqual([]);
@@ -153,5 +177,27 @@ describe("Atlas SQLite UI catalog", () => {
       "No regional offices in the supplied Armenia package; 71 municipal offices. Research coverage remains partial.",
     );
     expect(regional.denominatorKnown).toBe(false);
+  });
+});
+
+describe("Atlas explorer URL filters", () => {
+  it("round-trips q, country, tier, and region", () => {
+    const parsed = parseAtlasExplorerFilters({
+      q: "westport",
+      country: "new-zealand",
+      tier: "municipal",
+      region: "oceania",
+    });
+    const params = serializeAtlasExplorerFilters(parsed);
+    expect(params.get("q")).toBe("westport");
+    expect(params.get("country")).toBe("new-zealand");
+    expect(params.get("tier")).toBe("municipal");
+    expect(params.get("region")).toBe("oceania");
+  });
+
+  it("ignores empty defaults", () => {
+    const parsed = parseAtlasExplorerFilters({});
+    expect(parsed).toEqual({ q: "", country: "", tier: "", region: "" });
+    expect(serializeAtlasExplorerFilters(parsed).toString()).toBe("");
   });
 });

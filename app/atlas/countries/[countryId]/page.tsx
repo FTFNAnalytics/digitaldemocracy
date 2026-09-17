@@ -9,7 +9,7 @@ import {
 import { AtlasPageHeader } from "@/components/atlas/chrome";
 import { EmptyState } from "@/components/observatory/status";
 import { DataTable } from "@/components/observatory/table";
-import { formatAtlasDate, formatAtlasTier, getAtlasCountry, listAtlasOffices, listAtlasRegionalCalendar, loadAtlasCatalog } from "@/lib/atlas/read";
+import { formatAtlasDate, formatAtlasRegion, formatAtlasTier, getAtlasCountry, listAtlasOffices, listAtlasRegionalCalendar, loadAtlasCatalog } from "@/lib/atlas/read";
 import { atlasRoutes } from "@/lib/atlas/routes";
 
 type Props = {
@@ -50,7 +50,7 @@ export default async function AtlasCountryPage({ params, searchParams }: Props) 
   return (
     <>
       <AtlasPageHeader
-        eyebrow={country.regionId === "europe" ? "Europe" : country.regionId}
+        eyebrow={country.regionId === "europe" ? "Europe" : formatAtlasRegion(country.regionId)}
         title={country.name}
         description={country.notes ?? "Imported Atlas country record. Missing values are shown as missing; they are not treated as zero."}
       >
@@ -65,6 +65,10 @@ export default async function AtlasCountryPage({ params, searchParams }: Props) 
       <p className="mb-6 text-sm">
         <Link href={atlasRoutes.home} className="obs-link">
           All Atlas countries
+        </Link>
+        {" · "}
+        <Link href={atlasRoutes.explorer} className="obs-link">
+          Explorer
         </Link>
       </p>
 

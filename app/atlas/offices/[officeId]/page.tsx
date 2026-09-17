@@ -7,10 +7,10 @@ import { DataTable } from "@/components/observatory/table";
 import {
   formatAtlasDate,
   formatAtlasTier,
-  getAtlasOffice,
   listAtlasEvents,
   listAtlasResults,
   loadAtlasCatalog,
+  lookupAtlasOffice,
 } from "@/lib/atlas/read";
 import { atlasRoutes } from "@/lib/atlas/routes";
 
@@ -20,13 +20,13 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { officeId } = await params;
-  const office = getAtlasOffice(decodeURIComponent(officeId));
-  if (!office) {
+  const lookup = lookupAtlasOffice(decodeURIComponent(officeId));
+  if (lookup.status !== "found") {
     return { title: "Atlas office not found", robots: { index: false, follow: true } };
   }
   return {
-    title: `${office.name} · Election Atlas`,
-    description: `Imported Atlas election and history listings for ${office.name}.`,
+    title: `${lookup.record.name} · Election Atlas`,
+    description: `Imported Atlas election and history listings for ${lookup.record.name}.`,
   };
 }
 
@@ -47,8 +47,21 @@ export default async function AtlasOfficePage({ params }: Props) {
     );
   }
 
-  const office = getAtlasOffice(officeId);
-  if (!office) notFound();
+  const lookup = lookupAtlasOffice(officeId);
+  if (lookup.status === "missing") notFound();
+  if (lookup.status === "ambiguous") {
+    return (
+      <EmptyState title="Public office ID is namespace-ambiguous">
+        <p>
+          Prompt B uniqueness for <code className="text-navy">office_id</code> is{" "}
+          <code className="text-navy">(id_namespace, office_id)</code>. This bare observatory ID
+          matches {lookup.namespaces.length} namespaces ({lookup.namespaces.join(", ")}) and is not
+          silently resolved.
+        </p>
+      </EmptyState>
+    );
+  }
+  const office = lookup.record;
   const events = listAtlasEvents(officeId);
 
   return (
@@ -72,6 +85,10 @@ export default async function AtlasOfficePage({ params }: Props) {
         <Link href={atlasRoutes.home} className="obs-link">
           Atlas index
         </Link>
+        {" · "}
+        <Link href={atlasRoutes.explorer} className="obs-link">
+          Explorer
+        </Link>
       </p>
 
       {events.length === 0 ? (
@@ -92,7 +109,11 @@ export default async function AtlasOfficePage({ params }: Props) {
                 {event.electoralSystem ? ` · ${event.electoralSystem}` : ""} · ballot {event.ballotBasis.replaceAll("_", " ")}
               </p>
               <p className="mt-1 text-xs text-navy/55">
-                event {event.eventId} · {event.resultCount.toLocaleString()} result rows
+                <Link href={atlasRoutes.event(event.eventId)} className="obs-link">
+                  event {event.eventId}
+                </Link>
+                {" · "}
+                {event.resultCount.toLocaleString()} result rows
               </p>
               <div className="mt-4">
                 <DataTable

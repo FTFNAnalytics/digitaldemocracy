@@ -2,15 +2,8 @@ import Link from "next/link";
 import { AtlasPageHeader } from "@/components/atlas/chrome";
 import { EmptyState } from "@/components/observatory/status";
 import { DataTable } from "@/components/observatory/table";
-import { formatAtlasTier, loadAtlasCatalog } from "@/lib/atlas/read";
+import { formatAtlasRegion, formatAtlasTier, loadAtlasCatalog } from "@/lib/atlas/read";
 import { atlasRoutes } from "@/lib/atlas/routes";
-
-function regionLabel(regionId: string): string {
-  if (regionId === "europe") return "Europe";
-  if (regionId === "americas") return "Americas";
-  if (regionId === "oceania") return "Oceania";
-  return regionId;
-}
 
 export default function AtlasIndexPage() {
   const catalog = loadAtlasCatalog();
@@ -48,6 +41,11 @@ export default function AtlasIndexPage() {
                 below only because they are in this SQLite file — they do not change the landing
                 vertical.
               </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Link href={atlasRoutes.explorer} className="obs-btn">
+                  Open the explorer
+                </Link>
+              </div>
               <dl className="mt-5 grid gap-3 sm:grid-cols-3">
                 <div className="rounded-2xl bg-white/10 px-4 py-3">
                   <dt className="text-xs uppercase tracking-wider text-white/55">Countries with offices</dt>
@@ -104,7 +102,7 @@ export default function AtlasIndexPage() {
                   <Link key={country.countryId} href={atlasRoutes.country(country.countryId)} className="obs-link">
                     {country.name}
                   </Link>,
-                  regionLabel(country.regionId),
+                  formatAtlasRegion(country.regionId),
                   country.officeCount.toLocaleString(),
                   country.eventCount.toLocaleString(),
                   country.coverageStatus.replaceAll("_", " "),
