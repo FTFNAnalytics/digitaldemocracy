@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
-import { cpSync, existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { importAustria, assertAustriaFidelity } from "../../lib/atlas/austria/import";
@@ -122,14 +122,16 @@ function mutateAustriaPackage(
   }
   files.set("inventory.json", Buffer.from(`${JSON.stringify(inventory)}\n`));
   const xz = xzCompress(packUstar(files));
-  for (const name of Object.keys(outer.manifest.chunks)) {
-    rmSync(path.join(destDir, name), { force: true });
+  const chunkNames = Object.keys(outer.manifest.chunks).sort();
+  const payloadDir = path.join(destDir, "payload");
+  for (const name of readdirSync(payloadDir)) {
+    rmSync(path.join(payloadDir, name), { force: true });
   }
-  const chunkSize = 98304;
+  const chunkSize = Math.ceil(xz.length / chunkNames.length);
   const chunks: Record<string, { sha256: string; bytes: number }> = {};
-  for (let offset = 0, index = 1; offset < xz.length; offset += chunkSize, index += 1) {
-    const part = xz.subarray(offset, offset + chunkSize);
-    const relative = `payload/data.tar.xz.part${String(index).padStart(3, "0")}`;
+  for (let index = 0; index < chunkNames.length; index += 1) {
+    const relative = chunkNames[index]!;
+    const part = xz.subarray(index * chunkSize, Math.min(xz.length, (index + 1) * chunkSize));
     writeFileSync(path.join(destDir, relative), part);
     chunks[relative] = { sha256: sha256Hex(part), bytes: part.length };
   }
