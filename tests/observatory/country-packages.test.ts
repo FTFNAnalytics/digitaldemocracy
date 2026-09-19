@@ -24,10 +24,10 @@ describe("country package inventory", () => {
       "bulgaria",
     ]);
     expect(skipped.find((row) => row.slug === "austria")?.reason).toMatch(
-      /XZ payload has no observatory adapter/i,
+      /XZ payloads have no observatory adapter/i,
     );
     expect(skipped.find((row) => row.slug === "bulgaria")?.reason).toMatch(
-      /XZ payload has no observatory adapter/i,
+      /XZ payloads have no observatory adapter/i,
     );
     expect(
       skipped.find((row) => row.slug === "bosnia-and-herzegovina")?.reason,
@@ -49,8 +49,7 @@ describe("country package inventory", () => {
       "armenia-packed-europe/1",
     );
     // Bosnia gzip is skipped (website ingestion pending); Bulgaria XZ has no
-    // observatory adapter yet. The Atlas importer is separate and does not add
-    // an observatory adapter.
+    // observatory adapter yet. Atlas import is a separate `import:atlas` path.
     expect(packages.find((row) => row.slug === "bosnia-and-herzegovina")).toBeUndefined();
     expect(packages.find((row) => row.slug === "bulgaria")).toBeUndefined();
   });

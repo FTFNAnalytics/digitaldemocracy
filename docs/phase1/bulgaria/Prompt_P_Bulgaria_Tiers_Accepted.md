@@ -17,4 +17,4 @@ Retained open:
 
 Package pin at review: PR #16 `de3541276cd37ca749b740c229cee67475f0d317`. Main contracts pin: `00c2ea7458ad7705aad487c4a7665d9d343b5554`. Draft tier SHA before acceptance metadata: `cff8fcabb12716230a314309162a40c72a3d7d13fe1aa4469cfb1655767c48f0`. Review pack ZIP SHA-256 `d21aac75971647ebdc5b5f64a020c11bb2505a4292502d7c9b5cf6e79b6b03ec`.
 
-Importer / SQLite / VPS / UI remain follow-up work. `import:atlas` is **not** implemented in this landing.
+Importer / SQLite follow-up is `ATLAS_IMPORT_SCOPE=bulgaria npm run import:atlas` (530 accepted offices only). VPS/UI cutover and `/electiondatabase` redirects remain separate.
