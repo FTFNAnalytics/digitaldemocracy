@@ -464,6 +464,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "bulgaria") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "No regional offices in the supplied Bulgaria package; 530 approved municipality-wide municipal offices. 3,067 district/village rows remain held. Research coverage remains partial.",
+      denominatorKnown: false,
+    };
+  }
   return {
     offices,
     count: offices.length,

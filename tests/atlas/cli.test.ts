@@ -335,6 +335,57 @@ describe("atlas CLI stubs", () => {
     },
     180_000,
   );
+
+  it(
+    "import:atlas loads only the 530 approved Bulgaria offices",
+    () => {
+      const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-bulgaria-cli-"));
+      tempDirs.push(dir);
+      const sqlitePath = path.join(dir, "atlas.sqlite");
+      const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+      const result = runAtlasScript("scripts/atlas/import.ts", {
+        ATLAS_SQLITE_PATH: sqlitePath,
+        ATLAS_ATTEMPTS_SQLITE_PATH: attemptsPath,
+        ATLAS_OPERATOR: "atlas-cli-test",
+        ATLAS_IMPORT_SCOPE: "bulgaria",
+        OBSERVATORY_FIXTURES: "",
+      });
+      expect(result.status, result.stderr).toBe(0);
+      expect(result.stdout).toContain("import:atlas");
+      expect(result.stdout).toContain("lineage=country-package-bulgaria");
+      expect(result.stdout).toContain("bulgaria_offices=530");
+      expect(result.stdout).toContain("bulgaria_municipal=530");
+      expect(result.stdout).toContain("bulgaria_selected_histories=1590");
+      expect(result.stdout).toContain("bulgaria_prospective_events=0");
+      expect(result.stdout).toContain("bulgaria_result_rows=10343");
+      expect(result.stdout).toContain("bulgaria_regional=0");
+      expect(result.stdout).toContain("bulgaria_held_offices=3067");
+
+      const master = new DatabaseSync(sqlitePath, { readOnly: true });
+      try {
+        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 530 });
+        expect(
+          master.prepare("SELECT geography_id FROM office WHERE office_id = 'BG-VAR01-M'").get(),
+        ).toMatchObject({ geography_id: "geo-0f253e2855d47274f7fda71e" });
+        expect(
+          master.prepare("SELECT office_id FROM office WHERE office_id = 'BG-SLV11-b88d0d4475-V'").get(),
+        ).toBeUndefined();
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'regional'")
+            .get(),
+        ).toMatchObject({ n: 0 });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'municipal'")
+            .get(),
+        ).toMatchObject({ n: 530 });
+      } finally {
+        master.close();
+      }
+    },
+    300_000,
+  );
 });
 
 describe("gitignore sqlite binaries", () => {

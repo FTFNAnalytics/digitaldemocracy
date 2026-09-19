@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Bulgaria + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -15,6 +15,7 @@ import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
 import { LINEAGE_ID as ALDERNEY_LINEAGE } from "../../lib/atlas/alderney/identity";
 import { LINEAGE_ID as ANDORRA_LINEAGE } from "../../lib/atlas/andorra/identity";
 import { LINEAGE_ID as ARMENIA_LINEAGE } from "../../lib/atlas/armenia/identity";
+import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
 
 function fail(message: string): never {
   console.error(`test:atlas-import failed: ${message}`);
@@ -73,6 +74,21 @@ function main() {
     if (result.armenia?.counts.selected_histories !== 33) {
       fail(`Armenia events ${String(result.armenia?.counts.selected_histories)}`);
     }
+    if (result.bulgaria?.counts.current_offices !== 530) {
+      fail(`Bulgaria offices ${String(result.bulgaria?.counts.current_offices)}`);
+    }
+    if (result.bulgaria?.counts.municipal_offices !== 530) {
+      fail(`Bulgaria municipal ${String(result.bulgaria?.counts.municipal_offices)}`);
+    }
+    if (result.bulgaria?.counts.regional_offices !== 0) {
+      fail(`Bulgaria regional ${String(result.bulgaria?.counts.regional_offices)}`);
+    }
+    if (result.bulgaria?.counts.held_offices !== 3067) {
+      fail(`Bulgaria held ${String(result.bulgaria?.counts.held_offices)}`);
+    }
+    if (result.bulgaria?.counts.selected_histories !== 1590) {
+      fail(`Bulgaria events ${String(result.bulgaria?.counts.selected_histories)}`);
+    }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
     if (result.nz?.counts.events !== 7) fail(`NZ events ${String(result.nz?.counts.events)}`);
@@ -100,6 +116,27 @@ function main() {
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ARMENIA_LINEAGE]) !== 71) {
         fail("Armenia office rows");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BULGARIA_LINEAGE]) !== 530) {
+        fail("Bulgaria office rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'regional'",
+          [BULGARIA_LINEAGE],
+        ) !== 0
+      ) {
+        fail("Bulgaria regional rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_id = 'BG-SLV11-b88d0d4475-V'",
+          [BULGARIA_LINEAGE],
+        ) !== 0
+      ) {
+        fail("Градец held office published");
       }
       if (
         count(
@@ -212,6 +249,7 @@ function main() {
         ALDERNEY_LINEAGE,
         ANDORRA_LINEAGE,
         ARMENIA_LINEAGE,
+        BULGARIA_LINEAGE,
         NZ_LINEAGE_ID,
         LATAM_LINEAGE_ID,
       ].sort();
@@ -223,7 +261,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 bulgaria=530 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });
