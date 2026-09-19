@@ -8,6 +8,7 @@ import { importAlderney } from "../../lib/atlas/alderney/import";
 import { importAndorra } from "../../lib/atlas/andorra/import";
 import { importArmenia } from "../../lib/atlas/armenia/import";
 import { importBosnia } from "../../lib/atlas/bosnia-and-herzegovina/import";
+import { importBulgaria } from "../../lib/atlas/bulgaria/import";
 import { importAtlasLineages, parseImportScope } from "../../lib/atlas/continuity/import";
 import { NZ_LINEAGE_ID } from "../../lib/atlas/continuity/nz";
 import {
@@ -19,6 +20,7 @@ import { LINEAGE_ID as ALDERNEY_LINEAGE } from "../../lib/atlas/alderney/identit
 import { LINEAGE_ID as ANDORRA_LINEAGE } from "../../lib/atlas/andorra/identity";
 import { LINEAGE_ID as ARMENIA_LINEAGE } from "../../lib/atlas/armenia/identity";
 import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
+import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
 
@@ -67,6 +69,7 @@ describe("approved-pack gate", () => {
     expect(parseImportScope("alderney")).toBe("alderney");
     expect(parseImportScope("armenia")).toBe("armenia");
     expect(parseImportScope("bosnia")).toBe("bosnia");
+    expect(parseImportScope("bulgaria")).toBe("bulgaria");
     expect(parseImportScope("latam")).toBe("latam");
     expect(parseImportScope("nz")).toBe("nz");
     expect(() => parseImportScope("europe")).toThrow(/Unknown ATLAS_IMPORT_SCOPE/);
@@ -282,6 +285,46 @@ describe("multi-lineage continuity import", () => {
       db.close();
     }
   }, 180_000);
+
+  it("imports Albania then Bulgaria into one master without dropping Albania", () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-bulgaria-"));
+    tempDirs.push(dir);
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+    const albania = importAlbania({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "albania-bulgaria-test",
+    });
+    expect(albania.counts.current_offices).toBe(122);
+    const bulgaria = importBulgaria({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "albania-bulgaria-test",
+    });
+    expect(bulgaria.counts.current_offices).toBe(530);
+    expect(bulgaria.counts.municipal_offices).toBe(530);
+    expect(bulgaria.counts.regional_offices).toBe(0);
+    expect(bulgaria.counts.held_offices).toBe(3067);
+    const db = new DatabaseSync(sqlitePath, { readOnly: true });
+    try {
+      expect(
+        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
+      ).toBe(122);
+      expect(
+        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(BULGARIA_LINEAGE)?.n),
+      ).toBe(530);
+      const lineages = db
+        .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
+        .all()
+        .map((row) => String(row.lineage_id));
+      expect(lineages).toEqual([ALBANIA_LINEAGE, BULGARIA_LINEAGE].sort());
+    } finally {
+      db.close();
+    }
+  }, 300_000);
 
   it("keeps the Albania-only importer working after continuity modules land", () => {
     const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-only-"));

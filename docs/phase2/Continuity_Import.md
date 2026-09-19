@@ -1,6 +1,6 @@
 # Continuity import — approved packs
 
-`npm run import:atlas` loads **Albania**, **Andorra**, **Alderney**, **Armenia**, **Bosnia and Herzegovina**, and **approved** LatAm/NZ packs into the Atlas SQLite master. It does **not** import the remaining residual-heavy draft packs, deploy to the VPS, or declare cutover.
+Justin authorized full proceed on 2026-09-16. `npm run import:atlas` loads **Albania**, **Andorra**, **Alderney**, **Armenia**, **Bosnia and Herzegovina**, **Bulgaria**, and **approved** LatAm/NZ packs into the Atlas SQLite master. It does **not** import the remaining residual-heavy draft packs, deploy to the VPS, or declare cutover.
 
 ## How to run
 
@@ -17,12 +17,13 @@ Scopes:
 
 | `ATLAS_IMPORT_SCOPE` | What loads |
 | --- | --- |
-| `all` (default) | Albania, Andorra, Alderney, Armenia, Bosnia and Herzegovina, then approved LatAm, then New Zealand |
+| `all` (default) | Albania, Andorra, Alderney, Armenia, Bosnia and Herzegovina, Bulgaria, then approved LatAm, then New Zealand |
 | `albania` | Frozen Albania package only |
 | `andorra` | Frozen Andorra package only (7 municipal / 0 regional) |
 | `alderney` | Frozen Alderney package only (2 other / 0 regional; conditional 2026 dates) |
 | `armenia` | Frozen Armenia package only (71 municipal / 0 regional; 30 source-reported called 2026 dates) |
 | `bosnia` | Frozen Bosnia and Herzegovina package only (13 regional / 0 municipal; 10 approved + 3 needs_review entity holds) |
+| `bulgaria` | Frozen Bulgaria package only (**530** accepted municipal / 0 regional; 3,067 held district/village rows unpublished) |
 | `latam` | Approved Latin America packs + Mexico withhold-all-67 override |
 | `nz` | Approved New Zealand package |
 
@@ -41,6 +42,7 @@ Approved continuity countries (14 packs):
 - Alderney is Europe #3 (`country-package-alderney`; 2 other / 0 regional). Run with `ATLAS_IMPORT_SCOPE=alderney`.
 - Armenia is Europe #4 (`country-package-armenia`; 71 municipal / 0 regional). Five nested boundary/calendar research reviews stay open; no invented mayor IDs, mergers, or postponements. Run with `ATLAS_IMPORT_SCOPE=armenia`.
 - Bosnia and Herzegovina is Europe #5 (`country-package-bosnia-and-herzegovina`; **13 regional / 0 municipal**). 10 cantonal assemblies are `approved`; entity offices `BA-F` / `BA-R` / `BA-G` stay `needs_review`. Research holds remain open (RS presidential replacement/repeat, coalitions, 2026-10-04 calendar certainty). Do not invent Brčko or municipal offices. Run with `ATLAS_IMPORT_SCOPE=bosnia`.
+- Bulgaria is Prompt P (`country-package-bulgaria`; **530** accepted municipal / **0** regional). 3,067 district/village rows stay held. Градец / qualification-change research remains retained input. Run with `ATLAS_IMPORT_SCOPE=bulgaria`. Do **not** use `SCOPE=all` on the VPS unless you intend a full re-import. See [Bulgaria_Import.md](../phase1/bulgaria/Bulgaria_Import.md).
 
 Mexico result rows that violate `percent_0_100` are **withheld** using the accepted override `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (share NULL / share_status unknown / evidence_status disputed). Original values stay in `raw_json`. Denominators are not invented.
 
@@ -65,6 +67,7 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 - Alderney 2 other offices / 0 regional / 2 conditional dates
 - Armenia 71 municipal offices / 0 regional / 33 selected histories / 30 called next dates
 - Bosnia and Herzegovina 13 regional offices / 0 municipal / 39 selected histories / 13 expected 2026-10-04 dates / 10 approved + 3 needs_review
+- Bulgaria 530 approved municipal offices / 0 regional / 1,590 selected histories / 10,343 results; 3,067 held district/village offices unpublished
 - 10,227 approved LatAm offices (Batch A+B + El Salvador + Argentina)
 - New Zealand 4 offices / 7 events / 36 historical results
 - draft country offices absent
@@ -72,15 +75,17 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 
 The full import is a dedicated CI script rather than a Vitest case so the ~3 minute LatAm projection does not trip Vitest's worker RPC timeout.
 
-The existing Albania CLI test uses `ATLAS_IMPORT_SCOPE=albania` so it stays a fast Albania-only proof. Andorra uses `ATLAS_IMPORT_SCOPE=andorra`. Alderney uses `ATLAS_IMPORT_SCOPE=alderney`. Armenia uses `ATLAS_IMPORT_SCOPE=armenia`. Bosnia uses `ATLAS_IMPORT_SCOPE=bosnia`:
+The existing Albania CLI test uses `ATLAS_IMPORT_SCOPE=albania` so it stays a fast Albania-only proof. Andorra uses `ATLAS_IMPORT_SCOPE=andorra`. Alderney uses `ATLAS_IMPORT_SCOPE=alderney`. Armenia uses `ATLAS_IMPORT_SCOPE=armenia`. Bosnia uses `ATLAS_IMPORT_SCOPE=bosnia`. Bulgaria uses `ATLAS_IMPORT_SCOPE=bulgaria`:
 
 ```bash
 export ATLAS_SQLITE_PATH=/tmp/atlas.sqlite
 export ATLAS_ATTEMPTS_SQLITE_PATH=/tmp/atlas-attempts.sqlite
+ATLAS_IMPORT_SCOPE=armenia npm run import:atlas
 ATLAS_IMPORT_SCOPE=bosnia npm run import:atlas
+ATLAS_IMPORT_SCOPE=bulgaria npm run import:atlas
 ```
 
-Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of a few minutes (LatAm projection + ~146k result rows). Use `albania`, `andorra`, `alderney`, `armenia`, `bosnia`, or `nz` when you only need those lineages.
+Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of a few minutes (LatAm projection + ~146k result rows + Bulgaria unpack). Use `albania`, `andorra`, `alderney`, `armenia`, `bosnia`, `bulgaria`, or `nz` when you only need those lineages.
 
 ## VPS — Bosnia scoped import only
 
@@ -95,7 +100,7 @@ ATLAS_IMPORT_SCOPE=bosnia npm run import:atlas
 
 Expected stdout includes `bosnia_offices=13`, `bosnia_regional=13`, `bosnia_municipal=0`, `bosnia_selected_histories=39`, `bosnia_prospective_events=13`, `bosnia_result_rows=749`, `bosnia_sources=30`, `bosnia_approved=10`, `bosnia_needs_review=3`. Unrelated lineages already published in that SQLite stay selected. This importer does not SSH, copy files, or flip `/electiondatabase` redirects.
 
-Mexico withhold-all-67 and Austria remain untouched. Cutover remains out of scope.
+Mexico withhold-all-67 and Austria remain untouched. Cutover remains out of scope. This PR does not add a Bulgaria VPS deploy.
 
 ## `/atlas` UI
 

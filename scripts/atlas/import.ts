@@ -3,7 +3,8 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Bosnia and Herzegovina +
- * approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`). Draft residual-heavy packs are skipped.
+ * Bulgaria + approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`).
+ * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
  * See docs/phase2/Continuity_Import.md.
@@ -98,6 +99,21 @@ function main() {
       console.log(`bosnia_sources=${result.bosnia.counts.sources}`);
       console.log(`bosnia_approved=${result.bosnia.counts.approved_classifications}`);
       console.log(`bosnia_needs_review=${result.bosnia.counts.needs_review_classifications}`);
+    }
+    if (result.bulgaria) {
+      console.log("lineage=country-package-bulgaria");
+      console.log(`bulgaria_attempt_id=${result.bulgaria.attemptId}`);
+      console.log(`bulgaria_release_id=${result.bulgaria.releaseId}`);
+      console.log(`bulgaria_fingerprint_sha256=${result.bulgaria.fingerprint}`);
+      console.log(`bulgaria_reused_release=${result.bulgaria.reusedRelease ? "yes" : "no"}`);
+      console.log(`bulgaria_offices=${result.bulgaria.counts.current_offices}`);
+      console.log(`bulgaria_municipal=${result.bulgaria.counts.municipal_offices}`);
+      console.log(`bulgaria_selected_histories=${result.bulgaria.counts.selected_histories}`);
+      console.log(`bulgaria_prospective_events=${result.bulgaria.counts.prospective_events}`);
+      console.log(`bulgaria_result_rows=${result.bulgaria.counts.result_rows}`);
+      console.log(`bulgaria_sources=${result.bulgaria.counts.sources}`);
+      console.log(`bulgaria_regional=${result.bulgaria.counts.regional_offices}`);
+      console.log(`bulgaria_held_offices=${result.bulgaria.counts.held_offices}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
