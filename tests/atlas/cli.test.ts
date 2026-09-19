@@ -396,6 +396,72 @@ describe("atlas CLI stubs", () => {
     },
     60_000,
   );
+
+  it(
+    "import:atlas loads Belgium into temporary databases",
+    () => {
+      const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-belgium-cli-"));
+      tempDirs.push(dir);
+      const sqlitePath = path.join(dir, "atlas.sqlite");
+      const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+      const result = runAtlasScript("scripts/atlas/import.ts", {
+        ATLAS_SQLITE_PATH: sqlitePath,
+        ATLAS_ATTEMPTS_SQLITE_PATH: attemptsPath,
+        ATLAS_OPERATOR: "atlas-cli-test",
+        ATLAS_IMPORT_SCOPE: "belgium",
+        OBSERVATORY_FIXTURES: "",
+      });
+      expect(result.status, result.stderr).toBe(0);
+      expect(result.stdout).toContain("import:atlas");
+      expect(result.stdout).toContain("lineage=country-package-belgium");
+      expect(result.stdout).toContain("belgium_offices=1234");
+      expect(result.stdout).toContain("belgium_current=1179");
+      expect(result.stdout).toContain("belgium_historical=55");
+      expect(result.stdout).toContain("belgium_municipal=1185");
+      expect(result.stdout).toContain("belgium_regional=15");
+      expect(result.stdout).toContain("belgium_national=2");
+      expect(result.stdout).toContain("belgium_other=32");
+      expect(result.stdout).toContain("belgium_selected_histories=1770");
+      expect(result.stdout).toContain("belgium_prospective_events=0");
+      expect(result.stdout).toContain("belgium_result_rows=9238");
+      expect(result.stdout).toContain("belgium_sources=460");
+      expect(result.stdout).toContain("belgium_unresolved=37");
+
+      const master = new DatabaseSync(sqlitePath, { readOnly: true });
+      try {
+        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 1234 });
+        expect(
+          master.prepare("SELECT geography_id FROM office WHERE office_id = 'BE-11001-C'").get(),
+        ).toMatchObject({ geography_id: "BE-NIS-11001" });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office WHERE office_status = 'historical'")
+            .get(),
+        ).toMatchObject({ n: 55 });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'regional'")
+            .get(),
+        ).toMatchObject({ n: 15 });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'national_context'")
+            .get(),
+        ).toMatchObject({ n: 2 });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM election_event WHERE selected_history_role = 'none'")
+            .get(),
+        ).toMatchObject({ n: 0 });
+      } finally {
+        master.close();
+      }
+
+      expect(atlasImportStatusMessage()).toContain("Belgium");
+      expect(atlasImportStatusMessage()).toContain("belgium");
+    },
+    180_000,
+  );
 });
 
 describe("gitignore sqlite binaries", () => {

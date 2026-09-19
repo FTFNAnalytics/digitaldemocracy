@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Bosnia and Herzegovina + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Belgium + Bosnia and Herzegovina + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -15,6 +15,7 @@ import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
 import { LINEAGE_ID as ALDERNEY_LINEAGE } from "../../lib/atlas/alderney/identity";
 import { LINEAGE_ID as ANDORRA_LINEAGE } from "../../lib/atlas/andorra/identity";
 import { LINEAGE_ID as ARMENIA_LINEAGE } from "../../lib/atlas/armenia/identity";
+import { LINEAGE_ID as BELGIUM_LINEAGE } from "../../lib/atlas/belgium/identity";
 import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
 
 function fail(message: string): never {
@@ -89,6 +90,33 @@ function main() {
     if (result.bosnia?.counts.approved_classifications !== 10) {
       fail(`Bosnia approved ${String(result.bosnia?.counts.approved_classifications)}`);
     }
+    if (result.belgium?.counts.offices !== 1234) {
+      fail(`Belgium offices ${String(result.belgium?.counts.offices)}`);
+    }
+    if (result.belgium?.counts.current_offices !== 1179) {
+      fail(`Belgium current ${String(result.belgium?.counts.current_offices)}`);
+    }
+    if (result.belgium?.counts.historical_offices !== 55) {
+      fail(`Belgium historical ${String(result.belgium?.counts.historical_offices)}`);
+    }
+    if (result.belgium?.counts.municipal_offices !== 1185) {
+      fail(`Belgium municipal ${String(result.belgium?.counts.municipal_offices)}`);
+    }
+    if (result.belgium?.counts.regional_offices !== 15) {
+      fail(`Belgium regional ${String(result.belgium?.counts.regional_offices)}`);
+    }
+    if (result.belgium?.counts.national_offices !== 2) {
+      fail(`Belgium national ${String(result.belgium?.counts.national_offices)}`);
+    }
+    if (result.belgium?.counts.total_events !== 1772) {
+      fail(`Belgium events ${String(result.belgium?.counts.total_events)}`);
+    }
+    if (result.belgium?.counts.result_rows !== 9238) {
+      fail(`Belgium results ${String(result.belgium?.counts.result_rows)}`);
+    }
+    if (result.belgium?.counts.prospective_events !== 0) {
+      fail(`Belgium prospective ${String(result.belgium?.counts.prospective_events)}`);
+    }
     if (result.bosnia?.counts.needs_review_classifications !== 3) {
       fail(`Bosnia needs_review ${String(result.bosnia?.counts.needs_review_classifications)}`);
     }
@@ -119,6 +147,15 @@ function main() {
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ARMENIA_LINEAGE]) !== 71) {
         fail("Armenia office rows");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BELGIUM_LINEAGE]) !== 1234) {
+        fail("Belgium office rows");
+      }
+      if (
+        count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_status = 'historical'", [BELGIUM_LINEAGE]) !==
+        55
+      ) {
+        fail("Belgium historical office rows");
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BOSNIA_LINEAGE]) !== 13) {
         fail("Bosnia office rows");
@@ -158,6 +195,24 @@ function main() {
         ) !== 71
       ) {
         fail("Armenia municipal rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'regional'",
+          [BELGIUM_LINEAGE],
+        ) !== 15
+      ) {
+        fail("Belgium regional rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'national_context'",
+          [BELGIUM_LINEAGE],
+        ) !== 2
+      ) {
+        fail("Belgium national rows");
       }
       if (
         count(

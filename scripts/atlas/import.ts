@@ -2,7 +2,7 @@
 /**
  * Import approved Atlas lineages into SQLite.
  *
- * Default scope is Albania + Andorra + Alderney + Armenia + Bosnia and Herzegovina +
+ * Default scope is Albania + Andorra + Alderney + Armenia + Belgium + Bosnia and Herzegovina +
  * approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`). Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -82,6 +82,25 @@ function main() {
       console.log(`armenia_result_rows=${result.armenia.counts.result_rows}`);
       console.log(`armenia_sources=${result.armenia.counts.sources}`);
       console.log(`armenia_regional=${result.armenia.counts.regional_offices}`);
+    }
+    if (result.belgium) {
+      console.log("lineage=country-package-belgium");
+      console.log(`belgium_attempt_id=${result.belgium.attemptId}`);
+      console.log(`belgium_release_id=${result.belgium.releaseId}`);
+      console.log(`belgium_fingerprint_sha256=${result.belgium.fingerprint}`);
+      console.log(`belgium_reused_release=${result.belgium.reusedRelease ? "yes" : "no"}`);
+      console.log(`belgium_offices=${result.belgium.counts.offices}`);
+      console.log(`belgium_current=${result.belgium.counts.current_offices}`);
+      console.log(`belgium_historical=${result.belgium.counts.historical_offices}`);
+      console.log(`belgium_municipal=${result.belgium.counts.municipal_offices}`);
+      console.log(`belgium_regional=${result.belgium.counts.regional_offices}`);
+      console.log(`belgium_national=${result.belgium.counts.national_offices}`);
+      console.log(`belgium_other=${result.belgium.counts.other_offices}`);
+      console.log(`belgium_selected_histories=${result.belgium.counts.selected_histories}`);
+      console.log(`belgium_prospective_events=${result.belgium.counts.prospective_events}`);
+      console.log(`belgium_result_rows=${result.belgium.counts.result_rows}`);
+      console.log(`belgium_sources=${result.belgium.counts.sources}`);
+      console.log(`belgium_unresolved=${result.belgium.counts.unresolved_evidence}`);
     }
     if (result.bosnia) {
       console.log("lineage=country-package-bosnia-and-herzegovina");

@@ -1,9 +1,9 @@
 import type { DatabaseSync } from "node:sqlite";
 import { LINEAGE_ID } from "./identity";
-import { insertRow } from "../sqlite";
-import type { BulgariaProjection, SqlRow } from "./project";
+import { insertMany, insertRow } from "../sqlite";
+import type { BelgiumProjection, SqlRow } from "./project";
 
-const BULGARIA_PROJECTION_TABLES = [
+const BELGIUM_PROJECTION_TABLES = [
   "evidence_link",
   "unresolved_evidence",
   "identity_crosswalk",
@@ -21,15 +21,15 @@ const BULGARIA_PROJECTION_TABLES = [
   "retained_input",
 ] as const;
 
-export function clearBulgariaProjection(db: DatabaseSync): void {
-  for (const table of BULGARIA_PROJECTION_TABLES) {
+export function clearBelgiumProjection(db: DatabaseSync): void {
+  for (const table of BELGIUM_PROJECTION_TABLES) {
     db.prepare(`DELETE FROM ${table} WHERE lineage_id = ?`).run(LINEAGE_ID);
   }
 }
 
-export function writeBulgariaProjection(
+export function writeBelgiumProjection(
   db: DatabaseSync,
-  projection: BulgariaProjection,
+  projection: BelgiumProjection,
   attemptId: string,
   options?: { reuseRelease?: boolean },
 ): void {
@@ -55,26 +55,26 @@ export function writeBulgariaProjection(
     if (!selected) {
       insertRow(db, "publication_release", projection.publicationRelease);
     } else if (String(selected.release_id) !== String(projection.publicationRelease.release_id)) {
-      clearBulgariaProjection(db);
+      clearBelgiumProjection(db);
       db.prepare("UPDATE publication_release SET release_id = ? WHERE lineage_id = ?").run(
         projection.publicationRelease.release_id,
         LINEAGE_ID,
       );
     }
 
-    insertAll(db, "retained_input", projection.retainedInputs);
+    insertMany(db, "retained_input", projection.retainedInputs);
     insertRow(db, "country", projection.country);
-    insertAll(db, "geography", projection.geographies);
-    insertAll(db, "office_tier_classification", projection.tiers);
-    insertAll(db, "office", projection.offices);
-    insertAll(db, "research_date", projection.dates);
-    insertAll(db, "election_event", projection.events);
-    insertAll(db, "source", projection.sources);
-    insertAll(db, "result_row", projection.results);
-    insertAll(db, "record_locator", projection.locators);
-    insertAll(db, "evidence_link", projection.evidence);
-    insertAll(db, "unresolved_evidence", projection.unresolved);
-    insertAll(db, "identity_crosswalk", projection.crosswalks);
+    insertMany(db, "geography", projection.geographies);
+    insertMany(db, "office_tier_classification", projection.tiers);
+    insertMany(db, "office", projection.offices);
+    insertMany(db, "research_date", projection.dates);
+    insertMany(db, "election_event", projection.events);
+    insertMany(db, "source", projection.sources);
+    insertMany(db, "result_row", projection.results);
+    insertMany(db, "record_locator", projection.locators);
+    insertMany(db, "evidence_link", projection.evidence);
+    insertMany(db, "unresolved_evidence", projection.unresolved);
+    insertMany(db, "identity_crosswalk", projection.crosswalks);
     upsertReceipt(db, attemptId, projection.publicationRelease.release_id as string);
     db.exec("COMMIT;");
   } catch (error) {
@@ -85,10 +85,6 @@ export function writeBulgariaProjection(
     }
     throw error;
   }
-}
-
-function insertAll(db: DatabaseSync, table: string, rows: SqlRow[]): void {
-  for (const row of rows) insertRow(db, table, row);
 }
 
 function upsertReceipt(db: DatabaseSync, attemptId: string, releaseId: string): void {
@@ -108,3 +104,5 @@ function upsertReceipt(db: DatabaseSync, attemptId: string, releaseId: string): 
      WHERE singleton = 1`,
   ).run(attemptId, LINEAGE_ID, releaseId);
 }
+
+export type { SqlRow };

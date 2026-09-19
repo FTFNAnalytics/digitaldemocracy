@@ -464,6 +464,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "belgium") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "15 regional offices (10 provincial councils + Flemish, Walloon, Brussels, German-speaking Community, and French Community parliaments). Historic regional depth is not a forthcoming alert. Remaining-universe notes stay open; no invented municipal or indirect rows beyond the accepted S2 pack.",
+      denominatorKnown: false,
+    };
+  }
   if (countryId === "bosnia-and-herzegovina") {
     return {
       offices,
