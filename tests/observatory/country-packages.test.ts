@@ -24,10 +24,10 @@ describe("country package inventory", () => {
       "bulgaria",
     ]);
     expect(skipped.find((row) => row.slug === "austria")?.reason).toMatch(
-      /XZ payload has no observatory adapter/i,
+      /XZ payloads have no observatory adapter/i,
     );
     expect(skipped.find((row) => row.slug === "bulgaria")?.reason).toMatch(
-      /XZ payload has no observatory adapter/i,
+      /XZ payloads have no observatory adapter/i,
     );
     expect(
       skipped.find((row) => row.slug === "bosnia-and-herzegovina")?.reason,
