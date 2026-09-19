@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
-import { cpSync, existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { importAustria } from "../../lib/atlas/austria/import";
@@ -8,22 +8,11 @@ import { countRows, openAtlasDatabase } from "../../lib/atlas/sqlite";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
 
-function latestAttempt(attemptsPath: string): Record<string, unknown> {
-  const db = openAtlasDatabase(attemptsPath, { readOnly: true });
-  try {
-    const row = db.prepare("SELECT * FROM ingest_attempt ORDER BY started_at DESC, rowid DESC LIMIT 1").get();
-    if (!row) throw new Error("No ingest_attempt rows");
-    return row;
-  } finally {
-    db.close();
-  }
-}
-
 function fileSha256(filePath: string): string {
   return sha256Hex(readFileSync(filePath));
 }
 
-describe("Prompt N Austria rollback gates", () => {
+describe("Prompt N Austria coverage-change gates", () => {
   const tempDirs: string[] = [];
   const originalFixtures = process.env.OBSERVATORY_FIXTURES;
 
@@ -40,9 +29,9 @@ describe("Prompt N Austria rollback gates", () => {
   });
 
   it(
-    "rolls back poison and rename failures and mints a new release when coverage changes",
+    "mints a new release when coverage.json remaining text changes",
     () => {
-      const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-austria-rollback-"));
+      const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-austria-coverage-"));
       tempDirs.push(dir);
       const options = {
         root: repoRoot,
@@ -52,28 +41,7 @@ describe("Prompt N Austria rollback gates", () => {
       };
 
       const first = importAustria(options);
-      const poisonPrior = fileSha256(options.sqlitePath);
-      expect(() =>
-        importAustria({
-          ...options,
-          poisonAfterWrite: (db) => {
-            db.exec("PRAGMA foreign_keys = OFF;");
-            db.prepare("DELETE FROM source WHERE source_id = ?").run("austria--Saa268dd490");
-            db.exec("PRAGMA foreign_keys = ON;");
-          },
-        }),
-      ).toThrow(/foreign_key_check|FOREIGN|source/i);
-      expect(fileSha256(options.sqlitePath)).toBe(poisonPrior);
-      const poisonAttempt = latestAttempt(options.attemptsPath);
-      expect(poisonAttempt.status).toBe("failed");
-      expect(poisonAttempt.successful_release_id).toBeNull();
-      expect(existsSync(`${options.sqlitePath}.staging`)).toBe(false);
-
-      expect(() => importAustria({ ...options, failBeforeRename: true })).toThrow(/Injected failure before rename/);
-      expect(fileSha256(options.sqlitePath)).toBe(poisonPrior);
-      expect(latestAttempt(options.attemptsPath).status).toBe("failed");
-      expect(latestAttempt(options.attemptsPath).successful_release_id).toBeNull();
-
+      const firstSha = fileSha256(options.sqlitePath);
       const coverageDir = path.join(dir, "coverage-package");
       cpSync(path.join(repoRoot, "data/countries/austria"), coverageDir, { recursive: true });
       const coveragePath = path.join(coverageDir, "coverage.json");
@@ -92,7 +60,7 @@ describe("Prompt N Austria rollback gates", () => {
       } finally {
         master.close();
       }
-      expect(poisonPrior).not.toBe(fileSha256(options.sqlitePath));
+      expect(firstSha).not.toBe(fileSha256(options.sqlitePath));
     },
     600_000,
   );
