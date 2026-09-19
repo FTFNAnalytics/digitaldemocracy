@@ -818,6 +818,155 @@ describe("Phase 0 tier-classification drafts", () => {
     expect(netherlands.notes?.every((note) => note.status === "open")).toBe(true);
     expect(netherlands.schema_compatibility).toMatchObject({ national: "national_context" });
   });
+
+  it("keeps Switzerland Prompt U 2805 current / 11 historical accepted with holds", () => {
+    const switzerland = readJson<
+      TierFile & {
+        production_accepted?: boolean;
+        full_register_certified?: boolean;
+        approval_scope?: string;
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          scope?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        counts_by_approval?: Record<string, number>;
+        importer_policy?: {
+          load?: string;
+          authorized_in_this_landing?: boolean;
+          approved_count?: number;
+          held_count?: number;
+          held_universe_gaps?: number;
+        };
+        justin_approval?: {
+          accepted?: boolean;
+          current_offices?: number;
+          historical_offices?: number;
+          scope?: string;
+          full_register_certified?: boolean;
+          held_commune_executive_gaps?: number;
+          held_commune_executive_gaps_by_canton?: Record<string, number>;
+          held_historical_geographies_without_offices?: number;
+          held_communes_without_positive_parliament_evidence?: number;
+        };
+        notes?: Array<{ category?: string; status?: string; count?: number; note?: string }>;
+        source_register: { path: string; sha256: string; bytes?: number };
+      }
+    >("schemas/atlas/tiers/switzerland.json");
+    expect(switzerland.status).toBe("approved");
+    expect(switzerland.production_accepted).toBe(true);
+    expect(switzerland.full_register_certified).toBe(false);
+    expect(switzerland.approval_scope).toBe("evidenced_subset");
+    expect(switzerland.country_slug).toBe("switzerland");
+    expect(switzerland.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-19",
+      timezone: "America/Edmonton",
+      scope: "evidenced_subset",
+    });
+    expect(switzerland.approval?.notes).toMatch(/2,805 current \+ 11 historical/i);
+    expect(switzerland.approval?.notes).toMatch(/Accepted-with-holds/i);
+    expect(switzerland.approval?.notes).toMatch(/308 communes/i);
+    expect(switzerland.approval?.notes).toMatch(/VD 284, SZ 24/);
+    expect(switzerland.approval?.notes).toMatch(/1,938 communes/i);
+    expect(switzerland.approval?.notes).toMatch(/Full-register certification remains OPEN/i);
+    expect(switzerland.approval?.notes).toMatch(/Do not invent the 308 missing commune executives/i);
+    expect(switzerland.predecessor_draft_sha256).toBe(
+      "0cddfca20fab058ed9f1a712515fdfd1725abda7a2e5a1b7903087135893d4bf",
+    );
+    expect(sha256("schemas/atlas/tiers/switzerland.json")).toBe(
+      "d1ebccfd1633aacd9b70732dcfe1f3e01df9549076d4b71efce38d436a2749f1",
+    );
+    expect(switzerland.classifications).toHaveLength(2816);
+    expect(switzerland.counts_by_proposed_tier).toEqual({
+      national: 2,
+      regional: 52,
+      municipal: 2402,
+      council: 0,
+      other: 360,
+      unknown: 0,
+    });
+    expect(switzerland.counts_by_approval).toEqual({
+      production_approved_current: 2805,
+      production_approved_historical: 11,
+      production_approved_total: 2816,
+      municipal: 2402,
+      regional: 52,
+      national: 2,
+      other: 360,
+      held_offices_in_register: 0,
+      held_commune_executive_gaps: 308,
+      held_historical_geographies: 586,
+      held_communes_without_positive_parliament_evidence: 1938,
+    });
+    expect(switzerland.importer_policy).toMatchObject({
+      load: "not_implemented",
+      authorized_in_this_landing: false,
+      approved_count: 2816,
+      held_count: 0,
+      held_universe_gaps: 308,
+    });
+    expect(switzerland.justin_approval).toMatchObject({
+      accepted: true,
+      current_offices: 2805,
+      historical_offices: 11,
+      scope: "evidenced_subset",
+      full_register_certified: false,
+      held_commune_executive_gaps: 308,
+      held_commune_executive_gaps_by_canton: { VD: 284, SZ: 24 },
+      held_historical_geographies_without_offices: 586,
+      held_communes_without_positive_parliament_evidence: 1938,
+    });
+    expect(switzerland.classifications.filter((row) => row.tier === "municipal")).toHaveLength(2402);
+    expect(switzerland.classifications.filter((row) => row.tier === "regional")).toHaveLength(52);
+    expect(switzerland.classifications.filter((row) => row.tier === "national")).toHaveLength(2);
+    expect(switzerland.classifications.filter((row) => row.tier === "other")).toHaveLength(360);
+    const register = readJson<Array<{ office_id: string; current: boolean }>>(
+      "data/research/switzerland/office-register.json",
+    );
+    expect(register.filter((row) => row.current)).toHaveLength(2805);
+    expect(register.filter((row) => !row.current)).toHaveLength(11);
+    expect(readJson<unknown[]>("data/research/switzerland/events.json")).toHaveLength(1443);
+    expect(readJson<unknown[]>("data/research/switzerland/results.json")).toHaveLength(8094);
+    expectExactIds(
+      switzerland,
+      register.map((row) => row.office_id),
+    );
+    expect(switzerland.source_register.sha256).toBe(
+      "f575711d0149660ad7b72e661d65ed9658f4bddf29045f804ef50188b34d0987",
+    );
+    expect(switzerland.source_register.sha256).toBe(sha256("data/research/switzerland/office-register.json"));
+    expect(switzerland.source_register.path).toBe("data/research/switzerland/office-register.json");
+    const executiveGap = switzerland.notes?.find((note) => note.category === "commune_executive_gap");
+    expect(executiveGap).toMatchObject({ status: "open", count: 308 });
+    expect(executiveGap?.note).toMatch(/Do not invent missing commune executives/i);
+    expect(switzerland.notes?.find((note) => note.category === "thin_historic_merger_archive")).toMatchObject({
+      status: "open",
+    });
+    expect(switzerland.notes?.find((note) => note.category === "citizen_assembly_parliament_caveat")).toMatchObject({
+      status: "open",
+      count: 1938,
+    });
+    expect(switzerland.notes?.find((note) => note.category === "mode_variance_disputed_results")).toMatchObject({
+      status: "open",
+    });
+    expect(switzerland.notes?.find((note) => note.category === "full_register_certification")).toMatchObject({
+      status: "open",
+    });
+    const audit = readJson<Array<{ canton: string; executive_body_recorded: boolean }>>(
+      "data/research/switzerland/commune-coverage-audit.json",
+    );
+    const missingExec = audit.filter((row) => !row.executive_body_recorded);
+    expect(missingExec).toHaveLength(308);
+    expect(missingExec.filter((row) => row.canton === "VD")).toHaveLength(284);
+    expect(missingExec.filter((row) => row.canton === "SZ")).toHaveLength(24);
+    expect(switzerland.schema_compatibility).toMatchObject({ national: "national_context" });
+  });
 });
 
 describe("Phase 0 inventory artifacts", () => {

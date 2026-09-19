@@ -1,0 +1,104 @@
+{
+  "package_integrity": "PASS",
+  "checks_passed": 34713,
+  "research_completeness": "OPEN",
+  "current_offices": 2805,
+  "historical_offices": 11,
+  "events": 1443,
+  "results": 8094,
+  "proceedings": 136,
+  "applied_changes": 0,
+  "importer_sqlite_vps_ui": "Not run",
+  "counts": {
+    "current_offices": 2805,
+    "historical_offices": 11,
+    "total_offices": 2816,
+    "geographies": 2723,
+    "bfs_current_communes": 2110,
+    "historical_commune_geographies": 586,
+    "events": 1443,
+    "results": 8094,
+    "proceedings": 136,
+    "retained_observations": 4641,
+    "disputed_result_rows": 16,
+    "source_artifacts": 57,
+    "tiers": {
+      "national": 2,
+      "regional": 52,
+      "municipal": 2402,
+      "other": 360
+    },
+    "current_tiers": {
+      "national": 2,
+      "regional": 52,
+      "municipal": 2397,
+      "other": 354
+    },
+    "current_office_types": {
+      "federal_lower_chamber": 1,
+      "federal_upper_chamber": 1,
+      "cantonal_legislature": 26,
+      "cantonal_executive": 26,
+      "communal_executive": 1801,
+      "communal_president": 779,
+      "communal_legislature": 171
+    },
+    "communes_without_executive_body_evidence": 308,
+    "communes_without_positive_parliament_evidence": 1938
+  },
+  "source_cell_audit": {
+    "source_bytes_unchanged": true,
+    "xlsx_result_claims_match_original_cells": true,
+    "xlsx_result_claim_occurrences_checked": 14391,
+    "xlsx_nonempty_rows_not_truncated": true,
+    "errors": []
+  },
+  "repo_mutation": 0,
+  "protected_bytes": {
+    "downloaded_source_bytes_identical_to_captured_originals": true,
+    "frozen_Europe_packages": "No writes or replacements; this task only creates the separate review pack.",
+    "other_country_tiers_and_Mexico": "Not touched"
+  },
+  "research_acceptance": {
+    "evidenced_subset": "ACCEPTED 2026-09-19",
+    "full_current_universe": "OPEN",
+    "full_historic_merger_offices": "OPEN",
+    "tier_approval": "accepted_evidenced_subset_with_holds",
+    "publication": "Not run"
+  },
+  "check_count_note": "Package-only checks before SHA256SUMS finalization; many checks are per-source-occurrence. External receipt records final manifest verification.",
+  "identity_contract": {
+    "pinned_main": "b4dcf6d891ed83a7db5b7d6eb8808671d6eec000",
+    "normalize_ts_sha256": "7e2dc6773c07ef27fe03f1e8c787e55ba37f4a96814b003a8cf4695464f2c497",
+    "key_truncation_hex_chars": 24
+  },
+  "status": "accepted_2805_current_11_historical_with_holds",
+  "justin_approval": {
+    "date": "2026-09-19",
+    "timezone": "America/Edmonton",
+    "accepted_by": "Justin",
+    "current_offices": 2805,
+    "historical_offices": 11,
+    "offices": 2816,
+    "scope": "evidenced_subset",
+    "full_register_certified": false,
+    "held_commune_executive_gaps": 308,
+    "held_historical_geographies_without_offices": 586,
+    "held_communes_without_positive_parliament_evidence": 1938,
+    "disputed_result_rows": 16,
+    "importer_loads": "not_implemented"
+  },
+  "predecessor_draft_tier_sha256": "0cddfca20fab058ed9f1a712515fdfd1725abda7a2e5a1b7903087135893d4bf",
+  "accepted_tier_sha256": "d1ebccfd1633aacd9b70732dcfe1f3e01df9549076d4b71efce38d436a2749f1",
+  "tier_sha256": "d1ebccfd1633aacd9b70732dcfe1f3e01df9549076d4b71efce38d436a2749f1",
+  "review_pack_slim_zip_sha256": "44cc615af90561d8da65fcb74bd72896a1fcab924d3e086a6d79fafd034216db",
+  "original_full_zip_sha256": "fa166825db67b6cfab89193e518a68613b80940cc613a17c45a674295127542c",
+  "open_research_notes": [
+    "commune_executive_gaps_308_vd284_sz24",
+    "thin_historic_merger_archive_586_geographies_11_offices",
+    "citizen_assembly_parliament_caveat_1938",
+    "mode_variance_disputed_result_rows",
+    "full_register_certification_open"
+  ],
+  "tier_approval": "accepted_evidenced_subset_2816_with_holds"
+}
