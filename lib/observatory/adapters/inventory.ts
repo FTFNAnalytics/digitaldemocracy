@@ -64,7 +64,7 @@ export function classifyCountryPackage(
         dir,
         kind: "unknown",
         reason:
-          "Packed Europe payload is not armenia-packed-europe/1 gzip tar chunks. Austria's XZ payload has no observatory adapter yet; the Atlas importer is not implemented in this change.",
+          "Packed Europe payload is not armenia-packed-europe/1 gzip tar chunks. Austria's XZ payload has no observatory adapter yet; Atlas import is a separate `import:atlas` path.",
       };
     }
     if (manifest.country !== "Armenia") {

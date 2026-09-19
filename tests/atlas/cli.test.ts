@@ -335,6 +335,58 @@ describe("atlas CLI stubs", () => {
     },
     180_000,
   );
+
+  it(
+    "import:atlas loads Austria into temporary databases",
+    () => {
+      const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-austria-cli-"));
+      tempDirs.push(dir);
+      const sqlitePath = path.join(dir, "atlas.sqlite");
+      const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+      const result = runAtlasScript("scripts/atlas/import.ts", {
+        ATLAS_SQLITE_PATH: sqlitePath,
+        ATLAS_ATTEMPTS_SQLITE_PATH: attemptsPath,
+        ATLAS_OPERATOR: "atlas-cli-test",
+        ATLAS_IMPORT_SCOPE: "austria",
+        OBSERVATORY_FIXTURES: "",
+      });
+      expect(result.status, result.stderr).toBe(0);
+      expect(result.stdout).toContain("import:atlas");
+      expect(result.stdout).toContain("lineage=country-package-austria");
+      expect(result.stdout).toContain("austria_offices=2038");
+      expect(result.stdout).toContain("austria_municipal=2034");
+      expect(result.stdout).toContain("austria_selected_histories=5956");
+      expect(result.stdout).toContain("austria_prospective_events=0");
+      expect(result.stdout).toContain("austria_result_rows=16336");
+      expect(result.stdout).toContain("austria_regional=4");
+
+      const master = new DatabaseSync(sqlitePath, { readOnly: true });
+      try {
+        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 2038 });
+        expect(
+          master.prepare("SELECT geography_id FROM office WHERE office_id = 'AT-KTN-A'").get(),
+        ).toMatchObject({ geography_id: "geo-7842b5b67d2aa6b79214f9f3" });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'regional'")
+            .get(),
+        ).toMatchObject({ n: 4 });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'municipal'")
+            .get(),
+        ).toMatchObject({ n: 2034 });
+        expect(
+          master
+            .prepare("SELECT history_key FROM election_event WHERE event_id = 'event-c38c8dd1ab8537426d14d5c0'")
+            .get(),
+        ).toMatchObject({ history_key: "AT-OOE-41119-M::2015::" });
+      } finally {
+        master.close();
+      }
+    },
+    300_000,
+  );
 });
 
 describe("gitignore sqlite binaries", () => {

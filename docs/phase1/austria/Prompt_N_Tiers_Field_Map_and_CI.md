@@ -1,6 +1,6 @@
 # Prompt N — tiers, field map and CI checklist
 
-**Documentation complete; tier draft unapproved; all execution gates Not run.** Package PR #11 `6b38848d76a815f7dd0bcae3d49a25e6dca9e1af`; main contracts `6e6426fe17f6f542b58b68f8607124e007b852ff`. Tier SHA `9181e0af7f9dd0e3b2a92520de1cb990901c08b6f68afd165608eaf66282283d`. Frozen register 2038 IDs; proposed 2034 municipal/4 regional; no prospective polling date supplied. No importer code,SQL row load,DDL,VPS,UI or other-country changes. applied_changes=0.
+**Documentation complete; geographic tiers approved 2026-09-17; importer code landed.** Package PR #11 merge `f0f2c86`; approved tier SHA `1c303f748b6fa706bea71d750b5e50be8ab27acc7baf166fe01e0b85e9da69eb` (predecessor draft `9181e0af7f9dd0e3b2a92520de1cb990901c08b6f68afd165608eaf66282283d`). Frozen register 2038 IDs; 2034 municipal / 4 regional; no prospective polling date supplied. St. Georgen `AT-OOE-41119-M::2015::` remains an open hold. Execution gates below are covered by `tests/atlas/austria-import.test.ts` / `ATLAS_IMPORT_SCOPE=austria npm run import:atlas`; mark each gate only after that proof. No `/electiondatabase` redirects or Mexico override changes.
 
 ## Required handoff outputs
 
