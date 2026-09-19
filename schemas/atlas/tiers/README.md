@@ -9,7 +9,7 @@ Albania `Regional / municipal` are **not** classifiers.
 
 Files were rebuilt from each package’s office register (one row per `office_id`;
 no invented IDs). See [docs/phase0/REPORT.md](../../../docs/phase0/REPORT.md).
-Albania municipal and Alderney `other` are **`approved`**. Andorra is **`approved`** (Justin 2026-09-16; 7 communal councils). Armenia is **`approved`** (Prompt L 2026-09-17; 71 municipal / 0 regional). Five Armenia boundary/calendar research reviews remain open separately from geographic-tier approval. Austria is **`approved`** (Prompt N 2026-09-17; 2,034 municipal / 4 regional). The Austria package is on main (PR #11, `f0f2c86`); `import:atlas` loads the lineage. The St. Georgen am Walde 2015 publication hold and open calendar/boundary research notes remain. Bosnia and Herzegovina is **`approved`** (Prompt O 2026-09-17; **all 13 regional**). The Bosnia package is on main (PR #15, `33454ab`); import with `ATLAS_IMPORT_SCOPE=bosnia`. Open RS presidential / coalition / calendar-certainty notes remain; do not invent Brčko or municipal offices. Bulgaria is **`approved` with a hold** (Prompt P 2026-09-19; **530 municipality-wide municipal accepted**, **3,067 district/village held**, **0 regional**). The Bulgaria package is on main (PR #16 head `de354127`); `import:atlas` with `ATLAS_IMPORT_SCOPE=bulgaria` loads only the 530 accepted rows unless submunicipal policy changes. Градец / qualification-change notes remain open. Belgium is **`approved`** (Prompt S2 2026-09-19; **1,179 current + 55 historical**; 1,185 municipal / 15 regional / 2 national / 32 other). Research lives at `data/research/belgium-s2/`; import with `ATLAS_IMPORT_SCOPE=belgium`. Remaining-universe indirect-body gaps stay open.
+Albania municipal and Alderney `other` are **`approved`**. Andorra is **`approved`** (Justin 2026-09-16; 7 communal councils). Armenia is **`approved`** (Prompt L 2026-09-17; 71 municipal / 0 regional). Five Armenia boundary/calendar research reviews remain open separately from geographic-tier approval. Austria is **`approved`** (Prompt N 2026-09-17; 2,034 municipal / 4 regional). The Austria package is on main (PR #11, `f0f2c86`); `import:atlas` loads the lineage. The St. Georgen am Walde 2015 publication hold and open calendar/boundary research notes remain. Bosnia and Herzegovina is **`approved`** (Prompt O 2026-09-17; **all 13 regional**). The Bosnia package is on main (PR #15, `33454ab`); import with `ATLAS_IMPORT_SCOPE=bosnia`. Open RS presidential / coalition / calendar-certainty notes remain; do not invent Brčko or municipal offices. Bulgaria is **`approved` with a hold** (Prompt P 2026-09-19; **530 municipality-wide municipal accepted**, **3,067 district/village held**, **0 regional**). The Bulgaria package is on main (PR #16 head `de354127`); `import:atlas` with `ATLAS_IMPORT_SCOPE=bulgaria` loads only the 530 accepted rows unless submunicipal policy changes. Градец / qualification-change notes remain open. Belgium is **`approved`** (Prompt S2 2026-09-19; **1,179 current + 55 historical**; 1,185 municipal / 15 regional / 2 national / 32 other). Research lives at `data/research/belgium-s2/`; import with `ATLAS_IMPORT_SCOPE=belgium`. Remaining-universe indirect-body gaps stay open. Netherlands is **`approved`** (Prompt T 2026-09-19; **432 current + 69 historical**; 414 municipal / 12 regional / 3 national / 72 other). Research lives at `data/research/netherlands/`; the Atlas importer waits. Hilversum/Wijdemeren successor binding, named historic gaps, and ~147 focused-tier reviews stay open.
 
 | File | Register rows | Proposed tier | Human review |
 | --- | ---: | --- | --- |
@@ -21,6 +21,7 @@ Albania municipal and Alderney `other` are **`approved`**. Andorra is **`approve
 | [`bosnia-and-herzegovina.json`](bosnia-and-herzegovina.json) | 13 | `regional` (13) | **Approved** 2026-09-17 (Justin / Prompt O). Package on main (PR #15); importer via `ATLAS_IMPORT_SCOPE=bosnia`. Open RS presidential / coalition / calendar notes retained |
 | [`bulgaria.json`](bulgaria.json) | 3597 | `municipal` (3597 proposed; 530 accepted / 3067 held) | **Partial approve** 2026-09-19 (Justin / Prompt P). 265 Mayor + 265 Municipal council accepted. 35 District mayor + 3,032 Village mayor held (`submunicipal_scope`). Regional=0. Importer loads 530 only |
 | [`belgium.json`](belgium.json) | 1234 | `municipal` (1185) + `regional` (15) + `national` (2) + `other` (32) | **Approved** 2026-09-19 (Justin / Prompt S2). 1,179 current + 55 historical. Remaining-universe notes retained. Importer via `ATLAS_IMPORT_SCOPE=belgium` |
+| [`netherlands.json`](netherlands.json) | 501 | `municipal` (414) + `regional` (12) + `national` (3) + `other` (72) | **Approved** 2026-09-19 (Justin / Prompt T). 432 current + 69 historical. Focused-tier reviews (~147) and Hilversum/Wijdemeren stay open. Atlas importer waits |
 
 Vocabulary uses `national` as a proposed label. `schema_compatibility` maps
 `national` → schema v1 `national_context`.
@@ -71,6 +72,18 @@ successor/code-change notes. Research tables live at `data/research/belgium-s2/`
 Import with `ATLAS_IMPORT_SCOPE=belgium`; do not use `all` on the VPS for this
 lineage. Frozen PR #14 zero-office screening extract is not overwritten.
 
+**Netherlands** is **approved** (Prompt T, Justin 2026-09-19 America/Edmonton;
+SHA-256 `faaf7573c678887004bc1f36f00a8496294ae23db5569278280a45642f0631b7`;
+predecessor draft `81dc30e718355573cd15e3c93ff8f75364e4223612efab23cbd3393c5c94ea89`).
+Exact 501 office IDs: **432 current + 69 historical** (414 municipal /
+12 regional / 3 national / 72 other). Standing policy retains offices and
+historic rows outside the ~18-month alert window. Hilversum/Wijdemeren merger
+successor binding stays open, as do named historic gaps / partial coverage.
+Focused-tier review rows (~147) keep drafted tiers; Justin accepted the
+register universe. Appointed mayors: no mayoral election rows. Research tables
+live at `data/research/netherlands/`. Slim pack omitted bulky sources; do not
+invent those bytes. The Atlas importer waits.
+
 **Albania:** all 122 office-register rows are **approved** `municipal` (Justin,
 2026-09-16) for Phase 1 storage proof. Regional count is 0 by design. Do not
 invent regional or national offices. The importer must hash the accepted file
@@ -92,7 +105,7 @@ landed) and are not executable yet.
 
 Do not treat proposed-tier counts as approved coverage. Office IDs and proposed
 labels come from the Prompt E pack; they are not invented here. Albania,
-Andorra, Alderney, Armenia, Austria, Bosnia and Herzegovina, Bulgaria, and Belgium files above are unchanged.
+Andorra, Alderney, Armenia, Austria, Bosnia and Herzegovina, Bulgaria, Belgium, and Netherlands files above are unchanged.
 
 | File | Offices | Historical | Status |
 | --- | ---: | ---: | --- |

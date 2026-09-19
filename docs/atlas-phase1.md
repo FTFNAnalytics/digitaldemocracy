@@ -37,10 +37,11 @@ summarized at the top of [atlas-plan.md](atlas-plan.md).
 | Bosnia Prompt O field map | [docs/phase1/bosnia-and-herzegovina/](phase1/bosnia-and-herzegovina/Prompt_O_Tiers_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=bosnia`) |
 | Bulgaria Prompt P field map | [docs/phase1/bulgaria/](phase1/bulgaria/Prompt_P_Tiers_Field_Map_and_CI.md) — mapping **Done**; importer loads **530** accepted municipal offices only (`ATLAS_IMPORT_SCOPE=bulgaria`; package PR #16 head `de354127`; 3,067 submunicipal held) |
 | Belgium Prompt S2 field map | [docs/phase1/belgium-s2/](phase1/belgium-s2/Prompt_S2_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=belgium`; **1,179 current + 55 historical**) |
+| Netherlands Prompt T field map | [docs/phase1/netherlands/](phase1/netherlands/Prompt_T_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer CI **Not run** (research at `data/research/netherlands/`; **432 current + 69 historical accepted**; Atlas importer waits) |
 | Named CI | `tests/atlas/import.test.ts` (Prompt C gates) and `tests/atlas/cli.test.ts` (migrate + import CLI) |
 | Phase 0 inventory | `docs/phase0/` (`REPORT.md`, `inventory.json`, `continuity-counts.json`, `human-review.json`) |
 | Prompt D continuity docs | [docs/phase2/](phase2/README.md) — field maps, identity rules, acceptance examples, checklist; approved-pack importer CI runs (`npm run test:atlas-import`) |
-| Tier-classification files | `schemas/atlas/tiers/albania.json` (**approved** municipal); `alderney.json` (**approved** `other`); `andorra.json` (**approved** municipal, Justin 2026-09-16); `armenia.json` (**approved** municipal, Prompt L 2026-09-17; five boundary/calendar reviews remain open); `austria.json` (**approved** 2,034 municipal / 4 regional, Prompt N 2026-09-17; package on main via PR #11; St. Georgen 2015 hold retained; `import:atlas` loads the lineage); `bosnia-and-herzegovina.json` (**approved** all 13 regional, Prompt O 2026-09-17; package on main via PR #15; RS presidential / coalition / calendar notes retained; importer via `ATLAS_IMPORT_SCOPE=bosnia`); `bulgaria.json` (**530 municipality-wide municipal accepted** / **3,067 district/village held**, Prompt P 2026-09-19; package PR #16 head `de354127`; no regional layer; importer loads 530 only); `belgium.json` (**1,179 current + 55 historical accepted**, Prompt S2 2026-09-19; 1,185 municipal / 15 regional / 2 national / 32 other; research at `data/research/belgium-s2/`; remaining-universe notes retained; importer via `ATLAS_IMPORT_SCOPE=belgium`) |
+| Tier-classification files | `schemas/atlas/tiers/albania.json` (**approved** municipal); `alderney.json` (**approved** `other`); `andorra.json` (**approved** municipal, Justin 2026-09-16); `armenia.json` (**approved** municipal, Prompt L 2026-09-17; five boundary/calendar reviews remain open); `austria.json` (**approved** 2,034 municipal / 4 regional, Prompt N 2026-09-17; package on main via PR #11; St. Georgen 2015 hold retained; `import:atlas` loads the lineage); `bosnia-and-herzegovina.json` (**approved** all 13 regional, Prompt O 2026-09-17; package on main via PR #15; RS presidential / coalition / calendar notes retained; importer via `ATLAS_IMPORT_SCOPE=bosnia`); `bulgaria.json` (**530 municipality-wide municipal accepted** / **3,067 district/village held**, Prompt P 2026-09-19; package PR #16 head `de354127`; no regional layer; importer loads 530 only); `belgium.json` (**1,179 current + 55 historical accepted**, Prompt S2 2026-09-19; 1,185 municipal / 15 regional / 2 national / 32 other; research at `data/research/belgium-s2/`; remaining-universe notes retained; importer via `ATLAS_IMPORT_SCOPE=belgium`); `netherlands.json` (**432 current + 69 historical accepted**, Prompt T 2026-09-19; 414 municipal / 12 regional / 3 national / 72 other; research at `data/research/netherlands/`; Hilversum/Wijdemeren and ~147 focused-tier reviews retained; Atlas importer waits) |
 
 `migrate:atlas` may create local gitignored DBs with empty typed tables. Empty schema is **not** Phase 1 exit. `import:atlas` against the frozen Albania package is the storage proof: 122 offices, 366 selected histories, 3,843 result rows, 122 municipal / 0 regional, 185 sources (182 catalogue + 3 inline), 122 briefings retained, proceedings=0, party_mappings=0.
 
@@ -92,6 +93,15 @@ gaps, Bilzen / Saint-Josse / 35 unbound IBZ 2000 notes stay open. Research
 tables land at `data/research/belgium-s2/`. Import with
 `ATLAS_IMPORT_SCOPE=belgium` (do not use `all` on the VPS for this lineage).
 Frozen PR #14 screening extract is not overwritten.
+Netherlands Prompt T docs are in
+[docs/phase1/netherlands/](phase1/netherlands/README.md)
+(mapping Done; execution CI Not run). Justin accepted **432 current + 69
+historical** offices on 2026-09-19. Standing policy retains offices and
+historic rows outside the ~18-month window. Hilversum/Wijdemeren merger
+successor binding, named historic gaps, and ~147 focused-tier reviews stay
+open. Appointed mayors: no mayoral election rows. Research tables land at
+`data/research/netherlands/`; Atlas importer waits. Slim pack omitted bulky
+sources; do not invent those bytes.
 
 ### Fingerprint `schema_inputs` paths
 
@@ -168,5 +178,6 @@ Deferred Prompt C rows above are **not** waived. They remain required before cla
 | Bosnia Prompt O field map | **Documentation complete** in [docs/phase1/bosnia-and-herzegovina/](phase1/bosnia-and-herzegovina/README.md). Mapping Done; importer landed (`ATLAS_IMPORT_SCOPE=bosnia`). Package on main via PR #15. Approved `bosnia-and-herzegovina.json` is all 13 regional. |
 | Bulgaria Prompt P field map | **Importer landed** in [docs/phase1/bulgaria/](phase1/bulgaria/README.md). Mapping Done. `ATLAS_IMPORT_SCOPE=bulgaria` publishes 530 accepted municipal offices / 0 regional. Package PR #16 head `de354127`. 3,067 district/village rows stay held. |
 | Belgium Prompt S2 field map | **Documentation complete** in [docs/phase1/belgium-s2/](phase1/belgium-s2/README.md). Mapping Done; importer landed (`ATLAS_IMPORT_SCOPE=belgium`). Research at `data/research/belgium-s2/`. `belgium.json` is 1,179 current + 55 historical accepted (1,185 municipal / 15 regional / 2 national / 32 other). |
+| Netherlands Prompt T field map | **Documentation complete** in [docs/phase1/netherlands/](phase1/netherlands/README.md). Mapping Done; importer CI Not run. Research at `data/research/netherlands/`. `netherlands.json` is 432 current + 69 historical accepted (414 municipal / 12 regional / 3 national / 72 other). |
 
 Still out of scope: redirects, cutover, residual-heavy draft packs, and tightness. Austria, Belgium, Bosnia, and Bulgaria `import:atlas` load their approved lineages; the observatory still skips Austria/Bulgaria XZ and Bosnia gzip. Prompt M 95 sibling withholds: disposition accepted 2026-09-17 and docs PR #27 landed; production override remains 67.

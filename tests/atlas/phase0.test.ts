@@ -702,6 +702,122 @@ describe("Phase 0 tier-classification drafts", () => {
     expect(belgium.notes?.every((note) => note.status === "open")).toBe(true);
     expect(belgium.schema_compatibility).toMatchObject({ national: "national_context" });
   });
+
+  it("keeps Netherlands Prompt T 432 current / 69 historical fully accepted", () => {
+    const netherlands = readJson<
+      TierFile & {
+        production_accepted?: boolean;
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        counts_by_approval?: Record<string, number>;
+        importer_policy?: {
+          load?: string;
+          authorized_in_this_landing?: boolean;
+          approved_count?: number;
+          held_count?: number;
+        };
+        justin_approval?: {
+          accepted?: boolean;
+          current_offices?: number;
+          historical_offices?: number;
+          focused_tier_reviews_retained?: number;
+        };
+        notes?: Array<{ category?: string; status?: string; office_ids?: string[]; note?: string }>;
+        source_register: { path: string; sha256: string; bytes?: number };
+      }
+    >("schemas/atlas/tiers/netherlands.json");
+    expect(netherlands.status).toBe("approved");
+    expect(netherlands.production_accepted).toBe(true);
+    expect(netherlands.country_slug).toBe("netherlands");
+    expect(netherlands.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-19",
+      timezone: "America/Edmonton",
+    });
+    expect(netherlands.approval?.notes).toMatch(/432 current \+ 69 historical/i);
+    expect(netherlands.approval?.notes).toMatch(/retain offices and historic/i);
+    expect(netherlands.approval?.notes).toMatch(/Hilversum\/Wijdemeren/i);
+    expect(netherlands.approval?.notes).toMatch(/147 focused-review/i);
+    expect(netherlands.approval?.notes).toMatch(/no mayoral election/i);
+    expect(netherlands.predecessor_draft_sha256).toBe(
+      "81dc30e718355573cd15e3c93ff8f75364e4223612efab23cbd3393c5c94ea89",
+    );
+    expect(sha256("schemas/atlas/tiers/netherlands.json")).toBe(
+      "faaf7573c678887004bc1f36f00a8496294ae23db5569278280a45642f0631b7",
+    );
+    expect(netherlands.classifications).toHaveLength(501);
+    expect(netherlands.counts_by_proposed_tier).toEqual({
+      national: 3,
+      regional: 12,
+      municipal: 414,
+      council: 0,
+      other: 72,
+      unknown: 0,
+    });
+    expect(netherlands.counts_by_approval).toEqual({
+      production_approved_current: 432,
+      production_approved_historical: 69,
+      production_approved_total: 501,
+      municipal: 414,
+      regional: 12,
+      national: 3,
+      other: 72,
+      held: 0,
+      focused_tier_reviews_retained: 147,
+    });
+    expect(netherlands.importer_policy).toMatchObject({
+      load: "not_implemented",
+      authorized_in_this_landing: false,
+      approved_count: 501,
+      held_count: 0,
+    });
+    expect(netherlands.justin_approval).toMatchObject({
+      accepted: true,
+      current_offices: 432,
+      historical_offices: 69,
+      focused_tier_reviews_retained: 147,
+    });
+    expect(netherlands.classifications.filter((row) => row.human_review_required === true)).toHaveLength(147);
+    expect(netherlands.classifications.filter((row) => row.tier === "municipal")).toHaveLength(414);
+    expect(netherlands.classifications.filter((row) => row.tier === "regional")).toHaveLength(12);
+    expect(netherlands.classifications.filter((row) => row.tier === "national")).toHaveLength(3);
+    expect(netherlands.classifications.filter((row) => row.tier === "other")).toHaveLength(72);
+    const register = readJson<Array<{ office_id: string; current: boolean; office_type?: string }>>(
+      "data/research/netherlands/office-register.json",
+    );
+    expect(register.filter((row) => row.current)).toHaveLength(432);
+    expect(register.filter((row) => !row.current)).toHaveLength(69);
+    expect(register.some((row) => row.office_type === "mayor")).toBe(false);
+    expect(readJson<unknown[]>("data/research/netherlands/events.json")).toHaveLength(1475);
+    expect(readJson<unknown[]>("data/research/netherlands/results.json")).toHaveLength(13050);
+    expectExactIds(netherlands, register.map((row) => row.office_id));
+    expect(netherlands.source_register.sha256).toBe(
+      "8fdcef170f27cc5c2eeda7d563ba7d7238d24833bb59b0278682b7c2590f6640",
+    );
+    expect(netherlands.source_register.sha256).toBe(sha256("data/research/netherlands/office-register.json"));
+    expect(netherlands.source_register.path).toBe("data/research/netherlands/office-register.json");
+    const merger = netherlands.notes?.find((note) => note.category === "latest_cycle_coverage");
+    expect(merger).toMatchObject({
+      status: "open",
+      office_ids: ["NL-GM0402-C", "NL-GM1696-C"],
+    });
+    expect(merger?.note).toMatch(/successor/i);
+    expect(netherlands.notes?.find((note) => note.category === "historical_code_binding")).toMatchObject({
+      status: "open",
+    });
+    expect(netherlands.notes?.find((note) => note.category === "scope_policy")).toMatchObject({
+      status: "open",
+    });
+    expect(netherlands.notes?.every((note) => note.status === "open")).toBe(true);
+    expect(netherlands.schema_compatibility).toMatchObject({ national: "national_context" });
+  });
 });
 
 describe("Phase 0 inventory artifacts", () => {
