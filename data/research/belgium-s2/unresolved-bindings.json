@@ -1,0 +1,664 @@
+[
+  {
+    "office_id": "BE-21014-C",
+    "history_key": "BE-21014-C::2024::2024-10-13",
+    "reason": "Saint-Josse 2024 annulment/repeat primary reconciliation required; do not select as latest certified result."
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/93",
+    "upstream_id": 165645,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Ottignies"
+      },
+      {
+        "language": "Dutch",
+        "label": "Ottignies"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/132",
+    "upstream_id": 165770,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Manage"
+      },
+      {
+        "language": "Dutch",
+        "label": "Manage"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "52043",
+      "55086"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/135",
+    "upstream_id": 165777,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Seneffe"
+      },
+      {
+        "language": "Dutch",
+        "label": "Seneffe"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "52063",
+      "55085"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/142",
+    "upstream_id": 165796,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Jurbise2001"
+      },
+      {
+        "language": "Dutch",
+        "label": "Jurbise2001"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/152",
+    "upstream_id": 165822,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Mouscron"
+      },
+      {
+        "language": "Dutch",
+        "label": "Moeskroen"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "54007",
+      "57096"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/153",
+    "upstream_id": 165825,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Comines"
+      },
+      {
+        "language": "Dutch",
+        "label": "Komen"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/155",
+    "upstream_id": 165830,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Enghien"
+      },
+      {
+        "language": "Dutch",
+        "label": "Enghien"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "51067",
+      "55010"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/156",
+    "upstream_id": 165832,
+    "labels": [
+      {
+        "language": "French",
+        "label": "La Louvière"
+      },
+      {
+        "language": "Dutch",
+        "label": "La Louvière"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "55022",
+      "58001"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/157",
+    "upstream_id": 165836,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Lessines"
+      },
+      {
+        "language": "Dutch",
+        "label": "Lessines"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "51069",
+      "55023"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/159",
+    "upstream_id": 165842,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Silly"
+      },
+      {
+        "language": "Dutch",
+        "label": "Silly"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "51068",
+      "55039"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/164",
+    "upstream_id": 165854,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Binche"
+      },
+      {
+        "language": "Dutch",
+        "label": "Binche"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "56011",
+      "58002"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/172",
+    "upstream_id": 165875,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Estinnes"
+      },
+      {
+        "language": "Dutch",
+        "label": "Estinnes"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "56085",
+      "58003"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/173",
+    "upstream_id": 165878,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Ham-sur-Heure"
+      },
+      {
+        "language": "Dutch",
+        "label": "Ham-sur-Heure"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/174",
+    "upstream_id": 165880,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Morlanwelz"
+      },
+      {
+        "language": "Dutch",
+        "label": "Morlanwelz"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "56087",
+      "58004"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/177",
+    "upstream_id": 165890,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Celles"
+      },
+      {
+        "language": "Dutch",
+        "label": "Celles"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/217",
+    "upstream_id": 165975,
+    "labels": [
+      {
+        "language": "French",
+        "label": "St Nicolas"
+      },
+      {
+        "language": "Dutch",
+        "label": "St Nicolas"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/266",
+    "upstream_id": 166078,
+    "labels": [
+      {
+        "language": "French",
+        "label": "St Georges"
+      },
+      {
+        "language": "Dutch",
+        "label": "St Georges"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/315",
+    "upstream_id": 166177,
+    "labels": [
+      {
+        "language": "French",
+        "label": "St Lievens Houtem"
+      },
+      {
+        "language": "Dutch",
+        "label": "St Lievens Houtem"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/334",
+    "upstream_id": 166217,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Aalter"
+      },
+      {
+        "language": "Dutch",
+        "label": "Aalter"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "44001",
+      "44084"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/335",
+    "upstream_id": 166219,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Deinze"
+      },
+      {
+        "language": "Dutch",
+        "label": "Deinze"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "44011",
+      "44083"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/342",
+    "upstream_id": 166236,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Lochristi"
+      },
+      {
+        "language": "Dutch",
+        "label": "Lochristi"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "44034",
+      "44087"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/350",
+    "upstream_id": 166251,
+    "labels": [
+      {
+        "language": "French",
+        "label": "St Martens Latem"
+      },
+      {
+        "language": "Dutch",
+        "label": "St Martens Latem"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/368",
+    "upstream_id": 166286,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Lokeren"
+      },
+      {
+        "language": "Dutch",
+        "label": "Lokeren"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "46014",
+      "46029"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/370",
+    "upstream_id": 166290,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Saint Nicolas"
+      },
+      {
+        "language": "Dutch",
+        "label": "St Niklaas"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "46021",
+      "62093"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/395",
+    "upstream_id": 166347,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Affligem Hekelgem"
+      },
+      {
+        "language": "Dutch",
+        "label": "Affligem Hekelgem"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/493",
+    "upstream_id": 166558,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Tielt"
+      },
+      {
+        "language": "Dutch",
+        "label": "Tielt"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "37015",
+      "37022"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/495",
+    "upstream_id": 166561,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Wingene"
+      },
+      {
+        "language": "Dutch",
+        "label": "Wingene"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "37018",
+      "37021"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/508",
+    "upstream_id": 166580,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Hasselt"
+      },
+      {
+        "language": "Dutch",
+        "label": "Hasselt"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "71022",
+      "71072"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/522",
+    "upstream_id": 166600,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Dilsen"
+      },
+      {
+        "language": "Dutch",
+        "label": "Dilsen"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/551",
+    "upstream_id": 166640,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Bastogne"
+      },
+      {
+        "language": "Dutch",
+        "label": "Bastenaken"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": [
+      "82003",
+      "82039"
+    ]
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/558",
+    "upstream_id": 166647,
+    "labels": [
+      {
+        "language": "French",
+        "label": "St-Ode"
+      },
+      {
+        "language": "Dutch",
+        "label": "St-Ode"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/562",
+    "upstream_id": 166651,
+    "labels": [
+      {
+        "language": "French",
+        "label": "La Roche"
+      },
+      {
+        "language": "Dutch",
+        "label": "La Roche"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/576",
+    "upstream_id": 166665,
+    "labels": [
+      {
+        "language": "French",
+        "label": "St Hubert"
+      },
+      {
+        "language": "Dutch",
+        "label": "St Hubert"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/579",
+    "upstream_id": 166668,
+    "labels": [
+      {
+        "language": "French",
+        "label": "Libramont"
+      },
+      {
+        "language": "Dutch",
+        "label": "Libramont"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "input": "ibz-municipal-2000.json",
+    "json_pointer": "/585",
+    "upstream_id": 166674,
+    "labels": [
+      {
+        "language": "French",
+        "label": "St Leger"
+      },
+      {
+        "language": "Dutch",
+        "label": "St Leger"
+      }
+    ],
+    "reason": "Municipality alias does not resolve uniquely to sourced register",
+    "candidates": []
+  },
+  {
+    "office_id": "BE-73006-C",
+    "history_key": "BE-73006-C::2018::2018-10-14",
+    "reason": "Workbook header includes 2019 repeat; row date says 2018. Preserve both claims; date resolution conflicting."
+  }
+]

@@ -4,6 +4,7 @@ import { importAndorra, type ImportAndorraResult } from "../andorra/import";
 import { importArmenia, type ImportArmeniaResult } from "../armenia/import";
 import { importAustria, type ImportAustriaResult } from "../austria/import";
 import { importBosnia, type ImportBosniaResult } from "../bosnia-and-herzegovina/import";
+import { importBulgaria, type ImportBulgariaResult } from "../bulgaria/import";
 import { importLatAm } from "./latam";
 import { importNewZealand } from "./nz";
 import type { ContinuityImportOptions, ContinuityImportResult } from "./run";
@@ -15,6 +16,7 @@ export type ImportScope =
   | "armenia"
   | "austria"
   | "bosnia"
+  | "bulgaria"
   | "latam"
   | "nz"
   | "all";
@@ -28,6 +30,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     raw === "armenia" ||
     raw === "austria" ||
     raw === "bosnia" ||
+    raw === "bulgaria" ||
     raw === "latam" ||
     raw === "nz" ||
     raw === "all"
@@ -35,7 +38,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     return raw;
   }
   throw new Error(
-    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|bosnia|latam|nz|all`,
+    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|bosnia|bulgaria|latam|nz|all`,
   );
 }
 
@@ -46,6 +49,7 @@ export type MultiLineageImportResult = {
   armenia?: ImportArmeniaResult;
   austria?: ImportAustriaResult;
   bosnia?: ImportBosniaResult;
+  bulgaria?: ImportBulgariaResult;
   latam?: ContinuityImportResult;
   nz?: ContinuityImportResult;
 };
@@ -72,6 +76,9 @@ export function importAtlasLineages(
   }
   if (scope === "bosnia" || scope === "all") {
     result.bosnia = importBosnia(options);
+  }
+  if (scope === "bulgaria" || scope === "all") {
+    result.bulgaria = importBulgaria(options);
   }
   if (scope === "latam" || scope === "all") {
     result.latam = importLatAm(options);
