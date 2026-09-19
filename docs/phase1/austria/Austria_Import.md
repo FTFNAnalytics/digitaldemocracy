@@ -45,3 +45,5 @@ export ATLAS_SQLITE_PATH=/tmp/atlas.sqlite
 export ATLAS_ATTEMPTS_SQLITE_PATH=/tmp/atlas-attempts.sqlite
 ATLAS_IMPORT_SCOPE=austria npm run import:atlas
 ```
+
+Poison rollback, rename-failure discard, and coverage-change release run as `npm run test:austria-rollback` (outside Vitest because two full Austria imports exceed the 60s worker RPC timeout).

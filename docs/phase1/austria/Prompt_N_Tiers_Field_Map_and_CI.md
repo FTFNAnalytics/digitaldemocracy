@@ -41,20 +41,20 @@
 | --- | --- | --- |
 | Tier approval | **Passed** (`tests/atlas/austria-import.test.ts`) | Reject draft T for production; Justin-accepted bytes `1c303f748b6fa706bea71d750b5e50be8ab27acc7baf166fe01e0b85e9da69eb`; 2038 offices. |
 | Unchanged re-import | **Passed** | Two attempts, one release for identical approved inputs; second run `reused_release=yes`. |
-| Changed input/correction | **Passed** (coverage.json remaining-note mutation) | Package change alters R; offices/tiers survive; new release selected. |
+| Changed input/correction | **Passed** (`npm run test:austria-rollback`) | Package change alters R; offices/tiers survive; new release selected. |
 | Payload integrity | **Passed** | 19 chunk bytes/hash/order, concat XZ, 2058 members, 2084 retained inputs; corrupt/missing chunk fails. |
 | Counts and overlap | **Passed** (hold retained, not cleared) | 2038 offices, 5956 events, 16336 result rows; 5944 H/IX overlap and 12 index-only; St. Georgen `AT-OOE-41119-M::2015::` stays an open hold with four first-ballot rows. |
 | Field and numeric fidelity | **Passed** | 400 zero seats versus 7180 missing seats; missing≠zero CHECK; votes/shares preserved. |
 | Date precision and certainty | **Passed** | 58 source-annotated day dates, 5898 year-only; Forchtenstein 2022 repeat keeps cycle HK with 3 September 2023 ballot day. |
 | Regional calendar honesty | **Passed** | 4 regional IDs only; zero prospective/next events; `denominatorKnown=false`. |
 | Resolved and unresolved evidence | **Passed** | 93+4=97 source union; unmatched citation token records unresolved_evidence; no invented source row. |
-| Poison rollback +durable ledger | **Passed** | Broken source FK rolls back staging; failed ledger row survives; published SHA unchanged. |
+| Poison rollback +durable ledger | **Passed** (`npm run test:austria-rollback`) | Broken source FK rolls back staging; failed ledger row survives; published SHA unchanged. |
 | Fixture exclusion | **Passed** | `OBSERVATORY_FIXTURES=1` and `FIX-` tokens fail; no published DB. |
 | Incomplete refresh | **Not run** | Carry omitted offices/events/results/tiers/evidence/aliases and exact origin bytes; inherited paths enter effective fingerprint; no implicit deletion. |
 | Semantic identity bindings | **Not run** | Reorder source results while keeping old semantic aliases; reject ambiguous identity; no rowindex reassignment or index recycling. |
 | Publication coexistence | **Passed** (`tests/atlas/continuity-import.test.ts`) | Albania 122 offices remain after Austria import; each lineage joins its own `(lineage_id, release_id)`. |
 | Full SQL integrity | **Passed** (importer `assertIntegrity`) | foreign_key_check/integrity_check on staging and published; invalid seats status pairs fail. |
-| Atomic publication | **Passed** (rename-failure injection; no off-VPS restore drill) | Staging discard on injected failure; previous publication still serving. |
+| Atomic publication | **Passed** (`npm run test:austria-rollback`; no off-VPS restore drill) | Staging discard on injected failure; previous publication still serving. |
 | Research fidelity | **Passed** | Proceedings=0; party_mappings=0; poll file retained as input only; absent control table not fabricated; no invented regional dates. |
 | Deployment/UI/cutover | **Not run** | Not part of this importer PR. No VPS/UI/redirects or `/electiondatabase` retirement. |
 
