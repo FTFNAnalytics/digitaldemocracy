@@ -5,6 +5,7 @@ import path from "node:path";
 import { importAlderney } from "../../lib/atlas/alderney/import";
 import { importAndorra } from "../../lib/atlas/andorra/import";
 import { importArmenia } from "../../lib/atlas/armenia/import";
+import { importBosnia } from "../../lib/atlas/bosnia-and-herzegovina/import";
 import { importNewZealand } from "../../lib/atlas/continuity/nz";
 import { migrateMasterDatabase } from "../../lib/atlas/apply-migrations";
 import { loadAtlasCatalog, getAtlasCountry, listAtlasOffices, listAtlasRegionalCalendar, listAtlasExplorerOffices, lookupAtlasEvent, lookupAtlasOffice } from "../../lib/atlas/read";
@@ -177,6 +178,42 @@ describe("Atlas SQLite UI catalog", () => {
       "No regional offices in the supplied Armenia package; 71 municipal offices. Research coverage remains partial.",
     );
     expect(regional.denominatorKnown).toBe(false);
+  });
+
+  it("shows Bosnia and Herzegovina's populated regional calendar after import", () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-bosnia-ui-"));
+    tempDirs.push(dir);
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+    importBosnia({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "atlas-ui-test",
+    });
+    const catalog = loadAtlasCatalog(sqlitePath);
+    expect(catalog.status).toBe("ready");
+    expect(catalog.countries.map((row) => row.countryId)).toEqual(["bosnia-and-herzegovina"]);
+    expect(catalog.countries[0]?.officeCount).toBe(13);
+    const country = getAtlasCountry("bosnia-and-herzegovina", sqlitePath);
+    expect(country?.name).toBe("Bosnia and Herzegovina");
+    expect(country?.polityKind).toBe("sovereign_country");
+    const offices = listAtlasOffices("bosnia-and-herzegovina", sqlitePath);
+    expect(offices).toHaveLength(13);
+    expect(offices.every((row) => row.tier === "regional")).toBe(true);
+    expect(offices.find((row) => row.officeId === "BA-205")?.nextCertainty).toBe("expected");
+    expect(offices.find((row) => row.officeId === "BA-G")?.officeType).toBe("President");
+    expect(offices.find((row) => row.officeId === "BA-R")?.officeType).toBe("National Assembly");
+    expect(lookupAtlasOffice("BA-205", sqlitePath).status).toBe("found");
+    expect(offices.some((row) => /Brčko|Brcko|BA-BRC/i.test(row.officeId))).toBe(false);
+    const regional = listAtlasRegionalCalendar("bosnia-and-herzegovina", sqlitePath);
+    expect(regional.offices).toHaveLength(13);
+    expect(regional.count).toBe(13);
+    expect(regional.label).toContain("13 regional offices");
+    expect(regional.label).toMatch(/No Brčko or municipal/);
+    expect(regional.denominatorKnown).toBe(false);
+    expect(listAtlasExplorerOffices({ q: "", country: "bosnia-and-herzegovina", tier: "regional", region: "europe" }, sqlitePath)).toHaveLength(13);
+    expect(listAtlasExplorerOffices({ q: "", country: "bosnia-and-herzegovina", tier: "municipal", region: "" }, sqlitePath)).toEqual([]);
   });
 });
 

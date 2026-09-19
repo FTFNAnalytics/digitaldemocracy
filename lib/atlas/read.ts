@@ -464,6 +464,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "bosnia-and-herzegovina") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "13 regional offices (10 cantonal assemblies + Federation House of Representatives + RS National Assembly + RS President). Research holds remain open: RS presidential replacement/repeat, governing coalitions, and 2026-10-04 calendar certainty. No Brčko or municipal offices are supplied.",
+      denominatorKnown: false,
+    };
+  }
   return {
     offices,
     count: offices.length,
