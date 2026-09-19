@@ -48,8 +48,8 @@ describe("country package inventory", () => {
     expect(packages.find((row) => row.slug === "armenia")?.kind).toBe(
       "armenia-packed-europe/1",
     );
-    // Bosnia gzip and Bulgaria XZ have no observatory website adapter yet.
-    // Bulgaria Atlas import is a separate `import:atlas` path.
+    // Bosnia gzip is skipped (website ingestion pending); Bulgaria XZ has no
+    // observatory adapter yet. Atlas import is a separate `import:atlas` path.
     expect(packages.find((row) => row.slug === "bosnia-and-herzegovina")).toBeUndefined();
     expect(packages.find((row) => row.slug === "bulgaria")).toBeUndefined();
   });

@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Bulgaria + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Bosnia and Herzegovina + Bulgaria + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -15,6 +15,7 @@ import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
 import { LINEAGE_ID as ALDERNEY_LINEAGE } from "../../lib/atlas/alderney/identity";
 import { LINEAGE_ID as ANDORRA_LINEAGE } from "../../lib/atlas/andorra/identity";
 import { LINEAGE_ID as ARMENIA_LINEAGE } from "../../lib/atlas/armenia/identity";
+import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
 import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
 
 function fail(message: string): never {
@@ -74,6 +75,24 @@ function main() {
     if (result.armenia?.counts.selected_histories !== 33) {
       fail(`Armenia events ${String(result.armenia?.counts.selected_histories)}`);
     }
+    if (result.bosnia?.counts.current_offices !== 13) {
+      fail(`Bosnia offices ${String(result.bosnia?.counts.current_offices)}`);
+    }
+    if (result.bosnia?.counts.regional_offices !== 13) {
+      fail(`Bosnia regional ${String(result.bosnia?.counts.regional_offices)}`);
+    }
+    if (result.bosnia?.counts.municipal_offices !== 0) {
+      fail(`Bosnia municipal ${String(result.bosnia?.counts.municipal_offices)}`);
+    }
+    if (result.bosnia?.counts.selected_histories !== 39) {
+      fail(`Bosnia events ${String(result.bosnia?.counts.selected_histories)}`);
+    }
+    if (result.bosnia?.counts.approved_classifications !== 10) {
+      fail(`Bosnia approved ${String(result.bosnia?.counts.approved_classifications)}`);
+    }
+    if (result.bosnia?.counts.needs_review_classifications !== 3) {
+      fail(`Bosnia needs_review ${String(result.bosnia?.counts.needs_review_classifications)}`);
+    }
     if (result.bulgaria?.counts.current_offices !== 530) {
       fail(`Bulgaria offices ${String(result.bulgaria?.counts.current_offices)}`);
     }
@@ -116,6 +135,9 @@ function main() {
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ARMENIA_LINEAGE]) !== 71) {
         fail("Armenia office rows");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BOSNIA_LINEAGE]) !== 13) {
+        fail("Bosnia office rows");
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BULGARIA_LINEAGE]) !== 530) {
         fail("Bulgaria office rows");
@@ -173,6 +195,51 @@ function main() {
         ) !== 71
       ) {
         fail("Armenia municipal rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'regional'",
+          [BOSNIA_LINEAGE],
+        ) !== 13
+      ) {
+        fail("Bosnia regional rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'municipal'",
+          [BOSNIA_LINEAGE],
+        ) !== 0
+      ) {
+        fail("Bosnia municipal rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND review_status = 'approved'",
+          [BOSNIA_LINEAGE],
+        ) !== 10
+      ) {
+        fail("Bosnia approved classification rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND review_status = 'needs_review'",
+          [BOSNIA_LINEAGE],
+        ) !== 3
+      ) {
+        fail("Bosnia needs_review classification rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND (office_id LIKE '%BRC%' OR name LIKE '%Brčko%' OR name LIKE '%Brcko%')",
+          [BOSNIA_LINEAGE],
+        ) !== 0
+      ) {
+        fail("Bosnia invented Brčko office");
       }
       if (
         count(
@@ -249,6 +316,7 @@ function main() {
         ALDERNEY_LINEAGE,
         ANDORRA_LINEAGE,
         ARMENIA_LINEAGE,
+        BOSNIA_LINEAGE,
         BULGARIA_LINEAGE,
         NZ_LINEAGE_ID,
         LATAM_LINEAGE_ID,
@@ -261,7 +329,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 bulgaria=530 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 bosnia=13 bulgaria=530 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

@@ -2,8 +2,9 @@
 /**
  * Import approved Atlas lineages into SQLite.
  *
- * Default scope is Albania + Andorra + Alderney + Armenia + Bulgaria + approved LatAm packs + New Zealand
- * (`ATLAS_IMPORT_SCOPE=all`). Draft residual-heavy packs are skipped.
+ * Default scope is Albania + Andorra + Alderney + Armenia + Bosnia and Herzegovina +
+ * Bulgaria + approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`).
+ * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
  * See docs/phase2/Continuity_Import.md.
@@ -82,6 +83,22 @@ function main() {
       console.log(`armenia_result_rows=${result.armenia.counts.result_rows}`);
       console.log(`armenia_sources=${result.armenia.counts.sources}`);
       console.log(`armenia_regional=${result.armenia.counts.regional_offices}`);
+    }
+    if (result.bosnia) {
+      console.log("lineage=country-package-bosnia-and-herzegovina");
+      console.log(`bosnia_attempt_id=${result.bosnia.attemptId}`);
+      console.log(`bosnia_release_id=${result.bosnia.releaseId}`);
+      console.log(`bosnia_fingerprint_sha256=${result.bosnia.fingerprint}`);
+      console.log(`bosnia_reused_release=${result.bosnia.reusedRelease ? "yes" : "no"}`);
+      console.log(`bosnia_offices=${result.bosnia.counts.current_offices}`);
+      console.log(`bosnia_regional=${result.bosnia.counts.regional_offices}`);
+      console.log(`bosnia_municipal=${result.bosnia.counts.municipal_offices}`);
+      console.log(`bosnia_selected_histories=${result.bosnia.counts.selected_histories}`);
+      console.log(`bosnia_prospective_events=${result.bosnia.counts.prospective_events}`);
+      console.log(`bosnia_result_rows=${result.bosnia.counts.result_rows}`);
+      console.log(`bosnia_sources=${result.bosnia.counts.sources}`);
+      console.log(`bosnia_approved=${result.bosnia.counts.approved_classifications}`);
+      console.log(`bosnia_needs_review=${result.bosnia.counts.needs_review_classifications}`);
     }
     if (result.bulgaria) {
       console.log("lineage=country-package-bulgaria");

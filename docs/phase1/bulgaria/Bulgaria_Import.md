@@ -22,7 +22,7 @@ export ATLAS_OPERATOR=genevieve
 ATLAS_IMPORT_SCOPE=bulgaria npm run import:atlas
 ```
 
-Do **not** run `ATLAS_IMPORT_SCOPE=all` unless you intend a full re-import of Albania, Andorra, Alderney, Armenia, LatAm, and New Zealand as well.
+Do **not** run `ATLAS_IMPORT_SCOPE=all` unless you intend a full re-import of Albania, Andorra, Alderney, Armenia, Bosnia and Herzegovina, LatAm, and New Zealand as well.
 
 Expected Bulgaria lines:
 
