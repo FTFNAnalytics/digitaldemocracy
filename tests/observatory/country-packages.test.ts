@@ -21,8 +21,12 @@ describe("country package inventory", () => {
     expect(skipped.map((row) => row.slug)).toEqual([
       "austria",
       "bosnia-and-herzegovina",
+      "bulgaria",
     ]);
     expect(skipped.find((row) => row.slug === "austria")?.reason).toMatch(
+      /XZ payload has no observatory adapter/i,
+    );
+    expect(skipped.find((row) => row.slug === "bulgaria")?.reason).toMatch(
       /XZ payload has no observatory adapter/i,
     );
     expect(
@@ -44,7 +48,10 @@ describe("country package inventory", () => {
     expect(packages.find((row) => row.slug === "armenia")?.kind).toBe(
       "armenia-packed-europe/1",
     );
-    // Bosnia gzip is skipped (country !== Armenia). Atlas importer is a later PR.
+    // Austria/Bulgaria XZ and Bosnia gzip stay skipped in the observatory.
+    // Austria Atlas import is a separate SQLite path, not this adapter.
+    expect(packages.find((row) => row.slug === "bosnia-and-herzegovina")).toBeUndefined();
+    expect(packages.find((row) => row.slug === "bulgaria")).toBeUndefined();
   });
 });
 
