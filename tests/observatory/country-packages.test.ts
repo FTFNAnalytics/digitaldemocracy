@@ -49,7 +49,7 @@ describe("country package inventory", () => {
       "armenia-packed-europe/1",
     );
     // Austria/Bulgaria XZ and Bosnia gzip stay skipped in the observatory.
-    // Austria Atlas import is a separate SQLite path, not this adapter.
+    // Atlas import is a separate SQLite path and does not add an adapter.
     expect(packages.find((row) => row.slug === "bosnia-and-herzegovina")).toBeUndefined();
     expect(packages.find((row) => row.slug === "bulgaria")).toBeUndefined();
   });

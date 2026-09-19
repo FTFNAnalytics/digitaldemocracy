@@ -3,11 +3,21 @@ import { importAlderney, type ImportAlderneyResult } from "../alderney/import";
 import { importAndorra, type ImportAndorraResult } from "../andorra/import";
 import { importArmenia, type ImportArmeniaResult } from "../armenia/import";
 import { importAustria, type ImportAustriaResult } from "../austria/import";
+import { importBosnia, type ImportBosniaResult } from "../bosnia-and-herzegovina/import";
 import { importLatAm } from "./latam";
 import { importNewZealand } from "./nz";
 import type { ContinuityImportOptions, ContinuityImportResult } from "./run";
 
-export type ImportScope = "albania" | "andorra" | "alderney" | "armenia" | "austria" | "latam" | "nz" | "all";
+export type ImportScope =
+  | "albania"
+  | "andorra"
+  | "alderney"
+  | "armenia"
+  | "austria"
+  | "bosnia"
+  | "latam"
+  | "nz"
+  | "all";
 
 export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): ImportScope {
   const raw = (value ?? "all").trim().toLowerCase();
@@ -17,13 +27,16 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     raw === "alderney" ||
     raw === "armenia" ||
     raw === "austria" ||
+    raw === "bosnia" ||
     raw === "latam" ||
     raw === "nz" ||
     raw === "all"
   ) {
     return raw;
   }
-  throw new Error(`Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|latam|nz|all`);
+  throw new Error(
+    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|bosnia|latam|nz|all`,
+  );
 }
 
 export type MultiLineageImportResult = {
@@ -32,6 +45,7 @@ export type MultiLineageImportResult = {
   alderney?: ImportAlderneyResult;
   armenia?: ImportArmeniaResult;
   austria?: ImportAustriaResult;
+  bosnia?: ImportBosniaResult;
   latam?: ContinuityImportResult;
   nz?: ContinuityImportResult;
 };
@@ -55,6 +69,9 @@ export function importAtlasLineages(
   }
   if (scope === "austria" || scope === "all") {
     result.austria = importAustria(options);
+  }
+  if (scope === "bosnia" || scope === "all") {
+    result.bosnia = importBosnia(options);
   }
   if (scope === "latam" || scope === "all") {
     result.latam = importLatAm(options);
