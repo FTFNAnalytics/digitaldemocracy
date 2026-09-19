@@ -1,0 +1,353 @@
+diff --git a/lib/atlas/continuity/import.ts b/lib/atlas/continuity/import.ts
+index 4be0476..1a3de0a 100644
+--- a/lib/atlas/continuity/import.ts
++++ b/lib/atlas/continuity/import.ts
+@@ -3,6 +3,7 @@ import { importAlderney, type ImportAlderneyResult } from "../alderney/import";
+ import { importAndorra, type ImportAndorraResult } from "../andorra/import";
+ import { importArmenia, type ImportArmeniaResult } from "../armenia/import";
+ import { importBosnia, type ImportBosniaResult } from "../bosnia-and-herzegovina/import";
++import { importBulgaria, type ImportBulgariaResult } from "../bulgaria/import";
+ import { importLatAm } from "./latam";
+ import { importNewZealand } from "./nz";
+ import type { ContinuityImportOptions, ContinuityImportResult } from "./run";
+@@ -13,6 +14,7 @@ export type ImportScope =
+   | "alderney"
+   | "armenia"
+   | "bosnia"
++  | "bulgaria"
+   | "latam"
+   | "nz"
+   | "all";
+@@ -25,6 +27,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
+     raw === "alderney" ||
+     raw === "armenia" ||
+     raw === "bosnia" ||
++    raw === "bulgaria" ||
+     raw === "latam" ||
+     raw === "nz" ||
+     raw === "all"
+@@ -32,7 +35,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
+     return raw;
+   }
+   throw new Error(
+-    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|bosnia|latam|nz|all`,
++    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|bosnia|bulgaria|latam|nz|all`,
+   );
+ }
+ 
+@@ -42,6 +45,7 @@ export type MultiLineageImportResult = {
+   alderney?: ImportAlderneyResult;
+   armenia?: ImportArmeniaResult;
+   bosnia?: ImportBosniaResult;
++  bulgaria?: ImportBulgariaResult;
+   latam?: ContinuityImportResult;
+   nz?: ContinuityImportResult;
+ };
+@@ -66,6 +70,9 @@ export function importAtlasLineages(
+   if (scope === "bosnia" || scope === "all") {
+     result.bosnia = importBosnia(options);
+   }
++  if (scope === "bulgaria" || scope === "all") {
++    result.bulgaria = importBulgaria(options);
++  }
+   if (scope === "latam" || scope === "all") {
+     result.latam = importLatAm(options);
+   }
+diff --git a/lib/atlas/import-status.ts b/lib/atlas/import-status.ts
+index 3b3d68a..05fdee1 100644
+--- a/lib/atlas/import-status.ts
++++ b/lib/atlas/import-status.ts
+@@ -15,8 +15,8 @@ export function atlasImportStatusMessage(
+   return [
+     "Election Atlas Albania import is available.",
+     "",
+-    "npm run import:atlas loads Albania, Andorra, Alderney, Armenia, Bosnia and Herzegovina, and approved continuity packs into SQLite (atomic publish + durable attempt ledger).",
+-    "ATLAS_IMPORT_SCOPE=albania|andorra|alderney|armenia|bosnia|latam|nz|all (default all). Draft residual-heavy packs are skipped.",
++    "npm run import:atlas loads Albania, Andorra, Alderney, Armenia, Bosnia and Herzegovina, Bulgaria, and approved continuity packs into SQLite (atomic publish + durable attempt ledger).",
++    "ATLAS_IMPORT_SCOPE=albania|andorra|alderney|armenia|bosnia|bulgaria|latam|nz|all (default all). Draft residual-heavy packs are skipped.",
+     "Use ATLAS_SQLITE_PATH and ATLAS_ATTEMPTS_SQLITE_PATH. CI/tests must use temporary paths, never the VPS production DB.",
+     "Public UI: /atlas (SQLite MVP). Observatory catalogue remains at /electiondatabase.",
+     "",
+diff --git a/lib/atlas/read.ts b/lib/atlas/read.ts
+index a940f44..c4a6523 100644
+--- a/lib/atlas/read.ts
++++ b/lib/atlas/read.ts
+@@ -473,6 +473,15 @@ export function listAtlasRegionalCalendar(
+       denominatorKnown: false,
+     };
+   }
++  if (countryId === "bulgaria") {
++    return {
++      offices,
++      count: offices.length,
++      label:
++        "No regional offices in the supplied Bulgaria package; 530 approved municipality-wide municipal offices. 3,067 district/village rows remain held. Research coverage remains partial.",
++      denominatorKnown: false,
++    };
++  }
+   return {
+     offices,
+     count: offices.length,
+diff --git a/scripts/atlas/ci-continuity.ts b/scripts/atlas/ci-continuity.ts
+index 617a191..fed7586 100644
+--- a/scripts/atlas/ci-continuity.ts
++++ b/scripts/atlas/ci-continuity.ts
+@@ -1,6 +1,6 @@
+ #!/usr/bin/env npx tsx
+ /**
+- * CI proof: import Albania + Andorra + Alderney + Armenia + Bosnia and Herzegovina + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
++ * CI proof: import Albania + Andorra + Alderney + Armenia + Bosnia and Herzegovina + Bulgaria + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
+  */
+ import { mkdtempSync, rmSync } from "node:fs";
+@@ -16,6 +16,7 @@ import { LINEAGE_ID as ALDERNEY_LINEAGE } from "../../lib/atlas/alderney/identit
+ import { LINEAGE_ID as ANDORRA_LINEAGE } from "../../lib/atlas/andorra/identity";
+ import { LINEAGE_ID as ARMENIA_LINEAGE } from "../../lib/atlas/armenia/identity";
+ import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
++import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
+ 
+ function fail(message: string): never {
+   console.error(`test:atlas-import failed: ${message}`);
+@@ -92,6 +93,21 @@ function main() {
+     if (result.bosnia?.counts.needs_review_classifications !== 3) {
+       fail(`Bosnia needs_review ${String(result.bosnia?.counts.needs_review_classifications)}`);
+     }
++    if (result.bulgaria?.counts.current_offices !== 530) {
++      fail(`Bulgaria offices ${String(result.bulgaria?.counts.current_offices)}`);
++    }
++    if (result.bulgaria?.counts.municipal_offices !== 530) {
++      fail(`Bulgaria municipal ${String(result.bulgaria?.counts.municipal_offices)}`);
++    }
++    if (result.bulgaria?.counts.regional_offices !== 0) {
++      fail(`Bulgaria regional ${String(result.bulgaria?.counts.regional_offices)}`);
++    }
++    if (result.bulgaria?.counts.held_offices !== 3067) {
++      fail(`Bulgaria held ${String(result.bulgaria?.counts.held_offices)}`);
++    }
++    if (result.bulgaria?.counts.selected_histories !== 1590) {
++      fail(`Bulgaria events ${String(result.bulgaria?.counts.selected_histories)}`);
++    }
+     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
+     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
+     if (result.nz?.counts.events !== 7) fail(`NZ events ${String(result.nz?.counts.events)}`);
+@@ -123,6 +139,27 @@ function main() {
+       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BOSNIA_LINEAGE]) !== 13) {
+         fail("Bosnia office rows");
+       }
++      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BULGARIA_LINEAGE]) !== 530) {
++        fail("Bulgaria office rows");
++      }
++      if (
++        count(
++          db,
++          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'regional'",
++          [BULGARIA_LINEAGE],
++        ) !== 0
++      ) {
++        fail("Bulgaria regional rows");
++      }
++      if (
++        count(
++          db,
++          "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_id = 'BG-SLV11-b88d0d4475-V'",
++          [BULGARIA_LINEAGE],
++        ) !== 0
++      ) {
++        fail("Градец held office published");
++      }
+       if (
+         count(
+           db,
+@@ -280,6 +317,7 @@ function main() {
+         ANDORRA_LINEAGE,
+         ARMENIA_LINEAGE,
+         BOSNIA_LINEAGE,
++        BULGARIA_LINEAGE,
+         NZ_LINEAGE_ID,
+         LATAM_LINEAGE_ID,
+       ].sort();
+@@ -291,7 +329,7 @@ function main() {
+     }
+     console.log("test:atlas-import ok");
+     console.log(
+-      `loaded albania=122 andorra=7 alderney=2 armenia=71 bosnia=13 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
++      `loaded albania=122 andorra=7 alderney=2 armenia=71 bosnia=13 bulgaria=530 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+     );
+   } finally {
+     rmSync(dir, { recursive: true, force: true });
+diff --git a/scripts/atlas/import.ts b/scripts/atlas/import.ts
+index 1fad434..4a7972f 100644
+--- a/scripts/atlas/import.ts
++++ b/scripts/atlas/import.ts
+@@ -3,7 +3,8 @@
+  * Import approved Atlas lineages into SQLite.
+  *
+  * Default scope is Albania + Andorra + Alderney + Armenia + Bosnia and Herzegovina +
+- * approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`). Draft residual-heavy packs are skipped.
++ * Bulgaria + approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`).
++ * Draft residual-heavy packs are skipped.
+  * Does not deploy to VPS or merge publication cutover.
+  *
+  * See docs/phase2/Continuity_Import.md.
+@@ -99,6 +100,21 @@ function main() {
+       console.log(`bosnia_approved=${result.bosnia.counts.approved_classifications}`);
+       console.log(`bosnia_needs_review=${result.bosnia.counts.needs_review_classifications}`);
+     }
++    if (result.bulgaria) {
++      console.log("lineage=country-package-bulgaria");
++      console.log(`bulgaria_attempt_id=${result.bulgaria.attemptId}`);
++      console.log(`bulgaria_release_id=${result.bulgaria.releaseId}`);
++      console.log(`bulgaria_fingerprint_sha256=${result.bulgaria.fingerprint}`);
++      console.log(`bulgaria_reused_release=${result.bulgaria.reusedRelease ? "yes" : "no"}`);
++      console.log(`bulgaria_offices=${result.bulgaria.counts.current_offices}`);
++      console.log(`bulgaria_municipal=${result.bulgaria.counts.municipal_offices}`);
++      console.log(`bulgaria_selected_histories=${result.bulgaria.counts.selected_histories}`);
++      console.log(`bulgaria_prospective_events=${result.bulgaria.counts.prospective_events}`);
++      console.log(`bulgaria_result_rows=${result.bulgaria.counts.result_rows}`);
++      console.log(`bulgaria_sources=${result.bulgaria.counts.sources}`);
++      console.log(`bulgaria_regional=${result.bulgaria.counts.regional_offices}`);
++      console.log(`bulgaria_held_offices=${result.bulgaria.counts.held_offices}`);
++    }
+     if (result.latam) {
+       console.log("lineage=latin-america-fe5e91689def");
+       console.log(`latam_attempt_id=${result.latam.attemptId}`);
+diff --git a/tests/atlas/cli.test.ts b/tests/atlas/cli.test.ts
+index a6f8c89..4684355 100644
+--- a/tests/atlas/cli.test.ts
++++ b/tests/atlas/cli.test.ts
+@@ -396,6 +396,60 @@ describe("atlas CLI stubs", () => {
+     },
+     60_000,
+   );
++
++  it(
++    "import:atlas loads only the 530 approved Bulgaria offices",
++    () => {
++      const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-bulgaria-cli-"));
++      tempDirs.push(dir);
++      const sqlitePath = path.join(dir, "atlas.sqlite");
++      const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
++      const result = runAtlasScript("scripts/atlas/import.ts", {
++        ATLAS_SQLITE_PATH: sqlitePath,
++        ATLAS_ATTEMPTS_SQLITE_PATH: attemptsPath,
++        ATLAS_OPERATOR: "atlas-cli-test",
++        ATLAS_IMPORT_SCOPE: "bulgaria",
++        OBSERVATORY_FIXTURES: "",
++      });
++      expect(result.status, result.stderr).toBe(0);
++      expect(result.stdout).toContain("import:atlas");
++      expect(result.stdout).toContain("lineage=country-package-bulgaria");
++      expect(result.stdout).toContain("bulgaria_offices=530");
++      expect(result.stdout).toContain("bulgaria_municipal=530");
++      expect(result.stdout).toContain("bulgaria_selected_histories=1590");
++      expect(result.stdout).toContain("bulgaria_prospective_events=0");
++      expect(result.stdout).toContain("bulgaria_result_rows=10343");
++      expect(result.stdout).toContain("bulgaria_regional=0");
++      expect(result.stdout).toContain("bulgaria_held_offices=3067");
++
++      const master = new DatabaseSync(sqlitePath, { readOnly: true });
++      try {
++        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 530 });
++        expect(
++          master.prepare("SELECT geography_id FROM office WHERE office_id = 'BG-VAR01-M'").get(),
++        ).toMatchObject({ geography_id: "geo-0f253e2855d47274f7fda71e" });
++        expect(
++          master.prepare("SELECT office_id FROM office WHERE office_id = 'BG-SLV11-b88d0d4475-V'").get(),
++        ).toBeUndefined();
++        expect(
++          master
++            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'regional'")
++            .get(),
++        ).toMatchObject({ n: 0 });
++        expect(
++          master
++            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'municipal'")
++            .get(),
++        ).toMatchObject({ n: 530 });
++      } finally {
++        master.close();
++      }
++
++      expect(atlasImportStatusMessage()).toContain("Bulgaria");
++      expect(atlasImportStatusMessage()).toContain("bulgaria");
++    },
++    300_000,
++  );
+ });
+ 
+ describe("gitignore sqlite binaries", () => {
+diff --git a/tests/atlas/continuity-import.test.ts b/tests/atlas/continuity-import.test.ts
+index 1b3f28d..4664ed9 100644
+--- a/tests/atlas/continuity-import.test.ts
++++ b/tests/atlas/continuity-import.test.ts
+@@ -8,6 +8,7 @@ import { importAlderney } from "../../lib/atlas/alderney/import";
+ import { importAndorra } from "../../lib/atlas/andorra/import";
+ import { importArmenia } from "../../lib/atlas/armenia/import";
+ import { importBosnia } from "../../lib/atlas/bosnia-and-herzegovina/import";
++import { importBulgaria } from "../../lib/atlas/bulgaria/import";
+ import { importAtlasLineages, parseImportScope } from "../../lib/atlas/continuity/import";
+ import { NZ_LINEAGE_ID } from "../../lib/atlas/continuity/nz";
+ import {
+@@ -19,6 +20,7 @@ import { LINEAGE_ID as ALDERNEY_LINEAGE } from "../../lib/atlas/alderney/identit
+ import { LINEAGE_ID as ANDORRA_LINEAGE } from "../../lib/atlas/andorra/identity";
+ import { LINEAGE_ID as ARMENIA_LINEAGE } from "../../lib/atlas/armenia/identity";
+ import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
++import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
+ 
+ const repoRoot = path.join(import.meta.dirname, "../..");
+ 
+@@ -67,6 +69,7 @@ describe("approved-pack gate", () => {
+     expect(parseImportScope("alderney")).toBe("alderney");
+     expect(parseImportScope("armenia")).toBe("armenia");
+     expect(parseImportScope("bosnia")).toBe("bosnia");
++    expect(parseImportScope("bulgaria")).toBe("bulgaria");
+     expect(parseImportScope("latam")).toBe("latam");
+     expect(parseImportScope("nz")).toBe("nz");
+     expect(() => parseImportScope("europe")).toThrow(/Unknown ATLAS_IMPORT_SCOPE/);
+@@ -283,6 +286,46 @@ describe("multi-lineage continuity import", () => {
+     }
+   }, 180_000);
+ 
++  it("imports Albania then Bulgaria into one master without dropping Albania", () => {
++    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-bulgaria-"));
++    tempDirs.push(dir);
++    const sqlitePath = path.join(dir, "atlas.sqlite");
++    const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
++    const albania = importAlbania({
++      root: repoRoot,
++      sqlitePath,
++      attemptsPath,
++      operator: "albania-bulgaria-test",
++    });
++    expect(albania.counts.current_offices).toBe(122);
++    const bulgaria = importBulgaria({
++      root: repoRoot,
++      sqlitePath,
++      attemptsPath,
++      operator: "albania-bulgaria-test",
++    });
++    expect(bulgaria.counts.current_offices).toBe(530);
++    expect(bulgaria.counts.municipal_offices).toBe(530);
++    expect(bulgaria.counts.regional_offices).toBe(0);
++    expect(bulgaria.counts.held_offices).toBe(3067);
++    const db = new DatabaseSync(sqlitePath, { readOnly: true });
++    try {
++      expect(
++        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
++      ).toBe(122);
++      expect(
++        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(BULGARIA_LINEAGE)?.n),
++      ).toBe(530);
++      const lineages = db
++        .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
++        .all()
++        .map((row) => String(row.lineage_id));
++      expect(lineages).toEqual([ALBANIA_LINEAGE, BULGARIA_LINEAGE].sort());
++    } finally {
++      db.close();
++    }
++  }, 300_000);
++
+   it("keeps the Albania-only importer working after continuity modules land", () => {
+     const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-only-"));
+     tempDirs.push(dir);
