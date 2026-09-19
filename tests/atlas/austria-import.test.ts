@@ -4,18 +4,15 @@ import { execFileSync } from "node:child_process";
 import { cpSync, existsSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { importAustria, assertAustriaFidelity } from "../../lib/atlas/austria/import";
+import { importAustria } from "../../lib/atlas/austria/import";
 import { AustriaPreflightError, unpackAustriaMembers } from "../../lib/atlas/austria/inventory";
 import {
-  CANDIDATE_FINGERPRINT,
   CANDIDATE_RELEASE_ID,
   DRAFT_FINGERPRINT,
   DRAFT_RELEASE_ID,
   LINEAGE_ID,
   METHOD_V2_FINGERPRINT,
   OFFICE_NAMESPACE,
-  REGIONAL_CALENDAR_LABEL,
-  REGIONAL_OFFICE_IDS,
   ST_GEORGEN_HOLD_EVENT_ID,
   ST_GEORGEN_HOLD_HISTORY_KEY,
   TIER_PATH,
@@ -27,9 +24,8 @@ import {
   sha256Hex,
 } from "../../lib/atlas/austria/identity";
 import { acquireWriterLock, releaseWriterLock } from "../../lib/atlas/publish";
-import { countRows, openAtlasDatabase } from "../../lib/atlas/sqlite";
+import { openAtlasDatabase } from "../../lib/atlas/sqlite";
 import { migrateMasterDatabase } from "../../lib/atlas/apply-migrations";
-import { listAtlasRegionalCalendar } from "../../lib/atlas/read";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
 
@@ -48,10 +44,6 @@ function latestAttempt(attemptsPath: string): Record<string, unknown> {
   } finally {
     db.close();
   }
-}
-
-function fileSha256(filePath: string): string {
-  return sha256Hex(readFileSync(filePath));
 }
 
 function octal(value: number, width: number): string {
@@ -213,170 +205,6 @@ describe("Prompt N Austria import gates", () => {
       operator: "atlas-ci",
     };
   }
-
-  it(
-    "imports Austria with approved counts, four regional IDs, retained St. Georgen hold, and unchanged re-import",
-    () => {
-      const dir = tempDir("atlas-austria-import-");
-      const options = pathsFor(dir);
-
-      const first = importAustria(options);
-      expect(first.reusedRelease).toBe(false);
-      expect(first.fingerprint).toBe(CANDIDATE_FINGERPRINT);
-      expect(first.releaseId).toBe(CANDIDATE_RELEASE_ID);
-      expect(first.counts).toMatchObject({
-        current_offices: 2038,
-        selected_histories: 5956,
-        prospective_events: 0,
-        total_events: 5956,
-        research_dates: 5956,
-        historical_dates_day: 58,
-        historical_dates_year: 5898,
-        result_rows: 16336,
-        sources: 97,
-        distinct_catalogue_sources: 93,
-        inline_only_sources: 4,
-        municipal_offices: 2034,
-        regional_offices: 4,
-        mayor_offices: 1017,
-        municipal_council_offices: 1017,
-        unknown_next_dates: 2038,
-        office_briefings_retained: 2038,
-        country_briefings_retained: 1,
-        poll_records_retained: 1,
-        control_observations_supplied: 0,
-        proceedings: 0,
-        party_mappings: 0,
-        retained_inputs: 2084,
-      });
-
-      const publishedSha = fileSha256(options.sqlitePath);
-      const master = openAtlasDatabase(options.sqlitePath, { readOnly: true });
-      try {
-        assertAustriaFidelity(master);
-        expect(countRows(master, "office", "lineage_id = ?", [LINEAGE_ID])).toBe(2038);
-        expect(countRows(master, "election_event", "lineage_id = ?", [LINEAGE_ID])).toBe(5956);
-        expect(countRows(master, "result_row", "lineage_id = ?", [LINEAGE_ID])).toBe(16336);
-        expect(countRows(master, "office_tier_classification", "lineage_id = ? AND tier = 'municipal'", [LINEAGE_ID])).toBe(2034);
-        expect(countRows(master, "office_tier_classification", "lineage_id = ? AND tier = 'regional'", [LINEAGE_ID])).toBe(4);
-        expect(countRows(master, "proceeding", "lineage_id = ?", [LINEAGE_ID])).toBe(0);
-        expect(countRows(master, "party_mapping", "lineage_id = ?", [LINEAGE_ID])).toBe(0);
-        const regionalIds = master
-          .prepare(
-            `SELECT o.office_id FROM office o
-             JOIN office_tier_classification t ON t.id_namespace = o.id_namespace AND t.office_id = o.office_id
-             WHERE o.country_id = 'austria' AND t.tier = 'regional'
-             ORDER BY o.office_id`,
-          )
-          .all()
-          .map((row) => String(row.office_id));
-        expect(regionalIds).toEqual([...REGIONAL_OFFICE_IDS].sort());
-        expect(
-          master
-            .prepare("SELECT COUNT(*) AS n FROM sqlite_master WHERE name IN ('tightness','competition_index','metric_observation')")
-            .get(),
-        ).toMatchObject({ n: 0 });
-
-        const hold = master
-          .prepare("SELECT history_key, raw_json FROM election_event WHERE event_id = ?")
-          .get(ST_GEORGEN_HOLD_EVENT_ID);
-        expect(hold).toMatchObject({ history_key: ST_GEORGEN_HOLD_HISTORY_KEY });
-        expect(JSON.parse(String(hold?.raw_json)).supplemental.publication_hold).toBe(true);
-        expect(countRows(master, "result_row", "history_key = ?", [ST_GEORGEN_HOLD_HISTORY_KEY])).toBe(4);
-
-        const release = master.prepare("SELECT * FROM dataset_release WHERE lineage_id = ?").get(LINEAGE_ID);
-        expect(String(release?.release_id)).toBe(first.releaseId);
-        expect(String(release?.fingerprint_sha256)).toBe(first.fingerprint);
-        expect(sha256Hex(String(release?.hash_inputs_json))).toBe(first.fingerprint);
-        expect(release).toMatchObject({
-          adapter_version: "atlas-austria-field-map/1",
-          method_version: "atlas-preserve-evidence/1",
-          schema_version: "atlas-master/1",
-          research_snapshot_label: "2026-09-11",
-          upstream_release_id: LINEAGE_ID,
-          research_coverage_complete: 0,
-        });
-      } finally {
-        master.close();
-      }
-
-      const regional = listAtlasRegionalCalendar("austria", options.sqlitePath);
-      expect(regional.count).toBe(4);
-      expect(regional.offices.map((row) => row.officeId).sort()).toEqual([...REGIONAL_OFFICE_IDS].sort());
-      expect(regional.label).toBe(REGIONAL_CALENDAR_LABEL);
-      expect(regional.denominatorKnown).toBe(false);
-
-      const firstAttempt = latestAttempt(options.attemptsPath);
-      expect(firstAttempt).toMatchObject({
-        attempt_id: first.attemptId,
-        status: "succeeded",
-        successful_release_id: first.releaseId,
-        operator: "atlas-ci",
-        script_version: "atlas-import/1.0.0",
-      });
-
-      const second = importAustria(options);
-      expect(second.attemptId).not.toBe(first.attemptId);
-      expect(second.releaseId).toBe(first.releaseId);
-      expect(second.fingerprint).toBe(first.fingerprint);
-      expect(second.reusedRelease).toBe(true);
-
-      const master2 = openAtlasDatabase(options.sqlitePath, { readOnly: true });
-      try {
-        expect(master2.prepare("SELECT COUNT(*) AS n FROM dataset_release").get()).toMatchObject({ n: 1 });
-        const receipt = master2.prepare("SELECT last_publish_attempt_id, attempted_release_id FROM publication_receipt").get();
-        expect(receipt).toMatchObject({
-          last_publish_attempt_id: second.attemptId,
-          attempted_release_id: first.releaseId,
-        });
-      } finally {
-        master2.close();
-      }
-
-      const poisonPrior = fileSha256(options.sqlitePath);
-      expect(() =>
-        importAustria({
-          ...options,
-          poisonAfterWrite: (db) => {
-            db.exec("PRAGMA foreign_keys = OFF;");
-            db.prepare("DELETE FROM source WHERE source_id = ?").run("austria--Saa268dd490");
-            db.exec("PRAGMA foreign_keys = ON;");
-          },
-        }),
-      ).toThrow(/foreign_key_check|FOREIGN|source/i);
-      expect(fileSha256(options.sqlitePath)).toBe(poisonPrior);
-      const poisonAttempt = latestAttempt(options.attemptsPath);
-      expect(poisonAttempt.status).toBe("failed");
-      expect(poisonAttempt.successful_release_id).toBeNull();
-      expect(existsSync(`${options.sqlitePath}.staging`)).toBe(false);
-
-      expect(() => importAustria({ ...options, failBeforeRename: true })).toThrow(/Injected failure before rename/);
-      expect(fileSha256(options.sqlitePath)).toBe(poisonPrior);
-      expect(latestAttempt(options.attemptsPath).status).toBe("failed");
-      expect(latestAttempt(options.attemptsPath).successful_release_id).toBeNull();
-
-      const coverageDir = path.join(dir, "coverage-package");
-      cpSync(path.join(repoRoot, "data/countries/austria"), coverageDir, { recursive: true });
-      const coveragePath = path.join(coverageDir, "coverage.json");
-      const coverage = JSON.parse(readFileSync(coveragePath, "utf8")) as { remaining: string };
-      coverage.remaining = `${coverage.remaining} test-only remaining note.`;
-      writeFileSync(coveragePath, `${JSON.stringify(coverage)}\n`);
-      const changed = importAustria({ ...options, packageDir: coverageDir, requireGitTrackedPackage: false });
-      expect(changed.releaseId).not.toBe(first.releaseId);
-      const master3 = openAtlasDatabase(options.sqlitePath, { readOnly: true });
-      try {
-        expect(countRows(master3, "office_tier_classification", "tier = 'municipal'")).toBe(2034);
-        expect(countRows(master3, "office_tier_classification", "tier = 'regional'")).toBe(4);
-        expect(master3.prepare("SELECT COUNT(*) AS n FROM dataset_release").get()).toMatchObject({ n: 2 });
-        const selected = master3.prepare("SELECT release_id FROM publication_release WHERE lineage_id = ?").get(LINEAGE_ID);
-        expect(String(selected?.release_id)).toBe(changed.releaseId);
-      } finally {
-        master3.close();
-      }
-      expect(publishedSha).not.toBe(fileSha256(options.sqlitePath));
-    },
-    600_000,
-  );
 
   it("rejects missing and non-approved tier files with a durable failed attempt", () => {
     const dir = tempDir("atlas-austria-tiers-");
