@@ -594,6 +594,114 @@ describe("Phase 0 tier-classification drafts", () => {
       "0b6b2c05dd8906f7e7a19927e847d4bc0aa83da8769e70ebbef012b13d0d287e",
     );
   });
+
+  it("keeps Belgium Prompt S2 1179 current / 55 historical fully accepted", () => {
+    const belgium = readJson<
+      TierFile & {
+        production_accepted?: boolean;
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        counts_by_approval?: Record<string, number>;
+        importer_policy?: {
+          load?: string;
+          authorized_in_this_landing?: boolean;
+          approved_count?: number;
+          held_count?: number;
+        };
+        justin_approval?: { accepted?: boolean; current_offices?: number; historical_offices?: number };
+        notes?: Array<{ scope?: string; status?: string; office_ids?: string[]; note?: string }>;
+        source_register: { path: string; sha256: string; bytes?: number };
+      }
+    >("schemas/atlas/tiers/belgium.json");
+    expect(belgium.status).toBe("approved");
+    expect(belgium.production_accepted).toBe(true);
+    expect(belgium.country_slug).toBe("belgium");
+    expect(belgium.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-19",
+      timezone: "America/Edmonton",
+    });
+    expect(belgium.approval?.notes).toMatch(/1,179 current \+ 55 historical/i);
+    expect(belgium.approval?.notes).toMatch(/retain offices and historic/i);
+    expect(belgium.approval?.notes).toMatch(/remaining_universe/i);
+    expect(belgium.predecessor_draft_sha256).toBe(
+      "8dec06a21c01e0f0aa0228e3d152b795b0fff9522c96b2071fec334f5070ccb6",
+    );
+    expect(sha256("schemas/atlas/tiers/belgium.json")).toBe(
+      "adc7108868d7d8a7df3f6888de9dee05d4b799c2ebbc3a571e83a0ea8fe284cf",
+    );
+    expect(belgium.classifications).toHaveLength(1234);
+    expect(belgium.counts_by_proposed_tier).toEqual({
+      national: 2,
+      regional: 15,
+      municipal: 1185,
+      council: 0,
+      other: 32,
+      unknown: 0,
+    });
+    expect(belgium.counts_by_approval).toEqual({
+      production_approved_current: 1179,
+      production_approved_historical: 55,
+      production_approved_total: 1234,
+      municipal: 1185,
+      regional: 15,
+      national: 2,
+      other: 32,
+      held: 0,
+    });
+    expect(belgium.importer_policy).toMatchObject({
+      load: "not_implemented",
+      authorized_in_this_landing: false,
+      approved_count: 1234,
+      held_count: 0,
+    });
+    expect(belgium.justin_approval).toMatchObject({
+      accepted: true,
+      current_offices: 1179,
+      historical_offices: 55,
+    });
+    expect(belgium.classifications.every((row) => row.human_review_required === false)).toBe(true);
+    expect(belgium.classifications.every((row) => row.tier_uncertain === false)).toBe(true);
+    expect(belgium.classifications.every((row) => row.review_category == null)).toBe(true);
+    expect(belgium.classifications.filter((row) => row.tier === "municipal")).toHaveLength(1185);
+    expect(belgium.classifications.filter((row) => row.tier === "regional")).toHaveLength(15);
+    expect(belgium.classifications.filter((row) => row.tier === "national")).toHaveLength(2);
+    expect(belgium.classifications.filter((row) => row.tier === "other")).toHaveLength(32);
+    expect(
+      belgium.classifications.every((row) =>
+        row.tier === "national" ? row.schema_v1_tier === "national_context" : row.tier === row.schema_v1_tier,
+      ),
+    ).toBe(true);
+    const register = readJson<Array<{ office_id: string; current: boolean }>>(
+      "data/research/belgium-s2/office-register.json",
+    );
+    expect(register.filter((row) => row.current)).toHaveLength(1179);
+    expect(register.filter((row) => !row.current)).toHaveLength(55);
+    expectExactIds(belgium, register.map((row) => row.office_id));
+    expect(belgium.source_register.sha256).toBe(
+      "4b6ccb857bf22dbef2c8dbe8b3be72f7718b5f36aacda28e4b0ca212fce1bfd0",
+    );
+    expect(belgium.source_register.sha256).toBe(sha256("data/research/belgium-s2/office-register.json"));
+    expect(belgium.source_register.path).toBe("data/research/belgium-s2/office-register.json");
+    const remaining = belgium.notes?.find((note) => note.scope === "remaining_universe");
+    expect(remaining).toMatchObject({ status: "open" });
+    expect(remaining?.note).toMatch(/Indirect social-welfare/i);
+    expect(belgium.notes?.find((note) => note.scope === "historic_binding")).toMatchObject({
+      status: "open",
+    });
+    expect(belgium.notes?.find((note) => note.scope === "special_body_policy")).toMatchObject({
+      status: "open",
+    });
+    expect(belgium.notes?.every((note) => note.status === "open")).toBe(true);
+    expect(belgium.schema_compatibility).toMatchObject({ national: "national_context" });
+  });
 });
 
 describe("Phase 0 inventory artifacts", () => {
