@@ -7,6 +7,7 @@ import { importAlbania } from "../../lib/atlas/albania/import";
 import { importAlderney } from "../../lib/atlas/alderney/import";
 import { importAndorra } from "../../lib/atlas/andorra/import";
 import { importArmenia } from "../../lib/atlas/armenia/import";
+import { importBelgium } from "../../lib/atlas/belgium/import";
 import { importBosnia } from "../../lib/atlas/bosnia-and-herzegovina/import";
 import { importBulgaria } from "../../lib/atlas/bulgaria/import";
 import { importAtlasLineages, parseImportScope } from "../../lib/atlas/continuity/import";
@@ -19,6 +20,7 @@ import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
 import { LINEAGE_ID as ALDERNEY_LINEAGE } from "../../lib/atlas/alderney/identity";
 import { LINEAGE_ID as ANDORRA_LINEAGE } from "../../lib/atlas/andorra/identity";
 import { LINEAGE_ID as ARMENIA_LINEAGE } from "../../lib/atlas/armenia/identity";
+import { LINEAGE_ID as BELGIUM_LINEAGE } from "../../lib/atlas/belgium/identity";
 import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
 import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
 
@@ -68,6 +70,7 @@ describe("approved-pack gate", () => {
     expect(parseImportScope("andorra")).toBe("andorra");
     expect(parseImportScope("alderney")).toBe("alderney");
     expect(parseImportScope("armenia")).toBe("armenia");
+    expect(parseImportScope("belgium")).toBe("belgium");
     expect(parseImportScope("bosnia")).toBe("bosnia");
     expect(parseImportScope("bulgaria")).toBe("bulgaria");
     expect(parseImportScope("latam")).toBe("latam");
@@ -281,6 +284,45 @@ describe("multi-lineage continuity import", () => {
         .all()
         .map((row) => String(row.lineage_id));
       expect(lineages).toEqual([ALBANIA_LINEAGE, BOSNIA_LINEAGE].sort());
+    } finally {
+      db.close();
+    }
+  }, 180_000);
+
+  it("imports Albania then Belgium into one master without dropping Albania", () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-belgium-"));
+    tempDirs.push(dir);
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+    const albania = importAlbania({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "albania-belgium-test",
+    });
+    expect(albania.counts.current_offices).toBe(122);
+    const belgium = importBelgium({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "albania-belgium-test",
+    });
+    expect(belgium.counts.current_offices).toBe(1179);
+    expect(belgium.counts.historical_offices).toBe(55);
+    expect(belgium.counts.regional_offices).toBe(15);
+    const db = new DatabaseSync(sqlitePath, { readOnly: true });
+    try {
+      expect(
+        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
+      ).toBe(122);
+      expect(
+        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(BELGIUM_LINEAGE)?.n),
+      ).toBe(1234);
+      const lineages = db
+        .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
+        .all()
+        .map((row) => String(row.lineage_id));
+      expect(lineages).toEqual([ALBANIA_LINEAGE, BELGIUM_LINEAGE].sort());
     } finally {
       db.close();
     }

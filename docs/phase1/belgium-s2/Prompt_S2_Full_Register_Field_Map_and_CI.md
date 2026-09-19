@@ -1,6 +1,6 @@
 # Prompt S2 — full-register field-map and CI checklist
 
-Review pack main `01602ea88de411fd712858e10e3f559d5ceb3ee1`; landing base `b293da99b97a8ae008d87ee2e57210cde0678004`. Mapping and artifact checks are separate from future execution. Justin accepted all 1,179 current + 55 historical draft offices on 2026-09-19. **Importer / SQLite / VPS / UI applied_changes=0.** Research extraction and document validation are not production importer CI.
+Review pack main `01602ea88de411fd712858e10e3f559d5ceb3ee1`; landing base `b293da99b97a8ae008d87ee2e57210cde0678004`. Mapping and artifact checks in this Prompt S2 landing were separate from importer execution. Justin accepted all 1,179 current + 55 historical draft offices on 2026-09-19. The follow-up importer is `ATLAS_IMPORT_SCOPE=belgium` — see [Belgium_Import.md](Belgium_Import.md).
 
 | Requirement | Status | Evidence / future gate |
 |---|---|---|
