@@ -1153,7 +1153,7 @@ export function projectBulgaria(inventory: BulgariaInventory): BulgariaProjectio
     addLocator({
       record_key: recordKey("input", [L, input.input_path]),
       entity_kind: "input",
-      country_id: COUNTRY_ID,
+      country_id: null,
       geography_id: null,
       id_namespace: null,
       office_id: null,
