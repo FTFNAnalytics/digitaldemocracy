@@ -30,6 +30,7 @@ Verified against `FTFNAnalytics/digitaldemocracy` `main` (`3ef34d3`, Prompt N PR
 | LatAm / NZ continuity | Approved packs import via `import:atlas` | 8 residual-heavy packs stay `draft_for_human_review` and are skipped. |
 | Mexico shares | Production override still original **67** | Justin accepted Prompt M **95 sibling withholds** (2026-09-17) as disposition. Docs PR [#27](https://github.com/FTFNAnalytics/digitaldemocracy/pull/27) **landed**; the production override is unchanged until a later importer amendment. |
 | Austria | Package + Prompt N tiers **on main** | Country package landed in PR [#11](https://github.com/FTFNAnalytics/digitaldemocracy/pull/11) (`f0f2c86`). Approved `schemas/atlas/tiers/austria.json` landed in PR [#28](https://github.com/FTFNAnalytics/digitaldemocracy/pull/28) (`3ef34d3`; 2,034 municipal + 4 regional; St. Georgen 2015 hold and calendar notes retained). Atlas importer still waits; observatory skips the XZ payload. |
+| Belgium | Prompt S2 research + approved tiers | Justin accepted **1,179 current + 55 historical** offices on 2026-09-19. Research at `data/research/belgium-s2/`; approved `schemas/atlas/tiers/belgium.json` (1,185 municipal / 15 regional / 2 national / 32 other). Remaining-universe notes retained. Atlas importer waits. Frozen PR #14 screening extract is not overwritten. No `/electiondatabase` redirects. |
 
 Inventory, identity rules, and cutover checklists below remain the contract. The [Current repository snapshot](#current-repository-snapshot) is Phase 0 inventory context, not this as-of date.
 

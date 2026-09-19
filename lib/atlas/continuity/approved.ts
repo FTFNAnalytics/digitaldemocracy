@@ -7,6 +7,7 @@ const PHASE0_SLUGS = new Set([
   "alderney",
   "armenia",
   "austria",
+  "belgium",
   "bosnia-and-herzegovina",
   "bulgaria",
 ]);
