@@ -33,7 +33,6 @@ describe("country package inventory", () => {
       "alderney",
       "andorra",
       "armenia",
-      "bosnia-and-herzegovina",
       "new-zealand",
     ]);
     expect(packages.find((row) => row.slug === "albania")?.kind).toBe(
@@ -45,11 +44,9 @@ describe("country package inventory", () => {
     expect(packages.find((row) => row.slug === "armenia")?.kind).toBe(
       "armenia-packed-europe/1",
     );
-    // Bosnia gzip currently classifies as armenia-packed-europe/1. Skip/classifier
-    // fix is follow-up work; this Prompt O PR lands docs/tiers only.
-    expect(packages.find((row) => row.slug === "bosnia-and-herzegovina")?.kind).toBe(
-      "armenia-packed-europe/1",
-    );
+    // Bosnia gzip is skipped (website ingestion pending), same shape as Austria XZ.
+    // The Atlas importer is separate and does not add an observatory adapter.
+    expect(packages.find((row) => row.slug === "bosnia-and-herzegovina")).toBeUndefined();
   });
 });
 
@@ -242,7 +239,6 @@ describe("region merge", () => {
       "alderney",
       "andorra",
       "armenia",
-      "bosnia-and-herzegovina",
       "new-zealand",
     ]);
     expect(merged.countries.find((row) => row.id === "alderney")?.kind).toBe(
@@ -267,6 +263,6 @@ describe("import:countries command", () => {
   it("reports package validation from the shared helper", () => {
     const result = validateCountryPackages(root);
     expect(result.errors).toEqual([]);
-    expect(result.summaries).toHaveLength(6);
+    expect(result.summaries).toHaveLength(5);
   });
 });
