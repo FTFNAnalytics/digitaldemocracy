@@ -898,8 +898,11 @@ export function projectBulgaria(inventory: BulgariaInventory): BulgariaProjectio
     }
   }
   const gradecHistories = historyEntries.filter((row) => row.officeId === GRADEC_OFFICE_ID);
-  if (gradecHistories.length !== 0) {
-    throw new Error("Градец must not have a selected H row in this snapshot");
+  if (gradecHistories.some((row) => cellYear(row.row.Year) === 2015)) {
+    throw new Error("Градец 2015 must not have a selected H row");
+  }
+  if (gradecHistories.length === 0 || gradecHistories.some((row) => row.approved)) {
+    throw new Error("Градец 2019/2023 H rows must remain in the held companion snapshot");
   }
   const gradecX = inventory.unresolvedHistory.rows.filter(
     (row) => cellText(row["Office ID"]) === GRADEC_OFFICE_ID,
