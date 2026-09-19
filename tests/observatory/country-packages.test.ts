@@ -21,8 +21,12 @@ describe("country package inventory", () => {
     expect(skipped.map((row) => row.slug)).toEqual([
       "austria",
       "bosnia-and-herzegovina",
+      "bulgaria",
     ]);
     expect(skipped.find((row) => row.slug === "austria")?.reason).toMatch(
+      /XZ payload has no observatory adapter/i,
+    );
+    expect(skipped.find((row) => row.slug === "bulgaria")?.reason).toMatch(
       /XZ payload has no observatory adapter/i,
     );
     expect(
@@ -44,9 +48,11 @@ describe("country package inventory", () => {
     expect(packages.find((row) => row.slug === "armenia")?.kind).toBe(
       "armenia-packed-europe/1",
     );
-    // Bosnia gzip is skipped (website ingestion pending), same shape as Austria XZ.
-    // The Atlas importer is separate and does not add an observatory adapter.
+    // Bosnia gzip is skipped (website ingestion pending); Bulgaria XZ has no
+    // observatory adapter yet. The Atlas importer is separate and does not add
+    // an observatory adapter.
     expect(packages.find((row) => row.slug === "bosnia-and-herzegovina")).toBeUndefined();
+    expect(packages.find((row) => row.slug === "bulgaria")).toBeUndefined();
   });
 });
 
