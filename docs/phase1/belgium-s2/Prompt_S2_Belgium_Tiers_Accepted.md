@@ -18,4 +18,4 @@ Retained open:
 
 Review pack pin: ZIP SHA-256 `9f0d9051dfaf6aeb6d2b3a500c258a551d0d49ac99febe5d57bd77263cee58ea`. Draft authored against main `01602ea88de411fd712858e10e3f559d5ceb3ee1`. Landing base `b293da99b97a8ae008d87ee2e57210cde0678004`. Draft tier SHA before acceptance metadata: `8dec06a21c01e0f0aa0228e3d152b795b0fff9522c96b2071fec334f5070ccb6`.
 
-Importer / SQLite / VPS / UI remain follow-up work. `import:atlas` is **not** implemented for Belgium in this landing. Frozen PR #14 screening bytes are not overwritten. No `/electiondatabase` redirects and no Mexico edits.
+Tier acceptance in this landing did not run the importer. The follow-up importer is `ATLAS_IMPORT_SCOPE=belgium` — see [Belgium_Import.md](Belgium_Import.md). Frozen PR #14 screening bytes are not overwritten. No `/electiondatabase` redirects and no Mexico edits.
