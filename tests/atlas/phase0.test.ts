@@ -13,10 +13,12 @@ type Classification = {
   tier: string;
   schema_v1_tier: string;
   jurisdiction: string;
+  office?: string;
   rationale: string;
   confidence: string;
   human_review_required?: boolean;
   human_review?: { queue?: string; prompt_token?: string };
+  review_category?: string | null;
   tier_uncertain?: boolean;
   boundary_calendar_review?: {
     status?: string;
@@ -63,7 +65,9 @@ function armeniaRegisterIds(): { ids: string[]; registerSha256: string } {
   };
 }
 
-function austriaRegisterIds(): { ids: string[]; registerSha256: string; payloadSha256: string } {
+function packedXzRegisterIds(
+  relativeDir: string,
+): { ids: string[]; registerSha256: string; payloadSha256: string } {
   const script = `
 import hashlib, io, json, lzma, tarfile, sys
 from pathlib import Path
@@ -87,7 +91,7 @@ print(json.dumps({
 `;
   const result = spawnSync(
     "python3",
-    ["-c", script, path.join(repoRoot, "data/countries/austria")],
+    ["-c", script, path.join(repoRoot, relativeDir)],
     { encoding: "utf8", maxBuffer: 32 * 1024 * 1024 },
   );
   expect(result.status).toBe(0);
@@ -97,6 +101,14 @@ print(json.dumps({
     registerSha256: string;
     payloadSha256: string;
   };
+}
+
+function austriaRegisterIds(): { ids: string[]; registerSha256: string; payloadSha256: string } {
+  return packedXzRegisterIds("data/countries/austria");
+}
+
+function bulgariaRegisterIds(): { ids: string[]; registerSha256: string; payloadSha256: string } {
+  return packedXzRegisterIds("data/countries/bulgaria");
 }
 
 function bosniaRegisterIds(): { ids: string[]; registerSha256: string; payloadSha256: string } {
@@ -471,6 +483,115 @@ describe("Phase 0 tier-classification drafts", () => {
     expect(bosnia.source_register.payload_sha256).toBe(packed.payloadSha256);
     expect(packed.payloadSha256).toBe(
       "5fb08d2c43f2fff0526c7aa3e95bbd00186aa6a401f409346dd3dbd11ce09c89",
+    );
+  });
+
+  it("keeps Bulgaria 530 municipality-wide accepted and 3067 submunicipal held", () => {
+    const bulgaria = readJson<
+      TierFile & {
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        counts_by_approval?: Record<string, number>;
+        importer_policy?: {
+          load?: string;
+          approved_count?: number;
+          held_count?: number;
+          held_review_category?: string;
+        };
+        notes?: Array<{ scope?: string; status?: string; office_ids?: string[]; note?: string }>;
+        source_register: { path: string; sha256: string; payload_sha256?: string };
+      }
+    >("schemas/atlas/tiers/bulgaria.json");
+    expect(bulgaria.status).toBe("approved");
+    expect(bulgaria.country_slug).toBe("bulgaria");
+    expect(bulgaria.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-19",
+      timezone: "America/Edmonton",
+    });
+    expect(bulgaria.approval?.notes).toMatch(/530 municipality-wide/i);
+    expect(bulgaria.approval?.notes).toMatch(/HOLD 3067/i);
+    expect(bulgaria.approval?.notes).toMatch(/Do not invent a regional layer/i);
+    expect(bulgaria.predecessor_draft_sha256).toBe(
+      "cff8fcabb12716230a314309162a40c72a3d7d13fe1aa4469cfb1655767c48f0",
+    );
+    expect(sha256("schemas/atlas/tiers/bulgaria.json")).toBe(
+      "9a6718fe301f440511cc9e9f9b4139b3a1e0332ef2e3e6c9b3063f67f04652ab",
+    );
+    expect(bulgaria.classifications).toHaveLength(3597);
+    expect(bulgaria.counts_by_proposed_tier).toEqual({
+      national: 0,
+      regional: 0,
+      municipal: 3597,
+      council: 0,
+      other: 0,
+    });
+    expect(bulgaria.counts_by_approval).toEqual({
+      production_approved_municipal: 530,
+      held_submunicipal_scope: 3067,
+      regional: 0,
+    });
+    expect(bulgaria.importer_policy).toMatchObject({
+      load: "production_approved_rows_only",
+      approved_count: 530,
+      held_count: 3067,
+      held_review_category: "submunicipal_scope",
+    });
+    const mayors = bulgaria.classifications.filter((row) => row.office === "Mayor");
+    const councils = bulgaria.classifications.filter((row) => row.office === "Municipal council");
+    const district = bulgaria.classifications.filter((row) => row.office === "District mayor");
+    const village = bulgaria.classifications.filter((row) => row.office === "Village mayor");
+    expect(mayors).toHaveLength(265);
+    expect(councils).toHaveLength(265);
+    expect(district).toHaveLength(35);
+    expect(village).toHaveLength(3032);
+    expect(
+      [...mayors, ...councils].every(
+        (row) =>
+          row.tier === "municipal" &&
+          row.schema_v1_tier === "municipal" &&
+          row.human_review_required === false &&
+          row.tier_uncertain === false &&
+          (row.review_category == null),
+      ),
+    ).toBe(true);
+    expect(
+      [...district, ...village].every(
+        (row) =>
+          row.tier === "municipal" &&
+          row.schema_v1_tier === "municipal" &&
+          row.human_review_required === true &&
+          row.tier_uncertain === true &&
+          row.review_category === "submunicipal_scope",
+      ),
+    ).toBe(true);
+    expect(bulgaria.classifications.every((row) => row.tier === "municipal")).toBe(true);
+    const hold = bulgaria.notes?.find((note) => note.scope === "submunicipal_tier_policy_and_2027_roster");
+    expect(hold).toMatchObject({ status: "open" });
+    expect(hold?.note).toMatch(/Justin HOLD 2026-09-19/i);
+    expect(hold?.note).toMatch(/530 municipality-wide/i);
+    const gradets = bulgaria.notes?.find((note) => note.scope === "qualification_change");
+    expect(gradets).toMatchObject({
+      status: "open",
+      office_ids: ["BG-SLV11-b88d0d4475-V"],
+    });
+    expect(bulgaria.notes?.every((note) => note.status === "open")).toBe(true);
+    expect(bulgaria.source_register.sha256).toBe(
+      "00ddcca3c48141302a7432f97effd017a009fee3d64fb7f9000a72ef79663559",
+    );
+    const packed = bulgariaRegisterIds();
+    expectExactIds(bulgaria, packed.ids);
+    expect(bulgaria.source_register.sha256).toBe(packed.registerSha256);
+    expect(bulgaria.source_register.payload_sha256).toBe(packed.payloadSha256);
+    expect(packed.payloadSha256).toBe(
+      "0b6b2c05dd8906f7e7a19927e847d4bc0aa83da8769e70ebbef012b13d0d287e",
     );
   });
 });
