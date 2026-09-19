@@ -1,0 +1,145 @@
+{
+  "status": "accepted_432_current_69_historical",
+  "pinned_main_commit": "b293da99b97a8ae008d87ee2e57210cde0678004",
+  "artifact_checks": "PASS",
+  "verified_counts": {
+    "offices": 501,
+    "current_offices": 432,
+    "historical_offices": 69,
+    "current_by_type": {
+      "senate": 1,
+      "european_parliament_delegation": 1,
+      "municipal_council": 342,
+      "administrative_committee": 1,
+      "district_committee": 7,
+      "neighbourhood_council": 39,
+      "senate_electoral_college": 4,
+      "island_council": 3,
+      "provincial_states": 12,
+      "house_of_representatives": 1,
+      "waterboard_general_board": 21
+    },
+    "tiers_all": {
+      "national": 3,
+      "municipal": 414,
+      "other": 72,
+      "regional": 12
+    },
+    "events": 1475,
+    "selected_histories": 1474,
+    "other_histories": 1,
+    "events_by_year": {
+      "2023": 42,
+      "2024": 1,
+      "2014": 377,
+      "2018": 333,
+      "2022": 333,
+      "2026": 387,
+      "2021": 1,
+      "2025": 1
+    },
+    "results": 13050,
+    "results_by_year": {
+      "2023": 557,
+      "2024": 20,
+      "2014": 2918,
+      "2018": 2766,
+      "2022": 2871,
+      "2026": 3854,
+      "2021": 37,
+      "2025": 27
+    },
+    "current_without_history": [],
+    "geographies": 496,
+    "unresolved_bindings": 2,
+    "municipal_2026_missing_ids": [
+      "NL-GM0402-C",
+      "NL-GM1696-C"
+    ],
+    "focused_tier_reviews": 147,
+    "sources": 77
+  },
+  "independent_source_rechecks": {
+    "status": "PASS",
+    "scope": "source re-read and artifact checks only; no SQLite/importer execution",
+    "result_rechecks": {
+      "long_csv_rows": 3048,
+      "aggregate_csv_rows": 6203,
+      "eml_list_rows": 2871,
+      "explicit_withheld_observations": 1,
+      "xlsx_list_rows": 99,
+      "html_candidate_rows": 829,
+      "all_result_rows": 13050
+    },
+    "source_key_checks": {
+      "verkiezingsuitslagen-gemeenteraad-2014.zip": {
+        "raw_rows": 101434,
+        "duplicate_reporting_keys": 850
+      },
+      "data-gemeenteraad-2018--Verkiezingsuitslagen_Gemeenteraad_2018_(CSV_formaat).zip": {
+        "raw_rows": 103655,
+        "duplicate_reporting_keys": 0
+      },
+      "verkiezingsuitslag-provinciale-staten-2023.zip": {
+        "raw_rows": 6598,
+        "duplicate_reporting_keys": 0
+      },
+      "data-waterschappen-2023--Verkiezingsuitslagen_Waterschappen_2023_(CSV_formaat).zip": {
+        "raw_rows": 5309,
+        "duplicate_reporting_keys": 0
+      }
+    },
+    "known_duplicate_disposition": "GR2014Leeuwarderadeel collapsed vector withheld; original bytes retained",
+    "selected_histories": 1474,
+    "other_histories": 1,
+    "errors": []
+  },
+  "mapping_tables": 20,
+  "mapping_columns": 223,
+  "acceptance_examples": 19,
+  "office_tier_id_set_equality": true,
+  "identity_vectors_recomputed": true,
+  "source_hashes_verified": true,
+  "historic_coverage_complete": false,
+  "all_public_positions_census_complete": false,
+  "current_statutory_body_categories_covered": true,
+  "typed_prospective_events": 0,
+  "named_unbound_merger_claims": 1,
+  "collapsed_source_result_holds": 1,
+  "applied_changes": 0,
+  "repo_mutations": 0,
+  "importer": "Not run",
+  "sqlite": "Not run",
+  "vps": "Not run",
+  "ui": "Not run",
+  "justin_approval": {
+    "date": "2026-09-19",
+    "timezone": "America/Edmonton",
+    "accepted_by": "Justin",
+    "current_offices": 432,
+    "historical_offices": 69,
+    "offices": 501,
+    "scope": "all_draft_offices",
+    "held": 0,
+    "focused_tier_reviews_retained": 147,
+    "importer_loads": "not_implemented"
+  },
+  "tier_sha256": "faaf7573c678887004bc1f36f00a8496294ae23db5569278280a45642f0631b7",
+  "missing_seats": 10308,
+  "explicit_zero_seats": 4,
+  "no_other_country_or_override_writes": true,
+  "manifest_rule": "all other ZIP members; external manifest and archive hash",
+  "pinned_ddl_column_inventory_checked": true,
+  "protected_paths": "Landing writes confined to new Netherlands research/docs/approved-tier paths; no importer, electiondatabase redirects, or Mexico edits.",
+  "predecessor_draft_tier_sha256": "81dc30e718355573cd15e3c93ff8f75364e4223612efab23cbd3393c5c94ea89",
+  "accepted_tier_sha256": "faaf7573c678887004bc1f36f00a8496294ae23db5569278280a45642f0631b7",
+  "review_pack_slim_zip_sha256": "8a0d2c1b33148dc6d614db5402991f3cf621fdd443a18539f036cc2ec1e9dac9",
+  "original_full_zip_sha256": "fd9820e4cb89461971e62a8874c0d301ca64a4bdb030ad60842bb75db7cc0031",
+  "open_research_notes": [
+    "hilversum_wijdemeren_merger_successor_binding",
+    "named_historic_gaps_partial_coverage",
+    "focused_tier_reviews_147",
+    "appointed_mayors_no_mayoral_election_rows"
+  ],
+  "tier_approval": "accepted_all_501"
+}
