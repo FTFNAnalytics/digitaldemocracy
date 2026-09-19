@@ -265,7 +265,7 @@ describe("Prompt O Bosnia and Herzegovina import gates", () => {
         .get();
       expect(expectedDate).toMatchObject({ label: "2026-10-04", precision: "day", certainty: "expected" });
       expect(
-        master.prepare("SELECT COUNT(*) AS n FROM research_date WHERE lineage_id = ? AND certainty = 'called'", [LINEAGE_ID]).get(),
+        master.prepare("SELECT COUNT(*) AS n FROM research_date WHERE lineage_id = ? AND certainty = 'called'").get(LINEAGE_ID),
       ).toMatchObject({ n: 0 });
 
       const release = master.prepare("SELECT * FROM dataset_release WHERE lineage_id = ?").get(LINEAGE_ID);
