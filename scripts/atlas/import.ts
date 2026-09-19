@@ -3,7 +3,7 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Belgium + Bosnia and Herzegovina +
- * Bulgaria + approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria + Netherlands + approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -133,6 +133,26 @@ function main() {
       console.log(`bulgaria_sources=${result.bulgaria.counts.sources}`);
       console.log(`bulgaria_regional=${result.bulgaria.counts.regional_offices}`);
       console.log(`bulgaria_held_offices=${result.bulgaria.counts.held_offices}`);
+    }
+    if (result.netherlands) {
+      console.log("lineage=country-package-netherlands");
+      console.log(`netherlands_attempt_id=${result.netherlands.attemptId}`);
+      console.log(`netherlands_release_id=${result.netherlands.releaseId}`);
+      console.log(`netherlands_fingerprint_sha256=${result.netherlands.fingerprint}`);
+      console.log(`netherlands_reused_release=${result.netherlands.reusedRelease ? "yes" : "no"}`);
+      console.log(`netherlands_offices=${result.netherlands.counts.offices}`);
+      console.log(`netherlands_current=${result.netherlands.counts.current_offices}`);
+      console.log(`netherlands_historical=${result.netherlands.counts.historical_offices}`);
+      console.log(`netherlands_municipal=${result.netherlands.counts.municipal_offices}`);
+      console.log(`netherlands_regional=${result.netherlands.counts.regional_offices}`);
+      console.log(`netherlands_national=${result.netherlands.counts.national_offices}`);
+      console.log(`netherlands_other=${result.netherlands.counts.other_offices}`);
+      console.log(`netherlands_selected_histories=${result.netherlands.counts.selected_histories}`);
+      console.log(`netherlands_prospective_events=${result.netherlands.counts.prospective_events}`);
+      console.log(`netherlands_result_rows=${result.netherlands.counts.result_rows}`);
+      console.log(`netherlands_sources=${result.netherlands.counts.sources}`);
+      console.log(`netherlands_unresolved=${result.netherlands.counts.unresolved_evidence}`);
+      console.log(`netherlands_needs_review=${result.netherlands.counts.needs_review_classifications}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");

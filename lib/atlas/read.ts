@@ -491,6 +491,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "netherlands") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "12 regional offices (provincial states). Sourced 17 March 2027 next-date metadata is expected, not a prospective event. Hilversum/Wijdemeren merger successor binding, named historic gaps, and focused-tier reviews stay open. Appointed mayors have no election rows.",
+      denominatorKnown: false,
+    };
+  }
   return {
     offices,
     count: offices.length,

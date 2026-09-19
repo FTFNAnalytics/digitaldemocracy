@@ -21,7 +21,7 @@ Albania municipal and Alderney `other` are **`approved`**. Andorra is **`approve
 | [`bosnia-and-herzegovina.json`](bosnia-and-herzegovina.json) | 13 | `regional` (13) | **Approved** 2026-09-17 (Justin / Prompt O). Package on main (PR #15); importer via `ATLAS_IMPORT_SCOPE=bosnia`. Open RS presidential / coalition / calendar notes retained |
 | [`bulgaria.json`](bulgaria.json) | 3597 | `municipal` (3597 proposed; 530 accepted / 3067 held) | **Partial approve** 2026-09-19 (Justin / Prompt P). 265 Mayor + 265 Municipal council accepted. 35 District mayor + 3,032 Village mayor held (`submunicipal_scope`). Regional=0. Importer loads 530 only |
 | [`belgium.json`](belgium.json) | 1234 | `municipal` (1185) + `regional` (15) + `national` (2) + `other` (32) | **Approved** 2026-09-19 (Justin / Prompt S2). 1,179 current + 55 historical. Remaining-universe notes retained. Importer via `ATLAS_IMPORT_SCOPE=belgium` |
-| [`netherlands.json`](netherlands.json) | 501 | `municipal` (414) + `regional` (12) + `national` (3) + `other` (72) | **Approved** 2026-09-19 (Justin / Prompt T). 432 current + 69 historical. Focused-tier reviews (~147) and Hilversum/Wijdemeren stay open. Atlas importer waits |
+| [`netherlands.json`](netherlands.json) | 501 | `municipal` (414) + `regional` (12) + `national` (3) + `other` (72) | **Approved** 2026-09-19 (Justin / Prompt T). 432 current + 69 historical. Focused-tier reviews (~147) and Hilversum/Wijdemeren stay open. Importer via `ATLAS_IMPORT_SCOPE=netherlands` |
 
 Vocabulary uses `national` as a proposed label. `schema_compatibility` maps
 `national` → schema v1 `national_context`.
@@ -82,7 +82,7 @@ successor binding stays open, as do named historic gaps / partial coverage.
 Focused-tier review rows (~147) keep drafted tiers; Justin accepted the
 register universe. Appointed mayors: no mayoral election rows. Research tables
 live at `data/research/netherlands/`. Slim pack omitted bulky sources; do not
-invent those bytes. The Atlas importer waits.
+invent those bytes. Importer via `ATLAS_IMPORT_SCOPE=netherlands`.
 
 **Albania:** all 122 office-register rows are **approved** `municipal` (Justin,
 2026-09-16) for Phase 1 storage proof. Regional count is 0 by design. Do not
