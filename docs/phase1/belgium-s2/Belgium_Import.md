@@ -38,7 +38,7 @@ belgium_other=32
 belgium_selected_histories=1770
 belgium_prospective_events=0
 belgium_result_rows=9238
-belgium_sources=460
+belgium_sources=459
 belgium_unresolved=37
 ```
 

@@ -514,6 +514,7 @@ export function projectBelgium(inventory: BelgiumInventory): BelgiumProjection {
     const sourceId = String(row.source_id);
     const inputPath = String(row.input_path);
     sourceByPath.set(inputPath, sourceId);
+    if (sourceById.has(sourceId)) continue;
     sourceById.add(sourceId);
     const toolCapture = row.status === "web_tool_capture";
     const origin = originFor("data/research/belgium-s2/source-catalogue.json", sourcesHash, i);
@@ -976,7 +977,9 @@ export function projectBelgium(inventory: BelgiumInventory): BelgiumProjection {
     needs_review_classifications: tiers.filter((row) => row.review_status === "needs_review").length,
     sources: sources.length,
     catalogue_rows: inventory.sourceCatalogue.length,
-    diagnostic_sources_excluded: inventory.sourceCatalogue.length - sources.length,
+    diagnostic_sources_excluded: inventory.sourceCatalogue.filter((row) => !isSubstantiveSource(row)).length,
+    duplicate_source_aliases:
+      inventory.sourceCatalogue.filter((row) => isSubstantiveSource(row)).length - sources.length,
     unresolved_evidence: unresolved.length,
     unresolved_event_holds: unresolvedEvents,
     unresolved_ibz_bindings: unresolvedIbz,

@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -25,7 +25,12 @@ const repoRoot = path.join(import.meta.dirname, "../..");
 describe("Belgium Atlas importer", () => {
   const tempDirs: string[] = [];
 
+  beforeEach(() => {
+    delete process.env.OBSERVATORY_FIXTURES;
+  });
+
   afterEach(() => {
+    delete process.env.OBSERVATORY_FIXTURES;
     for (const dir of tempDirs.splice(0)) {
       rmSync(dir, { recursive: true, force: true });
     }

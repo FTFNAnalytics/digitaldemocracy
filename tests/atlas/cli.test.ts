@@ -424,7 +424,7 @@ describe("atlas CLI stubs", () => {
       expect(result.stdout).toContain("belgium_selected_histories=1770");
       expect(result.stdout).toContain("belgium_prospective_events=0");
       expect(result.stdout).toContain("belgium_result_rows=9238");
-      expect(result.stdout).toContain("belgium_sources=460");
+      expect(result.stdout).toContain("belgium_sources=459");
       expect(result.stdout).toContain("belgium_unresolved=37");
 
       const master = new DatabaseSync(sqlitePath, { readOnly: true });
