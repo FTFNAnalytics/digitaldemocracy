@@ -17,7 +17,7 @@ Scopes:
 
 | `ATLAS_IMPORT_SCOPE` | What loads |
 | --- | --- |
-| `all` (default) | Albania, Andorra, Alderney, Armenia, Belgium, Bosnia and Herzegovina, Bulgaria, Denmark, then approved LatAm, then New Zealand |
+| `all` (default) | Albania, Andorra, Alderney, Armenia, Belgium, Bosnia and Herzegovina, Bulgaria, then approved LatAm, then New Zealand, then Denmark |
 | `albania` | Frozen Albania package only |
 | `andorra` | Frozen Andorra package only (7 municipal / 0 regional) |
 | `alderney` | Frozen Alderney package only (2 other / 0 regional; conditional 2026 dates) |
@@ -93,7 +93,7 @@ ATLAS_IMPORT_SCOPE=bulgaria npm run import:atlas
 ATLAS_IMPORT_SCOPE=denmark npm run import:atlas
 ```
 
-Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of a few minutes (LatAm projection + ~146k result rows + Bulgaria unpack + Denmark 25k results). Use `albania`, `andorra`, `alderney`, `armenia`, `belgium`, `bosnia`, `bulgaria`, `denmark`, or `nz` when you only need those lineages.
+Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of a few minutes (LatAm projection + ~146k result rows + Bulgaria unpack). Denmark (25k results) runs last on `all` so LatAm does not copy that lineage into staging. Use `albania`, `andorra`, `alderney`, `armenia`, `belgium`, `bosnia`, `bulgaria`, `denmark`, or `nz` when you only need those lineages.
 
 ## VPS — Bosnia scoped import only
 

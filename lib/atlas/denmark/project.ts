@@ -200,7 +200,8 @@ export function projectDenmark(inventory: DenmarkInventory): DenmarkProjection {
     sha256: item.sha256,
     byte_count: item.byte_count,
     recovery_locator: `sha256:${item.sha256}`,
-    payload_json: item.input_path.endsWith(".json") ? item.text : null,
+    payload_json:
+      item.input_path.endsWith("results.json") || !item.input_path.endsWith(".json") ? null : item.text,
   }));
 
   const registerHash = sliceHash(inventory, "data/research/denmark/office-register.json");

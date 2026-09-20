@@ -354,7 +354,7 @@ export function scanDenmarkInventory(options: {
         sha256: sha256Hex(bytes),
         byte_count: bytes.length,
         absPath: abs,
-        text: logical.endsWith(".json") ? bytes.toString("utf8") : null,
+        text: logical.endsWith(".json") && !logical.endsWith("results.json") ? bytes.toString("utf8") : null,
       };
       tracked.push(item);
       packageFilesMeta.push({ input_path: item.input_path, sha256: item.sha256, byte_count: item.byte_count });

@@ -84,14 +84,16 @@ export function importAtlasLineages(
   if (scope === "bulgaria" || scope === "all") {
     result.bulgaria = importBulgaria(options);
   }
-  if (scope === "denmark" || scope === "all") {
-    result.denmark = importDenmark(options);
-  }
   if (scope === "latam" || scope === "all") {
     result.latam = importLatAm(options);
   }
   if (scope === "nz" || scope === "all") {
     result.nz = importNewZealand(options);
+  }
+  // Denmark is last on `all`: 25k results / 103k evidence links would otherwise
+  // sit in the published DB that LatAm copies into staging.
+  if (scope === "denmark" || scope === "all") {
+    result.denmark = importDenmark(options);
   }
   return result;
 }
