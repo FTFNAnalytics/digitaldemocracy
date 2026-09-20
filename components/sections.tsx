@@ -154,25 +154,25 @@ export function Research() {
           <p className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-navy-600">
             New product area
           </p>
-          <h3 className="mt-2 text-2xl font-bold text-navy">Subnational Election Observatory</h3>
+          <h3 className="mt-2 text-2xl font-bold text-navy">Election Atlas</h3>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-            Searchable subnational election research — South America first — at{" "}
-            <span className="font-semibold text-navy">/electiondatabase</span>. The public
-            catalogue is awaiting the Latin America release package and does not invent
-            real-world races.
+            Europe-first searchable election research at{" "}
+            <span className="font-semibold text-navy">/atlas</span>. Browse loaded
+            countries and offices, or open the explorer to filter by country, tier,
+            and region.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link
-              href="/electiondatabase"
+              href="/atlas"
               className="inline-flex rounded-full bg-navy px-5 py-2.5 text-sm font-bold text-white hover:bg-navy-700"
             >
-              Open the election database
+              Open Election Atlas
             </Link>
             <Link
-              href="/atlas"
+              href="/atlas/explorer"
               className="inline-flex rounded-full border border-navy/20 px-5 py-2.5 text-sm font-bold text-navy hover:border-navy"
             >
-              Election Atlas MVP
+              Open the explorer
             </Link>
           </div>
         </div>
@@ -304,11 +304,6 @@ export function Footer() {
         <Container className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between">
           <Logo />
           <ul className="flex flex-wrap gap-4 text-sm text-white/60">
-            <li>
-              <Link href="/electiondatabase" className="hover:text-accent">
-                Election database
-              </Link>
-            </li>
             <li>
               <Link href="/atlas" className="hover:text-accent">
                 Election Atlas

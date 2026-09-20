@@ -1,6 +1,6 @@
 import { existsSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { observatoryDatasetJsonLd, organizationJsonLd } from "@/lib/json-ld";
+import { observatoryDatasetJsonLd, organizationJsonLd, websiteJsonLd } from "@/lib/json-ld";
 import {
   SITE_URL,
   STATIC_SITEMAP_PATHS,
@@ -113,6 +113,13 @@ describe("seo helpers", () => {
 });
 
 describe("json-ld", () => {
+  it("points site search at the Atlas explorer", () => {
+    const site = websiteJsonLd();
+    expect(site.potentialAction.target.urlTemplate).toBe(
+      `${SITE_URL}/atlas/explorer?q={search_term_string}`,
+    );
+  });
+
   it("does not claim research coverage is complete", () => {
     const org = organizationJsonLd();
     expect(org.url).toBe(SITE_URL);

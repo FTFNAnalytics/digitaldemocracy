@@ -15,7 +15,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-The **Subnational Election Observatory** lives at [`/electiondatabase`](/electiondatabase). It is an additional product area — the marketing homepage is unchanged. Research pages load the versioned Latin America release plus standalone country packages under `data/countries/*` (Europe and New Zealand as supplied). Research coverage remains partial. See [integration status](docs/electiondatabase-progress.md) and [country-package mapping](docs/electiondatabase-country-packages.md). The original implementation brief is preserved in [`docs/implementation-brief.md`](docs/implementation-brief.md).
+The public research product is the **Election Atlas** at [`/atlas`](/atlas) (browse UI at [`/atlas/explorer`](/atlas/explorer)). `/electiondatabase` remains as a back-compat catalogue until cutover; it is not advertised in Center nav. Research pages load the versioned Latin America release plus standalone country packages under `data/countries/*` (Europe and New Zealand as supplied). Research coverage remains partial. See [integration status](docs/electiondatabase-progress.md) and [country-package mapping](docs/electiondatabase-country-packages.md). The original implementation brief is preserved in [`docs/implementation-brief.md`](docs/implementation-brief.md).
 
 The observatory is being restructured as the **Election Atlas** at `/atlas`, with SQLite on the VPS as the master store, Europe as the first vertical, and regional calendars/indexes shipping before municipal completeness. `/electiondatabase` stays live until **cutover**, when working `/atlas` destinations exist and redirects plus SEO ship together; office and event URLs will not bounce to Atlas home. The plan is [`docs/atlas-plan.md`](docs/atlas-plan.md). Phase 1 (paths, gitignore, migrate/import, Prompt B DDL, Prompt C Albania docs, Albania `import:atlas`) is described in [`docs/atlas-phase1.md`](docs/atlas-phase1.md). Prompt B rationale, the Prompt C checklist, and Albania field map / identity / acceptance docs are in [`docs/phase1/`](docs/phase1/Phase1_DDL_Rationale.md). Prompt D LatAm/NZ continuity documentation is in [`docs/phase2/`](docs/phase2/README.md) (documentation complete; importer CI not run). There is still **no** `/atlas` route.
 
@@ -55,7 +55,7 @@ Marketing homepage with in-page anchors:
 4. **Initiatives** — four pillars on a dark band
 5. **Events** — upcoming briefings and workshops
 6. **Connect** — contact form and newsletter signup
-7. **Election database** — `/electiondatabase` observatory (see docs)
+7. **Election Atlas** — `/atlas` (explorer at `/atlas/explorer`)
 
 Observatory routes (nested under `/electiondatabase`): home, regions, countries, explorer, offices, elections, compare, calendar, polling, coverage, sources, downloads, methodology, releases, about.
 

@@ -47,7 +47,19 @@ describe("Phase 1 public routes", () => {
     expect(nextConfig).not.toMatch(/permanent:\s*true/);
     const chrome = readFileSync(path.join(repoRoot, "components/atlas/chrome.tsx"), "utf8");
     expect(chrome).toMatch(/atlasRoutes\.explorer/);
+    expect(chrome).not.toMatch(/href=["']\/electiondatabase["']/);
     const index = readFileSync(path.join(repoRoot, "app/atlas/page.tsx"), "utf8");
     expect(index).toMatch(/Open the explorer/);
+  });
+
+  it("points Center marketing nav and homepage CTAs at /atlas, not /electiondatabase", () => {
+    const content = readFileSync(path.join(repoRoot, "lib/content.ts"), "utf8");
+    expect(content).toMatch(/href:\s*["']\/atlas["']/);
+    expect(content).not.toMatch(/href:\s*["']\/electiondatabase["']/);
+    const sections = readFileSync(path.join(repoRoot, "components/sections.tsx"), "utf8");
+    expect(sections).toMatch(/href=["']\/atlas["']/);
+    expect(sections).toMatch(/href=["']\/atlas\/explorer["']/);
+    expect(sections).not.toMatch(/href=["']\/electiondatabase["']/);
+    expect(sections).not.toMatch(/Election database/);
   });
 });
