@@ -35,6 +35,7 @@ import type {
   NetherlandsEventRow,
   NetherlandsEvidenceRef,
   NetherlandsInventory,
+  NetherlandsOfficeRow,
   NetherlandsResultRow,
 } from "./inventory";
 
