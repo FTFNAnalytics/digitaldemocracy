@@ -1787,7 +1787,11 @@ describe("Phase 0 tier-classification drafts", () => {
     expect(register.filter((row) => row.office_id === "PL-320304-X")).toEqual([
       expect.objectContaining({ name: "Wójt — gm. Ostrowice", office_status: "historical" }),
     ]);
-    expect(register.some((row) => /prime.?minister|cabinet|voivode/i.test(String(row.office_type ?? "")))).toBe(false);
+    expect(
+      register.some((row) =>
+        /prime.?minister|cabinet|appointed.?voivode|wojewoda/i.test(String(row.office_type ?? "")),
+      ),
+    ).toBe(false);
     expect(readJson<unknown[]>("data/research/poland/events.json")).toHaveLength(16767);
     expect(readJson<unknown[]>("data/research/poland/proceedings.json")).toHaveLength(9773);
     expect(existsSync(path.join(repoRoot, "data/research/poland/results.json"))).toBe(false);
