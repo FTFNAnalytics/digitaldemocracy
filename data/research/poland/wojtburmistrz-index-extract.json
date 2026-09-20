@@ -1,0 +1,700 @@
+[
+  {
+    "id": 3780,
+    "start_ts": 1724562000,
+    "end_ts": 1724612400,
+    "data_level": 15,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Baruchowo",
+    "body_genitive": "Wójta Gminy Baruchowo",
+    "spreadsheet": "20240825_WBP_Baruchowo_tura_1",
+    "geography": {
+      "1": 40000,
+      "2": "kujawsko-pomorskie",
+      "3": 41800,
+      "4": "włocławski",
+      "5": 41802,
+      "6": "gm. Baruchowo"
+    },
+    "second_round_raw_hex": "08e43b10e0f896f00c18a0bde9ed0c20e0d0efed0c280ff2011d32303234303930385f5742505f4261727563686f776f5f747572615f32"
+  },
+  {
+    "id": 3777,
+    "start_ts": 1725166800,
+    "end_ts": 1725217200,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Kobylnicy",
+    "body_genitive": "Burmistrza Kobylnicy",
+    "spreadsheet": "20240901_WBP_Kobylnica_tura_1",
+    "geography": {
+      "1": 220000,
+      "2": "pomorskie",
+      "3": 221200,
+      "4": "słupski",
+      "5": 221206,
+      "6": "gm. Kobylnica"
+    },
+    "second_round_raw_hex": "08ee3b10e0e2e0f00c18a0a7b3ee0c20e0bab9ee0c280ff2011d32303234303931355f5742505f4b6f62796c6e6963615f747572615f32"
+  },
+  {
+    "id": 3836,
+    "start_ts": 1727586000,
+    "end_ts": 1727636400,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 1,
+    "body_name": "Burmistrz Miasta Brzeziny",
+    "body_genitive": "Burmistrza Miasta Brzeziny",
+    "spreadsheet": "20240929_WBP_Brzeziny_tura_2",
+    "geography": {
+      "1": 100000,
+      "2": "łódzkie",
+      "3": 102100,
+      "4": "brzeziński",
+      "5": 102101,
+      "6": "m. Brzeziny"
+    },
+    "second_round_raw_hex": "08f83b1080eff4f10c18a0fbc6ef0c20e08ecdef0c280f323108c09a0c1209c582c3b3647a6b696518a8bb0c220b62727a657a69c584736b6928aabb0c320b6d2e2042727a657a696e794002480152194275726d697374727a204d69617374612042727a657a696e795a1a4275726d697374727a61204d69617374612042727a657a696e798001f6bcd6ed0cf2011c32303234303932395f5742505f42727a657a696e795f747572615f32"
+  },
+  {
+    "id": 3813,
+    "start_ts": 1728795600,
+    "end_ts": 1728846000,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Miasta Pułtusk",
+    "body_genitive": "Burmistrza Miasta Pułtusk",
+    "spreadsheet": "20241013_WBP_Pultusk_tura_1",
+    "geography": {
+      "1": 140000,
+      "2": "mazowieckie",
+      "3": 142400,
+      "4": "pułtuski",
+      "5": 142404,
+      "6": "gm. Pułtusk"
+    }
+  },
+  {
+    "id": 3814,
+    "start_ts": 1728795600,
+    "end_ts": 1728846000,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Dziwnowa",
+    "body_genitive": "Burmistrza Dziwnowa",
+    "spreadsheet": "20241013_WBP_Dziwnow_tura_1",
+    "geography": {
+      "1": 320000,
+      "2": "zachodniopomorskie",
+      "3": 320700,
+      "4": "kamieński",
+      "5": 320701,
+      "6": "gm. Dziwnów"
+    },
+    "second_round_raw_hex": "08b03c1080979cf40c18c0dbeef10c2080eff4f10c280ff2011b32303234313032375f5742505f447a69776e6f775f747572615f32"
+  },
+  {
+    "id": 3801,
+    "start_ts": 1729400400,
+    "end_ts": 1729450800,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 1,
+    "body_name": "Burmistrz Gminy Trzebnica",
+    "body_genitive": "Burmistrza Gminy Trzebnica",
+    "spreadsheet": "20241020_WBP_Trzebnica_tura_1",
+    "geography": {
+      "1": 20000,
+      "2": "dolnośląskie",
+      "3": 22000,
+      "4": "trzebnicki",
+      "5": 22003,
+      "6": "gm. Trzebnica"
+    }
+  },
+  {
+    "id": 3852,
+    "start_ts": 1731823200,
+    "end_ts": 1731873600,
+    "data_level": 15,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Dywity",
+    "body_genitive": "Wójta Gminy Dywity",
+    "spreadsheet": "20241117_WBP_Dywity_tura_1",
+    "geography": {
+      "1": 280000,
+      "2": "warmińsko-mazurskie",
+      "3": 281400,
+      "4": "olsztyński",
+      "5": 281404,
+      "6": "gm. Dywity"
+    }
+  },
+  {
+    "id": 3865,
+    "start_ts": 1732428000,
+    "end_ts": 1732478400,
+    "data_level": 15,
+    "type": 3,
+    "subtype": 1,
+    "body_name": "Wójt Gminy Korycin",
+    "body_genitive": "Wójta Gminy Korycin",
+    "spreadsheet": "20241124_WBP_Korycin_tura_2",
+    "geography": {
+      "1": 200000,
+      "2": "podlaskie",
+      "3": 201100,
+      "4": "sokólski",
+      "5": 201103,
+      "6": "gm. Korycin"
+    },
+    "second_round_raw_hex": "08b23c1080bfc3f60c18c08396f40c2080979cf40c280f322f0880b5181209706f646c61736b69651898c6182209736f6bc3b36c736b69289ec618320b676d2e204b6f727963696e40034801521357c3b36a7420476d696e79204b6f727963696e5a1457c3b36a746120476d696e79204b6f727963696e8001e0d9e8f00cf2011b32303234313132345f5742505f4b6f727963696e5f747572615f32"
+  },
+  {
+    "id": 3871,
+    "start_ts": 1733637600,
+    "end_ts": 1733688000,
+    "data_level": 15,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Białośliwie",
+    "body_genitive": "Wójta Gminy Białośliwie",
+    "spreadsheet": "20241208_WBP_Bialosliwie_tura_1",
+    "geography": {
+      "1": 300000,
+      "2": "wielkopolskie",
+      "3": 301900,
+      "4": "pilski",
+      "5": 301902,
+      "6": "gm. Białośliwie"
+    },
+    "second_round_raw_hex": "08a63d1080e7eaf80c18c0abbdf60c2080bfc3f60c280ff2011f32303234313232325f5742505f4269616c6f736c697769655f747572615f32"
+  },
+  {
+    "id": 3971,
+    "start_ts": 1741500000,
+    "end_ts": 1741550400,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Miasta i Gminy Piotrków Kujawski",
+    "body_genitive": "Burmistrza Miasta i Gminy Piotrków Kujawski",
+    "spreadsheet": "20250309_WBP_Piotrkow_Kujawski_tura_1",
+    "geography": {
+      "1": 40000,
+      "2": "kujawsko-pomorskie",
+      "3": 41100,
+      "4": "radziejowski",
+      "5": 41105,
+      "6": "gm. Piotrków Kujawski"
+    },
+    "second_round_raw_hex": "08c63e10e090aa800d18c08dfdfd0c2080a183fe0c280ff2012532303235303332335f5742505f50696f74726b6f775f4b756a6177736b695f747572615f32"
+  },
+  {
+    "id": 3937,
+    "start_ts": 1742104800,
+    "end_ts": 1742155200,
+    "data_level": 14,
+    "type": 3,
+    "subtype": 4,
+    "body_name": "Wójt Gminy Szczawa",
+    "body_genitive": "Wójta Gminy Szczawa",
+    "spreadsheet": "20250316_WBP_Szczawa_tura_1",
+    "geography": {
+      "1": 120000,
+      "2": "małopolskie",
+      "3": 120700,
+      "4": "limanowski",
+      "5": 120713,
+      "6": "gm. Szczawa"
+    }
+  },
+  {
+    "id": 3939,
+    "start_ts": 1742104800,
+    "end_ts": 1742155200,
+    "data_level": 15,
+    "type": 3,
+    "subtype": 4,
+    "body_name": "Wójt Gminy Grabówka",
+    "body_genitive": "Wójta Gminy Grabówka",
+    "spreadsheet": "20250316_WBP_Grabowka_tura_1",
+    "geography": {
+      "1": 200000,
+      "2": "podlaskie",
+      "3": 200200,
+      "4": "białostocki",
+      "5": 200216,
+      "6": "gm. Grabówka"
+    }
+  },
+  {
+    "id": 3975,
+    "start_ts": 1742709600,
+    "end_ts": 1742760000,
+    "data_level": 15,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Wapno",
+    "body_genitive": "Wójta Gminy Wapno",
+    "spreadsheet": "20250323_WBP_Wapno_tura_1",
+    "geography": {
+      "1": 300000,
+      "2": "wielkopolskie",
+      "3": 302800,
+      "4": "wągrowiecki",
+      "5": 302806,
+      "6": "gm. Wapno"
+    },
+    "second_round_raw_hex": "08e43e10e0e4bd810d18a0a990ff0c20e0bc96ff0c280ff2011932303235303430365f5742505f5761706e6f5f747572615f32"
+  },
+  {
+    "id": 3978,
+    "start_ts": 1743310800,
+    "end_ts": 1743361200,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Mszczonowa",
+    "body_genitive": "Burmistrza Mszczonowa",
+    "spreadsheet": "20250330_WBP_Mszczonow_tura_1",
+    "geography": {
+      "1": 140000,
+      "2": "mazowieckie",
+      "3": 143800,
+      "4": "żyrardowski",
+      "5": 143802,
+      "6": "gm. Mszczonów"
+    }
+  },
+  {
+    "id": 4083,
+    "start_ts": 1754802000,
+    "end_ts": 1754852400,
+    "data_level": 15,
+    "type": 4,
+    "subtype": 2,
+    "body_name": "Prezydent Miasta Zabrze",
+    "body_genitive": "Prezydenta Miasta Zabrze",
+    "spreadsheet": "20250810_WBP_Zabrze_tura_1",
+    "geography": {
+      "1": 240000,
+      "2": "śląskie",
+      "3": 247800,
+      "4": "Zabrze",
+      "5": 247801,
+      "6": "m. Zabrze"
+    },
+    "second_round_raw_hex": "08ce4010e0ac828d0d18a0f1d48a0d20e084db8a0d280ff2011a32303235303832345f5742505f5a6162727a655f747572615f32"
+  },
+  {
+    "id": 4088,
+    "start_ts": 1754802000,
+    "end_ts": 1754852400,
+    "data_level": 15,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Łęka Opatowska",
+    "body_genitive": "Wójta Gminy Łęka Opatowska",
+    "spreadsheet": "20250810_WBP_Leka_Opatowska_tura_1",
+    "geography": {
+      "1": 300000,
+      "2": "wielkopolskie",
+      "3": 300800,
+      "4": "kępiński",
+      "5": 300804,
+      "6": "gm. Łęka Opatowska"
+    }
+  },
+  {
+    "id": 4097,
+    "start_ts": 1756616400,
+    "end_ts": 1756666800,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Miasta i Gminy Kiernozia",
+    "body_genitive": "Burmistrza Miasta i Gminy Kiernozia",
+    "spreadsheet": "20250831_WBP_Kiernozia_tura_1",
+    "geography": {
+      "1": 100000,
+      "2": "łódzkie",
+      "3": 100500,
+      "4": "łowicki",
+      "5": 100505,
+      "6": "gm. Kiernozia"
+    },
+    "second_round_raw_hex": "08e64010e0eadf8e0d18a0afb28c0d20e0c2b88c0d280ff2011d32303235303931345f5742505f4b6965726e6f7a69615f747572615f32"
+  },
+  {
+    "id": 4109,
+    "start_ts": 1756616400,
+    "end_ts": 1756666800,
+    "data_level": 15,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Lubin",
+    "body_genitive": "Wójta Gminy Lubin",
+    "spreadsheet": "20250831_WBP_Lubin_tura_1",
+    "geography": {
+      "1": 20000,
+      "2": "dolnośląskie",
+      "3": 21100,
+      "4": "lubiński",
+      "5": 21102,
+      "6": "gm. Lubin"
+    },
+    "second_round_raw_hex": "08e84010e0eadf8e0d18a0afb28c0d20e0c2b88c0d280ff2011932303235303931345f5742505f4c7562696e5f747572615f32"
+  },
+  {
+    "id": 4153,
+    "start_ts": 1760850000,
+    "end_ts": 1760900400,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Opalenicy",
+    "body_genitive": "Burmistrza Opalenicy",
+    "spreadsheet": "20251019_WBP_Opalenica_tura_1",
+    "geography": {
+      "1": 300000,
+      "2": "wielkopolskie",
+      "3": 301500,
+      "4": "nowotomyski",
+      "5": 301505,
+      "6": "gm. Opalenica"
+    }
+  },
+  {
+    "id": 4157,
+    "start_ts": 1761458400,
+    "end_ts": 1761508800,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Miasta Duszniki-Zdrój",
+    "body_genitive": "Burmistrza Miasta Duszniki-Zdrój",
+    "spreadsheet": "20251026_WBP_Duszniki-Zdroj_tura_1",
+    "geography": {
+      "1": 20000,
+      "2": "dolnośląskie",
+      "3": 20800,
+      "4": "kłodzki",
+      "5": 20801,
+      "6": "m. Duszniki-Zdrój"
+    }
+  },
+  {
+    "id": 4177,
+    "start_ts": 1764482400,
+    "end_ts": 1764532800,
+    "data_level": 14,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Bielsk Podlaski",
+    "body_genitive": "Wójta Gminy Bielsk Podlaski",
+    "spreadsheet": "20251130_WBP_Bielsk_Podlaski_tura_1",
+    "geography": {
+      "1": 200000,
+      "2": "podlaskie",
+      "3": 200300,
+      "4": "bielski",
+      "5": 200303,
+      "6": "gm. Bielsk Podlaski"
+    }
+  },
+  {
+    "id": 4193,
+    "start_ts": 1765087200,
+    "end_ts": 1765137600,
+    "data_level": 15,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Chynów",
+    "body_genitive": "Wójta Gminy Chynów",
+    "spreadsheet": "20251207_WBP_Chynow_tura_1",
+    "geography": {
+      "1": 140000,
+      "2": "mazowieckie",
+      "3": 140600,
+      "4": "grójecki",
+      "5": 140603,
+      "6": "gm. Chynów"
+    }
+  },
+  {
+    "id": 4257,
+    "start_ts": 1772344800,
+    "end_ts": 1772395200,
+    "data_level": 15,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Zduńska Wola",
+    "body_genitive": "Wójta Gminy Zduńska Wola",
+    "spreadsheet": "20260301_WBP_Zdunska_Wola_tura_1",
+    "geography": {
+      "1": 100000,
+      "2": "łódzkie",
+      "3": 101900,
+      "4": "zduńskowolski",
+      "5": 101904,
+      "6": "gm. Zduńska Wola"
+    }
+  },
+  {
+    "id": 4301,
+    "start_ts": 1774760400,
+    "end_ts": 1774810800,
+    "data_level": 14,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Wojsławice",
+    "body_genitive": "Wójta Gminy Wojsławice",
+    "spreadsheet": "20260329_WBP_Wojslawice_tura_1",
+    "geography": {
+      "1": 60000,
+      "2": "lubelskie",
+      "3": 60300,
+      "4": "chełmski",
+      "5": 60313,
+      "6": "gm. Wojsławice"
+    }
+  },
+  {
+    "id": 4314,
+    "start_ts": 1774760400,
+    "end_ts": 1774810800,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Gminy i Miasta Szadek",
+    "body_genitive": "Burmistrza Gminy i Miasta Szadek",
+    "spreadsheet": "20260329_WBP_Szadek_tura_1",
+    "geography": {
+      "1": 100000,
+      "2": "łódzkie",
+      "3": 101900,
+      "4": "zduńskowolski",
+      "5": 101902,
+      "6": "gm. Szadek"
+    }
+  },
+  {
+    "id": 4328,
+    "start_ts": 1777179600,
+    "end_ts": 1777230000,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Miasta i Gminy Pińczów",
+    "body_genitive": "Burmistrza Miasta i Gminy Pińczów",
+    "spreadsheet": "20260426_WBP_Pinczow_tura_1",
+    "geography": {
+      "1": 260000,
+      "2": "świętokrzyskie",
+      "3": 260800,
+      "4": "pińczowski",
+      "5": 260804,
+      "6": "gm. Pińczów"
+    },
+    "second_round_raw_hex": "08ea4410e0feada20d18a0c380a00d20e0d686a00d280ff2011b32303236303531305f5742505f50696e637a6f775f747572615f32"
+  },
+  {
+    "id": 4388,
+    "start_ts": 1781413200,
+    "end_ts": 1781463600,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Miasta i Gminy Koźmin Wielkopolski",
+    "body_genitive": "Burmistrza Miasta i Gminy Koźmin Wielkopolski",
+    "spreadsheet": "20260614_WBP_Kozmin_Wielkopolski_tura_1",
+    "geography": {
+      "1": 300000,
+      "2": "wielkopolskie",
+      "3": 301200,
+      "4": "krotoszyński",
+      "5": 301203,
+      "6": "gm. Koźmin Wielkopolski"
+    }
+  },
+  {
+    "id": 4441,
+    "start_ts": 1785042000,
+    "end_ts": 1785092400,
+    "data_level": 15,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Raciążek",
+    "body_genitive": "Wójta Gminy Raciążek",
+    "spreadsheet": "20260726_WBP_Raciazek_tura_1",
+    "geography": {
+      "1": 40000,
+      "2": "kujawsko-pomorskie",
+      "3": 40100,
+      "4": "aleksandrowski",
+      "5": 40107,
+      "6": "gm. Raciążek"
+    },
+    "second_round_raw_hex": "08fc4510e0e0eda90d18a0a5c0a70d20e0b8c6a70d280ff2011c32303236303830395f5742505f52616369617a656b5f747572615f32"
+  },
+  {
+    "id": 4445,
+    "start_ts": 1787461200,
+    "end_ts": 1787511600,
+    "data_level": 15,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Lniano",
+    "body_genitive": "Wójta Gminy Lniano",
+    "spreadsheet": "20260823_WBP_Lniano_tura_1",
+    "geography": {
+      "1": 40000,
+      "2": "kujawsko-pomorskie",
+      "3": 41400,
+      "4": "świecki",
+      "5": 41405,
+      "6": "gm. Lniano"
+    }
+  },
+  {
+    "id": 4453,
+    "start_ts": 1788670800,
+    "end_ts": 1788721200,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Miasta i Gminy Sobótka",
+    "body_genitive": "Burmistrza Miasta i Gminy Sobótka",
+    "spreadsheet": "20260906_WBP_Sobotka_tura_1",
+    "geography": {
+      "1": 20000,
+      "2": "dolnośląskie",
+      "3": 22300,
+      "4": "wrocławski",
+      "5": 22307,
+      "6": "gm. Sobótka"
+    },
+    "second_round_raw_hex": "08bc461088d2ffaa0d18a0a1fbaa0d20e0b481ab0d2808f2011b32303236303932305f5742505f536f626f746b615f747572615f32"
+  },
+  {
+    "id": 4476,
+    "start_ts": 1789275600,
+    "end_ts": 1789326000,
+    "data_level": 15,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Tyczyna",
+    "body_genitive": "Burmistrza Tyczyna",
+    "spreadsheet": "20260913_WBP_Tyczyn_tura_1",
+    "geography": {
+      "1": 180000,
+      "2": "podkarpackie",
+      "3": 181600,
+      "4": "rzeszowski",
+      "5": 181614,
+      "6": "gm. Tyczyn"
+    },
+    "second_round_raw_hex": "08dc461088d2ffaa0d18a08bc5ab0d20e09ecbab0df2011a32303236303932375f5742505f5479637a796e5f747572615f32"
+  },
+  {
+    "id": 4471,
+    "start_ts": 1790485200,
+    "end_ts": 1790535600,
+    "data_level": 7,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Rokietnica",
+    "body_genitive": "Wójta Gminy Rokietnica",
+    "spreadsheet": "20260927_WBP_Rokietnica_tura_1",
+    "geography": {
+      "1": 300000,
+      "2": "wielkopolskie",
+      "3": 302100,
+      "4": "poznański",
+      "5": 302113,
+      "6": "gm. Rokietnica"
+    }
+  },
+  {
+    "id": 4485,
+    "start_ts": 1790485200,
+    "end_ts": 1790535600,
+    "data_level": 7,
+    "type": 4,
+    "subtype": 2,
+    "body_name": "Prezydent Miasta Krakowa",
+    "body_genitive": "Prezydenta Miasta Krakowa",
+    "spreadsheet": "20260927_WBP_Krakow_tura_1",
+    "geography": {
+      "1": 120000,
+      "2": "małopolskie",
+      "3": 126100,
+      "4": "Kraków",
+      "5": 126101,
+      "6": "m. Kraków"
+    }
+  },
+  {
+    "id": 4500,
+    "start_ts": 1791694800,
+    "end_ts": 1791745200,
+    "data_level": 6,
+    "type": 2,
+    "subtype": 2,
+    "body_name": "Burmistrz Miasta Kamionka",
+    "body_genitive": "Burmistrza Miasta Kamionka",
+    "spreadsheet": "20261011_WBP_Kamionka_tura_1",
+    "geography": {
+      "1": 60000,
+      "2": "lubelskie",
+      "3": 60800,
+      "4": "lubartowski",
+      "5": 60805,
+      "6": "gm. Kamionka"
+    }
+  },
+  {
+    "id": 4502,
+    "start_ts": 1792908000,
+    "end_ts": 1792958400,
+    "data_level": 3,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Górowo Iławeckie",
+    "body_genitive": "Wójta Gminy Górowo Iławeckie",
+    "spreadsheet": "20261025_WBP_Gorowo_Ilaweckie_tura_1",
+    "geography": {
+      "1": 280000,
+      "2": "warmińsko-mazurskie",
+      "3": 280100,
+      "4": "bartoszycki",
+      "5": 280105,
+      "6": "gm. Górowo Iławeckie"
+    }
+  },
+  {
+    "id": 4531,
+    "start_ts": 1794117600,
+    "end_ts": 1794168000,
+    "type": 3,
+    "subtype": 2,
+    "body_name": "Wójt Gminy Niedźwiada",
+    "body_genitive": "Wójta Gminy Niedźwiada",
+    "spreadsheet": "20261108_WBP_Niedzwiada_tura_1",
+    "geography": {
+      "1": 60000,
+      "2": "lubelskie",
+      "3": 60800,
+      "4": "lubartowski",
+      "5": 60809,
+      "6": "gm. Niedźwiada"
+    }
+  }
+]

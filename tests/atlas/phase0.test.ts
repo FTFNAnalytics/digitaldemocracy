@@ -1683,6 +1683,184 @@ describe("Phase 0 tier-classification drafts", () => {
       tier: "municipal",
     });
   });
+
+  it("keeps Poland Prompt AC 5310 current / 2 historical accepted with named holds", () => {
+    const poland = readJson<
+      TierFile & {
+        production_accepted?: boolean;
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        justin_approval?: {
+          accepted?: boolean;
+          current_offices?: number;
+          historical_offices?: number;
+          events?: number;
+          results?: number;
+          scope?: string;
+          holds?: string[];
+        };
+        notes?: Array<{ review_token?: string }>;
+        source_register: { path?: string; input_path?: string; sha256: string; bytes?: number };
+      }
+    >("schemas/atlas/tiers/poland.json");
+    expect(poland.status).toBe("approved");
+    expect(poland.production_accepted).toBe(true);
+    expect(poland.country_slug).toBe("poland");
+    expect(poland.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-20",
+      timezone: "America/Edmonton",
+    });
+    expect(poland.approval?.notes).toMatch(/5310 current \+ 2 historical/i);
+    expect(poland.approval?.notes).toMatch(/named holds/i);
+    expect(poland.approval?.notes).toMatch(/PL-POWIAT-TIER/);
+    expect(poland.approval?.notes).toMatch(/do not reclassify/i);
+    expect(poland.approval?.notes).toMatch(/Results omitted from land slim/);
+    expect(poland.predecessor_draft_sha256).toBe(
+      "bd11a49634b12aa699e0ead91aff64a68e257efe6fc3fc542c44818a2167f2cd",
+    );
+    expect(sha256("schemas/atlas/tiers/poland.json")).toBe(
+      "8316357779f24b8f0ffe58640ef6d32370dff2c2e4f7e7dcf7e4ee23440e6d14",
+    );
+    expect(poland.classifications).toHaveLength(5312);
+    expect(poland.counts_by_proposed_tier).toEqual({
+      national: 3,
+      regional: 330,
+      municipal: 4960,
+      other: 19,
+      unknown: 0,
+    });
+    expect(poland.justin_approval).toMatchObject({
+      accepted: true,
+      current_offices: 5310,
+      historical_offices: 2,
+      events: 16767,
+      results: 641493,
+      scope: "all_draft_offices_with_named_holds",
+      holds: [
+        "PL-HISTORIC-TERRITORIES",
+        "PL-1990-1999-REFORMS",
+        "PL-CYCLE-LEGAL-STATUS",
+        "PL-2019-SHARE-UNIT",
+        "PL-SPECIAL-RETURN-DETAIL",
+        "PL-WARSAW-AUXILIARY",
+        "PL-POWIAT-TIER",
+        "PL-EP-SCOPE",
+        "PL-TITLE-AND-BOUNDARY-CHANGES",
+        "PL-OLDER-NATIONAL-HISTORY",
+        "PL-MARGINS-AND-PARTIES",
+        "PL-NEXT-DATES",
+      ],
+    });
+    expect(poland.classifications.filter((row) => row.human_review_required === true)).toHaveLength(333);
+    expect(poland.classifications.filter((row) => row.tier === "municipal")).toHaveLength(4960);
+    expect(poland.classifications.filter((row) => row.tier === "regional")).toHaveLength(330);
+    expect(poland.classifications.filter((row) => row.tier === "national")).toHaveLength(3);
+    expect(poland.classifications.filter((row) => row.tier === "other")).toHaveLength(19);
+    const register = readJson<Array<{ office_id: string; office_status?: string; office_type?: string; name?: string }>>(
+      "data/research/poland/office-register.json",
+    );
+    expect(register.filter((row) => row.office_status === "current")).toHaveLength(5310);
+    expect(register.filter((row) => row.office_status === "historical")).toHaveLength(2);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "municipal_council"),
+    ).toHaveLength(2479);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "direct_municipal_executive"),
+    ).toHaveLength(2479);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "voivodeship_sejmik"),
+    ).toHaveLength(16);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "county_council"),
+    ).toHaveLength(314);
+    expect(register.filter((row) => row.office_id === "PL-320304-C")).toEqual([
+      expect.objectContaining({ name: "Rada gminy — Ostrowice, gm.", office_status: "historical" }),
+    ]);
+    expect(register.filter((row) => row.office_id === "PL-320304-X")).toEqual([
+      expect.objectContaining({ name: "Wójt — gm. Ostrowice", office_status: "historical" }),
+    ]);
+    expect(register.some((row) => /prime.?minister|cabinet|voivode/i.test(String(row.office_type ?? "")))).toBe(false);
+    expect(readJson<unknown[]>("data/research/poland/events.json")).toHaveLength(16767);
+    expect(readJson<unknown[]>("data/research/poland/proceedings.json")).toHaveLength(9773);
+    expect(existsSync(path.join(repoRoot, "data/research/poland/results.json"))).toBe(false);
+    const gaps = readJson<Array<{ original_token?: string; status?: string }>>(
+      "data/research/poland/research-gaps.json",
+    );
+    expect(gaps.map((row) => row.original_token)).toEqual([
+      "PL-HISTORIC-TERRITORIES",
+      "PL-1990-1999-REFORMS",
+      "PL-CYCLE-LEGAL-STATUS",
+      "PL-2019-SHARE-UNIT",
+      "PL-SPECIAL-RETURN-DETAIL",
+      "PL-WARSAW-AUXILIARY",
+      "PL-POWIAT-TIER",
+      "PL-EP-SCOPE",
+      "PL-TITLE-AND-BOUNDARY-CHANGES",
+      "PL-OLDER-NATIONAL-HISTORY",
+      "PL-MARGINS-AND-PARTIES",
+      "PL-NEXT-DATES",
+    ]);
+    expect(gaps.every((row) => row.status === "open")).toBe(true);
+    expectExactIds(
+      poland,
+      register.map((row) => row.office_id),
+    );
+    expect(poland.source_register.sha256).toBe(
+      "f7b6061fc348dcfe2184cf39b6866aef37debea8f2f8f7add956b5a76b6f9f4a",
+    );
+    expect(poland.source_register.sha256).toBe(sha256("data/research/poland/office-register.json"));
+    expect(poland.source_register.input_path).toBe("data/research/poland/office-register.json");
+    expect(poland.notes?.map((note) => note.review_token)).toEqual([
+      "PL-HISTORIC-TERRITORIES",
+      "PL-1990-1999-REFORMS",
+      "PL-CYCLE-LEGAL-STATUS",
+      "PL-2019-SHARE-UNIT",
+      "PL-SPECIAL-RETURN-DETAIL",
+      "PL-WARSAW-AUXILIARY",
+      "PL-POWIAT-TIER",
+      "PL-EP-SCOPE",
+      "PL-TITLE-AND-BOUNDARY-CHANGES",
+      "PL-OLDER-NATIONAL-HISTORY",
+      "PL-MARGINS-AND-PARTIES",
+      "PL-NEXT-DATES",
+    ]);
+    expect(poland.classifications.find((row) => row.office_id === "PL-SEJM")).toMatchObject({
+      tier: "national",
+    });
+    expect(poland.classifications.find((row) => row.office_id === "PL-SENAT")).toMatchObject({
+      tier: "national",
+    });
+    expect(poland.classifications.find((row) => row.office_id === "PL-PRESIDENT")).toMatchObject({
+      tier: "national",
+    });
+    expect(poland.classifications.find((row) => row.office_id === "PL-EP")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+    expect(poland.classifications.find((row) => row.office_id === "PL-020000-V")).toMatchObject({
+      tier: "regional",
+      human_review_required: false,
+    });
+    expect(poland.classifications.find((row) => row.office_id === "PL-020100-P")).toMatchObject({
+      tier: "regional",
+      human_review_required: true,
+    });
+    expect(poland.classifications.find((row) => row.office_id === "PL-320304-C")).toMatchObject({
+      tier: "municipal",
+    });
+    expect(poland.classifications.find((row) => row.office_id === "PL-146502-D")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+  });
 });
 
 describe("Phase 0 inventory artifacts", () => {
