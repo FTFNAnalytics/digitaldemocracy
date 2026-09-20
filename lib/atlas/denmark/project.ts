@@ -30,7 +30,6 @@ import type {
   DenmarkEventRow,
   DenmarkEvidenceRef,
   DenmarkInventory,
-  DenmarkResultRow,
 } from "./inventory";
 
 export type SqlRow = Record<string, unknown>;
