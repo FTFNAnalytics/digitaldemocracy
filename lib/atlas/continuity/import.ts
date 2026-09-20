@@ -6,6 +6,7 @@ import { importAustria, type ImportAustriaResult } from "../austria/import";
 import { importBelgium, type ImportBelgiumResult } from "../belgium/import";
 import { importBosnia, type ImportBosniaResult } from "../bosnia-and-herzegovina/import";
 import { importBulgaria, type ImportBulgariaResult } from "../bulgaria/import";
+import { importDenmark, type ImportDenmarkResult } from "../denmark/import";
 import { importNetherlands, type ImportNetherlandsResult } from "../netherlands/import";
 import { importSwitzerland, type ImportSwitzerlandResult } from "../switzerland/import";
 import { importLatAm } from "./latam";
@@ -21,6 +22,7 @@ export type ImportScope =
   | "belgium"
   | "bosnia"
   | "bulgaria"
+  | "denmark"
   | "netherlands"
   | "switzerland"
   | "latam"
@@ -38,6 +40,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     raw === "belgium" ||
     raw === "bosnia" ||
     raw === "bulgaria" ||
+    raw === "denmark" ||
     raw === "netherlands" ||
     raw === "switzerland" ||
     raw === "latam" ||
@@ -47,7 +50,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     return raw;
   }
   throw new Error(
-    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|netherlands|switzerland|latam|nz|all`,
+    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|denmark|netherlands|switzerland|latam|nz|all`,
   );
 }
 
@@ -60,6 +63,7 @@ export type MultiLineageImportResult = {
   belgium?: ImportBelgiumResult;
   bosnia?: ImportBosniaResult;
   bulgaria?: ImportBulgariaResult;
+  denmark?: ImportDenmarkResult;
   netherlands?: ImportNetherlandsResult;
   switzerland?: ImportSwitzerlandResult;
   latam?: ContinuityImportResult;
@@ -106,6 +110,11 @@ export function importAtlasLineages(
   }
   if (scope === "nz" || scope === "all") {
     result.nz = importNewZealand(options);
+  }
+  // Denmark is last on `all`: 25k results / 103k evidence links would otherwise
+  // sit in the published DB that LatAm copies into staging.
+  if (scope === "denmark" || scope === "all") {
+    result.denmark = importDenmark(options);
   }
   return result;
 }
