@@ -8,7 +8,7 @@ export default defineConfig({
     include: ["tests/**/*.test.ts"],
     testTimeout: 600_000,
     hookTimeout: 600_000,
-    teardownTimeout: 60_000,
+    teardownTimeout: 600_000,
     maxWorkers: 1,
   },
   resolve: {

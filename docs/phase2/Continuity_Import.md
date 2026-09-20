@@ -65,7 +65,7 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 
 ## CI
 
-`tests/atlas/continuity-import.test.ts` covers the approved-pack gate, Albania-only import, Albania+NZ serial publication, Albania+Andorra serial publication, Albania+Alderney serial publication, Albania+Armenia serial publication, Albania+Austria serial publication, Albania+Belgium serial publication, Albania+Bosnia serial publication, Albania+Bulgaria serial publication, Albania+Netherlands serial publication, and Albania+Denmark serial publication.
+`tests/atlas/continuity-import.test.ts` covers the approved-pack gate, Albania-only import, Albania+NZ serial publication, Albania+Andorra serial publication, Albania+Alderney serial publication, Albania+Armenia serial publication, Albania+Austria serial publication, Albania+Belgium serial publication, Albania+Bosnia serial publication, Albania+Bulgaria serial publication, and Albania+Netherlands serial publication. Albania+Denmark serial publication lives in `tests/atlas/denmark-import.test.ts` so the continuity file stays under Vitest’s 60s worker RPC timeout.
 
 `npm run test:atlas-import` (wired in GitHub CI after `npm test`) builds a temp SQLite and asserts the full approved set:
 
