@@ -1,0 +1,568 @@
+[
+  {
+    "title": "Out-of-window Helsinki council retained",
+    "source_locator": "data/research/finland/office-register.json#/70",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/municipalities2026.json",
+        "sha256": "a222c902740e35ac223ee7240cf5c99a240f86d56325f1cfaefe2d36acbeed2e",
+        "json_pointer": "/33",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/finland/sources/municipal-rules.html",
+        "sha256": "6bdb3064a2b8ec1514ee5655dbb12f77ebdcf5a6e3b4f17cc18ed6790ec32bf9",
+        "json_pointer": null,
+        "locator": "Municipal councils: 292 continental and 16 Åland municipalities"
+      },
+      {
+        "input_path": "data/research/finland/sources/county-rules.html",
+        "sha256": "8df9f5808270cd95a4403afc73658ad5458edc9bdb0ed93b96493783e6fafb48",
+        "json_pointer": null,
+        "locator": "The City of Helsinki is not a wellbeing services county"
+      }
+    ],
+    "expected_atlas_projection": {
+      "office_id": "FI-M091-C",
+      "tier": "municipal",
+      "next_date": {
+        "value": "2029-04-15",
+        "precision": "day",
+        "certainty": "statutory",
+        "evidence": [
+          {
+            "input_path": "data/research/finland/sources/calendar.html",
+            "sha256": "c108e0fbec18df99a3a8ff5c74a1234c4db0a0c61629e63942003ccc75f13c74",
+            "json_pointer": null,
+            "locator": "2029: County elections and municipal elections 15.4.2029"
+          }
+        ]
+      },
+      "office_status": "current"
+    },
+    "assertion": "2029 next date never removes current office or histories."
+  },
+  {
+    "title": "Combined responsibilities do not duplicate a ballot",
+    "source_locator": "data/research/finland/office-register.json#/70",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/municipalities2026.json",
+        "sha256": "a222c902740e35ac223ee7240cf5c99a240f86d56325f1cfaefe2d36acbeed2e",
+        "json_pointer": "/33",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/finland/sources/municipal-rules.html",
+        "sha256": "6bdb3064a2b8ec1514ee5655dbb12f77ebdcf5a6e3b4f17cc18ed6790ec32bf9",
+        "json_pointer": null,
+        "locator": "Municipal councils: 292 continental and 16 Åland municipalities"
+      },
+      {
+        "input_path": "data/research/finland/sources/county-rules.html",
+        "sha256": "8df9f5808270cd95a4403afc73658ad5458edc9bdb0ed93b96493783e6fafb48",
+        "json_pointer": null,
+        "locator": "The City of Helsinki is not a wellbeing services county"
+      }
+    ],
+    "expected_atlas_projection": {
+      "municipal_office_count": 1,
+      "Helsinki_county_office_count": 0
+    },
+    "assertion": "Follow ministry exception; no duplicate regional office."
+  },
+  {
+    "title": "Historical abolished council retained",
+    "source_locator": "data/research/finland/office-register.json#/24",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/kvaa-1976-data.json",
+        "sha256": "a4bfd4f36b9bc6e8704240a8f69fc7bb9fe0d67b6c8369ab548bff6133983b2e",
+        "json_pointer": "/value/23544",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "1976",
+          "kunta_128_20250101": "102004",
+          "puolue_6_20250103": "SSS",
+          "contentscode": "kvaa-aanet_yht"
+        },
+        "original_value": 3085,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/finland/sources/kvaa-1976-data.json",
+        "sha256": "a4bfd4f36b9bc6e8704240a8f69fc7bb9fe0d67b6c8369ab548bff6133983b2e",
+        "json_pointer": "/dimension/kunta_128_20250101/category/label/102004",
+        "locator": null
+      }
+    ],
+    "expected_atlas_projection": {
+      "office_id": "FI-M004-C",
+      "office_status": "historical",
+      "record_state": "active",
+      "successor_office_id": null
+    },
+    "assertion": "Absence from 2026 register is not a guessed successor or precise abolition day."
+  },
+  {
+    "title": "2022 county election is not a 2023 election",
+    "source_locator": "data/research/finland/events.json#/1923",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/alvaa-14y4-data.json",
+        "sha256": "5397d82ccda591cf7470bc1fa2ae7a10ca706bcbe8575958dbf46494fc1c8d83",
+        "json_pointer": "/value/38",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2022",
+          "sukupuoli_9_20180101": "SSS",
+          "puolue_28_20250101": "SSS",
+          "kunta_121_20250101": "200000",
+          "contentscode": "alvaa-aanet_yht"
+        },
+        "original_value": 26721,
+        "original_status": null
+      }
+    ],
+    "expected_atlas_projection": {
+      "event_id": "event-5e6e06781e22744e1a58992e",
+      "history_key": "FI-HVA20-C::2022::2022::ordinary",
+      "date": {
+        "value": "2022",
+        "precision": "year",
+        "certainty": "called"
+      },
+      "tier": "regional"
+    },
+    "assertion": "Services transition does not create another contest or predecessor identity."
+  },
+  {
+    "title": "Åland seat-only history stays",
+    "source_locator": "data/research/finland/results.json#/12149",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/asub-VA006-data.json",
+        "sha256": "ca6fc255079a628e2ee9e4edb7855b034794ec4118df99dadd6dd7cacf2131e5",
+        "json_pointer": "/value/215",
+        "locator": null,
+        "dimensions": {
+          "år": "1991",
+          "kommun": "035",
+          "kön": "0",
+          "parti": "Utan grupp"
+        },
+        "original_value": 11,
+        "original_status": null
+      }
+    ],
+    "expected_atlas_projection": {
+      "office_id": "FI-M035-C",
+      "result_row_id": "result-53e5819d5429236bfe2f3534",
+      "votes": null,
+      "votes_status": "unknown",
+      "seats": 11,
+      "seats_status": "recorded"
+    },
+    "assertion": "1991 seat history remains even without vote table; no zero votes invented."
+  },
+  {
+    "title": "Åland actual cycle year, no shifted mainland duplicate",
+    "source_locator": "data/research/finland/events.json#/1477",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/asub-VA007-data.json",
+        "sha256": "5aa83b5e422f1f6b88507178de80a26f7c4c782f66bf20ee92ca5294b0356ac9",
+        "json_pointer": "/value/121",
+        "locator": null,
+        "dimensions": {
+          "år": "2023",
+          "parti": "totalt",
+          "kön": "0",
+          "kommun": "MK21"
+        },
+        "original_value": 30,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/finland/sources/asub-VA012-data.json",
+        "sha256": "ec573ee3b82b623b1dfa7e17ce32f6ea789535aa04325e4ebd8bbf9c78b26a8b",
+        "json_pointer": "/value/187",
+        "locator": null,
+        "dimensions": {
+          "år": "2023",
+          "kandidatens kön": "0",
+          "politisk gruppering": "Totalt"
+        },
+        "original_value": 14044,
+        "original_status": null
+      }
+    ],
+    "expected_atlas_projection": {
+      "office_id": "FI-AX-LAGTING",
+      "date": {
+        "value": "2023",
+        "precision": "year",
+        "certainty": "called"
+      },
+      "tier": "regional"
+    },
+    "assertion": "Use ÅSUB cycle; ignore overlapping mainland shifted-year series for normalized Åland history."
+  },
+  {
+    "title": "Reported zero seat stays zero",
+    "source_locator": "data/research/finland/results.json#/10",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/alvaa-14y4-data.json",
+        "sha256": "5397d82ccda591cf7470bc1fa2ae7a10ca706bcbe8575958dbf46494fc1c8d83",
+        "json_pointer": "/value/1366",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2025",
+          "sukupuoli_9_20180101": "SSS",
+          "puolue_28_20250101": "133",
+          "kunta_121_20250101": "120000",
+          "contentscode": "alvaa-aanet_yht"
+        },
+        "original_value": 163,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/finland/sources/alvaa-14y4-data.json",
+        "sha256": "5397d82ccda591cf7470bc1fa2ae7a10ca706bcbe8575958dbf46494fc1c8d83",
+        "json_pointer": "/value/1367",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2025",
+          "sukupuoli_9_20180101": "SSS",
+          "puolue_28_20250101": "133",
+          "kunta_121_20250101": "120000",
+          "contentscode": "alvaa-osuus_aanista"
+        },
+        "original_value": 0.3,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/finland/sources/alvaa-153i-data.json",
+        "sha256": "6e1fbac715f4863820df0270cb5766db69f0028ee91c7ff6ccb02219efae456e",
+        "json_pointer": "/value/1432",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2025",
+          "puolue_28_20250101": "133",
+          "sukupuoli_9_20180101": "SSS",
+          "alue_23_20250101": "HVA12",
+          "contentscode": "alvaa-lkm_val"
+        },
+        "original_value": 0,
+        "original_status": null
+      }
+    ],
+    "expected_atlas_projection": {
+      "result_row_id": "result-000e727b9719a724b67b828c",
+      "votes": 163,
+      "votes_status": "recorded",
+      "seats": 0,
+      "seats_status": "zero"
+    },
+    "assertion": "Source zero is not missing."
+  },
+  {
+    "title": "Missing votes stay NULL",
+    "source_locator": "data/research/finland/results.json#/714",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/asub-VA006-data.json",
+        "sha256": "ca6fc255079a628e2ee9e4edb7855b034794ec4118df99dadd6dd7cacf2131e5",
+        "json_pointer": "/value/217",
+        "locator": null,
+        "dimensions": {
+          "år": "1991",
+          "kommun": "043",
+          "kön": "0",
+          "parti": "C"
+        },
+        "original_value": 6,
+        "original_status": null
+      }
+    ],
+    "expected_atlas_projection": {
+      "result_row_id": "result-050e95b0379c60ebc0a8c3ea",
+      "votes": null,
+      "votes_status": "unknown",
+      "seats": 6
+    },
+    "assertion": "Positive seats do not authorize inferred vote totals."
+  },
+  {
+    "title": "Partial historical date keeps year precision",
+    "source_locator": "data/research/finland/events.json#/4489",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/evaa-13sw-data.json",
+        "sha256": "84937f0a8a33fa6813ec72c1166dd29f0885895d85b11158b3f99375aec3d368",
+        "json_pointer": "/value/0",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "1983",
+          "sukupuoli_9_20180101": "SSS",
+          "puolue_19_20230101": "SSS",
+          "kunta_109_20230101": "SSS",
+          "contentscode": "evaa_aanet"
+        },
+        "original_value": 2979694,
+        "original_status": null
+      }
+    ],
+    "expected_atlas_projection": {
+      "event_id": "event-dc3b3d132a17466e4d3966ee",
+      "research_date": {
+        "label": "1983",
+        "precision": "year",
+        "certainty": "called",
+        "year": 1983,
+        "month": null,
+        "day": null
+      }
+    },
+    "assertion": "No January 1 placeholder or guessed polling day."
+  },
+  {
+    "title": "Presidential rounds form one cycle",
+    "source_locator": "data/research/finland/events.json#/1339",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/pvaa-14db-data.json",
+        "sha256": "5791328c3c3a713f176c516b3f13056da7527783e406bae01f563b69da52a9b8",
+        "json_pointer": "/value/912",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2024",
+          "vaaliehdokas_19_20231121": "24",
+          "kunta_110_20231009": "SSS",
+          "vaalitiedot_35_20240101": "1",
+          "contentscode": "pvaa_aanet"
+        },
+        "original_value": 836712,
+        "original_status": null
+      }
+    ],
+    "expected_atlas_projection": {
+      "event_count": 1,
+      "proceedings": [
+        {
+          "proceeding_id": "proceeding-ffc7d7d7db7b7aec348f5a22",
+          "kind": "first_round",
+          "sequence_no": 1
+        },
+        {
+          "proceeding_id": "proceeding-b29c9ea03621a332cbf5fade",
+          "kind": "runoff",
+          "sequence_no": 2
+        }
+      ]
+    },
+    "assertion": "Do not sum rounds or create two ordinary histories. Totals 98/99 are not candidates."
+  },
+  {
+    "title": "No invented 2018 runoff",
+    "source_locator": "data/research/finland/events.json#/3601",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/pvaa-14db-data.json",
+        "sha256": "5791328c3c3a713f176c516b3f13056da7527783e406bae01f563b69da52a9b8",
+        "json_pointer": "/value/664",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2018",
+          "vaaliehdokas_19_20231121": "03",
+          "kunta_110_20231009": "SSS",
+          "vaalitiedot_35_20240101": "1",
+          "contentscode": "pvaa_aanet"
+        },
+        "original_value": 185305,
+        "original_status": null
+      }
+    ],
+    "expected_atlas_projection": {
+      "proceeding_count": 1
+    },
+    "assertion": "Only positively observed first-round candidate values create a proceeding."
+  },
+  {
+    "title": "EP delegation and raw candidate detail do not duplicate results",
+    "source_locator": "data/research/finland/events.json#/4932",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/euvaa-14gv-data.json",
+        "sha256": "c22ea21dd204ab3759bcdcc3b13d2d7ea101d943047a5d2aef92642de298ca5a",
+        "json_pointer": "/value/408",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2024",
+          "sukupuoli_25_20190101": "SSS",
+          "kunta_117_20240101": "00000",
+          "puolue_22_20240101": "00",
+          "contentscode": "euvaa_aanet"
+        },
+        "original_value": 1829249,
+        "original_status": null
+      }
+    ],
+    "expected_atlas_projection": {
+      "office_id": "FI-EP",
+      "tier": "other",
+      "candidate_detail_normalization": "deferred",
+      "next_date": "2029-06-10"
+    },
+    "assertion": "14gv party vector once; 14h8 retained-only. No derived complete seat total."
+  },
+  {
+    "title": "Unresolved token differs from broken resolved source",
+    "source_locator": "data/research/finland/research-gaps.json#/0",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/kvaa-14z7-meta.json",
+        "sha256": "0f65cda16a3cd856cb7c8ea457edae2df7f231c2da02dd41c431aad6924d9478",
+        "json_pointer": "/title",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/finland/sources/municipalities2026.json",
+        "sha256": "a222c902740e35ac223ee7240cf5c99a240f86d56325f1cfaefe2d36acbeed2e",
+        "json_pointer": "/0/classification",
+        "locator": null
+      }
+    ],
+    "expected_atlas_projection": {
+      "unresolved_evidence": {
+        "record_key": "rec-fe25faeca21109343d1db9279e2e83d6755fcb3ebb4945fc35d06341eaa8ec6a",
+        "original_token": "FI-HISTORIC-MERGERS"
+      },
+      "invented_source_id": null
+    },
+    "assertion": "Future CI mutation deleting an actual resolved source FK must fail closed, not be downgraded to a research gap."
+  },
+  {
+    "title": "Unchanged re-import fingerprint",
+    "source_locator": "docs/phase1/finland/Finland_Input_Inventory.json#/hash_inputs",
+    "source_evidence": [],
+    "expected_atlas_projection": {
+      "fingerprint": "f4b424e47bb6101959d9a2ae4e1e15f91b7200d4a5554e0e8a3a4e86fe527d5a",
+      "release_id": "country-package-finland--sha256-f4b424e47bb6101959d9a2ae4e1e15f91b7200d4a5554e0e8a3a4e86fe527d5a",
+      "attempt_id": "fresh runtime UUID each attempt"
+    },
+    "assertion": "Future execution Not run: unchanged effective inputs retain release and every documentary ID."
+  },
+  {
+    "title": "Incomplete refresh retains omitted office",
+    "source_locator": "data/research/finland/office-register.json#/43",
+    "source_evidence": [],
+    "expected_atlas_projection": {
+      "omitted_office": "FI-M049-C",
+      "expected": "retain office/history/evidence dependencies in effective inputs"
+    },
+    "assertion": "Future execution Not run. An incomplete capture is not explicit withdrawal."
+  },
+  {
+    "title": "Fixture exclusion",
+    "source_locator": "data/research/finland/office-register.json#/70",
+    "source_evidence": [],
+    "expected_atlas_projection": {
+      "isolated_CI_mutation": "fixture marker or FIX-/FXT- identifier in a copy",
+      "expected": "reject before publication",
+      "applied_changes": 0
+    },
+    "assertion": "No fixture row is distributed; future importer gate Not run."
+  },
+  {
+    "title": "Poison FK rollback",
+    "source_locator": "data/research/finland/events.json#/0",
+    "source_evidence": [],
+    "expected_atlas_projection": {
+      "isolated_CI_mutation": "replace event office FK with a nonexistent key",
+      "expected": "rollback; last good publication served; failed attempt durable",
+      "applied_changes": 0
+    },
+    "assertion": "Future SQLite/filesystem execution Not run; no poison row authored."
+  },
+  {
+    "title": "Other lineages retain their own citations",
+    "source_locator": "docs/phase1/finland/Finland_Input_Inventory.json#/lineage_id",
+    "source_evidence": [],
+    "expected_atlas_projection": {
+      "attempted_lineage": "country-package-finland",
+      "unmodified_lineages": [
+        "latin-america-fe5e91689def",
+        "country-package-new-zealand",
+        "country-package-albania"
+      ]
+    },
+    "assertion": "Future Finland-only import preserves unrelated release IDs, rows and evidence FKs."
+  },
+  {
+    "title": "Appointed executives are not popular contests",
+    "source_locator": "data/research/finland/office-register.json",
+    "source_evidence": [],
+    "expected_atlas_projection": {
+      "popular_mayor_manager_offices": 0,
+      "popular_PM_cabinet_offices": 0,
+      "elected_presidency_offices": 1
+    },
+    "assertion": "Do not derive an electoral office from an appointed title. The evidenced presidency is separately included."
+  },
+  {
+    "title": "Conflicting claim is retained, not silently selected",
+    "source_locator": "data/research/finland/results.json#/0",
+    "source_evidence": [
+      {
+        "input_path": "data/research/finland/sources/kvaa-2025-data.json",
+        "sha256": "409538d1ccd5454b46565f89c6f2c3acce0b77979c8fb35bb94e9bbca855cd46",
+        "json_pointer": "/value/11452",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2025",
+          "kunta_128_20250101": "063316",
+          "puolue_6_20250103": "01",
+          "contentscode": "kvaa-aanet_yht"
+        },
+        "original_value": 231,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/finland/sources/kvaa-2025-data.json",
+        "sha256": "409538d1ccd5454b46565f89c6f2c3acce0b77979c8fb35bb94e9bbca855cd46",
+        "json_pointer": "/value/11453",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2025",
+          "kunta_128_20250101": "063316",
+          "puolue_6_20250103": "01",
+          "contentscode": "kvaa-osuus_aanista"
+        },
+        "original_value": 12.8,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/finland/sources/kvaa-152l-data.json",
+        "sha256": "a2e4b0fceaa180cb345804a4cd5176c09e42e820beffaea8d8b6211ee12e040f",
+        "json_pointer": "/value/57332",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2025",
+          "puolue_35_20250101": "01",
+          "sukupuoli_9_20180101": "SSS",
+          "kunta_130_20250101": "316",
+          "contentscode": "kvaa-lkm_val"
+        },
+        "original_value": 3,
+        "original_status": null
+      }
+    ],
+    "expected_atlas_projection": {
+      "isolated_CI_mutation": "a competing unsourced scalar claim",
+      "expected": "retain both claims; withhold resolved value pending accepted override"
+    },
+    "assertion": "No numeric alternative or override is invented in this pack. Future CI Not run."
+  }
+]

@@ -1100,6 +1100,142 @@ describe("Phase 0 tier-classification drafts", () => {
     expect(denmark.notes?.filter((note) => note.category).every((note) => note.status === "open")).toBe(true);
     expect(denmark.schema_compatibility).toMatchObject({ national: "national_context" });
   });
+
+  it("keeps Finland Prompt Z 333 current / 170 historical accepted with named holds", () => {
+    const finland = readJson<
+      TierFile & {
+        production_accepted?: boolean;
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        justin_approval?: {
+          accepted?: boolean;
+          current_offices?: number;
+          historical_offices?: number;
+          scope?: string;
+          holds?: string[];
+        };
+        notes?: Array<{ office_id?: string; reviews?: string[] }>;
+        source_register: { path?: string; input_path?: string; sha256: string; bytes?: number };
+      }
+    >("schemas/atlas/tiers/finland.json");
+    expect(finland.status).toBe("approved");
+    expect(finland.production_accepted).toBe(true);
+    expect(finland.country_slug).toBe("finland");
+    expect(finland.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-19",
+      timezone: "America/Edmonton",
+    });
+    expect(finland.approval?.notes).toMatch(/333 current \+ 170 historical/i);
+    expect(finland.approval?.notes).toMatch(/named holds/i);
+    expect(finland.approval?.notes).toMatch(/FI-HISTORIC-MERGERS/);
+    expect(finland.approval?.notes).toMatch(/FI-ALAND-EARLY-AND-DATES/);
+    expect(finland.approval?.notes).toMatch(/FI-WELLBEING-TRANSITION/);
+    expect(finland.approval?.notes).toMatch(/FI-EP-DETAIL/);
+    expect(finland.approval?.notes).toMatch(/FI-CYCLE-LEGAL-DETAIL/);
+    expect(finland.approval?.notes).toMatch(/FI-PARTY-CATEGORIES/);
+    expect(finland.approval?.notes).toMatch(/FI-MISSING-RESULTS/);
+    expect(finland.approval?.notes).toMatch(/No popular manager\/PM\/cabinet/i);
+    expect(finland.predecessor_draft_sha256).toBe(
+      "7c3a4c1c17538d5600a10c655e7fb18b12f977a1ef79c7608f9869d813df2797",
+    );
+    expect(sha256("schemas/atlas/tiers/finland.json")).toBe(
+      "15edd48df39caae6cfefec9b20b0a20a7bafcfe7e919accbb46d056924083d53",
+    );
+    expect(finland.classifications).toHaveLength(503);
+    expect(finland.counts_by_proposed_tier).toEqual({
+      national: 2,
+      regional: 22,
+      municipal: 478,
+      other: 1,
+      unknown: 0,
+    });
+    expect(finland.justin_approval).toMatchObject({
+      accepted: true,
+      current_offices: 333,
+      historical_offices: 170,
+      scope: "all_draft_offices_with_named_holds",
+      holds: [
+        "FI-HISTORIC-MERGERS",
+        "FI-ALAND-EARLY-AND-DATES",
+        "FI-WELLBEING-TRANSITION",
+        "FI-EP-DETAIL",
+        "FI-CYCLE-LEGAL-DETAIL",
+        "FI-PARTY-CATEGORIES",
+        "FI-MISSING-RESULTS",
+      ],
+    });
+    expect(finland.classifications.filter((row) => row.human_review_required === true)).toHaveLength(171);
+    expect(finland.classifications.filter((row) => row.tier === "municipal")).toHaveLength(478);
+    expect(finland.classifications.filter((row) => row.tier === "regional")).toHaveLength(22);
+    expect(finland.classifications.filter((row) => row.tier === "national")).toHaveLength(2);
+    expect(finland.classifications.filter((row) => row.tier === "other")).toHaveLength(1);
+    const register = readJson<Array<{ office_id: string; office_status?: string; office_type?: string; name?: string }>>(
+      "data/research/finland/office-register.json",
+    );
+    expect(register.filter((row) => row.office_status === "current")).toHaveLength(333);
+    expect(register.filter((row) => row.office_status === "historical")).toHaveLength(170);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "municipal_council"),
+    ).toHaveLength(308);
+    expect(register.filter((row) => row.office_id === "FI-M091-C")).toEqual([
+      expect.objectContaining({ name: "Helsinki — kunnanvaltuusto", office_status: "current" }),
+    ]);
+    expect(register.some((row) => /mayor|manager|prime.?minister|cabinet/i.test(String(row.office_type ?? "")))).toBe(
+      false,
+    );
+    expect(readJson<unknown[]>("data/research/finland/events.json")).toHaveLength(5241);
+    expect(readJson<unknown[]>("data/research/finland/results.json")).toHaveLength(37471);
+    expect(readJson<unknown[]>("data/research/finland/proceedings.json")).toHaveLength(11);
+    const gaps = readJson<Array<{ original_token?: string; status?: string; office_ids?: string[] }>>(
+      "data/research/finland/research-gaps.json",
+    );
+    expect(gaps.map((row) => row.original_token)).toEqual([
+      "FI-HISTORIC-MERGERS",
+      "FI-ALAND-EARLY-AND-DATES",
+      "FI-WELLBEING-TRANSITION",
+      "FI-EP-DETAIL",
+      "FI-CYCLE-LEGAL-DETAIL",
+      "FI-PARTY-CATEGORIES",
+      "FI-MISSING-RESULTS",
+    ]);
+    expect(gaps.every((row) => row.status === "open")).toBe(true);
+    const alandMunicipal = gaps.find((row) => row.original_token === "FI-ALAND-EARLY-AND-DATES")?.office_ids ?? [];
+    expect(alandMunicipal.filter((id) => id.startsWith("FI-M"))).toHaveLength(16);
+    expectExactIds(
+      finland,
+      register.map((row) => row.office_id),
+    );
+    expect(finland.source_register.sha256).toBe(
+      "150ede883757d5945c3bdd1fab027c9d084a1d24fb539add2c8c4f916268fed7",
+    );
+    expect(finland.source_register.sha256).toBe(sha256("data/research/finland/office-register.json"));
+    expect(finland.source_register.input_path).toBe("data/research/finland/office-register.json");
+    expect(finland.notes?.find((note) => note.office_id === "FI-EP")?.reviews?.[0]).toMatch(/supranational/i);
+    expect(finland.classifications.find((row) => row.office_id === "FI-EP")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+    expect(finland.classifications.find((row) => row.office_id === "FI-EDUSKUNTA")).toMatchObject({
+      tier: "national",
+    });
+    expect(finland.classifications.find((row) => row.office_id === "FI-PRESIDENT")).toMatchObject({
+      tier: "national",
+    });
+    expect(finland.classifications.find((row) => row.office_id === "FI-AX-LAGTING")).toMatchObject({
+      tier: "regional",
+    });
+    expect(finland.classifications.find((row) => row.office_id === "FI-M091-C")).toMatchObject({
+      tier: "municipal",
+    });
+  });
 });
 
 describe("Phase 0 inventory artifacts", () => {
