@@ -2,8 +2,8 @@
 /**
  * Import approved Atlas lineages into SQLite.
  *
- * Default scope is Albania + Andorra + Alderney + Armenia + Belgium + Bosnia and Herzegovina +
- * Bulgaria + Denmark + approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`).
+ * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
+ * Bulgaria + Netherlands + approved LatAm packs + New Zealand + Denmark (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -84,6 +84,20 @@ function main() {
       console.log(`armenia_sources=${result.armenia.counts.sources}`);
       console.log(`armenia_regional=${result.armenia.counts.regional_offices}`);
     }
+    if (result.austria) {
+      console.log("lineage=country-package-austria");
+      console.log(`austria_attempt_id=${result.austria.attemptId}`);
+      console.log(`austria_release_id=${result.austria.releaseId}`);
+      console.log(`austria_fingerprint_sha256=${result.austria.fingerprint}`);
+      console.log(`austria_reused_release=${result.austria.reusedRelease ? "yes" : "no"}`);
+      console.log(`austria_offices=${result.austria.counts.current_offices}`);
+      console.log(`austria_municipal=${result.austria.counts.municipal_offices}`);
+      console.log(`austria_selected_histories=${result.austria.counts.selected_histories}`);
+      console.log(`austria_prospective_events=${result.austria.counts.prospective_events}`);
+      console.log(`austria_result_rows=${result.austria.counts.result_rows}`);
+      console.log(`austria_sources=${result.austria.counts.sources}`);
+      console.log(`austria_regional=${result.austria.counts.regional_offices}`);
+    }
     if (result.belgium) {
       console.log("lineage=country-package-belgium");
       console.log(`belgium_attempt_id=${result.belgium.attemptId}`);
@@ -133,6 +147,26 @@ function main() {
       console.log(`bulgaria_sources=${result.bulgaria.counts.sources}`);
       console.log(`bulgaria_regional=${result.bulgaria.counts.regional_offices}`);
       console.log(`bulgaria_held_offices=${result.bulgaria.counts.held_offices}`);
+    }
+    if (result.netherlands) {
+      console.log("lineage=country-package-netherlands");
+      console.log(`netherlands_attempt_id=${result.netherlands.attemptId}`);
+      console.log(`netherlands_release_id=${result.netherlands.releaseId}`);
+      console.log(`netherlands_fingerprint_sha256=${result.netherlands.fingerprint}`);
+      console.log(`netherlands_reused_release=${result.netherlands.reusedRelease ? "yes" : "no"}`);
+      console.log(`netherlands_offices=${result.netherlands.counts.offices}`);
+      console.log(`netherlands_current=${result.netherlands.counts.current_offices}`);
+      console.log(`netherlands_historical=${result.netherlands.counts.historical_offices}`);
+      console.log(`netherlands_municipal=${result.netherlands.counts.municipal_offices}`);
+      console.log(`netherlands_regional=${result.netherlands.counts.regional_offices}`);
+      console.log(`netherlands_national=${result.netherlands.counts.national_offices}`);
+      console.log(`netherlands_other=${result.netherlands.counts.other_offices}`);
+      console.log(`netherlands_selected_histories=${result.netherlands.counts.selected_histories}`);
+      console.log(`netherlands_prospective_events=${result.netherlands.counts.prospective_events}`);
+      console.log(`netherlands_result_rows=${result.netherlands.counts.result_rows}`);
+      console.log(`netherlands_sources=${result.netherlands.counts.sources}`);
+      console.log(`netherlands_unresolved=${result.netherlands.counts.unresolved_evidence}`);
+      console.log(`netherlands_needs_review=${result.netherlands.counts.needs_review_classifications}`);
     }
     if (result.denmark) {
       console.log("lineage=country-package-denmark");

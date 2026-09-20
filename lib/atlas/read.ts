@@ -464,6 +464,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "austria") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "4 regional offices (Carinthia, Lower Austria, Tyrol, Upper Austria). No dated upcoming regional events; next dates remain unknown. Research coverage remains partial.",
+      denominatorKnown: false,
+    };
+  }
   if (countryId === "belgium") {
     return {
       offices,
@@ -497,6 +506,15 @@ export function listAtlasRegionalCalendar(
       count: offices.length,
       label:
         "20 regional offices (five operating region councils + elected preparatory Østdanmark + 14 historical county councils). 2029 next dates sit outside the alert window; in-window dated upcoming regional count is 0. Greenland/Faroe Realm, 2007/earlier merger successor, KMD/DST, 98 candidate-binding, and EP-detail notes stay open. No popular mayor rows.",
+      denominatorKnown: false,
+    };
+  }
+  if (countryId === "netherlands") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "12 regional offices (provincial states). Sourced 17 March 2027 next-date metadata is expected, not a prospective event. Hilversum/Wijdemeren merger successor binding, named historic gaps, and focused-tier reviews stay open. Appointed mayors have no election rows.",
       denominatorKnown: false,
     };
   }
