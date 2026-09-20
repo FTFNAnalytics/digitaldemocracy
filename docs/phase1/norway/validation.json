@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "package_integrity": "PASS",
+  "verified_counts": {
+    "current_offices": 389,
+    "historical_offices": 537,
+    "offices": 926,
+    "geographies": 926,
+    "events": 10777,
+    "result_rows": 59033,
+    "proceedings": 0,
+    "sources": 82,
+    "tiers": {
+      "municipal": 876,
+      "regional": 32,
+      "national": 1,
+      "other": 17
+    },
+    "current_municipal_councils": 357,
+    "current_county_councils": 14,
+    "current_oslo_borough_committees": 15,
+    "focused_review_offices": 555
+  },
+  "research_coverage_complete": false,
+  "applied_changes": 0,
+  "importer_sqlite_vps_ui": "Not run",
+  "schema_version": "atlas-documentary-validation/1",
+  "pinned_main_commit": "a0c02d0a36ed95cfb593dd7b085b9567d3b171d3",
+  "research_capture": "2026-09-20",
+  "predecessor_draft_tier_sha256": "dba7a879edae7f6ad44c3d3964fe345f375fe933f3549c98cfd99b361328a5f0",
+  "accepted_tier_sha256": "8ff8fc545ab326b135ac8a116d013c3dbecce377750e26dfc008bcea134db827",
+  "tier_sha256": "8ff8fc545ab326b135ac8a116d013c3dbecce377750e26dfc008bcea134db827",
+  "office_register_sha256": "a45c2cbde38bcaa12b0094a701140674841ed484a85f519faa2b8a75582c95a0",
+  "pretty_results_json_sha256": "9d8c9eab7f968da3019508e7a0c36ba4409ff6ea9d7517814641b3d0736c8276",
+  "landed_results_json_sha256": "0932c1a41489fdff16d7cb8d252286924e41935191c5cf494a713bee84b02932",
+  "original_full_zip_sha256": "5a38228b0ee2f035f5cf32a0e74914de23a30c1aa9fb15ae26d9075058c1f0ef",
+  "approval": "Justin accepted 2026-09-19 with named holds; production_accepted=true",
+  "justin_approval": {
+    "date": "2026-09-19",
+    "timezone": "America/Edmonton",
+    "accepted_by": "Justin",
+    "current_offices": 389,
+    "historical_offices": 537,
+    "offices": 926,
+    "scope": "all_draft_offices_with_named_holds",
+    "holds": [
+      "SAMI-2025-ZERO-VOTE-SEAT-98d",
+      "REFORM-2020-2024",
+      "OSLO-BOROUGH-HISTORY",
+      "LONGYEARBYEN-HISTORY",
+      "LEGAL-STATUS-REPEATS",
+      "COUNTY-AGGREGATES",
+      "SAMI-OLDER-HISTORY",
+      "MUNICIPAL-HISTORY-DEPTH",
+      "PARTY-CATEGORIES"
+    ],
+    "importer_loads": "not_implemented"
+  },
+  "tier_approval": "accepted_389_current_537_historical_with_named_holds",
+  "open_research_notes": [
+    "SAMI-2025-ZERO-VOTE-SEAT-98d",
+    "REFORM-2020-2024",
+    "OSLO-BOROUGH-HISTORY",
+    "LONGYEARBYEN-HISTORY",
+    "LEGAL-STATUS-REPEATS",
+    "COUNTY-AGGREGATES",
+    "SAMI-OLDER-HISTORY",
+    "MUNICIPAL-HISTORY-DEPTH",
+    "PARTY-CATEGORIES"
+  ],
+  "landed_results_json_note": "Compacted from slim pack results.json.gz (same 59033 rows, no pretty-print whitespace) so the file stays under GitHub’s 100 MB blob limit. Pretty-print SHA-256 9d8c9eab7f968da3019508e7a0c36ba4409ff6ea9d7517814641b3d0736c8276. Landed compact SHA-256 0932c1a41489fdff16d7cb8d252286924e41935191c5cf494a713bee84b02932.",
+  "notes": [
+    "PASS means documentary consistency from the Prompt AA pack validator and landed count checks, not complete historical research or production import.",
+    "Slim attach omitted bulky sources/; do not invent those bytes. Hashes remain in SHA256SUMS and sources.json.",
+    "Operational importer/SQLite/publication gates are Not run."
+  ]
+}

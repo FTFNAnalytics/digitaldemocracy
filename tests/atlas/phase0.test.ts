@@ -1100,6 +1100,156 @@ describe("Phase 0 tier-classification drafts", () => {
     expect(denmark.notes?.filter((note) => note.category).every((note) => note.status === "open")).toBe(true);
     expect(denmark.schema_compatibility).toMatchObject({ national: "national_context" });
   });
+
+  it("keeps Norway Prompt AA 389 current / 537 historical accepted with named holds", () => {
+    const norway = readJson<
+      TierFile & {
+        production_accepted?: boolean;
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        justin_approval?: {
+          accepted?: boolean;
+          current_offices?: number;
+          historical_offices?: number;
+          scope?: string;
+          holds?: string[];
+        };
+        notes?: Array<{ office_id?: string; reviews?: string[] }>;
+        source_register: { path?: string; input_path?: string; sha256: string; bytes?: number };
+      }
+    >("schemas/atlas/tiers/norway.json");
+    expect(norway.status).toBe("approved");
+    expect(norway.production_accepted).toBe(true);
+    expect(norway.country_slug).toBe("norway");
+    expect(norway.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-19",
+      timezone: "America/Edmonton",
+    });
+    expect(norway.approval?.notes).toMatch(/389 current \+ 537 historical/i);
+    expect(norway.approval?.notes).toMatch(/named holds/i);
+    expect(norway.approval?.notes).toMatch(/SAMI-2025-ZERO-VOTE-SEAT-98d/);
+    expect(norway.approval?.notes).toMatch(/REFORM-2020-2024/);
+    expect(norway.approval?.notes).toMatch(/OSLO-BOROUGH-HISTORY/);
+    expect(norway.approval?.notes).toMatch(/LONGYEARBYEN-HISTORY/);
+    expect(norway.approval?.notes).toMatch(/LEGAL-STATUS-REPEATS/);
+    expect(norway.approval?.notes).toMatch(/COUNTY-AGGREGATES/);
+    expect(norway.approval?.notes).toMatch(/SAMI-OLDER-HISTORY/);
+    expect(norway.approval?.notes).toMatch(/MUNICIPAL-HISTORY-DEPTH/);
+    expect(norway.approval?.notes).toMatch(/PARTY-CATEGORIES/);
+    expect(norway.approval?.notes).toMatch(/No popular mayor\/PM\/cabinet or EP/i);
+    expect(norway.predecessor_draft_sha256).toBe(
+      "dba7a879edae7f6ad44c3d3964fe345f375fe933f3549c98cfd99b361328a5f0",
+    );
+    expect(sha256("schemas/atlas/tiers/norway.json")).toBe(
+      "8ff8fc545ab326b135ac8a116d013c3dbecce377750e26dfc008bcea134db827",
+    );
+    expect(norway.classifications).toHaveLength(926);
+    expect(norway.counts_by_proposed_tier).toEqual({
+      national: 1,
+      regional: 32,
+      municipal: 876,
+      other: 17,
+      unknown: 0,
+    });
+    expect(norway.justin_approval).toMatchObject({
+      accepted: true,
+      current_offices: 389,
+      historical_offices: 537,
+      scope: "all_draft_offices_with_named_holds",
+      holds: [
+        "SAMI-2025-ZERO-VOTE-SEAT-98d",
+        "REFORM-2020-2024",
+        "OSLO-BOROUGH-HISTORY",
+        "LONGYEARBYEN-HISTORY",
+        "LEGAL-STATUS-REPEATS",
+        "COUNTY-AGGREGATES",
+        "SAMI-OLDER-HISTORY",
+        "MUNICIPAL-HISTORY-DEPTH",
+        "PARTY-CATEGORIES",
+      ],
+    });
+    expect(norway.classifications.filter((row) => row.human_review_required === true)).toHaveLength(555);
+    expect(norway.classifications.filter((row) => row.tier === "municipal")).toHaveLength(876);
+    expect(norway.classifications.filter((row) => row.tier === "regional")).toHaveLength(32);
+    expect(norway.classifications.filter((row) => row.tier === "national")).toHaveLength(1);
+    expect(norway.classifications.filter((row) => row.tier === "other")).toHaveLength(17);
+    const register = readJson<Array<{ office_id: string; office_status?: string; office_type?: string; name?: string }>>(
+      "data/research/norway/office-register.json",
+    );
+    expect(register.filter((row) => row.office_status === "current")).toHaveLength(389);
+    expect(register.filter((row) => row.office_status === "historical")).toHaveLength(537);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "municipal_council"),
+    ).toHaveLength(357);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "county_council"),
+    ).toHaveLength(14);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "borough_committee"),
+    ).toHaveLength(15);
+    expect(register.filter((row) => row.office_id === "NO-M0301-C")).toEqual([
+      expect.objectContaining({ name: "Oslo - Oslove — bystyre", office_status: "current" }),
+    ]);
+    expect(register.some((row) => /mayor|prime.?minister|cabinet/i.test(String(row.office_type ?? "")))).toBe(false);
+    expect(register.some((row) => /european.?parliament|^ep$/i.test(String(row.office_type ?? "")))).toBe(false);
+    expect(readJson<unknown[]>("data/research/norway/events.json")).toHaveLength(10777);
+    expect(readJson<unknown[]>("data/research/norway/results.json")).toHaveLength(59033);
+    expect(readJson<unknown[]>("data/research/norway/proceedings.json")).toHaveLength(0);
+    const gaps = readJson<Array<{ original_token?: string; status?: string; office_ids?: string[] }>>(
+      "data/research/norway/research-gaps.json",
+    );
+    expect(gaps.map((row) => row.original_token)).toEqual([
+      "SAMI-2025-ZERO-VOTE-SEAT-98d",
+      "REFORM-2020-2024",
+      "OSLO-BOROUGH-HISTORY",
+      "LONGYEARBYEN-HISTORY",
+      "LEGAL-STATUS-REPEATS",
+      "COUNTY-AGGREGATES",
+      "SAMI-OLDER-HISTORY",
+      "MUNICIPAL-HISTORY-DEPTH",
+      "PARTY-CATEGORIES",
+    ]);
+    expect(gaps.every((row) => row.status === "open")).toBe(true);
+    const boroughs = gaps.find((row) => row.original_token === "OSLO-BOROUGH-HISTORY")?.office_ids ?? [];
+    expect(boroughs).toHaveLength(15);
+    expect(boroughs.every((id) => id.startsWith("NO-B0301"))).toBe(true);
+    expectExactIds(
+      norway,
+      register.map((row) => row.office_id),
+    );
+    expect(norway.source_register.sha256).toBe(
+      "a45c2cbde38bcaa12b0094a701140674841ed484a85f519faa2b8a75582c95a0",
+    );
+    expect(norway.source_register.sha256).toBe(sha256("data/research/norway/office-register.json"));
+    expect(norway.source_register.input_path).toBe("data/research/norway/office-register.json");
+    expect(norway.notes?.find((note) => note.office_id === "NO-M0301-C")?.reviews?.[0]).toMatch(/Oslo bystyre/i);
+    expect(norway.classifications.find((row) => row.office_id === "NO-STORTING")).toMatchObject({
+      tier: "national",
+    });
+    expect(norway.classifications.find((row) => row.office_id === "NO-SAMEDIGGI")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+    expect(norway.classifications.find((row) => row.office_id === "NO-LONGYEARBYEN-C")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+    expect(norway.classifications.find((row) => row.office_id === "NO-M0301-C")).toMatchObject({
+      tier: "municipal",
+    });
+    expect(norway.classifications.find((row) => row.office_id === "NO-B030101-C")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+  });
 });
 
 describe("Phase 0 inventory artifacts", () => {
