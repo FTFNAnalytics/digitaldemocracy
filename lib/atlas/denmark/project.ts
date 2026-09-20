@@ -1,6 +1,5 @@
 import {
   ADAPTER_VERSION,
-  CONTINUING_REGION_ID,
   COPENHAGEN_COUNCIL_ID,
   COPENHAGEN_COUNCIL_RECORD_KEY,
   COUNTRY_CODE,
@@ -18,7 +17,6 @@ import {
   RETIRING_REGION_ID,
   SCHEMA_VERSION,
   SOURCE_NAMESPACE,
-  SOURCES_RELATIVE,
   TIER_PATH,
   TIER_SHA256,
   UNRESOLVED_RELATIVE,
@@ -64,7 +62,6 @@ export type DenmarkProjection = {
 };
 
 const ISO_DAY = /^(\d{4})-(\d{2})-(\d{2})$/;
-const ISO_MONTH = /^(\d{4})-(\d{2})$/;
 const ISO_YEAR = /^(\d{4})$/;
 const CATALOGUE_LOOKUP_NOTE = "data/research/denmark/sources.json";
 
@@ -89,19 +86,16 @@ function parseDayLabel(label: string): { year: number; month: number; day: numbe
   return { year, month, day };
 }
 
-function parseMonthLabel(label: string): { year: number; month: number } {
-  const match = ISO_MONTH.exec(label.trim());
-  if (!match) throw new Error(`Denmark month date is not YYYY-MM: ${JSON.stringify(label)}`);
-  const year = Number(match[1]);
-  const month = Number(match[2]);
-  if (month < 1 || month > 12) throw new Error(`Invalid month ${label}`);
-  return { year, month };
-}
-
 function parseYearLabel(label: string): number {
   const match = ISO_YEAR.exec(label.trim());
   if (!match) throw new Error(`Denmark year date is not YYYY: ${JSON.stringify(label)}`);
   return Number(match[1]);
+}
+
+function electedFlag(value: number | boolean | null | undefined): number | null {
+  if (value === true || value === 1) return 1;
+  if (value === false || value === 0) return 0;
+  return null;
 }
 
 function pointerFor(index: number, field?: string): string {
@@ -616,7 +610,7 @@ export function projectDenmark(inventory: DenmarkInventory): DenmarkProjection {
       share_unit: row.share_unit ?? "percent_0_100",
       seats: row.seats ?? null,
       seats_status: row.seats_status,
-      elected_flag: row.elected_flag ?? null,
+      elected_flag: electedFlag(row.elected_flag),
       is_substitute: null,
       evidence_status: evidenceStatusFor(row),
       lineage_id: L,

@@ -106,7 +106,7 @@ export type DenmarkResultRow = {
   share_unit?: string | null;
   seats?: number | null;
   seats_status?: string;
-  elected_flag?: number | null;
+  elected_flag?: number | boolean | null;
   evidence_status?: string;
   evidence?: DenmarkEvidenceRef[];
   raw?: Record<string, unknown>;
