@@ -1,0 +1,3266 @@
+[
+  {
+    "proceeding_id": "proceeding-00262d0861855d7500599f7d",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::SZ",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 48
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-06c0b6783c1abd7bd509df28",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::TG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 138
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-088b0b280090f6d19b2561be",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::ZG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 65
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2006-10-29 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-0c568480b428795099a3d21c",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::OW",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 59
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-11-15 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-0fae096a9c26db48038161cd",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::SO",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 92
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-11-19 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-146d798157bf663684939e59",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::GL",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 60
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-182ff15e245d2108b6f12fc0",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::UR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 43
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-1b7142117c77a0c3dd2be371",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::ZH",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 7
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-11-19 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-213859d9a381894e8d30b0da",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::TG",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 154
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-11-13 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-24b64cb9a623b75aa31f7c9f",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::TI",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 155
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-11-19 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-2ada2d6707b10f895485e601",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::ZH",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 8
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-11-27 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-2b495480914a5aba59a1dc70",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::ZH",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 9
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-11-25 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-2d2961472e8a089acad03676",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::LU",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 34
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-2d520e4a44233449565783dc",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::VS",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 181
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-11-12 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-367a1e6f4630d719e2087248",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::ZH",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 6
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-3688f03736c9ce4d7f080ce2",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::SG",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 125
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-11-27 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-376e35177658117e37b7550a",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::VS",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 189
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-11-01 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-38b53f46394dbf45dab9023f",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::BL",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 106
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-3968ff586c7db2344b55bd4b",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::GL",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 69
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-3aa2f9707d5a2dd883211299",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::VS",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 178
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-3bdf32b59df78ff80b362c04",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::SO",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 91
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-3c0374daf01d73852df985f5",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::SH",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 109
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-11-13 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-3e337a51872232d5d521601a",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::ZG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 75
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-4ab3948cfc8e1447f4e55ab0",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::TG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 147
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-4be936416e0b75363d73a483",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::LU",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 33
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-4c8144880cf1d9d8d6ca171d",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::SG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 112
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-4e23296aee03314d687c177e",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::AG",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 136
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-11-19 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-4e730cc0bb29b6da362ae4ef",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::SO",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 78
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-50153919a9a9942141790c20",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::UR",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 42
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-11-27 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-512c48fb3d4ee880b5e798f7",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::AG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 135
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-51a931e8fd21235c8f76fc7b",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::FR",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 83
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-11-12 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-54f0bdf36d481572d9d99c17",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::BE",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 15
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-11-17 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-59bd675b4e3aaad4fe707f67",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::TI",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 162
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-5bfd953ff3f3c39d96a1e074",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::FR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 72
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-5dcb4b7337449aa570562084",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::FR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 83
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-5e9190af0a5c2c0e6c53e800",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::BE",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 22
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-11-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-5f8d0045514609b8cb0eca8b",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::UR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 41
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-6540abfa2d9a12b6cf516651",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::BL",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 104
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-6a5dabc6b2a0a94e5bc033f6",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::ZH",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 6
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-11-17 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-6f3e4cebe565c61c3bf8531b",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::SH",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 108
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-71d357e99f92ad3df6300947",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::SO",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 83
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-7260cfcacca347c55e92d350",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::TG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 153
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-741607c8ea903d1f871d604a",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::NW",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 64
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-77c7d8775e5bc9997fd026e0",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::SO",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 84
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-11-17 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-77d62b4c66d8bfc8a4f512c1",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::GR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 130
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-7a06ea4e932981d5ff523206",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::BL",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 96
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-7af7d669d34f3ee396ed67b3",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::SO",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 88
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-12-04 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-7b23a50f65e2139db50eff9e",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::BL",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 89
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-7cd1bf5da72dd1e8a43b4cff",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::AG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 139
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-7ec0bf96d9d61760f57f9956",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::AG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 132
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-7f406e9571780e061374d473",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::SZ",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 48
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-7f9a1d007ad400db95b60b72",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::VS",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 169
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-8a690fa96b0e9d6489a87a4c",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::SZ",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 53
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-8cbb7fb51983b08221734560",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::TI",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 155
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-8d2987f243629a46068016f5",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::TI",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 152
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-11-17 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-8fb4633564bcc228bc1fadb7",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::SH",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 112
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-90bc3be72c1f963518314ba2",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::VS",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 181
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-11-24 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-90ef640ea9202e2017d9b411",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::SH",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 108
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-90f5954724706f900ad27ec8",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::FR",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 83
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-11-08 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-9163ba6760b150286d1006de",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::SG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 120
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-93cc47f075f07963576c2768",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::LU",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 39
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-964056f0c1809610783913dd",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::GL",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 65
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-9688d48f8360b09971fe6731",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::FR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 72
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-987a8d05cf1c96aa98834646",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::SO",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 93
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-11-15 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-9887ec003a84e56fbfc89cc2",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::BS",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 83
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-9b26a2324bd47a78fc2eed13",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::VS",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 186
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-9fe6ce0749ca3fff647262e1",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::VS",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 178
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-11-03 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-a0b5b7ea905fb4b989305845",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::VS",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 189
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-a16aff5753a4cbee74a23f77",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::ZH",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 8
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-a1a9bb0e635818baac386694",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::LU",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 33
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-11-15 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-a50c25a7c74947441be28bf1",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::FR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 81
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-a52ca9451d8d76b664006b24",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::FR",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 72
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-11-10 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-a7efabd4fed683b6f30b9b5c",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::SG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 126
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-a85cd3d4c917cdcca553e93b",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::BE",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 20
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-aa699057d12f8ae50109e0fa",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::SH",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 102
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-ac94d45e067aedd486b0f572",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::GL",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 56
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-b2a0c1f106feaabe971379e2",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::BE",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 20
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-11-15 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-b675d6d92da44d72ef3237e6",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::SG",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 112
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-11-25 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-b82f0883271f5d49c50aa4d3",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::TI",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 146
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-bafe2e712fcd4c44e46c6d63",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::SG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 115
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-bc857703fed0329ef07ba9f6",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::UR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 41
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-bcc5742fdb360b75865bdf9c",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::SG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 124
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-bff4e9a7e92d0fbc32a006ea",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::VS",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 181
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-c065a69529bb66d414d8da1e",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::GR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 124
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-c0adb092dda15c9377c7ad62",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::BE",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 22
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-c31ebce8cd8cba3fd9342950",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::SO",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 87
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-c43a39be81d08aa580f1af4c",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::GR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 138
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-c442b8c7ca8a9b1757025020",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::ZH",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 6
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-c7324be49233953e88482454",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::BE",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 23
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-c886da8c59ec35e48ea7e67c",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::SZ",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 46
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-c89b95137d833e0414609374",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::ZG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 64
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-c8db6c4ebc5e70d79efbedb3",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::GL",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 67
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-cabbc9f6c97673cc3abe8c9a",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::BE",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 15
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-cacb30a071ed1f61a4bf1432",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::TI",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 152
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-cae88fb94da26f04ff55705e",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::ZH",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 9
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-11-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-cbe4e5541d13d45e2c3ee4a8",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::LU",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 32
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-cd1f3c3780c92cc10c2bcac3",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::TI",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 146
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-11-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-ce5d726260675ec0e23a9218",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::OW",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 60
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-cfdbeb0713c5f3bd79549b21",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::BL",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 96
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-11-24 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-d016bceed9660b33edd1e70b",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::SG",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 127
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-11-15 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-d039ca39716263e8be0a2b54",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::SH",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 109
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-11-19 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-d304c9c36ea65f8f0c92d99f",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::AG",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 140
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-11-27 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-d4f4d979ea4412465a94dd85",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::TG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 144
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-d5ab1e1e72eb8126dcfd2b69",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::ZG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 73
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-d603e3b4b19df34e7776fa8f",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::ZH",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 8
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-d723be06ea2de36575cd211d",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::UR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 49
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-d97fa5aff64fbb52724a2f61",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::SZ",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 44
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-11-24 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-dbfcc87b833792b3d078b2ea",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::ZG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 74
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-dc06a3d62afb64f6a4a66626",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::BL",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 102
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-dc22ddb8016daf1d37100fd8",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::SG",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 115
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-11-17 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-dd5c8ec99887282dc53c2f45",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::AG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 143
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-dd970854e331abdd530373b3",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::BS",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 98
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-de7e13b5f879ad6eb4ffb02b",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::TI",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 162
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-11-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-e091d0e53e0da9a82ca99081",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::UR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 40
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-e1c45b6eca572ff299463b0e",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::BE",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 21
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-e63cecbad5db3ae5eb0b176d",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::SO",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 92
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-e724fdc28017ec4cc34907c1",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::SH",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 94
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-e7cb10513691ad56ac5f3737",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::AG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 127
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-e86cc5ebda97607ffc841b45",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::AG",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 144
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-11-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-e8b6df0eb6007f0143fe221f",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::OW",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 59
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-e90e67cdd8df42f4deeb0ff4",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::ZG",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 64
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-11-17 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-e94c918273cb41dd7ee70106",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::BS",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 98
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-e9eb00698313c0e75dbbb72d",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::AG",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 132
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-11-24 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-e9eebd8832cea8a2e26ae5d4",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::LU",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 31
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-eaeb4fb65dc864c5d8c89284",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::SZ",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 44
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-eb715aba9e66363c33120659",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::FR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 83
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-eb81790da191c5f429469aa3",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::TG",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 156
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-ebe737659ee90e19725b28da",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::BS",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 95
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-ed49e5c6ea25a46a3e22dba0",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::GR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2006 2007",
+          "row": 121
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2007-10-21 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-f6d181c6c73c74d723775091",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::BS",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2019",
+          "row": 89
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2019-10-20 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-f796def6da5d77cf1a529003",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::ZH",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 8
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-10-18 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-f8eeaab9fe69b6b4885e21b4",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::GR",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 134
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-fa697f470487267ac6b5df2e",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::SZ",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 49
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-11-27 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-fcc983e4a6a2eccaf9195e3d",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::TI",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2010 2011",
+          "row": 162
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2011-10-23 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-fd728861ea6acedbaf659c0b",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::NW",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2023",
+          "row": 60
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2023-10-22 00:00:00",
+      "date_precision": "day"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-fff8cc4e9a9f6720b4b7b8f3",
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::TI",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "unknown",
+    "evidence": [
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "locator": {
+          "sheet": "2015",
+          "row": 162
+        }
+      }
+    ],
+    "raw": {
+      "supplied_round_date": "2015-11-15 00:00:00",
+      "date_precision": "day"
+    }
+  }
+]

@@ -1,0 +1,1403 @@
+{
+  "schema_version": "atlas-research-inventory/1",
+  "status": "documentation_landed_evidenced_subset_acceptance",
+  "repository": "FTFNAnalytics/digitaldemocracy",
+  "pinned_main_commit": "b4dcf6d891ed83a7db5b7d6eb8808671d6eec000",
+  "retrieved_as_of": "2026-09-19",
+  "geography_snapshot": "2026-01-01",
+  "geography_snapshot_limit": "The BFS form rejected 19.09.2026 and offered latest 01.01.2026; no assertion that later 2026 changes have all been reconciled.",
+  "lineage_id": "country-package-switzerland",
+  "source_register_sha256": "f575711d0149660ad7b72e661d65ed9658f4bddf29045f804ef50188b34d0987",
+  "tier_sha256": "d1ebccfd1633aacd9b70732dcfe1f3e01df9549076d4b71efce38d436a2749f1",
+  "verified_counts": {
+    "current_offices": 2805,
+    "historical_offices": 11,
+    "total_offices": 2816,
+    "geographies": 2723,
+    "bfs_current_communes": 2110,
+    "historical_commune_geographies": 586,
+    "events": 1443,
+    "results": 8094,
+    "proceedings": 136,
+    "retained_observations": 4641,
+    "disputed_result_rows": 16,
+    "source_artifacts": 57,
+    "tiers": {
+      "national": 2,
+      "regional": 52,
+      "municipal": 2402,
+      "other": 360
+    },
+    "current_tiers": {
+      "national": 2,
+      "regional": 52,
+      "municipal": 2397,
+      "other": 354
+    },
+    "current_office_types": {
+      "federal_lower_chamber": 1,
+      "federal_upper_chamber": 1,
+      "cantonal_legislature": 26,
+      "cantonal_executive": 26,
+      "communal_executive": 1801,
+      "communal_president": 779,
+      "communal_legislature": 171
+    },
+    "communes_without_executive_body_evidence": 308,
+    "communes_without_positive_parliament_evidence": 1938
+  },
+  "full_current_office_universe_complete": false,
+  "historical_office_universe_complete": false,
+  "research_coverage_complete": false,
+  "hash_inputs": {
+    "canonicalization": "atlas-c14n/1",
+    "hash_algorithm": "sha256",
+    "lineage_id": "country-package-switzerland",
+    "inputs": [
+      {
+        "input_path": "data/research/switzerland/bfs-dam-28765099.json",
+        "input_kind": "package",
+        "sha256": "23163569c06a5a4a872a014779637a2c6c5cfc8dbe71ac53e96cbeb71aa4f470",
+        "byte_count": 99961
+      },
+      {
+        "input_path": "data/research/switzerland/bfs-dam-28765111.json",
+        "input_kind": "package",
+        "sha256": "ac27e4574c05098993ebcb9bf5696507115a793ae8948b82bd084e3ea113d5db",
+        "byte_count": 299451
+      },
+      {
+        "input_path": "data/research/switzerland/bfs-dam-36552088.json",
+        "input_kind": "package",
+        "sha256": "63fffe36bad06321d1ca565b68e64e4368f3c4fd2f16dec3a712c20ab993802b",
+        "byte_count": 5199214
+      },
+      {
+        "input_path": "data/research/switzerland/bfs-dam-36552089.json",
+        "input_kind": "package",
+        "sha256": "e1feb749c6307d60fceb3be41eaa09c4e7d31a7c4174c5f75e7ebffffaac57c8",
+        "byte_count": 169338
+      },
+      {
+        "input_path": "data/research/switzerland/bfs-dam-36552093.json",
+        "input_kind": "package",
+        "sha256": "256650e8c0c9e3ed336272cebe583b931e73205e3a23ce7ab89750717ee8eabf",
+        "byte_count": 4463182
+      },
+      {
+        "input_path": "data/research/switzerland/bfs-dam-36654107.json",
+        "input_kind": "package",
+        "sha256": "d8daf8ed6409aea8ac7397404e3810f7d273d54d71472bc3fc0679b84bd98608",
+        "byte_count": 1121843
+      },
+      {
+        "input_path": "data/research/switzerland/bfs-dam-36654111.json",
+        "input_kind": "package",
+        "sha256": "fc88615fcd8c85030315f39be92008c44a53dad23c3b9461a0c1e383ef3730cb",
+        "byte_count": 652924
+      },
+      {
+        "input_path": "data/research/switzerland/bfs-dam-36654116.json",
+        "input_kind": "package",
+        "sha256": "8d4d7050d3de9f2a7765c203d4575600fd0395a207abb288264b9883d9888cfd",
+        "byte_count": 474192
+      },
+      {
+        "input_path": "data/research/switzerland/commune-coverage-audit.json",
+        "input_kind": "package",
+        "sha256": "b5251c57de5674bb3e149c3998b290dce1730dc5622b42fb875f8a16838707e4",
+        "byte_count": 1701261
+      },
+      {
+        "input_path": "data/research/switzerland/commune-snapshots.json",
+        "input_kind": "package",
+        "sha256": "6095e374fa40746bd93eae3ba5a87ac13601e34560b57ed5facc302eeeccf305",
+        "byte_count": 13667908
+      },
+      {
+        "input_path": "data/research/switzerland/conflicting-claims.json",
+        "input_kind": "package",
+        "sha256": "0ed7aedbe5ac4199e3b59e659953f9675fee074cf0fa026ea121f6052c7658af",
+        "byte_count": 48613
+      },
+      {
+        "input_path": "data/research/switzerland/events.json",
+        "input_kind": "package",
+        "sha256": "57733aa2552d1cbbbf44ba1c0d28976ba53c133a7f35891378d4961b05eb0e53",
+        "byte_count": 1857834
+      },
+      {
+        "input_path": "data/research/switzerland/geographies.json",
+        "input_kind": "package",
+        "sha256": "ccc14c2fe4d18d7479201df7a011305905273ed9fba513739ad2871dea687436",
+        "byte_count": 19185060
+      },
+      {
+        "input_path": "data/research/switzerland/office-register.json",
+        "input_kind": "package",
+        "sha256": "f575711d0149660ad7b72e661d65ed9658f4bddf29045f804ef50188b34d0987",
+        "byte_count": 4631840
+      },
+      {
+        "input_path": "data/research/switzerland/proceedings.json",
+        "input_kind": "package",
+        "sha256": "a497d51de11fc1de97b775c9b86ef37f6b0acf66836c53eb19330e4bca1f9c9d",
+        "byte_count": 88631
+      },
+      {
+        "input_path": "data/research/switzerland/results.json",
+        "input_kind": "package",
+        "sha256": "91f0dbe37a0192af7e7b6822c49232430cb2e54d34e3ec43fdad12be2c67f0fb",
+        "byte_count": 19827799
+      },
+      {
+        "input_path": "data/research/switzerland/retained-observations.json",
+        "input_kind": "package",
+        "sha256": "ffce5bb89fd067bedf79ece99dea34578b99912f1d90627e51de6835201d0a94",
+        "byte_count": 8415305
+      },
+      {
+        "input_path": "data/research/switzerland/sources.json",
+        "input_kind": "package",
+        "sha256": "14fa35b54c288f67aa468b99ed2f9265feabc4e789244712182a60c78e55ed4b",
+        "byte_count": 28703
+      },
+      {
+        "input_path": "data/research/switzerland/unresolved-evidence.json",
+        "input_kind": "package",
+        "sha256": "30d3569d569a4c7e14f20d6c0c18ed42da261fa44bafb7072daacdc8ebf8b3cb",
+        "byte_count": 1476613
+      },
+      {
+        "input_path": "schemas/atlas/tiers/switzerland.json",
+        "input_kind": "tier_classification",
+        "sha256": "0cddfca20fab058ed9f1a712515fdfd1725abda7a2e5a1b7903087135893d4bf",
+        "byte_count": 4857961
+      },
+      {
+        "input_path": "sources/bern-statistics.html",
+        "input_kind": "package",
+        "sha256": "5b91a732469c20cbe002f13d76bde15fbdd3cbda9db0dd053d47684e2e361c65",
+        "byte_count": 147438
+      },
+      {
+        "input_path": "sources/bfs-cantonal-governments.html",
+        "input_kind": "package",
+        "sha256": "635fdcef4caeab9d691ffeefea9a2c22f7682963ce34e5a3bbe290eecf863204",
+        "byte_count": 3531094
+      },
+      {
+        "input_path": "sources/bfs-cantonal-parliaments.html",
+        "input_kind": "package",
+        "sha256": "2fa996f5a08f3707e6c4d286c4094f63c5e30f40e4611674d7868f08b57cb325",
+        "byte_count": 3548858
+      },
+      {
+        "input_path": "sources/bfs-communes-2010.html",
+        "input_kind": "package",
+        "sha256": "13b427bde78388d912b213c2e16ffd12ce7ae8c7bdfa538f8c67688532ee03bf",
+        "byte_count": 1118770
+      },
+      {
+        "input_path": "sources/bfs-communes-2011.html",
+        "input_kind": "package",
+        "sha256": "f77f4b9e7d1640925ed38eba5e24b0f7df289a94f53d185196b679878f568a41",
+        "byte_count": 1100156
+      },
+      {
+        "input_path": "sources/bfs-communes-2012.html",
+        "input_kind": "package",
+        "sha256": "2f0a3a439673548806a3a629cb0f763ad706db076db92edceeda7ac4f092ae8c",
+        "byte_count": 1076741
+      },
+      {
+        "input_path": "sources/bfs-communes-2013.html",
+        "input_kind": "package",
+        "sha256": "d673bcadec457af5c5b20c3893fbf003fc1129b554c4ed932765bb899c2f055f",
+        "byte_count": 1040859
+      },
+      {
+        "input_path": "sources/bfs-communes-2014.html",
+        "input_kind": "package",
+        "sha256": "f0756fc3a21d6b63ce92be02d256dbabecd72c84790cdaf9f287514b20e9632f",
+        "byte_count": 1017721
+      },
+      {
+        "input_path": "sources/bfs-communes-2015.html",
+        "input_kind": "package",
+        "sha256": "6c9fb7d9200dc89a83934f9549a5dc2b796ed74a8137cfe2e959e3ccb9855b51",
+        "byte_count": 1006266
+      },
+      {
+        "input_path": "sources/bfs-communes-2016.html",
+        "input_kind": "package",
+        "sha256": "8efb7441011a37dfda056c904c7340605f52741c4788d28e4223efd5b41249a4",
+        "byte_count": 993875
+      },
+      {
+        "input_path": "sources/bfs-communes-2017.html",
+        "input_kind": "package",
+        "sha256": "ea992b7820f4acc5acdca6aed95bac5fa53db358f7161c2dd43364fe55f4206f",
+        "byte_count": 977633
+      },
+      {
+        "input_path": "sources/bfs-communes-2018.html",
+        "input_kind": "package",
+        "sha256": "2253f78350b52d162c7169bd25976c61140603a471ecce26af7aafb3c810bc08",
+        "byte_count": 964405
+      },
+      {
+        "input_path": "sources/bfs-communes-2019.html",
+        "input_kind": "package",
+        "sha256": "5183b0e7790fe14932fea9b4ba679a7ac87b4fe31bfeb87976d2ca67a0d5ff9b",
+        "byte_count": 960255
+      },
+      {
+        "input_path": "sources/bfs-communes-2020.html",
+        "input_kind": "package",
+        "sha256": "c8cba51530167cc23d0305885fe9ab0447362db921a583252b316deda4b36fab",
+        "byte_count": 956073
+      },
+      {
+        "input_path": "sources/bfs-communes-2021.html",
+        "input_kind": "package",
+        "sha256": "8c9578fed2c9ee6bc6c2672942045d5c5cb87b6afe22b093caff7ce6cf9aee66",
+        "byte_count": 943658
+      },
+      {
+        "input_path": "sources/bfs-communes-2022.html",
+        "input_kind": "package",
+        "sha256": "1eca7bafd9afb6e8d224fd6787cb8cfe2ed679e9bc53e84e89dc69204d2d8019",
+        "byte_count": 933744
+      },
+      {
+        "input_path": "sources/bfs-communes-2023.html",
+        "input_kind": "package",
+        "sha256": "8de65836e6b32a9aae46df9c044c7c2aca44bf20925c32b80b1aae9c1e4b492d",
+        "byte_count": 928793
+      },
+      {
+        "input_path": "sources/bfs-communes-2024.html",
+        "input_kind": "package",
+        "sha256": "6cee98e19b7d13399ced18b2136cf5c1400a87864db7ade91c1b3806ee336ce6",
+        "byte_count": 926719
+      },
+      {
+        "input_path": "sources/bfs-communes-2025.html",
+        "input_kind": "package",
+        "sha256": "dd0a87b4357ca225b7564c8d7bbc9ec9f07dab81f73f5825450ef692a601d832",
+        "byte_count": 922503
+      },
+      {
+        "input_path": "sources/bfs-communes-2026.html",
+        "input_kind": "package",
+        "sha256": "eec1b926fce5a165867efe294156f8c6516231b14ea057f32e0f14701bc13e95",
+        "byte_count": 917987
+      },
+      {
+        "input_path": "sources/bfs-dam-28765099.bin",
+        "input_kind": "package",
+        "sha256": "a19722729dd8c1b606d383b7ff9c83b60e718889a52dbcfee497a2b5ffe04b3c",
+        "byte_count": 79888
+      },
+      {
+        "input_path": "sources/bfs-dam-28765111.bin",
+        "input_kind": "package",
+        "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+        "byte_count": 167840
+      },
+      {
+        "input_path": "sources/bfs-dam-36552088.bin",
+        "input_kind": "package",
+        "sha256": "f5ae27667019dc8d0d8459407cf9fdf81d349b516b9ef7fe82d6933cdf511f27",
+        "byte_count": 1765038
+      },
+      {
+        "input_path": "sources/bfs-dam-36552089.bin",
+        "input_kind": "package",
+        "sha256": "716fda05d5ca0b57eade62ee4a04cb3029e54ab17bed3ba87f3f624b6ad36a5e",
+        "byte_count": 101594
+      },
+      {
+        "input_path": "sources/bfs-dam-36552093.bin",
+        "input_kind": "package",
+        "sha256": "64ef0b5cefd57f073875b6a837d6e27007737e4fa6476831990eb7ec5c6d05cf",
+        "byte_count": 1554360
+      },
+      {
+        "input_path": "sources/bfs-dam-36654107.bin",
+        "input_kind": "package",
+        "sha256": "c3f531017226178aaca48ad96a817ebef00b71b73fe89766321d69fef95acb59",
+        "byte_count": 1015070
+      },
+      {
+        "input_path": "sources/bfs-dam-36654111.bin",
+        "input_kind": "package",
+        "sha256": "2883936b889d4b42d039afa004fb217781e3924003f1e7629532176ed3daa37a",
+        "byte_count": 632043
+      },
+      {
+        "input_path": "sources/bfs-dam-36654116.bin",
+        "input_kind": "package",
+        "sha256": "489957c696b9a342b3aadec671e20687ecb1609f1a0ff35f8cb8f2010bc1117a",
+        "byte_count": 425923
+      },
+      {
+        "input_path": "sources/federal-national.html",
+        "input_kind": "package",
+        "sha256": "1f2b0a324b52dc67fea3987880d3b864020c343a07ea243dc1e224b61c281f5b",
+        "byte_count": 117984
+      },
+      {
+        "input_path": "sources/federal-states.html",
+        "input_kind": "package",
+        "sha256": "c534b8ec3e6b2369e7ad2cb0117d6223b7d46f1f1132713f750fe5e30c687d2d",
+        "byte_count": 118124
+      },
+      {
+        "input_path": "sources/ge-constitution.html",
+        "input_kind": "package",
+        "sha256": "c1d6e3dbf7a5b29c7a4ac661ce05a916aeed16956d2458b8dc9e80ad41c88d94",
+        "byte_count": 192217
+      },
+      {
+        "input_path": "sources/ju-lcom.pdf",
+        "input_kind": "package",
+        "sha256": "4d86d677a4c5c6e37666dc7be0d3e7c8ef61fb8f8e15aa8511e66a815b71a870",
+        "byte_count": 327529
+      },
+      {
+        "input_path": "sources/law-AG.json",
+        "input_kind": "package",
+        "sha256": "33280cb1c5ebc66350c13a63775712bd484c0ba3fc590cc0d7a838b4d88adc12",
+        "byte_count": 722203
+      },
+      {
+        "input_path": "sources/law-AI.json",
+        "input_kind": "package",
+        "sha256": "8b39f98bd5e5473e0433bbd6dd4b47b447be800abae80707c7a9e5c8c650e45b",
+        "byte_count": 244860
+      },
+      {
+        "input_path": "sources/law-AR.json",
+        "input_kind": "package",
+        "sha256": "1833ca3318b36b5470768d2e770916a1aca5561108ef09c7d37f7eaf054624e2",
+        "byte_count": 131331
+      },
+      {
+        "input_path": "sources/law-BE.json",
+        "input_kind": "package",
+        "sha256": "21b773066a0aeba61fad38ddb964c4f0f3441f77ce7cb4b4984657d0d670de62",
+        "byte_count": 1168941
+      },
+      {
+        "input_path": "sources/law-BL.json",
+        "input_kind": "package",
+        "sha256": "53223700cae1a781af1e305b9189a19b574990afbd7909cc02f0e200a087478c",
+        "byte_count": 1234312
+      },
+      {
+        "input_path": "sources/law-BS.json",
+        "input_kind": "package",
+        "sha256": "0b7ba92e4d756898ff61859b45352631ce86b9dbc6ed91e62eacb9ec0ad4c99f",
+        "byte_count": 113956
+      },
+      {
+        "input_path": "sources/law-FR.json",
+        "input_kind": "package",
+        "sha256": "cd0190b68a147fb7b154add394b6c2e43e990e86bf4fbab45c80ef1c64fcf209",
+        "byte_count": 1794788
+      },
+      {
+        "input_path": "sources/law-GL.json",
+        "input_kind": "package",
+        "sha256": "ecd96bb0ff146f19e8e81acd40673426f72a18b64066f9cc3c77b5b4bd6ea951",
+        "byte_count": 318340
+      },
+      {
+        "input_path": "sources/law-GR.json",
+        "input_kind": "package",
+        "sha256": "630c534d5ffe57ef95da618211cc1faed9645249e5f6fcedf80bb5606c7509b8",
+        "byte_count": 661505
+      },
+      {
+        "input_path": "sources/law-LU.json",
+        "input_kind": "package",
+        "sha256": "378c38c255b86c1a5b59ba4b08f13f3dbd64b52d3b1bb38819cd8dd797f60f69",
+        "byte_count": 402384
+      },
+      {
+        "input_path": "sources/law-NW.json",
+        "input_kind": "package",
+        "sha256": "10ee12f8cb6f5e84c1af11f7e6e2afe2bd6ac751f4b9d483403b8e0102f6c829",
+        "byte_count": 782659
+      },
+      {
+        "input_path": "sources/law-OW.json",
+        "input_kind": "package",
+        "sha256": "b9ac9d23d7f0891aed2aaf0cd28867146f3b09f23bce83a773cb49e781659c0d",
+        "byte_count": 367774
+      },
+      {
+        "input_path": "sources/law-SG.json",
+        "input_kind": "package",
+        "sha256": "7318e60d8293a22a0739f61bb37a1e5c5976a0b52f6b23536e425aaf9a0a5a06",
+        "byte_count": 672436
+      },
+      {
+        "input_path": "sources/law-SH.json",
+        "input_kind": "package",
+        "sha256": "364d0faf1bb104bf87a597c911fc53f5c11624eb836f5ff8af5c5cf7bac43999",
+        "byte_count": 400488
+      },
+      {
+        "input_path": "sources/law-SO.json",
+        "input_kind": "package",
+        "sha256": "2c803209fe1deed44d9d03eff33483dd5062b919f80cf3a6bc61220e70fc56ce",
+        "byte_count": 796970
+      },
+      {
+        "input_path": "sources/law-TG.json",
+        "input_kind": "package",
+        "sha256": "a5d5a61d61be8fbb6b0b6c066069f7b4f96a5e96a67d2c293d4eb4e74d3a6efa",
+        "byte_count": 129633
+      },
+      {
+        "input_path": "sources/law-UR.json",
+        "input_kind": "package",
+        "sha256": "8b288a7a49a2e08e79dec1d44485a5c4e6d5f2c1327f32df58225e50fed29beb",
+        "byte_count": 178833
+      },
+      {
+        "input_path": "sources/law-VS.json",
+        "input_kind": "package",
+        "sha256": "abb285c53b30f8d6c4a3dd1d4e9bb358bc260843ddd9ce5dc749d13a15f5f884",
+        "byte_count": 766280
+      },
+      {
+        "input_path": "sources/law-ZG.json",
+        "input_kind": "package",
+        "sha256": "ee30a0782c056a0192b03af4f9948a8eb8fc181a763dce5f2b4a4af0f9f40c42",
+        "byte_count": 554588
+      },
+      {
+        "input_path": "sources/ne-law.pdf",
+        "input_kind": "package",
+        "sha256": "f3c49ba53baa478afb771d1b8bdb109e93c340568e9b91bfec3f75e34baf6eb4",
+        "byte_count": 366806
+      },
+      {
+        "input_path": "sources/px-data-103.json",
+        "input_kind": "package",
+        "sha256": "958905e9ba457bd61b7497bd930831c30a771e0de6de7ef01cff2a1203a48f51",
+        "byte_count": 106435
+      },
+      {
+        "input_path": "sources/px-data-104.json",
+        "input_kind": "package",
+        "sha256": "60332241de5958f9080e3e67292ce61ee59cf6d5325c92362eeb1d425a39e200",
+        "byte_count": 114303
+      },
+      {
+        "input_path": "sources/sgp.html",
+        "input_kind": "package",
+        "sha256": "1ddb8b6a7fb4d379ed15cb5d4a211170472c9b0cc7e67256137886d3504f1e26",
+        "byte_count": 259773
+      },
+      {
+        "input_path": "sources/ti-loc.html",
+        "input_kind": "package",
+        "sha256": "a529c0a19dfba03915150cf04072f30e0c7e930064ce85a6bc39a892e7f3321f",
+        "byte_count": 637902
+      },
+      {
+        "input_path": "sources/zh-election-dates-2026.xlsx",
+        "input_kind": "package",
+        "sha256": "4a66bf9c631b4dcdd3d3eedf64102f7b1cd2ca237d467d40d3dd84af581fac2e",
+        "byte_count": 25050
+      }
+    ],
+    "overrides": [],
+    "adapter_version": "atlas-switzerland-full-register/1",
+    "method_version": "atlas-preserve-evidence/1",
+    "schema_version": "atlas-master/1",
+    "schema_inputs": [
+      {
+        "input_path": "0001_atlas_attempt_log.sql",
+        "sha256": "f81de95235200ba08d2291975dff2beaf078160429f8ebb47288b152d8a8cddf"
+      },
+      {
+        "input_path": "0002_atlas_master.sql",
+        "sha256": "51582d55052f947a04a71db24523ee22d85eb73faa2f6d440025df7441dc5a27"
+      }
+    ]
+  },
+  "candidate_fingerprint_sha256": "24a99825316890d8cba0e5b1bf7e76f5072002b1c0811ebbeaa67f2a7d4c9ff6",
+  "candidate_release_id": "country-package-switzerland--sha256-24a99825316890d8cba0e5b1bf7e76f5072002b1c0811ebbeaa67f2a7d4c9ff6",
+  "sources": [
+    {
+      "source_id": "switzerland--url-484778a6ba8bb1249a25d1b9",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bern-statistics.html",
+      "url": "https://www.gemeinden.dij.be.ch/de/start/daten/statistische-daten-der-gemeinden.html",
+      "publisher": "www.gemeinden.dij.be.ch",
+      "sha256": "5b91a732469c20cbe002f13d76bde15fbdd3cbda9db0dd053d47684e2e361c65",
+      "bytes": 147438,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-5ddff3e11b4b532063ab427e",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-cantonal-governments.html",
+      "url": "https://www.bfs.admin.ch/bfs/de/home/statistiken/politik/wahlen/kantonale-wahlen/kantonsregierungen.html",
+      "publisher": "www.bfs.admin.ch",
+      "sha256": "635fdcef4caeab9d691ffeefea9a2c22f7682963ce34e5a3bbe290eecf863204",
+      "bytes": 3531094,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-66249f15ea2bf46fcfe84ed2",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-cantonal-parliaments.html",
+      "url": "https://www.bfs.admin.ch/bfs/de/home/statistiken/politik/wahlen/kantonale-wahlen/kantonsparlamente.html",
+      "publisher": "www.bfs.admin.ch",
+      "sha256": "2fa996f5a08f3707e6c4d286c4094f63c5e30f40e4611674d7868f08b57cb325",
+      "bytes": 3548858,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-37a7dd001e50b65fced8c97c",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2010.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2010",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "13b427bde78388d912b213c2e16ffd12ce7ae8c7bdfa538f8c67688532ee03bf",
+      "bytes": 1118770,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-9dedc7c6aed189ada001fc5e",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2011.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2011",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "f77f4b9e7d1640925ed38eba5e24b0f7df289a94f53d185196b679878f568a41",
+      "bytes": 1100156,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-c041994683e997bc10b1da73",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2012.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2012",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "2f0a3a439673548806a3a629cb0f763ad706db076db92edceeda7ac4f092ae8c",
+      "bytes": 1076741,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-40a72821bc59893fe7e11a37",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2013.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2013",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "d673bcadec457af5c5b20c3893fbf003fc1129b554c4ed932765bb899c2f055f",
+      "bytes": 1040859,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-6e297a413ccc1155644dfa70",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2014.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2014",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "f0756fc3a21d6b63ce92be02d256dbabecd72c84790cdaf9f287514b20e9632f",
+      "bytes": 1017721,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-44e9ef59feb2f9010780c551",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2015.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2015",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "6c9fb7d9200dc89a83934f9549a5dc2b796ed74a8137cfe2e959e3ccb9855b51",
+      "bytes": 1006266,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-16e60fc9a28de6421fed8e28",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2016.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2016",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "8efb7441011a37dfda056c904c7340605f52741c4788d28e4223efd5b41249a4",
+      "bytes": 993875,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-229b3b383ea6dc34e54c41a9",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2017.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2017",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "ea992b7820f4acc5acdca6aed95bac5fa53db358f7161c2dd43364fe55f4206f",
+      "bytes": 977633,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-c264e02a1699eac2577f2122",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2018.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2018",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "2253f78350b52d162c7169bd25976c61140603a471ecce26af7aafb3c810bc08",
+      "bytes": 964405,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-9f30b8ebd2b662d8943b1a8d",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2019.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2019",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "5183b0e7790fe14932fea9b4ba679a7ac87b4fe31bfeb87976d2ca67a0d5ff9b",
+      "bytes": 960255,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-0b57a451a1a82b9b0184e555",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2020.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2020",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "c8cba51530167cc23d0305885fe9ab0447362db921a583252b316deda4b36fab",
+      "bytes": 956073,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-f11a574527c4189c51ac280b",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2021.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2021",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "8c9578fed2c9ee6bc6c2672942045d5c5cb87b6afe22b093caff7ce6cf9aee66",
+      "bytes": 943658,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-a08eadd971c713aa8c288357",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2022.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2022",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "1eca7bafd9afb6e8d224fd6787cb8cfe2ed679e9bc53e84e89dc69204d2d8019",
+      "bytes": 933744,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-0a5294b575d8313f9e2562d1",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2023.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2023",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "8de65836e6b32a9aae46df9c044c7c2aca44bf20925c32b80b1aae9c1e4b492d",
+      "bytes": 928793,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-a0c0bc4a36b7171e483f04ec",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2024.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2024",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "6cee98e19b7d13399ced18b2136cf5c1400a87864db7ade91c1b3806ee336ce6",
+      "bytes": 926719,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-d9d09b59331c4af011df1d49",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2025.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2025",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "dd0a87b4357ca225b7564c8d7bbc9ec9f07dab81f73f5825450ef692a601d832",
+      "bytes": 922503,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-efbcc56b05b6b84e1c73f2d1",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-communes-2026.html",
+      "url": "https://www.agvchapp.bfs.admin.ch/de/state/results?SnapshotDate=01.01.2026",
+      "publisher": "www.agvchapp.bfs.admin.ch",
+      "sha256": "eec1b926fce5a165867efe294156f8c6516231b14ea057f32e0f14701bc13e95",
+      "bytes": 917987,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-6a9fa07a91235223cb0da2cd",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-dam-28765099.bin",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/28765099/master",
+      "publisher": "dam-api.bfs.admin.ch",
+      "sha256": "a19722729dd8c1b606d383b7ff9c83b60e718889a52dbcfee497a2b5ffe04b3c",
+      "bytes": 79888,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-d4cba7759f8bac6498687daf",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-dam-28765111.bin",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/28765111/master",
+      "publisher": "dam-api.bfs.admin.ch",
+      "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+      "bytes": 167840,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-952e69d02f798f741e98c41d",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-dam-36552088.bin",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36552088/master",
+      "publisher": "dam-api.bfs.admin.ch",
+      "sha256": "f5ae27667019dc8d0d8459407cf9fdf81d349b516b9ef7fe82d6933cdf511f27",
+      "bytes": 1765038,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-3f08d05dd11c75428b6bc3e2",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-dam-36552089.bin",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36552089/master",
+      "publisher": "dam-api.bfs.admin.ch",
+      "sha256": "716fda05d5ca0b57eade62ee4a04cb3029e54ab17bed3ba87f3f624b6ad36a5e",
+      "bytes": 101594,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-9fc3981a0f5b973905149455",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-dam-36552093.bin",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36552093/master",
+      "publisher": "dam-api.bfs.admin.ch",
+      "sha256": "64ef0b5cefd57f073875b6a837d6e27007737e4fa6476831990eb7ec5c6d05cf",
+      "bytes": 1554360,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-69297ba7f3a372e00b615f47",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-dam-36654107.bin",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36654107/master",
+      "publisher": "dam-api.bfs.admin.ch",
+      "sha256": "c3f531017226178aaca48ad96a817ebef00b71b73fe89766321d69fef95acb59",
+      "bytes": 1015070,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-44a767861c417e8e5f3d8442",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-dam-36654111.bin",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36654111/master",
+      "publisher": "dam-api.bfs.admin.ch",
+      "sha256": "2883936b889d4b42d039afa004fb217781e3924003f1e7629532176ed3daa37a",
+      "bytes": 632043,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-c843481ce85c9c1578a73507",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/bfs-dam-36654116.bin",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36654116/master",
+      "publisher": "dam-api.bfs.admin.ch",
+      "sha256": "489957c696b9a342b3aadec671e20687ecb1609f1a0ff35f8cb8f2010bc1117a",
+      "bytes": 425923,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-21b1e4ac652b156f31196def",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/federal-national.html",
+      "url": "https://www.parlament.ch/en/organe/national-council",
+      "publisher": "www.parlament.ch",
+      "sha256": "1f2b0a324b52dc67fea3987880d3b864020c343a07ea243dc1e224b61c281f5b",
+      "bytes": 117984,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-fc913b24a5001c845e3194af",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/federal-states.html",
+      "url": "https://www.parlament.ch/en/organe/council-of-states",
+      "publisher": "www.parlament.ch",
+      "sha256": "c534b8ec3e6b2369e7ad2cb0117d6223b7d46f1f1132713f750fe5e30c687d2d",
+      "bytes": 118124,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-6e022a55e1eb338c3cf1f637",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/ge-constitution.html",
+      "url": "https://silgeneve.ch/legis/data/rsg_a2_00.htm",
+      "publisher": "silgeneve.ch",
+      "sha256": "c1d6e3dbf7a5b29c7a4ac661ce05a916aeed16956d2458b8dc9e80ad41c88d94",
+      "bytes": 192217,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-ed61da9b077fea211765f7b5",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/ju-lcom.pdf",
+      "url": "https://rsju.jura.ch/fr/viewdocument.html?idn=20030&id=36873&v=10&Download=1&Fn=190.11_01.01.2020.pdf",
+      "publisher": "rsju.jura.ch",
+      "sha256": "4d86d677a4c5c6e37666dc7be0d3e7c8ef61fb8f8e15aa8511e66a815b71a870",
+      "bytes": 327529,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-857087e71e9c6c5b3281503d",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-AG.json",
+      "url": "https://gesetzessammlungen.ag.ch/api/de/texts_of_law/171.100/show_as_json",
+      "publisher": "gesetzessammlungen.ag.ch",
+      "sha256": "33280cb1c5ebc66350c13a63775712bd484c0ba3fc590cc0d7a838b4d88adc12",
+      "bytes": 722203,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-14360b6d3315a84dfbe5c134",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-AI.json",
+      "url": "https://ai.clex.ch/api/de/texts_of_law/101.000/show_as_json",
+      "publisher": "ai.clex.ch",
+      "sha256": "8b39f98bd5e5473e0433bbd6dd4b47b447be800abae80707c7a9e5c8c650e45b",
+      "bytes": 244860,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-6785cbe171faca8f113a85cc",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-AR.json",
+      "url": "https://www.bgs.ar.ch/api/de/texts_of_law/151.11/show_as_json",
+      "publisher": "www.bgs.ar.ch",
+      "sha256": "1833ca3318b36b5470768d2e770916a1aca5561108ef09c7d37f7eaf054624e2",
+      "bytes": 131331,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-606dfc0119bd8b549cccd430",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-BE.json",
+      "url": "https://www.belex.sites.be.ch/api/de/texts_of_law/170.11/show_as_json",
+      "publisher": "www.belex.sites.be.ch",
+      "sha256": "21b773066a0aeba61fad38ddb964c4f0f3441f77ce7cb4b4984657d0d670de62",
+      "bytes": 1168941,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-e462c6e24cb746f555a8eca9",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-BL.json",
+      "url": "https://bl.clex.ch/api/de/texts_of_law/180/show_as_json",
+      "publisher": "bl.clex.ch",
+      "sha256": "53223700cae1a781af1e305b9189a19b574990afbd7909cc02f0e200a087478c",
+      "bytes": 1234312,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-f13d40c9faf5fa307c7c7872",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-BS.json",
+      "url": "https://www.gesetzessammlung.bs.ch/api/de/texts_of_law/170.100/show_as_json",
+      "publisher": "www.gesetzessammlung.bs.ch",
+      "sha256": "0b7ba92e4d756898ff61859b45352631ce86b9dbc6ed91e62eacb9ec0ad4c99f",
+      "bytes": 113956,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-a7ee33592dc430ab9f840e49",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-FR.json",
+      "url": "https://bdlf.fr.ch/api/fr/texts_of_law/140.1/show_as_json",
+      "publisher": "bdlf.fr.ch",
+      "sha256": "cd0190b68a147fb7b154add394b6c2e43e990e86bf4fbab45c80ef1c64fcf209",
+      "bytes": 1794788,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-9cd271107be343cc0ee4211a",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-GL.json",
+      "url": "https://gesetze.gl.ch/api/de/texts_of_law/II%20E%2F2/show_as_json",
+      "publisher": "gesetze.gl.ch",
+      "sha256": "ecd96bb0ff146f19e8e81acd40673426f72a18b64066f9cc3c77b5b4bd6ea951",
+      "bytes": 318340,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-92f19ca0491a315ba9bbb55f",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-GR.json",
+      "url": "https://www.gr-lex.gr.ch/api/de/texts_of_law/175.050/show_as_json",
+      "publisher": "www.gr-lex.gr.ch",
+      "sha256": "630c534d5ffe57ef95da618211cc1faed9645249e5f6fcedf80bb5606c7509b8",
+      "bytes": 661505,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-a8e4fc7c812f48e4cfb0dd2f",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-LU.json",
+      "url": "https://srl.lu.ch/api/de/texts_of_law/150/show_as_json",
+      "publisher": "srl.lu.ch",
+      "sha256": "378c38c255b86c1a5b59ba4b08f13f3dbd64b52d3b1bb38819cd8dd797f60f69",
+      "bytes": 402384,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-a67b97afc23d823420cf9b9b",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-NW.json",
+      "url": "https://gesetze.nw.ch/api/de/texts_of_law/171.1/show_as_json",
+      "publisher": "gesetze.nw.ch",
+      "sha256": "10ee12f8cb6f5e84c1af11f7e6e2afe2bd6ac751f4b9d483403b8e0102f6c829",
+      "bytes": 782659,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-b94f897bef79467840472c90",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-OW.json",
+      "url": "https://gdb.ow.ch/api/de/texts_of_law/101.0/show_as_json",
+      "publisher": "gdb.ow.ch",
+      "sha256": "b9ac9d23d7f0891aed2aaf0cd28867146f3b09f23bce83a773cb49e781659c0d",
+      "bytes": 367774,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-061e3295c9ab1cd689edb764",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-SG.json",
+      "url": "https://www.gesetzessammlung.sg.ch/api/de/texts_of_law/151.2/show_as_json",
+      "publisher": "www.gesetzessammlung.sg.ch",
+      "sha256": "7318e60d8293a22a0739f61bb37a1e5c5976a0b52f6b23536e425aaf9a0a5a06",
+      "bytes": 672436,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-2cbb07910d02186e2930ae23",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-SH.json",
+      "url": "https://rechtsbuch.sh.ch/api/de/texts_of_law/120.100/show_as_json",
+      "publisher": "rechtsbuch.sh.ch",
+      "sha256": "364d0faf1bb104bf87a597c911fc53f5c11624eb836f5ff8af5c5cf7bac43999",
+      "bytes": 400488,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-efd44b8e3cadecf35efb5272",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-SO.json",
+      "url": "https://bgs.so.ch/api/de/texts_of_law/131.1/show_as_json",
+      "publisher": "bgs.so.ch",
+      "sha256": "2c803209fe1deed44d9d03eff33483dd5062b919f80cf3a6bc61220e70fc56ce",
+      "bytes": 796970,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-083f2ffeb22780f480a1ed2d",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-TG.json",
+      "url": "https://www.rechtsbuch.tg.ch/api/de/texts_of_law/131.1/show_as_json",
+      "publisher": "www.rechtsbuch.tg.ch",
+      "sha256": "a5d5a61d61be8fbb6b0b6c066069f7b4f96a5e96a67d2c293d4eb4e74d3a6efa",
+      "bytes": 129633,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-48917158d55e6b3a54af163e",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-UR.json",
+      "url": "https://rechtsbuch.ur.ch/api/de/texts_of_law/1.1111/show_as_json",
+      "publisher": "rechtsbuch.ur.ch",
+      "sha256": "8b288a7a49a2e08e79dec1d44485a5c4e6d5f2c1327f32df58225e50fed29beb",
+      "bytes": 178833,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-48a003071f488a29516ddae7",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-VS.json",
+      "url": "https://lex.vs.ch/api/fr/texts_of_law/175.1/show_as_json",
+      "publisher": "lex.vs.ch",
+      "sha256": "abb285c53b30f8d6c4a3dd1d4e9bb358bc260843ddd9ce5dc749d13a15f5f884",
+      "bytes": 766280,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-7f99199c7f7e2c715fed27e7",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/law-ZG.json",
+      "url": "https://bgs.zg.ch/api/de/texts_of_law/171.1/show_as_json",
+      "publisher": "bgs.zg.ch",
+      "sha256": "ee30a0782c056a0192b03af4f9948a8eb8fc181a763dce5f2b4a4af0f9f40c42",
+      "bytes": 554588,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-a08edad6172c42d28aea0b7e",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/ne-law.pdf",
+      "url": "https://rsn.ne.ch/DATA/program/books/rsne/pdf/1711.pdf",
+      "publisher": "rsn.ne.ch",
+      "sha256": "f3c49ba53baa478afb771d1b8bdb109e93c340568e9b91bfec3f75e34baf6eb4",
+      "bytes": 366806,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-5065ce949ff8332c76b3f0d4",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/px-data-103.json",
+      "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-1702020000_103/px-x-1702020000_103.px",
+      "publisher": "www.pxweb.bfs.admin.ch",
+      "sha256": "958905e9ba457bd61b7497bd930831c30a771e0de6de7ef01cff2a1203a48f51",
+      "bytes": 106435,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-27b4eabeec6bc0386bac4414",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/px-data-104.json",
+      "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-1702020000_104/px-x-1702020000_104.px",
+      "publisher": "www.pxweb.bfs.admin.ch",
+      "sha256": "60332241de5958f9080e3e67292ce61ee59cf6d5325c92362eeb1d425a39e200",
+      "bytes": 114303,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-b6acf06739afa4e42cab6b8c",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/sgp.html",
+      "url": "https://sgp-ssp.net/",
+      "publisher": "sgp-ssp.net",
+      "sha256": "1ddb8b6a7fb4d379ed15cb5d4a211170472c9b0cc7e67256137886d3504f1e26",
+      "bytes": 259773,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-3e93abdca210df34c234d1a1",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/ti-loc.html",
+      "url": "https://www3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/legge-piatta/num/65",
+      "publisher": "www3.ti.ch",
+      "sha256": "a529c0a19dfba03915150cf04072f30e0c7e930064ce85a6bc39a892e7f3321f",
+      "bytes": 637902,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "switzerland--url-ebf0f1aa00f5307ca2af9b9c",
+      "source_namespace": "country-package-switzerland",
+      "country_id": "switzerland",
+      "input_path": "sources/zh-election-dates-2026.xlsx",
+      "url": "https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/politik-staat/wahlen-abstimmungen/gemeindewahlen/beh%C3%B6rdenwahltermine_2026_publikation.xlsx",
+      "publisher": "www.zh.ch",
+      "sha256": "4a66bf9c631b4dcdd3d3eedf64102f7b1cd2ca237d467d40d3dd84af581fac2e",
+      "bytes": 25050,
+      "checked_as_of_label": "2026-09-19",
+      "data_rights": "unknown"
+    }
+  ],
+  "source_retrieval_failures": [
+    {
+      "path": "opendata-elections.json",
+      "url": "https://ckan.opendata.swiss/api/3/action/package_search?q=Wahlen&rows=100",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "bfs-local.html",
+      "url": "https://www.bfs.admin.ch/bfs/de/home/statistiken/politik/wahlen/kommunale-wahlen.html",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "bfs-dam-36219646.bin",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36219646/master",
+      "status": "unavailable",
+      "error": "HTTP Error 404: "
+    },
+    {
+      "path": "bfs-dam-5930945.bin",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/5930945/master",
+      "status": "unavailable",
+      "error": "HTTP Error 404: "
+    },
+    {
+      "path": "bfs-dam-5930967.bin",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/5930967/master",
+      "status": "unavailable",
+      "error": "HTTP Error 404: "
+    },
+    {
+      "path": "bfs-dam-30146543.bin",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/30146543/master",
+      "status": "unavailable",
+      "error": "HTTP Error 404: "
+    },
+    {
+      "path": "lead-executive-laws.html",
+      "url": "https://fr.wikipedia.org/wiki/Ex%C3%A9cutif_communal_en_Suisse",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "lead-legislature-laws.html",
+      "url": "https://fr.wikipedia.org/wiki/L%C3%A9gislatif_communal_en_Suisse",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "ne-law.html",
+      "url": "https://rsn.ne.ch/DATA/program/books/rsne/htm/1711.htm",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "wiki-exec-api.json",
+      "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=Ex%C3%A9cutif_communal_en_Suisse&prop=externallinks&format=json",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "bfs-dam-5931038.bin",
+      "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/5931038/master",
+      "status": "unavailable",
+      "error": "HTTP Error 404: "
+    },
+    {
+      "path": "ti-elections.html",
+      "url": "https://www4.ti.ch/generale/dirittipolitici/votazioni-e-elezioni/elezioni-comunali-2024",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "law-GL.json",
+      "url": "https://gesetze.gl.ch/api/de/texts_of_law/II%20E~2/show_as_json",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "law-SZ.json",
+      "url": "https://www.gesetzessammlung.sz.ch/api/de/texts_of_law/152.100/show_as_json",
+      "status": "unavailable",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "path": "law-JU.json",
+      "url": "https://rsju.jura.ch/api/fr/texts_of_law/190.11/show_as_json",
+      "status": "unavailable",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "path": "vd-scrutins.html",
+      "url": "https://www.vd.ch/themes/etat-droit-finances/votations-et-elections/prochains-scrutins/",
+      "status": "unavailable",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "path": "vd-communes.html",
+      "url": "https://www.vd.ch/etat-droit-finances/communes/affaires-communales/communes-vaudoises-et-districts",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "sz-law.pdf",
+      "url": "https://www.sz.ch/public/upload/assets/5454/152_100.pdf",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "ne-law-alt.html",
+      "url": "https://rsn.ne.ch/DATA/program/books/rsne/htm/1711.html",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "ti-law-search.html",
+      "url": "https://www3.ti.ch/CAN/RLeggi/public/index.php/raccolta-leggi/ricerca",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "sz-gog.html",
+      "url": "https://www.sz.ch/public/upload/assets/5454/152_100.pdf",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "vd-lc-versions.json",
+      "url": "https://prestations.vd.ch/pub/blv-publication/api/actes/CONSOLIDE?cote=175.11",
+      "status": "unavailable",
+      "error": "HTTP Error 500: "
+    },
+    {
+      "path": "vd-lc-search.json",
+      "url": "https://prestations.vd.ch/pub/blv-publication/api/actes/rechercher?keyword=175.11&textes=COTE&statuts=EN_VIGUEUR&categories=CONSOLIDE&importances=MAJEUR",
+      "status": "unavailable",
+      "error": "HTTP Error 500: "
+    },
+    {
+      "path": "sz-law-index.html",
+      "url": "https://www.sz.ch/kanton/gesetze/systematische-gesetzsammlung.html/8756-8757-10021-11689",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "contract_inputs": [
+    {
+      "repository_path": "schemas/atlas/migrations/0001_atlas_attempt_log.sql",
+      "sha256": "f81de95235200ba08d2291975dff2beaf078160429f8ebb47288b152d8a8cddf"
+    },
+    {
+      "repository_path": "schemas/atlas/migrations/0002_atlas_master.sql",
+      "sha256": "51582d55052f947a04a71db24523ee22d85eb73faa2f6d440025df7441dc5a27"
+    }
+  ],
+  "applied_changes": 0,
+  "justin_acceptance": {
+    "date": "2026-09-19",
+    "timezone": "America/Edmonton",
+    "accepted_by": "Justin",
+    "current_offices": 2805,
+    "historical_offices": 11,
+    "offices": 2816,
+    "scope": "evidenced_subset",
+    "full_register_certified": false,
+    "held_commune_executive_gaps": 308,
+    "held_commune_executive_gaps_by_canton": {
+      "VD": 284,
+      "SZ": 24
+    },
+    "held_historical_geographies_without_offices": 586,
+    "held_communes_without_positive_parliament_evidence": 1938,
+    "disputed_result_rows": 16
+  },
+  "predecessor_draft_tier_sha256": "0cddfca20fab058ed9f1a712515fdfd1725abda7a2e5a1b7903087135893d4bf",
+  "accepted_tier_sha256": "d1ebccfd1633aacd9b70732dcfe1f3e01df9549076d4b71efce38d436a2749f1",
+  "review_pack_slim_zip_sha256": "44cc615af90561d8da65fcb74bd72896a1fcab924d3e086a6d79fafd034216db",
+  "original_full_zip_sha256": "fa166825db67b6cfab89193e518a68613b80940cc613a17c45a674295127542c",
+  "landing_main_at_review": "e64afc3"
+}
