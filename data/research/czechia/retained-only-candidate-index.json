@@ -1,0 +1,3356 @@
+[
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-1b829894adbb47ba80dcc917",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2022/csv_od/kvros.csv",
+      "sha256": "6ec271961b2889a6d6d430c0980424366c1008d1c93f616be5911042a4f5c271",
+      "archive_entry": null,
+      "locator": {
+        "csv_record": 4964
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20220923",
+      "OKRES": "2111",
+      "KODZASTUP": "541451",
+      "NAZEVZAST": "Třebsko",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "PAVEL ŠEDIVÝ",
+      "ZKRATKAO30": "PAVEL ŠEDIVÝ",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-1b829894adbb47ba80dcc917",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2022/csv_od/kvros.csv",
+      "sha256": "6ec271961b2889a6d6d430c0980424366c1008d1c93f616be5911042a4f5c271",
+      "archive_entry": null,
+      "locator": {
+        "csv_record": 4965
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20220923",
+      "OKRES": "2111",
+      "KODZASTUP": "541451",
+      "NAZEVZAST": "Třebsko",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Petr Brázda",
+      "ZKRATKAO30": "Petr Brázda",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-1b829894adbb47ba80dcc917",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2022/csv_od/kvros.csv",
+      "sha256": "6ec271961b2889a6d6d430c0980424366c1008d1c93f616be5911042a4f5c271",
+      "archive_entry": null,
+      "locator": {
+        "csv_record": 7265
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20220923",
+      "OKRES": "3104",
+      "KODZASTUP": "549657",
+      "NAZEVZAST": "Nevězice",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Ing. Vladimír Kyliánek",
+      "ZKRATKAO30": "Vladimír Kyliánek",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-1b829894adbb47ba80dcc917",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2022/csv_od/kvros.csv",
+      "sha256": "6ec271961b2889a6d6d430c0980424366c1008d1c93f616be5911042a4f5c271",
+      "archive_entry": null,
+      "locator": {
+        "csv_record": 7266
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20220923",
+      "OKRES": "3104",
+      "KODZASTUP": "549657",
+      "NAZEVZAST": "Nevězice",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Otokar Malkus",
+      "ZKRATKAO30": "Otokar Malkus",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-1b829894adbb47ba80dcc917",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2022/csv_od/kvros.csv",
+      "sha256": "6ec271961b2889a6d6d430c0980424366c1008d1c93f616be5911042a4f5c271",
+      "archive_entry": null,
+      "locator": {
+        "csv_record": 7267
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20220923",
+      "OKRES": "3104",
+      "KODZASTUP": "549657",
+      "NAZEVZAST": "Nevězice",
+      "COBVODU": "1",
+      "POR_STR_HL": "3",
+      "OSTRANA": "803",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Jakub Kuchejda",
+      "ZKRATKAO30": "Jakub Kuchejda",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-1b829894adbb47ba80dcc917",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2022/csv_od/kvros.csv",
+      "sha256": "6ec271961b2889a6d6d430c0980424366c1008d1c93f616be5911042a4f5c271",
+      "archive_entry": null,
+      "locator": {
+        "csv_record": 7268
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20220923",
+      "OKRES": "3104",
+      "KODZASTUP": "549657",
+      "NAZEVZAST": "Nevězice",
+      "COBVODU": "1",
+      "POR_STR_HL": "4",
+      "OSTRANA": "804",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Emil Mašanka",
+      "ZKRATKAO30": "Emil Mašanka",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-1b829894adbb47ba80dcc917",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2022/csv_od/kvros.csv",
+      "sha256": "6ec271961b2889a6d6d430c0980424366c1008d1c93f616be5911042a4f5c271",
+      "archive_entry": null,
+      "locator": {
+        "csv_record": 13998
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20220923",
+      "OKRES": "2107",
+      "KODZASTUP": "571148",
+      "NAZEVZAST": "Rokytovec",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "MARTIN JANDA",
+      "ZKRATKAO30": "MARTIN JANDA",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-1b829894adbb47ba80dcc917",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2022/csv_od/kvros.csv",
+      "sha256": "6ec271961b2889a6d6d430c0980424366c1008d1c93f616be5911042a4f5c271",
+      "archive_entry": null,
+      "locator": {
+        "csv_record": 13999
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20220923",
+      "OKRES": "2107",
+      "KODZASTUP": "571148",
+      "NAZEVZAST": "Rokytovec",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "ZBYNĚK HORVÁT",
+      "ZKRATKAO30": "ZBYNĚK HORVÁT",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-1b829894adbb47ba80dcc917",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2022/csv_od/kvros.csv",
+      "sha256": "6ec271961b2889a6d6d430c0980424366c1008d1c93f616be5911042a4f5c271",
+      "archive_entry": null,
+      "locator": {
+        "csv_record": 21076
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20220923",
+      "OKRES": "6207",
+      "KODZASTUP": "593842",
+      "NAZEVZAST": "Břežany",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "František Makiš, nezávislý kandidát",
+      "ZKRATKAO30": "František Makiš, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-1b829894adbb47ba80dcc917",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2022/csv_od/kvros.csv",
+      "sha256": "6ec271961b2889a6d6d430c0980424366c1008d1c93f616be5911042a4f5c271",
+      "archive_entry": null,
+      "locator": {
+        "csv_record": 23647
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20251206",
+      "OKRES": "4204",
+      "KODZASTUP": "546895",
+      "NAZEVZAST": "Brodec",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "1",
+      "VSTRANA": "1",
+      "NAZEVCELK": "KDU-ČSL",
+      "ZKRATKAO30": "KDU-ČSL",
+      "ZKRATKAO8": "KDU-ČSL",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "001",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 2247
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "2106",
+      "KODZASTUP": "531774",
+      "NAZEVZAST": "Kadlín",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Miroslav Javorský",
+      "ZKRATKAO30": "Miroslav Javorský",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 2248
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "2106",
+      "KODZASTUP": "531774",
+      "NAZEVZAST": "Kadlín",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Jiří Hanzel",
+      "ZKRATKAO30": "Jiří Hanzel",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 7896
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "5202",
+      "KODZASTUP": "549169",
+      "NAZEVZAST": "Kbelnice",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Roman Jenček",
+      "ZKRATKAO30": "Roman Jenček",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 8135
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "6105",
+      "KODZASTUP": "549886",
+      "NAZEVZAST": "Střítež",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Bohdan Janda",
+      "ZKRATKAO30": "Bohdan Janda",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 10929
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "3204",
+      "KODZASTUP": "557722",
+      "NAZEVZAST": "Horšice",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Tomáš Seifert",
+      "ZKRATKAO30": "Tomáš Seifert",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 13386
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "2112",
+      "KODZASTUP": "565181",
+      "NAZEVZAST": "Děkov",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "7",
+      "VSTRANA": "7",
+      "NAZEVCELK": "Česká strana sociálně demokratická",
+      "ZKRATKAO30": "Česká str.soc.demokratická.",
+      "ZKRATKAO8": "ČSSD",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "007",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 13889
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "3206",
+      "KODZASTUP": "566845",
+      "NAZEVZAST": "Skomelno",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "803",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Josef Turek",
+      "ZKRATKAO30": "Josef Turek",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 13890
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "3206",
+      "KODZASTUP": "566845",
+      "NAZEVZAST": "Skomelno",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Ladislav Jelínek",
+      "ZKRATKAO30": "Ladislav Jelínek",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 13891
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "3206",
+      "KODZASTUP": "566845",
+      "NAZEVZAST": "Skomelno",
+      "COBVODU": "1",
+      "POR_STR_HL": "3",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Pavel Grüner",
+      "ZKRATKAO30": "Pavel Grüner",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 15457
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "2110",
+      "KODZASTUP": "571318",
+      "NAZEVZAST": "Roblín",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Kateřina Linhartová",
+      "ZKRATKAO30": "Kateřina Linhartová",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 15458
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "2110",
+      "KODZASTUP": "571318",
+      "NAZEVZAST": "Roblín",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Josef Linhart",
+      "ZKRATKAO30": "Josef Linhart",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 15459
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "2110",
+      "KODZASTUP": "571318",
+      "NAZEVZAST": "Roblín",
+      "COBVODU": "1",
+      "POR_STR_HL": "3",
+      "OSTRANA": "803",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Stanislav Huml",
+      "ZKRATKAO30": "Stanislav Huml",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 17774
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "5104",
+      "KODZASTUP": "577596",
+      "NAZEVZAST": "Tatobity",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "JAROMÍR DANIEL",
+      "ZKRATKAO30": "JAROMÍR DANIEL",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 17775
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "5104",
+      "KODZASTUP": "577596",
+      "NAZEVZAST": "Tatobity",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "JIŘÍ LINKA",
+      "ZKRATKAO30": "JIŘÍ LINKA",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 17776
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "5104",
+      "KODZASTUP": "577596",
+      "NAZEVZAST": "Tatobity",
+      "COBVODU": "1",
+      "POR_STR_HL": "3",
+      "OSTRANA": "803",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Luděk Štěpnička, Ing.",
+      "ZKRATKAO30": "Luděk Štěpnička, Ing.",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 17777
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "5104",
+      "KODZASTUP": "577596",
+      "NAZEVZAST": "Tatobity",
+      "COBVODU": "1",
+      "POR_STR_HL": "4",
+      "OSTRANA": "804",
+      "VSTRANA": "80",
+      "NAZEVCELK": "LENKA MALÁ",
+      "ZKRATKAO30": "LENKA MALÁ",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 17778
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "5104",
+      "KODZASTUP": "577596",
+      "NAZEVZAST": "Tatobity",
+      "COBVODU": "1",
+      "POR_STR_HL": "5",
+      "OSTRANA": "805",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Radan Mlejnek",
+      "ZKRATKAO30": "Radan Mlejnek",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 17779
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "5104",
+      "KODZASTUP": "577596",
+      "NAZEVZAST": "Tatobity",
+      "COBVODU": "1",
+      "POR_STR_HL": "6",
+      "OSTRANA": "806",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Zdeněk Dědeček Ing.",
+      "ZKRATKAO30": "Zdeněk Dědeček Ing.",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 18211
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "5303",
+      "KODZASTUP": "578959",
+      "NAZEVZAST": "Víska u Jevíčka",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Jana Richterová",
+      "ZKRATKAO30": "Jana Richterová",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-e433194a9d875c8b2b454a87",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2018/KV2018_reg_20230224_csv.zip",
+      "sha256": "5b51c881ab92d7712ccce944606f2790edbfe93a0deab0f09406ec0d48764dd4",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 18212
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20181005",
+      "OKRES": "5303",
+      "KODZASTUP": "578959",
+      "NAZEVZAST": "Víska u Jevíčka",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Bohuslav Zatloukal",
+      "ZKRATKAO30": "Bohuslav Zatloukal",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 4061
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "3101",
+      "KODZASTUP": "535915",
+      "NAZEVZAST": "Vlkov",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Eliška Veselá, nezávislý kandidát",
+      "ZKRATKAO30": "Eliška Veselá, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 4062
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "3101",
+      "KODZASTUP": "535915",
+      "NAZEVZAST": "Vlkov",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Ing. Vladimír Marek, nezávislý kandidát",
+      "ZKRATKAO30": "Ing. Vladimír Marek, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 4063
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "3101",
+      "KODZASTUP": "535915",
+      "NAZEVZAST": "Vlkov",
+      "COBVODU": "1",
+      "POR_STR_HL": "3",
+      "OSTRANA": "803",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Miloslav Jirků, nezávislý kandidát",
+      "ZKRATKAO30": "Miloslav Jirků, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 4064
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "3101",
+      "KODZASTUP": "535915",
+      "NAZEVZAST": "Vlkov",
+      "COBVODU": "1",
+      "POR_STR_HL": "4",
+      "OSTRANA": "804",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Václav Vondrášek, nezávislý kandidát",
+      "ZKRATKAO30": "Václav Vondrášek, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 7659
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "3206",
+      "KODZASTUP": "546551",
+      "NAZEVZAST": "Újezd u Svatého Kříže",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Jiří Peterka, nezávislý kandidát",
+      "ZKRATKAO30": "Jiří Peterka, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 14505
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "2111",
+      "KODZASTUP": "564664",
+      "NAZEVZAST": "Bukovany",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Ing. David Kaiser",
+      "ZKRATKAO30": "Ing. David Kaiser",
+      "ZKRATKAO8": "Ing. D. Kaiser",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 14506
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "2111",
+      "KODZASTUP": "564664",
+      "NAZEVZAST": "Bukovany",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "803",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Nezávislý kandidát Josef Kavka",
+      "ZKRATKAO30": "NK Josef Kavka",
+      "ZKRATKAO8": "NK J. Kavka",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 14507
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "2111",
+      "KODZASTUP": "564664",
+      "NAZEVZAST": "Bukovany",
+      "COBVODU": "1",
+      "POR_STR_HL": "3",
+      "OSTRANA": "804",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Lubor Vopat",
+      "ZKRATKAO30": "Lubor Vopat",
+      "ZKRATKAO8": "Lubor Vopat",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 14508
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "2111",
+      "KODZASTUP": "564664",
+      "NAZEVZAST": "Bukovany",
+      "COBVODU": "1",
+      "POR_STR_HL": "4",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "NEZÁVISLÝ KANDIDÁT JIŘÍ MACOUN",
+      "ZKRATKAO30": "NEZÁVISLŹ KANDID. J. MACOUN",
+      "ZKRATKAO8": "NK J. MACOUN",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 16644
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "5201",
+      "KODZASTUP": "570532",
+      "NAZEVZAST": "Osice",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Jiří Hrubeš, nezávislý kandidát",
+      "ZKRATKAO30": "Jiří Hrubeš, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 16645
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "5201",
+      "KODZASTUP": "570532",
+      "NAZEVZAST": "Osice",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Stanislav Bydžovský, nezávislý kandidát",
+      "ZKRATKAO30": "Stanislav Bydžovský, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 16646
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "5201",
+      "KODZASTUP": "570532",
+      "NAZEVZAST": "Osice",
+      "COBVODU": "1",
+      "POR_STR_HL": "3",
+      "OSTRANA": "803",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Ing. Martin Tribula, nezávislý kandidát",
+      "ZKRATKAO30": "Ing. Martin Tribula, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 16718
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "2107",
+      "KODZASTUP": "570753",
+      "NAZEVZAST": "Prodašice",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Roman Černý, nezávislý kandidát",
+      "ZKRATKAO30": "Roman Černý, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-f12f9734edd4f1962dbe0385",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2014/KV2014_reg_20230224_csv.zip",
+      "sha256": "de4f0d86b8d2b0ee4582fb8a09b078dec9e0d9fa8a45b4e3067f5bd648fbc84e",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 17635
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20141010",
+      "OKRES": "5302",
+      "KODZASTUP": "572845",
+      "NAZEVZAST": "Lány u Dašic",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "901",
+      "VSTRANA": "90",
+      "NAZEVCELK": "Sdružení nezávislých kandidátů Lány 1",
+      "ZKRATKAO30": "SNK Lány 1",
+      "ZKRATKAO8": "SNK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-b0c82b3ef5e23df3e79bdbd8",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2010/KV2010_reg_20230224_csv.zip",
+      "sha256": "bb53a6173fb79bf48b4a665e8f28aa009d6bc80f68fa029df51d4bdd9a484b3b",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 3246
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20101015",
+      "OKRES": "2104",
+      "KODZASTUP": "533475",
+      "NAZEVZAST": "Libenice",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "720",
+      "VSTRANA": "720",
+      "NAZEVCELK": "Česká pirátská strana",
+      "ZKRATKAO30": "Česká pirátská strana",
+      "ZKRATKAO8": "ČPS",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "720",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-b0c82b3ef5e23df3e79bdbd8",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2010/KV2010_reg_20230224_csv.zip",
+      "sha256": "bb53a6173fb79bf48b4a665e8f28aa009d6bc80f68fa029df51d4bdd9a484b3b",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 15827
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20101015",
+      "OKRES": "3202",
+      "KODZASTUP": "566683",
+      "NAZEVZAST": "Dražovice",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Eva Mešinová, nezávislý kandidát",
+      "ZKRATKAO30": "Eva Mešinová, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-b0c82b3ef5e23df3e79bdbd8",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2010/KV2010_reg_20230224_csv.zip",
+      "sha256": "bb53a6173fb79bf48b4a665e8f28aa009d6bc80f68fa029df51d4bdd9a484b3b",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 15828
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20101015",
+      "OKRES": "3202",
+      "KODZASTUP": "566683",
+      "NAZEVZAST": "Dražovice",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Miroslav Heřman, nezávislý kandidát",
+      "ZKRATKAO30": "Miroslav Heřman, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-6600874107e19be73a0cf5e9",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2006/KV2006_reg_20230224_csv.zip",
+      "sha256": "5c2f1ed985cbba5d6960957965f960a8d65a6fd0aa0f880b5844b44f45d930d5",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 889
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20061020",
+      "OKRES": "6104",
+      "KODZASTUP": "510980",
+      "NAZEVZAST": "Ocmanice",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Marie Bojanovská, nezávislý kandidát",
+      "ZKRATKAO30": "Marie Bojanovská, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-6600874107e19be73a0cf5e9",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2006/KV2006_reg_20230224_csv.zip",
+      "sha256": "5c2f1ed985cbba5d6960957965f960a8d65a6fd0aa0f880b5844b44f45d930d5",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 890
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20061020",
+      "OKRES": "6104",
+      "KODZASTUP": "510980",
+      "NAZEVZAST": "Ocmanice",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Jan Šmarda, nezávislý kandidát",
+      "ZKRATKAO30": "Jan Šmarda, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-6600874107e19be73a0cf5e9",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2006/KV2006_reg_20230224_csv.zip",
+      "sha256": "5c2f1ed985cbba5d6960957965f960a8d65a6fd0aa0f880b5844b44f45d930d5",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 15118
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20061020",
+      "OKRES": "4204",
+      "KODZASTUP": "566926",
+      "NAZEVZAST": "Vrbno nad Lesy",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "47",
+      "VSTRANA": "47",
+      "NAZEVCELK": "Komunistická strana Čech a Moravy",
+      "ZKRATKAO30": "Komunistická str.Čech a Moravy",
+      "ZKRATKAO8": "KSČM",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "047",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-6600874107e19be73a0cf5e9",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2006/KV2006_reg_20230224_csv.zip",
+      "sha256": "5c2f1ed985cbba5d6960957965f960a8d65a6fd0aa0f880b5844b44f45d930d5",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 21088
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20061020",
+      "OKRES": "6201",
+      "KODZASTUP": "582328",
+      "NAZEVZAST": "Senetářov",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "7",
+      "VSTRANA": "7",
+      "NAZEVCELK": "Česká strana sociálně demokratická",
+      "ZKRATKAO30": "Česká str.sociálně demokrat.",
+      "ZKRATKAO8": "ČSSD",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "007",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-6600874107e19be73a0cf5e9",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2006/KV2006_reg_20230224_csv.zip",
+      "sha256": "5c2f1ed985cbba5d6960957965f960a8d65a6fd0aa0f880b5844b44f45d930d5",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 21089
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20061020",
+      "OKRES": "6201",
+      "KODZASTUP": "582328",
+      "NAZEVZAST": "Senetářov",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Petr Zouhar, nezávislý kandidát",
+      "ZKRATKAO30": "Petr Zouhar, NK",
+      "ZKRATKAO8": "PZ",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-6600874107e19be73a0cf5e9",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2006/KV2006_reg_20230224_csv.zip",
+      "sha256": "5c2f1ed985cbba5d6960957965f960a8d65a6fd0aa0f880b5844b44f45d930d5",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 25810
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20061020",
+      "OKRES": "6105",
+      "KODZASTUP": "595811",
+      "NAZEVZAST": "Kadolec",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "47",
+      "VSTRANA": "47",
+      "NAZEVCELK": "Komunistická strana Čech a Moravy",
+      "ZKRATKAO30": "Komunistická str.Čech a Moravy",
+      "ZKRATKAO8": "KSČM",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "047",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-6600874107e19be73a0cf5e9",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2006/KV2006_reg_20230224_csv.zip",
+      "sha256": "5c2f1ed985cbba5d6960957965f960a8d65a6fd0aa0f880b5844b44f45d930d5",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 25811
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20061020",
+      "OKRES": "6105",
+      "KODZASTUP": "595811",
+      "NAZEVZAST": "Kadolec",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "František Filip, nezávislý kandidát",
+      "ZKRATKAO30": "František Filip, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-6600874107e19be73a0cf5e9",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2006/KV2006_reg_20230224_csv.zip",
+      "sha256": "5c2f1ed985cbba5d6960957965f960a8d65a6fd0aa0f880b5844b44f45d930d5",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 25812
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20061020",
+      "OKRES": "6105",
+      "KODZASTUP": "595811",
+      "NAZEVZAST": "Kadolec",
+      "COBVODU": "1",
+      "POR_STR_HL": "3",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Jiří Novák, nezávislý kandidát",
+      "ZKRATKAO30": "Jiří Novák, NK",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-6600874107e19be73a0cf5e9",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2006/KV2006_reg_20230224_csv.zip",
+      "sha256": "5c2f1ed985cbba5d6960957965f960a8d65a6fd0aa0f880b5844b44f45d930d5",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 27141
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20061020",
+      "OKRES": "2111",
+      "KODZASTUP": "599298",
+      "NAZEVZAST": "Drahenice",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Sýkora Josef,nezávislý kandidát",
+      "ZKRATKAO30": "Sýkora Josef,NK",
+      "ZKRATKAO8": "SJNK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-6600874107e19be73a0cf5e9",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2006/KV2006_reg_20230224_csv.zip",
+      "sha256": "5c2f1ed985cbba5d6960957965f960a8d65a6fd0aa0f880b5844b44f45d930d5",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 27987
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20100320",
+      "OKRES": "3205",
+      "KODZASTUP": "559121",
+      "NAZEVZAST": "Kunějovice",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "901",
+      "VSTRANA": "90",
+      "NAZEVCELK": "Sdružení nezávislých kandidátů",
+      "ZKRATKAO30": "Sdružení nezávislých kandidátů",
+      "ZKRATKAO8": "SNK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-6600874107e19be73a0cf5e9",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2006/KV2006_reg_20230224_csv.zip",
+      "sha256": "5c2f1ed985cbba5d6960957965f960a8d65a6fd0aa0f880b5844b44f45d930d5",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 27988
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20100320",
+      "OKRES": "3205",
+      "KODZASTUP": "559121",
+      "NAZEVZAST": "Kunějovice",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "902",
+      "VSTRANA": "90",
+      "NAZEVCELK": "Nové sdružení nezávislých kandidátů",
+      "ZKRATKAO30": "Nové sdružení nezávislých kand",
+      "ZKRATKAO8": "NSNK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "",
+      "PROCHLSTR": "",
+      "MAND_STR": ""
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+      "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 3411
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20021101",
+      "OKRES": "2102",
+      "KODZASTUP": "534111",
+      "NAZEVZAST": "Otmíče",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "NK - Renata Jelínková",
+      "ZKRATKAO30": "NK - Renata Jelínková",
+      "ZKRATKAO8": "NKJILINK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "0",
+      "PROCHLSTR": "0",
+      "MAND_STR": "0"
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+      "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 3930
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20021101",
+      "OKRES": "2106",
+      "KODZASTUP": "535354",
+      "NAZEVZAST": "Zálezlice",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "901",
+      "VSTRANA": "90",
+      "NAZEVCELK": "Sdružení nezávislých kandidátů Zálezlice-Kozárovice",
+      "ZKRATKAO30": "Sdruž.nezáv.kand.Zál.-Kozár.",
+      "ZKRATKAO8": "SNKZK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "0",
+      "PROCHLSTR": "0",
+      "MAND_STR": "0"
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+      "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 5429
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20021101",
+      "OKRES": "2109",
+      "KODZASTUP": "538710",
+      "NAZEVZAST": "Řehenice",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "804",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Pavel Prokšík",
+      "ZKRATKAO30": "Pavel Prokšík",
+      "ZKRATKAO8": "PROKŠÍK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "0",
+      "PROCHLSTR": "0",
+      "MAND_STR": "0"
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+      "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 5430
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20021101",
+      "OKRES": "2109",
+      "KODZASTUP": "538710",
+      "NAZEVZAST": "Řehenice",
+      "COBVODU": "1",
+      "POR_STR_HL": "2",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Vladimír Veselý",
+      "ZKRATKAO30": "Vladimír Veselý",
+      "ZKRATKAO8": "VESELÝ",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "0",
+      "PROCHLSTR": "0",
+      "MAND_STR": "0"
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+      "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 5431
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20021101",
+      "OKRES": "2109",
+      "KODZASTUP": "538710",
+      "NAZEVZAST": "Řehenice",
+      "COBVODU": "1",
+      "POR_STR_HL": "3",
+      "OSTRANA": "803",
+      "VSTRANA": "80",
+      "NAZEVCELK": "František Ondřich",
+      "ZKRATKAO30": "František Ondřich",
+      "ZKRATKAO8": "ONDŘICH",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "0",
+      "PROCHLSTR": "0",
+      "MAND_STR": "0"
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+      "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 5432
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20021101",
+      "OKRES": "2109",
+      "KODZASTUP": "538710",
+      "NAZEVZAST": "Řehenice",
+      "COBVODU": "1",
+      "POR_STR_HL": "4",
+      "OSTRANA": "802",
+      "VSTRANA": "80",
+      "NAZEVCELK": "Pavel Zoula",
+      "ZKRATKAO30": "Pavel Zoula",
+      "ZKRATKAO8": "ZOULA",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "0",
+      "PROCHLSTR": "0",
+      "MAND_STR": "0"
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+      "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 7240
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20021101",
+      "OKRES": "7103",
+      "KODZASTUP": "544710",
+      "NAZEVZAST": "Vincencov",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "1",
+      "VSTRANA": "1",
+      "NAZEVCELK": "Křesťanská a demokratická unie - Československá strana lidová",
+      "ZKRATKAO30": "Křesť.demokr.unie-Čs.str.lid.",
+      "ZKRATKAO8": "KDU-ČSL",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "001",
+      "HLASY_STR": "0",
+      "PROCHLSTR": "0",
+      "MAND_STR": "0"
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+      "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 17679
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20021101",
+      "OKRES": "2110",
+      "KODZASTUP": "571211",
+      "NAZEVZAST": "Klínec",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "801",
+      "VSTRANA": "80",
+      "NAZEVCELK": "NK - Ing. Jaroslav Teska",
+      "ZKRATKAO30": "NK - Ing. Jaroslav Teska",
+      "ZKRATKAO8": "NK",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "080",
+      "HLASY_STR": "0",
+      "PROCHLSTR": "0",
+      "MAND_STR": "0"
+    }
+  },
+  {
+    "reason": "Not held / no populated return scalar; retain candidacy and any pre-count zero placeholders only",
+    "evidence": {
+      "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+      "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+      "archive_entry": "csv_od/kvros.csv",
+      "locator": {
+        "csv_record": 27720
+      }
+    },
+    "raw": {
+      "DATUMVOLEB": "20021101",
+      "OKRES": "2111",
+      "KODZASTUP": "598402",
+      "NAZEVZAST": "Háje",
+      "COBVODU": "1",
+      "POR_STR_HL": "1",
+      "OSTRANA": "7",
+      "VSTRANA": "7",
+      "NAZEVCELK": "Česká strana sociálně demokratická",
+      "ZKRATKAO30": "Česká str.sociálně demokrat.",
+      "ZKRATKAO8": "ČSSD",
+      "POCSTR_SLO": "1",
+      "SLOZENI": "007",
+      "HLASY_STR": "0",
+      "PROCHLSTR": "0",
+      "MAND_STR": "0"
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 14
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 74
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 104
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 138
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 143
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 156
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 171
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 186
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 208
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 327
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 329
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 359
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 382
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 427
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 447
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 457
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 525
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 529
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 545
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 568
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 608
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 613
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 626
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 777
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 828
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 874
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 896
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 898
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 910
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 922
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 928
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 933
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 934
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 942
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 945
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 955
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 963
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 973
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 984
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 989
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 991
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 997
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1001
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1013
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1019
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1024
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1030
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1046
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1047
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1056
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1061
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1064
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1071
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1074
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1080
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1082
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1086
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1096
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1099
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1109
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1113
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1139
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1146
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1147
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1153
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1156
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1161
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1164
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1175
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1176
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1194
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1195
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1218
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1231
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1239
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1295
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1317
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1322
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1336
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1339
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1353
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1377
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1395
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1433
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1444
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1500
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1514
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1520
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1521
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1542
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1757
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1762
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1763
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 1990
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 2017
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 2019
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 2180
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 2213
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 2263
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 2372
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 2465
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 2491
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 2736
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 2976
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 3033
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 3037
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 3196
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 3245
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 3379
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 3428
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 3438
+      }
+    }
+  },
+  {
+    "reason": "Invalid/withdrawn candidate retained, not a result",
+    "evidence": {
+      "source_id": "czechia--source-bad4aa9b12669a5086486140",
+      "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/senat_vse/SENATreg20250118_csv.zip",
+      "sha256": "d16cee79d36e75d40e142224be4f89e089296bd71c20bd2bbd2c288fce374168",
+      "archive_entry": "csv_od/serk.csv",
+      "locator": {
+        "csv_record": 3554
+      }
+    }
+  }
+]
