@@ -1,0 +1,156 @@
+[
+  {
+    "original_token": "IE-2014-REFORM",
+    "reason": "80 town/borough and six pre-merger city/county councils retained. No guessed successors; detailed boundary and continuation judgments remain reviewable. Current districts are not duplicated offices.",
+    "evidence": [
+      {
+        "input_path": "data/research/ireland/sources/lg2014-section9.html",
+        "sha256": "9d2c8cb05023ffa69acecf6e99a07e4498193b27e7c0745161a1feac01ead4b5",
+        "json_pointer": null,
+        "locator": "section 9"
+      },
+      {
+        "input_path": "data/research/ireland/sources/lg2014-section24.html",
+        "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+        "json_pointer": null,
+        "locator": "section 24"
+      }
+    ],
+    "office_ids": [],
+    "status": "open"
+  },
+  {
+    "original_token": "IE-LOCAL-2019-2024",
+    "reason": "2009 and 2014 books fully extracted at first count. 2019 candidate returns acquired only for Roscommon and Wicklow. All31 2024 council events/seats retained; full2024 candidate vectors and later by-elections/co-options not acquired.",
+    "evidence": [
+      {
+        "input_path": "data/research/ireland/sources/G0503-data.json",
+        "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+        "json_pointer": "/label",
+        "locator": null
+      }
+    ],
+    "office_ids": [],
+    "status": "open"
+  },
+  {
+    "original_token": "IE-SEANAD-PANELS",
+    "reason": "2025 seven electoral units retained in one chamber event; 11 appointed nominees not election rows. Current Higher Education constituency must not rewrite 2025 NUI/TCD history. Older general elections and 2020–2025 bye-election pages remain retained-only, not an invented complete vacancy universe.",
+    "evidence": [
+      {
+        "input_path": "data/research/ireland/sources/seanad-mode.html",
+        "sha256": "27cbc0495f2dca6cda1a5ba46fd331b3b6ea4ee28ec0c4f731fb8f08733227a2",
+        "json_pointer": null,
+        "locator": "Higher Education Constituency"
+      },
+      {
+        "input_path": "data/research/ireland/sources/2026-05-20_seanad-general-election-2025-results-handbook_en.pdf",
+        "sha256": "77c587f15556f40787b5b8a5eb4a706dc4c2a67ad06210ee3e74f0247266f3ec",
+        "json_pointer": null,
+        "locator": "Full handbook including 2020–2025 by-elections"
+      }
+    ],
+    "office_ids": [
+      "IE-SEANAD"
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "IE-EP-RESULTS",
+    "reason": "2024 date and delegation evidenced; EP result endpoints returned unavailable or empty data. Full party/candidate histories, elected mandates and vacancies await returning-officer returns; no inferred seat vector.",
+    "evidence": [
+      {
+        "input_path": "data/research/ireland/sources/ep-mode.html",
+        "sha256": "8d4c689334b303b28b80e04d955fa6ceea97d9f151d992bdffc2b3c929753b3d",
+        "json_pointer": null,
+        "locator": "European Parliament elections"
+      }
+    ],
+    "office_ids": [
+      "IE-EP"
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "IE-DAIL-ENCODING-AND-STV",
+    "reason": "2016/2020 machine snapshots contain replacement characters and later-count votes. Preserve raw, no guessed accented repairs, vote shares or first preferences. 2024 workbook candidate count/valid-poll checks pass; candidate seats not inferred from capitalization.",
+    "evidence": [
+      {
+        "input_path": "data/research/ireland/sources/candidate-details-for-general-election-2016.json",
+        "sha256": "5618a3a66f45d311f5418ffba8ced2cb5d9001c6c07c1084f800bc2ee63d6723",
+        "json_pointer": "/0",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/ireland/sources/candidate-details-for-general-election-2020.json",
+        "sha256": "e3523aee719537ec2e160f39e87df0c2369464c1a707841649316d90fefe411c",
+        "json_pointer": "/0",
+        "locator": null
+      }
+    ],
+    "office_ids": [
+      "IE-DAIL"
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "IE-PRESIDENT-LATEST",
+    "reason": "Older official first-count CSV histories normalized; recent 2018/2025 official return series not acquired. President retained as sourced directly elected office; next date unknown.",
+    "evidence": [
+      {
+        "input_path": "data/research/ireland/sources/president-mode.html",
+        "sha256": "6d3da982d4ec5e5e79a312fd45e2abfcda447f1057f5be14c7526b2214c8c1c1",
+        "json_pointer": null,
+        "locator": "Presidential elections"
+      }
+    ],
+    "office_ids": [
+      "IE-PRESIDENT"
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "IE-MAYOR-LIMIT",
+    "reason": "Only evidenced Limerick popular mayor office is created; council-selected mayors/cathaoirligh and appointed CEOs create no popular contest. Later mayoral policy expansions require new primary evidence.",
+    "evidence": [
+      {
+        "input_path": "data/research/ireland/sources/mayor-mode.html",
+        "sha256": "dd1deefd78efbc28f6a362db7e648385ecc857b5d6520d79f09cb543961bb3e7",
+        "json_pointer": null,
+        "locator": "Ireland first directly elected Mayor"
+      }
+    ],
+    "office_ids": [
+      "IE-LIMERICK-MAYOR"
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "IE-NORTHERN-IRELAND-EXCLUSION",
+    "reason": "Northern Ireland is outside this Republic of Ireland pack; do not invent or import its offices into country_id ireland.",
+    "evidence": [
+      {
+        "input_path": "data/research/ireland/sources/local-elections.html",
+        "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+        "json_pointer": null,
+        "locator": "31 Local Government Authorities in Ireland"
+      }
+    ],
+    "office_ids": [],
+    "status": "open"
+  },
+  {
+    "original_token": "IE-REGIONAL-APPOINTMENTS",
+    "reason": "Regional assemblies under SI573/2014 Article5 are constituted by local-authority appointments from councillors. They are not added as a separately elected popular office universe; their internal chair elections are not popular mandates. Any broader indirect-body expansion requires a separately reviewed source map.",
+    "evidence": [
+      {
+        "input_path": "data/research/ireland/sources/regional-assemblies-order.html",
+        "sha256": "b6dea72d3d804b92a08b90b4a123c633ad15158f71ec95ed1c89aa2e70e51f45",
+        "json_pointer": null,
+        "locator": "Article5: Number of members of regional assembly and appointments"
+      }
+    ],
+    "office_ids": [],
+    "status": "open"
+  }
+]

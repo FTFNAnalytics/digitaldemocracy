@@ -1,0 +1,683 @@
+# Ireland acceptance examples — Prompt AB / DRAFT
+
+22 concrete documentary examples and labelled future/synthetic gates. Source locators below are exact packed references; source SHA values are in each evidence object. No synthetic mutation was executed against an importer or SQLite.
+
+## 1. Out-of-window council retained
+
+```json
+{
+  "example": 1,
+  "title": "Out-of-window council retained",
+  "source_and_rows": {
+    "office_id": "IE-LA-2ae19629-1433-13a3-e055-000000000001-C",
+    "path": "data/research/ireland/office-register.json",
+    "json_pointer": "/88",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/G0503-data.json",
+        "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+        "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1433-13a3-e055-000000000001",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/ireland/sources/local-elections.html",
+        "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+        "json_pointer": null,
+        "locator": "Local elections every five years; 31 Local Government Authorities"
+      },
+      {
+        "input_path": "data/research/ireland/sources/local-authorities.html",
+        "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+        "json_pointer": null,
+        "locator": "Local authority dropdown option value=94; exact source name matched by documented accent/punctuation normalization"
+      },
+      {
+        "input_path": "data/research/ireland/sources/G0503-data.json",
+        "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+        "json_pointer": "/value/101",
+        "locator": null,
+        "dimensions": {
+          "STATISTIC": "G0503C02",
+          "TLIST(A1)": "2024",
+          "C03789V04537": "2ae19629-1433-13a3-e055-000000000001",
+          "C03919V04671": "25"
+        }
+      }
+    ]
+  },
+  "expected": {
+    "office_status": "current",
+    "tier": "municipal",
+    "next_precision": "year",
+    "next_year": 2029,
+    "next_month": null,
+    "next_day": null,
+    "prospective_event_added": false
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 2. Historical borough survives2014 abolition
+
+```json
+{
+  "example": 2,
+  "title": "Historical borough survives2014 abolition",
+  "source_and_rows": {
+    "office_id": "IE-HIST-CLONMEL-B-C",
+    "path": "data/research/ireland/office-register.json",
+    "json_pointer": "/28",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+        "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+        "json_pointer": null,
+        "locator": "Schedule 6, nested table 2 (1-based among all HTML tables), cell 1: Clonmel"
+      },
+      {
+        "input_path": "data/research/ireland/sources/lg2014-section24.html",
+        "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+        "json_pointer": null,
+        "locator": "section 24: each town council stands dissolved"
+      }
+    ]
+  },
+  "expected": {
+    "office_status": "historical",
+    "record_state": "active",
+    "successor_office_id": null,
+    "2009_event_preserved": true
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 3. Municipal rather than invented regional layer
+
+```json
+{
+  "example": 3,
+  "title": "Municipal rather than invented regional layer",
+  "source_and_rows": {
+    "source_register_sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+    "tier_sha256": "0683410a3e3b8f1c1bc5b69df0793fd5bbba524658556a51ca76d3aeb7ae3470"
+  },
+  "expected": {
+    "municipal": 118,
+    "regional": 0,
+    "regional_calendar": "honest empty state; not a failed import"
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 4. Only one direct mayor
+
+```json
+{
+  "example": 4,
+  "title": "Only one direct mayor",
+  "source_and_rows": {
+    "office_id": "IE-LIMERICK-MAYOR",
+    "path": "data/research/ireland/office-register.json",
+    "json_pointer": "/119",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/mayor-mode.html",
+        "sha256": "dd1deefd78efbc28f6a362db7e648385ecc857b5d6520d79f09cb543961bb3e7",
+        "json_pointer": null,
+        "locator": "first ever directly elected Mayor on 7 June 2024"
+      }
+    ]
+  },
+  "expected": {
+    "direct_mayor_office_count": 1,
+    "other_council_mayor_elections": 0,
+    "appointed_CEO_offices": 0
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 5. Seanad indirect/mixed retained
+
+```json
+{
+  "example": 5,
+  "title": "Seanad indirect/mixed retained",
+  "source_and_rows": {
+    "event_id": "event-6049c2691c9d6e0f47cbd437",
+    "history_key": "IE-SEANAD::2025-01::indirect::whole-office",
+    "path": "data/research/ireland/events.json",
+    "json_pointer": "/79",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/2026-05-20_seanad-general-election-2025-results-handbook_en.pdf",
+        "sha256": "77c587f15556f40787b5b8a5eb4a706dc4c2a67ad06210ee3e74f0247266f3ec",
+        "json_pointer": null,
+        "locator": "Cover: Seanad General Election January 2025"
+      }
+    ]
+  },
+  "expected": {
+    "event_kind": "indirect",
+    "date_label": "2025-01",
+    "precision": "month",
+    "day": null,
+    "appointed_nominee_result_rows": 0,
+    "raw_note": "Seven distinct franchise vectors; source election month label does not assert every count ended in January."
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 6. Seanad observed zero is not missing
+
+```json
+{
+  "example": 6,
+  "title": "Seanad observed zero is not missing",
+  "source_and_rows": {
+    "result_row_id": "result-e4cb8666820f527e82c9a0fe",
+    "path": "data/research/ireland/results.json",
+    "json_pointer": "/6467",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/2026-05-20_seanad-general-election-2025-results-handbook_en.pdf",
+        "sha256": "77c587f15556f40787b5b8a5eb4a706dc4c2a67ad06210ee3e74f0247266f3ec",
+        "json_pointer": null,
+        "locator": "PDF page 12, printed page 10, panel Cultural and Educational, candidate FLYNN, Angela, Number of Votes column; text line 28"
+      }
+    ]
+  },
+  "expected": {
+    "votes": 0,
+    "votes_status": "zero",
+    "seats": null,
+    "seats_status": "unknown"
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 7. Ballots are not1000-valued points
+
+```json
+{
+  "example": 7,
+  "title": "Ballots are not1000-valued points",
+  "source_and_rows": {
+    "result_row_id": "result-2bab2f1d166cd36fa96db0cc",
+    "path": "data/research/ireland/results.json",
+    "json_pointer": "/1221",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/2026-05-20_seanad-general-election-2025-results-handbook_en.pdf",
+        "sha256": "77c587f15556f40787b5b8a5eb4a706dc4c2a67ad06210ee3e74f0247266f3ec",
+        "json_pointer": null,
+        "locator": "PDF page 12, printed page 10, panel Cultural and Educational, candidate BYRNE, Cathal, Number of Votes column; text line 13"
+      }
+    ]
+  },
+  "expected": {
+    "votes": 141,
+    "source_weighted_value": 141000,
+    "conversion": "Use explicitly printed Number of Votes; no silent division or transfer-point normalization."
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 8. Later-count snapshot withheld from first preferences
+
+```json
+{
+  "example": 8,
+  "title": "Later-count snapshot withheld from first preferences",
+  "source_and_rows": {
+    "result_row_id": "result-0037709f6a2da9f98491420e",
+    "path": "data/research/ireland/results.json",
+    "json_pointer": "/7",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/candidate-details-for-general-election-2020.json",
+        "sha256": "e3523aee719537ec2e160f39e87df0c2369464c1a707841649316d90fefe411c",
+        "json_pointer": "/370",
+        "locator": null
+      }
+    ]
+  },
+  "expected": {
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "raw_supplied_votes": 6916,
+    "raw_count_number": 6
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 9. Reported zero seats preserved
+
+```json
+{
+  "example": 9,
+  "title": "Reported zero seats preserved",
+  "source_and_rows": {
+    "result_row_id": "result-01c7f6324965cef9f1739047",
+    "path": "data/research/ireland/results.json",
+    "json_pointer": "/53",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/candidate-details-for-general-election-2016.json",
+        "sha256": "5618a3a66f45d311f5418ffba8ced2cb5d9001c6c07c1084f800bc2ee63d6723",
+        "json_pointer": "/185",
+        "locator": null
+      }
+    ]
+  },
+  "expected": {
+    "seats": 0,
+    "seats_status": "zero"
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 10. XLSX first count not duplicate total baseline
+
+```json
+{
+  "example": 10,
+  "title": "XLSX first count not duplicate total baseline",
+  "source_and_rows": {
+    "result_row_id": "result-00458c6b2275de03b40a9c23",
+    "path": "data/research/ireland/results.json",
+    "json_pointer": "/12",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/34th-dail-general-election-29-november-2024-election-results.xlsx",
+        "sha256": "53e83a24caba263a0808a83badf84413fb77f381411050e92ca5181674f52467",
+        "json_pointer": null,
+        "locator": "sheet 'Cavan-Monaghan' cells A42:C42; subsequent count columns retained only"
+      }
+    ]
+  },
+  "expected": {
+    "votes": 4328,
+    "one_result_row": "result-00458c6b2275de03b40a9c23",
+    "later_transfer_columns": "retained only",
+    "capitalized_name_does_not_assign_seat": true
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 11. Same-day Dáil special contests do not collide
+
+```json
+{
+  "example": 11,
+  "title": "Same-day Dáil special contests do not collide",
+  "source_and_rows": [
+    {
+      "event_id": "event-8ec7fd1cfebd286c600d6154",
+      "history_key": "IE-DAIL::2026-05-22::special::Dublin Central",
+      "path": "data/research/ireland/events.json",
+      "json_pointer": "/119",
+      "source_evidence": [
+        {
+          "input_path": "data/research/ireland/sources/2026-07-10_bye-election-to-the-34th-dail-which-was-held-on-22nd-may-2026-constituency-of-dublin-central_en.pdf",
+          "sha256": "30b6b6ef4c31e22007b8e111e2fda7cfbb1b00d966cc679b826cac1e8077421d",
+          "json_pointer": null,
+          "locator": "Results Sheet; 22 May 2026"
+        }
+      ]
+    },
+    {
+      "event_id": "event-a878d3dea6a59ec8477ede76",
+      "history_key": "IE-DAIL::2026-05-22::special::Galway West",
+      "path": "data/research/ireland/events.json",
+      "json_pointer": "/136",
+      "source_evidence": [
+        {
+          "input_path": "data/research/ireland/sources/2026-07-10_bye-election-to-the-34th-dail-which-was-held-on-22nd-may-2026-constituency-of-galway-west_en.pdf",
+          "sha256": "95422da40ab292cc7cfbe8aaa4b705f21ce7b205abbab6f98a3fd70d4614d813",
+          "json_pointer": null,
+          "locator": "Results Sheet; 22 May 2026"
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "distinct_events": 2,
+    "polling_day": "2026-05-22",
+    "scopes": [
+      "Dublin Central",
+      "Galway West"
+    ]
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 12. LEA and transfer counts stay within one council event
+
+```json
+{
+  "example": 12,
+  "title": "LEA and transfer counts stay within one council event",
+  "source_and_rows": {
+    "result_row_id": "result-000149f5f6df14d89a7b267f",
+    "path": "data/research/ireland/results.json",
+    "json_pointer": "/0",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/local2014.pdf",
+        "sha256": "089a79d861f4d04a2e5776f179e0373492821f833c3d9c17282d87c89532cb33",
+        "json_pointer": null,
+        "locator": "PDF page 136; first-count candidate Gildea, Jim (F.G.); text name line 30, vote line 31"
+      }
+    ]
+  },
+  "expected": {
+    "history_key": "IE-LA-2ae19629-149f-13a3-e055-000000000001-C::2014-05-23::ordinary::whole-office",
+    "first_preference_votes": 761,
+    "extra_LEA_office": false,
+    "extra_transfer_event": false
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 13. 2024 council event without invented candidate vector
+
+```json
+{
+  "example": 13,
+  "title": "2024 council event without invented candidate vector",
+  "source_and_rows": {
+    "event_id": "event-b3330d32cbc4c3a1cc302340",
+    "history_key": "IE-LA-2ae19629-1433-13a3-e055-000000000001-C::2024-06-07::ordinary::whole-office",
+    "path": "data/research/ireland/events.json",
+    "json_pointer": "/143",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/G0503-data.json",
+        "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+        "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1433-13a3-e055-000000000001",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/ireland/sources/local-elections.html",
+        "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+        "json_pointer": null,
+        "locator": "Local elections every five years; 31 Local Government Authorities"
+      },
+      {
+        "input_path": "data/research/ireland/sources/local-authorities.html",
+        "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+        "json_pointer": null,
+        "locator": "Local authority dropdown option value=94; exact source name matched by documented accent/punctuation normalization"
+      },
+      {
+        "input_path": "data/research/ireland/sources/G0503-data.json",
+        "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+        "json_pointer": "/value/101",
+        "locator": null,
+        "dimensions": {
+          "STATISTIC": "G0503C02",
+          "TLIST(A1)": "2024",
+          "C03789V04537": "2ae19629-1433-13a3-e055-000000000001",
+          "C03919V04671": "25"
+        }
+      }
+    ]
+  },
+  "expected": {
+    "event_retained": true,
+    "total_seats_in_raw": 63.0,
+    "result_rows": 0,
+    "coverage_complete": false
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 14. EP office retained despite missing results
+
+```json
+{
+  "example": 14,
+  "title": "EP office retained despite missing results",
+  "source_and_rows": {
+    "office_id": "IE-EP",
+    "path": "data/research/ireland/office-register.json",
+    "json_pointer": "/1",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/ep-mode.html",
+        "sha256": "8d4c689334b303b28b80e04d955fa6ceea97d9f151d992bdffc2b3c929753b3d",
+        "json_pointer": null,
+        "locator": "European Parliament elections"
+      }
+    ]
+  },
+  "expected": {
+    "tier": "other",
+    "next_year": 2029,
+    "result_rows": 0,
+    "missing_result_count_is_not_zero_votes": true
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 15. 2014 companion feed is reconciliation only
+
+```json
+{
+  "example": 15,
+  "title": "2014 companion feed is reconciliation only",
+  "source_and_rows": {
+    "path": "data/research/ireland/sources/local-election-results-2014-roscommon5.json",
+    "json_pointer": "/features/0/attributes"
+  },
+  "expected": {
+    "second_2014_event_added": false,
+    "duplicate_candidate_rows_added": 0
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 16. Unchanged re-import
+
+```json
+{
+  "example": 16,
+  "title": "Unchanged re-import",
+  "source_and_rows": {
+    "inventory": "Ireland_Input_Inventory.json#/hash_inputs",
+    "fingerprint": "b6145edbe4ab2c4ba5b9e41d340edb515a9a8acecb12f125b3d868d8a100c5fc"
+  },
+  "expected": {
+    "release_id": "country-package-ireland--sha256-b6145edbe4ab2c4ba5b9e41d340edb515a9a8acecb12f125b3d868d8a100c5fc",
+    "attempt_id": "fresh runtime UUID each run",
+    "same_release_id": true
+  },
+  "execution_status": "Future importer gate — Not run"
+}
+```
+
+## 17. Corrected source or accepted tiers
+
+```json
+{
+  "example": 17,
+  "title": "Corrected source or accepted tiers",
+  "source_and_rows": {
+    "baseline_tier_sha256": "0683410a3e3b8f1c1bc5b69df0793fd5bbba524658556a51ca76d3aeb7ae3470"
+  },
+  "expected": {
+    "changed_effective_hash": "new release_id",
+    "guard": "exact prior scalar/hash",
+    "production_acceptance_required": true
+  },
+  "execution_status": "Hypothetical correction; no changes applied — Not run"
+}
+```
+
+## 18. Poison resolved-source FK fails closed
+
+```json
+{
+  "example": 18,
+  "title": "Poison resolved-source FK fails closed",
+  "source_and_rows": {
+    "result_row_id": "result-000149f5f6df14d89a7b267f",
+    "path": "data/research/ireland/results.json",
+    "json_pointer": "/0",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/local2014.pdf",
+        "sha256": "089a79d861f4d04a2e5776f179e0373492821f833c3d9c17282d87c89532cb33",
+        "json_pointer": null,
+        "locator": "PDF page 136; first-count candidate Gildea, Jim (F.G.); text name line 30, vote line 31"
+      }
+    ]
+  },
+  "expected": {
+    "isolated_fixture_mutation": "remove referenced source row",
+    "transaction": "rollback",
+    "last_good_publication": "continues serving",
+    "durable_failed_attempt": true
+  },
+  "execution_status": "Synthetic CI specification — Not run"
+}
+```
+
+## 19. Unresolved gap remains explicit
+
+```json
+{
+  "example": 19,
+  "title": "Unresolved gap remains explicit",
+  "source_and_rows": {
+    "path": "data/research/ireland/research-gaps.json",
+    "json_pointer": "/3"
+  },
+  "expected": {
+    "target": "real Ireland country locator",
+    "unresolved_evidence": true,
+    "fabricated_source_FK": false
+  },
+  "execution_status": "Documentary assertion checked; importer execution Not run"
+}
+```
+
+## 20. Incomplete refresh is not deletion
+
+```json
+{
+  "example": 20,
+  "title": "Incomplete refresh is not deletion",
+  "source_and_rows": {
+    "office_id": "IE-HIST-CLONMEL-B-C",
+    "path": "data/research/ireland/office-register.json",
+    "json_pointer": "/28",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+        "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+        "json_pointer": null,
+        "locator": "Schedule 6, nested table 2 (1-based among all HTML tables), cell 1: Clonmel"
+      },
+      {
+        "input_path": "data/research/ireland/sources/lg2014-section24.html",
+        "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+        "json_pointer": null,
+        "locator": "section 24: each town council stands dissolved"
+      }
+    ]
+  },
+  "expected": {
+    "omit_in_next_incomplete_input": "retain office, event, result and source dependencies",
+    "record_state": "active"
+  },
+  "execution_status": "Future importer gate — Not run"
+}
+```
+
+## 21. Fixture exclusion
+
+```json
+{
+  "example": 21,
+  "title": "Fixture exclusion",
+  "source_and_rows": {
+    "office_id": "IE-LA-2ae19629-1433-13a3-e055-000000000001-C",
+    "path": "data/research/ireland/office-register.json",
+    "json_pointer": "/88",
+    "source_evidence": [
+      {
+        "input_path": "data/research/ireland/sources/G0503-data.json",
+        "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+        "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1433-13a3-e055-000000000001",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/ireland/sources/local-elections.html",
+        "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+        "json_pointer": null,
+        "locator": "Local elections every five years; 31 Local Government Authorities"
+      },
+      {
+        "input_path": "data/research/ireland/sources/local-authorities.html",
+        "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+        "json_pointer": null,
+        "locator": "Local authority dropdown option value=94; exact source name matched by documented accent/punctuation normalization"
+      },
+      {
+        "input_path": "data/research/ireland/sources/G0503-data.json",
+        "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+        "json_pointer": "/value/101",
+        "locator": null,
+        "dimensions": {
+          "STATISTIC": "G0503C02",
+          "TLIST(A1)": "2024",
+          "C03789V04537": "2ae19629-1433-13a3-e055-000000000001",
+          "C03919V04671": "25"
+        }
+      }
+    ]
+  },
+  "expected": {
+    "isolated_mutation": "mark copied input fixture/test or foreign country",
+    "publication": "reject fixture",
+    "research_rows_modified": 0
+  },
+  "execution_status": "Synthetic CI specification — Not run"
+}
+```
+
+## 22. Other lineages and Northern Ireland
+
+```json
+{
+  "example": 22,
+  "title": "Other lineages and Northern Ireland",
+  "source_and_rows": {
+    "country_id": "ireland",
+    "lineage_id": "country-package-ireland"
+  },
+  "expected": {
+    "Northern_Ireland_rows_added": 0,
+    "unrelated_release_ids_and_rows": "unchanged",
+    "citations": "own lineage/release member"
+  },
+  "execution_status": "Future multi-lineage gate — Not run"
+}
+```

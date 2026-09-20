@@ -1,0 +1,4261 @@
+{
+  "schema_version": "atlas-tier-classification/1",
+  "lineage_id": "country-package-ireland",
+  "country_id": "ireland",
+  "country_slug": "ireland",
+  "status": "approved",
+  "source_register": {
+    "input_path": "data/research/ireland/office-register.json",
+    "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+    "bytes": 192055
+  },
+  "source_inputs": [
+    {
+      "input_path": "data/research/ireland/office-register.json",
+      "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc"
+    }
+  ],
+  "counts_by_proposed_tier": {
+    "national": 3,
+    "regional": 0,
+    "municipal": 118,
+    "other": 1,
+    "unknown": 0
+  },
+  "classifications": [
+    {
+      "office_id": "IE-DAIL",
+      "tier": "national",
+      "rationale": "Source identifies a national chamber or directly elected presidency; Atlas storage national_context. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/0"
+        },
+        {
+          "input_path": "data/research/ireland/sources/dail-mode.html",
+          "sha256": "05747a2e37c16d661ac805d38d536f66b11ad36f82d9ced985ee7a816a0d3985",
+          "json_pointer": null,
+          "locator": "Dáil Éireann"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-EP",
+      "tier": "other",
+      "rationale": "Source identifies the supranational Irish EP delegation; proposed other pending Justin review. Supranational delegation, proposed other; electoral constituencies remain contest context, not extra offices.",
+      "human_review_required": true,
+      "tier_uncertain": true,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/1"
+        },
+        {
+          "input_path": "data/research/ireland/sources/ep-mode.html",
+          "sha256": "8d4c689334b303b28b80e04d955fa6ceea97d9f151d992bdffc2b3c929753b3d",
+          "json_pointer": null,
+          "locator": "European Parliament elections"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-ARDEE-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/2"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 1: Ardee"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-ARKLOW-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/3"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 1: Arklow"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-ATHLONE-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/4"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 3: Athlone"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-ATHY-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/5"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 5: Athy"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BALBRIGGAN-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/6"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 3: Balbriggan"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BALLINA-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/7"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 7: Ballina"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BALLINASLOE-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/8"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 9: Ballinasloe"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BALLYBAY-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/9"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 5: Ballybay"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BALLYSHANNON-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/10"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 7: Ballyshannon"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BANDON-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/11"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 9: Bandon"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BANTRY-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/12"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 11: Bantry"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BELTURBET-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/13"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 13: Belturbet"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BIRR-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/14"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 11: Birr"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BOYLE-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/15"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 15: Boyle"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BRAY-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/16"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 13: Bray"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BUNCRANA-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/17"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 15: Buncrana"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BUNDORAN-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/18"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 17: Bundoran"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CARLOW-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/19"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 19: Carlow"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CARRICK-ON-SUIR-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/20"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 23: Carrick-on-Suir"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CARRICKMACROSS-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/21"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 21: Carrickmacross"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CASHEL-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/22"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 25: Cashel"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CASTLEBAR-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/23"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 27: Castlebar"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CASTLEBLAYNEY-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/24"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 29: Castleblayney"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CAVAN-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/25"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 31: Cavan"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CLONAKILTY-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/26"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 33: Clonakilty"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CLONES-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/27"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 35: Clones"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CLONMEL-B-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/28"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 2 (1-based among all HTML tables), cell 1: Clonmel"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-COBH-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/29"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 37: Cobh"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-COOTEHILL-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/30"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 17: Cootehill"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-DROGHEDA-B-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/31"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 2 (1-based among all HTML tables), cell 3: Drogheda"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-DROICHEAD-NUA-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/32"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 19: Droichead Nua"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-DUNDALK-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/33"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 39: Dundalk"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-DUNGARVAN-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/34"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 41: Dungarvan"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-EDENDERRY-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/35"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 21: Edenderry"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-ENNIS-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/36"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 43: Ennis"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-ENNISCORTHY-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/37"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 45: Enniscorthy"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-FERMOY-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/38"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 47: Fermoy"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-GOREY-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/39"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 23: Gorey"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-GRANARD-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/40"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 25: Granard"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-GREYSTONES-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/41"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 27: Greystones"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-KELLS-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/42"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 49: Kells"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-KILKEE-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/43"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 2: Kilkee"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-KILKENNY-B-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/44"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 2 (1-based among all HTML tables), cell 5: Kilkenny"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-KILLARNEY-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/45"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 51: Killarney"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-KILRUSH-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/46"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 2: Kilrush"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-KINSALE-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/47"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 4: Kinsale"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LEIXLIP-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/48"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 4: Leixlip"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LETTERKENNY-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/49"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 6: Letterkenny"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LIMERICK-CITY-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Pre-2014 council. Section 9 amalgamation retained as evidence; no inferred office-successor FK.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/50"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section9.html",
+          "sha256": "9d2c8cb05023ffa69acecf6e99a07e4498193b27e7c0745161a1feac01ead4b5",
+          "json_pointer": null,
+          "locator": "section 9(1): Limerick City"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LIMERICK-COUNTY-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Pre-2014 council. Section 9 amalgamation retained as evidence; no inferred office-successor FK.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/51"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section9.html",
+          "sha256": "9d2c8cb05023ffa69acecf6e99a07e4498193b27e7c0745161a1feac01ead4b5",
+          "json_pointer": null,
+          "locator": "section 9(1): Limerick County"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LISMORE-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/52"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 6: Lismore"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LISTOWEL-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/53"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 8: Listowel"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LONGFORD-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/54"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 10: Longford"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LOUGHREA-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/55"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 8: Loughrea"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MACROOM-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/56"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 12: Macroom"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MALLOW-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/57"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 14: Mallow"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MIDLETON-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/58"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 16: Midleton"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MONAGHAN-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/59"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 18: Monaghan"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MOUNTMELLICK-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/60"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 10: Mountmellick"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MUINEBHEAG-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/61"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 12: Muinebheag"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MULLINGAR-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/62"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 14: Mullingar"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-NAAS-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/63"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 20: Naas"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-NAVAN-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/64"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 22: Navan"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-NENAGH-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/65"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 24: Nenagh"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-NEW-ROSS-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/66"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 26: New Ross"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-NORTH-TIPPERARY-COUNTY-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Pre-2014 council. Section 9 amalgamation retained as evidence; no inferred office-successor FK.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/67"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section9.html",
+          "sha256": "9d2c8cb05023ffa69acecf6e99a07e4498193b27e7c0745161a1feac01ead4b5",
+          "json_pointer": null,
+          "locator": "section 9(1): North Tipperary County"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-PASSAGE-WEST-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/68"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 16: Passage West"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-PORTLAOISE-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/69"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 18: Portlaoise"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-SHANNON-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/70"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 20: Shannon"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-SKIBBEREEN-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/71"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 28: Skibbereen"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-SLIGO-B-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/72"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 2 (1-based among all HTML tables), cell 7: Sligo"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-SOUTH-TIPPERARY-COUNTY-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Pre-2014 council. Section 9 amalgamation retained as evidence; no inferred office-successor FK.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/73"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section9.html",
+          "sha256": "9d2c8cb05023ffa69acecf6e99a07e4498193b27e7c0745161a1feac01ead4b5",
+          "json_pointer": null,
+          "locator": "section 9(1): South Tipperary County"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TEMPLEMORE-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/74"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 30: Templemore"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-THURLES-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/75"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 32: Thurles"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TIPPERARY-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/76"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 34: Tipperary"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TRALEE-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/77"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 36: Tralee"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TRAMORE-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/78"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 22: Tramore"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TRIM-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/79"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 38: Trim"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TUAM-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/80"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 4 (1-based among all HTML tables), cell 24: Tuam"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TULLAMORE-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/81"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 40: Tullamore"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-WATERFORD-CITY-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Pre-2014 council. Section 9 amalgamation retained as evidence; no inferred office-successor FK.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/82"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section9.html",
+          "sha256": "9d2c8cb05023ffa69acecf6e99a07e4498193b27e7c0745161a1feac01ead4b5",
+          "json_pointer": null,
+          "locator": "section 9(1): Waterford City"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-WATERFORD-COUNTY-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Pre-2014 council. Section 9 amalgamation retained as evidence; no inferred office-successor FK.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/83"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section9.html",
+          "sha256": "9d2c8cb05023ffa69acecf6e99a07e4498193b27e7c0745161a1feac01ead4b5",
+          "json_pointer": null,
+          "locator": "section 9(1): Waterford County"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-WESTPORT-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/84"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 42: Westport"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-WEXFORD-B-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/85"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 2 (1-based among all HTML tables), cell 9: Wexford"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-WICKLOW-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/86"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 44: Wicklow"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-HIST-YOUGHAL-T-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. Historical local council retained; modern municipal district is not asserted as an identical successor office.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/87"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2001-schedule6.html",
+          "sha256": "823ce39a5cc486bc85c9d87768a50f983915a1105fe8abbf19820aa1a178dda5",
+          "json_pointer": null,
+          "locator": "Schedule 6, nested table 3 (1-based among all HTML tables), cell 46: Youghal"
+        },
+        {
+          "input_path": "data/research/ireland/sources/lg2014-section24.html",
+          "sha256": "e5ebe1a533ecdc9e34e500f5dadfdf31933680d1e7da64ad60cd7a6b41721e95",
+          "json_pointer": null,
+          "locator": "section 24: each town council stands dissolved"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-1433-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/88"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1433-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=94; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/101",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-1433-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-1434-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/89"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1434-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=92; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/146",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-1434-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-1435-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/90"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1435-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=98; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/164",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-1435-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-148d-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/91"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-148d-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=75; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/119",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-148d-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-148e-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/92"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-148e-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=76; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/170",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-148e-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-148f-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/93"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-148f-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=77; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/155",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-148f-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-1490-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/94"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1490-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=78; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/122",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-1490-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-1491-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/95"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1491-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=79; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/125",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-1491-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-1492-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/96"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1492-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=65; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/98",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-1492-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-1493-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/97"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1493-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=80; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/173",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-1493-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-1494-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/98"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1494-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=81; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/128",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-1494-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-1495-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/99"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1495-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=82; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/188",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-1495-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-1496-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/100"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1496-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=83; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/131",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-1496-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-1497-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/101"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1497-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=84; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/176",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-1497-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-1498-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/102"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1498-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=85; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/179",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-1498-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-1499-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/103"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-1499-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=86; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/158",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-1499-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-149a-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/104"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-149a-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=87; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/161",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-149a-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-149b-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/105"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-149b-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=88; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/134",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-149b-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-149c-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/106"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-149c-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=89; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/137",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-149c-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-149d-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/107"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-149d-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=66; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/182",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-149d-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-149e-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/108"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-149e-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=90; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/140",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-149e-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-149f-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/109"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-149f-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=95; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/104",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-149f-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-14a0-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/110"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-14a0-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=96; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/107",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-14a0-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-14a1-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/111"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-14a1-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=97; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/110",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-14a1-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-14a2-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/112"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-14a2-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=67; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/143",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-14a2-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-14a3-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/113"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-14a3-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=93; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/149",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-14a3-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-14a4-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/114"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-14a4-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=69; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/185",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-14a4-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-14a5-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/115"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-14a5-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=99; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/167",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-14a5-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-14a6-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/116"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-14a6-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=72; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/152",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-14a6-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-14a7-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/117"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-14a7-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=73; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/113",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-14a7-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LA-2ae19629-14a8-13a3-e055-000000000001-C",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/118"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/dimension/C03789V04537/category/label/2ae19629-14a8-13a3-e055-000000000001",
+          "locator": null
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-elections.html",
+          "sha256": "f7f057093c0df6b2dd631824a15eedf111f00910ed38000b8af2c43444dfec11",
+          "json_pointer": null,
+          "locator": "Local elections every five years; 31 Local Government Authorities"
+        },
+        {
+          "input_path": "data/research/ireland/sources/local-authorities.html",
+          "sha256": "c8e4bcfcfdaba4235b8cc456db2a8eb11c05c1e4e2850b75aae73f3ae73197f3",
+          "json_pointer": null,
+          "locator": "Local authority dropdown option value=74; exact source name matched by documented accent/punctuation normalization"
+        },
+        {
+          "input_path": "data/research/ireland/sources/G0503-data.json",
+          "sha256": "7bd553effcc0ae9e347fee8ada214319ab70e9f86ae190888087b4b2278fbfe9",
+          "json_pointer": "/value/116",
+          "locator": null,
+          "dimensions": {
+            "STATISTIC": "G0503C02",
+            "TLIST(A1)": "2024",
+            "C03789V04537": "2ae19629-14a8-13a3-e055-000000000001",
+            "C03919V04671": "25"
+          }
+        }
+      ]
+    },
+    {
+      "office_id": "IE-LIMERICK-MAYOR",
+      "tier": "municipal",
+      "rationale": "Source identifies an elected municipal council; municipal geography tier, separate from council office type. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/119"
+        },
+        {
+          "input_path": "data/research/ireland/sources/mayor-mode.html",
+          "sha256": "dd1deefd78efbc28f6a362db7e648385ecc857b5d6520d79f09cb543961bb3e7",
+          "json_pointer": null,
+          "locator": "first ever directly elected Mayor on 7 June 2024"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-PRESIDENT",
+      "tier": "national",
+      "rationale": "Source identifies a national chamber or directly elected presidency; Atlas storage national_context. ",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/120"
+        },
+        {
+          "input_path": "data/research/ireland/sources/president-mode.html",
+          "sha256": "6d3da982d4ec5e5e79a312fd45e2abfcda447f1057f5be14c7526b2214c8c1c1",
+          "json_pointer": null,
+          "locator": "President of Ireland"
+        }
+      ]
+    },
+    {
+      "office_id": "IE-SEANAD",
+      "tier": "national",
+      "rationale": "Source identifies a national chamber or directly elected presidency; Atlas storage national_context. 49 elected members and 11 Taoiseach nominees; 2025 university constituencies differ from current Higher Education rules. Do not model nominees as election results.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/research/ireland/office-register.json",
+          "sha256": "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+          "json_pointer": "/121"
+        },
+        {
+          "input_path": "data/research/ireland/sources/seanad-mode.html",
+          "sha256": "27cbc0495f2dca6cda1a5ba46fd331b3b6ea4ee28ec0c4f731fb8f08733227a2",
+          "json_pointer": null,
+          "locator": "Seanad Éireann"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    "Classify evidenced bodies, never calendar labels. national maps national_context.",
+    "Ireland county councils are local government, proposed municipal; no regional office invented.",
+    "All31 current councils; 80 historical town/borough and six pre-merger city/county councils retained.",
+    "Seanad has elected and appointed members; no election rows for nominees.",
+    "Limerick is the only evidenced direct mayor in this register. Northern Ireland excluded.",
+    "Historical councils stay active; no guessed successors.",
+    "Draft only; focused-review flags do not confer approval."
+  ],
+  "notes": [
+    {
+      "office_id": "IE-EP",
+      "reviews": [
+        "Supranational delegation, proposed other; electoral constituencies remain contest context, not extra offices."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-ARDEE-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-ARKLOW-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-ATHLONE-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-ATHY-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BALBRIGGAN-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BALLINA-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BALLINASLOE-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BALLYBAY-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BALLYSHANNON-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BANDON-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BANTRY-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BELTURBET-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BIRR-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BOYLE-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BRAY-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BUNCRANA-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-BUNDORAN-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CARLOW-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CARRICK-ON-SUIR-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CARRICKMACROSS-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CASHEL-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CASTLEBAR-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CASTLEBLAYNEY-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CAVAN-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CLONAKILTY-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CLONES-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-CLONMEL-B-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-COBH-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-COOTEHILL-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-DROGHEDA-B-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-DROICHEAD-NUA-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-DUNDALK-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-DUNGARVAN-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-EDENDERRY-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-ENNIS-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-ENNISCORTHY-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-FERMOY-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-GOREY-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-GRANARD-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-GREYSTONES-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-KELLS-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-KILKEE-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-KILKENNY-B-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-KILLARNEY-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-KILRUSH-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-KINSALE-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LEIXLIP-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LETTERKENNY-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LIMERICK-CITY-C",
+      "reviews": [
+        "Pre-2014 council. Section 9 amalgamation retained as evidence; no inferred office-successor FK."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LIMERICK-COUNTY-C",
+      "reviews": [
+        "Pre-2014 council. Section 9 amalgamation retained as evidence; no inferred office-successor FK."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LISMORE-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LISTOWEL-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LONGFORD-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-LOUGHREA-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MACROOM-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MALLOW-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MIDLETON-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MONAGHAN-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MOUNTMELLICK-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MUINEBHEAG-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-MULLINGAR-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-NAAS-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-NAVAN-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-NENAGH-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-NEW-ROSS-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-NORTH-TIPPERARY-COUNTY-C",
+      "reviews": [
+        "Pre-2014 council. Section 9 amalgamation retained as evidence; no inferred office-successor FK."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-PASSAGE-WEST-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-PORTLAOISE-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-SHANNON-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-SKIBBEREEN-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-SLIGO-B-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-SOUTH-TIPPERARY-COUNTY-C",
+      "reviews": [
+        "Pre-2014 council. Section 9 amalgamation retained as evidence; no inferred office-successor FK."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TEMPLEMORE-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-THURLES-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TIPPERARY-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TRALEE-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TRAMORE-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TRIM-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TUAM-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-TULLAMORE-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-WATERFORD-CITY-C",
+      "reviews": [
+        "Pre-2014 council. Section 9 amalgamation retained as evidence; no inferred office-successor FK."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-WATERFORD-COUNTY-C",
+      "reviews": [
+        "Pre-2014 council. Section 9 amalgamation retained as evidence; no inferred office-successor FK."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-WESTPORT-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-WEXFORD-B-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-WICKLOW-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-HIST-YOUGHAL-T-C",
+      "reviews": [
+        "Historical local council retained; modern municipal district is not asserted as an identical successor office."
+      ]
+    },
+    {
+      "office_id": "IE-SEANAD",
+      "reviews": [
+        "49 elected members and 11 Taoiseach nominees; 2025 university constituencies differ from current Higher Education rules. Do not model nominees as election results."
+      ]
+    }
+  ],
+  "approval": {
+    "by": "product_owner",
+    "accepted_by": "Justin",
+    "date": "2026-09-20",
+    "timezone": "America/Edmonton",
+    "notes": "Justin accepted 2026-09-20 Prompt AB with named holds: 36 current + 86 historical offices (122 total). Draft tiers 118 municipal / 0 regional / 3 national / 1 other. Northern Ireland excluded. Named holds retained open: IE-2014-REFORM, IE-LOCAL-2019-2024, IE-SEANAD-PANELS, IE-EP-RESULTS, IE-DAIL-ENCODING-AND-STV, IE-PRESIDENT-LATEST, IE-MAYOR-LIMIT, IE-NORTHERN-IRELAND-EXCLUSION, IE-REGIONAL-APPOINTMENTS. No Ireland importer, electiondatabase redirects, or Mexico changes in this landing."
+  },
+  "production_accepted": true,
+  "prompt": "prompt_ab",
+  "predecessor_draft_sha256": "0683410a3e3b8f1c1bc5b69df0793fd5bbba524658556a51ca76d3aeb7ae3470",
+  "justin_approval": {
+    "accepted": true,
+    "accepted_by": "Justin",
+    "accepted_at": "2026-09-20",
+    "timezone": "America/Edmonton",
+    "current_offices": 36,
+    "historical_offices": 86,
+    "offices": 122,
+    "scope": "all_draft_offices_with_named_holds",
+    "holds": [
+      "IE-2014-REFORM",
+      "IE-LOCAL-2019-2024",
+      "IE-SEANAD-PANELS",
+      "IE-EP-RESULTS",
+      "IE-DAIL-ENCODING-AND-STV",
+      "IE-PRESIDENT-LATEST",
+      "IE-MAYOR-LIMIT",
+      "IE-NORTHERN-IRELAND-EXCLUSION",
+      "IE-REGIONAL-APPOINTMENTS"
+    ]
+  }
+}
