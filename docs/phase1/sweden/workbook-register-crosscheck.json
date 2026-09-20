@@ -1,0 +1,2891 @@
+{
+  "status": "PASS",
+  "source_path": "data/research/sweden/sources/mandates-2026.xlsx",
+  "sha256": "559a379d64ef09cb7459f8248cfb86934bf641a74a05ebe63d66202afb86828f",
+  "sheet": "Mandat 2022 och 2026",
+  "municipalities": {
+    "0114": [
+      {
+        "sheet_row": 93,
+        "source_name": "Upplands Väsby",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0115": [
+      {
+        "sheet_row": 94,
+        "source_name": "Vallentuna",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "0117": [
+      {
+        "sheet_row": 95,
+        "source_name": "Österåker",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0120": [
+      {
+        "sheet_row": 96,
+        "source_name": "Värmdö",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "0123": [
+      {
+        "sheet_row": 97,
+        "source_name": "Järfälla",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0125": [
+      {
+        "sheet_row": 98,
+        "source_name": "Ekerö",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "0126": [
+      {
+        "sheet_row": 99,
+        "source_name": "Huddinge",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0127": [
+      {
+        "sheet_row": 100,
+        "source_name": "Botkyrka",
+        "constituency": null,
+        "total_seats_2026": 75
+      }
+    ],
+    "0128": [
+      {
+        "sheet_row": 101,
+        "source_name": "Salem",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "0136": [
+      {
+        "sheet_row": 102,
+        "source_name": "Haninge",
+        "constituency": "Haninge Norra",
+        "total_seats_2026": 61
+      },
+      {
+        "sheet_row": 103,
+        "source_name": "Haninge",
+        "constituency": "Haninge Södra",
+        "total_seats_2026": 61
+      }
+    ],
+    "0138": [
+      {
+        "sheet_row": 104,
+        "source_name": "Tyresö",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0139": [
+      {
+        "sheet_row": 105,
+        "source_name": "Upplands-Bro",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "0140": [
+      {
+        "sheet_row": 106,
+        "source_name": "Nykvarn",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "0160": [
+      {
+        "sheet_row": 107,
+        "source_name": "Täby",
+        "constituency": "Täby Västra",
+        "total_seats_2026": 61
+      },
+      {
+        "sheet_row": 108,
+        "source_name": "Täby",
+        "constituency": "Täby Östra",
+        "total_seats_2026": 61
+      }
+    ],
+    "0162": [
+      {
+        "sheet_row": 109,
+        "source_name": "Danderyd",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "0163": [
+      {
+        "sheet_row": 110,
+        "source_name": "Sollentuna",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0180": [
+      {
+        "sheet_row": 111,
+        "source_name": "Stockholm",
+        "constituency": "1 Södermalm-Enskede",
+        "total_seats_2026": 101
+      },
+      {
+        "sheet_row": 112,
+        "source_name": "Stockholm",
+        "constituency": "2 Bromma-Kungsholmen",
+        "total_seats_2026": 101
+      },
+      {
+        "sheet_row": 113,
+        "source_name": "Stockholm",
+        "constituency": "3 Norrmalm-Östermalm-Gamla Stan",
+        "total_seats_2026": 101
+      },
+      {
+        "sheet_row": 114,
+        "source_name": "Stockholm",
+        "constituency": "4 Östra Söderort",
+        "total_seats_2026": 101
+      },
+      {
+        "sheet_row": 115,
+        "source_name": "Stockholm",
+        "constituency": "5 Västra Söderort",
+        "total_seats_2026": 101
+      },
+      {
+        "sheet_row": 116,
+        "source_name": "Stockholm",
+        "constituency": "6 Yttre Västerort",
+        "total_seats_2026": 101
+      }
+    ],
+    "0181": [
+      {
+        "sheet_row": 117,
+        "source_name": "Södertälje",
+        "constituency": null,
+        "total_seats_2026": 65
+      }
+    ],
+    "0182": [
+      {
+        "sheet_row": 118,
+        "source_name": "Nacka",
+        "constituency": "Nacka Västra",
+        "total_seats_2026": 61
+      },
+      {
+        "sheet_row": 119,
+        "source_name": "Nacka",
+        "constituency": "Nacka Östra",
+        "total_seats_2026": 61
+      }
+    ],
+    "0183": [
+      {
+        "sheet_row": 120,
+        "source_name": "Sundbyberg",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0184": [
+      {
+        "sheet_row": 121,
+        "source_name": "Solna",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0186": [
+      {
+        "sheet_row": 122,
+        "source_name": "Lidingö",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0187": [
+      {
+        "sheet_row": 123,
+        "source_name": "Vaxholm",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "0188": [
+      {
+        "sheet_row": 124,
+        "source_name": "Norrtälje",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0191": [
+      {
+        "sheet_row": 125,
+        "source_name": "Sigtuna",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0192": [
+      {
+        "sheet_row": 126,
+        "source_name": "Nynäshamn",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "0305": [
+      {
+        "sheet_row": 127,
+        "source_name": "Håbo",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "0319": [
+      {
+        "sheet_row": 128,
+        "source_name": "Älvkarleby",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "0330": [
+      {
+        "sheet_row": 129,
+        "source_name": "Knivsta",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "0331": [
+      {
+        "sheet_row": 130,
+        "source_name": "Heby",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "0360": [
+      {
+        "sheet_row": 131,
+        "source_name": "Tierp",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "0380": [
+      {
+        "sheet_row": 132,
+        "source_name": "Uppsala",
+        "constituency": null,
+        "total_seats_2026": 81
+      }
+    ],
+    "0381": [
+      {
+        "sheet_row": 133,
+        "source_name": "Enköping",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0382": [
+      {
+        "sheet_row": 134,
+        "source_name": "Östhammar",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "0428": [
+      {
+        "sheet_row": 135,
+        "source_name": "Vingåker",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "0461": [
+      {
+        "sheet_row": 136,
+        "source_name": "Gnesta",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "0480": [
+      {
+        "sheet_row": 137,
+        "source_name": "Nyköping",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0481": [
+      {
+        "sheet_row": 138,
+        "source_name": "Oxelösund",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "0482": [
+      {
+        "sheet_row": 139,
+        "source_name": "Flen",
+        "constituency": null,
+        "total_seats_2026": 39
+      }
+    ],
+    "0483": [
+      {
+        "sheet_row": 140,
+        "source_name": "Katrineholm",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "0484": [
+      {
+        "sheet_row": 141,
+        "source_name": "Eskilstuna",
+        "constituency": null,
+        "total_seats_2026": 65
+      }
+    ],
+    "0486": [
+      {
+        "sheet_row": 142,
+        "source_name": "Strängnäs",
+        "constituency": null,
+        "total_seats_2026": 55
+      }
+    ],
+    "0488": [
+      {
+        "sheet_row": 143,
+        "source_name": "Trosa",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "0509": [
+      {
+        "sheet_row": 144,
+        "source_name": "Ödeshög",
+        "constituency": null,
+        "total_seats_2026": 29
+      }
+    ],
+    "0512": [
+      {
+        "sheet_row": 145,
+        "source_name": "Ydre",
+        "constituency": null,
+        "total_seats_2026": 21
+      }
+    ],
+    "0513": [
+      {
+        "sheet_row": 146,
+        "source_name": "Kinda",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "0560": [
+      {
+        "sheet_row": 147,
+        "source_name": "Boxholm",
+        "constituency": null,
+        "total_seats_2026": 29
+      }
+    ],
+    "0561": [
+      {
+        "sheet_row": 148,
+        "source_name": "Åtvidaberg",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "0562": [
+      {
+        "sheet_row": 149,
+        "source_name": "Finspång",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "0563": [
+      {
+        "sheet_row": 150,
+        "source_name": "Valdemarsvik",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "0580": [
+      {
+        "sheet_row": 151,
+        "source_name": "Linköping",
+        "constituency": "Linköping Nordväst",
+        "total_seats_2026": 79
+      },
+      {
+        "sheet_row": 152,
+        "source_name": "Linköping",
+        "constituency": "Linköping Sydväst",
+        "total_seats_2026": 79
+      },
+      {
+        "sheet_row": 153,
+        "source_name": "Linköping",
+        "constituency": "Linköping Nordost",
+        "total_seats_2026": 79
+      }
+    ],
+    "0581": [
+      {
+        "sheet_row": 154,
+        "source_name": "Norrköping",
+        "constituency": null,
+        "total_seats_2026": 85
+      }
+    ],
+    "0582": [
+      {
+        "sheet_row": 155,
+        "source_name": "Söderköping",
+        "constituency": null,
+        "total_seats_2026": 39
+      }
+    ],
+    "0583": [
+      {
+        "sheet_row": 156,
+        "source_name": "Motala",
+        "constituency": null,
+        "total_seats_2026": 57
+      }
+    ],
+    "0584": [
+      {
+        "sheet_row": 157,
+        "source_name": "Vadstena",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "0586": [
+      {
+        "sheet_row": 158,
+        "source_name": "Mjölby",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "0604": [
+      {
+        "sheet_row": 159,
+        "source_name": "Aneby",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "0617": [
+      {
+        "sheet_row": 160,
+        "source_name": "Gnosjö",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "0642": [
+      {
+        "sheet_row": 161,
+        "source_name": "Mullsjö",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "0643": [
+      {
+        "sheet_row": 162,
+        "source_name": "Habo",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "0662": [
+      {
+        "sheet_row": 163,
+        "source_name": "Gislaved",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "0665": [
+      {
+        "sheet_row": 164,
+        "source_name": "Vaggeryd",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "0680": [
+      {
+        "sheet_row": 165,
+        "source_name": "Jönköping",
+        "constituency": null,
+        "total_seats_2026": 81
+      }
+    ],
+    "0682": [
+      {
+        "sheet_row": 166,
+        "source_name": "Nässjö",
+        "constituency": null,
+        "total_seats_2026": 57
+      }
+    ],
+    "0683": [
+      {
+        "sheet_row": 167,
+        "source_name": "Värnamo",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "0684": [
+      {
+        "sheet_row": 168,
+        "source_name": "Sävsjö",
+        "constituency": null,
+        "total_seats_2026": 39
+      }
+    ],
+    "0685": [
+      {
+        "sheet_row": 169,
+        "source_name": "Vetlanda",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "0686": [
+      {
+        "sheet_row": 170,
+        "source_name": "Eksjö",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "0687": [
+      {
+        "sheet_row": 171,
+        "source_name": "Tranås",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "0760": [
+      {
+        "sheet_row": 172,
+        "source_name": "Uppvidinge",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "0761": [
+      {
+        "sheet_row": 173,
+        "source_name": "Lessebo",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "0763": [
+      {
+        "sheet_row": 174,
+        "source_name": "Tingsryd",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "0764": [
+      {
+        "sheet_row": 175,
+        "source_name": "Alvesta",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "0765": [
+      {
+        "sheet_row": 176,
+        "source_name": "Älmhult",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "0767": [
+      {
+        "sheet_row": 177,
+        "source_name": "Markaryd",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "0780": [
+      {
+        "sheet_row": 178,
+        "source_name": "Växjö",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "0781": [
+      {
+        "sheet_row": 179,
+        "source_name": "Ljungby",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "0821": [
+      {
+        "sheet_row": 180,
+        "source_name": "Högsby",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "0834": [
+      {
+        "sheet_row": 181,
+        "source_name": "Torsås",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "0840": [
+      {
+        "sheet_row": 182,
+        "source_name": "Mörbylånga",
+        "constituency": null,
+        "total_seats_2026": 43
+      }
+    ],
+    "0860": [
+      {
+        "sheet_row": 183,
+        "source_name": "Hultsfred",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "0861": [
+      {
+        "sheet_row": 184,
+        "source_name": "Mönsterås",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "0862": [
+      {
+        "sheet_row": 185,
+        "source_name": "Emmaboda",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "0880": [
+      {
+        "sheet_row": 186,
+        "source_name": "Kalmar",
+        "constituency": "Kalmar Norra",
+        "total_seats_2026": 61
+      },
+      {
+        "sheet_row": 187,
+        "source_name": "Kalmar",
+        "constituency": "Kalmar Södra",
+        "total_seats_2026": 61
+      }
+    ],
+    "0881": [
+      {
+        "sheet_row": 188,
+        "source_name": "Nybro",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "0882": [
+      {
+        "sheet_row": 189,
+        "source_name": "Oskarshamn",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "0883": [
+      {
+        "sheet_row": 190,
+        "source_name": "Västervik",
+        "constituency": null,
+        "total_seats_2026": 57
+      }
+    ],
+    "0884": [
+      {
+        "sheet_row": 191,
+        "source_name": "Vimmerby",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "0885": [
+      {
+        "sheet_row": 192,
+        "source_name": "Borgholm",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "0980": [
+      {
+        "sheet_row": 193,
+        "source_name": "Gotland",
+        "constituency": null,
+        "total_seats_2026": 71
+      }
+    ],
+    "1060": [
+      {
+        "sheet_row": 194,
+        "source_name": "Olofström",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "1080": [
+      {
+        "sheet_row": 195,
+        "source_name": "Karlskrona",
+        "constituency": "Karlskrona Ö",
+        "total_seats_2026": 75
+      },
+      {
+        "sheet_row": 196,
+        "source_name": "Karlskrona",
+        "constituency": "Karlskrona V",
+        "total_seats_2026": 75
+      },
+      {
+        "sheet_row": 197,
+        "source_name": "Karlskrona",
+        "constituency": "Karlskrona C",
+        "total_seats_2026": 75
+      }
+    ],
+    "1081": [
+      {
+        "sheet_row": 198,
+        "source_name": "Ronneby",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "1082": [
+      {
+        "sheet_row": 199,
+        "source_name": "Karlshamn",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1083": [
+      {
+        "sheet_row": 200,
+        "source_name": "Sölvesborg",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "1214": [
+      {
+        "sheet_row": 201,
+        "source_name": "Svalöv",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "1230": [
+      {
+        "sheet_row": 202,
+        "source_name": "Staffanstorp",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1231": [
+      {
+        "sheet_row": 203,
+        "source_name": "Burlöv",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1233": [
+      {
+        "sheet_row": 204,
+        "source_name": "Vellinge",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1256": [
+      {
+        "sheet_row": 205,
+        "source_name": "Östra Göinge",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1257": [
+      {
+        "sheet_row": 206,
+        "source_name": "Örkelljunga",
+        "constituency": null,
+        "total_seats_2026": 37
+      }
+    ],
+    "1260": [
+      {
+        "sheet_row": 207,
+        "source_name": "Bjuv",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1261": [
+      {
+        "sheet_row": 208,
+        "source_name": "Kävlinge",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1262": [
+      {
+        "sheet_row": 209,
+        "source_name": "Lomma",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "1263": [
+      {
+        "sheet_row": 210,
+        "source_name": "Svedala",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "1264": [
+      {
+        "sheet_row": 211,
+        "source_name": "Skurup",
+        "constituency": null,
+        "total_seats_2026": 39
+      }
+    ],
+    "1265": [
+      {
+        "sheet_row": 212,
+        "source_name": "Sjöbo",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1266": [
+      {
+        "sheet_row": 213,
+        "source_name": "Hörby",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1267": [
+      {
+        "sheet_row": 214,
+        "source_name": "Höör",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1270": [
+      {
+        "sheet_row": 215,
+        "source_name": "Tomelilla",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1272": [
+      {
+        "sheet_row": 216,
+        "source_name": "Bromölla",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1273": [
+      {
+        "sheet_row": 217,
+        "source_name": "Osby",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "1275": [
+      {
+        "sheet_row": 218,
+        "source_name": "Perstorp",
+        "constituency": null,
+        "total_seats_2026": 27
+      }
+    ],
+    "1276": [
+      {
+        "sheet_row": 219,
+        "source_name": "Klippan",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "1277": [
+      {
+        "sheet_row": 220,
+        "source_name": "Åstorp",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1278": [
+      {
+        "sheet_row": 221,
+        "source_name": "Båstad",
+        "constituency": null,
+        "total_seats_2026": 37
+      }
+    ],
+    "1280": [
+      {
+        "sheet_row": 222,
+        "source_name": "Malmö",
+        "constituency": "Malmö Östra",
+        "total_seats_2026": 61
+      },
+      {
+        "sheet_row": 223,
+        "source_name": "Malmö",
+        "constituency": "Malmö Västra",
+        "total_seats_2026": 61
+      }
+    ],
+    "1281": [
+      {
+        "sheet_row": 224,
+        "source_name": "Lund",
+        "constituency": null,
+        "total_seats_2026": 65
+      }
+    ],
+    "1282": [
+      {
+        "sheet_row": 225,
+        "source_name": "Landskrona",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "1283": [
+      {
+        "sheet_row": 226,
+        "source_name": "Helsingborg",
+        "constituency": null,
+        "total_seats_2026": 65
+      }
+    ],
+    "1284": [
+      {
+        "sheet_row": 227,
+        "source_name": "Höganäs",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1285": [
+      {
+        "sheet_row": 228,
+        "source_name": "Eslöv",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1286": [
+      {
+        "sheet_row": 229,
+        "source_name": "Ystad",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1287": [
+      {
+        "sheet_row": 230,
+        "source_name": "Trelleborg",
+        "constituency": "Trelleborgs  Första, Västra",
+        "total_seats_2026": 61
+      },
+      {
+        "sheet_row": 231,
+        "source_name": "Trelleborg",
+        "constituency": "Trelleborgs Andra, Östra",
+        "total_seats_2026": 61
+      }
+    ],
+    "1290": [
+      {
+        "sheet_row": 232,
+        "source_name": "Kristianstad",
+        "constituency": "Väster",
+        "total_seats_2026": 65
+      },
+      {
+        "sheet_row": 233,
+        "source_name": "Kristianstad",
+        "constituency": "Öster",
+        "total_seats_2026": 65
+      }
+    ],
+    "1291": [
+      {
+        "sheet_row": 234,
+        "source_name": "Simrishamn",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1292": [
+      {
+        "sheet_row": 235,
+        "source_name": "Ängelholm",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1293": [
+      {
+        "sheet_row": 236,
+        "source_name": "Hässleholm",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "1315": [
+      {
+        "sheet_row": 237,
+        "source_name": "Hylte",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1380": [
+      {
+        "sheet_row": 238,
+        "source_name": "Halmstad",
+        "constituency": null,
+        "total_seats_2026": 71
+      }
+    ],
+    "1381": [
+      {
+        "sheet_row": 239,
+        "source_name": "Laholm",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1382": [
+      {
+        "sheet_row": 240,
+        "source_name": "Falkenberg",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "1383": [
+      {
+        "sheet_row": 241,
+        "source_name": "Varberg",
+        "constituency": "Varbergs norra valkrets",
+        "total_seats_2026": 61
+      },
+      {
+        "sheet_row": 242,
+        "source_name": "Varberg",
+        "constituency": "Varbergs södra valkrets",
+        "total_seats_2026": 61
+      }
+    ],
+    "1384": [
+      {
+        "sheet_row": 243,
+        "source_name": "Kungsbacka",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "1401": [
+      {
+        "sheet_row": 244,
+        "source_name": "Härryda",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1402": [
+      {
+        "sheet_row": 245,
+        "source_name": "Partille",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1407": [
+      {
+        "sheet_row": 246,
+        "source_name": "Öckerö",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1415": [
+      {
+        "sheet_row": 247,
+        "source_name": "Stenungsund",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1419": [
+      {
+        "sheet_row": 248,
+        "source_name": "Tjörn",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1421": [
+      {
+        "sheet_row": 249,
+        "source_name": "Orust",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1427": [
+      {
+        "sheet_row": 250,
+        "source_name": "Sotenäs",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1430": [
+      {
+        "sheet_row": 251,
+        "source_name": "Munkedal",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "1435": [
+      {
+        "sheet_row": 252,
+        "source_name": "Tanum",
+        "constituency": null,
+        "total_seats_2026": 39
+      }
+    ],
+    "1438": [
+      {
+        "sheet_row": 253,
+        "source_name": "Dals-Ed",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1439": [
+      {
+        "sheet_row": 254,
+        "source_name": "Färgelanda",
+        "constituency": null,
+        "total_seats_2026": 29
+      }
+    ],
+    "1440": [
+      {
+        "sheet_row": 255,
+        "source_name": "Ale",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1441": [
+      {
+        "sheet_row": 256,
+        "source_name": "Lerum",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1442": [
+      {
+        "sheet_row": 257,
+        "source_name": "Vårgårda",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1443": [
+      {
+        "sheet_row": 258,
+        "source_name": "Bollebygd",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1444": [
+      {
+        "sheet_row": 259,
+        "source_name": "Grästorp",
+        "constituency": null,
+        "total_seats_2026": 27
+      }
+    ],
+    "1445": [
+      {
+        "sheet_row": 260,
+        "source_name": "Essunga",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1446": [
+      {
+        "sheet_row": 261,
+        "source_name": "Karlsborg",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1447": [
+      {
+        "sheet_row": 262,
+        "source_name": "Gullspång",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1452": [
+      {
+        "sheet_row": 263,
+        "source_name": "Tranemo",
+        "constituency": null,
+        "total_seats_2026": 37
+      }
+    ],
+    "1460": [
+      {
+        "sheet_row": 264,
+        "source_name": "Bengtsfors",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1461": [
+      {
+        "sheet_row": 265,
+        "source_name": "Mellerud",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1462": [
+      {
+        "sheet_row": 266,
+        "source_name": "Lilla Edet",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1463": [
+      {
+        "sheet_row": 267,
+        "source_name": "Mark",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1465": [
+      {
+        "sheet_row": 268,
+        "source_name": "Svenljunga",
+        "constituency": null,
+        "total_seats_2026": 33
+      }
+    ],
+    "1466": [
+      {
+        "sheet_row": 269,
+        "source_name": "Herrljunga",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1470": [
+      {
+        "sheet_row": 270,
+        "source_name": "Vara",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1471": [
+      {
+        "sheet_row": 271,
+        "source_name": "Götene",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "1472": [
+      {
+        "sheet_row": 272,
+        "source_name": "Tibro",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "1473": [
+      {
+        "sheet_row": 273,
+        "source_name": "Töreboda",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1480": [
+      {
+        "sheet_row": 274,
+        "source_name": "Göteborg",
+        "constituency": null,
+        "total_seats_2026": 81
+      }
+    ],
+    "1481": [
+      {
+        "sheet_row": 275,
+        "source_name": "Mölndal",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "1482": [
+      {
+        "sheet_row": 276,
+        "source_name": "Kungälv",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "1484": [
+      {
+        "sheet_row": 277,
+        "source_name": "Lysekil",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1485": [
+      {
+        "sheet_row": 278,
+        "source_name": "Uddevalla",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "1486": [
+      {
+        "sheet_row": 279,
+        "source_name": "Strömstad",
+        "constituency": null,
+        "total_seats_2026": 39
+      }
+    ],
+    "1487": [
+      {
+        "sheet_row": 280,
+        "source_name": "Vänersborg",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1488": [
+      {
+        "sheet_row": 281,
+        "source_name": "Trollhättan",
+        "constituency": "Trollhättan Norra",
+        "total_seats_2026": 61
+      },
+      {
+        "sheet_row": 282,
+        "source_name": "Trollhättan",
+        "constituency": "Trollhättan Södra",
+        "total_seats_2026": 61
+      }
+    ],
+    "1489": [
+      {
+        "sheet_row": 283,
+        "source_name": "Alingsås",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1490": [
+      {
+        "sheet_row": 284,
+        "source_name": "Borås",
+        "constituency": "Borås Östra 1",
+        "total_seats_2026": 73
+      },
+      {
+        "sheet_row": 285,
+        "source_name": "Borås",
+        "constituency": "Borås Södra 2",
+        "total_seats_2026": 73
+      },
+      {
+        "sheet_row": 286,
+        "source_name": "Borås",
+        "constituency": "Borås Västra 3",
+        "total_seats_2026": 73
+      }
+    ],
+    "1491": [
+      {
+        "sheet_row": 287,
+        "source_name": "Ulricehamn",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "1492": [
+      {
+        "sheet_row": 288,
+        "source_name": "Åmål",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "1493": [
+      {
+        "sheet_row": 289,
+        "source_name": "Mariestad",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "1494": [
+      {
+        "sheet_row": 290,
+        "source_name": "Lidköping",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1495": [
+      {
+        "sheet_row": 291,
+        "source_name": "Skara",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "1496": [
+      {
+        "sheet_row": 292,
+        "source_name": "Skövde",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "1497": [
+      {
+        "sheet_row": 293,
+        "source_name": "Hjo",
+        "constituency": null,
+        "total_seats_2026": 33
+      }
+    ],
+    "1498": [
+      {
+        "sheet_row": 294,
+        "source_name": "Tidaholm",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1499": [
+      {
+        "sheet_row": 295,
+        "source_name": "Falköping",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1715": [
+      {
+        "sheet_row": 296,
+        "source_name": "Kil",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1730": [
+      {
+        "sheet_row": 297,
+        "source_name": "Eda",
+        "constituency": null,
+        "total_seats_2026": 25
+      }
+    ],
+    "1737": [
+      {
+        "sheet_row": 298,
+        "source_name": "Torsby",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1760": [
+      {
+        "sheet_row": 299,
+        "source_name": "Storfors",
+        "constituency": null,
+        "total_seats_2026": 25
+      }
+    ],
+    "1761": [
+      {
+        "sheet_row": 300,
+        "source_name": "Hammarö",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1762": [
+      {
+        "sheet_row": 301,
+        "source_name": "Munkfors",
+        "constituency": null,
+        "total_seats_2026": 21
+      }
+    ],
+    "1763": [
+      {
+        "sheet_row": 302,
+        "source_name": "Forshaga",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1764": [
+      {
+        "sheet_row": 303,
+        "source_name": "Grums",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1765": [
+      {
+        "sheet_row": 304,
+        "source_name": "Årjäng",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "1766": [
+      {
+        "sheet_row": 305,
+        "source_name": "Sunne",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1780": [
+      {
+        "sheet_row": 306,
+        "source_name": "Karlstad",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "1781": [
+      {
+        "sheet_row": 307,
+        "source_name": "Kristinehamn",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1782": [
+      {
+        "sheet_row": 308,
+        "source_name": "Filipstad",
+        "constituency": null,
+        "total_seats_2026": 25
+      }
+    ],
+    "1783": [
+      {
+        "sheet_row": 309,
+        "source_name": "Hagfors",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "1784": [
+      {
+        "sheet_row": 310,
+        "source_name": "Arvika",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "1785": [
+      {
+        "sheet_row": 311,
+        "source_name": "Säffle",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "1814": [
+      {
+        "sheet_row": 312,
+        "source_name": "Lekeberg",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "1860": [
+      {
+        "sheet_row": 313,
+        "source_name": "Laxå",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1861": [
+      {
+        "sheet_row": 314,
+        "source_name": "Hallsberg",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "1862": [
+      {
+        "sheet_row": 315,
+        "source_name": "Degerfors",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1863": [
+      {
+        "sheet_row": 316,
+        "source_name": "Hällefors",
+        "constituency": null,
+        "total_seats_2026": 27
+      }
+    ],
+    "1864": [
+      {
+        "sheet_row": 317,
+        "source_name": "Ljusnarsberg",
+        "constituency": null,
+        "total_seats_2026": 21
+      }
+    ],
+    "1880": [
+      {
+        "sheet_row": 318,
+        "source_name": "Örebro",
+        "constituency": "Örebro Norra",
+        "total_seats_2026": 65
+      },
+      {
+        "sheet_row": 319,
+        "source_name": "Örebro",
+        "constituency": "Örebro Södra",
+        "total_seats_2026": 65
+      }
+    ],
+    "1881": [
+      {
+        "sheet_row": 320,
+        "source_name": "Kumla",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "1882": [
+      {
+        "sheet_row": 321,
+        "source_name": "Askersund",
+        "constituency": null,
+        "total_seats_2026": 33
+      }
+    ],
+    "1883": [
+      {
+        "sheet_row": 322,
+        "source_name": "Karlskoga",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "1884": [
+      {
+        "sheet_row": 323,
+        "source_name": "Nora",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "1885": [
+      {
+        "sheet_row": 324,
+        "source_name": "Lindesberg",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "1904": [
+      {
+        "sheet_row": 325,
+        "source_name": "Skinnskatteberg",
+        "constituency": null,
+        "total_seats_2026": 25
+      }
+    ],
+    "1907": [
+      {
+        "sheet_row": 326,
+        "source_name": "Surahammar",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1960": [
+      {
+        "sheet_row": 327,
+        "source_name": "Kungsör",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "1961": [
+      {
+        "sheet_row": 328,
+        "source_name": "Hallstahammar",
+        "constituency": null,
+        "total_seats_2026": 37
+      }
+    ],
+    "1962": [
+      {
+        "sheet_row": 329,
+        "source_name": "Norberg",
+        "constituency": null,
+        "total_seats_2026": 21
+      }
+    ],
+    "1980": [
+      {
+        "sheet_row": 330,
+        "source_name": "Västerås",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "1981": [
+      {
+        "sheet_row": 331,
+        "source_name": "Sala",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "1982": [
+      {
+        "sheet_row": 332,
+        "source_name": "Fagersta",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "1983": [
+      {
+        "sheet_row": 333,
+        "source_name": "Köping",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "1984": [
+      {
+        "sheet_row": 334,
+        "source_name": "Arboga",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2021": [
+      {
+        "sheet_row": 335,
+        "source_name": "Vansbro",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2023": [
+      {
+        "sheet_row": 336,
+        "source_name": "Malung-Sälen",
+        "constituency": null,
+        "total_seats_2026": 39
+      }
+    ],
+    "2026": [
+      {
+        "sheet_row": 337,
+        "source_name": "Gagnef",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "2029": [
+      {
+        "sheet_row": 338,
+        "source_name": "Leksand",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "2031": [
+      {
+        "sheet_row": 339,
+        "source_name": "Rättvik",
+        "constituency": null,
+        "total_seats_2026": 39
+      }
+    ],
+    "2034": [
+      {
+        "sheet_row": 340,
+        "source_name": "Orsa",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2039": [
+      {
+        "sheet_row": 341,
+        "source_name": "Älvdalen",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "2061": [
+      {
+        "sheet_row": 342,
+        "source_name": "Smedjebacken",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "2062": [
+      {
+        "sheet_row": 343,
+        "source_name": "Mora",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "2080": [
+      {
+        "sheet_row": 344,
+        "source_name": "Falun",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "2081": [
+      {
+        "sheet_row": 345,
+        "source_name": "Borlänge",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "2082": [
+      {
+        "sheet_row": 346,
+        "source_name": "Säter",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "2083": [
+      {
+        "sheet_row": 347,
+        "source_name": "Hedemora",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "2084": [
+      {
+        "sheet_row": 348,
+        "source_name": "Avesta",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "2085": [
+      {
+        "sheet_row": 349,
+        "source_name": "Ludvika",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "2101": [
+      {
+        "sheet_row": 350,
+        "source_name": "Ockelbo",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2104": [
+      {
+        "sheet_row": 351,
+        "source_name": "Hofors",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2121": [
+      {
+        "sheet_row": 352,
+        "source_name": "Ovanåker",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "2132": [
+      {
+        "sheet_row": 353,
+        "source_name": "Nordanstig",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2161": [
+      {
+        "sheet_row": 354,
+        "source_name": "Ljusdal",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "2180": [
+      {
+        "sheet_row": 355,
+        "source_name": "Gävle",
+        "constituency": null,
+        "total_seats_2026": 65
+      }
+    ],
+    "2181": [
+      {
+        "sheet_row": 356,
+        "source_name": "Sandviken",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "2182": [
+      {
+        "sheet_row": 357,
+        "source_name": "Söderhamn",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "2183": [
+      {
+        "sheet_row": 358,
+        "source_name": "Bollnäs",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ],
+    "2184": [
+      {
+        "sheet_row": 359,
+        "source_name": "Hudiksvall",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "2260": [
+      {
+        "sheet_row": 360,
+        "source_name": "Ånge",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "2262": [
+      {
+        "sheet_row": 361,
+        "source_name": "Timrå",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "2280": [
+      {
+        "sheet_row": 362,
+        "source_name": "Härnösand",
+        "constituency": null,
+        "total_seats_2026": 43
+      }
+    ],
+    "2281": [
+      {
+        "sheet_row": 363,
+        "source_name": "Sundsvall",
+        "constituency": "Sundsvalls  Första",
+        "total_seats_2026": 71
+      },
+      {
+        "sheet_row": 364,
+        "source_name": "Sundsvall",
+        "constituency": "Sundsvalls Andra",
+        "total_seats_2026": 71
+      }
+    ],
+    "2282": [
+      {
+        "sheet_row": 365,
+        "source_name": "Kramfors",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "2283": [
+      {
+        "sheet_row": 366,
+        "source_name": "Sollefteå",
+        "constituency": null,
+        "total_seats_2026": 39
+      }
+    ],
+    "2284": [
+      {
+        "sheet_row": 367,
+        "source_name": "Örnsköldsvik",
+        "constituency": "Örnsköldsviks Norra",
+        "total_seats_2026": 61
+      },
+      {
+        "sheet_row": 368,
+        "source_name": "Örnsköldsvik",
+        "constituency": "Örnsköldsviks Södra",
+        "total_seats_2026": 61
+      }
+    ],
+    "2303": [
+      {
+        "sheet_row": 369,
+        "source_name": "Ragunda",
+        "constituency": null,
+        "total_seats_2026": 25
+      }
+    ],
+    "2305": [
+      {
+        "sheet_row": 370,
+        "source_name": "Bräcke",
+        "constituency": null,
+        "total_seats_2026": 27
+      }
+    ],
+    "2309": [
+      {
+        "sheet_row": 371,
+        "source_name": "Krokom",
+        "constituency": null,
+        "total_seats_2026": 41
+      }
+    ],
+    "2313": [
+      {
+        "sheet_row": 372,
+        "source_name": "Strömsund",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "2321": [
+      {
+        "sheet_row": 373,
+        "source_name": "Åre",
+        "constituency": null,
+        "total_seats_2026": 37
+      }
+    ],
+    "2326": [
+      {
+        "sheet_row": 374,
+        "source_name": "Berg",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2361": [
+      {
+        "sheet_row": 375,
+        "source_name": "Härjedalen",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2380": [
+      {
+        "sheet_row": 376,
+        "source_name": "Östersund",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "2401": [
+      {
+        "sheet_row": 377,
+        "source_name": "Nordmaling",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2403": [
+      {
+        "sheet_row": 378,
+        "source_name": "Bjurholm",
+        "constituency": null,
+        "total_seats_2026": 21
+      }
+    ],
+    "2404": [
+      {
+        "sheet_row": 379,
+        "source_name": "Vindeln",
+        "constituency": null,
+        "total_seats_2026": 29
+      }
+    ],
+    "2409": [
+      {
+        "sheet_row": 380,
+        "source_name": "Robertsfors",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2417": [
+      {
+        "sheet_row": 381,
+        "source_name": "Norsjö",
+        "constituency": null,
+        "total_seats_2026": 27
+      }
+    ],
+    "2418": [
+      {
+        "sheet_row": 382,
+        "source_name": "Malå",
+        "constituency": null,
+        "total_seats_2026": 25
+      }
+    ],
+    "2421": [
+      {
+        "sheet_row": 383,
+        "source_name": "Storuman",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2422": [
+      {
+        "sheet_row": 384,
+        "source_name": "Sorsele",
+        "constituency": null,
+        "total_seats_2026": 21
+      }
+    ],
+    "2425": [
+      {
+        "sheet_row": 385,
+        "source_name": "Dorotea",
+        "constituency": null,
+        "total_seats_2026": 25
+      }
+    ],
+    "2460": [
+      {
+        "sheet_row": 386,
+        "source_name": "Vännäs",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2462": [
+      {
+        "sheet_row": 387,
+        "source_name": "Vilhelmina",
+        "constituency": null,
+        "total_seats_2026": 27
+      }
+    ],
+    "2463": [
+      {
+        "sheet_row": 388,
+        "source_name": "Åsele",
+        "constituency": null,
+        "total_seats_2026": 25
+      }
+    ],
+    "2480": [
+      {
+        "sheet_row": 389,
+        "source_name": "Umeå",
+        "constituency": "Umeå centrala",
+        "total_seats_2026": 65
+      },
+      {
+        "sheet_row": 390,
+        "source_name": "Umeå",
+        "constituency": "Umeå omland",
+        "total_seats_2026": 65
+      }
+    ],
+    "2481": [
+      {
+        "sheet_row": 391,
+        "source_name": "Lycksele",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2482": [
+      {
+        "sheet_row": 392,
+        "source_name": "Skellefteå",
+        "constituency": null,
+        "total_seats_2026": 65
+      }
+    ],
+    "2505": [
+      {
+        "sheet_row": 393,
+        "source_name": "Arvidsjaur",
+        "constituency": null,
+        "total_seats_2026": 23
+      }
+    ],
+    "2506": [
+      {
+        "sheet_row": 394,
+        "source_name": "Arjeplog",
+        "constituency": null,
+        "total_seats_2026": 21
+      }
+    ],
+    "2510": [
+      {
+        "sheet_row": 395,
+        "source_name": "Jokkmokk",
+        "constituency": null,
+        "total_seats_2026": 23
+      }
+    ],
+    "2513": [
+      {
+        "sheet_row": 396,
+        "source_name": "Överkalix",
+        "constituency": null,
+        "total_seats_2026": 25
+      }
+    ],
+    "2514": [
+      {
+        "sheet_row": 397,
+        "source_name": "Kalix",
+        "constituency": null,
+        "total_seats_2026": 37
+      }
+    ],
+    "2518": [
+      {
+        "sheet_row": 398,
+        "source_name": "Övertorneå",
+        "constituency": null,
+        "total_seats_2026": 25
+      }
+    ],
+    "2521": [
+      {
+        "sheet_row": 399,
+        "source_name": "Pajala",
+        "constituency": null,
+        "total_seats_2026": 21
+      }
+    ],
+    "2523": [
+      {
+        "sheet_row": 400,
+        "source_name": "Gällivare",
+        "constituency": null,
+        "total_seats_2026": 35
+      }
+    ],
+    "2560": [
+      {
+        "sheet_row": 401,
+        "source_name": "Älvsbyn",
+        "constituency": null,
+        "total_seats_2026": 27
+      }
+    ],
+    "2580": [
+      {
+        "sheet_row": 402,
+        "source_name": "Luleå",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "2581": [
+      {
+        "sheet_row": 403,
+        "source_name": "Piteå",
+        "constituency": null,
+        "total_seats_2026": 51
+      }
+    ],
+    "2582": [
+      {
+        "sheet_row": 404,
+        "source_name": "Boden",
+        "constituency": null,
+        "total_seats_2026": 49
+      }
+    ],
+    "2583": [
+      {
+        "sheet_row": 405,
+        "source_name": "Haparanda",
+        "constituency": null,
+        "total_seats_2026": 31
+      }
+    ],
+    "2584": [
+      {
+        "sheet_row": 406,
+        "source_name": "Kiruna",
+        "constituency": null,
+        "total_seats_2026": 45
+      }
+    ]
+  },
+  "regions": {
+    "01": [
+      {
+        "sheet_row": 31,
+        "source_name": "Stockholm",
+        "constituency": "1 Södermalm-Enskede",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 32,
+        "source_name": "Stockholm",
+        "constituency": "2 Bromma-Kungsholmen",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 33,
+        "source_name": "Stockholm",
+        "constituency": "3 Norrmalm-Östermalm-Gamla Stan",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 34,
+        "source_name": "Stockholm",
+        "constituency": "4 Östra Söderort",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 35,
+        "source_name": "Stockholm",
+        "constituency": "5 Västra Söderort",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 36,
+        "source_name": "Stockholm",
+        "constituency": "6 Yttre Västerort",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 37,
+        "source_name": "Stockholm",
+        "constituency": "Sydväst",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 38,
+        "source_name": "Stockholm",
+        "constituency": "Sydost",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 39,
+        "source_name": "Stockholm",
+        "constituency": "Ost",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 40,
+        "source_name": "Stockholm",
+        "constituency": "Nordost",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 41,
+        "source_name": "Stockholm",
+        "constituency": "Nord",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 42,
+        "source_name": "Stockholm",
+        "constituency": "Nordväst",
+        "total_seats_2026": 149
+      }
+    ],
+    "03": [
+      {
+        "sheet_row": 43,
+        "source_name": "Uppsala",
+        "constituency": "Uppsala läns södra",
+        "total_seats_2026": 101
+      },
+      {
+        "sheet_row": 44,
+        "source_name": "Uppsala",
+        "constituency": "Uppsala läns mellersta",
+        "total_seats_2026": 101
+      },
+      {
+        "sheet_row": 45,
+        "source_name": "Uppsala",
+        "constituency": "Uppsala läns norra",
+        "total_seats_2026": 101
+      }
+    ],
+    "04": [
+      {
+        "sheet_row": 46,
+        "source_name": "Södermanland",
+        "constituency": null,
+        "total_seats_2026": 79
+      }
+    ],
+    "05": [
+      {
+        "sheet_row": 47,
+        "source_name": "Östergötland",
+        "constituency": "Linköping",
+        "total_seats_2026": 101
+      },
+      {
+        "sheet_row": 48,
+        "source_name": "Östergötland",
+        "constituency": "Norrköping",
+        "total_seats_2026": 101
+      },
+      {
+        "sheet_row": 49,
+        "source_name": "Östergötland",
+        "constituency": "Kinda Åtvid Valdemarsvik Söderköping",
+        "total_seats_2026": 101
+      },
+      {
+        "sheet_row": 50,
+        "source_name": "Östergötland",
+        "constituency": "Ödeshög Ydre Boxholm Mjölby Vadstena",
+        "total_seats_2026": 101
+      },
+      {
+        "sheet_row": 51,
+        "source_name": "Östergötland",
+        "constituency": "Motala Finspång",
+        "total_seats_2026": 101
+      }
+    ],
+    "06": [
+      {
+        "sheet_row": 52,
+        "source_name": "Jönköping",
+        "constituency": "Första valkretsen",
+        "total_seats_2026": 81
+      },
+      {
+        "sheet_row": 53,
+        "source_name": "Jönköping",
+        "constituency": "Andra valkretsen",
+        "total_seats_2026": 81
+      },
+      {
+        "sheet_row": 54,
+        "source_name": "Jönköping",
+        "constituency": "Tredje valkretsen",
+        "total_seats_2026": 81
+      }
+    ],
+    "07": [
+      {
+        "sheet_row": 55,
+        "source_name": "Kronoberg",
+        "constituency": null,
+        "total_seats_2026": 61
+      }
+    ],
+    "08": [
+      {
+        "sheet_row": 56,
+        "source_name": "Kalmar",
+        "constituency": "Kalmar 1 Västervik",
+        "total_seats_2026": 67
+      },
+      {
+        "sheet_row": 57,
+        "source_name": "Kalmar",
+        "constituency": "Kalmar 2 Hultsfred Vimmerby",
+        "total_seats_2026": 67
+      },
+      {
+        "sheet_row": 58,
+        "source_name": "Kalmar",
+        "constituency": "Kalmar 3 Högsby Mönsterås Oskarshamn",
+        "total_seats_2026": 67
+      },
+      {
+        "sheet_row": 59,
+        "source_name": "Kalmar",
+        "constituency": "Kalmar 4  Emmaboda Nybro Torsås",
+        "total_seats_2026": 67
+      },
+      {
+        "sheet_row": 60,
+        "source_name": "Kalmar",
+        "constituency": "Kalmar 5 Kalmar",
+        "total_seats_2026": 67
+      },
+      {
+        "sheet_row": 61,
+        "source_name": "Kalmar",
+        "constituency": "Kalmar 6 Borgholm Mörbylånga",
+        "total_seats_2026": 67
+      }
+    ],
+    "10": [
+      {
+        "sheet_row": 62,
+        "source_name": "Blekinge",
+        "constituency": "Karlskronakretsen",
+        "total_seats_2026": 57
+      },
+      {
+        "sheet_row": 63,
+        "source_name": "Blekinge",
+        "constituency": "Ronnebykretsen",
+        "total_seats_2026": 57
+      },
+      {
+        "sheet_row": 64,
+        "source_name": "Blekinge",
+        "constituency": "Karlshamnskretsen",
+        "total_seats_2026": 57
+      },
+      {
+        "sheet_row": 65,
+        "source_name": "Blekinge",
+        "constituency": "Listerkretsen",
+        "total_seats_2026": 57
+      }
+    ],
+    "12": [
+      {
+        "sheet_row": 66,
+        "source_name": "Skåne",
+        "constituency": "Nordvästkretsen",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 67,
+        "source_name": "Skåne",
+        "constituency": "Nordostkretsen",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 68,
+        "source_name": "Skåne",
+        "constituency": "Mellankretsen",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 69,
+        "source_name": "Skåne",
+        "constituency": "Sydvästkretsen I",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 70,
+        "source_name": "Skåne",
+        "constituency": "Sydvästkretsen II",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 71,
+        "source_name": "Skåne",
+        "constituency": "Sydostkretsen",
+        "total_seats_2026": 149
+      }
+    ],
+    "13": [
+      {
+        "sheet_row": 72,
+        "source_name": "Halland",
+        "constituency": null,
+        "total_seats_2026": 71
+      }
+    ],
+    "14": [
+      {
+        "sheet_row": 73,
+        "source_name": "Västra Götaland",
+        "constituency": "Göteborgs kommun",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 74,
+        "source_name": "Västra Götaland",
+        "constituency": "Västra Götalands läns västra",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 75,
+        "source_name": "Västra Götaland",
+        "constituency": "Västra Götalands läns norra",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 76,
+        "source_name": "Västra Götaland",
+        "constituency": "Västra Götalands läns södra",
+        "total_seats_2026": 149
+      },
+      {
+        "sheet_row": 77,
+        "source_name": "Västra Götaland",
+        "constituency": "Västra Götalands läns östra",
+        "total_seats_2026": 149
+      }
+    ],
+    "17": [
+      {
+        "sheet_row": 78,
+        "source_name": "Värmland",
+        "constituency": null,
+        "total_seats_2026": 81
+      }
+    ],
+    "18": [
+      {
+        "sheet_row": 79,
+        "source_name": "Örebro",
+        "constituency": "Örebro läns Södra",
+        "total_seats_2026": 71
+      },
+      {
+        "sheet_row": 80,
+        "source_name": "Örebro",
+        "constituency": "Örebro läns Västra",
+        "total_seats_2026": 71
+      },
+      {
+        "sheet_row": 81,
+        "source_name": "Örebro",
+        "constituency": "Örebro-Lekeberg",
+        "total_seats_2026": 71
+      },
+      {
+        "sheet_row": 82,
+        "source_name": "Örebro",
+        "constituency": "Örebro läns Norra",
+        "total_seats_2026": 71
+      }
+    ],
+    "19": [
+      {
+        "sheet_row": 83,
+        "source_name": "Västmanland",
+        "constituency": "Östra valkretsen",
+        "total_seats_2026": 77
+      },
+      {
+        "sheet_row": 84,
+        "source_name": "Västmanland",
+        "constituency": "Västra valkretsen",
+        "total_seats_2026": 77
+      }
+    ],
+    "20": [
+      {
+        "sheet_row": 85,
+        "source_name": "Dalarna",
+        "constituency": null,
+        "total_seats_2026": 83
+      }
+    ],
+    "21": [
+      {
+        "sheet_row": 86,
+        "source_name": "Gävleborg",
+        "constituency": null,
+        "total_seats_2026": 75
+      }
+    ],
+    "22": [
+      {
+        "sheet_row": 87,
+        "source_name": "Västernorrland",
+        "constituency": null,
+        "total_seats_2026": 71
+      }
+    ],
+    "23": [
+      {
+        "sheet_row": 88,
+        "source_name": "Jämtland",
+        "constituency": null,
+        "total_seats_2026": 55
+      }
+    ],
+    "24": [
+      {
+        "sheet_row": 89,
+        "source_name": "Västerbotten",
+        "constituency": "Västerbottens läns västra",
+        "total_seats_2026": 71
+      },
+      {
+        "sheet_row": 90,
+        "source_name": "Västerbotten",
+        "constituency": "Västerbottens läns norra",
+        "total_seats_2026": 71
+      },
+      {
+        "sheet_row": 91,
+        "source_name": "Västerbotten",
+        "constituency": "Västerbottens läns södra",
+        "total_seats_2026": 71
+      }
+    ],
+    "25": [
+      {
+        "sheet_row": 92,
+        "source_name": "Norrbotten",
+        "constituency": null,
+        "total_seats_2026": 71
+      }
+    ]
+  },
+  "counts": {
+    "municipal_councils": 290,
+    "regional_assemblies": 20
+  },
+  "policy": "Constituencies repeat the same office total; take one evidenced total per office, never sum repeated area totals. Workbook totals stay metadata, not party seats or separate offices."
+}
