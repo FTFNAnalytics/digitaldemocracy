@@ -464,6 +464,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "austria") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "4 regional offices (Carinthia, Lower Austria, Tyrol, Upper Austria). No dated upcoming regional events; next dates remain unknown. Research coverage remains partial.",
+      denominatorKnown: false,
+    };
+  }
   if (countryId === "belgium") {
     return {
       offices,
@@ -488,6 +497,15 @@ export function listAtlasRegionalCalendar(
       count: offices.length,
       label:
         "No regional offices in the supplied Bulgaria package; 530 approved municipality-wide municipal offices. 3,067 district/village rows remain held. Research coverage remains partial.",
+      denominatorKnown: false,
+    };
+  }
+  if (countryId === "netherlands") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "12 regional offices (provincial states). Sourced 17 March 2027 next-date metadata is expected, not a prospective event. Hilversum/Wijdemeren merger successor binding, named historic gaps, and focused-tier reviews stay open. Appointed mayors have no election rows.",
       denominatorKnown: false,
     };
   }

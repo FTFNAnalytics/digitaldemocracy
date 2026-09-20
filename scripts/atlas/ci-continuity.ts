@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Belgium + Bosnia and Herzegovina + Bulgaria + Switzerland + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -15,9 +15,11 @@ import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
 import { LINEAGE_ID as ALDERNEY_LINEAGE } from "../../lib/atlas/alderney/identity";
 import { LINEAGE_ID as ANDORRA_LINEAGE } from "../../lib/atlas/andorra/identity";
 import { LINEAGE_ID as ARMENIA_LINEAGE } from "../../lib/atlas/armenia/identity";
+import { LINEAGE_ID as AUSTRIA_LINEAGE } from "../../lib/atlas/austria/identity";
 import { LINEAGE_ID as BELGIUM_LINEAGE } from "../../lib/atlas/belgium/identity";
 import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
 import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
+import { LINEAGE_ID as NETHERLANDS_LINEAGE } from "../../lib/atlas/netherlands/identity";
 import { LINEAGE_ID as SWITZERLAND_LINEAGE } from "../../lib/atlas/switzerland/identity";
 
 function fail(message: string): never {
@@ -76,6 +78,18 @@ function main() {
     }
     if (result.armenia?.counts.selected_histories !== 33) {
       fail(`Armenia events ${String(result.armenia?.counts.selected_histories)}`);
+    }
+    if (result.austria?.counts.current_offices !== 2038) {
+      fail(`Austria offices ${String(result.austria?.counts.current_offices)}`);
+    }
+    if (result.austria?.counts.municipal_offices !== 2034) {
+      fail(`Austria municipal ${String(result.austria?.counts.municipal_offices)}`);
+    }
+    if (result.austria?.counts.regional_offices !== 4) {
+      fail(`Austria regional ${String(result.austria?.counts.regional_offices)}`);
+    }
+    if (result.austria?.counts.selected_histories !== 5956) {
+      fail(`Austria events ${String(result.austria?.counts.selected_histories)}`);
     }
     if (result.bosnia?.counts.current_offices !== 13) {
       fail(`Bosnia offices ${String(result.bosnia?.counts.current_offices)}`);
@@ -137,6 +151,39 @@ function main() {
     if (result.bulgaria?.counts.selected_histories !== 1590) {
       fail(`Bulgaria events ${String(result.bulgaria?.counts.selected_histories)}`);
     }
+    if (result.netherlands?.counts.offices !== 501) {
+      fail(`Netherlands offices ${String(result.netherlands?.counts.offices)}`);
+    }
+    if (result.netherlands?.counts.current_offices !== 432) {
+      fail(`Netherlands current ${String(result.netherlands?.counts.current_offices)}`);
+    }
+    if (result.netherlands?.counts.historical_offices !== 69) {
+      fail(`Netherlands historical ${String(result.netherlands?.counts.historical_offices)}`);
+    }
+    if (result.netherlands?.counts.municipal_offices !== 414) {
+      fail(`Netherlands municipal ${String(result.netherlands?.counts.municipal_offices)}`);
+    }
+    if (result.netherlands?.counts.regional_offices !== 12) {
+      fail(`Netherlands regional ${String(result.netherlands?.counts.regional_offices)}`);
+    }
+    if (result.netherlands?.counts.national_offices !== 3) {
+      fail(`Netherlands national ${String(result.netherlands?.counts.national_offices)}`);
+    }
+    if (result.netherlands?.counts.other_offices !== 72) {
+      fail(`Netherlands other ${String(result.netherlands?.counts.other_offices)}`);
+    }
+    if (result.netherlands?.counts.total_events !== 1475) {
+      fail(`Netherlands events ${String(result.netherlands?.counts.total_events)}`);
+    }
+    if (result.netherlands?.counts.result_rows !== 13050) {
+      fail(`Netherlands results ${String(result.netherlands?.counts.result_rows)}`);
+    }
+    if (result.netherlands?.counts.prospective_events !== 0) {
+      fail(`Netherlands prospective ${String(result.netherlands?.counts.prospective_events)}`);
+    }
+    if (result.netherlands?.counts.needs_review_classifications !== 147) {
+      fail(`Netherlands needs_review ${String(result.netherlands?.counts.needs_review_classifications)}`);
+    }
     if (result.switzerland?.counts.offices !== 2816) {
       fail(`Switzerland offices ${String(result.switzerland?.counts.offices)}`);
     }
@@ -192,6 +239,9 @@ function main() {
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ARMENIA_LINEAGE]) !== 71) {
         fail("Armenia office rows");
       }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [AUSTRIA_LINEAGE]) !== 2038) {
+        fail("Austria office rows");
+      }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BELGIUM_LINEAGE]) !== 1234) {
         fail("Belgium office rows");
       }
@@ -206,6 +256,15 @@ function main() {
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BULGARIA_LINEAGE]) !== 530) {
         fail("Bulgaria office rows");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [NETHERLANDS_LINEAGE]) !== 501) {
+        fail("Netherlands office rows");
+      }
+      if (
+        count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_status = 'historical'", [NETHERLANDS_LINEAGE]) !==
+        69
+      ) {
+        fail("Netherlands historical office rows");
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [SWITZERLAND_LINEAGE]) !== 2816) {
         fail("Switzerland office rows");
@@ -278,6 +337,24 @@ function main() {
         ) !== 71
       ) {
         fail("Armenia municipal rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'regional'",
+          [AUSTRIA_LINEAGE],
+        ) !== 4
+      ) {
+        fail("Austria regional rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'municipal'",
+          [AUSTRIA_LINEAGE],
+        ) !== 2034
+      ) {
+        fail("Austria municipal rows");
       }
       if (
         count(
@@ -417,9 +494,11 @@ function main() {
         ALDERNEY_LINEAGE,
         ANDORRA_LINEAGE,
         ARMENIA_LINEAGE,
+        AUSTRIA_LINEAGE,
         BELGIUM_LINEAGE,
         BOSNIA_LINEAGE,
         BULGARIA_LINEAGE,
+        NETHERLANDS_LINEAGE,
         SWITZERLAND_LINEAGE,
         NZ_LINEAGE_ID,
         LATAM_LINEAGE_ID,
@@ -432,7 +511,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 belgium=1234 bosnia=13 bulgaria=530 switzerland=2816 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

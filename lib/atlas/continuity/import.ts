@@ -2,9 +2,11 @@ import { importAlbania, type ImportAlbaniaOptions, type ImportAlbaniaResult } fr
 import { importAlderney, type ImportAlderneyResult } from "../alderney/import";
 import { importAndorra, type ImportAndorraResult } from "../andorra/import";
 import { importArmenia, type ImportArmeniaResult } from "../armenia/import";
+import { importAustria, type ImportAustriaResult } from "../austria/import";
 import { importBelgium, type ImportBelgiumResult } from "../belgium/import";
 import { importBosnia, type ImportBosniaResult } from "../bosnia-and-herzegovina/import";
 import { importBulgaria, type ImportBulgariaResult } from "../bulgaria/import";
+import { importNetherlands, type ImportNetherlandsResult } from "../netherlands/import";
 import { importSwitzerland, type ImportSwitzerlandResult } from "../switzerland/import";
 import { importLatAm } from "./latam";
 import { importNewZealand } from "./nz";
@@ -15,9 +17,11 @@ export type ImportScope =
   | "andorra"
   | "alderney"
   | "armenia"
+  | "austria"
   | "belgium"
   | "bosnia"
   | "bulgaria"
+  | "netherlands"
   | "switzerland"
   | "latam"
   | "nz"
@@ -30,9 +34,11 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     raw === "andorra" ||
     raw === "alderney" ||
     raw === "armenia" ||
+    raw === "austria" ||
     raw === "belgium" ||
     raw === "bosnia" ||
     raw === "bulgaria" ||
+    raw === "netherlands" ||
     raw === "switzerland" ||
     raw === "latam" ||
     raw === "nz" ||
@@ -41,7 +47,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     return raw;
   }
   throw new Error(
-    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|belgium|bosnia|bulgaria|switzerland|latam|nz|all`,
+    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|netherlands|switzerland|latam|nz|all`,
   );
 }
 
@@ -50,9 +56,11 @@ export type MultiLineageImportResult = {
   andorra?: ImportAndorraResult;
   alderney?: ImportAlderneyResult;
   armenia?: ImportArmeniaResult;
+  austria?: ImportAustriaResult;
   belgium?: ImportBelgiumResult;
   bosnia?: ImportBosniaResult;
   bulgaria?: ImportBulgariaResult;
+  netherlands?: ImportNetherlandsResult;
   switzerland?: ImportSwitzerlandResult;
   latam?: ContinuityImportResult;
   nz?: ContinuityImportResult;
@@ -75,6 +83,9 @@ export function importAtlasLineages(
   if (scope === "armenia" || scope === "all") {
     result.armenia = importArmenia(options);
   }
+  if (scope === "austria" || scope === "all") {
+    result.austria = importAustria(options);
+  }
   if (scope === "belgium" || scope === "all") {
     result.belgium = importBelgium(options);
   }
@@ -83,6 +94,9 @@ export function importAtlasLineages(
   }
   if (scope === "bulgaria" || scope === "all") {
     result.bulgaria = importBulgaria(options);
+  }
+  if (scope === "netherlands" || scope === "all") {
+    result.netherlands = importNetherlands(options);
   }
   if (scope === "switzerland" || scope === "all") {
     result.switzerland = importSwitzerland(options);
