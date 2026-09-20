@@ -1,0 +1,1851 @@
+[
+  {
+    "result_row_id": "result-7bcfc043cbc0f8f59edfa119",
+    "office_id": "CH-CT-GL-L",
+    "history_key": "CH-CT-GL-L::2010::body",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "seats",
+        "supplied": 12,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36654111.bin",
+            "sha256": "2883936b889d4b42d039afa004fb217781e3924003f1e7629532176ed3daa37a",
+            "locator": {
+              "sheet": "2010-2013",
+              "row": 16,
+              "column": "D"
+            }
+          }
+        ],
+        "raw": {
+          "header": "FDP 5)"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 12,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36654111.bin",
+            "sha256": "2883936b889d4b42d039afa004fb217781e3924003f1e7629532176ed3daa37a",
+            "locator": {
+              "sheet": "2009-2012",
+              "row": 16,
+              "column": "D"
+            }
+          }
+        ],
+        "raw": {
+          "header": "FDP 5)"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 12,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36654111.bin",
+            "sha256": "2883936b889d4b42d039afa004fb217781e3924003f1e7629532176ed3daa37a",
+            "locator": {
+              "sheet": "2008-2011",
+              "row": 16,
+              "column": "D"
+            }
+          }
+        ],
+        "raw": {
+          "header": "FDP 9)"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 13,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36654111.bin",
+            "sha256": "2883936b889d4b42d039afa004fb217781e3924003f1e7629532176ed3daa37a",
+            "locator": {
+              "sheet": "2007-2010",
+              "row": 16,
+              "column": "D"
+            }
+          }
+        ],
+        "raw": {
+          "header": "FDP 8)"
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-d157b275db7ddc25b231e73d",
+    "office_id": "CH-CT-GL-L",
+    "history_key": "CH-CT-GL-L::2010::body",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "seats",
+        "supplied": 17,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36654111.bin",
+            "sha256": "2883936b889d4b42d039afa004fb217781e3924003f1e7629532176ed3daa37a",
+            "locator": {
+              "sheet": "2010-2013",
+              "row": 16,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "header": "SVP"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 17,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36654111.bin",
+            "sha256": "2883936b889d4b42d039afa004fb217781e3924003f1e7629532176ed3daa37a",
+            "locator": {
+              "sheet": "2009-2012",
+              "row": 16,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "header": "SVP"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 17,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36654111.bin",
+            "sha256": "2883936b889d4b42d039afa004fb217781e3924003f1e7629532176ed3daa37a",
+            "locator": {
+              "sheet": "2008-2011",
+              "row": 16,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "header": "SVP"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 16,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36654111.bin",
+            "sha256": "2883936b889d4b42d039afa004fb217781e3924003f1e7629532176ed3daa37a",
+            "locator": {
+              "sheet": "2007-2010",
+              "row": 16,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "header": "SVP"
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-acc88b91055e2b57f61ee2f4",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2023::SH",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "votes",
+        "supplied": 3517,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2023",
+              "row": 113,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 1561,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2023",
+              "row": 116,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-b255b5814ac81a05ec2dc914",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2019::SH",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "votes",
+        "supplied": 3668,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2019",
+              "row": 106,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 621,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2019",
+              "row": 110,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-b177d9f062df45342c6b3faa",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::SH",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "votes",
+        "supplied": 2616,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 116,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 2613,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 120,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-43529655cb3c5a54ced29adc",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::VS",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "votes",
+        "supplied": 834,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 200,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 73,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 204,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 338,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 208,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 555,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 212,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 582,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 215,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 149,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 218,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 325,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 222,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 90,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 226,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 109,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 232,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 4079,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 251,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 677,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 255,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 645,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 258,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 2846,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 261,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-7dd8dc1a1492e4a688774ace",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2015::VS",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "votes",
+        "supplied": 25012,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 201,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 3362,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 205,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 25514,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 209,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 18565,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 213,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 2451,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 216,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 630,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 219,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 13178,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 223,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 7531,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 227,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 1367,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 233,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 25736,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 252,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 21561,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 256,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 2256,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 259,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 7571,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2015",
+              "row": 262,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-ac2e5ae201d2fce56636db59",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::SH",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "votes",
+        "supplied": 2193,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 113,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 1414,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 117,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-ff621343fdde19c8d20b5c55",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::VS",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "votes",
+        "supplied": 576,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 201,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 864,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 204,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 365,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 208,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 303,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 212,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 547,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 215,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 216,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 219,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 96,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 223,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 1083,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 237,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 696,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 241,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 229,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 245,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 177,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 249,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 261,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 252,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-8788bd2971a727a17ab48fb6",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2011::VS",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "votes",
+        "supplied": 23913,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 202,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 2798,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 205,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 28545,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 209,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 18693,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 213,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 1904,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 216,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 12382,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 220,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 10005,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 224,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 15258,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 238,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 18240,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 242,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 4481,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 246,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 6232,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 250,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 793,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2010 2011",
+              "row": 253,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-122d859682a24cba2cb9d774",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::SH",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "votes",
+        "supplied": 1655,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2006 2007",
+              "row": 99,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 1192,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2006 2007",
+              "row": 104,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-c97cfe9669aea96405d78d89",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::VS",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "votes",
+        "supplied": 928,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2006 2007",
+              "row": 206,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 634,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2006 2007",
+              "row": 210,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 220,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2006 2007",
+              "row": 214,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 186,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2006 2007",
+              "row": 218,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 191,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2006 2007",
+              "row": 222,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-f1112fabf321ed85b732a763",
+    "office_id": "CH-FED-SR",
+    "history_key": "CH-FED-SR::2007::VS",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "votes",
+        "supplied": 13242,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2006 2007",
+              "row": 207,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 14506,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2006 2007",
+              "row": 211,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 5382,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2006 2007",
+              "row": 215,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 5859,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2006 2007",
+              "row": 219,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      },
+      {
+        "metric": "votes",
+        "supplied": 5322,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-28765111.bin",
+            "sha256": "08676ca55d16980e796bc7edbbb82b0377eedec76c3e5c5144a6b6da5024d7a8",
+            "locator": {
+              "sheet": "2006 2007",
+              "row": 223,
+              "column": "G"
+            }
+          }
+        ],
+        "raw": {
+          "source_elected_group": 0,
+          "round": 1
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-bf79be32e37e0935b73a830c",
+    "office_id": "CH-GM6640-L",
+    "history_key": "CH-GM6640-L::2020::body",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "seats",
+        "supplied": 2,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36552093.bin",
+            "sha256": "64ef0b5cefd57f073875b6a837d6e27007737e4fa6476831990eb7ec5c6d05cf",
+            "locator": {
+              "sheet": "2024",
+              "row": 107,
+              "column": "R"
+            }
+          }
+        ],
+        "raw": {
+          "header": "SP",
+          "snapshot_sheet": "2024"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 2,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36552093.bin",
+            "sha256": "64ef0b5cefd57f073875b6a837d6e27007737e4fa6476831990eb7ec5c6d05cf",
+            "locator": {
+              "sheet": "2023",
+              "row": 106,
+              "column": "R"
+            }
+          }
+        ],
+        "raw": {
+          "header": "SP",
+          "snapshot_sheet": "2023"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 2,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36552093.bin",
+            "sha256": "64ef0b5cefd57f073875b6a837d6e27007737e4fa6476831990eb7ec5c6d05cf",
+            "locator": {
+              "sheet": "2022",
+              "row": 106,
+              "column": "R"
+            }
+          }
+        ],
+        "raw": {
+          "header": "SP",
+          "snapshot_sheet": "2022"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 2,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36552093.bin",
+            "sha256": "64ef0b5cefd57f073875b6a837d6e27007737e4fa6476831990eb7ec5c6d05cf",
+            "locator": {
+              "sheet": "2021",
+              "row": 106,
+              "column": "R"
+            }
+          }
+        ],
+        "raw": {
+          "header": "SP",
+          "snapshot_sheet": "2021"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 3,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36552093.bin",
+            "sha256": "64ef0b5cefd57f073875b6a837d6e27007737e4fa6476831990eb7ec5c6d05cf",
+            "locator": {
+              "sheet": "2020",
+              "row": 103,
+              "column": "O"
+            }
+          }
+        ],
+        "raw": {
+          "header": "SP",
+          "snapshot_sheet": "2020"
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-b0a36a16acec822da50dfc22",
+    "office_id": "CH-GM3402-E",
+    "history_key": "CH-GM3402-E::2020::body",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "seats",
+        "supplied": 2,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36552088.bin",
+            "sha256": "f5ae27667019dc8d0d8459407cf9fdf81d349b516b9ef7fe82d6933cdf511f27",
+            "locator": {
+              "sheet": "2023",
+              "row": 120,
+              "column": "I"
+            }
+          }
+        ],
+        "raw": {
+          "header": "FDP 1",
+          "snapshot_sheet": "2023"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 2,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36552088.bin",
+            "sha256": "f5ae27667019dc8d0d8459407cf9fdf81d349b516b9ef7fe82d6933cdf511f27",
+            "locator": {
+              "sheet": "2022",
+              "row": 120,
+              "column": "I"
+            }
+          }
+        ],
+        "raw": {
+          "header": "FDP 1",
+          "snapshot_sheet": "2022"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 2,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36552088.bin",
+            "sha256": "f5ae27667019dc8d0d8459407cf9fdf81d349b516b9ef7fe82d6933cdf511f27",
+            "locator": {
+              "sheet": "2021",
+              "row": 118,
+              "column": "I"
+            }
+          }
+        ],
+        "raw": {
+          "header": "FDP 1",
+          "snapshot_sheet": "2021"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 3,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36552088.bin",
+            "sha256": "f5ae27667019dc8d0d8459407cf9fdf81d349b516b9ef7fe82d6933cdf511f27",
+            "locator": {
+              "sheet": "2020",
+              "row": 118,
+              "column": "I"
+            }
+          }
+        ],
+        "raw": {
+          "header": "FDP 1)",
+          "snapshot_sheet": "2020"
+        }
+      }
+    ]
+  },
+  {
+    "result_row_id": "result-93467f26a20c56ba02565218",
+    "office_id": "CH-GM3402-E",
+    "history_key": "CH-GM3402-E::2020::body",
+    "reason": "Different numeric observations for same identity/metric across source snapshots; disputed scalar is withheld.",
+    "claims": [
+      {
+        "metric": "seats",
+        "supplied": 3,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36552088.bin",
+            "sha256": "f5ae27667019dc8d0d8459407cf9fdf81d349b516b9ef7fe82d6933cdf511f27",
+            "locator": {
+              "sheet": "2023",
+              "row": 120,
+              "column": "AY"
+            }
+          }
+        ],
+        "raw": {
+          "header": "Übrige",
+          "snapshot_sheet": "2023"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 3,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36552088.bin",
+            "sha256": "f5ae27667019dc8d0d8459407cf9fdf81d349b516b9ef7fe82d6933cdf511f27",
+            "locator": {
+              "sheet": "2022",
+              "row": 120,
+              "column": "AY"
+            }
+          }
+        ],
+        "raw": {
+          "header": "Übrige",
+          "snapshot_sheet": "2022"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 3,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36552088.bin",
+            "sha256": "f5ae27667019dc8d0d8459407cf9fdf81d349b516b9ef7fe82d6933cdf511f27",
+            "locator": {
+              "sheet": "2021",
+              "row": 118,
+              "column": "AY"
+            }
+          }
+        ],
+        "raw": {
+          "header": "Übrige",
+          "snapshot_sheet": "2021"
+        }
+      },
+      {
+        "metric": "seats",
+        "supplied": 2,
+        "evidence": [
+          {
+            "input_path": "sources/bfs-dam-36552088.bin",
+            "sha256": "f5ae27667019dc8d0d8459407cf9fdf81d349b516b9ef7fe82d6933cdf511f27",
+            "locator": {
+              "sheet": "2020",
+              "row": 118,
+              "column": "AV"
+            }
+          }
+        ],
+        "raw": {
+          "header": "Übrige",
+          "snapshot_sheet": "2020"
+        }
+      }
+    ]
+  }
+]
