@@ -1,0 +1,418 @@
+[
+  {
+    "original_token": "SAMI-2025-ZERO-VOTE-SEAT-98d",
+    "reason": "SSB whole-country vote cell is zero while the same party code has a positive elected-member sum. Preserve both claims; primary protocol reconciliation required before treating this vector as reconciled.",
+    "evidence": [
+      {
+        "input_path": "data/research/norway/sources/table05924-all-data.json",
+        "sha256": "bc747f77bb55b3a35ff135d73ed288c6592de1f4f0f495220e315f5458743a7c",
+        "json_pointer": "/value/41",
+        "locator": null,
+        "dimensions": {
+          "Region": "0N",
+          "PartiValglistebm": "98d",
+          "ContentsCode": "Godkjende",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05924-all-data.json",
+        "sha256": "bc747f77bb55b3a35ff135d73ed288c6592de1f4f0f495220e315f5458743a7c",
+        "json_pointer": "/value/47",
+        "locator": null,
+        "dimensions": {
+          "Region": "0N",
+          "PartiValglistebm": "98d",
+          "ContentsCode": "GodkjendeProsent",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/41",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL1",
+          "PartiValglistebm": "98d",
+          "Kjonn": "2",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/47",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL1",
+          "PartiValglistebm": "98d",
+          "Kjonn": "1",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/521",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL2",
+          "PartiValglistebm": "98d",
+          "Kjonn": "2",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 1,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/527",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL2",
+          "PartiValglistebm": "98d",
+          "Kjonn": "1",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/1001",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL3",
+          "PartiValglistebm": "98d",
+          "Kjonn": "2",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/1007",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL3",
+          "PartiValglistebm": "98d",
+          "Kjonn": "1",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/1481",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL4",
+          "PartiValglistebm": "98d",
+          "Kjonn": "2",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/1487",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL4",
+          "PartiValglistebm": "98d",
+          "Kjonn": "1",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/1961",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL5",
+          "PartiValglistebm": "98d",
+          "Kjonn": "2",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/1967",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL5",
+          "PartiValglistebm": "98d",
+          "Kjonn": "1",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/2441",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL6",
+          "PartiValglistebm": "98d",
+          "Kjonn": "2",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/2447",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL6",
+          "PartiValglistebm": "98d",
+          "Kjonn": "1",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/2921",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL7",
+          "PartiValglistebm": "98d",
+          "Kjonn": "2",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table05923-all-data.json",
+        "sha256": "14010bb216c2b0a9ada8c12a37442a2ccbc2f7c581eaad469a9f9eddc68cb3b4",
+        "json_pointer": "/value/2927",
+        "locator": null,
+        "dimensions": {
+          "Region": "VAL7",
+          "PartiValglistebm": "98d",
+          "Kjonn": "1",
+          "ContentsCode": "Representantar",
+          "Tid": "2025"
+        },
+        "original_value": 0,
+        "original_status": null
+      }
+    ],
+    "office_ids": [
+      "NO-SAMEDIGGI"
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "REFORM-2020-2024",
+    "reason": "Official Klass change records retained verbatim. Only same-name one-to-one renumberings form aliases. Many-to-one/one-to-many claims are not Atlas successor links. Same-code boundary continuities and older reform records require legal review.",
+    "evidence": [
+      {
+        "input_path": "data/research/norway/sources/klass131-2020changes.json",
+        "sha256": "2fa735a6d980be48c919dd7c668a482adbfc58ed05cbc305ce8ed2caece0e902",
+        "json_pointer": "/codeChanges",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/norway/sources/klass131-2024changes.json",
+        "sha256": "f0b56a6cede1b63200d1903fcf4e18726adb08389aaae51ca5fcbbd761408a51",
+        "json_pointer": "/codeChanges",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/norway/sources/klass104-changes.json",
+        "sha256": "833c8aebda1f779b45030a3b23b3e35a3f5c9b6c66bfbbe0d8858fdfc42f1b96",
+        "json_pointer": "/codeChanges",
+        "locator": null
+      }
+    ],
+    "office_ids": [],
+    "status": "open"
+  },
+  {
+    "original_token": "OSLO-BOROUGH-HISTORY",
+    "reason": "15 directly elected bydelsutvalg included as other. Their election returns and pre-2004 borough predecessors are not supplied by the acquired municipal council cubes; do not reuse municipal or Storting polling-district results.",
+    "evidence": [
+      {
+        "input_path": "data/research/norway/sources/oslo-government.html",
+        "sha256": "be3958b3c34d752b5f35cbe8b401ac0a0bce0ccd22014e112296c688cc5a45e9",
+        "json_pointer": null,
+        "locator": "Bydelsutvalgene"
+      }
+    ],
+    "office_ids": [
+      "NO-B030101-C",
+      "NO-B030102-C",
+      "NO-B030103-C",
+      "NO-B030104-C",
+      "NO-B030105-C",
+      "NO-B030106-C",
+      "NO-B030107-C",
+      "NO-B030108-C",
+      "NO-B030109-C",
+      "NO-B030110-C",
+      "NO-B030111-C",
+      "NO-B030112-C",
+      "NO-B030113-C",
+      "NO-B030114-C",
+      "NO-B030115-C"
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "LONGYEARBYEN-HISTORY",
+    "reason": "Local council is evidenced as directly elected; current 2023–2027 party composition is retained raw, not promoted to election results without election protocol. Acquire 2023/2019/2015 protocols and earlier elected local-council history.",
+    "evidence": [
+      {
+        "input_path": "data/research/norway/sources/longyearbyen-politics.html",
+        "sha256": "0f1db4ebfa3f393a7118cece474cf501e19294cb8fc23eb20dfdf864c6b0eb18",
+        "json_pointer": null,
+        "locator": "Politisk organisering; Lokalstyret"
+      }
+    ],
+    "office_ids": [
+      "NO-LONGYEARBYEN-C"
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "LEGAL-STATUS-REPEATS",
+    "reason": "Statistical series do not establish each certified/preliminary/annulled/repeated chronology. All event legal_outcome values remain unknown; published statistical returns are not relabelled certified. Obtain electoral protocols, before asserting any separate repeated proceeding.",
+    "evidence": [
+      {
+        "input_path": "data/research/norway/sources/municipal-stat.html",
+        "sha256": "4244ba3a12e1174765a4b759ce6da0d0fcdb22fc3b511168642505528aabce02",
+        "json_pointer": null,
+        "locator": "About the statistics: collection, errors and uncertainty"
+      }
+    ],
+    "office_ids": [],
+    "status": "open"
+  },
+  {
+    "original_token": "COUNTY-AGGREGATES",
+    "reason": "County votes are disclosed component sums using source municipality-code prefixes. Reconcile against county electoral protocols and precise election geography, especially 2019/2023 reform cycles. No source total invented; shares remain NULL.",
+    "evidence": [
+      {
+        "input_path": "data/research/norway/sources/table01181-meta.json",
+        "sha256": "ceb00ebb30ba9dd1138067e47e094e26278964076a48733a171075e92090e40f",
+        "json_pointer": "/title",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table04809-meta.json",
+        "sha256": "9f5834ba49d5cd5c64d808a23712f2fa12e33043f53b636b145ec183a4e3719f",
+        "json_pointer": "/title",
+        "locator": null
+      }
+    ],
+    "office_ids": [],
+    "status": "open"
+  },
+  {
+    "original_token": "SAMI-OLDER-HISTORY",
+    "reason": "Sámediggi current assembly and 2005–2025 returns supplied. Earlier elections, candidate-level histories, and 2009 district transition detail need additional primary sources.",
+    "evidence": [
+      {
+        "input_path": "data/research/norway/sources/sami-mode.html",
+        "sha256": "8099a81398c58e716baf82352f52ff74eba363432a229d58e70858c0d8a93f24",
+        "json_pointer": null,
+        "locator": "Sametingsvalg"
+      },
+      {
+        "input_path": "data/research/norway/sources/table05924-meta.json",
+        "sha256": "97e1a268c554c5623b0f3f4c28e79d3732f74496322324f77f7926429dbb92d1",
+        "json_pointer": "/title",
+        "locator": null
+      }
+    ],
+    "office_ids": [
+      "NO-SAMEDIGGI"
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "MUNICIPAL-HISTORY-DEPTH",
+    "reason": "1945–2023 source series retained where observed; missing/all-zero municipality-year cells are not fabricated contests. Older histories, direct-mayor pilot histories and complete legal predecessor chains remain open.",
+    "evidence": [
+      {
+        "input_path": "data/research/norway/sources/table01180-meta.json",
+        "sha256": "1eff977f3c8ff35770f8c65bd9420a586e337451622dbb40eb90d5e180e937ea",
+        "json_pointer": "/title",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/norway/sources/municipal-stat.html",
+        "sha256": "4244ba3a12e1174765a4b759ce6da0d0fcdb22fc3b511168642505528aabce02",
+        "json_pointer": null,
+        "locator": "Historical data"
+      }
+    ],
+    "office_ids": [],
+    "status": "open"
+  },
+  {
+    "original_token": "PARTY-CATEGORIES",
+    "reason": "SSB historical common/local/other lists remain source categories; no invented coalition membership, local list identities, or global party mapping. Seat-table category coverage differs; unmatched seats remain NULL.",
+    "evidence": [
+      {
+        "input_path": "data/research/norway/sources/table01180-meta.json",
+        "sha256": "1eff977f3c8ff35770f8c65bd9420a586e337451622dbb40eb90d5e180e937ea",
+        "json_pointer": "/variables/1",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/norway/sources/table04813-meta.json",
+        "sha256": "4e4736dac2554d9007d5a1a1653f1761efe06b3603a2a13bf826f666e875e49b",
+        "json_pointer": "/variables/1",
+        "locator": null
+      }
+    ],
+    "office_ids": [],
+    "status": "open"
+  }
+]

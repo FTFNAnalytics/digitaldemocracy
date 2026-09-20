@@ -15,6 +15,7 @@ const PHASE0_SLUGS = new Set([
   "denmark",
   "sweden",
   "finland",
+  "norway",
 ]);
 
 export type ContinuityTierPack = {
