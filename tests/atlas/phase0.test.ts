@@ -967,6 +967,139 @@ describe("Phase 0 tier-classification drafts", () => {
     expect(missingExec.filter((row) => row.canton === "SZ")).toHaveLength(24);
     expect(switzerland.schema_compatibility).toMatchObject({ national: "national_context" });
   });
+
+  it("keeps Denmark Prompt X 106 current / 240 historical fully accepted", () => {
+    const denmark = readJson<
+      TierFile & {
+        production_accepted?: boolean;
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        counts_by_approval?: Record<string, number>;
+        importer_policy?: {
+          load?: string;
+          authorized_in_this_landing?: boolean;
+          approved_count?: number;
+          held_count?: number;
+        };
+        justin_approval?: {
+          accepted?: boolean;
+          current_offices?: number;
+          historical_offices?: number;
+          focused_tier_reviews_retained?: number;
+          unresolved_candidate_bindings?: number;
+        };
+        notes?: Array<{ category?: string; status?: string; count?: number; office_ids?: string[]; note?: string }>;
+        source_register: { path: string; sha256: string; bytes?: number };
+      }
+    >("schemas/atlas/tiers/denmark.json");
+    expect(denmark.status).toBe("approved");
+    expect(denmark.production_accepted).toBe(true);
+    expect(denmark.country_slug).toBe("denmark");
+    expect(denmark.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-19",
+      timezone: "America/Edmonton",
+    });
+    expect(denmark.approval?.notes).toMatch(/106 current \+ 240 historical/i);
+    expect(denmark.approval?.notes).toMatch(/retain offices and historic/i);
+    expect(denmark.approval?.notes).toMatch(/Greenland\/Faroe/i);
+    expect(denmark.approval?.notes).toMatch(/2007\/earlier merger/i);
+    expect(denmark.approval?.notes).toMatch(/KMD\/DST/i);
+    expect(denmark.approval?.notes).toMatch(/98 unresolved candidate/i);
+    expect(denmark.approval?.notes).toMatch(/EP detail/i);
+    expect(denmark.approval?.notes).toMatch(/no popular mayor/i);
+    expect(denmark.predecessor_draft_sha256).toBe(
+      "ba4626ab06fb811261b9e16972e3708497b63ec5717df046a3fcfaf716f811f5",
+    );
+    expect(sha256("schemas/atlas/tiers/denmark.json")).toBe(
+      "672d8cf0fa57345010eb03ff0cfb905574ff1394f045a60119967d9a6ed8f57e",
+    );
+    expect(denmark.classifications).toHaveLength(346);
+    expect(denmark.counts_by_proposed_tier).toEqual({
+      national: 1,
+      regional: 20,
+      municipal: 324,
+      council: 0,
+      other: 1,
+      unknown: 0,
+    });
+    expect(denmark.counts_by_approval).toEqual({
+      production_approved_current: 106,
+      production_approved_historical: 240,
+      production_approved_total: 346,
+      municipal: 324,
+      regional: 20,
+      national: 1,
+      other: 1,
+      held: 0,
+      focused_tier_reviews_retained: 293,
+      unresolved_candidate_bindings: 98,
+    });
+    expect(denmark.importer_policy).toMatchObject({
+      load: "not_implemented",
+      authorized_in_this_landing: false,
+      approved_count: 346,
+      held_count: 0,
+    });
+    expect(denmark.justin_approval).toMatchObject({
+      accepted: true,
+      current_offices: 106,
+      historical_offices: 240,
+      focused_tier_reviews_retained: 293,
+      unresolved_candidate_bindings: 98,
+    });
+    expect(denmark.classifications.filter((row) => row.human_review_required === true)).toHaveLength(293);
+    expect(denmark.classifications.filter((row) => row.tier === "municipal")).toHaveLength(324);
+    expect(denmark.classifications.filter((row) => row.tier === "regional")).toHaveLength(20);
+    expect(denmark.classifications.filter((row) => row.tier === "national")).toHaveLength(1);
+    expect(denmark.classifications.filter((row) => row.tier === "other")).toHaveLength(1);
+    const register = readJson<Array<{ office_id: string; current: boolean; office_type?: string }>>(
+      "data/research/denmark/office-register.json",
+    );
+    expect(register.filter((row) => row.current)).toHaveLength(106);
+    expect(register.filter((row) => !row.current)).toHaveLength(240);
+    expect(register.some((row) => /mayor|borgmester/i.test(String(row.office_type ?? "")))).toBe(false);
+    expect(readJson<unknown[]>("data/research/denmark/events.json")).toHaveLength(1849);
+    expect(readJson<unknown[]>("data/research/denmark/results.json")).toHaveLength(25391);
+    expect(readJson<unknown[]>("data/research/denmark/unresolved-candidate-bindings.json")).toHaveLength(98);
+    expectExactIds(
+      denmark,
+      register.map((row) => row.office_id),
+    );
+    expect(denmark.source_register.sha256).toBe(
+      "eb510c0d537fe82cdb1e56a4fda2a7a9924f9f15818b701df8ba5d9e3be23f1f",
+    );
+    expect(denmark.source_register.sha256).toBe(sha256("data/research/denmark/office-register.json"));
+    expect(denmark.source_register.path).toBe("data/research/denmark/office-register.json");
+    expect(denmark.notes?.find((note) => note.category === "realm_coverage")).toMatchObject({
+      status: "open",
+    });
+    expect(denmark.notes?.find((note) => note.category === "merger_successor_binding")).toMatchObject({
+      status: "open",
+    });
+    expect(denmark.notes?.find((note) => note.category === "kmd_dst_detail_holes")).toMatchObject({
+      status: "open",
+    });
+    expect(denmark.notes?.find((note) => note.category === "unresolved_candidate_bindings")).toMatchObject({
+      status: "open",
+      count: 98,
+    });
+    expect(denmark.notes?.find((note) => note.category === "ep_detail_gaps")).toMatchObject({
+      status: "open",
+    });
+    expect(denmark.notes?.find((note) => note.category === "scope_policy")).toMatchObject({
+      status: "open",
+    });
+    expect(denmark.notes?.filter((note) => note.category).every((note) => note.status === "open")).toBe(true);
+    expect(denmark.schema_compatibility).toMatchObject({ national: "national_context" });
+  });
 });
 
 describe("Phase 0 inventory artifacts", () => {

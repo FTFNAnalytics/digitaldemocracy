@@ -1,0 +1,1732 @@
+{
+  "schema_version": "atlas-research-inventory/1",
+  "status": "draft_for_human_review",
+  "repository": "FTFNAnalytics/digitaldemocracy",
+  "pinned_main_commit": "e64afc324e34ae07f0760f49870ece64eb2ee645",
+  "research_capture": "2026-09-19",
+  "country_id": "denmark",
+  "lineage_id": "country-package-denmark",
+  "verified_counts": {
+    "current_offices": 106,
+    "historical_offices": 240,
+    "office_records": 346,
+    "current_municipal_councils": 98,
+    "operating_regions_2026": 5,
+    "additional_preparatory_regional_councils": 1,
+    "old_municipal_source_universe": 275,
+    "historical_county_councils": 14,
+    "geographies": 345,
+    "events": 1849,
+    "result_rows": 25391,
+    "proceedings": 0,
+    "result_rows_by_type": {
+      "party": 12179,
+      "statistical_group": 1546,
+      "elected_candidate": 11666
+    },
+    "tiers": {
+      "municipal": 324,
+      "regional": 20,
+      "national": 1,
+      "other": 1
+    },
+    "current_tiers": {
+      "municipal": 98,
+      "regional": 6,
+      "national": 1,
+      "other": 1
+    },
+    "event_counts_by_office_type": {
+      "municipal_council": 1688,
+      "regional_council": 29,
+      "county_council": 56,
+      "national_parliament": 72,
+      "european_parliament_delegation": 4
+    },
+    "unresolved_candidate_bindings": 98,
+    "aggregate_mismatches": 0,
+    "source_artifacts": 49,
+    "focused_review_offices": 293,
+    "full_realm_universe_complete": false,
+    "history_complete": false
+  },
+  "source_register_sha256": "eb510c0d537fe82cdb1e56a4fda2a7a9924f9f15818b701df8ba5d9e3be23f1f",
+  "tier_sha256": "ba4626ab06fb811261b9e16972e3708497b63ec5717df046a3fcfaf716f811f5",
+  "hash_inputs": {
+    "canonicalization": "atlas-c14n/1",
+    "hash_algorithm": "sha256",
+    "lineage_id": "country-package-denmark",
+    "inputs": [
+      {
+        "input_path": "data/research/denmark/aggregate-audit.json",
+        "input_kind": "package",
+        "sha256": "98c16a4d258c145ec1b30245d4ddf3da6faedfd0a42f48a9c6a9d9e9edc7c559",
+        "byte_count": 670978
+      },
+      {
+        "input_path": "data/research/denmark/events.json",
+        "input_kind": "package",
+        "sha256": "3fac48a1723573754408dfdf55a6be165d3375742097d56281e4c96a3748a4f7",
+        "byte_count": 3287937
+      },
+      {
+        "input_path": "data/research/denmark/geographies.json",
+        "input_kind": "package",
+        "sha256": "209ae186cfe0b37b26db28d2db2a28cafbd5c3125eda95ecab9e8c9ed4771036",
+        "byte_count": 227800
+      },
+      {
+        "input_path": "data/research/denmark/identity-crosswalk.json",
+        "input_kind": "package",
+        "sha256": "2a3b74151342e1045bc3d940279dff926a9134fcbb9f5d28553daab4136beb82",
+        "byte_count": 154032
+      },
+      {
+        "input_path": "data/research/denmark/office-register.json",
+        "input_kind": "package",
+        "sha256": "eb510c0d537fe82cdb1e56a4fda2a7a9924f9f15818b701df8ba5d9e3be23f1f",
+        "byte_count": 443407
+      },
+      {
+        "input_path": "data/research/denmark/proceedings.json",
+        "input_kind": "package",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "byte_count": 3
+      },
+      {
+        "input_path": "data/research/denmark/research-gaps.json",
+        "input_kind": "package",
+        "sha256": "a1e72529d8c32236c3b673f7b807ccc32d7ecf48c9a789b40a6924048b4f8511",
+        "byte_count": 5019
+      },
+      {
+        "input_path": "data/research/denmark/results.json",
+        "input_kind": "package",
+        "sha256": "85b106fa0c89e226a9c46ae9ea704b980d1960ebd6d11ab5366701afefa5f7e4",
+        "byte_count": 131374225
+      },
+      {
+        "input_path": "data/research/denmark/sources/AKVA3-data.json",
+        "input_kind": "package",
+        "sha256": "6211f439ecab0ea5eb462f06b9ae20017c2a1ddea31d869e8e062b4d25f3145d",
+        "byte_count": 13479
+      },
+      {
+        "input_path": "data/research/denmark/sources/AKVA3-meta.json",
+        "input_kind": "package",
+        "sha256": "85ffae4331d04ff420b202ca750b83f22855cdfd70d824ed7961acab56ad95e9",
+        "byte_count": 2189
+      },
+      {
+        "input_path": "data/research/denmark/sources/AKVA3X-data.json",
+        "input_kind": "package",
+        "sha256": "e9ad06d7c28953f6b6e788d138321b70ba24036e163408fafca5e0580d30ce30",
+        "byte_count": 15036
+      },
+      {
+        "input_path": "data/research/denmark/sources/AKVA3X-meta.json",
+        "input_kind": "package",
+        "sha256": "7ef7a1ab4f6654fc8c35949404f452feb26823b658d65b93922b4cb47e87172a",
+        "byte_count": 2307
+      },
+      {
+        "input_path": "data/research/denmark/sources/EVKOM1-data.json",
+        "input_kind": "package",
+        "sha256": "c909b9553745116cf270dc772e9e5728fa2507c0917e663023705b10a1548d87",
+        "byte_count": 37668
+      },
+      {
+        "input_path": "data/research/denmark/sources/EVKOM1-meta.json",
+        "input_kind": "package",
+        "sha256": "2ecf655b308ccdb69764cbe11de6afcef9eb6722ee02b6b95cfd7c98b1ad3068",
+        "byte_count": 4973
+      },
+      {
+        "input_path": "data/research/denmark/sources/EVPANDEL-data.json",
+        "input_kind": "package",
+        "sha256": "13e85fe3b632eb6f8e790953211948a6511f7a082d858be5865fdaa5934990d3",
+        "byte_count": 1803
+      },
+      {
+        "input_path": "data/research/denmark/sources/EVPANDEL-meta.json",
+        "input_kind": "package",
+        "sha256": "7b2bc2f045370c3b9ac2dba248d551484bffbd831c86afee9bdae8e53b6dc0ea",
+        "byte_count": 4701
+      },
+      {
+        "input_path": "data/research/denmark/sources/FOLK1A-meta.json",
+        "input_kind": "package",
+        "sha256": "c6d77e1544a48f039a050dae2f9b0b72031a345eab9617bd650bcce5134e25aa",
+        "byte_count": 10470
+      },
+      {
+        "input_path": "data/research/denmark/sources/FV26TOT-data.json",
+        "input_kind": "package",
+        "sha256": "a5d825f2d731dc2c52f112c56cf214f31c17efecb2a547a1410b4bc450ec0541",
+        "byte_count": 4748
+      },
+      {
+        "input_path": "data/research/denmark/sources/FV26TOT-meta.json",
+        "input_kind": "package",
+        "sha256": "0ff420ffd5ff62b5f16b3051ef679f2bd08ae5ffe8949102025481f438a35bc6",
+        "byte_count": 8365
+      },
+      {
+        "input_path": "data/research/denmark/sources/FVKAND-data.json",
+        "input_kind": "package",
+        "sha256": "b57ec092272654862f1efa6660a8fce92af473a2b779a92c261b6b896de06c1b",
+        "byte_count": 11506
+      },
+      {
+        "input_path": "data/research/denmark/sources/FVKAND-meta.json",
+        "input_kind": "package",
+        "sha256": "f6bcdfc5c4c2ec1fd76637e1259be36eb499ac22651e0a8c3187ebd89d5dd8f0",
+        "byte_count": 2479
+      },
+      {
+        "input_path": "data/research/denmark/sources/FVKOM-data.json",
+        "input_kind": "package",
+        "sha256": "750d2f355ff251fca5761d0be613cbe5b57b2c069a34569438251045e9d3c25d",
+        "byte_count": 99674
+      },
+      {
+        "input_path": "data/research/denmark/sources/FVKOM-meta.json",
+        "input_kind": "package",
+        "sha256": "947470f29d3ec03d187e4a61a529c87dcfeb10a74b33ee3c30a64016508642b1",
+        "byte_count": 7466
+      },
+      {
+        "input_path": "data/research/denmark/sources/FVPANDEL-data.json",
+        "input_kind": "package",
+        "sha256": "1212c38d74d8a6cc7a325746b6c05cab997753751f75f97c9c29cd41ddc7c420",
+        "byte_count": 2294
+      },
+      {
+        "input_path": "data/research/denmark/sources/FVPANDEL-meta.json",
+        "input_kind": "package",
+        "sha256": "363ea3757cea5b58b054cfab81dbb4391b254d2e93b1ffdf8480981ab625c3f2",
+        "byte_count": 5020
+      },
+      {
+        "input_path": "data/research/denmark/sources/FVPCT-meta.json",
+        "input_kind": "package",
+        "sha256": "be8262f92b4c8df5333811220a935996e78bbf7645001ef758385d3318bef2af",
+        "byte_count": 1280
+      },
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-data.json",
+        "input_kind": "package",
+        "sha256": "98ac61339190ab58487fa2272fa9160de4b772979146bf3e1ca53783bf0cd602",
+        "byte_count": 333219
+      },
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "input_kind": "package",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "byte_count": 305941
+      },
+      {
+        "input_path": "data/research/denmark/sources/KV25PERS-data.json",
+        "input_kind": "package",
+        "sha256": "55cdad218f6edc835671dd66065fca4013741318010ef0289c4ec169fd236006",
+        "byte_count": 179738
+      },
+      {
+        "input_path": "data/research/denmark/sources/KV25PERS-meta.json",
+        "input_kind": "package",
+        "sha256": "540d132eafec7fdfb144b36adea69f38e04fd71ee3e7811d9c6ce24a66e27820",
+        "byte_count": 165701
+      },
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-data.json",
+        "input_kind": "package",
+        "sha256": "8fb5e9805ed5b5c5c0fa29d13cd96d8acfa662d27e101e6e0e11b3b96b457bce",
+        "byte_count": 336035
+      },
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "input_kind": "package",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "byte_count": 308409
+      },
+      {
+        "input_path": "data/research/denmark/sources/KVPCT-meta.json",
+        "input_kind": "package",
+        "sha256": "3299a8c9ebe1826a59a2b78759bbcb8f7be995700bf393f4fbdfc28030a15bf7",
+        "byte_count": 1124
+      },
+      {
+        "input_path": "data/research/denmark/sources/KVRES-data.json",
+        "input_kind": "package",
+        "sha256": "4c35955ef8f869239cedbcbda9b4902fd7604650beb6ac370b2c3b2080d4a74e",
+        "byte_count": 67560
+      },
+      {
+        "input_path": "data/research/denmark/sources/KVRES-meta.json",
+        "input_kind": "package",
+        "sha256": "e9d5c503b9952e76152f3fad280a46b0093bd735e67df93402da9172bd33a1d2",
+        "byte_count": 5372
+      },
+      {
+        "input_path": "data/research/denmark/sources/LIGEDB2-meta.json",
+        "input_kind": "package",
+        "sha256": "74192dc24acd7627a550c504dbc6b8454461c3e649ebfb46a081b1a3668f3a75",
+        "byte_count": 5691
+      },
+      {
+        "input_path": "data/research/denmark/sources/RVBPCT-meta.json",
+        "input_kind": "package",
+        "sha256": "c022facd8a80fb3de7d5eff05049e6a5e94e1e0acb6f6286519e50da0093f190",
+        "byte_count": 1148
+      },
+      {
+        "input_path": "data/research/denmark/sources/RVPCT-meta.json",
+        "input_kind": "package",
+        "sha256": "6b7d1823ce332e1f5faa81b7fccc64408c86425662d7c71f8ca464d709619e7a",
+        "byte_count": 1108
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-data.json",
+        "input_kind": "package",
+        "sha256": "e6eba093d9b05224aa9068b3bfd0a1260a4b739ae8d1806454c01850df0b8e2b",
+        "byte_count": 160964
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "input_kind": "package",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "byte_count": 5316
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-data.json",
+        "input_kind": "package",
+        "sha256": "6cf90fc499ad147516c14ff6ab2dcc15f4d8a8567820fa4c1b931561dac815cc",
+        "byte_count": 234526
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "input_kind": "package",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "byte_count": 11078
+      },
+      {
+        "input_path": "data/research/denmark/sources/dst-all-tables.json",
+        "input_kind": "package",
+        "sha256": "8743472ff0fbdfc3a7a9453501a834c7133e94aca4974639591dd5f0a0b6bbeb",
+        "byte_count": 1317199
+      },
+      {
+        "input_path": "data/research/denmark/sources/dst-local-documentation.html",
+        "input_kind": "package",
+        "sha256": "b276a3c55c744d26713464b25a44b9291033175a34f6b339cfb1b25dc1e5b081",
+        "byte_count": 47038
+      },
+      {
+        "input_path": "data/research/denmark/sources/local-dates.html",
+        "input_kind": "package",
+        "sha256": "f4ccffa0f10f59d56c336ea1cae9e560436d43995bb65f752a81b0865d2ec45d",
+        "byte_count": 30652
+      },
+      {
+        "input_path": "data/research/denmark/sources/ministry-ep.html",
+        "input_kind": "package",
+        "sha256": "a7ed1d87d5fa526d54d470fa3d6fc0e7d01d34ba67b7984f44219815eddc2301",
+        "byte_count": 30973
+      },
+      {
+        "input_path": "data/research/denmark/sources/ministry-fo.html",
+        "input_kind": "package",
+        "sha256": "4cf1617e2002a0dbb4b4cf5cf2599ab3439b720dc5cfae5bd7eb08b76ffa4cfe",
+        "byte_count": 29790
+      },
+      {
+        "input_path": "data/research/denmark/sources/ministry-gl.html",
+        "input_kind": "package",
+        "sha256": "1473fcb6f013dd934f7bc233910c9679070eec16c143fc38dbd10eb247b1d828",
+        "byte_count": 30751
+      },
+      {
+        "input_path": "data/research/denmark/sources/ministry-local.html",
+        "input_kind": "package",
+        "sha256": "34a72a6ed78753c0ce734a0e02b6a2e64eef1b2c20e027b8c37507f299f2372b",
+        "byte_count": 32539
+      },
+      {
+        "input_path": "data/research/denmark/sources/ministry-national.html",
+        "input_kind": "package",
+        "sha256": "3878bff96bc80e3267772933e2dd5d1d5a1aa67367776024db2f1b96ea84742d",
+        "byte_count": 34394
+      },
+      {
+        "input_path": "data/research/denmark/sources/municipal-constitution.pdf",
+        "input_kind": "package",
+        "sha256": "4bfbd5afc0b369353a54b796a733448af8421877b0026f2a1cc2e3b2a11bee26",
+        "byte_count": 283502
+      },
+      {
+        "input_path": "data/research/denmark/sources/national-2026.html",
+        "input_kind": "package",
+        "sha256": "d15ffb7067ae8bb69f083392975bccc0454a5626ab70ae63d267a698a6378978",
+        "byte_count": 46969
+      },
+      {
+        "input_path": "data/research/denmark/sources/national-dates.html",
+        "input_kind": "package",
+        "sha256": "6f52e7aff6d2e825bd11035e744e383a38d006cadfe9e0f82c5a6de474a6b9fb",
+        "byte_count": 35981
+      },
+      {
+        "input_path": "data/research/denmark/sources/oest-council.html",
+        "input_kind": "package",
+        "sha256": "ebd3d238ed49e31337770c08df697719426cbcbc601bd1714201af8ece0db5e8",
+        "byte_count": 137439
+      },
+      {
+        "input_path": "data/research/denmark/sources/regional-constitution.pdf",
+        "input_kind": "package",
+        "sha256": "1a2a2a47ffc61da1246f05064343a4d19ed2e3ea8955fc91ea7cf5a20791c751",
+        "byte_count": 317476
+      },
+      {
+        "input_path": "data/research/denmark/sources/regionoest.html",
+        "input_kind": "package",
+        "sha256": "f73db221bab16c79519bee79c2822123df87ec46b874251ac34ee42f55621e8d",
+        "byte_count": 145355
+      },
+      {
+        "input_path": "data/research/denmark/sources/regions.html",
+        "input_kind": "package",
+        "sha256": "fa4b3b74db9b8b6233f786ddb76da44add37f94617aab8fee76c9000dcaf744b",
+        "byte_count": 122574
+      },
+      {
+        "input_path": "data/research/denmark/sources.json",
+        "input_kind": "package",
+        "sha256": "39cecac422790875ece493d4610822bf8c81030259c93381667653d3c8c3084a",
+        "byte_count": 36789
+      },
+      {
+        "input_path": "data/research/denmark/unresolved-candidate-bindings.json",
+        "input_kind": "package",
+        "sha256": "400599aeedd7ee3ae31d6fdee64cd025a3a0e8b3a8a7f9e77d8a941d27384e63",
+        "byte_count": 43084
+      },
+      {
+        "input_path": "schemas/atlas/tiers/denmark.json",
+        "input_kind": "tier_classification",
+        "sha256": "ba4626ab06fb811261b9e16972e3708497b63ec5717df046a3fcfaf716f811f5",
+        "byte_count": 449733
+      }
+    ],
+    "overrides": [],
+    "adapter_version": "atlas-denmark-full-register/1",
+    "method_version": "atlas-preserve-evidence/1",
+    "schema_version": "atlas-master/1",
+    "schema_inputs": [
+      {
+        "input_path": "0001_atlas_attempt_log.sql",
+        "sha256": "f81de95235200ba08d2291975dff2beaf078160429f8ebb47288b152d8a8cddf"
+      },
+      {
+        "input_path": "0002_atlas_master.sql",
+        "sha256": "51582d55052f947a04a71db24523ee22d85eb73faa2f6d440025df7441dc5a27"
+      }
+    ]
+  },
+  "candidate_fingerprint_sha256": "02f73c10bfe286d2438c417d9fa83782b96674f7bf4bbb2200735f0e01f80737",
+  "candidate_release_id": "country-package-denmark--sha256-02f73c10bfe286d2438c417d9fa83782b96674f7bf4bbb2200735f0e01f80737",
+  "sources": [
+    {
+      "source_id": "denmark--source-f08edc9cec11a9d4134647bf",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "KVRES-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/KVRES-meta.json",
+      "sha256": "e9d5c503b9952e76152f3fad280a46b0093bd735e67df93402da9172bd33a1d2",
+      "byte_count": 5372,
+      "request": {
+        "table": "KVRES",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-06-01T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-ec499bee026d9857bd07d69e",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "VALGK3-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+      "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+      "byte_count": 5316,
+      "request": {
+        "table": "VALGK3",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-06-01T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-3972f15fa72a97e6a00dc046",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "AKVA3-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/AKVA3-meta.json",
+      "sha256": "85ffae4331d04ff420b202ca750b83f22855cdfd70d824ed7961acab56ad95e9",
+      "byte_count": 2189,
+      "request": {
+        "table": "AKVA3",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-06-01T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-bf1b5c355fc8d8307eae3d30",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "KVPCT-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/KVPCT-meta.json",
+      "sha256": "3299a8c9ebe1826a59a2b78759bbcb8f7be995700bf393f4fbdfc28030a15bf7",
+      "byte_count": 1124,
+      "request": {
+        "table": "KVPCT",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-06-01T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-2335c9e85f8bad427f05ba29",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "RVPCT-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/RVPCT-meta.json",
+      "sha256": "6b7d1823ce332e1f5faa81b7fccc64408c86425662d7c71f8ca464d709619e7a",
+      "byte_count": 1108,
+      "request": {
+        "table": "RVPCT",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-06-01T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-ecd7435242602c2f85f6369d",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "FVPCT-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/FVPCT-meta.json",
+      "sha256": "be8262f92b4c8df5333811220a935996e78bbf7645001ef758385d3318bef2af",
+      "byte_count": 1280,
+      "request": {
+        "table": "FVPCT",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-04-15T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-a20972356e834cd8d1e2248a",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "FVKOM-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/FVKOM-meta.json",
+      "sha256": "947470f29d3ec03d187e4a61a529c87dcfeb10a74b33ee3c30a64016508642b1",
+      "byte_count": 7466,
+      "request": {
+        "table": "FVKOM",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-04-15T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-eb9a45ba4c2261a66764b2fb",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "FVKAND-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/FVKAND-meta.json",
+      "sha256": "f6bcdfc5c4c2ec1fd76637e1259be36eb499ac22651e0a8c3187ebd89d5dd8f0",
+      "byte_count": 2479,
+      "request": {
+        "table": "FVKAND",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-04-15T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-4a153b89b16f1b261225e3dc",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "KV25PERS-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/KV25PERS-meta.json",
+      "sha256": "540d132eafec7fdfb144b36adea69f38e04fd71ee3e7811d9c6ce24a66e27820",
+      "byte_count": 165701,
+      "request": {
+        "table": "KV25PERS",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-06-01T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-95abc227a7870e482853f5cd",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "KV01PERS-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+      "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+      "byte_count": 305941,
+      "request": {
+        "table": "KV01PERS",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2022-03-22T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-b1dfe76f373924d33b68ee1d",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "KV97PERS-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+      "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+      "byte_count": 308409,
+      "request": {
+        "table": "KV97PERS",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2022-03-22T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-5130d028712a25e89c102c54",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "EVKOM1-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/EVKOM1-meta.json",
+      "sha256": "2ecf655b308ccdb69764cbe11de6afcef9eb6722ee02b6b95cfd7c98b1ad3068",
+      "byte_count": 4973,
+      "request": {
+        "table": "EVKOM1",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2024-06-21T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-f8ed48c0a6a117055d00f1d3",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "FVPANDEL-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/FVPANDEL-meta.json",
+      "sha256": "363ea3757cea5b58b054cfab81dbb4391b254d2e93b1ffdf8480981ab625c3f2",
+      "byte_count": 5020,
+      "request": {
+        "table": "FVPANDEL",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-04-15T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-19cf03e58f1e08f2a228d56d",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "FV26TOT-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/FV26TOT-meta.json",
+      "sha256": "0ff420ffd5ff62b5f16b3051ef679f2bd08ae5ffe8949102025481f438a35bc6",
+      "byte_count": 8365,
+      "request": {
+        "table": "FV26TOT",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-04-15T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-bc817438c1cc6eb6d686b51d",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "RVBPCT-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/RVBPCT-meta.json",
+      "sha256": "c022facd8a80fb3de7d5eff05049e6a5e94e1e0acb6f6286519e50da0093f190",
+      "byte_count": 1148,
+      "request": {
+        "table": "RVBPCT",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-06-01T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-8f156c6f213f350f6646f5fb",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "KVRES-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/KVRES-data.json",
+      "sha256": "4c35955ef8f869239cedbcbda9b4902fd7604650beb6ac370b2c3b2080d4a74e",
+      "byte_count": 67560,
+      "request": {
+        "table": "KVRES",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "OMRÅDE",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "VALRES",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-d1566bd91922c37c970a1306",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "VALGK3-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/VALGK3-data.json",
+      "sha256": "e6eba093d9b05224aa9068b3bfd0a1260a4b739ae8d1806454c01850df0b8e2b",
+      "byte_count": 160964,
+      "request": {
+        "table": "VALGK3",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "OMRÅDE",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "PARTI",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "STEMMER",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-556c6e51bc87b2f794572530",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "AKVA3-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/AKVA3-data.json",
+      "sha256": "6211f439ecab0ea5eb462f06b9ae20017c2a1ddea31d869e8e062b4d25f3145d",
+      "byte_count": 13479,
+      "request": {
+        "table": "AKVA3",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "OMRÅDE",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "PARTI",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "STEMMER",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-afc63bba187a6e83d6832f53",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "FVKAND-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/FVKAND-data.json",
+      "sha256": "b57ec092272654862f1efa6660a8fce92af473a2b779a92c261b6b896de06c1b",
+      "byte_count": 11506,
+      "request": {
+        "table": "FVKAND",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "KANDIDAT",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "PARTI",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-d89f3a1dd5b8206321597e28",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "FVPANDEL-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/FVPANDEL-data.json",
+      "sha256": "1212c38d74d8a6cc7a325746b6c05cab997753751f75f97c9c29cd41ddc7c420",
+      "byte_count": 2294,
+      "request": {
+        "table": "FVPANDEL",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "VALRES",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "OMRÅDE",
+            "values": [
+              "000"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-2e00829c4c26d68d0aef6ebe",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "FV26TOT-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/FV26TOT-data.json",
+      "sha256": "a5d825f2d731dc2c52f112c56cf214f31c17efecb2a547a1410b4bc450ec0541",
+      "byte_count": 4748,
+      "request": {
+        "table": "FV26TOT",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "VALRES",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "OMRÅDE",
+            "values": [
+              "0"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-ce5cc23e31f0af93bd1a734a",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "KV25PERS-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/KV25PERS-data.json",
+      "sha256": "55cdad218f6edc835671dd66065fca4013741318010ef0289c4ec169fd236006",
+      "byte_count": 179738,
+      "request": {
+        "table": "KV25PERS",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "KANDIDAT",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "STEMMETYPE",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-74890738e900e20429bd8423",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "KV01PERS-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/KV01PERS-data.json",
+      "sha256": "98ac61339190ab58487fa2272fa9160de4b772979146bf3e1ca53783bf0cd602",
+      "byte_count": 333219,
+      "request": {
+        "table": "KV01PERS",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "KANDIDAT",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "STEMMETYPE",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-cefc7e38cd2034ecf999253c",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "KV97PERS-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/KV97PERS-data.json",
+      "sha256": "8fb5e9805ed5b5c5c0fa29d13cd96d8acfa662d27e101e6e0e11b3b96b457bce",
+      "byte_count": 336035,
+      "request": {
+        "table": "KV97PERS",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "KANDIDAT",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "STEMMETYPE",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-ff76f9c58f423d24ada3f721",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "FVKOM-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/FVKOM-data.json",
+      "sha256": "750d2f355ff251fca5761d0be613cbe5b57b2c069a34569438251045e9d3c25d",
+      "byte_count": 99674,
+      "request": {
+        "table": "FVKOM",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "VALRES",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "OMRÅDE",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-0234a787a52b0ef555a2443e",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "EVKOM1-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/EVKOM1-data.json",
+      "sha256": "c909b9553745116cf270dc772e9e5728fa2507c0917e663023705b10a1548d87",
+      "byte_count": 37668,
+      "request": {
+        "table": "EVKOM1",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "VALRES",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "OMRÅDE",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-2f7db66f3206f6768d972abd",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tables?lang=da&format=JSON&includeInactive=true",
+      "title": "dst-all-tables.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/dst-all-tables.json",
+      "sha256": "8743472ff0fbdfc3a7a9453501a834c7133e94aca4974639591dd5f0a0b6bbeb",
+      "byte_count": 1317199,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-f11f8b5e7399ce1077b05465",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.valg.im.dk/valg/kommunale-og-regionale-valg",
+      "title": "ministry-local.html",
+      "publisher": "Danish public authority / regional authority",
+      "input_path": "data/research/denmark/sources/ministry-local.html",
+      "sha256": "34a72a6ed78753c0ce734a0e02b6a2e64eef1b2c20e027b8c37507f299f2372b",
+      "byte_count": 32539,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-41d099e90b86ead7427a498a",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.valg.im.dk/valg/folketingsvalg",
+      "title": "ministry-national.html",
+      "publisher": "Danish public authority / regional authority",
+      "input_path": "data/research/denmark/sources/ministry-national.html",
+      "sha256": "3878bff96bc80e3267772933e2dd5d1d5a1aa67367776024db2f1b96ea84742d",
+      "byte_count": 34394,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-b5a2ad4918031a5c6016f04a",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.valg.im.dk/valg/valg-til-europa-parlamentet",
+      "title": "ministry-ep.html",
+      "publisher": "Danish public authority / regional authority",
+      "input_path": "data/research/denmark/sources/ministry-ep.html",
+      "sha256": "a7ed1d87d5fa526d54d470fa3d6fc0e7d01d34ba67b7984f44219815eddc2301",
+      "byte_count": 30973,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-396c0df9cff192cfe29ac8a0",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.regionoest.dk/",
+      "title": "regionoest.html",
+      "publisher": "Danish public authority / regional authority",
+      "input_path": "data/research/denmark/sources/regionoest.html",
+      "sha256": "f73db221bab16c79519bee79c2822123df87ec46b874251ac34ee42f55621e8d",
+      "byte_count": 145355,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-aa2c004f28072a4dacd51355",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.regioner.dk/om-os/om-de-fem-regioner/",
+      "title": "regions.html",
+      "publisher": "Danish public authority / regional authority",
+      "input_path": "data/research/denmark/sources/regions.html",
+      "sha256": "fa4b3b74db9b8b6233f786ddb76da44add37f94617aab8fee76c9000dcaf744b",
+      "byte_count": 122574,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-8fa02807722e854fd777747b",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "VALGK3X-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+      "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+      "byte_count": 11078,
+      "request": {
+        "table": "VALGK3X",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2018-12-04T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-a6f974b28b643f59aaaec7a2",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "AKVA3X-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/AKVA3X-meta.json",
+      "sha256": "7ef7a1ab4f6654fc8c35949404f452feb26823b658d65b93922b4cb47e87172a",
+      "byte_count": 2307,
+      "request": {
+        "table": "AKVA3X",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2018-12-04T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-6fecdc762390492d40f3324a",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "FOLK1A-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/FOLK1A-meta.json",
+      "sha256": "c6d77e1544a48f039a050dae2f9b0b72031a345eab9617bd650bcce5134e25aa",
+      "byte_count": 10470,
+      "request": {
+        "table": "FOLK1A",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-08-10T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-fa285b1c8a4a9f7328ea5b30",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "EVPANDEL-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/EVPANDEL-meta.json",
+      "sha256": "7b2bc2f045370c3b9ac2dba248d551484bffbd831c86afee9bdae8e53b6dc0ea",
+      "byte_count": 4701,
+      "request": {
+        "table": "EVPANDEL",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2024-06-21T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-addcbeb936d37b950fc04b85",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/tableinfo",
+      "title": "LIGEDB2-meta.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/LIGEDB2-meta.json",
+      "sha256": "74192dc24acd7627a550c504dbc6b8454461c3e649ebfb46a081b1a3668f3a75",
+      "byte_count": 5691,
+      "request": {
+        "table": "LIGEDB2",
+        "format": "JSON",
+        "lang": "da"
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": "2026-06-01T08:00:00"
+      }
+    },
+    {
+      "source_id": "denmark--source-854162073283c419d1fee662",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.valg.im.dk/valg/kommunale-og-regionale-valg/kommunal-og-amtsraadsregionsraadsvalg-afholdt-siden-1920",
+      "title": "local-dates.html",
+      "publisher": "Danish public authority / regional authority",
+      "input_path": "data/research/denmark/sources/local-dates.html",
+      "sha256": "f4ccffa0f10f59d56c336ea1cae9e560436d43995bb65f752a81b0865d2ec45d",
+      "byte_count": 30652,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-624f5bd715b456fd90118e84",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.regionoest.dk/politik/regionsraadet",
+      "title": "oest-council.html",
+      "publisher": "Danish public authority / regional authority",
+      "input_path": "data/research/denmark/sources/oest-council.html",
+      "sha256": "ebd3d238ed49e31337770c08df697719426cbcbc601bd1714201af8ece0db5e8",
+      "byte_count": 137439,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-362d0763155be445731ec907",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.valg.im.dk/valg/valg-paa-faeroeerne",
+      "title": "ministry-fo.html",
+      "publisher": "Danish public authority / regional authority",
+      "input_path": "data/research/denmark/sources/ministry-fo.html",
+      "sha256": "4cf1617e2002a0dbb4b4cf5cf2599ab3439b720dc5cfae5bd7eb08b76ffa4cfe",
+      "byte_count": 29790,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-e8f1ac180f047fb4a53dfcc7",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.valg.im.dk/valg/valg-i-groenland",
+      "title": "ministry-gl.html",
+      "publisher": "Danish public authority / regional authority",
+      "input_path": "data/research/denmark/sources/ministry-gl.html",
+      "sha256": "1473fcb6f013dd934f7bc233910c9679070eec16c143fc38dbd10eb247b1d828",
+      "byte_count": 30751,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-3e2afe3accccd4bf1c66b020",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "VALGK3X-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/VALGK3X-data.json",
+      "sha256": "6cf90fc499ad147516c14ff6ab2dcc15f4d8a8567820fa4c1b931561dac815cc",
+      "byte_count": 234526,
+      "request": {
+        "table": "VALGK3X",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "OMRÅDE",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "PARTI",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "STEMMER",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-a784991fe84a9b39ff9c3a47",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "AKVA3X-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/AKVA3X-data.json",
+      "sha256": "e9ad06d7c28953f6b6e788d138321b70ba24036e163408fafca5e0580d30ce30",
+      "byte_count": 15036,
+      "request": {
+        "table": "AKVA3X",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "OMRÅDE",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "PARTI",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "STEMMER",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-30b9f7cc9b72000e60205ad3",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://api.statbank.dk/v1/data",
+      "title": "EVPANDEL-data.json",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/EVPANDEL-data.json",
+      "sha256": "13e85fe3b632eb6f8e790953211948a6511f7a082d858be5865fdaa5934990d3",
+      "byte_count": 1803,
+      "request": {
+        "table": "EVPANDEL",
+        "format": "JSONSTAT",
+        "lang": "da",
+        "variables": [
+          {
+            "code": "VALRES",
+            "values": [
+              "*"
+            ]
+          },
+          {
+            "code": "OMRÅDE",
+            "values": [
+              "000"
+            ]
+          },
+          {
+            "code": "Tid",
+            "values": [
+              "*"
+            ]
+          }
+        ]
+      },
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-8a6f12fa1e58914132a7ecee",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.valg.im.dk/valg/folketingsvalg/oversigt-over-valgdage-siden-1848",
+      "title": "national-dates.html",
+      "publisher": "Danish public authority / regional authority",
+      "input_path": "data/research/denmark/sources/national-dates.html",
+      "sha256": "6f52e7aff6d2e825bd11035e744e383a38d006cadfe9e0f82c5a6de474a6b9fb",
+      "byte_count": 35981,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-7d5e41915c93a7bf9da70da7",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.dst.dk/statistikdokumentation/c7836c78-b587-461a-96b6-af5648e390e5",
+      "title": "dst-local-documentation.html",
+      "publisher": "Danmarks Statistik",
+      "input_path": "data/research/denmark/sources/dst-local-documentation.html",
+      "sha256": "b276a3c55c744d26713464b25a44b9291033175a34f6b339cfb1b25dc1e5b081",
+      "byte_count": 47038,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-b018a7ce1a69d9417e58922f",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.valg.im.dk/valgmyndigheder/valg-til-folketinget-2026",
+      "title": "national-2026.html",
+      "publisher": "Danish public authority / regional authority",
+      "input_path": "data/research/denmark/sources/national-2026.html",
+      "sha256": "d15ffb7067ae8bb69f083392975bccc0454a5626ab70ae63d267a698a6378978",
+      "byte_count": 46969,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-b9c4cee4327d6d15d21d07b3",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.ism.dk/Media/638993229700800046/Sp%C3%B8rgsm%C3%A5l%20og%20svar%20vedr.%20kommunalbestyrelsernes%20konstituering%20KRV25.pdf",
+      "title": "municipal-constitution.pdf",
+      "publisher": "Danish public authority / regional authority",
+      "input_path": "data/research/denmark/sources/municipal-constitution.pdf",
+      "sha256": "4bfbd5afc0b369353a54b796a733448af8421877b0026f2a1cc2e3b2a11bee26",
+      "byte_count": 283502,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    },
+    {
+      "source_id": "denmark--source-aa08c6d2daf7e0358dbb8e08",
+      "source_namespace": "country-package-denmark",
+      "country_id": "denmark",
+      "url": "https://www.ism.dk/Media/638984586873732972/Sp%C3%B8rgsm%C3%A5l%20og%20svar%20vedr.%20regionsr%C3%A5denes%20konstituering%20KRV25.pdf",
+      "title": "regional-constitution.pdf",
+      "publisher": "Danish public authority / regional authority",
+      "input_path": "data/research/denmark/sources/regional-constitution.pdf",
+      "sha256": "1a2a2a47ffc61da1246f05064343a4d19ed2e3ea8955fc91ea7cf5a20791c751",
+      "byte_count": 317476,
+      "request": null,
+      "data_rights": "unknown",
+      "retrieved_at": "2026-09-19",
+      "raw": {
+        "updated": null
+      }
+    }
+  ],
+  "source_retrieval_failures": [
+    {
+      "path": "constitution.html",
+      "url": "https://www.ism.dk/indenrigs/kommuner-og-regioners-styrelse/konstituering",
+      "request": null,
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "region-governance.html",
+      "url": "https://www.ism.dk/indenrigs/kommuner-og-regioners-styrelse/kommuner-og-regioners-styrelse/regioners-styrelse",
+      "request": null,
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "coverage_complete": false,
+  "applied_changes": 0,
+  "protected_repository_policy": "Read-only upstream contract fetches; local existing repository left untouched. New research and artifacts exist only outside repository."
+}
