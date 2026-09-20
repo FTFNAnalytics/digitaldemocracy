@@ -31,7 +31,7 @@ The observatory is being restructured as the **Election Atlas** at `/atlas`, wit
 | `npm run import:data` | Import the Latin America zip (fails clearly if missing) |
 | `npm run import:countries` | Inventory and validate `data/countries/*` standalone packages |
 | `npm run migrate:atlas` | Apply `0001_atlas_attempt_log.sql` to `ATLAS_ATTEMPTS_SQLITE_PATH` and `0002_atlas_master.sql` to `ATLAS_SQLITE_PATH` |
-| `npm run import:atlas` | Ingest approved Atlas lineages into SQLite (`ATLAS_IMPORT_SCOPE=albania\|andorra\|alderney\|armenia\|austria\|belgium\|bosnia\|bulgaria\|latam\|nz\|all`; temp paths in CI; never the VPS DB unless set) |
+| `npm run import:atlas` | Ingest approved Atlas lineages into SQLite (`ATLAS_IMPORT_SCOPE=albania\|andorra\|alderney\|armenia\|austria\|belgium\|bosnia\|bulgaria\|netherlands\|latam\|nz\|all`; temp paths in CI; never the VPS DB unless set) |
 | `npm run import:data -- --countries` | Same country-package import when the Latin America zip is absent |
 | `npm run validate:data` | Validate Latin America records, country packages, and the merged dataset |
 | `npm run validate:evidence` | Compare every historical row and office selection against original source objects |

@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -19,6 +19,7 @@ import { LINEAGE_ID as AUSTRIA_LINEAGE } from "../../lib/atlas/austria/identity"
 import { LINEAGE_ID as BELGIUM_LINEAGE } from "../../lib/atlas/belgium/identity";
 import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
 import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
+import { LINEAGE_ID as NETHERLANDS_LINEAGE } from "../../lib/atlas/netherlands/identity";
 
 function fail(message: string): never {
   console.error(`test:atlas-import failed: ${message}`);
@@ -148,6 +149,39 @@ function main() {
     }
     if (result.bulgaria?.counts.selected_histories !== 1590) {
       fail(`Bulgaria events ${String(result.bulgaria?.counts.selected_histories)}`);
+    }
+    if (result.netherlands?.counts.offices !== 501) {
+      fail(`Netherlands offices ${String(result.netherlands?.counts.offices)}`);
+    }
+    if (result.netherlands?.counts.current_offices !== 432) {
+      fail(`Netherlands current ${String(result.netherlands?.counts.current_offices)}`);
+    }
+    if (result.netherlands?.counts.historical_offices !== 69) {
+      fail(`Netherlands historical ${String(result.netherlands?.counts.historical_offices)}`);
+    }
+    if (result.netherlands?.counts.municipal_offices !== 414) {
+      fail(`Netherlands municipal ${String(result.netherlands?.counts.municipal_offices)}`);
+    }
+    if (result.netherlands?.counts.regional_offices !== 12) {
+      fail(`Netherlands regional ${String(result.netherlands?.counts.regional_offices)}`);
+    }
+    if (result.netherlands?.counts.national_offices !== 3) {
+      fail(`Netherlands national ${String(result.netherlands?.counts.national_offices)}`);
+    }
+    if (result.netherlands?.counts.other_offices !== 72) {
+      fail(`Netherlands other ${String(result.netherlands?.counts.other_offices)}`);
+    }
+    if (result.netherlands?.counts.total_events !== 1475) {
+      fail(`Netherlands events ${String(result.netherlands?.counts.total_events)}`);
+    }
+    if (result.netherlands?.counts.result_rows !== 13050) {
+      fail(`Netherlands results ${String(result.netherlands?.counts.result_rows)}`);
+    }
+    if (result.netherlands?.counts.prospective_events !== 0) {
+      fail(`Netherlands prospective ${String(result.netherlands?.counts.prospective_events)}`);
+    }
+    if (result.netherlands?.counts.needs_review_classifications !== 147) {
+      fail(`Netherlands needs_review ${String(result.netherlands?.counts.needs_review_classifications)}`);
     }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
@@ -409,6 +443,7 @@ function main() {
         BELGIUM_LINEAGE,
         BOSNIA_LINEAGE,
         BULGARIA_LINEAGE,
+        NETHERLANDS_LINEAGE,
         NZ_LINEAGE_ID,
         LATAM_LINEAGE_ID,
       ].sort();
@@ -420,7 +455,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

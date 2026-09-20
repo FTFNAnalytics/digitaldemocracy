@@ -6,6 +6,7 @@ import { importAustria, type ImportAustriaResult } from "../austria/import";
 import { importBelgium, type ImportBelgiumResult } from "../belgium/import";
 import { importBosnia, type ImportBosniaResult } from "../bosnia-and-herzegovina/import";
 import { importBulgaria, type ImportBulgariaResult } from "../bulgaria/import";
+import { importNetherlands, type ImportNetherlandsResult } from "../netherlands/import";
 import { importLatAm } from "./latam";
 import { importNewZealand } from "./nz";
 import type { ContinuityImportOptions, ContinuityImportResult } from "./run";
@@ -19,6 +20,7 @@ export type ImportScope =
   | "belgium"
   | "bosnia"
   | "bulgaria"
+  | "netherlands"
   | "latam"
   | "nz"
   | "all";
@@ -34,6 +36,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     raw === "belgium" ||
     raw === "bosnia" ||
     raw === "bulgaria" ||
+    raw === "netherlands" ||
     raw === "latam" ||
     raw === "nz" ||
     raw === "all"
@@ -41,7 +44,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     return raw;
   }
   throw new Error(
-    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|latam|nz|all`,
+    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|netherlands|latam|nz|all`,
   );
 }
 
@@ -54,6 +57,7 @@ export type MultiLineageImportResult = {
   belgium?: ImportBelgiumResult;
   bosnia?: ImportBosniaResult;
   bulgaria?: ImportBulgariaResult;
+  netherlands?: ImportNetherlandsResult;
   latam?: ContinuityImportResult;
   nz?: ContinuityImportResult;
 };
@@ -86,6 +90,9 @@ export function importAtlasLineages(
   }
   if (scope === "bulgaria" || scope === "all") {
     result.bulgaria = importBulgaria(options);
+  }
+  if (scope === "netherlands" || scope === "all") {
+    result.netherlands = importNetherlands(options);
   }
   if (scope === "latam" || scope === "all") {
     result.latam = importLatAm(options);
