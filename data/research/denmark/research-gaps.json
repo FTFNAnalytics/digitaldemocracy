@@ -1,0 +1,128 @@
+[
+  {
+    "original_token": "DK-RESEARCH-realm-greenland",
+    "reason": "Greenland: Inatsisartut, five municipalities, settlements and Folketing component require a separate verified register/code-system and result adapter; none is fabricated here.",
+    "kind": "authored_research_gap_not_upstream_source_id",
+    "record_target": {
+      "entity_kind": "country",
+      "country_id": "denmark"
+    },
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/ministry-gl.html",
+        "sha256": "1473fcb6f013dd934f7bc233910c9679070eec16c143fc38dbd10eb247b1d828",
+        "json_pointer": null,
+        "locator": "source retained; named research gate"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "DK-RESEARCH-realm-faroes",
+    "reason": "Faroe Islands: Løgting, municipalities and Folketing component require a separate verified register and event/result binding; official ministry links retained.",
+    "kind": "authored_research_gap_not_upstream_source_id",
+    "record_target": {
+      "entity_kind": "country",
+      "country_id": "denmark"
+    },
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/ministry-fo.html",
+        "sha256": "4cf1617e2002a0dbb4b4cf5cf2599ab3439b720dc5cfae5bd7eb08b76ffa4cfe",
+        "json_pointer": null,
+        "locator": "source retained; named research gate"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "DK-RESEARCH-mergers-2007",
+    "reason": "Many-to-many successor and split bindings, same-code boundary changes, Bornholm 2003 and Ærø 2006 transition contests need primary legal crosswalk; 275 old councils and 14 counties retained as evidenced.",
+    "kind": "authored_research_gap_not_upstream_source_id",
+    "record_target": {
+      "entity_kind": "country",
+      "country_id": "denmark"
+    },
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/dst-local-documentation.html",
+        "sha256": "b276a3c55c744d26713464b25a44b9291033175a34f6b339cfb1b25dc1e5b081",
+        "json_pointer": null,
+        "locator": "source retained; named research gate"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "DK-RESEARCH-local-list-disaggregation",
+    "reason": "EJR is a statistical group. Named local lists, all losing candidates, list alliances and ballot allocation require original KMD/KOMBIT returns. Candidate tables include elected candidates only.",
+    "kind": "authored_research_gap_not_upstream_source_id",
+    "record_target": {
+      "entity_kind": "country",
+      "country_id": "denmark"
+    },
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/dst-local-documentation.html",
+        "sha256": "b276a3c55c744d26713464b25a44b9291033175a34f6b339cfb1b25dc1e5b081",
+        "json_pointer": null,
+        "locator": "source retained; named research gate"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "DK-RESEARCH-specials-pre1989",
+    "reason": "Replacement/special council contests and histories earlier than 1989 remain incomplete; date lists are not enough to invent each local contest.",
+    "kind": "authored_research_gap_not_upstream_source_id",
+    "record_target": {
+      "entity_kind": "country",
+      "country_id": "denmark"
+    },
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/local-dates.html",
+        "sha256": "f4ccffa0f10f59d56c336ea1cae9e560436d43995bb65f752a81b0865d2ec45d",
+        "json_pointer": null,
+        "locator": "source retained; named research gate"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "DK-RESEARCH-christiansoe",
+    "reason": "Christiansø is outside municipalities in the source. No dummy kommune council. Verify whether any island elected advisory body satisfies political-office scope before adding one.",
+    "kind": "authored_research_gap_not_upstream_source_id",
+    "record_target": {
+      "entity_kind": "country",
+      "country_id": "denmark"
+    },
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": null,
+        "locator": "source retained; named research gate"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "DK-RESEARCH-ep-seats",
+    "reason": "European Parliament delegation is evidenced. Party seats and full candidate histories not yet reconciled; year-precision 2009/2014/2019/2024 events remain valid.",
+    "kind": "authored_research_gap_not_upstream_source_id",
+    "record_target": {
+      "entity_kind": "country",
+      "country_id": "denmark"
+    },
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/ministry-ep.html",
+        "sha256": "a7ed1d87d5fa526d54d470fa3d6fc0e7d01d34ba67b7984f44219815eddc2301",
+        "json_pointer": null,
+        "locator": "source retained; named research gate"
+      }
+    ],
+    "status": "open"
+  }
+]

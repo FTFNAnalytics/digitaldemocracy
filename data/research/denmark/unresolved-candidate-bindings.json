@@ -1,0 +1,1276 @@
+[
+  {
+    "table": "KV01PERS",
+    "candidate_code": "130",
+    "original_label": "Annalis Vinther Jensen (M) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/129"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "161",
+    "original_label": "Anne Vibeke Broholt (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/160"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "170",
+    "original_label": "Annelise Molin (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/169"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "329",
+    "original_label": "Bent Christian Jørgensen (C) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/328"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "387",
+    "original_label": "Bente Bjerg Munksgaard (V) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/386"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "449",
+    "original_label": "Birgitt Bjerre (C) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/448"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "549",
+    "original_label": "Bo Hviid Nielsen (M) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/548"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "737",
+    "original_label": "Claus Bakke (V) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/736"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "802",
+    "original_label": "Dorthe Winkel Nielsen (A) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/801"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "956",
+    "original_label": "Erik Flyvholm (M) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/955"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "991",
+    "original_label": "Erik Rasmussen (A) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/990"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "1057",
+    "original_label": "Eva Frilund Lind (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/1056"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "1170",
+    "original_label": "Frank Rud Jensen (A) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/1169"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "1220",
+    "original_label": "Gert Arrind Kræsing (O) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/1219"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "1748",
+    "original_label": "Inge Merete Holm Jørgensen (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/1747"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "1757",
+    "original_label": "Ingelise Borregaard Christensen (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/1756"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "1824",
+    "original_label": "Ivar Christian Holten Castenschiold (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/1823"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "2090",
+    "original_label": "Jesper Weinrich Hansen (V) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/2089"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "2107",
+    "original_label": "Jette Mandix Jantzen (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/2106"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "2170",
+    "original_label": "John Bruun Holm (A) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/2169"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "2208",
+    "original_label": "John Pommer Brædder (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/2207"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "2323",
+    "original_label": "Jørgen Krarup Andersen (A) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/2322"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "2341",
+    "original_label": "Jørgen Nørholm Nielsen (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/2340"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "2388",
+    "original_label": "Jørn Hanghøj (A) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/2387"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "2515",
+    "original_label": "Karl Hansen Godballe (M) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/2514"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "2925",
+    "original_label": "Leif Jørgen Jeppesen (A) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/2924"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "3028",
+    "original_label": "Lis Nygaard (A) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/3027"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "3070",
+    "original_label": "Lizzi Tove Kauffmann Lund (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/3069"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "3203",
+    "original_label": "Martin Sten Jørgensen (C) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/3202"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "3305",
+    "original_label": "Mogens Møllgaard-Hansen (F) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/3304"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "3342",
+    "original_label": "Morten Hansen (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/3341"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "3543",
+    "original_label": "Ole Bro Toft (V) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/3542"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "3589",
+    "original_label": "Ole Lund-Hermansen (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/3588"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "3698",
+    "original_label": "Pauline Porsmose (A) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/3697"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "3749",
+    "original_label": "Per Jørgensen (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/3748"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "3767",
+    "original_label": "Per Ole Petersen (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/3766"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "3945",
+    "original_label": "Poul-Henrik Pedersen (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/3944"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "3988",
+    "original_label": "Preben Rasmussen Bonde (A) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/3987"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "4032",
+    "original_label": "Rita Helene Raae Paldrup (F) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/4031"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "4037",
+    "original_label": "Robert Valdemar Nielsen (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/4036"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "4247",
+    "original_label": "Søren Alexandersen (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/4246"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "4258",
+    "original_label": "Søren Christian Schow (V) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/4257"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "4271",
+    "original_label": "Søren Henrik Holstener Larsen (V) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/4270"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "4284",
+    "original_label": "Søren Kruse (M) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/4283"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "4340",
+    "original_label": "Tanja Katrine Sonne Brauer (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/4339"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "4358",
+    "original_label": "Thor Gunnar Kofoed (V) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/4357"
+      }
+    ]
+  },
+  {
+    "table": "KV01PERS",
+    "candidate_code": "4561",
+    "original_label": "Vibeke Nees Hviid (M) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV01PERS-meta.json",
+        "sha256": "2d43ea51b3fab3d3504edda81a8df8abb91b053a10326c6be175559d0c03c6fe",
+        "json_pointer": "/variables/0/values/4560"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "164",
+    "original_label": "Annelise Molin (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/163"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "333",
+    "original_label": "Bent Brund (A) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/332"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "337",
+    "original_label": "Bent Christian Jørgensen (C) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/336"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "379",
+    "original_label": "Bent Ole Munk Christensen (V) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/378"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "431",
+    "original_label": "Bettina Mie Bonde (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/430"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "468",
+    "original_label": "Birgitt Bjerre (C) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/467"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "487",
+    "original_label": "Birte Vestergaard Skot-Hansen (N) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/486"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "527",
+    "original_label": "Bjarne Hansen (A) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/526"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "553",
+    "original_label": "Bjørn Gunnar Pedersen (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/552"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "776",
+    "original_label": "Doris Hansen (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/775"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "976",
+    "original_label": "Erik Flyvholm (I) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/975"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "1013",
+    "original_label": "Erik Poul Wentzel (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/1012"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "1015",
+    "original_label": "Erik Rasmussen (A) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/1014"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "1169",
+    "original_label": "Flemming Lund (N) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/1168"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "1202",
+    "original_label": "Frank Rud Jensen (A) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/1201"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "1233",
+    "original_label": "Frede Ørom (I) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/1232"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "1257",
+    "original_label": "Gert Arrind Kræsing (O) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/1256"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "1357",
+    "original_label": "Halvdan Grøndal Hansen (V) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/1356"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "1616",
+    "original_label": "Helle Rømer (V) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/1615"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "1814",
+    "original_label": "Inge Merete Holm Jørgensen (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/1813"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "1825",
+    "original_label": "Ingelise Borregaard Christensen (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/1824"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "1852",
+    "original_label": "Inger Mølgaard Larsen (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/1851"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "1893",
+    "original_label": "Ivar Christian Holten Castenschiold (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/1892"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "1996",
+    "original_label": "Jens Christian Haagensen (V) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/1995"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "2145",
+    "original_label": "Jesper Weinrich Hansen (V) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/2144"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "2371",
+    "original_label": "Jørgen Krarup Andersen (A) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/2370"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "2389",
+    "original_label": "Jørgen Nørholm Nielsen (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/2388"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "2407",
+    "original_label": "Jørgen Slot (N) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/2406"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "2434",
+    "original_label": "Jørn Hanghøj (A) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/2433"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "2623",
+    "original_label": "Keld Markmann Møller (V) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/2622"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "2910",
+    "original_label": "Kurt Aabo (N) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/2909"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "3076",
+    "original_label": "Linda Andersen (A) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/3075"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "3094",
+    "original_label": "Lis Nygaard (A) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/3093"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "3132",
+    "original_label": "Lizzi Tove Kauffmann Lund (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/3131"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "3224",
+    "original_label": "Marie Gregersen (A) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/3223"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "3345",
+    "original_label": "Mogens Møllgaard-Hansen (F) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/3344"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "3578",
+    "original_label": "Ole Bro Toft (I) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/3577"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "3631",
+    "original_label": "Ole Lund-Hermansen (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/3630"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "3749",
+    "original_label": "Pauline Porsmose (A) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/3748"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "3795",
+    "original_label": "Per Dybdahl (V) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/3794"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "3824",
+    "original_label": "Per Ole Petersen (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/3823"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "4007",
+    "original_label": "Poul-Henrik Pedersen (N) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/4006"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "4086",
+    "original_label": "Rita Helene Paldrup (F) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/4085"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "4097",
+    "original_label": "Robert Valdemar Nielsen (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/4096"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "4330",
+    "original_label": "Søren Henrik Holstener Larsen (V) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/4329"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "4392",
+    "original_label": "Tanja Katrine Sonne Brauer (A) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/4391"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "4411",
+    "original_label": "Thor Gunnar Kofoed (V) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/4410"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "4455",
+    "original_label": "Torben Arne Andersen (N) (Neksø Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/4454"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "4479",
+    "original_label": "Torben Plambøck Jørgensen (A) (Nykøbing F. Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/4478"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "4600",
+    "original_label": "Vibeke Nees Hviid (N) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/4599"
+      }
+    ]
+  },
+  {
+    "table": "KV97PERS",
+    "candidate_code": "4633",
+    "original_label": "Viola Angela Margrethe Bro (N) (Thyborøn-Harboør Kommune)",
+    "reason": "No unique municipality-name binding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/KV97PERS-meta.json",
+        "sha256": "de05036ce2d0f2abb769965e03ce0a2cb5ddbdaeb9b9911805686360b48e588a",
+        "json_pointer": "/variables/0/values/4632"
+      }
+    ]
+  }
+]

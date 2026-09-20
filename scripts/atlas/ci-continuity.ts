@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -15,6 +15,7 @@ import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
 import { LINEAGE_ID as ALDERNEY_LINEAGE } from "../../lib/atlas/alderney/identity";
 import { LINEAGE_ID as ANDORRA_LINEAGE } from "../../lib/atlas/andorra/identity";
 import { LINEAGE_ID as ARMENIA_LINEAGE } from "../../lib/atlas/armenia/identity";
+import { LINEAGE_ID as AUSTRIA_LINEAGE } from "../../lib/atlas/austria/identity";
 import { LINEAGE_ID as BELGIUM_LINEAGE } from "../../lib/atlas/belgium/identity";
 import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
 import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
@@ -76,6 +77,18 @@ function main() {
     }
     if (result.armenia?.counts.selected_histories !== 33) {
       fail(`Armenia events ${String(result.armenia?.counts.selected_histories)}`);
+    }
+    if (result.austria?.counts.current_offices !== 2038) {
+      fail(`Austria offices ${String(result.austria?.counts.current_offices)}`);
+    }
+    if (result.austria?.counts.municipal_offices !== 2034) {
+      fail(`Austria municipal ${String(result.austria?.counts.municipal_offices)}`);
+    }
+    if (result.austria?.counts.regional_offices !== 4) {
+      fail(`Austria regional ${String(result.austria?.counts.regional_offices)}`);
+    }
+    if (result.austria?.counts.selected_histories !== 5956) {
+      fail(`Austria events ${String(result.austria?.counts.selected_histories)}`);
     }
     if (result.bosnia?.counts.current_offices !== 13) {
       fail(`Bosnia offices ${String(result.bosnia?.counts.current_offices)}`);
@@ -198,6 +211,9 @@ function main() {
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ARMENIA_LINEAGE]) !== 71) {
         fail("Armenia office rows");
       }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [AUSTRIA_LINEAGE]) !== 2038) {
+        fail("Austria office rows");
+      }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BELGIUM_LINEAGE]) !== 1234) {
         fail("Belgium office rows");
       }
@@ -266,6 +282,24 @@ function main() {
         ) !== 71
       ) {
         fail("Armenia municipal rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'regional'",
+          [AUSTRIA_LINEAGE],
+        ) !== 4
+      ) {
+        fail("Austria regional rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'municipal'",
+          [AUSTRIA_LINEAGE],
+        ) !== 2034
+      ) {
+        fail("Austria municipal rows");
       }
       if (
         count(
@@ -405,6 +439,7 @@ function main() {
         ALDERNEY_LINEAGE,
         ANDORRA_LINEAGE,
         ARMENIA_LINEAGE,
+        AUSTRIA_LINEAGE,
         BELGIUM_LINEAGE,
         BOSNIA_LINEAGE,
         BULGARIA_LINEAGE,
@@ -420,7 +455,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

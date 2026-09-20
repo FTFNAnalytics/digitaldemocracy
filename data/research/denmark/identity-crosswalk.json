@@ -1,0 +1,4382 @@
+[
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "101",
+    "target_office_id": "DK-K101-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "København",
+    "current_name": "København",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/2"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/3"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "147",
+    "target_office_id": "DK-K147-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Frederiksberg",
+    "current_name": "Frederiksberg",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/3"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/4"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "165",
+    "target_office_id": "DK-K165-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Albertslund",
+    "current_name": "Albertslund",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/5"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/7"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "151",
+    "target_office_id": "DK-K151-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Ballerup",
+    "current_name": "Ballerup",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/6"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/8"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "153",
+    "target_office_id": "DK-K153-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Brøndby",
+    "current_name": "Brøndby",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/7"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/9"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "155",
+    "target_office_id": "DK-K155-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Dragør",
+    "current_name": "Dragør",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/8"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/5"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "157",
+    "target_office_id": "DK-K157-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Gentofte",
+    "current_name": "Gentofte",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/9"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/10"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "159",
+    "target_office_id": "DK-K159-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Gladsaxe",
+    "current_name": "Gladsaxe",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/10"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/11"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "161",
+    "target_office_id": "DK-K161-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Glostrup",
+    "current_name": "Glostrup",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/11"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/12"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "163",
+    "target_office_id": "DK-K163-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Herlev",
+    "current_name": "Herlev",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/12"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/13"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "167",
+    "target_office_id": "DK-K167-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Hvidovre",
+    "current_name": "Hvidovre",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/13"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/14"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "169",
+    "target_office_id": "DK-K169-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Høje Taastrup",
+    "current_name": "Høje-Taastrup",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/14"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/15"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "183",
+    "target_office_id": "DK-K183-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Ishøj",
+    "current_name": "Ishøj",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/15"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/16"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "171",
+    "target_office_id": "DK-KPRE2007-171-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ledøje-Smørum",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/16"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "173",
+    "target_office_id": "DK-K173-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Lyngby-Taarbæk",
+    "current_name": "Lyngby-Taarbæk",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/17"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/17"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "175",
+    "target_office_id": "DK-K175-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Rødovre",
+    "current_name": "Rødovre",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/18"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/18"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "181",
+    "target_office_id": "DK-KPRE2007-181-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Søllerød",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/19"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "185",
+    "target_office_id": "DK-K185-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Tårnby",
+    "current_name": "Tårnby",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/20"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/6"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "187",
+    "target_office_id": "DK-K187-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Vallensbæk",
+    "current_name": "Vallensbæk",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/21"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/19"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "189",
+    "target_office_id": "DK-KPRE2007-189-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Værløse",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/22"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "201",
+    "target_office_id": "DK-K201-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Allerød",
+    "current_name": "Allerød",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/24"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/20"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "205",
+    "target_office_id": "DK-KPRE2007-205-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Birkerød",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/25"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "207",
+    "target_office_id": "DK-KPRE2007-207-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Farum",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/26"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "208",
+    "target_office_id": "DK-KPRE2007-208-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Fredensborg-Humlebæk",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/27"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "209",
+    "target_office_id": "DK-KPRE2007-209-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Frederikssund",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/28"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "211",
+    "target_office_id": "DK-KPRE2007-211-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Frederiksværk",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/29"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "213",
+    "target_office_id": "DK-KPRE2007-213-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Græsted-Gilleleje",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/30"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "215",
+    "target_office_id": "DK-KPRE2007-215-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Helsinge",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/31"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "217",
+    "target_office_id": "DK-K217-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Helsingør",
+    "current_name": "Helsingør",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/32"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/27"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "219",
+    "target_office_id": "DK-K219-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Hillerød",
+    "current_name": "Hillerød",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/33"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/28"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "221",
+    "target_office_id": "DK-KPRE2007-221-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hundested",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/34"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "223",
+    "target_office_id": "DK-K223-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Hørsholm",
+    "current_name": "Hørsholm",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/35"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/29"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "225",
+    "target_office_id": "DK-KPRE2007-225-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Jægerspris",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/36"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "227",
+    "target_office_id": "DK-KPRE2007-227-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Karlebo",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/37"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "229",
+    "target_office_id": "DK-KPRE2007-229-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Skibby",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/38"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "231",
+    "target_office_id": "DK-KPRE2007-231-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Skævinge",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/39"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "233",
+    "target_office_id": "DK-KPRE2007-233-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Slangerup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/40"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "235",
+    "target_office_id": "DK-KPRE2007-235-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Stenløse",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/41"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "237",
+    "target_office_id": "DK-KPRE2007-237-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ølstykke",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/42"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "251",
+    "target_office_id": "DK-KPRE2007-251-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Bramsnæs",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/44"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "253",
+    "target_office_id": "DK-K253-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Greve",
+    "current_name": "Greve",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/45"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/34"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "255",
+    "target_office_id": "DK-KPRE2007-255-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Gundsø",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/46"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "257",
+    "target_office_id": "DK-KPRE2007-257-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hvalsø",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/47"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "259",
+    "target_office_id": "DK-K259-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Køge",
+    "current_name": "Køge",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/48"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/35"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "261",
+    "target_office_id": "DK-KPRE2007-261-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Lejre",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/49"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "263",
+    "target_office_id": "DK-KPRE2007-263-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ramsø",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/50"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "265",
+    "target_office_id": "DK-K265-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Roskilde",
+    "current_name": "Roskilde",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/51"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/37"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "267",
+    "target_office_id": "DK-KPRE2007-267-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Skovbo",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/52"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "269",
+    "target_office_id": "DK-K269-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Solrød",
+    "current_name": "Solrød",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/53"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/38"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "271",
+    "target_office_id": "DK-KPRE2007-271-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Vallø",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/54"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "301",
+    "target_office_id": "DK-KPRE2007-301-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Bjergsted",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/56"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "303",
+    "target_office_id": "DK-KPRE2007-303-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Dianalund",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/57"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "305",
+    "target_office_id": "DK-KPRE2007-305-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Dragsholm",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/58"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "307",
+    "target_office_id": "DK-KPRE2007-307-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Fuglebjerg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/59"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "309",
+    "target_office_id": "DK-KPRE2007-309-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Gørlev",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/60"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "311",
+    "target_office_id": "DK-KPRE2007-311-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hashøj",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/61"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "313",
+    "target_office_id": "DK-KPRE2007-313-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Haslev",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/62"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "315",
+    "target_office_id": "DK-KPRE2007-315-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Holbæk",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/63"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "317",
+    "target_office_id": "DK-KPRE2007-317-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hvidebæk",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/64"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "319",
+    "target_office_id": "DK-KPRE2007-319-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Høng",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/65"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "321",
+    "target_office_id": "DK-KPRE2007-321-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Jernløse",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/66"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "323",
+    "target_office_id": "DK-KPRE2007-323-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Kalundborg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/67"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "325",
+    "target_office_id": "DK-KPRE2007-325-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Korsør",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/68"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "327",
+    "target_office_id": "DK-KPRE2007-327-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nykøbing-Rørvig",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/69"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "329",
+    "target_office_id": "DK-K329-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Ringsted",
+    "current_name": "Ringsted",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/70"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/46"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "331",
+    "target_office_id": "DK-KPRE2007-331-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Skælskør",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/71"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "333",
+    "target_office_id": "DK-KPRE2007-333-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Slagelse",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/72"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "335",
+    "target_office_id": "DK-KPRE2007-335-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sorø",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/73"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "337",
+    "target_office_id": "DK-KPRE2007-337-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Stenlille",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/74"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "339",
+    "target_office_id": "DK-KPRE2007-339-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Svinninge",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/75"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "341",
+    "target_office_id": "DK-KPRE2007-341-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Tornved",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/76"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "343",
+    "target_office_id": "DK-KPRE2007-343-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Trundholm",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/77"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "345",
+    "target_office_id": "DK-KPRE2007-345-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Tølløse",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/78"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "351",
+    "target_office_id": "DK-KPRE2007-351-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Fakse",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/80"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "353",
+    "target_office_id": "DK-KPRE2007-353-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Fladså",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/81"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "355",
+    "target_office_id": "DK-KPRE2007-355-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Holeby",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/82"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "357",
+    "target_office_id": "DK-KPRE2007-357-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Holmegaard",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/83"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "359",
+    "target_office_id": "DK-KPRE2007-359-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Højreby",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/84"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "361",
+    "target_office_id": "DK-KPRE2007-361-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Langebæk",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/85"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "363",
+    "target_office_id": "DK-KPRE2007-363-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Maribo",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/86"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "365",
+    "target_office_id": "DK-KPRE2007-365-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Møn",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/87"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "367",
+    "target_office_id": "DK-KPRE2007-367-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nakskov",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/88"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "369",
+    "target_office_id": "DK-KPRE2007-369-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nykøbing-Falster",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/89"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "371",
+    "target_office_id": "DK-KPRE2007-371-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nysted",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/90"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "373",
+    "target_office_id": "DK-KPRE2007-373-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Næstved",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/91"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "375",
+    "target_office_id": "DK-KPRE2007-375-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nørre Alslev",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/92"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "377",
+    "target_office_id": "DK-KPRE2007-377-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Præstø",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/93"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "379",
+    "target_office_id": "DK-KPRE2007-379-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ravnsborg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/94"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "381",
+    "target_office_id": "DK-KPRE2007-381-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Rudbjerg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/95"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "383",
+    "target_office_id": "DK-KPRE2007-383-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Rødby",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/96"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "385",
+    "target_office_id": "DK-KPRE2007-385-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Rønnede",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/97"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "387",
+    "target_office_id": "DK-KPRE2007-387-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sakskøbing",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/98"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "389",
+    "target_office_id": "DK-KPRE2007-389-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Stevns",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/99"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "391",
+    "target_office_id": "DK-KPRE2007-391-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Stubbekøbing",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/100"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "393",
+    "target_office_id": "DK-KPRE2007-393-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Suså",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/101"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "395",
+    "target_office_id": "DK-KPRE2007-395-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sydfalster",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/102"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "397",
+    "target_office_id": "DK-KPRE2007-397-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Vordingborg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/103"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "401",
+    "target_office_id": "DK-KPRE2007-401-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Allinge-Gudhjem (- 2002)",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/105"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "403",
+    "target_office_id": "DK-KPRE2007-403-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hasle (- 2002)",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/106"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "405",
+    "target_office_id": "DK-KPRE2007-405-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nexø (- 2002)",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/107"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "407",
+    "target_office_id": "DK-KPRE2007-407-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Rønne (- 2002)",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/108"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "409",
+    "target_office_id": "DK-KPRE2007-409-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Aakirkeby (- 2002)",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/109"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "421",
+    "target_office_id": "DK-KPRE2007-421-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Assens",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/112"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "423",
+    "target_office_id": "DK-KPRE2007-423-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Bogense",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/113"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "425",
+    "target_office_id": "DK-KPRE2007-425-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Broby",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/114"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "427",
+    "target_office_id": "DK-KPRE2007-427-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Egebjerg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/115"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "429",
+    "target_office_id": "DK-KPRE2007-429-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ejby",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/116"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "431",
+    "target_office_id": "DK-KPRE2007-431-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Faaborg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/117"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "433",
+    "target_office_id": "DK-KPRE2007-433-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Glamsbjerg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/118"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "435",
+    "target_office_id": "DK-KPRE2007-435-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Gudme",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/119"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "437",
+    "target_office_id": "DK-KPRE2007-437-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Haarby",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/120"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "439",
+    "target_office_id": "DK-KPRE2007-439-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Kerteminde",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/121"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "441",
+    "target_office_id": "DK-KPRE2007-441-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Langeskov",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/122"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "443",
+    "target_office_id": "DK-KPRE2007-443-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Marstal (-2005/2006)",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/123"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "445",
+    "target_office_id": "DK-KPRE2007-445-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Middelfart",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/124"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "447",
+    "target_office_id": "DK-KPRE2007-447-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Munkebo",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/125"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "449",
+    "target_office_id": "DK-KPRE2007-449-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nyborg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/126"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "451",
+    "target_office_id": "DK-KPRE2007-451-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nørre Aaby",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/127"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "461",
+    "target_office_id": "DK-K461-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Odense",
+    "current_name": "Odense",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/128"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/59"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "471",
+    "target_office_id": "DK-KPRE2007-471-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Otterup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/129"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "473",
+    "target_office_id": "DK-KPRE2007-473-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ringe",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/130"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "475",
+    "target_office_id": "DK-KPRE2007-475-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Rudkøbing",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/131"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "477",
+    "target_office_id": "DK-KPRE2007-477-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ryslinge",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/132"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "479",
+    "target_office_id": "DK-K479-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Svendborg",
+    "current_name": "Svendborg",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/133"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/60"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "481",
+    "target_office_id": "DK-KPRE2007-481-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sydlangeland",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/134"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "483",
+    "target_office_id": "DK-KPRE2007-483-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Søndersø",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/135"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "485",
+    "target_office_id": "DK-KPRE2007-485-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Tommerup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/136"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "487",
+    "target_office_id": "DK-KPRE2007-487-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Tranekær",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/137"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "489",
+    "target_office_id": "DK-KPRE2007-489-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ullerslev",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/138"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "491",
+    "target_office_id": "DK-KPRE2007-491-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Vissenbjerg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/139"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "493",
+    "target_office_id": "DK-KPRE2007-493-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ærøskøbing (-2005/2006)",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/141"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "495",
+    "target_office_id": "DK-KPRE2007-495-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ørbæk",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/142"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "497",
+    "target_office_id": "DK-KPRE2007-497-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Årslev",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/143"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "499",
+    "target_office_id": "DK-KPRE2007-499-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Aarup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/144"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "501",
+    "target_office_id": "DK-KPRE2007-501-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Augustenborg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/146"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "503",
+    "target_office_id": "DK-KPRE2007-503-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Bov",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/147"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "505",
+    "target_office_id": "DK-KPRE2007-505-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Bredebro",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/148"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "507",
+    "target_office_id": "DK-KPRE2007-507-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Broager",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/149"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "509",
+    "target_office_id": "DK-KPRE2007-509-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Christiansfeld",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/150"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "511",
+    "target_office_id": "DK-KPRE2007-511-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Gram",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/151"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "513",
+    "target_office_id": "DK-KPRE2007-513-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Gråsten",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/152"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "515",
+    "target_office_id": "DK-KPRE2007-515-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Haderslev",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/153"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "517",
+    "target_office_id": "DK-KPRE2007-517-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Højer",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/154"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "519",
+    "target_office_id": "DK-KPRE2007-519-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Lundtoft",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/155"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "521",
+    "target_office_id": "DK-KPRE2007-521-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Løgumkloster",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/156"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "523",
+    "target_office_id": "DK-KPRE2007-523-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nordborg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/157"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "525",
+    "target_office_id": "DK-KPRE2007-525-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nørre Rangstrup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/158"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "527",
+    "target_office_id": "DK-KPRE2007-527-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Rødding",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/159"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "529",
+    "target_office_id": "DK-KPRE2007-529-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Rødekro",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/160"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "531",
+    "target_office_id": "DK-KPRE2007-531-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Skærbæk",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/161"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "533",
+    "target_office_id": "DK-KPRE2007-533-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sundeved",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/162"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "535",
+    "target_office_id": "DK-KPRE2007-535-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sydals",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/163"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "537",
+    "target_office_id": "DK-KPRE2007-537-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sønderborg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/164"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "539",
+    "target_office_id": "DK-KPRE2007-539-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Tinglev",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/165"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "541",
+    "target_office_id": "DK-KPRE2007-541-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Tønder",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/166"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "543",
+    "target_office_id": "DK-KPRE2007-543-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Vojens",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/167"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "545",
+    "target_office_id": "DK-KPRE2007-545-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Aabenraa",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/168"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "551",
+    "target_office_id": "DK-KPRE2007-551-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Billund",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/170"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "553",
+    "target_office_id": "DK-KPRE2007-553-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Blåbjerg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/171"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "555",
+    "target_office_id": "DK-KPRE2007-555-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Blåvandshuk",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/172"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "557",
+    "target_office_id": "DK-KPRE2007-557-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Bramming",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/173"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "559",
+    "target_office_id": "DK-KPRE2007-559-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Brørup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/174"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "561",
+    "target_office_id": "DK-K561-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Esbjerg",
+    "current_name": "Esbjerg",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/175"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/63"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "563",
+    "target_office_id": "DK-K563-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Fanø",
+    "current_name": "Fanø",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/176"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/64"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "565",
+    "target_office_id": "DK-KPRE2007-565-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Grindsted",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/177"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "567",
+    "target_office_id": "DK-KPRE2007-567-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Helle",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/178"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "569",
+    "target_office_id": "DK-KPRE2007-569-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Holsted",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/179"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "571",
+    "target_office_id": "DK-KPRE2007-571-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ribe",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/180"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "573",
+    "target_office_id": "DK-K573-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Varde",
+    "current_name": "Varde",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/181"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/70"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "575",
+    "target_office_id": "DK-K575-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Vejen",
+    "current_name": "Vejen",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/182"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/71"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "577",
+    "target_office_id": "DK-KPRE2007-577-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ølgod",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/183"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "601",
+    "target_office_id": "DK-KPRE2007-601-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Brædstrup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/185"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "603",
+    "target_office_id": "DK-KPRE2007-603-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Børkop",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/186"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "605",
+    "target_office_id": "DK-KPRE2007-605-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Egtved",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/187"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "607",
+    "target_office_id": "DK-K607-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Fredericia",
+    "current_name": "Fredericia",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/188"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/65"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "609",
+    "target_office_id": "DK-KPRE2007-609-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Gedved",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/189"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "611",
+    "target_office_id": "DK-KPRE2007-611-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Give",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/190"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "613",
+    "target_office_id": "DK-KPRE2007-613-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hedensted",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/191"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "615",
+    "target_office_id": "DK-K615-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Horsens",
+    "current_name": "Horsens",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/192"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/77"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "617",
+    "target_office_id": "DK-KPRE2007-617-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Jelling",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/193"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "619",
+    "target_office_id": "DK-KPRE2007-619-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Juelsminde",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/194"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "621",
+    "target_office_id": "DK-K621-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Kolding",
+    "current_name": "Kolding",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/195"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/67"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "623",
+    "target_office_id": "DK-KPRE2007-623-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Lunderskov",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/196"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "625",
+    "target_office_id": "DK-KPRE2007-625-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nørre Snede",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/197"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "627",
+    "target_office_id": "DK-KPRE2007-627-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Tørring-Uldum",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/198"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "629",
+    "target_office_id": "DK-KPRE2007-629-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Vamdrup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/199"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "631",
+    "target_office_id": "DK-KPRE2007-631-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Vejle",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/200"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "651",
+    "target_office_id": "DK-KPRE2007-651-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Aulum-Haderup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/202"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "653",
+    "target_office_id": "DK-KPRE2007-653-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Brande",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/203"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "655",
+    "target_office_id": "DK-KPRE2007-655-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Egvad",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/204"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "657",
+    "target_office_id": "DK-K657-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Herning",
+    "current_name": "Herning",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/205"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/86"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "659",
+    "target_office_id": "DK-KPRE2007-659-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Holmsland",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/206"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "661",
+    "target_office_id": "DK-K661-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Holstebro",
+    "current_name": "Holstebro",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/207"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/87"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "663",
+    "target_office_id": "DK-KPRE2007-663-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ikast",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/208"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "665",
+    "target_office_id": "DK-K665-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Lemvig",
+    "current_name": "Lemvig",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/209"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/89"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "667",
+    "target_office_id": "DK-KPRE2007-667-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ringkøbing",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/210"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "669",
+    "target_office_id": "DK-KPRE2007-669-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Skjern",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/211"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "671",
+    "target_office_id": "DK-K671-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Struer",
+    "current_name": "Struer",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/212"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/92"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "673",
+    "target_office_id": "DK-KPRE2007-673-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Thyborøn-Harboøre",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/213"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "675",
+    "target_office_id": "DK-KPRE2007-675-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Thyholm",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/214"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "677",
+    "target_office_id": "DK-KPRE2007-677-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Trehøje",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/215"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "679",
+    "target_office_id": "DK-KPRE2007-679-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ulfborg-Vemb",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/216"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "681",
+    "target_office_id": "DK-KPRE2007-681-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Videbæk",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/217"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "683",
+    "target_office_id": "DK-KPRE2007-683-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Vinderup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/218"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "685",
+    "target_office_id": "DK-KPRE2007-685-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Åskov",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/219"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "701",
+    "target_office_id": "DK-KPRE2007-701-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ebeltoft",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/221"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "703",
+    "target_office_id": "DK-KPRE2007-703-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Galten",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/222"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "705",
+    "target_office_id": "DK-KPRE2007-705-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Gjern",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/223"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "707",
+    "target_office_id": "DK-KPRE2007-707-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Grenaa",
+    "current_name": "Norddjurs",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/224"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/78"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "709",
+    "target_office_id": "DK-KPRE2007-709-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hadsten",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/225"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "711",
+    "target_office_id": "DK-KPRE2007-711-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hammel",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/226"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "713",
+    "target_office_id": "DK-KPRE2007-713-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hinnerup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/227"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "715",
+    "target_office_id": "DK-KPRE2007-715-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hørning",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/228"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "717",
+    "target_office_id": "DK-KPRE2007-717-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Langå",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/229"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "719",
+    "target_office_id": "DK-KPRE2007-719-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Mariager",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/230"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "721",
+    "target_office_id": "DK-KPRE2007-721-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Midtdjurs",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/231"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "723",
+    "target_office_id": "DK-KPRE2007-723-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nørhald",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/232"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "725",
+    "target_office_id": "DK-KPRE2007-725-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nørre Djurs",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/233"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "727",
+    "target_office_id": "DK-K727-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Odder",
+    "current_name": "Odder",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/234"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/79"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "729",
+    "target_office_id": "DK-KPRE2007-729-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Purhus",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/235"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "731",
+    "target_office_id": "DK-KPRE2007-731-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Randers",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/236"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "733",
+    "target_office_id": "DK-KPRE2007-733-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Rosenholm",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/237"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "735",
+    "target_office_id": "DK-KPRE2007-735-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Rougsø",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/238"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "737",
+    "target_office_id": "DK-KPRE2007-737-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Ry",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/239"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "739",
+    "target_office_id": "DK-KPRE2007-739-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Rønde",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/240"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "741",
+    "target_office_id": "DK-K741-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Samsø",
+    "current_name": "Samsø",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/241"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/81"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "743",
+    "target_office_id": "DK-KPRE2007-743-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Silkeborg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/242"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "745",
+    "target_office_id": "DK-KPRE2007-745-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Skanderborg",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/243"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "747",
+    "target_office_id": "DK-KPRE2007-747-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sønderhald",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/244"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "749",
+    "target_office_id": "DK-KPRE2007-749-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Them",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/245"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "751",
+    "target_office_id": "DK-K751-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Århus",
+    "current_name": "Aarhus",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/246"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/85"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "761",
+    "target_office_id": "DK-KPRE2007-761-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Bjerringbro",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/248"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "763",
+    "target_office_id": "DK-KPRE2007-763-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Fjends",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/249"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "765",
+    "target_office_id": "DK-KPRE2007-765-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hanstholm",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/250"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "767",
+    "target_office_id": "DK-KPRE2007-767-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hvorslev",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/251"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "769",
+    "target_office_id": "DK-KPRE2007-769-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Karup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/252"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "771",
+    "target_office_id": "DK-KPRE2007-771-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Kjellerup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/253"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "773",
+    "target_office_id": "DK-K773-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Morsø",
+    "current_name": "Morsø",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/254"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/101"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "775",
+    "target_office_id": "DK-KPRE2007-775-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Møldrup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/255"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "777",
+    "target_office_id": "DK-KPRE2007-777-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sallingsund",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/256"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "779",
+    "target_office_id": "DK-K779-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Skive",
+    "current_name": "Skive",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/257"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/91"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "781",
+    "target_office_id": "DK-KPRE2007-781-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Spøttrup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/258"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "783",
+    "target_office_id": "DK-KPRE2007-783-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sundsøre",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/259"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "785",
+    "target_office_id": "DK-KPRE2007-785-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sydthy",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/260"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "787",
+    "target_office_id": "DK-K787-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Thisted",
+    "current_name": "Thisted",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/261"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/103"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "789",
+    "target_office_id": "DK-KPRE2007-789-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Tjele",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/262"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "791",
+    "target_office_id": "DK-K791-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Viborg",
+    "current_name": "Viborg",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/263"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/93"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "793",
+    "target_office_id": "DK-KPRE2007-793-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Aalestrup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/264"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "801",
+    "target_office_id": "DK-KPRE2007-801-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Arden",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/266"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "803",
+    "target_office_id": "DK-KPRE2007-803-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Brovst",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/267"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "805",
+    "target_office_id": "DK-KPRE2007-805-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Brønderslev",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/268"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "807",
+    "target_office_id": "DK-KPRE2007-807-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Dronninglund",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/269"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "809",
+    "target_office_id": "DK-KPRE2007-809-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Farsø",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/270"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "811",
+    "target_office_id": "DK-KPRE2007-811-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Fjerritslev",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/271"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "813",
+    "target_office_id": "DK-K813-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Frederikshavn",
+    "current_name": "Frederikshavn",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/272"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/96"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "815",
+    "target_office_id": "DK-KPRE2007-815-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hadsund",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/273"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "817",
+    "target_office_id": "DK-KPRE2007-817-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hals",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/274"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "819",
+    "target_office_id": "DK-KPRE2007-819-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hirtshals",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/275"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "821",
+    "target_office_id": "DK-KPRE2007-821-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hjørring",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/276"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "823",
+    "target_office_id": "DK-KPRE2007-823-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Hobro",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/277"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "825",
+    "target_office_id": "DK-K825-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Læsø",
+    "current_name": "Læsø",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/278"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/99"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "827",
+    "target_office_id": "DK-KPRE2007-827-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Løgstør",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/279"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "829",
+    "target_office_id": "DK-KPRE2007-829-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Løkken-Vrå",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/280"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "831",
+    "target_office_id": "DK-KPRE2007-831-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nibe",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/281"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "833",
+    "target_office_id": "DK-KPRE2007-833-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Nørager",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/282"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "835",
+    "target_office_id": "DK-KPRE2007-835-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Pandrup",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/283"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "837",
+    "target_office_id": "DK-KPRE2007-837-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sejlflod",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/284"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "839",
+    "target_office_id": "DK-KPRE2007-839-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sindal",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/285"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "841",
+    "target_office_id": "DK-KPRE2007-841-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Skagen",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/286"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "843",
+    "target_office_id": "DK-KPRE2007-843-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Skørping",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/287"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "845",
+    "target_office_id": "DK-KPRE2007-845-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Støvring",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/288"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "847",
+    "target_office_id": "DK-KPRE2007-847-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Sæby",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/289"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "849",
+    "target_office_id": "DK-KPRE2007-849-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Aabybro",
+    "current_name": "Jammerbugt",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/290"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/98"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "851",
+    "target_office_id": "DK-K851-C",
+    "reason": "same code/name documentary continuation; boundary review open",
+    "source_name": "Aalborg",
+    "current_name": "Aalborg",
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/291"
+      },
+      {
+        "input_path": "data/research/denmark/sources/VALGK3-meta.json",
+        "sha256": "53213ddedb3fcbda33e1cd57971efea496d0a75ad35b563dbd375972468c4e6b",
+        "json_pointer": "/variables/0/values/105"
+      }
+    ]
+  },
+  {
+    "upstream_namespace": "DST/VALGK3X/municipal-office",
+    "upstream_id": "861",
+    "target_office_id": "DK-KPRE2007-861-C",
+    "reason": "historical source-vintage identity; successor unresolved",
+    "source_name": "Aars",
+    "current_name": null,
+    "evidence": [
+      {
+        "input_path": "data/research/denmark/sources/VALGK3X-meta.json",
+        "sha256": "4d767608a2abb68995a1c58672017faa53cb4989bbe06278919a38491f18b710",
+        "json_pointer": "/variables/0/values/292"
+      }
+    ]
+  }
+]

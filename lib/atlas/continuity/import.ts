@@ -2,6 +2,7 @@ import { importAlbania, type ImportAlbaniaOptions, type ImportAlbaniaResult } fr
 import { importAlderney, type ImportAlderneyResult } from "../alderney/import";
 import { importAndorra, type ImportAndorraResult } from "../andorra/import";
 import { importArmenia, type ImportArmeniaResult } from "../armenia/import";
+import { importAustria, type ImportAustriaResult } from "../austria/import";
 import { importBelgium, type ImportBelgiumResult } from "../belgium/import";
 import { importBosnia, type ImportBosniaResult } from "../bosnia-and-herzegovina/import";
 import { importBulgaria, type ImportBulgariaResult } from "../bulgaria/import";
@@ -15,6 +16,7 @@ export type ImportScope =
   | "andorra"
   | "alderney"
   | "armenia"
+  | "austria"
   | "belgium"
   | "bosnia"
   | "bulgaria"
@@ -30,6 +32,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     raw === "andorra" ||
     raw === "alderney" ||
     raw === "armenia" ||
+    raw === "austria" ||
     raw === "belgium" ||
     raw === "bosnia" ||
     raw === "bulgaria" ||
@@ -41,7 +44,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     return raw;
   }
   throw new Error(
-    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|belgium|bosnia|bulgaria|netherlands|latam|nz|all`,
+    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|netherlands|latam|nz|all`,
   );
 }
 
@@ -50,6 +53,7 @@ export type MultiLineageImportResult = {
   andorra?: ImportAndorraResult;
   alderney?: ImportAlderneyResult;
   armenia?: ImportArmeniaResult;
+  austria?: ImportAustriaResult;
   belgium?: ImportBelgiumResult;
   bosnia?: ImportBosniaResult;
   bulgaria?: ImportBulgariaResult;
@@ -74,6 +78,9 @@ export function importAtlasLineages(
   }
   if (scope === "armenia" || scope === "all") {
     result.armenia = importArmenia(options);
+  }
+  if (scope === "austria" || scope === "all") {
+    result.austria = importAustria(options);
   }
   if (scope === "belgium" || scope === "all") {
     result.belgium = importBelgium(options);
