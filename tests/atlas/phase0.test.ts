@@ -1540,6 +1540,149 @@ describe("Phase 0 tier-classification drafts", () => {
       human_review_required: true,
     });
   });
+
+  it("keeps Ireland Prompt AB 36 current / 86 historical accepted with named holds", () => {
+    const ireland = readJson<
+      TierFile & {
+        production_accepted?: boolean;
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        justin_approval?: {
+          accepted?: boolean;
+          current_offices?: number;
+          historical_offices?: number;
+          scope?: string;
+          holds?: string[];
+        };
+        notes?: Array<{ office_id?: string; reviews?: string[] }>;
+        source_register: { path?: string; input_path?: string; sha256: string; bytes?: number };
+      }
+    >("schemas/atlas/tiers/ireland.json");
+    expect(ireland.status).toBe("approved");
+    expect(ireland.production_accepted).toBe(true);
+    expect(ireland.country_slug).toBe("ireland");
+    expect(ireland.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-20",
+      timezone: "America/Edmonton",
+    });
+    expect(ireland.approval?.notes).toMatch(/36 current \+ 86 historical/i);
+    expect(ireland.approval?.notes).toMatch(/named holds/i);
+    expect(ireland.approval?.notes).toMatch(/IE-2014-REFORM/);
+    expect(ireland.approval?.notes).toMatch(/IE-LOCAL-2019-2024/);
+    expect(ireland.approval?.notes).toMatch(/IE-SEANAD-PANELS/);
+    expect(ireland.approval?.notes).toMatch(/IE-EP-RESULTS/);
+    expect(ireland.approval?.notes).toMatch(/IE-DAIL-ENCODING-AND-STV/);
+    expect(ireland.approval?.notes).toMatch(/IE-PRESIDENT-LATEST/);
+    expect(ireland.approval?.notes).toMatch(/IE-MAYOR-LIMIT/);
+    expect(ireland.approval?.notes).toMatch(/IE-NORTHERN-IRELAND-EXCLUSION/);
+    expect(ireland.approval?.notes).toMatch(/IE-REGIONAL-APPOINTMENTS/);
+    expect(ireland.approval?.notes).toMatch(/Northern Ireland excluded/i);
+    expect(ireland.predecessor_draft_sha256).toBe(
+      "0683410a3e3b8f1c1bc5b69df0793fd5bbba524658556a51ca76d3aeb7ae3470",
+    );
+    expect(sha256("schemas/atlas/tiers/ireland.json")).toBe(
+      "f4426e0df1b99d6e3330c345e33a83022cf654b180c659e03c0e889ae4327ca0",
+    );
+    expect(ireland.classifications).toHaveLength(122);
+    expect(ireland.counts_by_proposed_tier).toEqual({
+      national: 3,
+      regional: 0,
+      municipal: 118,
+      other: 1,
+      unknown: 0,
+    });
+    expect(ireland.justin_approval).toMatchObject({
+      accepted: true,
+      current_offices: 36,
+      historical_offices: 86,
+      scope: "all_draft_offices_with_named_holds",
+      holds: [
+        "IE-2014-REFORM",
+        "IE-LOCAL-2019-2024",
+        "IE-SEANAD-PANELS",
+        "IE-EP-RESULTS",
+        "IE-DAIL-ENCODING-AND-STV",
+        "IE-PRESIDENT-LATEST",
+        "IE-MAYOR-LIMIT",
+        "IE-NORTHERN-IRELAND-EXCLUSION",
+        "IE-REGIONAL-APPOINTMENTS",
+      ],
+    });
+    expect(ireland.classifications.filter((row) => row.human_review_required === true)).toHaveLength(88);
+    expect(ireland.classifications.filter((row) => row.tier === "municipal")).toHaveLength(118);
+    expect(ireland.classifications.filter((row) => row.tier === "regional")).toHaveLength(0);
+    expect(ireland.classifications.filter((row) => row.tier === "national")).toHaveLength(3);
+    expect(ireland.classifications.filter((row) => row.tier === "other")).toHaveLength(1);
+    const register = readJson<Array<{ office_id: string; office_status?: string; office_type?: string; name?: string }>>(
+      "data/research/ireland/office-register.json",
+    );
+    expect(register.filter((row) => row.office_status === "current")).toHaveLength(36);
+    expect(register.filter((row) => row.office_status === "historical")).toHaveLength(86);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "local_authority_council"),
+    ).toHaveLength(31);
+    expect(register.filter((row) => row.office_type === "town_council")).toHaveLength(75);
+    expect(register.filter((row) => row.office_type === "borough_council")).toHaveLength(5);
+    expect(
+      register.filter((row) => row.office_status === "historical" && row.office_type === "local_authority_council"),
+    ).toHaveLength(6);
+    expect(register.some((row) => /northern ireland/i.test(String(row.name ?? "")))).toBe(false);
+    expect(register.some((row) => /northern.?ireland/i.test(row.office_id))).toBe(false);
+    expect(readJson<unknown[]>("data/research/ireland/events.json")).toHaveLength(196);
+    expect(readJson<unknown[]>("data/research/ireland/results.json")).toHaveLength(7254);
+    expect(readJson<unknown[]>("data/research/ireland/proceedings.json")).toHaveLength(0);
+    const gaps = readJson<Array<{ original_token?: string; status?: string }>>(
+      "data/research/ireland/research-gaps.json",
+    );
+    expect(gaps.map((row) => row.original_token)).toEqual([
+      "IE-2014-REFORM",
+      "IE-LOCAL-2019-2024",
+      "IE-SEANAD-PANELS",
+      "IE-EP-RESULTS",
+      "IE-DAIL-ENCODING-AND-STV",
+      "IE-PRESIDENT-LATEST",
+      "IE-MAYOR-LIMIT",
+      "IE-NORTHERN-IRELAND-EXCLUSION",
+      "IE-REGIONAL-APPOINTMENTS",
+    ]);
+    expect(gaps.every((row) => row.status === "open")).toBe(true);
+    expectExactIds(
+      ireland,
+      register.map((row) => row.office_id),
+    );
+    expect(ireland.source_register.sha256).toBe(
+      "329bfaadd79d41a5772e7b9070e7d67ef3e7810fd41dd0a22fdfda17b723f1cc",
+    );
+    expect(ireland.source_register.sha256).toBe(sha256("data/research/ireland/office-register.json"));
+    expect(ireland.source_register.input_path).toBe("data/research/ireland/office-register.json");
+    expect(ireland.notes?.find((note) => note.office_id === "IE-EP")?.reviews?.[0]).toMatch(/Supranational/i);
+    expect(ireland.notes?.find((note) => note.office_id === "IE-SEANAD")?.reviews?.[0]).toMatch(/Taoiseach nominees/i);
+    expect(ireland.classifications.find((row) => row.office_id === "IE-DAIL")).toMatchObject({
+      tier: "national",
+    });
+    expect(ireland.classifications.find((row) => row.office_id === "IE-SEANAD")).toMatchObject({
+      tier: "national",
+      human_review_required: true,
+    });
+    expect(ireland.classifications.find((row) => row.office_id === "IE-PRESIDENT")).toMatchObject({
+      tier: "national",
+    });
+    expect(ireland.classifications.find((row) => row.office_id === "IE-EP")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+    expect(ireland.classifications.find((row) => row.office_id === "IE-LIMERICK-MAYOR")).toMatchObject({
+      tier: "municipal",
+    });
+  });
 });
 
 describe("Phase 0 inventory artifacts", () => {
