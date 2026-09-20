@@ -1,6 +1,6 @@
 # Continuity import — approved packs
 
-Justin authorized full proceed on 2026-09-16. `npm run import:atlas` loads **Albania**, **Andorra**, **Alderney**, **Armenia**, **Belgium**, **Bosnia and Herzegovina**, **Bulgaria**, and **approved** LatAm/NZ packs into the Atlas SQLite master. It does **not** import the remaining residual-heavy draft packs, deploy to the VPS, or declare cutover.
+Justin authorized full proceed on 2026-09-16. `npm run import:atlas` loads **Albania**, **Andorra**, **Alderney**, **Armenia**, **Belgium**, **Bosnia and Herzegovina**, **Bulgaria**, **Switzerland**, and **approved** LatAm/NZ packs into the Atlas SQLite master. It does **not** import the remaining residual-heavy draft packs, deploy to the VPS, or declare cutover.
 
 ## How to run
 
@@ -17,7 +17,7 @@ Scopes:
 
 | `ATLAS_IMPORT_SCOPE` | What loads |
 | --- | --- |
-| `all` (default) | Albania, Andorra, Alderney, Armenia, Belgium, Bosnia and Herzegovina, Bulgaria, then approved LatAm, then New Zealand |
+| `all` (default) | Albania, Andorra, Alderney, Armenia, Belgium, Bosnia and Herzegovina, Bulgaria, Switzerland, then approved LatAm, then New Zealand |
 | `albania` | Frozen Albania package only |
 | `andorra` | Frozen Andorra package only (7 municipal / 0 regional) |
 | `alderney` | Frozen Alderney package only (2 other / 0 regional; conditional 2026 dates) |
@@ -25,6 +25,7 @@ Scopes:
 | `belgium` | Prompt S2 research pack only (1,179 current + 55 historical; 1,185 municipal / 15 regional / 2 national / 32 other) |
 | `bosnia` | Frozen Bosnia and Herzegovina package only (13 regional / 0 municipal; 10 approved + 3 needs_review entity holds) |
 | `bulgaria` | Frozen Bulgaria package only (**530** accepted municipal / 0 regional; 3,067 held district/village rows unpublished) |
+| `switzerland` | Prompt U research pack only (**2,805 current + 11 historical**; 2,402 municipal / 52 regional / 2 national / 360 other; 308 commune executives held) |
 | `latam` | Approved Latin America packs + Mexico withhold-all-67 override |
 | `nz` | Approved New Zealand package |
 
@@ -45,6 +46,7 @@ Approved continuity countries (14 packs):
 - Belgium is Prompt S2 (`country-package-belgium`; **1,179 current + 55 historical**). 1,185 municipal / 15 regional / 2 national / 32 other. Remaining-universe, Bilzen, Saint-Josse, and 35 unbound IBZ 2000 notes stay open. Do not invent municipal or indirect rows beyond the accepted pack. Run with `ATLAS_IMPORT_SCOPE=belgium`.
 - Bosnia and Herzegovina is Europe #5 (`country-package-bosnia-and-herzegovina`; **13 regional / 0 municipal**). 10 cantonal assemblies are `approved`; entity offices `BA-F` / `BA-R` / `BA-G` stay `needs_review`. Research holds remain open (RS presidential replacement/repeat, coalitions, 2026-10-04 calendar certainty). Do not invent Brčko or municipal offices. Run with `ATLAS_IMPORT_SCOPE=bosnia`.
 - Bulgaria is Prompt P (`country-package-bulgaria`; **530** accepted municipal / **0** regional). 3,067 district/village rows stay held. Градец / qualification-change research remains retained input. Run with `ATLAS_IMPORT_SCOPE=bulgaria`. Do **not** use `SCOPE=all` on the VPS unless you intend a full re-import. See [Bulgaria_Import.md](../phase1/bulgaria/Bulgaria_Import.md).
+- Switzerland is Prompt U (`country-package-switzerland`; **2,805 current + 11 historical**). 2,402 municipal / 52 regional / 2 national / 360 other. 308 commune-executive gaps, thin historic/merger archive, 1,938 parliament caveats, and 16 disputed rows stay open. Do not invent held commune executives. Run with `ATLAS_IMPORT_SCOPE=switzerland`. See [Switzerland_Import.md](../phase1/switzerland/Switzerland_Import.md).
 
 Mexico result rows that violate `percent_0_100` are **withheld** using the accepted override `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (share NULL / share_status unknown / evidence_status disputed). Original values stay in `raw_json`. Denominators are not invented.
 
@@ -60,7 +62,7 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 
 ## CI
 
-`tests/atlas/continuity-import.test.ts` covers the approved-pack gate, Albania-only import, Albania+NZ serial publication, Albania+Andorra serial publication, Albania+Alderney serial publication, Albania+Armenia serial publication, Albania+Bosnia serial publication, Albania+Belgium serial publication, and Albania+Bulgaria serial publication.
+`tests/atlas/continuity-import.test.ts` covers the approved-pack gate, Albania-only import, Albania+NZ serial publication, Albania+Andorra serial publication, Albania+Alderney serial publication, Albania+Armenia serial publication, Albania+Bosnia serial publication, Albania+Belgium serial publication, Albania+Bulgaria serial publication, and Albania+Switzerland serial publication.
 
 `npm run test:atlas-import` (wired in GitHub CI after `npm test`) builds a temp SQLite and asserts the full approved set:
 
@@ -71,6 +73,7 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 - Belgium 1,234 offices (1,179 current + 55 historical) / 1,185 municipal / 15 regional / 2 national / 32 other / 1,772 events / 9,238 results / 0 prospective
 - Bosnia and Herzegovina 13 regional offices / 0 municipal / 39 selected histories / 13 expected 2026-10-04 dates / 10 approved + 3 needs_review
 - Bulgaria 530 approved municipal offices / 0 regional / 1,590 selected histories / 10,343 results; 3,067 held district/village offices unpublished
+- Switzerland 2,816 offices (2,805 current + 11 historical) / 2,402 municipal / 52 regional / 2 national / 360 other / 1,443 events / 8,094 results / 136 proceedings / 0 prospective; 308 commune executives held
 - 10,227 approved LatAm offices (Batch A+B + El Salvador + Argentina)
 - New Zealand 4 offices / 7 events / 36 historical results
 - draft country offices absent
@@ -78,7 +81,7 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 
 The full import is a dedicated CI script rather than a Vitest case so the ~3 minute LatAm projection does not trip Vitest's worker RPC timeout.
 
-The existing Albania CLI test uses `ATLAS_IMPORT_SCOPE=albania` so it stays a fast Albania-only proof. Andorra uses `ATLAS_IMPORT_SCOPE=andorra`. Alderney uses `ATLAS_IMPORT_SCOPE=alderney`. Armenia uses `ATLAS_IMPORT_SCOPE=armenia`. Belgium uses `ATLAS_IMPORT_SCOPE=belgium`. Bosnia uses `ATLAS_IMPORT_SCOPE=bosnia`. Bulgaria uses `ATLAS_IMPORT_SCOPE=bulgaria`:
+The existing Albania CLI test uses `ATLAS_IMPORT_SCOPE=albania` so it stays a fast Albania-only proof. Andorra uses `ATLAS_IMPORT_SCOPE=andorra`. Alderney uses `ATLAS_IMPORT_SCOPE=alderney`. Armenia uses `ATLAS_IMPORT_SCOPE=armenia`. Belgium uses `ATLAS_IMPORT_SCOPE=belgium`. Bosnia uses `ATLAS_IMPORT_SCOPE=bosnia`. Bulgaria uses `ATLAS_IMPORT_SCOPE=bulgaria`. Switzerland uses `ATLAS_IMPORT_SCOPE=switzerland`:
 
 ```bash
 export ATLAS_SQLITE_PATH=/tmp/atlas.sqlite
@@ -87,9 +90,10 @@ ATLAS_IMPORT_SCOPE=armenia npm run import:atlas
 ATLAS_IMPORT_SCOPE=belgium npm run import:atlas
 ATLAS_IMPORT_SCOPE=bosnia npm run import:atlas
 ATLAS_IMPORT_SCOPE=bulgaria npm run import:atlas
+ATLAS_IMPORT_SCOPE=switzerland npm run import:atlas
 ```
 
-Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of a few minutes (LatAm projection + ~146k result rows + Bulgaria unpack). Use `albania`, `andorra`, `alderney`, `armenia`, `belgium`, `bosnia`, `bulgaria`, or `nz` when you only need those lineages.
+Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of a few minutes (LatAm projection + ~146k result rows + Bulgaria unpack + Switzerland). Use `albania`, `andorra`, `alderney`, `armenia`, `belgium`, `bosnia`, `bulgaria`, `switzerland`, or `nz` when you only need those lineages.
 
 ## VPS — Bosnia scoped import only
 
@@ -119,6 +123,19 @@ ATLAS_IMPORT_SCOPE=belgium npm run import:atlas
 
 Expected stdout includes `belgium_offices=1234`, `belgium_current=1179`, `belgium_historical=55`, `belgium_municipal=1185`, `belgium_regional=15`, `belgium_national=2`, `belgium_result_rows=9238`. Unrelated lineages already published in that SQLite stay selected. This importer does not SSH, copy files, or flip `/electiondatabase` redirects. See [Belgium_Import.md](../phase1/belgium-s2/Belgium_Import.md).
 
+## VPS — Switzerland scoped import only
+
+To add Switzerland to an existing production Atlas SQLite, run a **scoped** import. Do **not** use `ATLAS_IMPORT_SCOPE=all` on the VPS for this lineage: `all` re-projects LatAm (~10k offices) and is not required to publish the accepted Prompt U offices.
+
+```bash
+# On the VPS, against the live Atlas paths only when you mean to publish
+export ATLAS_SQLITE_PATH=/var/lib/cdd/atlas.sqlite
+export ATLAS_ATTEMPTS_SQLITE_PATH=/var/lib/cdd/atlas-attempts.sqlite
+ATLAS_IMPORT_SCOPE=switzerland npm run import:atlas
+```
+
+Expected stdout includes `switzerland_offices=2816`, `switzerland_current=2805`, `switzerland_historical=11`, `switzerland_municipal=2402`, `switzerland_regional=52`, `switzerland_national=2`, `switzerland_result_rows=8094`, `switzerland_held_commune_executives=308`. Unrelated lineages already published in that SQLite stay selected. This importer does not SSH, copy files, or flip `/electiondatabase` redirects. See [Switzerland_Import.md](../phase1/switzerland/Switzerland_Import.md).
+
 ## `/atlas` UI
 
 The public MVP at `/atlas` reads the same SQLite file (`ATLAS_SQLITE_PATH`, else `data/master/atlas.sqlite` locally, `/var/lib/cdd/atlas.sqlite` in production). Missing or empty databases render an empty state. `/electiondatabase` is unchanged; it includes a soft link to `/atlas`. **No `/electiondatabase` redirects** ship with this floor.
@@ -129,7 +146,7 @@ Phase 2 floor surfaces (still not cutover):
 | --- | --- |
 | `/atlas` | Europe-first index of loaded countries/offices |
 | `/atlas/explorer` | Search/filter offices (`q`, `country`, `tier`, `region`); filters and pagination persist in the URL |
-| `/atlas/countries/:id` | Country index + regional calendar (populated for Belgium and Bosnia and Herzegovina; honest empty states for Andorra / Alderney / Armenia / Bulgaria) |
+| `/atlas/countries/:id` | Country index + regional calendar (populated for Belgium, Bosnia and Herzegovina, and Switzerland; honest empty states for Andorra / Alderney / Armenia / Bulgaria) |
 | `/atlas/offices/:id` | Soft compatibility: observatory public office IDs resolve when present as `office.office_id` |
 | `/atlas/elections/:id` | Soft compatibility: observatory public event IDs resolve when present as `election_event.event_id` |
 

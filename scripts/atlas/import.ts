@@ -3,7 +3,7 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Belgium + Bosnia and Herzegovina +
- * Bulgaria + approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria + Switzerland + approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -133,6 +133,27 @@ function main() {
       console.log(`bulgaria_sources=${result.bulgaria.counts.sources}`);
       console.log(`bulgaria_regional=${result.bulgaria.counts.regional_offices}`);
       console.log(`bulgaria_held_offices=${result.bulgaria.counts.held_offices}`);
+    }
+    if (result.switzerland) {
+      console.log("lineage=country-package-switzerland");
+      console.log(`switzerland_attempt_id=${result.switzerland.attemptId}`);
+      console.log(`switzerland_release_id=${result.switzerland.releaseId}`);
+      console.log(`switzerland_fingerprint_sha256=${result.switzerland.fingerprint}`);
+      console.log(`switzerland_reused_release=${result.switzerland.reusedRelease ? "yes" : "no"}`);
+      console.log(`switzerland_offices=${result.switzerland.counts.offices}`);
+      console.log(`switzerland_current=${result.switzerland.counts.current_offices}`);
+      console.log(`switzerland_historical=${result.switzerland.counts.historical_offices}`);
+      console.log(`switzerland_municipal=${result.switzerland.counts.municipal_offices}`);
+      console.log(`switzerland_regional=${result.switzerland.counts.regional_offices}`);
+      console.log(`switzerland_national=${result.switzerland.counts.national_offices}`);
+      console.log(`switzerland_other=${result.switzerland.counts.other_offices}`);
+      console.log(`switzerland_selected_histories=${result.switzerland.counts.selected_histories}`);
+      console.log(`switzerland_prospective_events=${result.switzerland.counts.prospective_events}`);
+      console.log(`switzerland_result_rows=${result.switzerland.counts.result_rows}`);
+      console.log(`switzerland_proceedings=${result.switzerland.counts.proceedings}`);
+      console.log(`switzerland_sources=${result.switzerland.counts.sources}`);
+      console.log(`switzerland_unresolved=${result.switzerland.counts.unresolved_evidence}`);
+      console.log(`switzerland_held_commune_executives=${result.switzerland.counts.held_commune_executive_gaps}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
