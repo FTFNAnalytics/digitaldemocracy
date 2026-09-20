@@ -1,0 +1,122 @@
+[
+  {
+    "source": "2014-council-candidates.xlsx",
+    "extract": "2014-council-candidates",
+    "source_rows": 233090,
+    "result_rows": 233090,
+    "selection": "every source candidate record exactly once"
+  },
+  {
+    "source": "2018-2018-wyniki-wyborów-do-rad.zip",
+    "extract": "2018-kand-rady",
+    "source_rows": 184745,
+    "result_rows": 184745,
+    "selection": "every source candidate record exactly once"
+  },
+  {
+    "source": "2024-kandydaci_rady_gmin_do_20k.zip",
+    "extract": "2024-kandydaci_rady_gmin_do_20k",
+    "source_rows": 87419,
+    "result_rows": 87419,
+    "selection": "every source candidate record exactly once"
+  },
+  {
+    "source": "2024-kandydaci_rady_gmin_powyzej_20k.zip",
+    "extract": "2024-kandydaci_rady_gmin_powyzej_20k",
+    "source_rows": 45083,
+    "result_rows": 45083,
+    "selection": "every source candidate record exactly once"
+  },
+  {
+    "source": "2024-kandydaci_rady_powiatow.zip",
+    "extract": "2024-kandydaci_rady_powiatow",
+    "source_rows": 42685,
+    "result_rows": 42685,
+    "selection": "every source candidate record exactly once"
+  },
+  {
+    "source": "2024-kandydaci_sejmiki_wojewodztw.zip",
+    "extract": "2024-kandydaci_sejmiki_wojewodztw",
+    "source_rows": 5440,
+    "result_rows": 5440,
+    "selection": "every source candidate record exactly once"
+  },
+  {
+    "source": "2024-kandydaci_rady_dzielnic.zip",
+    "extract": "2024-kandydaci_rady_dzielnic",
+    "source_rows": 2564,
+    "result_rows": 2564,
+    "selection": "every source candidate record exactly once"
+  },
+  {
+    "source": "2014-executive-candidates.xls",
+    "extract": "2014-executive-candidates",
+    "source_rows": 8029,
+    "result_rows": 9802,
+    "selection": "separate source first-round and runoff cells; no second ordinary event"
+  },
+  {
+    "source": "2018-2018-wybbp.zip",
+    "extract": "2018-kand-wbp-I-tura",
+    "source_rows": 6958,
+    "result_rows": 6958,
+    "selection": "separate source first-round and runoff cells; no second ordinary event"
+  },
+  {
+    "source": "2018-2018-wybbp.zip",
+    "extract": "2018-kand-wbp-II-tura",
+    "source_rows": 1296,
+    "result_rows": 1296,
+    "selection": "separate source first-round and runoff cells; no second ordinary event"
+  },
+  {
+    "source": "2024-kandydaci_wbp.zip",
+    "extract": "2024-kandydaci_wbp",
+    "source_rows": 6731,
+    "result_rows": 6731,
+    "selection": "separate source first-round and runoff cells; no second ordinary event"
+  },
+  {
+    "source": "2024-kandydaci_wbp2.zip",
+    "extract": "2024-kandydaci_wbp2",
+    "source_rows": 1491,
+    "result_rows": 1491,
+    "selection": "separate source first-round and runoff cells; no second ordinary event"
+  },
+  {
+    "source": "sejmsenat2019-kandydaci_sejm.zip",
+    "source_rows": 5111,
+    "result_rows": 5111,
+    "selection": "candidate rows only; territorial/party totals retained for reconciliation, not duplicate result rows"
+  },
+  {
+    "source": "sejmsenat2019-kandydaci_senat.zip",
+    "source_rows": 278,
+    "result_rows": 278,
+    "selection": "candidate rows only; territorial/party totals retained for reconciliation, not duplicate result rows"
+  },
+  {
+    "source": "2023-kandydaci_sejm.zip",
+    "source_rows": 6333,
+    "result_rows": 6333,
+    "selection": "candidate rows only; territorial/party totals retained for reconciliation, not duplicate result rows"
+  },
+  {
+    "source": "2023-kandydaci_senat.zip",
+    "source_rows": 359,
+    "result_rows": 359,
+    "selection": "candidate rows only; territorial/party totals retained for reconciliation, not duplicate result rows"
+  },
+  {
+    "source": "ep2019-candidates.zip",
+    "source_rows": 866,
+    "result_rows": 866,
+    "selection": "candidate rows only; territorial/party totals retained for reconciliation, not duplicate result rows"
+  },
+  {
+    "source": "pe2024-kandydaci-indexed.zip",
+    "source_rows": 1019,
+    "result_rows": 1019,
+    "selection": "candidate rows only; territorial/party totals retained for reconciliation, not duplicate result rows"
+  }
+]
