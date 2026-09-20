@@ -1,6 +1,6 @@
 # Prompt X — mapping and CI checklist
 
-Pinned main `e64afc324e34ae07f0760f49870ece64eb2ee645`. Research extraction/document checks are completed work; production/importer tests are **Not run**. Justin accepted all 106 current + 240 historical draft offices on 2026-09-19. **Importer / SQLite / VPS / UI applied_changes=0.** Standing scope policy is preserved.
+Pinned main `e64afc324e34ae07f0760f49870ece64eb2ee645`. Research extraction/document checks are completed work. Justin accepted all 106 current + 240 historical draft offices on 2026-09-19. The follow-up importer is `ATLAS_IMPORT_SCOPE=denmark` — see [Denmark_Import.md](Denmark_Import.md). Standing scope policy is preserved.
 
 | Requirement | Status | Pointer / gate |
 | --- | --- | --- |
@@ -22,17 +22,17 @@ Pinned main `e64afc324e34ae07f0760f49870ece64eb2ee645`. Research extraction/docu
 | 98 older candidate-name bindings | **Open research** | unresolved-candidate-bindings.json |
 | EP seats / candidate histories | **Open research** | Report; year-precision events retained |
 | Justin register/tier acceptance | **Accepted 2026-09-19** | 106 current + 240 historical; focused-tier reviews and named gates stay open |
-| Unchanged import/newattempt/sameR | **Not run** | Acceptance 16 |
+| Unchanged import/newattempt/sameR | **Importer landed** | `ATLAS_IMPORT_SCOPE=denmark`; sameR + new attempt UUID |
 | Correction/newR and incomplete refresh retention | **Not run** | Acceptance 17, 19 |
 | Poison rollback and durable attempt logging | **Not run** | Acceptance 18 |
-| Broken resolved FK fails; intentional unresolved explicit | **Not run** | Acceptance 14–15 |
-| Fixture rejection and namespace collision tests | **Not run** | Acceptance 20; Identity Rules |
-| Missing/zero, partial date, weighted/unit semantics | **Not run** | Acceptance 8 |
-| Tier-driven calendar including honest zero subset | **Not run** | Field Map classification table |
-| Other publication members/citations unchanged | **Not run** | Identity Rules publication protocol |
-| SQLite foreign keys/integrity/import | **Not run** | No SQLite execution |
-| Same-FS/WAL/fsync/rename/crash recovery | **Not run** | Identity Rules publication protocol |
-| VPS/UI/redirects | **Not run** | Out of scope |
+| Broken resolved FK fails; intentional unresolved explicit | **Importer landed** | 105 unresolved (98 bindings + 7 research gaps); resolved source FKs fail closed |
+| Fixture rejection and namespace collision tests | **Importer landed** | Acceptance 20; Identity Rules |
+| Missing/zero, partial date, weighted/unit semantics | **Importer landed** | Acceptance 8; 3,793 explicit zeros / 11,704 missing seats |
+| Tier-driven calendar including honest zero subset | **Importer landed** | 20 regional offices; 102 statutory 2029-11-20 next dates; no prospective events |
+| Other publication members/citations unchanged | **Importer landed** | Serial Albania+Denmark proof |
+| SQLite foreign keys/integrity/import | **Importer landed** | Staging + fidelity asserts |
+| Same-FS/WAL/fsync/rename/crash recovery | Shared publish protocol | Field Map Publication protocol |
+| VPS/UI/redirects | Scoped VPS runbook | See Denmark_Import.md; no redirects |
 
 ## Justin decisions — 2026-09-19
 
@@ -42,6 +42,6 @@ Pinned main `e64afc324e34ae07f0760f49870ece64eb2ee645`. Research extraction/docu
 - [ ] Resolve Greenland/Faroe Realm coverage. **HOLD — do not invent Greenland/Faroe offices.**
 - [ ] Resolve 2007/earlier merger successor bindings. **HOLD — do not fabricate merger clearances.**
 - [ ] Resolve KMD/DST detail holes, 98 candidate bindings, and EP detail gaps. **HOLD — research notes stay open.**
-- [ ] Authorize a future importer separately. **Not authorized in this landing.**
+- [x] Authorize a future importer separately. Follow-up: `ATLAS_IMPORT_SCOPE=denmark`.
 
 No checkbox is implied checked by Done in a mapping row. No DDL, approved other-country pack, Mexico override or Belgium/Netherlands/Switzerland file is changed. No `/electiondatabase` redirects.

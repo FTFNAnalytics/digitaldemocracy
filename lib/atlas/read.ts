@@ -509,6 +509,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "denmark") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "20 regional offices (five operating regional councils + elected preparatory Østdanmark council + 14 historical county councils). 2029-11-20 next-date metadata is statutory, not a prospective event. Greenland/Faroe Realm gates, 2007/earlier merger successor bindings, KMD/DST holes, 98 candidate bindings, and EP detail stay open. No popular mayor rows.",
+      denominatorKnown: false,
+    };
+  }
   return {
     offices,
     count: offices.length,

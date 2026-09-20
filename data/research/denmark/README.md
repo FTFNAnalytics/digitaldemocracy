@@ -1,6 +1,6 @@
 # Denmark Prompt X research tables
 
-Sourced Prompt X full-register research for Denmark. 106 current + 240 historical office rows. Justin accepted the register on 2026-09-19. Drafted geographic tiers are retained, including 293 focused-review rows. This directory is **not** a country-package extract and is **not** loaded by `import:atlas`.
+Sourced Prompt X full-register research for Denmark. 106 current + 240 historical office rows. Justin accepted the register on 2026-09-19. Drafted geographic tiers are retained, including 293 focused-review rows. This directory is the Prompt X research pack loaded by `ATLAS_IMPORT_SCOPE=denmark`.
 
 Open research notes retained: Greenland/Faroe Realm coverage gates; 2007/earlier merger successor bindings; KMD/DST detail holes; 98 unresolved candidate bindings; EP detail gaps. No popular mayor rows (council-elected borgmester). Do not invent Greenland/Faroe offices or fabricate merger clearances.
 
