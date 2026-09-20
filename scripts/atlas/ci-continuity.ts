@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Belgium + Bosnia and Herzegovina + Bulgaria + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Belgium + Bosnia and Herzegovina + Bulgaria + Denmark + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -18,6 +18,7 @@ import { LINEAGE_ID as ARMENIA_LINEAGE } from "../../lib/atlas/armenia/identity"
 import { LINEAGE_ID as BELGIUM_LINEAGE } from "../../lib/atlas/belgium/identity";
 import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
 import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
+import { LINEAGE_ID as DENMARK_LINEAGE } from "../../lib/atlas/denmark/identity";
 
 function fail(message: string): never {
   console.error(`test:atlas-import failed: ${message}`);
@@ -136,6 +137,27 @@ function main() {
     if (result.bulgaria?.counts.selected_histories !== 1590) {
       fail(`Bulgaria events ${String(result.bulgaria?.counts.selected_histories)}`);
     }
+    if (result.denmark?.counts.offices !== 346) {
+      fail(`Denmark offices ${String(result.denmark?.counts.offices)}`);
+    }
+    if (result.denmark?.counts.current_offices !== 106) {
+      fail(`Denmark current ${String(result.denmark?.counts.current_offices)}`);
+    }
+    if (result.denmark?.counts.historical_offices !== 240) {
+      fail(`Denmark historical ${String(result.denmark?.counts.historical_offices)}`);
+    }
+    if (result.denmark?.counts.municipal_offices !== 324) {
+      fail(`Denmark municipal ${String(result.denmark?.counts.municipal_offices)}`);
+    }
+    if (result.denmark?.counts.regional_offices !== 20) {
+      fail(`Denmark regional ${String(result.denmark?.counts.regional_offices)}`);
+    }
+    if (result.denmark?.counts.result_rows !== 25391) {
+      fail(`Denmark results ${String(result.denmark?.counts.result_rows)}`);
+    }
+    if (result.denmark?.counts.prospective_events !== 0) {
+      fail(`Denmark prospective ${String(result.denmark?.counts.prospective_events)}`);
+    }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
     if (result.nz?.counts.events !== 7) fail(`NZ events ${String(result.nz?.counts.events)}`);
@@ -178,6 +200,33 @@ function main() {
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BULGARIA_LINEAGE]) !== 530) {
         fail("Bulgaria office rows");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [DENMARK_LINEAGE]) !== 346) {
+        fail("Denmark office rows");
+      }
+      if (
+        count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_status = 'historical'", [DENMARK_LINEAGE]) !==
+        240
+      ) {
+        fail("Denmark historical office rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'regional'",
+          [DENMARK_LINEAGE],
+        ) !== 20
+      ) {
+        fail("Denmark regional rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND (office_id LIKE '%-M' OR office_type LIKE '%mayor%' OR name LIKE '%Inatsisartut%' OR name LIKE '%Løgting%')",
+          [DENMARK_LINEAGE],
+        ) !== 0
+      ) {
+        fail("Denmark invented mayor or Realm offices");
       }
       if (
         count(
@@ -374,6 +423,7 @@ function main() {
         BELGIUM_LINEAGE,
         BOSNIA_LINEAGE,
         BULGARIA_LINEAGE,
+        DENMARK_LINEAGE,
         NZ_LINEAGE_ID,
         LATAM_LINEAGE_ID,
       ].sort();
@@ -385,7 +435,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 belgium=1234 bosnia=13 bulgaria=530 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 belgium=1234 bosnia=13 bulgaria=530 denmark=346 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

@@ -3,7 +3,7 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Belgium + Bosnia and Herzegovina +
- * Bulgaria + approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria + Denmark + approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -133,6 +133,27 @@ function main() {
       console.log(`bulgaria_sources=${result.bulgaria.counts.sources}`);
       console.log(`bulgaria_regional=${result.bulgaria.counts.regional_offices}`);
       console.log(`bulgaria_held_offices=${result.bulgaria.counts.held_offices}`);
+    }
+    if (result.denmark) {
+      console.log("lineage=country-package-denmark");
+      console.log(`denmark_attempt_id=${result.denmark.attemptId}`);
+      console.log(`denmark_release_id=${result.denmark.releaseId}`);
+      console.log(`denmark_fingerprint_sha256=${result.denmark.fingerprint}`);
+      console.log(`denmark_reused_release=${result.denmark.reusedRelease ? "yes" : "no"}`);
+      console.log(`denmark_offices=${result.denmark.counts.offices}`);
+      console.log(`denmark_current=${result.denmark.counts.current_offices}`);
+      console.log(`denmark_historical=${result.denmark.counts.historical_offices}`);
+      console.log(`denmark_municipal=${result.denmark.counts.municipal_offices}`);
+      console.log(`denmark_regional=${result.denmark.counts.regional_offices}`);
+      console.log(`denmark_national=${result.denmark.counts.national_offices}`);
+      console.log(`denmark_other=${result.denmark.counts.other_offices}`);
+      console.log(`denmark_selected_histories=${result.denmark.counts.selected_histories}`);
+      console.log(`denmark_prospective_events=${result.denmark.counts.prospective_events}`);
+      console.log(`denmark_result_rows=${result.denmark.counts.result_rows}`);
+      console.log(`denmark_sources=${result.denmark.counts.sources}`);
+      console.log(`denmark_unresolved=${result.denmark.counts.unresolved_evidence}`);
+      console.log(`denmark_approved=${result.denmark.counts.approved_classifications}`);
+      console.log(`denmark_needs_review=${result.denmark.counts.needs_review_classifications}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
