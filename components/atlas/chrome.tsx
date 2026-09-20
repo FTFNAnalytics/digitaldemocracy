@@ -35,12 +35,6 @@ export function AtlasHeader() {
           >
             Explorer
           </Link>
-          <Link
-            href="/electiondatabase"
-            className="text-sm font-semibold text-white/80 hover:text-accent"
-          >
-            Observatory
-          </Link>
           <Link href="/" className="obs-btn">
             Back to the Center
           </Link>
@@ -61,10 +55,6 @@ export function AtlasFooter() {
         <p>
           <Link href={atlasRoutes.explorer} className="font-semibold text-accent hover:text-accent-soft">
             Explorer
-          </Link>
-          {" · "}
-          <Link href="/electiondatabase" className="font-semibold text-accent hover:text-accent-soft">
-            Subnational Election Observatory
           </Link>
           {" · "}
           <Link href="/" className="font-semibold text-accent hover:text-accent-soft">
