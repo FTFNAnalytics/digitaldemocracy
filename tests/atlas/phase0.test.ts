@@ -48,6 +48,13 @@ function readJsonGz<T>(relative: string): T {
   return JSON.parse(gunzipSync(readFileSync(path.join(repoRoot, relative))).toString("utf8")) as T;
 }
 
+function countJsonlGzLines(relative: string): number {
+  return gunzipSync(readFileSync(path.join(repoRoot, relative)))
+    .toString("utf8")
+    .split("\n")
+    .filter((line) => line.trim().length > 0).length;
+}
+
 function sha256(relative: string): string {
   return createHash("sha256")
     .update(readFileSync(path.join(repoRoot, relative)))
@@ -2021,6 +2028,171 @@ describe("Phase 0 tier-classification drafts", () => {
       human_review_required: true,
     });
     expect(czechia.classifications.find((row) => row.office_id === "CZ-M554782-C")).toMatchObject({
+      tier: "regional",
+      human_review_required: true,
+    });
+  });
+
+  it("keeps Croatia Prompt W 1234 current / 11 historical accepted with named holds", () => {
+    const croatia = readJson<
+      TierFile & {
+        production_accepted?: boolean;
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        justin_approval?: {
+          accepted?: boolean;
+          current_offices?: number;
+          historical_offices?: number;
+          events?: number;
+          results?: number;
+          executive_tickets?: number;
+          independently_elected_deputies?: number;
+          assemblies?: number;
+          scope?: string;
+          holds?: string[];
+        };
+        source_register: { path?: string; input_path?: string; sha256: string; bytes?: number };
+      }
+    >("schemas/atlas/tiers/croatia.json");
+    expect(croatia.status).toBe("approved");
+    expect(croatia.production_accepted).toBe(true);
+    expect(croatia.country_slug).toBe("croatia");
+    expect(croatia.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-20",
+      timezone: "America/Edmonton",
+    });
+    expect(croatia.approval?.notes).toMatch(/1234 current \+ 11 historical/i);
+    expect(croatia.approval?.notes).toMatch(/named holds/i);
+    expect(croatia.approval?.notes).toMatch(/CURRENT-ROSTER-VALIDITY/);
+    expect(croatia.approval?.notes).toMatch(/ZAGREB-DUAL/);
+    expect(croatia.approval?.notes).toMatch(/DEPUTY-ELIGIBILITY/);
+    expect(croatia.approval?.notes).toMatch(/TERRITORIAL-REFORMS/);
+    expect(croatia.approval?.notes).toMatch(/SPECIAL-AND-SUPPLEMENTARY/);
+    expect(croatia.approval?.notes).toMatch(/MISSING-BISKUPIJA-2017/);
+    expect(croatia.approval?.notes).toMatch(/TAR-VABRIGA-PLACEHOLDER/);
+    expect(croatia.approval?.notes).toMatch(/SEATS-AND-LEGAL-FINALITY/);
+    expect(croatia.approval?.notes).toMatch(/SABOR-MINORITY-BASIS/);
+    expect(croatia.approval?.notes).toMatch(/PARTY-IDENTITY/);
+    expect(croatia.approval?.notes).toMatch(/EP-DETAIL/);
+    expect(croatia.approval?.notes).toMatch(/DATES-NEXT-CYCLES/);
+    expect(croatia.approval?.notes).toMatch(/EXCLUDED-AUXILIARY/);
+    expect(croatia.predecessor_draft_sha256).toBe(
+      "e5528335fbf28ccec62187574e4928e087cd53f56fa03e47e67f8c8dad58a48d",
+    );
+    expect(sha256("schemas/atlas/tiers/croatia.json")).toBe(
+      "2f5c00d677e1756ac3dd553295df5ef84b547bfe0927c1f3c1aa249c433b430a",
+    );
+    expect(croatia.classifications).toHaveLength(1245);
+    expect(croatia.counts_by_proposed_tier).toEqual({
+      national: 2,
+      regional: 55,
+      municipal: 1187,
+      other: 1,
+    });
+    expect(croatia.justin_approval).toMatchObject({
+      accepted: true,
+      current_offices: 1234,
+      historical_offices: 11,
+      events: 3834,
+      results: 15907,
+      executive_tickets: 577,
+      independently_elected_deputies: 79,
+      assemblies: 576,
+      scope: "all_draft_offices_with_named_holds",
+      holds: [
+        "CURRENT-ROSTER-VALIDITY",
+        "ZAGREB-DUAL",
+        "DEPUTY-ELIGIBILITY",
+        "TERRITORIAL-REFORMS",
+        "SPECIAL-AND-SUPPLEMENTARY",
+        "MISSING-BISKUPIJA-2017",
+        "TAR-VABRIGA-PLACEHOLDER",
+        "SEATS-AND-LEGAL-FINALITY",
+        "SABOR-MINORITY-BASIS",
+        "PARTY-IDENTITY",
+        "EP-DETAIL",
+        "DATES-NEXT-CYCLES",
+        "EXCLUDED-AUXILIARY",
+      ],
+    });
+    expect(croatia.classifications.filter((row) => row.human_review_required === true)).toHaveLength(93);
+    expect(croatia.classifications.filter((row) => row.tier === "municipal")).toHaveLength(1187);
+    expect(croatia.classifications.filter((row) => row.tier === "regional")).toHaveLength(55);
+    expect(croatia.classifications.filter((row) => row.tier === "national")).toHaveLength(2);
+    expect(croatia.classifications.filter((row) => row.tier === "other")).toHaveLength(1);
+    const register = readJson<Array<{ office_id: string; office_status?: string; office_type?: string }>>(
+      "data/research/croatia/office-register.json",
+    );
+    expect(register.filter((row) => row.office_status === "current")).toHaveLength(1234);
+    expect(register.filter((row) => row.office_status === "historical")).toHaveLength(11);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "direct_executive"),
+    ).toHaveLength(577);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "direct_deputy"),
+    ).toHaveLength(79);
+    expect(register.filter((row) => row.office_status === "current" && row.office_type === "council")).toHaveLength(
+      576,
+    );
+    expect(register.filter((row) => row.office_status === "historical" && row.office_type === "direct_deputy")).toHaveLength(
+      11,
+    );
+    expect(readJsonGz<unknown[]>("data/research/croatia/events.json.gz")).toHaveLength(3834);
+    expect(countJsonlGzLines("data/research/croatia/results.jsonl.gz")).toBe(15907);
+    expect(readJson<unknown[]>("data/research/croatia/proceedings.json")).toHaveLength(2418);
+    expect(existsSync(path.join(repoRoot, "data/research/croatia/events.json"))).toBe(false);
+    expect(existsSync(path.join(repoRoot, "data/research/croatia/sources"))).toBe(false);
+    const gaps = readJson<Array<{ original_token?: string; status?: string }>>(
+      "data/research/croatia/research-gaps.json",
+    );
+    expect(gaps.map((row) => row.original_token)).toEqual([
+      "CURRENT-ROSTER-VALIDITY",
+      "ZAGREB-DUAL",
+      "DEPUTY-ELIGIBILITY",
+      "TERRITORIAL-REFORMS",
+      "SPECIAL-AND-SUPPLEMENTARY",
+      "MISSING-BISKUPIJA-2017",
+      "TAR-VABRIGA-PLACEHOLDER",
+      "SEATS-AND-LEGAL-FINALITY",
+      "SABOR-MINORITY-BASIS",
+      "PARTY-IDENTITY",
+      "EP-DETAIL",
+      "DATES-NEXT-CYCLES",
+      "EXCLUDED-AUXILIARY",
+    ]);
+    expect(gaps.every((row) => row.status === "open")).toBe(true);
+    expectExactIds(
+      croatia,
+      register.map((row) => row.office_id),
+    );
+    expect(croatia.source_register.sha256).toBe(
+      "5c512cdedf3aa5c891c81929d090b45c3a4fa97298f4c1fdf90a9ef9081c7e36",
+    );
+    expect(croatia.source_register.sha256).toBe(sha256("data/research/croatia/office-register.json"));
+    expect(croatia.source_register.input_path).toBe("data/research/croatia/office-register.json");
+    expect(croatia.classifications.find((row) => row.office_id === "HR-PRESIDENT")).toMatchObject({
+      tier: "national",
+    });
+    expect(croatia.classifications.find((row) => row.office_id === "HR-SABOR")).toMatchObject({
+      tier: "national",
+    });
+    expect(croatia.classifications.find((row) => row.office_id === "HR-EP")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+    expect(croatia.classifications.find((row) => row.office_id === "HR-Z21-C")).toMatchObject({
+      tier: "regional",
+      human_review_required: true,
+    });
+    expect(croatia.classifications.find((row) => row.office_id === "HR-Z21-E")).toMatchObject({
       tier: "regional",
       human_review_required: true,
     });
