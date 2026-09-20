@@ -1101,6 +1101,160 @@ describe("Phase 0 tier-classification drafts", () => {
     expect(denmark.schema_compatibility).toMatchObject({ national: "national_context" });
   });
 
+  it("keeps Sweden Prompt Y 313 current / 7 historical accepted with named holds", () => {
+    const sweden = readJson<
+      TierFile & {
+        production_accepted?: boolean;
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        counts_by_approval?: Record<string, number>;
+        importer_policy?: {
+          load?: string;
+          authorized_in_this_landing?: boolean;
+          approved_count?: number;
+          held_count?: number;
+          named_holds?: string[];
+        };
+        justin_approval?: {
+          accepted?: boolean;
+          current_offices?: number;
+          historical_offices?: number;
+          scope?: string;
+          holds?: string[];
+        };
+        notes?: Array<{ office_id?: string; reviews?: string[] }>;
+        source_register: { path: string; sha256: string; bytes?: number };
+      }
+    >("schemas/atlas/tiers/sweden.json");
+    expect(sweden.status).toBe("approved");
+    expect(sweden.production_accepted).toBe(true);
+    expect(sweden.country_slug).toBe("sweden");
+    expect(sweden.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-19",
+      timezone: "America/Edmonton",
+    });
+    expect(sweden.approval?.notes).toMatch(/313 current \+ 7 historical/i);
+    expect(sweden.approval?.notes).toMatch(/named holds/i);
+    expect(sweden.approval?.notes).toMatch(/SE-GOTLAND-TIER/);
+    expect(sweden.approval?.notes).toMatch(/SE-EP-SAM-TIER/);
+    expect(sweden.approval?.notes).toMatch(/SE-2026-COUNT-IN-PROGRESS/);
+    expect(sweden.approval?.notes).toMatch(/SE-HISTORICAL-BOUNDARIES/);
+    expect(sweden.approval?.notes).toMatch(/SE-HISTORIC-PARTY-DETAIL/);
+    expect(sweden.approval?.notes).toMatch(/SE-REPEAT-AND-RECOUNT/);
+    expect(sweden.approval?.notes).toMatch(/SE-FARGELANDA-1973/);
+    expect(sweden.approval?.notes).toMatch(/No popular mayor\/executive/i);
+    expect(sweden.predecessor_draft_sha256).toBe(
+      "ba95b2671f56b45077e9a4987e54d59438793cdfe053d8486de04dc54c0f2139",
+    );
+    expect(sha256("schemas/atlas/tiers/sweden.json")).toBe(
+      "dc13885023d2d454dae39272a5fe668e384e7606d4f2f89a3df136e9f0170ef7",
+    );
+    expect(sweden.classifications).toHaveLength(320);
+    expect(sweden.counts_by_proposed_tier).toEqual({
+      national: 1,
+      regional: 25,
+      municipal: 292,
+      council: 0,
+      other: 2,
+      unknown: 0,
+    });
+    expect(sweden.counts_by_approval).toEqual({
+      production_approved_current: 313,
+      production_approved_historical: 7,
+      production_approved_total: 320,
+      municipal: 292,
+      regional: 25,
+      national: 1,
+      other: 2,
+      held: 0,
+      focused_tier_reviews_retained: 10,
+      named_holds: 7,
+    });
+    expect(sweden.importer_policy).toMatchObject({
+      load: "not_implemented",
+      authorized_in_this_landing: false,
+      approved_count: 320,
+      held_count: 0,
+    });
+    expect(sweden.justin_approval).toMatchObject({
+      accepted: true,
+      current_offices: 313,
+      historical_offices: 7,
+      scope: "all_draft_offices_with_named_holds",
+      holds: [
+        "SE-GOTLAND-TIER",
+        "SE-EP-SAM-TIER",
+        "SE-2026-COUNT-IN-PROGRESS",
+        "SE-HISTORICAL-BOUNDARIES",
+        "SE-HISTORIC-PARTY-DETAIL",
+        "SE-REPEAT-AND-RECOUNT",
+        "SE-FARGELANDA-1973",
+      ],
+    });
+    expect(sweden.classifications.filter((row) => row.human_review_required === true)).toHaveLength(10);
+    expect(sweden.classifications.filter((row) => row.tier === "municipal")).toHaveLength(292);
+    expect(sweden.classifications.filter((row) => row.tier === "regional")).toHaveLength(25);
+    expect(sweden.classifications.filter((row) => row.tier === "national")).toHaveLength(1);
+    expect(sweden.classifications.filter((row) => row.tier === "other")).toHaveLength(2);
+    const register = readJson<Array<{ office_id: string; office_status?: string; office_type?: string }>>(
+      "data/research/sweden/office-register.json",
+    );
+    expect(register.filter((row) => row.office_status === "current")).toHaveLength(313);
+    expect(register.filter((row) => row.office_status === "historical")).toHaveLength(7);
+    expect(register.some((row) => /kommunalråd|prime.?minister|cabinet|mayor/i.test(String(row.office_type ?? "")))).toBe(
+      false,
+    );
+    expect(readJson<unknown[]>("data/research/sweden/events.json")).toHaveLength(4951);
+    expect(readJson<unknown[]>("data/research/sweden/results.json")).toHaveLength(40991);
+    const gaps = readJson<Array<{ original_token?: string; status?: string }>>(
+      "data/research/sweden/research-gaps.json",
+    );
+    expect(gaps.map((row) => row.original_token)).toEqual([
+      "SE-HISTORICAL-BOUNDARIES",
+      "SE-HISTORIC-PARTY-DETAIL",
+      "SE-REPEAT-AND-RECOUNT",
+      "SE-2026-COUNT-IN-PROGRESS",
+      "SE-GOTLAND-TIER",
+      "SE-EP-SAM-TIER",
+      "SE-FARGELANDA-1973",
+    ]);
+    expect(gaps.every((row) => row.status === "open")).toBe(true);
+    expectExactIds(
+      sweden,
+      register.map((row) => row.office_id),
+    );
+    expect(sweden.source_register.sha256).toBe(
+      "6a787b86920238eb78f4f9e8dd170b58785e5ed10f182442fd08015f4bfb5ae9",
+    );
+    expect(sweden.source_register.sha256).toBe(sha256("data/research/sweden/office-register.json"));
+    expect(sweden.source_register.path).toBe("data/research/sweden/office-register.json");
+    expect(sweden.notes?.find((note) => note.office_id === "SE-K0980-C")?.reviews?.[0]).toMatch(/Gotlands kommun/i);
+    expect(sweden.notes?.find((note) => note.office_id === "SE-EP")?.reviews?.[0]).toMatch(/Supranational/i);
+    expect(sweden.notes?.find((note) => note.office_id === "SE-SAM")?.reviews?.[0]).toMatch(/Sami parliament/i);
+    expect(sweden.schema_compatibility).toMatchObject({ national: "national_context" });
+    const gotland = sweden.classifications.find((row) => row.office_id === "SE-K0980-C");
+    expect(gotland).toMatchObject({ tier: "municipal", human_review_required: true });
+    expect(sweden.classifications.find((row) => row.office_id === "SE-EP")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+    expect(sweden.classifications.find((row) => row.office_id === "SE-SAM")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+    expect(sweden.classifications.find((row) => row.office_id === "SE-RD")).toMatchObject({
+      tier: "national",
+    });
+  });
+
   it("keeps Finland Prompt Z 333 current / 170 historical accepted with named holds", () => {
     const finland = readJson<
       TierFile & {
