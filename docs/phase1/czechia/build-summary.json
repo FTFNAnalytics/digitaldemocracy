@@ -1,0 +1,88 @@
+{
+  "pin": "785bae49b4b3ac6bc2ef105f33cc826caa948caf",
+  "counts": {
+    "current_offices": 6411,
+    "historical_offices": 13,
+    "offices": 6424,
+    "geographies": 6421,
+    "events": 46236,
+    "historical_events": 39815,
+    "prospective_events": 6421,
+    "result_rows": 169614,
+    "proceedings": 934,
+    "source_files": 221,
+    "draft_tiers": {
+      "national": 3,
+      "regional": 14,
+      "municipal": 6257,
+      "other": 150,
+      "unknown": 0
+    },
+    "direct_executive_offices": 1,
+    "direct_local_executive_offices": 0,
+    "council_assembly_offices": 6420,
+    "focused_tier_flags": 155
+  },
+  "events_by_family": {
+    "ep": 5,
+    "kz": 65,
+    "kv": 45655,
+    "prez": 3,
+    "ps": 6,
+    "senat": 502
+  },
+  "historical_offices": [
+    [
+      "CZ-M095141-C",
+      "Zastupitelstvo městské části nebo městského obvodu — Milostovice"
+    ],
+    [
+      "CZ-M111872-C",
+      "Zastupitelstvo městské části nebo městského obvodu — Malé Hoštice"
+    ],
+    [
+      "CZ-M124630-C",
+      "Zastupitelstvo městské části nebo městského obvodu — Podvihov"
+    ],
+    [
+      "CZ-M159182-C",
+      "Zastupitelstvo městské části nebo městského obvodu — Suché Lazce"
+    ],
+    [
+      "CZ-M177199-C",
+      "Zastupitelstvo městské části nebo městského obvodu — Vávrovice"
+    ],
+    [
+      "CZ-M183601-C",
+      "Zastupitelstvo městské části nebo městského obvodu — Vlaštovičky"
+    ],
+    [
+      "CZ-M193232-C",
+      "Zastupitelstvo městské části nebo městského obvodu — Zlatníky"
+    ],
+    [
+      "CZ-M408913-C",
+      "Zastupitelstvo městské části nebo městského obvodu — Vratislavice n.Nisou"
+    ],
+    [
+      "CZ-M413917-C",
+      "Zastupitelstvo městské části nebo městského obvodu — Komárov"
+    ],
+    [
+      "CZ-M530255-C",
+      "Zastupitelstvo obce — Nemíž"
+    ],
+    [
+      "CZ-M533131-C",
+      "Zastupitelstvo obce — Zahořany"
+    ],
+    [
+      "CZ-M544311-C",
+      "Zastupitelstvo obce — Častolovice"
+    ],
+    [
+      "CZ-M574414-C",
+      "Zastupitelstvo obce — Domoradice"
+    ]
+  ]
+}

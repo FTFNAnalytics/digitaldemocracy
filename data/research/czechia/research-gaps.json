@@ -1,0 +1,228 @@
+[
+  {
+    "original_token": "MUNICIPAL-RECALCULATED-PERCENT",
+    "reason": "PROCHLSTR is described by ČSÚ as recalculated percentage. 6417 supplied values exceed 100. Every municipal source percentage is retained in source_recalculated_percent and raw.PROCHLSTR; Atlas vote-share projection remains NULL/unknown under an explicit semantic hold, not a numeric correction. Justin must review field meaning before approving a vote-share projection. No divide, clamp or alternate percentage is computed.",
+    "office_ids": [],
+    "status": "open",
+    "evidence": []
+  },
+  {
+    "original_token": "HISTORICAL-CODE-BINDING",
+    "reason": "Thirteen source-era council codes are absent from the 2026 election register. Keep historical identities and returns; this does not prove thirteen abolished institutions. Older borough-code changes may alias current councils; no merge/split/successor edges or cross-code aggregation without official evidence.",
+    "office_ids": [
+      "CZ-M095141-C",
+      "CZ-M111872-C",
+      "CZ-M124630-C",
+      "CZ-M159182-C",
+      "CZ-M177199-C",
+      "CZ-M183601-C",
+      "CZ-M193232-C",
+      "CZ-M408913-C",
+      "CZ-M413917-C",
+      "CZ-M530255-C",
+      "CZ-M533131-C",
+      "CZ-M544311-C",
+      "CZ-M574414-C"
+    ],
+    "status": "open",
+    "evidence": [
+      {
+        "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+        "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 2
+        }
+      },
+      {
+        "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+        "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 3
+        }
+      },
+      {
+        "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+        "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 4
+        }
+      },
+      {
+        "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+        "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 5
+        }
+      },
+      {
+        "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+        "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 6
+        }
+      },
+      {
+        "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+        "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 7
+        }
+      },
+      {
+        "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+        "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 8
+        }
+      },
+      {
+        "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+        "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 9
+        }
+      },
+      {
+        "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+        "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 10
+        }
+      },
+      {
+        "source_id": "czechia--source-6600874107e19be73a0cf5e9",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2006/KV2006_reg_20230224_csv.zip",
+        "sha256": "5c2f1ed985cbba5d6960957965f960a8d65a6fd0aa0f880b5844b44f45d930d5",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 399
+        }
+      },
+      {
+        "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+        "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 694
+        }
+      },
+      {
+        "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+        "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 1660
+        }
+      },
+      {
+        "source_id": "czechia--source-15271e359ea6e036f6b9c144",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2002/KV2002_reg_20230224_csv.zip",
+        "sha256": "ad78f8bc05f69698f1288a23c59495b5ec7884f13f5d985e726cc2263ac19fbb",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 4444
+        }
+      }
+    ]
+  },
+  {
+    "original_token": "PRAGUE-DUAL-STATUS",
+    "reason": "Prague city council has municipal and regional functions. Exactly one office CZ-M554782-C is proposed regional. Its 57 borough councils are separate other-tier proposals. No second city/region council or popular primátor office.",
+    "office_ids": [
+      "CZ-M554782-C"
+    ],
+    "status": "open",
+    "evidence": [
+      {
+        "source_id": "czechia--source-c4c8c4c9bafa8913d93e2d0f",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/kv2026/KV2026reg20260915_csv.zip",
+        "sha256": "cc1860670dfdcbc58a62492329510104e32a9abb3f5bc7238e0291948708e4b0",
+        "archive_entry": "csv_od/kvrzcoco.csv",
+        "locator": {
+          "csv_record": 2645
+        }
+      }
+    ]
+  },
+  {
+    "original_token": "MILITARY-CIVILIAN-TRANSITION",
+    "reason": "Civilian council identities explicitly in election registers are retained. Do not fabricate elected military-area councils or infer dates/successors for Brdy/Libavá/Hradiště/Boletice transitions.",
+    "office_ids": [],
+    "status": "open",
+    "evidence": []
+  },
+  {
+    "original_token": "CURRENT-ROSTER-VALIDITY",
+    "reason": "Current means the official 15 September 2026 election register: 6,254 municipality councils and 140 borough councils, including three with insufficient candidates. ČSÚ CISOB territorial export valid 20 September2026 contains6,258 units: exact6,254 council-code matches plus four territorial-only military areas (Libavá, Boletice, Hradiště, Březina) without elected council rows. No office fabricated for those four. Post-capture changes and historical legal bindings remain open; this is a CISOB cross-check, not a claimed RÚIAN certification.",
+    "office_ids": [],
+    "status": "open",
+    "evidence": []
+  },
+  {
+    "original_token": "EXECUTIVE-MODE",
+    "reason": "Only the sourced President is a direct executive office. No starosta, primátor, hejtman, cabinet or PM popular contest is authored. Any claimed jurisdiction-specific exception requires primary legal and election evidence.",
+    "office_ids": [],
+    "status": "open",
+    "evidence": []
+  },
+  {
+    "original_token": "HISTORIC-DEPTH",
+    "reason": "Municipal source archives 2002–2022 with following special calls; Senate 1996–January 2025; five regional cycles 2008–2024; six Chamber cycles 2006–2025; EP 2004–2024; Presidency 2013/2018/2023. Earlier regional 2000/2004 and Chamber 2002 pages retained but return extracts not acquired. Pre-2002 municipal and exhaustive pre-1993 context remain open.",
+    "office_ids": [],
+    "status": "open",
+    "evidence": []
+  },
+  {
+    "original_token": "LEGAL-OUTCOME-REPEAT-AUDIT",
+    "reason": "Official publication is not a blanket court/certification audit. Preserve not-held register flags; all other legal outcomes stay unknown. Nonordinary municipal dates are special with exact source reason retained; review repeated-voting classification separately. Senate special/repeated kind comes from official date catalogue.",
+    "office_ids": [],
+    "status": "open",
+    "evidence": []
+  },
+  {
+    "original_token": "EP-PARTY-SCOPE",
+    "reason": "EP delegation proposed other. Source election/list/party codes are context-specific; no global party/coalition mapping is accepted. National/regional elected-candidate detail remains in primary XML/archives; typed results use lists at one aggregation level.",
+    "office_ids": [
+      "CZ-EP"
+    ],
+    "status": "open",
+    "evidence": [
+      {
+        "source_id": "czechia--source-da700ce88e54f45f21e3ab4d",
+        "input_path": "data/research/czechia/sources/volby.gov.cz/opendata/ep2024/ep2024_opendata.htm",
+        "sha256": "e78410f3d72c49bd25a013f1479ddea4733f4356aa3d6704ce19e0cabc57b89f",
+        "archive_entry": null,
+        "locator": {
+          "section": "title"
+        }
+      }
+    ]
+  },
+  {
+    "original_token": "DATES-AND-NEXT-CYCLES",
+    "reason": "Municipal and Senate dates are first polling day from source identifiers; year-only national/regional/EP dates are intentionally partial projections. Do not use XML generation time as polling time or add day=1. Outside-window/unknown next cycles never remove offices. Exhaustive exact date enrichment remains open.",
+    "office_ids": [],
+    "status": "open",
+    "evidence": []
+  }
+]

@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { spawnSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
+import { gunzipSync } from "node:zlib";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { unpackArmeniaPayload } from "../../lib/observatory/adapters/armenia";
@@ -41,6 +42,10 @@ type TierFile = {
 
 function readJson<T>(relative: string): T {
   return JSON.parse(readFileSync(path.join(repoRoot, relative), "utf8")) as T;
+}
+
+function readJsonGz<T>(relative: string): T {
+  return JSON.parse(gunzipSync(readFileSync(path.join(repoRoot, relative))).toString("utf8")) as T;
 }
 
 function sha256(relative: string): string {
@@ -1862,6 +1867,161 @@ describe("Phase 0 tier-classification drafts", () => {
     });
     expect(poland.classifications.find((row) => row.office_id === "PL-146502-D")).toMatchObject({
       tier: "other",
+      human_review_required: true,
+    });
+  });
+
+  it("keeps Czechia Prompt V 6411 current / 13 historical accepted with named holds", () => {
+    const czechia = readJson<
+      TierFile & {
+        production_accepted?: boolean;
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        justin_approval?: {
+          accepted?: boolean;
+          current_offices?: number;
+          historical_offices?: number;
+          events?: number;
+          results?: number;
+          direct_executive_offices?: number;
+          direct_local_executive_offices?: number;
+          council_assembly_offices?: number;
+          scope?: string;
+          holds?: string[];
+        };
+        source_register: { path?: string; input_path?: string; sha256: string; bytes?: number };
+      }
+    >("schemas/atlas/tiers/czechia.json");
+    expect(czechia.status).toBe("approved");
+    expect(czechia.production_accepted).toBe(true);
+    expect(czechia.country_slug).toBe("czechia");
+    expect(czechia.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-20",
+      timezone: "America/Edmonton",
+    });
+    expect(czechia.approval?.notes).toMatch(/6411 current \+ 13 historical/i);
+    expect(czechia.approval?.notes).toMatch(/named holds/i);
+    expect(czechia.approval?.notes).toMatch(/MUNICIPAL-RECALCULATED-PERCENT/);
+    expect(czechia.approval?.notes).toMatch(/HISTORICAL-CODE-BINDING/);
+    expect(czechia.approval?.notes).toMatch(/PRAGUE-DUAL-STATUS/);
+    expect(czechia.approval?.notes).toMatch(/MILITARY-CIVILIAN-TRANSITION/);
+    expect(czechia.approval?.notes).toMatch(/CURRENT-ROSTER-VALIDITY/);
+    expect(czechia.approval?.notes).toMatch(/EXECUTIVE-MODE/);
+    expect(czechia.approval?.notes).toMatch(/HISTORIC-DEPTH/);
+    expect(czechia.approval?.notes).toMatch(/LEGAL-OUTCOME-REPEAT-AUDIT/);
+    expect(czechia.approval?.notes).toMatch(/EP-PARTY-SCOPE/);
+    expect(czechia.approval?.notes).toMatch(/DATES-AND-NEXT-CYCLES/);
+    expect(czechia.predecessor_draft_sha256).toBe(
+      "465c61ab0836ec18fd03c1e6af922e9918a184be00237fd238f0107386235244",
+    );
+    expect(sha256("schemas/atlas/tiers/czechia.json")).toBe(
+      "6b7c856cf164a0d04fc58048783593591855e40c626b0a0ee767d666910bd66a",
+    );
+    expect(czechia.classifications).toHaveLength(6424);
+    expect(czechia.counts_by_proposed_tier).toEqual({
+      national: 3,
+      regional: 14,
+      municipal: 6257,
+      other: 150,
+      unknown: 0,
+    });
+    expect(czechia.justin_approval).toMatchObject({
+      accepted: true,
+      current_offices: 6411,
+      historical_offices: 13,
+      events: 46236,
+      results: 169614,
+      direct_executive_offices: 1,
+      direct_local_executive_offices: 0,
+      council_assembly_offices: 6420,
+      scope: "all_draft_offices_with_named_holds",
+      holds: [
+        "MUNICIPAL-RECALCULATED-PERCENT",
+        "HISTORICAL-CODE-BINDING",
+        "PRAGUE-DUAL-STATUS",
+        "MILITARY-CIVILIAN-TRANSITION",
+        "CURRENT-ROSTER-VALIDITY",
+        "EXECUTIVE-MODE",
+        "HISTORIC-DEPTH",
+        "LEGAL-OUTCOME-REPEAT-AUDIT",
+        "EP-PARTY-SCOPE",
+        "DATES-AND-NEXT-CYCLES",
+      ],
+    });
+    expect(czechia.classifications.filter((row) => row.human_review_required === true)).toHaveLength(155);
+    expect(czechia.classifications.filter((row) => row.tier === "municipal")).toHaveLength(6257);
+    expect(czechia.classifications.filter((row) => row.tier === "regional")).toHaveLength(14);
+    expect(czechia.classifications.filter((row) => row.tier === "national")).toHaveLength(3);
+    expect(czechia.classifications.filter((row) => row.tier === "other")).toHaveLength(150);
+    const register = readJson<Array<{ office_id: string; office_status?: string; office_type?: string; name?: string }>>(
+      "data/research/czechia/office-register.json",
+    );
+    expect(register.filter((row) => row.office_status === "current")).toHaveLength(6411);
+    expect(register.filter((row) => row.office_status === "historical")).toHaveLength(13);
+    expect(register.filter((row) => row.office_type === "direct_national_executive")).toEqual([
+      expect.objectContaining({ office_id: "CZ-PRESIDENT", name: "Prezident republiky", office_status: "current" }),
+    ]);
+    expect(register.filter((row) => row.office_type === "direct_municipal_executive")).toHaveLength(0);
+    expect(register.filter((row) => row.office_type === "municipal_council")).toHaveLength(6257);
+    expect(register.filter((row) => row.office_type === "capital_regional_municipal_assembly")).toEqual([
+      expect.objectContaining({ office_id: "CZ-M554782-C", office_status: "current" }),
+    ]);
+    expect(readJsonGz<unknown[]>("data/research/czechia/events.json.gz")).toHaveLength(46236);
+    expect(readJson<unknown[]>("data/research/czechia/proceedings.json")).toHaveLength(934);
+    expect(existsSync(path.join(repoRoot, "data/research/czechia/events.json"))).toBe(false);
+    expect(existsSync(path.join(repoRoot, "data/research/czechia/results.jsonl.gz"))).toBe(false);
+    expect(existsSync(path.join(repoRoot, "docs/phase1/czechia/Czechia_Identity_Vectors.json"))).toBe(false);
+    expect(existsSync(path.join(repoRoot, "docs/phase1/czechia/Czechia_Result_Identity_Vectors.jsonl.gz"))).toBe(
+      false,
+    );
+    const gaps = readJson<Array<{ original_token?: string; status?: string }>>(
+      "data/research/czechia/research-gaps.json",
+    );
+    expect(gaps.map((row) => row.original_token)).toEqual([
+      "MUNICIPAL-RECALCULATED-PERCENT",
+      "HISTORICAL-CODE-BINDING",
+      "PRAGUE-DUAL-STATUS",
+      "MILITARY-CIVILIAN-TRANSITION",
+      "CURRENT-ROSTER-VALIDITY",
+      "EXECUTIVE-MODE",
+      "HISTORIC-DEPTH",
+      "LEGAL-OUTCOME-REPEAT-AUDIT",
+      "EP-PARTY-SCOPE",
+      "DATES-AND-NEXT-CYCLES",
+    ]);
+    expect(gaps.every((row) => row.status === "open")).toBe(true);
+    expectExactIds(
+      czechia,
+      register.map((row) => row.office_id),
+    );
+    expect(czechia.source_register.sha256).toBe(
+      "e3e2e478bd744f7d45f13434121362b6b877928b9251a66cf1f03558a9965e69",
+    );
+    expect(czechia.source_register.sha256).toBe(sha256("data/research/czechia/office-register.json"));
+    expect(czechia.source_register.input_path).toBe("data/research/czechia/office-register.json");
+    expect(czechia.classifications.find((row) => row.office_id === "CZ-PRESIDENT")).toMatchObject({
+      tier: "national",
+    });
+    expect(czechia.classifications.find((row) => row.office_id === "CZ-PS")).toMatchObject({
+      tier: "national",
+    });
+    expect(czechia.classifications.find((row) => row.office_id === "CZ-SENAT")).toMatchObject({
+      tier: "national",
+    });
+    expect(czechia.classifications.find((row) => row.office_id === "CZ-EP")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+    expect(czechia.classifications.find((row) => row.office_id === "CZ-M554782-C")).toMatchObject({
+      tier: "regional",
       human_review_required: true,
     });
   });
