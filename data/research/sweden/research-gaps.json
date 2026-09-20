@@ -1,0 +1,142 @@
+[
+  {
+    "original_token": "SE-HISTORICAL-BOUNDARIES",
+    "reason": "The register preserves all council identities evidenced in the SCB 1973–2022 series, including Bara, pre-1976 Svedala and five former landsting. Pre-1973 abolished councils are not exhaustively inventoried. Source labels/codes are harmonized across county transfers; exact legal succession beyond explicit Bara/Svedala note remains a research gate.",
+    "office_ids": [],
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/data-ME0104T1.json",
+        "sha256": "385ff3a86f6dcc60afbfb8223d0404b36b8e45fba7daea2019cb3979d907232b",
+        "json_pointer": "/dimension/Region/note",
+        "locator": null
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "SE-HISTORIC-PARTY-DETAIL",
+    "reason": "SCB ÖVRIGA combines local parties and some older named parties; detailed full-party and candidate slates are not complete. Numeric modern labels are source labels, not an asserted historic renaming timeline.",
+    "office_ids": [],
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/data-ME0104T1.json",
+        "sha256": "385ff3a86f6dcc60afbfb8223d0404b36b8e45fba7daea2019cb3979d907232b",
+        "json_pointer": "/dimension/Partimm/note",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/sweden/sources/data-ME0104T1.json",
+        "sha256": "385ff3a86f6dcc60afbfb8223d0404b36b8e45fba7daea2019cb3979d907232b",
+        "json_pointer": "/dimension/Partimm/category/note",
+        "locator": null
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "SE-REPEAT-AND-RECOUNT",
+    "reason": "SCB footnotes replace some original ordinary returns with repeat outcomes or mixed partial-repeat totals. Original annulled vectors and separate protocols need recovery; Båstad 2015 has an event anchor but no typed vector.",
+    "office_ids": [
+      "SE-K1278-C",
+      "SE-K1880-C",
+      "SE-K2080-C",
+      "SE-R14-C"
+    ],
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/data-ME0104T1.json",
+        "sha256": "385ff3a86f6dcc60afbfb8223d0404b36b8e45fba7daea2019cb3979d907232b",
+        "json_pointer": "/dimension/Tid/category/note",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/sweden/sources/data-ME0104T2.json",
+        "sha256": "b1ba9e1279e58211bda7b218846acbbdf71ea472e6922c5a23f8535cdf71f9e6",
+        "json_pointer": "/dimension/Tid/category/note",
+        "locator": null
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "SE-2026-COUNT-IN-PROGRESS",
+    "reason": "2026 source availability is a capture, not a claim that every local count is final. Missing endpoints and incomplete district counts require refresh; retain offices and event anchors regardless. Compare updates by stable identity and original claims.",
+    "office_ids": [],
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/raw-2026.html",
+        "sha256": "9b81b339e2e7e6e9eee9998bc2cd3a23e237d772128cd147353994f50e0afe1d",
+        "json_pointer": null,
+        "locator": "Vi publicerar vartefter uppgifterna blir tillgängliga"
+      },
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valdatum",
+        "locator": null
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "SE-GOTLAND-TIER",
+    "reason": "Gotland is one municipal electoral body with regional responsibilities. Proposed municipal with focused review; no extra regional office or duplicate contest.",
+    "office_ids": [
+      "SE-K0980-C"
+    ],
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/kommunallag.html",
+        "sha256": "d4b407cd4f07e023b4040cc0960eff7318fbad9c1342cacb1d75a2b0e253c2a3",
+        "json_pointer": null,
+        "locator": "3 kap. 14 §"
+      },
+      {
+        "input_path": "data/research/sweden/sources/raw-2026.html",
+        "sha256": "9b81b339e2e7e6e9eee9998bc2cd3a23e237d772128cd147353994f50e0afe1d",
+        "json_pointer": null,
+        "locator": "Gotland inte har något val till regionfullmäktige"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "SE-EP-SAM-TIER",
+    "reason": "EP delegation and elected Sameting assembly are evidenced directly elected bodies; proposed other requires Justin tier acceptance. Church elections and private associations are outside the governmental political-body scope.",
+    "office_ids": [
+      "SE-EP",
+      "SE-SAM"
+    ],
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/general.html",
+        "sha256": "acfc7d3b061144c036b8a65dff6d6e44a99c4aada1a5a0c769d2a9a2c8b68439",
+        "json_pointer": null,
+        "locator": "Allmänna val"
+      },
+      {
+        "input_path": "data/research/sweden/sources/sami-mode.html",
+        "sha256": "18c55763720dfa8e64b679bddc6db64cb084c9948b98805d4c01a7ae919534b8",
+        "json_pointer": null,
+        "locator": "Om sametingsval"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "original_token": "SE-FARGELANDA-1973",
+    "reason": "SCB seats are a hypothetical double-election-adjusted presentation for Färgelanda 1973; do not call those seat scalars actual installed seats. Withhold typed seats, retain source values/claim.",
+    "office_ids": [
+      "SE-K1439-C"
+    ],
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/data-Kfmandat.json",
+        "sha256": "150c80c9f43925776830654eb0af7db937819f47bf9b12626095394b35a263ab",
+        "json_pointer": "/dimension/Tid/category/note/1973",
+        "locator": null
+      }
+    ],
+    "status": "open"
+  }
+]

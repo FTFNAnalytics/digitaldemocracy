@@ -31,5 +31,8 @@
     "**/*.mts",
     "lib/atlas/node-sqlite.d.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "docs/phase1/sweden/contract-snapshots"
+  ]
 }

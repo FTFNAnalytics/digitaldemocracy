@@ -1,0 +1,276 @@
+[
+  {
+    "title": "Out-of-window office retained",
+    "source": "data/research/sweden/office-register.json#/17",
+    "expected": {
+      "office_id": "SE-K0180-C",
+      "next_date": {
+        "value": "2030",
+        "precision": "year",
+        "certainty": "statutory",
+        "evidence": [
+          {
+            "input_path": "data/research/sweden/sources/years.html",
+            "sha256": "47e5fb640d70b8adee67179e78cfcdf98e547571b6ea40f800e00890f95640d1",
+            "json_pointer": null,
+            "locator": "Kommande valår, table row 2030"
+          }
+        ]
+      },
+      "office_status": "current"
+    },
+    "assertion": "2030 does not remove Stockholm from register or its histories; no prospective event added."
+  },
+  {
+    "title": "Gotland is one council",
+    "source": "data/research/sweden/office-register.json#/90",
+    "expected": {
+      "office_id": "SE-K0980-C",
+      "tier": "municipal",
+      "human_review_required": true,
+      "separate_RF_office_count": 0
+    },
+    "assertion": "Follow legal municipality/electoral body; combined responsibilities retained raw. Never double count RF/KF."
+  },
+  {
+    "title": "Historical abolished council retained",
+    "source": "data/research/sweden/office-register.json#/97",
+    "expected": {
+      "office_id": "SE-K1229-C",
+      "office_status": "historical",
+      "record_state": "active"
+    },
+    "assertion": "SCB Region/note/2 binds Bara merger; no exact dissolution day fabricated."
+  },
+  {
+    "title": "Pre-merger Svedala identity",
+    "source": "data/research/sweden/office-register.json#/107",
+    "expected": {
+      "office_id": "SE-K1263-PRE1976-C",
+      "current_successor": "SE-K1263-C"
+    },
+    "assertion": "SCB1263/1973 exception wins over generic code crosswalk; source explicitly names new municipality1976."
+  },
+  {
+    "title": "Source2018 means Falun repeat2019",
+    "source": "data/research/sweden/events.json#/3648",
+    "expected": {
+      "office_id": "SE-K2080-C",
+      "event_id": "event-a106bd1a4bb0d640ea2081b2",
+      "history_key": "SE-K2080-C::2018::2019-04-07::repeated",
+      "event_kind": "repeated",
+      "date": {
+        "value": "2019-04-07",
+        "precision": "day",
+        "certainty": "called",
+        "conflicting": false
+      },
+      "source_cycle_year": 2018
+    },
+    "assertion": "Read /dimension/Tid/category/note/2018; no second invented ordinary2018 vector."
+  },
+  {
+    "title": "Partial repeat is not an extra complete vector",
+    "source": "data/research/sweden/events.json#/3246",
+    "expected": {
+      "event_id": "event-824eee1260c05556aeb963ff",
+      "date": {
+        "value": "2010",
+        "precision": "year",
+        "certainty": "called",
+        "conflicting": false
+      },
+      "notes": [
+        "Kommunfullmäktigvalet i Örebro överklagades och omval utlystes i den nordöstra valkretsen. Omvalet genomfördes den 15 maj 2011. Här inkluderas resultaten från omvalet i Örebros nordöstra valkrets 2011. För resultat från det ordinarie valet 2010, se Allmänna valen 2010, del 3 (finns tillgänglig på www.scb.se).",
+        "Mixed cycle aggregate includes 2011 partial repeat; year is source cycle, not a single decisive polling day. Keep first/partial returns in source context; no second additive event vector."
+      ]
+    },
+    "assertion": "Örebro2010 includes2011partial repeat; keep source qualification and no additive duplicate."
+  },
+  {
+    "title": "Repeat anchor with missing results",
+    "source": "data/research/sweden/events.json#/1824",
+    "expected": {
+      "event_id": "event-24764c1f10122d43a67a8282",
+      "date": {
+        "value": "2015-05-10",
+        "precision": "day",
+        "certainty": "called",
+        "conflicting": false
+      },
+      "typed_result_rows": 0
+    },
+    "assertion": "Båstad repeat exists without a fabricated zero-vote result; ordinary2014 role remains other."
+  },
+  {
+    "title": "Reported zero seat is not missing",
+    "source": "data/research/sweden/results.json#/2",
+    "expected": {
+      "result_row_id": "result-61c0af9eaf31a241233ebc7d",
+      "votes": 73284,
+      "votes_status": "recorded",
+      "seats": 0,
+      "seats_status": "zero"
+    },
+    "assertion": "Exact source zero stays integer0/zero."
+  },
+  {
+    "title": "Unreported seats stay NULL",
+    "source": "data/research/sweden/results.json#/40958",
+    "expected": {
+      "result_row_id": "result-0a0fb98ee69be337c9b91063",
+      "seats": null,
+      "seats_status": "unknown",
+      "share": 2.62,
+      "share_status": "recorded"
+    },
+    "assertion": "Archive vote table lacks seats; do not infer from vote share."
+  },
+  {
+    "title": "Hypothetical seats retained as disputed evidence",
+    "source": "data/research/sweden/results.json#/18873",
+    "expected": {
+      "result_row_id": "result-16f393e8c3a19511285b6d41",
+      "seats": null,
+      "seats_status": "unknown",
+      "evidence_status": "disputed",
+      "raw": {
+        "identity_token": [
+          "SCB",
+          "K",
+          "ÖVRIGA"
+        ],
+        "vote_table": "ME0104T1",
+        "seat_table": "Kfmandat",
+        "source_region": "1439",
+        "source_year": "1973",
+        "source_party": "ÖVRIGA",
+        "scope_note": "SCB category labels may use modern party names. ÖVRIGA is a statistical group; do not interpret as a single party or sum overlapping seat-only historic party categories.",
+        "withheld_source_seats": 2,
+        "withhold_reason": "SCB hypothetical double-election-adjusted seat allocation, not actual installed mandate count."
+      }
+    },
+    "assertion": "SCB1973Färgelanda explanatory note prevents presenting adjusted allocation as installed seats."
+  },
+  {
+    "title": "Annulled Sami original survives",
+    "source": "data/research/sweden/events.json#/4949",
+    "expected": {
+      "event_id": "event-fc4e090f4d00b8bb6e98e09c",
+      "date": {
+        "value": "2025-05-18",
+        "precision": "day",
+        "certainty": "called",
+        "conflicting": false
+      },
+      "legal_outcome": "annulled",
+      "selected_history_role": "other"
+    },
+    "assertion": "Annulled May contest is other, never resurrected as selected history; October repeat separately retained."
+  },
+  {
+    "title": "Partial date remains year precision",
+    "source": "data/research/sweden/events.json#/6",
+    "expected": {
+      "event_id": "event-629178011a4dd64a81c79719",
+      "research_date": {
+        "label": "2024",
+        "precision": "year",
+        "certainty": "called",
+        "year": 2024,
+        "month": null,
+        "day": null
+      }
+    },
+    "assertion": "No January1 or guessed polling day. Next2029 metadata does not filter this history."
+  },
+  {
+    "title": "Incomplete live count is preliminary",
+    "source": "data/research/sweden/events.json#/22",
+    "expected": {
+      "event_id": "event-a2285d25847c481d4fc5fbfe",
+      "legal_outcome": "preliminary",
+      "selected_history_role": "none",
+      "reporting": {
+        "counted_districts": 29,
+        "expected_districts": 29,
+        "source_counting_stage": "preliminär",
+        "has_mandate_allocation": true
+      }
+    },
+    "assertion": "Endpoint counting stage alone does not establish completion. Result claims retain preliminary status."
+  },
+  {
+    "title": "Appointed/council-selected executive excluded",
+    "source": "data/research/sweden/sources/kommunallag.html — 3kap3–4§;4kap;6kap",
+    "expected": {
+      "popular_kommunalrad_offices": 0,
+      "popular_PM_cabinet_events": 0
+    },
+    "assertion": "No popular executive mandate invented from political prominence or a chair title."
+  },
+  {
+    "title": "Unresolved evidence differs from broken FK",
+    "source": "data/research/sweden/research-gaps.json#/0",
+    "expected": {
+      "unresolved_evidence": {
+        "original_token": "SE-HISTORICAL-BOUNDARIES",
+        "record_key": "rec-70de9f041a20a57305e8755889a1411a87108238a64b114dc2cae31b63c7e366"
+      },
+      "source_fk": null
+    },
+    "assertion": "A named unresolved research token stays explicit. Isolated CI mutation: delete an actually resolved S row referenced by evidence_link; future importer must fail/rollback, not downgrade to unresolved."
+  },
+  {
+    "title": "Unchanged re-import fingerprint",
+    "source": "Sweden_Input_Inventory.json#/hash_inputs",
+    "expected": {
+      "fingerprint_sha256": "75a2d2db6d1d889c9181d271d59d88d395048914590a50734cb77aed7c588a75",
+      "release_id": "country-package-sweden--sha256-75a2d2db6d1d889c9181d271d59d88d395048914590a50734cb77aed7c588a75",
+      "attempt_id": "fresh runtime UUID on each attempt"
+    },
+    "assertion": "Future CI only: two unchanged attempts same release; no random event/result IDs. No attempt authored by this pack."
+  },
+  {
+    "title": "Poison rollback preserves other lineages",
+    "source": "data/research/sweden/events.json#/0",
+    "expected": {
+      "mutation": "isolated CI copy replaces office_id with a nonexistent key",
+      "expected": "transaction rejected, last publication still served",
+      "applied_here": 0
+    },
+    "assertion": "No poisoned research file is distributed; future SQLite/publication execution Not run."
+  },
+  {
+    "title": "Incomplete refresh keeps omitted office",
+    "source": "data/research/sweden/office-register.json#/17",
+    "expected": {
+      "omitted_on_future_refresh": "SE-K0180-C",
+      "expected": "retain office, histories and source dependencies until explicit accepted withdrawal"
+    },
+    "assertion": "An incomplete source capture is not deletion evidence; effective fingerprint carries retained dependencies."
+  },
+  {
+    "title": "Fixture rejection",
+    "source": "data/research/sweden/sources/rd2026.json#/test",
+    "expected": {
+      "observed": false,
+      "isolated_test_mutation": true,
+      "expected": "reject fixture input before publication"
+    },
+    "assertion": "Fixture/name/test checks apply to all inputs. No fixture result loaded in this task."
+  },
+  {
+    "title": "Other lineage citations remain stable",
+    "source": "Sweden_Input_Inventory.json#/lineage_id",
+    "expected": {
+      "attempted_lineage": "country-package-sweden",
+      "unchanged_members": [
+        "latin-america-fe5e91689def",
+        "country-package-new-zealand",
+        "country-package-albania"
+      ]
+    },
+    "assertion": "Future Sweden-only import preserves other release IDs, rows and source FKs; cite each own publication member."
+  }
+]
