@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "package_integrity": "PASS",
+  "verified_counts": {
+    "current_offices": 333,
+    "historical_offices": 170,
+    "offices": 503,
+    "geographies": 501,
+    "events": 5241,
+    "result_rows": 37471,
+    "proceedings": 11,
+    "sources": 67,
+    "tiers": {
+      "municipal": 478,
+      "regional": 22,
+      "national": 2,
+      "other": 1
+    },
+    "current_municipal_councils": 308,
+    "current_aland_municipal_councils": 16,
+    "current_wellbeing_county_councils": 21,
+    "focused_review_offices": 171
+  },
+  "research_coverage_complete": false,
+  "applied_changes": 0,
+  "importer_sqlite_vps_ui": "Not run",
+  "schema_version": "atlas-documentary-validation/1",
+  "pinned_main_commit": "a0c02d0a36ed95cfb593dd7b085b9567d3b171d3",
+  "research_capture": "2026-09-20",
+  "predecessor_draft_tier_sha256": "7c3a4c1c17538d5600a10c655e7fb18b12f977a1ef79c7608f9869d813df2797",
+  "accepted_tier_sha256": "15edd48df39caae6cfefec9b20b0a20a7bafcfe7e919accbb46d056924083d53",
+  "tier_sha256": "15edd48df39caae6cfefec9b20b0a20a7bafcfe7e919accbb46d056924083d53",
+  "office_register_sha256": "150ede883757d5945c3bdd1fab027c9d084a1d24fb539add2c8c4f916268fed7",
+  "landed_results_json_sha256": "b0ae52a59cf194bf33efe27d43fce2ff5497ec56b0f1a7c91fc637fee4b59097",
+  "original_full_zip_sha256": "ffea607223a5da64a148b2c9ff4ae23c391a84bde6107a30ab73166a59dee3d9",
+  "approval": "Justin accepted 2026-09-19 with named holds; production_accepted=true",
+  "justin_approval": {
+    "date": "2026-09-19",
+    "timezone": "America/Edmonton",
+    "accepted_by": "Justin",
+    "current_offices": 333,
+    "historical_offices": 170,
+    "offices": 503,
+    "scope": "all_draft_offices_with_named_holds",
+    "holds": [
+      "FI-HISTORIC-MERGERS",
+      "FI-ALAND-EARLY-AND-DATES",
+      "FI-WELLBEING-TRANSITION",
+      "FI-EP-DETAIL",
+      "FI-CYCLE-LEGAL-DETAIL",
+      "FI-PARTY-CATEGORIES",
+      "FI-MISSING-RESULTS"
+    ],
+    "importer_loads": "not_implemented"
+  },
+  "tier_approval": "accepted_333_current_170_historical_with_named_holds",
+  "open_research_notes": [
+    "FI-HISTORIC-MERGERS",
+    "FI-ALAND-EARLY-AND-DATES",
+    "FI-WELLBEING-TRANSITION",
+    "FI-EP-DETAIL",
+    "FI-CYCLE-LEGAL-DETAIL",
+    "FI-PARTY-CATEGORIES",
+    "FI-MISSING-RESULTS"
+  ],
+  "landed_results_json_note": "Gunzipped from slim pack results.json.gz so the file matches other Atlas country packages (uncompressed results.json). Same 37471 rows. SHA-256 b0ae52a59cf194bf33efe27d43fce2ff5497ec56b0f1a7c91fc637fee4b59097.",
+  "notes": [
+    "PASS means documentary consistency from the Prompt Z pack validator and landed count checks, not complete historical research or production import.",
+    "Slim attach omitted bulky sources/; do not invent those bytes. Hashes remain in SHA256SUMS and sources.json.",
+    "Operational importer/SQLite/publication gates are Not run."
+  ]
+}
