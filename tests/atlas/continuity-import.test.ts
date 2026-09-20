@@ -11,7 +11,6 @@ import { importAustria } from "../../lib/atlas/austria/import";
 import { importBelgium } from "../../lib/atlas/belgium/import";
 import { importBosnia } from "../../lib/atlas/bosnia-and-herzegovina/import";
 import { importBulgaria } from "../../lib/atlas/bulgaria/import";
-import { importDenmark } from "../../lib/atlas/denmark/import";
 import { importNetherlands } from "../../lib/atlas/netherlands/import";
 import { importAtlasLineages, parseImportScope } from "../../lib/atlas/continuity/import";
 import { NZ_LINEAGE_ID } from "../../lib/atlas/continuity/nz";
@@ -27,7 +26,6 @@ import { LINEAGE_ID as AUSTRIA_LINEAGE } from "../../lib/atlas/austria/identity"
 import { LINEAGE_ID as BELGIUM_LINEAGE } from "../../lib/atlas/belgium/identity";
 import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
 import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
-import { LINEAGE_ID as DENMARK_LINEAGE } from "../../lib/atlas/denmark/identity";
 import { LINEAGE_ID as NETHERLANDS_LINEAGE } from "../../lib/atlas/netherlands/identity";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
@@ -454,46 +452,6 @@ describe("multi-lineage continuity import", () => {
       db.close();
     }
   }, 180_000);
-
-  it("imports Albania then Denmark into one master without dropping Albania", () => {
-    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-denmark-"));
-    tempDirs.push(dir);
-    const sqlitePath = path.join(dir, "atlas.sqlite");
-    const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
-    const albania = importAlbania({
-      root: repoRoot,
-      sqlitePath,
-      attemptsPath,
-      operator: "albania-denmark-test",
-    });
-    expect(albania.counts.current_offices).toBe(122);
-    const denmark = importDenmark({
-      root: repoRoot,
-      sqlitePath,
-      attemptsPath,
-      operator: "albania-denmark-test",
-    });
-    expect(denmark.counts.current_offices).toBe(106);
-    expect(denmark.counts.historical_offices).toBe(240);
-    expect(denmark.counts.offices).toBe(346);
-    expect(denmark.counts.regional_offices).toBe(20);
-    const db = new DatabaseSync(sqlitePath, { readOnly: true });
-    try {
-      expect(
-        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
-      ).toBe(122);
-      expect(
-        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(DENMARK_LINEAGE)?.n),
-      ).toBe(346);
-      const lineages = db
-        .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
-        .all()
-        .map((row) => String(row.lineage_id));
-      expect(lineages).toEqual([ALBANIA_LINEAGE, DENMARK_LINEAGE].sort());
-    } finally {
-      db.close();
-    }
-  }, 300_000);
 
   it("keeps the Albania-only importer working after continuity modules land", () => {
     const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-only-"));

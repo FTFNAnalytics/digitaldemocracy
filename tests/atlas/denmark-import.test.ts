@@ -18,6 +18,8 @@ import {
   TIER_PATH,
   TIER_SHA256,
 } from "../../lib/atlas/denmark/identity";
+import { importAlbania } from "../../lib/atlas/albania/import";
+import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
 import { importDenmark } from "../../lib/atlas/denmark/import";
 import { DenmarkPreflightError, scanDenmarkInventory } from "../../lib/atlas/denmark/inventory";
 import { listAtlasRegionalCalendar } from "../../lib/atlas/read";
@@ -147,6 +149,44 @@ describe("Denmark Atlas importer", () => {
     expect(second.reusedRelease).toBe(true);
     expect(second.releaseId).toBe(first.releaseId);
     expect(second.attemptId).not.toBe(first.attemptId);
+  }, 300_000);
+
+  it("imports Albania then Denmark into one master without dropping Albania", () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-denmark-"));
+    tempDirs.push(dir);
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+    const albania = importAlbania({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "albania-denmark-test",
+    });
+    expect(albania.counts.current_offices).toBe(122);
+    const denmark = importDenmark({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "albania-denmark-test",
+    });
+    expect(denmark.counts.current_offices).toBe(106);
+    expect(denmark.counts.historical_offices).toBe(240);
+    expect(denmark.counts.offices).toBe(346);
+    expect(denmark.counts.regional_offices).toBe(20);
+    const db = new DatabaseSync(sqlitePath, { readOnly: true });
+    try {
+      expect(
+        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
+      ).toBe(122);
+      expect(Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(LINEAGE_ID)?.n)).toBe(346);
+      const lineages = db
+        .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
+        .all()
+        .map((row) => String(row.lineage_id));
+      expect(lineages).toEqual([ALBANIA_LINEAGE, LINEAGE_ID].sort());
+    } finally {
+      db.close();
+    }
   }, 300_000);
 
   it("rejects OBSERVATORY_FIXTURES=1 and a draft-tier file", () => {
