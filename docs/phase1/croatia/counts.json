@@ -1,0 +1,62 @@
+{
+  "current_offices": 1234,
+  "historical_offices": 11,
+  "total_offices": 1245,
+  "geographies": 577,
+  "events": 3834,
+  "results": 15907,
+  "proceedings": 2418,
+  "sources": 4367,
+  "tiers": {
+    "other": 1,
+    "municipal": 1187,
+    "national": 2,
+    "regional": 55
+  },
+  "office_types": {
+    "european_parliament_delegation": 1,
+    "council": 576,
+    "direct_executive": 577,
+    "direct_deputy": 90,
+    "parliament": 1
+  },
+  "current_office_types": {
+    "european_parliament_delegation": 1,
+    "council": 576,
+    "direct_executive": 577,
+    "direct_deputy": 79,
+    "parliament": 1
+  },
+  "historic_office_types": {
+    "direct_deputy": 11
+  },
+  "events_by_family": {
+    "euparlament": 4,
+    "lokalni": 3689,
+    "predsjednik": 6,
+    "parlament": 135
+  },
+  "events_by_year": {
+    "2013": 1,
+    "2014": 2,
+    "2019": 2,
+    "2024": 19,
+    "2017": 1226,
+    "2021": 1232,
+    "2025": 1231,
+    "2000": 17,
+    "2005": 1,
+    "2009": 1,
+    "2003": 17,
+    "2007": 17,
+    "2011": 17,
+    "2015": 17,
+    "2016": 17,
+    "2020": 17
+  },
+  "missing_first_return_inputs": 1,
+  "held_placeholder_ballots": 1,
+  "vote_sum_mismatches": 7,
+  "results_missing_seats": 15907,
+  "zero_votes": 0
+}

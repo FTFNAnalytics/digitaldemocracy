@@ -1,0 +1,247 @@
+[
+  {
+    "original_token": "CURRENT-ROSTER-VALIDITY",
+    "reason": "Current means the captured DIP2025 ordinary ballot register, retrieved2026-09-20. It evidences555 non-Zagreb cities/municipalities plus Grad Zagreb,20 other counties and79 separately elected deputy offices:1,231 local/regional ballots, not territorial units. Post-register legal/eligibility changes remain a review gate.",
+    "office_ids": [],
+    "status": "open",
+    "evidence": []
+  },
+  {
+    "original_token": "ZAGREB-DUAL",
+    "reason": "HR-Z21-C/E is the single Grad Zagreb assembly/executive pair, proposed regional for its dual city/county jurisdiction. Source local1333 routes tocounty21 in DIP DAO; no extra HR-G1333 pair. HR-Z01 is the separate Zagrebačka županija. Tier policy awaits Justin.",
+    "office_ids": [
+      "HR-Z21-C",
+      "HR-Z21-E",
+      "HR-Z01-C",
+      "HR-Z01-E"
+    ],
+    "status": "open",
+    "evidence": [
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2025-dao.js",
+        "sha256": "b2f3314c938314c18f4e7041bd535f9b1771f03935c9487a5895a97feae9a5d8",
+        "locator": "JavaScript literal var vrsta[0] (zero-based; no execution)",
+        "source_id": "croatia--source-cf392e2d68b26bc96a51b95a"
+      },
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2025-dao.js",
+        "sha256": "b2f3314c938314c18f4e7041bd535f9b1771f03935c9487a5895a97feae9a5d8",
+        "locator": "JavaScript literal var vrsta[21] (zero-based; no execution)",
+        "source_id": "croatia--source-cf392e2d68b26bc96a51b95a"
+      },
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2025-dao.js",
+        "sha256": "b2f3314c938314c18f4e7041bd535f9b1771f03935c9487a5895a97feae9a5d8",
+        "locator": "JavaScript literal var vrsta[20] (zero-based; no execution)",
+        "source_id": "croatia--source-cf392e2d68b26bc96a51b95a"
+      },
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2025-dao.js",
+        "sha256": "b2f3314c938314c18f4e7041bd535f9b1771f03935c9487a5895a97feae9a5d8",
+        "locator": "JavaScript literal var vrsta[41] (zero-based; no execution)",
+        "source_id": "croatia--source-cf392e2d68b26bc96a51b95a"
+      }
+    ]
+  },
+  {
+    "original_token": "DEPUTY-ELIGIBILITY",
+    "reason": "Joint-ticket deputies remain raw.zamjenici or CSV fields35–38; no independent ballot invented. Independently elected minority/Croat deputies have separate identities by territory and electorate label. Eleven source-era deputy identities absent from2025 remain historical; absence is not a proven abolition date or successor.",
+    "office_ids": [
+      "HR-G1384-D-64f24d618ef7",
+      "HR-G1953-D-64f24d618ef7",
+      "HR-G3182-D-cce437608d66",
+      "HR-G3409-D-cce437608d66",
+      "HR-G4677-D-64f24d618ef7",
+      "HR-G4855-D-cce437608d66",
+      "HR-G5037-D-64f24d618ef7",
+      "HR-G5681-D-cce437608d66",
+      "HR-Z08-D-cce437608d66",
+      "HR-Z10-D-cce437608d66",
+      "HR-Z11-D-cce437608d66"
+    ],
+    "status": "open",
+    "evidence": [
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2021-dao.js",
+        "sha256": "b20db6a5acbad7307e2e44a737e55f1241a85a4137a9abf875d8ca0569a979c7",
+        "locator": "JavaScript literal var vrsta[2575] (zero-based; no execution)",
+        "source_id": "croatia--source-6203c253873748709c0af0ae"
+      },
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2021-dao.js",
+        "sha256": "b20db6a5acbad7307e2e44a737e55f1241a85a4137a9abf875d8ca0569a979c7",
+        "locator": "JavaScript literal var vrsta[2579] (zero-based; no execution)",
+        "source_id": "croatia--source-6203c253873748709c0af0ae"
+      },
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2021-dao.js",
+        "sha256": "b20db6a5acbad7307e2e44a737e55f1241a85a4137a9abf875d8ca0569a979c7",
+        "locator": "JavaScript literal var vrsta[2614] (zero-based; no execution)",
+        "source_id": "croatia--source-6203c253873748709c0af0ae"
+      },
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2021-dao.js",
+        "sha256": "b20db6a5acbad7307e2e44a737e55f1241a85a4137a9abf875d8ca0569a979c7",
+        "locator": "JavaScript literal var vrsta[2617] (zero-based; no execution)",
+        "source_id": "croatia--source-6203c253873748709c0af0ae"
+      },
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2021-dao.js",
+        "sha256": "b20db6a5acbad7307e2e44a737e55f1241a85a4137a9abf875d8ca0569a979c7",
+        "locator": "JavaScript literal var vrsta[2583] (zero-based; no execution)",
+        "source_id": "croatia--source-6203c253873748709c0af0ae"
+      },
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2021-dao.js",
+        "sha256": "b20db6a5acbad7307e2e44a737e55f1241a85a4137a9abf875d8ca0569a979c7",
+        "locator": "JavaScript literal var vrsta[2625] (zero-based; no execution)",
+        "source_id": "croatia--source-6203c253873748709c0af0ae"
+      },
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2021-dao.js",
+        "sha256": "b20db6a5acbad7307e2e44a737e55f1241a85a4137a9abf875d8ca0569a979c7",
+        "locator": "JavaScript literal var vrsta[2584] (zero-based; no execution)",
+        "source_id": "croatia--source-6203c253873748709c0af0ae"
+      },
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2021-dao.js",
+        "sha256": "b20db6a5acbad7307e2e44a737e55f1241a85a4137a9abf875d8ca0569a979c7",
+        "locator": "JavaScript literal var vrsta[2602] (zero-based; no execution)",
+        "source_id": "croatia--source-6203c253873748709c0af0ae"
+      },
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2021-dao.js",
+        "sha256": "b20db6a5acbad7307e2e44a737e55f1241a85a4137a9abf875d8ca0569a979c7",
+        "locator": "JavaScript literal var vrsta[45] (zero-based; no execution)",
+        "source_id": "croatia--source-6203c253873748709c0af0ae"
+      },
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2021-dao.js",
+        "sha256": "b20db6a5acbad7307e2e44a737e55f1241a85a4137a9abf875d8ca0569a979c7",
+        "locator": "JavaScript literal var vrsta[47] (zero-based; no execution)",
+        "source_id": "croatia--source-6203c253873748709c0af0ae"
+      },
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2021-dao.js",
+        "sha256": "b20db6a5acbad7307e2e44a737e55f1241a85a4137a9abf875d8ca0569a979c7",
+        "locator": "JavaScript literal var vrsta[48] (zero-based; no execution)",
+        "source_id": "croatia--source-6203c253873748709c0af0ae"
+      }
+    ]
+  },
+  {
+    "original_token": "TERRITORIAL-REFORMS",
+    "reason": "Pre-2017 abolished councils and1990s–2000s territorial reforms are not exhaustively enumerated. Retained2013 archive is recoverable earlier evidence, not additive typed history. Require official code/name/legal evidence before adding abolished units or merger/split edges. No municipality is declared abolished from deputy eligibility changes.",
+    "office_ids": [],
+    "status": "open",
+    "evidence": []
+  },
+  {
+    "original_token": "SPECIAL-AND-SUPPLEMENTARY",
+    "reason": "Ordinary local ballot register is fully accounted for; special/supplementary calls are not exhaustively projected. DIP index lists Nova Gradiška2026, Krnjak, Drenovci, Proložac, Đakovo and earlier calls. Retained2025 supplementary and2022 Split archives await explicit bindings; do not count as ordinary cycles. Stari Grad2017 third round is included from an explicitly advertised endpoint. No2026 winner inferred from headlines.",
+    "office_ids": [],
+    "status": "open",
+    "evidence": []
+  },
+  {
+    "original_token": "MISSING-BISKUPIJA-2017",
+    "reason": "Registered deputy ballot21/zup15/grop0515 first-round return endpoint was unavailable. Retain office and unresolved input; do not add zero returns or assert not-held.",
+    "office_ids": [
+      "HR-G0515-D-64f24d618ef7"
+    ],
+    "status": "open",
+    "evidence": [
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2025-dao.js",
+        "sha256": "b2f3314c938314c18f4e7041bd535f9b1771f03935c9487a5895a97feae9a5d8",
+        "locator": "JavaScript literal var vrsta[1204] (zero-based; no execution)",
+        "source_id": "croatia--source-cf392e2d68b26bc96a51b95a"
+      }
+    ]
+  },
+  {
+    "original_token": "TAR-VABRIGA-PLACEHOLDER",
+    "reason": "2025 deputy ballot21/zup18/grop6319 has zero processed/total BM and lista=[]. Retain office and cycle evidence with selected_history_role=none; no candidate zeros or abolition claim.",
+    "office_ids": [
+      "HR-G6319-D-04e76abb7f14"
+    ],
+    "status": "open",
+    "evidence": [
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/lokalni/lokalni-2025-dao.js",
+        "sha256": "b2f3314c938314c18f4e7041bd535f9b1771f03935c9487a5895a97feae9a5d8",
+        "locator": "JavaScript literal var vrsta[1225] (zero-based; no execution)",
+        "source_id": "croatia--source-cf392e2d68b26bc96a51b95a"
+      }
+    ]
+  },
+  {
+    "original_token": "SEATS-AND-LEGAL-FINALITY",
+    "reason": "All typed seats/elected flags remain unknown. Do not reconstruct allocation or infer winners from rank. Legacy seat-like fields and elected-candidate publications need sourced semantic binding. Legal outcomes unknown pending certification/court audit; official publisher is not blanket finality.",
+    "office_ids": [],
+    "status": "open",
+    "evidence": []
+  },
+  {
+    "original_token": "SABOR-MINORITY-BASIS",
+    "reason": "Seven Serbian-minority ballots have candidate vote sums above valid ballots, consistent with multi-mark scope. Preserve original values/denominators; never renormalize or combine constituencies. Historical percentage basis varies; minority ballot_basis remains unknown pending formal semantic acceptance. Other aggregate ballots reconcile to valid votes.",
+    "office_ids": [
+      "HR-SABOR"
+    ],
+    "status": "open",
+    "evidence": [
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/parlament/parlament-2024-dao.js",
+        "sha256": "2d534f72a35f6dfc8d2bf77c09f5fe661021de9edc539238593db07498f8c59a",
+        "locator": "getDataRezultat + election archive family",
+        "source_id": "croatia--source-9d1ef26e768153ae48905462"
+      }
+    ]
+  },
+  {
+    "original_token": "PARTY-IDENTITY",
+    "reason": "No approved global party/coalition mappings. Distinct2003 lists share abbreviations HSS/HP; legacy list identity uses full nomination fields, not short label or vote rank.",
+    "office_ids": [
+      "HR-SABOR"
+    ],
+    "status": "open",
+    "evidence": [
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/parlament/parlament-2024-dao.js",
+        "sha256": "2d534f72a35f6dfc8d2bf77c09f5fe661021de9edc539238593db07498f8c59a",
+        "locator": "getDataRezultat + election archive family",
+        "source_id": "croatia--source-9d1ef26e768153ae48905462"
+      }
+    ]
+  },
+  {
+    "original_token": "EP-DETAIL",
+    "reason": "EP tier other is proposed. Top-level list returns typed once; preference children retained losslessly in raw/originals, not extra list votes. Allocation/member substitution histories remain open.",
+    "office_ids": [
+      "HR-EP"
+    ],
+    "status": "open",
+    "evidence": [
+      {
+        "input_path": "data/research/croatia/sources/www.izbori.hr/arhiva-izbora/app/dao/euparlament/eu-parlament-2024-dao.js",
+        "sha256": "9e616fc6a979b83d690ca67a366701dbd47cef8bab3346fbb42eee42c5e9f976",
+        "locator": "getDataRezultat + election archive family",
+        "source_id": "croatia--source-d61c814ecdc9320e5241e9bf"
+      }
+    ]
+  },
+  {
+    "original_token": "DATES-NEXT-CYCLES",
+    "reason": "Local first polling days come from source view headings; national typed dates retain source-cycle year precision. Generation datum/vrijeme is not election date. Unknown next dates stayNULL. Ordinary four-year local cadence is narrative, not a fabricated2029 call. Out-of-window offices remain. Exact national/runoff date enrichment open.",
+    "office_ids": [],
+    "status": "open",
+    "evidence": []
+  },
+  {
+    "original_token": "EXCLUDED-AUXILIARY",
+    "reason": "No appointed cabinet/PM/state heads, neighborhood boards, party bodies or unrecognized parallel institutions. Minority advisory councils/representatives are not equated with independent elected deputies: nationwide register/governmental swing scope is a separate named review gate.",
+    "office_ids": [],
+    "status": "open",
+    "evidence": []
+  }
+]
