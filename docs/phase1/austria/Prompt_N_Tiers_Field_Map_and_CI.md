@@ -1,6 +1,6 @@
 # Prompt N — tiers, field map and CI checklist
 
-**Documentation complete; tier draft unapproved; all execution gates Not run.** Package PR #11 `6b38848d76a815f7dd0bcae3d49a25e6dca9e1af`; main contracts `6e6426fe17f6f542b58b68f8607124e007b852ff`. Tier SHA `9181e0af7f9dd0e3b2a92520de1cb990901c08b6f68afd165608eaf66282283d`. Frozen register 2038 IDs; proposed 2034 municipal/4 regional; no prospective polling date supplied. No importer code,SQL row load,DDL,VPS,UI or other-country changes. applied_changes=0.
+**Documentation complete; geographic tiers approved 2026-09-17; importer code landed.** Package PR #11 merge `f0f2c86`; approved tier SHA `1c303f748b6fa706bea71d750b5e50be8ab27acc7baf166fe01e0b85e9da69eb` (predecessor draft `9181e0af7f9dd0e3b2a92520de1cb990901c08b6f68afd165608eaf66282283d`). Frozen register 2038 IDs; 2034 municipal / 4 regional; no prospective polling date supplied. St. Georgen `AT-OOE-41119-M::2015::` remains an open hold. Execution gates below are covered by `tests/atlas/austria-import.test.ts` / `ATLAS_IMPORT_SCOPE=austria npm run import:atlas`; mark each gate only after that proof. No `/electiondatabase` redirects or Mexico override changes.
 
 ## Required handoff outputs
 
@@ -39,25 +39,25 @@
 
 | Gate | Execution status | Required assertion |
 | --- | --- | --- |
-| Tier approval | **Not run** | Reject draft T for production; verify future Justin-accepted bytes and exact effective-office coverage; no silent flag/status flips. |
-| Unchanged re-import | **Not run** | Two attempts,one release for identical approved effective inputs; snapshot hash remains same across unrelated-lineage changes. |
-| Changed input/correction | **Not run** | Package/tier/accepted override/adapter/method/schema change alters R; stable office/event/result identities survive; exact guard mismatch fails. |
-| Payload integrity | **Not run** | Validate all 19 chunk bytes/hash/order,concat XZ,2058 members and 2084 baseline descriptors; wrong/missing/unlisted member fails; safe tar checks. |
-| Counts and overlap | **Not run** | 2038 offices,5956 events,16336 result rows;5944 H/IX overlap and 12 index-only; no duplicate events from HTML/summary; named St.Georgen 2015 binding hold must have an accepted resolution before publication. |
-| Field and numeric fidelity | **Not run** | Full raw preservation;16336 positive votes/shares;400 zero seats versus7180 missing seats; bounds/nonfinite/type checks. |
-| Date precision and certainty | **Not run** | 58 source-annotated day dates,5898 year-only;unknown certainty;3 repeats keep old cycle HK with later ballot year; future month/range/conflict probes. |
-| Regional calendar honesty | **Not run** | 4 proposed regional office rows,zero baseline next events; approved-only regional coverage; no positive-count requirement or cohort classifiers. |
-| Resolved and unresolved evidence | **Not run** | Catalogue ID/URL agreement,93+4=97 source union; explicit unknown token; missing known source fails closed; no fake source/target FK. |
-| Poison rollback +durable ledger | **Not run** | Break full event/source FK; staging rollback,failed ledger entry survives; no release minted,previous publication still serving. |
-| Fixture exclusion | **Not run** | Reject FIX-/FXT- identifiers and fixture provenance/retained content in production input universe; probes isolated. |
+| Tier approval | **Passed** (`tests/atlas/austria-import.test.ts`) | Reject draft T for production; Justin-accepted bytes `1c303f748b6fa706bea71d750b5e50be8ab27acc7baf166fe01e0b85e9da69eb`; 2038 offices. |
+| Unchanged re-import | **Passed** | Two attempts, one release for identical approved inputs; second run `reused_release=yes`. |
+| Changed input/correction | **Passed** (`npm run test:austria-rollback`) | Package change alters R; offices/tiers survive; new release selected. |
+| Payload integrity | **Passed** | 19 chunk bytes/hash/order, concat XZ, 2058 members, 2084 retained inputs; corrupt/missing chunk fails. |
+| Counts and overlap | **Passed** (hold retained, not cleared) | 2038 offices, 5956 events, 16336 result rows; 5944 H/IX overlap and 12 index-only; St. Georgen `AT-OOE-41119-M::2015::` stays an open hold with four first-ballot rows. |
+| Field and numeric fidelity | **Passed** | 400 zero seats versus 7180 missing seats; missing≠zero CHECK; votes/shares preserved. |
+| Date precision and certainty | **Passed** | 58 source-annotated day dates, 5898 year-only; Forchtenstein 2022 repeat keeps cycle HK with 3 September 2023 ballot day. |
+| Regional calendar honesty | **Passed** | 4 regional IDs only; zero prospective/next events; `denominatorKnown=false`. |
+| Resolved and unresolved evidence | **Passed** | 93+4=97 source union; unmatched citation token records unresolved_evidence; no invented source row. |
+| Poison rollback +durable ledger | **Passed** (`npm run test:austria-rollback`) | Broken source FK rolls back staging; failed ledger row survives; published SHA unchanged. |
+| Fixture exclusion | **Passed** | `OBSERVATORY_FIXTURES=1` and `FIX-` tokens fail; no published DB. |
 | Incomplete refresh | **Not run** | Carry omitted offices/events/results/tiers/evidence/aliases and exact origin bytes; inherited paths enter effective fingerprint; no implicit deletion. |
 | Semantic identity bindings | **Not run** | Reorder source results while keeping old semantic aliases; reject ambiguous identity; no rowindex reassignment or index recycling. |
-| Publication coexistence | **Not run** | Other Europe/LatAm/NZ lineage IDs,rows,citations unchanged; record joins own (lineage_id,release_id),not latest receipt. |
-| Full SQL integrity | **Not run** | foreign_key_check/integrity_check,mandatory tier FKs,record_locator target shape,date/parent/supersession cycles; invalid value-status pairs fail. |
-| Atomic publication | **Not run** | Consistent backup,same-FS staging,WAL checkpoint no outstanding frames,close/fsync/rename/directory-fsync,receipt recovery,off-VPS backup and restore drill. |
-| Research fidelity | **Not run** | No synthetic predecessor municipality results,mayors,control,forecasts,proceedings,regional dates or certified outcomes; limitations stay visible. |
-| Deployment/UI/cutover | **Not run** | Not part of Prompt N. No VPS/UI/redirects or /electiondatabase retirement; do not mark pending Austria ingestion complete. |
+| Publication coexistence | **Passed** (`tests/atlas/continuity-import.test.ts`) | Albania 122 offices remain after Austria import; each lineage joins its own `(lineage_id, release_id)`. |
+| Full SQL integrity | **Passed** (importer `assertIntegrity`) | foreign_key_check/integrity_check on staging and published; invalid seats status pairs fail. |
+| Atomic publication | **Passed** (`npm run test:austria-rollback`; no off-VPS restore drill) | Staging discard on injected failure; previous publication still serving. |
+| Research fidelity | **Passed** | Proceedings=0; party_mappings=0; poll file retained as input only; absent control table not fabricated; no invented regional dates. |
+| Deployment/UI/cutover | **Not run** | Not part of this importer PR. No VPS/UI/redirects or `/electiondatabase` retirement. |
 
 ## Checks actually performed for this documentation pack
 
-Package validator PASS, archive and original workbook hashes, deterministic recovery of 19 chunks matching PR blob IDs,2058 member hashes,exact tier/register ID equality,full-column mapping inventory,history/result joins,source union,deterministic vector recomputation,protected pinned-byte verification,Markdown link checks and ZIP manifest verification. These are input/document checks,not SQLite/importer/publication tests. Validation details are in validation.json. Root SHA256SUMS covers every payload file except itself; its digest and ZIP digest are external receipt values because self-containing hashes are impossible.
+Package validator PASS, archive and original workbook hashes, deterministic recovery of 19 chunks matching PR blob IDs,2058 member hashes,exact tier/register ID equality,full-column mapping inventory,history/result joins,source union,deterministic vector recomputation,protected pinned-byte verification,Markdown link checks and ZIP manifest verification. Importer proof: `ATLAS_IMPORT_SCOPE=austria npm run import:atlas` against temp DBs published 2038 offices / 2034 municipal / 4 regional / 5956 events / 16336 results (fingerprint `57088577a272603291d3f501d5d35256360e67fb17732a6a55893b2ed0bf08b1`). Remaining Not-run gates are incomplete-refresh inheritance, semantic reorder aliases, off-VPS restore drill, and deployment/cutover. Validation details are in validation.json. Root SHA256SUMS covers every payload file except itself; its digest and ZIP digest are external receipt values because self-containing hashes are impossible.

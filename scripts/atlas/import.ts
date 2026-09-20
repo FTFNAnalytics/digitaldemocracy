@@ -2,7 +2,7 @@
 /**
  * Import approved Atlas lineages into SQLite.
  *
- * Default scope is Albania + Andorra + Alderney + Armenia + Belgium + Bosnia and Herzegovina +
+ * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
  * Bulgaria + approved LatAm packs + New Zealand (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
@@ -83,6 +83,20 @@ function main() {
       console.log(`armenia_result_rows=${result.armenia.counts.result_rows}`);
       console.log(`armenia_sources=${result.armenia.counts.sources}`);
       console.log(`armenia_regional=${result.armenia.counts.regional_offices}`);
+    }
+    if (result.austria) {
+      console.log("lineage=country-package-austria");
+      console.log(`austria_attempt_id=${result.austria.attemptId}`);
+      console.log(`austria_release_id=${result.austria.releaseId}`);
+      console.log(`austria_fingerprint_sha256=${result.austria.fingerprint}`);
+      console.log(`austria_reused_release=${result.austria.reusedRelease ? "yes" : "no"}`);
+      console.log(`austria_offices=${result.austria.counts.current_offices}`);
+      console.log(`austria_municipal=${result.austria.counts.municipal_offices}`);
+      console.log(`austria_selected_histories=${result.austria.counts.selected_histories}`);
+      console.log(`austria_prospective_events=${result.austria.counts.prospective_events}`);
+      console.log(`austria_result_rows=${result.austria.counts.result_rows}`);
+      console.log(`austria_sources=${result.austria.counts.sources}`);
+      console.log(`austria_regional=${result.austria.counts.regional_offices}`);
     }
     if (result.belgium) {
       console.log("lineage=country-package-belgium");

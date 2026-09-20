@@ -464,6 +464,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "austria") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "4 regional offices (Carinthia, Lower Austria, Tyrol, Upper Austria). No dated upcoming regional events; next dates remain unknown. Research coverage remains partial.",
+      denominatorKnown: false,
+    };
+  }
   if (countryId === "belgium") {
     return {
       offices,
