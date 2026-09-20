@@ -518,6 +518,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "switzerland") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "52 regional offices (26 cantonal legislatures + 26 cantonal executives). Historic cantonal depth is not a forthcoming alert. 308 commune-executive gaps, thin historic/merger archive, 1,938 citizen-assembly parliament caveats, and disputed-result notes stay open. Do not invent held commune executives.",
+      denominatorKnown: false,
+    };
+  }
   return {
     offices,
     count: offices.length,

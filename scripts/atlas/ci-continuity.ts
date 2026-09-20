@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Denmark + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -21,6 +21,7 @@ import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzego
 import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
 import { LINEAGE_ID as DENMARK_LINEAGE } from "../../lib/atlas/denmark/identity";
 import { LINEAGE_ID as NETHERLANDS_LINEAGE } from "../../lib/atlas/netherlands/identity";
+import { LINEAGE_ID as SWITZERLAND_LINEAGE } from "../../lib/atlas/switzerland/identity";
 
 function fail(message: string): never {
   console.error(`test:atlas-import failed: ${message}`);
@@ -184,6 +185,33 @@ function main() {
     if (result.netherlands?.counts.needs_review_classifications !== 147) {
       fail(`Netherlands needs_review ${String(result.netherlands?.counts.needs_review_classifications)}`);
     }
+    if (result.switzerland?.counts.offices !== 2816) {
+      fail(`Switzerland offices ${String(result.switzerland?.counts.offices)}`);
+    }
+    if (result.switzerland?.counts.current_offices !== 2805) {
+      fail(`Switzerland current ${String(result.switzerland?.counts.current_offices)}`);
+    }
+    if (result.switzerland?.counts.historical_offices !== 11) {
+      fail(`Switzerland historical ${String(result.switzerland?.counts.historical_offices)}`);
+    }
+    if (result.switzerland?.counts.municipal_offices !== 2402) {
+      fail(`Switzerland municipal ${String(result.switzerland?.counts.municipal_offices)}`);
+    }
+    if (result.switzerland?.counts.regional_offices !== 52) {
+      fail(`Switzerland regional ${String(result.switzerland?.counts.regional_offices)}`);
+    }
+    if (result.switzerland?.counts.national_offices !== 2) {
+      fail(`Switzerland national ${String(result.switzerland?.counts.national_offices)}`);
+    }
+    if (result.switzerland?.counts.held_commune_executive_gaps !== 308) {
+      fail(`Switzerland held executives ${String(result.switzerland?.counts.held_commune_executive_gaps)}`);
+    }
+    if (result.switzerland?.counts.result_rows !== 8094) {
+      fail(`Switzerland results ${String(result.switzerland?.counts.result_rows)}`);
+    }
+    if (result.switzerland?.counts.prospective_events !== 0) {
+      fail(`Switzerland prospective ${String(result.switzerland?.counts.prospective_events)}`);
+    }
     if (result.denmark?.counts.offices !== 346) {
       fail(`Denmark offices ${String(result.denmark?.counts.offices)}`);
     }
@@ -251,6 +279,24 @@ function main() {
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BULGARIA_LINEAGE]) !== 530) {
         fail("Bulgaria office rows");
       }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [NETHERLANDS_LINEAGE]) !== 501) {
+        fail("Netherlands office rows");
+      }
+      if (
+        count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_status = 'historical'", [NETHERLANDS_LINEAGE]) !==
+        69
+      ) {
+        fail("Netherlands historical office rows");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [SWITZERLAND_LINEAGE]) !== 2816) {
+        fail("Switzerland office rows");
+      }
+      if (
+        count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_status = 'historical'", [SWITZERLAND_LINEAGE]) !==
+        11
+      ) {
+        fail("Switzerland historical office rows");
+      }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [DENMARK_LINEAGE]) !== 346) {
         fail("Denmark office rows");
       }
@@ -259,6 +305,15 @@ function main() {
         240
       ) {
         fail("Denmark historical office rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_id IN ('CH-GM1311-E','CH-GM5402-E')",
+          [SWITZERLAND_LINEAGE],
+        ) !== 0
+      ) {
+        fail("Switzerland invented held commune executives");
       }
       if (
         count(
@@ -494,6 +549,7 @@ function main() {
         BULGARIA_LINEAGE,
         DENMARK_LINEAGE,
         NETHERLANDS_LINEAGE,
+        SWITZERLAND_LINEAGE,
         NZ_LINEAGE_ID,
         LATAM_LINEAGE_ID,
       ].sort();
@@ -505,7 +561,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 denmark=346 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

@@ -5,14 +5,14 @@ import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
 import { importAlbania } from "../../lib/atlas/albania/import";
 import { importAustria } from "../../lib/atlas/austria/import";
-import { importBelgium } from "../../lib/atlas/belgium/import";
+import { importBulgaria } from "../../lib/atlas/bulgaria/import";
 import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
 import { LINEAGE_ID as AUSTRIA_LINEAGE } from "../../lib/atlas/austria/identity";
-import { LINEAGE_ID as BELGIUM_LINEAGE } from "../../lib/atlas/belgium/identity";
+import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
 
-describe("multi-lineage continuity import (Austria / Belgium)", () => {
+describe("heavy multi-lineage continuity import", () => {
   const tempDirs: string[] = [];
 
   beforeEach(() => {
@@ -64,8 +64,8 @@ describe("multi-lineage continuity import (Austria / Belgium)", () => {
     }
   }, 300_000);
 
-  it("imports Albania then Belgium into one master without dropping Albania", () => {
-    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-belgium-"));
+  it("imports Albania then Bulgaria into one master without dropping Albania", () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-bulgaria-"));
     tempDirs.push(dir);
     const sqlitePath = path.join(dir, "atlas.sqlite");
     const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
@@ -73,33 +73,34 @@ describe("multi-lineage continuity import (Austria / Belgium)", () => {
       root: repoRoot,
       sqlitePath,
       attemptsPath,
-      operator: "albania-belgium-test",
+      operator: "albania-bulgaria-test",
     });
     expect(albania.counts.current_offices).toBe(122);
-    const belgium = importBelgium({
+    const bulgaria = importBulgaria({
       root: repoRoot,
       sqlitePath,
       attemptsPath,
-      operator: "albania-belgium-test",
+      operator: "albania-bulgaria-test",
     });
-    expect(belgium.counts.current_offices).toBe(1179);
-    expect(belgium.counts.historical_offices).toBe(55);
-    expect(belgium.counts.regional_offices).toBe(15);
+    expect(bulgaria.counts.current_offices).toBe(530);
+    expect(bulgaria.counts.municipal_offices).toBe(530);
+    expect(bulgaria.counts.regional_offices).toBe(0);
+    expect(bulgaria.counts.held_offices).toBe(3067);
     const db = new DatabaseSync(sqlitePath, { readOnly: true });
     try {
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
       ).toBe(122);
       expect(
-        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(BELGIUM_LINEAGE)?.n),
-      ).toBe(1234);
+        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(BULGARIA_LINEAGE)?.n),
+      ).toBe(530);
       const lineages = db
         .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
         .all()
         .map((row) => String(row.lineage_id));
-      expect(lineages).toEqual([ALBANIA_LINEAGE, BELGIUM_LINEAGE].sort());
+      expect(lineages).toEqual([ALBANIA_LINEAGE, BULGARIA_LINEAGE].sort());
     } finally {
       db.close();
     }
-  }, 180_000);
+  }, 300_000);
 });

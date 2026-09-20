@@ -636,6 +636,76 @@ describe("atlas CLI stubs", () => {
   );
 
   it(
+    "import:atlas loads Switzerland into temporary databases",
+    () => {
+      const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-switzerland-cli-"));
+      tempDirs.push(dir);
+      const sqlitePath = path.join(dir, "atlas.sqlite");
+      const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+      const result = runAtlasScript("scripts/atlas/import.ts", {
+        ATLAS_SQLITE_PATH: sqlitePath,
+        ATLAS_ATTEMPTS_SQLITE_PATH: attemptsPath,
+        ATLAS_OPERATOR: "atlas-cli-test",
+        ATLAS_IMPORT_SCOPE: "switzerland",
+        OBSERVATORY_FIXTURES: "",
+      });
+      expect(result.status, result.stderr).toBe(0);
+      expect(result.stdout).toContain("import:atlas");
+      expect(result.stdout).toContain("lineage=country-package-switzerland");
+      expect(result.stdout).toContain("switzerland_offices=2816");
+      expect(result.stdout).toContain("switzerland_current=2805");
+      expect(result.stdout).toContain("switzerland_historical=11");
+      expect(result.stdout).toContain("switzerland_municipal=2402");
+      expect(result.stdout).toContain("switzerland_regional=52");
+      expect(result.stdout).toContain("switzerland_national=2");
+      expect(result.stdout).toContain("switzerland_other=360");
+      expect(result.stdout).toContain("switzerland_selected_histories=1196");
+      expect(result.stdout).toContain("switzerland_prospective_events=0");
+      expect(result.stdout).toContain("switzerland_result_rows=8094");
+      expect(result.stdout).toContain("switzerland_proceedings=136");
+      expect(result.stdout).toContain("switzerland_sources=57");
+      expect(result.stdout).toContain("switzerland_unresolved=1938");
+      expect(result.stdout).toContain("switzerland_held_commune_executives=308");
+
+      const master = new DatabaseSync(sqlitePath, { readOnly: true });
+      try {
+        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 2816 });
+        expect(
+          master.prepare("SELECT geography_id FROM office WHERE office_id = 'CH-FED-NR'").get(),
+        ).toMatchObject({ geography_id: "CH" });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office WHERE office_status = 'historical'")
+            .get(),
+        ).toMatchObject({ n: 11 });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'regional'")
+            .get(),
+        ).toMatchObject({ n: 52 });
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'national_context'")
+            .get(),
+        ).toMatchObject({ n: 2 });
+        expect(master.prepare("SELECT office_id FROM office WHERE office_id = 'CH-GM1311-E'").get()).toBeUndefined();
+        expect(master.prepare("SELECT office_id FROM office WHERE office_id = 'CH-GM5402-E'").get()).toBeUndefined();
+        expect(
+          master
+            .prepare("SELECT COUNT(*) AS n FROM election_event WHERE selected_history_role = 'none'")
+            .get(),
+        ).toMatchObject({ n: 0 });
+      } finally {
+        master.close();
+      }
+
+      expect(atlasImportStatusMessage()).toContain("Switzerland");
+      expect(atlasImportStatusMessage()).toContain("switzerland");
+    },
+    300_000,
+  );
+
+  it(
     "import:atlas loads Denmark Prompt X 106 current + 240 historical offices",
     () => {
       const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-denmark-cli-"));

@@ -4,15 +4,15 @@ import os from "node:os";
 import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
 import { importAlbania } from "../../lib/atlas/albania/import";
-import { importBulgaria } from "../../lib/atlas/bulgaria/import";
 import { importNetherlands } from "../../lib/atlas/netherlands/import";
+import { importSwitzerland } from "../../lib/atlas/switzerland/import";
 import { LINEAGE_ID as ALBANIA_LINEAGE } from "../../lib/atlas/identity";
-import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
 import { LINEAGE_ID as NETHERLANDS_LINEAGE } from "../../lib/atlas/netherlands/identity";
+import { LINEAGE_ID as SWITZERLAND_LINEAGE } from "../../lib/atlas/switzerland/identity";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
 
-describe("multi-lineage continuity import (Bulgaria / Netherlands)", () => {
+describe("Netherlands and Switzerland continuity import", () => {
   const tempDirs: string[] = [];
 
   beforeEach(() => {
@@ -24,46 +24,6 @@ describe("multi-lineage continuity import (Bulgaria / Netherlands)", () => {
       rmSync(dir, { recursive: true, force: true });
     }
   });
-
-  it("imports Albania then Bulgaria into one master without dropping Albania", () => {
-    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-bulgaria-"));
-    tempDirs.push(dir);
-    const sqlitePath = path.join(dir, "atlas.sqlite");
-    const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
-    const albania = importAlbania({
-      root: repoRoot,
-      sqlitePath,
-      attemptsPath,
-      operator: "albania-bulgaria-test",
-    });
-    expect(albania.counts.current_offices).toBe(122);
-    const bulgaria = importBulgaria({
-      root: repoRoot,
-      sqlitePath,
-      attemptsPath,
-      operator: "albania-bulgaria-test",
-    });
-    expect(bulgaria.counts.current_offices).toBe(530);
-    expect(bulgaria.counts.municipal_offices).toBe(530);
-    expect(bulgaria.counts.regional_offices).toBe(0);
-    expect(bulgaria.counts.held_offices).toBe(3067);
-    const db = new DatabaseSync(sqlitePath, { readOnly: true });
-    try {
-      expect(
-        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
-      ).toBe(122);
-      expect(
-        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(BULGARIA_LINEAGE)?.n),
-      ).toBe(530);
-      const lineages = db
-        .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
-        .all()
-        .map((row) => String(row.lineage_id));
-      expect(lineages).toEqual([ALBANIA_LINEAGE, BULGARIA_LINEAGE].sort());
-    } finally {
-      db.close();
-    }
-  }, 300_000);
 
   it("imports Albania then Netherlands into one master without dropping Albania", () => {
     const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-netherlands-"));
@@ -103,4 +63,43 @@ describe("multi-lineage continuity import (Bulgaria / Netherlands)", () => {
       db.close();
     }
   }, 180_000);
+
+  it("imports Albania then Switzerland into one master without dropping Albania", () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-albania-switzerland-"));
+    tempDirs.push(dir);
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
+    const albania = importAlbania({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "albania-switzerland-test",
+    });
+    expect(albania.counts.current_offices).toBe(122);
+    const switzerland = importSwitzerland({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath,
+      operator: "albania-switzerland-test",
+    });
+    expect(switzerland.counts.current_offices).toBe(2805);
+    expect(switzerland.counts.historical_offices).toBe(11);
+    expect(switzerland.counts.regional_offices).toBe(52);
+    const db = new DatabaseSync(sqlitePath, { readOnly: true });
+    try {
+      expect(
+        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
+      ).toBe(122);
+      expect(
+        Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(SWITZERLAND_LINEAGE)?.n),
+      ).toBe(2816);
+      const lineages = db
+        .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
+        .all()
+        .map((row) => String(row.lineage_id));
+      expect(lineages).toEqual([ALBANIA_LINEAGE, SWITZERLAND_LINEAGE].sort());
+    } finally {
+      db.close();
+    }
+  }, 300_000);
 });

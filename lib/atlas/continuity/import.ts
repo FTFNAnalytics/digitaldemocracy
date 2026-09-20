@@ -8,6 +8,7 @@ import { importBosnia, type ImportBosniaResult } from "../bosnia-and-herzegovina
 import { importBulgaria, type ImportBulgariaResult } from "../bulgaria/import";
 import { importDenmark, type ImportDenmarkResult } from "../denmark/import";
 import { importNetherlands, type ImportNetherlandsResult } from "../netherlands/import";
+import { importSwitzerland, type ImportSwitzerlandResult } from "../switzerland/import";
 import { importLatAm } from "./latam";
 import { importNewZealand } from "./nz";
 import type { ContinuityImportOptions, ContinuityImportResult } from "./run";
@@ -23,6 +24,7 @@ export type ImportScope =
   | "bulgaria"
   | "denmark"
   | "netherlands"
+  | "switzerland"
   | "latam"
   | "nz"
   | "all";
@@ -40,6 +42,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     raw === "bulgaria" ||
     raw === "denmark" ||
     raw === "netherlands" ||
+    raw === "switzerland" ||
     raw === "latam" ||
     raw === "nz" ||
     raw === "all"
@@ -47,7 +50,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     return raw;
   }
   throw new Error(
-    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|denmark|netherlands|latam|nz|all`,
+    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|denmark|netherlands|switzerland|latam|nz|all`,
   );
 }
 
@@ -62,6 +65,7 @@ export type MultiLineageImportResult = {
   bulgaria?: ImportBulgariaResult;
   denmark?: ImportDenmarkResult;
   netherlands?: ImportNetherlandsResult;
+  switzerland?: ImportSwitzerlandResult;
   latam?: ContinuityImportResult;
   nz?: ContinuityImportResult;
 };
@@ -97,6 +101,9 @@ export function importAtlasLineages(
   }
   if (scope === "netherlands" || scope === "all") {
     result.netherlands = importNetherlands(options);
+  }
+  if (scope === "switzerland" || scope === "all") {
+    result.switzerland = importSwitzerland(options);
   }
   if (scope === "latam" || scope === "all") {
     result.latam = importLatAm(options);
