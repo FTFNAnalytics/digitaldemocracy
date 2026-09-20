@@ -1,6 +1,6 @@
 # Prompt X — mapping and CI checklist
 
-Pinned main `e64afc324e34ae07f0760f49870ece64eb2ee645`. Research extraction/document checks are completed work; production/importer tests are **Not run**. Justin accepted all 106 current + 240 historical draft offices on 2026-09-19. **Importer / SQLite / VPS / UI applied_changes=0.** Standing scope policy is preserved.
+Pinned main `e64afc324e34ae07f0760f49870ece64eb2ee645`. Research extraction/document checks are completed work; production/importer tests in this Prompt X landing were **Not run**. Justin accepted all 106 current + 240 historical draft offices on 2026-09-19. The follow-up importer is `ATLAS_IMPORT_SCOPE=denmark` — see [Denmark_Import.md](Denmark_Import.md). Standing scope policy is preserved.
 
 | Requirement | Status | Pointer / gate |
 | --- | --- | --- |
