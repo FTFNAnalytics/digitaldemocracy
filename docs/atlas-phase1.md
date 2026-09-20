@@ -22,7 +22,7 @@ summarized at the top of [atlas-plan.md](atlas-plan.md).
 | Path override | `ATLAS_SQLITE_PATH` via `lib/atlas/paths.ts`. Default: `data/master/atlas.sqlite`. Production: `/var/lib/cdd/atlas.sqlite` |
 | Attempt ledger path | `ATLAS_ATTEMPTS_SQLITE_PATH`. Default: `data/master/atlas-attempts.sqlite`. Production: `/var/lib/cdd/atlas-attempts.sqlite` |
 | `npm run migrate:atlas` | `scripts/atlas/migrate.ts` — applies attempt-log SQL to the attempts DB and master SQL to the master DB |
-| `npm run import:atlas` | `scripts/atlas/import.ts` — Albania Phase 1 importer plus Andorra / Alderney / Armenia / Austria / Belgium / Bosnia and Herzegovina / Bulgaria / Netherlands / Switzerland and approved LatAm/NZ continuity (`ATLAS_IMPORT_SCOPE`) |
+| `npm run import:atlas` | `scripts/atlas/import.ts` — Albania Phase 1 importer plus Andorra / Alderney / Armenia / Austria / Belgium / Bosnia and Herzegovina / Bulgaria / Netherlands / Switzerland / Denmark and approved LatAm/NZ continuity (`ATLAS_IMPORT_SCOPE`) |
 | Albania importer | `lib/atlas/albania/` (`import.ts`, `inventory.ts`, `project.ts`, `write.ts`) plus shared `lib/atlas/{ledger,publish,sqlite,identity,apply-migrations}.ts` |
 | Attempt-log DDL | `schemas/atlas/migrations/0001_atlas_attempt_log.sql` (**attempts DB only**) |
 | Master DDL | `schemas/atlas/migrations/0002_atlas_master.sql` (**master/staging only**) |
@@ -39,12 +39,14 @@ summarized at the top of [atlas-plan.md](atlas-plan.md).
 | Belgium Prompt S2 field map | [docs/phase1/belgium-s2/](phase1/belgium-s2/Prompt_S2_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=belgium`; **1,179 current + 55 historical**) |
 | Netherlands Prompt T field map | [docs/phase1/netherlands/](phase1/netherlands/Prompt_T_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=netherlands`; **432 current + 69 historical**) |
 | Switzerland Prompt U field map | [docs/phase1/switzerland/](phase1/switzerland/Prompt_U_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=switzerland`; **2,805 current + 11 historical**; 308 commune-executive holds retained; full-register certification OPEN) |
-| Denmark Prompt X field map | [docs/phase1/denmark/](phase1/denmark/Prompt_X_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer CI **Not run** (research at `data/research/denmark/`; **106 current + 240 historical accepted**; Atlas importer waits) |
+| Denmark Prompt X field map | [docs/phase1/denmark/](phase1/denmark/Prompt_X_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=denmark`; **106 current + 240 historical**) |
+| Sweden Prompt Y field map | [docs/phase1/sweden/](phase1/sweden/Prompt_Y_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer CI **Not run** (research at `data/research/sweden/`; **313 current + 7 historical accepted with holds**; Atlas importer waits) |
+| Finland Prompt Z field map | [docs/phase1/finland/](phase1/finland/Prompt_Z_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer CI **Not run** (research at `data/research/finland/`; **333 current + 170 historical accepted with holds**; Atlas importer waits) |
 | Norway Prompt AA field map | [docs/phase1/norway/](phase1/norway/Prompt_AA_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer CI **Not run** (research at `data/research/norway/`; **389 current + 537 historical accepted with holds**; Atlas importer waits) |
 | Named CI | `tests/atlas/import.test.ts` (Prompt C gates) and `tests/atlas/cli.test.ts` (migrate + import CLI) |
 | Phase 0 inventory | `docs/phase0/` (`REPORT.md`, `inventory.json`, `continuity-counts.json`, `human-review.json`) |
 | Prompt D continuity docs | [docs/phase2/](phase2/README.md) — field maps, identity rules, acceptance examples, checklist; approved-pack importer CI runs (`npm run test:atlas-import`) |
-| Tier-classification files | `schemas/atlas/tiers/albania.json` (**approved** municipal); `alderney.json` (**approved** `other`); `andorra.json` (**approved** municipal, Justin 2026-09-16); `armenia.json` (**approved** municipal, Prompt L 2026-09-17; five boundary/calendar reviews remain open); `austria.json` (**approved** 2,034 municipal / 4 regional, Prompt N 2026-09-17; package on main via PR #11; St. Georgen 2015 hold retained; `import:atlas` loads the lineage); `bosnia-and-herzegovina.json` (**approved** all 13 regional, Prompt O 2026-09-17; package on main via PR #15; RS presidential / coalition / calendar notes retained; importer via `ATLAS_IMPORT_SCOPE=bosnia`); `bulgaria.json` (**530 municipality-wide municipal accepted** / **3,067 district/village held**, Prompt P 2026-09-19; package PR #16 head `de354127`; no regional layer; importer loads 530 only); `belgium.json` (**1,179 current + 55 historical accepted**, Prompt S2 2026-09-19; 1,185 municipal / 15 regional / 2 national / 32 other; research at `data/research/belgium-s2/`; remaining-universe notes retained; importer via `ATLAS_IMPORT_SCOPE=belgium`); `netherlands.json` (**432 current + 69 historical accepted**, Prompt T 2026-09-19; 414 municipal / 12 regional / 3 national / 72 other; research at `data/research/netherlands/`; Hilversum/Wijdemeren and ~147 focused-tier reviews retained; importer via `ATLAS_IMPORT_SCOPE=netherlands`); `switzerland.json` (**2,805 current + 11 historical accepted subset**, Prompt U 2026-09-19; 2,402 municipal / 52 regional / 2 national / 360 other; research at `data/research/switzerland/`; 308 commune-executive holds, thin historic, 1,938 parliament caveats retained; full-register certification OPEN; importer via `ATLAS_IMPORT_SCOPE=switzerland`); `denmark.json` (**106 current + 240 historical accepted**, Prompt X 2026-09-19; 324 municipal / 20 regional / 1 national / 1 other; research at `data/research/denmark/`; Greenland/Faroe Realm, 2007/earlier merger successor, KMD/DST, 98 candidate-binding, and EP-detail notes retained; Atlas importer waits); `norway.json` (**389 current + 537 historical accepted with holds**, Prompt AA 2026-09-19; 876 municipal / 32 regional / 1 national / 17 other; research at `data/research/norway/`; SAMI-2025-ZERO-VOTE-SEAT-98d, REFORM-2020-2024, OSLO-BOROUGH-HISTORY, LONGYEARBYEN-HISTORY, LEGAL-STATUS-REPEATS, COUNTY-AGGREGATES, SAMI-OLDER-HISTORY, MUNICIPAL-HISTORY-DEPTH, and PARTY-CATEGORIES retained; Atlas importer waits) |
+| Tier-classification files | `schemas/atlas/tiers/albania.json` (**approved** municipal); `alderney.json` (**approved** `other`); `andorra.json` (**approved** municipal, Justin 2026-09-16); `armenia.json` (**approved** municipal, Prompt L 2026-09-17; five boundary/calendar reviews remain open); `austria.json` (**approved** 2,034 municipal / 4 regional, Prompt N 2026-09-17; package on main via PR #11; St. Georgen 2015 hold retained; `import:atlas` loads the lineage); `bosnia-and-herzegovina.json` (**approved** all 13 regional, Prompt O 2026-09-17; package on main via PR #15; RS presidential / coalition / calendar notes retained; importer via `ATLAS_IMPORT_SCOPE=bosnia`); `bulgaria.json` (**530 municipality-wide municipal accepted** / **3,067 district/village held**, Prompt P 2026-09-19; package PR #16 head `de354127`; no regional layer; importer loads 530 only); `belgium.json` (**1,179 current + 55 historical accepted**, Prompt S2 2026-09-19; 1,185 municipal / 15 regional / 2 national / 32 other; research at `data/research/belgium-s2/`; remaining-universe notes retained; importer via `ATLAS_IMPORT_SCOPE=belgium`); `netherlands.json` (**432 current + 69 historical accepted**, Prompt T 2026-09-19; 414 municipal / 12 regional / 3 national / 72 other; research at `data/research/netherlands/`; Hilversum/Wijdemeren and ~147 focused-tier reviews retained; importer via `ATLAS_IMPORT_SCOPE=netherlands`); `switzerland.json` (**2,805 current + 11 historical accepted subset**, Prompt U 2026-09-19; 2,402 municipal / 52 regional / 2 national / 360 other; research at `data/research/switzerland/`; 308 commune-executive holds, thin historic, 1,938 parliament caveats retained; full-register certification OPEN; importer via `ATLAS_IMPORT_SCOPE=switzerland`); `denmark.json` (**106 current + 240 historical accepted**, Prompt X 2026-09-19; 324 municipal / 20 regional / 1 national / 1 other; research at `data/research/denmark/`; Greenland/Faroe Realm, 2007/earlier merger successor, KMD/DST, 98 candidate-binding, and EP-detail notes retained; importer via `ATLAS_IMPORT_SCOPE=denmark`); `sweden.json` (**313 current + 7 historical accepted with holds**, Prompt Y 2026-09-19; 292 municipal / 25 regional / 1 national / 2 other; research at `data/research/sweden/`; SE-GOTLAND-TIER, SE-EP-SAM-TIER, SE-2026-COUNT-IN-PROGRESS, SE-HISTORICAL-BOUNDARIES, SE-HISTORIC-PARTY-DETAIL, SE-REPEAT-AND-RECOUNT, and SE-FARGELANDA-1973 retained; Atlas importer waits); `finland.json` (**333 current + 170 historical accepted with holds**, Prompt Z 2026-09-19; 478 municipal / 22 regional / 2 national / 1 other; research at `data/research/finland/`; FI-HISTORIC-MERGERS, FI-ALAND-EARLY-AND-DATES, FI-WELLBEING-TRANSITION, FI-EP-DETAIL, FI-CYCLE-LEGAL-DETAIL, FI-PARTY-CATEGORIES, and FI-MISSING-RESULTS retained; Atlas importer waits); `norway.json` (**389 current + 537 historical accepted with holds**, Prompt AA 2026-09-19; 876 municipal / 32 regional / 1 national / 17 other; research at `data/research/norway/`; SAMI-2025-ZERO-VOTE-SEAT-98d, REFORM-2020-2024, OSLO-BOROUGH-HISTORY, LONGYEARBYEN-HISTORY, LEGAL-STATUS-REPEATS, COUNTY-AGGREGATES, SAMI-OLDER-HISTORY, MUNICIPAL-HISTORY-DEPTH, and PARTY-CATEGORIES retained; Atlas importer waits) |
 
 `migrate:atlas` may create local gitignored DBs with empty typed tables. Empty schema is **not** Phase 1 exit. `import:atlas` against the frozen Albania package is the storage proof: 122 offices, 366 selected histories, 3,843 result rows, 122 municipal / 0 regional, 185 sources (182 catalogue + 3 inline), 122 briefings retained, proceedings=0, party_mappings=0.
 
@@ -120,15 +122,42 @@ Slim pack omitted bulky sources; do not invent those bytes. See
 [Switzerland_Import.md](phase1/switzerland/Switzerland_Import.md).
 Denmark Prompt X docs are in
 [docs/phase1/denmark/](phase1/denmark/README.md)
-(mapping Done; execution CI Not run). Justin accepted **106 current + 240
+(mapping Done; importer landed). Justin accepted **106 current + 240
 historical** offices on 2026-09-19. Standing policy retains offices and
 historic rows outside the ~18-month window. Greenland/Faroe Realm coverage
 gates, 2007/earlier merger successor bindings, KMD/DST detail holes, 98
 unresolved candidate bindings, and EP detail gaps stay open. No popular
 mayor rows (council-elected borgmester). Do not invent Greenland/Faroe
 offices or fabricate merger clearances. Research tables land at
-`data/research/denmark/`; Atlas importer waits. Slim pack omitted bulky
+`data/research/denmark/`. Import with
+`ATLAS_IMPORT_SCOPE=denmark` (do not use `all` on the VPS for this lineage).
+See [Denmark_Import.md](phase1/denmark/Denmark_Import.md). Slim pack omitted bulky
 sources; do not invent those bytes.
+Sweden Prompt Y docs are in
+[docs/phase1/sweden/](phase1/sweden/README.md)
+(mapping Done; execution CI Not run). Justin accepted **313 current + 7
+historical** offices on 2026-09-19 with named holds. Standing policy
+retains offices and historic rows outside the ~18-month window. HOLD:
+SE-GOTLAND-TIER, SE-EP-SAM-TIER, SE-2026-COUNT-IN-PROGRESS,
+SE-HISTORICAL-BOUNDARIES, SE-HISTORIC-PARTY-DETAIL, SE-REPEAT-AND-RECOUNT,
+and SE-FARGELANDA-1973. No popular kommunalråd / prime-minister / cabinet
+rows. Do not invent a second Gotland regional office or fabricate 2026
+final local counts. Research tables land at `data/research/sweden/`; Atlas
+importer waits. Slim pack omitted bulky sources; do not invent those
+bytes.
+Finland Prompt Z docs are in
+[docs/phase1/finland/](phase1/finland/README.md)
+(mapping Done; execution CI Not run). Justin accepted **333 current + 170
+historical** offices on 2026-09-19 with named holds. Standing policy
+retains offices and historic rows outside the ~18-month window. HOLD:
+FI-HISTORIC-MERGERS, FI-ALAND-EARLY-AND-DATES, FI-WELLBEING-TRANSITION,
+FI-EP-DETAIL, FI-CYCLE-LEGAL-DETAIL, FI-PARTY-CATEGORIES, and
+FI-MISSING-RESULTS. All 308 current municipal councils (incl. 16 Åland).
+No popular manager / prime-minister / cabinet rows. Do not invent merger
+successors, early Åland contests, wellbeing predecessors, or missing
+result scalars. Research tables land at `data/research/finland/`; Atlas
+importer waits. Slim pack omitted bulky sources; do not invent those
+bytes.
 Norway Prompt AA docs are in
 [docs/phase1/norway/](phase1/norway/README.md)
 (mapping Done; execution CI Not run). Justin accepted **389 current + 537
@@ -222,7 +251,9 @@ Deferred Prompt C rows above are **not** waived. They remain required before cla
 | Belgium Prompt S2 field map | **Documentation complete** in [docs/phase1/belgium-s2/](phase1/belgium-s2/README.md). Mapping Done; importer landed (`ATLAS_IMPORT_SCOPE=belgium`). Research at `data/research/belgium-s2/`. `belgium.json` is 1,179 current + 55 historical accepted (1,185 municipal / 15 regional / 2 national / 32 other). |
 | Netherlands Prompt T field map | **Importer landed** in [docs/phase1/netherlands/](phase1/netherlands/README.md). Mapping Done. `ATLAS_IMPORT_SCOPE=netherlands` publishes 432 current + 69 historical offices. Hilversum/Wijdemeren and 147 focused-tier reviews stay open. |
 | Switzerland Prompt U field map | **Importer landed** in [docs/phase1/switzerland/](phase1/switzerland/README.md). Mapping Done. `ATLAS_IMPORT_SCOPE=switzerland` publishes 2,805 current + 11 historical accepted offices. Research at `data/research/switzerland/`. `switzerland.json` is 2,402 municipal / 52 regional / 2 national / 360 other. 308 commune-executive holds remain unpublished. Full-register certification OPEN. |
-| Denmark Prompt X field map | **Documentation complete** in [docs/phase1/denmark/](phase1/denmark/README.md). Mapping Done; importer CI Not run. Research at `data/research/denmark/`. `denmark.json` is 106 current + 240 historical accepted (324 municipal / 20 regional / 1 national / 1 other). |
+| Denmark Prompt X field map | **Documentation complete** in [docs/phase1/denmark/](phase1/denmark/README.md). Mapping Done; importer landed (`ATLAS_IMPORT_SCOPE=denmark`). Research at `data/research/denmark/`. `denmark.json` is 106 current + 240 historical accepted (324 municipal / 20 regional / 1 national / 1 other). |
+| Sweden Prompt Y field map | **Documentation complete** in [docs/phase1/sweden/](phase1/sweden/README.md). Mapping Done; importer CI Not run. Research at `data/research/sweden/`. `sweden.json` is 313 current + 7 historical accepted with holds (292 municipal / 25 regional / 1 national / 2 other). |
+| Finland Prompt Z field map | **Documentation complete** in [docs/phase1/finland/](phase1/finland/README.md). Mapping Done; importer CI Not run. Research at `data/research/finland/`. `finland.json` is 333 current + 170 historical accepted with holds (478 municipal / 22 regional / 2 national / 1 other). |
 | Norway Prompt AA field map | **Documentation complete** in [docs/phase1/norway/](phase1/norway/README.md). Mapping Done; importer CI Not run. Research at `data/research/norway/`. `norway.json` is 389 current + 537 historical accepted with holds (876 municipal / 32 regional / 1 national / 17 other). |
 
 Still out of scope: redirects, cutover, residual-heavy draft packs, and tightness. Austria, Belgium, Bosnia, and Bulgaria `import:atlas` load their approved lineages; the observatory still skips Austria/Bulgaria XZ and Bosnia gzip. Prompt M 95 sibling withholds: disposition accepted 2026-09-17 and docs PR #27 landed; production override remains 67.

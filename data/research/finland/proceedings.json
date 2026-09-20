@@ -1,0 +1,310 @@
+[
+  {
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "FI-PRESIDENT",
+    "event_id": "event-d600d8926b4b9030e27d0649",
+    "history_key": "FI-PRESIDENT::1994::1994::ordinary",
+    "proceeding_id": "proceeding-d82d6146464e7e48af94470a",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "certified",
+    "evidence": [
+      {
+        "input_path": "data/research/finland/sources/pvaa-14db-data.json",
+        "sha256": "5791328c3c3a713f176c516b3f13056da7527783e406bae01f563b69da52a9b8",
+        "json_pointer": "/value/0",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "1994",
+          "vaaliehdokas_19_20231121": "01",
+          "kunta_110_20231009": "SSS",
+          "vaalitiedot_35_20240101": "1",
+          "contentscode": "pvaa_aanet"
+        },
+        "original_value": 828038,
+        "original_status": null
+      }
+    ]
+  },
+  {
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "FI-PRESIDENT",
+    "event_id": "event-d600d8926b4b9030e27d0649",
+    "history_key": "FI-PRESIDENT::1994::1994::ordinary",
+    "proceeding_id": "proceeding-3b9919c5bcddd712bae3c384",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "certified",
+    "evidence": [
+      {
+        "input_path": "data/research/finland/sources/pvaa-14db-data.json",
+        "sha256": "5791328c3c3a713f176c516b3f13056da7527783e406bae01f563b69da52a9b8",
+        "json_pointer": "/value/2",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "1994",
+          "vaaliehdokas_19_20231121": "01",
+          "kunta_110_20231009": "SSS",
+          "vaalitiedot_35_20240101": "2",
+          "contentscode": "pvaa_aanet"
+        },
+        "original_value": 1723485,
+        "original_status": null
+      }
+    ]
+  },
+  {
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "FI-PRESIDENT",
+    "event_id": "event-7eda0a4c3df92f4d40daf18c",
+    "history_key": "FI-PRESIDENT::2000::2000::ordinary",
+    "proceeding_id": "proceeding-67578dc9268b794f443b45e7",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "certified",
+    "evidence": [
+      {
+        "input_path": "data/research/finland/sources/pvaa-14db-data.json",
+        "sha256": "5791328c3c3a713f176c516b3f13056da7527783e406bae01f563b69da52a9b8",
+        "json_pointer": "/value/168",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2000",
+          "vaaliehdokas_19_20231121": "02",
+          "kunta_110_20231009": "SSS",
+          "vaalitiedot_35_20240101": "1",
+          "contentscode": "pvaa_aanet"
+        },
+        "original_value": 241877,
+        "original_status": null
+      }
+    ]
+  },
+  {
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "FI-PRESIDENT",
+    "event_id": "event-7eda0a4c3df92f4d40daf18c",
+    "history_key": "FI-PRESIDENT::2000::2000::ordinary",
+    "proceeding_id": "proceeding-5f1afa0659cf32f59b868782",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "certified",
+    "evidence": [
+      {
+        "input_path": "data/research/finland/sources/pvaa-14db-data.json",
+        "sha256": "5791328c3c3a713f176c516b3f13056da7527783e406bae01f563b69da52a9b8",
+        "json_pointer": "/value/210",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2000",
+          "vaaliehdokas_19_20231121": "12",
+          "kunta_110_20231009": "SSS",
+          "vaalitiedot_35_20240101": "2",
+          "contentscode": "pvaa_aanet"
+        },
+        "original_value": 1644532,
+        "original_status": null
+      }
+    ]
+  },
+  {
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "FI-PRESIDENT",
+    "event_id": "event-8ae799211cf1de58c9e527c4",
+    "history_key": "FI-PRESIDENT::2006::2006::ordinary",
+    "proceeding_id": "proceeding-46586d5ad319109938836473",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "certified",
+    "evidence": [
+      {
+        "input_path": "data/research/finland/sources/pvaa-14db-data.json",
+        "sha256": "5791328c3c3a713f176c516b3f13056da7527783e406bae01f563b69da52a9b8",
+        "json_pointer": "/value/372",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2006",
+          "vaaliehdokas_19_20231121": "12",
+          "kunta_110_20231009": "SSS",
+          "vaalitiedot_35_20240101": "1",
+          "contentscode": "pvaa_aanet"
+        },
+        "original_value": 1397030,
+        "original_status": null
+      }
+    ]
+  },
+  {
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "FI-PRESIDENT",
+    "event_id": "event-8ae799211cf1de58c9e527c4",
+    "history_key": "FI-PRESIDENT::2006::2006::ordinary",
+    "proceeding_id": "proceeding-31dddb8f3621a0abd10e9021",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "certified",
+    "evidence": [
+      {
+        "input_path": "data/research/finland/sources/pvaa-14db-data.json",
+        "sha256": "5791328c3c3a713f176c516b3f13056da7527783e406bae01f563b69da52a9b8",
+        "json_pointer": "/value/374",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2006",
+          "vaaliehdokas_19_20231121": "12",
+          "kunta_110_20231009": "SSS",
+          "vaalitiedot_35_20240101": "2",
+          "contentscode": "pvaa_aanet"
+        },
+        "original_value": 1630980,
+        "original_status": null
+      }
+    ]
+  },
+  {
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "FI-PRESIDENT",
+    "event_id": "event-8aa65f7ca733f3b13e36ee7b",
+    "history_key": "FI-PRESIDENT::2012::2012::ordinary",
+    "proceeding_id": "proceeding-90ae60adc4fa93376eca3be7",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "certified",
+    "evidence": [
+      {
+        "input_path": "data/research/finland/sources/pvaa-14db-data.json",
+        "sha256": "5791328c3c3a713f176c516b3f13056da7527783e406bae01f563b69da52a9b8",
+        "json_pointer": "/value/500",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2012",
+          "vaaliehdokas_19_20231121": "03",
+          "kunta_110_20231009": "SSS",
+          "vaalitiedot_35_20240101": "1",
+          "contentscode": "pvaa_aanet"
+        },
+        "original_value": 536555,
+        "original_status": null
+      }
+    ]
+  },
+  {
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "FI-PRESIDENT",
+    "event_id": "event-8aa65f7ca733f3b13e36ee7b",
+    "history_key": "FI-PRESIDENT::2012::2012::ordinary",
+    "proceeding_id": "proceeding-d054cba1d6514a1770273556",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "certified",
+    "evidence": [
+      {
+        "input_path": "data/research/finland/sources/pvaa-14db-data.json",
+        "sha256": "5791328c3c3a713f176c516b3f13056da7527783e406bae01f563b69da52a9b8",
+        "json_pointer": "/value/562",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2012",
+          "vaaliehdokas_19_20231121": "18",
+          "kunta_110_20231009": "SSS",
+          "vaalitiedot_35_20240101": "2",
+          "contentscode": "pvaa_aanet"
+        },
+        "original_value": 1802328,
+        "original_status": null
+      }
+    ]
+  },
+  {
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "FI-PRESIDENT",
+    "event_id": "event-ad6ac02aaadbbeda013c0c55",
+    "history_key": "FI-PRESIDENT::2018::2018::ordinary",
+    "proceeding_id": "proceeding-adfef13fc7250835aca54a61",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "certified",
+    "evidence": [
+      {
+        "input_path": "data/research/finland/sources/pvaa-14db-data.json",
+        "sha256": "5791328c3c3a713f176c516b3f13056da7527783e406bae01f563b69da52a9b8",
+        "json_pointer": "/value/664",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2018",
+          "vaaliehdokas_19_20231121": "03",
+          "kunta_110_20231009": "SSS",
+          "vaalitiedot_35_20240101": "1",
+          "contentscode": "pvaa_aanet"
+        },
+        "original_value": 185305,
+        "original_status": null
+      }
+    ]
+  },
+  {
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "FI-PRESIDENT",
+    "event_id": "event-41dd2a4b33d13ca4979243a9",
+    "history_key": "FI-PRESIDENT::2024::2024::ordinary",
+    "proceeding_id": "proceeding-ffc7d7d7db7b7aec348f5a22",
+    "kind": "first_round",
+    "sequence_no": 1,
+    "supersedes_id": null,
+    "legal_outcome": "certified",
+    "evidence": [
+      {
+        "input_path": "data/research/finland/sources/pvaa-14db-data.json",
+        "sha256": "5791328c3c3a713f176c516b3f13056da7527783e406bae01f563b69da52a9b8",
+        "json_pointer": "/value/912",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2024",
+          "vaaliehdokas_19_20231121": "24",
+          "kunta_110_20231009": "SSS",
+          "vaalitiedot_35_20240101": "1",
+          "contentscode": "pvaa_aanet"
+        },
+        "original_value": 836712,
+        "original_status": null
+      }
+    ]
+  },
+  {
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "FI-PRESIDENT",
+    "event_id": "event-41dd2a4b33d13ca4979243a9",
+    "history_key": "FI-PRESIDENT::2024::2024::ordinary",
+    "proceeding_id": "proceeding-b29c9ea03621a332cbf5fade",
+    "kind": "runoff",
+    "sequence_no": 2,
+    "supersedes_id": null,
+    "legal_outcome": "certified",
+    "evidence": [
+      {
+        "input_path": "data/research/finland/sources/pvaa-14db-data.json",
+        "sha256": "5791328c3c3a713f176c516b3f13056da7527783e406bae01f563b69da52a9b8",
+        "json_pointer": "/value/914",
+        "locator": null,
+        "dimensions": {
+          "timeperiod_y": "2024",
+          "vaaliehdokas_19_20231121": "24",
+          "kunta_110_20231009": "SSS",
+          "vaalitiedot_35_20240101": "2",
+          "contentscode": "pvaa_aanet"
+        },
+        "original_value": 1476634,
+        "original_status": null
+      }
+    ]
+  }
+]

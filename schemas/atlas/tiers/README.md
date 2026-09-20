@@ -9,7 +9,7 @@ Albania `Regional / municipal` are **not** classifiers.
 
 Files were rebuilt from each package’s office register (one row per `office_id`;
 no invented IDs). See [docs/phase0/REPORT.md](../../../docs/phase0/REPORT.md).
-Albania municipal and Alderney `other` are **`approved`**. Andorra is **`approved`** (Justin 2026-09-16; 7 communal councils). Armenia is **`approved`** (Prompt L 2026-09-17; 71 municipal / 0 regional). Five Armenia boundary/calendar research reviews remain open separately from geographic-tier approval. Austria is **`approved`** (Prompt N 2026-09-17; 2,034 municipal / 4 regional). The Austria package is on main (PR #11, `f0f2c86`); `import:atlas` loads the lineage. The St. Georgen am Walde 2015 publication hold and open calendar/boundary research notes remain. Bosnia and Herzegovina is **`approved`** (Prompt O 2026-09-17; **all 13 regional**). The Bosnia package is on main (PR #15, `33454ab`); import with `ATLAS_IMPORT_SCOPE=bosnia`. Open RS presidential / coalition / calendar-certainty notes remain; do not invent Brčko or municipal offices. Bulgaria is **`approved` with a hold** (Prompt P 2026-09-19; **530 municipality-wide municipal accepted**, **3,067 district/village held**, **0 regional**). The Bulgaria package is on main (PR #16 head `de354127`); `import:atlas` with `ATLAS_IMPORT_SCOPE=bulgaria` loads only the 530 accepted rows unless submunicipal policy changes. Градец / qualification-change notes remain open. Belgium is **`approved`** (Prompt S2 2026-09-19; **1,179 current + 55 historical**; 1,185 municipal / 15 regional / 2 national / 32 other). Research lives at `data/research/belgium-s2/`; import with `ATLAS_IMPORT_SCOPE=belgium`. Remaining-universe indirect-body gaps stay open. Netherlands is **`approved`** (Prompt T 2026-09-19; **432 current + 69 historical**; 414 municipal / 12 regional / 3 national / 72 other). Research lives at `data/research/netherlands/`; import with `ATLAS_IMPORT_SCOPE=netherlands`. Hilversum/Wijdemeren successor binding, named historic gaps, and ~147 focused-tier reviews stay open. Switzerland is **`approved` with holds** (Prompt U 2026-09-19; **2,805 current + 11 historical accepted subset**; 2,402 municipal / 52 regional / 2 national / 360 other). Research lives at `data/research/switzerland/`; import with `ATLAS_IMPORT_SCOPE=switzerland`. Full-register certification remains OPEN. 308 commune-executive gaps (VD 284, SZ 24), thin historic/merger archive, 1,938 parliament caveats, and disputed-result notes stay open. Denmark is **`approved`** (Prompt X 2026-09-19; **106 current + 240 historical**; 324 municipal / 20 regional / 1 national / 1 other). Research lives at `data/research/denmark/`; the Atlas importer waits. Greenland/Faroe Realm coverage gates, 2007/earlier merger successor bindings, KMD/DST detail holes, 98 unresolved candidate bindings, and EP detail gaps stay open. No popular mayor rows. Norway is **`approved` with holds** (Prompt AA 2026-09-19; **389 current + 537 historical**; 876 municipal / 32 regional / 1 national / 17 other). Research lives at `data/research/norway/`; the Atlas importer waits. Named holds SAMI-2025-ZERO-VOTE-SEAT-98d, REFORM-2020-2024, OSLO-BOROUGH-HISTORY, LONGYEARBYEN-HISTORY, LEGAL-STATUS-REPEATS, COUNTY-AGGREGATES, SAMI-OLDER-HISTORY, MUNICIPAL-HISTORY-DEPTH, and PARTY-CATEGORIES stay open. No popular mayor / prime-minister / cabinet or EP rows.
+Albania municipal and Alderney `other` are **`approved`**. Andorra is **`approved`** (Justin 2026-09-16; 7 communal councils). Armenia is **`approved`** (Prompt L 2026-09-17; 71 municipal / 0 regional). Five Armenia boundary/calendar research reviews remain open separately from geographic-tier approval. Austria is **`approved`** (Prompt N 2026-09-17; 2,034 municipal / 4 regional). The Austria package is on main (PR #11, `f0f2c86`); `import:atlas` loads the lineage. The St. Georgen am Walde 2015 publication hold and open calendar/boundary research notes remain. Bosnia and Herzegovina is **`approved`** (Prompt O 2026-09-17; **all 13 regional**). The Bosnia package is on main (PR #15, `33454ab`); import with `ATLAS_IMPORT_SCOPE=bosnia`. Open RS presidential / coalition / calendar-certainty notes remain; do not invent Brčko or municipal offices. Bulgaria is **`approved` with a hold** (Prompt P 2026-09-19; **530 municipality-wide municipal accepted**, **3,067 district/village held**, **0 regional**). The Bulgaria package is on main (PR #16 head `de354127`); `import:atlas` with `ATLAS_IMPORT_SCOPE=bulgaria` loads only the 530 accepted rows unless submunicipal policy changes. Градец / qualification-change notes remain open. Belgium is **`approved`** (Prompt S2 2026-09-19; **1,179 current + 55 historical**; 1,185 municipal / 15 regional / 2 national / 32 other). Research lives at `data/research/belgium-s2/`; import with `ATLAS_IMPORT_SCOPE=belgium`. Remaining-universe indirect-body gaps stay open. Netherlands is **`approved`** (Prompt T 2026-09-19; **432 current + 69 historical**; 414 municipal / 12 regional / 3 national / 72 other). Research lives at `data/research/netherlands/`; import with `ATLAS_IMPORT_SCOPE=netherlands`. Hilversum/Wijdemeren successor binding, named historic gaps, and ~147 focused-tier reviews stay open. Switzerland is **`approved` with holds** (Prompt U 2026-09-19; **2,805 current + 11 historical accepted subset**; 2,402 municipal / 52 regional / 2 national / 360 other). Research lives at `data/research/switzerland/`; import with `ATLAS_IMPORT_SCOPE=switzerland`. Full-register certification remains OPEN. 308 commune-executive gaps (VD 284, SZ 24), thin historic/merger archive, 1,938 parliament caveats, and disputed-result notes stay open. Denmark is **`approved`** (Prompt X 2026-09-19; **106 current + 240 historical**; 324 municipal / 20 regional / 1 national / 1 other). Research lives at `data/research/denmark/`; import with `ATLAS_IMPORT_SCOPE=denmark`. Greenland/Faroe Realm coverage gates, 2007/earlier merger successor bindings, KMD/DST detail holes, 98 unresolved candidate bindings, and EP detail gaps stay open. No popular mayor rows. Sweden is **`approved` with holds** (Prompt Y 2026-09-19; **313 current + 7 historical**; 292 municipal / 25 regional / 1 national / 2 other). Research lives at `data/research/sweden/`; the Atlas importer waits. Named holds SE-GOTLAND-TIER, SE-EP-SAM-TIER, SE-2026-COUNT-IN-PROGRESS, SE-HISTORICAL-BOUNDARIES, SE-HISTORIC-PARTY-DETAIL, SE-REPEAT-AND-RECOUNT, and SE-FARGELANDA-1973 stay open. No popular kommunalråd / prime-minister / cabinet rows. Finland is **`approved` with holds** (Prompt Z 2026-09-19; **333 current + 170 historical**; 478 municipal / 22 regional / 2 national / 1 other). Research lives at `data/research/finland/`; the Atlas importer waits. Named holds FI-HISTORIC-MERGERS, FI-ALAND-EARLY-AND-DATES, FI-WELLBEING-TRANSITION, FI-EP-DETAIL, FI-CYCLE-LEGAL-DETAIL, FI-PARTY-CATEGORIES, and FI-MISSING-RESULTS stay open. No popular manager / prime-minister / cabinet rows. Norway is **`approved` with holds** (Prompt AA 2026-09-19; **389 current + 537 historical**; 876 municipal / 32 regional / 1 national / 17 other). Research lives at `data/research/norway/`; the Atlas importer waits. Named holds SAMI-2025-ZERO-VOTE-SEAT-98d, REFORM-2020-2024, OSLO-BOROUGH-HISTORY, LONGYEARBYEN-HISTORY, LEGAL-STATUS-REPEATS, COUNTY-AGGREGATES, SAMI-OLDER-HISTORY, MUNICIPAL-HISTORY-DEPTH, and PARTY-CATEGORIES stay open. No popular mayor / prime-minister / cabinet or EP rows.
 
 | File | Register rows | Proposed tier | Human review |
 | --- | ---: | --- | --- |
@@ -23,7 +23,9 @@ Albania municipal and Alderney `other` are **`approved`**. Andorra is **`approve
 | [`belgium.json`](belgium.json) | 1234 | `municipal` (1185) + `regional` (15) + `national` (2) + `other` (32) | **Approved** 2026-09-19 (Justin / Prompt S2). 1,179 current + 55 historical. Remaining-universe notes retained. Importer via `ATLAS_IMPORT_SCOPE=belgium` |
 | [`netherlands.json`](netherlands.json) | 501 | `municipal` (414) + `regional` (12) + `national` (3) + `other` (72) | **Approved** 2026-09-19 (Justin / Prompt T). 432 current + 69 historical. Focused-tier reviews (~147) and Hilversum/Wijdemeren stay open. Importer via `ATLAS_IMPORT_SCOPE=netherlands` |
 | [`switzerland.json`](switzerland.json) | 2816 | `municipal` (2402) + `regional` (52) + `national` (2) + `other` (360) | **Accepted-with-holds** 2026-09-19 (Justin / Prompt U). 2,805 current + 11 historical subset. HOLD 308 commune executives (VD 284, SZ 24), thin historic, 1,938 parliament caveats. Full-register certification OPEN. Importer via `ATLAS_IMPORT_SCOPE=switzerland` |
-| [`denmark.json`](denmark.json) | 346 | `municipal` (324) + `regional` (20) + `national` (1) + `other` (1) | **Approved** 2026-09-19 (Justin / Prompt X). 106 current + 240 historical. Greenland/Faroe Realm, 2007/earlier mergers, KMD/DST holes, 98 candidate bindings, and EP detail stay open. Atlas importer waits |
+| [`denmark.json`](denmark.json) | 346 | `municipal` (324) + `regional` (20) + `national` (1) + `other` (1) | **Approved** 2026-09-19 (Justin / Prompt X). 106 current + 240 historical. Greenland/Faroe Realm, 2007/earlier mergers, KMD/DST holes, 98 candidate bindings, and EP detail stay open. Importer via `ATLAS_IMPORT_SCOPE=denmark` |
+| [`sweden.json`](sweden.json) | 320 | `municipal` (292) + `regional` (25) + `national` (1) + `other` (2) | **Accepted-with-holds** 2026-09-19 (Justin / Prompt Y). 313 current + 7 historical. HOLD Gotland municipal, EP+Sameting other, 2026 preliminary locals, historic boundary/party/repeat notes, Färgelanda 1973. Atlas importer waits |
+| [`finland.json`](finland.json) | 503 | `municipal` (478) + `regional` (22) + `national` (2) + `other` (1) | **Accepted-with-holds** 2026-09-19 (Justin / Prompt Z). 333 current + 170 historical. HOLD historic mergers, early Åland dates, wellbeing transition, EP detail, cycle legal detail, party categories, missing results. Atlas importer waits |
 | [`norway.json`](norway.json) | 926 | `municipal` (876) + `regional` (32) + `national` (1) + `other` (17) | **Accepted-with-holds** 2026-09-19 (Justin / Prompt AA). 389 current + 537 historical. HOLD Sami 2025 98d conflict, 2020/2024 reform, Oslo borough / Longyearbyen history, legal repeats, county aggregates, older Sami, municipal depth, party categories. Atlas importer waits |
 
 Vocabulary uses `national` as a proposed label. `schema_compatibility` maps
@@ -116,7 +118,44 @@ Focused-tier review rows (293) keep drafted tiers; Justin accepted the
 register universe. No popular mayor rows (council-elected borgmester). Do
 not invent Greenland/Faroe offices or fabricate merger clearances. Research
 tables live at `data/research/denmark/`. Slim pack omitted bulky sources; do
-not invent those bytes. The Atlas importer waits.
+not invent those bytes. Import with `ATLAS_IMPORT_SCOPE=denmark`; do not use
+`all` on the VPS for this lineage.
+
+**Sweden** is **approved with holds** (Prompt Y, Justin 2026-09-19
+America/Edmonton; SHA-256
+`dc13885023d2d454dae39272a5fe668e384e7606d4f2f89a3df136e9f0170ef7`;
+predecessor draft `ba95b2671f56b45077e9a4987e54d59438793cdfe053d8486de04dc54c0f2139`).
+Exact 320 office IDs: **313 current + 7 historical** (292 municipal /
+25 regional / 1 national / 2 other). Standing policy retains offices and
+historic rows outside the ~18-month alert window. Named holds stay open:
+SE-GOTLAND-TIER (keep municipal `SE-K0980-C`; no second regional office),
+SE-EP-SAM-TIER (EP and elected Sameting remain `other`),
+SE-2026-COUNT-IN-PROGRESS (310 local 2026 vectors remain preliminary),
+SE-HISTORICAL-BOUNDARIES, SE-HISTORIC-PARTY-DETAIL, SE-REPEAT-AND-RECOUNT,
+and SE-FARGELANDA-1973 (hypothetical 1973 seats withheld from typed seats).
+Focused-tier review rows (10) keep drafted tiers; Justin accepted the
+register universe. No popular kommunalråd / prime-minister / cabinet rows.
+Do not invent a second Gotland regional office or fabricate 2026 final
+local counts. Research tables live at `data/research/sweden/`. Slim pack
+omitted bulky sources; do not invent those bytes. The Atlas importer waits.
+
+**Finland** is **approved with holds** (Prompt Z, Justin 2026-09-19
+America/Edmonton; SHA-256
+`15edd48df39caae6cfefec9b20b0a20a7bafcfe7e919accbb46d056924083d53`;
+predecessor draft `7c3a4c1c17538d5600a10c655e7fb18b12f977a1ef79c7608f9869d813df2797`).
+Exact 503 office IDs: **333 current + 170 historical** (478 municipal /
+22 regional / 2 national / 1 other). Standing policy retains offices and
+historic rows outside the ~18-month alert window. Named holds stay open:
+FI-HISTORIC-MERGERS, FI-ALAND-EARLY-AND-DATES, FI-WELLBEING-TRANSITION,
+FI-EP-DETAIL, FI-CYCLE-LEGAL-DETAIL, FI-PARTY-CATEGORIES, and
+FI-MISSING-RESULTS. All 308 current municipal councils are present,
+including 16 Åland councils; Helsinki is counted once. Focused-review
+flags remain on FI-EP and the 170 historical municipal offices; Justin
+accepted the register universe. No popular appointed-manager / prime-minister
+/ cabinet rows. Do not invent merger successors, early Åland contests,
+wellbeing predecessors, or missing result scalars. Research tables live
+at `data/research/finland/`. Slim pack omitted bulky sources; do not
+invent those bytes. The Atlas importer waits.
 
 **Norway** is **approved with holds** (Prompt AA, Justin 2026-09-19
 America/Edmonton; SHA-256
@@ -159,7 +198,7 @@ landed) and are not executable yet.
 
 Do not treat proposed-tier counts as approved coverage. Office IDs and proposed
 labels come from the Prompt E pack; they are not invented here. Albania,
-Andorra, Alderney, Armenia, Austria, Bosnia and Herzegovina, Bulgaria, Belgium, Netherlands, Switzerland, Denmark, and Norway files above are unchanged.
+Andorra, Alderney, Armenia, Austria, Bosnia and Herzegovina, Bulgaria, Belgium, Netherlands, Switzerland, Denmark, Sweden, Finland, and Norway files above are unchanged.
 
 | File | Offices | Historical | Status |
 | --- | ---: | ---: | --- |

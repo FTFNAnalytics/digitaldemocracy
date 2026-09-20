@@ -1,0 +1,6054 @@
+[
+  {
+    "geography_id": "SE",
+    "country_id": "sweden",
+    "name": "Sverige",
+    "parent_geography_id": null,
+    "geography_type": "country",
+    "official_code": "SE",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/0",
+        "locator": null
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0114",
+    "country_id": "sweden",
+    "name": "Upplands Väsby",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0114",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/20",
+        "locator": null,
+        "source_code": "0114"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0115",
+    "country_id": "sweden",
+    "name": "Vallentuna",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0115",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/22",
+        "locator": null,
+        "source_code": "0115"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0117",
+    "country_id": "sweden",
+    "name": "Österåker",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0117",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/25",
+        "locator": null,
+        "source_code": "0117"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0120",
+    "country_id": "sweden",
+    "name": "Värmdö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0120",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/24",
+        "locator": null,
+        "source_code": "0120"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0123",
+    "country_id": "sweden",
+    "name": "Järfälla",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0123",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/5",
+        "locator": null,
+        "source_code": "0123"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0125",
+    "country_id": "sweden",
+    "name": "Ekerö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0125",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/2",
+        "locator": null,
+        "source_code": "0125"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0126",
+    "country_id": "sweden",
+    "name": "Huddinge",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0126",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/4",
+        "locator": null,
+        "source_code": "0126"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0127",
+    "country_id": "sweden",
+    "name": "Botkyrka",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0127",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/0",
+        "locator": null,
+        "source_code": "0127"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0128",
+    "country_id": "sweden",
+    "name": "Salem",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0128",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/11",
+        "locator": null,
+        "source_code": "0128"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0136",
+    "country_id": "sweden",
+    "name": "Haninge",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0136",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/3",
+        "locator": null,
+        "source_code": "0136"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0138",
+    "country_id": "sweden",
+    "name": "Tyresö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0138",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/18",
+        "locator": null,
+        "source_code": "0138"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0139",
+    "country_id": "sweden",
+    "name": "Upplands-Bro",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0139",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/21",
+        "locator": null,
+        "source_code": "0139"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0140",
+    "country_id": "sweden",
+    "name": "Nykvarn",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0140",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/9",
+        "locator": null,
+        "source_code": "0140"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0160",
+    "country_id": "sweden",
+    "name": "Täby",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0160",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/19",
+        "locator": null,
+        "source_code": "0160"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0162",
+    "country_id": "sweden",
+    "name": "Danderyd",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0162",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/1",
+        "locator": null,
+        "source_code": "0162"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0163",
+    "country_id": "sweden",
+    "name": "Sollentuna",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0163",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/13",
+        "locator": null,
+        "source_code": "0163"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0180",
+    "country_id": "sweden",
+    "name": "Stockholm",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0180",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/15",
+        "locator": null,
+        "source_code": "0180"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0181",
+    "country_id": "sweden",
+    "name": "Södertälje",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0181",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/17",
+        "locator": null,
+        "source_code": "0181"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0182",
+    "country_id": "sweden",
+    "name": "Nacka",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0182",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/7",
+        "locator": null,
+        "source_code": "0182"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0183",
+    "country_id": "sweden",
+    "name": "Sundbyberg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0183",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/16",
+        "locator": null,
+        "source_code": "0183"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0184",
+    "country_id": "sweden",
+    "name": "Solna",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0184",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/14",
+        "locator": null,
+        "source_code": "0184"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0186",
+    "country_id": "sweden",
+    "name": "Lidingö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0186",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/6",
+        "locator": null,
+        "source_code": "0186"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0187",
+    "country_id": "sweden",
+    "name": "Vaxholm",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0187",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/23",
+        "locator": null,
+        "source_code": "0187"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0188",
+    "country_id": "sweden",
+    "name": "Norrtälje",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0188",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/8",
+        "locator": null,
+        "source_code": "0188"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0191",
+    "country_id": "sweden",
+    "name": "Sigtuna",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0191",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/12",
+        "locator": null,
+        "source_code": "0191"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0192",
+    "country_id": "sweden",
+    "name": "Nynäshamn",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0192",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/11/valgeografi/10",
+        "locator": null,
+        "source_code": "0192"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0305",
+    "country_id": "sweden",
+    "name": "Håbo",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0305",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/13/valgeografi/2",
+        "locator": null,
+        "source_code": "0305"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0319",
+    "country_id": "sweden",
+    "name": "Älvkarleby",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0319",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/13/valgeografi/6",
+        "locator": null,
+        "source_code": "0319"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0330",
+    "country_id": "sweden",
+    "name": "Knivsta",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0330",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/13/valgeografi/3",
+        "locator": null,
+        "source_code": "0330"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0331",
+    "country_id": "sweden",
+    "name": "Heby",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0331",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/13/valgeografi/1",
+        "locator": null,
+        "source_code": "0331"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0360",
+    "country_id": "sweden",
+    "name": "Tierp",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0360",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/13/valgeografi/4",
+        "locator": null,
+        "source_code": "0360"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0380",
+    "country_id": "sweden",
+    "name": "Uppsala",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0380",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/13/valgeografi/5",
+        "locator": null,
+        "source_code": "0380"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0381",
+    "country_id": "sweden",
+    "name": "Enköping",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0381",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/13/valgeografi/0",
+        "locator": null,
+        "source_code": "0381"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0382",
+    "country_id": "sweden",
+    "name": "Östhammar",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0382",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/13/valgeografi/7",
+        "locator": null,
+        "source_code": "0382"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0428",
+    "country_id": "sweden",
+    "name": "Vingåker",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0428",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/12/valgeografi/8",
+        "locator": null,
+        "source_code": "0428"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0461",
+    "country_id": "sweden",
+    "name": "Gnesta",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0461",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/12/valgeografi/2",
+        "locator": null,
+        "source_code": "0461"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0480",
+    "country_id": "sweden",
+    "name": "Nyköping",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0480",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/12/valgeografi/4",
+        "locator": null,
+        "source_code": "0480"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0481",
+    "country_id": "sweden",
+    "name": "Oxelösund",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0481",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/12/valgeografi/5",
+        "locator": null,
+        "source_code": "0481"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0482",
+    "country_id": "sweden",
+    "name": "Flen",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0482",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/12/valgeografi/1",
+        "locator": null,
+        "source_code": "0482"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0483",
+    "country_id": "sweden",
+    "name": "Katrineholm",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0483",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/12/valgeografi/3",
+        "locator": null,
+        "source_code": "0483"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0484",
+    "country_id": "sweden",
+    "name": "Eskilstuna",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0484",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/12/valgeografi/0",
+        "locator": null,
+        "source_code": "0484"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0486",
+    "country_id": "sweden",
+    "name": "Strängnäs",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0486",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/12/valgeografi/6",
+        "locator": null,
+        "source_code": "0486"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0488",
+    "country_id": "sweden",
+    "name": "Trosa",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0488",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/12/valgeografi/7",
+        "locator": null,
+        "source_code": "0488"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0509",
+    "country_id": "sweden",
+    "name": "Ödeshög",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0509",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/20/valgeografi/12",
+        "locator": null,
+        "source_code": "0509"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0512",
+    "country_id": "sweden",
+    "name": "Ydre",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0512",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/20/valgeografi/10",
+        "locator": null,
+        "source_code": "0512"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0513",
+    "country_id": "sweden",
+    "name": "Kinda",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0513",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/20/valgeografi/2",
+        "locator": null,
+        "source_code": "0513"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0560",
+    "country_id": "sweden",
+    "name": "Boxholm",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0560",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/20/valgeografi/0",
+        "locator": null,
+        "source_code": "0560"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0561",
+    "country_id": "sweden",
+    "name": "Åtvidaberg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0561",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/20/valgeografi/11",
+        "locator": null,
+        "source_code": "0561"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0562",
+    "country_id": "sweden",
+    "name": "Finspång",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0562",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/20/valgeografi/1",
+        "locator": null,
+        "source_code": "0562"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0563",
+    "country_id": "sweden",
+    "name": "Valdemarsvik",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0563",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/20/valgeografi/9",
+        "locator": null,
+        "source_code": "0563"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0580",
+    "country_id": "sweden",
+    "name": "Linköping",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0580",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/20/valgeografi/3",
+        "locator": null,
+        "source_code": "0580"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0581",
+    "country_id": "sweden",
+    "name": "Norrköping",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0581",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/20/valgeografi/6",
+        "locator": null,
+        "source_code": "0581"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0582",
+    "country_id": "sweden",
+    "name": "Söderköping",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0582",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/20/valgeografi/7",
+        "locator": null,
+        "source_code": "0582"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0583",
+    "country_id": "sweden",
+    "name": "Motala",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0583",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/20/valgeografi/5",
+        "locator": null,
+        "source_code": "0583"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0584",
+    "country_id": "sweden",
+    "name": "Vadstena",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0584",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/20/valgeografi/8",
+        "locator": null,
+        "source_code": "0584"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0586",
+    "country_id": "sweden",
+    "name": "Mjölby",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0586",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/20/valgeografi/4",
+        "locator": null,
+        "source_code": "0586"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0604",
+    "country_id": "sweden",
+    "name": "Aneby",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0604",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/6/valgeografi/0",
+        "locator": null,
+        "source_code": "0604"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0617",
+    "country_id": "sweden",
+    "name": "Gnosjö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0617",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/6/valgeografi/3",
+        "locator": null,
+        "source_code": "0617"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0642",
+    "country_id": "sweden",
+    "name": "Mullsjö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0642",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/6/valgeografi/6",
+        "locator": null,
+        "source_code": "0642"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0643",
+    "country_id": "sweden",
+    "name": "Habo",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0643",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/6/valgeografi/4",
+        "locator": null,
+        "source_code": "0643"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0662",
+    "country_id": "sweden",
+    "name": "Gislaved",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0662",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/6/valgeografi/2",
+        "locator": null,
+        "source_code": "0662"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0665",
+    "country_id": "sweden",
+    "name": "Vaggeryd",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0665",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/6/valgeografi/10",
+        "locator": null,
+        "source_code": "0665"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0680",
+    "country_id": "sweden",
+    "name": "Jönköping",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0680",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/6/valgeografi/5",
+        "locator": null,
+        "source_code": "0680"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0682",
+    "country_id": "sweden",
+    "name": "Nässjö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0682",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/6/valgeografi/7",
+        "locator": null,
+        "source_code": "0682"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0683",
+    "country_id": "sweden",
+    "name": "Värnamo",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0683",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/6/valgeografi/12",
+        "locator": null,
+        "source_code": "0683"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0684",
+    "country_id": "sweden",
+    "name": "Sävsjö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0684",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/6/valgeografi/8",
+        "locator": null,
+        "source_code": "0684"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0685",
+    "country_id": "sweden",
+    "name": "Vetlanda",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0685",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/6/valgeografi/11",
+        "locator": null,
+        "source_code": "0685"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0686",
+    "country_id": "sweden",
+    "name": "Eksjö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0686",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/6/valgeografi/1",
+        "locator": null,
+        "source_code": "0686"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0687",
+    "country_id": "sweden",
+    "name": "Tranås",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0687",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/6/valgeografi/9",
+        "locator": null,
+        "source_code": "0687"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0760",
+    "country_id": "sweden",
+    "name": "Uppvidinge",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0760",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/8/valgeografi/5",
+        "locator": null,
+        "source_code": "0760"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0761",
+    "country_id": "sweden",
+    "name": "Lessebo",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0761",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/8/valgeografi/1",
+        "locator": null,
+        "source_code": "0761"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0763",
+    "country_id": "sweden",
+    "name": "Tingsryd",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0763",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/8/valgeografi/4",
+        "locator": null,
+        "source_code": "0763"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0764",
+    "country_id": "sweden",
+    "name": "Alvesta",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0764",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/8/valgeografi/0",
+        "locator": null,
+        "source_code": "0764"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0765",
+    "country_id": "sweden",
+    "name": "Älmhult",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0765",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/8/valgeografi/7",
+        "locator": null,
+        "source_code": "0765"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0767",
+    "country_id": "sweden",
+    "name": "Markaryd",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0767",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/8/valgeografi/3",
+        "locator": null,
+        "source_code": "0767"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0780",
+    "country_id": "sweden",
+    "name": "Växjö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0780",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/8/valgeografi/6",
+        "locator": null,
+        "source_code": "0780"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0781",
+    "country_id": "sweden",
+    "name": "Ljungby",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0781",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/8/valgeografi/2",
+        "locator": null,
+        "source_code": "0781"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0821",
+    "country_id": "sweden",
+    "name": "Högsby",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0821",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/7/valgeografi/3",
+        "locator": null,
+        "source_code": "0821"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0834",
+    "country_id": "sweden",
+    "name": "Torsås",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0834",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/7/valgeografi/9",
+        "locator": null,
+        "source_code": "0834"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0840",
+    "country_id": "sweden",
+    "name": "Mörbylånga",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0840",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/7/valgeografi/6",
+        "locator": null,
+        "source_code": "0840"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0860",
+    "country_id": "sweden",
+    "name": "Hultsfred",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0860",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/7/valgeografi/2",
+        "locator": null,
+        "source_code": "0860"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0861",
+    "country_id": "sweden",
+    "name": "Mönsterås",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0861",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/7/valgeografi/5",
+        "locator": null,
+        "source_code": "0861"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0862",
+    "country_id": "sweden",
+    "name": "Emmaboda",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0862",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/7/valgeografi/1",
+        "locator": null,
+        "source_code": "0862"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0880",
+    "country_id": "sweden",
+    "name": "Kalmar",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0880",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/7/valgeografi/4",
+        "locator": null,
+        "source_code": "0880"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0881",
+    "country_id": "sweden",
+    "name": "Nybro",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0881",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/7/valgeografi/7",
+        "locator": null,
+        "source_code": "0881"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0882",
+    "country_id": "sweden",
+    "name": "Oskarshamn",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0882",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/7/valgeografi/8",
+        "locator": null,
+        "source_code": "0882"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0883",
+    "country_id": "sweden",
+    "name": "Västervik",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0883",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/7/valgeografi/11",
+        "locator": null,
+        "source_code": "0883"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0884",
+    "country_id": "sweden",
+    "name": "Vimmerby",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0884",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/7/valgeografi/10",
+        "locator": null,
+        "source_code": "0884"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0885",
+    "country_id": "sweden",
+    "name": "Borgholm",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0885",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/7/valgeografi/0",
+        "locator": null,
+        "source_code": "0885"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K0980",
+    "country_id": "sweden",
+    "name": "Gotland",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "0980",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/2/valgeografi/0",
+        "locator": null,
+        "source_code": "0980"
+      },
+      {
+        "input_path": "data/research/sweden/sources/kommunallag.html",
+        "sha256": "d4b407cd4f07e023b4040cc0960eff7318fbad9c1342cacb1d75a2b0e253c2a3",
+        "json_pointer": null,
+        "locator": "3 kap. 14 §"
+      },
+      {
+        "input_path": "data/research/sweden/sources/raw-2026.html",
+        "sha256": "9b81b339e2e7e6e9eee9998bc2cd3a23e237d772128cd147353994f50e0afe1d",
+        "json_pointer": null,
+        "locator": "Antal röstberättigade på kvalifikationsdagen: Gotland har inget val till regionfullmäktige"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1060",
+    "country_id": "sweden",
+    "name": "Olofström",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1060",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/0/valgeografi/2",
+        "locator": null,
+        "source_code": "1060"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1080",
+    "country_id": "sweden",
+    "name": "Karlskrona",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1080",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/0/valgeografi/1",
+        "locator": null,
+        "source_code": "1080"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1081",
+    "country_id": "sweden",
+    "name": "Ronneby",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1081",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/0/valgeografi/3",
+        "locator": null,
+        "source_code": "1081"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1082",
+    "country_id": "sweden",
+    "name": "Karlshamn",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1082",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/0/valgeografi/0",
+        "locator": null,
+        "source_code": "1082"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1083",
+    "country_id": "sweden",
+    "name": "Sölvesborg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1083",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/0/valgeografi/4",
+        "locator": null,
+        "source_code": "1083"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1214",
+    "country_id": "sweden",
+    "name": "Svalöv",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1214",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/23",
+        "locator": null,
+        "source_code": "1214"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1229",
+    "country_id": "sweden",
+    "name": "Bara",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1229",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/data-ME0104T1.json",
+        "sha256": "385ff3a86f6dcc60afbfb8223d0404b36b8e45fba7daea2019cb3979d907232b",
+        "json_pointer": "/dimension/Region/category/label/1229",
+        "locator": null
+      },
+      {
+        "input_path": "data/research/sweden/sources/data-ME0104T1.json",
+        "sha256": "385ff3a86f6dcc60afbfb8223d0404b36b8e45fba7daea2019cb3979d907232b",
+        "json_pointer": "/dimension/Region/note/2",
+        "locator": null
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1230",
+    "country_id": "sweden",
+    "name": "Staffanstorp",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1230",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/22",
+        "locator": null,
+        "source_code": "1230"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1231",
+    "country_id": "sweden",
+    "name": "Burlöv",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1231",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/2",
+        "locator": null,
+        "source_code": "1231"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1233",
+    "country_id": "sweden",
+    "name": "Vellinge",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1233",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/27",
+        "locator": null,
+        "source_code": "1233"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1256",
+    "country_id": "sweden",
+    "name": "Östra Göinge",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1256",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/32",
+        "locator": null,
+        "source_code": "1256"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1257",
+    "country_id": "sweden",
+    "name": "Örkelljunga",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1257",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/31",
+        "locator": null,
+        "source_code": "1257"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1260",
+    "country_id": "sweden",
+    "name": "Bjuv",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1260",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/0",
+        "locator": null,
+        "source_code": "1260"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1261",
+    "country_id": "sweden",
+    "name": "Kävlinge",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1261",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/12",
+        "locator": null,
+        "source_code": "1261"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1262",
+    "country_id": "sweden",
+    "name": "Lomma",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1262",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/14",
+        "locator": null,
+        "source_code": "1262"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1263",
+    "country_id": "sweden",
+    "name": "Svedala",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1263",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/24",
+        "locator": null,
+        "source_code": "1263"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1263-PRE1976",
+    "country_id": "sweden",
+    "name": "Svedala kommunfullmäktige (före 1976)",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1263",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/data-ME0104T1.json",
+        "sha256": "385ff3a86f6dcc60afbfb8223d0404b36b8e45fba7daea2019cb3979d907232b",
+        "json_pointer": "/dimension/Region/note/2",
+        "locator": null
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1264",
+    "country_id": "sweden",
+    "name": "Skurup",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1264",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/21",
+        "locator": null,
+        "source_code": "1264"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1265",
+    "country_id": "sweden",
+    "name": "Sjöbo",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1265",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/20",
+        "locator": null,
+        "source_code": "1265"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1266",
+    "country_id": "sweden",
+    "name": "Hörby",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1266",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/8",
+        "locator": null,
+        "source_code": "1266"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1267",
+    "country_id": "sweden",
+    "name": "Höör",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1267",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/9",
+        "locator": null,
+        "source_code": "1267"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1270",
+    "country_id": "sweden",
+    "name": "Tomelilla",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1270",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/25",
+        "locator": null,
+        "source_code": "1270"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1272",
+    "country_id": "sweden",
+    "name": "Bromölla",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1272",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/1",
+        "locator": null,
+        "source_code": "1272"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1273",
+    "country_id": "sweden",
+    "name": "Osby",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1273",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/17",
+        "locator": null,
+        "source_code": "1273"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1275",
+    "country_id": "sweden",
+    "name": "Perstorp",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1275",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/18",
+        "locator": null,
+        "source_code": "1275"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1276",
+    "country_id": "sweden",
+    "name": "Klippan",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1276",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/10",
+        "locator": null,
+        "source_code": "1276"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1277",
+    "country_id": "sweden",
+    "name": "Åstorp",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1277",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/30",
+        "locator": null,
+        "source_code": "1277"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1278",
+    "country_id": "sweden",
+    "name": "Båstad",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1278",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/3",
+        "locator": null,
+        "source_code": "1278"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1280",
+    "country_id": "sweden",
+    "name": "Malmö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1280",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/16",
+        "locator": null,
+        "source_code": "1280"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1281",
+    "country_id": "sweden",
+    "name": "Lund",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1281",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/15",
+        "locator": null,
+        "source_code": "1281"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1282",
+    "country_id": "sweden",
+    "name": "Landskrona",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1282",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/13",
+        "locator": null,
+        "source_code": "1282"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1283",
+    "country_id": "sweden",
+    "name": "Helsingborg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1283",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/5",
+        "locator": null,
+        "source_code": "1283"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1284",
+    "country_id": "sweden",
+    "name": "Höganäs",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1284",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/7",
+        "locator": null,
+        "source_code": "1284"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1285",
+    "country_id": "sweden",
+    "name": "Eslöv",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1285",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/4",
+        "locator": null,
+        "source_code": "1285"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1286",
+    "country_id": "sweden",
+    "name": "Ystad",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1286",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/28",
+        "locator": null,
+        "source_code": "1286"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1287",
+    "country_id": "sweden",
+    "name": "Trelleborg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1287",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/26",
+        "locator": null,
+        "source_code": "1287"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1290",
+    "country_id": "sweden",
+    "name": "Kristianstad",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1290",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/11",
+        "locator": null,
+        "source_code": "1290"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1291",
+    "country_id": "sweden",
+    "name": "Simrishamn",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1291",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/19",
+        "locator": null,
+        "source_code": "1291"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1292",
+    "country_id": "sweden",
+    "name": "Ängelholm",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1292",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/29",
+        "locator": null,
+        "source_code": "1292"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1293",
+    "country_id": "sweden",
+    "name": "Hässleholm",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1293",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/10/valgeografi/6",
+        "locator": null,
+        "source_code": "1293"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1315",
+    "country_id": "sweden",
+    "name": "Hylte",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1315",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/4/valgeografi/2",
+        "locator": null,
+        "source_code": "1315"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1380",
+    "country_id": "sweden",
+    "name": "Halmstad",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1380",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/4/valgeografi/1",
+        "locator": null,
+        "source_code": "1380"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1381",
+    "country_id": "sweden",
+    "name": "Laholm",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1381",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/4/valgeografi/4",
+        "locator": null,
+        "source_code": "1381"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1382",
+    "country_id": "sweden",
+    "name": "Falkenberg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1382",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/4/valgeografi/0",
+        "locator": null,
+        "source_code": "1382"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1383",
+    "country_id": "sweden",
+    "name": "Varberg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1383",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/4/valgeografi/5",
+        "locator": null,
+        "source_code": "1383"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1384",
+    "country_id": "sweden",
+    "name": "Kungsbacka",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1384",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/4/valgeografi/3",
+        "locator": null,
+        "source_code": "1384"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1401",
+    "country_id": "sweden",
+    "name": "Härryda",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1401",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/15",
+        "locator": null,
+        "source_code": "1401"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1402",
+    "country_id": "sweden",
+    "name": "Partille",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1402",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/28",
+        "locator": null,
+        "source_code": "1402"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1407",
+    "country_id": "sweden",
+    "name": "Öckerö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1407",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/48",
+        "locator": null,
+        "source_code": "1407"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1415",
+    "country_id": "sweden",
+    "name": "Stenungsund",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1415",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/32",
+        "locator": null,
+        "source_code": "1415"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1419",
+    "country_id": "sweden",
+    "name": "Tjörn",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1419",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/38",
+        "locator": null,
+        "source_code": "1419"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1421",
+    "country_id": "sweden",
+    "name": "Orust",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1421",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/27",
+        "locator": null,
+        "source_code": "1421"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1427",
+    "country_id": "sweden",
+    "name": "Sotenäs",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1427",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/31",
+        "locator": null,
+        "source_code": "1427"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1430",
+    "country_id": "sweden",
+    "name": "Munkedal",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1430",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/25",
+        "locator": null,
+        "source_code": "1430"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1435",
+    "country_id": "sweden",
+    "name": "Tanum",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1435",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/35",
+        "locator": null,
+        "source_code": "1435"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1438",
+    "country_id": "sweden",
+    "name": "Dals-Ed",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1438",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/5",
+        "locator": null,
+        "source_code": "1438"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1439",
+    "country_id": "sweden",
+    "name": "Färgelanda",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1439",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/8",
+        "locator": null,
+        "source_code": "1439"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1440",
+    "country_id": "sweden",
+    "name": "Ale",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1440",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/0",
+        "locator": null,
+        "source_code": "1440"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1441",
+    "country_id": "sweden",
+    "name": "Lerum",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1441",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/18",
+        "locator": null,
+        "source_code": "1441"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1442",
+    "country_id": "sweden",
+    "name": "Vårgårda",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1442",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/46",
+        "locator": null,
+        "source_code": "1442"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1443",
+    "country_id": "sweden",
+    "name": "Bollebygd",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1443",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/3",
+        "locator": null,
+        "source_code": "1443"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1444",
+    "country_id": "sweden",
+    "name": "Grästorp",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1444",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/9",
+        "locator": null,
+        "source_code": "1444"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1445",
+    "country_id": "sweden",
+    "name": "Essunga",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1445",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/6",
+        "locator": null,
+        "source_code": "1445"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1446",
+    "country_id": "sweden",
+    "name": "Karlsborg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1446",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/16",
+        "locator": null,
+        "source_code": "1446"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1447",
+    "country_id": "sweden",
+    "name": "Gullspång",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1447",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/10",
+        "locator": null,
+        "source_code": "1447"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1452",
+    "country_id": "sweden",
+    "name": "Tranemo",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1452",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/39",
+        "locator": null,
+        "source_code": "1452"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1460",
+    "country_id": "sweden",
+    "name": "Bengtsfors",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1460",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/2",
+        "locator": null,
+        "source_code": "1460"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1461",
+    "country_id": "sweden",
+    "name": "Mellerud",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1461",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/24",
+        "locator": null,
+        "source_code": "1461"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1462",
+    "country_id": "sweden",
+    "name": "Lilla Edet",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1462",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/20",
+        "locator": null,
+        "source_code": "1462"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1463",
+    "country_id": "sweden",
+    "name": "Mark",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1463",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/23",
+        "locator": null,
+        "source_code": "1463"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1465",
+    "country_id": "sweden",
+    "name": "Svenljunga",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1465",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/34",
+        "locator": null,
+        "source_code": "1465"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1466",
+    "country_id": "sweden",
+    "name": "Herrljunga",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1466",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/13",
+        "locator": null,
+        "source_code": "1466"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1470",
+    "country_id": "sweden",
+    "name": "Vara",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1470",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/44",
+        "locator": null,
+        "source_code": "1470"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1471",
+    "country_id": "sweden",
+    "name": "Götene",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1471",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/12",
+        "locator": null,
+        "source_code": "1471"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1472",
+    "country_id": "sweden",
+    "name": "Tibro",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1472",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/36",
+        "locator": null,
+        "source_code": "1472"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1473",
+    "country_id": "sweden",
+    "name": "Töreboda",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1473",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/41",
+        "locator": null,
+        "source_code": "1473"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1480",
+    "country_id": "sweden",
+    "name": "Göteborg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1480",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/11",
+        "locator": null,
+        "source_code": "1480"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1481",
+    "country_id": "sweden",
+    "name": "Mölndal",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1481",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/26",
+        "locator": null,
+        "source_code": "1481"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1482",
+    "country_id": "sweden",
+    "name": "Kungälv",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1482",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/17",
+        "locator": null,
+        "source_code": "1482"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1484",
+    "country_id": "sweden",
+    "name": "Lysekil",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1484",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/21",
+        "locator": null,
+        "source_code": "1484"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1485",
+    "country_id": "sweden",
+    "name": "Uddevalla",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1485",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/42",
+        "locator": null,
+        "source_code": "1485"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1486",
+    "country_id": "sweden",
+    "name": "Strömstad",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1486",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/33",
+        "locator": null,
+        "source_code": "1486"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1487",
+    "country_id": "sweden",
+    "name": "Vänersborg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1487",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/45",
+        "locator": null,
+        "source_code": "1487"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1488",
+    "country_id": "sweden",
+    "name": "Trollhättan",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1488",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/40",
+        "locator": null,
+        "source_code": "1488"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1489",
+    "country_id": "sweden",
+    "name": "Alingsås",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1489",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/1",
+        "locator": null,
+        "source_code": "1489"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1490",
+    "country_id": "sweden",
+    "name": "Borås",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1490",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/4",
+        "locator": null,
+        "source_code": "1490"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1491",
+    "country_id": "sweden",
+    "name": "Ulricehamn",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1491",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/43",
+        "locator": null,
+        "source_code": "1491"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1492",
+    "country_id": "sweden",
+    "name": "Åmål",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1492",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/47",
+        "locator": null,
+        "source_code": "1492"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1493",
+    "country_id": "sweden",
+    "name": "Mariestad",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1493",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/22",
+        "locator": null,
+        "source_code": "1493"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1494",
+    "country_id": "sweden",
+    "name": "Lidköping",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1494",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/19",
+        "locator": null,
+        "source_code": "1494"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1495",
+    "country_id": "sweden",
+    "name": "Skara",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1495",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/29",
+        "locator": null,
+        "source_code": "1495"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1496",
+    "country_id": "sweden",
+    "name": "Skövde",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1496",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/30",
+        "locator": null,
+        "source_code": "1496"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1497",
+    "country_id": "sweden",
+    "name": "Hjo",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1497",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/14",
+        "locator": null,
+        "source_code": "1497"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1498",
+    "country_id": "sweden",
+    "name": "Tidaholm",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1498",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/37",
+        "locator": null,
+        "source_code": "1498"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1499",
+    "country_id": "sweden",
+    "name": "Falköping",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1499",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/18/valgeografi/7",
+        "locator": null,
+        "source_code": "1499"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1715",
+    "country_id": "sweden",
+    "name": "Kil",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1715",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/8",
+        "locator": null,
+        "source_code": "1715"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1730",
+    "country_id": "sweden",
+    "name": "Eda",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1730",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/1",
+        "locator": null,
+        "source_code": "1730"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1737",
+    "country_id": "sweden",
+    "name": "Torsby",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1737",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/14",
+        "locator": null,
+        "source_code": "1737"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1760",
+    "country_id": "sweden",
+    "name": "Storfors",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1760",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/11",
+        "locator": null,
+        "source_code": "1760"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1761",
+    "country_id": "sweden",
+    "name": "Hammarö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1761",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/6",
+        "locator": null,
+        "source_code": "1761"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1762",
+    "country_id": "sweden",
+    "name": "Munkfors",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1762",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/10",
+        "locator": null,
+        "source_code": "1762"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1763",
+    "country_id": "sweden",
+    "name": "Forshaga",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1763",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/3",
+        "locator": null,
+        "source_code": "1763"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1764",
+    "country_id": "sweden",
+    "name": "Grums",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1764",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/4",
+        "locator": null,
+        "source_code": "1764"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1765",
+    "country_id": "sweden",
+    "name": "Årjäng",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1765",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/15",
+        "locator": null,
+        "source_code": "1765"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1766",
+    "country_id": "sweden",
+    "name": "Sunne",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1766",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/12",
+        "locator": null,
+        "source_code": "1766"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1780",
+    "country_id": "sweden",
+    "name": "Karlstad",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1780",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/7",
+        "locator": null,
+        "source_code": "1780"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1781",
+    "country_id": "sweden",
+    "name": "Kristinehamn",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1781",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/9",
+        "locator": null,
+        "source_code": "1781"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1782",
+    "country_id": "sweden",
+    "name": "Filipstad",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1782",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/2",
+        "locator": null,
+        "source_code": "1782"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1783",
+    "country_id": "sweden",
+    "name": "Hagfors",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1783",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/5",
+        "locator": null,
+        "source_code": "1783"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1784",
+    "country_id": "sweden",
+    "name": "Arvika",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1784",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/0",
+        "locator": null,
+        "source_code": "1784"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1785",
+    "country_id": "sweden",
+    "name": "Säffle",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1785",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/14/valgeografi/13",
+        "locator": null,
+        "source_code": "1785"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1814",
+    "country_id": "sweden",
+    "name": "Lekeberg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1814",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/19/valgeografi/7",
+        "locator": null,
+        "source_code": "1814"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1860",
+    "country_id": "sweden",
+    "name": "Laxå",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1860",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/19/valgeografi/6",
+        "locator": null,
+        "source_code": "1860"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1861",
+    "country_id": "sweden",
+    "name": "Hallsberg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1861",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/19/valgeografi/2",
+        "locator": null,
+        "source_code": "1861"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1862",
+    "country_id": "sweden",
+    "name": "Degerfors",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1862",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/19/valgeografi/1",
+        "locator": null,
+        "source_code": "1862"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1863",
+    "country_id": "sweden",
+    "name": "Hällefors",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1863",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/19/valgeografi/3",
+        "locator": null,
+        "source_code": "1863"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1864",
+    "country_id": "sweden",
+    "name": "Ljusnarsberg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1864",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/19/valgeografi/9",
+        "locator": null,
+        "source_code": "1864"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1880",
+    "country_id": "sweden",
+    "name": "Örebro",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1880",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/19/valgeografi/11",
+        "locator": null,
+        "source_code": "1880"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1881",
+    "country_id": "sweden",
+    "name": "Kumla",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1881",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/19/valgeografi/5",
+        "locator": null,
+        "source_code": "1881"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1882",
+    "country_id": "sweden",
+    "name": "Askersund",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1882",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/19/valgeografi/0",
+        "locator": null,
+        "source_code": "1882"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1883",
+    "country_id": "sweden",
+    "name": "Karlskoga",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1883",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/19/valgeografi/4",
+        "locator": null,
+        "source_code": "1883"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1884",
+    "country_id": "sweden",
+    "name": "Nora",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1884",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/19/valgeografi/10",
+        "locator": null,
+        "source_code": "1884"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1885",
+    "country_id": "sweden",
+    "name": "Lindesberg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1885",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/19/valgeografi/8",
+        "locator": null,
+        "source_code": "1885"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1904",
+    "country_id": "sweden",
+    "name": "Skinnskatteberg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1904",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/17/valgeografi/7",
+        "locator": null,
+        "source_code": "1904"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1907",
+    "country_id": "sweden",
+    "name": "Surahammar",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1907",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/17/valgeografi/8",
+        "locator": null,
+        "source_code": "1907"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1960",
+    "country_id": "sweden",
+    "name": "Kungsör",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1960",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/17/valgeografi/3",
+        "locator": null,
+        "source_code": "1960"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1961",
+    "country_id": "sweden",
+    "name": "Hallstahammar",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1961",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/17/valgeografi/2",
+        "locator": null,
+        "source_code": "1961"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1962",
+    "country_id": "sweden",
+    "name": "Norberg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1962",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/17/valgeografi/5",
+        "locator": null,
+        "source_code": "1962"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1980",
+    "country_id": "sweden",
+    "name": "Västerås",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1980",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/17/valgeografi/9",
+        "locator": null,
+        "source_code": "1980"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1981",
+    "country_id": "sweden",
+    "name": "Sala",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1981",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/17/valgeografi/6",
+        "locator": null,
+        "source_code": "1981"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1982",
+    "country_id": "sweden",
+    "name": "Fagersta",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1982",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/17/valgeografi/1",
+        "locator": null,
+        "source_code": "1982"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1983",
+    "country_id": "sweden",
+    "name": "Köping",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1983",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/17/valgeografi/4",
+        "locator": null,
+        "source_code": "1983"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K1984",
+    "country_id": "sweden",
+    "name": "Arboga",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "1984",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/17/valgeografi/0",
+        "locator": null,
+        "source_code": "1984"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2021",
+    "country_id": "sweden",
+    "name": "Vansbro",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2021",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/13",
+        "locator": null,
+        "source_code": "2021"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2023",
+    "country_id": "sweden",
+    "name": "Malung-Sälen",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2023",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/7",
+        "locator": null,
+        "source_code": "2023"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2026",
+    "country_id": "sweden",
+    "name": "Gagnef",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2026",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/3",
+        "locator": null,
+        "source_code": "2026"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2029",
+    "country_id": "sweden",
+    "name": "Leksand",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2029",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/5",
+        "locator": null,
+        "source_code": "2029"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2031",
+    "country_id": "sweden",
+    "name": "Rättvik",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2031",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/10",
+        "locator": null,
+        "source_code": "2031"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2034",
+    "country_id": "sweden",
+    "name": "Orsa",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2034",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/9",
+        "locator": null,
+        "source_code": "2034"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2039",
+    "country_id": "sweden",
+    "name": "Älvdalen",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2039",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/14",
+        "locator": null,
+        "source_code": "2039"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2061",
+    "country_id": "sweden",
+    "name": "Smedjebacken",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2061",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/11",
+        "locator": null,
+        "source_code": "2061"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2062",
+    "country_id": "sweden",
+    "name": "Mora",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2062",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/8",
+        "locator": null,
+        "source_code": "2062"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2080",
+    "country_id": "sweden",
+    "name": "Falun",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2080",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/2",
+        "locator": null,
+        "source_code": "2080"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2081",
+    "country_id": "sweden",
+    "name": "Borlänge",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2081",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/1",
+        "locator": null,
+        "source_code": "2081"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2082",
+    "country_id": "sweden",
+    "name": "Säter",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2082",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/12",
+        "locator": null,
+        "source_code": "2082"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2083",
+    "country_id": "sweden",
+    "name": "Hedemora",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2083",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/4",
+        "locator": null,
+        "source_code": "2083"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2084",
+    "country_id": "sweden",
+    "name": "Avesta",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2084",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/0",
+        "locator": null,
+        "source_code": "2084"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2085",
+    "country_id": "sweden",
+    "name": "Ludvika",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2085",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/1/valgeografi/6",
+        "locator": null,
+        "source_code": "2085"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2101",
+    "country_id": "sweden",
+    "name": "Ockelbo",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2101",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/3/valgeografi/6",
+        "locator": null,
+        "source_code": "2101"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2104",
+    "country_id": "sweden",
+    "name": "Hofors",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2104",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/3/valgeografi/2",
+        "locator": null,
+        "source_code": "2104"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2121",
+    "country_id": "sweden",
+    "name": "Ovanåker",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2121",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/3/valgeografi/7",
+        "locator": null,
+        "source_code": "2121"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2132",
+    "country_id": "sweden",
+    "name": "Nordanstig",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2132",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/3/valgeografi/5",
+        "locator": null,
+        "source_code": "2132"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2161",
+    "country_id": "sweden",
+    "name": "Ljusdal",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2161",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/3/valgeografi/4",
+        "locator": null,
+        "source_code": "2161"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2180",
+    "country_id": "sweden",
+    "name": "Gävle",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2180",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/3/valgeografi/1",
+        "locator": null,
+        "source_code": "2180"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2181",
+    "country_id": "sweden",
+    "name": "Sandviken",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2181",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/3/valgeografi/8",
+        "locator": null,
+        "source_code": "2181"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2182",
+    "country_id": "sweden",
+    "name": "Söderhamn",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2182",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/3/valgeografi/9",
+        "locator": null,
+        "source_code": "2182"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2183",
+    "country_id": "sweden",
+    "name": "Bollnäs",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2183",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/3/valgeografi/0",
+        "locator": null,
+        "source_code": "2183"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2184",
+    "country_id": "sweden",
+    "name": "Hudiksvall",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2184",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/3/valgeografi/3",
+        "locator": null,
+        "source_code": "2184"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2260",
+    "country_id": "sweden",
+    "name": "Ånge",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2260",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/16/valgeografi/5",
+        "locator": null,
+        "source_code": "2260"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2262",
+    "country_id": "sweden",
+    "name": "Timrå",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2262",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/16/valgeografi/4",
+        "locator": null,
+        "source_code": "2262"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2280",
+    "country_id": "sweden",
+    "name": "Härnösand",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2280",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/16/valgeografi/0",
+        "locator": null,
+        "source_code": "2280"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2281",
+    "country_id": "sweden",
+    "name": "Sundsvall",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2281",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/16/valgeografi/3",
+        "locator": null,
+        "source_code": "2281"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2282",
+    "country_id": "sweden",
+    "name": "Kramfors",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2282",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/16/valgeografi/1",
+        "locator": null,
+        "source_code": "2282"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2283",
+    "country_id": "sweden",
+    "name": "Sollefteå",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2283",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/16/valgeografi/2",
+        "locator": null,
+        "source_code": "2283"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2284",
+    "country_id": "sweden",
+    "name": "Örnsköldsvik",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2284",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/16/valgeografi/6",
+        "locator": null,
+        "source_code": "2284"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2303",
+    "country_id": "sweden",
+    "name": "Ragunda",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2303",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/5/valgeografi/4",
+        "locator": null,
+        "source_code": "2303"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2305",
+    "country_id": "sweden",
+    "name": "Bräcke",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2305",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/5/valgeografi/1",
+        "locator": null,
+        "source_code": "2305"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2309",
+    "country_id": "sweden",
+    "name": "Krokom",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2309",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/5/valgeografi/3",
+        "locator": null,
+        "source_code": "2309"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2313",
+    "country_id": "sweden",
+    "name": "Strömsund",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2313",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/5/valgeografi/5",
+        "locator": null,
+        "source_code": "2313"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2321",
+    "country_id": "sweden",
+    "name": "Åre",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2321",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/5/valgeografi/6",
+        "locator": null,
+        "source_code": "2321"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2326",
+    "country_id": "sweden",
+    "name": "Berg",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2326",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/5/valgeografi/0",
+        "locator": null,
+        "source_code": "2326"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2361",
+    "country_id": "sweden",
+    "name": "Härjedalen",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2361",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/5/valgeografi/2",
+        "locator": null,
+        "source_code": "2361"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2380",
+    "country_id": "sweden",
+    "name": "Östersund",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2380",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/5/valgeografi/7",
+        "locator": null,
+        "source_code": "2380"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2401",
+    "country_id": "sweden",
+    "name": "Nordmaling",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2401",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/4",
+        "locator": null,
+        "source_code": "2401"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2403",
+    "country_id": "sweden",
+    "name": "Bjurholm",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2403",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/0",
+        "locator": null,
+        "source_code": "2403"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2404",
+    "country_id": "sweden",
+    "name": "Vindeln",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2404",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/12",
+        "locator": null,
+        "source_code": "2404"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2409",
+    "country_id": "sweden",
+    "name": "Robertsfors",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2409",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/6",
+        "locator": null,
+        "source_code": "2409"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2417",
+    "country_id": "sweden",
+    "name": "Norsjö",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2417",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/5",
+        "locator": null,
+        "source_code": "2417"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2418",
+    "country_id": "sweden",
+    "name": "Malå",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2418",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/3",
+        "locator": null,
+        "source_code": "2418"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2421",
+    "country_id": "sweden",
+    "name": "Storuman",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2421",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/9",
+        "locator": null,
+        "source_code": "2421"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2422",
+    "country_id": "sweden",
+    "name": "Sorsele",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2422",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/8",
+        "locator": null,
+        "source_code": "2422"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2425",
+    "country_id": "sweden",
+    "name": "Dorotea",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2425",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/1",
+        "locator": null,
+        "source_code": "2425"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2460",
+    "country_id": "sweden",
+    "name": "Vännäs",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2460",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/13",
+        "locator": null,
+        "source_code": "2460"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2462",
+    "country_id": "sweden",
+    "name": "Vilhelmina",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2462",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/11",
+        "locator": null,
+        "source_code": "2462"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2463",
+    "country_id": "sweden",
+    "name": "Åsele",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2463",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/14",
+        "locator": null,
+        "source_code": "2463"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2480",
+    "country_id": "sweden",
+    "name": "Umeå",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2480",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/10",
+        "locator": null,
+        "source_code": "2480"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2481",
+    "country_id": "sweden",
+    "name": "Lycksele",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2481",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/2",
+        "locator": null,
+        "source_code": "2481"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2482",
+    "country_id": "sweden",
+    "name": "Skellefteå",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2482",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/15/valgeografi/7",
+        "locator": null,
+        "source_code": "2482"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2505",
+    "country_id": "sweden",
+    "name": "Arvidsjaur",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2505",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/1",
+        "locator": null,
+        "source_code": "2505"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2506",
+    "country_id": "sweden",
+    "name": "Arjeplog",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2506",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/0",
+        "locator": null,
+        "source_code": "2506"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2510",
+    "country_id": "sweden",
+    "name": "Jokkmokk",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2510",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/5",
+        "locator": null,
+        "source_code": "2510"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2513",
+    "country_id": "sweden",
+    "name": "Överkalix",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2513",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/12",
+        "locator": null,
+        "source_code": "2513"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2514",
+    "country_id": "sweden",
+    "name": "Kalix",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2514",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/6",
+        "locator": null,
+        "source_code": "2514"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2518",
+    "country_id": "sweden",
+    "name": "Övertorneå",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2518",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/13",
+        "locator": null,
+        "source_code": "2518"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2521",
+    "country_id": "sweden",
+    "name": "Pajala",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2521",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/9",
+        "locator": null,
+        "source_code": "2521"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2523",
+    "country_id": "sweden",
+    "name": "Gällivare",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2523",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/3",
+        "locator": null,
+        "source_code": "2523"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2560",
+    "country_id": "sweden",
+    "name": "Älvsbyn",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2560",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/11",
+        "locator": null,
+        "source_code": "2560"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2580",
+    "country_id": "sweden",
+    "name": "Luleå",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2580",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/8",
+        "locator": null,
+        "source_code": "2580"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2581",
+    "country_id": "sweden",
+    "name": "Piteå",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2581",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/10",
+        "locator": null,
+        "source_code": "2581"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2582",
+    "country_id": "sweden",
+    "name": "Boden",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2582",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/2",
+        "locator": null,
+        "source_code": "2582"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2583",
+    "country_id": "sweden",
+    "name": "Haparanda",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2583",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/4",
+        "locator": null,
+        "source_code": "2583"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-K2584",
+    "country_id": "sweden",
+    "name": "Kiruna",
+    "parent_geography_id": "SE",
+    "geography_type": "kommunfullmäktige",
+    "official_code": "2584",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/2/valgeografi/9/valgeografi/7",
+        "locator": null,
+        "source_code": "2584"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-LT11L",
+    "country_id": "sweden",
+    "name": "Kristianstads läns landsting",
+    "parent_geography_id": "SE",
+    "geography_type": "landstingsfullmäktige",
+    "official_code": "11L",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/data-Ltmandat.json",
+        "sha256": "64d14023c2e1892a4739a95fef5086cc9c4b8881c4470cb9edf37b1b94ed737a",
+        "json_pointer": "/dimension/Region/category/label/11L",
+        "locator": null
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-LT12LG",
+    "country_id": "sweden",
+    "name": "Malmöhus läns landsting",
+    "parent_geography_id": "SE",
+    "geography_type": "landstingsfullmäktige",
+    "official_code": "12LG",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/data-Ltmandat.json",
+        "sha256": "64d14023c2e1892a4739a95fef5086cc9c4b8881c4470cb9edf37b1b94ed737a",
+        "json_pointer": "/dimension/Region/category/label/12LG",
+        "locator": null
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-LT14LG",
+    "country_id": "sweden",
+    "name": "Bohuslandstinget",
+    "parent_geography_id": "SE",
+    "geography_type": "landstingsfullmäktige",
+    "official_code": "14LG",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/data-Ltmandat.json",
+        "sha256": "64d14023c2e1892a4739a95fef5086cc9c4b8881c4470cb9edf37b1b94ed737a",
+        "json_pointer": "/dimension/Region/category/label/14LG",
+        "locator": null
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-LT15L",
+    "country_id": "sweden",
+    "name": "Älvsborgs läns landsting",
+    "parent_geography_id": "SE",
+    "geography_type": "landstingsfullmäktige",
+    "official_code": "15L",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/data-Ltmandat.json",
+        "sha256": "64d14023c2e1892a4739a95fef5086cc9c4b8881c4470cb9edf37b1b94ed737a",
+        "json_pointer": "/dimension/Region/category/label/15L",
+        "locator": null
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-LT16L",
+    "country_id": "sweden",
+    "name": "Skaraborgs läns landsting",
+    "parent_geography_id": "SE",
+    "geography_type": "landstingsfullmäktige",
+    "official_code": "16L",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/data-Ltmandat.json",
+        "sha256": "64d14023c2e1892a4739a95fef5086cc9c4b8881c4470cb9edf37b1b94ed737a",
+        "json_pointer": "/dimension/Region/category/label/16L",
+        "locator": null
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R01",
+    "country_id": "sweden",
+    "name": "Stockholm",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "01",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/10",
+        "locator": null,
+        "source_code": "01"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R03",
+    "country_id": "sweden",
+    "name": "Uppsala",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "03",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/12",
+        "locator": null,
+        "source_code": "03"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R04",
+    "country_id": "sweden",
+    "name": "Södermanland",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "04",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/11",
+        "locator": null,
+        "source_code": "04"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R05",
+    "country_id": "sweden",
+    "name": "Östergötland",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "05",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/19",
+        "locator": null,
+        "source_code": "05"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R06",
+    "country_id": "sweden",
+    "name": "Jönköping",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "06",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/5",
+        "locator": null,
+        "source_code": "06"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R07",
+    "country_id": "sweden",
+    "name": "Kronoberg",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "07",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/7",
+        "locator": null,
+        "source_code": "07"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R08",
+    "country_id": "sweden",
+    "name": "Kalmar",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "08",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/6",
+        "locator": null,
+        "source_code": "08"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R10",
+    "country_id": "sweden",
+    "name": "Blekinge",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "10",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/0",
+        "locator": null,
+        "source_code": "10"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R12",
+    "country_id": "sweden",
+    "name": "Skåne",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "12",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/9",
+        "locator": null,
+        "source_code": "12"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R13",
+    "country_id": "sweden",
+    "name": "Halland",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "13",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/3",
+        "locator": null,
+        "source_code": "13"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R14",
+    "country_id": "sweden",
+    "name": "Västra Götaland",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "14",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/17",
+        "locator": null,
+        "source_code": "14"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R17",
+    "country_id": "sweden",
+    "name": "Värmland",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "17",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/13",
+        "locator": null,
+        "source_code": "17"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R18",
+    "country_id": "sweden",
+    "name": "Örebro",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "18",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/18",
+        "locator": null,
+        "source_code": "18"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R19",
+    "country_id": "sweden",
+    "name": "Västmanland",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "19",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/16",
+        "locator": null,
+        "source_code": "19"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R20",
+    "country_id": "sweden",
+    "name": "Dalarna",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "20",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/1",
+        "locator": null,
+        "source_code": "20"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R21",
+    "country_id": "sweden",
+    "name": "Gävleborg",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "21",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/2",
+        "locator": null,
+        "source_code": "21"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R22",
+    "country_id": "sweden",
+    "name": "Västernorrland",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "22",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/15",
+        "locator": null,
+        "source_code": "22"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R23",
+    "country_id": "sweden",
+    "name": "Jämtland",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "23",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/4",
+        "locator": null,
+        "source_code": "23"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R24",
+    "country_id": "sweden",
+    "name": "Västerbotten",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "24",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/14",
+        "locator": null,
+        "source_code": "24"
+      }
+    ],
+    "geometry": null
+  },
+  {
+    "geography_id": "SE-R25",
+    "country_id": "sweden",
+    "name": "Norrbotten",
+    "parent_geography_id": "SE",
+    "geography_type": "regionfullmäktige",
+    "official_code": "25",
+    "language": "sv",
+    "evidence": [
+      {
+        "input_path": "data/research/sweden/sources/geo2026.json",
+        "sha256": "0c8385832611e58c175c5e5aeca19469153343bd0b74081eb8ae031bb8170b8f",
+        "json_pointer": "/valgeografi/1/valgeografi/8",
+        "locator": null,
+        "source_code": "25"
+      }
+    ],
+    "geometry": null
+  }
+]
