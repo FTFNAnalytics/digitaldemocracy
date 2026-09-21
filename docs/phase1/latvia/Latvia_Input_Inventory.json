@@ -1,0 +1,3755 @@
+{
+  "pin": {
+    "repository": "FTFNAnalytics/digitaldemocracy",
+    "ref": "main",
+    "commit": "f7b5c81ebd39f1774edea7cde5b4155031d92647",
+    "retrieved_on": "2026-09-21"
+  },
+  "lineage_id": "country-package-latvia",
+  "counts": {
+    "offices": 166,
+    "current_offices": 45,
+    "historical_office_identity_records": 121,
+    "current_councils": 42,
+    "historical_records_are_not_abolished_council_count": true,
+    "events": 217,
+    "historical_events": 216,
+    "prospective_events": 1,
+    "result_rows": 1383,
+    "proceedings": 2,
+    "draft_tiers": {
+      "other": 1,
+      "municipal": 163,
+      "national": 2
+    },
+    "direct_executive_offices": 0,
+    "indirect_national_president_offices": 1,
+    "council_office_identity_records": 163,
+    "roster_snapshots": {
+      "PV2025": 42,
+      "PV2017": 119,
+      "PV2021": 40,
+      "VRD2021": 2,
+      "RD2020": 1
+    },
+    "current_state_city_councils": 7,
+    "current_novads_councils": 35,
+    "geographies": 164,
+    "source_vector_audits": 210,
+    "source_vector_mismatches": 0
+  },
+  "hash_inputs": {
+    "canonicalization": "atlas-c14n/1",
+    "hash_algorithm": "sha256",
+    "lineage_id": "country-package-latvia",
+    "inputs": [
+      {
+        "input_path": "data/research/latvia/archive-member-inventory.json",
+        "input_kind": "package",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "byte_count": 3
+      },
+      {
+        "input_path": "data/research/latvia/country.json",
+        "input_kind": "package",
+        "sha256": "eb2fd6acca86b5af9259249d8ffba45fa469048a14051a6cf5666e30449dcfd4",
+        "byte_count": 1373
+      },
+      {
+        "input_path": "data/research/latvia/counts.json",
+        "input_kind": "package",
+        "sha256": "a70257ef00f95722c4b574c0656eea3969b3709dd197e104cec4f3bb15ab82e1",
+        "byte_count": 766
+      },
+      {
+        "input_path": "data/research/latvia/events.json",
+        "input_kind": "package",
+        "sha256": "79a64987f8523325bdab931675364f9c8c9ac395b33354fa8f3d4c5ebcf00b84",
+        "byte_count": 323106
+      },
+      {
+        "input_path": "data/research/latvia/geography.json",
+        "input_kind": "package",
+        "sha256": "9c27ba997850a43bc46968fc973278dc02ee0cbcf93268addb4a5088cf2923d4",
+        "byte_count": 130792
+      },
+      {
+        "input_path": "data/research/latvia/identity-crosswalk.json",
+        "input_kind": "package",
+        "sha256": "6d024ceeb149c14bec27882951340797fe9107e6742a739e83b1e26679c802a6",
+        "byte_count": 54304
+      },
+      {
+        "input_path": "data/research/latvia/office-register.json",
+        "input_kind": "package",
+        "sha256": "705cdafb1bed115524ff282c02ad2f0341a10a4af728660380ee9109bc6fbada",
+        "byte_count": 248187
+      },
+      {
+        "input_path": "data/research/latvia/proceedings.json",
+        "input_kind": "package",
+        "sha256": "3e0e78284440a297d2d6d03e01e4bae12bc74fa572739fd47914c79245e02334",
+        "byte_count": 1601
+      },
+      {
+        "input_path": "data/research/latvia/register-source-rows.json",
+        "input_kind": "package",
+        "sha256": "34edc84deb533d801b4973b873cdafdc91f310fbc4336dbd2d6a44b0c6a951b3",
+        "byte_count": 114986
+      },
+      {
+        "input_path": "data/research/latvia/results.json",
+        "input_kind": "package",
+        "sha256": "fef559a14433c8cb97dd46a91a956bf63fec30cb5415ea653514de705e975ed4",
+        "byte_count": 1881568
+      },
+      {
+        "input_path": "data/research/latvia/source-acquisition-gaps.json",
+        "input_kind": "package",
+        "sha256": "f89135b4dd403f6766f1999ab0c15a742db0feb8150d7e62fd6b983fe56c5d30",
+        "byte_count": 11496
+      },
+      {
+        "input_path": "data/research/latvia/sources.json",
+        "input_kind": "package",
+        "sha256": "90cc7f1a817e47ff2dbe03968e0bd62aa725ee371cd687f9fd585db60531b4c9",
+        "byte_count": 106477
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/10-saeimas-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "20aaacdeed498ecda8ff2dd89edbf2181f91f71407ec0a2984360d8592c1e9fe",
+        "byte_count": 7588
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/11-saeimas-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "97822fd1b4109c31011f75df0cbfb0b9848d73022047c75caaed2232033bbcd4",
+        "byte_count": 9899
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/12-saeimas-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "6281dff173a349603744013e657d366dc6d74463ea199c9f5a61aaeb9345c102",
+        "byte_count": 9689
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/12-saeimas-velesanu-rezultati/index.html",
+        "input_kind": "artifact",
+        "sha256": "1d09f1b1c10861b52e1caa32fd24209dc9c3848a22581353b82cb5deefbac6a7",
+        "byte_count": 3651
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/13-saeimas-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "27056cb7001c3b7fd0929af3c6fd6a1c76f52916603e3fa5ff10bf06181f19d7",
+        "byte_count": 14802
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/13-saeimas-velesanu-rezultati/index.html",
+        "input_kind": "artifact",
+        "sha256": "1a7be3ba56597b88b76c6a4420e5b81c6f2e7a1017bf7e8bb8f7c9450690e75e",
+        "byte_count": 23820
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/14-saeimas-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "c23302924c0fd133c558027425c4677aa00c0a928087443f304075a471462854",
+        "byte_count": 13262
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/14-saeimas-velesanu-rezultati/index.html",
+        "input_kind": "artifact",
+        "sha256": "29a61f6026bceb417ba29239a1497ce6fbfa496649d778c8f5dd7c86b1ec4428",
+        "byte_count": 19239
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/1994-gada-29-maija-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "277436bbf3ffdc0de82002e552994a20c9e94685fc514e1e4673ae93c30bc9c0",
+        "byte_count": 3403
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/1997-gada-9-marta-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "50b2b9ad61ab8bdac374ebad48ab4face7821c68908fbab083731e45604b6c01",
+        "byte_count": 1843
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2001-gada-11-marta-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "1a0d5e3300792454151b3628db903beed4f365af8b4008a876af4fe31876450f",
+        "byte_count": 2188
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2003-gada-20-septembra-velesanas-rendas-pagasta/index.html",
+        "input_kind": "artifact",
+        "sha256": "d43cab82ebc473a75669a4ba6f146b658fc51b7ffe5a5dcaf96764a67a8e987f",
+        "byte_count": 1952
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2004-gada-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "e4002b46f6623dddb231cb86816eb936baaee8be36e7c011f4c4e4e7ad68f0f1",
+        "byte_count": 5190
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2005gada-12marta-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "be333285a0a14d36fdbeb4dd900877dfa3b6ebdeceb3c40b6d7fbb033e43996d",
+        "byte_count": 3455
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2005gada-20augusta-atkartotas-velesanas-rezekne/index.html",
+        "input_kind": "artifact",
+        "sha256": "7de6c0441ed2b40d0b58564f6731046ec64027d56939852f671e6923a8b1908b",
+        "byte_count": 3459
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2009-gada-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "1c3b8be377e9dd21bfeb8149e8c91c1500c4afa63506c75a54b6cdf5c9bc0488",
+        "byte_count": 8696
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2009gada-6junija-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "3bc02a5c94447cd5d87b7ec2d67473a722d332ad92ff929c0f3d501f397abbbd",
+        "byte_count": 8508
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2010gada-18decembra-rojas-novada-domes-un-mersraga-novada-domes-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "b1901abf1f295136364ba985012ea32b0d2266bfa6ea3ea0c2ffdf6dd2b7d9bc",
+        "byte_count": 4051
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2013gada-1junija-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "acc79c3b0ad89fe7af5b336430bd4fb66d4ffc8cf738b68358bed6552f11a0db",
+        "byte_count": 10664
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2014-gada-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "ad3ee9d2901bb1ae6b7f333f10e4f0d90be987b5b3e196ae859249c700d44563",
+        "byte_count": 10761
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2017gada-3junija-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "25d8bcab76cac093c7c06e592dc0b166c830791407afc48113c9f442f3f157f3",
+        "byte_count": 8259
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2021-gada-5-junija-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "c2d50e893c94422a306a205ca709f4c2f42e27bfd1a5b309b3cc7403d3d98e94",
+        "byte_count": 9762
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2025-gada-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "c825e3f245d7fc496b53c7b485c98bf932562d80cc1f9dde5f78dc4098159132",
+        "byte_count": 8075
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/5-saeimas-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "7c91fe8b53ccc6ff9fc118eb71c1732a938cb3ec741c3f88b046310bbb005ec7",
+        "byte_count": 8758
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/6-saeimas-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "34481bd3a029a65b054feb606e6b375a1d3965145b8c0559ad194b28f41b0b2c",
+        "byte_count": 6853
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/7-saeimas-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "e2b1a496d488d0232ff33820dacf33745ff8957d73e2bbd7bcf23f742addd8f6",
+        "byte_count": 3911
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/8-saeimas-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "693c9825b64623fb3b6be1da889d934f7641ab3a379c7b867142b8f8a6c7a0f0",
+        "byte_count": 5478
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/9-saeimas-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "a11e5da4e4d3cb1bf994b0fdde726606f07e6f837cbde2a33828648949a73c7a",
+        "byte_count": 5695
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/eiropas-parlamenta-velesanas-2019/index.html",
+        "input_kind": "artifact",
+        "sha256": "e254926abe26a8d9e1c8d4b27c84482e426422a1f6b86d982f762db451d88dcb",
+        "byte_count": 13221
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/eiropas-parlamenta-velesanas-2024/index.html",
+        "input_kind": "artifact",
+        "sha256": "0823ae12693ed3021b495fee2bd285751ea3c6e3a6cfc91c6fa81e7ab0b4e2de",
+        "byte_count": 7191
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/eiropas-parlamenta-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "c9f96ddc04f96207b130d8007e62d138e92f82a1ce49397d8a24fd1936eb37b5",
+        "byte_count": 3579
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/ep-2014-aktivitate-un-rezultati/index.html",
+        "input_kind": "artifact",
+        "sha256": "49a1a422da735f13b72f62ba95d089a381d456b72773be42b931d1a5de866a69",
+        "byte_count": 3835
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/ep-2019-velesanu-rezultati/index.html",
+        "input_kind": "artifact",
+        "sha256": "33149d2997d8962d0be23950255bd99622d93385e60afe902efff2605a153063",
+        "byte_count": 22179
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/ep-2024-velesanu-rezultati/index.html",
+        "input_kind": "artifact",
+        "sha256": "a14885d3cc1b1a82ed6c2d69c3c3a3cbf394f181bb1f42570c60e70e0e5cdccb",
+        "byte_count": 10033
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pasvaldibu-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "2e16ffc768a0303bdbdee4265ceffc8e98b44dc379ac1170b4c809f5052c8306",
+        "byte_count": 11243
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-rezultati/index.html",
+        "input_kind": "artifact",
+        "sha256": "3630475c227d73a7de078b2d20fca3805cc06cb379d73d5f282acfdc911024ab",
+        "byte_count": 29517
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-adazu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "f36f3f7a0c4612d69254e6322b2c3e6eb90d2adb921f0a8e38e341a4eafb3e8e",
+        "byte_count": 3650
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aglonas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "1fbc88ec3e0d880bb0c37370dea4a23f0d5e23689b48c33a82c9b79a9aca704f",
+        "byte_count": 6576
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aizkraukles-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "29a781a8f84d18d77d2a323fb1233592deecae3fcc33a7cd4770ccddb120d2fa",
+        "byte_count": 6092
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aizputes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "ca328c8de7013c745d6d1100b1cd289994f8da182ae8f2e00086c801e78ebaec",
+        "byte_count": 5845
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aknistes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "a3f8addc68721c0907e480fbede349e7ccd6be619950899b7283ced8735baa36",
+        "byte_count": 4300
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-alojas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "d47f9a9f03ee4896901873ea7c5da349c281b2a4a6557d6e5e9b30e69122e7aa",
+        "byte_count": 6902
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-alsungas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "5833abb01b28918f827dc0223f8a85479963605dd13c99b5114e7ee559c05ea7",
+        "byte_count": 3132
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aluksnes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "3e92591a8d6ec48f2027293bcf311533525efc92a9f98310e16a7f4d36b23404",
+        "byte_count": 20954
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-amatas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "3e84d4d9c5a13b5628342645389741c6fa224473d6c37604b473d1626537acb3",
+        "byte_count": 6050
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-apes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "463e4a124a8b77d7f1b08d451263d623cad16428aa0a966f713588173d988e2d",
+        "byte_count": 4666
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-auces-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "a2ff6c89c860c843982f430d0321a889fafa38c85ac6f7c1708776ddd1a2f079",
+        "byte_count": 4903
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-babites-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "a825b196aa9a77119e003b62b2943b3abbce19b8ab023f1aa550049eb8b629fe",
+        "byte_count": 5048
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-baldones-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "a4b8978e3d44a765d3721968c79e20f13b51f27cb007993faefca3cbea9632ea",
+        "byte_count": 3353
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-baltinavas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "5b9ce0f4be1ab4bd1f3f9f9f370b7b77c1ddd597042b10f468e59d06df5e0eb8",
+        "byte_count": 2925
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-balvu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "30ce024f4327f11a043a77223b097bb3645ad9190c1984b487f83fcb0ac56d78",
+        "byte_count": 15522
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-bauskas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "7e01219319534c6e5ce5110a993dbb792ae41aacd940ab437c2dd3318d82785a",
+        "byte_count": 14751
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-beverinas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "665b4abf4500e5a0ea1a6334730b099b7068f14b47be7c2ccf36e15c10b851fe",
+        "byte_count": 3646
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-brocenu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "ee8fd2355d12edf0ee2b42a38d0ebc6c49b061773a3c841c298370fc23f8d0af",
+        "byte_count": 4863
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-burtnieku-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "76b386c9bf8c7c877c823849ee40f2ebde5053d06c50c21a9c32841377b7d94a",
+        "byte_count": 10292
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-carnikavas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "b8c373bd514326c3fb4e29b83bf5327c8e96fa5bf34aa76ffce13a1070fa233c",
+        "byte_count": 5983
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-cesu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "373ea45010a4c615057adb72932a80a0af20ce2cdef069631c06ef0775860e5c",
+        "byte_count": 6947
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-cesvaines-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "b6776faa85b77618683b87483b32cf015fc552cd8fa6e651d0afb3a22b2debe0",
+        "byte_count": 3326
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ciblas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "0249c3ba2aa5a59e009993629253e951f3a9baa1a21211802b0fffdf6ba280fa",
+        "byte_count": 5411
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-dagdas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "399562d3a74bf13be10431ca1389a0f58cb422963ff7287e499bc4dbf7e072fc",
+        "byte_count": 9500
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-daugavpils-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "92385187ee82037ddea2cd2bf880761deb8619048efda8375224a9ed25b0a75e",
+        "byte_count": 21949
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-daugavpils/index.html",
+        "input_kind": "artifact",
+        "sha256": "12d33e765df4d243c7020aa929baf25535fa76b864d183e309d2ee68ef6a9fce",
+        "byte_count": 55424
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-dobeles-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "e6dd97d98c1facfdad4b9698470acf433a2d88919697ef9e73cbc053ab202fc2",
+        "byte_count": 12232
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-dundagas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "25e271da6a90bafe84b44e30cc88d9742c15185798b4858db811827bdaace629",
+        "byte_count": 4294
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-durbes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "c8da0c5e59cc38f4111dd1dc939076e0d13cb3aa1b795a8cbde4050700e099a1",
+        "byte_count": 4467
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-engures-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "c7253348d7115d5dcbfd53ee9e8266b419263b4fc22217f532f47ef0532a3827",
+        "byte_count": 3987
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-erglu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "ed15c2aa4af21cc9eac541315bd83497982df30ed702b47261cc8327ee79eb33",
+        "byte_count": 4309
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-garkalnes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "50313be8aa1ef2a6d1800f1aecca507eba777873109bfb625e6b3f04068ce9cf",
+        "byte_count": 5256
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-grobinas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "9709b25c73f8a41b550c43a71d39ef6de0c2a7c0602fad9587682fc7d4a37e31",
+        "byte_count": 5060
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-gulbenes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "c4d933130292c2a946e0281bb22731bcce30e8bc2baea7c325d1c70f571f9f16",
+        "byte_count": 12033
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-iecavas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "956d22e009e8a2f752f7796d301beaa7a51f291a22c03486ef709c4774c39874",
+        "byte_count": 3609
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ikskiles-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "272fd2fd78fac167eec421409dae9462ab70816a1fce554554cef903688fc4c8",
+        "byte_count": 5231
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ilukstes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "6a01dc7155ec41249d59dbab1d8175d495c852eb09d16dc0b8769691c5d2e7ee",
+        "byte_count": 7732
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-incukalna-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "c1095e4b9ddcbac87c26eae4933ae9b57e6eb53cc99e728ac8e5432c6dfc0cb1",
+        "byte_count": 4584
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jaunjelgavas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "b85b572fa511e982dc5e0d9fbbd674a7ad80bf1fa75469ca03411011660a6c91",
+        "byte_count": 5548
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jaunpiebalgas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "59f0b6dfcc94de1ee74d6b72295a66b572cd2b58ec4df6aa7d4349ab21b38f90",
+        "byte_count": 3577
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jaunpils-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "82bad97da27682583d5094a0a6410c0639eef1260125c4e30391c68048b834f0",
+        "byte_count": 3023
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jekabpils-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "a06f373a47abc45e42a16899fabb5afa7589da7e225700de18efd19c2ef0e3bf",
+        "byte_count": 7450
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jekabpils/index.html",
+        "input_kind": "artifact",
+        "sha256": "e7828c81c519baf44361a4b180d9aba6e56efc950be31535d4ebc6f1402b172e",
+        "byte_count": 15031
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jelgava/index.html",
+        "input_kind": "artifact",
+        "sha256": "4c302067f85300732228a025a43b203002b973800c6673b082b3a57a26171446",
+        "byte_count": 19432
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jelgavas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "67a35f96c82efdc3464f4b8efd3a488228738fd63521bb51fee965443c0bed34",
+        "byte_count": 18450
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jurmala/index.html",
+        "input_kind": "artifact",
+        "sha256": "aae870668ec03b05e27231a5e555e74797fac28cf442b77fc886761070cae535",
+        "byte_count": 31434
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kandavas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "10eb8ed2bf67e5ebbb9c2a10aa2cec30e6124b6c4527ec605624fbf0f3ce5bb7",
+        "byte_count": 7450
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-karsavas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "78dc95e4f8f24ada41a275807cd6d35a48d38c45232de4a63d28ccd6de0f9655",
+        "byte_count": 6403
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-keguma-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "0fee6574ecfa816998ebf966ebcdf73c17c30b9cc94d887a506717d758a428ab",
+        "byte_count": 5963
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kekavas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "99745effdf4f9d50929ff4c2651510dfaef1af774673d093a4cab8bdf6b80aff",
+        "byte_count": 14781
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kocenu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "1fecb9995b31362e9a9fa948baccb6c7479ca986bc2494cb9530c1e133a86c82",
+        "byte_count": 4716
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kokneses-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "c4e1a1129abf846aa59aa61a50b7a1514a8d39f320c2bee5b511741dd58b5147",
+        "byte_count": 4377
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kraslavas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "a40500be7a9d88bb9b0f037936650c3683004eb920e52712960e10687c17dc4d",
+        "byte_count": 8559
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-krimuldas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "87571fb61c5ff46f25f72fdc05ec0315401c337ff549c6b3e8ce6a0515121606",
+        "byte_count": 3642
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-krustpils-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "97a274a5609a88d452263d0463d555b3e9e721abd9efd2cc8a4d8f2a44f61c21",
+        "byte_count": 7238
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kuldigas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "ef8adc33c1682a73c33ba130d311e097aa940a53c938f44e9015de1f348cde90",
+        "byte_count": 16438
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-lielvardes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "22cb1398862f9b2c620cbdcd9387aa105ae4e7d667a4a39591ba4ae9cd9fe7ca",
+        "byte_count": 7500
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-liepaja/index.html",
+        "input_kind": "artifact",
+        "sha256": "3dfe06ef1753583cff8ea8082c3f3085d7f10e0836f2867d2d63d7c60240e5de",
+        "byte_count": 34016
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ligatnes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "10754800d8ec1b29c85724ea17967c7ccb0da6dfd9d2c5d2bb7c8856e6fdf00f",
+        "byte_count": 3673
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-limbazu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "d838b6755987cabbecea0b202f590e723fdf87f9881feff132f44ca42a8bfd6c",
+        "byte_count": 13887
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-livanu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "95d49fb3074690e9d8cb4f6c844f3d07e4cda8cad041ab2e5c833991101e9067",
+        "byte_count": 6146
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-lubanas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "7be76ab140daba110bac55b6bbfd88e1069ceecc454be28166396d1bf1cfb975",
+        "byte_count": 2781
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ludzas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "1eb1674c9eb60a32c2a4693a8cd713ac19371fc3c37660e430b91983679e656c",
+        "byte_count": 13719
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-madonas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "d0ce064b15eb6e99f7f0392b268b08e8bb1251275321dd7dafd0beaa582a388e",
+        "byte_count": 21454
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+        "input_kind": "artifact",
+        "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+        "byte_count": 52935
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/rd-2020-velesanu-rezultati/index.html",
+        "input_kind": "artifact",
+        "sha256": "f2d618097e38e5754fb595db8dfeb34f2731510a7100ee855ae21055cda66395",
+        "byte_count": 4031
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/rigas-domes-arkartas-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "a718c4ce3d71cc4982195d218020361c64cd307802e43c0b77727d498656eb5d",
+        "byte_count": 11088
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/saeimas-velesanas/index.html",
+        "input_kind": "artifact",
+        "sha256": "772608ae81d6a4276d30810a2e56abf43675c563b2c536bc4007a9f71f1af270",
+        "byte_count": 5539
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/varaklanu-novada-domes-un-rezeknes-novada-domes-velesanas-0/index.html",
+        "input_kind": "artifact",
+        "sha256": "904b9108a548ee5d4b1078f181ceb486024e1bbfda73a9319f76eb87027ff507",
+        "byte_count": 8936
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/velesanu-rezultati-1/index.html",
+        "input_kind": "artifact",
+        "sha256": "7cfcaca4d018a35dcf56a3dac8b24377e02c0ef83be3e785136fb1972a8969b2",
+        "byte_count": 5901
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/velesanu-rezultati-2/index.html",
+        "input_kind": "artifact",
+        "sha256": "ee1ebde8ff5f33f35d300b160075ceda93f13b119e8ed0475be8667383c163ab",
+        "byte_count": 3681
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/velesanu-rezultati-3/index.html",
+        "input_kind": "artifact",
+        "sha256": "ec5773c10e48c9bcab15716fd98335d14da5facb4c118e670ac83de8377edd92",
+        "byte_count": 5032
+      },
+      {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/vrd-2021-velesanu-rezultati/index.html",
+        "input_kind": "artifact",
+        "sha256": "51bdfede36f60891967ecf2110ab49a7241ba2333c1331f2e0dce73f538e1dae",
+        "byte_count": 4419
+      },
+      {
+        "input_path": "data/research/latvia/sources/data.gov.lv/dati/api/3/action/package_show/index.html__d1a16753ca",
+        "input_kind": "artifact",
+        "sha256": "f64fe077651667b67d08785adab470a81a82d8b7cc04475e9ea6ae5dc77674e6",
+        "byte_count": 8974
+      },
+      {
+        "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/2017-gada-republikas-pilsetas-domes-un-novada-domes-velesanu-rezultati-un-veletaju-aktivitate/index.html",
+        "input_kind": "artifact",
+        "sha256": "c117846c94f166fff4446ee984e7269d99580e277a91910c6fcbc445e8ee204c",
+        "byte_count": 38748
+      },
+      {
+        "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/a4f19194-c17b-4fea-ab21-f718afa707c6/download/electedcandidates636363813214220000.xml",
+        "input_kind": "artifact",
+        "sha256": "f5a3cd815736f21819e30fb2c641ecf653b87d539c9fa6b43998841e629c3c9d",
+        "byte_count": 1601676
+      },
+      {
+        "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+        "input_kind": "artifact",
+        "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+        "byte_count": 174358351
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/index.html",
+        "input_kind": "artifact",
+        "sha256": "b4a88c21fd05ccecb92bbefebcc022f99a81de57c1fc7cb770f659571a9f90cb",
+        "byte_count": 5795
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/index.html",
+        "input_kind": "artifact",
+        "sha256": "45f87b116af99d2876fb22c57bdb928a4495e25b0fa887b7ef9f0b1ac0b91e5e",
+        "byte_count": 17144
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/dienvidkurzemes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "82021ed1f1e673f43fd075ed21aa250cd256cab51cb6cbe9a9279b4faa07dade",
+        "byte_count": 55643
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/kuldigas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "a1e9926740960d7c01c4f208cdb0d5e3d8b27fd66e8ede0cb2e9702c431e1673",
+        "byte_count": 50395
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/liepaja/index.html",
+        "input_kind": "artifact",
+        "sha256": "cf59c08231eb008fb0ead60974a655ed3ae52ec84562021104ec16d62e307d3a",
+        "byte_count": 51200
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/saldus-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "eb0b05caf7d4f459e722ca06f14e252e33472f8c9d070ffecf9147ccc3a8923c",
+        "byte_count": 54150
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/talsu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "572157e95702e68a7321445d4344cd04dd2e09ec2f4c5de5559376b53728e649",
+        "byte_count": 60826
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/ventspils-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "3bef869e7d6de88c91eeb4abceb0028945296a8f16a477df3661a810f9dc0eb6",
+        "byte_count": 33725
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/ventspils/index.html",
+        "input_kind": "artifact",
+        "sha256": "c5eb6723d54956d80269d42d82f296120d7526ec6af8071c37c679cfd3769803",
+        "byte_count": 38793
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/augsdaugavas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "160231526db345a56d2bd2977d39c42233869aff456e59968017abb340facf21",
+        "byte_count": 55481
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/balvu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "393b0cf6cb5929abfd0279c74a68848771b6541c03c9d63c0c3f2bea6ee5110d",
+        "byte_count": 53042
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/daugavpils/index.html",
+        "input_kind": "artifact",
+        "sha256": "f7b948370b0cf1ab75bf02b48e974158c559c2125dc54c5694bfef264647e7e8",
+        "byte_count": 64653
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/kraslavas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "922c3f1e8f3f7bef9c9b091511c6076a8dcb7418acbfdbb7e9e8e889f050dcfb",
+        "byte_count": 54789
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/livanu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "61996d1af9e817a2d8f56f994885d53100bad58ed4c498245d9721681d8a82aa",
+        "byte_count": 33828
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/ludzas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "858def8b269ea135deeca62247e6a3ee5a6bd54df7a401f4d14a236e26d05d50",
+        "byte_count": 56658
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/preilu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "5dafa670ec7633b67a76e3a5371ae4dc27747599db1e00d5b4b0c9b7a0efc5ef",
+        "byte_count": 41154
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/rezekne/index.html",
+        "input_kind": "artifact",
+        "sha256": "fef64e2ae86db0b4329c128708b49291aa558d5896735f249e3987242be0e11e",
+        "byte_count": 41460
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/rezeknes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "6b6b84fbe164e0497e33321c902e6e65e3b79676148fab178577c859d19da225",
+        "byte_count": 68760
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/riga/riga/index.html",
+        "input_kind": "artifact",
+        "sha256": "44cba8c23612ff0ffacd3e1ed3c1909a6915d7bf589c77f942d7d29b3a34b81f",
+        "byte_count": 290954
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/adazu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "87f45f8b2897b98f06138165e537a247ef01851e654d8b869cd11df557c05ef5",
+        "byte_count": 34506
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/aluksnes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "676dbe60fcb91ce194481b16c689a3bf1209c2e80f9a4360e9d28e25a98de5d6",
+        "byte_count": 48705
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/cesu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "9478ec9a993e6484d86eafddd420bc46a4d74abd9d0c87876af875012bc96431",
+        "byte_count": 58726
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/gulbenes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "b9b968f9a9445f38127d5fc015b6398e396cadda96fe58b95a781f99dac2fc46",
+        "byte_count": 44092
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/jurmala/index.html",
+        "input_kind": "artifact",
+        "sha256": "78318d974cf3c244732c35f8058836886561729b1cbca60792229a65ae462c6b",
+        "byte_count": 48557
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/kekavas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "eb7d75e7df70f5448a3b0e0efd15d7cf1168445b7438903c456ee6c8a2177ae0",
+        "byte_count": 37970
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/limbazu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "03eab7d86b5f617b3012b93e9b9de8919627ed727af58d97a36b6c1733e0ddac",
+        "byte_count": 45781
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/madonas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "fde9487d1c02196c10d0f8de3f4ae35d3ed8f017d5c5c65e34a2a34fd892ee3e",
+        "byte_count": 53372
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/marupes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "4ededbfde89faf19f975db563cd0790774d23499bf1ecda44aff13ba846abadf",
+        "byte_count": 35462
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/ogres-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "771f1c40beb5740095bacbf5d9c28c5f39d1b81b9b2a82b7fbbe5764c57c99e9",
+        "byte_count": 58245
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/olaines-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "b264c46088bfd5f0f370a5c9c82053c73765ca16e584ada05b6d45de131806b4",
+        "byte_count": 26555
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/ropazu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "a8909ce6c549e1e2c940be4bcf7328124fed39c518bcc85625334e6f791f5653",
+        "byte_count": 34104
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/salaspils-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "8c24de3ed132df17972a942c72b18ad56e7414033ef9b4a9c425a84e735b35fc",
+        "byte_count": 28116
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/saulkrastu-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "46b09c54c75bda47fa1e642c75985b0815631597c1a120a5cd20e22e5611f4b0",
+        "byte_count": 27096
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/siguldas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "e7a22266e404bf702ce8a45d6471b0c7af5ae5abc284eaa5a2b5bbc4b8905de0",
+        "byte_count": 39190
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/smiltenes-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "5449522c4119856572ac551184753b6eda50ed4d67e5b3ae4953d8c101643e41",
+        "byte_count": 41402
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/valkas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "cda13114543d20c30eb730817c42355191eebffe341fa762ff8b7f7bce4e1285",
+        "byte_count": 29087
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/valmieras-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "ebfe69cfaa19608372d94b893c8d3391f196487e754d7dbd4606827abfd2e0f6",
+        "byte_count": 65803
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/aizkraukles-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "c25dfe85bfefce45d734cdccda1aadb62ffd6e85291a40b32b38c9bad8d697f9",
+        "byte_count": 48513
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/bauskas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "3d8febc83fdb89894670aece031d66f512974a310163b5ba96a0e38e2947ed1d",
+        "byte_count": 52143
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/dobeles-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "6657056d6bc763bae657e371e1fcf9664b0ae75009bfa101b44e58c9d2f0acb1",
+        "byte_count": 48714
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jekabpils-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "e0395560e4c142c63528c7dd6d9cedf5cf5949379384c9b3170508e87e273db4",
+        "byte_count": 73924
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jelgava/index.html",
+        "input_kind": "artifact",
+        "sha256": "2dd9864cc8fde5706f528f1fc67fe4c6c6bc65d07f79c45c63df8bfe3472fcc0",
+        "byte_count": 48439
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jelgavas-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "8038d8764272605855f84e751603b4f83f9627b67f2ecd80c50a6f7da66f0cfb",
+        "byte_count": 53344
+      },
+      {
+        "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/tukuma-novads/index.html",
+        "input_kind": "artifact",
+        "sha256": "0dd4b522afba6c5575c8f196332b1324b7738b472153ea00154b12cc3567dda1",
+        "byte_count": 57257
+      },
+      {
+        "input_path": "data/research/latvia/sources/likumi.lv/ta/id/315654-administrativo-teritoriju-un-apdzivoto-vietu-likums/index.html",
+        "input_kind": "artifact",
+        "sha256": "c21d42a397add21471cffda06c237490ae1c7c44f131384de0ca673d5f74e7bb",
+        "byte_count": 152086
+      },
+      {
+        "input_path": "data/research/latvia/sources/likumi.lv/ta/id/336956/index.html",
+        "input_kind": "artifact",
+        "sha256": "744d48c6f7e242d5899dfba9a674b1fccfec289a90b361b1519283e1f5bbfac7",
+        "byte_count": 235833
+      },
+      {
+        "input_path": "data/research/latvia/sources/likumi.lv/ta/id/57980/index.html",
+        "input_kind": "artifact",
+        "sha256": "fa76168371ecb84f509c6357495e1ac8de1abbc3412b59c00d80d21b6355d77d",
+        "byte_count": 145912
+      },
+      {
+        "input_path": "data/research/latvia/sources/sv2022.cvk.lv/pub/Api/75d4b7ba08bf4823842ef0f9dd379e47/Departments/index.html",
+        "input_kind": "artifact",
+        "sha256": "c86aa172dde8ed1e74b2cbaa558c079b18d319f8d85ae4b6782308b0caea5e16",
+        "byte_count": 264226
+      },
+      {
+        "input_path": "data/research/latvia/sources/sv2022.cvk.lv/pub/Api/9cfe9e88e8994444beaef3b37495cf90/ElectionResults/index.html",
+        "input_kind": "artifact",
+        "sha256": "5cbc1cb3ffd8b3df7d0bec5fdb78a64fd8b2768e0e86c12f06af26b74ab2dc4b",
+        "byte_count": 36932
+      },
+      {
+        "input_path": "data/research/latvia/sources/sv2022.cvk.lv/pub/Api/DataVersions/index.html",
+        "input_kind": "artifact",
+        "sha256": "84ecf67f5813ecf6d309eb4de8eb36e307e782dcf04145aeb24981572ad62949",
+        "byte_count": 854
+      },
+      {
+        "input_path": "data/research/latvia/sources/sv2022.cvk.lv/pub/Api/Info/index.html",
+        "input_kind": "artifact",
+        "sha256": "a9aebfdd68baede78694e57969850b5f7df77f54a30fc5b317c4905d81818396",
+        "byte_count": 448
+      },
+      {
+        "input_path": "data/research/latvia/sources/sv2022.cvk.lv/pub/assets/js/common.js",
+        "input_kind": "artifact",
+        "sha256": "135dea2330643ad1a2230a6e02829589c4988a49c619e0ed42ae6b06766b1749",
+        "byte_count": 441973
+      },
+      {
+        "input_path": "data/research/latvia/sources/sv2022.cvk.lv/pub/assets/js/home.js",
+        "input_kind": "artifact",
+        "sha256": "fd5e63eee33173041bfd10fbe8121b2872a6f3760273bdd61a10501c68dbe84e",
+        "byte_count": 2545
+      },
+      {
+        "input_path": "data/research/latvia/sources/sv2022.cvk.lv/pub/en/index.html",
+        "input_kind": "artifact",
+        "sha256": "366472f5629882440226c436129b4c5877c2a2aa671b464f76e9876f85df7792",
+        "byte_count": 2347
+      },
+      {
+        "input_path": "data/research/latvia/sources/titania.saeima.lv/LIVS14/saeimalivs_lmp.nsf/0/a6fd83b30943d24fc22589c0002cbc17/$FILE/Balsojums.pdf",
+        "input_kind": "artifact",
+        "sha256": "c86cef9fdc2ebb45b83d6f3653dda2707fe5e0333714f5dcd373795ed7b37be5",
+        "byte_count": 1936377
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.cvk.lv/arhivs/index.html",
+        "input_kind": "artifact",
+        "sha256": "43a7aae226e4dc7fe53d094cbf6dd83c6df6812dafff438c58de7ac5692d50ff",
+        "byte_count": 41901
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.cvk.lv/ep-rezultati/index.html",
+        "input_kind": "artifact",
+        "sha256": "07044fc37fc12a3ed713488e23820a781b21b92cd31e65efad091f9b2fad705f",
+        "byte_count": 42646
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.cvk.lv/index.html",
+        "input_kind": "artifact",
+        "sha256": "b3d8ef9988a373c19816b464c707380c4b6597b76823e6dbebe8edb4b47687fc",
+        "byte_count": 57902
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.cvk.lv/resursi/likumi/index.html",
+        "input_kind": "artifact",
+        "sha256": "255e176f77c68d7d38040140e37023f7cb73edb210d66dbb408a8fcb1237e378",
+        "byte_count": 108142
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.cvk.lv/saeimas-rezultati/index.html",
+        "input_kind": "artifact",
+        "sha256": "1d89924795acd33dde382e5187b95a3a85f4e083b92186bd197df20e14e8052c",
+        "byte_count": 51662
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.president.lv/en/andris-berzins/index.html",
+        "input_kind": "artifact",
+        "sha256": "0c6ab29bfb980163bfcd63544aaa274717a596c70041b6191e6ff676e1dca3b4",
+        "byte_count": 108031
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.president.lv/en/biography-0/index.html",
+        "input_kind": "artifact",
+        "sha256": "bfa3200d3f5745304fe12b541b7b858a565fd962be4aece007fa9b38a97d5cd1",
+        "byte_count": 117415
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.president.lv/en/biography-1/index.html",
+        "input_kind": "artifact",
+        "sha256": "9eab27ee76887656d219ccf63b88b105c45e4eb2a2627322f872c9c15f0ea23a",
+        "byte_count": 106801
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.president.lv/en/biography/index.html",
+        "input_kind": "artifact",
+        "sha256": "f2fbb4851018f0e246450a5aa1e0d53862f5a8efd54cd06bfec16fbd756e274e",
+        "byte_count": 113424
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.president.lv/en/curriculum-vitae/index.html",
+        "input_kind": "artifact",
+        "sha256": "56a289baabecf90eec347b9513264db12eb292a86fb3ea817f8cc12576342b8e",
+        "byte_count": 110197
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.president.lv/en/egils-levits/index.html",
+        "input_kind": "artifact",
+        "sha256": "33af4e0b9c92ddd5d03d9968844225542a4c1af8930f3f290a20058a0d870104",
+        "byte_count": 108244
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.president.lv/en/election-president-latvia/index.html",
+        "input_kind": "artifact",
+        "sha256": "7b8eb2c75d6b5c2ab0ac1829c49c413f336354bbfce294e2ee39aa90b80af7da",
+        "byte_count": 109502
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.president.lv/en/guntis-ulmanis/index.html",
+        "input_kind": "artifact",
+        "sha256": "d3404febe35f2542501dae581918ce33de4b30c90723e64a9e49491d0625f548",
+        "byte_count": 109913
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.president.lv/en/index.html",
+        "input_kind": "artifact",
+        "sha256": "2765aab22db4b84afe68cdb729660f945890bce27db80a7e5284b215c98a0e4f",
+        "byte_count": 114798
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.president.lv/en/president-latvia-edgars-rinkevics/index.html",
+        "input_kind": "artifact",
+        "sha256": "c609535d3a729432ff072da36175dbb1fc4068e040342b4bf082c750bdb38858",
+        "byte_count": 111610
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.president.lv/en/raimonds-vejonis/index.html",
+        "input_kind": "artifact",
+        "sha256": "9b1e95ac2dc1fb0d7a70aa31fac8fe58095e6ea1b45baeccd40b89f9f3044934",
+        "byte_count": 113596
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.president.lv/en/vaira-vike-freiberga/index.html",
+        "input_kind": "artifact",
+        "sha256": "3919b781cde9ca3f2b2fd8a0d1878ab33b71c71039d8cce733de6a8df6bf94f5",
+        "byte_count": 111569
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.president.lv/en/valdis-zatlers/index.html",
+        "input_kind": "artifact",
+        "sha256": "2166dd1064764ee19174e90a9bc67bda08a6e7bf4ccd975081b2cdfe80438820",
+        "byte_count": 108136
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.saeima.lv/en/news/saeima-news/32280-edgars-rinkevics-elected-president-of-latvia/index.html",
+        "input_kind": "artifact",
+        "sha256": "d24ed2d7a905a331dec47d367f381762e46debc0483b4b351f6a3ceb1cbf0f9a",
+        "byte_count": 37918
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.saeima.lv/en/news/saeima-news/index.html",
+        "input_kind": "artifact",
+        "sha256": "6d7cc45aa0510b6ec9ed2b84cf44f3c43e6f578f88213df448c096207a4478f6",
+        "byte_count": 36388
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.saeima.lv/en/search/index.html__aa3bdbc4a1",
+        "input_kind": "artifact",
+        "sha256": "08d232f659821549fd6e5fa09b9b16b505a099623f8d0feceb79f71009807d0c",
+        "byte_count": 18919
+      },
+      {
+        "input_path": "data/research/latvia/sources/www.saeima.lv/en/search/index.html__b0d2420835",
+        "input_kind": "artifact",
+        "sha256": "bb9b4383633ae9e97820911fd4cea8638bace51d808c6947dbc2c0f4e2f6361f",
+        "byte_count": 18919
+      },
+      {
+        "input_path": "data/research/latvia/unresolved-aggregate-claims.json",
+        "input_kind": "package",
+        "sha256": "4694bd0388fb4435ac34b5b0cc06085fb3eb4944aa37443f9f0fe73eb5641202",
+        "byte_count": 7841
+      },
+      {
+        "input_path": "data/research/latvia/vote-reconciliation.json",
+        "input_kind": "package",
+        "sha256": "087878f99b821f14f6b6caae1705716dd9bf610099c11f22b07f5789e0bc0fb2",
+        "byte_count": 126357
+      },
+      {
+        "input_path": "schemas/atlas/tiers/latvia.json",
+        "input_kind": "tier_classification",
+        "sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+        "byte_count": 243684
+      }
+    ],
+    "overrides": [],
+    "adapter_version": "atlas-latvia-full-register/1",
+    "method_version": "atlas-preserve-evidence/1",
+    "schema_version": "atlas-master/1",
+    "schema_inputs": [
+      {
+        "input_path": "0001_atlas_attempt_log.sql",
+        "sha256": "e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1"
+      },
+      {
+        "input_path": "0002_atlas_master.sql",
+        "sha256": "1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da"
+      }
+    ]
+  },
+  "fingerprint_sha256": "cb5cd35449a13d006e128b40b0e271b0d2312e2738d571377c84c26e86edda90",
+  "candidate_release_id": "country-package-latvia--sha256-cb5cd35449a13d006e128b40b0e271b0d2312e2738d571377c84c26e86edda90",
+  "tier_file": {
+    "input_path": "schemas/atlas/tiers/latvia.json",
+    "sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce"
+  },
+  "source_count": 188,
+  "retained_sources": [
+    {
+      "url": "https://arhivs.cvk.lv/lv/10-saeimas-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/10-saeimas-velesanas/index.html",
+      "sha256": "20aaacdeed498ecda8ff2dd89edbf2181f91f71407ec0a2984360d8592c1e9fe",
+      "bytes": 7588,
+      "status": "ok",
+      "source_id": "latvia--url-194f86ac324555e2c73693e9",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/11-saeimas-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/11-saeimas-velesanas/index.html",
+      "sha256": "97822fd1b4109c31011f75df0cbfb0b9848d73022047c75caaed2232033bbcd4",
+      "bytes": 9899,
+      "status": "ok",
+      "source_id": "latvia--url-18767c1073c4e0b53d32a339",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/12-saeimas-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/12-saeimas-velesanas/index.html",
+      "sha256": "6281dff173a349603744013e657d366dc6d74463ea199c9f5a61aaeb9345c102",
+      "bytes": 9689,
+      "status": "ok",
+      "source_id": "latvia--url-39123d2c91fdcd961004a581",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/12-saeimas-velesanu-rezultati/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/12-saeimas-velesanu-rezultati/index.html",
+      "sha256": "1d09f1b1c10861b52e1caa32fd24209dc9c3848a22581353b82cb5deefbac6a7",
+      "bytes": 3651,
+      "status": "ok",
+      "source_id": "latvia--url-9a143e19245ce1cc39d83b75",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/13-saeimas-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/13-saeimas-velesanas/index.html",
+      "sha256": "27056cb7001c3b7fd0929af3c6fd6a1c76f52916603e3fa5ff10bf06181f19d7",
+      "bytes": 14802,
+      "status": "ok",
+      "source_id": "latvia--url-fa448d9e13087607f4ec56f0",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/13-saeimas-velesanu-rezultati/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/13-saeimas-velesanu-rezultati/index.html",
+      "sha256": "1a7be3ba56597b88b76c6a4420e5b81c6f2e7a1017bf7e8bb8f7c9450690e75e",
+      "bytes": 23820,
+      "status": "ok",
+      "source_id": "latvia--url-12ff1cde1f320558e20d6b42",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/14-saeimas-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/14-saeimas-velesanas/index.html",
+      "sha256": "c23302924c0fd133c558027425c4677aa00c0a928087443f304075a471462854",
+      "bytes": 13262,
+      "status": "ok",
+      "source_id": "latvia--url-01b4c6ef2790e917f50b653a",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/14-saeimas-velesanu-rezultati/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/14-saeimas-velesanu-rezultati/index.html",
+      "sha256": "29a61f6026bceb417ba29239a1497ce6fbfa496649d778c8f5dd7c86b1ec4428",
+      "bytes": 19239,
+      "status": "ok",
+      "source_id": "latvia--url-9706c8e9e6235dfcc1888160",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/1994-gada-29-maija-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/1994-gada-29-maija-velesanas/index.html",
+      "sha256": "277436bbf3ffdc0de82002e552994a20c9e94685fc514e1e4673ae93c30bc9c0",
+      "bytes": 3403,
+      "status": "ok",
+      "source_id": "latvia--url-4721d4a4a44926bb65648fbe",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/1997-gada-9-marta-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/1997-gada-9-marta-velesanas/index.html",
+      "sha256": "50b2b9ad61ab8bdac374ebad48ab4face7821c68908fbab083731e45604b6c01",
+      "bytes": 1843,
+      "status": "ok",
+      "source_id": "latvia--url-34634d9c5556310e55ea5acf",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/2001-gada-11-marta-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2001-gada-11-marta-velesanas/index.html",
+      "sha256": "1a0d5e3300792454151b3628db903beed4f365af8b4008a876af4fe31876450f",
+      "bytes": 2188,
+      "status": "ok",
+      "source_id": "latvia--url-5ac9b2702ddc5b3125dd5c61",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/2003-gada-20-septembra-velesanas-rendas-pagasta/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2003-gada-20-septembra-velesanas-rendas-pagasta/index.html",
+      "sha256": "d43cab82ebc473a75669a4ba6f146b658fc51b7ffe5a5dcaf96764a67a8e987f",
+      "bytes": 1952,
+      "status": "ok",
+      "source_id": "latvia--url-7e909d16de623847f869dd63",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/2004-gada-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2004-gada-velesanas/index.html",
+      "sha256": "e4002b46f6623dddb231cb86816eb936baaee8be36e7c011f4c4e4e7ad68f0f1",
+      "bytes": 5190,
+      "status": "ok",
+      "source_id": "latvia--url-ac095ef77210e97ad3f65b1a",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/2005gada-12marta-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2005gada-12marta-velesanas/index.html",
+      "sha256": "be333285a0a14d36fdbeb4dd900877dfa3b6ebdeceb3c40b6d7fbb033e43996d",
+      "bytes": 3455,
+      "status": "ok",
+      "source_id": "latvia--url-1cf311a354cb6d35c6c6c4f9",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/2005gada-20augusta-atkartotas-velesanas-rezekne/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2005gada-20augusta-atkartotas-velesanas-rezekne/index.html",
+      "sha256": "7de6c0441ed2b40d0b58564f6731046ec64027d56939852f671e6923a8b1908b",
+      "bytes": 3459,
+      "status": "ok",
+      "source_id": "latvia--url-884b0b0a4eb1df0d5b6166eb",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/2009-gada-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2009-gada-velesanas/index.html",
+      "sha256": "1c3b8be377e9dd21bfeb8149e8c91c1500c4afa63506c75a54b6cdf5c9bc0488",
+      "bytes": 8696,
+      "status": "ok",
+      "source_id": "latvia--url-168e672520e15a01742c9504",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/2009gada-6junija-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2009gada-6junija-velesanas/index.html",
+      "sha256": "3bc02a5c94447cd5d87b7ec2d67473a722d332ad92ff929c0f3d501f397abbbd",
+      "bytes": 8508,
+      "status": "ok",
+      "source_id": "latvia--url-62f9c074bfcb784207d75516",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/2010gada-18decembra-rojas-novada-domes-un-mersraga-novada-domes-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2010gada-18decembra-rojas-novada-domes-un-mersraga-novada-domes-velesanas/index.html",
+      "sha256": "b1901abf1f295136364ba985012ea32b0d2266bfa6ea3ea0c2ffdf6dd2b7d9bc",
+      "bytes": 4051,
+      "status": "ok",
+      "source_id": "latvia--url-20f891b27d8af5321b71afa2",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/2013gada-1junija-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2013gada-1junija-velesanas/index.html",
+      "sha256": "acc79c3b0ad89fe7af5b336430bd4fb66d4ffc8cf738b68358bed6552f11a0db",
+      "bytes": 10664,
+      "status": "ok",
+      "source_id": "latvia--url-1b6248a99afc98a4465252a8",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/2014-gada-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2014-gada-velesanas/index.html",
+      "sha256": "ad3ee9d2901bb1ae6b7f333f10e4f0d90be987b5b3e196ae859249c700d44563",
+      "bytes": 10761,
+      "status": "ok",
+      "source_id": "latvia--url-e0bf5c9c06150c9538f5b417",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/2017gada-3junija-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2017gada-3junija-velesanas/index.html",
+      "sha256": "25d8bcab76cac093c7c06e592dc0b166c830791407afc48113c9f442f3f157f3",
+      "bytes": 8259,
+      "status": "ok",
+      "source_id": "latvia--url-ce33f04541c092d6b395b4dc",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/2021-gada-5-junija-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2021-gada-5-junija-velesanas/index.html",
+      "sha256": "c2d50e893c94422a306a205ca709f4c2f42e27bfd1a5b309b3cc7403d3d98e94",
+      "bytes": 9762,
+      "status": "ok",
+      "source_id": "latvia--url-38c35106702699a6f359c6c0",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/2025-gada-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/2025-gada-velesanas/index.html",
+      "sha256": "c825e3f245d7fc496b53c7b485c98bf932562d80cc1f9dde5f78dc4098159132",
+      "bytes": 8075,
+      "status": "ok",
+      "source_id": "latvia--url-509ab6e3a12e535a8231f348",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/5-saeimas-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/5-saeimas-velesanas/index.html",
+      "sha256": "7c91fe8b53ccc6ff9fc118eb71c1732a938cb3ec741c3f88b046310bbb005ec7",
+      "bytes": 8758,
+      "status": "ok",
+      "source_id": "latvia--url-fc4178ac434f8d60cf6c964c",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/6-saeimas-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/6-saeimas-velesanas/index.html",
+      "sha256": "34481bd3a029a65b054feb606e6b375a1d3965145b8c0559ad194b28f41b0b2c",
+      "bytes": 6853,
+      "status": "ok",
+      "source_id": "latvia--url-8abd6e6ebc3fc1bbc91059b4",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/7-saeimas-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/7-saeimas-velesanas/index.html",
+      "sha256": "e2b1a496d488d0232ff33820dacf33745ff8957d73e2bbd7bcf23f742addd8f6",
+      "bytes": 3911,
+      "status": "ok",
+      "source_id": "latvia--url-acb438b245e7d3274bfab440",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/8-saeimas-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/8-saeimas-velesanas/index.html",
+      "sha256": "693c9825b64623fb3b6be1da889d934f7641ab3a379c7b867142b8f8a6c7a0f0",
+      "bytes": 5478,
+      "status": "ok",
+      "source_id": "latvia--url-5668bf65aa4cbf82429a648f",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/9-saeimas-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/9-saeimas-velesanas/index.html",
+      "sha256": "a11e5da4e4d3cb1bf994b0fdde726606f07e6f837cbde2a33828648949a73c7a",
+      "bytes": 5695,
+      "status": "ok",
+      "source_id": "latvia--url-c87d141c803ac6c491094afb",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/eiropas-parlamenta-velesanas-2019/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/eiropas-parlamenta-velesanas-2019/index.html",
+      "sha256": "e254926abe26a8d9e1c8d4b27c84482e426422a1f6b86d982f762db451d88dcb",
+      "bytes": 13221,
+      "status": "ok",
+      "source_id": "latvia--url-502b0dc79f933666fec0e2a4",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/eiropas-parlamenta-velesanas-2024/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/eiropas-parlamenta-velesanas-2024/index.html",
+      "sha256": "0823ae12693ed3021b495fee2bd285751ea3c6e3a6cfc91c6fa81e7ab0b4e2de",
+      "bytes": 7191,
+      "status": "ok",
+      "source_id": "latvia--url-7ed8401dfcedf578f9ec9987",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/eiropas-parlamenta-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/eiropas-parlamenta-velesanas/index.html",
+      "sha256": "c9f96ddc04f96207b130d8007e62d138e92f82a1ce49397d8a24fd1936eb37b5",
+      "bytes": 3579,
+      "status": "ok",
+      "source_id": "latvia--url-009e1ce82e39b40023e2039d",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/ep-2014-aktivitate-un-rezultati/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/ep-2014-aktivitate-un-rezultati/index.html",
+      "sha256": "49a1a422da735f13b72f62ba95d089a381d456b72773be42b931d1a5de866a69",
+      "bytes": 3835,
+      "status": "ok",
+      "source_id": "latvia--url-70c27054c0310687e890cf85",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/ep-2019-velesanu-rezultati/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/ep-2019-velesanu-rezultati/index.html",
+      "sha256": "33149d2997d8962d0be23950255bd99622d93385e60afe902efff2605a153063",
+      "bytes": 22179,
+      "status": "ok",
+      "source_id": "latvia--url-d8410422c5fa9c1f6c81f1b5",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/ep-2024-velesanu-rezultati/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/ep-2024-velesanu-rezultati/index.html",
+      "sha256": "a14885d3cc1b1a82ed6c2d69c3c3a3cbf394f181bb1f42570c60e70e0e5cdccb",
+      "bytes": 10033,
+      "status": "ok",
+      "source_id": "latvia--url-e568e1bd035585baf2aeb4bd",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pasvaldibu-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pasvaldibu-velesanas/index.html",
+      "sha256": "2e16ffc768a0303bdbdee4265ceffc8e98b44dc379ac1170b4c809f5052c8306",
+      "bytes": 11243,
+      "status": "ok",
+      "source_id": "latvia--url-8fd3b4b9986a484cc955f5cd",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-rezultati/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-rezultati/index.html",
+      "sha256": "3630475c227d73a7de078b2d20fca3805cc06cb379d73d5f282acfdc911024ab",
+      "bytes": 29517,
+      "status": "ok",
+      "source_id": "latvia--url-a1dd5014650411570de9033d",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-adazu-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-adazu-novads/index.html",
+      "sha256": "f36f3f7a0c4612d69254e6322b2c3e6eb90d2adb921f0a8e38e341a4eafb3e8e",
+      "bytes": 3650,
+      "status": "ok",
+      "source_id": "latvia--url-c8d289c4442d4833d9ffe5ee",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aglonas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aglonas-novads/index.html",
+      "sha256": "1fbc88ec3e0d880bb0c37370dea4a23f0d5e23689b48c33a82c9b79a9aca704f",
+      "bytes": 6576,
+      "status": "ok",
+      "source_id": "latvia--url-7b903189dd54b69fa0f9b539",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aizkraukles-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aizkraukles-novads/index.html",
+      "sha256": "29a781a8f84d18d77d2a323fb1233592deecae3fcc33a7cd4770ccddb120d2fa",
+      "bytes": 6092,
+      "status": "ok",
+      "source_id": "latvia--url-65597361495543f32919f473",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aizputes-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aizputes-novads/index.html",
+      "sha256": "ca328c8de7013c745d6d1100b1cd289994f8da182ae8f2e00086c801e78ebaec",
+      "bytes": 5845,
+      "status": "ok",
+      "source_id": "latvia--url-9940e1a8daeb579fecec5c14",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aknistes-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aknistes-novads/index.html",
+      "sha256": "a3f8addc68721c0907e480fbede349e7ccd6be619950899b7283ced8735baa36",
+      "bytes": 4300,
+      "status": "ok",
+      "source_id": "latvia--url-190bd77d895c01ff454acac5",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-alojas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-alojas-novads/index.html",
+      "sha256": "d47f9a9f03ee4896901873ea7c5da349c281b2a4a6557d6e5e9b30e69122e7aa",
+      "bytes": 6902,
+      "status": "ok",
+      "source_id": "latvia--url-bbfe222412b085091afc9ed6",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-alsungas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-alsungas-novads/index.html",
+      "sha256": "5833abb01b28918f827dc0223f8a85479963605dd13c99b5114e7ee559c05ea7",
+      "bytes": 3132,
+      "status": "ok",
+      "source_id": "latvia--url-d1adc75d748c591187e0b6cd",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aluksnes-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-aluksnes-novads/index.html",
+      "sha256": "3e92591a8d6ec48f2027293bcf311533525efc92a9f98310e16a7f4d36b23404",
+      "bytes": 20954,
+      "status": "ok",
+      "source_id": "latvia--url-5b975e3dabf956685aba312c",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-amatas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-amatas-novads/index.html",
+      "sha256": "3e84d4d9c5a13b5628342645389741c6fa224473d6c37604b473d1626537acb3",
+      "bytes": 6050,
+      "status": "ok",
+      "source_id": "latvia--url-1985d76b2a44b9d9689c6450",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-apes-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-apes-novads/index.html",
+      "sha256": "463e4a124a8b77d7f1b08d451263d623cad16428aa0a966f713588173d988e2d",
+      "bytes": 4666,
+      "status": "ok",
+      "source_id": "latvia--url-0264efb9dd0ea8ec0a4f2b8c",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-auces-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-auces-novads/index.html",
+      "sha256": "a2ff6c89c860c843982f430d0321a889fafa38c85ac6f7c1708776ddd1a2f079",
+      "bytes": 4903,
+      "status": "ok",
+      "source_id": "latvia--url-886a75abde68525a2b57d8a1",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-babites-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-babites-novads/index.html",
+      "sha256": "a825b196aa9a77119e003b62b2943b3abbce19b8ab023f1aa550049eb8b629fe",
+      "bytes": 5048,
+      "status": "ok",
+      "source_id": "latvia--url-5dec0edfb39a5aeacca2e6e7",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-baldones-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-baldones-novads/index.html",
+      "sha256": "a4b8978e3d44a765d3721968c79e20f13b51f27cb007993faefca3cbea9632ea",
+      "bytes": 3353,
+      "status": "ok",
+      "source_id": "latvia--url-5317fc64d939129fea96bb27",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-baltinavas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-baltinavas-novads/index.html",
+      "sha256": "5b9ce0f4be1ab4bd1f3f9f9f370b7b77c1ddd597042b10f468e59d06df5e0eb8",
+      "bytes": 2925,
+      "status": "ok",
+      "source_id": "latvia--url-f06792a24a13bc81ac9a62f6",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-balvu-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-balvu-novads/index.html",
+      "sha256": "30ce024f4327f11a043a77223b097bb3645ad9190c1984b487f83fcb0ac56d78",
+      "bytes": 15522,
+      "status": "ok",
+      "source_id": "latvia--url-50a78fd80d5674f5466ca791",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-bauskas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-bauskas-novads/index.html",
+      "sha256": "7e01219319534c6e5ce5110a993dbb792ae41aacd940ab437c2dd3318d82785a",
+      "bytes": 14751,
+      "status": "ok",
+      "source_id": "latvia--url-250592b68ecf12ebef1dfc71",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-beverinas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-beverinas-novads/index.html",
+      "sha256": "665b4abf4500e5a0ea1a6334730b099b7068f14b47be7c2ccf36e15c10b851fe",
+      "bytes": 3646,
+      "status": "ok",
+      "source_id": "latvia--url-d9dcee909e1d272482d68cc6",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-brocenu-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-brocenu-novads/index.html",
+      "sha256": "ee8fd2355d12edf0ee2b42a38d0ebc6c49b061773a3c841c298370fc23f8d0af",
+      "bytes": 4863,
+      "status": "ok",
+      "source_id": "latvia--url-da6b8f6b579bb36e118d3743",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-burtnieku-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-burtnieku-novads/index.html",
+      "sha256": "76b386c9bf8c7c877c823849ee40f2ebde5053d06c50c21a9c32841377b7d94a",
+      "bytes": 10292,
+      "status": "ok",
+      "source_id": "latvia--url-b56ec28889b22a7f563974e8",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-carnikavas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-carnikavas-novads/index.html",
+      "sha256": "b8c373bd514326c3fb4e29b83bf5327c8e96fa5bf34aa76ffce13a1070fa233c",
+      "bytes": 5983,
+      "status": "ok",
+      "source_id": "latvia--url-a87af1dd9ae91c6a98a8987f",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-cesu-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-cesu-novads/index.html",
+      "sha256": "373ea45010a4c615057adb72932a80a0af20ce2cdef069631c06ef0775860e5c",
+      "bytes": 6947,
+      "status": "ok",
+      "source_id": "latvia--url-52e1e0019f516969e4eb29b4",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-cesvaines-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-cesvaines-novads/index.html",
+      "sha256": "b6776faa85b77618683b87483b32cf015fc552cd8fa6e651d0afb3a22b2debe0",
+      "bytes": 3326,
+      "status": "ok",
+      "source_id": "latvia--url-bbe9bf50b87d98ba2634cfc0",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ciblas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ciblas-novads/index.html",
+      "sha256": "0249c3ba2aa5a59e009993629253e951f3a9baa1a21211802b0fffdf6ba280fa",
+      "bytes": 5411,
+      "status": "ok",
+      "source_id": "latvia--url-7f9d0181c1232d0926a82c66",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-dagdas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-dagdas-novads/index.html",
+      "sha256": "399562d3a74bf13be10431ca1389a0f58cb422963ff7287e499bc4dbf7e072fc",
+      "bytes": 9500,
+      "status": "ok",
+      "source_id": "latvia--url-be3444ca2150d03995a29c72",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-daugavpils-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-daugavpils-novads/index.html",
+      "sha256": "92385187ee82037ddea2cd2bf880761deb8619048efda8375224a9ed25b0a75e",
+      "bytes": 21949,
+      "status": "ok",
+      "source_id": "latvia--url-d5fa4e89ae93bbb831612728",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-daugavpils/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-daugavpils/index.html",
+      "sha256": "12d33e765df4d243c7020aa929baf25535fa76b864d183e309d2ee68ef6a9fce",
+      "bytes": 55424,
+      "status": "ok",
+      "source_id": "latvia--url-2f04badc4ff09c65596fe7af",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-dobeles-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-dobeles-novads/index.html",
+      "sha256": "e6dd97d98c1facfdad4b9698470acf433a2d88919697ef9e73cbc053ab202fc2",
+      "bytes": 12232,
+      "status": "ok",
+      "source_id": "latvia--url-fb2c4e1139045f80139afd80",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-dundagas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-dundagas-novads/index.html",
+      "sha256": "25e271da6a90bafe84b44e30cc88d9742c15185798b4858db811827bdaace629",
+      "bytes": 4294,
+      "status": "ok",
+      "source_id": "latvia--url-2d4aea066f027bc297fd6683",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-durbes-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-durbes-novads/index.html",
+      "sha256": "c8da0c5e59cc38f4111dd1dc939076e0d13cb3aa1b795a8cbde4050700e099a1",
+      "bytes": 4467,
+      "status": "ok",
+      "source_id": "latvia--url-4c3c9ff2c465ad7e44fd8c9e",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-engures-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-engures-novads/index.html",
+      "sha256": "c7253348d7115d5dcbfd53ee9e8266b419263b4fc22217f532f47ef0532a3827",
+      "bytes": 3987,
+      "status": "ok",
+      "source_id": "latvia--url-75ee38c13b3f538a45fe391b",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-erglu-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-erglu-novads/index.html",
+      "sha256": "ed15c2aa4af21cc9eac541315bd83497982df30ed702b47261cc8327ee79eb33",
+      "bytes": 4309,
+      "status": "ok",
+      "source_id": "latvia--url-d3db6690a16261e9badcf4d7",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-garkalnes-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-garkalnes-novads/index.html",
+      "sha256": "50313be8aa1ef2a6d1800f1aecca507eba777873109bfb625e6b3f04068ce9cf",
+      "bytes": 5256,
+      "status": "ok",
+      "source_id": "latvia--url-92c47b1a1f7bbbbf1c48960b",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-grobinas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-grobinas-novads/index.html",
+      "sha256": "9709b25c73f8a41b550c43a71d39ef6de0c2a7c0602fad9587682fc7d4a37e31",
+      "bytes": 5060,
+      "status": "ok",
+      "source_id": "latvia--url-16decc652dfda155c5f8caa7",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-gulbenes-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-gulbenes-novads/index.html",
+      "sha256": "c4d933130292c2a946e0281bb22731bcce30e8bc2baea7c325d1c70f571f9f16",
+      "bytes": 12033,
+      "status": "ok",
+      "source_id": "latvia--url-6ec8a4dfc626c69e00d774a1",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-iecavas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-iecavas-novads/index.html",
+      "sha256": "956d22e009e8a2f752f7796d301beaa7a51f291a22c03486ef709c4774c39874",
+      "bytes": 3609,
+      "status": "ok",
+      "source_id": "latvia--url-caf19d596016b527599a7018",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ikskiles-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ikskiles-novads/index.html",
+      "sha256": "272fd2fd78fac167eec421409dae9462ab70816a1fce554554cef903688fc4c8",
+      "bytes": 5231,
+      "status": "ok",
+      "source_id": "latvia--url-52ebcf40e14968cd401d101b",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ilukstes-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ilukstes-novads/index.html",
+      "sha256": "6a01dc7155ec41249d59dbab1d8175d495c852eb09d16dc0b8769691c5d2e7ee",
+      "bytes": 7732,
+      "status": "ok",
+      "source_id": "latvia--url-143545c611597e1966e2999c",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-incukalna-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-incukalna-novads/index.html",
+      "sha256": "c1095e4b9ddcbac87c26eae4933ae9b57e6eb53cc99e728ac8e5432c6dfc0cb1",
+      "bytes": 4584,
+      "status": "ok",
+      "source_id": "latvia--url-8ceecaa30cce5989810a8153",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jaunjelgavas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jaunjelgavas-novads/index.html",
+      "sha256": "b85b572fa511e982dc5e0d9fbbd674a7ad80bf1fa75469ca03411011660a6c91",
+      "bytes": 5548,
+      "status": "ok",
+      "source_id": "latvia--url-6a994640ebc91b92dcff3400",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jaunpiebalgas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jaunpiebalgas-novads/index.html",
+      "sha256": "59f0b6dfcc94de1ee74d6b72295a66b572cd2b58ec4df6aa7d4349ab21b38f90",
+      "bytes": 3577,
+      "status": "ok",
+      "source_id": "latvia--url-79c896985bf622ab7516ad3b",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jaunpils-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jaunpils-novads/index.html",
+      "sha256": "82bad97da27682583d5094a0a6410c0639eef1260125c4e30391c68048b834f0",
+      "bytes": 3023,
+      "status": "ok",
+      "source_id": "latvia--url-2a1e0aa7a76ebcb4dc5db1e0",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jekabpils-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jekabpils-novads/index.html",
+      "sha256": "a06f373a47abc45e42a16899fabb5afa7589da7e225700de18efd19c2ef0e3bf",
+      "bytes": 7450,
+      "status": "ok",
+      "source_id": "latvia--url-f9ddc6f5e9ecffa609e36e95",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jekabpils/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jekabpils/index.html",
+      "sha256": "e7828c81c519baf44361a4b180d9aba6e56efc950be31535d4ebc6f1402b172e",
+      "bytes": 15031,
+      "status": "ok",
+      "source_id": "latvia--url-2883706d6f5cb0a306d9f7a4",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jelgava/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jelgava/index.html",
+      "sha256": "4c302067f85300732228a025a43b203002b973800c6673b082b3a57a26171446",
+      "bytes": 19432,
+      "status": "ok",
+      "source_id": "latvia--url-c4e8bcab8a3b3c4b32295a19",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jelgavas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jelgavas-novads/index.html",
+      "sha256": "67a35f96c82efdc3464f4b8efd3a488228738fd63521bb51fee965443c0bed34",
+      "bytes": 18450,
+      "status": "ok",
+      "source_id": "latvia--url-f14980d0a29938dfb34ac64b",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jurmala/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-jurmala/index.html",
+      "sha256": "aae870668ec03b05e27231a5e555e74797fac28cf442b77fc886761070cae535",
+      "bytes": 31434,
+      "status": "ok",
+      "source_id": "latvia--url-db865e8aa2d00d4aa8a324d9",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kandavas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kandavas-novads/index.html",
+      "sha256": "10eb8ed2bf67e5ebbb9c2a10aa2cec30e6124b6c4527ec605624fbf0f3ce5bb7",
+      "bytes": 7450,
+      "status": "ok",
+      "source_id": "latvia--url-ad31e35854d87d0ba98ba8c6",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-karsavas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-karsavas-novads/index.html",
+      "sha256": "78dc95e4f8f24ada41a275807cd6d35a48d38c45232de4a63d28ccd6de0f9655",
+      "bytes": 6403,
+      "status": "ok",
+      "source_id": "latvia--url-d2a47b3713029e223f009306",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-keguma-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-keguma-novads/index.html",
+      "sha256": "0fee6574ecfa816998ebf966ebcdf73c17c30b9cc94d887a506717d758a428ab",
+      "bytes": 5963,
+      "status": "ok",
+      "source_id": "latvia--url-9ef45f6e03f1b0ec619b946b",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kekavas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kekavas-novads/index.html",
+      "sha256": "99745effdf4f9d50929ff4c2651510dfaef1af774673d093a4cab8bdf6b80aff",
+      "bytes": 14781,
+      "status": "ok",
+      "source_id": "latvia--url-bbb6416d6f49a3cd42b44ac5",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kocenu-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kocenu-novads/index.html",
+      "sha256": "1fecb9995b31362e9a9fa948baccb6c7479ca986bc2494cb9530c1e133a86c82",
+      "bytes": 4716,
+      "status": "ok",
+      "source_id": "latvia--url-1b00c50dd4009b03c57bea07",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kokneses-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kokneses-novads/index.html",
+      "sha256": "c4e1a1129abf846aa59aa61a50b7a1514a8d39f320c2bee5b511741dd58b5147",
+      "bytes": 4377,
+      "status": "ok",
+      "source_id": "latvia--url-4f575aeaa672bd1ecc500ad6",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kraslavas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kraslavas-novads/index.html",
+      "sha256": "a40500be7a9d88bb9b0f037936650c3683004eb920e52712960e10687c17dc4d",
+      "bytes": 8559,
+      "status": "ok",
+      "source_id": "latvia--url-e9031ae47ca2175f500e1480",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-krimuldas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-krimuldas-novads/index.html",
+      "sha256": "87571fb61c5ff46f25f72fdc05ec0315401c337ff549c6b3e8ce6a0515121606",
+      "bytes": 3642,
+      "status": "ok",
+      "source_id": "latvia--url-8adc0ef33981230ebd578431",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-krustpils-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-krustpils-novads/index.html",
+      "sha256": "97a274a5609a88d452263d0463d555b3e9e721abd9efd2cc8a4d8f2a44f61c21",
+      "bytes": 7238,
+      "status": "ok",
+      "source_id": "latvia--url-2d7e80433b9e0cc78c72e0a5",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kuldigas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-kuldigas-novads/index.html",
+      "sha256": "ef8adc33c1682a73c33ba130d311e097aa940a53c938f44e9015de1f348cde90",
+      "bytes": 16438,
+      "status": "ok",
+      "source_id": "latvia--url-5ddf796883d8c9fdc777f98a",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-lielvardes-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-lielvardes-novads/index.html",
+      "sha256": "22cb1398862f9b2c620cbdcd9387aa105ae4e7d667a4a39591ba4ae9cd9fe7ca",
+      "bytes": 7500,
+      "status": "ok",
+      "source_id": "latvia--url-d69f15e9407dd20c82c9c3bd",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-liepaja/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-liepaja/index.html",
+      "sha256": "3dfe06ef1753583cff8ea8082c3f3085d7f10e0836f2867d2d63d7c60240e5de",
+      "bytes": 34016,
+      "status": "ok",
+      "source_id": "latvia--url-42156b225611e517e696ae08",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ligatnes-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ligatnes-novads/index.html",
+      "sha256": "10754800d8ec1b29c85724ea17967c7ccb0da6dfd9d2c5d2bb7c8856e6fdf00f",
+      "bytes": 3673,
+      "status": "ok",
+      "source_id": "latvia--url-898466e4f88c4fc240ccb30a",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-limbazu-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-limbazu-novads/index.html",
+      "sha256": "d838b6755987cabbecea0b202f590e723fdf87f9881feff132f44ca42a8bfd6c",
+      "bytes": 13887,
+      "status": "ok",
+      "source_id": "latvia--url-1b54a228e4bbcc84d232a3eb",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-livanu-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-livanu-novads/index.html",
+      "sha256": "95d49fb3074690e9d8cb4f6c844f3d07e4cda8cad041ab2e5c833991101e9067",
+      "bytes": 6146,
+      "status": "ok",
+      "source_id": "latvia--url-be19b28b569cab84ebcdb549",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-lubanas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-lubanas-novads/index.html",
+      "sha256": "7be76ab140daba110bac55b6bbfd88e1069ceecc454be28166396d1bf1cfb975",
+      "bytes": 2781,
+      "status": "ok",
+      "source_id": "latvia--url-9f62831fb7a0f51a4642fbb6",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ludzas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-ludzas-novads/index.html",
+      "sha256": "1eb1674c9eb60a32c2a4693a8cd713ac19371fc3c37660e430b91983679e656c",
+      "bytes": 13719,
+      "status": "ok",
+      "source_id": "latvia--url-3ba4a893a90711429cab6cb7",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-madonas-novads/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2017-velesanu-iecirkni-madonas-novads/index.html",
+      "sha256": "d0ce064b15eb6e99f7f0392b268b08e8bb1251275321dd7dafd0beaa582a388e",
+      "bytes": 21454,
+      "status": "ok",
+      "source_id": "latvia--url-c17ded0ef74428dcc0383289",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "bytes": 52935,
+      "status": "ok",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/rd-2020-velesanu-rezultati/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/rd-2020-velesanu-rezultati/index.html",
+      "sha256": "f2d618097e38e5754fb595db8dfeb34f2731510a7100ee855ae21055cda66395",
+      "bytes": 4031,
+      "status": "ok",
+      "source_id": "latvia--url-11125fefcfd7ced60be8f269",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/rigas-domes-arkartas-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/rigas-domes-arkartas-velesanas/index.html",
+      "sha256": "a718c4ce3d71cc4982195d218020361c64cd307802e43c0b77727d498656eb5d",
+      "bytes": 11088,
+      "status": "ok",
+      "source_id": "latvia--url-645e6747edf0621aafed8ded",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/saeimas-velesanas/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/saeimas-velesanas/index.html",
+      "sha256": "772608ae81d6a4276d30810a2e56abf43675c563b2c536bc4007a9f71f1af270",
+      "bytes": 5539,
+      "status": "ok",
+      "source_id": "latvia--url-6cf340d88f836464522d2a0f",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/varaklanu-novada-domes-un-rezeknes-novada-domes-velesanas-0/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/varaklanu-novada-domes-un-rezeknes-novada-domes-velesanas-0/index.html",
+      "sha256": "904b9108a548ee5d4b1078f181ceb486024e1bbfda73a9319f76eb87027ff507",
+      "bytes": 8936,
+      "status": "ok",
+      "source_id": "latvia--url-724bece9c1012a2fedb21b7c",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/velesanu-rezultati-1/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/velesanu-rezultati-1/index.html",
+      "sha256": "7cfcaca4d018a35dcf56a3dac8b24377e02c0ef83be3e785136fb1972a8969b2",
+      "bytes": 5901,
+      "status": "ok",
+      "source_id": "latvia--url-12c5e5c71394c823c1803a5c",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/velesanu-rezultati-2/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/velesanu-rezultati-2/index.html",
+      "sha256": "ee1ebde8ff5f33f35d300b160075ceda93f13b119e8ed0475be8667383c163ab",
+      "bytes": 3681,
+      "status": "ok",
+      "source_id": "latvia--url-00ee7ea8d7dc3909070f964e",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/velesanu-rezultati-3/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/velesanu-rezultati-3/index.html",
+      "sha256": "ec5773c10e48c9bcab15716fd98335d14da5facb4c118e670ac83de8377edd92",
+      "bytes": 5032,
+      "status": "ok",
+      "source_id": "latvia--url-e901de1849729add8cda5d03",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://arhivs.cvk.lv/lv/vrd-2021-velesanu-rezultati/",
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/vrd-2021-velesanu-rezultati/index.html",
+      "sha256": "51bdfede36f60891967ecf2110ab49a7241ba2333c1331f2e0dce73f538e1dae",
+      "bytes": 4419,
+      "status": "ok",
+      "source_id": "latvia--url-54137b9f37c020c90408f16f",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://data.gov.lv/dati/api/3/action/package_show?id=2017-gada-republikas-pilsetas-domes-un-novada-domes-velesanu-rezultati-un-veletaju-aktivitate",
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/api/3/action/package_show/index.html__d1a16753ca",
+      "sha256": "f64fe077651667b67d08785adab470a81a82d8b7cc04475e9ea6ae5dc77674e6",
+      "bytes": 8974,
+      "status": "ok",
+      "source_id": "latvia--url-4dcf48d5f7f10aac97d5807c",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://data.gov.lv/dati/dataset/2017-gada-republikas-pilsetas-domes-un-novada-domes-velesanu-rezultati-un-veletaju-aktivitate",
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/2017-gada-republikas-pilsetas-domes-un-novada-domes-velesanu-rezultati-un-veletaju-aktivitate/index.html",
+      "sha256": "c117846c94f166fff4446ee984e7269d99580e277a91910c6fcbc445e8ee204c",
+      "bytes": 38748,
+      "status": "ok",
+      "source_id": "latvia--url-4869729cc454c2f9c761632a",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/a4f19194-c17b-4fea-ab21-f718afa707c6/download/electedcandidates636363813214220000.xml",
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/a4f19194-c17b-4fea-ab21-f718afa707c6/download/electedcandidates636363813214220000.xml",
+      "sha256": "f5a3cd815736f21819e30fb2c641ecf653b87d539c9fa6b43998841e629c3c9d",
+      "bytes": 1601676,
+      "status": "ok",
+      "source_id": "latvia--url-8e4ca8a3ad3355af18fbb09b",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "bytes": 174358351,
+      "status": "ok",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/index.html",
+      "sha256": "b4a88c21fd05ccecb92bbefebcc022f99a81de57c1fc7cb770f659571a9f90cb",
+      "bytes": 5795,
+      "status": "ok",
+      "source_id": "latvia--url-e6c95d04e73a8270dabe8a32",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/index.html",
+      "sha256": "45f87b116af99d2876fb22c57bdb928a4495e25b0fa887b7ef9f0b1ac0b91e5e",
+      "bytes": 17144,
+      "status": "ok",
+      "source_id": "latvia--url-99e8b3c5d6ef03560578ca54",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/dienvidkurzemes-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/dienvidkurzemes-novads/index.html",
+      "sha256": "82021ed1f1e673f43fd075ed21aa250cd256cab51cb6cbe9a9279b4faa07dade",
+      "bytes": 55643,
+      "status": "ok",
+      "source_id": "latvia--url-3ce5e5d60b563b5471ec871f",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/kuldigas-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/kuldigas-novads/index.html",
+      "sha256": "a1e9926740960d7c01c4f208cdb0d5e3d8b27fd66e8ede0cb2e9702c431e1673",
+      "bytes": 50395,
+      "status": "ok",
+      "source_id": "latvia--url-e24936278a45f91c25724868",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/liepaja",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/liepaja/index.html",
+      "sha256": "cf59c08231eb008fb0ead60974a655ed3ae52ec84562021104ec16d62e307d3a",
+      "bytes": 51200,
+      "status": "ok",
+      "source_id": "latvia--url-452bdcc61bb8bdf48144dc0d",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/saldus-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/saldus-novads/index.html",
+      "sha256": "eb0b05caf7d4f459e722ca06f14e252e33472f8c9d070ffecf9147ccc3a8923c",
+      "bytes": 54150,
+      "status": "ok",
+      "source_id": "latvia--url-391f51e754081a50144d0fe8",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/talsu-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/talsu-novads/index.html",
+      "sha256": "572157e95702e68a7321445d4344cd04dd2e09ec2f4c5de5559376b53728e649",
+      "bytes": 60826,
+      "status": "ok",
+      "source_id": "latvia--url-c674181da2ae0e3fe2af3e04",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/ventspils",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/ventspils/index.html",
+      "sha256": "c5eb6723d54956d80269d42d82f296120d7526ec6af8071c37c679cfd3769803",
+      "bytes": 38793,
+      "status": "ok",
+      "source_id": "latvia--url-be7310d7758af6e85d263319",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/ventspils-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/ventspils-novads/index.html",
+      "sha256": "3bef869e7d6de88c91eeb4abceb0028945296a8f16a477df3661a810f9dc0eb6",
+      "bytes": 33725,
+      "status": "ok",
+      "source_id": "latvia--url-a7bfa3a5cef178c881fadcdc",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/latgale/augsdaugavas-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/augsdaugavas-novads/index.html",
+      "sha256": "160231526db345a56d2bd2977d39c42233869aff456e59968017abb340facf21",
+      "bytes": 55481,
+      "status": "ok",
+      "source_id": "latvia--url-c6dc15d4c69a26fb6cdb3992",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/latgale/balvu-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/balvu-novads/index.html",
+      "sha256": "393b0cf6cb5929abfd0279c74a68848771b6541c03c9d63c0c3f2bea6ee5110d",
+      "bytes": 53042,
+      "status": "ok",
+      "source_id": "latvia--url-a2038def676bef097b63a0d6",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/latgale/daugavpils",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/daugavpils/index.html",
+      "sha256": "f7b948370b0cf1ab75bf02b48e974158c559c2125dc54c5694bfef264647e7e8",
+      "bytes": 64653,
+      "status": "ok",
+      "source_id": "latvia--url-83b751cb32c3a80959e4afe8",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/latgale/kraslavas-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/kraslavas-novads/index.html",
+      "sha256": "922c3f1e8f3f7bef9c9b091511c6076a8dcb7418acbfdbb7e9e8e889f050dcfb",
+      "bytes": 54789,
+      "status": "ok",
+      "source_id": "latvia--url-1283f7c8ea6d004f81b0421a",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/latgale/livanu-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/livanu-novads/index.html",
+      "sha256": "61996d1af9e817a2d8f56f994885d53100bad58ed4c498245d9721681d8a82aa",
+      "bytes": 33828,
+      "status": "ok",
+      "source_id": "latvia--url-8c0abd46caaa87e0fa178612",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/latgale/ludzas-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/ludzas-novads/index.html",
+      "sha256": "858def8b269ea135deeca62247e6a3ee5a6bd54df7a401f4d14a236e26d05d50",
+      "bytes": 56658,
+      "status": "ok",
+      "source_id": "latvia--url-566863f8d6d88a2333f50d05",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/latgale/preilu-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/preilu-novads/index.html",
+      "sha256": "5dafa670ec7633b67a76e3a5371ae4dc27747599db1e00d5b4b0c9b7a0efc5ef",
+      "bytes": 41154,
+      "status": "ok",
+      "source_id": "latvia--url-f7a26b332ab7cada42acfa06",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/latgale/rezekne",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/rezekne/index.html",
+      "sha256": "fef64e2ae86db0b4329c128708b49291aa558d5896735f249e3987242be0e11e",
+      "bytes": 41460,
+      "status": "ok",
+      "source_id": "latvia--url-4b6d7541f273e1dcd5b418e0",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/latgale/rezeknes-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/rezeknes-novads/index.html",
+      "sha256": "6b6b84fbe164e0497e33321c902e6e65e3b79676148fab178577c859d19da225",
+      "bytes": 68760,
+      "status": "ok",
+      "source_id": "latvia--url-cf73ab12c563bf1ce359f8be",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/riga/riga",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/riga/riga/index.html",
+      "sha256": "44cba8c23612ff0ffacd3e1ed3c1909a6915d7bf589c77f942d7d29b3a34b81f",
+      "bytes": 290954,
+      "status": "ok",
+      "source_id": "latvia--url-44f636dfe5a1ce39283bd93a",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/riga/riga/",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/riga/riga/index.html",
+      "sha256": "44cba8c23612ff0ffacd3e1ed3c1909a6915d7bf589c77f942d7d29b3a34b81f",
+      "bytes": 290954,
+      "status": "ok",
+      "source_id": "latvia--url-4ec63209d4476dd29d054c03",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/adazu-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/adazu-novads/index.html",
+      "sha256": "87f45f8b2897b98f06138165e537a247ef01851e654d8b869cd11df557c05ef5",
+      "bytes": 34506,
+      "status": "ok",
+      "source_id": "latvia--url-442e74e008b64683b9d6a32e",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/aluksnes-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/aluksnes-novads/index.html",
+      "sha256": "676dbe60fcb91ce194481b16c689a3bf1209c2e80f9a4360e9d28e25a98de5d6",
+      "bytes": 48705,
+      "status": "ok",
+      "source_id": "latvia--url-1ea1f22e8dcd9013b711313e",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/cesu-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/cesu-novads/index.html",
+      "sha256": "9478ec9a993e6484d86eafddd420bc46a4d74abd9d0c87876af875012bc96431",
+      "bytes": 58726,
+      "status": "ok",
+      "source_id": "latvia--url-b16d598502dd5005bcc05460",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/gulbenes-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/gulbenes-novads/index.html",
+      "sha256": "b9b968f9a9445f38127d5fc015b6398e396cadda96fe58b95a781f99dac2fc46",
+      "bytes": 44092,
+      "status": "ok",
+      "source_id": "latvia--url-9d7c42eb00fd453ce8582c0d",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/jurmala",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/jurmala/index.html",
+      "sha256": "78318d974cf3c244732c35f8058836886561729b1cbca60792229a65ae462c6b",
+      "bytes": 48557,
+      "status": "ok",
+      "source_id": "latvia--url-f176cc8b92852f807b17e4b5",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/kekavas-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/kekavas-novads/index.html",
+      "sha256": "eb7d75e7df70f5448a3b0e0efd15d7cf1168445b7438903c456ee6c8a2177ae0",
+      "bytes": 37970,
+      "status": "ok",
+      "source_id": "latvia--url-077394e7a3df858dd713f66c",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/limbazu-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/limbazu-novads/index.html",
+      "sha256": "03eab7d86b5f617b3012b93e9b9de8919627ed727af58d97a36b6c1733e0ddac",
+      "bytes": 45781,
+      "status": "ok",
+      "source_id": "latvia--url-88f308d9e3374b5cb4ae3147",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/madonas-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/madonas-novads/index.html",
+      "sha256": "fde9487d1c02196c10d0f8de3f4ae35d3ed8f017d5c5c65e34a2a34fd892ee3e",
+      "bytes": 53372,
+      "status": "ok",
+      "source_id": "latvia--url-466184fe22188a3871eb74f7",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/marupes-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/marupes-novads/index.html",
+      "sha256": "4ededbfde89faf19f975db563cd0790774d23499bf1ecda44aff13ba846abadf",
+      "bytes": 35462,
+      "status": "ok",
+      "source_id": "latvia--url-b5a1e2c507553ea86d3bf9b0",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/ogres-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/ogres-novads/index.html",
+      "sha256": "771f1c40beb5740095bacbf5d9c28c5f39d1b81b9b2a82b7fbbe5764c57c99e9",
+      "bytes": 58245,
+      "status": "ok",
+      "source_id": "latvia--url-0b5c00c7240744d269e117c0",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/olaines-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/olaines-novads/index.html",
+      "sha256": "b264c46088bfd5f0f370a5c9c82053c73765ca16e584ada05b6d45de131806b4",
+      "bytes": 26555,
+      "status": "ok",
+      "source_id": "latvia--url-35d73058b5dde6e74b1ec494",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/ropazu-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/ropazu-novads/index.html",
+      "sha256": "a8909ce6c549e1e2c940be4bcf7328124fed39c518bcc85625334e6f791f5653",
+      "bytes": 34104,
+      "status": "ok",
+      "source_id": "latvia--url-eccfd4900d340ee160708fd5",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/salaspils-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/salaspils-novads/index.html",
+      "sha256": "8c24de3ed132df17972a942c72b18ad56e7414033ef9b4a9c425a84e735b35fc",
+      "bytes": 28116,
+      "status": "ok",
+      "source_id": "latvia--url-8d8c1a29d2fa7eabde819a51",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/saulkrastu-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/saulkrastu-novads/index.html",
+      "sha256": "46b09c54c75bda47fa1e642c75985b0815631597c1a120a5cd20e22e5611f4b0",
+      "bytes": 27096,
+      "status": "ok",
+      "source_id": "latvia--url-b8c3ff6c41c05c17ac615e2e",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/siguldas-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/siguldas-novads/index.html",
+      "sha256": "e7a22266e404bf702ce8a45d6471b0c7af5ae5abc284eaa5a2b5bbc4b8905de0",
+      "bytes": 39190,
+      "status": "ok",
+      "source_id": "latvia--url-0ecaf6378633fe38b01501c8",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/smiltenes-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/smiltenes-novads/index.html",
+      "sha256": "5449522c4119856572ac551184753b6eda50ed4d67e5b3ae4953d8c101643e41",
+      "bytes": 41402,
+      "status": "ok",
+      "source_id": "latvia--url-74efd95cac1f2b994a05da8a",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/valkas-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/valkas-novads/index.html",
+      "sha256": "cda13114543d20c30eb730817c42355191eebffe341fa762ff8b7f7bce4e1285",
+      "bytes": 29087,
+      "status": "ok",
+      "source_id": "latvia--url-b9571b653b223f951d1e155f",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/valmieras-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/valmieras-novads/index.html",
+      "sha256": "ebfe69cfaa19608372d94b893c8d3391f196487e754d7dbd4606827abfd2e0f6",
+      "bytes": 65803,
+      "status": "ok",
+      "source_id": "latvia--url-596726d40a8014f361255a60",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/aizkraukles-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/aizkraukles-novads/index.html",
+      "sha256": "c25dfe85bfefce45d734cdccda1aadb62ffd6e85291a40b32b38c9bad8d697f9",
+      "bytes": 48513,
+      "status": "ok",
+      "source_id": "latvia--url-d9e76c13c2a712b12bfcebe8",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/bauskas-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/bauskas-novads/index.html",
+      "sha256": "3d8febc83fdb89894670aece031d66f512974a310163b5ba96a0e38e2947ed1d",
+      "bytes": 52143,
+      "status": "ok",
+      "source_id": "latvia--url-8a13d528b610f7f24e2a4482",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/dobeles-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/dobeles-novads/index.html",
+      "sha256": "6657056d6bc763bae657e371e1fcf9664b0ae75009bfa101b44e58c9d2f0acb1",
+      "bytes": 48714,
+      "status": "ok",
+      "source_id": "latvia--url-728234fa1c62a52cc34de859",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jekabpils-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jekabpils-novads/index.html",
+      "sha256": "e0395560e4c142c63528c7dd6d9cedf5cf5949379384c9b3170508e87e273db4",
+      "bytes": 73924,
+      "status": "ok",
+      "source_id": "latvia--url-66b9722942976e3630ee6a75",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jelgava",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jelgava/index.html",
+      "sha256": "2dd9864cc8fde5706f528f1fc67fe4c6c6bc65d07f79c45c63df8bfe3472fcc0",
+      "bytes": 48439,
+      "status": "ok",
+      "source_id": "latvia--url-3aeacc50fb2e157d0a7f7b40",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jelgavas-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jelgavas-novads/index.html",
+      "sha256": "8038d8764272605855f84e751603b4f83f9627b67f2ecd80c50a6f7da66f0cfb",
+      "bytes": 53344,
+      "status": "ok",
+      "source_id": "latvia--url-055a59dff3973b8929154eb2",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/tukuma-novads",
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/tukuma-novads/index.html",
+      "sha256": "0dd4b522afba6c5575c8f196332b1324b7738b472153ea00154b12cc3567dda1",
+      "bytes": 57257,
+      "status": "ok",
+      "source_id": "latvia--url-a356f90bbf41e5928fa868a0",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://likumi.lv/ta/id/315654-administrativo-teritoriju-un-apdzivoto-vietu-likums",
+      "input_path": "data/research/latvia/sources/likumi.lv/ta/id/315654-administrativo-teritoriju-un-apdzivoto-vietu-likums/index.html",
+      "sha256": "c21d42a397add21471cffda06c237490ae1c7c44f131384de0ca673d5f74e7bb",
+      "bytes": 152086,
+      "status": "ok",
+      "source_id": "latvia--url-9e02614f402f201ccf62f6c6",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://likumi.lv/ta/id/336956",
+      "input_path": "data/research/latvia/sources/likumi.lv/ta/id/336956/index.html",
+      "sha256": "744d48c6f7e242d5899dfba9a674b1fccfec289a90b361b1519283e1f5bbfac7",
+      "bytes": 235833,
+      "status": "ok",
+      "source_id": "latvia--url-be8fc30e1094209b9cf52eb5",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://likumi.lv/ta/id/57980",
+      "input_path": "data/research/latvia/sources/likumi.lv/ta/id/57980/index.html",
+      "sha256": "fa76168371ecb84f509c6357495e1ac8de1abbc3412b59c00d80d21b6355d77d",
+      "bytes": 145912,
+      "status": "ok",
+      "source_id": "latvia--url-e441d0a51921ac4cc7d1c3cd",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://sv2022.cvk.lv/pub/Api/75d4b7ba08bf4823842ef0f9dd379e47/Departments",
+      "input_path": "data/research/latvia/sources/sv2022.cvk.lv/pub/Api/75d4b7ba08bf4823842ef0f9dd379e47/Departments/index.html",
+      "sha256": "c86aa172dde8ed1e74b2cbaa558c079b18d319f8d85ae4b6782308b0caea5e16",
+      "bytes": 264226,
+      "status": "ok",
+      "source_id": "latvia--url-8b445aefd02c74e1bba90afd",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://sv2022.cvk.lv/pub/Api/9cfe9e88e8994444beaef3b37495cf90/ElectionResults",
+      "input_path": "data/research/latvia/sources/sv2022.cvk.lv/pub/Api/9cfe9e88e8994444beaef3b37495cf90/ElectionResults/index.html",
+      "sha256": "5cbc1cb3ffd8b3df7d0bec5fdb78a64fd8b2768e0e86c12f06af26b74ab2dc4b",
+      "bytes": 36932,
+      "status": "ok",
+      "source_id": "latvia--url-6e8f894f822f770b0009f33f",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://sv2022.cvk.lv/pub/assets/js/common.js",
+      "input_path": "data/research/latvia/sources/sv2022.cvk.lv/pub/assets/js/common.js",
+      "sha256": "135dea2330643ad1a2230a6e02829589c4988a49c619e0ed42ae6b06766b1749",
+      "bytes": 441973,
+      "status": "ok",
+      "source_id": "latvia--url-f37a26bd15b23bf17737af20",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://sv2022.cvk.lv/pub/assets/js/home.js",
+      "input_path": "data/research/latvia/sources/sv2022.cvk.lv/pub/assets/js/home.js",
+      "sha256": "fd5e63eee33173041bfd10fbe8121b2872a6f3760273bdd61a10501c68dbe84e",
+      "bytes": 2545,
+      "status": "ok",
+      "source_id": "latvia--url-d97013598d6d685e97301cda",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://sv2022.cvk.lv/pub/en/",
+      "input_path": "data/research/latvia/sources/sv2022.cvk.lv/pub/en/index.html",
+      "sha256": "366472f5629882440226c436129b4c5877c2a2aa671b464f76e9876f85df7792",
+      "bytes": 2347,
+      "status": "ok",
+      "source_id": "latvia--url-0e5d07d0680d3941b33f50df",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://titania.saeima.lv/LIVS14/saeimalivs_lmp.nsf/0/a6fd83b30943d24fc22589c0002cbc17/$FILE/Balsojums.pdf",
+      "input_path": "data/research/latvia/sources/titania.saeima.lv/LIVS14/saeimalivs_lmp.nsf/0/a6fd83b30943d24fc22589c0002cbc17/$FILE/Balsojums.pdf",
+      "sha256": "c86cef9fdc2ebb45b83d6f3653dda2707fe5e0333714f5dcd373795ed7b37be5",
+      "bytes": 1936377,
+      "status": "ok",
+      "source_id": "latvia--url-d1b8c7f7ce466da02fd4c8a7",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.cvk.lv",
+      "input_path": "data/research/latvia/sources/www.cvk.lv/index.html",
+      "sha256": "b3d8ef9988a373c19816b464c707380c4b6597b76823e6dbebe8edb4b47687fc",
+      "bytes": 57902,
+      "status": "ok",
+      "source_id": "latvia--url-bc97432ac64ab69259f9bffa",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.cvk.lv/arhivs",
+      "input_path": "data/research/latvia/sources/www.cvk.lv/arhivs/index.html",
+      "sha256": "43a7aae226e4dc7fe53d094cbf6dd83c6df6812dafff438c58de7ac5692d50ff",
+      "bytes": 41901,
+      "status": "ok",
+      "source_id": "latvia--url-0be3edffa89768f9cf9591d2",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.cvk.lv/ep-rezultati",
+      "input_path": "data/research/latvia/sources/www.cvk.lv/ep-rezultati/index.html",
+      "sha256": "07044fc37fc12a3ed713488e23820a781b21b92cd31e65efad091f9b2fad705f",
+      "bytes": 42646,
+      "status": "ok",
+      "source_id": "latvia--url-341bae2dfc2ef641f550c58d",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.cvk.lv/resursi/likumi",
+      "input_path": "data/research/latvia/sources/www.cvk.lv/resursi/likumi/index.html",
+      "sha256": "255e176f77c68d7d38040140e37023f7cb73edb210d66dbb408a8fcb1237e378",
+      "bytes": 108142,
+      "status": "ok",
+      "source_id": "latvia--url-a1c3be936955607df1ffcab9",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.cvk.lv/saeimas-rezultati",
+      "input_path": "data/research/latvia/sources/www.cvk.lv/saeimas-rezultati/index.html",
+      "sha256": "1d89924795acd33dde382e5187b95a3a85f4e083b92186bd197df20e14e8052c",
+      "bytes": 51662,
+      "status": "ok",
+      "source_id": "latvia--url-4a92aa3ffb8c1d9b98c1228f",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.president.lv/en",
+      "input_path": "data/research/latvia/sources/www.president.lv/en/index.html",
+      "sha256": "2765aab22db4b84afe68cdb729660f945890bce27db80a7e5284b215c98a0e4f",
+      "bytes": 114798,
+      "status": "ok",
+      "source_id": "latvia--url-a1d1d248d3803b852d881eac",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.president.lv/en/andris-berzins",
+      "input_path": "data/research/latvia/sources/www.president.lv/en/andris-berzins/index.html",
+      "sha256": "0c6ab29bfb980163bfcd63544aaa274717a596c70041b6191e6ff676e1dca3b4",
+      "bytes": 108031,
+      "status": "ok",
+      "source_id": "latvia--url-47efce1a73fa7dceb788a13d",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.president.lv/en/biography",
+      "input_path": "data/research/latvia/sources/www.president.lv/en/biography/index.html",
+      "sha256": "f2fbb4851018f0e246450a5aa1e0d53862f5a8efd54cd06bfec16fbd756e274e",
+      "bytes": 113424,
+      "status": "ok",
+      "source_id": "latvia--url-23dcd95d62b54e97f1fbf7dc",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.president.lv/en/biography-0",
+      "input_path": "data/research/latvia/sources/www.president.lv/en/biography-0/index.html",
+      "sha256": "bfa3200d3f5745304fe12b541b7b858a565fd962be4aece007fa9b38a97d5cd1",
+      "bytes": 117415,
+      "status": "ok",
+      "source_id": "latvia--url-cce8d5a271fbecac92151cb0",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.president.lv/en/biography-1",
+      "input_path": "data/research/latvia/sources/www.president.lv/en/biography-1/index.html",
+      "sha256": "9eab27ee76887656d219ccf63b88b105c45e4eb2a2627322f872c9c15f0ea23a",
+      "bytes": 106801,
+      "status": "ok",
+      "source_id": "latvia--url-28db497f6bbacabacd909aa1",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.president.lv/en/curriculum-vitae",
+      "input_path": "data/research/latvia/sources/www.president.lv/en/curriculum-vitae/index.html",
+      "sha256": "56a289baabecf90eec347b9513264db12eb292a86fb3ea817f8cc12576342b8e",
+      "bytes": 110197,
+      "status": "ok",
+      "source_id": "latvia--url-d10db280ecbdcd074645bb95",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.president.lv/en/egils-levits",
+      "input_path": "data/research/latvia/sources/www.president.lv/en/egils-levits/index.html",
+      "sha256": "33af4e0b9c92ddd5d03d9968844225542a4c1af8930f3f290a20058a0d870104",
+      "bytes": 108244,
+      "status": "ok",
+      "source_id": "latvia--url-c4e64c765d43c77c24b3f7ed",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.president.lv/en/election-president-latvia",
+      "input_path": "data/research/latvia/sources/www.president.lv/en/election-president-latvia/index.html",
+      "sha256": "7b8eb2c75d6b5c2ab0ac1829c49c413f336354bbfce294e2ee39aa90b80af7da",
+      "bytes": 109502,
+      "status": "ok",
+      "source_id": "latvia--url-f83f17665a4b74396c57c711",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.president.lv/en/guntis-ulmanis",
+      "input_path": "data/research/latvia/sources/www.president.lv/en/guntis-ulmanis/index.html",
+      "sha256": "d3404febe35f2542501dae581918ce33de4b30c90723e64a9e49491d0625f548",
+      "bytes": 109913,
+      "status": "ok",
+      "source_id": "latvia--url-9183a7bde15bd0cd80b100be",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.president.lv/en/president-latvia-edgars-rinkevics",
+      "input_path": "data/research/latvia/sources/www.president.lv/en/president-latvia-edgars-rinkevics/index.html",
+      "sha256": "c609535d3a729432ff072da36175dbb1fc4068e040342b4bf082c750bdb38858",
+      "bytes": 111610,
+      "status": "ok",
+      "source_id": "latvia--url-fb15c34b50257eab481ba85d",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.president.lv/en/raimonds-vejonis",
+      "input_path": "data/research/latvia/sources/www.president.lv/en/raimonds-vejonis/index.html",
+      "sha256": "9b1e95ac2dc1fb0d7a70aa31fac8fe58095e6ea1b45baeccd40b89f9f3044934",
+      "bytes": 113596,
+      "status": "ok",
+      "source_id": "latvia--url-409d901787372f75510e692b",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.president.lv/en/vaira-vike-freiberga",
+      "input_path": "data/research/latvia/sources/www.president.lv/en/vaira-vike-freiberga/index.html",
+      "sha256": "3919b781cde9ca3f2b2fd8a0d1878ab33b71c71039d8cce733de6a8df6bf94f5",
+      "bytes": 111569,
+      "status": "ok",
+      "source_id": "latvia--url-a740f3b9638c3194f75904e0",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.president.lv/en/valdis-zatlers",
+      "input_path": "data/research/latvia/sources/www.president.lv/en/valdis-zatlers/index.html",
+      "sha256": "2166dd1064764ee19174e90a9bc67bda08a6e7bf4ccd975081b2cdfe80438820",
+      "bytes": 108136,
+      "status": "ok",
+      "source_id": "latvia--url-21eee8d37dceee8c39af163f",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.saeima.lv/en/news/saeima-news/32280-edgars-rinkevics-elected-president-of-latvia",
+      "input_path": "data/research/latvia/sources/www.saeima.lv/en/news/saeima-news/32280-edgars-rinkevics-elected-president-of-latvia/index.html",
+      "sha256": "d24ed2d7a905a331dec47d367f381762e46debc0483b4b351f6a3ceb1cbf0f9a",
+      "bytes": 37918,
+      "status": "ok",
+      "source_id": "latvia--url-9a9f3535baff72ccae62254a",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.saeima.lv/en/search/?phrase=Rink%C4%93vi%C4%8Ds",
+      "input_path": "data/research/latvia/sources/www.saeima.lv/en/search/index.html__b0d2420835",
+      "sha256": "bb9b4383633ae9e97820911fd4cea8638bace51d808c6947dbc2c0f4e2f6361f",
+      "bytes": 18919,
+      "status": "ok",
+      "source_id": "latvia--url-4e423e6ab6a359cdda10b1dc",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    },
+    {
+      "url": "https://www.saeima.lv/en/search?search=Levits",
+      "input_path": "data/research/latvia/sources/www.saeima.lv/en/search/index.html__aa3bdbc4a1",
+      "sha256": "08d232f659821549fd6e5fa09b9b16b505a099623f8d0feceb79f71009807d0c",
+      "bytes": 18919,
+      "status": "ok",
+      "source_id": "latvia--url-8830d05cecd08dffd16d50c5",
+      "source_namespace": "country-package-latvia",
+      "country_id": "latvia",
+      "retrieved_on": "2026-09-21",
+      "source_kind": "official_primary",
+      "content_use": "retained_source"
+    }
+  ],
+  "archive_members": [],
+  "protection": {
+    "repo_mutations": 0,
+    "other_country_changes": 0,
+    "importer_sqlite_vps_ui_changes": 0,
+    "applied_changes": 0
+  },
+  "approval": {
+    "Justin_accepted": false
+  }
+}

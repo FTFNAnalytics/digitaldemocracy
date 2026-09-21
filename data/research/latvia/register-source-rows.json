@@ -1,0 +1,2450 @@
+[
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-dienvidkurzemes-novads-C",
+    "name": "Dienvidkurzemes novads",
+    "source_code": "dienvidkurzemes-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/dienvidkurzemes-novads/index.html",
+      "sha256": "82021ed1f1e673f43fd075ed21aa250cd256cab51cb6cbe9a9279b4faa07dade",
+      "source_id": "latvia--url-3ce5e5d60b563b5471ec871f",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-kuldigas-novads-C",
+    "name": "Kuldīgas novads",
+    "source_code": "kuldigas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/kuldigas-novads/index.html",
+      "sha256": "a1e9926740960d7c01c4f208cdb0d5e3d8b27fd66e8ede0cb2e9702c431e1673",
+      "source_id": "latvia--url-e24936278a45f91c25724868",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-liepaja-C",
+    "name": "Liepāja",
+    "source_code": "liepaja",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/liepaja/index.html",
+      "sha256": "cf59c08231eb008fb0ead60974a655ed3ae52ec84562021104ec16d62e307d3a",
+      "source_id": "latvia--url-452bdcc61bb8bdf48144dc0d",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-saldus-novads-C",
+    "name": "Saldus novads",
+    "source_code": "saldus-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/saldus-novads/index.html",
+      "sha256": "eb0b05caf7d4f459e722ca06f14e252e33472f8c9d070ffecf9147ccc3a8923c",
+      "source_id": "latvia--url-391f51e754081a50144d0fe8",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-talsu-novads-C",
+    "name": "Talsu novads",
+    "source_code": "talsu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/talsu-novads/index.html",
+      "sha256": "572157e95702e68a7321445d4344cd04dd2e09ec2f4c5de5559376b53728e649",
+      "source_id": "latvia--url-c674181da2ae0e3fe2af3e04",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-ventspils-C",
+    "name": "Ventspils",
+    "source_code": "ventspils",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/ventspils/index.html",
+      "sha256": "c5eb6723d54956d80269d42d82f296120d7526ec6af8071c37c679cfd3769803",
+      "source_id": "latvia--url-be7310d7758af6e85d263319",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-ventspils-novads-C",
+    "name": "Ventspils novads",
+    "source_code": "ventspils-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/ventspils-novads/index.html",
+      "sha256": "3bef869e7d6de88c91eeb4abceb0028945296a8f16a477df3661a810f9dc0eb6",
+      "source_id": "latvia--url-a7bfa3a5cef178c881fadcdc",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-augsdaugavas-novads-C",
+    "name": "Augšdaugavas novads",
+    "source_code": "augsdaugavas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/augsdaugavas-novads/index.html",
+      "sha256": "160231526db345a56d2bd2977d39c42233869aff456e59968017abb340facf21",
+      "source_id": "latvia--url-c6dc15d4c69a26fb6cdb3992",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-balvu-novads-C",
+    "name": "Balvu novads",
+    "source_code": "balvu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/balvu-novads/index.html",
+      "sha256": "393b0cf6cb5929abfd0279c74a68848771b6541c03c9d63c0c3f2bea6ee5110d",
+      "source_id": "latvia--url-a2038def676bef097b63a0d6",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-daugavpils-C",
+    "name": "Daugavpils",
+    "source_code": "daugavpils",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/daugavpils/index.html",
+      "sha256": "f7b948370b0cf1ab75bf02b48e974158c559c2125dc54c5694bfef264647e7e8",
+      "source_id": "latvia--url-83b751cb32c3a80959e4afe8",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-kraslavas-novads-C",
+    "name": "Krāslavas novads",
+    "source_code": "kraslavas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/kraslavas-novads/index.html",
+      "sha256": "922c3f1e8f3f7bef9c9b091511c6076a8dcb7418acbfdbb7e9e8e889f050dcfb",
+      "source_id": "latvia--url-1283f7c8ea6d004f81b0421a",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-livanu-novads-C",
+    "name": "Līvānu novads",
+    "source_code": "livanu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/livanu-novads/index.html",
+      "sha256": "61996d1af9e817a2d8f56f994885d53100bad58ed4c498245d9721681d8a82aa",
+      "source_id": "latvia--url-8c0abd46caaa87e0fa178612",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-ludzas-novads-C",
+    "name": "Ludzas novads",
+    "source_code": "ludzas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/ludzas-novads/index.html",
+      "sha256": "858def8b269ea135deeca62247e6a3ee5a6bd54df7a401f4d14a236e26d05d50",
+      "source_id": "latvia--url-566863f8d6d88a2333f50d05",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-preilu-novads-C",
+    "name": "Preiļu novads",
+    "source_code": "preilu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/preilu-novads/index.html",
+      "sha256": "5dafa670ec7633b67a76e3a5371ae4dc27747599db1e00d5b4b0c9b7a0efc5ef",
+      "source_id": "latvia--url-f7a26b332ab7cada42acfa06",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-rezekne-C",
+    "name": "Rēzekne",
+    "source_code": "rezekne",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/rezekne/index.html",
+      "sha256": "fef64e2ae86db0b4329c128708b49291aa558d5896735f249e3987242be0e11e",
+      "source_id": "latvia--url-4b6d7541f273e1dcd5b418e0",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-rezeknes-novads-C",
+    "name": "Rēzeknes novads",
+    "source_code": "rezeknes-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/rezeknes-novads/index.html",
+      "sha256": "6b6b84fbe164e0497e33321c902e6e65e3b79676148fab178577c859d19da225",
+      "source_id": "latvia--url-cf73ab12c563bf1ce359f8be",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-riga-C",
+    "name": "Rīga",
+    "source_code": "riga",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/riga/riga/index.html",
+      "sha256": "44cba8c23612ff0ffacd3e1ed3c1909a6915d7bf589c77f942d7d29b3a34b81f",
+      "source_id": "latvia--url-44f636dfe5a1ce39283bd93a",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-adazu-novads-C",
+    "name": "Ādažu novads",
+    "source_code": "adazu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/adazu-novads/index.html",
+      "sha256": "87f45f8b2897b98f06138165e537a247ef01851e654d8b869cd11df557c05ef5",
+      "source_id": "latvia--url-442e74e008b64683b9d6a32e",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-aluksnes-novads-C",
+    "name": "Alūksnes novads",
+    "source_code": "aluksnes-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/aluksnes-novads/index.html",
+      "sha256": "676dbe60fcb91ce194481b16c689a3bf1209c2e80f9a4360e9d28e25a98de5d6",
+      "source_id": "latvia--url-1ea1f22e8dcd9013b711313e",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-cesu-novads-C",
+    "name": "Cēsu novads",
+    "source_code": "cesu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/cesu-novads/index.html",
+      "sha256": "9478ec9a993e6484d86eafddd420bc46a4d74abd9d0c87876af875012bc96431",
+      "source_id": "latvia--url-b16d598502dd5005bcc05460",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-gulbenes-novads-C",
+    "name": "Gulbenes novads",
+    "source_code": "gulbenes-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/gulbenes-novads/index.html",
+      "sha256": "b9b968f9a9445f38127d5fc015b6398e396cadda96fe58b95a781f99dac2fc46",
+      "source_id": "latvia--url-9d7c42eb00fd453ce8582c0d",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-jurmala-C",
+    "name": "Jūrmala",
+    "source_code": "jurmala",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/jurmala/index.html",
+      "sha256": "78318d974cf3c244732c35f8058836886561729b1cbca60792229a65ae462c6b",
+      "source_id": "latvia--url-f176cc8b92852f807b17e4b5",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-kekavas-novads-C",
+    "name": "Ķekavas novads",
+    "source_code": "kekavas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/kekavas-novads/index.html",
+      "sha256": "eb7d75e7df70f5448a3b0e0efd15d7cf1168445b7438903c456ee6c8a2177ae0",
+      "source_id": "latvia--url-077394e7a3df858dd713f66c",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-limbazu-novads-C",
+    "name": "Limbažu novads",
+    "source_code": "limbazu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/limbazu-novads/index.html",
+      "sha256": "03eab7d86b5f617b3012b93e9b9de8919627ed727af58d97a36b6c1733e0ddac",
+      "source_id": "latvia--url-88f308d9e3374b5cb4ae3147",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2025-madonas-novads-C",
+    "name": "Madonas novads",
+    "source_code": "madonas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/madonas-novads/index.html",
+      "sha256": "fde9487d1c02196c10d0f8de3f4ae35d3ed8f017d5c5c65e34a2a34fd892ee3e",
+      "source_id": "latvia--url-466184fe22188a3871eb74f7",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-marupes-novads-C",
+    "name": "Mārupes novads",
+    "source_code": "marupes-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/marupes-novads/index.html",
+      "sha256": "4ededbfde89faf19f975db563cd0790774d23499bf1ecda44aff13ba846abadf",
+      "source_id": "latvia--url-b5a1e2c507553ea86d3bf9b0",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-ogres-novads-C",
+    "name": "Ogres novads",
+    "source_code": "ogres-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/ogres-novads/index.html",
+      "sha256": "771f1c40beb5740095bacbf5d9c28c5f39d1b81b9b2a82b7fbbe5764c57c99e9",
+      "source_id": "latvia--url-0b5c00c7240744d269e117c0",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-olaines-novads-C",
+    "name": "Olaines novads",
+    "source_code": "olaines-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/olaines-novads/index.html",
+      "sha256": "b264c46088bfd5f0f370a5c9c82053c73765ca16e584ada05b6d45de131806b4",
+      "source_id": "latvia--url-35d73058b5dde6e74b1ec494",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-ropazu-novads-C",
+    "name": "Ropažu novads",
+    "source_code": "ropazu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/ropazu-novads/index.html",
+      "sha256": "a8909ce6c549e1e2c940be4bcf7328124fed39c518bcc85625334e6f791f5653",
+      "source_id": "latvia--url-eccfd4900d340ee160708fd5",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-salaspils-novads-C",
+    "name": "Salaspils novads",
+    "source_code": "salaspils-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/salaspils-novads/index.html",
+      "sha256": "8c24de3ed132df17972a942c72b18ad56e7414033ef9b4a9c425a84e735b35fc",
+      "source_id": "latvia--url-8d8c1a29d2fa7eabde819a51",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-saulkrastu-novads-C",
+    "name": "Saulkrastu novads",
+    "source_code": "saulkrastu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/saulkrastu-novads/index.html",
+      "sha256": "46b09c54c75bda47fa1e642c75985b0815631597c1a120a5cd20e22e5611f4b0",
+      "source_id": "latvia--url-b8c3ff6c41c05c17ac615e2e",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-siguldas-novads-C",
+    "name": "Siguldas novads",
+    "source_code": "siguldas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/siguldas-novads/index.html",
+      "sha256": "e7a22266e404bf702ce8a45d6471b0c7af5ae5abc284eaa5a2b5bbc4b8905de0",
+      "source_id": "latvia--url-0ecaf6378633fe38b01501c8",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-smiltenes-novads-C",
+    "name": "Smiltenes novads",
+    "source_code": "smiltenes-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/smiltenes-novads/index.html",
+      "sha256": "5449522c4119856572ac551184753b6eda50ed4d67e5b3ae4953d8c101643e41",
+      "source_id": "latvia--url-74efd95cac1f2b994a05da8a",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-valkas-novads-C",
+    "name": "Valkas novads",
+    "source_code": "valkas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/valkas-novads/index.html",
+      "sha256": "cda13114543d20c30eb730817c42355191eebffe341fa762ff8b7f7bce4e1285",
+      "source_id": "latvia--url-b9571b653b223f951d1e155f",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-valmieras-novads-C",
+    "name": "Valmieras novads",
+    "source_code": "valmieras-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/valmieras-novads/index.html",
+      "sha256": "ebfe69cfaa19608372d94b893c8d3391f196487e754d7dbd4606827abfd2e0f6",
+      "source_id": "latvia--url-596726d40a8014f361255a60",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-aizkraukles-novads-C",
+    "name": "Aizkraukles novads",
+    "source_code": "aizkraukles-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/aizkraukles-novads/index.html",
+      "sha256": "c25dfe85bfefce45d734cdccda1aadb62ffd6e85291a40b32b38c9bad8d697f9",
+      "source_id": "latvia--url-d9e76c13c2a712b12bfcebe8",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-bauskas-novads-C",
+    "name": "Bauskas novads",
+    "source_code": "bauskas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/bauskas-novads/index.html",
+      "sha256": "3d8febc83fdb89894670aece031d66f512974a310163b5ba96a0e38e2947ed1d",
+      "source_id": "latvia--url-8a13d528b610f7f24e2a4482",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-dobeles-novads-C",
+    "name": "Dobeles novads",
+    "source_code": "dobeles-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/dobeles-novads/index.html",
+      "sha256": "6657056d6bc763bae657e371e1fcf9664b0ae75009bfa101b44e58c9d2f0acb1",
+      "source_id": "latvia--url-728234fa1c62a52cc34de859",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-jekabpils-novads-C",
+    "name": "Jēkabpils novads",
+    "source_code": "jekabpils-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jekabpils-novads/index.html",
+      "sha256": "e0395560e4c142c63528c7dd6d9cedf5cf5949379384c9b3170508e87e273db4",
+      "source_id": "latvia--url-66b9722942976e3630ee6a75",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-jelgava-C",
+    "name": "Jelgava",
+    "source_code": "jelgava",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jelgava/index.html",
+      "sha256": "2dd9864cc8fde5706f528f1fc67fe4c6c6bc65d07f79c45c63df8bfe3472fcc0",
+      "source_id": "latvia--url-3aeacc50fb2e157d0a7f7b40",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-jelgavas-novads-C",
+    "name": "Jelgavas novads",
+    "source_code": "jelgavas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jelgavas-novads/index.html",
+      "sha256": "8038d8764272605855f84e751603b4f83f9627b67f2ecd80c50a6f7da66f0cfb",
+      "source_id": "latvia--url-055a59dff3973b8929154eb2",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2025",
+    "office_id": "LV-LOCAL-2021-tukuma-novads-C",
+    "name": "Tukuma novads",
+    "source_code": "tukuma-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/tukuma-novads/index.html",
+      "sha256": "0dd4b522afba6c5575c8f196332b1324b7738b472153ea00154b12cc3567dda1",
+      "source_id": "latvia--url-a356f90bbf41e5928fa868a0",
+      "html_locator": "council results heading"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-9088fff7c8543d7c7b37553f-C",
+    "name": "Rīga",
+    "source_code": "7GMEialdZcbMIUF05/V2NA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[8]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-fd0e675cd4aa93b401126f90-C",
+    "name": "Daugavpils",
+    "source_code": "w3jG5ishQPoSOYYNFk+/1g==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[9]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-76bcd993fe9c82e692e16df6-C",
+    "name": "Jelgava",
+    "source_code": "5esX0c4YDTG7kUbGPz/6kw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[10]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-1bf693ae966fa4f552a55f4f-C",
+    "name": "Jēkabpils",
+    "source_code": "hpKynfWwX+NeMCjmXiPIWg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[11]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-dc8d8bdd15d0efff766fc763-C",
+    "name": "Jūrmala",
+    "source_code": "iVEdgdOhlf5lXI0CQQ0Bag==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[12]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-1d4bc292f710e756709d085e-C",
+    "name": "Liepāja",
+    "source_code": "NnGEGaGW2UM1ajylM1RJog==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[13]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-4e5a96fc764e876c23378145-C",
+    "name": "Rēzekne",
+    "source_code": "3xcUgAgs4Yn82I/SFiIh1w==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[14]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-ad92f7f09c46c34e2f826f00-C",
+    "name": "Valmiera",
+    "source_code": "lgNhyHz3WCew1DG4LaFxXw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[15]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-875674c7d7c1faff68829ecf-C",
+    "name": "Ventspils",
+    "source_code": "Dna9JBpzMV1S/eh5GTWu+g==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[16]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-9ae6af638acd969a9f43f923-C",
+    "name": "Aizkraukles novads",
+    "source_code": "gLnZlYvbRMMSu8YoT+PQ3A==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[17]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-20ebcb890841e93e90de22a6-C",
+    "name": "Jaunjelgavas novads",
+    "source_code": "Ks+oYE5IdHsdZcjgc/3VRA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[18]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-6959bd4961a47740a3a15fe3-C",
+    "name": "Pļaviņu novads",
+    "source_code": "UNMRKwFBtSeO6hJ6nViZxA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[19]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-a1605a6a74c081b910a5a2f2-C",
+    "name": "Kokneses novads",
+    "source_code": "o/gtYNK+ih2an5iUiqkvDg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[20]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-426122a9646b134f82b951b7-C",
+    "name": "Neretas novads",
+    "source_code": "RWZELWNC7n/nZm6emTSPqg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[21]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-73a90958cf9e0a020ef97e41-C",
+    "name": "Skrīveru novads",
+    "source_code": "j2a8pVz+EE+3g0paXhxN+w==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[22]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-01f484056f6e240e04caf3dd-C",
+    "name": "Alūksnes novads",
+    "source_code": "a7Of9mTu6qTshHm79CfvmQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[23]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-32ae94d0a18b7fbb12f6dad1-C",
+    "name": "Apes novads",
+    "source_code": "paJye+htlZN+VvsErfSIMw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[24]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-e14d487e2b77d3d5e94325b2-C",
+    "name": "Balvu novads",
+    "source_code": "v79a5pP8AUa7A4BYzNtR0A==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[25]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-65f8ce80c149e6606ee8c205-C",
+    "name": "Viļakas novads",
+    "source_code": "H9IQEyLc27QpugpKy4b3Ig==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[26]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-fec0a7cdeb6584815ef55ddc-C",
+    "name": "Baltinavas novads",
+    "source_code": "8k1v7yBEuCMERyWBkqtfTQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[27]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-f0959c59bb2ef621927507d2-C",
+    "name": "Rugāju novads",
+    "source_code": "Fb3ICaM4QZAhHaAQXWX5wA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[28]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-e978d1ab38d2bb181534be4f-C",
+    "name": "Bauskas novads",
+    "source_code": "sZRTrAggjXG+72pfBMtrDw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[29]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-ed811285be2b390efdc64e60-C",
+    "name": "Iecavas novads",
+    "source_code": "SqnoyuEN1hRNr079UdOFvA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[30]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-b331327ff160beca919dfba1-C",
+    "name": "Rundāles novads",
+    "source_code": "7HNMumQsdqi9TGzQQHoOrg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[31]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-21d4459b561cd59d614b33c8-C",
+    "name": "Vecumnieku novads",
+    "source_code": "r9eDaPF/TQ28FiF1AY+rnA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[32]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-91f262f380fb370d8a415e73-C",
+    "name": "Cēsu novads",
+    "source_code": "i3K7lWd45u3RKQ+H19alhA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[33]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-35822e900afe1a1a67a9fad2-C",
+    "name": "Līgatnes novads",
+    "source_code": "7WpSPq7QFQlHNuLMV41idw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[34]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-a166e352662ee17f982ad470-C",
+    "name": "Amatas novads",
+    "source_code": "jaavHTSaONtT5JfzqUWo1g==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[35]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-acac0ce67bdba0d5eaba1689-C",
+    "name": "Jaunpiebalgas novads",
+    "source_code": "lc2/M0m4uWrvWNJD0xdnRA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[36]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-97e1e00bad2f3368f9e17bee-C",
+    "name": "Priekuļu novads",
+    "source_code": "TP7Q950mNVQ7SCBFbNPekQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[37]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-95fe728c53377f6aa26df919-C",
+    "name": "Pārgaujas novads",
+    "source_code": "1uYy/mRd6I6T7tSUrHOo0A==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[38]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-652ba0a0403e46ae9ef15932-C",
+    "name": "Raunas novads",
+    "source_code": "zNVW0poBuK9FvzXFr1fnfA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[39]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-73faf05de2eb720c1f0a6ed1-C",
+    "name": "Vecpiebalgas novads",
+    "source_code": "I7EZC7zabYZttMmvT653gA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[40]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-f2579ee1279039c871fed73a-C",
+    "name": "Daugavpils novads",
+    "source_code": "LQgDYuC35E+3siJ+PNn7/Q==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[41]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-51e24f797154706ff78823dc-C",
+    "name": "Ilūkstes novads",
+    "source_code": "LerLTqto8czF6Ep8BbJDGg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[42]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-6dae7ac5b214b82fd773254e-C",
+    "name": "Dobeles novads",
+    "source_code": "D3XCujgy0rNacHzCP3szEA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[43]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-a61ab8ac0ed0e4aefcd6a84a-C",
+    "name": "Auces novads",
+    "source_code": "HsZA0yQvw8zrESyp5cYpbA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[44]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-b1f4b6252b829b49c2562cfe-C",
+    "name": "Tērvetes novads",
+    "source_code": "VDVQ77bb0RM5XCr05gSurg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[45]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-21188c5dd8284123bae24e65-C",
+    "name": "Gulbenes novads",
+    "source_code": "X529HnKejmjGyYeQG2yYjQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[46]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-e5bad9683cd61f109ba8822b-C",
+    "name": "Jelgavas novads",
+    "source_code": "eVdgkXY3HLLNSs6objbaIQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[47]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-a84a31a90f45d8d4f5afa007-C",
+    "name": "Ozolnieku novads",
+    "source_code": "9qQcXXKbbjpi30qXAjPwhA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[48]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-8353c80c6a6dd0b7a0690c0c-C",
+    "name": "Jēkabpils novads",
+    "source_code": "e9uoNFUdoFJa77VK2X7Wlg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[49]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-6f04db7a1e86e71314c2c154-C",
+    "name": "Aknīstes novads",
+    "source_code": "GpK3fR4z1K9DVqiJxzRSYQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[50]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-e89e75c726172ed23cd9e732-C",
+    "name": "Viesītes novads",
+    "source_code": "WS26TEcNiYpM7RoDCnGKWw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[51]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-55a015bdd50dab2e307a44e5-C",
+    "name": "Krustpils novads",
+    "source_code": "Lu1+u01t/hYXGr8C6hFMww==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[52]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-16ea57678a4e374c33689e1e-C",
+    "name": "Salas novads",
+    "source_code": "xM59mrsrMqVJ3DCrDyMWvw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[53]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-5616d9ae0200cd2d55a5f720-C",
+    "name": "Krāslavas novads",
+    "source_code": "aXjmxGe4fm3AiirRKMxW4w==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[54]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-b2679c411ac28370af1dba5f-C",
+    "name": "Dagdas novads",
+    "source_code": "qiRdDxlI7XjeNDOnwNuk8w==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[55]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-74fecdeeff2c6134bdaab079-C",
+    "name": "Aglonas novads",
+    "source_code": "1gpcyZFyNnBVXhfAohBypg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[56]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-4a1ede9ae7a66a50633240f3-C",
+    "name": "Kuldīgas novads",
+    "source_code": "K7tMbh2bRaerV8qGB27Y7g==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[57]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-3130359ba0b627acd8e9618d-C",
+    "name": "Skrundas novads",
+    "source_code": "EKGpVdJBl3+nNa/sLbDBKg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[58]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-7f9f8383d95733c1f4c16d51-C",
+    "name": "Alsungas novads",
+    "source_code": "wCroEBhDfaZgGLXLBVB8bg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[59]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-2a6a5b4724728ebea826487d-C",
+    "name": "Aizputes novads",
+    "source_code": "Aonu8wP0CsohS5021ftrEA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[60]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-e5c9833494e765009312873c-C",
+    "name": "Durbes novads",
+    "source_code": "mBRFRlk13xe0Ye89SQcV+g==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[61]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-e240a52b73010e2daa8f718f-C",
+    "name": "Grobiņas novads",
+    "source_code": "irjCvVnPWVPm/Lc8A5H+mQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[62]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-23e6b62cb38240674fb2f34b-C",
+    "name": "Pāvilostas novads",
+    "source_code": "RQp8M+7TX3JnIjAaeKzoEg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[63]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-34552cfb800de6facd4ba117-C",
+    "name": "Priekules novads",
+    "source_code": "P2iDF5hhwKaTwlTlEz9CUw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[64]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-70ca392eb8f9d07437670070-C",
+    "name": "Nīcas novads",
+    "source_code": "pvyvR4Ftf4iS+poXyZLuzQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[65]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-cdbd109e4f43a9024432852d-C",
+    "name": "Rucavas novads",
+    "source_code": "e5w7E11Mtq3hFwQEZLsGbw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[66]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-9c898e5dd673e947f246d368-C",
+    "name": "Vaiņodes novads",
+    "source_code": "pHvODJqoiyN0dZ7g8hQyIA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[67]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-5ebc6f90ff1a8ae229836895-C",
+    "name": "Limbažu novads",
+    "source_code": "rS0Lt+3Ix/eEtqKiFDseJA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[68]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-2cf898950d59bd028a75fbbb-C",
+    "name": "Alojas novads",
+    "source_code": "SrZKv5yalqT+eLIEjw/hvg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[69]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-6584c0c517de148f8ea839c9-C",
+    "name": "Salacgrīvas novads",
+    "source_code": "fonjcM6L0gmbaKI5AVcm1g==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[70]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-cf2c22781508a7493caf3968-C",
+    "name": "Ludzas novads",
+    "source_code": "F1tPsd5JULUWHQ6+FdyvPw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[71]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-fa3fbafaf8b45c7ea181e224-C",
+    "name": "Kārsavas novads",
+    "source_code": "ILY3j2naPJcEc8+ViUqQPw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[72]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-f2a5250459192e89cac28ef4-C",
+    "name": "Zilupes novads",
+    "source_code": "Al8EcgIWNkjJZGpjGYrSqw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[73]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-498231f80ff569f093a25730-C",
+    "name": "Ciblas novads",
+    "source_code": "oZSHDRg32vX1vRA0xhVpbg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[74]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-67f06969f18dbbbf872746a5-C",
+    "name": "Madonas novads",
+    "source_code": "kTJNYJq+5wlU+VS1HNwhzw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[75]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-0bec80ccc1b48178f2be5093-C",
+    "name": "Cesvaines novads",
+    "source_code": "Ul8IK+oGPDqhsVlRPu3vqQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[76]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-79e505cdaf17d27028b9c64e-C",
+    "name": "Lubānas novads",
+    "source_code": "d5gdY2ZWeFd/FCWlRYp5Rw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[77]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-04456446988e7c3aefe3f08d-C",
+    "name": "Varakļānu novads",
+    "source_code": "UrWGRIZK5GbavAE5ad0NEA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[78]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-d434c92b633744c940e84ebf-C",
+    "name": "Ērgļu novads",
+    "source_code": "KY/1YRwcvdRT4U0heHdh4A==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[79]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-13a4d8689b77718b0703ef96-C",
+    "name": "Ogres novads",
+    "source_code": "9tn8Djguklx+5F1sT7LgPQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[80]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-5410f045546f18a2ecdb1444-C",
+    "name": "Ikšķiles novads",
+    "source_code": "SLgDyY4B/93tacl1SGiIZQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[81]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-bdd723a7c44cd8b4d6a75022-C",
+    "name": "Ķeguma novads",
+    "source_code": "RKdfbdy2JIXywSqkbRWkyw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[82]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-1e6e4458b5108c7d0531283f-C",
+    "name": "Lielvārdes novads",
+    "source_code": "TT5BRjU/iIzK3Cdu7BoqvQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[83]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-2bda255ca31c257a51dc420c-C",
+    "name": "Preiļu novads",
+    "source_code": "8VZoYiMxRj66Yvkbl/V58w==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[84]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-3ff2c323617291dd1271b013-C",
+    "name": "Līvānu novads",
+    "source_code": "BHsaQOZZnF9Etm/iCN2kqA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[85]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-cc36cd0586087917e55478ab-C",
+    "name": "Riebiņu novads",
+    "source_code": "Fb4qrT+e17U/hrsLMjJjAA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[86]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-6904b9370f9a71dfe5605528-C",
+    "name": "Vārkavas novads",
+    "source_code": "y72dIF7n40t+Qr/53qzC9w==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[87]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-7aee3e7e03abb64611e30ae0-C",
+    "name": "Rēzeknes novads",
+    "source_code": "TEWhsVFS89lABYxUhy6Ckg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[88]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-45f40cff4950fc181b21b67b-C",
+    "name": "Viļānu novads",
+    "source_code": "dsGLu5l37RT5z4YAtwFE4A==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[89]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-a753ef21c7c2bee967d39f0e-C",
+    "name": "Baldones novads",
+    "source_code": "ymmy9H1ZDYsxV1LeDOUCLQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[90]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-b9b11011e5badd0df8aad81c-C",
+    "name": "Ķekavas novads",
+    "source_code": "yUoL87Da65UqLF/wNDpgEg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[91]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-294fd751efd6497347871b3c-C",
+    "name": "Olaines novads",
+    "source_code": "gpelR+xdMC0jZtduRx17zQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[92]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-e5e7ae14d5879c8db54b3150-C",
+    "name": "Salaspils novads",
+    "source_code": "51iODQH4IYk6ohqkGB2qQQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[93]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-7ea28802d3d6671b53a2f4c8-C",
+    "name": "Saulkrastu novads",
+    "source_code": "Yf7Vk+3SMqU8lX8pazkbXw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[94]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-37a26883fe97eab21074d7b6-C",
+    "name": "Siguldas novads",
+    "source_code": "yqUVQ357NAVp0sTki5egqA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[95]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-3f33448c28436a94b63448c5-C",
+    "name": "Inčukalna novads",
+    "source_code": "YRWEsB0Ocl8wIxI61LSmaQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[96]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-b1d419b64aeed8ddeb9738e5-C",
+    "name": "Ādažu novads",
+    "source_code": "zI/kuQrDUDamCw1ETXn/yg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[97]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-965f9b062785857bcd5ad4a6-C",
+    "name": "Babītes novads",
+    "source_code": "U7JiQXIT0CqQzAiD/fneDw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[98]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-76f1abf95b4470ec06e4153b-C",
+    "name": "Carnikavas novads",
+    "source_code": "pq3SbOOtz2diTrjsG2UxQg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[99]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-62fe0faf96c2fb1b21b64178-C",
+    "name": "Garkalnes novads",
+    "source_code": "M03tZgTeq/t268Xv1lR+bw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[100]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-22bce18e76b8fec32f38acf1-C",
+    "name": "Krimuldas novads",
+    "source_code": "m/3t/fgegEP4pkoJpXtJxQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[101]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-91ed8adf4928ec0f021ab3e6-C",
+    "name": "Mālpils novads",
+    "source_code": "w2sr6eN5IIF2znqmwAtHaQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[102]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-fce598805c4a8a32be674f25-C",
+    "name": "Mārupes novads",
+    "source_code": "N3RsuALPEwTGWZ6GtGffqw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[103]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-4738c592aa7dbac805ea8bc0-C",
+    "name": "Ropažu novads",
+    "source_code": "5SzxVNqH059l5YZ0LEaOQw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[104]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-5792d79b196203290f011164-C",
+    "name": "Sējas novads",
+    "source_code": "wONxkxrBZ76c724UZAuxWQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[105]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-e8d2b25561d6790735afc3df-C",
+    "name": "Stopiņu novads",
+    "source_code": "P17/W2AdsXn90YPylzVpuw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[106]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-5c639019008cc128e0280022-C",
+    "name": "Saldus novads",
+    "source_code": "bAzwL/1PXPgzjusWEvd3Vg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[107]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-9c3b7c9d7d78775e871e18e0-C",
+    "name": "Brocēnu novads",
+    "source_code": "QxcH3Qq8w8fbwqiqz3V+iQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[108]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-9426da3b4c8fb1eb9db9900f-C",
+    "name": "Talsu novads",
+    "source_code": "L2hsXn4nGAZhyemNAMg+lw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[109]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-178245f0df7744df14cae573-C",
+    "name": "Dundagas novads",
+    "source_code": "pOy6XswxKA3D8JkuczyqHA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[110]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-745df4e93800f197ecdef9f0-C",
+    "name": "Mērsraga novads",
+    "source_code": "FrtF0IzCWUryOLYUO555Sg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[111]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-dcf294c008625d9d0a966935-C",
+    "name": "Rojas novads",
+    "source_code": "c03nE1WZoaUS5B5s80ReOg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[112]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-02a6a2fc13b6de64757c5233-C",
+    "name": "Tukuma novads",
+    "source_code": "ihojlQQhjczsdf0Yrpkpxw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[113]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-5c930526b79bf96cf4cfede8-C",
+    "name": "Kandavas novads",
+    "source_code": "IqLYZEq0dg4PTaKLHj3jFw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[114]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-a29063760167668b33116b52-C",
+    "name": "Engures novads",
+    "source_code": "UO1BN4QKkCIaqyGh3Bml1g==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[115]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-18e0538d8e978d47f24d317c-C",
+    "name": "Jaunpils novads",
+    "source_code": "GU+mlPC+3t5+SUmJ37y8sw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[116]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-513a0ad7e99b4793924a2652-C",
+    "name": "Valkas novads",
+    "source_code": "ZFPyBu5kJAhwl2+BKQdZhw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[117]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-0d122d10711f64be644fc4fb-C",
+    "name": "Smiltenes novads",
+    "source_code": "+XyOMYTNSth4An3Qi1LICg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[118]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-83a0696a280d4ca9c0fcf1d3-C",
+    "name": "Strenču novads",
+    "source_code": "+osu6TTuFZ3vRNKcmHyoKw==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[119]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-c599f3600349ef468f7da589-C",
+    "name": "Kocēnu novads",
+    "source_code": "uqGPrFVVArenjw7FCdnfrQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[120]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-f1f5cf0d7cdcbaa0328f8776-C",
+    "name": "Mazsalacas novads",
+    "source_code": "isrH9dxooGZSFpsoxTbmlA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[121]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-afb163a196c81942b3b826c1-C",
+    "name": "Rūjienas novads",
+    "source_code": "gGSYuqMlFOVUvJoOziNhHg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[122]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-4ddd462be8e4f4355e8787eb-C",
+    "name": "Beverīnas novads",
+    "source_code": "g05t+lGIAhHZ3mHUyW8vTg==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[123]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-760795d1bb6459bfbe429a38-C",
+    "name": "Burtnieku novads",
+    "source_code": "oJ1zJZEBjqYqDTKiHecgjA==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[124]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-2b0f163c34c256da41b7d76e-C",
+    "name": "Naukšēnu novads",
+    "source_code": "E2RUqZgT4qUmAmTUtMOJ4g==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[125]"
+    }
+  },
+  {
+    "cycle": "PV2017",
+    "office_id": "LV-LOCAL-2017-cvk-dd9886f7c737ef1398637c82-C",
+    "name": "Ventspils novads",
+    "source_code": "lUY1mUHlw5MolhutDEv8GQ==",
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[126]"
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-jurmala-C",
+    "name": "Jūrmala",
+    "source_code": "jurmala",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 2
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-aluksnes-novads-C",
+    "name": "Alūksnes novads",
+    "source_code": "aluksnes-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 3
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-adazu-novads-C",
+    "name": "Ādažu novads",
+    "source_code": "adazu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 4
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-cesu-novads-C",
+    "name": "Cēsu novads",
+    "source_code": "cesu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 5
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-gulbenes-novads-C",
+    "name": "Gulbenes novads",
+    "source_code": "gulbenes-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 6
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-kekavas-novads-C",
+    "name": "Ķekavas novads",
+    "source_code": "kekavas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 7
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-limbazu-novads-C",
+    "name": "Limbažu novads",
+    "source_code": "limbazu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 8
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-madonas-novads-C",
+    "name": "Madonas novads",
+    "source_code": "madonas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 9
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-marupes-novads-C",
+    "name": "Mārupes novads",
+    "source_code": "marupes-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 10
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-ogres-novads-C",
+    "name": "Ogres novads",
+    "source_code": "ogres-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 11
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-olaines-novads-C",
+    "name": "Olaines novads",
+    "source_code": "olaines-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 12
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-ropazu-novads-C",
+    "name": "Ropažu novads",
+    "source_code": "ropazu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 13
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-salaspils-novads-C",
+    "name": "Salaspils novads",
+    "source_code": "salaspils-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 14
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-saulkrastu-novads-C",
+    "name": "Saulkrastu novads",
+    "source_code": "saulkrastu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 15
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-siguldas-novads-C",
+    "name": "Siguldas novads",
+    "source_code": "siguldas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 16
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-smiltenes-novads-C",
+    "name": "Smiltenes novads",
+    "source_code": "smiltenes-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 17
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-valkas-novads-C",
+    "name": "Valkas novads",
+    "source_code": "valkas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 18
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-valmieras-novads-C",
+    "name": "Valmieras novads",
+    "source_code": "valmieras-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 19
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-daugavpils-C",
+    "name": "Daugavpils",
+    "source_code": "daugavpils",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 20
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-rezekne-C",
+    "name": "Rēzekne",
+    "source_code": "rezekne",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 21
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-augsdaugavas-novads-C",
+    "name": "Augšdaugavas novads",
+    "source_code": "augsdaugavas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 22
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-balvu-novads-C",
+    "name": "Balvu novads",
+    "source_code": "balvu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 23
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-kraslavas-novads-C",
+    "name": "Krāslavas novads",
+    "source_code": "kraslavas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 24
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-livanu-novads-C",
+    "name": "Līvānu novads",
+    "source_code": "livanu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 25
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-ludzas-novads-C",
+    "name": "Ludzas novads",
+    "source_code": "ludzas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 26
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-preilu-novads-C",
+    "name": "Preiļu novads",
+    "source_code": "preilu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 27
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-liepaja-C",
+    "name": "Liepāja",
+    "source_code": "liepaja",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 28
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-ventspils-C",
+    "name": "Ventspils",
+    "source_code": "ventspils",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 29
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-dienvidkurzemes-novads-C",
+    "name": "Dienvidkurzemes novads",
+    "source_code": "dienvidkurzemes-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 30
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-kuldigas-novads-C",
+    "name": "Kuldīgas novads",
+    "source_code": "kuldigas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 31
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-saldus-novads-C",
+    "name": "Saldus novads",
+    "source_code": "saldus-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 32
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-talsu-novads-C",
+    "name": "Talsu novads",
+    "source_code": "talsu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 33
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-ventspils-novads-C",
+    "name": "Ventspils novads",
+    "source_code": "ventspils-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 34
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-jelgava-C",
+    "name": "Jelgava",
+    "source_code": "jelgava",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 35
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-aizkraukles-novads-C",
+    "name": "Aizkraukles novads",
+    "source_code": "aizkraukles-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 36
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-bauskas-novads-C",
+    "name": "Bauskas novads",
+    "source_code": "bauskas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 37
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-dobeles-novads-C",
+    "name": "Dobeles novads",
+    "source_code": "dobeles-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 38
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-jelgavas-novads-C",
+    "name": "Jelgavas novads",
+    "source_code": "jelgavas-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 39
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-jekabpils-novads-C",
+    "name": "Jēkabpils novads",
+    "source_code": "jekabpils-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 40
+    }
+  },
+  {
+    "cycle": "PV2021",
+    "office_id": "LV-LOCAL-2021-tukuma-novads-C",
+    "name": "Tukuma novads",
+    "source_code": "tukuma-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 41
+    }
+  },
+  {
+    "cycle": "VRD2021",
+    "office_id": "LV-LOCAL-2021-rezeknes-novads-C",
+    "name": "Rēzeknes novads",
+    "source_code": "rezeknes-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/vrd-2021-velesanu-rezultati/index.html",
+      "sha256": "51bdfede36f60891967ecf2110ab49a7241ba2333c1331f2e0dce73f538e1dae",
+      "source_id": "latvia--url-54137b9f37c020c90408f16f",
+      "html_table": 2
+    }
+  },
+  {
+    "cycle": "VRD2021",
+    "office_id": "LV-LOCAL-2021-varaklanu-novads-C",
+    "name": "Varakļānu novads",
+    "source_code": "varaklanu-novads",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/vrd-2021-velesanu-rezultati/index.html",
+      "sha256": "51bdfede36f60891967ecf2110ab49a7241ba2333c1331f2e0dce73f538e1dae",
+      "source_id": "latvia--url-54137b9f37c020c90408f16f",
+      "html_table": 3
+    }
+  },
+  {
+    "cycle": "RD2020",
+    "office_id": "LV-LOCAL-2021-riga-C",
+    "name": "Rīga",
+    "source_code": "riga",
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/rd-2020-velesanu-rezultati/index.html",
+      "sha256": "f2d618097e38e5754fb595db8dfeb34f2731510a7100ee855ae21055cda66395",
+      "source_id": "latvia--url-11125fefcfd7ced60be8f269",
+      "html_table": 2
+    }
+  }
+]

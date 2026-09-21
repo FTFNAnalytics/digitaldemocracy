@@ -1,0 +1,191 @@
+[
+  {
+    "claim_id": "LV-SV2022-SHARE-1",
+    "target_result_row_id": "result-18e570d4e26f446809537fc3",
+    "field": "share",
+    "disposition": "needs_human_review",
+    "original_claim": {
+      "value": 18.97,
+      "origin": {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/14-saeimas-velesanu-rezultati/index.html",
+        "sha256": "29a61f6026bceb417ba29239a1497ce6fbfa496649d778c8f5dd7c86b1ec4428",
+        "source_id": "latvia--url-9706c8e9e6235dfcc1888160",
+        "html_table": 1,
+        "html_row": 2
+      }
+    },
+    "alternate_claim": {
+      "value": 19.19,
+      "origin": {
+        "input_path": "data/research/latvia/sources/www.cvk.lv/saeimas-rezultati/index.html",
+        "sha256": "1d89924795acd33dde382e5187b95a3a85f4e083b92186bd197df20e14e8052c",
+        "source_id": "latvia--url-4a92aa3ffb8c1d9b98c1228f",
+        "html_table": 2,
+        "html_row": 2
+      }
+    },
+    "reason": "Detailed official archive/API and current CVK summary disagree; no alternate auto-selected. Archive value retained as disputed. Denominator/version explanation is still required."
+  },
+  {
+    "claim_id": "LV-SV2022-SHARE-3",
+    "target_result_row_id": "result-6ce4a9cb72bc48e8f6814366",
+    "field": "share",
+    "disposition": "needs_human_review",
+    "original_claim": {
+      "value": 12.44,
+      "origin": {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/14-saeimas-velesanu-rezultati/index.html",
+        "sha256": "29a61f6026bceb417ba29239a1497ce6fbfa496649d778c8f5dd7c86b1ec4428",
+        "source_id": "latvia--url-9706c8e9e6235dfcc1888160",
+        "html_table": 1,
+        "html_row": 4
+      }
+    },
+    "alternate_claim": {
+      "value": 12.58,
+      "origin": {
+        "input_path": "data/research/latvia/sources/www.cvk.lv/saeimas-rezultati/index.html",
+        "sha256": "1d89924795acd33dde382e5187b95a3a85f4e083b92186bd197df20e14e8052c",
+        "source_id": "latvia--url-4a92aa3ffb8c1d9b98c1228f",
+        "html_table": 2,
+        "html_row": 3
+      }
+    },
+    "reason": "Detailed official archive/API and current CVK summary disagree; no alternate auto-selected. Archive value retained as disputed. Denominator/version explanation is still required."
+  },
+  {
+    "claim_id": "LV-SV2022-SHARE-18",
+    "target_result_row_id": "result-572850965b2165a7ea33f8f8",
+    "field": "share",
+    "disposition": "needs_human_review",
+    "original_claim": {
+      "value": 11.01,
+      "origin": {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/14-saeimas-velesanu-rezultati/index.html",
+        "sha256": "29a61f6026bceb417ba29239a1497ce6fbfa496649d778c8f5dd7c86b1ec4428",
+        "source_id": "latvia--url-9706c8e9e6235dfcc1888160",
+        "html_table": 1,
+        "html_row": 19
+      }
+    },
+    "alternate_claim": {
+      "value": 11.14,
+      "origin": {
+        "input_path": "data/research/latvia/sources/www.cvk.lv/saeimas-rezultati/index.html",
+        "sha256": "1d89924795acd33dde382e5187b95a3a85f4e083b92186bd197df20e14e8052c",
+        "source_id": "latvia--url-4a92aa3ffb8c1d9b98c1228f",
+        "html_table": 2,
+        "html_row": 4
+      }
+    },
+    "reason": "Detailed official archive/API and current CVK summary disagree; no alternate auto-selected. Archive value retained as disputed. Denominator/version explanation is still required."
+  },
+  {
+    "claim_id": "LV-SV2022-SHARE-11",
+    "target_result_row_id": "result-a544d9f05b3f501dc2c05607",
+    "field": "share",
+    "disposition": "needs_human_review",
+    "original_claim": {
+      "value": 9.29,
+      "origin": {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/14-saeimas-velesanu-rezultati/index.html",
+        "sha256": "29a61f6026bceb417ba29239a1497ce6fbfa496649d778c8f5dd7c86b1ec4428",
+        "source_id": "latvia--url-9706c8e9e6235dfcc1888160",
+        "html_table": 1,
+        "html_row": 12
+      }
+    },
+    "alternate_claim": {
+      "value": 9.4,
+      "origin": {
+        "input_path": "data/research/latvia/sources/www.cvk.lv/saeimas-rezultati/index.html",
+        "sha256": "1d89924795acd33dde382e5187b95a3a85f4e083b92186bd197df20e14e8052c",
+        "source_id": "latvia--url-4a92aa3ffb8c1d9b98c1228f",
+        "html_table": 2,
+        "html_row": 5
+      }
+    },
+    "reason": "Detailed official archive/API and current CVK summary disagree; no alternate auto-selected. Archive value retained as disputed. Denominator/version explanation is still required."
+  },
+  {
+    "claim_id": "LV-SV2022-SHARE-8",
+    "target_result_row_id": "result-64e657c216c51685433edb91",
+    "field": "share",
+    "disposition": "needs_human_review",
+    "original_claim": {
+      "value": 6.8,
+      "origin": {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/14-saeimas-velesanu-rezultati/index.html",
+        "sha256": "29a61f6026bceb417ba29239a1497ce6fbfa496649d778c8f5dd7c86b1ec4428",
+        "source_id": "latvia--url-9706c8e9e6235dfcc1888160",
+        "html_table": 1,
+        "html_row": 9
+      }
+    },
+    "alternate_claim": {
+      "value": 6.88,
+      "origin": {
+        "input_path": "data/research/latvia/sources/www.cvk.lv/saeimas-rezultati/index.html",
+        "sha256": "1d89924795acd33dde382e5187b95a3a85f4e083b92186bd197df20e14e8052c",
+        "source_id": "latvia--url-4a92aa3ffb8c1d9b98c1228f",
+        "html_table": 2,
+        "html_row": 6
+      }
+    },
+    "reason": "Detailed official archive/API and current CVK summary disagree; no alternate auto-selected. Archive value retained as disputed. Denominator/version explanation is still required."
+  },
+  {
+    "claim_id": "LV-SV2022-SHARE-12",
+    "target_result_row_id": "result-c4183dfde16bebfbc1973a34",
+    "field": "share",
+    "disposition": "needs_human_review",
+    "original_claim": {
+      "value": 6.24,
+      "origin": {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/14-saeimas-velesanu-rezultati/index.html",
+        "sha256": "29a61f6026bceb417ba29239a1497ce6fbfa496649d778c8f5dd7c86b1ec4428",
+        "source_id": "latvia--url-9706c8e9e6235dfcc1888160",
+        "html_table": 1,
+        "html_row": 13
+      }
+    },
+    "alternate_claim": {
+      "value": 6.31,
+      "origin": {
+        "input_path": "data/research/latvia/sources/www.cvk.lv/saeimas-rezultati/index.html",
+        "sha256": "1d89924795acd33dde382e5187b95a3a85f4e083b92186bd197df20e14e8052c",
+        "source_id": "latvia--url-4a92aa3ffb8c1d9b98c1228f",
+        "html_table": 2,
+        "html_row": 7
+      }
+    },
+    "reason": "Detailed official archive/API and current CVK summary disagree; no alternate auto-selected. Archive value retained as disputed. Denominator/version explanation is still required."
+  },
+  {
+    "claim_id": "LV-SV2022-SHARE-15",
+    "target_result_row_id": "result-118cd475c2f29cce811acec6",
+    "field": "share",
+    "disposition": "needs_human_review",
+    "original_claim": {
+      "value": 6.16,
+      "origin": {
+        "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/14-saeimas-velesanu-rezultati/index.html",
+        "sha256": "29a61f6026bceb417ba29239a1497ce6fbfa496649d778c8f5dd7c86b1ec4428",
+        "source_id": "latvia--url-9706c8e9e6235dfcc1888160",
+        "html_table": 1,
+        "html_row": 16
+      }
+    },
+    "alternate_claim": {
+      "value": 6.23,
+      "origin": {
+        "input_path": "data/research/latvia/sources/www.cvk.lv/saeimas-rezultati/index.html",
+        "sha256": "1d89924795acd33dde382e5187b95a3a85f4e083b92186bd197df20e14e8052c",
+        "source_id": "latvia--url-4a92aa3ffb8c1d9b98c1228f",
+        "html_table": 2,
+        "html_row": 8
+      }
+    },
+    "reason": "Detailed official archive/API and current CVK summary disagree; no alternate auto-selected. Archive value retained as disputed. Denominator/version explanation is still required."
+  }
+]

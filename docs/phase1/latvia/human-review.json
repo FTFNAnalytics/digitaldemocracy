@@ -1,0 +1,1122 @@
+{
+  "status": "draft_for_human_review",
+  "applied_changes": 0,
+  "rows": [
+    {
+      "office_id": "LV-EP",
+      "classification_json_pointer": "/classifications/0",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G05"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-01f484056f6e240e04caf3dd-C",
+      "classification_json_pointer": "/classifications/1",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-02a6a2fc13b6de64757c5233-C",
+      "classification_json_pointer": "/classifications/2",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-04456446988e7c3aefe3f08d-C",
+      "classification_json_pointer": "/classifications/3",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-0bec80ccc1b48178f2be5093-C",
+      "classification_json_pointer": "/classifications/4",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-0d122d10711f64be644fc4fb-C",
+      "classification_json_pointer": "/classifications/5",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-13a4d8689b77718b0703ef96-C",
+      "classification_json_pointer": "/classifications/6",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-16ea57678a4e374c33689e1e-C",
+      "classification_json_pointer": "/classifications/7",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-178245f0df7744df14cae573-C",
+      "classification_json_pointer": "/classifications/8",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-18e0538d8e978d47f24d317c-C",
+      "classification_json_pointer": "/classifications/9",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-1bf693ae966fa4f552a55f4f-C",
+      "classification_json_pointer": "/classifications/10",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-1d4bc292f710e756709d085e-C",
+      "classification_json_pointer": "/classifications/11",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-1e6e4458b5108c7d0531283f-C",
+      "classification_json_pointer": "/classifications/12",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-20ebcb890841e93e90de22a6-C",
+      "classification_json_pointer": "/classifications/13",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-21188c5dd8284123bae24e65-C",
+      "classification_json_pointer": "/classifications/14",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-21d4459b561cd59d614b33c8-C",
+      "classification_json_pointer": "/classifications/15",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-22bce18e76b8fec32f38acf1-C",
+      "classification_json_pointer": "/classifications/16",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-23e6b62cb38240674fb2f34b-C",
+      "classification_json_pointer": "/classifications/17",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-294fd751efd6497347871b3c-C",
+      "classification_json_pointer": "/classifications/18",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-2a6a5b4724728ebea826487d-C",
+      "classification_json_pointer": "/classifications/19",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-2b0f163c34c256da41b7d76e-C",
+      "classification_json_pointer": "/classifications/20",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-2bda255ca31c257a51dc420c-C",
+      "classification_json_pointer": "/classifications/21",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-2cf898950d59bd028a75fbbb-C",
+      "classification_json_pointer": "/classifications/22",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-3130359ba0b627acd8e9618d-C",
+      "classification_json_pointer": "/classifications/23",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-32ae94d0a18b7fbb12f6dad1-C",
+      "classification_json_pointer": "/classifications/24",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-34552cfb800de6facd4ba117-C",
+      "classification_json_pointer": "/classifications/25",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-35822e900afe1a1a67a9fad2-C",
+      "classification_json_pointer": "/classifications/26",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-37a26883fe97eab21074d7b6-C",
+      "classification_json_pointer": "/classifications/27",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-3f33448c28436a94b63448c5-C",
+      "classification_json_pointer": "/classifications/28",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-3ff2c323617291dd1271b013-C",
+      "classification_json_pointer": "/classifications/29",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-426122a9646b134f82b951b7-C",
+      "classification_json_pointer": "/classifications/30",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-45f40cff4950fc181b21b67b-C",
+      "classification_json_pointer": "/classifications/31",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-4738c592aa7dbac805ea8bc0-C",
+      "classification_json_pointer": "/classifications/32",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-498231f80ff569f093a25730-C",
+      "classification_json_pointer": "/classifications/33",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-4a1ede9ae7a66a50633240f3-C",
+      "classification_json_pointer": "/classifications/34",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-4ddd462be8e4f4355e8787eb-C",
+      "classification_json_pointer": "/classifications/35",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-4e5a96fc764e876c23378145-C",
+      "classification_json_pointer": "/classifications/36",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-513a0ad7e99b4793924a2652-C",
+      "classification_json_pointer": "/classifications/37",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-51e24f797154706ff78823dc-C",
+      "classification_json_pointer": "/classifications/38",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-5410f045546f18a2ecdb1444-C",
+      "classification_json_pointer": "/classifications/39",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-55a015bdd50dab2e307a44e5-C",
+      "classification_json_pointer": "/classifications/40",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-5616d9ae0200cd2d55a5f720-C",
+      "classification_json_pointer": "/classifications/41",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-5792d79b196203290f011164-C",
+      "classification_json_pointer": "/classifications/42",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-5c639019008cc128e0280022-C",
+      "classification_json_pointer": "/classifications/43",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-5c930526b79bf96cf4cfede8-C",
+      "classification_json_pointer": "/classifications/44",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-5ebc6f90ff1a8ae229836895-C",
+      "classification_json_pointer": "/classifications/45",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-62fe0faf96c2fb1b21b64178-C",
+      "classification_json_pointer": "/classifications/46",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-652ba0a0403e46ae9ef15932-C",
+      "classification_json_pointer": "/classifications/47",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-6584c0c517de148f8ea839c9-C",
+      "classification_json_pointer": "/classifications/48",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-65f8ce80c149e6606ee8c205-C",
+      "classification_json_pointer": "/classifications/49",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-67f06969f18dbbbf872746a5-C",
+      "classification_json_pointer": "/classifications/50",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-6904b9370f9a71dfe5605528-C",
+      "classification_json_pointer": "/classifications/51",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-6959bd4961a47740a3a15fe3-C",
+      "classification_json_pointer": "/classifications/52",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-6dae7ac5b214b82fd773254e-C",
+      "classification_json_pointer": "/classifications/53",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-6f04db7a1e86e71314c2c154-C",
+      "classification_json_pointer": "/classifications/54",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-70ca392eb8f9d07437670070-C",
+      "classification_json_pointer": "/classifications/55",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-73a90958cf9e0a020ef97e41-C",
+      "classification_json_pointer": "/classifications/56",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-73faf05de2eb720c1f0a6ed1-C",
+      "classification_json_pointer": "/classifications/57",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-745df4e93800f197ecdef9f0-C",
+      "classification_json_pointer": "/classifications/58",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-74fecdeeff2c6134bdaab079-C",
+      "classification_json_pointer": "/classifications/59",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-760795d1bb6459bfbe429a38-C",
+      "classification_json_pointer": "/classifications/60",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-76bcd993fe9c82e692e16df6-C",
+      "classification_json_pointer": "/classifications/61",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-76f1abf95b4470ec06e4153b-C",
+      "classification_json_pointer": "/classifications/62",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-79e505cdaf17d27028b9c64e-C",
+      "classification_json_pointer": "/classifications/63",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-7aee3e7e03abb64611e30ae0-C",
+      "classification_json_pointer": "/classifications/64",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-7ea28802d3d6671b53a2f4c8-C",
+      "classification_json_pointer": "/classifications/65",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-7f9f8383d95733c1f4c16d51-C",
+      "classification_json_pointer": "/classifications/66",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-8353c80c6a6dd0b7a0690c0c-C",
+      "classification_json_pointer": "/classifications/67",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-83a0696a280d4ca9c0fcf1d3-C",
+      "classification_json_pointer": "/classifications/68",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-875674c7d7c1faff68829ecf-C",
+      "classification_json_pointer": "/classifications/69",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-9088fff7c8543d7c7b37553f-C",
+      "classification_json_pointer": "/classifications/70",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-91ed8adf4928ec0f021ab3e6-C",
+      "classification_json_pointer": "/classifications/71",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-91f262f380fb370d8a415e73-C",
+      "classification_json_pointer": "/classifications/72",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-9426da3b4c8fb1eb9db9900f-C",
+      "classification_json_pointer": "/classifications/73",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-95fe728c53377f6aa26df919-C",
+      "classification_json_pointer": "/classifications/74",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-965f9b062785857bcd5ad4a6-C",
+      "classification_json_pointer": "/classifications/75",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-97e1e00bad2f3368f9e17bee-C",
+      "classification_json_pointer": "/classifications/76",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-9ae6af638acd969a9f43f923-C",
+      "classification_json_pointer": "/classifications/77",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-9c3b7c9d7d78775e871e18e0-C",
+      "classification_json_pointer": "/classifications/78",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-9c898e5dd673e947f246d368-C",
+      "classification_json_pointer": "/classifications/79",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-a1605a6a74c081b910a5a2f2-C",
+      "classification_json_pointer": "/classifications/80",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-a166e352662ee17f982ad470-C",
+      "classification_json_pointer": "/classifications/81",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-a29063760167668b33116b52-C",
+      "classification_json_pointer": "/classifications/82",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-a61ab8ac0ed0e4aefcd6a84a-C",
+      "classification_json_pointer": "/classifications/83",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-a753ef21c7c2bee967d39f0e-C",
+      "classification_json_pointer": "/classifications/84",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-a84a31a90f45d8d4f5afa007-C",
+      "classification_json_pointer": "/classifications/85",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-acac0ce67bdba0d5eaba1689-C",
+      "classification_json_pointer": "/classifications/86",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-ad92f7f09c46c34e2f826f00-C",
+      "classification_json_pointer": "/classifications/87",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-afb163a196c81942b3b826c1-C",
+      "classification_json_pointer": "/classifications/88",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-b1d419b64aeed8ddeb9738e5-C",
+      "classification_json_pointer": "/classifications/89",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-b1f4b6252b829b49c2562cfe-C",
+      "classification_json_pointer": "/classifications/90",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-b2679c411ac28370af1dba5f-C",
+      "classification_json_pointer": "/classifications/91",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-b331327ff160beca919dfba1-C",
+      "classification_json_pointer": "/classifications/92",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-b9b11011e5badd0df8aad81c-C",
+      "classification_json_pointer": "/classifications/93",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-bdd723a7c44cd8b4d6a75022-C",
+      "classification_json_pointer": "/classifications/94",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-c599f3600349ef468f7da589-C",
+      "classification_json_pointer": "/classifications/95",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-cc36cd0586087917e55478ab-C",
+      "classification_json_pointer": "/classifications/96",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-cdbd109e4f43a9024432852d-C",
+      "classification_json_pointer": "/classifications/97",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-cf2c22781508a7493caf3968-C",
+      "classification_json_pointer": "/classifications/98",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-d434c92b633744c940e84ebf-C",
+      "classification_json_pointer": "/classifications/99",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-dc8d8bdd15d0efff766fc763-C",
+      "classification_json_pointer": "/classifications/100",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-dcf294c008625d9d0a966935-C",
+      "classification_json_pointer": "/classifications/101",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-dd9886f7c737ef1398637c82-C",
+      "classification_json_pointer": "/classifications/102",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-e14d487e2b77d3d5e94325b2-C",
+      "classification_json_pointer": "/classifications/103",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-e240a52b73010e2daa8f718f-C",
+      "classification_json_pointer": "/classifications/104",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-e5bad9683cd61f109ba8822b-C",
+      "classification_json_pointer": "/classifications/105",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-e5c9833494e765009312873c-C",
+      "classification_json_pointer": "/classifications/106",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-e5e7ae14d5879c8db54b3150-C",
+      "classification_json_pointer": "/classifications/107",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-e89e75c726172ed23cd9e732-C",
+      "classification_json_pointer": "/classifications/108",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-e8d2b25561d6790735afc3df-C",
+      "classification_json_pointer": "/classifications/109",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-e978d1ab38d2bb181534be4f-C",
+      "classification_json_pointer": "/classifications/110",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-ed811285be2b390efdc64e60-C",
+      "classification_json_pointer": "/classifications/111",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-f0959c59bb2ef621927507d2-C",
+      "classification_json_pointer": "/classifications/112",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-f1f5cf0d7cdcbaa0328f8776-C",
+      "classification_json_pointer": "/classifications/113",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-f2579ee1279039c871fed73a-C",
+      "classification_json_pointer": "/classifications/114",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-f2a5250459192e89cac28ef4-C",
+      "classification_json_pointer": "/classifications/115",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-fa3fbafaf8b45c7ea181e224-C",
+      "classification_json_pointer": "/classifications/116",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-fce598805c4a8a32be674f25-C",
+      "classification_json_pointer": "/classifications/117",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-fd0e675cd4aa93b401126f90-C",
+      "classification_json_pointer": "/classifications/118",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2017-cvk-fec0a7cdeb6584815ef55ddc-C",
+      "classification_json_pointer": "/classifications/119",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2021-madonas-novads-C",
+      "classification_json_pointer": "/classifications/142",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2021-riga-C",
+      "classification_json_pointer": "/classifications/149",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-LOCAL-2021-varaklanu-novads-C",
+      "classification_json_pointer": "/classifications/160",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LV-PRESIDENT",
+      "classification_json_pointer": "/classifications/164",
+      "classification_sha256": "7d9dd90af38a532a1148848598aaf90cb6ce95ca4edd7b4aa26d1734452498ce",
+      "categories": [
+        "LV-G03"
+      ],
+      "proposed_changes": []
+    }
+  ]
+}

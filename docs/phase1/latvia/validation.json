@@ -1,0 +1,215 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "all_effective_input_bytes_and_hashes",
+      "status": "PASS",
+      "detail": 205
+    },
+    {
+      "check": "fingerprint",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "pinned_DDL_reference_bytes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "office_ids_unique",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "current_roster_counts",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "historic_identity_caveat",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "source_roster_snapshots",
+      "status": "PASS",
+      "detail": {
+        "PV2025": 42,
+        "PV2017": 119,
+        "PV2021": 40,
+        "VRD2021": 2,
+        "RD2020": 1
+      }
+    },
+    {
+      "check": "current_tier_exact_set",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "draft_tier_counts",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no_tier_approval",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no_direct_executive_fabrication",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "geography_FKs_no_successors",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "event_unique_FKs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "event_ID_vectors",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "event_roles",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "two_sourced_proceedings",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "proceeding_ID_FKs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "sources_unique_hashes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "source_IDs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "2017_XML_type2_exact_roster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "result_ID_FKs_statuses_source_cells",
+      "status": "PASS",
+      "detail": {
+        "XML": 599,
+        "HTML": 779,
+        "manual_primary_presidential_claims": 5
+      }
+    },
+    {
+      "check": "seven_disputed_claims",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "conflicting_claims_preserved_no_auto_choice",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "210_complete_list_vectors_reconcile",
+      "status": "PASS",
+      "detail": "Internal consistency, not universal certification or percentage adjudication"
+    },
+    {
+      "check": "prospective_has_no_results",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "date_precision_and_IDs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "vectors_complete",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "223_column_contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "fixtures_excluded",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no_mutations",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "21_worked_examples",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Justin_boxes_unchecked",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "counts": {
+    "offices": 166,
+    "current_offices": 45,
+    "historical_office_identity_records": 121,
+    "current_councils": 42,
+    "historical_records_are_not_abolished_council_count": true,
+    "events": 217,
+    "historical_events": 216,
+    "prospective_events": 1,
+    "result_rows": 1383,
+    "proceedings": 2,
+    "draft_tiers": {
+      "other": 1,
+      "municipal": 163,
+      "national": 2
+    },
+    "direct_executive_offices": 0,
+    "indirect_national_president_offices": 1,
+    "council_office_identity_records": 163,
+    "roster_snapshots": {
+      "PV2025": 42,
+      "PV2017": 119,
+      "PV2021": 40,
+      "VRD2021": 2,
+      "RD2020": 1
+    },
+    "current_state_city_councils": 7,
+    "current_novads_councils": 35,
+    "geographies": 164,
+    "source_vector_audits": 210,
+    "source_vector_mismatches": 0
+  },
+  "applied_changes": 0,
+  "importer_SQLite_VPS_UI_CI": "Not run",
+  "research_coverage_complete": false,
+  "historical_identity_resolution": "pending Justin; historical rows are not abolished-council count",
+  "production_accepted": false,
+  "manual_PDF_review": "pages1/4 visually checked; offline validator verifies retained hash, not handwriting recognition",
+  "manifest_protocol": "Final SHA256SUMS was written after this report; a final read-only validator pass and ZIP member comparison verify the final manifest, including this file. No self-hash entry.",
+  "pinned_main": "f7b5c81ebd39f1774edea7cde5b4155031d92647"
+}
