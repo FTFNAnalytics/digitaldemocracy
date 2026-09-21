@@ -2404,6 +2404,169 @@ describe("Phase 0 tier-classification drafts", () => {
       human_review_required: true,
     });
   });
+
+  it("keeps Spain Prompt AE 8204 current / 4 historical accepted with named holds", () => {
+    const spain = readJson<
+      TierFile & {
+        production_accepted?: boolean;
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        justin_approval?: {
+          accepted?: boolean;
+          current_offices?: number;
+          historical_offices?: number;
+          events?: number;
+          results?: number;
+          explicit_concejo_abierto_direct_executives?: number;
+          municipal_modes_pending?: number;
+          scope?: string;
+          holds?: string[];
+        };
+        source_register: { path?: string; input_path?: string; sha256: string; bytes?: number };
+      }
+    >("schemas/atlas/tiers/spain.json");
+    expect(spain.status).toBe("approved");
+    expect(spain.production_accepted).toBe(true);
+    expect(spain.country_slug).toBe("spain");
+    expect(spain.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-21",
+      timezone: "America/Edmonton",
+    });
+    expect(spain.approval?.notes).toMatch(/8204 current \+ 4 historical/i);
+    expect(spain.approval?.notes).toMatch(/named holds/i);
+    expect(spain.approval?.notes).toMatch(/ES-G01/);
+    expect(spain.approval?.notes).toMatch(/ES-G02/);
+    expect(spain.approval?.notes).toMatch(/ES-G03/);
+    expect(spain.approval?.notes).toMatch(/ES-G04/);
+    expect(spain.approval?.notes).toMatch(/ES-G05/);
+    expect(spain.approval?.notes).toMatch(/ES-G06/);
+    expect(spain.approval?.notes).toMatch(/ES-G07/);
+    expect(spain.approval?.notes).toMatch(/ES-G08/);
+    expect(spain.approval?.notes).toMatch(/ES-G09/);
+    expect(spain.approval?.notes).toMatch(/ES-G10/);
+    expect(spain.approval?.notes).toMatch(/ES-G11/);
+    expect(spain.approval?.notes).toMatch(/ES-G12/);
+    expect(spain.predecessor_draft_sha256).toBe(
+      "f161ea79405505577fe0127d492d346d6e730537ed21e59b34333fb4023a393f",
+    );
+    expect(sha256("schemas/atlas/tiers/spain.json")).toBe(
+      "61f8176df88a09d097e5d557b5a8cadf91acc7c28b5cf4f4ead79071b4364049",
+    );
+    expect(spain.classifications).toHaveLength(8208);
+    expect(spain.counts_by_proposed_tier).toEqual({
+      municipal: 8133,
+      other: 5,
+      regional: 68,
+      national: 2,
+    });
+    expect(spain.justin_approval).toMatchObject({
+      accepted: true,
+      current_offices: 8204,
+      historical_offices: 4,
+      events: 20820,
+      results: 91413,
+      explicit_concejo_abierto_direct_executives: 78,
+      municipal_modes_pending: 3762,
+      scope: "all_draft_offices_with_named_holds",
+      holds: [
+        "ES-G01",
+        "ES-G02",
+        "ES-G03",
+        "ES-G04",
+        "ES-G05",
+        "ES-G06",
+        "ES-G07",
+        "ES-G08",
+        "ES-G09",
+        "ES-G10",
+        "ES-G11",
+        "ES-G12",
+      ],
+    });
+    expect(spain.classifications.filter((row) => row.human_review_required === true)).toHaveLength(3897);
+    expect(spain.classifications.filter((row) => row.tier === "municipal")).toHaveLength(8133);
+    expect(spain.classifications.filter((row) => row.tier === "regional")).toHaveLength(68);
+    expect(spain.classifications.filter((row) => row.tier === "national")).toHaveLength(2);
+    expect(spain.classifications.filter((row) => row.tier === "other")).toHaveLength(5);
+    const register = readJson<Array<{ office_id: string; office_status?: string; office_type?: string }>>(
+      "data/research/spain/office-register.json",
+    );
+    expect(register.filter((row) => row.office_status === "current")).toHaveLength(8204);
+    expect(register.filter((row) => row.office_status === "historical")).toHaveLength(4);
+    expect(
+      register.filter(
+        (row) => row.office_status === "current" && row.office_type === "municipal_council",
+      ),
+    ).toHaveLength(4289);
+    expect(
+      register.filter(
+        (row) => row.office_status === "current" && row.office_type === "municipal_elected_mandate_mode_pending",
+      ),
+    ).toHaveLength(3762);
+    expect(
+      register.filter(
+        (row) => row.office_status === "current" && row.office_type === "concejo_abierto_alcalde",
+      ),
+    ).toHaveLength(78);
+    expect(
+      register.filter((row) => row.office_status === "historical").map((row) => row.office_id).sort(),
+    ).toEqual(["ES-M15026-REP", "ES-M15063-REP", "ES-M36011-REP", "ES-M36012-REP"]);
+    expect(
+      register.some((row) =>
+        /prime.?minister|cabinet|king|monarch/i.test(String(row.office_type ?? "")),
+      ),
+    ).toBe(false);
+    expect(readJsonGz<unknown[]>("data/research/spain/events.json.gz")).toHaveLength(20820);
+    expect(readJson<unknown[]>("data/research/spain/geography.json")).toHaveLength(8220);
+    expect(existsSync(path.join(repoRoot, "data/research/spain/events.json"))).toBe(false);
+    expect(existsSync(path.join(repoRoot, "data/research/spain/results.json"))).toBe(false);
+    expect(existsSync(path.join(repoRoot, "data/research/spain/sources"))).toBe(false);
+    expect(existsSync(path.join(repoRoot, "docs/phase1/spain/Spain_Identity_Vectors.json"))).toBe(false);
+    expect(existsSync(path.join(repoRoot, "docs/phase1/spain/JUSTIN_ACCEPTANCE.md"))).toBe(true);
+    expectExactIds(
+      spain,
+      register.map((row) => row.office_id),
+    );
+    expect(spain.source_register.sha256).toBe(
+      "5817713d1b14fc6cc4c0f077219112bc8ddafebad809fddc54406edd8431e008",
+    );
+    expect(spain.source_register.sha256).toBe(sha256("data/research/spain/office-register.json"));
+    expect(spain.source_register.input_path).toBe("data/research/spain/office-register.json");
+    expect(spain.classifications.find((row) => row.office_id === "ES-CONGRESO")).toMatchObject({
+      tier: "national",
+    });
+    expect(spain.classifications.find((row) => row.office_id === "ES-SENADO")).toMatchObject({
+      tier: "national",
+      human_review_required: true,
+    });
+    expect(spain.classifications.find((row) => row.office_id === "ES-EP")).toMatchObject({
+      tier: "other",
+    });
+    expect(spain.classifications.find((row) => row.office_id === "ES-M07024-REP")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+    expect(spain.classifications.find((row) => row.office_id === "ES-M51001-REP")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+    expect(spain.classifications.find((row) => row.office_id === "ES-M52001-REP")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+    expect(spain.classifications.find((row) => row.office_id === "ES-ARAN-COUNCIL")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+  });
 });
 
 describe("Phase 0 inventory artifacts", () => {
