@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -19,6 +19,7 @@ import { LINEAGE_ID as AUSTRIA_LINEAGE } from "../../lib/atlas/austria/identity"
 import { LINEAGE_ID as BELGIUM_LINEAGE } from "../../lib/atlas/belgium/identity";
 import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
 import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
+import { LINEAGE_ID as CZECHIA_LINEAGE } from "../../lib/atlas/czechia/identity";
 import { LINEAGE_ID as DENMARK_LINEAGE } from "../../lib/atlas/denmark/identity";
 import { LINEAGE_ID as FINLAND_LINEAGE } from "../../lib/atlas/finland/identity";
 import { LINEAGE_ID as IRELAND_LINEAGE } from "../../lib/atlas/ireland/identity";
@@ -361,6 +362,39 @@ function main() {
     }
     if (result.poland?.counts.prospective_events !== 56) {
       fail(`Poland prospective ${String(result.poland?.counts.prospective_events)}`);
+    }
+    if (result.czechia?.counts.offices !== 6424) {
+      fail(`Czechia offices ${String(result.czechia?.counts.offices)}`);
+    }
+    if (result.czechia?.counts.current_offices !== 6411) {
+      fail(`Czechia current ${String(result.czechia?.counts.current_offices)}`);
+    }
+    if (result.czechia?.counts.historical_offices !== 13) {
+      fail(`Czechia historical ${String(result.czechia?.counts.historical_offices)}`);
+    }
+    if (result.czechia?.counts.municipal_offices !== 6257) {
+      fail(`Czechia municipal ${String(result.czechia?.counts.municipal_offices)}`);
+    }
+    if (result.czechia?.counts.regional_offices !== 14) {
+      fail(`Czechia regional ${String(result.czechia?.counts.regional_offices)}`);
+    }
+    if (result.czechia?.counts.national_offices !== 3) {
+      fail(`Czechia national ${String(result.czechia?.counts.national_offices)}`);
+    }
+    if (result.czechia?.counts.other_offices !== 150) {
+      fail(`Czechia other ${String(result.czechia?.counts.other_offices)}`);
+    }
+    if (result.czechia?.counts.result_rows !== 0) {
+      fail(`Czechia results ${String(result.czechia?.counts.result_rows)}`);
+    }
+    if (result.czechia?.counts.prospective_events !== 6421) {
+      fail(`Czechia prospective ${String(result.czechia?.counts.prospective_events)}`);
+    }
+    if (result.czechia?.counts.unresolved_evidence !== 10) {
+      fail(`Czechia unresolved ${String(result.czechia?.counts.unresolved_evidence)}`);
+    }
+    if (result.czechia?.counts.proceedings !== 934) {
+      fail(`Czechia proceedings ${String(result.czechia?.counts.proceedings)}`);
     }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
@@ -808,6 +842,7 @@ function main() {
         NETHERLANDS_LINEAGE,
         NORWAY_LINEAGE,
         POLAND_LINEAGE,
+        CZECHIA_LINEAGE,
         SWEDEN_LINEAGE,
         SWITZERLAND_LINEAGE,
         NZ_LINEAGE_ID,
@@ -821,7 +856,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

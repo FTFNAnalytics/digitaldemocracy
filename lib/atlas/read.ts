@@ -518,6 +518,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "czechia") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "14 regional offices (13 kraj assemblies + one Prague city assembly). PRAGUE-DUAL-STATUS stays open: Prague is one body, not a second regional office, and borough councils stay other. 13 kraj assemblies have unknown next dates. Named holds stay open. No council-selected mayor or governor rows. Slim land omits result bytes; none are invented.",
+      denominatorKnown: false,
+    };
+  }
   if (countryId === "sweden") {
     return {
       offices,
