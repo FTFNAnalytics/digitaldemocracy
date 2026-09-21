@@ -1,0 +1,54 @@
+{
+  "current_offices": 10666,
+  "historical_offices": 8168,
+  "total_offices": 18834,
+  "current_municipalities": 308,
+  "current_freguesias": 3258,
+  "current_plenary_freguesias": 37,
+  "events": 19820,
+  "results": 66283,
+  "proceedings": 2,
+  "sources": 895,
+  "tier_histogram_all": {
+    "municipal": 927,
+    "other": 17903,
+    "national": 2,
+    "regional": 2
+  },
+  "tier_histogram_current": {
+    "municipal": 924,
+    "other": 9738,
+    "national": 2,
+    "regional": 2
+  },
+  "office_types_current": {
+    "municipal_assembly": 308,
+    "municipal_executive_body": 308,
+    "municipal_president": 308,
+    "parish_assembly": 3221,
+    "parish_executive_body": 3258,
+    "parish_president": 3258,
+    "parliament": 1,
+    "national_president": 1,
+    "european_parliament_delegation": 1,
+    "regional_parliament": 2
+  },
+  "office_types_historical": {
+    "parish_assembly": 2649,
+    "parish_executive_body": 2758,
+    "parish_president": 2758,
+    "municipal_assembly": 1,
+    "municipal_executive_body": 1,
+    "municipal_president": 1
+  },
+  "current_president_of_camara_mandates": 308,
+  "current_president_of_junta_mandates": 3258,
+  "current_standalone_popular_national_executives": 1,
+  "current_separate_direct_municipal_mayoral_ballots": 0,
+  "typed_local_events": 19653,
+  "published_aggregate_conflicts": 3,
+  "result_evidence_disputed": 29,
+  "result_seats_missing": 653,
+  "result_seats_zero": 18102,
+  "excluded_metadata_only_return_rows": 8
+}

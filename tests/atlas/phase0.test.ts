@@ -61,6 +61,12 @@ function sha256(relative: string): string {
     .digest("hex");
 }
 
+function sha256Gunzip(relative: string): string {
+  return createHash("sha256")
+    .update(gunzipSync(readFileSync(path.join(repoRoot, relative))))
+    .digest("hex");
+}
+
 function registerIdsFromTable(relative: string): string[] {
   const table = readJson<WorkbookTable>(relative);
   return zipTable(table).map((row) => String(row["Office ID"]));
@@ -2194,6 +2200,207 @@ describe("Phase 0 tier-classification drafts", () => {
     });
     expect(croatia.classifications.find((row) => row.office_id === "HR-Z21-E")).toMatchObject({
       tier: "regional",
+      human_review_required: true,
+    });
+  });
+
+  it("keeps Portugal Prompt AD 10666 current / 8168 historical accepted with named holds", () => {
+    const portugal = readJson<
+      TierFile & {
+        production_accepted?: boolean;
+        approval?: {
+          by?: string;
+          accepted_by?: string;
+          date?: string;
+          timezone?: string;
+          notes?: string;
+        };
+        predecessor_draft_sha256?: string;
+        justin_approval?: {
+          accepted?: boolean;
+          current_offices?: number;
+          historical_offices?: number;
+          events?: number;
+          results?: number;
+          current_municipalities?: number;
+          current_freguesias?: number;
+          current_plenary_freguesias?: number;
+          draft_tiers?: Record<string, number>;
+          scope?: string;
+          holds?: string[];
+          hold_notes?: Record<string, string>;
+        };
+        notes?: Array<string | { original_token?: string; status?: string }>;
+        source_register: { path?: string; input_path?: string; sha256: string; bytes?: number };
+      }
+    >("schemas/atlas/tiers/portugal.json");
+    expect(portugal.status).toBe("approved");
+    expect(portugal.production_accepted).toBe(true);
+    expect(portugal.country_slug).toBe("portugal");
+    expect(portugal.approval).toMatchObject({
+      by: "product_owner",
+      accepted_by: "Justin",
+      date: "2026-09-21",
+      timezone: "America/Edmonton",
+    });
+    expect(portugal.approval?.notes).toMatch(/10666 current \+ 8168 historical/i);
+    expect(portugal.approval?.notes).toMatch(/named holds/i);
+    expect(portugal.approval?.notes).toMatch(/CURRENT-REGISTER-DATE/);
+    expect(portugal.approval?.notes).toMatch(/INDIRECT-AND-LIST-HEAD/);
+    expect(portugal.approval?.notes).toMatch(/PLENARY-37/);
+    expect(portugal.approval?.notes).toMatch(/PARISH-REFORM-2013-2025/);
+    expect(portugal.approval?.notes).toMatch(/PARISH-TIER/);
+    expect(portugal.approval?.notes).toMatch(/LEGACY-CODE-CONFLICTS/);
+    expect(portugal.approval?.notes).toMatch(/DATES-REPEATS-SPECIALS/);
+    expect(portugal.approval?.notes).toMatch(/PUBLISHED-AGGREGATE-CONFLICTS/);
+    expect(portugal.approval?.notes).toMatch(/PR-2026-RUNOFF/);
+    expect(portugal.approval?.notes).toMatch(/PR-2016-MARGARITA/);
+    expect(portugal.approval?.notes).toMatch(/AZORES-COMPENSATION/);
+    expect(portugal.approval?.notes).toMatch(/MADEIRA-CORRECTION/);
+    expect(portugal.approval?.notes).toMatch(/AR-EUROPE-2022/);
+    expect(portugal.approval?.notes).toMatch(/EP-DETAIL/);
+    expect(portugal.approval?.notes).toMatch(/PRE2009-AND-CANDIDATES/);
+    expect(portugal.approval?.notes).toMatch(/MAI-FEED-HOLES/);
+    expect(portugal.approval?.notes).toMatch(/CERTIFICATION-AND-MARGINS/);
+    expect(portugal.approval?.notes).toMatch(/unresolved aliases/i);
+    expect(portugal.approval?.notes).toMatch(/do not reclassify/i);
+    expect(portugal.predecessor_draft_sha256).toBe(
+      "5155830f9141ebe7607d51e888e804f63fe2305426d20998ff6e16917da5d651",
+    );
+    expect(sha256("schemas/atlas/tiers/portugal.json")).toBe(
+      "47f4fac833e61bad953abfb72f6e3253a1f4c2d7f35938b73de57f7b07724caa",
+    );
+    expect(portugal.classifications).toHaveLength(18834);
+    expect(portugal.counts_by_proposed_tier).toEqual({
+      municipal: 927,
+      other: 17903,
+      national: 2,
+      regional: 2,
+    });
+    expect(portugal.justin_approval).toMatchObject({
+      accepted: true,
+      current_offices: 10666,
+      historical_offices: 8168,
+      events: 19820,
+      results: 66283,
+      current_municipalities: 308,
+      current_freguesias: 3258,
+      current_plenary_freguesias: 37,
+      scope: "all_draft_offices_with_named_holds",
+      holds: [
+        "CURRENT-REGISTER-DATE",
+        "INDIRECT-AND-LIST-HEAD",
+        "PLENARY-37",
+        "PARISH-REFORM-2013-2025",
+        "PARISH-TIER",
+        "LEGACY-CODE-CONFLICTS",
+        "DATES-REPEATS-SPECIALS",
+        "PUBLISHED-AGGREGATE-CONFLICTS",
+        "PR-2026-RUNOFF",
+        "PR-2016-MARGARITA",
+        "AZORES-COMPENSATION",
+        "MADEIRA-CORRECTION",
+        "AR-EUROPE-2022",
+        "EP-DETAIL",
+        "PRE2009-AND-CANDIDATES",
+        "MAI-FEED-HOLES",
+        "CERTIFICATION-AND-MARGINS",
+      ],
+      hold_notes: {
+        "PARISH-REFORM-2013-2025": "8168 historical = unresolved aliases, not proven abolitions",
+        "PARISH-TIER": "17903 other — keep as drafted other; do not reclassify",
+      },
+    });
+    expect(portugal.justin_approval?.holds).toHaveLength(17);
+    expect(portugal.classifications.filter((row) => row.human_review_required === true)).toHaveLength(18214);
+    expect(portugal.classifications.filter((row) => row.tier === "municipal")).toHaveLength(927);
+    expect(portugal.classifications.filter((row) => row.tier === "regional")).toHaveLength(2);
+    expect(portugal.classifications.filter((row) => row.tier === "national")).toHaveLength(2);
+    expect(portugal.classifications.filter((row) => row.tier === "other")).toHaveLength(17903);
+    const register = readJsonGz<Array<{ office_id: string; office_status?: string; office_type?: string }>>(
+      "data/research/portugal/office-register.json.gz",
+    );
+    expect(register.filter((row) => row.office_status === "current")).toHaveLength(10666);
+    expect(register.filter((row) => row.office_status === "historical")).toHaveLength(8168);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "municipal_assembly"),
+    ).toHaveLength(308);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "municipal_executive_body"),
+    ).toHaveLength(308);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "municipal_president"),
+    ).toHaveLength(308);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "parish_assembly"),
+    ).toHaveLength(3221);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "parish_executive_body"),
+    ).toHaveLength(3258);
+    expect(
+      register.filter((row) => row.office_status === "current" && row.office_type === "parish_president"),
+    ).toHaveLength(3258);
+    expect(readJsonGz<unknown[]>("data/research/portugal/events.json.gz")).toHaveLength(19820);
+    expect(countJsonlGzLines("data/research/portugal/results.jsonl.gz")).toBe(66283);
+    expect(readJson<unknown[]>("data/research/portugal/proceedings.json")).toHaveLength(2);
+    expect(existsSync(path.join(repoRoot, "data/research/portugal/events.json"))).toBe(false);
+    expect(existsSync(path.join(repoRoot, "data/research/portugal/office-register.json"))).toBe(false);
+    expect(existsSync(path.join(repoRoot, "data/research/portugal/results.json"))).toBe(false);
+    expect(existsSync(path.join(repoRoot, "data/research/portugal/sources"))).toBe(false);
+    expect(existsSync(path.join(repoRoot, "docs/phase1/portugal/Portugal_Identity_Vectors.json"))).toBe(false);
+    const gaps = readJson<Array<{ original_token?: string; status?: string }>>(
+      "data/research/portugal/research-gaps.json",
+    );
+    expect(gaps.map((row) => row.original_token)).toEqual([
+      "CURRENT-REGISTER-DATE",
+      "INDIRECT-AND-LIST-HEAD",
+      "PLENARY-37",
+      "PARISH-REFORM-2013-2025",
+      "PARISH-TIER",
+      "LEGACY-CODE-CONFLICTS",
+      "DATES-REPEATS-SPECIALS",
+      "PUBLISHED-AGGREGATE-CONFLICTS",
+      "PR-2026-RUNOFF",
+      "PR-2016-MARGARITA",
+      "AZORES-COMPENSATION",
+      "MADEIRA-CORRECTION",
+      "AR-EUROPE-2022",
+      "EP-DETAIL",
+      "PRE2009-AND-CANDIDATES",
+      "MAI-FEED-HOLES",
+      "CERTIFICATION-AND-MARGINS",
+    ]);
+    expect(gaps.every((row) => row.status === "open")).toBe(true);
+    expectExactIds(
+      portugal,
+      register.map((row) => row.office_id),
+    );
+    expect(portugal.source_register.sha256).toBe(
+      "62720e750e2ac0c54ff9654b0a5cedca0b98ab4e37c35fa2aca60b0db7925dd6",
+    );
+    expect(portugal.source_register.sha256).toBe(sha256Gunzip("data/research/portugal/office-register.json.gz"));
+    expect(portugal.source_register.input_path).toBe("data/research/portugal/office-register.json");
+    expect(portugal.classifications.find((row) => row.office_id === "PT-PR")).toMatchObject({
+      tier: "national",
+    });
+    expect(portugal.classifications.find((row) => row.office_id === "PT-AR")).toMatchObject({
+      tier: "national",
+    });
+    expect(portugal.classifications.find((row) => row.office_id === "PT-EP")).toMatchObject({
+      tier: "other",
+      human_review_required: true,
+    });
+    expect(portugal.classifications.find((row) => row.office_id === "PT-AC-AL")).toMatchObject({
+      tier: "regional",
+    });
+    expect(portugal.classifications.find((row) => row.office_id === "PT-MA-AL")).toMatchObject({
+      tier: "regional",
+    });
+    expect(portugal.classifications.find((row) => row.office_id === "PT-M0101-AM")).toMatchObject({
+      tier: "municipal",
+    });
+    expect(portugal.classifications.find((row) => row.office_id === "PT-F010103-AF")).toMatchObject({
+      tier: "other",
       human_review_required: true,
     });
   });

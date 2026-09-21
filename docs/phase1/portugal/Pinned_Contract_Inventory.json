@@ -1,0 +1,36 @@
+{
+  "pinned_main": "785bae49b4b3ac6bc2ef105f33cc826caa948caf",
+  "contracts": [
+    {
+      "path": "docs/atlas-plan.md",
+      "git_blob_sha": "56ad1e75ae9ad5c1a31c52baeb58eb396ca5fd89",
+      "sha256": "94f83c184eb99f8971d4c2845e2f101a403ead0677d67a3ee31c348f75f80e78",
+      "bytes": 67191
+    },
+    {
+      "path": "lib/atlas/identity.ts",
+      "git_blob_sha": "197328049f153f96c1147afe962d6c9f20404187",
+      "sha256": "8be58bfe59a32110cfe6635c7d51ca73cd469b984179a7ab6083522698626444",
+      "bytes": 7941
+    },
+    {
+      "path": "scripts/import/normalize.ts",
+      "git_blob_sha": "6eb59a159eebf134a8527435b9890c80669ea7f4",
+      "sha256": "54450ad61e54d14aa142a69a205ebd42d2b4fac8165da91e55a62f298ba3f06a",
+      "bytes": 22236
+    },
+    {
+      "path": "schemas/atlas/migrations/0001_atlas_attempt_log.sql",
+      "git_blob_sha": "74c160dd4aa293ed0ce576c2a23a9e8fd175c02d",
+      "sha256": "e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1",
+      "bytes": 4226
+    },
+    {
+      "path": "schemas/atlas/migrations/0002_atlas_master.sql",
+      "git_blob_sha": "993d6cc69161e6ca294f10af6f8dab250798de59",
+      "sha256": "1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da",
+      "bytes": 35131
+    }
+  ],
+  "repo_changes": 0
+}

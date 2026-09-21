@@ -1,0 +1,1916 @@
+[
+  {
+    "example": 1,
+    "title": "Águeda assembly, Câmara and president are distinct mandates; one CM ballot",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/0"
+        },
+        "office_id": "PT-M0101-AM",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025_al_mandatos_cm_am.xlsx",
+            "sha256": "33f3b44a504ed3d7f99082ee186b242389d6325f9e5bf07e08ba056ed73eeb50",
+            "locator": {
+              "sheet": "Mandatos",
+              "row": 4,
+              "columns": "B:H"
+            },
+            "source_id": "portugal--source-c3c84ba355e69985787bf90a"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "42"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          null,
+          "Aveiro",
+          "0101",
+          "Águeda",
+          15,
+          41561,
+          7,
+          21
+        ]
+      },
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/1"
+        },
+        "office_id": "PT-M0101-CM",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025_al_mandatos_cm_am.xlsx",
+            "sha256": "33f3b44a504ed3d7f99082ee186b242389d6325f9e5bf07e08ba056ed73eeb50",
+            "locator": {
+              "sheet": "Mandatos",
+              "row": 4,
+              "columns": "B:H"
+            },
+            "source_id": "portugal--source-c3c84ba355e69985787bf90a"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "56–57"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          null,
+          "Aveiro",
+          "0101",
+          "Águeda",
+          15,
+          41561,
+          7,
+          21
+        ]
+      },
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/2"
+        },
+        "office_id": "PT-M0101-PCM",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025_al_mandatos_cm_am.xlsx",
+            "sha256": "33f3b44a504ed3d7f99082ee186b242389d6325f9e5bf07e08ba056ed73eeb50",
+            "locator": {
+              "sheet": "Mandatos",
+              "row": 4,
+              "columns": "B:H"
+            },
+            "source_id": "portugal--source-c3c84ba355e69985787bf90a"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "56–57"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          null,
+          "Aveiro",
+          "0101",
+          "Águeda",
+          15,
+          41561,
+          7,
+          21
+        ]
+      }
+    ],
+    "expected_atlas_shape": {
+      "office_ids": [
+        "PT-M0101-AM",
+        "PT-M0101-CM",
+        "PT-M0101-PCM"
+      ],
+      "office_tier_classification.tier": "municipal",
+      "president_raw_underlying_ballot": "PT-M0101-CM",
+      "president_independent_events": 0
+    },
+    "validation_assertion": "All three sourced mandates retained; never copy CM returns onto PCM.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 2,
+    "title": "Aguada de Cima parish ballot and linked executive mandates",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/924"
+        },
+        "office_id": "PT-F010103-AF",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025_al_mandatos_af.xlsx",
+            "sha256": "924ed245d4cbe12d0fd53f490975cbc19dfa48163f4d91e46c9cc2c258130ed9",
+            "locator": {
+              "sheet": "AF_Mandatos",
+              "row": 4,
+              "columns": "B:H"
+            },
+            "source_id": "portugal--source-e48981dfb2bc13fb8de1a857"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "4,21"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          null,
+          "Aveiro",
+          "Águeda",
+          "010103",
+          "Aguada de Cima",
+          3599,
+          9,
+          null,
+          "010103",
+          "Aveiro",
+          "Águeda",
+          "Aguada de Cima",
+          "OK",
+          "OK"
+        ]
+      },
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/925"
+        },
+        "office_id": "PT-F010103-JF",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025_al_mandatos_af.xlsx",
+            "sha256": "924ed245d4cbe12d0fd53f490975cbc19dfa48163f4d91e46c9cc2c258130ed9",
+            "locator": {
+              "sheet": "AF_Mandatos",
+              "row": 4,
+              "columns": "B:H"
+            },
+            "source_id": "portugal--source-e48981dfb2bc13fb8de1a857"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "23–24"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          null,
+          "Aveiro",
+          "Águeda",
+          "010103",
+          "Aguada de Cima",
+          3599,
+          9,
+          null,
+          "010103",
+          "Aveiro",
+          "Águeda",
+          "Aguada de Cima",
+          "OK",
+          "OK"
+        ]
+      },
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/926"
+        },
+        "office_id": "PT-F010103-PJF",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025_al_mandatos_af.xlsx",
+            "sha256": "924ed245d4cbe12d0fd53f490975cbc19dfa48163f4d91e46c9cc2c258130ed9",
+            "locator": {
+              "sheet": "AF_Mandatos",
+              "row": 4,
+              "columns": "B:H"
+            },
+            "source_id": "portugal--source-e48981dfb2bc13fb8de1a857"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "24"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          null,
+          "Aveiro",
+          "Águeda",
+          "010103",
+          "Aguada de Cima",
+          3599,
+          9,
+          null,
+          "010103",
+          "Aveiro",
+          "Águeda",
+          "Aguada de Cima",
+          "OK",
+          "OK"
+        ]
+      }
+    ],
+    "expected_atlas_shape": {
+      "office_ids": [
+        "PT-F010103-AF",
+        "PT-F010103-JF",
+        "PT-F010103-PJF"
+      ],
+      "tier": "other",
+      "executive_event_policy": "AF results only; no invented separate popular junta/president contest"
+    },
+    "validation_assertion": "Tier is a draft submunicipal category. Vogais selection is indirect; president is list-head mechanism.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 3,
+    "title": "Plenary parish has no zero-seat AF",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/2937"
+        },
+        "office_id": "PT-F040249-JF",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025_al_mandatos_af.xlsx",
+            "sha256": "924ed245d4cbe12d0fd53f490975cbc19dfa48163f4d91e46c9cc2c258130ed9",
+            "locator": {
+              "sheet": "AF_Mandatos",
+              "row": 675,
+              "columns": "B:H"
+            },
+            "source_id": "portugal--source-e48981dfb2bc13fb8de1a857"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "23–24"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          null,
+          "Bragança",
+          "Bragança",
+          "040249",
+          "Zoio",
+          140,
+          0,
+          "Plenário (1)",
+          "040608",
+          "Bragança",
+          "Miranda do Douro",
+          "Miranda do Douro",
+          "ERRO",
+          "ERRO"
+        ]
+      }
+    ],
+    "expected_atlas_shape": {
+      "office_id": "PT-F040249-JF",
+      "excluded_current_AF_id": "PT-F040249-AF",
+      "current_AF_row_count": 0,
+      "JF/PJF": "retained",
+      "result_policy": "No plenary votes invented without minutes"
+    },
+    "validation_assertion": "Source mandate0 is structural non-applicability, not zero elected seats.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 4,
+    "title": "Alphanumeric parish identifier preserved",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/1902"
+        },
+        "office_id": "PT-F0302FA-AF",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025_al_mandatos_af.xlsx",
+            "sha256": "924ed245d4cbe12d0fd53f490975cbc19dfa48163f4d91e46c9cc2c258130ed9",
+            "locator": {
+              "sheet": "AF_Mandatos",
+              "row": 330,
+              "columns": "B:H"
+            },
+            "source_id": "portugal--source-e48981dfb2bc13fb8de1a857"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "4,21"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          null,
+          "Braga",
+          "Barcelos",
+          "0302FA",
+          "União das freguesias de Milhazes, Vilar de Figos e Faria",
+          1823,
+          9,
+          null,
+          "030372",
+          "Braga",
+          "Braga",
+          "União das freguesias de Guisande e Oliveira (São Pedro)",
+          "ERRO",
+          "ERRO"
+        ]
+      }
+    ],
+    "expected_atlas_shape": {
+      "office_id": "PT-F0302FA-AF",
+      "geography_id": "PT-F0302FA",
+      "id_namespace": "cdd-observatory-v1"
+    },
+    "validation_assertion": "No integer conversion of sourceDTMNFR; leading0 and letters survive.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 5,
+    "title": "Açores and Madeira are two regional legislatures",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/18832"
+        },
+        "office_id": "PT-AC-AL",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx",
+            "sha256": "d29d427a75404f65863c17054775a37c5bdad0828c68c9a53cd58c5bf05bc636",
+            "locator": {
+              "article": "231"
+            },
+            "source_id": "portugal--source-63d75ff1ac26ce411f01e81d"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2024_alraa/docs_geral/2024_alraa_mapa_oficial_resultados.pdf",
+            "sha256": "2aa8162a88ba484a316769a1a54782e6a9b8ac168ff185be9df90ba0c14cb826",
+            "locator": {
+              "table": "Mapa oficial / Total column"
+            },
+            "source_id": "portugal--source-9c5ee08c90b067b817971e66"
+          }
+        ],
+        "raw": null
+      },
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/18833"
+        },
+        "office_id": "PT-MA-AL",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx",
+            "sha256": "d29d427a75404f65863c17054775a37c5bdad0828c68c9a53cd58c5bf05bc636",
+            "locator": {
+              "article": "231"
+            },
+            "source_id": "portugal--source-63d75ff1ac26ce411f01e81d"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_alram/docs_geral/2025_alram_mapa_oficial_dre.pdf",
+            "sha256": "d837ab5ebd0084aaaa7a6b0cd74d0ab41318e51949b9e239415447e744d0e336",
+            "locator": {
+              "pdf_page": 1,
+              "table": "official result map"
+            },
+            "source_id": "portugal--source-d64a110c37f7800748dc7e5f"
+          }
+        ],
+        "raw": null
+      }
+    ],
+    "expected_atlas_shape": {
+      "office_ids": [
+        "PT-AC-AL",
+        "PT-MA-AL"
+      ],
+      "tier": "regional",
+      "direct_regional_president_offices": 0
+    },
+    "validation_assertion": "Source constitutional mechanism supplies no popular regional-government-president office; no calendar-derived tier.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 6,
+    "title": "Presidential two rounds, one cycle",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/events.json",
+        "derived_locator": {
+          "json_pointer": "/19810"
+        },
+        "office_id": "PT-PR",
+        "history_key": "PT-PR::PR:2026",
+        "event_id": "event-0df4c7f008ffffe98f152f92",
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2026_pr/docs_geral/2026_pr_1-sufragio_mapa_oficial_dr.pdf",
+            "sha256": "e042e8fe100edf7619722803380c1d294aaf732a316df0df86ed249054b196b8",
+            "locator": {
+              "pdf_page": 1,
+              "table": "official result map"
+            },
+            "source_id": "portugal--source-16cb12dfea337e398c5b65d0"
+          }
+        ],
+        "raw": {
+          "cycle": "presidential",
+          "rounds": [
+            {
+              "round": 1,
+              "date": "2026-01-18",
+              "source": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2026_pr/docs_geral/2026_pr_1-sufragio_mapa_oficial_dr.pdf"
+            },
+            {
+              "round": 2,
+              "date": "2026-02-08",
+              "source": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2026_pr/docs_geral/2026_pr_2-sufragio_mapa_oficial_dr.pdf"
+            }
+          ],
+          "hold": "PR-2026-RUNOFF-OMISSIONS: published official values retained; source discloses 5347 omitted candidate votes. No arithmetic repair."
+        }
+      },
+      {
+        "derived_path": "data/research/portugal/proceedings.json",
+        "derived_locator": {
+          "json_pointer": "/0"
+        },
+        "office_id": "PT-PR",
+        "history_key": "PT-PR::PR:2026",
+        "event_id": "event-0df4c7f008ffffe98f152f92",
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2026_pr/docs_geral/2026_pr_1-sufragio_mapa_oficial_dr.pdf",
+            "sha256": "e042e8fe100edf7619722803380c1d294aaf732a316df0df86ed249054b196b8",
+            "locator": {
+              "pdf_page": 1
+            },
+            "source_id": "portugal--source-16cb12dfea337e398c5b65d0"
+          }
+        ],
+        "raw": null
+      },
+      {
+        "derived_path": "data/research/portugal/proceedings.json",
+        "derived_locator": {
+          "json_pointer": "/1"
+        },
+        "office_id": "PT-PR",
+        "history_key": "PT-PR::PR:2026",
+        "event_id": "event-0df4c7f008ffffe98f152f92",
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2026_pr/docs_geral/2026_pr_2-sufragio_mapa_oficial_dr.pdf",
+            "sha256": "7db2906840fa00b2d223ab043080691c8fd88bce01643b74979fe21b3422a456",
+            "locator": {
+              "pdf_page": 1
+            },
+            "source_id": "portugal--source-43e8f633c1a37460b42457e4"
+          }
+        ],
+        "raw": null
+      }
+    ],
+    "expected_atlas_shape": {
+      "election_event_rows": 1,
+      "history_key": "PT-PR::PR:2026",
+      "proceeding_rows": 2,
+      "kinds": [
+        "first_round",
+        "runoff"
+      ],
+      "dates": [
+        "2026-01-18",
+        "2026-02-08"
+      ]
+    },
+    "validation_assertion": "Result FK includes the correct proceeding; first round stays retained.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 7,
+    "title": "Historic-only source-era office survives current roster absence",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/10661"
+        },
+        "office_id": "PT-F010121-H0365538da192-AF",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/retained-archive-members/2021al_mapa_oficial/mapa_1_resultados.xlsx",
+            "sha256": "3319274f72c24a10aefe7bd00b07c3775ef7b72e560ff3f78e49cfa01083f407",
+            "locator": {
+              "sheet": "mapa_I",
+              "row": 12,
+              "columns": "1:41"
+            },
+            "source_id": "portugal--source-d5850d7c570e574ba9d3e3fe",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/2021al_mapa_oficial.zip",
+            "archive_sha256": "6639d63fa74b8873de6926c97b3c50e92f42b7816ecf632802ddba4147a35708",
+            "archive_entry": "mapa_1_resultados.xlsx"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "21–24"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          10121,
+          "ÁGUEDA",
+          "UNIÃO DAS FREGUESIAS DE ÁGUEDA E BORRALHA",
+          "AF",
+          12068,
+          5752,
+          212,
+          127,
+          null,
+          111,
+          1039,
+          286,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1592,
+          null,
+          null,
+          null,
+          128,
+          2257,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "[PPD/PSD.MPT]",
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "derived_path": "data/research/portugal/events.json",
+        "derived_locator": {
+          "json_pointer": "/3843"
+        },
+        "office_id": "PT-F010121-H0365538da192-AF",
+        "history_key": "PT-F010121-H0365538da192-AF::AL:2021",
+        "event_id": "event-7fed0b913f0a05e1931ca2cd",
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/retained-archive-members/2021al_mapa_oficial/mapa_1_resultados.xlsx",
+            "sha256": "3319274f72c24a10aefe7bd00b07c3775ef7b72e560ff3f78e49cfa01083f407",
+            "locator": {
+              "sheet": "mapa_I",
+              "row": 12,
+              "columns": "1:41"
+            },
+            "source_id": "portugal--source-d5850d7c570e574ba9d3e3fe",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/2021al_mapa_oficial.zip",
+            "archive_sha256": "6639d63fa74b8873de6926c97b3c50e92f42b7816ecf632802ddba4147a35708",
+            "archive_entry": "mapa_1_resultados.xlsx"
+          }
+        ],
+        "raw": {
+          "source_values": [
+            10121,
+            "ÁGUEDA",
+            "UNIÃO DAS FREGUESIAS DE ÁGUEDA E BORRALHA",
+            "AF",
+            12068,
+            5752,
+            212,
+            127,
+            null,
+            111,
+            1039,
+            286,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1592,
+            null,
+            null,
+            null,
+            128,
+            2257,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "[PPD/PSD.MPT]",
+            null,
+            null,
+            null,
+            null
+          ],
+          "registered_electors": 12068,
+          "total_ballots": 5752,
+          "blank_votes": 212,
+          "null_votes": 127,
+          "general_date_source": "https://www.cne.pt/content/eleicoes-referendos"
+        }
+      }
+    ],
+    "expected_atlas_shape": {
+      "office_id": "PT-F010121-H0365538da192-AF",
+      "office_status": "historical",
+      "registry_qualified": 0,
+      "record_state": "active",
+      "successor_id": null
+    },
+    "validation_assertion": "Do not present unresolved alias as proven abolition; retain historical rows and source IDs.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 8,
+    "title": "Unknown/out-of-window next election never drops a current office",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/0"
+        },
+        "office_id": "PT-M0101-AM",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025_al_mandatos_cm_am.xlsx",
+            "sha256": "33f3b44a504ed3d7f99082ee186b242389d6325f9e5bf07e08ba056ed73eeb50",
+            "locator": {
+              "sheet": "Mandatos",
+              "row": 4,
+              "columns": "B:H"
+            },
+            "source_id": "portugal--source-c3c84ba355e69985787bf90a"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "42"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          null,
+          "Aveiro",
+          "0101",
+          "Águeda",
+          15,
+          41561,
+          7,
+          21
+        ]
+      }
+    ],
+    "expected_atlas_shape": {
+      "next_date_id": null,
+      "next_date_resolution": "unknown",
+      "office_retained": true,
+      "prospective_events_added": 0
+    },
+    "validation_assertion": "Alert-window query can returnempty while office remains. Ordinary cadence is not a called2029 date.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 9,
+    "title": "Explicit zero seats survives",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/results.jsonl.gz",
+        "derived_locator": {
+          "decoded_jsonl_line": 1
+        },
+        "office_id": "PT-M0101-CM",
+        "history_key": "PT-M0101-CM::AL:2025",
+        "event_id": "event-bc8608e3abfb20e1f0011324",
+        "result_row_id": "result-6c5434159e653d1db843d14b",
+        "source_evidence": [
+          {
+            "archive_entry": "2025al-mapa-oficial_retificado/mapa_1_resultados_retificado.xlsx",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025al-mapa-oficial_retificado.zip",
+            "archive_sha256": "61ef39fad03cdc488b4f2228e3c707e05e8e8a4401c4ed7d3b9a747eab728f97",
+            "input_path": "data/research/portugal/retained-archive-members/2025al-mapa-oficial_retificado/2025al-mapa-oficial_retificado/mapa_1_resultados_retificado.xlsx",
+            "locator": {
+              "column": 10,
+              "row": 6,
+              "sheet": "Folha1"
+            },
+            "sha256": "fd54cc1a1bb41e82c39921c616ba2e930678c722d7aa677619f00aa752efb43e",
+            "source_id": "portugal--source-099d027e52917e14e16002c4"
+          },
+          {
+            "archive_entry": "2025al-mapa-oficial_retificado/mapa_2_perc_mandatos_retificado.xlsx",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025al-mapa-oficial_retificado.zip",
+            "archive_sha256": "61ef39fad03cdc488b4f2228e3c707e05e8e8a4401c4ed7d3b9a747eab728f97",
+            "input_path": "data/research/portugal/retained-archive-members/2025al-mapa-oficial_retificado/2025al-mapa-oficial_retificado/mapa_2_perc_mandatos_retificado.xlsx",
+            "locator": {
+              "row": 7,
+              "seats_column": 8,
+              "share_column": 7,
+              "sheet": "Folha1"
+            },
+            "sha256": "49fee2e3ee1142a42e8a7dc80bc5e30fbc58e372a5daeec6fd83c7ae6ae3cfde",
+            "source_id": "portugal--source-099d027e52917e14e16002c4"
+          }
+        ],
+        "raw": {
+          "column_header": "B.E.",
+          "seats": 0,
+          "share": 0.76,
+          "votes": 175
+        }
+      }
+    ],
+    "expected_atlas_shape": {
+      "result_row_id": "result-6c5434159e653d1db843d14b",
+      "votes": 175,
+      "votes_status": "recorded",
+      "seats": 0,
+      "seats_status": "zero"
+    },
+    "validation_assertion": "0/zero cannot become missing. No winner inferred.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 10,
+    "title": "Missing seat cell remains unknown",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/results.jsonl.gz",
+        "derived_locator": {
+          "decoded_jsonl_line": 11442
+        },
+        "office_id": "PT-M1811-AM",
+        "history_key": "PT-M1811-AM::AL:2025",
+        "event_id": "event-743cfe575f4722c77a522537",
+        "result_row_id": "result-8563b95ea762c9a0d89033d9",
+        "source_evidence": [
+          {
+            "archive_entry": "2025al-mapa-oficial_retificado/mapa_1_resultados_retificado.xlsx",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025al-mapa-oficial_retificado.zip",
+            "archive_sha256": "61ef39fad03cdc488b4f2228e3c707e05e8e8a4401c4ed7d3b9a747eab728f97",
+            "input_path": "data/research/portugal/retained-archive-members/2025al-mapa-oficial_retificado/2025al-mapa-oficial_retificado/mapa_1_resultados_retificado.xlsx",
+            "locator": {
+              "column": 26,
+              "row": 3436,
+              "sheet": "Folha1"
+            },
+            "sha256": "fd54cc1a1bb41e82c39921c616ba2e930678c722d7aa677619f00aa752efb43e",
+            "source_id": "portugal--source-099d027e52917e14e16002c4"
+          },
+          {
+            "archive_entry": "2025al-mapa-oficial_retificado/mapa_2_perc_mandatos_retificado.xlsx",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025al-mapa-oficial_retificado.zip",
+            "archive_sha256": "61ef39fad03cdc488b4f2228e3c707e05e8e8a4401c4ed7d3b9a747eab728f97",
+            "input_path": "data/research/portugal/retained-archive-members/2025al-mapa-oficial_retificado/2025al-mapa-oficial_retificado/mapa_2_perc_mandatos_retificado.xlsx",
+            "locator": {
+              "row": 3437,
+              "seats_column": 40,
+              "share_column": 39,
+              "sheet": "Folha1"
+            },
+            "sha256": "49fee2e3ee1142a42e8a7dc80bc5e30fbc58e372a5daeec6fd83c7ae6ae3cfde",
+            "source_id": "portugal--source-099d027e52917e14e16002c4"
+          }
+        ],
+        "raw": {
+          "column_header": "VP",
+          "seats": null,
+          "share": null,
+          "votes": 2496
+        }
+      }
+    ],
+    "expected_atlas_shape": {
+      "result_row_id": "result-8563b95ea762c9a0d89033d9",
+      "votes": 2496,
+      "seats": null,
+      "seats_status": "unknown",
+      "share": null,
+      "share_status": "unknown"
+    },
+    "validation_assertion": "Blank/dash cannot become numericzero; source raw token retained.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 11,
+    "title": "Local date precision remains year only",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/events.json",
+        "derived_locator": {
+          "json_pointer": "/14921"
+        },
+        "office_id": "PT-M0101-CM",
+        "history_key": "PT-M0101-CM::AL:2009",
+        "event_id": "event-a6fc4b62724dfafead0b2a1a",
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/resultados_al2009.xls",
+            "sha256": "3fbd756257d3d814e68fdc790e888b219994df0076663da004b4219465d6b087",
+            "locator": {
+              "sheet": "Mapa_01",
+              "row": 5,
+              "columns": "1:25"
+            },
+            "source_id": "portugal--source-21d0694bc934cb8a203f0824"
+          }
+        ],
+        "raw": {
+          "source_values": [
+            10100.0,
+            "ÁGUEDA",
+            null,
+            "CM",
+            43898.0,
+            26741.0,
+            455.0,
+            249.0,
+            342.0,
+            1379.0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            105.0,
+            9133.0,
+            null,
+            14569.0,
+            null,
+            509.0,
+            null,
+            null,
+            null,
+            null
+          ],
+          "registered_electors": 43898.0,
+          "total_ballots": 26741.0,
+          "blank_votes": 455.0,
+          "null_votes": 249.0,
+          "general_date_source": "https://www.cne.pt/content/eleicoes-referendos"
+        }
+      }
+    ],
+    "expected_atlas_shape": {
+      "date_id": "date-18cab72f598d6100e6b2870f7a732b740171d8d32bfa5e09a8ace87c0227c92d",
+      "label": "2009",
+      "precision": "year",
+      "certainty": "called",
+      "year": 2009,
+      "month": null,
+      "day": null
+    },
+    "validation_assertion": "No general polling day copied onto unreviewed local repeat context.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 12,
+    "title": "Missing plenary/list return is unresolved evidence",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/unresolved-inputs.json",
+        "derived_locator": {
+          "json_pointer": "/0"
+        },
+        "office_id": "PT-F040249-JF",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/retained-archive-members/2025al-mapa-oficial_retificado/2025al-mapa-oficial_retificado/mapa_1_resultados_retificado.xlsx",
+            "sha256": "fd54cc1a1bb41e82c39921c616ba2e930678c722d7aa677619f00aa752efb43e",
+            "locator": {
+              "sheet": "Folha1",
+              "row": 778,
+              "columns": "1:41"
+            },
+            "source_id": "portugal--source-099d027e52917e14e16002c4",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025al-mapa-oficial_retificado.zip",
+            "archive_sha256": "61ef39fad03cdc488b4f2228e3c707e05e8e8a4401c4ed7d3b9a747eab728f97",
+            "archive_entry": "2025al-mapa-oficial_retificado/mapa_1_resultados_retificado.xlsx"
+          }
+        ],
+        "raw": [
+          "040249",
+          "BRAGANÇA",
+          "ZOIO",
+          "AF",
+          140,
+          "(P)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "expected_atlas_shape": {
+      "original_token": "LOCAL-2025-040249-AF-NO-RETURN",
+      "office_id": "PT-F040249-JF",
+      "completed_event_added": false,
+      "numeric_results_added": 0
+    },
+    "validation_assertion": "Unresolved input retains exact real source locator; no fabricated FK or zero.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 13,
+    "title": "Broken resolved source FK fails closed",
+    "kind": "future CI mutation, not research",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/results.jsonl.gz",
+        "derived_locator": {
+          "decoded_jsonl_line": 1
+        },
+        "office_id": "PT-M0101-CM",
+        "history_key": "PT-M0101-CM::AL:2025",
+        "event_id": "event-bc8608e3abfb20e1f0011324",
+        "result_row_id": "result-6c5434159e653d1db843d14b",
+        "source_evidence": [
+          {
+            "archive_entry": "2025al-mapa-oficial_retificado/mapa_1_resultados_retificado.xlsx",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025al-mapa-oficial_retificado.zip",
+            "archive_sha256": "61ef39fad03cdc488b4f2228e3c707e05e8e8a4401c4ed7d3b9a747eab728f97",
+            "input_path": "data/research/portugal/retained-archive-members/2025al-mapa-oficial_retificado/2025al-mapa-oficial_retificado/mapa_1_resultados_retificado.xlsx",
+            "locator": {
+              "column": 10,
+              "row": 6,
+              "sheet": "Folha1"
+            },
+            "sha256": "fd54cc1a1bb41e82c39921c616ba2e930678c722d7aa677619f00aa752efb43e",
+            "source_id": "portugal--source-099d027e52917e14e16002c4"
+          },
+          {
+            "archive_entry": "2025al-mapa-oficial_retificado/mapa_2_perc_mandatos_retificado.xlsx",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025al-mapa-oficial_retificado.zip",
+            "archive_sha256": "61ef39fad03cdc488b4f2228e3c707e05e8e8a4401c4ed7d3b9a747eab728f97",
+            "input_path": "data/research/portugal/retained-archive-members/2025al-mapa-oficial_retificado/2025al-mapa-oficial_retificado/mapa_2_perc_mandatos_retificado.xlsx",
+            "locator": {
+              "row": 7,
+              "seats_column": 8,
+              "share_column": 7,
+              "sheet": "Folha1"
+            },
+            "sha256": "49fee2e3ee1142a42e8a7dc80bc5e30fbc58e372a5daeec6fd83c7ae6ae3cfde",
+            "source_id": "portugal--source-099d027e52917e14e16002c4"
+          }
+        ],
+        "raw": {
+          "column_header": "B.E.",
+          "seats": 0,
+          "share": 0.76,
+          "votes": 175
+        }
+      }
+    ],
+    "expected_atlas_shape": {
+      "mutation": "replace existing result evidence source_id with TEST-ABSENT-SOURCE in isolated future staging",
+      "expected": "failed attempt; last good release still served",
+      "production_change": 0
+    },
+    "validation_assertion": "A missing resolved source cannot be relabelled unresolved to bypass integrity.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 14,
+    "title": "Published aggregate discrepancy is preserved",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/events.json",
+        "derived_locator": {
+          "json_pointer": "/12597"
+        },
+        "office_id": "PT-M0807-AM",
+        "history_key": "PT-M0807-AM::AL:2013",
+        "event_id": "event-d58b854095ca9df9208d6715",
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/retained-archive-members/al2013_mapaoficial_retif/al2013_mapaoficial_retif/Parte1_resultadosv7_retif.xls",
+            "sha256": "37c65295ed8c04cef3b44bb217e6ab8885f87d6a058c76b7412ab0caefc1a7fb",
+            "locator": {
+              "sheet": "Sheet1",
+              "row": 1391,
+              "columns": "2:29"
+            },
+            "source_id": "portugal--source-078e3d46d3eef4c710aaa038",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/al2013_mapaoficial_retif.zip",
+            "archive_sha256": "f8fdb95f8bbe44d793e302fdce8a68e29c5f200f5003dab832627175a26494ec",
+            "archive_entry": "al2013_mapaoficial_retif/Parte1_resultadosv7_retif.xls"
+          }
+        ],
+        "raw": {
+          "source_values": [
+            1.0,
+            80700.0,
+            "LAGOS",
+            "",
+            "AM",
+            23762.0,
+            11243.0,
+            660.0,
+            325.0,
+            515.0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            2395.0,
+            null,
+            null,
+            3617.0,
+            null,
+            1534.0,
+            626.0,
+            null,
+            1571.0,
+            210.0,
+            null,
+            "[CDS-PP.MPT],[PPM/PPV/PND]",
+            "[lcfcipl]"
+          ],
+          "registered_electors": 23762.0,
+          "total_ballots": 11243.0,
+          "blank_votes": 660.0,
+          "null_votes": 325.0,
+          "general_date_source": "https://www.cne.pt/content/eleicoes-referendos",
+          "hold": "PUBLISHED-VOTE-AGGREGATE-CONFLICT: exact published numbers retained; no repair/renormalization; acceptance required."
+        }
+      },
+      {
+        "derived_path": "data/research/portugal/results.jsonl.gz",
+        "derived_locator": {
+          "decoded_jsonl_line": 41519
+        },
+        "office_id": "PT-M0807-AM",
+        "history_key": "PT-M0807-AM::AL:2013",
+        "event_id": "event-d58b854095ca9df9208d6715",
+        "result_row_id": "result-e16274d9a828f7680aa046ed",
+        "source_evidence": [
+          {
+            "archive_entry": "al2013_mapaoficial_retif/Parte1_resultadosv7_retif.xls",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/al2013_mapaoficial_retif.zip",
+            "archive_sha256": "f8fdb95f8bbe44d793e302fdce8a68e29c5f200f5003dab832627175a26494ec",
+            "input_path": "data/research/portugal/retained-archive-members/al2013_mapaoficial_retif/al2013_mapaoficial_retif/Parte1_resultadosv7_retif.xls",
+            "locator": {
+              "column": 10,
+              "row": 1391,
+              "sheet": "Sheet1"
+            },
+            "sha256": "37c65295ed8c04cef3b44bb217e6ab8885f87d6a058c76b7412ab0caefc1a7fb",
+            "source_id": "portugal--source-078e3d46d3eef4c710aaa038"
+          },
+          {
+            "archive_entry": "al2013_mapaoficial_retif/Parte2_perc_mandatosv7_retif.xls",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/al2013_mapaoficial_retif.zip",
+            "archive_sha256": "f8fdb95f8bbe44d793e302fdce8a68e29c5f200f5003dab832627175a26494ec",
+            "input_path": "data/research/portugal/retained-archive-members/al2013_mapaoficial_retif/al2013_mapaoficial_retif/Parte2_perc_mandatosv7_retif.xls",
+            "locator": {
+              "row": 1391,
+              "seats_column": 7,
+              "share_column": 6,
+              "sheet": "Sheet1"
+            },
+            "sha256": "3fd66c292dc81357eacd3c1864448b07e95fcf20555bf138028b40b57f8e00c1",
+            "source_id": "portugal--source-078e3d46d3eef4c710aaa038"
+          }
+        ],
+        "raw": {
+          "column_header": "B.E.",
+          "seats": 1.0,
+          "share": 4.92,
+          "votes": 515.0
+        }
+      }
+    ],
+    "expected_atlas_shape": {
+      "diagnostic": {
+        "event_id": "event-d58b854095ca9df9208d6715",
+        "year": 2013,
+        "source_code": "080700",
+        "organ": "AM",
+        "sum_candidate_votes": 10468,
+        "valid_votes_derived_for_check_only": 10258,
+        "matches": false,
+        "source_result_count": 7,
+        "source_path": "data/research/portugal/retained-archive-members/al2013_mapaoficial_retif/al2013_mapaoficial_retif/Parte1_resultadosv7_retif.xls",
+        "row": 1391
+      },
+      "evidence_status": "disputed",
+      "replacement": null,
+      "numeric_claims": "originals retained"
+    },
+    "validation_assertion": "No invented candidate, denominator repair or rescaled percentage. Justin decision remains open.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 15,
+    "title": "2026 runoff omitted votes do not produce an invented correction",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/events.json",
+        "derived_locator": {
+          "json_pointer": "/19810"
+        },
+        "office_id": "PT-PR",
+        "history_key": "PT-PR::PR:2026",
+        "event_id": "event-0df4c7f008ffffe98f152f92",
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2026_pr/docs_geral/2026_pr_1-sufragio_mapa_oficial_dr.pdf",
+            "sha256": "e042e8fe100edf7619722803380c1d294aaf732a316df0df86ed249054b196b8",
+            "locator": {
+              "pdf_page": 1,
+              "table": "official result map"
+            },
+            "source_id": "portugal--source-16cb12dfea337e398c5b65d0"
+          }
+        ],
+        "raw": {
+          "cycle": "presidential",
+          "rounds": [
+            {
+              "round": 1,
+              "date": "2026-01-18",
+              "source": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2026_pr/docs_geral/2026_pr_1-sufragio_mapa_oficial_dr.pdf"
+            },
+            {
+              "round": 2,
+              "date": "2026-02-08",
+              "source": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2026_pr/docs_geral/2026_pr_2-sufragio_mapa_oficial_dr.pdf"
+            }
+          ],
+          "hold": "PR-2026-RUNOFF-OMISSIONS: published official values retained; source discloses 5347 omitted candidate votes. No arithmetic repair."
+        }
+      },
+      {
+        "derived_path": "data/research/portugal/results.jsonl.gz",
+        "derived_locator": {
+          "decoded_jsonl_line": 66164
+        },
+        "office_id": "PT-PR",
+        "history_key": "PT-PR::PR:2026",
+        "event_id": "event-0df4c7f008ffffe98f152f92",
+        "result_row_id": "result-4ff951d1fa88d076dcda948c",
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2026_pr/docs_geral/2026_pr_2-sufragio_mapa_oficial_dr.pdf",
+            "locator": {
+              "pdf_page": 1,
+              "table_row_label": "António José Martins Seguro",
+              "text_projection_line": 37
+            },
+            "sha256": "7db2906840fa00b2d223ab043080691c8fd88bce01643b74979fe21b3422a456",
+            "source_id": "portugal--source-43e8f633c1a37460b42457e4"
+          }
+        ],
+        "raw": {
+          "pdf_line": "António José Martins Seguro                                    3 502 613      -          -        66,84"
+        }
+      }
+    ],
+    "expected_atlas_shape": {
+      "votes": 3502613,
+      "share": 66.84,
+      "evidence_status": "disputed",
+      "replacement": null
+    },
+    "validation_assertion": "Retain publisher omission caveat and original vector; no allocation of5347 omitted votes.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 16,
+    "title": "Açores compensation quotient is not a second vote total",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/events.json",
+        "derived_locator": {
+          "json_pointer": "/19817"
+        },
+        "office_id": "PT-AC-AL",
+        "history_key": "PT-AC-AL::ALRAA:2024",
+        "event_id": "event-7209fc0c2d87843c301ba7a8",
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2024_alraa/docs_geral/2024_alraa_mapa_oficial_resultados.pdf",
+            "sha256": "2aa8162a88ba484a316769a1a54782e6a9b8ac168ff185be9df90ba0c14cb826",
+            "locator": {
+              "table": "Mapa oficial / Total column"
+            },
+            "source_id": "portugal--source-9c5ee08c90b067b817971e66"
+          }
+        ],
+        "raw": {
+          "hold": "Compensation quotients retained only; no duplicated constituent votes. MPT.ALIANÇA total is c.r.; 4 Santa Maria votes survive raw only, no invented regional total. Publisher correction changes elected-member name only."
+        }
+      },
+      {
+        "derived_path": "data/research/portugal/results.jsonl.gz",
+        "derived_locator": {
+          "decoded_jsonl_line": 66248
+        },
+        "office_id": "PT-AC-AL",
+        "history_key": "PT-AC-AL::ALRAA:2024",
+        "event_id": "event-7209fc0c2d87843c301ba7a8",
+        "result_row_id": "result-5a8ced8fc88a4b38f37db37b",
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2024_alraa/docs_geral/2024_alraa_mapa_oficial_resultados.pdf",
+            "locator": {
+              "column": "Total",
+              "pdf_page": 4,
+              "table_row_label": "CH",
+              "text_projection_lines": [
+                201,
+                202,
+                203
+              ]
+            },
+            "sha256": "2aa8162a88ba484a316769a1a54782e6a9b8ac168ff185be9df90ba0c14cb826",
+            "source_id": "portugal--source-9c5ee08c90b067b817971e66"
+          }
+        ],
+        "raw": {
+          "seats_line": "                                         MD       -         -        -       -         -      -       -        2         1         2            5",
+          "share_line": "                                         %/VVE* 0,67      4,41     8,08    4,20      4,56   6,73    3,84     12,17     8,40        -           9,51",
+          "supplied_total_token": "10627",
+          "vote_line": "         CH . . . . . . . . . . . .      Número   2       323      161     100       331    170     184      7107      2249     2656,75       10627"
+        }
+      }
+    ],
+    "expected_atlas_shape": {
+      "votes": 10627,
+      "share": 9.51,
+      "seats": 5,
+      "ballot_basis": "valid_votes",
+      "add_compensation_votes": false
+    },
+    "validation_assertion": "Source Totalcolumn only; compensation quotient remains rawPDF evidence.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 17,
+    "title": "Rejected candidature token is not a fabricated total",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/results.jsonl.gz",
+        "derived_locator": {
+          "decoded_jsonl_line": 66252
+        },
+        "office_id": "PT-AC-AL",
+        "history_key": "PT-AC-AL::ALRAA:2024",
+        "event_id": "event-7209fc0c2d87843c301ba7a8",
+        "result_row_id": "result-6d4d298a56f7a678b3b40dea",
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2024_alraa/docs_geral/2024_alraa_mapa_oficial_resultados.pdf",
+            "locator": {
+              "column": "Total",
+              "pdf_page": 4,
+              "table_row_label": "MPT.ALIANÇA",
+              "text_projection_lines": [
+                213,
+                214,
+                215
+              ]
+            },
+            "sha256": "2aa8162a88ba484a316769a1a54782e6a9b8ac168ff185be9df90ba0c14cb826",
+            "source_id": "portugal--source-9c5ee08c90b067b817971e66"
+          }
+        ],
+        "raw": {
+          "seats_line": "                                         MD        -       -         -       -        -       -      -          -        -          -           -",
+          "share_line": "                                         %/VVE*    -       -         -       -        -     0,16     -          -        -          -           -",
+          "supplied_total_token": "c.r.",
+          "vote_line": "         MPT.ALIANÇA . . .               Número   c.r.    c.r.      c.r.    c.r.     c.r.     4     c.r.       c.r.     c.r.       c.r.        c.r."
+        }
+      }
+    ],
+    "expected_atlas_shape": {
+      "votes": null,
+      "votes_status": "unknown",
+      "evidence_status": "disputed",
+      "raw_total_token": "c.r."
+    },
+    "validation_assertion": "Four SantaMaria votes in originalrow do not authorize inventing whole-region total4.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 18,
+    "title": "One parliament with22 constituency ballot contexts",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/events.json",
+        "derived_locator": {
+          "json_pointer": "/19785"
+        },
+        "office_id": "PT-AR",
+        "history_key": "PT-AR::AR:2025:C01",
+        "event_id": "event-f05989c783c153ff4c5e0a44",
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/retained-archive-members/2025_ar_mapa_resultados/2025_ar_mapa_resultados.xlsx",
+            "sha256": "d04829b253f3b2e2baa964e59deaff45cfac7ae9a4c96410253de9db1afbd3be",
+            "locator": {
+              "sheet": "mapa_resultados",
+              "column": 3,
+              "header_row": 2
+            },
+            "source_id": "portugal--source-161fa8fdaf4064037765566e",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_ar/docs_geral/2025_ar_mapa_resultados.zip",
+            "archive_sha256": "ae6d865df87289413783be298b23fbef719d6f198bc09dfde8c25c383526754b",
+            "archive_entry": "2025_ar_mapa_resultados.xlsx"
+          }
+        ],
+        "raw": {
+          "constituency_code": 1,
+          "constituency_name": "Aveiro",
+          "registered_electors": 642045,
+          "total_ballots": 414346,
+          "blank_votes": 6649,
+          "null_votes": 3771,
+          "valid_votes": 403926
+        }
+      }
+    ],
+    "expected_atlas_shape": {
+      "office_id": "PT-AR",
+      "history_key": "PT-AR::AR:2025:C01",
+      "cycle_constituency_event_count": 22,
+      "national_total_extra_event": 0
+    },
+    "validation_assertion": "Do not addTotalcolumn to constituentvotes or create22parliamentoffices.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 19,
+    "title": "Older EP votes retained without invented percentage",
+    "kind": "real source/documentary example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/results.jsonl.gz",
+        "derived_locator": {
+          "decoded_jsonl_line": 66200
+        },
+        "office_id": "PT-EP",
+        "history_key": "PT-EP::PE:2019",
+        "event_id": "event-3ea57b65953ab90ae15c1112",
+        "result_row_id": "result-7fb8795aeb6fa1e8f8b9aefa",
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/2019_pe_resultados_distrito.pdf",
+            "locator": {
+              "candidate_column_label": "PCTP/MRPP",
+              "candidate_column_ordinal": 1,
+              "pdf_page": 1,
+              "row_label": "Total PE2019",
+              "text_projection_line": 39
+            },
+            "sha256": "cd1bedbd252471dc12464d1b2484ca266b96705951ba447afff9a1c99ddb7b5f",
+            "source_id": "portugal--source-f0ef60d717aef9bf741b1b5d"
+          }
+        ],
+        "raw": {
+          "source_total_row": "              10757192    3307644     7449548     140644    88099     27211     15751 168015 1104694 61652 16135 34634 8412               725399    325093 29114 6612       204792   13508    49388    60446   228045"
+        }
+      }
+    ],
+    "expected_atlas_shape": {
+      "votes": 27211,
+      "share": null,
+      "share_status": "unknown",
+      "seats": null,
+      "seats_status": "unknown"
+    },
+    "validation_assertion": "Originalpercentage/mandate maps remain retained; no computed share.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 20,
+    "title": "Unchanged re-import has a fresh attempt and same release",
+    "kind": "future CI protocol example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/0"
+        },
+        "office_id": "PT-M0101-AM",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025_al_mandatos_cm_am.xlsx",
+            "sha256": "33f3b44a504ed3d7f99082ee186b242389d6325f9e5bf07e08ba056ed73eeb50",
+            "locator": {
+              "sheet": "Mandatos",
+              "row": 4,
+              "columns": "B:H"
+            },
+            "source_id": "portugal--source-c3c84ba355e69985787bf90a"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "42"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          null,
+          "Aveiro",
+          "0101",
+          "Águeda",
+          15,
+          41561,
+          7,
+          21
+        ]
+      }
+    ],
+    "expected_atlas_shape": {
+      "fingerprint_rule": "H(Portugal_Input_Inventory/hash_inputs)",
+      "same_effective_inputs": "same lineage release_id",
+      "new_attempt": "actual runtime UUID",
+      "no_attempt_in_hash": true
+    },
+    "validation_assertion": "Recompute exact descriptor fingerprint. Importer not run.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 21,
+    "title": "Corrected accepted source changes release, not established office ID",
+    "kind": "future CI protocol example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/0"
+        },
+        "office_id": "PT-M0101-AM",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025_al_mandatos_cm_am.xlsx",
+            "sha256": "33f3b44a504ed3d7f99082ee186b242389d6325f9e5bf07e08ba056ed73eeb50",
+            "locator": {
+              "sheet": "Mandatos",
+              "row": 4,
+              "columns": "B:H"
+            },
+            "source_id": "portugal--source-c3c84ba355e69985787bf90a"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "42"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          null,
+          "Aveiro",
+          "0101",
+          "Águeda",
+          15,
+          41561,
+          7,
+          21
+        ]
+      }
+    ],
+    "expected_atlas_shape": {
+      "office_id": "PT-M0101-AM",
+      "source_mutation": "new retained source version plus explicit accepted correction",
+      "fingerprint": "changes",
+      "original_claim": "retained",
+      "applied_changes": 0
+    },
+    "validation_assertion": "Do not edit frozen bytes or let source-name correction silently rekey accepted entities.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 22,
+    "title": "Incomplete refresh retains omitted office and history",
+    "kind": "future CI protocol example",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/10661"
+        },
+        "office_id": "PT-F010121-H0365538da192-AF",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/retained-archive-members/2021al_mapa_oficial/mapa_1_resultados.xlsx",
+            "sha256": "3319274f72c24a10aefe7bd00b07c3775ef7b72e560ff3f78e49cfa01083f407",
+            "locator": {
+              "sheet": "mapa_I",
+              "row": 12,
+              "columns": "1:41"
+            },
+            "source_id": "portugal--source-d5850d7c570e574ba9d3e3fe",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/2021al_mapa_oficial.zip",
+            "archive_sha256": "6639d63fa74b8873de6926c97b3c50e92f42b7816ecf632802ddba4147a35708",
+            "archive_entry": "mapa_1_resultados.xlsx"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "21–24"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          10121,
+          "ÁGUEDA",
+          "UNIÃO DAS FREGUESIAS DE ÁGUEDA E BORRALHA",
+          "AF",
+          12068,
+          5752,
+          212,
+          127,
+          null,
+          111,
+          1039,
+          286,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1592,
+          null,
+          null,
+          null,
+          128,
+          2257,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "[PPD/PSD.MPT]",
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "derived_path": "data/research/portugal/events.json",
+        "derived_locator": {
+          "json_pointer": "/3843"
+        },
+        "office_id": "PT-F010121-H0365538da192-AF",
+        "history_key": "PT-F010121-H0365538da192-AF::AL:2021",
+        "event_id": "event-7fed0b913f0a05e1931ca2cd",
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/retained-archive-members/2021al_mapa_oficial/mapa_1_resultados.xlsx",
+            "sha256": "3319274f72c24a10aefe7bd00b07c3775ef7b72e560ff3f78e49cfa01083f407",
+            "locator": {
+              "sheet": "mapa_I",
+              "row": 12,
+              "columns": "1:41"
+            },
+            "source_id": "portugal--source-d5850d7c570e574ba9d3e3fe",
+            "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/2021al_mapa_oficial.zip",
+            "archive_sha256": "6639d63fa74b8873de6926c97b3c50e92f42b7816ecf632802ddba4147a35708",
+            "archive_entry": "mapa_1_resultados.xlsx"
+          }
+        ],
+        "raw": {
+          "source_values": [
+            10121,
+            "ÁGUEDA",
+            "UNIÃO DAS FREGUESIAS DE ÁGUEDA E BORRALHA",
+            "AF",
+            12068,
+            5752,
+            212,
+            127,
+            null,
+            111,
+            1039,
+            286,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1592,
+            null,
+            null,
+            null,
+            128,
+            2257,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "[PPD/PSD.MPT]",
+            null,
+            null,
+            null,
+            null
+          ],
+          "registered_electors": 12068,
+          "total_ballots": 5752,
+          "blank_votes": 212,
+          "null_votes": 127,
+          "general_date_source": "https://www.cne.pt/content/eleicoes-referendos"
+        }
+      }
+    ],
+    "expected_atlas_shape": {
+      "omission": "office missing from incremental payload",
+      "expected": "carry old effective rows/evidence or fail closed",
+      "delete": false
+    },
+    "validation_assertion": "A sparse refresh is not a legal withdrawal.",
+    "importer_execution": "Not run"
+  },
+  {
+    "example": 23,
+    "title": "Fixture rejected; unrelated lineages unchanged",
+    "kind": "future CI mutation, not research",
+    "locators": [
+      {
+        "derived_path": "data/research/portugal/office-register.json",
+        "derived_locator": {
+          "json_pointer": "/0"
+        },
+        "office_id": "PT-M0101-AM",
+        "history_key": null,
+        "event_id": null,
+        "result_row_id": null,
+        "source_evidence": [
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025_al_mandatos_cm_am.xlsx",
+            "sha256": "33f3b44a504ed3d7f99082ee186b242389d6325f9e5bf07e08ba056ed73eeb50",
+            "locator": {
+              "sheet": "Mandatos",
+              "row": 4,
+              "columns": "B:H"
+            },
+            "source_id": "portugal--source-c3c84ba355e69985787bf90a"
+          },
+          {
+            "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/legis_lei_169_99_atualiz-2021.pdf",
+            "sha256": "31f530a7c31caad9a9e823796d9dec31277aff3afafdac55b5efdb2b335e680e",
+            "locator": {
+              "article": "42"
+            },
+            "source_id": "portugal--source-4854fff406581411835dc6e0"
+          }
+        ],
+        "raw": [
+          null,
+          "Aveiro",
+          "0101",
+          "Águeda",
+          15,
+          41561,
+          7,
+          21
+        ]
+      }
+    ],
+    "expected_atlas_shape": {
+      "fixture_mutation": "add synthetic source descriptor in isolated test",
+      "expected": "reject staging",
+      "unchanged_lineages": [
+        "latin-america-fe5e91689def",
+        "country-package-new-zealand",
+        "country-package-albania"
+      ],
+      "mexico_override_changed": false
+    },
+    "validation_assertion": "Fixture/source-allowlist gate plus publication-set equality; no importerCI performed.",
+    "importer_execution": "Not run"
+  }
+]
