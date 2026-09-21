@@ -1,6 +1,6 @@
 # Ireland Prompt AB research tables
 
-Sourced Prompt AB full-register research for the Republic of Ireland. 36 current + 86 historical office rows. Justin accepted the register on 2026-09-20 with named holds. Drafted geographic tiers are retained (118 municipal / 0 regional / 3 national / 1 other), including all 31 current local authority councils, Dáil, Seanad, presidency, EP delegation as `other`, and the directly elected Mayor of Limerick. This directory is **not** a country-package extract and is **not** loaded by `import:atlas`.
+Sourced Prompt AB full-register research for the Republic of Ireland. 36 current + 86 historical office rows. Justin accepted the register on 2026-09-20 with named holds. Drafted geographic tiers are retained (118 municipal / 0 regional / 3 national / 1 other), including all 31 current local authority councils, Dáil, Seanad, presidency, EP delegation as `other`, and the directly elected Mayor of Limerick. `ATLAS_IMPORT_SCOPE=ireland npm run import:atlas` loads these tables plus `schemas/atlas/tiers/ireland.json`. Slim-pack bulky primary-source bytes stay omitted; do not invent them.
 
 Named holds retained: IE-2014-REFORM; IE-LOCAL-2019-2024; IE-SEANAD-PANELS; IE-EP-RESULTS; IE-DAIL-ENCODING-AND-STV; IE-PRESIDENT-LATEST; IE-MAYOR-LIMIT; IE-NORTHERN-IRELAND-EXCLUSION; IE-REGIONAL-APPOINTMENTS. Northern Ireland is excluded. Do not invent merger successors, EP result vectors, recent presidential returns, or missing first-preference scalars.
 

@@ -3,7 +3,7 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
- * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -188,6 +188,27 @@ function main() {
       console.log(`switzerland_sources=${result.switzerland.counts.sources}`);
       console.log(`switzerland_unresolved=${result.switzerland.counts.unresolved_evidence}`);
       console.log(`switzerland_held_commune_executives=${result.switzerland.counts.held_commune_executive_gaps}`);
+    }
+    if (result.ireland) {
+      console.log("lineage=country-package-ireland");
+      console.log(`ireland_attempt_id=${result.ireland.attemptId}`);
+      console.log(`ireland_release_id=${result.ireland.releaseId}`);
+      console.log(`ireland_fingerprint_sha256=${result.ireland.fingerprint}`);
+      console.log(`ireland_reused_release=${result.ireland.reusedRelease ? "yes" : "no"}`);
+      console.log(`ireland_offices=${result.ireland.counts.offices}`);
+      console.log(`ireland_current=${result.ireland.counts.current_offices}`);
+      console.log(`ireland_historical=${result.ireland.counts.historical_offices}`);
+      console.log(`ireland_municipal=${result.ireland.counts.municipal_offices}`);
+      console.log(`ireland_regional=${result.ireland.counts.regional_offices}`);
+      console.log(`ireland_national=${result.ireland.counts.national_offices}`);
+      console.log(`ireland_other=${result.ireland.counts.other_offices}`);
+      console.log(`ireland_selected_histories=${result.ireland.counts.selected_histories}`);
+      console.log(`ireland_prospective_events=${result.ireland.counts.prospective_events}`);
+      console.log(`ireland_result_rows=${result.ireland.counts.result_rows}`);
+      console.log(`ireland_sources=${result.ireland.counts.sources}`);
+      console.log(`ireland_unresolved=${result.ireland.counts.unresolved_evidence}`);
+      console.log(`ireland_approved=${result.ireland.counts.approved_classifications}`);
+      console.log(`ireland_needs_review=${result.ireland.counts.needs_review_classifications}`);
     }
     if (result.denmark) {
       console.log("lineage=country-package-denmark");

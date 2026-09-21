@@ -1,6 +1,6 @@
 # Continuity import — approved packs
 
-Justin authorized full proceed on 2026-09-16. `npm run import:atlas` loads **Albania**, **Andorra**, **Alderney**, **Armenia**, **Austria**, **Belgium**, **Bosnia and Herzegovina**, **Bulgaria**, **Netherlands**, **Switzerland**, **Denmark**, **Sweden**, **Finland**, **Norway**, and **approved** LatAm/NZ packs into the Atlas SQLite master. It does **not** import the remaining residual-heavy draft packs, deploy to the VPS, or declare cutover.
+Justin authorized full proceed on 2026-09-16. `npm run import:atlas` loads **Albania**, **Andorra**, **Alderney**, **Armenia**, **Austria**, **Belgium**, **Bosnia and Herzegovina**, **Bulgaria**, **Netherlands**, **Switzerland**, **Denmark**, **Sweden**, **Finland**, **Norway**, **Ireland**, and **approved** LatAm/NZ packs into the Atlas SQLite master. It does **not** import the remaining residual-heavy draft packs, deploy to the VPS, or declare cutover.
 
 ## How to run
 
@@ -17,7 +17,7 @@ Scopes:
 
 | `ATLAS_IMPORT_SCOPE` | What loads |
 | --- | --- |
-| `all` (default) | Albania, Andorra, Alderney, Armenia, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Netherlands, Switzerland, then approved LatAm, then New Zealand, then Denmark, then Sweden, then Finland, then Norway |
+| `all` (default) | Albania, Andorra, Alderney, Armenia, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Netherlands, Switzerland, then approved LatAm, then New Zealand, then Denmark, then Sweden, then Finland, then Norway, then Ireland |
 | `albania` | Frozen Albania package only |
 | `andorra` | Frozen Andorra package only (7 municipal / 0 regional) |
 | `alderney` | Frozen Alderney package only (2 other / 0 regional; conditional 2026 dates) |
@@ -29,6 +29,7 @@ Scopes:
 | `denmark` | Prompt X research pack only (**106 current + 240 historical**; 324 municipal / 20 regional / 1 national / 1 other) |
 | `sweden` | Prompt Y research pack only (**313 current + 7 historical**; 292 municipal / 25 regional / 1 national / 2 other) |
 | `finland` | Prompt Z research pack only (**333 current + 170 historical**; 478 municipal / 22 regional / 2 national / 1 other) |
+| `ireland` | Prompt AB research pack only (**36 current + 86 historical**; 118 municipal / 0 regional / 3 national / 1 other; nine named holds; Northern Ireland excluded) |
 | `netherlands` | Prompt T research pack only (432 current + 69 historical; 414 municipal / 12 regional / 3 national / 72 other) |
 | `norway` | Prompt AA research pack only (**389 current + 537 historical**; 876 municipal / 32 regional / 1 national / 17 other; named holds retained) |
 | `switzerland` | Prompt U research pack only (**2,805 current + 11 historical**; 2,402 municipal / 52 regional / 2 national / 360 other; 308 commune executives held) |
@@ -59,6 +60,7 @@ Approved continuity countries (14 packs):
 - Sweden is Prompt Y (`country-package-sweden`; **313 current + 7 historical**). 292 municipal / 25 regional / 1 national / 2 other. Named holds stay open (Gotland municipal, EP+Sameting other, 2026 preliminary locals, historic boundary/party/repeat notes, Färgelanda 1973). No popular kommunalråd / prime-minister / cabinet rows. Run with `ATLAS_IMPORT_SCOPE=sweden`. Do **not** use `SCOPE=all` on the VPS unless you intend a full re-import. See [Sweden_Import.md](../phase1/sweden/Sweden_Import.md).
 - Finland is Prompt Z (`country-package-finland`; **333 current + 170 historical**). 478 municipal / 22 regional / 2 national / 1 other. Named holds stay open (historic mergers, early Åland dates, wellbeing transition, EP detail, cycle legal detail, party categories, missing results). No popular appointed-manager / prime-minister / cabinet rows. Run with `ATLAS_IMPORT_SCOPE=finland`. Do **not** use `SCOPE=all` on the VPS unless you intend a full re-import. See [Finland_Import.md](../phase1/finland/Finland_Import.md).
 - Norway is Prompt AA (`country-package-norway`; **389 current + 537 historical**). 876 municipal / 32 regional / 1 national / 17 other. Named holds stay open: SAMI-2025-ZERO-VOTE-SEAT-98d, REFORM-2020-2024, OSLO-BOROUGH-HISTORY, LONGYEARBYEN-HISTORY, LEGAL-STATUS-REPEATS, COUNTY-AGGREGATES, SAMI-OLDER-HISTORY, MUNICIPAL-HISTORY-DEPTH, and PARTY-CATEGORIES. Oslo bystyre stays the municipal `NO-M0301-C` office; no separate Oslo fylkesting. No popular mayor / prime-minister / cabinet or EP rows. Run with `ATLAS_IMPORT_SCOPE=norway`. Do **not** use `SCOPE=all` on the VPS unless you intend a full re-import. See [Norway_Import.md](../phase1/norway/Norway_Import.md).
+- Ireland is Prompt AB (`country-package-ireland`; **36 current + 86 historical**). 118 municipal / 0 regional / 3 national / 1 other. Nine named holds stay open. Northern Ireland is excluded. No guessed merger successors, EP result vectors, later presidential returns, Taoiseach nominee rows, or council-selected mayor contests. Run with `ATLAS_IMPORT_SCOPE=ireland`. Do **not** use `SCOPE=all` on the VPS unless you intend a full re-import. See [Ireland_Import.md](../phase1/ireland/Ireland_Import.md).
 
 Mexico result rows that violate `percent_0_100` are **withheld** using the accepted override `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (share NULL / share_status unknown / evidence_status disputed). Original values stay in `raw_json`. Denominators are not invented.
 
@@ -74,7 +76,7 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 
 ## CI
 
-`tests/atlas/continuity-import.test.ts` covers the approved-pack gate, Albania-only import, and Albania+NZ/Andorra/Alderney/Armenia/Belgium/Bosnia serial publication. Heavier serial cases are split so no Vitest file exceeds the 60s worker RPC timeout: `tests/atlas/continuity-import-heavy.test.ts` (Austria, Bulgaria), `tests/atlas/continuity-import-switzerland.test.ts` (Netherlands, Switzerland), `tests/atlas/denmark-import.test.ts` (Albania+Denmark), `tests/atlas/sweden-import.test.ts` (Albania+Sweden), `tests/atlas/finland-import.test.ts` (Albania+Finland), `tests/atlas/norway-import.test.ts` (Albania+Norway), `tests/atlas/cli-sweden.test.ts` (Sweden CLI smoke), `tests/atlas/cli-finland.test.ts` (Finland CLI smoke), and `tests/atlas/cli-norway.test.ts` (Norway CLI smoke).
+`tests/atlas/continuity-import.test.ts` covers the approved-pack gate, Albania-only import, and Albania+NZ/Andorra/Alderney/Armenia/Belgium/Bosnia serial publication. Heavier serial cases are split so no Vitest file exceeds the 60s worker RPC timeout: `tests/atlas/continuity-import-heavy.test.ts` (Austria, Bulgaria), `tests/atlas/continuity-import-switzerland.test.ts` (Netherlands, Switzerland), `tests/atlas/denmark-import.test.ts` (Albania+Denmark), `tests/atlas/sweden-import.test.ts` (Albania+Sweden), `tests/atlas/finland-import.test.ts` (Albania+Finland), `tests/atlas/norway-import.test.ts` (Albania+Norway), `tests/atlas/ireland-import.test.ts` (Albania+Ireland), `tests/atlas/cli-sweden.test.ts` (Sweden CLI smoke), `tests/atlas/cli-finland.test.ts` (Finland CLI smoke), `tests/atlas/cli-norway.test.ts` (Norway CLI smoke), and `tests/atlas/cli-ireland.test.ts` (Ireland CLI smoke).
 
 `npm run test:atlas-import` (wired in GitHub CI after `npm test`) builds a temp SQLite and asserts the full approved set:
 
@@ -92,6 +94,7 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 - Sweden 320 offices (313 current + 7 historical) / 292 municipal / 25 regional / 1 national / 2 other / 4,951 events / 40,991 results / 310 preliminary 2026 local vectors / 7 named holds
 - Finland 503 offices (333 current + 170 historical) / 478 municipal / 22 regional / 2 national / 1 other / 5,241 events / 37,471 results / 11 presidential proceedings / 7 named holds
 - Norway 926 offices (389 current + 537 historical) / 876 municipal / 32 regional / 1 national / 17 other / 10,777 events / 59,033 results / 9 named holds / 0 mayors / 0 EP / 0 Oslo fylkesting
+- Ireland 122 offices (36 current + 86 historical) / 118 municipal / 0 regional / 3 national / 1 other / 196 events / 7,254 results / 9 named holds / 0 Northern Ireland offices
 - 10,227 approved LatAm offices (Batch A+B + El Salvador + Argentina)
 - New Zealand 4 offices / 7 events / 36 historical results
 - draft country offices absent
@@ -99,7 +102,7 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 
 The full import is a dedicated CI script rather than a Vitest case so the ~3 minute LatAm projection does not trip Vitest's worker RPC timeout.
 
-The existing Albania CLI test uses `ATLAS_IMPORT_SCOPE=albania` so it stays a fast Albania-only proof. Andorra uses `ATLAS_IMPORT_SCOPE=andorra`. Alderney uses `ATLAS_IMPORT_SCOPE=alderney`. Armenia uses `ATLAS_IMPORT_SCOPE=armenia`. Austria uses `ATLAS_IMPORT_SCOPE=austria`. Belgium uses `ATLAS_IMPORT_SCOPE=belgium`. Bosnia uses `ATLAS_IMPORT_SCOPE=bosnia`. Bulgaria uses `ATLAS_IMPORT_SCOPE=bulgaria`. Netherlands uses `ATLAS_IMPORT_SCOPE=netherlands`. Switzerland uses `ATLAS_IMPORT_SCOPE=switzerland`. Denmark uses `ATLAS_IMPORT_SCOPE=denmark`. Sweden uses `ATLAS_IMPORT_SCOPE=sweden`. Finland uses `ATLAS_IMPORT_SCOPE=finland`. Norway uses `ATLAS_IMPORT_SCOPE=norway`:
+The existing Albania CLI test uses `ATLAS_IMPORT_SCOPE=albania` so it stays a fast Albania-only proof. Andorra uses `ATLAS_IMPORT_SCOPE=andorra`. Alderney uses `ATLAS_IMPORT_SCOPE=alderney`. Armenia uses `ATLAS_IMPORT_SCOPE=armenia`. Austria uses `ATLAS_IMPORT_SCOPE=austria`. Belgium uses `ATLAS_IMPORT_SCOPE=belgium`. Bosnia uses `ATLAS_IMPORT_SCOPE=bosnia`. Bulgaria uses `ATLAS_IMPORT_SCOPE=bulgaria`. Netherlands uses `ATLAS_IMPORT_SCOPE=netherlands`. Switzerland uses `ATLAS_IMPORT_SCOPE=switzerland`. Denmark uses `ATLAS_IMPORT_SCOPE=denmark`. Sweden uses `ATLAS_IMPORT_SCOPE=sweden`. Finland uses `ATLAS_IMPORT_SCOPE=finland`. Norway uses `ATLAS_IMPORT_SCOPE=norway`. Ireland uses `ATLAS_IMPORT_SCOPE=ireland`:
 
 ```bash
 export ATLAS_SQLITE_PATH=/tmp/atlas.sqlite
@@ -115,9 +118,10 @@ ATLAS_IMPORT_SCOPE=denmark npm run import:atlas
 ATLAS_IMPORT_SCOPE=sweden npm run import:atlas
 ATLAS_IMPORT_SCOPE=finland npm run import:atlas
 ATLAS_IMPORT_SCOPE=norway npm run import:atlas
+ATLAS_IMPORT_SCOPE=ireland npm run import:atlas
 ```
 
-Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of several minutes (Austria 16k results + Belgium S2 + LatAm projection + ~146k result rows + Bulgaria unpack + Switzerland). Denmark (25k results), Sweden (41k results), Finland (37k results), and Norway (59k results) run last on `all` so LatAm does not copy those lineages into staging. Use `albania`, `andorra`, `alderney`, `armenia`, `austria`, `belgium`, `bosnia`, `bulgaria`, `denmark`, `finland`, `netherlands`, `norway`, `sweden`, `switzerland`, or `nz` when you only need those lineages.
+Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of several minutes (Austria 16k results + Belgium S2 + LatAm projection + ~146k result rows + Bulgaria unpack + Switzerland). Denmark (25k results), Sweden (41k results), Finland (37k results), Norway (59k results), and Ireland (7k results) run last on `all` so LatAm does not copy those lineages into staging. Use `albania`, `andorra`, `alderney`, `armenia`, `austria`, `belgium`, `bosnia`, `bulgaria`, `denmark`, `finland`, `ireland`, `netherlands`, `norway`, `sweden`, `switzerland`, or `nz` when you only need those lineages.
 
 ## VPS — Bosnia scoped import only
 
@@ -232,6 +236,21 @@ ATLAS_IMPORT_SCOPE=norway npm run import:atlas
 Expected stdout includes `norway_offices=926`, `norway_current=389`, `norway_historical=537`, `norway_municipal=876`, `norway_regional=32`, `norway_national=1`, `norway_other=17`, `norway_selected_histories=10777`, `norway_prospective_events=0`, `norway_result_rows=59033`, `norway_sources=82`, `norway_unresolved=9`, `norway_approved=371`, `norway_needs_review=555`. Unrelated lineages already published in that SQLite stay selected. This importer does not SSH, copy files, or flip `/electiondatabase` redirects. See [Norway_Import.md](../phase1/norway/Norway_Import.md).
 
 Named holds stay open. Oslo bystyre stays municipal; no `NO-F03-C` office. No popular mayor / prime-minister / cabinet or EP rows. Mexico withhold-all-67 remains untouched.
+
+## VPS — Ireland scoped import only
+
+To add Ireland to an existing production Atlas SQLite, run a **scoped** import. Do **not** use `ATLAS_IMPORT_SCOPE=all` on the VPS for this lineage: `all` re-projects LatAm (~10k offices) and is not required to publish the accepted Prompt AB offices.
+
+```bash
+# On the VPS, against the live Atlas paths only when you mean to publish
+export ATLAS_SQLITE_PATH=/var/lib/cdd/atlas.sqlite
+export ATLAS_ATTEMPTS_SQLITE_PATH=/var/lib/cdd/atlas-attempts.sqlite
+ATLAS_IMPORT_SCOPE=ireland npm run import:atlas
+```
+
+Expected stdout includes `ireland_offices=122`, `ireland_current=36`, `ireland_historical=86`, `ireland_municipal=118`, `ireland_regional=0`, `ireland_national=3`, `ireland_other=1`, `ireland_selected_histories=196`, `ireland_prospective_events=0`, `ireland_result_rows=7254`, `ireland_sources=52`, `ireland_unresolved=9`, `ireland_approved=34`, `ireland_needs_review=88`. Unrelated lineages already published in that SQLite stay selected. This importer does not SSH, copy files, or flip `/electiondatabase` redirects. See [Ireland_Import.md](../phase1/ireland/Ireland_Import.md).
+
+Named holds IE-2014-REFORM, IE-LOCAL-2019-2024, IE-SEANAD-PANELS, IE-EP-RESULTS, IE-DAIL-ENCODING-AND-STV, IE-PRESIDENT-LATEST, IE-MAYOR-LIMIT, IE-NORTHERN-IRELAND-EXCLUSION, and IE-REGIONAL-APPOINTMENTS stay open. Northern Ireland stays excluded.
 
 ## `/atlas` UI
 
