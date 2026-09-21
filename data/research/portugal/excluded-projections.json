@@ -1,0 +1,61 @@
+[
+  {
+    "reason": "Blank Corvo AF projection has no entry in the current CNE parish mandate register; no parish office instantiated.",
+    "year": 2025,
+    "evidence": {
+      "input_path": "data/research/portugal/retained-archive-members/2025al-mapa-oficial_retificado/2025al-mapa-oficial_retificado/mapa_1_resultados_retificado.xlsx",
+      "sha256": "fd54cc1a1bb41e82c39921c616ba2e930678c722d7aa677619f00aa752efb43e",
+      "locator": {
+        "sheet": "Folha1",
+        "row": 3899
+      },
+      "source_id": "portugal--source-099d027e52917e14e16002c4",
+      "archive_input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2025_al/docs_geral/2025al-mapa-oficial_retificado.zip",
+      "archive_sha256": "61ef39fad03cdc488b4f2228e3c707e05e8e8a4401c4ed7d3b9a747eab728f97",
+      "archive_entry": "2025al-mapa-oficial_retificado/mapa_1_resultados_retificado.xlsx"
+    },
+    "raw": [
+      "490101",
+      "CORVO",
+      "CORVO",
+      "AF",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  }
+]

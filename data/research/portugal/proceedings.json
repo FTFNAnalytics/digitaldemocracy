@@ -1,0 +1,50 @@
+[
+  {
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "PT-PR",
+    "history_key": "PT-PR::PR:2026",
+    "event_id": "event-0df4c7f008ffffe98f152f92",
+    "proceeding_id": "proceeding-1e914ae9001c8732879785da",
+    "proceeding_type": "first_round",
+    "sequence_no": 1,
+    "date": {
+      "value": "2026-01-18",
+      "precision": "day",
+      "certainty": "called"
+    },
+    "evidence": [
+      {
+        "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2026_pr/docs_geral/2026_pr_1-sufragio_mapa_oficial_dr.pdf",
+        "sha256": "e042e8fe100edf7619722803380c1d294aaf732a316df0df86ed249054b196b8",
+        "locator": {
+          "pdf_page": 1
+        },
+        "source_id": "portugal--source-16cb12dfea337e398c5b65d0"
+      }
+    ]
+  },
+  {
+    "id_namespace": "cdd-observatory-v1",
+    "office_id": "PT-PR",
+    "history_key": "PT-PR::PR:2026",
+    "event_id": "event-0df4c7f008ffffe98f152f92",
+    "proceeding_id": "proceeding-e965271501d97b172edf53d9",
+    "proceeding_type": "runoff",
+    "sequence_no": 2,
+    "date": {
+      "value": "2026-02-08",
+      "precision": "day",
+      "certainty": "called"
+    },
+    "evidence": [
+      {
+        "input_path": "data/research/portugal/sources/www.cne.pt/sites/default/files/dl/eleicoes/2026_pr/docs_geral/2026_pr_2-sufragio_mapa_oficial_dr.pdf",
+        "sha256": "7db2906840fa00b2d223ab043080691c8fd88bce01643b74979fe21b3422a456",
+        "locator": {
+          "pdf_page": 1
+        },
+        "source_id": "portugal--source-43e8f633c1a37460b42457e4"
+      }
+    ]
+  }
+]
