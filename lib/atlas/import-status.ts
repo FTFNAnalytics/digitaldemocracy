@@ -15,8 +15,8 @@ export function atlasImportStatusMessage(
   return [
     "Election Atlas Albania import is available.",
     "",
-    "npm run import:atlas loads Albania, Andorra, Alderney, Armenia, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Netherlands, Switzerland, Denmark, Sweden, and approved continuity packs into SQLite (atomic publish + durable attempt ledger).",
-    "ATLAS_IMPORT_SCOPE=albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|denmark|netherlands|sweden|switzerland|latam|nz|all (default all). Draft residual-heavy packs are skipped.",
+    "npm run import:atlas loads Albania, Andorra, Alderney, Armenia, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Netherlands, Switzerland, Denmark, Sweden, Finland, and approved continuity packs into SQLite (atomic publish + durable attempt ledger).",
+    "ATLAS_IMPORT_SCOPE=albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|denmark|finland|netherlands|sweden|switzerland|latam|nz|all (default all). Draft residual-heavy packs are skipped.",
     "Use ATLAS_SQLITE_PATH and ATLAS_ATTEMPTS_SQLITE_PATH. CI/tests must use temporary paths, never the VPS production DB.",
     "Public UI: /atlas (SQLite MVP). Observatory catalogue remains at /electiondatabase.",
     "",

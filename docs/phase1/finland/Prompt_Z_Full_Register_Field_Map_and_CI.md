@@ -1,6 +1,6 @@
 # Prompt Z — mapping and CI checklist
 
-Pinned main `a0c02d0a36ed95cfb593dd7b085b9567d3b171d3`. Research extraction/document checks are completed work; production/importer tests are **Not run**. Justin accepted 333 current + 170 historical draft offices on 2026-09-19 with named holds. **Importer / SQLite / VPS / UI applied_changes=0.** Standing scope policy is preserved.
+Pinned main `a0c02d0a36ed95cfb593dd7b085b9567d3b171d3`. Research extraction/document checks are completed work; production/importer tests in this Prompt Z landing were **Not run**. Justin accepted 333 current + 170 historical draft offices on 2026-09-19 with named holds. The follow-up importer is `ATLAS_IMPORT_SCOPE=finland` — see [Finland_Import.md](Finland_Import.md). Standing scope policy is preserved. Named holds stay open.
 
 | Requirement | Status | Pointer / gate |
 | --- | --- | --- |

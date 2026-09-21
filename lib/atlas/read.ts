@@ -536,6 +536,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "finland") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "22 regional offices (21 wellbeing-county councils + Åland Lagting). Helsinki has one municipal council and no county office. 2029/2030 next dates sit outside the alert window; in-window dated upcoming regional count is 0. Named holds stay open. No popular appointed-manager / prime-minister / cabinet rows.",
+      denominatorKnown: false,
+    };
+  }
   return {
     offices,
     count: offices.length,

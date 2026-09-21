@@ -1,6 +1,6 @@
 # Finland Prompt Z research tables
 
-Sourced Prompt Z full-register research for Finland. 333 current + 170 historical office rows. Justin accepted the register on 2026-09-19 with named holds. Drafted geographic tiers are retained, including FI-EP as `other` and 170 historical focused-review flags. This directory is **not** a country-package extract and is **not** loaded by `import:atlas`.
+Sourced Prompt Z full-register research for Finland. 333 current + 170 historical office rows. Justin accepted the register on 2026-09-19 with named holds. Drafted geographic tiers are retained, including FI-EP as `other` and 170 historical focused-review flags. This directory is the Prompt Z research pack loaded by `ATLAS_IMPORT_SCOPE=finland`. Slim pack omits bulky primary-source bytes; do not invent those files.
 
 Named holds retained: FI-HISTORIC-MERGERS; FI-ALAND-EARLY-AND-DATES; FI-WELLBEING-TRANSITION; FI-EP-DETAIL; FI-CYCLE-LEGAL-DETAIL; FI-PARTY-CATEGORIES; FI-MISSING-RESULTS. No popular appointed-manager / prime-minister / cabinet rows. Do not invent merger successors, early Åland contests, wellbeing predecessors, or missing result scalars.
 
