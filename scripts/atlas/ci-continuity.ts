@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -22,6 +22,7 @@ import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identit
 import { LINEAGE_ID as DENMARK_LINEAGE } from "../../lib/atlas/denmark/identity";
 import { LINEAGE_ID as FINLAND_LINEAGE } from "../../lib/atlas/finland/identity";
 import { LINEAGE_ID as IRELAND_LINEAGE } from "../../lib/atlas/ireland/identity";
+import { LINEAGE_ID as POLAND_LINEAGE } from "../../lib/atlas/poland/identity";
 import { LINEAGE_ID as NETHERLANDS_LINEAGE } from "../../lib/atlas/netherlands/identity";
 import { LINEAGE_ID as SWEDEN_LINEAGE } from "../../lib/atlas/sweden/identity";
 import { LINEAGE_ID as NORWAY_LINEAGE } from "../../lib/atlas/norway/identity";
@@ -337,6 +338,30 @@ function main() {
     if (result.norway?.counts.unresolved_evidence !== 9) {
       fail(`Norway unresolved ${String(result.norway?.counts.unresolved_evidence)}`);
     }
+    if (result.poland?.counts.offices !== 5312) {
+      fail(`Poland offices ${String(result.poland?.counts.offices)}`);
+    }
+    if (result.poland?.counts.current_offices !== 5310) {
+      fail(`Poland current ${String(result.poland?.counts.current_offices)}`);
+    }
+    if (result.poland?.counts.historical_offices !== 2) {
+      fail(`Poland historical ${String(result.poland?.counts.historical_offices)}`);
+    }
+    if (result.poland?.counts.municipal_offices !== 4960) {
+      fail(`Poland municipal ${String(result.poland?.counts.municipal_offices)}`);
+    }
+    if (result.poland?.counts.regional_offices !== 330) {
+      fail(`Poland regional ${String(result.poland?.counts.regional_offices)}`);
+    }
+    if (result.poland?.counts.powiat_councils !== 314) {
+      fail(`Poland powiat ${String(result.poland?.counts.powiat_councils)}`);
+    }
+    if (result.poland?.counts.result_rows !== 0) {
+      fail(`Poland results ${String(result.poland?.counts.result_rows)}`);
+    }
+    if (result.poland?.counts.prospective_events !== 56) {
+      fail(`Poland prospective ${String(result.poland?.counts.prospective_events)}`);
+    }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
     if (result.nz?.counts.events !== 7) fail(`NZ events ${String(result.nz?.counts.events)}`);
@@ -485,6 +510,9 @@ function main() {
       ) {
         fail("Finland historical office rows");
       }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [POLAND_LINEAGE]) !== 5312) {
+        fail("Poland office rows");
+      }
       if (
         count(
           db,
@@ -547,6 +575,18 @@ function main() {
         ) !== 0
       ) {
         fail("Finland invented 2018 presidential runoff");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office o JOIN office_tier_classification t USING (id_namespace, office_id) WHERE o.lineage_id = ? AND o.office_type = 'county_council' AND t.tier = 'regional'",
+          [POLAND_LINEAGE],
+        ) !== 314
+      ) {
+        fail("Poland powiat rows were reclassified");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM result_row WHERE lineage_id = ?", [POLAND_LINEAGE]) !== 0) {
+        fail("Poland invented result rows");
       }
       if (
         count(
@@ -766,8 +806,9 @@ function main() {
         FINLAND_LINEAGE,
         IRELAND_LINEAGE,
         NETHERLANDS_LINEAGE,
-        SWEDEN_LINEAGE,
         NORWAY_LINEAGE,
+        POLAND_LINEAGE,
+        SWEDEN_LINEAGE,
         SWITZERLAND_LINEAGE,
         NZ_LINEAGE_ID,
         LATAM_LINEAGE_ID,
@@ -780,7 +821,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

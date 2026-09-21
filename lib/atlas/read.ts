@@ -536,6 +536,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "poland") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "330 regional offices (16 voivodeship sejmiks + 314 powiat councils). PL-POWIAT-TIER stays open: powiat rows remain the drafted regional classification and are not reclassified. Do not report 330 as 330 voivodeships. Named historic, 2019 share-unit, special-return, Warsaw auxiliary, and next-date holds stay open. No appointed voivode or PM/cabinet rows. Slim land omits result bytes; none are invented.",
+      denominatorKnown: false,
+    };
+  }
   if (countryId === "netherlands") {
     return {
       offices,
