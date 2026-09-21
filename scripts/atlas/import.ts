@@ -3,7 +3,7 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
- * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -209,6 +209,27 @@ function main() {
       console.log(`denmark_unresolved=${result.denmark.counts.unresolved_evidence}`);
       console.log(`denmark_approved=${result.denmark.counts.approved_classifications}`);
       console.log(`denmark_needs_review=${result.denmark.counts.needs_review_classifications}`);
+    }
+    if (result.sweden) {
+      console.log("lineage=country-package-sweden");
+      console.log(`sweden_attempt_id=${result.sweden.attemptId}`);
+      console.log(`sweden_release_id=${result.sweden.releaseId}`);
+      console.log(`sweden_fingerprint_sha256=${result.sweden.fingerprint}`);
+      console.log(`sweden_reused_release=${result.sweden.reusedRelease ? "yes" : "no"}`);
+      console.log(`sweden_offices=${result.sweden.counts.offices}`);
+      console.log(`sweden_current=${result.sweden.counts.current_offices}`);
+      console.log(`sweden_historical=${result.sweden.counts.historical_offices}`);
+      console.log(`sweden_municipal=${result.sweden.counts.municipal_offices}`);
+      console.log(`sweden_regional=${result.sweden.counts.regional_offices}`);
+      console.log(`sweden_national=${result.sweden.counts.national_offices}`);
+      console.log(`sweden_other=${result.sweden.counts.other_offices}`);
+      console.log(`sweden_selected_histories=${result.sweden.counts.selected_histories}`);
+      console.log(`sweden_prospective_events=${result.sweden.counts.prospective_events}`);
+      console.log(`sweden_result_rows=${result.sweden.counts.result_rows}`);
+      console.log(`sweden_sources=${result.sweden.counts.sources}`);
+      console.log(`sweden_unresolved=${result.sweden.counts.unresolved_evidence}`);
+      console.log(`sweden_approved=${result.sweden.counts.approved_classifications}`);
+      console.log(`sweden_needs_review=${result.sweden.counts.needs_review_classifications}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");

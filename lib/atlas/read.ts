@@ -509,6 +509,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "sweden") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "25 regional offices (20 current regionfullmäktige + 5 historical landsting). Gotland stays the municipal SE-K0980-C office; no second regional office. 2030/EP 2029 next dates sit outside the alert window; in-window dated upcoming regional count is 0. Named holds stay open. No popular kommunalråd / prime-minister / cabinet rows.",
+      denominatorKnown: false,
+    };
+  }
   if (countryId === "netherlands") {
     return {
       offices,

@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -21,6 +21,7 @@ import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzego
 import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
 import { LINEAGE_ID as DENMARK_LINEAGE } from "../../lib/atlas/denmark/identity";
 import { LINEAGE_ID as NETHERLANDS_LINEAGE } from "../../lib/atlas/netherlands/identity";
+import { LINEAGE_ID as SWEDEN_LINEAGE } from "../../lib/atlas/sweden/identity";
 import { LINEAGE_ID as SWITZERLAND_LINEAGE } from "../../lib/atlas/switzerland/identity";
 
 function fail(message: string): never {
@@ -233,6 +234,30 @@ function main() {
     if (result.denmark?.counts.prospective_events !== 0) {
       fail(`Denmark prospective ${String(result.denmark?.counts.prospective_events)}`);
     }
+    if (result.sweden?.counts.offices !== 320) {
+      fail(`Sweden offices ${String(result.sweden?.counts.offices)}`);
+    }
+    if (result.sweden?.counts.current_offices !== 313) {
+      fail(`Sweden current ${String(result.sweden?.counts.current_offices)}`);
+    }
+    if (result.sweden?.counts.historical_offices !== 7) {
+      fail(`Sweden historical ${String(result.sweden?.counts.historical_offices)}`);
+    }
+    if (result.sweden?.counts.municipal_offices !== 292) {
+      fail(`Sweden municipal ${String(result.sweden?.counts.municipal_offices)}`);
+    }
+    if (result.sweden?.counts.regional_offices !== 25) {
+      fail(`Sweden regional ${String(result.sweden?.counts.regional_offices)}`);
+    }
+    if (result.sweden?.counts.result_rows !== 40991) {
+      fail(`Sweden results ${String(result.sweden?.counts.result_rows)}`);
+    }
+    if (result.sweden?.counts.prospective_events !== 310) {
+      fail(`Sweden prospective ${String(result.sweden?.counts.prospective_events)}`);
+    }
+    if (result.sweden?.counts.unresolved_evidence !== 7) {
+      fail(`Sweden unresolved ${String(result.sweden?.counts.unresolved_evidence)}`);
+    }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
     if (result.nz?.counts.events !== 7) fail(`NZ events ${String(result.nz?.counts.events)}`);
@@ -332,6 +357,42 @@ function main() {
         ) !== 0
       ) {
         fail("Denmark invented mayor or Realm offices");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [SWEDEN_LINEAGE]) !== 320) {
+        fail("Sweden office rows");
+      }
+      if (
+        count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_status = 'historical'", [SWEDEN_LINEAGE]) !==
+        7
+      ) {
+        fail("Sweden historical office rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'regional'",
+          [SWEDEN_LINEAGE],
+        ) !== 25
+      ) {
+        fail("Sweden regional rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND (office_id LIKE '%-M' OR office_type LIKE '%kommunalråd%' OR office_type LIKE '%mayor%')",
+          [SWEDEN_LINEAGE],
+        ) !== 0
+      ) {
+        fail("Sweden invented mayor/executive offices");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_id != 'SE-K0980-C' AND name LIKE '%Gotland%'",
+          [SWEDEN_LINEAGE],
+        ) !== 0
+      ) {
+        fail("Sweden invented second Gotland office");
       }
       if (
         count(
@@ -549,6 +610,7 @@ function main() {
         BULGARIA_LINEAGE,
         DENMARK_LINEAGE,
         NETHERLANDS_LINEAGE,
+        SWEDEN_LINEAGE,
         SWITZERLAND_LINEAGE,
         NZ_LINEAGE_ID,
         LATAM_LINEAGE_ID,
@@ -561,7 +623,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });
