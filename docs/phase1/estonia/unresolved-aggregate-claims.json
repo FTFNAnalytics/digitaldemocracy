@@ -1,0 +1,24 @@
+{
+  "status": "needs_human_review",
+  "production_accepted": false,
+  "applied_changes": 0,
+  "claim": "KOV_2013 nationwide valid votes",
+  "claims": [
+    {
+      "value": 625336,
+      "unit": "votes",
+      "input_path": "data/research/estonia/sources/info.kov2013.vvk.ee/uldinfo/index.html",
+      "sha256": "5dd6a24d6e2073b4565a596336876fe1a5db69a2774ddefc401ce875ead724fc",
+      "source_id": "estonia--url-cb4cd82a276b48d738b66d1e",
+      "html_locator": "Üldstatistika table: Kehtivaid hääli row, KOV2013 column"
+    },
+    {
+      "value": 625334,
+      "unit": "votes",
+      "input_path": "data/research/estonia/unpacked/KOV2013_election_result_data/kov2013_results/KOV_2013_VOTING_RESULT_BY_PARTIES_1386150840677.xml",
+      "sha256": "dc2c8bad116b3d70d682b54aa5bc8736e004d02b35f8289fb2d732e2cf74a491",
+      "xpath": "/votingResultByPartiesOutput/data/partiesVotingResultInAdminUnit[1]/totalVotesInAdminUnit"
+    }
+  ],
+  "recommendation": "Keep both claims; do not publish a certified national aggregate until correction/version evidence resolves difference. Candidate rows remain exact supplied records; no scalar override applied."
+}

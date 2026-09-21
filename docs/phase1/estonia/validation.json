@@ -1,0 +1,203 @@
+{
+  "status": "PASS",
+  "validator_scope": "offline research integrity only; not importer or SQLite CI",
+  "checks": [
+    {
+      "check": "effective_input_hashes_and_bytes",
+      "status": "PASS",
+      "detail": 1162
+    },
+    {
+      "check": "fingerprint",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "candidate_release",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "pinned_DDL_reference_hashes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "archive_members_recover_exactly",
+      "status": "PASS",
+      "detail": 923
+    },
+    {
+      "check": "office_ids_unique",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "current_historical_counts",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "current_council_roster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "roster_counts",
+      "status": "PASS",
+      "detail": {
+        "2013": 215,
+        "2017": 79,
+        "2021": 79,
+        "2025": 78
+      }
+    },
+    {
+      "check": "tier_exact_set",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "draft_no_approval",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "tier_counts",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no_direct_mayor_offices",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "geography_fks",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no_guessed_successors",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "events_unique_FK",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "event_ID_vectors",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "proceeding_count_unique",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "proceeding_ID_FKs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "sources_unique_hashes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "source_identity",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "all_result_ID_FKs_statuses_and_XML_votes",
+      "status": "PASS",
+      "detail": 49504
+    },
+    {
+      "check": "457_source_vector_reconciliations",
+      "status": "PASS",
+      "detail": "Does not resolve known2013cross-source625334vs625336conflict"
+    },
+    {
+      "check": "nonadditive_summaries_separate",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "date_precision_and_IDs",
+      "status": "PASS",
+      "detail": 497
+    },
+    {
+      "check": "full_vector_coverage",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "223_column_contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "fixture_exclusion",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no_repo_importer_sqlite_vps_ui_changes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "worked_examples",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Justin_boxes_unchecked",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "counts": {
+    "offices": 281,
+    "current_offices": 81,
+    "historical_offices": 200,
+    "current_municipal_councils": 78,
+    "historical_municipal_councils": 200,
+    "municipal_rosters_by_cycle": {
+      "2013": 215,
+      "2017": 79,
+      "2021": 79,
+      "2025": 78
+    },
+    "events": 464,
+    "results": 49504,
+    "proceedings": 24,
+    "draft_tiers": {
+      "other": 1,
+      "municipal": 278,
+      "national": 2
+    },
+    "current_direct_executive_offices": 0,
+    "current_indirect_presidential_offices": 1,
+    "nonadditive_list_summaries": 2999,
+    "reconciliation_mismatches": 0
+  },
+  "applied_changes": 0,
+  "execution": {
+    "importer": "Not run",
+    "SQLite": "Not run",
+    "VPS": "Not run",
+    "UI": "Not run",
+    "publication_CI": "Not run"
+  },
+  "research_coverage_complete": false,
+  "Justin_approved": false,
+  "manifest_protocol": "Final SHA256SUMS was written after this report; a final read-only validator pass and ZIP member comparison verify the final manifest, including this file. No self-hash entry.",
+  "pinned_main": "f7b5c81ebd39f1774edea7cde5b4155031d92647"
+}

@@ -1,0 +1,1824 @@
+{
+  "status": "draft_for_human_review",
+  "applied_changes": 0,
+  "rows": [
+    {
+      "office_id": "EE-EP",
+      "classification_json_pointer": "/classifications/0",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G05"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0105-C",
+      "classification_json_pointer": "/classifications/1",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0112-C",
+      "classification_json_pointer": "/classifications/2",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0117-C",
+      "classification_json_pointer": "/classifications/3",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0122-C",
+      "classification_json_pointer": "/classifications/4",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0126-C",
+      "classification_json_pointer": "/classifications/5",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0129-C",
+      "classification_json_pointer": "/classifications/6",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0134-C",
+      "classification_json_pointer": "/classifications/8",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0140-C",
+      "classification_json_pointer": "/classifications/9",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0142-C",
+      "classification_json_pointer": "/classifications/11",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0143-C",
+      "classification_json_pointer": "/classifications/12",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0149-C",
+      "classification_json_pointer": "/classifications/14",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0154-C",
+      "classification_json_pointer": "/classifications/15",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0160-C",
+      "classification_json_pointer": "/classifications/16",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0164-C",
+      "classification_json_pointer": "/classifications/17",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0170-C",
+      "classification_json_pointer": "/classifications/18",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0175-C",
+      "classification_json_pointer": "/classifications/20",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0181-C",
+      "classification_json_pointer": "/classifications/21",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0183-C",
+      "classification_json_pointer": "/classifications/22",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0185-C",
+      "classification_json_pointer": "/classifications/24",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0188-C",
+      "classification_json_pointer": "/classifications/25",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0190-C",
+      "classification_json_pointer": "/classifications/26",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0192-C",
+      "classification_json_pointer": "/classifications/28",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0195-C",
+      "classification_json_pointer": "/classifications/29",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0203-C",
+      "classification_json_pointer": "/classifications/31",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0204-C",
+      "classification_json_pointer": "/classifications/32",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0208-C",
+      "classification_json_pointer": "/classifications/34",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0213-C",
+      "classification_json_pointer": "/classifications/35",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0224-C",
+      "classification_json_pointer": "/classifications/37",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0229-C",
+      "classification_json_pointer": "/classifications/38",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0234-C",
+      "classification_json_pointer": "/classifications/39",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0240-C",
+      "classification_json_pointer": "/classifications/40",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0248-C",
+      "classification_json_pointer": "/classifications/43",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0249-C",
+      "classification_json_pointer": "/classifications/44",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0251-C",
+      "classification_json_pointer": "/classifications/46",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0257-C",
+      "classification_json_pointer": "/classifications/48",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0260-C",
+      "classification_json_pointer": "/classifications/49",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0270-C",
+      "classification_json_pointer": "/classifications/50",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0277-C",
+      "classification_json_pointer": "/classifications/52",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0279-C",
+      "classification_json_pointer": "/classifications/53",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0282-C",
+      "classification_json_pointer": "/classifications/54",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0285-C",
+      "classification_json_pointer": "/classifications/57",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0288-C",
+      "classification_json_pointer": "/classifications/58",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0289-C",
+      "classification_json_pointer": "/classifications/59",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0292-C",
+      "classification_json_pointer": "/classifications/61",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0295-C",
+      "classification_json_pointer": "/classifications/63",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0297-C",
+      "classification_json_pointer": "/classifications/65",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0301-C",
+      "classification_json_pointer": "/classifications/66",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0304-C",
+      "classification_json_pointer": "/classifications/68",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0309-C",
+      "classification_json_pointer": "/classifications/70",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0314-C",
+      "classification_json_pointer": "/classifications/71",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0320-C",
+      "classification_json_pointer": "/classifications/73",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0322-C",
+      "classification_json_pointer": "/classifications/75",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0323-C",
+      "classification_json_pointer": "/classifications/76",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0325-C",
+      "classification_json_pointer": "/classifications/77",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0328-C",
+      "classification_json_pointer": "/classifications/78",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0331-C",
+      "classification_json_pointer": "/classifications/79",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0334-C",
+      "classification_json_pointer": "/classifications/80",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0342-C",
+      "classification_json_pointer": "/classifications/82",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0345-C",
+      "classification_json_pointer": "/classifications/83",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0349-C",
+      "classification_json_pointer": "/classifications/84",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0354-C",
+      "classification_json_pointer": "/classifications/86",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0357-C",
+      "classification_json_pointer": "/classifications/87",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0360-C",
+      "classification_json_pointer": "/classifications/88",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0368-C",
+      "classification_json_pointer": "/classifications/89",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0373-C",
+      "classification_json_pointer": "/classifications/90",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0375-C",
+      "classification_json_pointer": "/classifications/91",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0381-C",
+      "classification_json_pointer": "/classifications/92",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0383-C",
+      "classification_json_pointer": "/classifications/93",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0385-C",
+      "classification_json_pointer": "/classifications/94",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0386-C",
+      "classification_json_pointer": "/classifications/95",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0389-C",
+      "classification_json_pointer": "/classifications/96",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0403-C",
+      "classification_json_pointer": "/classifications/97",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0411-C",
+      "classification_json_pointer": "/classifications/98",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0420-C",
+      "classification_json_pointer": "/classifications/99",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0436-C",
+      "classification_json_pointer": "/classifications/104",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0438-C",
+      "classification_json_pointer": "/classifications/105",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0440-C",
+      "classification_json_pointer": "/classifications/106",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0452-C",
+      "classification_json_pointer": "/classifications/110",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0454-C",
+      "classification_json_pointer": "/classifications/111",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0460-C",
+      "classification_json_pointer": "/classifications/112",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0465-C",
+      "classification_json_pointer": "/classifications/113",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0468-C",
+      "classification_json_pointer": "/classifications/114",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0473-C",
+      "classification_json_pointer": "/classifications/115",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0483-C",
+      "classification_json_pointer": "/classifications/118",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0485-C",
+      "classification_json_pointer": "/classifications/119",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0490-C",
+      "classification_json_pointer": "/classifications/121",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0493-C",
+      "classification_json_pointer": "/classifications/122",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0498-C",
+      "classification_json_pointer": "/classifications/123",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0501-C",
+      "classification_json_pointer": "/classifications/124",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0503-C",
+      "classification_json_pointer": "/classifications/126",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0504-C",
+      "classification_json_pointer": "/classifications/127",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0513-C",
+      "classification_json_pointer": "/classifications/129",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0514-C",
+      "classification_json_pointer": "/classifications/130",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0518-C",
+      "classification_json_pointer": "/classifications/132",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0520-C",
+      "classification_json_pointer": "/classifications/133",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0531-C",
+      "classification_json_pointer": "/classifications/135",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0547-C",
+      "classification_json_pointer": "/classifications/136",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0550-C",
+      "classification_json_pointer": "/classifications/137",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0562-C",
+      "classification_json_pointer": "/classifications/139",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0565-C",
+      "classification_json_pointer": "/classifications/140",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0566-C",
+      "classification_json_pointer": "/classifications/141",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0568-C",
+      "classification_json_pointer": "/classifications/143",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0573-C",
+      "classification_json_pointer": "/classifications/144",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0576-C",
+      "classification_json_pointer": "/classifications/145",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0578-C",
+      "classification_json_pointer": "/classifications/146",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0580-C",
+      "classification_json_pointer": "/classifications/147",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0582-C",
+      "classification_json_pointer": "/classifications/148",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0587-C",
+      "classification_json_pointer": "/classifications/150",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0592-C",
+      "classification_json_pointer": "/classifications/151",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0595-C",
+      "classification_json_pointer": "/classifications/152",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0600-C",
+      "classification_json_pointer": "/classifications/153",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0605-C",
+      "classification_json_pointer": "/classifications/154",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0608-C",
+      "classification_json_pointer": "/classifications/155",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0611-C",
+      "classification_json_pointer": "/classifications/156",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0613-C",
+      "classification_json_pointer": "/classifications/157",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0616-C",
+      "classification_json_pointer": "/classifications/159",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0617-C",
+      "classification_json_pointer": "/classifications/160",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0621-C",
+      "classification_json_pointer": "/classifications/162",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0625-C",
+      "classification_json_pointer": "/classifications/165",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0634-C",
+      "classification_json_pointer": "/classifications/166",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0636-C",
+      "classification_json_pointer": "/classifications/167",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0638-C",
+      "classification_json_pointer": "/classifications/169",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0639-C",
+      "classification_json_pointer": "/classifications/170",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0654-C",
+      "classification_json_pointer": "/classifications/173",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0657-C",
+      "classification_json_pointer": "/classifications/174",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0660-C",
+      "classification_json_pointer": "/classifications/175",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0662-C",
+      "classification_json_pointer": "/classifications/177",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0666-C",
+      "classification_json_pointer": "/classifications/179",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0669-C",
+      "classification_json_pointer": "/classifications/181",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0674-C",
+      "classification_json_pointer": "/classifications/182",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0684-C",
+      "classification_json_pointer": "/classifications/183",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0694-C",
+      "classification_json_pointer": "/classifications/185",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0697-C",
+      "classification_json_pointer": "/classifications/186",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0702-C",
+      "classification_json_pointer": "/classifications/188",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0707-C",
+      "classification_json_pointer": "/classifications/189",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0710-C",
+      "classification_json_pointer": "/classifications/191",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0713-C",
+      "classification_json_pointer": "/classifications/193",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0718-C",
+      "classification_json_pointer": "/classifications/195",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0721-C",
+      "classification_json_pointer": "/classifications/197",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0724-C",
+      "classification_json_pointer": "/classifications/198",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0726-C",
+      "classification_json_pointer": "/classifications/200",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0727-C",
+      "classification_json_pointer": "/classifications/201",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0728-C",
+      "classification_json_pointer": "/classifications/202",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0730-C",
+      "classification_json_pointer": "/classifications/203",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0735-C",
+      "classification_json_pointer": "/classifications/205",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0741-C",
+      "classification_json_pointer": "/classifications/207",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0751-C",
+      "classification_json_pointer": "/classifications/208",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0756-C",
+      "classification_json_pointer": "/classifications/209",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0758-C",
+      "classification_json_pointer": "/classifications/210",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0767-C",
+      "classification_json_pointer": "/classifications/211",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0770-C",
+      "classification_json_pointer": "/classifications/212",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0773-C",
+      "classification_json_pointer": "/classifications/213",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0779-C",
+      "classification_json_pointer": "/classifications/214",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0786-C",
+      "classification_json_pointer": "/classifications/216",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0790-C",
+      "classification_json_pointer": "/classifications/217",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0794-C",
+      "classification_json_pointer": "/classifications/220",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0795-C",
+      "classification_json_pointer": "/classifications/221",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0797-C",
+      "classification_json_pointer": "/classifications/223",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0802-C",
+      "classification_json_pointer": "/classifications/224",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0803-C",
+      "classification_json_pointer": "/classifications/225",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0805-C",
+      "classification_json_pointer": "/classifications/226",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0807-C",
+      "classification_json_pointer": "/classifications/228",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0808-C",
+      "classification_json_pointer": "/classifications/229",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0809-C",
+      "classification_json_pointer": "/classifications/230",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0810-C",
+      "classification_json_pointer": "/classifications/231",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0815-C",
+      "classification_json_pointer": "/classifications/232",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0820-C",
+      "classification_json_pointer": "/classifications/233",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0823-C",
+      "classification_json_pointer": "/classifications/234",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0826-C",
+      "classification_json_pointer": "/classifications/236",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0831-C",
+      "classification_json_pointer": "/classifications/237",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0835-C",
+      "classification_json_pointer": "/classifications/239",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0843-C",
+      "classification_json_pointer": "/classifications/240",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0848-C",
+      "classification_json_pointer": "/classifications/241",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0851-C",
+      "classification_json_pointer": "/classifications/242",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0854-C",
+      "classification_json_pointer": "/classifications/243",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0855-C",
+      "classification_json_pointer": "/classifications/244",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0856-C",
+      "classification_json_pointer": "/classifications/245",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0858-C",
+      "classification_json_pointer": "/classifications/247",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0861-C",
+      "classification_json_pointer": "/classifications/248",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0863-C",
+      "classification_json_pointer": "/classifications/249",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0865-C",
+      "classification_json_pointer": "/classifications/250",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0868-C",
+      "classification_json_pointer": "/classifications/251",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0872-C",
+      "classification_json_pointer": "/classifications/252",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0874-C",
+      "classification_json_pointer": "/classifications/253",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0879-C",
+      "classification_json_pointer": "/classifications/254",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0884-C",
+      "classification_json_pointer": "/classifications/255",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0887-C",
+      "classification_json_pointer": "/classifications/256",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0898-C",
+      "classification_json_pointer": "/classifications/259",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0900-C",
+      "classification_json_pointer": "/classifications/261",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0902-C",
+      "classification_json_pointer": "/classifications/263",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0912-C",
+      "classification_json_pointer": "/classifications/266",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0915-C",
+      "classification_json_pointer": "/classifications/267",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0918-C",
+      "classification_json_pointer": "/classifications/269",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0926-C",
+      "classification_json_pointer": "/classifications/271",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0929-C",
+      "classification_json_pointer": "/classifications/273",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0931-C",
+      "classification_json_pointer": "/classifications/274",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0934-C",
+      "classification_json_pointer": "/classifications/275",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0937-C",
+      "classification_json_pointer": "/classifications/276",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0943-C",
+      "classification_json_pointer": "/classifications/277",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-M0949-C",
+      "classification_json_pointer": "/classifications/278",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G01"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "EE-PRESIDENT",
+      "classification_json_pointer": "/classifications/279",
+      "classification_sha256": "ae9f02831902fa9981adf3aa034bc92dd6c7861b66621a1ff66652fd4e0daa25",
+      "categories": [
+        "EE-G03"
+      ],
+      "proposed_changes": []
+    }
+  ]
+}

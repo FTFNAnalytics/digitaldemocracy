@@ -1,0 +1,27 @@
+{
+  "country_id": "estonia",
+  "country_code": "EE",
+  "name": "Eesti",
+  "polity_kind": "sovereign_country",
+  "region_id": "europe",
+  "coverage_status": "partial",
+  "screening_as_of_label": "2026-09-21",
+  "research_snapshot_label": "2026-09-21; official source snapshots independently dated",
+  "research_coverage_complete": false,
+  "current_council_register_complete_against_2025_official_roster": true,
+  "historic_coverage_complete": false,
+  "alert_window": {
+    "from": "2026-09-08",
+    "through": "2028-03-08",
+    "affects": "upcoming alerts only"
+  },
+  "notes": [
+    "78 current municipal councils from 2025 official municipality-level detailed returns; Tallinn district breakdowns are not separate council offices.",
+    "200 historical EHAK-coded council identities retained; absence today is not a guessed legal abolition date or successor edge.",
+    "1992 president transition included a sourced popular ballot followed by parliamentary election; contemporary presidency is indirect.",
+    "Next Riigikogu 2027 and EP/local 2029 are year-only metadata from official homepage; no prospective events created.",
+    "Party summaries and geographic breakdowns are nonadditive retained inputs.",
+    "No current directly elected municipal mayor or executive is asserted."
+  ],
+  "applied_changes": 0
+}
