@@ -438,7 +438,7 @@ export function projectFinland(inventory: FinlandInventory): FinlandProjection {
   const eventByHk = new Map<string, FinlandEventRow>();
   let selectedHistories = 0;
   let otherHistories = 0;
-  let prospectiveEvents = 0;
+  const prospectiveEvents = 0;
   let eventDatesDay = 0;
   let eventDatesYear = 0;
   let hva2023Events = 0;
