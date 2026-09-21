@@ -581,6 +581,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "croatia") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "55 regional offices (21 county/Zagreb assemblies + 21 executive tickets + 13 independently elected county deputies). Zagreb stays one dual city/county pair (HR-Z21), separate from Zagrebačka županija (HR-Z01). ZAGREB-DUAL stays open. No second Zagreb body. Next dates stay unknown. Named holds stay open. No invented seat allocations or successor edges.",
+      denominatorKnown: false,
+    };
+  }
   return {
     offices,
     count: offices.length,

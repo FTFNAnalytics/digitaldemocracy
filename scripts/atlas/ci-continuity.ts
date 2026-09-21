@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -19,6 +19,7 @@ import { LINEAGE_ID as AUSTRIA_LINEAGE } from "../../lib/atlas/austria/identity"
 import { LINEAGE_ID as BELGIUM_LINEAGE } from "../../lib/atlas/belgium/identity";
 import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
 import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
+import { LINEAGE_ID as CROATIA_LINEAGE } from "../../lib/atlas/croatia/identity";
 import { LINEAGE_ID as CZECHIA_LINEAGE } from "../../lib/atlas/czechia/identity";
 import { LINEAGE_ID as DENMARK_LINEAGE } from "../../lib/atlas/denmark/identity";
 import { LINEAGE_ID as FINLAND_LINEAGE } from "../../lib/atlas/finland/identity";
@@ -395,6 +396,33 @@ function main() {
     }
     if (result.czechia?.counts.proceedings !== 934) {
       fail(`Czechia proceedings ${String(result.czechia?.counts.proceedings)}`);
+    }
+    if (result.croatia?.counts.offices !== 1245) {
+      fail(`Croatia offices ${String(result.croatia?.counts.offices)}`);
+    }
+    if (result.croatia?.counts.current_offices !== 1234) {
+      fail(`Croatia current ${String(result.croatia?.counts.current_offices)}`);
+    }
+    if (result.croatia?.counts.historical_offices !== 11) {
+      fail(`Croatia historical ${String(result.croatia?.counts.historical_offices)}`);
+    }
+    if (result.croatia?.counts.municipal_offices !== 1187) {
+      fail(`Croatia municipal ${String(result.croatia?.counts.municipal_offices)}`);
+    }
+    if (result.croatia?.counts.regional_offices !== 55) {
+      fail(`Croatia regional ${String(result.croatia?.counts.regional_offices)}`);
+    }
+    if (result.croatia?.counts.result_rows !== 15907) {
+      fail(`Croatia results ${String(result.croatia?.counts.result_rows)}`);
+    }
+    if (result.croatia?.counts.proceedings !== 2418) {
+      fail(`Croatia proceedings ${String(result.croatia?.counts.proceedings)}`);
+    }
+    if (result.croatia?.counts.prospective_events !== 0) {
+      fail(`Croatia prospective ${String(result.croatia?.counts.prospective_events)}`);
+    }
+    if (result.croatia?.counts.unresolved_evidence !== 13) {
+      fail(`Croatia unresolved ${String(result.croatia?.counts.unresolved_evidence)}`);
     }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
@@ -837,6 +865,7 @@ function main() {
         BOSNIA_LINEAGE,
         BULGARIA_LINEAGE,
         DENMARK_LINEAGE,
+        CROATIA_LINEAGE,
         FINLAND_LINEAGE,
         IRELAND_LINEAGE,
         NETHERLANDS_LINEAGE,
@@ -856,7 +885,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 croatia=1245 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

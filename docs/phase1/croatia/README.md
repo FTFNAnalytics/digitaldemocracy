@@ -1,6 +1,6 @@
 # Croatia full register — Prompt W / APPROVED
 
-**1,234 current and 11 historical office identities; 3,834 events and 15,907 typed aggregate result rows.** Current scope is the complete captured DIP 2025 ordinary local/regional ballot register plus Sabor, President and EP. Historical completeness and legal/seat allocation remain open. Main pinned `785bae49b4b3ac6bc2ef105f33cc826caa948caf`; capture 2026-09-20. No repository/importer/SQLite/VPS/UI changes.
+**1,234 current and 11 historical office identities; 3,834 events and 15,907 typed aggregate result rows.** Current scope is the complete captured DIP 2025 ordinary local/regional ballot register plus Sabor, President and EP. Historical completeness and legal/seat allocation remain open. Main pinned `785bae49b4b3ac6bc2ef105f33cc826caa948caf`; capture 2026-09-20. The Atlas importer is landed (`ATLAS_IMPORT_SCOPE=croatia`). VPS deploy is out of scope. See [Croatia_Import.md](Croatia_Import.md).
 
 | Office family | Current | Historical | Treatment |
 |---|---:|---:|---|
@@ -25,8 +25,8 @@ Primary foundation: [DIP archive](https://www.izbori.hr/arhiva-izbora/index.html
 - [x] Justin accepts historic identities and projection policy (2026-09-20).
 - [ ] Justin separately authorizes implementation.
 
-**Importer / SQLite / VPS / UI: Not run. applied_changes=0.** Documentary validation is reported separately.
+**Importer:** `ATLAS_IMPORT_SCOPE=croatia` loads the accepted register. VPS deploy and live cutover are not part of this importer. Land-time `applied_changes=0` recorded the research landing only.
 
 ## Navigation
 
-Research: data/research/croatia/. Tier: schemas/atlas/tiers/croatia.json (**approved**, production_accepted). Acceptance: docs/phase1/croatia/JUSTIN_ACCEPTANCE.md. Docs/vectors/inventory: docs/phase1/croatia/. Contract references: contracts/. Run python3 validate_pack.py for read-only documentary checks. SHA256SUMS covers every other member; its own hash is in the external receipt. No importer included.
+Research: data/research/croatia/. Tier: schemas/atlas/tiers/croatia.json (**approved**, production_accepted). Acceptance: docs/phase1/croatia/JUSTIN_ACCEPTANCE.md. Import: [Croatia_Import.md](Croatia_Import.md). Docs/vectors/inventory: docs/phase1/croatia/. Contract references: contracts/. Run python3 validate_pack.py for read-only documentary checks. SHA256SUMS covers every other member; its own hash is in the external receipt.
