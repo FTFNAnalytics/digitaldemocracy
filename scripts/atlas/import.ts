@@ -3,7 +3,7 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
- * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -230,6 +230,28 @@ function main() {
       console.log(`sweden_unresolved=${result.sweden.counts.unresolved_evidence}`);
       console.log(`sweden_approved=${result.sweden.counts.approved_classifications}`);
       console.log(`sweden_needs_review=${result.sweden.counts.needs_review_classifications}`);
+    }
+    if (result.finland) {
+      console.log("lineage=country-package-finland");
+      console.log(`finland_attempt_id=${result.finland.attemptId}`);
+      console.log(`finland_release_id=${result.finland.releaseId}`);
+      console.log(`finland_fingerprint_sha256=${result.finland.fingerprint}`);
+      console.log(`finland_reused_release=${result.finland.reusedRelease ? "yes" : "no"}`);
+      console.log(`finland_offices=${result.finland.counts.offices}`);
+      console.log(`finland_current=${result.finland.counts.current_offices}`);
+      console.log(`finland_historical=${result.finland.counts.historical_offices}`);
+      console.log(`finland_municipal=${result.finland.counts.municipal_offices}`);
+      console.log(`finland_regional=${result.finland.counts.regional_offices}`);
+      console.log(`finland_national=${result.finland.counts.national_offices}`);
+      console.log(`finland_other=${result.finland.counts.other_offices}`);
+      console.log(`finland_selected_histories=${result.finland.counts.selected_histories}`);
+      console.log(`finland_prospective_events=${result.finland.counts.prospective_events}`);
+      console.log(`finland_result_rows=${result.finland.counts.result_rows}`);
+      console.log(`finland_proceedings=${result.finland.counts.proceedings}`);
+      console.log(`finland_sources=${result.finland.counts.sources}`);
+      console.log(`finland_unresolved=${result.finland.counts.unresolved_evidence}`);
+      console.log(`finland_approved=${result.finland.counts.approved_classifications}`);
+      console.log(`finland_needs_review=${result.finland.counts.needs_review_classifications}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
