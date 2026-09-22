@@ -518,6 +518,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "norway") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "32 regional offices (14 current county councils + 18 historical county councils). Oslo bystyre stays the municipal NO-M0301-C office; no separate Oslo fylkesting. 2027 municipal/county next dates sit outside the alert window as day-precision called metadata; Storting/Sámi 2029 stays year-expected. Named holds stay open. No popular mayor / prime-minister / cabinet or EP rows.",
+      denominatorKnown: false,
+    };
+  }
   if (countryId === "netherlands") {
     return {
       offices,

@@ -1,6 +1,6 @@
 # Norway Prompt AA research tables
 
-Sourced Prompt AA full-register research for Norway. 389 current + 537 historical office rows. Justin accepted the register on 2026-09-19 with named holds. Drafted geographic tiers are retained (876 municipal / 32 regional / 1 national / 17 other), including Oslo bystyre once, 15 borough committees as `other`, Sámediggi as `other`, and Longyearbyen as `other`. This directory is **not** a country-package extract and is **not** loaded by `import:atlas`.
+Sourced Prompt AA full-register research for Norway. 389 current + 537 historical office rows. Justin accepted the register on 2026-09-19 with named holds. Drafted geographic tiers are retained (876 municipal / 32 regional / 1 national / 17 other), including Oslo bystyre once, 15 borough committees as `other`, Sámediggi as `other`, and Longyearbyen as `other`. This directory is the Prompt AA research pack loaded by `ATLAS_IMPORT_SCOPE=norway`. Slim pack omits bulky primary-source bytes; do not invent those files.
 
 Named holds retained: SAMI-2025-ZERO-VOTE-SEAT-98d; REFORM-2020-2024; OSLO-BOROUGH-HISTORY; LONGYEARBYEN-HISTORY; LEGAL-STATUS-REPEATS; COUNTY-AGGREGATES; SAMI-OLDER-HISTORY; MUNICIPAL-HISTORY-DEPTH; PARTY-CATEGORIES. No popular mayor / prime-minister / cabinet or EP rows. Do not invent merger successors, borough/Longyearbyen result histories, certified legal outcomes, or missing result scalars.
 

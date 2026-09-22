@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -23,6 +23,7 @@ import { LINEAGE_ID as DENMARK_LINEAGE } from "../../lib/atlas/denmark/identity"
 import { LINEAGE_ID as FINLAND_LINEAGE } from "../../lib/atlas/finland/identity";
 import { LINEAGE_ID as NETHERLANDS_LINEAGE } from "../../lib/atlas/netherlands/identity";
 import { LINEAGE_ID as SWEDEN_LINEAGE } from "../../lib/atlas/sweden/identity";
+import { LINEAGE_ID as NORWAY_LINEAGE } from "../../lib/atlas/norway/identity";
 import { LINEAGE_ID as SWITZERLAND_LINEAGE } from "../../lib/atlas/switzerland/identity";
 
 function fail(message: string): never {
@@ -286,6 +287,30 @@ function main() {
     if (result.finland?.counts.unresolved_evidence !== 7) {
       fail(`Finland unresolved ${String(result.finland?.counts.unresolved_evidence)}`);
     }
+    if (result.norway?.counts.offices !== 926) {
+      fail(`Norway offices ${String(result.norway?.counts.offices)}`);
+    }
+    if (result.norway?.counts.current_offices !== 389) {
+      fail(`Norway current ${String(result.norway?.counts.current_offices)}`);
+    }
+    if (result.norway?.counts.historical_offices !== 537) {
+      fail(`Norway historical ${String(result.norway?.counts.historical_offices)}`);
+    }
+    if (result.norway?.counts.municipal_offices !== 876) {
+      fail(`Norway municipal ${String(result.norway?.counts.municipal_offices)}`);
+    }
+    if (result.norway?.counts.regional_offices !== 32) {
+      fail(`Norway regional ${String(result.norway?.counts.regional_offices)}`);
+    }
+    if (result.norway?.counts.result_rows !== 59033) {
+      fail(`Norway results ${String(result.norway?.counts.result_rows)}`);
+    }
+    if (result.norway?.counts.prospective_events !== 0) {
+      fail(`Norway prospective ${String(result.norway?.counts.prospective_events)}`);
+    }
+    if (result.norway?.counts.unresolved_evidence !== 9) {
+      fail(`Norway unresolved ${String(result.norway?.counts.unresolved_evidence)}`);
+    }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
     if (result.nz?.counts.events !== 7) fail(`NZ events ${String(result.nz?.counts.events)}`);
@@ -358,6 +383,15 @@ function main() {
         240
       ) {
         fail("Denmark historical office rows");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [NORWAY_LINEAGE]) !== 926) {
+        fail("Norway office rows");
+      }
+      if (
+        count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_status = 'historical'", [NORWAY_LINEAGE]) !==
+        537
+      ) {
+        fail("Norway historical office rows");
       }
       if (
         count(
@@ -685,6 +719,7 @@ function main() {
         FINLAND_LINEAGE,
         NETHERLANDS_LINEAGE,
         SWEDEN_LINEAGE,
+        NORWAY_LINEAGE,
         SWITZERLAND_LINEAGE,
         NZ_LINEAGE_ID,
         LATAM_LINEAGE_ID,
@@ -697,7 +732,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

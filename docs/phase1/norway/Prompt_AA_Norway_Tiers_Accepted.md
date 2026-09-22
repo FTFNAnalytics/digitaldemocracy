@@ -4,8 +4,8 @@
 
 | Disposition | Count | Office types | Production import |
 | --- | ---: | --- | --- |
-| **Accepted current** | **389** | 357 municipal councils + 14 county councils + Stortinget + Sámediggi + 15 Oslo borough committees + Longyearbyen lokalstyre (Oslo bystyre once) | Not in this landing — no importer |
-| **Accepted historical** | **537** | historic municipal-council and former county-council identities retained outside the alert window | Not in this landing — no importer |
+| **Accepted current** | **389** | 357 municipal councils + 14 county councils + Stortinget + Sámediggi + 15 Oslo borough committees + Longyearbyen lokalstyre (Oslo bystyre once) | Follow-up importer: `ATLAS_IMPORT_SCOPE=norway` — see [Norway_Import.md](Norway_Import.md) |
+| **Accepted historical** | **537** | historic municipal-council and former county-council identities retained outside the alert window | Follow-up importer: `ATLAS_IMPORT_SCOPE=norway` — see [Norway_Import.md](Norway_Import.md) |
 | **Register total** | **926** | exact office_id set; 876 municipal / 32 regional / 1 national / 17 other | — |
 
 **Accepted with named holds.** Standing policy: retain offices and historic rows even outside the ~18-month window. The called municipal/county date 13 September 2027 stays day-precision metadata; Storting/Sámi 2029 stays an expected cycle year with no invented day. Appointed mayors, prime minister, and cabinet are not popular offices; **no executive or EP election rows**.
@@ -24,4 +24,4 @@ Named holds kept open (do not invent clearances):
 
 Review pack pin: original review ZIP SHA-256 `5a38228b0ee2f035f5cf32a0e74914de23a30c1aa9fb15ae26d9075058c1f0ef` (bulky sources omitted from slim attach; do not invent missing source bytes). Draft authored against main `a0c02d0a36ed95cfb593dd7b085b9567d3b171d3`. Draft tier SHA before acceptance metadata: `dba7a879edae7f6ad44c3d3964fe345f375fe933f3549c98cfd99b361328a5f0`. Accepted tier SHA-256 `8ff8fc545ab326b135ac8a116d013c3dbecce377750e26dfc008bcea134db827`.
 
-Importer / SQLite / VPS / UI remain follow-up work. `import:atlas` is **not** implemented for Norway in this landing. No `/electiondatabase` redirects and no Mexico edits.
+The follow-up importer is `ATLAS_IMPORT_SCOPE=norway` — see [Norway_Import.md](Norway_Import.md). Holds stay open. No `/electiondatabase` redirects and no Mexico edits.

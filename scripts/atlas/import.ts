@@ -3,7 +3,7 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
- * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -252,6 +252,27 @@ function main() {
       console.log(`finland_unresolved=${result.finland.counts.unresolved_evidence}`);
       console.log(`finland_approved=${result.finland.counts.approved_classifications}`);
       console.log(`finland_needs_review=${result.finland.counts.needs_review_classifications}`);
+    }
+    if (result.norway) {
+      console.log("lineage=country-package-norway");
+      console.log(`norway_attempt_id=${result.norway.attemptId}`);
+      console.log(`norway_release_id=${result.norway.releaseId}`);
+      console.log(`norway_fingerprint_sha256=${result.norway.fingerprint}`);
+      console.log(`norway_reused_release=${result.norway.reusedRelease ? "yes" : "no"}`);
+      console.log(`norway_offices=${result.norway.counts.offices}`);
+      console.log(`norway_current=${result.norway.counts.current_offices}`);
+      console.log(`norway_historical=${result.norway.counts.historical_offices}`);
+      console.log(`norway_municipal=${result.norway.counts.municipal_offices}`);
+      console.log(`norway_regional=${result.norway.counts.regional_offices}`);
+      console.log(`norway_national=${result.norway.counts.national_offices}`);
+      console.log(`norway_other=${result.norway.counts.other_offices}`);
+      console.log(`norway_selected_histories=${result.norway.counts.selected_histories}`);
+      console.log(`norway_prospective_events=${result.norway.counts.prospective_events}`);
+      console.log(`norway_result_rows=${result.norway.counts.result_rows}`);
+      console.log(`norway_sources=${result.norway.counts.sources}`);
+      console.log(`norway_unresolved=${result.norway.counts.unresolved_evidence}`);
+      console.log(`norway_approved=${result.norway.counts.approved_classifications}`);
+      console.log(`norway_needs_review=${result.norway.counts.needs_review_classifications}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
