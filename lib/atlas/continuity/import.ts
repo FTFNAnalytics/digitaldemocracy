@@ -7,6 +7,7 @@ import { importAustria, type ImportAustriaResult } from "../austria/import";
 import { importBelgium, type ImportBelgiumResult } from "../belgium/import";
 import { importBosnia, type ImportBosniaResult } from "../bosnia-and-herzegovina/import";
 import { importBulgaria, type ImportBulgariaResult } from "../bulgaria/import";
+import { importCzechia, type ImportCzechiaResult } from "../czechia/import";
 import { importDenmark, type ImportDenmarkResult } from "../denmark/import";
 import { importFinland, type ImportFinlandResult } from "../finland/import";
 import { importIreland, type ImportIrelandResult } from "../ireland/import";
@@ -28,6 +29,7 @@ export type ImportScope =
   | "belgium"
   | "bosnia"
   | "bulgaria"
+  | "czechia"
   | "denmark"
   | "finland"
   | "ireland"
@@ -51,6 +53,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     raw === "belgium" ||
     raw === "bosnia" ||
     raw === "bulgaria" ||
+    raw === "czechia" ||
     raw === "denmark" ||
     raw === "finland" ||
     raw === "ireland" ||
@@ -66,7 +69,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     return raw;
   }
   throw new Error(
-    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|denmark|finland|ireland|netherlands|norway|poland|sweden|switzerland|latam|nz|all`,
+    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|czechia|denmark|finland|ireland|netherlands|norway|poland|sweden|switzerland|latam|nz|all`,
   );
 }
 
@@ -79,6 +82,7 @@ export type MultiLineageImportResult = {
   belgium?: ImportBelgiumResult;
   bosnia?: ImportBosniaResult;
   bulgaria?: ImportBulgariaResult;
+  czechia?: ImportCzechiaResult;
   denmark?: ImportDenmarkResult;
   finland?: ImportFinlandResult;
   ireland?: ImportIrelandResult;
@@ -144,8 +148,8 @@ export function importAtlasLineages(
   if (scope === "nz" || scope === "all") {
     result.nz = runImport("nz", () => importNewZealand(options));
   }
-  // Denmark, Sweden, Finland, Norway, Ireland, then Poland last on `all`:
-  // large result tables and Poland's events would otherwise sit in the published DB that LatAm copies into staging.
+  // Denmark through Czechia last on `all`: large result tables and Poland/Czechia
+  // events would otherwise sit in the published DB that LatAm copies into staging.
   if (scope === "denmark" || scope === "all") {
     result.denmark = runImport("denmark", () => importDenmark(options));
   }
@@ -163,6 +167,9 @@ export function importAtlasLineages(
   }
   if (scope === "poland" || scope === "all") {
     result.poland = runImport("poland", () => importPoland(options));
+  }
+  if (scope === "czechia" || scope === "all") {
+    result.czechia = runImport("czechia", () => importCzechia(options));
   }
   return result;
 }

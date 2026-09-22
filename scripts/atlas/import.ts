@@ -3,7 +3,7 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
- * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -230,6 +230,30 @@ function main() {
       console.log(`denmark_unresolved=${result.denmark.counts.unresolved_evidence}`);
       console.log(`denmark_approved=${result.denmark.counts.approved_classifications}`);
       console.log(`denmark_needs_review=${result.denmark.counts.needs_review_classifications}`);
+    }
+    if (result.czechia) {
+      console.log("lineage=country-package-czechia");
+      console.log(`czechia_attempt_id=${result.czechia.attemptId}`);
+      console.log(`czechia_release_id=${result.czechia.releaseId}`);
+      console.log(`czechia_fingerprint_sha256=${result.czechia.fingerprint}`);
+      console.log(`czechia_reused_release=${result.czechia.reusedRelease ? "yes" : "no"}`);
+      console.log(`czechia_offices=${result.czechia.counts.offices}`);
+      console.log(`czechia_current=${result.czechia.counts.current_offices}`);
+      console.log(`czechia_historical=${result.czechia.counts.historical_offices}`);
+      console.log(`czechia_municipal=${result.czechia.counts.municipal_offices}`);
+      console.log(`czechia_regional=${result.czechia.counts.regional_offices}`);
+      console.log(`czechia_national=${result.czechia.counts.national_offices}`);
+      console.log(`czechia_other=${result.czechia.counts.other_offices}`);
+      console.log(`czechia_boroughs=${result.czechia.counts.borough_councils}`);
+      console.log(`czechia_prague=${result.czechia.counts.prague_assemblies}`);
+      console.log(`czechia_selected_histories=${result.czechia.counts.selected_histories}`);
+      console.log(`czechia_prospective_events=${result.czechia.counts.prospective_events}`);
+      console.log(`czechia_result_rows=${result.czechia.counts.result_rows}`);
+      console.log(`czechia_proceedings=${result.czechia.counts.proceedings}`);
+      console.log(`czechia_sources=${result.czechia.counts.sources}`);
+      console.log(`czechia_unresolved=${result.czechia.counts.unresolved_evidence}`);
+      console.log(`czechia_approved=${result.czechia.counts.approved_classifications}`);
+      console.log(`czechia_needs_review=${result.czechia.counts.needs_review_classifications}`);
     }
     if (result.sweden) {
       console.log("lineage=country-package-sweden");
