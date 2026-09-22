@@ -1,0 +1,3027 @@
+[
+  {
+    "event_id": "event-012377be879791efbafe14d9",
+    "row_count": 7,
+    "vote_sum": 11902,
+    "supplied_valid_ballots": 11902,
+    "supplied_valid_envelopes": 12013,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/dienvidkurzemes-novads/index.html",
+      "sha256": "82021ed1f1e673f43fd075ed21aa250cd256cab51cb6cbe9a9279b4faa07dade",
+      "source_id": "latvia--url-3ce5e5d60b563b5471ec871f",
+      "html_table": 2,
+      "html_row": 30
+    }
+  },
+  {
+    "event_id": "event-3c54c528533d15793b8f6c73",
+    "row_count": 7,
+    "vote_sum": 8607,
+    "supplied_valid_ballots": 8607,
+    "supplied_valid_envelopes": 8705,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/kuldigas-novads/index.html",
+      "sha256": "a1e9926740960d7c01c4f208cdb0d5e3d8b27fd66e8ede0cb2e9702c431e1673",
+      "source_id": "latvia--url-e24936278a45f91c25724868",
+      "html_table": 2,
+      "html_row": 26
+    }
+  },
+  {
+    "event_id": "event-37eaaaaa10a0328f37118871",
+    "row_count": 11,
+    "vote_sum": 19819,
+    "supplied_valid_ballots": 19819,
+    "supplied_valid_envelopes": 19991,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/liepaja/index.html",
+      "sha256": "cf59c08231eb008fb0ead60974a655ed3ae52ec84562021104ec16d62e307d3a",
+      "source_id": "latvia--url-452bdcc61bb8bdf48144dc0d",
+      "html_table": 2,
+      "html_row": 21
+    }
+  },
+  {
+    "event_id": "event-c389a88a3f9d08349e7f34a6",
+    "row_count": 8,
+    "vote_sum": 9481,
+    "supplied_valid_ballots": 9481,
+    "supplied_valid_envelopes": 9563,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/saldus-novads/index.html",
+      "sha256": "eb0b05caf7d4f459e722ca06f14e252e33472f8c9d070ffecf9147ccc3a8923c",
+      "source_id": "latvia--url-391f51e754081a50144d0fe8",
+      "html_table": 2,
+      "html_row": 28
+    }
+  },
+  {
+    "event_id": "event-d970a093aee102df9cacd9c3",
+    "row_count": 8,
+    "vote_sum": 11848,
+    "supplied_valid_ballots": 11848,
+    "supplied_valid_envelopes": 11956,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/talsu-novads/index.html",
+      "sha256": "572157e95702e68a7321445d4344cd04dd2e09ec2f4c5de5559376b53728e649",
+      "source_id": "latvia--url-c674181da2ae0e3fe2af3e04",
+      "html_table": 2,
+      "html_row": 34
+    }
+  },
+  {
+    "event_id": "event-034231088669f19fc1e51d66",
+    "row_count": 8,
+    "vote_sum": 9157,
+    "supplied_valid_ballots": 9157,
+    "supplied_valid_envelopes": 9237,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/ventspils/index.html",
+      "sha256": "c5eb6723d54956d80269d42d82f296120d7526ec6af8071c37c679cfd3769803",
+      "source_id": "latvia--url-be7310d7758af6e85d263319",
+      "html_table": 2,
+      "html_row": 15
+    }
+  },
+  {
+    "event_id": "event-6bd66934508e522bafafa813",
+    "row_count": 4,
+    "vote_sum": 3349,
+    "supplied_valid_ballots": 3349,
+    "supplied_valid_envelopes": 3391,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/kurzeme/ventspils-novads/index.html",
+      "sha256": "3bef869e7d6de88c91eeb4abceb0028945296a8f16a477df3661a810f9dc0eb6",
+      "source_id": "latvia--url-a7bfa3a5cef178c881fadcdc",
+      "html_table": 2,
+      "html_row": 15
+    }
+  },
+  {
+    "event_id": "event-af1b70a7412b65174ecc9f02",
+    "row_count": 5,
+    "vote_sum": 6289,
+    "supplied_valid_ballots": 6289,
+    "supplied_valid_envelopes": 6361,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/augsdaugavas-novads/index.html",
+      "sha256": "160231526db345a56d2bd2977d39c42233869aff456e59968017abb340facf21",
+      "source_id": "latvia--url-c6dc15d4c69a26fb6cdb3992",
+      "html_table": 2,
+      "html_row": 33
+    }
+  },
+  {
+    "event_id": "event-16e650ba8e3af0784892352e",
+    "row_count": 9,
+    "vote_sum": 6920,
+    "supplied_valid_ballots": 6920,
+    "supplied_valid_envelopes": 6964,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/balvu-novads/index.html",
+      "sha256": "393b0cf6cb5929abfd0279c74a68848771b6541c03c9d63c0c3f2bea6ee5110d",
+      "source_id": "latvia--url-a2038def676bef097b63a0d6",
+      "html_table": 2,
+      "html_row": 25
+    }
+  },
+  {
+    "event_id": "event-89511ac652f0d2585662c07d",
+    "row_count": 10,
+    "vote_sum": 23002,
+    "supplied_valid_ballots": 23002,
+    "supplied_valid_envelopes": 23263,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/daugavpils/index.html",
+      "sha256": "f7b948370b0cf1ab75bf02b48e974158c559c2125dc54c5694bfef264647e7e8",
+      "source_id": "latvia--url-83b751cb32c3a80959e4afe8",
+      "html_table": 2,
+      "html_row": 32
+    }
+  },
+  {
+    "event_id": "event-fccfc576ef3a714fb747bb46",
+    "row_count": 7,
+    "vote_sum": 5663,
+    "supplied_valid_ballots": 5663,
+    "supplied_valid_envelopes": 5725,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/kraslavas-novads/index.html",
+      "sha256": "922c3f1e8f3f7bef9c9b091511c6076a8dcb7418acbfdbb7e9e8e889f050dcfb",
+      "source_id": "latvia--url-1283f7c8ea6d004f81b0421a",
+      "html_table": 2,
+      "html_row": 30
+    }
+  },
+  {
+    "event_id": "event-fe887e5f9e29ce563627ac33",
+    "row_count": 8,
+    "vote_sum": 3784,
+    "supplied_valid_ballots": 3784,
+    "supplied_valid_envelopes": 3805,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/livanu-novads/index.html",
+      "sha256": "61996d1af9e817a2d8f56f994885d53100bad58ed4c498245d9721681d8a82aa",
+      "source_id": "latvia--url-8c0abd46caaa87e0fa178612",
+      "html_table": 2,
+      "html_row": 11
+    }
+  },
+  {
+    "event_id": "event-e4ceb56ef358c1f31f8097db",
+    "row_count": 7,
+    "vote_sum": 6594,
+    "supplied_valid_ballots": 6594,
+    "supplied_valid_envelopes": 6639,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/ludzas-novads/index.html",
+      "sha256": "858def8b269ea135deeca62247e6a3ee5a6bd54df7a401f4d14a236e26d05d50",
+      "source_id": "latvia--url-566863f8d6d88a2333f50d05",
+      "html_table": 2,
+      "html_row": 31
+    }
+  },
+  {
+    "event_id": "event-f307242110ccefba3da82030",
+    "row_count": 7,
+    "vote_sum": 6466,
+    "supplied_valid_ballots": 6466,
+    "supplied_valid_envelopes": 6514,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/preilu-novads/index.html",
+      "sha256": "5dafa670ec7633b67a76e3a5371ae4dc27747599db1e00d5b4b0c9b7a0efc5ef",
+      "source_id": "latvia--url-f7a26b332ab7cada42acfa06",
+      "html_table": 2,
+      "html_row": 18
+    }
+  },
+  {
+    "event_id": "event-79cab7f9d78795cc2887e90e",
+    "row_count": 10,
+    "vote_sum": 10087,
+    "supplied_valid_ballots": 10087,
+    "supplied_valid_envelopes": 10167,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/rezekne/index.html",
+      "sha256": "fef64e2ae86db0b4329c128708b49291aa558d5896735f249e3987242be0e11e",
+      "source_id": "latvia--url-4b6d7541f273e1dcd5b418e0",
+      "html_table": 2,
+      "html_row": 15
+    }
+  },
+  {
+    "event_id": "event-83542fd69801b4fc28951b38",
+    "row_count": 10,
+    "vote_sum": 8070,
+    "supplied_valid_ballots": 8070,
+    "supplied_valid_envelopes": 8150,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/latgale/rezeknes-novads/index.html",
+      "sha256": "6b6b84fbe164e0497e33321c902e6e65e3b79676148fab178577c859d19da225",
+      "source_id": "latvia--url-cf73ab12c563bf1ce359f8be",
+      "html_table": 2,
+      "html_row": 35
+    }
+  },
+  {
+    "event_id": "event-5dce51788025167f13908059",
+    "row_count": 16,
+    "vote_sum": 212103,
+    "supplied_valid_ballots": 212103,
+    "supplied_valid_envelopes": 213551,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/riga/riga/index.html",
+      "sha256": "44cba8c23612ff0ffacd3e1ed3c1909a6915d7bf589c77f942d7d29b3a34b81f",
+      "source_id": "latvia--url-44f636dfe5a1ce39283bd93a",
+      "html_table": 2,
+      "html_row": 166
+    }
+  },
+  {
+    "event_id": "event-eba3e98912a96972a1d32339",
+    "row_count": 8,
+    "vote_sum": 8751,
+    "supplied_valid_ballots": 8751,
+    "supplied_valid_envelopes": 8826,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/adazu-novads/index.html",
+      "sha256": "87f45f8b2897b98f06138165e537a247ef01851e654d8b869cd11df557c05ef5",
+      "source_id": "latvia--url-442e74e008b64683b9d6a32e",
+      "html_table": 2,
+      "html_row": 11
+    }
+  },
+  {
+    "event_id": "event-85bfd06f3041fc36e9e54e6c",
+    "row_count": 9,
+    "vote_sum": 5376,
+    "supplied_valid_ballots": 5376,
+    "supplied_valid_envelopes": 5420,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/aluksnes-novads/index.html",
+      "sha256": "676dbe60fcb91ce194481b16c689a3bf1209c2e80f9a4360e9d28e25a98de5d6",
+      "source_id": "latvia--url-1ea1f22e8dcd9013b711313e",
+      "html_table": 2,
+      "html_row": 22
+    }
+  },
+  {
+    "event_id": "event-157498dc179f2f44e6d35305",
+    "row_count": 8,
+    "vote_sum": 15637,
+    "supplied_valid_ballots": 15637,
+    "supplied_valid_envelopes": 15772,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/cesu-novads/index.html",
+      "sha256": "9478ec9a993e6484d86eafddd420bc46a4d74abd9d0c87876af875012bc96431",
+      "source_id": "latvia--url-b16d598502dd5005bcc05460",
+      "html_table": 2,
+      "html_row": 32
+    }
+  },
+  {
+    "event_id": "event-786abbd5759186c3623d7e02",
+    "row_count": 7,
+    "vote_sum": 6028,
+    "supplied_valid_ballots": 6028,
+    "supplied_valid_envelopes": 6090,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/gulbenes-novads/index.html",
+      "sha256": "b9b968f9a9445f38127d5fc015b6398e396cadda96fe58b95a781f99dac2fc46",
+      "source_id": "latvia--url-9d7c42eb00fd453ce8582c0d",
+      "html_table": 2,
+      "html_row": 21
+    }
+  },
+  {
+    "event_id": "event-07014315f0bcfecc137daab6",
+    "row_count": 10,
+    "vote_sum": 19063,
+    "supplied_valid_ballots": 19063,
+    "supplied_valid_envelopes": 19270,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/jurmala/index.html",
+      "sha256": "78318d974cf3c244732c35f8058836886561729b1cbca60792229a65ae462c6b",
+      "source_id": "latvia--url-f176cc8b92852f807b17e4b5",
+      "html_table": 2,
+      "html_row": 20
+    }
+  },
+  {
+    "event_id": "event-ff49f0f8ae88e7ed6749be47",
+    "row_count": 10,
+    "vote_sum": 11631,
+    "supplied_valid_ballots": 11631,
+    "supplied_valid_envelopes": 11736,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/kekavas-novads/index.html",
+      "sha256": "eb7d75e7df70f5448a3b0e0efd15d7cf1168445b7438903c456ee6c8a2177ae0",
+      "source_id": "latvia--url-077394e7a3df858dd713f66c",
+      "html_table": 2,
+      "html_row": 12
+    }
+  },
+  {
+    "event_id": "event-2861f9c15a8ed85e9f2e45ed",
+    "row_count": 7,
+    "vote_sum": 10219,
+    "supplied_valid_ballots": 10219,
+    "supplied_valid_envelopes": 10299,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/limbazu-novads/index.html",
+      "sha256": "03eab7d86b5f617b3012b93e9b9de8919627ed727af58d97a36b6c1733e0ddac",
+      "source_id": "latvia--url-88f308d9e3374b5cb4ae3147",
+      "html_table": 2,
+      "html_row": 22
+    }
+  },
+  {
+    "event_id": "event-a2885b15ef334490e98f2311",
+    "row_count": 6,
+    "vote_sum": 11102,
+    "supplied_valid_ballots": 11102,
+    "supplied_valid_envelopes": 11172,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/madonas-novads/index.html",
+      "sha256": "fde9487d1c02196c10d0f8de3f4ae35d3ed8f017d5c5c65e34a2a34fd892ee3e",
+      "source_id": "latvia--url-466184fe22188a3871eb74f7",
+      "html_table": 2,
+      "html_row": 30
+    }
+  },
+  {
+    "event_id": "event-bb85bc4104468dcb2864a853",
+    "row_count": 9,
+    "vote_sum": 12880,
+    "supplied_valid_ballots": 12880,
+    "supplied_valid_envelopes": 13012,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/marupes-novads/index.html",
+      "sha256": "4ededbfde89faf19f975db563cd0790774d23499bf1ecda44aff13ba846abadf",
+      "source_id": "latvia--url-b5a1e2c507553ea86d3bf9b0",
+      "html_table": 2,
+      "html_row": 11
+    }
+  },
+  {
+    "event_id": "event-b1f83830b4efa5fd720005bf",
+    "row_count": 8,
+    "vote_sum": 22586,
+    "supplied_valid_ballots": 22586,
+    "supplied_valid_envelopes": 22731,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/ogres-novads/index.html",
+      "sha256": "771f1c40beb5740095bacbf5d9c28c5f39d1b81b9b2a82b7fbbe5764c57c99e9",
+      "source_id": "latvia--url-0b5c00c7240744d269e117c0",
+      "html_table": 2,
+      "html_row": 31
+    }
+  },
+  {
+    "event_id": "event-ffff09dbb20eb5f402cd056e",
+    "row_count": 5,
+    "vote_sum": 5539,
+    "supplied_valid_ballots": 5539,
+    "supplied_valid_envelopes": 5616,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/olaines-novads/index.html",
+      "sha256": "b264c46088bfd5f0f370a5c9c82053c73765ca16e584ada05b6d45de131806b4",
+      "source_id": "latvia--url-35d73058b5dde6e74b1ec494",
+      "html_table": 2,
+      "html_row": 7
+    }
+  },
+  {
+    "event_id": "event-0e77c8f6f3b56fa55591b61e",
+    "row_count": 8,
+    "vote_sum": 11265,
+    "supplied_valid_ballots": 11265,
+    "supplied_valid_envelopes": 11358,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/ropazu-novads/index.html",
+      "sha256": "a8909ce6c549e1e2c940be4bcf7328124fed39c518bcc85625334e6f791f5653",
+      "source_id": "latvia--url-eccfd4900d340ee160708fd5",
+      "html_table": 2,
+      "html_row": 11
+    }
+  },
+  {
+    "event_id": "event-b6586973f644d8d270f9c79f",
+    "row_count": 7,
+    "vote_sum": 6913,
+    "supplied_valid_ballots": 6913,
+    "supplied_valid_envelopes": 6997,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/salaspils-novads/index.html",
+      "sha256": "8c24de3ed132df17972a942c72b18ad56e7414033ef9b4a9c425a84e735b35fc",
+      "source_id": "latvia--url-8d8c1a29d2fa7eabde819a51",
+      "html_table": 2,
+      "html_row": 7
+    }
+  },
+  {
+    "event_id": "event-533de26d8d8ff4b6d1e7dac1",
+    "row_count": 6,
+    "vote_sum": 3694,
+    "supplied_valid_ballots": 3694,
+    "supplied_valid_envelopes": 3730,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/saulkrastu-novads/index.html",
+      "sha256": "46b09c54c75bda47fa1e642c75985b0815631597c1a120a5cd20e22e5611f4b0",
+      "source_id": "latvia--url-b8c3ff6c41c05c17ac615e2e",
+      "html_table": 2,
+      "html_row": 7
+    }
+  },
+  {
+    "event_id": "event-aab569df33658f8390527c99",
+    "row_count": 8,
+    "vote_sum": 12176,
+    "supplied_valid_ballots": 12176,
+    "supplied_valid_envelopes": 12250,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/siguldas-novads/index.html",
+      "sha256": "e7a22266e404bf702ce8a45d6471b0c7af5ae5abc284eaa5a2b5bbc4b8905de0",
+      "source_id": "latvia--url-0ecaf6378633fe38b01501c8",
+      "html_table": 2,
+      "html_row": 15
+    }
+  },
+  {
+    "event_id": "event-21975fa1883ce181b56815df",
+    "row_count": 6,
+    "vote_sum": 6492,
+    "supplied_valid_ballots": 6492,
+    "supplied_valid_envelopes": 6554,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/smiltenes-novads/index.html",
+      "sha256": "5449522c4119856572ac551184753b6eda50ed4d67e5b3ae4953d8c101643e41",
+      "source_id": "latvia--url-74efd95cac1f2b994a05da8a",
+      "html_table": 2,
+      "html_row": 20
+    }
+  },
+  {
+    "event_id": "event-475be4108fa83c5ad36eccc0",
+    "row_count": 5,
+    "vote_sum": 2983,
+    "supplied_valid_ballots": 2983,
+    "supplied_valid_envelopes": 3003,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/valkas-novads/index.html",
+      "sha256": "cda13114543d20c30eb730817c42355191eebffe341fa762ff8b7f7bce4e1285",
+      "source_id": "latvia--url-b9571b653b223f951d1e155f",
+      "html_table": 2,
+      "html_row": 10
+    }
+  },
+  {
+    "event_id": "event-e2753396acf345db3c5c4042",
+    "row_count": 8,
+    "vote_sum": 17977,
+    "supplied_valid_ballots": 17977,
+    "supplied_valid_envelopes": 18138,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/vidzeme/valmieras-novads/index.html",
+      "sha256": "ebfe69cfaa19608372d94b893c8d3391f196487e754d7dbd4606827abfd2e0f6",
+      "source_id": "latvia--url-596726d40a8014f361255a60",
+      "html_table": 2,
+      "html_row": 38
+    }
+  },
+  {
+    "event_id": "event-5575cf273899d6146d0952da",
+    "row_count": 6,
+    "vote_sum": 8658,
+    "supplied_valid_ballots": 8658,
+    "supplied_valid_envelopes": 8724,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/aizkraukles-novads/index.html",
+      "sha256": "c25dfe85bfefce45d734cdccda1aadb62ffd6e85291a40b32b38c9bad8d697f9",
+      "source_id": "latvia--url-d9e76c13c2a712b12bfcebe8",
+      "html_table": 2,
+      "html_row": 25
+    }
+  },
+  {
+    "event_id": "event-1a3715f68b7d11573af57540",
+    "row_count": 8,
+    "vote_sum": 12623,
+    "supplied_valid_ballots": 12623,
+    "supplied_valid_envelopes": 12754,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/bauskas-novads/index.html",
+      "sha256": "3d8febc83fdb89894670aece031d66f512974a310163b5ba96a0e38e2947ed1d",
+      "source_id": "latvia--url-8a13d528b610f7f24e2a4482",
+      "html_table": 2,
+      "html_row": 26
+    }
+  },
+  {
+    "event_id": "event-d2149a504e5feadddce8b9a2",
+    "row_count": 6,
+    "vote_sum": 9041,
+    "supplied_valid_ballots": 9041,
+    "supplied_valid_envelopes": 9127,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/dobeles-novads/index.html",
+      "sha256": "6657056d6bc763bae657e371e1fcf9664b0ae75009bfa101b44e58c9d2f0acb1",
+      "source_id": "latvia--url-728234fa1c62a52cc34de859",
+      "html_table": 2,
+      "html_row": 26
+    }
+  },
+  {
+    "event_id": "event-1a4330c6a235cd54e0f1c057",
+    "row_count": 13,
+    "vote_sum": 13640,
+    "supplied_valid_ballots": 13640,
+    "supplied_valid_envelopes": 13748,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jekabpils-novads/index.html",
+      "sha256": "e0395560e4c142c63528c7dd6d9cedf5cf5949379384c9b3170508e87e273db4",
+      "source_id": "latvia--url-66b9722942976e3630ee6a75",
+      "html_table": 2,
+      "html_row": 35
+    }
+  },
+  {
+    "event_id": "event-2f21f91a2139420d48ae82f8",
+    "row_count": 12,
+    "vote_sum": 17965,
+    "supplied_valid_ballots": 17965,
+    "supplied_valid_envelopes": 18129,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jelgava/index.html",
+      "sha256": "2dd9864cc8fde5706f528f1fc67fe4c6c6bc65d07f79c45c63df8bfe3472fcc0",
+      "source_id": "latvia--url-3aeacc50fb2e157d0a7f7b40",
+      "html_table": 2,
+      "html_row": 18
+    }
+  },
+  {
+    "event_id": "event-3880c831870828cfb26ab68d",
+    "row_count": 11,
+    "vote_sum": 10347,
+    "supplied_valid_ballots": 10347,
+    "supplied_valid_envelopes": 10427,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/jelgavas-novads/index.html",
+      "sha256": "8038d8764272605855f84e751603b4f83f9627b67f2ecd80c50a6f7da66f0cfb",
+      "source_id": "latvia--url-055a59dff3973b8929154eb2",
+      "html_table": 2,
+      "html_row": 23
+    }
+  },
+  {
+    "event_id": "event-719cb9aad361dc0497b1bac4",
+    "row_count": 7,
+    "vote_sum": 15157,
+    "supplied_valid_ballots": 15157,
+    "supplied_valid_envelopes": 15281,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/dati.cvk.lv/PV2025/velesanu-rezultati/zemgale/tukuma-novads/index.html",
+      "sha256": "0dd4b522afba6c5575c8f196332b1324b7738b472153ea00154b12cc3567dda1",
+      "source_id": "latvia--url-a356f90bbf41e5928fa868a0",
+      "html_table": 2,
+      "html_row": 32
+    }
+  },
+  {
+    "event_id": "event-ce0ee5f47f9719f22812fa1a",
+    "row_count": 11,
+    "vote_sum": 249130,
+    "supplied_valid_ballots": 249130,
+    "supplied_valid_envelopes": 250107,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[8]"
+    }
+  },
+  {
+    "event_id": "event-3303add57f5cd3d70a322fc1",
+    "row_count": 13,
+    "vote_sum": 27348,
+    "supplied_valid_ballots": 27348,
+    "supplied_valid_envelopes": 27650,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[9]"
+    }
+  },
+  {
+    "event_id": "event-fe0135057fae78945a1ff9f6",
+    "row_count": 8,
+    "vote_sum": 16911,
+    "supplied_valid_ballots": 16911,
+    "supplied_valid_envelopes": 17086,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[10]"
+    }
+  },
+  {
+    "event_id": "event-702b63d172fa521b89485ae6",
+    "row_count": 10,
+    "vote_sum": 7903,
+    "supplied_valid_ballots": 7903,
+    "supplied_valid_envelopes": 7997,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[11]"
+    }
+  },
+  {
+    "event_id": "event-5064c93672c15f7e3ae13417",
+    "row_count": 12,
+    "vote_sum": 17546,
+    "supplied_valid_ballots": 17546,
+    "supplied_valid_envelopes": 17714,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[12]"
+    }
+  },
+  {
+    "event_id": "event-c1c1a0a765d9a701788dc0a8",
+    "row_count": 10,
+    "vote_sum": 23028,
+    "supplied_valid_ballots": 23028,
+    "supplied_valid_envelopes": 23282,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[13]"
+    }
+  },
+  {
+    "event_id": "event-c54a543c432d52df4be81c3b",
+    "row_count": 11,
+    "vote_sum": 11619,
+    "supplied_valid_ballots": 11619,
+    "supplied_valid_envelopes": 11710,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[14]"
+    }
+  },
+  {
+    "event_id": "event-e2caba0f2faec1a1840fbfa7",
+    "row_count": 6,
+    "vote_sum": 9150,
+    "supplied_valid_ballots": 9150,
+    "supplied_valid_envelopes": 9242,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[15]"
+    }
+  },
+  {
+    "event_id": "event-b28f6f9fc0d21a9dde9e15f7",
+    "row_count": 7,
+    "vote_sum": 11320,
+    "supplied_valid_ballots": 11320,
+    "supplied_valid_envelopes": 11535,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[16]"
+    }
+  },
+  {
+    "event_id": "event-b7e00c4c42e861555929940e",
+    "row_count": 5,
+    "vote_sum": 2945,
+    "supplied_valid_ballots": 2945,
+    "supplied_valid_envelopes": 2981,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[17]"
+    }
+  },
+  {
+    "event_id": "event-81cba427afa5a7757c47ffc5",
+    "row_count": 3,
+    "vote_sum": 1810,
+    "supplied_valid_ballots": 1810,
+    "supplied_valid_envelopes": 1853,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[18]"
+    }
+  },
+  {
+    "event_id": "event-44bc9e4401fffa160e0dcbcd",
+    "row_count": 5,
+    "vote_sum": 1875,
+    "supplied_valid_ballots": 1875,
+    "supplied_valid_envelopes": 1923,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[19]"
+    }
+  },
+  {
+    "event_id": "event-562df5fc3bd3670221e1d08a",
+    "row_count": 4,
+    "vote_sum": 2047,
+    "supplied_valid_ballots": 2047,
+    "supplied_valid_envelopes": 2088,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[20]"
+    }
+  },
+  {
+    "event_id": "event-2de1baa1901bf4d7ffdb6351",
+    "row_count": 4,
+    "vote_sum": 1356,
+    "supplied_valid_ballots": 1356,
+    "supplied_valid_envelopes": 1379,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[21]"
+    }
+  },
+  {
+    "event_id": "event-8198bf21960583e854e4fc60",
+    "row_count": 4,
+    "vote_sum": 1562,
+    "supplied_valid_ballots": 1562,
+    "supplied_valid_envelopes": 1575,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[22]"
+    }
+  },
+  {
+    "event_id": "event-3ce163a4b10460e2fa0d06ed",
+    "row_count": 6,
+    "vote_sum": 6158,
+    "supplied_valid_ballots": 6158,
+    "supplied_valid_envelopes": 6250,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[23]"
+    }
+  },
+  {
+    "event_id": "event-bfc0bf9e6fdfce70edf9e461",
+    "row_count": 5,
+    "vote_sum": 1383,
+    "supplied_valid_ballots": 1383,
+    "supplied_valid_envelopes": 1417,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[24]"
+    }
+  },
+  {
+    "event_id": "event-2a186d17724b5b347b7b99d3",
+    "row_count": 7,
+    "vote_sum": 4920,
+    "supplied_valid_ballots": 4920,
+    "supplied_valid_envelopes": 4997,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[25]"
+    }
+  },
+  {
+    "event_id": "event-c1ac289c819429d4ac1e7233",
+    "row_count": 5,
+    "vote_sum": 2152,
+    "supplied_valid_ballots": 2152,
+    "supplied_valid_envelopes": 2186,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[26]"
+    }
+  },
+  {
+    "event_id": "event-4b1136266326620d24d4f8e7",
+    "row_count": 3,
+    "vote_sum": 475,
+    "supplied_valid_ballots": 475,
+    "supplied_valid_envelopes": 483,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[27]"
+    }
+  },
+  {
+    "event_id": "event-7bd0596e3675a63b6f71c16a",
+    "row_count": 4,
+    "vote_sum": 1036,
+    "supplied_valid_ballots": 1036,
+    "supplied_valid_envelopes": 1047,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[28]"
+    }
+  },
+  {
+    "event_id": "event-49570e202038dfdd1fc0c9ed",
+    "row_count": 8,
+    "vote_sum": 7267,
+    "supplied_valid_ballots": 7267,
+    "supplied_valid_envelopes": 7367,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[29]"
+    }
+  },
+  {
+    "event_id": "event-93c804e2930ce001aeb38c56",
+    "row_count": 5,
+    "vote_sum": 3037,
+    "supplied_valid_ballots": 3037,
+    "supplied_valid_envelopes": 3093,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[30]"
+    }
+  },
+  {
+    "event_id": "event-0159dea4547d38e0bde1abe0",
+    "row_count": 1,
+    "vote_sum": 878,
+    "supplied_valid_ballots": 878,
+    "supplied_valid_envelopes": 881,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[31]"
+    }
+  },
+  {
+    "event_id": "event-e9504bfbab54837645b0e386",
+    "row_count": 4,
+    "vote_sum": 3058,
+    "supplied_valid_ballots": 3058,
+    "supplied_valid_envelopes": 3108,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[32]"
+    }
+  },
+  {
+    "event_id": "event-7def6cf7ff48764c3d7f51ed",
+    "row_count": 5,
+    "vote_sum": 6455,
+    "supplied_valid_ballots": 6455,
+    "supplied_valid_envelopes": 6535,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[33]"
+    }
+  },
+  {
+    "event_id": "event-ea5696b60666526f99ab2c66",
+    "row_count": 4,
+    "vote_sum": 1514,
+    "supplied_valid_ballots": 1514,
+    "supplied_valid_envelopes": 1533,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[34]"
+    }
+  },
+  {
+    "event_id": "event-e9e2a4f4454400d1c968e53a",
+    "row_count": 4,
+    "vote_sum": 2084,
+    "supplied_valid_ballots": 2084,
+    "supplied_valid_envelopes": 2131,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[35]"
+    }
+  },
+  {
+    "event_id": "event-347f0631818dcacab8c2d10d",
+    "row_count": 3,
+    "vote_sum": 937,
+    "supplied_valid_ballots": 937,
+    "supplied_valid_envelopes": 950,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[36]"
+    }
+  },
+  {
+    "event_id": "event-89acc65e6150b9c0c3f26230",
+    "row_count": 4,
+    "vote_sum": 2807,
+    "supplied_valid_ballots": 2807,
+    "supplied_valid_envelopes": 2854,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[37]"
+    }
+  },
+  {
+    "event_id": "event-d4076862c34899a54b3d65d0",
+    "row_count": 2,
+    "vote_sum": 1737,
+    "supplied_valid_ballots": 1737,
+    "supplied_valid_envelopes": 1801,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[38]"
+    }
+  },
+  {
+    "event_id": "event-88eb06b76aff6d4f0a6b1981",
+    "row_count": 3,
+    "vote_sum": 1288,
+    "supplied_valid_ballots": 1288,
+    "supplied_valid_envelopes": 1310,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[39]"
+    }
+  },
+  {
+    "event_id": "event-972efc3653155169ee8493f7",
+    "row_count": 3,
+    "vote_sum": 1776,
+    "supplied_valid_ballots": 1776,
+    "supplied_valid_envelopes": 1800,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[40]"
+    }
+  },
+  {
+    "event_id": "event-8e1c6de3d9cf542023c44cac",
+    "row_count": 6,
+    "vote_sum": 6054,
+    "supplied_valid_ballots": 6054,
+    "supplied_valid_envelopes": 6165,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[41]"
+    }
+  },
+  {
+    "event_id": "event-97c3b99fec477c3085ec195c",
+    "row_count": 5,
+    "vote_sum": 2774,
+    "supplied_valid_ballots": 2774,
+    "supplied_valid_envelopes": 2832,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[42]"
+    }
+  },
+  {
+    "event_id": "event-e296a87c9db33187250d169c",
+    "row_count": 5,
+    "vote_sum": 5896,
+    "supplied_valid_ballots": 5896,
+    "supplied_valid_envelopes": 5980,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[43]"
+    }
+  },
+  {
+    "event_id": "event-21b9cb1d04f1aaa8de7a10e8",
+    "row_count": 2,
+    "vote_sum": 2116,
+    "supplied_valid_ballots": 2116,
+    "supplied_valid_envelopes": 2205,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[44]"
+    }
+  },
+  {
+    "event_id": "event-970c088099a1f5e669ba134e",
+    "row_count": 2,
+    "vote_sum": 1117,
+    "supplied_valid_ballots": 1117,
+    "supplied_valid_envelopes": 1142,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[45]"
+    }
+  },
+  {
+    "event_id": "event-6faa9812f1f1ca0c375eb007",
+    "row_count": 4,
+    "vote_sum": 6557,
+    "supplied_valid_ballots": 6557,
+    "supplied_valid_envelopes": 6741,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[46]"
+    }
+  },
+  {
+    "event_id": "event-0a81ed75002f92de82a67150",
+    "row_count": 7,
+    "vote_sum": 6387,
+    "supplied_valid_ballots": 6387,
+    "supplied_valid_envelopes": 6462,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[47]"
+    }
+  },
+  {
+    "event_id": "event-32c5a06eda14920d83505c95",
+    "row_count": 6,
+    "vote_sum": 3355,
+    "supplied_valid_ballots": 3355,
+    "supplied_valid_envelopes": 3422,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[48]"
+    }
+  },
+  {
+    "event_id": "event-a29cd1bae977aaf28b5b739f",
+    "row_count": 5,
+    "vote_sum": 1850,
+    "supplied_valid_ballots": 1850,
+    "supplied_valid_envelopes": 1877,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[49]"
+    }
+  },
+  {
+    "event_id": "event-68b24d20b2dff61b29d2158b",
+    "row_count": 4,
+    "vote_sum": 1030,
+    "supplied_valid_ballots": 1030,
+    "supplied_valid_envelopes": 1046,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[50]"
+    }
+  },
+  {
+    "event_id": "event-757d6632f88b850164fd2bb1",
+    "row_count": 5,
+    "vote_sum": 1565,
+    "supplied_valid_ballots": 1565,
+    "supplied_valid_envelopes": 1597,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[51]"
+    }
+  },
+  {
+    "event_id": "event-d9562711e80a12833100e3f8",
+    "row_count": 5,
+    "vote_sum": 2135,
+    "supplied_valid_ballots": 2135,
+    "supplied_valid_envelopes": 2156,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[52]"
+    }
+  },
+  {
+    "event_id": "event-a2bb097e653d296cf302e5f5",
+    "row_count": 3,
+    "vote_sum": 1286,
+    "supplied_valid_ballots": 1286,
+    "supplied_valid_envelopes": 1311,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[53]"
+    }
+  },
+  {
+    "event_id": "event-46800f79a9b346755d8fe84e",
+    "row_count": 3,
+    "vote_sum": 4503,
+    "supplied_valid_ballots": 4503,
+    "supplied_valid_envelopes": 4580,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[54]"
+    }
+  },
+  {
+    "event_id": "event-4a95e41e0a5858b210674b20",
+    "row_count": 5,
+    "vote_sum": 2498,
+    "supplied_valid_ballots": 2498,
+    "supplied_valid_envelopes": 2519,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[55]"
+    }
+  },
+  {
+    "event_id": "event-8bb12b3e0ba36e965425d974",
+    "row_count": 8,
+    "vote_sum": 1526,
+    "supplied_valid_ballots": 1526,
+    "supplied_valid_envelopes": 1550,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[56]"
+    }
+  },
+  {
+    "event_id": "event-4f38f64a3722147e485b2068",
+    "row_count": 5,
+    "vote_sum": 8094,
+    "supplied_valid_ballots": 8094,
+    "supplied_valid_envelopes": 8195,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[57]"
+    }
+  },
+  {
+    "event_id": "event-cb007318db0c667327f6a8d9",
+    "row_count": 3,
+    "vote_sum": 1881,
+    "supplied_valid_ballots": 1881,
+    "supplied_valid_envelopes": 1934,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[58]"
+    }
+  },
+  {
+    "event_id": "event-b39c77935b6404c479f22350",
+    "row_count": 4,
+    "vote_sum": 705,
+    "supplied_valid_ballots": 705,
+    "supplied_valid_envelopes": 715,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[59]"
+    }
+  },
+  {
+    "event_id": "event-d97c874d0aee265ae48445e6",
+    "row_count": 3,
+    "vote_sum": 3282,
+    "supplied_valid_ballots": 3282,
+    "supplied_valid_envelopes": 3353,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[60]"
+    }
+  },
+  {
+    "event_id": "event-bad4ec8f7cec5be7ec9c9da9",
+    "row_count": 3,
+    "vote_sum": 1189,
+    "supplied_valid_ballots": 1189,
+    "supplied_valid_envelopes": 1203,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[61]"
+    }
+  },
+  {
+    "event_id": "event-7856433b54555c3563cc0dea",
+    "row_count": 4,
+    "vote_sum": 3715,
+    "supplied_valid_ballots": 3715,
+    "supplied_valid_envelopes": 3779,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[62]"
+    }
+  },
+  {
+    "event_id": "event-06db5c0057147aaa2bd0c61b",
+    "row_count": 2,
+    "vote_sum": 1165,
+    "supplied_valid_ballots": 1165,
+    "supplied_valid_envelopes": 1188,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[63]"
+    }
+  },
+  {
+    "event_id": "event-2a610e44cb0099edcd7ce5dc",
+    "row_count": 3,
+    "vote_sum": 2036,
+    "supplied_valid_ballots": 2036,
+    "supplied_valid_envelopes": 2078,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[64]"
+    }
+  },
+  {
+    "event_id": "event-6874f951979f0b80e0e67a4e",
+    "row_count": 3,
+    "vote_sum": 1466,
+    "supplied_valid_ballots": 1466,
+    "supplied_valid_envelopes": 1489,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[65]"
+    }
+  },
+  {
+    "event_id": "event-94263230557c950cdb1830eb",
+    "row_count": 7,
+    "vote_sum": 874,
+    "supplied_valid_ballots": 874,
+    "supplied_valid_envelopes": 893,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[66]"
+    }
+  },
+  {
+    "event_id": "event-6efe41d5a6bcb8a271466b40",
+    "row_count": 2,
+    "vote_sum": 1102,
+    "supplied_valid_ballots": 1102,
+    "supplied_valid_envelopes": 1140,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[67]"
+    }
+  },
+  {
+    "event_id": "event-8c9267255aafe59ee6d79432",
+    "row_count": 8,
+    "vote_sum": 6399,
+    "supplied_valid_ballots": 6399,
+    "supplied_valid_envelopes": 6520,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[68]"
+    }
+  },
+  {
+    "event_id": "event-31f12017726e7b5ce61976ea",
+    "row_count": 6,
+    "vote_sum": 2029,
+    "supplied_valid_ballots": 2029,
+    "supplied_valid_envelopes": 2062,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[69]"
+    }
+  },
+  {
+    "event_id": "event-1e9ac3d95ac090afa59be53f",
+    "row_count": 3,
+    "vote_sum": 3261,
+    "supplied_valid_ballots": 3261,
+    "supplied_valid_envelopes": 3315,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[70]"
+    }
+  },
+  {
+    "event_id": "event-387b6097d4bf04493b3dd80c",
+    "row_count": 7,
+    "vote_sum": 4650,
+    "supplied_valid_ballots": 4650,
+    "supplied_valid_envelopes": 4704,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[71]"
+    }
+  },
+  {
+    "event_id": "event-b3a633a3e717734eef0ec191",
+    "row_count": 5,
+    "vote_sum": 2312,
+    "supplied_valid_ballots": 2312,
+    "supplied_valid_envelopes": 2336,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[72]"
+    }
+  },
+  {
+    "event_id": "event-ca8b59c77af8fea011ef9811",
+    "row_count": 2,
+    "vote_sum": 940,
+    "supplied_valid_ballots": 940,
+    "supplied_valid_envelopes": 981,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[73]"
+    }
+  },
+  {
+    "event_id": "event-596c3aa52b46177e8d9e10ba",
+    "row_count": 4,
+    "vote_sum": 1099,
+    "supplied_valid_ballots": 1099,
+    "supplied_valid_envelopes": 1114,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[74]"
+    }
+  },
+  {
+    "event_id": "event-5e1900c42b63d81197512cc1",
+    "row_count": 8,
+    "vote_sum": 9253,
+    "supplied_valid_ballots": 9253,
+    "supplied_valid_envelopes": 9398,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[75]"
+    }
+  },
+  {
+    "event_id": "event-0bcdeca5be43a96f12f822d4",
+    "row_count": 3,
+    "vote_sum": 1034,
+    "supplied_valid_ballots": 1034,
+    "supplied_valid_envelopes": 1058,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[76]"
+    }
+  },
+  {
+    "event_id": "event-b5a92aa99aadd3675bc86dc0",
+    "row_count": 2,
+    "vote_sum": 993,
+    "supplied_valid_ballots": 993,
+    "supplied_valid_envelopes": 1013,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[77]"
+    }
+  },
+  {
+    "event_id": "event-995371f986ad2cf6e38ce2ea",
+    "row_count": 3,
+    "vote_sum": 1438,
+    "supplied_valid_ballots": 1438,
+    "supplied_valid_envelopes": 1456,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[78]"
+    }
+  },
+  {
+    "event_id": "event-588c3dbfb6120a3fe0b23894",
+    "row_count": 4,
+    "vote_sum": 1446,
+    "supplied_valid_ballots": 1446,
+    "supplied_valid_envelopes": 1459,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[79]"
+    }
+  },
+  {
+    "event_id": "event-92bbfde7af89dedf81a6f102",
+    "row_count": 9,
+    "vote_sum": 12612,
+    "supplied_valid_ballots": 12612,
+    "supplied_valid_envelopes": 12817,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[80]"
+    }
+  },
+  {
+    "event_id": "event-fc221e551b92e1aacc8e0aa0",
+    "row_count": 6,
+    "vote_sum": 3970,
+    "supplied_valid_ballots": 3970,
+    "supplied_valid_envelopes": 4001,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[81]"
+    }
+  },
+  {
+    "event_id": "event-3d1170d08fc70876ae2c7562",
+    "row_count": 8,
+    "vote_sum": 2359,
+    "supplied_valid_ballots": 2359,
+    "supplied_valid_envelopes": 2381,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[82]"
+    }
+  },
+  {
+    "event_id": "event-61f1a3d9157c5ee68902ac08",
+    "row_count": 7,
+    "vote_sum": 3738,
+    "supplied_valid_ballots": 3738,
+    "supplied_valid_envelopes": 3776,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[83]"
+    }
+  },
+  {
+    "event_id": "event-cc4dba58bce16e1577e09af6",
+    "row_count": 7,
+    "vote_sum": 4105,
+    "supplied_valid_ballots": 4105,
+    "supplied_valid_envelopes": 4170,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[84]"
+    }
+  },
+  {
+    "event_id": "event-4e145258736139f2318d2fdd",
+    "row_count": 3,
+    "vote_sum": 3939,
+    "supplied_valid_ballots": 3939,
+    "supplied_valid_envelopes": 4020,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[85]"
+    }
+  },
+  {
+    "event_id": "event-8fe0337e8da63fd2bafcd0a8",
+    "row_count": 5,
+    "vote_sum": 2223,
+    "supplied_valid_ballots": 2223,
+    "supplied_valid_envelopes": 2260,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[86]"
+    }
+  },
+  {
+    "event_id": "event-7eb6b30d4314eb33a466341f",
+    "row_count": 4,
+    "vote_sum": 1007,
+    "supplied_valid_ballots": 1007,
+    "supplied_valid_envelopes": 1027,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[87]"
+    }
+  },
+  {
+    "event_id": "event-74f86e0b092fcdbe32343d44",
+    "row_count": 6,
+    "vote_sum": 8378,
+    "supplied_valid_ballots": 8378,
+    "supplied_valid_envelopes": 8479,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[88]"
+    }
+  },
+  {
+    "event_id": "event-2ec41c00f96657b8378e622b",
+    "row_count": 7,
+    "vote_sum": 2439,
+    "supplied_valid_ballots": 2439,
+    "supplied_valid_envelopes": 2512,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[89]"
+    }
+  },
+  {
+    "event_id": "event-5bd7bf051f50d2ce3e75e5d7",
+    "row_count": 4,
+    "vote_sum": 2063,
+    "supplied_valid_ballots": 2063,
+    "supplied_valid_envelopes": 2092,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[90]"
+    }
+  },
+  {
+    "event_id": "event-bd9546133336dacc5f65596d",
+    "row_count": 14,
+    "vote_sum": 8666,
+    "supplied_valid_ballots": 8666,
+    "supplied_valid_envelopes": 8730,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[91]"
+    }
+  },
+  {
+    "event_id": "event-ebb351d32b3cc3875ccaab2b",
+    "row_count": 6,
+    "vote_sum": 5209,
+    "supplied_valid_ballots": 5209,
+    "supplied_valid_envelopes": 5277,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[92]"
+    }
+  },
+  {
+    "event_id": "event-9ee8b27d9246354f2ff936b7",
+    "row_count": 8,
+    "vote_sum": 6590,
+    "supplied_valid_ballots": 6590,
+    "supplied_valid_envelopes": 6652,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[93]"
+    }
+  },
+  {
+    "event_id": "event-698ceb1bc0cd172d6d7fff30",
+    "row_count": 5,
+    "vote_sum": 2411,
+    "supplied_valid_ballots": 2411,
+    "supplied_valid_envelopes": 2460,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[94]"
+    }
+  },
+  {
+    "event_id": "event-c0f0222c31e62ac05c866659",
+    "row_count": 2,
+    "vote_sum": 6493,
+    "supplied_valid_ballots": 6493,
+    "supplied_valid_envelopes": 6706,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[95]"
+    }
+  },
+  {
+    "event_id": "event-ab738695af1f6422b00f1715",
+    "row_count": 6,
+    "vote_sum": 2616,
+    "supplied_valid_ballots": 2616,
+    "supplied_valid_envelopes": 2634,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[96]"
+    }
+  },
+  {
+    "event_id": "event-9ed148af1f67d79a2491e27d",
+    "row_count": 6,
+    "vote_sum": 3963,
+    "supplied_valid_ballots": 3963,
+    "supplied_valid_envelopes": 4011,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[97]"
+    }
+  },
+  {
+    "event_id": "event-4dfcba53919baabebc24a834",
+    "row_count": 5,
+    "vote_sum": 3243,
+    "supplied_valid_ballots": 3243,
+    "supplied_valid_envelopes": 3339,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[98]"
+    }
+  },
+  {
+    "event_id": "event-6f1c72a8cb6926ef8f922c66",
+    "row_count": 7,
+    "vote_sum": 3390,
+    "supplied_valid_ballots": 3390,
+    "supplied_valid_envelopes": 3438,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[99]"
+    }
+  },
+  {
+    "event_id": "event-7ec1f6371fa4446c35950fa7",
+    "row_count": 8,
+    "vote_sum": 3057,
+    "supplied_valid_ballots": 3057,
+    "supplied_valid_envelopes": 3083,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[100]"
+    }
+  },
+  {
+    "event_id": "event-bddbc1ab7ed7d28061b70227",
+    "row_count": 2,
+    "vote_sum": 2207,
+    "supplied_valid_ballots": 2207,
+    "supplied_valid_envelopes": 2257,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[101]"
+    }
+  },
+  {
+    "event_id": "event-7ca5bbd7f766084340f06eac",
+    "row_count": 3,
+    "vote_sum": 1214,
+    "supplied_valid_ballots": 1214,
+    "supplied_valid_envelopes": 1249,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[102]"
+    }
+  },
+  {
+    "event_id": "event-e6d35880958316b17d7dce39",
+    "row_count": 8,
+    "vote_sum": 6422,
+    "supplied_valid_ballots": 6422,
+    "supplied_valid_envelopes": 6500,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[103]"
+    }
+  },
+  {
+    "event_id": "event-605bbeee6e1297a91e49cabc",
+    "row_count": 8,
+    "vote_sum": 2404,
+    "supplied_valid_ballots": 2404,
+    "supplied_valid_envelopes": 2433,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[104]"
+    }
+  },
+  {
+    "event_id": "event-9d644bdb9d7ddbbdcdfd2dde",
+    "row_count": 2,
+    "vote_sum": 951,
+    "supplied_valid_ballots": 951,
+    "supplied_valid_envelopes": 976,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[105]"
+    }
+  },
+  {
+    "event_id": "event-daf34de060080c1abd4b3846",
+    "row_count": 5,
+    "vote_sum": 3279,
+    "supplied_valid_ballots": 3279,
+    "supplied_valid_envelopes": 3331,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[106]"
+    }
+  },
+  {
+    "event_id": "event-0d75f6641c233a610a999621",
+    "row_count": 9,
+    "vote_sum": 8589,
+    "supplied_valid_ballots": 8589,
+    "supplied_valid_envelopes": 8723,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[107]"
+    }
+  },
+  {
+    "event_id": "event-326f83f3285a8c1a1ba5aa86",
+    "row_count": 4,
+    "vote_sum": 2164,
+    "supplied_valid_ballots": 2164,
+    "supplied_valid_envelopes": 2194,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[108]"
+    }
+  },
+  {
+    "event_id": "event-d7d57034d2507e6082103140",
+    "row_count": 8,
+    "vote_sum": 10821,
+    "supplied_valid_ballots": 10821,
+    "supplied_valid_envelopes": 10933,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[109]"
+    }
+  },
+  {
+    "event_id": "event-8b2bfc2aa81eb2a49f68019a",
+    "row_count": 3,
+    "vote_sum": 1577,
+    "supplied_valid_ballots": 1577,
+    "supplied_valid_envelopes": 1599,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[110]"
+    }
+  },
+  {
+    "event_id": "event-b66ce2cd8b7cf56f44103189",
+    "row_count": 3,
+    "vote_sum": 814,
+    "supplied_valid_ballots": 814,
+    "supplied_valid_envelopes": 836,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[111]"
+    }
+  },
+  {
+    "event_id": "event-c5b9efc13aac7d0472edd8c3",
+    "row_count": 3,
+    "vote_sum": 1530,
+    "supplied_valid_ballots": 1530,
+    "supplied_valid_envelopes": 1549,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[112]"
+    }
+  },
+  {
+    "event_id": "event-a29d2d70da52bccc1bc48f7f",
+    "row_count": 7,
+    "vote_sum": 8772,
+    "supplied_valid_ballots": 8772,
+    "supplied_valid_envelopes": 8890,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[113]"
+    }
+  },
+  {
+    "event_id": "event-b3908c5a26308d530b2e9f9b",
+    "row_count": 5,
+    "vote_sum": 2949,
+    "supplied_valid_ballots": 2949,
+    "supplied_valid_envelopes": 3005,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[114]"
+    }
+  },
+  {
+    "event_id": "event-bb8de3de12c5a25f7ab3c3c2",
+    "row_count": 2,
+    "vote_sum": 2492,
+    "supplied_valid_ballots": 2492,
+    "supplied_valid_envelopes": 2603,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[115]"
+    }
+  },
+  {
+    "event_id": "event-51d5460c7500f26c68b2ea59",
+    "row_count": 2,
+    "vote_sum": 766,
+    "supplied_valid_ballots": 766,
+    "supplied_valid_envelopes": 782,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[116]"
+    }
+  },
+  {
+    "event_id": "event-e5b90d6d24a82629c09fc8a2",
+    "row_count": 3,
+    "vote_sum": 3121,
+    "supplied_valid_ballots": 3121,
+    "supplied_valid_envelopes": 3179,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[117]"
+    }
+  },
+  {
+    "event_id": "event-7eed2c4c6cc6c1c475ce40b4",
+    "row_count": 4,
+    "vote_sum": 5018,
+    "supplied_valid_ballots": 5018,
+    "supplied_valid_envelopes": 5072,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[118]"
+    }
+  },
+  {
+    "event_id": "event-9d4e20d4878f827c57656627",
+    "row_count": 2,
+    "vote_sum": 926,
+    "supplied_valid_ballots": 926,
+    "supplied_valid_envelopes": 953,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[119]"
+    }
+  },
+  {
+    "event_id": "event-70db937a90930d3ec3fa63d3",
+    "row_count": 2,
+    "vote_sum": 2252,
+    "supplied_valid_ballots": 2252,
+    "supplied_valid_envelopes": 2320,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[120]"
+    }
+  },
+  {
+    "event_id": "event-862aa5daec7ab974f7707400",
+    "row_count": 2,
+    "vote_sum": 1311,
+    "supplied_valid_ballots": 1311,
+    "supplied_valid_envelopes": 1349,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[121]"
+    }
+  },
+  {
+    "event_id": "event-a6739b9a48c62756c1045a6f",
+    "row_count": 3,
+    "vote_sum": 2108,
+    "supplied_valid_ballots": 2108,
+    "supplied_valid_envelopes": 2147,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[122]"
+    }
+  },
+  {
+    "event_id": "event-cdbe0d0eb4a8f9eecf27c701",
+    "row_count": 3,
+    "vote_sum": 1247,
+    "supplied_valid_ballots": 1247,
+    "supplied_valid_envelopes": 1273,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[123]"
+    }
+  },
+  {
+    "event_id": "event-39924a8db1c00fee5c53e7b5",
+    "row_count": 9,
+    "vote_sum": 2773,
+    "supplied_valid_ballots": 2773,
+    "supplied_valid_envelopes": 2817,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[124]"
+    }
+  },
+  {
+    "event_id": "event-9aa5bdf9efd98ed194926871",
+    "row_count": 2,
+    "vote_sum": 811,
+    "supplied_valid_ballots": 811,
+    "supplied_valid_envelopes": 821,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[125]"
+    }
+  },
+  {
+    "event_id": "event-bb4423a19f07db6c45c93ce2",
+    "row_count": 4,
+    "vote_sum": 3924,
+    "supplied_valid_ballots": 3924,
+    "supplied_valid_envelopes": 3980,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/data.gov.lv/dati/dataset/a7c824f2-cd4d-4556-a6ba-fcfe2b8bbd94/resource/e6dd9296-ee2f-4892-9082-6da4c5feef26/download/electionresults636363813214220000.xml",
+      "sha256": "7c22845828cefeff1c745512090db704bfa3d95c5adde1066bb18e83c26fc5d4",
+      "source_id": "latvia--url-a8638a876e1d5deb68c1ccb1",
+      "xpath": "/ElectionResultVersionData/DepartmentResults/DepartmentResultModel[126]"
+    }
+  },
+  {
+    "event_id": "event-09c4bf0fdaf21e681dfd2936",
+    "row_count": 13,
+    "vote_sum": 14370,
+    "supplied_valid_ballots": 14370,
+    "supplied_valid_envelopes": 14493,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Jūrmala"
+    }
+  },
+  {
+    "event_id": "event-ee7a97f8a517aebee925d164",
+    "row_count": 6,
+    "vote_sum": 4374,
+    "supplied_valid_ballots": 4374,
+    "supplied_valid_envelopes": 4433,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Alūksnes novads"
+    }
+  },
+  {
+    "event_id": "event-540bdc562c7613dea826d69b",
+    "row_count": 7,
+    "vote_sum": 6054,
+    "supplied_valid_ballots": 6054,
+    "supplied_valid_envelopes": 6089,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Ādažu novads"
+    }
+  },
+  {
+    "event_id": "event-5ac5365763ed5f47992eb26b",
+    "row_count": 10,
+    "vote_sum": 12600,
+    "supplied_valid_ballots": 12600,
+    "supplied_valid_envelopes": 12691,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Cēsu novads"
+    }
+  },
+  {
+    "event_id": "event-7cde673b1ddc78240c1978d7",
+    "row_count": 6,
+    "vote_sum": 4670,
+    "supplied_valid_ballots": 4670,
+    "supplied_valid_envelopes": 4769,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Gulbenes novads"
+    }
+  },
+  {
+    "event_id": "event-e5a122bac4831b59a73d896e",
+    "row_count": 10,
+    "vote_sum": 7626,
+    "supplied_valid_ballots": 7626,
+    "supplied_valid_envelopes": 7665,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Ķekavas novads"
+    }
+  },
+  {
+    "event_id": "event-135d45ef83794fdc08db4286",
+    "row_count": 8,
+    "vote_sum": 8308,
+    "supplied_valid_ballots": 8308,
+    "supplied_valid_envelopes": 8373,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Limbažu novads"
+    }
+  },
+  {
+    "event_id": "event-51cf1413ba8875584d94be47",
+    "row_count": 6,
+    "vote_sum": 8680,
+    "supplied_valid_ballots": 8680,
+    "supplied_valid_envelopes": 8778,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Madonas novads"
+    }
+  },
+  {
+    "event_id": "event-fe8c58a45d127257b097b481",
+    "row_count": 11,
+    "vote_sum": 7959,
+    "supplied_valid_ballots": 7959,
+    "supplied_valid_envelopes": 8001,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Mārupes novads"
+    }
+  },
+  {
+    "event_id": "event-55d5564be9a1de2accce3c24",
+    "row_count": 12,
+    "vote_sum": 17102,
+    "supplied_valid_ballots": 17102,
+    "supplied_valid_envelopes": 17267,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Ogres novads"
+    }
+  },
+  {
+    "event_id": "event-b25b6c48b68e91fac69a66ea",
+    "row_count": 7,
+    "vote_sum": 3668,
+    "supplied_valid_ballots": 3668,
+    "supplied_valid_envelopes": 3715,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Olaines novads"
+    }
+  },
+  {
+    "event_id": "event-44c8cfa0987e2b506f85de48",
+    "row_count": 14,
+    "vote_sum": 7472,
+    "supplied_valid_ballots": 7472,
+    "supplied_valid_envelopes": 7561,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Ropažu novads"
+    }
+  },
+  {
+    "event_id": "event-053b922b3add3bdd820f3795",
+    "row_count": 8,
+    "vote_sum": 4665,
+    "supplied_valid_ballots": 4665,
+    "supplied_valid_envelopes": 4696,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Salaspils novads"
+    }
+  },
+  {
+    "event_id": "event-60f735147ab4e55af7126561",
+    "row_count": 8,
+    "vote_sum": 3268,
+    "supplied_valid_ballots": 3268,
+    "supplied_valid_envelopes": 3297,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Saulkrastu novads"
+    }
+  },
+  {
+    "event_id": "event-61f30e3fd2e7dec960d87a2e",
+    "row_count": 9,
+    "vote_sum": 9061,
+    "supplied_valid_ballots": 9061,
+    "supplied_valid_envelopes": 9111,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Siguldas novads"
+    }
+  },
+  {
+    "event_id": "event-fc657078e5b0e79e2e55a034",
+    "row_count": 6,
+    "vote_sum": 5394,
+    "supplied_valid_ballots": 5394,
+    "supplied_valid_envelopes": 5449,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Smiltenes novads"
+    }
+  },
+  {
+    "event_id": "event-0ea6aa7c132ab9eb7395647b",
+    "row_count": 3,
+    "vote_sum": 2429,
+    "supplied_valid_ballots": 2429,
+    "supplied_valid_envelopes": 2473,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Valkas novads"
+    }
+  },
+  {
+    "event_id": "event-54808ea04a1c2beb028dd0f3",
+    "row_count": 9,
+    "vote_sum": 15605,
+    "supplied_valid_ballots": 15605,
+    "supplied_valid_envelopes": 15695,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Valmieras novads"
+    }
+  },
+  {
+    "event_id": "event-9128513c32783b0e3ed0e03c",
+    "row_count": 10,
+    "vote_sum": 17572,
+    "supplied_valid_ballots": 17572,
+    "supplied_valid_envelopes": 17748,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Daugavpils"
+    }
+  },
+  {
+    "event_id": "event-b4e2db3dfba8d1aa608a4775",
+    "row_count": 5,
+    "vote_sum": 6861,
+    "supplied_valid_ballots": 6861,
+    "supplied_valid_envelopes": 6943,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Rēzekne"
+    }
+  },
+  {
+    "event_id": "event-9683c33da8424825439be6eb",
+    "row_count": 5,
+    "vote_sum": 5934,
+    "supplied_valid_ballots": 5934,
+    "supplied_valid_envelopes": 6004,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Augšdaugavas novads"
+    }
+  },
+  {
+    "event_id": "event-ff61250eb6dc286f91b06c96",
+    "row_count": 9,
+    "vote_sum": 6654,
+    "supplied_valid_ballots": 6654,
+    "supplied_valid_envelopes": 6724,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Balvu novads"
+    }
+  },
+  {
+    "event_id": "event-70cdda2f15e4273faf31d22d",
+    "row_count": 7,
+    "vote_sum": 5817,
+    "supplied_valid_ballots": 5817,
+    "supplied_valid_envelopes": 5852,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Krāslavas novads"
+    }
+  },
+  {
+    "event_id": "event-62e440ad0ab24761f534631a",
+    "row_count": 4,
+    "vote_sum": 3054,
+    "supplied_valid_ballots": 3054,
+    "supplied_valid_envelopes": 3084,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Līvānu novads"
+    }
+  },
+  {
+    "event_id": "event-a3f14998fe54458f440421be",
+    "row_count": 5,
+    "vote_sum": 6797,
+    "supplied_valid_ballots": 6797,
+    "supplied_valid_envelopes": 6867,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Ludzas novads"
+    }
+  },
+  {
+    "event_id": "event-b4c237fbd17436e933b86bb8",
+    "row_count": 8,
+    "vote_sum": 6547,
+    "supplied_valid_ballots": 6547,
+    "supplied_valid_envelopes": 6599,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Preiļu novads"
+    }
+  },
+  {
+    "event_id": "event-3c960c9e9407c3f1880923fa",
+    "row_count": 7,
+    "vote_sum": 13308,
+    "supplied_valid_ballots": 13308,
+    "supplied_valid_envelopes": 13400,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Liepāja"
+    }
+  },
+  {
+    "event_id": "event-0ac9dbb220c6584f19617509",
+    "row_count": 7,
+    "vote_sum": 8306,
+    "supplied_valid_ballots": 8306,
+    "supplied_valid_envelopes": 8398,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Ventspils"
+    }
+  },
+  {
+    "event_id": "event-7fb2f89f2837963ee59918c8",
+    "row_count": 8,
+    "vote_sum": 9586,
+    "supplied_valid_ballots": 9586,
+    "supplied_valid_envelopes": 9673,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Dienvidkurzemes novads"
+    }
+  },
+  {
+    "event_id": "event-a9d1c62841ed46fa06cdd3cf",
+    "row_count": 6,
+    "vote_sum": 7301,
+    "supplied_valid_ballots": 7301,
+    "supplied_valid_envelopes": 7352,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Kuldīgas novads"
+    }
+  },
+  {
+    "event_id": "event-5a061db9c4652bf6f76c90a3",
+    "row_count": 8,
+    "vote_sum": 7044,
+    "supplied_valid_ballots": 7044,
+    "supplied_valid_envelopes": 7114,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Saldus novads"
+    }
+  },
+  {
+    "event_id": "event-109a87626f32252145c040a7",
+    "row_count": 8,
+    "vote_sum": 8960,
+    "supplied_valid_ballots": 8960,
+    "supplied_valid_envelopes": 9071,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Talsu novads"
+    }
+  },
+  {
+    "event_id": "event-066b055680520eb456e98b1b",
+    "row_count": 3,
+    "vote_sum": 2914,
+    "supplied_valid_ballots": 2914,
+    "supplied_valid_envelopes": 2938,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Ventspils novads"
+    }
+  },
+  {
+    "event_id": "event-b34042a4090de61c9b7d1abb",
+    "row_count": 10,
+    "vote_sum": 11516,
+    "supplied_valid_ballots": 11516,
+    "supplied_valid_envelopes": 11618,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Jelgava"
+    }
+  },
+  {
+    "event_id": "event-77e29ba491dbe1c30ac0db02",
+    "row_count": 10,
+    "vote_sum": 7626,
+    "supplied_valid_ballots": 7626,
+    "supplied_valid_envelopes": 7712,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Aizkraukles novads"
+    }
+  },
+  {
+    "event_id": "event-13b5b9d80bea2ce5630afb7a",
+    "row_count": 9,
+    "vote_sum": 8792,
+    "supplied_valid_ballots": 8792,
+    "supplied_valid_envelopes": 8886,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Bauskas novads"
+    }
+  },
+  {
+    "event_id": "event-5b8188478500a4702593664c",
+    "row_count": 6,
+    "vote_sum": 6993,
+    "supplied_valid_ballots": 6993,
+    "supplied_valid_envelopes": 7058,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Dobeles novads"
+    }
+  },
+  {
+    "event_id": "event-9539de11f3ed9273319c2cfa",
+    "row_count": 9,
+    "vote_sum": 6811,
+    "supplied_valid_ballots": 6811,
+    "supplied_valid_envelopes": 6863,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Jelgavas novads"
+    }
+  },
+  {
+    "event_id": "event-8762be79f441f85c1de4118f",
+    "row_count": 12,
+    "vote_sum": 11213,
+    "supplied_valid_ballots": 11213,
+    "supplied_valid_envelopes": 11281,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Jēkabpils novads"
+    }
+  },
+  {
+    "event_id": "event-9a5e89374f24e6a1d64509a7",
+    "row_count": 9,
+    "vote_sum": 11841,
+    "supplied_valid_ballots": 11841,
+    "supplied_valid_envelopes": 11933,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/pv-2021-velesanu-rezultati/index.html",
+      "sha256": "dd364a303f770de1036dcc9da61dfe7c24d5765b33a82dfe28fb80838e8e6cda",
+      "source_id": "latvia--url-99a1a745b454373e8d277db7",
+      "html_table": 1,
+      "html_locator": "row Tukuma novads"
+    }
+  },
+  {
+    "event_id": "event-5e6c18d13289d9f1fe13223f",
+    "row_count": 8,
+    "vote_sum": 6392,
+    "supplied_valid_ballots": 6392,
+    "supplied_valid_envelopes": 6462,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/vrd-2021-velesanu-rezultati/index.html",
+      "sha256": "51bdfede36f60891967ecf2110ab49a7241ba2333c1331f2e0dce73f538e1dae",
+      "source_id": "latvia--url-54137b9f37c020c90408f16f",
+      "html_table": 1,
+      "html_locator": "row Rēzeknes novads"
+    }
+  },
+  {
+    "event_id": "event-ef88c10c6f4d4031baeeccbf",
+    "row_count": 4,
+    "vote_sum": 1491,
+    "supplied_valid_ballots": 1491,
+    "supplied_valid_envelopes": 1511,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/vrd-2021-velesanu-rezultati/index.html",
+      "sha256": "51bdfede36f60891967ecf2110ab49a7241ba2333c1331f2e0dce73f538e1dae",
+      "source_id": "latvia--url-54137b9f37c020c90408f16f",
+      "html_table": 1,
+      "html_locator": "row Varakļānu novads"
+    }
+  },
+  {
+    "event_id": "event-87893be979d9c2905f2e8360",
+    "row_count": 15,
+    "vote_sum": 170123,
+    "supplied_valid_ballots": 170123,
+    "supplied_valid_envelopes": 171206,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/rd-2020-velesanu-rezultati/index.html",
+      "sha256": "f2d618097e38e5754fb595db8dfeb34f2731510a7100ee855ae21055cda66395",
+      "source_id": "latvia--url-11125fefcfd7ced60be8f269",
+      "html_table": 1,
+      "html_locator": "row Rīga"
+    }
+  },
+  {
+    "event_id": "event-f64021667eab7aa071a523b2",
+    "row_count": 13,
+    "vote_sum": 906538,
+    "supplied_valid_ballots": 906538,
+    "supplied_valid_envelopes": 912553,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/12-saeimas-velesanu-rezultati/index.html",
+      "sha256": "1d09f1b1c10861b52e1caa32fd24209dc9c3848a22581353b82cb5deefbac6a7",
+      "source_id": "latvia--url-9a143e19245ce1cc39d83b75",
+      "html_table": 1
+    }
+  },
+  {
+    "event_id": "event-f9095c0f0f2e7f7582c50ad3",
+    "row_count": 16,
+    "vote_sum": 839000,
+    "supplied_valid_ballots": 839000,
+    "supplied_valid_envelopes": 843920,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/13-saeimas-velesanu-rezultati/index.html",
+      "sha256": "1a7be3ba56597b88b76c6a4420e5b81c6f2e7a1017bf7e8bb8f7c9450690e75e",
+      "source_id": "latvia--url-12ff1cde1f320558e20d6b42",
+      "html_table": 2
+    }
+  },
+  {
+    "event_id": "event-b784610d3aa9e1445870abd7",
+    "row_count": 19,
+    "vote_sum": 903639,
+    "supplied_valid_ballots": 903639,
+    "supplied_valid_envelopes": 914022,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/14-saeimas-velesanu-rezultati/index.html",
+      "sha256": "29a61f6026bceb417ba29239a1497ce6fbfa496649d778c8f5dd7c86b1ec4428",
+      "source_id": "latvia--url-9706c8e9e6235dfcc1888160",
+      "html_table": 2
+    }
+  },
+  {
+    "event_id": "event-578f28a7ace27c5d6832a3ab",
+    "row_count": 14,
+    "vote_sum": 440288,
+    "supplied_valid_ballots": 440288,
+    "supplied_valid_envelopes": 443802,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/ep-2014-aktivitate-un-rezultati/index.html",
+      "sha256": "49a1a422da735f13b72f62ba95d089a381d456b72773be42b931d1a5de866a69",
+      "source_id": "latvia--url-70c27054c0310687e890cf85",
+      "html_table": 1
+    }
+  },
+  {
+    "event_id": "event-d47fb70b9a5acda4a314eea5",
+    "row_count": 16,
+    "vote_sum": 470460,
+    "supplied_valid_ballots": 470460,
+    "supplied_valid_envelopes": 473260,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/ep-2019-velesanu-rezultati/index.html",
+      "sha256": "33149d2997d8962d0be23950255bd99622d93385e60afe902efff2605a153063",
+      "source_id": "latvia--url-d8410422c5fa9c1f6c81f1b5",
+      "html_table": 2
+    }
+  },
+  {
+    "event_id": "event-33f738e60ec66f7a5e1565fe",
+    "row_count": 16,
+    "vote_sum": 514585,
+    "supplied_valid_ballots": 514585,
+    "supplied_valid_envelopes": 520367,
+    "matches": true,
+    "origin": {
+      "input_path": "data/research/latvia/sources/arhivs.cvk.lv/lv/ep-2024-velesanu-rezultati/index.html",
+      "sha256": "a14885d3cc1b1a82ed6c2d69c3c3a3cbf394f181bb1f42570c60e70e0e5cdccb",
+      "source_id": "latvia--url-e568e1bd035585baf2aeb4bd",
+      "html_table": 2
+    }
+  }
+]

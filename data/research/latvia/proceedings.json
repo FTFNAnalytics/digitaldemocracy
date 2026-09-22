@@ -1,0 +1,43 @@
+[
+  {
+    "proceeding_id": "proceeding-d7da8b78eaf3b484d34e8c8e",
+    "office_id": "LV-PRESIDENT",
+    "history_key": "LV-PRESIDENT::PRES2015",
+    "event_id": "event-37060bdb3aff7f17cbc9e0fe",
+    "sequence": 5,
+    "proceeding_kind": "runoff",
+    "date_label": "2015-06-03",
+    "origin": {
+      "input_path": "data/research/latvia/sources/www.president.lv/en/biography-0/index.html",
+      "sha256": "bfa3200d3f5745304fe12b541b7b858a565fd962be4aece007fa9b38a97d5cd1",
+      "source_id": "latvia--url-cce8d5a271fbecac92151cb0",
+      "html_locator": "President of Latvia: fifth voting on June 3, 55 MPs"
+    },
+    "raw": {
+      "ballot_mechanism": "fifth parliamentary ballot; earlier ballots not recovered"
+    }
+  },
+  {
+    "proceeding_id": "proceeding-3da7d0fa832ce5544c9a996e",
+    "office_id": "LV-PRESIDENT",
+    "history_key": "LV-PRESIDENT::PRES2023",
+    "event_id": "event-512a46cff5d8b25eb1f60d35",
+    "sequence": 1,
+    "proceeding_kind": "first_round",
+    "date_label": "2023-05-31",
+    "origin": {
+      "input_path": "data/research/latvia/sources/titania.saeima.lv/LIVS14/saeimalivs_lmp.nsf/0/a6fd83b30943d24fc22589c0002cbc17/$FILE/Balsojums.pdf",
+      "sha256": "c86cef9fdc2ebb45b83d6f3653dda2707fe5e0333714f5dcd373795ed7b37be5",
+      "source_id": "latvia--url-d1b8c7f7ce466da02fd4c8a7",
+      "pdf_page": 4,
+      "locator": "signed outcome: first round no President elected"
+    },
+    "raw": {
+      "protocol_number": 8,
+      "source_ballot_form_number": 6,
+      "valid_ballots": 87,
+      "against_all": 10,
+      "form_number_is_not_round_number": true
+    }
+  }
+]
