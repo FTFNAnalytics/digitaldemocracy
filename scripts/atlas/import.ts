@@ -3,7 +3,7 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
- * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -415,6 +415,30 @@ function main() {
       console.log(`spain_unresolved=${result.spain.counts.unresolved_evidence}`);
       console.log(`spain_approved=${result.spain.counts.approved_classifications}`);
       console.log(`spain_needs_review=${result.spain.counts.needs_review_classifications}`);
+    }
+    if (result.estonia) {
+      console.log("lineage=country-package-estonia");
+      console.log(`estonia_attempt_id=${result.estonia.attemptId}`);
+      console.log(`estonia_release_id=${result.estonia.releaseId}`);
+      console.log(`estonia_fingerprint_sha256=${result.estonia.fingerprint}`);
+      console.log(`estonia_reused_release=${result.estonia.reusedRelease ? "yes" : "no"}`);
+      console.log(`estonia_offices=${result.estonia.counts.offices}`);
+      console.log(`estonia_current=${result.estonia.counts.current_offices}`);
+      console.log(`estonia_historical=${result.estonia.counts.historical_offices}`);
+      console.log(`estonia_municipal=${result.estonia.counts.municipal_offices}`);
+      console.log(`estonia_regional=${result.estonia.counts.regional_offices}`);
+      console.log(`estonia_national=${result.estonia.counts.national_offices}`);
+      console.log(`estonia_other=${result.estonia.counts.other_offices}`);
+      console.log(`estonia_selected_histories=${result.estonia.counts.selected_histories}`);
+      console.log(`estonia_prospective_events=${result.estonia.counts.prospective_events}`);
+      console.log(`estonia_result_rows=${result.estonia.counts.result_rows}`);
+      console.log(`estonia_proceedings=${result.estonia.counts.proceedings}`);
+      console.log(`estonia_sources=${result.estonia.counts.sources}`);
+      console.log(`estonia_unresolved=${result.estonia.counts.unresolved_evidence}`);
+      console.log(`estonia_approved=${result.estonia.counts.approved_classifications}`);
+      console.log(`estonia_needs_review=${result.estonia.counts.needs_review_classifications}`);
+      console.log(`estonia_current_councils=${result.estonia.counts.current_councils}`);
+      console.log(`estonia_current_direct_executive_offices=${result.estonia.counts.current_direct_executive_offices}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
