@@ -72,7 +72,7 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 
 ## CI
 
-`tests/atlas/continuity-import.test.ts` covers the approved-pack gate, Albania-only import, and Albania+NZ/Andorra/Alderney/Armenia/Belgium/Bosnia serial publication. Heavier serial cases are split so no Vitest file exceeds the 60s worker RPC timeout: `tests/atlas/continuity-import-heavy.test.ts` (Austria, Bulgaria), `tests/atlas/continuity-import-switzerland.test.ts` (Netherlands, Switzerland), `tests/atlas/denmark-import.test.ts` (Albania+Denmark), and `tests/atlas/sweden-import.test.ts` (Albania+Sweden), and `tests/atlas/finland-import.test.ts` (Albania+Finland).
+`tests/atlas/continuity-import.test.ts` covers the approved-pack gate, Albania-only import, and Albania+NZ/Andorra/Alderney/Armenia/Belgium/Bosnia serial publication. Heavier serial cases are split so no Vitest file exceeds the 60s worker RPC timeout: `tests/atlas/continuity-import-heavy.test.ts` (Austria, Bulgaria), `tests/atlas/continuity-import-switzerland.test.ts` (Netherlands, Switzerland), `tests/atlas/denmark-import.test.ts` (Albania+Denmark), `tests/atlas/sweden-import.test.ts` (Albania+Sweden), `tests/atlas/finland-import.test.ts` (Albania+Finland), `tests/atlas/cli-sweden.test.ts` (Sweden CLI smoke), and `tests/atlas/cli-finland.test.ts` (Finland CLI smoke).
 
 `npm run test:atlas-import` (wired in GitHub CI after `npm test`) builds a temp SQLite and asserts the full approved set:
 

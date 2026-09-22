@@ -1,0 +1,478 @@
+[
+  {
+    "proceeding_id": "proceeding-80bd9a1beb414a4be8f80a25",
+    "event_id": "event-26a2a9b6757e472d8dbd1492",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_1992",
+    "sequence": 1,
+    "proceeding_kind": "first_round",
+    "label": "popular_transitional",
+    "date_label": "1992-09-20",
+    "electoral_body": "popular_transitional",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-1992/index.html",
+      "sha256": "bf6707cda6b58c43cdffbcc16a22174420313357ed63973abac73c4d4ff64d0b",
+      "html_locator": "national total",
+      "source_id": "estonia--url-7f8dd3364fdd9a8dc1f3a299"
+    },
+    "raw": {}
+  },
+  {
+    "proceeding_id": "proceeding-3251eba44418f090d4a5ffb9",
+    "event_id": "event-26a2a9b6757e472d8dbd1492",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_1992",
+    "sequence": 2,
+    "proceeding_kind": "runoff",
+    "label": "Riigikogu",
+    "date_label": "1992-10-05",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-1992/index.html",
+      "sha256": "bf6707cda6b58c43cdffbcc16a22174420313357ed63973abac73c4d4ff64d0b",
+      "html_locator": "final Candidate Votes table",
+      "source_id": "estonia--url-7f8dd3364fdd9a8dc1f3a299"
+    },
+    "raw": {}
+  },
+  {
+    "proceeding_id": "proceeding-dd7fbaf1cac3d5f441b0fecd",
+    "event_id": "event-27378a25afaab79578d6d30e",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_1996",
+    "sequence": 1,
+    "proceeding_kind": "first_round",
+    "label": "Riigikogu ballot 1",
+    "date_label": "1996-08-26",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-1996/index.html",
+      "sha256": "c5515d6964fcd072ab7fcd016b3307c149ed99bbb7dc0a4e105b3d318bae2f71",
+      "html_table": 2,
+      "source_id": "estonia--url-48768c27fc71218ff9b9b97b"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-b9251b009d7816bf2ce446f6",
+    "event_id": "event-27378a25afaab79578d6d30e",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_1996",
+    "sequence": 2,
+    "proceeding_kind": "runoff",
+    "label": "Riigikogu ballot 2",
+    "date_label": "1996-08-27",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-1996/index.html",
+      "sha256": "c5515d6964fcd072ab7fcd016b3307c149ed99bbb7dc0a4e105b3d318bae2f71",
+      "html_table": 4,
+      "source_id": "estonia--url-48768c27fc71218ff9b9b97b"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-49b007abf84e83c0d1bf59c0",
+    "event_id": "event-27378a25afaab79578d6d30e",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_1996",
+    "sequence": 3,
+    "proceeding_kind": "runoff",
+    "label": "Riigikogu ballot 3",
+    "date_label": "1996-08-27",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-1996/index.html",
+      "sha256": "c5515d6964fcd072ab7fcd016b3307c149ed99bbb7dc0a4e105b3d318bae2f71",
+      "html_table": 6,
+      "source_id": "estonia--url-48768c27fc71218ff9b9b97b"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-7c0c0618cefdaabc49aa54ff",
+    "event_id": "event-27378a25afaab79578d6d30e",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_1996",
+    "sequence": 4,
+    "proceeding_kind": "runoff",
+    "label": "electoral_body ballot 4",
+    "date_label": "1996-09-20",
+    "electoral_body": "electoral_body",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-1996/index.html",
+      "sha256": "c5515d6964fcd072ab7fcd016b3307c149ed99bbb7dc0a4e105b3d318bae2f71",
+      "html_table": 8,
+      "source_id": "estonia--url-48768c27fc71218ff9b9b97b"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-03d182eaf1fbcde8136176ba",
+    "event_id": "event-27378a25afaab79578d6d30e",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_1996",
+    "sequence": 5,
+    "proceeding_kind": "runoff",
+    "label": "electoral_body ballot 5",
+    "date_label": "1996-09-20",
+    "electoral_body": "electoral_body",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-1996/index.html",
+      "sha256": "c5515d6964fcd072ab7fcd016b3307c149ed99bbb7dc0a4e105b3d318bae2f71",
+      "html_table": 10,
+      "source_id": "estonia--url-48768c27fc71218ff9b9b97b"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-467176679dcdcc3abb4d6559",
+    "event_id": "event-6dfb0d205af0c12ef22cea32",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2001",
+    "sequence": 1,
+    "proceeding_kind": "first_round",
+    "label": "Riigikogu ballot 1",
+    "date_label": "2001-08-27",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2001/index.html",
+      "sha256": "78f12f68ce8f27468a85f9c214e1a556e5c7893c9cb2ca38dbaa9dd32aa0b655",
+      "html_table": 2,
+      "source_id": "estonia--url-bfbb40e775b18a8020cc0995"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-784bb2ba1dbe4cffb507f8a9",
+    "event_id": "event-6dfb0d205af0c12ef22cea32",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2001",
+    "sequence": 2,
+    "proceeding_kind": "runoff",
+    "label": "Riigikogu ballot 2",
+    "date_label": "2001-08-28",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2001/index.html",
+      "sha256": "78f12f68ce8f27468a85f9c214e1a556e5c7893c9cb2ca38dbaa9dd32aa0b655",
+      "html_table": 4,
+      "source_id": "estonia--url-bfbb40e775b18a8020cc0995"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-926bca774a458a634a848f7e",
+    "event_id": "event-6dfb0d205af0c12ef22cea32",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2001",
+    "sequence": 3,
+    "proceeding_kind": "runoff",
+    "label": "Riigikogu ballot 3",
+    "date_label": "2001-08-28",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2001/index.html",
+      "sha256": "78f12f68ce8f27468a85f9c214e1a556e5c7893c9cb2ca38dbaa9dd32aa0b655",
+      "html_table": 6,
+      "source_id": "estonia--url-bfbb40e775b18a8020cc0995"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-e163ddb2f8f1daeffba2577c",
+    "event_id": "event-6dfb0d205af0c12ef22cea32",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2001",
+    "sequence": 4,
+    "proceeding_kind": "runoff",
+    "label": "electoral_body ballot 4",
+    "date_label": "2001-09-21",
+    "electoral_body": "electoral_body",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2001/index.html",
+      "sha256": "78f12f68ce8f27468a85f9c214e1a556e5c7893c9cb2ca38dbaa9dd32aa0b655",
+      "html_table": 8,
+      "source_id": "estonia--url-bfbb40e775b18a8020cc0995"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-4165f8e8ba63c0773936706c",
+    "event_id": "event-6dfb0d205af0c12ef22cea32",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2001",
+    "sequence": 5,
+    "proceeding_kind": "runoff",
+    "label": "electoral_body ballot 5",
+    "date_label": "2001-09-21",
+    "electoral_body": "electoral_body",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2001/index.html",
+      "sha256": "78f12f68ce8f27468a85f9c214e1a556e5c7893c9cb2ca38dbaa9dd32aa0b655",
+      "html_table": 10,
+      "source_id": "estonia--url-bfbb40e775b18a8020cc0995"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-870d7eddcecd4e03244b53e9",
+    "event_id": "event-237e9c0113aabf7a9f23a444",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2006",
+    "sequence": 1,
+    "proceeding_kind": "first_round",
+    "label": "Riigikogu ballot 1",
+    "date_label": "2006-08-28",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2006/index.html",
+      "sha256": "14e52bd8d73423e98aab5f8f54d669b9d4911c8de68746fd6fb4dae2a0ee7f03",
+      "html_table": 2,
+      "source_id": "estonia--url-d2ab09f43ce56d43bb28c446"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-8d1f04e63bd1ead9641ac72a",
+    "event_id": "event-237e9c0113aabf7a9f23a444",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2006",
+    "sequence": 2,
+    "proceeding_kind": "runoff",
+    "label": "Riigikogu ballot 2",
+    "date_label": "2006-08-29",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2006/index.html",
+      "sha256": "14e52bd8d73423e98aab5f8f54d669b9d4911c8de68746fd6fb4dae2a0ee7f03",
+      "html_table": 4,
+      "source_id": "estonia--url-d2ab09f43ce56d43bb28c446"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-cfc8050297a9459e02791bac",
+    "event_id": "event-237e9c0113aabf7a9f23a444",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2006",
+    "sequence": 3,
+    "proceeding_kind": "runoff",
+    "label": "Riigikogu ballot 3",
+    "date_label": "2006-08-29",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2006/index.html",
+      "sha256": "14e52bd8d73423e98aab5f8f54d669b9d4911c8de68746fd6fb4dae2a0ee7f03",
+      "html_table": 6,
+      "source_id": "estonia--url-d2ab09f43ce56d43bb28c446"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-c37c708d98fd6ef4def058d1",
+    "event_id": "event-237e9c0113aabf7a9f23a444",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2006",
+    "sequence": 4,
+    "proceeding_kind": "runoff",
+    "label": "electoral_body ballot 4",
+    "date_label": "2006-09-23",
+    "electoral_body": "electoral_body",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2006/index.html",
+      "sha256": "14e52bd8d73423e98aab5f8f54d669b9d4911c8de68746fd6fb4dae2a0ee7f03",
+      "html_table": 8,
+      "source_id": "estonia--url-d2ab09f43ce56d43bb28c446"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-9dbf841f02b4cebe519b8063",
+    "event_id": "event-a9c2469c5a914a7cd9115b9f",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2011",
+    "sequence": 1,
+    "proceeding_kind": "first_round",
+    "label": "Riigikogu ballot 1",
+    "date_label": "2011-08-29",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2011/index.html",
+      "sha256": "0c2215439f6dcb5d7de4b38319ef4f32a65cf64feef2bf40c39c063575e1b286",
+      "html_table": 2,
+      "source_id": "estonia--url-3839b6f5160205cb53d82ccf"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-8ce6c3af5f4504cd35d3bd49",
+    "event_id": "event-09b21320841577a56279e713",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2016",
+    "sequence": 1,
+    "proceeding_kind": "first_round",
+    "label": "Riigikogu ballot 1",
+    "date_label": "2016-08-29",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2016/index.html",
+      "sha256": "435d027392599002441da787f7fdb10b2fce61fe0adb6e7261068d1b5117d889",
+      "html_table": 2,
+      "source_id": "estonia--url-7c0f4b879119bdd5a2c509bf"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-63e820422151e5b18d51e10a",
+    "event_id": "event-09b21320841577a56279e713",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2016",
+    "sequence": 2,
+    "proceeding_kind": "runoff",
+    "label": "Riigikogu ballot 2",
+    "date_label": "2016-08-30",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2016/index.html",
+      "sha256": "435d027392599002441da787f7fdb10b2fce61fe0adb6e7261068d1b5117d889",
+      "html_table": 4,
+      "source_id": "estonia--url-7c0f4b879119bdd5a2c509bf"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-701a90c04fc9a5630d3b8e26",
+    "event_id": "event-09b21320841577a56279e713",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2016",
+    "sequence": 3,
+    "proceeding_kind": "runoff",
+    "label": "Riigikogu ballot 3",
+    "date_label": "2016-08-30",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2016/index.html",
+      "sha256": "435d027392599002441da787f7fdb10b2fce61fe0adb6e7261068d1b5117d889",
+      "html_table": 6,
+      "source_id": "estonia--url-7c0f4b879119bdd5a2c509bf"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-b065806ce12f4726e1c17d8b",
+    "event_id": "event-09b21320841577a56279e713",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2016",
+    "sequence": 4,
+    "proceeding_kind": "runoff",
+    "label": "electoral_body ballot 4",
+    "date_label": "2016-09-24",
+    "electoral_body": "electoral_body",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2016/index.html",
+      "sha256": "435d027392599002441da787f7fdb10b2fce61fe0adb6e7261068d1b5117d889",
+      "html_table": 8,
+      "source_id": "estonia--url-7c0f4b879119bdd5a2c509bf"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-ab0e71cb3ab07434d34cb5d9",
+    "event_id": "event-09b21320841577a56279e713",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2016",
+    "sequence": 5,
+    "proceeding_kind": "runoff",
+    "label": "electoral_body ballot 5",
+    "date_label": "2016-09-24",
+    "electoral_body": "electoral_body",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2016/index.html",
+      "sha256": "435d027392599002441da787f7fdb10b2fce61fe0adb6e7261068d1b5117d889",
+      "html_table": 10,
+      "source_id": "estonia--url-7c0f4b879119bdd5a2c509bf"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-27053c97c40b19529b38d082",
+    "event_id": "event-09b21320841577a56279e713",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2016",
+    "sequence": 6,
+    "proceeding_kind": "repeat",
+    "label": "Riigikogu ballot 6",
+    "date_label": "2016-10-03",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2016/index.html",
+      "sha256": "435d027392599002441da787f7fdb10b2fce61fe0adb6e7261068d1b5117d889",
+      "html_table": 12,
+      "source_id": "estonia--url-7c0f4b879119bdd5a2c509bf"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  },
+  {
+    "proceeding_id": "proceeding-22059ac88bfcce03c1c9c72f",
+    "event_id": "event-0be59d7c59d10cbeecf5f200",
+    "office_id": "EE-PRESIDENT",
+    "history_key": "EE-PRESIDENT::PRES_2026",
+    "sequence": 1,
+    "proceeding_kind": "first_round",
+    "label": "Riigikogu ballot 1",
+    "date_label": "2026-09-02",
+    "electoral_body": "Riigikogu",
+    "origin": {
+      "input_path": "data/research/estonia/sources/www.valimised.ee/en/archive/president-republic-estonia-elections/election-president-republic-2026/index.html",
+      "sha256": "cf078922e974bdce09a385792d2490b7e9b8c40c1a64310e4e57ec00877d0293",
+      "html_table": 2,
+      "source_id": "estonia--url-dd397c67c565c9120f333a0f"
+    },
+    "raw": {
+      "round_kind_note": "Subsequent statutory ballot; not a separate ordinary election. Last 2016 ballot is renewed Riigikogu election."
+    }
+  }
+]
