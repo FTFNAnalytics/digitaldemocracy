@@ -1,0 +1,272 @@
+[
+  {
+    "office_id": "GR-EP",
+    "date": "1981",
+    "precision": "year",
+    "coverage": "election_year_evidenced_by_EP_turnout_history_no_result_vector_asserted",
+    "result_rows": 0,
+    "rows_with_votes": 0,
+    "known_seats": 0
+  },
+  {
+    "office_id": "GR-EP",
+    "date": "1984",
+    "precision": "year",
+    "coverage": "EP_constitutive_session_party_seats_and_available_shares",
+    "result_rows": 5,
+    "rows_with_votes": 0,
+    "known_seats": 24
+  },
+  {
+    "office_id": "GR-EP",
+    "date": "1989",
+    "precision": "year",
+    "coverage": "EP_constitutive_session_party_seats_and_available_shares",
+    "result_rows": 5,
+    "rows_with_votes": 0,
+    "known_seats": 24
+  },
+  {
+    "office_id": "GR-EP",
+    "date": "1994",
+    "precision": "year",
+    "coverage": "EP_constitutive_session_party_seats_and_available_shares",
+    "result_rows": 6,
+    "rows_with_votes": 0,
+    "known_seats": 25
+  },
+  {
+    "office_id": "GR-EP",
+    "date": "1999",
+    "precision": "year",
+    "coverage": "EP_constitutive_session_party_seats_and_available_shares",
+    "result_rows": 6,
+    "rows_with_votes": 0,
+    "known_seats": 25
+  },
+  {
+    "office_id": "GR-EP",
+    "date": "2004",
+    "precision": "year",
+    "coverage": "EP_constitutive_session_party_seats_and_available_shares",
+    "result_rows": 6,
+    "rows_with_votes": 0,
+    "known_seats": 24
+  },
+  {
+    "office_id": "GR-EP",
+    "date": "2009",
+    "precision": "year",
+    "coverage": "EP_constitutive_session_party_seats_and_available_shares",
+    "result_rows": 7,
+    "rows_with_votes": 0,
+    "known_seats": 22
+  },
+  {
+    "office_id": "GR-EP",
+    "date": "2014-05-25",
+    "precision": "day",
+    "coverage": "full_published_national_vector",
+    "result_rows": 43,
+    "rows_with_votes": 43,
+    "known_seats": 21
+  },
+  {
+    "office_id": "GR-EP",
+    "date": "2019-05-26",
+    "precision": "day",
+    "coverage": "full_published_national_vector",
+    "result_rows": 40,
+    "rows_with_votes": 40,
+    "known_seats": 21
+  },
+  {
+    "office_id": "GR-EP",
+    "date": "2024-06-09",
+    "precision": "day",
+    "coverage": "full_published_national_vector",
+    "result_rows": 31,
+    "rows_with_votes": 31,
+    "known_seats": 21
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1974-11-17",
+    "precision": "day",
+    "coverage": "seat_winning_parties_only",
+    "result_rows": 4,
+    "rows_with_votes": 4,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1977-11-20",
+    "precision": "day",
+    "coverage": "seat_winning_parties_only",
+    "result_rows": 7,
+    "rows_with_votes": 7,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1981-10-18",
+    "precision": "day",
+    "coverage": "seat_winning_parties_only",
+    "result_rows": 3,
+    "rows_with_votes": 3,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1985-06-02",
+    "precision": "day",
+    "coverage": "seat_winning_parties_only",
+    "result_rows": 4,
+    "rows_with_votes": 4,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1989-06-18",
+    "precision": "day",
+    "coverage": "seat_winning_parties_only",
+    "result_rows": 5,
+    "rows_with_votes": 5,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1989-11-05",
+    "precision": "day",
+    "coverage": "seat_winning_parties_only",
+    "result_rows": 5,
+    "rows_with_votes": 4,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1990-04-08",
+    "precision": "day",
+    "coverage": "seat_winning_parties_only",
+    "result_rows": 6,
+    "rows_with_votes": 5,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1993-10-10",
+    "precision": "day",
+    "coverage": "seat_winning_parties_only",
+    "result_rows": 4,
+    "rows_with_votes": 4,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1996-09-22",
+    "precision": "day",
+    "coverage": "seat_winning_parties_only",
+    "result_rows": 5,
+    "rows_with_votes": 5,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2000-04-09",
+    "precision": "day",
+    "coverage": "seat_winning_parties_only",
+    "result_rows": 4,
+    "rows_with_votes": 4,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2004-03-07",
+    "precision": "day",
+    "coverage": "full_published_national_vote_vector_seats_for_four_winning_parties",
+    "result_rows": 17,
+    "rows_with_votes": 17,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2007-09-16",
+    "precision": "day",
+    "coverage": "full_published_national_vector",
+    "result_rows": 22,
+    "rows_with_votes": 22,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2009-10-04",
+    "precision": "day",
+    "coverage": "full_published_national_vector",
+    "result_rows": 24,
+    "rows_with_votes": 24,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2012-05-06",
+    "precision": "day",
+    "coverage": "full_published_national_vector",
+    "result_rows": 32,
+    "rows_with_votes": 32,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2012-06-17",
+    "precision": "day",
+    "coverage": "full_published_national_vector",
+    "result_rows": 22,
+    "rows_with_votes": 22,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2015-01-25",
+    "precision": "day",
+    "coverage": "full_published_national_vector",
+    "result_rows": 23,
+    "rows_with_votes": 23,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2015-09-20",
+    "precision": "day",
+    "coverage": "full_published_national_vector",
+    "result_rows": 20,
+    "rows_with_votes": 20,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2019-07-07",
+    "precision": "day",
+    "coverage": "full_published_national_vector",
+    "result_rows": 21,
+    "rows_with_votes": 21,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2023-05-21",
+    "precision": "day",
+    "coverage": "full_published_national_vector",
+    "result_rows": 36,
+    "rows_with_votes": 36,
+    "known_seats": 300
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2023-06-25",
+    "precision": "day",
+    "coverage": "full_published_national_vector",
+    "result_rows": 31,
+    "rows_with_votes": 31,
+    "known_seats": 300
+  }
+]

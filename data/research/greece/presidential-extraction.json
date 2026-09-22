@@ -1,0 +1,550 @@
+{
+  "events": [
+    {
+      "cycle": "2025",
+      "date": "2025-01-25",
+      "coverage": "all_four_ballots_all_candidates_original_minutes",
+      "constitutional_gate": "2019 amendment; no dissolution after failed third ballot",
+      "source_paths": [
+        "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20250125.pdf",
+        "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20250131.pdf",
+        "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20250206.pdf",
+        "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20250212.pdf"
+      ],
+      "ballots": [
+        {
+          "date": "2025-01-25",
+          "sequence": 1,
+          "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20250125.pdf",
+          "locator": "PDF page 21 (one based), Speaker announcement of counted votes",
+          "candidates": [
+            {
+              "name": "Κωνσταντίνος Τασούλας",
+              "votes": 160,
+              "elected": 0
+            },
+            {
+              "name": "Αναστάσιος Γιαννίτσης",
+              "votes": 34,
+              "elected": 0
+            },
+            {
+              "name": "Λούκα Κατσέλη",
+              "votes": 40,
+              "elected": 0
+            },
+            {
+              "name": "Κωνσταντίνος Κυριακού",
+              "votes": 14,
+              "elected": 0
+            }
+          ],
+          "attendance": 297,
+          "abstentions": 49,
+          "absent": 3,
+          "transcription_method": "manual_checked_against_original_minutes",
+          "source_excerpt": null
+        },
+        {
+          "date": "2025-01-31",
+          "sequence": 2,
+          "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20250131.pdf",
+          "locator": "PDF page 24 (one based), Speaker announcement of counted votes",
+          "candidates": [
+            {
+              "name": "Κωνσταντίνος Τασούλας",
+              "votes": 160,
+              "elected": 0
+            },
+            {
+              "name": "Αναστάσιος Γιαννίτσης",
+              "votes": 34,
+              "elected": 0
+            },
+            {
+              "name": "Λούκα Κατσέλη",
+              "votes": 40,
+              "elected": 0
+            },
+            {
+              "name": "Κωνσταντίνος Κυριακού",
+              "votes": 14,
+              "elected": 0
+            }
+          ],
+          "attendance": 300,
+          "abstentions": 52,
+          "absent": 0,
+          "transcription_method": "manual_checked_against_original_minutes",
+          "source_excerpt": null
+        },
+        {
+          "date": "2025-02-06",
+          "sequence": 3,
+          "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20250206.pdf",
+          "locator": "PDF page 21 (one based), Speaker announcement of counted votes",
+          "candidates": [
+            {
+              "name": "Κωνσταντίνος Τασούλας",
+              "votes": 160,
+              "elected": 0
+            },
+            {
+              "name": "Αναστάσιος Γιαννίτσης",
+              "votes": 34,
+              "elected": 0
+            },
+            {
+              "name": "Λούκα Κατσέλη",
+              "votes": 40,
+              "elected": 0
+            },
+            {
+              "name": "Κωνσταντίνος Κυριακού",
+              "votes": 14,
+              "elected": 0
+            }
+          ],
+          "attendance": 300,
+          "abstentions": 52,
+          "absent": 0,
+          "transcription_method": "manual_checked_against_original_minutes",
+          "source_excerpt": null
+        },
+        {
+          "date": "2025-02-12",
+          "sequence": 4,
+          "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20250212.pdf",
+          "locator": "PDF page 15 (one based), Speaker announcement of counted votes",
+          "candidates": [
+            {
+              "name": "Κωνσταντίνος Τασούλας",
+              "votes": 160,
+              "elected": 1
+            },
+            {
+              "name": "Αναστάσιος Γιαννίτσης",
+              "votes": 34,
+              "elected": 0
+            },
+            {
+              "name": "Λούκα Κατσέλη",
+              "votes": 29,
+              "elected": 0
+            },
+            {
+              "name": "Κωνσταντίνος Κυριακού",
+              "votes": 14,
+              "elected": 0
+            }
+          ],
+          "attendance": 276,
+          "abstentions": 39,
+          "absent": 24,
+          "transcription_method": "manual_checked_against_original_minutes",
+          "source_excerpt": null
+        }
+      ]
+    },
+    {
+      "cycle": "2020",
+      "date": "2020-01-22",
+      "coverage": "full_candidate_ballot_original_minutes",
+      "source_paths": [
+        "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20200122.pdf"
+      ],
+      "ballots": [
+        {
+          "date": "2020-01-22",
+          "sequence": 1,
+          "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20200122.pdf",
+          "locator": "PDF page 14 (one based), Speaker announcement of counted votes",
+          "candidates": [
+            {
+              "name": "Αικατερίνη Σακελλαροπούλου",
+              "votes": 261,
+              "elected": 1
+            }
+          ],
+          "attendance": 294,
+          "abstentions": 33,
+          "absent": 6,
+          "transcription_method": "manual_checked_against_original_minutes",
+          "source_excerpt": null
+        }
+      ]
+    },
+    {
+      "cycle": "2010",
+      "date": "2010-02-03",
+      "coverage": "full_candidate_ballot_original_minutes",
+      "source_paths": [
+        "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20100203.pdf"
+      ],
+      "ballots": [
+        {
+          "date": "2010-02-03",
+          "sequence": 1,
+          "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20100203.pdf",
+          "locator": "PDF page 6 (one based), Speaker announcement of counted votes",
+          "candidates": [
+            {
+              "name": "Κάρολος Παπούλιας",
+              "votes": 266,
+              "elected": 1
+            }
+          ],
+          "attendance": 298,
+          "abstentions": 32,
+          "absent": 2,
+          "transcription_method": "manual_checked_against_original_minutes",
+          "source_excerpt": null
+        }
+      ]
+    },
+    {
+      "cycle": "2005",
+      "date": "2005-02-08",
+      "coverage": "full_candidate_ballot_original_minutes",
+      "source_paths": [
+        "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es050208.pdf"
+      ],
+      "ballots": [
+        {
+          "date": "2005-02-08",
+          "sequence": 1,
+          "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es050208.pdf",
+          "locator": "PDF page 2 (one based), Speaker announcement of counted votes",
+          "candidates": [
+            {
+              "name": "Κάρολος Παπούλιας",
+              "votes": 279,
+              "elected": 1
+            }
+          ],
+          "attendance": 296,
+          "abstentions": 17,
+          "absent": 4,
+          "transcription_method": "manual_checked_against_original_minutes",
+          "source_excerpt": null
+        }
+      ]
+    },
+    {
+      "cycle": "2000",
+      "date": "2000-02-08",
+      "coverage": "full_candidate_ballot_original_minutes",
+      "source_paths": [
+        "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/SYN-8200.pdf"
+      ],
+      "ballots": [
+        {
+          "date": "2000-02-08",
+          "sequence": 1,
+          "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/SYN-8200.pdf",
+          "locator": "PDF page 2 (one based), Speaker announcement of counted votes",
+          "candidates": [
+            {
+              "name": "Κωνσταντίνος Στεφανόπουλος",
+              "votes": 269,
+              "elected": 1
+            },
+            {
+              "name": "Λεωνίδας Κύρκος",
+              "votes": 10,
+              "elected": 0
+            }
+          ],
+          "attendance": 298,
+          "abstentions": 19,
+          "absent": 2,
+          "transcription_method": "manual_checked_against_original_minutes",
+          "source_excerpt": null
+        }
+      ]
+    },
+    {
+      "cycle": "2014-2015",
+      "date": "2014-12-17",
+      "coverage": "all_three_failed_Dimas_ballots_and_new_Parliament_election",
+      "constitutional_gate": "pre-2019 article 32: dissolution after three failed ballots; February ballot held by new Parliament",
+      "source_paths": [
+        "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20141217.pdf",
+        "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20141223.pdf",
+        "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20141229.pdf",
+        "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20150218.pdf"
+      ],
+      "ballots": [
+        {
+          "date": "2014-12-17",
+          "sequence": 1,
+          "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20141217.pdf",
+          "locator": "PDF page 7 (one based), Speaker announcement of counted votes",
+          "candidates": [
+            {
+              "name": "Σταύρος Δήμας",
+              "votes": 160,
+              "elected": 0
+            }
+          ],
+          "attendance": 295,
+          "abstentions": 135,
+          "absent": 5,
+          "transcription_method": "manual_checked_against_original_minutes",
+          "source_excerpt": null
+        },
+        {
+          "date": "2014-12-23",
+          "sequence": 2,
+          "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20141223.pdf",
+          "locator": "PDF page 6 (one based), Speaker announcement of counted votes",
+          "candidates": [
+            {
+              "name": "Σταύρος Δήμας",
+              "votes": 168,
+              "elected": 0
+            }
+          ],
+          "attendance": 299,
+          "abstentions": 131,
+          "absent": null,
+          "transcription_method": "manual_checked_against_original_minutes",
+          "source_excerpt": null
+        },
+        {
+          "date": "2014-12-29",
+          "sequence": 3,
+          "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20141229.pdf",
+          "locator": "PDF page 3 (one based), Speaker announcement of counted votes",
+          "candidates": [
+            {
+              "name": "Σταύρος Δήμας",
+              "votes": 168,
+              "elected": 0
+            }
+          ],
+          "attendance": 300,
+          "abstentions": 132,
+          "absent": null,
+          "transcription_method": "manual_checked_against_original_minutes",
+          "source_excerpt": null
+        },
+        {
+          "date": "2015-02-18",
+          "sequence": 4,
+          "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20150218.pdf",
+          "locator": "PDF page 11 (one based), Speaker announcement of counted votes",
+          "candidates": [
+            {
+              "name": "Προκόπης Παυλόπουλος",
+              "votes": 233,
+              "elected": 1
+            },
+            {
+              "name": "Νίκος Αλιβιζάτος",
+              "votes": 30,
+              "elected": 0
+            }
+          ],
+          "attendance": 295,
+          "abstentions": 32,
+          "absent": 5,
+          "transcription_method": "manual_checked_against_original_minutes",
+          "source_excerpt": null
+        }
+      ]
+    },
+    {
+      "cycle": "1975",
+      "date": "1975",
+      "date_precision": "year",
+      "coverage": "winner_biography_only_missing_rounds_and_opponents_NOT_zero",
+      "source_paths": [
+        "sources/www.presidency.gr/en/konstantinos-tsatsos-2/index.html"
+      ],
+      "ballots": [
+        {
+          "date": "1975",
+          "sequence": null,
+          "source_path": "sources/www.presidency.gr/en/konstantinos-tsatsos-2/index.html",
+          "locator": "Presidency official biography / Presidential Term",
+          "candidates": [
+            {
+              "name": "Κωνσταντίνος Τσάτσος",
+              "votes": 210,
+              "elected": 1
+            }
+          ],
+          "attendance": null,
+          "abstentions": null,
+          "absent": null
+        }
+      ],
+      "constitutional_gate": "1975 date conflict: official English biography says 20 June; retrospective reprint says 19 June. Retain year precision pending original record."
+    },
+    {
+      "cycle": "1980",
+      "date": "1980-05-05",
+      "date_precision": "day",
+      "coverage": "winner_biography_only_missing_rounds_and_opponents_NOT_zero",
+      "source_paths": [
+        "sources/www.presidency.gr/en/constantinos-karamanlhs/index.html"
+      ],
+      "ballots": [
+        {
+          "date": "1980-05-05",
+          "sequence": null,
+          "source_path": "sources/www.presidency.gr/en/constantinos-karamanlhs/index.html",
+          "locator": "Presidency official biography / Presidential Term",
+          "candidates": [
+            {
+              "name": "Κωνσταντίνος Καραμανλής",
+              "votes": null,
+              "elected": 1
+            }
+          ],
+          "attendance": null,
+          "abstentions": null,
+          "absent": null
+        }
+      ],
+      "constitutional_gate": null
+    },
+    {
+      "cycle": "1985",
+      "date": "1985-03-29",
+      "date_precision": "day",
+      "coverage": "winner_biography_only_missing_rounds_and_opponents_NOT_zero",
+      "source_paths": [
+        "sources/www.presidency.gr/en/christos-sartzetakis-2/index.html"
+      ],
+      "ballots": [
+        {
+          "date": "1985-03-29",
+          "sequence": null,
+          "source_path": "sources/www.presidency.gr/en/christos-sartzetakis-2/index.html",
+          "locator": "Presidency official biography / Presidential Term",
+          "candidates": [
+            {
+              "name": "Χρήστος Σαρτζετάκης",
+              "votes": null,
+              "elected": 1
+            }
+          ],
+          "attendance": null,
+          "abstentions": null,
+          "absent": null
+        }
+      ],
+      "constitutional_gate": null
+    },
+    {
+      "cycle": "1990",
+      "date": "1990-05-04",
+      "date_precision": "day",
+      "coverage": "winner_biography_only_missing_rounds_and_opponents_NOT_zero",
+      "source_paths": [
+        "sources/www.presidency.gr/en/constantinos-karamanlhs/index.html"
+      ],
+      "ballots": [
+        {
+          "date": "1990-05-04",
+          "sequence": null,
+          "source_path": "sources/www.presidency.gr/en/constantinos-karamanlhs/index.html",
+          "locator": "Presidency official biography / Presidential Term",
+          "candidates": [
+            {
+              "name": "Κωνσταντίνος Καραμανλής",
+              "votes": null,
+              "elected": 1
+            }
+          ],
+          "attendance": null,
+          "abstentions": null,
+          "absent": null
+        }
+      ],
+      "constitutional_gate": null
+    },
+    {
+      "cycle": "1995",
+      "date": "1995-03-08",
+      "date_precision": "day",
+      "coverage": "winner_biography_only_missing_rounds_and_opponents_NOT_zero",
+      "source_paths": [
+        "sources/www.presidency.gr/en/konstantinos-stephanopoulos/index.html"
+      ],
+      "ballots": [
+        {
+          "date": "1995-03-08",
+          "sequence": 3,
+          "source_path": "sources/www.presidency.gr/en/konstantinos-stephanopoulos/index.html",
+          "locator": "Presidency official biography / Presidential Term",
+          "candidates": [
+            {
+              "name": "Κωνσταντίνος Στεφανόπουλος",
+              "votes": 181,
+              "elected": 1
+            }
+          ],
+          "attendance": null,
+          "abstentions": null,
+          "absent": null
+        }
+      ],
+      "constitutional_gate": null
+    },
+    {
+      "cycle": "1974-transitional",
+      "date": "1974",
+      "date_precision": "year",
+      "coverage": "transitional_winner_biography_only",
+      "constitutional_gate": "interim parliamentary election after monarchy referendum; biography term-start day is NOT coerced into election day",
+      "source_paths": [
+        "sources/www.presidency.gr/en/michael-stassinopoulos-2/index.html"
+      ],
+      "ballots": [
+        {
+          "date": "1974",
+          "sequence": null,
+          "source_path": "sources/www.presidency.gr/en/michael-stassinopoulos-2/index.html",
+          "locator": "Presidency official biography / Presidential Term",
+          "candidates": [
+            {
+              "name": "Μιχαήλ Στασινόπουλος",
+              "votes": null,
+              "elected": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_priority": "Original declared parliamentary minutes > official biographies > official-hosted journalistic reprints > secondary live reports",
+  "conflicts": [
+    {
+      "cycle": "2025",
+      "ballot": 3,
+      "selected": {
+        "Tasoulas": 160,
+        "Giannitsis": 34,
+        "Katseli": 40,
+        "Kyriakou": 14,
+        "abstentions": 52,
+        "attendance": 300
+      },
+      "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/es20250206.pdf",
+      "locator": "PDF page 21 / printed page 7548",
+      "rejected_magazine_claim": "Giannitsis 37 on issue 90 page 7",
+      "explanation": "Use the declared totals in the original minutes. Do not replace with a live-report tally or magazine transcription."
+    },
+    {
+      "cycle": "2000",
+      "selected_Stephanopoulos_votes": 269,
+      "rejected_reprint_votes": 265,
+      "source_path": "sources/www.hellenicparliament.gr/UserFiles/a08fc2dd-61a9-4a83-b09a-09f4c564609d/SYN-8200.pdf",
+      "locator": "PDF page 2 / printed page 3882",
+      "explanation": "Original minutes and Presidency biography agree on 269; visual inspection resolves garbled PDF text encoding."
+    }
+  ]
+}

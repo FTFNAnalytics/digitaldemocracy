@@ -1,0 +1,1668 @@
+[
+  {
+    "office_id": "GR-PARL",
+    "date": "2015-09-20",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "SYRIZA",
+        "candidate": null,
+        "votes": 1925904,
+        "share": 35.46,
+        "seats": 145,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[0]/tr[1] (zero based)",
+        "raw_cells": [
+          "SYRIZA",
+          "Tsipras Alexios",
+          "145",
+          "35,46",
+          "1.925.904"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "N.D.(New Democracy)",
+        "candidate": null,
+        "votes": 1526205,
+        "share": 28.1,
+        "seats": 75,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[0]/tr[2] (zero based)",
+        "raw_cells": [
+          "N.D.(New Democracy)",
+          "Meimarakis Evangelos",
+          "75",
+          "28,10",
+          "1.526.205"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "LAIKOS SYNDESMOS - CHRYSI AVGI (People’s Association – Golden Dawn)",
+        "candidate": null,
+        "votes": 379581,
+        "share": 6.99,
+        "seats": 18,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[0]/tr[3] (zero based)",
+        "raw_cells": [
+          "LAIKOS SYNDESMOS - CHRYSI AVGI (People’s Association – Golden Dawn)",
+          "Michaloliakos Nikolaos",
+          "18",
+          "6,99",
+          "379.581"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Democratic Coalition (PA.SO.K. - DHM.AR)",
+        "candidate": null,
+        "votes": 341390,
+        "share": 6.28,
+        "seats": 17,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[0]/tr[4] (zero based)",
+        "raw_cells": [
+          "Democratic Coalition (PA.SO.K. - DHM.AR)",
+          "Foteini Genimata",
+          "17",
+          "6,28",
+          "341.390"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": 301632,
+        "share": 5.55,
+        "seats": 15,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[0]/tr[5] (zero based)",
+        "raw_cells": [
+          "Κ.Κ.Ε. (Communist Party of Greece)",
+          "Koutsoumpas Dimitris",
+          "15",
+          "5,55",
+          "301.632"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "TO POTAMI",
+        "candidate": null,
+        "votes": 222166,
+        "share": 4.09,
+        "seats": 11,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[0]/tr[6] (zero based)",
+        "raw_cells": [
+          "TO POTAMI",
+          "Theodorakis Stavros",
+          "11",
+          "4,09",
+          "222.166"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "ANEKSARTITOI ELLINES (Independent Greeks)",
+        "candidate": null,
+        "votes": 200423,
+        "share": 3.69,
+        "seats": 10,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[0]/tr[7] (zero based)",
+        "raw_cells": [
+          "ANEKSARTITOI ELLINES (Independent Greeks)",
+          "Kammenos Panagiotis (Panos)",
+          "10",
+          "3,69",
+          "200.423"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "ENOSI KENTROON",
+        "candidate": null,
+        "votes": 186457,
+        "share": 3.43,
+        "seats": 9,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[0]/tr[8] (zero based)",
+        "raw_cells": [
+          "ENOSI KENTROON",
+          "Leventis Vasilis",
+          "9",
+          "3,43",
+          "186.457"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2015-01-25",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "SYRIZA",
+        "candidate": null,
+        "votes": 2246064,
+        "share": 36.34,
+        "seats": 149,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[1]/tr[1] (zero based)",
+        "raw_cells": [
+          "SYRIZA",
+          "Tsipras Alexios",
+          "149",
+          "36,34",
+          "2.246.064"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "N.D.(New Democracy)",
+        "candidate": null,
+        "votes": 1718815,
+        "share": 27.81,
+        "seats": 76,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[1]/tr[2] (zero based)",
+        "raw_cells": [
+          "N.D.(New Democracy)",
+          "Samaras Antonios",
+          "76",
+          "27,81",
+          "1.718.815"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "LAIKOS SYNDESMOS - CHRYSI AVGI (People’s Association – Golden Dawn)",
+        "candidate": null,
+        "votes": 388447,
+        "share": 6.28,
+        "seats": 17,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[1]/tr[3] (zero based)",
+        "raw_cells": [
+          "LAIKOS SYNDESMOS - CHRYSI AVGI (People’s Association – Golden Dawn)",
+          "Michaloliakos Nikolaos",
+          "17",
+          "6,28",
+          "388.447"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "TO POTAMI",
+        "candidate": null,
+        "votes": 373868,
+        "share": 6.05,
+        "seats": 17,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[1]/tr[4] (zero based)",
+        "raw_cells": [
+          "TO POTAMI",
+          "Theodorakis Stavros",
+          "17",
+          "6,05",
+          "373.868"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": 338138,
+        "share": 5.47,
+        "seats": 15,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[1]/tr[5] (zero based)",
+        "raw_cells": [
+          "Κ.Κ.Ε. (Communist Party of Greece)",
+          "Koutsoumpas Dimitris",
+          "15",
+          "5,47",
+          "338.138"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "ANEKSARTITOI ELLINES (Independent Greeks)",
+        "candidate": null,
+        "votes": 293371,
+        "share": 4.75,
+        "seats": 13,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[1]/tr[6] (zero based)",
+        "raw_cells": [
+          "ANEKSARTITOI ELLINES (Independent Greeks)",
+          "Kammenos Panagiotis (Panos)",
+          "13",
+          "4,75",
+          "293.371"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "PA.SO.K.",
+        "candidate": null,
+        "votes": 289482,
+        "share": 4.68,
+        "seats": 13,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[1]/tr[7] (zero based)",
+        "raw_cells": [
+          "PA.SO.K.",
+          "Venizelos Evangelos",
+          "13",
+          "4,68",
+          "289.482"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2012-06-17",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "N.D.(New Democracy)",
+        "candidate": null,
+        "votes": 1825514,
+        "share": 29.66,
+        "seats": 129,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[2]/tr[1] (zero based)",
+        "raw_cells": [
+          "N.D.(New Democracy)",
+          "Samaras Antonios",
+          "129",
+          "29,66",
+          "1.825.514"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "SYRIZA Unitary Social Front",
+        "candidate": null,
+        "votes": 1655042,
+        "share": 26.89,
+        "seats": 71,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[2]/tr[2] (zero based)",
+        "raw_cells": [
+          "SYRIZA Unitary Social Front",
+          "Tsipras Alexios",
+          "71",
+          "26,89",
+          "1.655.042"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "PA.SO.K.(Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 756045,
+        "share": 12.28,
+        "seats": 33,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[2]/tr[3] (zero based)",
+        "raw_cells": [
+          "PA.SO.K.(Panhellenic Socialist Movement)",
+          "Venizelos Evangelos",
+          "33",
+          "12,28",
+          "756.045"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "ANEKSARTITOI ELLINES (Independent Greeks)",
+        "candidate": null,
+        "votes": 462410,
+        "share": 7.51,
+        "seats": 20,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[2]/tr[4] (zero based)",
+        "raw_cells": [
+          "ANEKSARTITOI ELLINES (Independent Greeks)",
+          "Kammenos Panagiotis (Panos)",
+          "20",
+          "7,51",
+          "462.410"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "LAIKOS SYNDESMOS - CHRYSI AVGI (People’s Association – Golden Dawn)",
+        "candidate": null,
+        "votes": 426027,
+        "share": 6.92,
+        "seats": 18,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[2]/tr[5] (zero based)",
+        "raw_cells": [
+          "LAIKOS SYNDESMOS - CHRYSI AVGI (People’s Association – Golden Dawn)",
+          "Michaloliakos Nikolaos",
+          "18",
+          "6,92",
+          "426.027"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "DHM.AR (Democratic Left)",
+        "candidate": null,
+        "votes": 384971,
+        "share": 6.25,
+        "seats": 17,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[2]/tr[6] (zero based)",
+        "raw_cells": [
+          "DHM.AR (Democratic Left)",
+          "Kouvelis Fotios - Fanourios",
+          "17",
+          "6,25",
+          "384.971"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": 277214,
+        "share": 4.5,
+        "seats": 12,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[2]/tr[7] (zero based)",
+        "raw_cells": [
+          "Κ.Κ.Ε. (Communist Party of Greece)",
+          "Papariga Alexandra",
+          "12",
+          "4,50",
+          "277.214"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2012-05-06",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "N.D.(New Democracy)",
+        "candidate": null,
+        "votes": 1192103,
+        "share": 18.85,
+        "seats": 108,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[3]/tr[1] (zero based)",
+        "raw_cells": [
+          "N.D.(New Democracy)",
+          "Samaras Antonios",
+          "108",
+          "18,85",
+          "1.192.103"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "SYRIZA Unitary Social Front",
+        "candidate": null,
+        "votes": 1061929,
+        "share": 16.79,
+        "seats": 52,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[3]/tr[2] (zero based)",
+        "raw_cells": [
+          "SYRIZA Unitary Social Front",
+          "Tsipras Alexios",
+          "52",
+          "16,79",
+          "1.061.929"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "PA.SO.K.(Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 833452,
+        "share": 13.18,
+        "seats": 41,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[3]/tr[3] (zero based)",
+        "raw_cells": [
+          "PA.SO.K.(Panhellenic Socialist Movement)",
+          "Venizelos Evangelos",
+          "41",
+          "13,18",
+          "833.452"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "ANEKSARTITOI ELLINES (Independent Greeks)",
+        "candidate": null,
+        "votes": 671325,
+        "share": 10.62,
+        "seats": 33,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[3]/tr[4] (zero based)",
+        "raw_cells": [
+          "ANEKSARTITOI ELLINES (Independent Greeks)",
+          "Kammenos Panagiotis (Panos)",
+          "33",
+          "10,62",
+          "671.325"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": 536104,
+        "share": 8.48,
+        "seats": 26,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[3]/tr[5] (zero based)",
+        "raw_cells": [
+          "Κ.Κ.Ε. (Communist Party of Greece)",
+          "Papariga Alexandra",
+          "26",
+          "8,48",
+          "536.104"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "LAIKOS SYNDESMOS - CHRYSI AVGI (People’s Association – Golden Dawn)",
+        "candidate": null,
+        "votes": 440985,
+        "share": 6.97,
+        "seats": 21,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[3]/tr[6] (zero based)",
+        "raw_cells": [
+          "LAIKOS SYNDESMOS - CHRYSI AVGI (People’s Association – Golden Dawn)",
+          "Michaloliakos Nikolaos",
+          "21",
+          "6,97",
+          "440.985"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "DHM.AR (Democratic Left)",
+        "candidate": null,
+        "votes": 386394,
+        "share": 6.11,
+        "seats": 19,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[3]/tr[7] (zero based)",
+        "raw_cells": [
+          "DHM.AR (Democratic Left)",
+          "Kouvelis Fotios - Fanourios",
+          "19",
+          "6,11",
+          "386.394"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2009-10-04",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "PA.SO.K. (Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 2995978,
+        "share": 43.94,
+        "seats": 160,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[4]/tr[1] (zero based)",
+        "raw_cells": [
+          "PA.SO.K. (Panhellenic Socialist Movement)",
+          "Papandreou Giorgos",
+          "160",
+          "43.94",
+          "2.995.978"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "N.D. (New Democracy)",
+        "candidate": null,
+        "votes": 2283562,
+        "share": 33.49,
+        "seats": 91,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[4]/tr[2] (zero based)",
+        "raw_cells": [
+          "N.D. (New Democracy)",
+          "Karamanlis Konstantinos, (from Nov. 30, 2009 Samaras Antonis)",
+          "91",
+          "33,49",
+          "2.283.562"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": 513787,
+        "share": 7.53,
+        "seats": 21,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[4]/tr[3] (zero based)",
+        "raw_cells": [
+          "Κ.Κ.Ε. (Communist Party of Greece)",
+          "Papariga Alexandra",
+          "21",
+          "7,53",
+          "513.787"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "LA.O.S. (Popular Orthodox Rally)",
+        "candidate": null,
+        "votes": 383522,
+        "share": 5.62,
+        "seats": 15,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[4]/tr[4] (zero based)",
+        "raw_cells": [
+          "LA.O.S. (Popular Orthodox Rally)",
+          "Karatzaferis Georgios",
+          "15",
+          "5.62",
+          "383.522"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "SY.RIZ.A. (Coalition of the Radical Left)",
+        "candidate": null,
+        "votes": 313231,
+        "share": 4.59,
+        "seats": 13,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[4]/tr[5] (zero based)",
+        "raw_cells": [
+          "SY.RIZ.A. (Coalition of the Radical Left)",
+          "Tsipras Alexios",
+          "13",
+          "4,59",
+          "313.231"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2007-09-16",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "N.D. (New Democracy)",
+        "candidate": null,
+        "votes": 2994979,
+        "share": 41.84,
+        "seats": 152,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[5]/tr[1] (zero based)",
+        "raw_cells": [
+          "N.D. (New Democracy)",
+          "Karamanlis Konstantinos",
+          "152",
+          "41,84",
+          "2.994.979"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "PA.SO.K. (Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 2727279,
+        "share": 38.1,
+        "seats": 102,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[5]/tr[2] (zero based)",
+        "raw_cells": [
+          "PA.SO.K. (Panhellenic Socialist Movement)",
+          "Papandreou Giorgos",
+          "102",
+          "38,10",
+          "2.727.279"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": 583750,
+        "share": 8.15,
+        "seats": 22,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[5]/tr[3] (zero based)",
+        "raw_cells": [
+          "Κ.Κ.Ε. (Communist Party of Greece)",
+          "Papariga Alexandra",
+          "22",
+          "8,15",
+          "583.750"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "SY.RIZ.A. (Coalition of the Radical Left)",
+        "candidate": null,
+        "votes": 361101,
+        "share": 5.04,
+        "seats": 14,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[5]/tr[4] (zero based)",
+        "raw_cells": [
+          "SY.RIZ.A. (Coalition of the Radical Left)",
+          "Alavanos Alexandros",
+          "14",
+          "5,04",
+          "361.101"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "LA.O.S. (Popular Orthodox Rally)",
+        "candidate": null,
+        "votes": 271809,
+        "share": 3.8,
+        "seats": 10,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[5]/tr[5] (zero based)",
+        "raw_cells": [
+          "LA.O.S. (Popular Orthodox Rally)",
+          "Karatzaferis Georgios",
+          "10",
+          "3,80",
+          "271.809"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2004-03-07",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "N.D. (New Democracy)",
+        "candidate": null,
+        "votes": 3360424,
+        "share": 45.36,
+        "seats": 165,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[6]/tr[1] (zero based)",
+        "raw_cells": [
+          "N.D. (New Democracy)",
+          "Karamanlis Konstantinos",
+          "165",
+          "45,36",
+          "3.360.424"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "PA.SO.K. (Panhellenic Socialist Movement)>",
+        "candidate": null,
+        "votes": 3003988,
+        "share": 40.55,
+        "seats": 117,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[6]/tr[2] (zero based)",
+        "raw_cells": [
+          "PA.SO.K. (Panhellenic Socialist Movement)>",
+          "Papandreou Giorgos",
+          "117",
+          "40,55",
+          "3.003.988"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": 436818,
+        "share": 5.9,
+        "seats": 12,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[6]/tr[3] (zero based)",
+        "raw_cells": [
+          "Κ.Κ.Ε. (Communist Party of Greece)",
+          "Papariga Alexandra",
+          "12",
+          "5,90",
+          "436.818"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "SY.RIZ.A. (Coalition of the Radical Left)",
+        "candidate": null,
+        "votes": 241714,
+        "share": 3.26,
+        "seats": 6,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[6]/tr[4] (zero based)",
+        "raw_cells": [
+          "SY.RIZ.A. (Coalition of the Radical Left)",
+          "Konstantopoulos Nikolaos (from Dec. 12, 2004 Alavanos Alexandros)",
+          "6",
+          "3,26",
+          "241.714"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "2000-04-09",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "PA.SO.K. (Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 3008081,
+        "share": 43.8,
+        "seats": 158,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[7]/tr[1] (zero based)",
+        "raw_cells": [
+          "PA.SO.K. (Panhellenic Socialist Movement)",
+          "Simitis Konstantinos",
+          "158",
+          "43,80",
+          "3.008.081"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "N.D. (New Democracy)",
+        "candidate": null,
+        "votes": 2934948,
+        "share": 42.73,
+        "seats": 125,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[7]/tr[2] (zero based)",
+        "raw_cells": [
+          "N.D. (New Democracy)",
+          "Karamanlis Konstantinos",
+          "125",
+          "42,73",
+          "2.934.948"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": 379280,
+        "share": 5.52,
+        "seats": 11,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[7]/tr[3] (zero based)",
+        "raw_cells": [
+          "Κ.Κ.Ε. (Communist Party of Greece)",
+          "Papariga Alexandra",
+          "11",
+          "5,52",
+          "379.280"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Coalition of the Left and Progress",
+        "candidate": null,
+        "votes": 219988,
+        "share": 3.2,
+        "seats": 6,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[7]/tr[4] (zero based)",
+        "raw_cells": [
+          "Coalition of the Left and Progress",
+          "Konstantopoulos Nikolaos",
+          "6",
+          "3,2",
+          "219.988"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1996-09-22",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "PA.SO.K. (Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 2814779,
+        "share": 41.49,
+        "seats": 162,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[8]/tr[1] (zero based)",
+        "raw_cells": [
+          "PA.SO.K. (Panhellenic Socialist Movement)",
+          "Simitis Konstantinos",
+          "162",
+          "41,49",
+          "2.814.779"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "N.D. (New Democracy)",
+        "candidate": null,
+        "votes": 2586089,
+        "share": 38.12,
+        "seats": 108,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[8]/tr[2] (zero based)",
+        "raw_cells": [
+          "N.D. (New Democracy)",
+          "Evert Miltiadis",
+          "108",
+          "38,12",
+          "2.586.089"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": 380046,
+        "share": 5.6,
+        "seats": 11,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[8]/tr[3] (zero based)",
+        "raw_cells": [
+          "Κ.Κ.Ε. (Communist Party of Greece)",
+          "Papariga Alexandra",
+          "11",
+          "5,6",
+          "380.046"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Coalition of the Left and Progress",
+        "candidate": null,
+        "votes": 347236,
+        "share": 5.12,
+        "seats": 10,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[8]/tr[4] (zero based)",
+        "raw_cells": [
+          "Coalition of the Left and Progress",
+          "Konstantopoulos Nikolaos",
+          "10",
+          "5,12",
+          "347.236"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Democratic Social Movement (DI.K.KI)",
+        "candidate": null,
+        "votes": 300954,
+        "share": 4.44,
+        "seats": 9,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[8]/tr[5] (zero based)",
+        "raw_cells": [
+          "Democratic Social Movement (DI.K.KI)",
+          "Tsovolas Dimitrios",
+          "9",
+          "4,44",
+          "300.954"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1993-10-10",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "PA.SO.K. (Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 3235017,
+        "share": 46.88,
+        "seats": 170,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[9]/tr[1] (zero based)",
+        "raw_cells": [
+          "PA.SO.K. (Panhellenic Socialist Movement)",
+          "Papandreou Andreas",
+          "170",
+          "46,88",
+          "3.235.017"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "N.D. (New Democracy)",
+        "candidate": null,
+        "votes": 2711737,
+        "share": 39.3,
+        "seats": 111,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[9]/tr[2] (zero based)",
+        "raw_cells": [
+          "N.D. (New Democracy)",
+          "Mitsotakis Konstantinos",
+          "111",
+          "39,30",
+          "2.711.737"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Political Spring (POL.AN)",
+        "candidate": null,
+        "votes": 336460,
+        "share": 4.88,
+        "seats": 10,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[9]/tr[3] (zero based)",
+        "raw_cells": [
+          "Political Spring (POL.AN)",
+          "Samaras Antonis",
+          "10",
+          "4,88",
+          "336.460"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": null,
+        "share": 4.54,
+        "seats": 9,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[9]/tr[4] (zero based)",
+        "raw_cells": [
+          "Κ.Κ.Ε. (Communist Party of Greece)",
+          "Papariga Alexandra",
+          "9",
+          "4,54",
+          ">313.001"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1990-04-08",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "N.D. (New Democracy)",
+        "candidate": null,
+        "votes": 3088137,
+        "share": 46.89,
+        "seats": 150,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[10]/tr[1] (zero based)",
+        "raw_cells": [
+          "N.D. (New Democracy)",
+          "Mitsotakis Konstantinos",
+          "150",
+          "46,89",
+          "3.088.137"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "PA.SO.K. (Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 2543042,
+        "share": 38.61,
+        "seats": 123,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[10]/tr[2] (zero based)",
+        "raw_cells": [
+          "PA.SO.K. (Panhellenic Socialist Movement)",
+          "Papandreou Andreas",
+          "123",
+          "38,61",
+          "2.543.042"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Coalition of the Left and Progress",
+        "candidate": null,
+        "votes": 677059,
+        "share": 10.28,
+        "seats": 19,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[10]/tr[3] (zero based)",
+        "raw_cells": [
+          "Coalition of the Left and Progress",
+          "Florakis Harilaos",
+          "19",
+          "10,28",
+          "677.059"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Federation of Ecologists Alternatives  - ΟΟΕΟ",
+        "candidate": null,
+        "votes": 50868,
+        "share": 0.77,
+        "seats": 1,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[10]/tr[4] (zero based)",
+        "raw_cells": [
+          "Federation of Ecologists Alternatives  - ΟΟΕΟ",
+          "Iliopoulos Nikolaos",
+          "1",
+          "0,77",
+          "50.868"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Democratic Renewal (DI.ANA)",
+        "candidate": null,
+        "votes": 44077,
+        "share": 0.67,
+        "seats": 1,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[10]/tr[5] (zero based)",
+        "raw_cells": [
+          "Democratic Renewal (DI.ANA)",
+          "Stefanopoulos Constantinos",
+          "1",
+          "0,67",
+          "44.077"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "INDEPENDENT MPs: a) Confidence b) Group of independent MPs c) Independent MPs",
+        "candidate": null,
+        "votes": null,
+        "share": null,
+        "seats": 6,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[10]/tr[6] (zero based)",
+        "raw_cells": [
+          "INDEPENDENT MPs: a) Confidence b) Group of independent MPs c) Independent MPs",
+          "",
+          "6",
+          "",
+          ""
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1989-11-05",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "N.D. (New Democracy)",
+        "candidate": null,
+        "votes": 3093479,
+        "share": 46.19,
+        "seats": 148,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[11]/tr[1] (zero based)",
+        "raw_cells": [
+          "N.D. (New Democracy)",
+          "Mitsotakis Konstantinos",
+          "148",
+          "46,19",
+          "3.093.479"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "PA.SO.K. (Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 2724334,
+        "share": 40.68,
+        "seats": 128,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[11]/tr[2] (zero based)",
+        "raw_cells": [
+          "PA.SO.K. (Panhellenic Socialist Movement)",
+          "Papandreou Andreas",
+          "128",
+          "40,68",
+          "2.724.334"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Coalition of the Left and Progress",
+        "candidate": null,
+        "votes": 734611,
+        "share": 10.97,
+        "seats": 21,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[11]/tr[3] (zero based)",
+        "raw_cells": [
+          "Coalition of the Left and Progress",
+          "Florakis Harilaos",
+          "21",
+          "10,97",
+          "734.611"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Federation of Ecologists Alternatives  - ΟΟΕΟ",
+        "candidate": null,
+        "votes": 39158,
+        "share": 0.58,
+        "seats": 1,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[11]/tr[4] (zero based)",
+        "raw_cells": [
+          "Federation of Ecologists Alternatives  - ΟΟΕΟ",
+          "Steering Committee",
+          "1",
+          "0,58",
+          "39.158"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "INDEPENDENT MPs: a) Confidence b) Independent  MPs",
+        "candidate": null,
+        "votes": null,
+        "share": null,
+        "seats": 2,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[11]/tr[5] (zero based)",
+        "raw_cells": [
+          "INDEPENDENT MPs: a) Confidence b) Independent  MPs",
+          "",
+          "2",
+          "",
+          ""
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1989-06-18",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "N.D. (New Democracy)",
+        "candidate": null,
+        "votes": 2887488,
+        "share": 44.28,
+        "seats": 145,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[12]/tr[1] (zero based)",
+        "raw_cells": [
+          "N.D. (New Democracy)",
+          "Mitsotakis Konstantinos",
+          "145",
+          "44,28",
+          "2.887.488"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "PA.SO.K. (Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 2551518,
+        "share": 39.13,
+        "seats": 125,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[12]/tr[2] (zero based)",
+        "raw_cells": [
+          "PA.SO.K. (Panhellenic Socialist Movement)",
+          "Papandreou Andreas",
+          "125",
+          "39,13",
+          "2.551.518"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Coalition of the Left and Progress",
+        "candidate": null,
+        "votes": 855944,
+        "share": 13.13,
+        "seats": 28,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[12]/tr[3] (zero based)",
+        "raw_cells": [
+          "Coalition of the Left and Progress",
+          "Florakis Harilaos",
+          "28",
+          "13,13",
+          "855.944"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Democratic Renewal (DI.ANA)",
+        "candidate": null,
+        "votes": 65614,
+        "share": 1.01,
+        "seats": 1,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[12]/tr[4] (zero based)",
+        "raw_cells": [
+          "Democratic Renewal (DI.ANA)",
+          "Stefanopoulos Constantinos",
+          "1",
+          "1,01",
+          "65.614"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Confidence",
+        "candidate": null,
+        "votes": 25099,
+        "share": 0.39,
+        "seats": 1,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[12]/tr[5] (zero based)",
+        "raw_cells": [
+          "Confidence",
+          "Steering Committee",
+          "1",
+          "0,39",
+          "25.099"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1985-06-02",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "PA.SO.K. (Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 2916735,
+        "share": 45.82,
+        "seats": 161,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[13]/tr[1] (zero based)",
+        "raw_cells": [
+          "PA.SO.K. (Panhellenic Socialist Movement)",
+          "Papandreou Andreas",
+          "161",
+          "45,82",
+          "2.916.735"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "N.D. (New Democracy)",
+        "candidate": null,
+        "votes": 2599681,
+        "share": 40.84,
+        "seats": 126,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[13]/tr[2] (zero based)",
+        "raw_cells": [
+          "N.D. (New Democracy)",
+          "Mitsotakis Konstantinos",
+          "126",
+          "40,84",
+          "2.599.681"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": 629525,
+        "share": 9.89,
+        "seats": 12,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[13]/tr[3] (zero based)",
+        "raw_cells": [
+          "Κ.Κ.Ε. (Communist Party of Greece)",
+          "Florakis Harilaos",
+          "12",
+          "9,89",
+          "629.525"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "K.K.E.int (Communist Party of Greece (Interior))",
+        "candidate": null,
+        "votes": 117135,
+        "share": 1.84,
+        "seats": 1,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[13]/tr[4] (zero based)",
+        "raw_cells": [
+          "K.K.E.int (Communist Party of Greece (Interior))",
+          "Banias Giannis",
+          "1",
+          "1,84",
+          "117.135"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1981-10-18",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "PA.SO.K. (Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 2726309,
+        "share": 48.07,
+        "seats": 172,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[14]/tr[1] (zero based)",
+        "raw_cells": [
+          "PA.SO.K. (Panhellenic Socialist Movement)",
+          "Papandreou Andreas",
+          "172",
+          "48,07",
+          "2.726.309"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "N.D. (New Democracy)",
+        "candidate": null,
+        "votes": 2034496,
+        "share": 35.87,
+        "seats": 115,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[14]/tr[2] (zero based)",
+        "raw_cells": [
+          "N.D. (New Democracy)",
+          "Rallis Georgios",
+          "115",
+          "35,87",
+          "2.034.496"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": 620302,
+        "share": 10.93,
+        "seats": 13,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[14]/tr[3] (zero based)",
+        "raw_cells": [
+          "Κ.Κ.Ε. (Communist Party of Greece)",
+          "Florakis Harilaos",
+          "13",
+          "10,93",
+          "620.302"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1977-11-20",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "N.D. (New Democracy)",
+        "candidate": null,
+        "votes": 2146365,
+        "share": 41.84,
+        "seats": 171,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[15]/tr[1] (zero based)",
+        "raw_cells": [
+          "N.D. (New Democracy)",
+          "Karamanlis Konstantinos",
+          "171",
+          "41,84",
+          "2.146.365"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "PA.SO.K. (Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 1300025,
+        "share": 25.34,
+        "seats": 93,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[15]/tr[2] (zero based)",
+        "raw_cells": [
+          "PA.SO.K. (Panhellenic Socialist Movement)",
+          "Papandreou Andreas",
+          "93",
+          "25,34",
+          "1.300.025"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Union of the Democratic Centre",
+        "candidate": null,
+        "votes": 612786,
+        "share": 11.95,
+        "seats": 16,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[15]/tr[3] (zero based)",
+        "raw_cells": [
+          "Union of the Democratic Centre",
+          "Mavros Georgios",
+          "16",
+          "11,95",
+          "612.786"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": 480272,
+        "share": 9.36,
+        "seats": 11,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[15]/tr[4] (zero based)",
+        "raw_cells": [
+          "Κ.Κ.Ε. (Communist Party of Greece)",
+          "Florakis Harilaos",
+          "11",
+          "9,36",
+          "480.272"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "National Alignment",
+        "candidate": null,
+        "votes": 349988,
+        "share": 6.82,
+        "seats": 5,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[15]/tr[5] (zero based)",
+        "raw_cells": [
+          "National Alignment",
+          "Stefanopoulos Stefanos",
+          "5",
+          "6,82",
+          "349.988"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Alliance of Progressive and Left Forces",
+        "candidate": null,
+        "votes": 139356,
+        "share": 2.72,
+        "seats": 2,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[15]/tr[6] (zero based)",
+        "raw_cells": [
+          "Alliance of Progressive and Left Forces",
+          "Iliou Ilias",
+          "2",
+          "2,72",
+          "139.356"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Neoliberals Party",
+        "candidate": null,
+        "votes": 55494,
+        "share": 1.08,
+        "seats": 2,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[15]/tr[7] (zero based)",
+        "raw_cells": [
+          "Neoliberals Party",
+          "Mitsotakis Konstantinos",
+          "2",
+          "1,08",
+          "55.494"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  },
+  {
+    "office_id": "GR-PARL",
+    "date": "1974-11-17",
+    "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+    "coverage": "seat_winning_parties_only",
+    "observations": [
+      {
+        "label": "N.D. (New Democracy)",
+        "candidate": null,
+        "votes": 2669133,
+        "share": 54.37,
+        "seats": 220,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[16]/tr[1] (zero based)",
+        "raw_cells": [
+          "N.D. (New Democracy)",
+          "Karamanlis Konstantinos",
+          "220",
+          "54,37",
+          "2.669.133"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "Centre Union - New Forces",
+        "candidate": null,
+        "votes": 1002559,
+        "share": 20.42,
+        "seats": 60,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[16]/tr[2] (zero based)",
+        "raw_cells": [
+          "Centre Union - New Forces",
+          "Mavros Georgios",
+          "60",
+          "20,42",
+          "1.002.559"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "PA.SO.K. (Panhellenic Socialist Movement)",
+        "candidate": null,
+        "votes": 666413,
+        "share": 13.58,
+        "seats": 12,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[16]/tr[3] (zero based)",
+        "raw_cells": [
+          "PA.SO.K. (Panhellenic Socialist Movement)",
+          "Papandreou Andreas",
+          "12",
+          "13,58",
+          "666.413"
+        ],
+        "entry_kind": "party_or_independent_group"
+      },
+      {
+        "label": "United Left : a) E.D.A. United Democratic Left b) K.K.E. Communist Party of Greece (Interior) c) Κ.Κ.Ε. (Communist Party of Greece)",
+        "candidate": null,
+        "votes": 464787,
+        "share": 9.47,
+        "seats": 8,
+        "source_path": "sources/www.hellenicparliament.gr/en/Vouli-ton-Ellinon/To-Politevma/Ekloges/Eklogika-apotelesmata-New/index.html",
+        "locator": "HTML table[16]/tr[4] (zero based)",
+        "raw_cells": [
+          "United Left : a) E.D.A. United Democratic Left b) K.K.E. Communist Party of Greece (Interior) c) Κ.Κ.Ε. (Communist Party of Greece)",
+          "Iliou Ilias Drakopoulos Harilaos Florakis Harilaos",
+          "8",
+          "9,47",
+          "464.787"
+        ],
+        "entry_kind": "party_or_independent_group"
+      }
+    ]
+  }
+]

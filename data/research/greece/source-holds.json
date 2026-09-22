@@ -1,0 +1,142 @@
+[
+  {
+    "kind": "local_source_hold",
+    "authority": "2014::dhm_d::9255",
+    "partial_station_snapshot": false,
+    "incomplete_seat_allocation": true,
+    "winner_missing": true,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/may2014/dyn/dn/dhm_d_9255.js",
+    "expected_council_size": 33,
+    "published_seats_total": 17
+  },
+  {
+    "kind": "local_source_hold",
+    "authority": "2019::snom_n::1",
+    "partial_station_snapshot": true,
+    "incomplete_seat_allocation": false,
+    "winner_missing": false,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/2019/dyn/dn/snom_n_1.js",
+    "expected_council_size": 51,
+    "published_seats_total": 51
+  },
+  {
+    "kind": "local_source_hold",
+    "authority": "2019::snom_n::2",
+    "partial_station_snapshot": true,
+    "incomplete_seat_allocation": false,
+    "winner_missing": false,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/2019/dyn/dn/snom_n_2.js",
+    "expected_council_size": 71,
+    "published_seats_total": 71
+  },
+  {
+    "kind": "local_source_hold",
+    "authority": "2019::snom_n::3",
+    "partial_station_snapshot": true,
+    "incomplete_seat_allocation": false,
+    "winner_missing": false,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/2019/dyn/dn/snom_n_3.js",
+    "expected_council_size": 41,
+    "published_seats_total": 41
+  },
+  {
+    "kind": "local_source_hold",
+    "authority": "2019::snom_n::4",
+    "partial_station_snapshot": true,
+    "incomplete_seat_allocation": false,
+    "winner_missing": false,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/2019/dyn/dn/snom_n_4.js",
+    "expected_council_size": 51,
+    "published_seats_total": 51
+  },
+  {
+    "kind": "local_source_hold",
+    "authority": "2019::snom_n::5",
+    "partial_station_snapshot": true,
+    "incomplete_seat_allocation": false,
+    "winner_missing": false,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/2019/dyn/dn/snom_n_5.js",
+    "expected_council_size": 51,
+    "published_seats_total": 51
+  },
+  {
+    "kind": "local_source_hold",
+    "authority": "2019::snom_n::6",
+    "partial_station_snapshot": true,
+    "incomplete_seat_allocation": false,
+    "winner_missing": false,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/2019/dyn/dn/snom_n_6.js",
+    "expected_council_size": 41,
+    "published_seats_total": 41
+  },
+  {
+    "kind": "local_source_hold",
+    "authority": "2019::snom_n::7",
+    "partial_station_snapshot": true,
+    "incomplete_seat_allocation": false,
+    "winner_missing": false,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/2019/dyn/dn/snom_n_7.js",
+    "expected_council_size": 51,
+    "published_seats_total": 51
+  },
+  {
+    "kind": "local_source_hold",
+    "authority": "2019::snom_n::8",
+    "partial_station_snapshot": true,
+    "incomplete_seat_allocation": false,
+    "winner_missing": false,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/2019/dyn/dn/snom_n_8.js",
+    "expected_council_size": 51,
+    "published_seats_total": 51
+  },
+  {
+    "kind": "local_source_hold",
+    "authority": "2019::snom_n::9",
+    "partial_station_snapshot": true,
+    "incomplete_seat_allocation": false,
+    "winner_missing": false,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/2019/dyn/dn/snom_n_9.js",
+    "expected_council_size": 101,
+    "published_seats_total": 101
+  },
+  {
+    "kind": "local_source_hold",
+    "authority": "2019::snom_n::10",
+    "partial_station_snapshot": true,
+    "incomplete_seat_allocation": false,
+    "winner_missing": false,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/2019/dyn/dn/snom_n_10.js",
+    "expected_council_size": 51,
+    "published_seats_total": 51
+  },
+  {
+    "kind": "local_source_hold",
+    "authority": "2019::snom_n::11",
+    "partial_station_snapshot": true,
+    "incomplete_seat_allocation": false,
+    "winner_missing": false,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/2019/dyn/dn/snom_n_11.js",
+    "expected_council_size": 41,
+    "published_seats_total": 41
+  },
+  {
+    "kind": "local_source_hold",
+    "authority": "2019::snom_n::12",
+    "partial_station_snapshot": true,
+    "incomplete_seat_allocation": false,
+    "winner_missing": false,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/2019/dyn/dn/snom_n_12.js",
+    "expected_council_size": 51,
+    "published_seats_total": 51
+  },
+  {
+    "kind": "local_source_hold",
+    "authority": "2019::snom_n::13",
+    "partial_station_snapshot": true,
+    "incomplete_seat_allocation": false,
+    "winner_missing": false,
+    "source_path": "sources/ekloges-prev.singularlogic.eu/2019/dyn/dn/snom_n_13.js",
+    "expected_council_size": 51,
+    "published_seats_total": 51
+  }
+]
