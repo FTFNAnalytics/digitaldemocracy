@@ -1,6 +1,6 @@
 # Prompt AF — mapping and CI checklist
 
-DRAFT. Mapping checks Done below mean documentation/data artifacts exist and are independently checked by the pack validator. They do not assert importer execution. All Justin approvals unchecked.
+DRAFT. Mapping checks Done below mean documentation/data artifacts exist and are independently checked by the pack validator. They do not assert importer execution. Justin accepted the register with holds on 2026-09-21. The follow-up importer is `ATLAS_IMPORT_SCOPE=estonia` — see [Estonia_Import.md](Estonia_Import.md). Holds EE-G01–EE-G09 stay open. Omitted `results.json` is not invented.
 
 | Required artifact / research mapping | Status | Pointer |
 |---|---|---|

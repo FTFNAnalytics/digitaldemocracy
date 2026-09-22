@@ -608,6 +608,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "estonia") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "0 regional offices. County statistical groupings are not elected regional bodies. 78 current municipal councils. Named holds EE-G01–EE-G09 stay open. No mayor, county-governor, cabinet, or Tallinn district office. The presidency stays indirect except the evidenced 1992 popular-ballot exception.",
+      denominatorKnown: false,
+    };
+  }
   return {
     offices,
     count: offices.length,
