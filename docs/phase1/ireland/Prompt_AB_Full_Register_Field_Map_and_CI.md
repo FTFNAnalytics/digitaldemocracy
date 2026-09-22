@@ -1,6 +1,6 @@
 # Prompt AB — mapping checklist and future CI
 
-Documentation/research only; no importer, SQLite, VPS, UI or repository mutation. Artifact checks are distinct from execution gates.
+Research extraction checks are completed work. The follow-up importer is `ATLAS_IMPORT_SCOPE=ireland` — see [Ireland_Import.md](Ireland_Import.md). This landing does not deploy to the VPS or change `/electiondatabase` redirects.
 
 ## Mapping work
 

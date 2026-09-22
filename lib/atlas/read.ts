@@ -500,6 +500,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "ireland") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "No regional offices in the supplied Ireland package. Regional assemblies are councillor appointments, not a popular regional tier. 118 municipal offices (31 current local authority councils, the directly elected Mayor of Limerick, and 86 historical town, borough, and pre-2014 city/county councils). Named holds stay open. Northern Ireland is excluded.",
+      denominatorKnown: false,
+    };
+  }
   if (countryId === "denmark") {
     return {
       offices,

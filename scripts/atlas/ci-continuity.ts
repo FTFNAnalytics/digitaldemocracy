@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -21,6 +21,7 @@ import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzego
 import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
 import { LINEAGE_ID as DENMARK_LINEAGE } from "../../lib/atlas/denmark/identity";
 import { LINEAGE_ID as FINLAND_LINEAGE } from "../../lib/atlas/finland/identity";
+import { LINEAGE_ID as IRELAND_LINEAGE } from "../../lib/atlas/ireland/identity";
 import { LINEAGE_ID as NETHERLANDS_LINEAGE } from "../../lib/atlas/netherlands/identity";
 import { LINEAGE_ID as SWEDEN_LINEAGE } from "../../lib/atlas/sweden/identity";
 import { LINEAGE_ID as NORWAY_LINEAGE } from "../../lib/atlas/norway/identity";
@@ -37,6 +38,7 @@ function count(db: DatabaseSync, sql: string, params: unknown[] = []): number {
 
 function main() {
   delete process.env.OBSERVATORY_FIXTURES;
+  process.env.ATLAS_IMPORT_PROGRESS = "1";
   const root = process.cwd();
   const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-ci-continuity-"));
   const sqlitePath = path.join(dir, "atlas.sqlite");
@@ -215,6 +217,30 @@ function main() {
     if (result.switzerland?.counts.prospective_events !== 0) {
       fail(`Switzerland prospective ${String(result.switzerland?.counts.prospective_events)}`);
     }
+    if (result.ireland?.counts.offices !== 122) {
+      fail(`Ireland offices ${String(result.ireland?.counts.offices)}`);
+    }
+    if (result.ireland?.counts.current_offices !== 36) {
+      fail(`Ireland current ${String(result.ireland?.counts.current_offices)}`);
+    }
+    if (result.ireland?.counts.historical_offices !== 86) {
+      fail(`Ireland historical ${String(result.ireland?.counts.historical_offices)}`);
+    }
+    if (result.ireland?.counts.municipal_offices !== 118) {
+      fail(`Ireland municipal ${String(result.ireland?.counts.municipal_offices)}`);
+    }
+    if (result.ireland?.counts.regional_offices !== 0) {
+      fail(`Ireland regional ${String(result.ireland?.counts.regional_offices)}`);
+    }
+    if (result.ireland?.counts.result_rows !== 7254) {
+      fail(`Ireland results ${String(result.ireland?.counts.result_rows)}`);
+    }
+    if (result.ireland?.counts.prospective_events !== 0) {
+      fail(`Ireland prospective ${String(result.ireland?.counts.prospective_events)}`);
+    }
+    if (result.ireland?.counts.unresolved_evidence !== 9) {
+      fail(`Ireland unresolved ${String(result.ireland?.counts.unresolved_evidence)}`);
+    }
     if (result.denmark?.counts.offices !== 346) {
       fail(`Denmark offices ${String(result.denmark?.counts.offices)}`);
     }
@@ -374,6 +400,27 @@ function main() {
         11
       ) {
         fail("Switzerland historical office rows");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [IRELAND_LINEAGE]) !== 122) {
+        fail("Ireland office rows");
+      }
+      if (
+        count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_status = 'historical'", [IRELAND_LINEAGE]) !==
+        86
+      ) {
+        fail("Ireland historical office rows");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'regional'",
+          [IRELAND_LINEAGE],
+        ) !== 0
+      ) {
+        fail("Ireland regional rows");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM result_row WHERE lineage_id = ? AND office_id = 'IE-EP'", [IRELAND_LINEAGE]) !== 0) {
+        fail("Ireland invented EP results");
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [DENMARK_LINEAGE]) !== 346) {
         fail("Denmark office rows");
@@ -717,6 +764,7 @@ function main() {
         BULGARIA_LINEAGE,
         DENMARK_LINEAGE,
         FINLAND_LINEAGE,
+        IRELAND_LINEAGE,
         NETHERLANDS_LINEAGE,
         SWEDEN_LINEAGE,
         NORWAY_LINEAGE,
@@ -732,7 +780,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });
