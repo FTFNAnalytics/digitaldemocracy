@@ -1,0 +1,325 @@
+[
+  {
+    "number": 1,
+    "title": "Out-of-window or unknown next cycle retains office",
+    "source_pointer": "data/research/hungary/office-register.json#/0",
+    "expected_atlas_shape": {
+      "office_id": "HU-NVI-01-001-C",
+      "office_status": "current",
+      "next_date_id": null,
+      "next_date_resolution": "unknown",
+      "next_history_key": null
+    },
+    "assertion": "No date/window predicate removes this sourced body. No2029day is inferred from term arithmetic. Origins identify NVI register ZIP line and statute."
+  },
+  {
+    "number": 2,
+    "title": "Historic contest retained outside alert window",
+    "source_pointer": "data/research/hungary/results.json#/49374",
+    "expected_atlas_shape": {
+      "id_namespace": "cdd-observatory-v1",
+      "office_id": "HU-NVI-01-001-M",
+      "history_key": "HU-NVI-01-001-M::ONK2014",
+      "result_row_id": "result-afabde3ac760e8d44bb46723",
+      "candidate_or_list_label": "Remenyik Ildikó",
+      "votes": 802,
+      "votes_status": "recorded",
+      "share": 7.53,
+      "share_status": "recorded",
+      "seats": null,
+      "seats_status": "unknown",
+      "elected_flag": null,
+      "original_party_label": "MSZP",
+      "evidence_status": "recorded"
+    },
+    "assertion": "2014history stays attached to its actual office; old contest does not mark the office historical. Historical-only offices have a separate unresolved earlier-register gate. Exact primary cell locators: same row /origins; component=mayor."
+  },
+  {
+    "number": 3,
+    "title": "Council and popular mayor are two evidenced offices",
+    "source_pointer": "data/research/hungary/office-register.json#/1",
+    "expected_atlas_shape": {
+      "office_id": "HU-NVI-01-001-M",
+      "office_type": "direct_mayor",
+      "tier": "municipal",
+      "council_id": "HU-NVI-01-001-C"
+    },
+    "assertion": "ActL2010 §12 and NVI candidate-return sheet evidence direct election. Do not use this pattern for county chairs."
+  },
+  {
+    "number": 4,
+    "title": "County is regional; no direct county chair",
+    "source_pointer": "data/research/hungary/office-register.json#/6354",
+    "expected_atlas_shape": {
+      "office_id": "HU-NVI-02-A",
+      "tier": "regional",
+      "direct_county_chair_rows": 0
+    },
+    "assertion": "ActCLXXXIX2011 §27(2) assembly elects chair. No additional direct office/ballot invented."
+  },
+  {
+    "number": 5,
+    "title": "Budapest dual remit counted once",
+    "source_pointer": "data/research/hungary/office-register.json#/6373",
+    "expected_atlas_shape": {
+      "office_id": "HU-BUDAPEST-A",
+      "tier": "regional",
+      "review_status": "needs_review"
+    },
+    "assertion": "One citywide assembly;23district councils are separately evidenced. Justin tier box unchecked."
+  },
+  {
+    "number": 6,
+    "title": "Presidency is indirect; missing votes not zero",
+    "source_pointer": "data/research/hungary/results.json#/47807",
+    "expected_atlas_shape": {
+      "id_namespace": "cdd-observatory-v1",
+      "office_id": "HU-PRES",
+      "history_key": "HU-PRES::PRES2024",
+      "result_row_id": "result-305032a25ea60752ef0338b1",
+      "candidate_or_list_label": "dr. Sulyok Tamás",
+      "votes": null,
+      "votes_status": "unknown",
+      "share": null,
+      "share_status": "unknown",
+      "seats": null,
+      "seats_status": "unknown",
+      "elected_flag": 1,
+      "original_party_label": null,
+      "evidence_status": "recorded"
+    },
+    "assertion": "NJT3/2024resolution paragraph1/adoption footnote supplies election outcome/date. Vote totals, opponents and rounds absent: keep NULL; no popular first-preference universe. Exact primary cell locators: same row /origins; component=election_resolution."
+  },
+  {
+    "number": 7,
+    "title": "Reported zero vs absent seats",
+    "source_pointer": "data/research/hungary/results.json#/1537",
+    "expected_atlas_shape": {
+      "id_namespace": "cdd-observatory-v1",
+      "office_id": "HU-NVI-03-116-C",
+      "history_key": "HU-NVI-03-116-C::ONK2024",
+      "result_row_id": "result-93526f13c71caae38e587963",
+      "candidate_or_list_label": "SIMON SÁNDOR RÓBERTNÉ",
+      "votes": 0,
+      "votes_status": "zero",
+      "share": null,
+      "share_status": "unknown",
+      "seats": null,
+      "seats_status": "unknown",
+      "elected_flag": null,
+      "original_party_label": "Független jelölt",
+      "evidence_status": "recorded"
+    },
+    "assertion": "Retain numeric0/statuszero; seats NULL/statusunknown. Padded columns without named candidates are not rows. Exact primary cell locators: same row /origins; component=council_multi_candidate."
+  },
+  {
+    "number": 8,
+    "title": "Printed percentage retained without recomputation",
+    "source_pointer": "data/research/hungary/results.json#/49374",
+    "expected_atlas_shape": {
+      "id_namespace": "cdd-observatory-v1",
+      "office_id": "HU-NVI-01-001-M",
+      "history_key": "HU-NVI-01-001-M::ONK2014",
+      "result_row_id": "result-afabde3ac760e8d44bb46723",
+      "candidate_or_list_label": "Remenyik Ildikó",
+      "votes": 802,
+      "votes_status": "recorded",
+      "share": 7.53,
+      "share_status": "recorded",
+      "seats": null,
+      "seats_status": "unknown",
+      "elected_flag": null,
+      "original_party_label": "MSZP",
+      "evidence_status": "recorded"
+    },
+    "assertion": "Preserve printed percent_0_100 value; no100×votes/denominator replacement or renormalization. Exact primary cell locators: same row /origins; component=mayor."
+  },
+  {
+    "number": 9,
+    "title": "National list votes are not compensation totals",
+    "source_pointer": "data/research/hungary/results.json#/48472",
+    "expected_atlas_shape": {
+      "id_namespace": "cdd-observatory-v1",
+      "office_id": "HU-OGY",
+      "history_key": "HU-OGY::OGY2022",
+      "result_row_id": "result-eae5bc53704e59264deecf31",
+      "candidate_or_list_label": "FIDESZ - MAGYAR POLGÁRI SZÖVETSÉG-KERESZTÉNYDEMOKRATA NÉPPÁRT",
+      "votes": 3060706,
+      "votes_status": "recorded",
+      "share": null,
+      "share_status": "unknown",
+      "seats": 48,
+      "seats_status": "recorded",
+      "elected_flag": null,
+      "original_party_label": "FIDESZ - MAGYAR POLGÁRI SZÖVETSÉG-KERESZTÉNYDEMOKRATA NÉPPÁRT",
+      "evidence_status": "recorded"
+    },
+    "assertion": "PÁRT_LISTA_SZAVAZAT is votes; TÖREDÉK/ÖSSZES_SZAVAZAT remain raw. NYERT_MANDÁTUM is list seats only, not all chamber seats. Exact primary cell locators: same row /origins; component=national_party_list."
+  },
+  {
+    "number": 10,
+    "title": "EP domestic subset does not become national total",
+    "source_pointer": "data/research/hungary/results.json#/49154",
+    "expected_atlas_shape": {
+      "id_namespace": "cdd-observatory-v1",
+      "office_id": "HU-EP",
+      "history_key": "HU-EP::EP2024",
+      "result_row_id": "result-78d547e2d748e1e81ad3a68b",
+      "candidate_or_list_label": "Megoldás Mozgalom",
+      "votes": 5070,
+      "votes_status": "recorded",
+      "share": null,
+      "share_status": "unknown",
+      "seats": null,
+      "seats_status": "unknown",
+      "elected_flag": null,
+      "original_party_label": "Megoldás Mozgalom",
+      "evidence_status": "recorded"
+    },
+    "assertion": "Only named domestic county scope; overseas and certified nationwide allocation remain open. Do not duplicate20subsets as20offices. Exact primary cell locators: same row /origins; component=domestic_county_subset:BUDAPEST."
+  },
+  {
+    "number": 11,
+    "title": "Missing party label is not inferred",
+    "source_pointer": "data/research/hungary/results.json#/48490",
+    "expected_atlas_shape": {
+      "id_namespace": "cdd-observatory-v1",
+      "office_id": "HU-OGY",
+      "history_key": "HU-OGY::OGY2026",
+      "result_row_id": "result-6bf701653cd5d20c9aba38c5",
+      "candidate_or_list_label": "VARGA TAMÁS",
+      "votes": 2475,
+      "votes_status": "recorded",
+      "share": null,
+      "share_status": "unknown",
+      "seats": null,
+      "seats_status": "unknown",
+      "elected_flag": null,
+      "original_party_label": null,
+      "evidence_status": "recorded"
+    },
+    "assertion": "OEVK export candidate name/ordinal/votes retained. Do not infer party from politician identity; party mapping remains NULL. Exact primary cell locators: same row /origins; component=oevk:02-01."
+  },
+  {
+    "number": 12,
+    "title": "Precinct returns aggregate only inside one component",
+    "source_pointer": "data/research/hungary/results.json#/1598",
+    "expected_atlas_shape": {
+      "id_namespace": "cdd-observatory-v1",
+      "office_id": "HU-NVI-03-004-C",
+      "history_key": "HU-NVI-03-004-C::ONK2024",
+      "result_row_id": "result-fe8cdc9efa84ec2b4e1f36b4",
+      "candidate_or_list_label": "KISS RUBEN MIHÁLY",
+      "votes": 502,
+      "votes_status": "recorded",
+      "share": null,
+      "share_status": "unknown",
+      "seats": null,
+      "seats_status": "unknown",
+      "elected_flag": null,
+      "original_party_label": "MARÉG-Magyarországi Régiókért Egyesület",
+      "evidence_status": "recorded"
+    },
+    "assertion": "Sum only rows listed in vote origin. Other wards/list allocations are different components; valid ballots are not the sum of multi-candidate marks. Exact primary cell locators: same row /origins; component=council_ward:01."
+  },
+  {
+    "number": 13,
+    "title": "Unchanged re-import identity",
+    "source_pointer": "docs/phase1/hungary/Hungary_Input_Inventory.json#/hash_inputs",
+    "expected_atlas_shape": {
+      "fingerprint_sha256": "2cb9841dd136b34e21ac1a1373713920cbbd82a60246c55832f9e8e481987ecc",
+      "release_id": "country-package-hungary--sha256-2cb9841dd136b34e21ac1a1373713920cbbd82a60246c55832f9e8e481987ecc",
+      "new_attempt_id": "runtime fresh UUID"
+    },
+    "assertion": "Documentary hash vector verified; actual importer/ledger CI Not run. Attempt fields never enter fingerprint."
+  },
+  {
+    "number": 14,
+    "title": "Corrected import without identity loss",
+    "source_pointer": "same inventory + explicitly isolated CI mutation",
+    "expected_atlas_shape": {
+      "same_office_event_result_ids": true,
+      "new_release_id_required": true,
+      "production_override_applied": false
+    },
+    "assertion": "Synthetic test: replace a retained vote claim only with accepted full-target guarded override and new input hash. Not a claim that any Hungary return is wrong; no override emitted."
+  },
+  {
+    "number": 15,
+    "title": "Unresolved token versus broken resolved FK",
+    "source_pointer": "data/research/hungary/unresolved-evidence.json#/0",
+    "expected_atlas_shape": {
+      "unresolved_token_retained": true,
+      "fabricated_source_fk": false,
+      "broken_resolved_fk": "reject whole stage"
+    },
+    "assertion": "CAPTCHA transcript access is explicit unresolved evidence; separately resolved NJT outcome remains. An absent claimed resolved source cannot be relabelled unresolved to pass."
+  },
+  {
+    "number": 16,
+    "title": "Poison rollback preserves other lineages",
+    "source_pointer": "isolated future CI mutation of a real result source tuple",
+    "expected_atlas_shape": {
+      "staging_commit": false,
+      "last_good_publication_serves": true,
+      "durable_failed_attempt": true
+    },
+    "assertion": "Future importer test, Not run. Break one resolved source FK; Hungarystage rejects and unrelated lineage rows/releases remain unchanged."
+  },
+  {
+    "number": 17,
+    "title": "Incomplete refresh cannot delete an office",
+    "source_pointer": "data/research/hungary/office-register.json#/0",
+    "expected_atlas_shape": {
+      "retain_omitted_office": true,
+      "effective_input_manifest": "cumulative prior+new accepted inputs"
+    },
+    "assertion": "Synthetic future omission test. No legal abolition/successor edge is inferred; lineage release reflects inherited provenance."
+  },
+  {
+    "number": 18,
+    "title": "Fixture exclusion",
+    "source_pointer": "isolated future CI mutation of an office_id to FIX-HU-TEST",
+    "expected_atlas_shape": {
+      "publication": "reject",
+      "research_rows_changed": 0
+    },
+    "assertion": "No fixture office in factual arrays. Prefix matching case-insensitive FIX-/FXT-; test artifacts cannot enter hash-effective research as offices."
+  },
+  {
+    "number": 19,
+    "title": "Partial date precision remains partial",
+    "source_pointer": "isolated future CI replacement of a day claim with source-supported year-only claim",
+    "expected_atlas_shape": {
+      "precision": "year",
+      "year": 2029,
+      "month": null,
+      "day": null,
+      "certainty": "expected"
+    },
+    "assertion": "Hypothetical precision gate, not a sourced Hungary2029call. Require actual source before acceptance; never synthesize January1. Execution Not run."
+  },
+  {
+    "number": 20,
+    "title": "Malformed duplicate token is not a new jurisdiction",
+    "source_pointer": "data/research/hungary/territorial-roster.json; source Zalaszabar20-241 locator",
+    "expected_atlas_shape": {
+      "office_ids": [
+        "HU-NVI-20-241-C",
+        "HU-NVI-20-241-M"
+      ],
+      "additional_nul_token_offices": 0
+    },
+    "assertion": "Retain immutable TXT; one leading NUL/quote parsing artifact maps to existing same source code/name.3177unique jurisdiction names match2026roster. Not a merge edge."
+  },
+  {
+    "number": 21,
+    "title": "Europe and continuity citation ownership survives Hungary import",
+    "source_pointer": "publication_release contract; Hungary Input Inventory lineage_id",
+    "expected_atlas_shape": {
+      "other_lineage_release_ids": "unchanged",
+      "receipt_is_citation_owner": false
+    },
+    "assertion": "Future multi-lineage publication gate Not run. Hungary owns only Hungary rows and release; no LatAm/NZ/Mexico mutation."
+  }
+]

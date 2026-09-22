@@ -1,0 +1,17 @@
+{
+  "territorial_2024_count": 3177,
+  "nvi_2026_roster_count": 3177,
+  "only_2024": [],
+  "only_2026": [],
+  "source_2026": {
+    "source_id": "src-f58168143bcf9f25d80362df",
+    "input_path": "data/research/hungary/sources/portal-data.valasztas.hu/files/69e0d7959c991f00022e062d/korzet.xls",
+    "sha256": "082952497935d766597dd9f45b87d1d88fb993e7dc950549fa7fb0695daf83ad",
+    "sheet": "Sheet0",
+    "rows": [
+      7,
+      10053
+    ]
+  },
+  "caveat": "NVI snapshot January2026; KSH legal register acquisition was rejected. Later changes remain an explicit hold."
+}
