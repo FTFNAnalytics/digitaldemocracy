@@ -1,0 +1,267 @@
+{
+  "status": "PASS",
+  "validation_scope": "documentary research package only; not importer/SQLite/publication CI; research completeness not asserted",
+  "counts": {
+    "current_offices": 6378,
+    "historical_offices": 0,
+    "total_offices": 6378,
+    "events": 12753,
+    "results": 101526,
+    "geographies": 3198,
+    "tier_histogram": {
+      "municipal": 6355,
+      "regional": 20,
+      "national": 2,
+      "other": 1
+    },
+    "office_types": {
+      "municipal_council": 3177,
+      "direct_mayor": 3177,
+      "county_assembly": 19,
+      "capital_assembly": 1,
+      "direct_capital_mayor": 1,
+      "national_assembly": 1,
+      "indirect_president": 1,
+      "ep_delegation": 1
+    },
+    "events_by_cycle": {
+      "ONK2024": 6372,
+      "PRES2017": 1,
+      "PRES2022": 1,
+      "PRES2024": 1,
+      "OGY2022": 1,
+      "OGY2026": 1,
+      "EP2024": 1,
+      "ONK2014": 6375
+    },
+    "results_by_cycle": {
+      "ONK2024": 47805,
+      "PRES2017": 1,
+      "PRES2022": 1,
+      "PRES2024": 1,
+      "OGY2022": 682,
+      "OGY2026": 664,
+      "EP2024": 220,
+      "ONK2014": 52152
+    },
+    "direct_executive_offices": 3178,
+    "council_assembly_offices": 3198,
+    "county_assemblies": 19,
+    "municipal_councils": 3177,
+    "municipal_district_jurisdictions": 3177,
+    "noncapital_settlements": 3154,
+    "capital_districts": 23,
+    "current_geographic_snapshot": "NVI2026-01-26 corroboration; later legal audit open",
+    "proceedings": 0,
+    "party_mappings": 0,
+    "prospective_events": 0,
+    "coverage_complete": false
+  },
+  "checks": [
+    {
+      "check": "unique office IDs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "tier exact1:1 IDs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "all draft, Justin unchecked",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "office types/counts",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "tier histogram",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "register retained hash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "tier hash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "geography office FKs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "geography parents",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no geography cycle",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "unique event identities",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "event FK/IDs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "unique result IDs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "result event FKs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "result deterministic IDs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "numeric domains and missing/zero statuses",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "no padded/withdrawn fake candidates",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "fixture-free factual office universe",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no appointed/direct county-chair or PM offices",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "presidency indirect and no fabricated vote totals",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no invented prospective dates",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "date precision source components",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "2024vs2026jurisdiction set",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "current/historical counts",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "counts actual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "all223columns",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "identity vector counts",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "all vector record keys unique",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "source IDs deterministic",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "all effective-input hashes and sizes",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "release fingerprint",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no accepted overrides",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "all resolved origins bind actual nonblocked source hash",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "unpacked members equal immutable archive bytes",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "contract hashes unchanged",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "at least15 acceptance examples",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no repository/importer/SQLite/VPS/UI changes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "deep all numeric votes and printed shares equal retained sources",
+      "status": "PASS",
+      "detail": {
+        "errors": [],
+        "result_rows_checked": 101526,
+        "html_pages": 3197,
+        "worksheets": 329
+      }
+    }
+  ],
+  "applied_changes": 0,
+  "execution": {
+    "importer": "Not run",
+    "SQLite": "Not run",
+    "VPS": "Not run",
+    "UI": "Not run",
+    "repo_mutation": "Not run"
+  },
+  "Justin_accepted": false,
+  "checksum_protocol": "SHA256SUMS excludes itself; final manifest and ZIP member verification is recorded in the external Hungary_Delivery_Receipt.json to avoid recursive self-hashing."
+}

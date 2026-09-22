@@ -1,0 +1,74 @@
+[
+  {
+    "gate": "HU-CURRENT-LEGAL-REGISTER",
+    "status": "open",
+    "scope": "all local jurisdictions",
+    "reason": "NVI2024 territorial codes and NVI January2026 polling-place roster reconcile3177jurisdictions. KSH endpoints returned rejected pages; September2026 legal-change audit remains open. No claim that electoral rosters replace legal founding/abolition registers."
+  },
+  {
+    "gate": "HU-HISTORICAL-REFORMS",
+    "status": "open",
+    "scope": "post1989 and2011/2014 changes",
+    "reason": "2014archive and2024current municipal codes are name-checked;0historical-only offices recovered. This is not proof no abolished bodies existed. Earlier territorial registers, founding/abolition dates and official successor edges remain required. No guessed merges."
+  },
+  {
+    "gate": "HU-2019-ARCHIVE",
+    "status": "open",
+    "scope": "ordinary2019 local and EP;2018 parliamentary",
+    "reason": "NVI older routes returned423/404. No synthetic2019cycle attached to every office; currently acquired older documents stay retained. Historic depth is the explicit event/result inventory, not asserted two consecutive cycles."
+  },
+  {
+    "gate": "HU-SPECIAL-REPEAT",
+    "status": "open",
+    "scope": "all local by-elections, repeats, ties and no-candidate polls",
+    "reason": "Ordinary2024candidate return tables are not a complete by-election/repeat register. No-candidate offices survive without zero results.2014repeat archive pages require separate decisions/date binding; no latest page update date is substituted for ballot date."
+  },
+  {
+    "gate": "HU-BUDAPEST",
+    "status": "pending_Justin",
+    "scope": "HU-BUDAPEST-A and HU-BUDAPEST-M",
+    "reason": "One capital assembly with dual territorial/municipal remit proposed regional; direct capital mayor proposed municipal.2014compensation/district-mayor composition is not2024party-list mode.2024mayoral recount/judicial document chronology remains a gate even though final NVI precinct archive is retained."
+  },
+  {
+    "gate": "HU-PRESIDENT",
+    "status": "open",
+    "scope": "HU-PRES",
+    "reason": "Primary NJT election resolutions2017/2022/2024 evidence dates and elected person only. Vote totals/opponents/rounds are not supplied by those resolutions. Parliamentary transcript downloads returned CAPTCHA; indexed numeric leads are not normalized.2026constitutional/officeholder changes need primary reconciliation; no incumbent or next-election date is asserted."
+  },
+  {
+    "gate": "HU-NATIONAL-COMPONENTS",
+    "status": "open",
+    "scope": "HU-OGY",
+    "reason": "2022national party/minority list results and OEVK candidates recovered;2026OEVK candidates and national party-list votes (precincts plus mail once) recovered.2026nationality components, compensation and seat allocation remain retained only; no synthetic totals/percentages/seats."
+  },
+  {
+    "gate": "HU-EP",
+    "status": "pending_Justin",
+    "scope": "HU-EP",
+    "reason": "EP2024domestic county subsets recovered from municipality table. Overseas and national final allocation not recovered; no sum called a complete national result. Supranational delegation proposed other pending Justin tier review."
+  },
+  {
+    "gate": "HU-NATIONALITY-SELF-GOVERNMENT",
+    "status": "open",
+    "scope": "national,territorial and local nationality self-governments",
+    "reason": "Official2024XLS/ZIPreturns and2011ActCLXXIX retained losslessly. They are distinct from ordinary territorial councils and from parliamentary minority lists. Separate body formation/current existence and scope acceptance needed before extending the register; geographic subtotals must not be mistaken for separate councils. Pack does not claim complete coverage of these additional cultural-autonomy bodies."
+  },
+  {
+    "gate": "HU-MUNICIPAL-SEATS",
+    "status": "open",
+    "scope": "2024council returns",
+    "reason": "Precinct candidate votes aggregate only across same office/component/candidate number. Small-community candidate marks are multi-vote and do not sum to valid ballots. Ward votes and compensation allocation stay distinct.2024seat allocations absent from selected source tables remain NULL."
+  },
+  {
+    "gate": "HU-CHAIRS-JARAS",
+    "status": "documented_exclusion",
+    "scope": "county chairs and járás administration",
+    "reason": "2011ActCLXXXIX §27(2) county chair elected by assembly; no direct executive row. §3 identifies municipal and county governments; no standalone elected járás council manufactured. Budapest mayor and district/municipal mayors are direct under2010ActL §12."
+  },
+  {
+    "gate": "HU-UPCOMING",
+    "status": "open",
+    "scope": "all offices",
+    "reason": "Next dates remain NULL absent a retained exact call. Five-year local terms do not justify inventing a2029day. All offices retained regardless of18-month alert window."
+  }
+]
