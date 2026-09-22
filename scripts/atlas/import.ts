@@ -3,7 +3,7 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
- * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -367,6 +367,28 @@ function main() {
       console.log(`croatia_executives=${result.croatia.counts.executive_tickets}`);
       console.log(`croatia_deputies=${result.croatia.counts.current_deputies}`);
       console.log(`croatia_assemblies=${result.croatia.counts.assemblies}`);
+    }
+    if (result.portugal) {
+      console.log("lineage=country-package-portugal");
+      console.log(`portugal_attempt_id=${result.portugal.attemptId}`);
+      console.log(`portugal_release_id=${result.portugal.releaseId}`);
+      console.log(`portugal_fingerprint_sha256=${result.portugal.fingerprint}`);
+      console.log(`portugal_reused_release=${result.portugal.reusedRelease ? "yes" : "no"}`);
+      console.log(`portugal_offices=${result.portugal.counts.offices}`);
+      console.log(`portugal_current=${result.portugal.counts.current_offices}`);
+      console.log(`portugal_historical=${result.portugal.counts.historical_offices}`);
+      console.log(`portugal_municipal=${result.portugal.counts.municipal_offices}`);
+      console.log(`portugal_regional=${result.portugal.counts.regional_offices}`);
+      console.log(`portugal_national=${result.portugal.counts.national_offices}`);
+      console.log(`portugal_other=${result.portugal.counts.other_offices}`);
+      console.log(`portugal_selected_histories=${result.portugal.counts.selected_histories}`);
+      console.log(`portugal_prospective_events=${result.portugal.counts.prospective_events}`);
+      console.log(`portugal_result_rows=${result.portugal.counts.result_rows}`);
+      console.log(`portugal_proceedings=${result.portugal.counts.proceedings}`);
+      console.log(`portugal_sources=${result.portugal.counts.sources}`);
+      console.log(`portugal_unresolved=${result.portugal.counts.unresolved_evidence}`);
+      console.log(`portugal_approved=${result.portugal.counts.approved_classifications}`);
+      console.log(`portugal_needs_review=${result.portugal.counts.needs_review_classifications}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");

@@ -590,6 +590,15 @@ export function listAtlasRegionalCalendar(
       denominatorKnown: false,
     };
   }
+  if (countryId === "portugal") {
+    return {
+      offices,
+      count: offices.length,
+      label:
+        "2 regional offices (Açores and Madeira legislatures). No popular regional-government president. Parish assemblies, juntas, and parish presidents stay other while PARISH-TIER is open. Historical rows are unresolved aliases, not proved abolitions. Named holds stay open.",
+      denominatorKnown: false,
+    };
+  }
   return {
     offices,
     count: offices.length,
