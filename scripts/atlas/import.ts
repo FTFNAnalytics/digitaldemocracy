@@ -3,7 +3,7 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
- * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -389,6 +389,32 @@ function main() {
       console.log(`portugal_unresolved=${result.portugal.counts.unresolved_evidence}`);
       console.log(`portugal_approved=${result.portugal.counts.approved_classifications}`);
       console.log(`portugal_needs_review=${result.portugal.counts.needs_review_classifications}`);
+    }
+    if (result.spain) {
+      console.log("lineage=country-package-spain");
+      console.log(`spain_attempt_id=${result.spain.attemptId}`);
+      console.log(`spain_release_id=${result.spain.releaseId}`);
+      console.log(`spain_fingerprint_sha256=${result.spain.fingerprint}`);
+      console.log(`spain_reused_release=${result.spain.reusedRelease ? "yes" : "no"}`);
+      console.log(`spain_offices=${result.spain.counts.offices}`);
+      console.log(`spain_current=${result.spain.counts.current_offices}`);
+      console.log(`spain_historical=${result.spain.counts.historical_offices}`);
+      console.log(`spain_municipal=${result.spain.counts.municipal_offices}`);
+      console.log(`spain_regional=${result.spain.counts.regional_offices}`);
+      console.log(`spain_national=${result.spain.counts.national_offices}`);
+      console.log(`spain_other=${result.spain.counts.other_offices}`);
+      console.log(`spain_diputaciones=${result.spain.counts.provincial_councils}`);
+      console.log(`spain_islands=${result.spain.counts.island_councils}`);
+      console.log(`spain_concejo_abierto=${result.spain.counts.concejo_abierto}`);
+      console.log(`spain_mode_pending=${result.spain.counts.mode_pending_current}`);
+      console.log(`spain_selected_histories=${result.spain.counts.selected_histories}`);
+      console.log(`spain_prospective_events=${result.spain.counts.prospective_events}`);
+      console.log(`spain_result_rows=${result.spain.counts.result_rows}`);
+      console.log(`spain_proceedings=${result.spain.counts.proceedings}`);
+      console.log(`spain_sources=${result.spain.counts.sources}`);
+      console.log(`spain_unresolved=${result.spain.counts.unresolved_evidence}`);
+      console.log(`spain_approved=${result.spain.counts.approved_classifications}`);
+      console.log(`spain_needs_review=${result.spain.counts.needs_review_classifications}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
