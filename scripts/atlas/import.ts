@@ -3,7 +3,7 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
- * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -342,6 +342,31 @@ function main() {
       console.log(`poland_unresolved=${result.poland.counts.unresolved_evidence}`);
       console.log(`poland_approved=${result.poland.counts.approved_classifications}`);
       console.log(`poland_needs_review=${result.poland.counts.needs_review_classifications}`);
+    }
+    if (result.croatia) {
+      console.log("lineage=country-package-croatia");
+      console.log(`croatia_attempt_id=${result.croatia.attemptId}`);
+      console.log(`croatia_release_id=${result.croatia.releaseId}`);
+      console.log(`croatia_fingerprint_sha256=${result.croatia.fingerprint}`);
+      console.log(`croatia_reused_release=${result.croatia.reusedRelease ? "yes" : "no"}`);
+      console.log(`croatia_offices=${result.croatia.counts.offices}`);
+      console.log(`croatia_current=${result.croatia.counts.current_offices}`);
+      console.log(`croatia_historical=${result.croatia.counts.historical_offices}`);
+      console.log(`croatia_municipal=${result.croatia.counts.municipal_offices}`);
+      console.log(`croatia_regional=${result.croatia.counts.regional_offices}`);
+      console.log(`croatia_national=${result.croatia.counts.national_offices}`);
+      console.log(`croatia_other=${result.croatia.counts.other_offices}`);
+      console.log(`croatia_selected_histories=${result.croatia.counts.selected_histories}`);
+      console.log(`croatia_prospective_events=${result.croatia.counts.prospective_events}`);
+      console.log(`croatia_result_rows=${result.croatia.counts.result_rows}`);
+      console.log(`croatia_proceedings=${result.croatia.counts.proceedings}`);
+      console.log(`croatia_sources=${result.croatia.counts.sources}`);
+      console.log(`croatia_unresolved=${result.croatia.counts.unresolved_evidence}`);
+      console.log(`croatia_approved=${result.croatia.counts.approved_classifications}`);
+      console.log(`croatia_needs_review=${result.croatia.counts.needs_review_classifications}`);
+      console.log(`croatia_executives=${result.croatia.counts.executive_tickets}`);
+      console.log(`croatia_deputies=${result.croatia.counts.current_deputies}`);
+      console.log(`croatia_assemblies=${result.croatia.counts.assemblies}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");

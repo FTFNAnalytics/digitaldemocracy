@@ -1,6 +1,6 @@
 # Prompt W checklist
 
-Mapping/documentary work is separated from operational execution. **Importer / SQLite / VPS / UI: Not run.** Research coverage remains partial even if every mapping row is Done.
+Mapping/documentary work is separated from operational execution. Research coverage remains partial even if every mapping row is Done. The follow-up importer is `ATLAS_IMPORT_SCOPE=croatia` — see [Croatia_Import.md](Croatia_Import.md). VPS deploy stays out of scope. The checklist rows below record the Prompt W landing, when SQLite execution had not yet run.
 
 | Requirement | Status | Evidence / future gate |
 |---|---|---|
