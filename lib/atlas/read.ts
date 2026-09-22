@@ -3,6 +3,7 @@ import type { DatabaseSync } from "node:sqlite";
 import type { AtlasExplorerFilters } from "./filters";
 import { emptyAtlasExplorerFilters } from "./filters";
 import { resolveAtlasSqlitePath } from "./paths";
+import { REGIONAL_CALENDAR_LABEL as SPAIN_REGIONAL_CALENDAR_LABEL } from "./spain/identity";
 import { openAtlasDatabase, tableExists } from "./sqlite";
 
 export type AtlasLoadStatus = "ready" | "missing" | "empty" | "unavailable";
@@ -596,6 +597,14 @@ export function listAtlasRegionalCalendar(
       count: offices.length,
       label:
         "2 regional offices (Açores and Madeira legislatures). No popular regional-government president. Parish assemblies, juntas, and parish presidents stay other while PARISH-TIER is open. Historical rows are unresolved aliases, not proved abolitions. Named holds stay open.",
+      denominatorKnown: false,
+    };
+  }
+  if (countryId === "spain") {
+    return {
+      offices,
+      count: offices.length,
+      label: SPAIN_REGIONAL_CALENDAR_LABEL,
       denominatorKnown: false,
     };
   }

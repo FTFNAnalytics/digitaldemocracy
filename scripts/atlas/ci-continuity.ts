@@ -1,6 +1,6 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -29,6 +29,7 @@ import { LINEAGE_ID as PORTUGAL_LINEAGE } from "../../lib/atlas/portugal/identit
 import { LINEAGE_ID as NETHERLANDS_LINEAGE } from "../../lib/atlas/netherlands/identity";
 import { LINEAGE_ID as SWEDEN_LINEAGE } from "../../lib/atlas/sweden/identity";
 import { LINEAGE_ID as NORWAY_LINEAGE } from "../../lib/atlas/norway/identity";
+import { LINEAGE_ID as SPAIN_LINEAGE } from "../../lib/atlas/spain/identity";
 import { LINEAGE_ID as SWITZERLAND_LINEAGE } from "../../lib/atlas/switzerland/identity";
 
 function fail(message: string): never {
@@ -458,6 +459,39 @@ function main() {
     if (result.portugal?.counts.list_head_events !== 0) {
       fail(`Portugal list-head events ${String(result.portugal?.counts.list_head_events)}`);
     }
+    if (result.spain?.counts.offices !== 8208) {
+      fail(`Spain offices ${String(result.spain?.counts.offices)}`);
+    }
+    if (result.spain?.counts.current_offices !== 8204) {
+      fail(`Spain current ${String(result.spain?.counts.current_offices)}`);
+    }
+    if (result.spain?.counts.historical_offices !== 4) {
+      fail(`Spain historical ${String(result.spain?.counts.historical_offices)}`);
+    }
+    if (result.spain?.counts.municipal_offices !== 8133) {
+      fail(`Spain municipal ${String(result.spain?.counts.municipal_offices)}`);
+    }
+    if (result.spain?.counts.regional_offices !== 68) {
+      fail(`Spain regional ${String(result.spain?.counts.regional_offices)}`);
+    }
+    if (result.spain?.counts.result_rows !== 0) {
+      fail(`Spain results ${String(result.spain?.counts.result_rows)}`);
+    }
+    if (result.spain?.counts.proceedings !== 0) {
+      fail(`Spain proceedings ${String(result.spain?.counts.proceedings)}`);
+    }
+    if (result.spain?.counts.prospective_events !== 0) {
+      fail(`Spain prospective ${String(result.spain?.counts.prospective_events)}`);
+    }
+    if (result.spain?.counts.unresolved_evidence !== 12) {
+      fail(`Spain unresolved ${String(result.spain?.counts.unresolved_evidence)}`);
+    }
+    if (result.spain?.counts.provincial_councils !== 38) {
+      fail(`Spain diputaciones ${String(result.spain?.counts.provincial_councils)}`);
+    }
+    if (result.spain?.counts.diputacion_events !== 0) {
+      fail(`Spain diputacion events ${String(result.spain?.counts.diputacion_events)}`);
+    }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
     if (result.nz?.counts.events !== 7) fail(`NZ events ${String(result.nz?.counts.events)}`);
@@ -608,6 +642,44 @@ function main() {
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [POLAND_LINEAGE]) !== 5312) {
         fail("Poland office rows");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [SPAIN_LINEAGE]) !== 8208) {
+        fail("Spain office rows");
+      }
+      if (
+        count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_status = 'historical'", [SPAIN_LINEAGE]) !==
+        4
+      ) {
+        fail("Spain historical office rows");
+      }
+      if (
+        count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_id IN ('ES-I071-COUNCIL','ES-P31-DIP')", [
+          SPAIN_LINEAGE,
+        ]) !== 0
+      ) {
+        fail("Spain invented Formentera island duplicate or Navarra diputacion");
+      }
+      if (
+        count(
+          db,
+          "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND office_type != 'concejo_abierto_alcalde' AND (office_type LIKE '%mayor%' OR office_type LIKE '%alcalde%' OR office_type LIKE '%president%' OR office_type LIKE '%premier%' OR office_id LIKE '%-MAYOR')",
+          [SPAIN_LINEAGE],
+        ) !== 0
+      ) {
+        fail("Spain invented executive offices");
+      }
+      if (
+        count(
+          db,
+          `SELECT COUNT(*) AS n FROM election_event e JOIN office o USING (id_namespace, office_id)
+           WHERE e.lineage_id = ? AND o.office_type = 'provincial_council'`,
+          [SPAIN_LINEAGE],
+        ) !== 0
+      ) {
+        fail("Spain diputacion events");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM result_row WHERE lineage_id = ?", [SPAIN_LINEAGE]) !== 0) {
+        fail("Spain result rows");
       }
       if (
         count(
@@ -909,6 +981,7 @@ function main() {
         CZECHIA_LINEAGE,
         SWEDEN_LINEAGE,
         SWITZERLAND_LINEAGE,
+        SPAIN_LINEAGE,
         NZ_LINEAGE_ID,
         LATAM_LINEAGE_ID,
       ].sort();
@@ -920,7 +993,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 croatia=1245 portugal=18834 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 croatia=1245 portugal=18834 spain=8208 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });
