@@ -67,10 +67,13 @@ function tableNames(filePath: string): string[] {
 describe("atlas CLI stubs", () => {
   const tempDirs: string[] = [];
 
-  afterEach(() => {
+  afterEach(async () => {
     for (const dir of tempDirs.splice(0)) {
       rmSync(dir, { recursive: true, force: true });
     }
+    // spawnSync blocks the worker. Without a poll-phase turn, Vitest's
+    // onTaskUpdate ack stays unread for the whole file and the 60s RPC timer fires.
+    await new Promise((resolve) => setImmediate(resolve));
   });
 
   it("migrate:atlas applies attempt log and master SQL to separate databases", () => {
