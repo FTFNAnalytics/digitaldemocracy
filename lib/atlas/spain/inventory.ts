@@ -360,17 +360,17 @@ export function scanSpainInventory(options: {
       intendedInventory,
     );
   }
+  if ((TIER_SHA256 as string) === (DRAFT_TIER_SHA256 as string)) {
+    throw new SpainPreflightError(
+      "tier_hash_mismatch",
+      "Spain tier pin still matches the predecessor draft digest.",
+      intendedInventory,
+    );
+  }
   if (tierItem.sha256 !== TIER_SHA256) {
     throw new SpainPreflightError(
       "tier_hash_mismatch",
       `Spain tier SHA-256 mismatch; expected ${TIER_SHA256}.`,
-      intendedInventory,
-    );
-  }
-  if (tierItem.sha256 === DRAFT_TIER_SHA256) {
-    throw new SpainPreflightError(
-      "tier_hash_mismatch",
-      "Spain tier bytes still match the predecessor draft digest.",
       intendedInventory,
     );
   }
