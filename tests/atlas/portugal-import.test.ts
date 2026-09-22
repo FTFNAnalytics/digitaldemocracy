@@ -54,7 +54,9 @@ describe("Portugal Atlas importer", () => {
 
   it(
     "imports 10666 current + 8168 historical offices and reuses the same release",
-    () => {
+    async () => {
+      // Let Vitest ack onTaskUpdate before the synchronous SQLite import.
+      await new Promise((resolve) => setImmediate(resolve));
       const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-portugal-"));
       tempDirs.push(dir);
       const sqlitePath = path.join(dir, "atlas.sqlite");

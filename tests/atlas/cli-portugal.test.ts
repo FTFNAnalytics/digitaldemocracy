@@ -31,7 +31,8 @@ describe("Portugal import:atlas CLI", () => {
 
   it(
     "import:atlas loads Portugal Prompt AD 10666 current + 8168 historical offices",
-    () => {
+    async () => {
+      await new Promise((resolve) => setImmediate(resolve));
       const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-portugal-cli-"));
       tempDirs.push(dir);
       const sqlitePath = path.join(dir, "atlas.sqlite");
