@@ -1,0 +1,42 @@
+[
+  {
+    "office_group": "local_councils",
+    "ordinary_year": 2029,
+    "exact_poll_date": null,
+    "inside_18_month_alert_window": false,
+    "basis": "five-year cycle after 2024; exact day uncalled in this pack",
+    "source_id": "MTS-10dda6ac094654257aa7"
+  },
+  {
+    "office_group": "European_Parliament",
+    "ordinary_year": 2029,
+    "exact_poll_date": null,
+    "inside_18_month_alert_window": false,
+    "basis": "five-year cycle after 2024; exact day uncalled in this pack",
+    "source_id": "MTS-9c27776e7de910999e8a"
+  },
+  {
+    "office_group": "regional_presidents",
+    "ordinary_year": 2029,
+    "exact_poll_date": null,
+    "inside_18_month_alert_window": false,
+    "basis": "retained consolidated S.L.363.06 reg.6(2) extends October 2021 committee to October 2029; requires notice; no guessed exact day",
+    "source_id": "MTS-3c720e656bb874779f43"
+  },
+  {
+    "office_group": "House",
+    "ordinary_year": 2031,
+    "exact_poll_date": null,
+    "inside_18_month_alert_window": false,
+    "basis": "five-year ordinary horizon after 2026; dissolution can bring an earlier election",
+    "source_id": "MTS-7d82dbd33edfe28dc007"
+  },
+  {
+    "office_group": "President",
+    "ordinary_year": 2029,
+    "exact_poll_date": null,
+    "inside_18_month_alert_window": false,
+    "basis": "five-year office term; House resolution, not popular polling; constitutional holdover possible",
+    "source_id": "MTS-7d82dbd33edfe28dc007"
+  }
+]
