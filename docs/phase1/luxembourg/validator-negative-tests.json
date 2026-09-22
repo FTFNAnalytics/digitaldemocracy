@@ -1,0 +1,14 @@
+[
+  {
+    "test": "dangling_result_event",
+    "rejected": true
+  },
+  {
+    "test": "checked_tier_approval",
+    "rejected": true
+  },
+  {
+    "test": "missing_contract_column",
+    "rejected": true
+  }
+]

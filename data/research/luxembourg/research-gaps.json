@@ -1,0 +1,68 @@
+[
+  {
+    "id": "LU-G01",
+    "topic": "Grand Duke",
+    "status": "resolved_exclusion",
+    "detail": "Hereditary constitutional head of state. No popular office/event/result created. See official Grand Duke source."
+  },
+  {
+    "id": "LU-G02",
+    "topic": "Mayoral selection",
+    "status": "resolved_exclusion",
+    "detail": "Mayor appointed by Grand Duke on presentation of council majority; college derives from elected council. No separate popular mayoral or executive contest."
+  },
+  {
+    "id": "LU-G03",
+    "topic": "Communal mergers",
+    "status": "bounded_gap",
+    "detail": "28 explicit predecessor edges retained. Exact legal effective days for 2011-law and Wiltz mergers not independently projected; portal establishes names and law dates. Older pre-2005 council universes not exhaustively reconstructed."
+  },
+  {
+    "id": "LU-G04",
+    "topic": "Supplementary elections / uncontested vacancies",
+    "status": "open",
+    "detail": "All four ordinary-cycle archives extracted; by-elections filling vacancies and subsequent changes are not an exhaustive all-years series. In particular Consdorf/Nommern/Schieren/Weiler-la-Tour 2011, Bech 2017, Nommern 2023 require follow-up beyond the initial return. No invented later winners."
+  },
+  {
+    "id": "LU-G05",
+    "topic": "Certification",
+    "status": "open",
+    "detail": "Most source vectors are official-publisher unofficial snapshots; complete reporting does not make them certified. Certified parliamentary PDFs (1994 retained) and later judgments/corrections can differ; do not replace source status."
+  },
+  {
+    "id": "LU-G06",
+    "topic": "EP",
+    "status": "bounded_gap",
+    "detail": "1994 vote detail is communal reporting-unit data with separate EP constitutive seats. 1999–2024 national party/candidate vectors retained. Pre-1994 elections outside the extracted portal series; not claimed exhaustive since 1979."
+  },
+  {
+    "id": "LU-G07",
+    "topic": "Parliament",
+    "status": "bounded_gap",
+    "detail": "1994 commune candidate/list returns retained, with certified district PDFs as evidence; certified seat-vector transcription is not complete. 1999–2023 four-constituency party/candidate returns. Pre-1994 election history not claimed complete."
+  },
+  {
+    "id": "LU-G08",
+    "topic": "Dates",
+    "status": "bounded_gap",
+    "detail": "Older national/EP HTML archive rows use source-supported election year when an exact day was not separately bound. Do not auto-fill Jan 1."
+  },
+  {
+    "id": "LU-G09",
+    "topic": "Berdorf",
+    "status": "resolved_with_capture_limit",
+    "detail": "2023 postponed poll held October 8. Official commune proclamation has 15 candidates and 9 elected; web PDF extraction and visual verification retained. Original PDF direct download returned 403; hash applies to extraction only."
+  },
+  {
+    "id": "LU-G10",
+    "topic": "Raw totals inconsistencies",
+    "status": "review",
+    "detail": "Legacy 2005 HTML can publish zero blank/invalid ballots despite a gap between ballot and valid totals. Preserve raw, do not repair by subtraction or treat as certified."
+  },
+  {
+    "id": "LU-G11",
+    "topic": "1994 EP archive defect",
+    "status": "open",
+    "detail": "Grevenmacher official HTML omits the LSAP list and all its candidates. Missing votes are not inferred by subtraction. 1994 geographical sums are therefore not certified national totals. Other legacy snapshot discrepancies remain possible."
+  }
+]
