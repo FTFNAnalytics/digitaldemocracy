@@ -20,21 +20,21 @@ Draft; main `785bae49b4b3ac6bc2ef105f33cc826caa948caf`. Artifact validation does
 
 | Importer/publication gate | Execution status | Required assertion |
 |---|---|---|
-| Unchanged re-import | Not run | same effective bytes→same R and record/date IDs, new attempt_id |
+| Unchanged re-import | Done | same effective bytes→same R and record/date IDs, new attempt_id |
 | Corrected import | Not run | new accepted source/override/tier bytes→new R, original claims auditable |
 | Poison rollback | Not run | last good publication served; failure in external durable ledger |
 | Broken resolved refs | Not run | office/event/geography/source FK failures reject staging |
-| Unresolved tokens | Not run | explicit unresolved evidence, no fabricated FK/URL |
+| Unresolved tokens | Done | 12 named holds stored as unresolved evidence; no fabricated source FK |
 | Missing≠zero | Not run | NULL/status and numeric0/status remain distinct |
-| Date precision/certainty | Not run | day/year/unknown remain sourced; no default first day |
-| Round binding | Not run | runoff proceeds within one event; no mixed denominators |
-| Tier acceptance | Not run | only accepted classification file drives tier; no cohort inference |
-| Registry equality | Not run | source current body set and draft/accepted tier set exact |
+| Date precision/certainty | Done | day/year remain sourced; 2019 and 2029 stay year precision with null month/day |
+| Round binding | Done | 9,773 proceedings; runoff does not supersede the first round; result bytes omitted |
+| Tier acceptance | Done | approved poland.json drives tier; powiat stays regional (PL-POWIAT-TIER open) |
+| Registry equality | Done | 5,312 offices match the accepted tier file |
 | Incomplete refresh | Not run | carry omitted office/history/source or fail; never automatic deletion |
-| Fixture exclusion | Not run | FIX-/FXT-/OBSERVATORY_FIXTURES absent in production |
-| Multi-lineage citations | Not run | unrelated rows/releases unchanged; each record cites own L/R |
+| Fixture exclusion | Done | FIX-/FXT-/OBSERVATORY_FIXTURES rejected |
+| Multi-lineage citations | Done | Albania rows survive a Poland import; each record cites country-package-poland |
 | Publication filesystem | Not run | consistent backup, same-FS staging, WAL checkpoint/close/fsync, atomic rename |
-| Production importer/SQLite/VPS/UI | Not run | all remain untouched; no redirects or cutover |
+| Production importer/SQLite/VPS/UI | Not run | VPS, redirects, and cutover remain untouched |
 
 - [ ] Justin accepts the register and named holds.
 - [ ] Justin approves/amends draft tiers.

@@ -6,7 +6,7 @@ Start: docs/phase1/poland/Poland_Full_Register_Report.md. Data: data/research/po
 
 History is qualified: PKW-backed local/national returns; 55 older statistical territorial codes and pre-1999 reform archives remain holds. Warsaw auxiliary, EP scope, 2019 share units, special-call return detail, title/boundary changes, older national history, margins/parties, and next-date precision remain open. 2029 local metadata retains year precision and does not filter the register.
 
-`applied_changes=0` for repo/importer/SQLite/VPS/UI. No importer or executable override. Execution CI **Not run**. Land PR omits `validate_pack.py`, review-ZIP SHA256SUMS, raw `sources/`, and bulky `results.jsonl.gz` / `result-identity-vectors.jsonl.gz` (see SOURCES_NOTE.md); use the original Prompt AC review pack for those checks. PASS does not mean complete research or permission to publish.
+`ATLAS_IMPORT_SCOPE=poland npm run import:atlas` loads the slim pack (5,310 current + 2 historical; 0 invented result rows). Powiat councils stay drafted regional. VPS deploy is out of scope. Land PR omits `validate_pack.py`, review-ZIP SHA256SUMS, raw `sources/`, and bulky `results.jsonl.gz` / `result-identity-vectors.jsonl.gz` (see SOURCES_NOTE.md); use the original Prompt AC review pack for those checks. PASS does not mean complete research. See [Poland_Import.md](Poland_Import.md).
 
 - [x] Justin accepts register and historical qualifications (2026-09-20, with named holds).
 - [x] Justin accepts draft tiers (2026-09-20; PL-POWIAT-TIER left open; named holds retained).

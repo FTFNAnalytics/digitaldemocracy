@@ -3,7 +3,7 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
- * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland (`ATLAS_IMPORT_SCOPE=all`).
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -294,6 +294,30 @@ function main() {
       console.log(`norway_unresolved=${result.norway.counts.unresolved_evidence}`);
       console.log(`norway_approved=${result.norway.counts.approved_classifications}`);
       console.log(`norway_needs_review=${result.norway.counts.needs_review_classifications}`);
+    }
+    if (result.poland) {
+      console.log("lineage=country-package-poland");
+      console.log(`poland_attempt_id=${result.poland.attemptId}`);
+      console.log(`poland_release_id=${result.poland.releaseId}`);
+      console.log(`poland_fingerprint_sha256=${result.poland.fingerprint}`);
+      console.log(`poland_reused_release=${result.poland.reusedRelease ? "yes" : "no"}`);
+      console.log(`poland_offices=${result.poland.counts.offices}`);
+      console.log(`poland_current=${result.poland.counts.current_offices}`);
+      console.log(`poland_historical=${result.poland.counts.historical_offices}`);
+      console.log(`poland_municipal=${result.poland.counts.municipal_offices}`);
+      console.log(`poland_regional=${result.poland.counts.regional_offices}`);
+      console.log(`poland_national=${result.poland.counts.national_offices}`);
+      console.log(`poland_other=${result.poland.counts.other_offices}`);
+      console.log(`poland_powiat=${result.poland.counts.powiat_councils}`);
+      console.log(`poland_sejmiks=${result.poland.counts.voivodeship_sejmiks}`);
+      console.log(`poland_selected_histories=${result.poland.counts.selected_histories}`);
+      console.log(`poland_prospective_events=${result.poland.counts.prospective_events}`);
+      console.log(`poland_result_rows=${result.poland.counts.result_rows}`);
+      console.log(`poland_proceedings=${result.poland.counts.proceedings}`);
+      console.log(`poland_sources=${result.poland.counts.sources}`);
+      console.log(`poland_unresolved=${result.poland.counts.unresolved_evidence}`);
+      console.log(`poland_approved=${result.poland.counts.approved_classifications}`);
+      console.log(`poland_needs_review=${result.poland.counts.needs_review_classifications}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
