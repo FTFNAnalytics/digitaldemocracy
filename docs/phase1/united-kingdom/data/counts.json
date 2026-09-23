@@ -1,0 +1,119 @@
+{
+  "as_of": "2026-09-23",
+  "offices_total": 510,
+  "offices_current": 482,
+  "offices_current_shadow": 2,
+  "offices_historical": 26,
+  "principal_operational_councils": 382,
+  "principal_councils_by_nation": {
+    "England": 317,
+    "Northern Ireland": 11,
+    "Scotland": 32,
+    "Wales": 22
+  },
+  "current_office_types": {
+    "unitary_council": 62,
+    "isles_of_scilly_council": 1,
+    "district_council": 164,
+    "metropolitan_borough_council": 36,
+    "city_of_london_common_council": 1,
+    "london_borough_council": 32,
+    "ni_local_council": 11,
+    "scottish_council": 32,
+    "welsh_principal_council": 22,
+    "county_council": 21,
+    "national_lower_chamber": 1,
+    "devolved_legislature": 3,
+    "london_assembly": 1,
+    "direct_local_mayor": 13,
+    "direct_strategic_authority_mayor": 13,
+    "direct_london_mayor": 1,
+    "direct_policing_commissioner": 37,
+    "elected_aldermanic_body": 1,
+    "elected_national_park_component": 2,
+    "elected_regulatory_component": 1,
+    "parish_council": 24,
+    "town_council": 3
+  },
+  "current_direct_executive_offices": 64,
+  "current_collective_bodies": 418,
+  "direct_mayors": 27,
+  "standalone_PCC_PFCC": 37,
+  "current_nonexecutive_elected_special_components": 4,
+  "source_identified_parish_town_councils": 27,
+  "events": 899,
+  "events_by_office_type": {
+    "national_lower_chamber": 71,
+    "county_council": 36,
+    "unitary_council": 122,
+    "metropolitan_borough_council": 134,
+    "district_council": 329,
+    "london_borough_council": 34,
+    "welsh_principal_council": 23,
+    "scottish_council": 32,
+    "devolved_legislature": 20,
+    "historical_european_parliament_delegation": 9,
+    "ni_local_council": 11,
+    "direct_policing_commissioner": 37,
+    "direct_strategic_authority_mayor": 14,
+    "direct_local_mayor": 13,
+    "direct_london_mayor": 1,
+    "london_assembly": 2,
+    "isles_of_scilly_council": 1,
+    "city_of_london_common_council": 1,
+    "elected_aldermanic_body": 7,
+    "shadow_unitary_council": 2
+  },
+  "results": 103648,
+  "result_kinds": {
+    "contestant": 101828,
+    "unopposed_return": 23,
+    "party_aggregate": 224,
+    "published_positive_seat_allocation": 70,
+    "party_list": 1274,
+    "party_summary": 81,
+    "published_seat_allocation": 51,
+    "party_share_and_constitutive_seats": 93,
+    "count_stage_result": 4
+  },
+  "reporting_units": 17175,
+  "draft_tier_histogram": {
+    "4": 427,
+    "3": 76,
+    "1": 2,
+    "2": 5
+  },
+  "historical_office_types": {
+    "historical_european_parliament_delegation": 1,
+    "historical_direct_mayor": 7,
+    "historical_district_council": 17,
+    "historical_county_council": 1
+  },
+  "current_offices_with_events": 452,
+  "quarantined_rows": 25,
+  "explicit_zero_votes": 15,
+  "missing_votes": 312,
+  "missing_seats": 103138,
+  "applied_changes": 0,
+  "research_coverage_complete": false,
+  "offices_by_nation_status": {
+    "United Kingdom": {
+      "current": 1,
+      "historical_only": 1
+    },
+    "England": {
+      "current": 406,
+      "current_shadow": 2,
+      "historical_only": 25
+    },
+    "Scotland": {
+      "current": 36
+    },
+    "Wales": {
+      "current": 27
+    },
+    "Northern Ireland": {
+      "current": 12
+    }
+  }
+}

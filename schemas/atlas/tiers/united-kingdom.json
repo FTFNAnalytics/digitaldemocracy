@@ -1,0 +1,3610 @@
+{
+  "country": "united-kingdom",
+  "country_code": "GB",
+  "prompt": "AU",
+  "Justin_accepted": false,
+  "review_status": "needs_review",
+  "draft_for_human_review": true,
+  "office_count": 510,
+  "holds_open": [
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G07",
+    "G08",
+    "G09",
+    "G10",
+    "G11",
+    "G12",
+    "G13",
+    "G14",
+    "G15",
+    "G16",
+    "G17",
+    "G18",
+    "G19",
+    "G20",
+    "G21",
+    "G22",
+    "G23",
+    "G24",
+    "G25",
+    "G26",
+    "G27"
+  ],
+  "offices": [
+    {
+      "office_id": "GB.LOCAL.E06000001.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000002.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000003.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000004.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000005.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000006.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000007.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000008.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000009.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000010.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000011.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000012.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000013.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000014.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000015.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000016.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000017.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000018.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000019.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000020.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000021.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000022.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000023.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000024.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000025.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000026.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000027.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000030.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000031.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000032.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000033.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000034.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000035.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000036.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000037.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000038.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000039.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000040.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000041.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000042.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000043.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000044.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000045.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000046.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000047.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000049.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000050.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000051.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000052.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000053.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000054.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000055.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000056.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000057.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000058.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000059.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000060.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000061.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000062.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000063.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000064.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000065.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000066.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000008.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000009.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000010.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000011.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000012.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000032.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000033.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000034.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000035.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000036.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000037.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000038.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000039.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000040.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000041.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000042.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000043.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000044.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000045.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000046.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000047.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000061.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000062.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000063.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000064.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000065.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000066.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000067.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000068.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000069.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000070.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000071.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000072.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000073.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000074.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000075.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000076.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000077.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000078.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000079.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000080.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000081.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000082.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000083.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000084.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000085.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000086.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000087.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000088.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000089.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000090.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000091.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000092.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000093.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000094.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000095.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000096.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000098.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000099.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000102.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000103.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000105.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000106.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000107.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000108.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000109.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000110.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000111.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000112.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000113.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000114.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000115.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000116.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000117.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000118.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000119.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000120.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000121.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000122.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000123.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000124.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000125.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000126.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000127.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000128.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000129.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000130.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000131.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000132.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000133.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000134.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000135.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000136.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000137.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000138.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000139.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000140.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000141.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000142.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000143.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000144.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000145.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000146.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000147.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000148.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000149.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000170.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000171.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000172.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000173.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000174.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000175.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000176.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000177.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000178.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000179.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000180.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000181.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000192.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000193.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000194.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000195.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000196.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000197.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000198.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000199.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000200.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000202.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000203.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000207.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000208.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000209.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000210.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000211.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000212.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000213.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000214.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000215.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000216.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000217.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000218.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000219.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000220.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000221.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000222.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000223.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000224.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000225.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000226.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000227.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000228.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000229.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000234.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000235.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000236.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000237.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000238.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000239.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000240.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000241.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000242.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000243.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000244.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000245.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000001.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000002.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000003.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000004.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000005.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000006.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000007.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000008.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000009.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000010.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000011.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000012.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000013.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000014.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000015.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000017.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000018.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000021.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000022.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000023.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000024.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000025.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000026.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000027.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000028.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000029.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000030.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000031.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000032.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000033.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000034.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000035.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000036.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000037.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000038.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000039.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000001.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000002.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000003.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000004.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000005.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000006.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000007.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000008.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000009.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000010.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000011.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000012.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000013.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000014.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000015.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000016.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000017.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000018.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000019.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000020.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000021.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000022.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000023.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000024.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000025.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000026.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000027.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000028.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000029.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000030.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000031.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000032.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000033.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.N09000001.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.N09000002.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.N09000003.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.N09000004.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.N09000005.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.N09000006.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.N09000007.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.N09000008.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.N09000009.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.N09000010.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.N09000011.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000005.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000006.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000008.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000010.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000011.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000013.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000014.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000017.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000018.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000019.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000020.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000021.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000023.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000026.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000027.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000028.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000029.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000030.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000033.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000034.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000035.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000036.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000038.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000039.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000040.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000041.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000042.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000045.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000047.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000048.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000049.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.S12000050.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000001.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000002.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000003.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000004.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000005.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000006.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000008.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000009.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000010.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000011.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000012.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000013.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000014.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000015.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000016.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000018.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000019.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000020.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000021.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000022.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000023.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.W06000024.council",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000003.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000007.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000008.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000011.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000012.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000013.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000014.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000015.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000016.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000017.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000018.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000019.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000020.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000024.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000025.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000028.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000029.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000030.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000031.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000032.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E10000034.council",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.COMMONS",
+      "draft_tier": 1,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HOLYROOD",
+      "draft_tier": 2,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.SENEDD",
+      "draft_tier": 2,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.NI-ASSEMBLY",
+      "draft_tier": 2,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LONDON-ASSEMBLY",
+      "draft_tier": 2,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.SHADOW.east-surrey",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.SHADOW.west-surrey",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000055.mayor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000008.mayor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000017.mayor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000016.mayor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000012.mayor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000023.mayor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000025.mayor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E09000030.mayor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000174.mayor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E06000002.mayor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000022.mayor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E08000006.mayor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LOCAL.E07000103.mayor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.METRO.cambridgeshire-and-peterborough.mayor",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.METRO.greater-lincolnshire.mayor",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.METRO.greater-manchester.mayor",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.METRO.east-midlands.mayor",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.METRO.hull-and-east-yorkshire.mayor",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.METRO.liverpool-city-region.mayor",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.METRO.north-east.mayor",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.METRO.south-yorkshire.mayor",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.METRO.tees-valley.mayor",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.METRO.west-midlands.mayor",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.METRO.west-of-england.mayor",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.METRO.west-yorkshire.mayor",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.METRO.york-and-north-yorkshire.mayor",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.LONDON.mayor",
+      "draft_tier": 2,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.avon-and-somerset",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.bedfordshire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.cambridgeshire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.cheshire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.cleveland",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.cumbria",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.derbyshire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.devon-and-cornwall",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.dorset",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.durham",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.dyfed-powys",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.essex",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.gloucestershire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.gwent",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.hampshire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.hertfordshire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.humberside",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.kent",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.lancashire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.leicestershire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.lincolnshire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.merseyside",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.norfolk",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.north-wales",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.northamptonshire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.northumbria",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.nottinghamshire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.south-wales",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.staffordshire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.suffolk",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.surrey",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.sussex",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.thames-valley",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.warwickshire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.west-mercia",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.west-midlands",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PCC.wiltshire",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.CITY.aldermen",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARK.cairngorms",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARK.loch-lomond-trossachs",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.CROFTING",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.addington",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.aylesford",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.birling",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.borough-green",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.burham",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.ditton",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.east-malling-and-larkfield",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.east-peckham",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.hadlow",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.hildenborough",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.ightham",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.kings-hill",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.leybourne",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.mereworth",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.offham",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.platt",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.plaxtol",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.ryarsh",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.shipbourne",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.snodland",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.stansted",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.trottiscliffe",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.wateringbury",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.west-malling",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.west-peckham",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.wouldham",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.PARISH.TM.wrotham",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.EP",
+      "draft_tier": 1,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.MAYOR.bristol",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.MAYOR.liverpool",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.MAYOR.torbay",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.MAYOR.hartlepool",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.MAYOR.stoke-on-trent",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.MAYOR.copeland",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.MAYOR.north-of-tyne",
+      "draft_tier": 3,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.allerdale",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.carlisle",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.copeland",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.craven",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.hambleton",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.harrogate",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.richmondshire",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.ryedale",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.scarborough",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.selby",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.mendip",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.sedgemoor",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.somerset-west-and-taunton",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.south-somerset",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.barrow-in-furness",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.eden",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.south-lakeland",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    },
+    {
+      "office_id": "GB.HIST.COUNCIL.cumbria",
+      "draft_tier": 4,
+      "review_status": "draft_unapproved",
+      "justin_approved": false,
+      "rationale": "Body-level research tier by governmental scale; not an approved import classification."
+    }
+  ]
+}

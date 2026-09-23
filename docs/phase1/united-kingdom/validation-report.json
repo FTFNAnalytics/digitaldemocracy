@@ -1,0 +1,154 @@
+{
+  "status": "pass",
+  "applied_changes": 0,
+  "justin_approved": false,
+  "offices": 510,
+  "events": 899,
+  "results": 103648,
+  "sources": 252,
+  "checks": {
+    "result_integrity": {
+      "status": "pass",
+      "detail": "103648 unique result rows, valid FKs, explicit missingness and no metric-as-candidate rows"
+    },
+    "principal_roster": {
+      "status": "pass",
+      "detail": "All 382 current operational councils match exact retained ONS codes and have sourced results"
+    },
+    "tiers": {
+      "status": "pass",
+      "detail": "One unapproved draft tier per office"
+    },
+    "commons_cycles": {
+      "status": "pass",
+      "detail": "Five 650-constituency cycles, valid vote sums and one winner per constituency; deferred 2010 poll preserved"
+    },
+    "scope_exclusions": {
+      "status": "pass",
+      "detail": "No Lords, monarch, Prime Minister, Cabinet or separate dependency register"
+    },
+    "devolved": {
+      "status": "pass",
+      "detail": "Three distinct current devolved legislatures"
+    },
+    "senedd96": {
+      "status": "pass",
+      "detail": "16 explicit seat-cell constituencies total 96; earlier AMS source is separate"
+    },
+    "holyrood": {
+      "status": "pass",
+      "detail": "Seven 129-seat summaries and separate 2026 constituency/list ballots"
+    },
+    "ni2022": {
+      "status": "pass",
+      "detail": "239 source candidates across 18 2022 constituencies; no normalized transfer reconstruction"
+    },
+    "ni_history": {
+      "status": "pass",
+      "detail": "Published seat totals by vintage; blank categories not converted to contests"
+    },
+    "executives": {
+      "status": "pass",
+      "detail": "27 current mayors + 37 current PCC/PFCC, all with normalized returns"
+    },
+    "mayor_council": {
+      "status": "pass",
+      "detail": "13 local direct executives are separate from their council offices"
+    },
+    "pcc_scope": {
+      "status": "pass",
+      "detail": "Integrated policing is not duplicated as standalone PCC"
+    },
+    "gla": {
+      "status": "pass",
+      "detail": "14 constituency units plus separate list and mayor ballots"
+    },
+    "gm_sv": {
+      "status": "pass",
+      "detail": "Seven first preferences + two transfer increments + two final totals in one poll"
+    },
+    "arithmetic": {
+      "status": "pass",
+      "detail": "80 source-total checks pass; one named five-paper discrepancy retained"
+    },
+    "cumbria": {
+      "status": "pass",
+      "detail": "Contradictory source share literals remain raw, normalized shares null"
+    },
+    "postponed": {
+      "status": "pass",
+      "detail": "Named delayed wards use actual dates, including Coventry and June 2025 polls"
+    },
+    "unopposed": {
+      "status": "pass",
+      "detail": "Unopposed zero placeholders and Scilly/City uncontested returns carry null votes"
+    },
+    "alert_window": {
+      "status": "pass",
+      "detail": "Scilly next explicit poll is outside window; register and history retained"
+    },
+    "shadow": {
+      "status": "pass",
+      "detail": "Two shadow offices with evidenced event indexes, no invented results"
+    },
+    "continuity": {
+      "status": "pass",
+      "detail": "No historical county twin for legally continuing North Yorkshire or Somerset"
+    },
+    "historical": {
+      "status": "pass",
+      "detail": "26 evidenced historical-only office identities; no guessed successor edge"
+    },
+    "ep": {
+      "status": "pass",
+      "detail": "Nine historical UK EP cycles, ending 2019"
+    },
+    "ep_namespace": {
+      "status": "pass",
+      "detail": "Missing absolute votes stay null; party IDs are term scoped"
+    },
+    "parish": {
+      "status": "pass",
+      "detail": "27 source-identified subset rows; completeness false"
+    },
+    "special": {
+      "status": "pass",
+      "detail": "Four special elected components; no appointed board members materialized"
+    },
+    "boundary": {
+      "status": "pass",
+      "detail": "Boundary-set provenance retained on general-election candidate rows"
+    },
+    "evidence_status": {
+      "status": "pass",
+      "detail": "Official declarations, research compilations and EP returns remain differentiated"
+    },
+    "csv_repairs": {
+      "status": "pass",
+      "detail": "Four malformed original rows retained and four source-backed HTML replacements"
+    },
+    "image_gap": {
+      "status": "pass",
+      "detail": "21 retained NI image pages explicitly flagged, not zero-filled"
+    },
+    "waterside": {
+      "status": "pass",
+      "detail": "Court confirmation creates no repeat-election event"
+    },
+    "field_map": {
+      "status": "pass",
+      "detail": "223 exact inherited fields, each mapped once"
+    },
+    "approvals": {
+      "status": "pass",
+      "detail": "applied_changes=0; all approvals unchecked; overall coverage explicitly incomplete"
+    },
+    "hashes": {
+      "status": "pass",
+      "detail": "252 retained-input SHA-256 values verified; 284 complete manifest entries verified"
+    }
+  },
+  "archive": null,
+  "research_coverage_complete": false,
+  "qualification": "Integrity and documented invariants pass; named research gaps remain open."
+}
