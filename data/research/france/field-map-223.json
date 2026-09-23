@@ -1,0 +1,1340 @@
+[
+  {
+    "table": "dataset_lineage",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "provenance_kind",
+    "mapping": "country_research_package.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "description",
+    "mapping": "Prompt AR France research/documentation handoff; applied_changes=0.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "fingerprint_sha256",
+    "mapping": "NULL operational release fingerprint; SHA256SUMS and ZIP hash are delivery integrity only.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "hash_inputs_json",
+    "mapping": "Sorted retained-source inventory and contract hashes; no production release fingerprint computation.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "adapter_version",
+    "mapping": "france-field-map/1 documentation label only; no importer authored.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "method_version",
+    "mapping": "france-source-preservation/1.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "schema_version",
+    "mapping": "Inherited 223-column list; live production schema not accessed.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_snapshot_label",
+    "mapping": "2026-09-22.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "upstream_release_id",
+    "mapping": "NULL; independent official exports have no fabricated common release.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "validated_counts_json",
+    "mapping": "data/counts.json plus validation report.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_coverage_complete",
+    "mapping": "FALSE: identified history, return, succession and certification gaps remain.",
+    "operational_write": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "raw_json",
+    "mapping": "Preserve original scoped record, source locator, electorate type, date precision and unresolved qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "retained_input",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "retained_input",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "retained_input",
+    "column": "input_path",
+    "mapping": "source-inventory.json.input_path relative to pack root.",
+    "operational_write": false
+  },
+  {
+    "table": "retained_input",
+    "column": "input_kind",
+    "mapping": "source-inventory.input_kind.",
+    "operational_write": false
+  },
+  {
+    "table": "retained_input",
+    "column": "sha256",
+    "mapping": "SHA-256 of retained input bytes.",
+    "operational_write": false
+  },
+  {
+    "table": "retained_input",
+    "column": "byte_count",
+    "mapping": "source-inventory.byte_count.",
+    "operational_write": false
+  },
+  {
+    "table": "retained_input",
+    "column": "recovery_locator",
+    "mapping": "Source URL and optional workbook/sheet/row or web extraction reference.",
+    "operational_write": false
+  },
+  {
+    "table": "retained_input",
+    "column": "payload_json",
+    "mapping": "Raw retained file metadata and qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "country",
+    "column": "country_id",
+    "mapping": "Proposed FR documentation key; no database identifier allocated.",
+    "operational_write": false
+  },
+  {
+    "table": "country",
+    "column": "country_code",
+    "mapping": "FR.",
+    "operational_write": false
+  },
+  {
+    "table": "country",
+    "column": "name",
+    "mapping": "Exact official label in office-register or COG geography; preserve Unicode.",
+    "operational_write": false
+  },
+  {
+    "table": "country",
+    "column": "polity_kind",
+    "mapping": "Republic; bicameral legislature; directly elected President.",
+    "operational_write": false
+  },
+  {
+    "table": "country",
+    "column": "region_id",
+    "mapping": "NULL operational identifier; France/Europe description only.",
+    "operational_write": false
+  },
+  {
+    "table": "country",
+    "column": "coverage_status",
+    "mapping": "Current in-scope office enumeration complete at COG2026 vintage; historic research partial.",
+    "operational_write": false
+  },
+  {
+    "table": "country",
+    "column": "screening_as_of_label",
+    "mapping": "2026-09-22.",
+    "operational_write": false
+  },
+  {
+    "table": "country",
+    "column": "notes",
+    "mapping": "France-specific mechanism and scope notes; missing is not zero.",
+    "operational_write": false
+  },
+  {
+    "table": "country",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "country",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "country",
+    "column": "raw_json",
+    "mapping": "Preserve original scoped record, source locator, electorate type, date precision and unresolved qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "geography",
+    "column": "country_id",
+    "mapping": "Proposed FR documentation key; no database identifier allocated.",
+    "operational_write": false
+  },
+  {
+    "table": "geography",
+    "column": "geography_id",
+    "mapping": "Proposed COG code plus territorial vintage / historical identity gate; not an office successor link.",
+    "operational_write": false
+  },
+  {
+    "table": "geography",
+    "column": "name",
+    "mapping": "Exact official label in office-register or COG geography; preserve Unicode.",
+    "operational_write": false
+  },
+  {
+    "table": "geography",
+    "column": "parent_geography_id",
+    "mapping": "Only sourced administrative containment; never infer legal successor.",
+    "operational_write": false
+  },
+  {
+    "table": "geography",
+    "column": "effective_from_label",
+    "mapping": "Source-grounded territorial effective date where established; otherwise NULL.",
+    "operational_write": false
+  },
+  {
+    "table": "geography",
+    "column": "effective_to_label",
+    "mapping": "Source-grounded cessation gate where established; otherwise NULL.",
+    "operational_write": false
+  },
+  {
+    "table": "geography",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "geography",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "geography",
+    "column": "raw_json",
+    "mapping": "Preserve original scoped record, source locator, electorate type, date precision and unresolved qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "id_namespace",
+    "mapping": "Proposed atlas-research-france; research keys only.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "office_id",
+    "mapping": "office-register.jsonl.office_id; historical gates are part of identity.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "country_id",
+    "mapping": "Proposed FR documentation key; no database identifier allocated.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "geography_id",
+    "mapping": "Proposed COG code plus territorial vintage / historical identity gate; not an office successor link.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "name",
+    "mapping": "Exact official label in office-register or COG geography; preserve Unicode.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "office_type",
+    "mapping": "office-register.office_type; councils/body offices are separate from reporting districts.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "office_status",
+    "mapping": "current or historical_only.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "record_state",
+    "mapping": "research_draft; never approval or publication.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "state_note",
+    "mapping": "office identity_gate / executive_mode / competence_note and relevant research gaps.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "registry_qualified",
+    "mapping": "Proposed scope qualification only; not production approval.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "next_date_id",
+    "mapping": "NULL; calendar supplies documentary candidate dates with precision.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "next_date_resolution",
+    "mapping": "calendar.date_status; exact local dates usually unresolved.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "next_history_key",
+    "mapping": "NULL; no synthetic future historical event.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "office",
+    "column": "raw_json",
+    "mapping": "Preserve original scoped record, source locator, electorate type, date precision and unresolved qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "id_namespace",
+    "mapping": "Proposed atlas-research-france; research keys only.",
+    "operational_write": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "office_id",
+    "mapping": "office-register.jsonl.office_id; historical gates are part of identity.",
+    "operational_write": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "tier",
+    "mapping": "draft-tiers.tier: 1 national/EP, 2 regional/COM/NC, 3 departmental/Lyon, 4 municipal/PLM.",
+    "operational_write": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "review_status",
+    "mapping": "draft; all Justin approvals false.",
+    "operational_write": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "rationale",
+    "mapping": "Body-level draft tier rule; all historical rows also receive exactly one tier.",
+    "operational_write": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_path",
+    "mapping": "data/draft-tiers.jsonl.",
+    "operational_write": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_kind",
+    "mapping": "draft_for_human_review.",
+    "operational_write": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_sha256",
+    "mapping": "Hash of frozen draft-tiers.jsonl in SHA256SUMS; not approval evidence.",
+    "operational_write": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "raw_json",
+    "mapping": "Preserve original scoped record, source locator, electorate type, date precision and unresolved qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "research_date",
+    "column": "date_id",
+    "mapping": "Proposed sourced date label plus precision; no production ID.",
+    "operational_write": false
+  },
+  {
+    "table": "research_date",
+    "column": "label",
+    "mapping": "Source date or candidate/territorial label in its own context.",
+    "operational_write": false
+  },
+  {
+    "table": "research_date",
+    "column": "precision",
+    "mapping": "day, month, year or unresolved; do not pad year-only PF returns into full dates.",
+    "operational_write": false
+  },
+  {
+    "table": "research_date",
+    "column": "certainty",
+    "mapping": "Source-dated event, announced upcoming renewal, or unresolved as explicitly marked.",
+    "operational_write": false
+  },
+  {
+    "table": "research_date",
+    "column": "year",
+    "mapping": "events.year or sourced calendar year.",
+    "operational_write": false
+  },
+  {
+    "table": "research_date",
+    "column": "month",
+    "mapping": "Only from sourced day/month date; NULL for year-only.",
+    "operational_write": false
+  },
+  {
+    "table": "research_date",
+    "column": "day",
+    "mapping": "Only from sourced day date; overseas polling-day exceptions remain noted.",
+    "operational_write": false
+  },
+  {
+    "table": "research_date",
+    "column": "range_start_id",
+    "mapping": "NULL unless a sourced explicit range is provided.",
+    "operational_write": false
+  },
+  {
+    "table": "research_date",
+    "column": "range_end_id",
+    "mapping": "NULL unless a sourced explicit range is provided.",
+    "operational_write": false
+  },
+  {
+    "table": "research_date",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "research_date",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "research_date",
+    "column": "raw_json",
+    "mapping": "Preserve original scoped record, source locator, electorate type, date precision and unresolved qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "id_namespace",
+    "mapping": "Proposed atlas-research-france; research keys only.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "office_id",
+    "mapping": "office-register.jsonl.office_id; historical gates are part of identity.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "history_key",
+    "mapping": "events.jsonl.event_id groups office, sourced cycle, round and ballot regime.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "event_id",
+    "mapping": "events.jsonl.event_id.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "date_id",
+    "mapping": "Proposed sourced date label plus precision; no production ID.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "date_resolution",
+    "mapping": "events.date_precision and poll_date_note.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "event_kind",
+    "mapping": "Sourced election round/renewal; upcoming calendar rows are not historic events.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "selected_history_role",
+    "mapping": "Historical sourced observation, not asserted current officeholder state.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "electoral_system",
+    "mapping": "Mechanism described in identity rules: presidential two-round, AN two-round, Senate indirect mixed, regional/municipal list rules by vintage.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "comparability",
+    "mapping": "Use body, vintage, round, electorate type, reporting-unit type and result_kind; do not pool unlike denominators.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "ballot_basis",
+    "mapping": "Popular valid ballots, multi-candidate marks, or Senate electoral-college votes as result_kind states.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "share_unit",
+    "mapping": "Published percentage of stated denominator; NULL if absent.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "legal_outcome",
+    "mapping": "Source qualification retained. Never infer certified finality from publication alone.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "record_state",
+    "mapping": "research_draft; never approval or publication.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "state_note",
+    "mapping": "office identity_gate / executive_mode / competence_note and relevant research gaps.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "election_event",
+    "column": "raw_json",
+    "mapping": "Preserve original scoped record, source locator, electorate type, date precision and unresolved qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "proceeding",
+    "column": "id_namespace",
+    "mapping": "Proposed atlas-research-france; research keys only.",
+    "operational_write": false
+  },
+  {
+    "table": "proceeding",
+    "column": "office_id",
+    "mapping": "office-register.jsonl.office_id; historical gates are part of identity.",
+    "operational_write": false
+  },
+  {
+    "table": "proceeding",
+    "column": "history_key",
+    "mapping": "events.jsonl.event_id groups office, sourced cycle, round and ballot regime.",
+    "operational_write": false
+  },
+  {
+    "table": "proceeding",
+    "column": "proceeding_id",
+    "mapping": "Proposed event_id; different rounds are distinct proceedings. No operational write.",
+    "operational_write": false
+  },
+  {
+    "table": "proceeding",
+    "column": "kind",
+    "mapping": "Round or renewal as evidenced; no invented repeat proceeding.",
+    "operational_write": false
+  },
+  {
+    "table": "proceeding",
+    "column": "sequence_no",
+    "mapping": "events.round, preserved independently of chronology where Senate PR and MAJ coexist.",
+    "operational_write": false
+  },
+  {
+    "table": "proceeding",
+    "column": "supersedes_id",
+    "mapping": "NULL; no guessed judicial/merger successor link.",
+    "operational_write": false
+  },
+  {
+    "table": "proceeding",
+    "column": "legal_outcome",
+    "mapping": "Source qualification retained. Never infer certified finality from publication alone.",
+    "operational_write": false
+  },
+  {
+    "table": "proceeding",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "proceeding",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "proceeding",
+    "column": "raw_json",
+    "mapping": "Preserve original scoped record, source locator, electorate type, date precision and unresolved qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "id_namespace",
+    "mapping": "Proposed atlas-research-france; research keys only.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "office_id",
+    "mapping": "office-register.jsonl.office_id; historical gates are part of identity.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "history_key",
+    "mapping": "events.jsonl.event_id groups office, sourced cycle, round and ballot regime.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "result_row_id",
+    "mapping": "results.result_id; unit-scoped sequence in retained source order.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "proceeding_id",
+    "mapping": "Proposed event_id; different rounds are distinct proceedings. No operational write.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "country_id",
+    "mapping": "Proposed FR documentation key; no database identifier allocated.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "candidate_or_list_label",
+    "mapping": "results.contestant_label exactly as sourced, preserving accents.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_label",
+    "mapping": "List label where supplied; NULL if not supplied. Does not create party organisations.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_code",
+    "mapping": "results.political_nuance where supplied, context-specific.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "party_namespace",
+    "mapping": "Election-local Ministry nuance / exact source label; no canonical party inference.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "party_mapping_id",
+    "mapping": "NULL; no party organisations or cross-election party identity invented.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "votes",
+    "mapping": "results.votes integer or NULL. Never back-solve from share, elected member, or seat count.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "votes_status",
+    "mapping": "reported or not_supplied; an explicit numeric zero remains reported zero.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "share",
+    "mapping": "Published vote_percentage_source only; no newly calculated cross-regime share.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "share_status",
+    "mapping": "reported if a source percentage is present, otherwise not_supplied.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "share_unit",
+    "mapping": "Published percentage of stated denominator; NULL if absent.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "seats",
+    "mapping": "results.seats only when numerically sourced and attributable to that result scope. CC and repeated metropolitan/EP national seat columns are excluded from local allocations.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "seats_status",
+    "mapping": "reported for numeric seat value; not_supplied for NULL. Source zero is distinct.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "elected_flag",
+    "mapping": "TRUE only for a supplied elected marker/return; otherwise NULL, not inferred FALSE.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "is_substitute",
+    "mapping": "NULL; substitutes not normalized in this pack.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "evidence_status",
+    "mapping": "Source status and unresolved arithmetic / repeat gates; not blanket certification.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "result_row",
+    "column": "raw_json",
+    "mapping": "Preserve original scoped record, source locator, electorate type, date precision and unresolved qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "country_id",
+    "mapping": "Proposed FR documentation key; no database identifier allocated.",
+    "operational_write": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "party_namespace",
+    "mapping": "Election-local Ministry nuance / exact source label; no canonical party inference.",
+    "operational_write": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapping_id",
+    "mapping": "NULL; no canonical party mapping authored.",
+    "operational_write": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "source_context",
+    "mapping": "Exact election file, year, round and publisher.",
+    "operational_write": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "election_context",
+    "mapping": "event_id and reporting unit; no cross-election party identity assertion.",
+    "operational_write": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_label",
+    "mapping": "Exact original source label.",
+    "operational_write": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_code",
+    "mapping": "Exact source nuance/panel/territory code within its namespace.",
+    "operational_write": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapped_group",
+    "mapping": "NULL; no speculative party family mapping.",
+    "operational_write": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "uncertainty",
+    "mapping": "Explicit research gap / unresolved evidence; never silently resolved.",
+    "operational_write": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "raw_json",
+    "mapping": "Preserve original scoped record, source locator, electorate type, date precision and unresolved qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "country_id",
+    "mapping": "Proposed FR documentation key; no database identifier allocated.",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "source_namespace",
+    "mapping": "FR-S; retained-source namespace.",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "source_id",
+    "mapping": "source-inventory.json.source_id; source file bytes and locator retained.",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "publisher",
+    "mapping": "source-inventory.publisher.",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "title",
+    "mapping": "source-inventory.title (retained filename; originating titles remain in metadata sources).",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "url",
+    "mapping": "source-inventory.url; web extraction may contain several supporting URLs.",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "checked_as_of_label",
+    "mapping": "2026-09-22.",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "evidence_grade",
+    "mapping": "Official primary source; separate discovery-only gate files and publication/finality qualification.",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "file_sha256",
+    "mapping": "source-inventory.sha256, exact retained bytes only.",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "locator",
+    "mapping": "input_path plus record-specific locator.",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "data_rights",
+    "mapping": "Publisher/resource licence and source inventory caveat; no invented licence grant.",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "source",
+    "column": "raw_json",
+    "mapping": "Preserve original scoped record, source locator, electorate type, date precision and unresolved qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "record_key",
+    "mapping": "Research record identity: office_id, event_id, unit_id or result_id as applicable.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "entity_kind",
+    "mapping": "office / event / reporting_unit / result / source / geographic movement, never office created from a reporting unit.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "country_id",
+    "mapping": "Proposed FR documentation key; no database identifier allocated.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "geography_id",
+    "mapping": "Proposed COG code plus territorial vintage / historical identity gate; not an office successor link.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "id_namespace",
+    "mapping": "Proposed atlas-research-france; research keys only.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "office_id",
+    "mapping": "office-register.jsonl.office_id; historical gates are part of identity.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "history_key",
+    "mapping": "events.jsonl.event_id groups office, sourced cycle, round and ballot regime.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "proceeding_id",
+    "mapping": "Proposed event_id; different rounds are distinct proceedings. No operational write.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "result_row_id",
+    "mapping": "results.result_id; unit-scoped sequence in retained source order.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "party_namespace",
+    "mapping": "Election-local Ministry nuance / exact source label; no canonical party inference.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "party_mapping_id",
+    "mapping": "NULL; no party organisations or cross-election party identity invented.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "source_namespace",
+    "mapping": "FR-S; retained-source namespace.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "source_id",
+    "mapping": "source-inventory.json.source_id; source file bytes and locator retained.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "input_path",
+    "mapping": "source-inventory.json.input_path relative to pack root.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "record_locator",
+    "column": "source_row_locator",
+    "mapping": "Exact source_locator from normalized record; no invented page positions.",
+    "operational_write": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "evidence_id",
+    "mapping": "Proposed source_id + record_key + exact locator; no database row written.",
+    "operational_write": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "record_key",
+    "mapping": "Research record identity: office_id, event_id, unit_id or result_id as applicable.",
+    "operational_write": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_country_id",
+    "mapping": "Proposed FR source context; EP is supranational publisher.",
+    "operational_write": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_namespace",
+    "mapping": "FR-S; retained-source namespace.",
+    "operational_write": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_id",
+    "mapping": "source-inventory.json.source_id; source file bytes and locator retained.",
+    "operational_write": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_locator",
+    "mapping": "Exact file row, workbook sheet/row, PDF page, or extracted official webpage section.",
+    "operational_write": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_kind",
+    "mapping": "Office existence, territorial code, mechanism, event, reported number, or unresolved gate.",
+    "operational_write": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "date_claim_id",
+    "mapping": "Source date precision context; NULL if date not established.",
+    "operational_write": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_json",
+    "mapping": "Only sourced claim and qualifications; no inferred votes/seats/succession.",
+    "operational_write": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "unresolved_id",
+    "mapping": "Named research gap, source-arithmetic discrepancy or extraction issue key.",
+    "operational_write": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "record_key",
+    "mapping": "Research record identity: office_id, event_id, unit_id or result_id as applicable.",
+    "operational_write": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "original_token",
+    "mapping": "Retained raw malformed label/code/blank value in source or extraction issue.",
+    "operational_write": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "source_locator",
+    "mapping": "Exact file row, workbook sheet/row, PDF page, or extracted official webpage section.",
+    "operational_write": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "reason",
+    "mapping": "Named extraction issue, identity gate or research-gap detail.",
+    "operational_write": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "raw_json",
+    "mapping": "Preserve original scoped record, source locator, electorate type, date precision and unresolved qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "entity_kind",
+    "mapping": "office / event / reporting_unit / result / source / geographic movement, never office created from a reporting unit.",
+    "operational_write": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_namespace",
+    "mapping": "INSEE COG or named election publisher namespace; preserve vintage.",
+    "operational_write": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_id",
+    "mapping": "Exact original territory, candidate panel or list token; normalization documented separately.",
+    "operational_write": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "record_key",
+    "mapping": "Research record identity: office_id, event_id, unit_id or result_id as applicable.",
+    "operational_write": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "reason",
+    "mapping": "Named extraction issue, identity gate or research-gap detail.",
+    "operational_write": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "lineage_id",
+    "mapping": "Proposed france-research lineage only; no operational lineage written.",
+    "operational_write": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "release_id",
+    "mapping": "NULL operationally; no release created.",
+    "operational_write": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "raw_json",
+    "mapping": "Preserve original scoped record, source locator, electorate type, date precision and unresolved qualifiers.",
+    "operational_write": false
+  },
+  {
+    "table": "publication_release",
+    "column": "lineage_id",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "publication_release",
+    "column": "release_id",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "publication_receipt",
+    "column": "singleton",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "publication_receipt",
+    "column": "last_publish_attempt_id",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_lineage_id",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_release_id",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "attempt_id",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "lineage_id",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "operator",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "script_version",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "started_at",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "finished_at",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "status",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "input_inventory_json",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "successful_release_id",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "publication_set_json",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "row_counts_json",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "error_text",
+    "mapping": "NOT APPLICABLE / no row: research-only pack performs no ingest, publication, attempt, release or receipt write.",
+    "operational_write": false
+  }
+]

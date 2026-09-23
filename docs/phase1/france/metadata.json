@@ -1,0 +1,24 @@
+{
+  "country": "France",
+  "country_code": "FR",
+  "prompt": "AR",
+  "research_as_of": "2026-09-22",
+  "territorial_vintage": "2026-01-01",
+  "artifact_kind": "research_documentation_only",
+  "applied_changes": 0,
+  "justin_approved": false,
+  "current_register_complete": true,
+  "current_register_completeness_scope": "All current in-scope council/body offices enumerated from COG2026 with elected-footing exceptions. Not a certification of every current incumbent or unresolved partial election.",
+  "historical_coverage_exhaustive": false,
+  "research_coverage_complete": false,
+  "operational_release_created": false,
+  "canonical_production_ids_created": false,
+  "source_discrepancies": 38,
+  "format": "UTF-8 JSONL for large record sets; JSON for ancillary tables",
+  "contract_columns": 223,
+  "alert_window": {
+    "start": "2026-09-22",
+    "end": "2028-03-22",
+    "scope": "Calendar screening only; never excludes offices or historic returns"
+  }
+}
