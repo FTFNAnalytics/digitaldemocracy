@@ -1,0 +1,704 @@
+office_id,name,office_type,office_status,geography_id,source_code,election_mechanism,direct_executive,proposed_tier
+GR-R-01-C,Περιφερειακό Συμβούλιο Αν. Μακεδονίας & Θράκης,regional_council,current,GR-R-01,1,popular_list_election,False,regional
+GR-R-01-G,Περιφερειάρχης Αν. Μακεδονίας & Θράκης,regional_governor,current,GR-R-01,1,popular_direct_joint_list_leader,True,regional
+GR-R-02-C,Περιφερειακό Συμβούλιο Κεντρικής Μακεδονίας,regional_council,current,GR-R-02,2,popular_list_election,False,regional
+GR-R-02-G,Περιφερειάρχης Κεντρικής Μακεδονίας,regional_governor,current,GR-R-02,2,popular_direct_joint_list_leader,True,regional
+GR-R-03-C,Περιφερειακό Συμβούλιο Δυτικής Μακεδονίας,regional_council,current,GR-R-03,3,popular_list_election,False,regional
+GR-R-03-G,Περιφερειάρχης Δυτικής Μακεδονίας,regional_governor,current,GR-R-03,3,popular_direct_joint_list_leader,True,regional
+GR-R-04-C,Περιφερειακό Συμβούλιο Ηπείρου,regional_council,current,GR-R-04,4,popular_list_election,False,regional
+GR-R-04-G,Περιφερειάρχης Ηπείρου,regional_governor,current,GR-R-04,4,popular_direct_joint_list_leader,True,regional
+GR-R-05-C,Περιφερειακό Συμβούλιο Θεσσαλίας,regional_council,current,GR-R-05,5,popular_list_election,False,regional
+GR-R-05-G,Περιφερειάρχης Θεσσαλίας,regional_governor,current,GR-R-05,5,popular_direct_joint_list_leader,True,regional
+GR-R-06-C,Περιφερειακό Συμβούλιο Ιονίων Νήσων,regional_council,current,GR-R-06,6,popular_list_election,False,regional
+GR-R-06-G,Περιφερειάρχης Ιονίων Νήσων,regional_governor,current,GR-R-06,6,popular_direct_joint_list_leader,True,regional
+GR-R-07-C,Περιφερειακό Συμβούλιο Δυτικής Ελλάδας,regional_council,current,GR-R-07,7,popular_list_election,False,regional
+GR-R-07-G,Περιφερειάρχης Δυτικής Ελλάδας,regional_governor,current,GR-R-07,7,popular_direct_joint_list_leader,True,regional
+GR-R-08-C,Περιφερειακό Συμβούλιο Στερεάς Ελλάδας,regional_council,current,GR-R-08,8,popular_list_election,False,regional
+GR-R-08-G,Περιφερειάρχης Στερεάς Ελλάδας,regional_governor,current,GR-R-08,8,popular_direct_joint_list_leader,True,regional
+GR-R-09-C,Περιφερειακό Συμβούλιο Αττικής,regional_council,current,GR-R-09,9,popular_list_election,False,regional
+GR-R-09-G,Περιφερειάρχης Αττικής,regional_governor,current,GR-R-09,9,popular_direct_joint_list_leader,True,regional
+GR-R-10-C,Περιφερειακό Συμβούλιο Πελοποννήσου,regional_council,current,GR-R-10,10,popular_list_election,False,regional
+GR-R-10-G,Περιφερειάρχης Πελοποννήσου,regional_governor,current,GR-R-10,10,popular_direct_joint_list_leader,True,regional
+GR-R-11-C,Περιφερειακό Συμβούλιο Βορείου Αιγαίου,regional_council,current,GR-R-11,11,popular_list_election,False,regional
+GR-R-11-G,Περιφερειάρχης Βορείου Αιγαίου,regional_governor,current,GR-R-11,11,popular_direct_joint_list_leader,True,regional
+GR-R-12-C,Περιφερειακό Συμβούλιο Νοτίου Αιγαίου,regional_council,current,GR-R-12,12,popular_list_election,False,regional
+GR-R-12-G,Περιφερειάρχης Νοτίου Αιγαίου,regional_governor,current,GR-R-12,12,popular_direct_joint_list_leader,True,regional
+GR-R-13-C,Περιφερειακό Συμβούλιο Κρήτης,regional_council,current,GR-R-13,13,popular_list_election,False,regional
+GR-R-13-G,Περιφερειάρχης Κρήτης,regional_governor,current,GR-R-13,13,popular_direct_joint_list_leader,True,regional
+GR-M-9001-C,Δημοτικό Συμβούλιο Δοξάτου,municipal_council,current,GR-M-9001,9001,popular_list_election,False,municipal
+GR-M-9001-M,Δήμαρχος Δοξάτου,mayor,current,GR-M-9001,9001,popular_direct_joint_list_leader,True,municipal
+GR-M-9002-C,Δημοτικό Συμβούλιο Δράμας,municipal_council,current,GR-M-9002,9002,popular_list_election,False,municipal
+GR-M-9002-M,Δήμαρχος Δράμας,mayor,current,GR-M-9002,9002,popular_direct_joint_list_leader,True,municipal
+GR-M-9003-C,Δημοτικό Συμβούλιο Κάτω Νευροκοπίου,municipal_council,current,GR-M-9003,9003,popular_list_election,False,municipal
+GR-M-9003-M,Δήμαρχος Κάτω Νευροκοπίου,mayor,current,GR-M-9003,9003,popular_direct_joint_list_leader,True,municipal
+GR-M-9004-C,Δημοτικό Συμβούλιο Παρανεστίου,municipal_council,current,GR-M-9004,9004,popular_list_election,False,municipal
+GR-M-9004-M,Δήμαρχος Παρανεστίου,mayor,current,GR-M-9004,9004,popular_direct_joint_list_leader,True,municipal
+GR-M-9005-C,Δημοτικό Συμβούλιο Προσοτσάνης,municipal_council,current,GR-M-9005,9005,popular_list_election,False,municipal
+GR-M-9005-M,Δήμαρχος Προσοτσάνης,mayor,current,GR-M-9005,9005,popular_direct_joint_list_leader,True,municipal
+GR-M-9006-C,Δημοτικό Συμβούλιο Αλεξανδρούπολης,municipal_council,current,GR-M-9006,9006,popular_list_election,False,municipal
+GR-M-9006-M,Δήμαρχος Αλεξανδρούπολης,mayor,current,GR-M-9006,9006,popular_direct_joint_list_leader,True,municipal
+GR-M-9007-C,Δημοτικό Συμβούλιο Διδυμοτείχου,municipal_council,current,GR-M-9007,9007,popular_list_election,False,municipal
+GR-M-9007-M,Δήμαρχος Διδυμοτείχου,mayor,current,GR-M-9007,9007,popular_direct_joint_list_leader,True,municipal
+GR-M-9008-C,Δημοτικό Συμβούλιο Ορεστιάδας,municipal_council,current,GR-M-9008,9008,popular_list_election,False,municipal
+GR-M-9008-M,Δήμαρχος Ορεστιάδας,mayor,current,GR-M-9008,9008,popular_direct_joint_list_leader,True,municipal
+GR-M-9009-C,Δημοτικό Συμβούλιο Σαμοθράκης,municipal_council,current,GR-M-9009,9009,popular_list_election,False,municipal
+GR-M-9009-M,Δήμαρχος Σαμοθράκης,mayor,current,GR-M-9009,9009,popular_direct_joint_list_leader,True,municipal
+GR-M-9010-C,Δημοτικό Συμβούλιο Σουφλίου,municipal_council,current,GR-M-9010,9010,popular_list_election,False,municipal
+GR-M-9010-M,Δήμαρχος Σουφλίου,mayor,current,GR-M-9010,9010,popular_direct_joint_list_leader,True,municipal
+GR-M-9011-C,Δημοτικό Συμβούλιο Θάσου,municipal_council,current,GR-M-9011,9011,popular_list_election,False,municipal
+GR-M-9011-M,Δήμαρχος Θάσου,mayor,current,GR-M-9011,9011,popular_direct_joint_list_leader,True,municipal
+GR-M-9012-C,Δημοτικό Συμβούλιο Καβάλας,municipal_council,current,GR-M-9012,9012,popular_list_election,False,municipal
+GR-M-9012-M,Δήμαρχος Καβάλας,mayor,current,GR-M-9012,9012,popular_direct_joint_list_leader,True,municipal
+GR-M-9013-C,Δημοτικό Συμβούλιο Νέστου,municipal_council,current,GR-M-9013,9013,popular_list_election,False,municipal
+GR-M-9013-M,Δήμαρχος Νέστου,mayor,current,GR-M-9013,9013,popular_direct_joint_list_leader,True,municipal
+GR-M-9014-C,Δημοτικό Συμβούλιο Παγγαίου,municipal_council,current,GR-M-9014,9014,popular_list_election,False,municipal
+GR-M-9014-M,Δήμαρχος Παγγαίου,mayor,current,GR-M-9014,9014,popular_direct_joint_list_leader,True,municipal
+GR-M-9015-C,Δημοτικό Συμβούλιο Αβδήρων,municipal_council,current,GR-M-9015,9015,popular_list_election,False,municipal
+GR-M-9015-M,Δήμαρχος Αβδήρων,mayor,current,GR-M-9015,9015,popular_direct_joint_list_leader,True,municipal
+GR-M-9016-C,Δημοτικό Συμβούλιο Μύκης,municipal_council,current,GR-M-9016,9016,popular_list_election,False,municipal
+GR-M-9016-M,Δήμαρχος Μύκης,mayor,current,GR-M-9016,9016,popular_direct_joint_list_leader,True,municipal
+GR-M-9017-C,Δημοτικό Συμβούλιο Ξάνθης,municipal_council,current,GR-M-9017,9017,popular_list_election,False,municipal
+GR-M-9017-M,Δήμαρχος Ξάνθης,mayor,current,GR-M-9017,9017,popular_direct_joint_list_leader,True,municipal
+GR-M-9018-C,Δημοτικό Συμβούλιο Τοπείρου,municipal_council,current,GR-M-9018,9018,popular_list_election,False,municipal
+GR-M-9018-M,Δήμαρχος Τοπείρου,mayor,current,GR-M-9018,9018,popular_direct_joint_list_leader,True,municipal
+GR-M-9019-C,Δημοτικό Συμβούλιο Αρριανών,municipal_council,current,GR-M-9019,9019,popular_list_election,False,municipal
+GR-M-9019-M,Δήμαρχος Αρριανών,mayor,current,GR-M-9019,9019,popular_direct_joint_list_leader,True,municipal
+GR-M-9020-C,Δημοτικό Συμβούλιο Ιάσμου,municipal_council,current,GR-M-9020,9020,popular_list_election,False,municipal
+GR-M-9020-M,Δήμαρχος Ιάσμου,mayor,current,GR-M-9020,9020,popular_direct_joint_list_leader,True,municipal
+GR-M-9021-C,Δημοτικό Συμβούλιο Κομοτηνής,municipal_council,current,GR-M-9021,9021,popular_list_election,False,municipal
+GR-M-9021-M,Δήμαρχος Κομοτηνής,mayor,current,GR-M-9021,9021,popular_direct_joint_list_leader,True,municipal
+GR-M-9022-C,Δημοτικό Συμβούλιο Μαρωνείας – Σαπών,municipal_council,current,GR-M-9022,9022,popular_list_election,False,municipal
+GR-M-9022-M,Δήμαρχος Μαρωνείας – Σαπών,mayor,current,GR-M-9022,9022,popular_direct_joint_list_leader,True,municipal
+GR-M-9023-C,Δημοτικό Συμβούλιο Αλεξανδρείας,municipal_council,current,GR-M-9023,9023,popular_list_election,False,municipal
+GR-M-9023-M,Δήμαρχος Αλεξανδρείας,mayor,current,GR-M-9023,9023,popular_direct_joint_list_leader,True,municipal
+GR-M-9024-C,Δημοτικό Συμβούλιο Βέροιας,municipal_council,current,GR-M-9024,9024,popular_list_election,False,municipal
+GR-M-9024-M,Δήμαρχος Βέροιας,mayor,current,GR-M-9024,9024,popular_direct_joint_list_leader,True,municipal
+GR-M-9025-C,Δημοτικό Συμβούλιο Ηρωικής Πόλης Νάουσας,municipal_council,current,GR-M-9025,9025,popular_list_election,False,municipal
+GR-M-9025-M,Δήμαρχος Ηρωικής Πόλης Νάουσας,mayor,current,GR-M-9025,9025,popular_direct_joint_list_leader,True,municipal
+GR-M-9026-C,Δημοτικό Συμβούλιο Αμπελοκήπων – Μενεμένης,municipal_council,current,GR-M-9026,9026,popular_list_election,False,municipal
+GR-M-9026-M,Δήμαρχος Αμπελοκήπων – Μενεμένης,mayor,current,GR-M-9026,9026,popular_direct_joint_list_leader,True,municipal
+GR-M-9027-C,Δημοτικό Συμβούλιο Βόλβης,municipal_council,current,GR-M-9027,9027,popular_list_election,False,municipal
+GR-M-9027-M,Δήμαρχος Βόλβης,mayor,current,GR-M-9027,9027,popular_direct_joint_list_leader,True,municipal
+GR-M-9028-C,Δημοτικό Συμβούλιο Δέλτα,municipal_council,current,GR-M-9028,9028,popular_list_election,False,municipal
+GR-M-9028-M,Δήμαρχος Δέλτα,mayor,current,GR-M-9028,9028,popular_direct_joint_list_leader,True,municipal
+GR-M-9029-C,Δημοτικό Συμβούλιο Θερμαϊκού,municipal_council,current,GR-M-9029,9029,popular_list_election,False,municipal
+GR-M-9029-M,Δήμαρχος Θερμαϊκού,mayor,current,GR-M-9029,9029,popular_direct_joint_list_leader,True,municipal
+GR-M-9030-C,Δημοτικό Συμβούλιο Θέρμης,municipal_council,current,GR-M-9030,9030,popular_list_election,False,municipal
+GR-M-9030-M,Δήμαρχος Θέρμης,mayor,current,GR-M-9030,9030,popular_direct_joint_list_leader,True,municipal
+GR-M-9031-C,Δημοτικό Συμβούλιο Θεσσαλονίκης,municipal_council,current,GR-M-9031,9031,popular_list_election,False,municipal
+GR-M-9031-M,Δήμαρχος Θεσσαλονίκης,mayor,current,GR-M-9031,9031,popular_direct_joint_list_leader,True,municipal
+GR-M-9032-C,Δημοτικό Συμβούλιο Καλαμαριάς,municipal_council,current,GR-M-9032,9032,popular_list_election,False,municipal
+GR-M-9032-M,Δήμαρχος Καλαμαριάς,mayor,current,GR-M-9032,9032,popular_direct_joint_list_leader,True,municipal
+GR-M-9033-C,Δημοτικό Συμβούλιο Κορδελιού – Ευόσμου,municipal_council,current,GR-M-9033,9033,popular_list_election,False,municipal
+GR-M-9033-M,Δήμαρχος Κορδελιού – Ευόσμου,mayor,current,GR-M-9033,9033,popular_direct_joint_list_leader,True,municipal
+GR-M-9034-C,Δημοτικό Συμβούλιο Λαγκαδά,municipal_council,current,GR-M-9034,9034,popular_list_election,False,municipal
+GR-M-9034-M,Δήμαρχος Λαγκαδά,mayor,current,GR-M-9034,9034,popular_direct_joint_list_leader,True,municipal
+GR-M-9035-C,Δημοτικό Συμβούλιο Νεάπολης – Συκεών,municipal_council,current,GR-M-9035,9035,popular_list_election,False,municipal
+GR-M-9035-M,Δήμαρχος Νεάπολης – Συκεών,mayor,current,GR-M-9035,9035,popular_direct_joint_list_leader,True,municipal
+GR-M-9036-C,Δημοτικό Συμβούλιο Παύλου Μελά,municipal_council,current,GR-M-9036,9036,popular_list_election,False,municipal
+GR-M-9036-M,Δήμαρχος Παύλου Μελά,mayor,current,GR-M-9036,9036,popular_direct_joint_list_leader,True,municipal
+GR-M-9037-C,Δημοτικό Συμβούλιο Πυλαίας – Χορτιάτη,municipal_council,current,GR-M-9037,9037,popular_list_election,False,municipal
+GR-M-9037-M,Δήμαρχος Πυλαίας – Χορτιάτη,mayor,current,GR-M-9037,9037,popular_direct_joint_list_leader,True,municipal
+GR-M-9038-C,Δημοτικό Συμβούλιο Χαλκηδόνος,municipal_council,current,GR-M-9038,9038,popular_list_election,False,municipal
+GR-M-9038-M,Δήμαρχος Χαλκηδόνος,mayor,current,GR-M-9038,9038,popular_direct_joint_list_leader,True,municipal
+GR-M-9039-C,Δημοτικό Συμβούλιο Ωραιοκάστρου,municipal_council,current,GR-M-9039,9039,popular_list_election,False,municipal
+GR-M-9039-M,Δήμαρχος Ωραιοκάστρου,mayor,current,GR-M-9039,9039,popular_direct_joint_list_leader,True,municipal
+GR-M-9040-C,Δημοτικό Συμβούλιο Κιλκίς,municipal_council,current,GR-M-9040,9040,popular_list_election,False,municipal
+GR-M-9040-M,Δήμαρχος Κιλκίς,mayor,current,GR-M-9040,9040,popular_direct_joint_list_leader,True,municipal
+GR-M-9041-C,Δημοτικό Συμβούλιο Παιονίας,municipal_council,current,GR-M-9041,9041,popular_list_election,False,municipal
+GR-M-9041-M,Δήμαρχος Παιονίας,mayor,current,GR-M-9041,9041,popular_direct_joint_list_leader,True,municipal
+GR-M-9042-C,Δημοτικό Συμβούλιο Αλμωπίας,municipal_council,current,GR-M-9042,9042,popular_list_election,False,municipal
+GR-M-9042-M,Δήμαρχος Αλμωπίας,mayor,current,GR-M-9042,9042,popular_direct_joint_list_leader,True,municipal
+GR-M-9043-C,Δημοτικό Συμβούλιο Έδεσσας,municipal_council,current,GR-M-9043,9043,popular_list_election,False,municipal
+GR-M-9043-M,Δήμαρχος Έδεσσας,mayor,current,GR-M-9043,9043,popular_direct_joint_list_leader,True,municipal
+GR-M-9044-C,Δημοτικό Συμβούλιο Πέλλας,municipal_council,current,GR-M-9044,9044,popular_list_election,False,municipal
+GR-M-9044-M,Δήμαρχος Πέλλας,mayor,current,GR-M-9044,9044,popular_direct_joint_list_leader,True,municipal
+GR-M-9045-C,Δημοτικό Συμβούλιο Σκύδρας,municipal_council,current,GR-M-9045,9045,popular_list_election,False,municipal
+GR-M-9045-M,Δήμαρχος Σκύδρας,mayor,current,GR-M-9045,9045,popular_direct_joint_list_leader,True,municipal
+GR-M-9046-C,Δημοτικό Συμβούλιο Δίου – Ολύμπου,municipal_council,current,GR-M-9046,9046,popular_list_election,False,municipal
+GR-M-9046-M,Δήμαρχος Δίου – Ολύμπου,mayor,current,GR-M-9046,9046,popular_direct_joint_list_leader,True,municipal
+GR-M-9047-C,Δημοτικό Συμβούλιο Κατερίνης,municipal_council,current,GR-M-9047,9047,popular_list_election,False,municipal
+GR-M-9047-M,Δήμαρχος Κατερίνης,mayor,current,GR-M-9047,9047,popular_direct_joint_list_leader,True,municipal
+GR-M-9048-C,Δημοτικό Συμβούλιο Πύδνας – Κολινδρού,municipal_council,current,GR-M-9048,9048,popular_list_election,False,municipal
+GR-M-9048-M,Δήμαρχος Πύδνας – Κολινδρού,mayor,current,GR-M-9048,9048,popular_direct_joint_list_leader,True,municipal
+GR-M-9049-C,Δημοτικό Συμβούλιο Αμφίπολης,municipal_council,current,GR-M-9049,9049,popular_list_election,False,municipal
+GR-M-9049-M,Δήμαρχος Αμφίπολης,mayor,current,GR-M-9049,9049,popular_direct_joint_list_leader,True,municipal
+GR-M-9050-C,Δημοτικό Συμβούλιο Βισαλτίας,municipal_council,current,GR-M-9050,9050,popular_list_election,False,municipal
+GR-M-9050-M,Δήμαρχος Βισαλτίας,mayor,current,GR-M-9050,9050,popular_direct_joint_list_leader,True,municipal
+GR-M-9051-C,Δημοτικό Συμβούλιο Εμμανουήλ Παππά,municipal_council,current,GR-M-9051,9051,popular_list_election,False,municipal
+GR-M-9051-M,Δήμαρχος Εμμανουήλ Παππά,mayor,current,GR-M-9051,9051,popular_direct_joint_list_leader,True,municipal
+GR-M-9052-C,Δημοτικό Συμβούλιο Ηράκλειας,municipal_council,current,GR-M-9052,9052,popular_list_election,False,municipal
+GR-M-9052-M,Δήμαρχος Ηράκλειας,mayor,current,GR-M-9052,9052,popular_direct_joint_list_leader,True,municipal
+GR-M-9053-C,Δημοτικό Συμβούλιο Νέας Ζίχνης,municipal_council,current,GR-M-9053,9053,popular_list_election,False,municipal
+GR-M-9053-M,Δήμαρχος Νέας Ζίχνης,mayor,current,GR-M-9053,9053,popular_direct_joint_list_leader,True,municipal
+GR-M-9054-C,Δημοτικό Συμβούλιο Σερρών,municipal_council,current,GR-M-9054,9054,popular_list_election,False,municipal
+GR-M-9054-M,Δήμαρχος Σερρών,mayor,current,GR-M-9054,9054,popular_direct_joint_list_leader,True,municipal
+GR-M-9055-C,Δημοτικό Συμβούλιο Σιντικής,municipal_council,current,GR-M-9055,9055,popular_list_election,False,municipal
+GR-M-9055-M,Δήμαρχος Σιντικής,mayor,current,GR-M-9055,9055,popular_direct_joint_list_leader,True,municipal
+GR-M-9056-C,Δημοτικό Συμβούλιο Αριστοτέλη,municipal_council,current,GR-M-9056,9056,popular_list_election,False,municipal
+GR-M-9056-M,Δήμαρχος Αριστοτέλη,mayor,current,GR-M-9056,9056,popular_direct_joint_list_leader,True,municipal
+GR-M-9057-C,Δημοτικό Συμβούλιο Κασσάνδρας,municipal_council,current,GR-M-9057,9057,popular_list_election,False,municipal
+GR-M-9057-M,Δήμαρχος Κασσάνδρας,mayor,current,GR-M-9057,9057,popular_direct_joint_list_leader,True,municipal
+GR-M-9058-C,Δημοτικό Συμβούλιο Νέας Προποντίδας,municipal_council,current,GR-M-9058,9058,popular_list_election,False,municipal
+GR-M-9058-M,Δήμαρχος Νέας Προποντίδας,mayor,current,GR-M-9058,9058,popular_direct_joint_list_leader,True,municipal
+GR-M-9059-C,Δημοτικό Συμβούλιο Πολυγύρου,municipal_council,current,GR-M-9059,9059,popular_list_election,False,municipal
+GR-M-9059-M,Δήμαρχος Πολυγύρου,mayor,current,GR-M-9059,9059,popular_direct_joint_list_leader,True,municipal
+GR-M-9060-C,Δημοτικό Συμβούλιο Σιθωνίας,municipal_council,current,GR-M-9060,9060,popular_list_election,False,municipal
+GR-M-9060-M,Δήμαρχος Σιθωνίας,mayor,current,GR-M-9060,9060,popular_direct_joint_list_leader,True,municipal
+GR-M-9061-C,Δημοτικό Συμβούλιο Γρεβενών,municipal_council,current,GR-M-9061,9061,popular_list_election,False,municipal
+GR-M-9061-M,Δήμαρχος Γρεβενών,mayor,current,GR-M-9061,9061,popular_direct_joint_list_leader,True,municipal
+GR-M-9062-C,Δημοτικό Συμβούλιο Δεσκάτης,municipal_council,current,GR-M-9062,9062,popular_list_election,False,municipal
+GR-M-9062-M,Δήμαρχος Δεσκάτης,mayor,current,GR-M-9062,9062,popular_direct_joint_list_leader,True,municipal
+GR-M-9063-C,Δημοτικό Συμβούλιο Καστοριάς,municipal_council,current,GR-M-9063,9063,popular_list_election,False,municipal
+GR-M-9063-M,Δήμαρχος Καστοριάς,mayor,current,GR-M-9063,9063,popular_direct_joint_list_leader,True,municipal
+GR-M-9064-C,Δημοτικό Συμβούλιο Νεστορίου,municipal_council,current,GR-M-9064,9064,popular_list_election,False,municipal
+GR-M-9064-M,Δήμαρχος Νεστορίου,mayor,current,GR-M-9064,9064,popular_direct_joint_list_leader,True,municipal
+GR-M-9065-C,Δημοτικό Συμβούλιο Άργους Ορεστικού,municipal_council,current,GR-M-9065,9065,popular_list_election,False,municipal
+GR-M-9065-M,Δήμαρχος Άργους Ορεστικού,mayor,current,GR-M-9065,9065,popular_direct_joint_list_leader,True,municipal
+GR-M-9066-C,Δημοτικό Συμβούλιο Βοΐου,municipal_council,current,GR-M-9066,9066,popular_list_election,False,municipal
+GR-M-9066-M,Δήμαρχος Βοΐου,mayor,current,GR-M-9066,9066,popular_direct_joint_list_leader,True,municipal
+GR-M-9067-C,Δημοτικό Συμβούλιο Εορδαίας,municipal_council,current,GR-M-9067,9067,popular_list_election,False,municipal
+GR-M-9067-M,Δήμαρχος Εορδαίας,mayor,current,GR-M-9067,9067,popular_direct_joint_list_leader,True,municipal
+GR-M-9068-C,Δημοτικό Συμβούλιο Κοζάνης,municipal_council,current,GR-M-9068,9068,popular_list_election,False,municipal
+GR-M-9068-M,Δήμαρχος Κοζάνης,mayor,current,GR-M-9068,9068,popular_direct_joint_list_leader,True,municipal
+GR-M-9069-C,Δημοτικό Συμβούλιο Σερβίων,municipal_council,current,GR-M-9069,9069,popular_list_election,False,municipal
+GR-M-9069-M,Δήμαρχος Σερβίων,mayor,current,GR-M-9069,9069,popular_direct_joint_list_leader,True,municipal
+GR-M-9070-C,Δημοτικό Συμβούλιο Αμυνταίου,municipal_council,current,GR-M-9070,9070,popular_list_election,False,municipal
+GR-M-9070-M,Δήμαρχος Αμυνταίου,mayor,current,GR-M-9070,9070,popular_direct_joint_list_leader,True,municipal
+GR-M-9071-C,Δημοτικό Συμβούλιο Πρεσπών,municipal_council,current,GR-M-9071,9071,popular_list_election,False,municipal
+GR-M-9071-M,Δήμαρχος Πρεσπών,mayor,current,GR-M-9071,9071,popular_direct_joint_list_leader,True,municipal
+GR-M-9072-C,Δημοτικό Συμβούλιο Φλώρινας,municipal_council,current,GR-M-9072,9072,popular_list_election,False,municipal
+GR-M-9072-M,Δήμαρχος Φλώρινας,mayor,current,GR-M-9072,9072,popular_direct_joint_list_leader,True,municipal
+GR-M-9073-C,Δημοτικό Συμβούλιο Αρταίων,municipal_council,current,GR-M-9073,9073,popular_list_election,False,municipal
+GR-M-9073-M,Δήμαρχος Αρταίων,mayor,current,GR-M-9073,9073,popular_direct_joint_list_leader,True,municipal
+GR-M-9074-C,Δημοτικό Συμβούλιο Γεωργίου Καραϊσκάκη,municipal_council,current,GR-M-9074,9074,popular_list_election,False,municipal
+GR-M-9074-M,Δήμαρχος Γεωργίου Καραϊσκάκη,mayor,current,GR-M-9074,9074,popular_direct_joint_list_leader,True,municipal
+GR-M-9075-C,Δημοτικό Συμβούλιο Κεντρικών Τζουμέρκων,municipal_council,current,GR-M-9075,9075,popular_list_election,False,municipal
+GR-M-9075-M,Δήμαρχος Κεντρικών Τζουμέρκων,mayor,current,GR-M-9075,9075,popular_direct_joint_list_leader,True,municipal
+GR-M-9076-C,Δημοτικό Συμβούλιο Νικολάου Σκουφά,municipal_council,current,GR-M-9076,9076,popular_list_election,False,municipal
+GR-M-9076-M,Δήμαρχος Νικολάου Σκουφά,mayor,current,GR-M-9076,9076,popular_direct_joint_list_leader,True,municipal
+GR-M-9077-C,Δημοτικό Συμβούλιο Ηγουμενίτσας,municipal_council,current,GR-M-9077,9077,popular_list_election,False,municipal
+GR-M-9077-M,Δήμαρχος Ηγουμενίτσας,mayor,current,GR-M-9077,9077,popular_direct_joint_list_leader,True,municipal
+GR-M-9078-C,Δημοτικό Συμβούλιο Σουλίου,municipal_council,current,GR-M-9078,9078,popular_list_election,False,municipal
+GR-M-9078-M,Δήμαρχος Σουλίου,mayor,current,GR-M-9078,9078,popular_direct_joint_list_leader,True,municipal
+GR-M-9079-C,Δημοτικό Συμβούλιο Φιλιατών,municipal_council,current,GR-M-9079,9079,popular_list_election,False,municipal
+GR-M-9079-M,Δήμαρχος Φιλιατών,mayor,current,GR-M-9079,9079,popular_direct_joint_list_leader,True,municipal
+GR-M-9080-C,Δημοτικό Συμβούλιο Βορείων Τζουμέρκων,municipal_council,current,GR-M-9080,9080,popular_list_election,False,municipal
+GR-M-9080-M,Δήμαρχος Βορείων Τζουμέρκων,mayor,current,GR-M-9080,9080,popular_direct_joint_list_leader,True,municipal
+GR-M-9081-C,Δημοτικό Συμβούλιο Δωδώνης,municipal_council,current,GR-M-9081,9081,popular_list_election,False,municipal
+GR-M-9081-M,Δήμαρχος Δωδώνης,mayor,current,GR-M-9081,9081,popular_direct_joint_list_leader,True,municipal
+GR-M-9082-C,Δημοτικό Συμβούλιο Ζαγορίου,municipal_council,current,GR-M-9082,9082,popular_list_election,False,municipal
+GR-M-9082-M,Δήμαρχος Ζαγορίου,mayor,current,GR-M-9082,9082,popular_direct_joint_list_leader,True,municipal
+GR-M-9083-C,Δημοτικό Συμβούλιο Ζίτσας,municipal_council,current,GR-M-9083,9083,popular_list_election,False,municipal
+GR-M-9083-M,Δήμαρχος Ζίτσας,mayor,current,GR-M-9083,9083,popular_direct_joint_list_leader,True,municipal
+GR-M-9084-C,Δημοτικό Συμβούλιο Ιωαννιτών,municipal_council,current,GR-M-9084,9084,popular_list_election,False,municipal
+GR-M-9084-M,Δήμαρχος Ιωαννιτών,mayor,current,GR-M-9084,9084,popular_direct_joint_list_leader,True,municipal
+GR-M-9085-C,Δημοτικό Συμβούλιο Κόνιτσας,municipal_council,current,GR-M-9085,9085,popular_list_election,False,municipal
+GR-M-9085-M,Δήμαρχος Κόνιτσας,mayor,current,GR-M-9085,9085,popular_direct_joint_list_leader,True,municipal
+GR-M-9086-C,Δημοτικό Συμβούλιο Μετσόβου,municipal_council,current,GR-M-9086,9086,popular_list_election,False,municipal
+GR-M-9086-M,Δήμαρχος Μετσόβου,mayor,current,GR-M-9086,9086,popular_direct_joint_list_leader,True,municipal
+GR-M-9087-C,Δημοτικό Συμβούλιο Πωγωνίου,municipal_council,current,GR-M-9087,9087,popular_list_election,False,municipal
+GR-M-9087-M,Δήμαρχος Πωγωνίου,mayor,current,GR-M-9087,9087,popular_direct_joint_list_leader,True,municipal
+GR-M-9088-C,Δημοτικό Συμβούλιο Ζηρού,municipal_council,current,GR-M-9088,9088,popular_list_election,False,municipal
+GR-M-9088-M,Δήμαρχος Ζηρού,mayor,current,GR-M-9088,9088,popular_direct_joint_list_leader,True,municipal
+GR-M-9089-C,Δημοτικό Συμβούλιο Πάργας,municipal_council,current,GR-M-9089,9089,popular_list_election,False,municipal
+GR-M-9089-M,Δήμαρχος Πάργας,mayor,current,GR-M-9089,9089,popular_direct_joint_list_leader,True,municipal
+GR-M-9090-C,Δημοτικό Συμβούλιο Πρέβεζας,municipal_council,current,GR-M-9090,9090,popular_list_election,False,municipal
+GR-M-9090-M,Δήμαρχος Πρέβεζας,mayor,current,GR-M-9090,9090,popular_direct_joint_list_leader,True,municipal
+GR-M-9091-C,Δημοτικό Συμβούλιο Αργιθέας,municipal_council,current,GR-M-9091,9091,popular_list_election,False,municipal
+GR-M-9091-M,Δήμαρχος Αργιθέας,mayor,current,GR-M-9091,9091,popular_direct_joint_list_leader,True,municipal
+GR-M-9092-C,Δημοτικό Συμβούλιο Καρδίτσας,municipal_council,current,GR-M-9092,9092,popular_list_election,False,municipal
+GR-M-9092-M,Δήμαρχος Καρδίτσας,mayor,current,GR-M-9092,9092,popular_direct_joint_list_leader,True,municipal
+GR-M-9093-C,Δημοτικό Συμβούλιο Λίμνης Πλαστήρα,municipal_council,current,GR-M-9093,9093,popular_list_election,False,municipal
+GR-M-9093-M,Δήμαρχος Λίμνης Πλαστήρα,mayor,current,GR-M-9093,9093,popular_direct_joint_list_leader,True,municipal
+GR-M-9094-C,Δημοτικό Συμβούλιο Μουζακίου,municipal_council,current,GR-M-9094,9094,popular_list_election,False,municipal
+GR-M-9094-M,Δήμαρχος Μουζακίου,mayor,current,GR-M-9094,9094,popular_direct_joint_list_leader,True,municipal
+GR-M-9095-C,Δημοτικό Συμβούλιο Παλαμά,municipal_council,current,GR-M-9095,9095,popular_list_election,False,municipal
+GR-M-9095-M,Δήμαρχος Παλαμά,mayor,current,GR-M-9095,9095,popular_direct_joint_list_leader,True,municipal
+GR-M-9096-C,Δημοτικό Συμβούλιο Σοφάδων,municipal_council,current,GR-M-9096,9096,popular_list_election,False,municipal
+GR-M-9096-M,Δήμαρχος Σοφάδων,mayor,current,GR-M-9096,9096,popular_direct_joint_list_leader,True,municipal
+GR-M-9097-C,Δημοτικό Συμβούλιο Αγιάς,municipal_council,current,GR-M-9097,9097,popular_list_election,False,municipal
+GR-M-9097-M,Δήμαρχος Αγιάς,mayor,current,GR-M-9097,9097,popular_direct_joint_list_leader,True,municipal
+GR-M-9098-C,Δημοτικό Συμβούλιο Ελασσόνας,municipal_council,current,GR-M-9098,9098,popular_list_election,False,municipal
+GR-M-9098-M,Δήμαρχος Ελασσόνας,mayor,current,GR-M-9098,9098,popular_direct_joint_list_leader,True,municipal
+GR-M-9099-C,Δημοτικό Συμβούλιο Κιλελέρ,municipal_council,current,GR-M-9099,9099,popular_list_election,False,municipal
+GR-M-9099-M,Δήμαρχος Κιλελέρ,mayor,current,GR-M-9099,9099,popular_direct_joint_list_leader,True,municipal
+GR-M-9100-C,Δημοτικό Συμβούλιο Λαρισαίων,municipal_council,current,GR-M-9100,9100,popular_list_election,False,municipal
+GR-M-9100-M,Δήμαρχος Λαρισαίων,mayor,current,GR-M-9100,9100,popular_direct_joint_list_leader,True,municipal
+GR-M-9101-C,Δημοτικό Συμβούλιο Τεμπών,municipal_council,current,GR-M-9101,9101,popular_list_election,False,municipal
+GR-M-9101-M,Δήμαρχος Τεμπών,mayor,current,GR-M-9101,9101,popular_direct_joint_list_leader,True,municipal
+GR-M-9102-C,Δημοτικό Συμβούλιο Τυρνάβου,municipal_council,current,GR-M-9102,9102,popular_list_election,False,municipal
+GR-M-9102-M,Δήμαρχος Τυρνάβου,mayor,current,GR-M-9102,9102,popular_direct_joint_list_leader,True,municipal
+GR-M-9103-C,Δημοτικό Συμβούλιο Φαρσάλων,municipal_council,current,GR-M-9103,9103,popular_list_election,False,municipal
+GR-M-9103-M,Δήμαρχος Φαρσάλων,mayor,current,GR-M-9103,9103,popular_direct_joint_list_leader,True,municipal
+GR-M-9104-C,Δημοτικό Συμβούλιο Αλμυρού,municipal_council,current,GR-M-9104,9104,popular_list_election,False,municipal
+GR-M-9104-M,Δήμαρχος Αλμυρού,mayor,current,GR-M-9104,9104,popular_direct_joint_list_leader,True,municipal
+GR-M-9105-C,Δημοτικό Συμβούλιο Βόλου,municipal_council,current,GR-M-9105,9105,popular_list_election,False,municipal
+GR-M-9105-M,Δήμαρχος Βόλου,mayor,current,GR-M-9105,9105,popular_direct_joint_list_leader,True,municipal
+GR-M-9106-C,Δημοτικό Συμβούλιο Ζαγοράς – Μουρεσίου,municipal_council,current,GR-M-9106,9106,popular_list_election,False,municipal
+GR-M-9106-M,Δήμαρχος Ζαγοράς – Μουρεσίου,mayor,current,GR-M-9106,9106,popular_direct_joint_list_leader,True,municipal
+GR-M-9107-C,Δημοτικό Συμβούλιο Νοτίου Πηλίου,municipal_council,current,GR-M-9107,9107,popular_list_election,False,municipal
+GR-M-9107-M,Δήμαρχος Νοτίου Πηλίου,mayor,current,GR-M-9107,9107,popular_direct_joint_list_leader,True,municipal
+GR-M-9108-C,Δημοτικό Συμβούλιο Ρήγα Φεραίου,municipal_council,current,GR-M-9108,9108,popular_list_election,False,municipal
+GR-M-9108-M,Δήμαρχος Ρήγα Φεραίου,mayor,current,GR-M-9108,9108,popular_direct_joint_list_leader,True,municipal
+GR-M-9109-C,Δημοτικό Συμβούλιο Αλοννήσου,municipal_council,current,GR-M-9109,9109,popular_list_election,False,municipal
+GR-M-9109-M,Δήμαρχος Αλοννήσου,mayor,current,GR-M-9109,9109,popular_direct_joint_list_leader,True,municipal
+GR-M-9110-C,Δημοτικό Συμβούλιο Σκιάθου,municipal_council,current,GR-M-9110,9110,popular_list_election,False,municipal
+GR-M-9110-M,Δήμαρχος Σκιάθου,mayor,current,GR-M-9110,9110,popular_direct_joint_list_leader,True,municipal
+GR-M-9111-C,Δημοτικό Συμβούλιο Σκοπέλου,municipal_council,current,GR-M-9111,9111,popular_list_election,False,municipal
+GR-M-9111-M,Δήμαρχος Σκοπέλου,mayor,current,GR-M-9111,9111,popular_direct_joint_list_leader,True,municipal
+GR-M-9112-C,Δημοτικό Συμβούλιο Μετεώρων,municipal_council,current,GR-M-9112,9112,popular_list_election,False,municipal
+GR-M-9112-M,Δήμαρχος Μετεώρων,mayor,current,GR-M-9112,9112,popular_direct_joint_list_leader,True,municipal
+GR-M-9113-C,Δημοτικό Συμβούλιο Πύλης,municipal_council,current,GR-M-9113,9113,popular_list_election,False,municipal
+GR-M-9113-M,Δήμαρχος Πύλης,mayor,current,GR-M-9113,9113,popular_direct_joint_list_leader,True,municipal
+GR-M-9114-C,Δημοτικό Συμβούλιο Τρικκαίων,municipal_council,current,GR-M-9114,9114,popular_list_election,False,municipal
+GR-M-9114-M,Δήμαρχος Τρικκαίων,mayor,current,GR-M-9114,9114,popular_direct_joint_list_leader,True,municipal
+GR-M-9115-C,Δημοτικό Συμβούλιο Φαρκαδόνας,municipal_council,current,GR-M-9115,9115,popular_list_election,False,municipal
+GR-M-9115-M,Δήμαρχος Φαρκαδόνας,mayor,current,GR-M-9115,9115,popular_direct_joint_list_leader,True,municipal
+GR-M-9116-C,Δημοτικό Συμβούλιο Ζακύνθου,municipal_council,current,GR-M-9116,9116,popular_list_election,False,municipal
+GR-M-9116-M,Δήμαρχος Ζακύνθου,mayor,current,GR-M-9116,9116,popular_direct_joint_list_leader,True,municipal
+GR-M-9117-C,Δημοτικό Συμβούλιο Ιθάκης,municipal_council,current,GR-M-9117,9117,popular_list_election,False,municipal
+GR-M-9117-M,Δήμαρχος Ιθάκης,mayor,current,GR-M-9117,9117,popular_direct_joint_list_leader,True,municipal
+GR-M-9118-C,Δημοτικό Συμβούλιο Κεντρικής Κέρκυρας και Διαποντίων Νήσων,municipal_council,current,GR-M-9118,9118,popular_list_election,False,municipal
+GR-M-9118-M,Δήμαρχος Κεντρικής Κέρκυρας και Διαποντίων Νήσων,mayor,current,GR-M-9118,9118,popular_direct_joint_list_leader,True,municipal
+GR-M-9119-C,Δημοτικό Συμβούλιο Παξών,municipal_council,current,GR-M-9119,9119,popular_list_election,False,municipal
+GR-M-9119-M,Δήμαρχος Παξών,mayor,current,GR-M-9119,9119,popular_direct_joint_list_leader,True,municipal
+GR-M-9120-C,Δημοτικό Συμβούλιο Αργοστολίου,municipal_council,current,GR-M-9120,9120,popular_list_election,False,municipal
+GR-M-9120-M,Δήμαρχος Αργοστολίου,mayor,current,GR-M-9120,9120,popular_direct_joint_list_leader,True,municipal
+GR-M-9121-C,Δημοτικό Συμβούλιο Λευκάδας,municipal_council,current,GR-M-9121,9121,popular_list_election,False,municipal
+GR-M-9121-M,Δήμαρχος Λευκάδας,mayor,current,GR-M-9121,9121,popular_direct_joint_list_leader,True,municipal
+GR-M-9122-C,Δημοτικό Συμβούλιο Μεγανησίου,municipal_council,current,GR-M-9122,9122,popular_list_election,False,municipal
+GR-M-9122-M,Δήμαρχος Μεγανησίου,mayor,current,GR-M-9122,9122,popular_direct_joint_list_leader,True,municipal
+GR-M-9123-C,Δημοτικό Συμβούλιο Αγρινίου,municipal_council,current,GR-M-9123,9123,popular_list_election,False,municipal
+GR-M-9123-M,Δήμαρχος Αγρινίου,mayor,current,GR-M-9123,9123,popular_direct_joint_list_leader,True,municipal
+GR-M-9124-C,Δημοτικό Συμβούλιο Ακτίου – Βόνιτσας,municipal_council,current,GR-M-9124,9124,popular_list_election,False,municipal
+GR-M-9124-M,Δήμαρχος Ακτίου – Βόνιτσας,mayor,current,GR-M-9124,9124,popular_direct_joint_list_leader,True,municipal
+GR-M-9125-C,Δημοτικό Συμβούλιο Αμφιλοχίας,municipal_council,current,GR-M-9125,9125,popular_list_election,False,municipal
+GR-M-9125-M,Δήμαρχος Αμφιλοχίας,mayor,current,GR-M-9125,9125,popular_direct_joint_list_leader,True,municipal
+GR-M-9126-C,Δημοτικό Συμβούλιο Θέρμου,municipal_council,current,GR-M-9126,9126,popular_list_election,False,municipal
+GR-M-9126-M,Δήμαρχος Θέρμου,mayor,current,GR-M-9126,9126,popular_direct_joint_list_leader,True,municipal
+GR-M-9127-C,Δημοτικό Συμβούλιο Ιεράς Πόλης Μεσολογγίου,municipal_council,current,GR-M-9127,9127,popular_list_election,False,municipal
+GR-M-9127-M,Δήμαρχος Ιεράς Πόλης Μεσολογγίου,mayor,current,GR-M-9127,9127,popular_direct_joint_list_leader,True,municipal
+GR-M-9128-C,Δημοτικό Συμβούλιο Ναυπακτίας,municipal_council,current,GR-M-9128,9128,popular_list_election,False,municipal
+GR-M-9128-M,Δήμαρχος Ναυπακτίας,mayor,current,GR-M-9128,9128,popular_direct_joint_list_leader,True,municipal
+GR-M-9129-C,Δημοτικό Συμβούλιο Ξηρομέρου,municipal_council,current,GR-M-9129,9129,popular_list_election,False,municipal
+GR-M-9129-M,Δήμαρχος Ξηρομέρου,mayor,current,GR-M-9129,9129,popular_direct_joint_list_leader,True,municipal
+GR-M-9130-C,Δημοτικό Συμβούλιο Αιγιαλείας,municipal_council,current,GR-M-9130,9130,popular_list_election,False,municipal
+GR-M-9130-M,Δήμαρχος Αιγιαλείας,mayor,current,GR-M-9130,9130,popular_direct_joint_list_leader,True,municipal
+GR-M-9131-C,Δημοτικό Συμβούλιο Δυτικής Αχαΐας,municipal_council,current,GR-M-9131,9131,popular_list_election,False,municipal
+GR-M-9131-M,Δήμαρχος Δυτικής Αχαΐας,mayor,current,GR-M-9131,9131,popular_direct_joint_list_leader,True,municipal
+GR-M-9132-C,Δημοτικό Συμβούλιο Ερυμάνθου,municipal_council,current,GR-M-9132,9132,popular_list_election,False,municipal
+GR-M-9132-M,Δήμαρχος Ερυμάνθου,mayor,current,GR-M-9132,9132,popular_direct_joint_list_leader,True,municipal
+GR-M-9133-C,Δημοτικό Συμβούλιο Καλαβρύτων,municipal_council,current,GR-M-9133,9133,popular_list_election,False,municipal
+GR-M-9133-M,Δήμαρχος Καλαβρύτων,mayor,current,GR-M-9133,9133,popular_direct_joint_list_leader,True,municipal
+GR-M-9134-C,Δημοτικό Συμβούλιο Πατρέων,municipal_council,current,GR-M-9134,9134,popular_list_election,False,municipal
+GR-M-9134-M,Δήμαρχος Πατρέων,mayor,current,GR-M-9134,9134,popular_direct_joint_list_leader,True,municipal
+GR-M-9135-C,Δημοτικό Συμβούλιο Ανδραβίδας – Κυλλήνης,municipal_council,current,GR-M-9135,9135,popular_list_election,False,municipal
+GR-M-9135-M,Δήμαρχος Ανδραβίδας – Κυλλήνης,mayor,current,GR-M-9135,9135,popular_direct_joint_list_leader,True,municipal
+GR-M-9136-C,Δημοτικό Συμβούλιο Ανδρίτσαινας – Κρεστένων,municipal_council,current,GR-M-9136,9136,popular_list_election,False,municipal
+GR-M-9136-M,Δήμαρχος Ανδρίτσαινας – Κρεστένων,mayor,current,GR-M-9136,9136,popular_direct_joint_list_leader,True,municipal
+GR-M-9137-C,Δημοτικό Συμβούλιο Αρχαίας Ολυμπίας,municipal_council,current,GR-M-9137,9137,popular_list_election,False,municipal
+GR-M-9137-M,Δήμαρχος Αρχαίας Ολυμπίας,mayor,current,GR-M-9137,9137,popular_direct_joint_list_leader,True,municipal
+GR-M-9138-C,Δημοτικό Συμβούλιο Ζαχάρως,municipal_council,current,GR-M-9138,9138,popular_list_election,False,municipal
+GR-M-9138-M,Δήμαρχος Ζαχάρως,mayor,current,GR-M-9138,9138,popular_direct_joint_list_leader,True,municipal
+GR-M-9139-C,Δημοτικό Συμβούλιο Ήλιδας,municipal_council,current,GR-M-9139,9139,popular_list_election,False,municipal
+GR-M-9139-M,Δήμαρχος Ήλιδας,mayor,current,GR-M-9139,9139,popular_direct_joint_list_leader,True,municipal
+GR-M-9140-C,Δημοτικό Συμβούλιο Πηνειού,municipal_council,current,GR-M-9140,9140,popular_list_election,False,municipal
+GR-M-9140-M,Δήμαρχος Πηνειού,mayor,current,GR-M-9140,9140,popular_direct_joint_list_leader,True,municipal
+GR-M-9141-C,Δημοτικό Συμβούλιο Πύργου,municipal_council,current,GR-M-9141,9141,popular_list_election,False,municipal
+GR-M-9141-M,Δήμαρχος Πύργου,mayor,current,GR-M-9141,9141,popular_direct_joint_list_leader,True,municipal
+GR-M-9142-C,Δημοτικό Συμβούλιο Αλιάρτου – Θεσπιέων,municipal_council,current,GR-M-9142,9142,popular_list_election,False,municipal
+GR-M-9142-M,Δήμαρχος Αλιάρτου – Θεσπιέων,mayor,current,GR-M-9142,9142,popular_direct_joint_list_leader,True,municipal
+GR-M-9143-C,Δημοτικό Συμβούλιο Διστόμου – Αράχοβας – Αντίκυρας,municipal_council,current,GR-M-9143,9143,popular_list_election,False,municipal
+GR-M-9143-M,Δήμαρχος Διστόμου – Αράχοβας – Αντίκυρας,mayor,current,GR-M-9143,9143,popular_direct_joint_list_leader,True,municipal
+GR-M-9144-C,Δημοτικό Συμβούλιο Θηβαίων,municipal_council,current,GR-M-9144,9144,popular_list_election,False,municipal
+GR-M-9144-M,Δήμαρχος Θηβαίων,mayor,current,GR-M-9144,9144,popular_direct_joint_list_leader,True,municipal
+GR-M-9145-C,Δημοτικό Συμβούλιο Λεβαδέων,municipal_council,current,GR-M-9145,9145,popular_list_election,False,municipal
+GR-M-9145-M,Δήμαρχος Λεβαδέων,mayor,current,GR-M-9145,9145,popular_direct_joint_list_leader,True,municipal
+GR-M-9146-C,Δημοτικό Συμβούλιο Ορχομενού,municipal_council,current,GR-M-9146,9146,popular_list_election,False,municipal
+GR-M-9146-M,Δήμαρχος Ορχομενού,mayor,current,GR-M-9146,9146,popular_direct_joint_list_leader,True,municipal
+GR-M-9147-C,Δημοτικό Συμβούλιο Τανάγρας,municipal_council,current,GR-M-9147,9147,popular_list_election,False,municipal
+GR-M-9147-M,Δήμαρχος Τανάγρας,mayor,current,GR-M-9147,9147,popular_direct_joint_list_leader,True,municipal
+GR-M-9148-C,Δημοτικό Συμβούλιο Διρφύων – Μεσσαπίων,municipal_council,current,GR-M-9148,9148,popular_list_election,False,municipal
+GR-M-9148-M,Δήμαρχος Διρφύων – Μεσσαπίων,mayor,current,GR-M-9148,9148,popular_direct_joint_list_leader,True,municipal
+GR-M-9149-C,Δημοτικό Συμβούλιο Ερέτριας,municipal_council,current,GR-M-9149,9149,popular_list_election,False,municipal
+GR-M-9149-M,Δήμαρχος Ερέτριας,mayor,current,GR-M-9149,9149,popular_direct_joint_list_leader,True,municipal
+GR-M-9150-C,Δημοτικό Συμβούλιο Ιστιαίας – Αιδηψού,municipal_council,current,GR-M-9150,9150,popular_list_election,False,municipal
+GR-M-9150-M,Δήμαρχος Ιστιαίας – Αιδηψού,mayor,current,GR-M-9150,9150,popular_direct_joint_list_leader,True,municipal
+GR-M-9151-C,Δημοτικό Συμβούλιο Καρύστου,municipal_council,current,GR-M-9151,9151,popular_list_election,False,municipal
+GR-M-9151-M,Δήμαρχος Καρύστου,mayor,current,GR-M-9151,9151,popular_direct_joint_list_leader,True,municipal
+GR-M-9152-C,Δημοτικό Συμβούλιο Κύμης – Αλιβερίου,municipal_council,current,GR-M-9152,9152,popular_list_election,False,municipal
+GR-M-9152-M,Δήμαρχος Κύμης – Αλιβερίου,mayor,current,GR-M-9152,9152,popular_direct_joint_list_leader,True,municipal
+GR-M-9153-C,Δημοτικό Συμβούλιο Μαντουδίου – Λίμνης – Αγίας Αννας,municipal_council,current,GR-M-9153,9153,popular_list_election,False,municipal
+GR-M-9153-M,Δήμαρχος Μαντουδίου – Λίμνης – Αγίας Αννας,mayor,current,GR-M-9153,9153,popular_direct_joint_list_leader,True,municipal
+GR-M-9154-C,Δημοτικό Συμβούλιο Σκύρου,municipal_council,current,GR-M-9154,9154,popular_list_election,False,municipal
+GR-M-9154-M,Δήμαρχος Σκύρου,mayor,current,GR-M-9154,9154,popular_direct_joint_list_leader,True,municipal
+GR-M-9155-C,Δημοτικό Συμβούλιο Χαλκιδέων,municipal_council,current,GR-M-9155,9155,popular_list_election,False,municipal
+GR-M-9155-M,Δήμαρχος Χαλκιδέων,mayor,current,GR-M-9155,9155,popular_direct_joint_list_leader,True,municipal
+GR-M-9156-C,Δημοτικό Συμβούλιο Αγράφων,municipal_council,current,GR-M-9156,9156,popular_list_election,False,municipal
+GR-M-9156-M,Δήμαρχος Αγράφων,mayor,current,GR-M-9156,9156,popular_direct_joint_list_leader,True,municipal
+GR-M-9157-C,Δημοτικό Συμβούλιο Καρπενησίου,municipal_council,current,GR-M-9157,9157,popular_list_election,False,municipal
+GR-M-9157-M,Δήμαρχος Καρπενησίου,mayor,current,GR-M-9157,9157,popular_direct_joint_list_leader,True,municipal
+GR-M-9158-C,Δημοτικό Συμβούλιο Αμφίκλειας – Ελάτειας,municipal_council,current,GR-M-9158,9158,popular_list_election,False,municipal
+GR-M-9158-M,Δήμαρχος Αμφίκλειας – Ελάτειας,mayor,current,GR-M-9158,9158,popular_direct_joint_list_leader,True,municipal
+GR-M-9159-C,Δημοτικό Συμβούλιο Δομοκού,municipal_council,current,GR-M-9159,9159,popular_list_election,False,municipal
+GR-M-9159-M,Δήμαρχος Δομοκού,mayor,current,GR-M-9159,9159,popular_direct_joint_list_leader,True,municipal
+GR-M-9160-C,Δημοτικό Συμβούλιο Λαμιέων,municipal_council,current,GR-M-9160,9160,popular_list_election,False,municipal
+GR-M-9160-M,Δήμαρχος Λαμιέων,mayor,current,GR-M-9160,9160,popular_direct_joint_list_leader,True,municipal
+GR-M-9161-C,Δημοτικό Συμβούλιο Λοκρών,municipal_council,current,GR-M-9161,9161,popular_list_election,False,municipal
+GR-M-9161-M,Δήμαρχος Λοκρών,mayor,current,GR-M-9161,9161,popular_direct_joint_list_leader,True,municipal
+GR-M-9162-C,Δημοτικό Συμβούλιο Μακρακώμης,municipal_council,current,GR-M-9162,9162,popular_list_election,False,municipal
+GR-M-9162-M,Δήμαρχος Μακρακώμης,mayor,current,GR-M-9162,9162,popular_direct_joint_list_leader,True,municipal
+GR-M-9163-C,Δημοτικό Συμβούλιο Καμένων Βούρλων,municipal_council,current,GR-M-9163,9163,popular_list_election,False,municipal
+GR-M-9163-M,Δήμαρχος Καμένων Βούρλων,mayor,current,GR-M-9163,9163,popular_direct_joint_list_leader,True,municipal
+GR-M-9164-C,Δημοτικό Συμβούλιο Στυλίδας,municipal_council,current,GR-M-9164,9164,popular_list_election,False,municipal
+GR-M-9164-M,Δήμαρχος Στυλίδας,mayor,current,GR-M-9164,9164,popular_direct_joint_list_leader,True,municipal
+GR-M-9165-C,Δημοτικό Συμβούλιο Δελφών,municipal_council,current,GR-M-9165,9165,popular_list_election,False,municipal
+GR-M-9165-M,Δήμαρχος Δελφών,mayor,current,GR-M-9165,9165,popular_direct_joint_list_leader,True,municipal
+GR-M-9166-C,Δημοτικό Συμβούλιο Δωρίδος,municipal_council,current,GR-M-9166,9166,popular_list_election,False,municipal
+GR-M-9166-M,Δήμαρχος Δωρίδος,mayor,current,GR-M-9166,9166,popular_direct_joint_list_leader,True,municipal
+GR-M-9167-C,Δημοτικό Συμβούλιο Αγίας Παρασκευής,municipal_council,current,GR-M-9167,9167,popular_list_election,False,municipal
+GR-M-9167-M,Δήμαρχος Αγίας Παρασκευής,mayor,current,GR-M-9167,9167,popular_direct_joint_list_leader,True,municipal
+GR-M-9168-C,Δημοτικό Συμβούλιο Αμαρουσίου,municipal_council,current,GR-M-9168,9168,popular_list_election,False,municipal
+GR-M-9168-M,Δήμαρχος Αμαρουσίου,mayor,current,GR-M-9168,9168,popular_direct_joint_list_leader,True,municipal
+GR-M-9169-C,Δημοτικό Συμβούλιο Βριλησσίων,municipal_council,current,GR-M-9169,9169,popular_list_election,False,municipal
+GR-M-9169-M,Δήμαρχος Βριλησσίων,mayor,current,GR-M-9169,9169,popular_direct_joint_list_leader,True,municipal
+GR-M-9170-C,Δημοτικό Συμβούλιο Ηρακλείου,municipal_council,current,GR-M-9170,9170,popular_list_election,False,municipal
+GR-M-9170-M,Δήμαρχος Ηρακλείου,mayor,current,GR-M-9170,9170,popular_direct_joint_list_leader,True,municipal
+GR-M-9171-C,Δημοτικό Συμβούλιο Κηφισιάς,municipal_council,current,GR-M-9171,9171,popular_list_election,False,municipal
+GR-M-9171-M,Δήμαρχος Κηφισιάς,mayor,current,GR-M-9171,9171,popular_direct_joint_list_leader,True,municipal
+GR-M-9172-C,Δημοτικό Συμβούλιο Λυκόβρυσης – Πεύκης,municipal_council,current,GR-M-9172,9172,popular_list_election,False,municipal
+GR-M-9172-M,Δήμαρχος Λυκόβρυσης – Πεύκης,mayor,current,GR-M-9172,9172,popular_direct_joint_list_leader,True,municipal
+GR-M-9173-C,Δημοτικό Συμβούλιο Μεταμορφώσεως,municipal_council,current,GR-M-9173,9173,popular_list_election,False,municipal
+GR-M-9173-M,Δήμαρχος Μεταμορφώσεως,mayor,current,GR-M-9173,9173,popular_direct_joint_list_leader,True,municipal
+GR-M-9174-C,Δημοτικό Συμβούλιο Νέας Ιωνίας,municipal_council,current,GR-M-9174,9174,popular_list_election,False,municipal
+GR-M-9174-M,Δήμαρχος Νέας Ιωνίας,mayor,current,GR-M-9174,9174,popular_direct_joint_list_leader,True,municipal
+GR-M-9175-C,Δημοτικό Συμβούλιο Παπάγου – Χολαργού,municipal_council,current,GR-M-9175,9175,popular_list_election,False,municipal
+GR-M-9175-M,Δήμαρχος Παπάγου – Χολαργού,mayor,current,GR-M-9175,9175,popular_direct_joint_list_leader,True,municipal
+GR-M-9176-C,Δημοτικό Συμβούλιο Πεντέλης,municipal_council,current,GR-M-9176,9176,popular_list_election,False,municipal
+GR-M-9176-M,Δήμαρχος Πεντέλης,mayor,current,GR-M-9176,9176,popular_direct_joint_list_leader,True,municipal
+GR-M-9177-C,Δημοτικό Συμβούλιο Φιλοθέης – Ψυχικού,municipal_council,current,GR-M-9177,9177,popular_list_election,False,municipal
+GR-M-9177-M,Δήμαρχος Φιλοθέης – Ψυχικού,mayor,current,GR-M-9177,9177,popular_direct_joint_list_leader,True,municipal
+GR-M-9178-C,Δημοτικό Συμβούλιο Χαλανδρίου,municipal_council,current,GR-M-9178,9178,popular_list_election,False,municipal
+GR-M-9178-M,Δήμαρχος Χαλανδρίου,mayor,current,GR-M-9178,9178,popular_direct_joint_list_leader,True,municipal
+GR-M-9179-C,Δημοτικό Συμβούλιο Αγίας Βαρβάρας,municipal_council,current,GR-M-9179,9179,popular_list_election,False,municipal
+GR-M-9179-M,Δήμαρχος Αγίας Βαρβάρας,mayor,current,GR-M-9179,9179,popular_direct_joint_list_leader,True,municipal
+GR-M-9180-C,Δημοτικό Συμβούλιο Αγίων Αναργύρων – Καματερού,municipal_council,current,GR-M-9180,9180,popular_list_election,False,municipal
+GR-M-9180-M,Δήμαρχος Αγίων Αναργύρων – Καματερού,mayor,current,GR-M-9180,9180,popular_direct_joint_list_leader,True,municipal
+GR-M-9181-C,Δημοτικό Συμβούλιο Αιγάλεω,municipal_council,current,GR-M-9181,9181,popular_list_election,False,municipal
+GR-M-9181-M,Δήμαρχος Αιγάλεω,mayor,current,GR-M-9181,9181,popular_direct_joint_list_leader,True,municipal
+GR-M-9182-C,Δημοτικό Συμβούλιο Ιλίου,municipal_council,current,GR-M-9182,9182,popular_list_election,False,municipal
+GR-M-9182-M,Δήμαρχος Ιλίου,mayor,current,GR-M-9182,9182,popular_direct_joint_list_leader,True,municipal
+GR-M-9183-C,Δημοτικό Συμβούλιο Περιστερίου,municipal_council,current,GR-M-9183,9183,popular_list_election,False,municipal
+GR-M-9183-M,Δήμαρχος Περιστερίου,mayor,current,GR-M-9183,9183,popular_direct_joint_list_leader,True,municipal
+GR-M-9184-C,Δημοτικό Συμβούλιο Πετρουπόλεως,municipal_council,current,GR-M-9184,9184,popular_list_election,False,municipal
+GR-M-9184-M,Δήμαρχος Πετρουπόλεως,mayor,current,GR-M-9184,9184,popular_direct_joint_list_leader,True,municipal
+GR-M-9185-C,Δημοτικό Συμβούλιο Χαϊδαρίου,municipal_council,current,GR-M-9185,9185,popular_list_election,False,municipal
+GR-M-9185-M,Δήμαρχος Χαϊδαρίου,mayor,current,GR-M-9185,9185,popular_direct_joint_list_leader,True,municipal
+GR-M-9186-C,Δημοτικό Συμβούλιο Αθηναίων,municipal_council,current,GR-M-9186,9186,popular_list_election,False,municipal
+GR-M-9186-M,Δήμαρχος Αθηναίων,mayor,current,GR-M-9186,9186,popular_direct_joint_list_leader,True,municipal
+GR-M-9187-C,Δημοτικό Συμβούλιο Βύρωνος,municipal_council,current,GR-M-9187,9187,popular_list_election,False,municipal
+GR-M-9187-M,Δήμαρχος Βύρωνος,mayor,current,GR-M-9187,9187,popular_direct_joint_list_leader,True,municipal
+GR-M-9188-C,Δημοτικό Συμβούλιο Γαλατσίου,municipal_council,current,GR-M-9188,9188,popular_list_election,False,municipal
+GR-M-9188-M,Δήμαρχος Γαλατσίου,mayor,current,GR-M-9188,9188,popular_direct_joint_list_leader,True,municipal
+GR-M-9189-C,Δημοτικό Συμβούλιο Δάφνης – Υμηττού,municipal_council,current,GR-M-9189,9189,popular_list_election,False,municipal
+GR-M-9189-M,Δήμαρχος Δάφνης – Υμηττού,mayor,current,GR-M-9189,9189,popular_direct_joint_list_leader,True,municipal
+GR-M-9190-C,Δημοτικό Συμβούλιο Ζωγράφου,municipal_council,current,GR-M-9190,9190,popular_list_election,False,municipal
+GR-M-9190-M,Δήμαρχος Ζωγράφου,mayor,current,GR-M-9190,9190,popular_direct_joint_list_leader,True,municipal
+GR-M-9191-C,Δημοτικό Συμβούλιο Ηλιουπόλεως,municipal_council,current,GR-M-9191,9191,popular_list_election,False,municipal
+GR-M-9191-M,Δήμαρχος Ηλιουπόλεως,mayor,current,GR-M-9191,9191,popular_direct_joint_list_leader,True,municipal
+GR-M-9192-C,Δημοτικό Συμβούλιο Καισαριανής,municipal_council,current,GR-M-9192,9192,popular_list_election,False,municipal
+GR-M-9192-M,Δήμαρχος Καισαριανής,mayor,current,GR-M-9192,9192,popular_direct_joint_list_leader,True,municipal
+GR-M-9193-C,Δημοτικό Συμβούλιο Νέας Φιλαδέλφειας – Νέας Χαλκηδόνας,municipal_council,current,GR-M-9193,9193,popular_list_election,False,municipal
+GR-M-9193-M,Δήμαρχος Νέας Φιλαδέλφειας – Νέας Χαλκηδόνας,mayor,current,GR-M-9193,9193,popular_direct_joint_list_leader,True,municipal
+GR-M-9194-C,Δημοτικό Συμβούλιο Αγίου Δημητρίου,municipal_council,current,GR-M-9194,9194,popular_list_election,False,municipal
+GR-M-9194-M,Δήμαρχος Αγίου Δημητρίου,mayor,current,GR-M-9194,9194,popular_direct_joint_list_leader,True,municipal
+GR-M-9195-C,Δημοτικό Συμβούλιο Αλίμου,municipal_council,current,GR-M-9195,9195,popular_list_election,False,municipal
+GR-M-9195-M,Δήμαρχος Αλίμου,mayor,current,GR-M-9195,9195,popular_direct_joint_list_leader,True,municipal
+GR-M-9196-C,Δημοτικό Συμβούλιο Γλυφάδας,municipal_council,current,GR-M-9196,9196,popular_list_election,False,municipal
+GR-M-9196-M,Δήμαρχος Γλυφάδας,mayor,current,GR-M-9196,9196,popular_direct_joint_list_leader,True,municipal
+GR-M-9197-C,Δημοτικό Συμβούλιο Ελληνικού – Αργυρούπολης,municipal_council,current,GR-M-9197,9197,popular_list_election,False,municipal
+GR-M-9197-M,Δήμαρχος Ελληνικού – Αργυρούπολης,mayor,current,GR-M-9197,9197,popular_direct_joint_list_leader,True,municipal
+GR-M-9198-C,Δημοτικό Συμβούλιο Καλλιθέας,municipal_council,current,GR-M-9198,9198,popular_list_election,False,municipal
+GR-M-9198-M,Δήμαρχος Καλλιθέας,mayor,current,GR-M-9198,9198,popular_direct_joint_list_leader,True,municipal
+GR-M-9199-C,Δημοτικό Συμβούλιο Μοσχάτου – Ταύρου,municipal_council,current,GR-M-9199,9199,popular_list_election,False,municipal
+GR-M-9199-M,Δήμαρχος Μοσχάτου – Ταύρου,mayor,current,GR-M-9199,9199,popular_direct_joint_list_leader,True,municipal
+GR-M-9200-C,Δημοτικό Συμβούλιο Νέας Σμύρνης,municipal_council,current,GR-M-9200,9200,popular_list_election,False,municipal
+GR-M-9200-M,Δήμαρχος Νέας Σμύρνης,mayor,current,GR-M-9200,9200,popular_direct_joint_list_leader,True,municipal
+GR-M-9201-C,Δημοτικό Συμβούλιο Παλαιού Φαλήρου,municipal_council,current,GR-M-9201,9201,popular_list_election,False,municipal
+GR-M-9201-M,Δήμαρχος Παλαιού Φαλήρου,mayor,current,GR-M-9201,9201,popular_direct_joint_list_leader,True,municipal
+GR-M-9202-C,Δημοτικό Συμβούλιο Κερατσινίου – Δραπετσώνας,municipal_council,current,GR-M-9202,9202,popular_list_election,False,municipal
+GR-M-9202-M,Δήμαρχος Κερατσινίου – Δραπετσώνας,mayor,current,GR-M-9202,9202,popular_direct_joint_list_leader,True,municipal
+GR-M-9203-C,Δημοτικό Συμβούλιο Κορυδαλλού,municipal_council,current,GR-M-9203,9203,popular_list_election,False,municipal
+GR-M-9203-M,Δήμαρχος Κορυδαλλού,mayor,current,GR-M-9203,9203,popular_direct_joint_list_leader,True,municipal
+GR-M-9204-C,Δημοτικό Συμβούλιο Νίκαιας – Αγίου Ιωάννη Ρέντη,municipal_council,current,GR-M-9204,9204,popular_list_election,False,municipal
+GR-M-9204-M,Δήμαρχος Νίκαιας – Αγίου Ιωάννη Ρέντη,mayor,current,GR-M-9204,9204,popular_direct_joint_list_leader,True,municipal
+GR-M-9205-C,Δημοτικό Συμβούλιο Πειραιώς,municipal_council,current,GR-M-9205,9205,popular_list_election,False,municipal
+GR-M-9205-M,Δήμαρχος Πειραιώς,mayor,current,GR-M-9205,9205,popular_direct_joint_list_leader,True,municipal
+GR-M-9206-C,Δημοτικό Συμβούλιο Περάματος,municipal_council,current,GR-M-9206,9206,popular_list_election,False,municipal
+GR-M-9206-M,Δήμαρχος Περάματος,mayor,current,GR-M-9206,9206,popular_direct_joint_list_leader,True,municipal
+GR-M-9207-C,Δημοτικό Συμβούλιο Αγκιστρίου,municipal_council,current,GR-M-9207,9207,popular_list_election,False,municipal
+GR-M-9207-M,Δήμαρχος Αγκιστρίου,mayor,current,GR-M-9207,9207,popular_direct_joint_list_leader,True,municipal
+GR-M-9208-C,Δημοτικό Συμβούλιο Αίγινας,municipal_council,current,GR-M-9208,9208,popular_list_election,False,municipal
+GR-M-9208-M,Δήμαρχος Αίγινας,mayor,current,GR-M-9208,9208,popular_direct_joint_list_leader,True,municipal
+GR-M-9209-C,Δημοτικό Συμβούλιο Κυθήρων,municipal_council,current,GR-M-9209,9209,popular_list_election,False,municipal
+GR-M-9209-M,Δήμαρχος Κυθήρων,mayor,current,GR-M-9209,9209,popular_direct_joint_list_leader,True,municipal
+GR-M-9210-C,Δημοτικό Συμβούλιο Πόρου,municipal_council,current,GR-M-9210,9210,popular_list_election,False,municipal
+GR-M-9210-M,Δήμαρχος Πόρου,mayor,current,GR-M-9210,9210,popular_direct_joint_list_leader,True,municipal
+GR-M-9211-C,Δημοτικό Συμβούλιο Σαλαμίνας,municipal_council,current,GR-M-9211,9211,popular_list_election,False,municipal
+GR-M-9211-M,Δήμαρχος Σαλαμίνας,mayor,current,GR-M-9211,9211,popular_direct_joint_list_leader,True,municipal
+GR-M-9212-C,Δημοτικό Συμβούλιο Σπετσών,municipal_council,current,GR-M-9212,9212,popular_list_election,False,municipal
+GR-M-9212-M,Δήμαρχος Σπετσών,mayor,current,GR-M-9212,9212,popular_direct_joint_list_leader,True,municipal
+GR-M-9213-C,Δημοτικό Συμβούλιο Τροιζηνίας – Μεθάνων,municipal_council,current,GR-M-9213,9213,popular_list_election,False,municipal
+GR-M-9213-M,Δήμαρχος Τροιζηνίας – Μεθάνων,mayor,current,GR-M-9213,9213,popular_direct_joint_list_leader,True,municipal
+GR-M-9214-C,Δημοτικό Συμβούλιο Ύδρας,municipal_council,current,GR-M-9214,9214,popular_list_election,False,municipal
+GR-M-9214-M,Δήμαρχος Ύδρας,mayor,current,GR-M-9214,9214,popular_direct_joint_list_leader,True,municipal
+GR-M-9215-C,Δημοτικό Συμβούλιο Αχαρνών,municipal_council,current,GR-M-9215,9215,popular_list_election,False,municipal
+GR-M-9215-M,Δήμαρχος Αχαρνών,mayor,current,GR-M-9215,9215,popular_direct_joint_list_leader,True,municipal
+GR-M-9216-C,Δημοτικό Συμβούλιο Βάρης – Βούλας – Βουλιαγμένης,municipal_council,current,GR-M-9216,9216,popular_list_election,False,municipal
+GR-M-9216-M,Δήμαρχος Βάρης – Βούλας – Βουλιαγμένης,mayor,current,GR-M-9216,9216,popular_direct_joint_list_leader,True,municipal
+GR-M-9217-C,Δημοτικό Συμβούλιο Διονύσου,municipal_council,current,GR-M-9217,9217,popular_list_election,False,municipal
+GR-M-9217-M,Δήμαρχος Διονύσου,mayor,current,GR-M-9217,9217,popular_direct_joint_list_leader,True,municipal
+GR-M-9218-C,Δημοτικό Συμβούλιο Κρωπίας,municipal_council,current,GR-M-9218,9218,popular_list_election,False,municipal
+GR-M-9218-M,Δήμαρχος Κρωπίας,mayor,current,GR-M-9218,9218,popular_direct_joint_list_leader,True,municipal
+GR-M-9219-C,Δημοτικό Συμβούλιο Λαυρεωτικής,municipal_council,current,GR-M-9219,9219,popular_list_election,False,municipal
+GR-M-9219-M,Δήμαρχος Λαυρεωτικής,mayor,current,GR-M-9219,9219,popular_direct_joint_list_leader,True,municipal
+GR-M-9220-C,Δημοτικό Συμβούλιο Μαραθώνος,municipal_council,current,GR-M-9220,9220,popular_list_election,False,municipal
+GR-M-9220-M,Δήμαρχος Μαραθώνος,mayor,current,GR-M-9220,9220,popular_direct_joint_list_leader,True,municipal
+GR-M-9221-C,Δημοτικό Συμβούλιο Μαρκοπούλου Μεσογαίας,municipal_council,current,GR-M-9221,9221,popular_list_election,False,municipal
+GR-M-9221-M,Δήμαρχος Μαρκοπούλου Μεσογαίας,mayor,current,GR-M-9221,9221,popular_direct_joint_list_leader,True,municipal
+GR-M-9222-C,Δημοτικό Συμβούλιο Παιανίας,municipal_council,current,GR-M-9222,9222,popular_list_election,False,municipal
+GR-M-9222-M,Δήμαρχος Παιανίας,mayor,current,GR-M-9222,9222,popular_direct_joint_list_leader,True,municipal
+GR-M-9223-C,Δημοτικό Συμβούλιο Παλλήνης,municipal_council,current,GR-M-9223,9223,popular_list_election,False,municipal
+GR-M-9223-M,Δήμαρχος Παλλήνης,mayor,current,GR-M-9223,9223,popular_direct_joint_list_leader,True,municipal
+GR-M-9224-C,Δημοτικό Συμβούλιο Ραφήνας – Πικερμίου,municipal_council,current,GR-M-9224,9224,popular_list_election,False,municipal
+GR-M-9224-M,Δήμαρχος Ραφήνας – Πικερμίου,mayor,current,GR-M-9224,9224,popular_direct_joint_list_leader,True,municipal
+GR-M-9225-C,Δημοτικό Συμβούλιο Σαρωνικού,municipal_council,current,GR-M-9225,9225,popular_list_election,False,municipal
+GR-M-9225-M,Δήμαρχος Σαρωνικού,mayor,current,GR-M-9225,9225,popular_direct_joint_list_leader,True,municipal
+GR-M-9226-C,Δημοτικό Συμβούλιο Σπάτων – Αρτέμιδος,municipal_council,current,GR-M-9226,9226,popular_list_election,False,municipal
+GR-M-9226-M,Δήμαρχος Σπάτων – Αρτέμιδος,mayor,current,GR-M-9226,9226,popular_direct_joint_list_leader,True,municipal
+GR-M-9227-C,Δημοτικό Συμβούλιο Ωρωπού,municipal_council,current,GR-M-9227,9227,popular_list_election,False,municipal
+GR-M-9227-M,Δήμαρχος Ωρωπού,mayor,current,GR-M-9227,9227,popular_direct_joint_list_leader,True,municipal
+GR-M-9228-C,Δημοτικό Συμβούλιο Ασπροπύργου,municipal_council,current,GR-M-9228,9228,popular_list_election,False,municipal
+GR-M-9228-M,Δήμαρχος Ασπροπύργου,mayor,current,GR-M-9228,9228,popular_direct_joint_list_leader,True,municipal
+GR-M-9229-C,Δημοτικό Συμβούλιο Ελευσίνας,municipal_council,current,GR-M-9229,9229,popular_list_election,False,municipal
+GR-M-9229-M,Δήμαρχος Ελευσίνας,mayor,current,GR-M-9229,9229,popular_direct_joint_list_leader,True,municipal
+GR-M-9230-C,Δημοτικό Συμβούλιο Μάνδρας – Ειδυλλίας,municipal_council,current,GR-M-9230,9230,popular_list_election,False,municipal
+GR-M-9230-M,Δήμαρχος Μάνδρας – Ειδυλλίας,mayor,current,GR-M-9230,9230,popular_direct_joint_list_leader,True,municipal
+GR-M-9231-C,Δημοτικό Συμβούλιο Μεγαρέων,municipal_council,current,GR-M-9231,9231,popular_list_election,False,municipal
+GR-M-9231-M,Δήμαρχος Μεγαρέων,mayor,current,GR-M-9231,9231,popular_direct_joint_list_leader,True,municipal
+GR-M-9232-C,Δημοτικό Συμβούλιο Φυλής,municipal_council,current,GR-M-9232,9232,popular_list_election,False,municipal
+GR-M-9232-M,Δήμαρχος Φυλής,mayor,current,GR-M-9232,9232,popular_direct_joint_list_leader,True,municipal
+GR-M-9233-C,Δημοτικό Συμβούλιο Άργους – Μυκηνών,municipal_council,current,GR-M-9233,9233,popular_list_election,False,municipal
+GR-M-9233-M,Δήμαρχος Άργους – Μυκηνών,mayor,current,GR-M-9233,9233,popular_direct_joint_list_leader,True,municipal
+GR-M-9234-C,Δημοτικό Συμβούλιο Επιδαύρου,municipal_council,current,GR-M-9234,9234,popular_list_election,False,municipal
+GR-M-9234-M,Δήμαρχος Επιδαύρου,mayor,current,GR-M-9234,9234,popular_direct_joint_list_leader,True,municipal
+GR-M-9235-C,Δημοτικό Συμβούλιο Ερμιονίδας,municipal_council,current,GR-M-9235,9235,popular_list_election,False,municipal
+GR-M-9235-M,Δήμαρχος Ερμιονίδας,mayor,current,GR-M-9235,9235,popular_direct_joint_list_leader,True,municipal
+GR-M-9236-C,Δημοτικό Συμβούλιο Ναυπλιέων,municipal_council,current,GR-M-9236,9236,popular_list_election,False,municipal
+GR-M-9236-M,Δήμαρχος Ναυπλιέων,mayor,current,GR-M-9236,9236,popular_direct_joint_list_leader,True,municipal
+GR-M-9237-C,Δημοτικό Συμβούλιο Βόρειας Κυνουρίας,municipal_council,current,GR-M-9237,9237,popular_list_election,False,municipal
+GR-M-9237-M,Δήμαρχος Βόρειας Κυνουρίας,mayor,current,GR-M-9237,9237,popular_direct_joint_list_leader,True,municipal
+GR-M-9238-C,Δημοτικό Συμβούλιο Γορτυνίας,municipal_council,current,GR-M-9238,9238,popular_list_election,False,municipal
+GR-M-9238-M,Δήμαρχος Γορτυνίας,mayor,current,GR-M-9238,9238,popular_direct_joint_list_leader,True,municipal
+GR-M-9239-C,Δημοτικό Συμβούλιο Μεγαλόπολης,municipal_council,current,GR-M-9239,9239,popular_list_election,False,municipal
+GR-M-9239-M,Δήμαρχος Μεγαλόπολης,mayor,current,GR-M-9239,9239,popular_direct_joint_list_leader,True,municipal
+GR-M-9240-C,Δημοτικό Συμβούλιο Νότιας Κυνουρίας,municipal_council,current,GR-M-9240,9240,popular_list_election,False,municipal
+GR-M-9240-M,Δήμαρχος Νότιας Κυνουρίας,mayor,current,GR-M-9240,9240,popular_direct_joint_list_leader,True,municipal
+GR-M-9241-C,Δημοτικό Συμβούλιο Τρίπολης,municipal_council,current,GR-M-9241,9241,popular_list_election,False,municipal
+GR-M-9241-M,Δήμαρχος Τρίπολης,mayor,current,GR-M-9241,9241,popular_direct_joint_list_leader,True,municipal
+GR-M-9242-C,Δημοτικό Συμβούλιο Βέλου – Βόχας,municipal_council,current,GR-M-9242,9242,popular_list_election,False,municipal
+GR-M-9242-M,Δήμαρχος Βέλου – Βόχας,mayor,current,GR-M-9242,9242,popular_direct_joint_list_leader,True,municipal
+GR-M-9243-C,Δημοτικό Συμβούλιο Κορινθίων,municipal_council,current,GR-M-9243,9243,popular_list_election,False,municipal
+GR-M-9243-M,Δήμαρχος Κορινθίων,mayor,current,GR-M-9243,9243,popular_direct_joint_list_leader,True,municipal
+GR-M-9244-C,Δημοτικό Συμβούλιο Λουτρακίου – Περαχώρας – Αγ. Θεοδώρων,municipal_council,current,GR-M-9244,9244,popular_list_election,False,municipal
+GR-M-9244-M,Δήμαρχος Λουτρακίου – Περαχώρας – Αγ. Θεοδώρων,mayor,current,GR-M-9244,9244,popular_direct_joint_list_leader,True,municipal
+GR-M-9245-C,Δημοτικό Συμβούλιο Νεμέας,municipal_council,current,GR-M-9245,9245,popular_list_election,False,municipal
+GR-M-9245-M,Δήμαρχος Νεμέας,mayor,current,GR-M-9245,9245,popular_direct_joint_list_leader,True,municipal
+GR-M-9246-C,Δημοτικό Συμβούλιο Ξυλοκάστρου – Ευρωστίνης,municipal_council,current,GR-M-9246,9246,popular_list_election,False,municipal
+GR-M-9246-M,Δήμαρχος Ξυλοκάστρου – Ευρωστίνης,mayor,current,GR-M-9246,9246,popular_direct_joint_list_leader,True,municipal
+GR-M-9247-C,Δημοτικό Συμβούλιο Σικυωνίων,municipal_council,current,GR-M-9247,9247,popular_list_election,False,municipal
+GR-M-9247-M,Δήμαρχος Σικυωνίων,mayor,current,GR-M-9247,9247,popular_direct_joint_list_leader,True,municipal
+GR-M-9248-C,Δημοτικό Συμβούλιο Ανατολικής Μάνης,municipal_council,current,GR-M-9248,9248,popular_list_election,False,municipal
+GR-M-9248-M,Δήμαρχος Ανατολικής Μάνης,mayor,current,GR-M-9248,9248,popular_direct_joint_list_leader,True,municipal
+GR-M-9249-C,Δημοτικό Συμβούλιο Ελαφονήσου,municipal_council,current,GR-M-9249,9249,popular_list_election,False,municipal
+GR-M-9249-M,Δήμαρχος Ελαφονήσου,mayor,current,GR-M-9249,9249,popular_direct_joint_list_leader,True,municipal
+GR-M-9250-C,Δημοτικό Συμβούλιο Ευρώτα,municipal_council,current,GR-M-9250,9250,popular_list_election,False,municipal
+GR-M-9250-M,Δήμαρχος Ευρώτα,mayor,current,GR-M-9250,9250,popular_direct_joint_list_leader,True,municipal
+GR-M-9251-C,Δημοτικό Συμβούλιο Μονεμβασίας,municipal_council,current,GR-M-9251,9251,popular_list_election,False,municipal
+GR-M-9251-M,Δήμαρχος Μονεμβασίας,mayor,current,GR-M-9251,9251,popular_direct_joint_list_leader,True,municipal
+GR-M-9252-C,Δημοτικό Συμβούλιο Σπάρτης,municipal_council,current,GR-M-9252,9252,popular_list_election,False,municipal
+GR-M-9252-M,Δήμαρχος Σπάρτης,mayor,current,GR-M-9252,9252,popular_direct_joint_list_leader,True,municipal
+GR-M-9253-C,Δημοτικό Συμβούλιο Δυτικής Μάνης,municipal_council,current,GR-M-9253,9253,popular_list_election,False,municipal
+GR-M-9253-M,Δήμαρχος Δυτικής Μάνης,mayor,current,GR-M-9253,9253,popular_direct_joint_list_leader,True,municipal
+GR-M-9254-C,Δημοτικό Συμβούλιο Καλαμάτας,municipal_council,current,GR-M-9254,9254,popular_list_election,False,municipal
+GR-M-9254-M,Δήμαρχος Καλαμάτας,mayor,current,GR-M-9254,9254,popular_direct_joint_list_leader,True,municipal
+GR-M-9255-C,Δημοτικό Συμβούλιο Μεσσήνης,municipal_council,current,GR-M-9255,9255,popular_list_election,False,municipal
+GR-M-9255-M,Δήμαρχος Μεσσήνης,mayor,current,GR-M-9255,9255,popular_direct_joint_list_leader,True,municipal
+GR-M-9256-C,Δημοτικό Συμβούλιο Οιχαλίας,municipal_council,current,GR-M-9256,9256,popular_list_election,False,municipal
+GR-M-9256-M,Δήμαρχος Οιχαλίας,mayor,current,GR-M-9256,9256,popular_direct_joint_list_leader,True,municipal
+GR-M-9257-C,Δημοτικό Συμβούλιο Πύλου – Νέστορος,municipal_council,current,GR-M-9257,9257,popular_list_election,False,municipal
+GR-M-9257-M,Δήμαρχος Πύλου – Νέστορος,mayor,current,GR-M-9257,9257,popular_direct_joint_list_leader,True,municipal
+GR-M-9258-C,Δημοτικό Συμβούλιο Τριφυλίας,municipal_council,current,GR-M-9258,9258,popular_list_election,False,municipal
+GR-M-9258-M,Δήμαρχος Τριφυλίας,mayor,current,GR-M-9258,9258,popular_direct_joint_list_leader,True,municipal
+GR-M-9259-C,Δημοτικό Συμβούλιο Ικαρίας,municipal_council,current,GR-M-9259,9259,popular_list_election,False,municipal
+GR-M-9259-M,Δήμαρχος Ικαρίας,mayor,current,GR-M-9259,9259,popular_direct_joint_list_leader,True,municipal
+GR-M-9260-C,Δημοτικό Συμβούλιο Φούρνων Κορσεών,municipal_council,current,GR-M-9260,9260,popular_list_election,False,municipal
+GR-M-9260-M,Δήμαρχος Φούρνων Κορσεών,mayor,current,GR-M-9260,9260,popular_direct_joint_list_leader,True,municipal
+GR-M-9261-C,Δημοτικό Συμβούλιο Μυτιλήνης,municipal_council,current,GR-M-9261,9261,popular_list_election,False,municipal
+GR-M-9261-M,Δήμαρχος Μυτιλήνης,mayor,current,GR-M-9261,9261,popular_direct_joint_list_leader,True,municipal
+GR-M-9262-C,Δημοτικό Συμβούλιο Αγίου Ευστρατίου,municipal_council,current,GR-M-9262,9262,popular_list_election,False,municipal
+GR-M-9262-M,Δήμαρχος Αγίου Ευστρατίου,mayor,current,GR-M-9262,9262,popular_direct_joint_list_leader,True,municipal
+GR-M-9263-C,Δημοτικό Συμβούλιο Λήμνου,municipal_council,current,GR-M-9263,9263,popular_list_election,False,municipal
+GR-M-9263-M,Δήμαρχος Λήμνου,mayor,current,GR-M-9263,9263,popular_direct_joint_list_leader,True,municipal
+GR-M-9264-C,Δημοτικό Συμβούλιο Ανατολικής Σάμου,municipal_council,current,GR-M-9264,9264,popular_list_election,False,municipal
+GR-M-9264-M,Δήμαρχος Ανατολικής Σάμου,mayor,current,GR-M-9264,9264,popular_direct_joint_list_leader,True,municipal
+GR-M-9265-C,Δημοτικό Συμβούλιο Οινουσσών,municipal_council,current,GR-M-9265,9265,popular_list_election,False,municipal
+GR-M-9265-M,Δήμαρχος Οινουσσών,mayor,current,GR-M-9265,9265,popular_direct_joint_list_leader,True,municipal
+GR-M-9266-C,Δημοτικό Συμβούλιο Χίου,municipal_council,current,GR-M-9266,9266,popular_list_election,False,municipal
+GR-M-9266-M,Δήμαρχος Χίου,mayor,current,GR-M-9266,9266,popular_direct_joint_list_leader,True,municipal
+GR-M-9267-C,Δημοτικό Συμβούλιο Ηρωικής Νήσου Ψαρών,municipal_council,current,GR-M-9267,9267,popular_list_election,False,municipal
+GR-M-9267-M,Δήμαρχος Ηρωικής Νήσου Ψαρών,mayor,current,GR-M-9267,9267,popular_direct_joint_list_leader,True,municipal
+GR-M-9268-C,Δημοτικό Συμβούλιο Άνδρου,municipal_council,current,GR-M-9268,9268,popular_list_election,False,municipal
+GR-M-9268-M,Δήμαρχος Άνδρου,mayor,current,GR-M-9268,9268,popular_direct_joint_list_leader,True,municipal
+GR-M-9269-C,Δημοτικό Συμβούλιο Ανάφης,municipal_council,current,GR-M-9269,9269,popular_list_election,False,municipal
+GR-M-9269-M,Δήμαρχος Ανάφης,mayor,current,GR-M-9269,9269,popular_direct_joint_list_leader,True,municipal
+GR-M-9270-C,Δημοτικό Συμβούλιο Θήρας,municipal_council,current,GR-M-9270,9270,popular_list_election,False,municipal
+GR-M-9270-M,Δήμαρχος Θήρας,mayor,current,GR-M-9270,9270,popular_direct_joint_list_leader,True,municipal
+GR-M-9271-C,Δημοτικό Συμβούλιο Ιητών,municipal_council,current,GR-M-9271,9271,popular_list_election,False,municipal
+GR-M-9271-M,Δήμαρχος Ιητών,mayor,current,GR-M-9271,9271,popular_direct_joint_list_leader,True,municipal
+GR-M-9272-C,Δημοτικό Συμβούλιο Σικίνου,municipal_council,current,GR-M-9272,9272,popular_list_election,False,municipal
+GR-M-9272-M,Δήμαρχος Σικίνου,mayor,current,GR-M-9272,9272,popular_direct_joint_list_leader,True,municipal
+GR-M-9273-C,Δημοτικό Συμβούλιο Φολεγάνδρου,municipal_council,current,GR-M-9273,9273,popular_list_election,False,municipal
+GR-M-9273-M,Δήμαρχος Φολεγάνδρου,mayor,current,GR-M-9273,9273,popular_direct_joint_list_leader,True,municipal
+GR-M-9274-C,Δημοτικό Συμβούλιο Αγαθονησίου,municipal_council,current,GR-M-9274,9274,popular_list_election,False,municipal
+GR-M-9274-M,Δήμαρχος Αγαθονησίου,mayor,current,GR-M-9274,9274,popular_direct_joint_list_leader,True,municipal
+GR-M-9275-C,Δημοτικό Συμβούλιο Αστυπάλαιας,municipal_council,current,GR-M-9275,9275,popular_list_election,False,municipal
+GR-M-9275-M,Δήμαρχος Αστυπάλαιας,mayor,current,GR-M-9275,9275,popular_direct_joint_list_leader,True,municipal
+GR-M-9276-C,Δημοτικό Συμβούλιο Καλυμνίων,municipal_council,current,GR-M-9276,9276,popular_list_election,False,municipal
+GR-M-9276-M,Δήμαρχος Καλυμνίων,mayor,current,GR-M-9276,9276,popular_direct_joint_list_leader,True,municipal
+GR-M-9277-C,Δημοτικό Συμβούλιο Λειψών,municipal_council,current,GR-M-9277,9277,popular_list_election,False,municipal
+GR-M-9277-M,Δήμαρχος Λειψών,mayor,current,GR-M-9277,9277,popular_direct_joint_list_leader,True,municipal
+GR-M-9278-C,Δημοτικό Συμβούλιο Λέρου,municipal_council,current,GR-M-9278,9278,popular_list_election,False,municipal
+GR-M-9278-M,Δήμαρχος Λέρου,mayor,current,GR-M-9278,9278,popular_direct_joint_list_leader,True,municipal
+GR-M-9279-C,Δημοτικό Συμβούλιο Πάτμου,municipal_council,current,GR-M-9279,9279,popular_list_election,False,municipal
+GR-M-9279-M,Δήμαρχος Πάτμου,mayor,current,GR-M-9279,9279,popular_direct_joint_list_leader,True,municipal
+GR-M-9280-C,Δημοτικό Συμβούλιο Καρπάθου,municipal_council,current,GR-M-9280,9280,popular_list_election,False,municipal
+GR-M-9280-M,Δήμαρχος Καρπάθου,mayor,current,GR-M-9280,9280,popular_direct_joint_list_leader,True,municipal
+GR-M-9281-C,Δημοτικό Συμβούλιο Ηρωικής Νήσου Κάσου,municipal_council,current,GR-M-9281,9281,popular_list_election,False,municipal
+GR-M-9281-M,Δήμαρχος Ηρωικής Νήσου Κάσου,mayor,current,GR-M-9281,9281,popular_direct_joint_list_leader,True,municipal
+GR-M-9282-C,Δημοτικό Συμβούλιο Κέας,municipal_council,current,GR-M-9282,9282,popular_list_election,False,municipal
+GR-M-9282-M,Δήμαρχος Κέας,mayor,current,GR-M-9282,9282,popular_direct_joint_list_leader,True,municipal
+GR-M-9283-C,Δημοτικό Συμβούλιο Κύθνου,municipal_council,current,GR-M-9283,9283,popular_list_election,False,municipal
+GR-M-9283-M,Δήμαρχος Κύθνου,mayor,current,GR-M-9283,9283,popular_direct_joint_list_leader,True,municipal
+GR-M-9284-C,Δημοτικό Συμβούλιο Κω,municipal_council,current,GR-M-9284,9284,popular_list_election,False,municipal
+GR-M-9284-M,Δήμαρχος Κω,mayor,current,GR-M-9284,9284,popular_direct_joint_list_leader,True,municipal
+GR-M-9285-C,Δημοτικό Συμβούλιο Νισύρου,municipal_council,current,GR-M-9285,9285,popular_list_election,False,municipal
+GR-M-9285-M,Δήμαρχος Νισύρου,mayor,current,GR-M-9285,9285,popular_direct_joint_list_leader,True,municipal
+GR-M-9286-C,Δημοτικό Συμβούλιο Κιμώλου,municipal_council,current,GR-M-9286,9286,popular_list_election,False,municipal
+GR-M-9286-M,Δήμαρχος Κιμώλου,mayor,current,GR-M-9286,9286,popular_direct_joint_list_leader,True,municipal
+GR-M-9287-C,Δημοτικό Συμβούλιο Μήλου,municipal_council,current,GR-M-9287,9287,popular_list_election,False,municipal
+GR-M-9287-M,Δήμαρχος Μήλου,mayor,current,GR-M-9287,9287,popular_direct_joint_list_leader,True,municipal
+GR-M-9288-C,Δημοτικό Συμβούλιο Σερίφου,municipal_council,current,GR-M-9288,9288,popular_list_election,False,municipal
+GR-M-9288-M,Δήμαρχος Σερίφου,mayor,current,GR-M-9288,9288,popular_direct_joint_list_leader,True,municipal
+GR-M-9289-C,Δημοτικό Συμβούλιο Σίφνου,municipal_council,current,GR-M-9289,9289,popular_list_election,False,municipal
+GR-M-9289-M,Δήμαρχος Σίφνου,mayor,current,GR-M-9289,9289,popular_direct_joint_list_leader,True,municipal
+GR-M-9290-C,Δημοτικό Συμβούλιο Μυκόνου,municipal_council,current,GR-M-9290,9290,popular_list_election,False,municipal
+GR-M-9290-M,Δήμαρχος Μυκόνου,mayor,current,GR-M-9290,9290,popular_direct_joint_list_leader,True,municipal
+GR-M-9291-C,Δημοτικό Συμβούλιο Αμοργού,municipal_council,current,GR-M-9291,9291,popular_list_election,False,municipal
+GR-M-9291-M,Δήμαρχος Αμοργού,mayor,current,GR-M-9291,9291,popular_direct_joint_list_leader,True,municipal
+GR-M-9292-C,Δημοτικό Συμβούλιο Νάξου & Μικρών Κυκλάδων,municipal_council,current,GR-M-9292,9292,popular_list_election,False,municipal
+GR-M-9292-M,Δήμαρχος Νάξου & Μικρών Κυκλάδων,mayor,current,GR-M-9292,9292,popular_direct_joint_list_leader,True,municipal
+GR-M-9293-C,Δημοτικό Συμβούλιο Αντιπάρου,municipal_council,current,GR-M-9293,9293,popular_list_election,False,municipal
+GR-M-9293-M,Δήμαρχος Αντιπάρου,mayor,current,GR-M-9293,9293,popular_direct_joint_list_leader,True,municipal
+GR-M-9294-C,Δημοτικό Συμβούλιο Πάρου,municipal_council,current,GR-M-9294,9294,popular_list_election,False,municipal
+GR-M-9294-M,Δήμαρχος Πάρου,mayor,current,GR-M-9294,9294,popular_direct_joint_list_leader,True,municipal
+GR-M-9295-C,Δημοτικό Συμβούλιο Μεγίστης,municipal_council,current,GR-M-9295,9295,popular_list_election,False,municipal
+GR-M-9295-M,Δήμαρχος Μεγίστης,mayor,current,GR-M-9295,9295,popular_direct_joint_list_leader,True,municipal
+GR-M-9296-C,Δημοτικό Συμβούλιο Ρόδου,municipal_council,current,GR-M-9296,9296,popular_list_election,False,municipal
+GR-M-9296-M,Δήμαρχος Ρόδου,mayor,current,GR-M-9296,9296,popular_direct_joint_list_leader,True,municipal
+GR-M-9297-C,Δημοτικό Συμβούλιο Σύμης,municipal_council,current,GR-M-9297,9297,popular_list_election,False,municipal
+GR-M-9297-M,Δήμαρχος Σύμης,mayor,current,GR-M-9297,9297,popular_direct_joint_list_leader,True,municipal
+GR-M-9298-C,Δημοτικό Συμβούλιο Τήλου,municipal_council,current,GR-M-9298,9298,popular_list_election,False,municipal
+GR-M-9298-M,Δήμαρχος Τήλου,mayor,current,GR-M-9298,9298,popular_direct_joint_list_leader,True,municipal
+GR-M-9299-C,Δημοτικό Συμβούλιο Χάλκης,municipal_council,current,GR-M-9299,9299,popular_list_election,False,municipal
+GR-M-9299-M,Δήμαρχος Χάλκης,mayor,current,GR-M-9299,9299,popular_direct_joint_list_leader,True,municipal
+GR-M-9300-C,Δημοτικό Συμβούλιο Σύρου – Ερμούπολης,municipal_council,current,GR-M-9300,9300,popular_list_election,False,municipal
+GR-M-9300-M,Δήμαρχος Σύρου – Ερμούπολης,mayor,current,GR-M-9300,9300,popular_direct_joint_list_leader,True,municipal
+GR-M-9301-C,Δημοτικό Συμβούλιο Τήνου,municipal_council,current,GR-M-9301,9301,popular_list_election,False,municipal
+GR-M-9301-M,Δήμαρχος Τήνου,mayor,current,GR-M-9301,9301,popular_direct_joint_list_leader,True,municipal
+GR-M-9302-C,Δημοτικό Συμβούλιο Αρχανών – Αστερουσίων,municipal_council,current,GR-M-9302,9302,popular_list_election,False,municipal
+GR-M-9302-M,Δήμαρχος Αρχανών – Αστερουσίων,mayor,current,GR-M-9302,9302,popular_direct_joint_list_leader,True,municipal
+GR-M-9303-C,Δημοτικό Συμβούλιο Βιάννου,municipal_council,current,GR-M-9303,9303,popular_list_election,False,municipal
+GR-M-9303-M,Δήμαρχος Βιάννου,mayor,current,GR-M-9303,9303,popular_direct_joint_list_leader,True,municipal
+GR-M-9304-C,Δημοτικό Συμβούλιο Γόρτυνας,municipal_council,current,GR-M-9304,9304,popular_list_election,False,municipal
+GR-M-9304-M,Δήμαρχος Γόρτυνας,mayor,current,GR-M-9304,9304,popular_direct_joint_list_leader,True,municipal
+GR-M-9305-C,Δημοτικό Συμβούλιο Ηρακλείου,municipal_council,current,GR-M-9305,9305,popular_list_election,False,municipal
+GR-M-9305-M,Δήμαρχος Ηρακλείου,mayor,current,GR-M-9305,9305,popular_direct_joint_list_leader,True,municipal
+GR-M-9306-C,Δημοτικό Συμβούλιο Μαλεβιζίου,municipal_council,current,GR-M-9306,9306,popular_list_election,False,municipal
+GR-M-9306-M,Δήμαρχος Μαλεβιζίου,mayor,current,GR-M-9306,9306,popular_direct_joint_list_leader,True,municipal
+GR-M-9307-C,Δημοτικό Συμβούλιο Μινώα Πεδιάδας,municipal_council,current,GR-M-9307,9307,popular_list_election,False,municipal
+GR-M-9307-M,Δήμαρχος Μινώα Πεδιάδας,mayor,current,GR-M-9307,9307,popular_direct_joint_list_leader,True,municipal
+GR-M-9308-C,Δημοτικό Συμβούλιο Φαιστού,municipal_council,current,GR-M-9308,9308,popular_list_election,False,municipal
+GR-M-9308-M,Δήμαρχος Φαιστού,mayor,current,GR-M-9308,9308,popular_direct_joint_list_leader,True,municipal
+GR-M-9309-C,Δημοτικό Συμβούλιο Χερσονήσου,municipal_council,current,GR-M-9309,9309,popular_list_election,False,municipal
+GR-M-9309-M,Δήμαρχος Χερσονήσου,mayor,current,GR-M-9309,9309,popular_direct_joint_list_leader,True,municipal
+GR-M-9310-C,Δημοτικό Συμβούλιο Αγίου Νικολάου,municipal_council,current,GR-M-9310,9310,popular_list_election,False,municipal
+GR-M-9310-M,Δήμαρχος Αγίου Νικολάου,mayor,current,GR-M-9310,9310,popular_direct_joint_list_leader,True,municipal
+GR-M-9311-C,Δημοτικό Συμβούλιο Ιεράπετρας,municipal_council,current,GR-M-9311,9311,popular_list_election,False,municipal
+GR-M-9311-M,Δήμαρχος Ιεράπετρας,mayor,current,GR-M-9311,9311,popular_direct_joint_list_leader,True,municipal
+GR-M-9312-C,Δημοτικό Συμβούλιο Οροπεδίου Λασιθίου,municipal_council,current,GR-M-9312,9312,popular_list_election,False,municipal
+GR-M-9312-M,Δήμαρχος Οροπεδίου Λασιθίου,mayor,current,GR-M-9312,9312,popular_direct_joint_list_leader,True,municipal
+GR-M-9313-C,Δημοτικό Συμβούλιο Σητείας,municipal_council,current,GR-M-9313,9313,popular_list_election,False,municipal
+GR-M-9313-M,Δήμαρχος Σητείας,mayor,current,GR-M-9313,9313,popular_direct_joint_list_leader,True,municipal
+GR-M-9314-C,Δημοτικό Συμβούλιο Αγίου Βασιλείου,municipal_council,current,GR-M-9314,9314,popular_list_election,False,municipal
+GR-M-9314-M,Δήμαρχος Αγίου Βασιλείου,mayor,current,GR-M-9314,9314,popular_direct_joint_list_leader,True,municipal
+GR-M-9315-C,Δημοτικό Συμβούλιο Αμαρίου,municipal_council,current,GR-M-9315,9315,popular_list_election,False,municipal
+GR-M-9315-M,Δήμαρχος Αμαρίου,mayor,current,GR-M-9315,9315,popular_direct_joint_list_leader,True,municipal
+GR-M-9316-C,Δημοτικό Συμβούλιο Ανωγείων,municipal_council,current,GR-M-9316,9316,popular_list_election,False,municipal
+GR-M-9316-M,Δήμαρχος Ανωγείων,mayor,current,GR-M-9316,9316,popular_direct_joint_list_leader,True,municipal
+GR-M-9317-C,Δημοτικό Συμβούλιο Μυλοποτάμου,municipal_council,current,GR-M-9317,9317,popular_list_election,False,municipal
+GR-M-9317-M,Δήμαρχος Μυλοποτάμου,mayor,current,GR-M-9317,9317,popular_direct_joint_list_leader,True,municipal
+GR-M-9318-C,Δημοτικό Συμβούλιο Ρεθύμνης,municipal_council,current,GR-M-9318,9318,popular_list_election,False,municipal
+GR-M-9318-M,Δήμαρχος Ρεθύμνης,mayor,current,GR-M-9318,9318,popular_direct_joint_list_leader,True,municipal
+GR-M-9319-C,Δημοτικό Συμβούλιο Αποκορώνου,municipal_council,current,GR-M-9319,9319,popular_list_election,False,municipal
+GR-M-9319-M,Δήμαρχος Αποκορώνου,mayor,current,GR-M-9319,9319,popular_direct_joint_list_leader,True,municipal
+GR-M-9320-C,Δημοτικό Συμβούλιο Γαύδου,municipal_council,current,GR-M-9320,9320,popular_list_election,False,municipal
+GR-M-9320-M,Δήμαρχος Γαύδου,mayor,current,GR-M-9320,9320,popular_direct_joint_list_leader,True,municipal
+GR-M-9321-C,Δημοτικό Συμβούλιο Καντάνου – Σελίνου,municipal_council,current,GR-M-9321,9321,popular_list_election,False,municipal
+GR-M-9321-M,Δήμαρχος Καντάνου – Σελίνου,mayor,current,GR-M-9321,9321,popular_direct_joint_list_leader,True,municipal
+GR-M-9322-C,Δημοτικό Συμβούλιο Κισσάμου,municipal_council,current,GR-M-9322,9322,popular_list_election,False,municipal
+GR-M-9322-M,Δήμαρχος Κισσάμου,mayor,current,GR-M-9322,9322,popular_direct_joint_list_leader,True,municipal
+GR-M-9323-C,Δημοτικό Συμβούλιο Πλατανιά,municipal_council,current,GR-M-9323,9323,popular_list_election,False,municipal
+GR-M-9323-M,Δήμαρχος Πλατανιά,mayor,current,GR-M-9323,9323,popular_direct_joint_list_leader,True,municipal
+GR-M-9324-C,Δημοτικό Συμβούλιο Σφακίων,municipal_council,current,GR-M-9324,9324,popular_list_election,False,municipal
+GR-M-9324-M,Δήμαρχος Σφακίων,mayor,current,GR-M-9324,9324,popular_direct_joint_list_leader,True,municipal
+GR-M-9325-C,Δημοτικό Συμβούλιο Χανίων,municipal_council,current,GR-M-9325,9325,popular_list_election,False,municipal
+GR-M-9325-M,Δήμαρχος Χανίων,mayor,current,GR-M-9325,9325,popular_direct_joint_list_leader,True,municipal
+GR-M-9326-C,Δημοτικό Συμβούλιο Βόρειας Κέρκυρας,municipal_council,current,GR-M-9326,9326,popular_list_election,False,municipal
+GR-M-9326-M,Δήμαρχος Βόρειας Κέρκυρας,mayor,current,GR-M-9326,9326,popular_direct_joint_list_leader,True,municipal
+GR-M-9327-C,Δημοτικό Συμβούλιο Νότιας Κέρκυρας,municipal_council,current,GR-M-9327,9327,popular_list_election,False,municipal
+GR-M-9327-M,Δήμαρχος Νότιας Κέρκυρας,mayor,current,GR-M-9327,9327,popular_direct_joint_list_leader,True,municipal
+GR-M-9328-C,Δημοτικό Συμβούλιο Ληξουρίου,municipal_council,current,GR-M-9328,9328,popular_list_election,False,municipal
+GR-M-9328-M,Δήμαρχος Ληξουρίου,mayor,current,GR-M-9328,9328,popular_direct_joint_list_leader,True,municipal
+GR-M-9329-C,Δημοτικό Συμβούλιο Σάμης,municipal_council,current,GR-M-9329,9329,popular_list_election,False,municipal
+GR-M-9329-M,Δήμαρχος Σάμης,mayor,current,GR-M-9329,9329,popular_direct_joint_list_leader,True,municipal
+GR-M-9330-C,Δημοτικό Συμβούλιο Βελβεντού,municipal_council,current,GR-M-9330,9330,popular_list_election,False,municipal
+GR-M-9330-M,Δήμαρχος Βελβεντού,mayor,current,GR-M-9330,9330,popular_direct_joint_list_leader,True,municipal
+GR-M-9331-C,Δημοτικό Συμβούλιο Δυτικής Λέσβου,municipal_council,current,GR-M-9331,9331,popular_list_election,False,municipal
+GR-M-9331-M,Δήμαρχος Δυτικής Λέσβου,mayor,current,GR-M-9331,9331,popular_direct_joint_list_leader,True,municipal
+GR-M-9332-C,Δημοτικό Συμβούλιο Δυτικής Σάμου,municipal_council,current,GR-M-9332,9332,popular_list_election,False,municipal
+GR-M-9332-M,Δήμαρχος Δυτικής Σάμου,mayor,current,GR-M-9332,9332,popular_direct_joint_list_leader,True,municipal
+GR-M-9069-PRE2019-C,Δημοτικό Συμβούλιο Σερβίων - Βελβεντού,municipal_council,historical,GR-M-9069-PRE2019,9069,popular_list_election,False,municipal
+GR-M-9069-PRE2019-M,Δήμαρχος Σερβίων - Βελβεντού,mayor,historical,GR-M-9069-PRE2019,9069,popular_direct_joint_list_leader,True,municipal
+GR-M-9118-PRE2019-C,Δημοτικό Συμβούλιο Κέρκυρας,municipal_council,historical,GR-M-9118-PRE2019,9118,popular_list_election,False,municipal
+GR-M-9118-PRE2019-M,Δήμαρχος Κέρκυρας,mayor,historical,GR-M-9118-PRE2019,9118,popular_direct_joint_list_leader,True,municipal
+GR-M-9120-PRE2019-C,Δημοτικό Συμβούλιο Κεφαλονιάς,municipal_council,historical,GR-M-9120-PRE2019,9120,popular_list_election,False,municipal
+GR-M-9120-PRE2019-M,Δήμαρχος Κεφαλονιάς,mayor,historical,GR-M-9120-PRE2019,9120,popular_direct_joint_list_leader,True,municipal
+GR-M-9261-PRE2019-C,Δημοτικό Συμβούλιο Λέσβου,municipal_council,historical,GR-M-9261-PRE2019,9261,popular_list_election,False,municipal
+GR-M-9261-PRE2019-M,Δήμαρχος Λέσβου,mayor,historical,GR-M-9261-PRE2019,9261,popular_direct_joint_list_leader,True,municipal
+GR-M-9264-PRE2019-C,Δημοτικό Συμβούλιο Σάμου,municipal_council,historical,GR-M-9264-PRE2019,9264,popular_list_election,False,municipal
+GR-M-9264-PRE2019-M,Δήμαρχος Σάμου,mayor,historical,GR-M-9264-PRE2019,9264,popular_direct_joint_list_leader,True,municipal
+GR-PARL,Βουλή των Ελλήνων,parliament,current,GR,,popular_list_election,False,national
+GR-PRES,Πρόεδρος της Ελληνικής Δημοκρατίας,president,current,GR,,parliamentary_indirect,False,national
+GR-EP,Ευρωπαϊκό Κοινοβούλιο — Ελλάδα,european_parliament,current,GR,,popular_list_election,False,other

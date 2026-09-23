@@ -1,0 +1,182 @@
+[
+  {
+    "example_id": "GR-A01",
+    "case": "Complete current register",
+    "expected": "693 current offices: 332 municipal pairs, 13 regional pairs and three national/European roles.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A02",
+    "case": "Historical retention",
+    "expected": "Exactly 10 historical rows, two for each of five abolished municipalities; no current duplicate pairs for abolished units.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A03",
+    "case": "Tier bijection",
+    "expected": "703 office IDs equal the 703 tier office IDs; all reviews are needs_review and production_accepted is false.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A04",
+    "case": "Independent municipality check",
+    "expected": "332 electoral register entries match 332 distinct TPD codes in the March 2026 Ministry PDF.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A05",
+    "case": "Homonymous municipalities",
+    "expected": "GR-M-9170 and GR-M-9305 remain distinct Ηρακλείου authorities in Attica and Crete.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A06",
+    "case": "Reused Lesbos code",
+    "expected": "GR-M-9261-PRE2019-C/M holds old Lesbos contests; GR-M-9261-C/M holds the post-reform Mytilene contests.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A07",
+    "case": "Seven new source IDs",
+    "expected": "Codes 9326–9332 have no fabricated 2010 or 2014 office events.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A08",
+    "case": "Full 2010 register",
+    "expected": "325 municipalities plus 13 regions each have first-round observations for their council/executive pair.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A09",
+    "case": "Full 2014 register",
+    "expected": "All 338 authorities are present, including Messini with an explicit unresolved hold.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A10",
+    "case": "Full 2019 register",
+    "expected": "All 345 authorities are present on the new territorial register; old names are not overwritten.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A11",
+    "case": "Full 2023 register",
+    "expected": "All 332 municipalities and 13 regions have candidate vectors; no alert-window filtering applies.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A12",
+    "case": "Actual runoffs only",
+    "expected": "There are 781 observed local/regional runoffs across the four archives. An unused B field cannot create one.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A13",
+    "case": "2023 runoff denominator",
+    "expected": "84 municipalities plus six regions have second-round returns, matching the Ministry runoff guide.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A14",
+    "case": "Shared ballot identity",
+    "expected": "Each first-round local observation has exactly two linked office projections; each runoff observation has one executive projection.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A15",
+    "case": "No independent-ballot inflation",
+    "expected": "14,004 result rows deduplicate to 8,021 source observations. Votes must not be summed across council and executive projections.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A16",
+    "case": "Council allocation scope",
+    "expected": "Council seats are event-level whole-contest allocations; a first-round candidate vote field does not make those first-round seats.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A17",
+    "case": "Cycle-specific seat fields",
+    "expected": "2019 AEdres is used directly; 2010/2014 add AEdres+BEdres; 2023 follows the archive rendering rule.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A18",
+    "case": "Executive seat null",
+    "expected": "Every mayor, regional-governor and presidential result has seats null/not_applicable.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A19",
+    "case": "Messini tie",
+    "expected": "Both 2014 runoff candidates have 9,236 votes; winner remains null and the published 17/33 council-seat allocation is flagged.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A20",
+    "case": "2019 regional reporting holds",
+    "expected": "All 13 reporting-station discrepancies are retained. The validator cannot turn a denominator discrepancy into certified completeness.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A21",
+    "case": "Presidential electorate",
+    "expected": "All GR-PRES events use electors=MPs; every presidential result share remains null.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A22",
+    "case": "2025 fourth ballot",
+    "expected": "12 February: Tasoulas 160, Giannitsis 34, Katseli 29, Kyriakou 14; 39 present-abstentions; 276 participating MPs; 24 absent.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A23",
+    "case": "2025 third ballot source priority",
+    "expected": "6 February original minutes record 160/34/40/14 plus 52 present-abstentions, including the declared full tally. A different editorial/live count is not substituted.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A24",
+    "case": "2000 presidential total",
+    "expected": "8 February original minutes record Stephanopoulos 269 and Kyrkos 10, plus 19 present-abstentions; a 265 editorial reprint is not used.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A25",
+    "case": "2014 unsuccessful ballots",
+    "expected": "Dimas records 160, then 168, then 168 across the three 2014 ballots; none is labelled a nationwide popular victory.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A26",
+    "case": "Separate 2023 parliamentary elections",
+    "expected": "21 May and 25 June are distinct national events. June source seats include SYRIZA 47 and KKE 21; the complete allocation totals 300.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A27",
+    "case": "2004 full national vector",
+    "expected": "17 published categories total 7,408,374 valid votes. The literal Christian-category count 3 is retained; missing shares and non-published seat counts stay null.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A28",
+    "case": "1993 lexical conflict",
+    "expected": "The English >313.001 cell remains raw in comparisons. The selected Greek table independently gives KKE 313,001, so no parser strips an unexplained symbol to manufacture a number.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A29",
+    "case": "EP treatment",
+    "expected": "2024 Ministry seats total 21, including ND 7. The 1981 event has no fabricated return rows; the outgoing 1979–1984 composition stays outside results.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GR-A30",
+    "case": "Audit and approval invariants",
+    "expected": "All 223 contract columns are mapped, every retained artifact is hashed, self-test corruptions are rejected, applied_changes=0 and all Justin approval boxes remain unchecked.",
+    "justin_approved": false
+  }
+]

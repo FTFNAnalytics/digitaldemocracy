@@ -1,0 +1,19 @@
+{
+  "validation": "PASS",
+  "applied_changes": 0,
+  "files_hashed": 2843,
+  "source_files": 2807,
+  "offices": 703,
+  "events": 2774,
+  "result_rows": 14004,
+  "underlying_observations": 8021,
+  "field_map_columns": 223,
+  "local_vectors": 1366,
+  "source_holds_preserved": 14,
+  "pdf_vote_checks": 43,
+  "presidential_pdf_vote_checks": 26,
+  "historical_national_pdf_vote_checks": 17,
+  "poison_cases_rejected": 3,
+  "all_approvals_unchecked": true,
+  "historical_numeric_coverage_complete": false
+}

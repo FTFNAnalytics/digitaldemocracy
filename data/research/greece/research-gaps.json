@@ -1,0 +1,102 @@
+[
+  {
+    "gap_id": "GR-G01",
+    "topic": "presidential_indirect_election",
+    "status": "open",
+    "scope": "1974, 1975, 1980, 1985, 1990, 1995",
+    "finding": "Official Presidency biographies identify outcomes, but do not provide every unsuccessful ballot, opponent or abstention. The 1974 interim election and 1975 date are year-precision; a term-start date is not substituted for an election date.",
+    "retained": "Six older cycle/outcome records; numeric support where present. Original parliamentary minutes supply all recorded candidate totals for 2000, 2005, 2010, 2014-15, 2020 and 2025.",
+    "needed": "Earlier authenticated parliamentary roll-call minutes; resolve 1975 date before increasing date precision.",
+    "prohibited_inference": "No popular national votes, turnout, first preferences, or invented opposition votes."
+  },
+  {
+    "gap_id": "GR-G02",
+    "topic": "regional_governors_and_councils",
+    "status": "open",
+    "scope": "All thirteen 2019 regional source vectors",
+    "finding": "ANumTm differs from configured CountTm. The archive does not establish here whether that difference means inactive polling-station configurations or missing returns. All candidate values are retained and reconcile to the published valid-vote total.",
+    "retained": "All 13 councils and 13 governors in all four cycles; source station counts and 13 explicit holds.",
+    "needed": "Reconcile each station-count denominator against the certified regional return.",
+    "prohibited_inference": "Do not label these snapshots fully certified solely because vote shares sum to 100."
+  },
+  {
+    "gap_id": "GR-G03",
+    "topic": "mayoral_direct_election",
+    "status": "open",
+    "scope": "Messini 2014, electoral code 9255",
+    "finding": "The published runoff has 9,236 votes for each candidate, WIN_ID=0, and only 17 of 33 council seats allocated in the source fields.",
+    "retained": "Both actual runoff tallies, all first-round candidates, published partial seats, and missing winner.",
+    "needed": "Obtain the court determination/recount and legally effective allocation as a separately sourced outcome.",
+    "prohibited_inference": "Do not choose the first row, rank, larger first-round tally, or current incumbent as the runoff winner."
+  },
+  {
+    "gap_id": "GR-G04",
+    "topic": "Kallikratis_Kleisthenis_succession",
+    "status": "partially_resolved",
+    "scope": "2010 architecture and 2019 five-to-twelve municipality reform",
+    "finding": "All 325 municipalities in 2010/2014 and all 332 in 2019/2023 are covered. Five abolished municipalities have historical council/mayor pairs. The 2019 Ministry circular supplies the named reform and effective dates.",
+    "retained": "10 historical offices, versioned source codes, contemporary registers, reform PDF. No successor edges are asserted.",
+    "needed": "A separate legal provision-level crosswalk for any requested territorial successor graph or pre-2010 municipality lineage.",
+    "prohibited_inference": "A reused code or matching name is not proof of unchanged boundaries; municipal districts are not automatically historical municipality offices."
+  },
+  {
+    "gap_id": "GR-G05",
+    "topic": "earlier_parliamentary_vote_vectors",
+    "status": "open",
+    "scope": "1974, 1977, 1981, 1985, June/November 1989, 1990, 1993, 1996, 2000",
+    "finding": "Parliament publishes seat-winning parties for these ten cycles; losing-party vote vectors are not represented as complete. Independents in November 1989 and 1990 have no published votes/shares in the selected compilation.",
+    "retained": "All 20 post-1974 parliamentary election cycles through June 2023; 300 published seats in each. Full national vote vectors for ten cycles from 2004 onward.",
+    "needed": "Recover and transcribe Ministry historical national totals for these ten cycles, then reconcile to the official valid-vote denominator.",
+    "prohibited_inference": "Do not infer missing party votes by subtracting rounded shares or treating omitted contestants as zero."
+  },
+  {
+    "gap_id": "GR-G06",
+    "topic": "European_Parliament",
+    "status": "open",
+    "scope": "1981 and the 1984-2009 archive series",
+    "finding": "1981 is an evidenced election-year event without an asserted return vector. Six later historical EP constitutive-session tables supply seats and some shares but no exact votes. Their other-parties category stays aggregated.",
+    "retained": "10 EP cycles including 2014/2019/2024 complete published Ministry party vectors. The 1979-1984 outgoing composition is retained outside election results.",
+    "needed": "Exact early EP national returns, including losing parties, date-level election evidence where only the year is retained, and candidate preferences if a person-level EP extension is requested.",
+    "prohibited_inference": "An outgoing parliamentary composition is not a 1981 election return. Never convert a rounded share to an exact vote count."
+  },
+  {
+    "gap_id": "GR-G07",
+    "topic": "source_finality",
+    "status": "open",
+    "scope": "Archive snapshots generally",
+    "finding": "An official host, an archive timestamp, and 100% arithmetic reconciliation are not interchangeable with a court-certified return. The 2023 portal describes court-based adjustments; it does not supply every underlying judgment here.",
+    "retained": "Raw source flags/timestamps, preliminary holds, 2023 court-reconciled publication note, and otherwise unknown legal_outcome.",
+    "needed": "Link certification, recount, annulment and repeat decisions at authority/cycle level before treating all values as final.",
+    "prohibited_inference": "Do not relabel every archived result certified, or silently overwrite one snapshot with another."
+  },
+  {
+    "gap_id": "GR-G08",
+    "topic": "pre_2010_municipal_history",
+    "status": "open",
+    "scope": "Kapodistrias and earlier municipal elections",
+    "finding": "The present extraction starts with the Kallikratis 2010 election. A nationwide pre-2010 historical office register and result transcription are not supplied.",
+    "retained": "No invented current twin offices or guessed merger links. Only the five abolished municipalities directly identified by the retained 2019 reform are historical office rows.",
+    "needed": "Recover the earlier Ministry electoral archive and territorial/legal register, then add source-identified historical offices and their own contests.",
+    "prohibited_inference": "Do not project the current 332 municipality identities backward into pre-2010 elections."
+  },
+  {
+    "gap_id": "GR-G09",
+    "topic": "party_and_person_identity",
+    "status": "review_required",
+    "scope": "All cycles",
+    "finding": "Source list labels and candidate spellings are retained, but canonical party aliases and cross-cycle person identifiers are not asserted. Municipal joint-ticket totals are not personal preference marks for individual council candidates.",
+    "retained": "8,021 distinct source result observations with scoped codes and 14,004 explicit office projections.",
+    "needed": "Human-reviewed entity mapping if later requested; separate candidate-preference extraction for individual seat-holder analysis.",
+    "prohibited_inference": "Do not collapse similarly named local slates, coalition successors, or people by fuzzy name matching."
+  },
+  {
+    "gap_id": "GR-G10",
+    "topic": "retrieval_and_original_bytes",
+    "status": "open",
+    "scope": "Legacy archives and 2014 date circular",
+    "finding": "Some legacy Ministry hosts returned HTTP 502; several Ministry pages and the original 2014 date PDF returned HTTP 403 to the direct client. The date circular was readable through the web retrieval service.",
+    "retained": "All selected source bytes are hashed. One explicitly labelled web-extract JSON preserves the retrieved text of circular 19011/11-05-2014; its hash is not represented as a hash of the unavailable original PDF.",
+    "needed": "Recover original inaccessible materials when the public archives respond; do not interpret retrieval failure as absence of an election.",
+    "prohibited_inference": "No fabricated original-file digest, HTTP success status, or claims that an inaccessible archive contains no data."
+  }
+]

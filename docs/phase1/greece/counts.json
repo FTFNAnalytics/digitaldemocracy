@@ -1,0 +1,75 @@
+{
+  "applied_changes": 0,
+  "current_offices": 693,
+  "historical_offices": 10,
+  "office_rows": 703,
+  "geography_rows": 351,
+  "events": 2774,
+  "proceedings": 3555,
+  "result_rows": 14004,
+  "underlying_result_observations": 8021,
+  "current_direct_executives": 345,
+  "historical_direct_executives": 5,
+  "current_local_councils": 332,
+  "current_regional_councils": 13,
+  "current_mayors": 332,
+  "current_governors": 13,
+  "current_councils_plus_parliament": 346,
+  "historical_councils": 5,
+  "indirect_presidential_offices": 1,
+  "EP_offices": 1,
+  "draft_tier_histogram_all": {
+    "regional": 26,
+    "municipal": 674,
+    "national": 2,
+    "other": 1
+  },
+  "draft_tier_histogram_current": {
+    "regional": 26,
+    "municipal": 664,
+    "national": 2,
+    "other": 1
+  },
+  "source_files": 2807,
+  "local_authority_cycle_vectors": 1366,
+  "local_runoffs": 781,
+  "source_holds": 14,
+  "production_accepted": false,
+  "all_approvals_checked": false,
+  "current_register_complete": true,
+  "historical_numeric_coverage_complete": false,
+  "coverage_by_cycle": {
+    "2010": {
+      "authorities": 338,
+      "municipalities": 325,
+      "regions": 13,
+      "runoffs": 232,
+      "candidates_round1": 1413,
+      "candidates_round2": 464
+    },
+    "2014": {
+      "authorities": 338,
+      "municipalities": 325,
+      "regions": 13,
+      "runoffs": 223,
+      "candidates_round1": 1545,
+      "candidates_round2": 446
+    },
+    "2019": {
+      "authorities": 345,
+      "municipalities": 332,
+      "regions": 13,
+      "runoffs": 236,
+      "candidates_round1": 1736,
+      "candidates_round2": 472
+    },
+    "2023": {
+      "authorities": 345,
+      "municipalities": 332,
+      "regions": 13,
+      "runoffs": 90,
+      "candidates_round1": 1289,
+      "candidates_round2": 180
+    }
+  }
+}

@@ -1,0 +1,124 @@
+[
+  {
+    "period": "1979-1984",
+    "scope": "outgoing_parliament_NOT_1981_election_return",
+    "source_path": "sources/results.elections.europa.eu/en/national-results/greece/1979-1984/outgoing-parliament/index.html",
+    "observations": [
+      {
+        "event_key": "GR-EP::1979",
+        "label": "PASOK",
+        "candidate": null,
+        "votes": null,
+        "share": null,
+        "seats": 10,
+        "source_path": "sources/results.elections.europa.eu/en/national-results/greece/1979-1984/outgoing-parliament/index.html",
+        "locator": "CSS table.breakdown-chart--table tbody/tr[0]",
+        "raw_cells": [
+          "PASOK",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "10"
+        ],
+        "entry_kind": "party"
+      },
+      {
+        "event_key": "GR-EP::1979",
+        "label": "ND",
+        "candidate": null,
+        "votes": null,
+        "share": null,
+        "seats": 8,
+        "source_path": "sources/results.elections.europa.eu/en/national-results/greece/1979-1984/outgoing-parliament/index.html",
+        "locator": "CSS table.breakdown-chart--table tbody/tr[1]",
+        "raw_cells": [
+          "ND",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "8"
+        ],
+        "entry_kind": "party"
+      },
+      {
+        "event_key": "GR-EP::1979",
+        "label": "KKE",
+        "candidate": null,
+        "votes": null,
+        "share": null,
+        "seats": 4,
+        "source_path": "sources/results.elections.europa.eu/en/national-results/greece/1979-1984/outgoing-parliament/index.html",
+        "locator": "CSS table.breakdown-chart--table tbody/tr[2]",
+        "raw_cells": [
+          "KKE",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "4"
+        ],
+        "entry_kind": "party"
+      },
+      {
+        "event_key": "GR-EP::1979",
+        "label": "KO.DI.SO",
+        "candidate": null,
+        "votes": null,
+        "share": null,
+        "seats": 1,
+        "source_path": "sources/results.elections.europa.eu/en/national-results/greece/1979-1984/outgoing-parliament/index.html",
+        "locator": "CSS table.breakdown-chart--table tbody/tr[3]",
+        "raw_cells": [
+          "KO.DI.SO",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "1"
+        ],
+        "entry_kind": "party"
+      },
+      {
+        "event_key": "GR-EP::1979",
+        "label": "KP",
+        "candidate": null,
+        "votes": null,
+        "share": null,
+        "seats": 1,
+        "source_path": "sources/results.elections.europa.eu/en/national-results/greece/1979-1984/outgoing-parliament/index.html",
+        "locator": "CSS table.breakdown-chart--table tbody/tr[4]",
+        "raw_cells": [
+          "KP",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "1"
+        ],
+        "entry_kind": "party"
+      }
+    ]
+  }
+]
