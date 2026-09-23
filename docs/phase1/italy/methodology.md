@@ -1,0 +1,21 @@
+# Italy — collection and extraction
+
+The reference date is 23 September 2026. ISTAT SITUAS report 61 supplies the full current territorial roster. The earlier CSV snapshot has 7,896 units and is excluded; the February workbook is a comparator, while September SITUAS controls the current name. Report 129 supplies official changes. Only explicit ES extinctions create historic-only communes and territorial relations.
+
+Public Ministry files were obtained through their published dati.gov.it viewer where the direct Ministry endpoint was unavailable. Both published URL lineage and viewer recovery URLs are retained. This is a public data-viewer response, not a reconstructed return. File headers, dates and body content are checked independently of filenames. The advertised June 2024 municipal file fails that check and is quarantined in full.
+
+CSV encodings are UTF-8 where valid and Windows-1252 where supplied by the publisher. Semicolon delimiters, original labels and integer literals are preserved. Candidate totals repeated next to coalition lists are deduplicated only when the same event/reporting unit/name and value agree; no inconsistent totals are averaged. Source metadata and list/candidate votes are kept as different measures. A single office event may therefore have thousands of reporting units and hundreds of thousands of result observations; those are not separate elections.
+
+EP JSON party codes are joined only to the corresponding vintage's official party metadata. National party shares/seats do not supply raw vote totals. Earlier EP cycles retain year-only precision. The 2024 domestic municipal source is additional lower-grain evidence, not a second national total.
+
+Quirinale tables provide winning presidential assembly ballots only. Published blank/dispersed-paper categories are metrics, not candidates. No missing preliminary ballot, denominator or popular vote is generated.
+
+Bolzano's 17 official council archive PDFs are extracted as printed party-vote/share/seat rows. Older pages use horizontal word positions to resolve wrapped labels; the 2023 format has a separate block layout. A printed dash is null. Printed totals are metric rows. Seven vote-total arithmetic discrepancies remain source observations with an explicit audit flag; the source is never repaired by subtraction or proportional scaling. Arithmetic audit sums are validation calculations, not newly sourced votes.
+
+The TAA index supplies 282 municipality document records, of which 281 have retained PDF attachments. Layout-specific extraction distinguishes an explicit joint list/mayor table, separate list/mayor columns, and a mayoral runoff table. Repeated list context at the runoff can supply final seats to the first-round council event, never new second-round list votes. Small Bolzano composition tables do not supply full mayor candidate breakdowns. The source line, numeric tail, page, list number and wrapped text remain in raw observations. Council capacity is recorded as a metric rather than added to party seat allocations. Council-member preference rosters and incumbent composition are retained in the raw PDFs but not all normalized.
+
+Firenze data retain the precinct grain and separate municipal/quartiere council and executive measures. Publication timestamps remain raw timestamps, separate from the sourced June 8–9 poll. A blank list-vote cell remains null. Candidate-only subset votes are not added again to candidate totals. The municipal mayoral runoff was not collected.
+
+Research scripts generated documentary files only. No importer, database, VPS, UI or repository change was made. The supplied standalone validator reads files, checks referential integrity and hashes, and reports known source discrepancies; it cannot certify election law compliance or close missing research. Large result data use gzip JSON Lines for reliable distribution. Python's standard library can stream them without third-party dependencies.
+
+Run `python validate.py` from the extracted pack, or give the absolute validator path. The command is read-only by default and validates all manifest entries. ZIP integrity is independently checked with `sha256sum -c Italy_Atlas_Prompt_AT.zip.sha256` from the directory containing the ZIP and sidecar. These checks establish artifact integrity, not approval or historical completeness.
