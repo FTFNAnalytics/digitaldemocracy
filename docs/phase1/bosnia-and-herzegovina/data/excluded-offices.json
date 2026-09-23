@@ -1,0 +1,67 @@
+[
+  {
+    "name": "House of Peoples of the Parliamentary Assembly of Bosnia and Herzegovina",
+    "reason": "indirectly composed; not represented as a direct nationwide popular lower-house office",
+    "source_ids": [
+      "BA-S21"
+    ]
+  },
+  {
+    "name": "House of Peoples of the Parliament of the Federation of Bosnia and Herzegovina",
+    "reason": "indirectly elected from cantonal assemblies",
+    "source_ids": [
+      "BA-S20"
+    ]
+  },
+  {
+    "name": "Council of Peoples of Republika Srpska",
+    "reason": "indirectly elected",
+    "source_ids": [
+      "BA-S21"
+    ]
+  },
+  {
+    "name": "President and Vice-Presidents of the Federation of Bosnia and Herzegovina",
+    "reason": "not a direct popular office in the CEC direct-election calls; excluded rather than fabricated",
+    "source_ids": [
+      "BA-S16",
+      "BA-S20"
+    ]
+  },
+  {
+    "name": "Mayor of Sarajevo",
+    "reason": "elected by Sarajevo City Council, not directly by voters",
+    "source_ids": [
+      "BA-S10"
+    ]
+  },
+  {
+    "name": "Mayor of Mostar",
+    "reason": "council-selected/indirect; no direct popular office row",
+    "source_ids": [
+      "BA-S10"
+    ]
+  },
+  {
+    "name": "Mayor of Brčko District",
+    "reason": "assembly-selected/indirect; no direct popular office row",
+    "source_ids": [
+      "BA-S10"
+    ]
+  },
+  {
+    "name": "Cantonal prime ministers/governments",
+    "reason": "no direct popular footing in the direct-election calls; not invented"
+  },
+  {
+    "name": "Council of Ministers / state prime-minister equivalent",
+    "reason": "not a separate direct popular office; not invented"
+  },
+  {
+    "name": "European Parliament delegation",
+    "reason": "Bosnia and Herzegovina is an EU candidate country, not a member state; zero EP offices",
+    "source_ids": [
+      "BA-S19"
+    ]
+  }
+]

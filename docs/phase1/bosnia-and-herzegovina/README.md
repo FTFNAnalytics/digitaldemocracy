@@ -1,5 +1,25 @@
-# Bosnia and Herzegovina Prompt O tiers and field map
+# Bosnia and Herzegovina — Prompt AW full office register + historic contests
 
-Albania remains Phase 1 storage proof. Andorra is Europe #2 field map. Alderney is Europe #3 field map. Armenia is Europe #4 field map. Austria is Prompt N (2,034 municipal / 4 regional; Atlas importer waits). Bosnia and Herzegovina is Prompt O (**all 13 regional**: 10 cantonal assemblies + Federation House of Representatives + RS National Assembly + RS President). Mapping is **Done**; the Atlas importer is **landed** (`ATLAS_IMPORT_SCOPE=bosnia`). The Bosnia country package is on main at `data/countries/bosnia-and-herzegovina/` (PR #15 merge `33454ab829dbb46b101ce0dc8095e062d843edf9`). Approved tier bytes at `schemas/atlas/tiers/bosnia-and-herzegovina.json` are `2ff154bf5c47e46c1a13385690466ee11e6b25f9ff5465384b5ce5570d429501` (predecessor draft `3d0be674f3d5b77b3a92362b82815d7bd3305473820e3279999fc82e5f3c51c1`). Justin approved 2026-09-17 (America/Edmonton). Open research notes remain: RS presidential replacement/repeat (`BA-G`), governing coalition histories, calendar certainty on 2026-10-04, and no Brčko/municipal offices in the register (do not invent). On a VPS, import this lineage with `ATLAS_IMPORT_SCOPE=bosnia` only — do not use `ATLAS_IMPORT_SCOPE=all`.
+Research/documentation review pack. **`applied_changes=0`**. No importer/SQLite/VPS/UI/repository changes. All Justin approvals remain unchecked.
 
-Start with [Bosnia_Field_Map.md](Bosnia_Field_Map.md), then [Bosnia_Identity_Rules.md](Bosnia_Identity_Rules.md), [Bosnia_Acceptance_Examples.md](Bosnia_Acceptance_Examples.md), and [Prompt_O_Tiers_Field_Map_and_CI.md](Prompt_O_Tiers_Field_Map_and_CI.md). Acceptance receipt: [Prompt_O_Bosnia_Tiers_Accepted.md](Prompt_O_Bosnia_Tiers_Accepted.md).
+## Pack counts
+- Current offices: **306**
+- Historical-only offices: **40**
+- Events: **937**
+- Result-state rows: **918**
+- Prior Prompt O detailed numeric rows preserved by immutable reference: **749**
+- Draft tiers: **municipal 327 / regional 15 / national 4**
+- Current direct executive/member offices: **148**
+- Current councils/chambers/assemblies: **158**
+- State/entity/canton/municipal-local: **4 / 5 / 10 / 287**
+- European Parliament offices: **0**
+
+Start with `JUSTIN_REPORT.md` and `docs/Bosnia_Full_Register_Report.md`.
+
+### Important result-depth qualification
+The pack now closes the **office and contest-register** gap left by Prompt O. Every completed/annulled contest has a result-state record bound to an official result publication. Prompt O also already contained **749 detailed numeric vote/share/seat rows** for 39 entity/canton histories; AW preserves them by immutable blob/table hashes and an old→AW office crosswalk in `data/prompt-o-detailed-results-reference.json`. Exhaustive candidate/list transcription outside that retained set is not claimed; missing numeric cells remain explicit `NULL/not_transcribed`. See BA-AW-G01.
+
+Run `python validate.py` from the pack root. The validator checks the 20-table/223-column contract, office/tier equality, current and historical counts, local-cycle arithmetic, the 2026 called events, zero EP offices, excluded indirect executives, missing-not-zero semantics, approvals and hashes.
+
+### 2024 mayor-count discrepancy
+CEC source material is internally inconsistent: the 8 May English call page lists 31 city mayors while also saying 143 total city/municipal mayors; the 4 October basic-information page lists 32 city mayors and 143 total. AW does not manufacture an unidentified direct office to force the aggregate. See BA-AW-G09.

@@ -1,0 +1,67 @@
+[
+  {
+    "scope": "general",
+    "cycle": 2014,
+    "event_count": 19,
+    "source_ids": [
+      "BA-S25"
+    ],
+    "publication_state": "confirmed",
+    "notes": "CEC confirmed-results archive; detailed numeric transcription in AW remains partial."
+  },
+  {
+    "scope": "general",
+    "cycle": 2018,
+    "event_count": 19,
+    "source_ids": [
+      "BA-S24"
+    ],
+    "publication_state": "confirmed_with_supplemental_mandates",
+    "notes": "Two mandates noted for later supplemental allocation; no invented allocation."
+  },
+  {
+    "scope": "general",
+    "cycle": 2022,
+    "event_count": 19,
+    "source_ids": [
+      "BA-S14",
+      "BA-S15"
+    ],
+    "publication_state": "confirmed",
+    "notes": "RS President/VP determination has separate recount-era source."
+  },
+  {
+    "scope": "local",
+    "cycle": 2016,
+    "event_count": 287,
+    "source_ids": [
+      "BA-S05",
+      "BA-S06"
+    ],
+    "publication_state": "confirmed_with_stolac_repeat",
+    "notes": "Original Stolac council/mayor events retained annulled; repeat is separate."
+  },
+  {
+    "scope": "local",
+    "cycle": 2020,
+    "event_count": 287,
+    "source_ids": [
+      "BA-S22",
+      "BA-S07"
+    ],
+    "publication_state": "confirmed_with_mostar_and_repeat_sequences",
+    "notes": "Main results, Mostar special results, Srebrenica/Doboj sequence and indirect bodies remain distinct evidence contexts."
+  },
+  {
+    "scope": "local",
+    "cycle": 2024,
+    "event_count": 287,
+    "source_ids": [
+      "BA-S23",
+      "BA-S08",
+      "BA-S09"
+    ],
+    "publication_state": "confirmed_in_stages",
+    "notes": "Direct results confirmed in CEC stages dated 2024-11-05 and 2024-11-15; indirect Sarajevo/East Sarajevo bodies confirmed in 2025."
+  }
+]
