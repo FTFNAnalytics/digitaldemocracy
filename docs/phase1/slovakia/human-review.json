@@ -1,0 +1,719 @@
+{
+  "status": "draft_for_human_review",
+  "pack_approval_required": true,
+  "focused_review_count": 79,
+  "applied_changes": 0,
+  "rows": [
+    {
+      "office_id": "SK-528595-C",
+      "classification_json_pointer": "/classifications/4868",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-528595-M",
+      "classification_json_pointer": "/classifications/4869",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529311-C",
+      "classification_json_pointer": "/classifications/5010",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529311-M",
+      "classification_json_pointer": "/classifications/5011",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529320-C",
+      "classification_json_pointer": "/classifications/5012",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529320-M",
+      "classification_json_pointer": "/classifications/5013",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529338-C",
+      "classification_json_pointer": "/classifications/5014",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529338-M",
+      "classification_json_pointer": "/classifications/5015",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529346-C",
+      "classification_json_pointer": "/classifications/5016",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529346-M",
+      "classification_json_pointer": "/classifications/5017",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529354-C",
+      "classification_json_pointer": "/classifications/5018",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529354-M",
+      "classification_json_pointer": "/classifications/5019",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529362-C",
+      "classification_json_pointer": "/classifications/5020",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529362-M",
+      "classification_json_pointer": "/classifications/5021",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529371-C",
+      "classification_json_pointer": "/classifications/5022",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529371-M",
+      "classification_json_pointer": "/classifications/5023",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529389-C",
+      "classification_json_pointer": "/classifications/5024",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529389-M",
+      "classification_json_pointer": "/classifications/5025",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529397-C",
+      "classification_json_pointer": "/classifications/5026",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529397-M",
+      "classification_json_pointer": "/classifications/5027",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529401-C",
+      "classification_json_pointer": "/classifications/5028",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529401-M",
+      "classification_json_pointer": "/classifications/5029",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529419-C",
+      "classification_json_pointer": "/classifications/5030",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529419-M",
+      "classification_json_pointer": "/classifications/5031",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529427-C",
+      "classification_json_pointer": "/classifications/5032",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529427-M",
+      "classification_json_pointer": "/classifications/5033",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529435-C",
+      "classification_json_pointer": "/classifications/5034",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529435-M",
+      "classification_json_pointer": "/classifications/5035",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529443-C",
+      "classification_json_pointer": "/classifications/5036",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529443-M",
+      "classification_json_pointer": "/classifications/5037",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529460-C",
+      "classification_json_pointer": "/classifications/5038",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529460-M",
+      "classification_json_pointer": "/classifications/5039",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529494-C",
+      "classification_json_pointer": "/classifications/5040",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-529494-M",
+      "classification_json_pointer": "/classifications/5041",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598119-C",
+      "classification_json_pointer": "/classifications/5800",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598119-M",
+      "classification_json_pointer": "/classifications/5801",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598127-C",
+      "classification_json_pointer": "/classifications/5802",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598127-M",
+      "classification_json_pointer": "/classifications/5803",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598151-C",
+      "classification_json_pointer": "/classifications/5804",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598151-M",
+      "classification_json_pointer": "/classifications/5805",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598186-C",
+      "classification_json_pointer": "/classifications/5806",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598186-M",
+      "classification_json_pointer": "/classifications/5807",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598194-C",
+      "classification_json_pointer": "/classifications/5808",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598194-M",
+      "classification_json_pointer": "/classifications/5809",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598208-C",
+      "classification_json_pointer": "/classifications/5810",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598208-M",
+      "classification_json_pointer": "/classifications/5811",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598216-C",
+      "classification_json_pointer": "/classifications/5812",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598216-M",
+      "classification_json_pointer": "/classifications/5813",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598224-C",
+      "classification_json_pointer": "/classifications/5814",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598224-M",
+      "classification_json_pointer": "/classifications/5815",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598682-C",
+      "classification_json_pointer": "/classifications/5816",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-598682-M",
+      "classification_json_pointer": "/classifications/5817",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599018-C",
+      "classification_json_pointer": "/classifications/5818",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599018-M",
+      "classification_json_pointer": "/classifications/5819",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599093-C",
+      "classification_json_pointer": "/classifications/5820",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599093-M",
+      "classification_json_pointer": "/classifications/5821",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599786-C",
+      "classification_json_pointer": "/classifications/5828",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599786-M",
+      "classification_json_pointer": "/classifications/5829",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599794-C",
+      "classification_json_pointer": "/classifications/5830",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599794-M",
+      "classification_json_pointer": "/classifications/5831",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599816-C",
+      "classification_json_pointer": "/classifications/5832",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599816-M",
+      "classification_json_pointer": "/classifications/5833",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599824-C",
+      "classification_json_pointer": "/classifications/5834",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599824-M",
+      "classification_json_pointer": "/classifications/5835",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599841-C",
+      "classification_json_pointer": "/classifications/5836",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599841-M",
+      "classification_json_pointer": "/classifications/5837",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599859-C",
+      "classification_json_pointer": "/classifications/5838",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599859-M",
+      "classification_json_pointer": "/classifications/5839",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599875-C",
+      "classification_json_pointer": "/classifications/5840",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599875-M",
+      "classification_json_pointer": "/classifications/5841",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599883-C",
+      "classification_json_pointer": "/classifications/5842",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599883-M",
+      "classification_json_pointer": "/classifications/5843",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599891-C",
+      "classification_json_pointer": "/classifications/5844",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599891-M",
+      "classification_json_pointer": "/classifications/5845",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599913-C",
+      "classification_json_pointer": "/classifications/5846",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599913-M",
+      "classification_json_pointer": "/classifications/5847",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599972-C",
+      "classification_json_pointer": "/classifications/5848",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-599972-M",
+      "classification_json_pointer": "/classifications/5849",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "city_part_tier_policy"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "SK-EP",
+      "classification_json_pointer": "/classifications/5870",
+      "classification_sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+      "categories": [
+        "ep_delegation_policy"
+      ],
+      "proposed_changes": []
+    }
+  ]
+}
