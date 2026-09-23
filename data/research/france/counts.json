@@ -1,0 +1,52 @@
+{
+  "current_offices": 35112,
+  "historical_offices": 2738,
+  "office_rows": 37850,
+  "events": 119554,
+  "reporting_units": 173409,
+  "results": 1193657,
+  "current_by_type": {
+    "municipal_council": 34952,
+    "departmental_council": 95,
+    "single_territorial_assembly": 3,
+    "metropolitan_council": 1,
+    "regional_council": 14,
+    "arrondissement_or_sector_council": 34,
+    "overseas_territorial_assembly": 5,
+    "new_caledonia_congress": 1,
+    "provincial_assembly": 3,
+    "national_lower_house": 1,
+    "national_upper_house": 1,
+    "president": 1,
+    "european_parliament_delegation": 1
+  },
+  "historical_by_type": {
+    "municipal_council": 2719,
+    "regional_council": 18,
+    "single_territorial_assembly": 1
+  },
+  "direct_executive_current": 1,
+  "draft_tier_histogram": {
+    "4": 37705,
+    "3": 96,
+    "2": 45,
+    "1": 4
+  },
+  "current_overseas_offices": 228,
+  "municipal_councils": 34952,
+  "cog_COM_units": 34875,
+  "additional_COM_municipalities": 83,
+  "appointed_commune_exclusions": 6,
+  "issues": 74,
+  "result_kinds": {
+    "list_ballot": 81091,
+    "candidate_mark_multi_vote": 393980,
+    "candidate_or_list_vote_regime_unresolved": 692029,
+    "candidate_vote": 12623,
+    "binomial_ballot": 11681,
+    "electoral_college_candidate_mark": 1246,
+    "electoral_college_list_ballot": 913,
+    "party_share_and_seats": 74,
+    "returned_representative": 20
+  }
+}

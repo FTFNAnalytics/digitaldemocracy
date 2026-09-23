@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "Frozen research-pack integrity and extraction checks, not election certification or Justin approval",
+  "applied_changes": 0,
+  "justin_approved": false,
+  "current_offices": 35112,
+  "historical_offices": 2738,
+  "events": 119554,
+  "reporting_units": 173409,
+  "results": 1193657,
+  "sources_hashed": 87,
+  "manifest_files_hashed": 118,
+  "current_register_complete": true,
+  "historical_coverage_exhaustive": false,
+  "raw_modern_CSV_vote_comparisons": 59540,
+  "applicable_ballot_sum_checks": 54328,
+  "preserved_source_arithmetic_discrepancies": 38,
+  "field_map_columns": 223,
+  "acceptance_examples": 36,
+  "negative_controls": [
+    {
+      "case": "approval_true",
+      "rejected_as_expected": true
+    },
+    {
+      "case": "applied_change",
+      "rejected_as_expected": true
+    },
+    {
+      "case": "missing_vote_marked_reported",
+      "rejected_as_expected": true
+    },
+    {
+      "case": "missing_tier",
+      "rejected_as_expected": true
+    }
+  ],
+  "errors": []
+}

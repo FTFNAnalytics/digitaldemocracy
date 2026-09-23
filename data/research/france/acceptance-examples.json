@@ -1,0 +1,218 @@
+[
+  {
+    "example_id": "FR-A01",
+    "case": "Current registry",
+    "expected": "Exactly 35,112 current body/direct-executive rows; offices are not filtered by the alert window.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A02",
+    "case": "Commune footing",
+    "expected": "34,875 COG COM entries − 6 appointed Meuse communes + 83 overseas communes = 34,952 elected municipal councils.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A03",
+    "case": "Direct executives",
+    "expected": "Exactly 1 current direct executive: FR-PRESIDENT; zero direct mayor rows.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A04",
+    "case": "National offices",
+    "expected": "FR-AN direct, FR-SENATE indirect, FR-PRESIDENT direct, FR-EP direct; no PM/cabinet/prefect office.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A05",
+    "case": "Senate votes",
+    "expected": "Electoral-college candidate marks are not a popular nationwide first-preference universe.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A06",
+    "case": "Presidential rounds",
+    "expected": "1995, 2002, 2007, 2012, 2017 and 2022 each have exactly two sourced rounds.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A07",
+    "case": "2022 round totals",
+    "expected": "Presidential valid votes: R1 35,132,947; R2 32,057,325. No runoff subtraction.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A08",
+    "case": "2022 runoff",
+    "expected": "MACRON 18,768,639; LE PEN 13,288,686; sum 32,057,325.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A09",
+    "case": "Council departments",
+    "expected": "95 departmental councils, not 101 inferred offices from administrative department codes.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A10",
+    "case": "Paris",
+    "expected": "Exactly one current municipal/departmental Council of Paris; no extra FR-CT-75C council.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A11",
+    "case": "Lyon",
+    "expected": "Municipal FR-MUN-69123 and metropolitan FR-CT-69M are distinct; metropolitan president is council-selected.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A12",
+    "case": "Alsace",
+    "expected": "One FR-CT-6AE, no current separate 67D or 68D departmental councils.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A13",
+    "case": "Mayotte",
+    "expected": "One transitional FR-CT-976R; future 2028 assembly does not produce a second current office or invented current 52 seats.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A14",
+    "case": "Regional footing",
+    "expected": "14 ordinary regional councils plus 3 single territorial assemblies; Mayotte counted under its transitional departmental council.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A15",
+    "case": "PLM",
+    "expected": "34 elected sector councils; do not convert 45 INSEE administrative arrondissements into 45 councils.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A16",
+    "case": "NC Congress",
+    "expected": "54-seat Congress derives from provincial ballots; no separate nationwide Congress vote invented.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A17",
+    "case": "Overseas communes",
+    "expected": "48 PF + 33 NC + 2 SPM; SB and SM territorial councils are not additional municipal councils.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A18",
+    "case": "Meuse exceptions",
+    "expected": "All six named appointed commissions are excluded from elected council rows.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A19",
+    "case": "Historical gates",
+    "expected": "Pre-merger retained-code council and current commune-nouvelle council remain distinct research identities.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A20",
+    "case": "Succession",
+    "expected": "successor-crosswalk is empty; territorial movements are retained without guessed office edges.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A21",
+    "case": "Draft 1:1",
+    "expected": "Every current and historical office has exactly one tier; all status=draft and approval=false.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A22",
+    "case": "Missing vs zero",
+    "expected": "PF 2026 metrics-only units generate no placeholder zero-vote lists.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A23",
+    "case": "2020 candidate marks",
+    "expected": "Small-commune candidate vote sum is not required to equal valid ballots.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A24",
+    "case": "EP 2019",
+    "expected": "National constitutive-session seats sum to 74; no invented 79-seat immediate 2019 allocation.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A25",
+    "case": "EP 2024",
+    "expected": "National party-composition seats sum to 81; partial 18-region vote file is not national coverage.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A26",
+    "case": "Overseas proclamation",
+    "expected": "Saint-Barthélemy R2 2022 votes 1,970 and 1,905; seats 13 and 6.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A27",
+    "case": "WF evidence",
+    "expected": "20 returned representatives have null votes; Sigave original return carries a repeat-election gate.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A28",
+    "case": "Source arithmetic",
+    "expected": "38 known source arithmetic discrepancies are retained and separately flagged; no fabricated balancing entries.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A29",
+    "case": "Field contract",
+    "expected": "Exactly 223 unique table.column mappings across 20 tables; no operational writes.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A30",
+    "case": "Hash integrity",
+    "expected": "Every retained source has a URL, byte count and SHA-256; manifest covers all pack files except itself.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A31",
+    "case": "Alert isolation",
+    "expected": "Calendar has one row per current office, all alert_created=false; Senate 2026 renewal remains upcoming, not history.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A32",
+    "case": "No approvals",
+    "expected": "applied_changes=0; justin_approved=false; report checkboxes remain unchecked.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A33",
+    "case": "Parser repairs",
+    "expected": "Two malformed 2020 labels repaired without changing any numeric cells; original raw files retained.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A34",
+    "case": "2014 ambiguity",
+    "expected": "Mixed candidate/list regime stays explicitly unresolved; no fabricated seats or turnout denominators.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A35",
+    "case": "Exact dates",
+    "expected": "Year-only PF cycles remain year-only; polling-day exceptions are not silently coerced to a global same-day assertion.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "FR-A36",
+    "case": "History limits",
+    "expected": "Current office presence does not imply all past results or current officeholders are complete.",
+    "justin_approved": false
+  }
+]
