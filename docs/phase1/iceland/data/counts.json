@@ -1,0 +1,49 @@
+{
+  "current_offices": 63,
+  "historical_only_offices": 24,
+  "total_offices": 87,
+  "current_municipal_councils": 61,
+  "historical_municipal_councils": 24,
+  "municipal_cycle_membership": {
+    "2014": 74,
+    "2018": 72,
+    "2022": 64,
+    "2026": 61
+  },
+  "municipal_mode_histograms": {
+    "2014": {
+      "unrestricted_personal_vote": 18,
+      "proportional_list_election": 53,
+      "unopposed_single_list_no_poll": 3
+    },
+    "2018": {
+      "unrestricted_personal_vote": 16,
+      "proportional_list_election": 55,
+      "unopposed_single_list_no_poll": 1
+    },
+    "2022": {
+      "proportional_list_election": 49,
+      "unrestricted_personal_vote": 13,
+      "unopposed_single_list_no_poll": 2
+    },
+    "2026": {
+      "restricted_proportional_list": 50,
+      "unrestricted_write_in": 7,
+      "one_list_self_elected_no_poll": 4
+    }
+  },
+  "current_direct_executive_offices": 1,
+  "direct_municipal_executive_offices": 0,
+  "current_council_or_chamber_offices": 62,
+  "european_parliament_offices": 0,
+  "events": 277,
+  "results": 393,
+  "draft_tier_histogram": {
+    "national": 2,
+    "municipal": 85
+  },
+  "sources": 45,
+  "tables": 20,
+  "mapped_columns": 223,
+  "applied_changes": 0
+}
