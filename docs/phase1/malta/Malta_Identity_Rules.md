@@ -1,0 +1,19 @@
+# Malta identity and evidence rules
+
+1. The unit of the register is a legal office/body, not each individual occupied seat. Current offices are statutory, not a claimed live incumbent roster.
+2. Local council identities use the Address Registrar's 68-name register. Malta and Gozo Rabat and Żebbuġ remain separate. Matching removes accents/punctuation only internally; display labels retain Maltese spelling.
+3. A mayor and deputy mayor each have an office linked to the parent council. Article 25 normally uses first-count ranking within the party holding an absolute majority of council seats. The council elects from its members where that mechanism does not fill the office. There is no independent mayor ballot or duplicated council vote vector.
+4. Six regional presidencies have a councillor-electorate footing under article 37A and S.L.363.06. Appointed regional council membership, regional deputy chairs and executive secretaries are excluded from the elected register. Association/general-list posts are not invented as additional government offices.
+5. President of Malta is selected by a House resolution. The current two-thirds rule does not apply backwards to every historic presidential selection. Nationwide popular votes, first-preference shares and turnout are not applicable.
+6. House = one national office/event per election. Thirteen districts are reporting scopes, with five initial seats each. A candidate standing in two districts is two candidate observations, not two distinct people or two national offices.
+7. The source tuple election ID + zone ID + candidate ID is an observation key. Candidate identity across cycles is not inferred solely from a name. Original party labels are retained, with no canonical party mapping approved.
+8. Candidate first-count tallies, later count tallies, signed transfer deltas, non-transferable papers and totals are different measures. Repeated counts are not extra votes. Ellipsis and blank values remain null with their original tokens; reported zero remains zero.
+9. Elected-candidate displays contain later resignations, casual elections, constitutional seat additions and court adjustments. Original elected flags exclude cards explicitly tagged as later awards. All annotations survive in post-election-return-observations.json and reporting-units.json. Those annotations are not a complete current membership history or a fully verified casual-election register.
+10. Mdina's no-poll returns have null candidate votes; the source's zero summary placeholders survive in reporting units/raw captures. No 0% popular vote universe is created.
+11. The 2026 portal summary date differs from EC's explicit polling-date statement. Use 30 May 2026 for the election; retain 27 April 2026 as the conflicting original label. Additional-seat declaration days remain separate.
+12. Mtarfa creation in December 1999 is a named gate. The 67-council founding denominator is not projected onto later registers; no predecessor edge is guessed. Historical council names do not prove unchanged boundary polygons.
+13. The historic Gozo Civic Council and its president are distinct from the modern Gozo Region. No successor or merger edge is asserted. The empty crosswalk means no verified edges recorded, not that no territorial changes occurred.
+14. Source IDs identify retained captures. Several UI count pages can share a URL; selected year/zone/count and exact capture hash disambiguate them. A browser DOM capture or search extraction is not described as original HTML/PDF bytes.
+15. Future cycle years and the 18-month alert filter do not suppress any current office or historic return. No exact future polling date is manufactured.
+16. Proposed identifiers, field mappings and tiers require review. All Justin approvals remain false/unchecked. No operational release, database, importer, UI, repository or VPS change is performed.
+

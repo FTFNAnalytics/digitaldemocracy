@@ -1,0 +1,4199 @@
+{
+  "schema_version": "atlas-tier-classification/1",
+  "lineage_id": "country-package-malta",
+  "country_slug": "malta",
+  "country_id": "malta",
+  "status": "approved",
+  "prompt": "prompt_ap",
+  "source_register": {
+    "input_path": "data/research/malta/office-register.json",
+    "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+    "bytes": 140116
+  },
+  "source_inputs": [
+    {
+      "input_path": "data/research/malta/office-register.json",
+      "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6"
+    },
+    {
+      "input_path": "data/research/malta/draft-tiers.json",
+      "sha256": "5714dde427d288850b4c9c8aa9a5c9000ba803321f9cb6adc66c760b74e06d18"
+    }
+  ],
+  "counts_by_proposed_tier": {
+    "municipal": 204,
+    "regional": 8,
+    "national": 2,
+    "other": 1,
+    "unknown": 0
+  },
+  "schema_compatibility": {
+    "national": "national_context",
+    "regional": "regional",
+    "municipal": "municipal",
+    "other": "other",
+    "unknown": null
+  },
+  "rules": [
+    "One classification per register office_id, including the two historical Gozo Civic Council offices.",
+    "Draft tier labels are unchanged: 204 municipal / 8 regional / 2 national / 1 other.",
+    "Local councils, mayors, and deputy mayors are municipal. Mayors and deputies are conditional first-preference or council election, not separate popular ballots.",
+    "Six current regional presidencies and the historical Gozo Civic Council and its president are regional.",
+    "The House and the indirect President are national. The EP delegation is other.",
+    "Per-office review_status stays needs_review. File status is approved with Malta_Research_Gaps gates left open.",
+    "The successor crosswalk stays empty. No popular presidential ballot, STV transfer paper, or House division tally is invented."
+  ],
+  "notes": [
+    "Justin accepted 2026-09-22 America/Edmonton with the Malta_Research_Gaps gates left open. No popular presidential or mayor ballot, STV transfer paper, or missing House division tally was added. The successor crosswalk stays empty. Four 2021 regional sole nominees stay nominations."
+  ],
+  "production_accepted": true,
+  "predecessor_draft_sha256": "5714dde427d288850b4c9c8aa9a5c9000ba803321f9cb6adc66c760b74e06d18",
+  "justin_approval": {
+    "accepted": true,
+    "accepted_by": "Justin",
+    "accepted_at": "2026-09-22",
+    "timezone": "America/Edmonton",
+    "decision": "accept_with_holds",
+    "current_offices": 213,
+    "historical_offices": 2,
+    "offices": 215,
+    "events": 223,
+    "results": 4084,
+    "stv_count_observations": 64204,
+    "draft_tiers": {
+      "municipal": 204,
+      "regional": 8,
+      "national": 2,
+      "other": 1
+    },
+    "current_local_councils": 68,
+    "malta_local_councils": 54,
+    "gozo_local_councils": 14,
+    "current_mayors": 68,
+    "current_deputy_mayors": 68,
+    "current_indirect_regional_presidents": 6,
+    "standalone_direct_executive_offices": 0,
+    "scope": "all_draft_offices_with_named_holds",
+    "holds_open": [
+      "Presidential indirect election",
+      "STV transfers",
+      "Post-election changes",
+      "Mayoral selection",
+      "Local creation and boundaries",
+      "Regional bodies",
+      "Gozo Civic Council",
+      "European Parliament",
+      "Certified versus preliminary",
+      "Exact inherited field contract"
+    ],
+    "holds_resolved": []
+  },
+  "approval": {
+    "Justin_accepted": true,
+    "production_accepted": true,
+    "by": "product_owner",
+    "accepted_by": "Justin",
+    "date": "2026-09-22",
+    "timezone": "America/Edmonton",
+    "decision": "accept_with_holds",
+    "holds_open": [
+      "Presidential indirect election",
+      "STV transfers",
+      "Post-election changes",
+      "Mayoral selection",
+      "Local creation and boundaries",
+      "Regional bodies",
+      "Gozo Civic Council",
+      "European Parliament",
+      "Certified versus preliminary",
+      "Exact inherited field contract"
+    ],
+    "holds_resolved": [],
+    "notes": "Justin accepted 2026-09-22 Prompt AP with Malta_Research_Gaps gates left open. 213 current + 2 historical offices (215); 223 events; 4084 result rows and 64204 STV count observations in the full pack. Draft tiers 204 municipal / 8 regional / 2 national / 1 other. Standalone direct-executive offices 0. President is indirect House resolution. Mayors and deputy mayors are conditional first-preference or council election. Successor crosswalk stays empty. No popular presidential or mayor ballot, STV transfer paper, or House division tally was invented. Per-office review_status stays needs_review. stv-counts.json, results.json, and sources omitted from this slim land."
+  },
+  "classifications": [
+    {
+      "office_id": "MT-LC-l-imtarfa",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/0"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imtarfa-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/1"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imtarfa-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/2"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-iz-zurrieq",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/3"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-iz-zurrieq-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/4"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-iz-zurrieq-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/5"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-iz-zebbug-ghawdex",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/6"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-iz-zebbug-ghawdex-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/7"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-iz-zebbug-ghawdex-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/8"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ix-xghajra",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/9"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ix-xghajra-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/10"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ix-xghajra-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/11"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ix-xewkija",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/12"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ix-xewkija-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/13"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ix-xewkija-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/14"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ix-xaghra",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/15"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ix-xaghra-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/16"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ix-xaghra-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/17"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-tarxien",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/18"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-tarxien-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/19"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-tarxien-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/20"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ta-xbiex",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/21"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ta-xbiex-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/22"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ta-xbiex-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/23"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-is-swieqi",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/24"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-is-swieqi-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/25"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-is-swieqi-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/26"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-tas-sliema",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/27"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-tas-sliema-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/28"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-tas-sliema-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/29"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-santa-venera",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/30"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-santa-venera-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/31"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-santa-venera-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/32"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-santa-lucija",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/33"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-santa-lucija-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/34"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-santa-lucija-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/35"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ta-sannat",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/36"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ta-sannat-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/37"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ta-sannat-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/38"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-san-pawl-il-bahar",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/39"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-san-pawl-il-bahar-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/40"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-san-pawl-il-bahar-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/41"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-san-lawrenz",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/42"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-san-lawrenz-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/43"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-san-lawrenz-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/44"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-san-gwann",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/45"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-san-gwann-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/46"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-san-gwann-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/47"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-san-giljan",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/48"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-san-giljan-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/49"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-san-giljan-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/50"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-safi",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/51"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-safi-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/52"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-safi-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/53"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ir-rabat-malta",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/54"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ir-rabat-malta-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/55"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ir-rabat-malta-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/56"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-qrendi",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/57"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-qrendi-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/58"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-qrendi-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/59"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-qala",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/60"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-qala-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/61"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-qala-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/62"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-tal-pieta",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/63"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-tal-pieta-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/64"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-tal-pieta-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/65"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-pembroke",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/66"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-pembroke-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/67"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-pembroke-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/68"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-paola",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/69"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-paola-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/70"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-paola-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/71"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-in-naxxar",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/72"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-in-naxxar-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/73"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-in-naxxar-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/74"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-in-nadur",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/75"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-in-nadur-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/76"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-in-nadur-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/77"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-munxar",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/78"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-munxar-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/79"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-munxar-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/80"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imsida",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/81"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imsida-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/82"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imsida-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/83"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imqabba",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/84"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imqabba-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/85"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imqabba-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/86"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-mosta",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/87"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-mosta-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/88"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-mosta-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/89"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imgarr",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/90"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imgarr-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/91"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imgarr-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/92"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-mellieha",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/93"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-mellieha-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/94"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-mellieha-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/95"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-marsaxlokk",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/96"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-marsaxlokk-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/97"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-marsaxlokk-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/98"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-marsaskala",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/99"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-marsaskala-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/100"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-marsaskala-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/101"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-marsa",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/102"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-marsa-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/103"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-marsa-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/104"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-luqa",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/105"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-luqa-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/106"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-luqa-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/107"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-lija",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/108"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-lija-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/109"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-lija-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/110"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-kirkop",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/111"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-kirkop-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/112"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-kirkop-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/113"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ta-kercem",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/114"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ta-kercem-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/115"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ta-kercem-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/116"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-kalkara",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/117"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-kalkara-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/118"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-kalkara-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/119"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-iklin",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/120"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-iklin-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/121"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-iklin-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/122"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-hamrun",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/123"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-hamrun-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/124"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-hamrun-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/125"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-ghaxaq",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/126"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-ghaxaq-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/127"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-ghaxaq-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/128"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-ghasri",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/129"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-ghasri-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/130"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-ghasri-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/131"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-gharghur",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/132"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-gharghur-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/133"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-gharghur-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/134"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-gharb",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/135"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-gharb-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/136"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-gharb-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/137"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ghajnsielem",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/138"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ghajnsielem-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/139"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ghajnsielem-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/140"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-gzira",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/141"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-gzira-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/142"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-gzira-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/143"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-gudja",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/144"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-gudja-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/145"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-gudja-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/146"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-fontana",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/147"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-fontana-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/148"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-fontana-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/149"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-floriana",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/150"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-floriana-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/151"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-floriana-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/152"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-fgura",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/153"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-fgura-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/154"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-fgura-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/155"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-had-dingli",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/156"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-had-dingli-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/157"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-had-dingli-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/158"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-birzebbuga",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/159"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-birzebbuga-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/160"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-birzebbuga-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/161"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-birkirkara",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/162"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-birkirkara-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/163"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-birkirkara-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/164"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-balzan",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/165"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-balzan-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/166"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-balzan-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/167"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-h-attard",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/168"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-h-attard-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/169"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-h-attard-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/170"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ir-rabat-ghawdex",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/171"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ir-rabat-ghawdex-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/172"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-ir-rabat-ghawdex-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/173"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-iz-zejtun",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/174"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-iz-zejtun-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/175"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-iz-zejtun-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/176"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-is-siggiewi",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/177"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-is-siggiewi-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/178"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-is-siggiewi-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/179"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-haz-zabbar",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/180"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-haz-zabbar-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/181"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-haz-zabbar-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/182"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-haz-zebbug-malta",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/183"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-haz-zebbug-malta-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/184"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-haz-zebbug-malta-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/185"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-qormi",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/186"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-qormi-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/187"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-hal-qormi-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/188"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-bormla",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/189"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-bormla-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/190"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-bormla-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/191"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-isla",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/192"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-isla-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/193"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-isla-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/194"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-birgu",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/195"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-birgu-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/196"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-birgu-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/197"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imdina",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/198"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imdina-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/199"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-l-imdina-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/200"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-belt-valletta",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current local council on the Address Registrar 68-name register. Geographic tier is municipal. Popular STV council election. No separate popular mayor ballot.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Local creation and boundaries"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/201"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-belt-valletta-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular mayor contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/202"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-LC-il-belt-valletta-deputy-mayor",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Deputy mayor office linked to its parent council. Selection is the conditional first-preference rule or council election (Cap.363 article 25; Seventh Schedule). standalone_popular_executive_ballot is false. No separate popular deputy contest.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Mayoral selection"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/203"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-RP-eastern-region",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "review_status": "needs_review",
+      "rationale": "Indirect regional president elected by councillors. Geographic tier is regional. Not a standalone popular executive ballot. Sole-nominee nominations stay nominations.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Regional bodies"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/204"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-RP-gozo-region",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "review_status": "needs_review",
+      "rationale": "Indirect regional president elected by councillors. Geographic tier is regional. Not a standalone popular executive ballot. Sole-nominee nominations stay nominations.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Regional bodies"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/205"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-RP-northern-region",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "review_status": "needs_review",
+      "rationale": "Indirect regional president elected by councillors. Geographic tier is regional. Not a standalone popular executive ballot. Sole-nominee nominations stay nominations.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Regional bodies"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/206"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-RP-port-region",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "review_status": "needs_review",
+      "rationale": "Indirect regional president elected by councillors. Geographic tier is regional. Not a standalone popular executive ballot. Sole-nominee nominations stay nominations.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Regional bodies"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/207"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-RP-southern-region",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "review_status": "needs_review",
+      "rationale": "Indirect regional president elected by councillors. Geographic tier is regional. Not a standalone popular executive ballot. Sole-nominee nominations stay nominations.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Regional bodies"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/208"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-RP-western-region",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "review_status": "needs_review",
+      "rationale": "Indirect regional president elected by councillors. Geographic tier is regional. Not a standalone popular executive ballot. Sole-nominee nominations stay nominations.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Regional bodies"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/209"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-HOR",
+      "tier": "national",
+      "schema_v1_tier": "national_context",
+      "review_status": "needs_review",
+      "rationale": "House of Representatives. Geographic tier is national. Popular STV with constitutional additional seats. Thirteen districts are reporting units, not extra offices.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/210"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-PRESIDENT",
+      "tier": "national",
+      "schema_v1_tier": "national_context",
+      "review_status": "needs_review",
+      "rationale": "President of Malta selected by House resolution. Geographic tier is national. No popular presidential ballot and no invented House division tally.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Presidential indirect election"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/211"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-EP",
+      "tier": "other",
+      "schema_v1_tier": "other",
+      "review_status": "needs_review",
+      "rationale": "Malta European Parliament delegation. Geographic tier is other. One delegation. Replacements and the later sixth-seat transition are not a new popular election.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "European Parliament"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/212"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-GOZO-CIVIC",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "review_status": "needs_review",
+      "rationale": "Historical Gozo Civic Council retained as its own identity. Geographic tier is regional. No successor link to the modern Gozo Region.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Gozo Civic Council"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/213"
+        }
+      ]
+    },
+    {
+      "office_id": "MT-GOZO-CIVIC-PRESIDENT",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "review_status": "needs_review",
+      "rationale": "Historical president of the Gozo Civic Council, elected by that council. Geographic tier is regional. No successor link to the modern Gozo Region.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "Gozo Civic Council"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/malta/office-register.json",
+          "sha256": "610d1fd26c9ce5515e14a4586942cb006ed5a6e5c33d838d64e653186d1f71d6",
+          "json_pointer": "/214"
+        }
+      ]
+    }
+  ]
+}

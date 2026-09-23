@@ -1,0 +1,1117 @@
+[
+  {
+    "table": "dataset_lineage",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "provenance_kind",
+    "mapping": "country_package"
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "description",
+    "mapping": "Malta Prompt AP research/documentation handoff."
+  },
+  {
+    "table": "dataset_release",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "dataset_release",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "dataset_release",
+    "column": "fingerprint_sha256",
+    "mapping": "SHA256 of canonical sorted input paths/hashes plus contract, method, field-map and tier versions. Exclude wall clock and attempt IDs."
+  },
+  {
+    "table": "dataset_release",
+    "column": "hash_inputs_json",
+    "mapping": "That exact canonical effective-input inventory."
+  },
+  {
+    "table": "dataset_release",
+    "column": "adapter_version",
+    "mapping": "malta-field-map/1; documentation label only, no importer written."
+  },
+  {
+    "table": "dataset_release",
+    "column": "method_version",
+    "mapping": "malta-source-preservation/1"
+  },
+  {
+    "table": "dataset_release",
+    "column": "schema_version",
+    "mapping": "Inherited pinned Atlas contract retained in contract/; fresh production-schema verification not performed."
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_snapshot_label",
+    "mapping": "2026-09-22"
+  },
+  {
+    "table": "dataset_release",
+    "column": "upstream_release_id",
+    "mapping": "Prompt-AP-Malta"
+  },
+  {
+    "table": "dataset_release",
+    "column": "validated_counts_json",
+    "mapping": "Computed validation-report counts."
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_coverage_complete",
+    "mapping": "0: scoped historic coverage and remaining gaps are explicit."
+  },
+  {
+    "table": "dataset_release",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source/capture ID and locator. Preserve electoral college, reporting scope, initial versus later selection, every STV count and original text token."
+  },
+  {
+    "table": "retained_input",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "retained_input",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "retained_input",
+    "column": "input_path",
+    "mapping": "Exact retained source or data relative path."
+  },
+  {
+    "table": "retained_input",
+    "column": "input_kind",
+    "mapping": "source artifact / documentation artifact / draft tier classification"
+  },
+  {
+    "table": "retained_input",
+    "column": "sha256",
+    "mapping": "SHA256 of exact retained file bytes."
+  },
+  {
+    "table": "retained_input",
+    "column": "byte_count",
+    "mapping": "Exact byte length."
+  },
+  {
+    "table": "retained_input",
+    "column": "recovery_locator",
+    "mapping": "ZIP relative member path."
+  },
+  {
+    "table": "retained_input",
+    "column": "payload_json",
+    "mapping": "Source descriptor with capture_kind, original URL and retained path; a DOM extraction is not mislabeled original HTML/PDF."
+  },
+  {
+    "table": "country",
+    "column": "country_id",
+    "mapping": "malta"
+  },
+  {
+    "table": "country",
+    "column": "country_code",
+    "mapping": "MT"
+  },
+  {
+    "table": "country",
+    "column": "name",
+    "mapping": "Malta"
+  },
+  {
+    "table": "country",
+    "column": "polity_kind",
+    "mapping": "parliamentary_republic"
+  },
+  {
+    "table": "country",
+    "column": "region_id",
+    "mapping": "europe"
+  },
+  {
+    "table": "country",
+    "column": "coverage_status",
+    "mapping": "full_current_office_register_with_bounded_historical_returns"
+  },
+  {
+    "table": "country",
+    "column": "screening_as_of_label",
+    "mapping": "2026-09-22"
+  },
+  {
+    "table": "country",
+    "column": "notes",
+    "mapping": "President indirectly elected; mayor/deputy route conditional on council result; six indirectly elected regional presidents; no regional popular parliament."
+  },
+  {
+    "table": "country",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "country",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "country",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source/capture ID and locator. Preserve electoral college, reporting scope, initial versus later selection, every STV count and original text token."
+  },
+  {
+    "table": "geography",
+    "column": "country_id",
+    "mapping": "malta"
+  },
+  {
+    "table": "geography",
+    "column": "geography_id",
+    "mapping": "Proposed MT-G- + legal locality/region identity; district is a reporting-unit geography, never an extra parliament office."
+  },
+  {
+    "table": "geography",
+    "column": "name",
+    "mapping": "office.locality / region, otherwise Malta; reporting-unit area for source district scope."
+  },
+  {
+    "table": "geography",
+    "column": "parent_geography_id",
+    "mapping": "Sourced parent only; no successor geography inferred."
+  },
+  {
+    "table": "geography",
+    "column": "effective_from_label",
+    "mapping": "NULL unless explicitly established by territorial gate; no blanket 1993 polling day."
+  },
+  {
+    "table": "geography",
+    "column": "effective_to_label",
+    "mapping": "Historic Gozo council end_label=1973 with year precision; unverified boundaries stay NULL."
+  },
+  {
+    "table": "geography",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "geography",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "geography",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source/capture ID and locator. Preserve electoral college, reporting scope, initial versus later selection, every STV count and original text token."
+  },
+  {
+    "table": "office",
+    "column": "id_namespace",
+    "mapping": "Proposed atlas-malta-research-v1; explicit reviewed crosswalk required before namespace reuse."
+  },
+  {
+    "table": "office",
+    "column": "office_id",
+    "mapping": "office-register.office_id; results resolve through events.event_id."
+  },
+  {
+    "table": "office",
+    "column": "country_id",
+    "mapping": "malta"
+  },
+  {
+    "table": "office",
+    "column": "geography_id",
+    "mapping": "Proposed MT-G- + legal locality/region identity; district is a reporting-unit geography, never an extra parliament office."
+  },
+  {
+    "table": "office",
+    "column": "name",
+    "mapping": "office-register.name"
+  },
+  {
+    "table": "office",
+    "column": "office_type",
+    "mapping": "office-register.office_type; preserve mechanism fields in raw_json."
+  },
+  {
+    "table": "office",
+    "column": "office_status",
+    "mapping": "office-register.status"
+  },
+  {
+    "table": "office",
+    "column": "record_state",
+    "mapping": "active research record; office_status distinguishes current from historical."
+  },
+  {
+    "table": "office",
+    "column": "state_note",
+    "mapping": "Source status, no-poll, electoral-college and boundary/date caveats."
+  },
+  {
+    "table": "office",
+    "column": "registry_qualified",
+    "mapping": "1 for supported offices in this register."
+  },
+  {
+    "table": "office",
+    "column": "next_date_id",
+    "mapping": "NULL: no future exact called date established."
+  },
+  {
+    "table": "office",
+    "column": "next_date_resolution",
+    "mapping": "unknown_exact_day; calendar year/rule in raw_json."
+  },
+  {
+    "table": "office",
+    "column": "next_history_key",
+    "mapping": "NULL"
+  },
+  {
+    "table": "office",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "office",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "office",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source/capture ID and locator. Preserve electoral college, reporting scope, initial versus later selection, every STV count and original text token."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "id_namespace",
+    "mapping": "Proposed atlas-malta-research-v1; explicit reviewed crosswalk required before namespace reuse."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "office_id",
+    "mapping": "office-register.office_id; results resolve through events.event_id."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "tier",
+    "mapping": "draft-tiers.tier, exact 1:1 office identity."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "review_status",
+    "mapping": "needs_review"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "rationale",
+    "mapping": "Municipal for each council/mayor/deputy; national for House/President; regional for regional presidency/Gozo civic history; other for EP."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_path",
+    "mapping": "data/draft-tiers.json"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_kind",
+    "mapping": "draft_for_human_review"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_sha256",
+    "mapping": "Exact file SHA256; all Justin approvals false."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source/capture ID and locator. Preserve electoral college, reporting scope, initial versus later selection, every STV count and original text token."
+  },
+  {
+    "table": "research_date",
+    "column": "date_id",
+    "mapping": "Proposed MT-D- + exact date label and precision."
+  },
+  {
+    "table": "research_date",
+    "column": "label",
+    "mapping": "events.date; source label and conflict disposition retained separately."
+  },
+  {
+    "table": "research_date",
+    "column": "precision",
+    "mapping": "events.date_precision"
+  },
+  {
+    "table": "research_date",
+    "column": "certainty",
+    "mapping": "observed source date; 2026 poll resolved from explicit EC declaration over summary-page date."
+  },
+  {
+    "table": "research_date",
+    "column": "year",
+    "mapping": "Source-supported year."
+  },
+  {
+    "table": "research_date",
+    "column": "month",
+    "mapping": "Only if source precision allows; otherwise NULL."
+  },
+  {
+    "table": "research_date",
+    "column": "day",
+    "mapping": "Only if source precision allows; otherwise NULL."
+  },
+  {
+    "table": "research_date",
+    "column": "range_start_id",
+    "mapping": "NULL unless actual sourced range"
+  },
+  {
+    "table": "research_date",
+    "column": "range_end_id",
+    "mapping": "NULL unless actual sourced range"
+  },
+  {
+    "table": "research_date",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "research_date",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "research_date",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source/capture ID and locator. Preserve electoral college, reporting scope, initial versus later selection, every STV count and original text token."
+  },
+  {
+    "table": "election_event",
+    "column": "id_namespace",
+    "mapping": "Proposed atlas-malta-research-v1; explicit reviewed crosswalk required before namespace reuse."
+  },
+  {
+    "table": "election_event",
+    "column": "office_id",
+    "mapping": "office-register.office_id; results resolve through events.event_id."
+  },
+  {
+    "table": "election_event",
+    "column": "history_key",
+    "mapping": "Stable office + supported election date + proceeding kind where necessary."
+  },
+  {
+    "table": "election_event",
+    "column": "event_id",
+    "mapping": "events.event_id; national district returns share the one national event."
+  },
+  {
+    "table": "election_event",
+    "column": "date_id",
+    "mapping": "Proposed MT-D- + exact date label and precision."
+  },
+  {
+    "table": "election_event",
+    "column": "date_resolution",
+    "mapping": "resolved_source_label"
+  },
+  {
+    "table": "election_event",
+    "column": "event_kind",
+    "mapping": "events.event_type; distinguish election, uncontested return, indirect election, additional-seat declaration."
+  },
+  {
+    "table": "election_event",
+    "column": "selected_history_role",
+    "mapping": "historical"
+  },
+  {
+    "table": "election_event",
+    "column": "electoral_system",
+    "mapping": "events.electoral_system; popular STV only where applicable."
+  },
+  {
+    "table": "election_event",
+    "column": "comparability",
+    "mapping": "District and locality scopes remain separate; boundary comparability not assumed."
+  },
+  {
+    "table": "election_event",
+    "column": "ballot_basis",
+    "mapping": "events.ballot_basis; no popular vote universe for the President or regional councillor ballots."
+  },
+  {
+    "table": "election_event",
+    "column": "share_unit",
+    "mapping": "percent where reported"
+  },
+  {
+    "table": "election_event",
+    "column": "legal_outcome",
+    "mapping": "Source-described declaration; not an automatic claim of Gazette certification."
+  },
+  {
+    "table": "election_event",
+    "column": "record_state",
+    "mapping": "active research record; office_status distinguishes current from historical."
+  },
+  {
+    "table": "election_event",
+    "column": "state_note",
+    "mapping": "Source status, no-poll, electoral-college and boundary/date caveats."
+  },
+  {
+    "table": "election_event",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "election_event",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "election_event",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source/capture ID and locator. Preserve electoral college, reporting scope, initial versus later selection, every STV count and original text token."
+  },
+  {
+    "table": "proceeding",
+    "column": "id_namespace",
+    "mapping": "Proposed atlas-malta-research-v1; explicit reviewed crosswalk required before namespace reuse."
+  },
+  {
+    "table": "proceeding",
+    "column": "office_id",
+    "mapping": "office-register.office_id; results resolve through events.event_id."
+  },
+  {
+    "table": "proceeding",
+    "column": "history_key",
+    "mapping": "Stable office + supported election date + proceeding kind where necessary."
+  },
+  {
+    "table": "proceeding",
+    "column": "proceeding_id",
+    "mapping": "Proposed proceeding ID only for explicitly sourced additional-seat declarations; otherwise NULL."
+  },
+  {
+    "table": "proceeding",
+    "column": "kind",
+    "mapping": "NULL if not applicable or not established. A required target constraint blocks projection pending review; preserve owning evidence in raw_json."
+  },
+  {
+    "table": "proceeding",
+    "column": "sequence_no",
+    "mapping": "NULL if not applicable or not established. A required target constraint blocks projection pending review; preserve owning evidence in raw_json."
+  },
+  {
+    "table": "proceeding",
+    "column": "supersedes_id",
+    "mapping": "NULL if not applicable or not established. A required target constraint blocks projection pending review; preserve owning evidence in raw_json."
+  },
+  {
+    "table": "proceeding",
+    "column": "legal_outcome",
+    "mapping": "NULL if not applicable or not established. A required target constraint blocks projection pending review; preserve owning evidence in raw_json."
+  },
+  {
+    "table": "proceeding",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "proceeding",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "proceeding",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source/capture ID and locator. Preserve electoral college, reporting scope, initial versus later selection, every STV count and original text token."
+  },
+  {
+    "table": "result_row",
+    "column": "id_namespace",
+    "mapping": "Proposed atlas-malta-research-v1; explicit reviewed crosswalk required before namespace reuse."
+  },
+  {
+    "table": "result_row",
+    "column": "office_id",
+    "mapping": "office-register.office_id; results resolve through events.event_id."
+  },
+  {
+    "table": "result_row",
+    "column": "history_key",
+    "mapping": "Stable office + supported election date + proceeding kind where necessary."
+  },
+  {
+    "table": "result_row",
+    "column": "result_row_id",
+    "mapping": "results.result_id"
+  },
+  {
+    "table": "result_row",
+    "column": "proceeding_id",
+    "mapping": "Proposed proceeding ID only for explicitly sourced additional-seat declarations; otherwise NULL."
+  },
+  {
+    "table": "result_row",
+    "column": "country_id",
+    "mapping": "malta"
+  },
+  {
+    "table": "result_row",
+    "column": "candidate_or_list_label",
+    "mapping": "results.name"
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_label",
+    "mapping": "results.party_label; literal source spelling."
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_code",
+    "mapping": "NULL unless explicitly given; do not guess code from label."
+  },
+  {
+    "table": "result_row",
+    "column": "party_namespace",
+    "mapping": "NULL: canonical party mapping not reviewed."
+  },
+  {
+    "table": "result_row",
+    "column": "party_mapping_id",
+    "mapping": "NULL: preserve source party labels."
+  },
+  {
+    "table": "result_row",
+    "column": "votes",
+    "mapping": "results.votes = first-count candidate tally only. STV transfers/count tallies remain separate fidelity records; never sum counts."
+  },
+  {
+    "table": "result_row",
+    "column": "votes_status",
+    "mapping": "results.votes_status; missing/ellipsis, unopposed and indirect tally not known are distinct."
+  },
+  {
+    "table": "result_row",
+    "column": "share",
+    "mapping": "results.share; EP source-reported percent only, no invented candidate denominator."
+  },
+  {
+    "table": "result_row",
+    "column": "share_status",
+    "mapping": "reported if nonnull; otherwise unknown/not_applicable by mechanism."
+  },
+  {
+    "table": "result_row",
+    "column": "share_unit",
+    "mapping": "percent"
+  },
+  {
+    "table": "result_row",
+    "column": "seats",
+    "mapping": "results.seats only where explicitly stated; initial candidate elected flag is separate."
+  },
+  {
+    "table": "result_row",
+    "column": "seats_status",
+    "mapping": "reported if nonnull, else unknown; preserve actual EP Other parties seats=0."
+  },
+  {
+    "table": "result_row",
+    "column": "elected_flag",
+    "mapping": "results.elected refers to original count for candidate-first-preference rows. Later casual/constitutional entries are retained in post-election observations, not silently promoted to initial winners."
+  },
+  {
+    "table": "result_row",
+    "column": "is_substitute",
+    "mapping": "NULL unless source establishes it."
+  },
+  {
+    "table": "result_row",
+    "column": "evidence_status",
+    "mapping": "Event/source result status plus row-specific EP final/constitutive qualifier."
+  },
+  {
+    "table": "result_row",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "result_row",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "result_row",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source/capture ID and locator. Preserve electoral college, reporting scope, initial versus later selection, every STV count and original text token."
+  },
+  {
+    "table": "party_mapping",
+    "column": "country_id",
+    "mapping": "NO ROW — No approved canonical alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "party_namespace",
+    "mapping": "NO ROW — No approved canonical alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapping_id",
+    "mapping": "NO ROW — No approved canonical alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "source_context",
+    "mapping": "NO ROW — No approved canonical alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "election_context",
+    "mapping": "NO ROW — No approved canonical alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_label",
+    "mapping": "NO ROW — No approved canonical alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_code",
+    "mapping": "NO ROW — No approved canonical alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapped_group",
+    "mapping": "NO ROW — No approved canonical alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "uncertainty",
+    "mapping": "NO ROW — No approved canonical alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "lineage_id",
+    "mapping": "NO ROW — No approved canonical alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "release_id",
+    "mapping": "NO ROW — No approved canonical alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "raw_json",
+    "mapping": "NO ROW — No approved canonical alignment."
+  },
+  {
+    "table": "source",
+    "column": "country_id",
+    "mapping": "malta"
+  },
+  {
+    "table": "source",
+    "column": "source_namespace",
+    "mapping": "malta-official-research"
+  },
+  {
+    "table": "source",
+    "column": "source_id",
+    "mapping": "Exact source-inventory.source_id; hashes cover the retained capture kind, not necessarily original server bytes."
+  },
+  {
+    "table": "source",
+    "column": "publisher",
+    "mapping": "source-inventory.publisher_host"
+  },
+  {
+    "table": "source",
+    "column": "title",
+    "mapping": "Source page heading or retained capture descriptor"
+  },
+  {
+    "table": "source",
+    "column": "url",
+    "mapping": "source-inventory.url"
+  },
+  {
+    "table": "source",
+    "column": "checked_as_of_label",
+    "mapping": "2026-09-22"
+  },
+  {
+    "table": "source",
+    "column": "evidence_grade",
+    "mapping": "Official publisher; capture precision and legal certification separately stated."
+  },
+  {
+    "table": "source",
+    "column": "file_sha256",
+    "mapping": "source-inventory.sha256"
+  },
+  {
+    "table": "source",
+    "column": "locator",
+    "mapping": "source-inventory.path"
+  },
+  {
+    "table": "source",
+    "column": "data_rights",
+    "mapping": "Source-specific; this pack does not assert a blanket licence."
+  },
+  {
+    "table": "source",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "source",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "source",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source/capture ID and locator. Preserve electoral college, reporting scope, initial versus later selection, every STV count and original text token."
+  },
+  {
+    "table": "record_locator",
+    "column": "record_key",
+    "mapping": "entity_kind + exact stable entity identifier."
+  },
+  {
+    "table": "record_locator",
+    "column": "entity_kind",
+    "mapping": "office / event / result / source"
+  },
+  {
+    "table": "record_locator",
+    "column": "country_id",
+    "mapping": "malta"
+  },
+  {
+    "table": "record_locator",
+    "column": "geography_id",
+    "mapping": "Proposed MT-G- + legal locality/region identity; district is a reporting-unit geography, never an extra parliament office."
+  },
+  {
+    "table": "record_locator",
+    "column": "id_namespace",
+    "mapping": "Proposed atlas-malta-research-v1; explicit reviewed crosswalk required before namespace reuse."
+  },
+  {
+    "table": "record_locator",
+    "column": "office_id",
+    "mapping": "office-register.office_id; results resolve through events.event_id."
+  },
+  {
+    "table": "record_locator",
+    "column": "history_key",
+    "mapping": "Stable office + supported election date + proceeding kind where necessary."
+  },
+  {
+    "table": "record_locator",
+    "column": "proceeding_id",
+    "mapping": "Proposed proceeding ID only for explicitly sourced additional-seat declarations; otherwise NULL."
+  },
+  {
+    "table": "record_locator",
+    "column": "result_row_id",
+    "mapping": "results.result_id"
+  },
+  {
+    "table": "record_locator",
+    "column": "party_namespace",
+    "mapping": "NULL: canonical party mapping not reviewed."
+  },
+  {
+    "table": "record_locator",
+    "column": "party_mapping_id",
+    "mapping": "NULL: preserve source party labels."
+  },
+  {
+    "table": "record_locator",
+    "column": "source_namespace",
+    "mapping": "malta-official-research"
+  },
+  {
+    "table": "record_locator",
+    "column": "source_id",
+    "mapping": "Exact source-inventory.source_id; hashes cover the retained capture kind, not necessarily original server bytes."
+  },
+  {
+    "table": "record_locator",
+    "column": "input_path",
+    "mapping": "Exact retained source or data relative path."
+  },
+  {
+    "table": "record_locator",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "record_locator",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "record_locator",
+    "column": "source_row_locator",
+    "mapping": "results.source_locator; STV count records retain table row and column positions."
+  },
+  {
+    "table": "evidence_link",
+    "column": "evidence_id",
+    "mapping": "Deterministic hash of record key + source ID + locator + claim kind."
+  },
+  {
+    "table": "evidence_link",
+    "column": "record_key",
+    "mapping": "entity_kind + exact stable entity identifier."
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_country_id",
+    "mapping": "malta"
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_namespace",
+    "mapping": "malta-official-research"
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_id",
+    "mapping": "Exact source-inventory.source_id; hashes cover the retained capture kind, not necessarily original server bytes."
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_locator",
+    "mapping": "Exact source table/cell or declared paragraph locator."
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_kind",
+    "mapping": "existence / electoral mechanism / first preference / count transfer / outcome / election date / creation gate"
+  },
+  {
+    "table": "evidence_link",
+    "column": "date_claim_id",
+    "mapping": "Date FK only for a date claim, otherwise NULL."
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_json",
+    "mapping": "Exact source values with result phase, ballot universe and capture kind."
+  },
+  {
+    "table": "evidence_link",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "evidence_link",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "unresolved_id",
+    "mapping": "NO ROW — No fabricated unresolved FK rows; substantive open evidence is enumerated in research-gaps."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "record_key",
+    "mapping": "NO ROW — No fabricated unresolved FK rows; substantive open evidence is enumerated in research-gaps."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "original_token",
+    "mapping": "NO ROW — No fabricated unresolved FK rows; substantive open evidence is enumerated in research-gaps."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "source_locator",
+    "mapping": "NO ROW — No fabricated unresolved FK rows; substantive open evidence is enumerated in research-gaps."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "reason",
+    "mapping": "NO ROW — No fabricated unresolved FK rows; substantive open evidence is enumerated in research-gaps."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "lineage_id",
+    "mapping": "NO ROW — No fabricated unresolved FK rows; substantive open evidence is enumerated in research-gaps."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "release_id",
+    "mapping": "NO ROW — No fabricated unresolved FK rows; substantive open evidence is enumerated in research-gaps."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "raw_json",
+    "mapping": "NO ROW — No fabricated unresolved FK rows; substantive open evidence is enumerated in research-gaps."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "entity_kind",
+    "mapping": "office / candidate observation / source reporting unit"
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_namespace",
+    "mapping": "EC election ID + zone ID + candidate ID; Address Registrar locality name for register."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_id",
+    "mapping": "Literal source identifier, qualified by election context."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "record_key",
+    "mapping": "entity_kind + exact stable entity identifier."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "reason",
+    "mapping": "Name normalization for matching only; preserve diacritics/raw labels. No legal merger/successor links guessed."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "lineage_id",
+    "mapping": "Fixed proposed country-package-malta; no lineage written."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "release_id",
+    "mapping": "Future lineage + SHA256 of canonical effective-input inventory; no operational release exists."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source/capture ID and locator. Preserve electoral college, reporting scope, initial versus later selection, every STV count and original text token."
+  },
+  {
+    "table": "publication_release",
+    "column": "lineage_id",
+    "mapping": "NO ROW — Not run: research only."
+  },
+  {
+    "table": "publication_release",
+    "column": "release_id",
+    "mapping": "NO ROW — Not run: research only."
+  },
+  {
+    "table": "publication_receipt",
+    "column": "singleton",
+    "mapping": "NO ROW — Not run: no publication."
+  },
+  {
+    "table": "publication_receipt",
+    "column": "last_publish_attempt_id",
+    "mapping": "NO ROW — Not run: no publication."
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_lineage_id",
+    "mapping": "NO ROW — Not run: no publication."
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_release_id",
+    "mapping": "NO ROW — Not run: no publication."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "attempt_id",
+    "mapping": "NO ROW — Not run: no importer, database or operational changes."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "lineage_id",
+    "mapping": "NO ROW — Not run: no importer, database or operational changes."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "operator",
+    "mapping": "NO ROW — Not run: no importer, database or operational changes."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "script_version",
+    "mapping": "NO ROW — Not run: no importer, database or operational changes."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "started_at",
+    "mapping": "NO ROW — Not run: no importer, database or operational changes."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "finished_at",
+    "mapping": "NO ROW — Not run: no importer, database or operational changes."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "status",
+    "mapping": "NO ROW — Not run: no importer, database or operational changes."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "input_inventory_json",
+    "mapping": "NO ROW — Not run: no importer, database or operational changes."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "successful_release_id",
+    "mapping": "NO ROW — Not run: no importer, database or operational changes."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "publication_set_json",
+    "mapping": "NO ROW — Not run: no importer, database or operational changes."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "row_counts_json",
+    "mapping": "NO ROW — Not run: no importer, database or operational changes."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "error_text",
+    "mapping": "NO ROW — Not run: no importer, database or operational changes."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "gate_id": "MT-1993-LOCAL-CREATION",
+    "description": "Act XV of 1993 established 67 localities: 53 Malta and 14 Gozo. Creation statute is not the polling date of every first council.",
+    "source_id": "MTS-9c27776e7de910999e8a",
+    "status": "source_established_initial_denominator"
+  },
+  {
+    "gate_id": "MT-1999-MTARFA-CREATION",
+    "description": "EC identifies Act XXI of December 1999 as adding Mtarfa, the 68th locality. No predecessor/merger edge inferred.",
+    "source_id": "MTS-9c27776e7de910999e8a",
+    "status": "source_established_month_only"
+  },
+  {
+    "gate_id": "MT-LOCAL-BOUNDARIES",
+    "description": "Historical rows are attached to the same named legal council, not asserted to use identical polygons. A complete gazetted boundary-change audit remains open.",
+    "source_id": "MTS-10dda6ac094654257aa7",
+    "status": "open_boundary_audit"
+  },
+  {
+    "gate_id": "MT-SIX-REGIONS",
+    "description": "Current Act art.37A and Eleventh Schedule establish six regions. Earlier five-region subsidiary wording is not used to erase a current region. No guessed successor edges.",
+    "source_id": "MTS-10dda6ac094654257aa7",
+    "status": "current_six_verified_history_crosswalk_open"
+  },
+  {
+    "gate_id": "MT-GOZO-CIVIC",
+    "description": "Former Gozo Civic Council and its president remain historical records; no identity equivalence with modern Gozo Region.",
+    "source_id": "MTS-eb9a7c92b7e3fac61893",
+    "status": "historical_identity_retained"
+  }
+]
