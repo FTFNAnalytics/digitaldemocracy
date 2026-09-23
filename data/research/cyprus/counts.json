@@ -1,0 +1,48 @@
+{
+  "current_offices": 714,
+  "historical_offices": 174,
+  "office_rows": 888,
+  "events": 1599,
+  "reporting_units": 1679,
+  "results": 11112,
+  "current_types": {
+    "municipal_council": 20,
+    "mayor": 20,
+    "deputy_mayor": 93,
+    "community_council": 285,
+    "community_leader": 285,
+    "district_organisation_president": 5,
+    "national_parliament": 1,
+    "president": 1,
+    "european_parliament_delegation": 1,
+    "religious_group_representative": 3
+  },
+  "historical_types": {
+    "municipal_council": 28,
+    "mayor": 28,
+    "community_council": 59,
+    "community_leader": 59
+  },
+  "tier_histogram": {
+    "municipal": 877,
+    "regional": 5,
+    "national": 5,
+    "other": 1
+  },
+  "current_direct_executives": 404,
+  "current_local_councils": 305,
+  "municipalities": 20,
+  "named_communities": 285,
+  "ministry_overview_communities": 286,
+  "current_register_complete": false,
+  "historical_coverage_exhaustive": false,
+  "applied_changes": 0,
+  "approved": 0,
+  "result_kinds": {
+    "list_ballot": 3792,
+    "candidate_vote": 2103,
+    "candidate_preference": 5201,
+    "returned_representative": 3,
+    "party_seats": 13
+  }
+}

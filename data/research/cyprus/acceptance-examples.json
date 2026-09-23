@@ -1,0 +1,233 @@
+[
+  {
+    "id": "CY-A01",
+    "case": "President 2023 R1 and R2",
+    "expected": "Two events with one cycle_id, separate valid ballots 397317 and 394202; no transfer rows.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A02",
+    "case": "President 2003",
+    "expected": "One observed first-round event at year precision; no invented runoff.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A03",
+    "case": "First-round majority",
+    "expected": "Compare a candidate only with valid ballots of that first round; do not count blanks in the threshold.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A04",
+    "case": "Second-round outcome",
+    "expected": "Top-two new ballot, most valid votes wins; no invented transfer quota.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A05",
+    "case": "Lefkosia reform",
+    "expected": "Current council CY-MUN-11010000-council differs from CY-HIST-MUN-1000-council.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A06",
+    "case": "Statistical previous code",
+    "expected": "Record geography correspondence; successor-crosswalk stays empty without legal evidence.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A07",
+    "case": "Strovolos deputy",
+    "expected": "Keep CY-MUN-11021012-deputy-1012 as a direct popular office despite no municipal-quarter subdivision.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A08",
+    "case": "Community deputy",
+    "expected": "Council-selected mechanism does not generate a direct popular executive row.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A09",
+    "case": "285 versus 286",
+    "expected": "Exactly 285 named community council rows; completeness false; no unnamed placeholder.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A10",
+    "case": "Spilia Kourdali",
+    "expected": "Keep a distinct council and leader with ec_area_id null; no link to 1402.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A11",
+    "case": "Occupied municipality",
+    "expected": "A Republic displaced-elector mayor return for Keryneia is excluded locally; no TRNC office is instantiated.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A12",
+    "case": "Keryneia parliamentary constituency",
+    "expected": "Retain official House results even though the local territorial register excludes occupied units.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A13",
+    "case": "Partial municipal occupation",
+    "expected": "Retain the administered electoral municipality and its source footprint note; do not claim control over all statistical territory.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A14",
+    "case": "National House seats",
+    "expected": "56 operative legislative seats plus 24 unfilled constitutional reservations; not 80 contested seats.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A15",
+    "case": "Religious representatives",
+    "expected": "Three elected non-voting offices; do not add them to the 56 voting seats.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A16",
+    "case": "Armenian 2026 unopposed return",
+    "expected": "One returned representative, votes null, votes_status no_poll; no invented nationwide popular ballot.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A17",
+    "case": "Candidate preference",
+    "expected": "A 2016 councillor’s preference marks remain candidate_preference and are not added to the list vote total.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A18",
+    "case": "Malformed Ora CSV",
+    "expected": "Rows 471–473 remain in extraction-issues and raw CSV; no shifted name/vote pair enters results.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A19",
+    "case": "Explicit zero",
+    "expected": "Preserve source zero when present; missing votes or seats remain null.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A20",
+    "case": "Blank elected marker",
+    "expected": "Do not turn an empty 2016 elected column into false without a reliable source legend.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A21",
+    "case": "2016 final appendix",
+    "expected": "Do not attach the nationwide appendix to the last locality; ballot rows must sum to locality valid ballots.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A22",
+    "case": "2024 council CSV title",
+    "expected": "List ballot rows stay list_ballot even if the dataset title mentions preference crosses.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A23",
+    "case": "No local return",
+    "expected": "An office remains in the register; absent results do not prove it was unopposed or abolished.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A24",
+    "case": "Five DLGOs",
+    "expected": "Five direct president rows; no popular 17-member DLGO council contest.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A25",
+    "case": "Service cluster",
+    "expected": "Ex-officio community-leader membership does not create another popular election.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A26",
+    "case": "EP 2024",
+    "expected": "One delegation office, six seats in separate EP seat report; no double count with ministry ballot view.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A27",
+    "case": "2019 EP metadata",
+    "expected": "Keep year precision until the questionable 28 May metadata date is resolved.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A28",
+    "case": "2024 local poll date",
+    "expected": "Use 9 June proclamation; metadata 9 July does not overwrite it.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A29",
+    "case": "2026 correction",
+    "expected": "Use retained released CSV; do not subtract five ELAM votes a second time.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A30",
+    "case": "Source changed",
+    "expected": "Any payload byte change invalidates the stored SHA and requires a new research snapshot.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A31",
+    "case": "Draft tiers",
+    "expected": "888 office rows require exactly 888 draft classifications, all unapproved.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A32",
+    "case": "Window policy",
+    "expected": "Keep offices and history even when expected 2029/2031 cycles lie outside March 2028 alert cutoff.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  },
+  {
+    "id": "CY-A33",
+    "case": "No operational work",
+    "expected": "Validator reads package files only; no database, network, repository, importer or publication action.",
+    "status": "documented_acceptance_case",
+    "justin_approved": false
+  }
+]

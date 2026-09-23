@@ -1,0 +1,1117 @@
+[
+  {
+    "table": "dataset_lineage",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "provenance_kind",
+    "mapping": "country_package"
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "description",
+    "mapping": "Cyprus Prompt AQ research handoff; no implementation or operational changes."
+  },
+  {
+    "table": "dataset_release",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "dataset_release",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "dataset_release",
+    "column": "fingerprint_sha256",
+    "mapping": "Future release hash is not set. ZIP and package file hashes are delivery integrity only."
+  },
+  {
+    "table": "dataset_release",
+    "column": "hash_inputs_json",
+    "mapping": "Sorted retained source inventory plus contract, field-map and identity-rule hashes."
+  },
+  {
+    "table": "dataset_release",
+    "column": "adapter_version",
+    "mapping": "cyprus-field-map/1 documentation label only; no importer authored."
+  },
+  {
+    "table": "dataset_release",
+    "column": "method_version",
+    "mapping": "cyprus-source-preservation/1"
+  },
+  {
+    "table": "dataset_release",
+    "column": "schema_version",
+    "mapping": "Inherited 223-column contract pin; no live schema verification."
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_snapshot_label",
+    "mapping": "2026-09-22"
+  },
+  {
+    "table": "dataset_release",
+    "column": "upstream_release_id",
+    "mapping": "NULL; independent official snapshots have no invented shared release."
+  },
+  {
+    "table": "dataset_release",
+    "column": "validated_counts_json",
+    "mapping": "data/counts.json plus validation-report.json, with completeness=false."
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_coverage_complete",
+    "mapping": "false"
+  },
+  {
+    "table": "dataset_release",
+    "column": "raw_json",
+    "mapping": "Preserve the corresponding complete research record, status, source IDs, source locator and unresolved claims."
+  },
+  {
+    "table": "retained_input",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "retained_input",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "retained_input",
+    "column": "input_path",
+    "mapping": "source-inventory.input_path; package-relative retained input path."
+  },
+  {
+    "table": "retained_input",
+    "column": "input_kind",
+    "mapping": "source-inventory.capture_kind"
+  },
+  {
+    "table": "retained_input",
+    "column": "sha256",
+    "mapping": "SHA-256 of exact retained bytes."
+  },
+  {
+    "table": "retained_input",
+    "column": "byte_count",
+    "mapping": "source-inventory.byte_count"
+  },
+  {
+    "table": "retained_input",
+    "column": "recovery_locator",
+    "mapping": "Original source URL; stable snapshot file is retained for reproducibility."
+  },
+  {
+    "table": "retained_input",
+    "column": "payload_json",
+    "mapping": "Retained payload descriptor with relative path/hash, not a production blob."
+  },
+  {
+    "table": "country",
+    "column": "country_id",
+    "mapping": "Proposed CY (Republic of Cyprus); no database row written."
+  },
+  {
+    "table": "country",
+    "column": "country_code",
+    "mapping": "CY"
+  },
+  {
+    "table": "country",
+    "column": "name",
+    "mapping": "Source-preserved entity name; aliases in identity-aliases / quarter-name-aliases."
+  },
+  {
+    "table": "country",
+    "column": "polity_kind",
+    "mapping": "Republic; elected president and legislature."
+  },
+  {
+    "table": "country",
+    "column": "region_id",
+    "mapping": "Europe (draft taxonomy), Republic scope."
+  },
+  {
+    "table": "country",
+    "column": "coverage_status",
+    "mapping": "current_named_register_with_open_reconciliation_gate; historical_selected_not_exhaustive."
+  },
+  {
+    "table": "country",
+    "column": "screening_as_of_label",
+    "mapping": "2026-09-22"
+  },
+  {
+    "table": "country",
+    "column": "notes",
+    "mapping": "Research gaps and territorial limits; applied_changes=0."
+  },
+  {
+    "table": "country",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "country",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "country",
+    "column": "raw_json",
+    "mapping": "Preserve the corresponding complete research record, status, source IDs, source locator and unresolved claims."
+  },
+  {
+    "table": "geography",
+    "column": "country_id",
+    "mapping": "Proposed CY (Republic of Cyprus); no database row written."
+  },
+  {
+    "table": "geography",
+    "column": "geography_id",
+    "mapping": "office-register.geography_id; municipality CYSTAT code or community EC identity; Spilia-Kourdali explicit unresolved-code token."
+  },
+  {
+    "table": "geography",
+    "column": "name",
+    "mapping": "Source-preserved entity name; aliases in identity-aliases / quarter-name-aliases."
+  },
+  {
+    "table": "geography",
+    "column": "parent_geography_id",
+    "mapping": "Explicit municipal parent from reviewed CYSTAT municipal-quarter hierarchy; no guessed territorial successor."
+  },
+  {
+    "table": "geography",
+    "column": "effective_from_label",
+    "mapping": "NULL unless sourced legal commencement; statistical code date is not automatic office creation."
+  },
+  {
+    "table": "geography",
+    "column": "effective_to_label",
+    "mapping": "Historical end dates remain NULL pending legal reform verification."
+  },
+  {
+    "table": "geography",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "geography",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "geography",
+    "column": "raw_json",
+    "mapping": "Preserve the corresponding complete research record, status, source IDs, source locator and unresolved claims."
+  },
+  {
+    "table": "office",
+    "column": "id_namespace",
+    "mapping": "cyprus-research-aq-v1, scoped to the Republic electoral footprint."
+  },
+  {
+    "table": "office",
+    "column": "office_id",
+    "mapping": "data/office-register.json office_id; historical and post-reform identities are distinct."
+  },
+  {
+    "table": "office",
+    "column": "country_id",
+    "mapping": "Proposed CY (Republic of Cyprus); no database row written."
+  },
+  {
+    "table": "office",
+    "column": "geography_id",
+    "mapping": "office-register.geography_id; municipality CYSTAT code or community EC identity; Spilia-Kourdali explicit unresolved-code token."
+  },
+  {
+    "table": "office",
+    "column": "name",
+    "mapping": "Source-preserved entity name; aliases in identity-aliases / quarter-name-aliases."
+  },
+  {
+    "table": "office",
+    "column": "office_type",
+    "mapping": "office-register.office_type."
+  },
+  {
+    "table": "office",
+    "column": "office_status",
+    "mapping": "office-register.status: current or historical_only."
+  },
+  {
+    "table": "office",
+    "column": "record_state",
+    "mapping": "draft_research; never approved/published."
+  },
+  {
+    "table": "office",
+    "column": "state_note",
+    "mapping": "Carry territorial, round, certification, reform and missing-data gates verbatim."
+  },
+  {
+    "table": "office",
+    "column": "registry_qualified",
+    "mapping": "false pending Justin review and unresolved 285/286 community reconciliation."
+  },
+  {
+    "table": "office",
+    "column": "next_date_id",
+    "mapping": "No exact next poll day. calendar.json contains only nominal year / unresolved date."
+  },
+  {
+    "table": "office",
+    "column": "next_date_resolution",
+    "mapping": "year_expected or unresolved; alert window does not filter register/history."
+  },
+  {
+    "table": "office",
+    "column": "next_history_key",
+    "mapping": "NULL; no invented future contest."
+  },
+  {
+    "table": "office",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "office",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "office",
+    "column": "raw_json",
+    "mapping": "Preserve the corresponding complete research record, status, source IDs, source locator and unresolved claims."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "id_namespace",
+    "mapping": "cyprus-research-aq-v1, scoped to the Republic electoral footprint."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "office_id",
+    "mapping": "data/office-register.json office_id; historical and post-reform identities are distinct."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "tier",
+    "mapping": "draft-tiers.tier, exactly one row per current or historical office."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "review_status",
+    "mapping": "draft_for_human_review; Justin approval remains false."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "rationale",
+    "mapping": "draft-tiers.rationale plus mechanism/footprint gates."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_path",
+    "mapping": "data/draft-tiers.json"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_kind",
+    "mapping": "draft_for_human_review"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_sha256",
+    "mapping": "SHA-256 of data/draft-tiers.json"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "raw_json",
+    "mapping": "Preserve the corresponding complete research record, status, source IDs, source locator and unresolved claims."
+  },
+  {
+    "table": "research_date",
+    "column": "date_id",
+    "mapping": "Proposed CY date token from events.date + date_precision + certainty."
+  },
+  {
+    "table": "research_date",
+    "column": "label",
+    "mapping": "Date label exactly at source-supported precision."
+  },
+  {
+    "table": "research_date",
+    "column": "precision",
+    "mapping": "day or year; never add 01-01 to year-only history."
+  },
+  {
+    "table": "research_date",
+    "column": "certainty",
+    "mapping": "observed for supported poll dates; expected for nominal future years only."
+  },
+  {
+    "table": "research_date",
+    "column": "year",
+    "mapping": "Parse year from date label only."
+  },
+  {
+    "table": "research_date",
+    "column": "month",
+    "mapping": "Parse month only for day-precision dates, else NULL."
+  },
+  {
+    "table": "research_date",
+    "column": "day",
+    "mapping": "Parse day only for day-precision dates, else NULL."
+  },
+  {
+    "table": "research_date",
+    "column": "range_start_id",
+    "mapping": "NULL unless an explicit source range is supplied."
+  },
+  {
+    "table": "research_date",
+    "column": "range_end_id",
+    "mapping": "NULL unless an explicit source range is supplied."
+  },
+  {
+    "table": "research_date",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "research_date",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "research_date",
+    "column": "raw_json",
+    "mapping": "Preserve the corresponding complete research record, status, source IDs, source locator and unresolved claims."
+  },
+  {
+    "table": "election_event",
+    "column": "id_namespace",
+    "mapping": "cyprus-research-aq-v1, scoped to the Republic electoral footprint."
+  },
+  {
+    "table": "election_event",
+    "column": "office_id",
+    "mapping": "data/office-register.json office_id; historical and post-reform identities are distinct."
+  },
+  {
+    "table": "election_event",
+    "column": "history_key",
+    "mapping": "events.event_id; round-specific suffix R1/R2 retained."
+  },
+  {
+    "table": "election_event",
+    "column": "event_id",
+    "mapping": "events.event_id; no exact dates are part of identity unless source verified."
+  },
+  {
+    "table": "election_event",
+    "column": "date_id",
+    "mapping": "Proposed CY date token from events.date + date_precision + certainty."
+  },
+  {
+    "table": "election_event",
+    "column": "date_resolution",
+    "mapping": "events.date_precision with sourced-versus-year-only certainty."
+  },
+  {
+    "table": "election_event",
+    "column": "event_kind",
+    "mapping": "events.event_type, including unopposed/no-poll returns."
+  },
+  {
+    "table": "election_event",
+    "column": "selected_history_role",
+    "mapping": "observed_history, with three auxiliary religious-group returns explicitly typed."
+  },
+  {
+    "table": "election_event",
+    "column": "electoral_system",
+    "mapping": "events.electoral_system; President two-round plurality/majority as documented."
+  },
+  {
+    "table": "election_event",
+    "column": "comparability",
+    "mapping": "Preserve system, electorate, geographical version, round and result kind. Reforms are comparability gates."
+  },
+  {
+    "table": "election_event",
+    "column": "ballot_basis",
+    "mapping": "events.ballot_basis; national aggregates retain the official electorate, independent of local territorial exclusions."
+  },
+  {
+    "table": "election_event",
+    "column": "share_unit",
+    "mapping": "Per-result source_fraction or percent; convert only with explicit method."
+  },
+  {
+    "table": "election_event",
+    "column": "legal_outcome",
+    "mapping": "Only source-declared elected/unopposed/seat outcome; no winner inferred merely from maximum votes."
+  },
+  {
+    "table": "election_event",
+    "column": "record_state",
+    "mapping": "draft_research; never approved/published."
+  },
+  {
+    "table": "election_event",
+    "column": "state_note",
+    "mapping": "Carry territorial, round, certification, reform and missing-data gates verbatim."
+  },
+  {
+    "table": "election_event",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "election_event",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "election_event",
+    "column": "raw_json",
+    "mapping": "Preserve the corresponding complete research record, status, source IDs, source locator and unresolved claims."
+  },
+  {
+    "table": "proceeding",
+    "column": "id_namespace",
+    "mapping": "cyprus-research-aq-v1, scoped to the Republic electoral footprint."
+  },
+  {
+    "table": "proceeding",
+    "column": "office_id",
+    "mapping": "data/office-register.json office_id; historical and post-reform identities are distinct."
+  },
+  {
+    "table": "proceeding",
+    "column": "history_key",
+    "mapping": "events.event_id; round-specific suffix R1/R2 retained."
+  },
+  {
+    "table": "proceeding",
+    "column": "proceeding_id",
+    "mapping": "Proposed event_id + source-view/reporting-unit key; preserve rounds and source corrections separately."
+  },
+  {
+    "table": "proceeding",
+    "column": "kind",
+    "mapping": "Typed source view / round / correction / event kind; no STV proceeding invented."
+  },
+  {
+    "table": "proceeding",
+    "column": "sequence_no",
+    "mapping": "Presidential round number when applicable; otherwise only explicit source sequence."
+  },
+  {
+    "table": "proceeding",
+    "column": "supersedes_id",
+    "mapping": "NULL unless correction explicitly links two source versions; no guessed supersession."
+  },
+  {
+    "table": "proceeding",
+    "column": "legal_outcome",
+    "mapping": "Only source-declared elected/unopposed/seat outcome; no winner inferred merely from maximum votes."
+  },
+  {
+    "table": "proceeding",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "proceeding",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "proceeding",
+    "column": "raw_json",
+    "mapping": "Preserve the corresponding complete research record, status, source IDs, source locator and unresolved claims."
+  },
+  {
+    "table": "result_row",
+    "column": "id_namespace",
+    "mapping": "cyprus-research-aq-v1, scoped to the Republic electoral footprint."
+  },
+  {
+    "table": "result_row",
+    "column": "office_id",
+    "mapping": "data/office-register.json office_id; historical and post-reform identities are distinct."
+  },
+  {
+    "table": "result_row",
+    "column": "history_key",
+    "mapping": "events.event_id; round-specific suffix R1/R2 retained."
+  },
+  {
+    "table": "result_row",
+    "column": "result_row_id",
+    "mapping": "Proposed canonical event + unit + source ID + source locator + result_kind; results.result_id is a pack-local row locator only."
+  },
+  {
+    "table": "result_row",
+    "column": "proceeding_id",
+    "mapping": "Proposed event_id + source-view/reporting-unit key; preserve rounds and source corrections separately."
+  },
+  {
+    "table": "result_row",
+    "column": "country_id",
+    "mapping": "Proposed CY (Republic of Cyprus); no database row written."
+  },
+  {
+    "table": "result_row",
+    "column": "candidate_or_list_label",
+    "mapping": "results.name in source language; source candidate ID is election-scoped."
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_label",
+    "mapping": "results.party_label where present; else source list label for list_ballot only."
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_code",
+    "mapping": "NULL unless a code is explicitly supplied; names are not codes."
+  },
+  {
+    "table": "result_row",
+    "column": "party_namespace",
+    "mapping": "event-and-reporting-unit scoped source labels; no automatic cross-election political identity."
+  },
+  {
+    "table": "result_row",
+    "column": "party_mapping_id",
+    "mapping": "NULL; no political grouping or cross-cycle party continuity inferred."
+  },
+  {
+    "table": "result_row",
+    "column": "votes",
+    "mapping": "results.votes with result_kind; candidate preferences are not additive to list ballots."
+  },
+  {
+    "table": "result_row",
+    "column": "votes_status",
+    "mapping": "reported / not_reported / no_poll as preserved."
+  },
+  {
+    "table": "result_row",
+    "column": "share",
+    "mapping": "results.share exactly as source; optional derived normalization must preserve source units."
+  },
+  {
+    "table": "result_row",
+    "column": "share_status",
+    "mapping": "reported only when share is present; otherwise unknown."
+  },
+  {
+    "table": "result_row",
+    "column": "share_unit",
+    "mapping": "Per-result source_fraction or percent; convert only with explicit method."
+  },
+  {
+    "table": "result_row",
+    "column": "seats",
+    "mapping": "results.seats for separate seat observations; council composition seats are not election party seats."
+  },
+  {
+    "table": "result_row",
+    "column": "seats_status",
+    "mapping": "reported only when seats is present; otherwise unknown."
+  },
+  {
+    "table": "result_row",
+    "column": "elected_flag",
+    "mapping": "results.elected; null is not false."
+  },
+  {
+    "table": "result_row",
+    "column": "is_substitute",
+    "mapping": "NULL; later replacement notes are not an original election preference count."
+  },
+  {
+    "table": "result_row",
+    "column": "evidence_status",
+    "mapping": "source status retained: official portal, open-data return or parliamentary/EP report; Gazette verification separate."
+  },
+  {
+    "table": "result_row",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "result_row",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "result_row",
+    "column": "raw_json",
+    "mapping": "Preserve the corresponding complete research record, status, source IDs, source locator and unresolved claims."
+  },
+  {
+    "table": "party_mapping",
+    "column": "country_id",
+    "mapping": "Proposed CY (Republic of Cyprus); no database row written."
+  },
+  {
+    "table": "party_mapping",
+    "column": "party_namespace",
+    "mapping": "event-and-reporting-unit scoped source labels; no automatic cross-election political identity."
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapping_id",
+    "mapping": "No party mapping rows. Alias mappings are distinct reviewed identity evidence."
+  },
+  {
+    "table": "party_mapping",
+    "column": "source_context",
+    "mapping": "Source ID, locator and reporting unit of the original political label."
+  },
+  {
+    "table": "party_mapping",
+    "column": "election_context",
+    "mapping": "Event/round + reporting unit, not a nationwide popular universe for unopposed religious returns."
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_label",
+    "mapping": "Exact source political label, if any."
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_code",
+    "mapping": "Source-supplied political code only; NULL when absent."
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapped_group",
+    "mapping": "NULL; party mapping omitted."
+  },
+  {
+    "table": "party_mapping",
+    "column": "uncertainty",
+    "mapping": "Unresolved alias, certification, temporal or territorial gate retained explicitly."
+  },
+  {
+    "table": "party_mapping",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "party_mapping",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "party_mapping",
+    "column": "raw_json",
+    "mapping": "Preserve the corresponding complete research record, status, source IDs, source locator and unresolved claims."
+  },
+  {
+    "table": "source",
+    "column": "country_id",
+    "mapping": "Proposed CY (Republic of Cyprus); no database row written."
+  },
+  {
+    "table": "source",
+    "column": "source_namespace",
+    "mapping": "cyprus-primary-sources-aq"
+  },
+  {
+    "table": "source",
+    "column": "source_id",
+    "mapping": "source-inventory.source_id, tied to retained payload path."
+  },
+  {
+    "table": "source",
+    "column": "publisher",
+    "mapping": "source-inventory.publisher"
+  },
+  {
+    "table": "source",
+    "column": "title",
+    "mapping": "source-inventory.title"
+  },
+  {
+    "table": "source",
+    "column": "url",
+    "mapping": "source-inventory.url; extracted web snapshots are labelled as such."
+  },
+  {
+    "table": "source",
+    "column": "checked_as_of_label",
+    "mapping": "2026-09-22"
+  },
+  {
+    "table": "source",
+    "column": "evidence_grade",
+    "mapping": "source-inventory.evidence_grade"
+  },
+  {
+    "table": "source",
+    "column": "file_sha256",
+    "mapping": "source-inventory.sha256 of exact retained bytes."
+  },
+  {
+    "table": "source",
+    "column": "locator",
+    "mapping": "source-inventory.input_path plus record locator."
+  },
+  {
+    "table": "source",
+    "column": "data_rights",
+    "mapping": "source-inventory.data_rights; no ownership inferred."
+  },
+  {
+    "table": "source",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "source",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "source",
+    "column": "raw_json",
+    "mapping": "Preserve the corresponding complete research record, status, source IDs, source locator and unresolved claims."
+  },
+  {
+    "table": "record_locator",
+    "column": "record_key",
+    "mapping": "Typed canonical research key (office/event/unit/result/source); do not merge distinct entity kinds."
+  },
+  {
+    "table": "record_locator",
+    "column": "entity_kind",
+    "mapping": "office, geography, event, unit, result or source as explicitly typed."
+  },
+  {
+    "table": "record_locator",
+    "column": "country_id",
+    "mapping": "Proposed CY (Republic of Cyprus); no database row written."
+  },
+  {
+    "table": "record_locator",
+    "column": "geography_id",
+    "mapping": "office-register.geography_id; municipality CYSTAT code or community EC identity; Spilia-Kourdali explicit unresolved-code token."
+  },
+  {
+    "table": "record_locator",
+    "column": "id_namespace",
+    "mapping": "cyprus-research-aq-v1, scoped to the Republic electoral footprint."
+  },
+  {
+    "table": "record_locator",
+    "column": "office_id",
+    "mapping": "data/office-register.json office_id; historical and post-reform identities are distinct."
+  },
+  {
+    "table": "record_locator",
+    "column": "history_key",
+    "mapping": "events.event_id; round-specific suffix R1/R2 retained."
+  },
+  {
+    "table": "record_locator",
+    "column": "proceeding_id",
+    "mapping": "Proposed event_id + source-view/reporting-unit key; preserve rounds and source corrections separately."
+  },
+  {
+    "table": "record_locator",
+    "column": "result_row_id",
+    "mapping": "Proposed canonical event + unit + source ID + source locator + result_kind; results.result_id is a pack-local row locator only."
+  },
+  {
+    "table": "record_locator",
+    "column": "party_namespace",
+    "mapping": "event-and-reporting-unit scoped source labels; no automatic cross-election political identity."
+  },
+  {
+    "table": "record_locator",
+    "column": "party_mapping_id",
+    "mapping": "NULL; no political grouping or cross-cycle party continuity inferred."
+  },
+  {
+    "table": "record_locator",
+    "column": "source_namespace",
+    "mapping": "cyprus-primary-sources-aq"
+  },
+  {
+    "table": "record_locator",
+    "column": "source_id",
+    "mapping": "source-inventory.source_id, tied to retained payload path."
+  },
+  {
+    "table": "record_locator",
+    "column": "input_path",
+    "mapping": "source-inventory.input_path; package-relative retained input path."
+  },
+  {
+    "table": "record_locator",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "record_locator",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "record_locator",
+    "column": "source_row_locator",
+    "mapping": "Exact source_locator on the corresponding research record."
+  },
+  {
+    "table": "evidence_link",
+    "column": "evidence_id",
+    "mapping": "Future canonical hash of record key + source ID + locator + claim kind; no persisted evidence rows."
+  },
+  {
+    "table": "evidence_link",
+    "column": "record_key",
+    "mapping": "Typed canonical research key (office/event/unit/result/source); do not merge distinct entity kinds."
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_country_id",
+    "mapping": "CY"
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_namespace",
+    "mapping": "cyprus-primary-sources-aq"
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_id",
+    "mapping": "source-inventory.source_id, tied to retained payload path."
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_locator",
+    "mapping": "Record source_locator or specific table/CSV row/JSON pointer."
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_kind",
+    "mapping": "Identity / selection mechanism / territorial footing / date / ballot value / seat declaration / unresolved claim."
+  },
+  {
+    "table": "evidence_link",
+    "column": "date_claim_id",
+    "mapping": "Only when source supports date precision; otherwise NULL."
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_json",
+    "mapping": "Source-supported claim and its status; never fill an unknown with zero."
+  },
+  {
+    "table": "evidence_link",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "evidence_link",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "unresolved_id",
+    "mapping": "Stable proposed gate ID from research-gaps.json plus record key."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "record_key",
+    "mapping": "Typed canonical research key (office/event/unit/result/source); do not merge distinct entity kinds."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "original_token",
+    "mapping": "Unresolved source name, malformed field or ambiguous date exactly as retained."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "source_locator",
+    "mapping": "Record source_locator or specific table/CSV row/JSON pointer."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "reason",
+    "mapping": "Named gap, excluded-source-observations reason, or extraction-issues kind."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "raw_json",
+    "mapping": "Preserve the corresponding complete research record, status, source IDs, source locator and unresolved claims."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "entity_kind",
+    "mapping": "office, geography, event, unit, result or source as explicitly typed."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_namespace",
+    "mapping": "CYSTAT geocode / Central Electoral Service area ID, with vintage and election context."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_id",
+    "mapping": "Explicit source code only; no arithmetic conversion used as identity evidence."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "record_key",
+    "mapping": "Typed canonical research key (office/event/unit/result/source); do not merge distinct entity kinds."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "reason",
+    "mapping": "Named gap, excluded-source-observations reason, or extraction-issues kind."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "lineage_id",
+    "mapping": "Proposed country-package-cyprus; no lineage written."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "release_id",
+    "mapping": "NULL operationally. Future release fingerprint requires reviewed canonical input inventory; no release created."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "raw_json",
+    "mapping": "Preserve the corresponding complete research record, status, source IDs, source locator and unresolved claims."
+  },
+  {
+    "table": "publication_release",
+    "column": "lineage_id",
+    "mapping": "NOT EXECUTED. No publication_release row is created; lineage_id is operational-only and has no research value assigned."
+  },
+  {
+    "table": "publication_release",
+    "column": "release_id",
+    "mapping": "NOT EXECUTED. No publication_release row is created; release_id is operational-only and has no research value assigned."
+  },
+  {
+    "table": "publication_receipt",
+    "column": "singleton",
+    "mapping": "NOT EXECUTED. No publication_receipt row is created; singleton is operational-only and has no research value assigned."
+  },
+  {
+    "table": "publication_receipt",
+    "column": "last_publish_attempt_id",
+    "mapping": "NOT EXECUTED. No publication_receipt row is created; last_publish_attempt_id is operational-only and has no research value assigned."
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_lineage_id",
+    "mapping": "NOT EXECUTED. No publication_receipt row is created; attempted_lineage_id is operational-only and has no research value assigned."
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_release_id",
+    "mapping": "NOT EXECUTED. No publication_receipt row is created; attempted_release_id is operational-only and has no research value assigned."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "attempt_id",
+    "mapping": "NOT EXECUTED. No ingest_attempt row is created; attempt_id is operational-only and has no research value assigned."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "lineage_id",
+    "mapping": "NOT EXECUTED. No ingest_attempt row is created; lineage_id is operational-only and has no research value assigned."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "operator",
+    "mapping": "NOT EXECUTED. No ingest_attempt row is created; operator is operational-only and has no research value assigned."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "script_version",
+    "mapping": "NOT EXECUTED. No ingest_attempt row is created; script_version is operational-only and has no research value assigned."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "started_at",
+    "mapping": "NOT EXECUTED. No ingest_attempt row is created; started_at is operational-only and has no research value assigned."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "finished_at",
+    "mapping": "NOT EXECUTED. No ingest_attempt row is created; finished_at is operational-only and has no research value assigned."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "status",
+    "mapping": "NOT EXECUTED. No ingest_attempt row is created; status is operational-only and has no research value assigned."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "input_inventory_json",
+    "mapping": "NOT EXECUTED. No ingest_attempt row is created; input_inventory_json is operational-only and has no research value assigned."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "successful_release_id",
+    "mapping": "NOT EXECUTED. No ingest_attempt row is created; successful_release_id is operational-only and has no research value assigned."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "publication_set_json",
+    "mapping": "NOT EXECUTED. No ingest_attempt row is created; publication_set_json is operational-only and has no research value assigned."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "row_counts_json",
+    "mapping": "NOT EXECUTED. No ingest_attempt row is created; row_counts_json is operational-only and has no research value assigned."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "error_text",
+    "mapping": "NOT EXECUTED. No ingest_attempt row is created; error_text is operational-only and has no research value assigned."
+  }
+]
