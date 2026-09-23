@@ -1,0 +1,2389 @@
+{
+  "schema_version": "atlas-tier-classification/1",
+  "lineage_id": "country-package-luxembourg",
+  "country_slug": "luxembourg",
+  "country_id": "luxembourg",
+  "status": "approved",
+  "prompt": "prompt_ao",
+  "source_register": {
+    "input_path": "data/research/luxembourg/office-register.json",
+    "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+    "bytes": 78295
+  },
+  "source_inputs": [
+    {
+      "input_path": "data/research/luxembourg/office-register.json",
+      "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6"
+    },
+    {
+      "input_path": "data/research/luxembourg/draft-tiers.json",
+      "sha256": "9d3692b95e7188841cfbeea6bf4bee8c52e299811a56474d87948cbc3b43f3ad"
+    }
+  ],
+  "counts_by_proposed_tier": {
+    "municipal": 128,
+    "regional": 0,
+    "national": 1,
+    "other": 1,
+    "unknown": 0
+  },
+  "schema_compatibility": {
+    "national": "national_context",
+    "regional": "regional",
+    "municipal": "municipal",
+    "other": "other",
+    "unknown": null
+  },
+  "rules": [
+    "One classification per register office_id, including 28 historical communal councils.",
+    "Draft tier labels are unchanged: 128 municipal / 0 regional / 1 national / 1 other.",
+    "Communal councils are municipal. Cantons and districts are geography, not regional offices.",
+    "Chambre des Députés is national. The EP delegation is other.",
+    "No Grand Duke or mayor popular contest is added. LU-G01 and LU-G02 stay resolved exclusions.",
+    "Per-office review_status stays needs_review. File status is approved with LU-G03–LU-G11 left open.",
+    "Merger edges stay the 28 explicit portal predecessors. Missing 1994 EP votes are not invented."
+  ],
+  "notes": [
+    "Justin accepted 2026-09-22 America/Edmonton with holds LU-G03 through LU-G11 open. LU-G01 and LU-G02 are documented resolved exclusions, not closed research holds. No Grand Duke or mayor popular contest, guessed merger edge, or missing 1994 EP vote was added."
+  ],
+  "production_accepted": true,
+  "predecessor_draft_sha256": "9d3692b95e7188841cfbeea6bf4bee8c52e299811a56474d87948cbc3b43f3ad",
+  "justin_approval": {
+    "accepted": true,
+    "accepted_by": "Justin",
+    "accepted_at": "2026-09-22",
+    "timezone": "America/Edmonton",
+    "decision": "accept_with_holds",
+    "current_offices": 102,
+    "historical_offices": 28,
+    "offices": 130,
+    "events": 438,
+    "results": 48197,
+    "draft_tiers": {
+      "municipal": 128,
+      "regional": 0,
+      "national": 1,
+      "other": 1
+    },
+    "current_communal_councils": 100,
+    "historical_communal_councils": 28,
+    "direct_executives": 0,
+    "regional_offices": 0,
+    "scope": "all_draft_offices_with_named_holds",
+    "holds_open": [
+      "LU-G03",
+      "LU-G04",
+      "LU-G05",
+      "LU-G06",
+      "LU-G07",
+      "LU-G08",
+      "LU-G09",
+      "LU-G10",
+      "LU-G11"
+    ],
+    "resolved_exclusions": [
+      "LU-G01",
+      "LU-G02"
+    ],
+    "holds_resolved": []
+  },
+  "approval": {
+    "Justin_accepted": true,
+    "production_accepted": true,
+    "by": "product_owner",
+    "accepted_by": "Justin",
+    "date": "2026-09-22",
+    "timezone": "America/Edmonton",
+    "decision": "accept_with_holds",
+    "holds_open": [
+      "LU-G03",
+      "LU-G04",
+      "LU-G05",
+      "LU-G06",
+      "LU-G07",
+      "LU-G08",
+      "LU-G09",
+      "LU-G10",
+      "LU-G11"
+    ],
+    "resolved_exclusions": [
+      "LU-G01",
+      "LU-G02"
+    ],
+    "holds_resolved": [],
+    "notes": "Justin accepted 2026-09-22 Prompt AO with holds LU-G03 through LU-G11 left open. LU-G01 (Grand Duke) and LU-G02 (mayors) remain resolved exclusions: no popular office invented. 102 current + 28 historical offices (130); 438 events; 48197 result observations in the full pack. Draft tiers 128 municipal / 0 regional / 1 national / 1 other. Direct executives 0. 28 explicit merger edges only. 1994 EP Grevenmacher LSAP votes stay missing. Per-office review_status stays needs_review. results.json and sources/ omitted from this slim land. No Luxembourg importer in this landing."
+  },
+  "classifications": [
+    {
+      "office_id": "LU-C-beaufort",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/0"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-bech",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/1"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-beckerich",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/2"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-berdorf",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/3"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-bertrange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/4"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-bettembourg",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/5"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-bettendorf",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/6"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-betzdorf",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/7"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-bissen",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/8"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-biwer",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/9"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-boulaide",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/10"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-bourscheid",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/11"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-bous-waldbredimus",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/12"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-clervaux",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/13"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-colmar-berg",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/14"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-consdorf",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/15"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-contern",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/16"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-dalheim",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/17"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-diekirch",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/18"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-differdange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/19"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-dippach",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/20"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-dudelange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/21"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-echternach",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/22"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-ell",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/23"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-erpeldange-sur-sure",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/24"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-esch-sur-alzette",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/25"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-esch-sur-sure",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/26"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-ettelbruck",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/27"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-feulen",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/28"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-fischbach",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/29"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-flaxweiler",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/30"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-frisange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/31"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-garnich",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/32"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-goesdorf",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/33"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-grevenmacher",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/34"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-groussbus-wal",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/35"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-habscht",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/36"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-heffingen",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/37"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-helperknapp",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/38"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-hesperange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/39"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-junglinster",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/40"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-kayl",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/41"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-kehlen",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/42"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-kiischpelt",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/43"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-koerich",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/44"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-kopstal",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/45"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-kaerjeng",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/46"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-lac-de-la-haute-sure",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/47"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-larochette",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/48"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-lenningen",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/49"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-leudelange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/50"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-lintgen",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/51"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-lorentzweiler",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/52"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-luxembourg",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/53"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-mamer",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/54"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-manternach",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/55"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-mersch",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/56"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-mertert",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/57"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-mertzig",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/58"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-mondercange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/59"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-mondorf-les-bains",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/60"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-niederanven",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/61"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-nommern",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/62"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-parc-hosingen",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/63"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-preizerdaul",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/64"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-putscheid",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/65"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-petange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/66"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-rambrouch",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/67"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-reckange-sur-mess",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/68"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-redange-attert",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/69"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-reisdorf",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/70"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-remich",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/71"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-roeser",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/72"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-rosport-mompach",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/73"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-rumelange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/74"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-saeul",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/75"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-sandweiler",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/76"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-sanem",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/77"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-schengen",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/78"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-schieren",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/79"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-schifflange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/80"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-schuttrange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/81"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-stadtbredimus",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/82"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-steinfort",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/83"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-steinsel",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/84"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-strassen",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/85"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-tandel",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/86"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-troisvierges",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/87"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-useldange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/88"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-vallee-de-l-ernz",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/89"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-vianden",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/90"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-vichten",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/91"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-waldbillig",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/92"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-walferdange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/93"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-weiler-la-tour",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/94"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-weiswampach",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/95"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-wiltz",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/96"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-wincrange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/97"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-winseler",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/98"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-wormeldange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Current communal council on the government Geoportail register. Geographic tier is municipal. No separate popular mayoral contest (LU-G02 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/99"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-PARLIAMENT",
+      "tier": "national",
+      "schema_v1_tier": "national_context",
+      "review_status": "needs_review",
+      "rationale": "Chambre des Députés. Geographic tier is national. Certified seat-vector transcription stays incomplete (LU-G07). No popular Grand Duke contest (LU-G01 resolved exclusion).",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G07"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/100"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-EP",
+      "tier": "other",
+      "schema_v1_tier": "other",
+      "review_status": "needs_review",
+      "rationale": "Luxembourg European Parliament delegation, drafted other. 1994 Grevenmacher LSAP votes stay missing (LU-G11); they are not invented.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G06",
+        "LU-G11"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/101"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-bous",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/102"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-waldbredimus",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/103"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-grosbous",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/104"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-wahl",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/105"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-boevange-sur-attert",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/106"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-eschweiler",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/107"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-hobscheid",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/108"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-mompach",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/109"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-rosport",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/110"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-septfontaines",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/111"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-tuntange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/112"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-wiltz-pre-merger",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/113"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-bascharage",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/114"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-burmerange",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/115"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-clemency",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/116"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-clervaux-pre-merger",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/117"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-consthum",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/118"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-ermsdorf",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/119"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-esch-sur-sure-pre-merger",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/120"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-heiderscheid",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/121"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-heinerscheid",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/122"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-hoscheid",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/123"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-hosingen",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/124"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-medernach",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/125"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-munshausen",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/126"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-neunhausen",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/127"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-schengen-pre-merger",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/128"
+        }
+      ]
+    },
+    {
+      "office_id": "LU-C-wellenstein",
+      "tier": "municipal",
+      "schema_v1_tier": "municipal",
+      "review_status": "needs_review",
+      "rationale": "Historical communal council retained as its own identity. Geographic tier is municipal. Only explicit portal predecessor edges are kept (LU-G03); no guessed merger.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "review_categories": [
+        "LU-G03"
+      ],
+      "evidence": [
+        {
+          "input_path": "data/research/luxembourg/office-register.json",
+          "sha256": "4505d3bee3ca17d0eb0917bf8c07e70b22c59f55577e5a38b097f7472ade23a6",
+          "json_pointer": "/129"
+        }
+      ]
+    }
+  ]
+}

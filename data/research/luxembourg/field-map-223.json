@@ -1,0 +1,1117 @@
+[
+  {
+    "table": "dataset_lineage",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "provenance_kind",
+    "mapping": "country_package"
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "description",
+    "mapping": "Luxembourg Prompt AO official-source research handoff."
+  },
+  {
+    "table": "dataset_release",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "dataset_release",
+    "column": "release_id",
+    "mapping": "Future L + --sha256- + canonical effective-input fingerprint; no release is applied."
+  },
+  {
+    "table": "dataset_release",
+    "column": "fingerprint_sha256",
+    "mapping": "SHA256 of sorted path/hash list plus contract/identity/map versions and accepted tiers; excludes clock and attempt ID."
+  },
+  {
+    "table": "dataset_release",
+    "column": "hash_inputs_json",
+    "mapping": "Canonical object of those exact inputs; draft tier status prevents publication."
+  },
+  {
+    "table": "dataset_release",
+    "column": "adapter_version",
+    "mapping": "atlas-luxembourg-field-map/1 (documentation identifier, no importer)."
+  },
+  {
+    "table": "dataset_release",
+    "column": "method_version",
+    "mapping": "atlas-preserve-evidence/1"
+  },
+  {
+    "table": "dataset_release",
+    "column": "schema_version",
+    "mapping": "Inherited atlas-master/1 contract; current production migration execution Not run."
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_snapshot_label",
+    "mapping": "2026-09-22"
+  },
+  {
+    "table": "dataset_release",
+    "column": "upstream_release_id",
+    "mapping": "Prompt-AO-Luxembourg"
+  },
+  {
+    "table": "dataset_release",
+    "column": "validated_counts_json",
+    "mapping": "Computed validator output, not hard-coded source counts."
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_coverage_complete",
+    "mapping": "0: historical supplement/certification gaps remain documented."
+  },
+  {
+    "table": "dataset_release",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source URL, locator, capture SHA; preserve all fields omitted from normalized projection."
+  },
+  {
+    "table": "retained_input",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "retained_input",
+    "column": "release_id",
+    "mapping": "Future L + --sha256- + canonical effective-input fingerprint; no release is applied."
+  },
+  {
+    "table": "retained_input",
+    "column": "input_path",
+    "mapping": "Source inventory.path or exact data/ relative member path."
+  },
+  {
+    "table": "retained_input",
+    "column": "input_kind",
+    "mapping": "artifact for sources; package for data/docs/contract; tier_classification for draft-tiers."
+  },
+  {
+    "table": "retained_input",
+    "column": "sha256",
+    "mapping": "Exact retained bytes SHA-256."
+  },
+  {
+    "table": "retained_input",
+    "column": "byte_count",
+    "mapping": "Exact retained bytes length."
+  },
+  {
+    "table": "retained_input",
+    "column": "recovery_locator",
+    "mapping": "ZIP relative member path."
+  },
+  {
+    "table": "retained_input",
+    "column": "payload_json",
+    "mapping": "Source descriptor, including capture_kind; never pretend web extract is original PDF."
+  },
+  {
+    "table": "country",
+    "column": "country_id",
+    "mapping": "Fixed luxembourg."
+  },
+  {
+    "table": "country",
+    "column": "country_code",
+    "mapping": "LU"
+  },
+  {
+    "table": "country",
+    "column": "name",
+    "mapping": "Luxembourg"
+  },
+  {
+    "table": "country",
+    "column": "polity_kind",
+    "mapping": "constitutional_monarchy"
+  },
+  {
+    "table": "country",
+    "column": "region_id",
+    "mapping": "europe"
+  },
+  {
+    "table": "country",
+    "column": "coverage_status",
+    "mapping": "full_current_register_historical_archive_coverage_with_explicit_gaps"
+  },
+  {
+    "table": "country",
+    "column": "screening_as_of_label",
+    "mapping": "2026-09-22"
+  },
+  {
+    "table": "country",
+    "column": "notes",
+    "mapping": "Grand Duke hereditary; mayor appointed from council majority; no popular executive offices."
+  },
+  {
+    "table": "country",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "country",
+    "column": "release_id",
+    "mapping": "Future L + --sha256- + canonical effective-input fingerprint; no release is applied."
+  },
+  {
+    "table": "country",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source URL, locator, capture SHA; preserve all fields omitted from normalized projection."
+  },
+  {
+    "table": "geography",
+    "column": "country_id",
+    "mapping": "Fixed luxembourg."
+  },
+  {
+    "table": "geography",
+    "column": "geography_id",
+    "mapping": "LU-G- + office_id; country geography for Parliament and EP, distinct pre-merger geography for historic councils."
+  },
+  {
+    "table": "geography",
+    "column": "name",
+    "mapping": "office.commune, otherwise Luxembourg."
+  },
+  {
+    "table": "geography",
+    "column": "parent_geography_id",
+    "mapping": "Luxembourg country geography for communes; NULL for country. Cantons are geography, not elected regional offices."
+  },
+  {
+    "table": "geography",
+    "column": "effective_from_label",
+    "mapping": "merger-crosswalk.effective_date when known; otherwise NULL."
+  },
+  {
+    "table": "geography",
+    "column": "effective_to_label",
+    "mapping": "Evidence-supported merger effective_date for predecessor; otherwise NULL, not inferred from absent results."
+  },
+  {
+    "table": "geography",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "geography",
+    "column": "release_id",
+    "mapping": "Future L + --sha256- + canonical effective-input fingerprint; no release is applied."
+  },
+  {
+    "table": "geography",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source URL, locator, capture SHA; preserve all fields omitted from normalized projection."
+  },
+  {
+    "table": "office",
+    "column": "id_namespace",
+    "mapping": "Proposed cdd-atlas-lu-research-v1; crosswalk required before an existing namespace is reused."
+  },
+  {
+    "table": "office",
+    "column": "office_id",
+    "mapping": "office-register.office_id, or events[results.event_id].office_id; exact FK."
+  },
+  {
+    "table": "office",
+    "column": "country_id",
+    "mapping": "Fixed luxembourg."
+  },
+  {
+    "table": "office",
+    "column": "geography_id",
+    "mapping": "LU-G- + office_id; country geography for Parliament and EP, distinct pre-merger geography for historic councils."
+  },
+  {
+    "table": "office",
+    "column": "name",
+    "mapping": "office-register.name"
+  },
+  {
+    "table": "office",
+    "column": "office_type",
+    "mapping": "office-register.office_type"
+  },
+  {
+    "table": "office",
+    "column": "office_status",
+    "mapping": "office-register.status"
+  },
+  {
+    "table": "office",
+    "column": "record_state",
+    "mapping": "active (retained historical offices are active research records, with office_status=historical)."
+  },
+  {
+    "table": "office",
+    "column": "state_note",
+    "mapping": "Boundary, source status and uncontested notes; NULL if absent."
+  },
+  {
+    "table": "office",
+    "column": "registry_qualified",
+    "mapping": "1 for all sourced included offices."
+  },
+  {
+    "table": "office",
+    "column": "next_date_id",
+    "mapping": "NULL; no called future polling day established."
+  },
+  {
+    "table": "office",
+    "column": "next_date_resolution",
+    "mapping": "unknown"
+  },
+  {
+    "table": "office",
+    "column": "next_history_key",
+    "mapping": "NULL"
+  },
+  {
+    "table": "office",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "office",
+    "column": "release_id",
+    "mapping": "Future L + --sha256- + canonical effective-input fingerprint; no release is applied."
+  },
+  {
+    "table": "office",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source URL, locator, capture SHA; preserve all fields omitted from normalized projection."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "id_namespace",
+    "mapping": "Proposed cdd-atlas-lu-research-v1; crosswalk required before an existing namespace is reused."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "office_id",
+    "mapping": "office-register.office_id, or events[results.event_id].office_id; exact FK."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "tier",
+    "mapping": "draft-tiers.tier exact office 1:1."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "review_status",
+    "mapping": "needs_review"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "rationale",
+    "mapping": "Communal council municipal; national Parliament national; EP delegation other; no regional elected body."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "release_id",
+    "mapping": "Future L + --sha256- + canonical effective-input fingerprint; no release is applied."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_path",
+    "mapping": "data/draft-tiers.json"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_kind",
+    "mapping": "draft_for_human_review"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_sha256",
+    "mapping": "SHA256 of exact draft-tiers.json bytes."
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source URL, locator, capture SHA; preserve all fields omitted from normalized projection."
+  },
+  {
+    "table": "research_date",
+    "column": "date_id",
+    "mapping": "LU-D- + exact label + precision; no missing day invented."
+  },
+  {
+    "table": "research_date",
+    "column": "label",
+    "mapping": "events.date"
+  },
+  {
+    "table": "research_date",
+    "column": "precision",
+    "mapping": "events.date_precision"
+  },
+  {
+    "table": "research_date",
+    "column": "certainty",
+    "mapping": "observed for sourced dates; year-only remains year precision. Uncontested dates are cycle labels, not polling."
+  },
+  {
+    "table": "research_date",
+    "column": "year",
+    "mapping": "First four digits of events.date."
+  },
+  {
+    "table": "research_date",
+    "column": "month",
+    "mapping": "Digits 6–7 only for day precision, else NULL."
+  },
+  {
+    "table": "research_date",
+    "column": "day",
+    "mapping": "Digits 9–10 only for day precision, else NULL."
+  },
+  {
+    "table": "research_date",
+    "column": "range_start_id",
+    "mapping": "NULL"
+  },
+  {
+    "table": "research_date",
+    "column": "range_end_id",
+    "mapping": "NULL"
+  },
+  {
+    "table": "research_date",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "research_date",
+    "column": "release_id",
+    "mapping": "Future L + --sha256- + canonical effective-input fingerprint; no release is applied."
+  },
+  {
+    "table": "research_date",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source URL, locator, capture SHA; preserve all fields omitted from normalized projection."
+  },
+  {
+    "table": "election_event",
+    "column": "id_namespace",
+    "mapping": "Proposed cdd-atlas-lu-research-v1; crosswalk required before an existing namespace is reused."
+  },
+  {
+    "table": "election_event",
+    "column": "office_id",
+    "mapping": "office-register.office_id, or events[results.event_id].office_id; exact FK."
+  },
+  {
+    "table": "election_event",
+    "column": "history_key",
+    "mapping": "events.event_id (stable office + source-supported election date/year)."
+  },
+  {
+    "table": "election_event",
+    "column": "event_id",
+    "mapping": "events.event_id; one council/cycle, sections share it."
+  },
+  {
+    "table": "election_event",
+    "column": "date_id",
+    "mapping": "LU-D- + exact label + precision; no missing day invented."
+  },
+  {
+    "table": "election_event",
+    "column": "date_resolution",
+    "mapping": "resolved to source-backed label, independent of precision."
+  },
+  {
+    "table": "election_event",
+    "column": "event_kind",
+    "mapping": "events.event_type"
+  },
+  {
+    "table": "election_event",
+    "column": "selected_history_role",
+    "mapping": "historical"
+  },
+  {
+    "table": "election_event",
+    "column": "electoral_system",
+    "mapping": "Source modeScrutin / 2011 header / HTML details, retained in observations; NULL where unestablished."
+  },
+  {
+    "table": "election_event",
+    "column": "comparability",
+    "mapping": "Boundary-qualified; no cross-merger comparability. Separate national/constituency/commune reporting scopes."
+  },
+  {
+    "table": "election_event",
+    "column": "ballot_basis",
+    "mapping": "Panachage/multiple votes; candidate and list totals not additive. Uncontested units have no popular vote vector."
+  },
+  {
+    "table": "election_event",
+    "column": "share_unit",
+    "mapping": "percent"
+  },
+  {
+    "table": "election_event",
+    "column": "legal_outcome",
+    "mapping": "Source result_status only; unofficial does not imply certified."
+  },
+  {
+    "table": "election_event",
+    "column": "record_state",
+    "mapping": "active (retained historical offices are active research records, with office_status=historical)."
+  },
+  {
+    "table": "election_event",
+    "column": "state_note",
+    "mapping": "events.uncontested_reporting_units, date_role, result_status and observation exceptions."
+  },
+  {
+    "table": "election_event",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "election_event",
+    "column": "release_id",
+    "mapping": "Future L + --sha256- + canonical effective-input fingerprint; no release is applied."
+  },
+  {
+    "table": "election_event",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source URL, locator, capture SHA; preserve all fields omitted from normalized projection."
+  },
+  {
+    "table": "proceeding",
+    "column": "id_namespace",
+    "mapping": "NO ROW — No separate proceeding records established; no fake runoff/repeat."
+  },
+  {
+    "table": "proceeding",
+    "column": "office_id",
+    "mapping": "NO ROW — No separate proceeding records established; no fake runoff/repeat."
+  },
+  {
+    "table": "proceeding",
+    "column": "history_key",
+    "mapping": "NO ROW — No separate proceeding records established; no fake runoff/repeat."
+  },
+  {
+    "table": "proceeding",
+    "column": "proceeding_id",
+    "mapping": "NO ROW — No separate proceeding records established; no fake runoff/repeat."
+  },
+  {
+    "table": "proceeding",
+    "column": "kind",
+    "mapping": "NO ROW — No separate proceeding records established; no fake runoff/repeat."
+  },
+  {
+    "table": "proceeding",
+    "column": "sequence_no",
+    "mapping": "NO ROW — No separate proceeding records established; no fake runoff/repeat."
+  },
+  {
+    "table": "proceeding",
+    "column": "supersedes_id",
+    "mapping": "NO ROW — No separate proceeding records established; no fake runoff/repeat."
+  },
+  {
+    "table": "proceeding",
+    "column": "legal_outcome",
+    "mapping": "NO ROW — No separate proceeding records established; no fake runoff/repeat."
+  },
+  {
+    "table": "proceeding",
+    "column": "lineage_id",
+    "mapping": "NO ROW — No separate proceeding records established; no fake runoff/repeat."
+  },
+  {
+    "table": "proceeding",
+    "column": "release_id",
+    "mapping": "NO ROW — No separate proceeding records established; no fake runoff/repeat."
+  },
+  {
+    "table": "proceeding",
+    "column": "raw_json",
+    "mapping": "NO ROW — No separate proceeding records established; no fake runoff/repeat."
+  },
+  {
+    "table": "result_row",
+    "column": "id_namespace",
+    "mapping": "Proposed cdd-atlas-lu-research-v1; crosswalk required before an existing namespace is reused."
+  },
+  {
+    "table": "result_row",
+    "column": "office_id",
+    "mapping": "office-register.office_id, or events[results.event_id].office_id; exact FK."
+  },
+  {
+    "table": "result_row",
+    "column": "history_key",
+    "mapping": "events.event_id (stable office + source-supported election date/year)."
+  },
+  {
+    "table": "result_row",
+    "column": "result_row_id",
+    "mapping": "results.result_id"
+  },
+  {
+    "table": "result_row",
+    "column": "proceeding_id",
+    "mapping": "NULL; no separately established proceedings in this pack."
+  },
+  {
+    "table": "result_row",
+    "column": "country_id",
+    "mapping": "Fixed luxembourg."
+  },
+  {
+    "table": "result_row",
+    "column": "candidate_or_list_label",
+    "mapping": "results.name"
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_label",
+    "mapping": "results.party_label"
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_code",
+    "mapping": "Source list numero/id if provided in raw, otherwise NULL."
+  },
+  {
+    "table": "result_row",
+    "column": "party_namespace",
+    "mapping": "NULL; no canonical party mappings invented."
+  },
+  {
+    "table": "result_row",
+    "column": "party_mapping_id",
+    "mapping": "NULL; original labels retained."
+  },
+  {
+    "table": "result_row",
+    "column": "votes",
+    "mapping": "results.votes; NULL for uncontested placeholders (reported_votes=0 retained in raw)."
+  },
+  {
+    "table": "result_row",
+    "column": "votes_status",
+    "mapping": "results.votes_status; no unknown-to-zero conversion."
+  },
+  {
+    "table": "result_row",
+    "column": "share",
+    "mapping": "results.vote_share_pct; preserve percent units, never convert to first-preference share."
+  },
+  {
+    "table": "result_row",
+    "column": "share_status",
+    "mapping": "reported if nonnull, otherwise unknown."
+  },
+  {
+    "table": "result_row",
+    "column": "share_unit",
+    "mapping": "percent"
+  },
+  {
+    "table": "result_row",
+    "column": "seats",
+    "mapping": "results.seats; candidate elected flag is not fabricated party seats."
+  },
+  {
+    "table": "result_row",
+    "column": "seats_status",
+    "mapping": "reported if nonnull, otherwise unknown."
+  },
+  {
+    "table": "result_row",
+    "column": "elected_flag",
+    "mapping": "ELU/oui true, NON_ELU/non false; NULL for reporting-unit-only candidate tables."
+  },
+  {
+    "table": "result_row",
+    "column": "is_substitute",
+    "mapping": "NULL unless explicitly established; not inferred from losing rank."
+  },
+  {
+    "table": "result_row",
+    "column": "evidence_status",
+    "mapping": "results.result_status, source status retained separately from numerical completeness."
+  },
+  {
+    "table": "result_row",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "result_row",
+    "column": "release_id",
+    "mapping": "Future L + --sha256- + canonical effective-input fingerprint; no release is applied."
+  },
+  {
+    "table": "result_row",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source URL, locator, capture SHA; preserve all fields omitted from normalized projection."
+  },
+  {
+    "table": "party_mapping",
+    "column": "country_id",
+    "mapping": "NO ROW — No reviewed canonical party alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "party_namespace",
+    "mapping": "NO ROW — No reviewed canonical party alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapping_id",
+    "mapping": "NO ROW — No reviewed canonical party alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "source_context",
+    "mapping": "NO ROW — No reviewed canonical party alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "election_context",
+    "mapping": "NO ROW — No reviewed canonical party alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_label",
+    "mapping": "NO ROW — No reviewed canonical party alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_code",
+    "mapping": "NO ROW — No reviewed canonical party alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapped_group",
+    "mapping": "NO ROW — No reviewed canonical party alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "uncertainty",
+    "mapping": "NO ROW — No reviewed canonical party alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "lineage_id",
+    "mapping": "NO ROW — No reviewed canonical party alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "release_id",
+    "mapping": "NO ROW — No reviewed canonical party alignment."
+  },
+  {
+    "table": "party_mapping",
+    "column": "raw_json",
+    "mapping": "NO ROW — No reviewed canonical party alignment."
+  },
+  {
+    "table": "source",
+    "column": "country_id",
+    "mapping": "Fixed luxembourg."
+  },
+  {
+    "table": "source",
+    "column": "source_namespace",
+    "mapping": "luxembourg-official-research"
+  },
+  {
+    "table": "source",
+    "column": "source_id",
+    "mapping": "source-inventory.source_id, resolved by exact source_url."
+  },
+  {
+    "table": "source",
+    "column": "publisher",
+    "mapping": "source-inventory.publisher (official host)."
+  },
+  {
+    "table": "source",
+    "column": "title",
+    "mapping": "Original URL basename / document heading, no invented publication date."
+  },
+  {
+    "table": "source",
+    "column": "url",
+    "mapping": "source-inventory.url"
+  },
+  {
+    "table": "source",
+    "column": "checked_as_of_label",
+    "mapping": "2026-09-22"
+  },
+  {
+    "table": "source",
+    "column": "evidence_grade",
+    "mapping": "official_publisher; capture/result certification are independent."
+  },
+  {
+    "table": "source",
+    "column": "file_sha256",
+    "mapping": "source-inventory.sha256; Berdorf hash covers retained extraction, not inaccessible PDF bytes."
+  },
+  {
+    "table": "source",
+    "column": "locator",
+    "mapping": "source-inventory.path"
+  },
+  {
+    "table": "source",
+    "column": "data_rights",
+    "mapping": "Official election portal open data CC0 where licensed; other source terms remain source-specific, not blanket relicensing."
+  },
+  {
+    "table": "source",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "source",
+    "column": "release_id",
+    "mapping": "Future L + --sha256- + canonical effective-input fingerprint; no release is applied."
+  },
+  {
+    "table": "source",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source URL, locator, capture SHA; preserve all fields omitted from normalized projection."
+  },
+  {
+    "table": "record_locator",
+    "column": "record_key",
+    "mapping": "entity-kind + : + exact stable entity ID; reject broken references."
+  },
+  {
+    "table": "record_locator",
+    "column": "entity_kind",
+    "mapping": "office / election_event / result_row / source per owning entity."
+  },
+  {
+    "table": "record_locator",
+    "column": "country_id",
+    "mapping": "Fixed luxembourg."
+  },
+  {
+    "table": "record_locator",
+    "column": "geography_id",
+    "mapping": "LU-G- + office_id; country geography for Parliament and EP, distinct pre-merger geography for historic councils."
+  },
+  {
+    "table": "record_locator",
+    "column": "id_namespace",
+    "mapping": "Proposed cdd-atlas-lu-research-v1; crosswalk required before an existing namespace is reused."
+  },
+  {
+    "table": "record_locator",
+    "column": "office_id",
+    "mapping": "office-register.office_id, or events[results.event_id].office_id; exact FK."
+  },
+  {
+    "table": "record_locator",
+    "column": "history_key",
+    "mapping": "events.event_id (stable office + source-supported election date/year)."
+  },
+  {
+    "table": "record_locator",
+    "column": "proceeding_id",
+    "mapping": "NULL; no separately established proceedings in this pack."
+  },
+  {
+    "table": "record_locator",
+    "column": "result_row_id",
+    "mapping": "results.result_id for result locators; otherwise NULL."
+  },
+  {
+    "table": "record_locator",
+    "column": "party_namespace",
+    "mapping": "NULL; no canonical party mappings invented."
+  },
+  {
+    "table": "record_locator",
+    "column": "party_mapping_id",
+    "mapping": "NULL; original labels retained."
+  },
+  {
+    "table": "record_locator",
+    "column": "source_namespace",
+    "mapping": "luxembourg-official-research"
+  },
+  {
+    "table": "record_locator",
+    "column": "source_id",
+    "mapping": "source-inventory.source_id, resolved by exact source_url."
+  },
+  {
+    "table": "record_locator",
+    "column": "input_path",
+    "mapping": "Source inventory.path or exact data/ relative member path."
+  },
+  {
+    "table": "record_locator",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "record_locator",
+    "column": "release_id",
+    "mapping": "Future L + --sha256- + canonical effective-input fingerprint; no release is applied."
+  },
+  {
+    "table": "record_locator",
+    "column": "source_row_locator",
+    "mapping": "results.source_locator or exact JSON row pointer / observation locator."
+  },
+  {
+    "table": "evidence_link",
+    "column": "evidence_id",
+    "mapping": "SHA256(record_key, source_id, exact locator, claim kind)."
+  },
+  {
+    "table": "evidence_link",
+    "column": "record_key",
+    "mapping": "entity-kind + : + exact stable entity ID; reject broken references."
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_country_id",
+    "mapping": "luxembourg"
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_namespace",
+    "mapping": "luxembourg-official-research"
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_id",
+    "mapping": "source-inventory.source_id, resolved by exact source_url."
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_locator",
+    "mapping": "results.source_locator or observation locator."
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_kind",
+    "mapping": "office_existence / result / election_date / merger as appropriate."
+  },
+  {
+    "table": "evidence_link",
+    "column": "date_claim_id",
+    "mapping": "Date FK only for date claims; otherwise NULL."
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_json",
+    "mapping": "Exact retained source values and certification qualifier."
+  },
+  {
+    "table": "evidence_link",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "evidence_link",
+    "column": "release_id",
+    "mapping": "Future L + --sha256- + canonical effective-input fingerprint; no release is applied."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "unresolved_id",
+    "mapping": "NO ROW — No unresolved source FKs are permitted; substantive research gaps are in the gap ledger, not fake source rows."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "record_key",
+    "mapping": "NO ROW — No unresolved source FKs are permitted; substantive research gaps are in the gap ledger, not fake source rows."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "original_token",
+    "mapping": "NO ROW — No unresolved source FKs are permitted; substantive research gaps are in the gap ledger, not fake source rows."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "source_locator",
+    "mapping": "NO ROW — No unresolved source FKs are permitted; substantive research gaps are in the gap ledger, not fake source rows."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "reason",
+    "mapping": "NO ROW — No unresolved source FKs are permitted; substantive research gaps are in the gap ledger, not fake source rows."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "lineage_id",
+    "mapping": "NO ROW — No unresolved source FKs are permitted; substantive research gaps are in the gap ledger, not fake source rows."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "release_id",
+    "mapping": "NO ROW — No unresolved source FKs are permitted; substantive research gaps are in the gap ledger, not fake source rows."
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "raw_json",
+    "mapping": "NO ROW — No unresolved source FKs are permitted; substantive research gaps are in the gap ledger, not fake source rows."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "entity_kind",
+    "mapping": "office"
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_namespace",
+    "mapping": "Luxembourg election source version + source URL"
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_id",
+    "mapping": "Source commune name/section plus cycle/boundary version, never name alone."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "record_key",
+    "mapping": "entity-kind + : + exact stable entity ID; reject broken references."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "reason",
+    "mapping": "Explicit aliases and merger/section distinctions in identity rules; merger edges are separate, not identity equivalence."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "lineage_id",
+    "mapping": "Fixed country-package-luxembourg."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "release_id",
+    "mapping": "Future L + --sha256- + canonical effective-input fingerprint; no release is applied."
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "raw_json",
+    "mapping": "Lossless owning source object plus source URL, locator, capture SHA; preserve all fields omitted from normalized projection."
+  },
+  {
+    "table": "publication_release",
+    "column": "lineage_id",
+    "mapping": "NO ROW — Not run; research only."
+  },
+  {
+    "table": "publication_release",
+    "column": "release_id",
+    "mapping": "NO ROW — Not run; research only."
+  },
+  {
+    "table": "publication_receipt",
+    "column": "singleton",
+    "mapping": "NO ROW — Not run; research only."
+  },
+  {
+    "table": "publication_receipt",
+    "column": "last_publish_attempt_id",
+    "mapping": "NO ROW — Not run; research only."
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_lineage_id",
+    "mapping": "NO ROW — Not run; research only."
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_release_id",
+    "mapping": "NO ROW — Not run; research only."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "attempt_id",
+    "mapping": "NO ROW — Not run; no importer/SQLite execution."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "lineage_id",
+    "mapping": "NO ROW — Not run; no importer/SQLite execution."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "operator",
+    "mapping": "NO ROW — Not run; no importer/SQLite execution."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "script_version",
+    "mapping": "NO ROW — Not run; no importer/SQLite execution."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "started_at",
+    "mapping": "NO ROW — Not run; no importer/SQLite execution."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "finished_at",
+    "mapping": "NO ROW — Not run; no importer/SQLite execution."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "status",
+    "mapping": "NO ROW — Not run; no importer/SQLite execution."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "input_inventory_json",
+    "mapping": "NO ROW — Not run; no importer/SQLite execution."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "successful_release_id",
+    "mapping": "NO ROW — Not run; no importer/SQLite execution."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "publication_set_json",
+    "mapping": "NO ROW — Not run; no importer/SQLite execution."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "row_counts_json",
+    "mapping": "NO ROW — Not run; no importer/SQLite execution."
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "error_text",
+    "mapping": "NO ROW — Not run; no importer/SQLite execution."
+  }
+]
