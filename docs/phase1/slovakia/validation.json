@@ -1,0 +1,282 @@
+{
+  "status": "PASS",
+  "scope": "research pack validation only; no importer/SQLite executed",
+  "checks": [
+    {
+      "name": "pin recorded",
+      "status": "PASS"
+    },
+    {
+      "name": "current office count and uniqueness",
+      "status": "PASS"
+    },
+    {
+      "name": "historical gap disclosed",
+      "status": "PASS"
+    },
+    {
+      "name": "exact tier ID equality",
+      "status": "PASS"
+    },
+    {
+      "name": "draft and approval state",
+      "status": "PASS"
+    },
+    {
+      "name": "tier histogram",
+      "status": "PASS"
+    },
+    {
+      "name": "focused review flag count",
+      "status": "PASS"
+    },
+    {
+      "name": "executive vs council counts",
+      "status": "PASS"
+    },
+    {
+      "name": "no appointed/military/overseas offices",
+      "status": "PASS"
+    },
+    {
+      "name": "geography keys and FKs",
+      "status": "PASS"
+    },
+    {
+      "name": "geography acyclic",
+      "status": "PASS"
+    },
+    {
+      "name": "event identity and uniqueness",
+      "status": "PASS"
+    },
+    {
+      "name": "historical and prospective counts",
+      "status": "PASS"
+    },
+    {
+      "name": "prospective call no result claims",
+      "status": "PASS"
+    },
+    {
+      "name": "no alert filtering of unknown next office",
+      "status": "PASS"
+    },
+    {
+      "name": "proceeding identity and full event FK",
+      "status": "PASS"
+    },
+    {
+      "name": "runoffs not extra cycles",
+      "status": "PASS"
+    },
+    {
+      "name": "unique result identities and FKs",
+      "status": "PASS"
+    },
+    {
+      "name": "per-event row totals",
+      "status": "PASS"
+    },
+    {
+      "name": "elected-only and full-vector separation",
+      "status": "PASS"
+    },
+    {
+      "name": "missing cycle no fake completion",
+      "status": "PASS"
+    },
+    {
+      "name": "numeric domain and status pairs",
+      "status": "PASS"
+    },
+    {
+      "name": "zero and missing are distinct",
+      "status": "PASS"
+    },
+    {
+      "name": "no unsupported party mappings",
+      "status": "PASS"
+    },
+    {
+      "name": "every source hash and source identity",
+      "status": "PASS"
+    },
+    {
+      "name": "extracted members equal retained ZIP bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "resolved evidence locators",
+      "status": "PASS"
+    },
+    {
+      "name": "all115217 raw rows match retained source bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "typed numeric source-cell roundtrip",
+      "status": "PASS"
+    },
+    {
+      "name": "2026 current territorial reconciliation",
+      "status": "PASS"
+    },
+    {
+      "name": "local exact source ID set and paired ballots",
+      "status": "PASS"
+    },
+    {
+      "name": "source name binding coverage",
+      "status": "PASS"
+    },
+    {
+      "name": "complete identity vectors",
+      "status": "PASS"
+    },
+    {
+      "name": "all result vector keys recompute",
+      "status": "PASS"
+    },
+    {
+      "name": "date precision and keys",
+      "status": "PASS"
+    },
+    {
+      "name": "223-column exact contract",
+      "status": "PASS"
+    },
+    {
+      "name": "column list verified from pinned DDL text without SQL",
+      "status": "PASS"
+    },
+    {
+      "name": "all effective input hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "fingerprint recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "tier hash source register guard",
+      "status": "PASS"
+    },
+    {
+      "name": "DDL protected hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "no fixture IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "no approvals checked",
+      "status": "PASS"
+    },
+    {
+      "name": "at least15 real or isolated worked examples",
+      "status": "PASS"
+    },
+    {
+      "name": "applied changes zero",
+      "status": "PASS"
+    },
+    {
+      "name": "pre-manifest validation mode",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "current_offices": 5871,
+    "historical_offices_recovered": 0,
+    "historical_office_universe_complete": false,
+    "offices": 5871,
+    "local_jurisdictions": 2926,
+    "municipalities_excluding_city_parts_and_military": 2887,
+    "city_parts": 39,
+    "municipal_councils": 2887,
+    "municipal_direct_mayors": 2887,
+    "city_part_councils": 39,
+    "city_part_direct_mayors": 39,
+    "VUC_assemblies": 8,
+    "VUC_direct_chairs": 8,
+    "national_parliament": 1,
+    "direct_president": 1,
+    "EP_delegation": 1,
+    "direct_executive_offices": 2935,
+    "councils_assemblies_chambers_delegation": 2936,
+    "draft_tiers": {
+      "municipal": 5774,
+      "other": 79,
+      "regional": 16,
+      "national": 2
+    },
+    "events": 23437,
+    "historical_events": 17569,
+    "prospective_events": 5868,
+    "proceedings": 19,
+    "results": 115217,
+    "results_by_cycle": {
+      "OSO2014": 29459,
+      "OSO2018": 27951,
+      "OSO2022": 48826,
+      "EP2014": 29,
+      "EP2019": 31,
+      "EP2024": 23,
+      "NRSR2016": 23,
+      "NRSR2020": 24,
+      "NRSR2023": 25,
+      "PRE2014": 16,
+      "PRE2019": 17,
+      "PRE2024": 13,
+      "VUC2013": 2651,
+      "VUC2017": 2994,
+      "VUC2022": 3135
+    },
+    "events_by_cycle": {
+      "OSO2014": 5843,
+      "OSO2018": 5836,
+      "OSO2022": 5833,
+      "OSO2026": 5852,
+      "EP2014": 1,
+      "EP2019": 1,
+      "EP2024": 1,
+      "NRSR2016": 1,
+      "NRSR2020": 1,
+      "NRSR2023": 1,
+      "PRE2014": 1,
+      "PRE2019": 1,
+      "PRE2024": 1,
+      "VUC2013": 16,
+      "VUC2017": 16,
+      "VUC2022": 16,
+      "VUC2026": 16
+    },
+    "results_by_coverage": {
+      "elected_only": 41647,
+      "candidate_returns": 73415,
+      "national_party_vector": 155
+    },
+    "missing_local_cycle_bindings": 44,
+    "sources": 187,
+    "zero_votes": 107,
+    "missing_votes": 0,
+    "missing_seats": 115185
+  },
+  "applied_changes": 0,
+  "execution": {
+    "importer": "Not run",
+    "SQLite": "Not run",
+    "VPS": "Not run",
+    "UI": "Not run",
+    "repository_mutation": "Not run"
+  },
+  "manifest_note": "Research checks passed before manifest creation. Run validate_pack.py after unpacking to verify every final member hash and exact set. External packaging receipt confirms final manifest and ZIP verification.",
+  "pin": {
+    "repository": "FTFNAnalytics/digitaldemocracy",
+    "ref": "main",
+    "commit": "89726607439fa6726e7c34e30eec45357230d318",
+    "retrieved_on": "2026-09-21"
+  }
+}

@@ -1,0 +1,385 @@
+[
+  {
+    "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/files/OSO2022_SK_csv.zip",
+    "sha256": "95b3be623b0e8d506b4069bf1c99836709427da3a0edee5d2e2b8d4b3e21bf9d",
+    "members": [
+      {
+        "member": "OSO2022_SK_tab02ad.csv",
+        "byte_count": 45805,
+        "sha256": "f5f3d567cd46cc4973313488d40126297250716b2b953e24e2d72b383e0226c9"
+      },
+      {
+        "member": "OSO2022_SK_tab02bf.csv",
+        "byte_count": 289705,
+        "sha256": "5d951cb2f5548f5f671f8f9f89ab589011279f2c12c7dafb9c7ee96b01922d62"
+      },
+      {
+        "member": "OSO2022_SK_tab05f.csv",
+        "byte_count": 601780,
+        "sha256": "77fb6596a2e24ba42a1abea9106d213bd317c192eac397512ebca78d24967c62"
+      },
+      {
+        "member": "OSO2022_SK_tab08f.csv",
+        "byte_count": 2970775,
+        "sha256": "c73042fac052cbf1e73fb2573da6167f379de20683f6f4a18b85ec7e08c29276"
+      },
+      {
+        "member": "OSO2022_SK_tab0ad.csv",
+        "byte_count": 360283,
+        "sha256": "21dec8639383a913f777b35b2ba00b6cac401325ad29fb16f10702ac02fb6492"
+      },
+      {
+        "member": "OSO2022_SK_tab0bd.csv",
+        "byte_count": 2350982,
+        "sha256": "3f26beb25888e3a38c2c12ebf37376faed7873d9f12f09d206bbe2d449dea98f"
+      },
+      {
+        "member": "OSO2022_SK_tab0c.csv",
+        "byte_count": 2835,
+        "sha256": "c1691e975122049f97a90de61a84c6bde2595808af4e35a59bc8de4fbb051f05"
+      },
+      {
+        "member": "OSO2022_SK_tab0dd.csv",
+        "byte_count": 225469,
+        "sha256": "4f512779dfbc60a6d6ae0c06153abf3aef5f2f03e52994e9220cd4f965e30353"
+      },
+      {
+        "member": "OSO2022_SK_tab_info.csv",
+        "byte_count": 4946,
+        "sha256": "f026dad3cc6fa772f9c73d5b75b61a040ae388b7b7ce491544f2b79d5efb07fc"
+      }
+    ]
+  },
+  {
+    "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/files/OSO2022_SK_xlsx.zip",
+    "sha256": "9445f659df0baf2cec27c837346226388dd5912000ba82e10aa941edfa2d9a22",
+    "members": [
+      {
+        "member": "OSO2022_SK_tab01.xlsx",
+        "byte_count": 10462,
+        "sha256": "6959e7ffa90510b645fabde2b18e0b101fd4a6bd3cd7969c0e0e11990f72a798"
+      },
+      {
+        "member": "OSO2022_SK_tab02aa.xlsx",
+        "byte_count": 10755,
+        "sha256": "659f6429f686c908993b23fe12e936a644ec75b55b65e3abeba0e42f13ec2656"
+      },
+      {
+        "member": "OSO2022_SK_tab02ab.xlsx",
+        "byte_count": 13315,
+        "sha256": "dc744ed487050e46c92e6f3025c7d90914a3b1e5fcb4bf29c4f2abb959be6f19"
+      },
+      {
+        "member": "OSO2022_SK_tab02ac.xlsx",
+        "byte_count": 15520,
+        "sha256": "63aa18310f068228f8016d02bc7491d83e6bc11591780a5a4568559fe80ff137"
+      },
+      {
+        "member": "OSO2022_SK_tab02ad.xlsx",
+        "byte_count": 233700,
+        "sha256": "63919f684a1dae2569c9d440aeb10aeed689fad2d78ba4a5d3792386cc58c53c"
+      },
+      {
+        "member": "OSO2022_SK_tab02ax.xlsx",
+        "byte_count": 10606,
+        "sha256": "f5802c348f8ac9108bc3dbc9b9f8acf7dd8eb2fd747d0834480b9e9e7e58b338"
+      },
+      {
+        "member": "OSO2022_SK_tab02ba.xlsx",
+        "byte_count": 11157,
+        "sha256": "6b40893c98b52073b7a9ec5ca2c4d40c3472c19c6b693493458195ee3c11c66e"
+      },
+      {
+        "member": "OSO2022_SK_tab02bb.xlsx",
+        "byte_count": 15032,
+        "sha256": "75393ade181e3941224b6c7208b6ecc9a1d1dc82930115b6d586a2b9a244aad1"
+      },
+      {
+        "member": "OSO2022_SK_tab02bc.xlsx",
+        "byte_count": 18265,
+        "sha256": "bc3b2d117bc5c553917324543a982d7927c4ba4692fadd917e845a8787bbe513"
+      },
+      {
+        "member": "OSO2022_SK_tab02bd.xlsx",
+        "byte_count": 284410,
+        "sha256": "0685305e6b0797a4bc6f46ac53c0563cedc5335893118a918da12676633aa371"
+      },
+      {
+        "member": "OSO2022_SK_tab02be.xlsx",
+        "byte_count": 347238,
+        "sha256": "3506a363aab9dc8fde5a634b9cb65aa1ac22304f4818949c4694393c687c82fb"
+      },
+      {
+        "member": "OSO2022_SK_tab02bex.xlsx",
+        "byte_count": 12743,
+        "sha256": "8e65ee46b77d611b50f5daabf0feca3b08c8be735b40305a04341538023ac810"
+      },
+      {
+        "member": "OSO2022_SK_tab02bf.xlsx",
+        "byte_count": 560507,
+        "sha256": "15eeaaa962c708171c6626ba132611b7f049b273ffcd5158b2fec23a27a32f30"
+      },
+      {
+        "member": "OSO2022_SK_tab02bfx.xlsx",
+        "byte_count": 47190,
+        "sha256": "3c390456c833e97cdfdced76fd338db5b3d26480413e1b71beeb8a9e7be724fe"
+      },
+      {
+        "member": "OSO2022_SK_tab02bx.xlsx",
+        "byte_count": 10635,
+        "sha256": "e031a73938f500cd7dc7d259125a6da6c4c1f5646ca6eb0fdba2b2de27166a47"
+      },
+      {
+        "member": "OSO2022_SK_tab03a1.xlsx",
+        "byte_count": 13122,
+        "sha256": "d16a25a8463bba99faa92b96d8756de8bf29fd5724f1aa06f65e42da68d13b27"
+      },
+      {
+        "member": "OSO2022_SK_tab03a2.xlsx",
+        "byte_count": 14387,
+        "sha256": "27c37664000e4adbc100d09a451e3d277e6ca0f9a65740b5d9e4417250e91cc1"
+      },
+      {
+        "member": "OSO2022_SK_tab03b1.xlsx",
+        "byte_count": 18160,
+        "sha256": "679132885b9e701d71d0e28df63261c3b1296d17459dc6b00d9519ef1030c85a"
+      },
+      {
+        "member": "OSO2022_SK_tab03b2.xlsx",
+        "byte_count": 22157,
+        "sha256": "b97ae5e0d87dfca0dacfdb881722008a3be1db59d195eafd8bda0aff7e950e3c"
+      },
+      {
+        "member": "OSO2022_SK_tab03c1.xlsx",
+        "byte_count": 30228,
+        "sha256": "0930f1b2c38919818f7c1a0074c1af6abf52fc63311fdf67a8620d4c96016651"
+      },
+      {
+        "member": "OSO2022_SK_tab03c2.xlsx",
+        "byte_count": 46550,
+        "sha256": "d7ba2e83e5b7e8649a10cb5f0e1aae633d22f3edc01beabadfec36c6a5368003"
+      },
+      {
+        "member": "OSO2022_SK_tab03d1.xlsx",
+        "byte_count": 38653,
+        "sha256": "0ca92138947015444f58d93a9912c30cf3a4ec391f194243ea1718aba2760e7d"
+      },
+      {
+        "member": "OSO2022_SK_tab03d2.xlsx",
+        "byte_count": 64271,
+        "sha256": "7421a8c5ae4ddf743e224e047b786687bb160a92fb33e8ecf811cfc682bce031"
+      },
+      {
+        "member": "OSO2022_SK_tab04d.xlsx",
+        "byte_count": 202135,
+        "sha256": "9d70326891bd5e289e8c427271c904cba6f6b7a4f4389a69b92a54b2f17292f2"
+      },
+      {
+        "member": "OSO2022_SK_tab04x.xlsx",
+        "byte_count": 10375,
+        "sha256": "50356651f70a4aabdc896fe170c9095dd1b693fea439d52a136f1485491b4b04"
+      },
+      {
+        "member": "OSO2022_SK_tab05d.xlsx",
+        "byte_count": 567306,
+        "sha256": "d459074c77d06fecd706e22894840d0171217fdcdbd18c27ff56c22412a42eae"
+      },
+      {
+        "member": "OSO2022_SK_tab05e.xlsx",
+        "byte_count": 745018,
+        "sha256": "ccb81ed02102497cdef3b11e556f3dcadeca7544e80182624dad48d024a9333e"
+      },
+      {
+        "member": "OSO2022_SK_tab05ex.xlsx",
+        "byte_count": 23813,
+        "sha256": "3557b43cbc0e859a87d65f709ea18d1e990ad44f528b50e9d599e7595e4f15c6"
+      },
+      {
+        "member": "OSO2022_SK_tab05f.xlsx",
+        "byte_count": 1605827,
+        "sha256": "fd3438c6a267042648b6542152c477024af99594849cff18ee394f9850470d1e"
+      },
+      {
+        "member": "OSO2022_SK_tab05fx.xlsx",
+        "byte_count": 266309,
+        "sha256": "5affd870620dd343b7c269c189337313f4ddade84f4bfee4a0ec8f07312127cb"
+      },
+      {
+        "member": "OSO2022_SK_tab05x.xlsx",
+        "byte_count": 11859,
+        "sha256": "e2eb97f65d170ad1b7d3fc32fe0d05e16218d482814464b7d86073d87b232986"
+      },
+      {
+        "member": "OSO2022_SK_tab06d.xlsx",
+        "byte_count": 1323626,
+        "sha256": "a71387795c80f80927256345325a17b8a2a9b29d56043830b1fdc46bf629fd4d"
+      },
+      {
+        "member": "OSO2022_SK_tab06x.xlsx",
+        "byte_count": 14875,
+        "sha256": "b949d877985424336553f3b53e470e9b18a2b328583760ffb41aa990d6ddd83b"
+      },
+      {
+        "member": "OSO2022_SK_tab07d.xlsx",
+        "byte_count": 409324,
+        "sha256": "076ca62ab0e72ec30974c6a4a8ce421b489c038a49211284ee37bf575dd28abe"
+      },
+      {
+        "member": "OSO2022_SK_tab07x.xlsx",
+        "byte_count": 11030,
+        "sha256": "5551ddf181388449060b53d4b2c3d841f11255bb8e1cde3acd86c2738f726a74"
+      },
+      {
+        "member": "OSO2022_SK_tab08e.xlsx",
+        "byte_count": 3385738,
+        "sha256": "b12fcaf8c3ce3aac36cb5adceb29ef6b74408e99841fb798ea090bc3145150a0"
+      },
+      {
+        "member": "OSO2022_SK_tab08ex.xlsx",
+        "byte_count": 48646,
+        "sha256": "5fba336c40b6ba7e5cb325835a99bf9fde7b99399ea68f7c4771190e88a554a1"
+      },
+      {
+        "member": "OSO2022_SK_tab08f.xlsx",
+        "byte_count": 7586798,
+        "sha256": "c306ab5e500206852cac8da9f55bc70f63efc38aca677ddebea1021ddc6b31af"
+      },
+      {
+        "member": "OSO2022_SK_tab08fx.xlsx",
+        "byte_count": 1142264,
+        "sha256": "9fd5d9040854a184c12381695742db3a4dfee36febb7e3f1eefe845342f34922"
+      },
+      {
+        "member": "OSO2022_SK_tab0ad.xlsx",
+        "byte_count": 562483,
+        "sha256": "7bc0271383926ab79fe6e673817742febcc9b4af84aee4339d8b93ee397d5a4a"
+      },
+      {
+        "member": "OSO2022_SK_tab0ax.xlsx",
+        "byte_count": 11983,
+        "sha256": "c8722868bbc5a8c83df40153ddcf227ee331470a0618c9bb170a49b5df7e3ade"
+      },
+      {
+        "member": "OSO2022_SK_tab0bd.xlsx",
+        "byte_count": 3256202,
+        "sha256": "2fc93023e5787de713da79acd8f74b21b7deab0f159d046e29b3db9903249bc2"
+      },
+      {
+        "member": "OSO2022_SK_tab0bx.xlsx",
+        "byte_count": 50381,
+        "sha256": "cc16e57cb9071d56ef7f5cbef5cdcee991e7beee91bc6a7d9974c46c325f0f6b"
+      },
+      {
+        "member": "OSO2022_SK_tab0c.xlsx",
+        "byte_count": 12410,
+        "sha256": "163a63b44c8403faa30ab85841a80f43f7cbc210b775ec3af5eeb80bdfd344f3"
+      },
+      {
+        "member": "OSO2022_SK_tab0dd.xlsx",
+        "byte_count": 187130,
+        "sha256": "c95ab39bcb5b05c87903f6da6cfe881e0e4f1d1dbb619b12f49b227fe4f5e8a8"
+      },
+      {
+        "member": "OSO2022_SK_tab0dx.xlsx",
+        "byte_count": 10363,
+        "sha256": "8669a8cd7137cd48a73d01c3a34f07cd620ca30b4cb1a0b785c9e6786aad7099"
+      },
+      {
+        "member": "OSO2022_SK_tab12b.xlsx",
+        "byte_count": 11045,
+        "sha256": "b7f6975a6fa02fe716b52f43c5829dbdd7391d76b93a2ffc1e94ac1381d34719"
+      },
+      {
+        "member": "OSO2022_SK_tab12c.xlsx",
+        "byte_count": 14874,
+        "sha256": "14a3e5e7f1083f113572a54dcb9850debf56b872d9fa82f78680d71fbb1e7fff"
+      },
+      {
+        "member": "OSO2022_SK_tab_info.xlsx",
+        "byte_count": 11516,
+        "sha256": "db29152dd53f8b6b1bc1a6382f3dca821ea2bda997c62fc6061d418b6febdd15"
+      }
+    ]
+  },
+  {
+    "input_path": "data/research/slovakia/sources/volbysr.sk/files/REF2026_SK_csv.zip",
+    "sha256": "11fbf81692e70651221989b84fac72a54eda0b83b02a5e8718f734d46c1a1035",
+    "members": [
+      {
+        "member": "REF2026_SK_tab01.csv",
+        "byte_count": 436,
+        "sha256": "0565b6c1c238183eece5f0bd13550207173e9bd0d5822b2b14e126f63734bfa3"
+      },
+      {
+        "member": "REF2026_SK_tab02a.csv",
+        "byte_count": 1074,
+        "sha256": "fc6775a5bf6b036c73b45ebbae9a01de0db02a9250f155d9046d5838f3c1b3a5"
+      },
+      {
+        "member": "REF2026_SK_tab02b.csv",
+        "byte_count": 4952,
+        "sha256": "e907510ac8bd51d8df6c4c4d7177c0e1071039e7b682f553aa4461a3fd256eaa"
+      },
+      {
+        "member": "REF2026_SK_tab02c.csv",
+        "byte_count": 8923,
+        "sha256": "16e2dc763a6b05c35cf14fa2e4542a6791ef3df51293e56972369f9f417dd60e"
+      },
+      {
+        "member": "REF2026_SK_tab02d.csv",
+        "byte_count": 338746,
+        "sha256": "c183b333155eacdbf0f7316200ff5ca4a8ba770fef6360e8648572b16f24e0a4"
+      },
+      {
+        "member": "REF2026_SK_tab02e.csv",
+        "byte_count": 611225,
+        "sha256": "0db9c052e11c623098e1f40a8b191ec68f64b64ec9aa3dbb0fdf07328a8ae43a"
+      },
+      {
+        "member": "REF2026_SK_tab03a.csv",
+        "byte_count": 249,
+        "sha256": "959dd251190d0eba0018334c241f1ba11bc393e9ecb78c4f8fc2929f52bd053c"
+      },
+      {
+        "member": "REF2026_SK_tab03b.csv",
+        "byte_count": 1171,
+        "sha256": "e2fcffb6995632c47d9ef26a4110b7f0306339d0c4d188291c543d7830c2fe17"
+      },
+      {
+        "member": "REF2026_SK_tab03c.csv",
+        "byte_count": 7273,
+        "sha256": "4ccaa64b82f5367c0645865d35a92402232203d89373ade9b40b5ab3d5aa347f"
+      },
+      {
+        "member": "REF2026_SK_tab03d.csv",
+        "byte_count": 14175,
+        "sha256": "4a8c11d20fea27e6c739248eacffdaab5c1da1d1f488a06b545c14a8ba617e73"
+      },
+      {
+        "member": "REF2026_SK_tab03e.csv",
+        "byte_count": 603539,
+        "sha256": "16535d36f98239fa51a18523a57bd7ae8647c4805ee91eed5412c0678a6add50"
+      },
+      {
+        "member": "REF2026_SK_tab03f.csv",
+        "byte_count": 1166300,
+        "sha256": "0c9226285b0b35da1ae67fd9aecf063aea0ad42d5fb05939d7243ca1593fb0df"
+      },
+      {
+        "member": "REF2026_SK_tab0a.csv",
+        "byte_count": 394,
+        "sha256": "bb9df3d664bf6c5005efc5232e10a5910810189b827f48e1f6221ad86ef9220f"
+      },
+      {
+        "member": "REF2026_SK_tab0b.csv",
+        "byte_count": 231222,
+        "sha256": "5e49e0fdf08ccb306ee33d4273fb3ee9bffda70c5c33e24fe05736465c17728d"
+      },
+      {
+        "member": "REF2026_SK_tab_info.csv",
+        "byte_count": 949,
+        "sha256": "12d5aae884a134a15e32236859834d6e98dc5c00693d43a833c1a2a3b0097425"
+      }
+    ]
+  }
+]

@@ -1,0 +1,3808 @@
+{
+  "pin": {
+    "repository": "FTFNAnalytics/digitaldemocracy",
+    "ref": "main",
+    "commit": "89726607439fa6726e7c34e30eec45357230d318",
+    "retrieved_on": "2026-09-21"
+  },
+  "lineage_id": "country-package-slovakia",
+  "counts": {
+    "current_offices": 5871,
+    "historical_offices_recovered": 0,
+    "historical_office_universe_complete": false,
+    "offices": 5871,
+    "local_jurisdictions": 2926,
+    "municipalities_excluding_city_parts_and_military": 2887,
+    "city_parts": 39,
+    "municipal_councils": 2887,
+    "municipal_direct_mayors": 2887,
+    "city_part_councils": 39,
+    "city_part_direct_mayors": 39,
+    "VUC_assemblies": 8,
+    "VUC_direct_chairs": 8,
+    "national_parliament": 1,
+    "direct_president": 1,
+    "EP_delegation": 1,
+    "direct_executive_offices": 2935,
+    "councils_assemblies_chambers_delegation": 2936,
+    "draft_tiers": {
+      "municipal": 5774,
+      "other": 79,
+      "regional": 16,
+      "national": 2
+    },
+    "events": 23437,
+    "historical_events": 17569,
+    "prospective_events": 5868,
+    "proceedings": 19,
+    "results": 115217,
+    "results_by_cycle": {
+      "OSO2014": 29459,
+      "OSO2018": 27951,
+      "OSO2022": 48826,
+      "EP2014": 29,
+      "EP2019": 31,
+      "EP2024": 23,
+      "NRSR2016": 23,
+      "NRSR2020": 24,
+      "NRSR2023": 25,
+      "PRE2014": 16,
+      "PRE2019": 17,
+      "PRE2024": 13,
+      "VUC2013": 2651,
+      "VUC2017": 2994,
+      "VUC2022": 3135
+    },
+    "events_by_cycle": {
+      "OSO2014": 5843,
+      "OSO2018": 5836,
+      "OSO2022": 5833,
+      "OSO2026": 5852,
+      "EP2014": 1,
+      "EP2019": 1,
+      "EP2024": 1,
+      "NRSR2016": 1,
+      "NRSR2020": 1,
+      "NRSR2023": 1,
+      "PRE2014": 1,
+      "PRE2019": 1,
+      "PRE2024": 1,
+      "VUC2013": 16,
+      "VUC2017": 16,
+      "VUC2022": 16,
+      "VUC2026": 16
+    },
+    "results_by_coverage": {
+      "elected_only": 41647,
+      "candidate_returns": 73415,
+      "national_party_vector": 155
+    },
+    "missing_local_cycle_bindings": 44,
+    "sources": 187,
+    "zero_votes": 107,
+    "missing_votes": 0,
+    "missing_seats": 115185
+  },
+  "hash_inputs": {
+    "canonicalization": "atlas-c14n/1",
+    "hash_algorithm": "sha256",
+    "lineage_id": "country-package-slovakia",
+    "inputs": [
+      {
+        "input_path": "data/research/slovakia/2014-name-bindings.json",
+        "input_kind": "package",
+        "sha256": "475b316781a1f170c4d74a942c059c8588a5f6108684ba4a067fe0c99f09a7ae",
+        "byte_count": 2633844
+      },
+      {
+        "input_path": "data/research/slovakia/country.json",
+        "input_kind": "package",
+        "sha256": "6702d64343d72c71f4edccb25c634f34bcc95a10a512e5d6dc249777ce4815c7",
+        "byte_count": 1551
+      },
+      {
+        "input_path": "data/research/slovakia/counts.json",
+        "input_kind": "package",
+        "sha256": "f8a6b843c89ce22324ad46b98fac43508f125f734af7115bb50b95217872c907",
+        "byte_count": 1732
+      },
+      {
+        "input_path": "data/research/slovakia/events.json",
+        "input_kind": "package",
+        "sha256": "6306b33c88d507e36fb015e61e1305ed2444508887ccfe7dab7174f3bff79058",
+        "byte_count": 30148625
+      },
+      {
+        "input_path": "data/research/slovakia/geography.json",
+        "input_kind": "package",
+        "sha256": "46e79c6758b74514904feb50ccd5d8cd9c765ae3f55ec11d7910731cc15214f6",
+        "byte_count": 3864832
+      },
+      {
+        "input_path": "data/research/slovakia/identity-crosswalk.json",
+        "input_kind": "package",
+        "sha256": "c905ccabb1db36e6f89e5857c68f46a671068d49e7a24ce1541b9ca17ee4296a",
+        "byte_count": 2247171
+      },
+      {
+        "input_path": "data/research/slovakia/missing-local-cycles.json",
+        "input_kind": "package",
+        "sha256": "182a4d3ff8b55f3213e52ed5484da60f8d2c90569deed730c1c3c048b6258abf",
+        "byte_count": 24153
+      },
+      {
+        "input_path": "data/research/slovakia/office-register.json",
+        "input_kind": "package",
+        "sha256": "95c6b2a9f75101567d34335a7e2256f1cd77ba7151123448ed5fda3d142731c1",
+        "byte_count": 11609229
+      },
+      {
+        "input_path": "data/research/slovakia/party-mappings.json",
+        "input_kind": "package",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "byte_count": 3
+      },
+      {
+        "input_path": "data/research/slovakia/proceedings.json",
+        "input_kind": "package",
+        "sha256": "e1914ee45e38d468458a1ed75d4546c89b7f112964890571c2a26b19e08667db",
+        "byte_count": 13347
+      },
+      {
+        "input_path": "data/research/slovakia/research-gaps.json",
+        "input_kind": "package",
+        "sha256": "3c1e4a3fec2554eabc941cbe024ea058fffca15ce3c4a9fcf357b42d78344da4",
+        "byte_count": 4300
+      },
+      {
+        "input_path": "data/research/slovakia/results.json",
+        "input_kind": "package",
+        "sha256": "40a6b23c63609d14d02363552f4c5c4e370abb87b55fccd32e4031f47e33b1cd",
+        "byte_count": 200695402
+      },
+      {
+        "input_path": "data/research/slovakia/sources.json",
+        "input_kind": "package",
+        "sha256": "3ec0d31de865e78f39691844bf6dd631252390207fe1878e63a82920a0c575ca",
+        "byte_count": 113166
+      },
+      {
+        "input_path": "data/research/slovakia/sources/ives.minv.sk/obce/webformmain.aspx",
+        "input_kind": "artifact",
+        "sha256": "c815eab2e5f42d83338a1dd0691d3eec4b0137ce8aad26e8086decc6f7947996",
+        "byte_count": 5111
+      },
+      {
+        "input_path": "data/research/slovakia/sources/mojaobec.statistics.sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "919c337eaa20539469b5fdddd0d1cc954a7c136d365d96a557f30c01cbc05b97",
+        "byte_count": 523
+      },
+      {
+        "input_path": "data/research/slovakia/sources/static.slov-lex.sk/static/SK/ZZ/2001/302/20020101.html",
+        "input_kind": "artifact",
+        "sha256": "98c21e581e1c1922b4bcfa6f2e7442e6b587eb50b9da9fb6e5d6cedd6f17bffe",
+        "byte_count": 193224
+      },
+      {
+        "input_path": "data/research/slovakia/sources/static.slov-lex.sk/static/SK/ZZ/2014/180/20260601.html",
+        "input_kind": "artifact",
+        "sha256": "d4e4b800d10c4cc765f6b042d80ea62ce234e0dc130decc61460dd77e112f368",
+        "byte_count": 1356552
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/ep/ep2014/EP-dv/home-sk.html",
+        "input_kind": "artifact",
+        "sha256": "abbef0f295597eca3748790c41c9ef144a762d89474e549478f4c47912606644",
+        "byte_count": 3612
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/ep/ep2014/index.html",
+        "input_kind": "artifact",
+        "sha256": "4f5f2fa9599c07f975f3a6d145955493d6b4623bddfbbafb2bf493f27928a64c",
+        "byte_count": 1904
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/ep/ep2019/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "458645e97b8d84b028eb8ce34477dcdae1617b5a862869a1aae6d10b322ebb91",
+        "byte_count": 10821
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/ep/ep2024/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "0fa4e9256f44c1941190b1603f53ba38eb7beaa3787138e350964329000f6d1c",
+        "byte_count": 27271
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "ed15bfb441a924102d8919cb21d65db8023c81dd0c0eb634a6255cce23fb0d03",
+        "byte_count": 15916
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/nrsr/nrsr2016/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "146e9c8c64afa499d62116d7a130ac4232f2776b8784232122fa2f2ffd06b889",
+        "byte_count": 11959
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/nrsr/nrsr2020/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "e87d2e9c66b57cc9db477be5fb5af698b6671521efa63f301931046f0840bf3a",
+        "byte_count": 10908
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/nrsr/nrsr2023/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "c13b6a02cafe9e22ac222d1921b0057eae566307ca8f3ea6c24cc5c31e8ec686",
+        "byte_count": 26652
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab02.csv",
+        "input_kind": "artifact",
+        "sha256": "3563401b9fb42bc7fe8c35f088ff8e644844bfad19daf26c9aa04287ff14b3cd",
+        "byte_count": 149753
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab03.csv",
+        "input_kind": "artifact",
+        "sha256": "ee4d46f482219028cfc4c5f42df9acd53a34e53f5ee8f2307113cbbd0a3b629a",
+        "byte_count": 228048
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab04.csv",
+        "input_kind": "artifact",
+        "sha256": "170bf1dd1c77e0b5974bbc9f0aee9d5285978a9225ab103a14a4283328515467",
+        "byte_count": 19200
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab05.csv",
+        "input_kind": "artifact",
+        "sha256": "18ad65d7c8940d2cb424d7617d366897f997aed8f7dd4bca51c7c930aeb10895",
+        "byte_count": 688599
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab06.csv",
+        "input_kind": "artifact",
+        "sha256": "f37b6565a598214d0c78ff7ea08a8fb68bb139c06c7d2f16e03cbe4f88e56467",
+        "byte_count": 16842
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab07.csv",
+        "input_kind": "artifact",
+        "sha256": "6cb96eddfcdc4630c85b86d8bfd48cf1b469e2a24530b4b3276aa2a17ad7e163",
+        "byte_count": 24384
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab08.csv",
+        "input_kind": "artifact",
+        "sha256": "d4fa5373a9c5d1fa8e40c8aecde652c4da78b3dce0ceb2767ae9a782351612ba",
+        "byte_count": 1393
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab09.csv",
+        "input_kind": "artifact",
+        "sha256": "038b54dfae5cc7f7287cd19f0003a7815895394da107eb992d7d1d430c5a565d",
+        "byte_count": 167481
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab10.csv",
+        "input_kind": "artifact",
+        "sha256": "5636a7159c6d3ca5527eb0eab1486304a91548424ffd90dc7b0fa44b43648fb0",
+        "byte_count": 3295
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab11.csv",
+        "input_kind": "artifact",
+        "sha256": "ea2b1a6dee3377e43bed6472d512e4732ab2b04e74b36fd44b92366e5d14c446",
+        "byte_count": 4961
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "5aadc05e87ea67f89fd12383a6e7a6687eea406d3fbd1031e0557ecb237d3f97",
+        "byte_count": 512
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab03a.csv",
+        "input_kind": "artifact",
+        "sha256": "764eae9fc68acf9b2480005e2e021110efa9d793e7eb6810806abed269cc9c2a",
+        "byte_count": 2301
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab04.csv",
+        "input_kind": "artifact",
+        "sha256": "5808a6ef44004389dc8b7414a9b170fd0550265b09a87ec826948cb97e1fa8f8",
+        "byte_count": 684
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab04x.csv",
+        "input_kind": "artifact",
+        "sha256": "a2177cb91a4b3df0d7759145fefc68fb9d29cf493db1125a91a9dedfc6241453",
+        "byte_count": 190
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab0b.csv",
+        "input_kind": "artifact",
+        "sha256": "d63ff4844a662bd950f9af42b9040c0498097b8d4c3206080e5294f5025775bd",
+        "byte_count": 34823
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab0c.csv",
+        "input_kind": "artifact",
+        "sha256": "a6f6b75ccd5aeaf544d4ff34ebd764dbe222e609176ae2f4e3b63680d5fe0716",
+        "byte_count": 286800
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "1a88fbe233f4070278cde382347e27b374ccba7fe7892897a3e9d419611a1ecf",
+        "byte_count": 392
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab03a.csv",
+        "input_kind": "artifact",
+        "sha256": "7f059815600e6a577c80ddabef7ab611a8fde7a7efe7c9e6503ba4e7505cdbf3",
+        "byte_count": 1562
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab04.csv",
+        "input_kind": "artifact",
+        "sha256": "a085ba2fce88f9eb64cfdc7df8961627a3e32cd433717cb5db1244087e7c5a31",
+        "byte_count": 548
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab04x.csv",
+        "input_kind": "artifact",
+        "sha256": "2d3e3972223a5f14b1ed1748feb6af1a3ce21d44a965dfa7bfe10dee836e0b21",
+        "byte_count": 179
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab0b.csv",
+        "input_kind": "artifact",
+        "sha256": "60fadc07f7dcf931d996279ade3b95c605325155b4b488db6ff1b0936346e6f6",
+        "byte_count": 29201
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab0c.csv",
+        "input_kind": "artifact",
+        "sha256": "e5dec8968eea900e8e1093d2c20355bc90f9a55ab26b8f5f98aaa813b8307ef3",
+        "byte_count": 210670
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab_info.csv",
+        "input_kind": "artifact",
+        "sha256": "4ebe8c8e8f5934b5e8d9bc23c8199214f54b8ff32706ca84305767d948598976",
+        "byte_count": 2104
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab02.csv",
+        "input_kind": "artifact",
+        "sha256": "b3dec37dbc7221ad64fdbd56324830c3d43e4fa73bceee580f0d3b2ee86d36a2",
+        "byte_count": 39682
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab03.csv",
+        "input_kind": "artifact",
+        "sha256": "703d1208a5873ecc5c3cfcce5a8b50ea052a6513b2f16355f0db3213480370cf",
+        "byte_count": 1228
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab04.csv",
+        "input_kind": "artifact",
+        "sha256": "dc2b1f52fe54826747ba16417e23dbd75316a1e768881434fba3d33cf68cba28",
+        "byte_count": 357220
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab05.csv",
+        "input_kind": "artifact",
+        "sha256": "de2da19d1bfe67304a3374d29c445cb0be140b4279739c9223a735c14a4ea2b1",
+        "byte_count": 4421
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab06.csv",
+        "input_kind": "artifact",
+        "sha256": "292ce30d5e8d85fc54ea8d7d6fff1f585b91c3ca53a0b16798e483f60078abff",
+        "byte_count": 6702
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab07.csv",
+        "input_kind": "artifact",
+        "sha256": "f83befe26ff7b7c38f933e83f237109f8df48b851f21f8bdef673a194fac815e",
+        "byte_count": 816367
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab08.csv",
+        "input_kind": "artifact",
+        "sha256": "971e9c7904acb36e18baa8a5af74a033add7b356e42b60a9bc35bb97327ee6f4",
+        "byte_count": 13703
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab10.csv",
+        "input_kind": "artifact",
+        "sha256": "52881fc6211fa0bc4ba166dbaa9090abda14f8ee7f8a38ba9a0b72ec99eb1343",
+        "byte_count": 69393
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab11.csv",
+        "input_kind": "artifact",
+        "sha256": "4113608649b7f0ab07a562b8be25e53bbe080de0b9c2fd266314a963bf9d3b7f",
+        "byte_count": 109639
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab13.csv",
+        "input_kind": "artifact",
+        "sha256": "0a9ef5ec2fba9a5cc8b71a0669991429978b467593e5a781ab25f9a861bf5bbd",
+        "byte_count": 1411
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab19.csv",
+        "input_kind": "artifact",
+        "sha256": "b238a9b7c0ddc240abe10e9df2208414312bd0d7760d67d4a73b98057d529377",
+        "byte_count": 144887
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab20.csv",
+        "input_kind": "artifact",
+        "sha256": "57eae1786b04bc82d7db11e5b4aaba582449d30b20a766436472ecf8b0f8a267",
+        "byte_count": 1279
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab21.csv",
+        "input_kind": "artifact",
+        "sha256": "e4c911b401dd891308ff4c86c2590156b3282420265c2d93bfe5249dc8665972",
+        "byte_count": 5430
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "e75147ffba5efc7081f9c0a759be2a9c7ec81b155a7897681bebb8991fc2d763",
+        "byte_count": 680
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab03a.csv",
+        "input_kind": "artifact",
+        "sha256": "bca99840d8d864218020a2953abf7a8b7a01842a573d90aa65bfb26aac60ea63",
+        "byte_count": 1678
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab04.csv",
+        "input_kind": "artifact",
+        "sha256": "736ed0f584a959be7a3c150106e1dce279ae20c26c80704b49f62893c30f8d57",
+        "byte_count": 679
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab04x.csv",
+        "input_kind": "artifact",
+        "sha256": "d68b3a497669d4f79c83c9cb9a3dc168d69c2e9593fcaef87fc08c2d2ab01fb8",
+        "byte_count": 185
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab0b.csv",
+        "input_kind": "artifact",
+        "sha256": "01e2d893e51a5406aa420e26ab51c2a2773fb80e7eb41e947fa4dba2060136aa",
+        "byte_count": 255616
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab0c.csv",
+        "input_kind": "artifact",
+        "sha256": "47e785ab36350f09efdb302a880b56385691f62e275da28cde72de77b08d0dec",
+        "byte_count": 210728
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "2a088dd89d3bd203f31728400908d55e97cdbfcb49ba5a031442085f61fa2930",
+        "byte_count": 405
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab03a.csv",
+        "input_kind": "artifact",
+        "sha256": "97f5660514a8572f1d76a1afa9e4b70a33fcd78f633134b720d3cc99cc3cd3ff",
+        "byte_count": 1946
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab04.csv",
+        "input_kind": "artifact",
+        "sha256": "dc0d3dd2211f39f3b6dc1a43b1509cf717dce5d5b85979a196d5e026d16dd4fd",
+        "byte_count": 832
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab04x.csv",
+        "input_kind": "artifact",
+        "sha256": "83b9163850acc404fb0a5833ffd5bacd0d7f27013a39e61c7a13e03946e122d2",
+        "byte_count": 186
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab0b.csv",
+        "input_kind": "artifact",
+        "sha256": "383fb4b3cc133ac114dba5d776983932e7f26082e2bb0bdc16a315d39710d195",
+        "byte_count": 282876
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab0c.csv",
+        "input_kind": "artifact",
+        "sha256": "864256b4d581441c590386b2404459c1560e4f54de0d6b47cb0c57a2db70d96b",
+        "byte_count": 210723
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab_info.csv",
+        "input_kind": "artifact",
+        "sha256": "0be10a5e7e9cf661c90886225ff4baaeb80448a2e98ee10c4431613039abbae2",
+        "byte_count": 2585
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "85e3bb75d62edeccf2608d046a01f0dfe62b0715533265c978eb41ed4bc6be9c",
+        "byte_count": 1283
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab02.csv",
+        "input_kind": "artifact",
+        "sha256": "6ab0da46be2e93f50a5acb63d30b779f63c4fb55a418c2ee6cd5d93155ac32ff",
+        "byte_count": 9013
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab03.csv",
+        "input_kind": "artifact",
+        "sha256": "5c645c763ab266b0bfa5f0e6b2ba3ce30161461ccce7f3c3e952a4b4a4edd3ed",
+        "byte_count": 2064
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab04.csv",
+        "input_kind": "artifact",
+        "sha256": "a5d501e33c0b96a6ec8d6d51fc05c101f99ee6613119d7a223eeb62be29fc38e",
+        "byte_count": 30123
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab05.csv",
+        "input_kind": "artifact",
+        "sha256": "18b4a54ba2deb56a328ff4586f6b4f46f4595fcafe3fed200d5e5ba8585be27c",
+        "byte_count": 4304
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab08.csv",
+        "input_kind": "artifact",
+        "sha256": "ce5669d67d0ab3af4a8555d414089b4cc67d66e2014627da7e081ab34a5b7b9c",
+        "byte_count": 168432
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab09.csv",
+        "input_kind": "artifact",
+        "sha256": "7c0e708ac1de6e2146069e6f17e1a7fe7cd88be80539d362d3976e3d8fd0d6b5",
+        "byte_count": 139361
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/2.kolo/OSK_2013_2kolo_tab06.csv",
+        "input_kind": "artifact",
+        "sha256": "b6182b48cde291a2aa691cbec9b3debf9455e335da913e6e46d6ab02a6e4661b",
+        "byte_count": 6599
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/2.kolo/OSK_2013_2kolo_tab07.csv",
+        "input_kind": "artifact",
+        "sha256": "d05187e8cf72d3cdf87e325cbffdae0f466bb7d7333a67792ad9ed315356cca7",
+        "byte_count": 1009
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/2.kolo/OSK_2013_2kolo_tab08.csv",
+        "input_kind": "artifact",
+        "sha256": "fc801f42723c9a44a853c7d3d7ca6d6720df6e24d664a1ad23b3e077befa4701",
+        "byte_count": 29947
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/2.kolo/OSK_2013_2kolo_tab10.csv",
+        "input_kind": "artifact",
+        "sha256": "398954019154afdfbd6f51be6eb89dc876e5e5347d63e2414c88f2232037ba63",
+        "byte_count": 8019
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab02a.csv",
+        "input_kind": "artifact",
+        "sha256": "940634e286776c0af8d64dc406ba5eed160309c038dc353d03bd138523d4f3f9",
+        "byte_count": 1101
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab04a.csv",
+        "input_kind": "artifact",
+        "sha256": "d7a7acf56c257002e0b13fae9dd355a69646522feaeb0a4976ea904403fe9025",
+        "byte_count": 887
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab04b.csv",
+        "input_kind": "artifact",
+        "sha256": "0b89fc30047e2abea452d1edb655de0be5656db1a9a6cc6a71e6c1023d3865bb",
+        "byte_count": 38259
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab06b.csv",
+        "input_kind": "artifact",
+        "sha256": "514d80af20bd0db7a4426f43c8bfeab3628a211e4c04899e7901b8adf2670a52",
+        "byte_count": 6357
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab09c.csv",
+        "input_kind": "artifact",
+        "sha256": "4238139153809e7d46580e16191b16ac5193a04aee80ed2cbffbd6b61c5ca5b5",
+        "byte_count": 279187
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab0da.csv",
+        "input_kind": "artifact",
+        "sha256": "c4b37ed911f538c188c4d3c35e7e64f9f3374dff65ffbeca9bae91f2fae4b8a8",
+        "byte_count": 234
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab0db.csv",
+        "input_kind": "artifact",
+        "sha256": "7d5cb3d94bac317aac7162bb4a50339800138673dccbb542f0d6c575eeed7a60",
+        "byte_count": 5020
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab0dc.csv",
+        "input_kind": "artifact",
+        "sha256": "bf8f3a82a0ea3db6cd81092bc6ed8da815584c206e51458c1458909275ea260f",
+        "byte_count": 192986
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "e38f4a2669c5b3160a01816b77bd6d86684242b111067c662ec8b9f650afc0ed",
+        "byte_count": 459
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab02aa.csv",
+        "input_kind": "artifact",
+        "sha256": "bb3c8ea6f459298dd0c5b178dad56ec5380e5ff87f13bf00875b32627347f235",
+        "byte_count": 616
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab04a.csv",
+        "input_kind": "artifact",
+        "sha256": "814e2359d9908c4b7342578f4da9f814a56d1557c5d11d3b7d6095dfdb87920d",
+        "byte_count": 35921
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab04b.csv",
+        "input_kind": "artifact",
+        "sha256": "144526369fec68d2ba5e453b15f89a18c3c87698854a152b65378c15cc266e49",
+        "byte_count": 309880
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab06a.csv",
+        "input_kind": "artifact",
+        "sha256": "b1b7483c9d63eb303cbb53499d5ba4b7c62613e17f6ff1923d19edfc5476a56c",
+        "byte_count": 5893
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab06b.csv",
+        "input_kind": "artifact",
+        "sha256": "7f6399ffd56eb360b9b1f435dcf1caa59bb167ca98fce0d7315c7958a11e7e05",
+        "byte_count": 86909
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab09b.csv",
+        "input_kind": "artifact",
+        "sha256": "8335acc4bacdbdd0cc4e73c513c1f6ce2460e68c9fde5c5b41ec1d6303a41b59",
+        "byte_count": 302216
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab09c.csv",
+        "input_kind": "artifact",
+        "sha256": "267ba04a29300532d9765c06e513971378fc6b1f790d938a635c20626448eff0",
+        "byte_count": 14213160
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab0db.csv",
+        "input_kind": "artifact",
+        "sha256": "247c67beafc7272fe4398964bd4a521339a74b4b7b8c08e82da3b3cb53410167",
+        "byte_count": 5137
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab0dc.csv",
+        "input_kind": "artifact",
+        "sha256": "73da0af72e984030fdcc3c243b28fe401c46208c5a4fb4ca1fde7b3de1cab905",
+        "byte_count": 190013
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab_info.csv",
+        "input_kind": "artifact",
+        "sha256": "b045d9e1c830d722b02cdd57a8185c5f1e045ede1750deddfd60ba7c101b1453",
+        "byte_count": 4064
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "dd0f9a9acc6aa60dc2e0d147a426b5b16db2d0a15f277a61898ed36e611741c2",
+        "byte_count": 4140
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab02.csv",
+        "input_kind": "artifact",
+        "sha256": "f4c2cec8be02ed02c6ebf8a3c9faf8fd23307f9a522080fc4e098b598becca36",
+        "byte_count": 939
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab04.csv",
+        "input_kind": "artifact",
+        "sha256": "57ee237d1cd58acc52a1d91d5a904565202e44e186d10addcca7edc0ce6b18c8",
+        "byte_count": 123
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab05.csv",
+        "input_kind": "artifact",
+        "sha256": "4ad259535cb15f47a9cd79f7e5933718f4b46f3b865a67ec50a23fd9900c0ecf",
+        "byte_count": 5677
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab06.csv",
+        "input_kind": "artifact",
+        "sha256": "3b51c305a8d99cdd51c4b95fb4a6cdb134408070ab6ae701c500f7cafdddbca7",
+        "byte_count": 603
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab07.csv",
+        "input_kind": "artifact",
+        "sha256": "e1800adfef9af038d47eea03fae8411b713cb63e1b27244ad10a7a14bcfdac84",
+        "byte_count": 197741
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab09.csv",
+        "input_kind": "artifact",
+        "sha256": "ec9ecb41ab6b008cccb4e9f06d7310d04ee4d66a4a7bef6ba8d0085643342382",
+        "byte_count": 130467
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab10.csv",
+        "input_kind": "artifact",
+        "sha256": "1a4e674735d447f82ab3d6be6aab76b426fbee3a79701ad664a69ea03aa0bff4",
+        "byte_count": 1045074
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab11.csv",
+        "input_kind": "artifact",
+        "sha256": "d95e452fa5395fd41e3400a5ad921793ce8431b2eb5ff51ae3c998f18fd5fb6e",
+        "byte_count": 425548
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "ebda76ceea50c0492262710b01f21c0dc2271a439f1d2a23a6c5d35872b58815",
+        "byte_count": 465
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab02ad.csv",
+        "input_kind": "artifact",
+        "sha256": "a32e7731d911b823d2ad1baa519797ef460aee335628345bcbb1892741d7e4f4",
+        "byte_count": 296841
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab02ax.csv",
+        "input_kind": "artifact",
+        "sha256": "d7940ed3bcb94817021be672e8dcc4c187a1fa925b846fbc5dbccadf0e9636e7",
+        "byte_count": 393
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab04.csv",
+        "input_kind": "artifact",
+        "sha256": "43e4deca903042c89edd15a671507d2f89fe7a1b38210b17bbc0e49266258163",
+        "byte_count": 277744
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab05.csv",
+        "input_kind": "artifact",
+        "sha256": "3777c18a6edbd6a2c439a56289e5ce93e4a3f24a3d27501085aa5075b9900018",
+        "byte_count": 808779
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab06.csv",
+        "input_kind": "artifact",
+        "sha256": "374db021e566dea2adf8a640e13a888bfc8972241a6f71f593fff9cdaf1c84a6",
+        "byte_count": 498294
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab06d.csv",
+        "input_kind": "artifact",
+        "sha256": "728f746ce011bc597387cb5c131b708b3349764e9840eaa43a344d35bf8d792e",
+        "byte_count": 1656593
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab07.csv",
+        "input_kind": "artifact",
+        "sha256": "7f966446be56b00d7b308bd364bb466c799c7eabfeab739db63e9d78c2e95a1c",
+        "byte_count": 716814
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab0c.csv",
+        "input_kind": "artifact",
+        "sha256": "b0ab0740d8d3e23f58ed3b04f9cb6cd1664c5238c6c6a63f5bd6656a1fa94c33",
+        "byte_count": 295592
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "02ca7635cb53964822358f6375e2be06d63d958e5c87d55e2f572f87b2b7663d",
+        "byte_count": 474
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab02ad.csv",
+        "input_kind": "artifact",
+        "sha256": "d2075f86df08c249e037056131ea74b6c86a5d19c053de383b12bd3c008ce08d",
+        "byte_count": 313026
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab02ax.csv",
+        "input_kind": "artifact",
+        "sha256": "c988d82eb87d93dab7ff40d51692632eb1ab88c9cddef519f2812bcc70cd561b",
+        "byte_count": 515
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab04d.csv",
+        "input_kind": "artifact",
+        "sha256": "f3634f7638e7212396577ad5ba15f2fe9500768edaa19bafd15aa5f87f0e5516",
+        "byte_count": 276396
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab05x.csv",
+        "input_kind": "artifact",
+        "sha256": "f2af21d0f707d673ecfb3607c778d32a769017a90b6377ee31562b6bf3ee4aa4",
+        "byte_count": 1573
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab06d.csv",
+        "input_kind": "artifact",
+        "sha256": "decafb609bee6f86b9b1392256541c9a472cff1549cfe54673248500f50e8ff9",
+        "byte_count": 2049524
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab06x.csv",
+        "input_kind": "artifact",
+        "sha256": "1c89b0afe5fb570596df977064124caca41664dbd8edf57abe693a835b310db1",
+        "byte_count": 6618
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab07d.csv",
+        "input_kind": "artifact",
+        "sha256": "26ecdddefe54b02cfeddd3b71bbbf54136a7df038e7ba3e5435438091a28c76f",
+        "byte_count": 694081
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab07x.csv",
+        "input_kind": "artifact",
+        "sha256": "9a93c8b9710672bc3225487cbbd322541a3d3cb8bc2f19639b3d50f696a07891",
+        "byte_count": 1042
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab08e.csv",
+        "input_kind": "artifact",
+        "sha256": "8021eff9eda544b16f4d2be2e9cf2174b94ce819c5ed02e4ffc2b9c59ff2044f",
+        "byte_count": 4879342
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab08ex.csv",
+        "input_kind": "artifact",
+        "sha256": "658b1aedc519278e8e8246f5369060478e815f7f1c6efc6c949e637be3effebb",
+        "byte_count": 55651
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab0c.csv",
+        "input_kind": "artifact",
+        "sha256": "30f7fa7d1ff66fbb97d852ed2b77768df64741ac4d66616ca174fa95d34d628f",
+        "byte_count": 2812
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab0dd.csv",
+        "input_kind": "artifact",
+        "sha256": "870549c41aa2394fce6ff26305ba4eb3d0c7ddf525ba80f49168520f786a6c5a",
+        "byte_count": 303272
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab0dx.csv",
+        "input_kind": "artifact",
+        "sha256": "5dd64667fd2818819cb0ce14d5fc630085f70dd1926c65332dc028a4831f515a",
+        "byte_count": 273
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab_info.csv",
+        "input_kind": "artifact",
+        "sha256": "8fda1a9f6b6923436b98422a34b193194fe72a49d836c6e0b9335cbea0335965",
+        "byte_count": 4063
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "8322c843d417e84ebaeb8822d366392bd5656fe78fe6811171c47da2a927211c",
+        "byte_count": 3567
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab02.csv",
+        "input_kind": "artifact",
+        "sha256": "d4340c5abde93dc10541b0f6f11b89251c3ca382939b6d2a03e2ce6d562e1ca3",
+        "byte_count": 5340
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab03.csv",
+        "input_kind": "artifact",
+        "sha256": "a399aa84826755bdfe163a3f2a03bef12cdcd9ac808a2fa7429d1a53b48da278",
+        "byte_count": 149833
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab04.csv",
+        "input_kind": "artifact",
+        "sha256": "49ab80f755987aaecb5f14f46c9d62be3270eb02d8ae2b51b65d714183a4f82b",
+        "byte_count": 8821
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab05.csv",
+        "input_kind": "artifact",
+        "sha256": "e40be43b61d8a637852e735401a4c7cbf2fd9b327c7c2c2c44f9217ffc571866",
+        "byte_count": 13091
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab06.csv",
+        "input_kind": "artifact",
+        "sha256": "f957032e420b9a26b7a8a34b7704089876af2dceb12c5bfc9904e175834852a9",
+        "byte_count": 323439
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab09.csv",
+        "input_kind": "artifact",
+        "sha256": "a5e8979dee030bf70c1f282d90a6c03e0248cf0f5650a948cbb8772a54c083d3",
+        "byte_count": 3754
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab10.csv",
+        "input_kind": "artifact",
+        "sha256": "0a20e2625d406482a90e6c97da12c483cb33f720a940fae73736d2cf70beec7d",
+        "byte_count": 5359
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab11.csv",
+        "input_kind": "artifact",
+        "sha256": "7e53395c4ff223822b585d7c94f973d3582a3641ad88d0887eb038d0d1a3e338",
+        "byte_count": 164767
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab12.csv",
+        "input_kind": "artifact",
+        "sha256": "815e6e4e209f2bd49fec2581fd9ca3dce28651e241c750f4c57fa2be69e97a84",
+        "byte_count": 2516
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab13.csv",
+        "input_kind": "artifact",
+        "sha256": "12887a32d8201b6341ad5a8a6d17e44ee871a5947b45c5fcc58b0b6bac926adb",
+        "byte_count": 4588
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab14.csv",
+        "input_kind": "artifact",
+        "sha256": "1d8c80b17c95313c5fb4d0691f400dead357654e799f9d1bff95354b670ddddd",
+        "byte_count": 131610
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/1.kolo/PRE_2019_KOLO1_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "c6ba465a36b181eae5c73d7b448232d82904745da72e8d15762eb46106856de2",
+        "byte_count": 591
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/1.kolo/PRE_2019_KOLO1_tab03a.csv",
+        "input_kind": "artifact",
+        "sha256": "b906bed4549918f9bace66c8b43223370a60ac1985f32eb402cdcb863ecf678e",
+        "byte_count": 1429
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/1.kolo/PRE_2019_KOLO1_tab03ax.csv",
+        "input_kind": "artifact",
+        "sha256": "b3c9702be4338ee8f8f06beffbd1c617a004cdee8afecb7372a1f109f7d490bf",
+        "byte_count": 113
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/1.kolo/PRE_2019_tab0c.csv",
+        "input_kind": "artifact",
+        "sha256": "521303abe40660fb36e98564ef670e2d8f2610baca5deafdab4c880a5dfe4ba7",
+        "byte_count": 286801
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/2.kolo/PRE_2019_KOLO2_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "04da8718616e60ee107719adff0c6092ec7a284eb482611f6c43c9560353a97d",
+        "byte_count": 593
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/2.kolo/PRE_2019_KOLO2_tab03a.csv",
+        "input_kind": "artifact",
+        "sha256": "cb1729503eff35a108655e2b5b2c592736088fa87616030f55e2002375d97182",
+        "byte_count": 491
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/2.kolo/PRE_2019_tab0c.csv",
+        "input_kind": "artifact",
+        "sha256": "521303abe40660fb36e98564ef670e2d8f2610baca5deafdab4c880a5dfe4ba7",
+        "byte_count": 286801
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/1.kolo/PREZ2024_kolo1_SK_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "730a734da0e1007c15f62b549174f4ae20aa330778772c20d033d6c2f4683c6a",
+        "byte_count": 431
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/1.kolo/PREZ2024_kolo1_SK_tab03a.csv",
+        "input_kind": "artifact",
+        "sha256": "381cf298211cdfaaba2d2f5981a507d84133d50cf7f0362281b1bf642df59c96",
+        "byte_count": 990
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/1.kolo/PREZ2024_kolo1_SK_tab0b.csv",
+        "input_kind": "artifact",
+        "sha256": "863125e4b15601d3b71ea95513a2424d4ae2ed47d02ddc7b3cb6c72f457287ad",
+        "byte_count": 210670
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/1.kolo/PREZ2024_kolo1_SK_tab_info.csv",
+        "input_kind": "artifact",
+        "sha256": "ac84dafa4419d5e6089a6b9c4caf16a6b9b994fcfefdbf120446d2441fbbc666",
+        "byte_count": 1300
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/2.kolo/PREZ2024_kolo2_SK_tab01.csv",
+        "input_kind": "artifact",
+        "sha256": "981de1b499d13d5c1943c8c91b106eebb14ce6219cce84d622637ab40c5c3b3a",
+        "byte_count": 434
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/2.kolo/PREZ2024_kolo2_SK_tab03a.csv",
+        "input_kind": "artifact",
+        "sha256": "59dec21b8a8c79cb97de7bae978f4745b685d934957d21ca92003aa008c9d7b8",
+        "byte_count": 427
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/2.kolo/PREZ2024_kolo2_SK_tab0b.csv",
+        "input_kind": "artifact",
+        "sha256": "863125e4b15601d3b71ea95513a2424d4ae2ed47d02ddc7b3cb6c72f457287ad",
+        "byte_count": 210670
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/2.kolo/PREZ2024_kolo2_SK_tab_info.csv",
+        "input_kind": "artifact",
+        "sha256": "45a4a7db49c16c85f9c1bdc37c6b264b7e4712e8d28d64cf6b50ee5d14e8bcf6",
+        "byte_count": 1300
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/osk/osk2001/index.html",
+        "input_kind": "artifact",
+        "sha256": "d1c027b3d54fe6fd07f9555e22635537271c8701135a7a2bcd8f22326055bd93",
+        "byte_count": 3989
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/osk/osk2013/VUC/home-sk.html",
+        "input_kind": "artifact",
+        "sha256": "43846729519e68fe3f37169ec613f113b63d68dfea051317dd2050407424630c",
+        "byte_count": 4369
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/osk/osk2013/index.html",
+        "input_kind": "artifact",
+        "sha256": "78e689902675df0d2ee587e681f7f1e2ff7bbcf04593cf879771a8ce826ed778",
+        "byte_count": 1926
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/osk/osk2017/index.html",
+        "input_kind": "artifact",
+        "sha256": "67a753d9f04eb7dad2088c223c905a7b8054cd15eb49d281395a5fc7bae7ba74",
+        "byte_count": 513
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/osk/osk2017/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "b809c4dd55552849e9af1473aa6f6a6a32eb45c1c2a2a088992c9858d6c11605",
+        "byte_count": 11289
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/osk/osk2022/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "44f4d595419f03f7a3c3a6c2a49a9f2339cbd4eeba663781c8ffab90969cdf7d",
+        "byte_count": 24076
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/doplnkove2022/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "25d49e9f22412af0b5803da9bb0ca0aeb29051d67f2a5a0de68485afc54fa111",
+        "byte_count": 42548
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/doplnkove2022/sk/subory_na_stiahnutie.html",
+        "input_kind": "artifact",
+        "sha256": "97a365acdb4d0db09d978cf43f818ad29ee17594baf02bfbda397ca549c53314",
+        "byte_count": 37878
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2014/oso2014/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "c4e2890031a9867ad3e7732bdb0fbbb20e71dcd7214205e719c56e93c79dee5e",
+        "byte_count": 4774
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2018/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "f3afab9b9534167c0a05c086a55cd05ef7d5e547f1557fcdd5243b6fee96f7fe",
+        "byte_count": 12075
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/files/OSO2022_SK_csv.zip",
+        "input_kind": "artifact",
+        "sha256": "95b3be623b0e8d506b4069bf1c99836709427da3a0edee5d2e2b8d4b3e21bf9d",
+        "byte_count": 1863667
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/files/OSO2022_SK_tab05d.xlsx",
+        "input_kind": "artifact",
+        "sha256": "d459074c77d06fecd706e22894840d0171217fdcdbd18c27ff56c22412a42eae",
+        "byte_count": 567306
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/files/OSO2022_SK_xlsx.zip",
+        "input_kind": "artifact",
+        "sha256": "9445f659df0baf2cec27c837346226388dd5912000ba82e10aa941edfa2d9a22",
+        "byte_count": 22042471
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/js/functions.js",
+        "input_kind": "artifact",
+        "sha256": "9b15e83305411489196c0a84bc3236561271bcf76f411c18b959d2f19899e8d7",
+        "byte_count": 41061
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/json/tab05/528595.json",
+        "input_kind": "artifact",
+        "sha256": "a84b5c12614e7faf6da606e5ab42785e13aeef2ee2206dc6104efc606863c5be",
+        "byte_count": 1366
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "7ec78ebdee0b4099df74f8c36fa315a1f8fc65bc6fdf701aba6ce49e76f3c489",
+        "byte_count": 25198
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/sk/subory_na_stiahnutie.html",
+        "input_kind": "artifact",
+        "sha256": "4281c7981c252f9ec43c3316fe72e8e6838c931e453c04aea257d902204ffcb6",
+        "byte_count": 22192
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/sk/vysledky_obce.html",
+        "input_kind": "artifact",
+        "sha256": "fb58d2cf6246c5b26103d1c50d9303bf3d95bc4131299290e0f32a7203120bb3",
+        "byte_count": 46887
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/prez/prez2014/Prezident-dv/home-sk.html",
+        "input_kind": "artifact",
+        "sha256": "e9c4758c3dbed988ad4322ada5d46c2503e737aad4f81e9e38eab35a319e3706",
+        "byte_count": 3940
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/prez/prez2014/index.html",
+        "input_kind": "artifact",
+        "sha256": "25192495ab3d09ae92a5c8c07eb23f49aac3f713e0616ca4f2f7d8145eff73d7",
+        "byte_count": 1916
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/prez/prez2019/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "d5859515a014e0fc8acc0cb5cb5513cc3bf0abc2ce1cd6996a091a880f8bfd83",
+        "byte_count": 11380
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/prez/prez2024/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "a54424754a407e994b401686bded9e661a3bd69d7d4c23c1f8227f8046336af6",
+        "byte_count": 26609
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volby.statistics.sk/tree.html",
+        "input_kind": "artifact",
+        "sha256": "e4a3ebc357fe7e117abb0957217b1307293966b0f9395b9b02dd8381b6faaed8",
+        "byte_count": 146700
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volbysr.sk/files/REF2026_SK_csv.zip",
+        "input_kind": "artifact",
+        "sha256": "11fbf81692e70651221989b84fac72a54eda0b83b02a5e8718f734d46c1a1035",
+        "byte_count": 496057
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volbysr.sk/files/REF2026_SK_tab0b.csv",
+        "input_kind": "artifact",
+        "sha256": "5e49e0fdf08ccb306ee33d4273fb3ee9bffda70c5c33e24fe05736465c17728d",
+        "byte_count": 231222
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volbysr.sk/sk/index.html",
+        "input_kind": "artifact",
+        "sha256": "33c56bbfefe46c641248bc3f8b60677a21aa4021ada6c776427c9aa5dc028457",
+        "byte_count": 26752
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volbysr.sk/sk/subory_na_stiahnutie.html",
+        "input_kind": "artifact",
+        "sha256": "4b737a2a4926b4e71cf547e21396bbdb3179dc160eab300bea67506a4c16c2e1",
+        "byte_count": 26427
+      },
+      {
+        "input_path": "data/research/slovakia/sources/volbysr.sk/sk/uzemne_clenenie.html",
+        "input_kind": "artifact",
+        "sha256": "08ba199acfa775e4549fce6e1365fcbb614d89a8dadf14904035158f32b8066b",
+        "byte_count": 28883
+      },
+      {
+        "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__1392a8995f",
+        "input_kind": "artifact",
+        "sha256": "0b169415473532c187694a42849b31e350efbc2c61e1fdfb8dfc623c4bfd4870",
+        "byte_count": 642333
+      },
+      {
+        "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__1cb7b5cdc1",
+        "input_kind": "artifact",
+        "sha256": "8ef88979cb1f95411fadafe3c2310247bb21744523f8256b8d5bdaabb3d1ee76",
+        "byte_count": 104276
+      },
+      {
+        "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__4215951564",
+        "input_kind": "artifact",
+        "sha256": "cd45ccd40bd8cd984249fe84b688c1dc5a8d7bc4561a058c39a23ae5a1aea11d",
+        "byte_count": 106118
+      },
+      {
+        "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__a584cacf51",
+        "input_kind": "artifact",
+        "sha256": "9eefcb970e316b1cc18d93f8a7d2d39dccf49fae12034911d89081e01c523b39",
+        "byte_count": 7498729
+      },
+      {
+        "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__a7762cbb79",
+        "input_kind": "artifact",
+        "sha256": "1b4ad174d1efa69c83c6706aaf68edf2df4e3506af367bac10b213933c68bf09",
+        "byte_count": 120123
+      },
+      {
+        "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__e1394043d5",
+        "input_kind": "artifact",
+        "sha256": "b1acf18f57287b04dcac1bac98e1985e6865e6ee6b7a31032225368f9cf6adf8",
+        "byte_count": 188164
+      },
+      {
+        "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__edf9a40baf",
+        "input_kind": "artifact",
+        "sha256": "05d468860a48925410d07d9757fe8d7bfa4edf40fd01f10a4fd1c6174235c509",
+        "byte_count": 109090
+      },
+      {
+        "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__f724b63855",
+        "input_kind": "artifact",
+        "sha256": "ca5f54d276f57349d3e8ec837fefdf85ef33c810c0f033349a66c643d35d0a11",
+        "byte_count": 47238
+      },
+      {
+        "input_path": "data/research/slovakia/unresolved-evidence.json",
+        "input_kind": "package",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "byte_count": 3
+      },
+      {
+        "input_path": "schemas/atlas/tiers/slovakia.json",
+        "input_kind": "tier_classification",
+        "sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770",
+        "byte_count": 9177439
+      }
+    ],
+    "overrides": [],
+    "adapter_version": "atlas-slovakia-full-register/1",
+    "method_version": "atlas-preserve-evidence/1",
+    "schema_version": "atlas-master/1",
+    "schema_inputs": [
+      {
+        "input_path": "0001_atlas_attempt_log.sql",
+        "sha256": "e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1"
+      },
+      {
+        "input_path": "0002_atlas_master.sql",
+        "sha256": "1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da"
+      }
+    ]
+  },
+  "fingerprint_sha256": "94f39ca9f08bfc266a3f6f0280a9feb141f08189d69a86acff95c1d718240179",
+  "candidate_release_id": "country-package-slovakia--sha256-94f39ca9f08bfc266a3f6f0280a9feb141f08189d69a86acff95c1d718240179",
+  "tier_file": {
+    "input_path": "schemas/atlas/tiers/slovakia.json",
+    "sha256": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770"
+  },
+  "retained_sources": [
+    {
+      "source_id": "src-acadead05fdf51c2e70ec790",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Ministerstvo vnútra Slovenskej republiky",
+      "title": null,
+      "url": "https://ives.minv.sk/obce/webformmain.aspx",
+      "input_path": "data/research/slovakia/sources/ives.minv.sk/obce/webformmain.aspx",
+      "sha256": "c815eab2e5f42d83338a1dd0691d3eec4b0137ce8aad26e8086decc6f7947996",
+      "byte_count": 5111,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-5569c585a5b8942282eef79d",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://mojaobec.statistics.sk/",
+      "input_path": "data/research/slovakia/sources/mojaobec.statistics.sk/index.html",
+      "sha256": "919c337eaa20539469b5fdddd0d1cc954a7c136d365d96a557f30c01cbc05b97",
+      "byte_count": 523,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-25c6e694049dee37b22d992a",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Slov-Lex",
+      "title": null,
+      "url": "https://static.slov-lex.sk/static/SK/ZZ/2001/302/20020101.html",
+      "input_path": "data/research/slovakia/sources/static.slov-lex.sk/static/SK/ZZ/2001/302/20020101.html",
+      "sha256": "98c21e581e1c1922b4bcfa6f2e7442e6b587eb50b9da9fb6e5d6cedd6f17bffe",
+      "byte_count": 193224,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-5878576dc2a7c25a772e073c",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Slov-Lex",
+      "title": null,
+      "url": "https://static.slov-lex.sk/static/SK/ZZ/2014/180/20260601.html",
+      "input_path": "data/research/slovakia/sources/static.slov-lex.sk/static/SK/ZZ/2014/180/20260601.html",
+      "sha256": "d4e4b800d10c4cc765f6b042d80ea62ce234e0dc130decc61460dd77e112f368",
+      "byte_count": 1356552,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-e1ce3582abca2112f0b120a5",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/ep/ep2014/EP-dv/home-sk.html",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/ep/ep2014/EP-dv/home-sk.html",
+      "sha256": "abbef0f295597eca3748790c41c9ef144a762d89474e549478f4c47912606644",
+      "byte_count": 3612,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-70e8404999dd33e048e02f20",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/ep/ep2014/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/ep/ep2014/index.html",
+      "sha256": "4f5f2fa9599c07f975f3a6d145955493d6b4623bddfbbafb2bf493f27928a64c",
+      "byte_count": 1904,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-0de9eade78cf4e4cbef83d1e",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/ep/ep2019/sk/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/ep/ep2019/sk/index.html",
+      "sha256": "458645e97b8d84b028eb8ce34477dcdae1617b5a862869a1aae6d10b322ebb91",
+      "byte_count": 10821,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-8dee7970adc0e02ee9c5a017",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/ep/ep2024/sk/index.html",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/ep/ep2024/sk/index.html",
+      "sha256": "0fa4e9256f44c1941190b1603f53ba38eb7beaa3787138e350964329000f6d1c",
+      "byte_count": 27271,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-2e531915aebd3984ed008015",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/index.html",
+      "sha256": "ed15bfb441a924102d8919cb21d65db8023c81dd0c0eb634a6255cce23fb0d03",
+      "byte_count": 15916,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-8c0f516dd1e54237e5c6fdf4",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/nrsr/nrsr2016/sk/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/nrsr/nrsr2016/sk/index.html",
+      "sha256": "146e9c8c64afa499d62116d7a130ac4232f2776b8784232122fa2f2ffd06b889",
+      "byte_count": 11959,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-690162175deee3a4a38cd964",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/nrsr/nrsr2020/sk/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/nrsr/nrsr2020/sk/index.html",
+      "sha256": "e87d2e9c66b57cc9db477be5fb5af698b6671521efa63f301931046f0840bf3a",
+      "byte_count": 10908,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-5b5073ff3178f75b87375b81",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/nrsr/nrsr2023/sk/index.html",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/nrsr/nrsr2023/sk/index.html",
+      "sha256": "c13b6a02cafe9e22ac222d1921b0057eae566307ca8f3ea6c24cc5c31e8ec686",
+      "byte_count": 26652,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-88e9ed2d15051ec92cb77ce6",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2014/EUP_2014_tab02.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab02.csv",
+      "sha256": "3563401b9fb42bc7fe8c35f088ff8e644844bfad19daf26c9aa04287ff14b3cd",
+      "byte_count": 149753,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-d20587681daf608791320e27",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2014/EUP_2014_tab03.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab03.csv",
+      "sha256": "ee4d46f482219028cfc4c5f42df9acd53a34e53f5ee8f2307113cbbd0a3b629a",
+      "byte_count": 228048,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-7138806ee7db716452137130",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2014/EUP_2014_tab04.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab04.csv",
+      "sha256": "170bf1dd1c77e0b5974bbc9f0aee9d5285978a9225ab103a14a4283328515467",
+      "byte_count": 19200,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-0cdb2c6be52a6ade24301bf1",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2014/EUP_2014_tab05.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab05.csv",
+      "sha256": "18ad65d7c8940d2cb424d7617d366897f997aed8f7dd4bca51c7c930aeb10895",
+      "byte_count": 688599,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ec79a1b8f0a8d9dac61e9d89",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2014/EUP_2014_tab06.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab06.csv",
+      "sha256": "f37b6565a598214d0c78ff7ea08a8fb68bb139c06c7d2f16e03cbe4f88e56467",
+      "byte_count": 16842,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-9d8e590cd342e6d37471da2d",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2014/EUP_2014_tab07.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab07.csv",
+      "sha256": "6cb96eddfcdc4630c85b86d8bfd48cf1b469e2a24530b4b3276aa2a17ad7e163",
+      "byte_count": 24384,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-fbc3c521749bee7c0ec8377b",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2014/EUP_2014_tab08.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab08.csv",
+      "sha256": "d4fa5373a9c5d1fa8e40c8aecde652c4da78b3dce0ceb2767ae9a782351612ba",
+      "byte_count": 1393,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-3538c5192ceb0a490b423472",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2014/EUP_2014_tab09.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab09.csv",
+      "sha256": "038b54dfae5cc7f7287cd19f0003a7815895394da107eb992d7d1d430c5a565d",
+      "byte_count": 167481,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-65145e1bfe5ece309703d200",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2014/EUP_2014_tab10.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab10.csv",
+      "sha256": "5636a7159c6d3ca5527eb0eab1486304a91548424ffd90dc7b0fa44b43648fb0",
+      "byte_count": 3295,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-87fb2172e938b240620b12dd",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2014/EUP_2014_tab11.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2014/EUP_2014_tab11.csv",
+      "sha256": "ea2b1a6dee3377e43bed6472d512e4732ab2b04e74b36fd44b92366e5d14c446",
+      "byte_count": 4961,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-9724df7f4afe64473c903c70",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab01.csv",
+      "sha256": "5aadc05e87ea67f89fd12383a6e7a6687eea406d3fbd1031e0557ecb237d3f97",
+      "byte_count": 512,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-f2b12989edcf14e850315083",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab03a.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab03a.csv",
+      "sha256": "764eae9fc68acf9b2480005e2e021110efa9d793e7eb6810806abed269cc9c2a",
+      "byte_count": 2301,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-9cfcf88ac0e15b744b866b79",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab04.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab04.csv",
+      "sha256": "5808a6ef44004389dc8b7414a9b170fd0550265b09a87ec826948cb97e1fa8f8",
+      "byte_count": 684,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-a9e16a231fbeb0e9cdeb934c",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab04x.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab04x.csv",
+      "sha256": "a2177cb91a4b3df0d7759145fefc68fb9d29cf493db1125a91a9dedfc6241453",
+      "byte_count": 190,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-f25c1c53a24dbd937b06c8d3",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab0b.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab0b.csv",
+      "sha256": "d63ff4844a662bd950f9af42b9040c0498097b8d4c3206080e5294f5025775bd",
+      "byte_count": 34823,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-b3f1c6e362c4df2ef90152ee",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab0c.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2019/EP_2019_SK_tab0c.csv",
+      "sha256": "a6f6b75ccd5aeaf544d4ff34ebd764dbe222e609176ae2f4e3b63680d5fe0716",
+      "byte_count": 286800,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-020ccdb5bad6d9eac3e332f8",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab01.csv",
+      "sha256": "1a88fbe233f4070278cde382347e27b374ccba7fe7892897a3e9d419611a1ecf",
+      "byte_count": 392,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-7894dba8a8355172826efe84",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab03a.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab03a.csv",
+      "sha256": "7f059815600e6a577c80ddabef7ab611a8fde7a7efe7c9e6503ba4e7505cdbf3",
+      "byte_count": 1562,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ba2bbb10bee3839296e430fd",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab04.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab04.csv",
+      "sha256": "a085ba2fce88f9eb64cfdc7df8961627a3e32cd433717cb5db1244087e7c5a31",
+      "byte_count": 548,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-761da1b20abd8154573876f9",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab04x.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab04x.csv",
+      "sha256": "2d3e3972223a5f14b1ed1748feb6af1a3ce21d44a965dfa7bfe10dee836e0b21",
+      "byte_count": 179,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-d43470f4316c230a1521bbe8",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab0b.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab0b.csv",
+      "sha256": "60fadc07f7dcf931d996279ade3b95c605325155b4b488db6ff1b0936346e6f6",
+      "byte_count": 29201,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-5463161d1552cb2823b5503b",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab0c.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab0c.csv",
+      "sha256": "e5dec8968eea900e8e1093d2c20355bc90f9a55ab26b8f5f98aaa813b8307ef3",
+      "byte_count": 210670,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-1ba71cfed3fe16291efe0696",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab_info.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/eup/2024/EP2024_SK_tab_info.csv",
+      "sha256": "4ebe8c8e8f5934b5e8d9bc23c8199214f54b8ff32706ca84305767d948598976",
+      "byte_count": 2104,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-8767d67b646ea1f3efd6fce1",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab02.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab02.csv",
+      "sha256": "b3dec37dbc7221ad64fdbd56324830c3d43e4fa73bceee580f0d3b2ee86d36a2",
+      "byte_count": 39682,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-a8eeea1c38b9039ac3d94d25",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab03.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab03.csv",
+      "sha256": "703d1208a5873ecc5c3cfcce5a8b50ea052a6513b2f16355f0db3213480370cf",
+      "byte_count": 1228,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-c8e4a7b0c1646eda4a578697",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab04.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab04.csv",
+      "sha256": "dc2b1f52fe54826747ba16417e23dbd75316a1e768881434fba3d33cf68cba28",
+      "byte_count": 357220,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-2bc3aa012cd6b64a4099409e",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab05.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab05.csv",
+      "sha256": "de2da19d1bfe67304a3374d29c445cb0be140b4279739c9223a735c14a4ea2b1",
+      "byte_count": 4421,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-47546853f765a7e5110fd0f4",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab06.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab06.csv",
+      "sha256": "292ce30d5e8d85fc54ea8d7d6fff1f585b91c3ca53a0b16798e483f60078abff",
+      "byte_count": 6702,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-bdc4b01a8141f24cfa4a67a7",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab07.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab07.csv",
+      "sha256": "f83befe26ff7b7c38f933e83f237109f8df48b851f21f8bdef673a194fac815e",
+      "byte_count": 816367,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-f4c2394aedf9062847b16937",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab08.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab08.csv",
+      "sha256": "971e9c7904acb36e18baa8a5af74a033add7b356e42b60a9bc35bb97327ee6f4",
+      "byte_count": 13703,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-6b9bc90a29d16f1dc92e13db",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab10.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab10.csv",
+      "sha256": "52881fc6211fa0bc4ba166dbaa9090abda14f8ee7f8a38ba9a0b72ec99eb1343",
+      "byte_count": 69393,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-6856e482e60ba9cf61cefa68",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab11.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab11.csv",
+      "sha256": "4113608649b7f0ab07a562b8be25e53bbe080de0b9c2fd266314a963bf9d3b7f",
+      "byte_count": 109639,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-f66bd8bbb14b824fac80c28d",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab13.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab13.csv",
+      "sha256": "0a9ef5ec2fba9a5cc8b71a0669991429978b467593e5a781ab25f9a861bf5bbd",
+      "byte_count": 1411,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-b639f8a1d09225542339e01d",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab19.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab19.csv",
+      "sha256": "b238a9b7c0ddc240abe10e9df2208414312bd0d7760d67d4a73b98057d529377",
+      "byte_count": 144887,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-8feb50038f0b547d57d5ee24",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab20.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab20.csv",
+      "sha256": "57eae1786b04bc82d7db11e5b4aaba582449d30b20a766436472ecf8b0f8a267",
+      "byte_count": 1279,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-8fa2913c223f397a6a3f5c61",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab21.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2016/NRSR_2016_tab21.csv",
+      "sha256": "e4c911b401dd891308ff4c86c2590156b3282420265c2d93bfe5249dc8665972",
+      "byte_count": 5430,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-3e6f8da4b2a3e4f5003fb066",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab01.csv",
+      "sha256": "e75147ffba5efc7081f9c0a759be2a9c7ec81b155a7897681bebb8991fc2d763",
+      "byte_count": 680,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-1b3a6ac2510f237fc1e248a1",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab03a.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab03a.csv",
+      "sha256": "bca99840d8d864218020a2953abf7a8b7a01842a573d90aa65bfb26aac60ea63",
+      "byte_count": 1678,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-8a636c7f58c04f7b8daea590",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab04.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab04.csv",
+      "sha256": "736ed0f584a959be7a3c150106e1dce279ae20c26c80704b49f62893c30f8d57",
+      "byte_count": 679,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-e241f6a3c6d0b41e87fd15be",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab04x.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab04x.csv",
+      "sha256": "d68b3a497669d4f79c83c9cb9a3dc168d69c2e9593fcaef87fc08c2d2ab01fb8",
+      "byte_count": 185,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ee7976426e8f565d7e04282e",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab0b.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab0b.csv",
+      "sha256": "01e2d893e51a5406aa420e26ab51c2a2773fb80e7eb41e947fa4dba2060136aa",
+      "byte_count": 255616,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-dd3f3cb00e5c1e7a91e1e84d",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab0c.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2020/NRSR_2020_tab0c.csv",
+      "sha256": "47e785ab36350f09efdb302a880b56385691f62e275da28cde72de77b08d0dec",
+      "byte_count": 210728,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-9cbf709b686e5a044269c71e",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab01.csv",
+      "sha256": "2a088dd89d3bd203f31728400908d55e97cdbfcb49ba5a031442085f61fa2930",
+      "byte_count": 405,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-7604751efbc7a8c99b2521c5",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab03a.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab03a.csv",
+      "sha256": "97f5660514a8572f1d76a1afa9e4b70a33fcd78f633134b720d3cc99cc3cd3ff",
+      "byte_count": 1946,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-13c5e947396501223453797c",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab04.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab04.csv",
+      "sha256": "dc0d3dd2211f39f3b6dc1a43b1509cf717dce5d5b85979a196d5e026d16dd4fd",
+      "byte_count": 832,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-80e3235191eb270a35e79b55",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab04x.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab04x.csv",
+      "sha256": "83b9163850acc404fb0a5833ffd5bacd0d7f27013a39e61c7a13e03946e122d2",
+      "byte_count": 186,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-1249058faad9699908605585",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab0b.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab0b.csv",
+      "sha256": "383fb4b3cc133ac114dba5d776983932e7f26082e2bb0bdc16a315d39710d195",
+      "byte_count": 282876,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-c7204ecf5bdc87e8d1502a37",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab0c.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab0c.csv",
+      "sha256": "864256b4d581441c590386b2404459c1560e4f54de0d6b47cb0c57a2db70d96b",
+      "byte_count": 210723,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-18ccb1cdc1a24c7f3300843a",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab_info.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/nrsr/2023/NRSR2023_SK_tab_info.csv",
+      "sha256": "0be10a5e7e9cf661c90886225ff4baaeb80448a2e98ee10c4431613039abbae2",
+      "byte_count": 2585,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-f09eb7e1a32bbc1dd80bd41b",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab01.csv",
+      "sha256": "85e3bb75d62edeccf2608d046a01f0dfe62b0715533265c978eb41ed4bc6be9c",
+      "byte_count": 1283,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-c3af8befe2df29bf3872e738",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab02.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab02.csv",
+      "sha256": "6ab0da46be2e93f50a5acb63d30b779f63c4fb55a418c2ee6cd5d93155ac32ff",
+      "byte_count": 9013,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-3edcdf022fc65759ad955649",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab03.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab03.csv",
+      "sha256": "5c645c763ab266b0bfa5f0e6b2ba3ce30161461ccce7f3c3e952a4b4a4edd3ed",
+      "byte_count": 2064,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ab564e0ba31a0870ad835ceb",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab04.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab04.csv",
+      "sha256": "a5d501e33c0b96a6ec8d6d51fc05c101f99ee6613119d7a223eeb62be29fc38e",
+      "byte_count": 30123,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-1e0d881e237753a2695b6eb9",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab05.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab05.csv",
+      "sha256": "18b4a54ba2deb56a328ff4586f6b4f46f4595fcafe3fed200d5e5ba8585be27c",
+      "byte_count": 4304,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-78b8ffdff4446a3a74710527",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab08.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab08.csv",
+      "sha256": "ce5669d67d0ab3af4a8555d414089b4cc67d66e2014627da7e081ab34a5b7b9c",
+      "byte_count": 168432,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-1a388b9d7a8ce1b0de659aba",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab09.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/1.kolo/OSK_2013_1kolo_tab09.csv",
+      "sha256": "7c0e708ac1de6e2146069e6f17e1a7fe7cd88be80539d362d3976e3d8fd0d6b5",
+      "byte_count": 139361,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-a2d28d0e1620f86a3867b61d",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2013/2.kolo/OSK_2013_2kolo_tab06.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/2.kolo/OSK_2013_2kolo_tab06.csv",
+      "sha256": "b6182b48cde291a2aa691cbec9b3debf9455e335da913e6e46d6ab02a6e4661b",
+      "byte_count": 6599,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-edc2e2bcb0305c1a36af4d4e",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2013/2.kolo/OSK_2013_2kolo_tab07.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/2.kolo/OSK_2013_2kolo_tab07.csv",
+      "sha256": "d05187e8cf72d3cdf87e325cbffdae0f466bb7d7333a67792ad9ed315356cca7",
+      "byte_count": 1009,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-8e15e3aec18cfc830c655037",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2013/2.kolo/OSK_2013_2kolo_tab08.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/2.kolo/OSK_2013_2kolo_tab08.csv",
+      "sha256": "fc801f42723c9a44a853c7d3d7ca6d6720df6e24d664a1ad23b3e077befa4701",
+      "byte_count": 29947,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-c9803ab07318d2dbb52b470d",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2013/2.kolo/OSK_2013_2kolo_tab10.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2013/2.kolo/OSK_2013_2kolo_tab10.csv",
+      "sha256": "398954019154afdfbd6f51be6eb89dc876e5e5347d63e2414c88f2232037ba63",
+      "byte_count": 8019,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-df32fd13f895e9df9396ef3d",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2017/OSK_2017_tab02a.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab02a.csv",
+      "sha256": "940634e286776c0af8d64dc406ba5eed160309c038dc353d03bd138523d4f3f9",
+      "byte_count": 1101,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-5e9bc404692ea1bda484fd16",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2017/OSK_2017_tab04a.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab04a.csv",
+      "sha256": "d7a7acf56c257002e0b13fae9dd355a69646522feaeb0a4976ea904403fe9025",
+      "byte_count": 887,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-7a9121d3051f8e6b8a93f891",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2017/OSK_2017_tab04b.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab04b.csv",
+      "sha256": "0b89fc30047e2abea452d1edb655de0be5656db1a9a6cc6a71e6c1023d3865bb",
+      "byte_count": 38259,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-529807c56ee69532598308c4",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2017/OSK_2017_tab06b.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab06b.csv",
+      "sha256": "514d80af20bd0db7a4426f43c8bfeab3628a211e4c04899e7901b8adf2670a52",
+      "byte_count": 6357,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-e275b5a7f787271e62bf918b",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2017/OSK_2017_tab09c.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab09c.csv",
+      "sha256": "4238139153809e7d46580e16191b16ac5193a04aee80ed2cbffbd6b61c5ca5b5",
+      "byte_count": 279187,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-eb6d2a07d3a38a5ed506b29b",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2017/OSK_2017_tab0da.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab0da.csv",
+      "sha256": "c4b37ed911f538c188c4d3c35e7e64f9f3374dff65ffbeca9bae91f2fae4b8a8",
+      "byte_count": 234,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-50dc80e692f66e8e2b124da4",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2017/OSK_2017_tab0db.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab0db.csv",
+      "sha256": "7d5cb3d94bac317aac7162bb4a50339800138673dccbb542f0d6c575eeed7a60",
+      "byte_count": 5020,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-2ccd6e56feaa2e356665f598",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2017/OSK_2017_tab0dc.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2017/OSK_2017_tab0dc.csv",
+      "sha256": "bf8f3a82a0ea3db6cd81092bc6ed8da815584c206e51458c1458909275ea260f",
+      "byte_count": 192986,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-c282ff78dc88407414ccaa04",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab01.csv",
+      "sha256": "e38f4a2669c5b3160a01816b77bd6d86684242b111067c662ec8b9f650afc0ed",
+      "byte_count": 459,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-7ae96d58648d6daebde3ae3b",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab02aa.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab02aa.csv",
+      "sha256": "bb3c8ea6f459298dd0c5b178dad56ec5380e5ff87f13bf00875b32627347f235",
+      "byte_count": 616,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-24df64f600efacea18658864",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab04a.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab04a.csv",
+      "sha256": "814e2359d9908c4b7342578f4da9f814a56d1557c5d11d3b7d6095dfdb87920d",
+      "byte_count": 35921,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-4b223d9eb7839fb8a421700f",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab04b.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab04b.csv",
+      "sha256": "144526369fec68d2ba5e453b15f89a18c3c87698854a152b65378c15cc266e49",
+      "byte_count": 309880,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-716974c8aee63d93a0ba1ffe",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab06a.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab06a.csv",
+      "sha256": "b1b7483c9d63eb303cbb53499d5ba4b7c62613e17f6ff1923d19edfc5476a56c",
+      "byte_count": 5893,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-e3b0c6c666100608070d6e31",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab06b.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab06b.csv",
+      "sha256": "7f6399ffd56eb360b9b1f435dcf1caa59bb167ca98fce0d7315c7958a11e7e05",
+      "byte_count": 86909,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-5a87ab2b42e9e0b1788f872f",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab09b.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab09b.csv",
+      "sha256": "8335acc4bacdbdd0cc4e73c513c1f6ce2460e68c9fde5c5b41ec1d6303a41b59",
+      "byte_count": 302216,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ce917e131a9edc3861ba8565",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab09c.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab09c.csv",
+      "sha256": "267ba04a29300532d9765c06e513971378fc6b1f790d938a635c20626448eff0",
+      "byte_count": 14213160,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-1307b38d35f219a05e00a827",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab0db.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab0db.csv",
+      "sha256": "247c67beafc7272fe4398964bd4a521339a74b4b7b8c08e82da3b3cb53410167",
+      "byte_count": 5137,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-5a41e5069aadaa684b0894eb",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab0dc.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab0dc.csv",
+      "sha256": "73da0af72e984030fdcc3c243b28fe401c46208c5a4fb4ca1fde7b3de1cab905",
+      "byte_count": 190013,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-df9a0f283509dcabf612ab75",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab_info.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/osk/2022/OSK2022_SK_tab_info.csv",
+      "sha256": "b045d9e1c830d722b02cdd57a8185c5f1e045ede1750deddfd60ba7c101b1453",
+      "byte_count": 4064,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-a9be83b2c4988738308276c6",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2014/OSO_2014_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab01.csv",
+      "sha256": "dd0f9a9acc6aa60dc2e0d147a426b5b16db2d0a15f277a61898ed36e611741c2",
+      "byte_count": 4140,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-1e8c22b9907e9d8193b66265",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2014/OSO_2014_tab02.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab02.csv",
+      "sha256": "f4c2cec8be02ed02c6ebf8a3c9faf8fd23307f9a522080fc4e098b598becca36",
+      "byte_count": 939,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-2eedeeaa4c177c9570c178f6",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2014/OSO_2014_tab04.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab04.csv",
+      "sha256": "57ee237d1cd58acc52a1d91d5a904565202e44e186d10addcca7edc0ce6b18c8",
+      "byte_count": 123,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-b32165af75ff663eab216723",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2014/OSO_2014_tab05.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab05.csv",
+      "sha256": "4ad259535cb15f47a9cd79f7e5933718f4b46f3b865a67ec50a23fd9900c0ecf",
+      "byte_count": 5677,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ca36a40ebf9ce5773c9bdb1e",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2014/OSO_2014_tab06.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab06.csv",
+      "sha256": "3b51c305a8d99cdd51c4b95fb4a6cdb134408070ab6ae701c500f7cafdddbca7",
+      "byte_count": 603,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-cee224a975f0e5b7635bf536",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2014/OSO_2014_tab07.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab07.csv",
+      "sha256": "e1800adfef9af038d47eea03fae8411b713cb63e1b27244ad10a7a14bcfdac84",
+      "byte_count": 197741,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-afbb7e863db5a57f954bdef8",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2014/OSO_2014_tab09.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab09.csv",
+      "sha256": "ec9ecb41ab6b008cccb4e9f06d7310d04ee4d66a4a7bef6ba8d0085643342382",
+      "byte_count": 130467,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-c5e69863fc519cb76e3a1d3a",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2014/OSO_2014_tab10.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab10.csv",
+      "sha256": "1a4e674735d447f82ab3d6be6aab76b426fbee3a79701ad664a69ea03aa0bff4",
+      "byte_count": 1045074,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-f2ccc85bc97b933ecc7a80c1",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2014/OSO_2014_tab11.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2014/OSO_2014_tab11.csv",
+      "sha256": "d95e452fa5395fd41e3400a5ad921793ce8431b2eb5ff51ae3c998f18fd5fb6e",
+      "byte_count": 425548,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-a7cb535d6427793a460c57ec",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2018/OSO_2018_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab01.csv",
+      "sha256": "ebda76ceea50c0492262710b01f21c0dc2271a439f1d2a23a6c5d35872b58815",
+      "byte_count": 465,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-a4de3df427fff838072437a7",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2018/OSO_2018_tab02ad.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab02ad.csv",
+      "sha256": "a32e7731d911b823d2ad1baa519797ef460aee335628345bcbb1892741d7e4f4",
+      "byte_count": 296841,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-80863b3ffc473f3f1f1b9fa3",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2018/OSO_2018_tab02ax.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab02ax.csv",
+      "sha256": "d7940ed3bcb94817021be672e8dcc4c187a1fa925b846fbc5dbccadf0e9636e7",
+      "byte_count": 393,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-62569c3409b31808cadea398",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2018/OSO_2018_tab04.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab04.csv",
+      "sha256": "43e4deca903042c89edd15a671507d2f89fe7a1b38210b17bbc0e49266258163",
+      "byte_count": 277744,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-9beacaf986159bd3c2cddea5",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2018/OSO_2018_tab05.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab05.csv",
+      "sha256": "3777c18a6edbd6a2c439a56289e5ce93e4a3f24a3d27501085aa5075b9900018",
+      "byte_count": 808779,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-c1db6fa446bc6b2ff96243c5",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2018/OSO_2018_tab06.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab06.csv",
+      "sha256": "374db021e566dea2adf8a640e13a888bfc8972241a6f71f593fff9cdaf1c84a6",
+      "byte_count": 498294,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-9c4492e46144df86cd27b532",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2018/OSO_2018_tab06d.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab06d.csv",
+      "sha256": "728f746ce011bc597387cb5c131b708b3349764e9840eaa43a344d35bf8d792e",
+      "byte_count": 1656593,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-980c1df5c9839f8140d2ec25",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2018/OSO_2018_tab07.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab07.csv",
+      "sha256": "7f966446be56b00d7b308bd364bb466c799c7eabfeab739db63e9d78c2e95a1c",
+      "byte_count": 716814,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-f4e62d2ba1f344a6973887ed",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2018/OSO_2018_tab0c.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2018/OSO_2018_tab0c.csv",
+      "sha256": "b0ab0740d8d3e23f58ed3b04f9cb6cd1664c5238c6c6a63f5bd6656a1fa94c33",
+      "byte_count": 295592,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-f8e166eaf45d2f05010f20b4",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab01.csv",
+      "sha256": "02ca7635cb53964822358f6375e2be06d63d958e5c87d55e2f572f87b2b7663d",
+      "byte_count": 474,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-3c933ab3fb3d969ee57010ce",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab02ad.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab02ad.csv",
+      "sha256": "d2075f86df08c249e037056131ea74b6c86a5d19c053de383b12bd3c008ce08d",
+      "byte_count": 313026,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-7ef80b5e06b52ca598bfab32",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab02ax.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab02ax.csv",
+      "sha256": "c988d82eb87d93dab7ff40d51692632eb1ab88c9cddef519f2812bcc70cd561b",
+      "byte_count": 515,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-45ced6276df97d946a1aa974",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab04d.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab04d.csv",
+      "sha256": "f3634f7638e7212396577ad5ba15f2fe9500768edaa19bafd15aa5f87f0e5516",
+      "byte_count": 276396,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-fde03ac2cc28339bf6612e6b",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab05x.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab05x.csv",
+      "sha256": "f2af21d0f707d673ecfb3607c778d32a769017a90b6377ee31562b6bf3ee4aa4",
+      "byte_count": 1573,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-9c734638823052f135b62f04",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab06d.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab06d.csv",
+      "sha256": "decafb609bee6f86b9b1392256541c9a472cff1549cfe54673248500f50e8ff9",
+      "byte_count": 2049524,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-6ecc7140b0ceaa073e081d57",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab06x.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab06x.csv",
+      "sha256": "1c89b0afe5fb570596df977064124caca41664dbd8edf57abe693a835b310db1",
+      "byte_count": 6618,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-a36345c57d211c22046885d1",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab07d.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab07d.csv",
+      "sha256": "26ecdddefe54b02cfeddd3b71bbbf54136a7df038e7ba3e5435438091a28c76f",
+      "byte_count": 694081,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-1f73212e8a3906d44f8e5d23",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab07x.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab07x.csv",
+      "sha256": "9a93c8b9710672bc3225487cbbd322541a3d3cb8bc2f19639b3d50f696a07891",
+      "byte_count": 1042,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-b697af4df96e316f133effa6",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab08e.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab08e.csv",
+      "sha256": "8021eff9eda544b16f4d2be2e9cf2174b94ce819c5ed02e4ffc2b9c59ff2044f",
+      "byte_count": 4879342,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-fbfed802079b9f0fde1901a5",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab08ex.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab08ex.csv",
+      "sha256": "658b1aedc519278e8e8246f5369060478e815f7f1c6efc6c949e637be3effebb",
+      "byte_count": 55651,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-fd06a5cf235dde544b6cca98",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab0c.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab0c.csv",
+      "sha256": "30f7fa7d1ff66fbb97d852ed2b77768df64741ac4d66616ca174fa95d34d628f",
+      "byte_count": 2812,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-dea4ed1842a53d28b21e1de5",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab0dd.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab0dd.csv",
+      "sha256": "870549c41aa2394fce6ff26305ba4eb3d0c7ddf525ba80f49168520f786a6c5a",
+      "byte_count": 303272,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-22d1db034c2c0b803a6051e1",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab0dx.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab0dx.csv",
+      "sha256": "5dd64667fd2818819cb0ce14d5fc630085f70dd1926c65332dc028a4831f515a",
+      "byte_count": 273,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-bb01874592429042681ce8e3",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab_info.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/oso/2022/OSO2022_SK_tab_info.csv",
+      "sha256": "8fda1a9f6b6923436b98422a34b193194fe72a49d836c6e0b9335cbea0335965",
+      "byte_count": 4063,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-c5f45b9a5c11ee88ff47a84f",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab01.csv",
+      "sha256": "8322c843d417e84ebaeb8822d366392bd5656fe78fe6811171c47da2a927211c",
+      "byte_count": 3567,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-2788bf8ebdfb18f056c53894",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab02.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab02.csv",
+      "sha256": "d4340c5abde93dc10541b0f6f11b89251c3ca382939b6d2a03e2ce6d562e1ca3",
+      "byte_count": 5340,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-73446aeb8a235515c4dcb3f3",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab03.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab03.csv",
+      "sha256": "a399aa84826755bdfe163a3f2a03bef12cdcd9ac808a2fa7429d1a53b48da278",
+      "byte_count": 149833,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-37905470d3e7a83b1d5cbd25",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab04.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab04.csv",
+      "sha256": "49ab80f755987aaecb5f14f46c9d62be3270eb02d8ae2b51b65d714183a4f82b",
+      "byte_count": 8821,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-96c1b4f70481361df2ca5ae4",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab05.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab05.csv",
+      "sha256": "e40be43b61d8a637852e735401a4c7cbf2fd9b327c7c2c2c44f9217ffc571866",
+      "byte_count": 13091,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-32c5b089597f761b99db0d1f",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab06.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/1.kolo/PRE_2014_1kolo_tab06.csv",
+      "sha256": "f957032e420b9a26b7a8a34b7704089876af2dceb12c5bfc9904e175834852a9",
+      "byte_count": 323439,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-c147b61d0165609c9eee03f0",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab09.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab09.csv",
+      "sha256": "a5e8979dee030bf70c1f282d90a6c03e0248cf0f5650a948cbb8772a54c083d3",
+      "byte_count": 3754,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-abe45a6beda2297f659c8e4b",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab10.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab10.csv",
+      "sha256": "0a20e2625d406482a90e6c97da12c483cb33f720a940fae73736d2cf70beec7d",
+      "byte_count": 5359,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-4a7c7a928a8a8e87846af818",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab11.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab11.csv",
+      "sha256": "7e53395c4ff223822b585d7c94f973d3582a3641ad88d0887eb038d0d1a3e338",
+      "byte_count": 164767,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-6c170b734b2f0db0e3998f51",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab12.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab12.csv",
+      "sha256": "815e6e4e209f2bd49fec2581fd9ca3dce28651e241c750f4c57fa2be69e97a84",
+      "byte_count": 2516,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-f963365ad599dec2d394648b",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab13.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab13.csv",
+      "sha256": "12887a32d8201b6341ad5a8a6d17e44ee871a5947b45c5fcc58b0b6bac926adb",
+      "byte_count": 4588,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-90f6254c19f90c2488563da1",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab14.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2014/2.kolo/PRE_2014_2kolo_tab14.csv",
+      "sha256": "1d8c80b17c95313c5fb4d0691f400dead357654e799f9d1bff95354b670ddddd",
+      "byte_count": 131610,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-9743b114a397789d983aab00",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2019/1.kolo/PRE_2019_KOLO1_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/1.kolo/PRE_2019_KOLO1_tab01.csv",
+      "sha256": "c6ba465a36b181eae5c73d7b448232d82904745da72e8d15762eb46106856de2",
+      "byte_count": 591,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-1ec64c48afe3c03bb545b1ec",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2019/1.kolo/PRE_2019_KOLO1_tab03a.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/1.kolo/PRE_2019_KOLO1_tab03a.csv",
+      "sha256": "b906bed4549918f9bace66c8b43223370a60ac1985f32eb402cdcb863ecf678e",
+      "byte_count": 1429,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-a6d2d7e3d06ff663d6e35499",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2019/1.kolo/PRE_2019_KOLO1_tab03ax.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/1.kolo/PRE_2019_KOLO1_tab03ax.csv",
+      "sha256": "b3c9702be4338ee8f8f06beffbd1c617a004cdee8afecb7372a1f109f7d490bf",
+      "byte_count": 113,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-975ed30b23b9928763b4ca99",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2019/1.kolo/PRE_2019_tab0c.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/1.kolo/PRE_2019_tab0c.csv",
+      "sha256": "521303abe40660fb36e98564ef670e2d8f2610baca5deafdab4c880a5dfe4ba7",
+      "byte_count": 286801,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-a4be9f7730142a711387975f",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2019/2.kolo/PRE_2019_KOLO2_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/2.kolo/PRE_2019_KOLO2_tab01.csv",
+      "sha256": "04da8718616e60ee107719adff0c6092ec7a284eb482611f6c43c9560353a97d",
+      "byte_count": 593,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-c282116e075fa13f1d2fe807",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2019/2.kolo/PRE_2019_KOLO2_tab03a.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/2.kolo/PRE_2019_KOLO2_tab03a.csv",
+      "sha256": "cb1729503eff35a108655e2b5b2c592736088fa87616030f55e2002375d97182",
+      "byte_count": 491,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ee32f90316407fae78076215",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2019/2.kolo/PRE_2019_tab0c.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2019/2.kolo/PRE_2019_tab0c.csv",
+      "sha256": "521303abe40660fb36e98564ef670e2d8f2610baca5deafdab4c880a5dfe4ba7",
+      "byte_count": 286801,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-1d6878232a58cc1d304032f1",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2024/1.kolo/PREZ2024_kolo1_SK_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/1.kolo/PREZ2024_kolo1_SK_tab01.csv",
+      "sha256": "730a734da0e1007c15f62b549174f4ae20aa330778772c20d033d6c2f4683c6a",
+      "byte_count": 431,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-6fd2840612d94f5e135a9663",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2024/1.kolo/PREZ2024_kolo1_SK_tab03a.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/1.kolo/PREZ2024_kolo1_SK_tab03a.csv",
+      "sha256": "381cf298211cdfaaba2d2f5981a507d84133d50cf7f0362281b1bf642df59c96",
+      "byte_count": 990,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-6eba7858e3f623323d0baf34",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2024/1.kolo/PREZ2024_kolo1_SK_tab0b.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/1.kolo/PREZ2024_kolo1_SK_tab0b.csv",
+      "sha256": "863125e4b15601d3b71ea95513a2424d4ae2ed47d02ddc7b3cb6c72f457287ad",
+      "byte_count": 210670,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-5ff7cb90db89e6745610accf",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2024/1.kolo/PREZ2024_kolo1_SK_tab_info.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/1.kolo/PREZ2024_kolo1_SK_tab_info.csv",
+      "sha256": "ac84dafa4419d5e6089a6b9c4caf16a6b9b994fcfefdbf120446d2441fbbc666",
+      "byte_count": 1300,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-aeb404f71d317696184ef7d3",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2024/2.kolo/PREZ2024_kolo2_SK_tab01.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/2.kolo/PREZ2024_kolo2_SK_tab01.csv",
+      "sha256": "981de1b499d13d5c1943c8c91b106eebb14ce6219cce84d622637ab40c5c3b3a",
+      "byte_count": 434,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ee0310d8c6f55506f098fd42",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2024/2.kolo/PREZ2024_kolo2_SK_tab03a.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/2.kolo/PREZ2024_kolo2_SK_tab03a.csv",
+      "sha256": "59dec21b8a8c79cb97de7bae978f4745b685d934957d21ca92003aa008c9d7b8",
+      "byte_count": 427,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-7197812fd1f3e0d7d38c9598",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2024/2.kolo/PREZ2024_kolo2_SK_tab0b.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/2.kolo/PREZ2024_kolo2_SK_tab0b.csv",
+      "sha256": "863125e4b15601d3b71ea95513a2424d4ae2ed47d02ddc7b3cb6c72f457287ad",
+      "byte_count": 210670,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-c740bd6b15488a9f6654f6f1",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/opendata/pre/2024/2.kolo/PREZ2024_kolo2_SK_tab_info.csv",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/opendata/pre/2024/2.kolo/PREZ2024_kolo2_SK_tab_info.csv",
+      "sha256": "45a4a7db49c16c85f9c1bdc37c6b264b7e4712e8d28d64cf6b50ee5d14e8bcf6",
+      "byte_count": 1300,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-4325cc4c487c1caef1b019f9",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/osk/osk2001/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/osk/osk2001/index.html",
+      "sha256": "d1c027b3d54fe6fd07f9555e22635537271c8701135a7a2bcd8f22326055bd93",
+      "byte_count": 3989,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-8b57f3d303cbf423efcfadfb",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/osk/osk2013/VUC/home-sk.html",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/osk/osk2013/VUC/home-sk.html",
+      "sha256": "43846729519e68fe3f37169ec613f113b63d68dfea051317dd2050407424630c",
+      "byte_count": 4369,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-fc73bfc320a623590c732d11",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/osk/osk2013/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/osk/osk2013/index.html",
+      "sha256": "78e689902675df0d2ee587e681f7f1e2ff7bbcf04593cf879771a8ce826ed778",
+      "byte_count": 1926,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-77f871ce5d8efa0e9b2138f2",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/osk/osk2017/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/osk/osk2017/index.html",
+      "sha256": "67a753d9f04eb7dad2088c223c905a7b8054cd15eb49d281395a5fc7bae7ba74",
+      "byte_count": 513,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-3b53b4c4ca2fa9c4a2ffc87c",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/osk/osk2017/sk/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/osk/osk2017/sk/index.html",
+      "sha256": "b809c4dd55552849e9af1473aa6f6a6a32eb45c1c2a2a088992c9858d6c11605",
+      "byte_count": 11289,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ffbc1c38641e19248ef81ed4",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/osk/osk2022/sk/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/osk/osk2022/sk/index.html",
+      "sha256": "44f4d595419f03f7a3c3a6c2a49a9f2339cbd4eeba663781c8ffab90969cdf7d",
+      "byte_count": 24076,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ff5cf6448b48312f1e247542",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/oso/doplnkove2022/sk/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/doplnkove2022/sk/index.html",
+      "sha256": "25d49e9f22412af0b5803da9bb0ca0aeb29051d67f2a5a0de68485afc54fa111",
+      "byte_count": 42548,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ad8263b76d05f6df2f6115ec",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/oso/doplnkove2022/sk/subory_na_stiahnutie.html",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/doplnkove2022/sk/subory_na_stiahnutie.html",
+      "sha256": "97a365acdb4d0db09d978cf43f818ad29ee17594baf02bfbda397ca549c53314",
+      "byte_count": 37878,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-db007d4f2349769b5afba44c",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/oso/oso2014/oso2014/sk/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2014/oso2014/sk/index.html",
+      "sha256": "c4e2890031a9867ad3e7732bdb0fbbb20e71dcd7214205e719c56e93c79dee5e",
+      "byte_count": 4774,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ede1c6a94601e5056286fcad",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/oso/oso2018/sk/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2018/sk/index.html",
+      "sha256": "f3afab9b9534167c0a05c086a55cd05ef7d5e547f1557fcdd5243b6fee96f7fe",
+      "byte_count": 12075,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-b17d0a3b09485bc67384eae5",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/oso/oso2022/files/OSO2022_SK_csv.zip",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/files/OSO2022_SK_csv.zip",
+      "sha256": "95b3be623b0e8d506b4069bf1c99836709427da3a0edee5d2e2b8d4b3e21bf9d",
+      "byte_count": 1863667,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-5ca08e4e996fcf6140da9cdc",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/oso/oso2022/files/OSO2022_SK_xlsx.zip",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/files/OSO2022_SK_tab05d.xlsx",
+      "sha256": "d459074c77d06fecd706e22894840d0171217fdcdbd18c27ff56c22412a42eae",
+      "byte_count": 567306,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown",
+      "archive_member": "OSO2022_SK_tab05d.xlsx",
+      "parent_input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/files/OSO2022_SK_xlsx.zip",
+      "parent_sha256": "9445f659df0baf2cec27c837346226388dd5912000ba82e10aa941edfa2d9a22"
+    },
+    {
+      "source_id": "src-33c2869cc1231d9408247f1f",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/oso/oso2022/files/OSO2022_SK_xlsx.zip",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/files/OSO2022_SK_xlsx.zip",
+      "sha256": "9445f659df0baf2cec27c837346226388dd5912000ba82e10aa941edfa2d9a22",
+      "byte_count": 22042471,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-580b61fcbbfc47d85b2b92d5",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/oso/oso2022/js/functions.js",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/js/functions.js",
+      "sha256": "9b15e83305411489196c0a84bc3236561271bcf76f411c18b959d2f19899e8d7",
+      "byte_count": 41061,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-bbdd69acc9d72941073c3168",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/oso/oso2022/json/tab05/528595.json",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/json/tab05/528595.json",
+      "sha256": "a84b5c12614e7faf6da606e5ab42785e13aeef2ee2206dc6104efc606863c5be",
+      "byte_count": 1366,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-b3cb6e4a721fd7e22b234f62",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/oso/oso2022/sk/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/sk/index.html",
+      "sha256": "7ec78ebdee0b4099df74f8c36fa315a1f8fc65bc6fdf701aba6ce49e76f3c489",
+      "byte_count": 25198,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-9cf581d2849fbca804064a2a",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/oso/oso2022/sk/subory_na_stiahnutie.html",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/sk/subory_na_stiahnutie.html",
+      "sha256": "4281c7981c252f9ec43c3316fe72e8e6838c931e453c04aea257d902204ffcb6",
+      "byte_count": 22192,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-f50b846ff81e4b6005ed18f2",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/oso/oso2022/sk/vysledky_obce.html",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/sk/vysledky_obce.html",
+      "sha256": "fb58d2cf6246c5b26103d1c50d9303bf3d95bc4131299290e0f32a7203120bb3",
+      "byte_count": 46887,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-9b3583665612ecf6f4638bbd",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/prez/prez2014/Prezident-dv/home-sk.html",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/prez/prez2014/Prezident-dv/home-sk.html",
+      "sha256": "e9c4758c3dbed988ad4322ada5d46c2503e737aad4f81e9e38eab35a319e3706",
+      "byte_count": 3940,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-950cef59aa73ba0bdce56d5e",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/prez/prez2014/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/prez/prez2014/index.html",
+      "sha256": "25192495ab3d09ae92a5c8c07eb23f49aac3f713e0616ca4f2f7d8145eff73d7",
+      "byte_count": 1916,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-43b1a2c0f2cfcd7016d93500",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/prez/prez2019/sk/",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/prez/prez2019/sk/index.html",
+      "sha256": "d5859515a014e0fc8acc0cb5cb5513cc3bf0abc2ce1cd6996a091a880f8bfd83",
+      "byte_count": 11380,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-1ce070f0bd806827d0d70754",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/prez/prez2024/sk/index.html",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/prez/prez2024/sk/index.html",
+      "sha256": "a54424754a407e994b401686bded9e661a3bd69d7d4c23c1f8227f8046336af6",
+      "byte_count": 26609,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-2b5f0b8d4ee47267085726f7",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/tree.html",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/tree.html",
+      "sha256": "e4a3ebc357fe7e117abb0957217b1307293966b0f9395b9b02dd8381b6faaed8",
+      "byte_count": 146700,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-6017b9804314e39a96fc0ed1",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volbysr.sk/files/REF2026_SK_csv.zip",
+      "input_path": "data/research/slovakia/sources/volbysr.sk/files/REF2026_SK_csv.zip",
+      "sha256": "11fbf81692e70651221989b84fac72a54eda0b83b02a5e8718f734d46c1a1035",
+      "byte_count": 496057,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-8dd0503f839e8dc61b1797ed",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volbysr.sk/files/REF2026_SK_csv.zip",
+      "input_path": "data/research/slovakia/sources/volbysr.sk/files/REF2026_SK_tab0b.csv",
+      "sha256": "5e49e0fdf08ccb306ee33d4273fb3ee9bffda70c5c33e24fe05736465c17728d",
+      "byte_count": 231222,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown",
+      "archive_member": "REF2026_SK_tab0b.csv",
+      "parent_input_path": "data/research/slovakia/sources/volbysr.sk/files/REF2026_SK_csv.zip",
+      "parent_sha256": "11fbf81692e70651221989b84fac72a54eda0b83b02a5e8718f734d46c1a1035"
+    },
+    {
+      "source_id": "src-7cfb0dd312f0357eabc9e069",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volbysr.sk/sk/index.html",
+      "input_path": "data/research/slovakia/sources/volbysr.sk/sk/index.html",
+      "sha256": "33c56bbfefe46c641248bc3f8b60677a21aa4021ada6c776427c9aa5dc028457",
+      "byte_count": 26752,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-86127fac571a56c9aae6d740",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volbysr.sk/sk/subory_na_stiahnutie.html",
+      "input_path": "data/research/slovakia/sources/volbysr.sk/sk/subory_na_stiahnutie.html",
+      "sha256": "4b737a2a4926b4e71cf547e21396bbdb3179dc160eab300bea67506a4c16c2e1",
+      "byte_count": 26427,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-065b2d5a8ab9bd782a0d3778",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volbysr.sk/sk/uzemne_clenenie.html",
+      "input_path": "data/research/slovakia/sources/volbysr.sk/sk/uzemne_clenenie.html",
+      "sha256": "08ba199acfa775e4549fce6e1365fcbb614d89a8dadf14904035158f32b8066b",
+      "byte_count": 28883,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-1377bd61fdb029fffb602135",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Ministerstvo vnútra Slovenskej republiky",
+      "title": null,
+      "url": "https://www.minv.sk/?uzemne-a-spravne-usporiadanie-slovenskej-republiky&subor=233491",
+      "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__1392a8995f",
+      "sha256": "0b169415473532c187694a42849b31e350efbc2c61e1fdfb8dfc623c4bfd4870",
+      "byte_count": 642333,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-a32a510743ed76e9eb950fd7",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Ministerstvo vnútra Slovenskej republiky",
+      "title": null,
+      "url": "https://www.minv.sk/?zoznam-obci-1",
+      "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__1cb7b5cdc1",
+      "sha256": "8ef88979cb1f95411fadafe3c2310247bb21744523f8256b8d5bdaabb3d1ee76",
+      "byte_count": 104276,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-349f2c8a7b46abc07f82f3ae",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Ministerstvo vnútra Slovenskej republiky",
+      "title": null,
+      "url": "https://www.minv.sk/?uzemne-zmeny-obci-v-slovenskej-republike-od-roku-1990",
+      "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__4215951564",
+      "sha256": "cd45ccd40bd8cd984249fe84b688c1dc5a8d7bc4561a058c39a23ae5a1aea11d",
+      "byte_count": 106118,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ca07eeddbac72ab64bb17fd7",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Ministerstvo vnútra Slovenskej republiky",
+      "title": null,
+      "url": "https://www.minv.sk/?uzemne-zmeny-obci-v-slovenskej-republike-od-roku-1990&subor=21833",
+      "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__a584cacf51",
+      "sha256": "9eefcb970e316b1cc18d93f8a7d2d39dccf49fae12034911d89081e01c523b39",
+      "byte_count": 7498729,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-ae4fa0bf6663bf291dfc3cbf",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Ministerstvo vnútra Slovenskej republiky",
+      "title": null,
+      "url": "https://www.minv.sk/?volby-samosprava26",
+      "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__a7762cbb79",
+      "sha256": "1b4ad174d1efa69c83c6706aaf68edf2df4e3506af367bac10b213933c68bf09",
+      "byte_count": 120123,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-752f5d97a54e17d9f2122d86",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Ministerstvo vnútra Slovenskej republiky",
+      "title": null,
+      "url": "https://www.minv.sk/?volby-samosprava26&subor=570716",
+      "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__e1394043d5",
+      "sha256": "b1acf18f57287b04dcac1bac98e1985e6865e6ee6b7a31032225368f9cf6adf8",
+      "byte_count": 188164,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-493bab65eb38dc2f195e8e9a",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Ministerstvo vnútra Slovenskej republiky",
+      "title": null,
+      "url": "https://www.minv.sk/?uzemne-a-spravne-usporiadanie-slovenskej-republiky",
+      "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__edf9a40baf",
+      "sha256": "05d468860a48925410d07d9757fe8d7bfa4edf40fd01f10a4fd1c6174235c509",
+      "byte_count": 109090,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    },
+    {
+      "source_id": "src-86329636005408da584739ac",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Ministerstvo vnútra Slovenskej republiky",
+      "title": null,
+      "url": "https://www.minv.sk/?samospravne-volby-2026-tlacove-spravy&sprava=dna-24-juna-2026-sa-zacala-volebna-kampan-pre-volby-do-organov-samospravy-obci-a-pre-volby-do-organov-samospravnych-krajov-ktore-sa-vykonaju-24-oktobra-2026",
+      "input_path": "data/research/slovakia/sources/www.minv.sk/index.html__f724b63855",
+      "sha256": "ca5f54d276f57349d3e8ec837fefdf85ef33c810c0f033349a66c643d35d0a11",
+      "byte_count": 47238,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown"
+    }
+  ],
+  "archive_members": [
+    {
+      "source_id": "src-5ca08e4e996fcf6140da9cdc",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volby.statistics.sk/oso/oso2022/files/OSO2022_SK_xlsx.zip",
+      "input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/files/OSO2022_SK_tab05d.xlsx",
+      "sha256": "d459074c77d06fecd706e22894840d0171217fdcdbd18c27ff56c22412a42eae",
+      "byte_count": 567306,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown",
+      "archive_member": "OSO2022_SK_tab05d.xlsx",
+      "parent_input_path": "data/research/slovakia/sources/volby.statistics.sk/oso/oso2022/files/OSO2022_SK_xlsx.zip",
+      "parent_sha256": "9445f659df0baf2cec27c837346226388dd5912000ba82e10aa941edfa2d9a22"
+    },
+    {
+      "source_id": "src-8dd0503f839e8dc61b1797ed",
+      "source_namespace": "country-package-slovakia",
+      "publisher": "Štatistický úrad Slovenskej republiky",
+      "title": null,
+      "url": "https://volbysr.sk/files/REF2026_SK_csv.zip",
+      "input_path": "data/research/slovakia/sources/volbysr.sk/files/REF2026_SK_tab0b.csv",
+      "sha256": "5e49e0fdf08ccb306ee33d4273fb3ee9bffda70c5c33e24fe05736465c17728d",
+      "byte_count": 231222,
+      "checked_as_of_label": "2026-09-21",
+      "evidence_grade": "official_publication",
+      "data_rights": "unknown",
+      "archive_member": "REF2026_SK_tab0b.csv",
+      "parent_input_path": "data/research/slovakia/sources/volbysr.sk/files/REF2026_SK_csv.zip",
+      "parent_sha256": "11fbf81692e70651221989b84fac72a54eda0b83b02a5e8718f734d46c1a1035"
+    }
+  ],
+  "protection": {
+    "repo_mutations": 0,
+    "other_country_changes": 0,
+    "importer_sqlite_vps_ui_changes": 0,
+    "applied_changes": 0
+  },
+  "approval": {
+    "Justin_accepted": false
+  },
+  "source_limitations": "Current register reconciled against official2026 electoral geography. Historical-only office recovery and pre2013 cycles incomplete; see named research gates."
+}

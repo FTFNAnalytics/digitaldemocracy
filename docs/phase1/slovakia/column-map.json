@@ -1,0 +1,934 @@
+{
+  "dataset_lineage": {
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "L"
+    },
+    "provenance_kind": {
+      "source_locator": "constant",
+      "conversion_and_null_policy": "country_package"
+    },
+    "description": {
+      "source_locator": "C.notes",
+      "conversion_and_null_policy": "New sourced Slovakia research; historical and research coverage partial."
+    }
+  },
+  "dataset_release": {
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "fingerprint_sha256": {
+      "source_locator": "I.fingerprint_sha256",
+      "conversion_and_null_policy": "H(I.hash_inputs), not ZIP/filemtime/attempt time."
+    },
+    "hash_inputs_json": {
+      "source_locator": "I.hash_inputs",
+      "conversion_and_null_policy": "Canonical UTF-8 sorted-key JSON including effective inputs, tiers, overrides=[], adapter/method/schema and DDL hashes."
+    },
+    "adapter_version": {
+      "source_locator": "I.hash_inputs.adapter_version",
+      "conversion_and_null_policy": "atlas-slovakia-full-register/1"
+    },
+    "method_version": {
+      "source_locator": "I.hash_inputs.method_version",
+      "conversion_and_null_policy": "atlas-preserve-evidence/1"
+    },
+    "schema_version": {
+      "source_locator": "I.hash_inputs.schema_version",
+      "conversion_and_null_policy": "atlas-master/1"
+    },
+    "research_snapshot_label": {
+      "source_locator": "C.research_snapshot_label",
+      "conversion_and_null_policy": "2026-09-21 retrieval label; not election date."
+    },
+    "upstream_release_id": {
+      "source_locator": "no previous public Slovakia alias",
+      "conversion_and_null_policy": "NULL; do not borrow another country/LatAm alias."
+    },
+    "validated_counts_json": {
+      "source_locator": "K, future verified counts",
+      "conversion_and_null_policy": "Canonical counts after future import validation; this pack is not a publication receipt."
+    },
+    "research_coverage_complete": {
+      "source_locator": "C.research_coverage_complete",
+      "conversion_and_null_policy": "0; incomplete earlier cycles, historical predecessors, replacement events and some vectors."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns."
+    }
+  },
+  "publication_release": {
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    }
+  },
+  "publication_receipt": {
+    "singleton": {
+      "source_locator": "runtime",
+      "conversion_and_null_policy": "1"
+    },
+    "last_publish_attempt_id": {
+      "source_locator": "ledger current attempt",
+      "conversion_and_null_policy": "Fresh runtime attempt ID; different from release ID."
+    },
+    "attempted_lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "L"
+    },
+    "attempted_release_id": {
+      "source_locator": "candidate selected release",
+      "conversion_and_null_policy": "R after validated staging."
+    }
+  },
+  "retained_input": {
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "input_path": {
+      "source_locator": "I.hash_inputs.inputs[].input_path",
+      "conversion_and_null_policy": "Exact relative path."
+    },
+    "input_kind": {
+      "source_locator": "I.hash_inputs.inputs[].input_kind",
+      "conversion_and_null_policy": "artifact/package/tier_classification as declared."
+    },
+    "sha256": {
+      "source_locator": "I.hash_inputs.inputs[].sha256",
+      "conversion_and_null_policy": "Exact file byte hash; verify before parsing."
+    },
+    "byte_count": {
+      "source_locator": "I.hash_inputs.inputs[].byte_count",
+      "conversion_and_null_policy": "Exact byte length."
+    },
+    "recovery_locator": {
+      "source_locator": "immutable accepted pack + input_path",
+      "conversion_and_null_policy": "Recover exact bytes; source URL plus ZIP member also retained. Do not claim local paths as URLs."
+    },
+    "payload_json": {
+      "source_locator": "parsed JSON inputs",
+      "conversion_and_null_policy": "Canonical full JSON for JSON inputs; NULL for CSV/XLSX/PDF/HTML/ZIP with exact bytes retained. No script execution."
+    }
+  },
+  "country": {
+    "country_id": {
+      "source_locator": "C.country_id",
+      "conversion_and_null_policy": "Literal slovakia."
+    },
+    "country_code": {
+      "source_locator": "C.country_code",
+      "conversion_and_null_policy": "SK"
+    },
+    "name": {
+      "source_locator": "C.name",
+      "conversion_and_null_policy": "Slovenská republika"
+    },
+    "polity_kind": {
+      "source_locator": "C.polity_kind",
+      "conversion_and_null_policy": "sovereign_country"
+    },
+    "region_id": {
+      "source_locator": "C.region_id",
+      "conversion_and_null_policy": "europe; not a tier."
+    },
+    "coverage_status": {
+      "source_locator": "C.coverage_status",
+      "conversion_and_null_policy": "partial"
+    },
+    "screening_as_of_label": {
+      "source_locator": "C.screening_as_of_label",
+      "conversion_and_null_policy": "2026-09-21"
+    },
+    "notes": {
+      "source_locator": "C.notes + research-gaps.json",
+      "conversion_and_null_policy": "Join readable notes; retain arrays in raw_json."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns."
+    }
+  },
+  "geography": {
+    "country_id": {
+      "source_locator": "C.country_id",
+      "conversion_and_null_policy": "Literal slovakia."
+    },
+    "geography_id": {
+      "source_locator": "G.geography_id / O.geography_id",
+      "conversion_and_null_policy": "Exact country-scoped geography key."
+    },
+    "name": {
+      "source_locator": "G.name",
+      "conversion_and_null_policy": "Exact official Slovak orthography."
+    },
+    "parent_geography_id": {
+      "source_locator": "G.parent_geography_id",
+      "conversion_and_null_policy": "SK for regions; SK-VUC-code for municipalities; sourced parent city for39 parts; NULL for country. No guessed successor/appointed district office."
+    },
+    "effective_from_label": {
+      "source_locator": "G.valid_from",
+      "conversion_and_null_policy": "NULL; source snapshot is not legal founding date."
+    },
+    "effective_to_label": {
+      "source_locator": "G.valid_to",
+      "conversion_and_null_policy": "NULL; source omission is not abolition."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns."
+    }
+  },
+  "research_date": {
+    "date_id": {
+      "source_locator": "V.research_dates[].date_id",
+      "conversion_and_null_policy": "date-+H([N,ownerType,ownerID,slot]); event/election, office/next, proceeding/ballot."
+    },
+    "label": {
+      "source_locator": "O.next_date / E.date / Pp.date .label",
+      "conversion_and_null_policy": "Exact sourced label. Actual recovered dates are day precision; unknown next dates remain absent."
+    },
+    "precision": {
+      "source_locator": "date.precision",
+      "conversion_and_null_policy": "day here; future year/month/range/unknown must remain that precision."
+    },
+    "certainty": {
+      "source_locator": "date.certainty",
+      "conversion_and_null_policy": "called for recovered official call/occurrence; no assumed certainty from a term."
+    },
+    "year": {
+      "source_locator": "date.year",
+      "conversion_and_null_policy": "Source year; NULL if unknown/range."
+    },
+    "month": {
+      "source_locator": "date.month",
+      "conversion_and_null_policy": "Source month; NULL if year/unknown/range."
+    },
+    "day": {
+      "source_locator": "date.day",
+      "conversion_and_null_policy": "Source day; NULL if lower precision."
+    },
+    "range_start_id": {
+      "source_locator": "no recovered ranges",
+      "conversion_and_null_policy": "NULL; future ordered endpoints must be separately sourced non-range dates."
+    },
+    "range_end_id": {
+      "source_locator": "no recovered ranges",
+      "conversion_and_null_policy": "NULL."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns."
+    }
+  },
+  "office": {
+    "id_namespace": {
+      "source_locator": "O/E/Rr.id_namespace",
+      "conversion_and_null_policy": "Literal cdd-observatory-v1; include in every office/event/result FK."
+    },
+    "office_id": {
+      "source_locator": "O.office_id / E.office_id / Rr.office_id / Pp.office_id",
+      "conversion_and_null_policy": "Exact documentary office ID; preserve source territorial codes; no random IDs."
+    },
+    "country_id": {
+      "source_locator": "C.country_id",
+      "conversion_and_null_policy": "Literal slovakia."
+    },
+    "geography_id": {
+      "source_locator": "G.geography_id / O.geography_id",
+      "conversion_and_null_policy": "Exact country-scoped geography key."
+    },
+    "name": {
+      "source_locator": "O.office_name",
+      "conversion_and_null_policy": "Official jurisdiction name plus disclosed statutory body descriptor; never claimed as an official combined title."
+    },
+    "office_type": {
+      "source_locator": "O.office_type",
+      "conversion_and_null_policy": "Keep council, direct mayor, city-part body, regional assembly/chair, national chamber, president and EP delegation distinct from geographic tier."
+    },
+    "office_status": {
+      "source_locator": "O.office_status",
+      "conversion_and_null_policy": "current for5,871 recovered rows. Historical-only recovery is0 with named gap, not proof no abolished bodies existed."
+    },
+    "record_state": {
+      "source_locator": "adapter constant",
+      "conversion_and_null_policy": "active. Absence in an incomplete refresh does not withdraw."
+    },
+    "state_note": {
+      "source_locator": "adapter constant",
+      "conversion_and_null_policy": "NULL while active; explicit withdrawal requires sourced nonempty reason."
+    },
+    "registry_qualified": {
+      "source_locator": "draft review state",
+      "conversion_and_null_policy": "0 until accepted and applicable qualification gates resolved."
+    },
+    "next_date_id": {
+      "source_locator": "O.next_date",
+      "conversion_and_null_policy": "date-+H([N,office,O.office_id,next]) for5,868 local/VUC offices; NULL for3 national/EP offices."
+    },
+    "next_date_resolution": {
+      "source_locator": "O.next_date",
+      "conversion_and_null_policy": "resolved when supplied; unknown otherwise. Conflicting future claims require NULL pointer and conflicting state."
+    },
+    "next_history_key": {
+      "source_locator": "O.next_cycle",
+      "conversion_and_null_policy": "O.office_id+::+O.next_cycle if nonnull; otherwise NULL. Must resolve to the existing prospective E row."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns."
+    }
+  },
+  "office_tier_classification": {
+    "id_namespace": {
+      "source_locator": "O/E/Rr.id_namespace",
+      "conversion_and_null_policy": "Literal cdd-observatory-v1; include in every office/event/result FK."
+    },
+    "office_id": {
+      "source_locator": "O.office_id / E.office_id / Rr.office_id / Pp.office_id",
+      "conversion_and_null_policy": "Exact documentary office ID; preserve source territorial codes; no random IDs."
+    },
+    "tier": {
+      "source_locator": "T.classifications[].tier",
+      "conversion_and_null_policy": "national→national_context; regional/municipal/other unchanged; future unknown→NULL, never other."
+    },
+    "review_status": {
+      "source_locator": "T.status / row flags",
+      "conversion_and_null_policy": "needs_review for every known draft tier, even focused flag=false; never approved in this pack."
+    },
+    "rationale": {
+      "source_locator": "T.classifications[].rationale",
+      "conversion_and_null_policy": "Exact nonempty wording and evidence."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "classification_path": {
+      "source_locator": "constant",
+      "conversion_and_null_policy": "schemas/atlas/tiers/slovakia.json"
+    },
+    "classification_kind": {
+      "source_locator": "constant",
+      "conversion_and_null_policy": "tier_classification"
+    },
+    "classification_sha256": {
+      "source_locator": "I.tier_file.sha256",
+      "conversion_and_null_policy": "ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770"
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns."
+    }
+  },
+  "election_event": {
+    "id_namespace": {
+      "source_locator": "O/E/Rr.id_namespace",
+      "conversion_and_null_policy": "Literal cdd-observatory-v1; include in every office/event/result FK."
+    },
+    "office_id": {
+      "source_locator": "O.office_id / E.office_id / Rr.office_id / Pp.office_id",
+      "conversion_and_null_policy": "Exact documentary office ID; preserve source territorial codes; no random IDs."
+    },
+    "history_key": {
+      "source_locator": "E/Rr/Pp.history_key",
+      "conversion_and_null_policy": "Exact office_id::cycle, round-independent; never date-derived."
+    },
+    "event_id": {
+      "source_locator": "E.event_id",
+      "conversion_and_null_policy": "key(event,[N,O,HK]); stable through date corrections."
+    },
+    "date_id": {
+      "source_locator": "E.date",
+      "conversion_and_null_policy": "date-+H([N,event,E.event_id,election]); actual row required even for unknown date."
+    },
+    "date_resolution": {
+      "source_locator": "E.date.precision",
+      "conversion_and_null_policy": "resolved here. Unknown precision needs explicit unknown research_date; conflicting claims have NULL event pointer."
+    },
+    "event_kind": {
+      "source_locator": "E.event_kind",
+      "conversion_and_null_policy": "ordinary for recovered cycles; no invented repeat/by-election."
+    },
+    "selected_history_role": {
+      "source_locator": "E.selected_history_role",
+      "conversion_and_null_policy": "selected for17,569 historical cycles; none for5,868 prospective cycles. Not a certification or complete-vector flag."
+    },
+    "electoral_system": {
+      "source_locator": "O.electoral_mode + E.cycle",
+      "conversion_and_null_policy": "direct_popular, with two-round presidential and2013 VUC-chair mechanics retained in raw. Council candidate-mark vs national list vote grain remains explicit."
+    },
+    "comparability": {
+      "source_locator": "E.coverage + ballot_basis + result district",
+      "conversion_and_null_policy": "elected_only is not comparable to an all-candidate vector; preserve district keys and round. Serialize these limitations as text."
+    },
+    "ballot_basis": {
+      "source_locator": "E.ballot_basis",
+      "conversion_and_null_policy": "candidate_marks for local/regional assemblies; list_votes for NRSR/EP; valid_votes for executives. Do not sum council shares across districts."
+    },
+    "share_unit": {
+      "source_locator": "E/Rr.share_unit",
+      "conversion_and_null_policy": "percent_0_100; no rescaling."
+    },
+    "legal_outcome": {
+      "source_locator": "E/Pp.legal_outcome",
+      "conversion_and_null_policy": "unknown. Official published return is not an invented court/certification proceeding."
+    },
+    "record_state": {
+      "source_locator": "adapter constant",
+      "conversion_and_null_policy": "active. Absence in an incomplete refresh does not withdraw."
+    },
+    "state_note": {
+      "source_locator": "adapter constant",
+      "conversion_and_null_policy": "NULL while active; explicit withdrawal requires sourced nonempty reason."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns."
+    }
+  },
+  "proceeding": {
+    "id_namespace": {
+      "source_locator": "O/E/Rr.id_namespace",
+      "conversion_and_null_policy": "Literal cdd-observatory-v1; include in every office/event/result FK."
+    },
+    "office_id": {
+      "source_locator": "O.office_id / E.office_id / Rr.office_id / Pp.office_id",
+      "conversion_and_null_policy": "Exact documentary office ID; preserve source territorial codes; no random IDs."
+    },
+    "history_key": {
+      "source_locator": "E/Rr/Pp.history_key",
+      "conversion_and_null_policy": "Exact office_id::cycle, round-independent; never date-derived."
+    },
+    "proceeding_id": {
+      "source_locator": "Pp.proceeding_id / Rr.proceeding_id",
+      "conversion_and_null_policy": "Exact round key when supplied; NULL on single-round result rows."
+    },
+    "kind": {
+      "source_locator": "Pp.kind",
+      "conversion_and_null_policy": "first_round or runoff only when actual round source supplies it."
+    },
+    "sequence_no": {
+      "source_locator": "Pp.sequence",
+      "conversion_and_null_policy": "1 or2 as supplied;19 total proceedings."
+    },
+    "supersedes_id": {
+      "source_locator": "Pp.supersedes_id",
+      "conversion_and_null_policy": "NULL. A runoff continues a cycle and does not annul its first round."
+    },
+    "legal_outcome": {
+      "source_locator": "E/Pp.legal_outcome",
+      "conversion_and_null_policy": "unknown. Official published return is not an invented court/certification proceeding."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns."
+    }
+  },
+  "source": {
+    "country_id": {
+      "source_locator": "C.country_id",
+      "conversion_and_null_policy": "Literal slovakia."
+    },
+    "source_namespace": {
+      "source_locator": "S.source_namespace",
+      "conversion_and_null_policy": "Literal L; source key always (slovakia,L,source_id)."
+    },
+    "source_id": {
+      "source_locator": "S.source_id / origin.source_id",
+      "conversion_and_null_policy": "Exact source documentary key; resolve against sources.json; a broken known key fails closed."
+    },
+    "publisher": {
+      "source_locator": "S.publisher",
+      "conversion_and_null_policy": "Official statistics office, Interior Ministry or Slov-Lex attribution; NULL if not evidenced."
+    },
+    "title": {
+      "source_locator": "S.title",
+      "conversion_and_null_policy": "NULL where title not separately transcribed; URL is not a fabricated title."
+    },
+    "url": {
+      "source_locator": "S.url",
+      "conversion_and_null_policy": "Exact acquisition URL. Extracted members retain container URL plus member identity."
+    },
+    "checked_as_of_label": {
+      "source_locator": "S.checked_as_of_label",
+      "conversion_and_null_policy": "2026-09-21 acquisition, not election date."
+    },
+    "evidence_grade": {
+      "source_locator": "S.evidence_grade",
+      "conversion_and_null_policy": "official_publication; role of each source is declared in source-projection.json, not all files supply returns."
+    },
+    "file_sha256": {
+      "source_locator": "S.sha256",
+      "conversion_and_null_policy": "Exact retained bytes; member hash differs from parent ZIP hash."
+    },
+    "locator": {
+      "source_locator": "S.input_path + archive_member + parent_sha256 if any",
+      "conversion_and_null_policy": "Canonical descriptor; row-specific origin on evidence_link."
+    },
+    "data_rights": {
+      "source_locator": "S.data_rights",
+      "conversion_and_null_policy": "unknown; no licence invented."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns."
+    }
+  },
+  "party_mapping": {
+    "country_id": {
+      "source_locator": "C.country_id",
+      "conversion_and_null_policy": "Literal slovakia."
+    },
+    "party_namespace": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "NULL for results; no party_mapping rows emitted."
+    },
+    "mapping_id": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row emitted. Future sourced mapping gets a deterministic scoped key."
+    },
+    "source_context": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row; if later supplied, source document and locator required."
+    },
+    "election_context": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row; never unscoped national party equivalence."
+    },
+    "original_label": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row; raw party labels remain on result_row."
+    },
+    "original_code": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row; event-scoped source codes remain on result_row."
+    },
+    "mapped_group": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row; no coalition splitting, successor equivalence or invented canonical party."
+    },
+    "uncertainty": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row; any later uncertain mapping must be explicit."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns."
+    }
+  },
+  "result_row": {
+    "id_namespace": {
+      "source_locator": "O/E/Rr.id_namespace",
+      "conversion_and_null_policy": "Literal cdd-observatory-v1; include in every office/event/result FK."
+    },
+    "office_id": {
+      "source_locator": "O.office_id / E.office_id / Rr.office_id / Pp.office_id",
+      "conversion_and_null_policy": "Exact documentary office ID; preserve source territorial codes; no random IDs."
+    },
+    "history_key": {
+      "source_locator": "E/Rr/Pp.history_key",
+      "conversion_and_null_policy": "Exact office_id::cycle, round-independent; never date-derived."
+    },
+    "result_row_id": {
+      "source_locator": "Rr.result_row_id",
+      "conversion_and_null_policy": "Exact result key; includes namespace,office,cycle,round,candidate source key."
+    },
+    "proceeding_id": {
+      "source_locator": "Pp.proceeding_id / Rr.proceeding_id",
+      "conversion_and_null_policy": "Exact round key when supplied; NULL on single-round result rows."
+    },
+    "country_id": {
+      "source_locator": "C.country_id",
+      "conversion_and_null_policy": "Literal slovakia."
+    },
+    "candidate_or_list_label": {
+      "source_locator": "Rr.candidate_or_list_label",
+      "conversion_and_null_policy": "Exact source name or source first+last joined with one space; diacritics retained."
+    },
+    "original_party_label": {
+      "source_locator": "Rr.original_party_label",
+      "conversion_and_null_policy": "Exact original party/coalition string, NULL if absent; never split or harmonize."
+    },
+    "original_party_code": {
+      "source_locator": "Rr.original_party_code",
+      "conversion_and_null_policy": "Source list code scoped to event; NULL when no code is supplied."
+    },
+    "party_namespace": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "NULL for results; no party_mapping rows emitted."
+    },
+    "party_mapping_id": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "NULL; no cross-party equivalence inferred."
+    },
+    "votes": {
+      "source_locator": "Rr.votes",
+      "conversion_and_null_policy": "Nonnegative integer from exact source cell; strip grouping whitespace and parse decimal separator only. Never derive votes from shares."
+    },
+    "votes_status": {
+      "source_locator": "Rr.votes_status",
+      "conversion_and_null_policy": "zero for printed0; recorded for positive; unknown for absent."
+    },
+    "share": {
+      "source_locator": "Rr.share",
+      "conversion_and_null_policy": "Exact published percentage; no clamp, scaling, renormalization or recomputation. Withdrawn-candidate claims remain as supplied with raw markers."
+    },
+    "share_status": {
+      "source_locator": "Rr.share_status",
+      "conversion_and_null_policy": "zero/recorded/unknown by exact supplied value."
+    },
+    "share_unit": {
+      "source_locator": "E/Rr.share_unit",
+      "conversion_and_null_policy": "percent_0_100; no rescaling."
+    },
+    "seats": {
+      "source_locator": "Rr.seats",
+      "conversion_and_null_policy": "Published party mandate total only. Candidate winner does not imply a synthesized seat1. Blank/NaN stays NULL."
+    },
+    "seats_status": {
+      "source_locator": "Rr.seats_status",
+      "conversion_and_null_policy": "zero/recorded/unknown by exact supplied value."
+    },
+    "elected_flag": {
+      "source_locator": "Rr.elected_flag",
+      "conversion_and_null_policy": "True only when winner source/marker explicitly identifies elected status. Others NULL, not automatically false.2013 VUC assembly same-name ambiguity leaves all flags NULL."
+    },
+    "is_substitute": {
+      "source_locator": "no normalized substitution claims",
+      "conversion_and_null_policy": "NULL; raw markers retained."
+    },
+    "evidence_status": {
+      "source_locator": "Rr.evidence_status",
+      "conversion_and_null_policy": "recorded means source claim, not certified or complete. Disputed future claims require explicit status/accepted override."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns."
+    }
+  },
+  "record_locator": {
+    "record_key": {
+      "source_locator": "V.*[].record_key; input/country rules in identity doc",
+      "conversion_and_null_policy": "rec-+H([entityKind,...typedKeyParts]); not a public replacement ID."
+    },
+    "entity_kind": {
+      "source_locator": "projected typed record kind",
+      "conversion_and_null_policy": "One of country/geography/office/event/proceeding/result_row/source/input; party_mapping empty."
+    },
+    "country_id": {
+      "source_locator": "typed target field country_id",
+      "conversion_and_null_policy": "Populate only for country, geography, office, event, proceeding, result_row, party_mapping, source; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one."
+    },
+    "geography_id": {
+      "source_locator": "typed target field geography_id",
+      "conversion_and_null_policy": "Populate only for geography; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one."
+    },
+    "id_namespace": {
+      "source_locator": "typed target field id_namespace",
+      "conversion_and_null_policy": "Populate only for office, event, proceeding, result_row; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one."
+    },
+    "office_id": {
+      "source_locator": "typed target field office_id",
+      "conversion_and_null_policy": "Populate only for office, event, proceeding, result_row; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one."
+    },
+    "history_key": {
+      "source_locator": "typed target field history_key",
+      "conversion_and_null_policy": "Populate only for event, proceeding, result_row; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one."
+    },
+    "proceeding_id": {
+      "source_locator": "typed target field proceeding_id",
+      "conversion_and_null_policy": "Populate only for proceeding; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one."
+    },
+    "result_row_id": {
+      "source_locator": "typed target field result_row_id",
+      "conversion_and_null_policy": "Populate only for result_row; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one."
+    },
+    "party_namespace": {
+      "source_locator": "typed target field party_namespace",
+      "conversion_and_null_policy": "Populate only for party_mapping; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one."
+    },
+    "party_mapping_id": {
+      "source_locator": "typed target field party_mapping_id",
+      "conversion_and_null_policy": "Populate only for party_mapping; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one."
+    },
+    "source_namespace": {
+      "source_locator": "typed target field source_namespace",
+      "conversion_and_null_policy": "Populate only for source; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one."
+    },
+    "source_id": {
+      "source_locator": "typed target field source_id",
+      "conversion_and_null_policy": "Populate only for source; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one."
+    },
+    "input_path": {
+      "source_locator": "typed target field input_path",
+      "conversion_and_null_policy": "Populate only for input; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "source_row_locator": {
+      "source_locator": "derived path+JSON pointer+origins",
+      "conversion_and_null_policy": "Canonical locator. JSON pointers0-based; CSV record1-based including preamble/header; XLSX sheet androw1-based; PDF page1-based."
+    }
+  },
+  "evidence_link": {
+    "evidence_id": {
+      "source_locator": "target + origin + claim kind",
+      "conversion_and_null_policy": "ev-+H([record_key,[slovakia,L,source_id],originWithoutSourceID,claim_kind]); exact full hash."
+    },
+    "record_key": {
+      "source_locator": "typed target V record key",
+      "conversion_and_null_policy": "Must resolve to record_locator."
+    },
+    "source_country_id": {
+      "source_locator": "constant",
+      "conversion_and_null_policy": "slovakia"
+    },
+    "source_namespace": {
+      "source_locator": "S.source_namespace",
+      "conversion_and_null_policy": "Literal L; source key always (slovakia,L,source_id)."
+    },
+    "source_id": {
+      "source_locator": "S.source_id / origin.source_id",
+      "conversion_and_null_policy": "Exact source documentary key; resolve against sources.json; a broken known key fails closed."
+    },
+    "source_locator": {
+      "source_locator": "O/G/E/Rr origins; date.origins",
+      "conversion_and_null_policy": "Canonical exact path+hash+CSV record/XLSX sheet,row/PDF page/HTML id; never fake a JSON pointer into CSV."
+    },
+    "claim_kind": {
+      "source_locator": "projected field role",
+      "conversion_and_null_policy": "identity/geography/date/result/provenance; no certification fabricated."
+    },
+    "date_claim_id": {
+      "source_locator": "date evidence only",
+      "conversion_and_null_policy": "Matching V research_date ID; NULL for non-date evidence. Proceeding dates link here and remain raw; DDL has no proceeding.date_id."
+    },
+    "claim_json": {
+      "source_locator": "full supplied claim and raw source cells",
+      "conversion_and_null_policy": "Canonical full claim; disputed alternatives stay separately retained."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    }
+  },
+  "unresolved_evidence": {
+    "unresolved_id": {
+      "source_locator": "unresolved-evidence.json=[]",
+      "conversion_and_null_policy": "No actual unresolved citation token normalized in this pack. Future exact token: unres-+H([record_key,token,locator])."
+    },
+    "record_key": {
+      "source_locator": "future unresolved target",
+      "conversion_and_null_policy": "Must reference a real locator, never a fabricated source row."
+    },
+    "original_token": {
+      "source_locator": "future exact unresolved citation token",
+      "conversion_and_null_policy": "Preserve nonempty token verbatim; do not invent tokens to represent ordinary research gaps."
+    },
+    "source_locator": {
+      "source_locator": "future original token occurrence",
+      "conversion_and_null_policy": "Required retained path+hash+location."
+    },
+    "reason": {
+      "source_locator": "future failure-to-resolve evidence reason",
+      "conversion_and_null_policy": "Nonempty reason. Broken known source FK is an error, never reclassified as unresolved."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns."
+    }
+  },
+  "identity_crosswalk": {
+    "entity_kind": {
+      "source_locator": "X.entity_kind",
+      "conversion_and_null_policy": "office"
+    },
+    "upstream_namespace": {
+      "source_locator": "X.upstream_namespace",
+      "conversion_and_null_policy": "statistics.sk:OSO:territorial-code:C or M, including body qualification."
+    },
+    "upstream_id": {
+      "source_locator": "X.upstream_id",
+      "conversion_and_null_policy": "Exact6-digit territorial code, no numeric trimming."
+    },
+    "record_key": {
+      "source_locator": "X.record_key",
+      "conversion_and_null_policy": "FK to real office record locator."
+    },
+    "reason": {
+      "source_locator": "X.reason",
+      "conversion_and_null_policy": "Source-code binding only, not legal merger/successor link.2014 name-binding file supplies additional exact evidence aliases."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns."
+    }
+  },
+  "ingest_attempt": {
+    "attempt_id": {
+      "source_locator": "future runtime",
+      "conversion_and_null_policy": "Fresh attempt-UUID every run, excluded from fingerprint; no attempt minted here."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovakia; preserve row ownership."
+    },
+    "operator": {
+      "source_locator": "future authenticated operator",
+      "conversion_and_null_policy": "Required actual operator, not Justin approval inferred."
+    },
+    "script_version": {
+      "source_locator": "future executable version",
+      "conversion_and_null_policy": "Actual importer version; documentation adapter contract is not execution."
+    },
+    "started_at": {
+      "source_locator": "runtime UTC",
+      "conversion_and_null_policy": "Before staging begins; durable sibling ledger."
+    },
+    "finished_at": {
+      "source_locator": "runtime UTC",
+      "conversion_and_null_policy": "NULL while started; actual finish on terminal state."
+    },
+    "status": {
+      "source_locator": "runtime outcome",
+      "conversion_and_null_policy": "started→succeeded/failed; not run in this pack."
+    },
+    "input_inventory_json": {
+      "source_locator": "I + effective inherited descriptors",
+      "conversion_and_null_policy": "Canonical exact inputs to this attempt."
+    },
+    "successful_release_id": {
+      "source_locator": "future success",
+      "conversion_and_null_policy": "R only after publication/recovery confirms success; NULL on failure."
+    },
+    "publication_set_json": {
+      "source_locator": "future entire selected release set",
+      "conversion_and_null_policy": "Retain all unrelated lineage/release pairs unchanged."
+    },
+    "row_counts_json": {
+      "source_locator": "future actual validated counts",
+      "conversion_and_null_policy": "Not documentary expectations alone."
+    },
+    "error_text": {
+      "source_locator": "future error",
+      "conversion_and_null_policy": "NULL on success; preserved failure reason on rollback."
+    }
+  }
+}
