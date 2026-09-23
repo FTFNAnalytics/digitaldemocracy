@@ -1,0 +1,63 @@
+[
+  {
+    "gap_id": "CY-G01",
+    "title": "Current community completeness",
+    "status": "blocking",
+    "detail": "The electoral composition table names 285 free-area community councils; the ministry branch overview says 286 free and 137 occupied. The electoral table has 138 occupied. No missing 286th free council is identifiable with sufficient certainty. The register contains 285 named councils and 285 leaders and is explicitly NOT certified complete.",
+    "source_ids": [
+      "CYS-0ca1980c0c900dca",
+      "CYS-57321a5114b9d781"
+    ]
+  },
+  {
+    "gap_id": "CY-G02",
+    "title": "Post-1974 electoral footprint",
+    "status": "scope gate",
+    "detail": "Only administered local municipalities/communities are instantiated. Nine occupied municipalities and occupied-community returns are excluded from this local register even where the Republic conducts displaced-elector elections. These are Republic returns, not TRNC institutions. TRNC offices are entirely out of scope. National House, President and EP totals retain their official electorate and are not cut down by the local geographic filter.",
+    "source_ids": [
+      "CYS-117328c7d47127da",
+      "CYS-0096b58b33af70c3",
+      "CYS-0ca1980c0c900dca"
+    ]
+  },
+  {
+    "gap_id": "CY-G03",
+    "title": "2024 reform and predecessors",
+    "status": "blocking for successor links",
+    "detail": "CYSTAT municipal quarters retain previous statistical codes. This supports geography correspondence, not automatic legal succession of offices. 28 historical municipal pairs and 59 historical community pairs are source-identified. Alampra, Akoursos, Tera and Pelathousa former-office type/history were not independently established from the retained earlier election area lists; no historical office pair is fabricated for them. Gazette-level merger/abolition instruments, precise cessation dates and successor edges remain gated.",
+    "source_ids": [
+      "CYS-364dcda1a09ba12a",
+      "CYS-117328c7d47127da"
+    ]
+  },
+  {
+    "gap_id": "CY-G04",
+    "title": "Spilia sub-community identity",
+    "status": "blocking for code join",
+    "detail": "Spilia Agios Antonios and Spilia Kourdali are separate named council rows. Kourdali has no safely matched Electoral Service area ID; CYSTAT Spilia statistical territory does not justify merging the two elected councils. Kourdali retains an explicit unresolved-code identity and no invented results.",
+    "source_ids": [
+      "CYS-0ca1980c0c900dca",
+      "CYS-364dcda1a09ba12a"
+    ]
+  },
+  {
+    "gap_id": "CY-G13",
+    "title": "Statistical units versus elected councils",
+    "status": "identity gate",
+    "detail": "CYSTAT covers the whole island and statistical units without an active elected council. Do not instantiate every CYSTAT community. The current office register is anchored in the named Electoral Service council composition table; the workbook corroborates names/codes and geographic versions.",
+    "source_ids": [
+      "CYS-364dcda1a09ba12a",
+      "CYS-0ca1980c0c900dca"
+    ]
+  },
+  {
+    "gap_id": "CY-G14",
+    "title": "District organisations and service clusters",
+    "status": "scope gate",
+    "detail": "Five DLGO presidents have clean direct popular footing and are included as draft regional executives. Their other board members are appointed/indirect, not separate popular council contests. Thirty service-cluster boards consist of community leaders by virtue of their existing offices; no additional popular contest is invented. District state administrations are excluded.",
+    "source_ids": [
+      "CYS-d3a1b2852e520036",
+      "CYS-0aff6c025e74db59"
+    ]
+  }
+]

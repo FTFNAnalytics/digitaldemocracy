@@ -1,0 +1,839 @@
+[
+  {
+    "code": "11011000",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Lefkosia",
+    "previous_code": 1000,
+    "territorial_note": "Partly occupied",
+    "source_row": 3,
+    "parent_municipality_code": "11010000"
+  },
+  {
+    "code": "11011010",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Agios Dometios",
+    "previous_code": 1010,
+    "territorial_note": "Partly occupied",
+    "source_row": 4,
+    "parent_municipality_code": "11010000"
+  },
+  {
+    "code": "11011011",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Egkomi",
+    "previous_code": 1011,
+    "territorial_note": "",
+    "source_row": 5,
+    "parent_municipality_code": "11010000"
+  },
+  {
+    "code": "11011013",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Aglangia / Aglantzia",
+    "previous_code": 1013,
+    "territorial_note": "Partly occupied",
+    "source_row": 6,
+    "parent_municipality_code": "11010000"
+  },
+  {
+    "code": "11031021",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Lakatameia",
+    "previous_code": 1021,
+    "territorial_note": "",
+    "source_row": 9,
+    "parent_municipality_code": "11030000"
+  },
+  {
+    "code": "11031022",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Synoikismos Anthoupolis",
+    "previous_code": 1022,
+    "territorial_note": "",
+    "source_row": 10,
+    "parent_municipality_code": "11030000"
+  },
+  {
+    "code": "11031225",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Tseri",
+    "previous_code": 1225,
+    "territorial_note": "",
+    "source_row": 11,
+    "parent_municipality_code": "11030000"
+  },
+  {
+    "code": "11041023",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Lakkia (Latsia)",
+    "previous_code": 1023,
+    "territorial_note": "",
+    "source_row": 13,
+    "parent_municipality_code": "11040000"
+  },
+  {
+    "code": "11041024",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Geri",
+    "previous_code": 1024,
+    "territorial_note": "Partly occupied",
+    "source_row": 14,
+    "parent_municipality_code": "11040000"
+  },
+  {
+    "code": "11051102",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Alampra",
+    "previous_code": 1102,
+    "territorial_note": "",
+    "source_row": 16,
+    "parent_municipality_code": "11050000"
+  },
+  {
+    "code": "11051105",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Nisou",
+    "previous_code": 1105,
+    "territorial_note": "",
+    "source_row": 17,
+    "parent_municipality_code": "11050000"
+  },
+  {
+    "code": "11051106",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Pera Chorio",
+    "previous_code": 1106,
+    "territorial_note": "",
+    "source_row": 18,
+    "parent_municipality_code": "11050000"
+  },
+  {
+    "code": "11051107",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Idalion",
+    "previous_code": 1107,
+    "territorial_note": "",
+    "source_row": 19,
+    "parent_municipality_code": "11050000"
+  },
+  {
+    "code": "11051108",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Lympia",
+    "previous_code": 1108,
+    "territorial_note": "",
+    "source_row": 20,
+    "parent_municipality_code": "11050000"
+  },
+  {
+    "code": "11051120",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Potamia",
+    "previous_code": 1120,
+    "territorial_note": "",
+    "source_row": 21,
+    "parent_municipality_code": "11050000"
+  },
+  {
+    "code": "31013101",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Paralimni",
+    "previous_code": 3101,
+    "territorial_note": "",
+    "source_row": 228,
+    "parent_municipality_code": "31010000"
+  },
+  {
+    "code": "31013102",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Deryneia",
+    "previous_code": 3102,
+    "territorial_note": "Partly occupied",
+    "source_row": 229,
+    "parent_municipality_code": "31010000"
+  },
+  {
+    "code": "31013105",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Frenaros",
+    "previous_code": 3105,
+    "territorial_note": "",
+    "source_row": 230,
+    "parent_municipality_code": "31010000"
+  },
+  {
+    "code": "31013114",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Acheritou",
+    "previous_code": 3114,
+    "territorial_note": "Partly occupied",
+    "source_row": 231,
+    "parent_municipality_code": "31010000"
+  },
+  {
+    "code": "31023100",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Agia Napa",
+    "previous_code": 3100,
+    "territorial_note": "",
+    "source_row": 233,
+    "parent_municipality_code": "31020000"
+  },
+  {
+    "code": "31023103",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Sotira",
+    "previous_code": 3103,
+    "territorial_note": "",
+    "source_row": 234,
+    "parent_municipality_code": "31020000"
+  },
+  {
+    "code": "31023104",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Liopetri",
+    "previous_code": 3104,
+    "territorial_note": "",
+    "source_row": 235,
+    "parent_municipality_code": "31020000"
+  },
+  {
+    "code": "31023110",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Avgorou",
+    "previous_code": 3110,
+    "territorial_note": "Partly occupied",
+    "source_row": 236,
+    "parent_municipality_code": "31020000"
+  },
+  {
+    "code": "31023111",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Achna",
+    "previous_code": 3111,
+    "territorial_note": "Partly occupied",
+    "source_row": 237,
+    "parent_municipality_code": "31020000"
+  },
+  {
+    "code": "41014000",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Larnaka",
+    "previous_code": 4000,
+    "territorial_note": "",
+    "source_row": 328,
+    "parent_municipality_code": "41010000"
+  },
+  {
+    "code": "41014011",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Livadia",
+    "previous_code": 4011,
+    "territorial_note": "",
+    "source_row": 329,
+    "parent_municipality_code": "41010000"
+  },
+  {
+    "code": "41014102",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Voroklini",
+    "previous_code": 4102,
+    "territorial_note": "",
+    "source_row": 330,
+    "parent_municipality_code": "41010000"
+  },
+  {
+    "code": "41024010",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Aradippou",
+    "previous_code": 4010,
+    "territorial_note": "",
+    "source_row": 332,
+    "parent_municipality_code": "41020000"
+  },
+  {
+    "code": "41024100",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Kellia",
+    "previous_code": 4100,
+    "territorial_note": "",
+    "source_row": 333,
+    "parent_municipality_code": "41020000"
+  },
+  {
+    "code": "41024101",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Troulloi",
+    "previous_code": 4101,
+    "territorial_note": "Partly occupied",
+    "source_row": 334,
+    "parent_municipality_code": "41020000"
+  },
+  {
+    "code": "41034014",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Dromolaxia - Meneou",
+    "previous_code": 4014,
+    "territorial_note": "",
+    "source_row": 336,
+    "parent_municipality_code": "41030000"
+  },
+  {
+    "code": "41034110",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Kition - Kiti",
+    "previous_code": 4110,
+    "territorial_note": "",
+    "source_row": 337,
+    "parent_municipality_code": "41030000"
+  },
+  {
+    "code": "41034111",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Perivolia",
+    "previous_code": 4111,
+    "territorial_note": "",
+    "source_row": 338,
+    "parent_municipality_code": "41030000"
+  },
+  {
+    "code": "41034112",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Tersefanou",
+    "previous_code": 4112,
+    "territorial_note": "",
+    "source_row": 339,
+    "parent_municipality_code": "41030000"
+  },
+  {
+    "code": "41044103",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Avdellero",
+    "previous_code": 4103,
+    "territorial_note": "",
+    "source_row": 341,
+    "parent_municipality_code": "41040000"
+  },
+  {
+    "code": "41044202",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Athienou",
+    "previous_code": 4202,
+    "territorial_note": "Partly occupied",
+    "source_row": 342,
+    "parent_municipality_code": "41040000"
+  },
+  {
+    "code": "41054215",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Kornos",
+    "previous_code": 4215,
+    "territorial_note": "",
+    "source_row": 344,
+    "parent_municipality_code": "41050000"
+  },
+  {
+    "code": "41054216",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Delikipos",
+    "previous_code": 4216,
+    "territorial_note": "",
+    "source_row": 345,
+    "parent_municipality_code": "41050000"
+  },
+  {
+    "code": "41054308",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Skarinou",
+    "previous_code": 4308,
+    "territorial_note": "",
+    "source_row": 346,
+    "parent_municipality_code": "41050000"
+  },
+  {
+    "code": "41054310",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Kato Lefkara",
+    "previous_code": 4310,
+    "territorial_note": "",
+    "source_row": 347,
+    "parent_municipality_code": "41050000"
+  },
+  {
+    "code": "41054311",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Lefkara",
+    "previous_code": 4311,
+    "territorial_note": "",
+    "source_row": 348,
+    "parent_municipality_code": "41050000"
+  },
+  {
+    "code": "41054313",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Vavla",
+    "previous_code": 4313,
+    "territorial_note": "",
+    "source_row": 349,
+    "parent_municipality_code": "41050000"
+  },
+  {
+    "code": "41054314",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Lageia",
+    "previous_code": 4314,
+    "territorial_note": "",
+    "source_row": 350,
+    "parent_municipality_code": "41050000"
+  },
+  {
+    "code": "51015000",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Lemesos",
+    "previous_code": 5000,
+    "territorial_note": "",
+    "source_row": 391,
+    "parent_municipality_code": "51010000"
+  },
+  {
+    "code": "51015011",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Mesa Geitonia",
+    "previous_code": 5011,
+    "territorial_note": "",
+    "source_row": 392,
+    "parent_municipality_code": "51010000"
+  },
+  {
+    "code": "51015202",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Tserkezoi",
+    "previous_code": 5202,
+    "territorial_note": "",
+    "source_row": 393,
+    "parent_municipality_code": "51010000"
+  },
+  {
+    "code": "51025012",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Agios Athanasios",
+    "previous_code": 5012,
+    "territorial_note": "",
+    "source_row": 395,
+    "parent_municipality_code": "51020000"
+  },
+  {
+    "code": "51025013",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Germasogeia",
+    "previous_code": 5013,
+    "territorial_note": "",
+    "source_row": 396,
+    "parent_municipality_code": "51020000"
+  },
+  {
+    "code": "51025104",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Mathikoloni",
+    "previous_code": 5104,
+    "territorial_note": "",
+    "source_row": 397,
+    "parent_municipality_code": "51020000"
+  },
+  {
+    "code": "51025120",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Mouttagiaka",
+    "previous_code": 5120,
+    "territorial_note": "",
+    "source_row": 398,
+    "parent_municipality_code": "51020000"
+  },
+  {
+    "code": "51025121",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Armenochori",
+    "previous_code": 5121,
+    "territorial_note": "",
+    "source_row": 399,
+    "parent_municipality_code": "51020000"
+  },
+  {
+    "code": "51025122",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Foinikaria",
+    "previous_code": 5122,
+    "territorial_note": "",
+    "source_row": 400,
+    "parent_municipality_code": "51020000"
+  },
+  {
+    "code": "51025123",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Akrounta",
+    "previous_code": 5123,
+    "territorial_note": "",
+    "source_row": 401,
+    "parent_municipality_code": "51020000"
+  },
+  {
+    "code": "51025124",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Agios Tychonas",
+    "previous_code": 5124,
+    "territorial_note": "",
+    "source_row": 402,
+    "parent_municipality_code": "51020000"
+  },
+  {
+    "code": "51035020",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Pano Polemidia",
+    "previous_code": 5020,
+    "territorial_note": "",
+    "source_row": 404,
+    "parent_municipality_code": "51030000"
+  },
+  {
+    "code": "51035022",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Kato Polemidia",
+    "previous_code": 5022,
+    "territorial_note": "",
+    "source_row": 405,
+    "parent_municipality_code": "51030000"
+  },
+  {
+    "code": "51045021",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Ypsonas",
+    "previous_code": 5021,
+    "territorial_note": "",
+    "source_row": 407,
+    "parent_municipality_code": "51040000"
+  },
+  {
+    "code": "51045200",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Akrotiri",
+    "previous_code": 5200,
+    "territorial_note": "",
+    "source_row": 408,
+    "parent_municipality_code": "51040000"
+  },
+  {
+    "code": "51045201",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Asomatos",
+    "previous_code": 5201,
+    "territorial_note": "",
+    "source_row": 409,
+    "parent_municipality_code": "51040000"
+  },
+  {
+    "code": "51045203",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Trachoni",
+    "previous_code": 5203,
+    "territorial_note": "",
+    "source_row": 410,
+    "parent_municipality_code": "51040000"
+  },
+  {
+    "code": "51045210",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Kolossi",
+    "previous_code": 5210,
+    "territorial_note": "",
+    "source_row": 411,
+    "parent_municipality_code": "51040000"
+  },
+  {
+    "code": "51045211",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Erimi",
+    "previous_code": 5211,
+    "territorial_note": "",
+    "source_row": 412,
+    "parent_municipality_code": "51040000"
+  },
+  {
+    "code": "51045212",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Episkopi",
+    "previous_code": 5212,
+    "territorial_note": "",
+    "source_row": 413,
+    "parent_municipality_code": "51040000"
+  },
+  {
+    "code": "51045213",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Kantou",
+    "previous_code": 5213,
+    "territorial_note": "",
+    "source_row": 414,
+    "parent_municipality_code": "51040000"
+  },
+  {
+    "code": "51045214",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Sotira",
+    "previous_code": 5214,
+    "territorial_note": "",
+    "source_row": 415,
+    "parent_municipality_code": "51040000"
+  },
+  {
+    "code": "61026010",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Geroskipou",
+    "previous_code": 6010,
+    "territorial_note": "",
+    "source_row": 508,
+    "parent_municipality_code": "61020000"
+  },
+  {
+    "code": "61026011",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Konia",
+    "previous_code": 6011,
+    "territorial_note": "",
+    "source_row": 509,
+    "parent_municipality_code": "61020000"
+  },
+  {
+    "code": "61026012",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Agia Marinouda",
+    "previous_code": 6012,
+    "territorial_note": "",
+    "source_row": 510,
+    "parent_municipality_code": "61020000"
+  },
+  {
+    "code": "61026014",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Acheleia",
+    "previous_code": 6014,
+    "territorial_note": "",
+    "source_row": 511,
+    "parent_municipality_code": "61020000"
+  },
+  {
+    "code": "61026104",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Timi",
+    "previous_code": 6104,
+    "territorial_note": "",
+    "source_row": 512,
+    "parent_municipality_code": "61020000"
+  },
+  {
+    "code": "61036027",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Kissonerga",
+    "previous_code": 6027,
+    "territorial_note": "",
+    "source_row": 514,
+    "parent_municipality_code": "61030000"
+  },
+  {
+    "code": "61036130",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Akoursos",
+    "previous_code": 6130,
+    "territorial_note": "",
+    "source_row": 515,
+    "parent_municipality_code": "61030000"
+  },
+  {
+    "code": "61036132",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Kathikas",
+    "previous_code": 6132,
+    "territorial_note": "",
+    "source_row": 516,
+    "parent_municipality_code": "61030000"
+  },
+  {
+    "code": "61036133",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Pegeia",
+    "previous_code": 6133,
+    "territorial_note": "",
+    "source_row": 517,
+    "parent_municipality_code": "61030000"
+  },
+  {
+    "code": "61036350",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Kato Arodes",
+    "previous_code": 6350,
+    "territorial_note": "",
+    "source_row": 518,
+    "parent_municipality_code": "61030000"
+  },
+  {
+    "code": "61036351",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Pano Arodes",
+    "previous_code": 6351,
+    "territorial_note": "",
+    "source_row": 519,
+    "parent_municipality_code": "61030000"
+  },
+  {
+    "code": "61036352",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Ineia",
+    "previous_code": 6352,
+    "territorial_note": "",
+    "source_row": 520,
+    "parent_municipality_code": "61030000"
+  },
+  {
+    "code": "61046335",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Tera",
+    "previous_code": 6335,
+    "territorial_note": "",
+    "source_row": 522,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "61046336",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Kritou Tera",
+    "previous_code": 6336,
+    "territorial_note": "",
+    "source_row": 523,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "61046341",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Chrysochou",
+    "previous_code": 6341,
+    "territorial_note": "",
+    "source_row": 524,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "61046343",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Poli Chrysochous",
+    "previous_code": 6343,
+    "territorial_note": "",
+    "source_row": 525,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "61046344",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Neo Chorio",
+    "previous_code": 6344,
+    "territorial_note": "",
+    "source_row": 526,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "61046353",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Drouseia",
+    "previous_code": 6353,
+    "territorial_note": "",
+    "source_row": 527,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "61046355",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Androlikou",
+    "previous_code": 6355,
+    "territorial_note": "",
+    "source_row": 528,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "61046360",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Pelathousa",
+    "previous_code": 6360,
+    "territorial_note": "",
+    "source_row": 529,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "61046362",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Makounta",
+    "previous_code": 6362,
+    "territorial_note": "",
+    "source_row": 530,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "61046363",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Argaka",
+    "previous_code": 6363,
+    "territorial_note": "",
+    "source_row": 531,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "61046364",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Gialia",
+    "previous_code": 6364,
+    "territorial_note": "",
+    "source_row": 532,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "61046365",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Agia Marina",
+    "previous_code": 6365,
+    "territorial_note": "",
+    "source_row": 533,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "61046366",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Nea Dimmata",
+    "previous_code": 6366,
+    "territorial_note": "",
+    "source_row": 534,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "61046367",
+    "type": "MUNICIPAL QUARTER",
+    "name": "Pomos",
+    "previous_code": 6367,
+    "territorial_note": "",
+    "source_row": 535,
+    "parent_municipality_code": "61040000"
+  },
+  {
+    "code": "11021012",
+    "type": "MUNICIPALITY",
+    "name": "Strovolos",
+    "previous_code": 1012,
+    "territorial_note": "",
+    "source_row": 7,
+    "parent_municipality_code": "11021012"
+  },
+  {
+    "code": "61016000",
+    "type": "MUNICIPALITY",
+    "name": "Pafos",
+    "previous_code": 6000,
+    "territorial_note": "",
+    "source_row": 506,
+    "parent_municipality_code": "61016000"
+  }
+]

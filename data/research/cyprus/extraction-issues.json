@@ -1,0 +1,70 @@
+[
+  {
+    "kind": "historic_type_not_evidenced",
+    "old_code": 1102,
+    "name": "Alampra"
+  },
+  {
+    "kind": "historic_type_not_evidenced",
+    "old_code": 6130,
+    "name": "Akoursos"
+  },
+  {
+    "kind": "historic_type_not_evidenced",
+    "old_code": 6335,
+    "name": "Tera"
+  },
+  {
+    "kind": "historic_type_not_evidenced",
+    "old_code": 6360,
+    "name": "Pelathousa"
+  },
+  {
+    "kind": "malformed_candidate_preference_row",
+    "source": "dataset-93-8a62d93b532e.csv",
+    "row": 471,
+    "raw": {
+      "ΕΠΑΡΧΙΑ": "ΛΑΡΝΑΚΑ",
+      "ΚΟΙΝΟΤΗΤΑ": "ΟΡΑ",
+      "ΣΥΝΔΥΑΣΜΟΣ/ΚΟΜΜΑ": "ΠΑΜΕ ΜΠΡΟΣΤΑ",
+      "ΥΠΟΨΗΦΙΟΣ": " ΜΕ ΤΟΥΣ ΝΕΟΥΣ",
+      "ΕΚΛΕΓΕΝΤΕΣ": "ΙΩΑΝΝΟΥ ΙΑΚΩΒΟΣ",
+      "ΣΤΑΥΡΟΙ": "ΝΑΙ",
+      "null": [
+        "56"
+      ]
+    }
+  },
+  {
+    "kind": "malformed_candidate_preference_row",
+    "source": "dataset-93-8a62d93b532e.csv",
+    "row": 472,
+    "raw": {
+      "ΕΠΑΡΧΙΑ": "ΛΑΡΝΑΚΑ",
+      "ΚΟΙΝΟΤΗΤΑ": "ΟΡΑ",
+      "ΣΥΝΔΥΑΣΜΟΣ/ΚΟΜΜΑ": "ΠΑΜΕ ΜΠΡΟΣΤΑ",
+      "ΥΠΟΨΗΦΙΟΣ": " ΜΕ ΤΟΥΣ ΝΕΟΥΣ",
+      "ΕΚΛΕΓΕΝΤΕΣ": "ΤΕΚΛΟΣ ΑΝΤΩΝΗΣ",
+      "ΣΤΑΥΡΟΙ": "ΝΑΙ",
+      "null": [
+        "40"
+      ]
+    }
+  },
+  {
+    "kind": "malformed_candidate_preference_row",
+    "source": "dataset-93-8a62d93b532e.csv",
+    "row": 473,
+    "raw": {
+      "ΕΠΑΡΧΙΑ": "ΛΑΡΝΑΚΑ",
+      "ΚΟΙΝΟΤΗΤΑ": "ΟΡΑ",
+      "ΣΥΝΔΥΑΣΜΟΣ/ΚΟΜΜΑ": "ΠΑΜΕ ΜΠΡΟΣΤΑ",
+      "ΥΠΟΨΗΦΙΟΣ": " ΜΕ ΤΟΥΣ ΝΕΟΥΣ",
+      "ΕΚΛΕΓΕΝΤΕΣ": "ΠΥΡΓΟΥ ΔΗΜΗΤΡΙΟΣ",
+      "ΣΤΑΥΡΟΙ": "",
+      "null": [
+        "36"
+      ]
+    }
+  }
+]

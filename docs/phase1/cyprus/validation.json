@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "frozen research-pack integrity, not election certification or approval",
+  "applied_changes": 0,
+  "current_register_complete": false,
+  "historical_coverage_exhaustive": false,
+  "office_rows": 888,
+  "draft_tier_rows": 888,
+  "events": 1599,
+  "results": 11112,
+  "sources_hashed": 156,
+  "manifest_files_hashed": 191,
+  "ballot_sum_checks": 1127,
+  "field_map_columns": 223,
+  "acceptance_examples": 33,
+  "negative_controls": [
+    {
+      "case": "duplicate_office",
+      "rejected_as_expected": true
+    },
+    {
+      "case": "approved_tier",
+      "rejected_as_expected": true
+    },
+    {
+      "case": "fabricated_no_poll_votes",
+      "rejected_as_expected": true
+    },
+    {
+      "case": "falsely_complete_register",
+      "rejected_as_expected": true
+    }
+  ],
+  "errors": []
+}
