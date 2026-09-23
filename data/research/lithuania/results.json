@@ -1,0 +1,5438 @@
+[
+  {
+    "result_row_id": "result-0d3deb4469bf70b6269128a4",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2004",
+    "event_id": "event-3d387a9f91ad362847a8fb6a",
+    "proceeding_id": null,
+    "candidate_or_list_label": "DP",
+    "candidate_source_id": "DP",
+    "row_kind": "party_list",
+    "original_party_label": "DP",
+    "original_party_code": "DP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 5,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2004-2009/constitutive-session/index.html",
+        "sha256": "61b584f0033a94e33fde5ec565636831d1af8c12ccf50c9a70a4379ff8070c8c",
+        "source_id": "lithuania--url-383d0a7becb098a8142eeae6",
+        "locator": {
+          "html_table": 3,
+          "tbody_row": 1,
+          "party_code": "DP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "5"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-5132275352579180f8eb6170",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2004",
+    "event_id": "event-3d387a9f91ad362847a8fb6a",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LCS",
+    "candidate_source_id": "LCS",
+    "row_kind": "party_list",
+    "original_party_label": "LCS",
+    "original_party_code": "LCS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 2,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2004-2009/constitutive-session/index.html",
+        "sha256": "61b584f0033a94e33fde5ec565636831d1af8c12ccf50c9a70a4379ff8070c8c",
+        "source_id": "lithuania--url-383d0a7becb098a8142eeae6",
+        "locator": {
+          "html_table": 3,
+          "tbody_row": 2,
+          "party_code": "LCS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-193c549166dee21639b470d6",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2004",
+    "event_id": "event-3d387a9f91ad362847a8fb6a",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LSDP",
+    "candidate_source_id": "LSDP",
+    "row_kind": "party_list",
+    "original_party_label": "LSDP",
+    "original_party_code": "LSDP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 2,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2004-2009/constitutive-session/index.html",
+        "sha256": "61b584f0033a94e33fde5ec565636831d1af8c12ccf50c9a70a4379ff8070c8c",
+        "source_id": "lithuania--url-383d0a7becb098a8142eeae6",
+        "locator": {
+          "html_table": 3,
+          "tbody_row": 3,
+          "party_code": "LSDP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-9c16d6ce8dece502bfe1ecfb",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2004",
+    "event_id": "event-3d387a9f91ad362847a8fb6a",
+    "proceeding_id": null,
+    "candidate_or_list_label": "TS",
+    "candidate_source_id": "TS",
+    "row_kind": "party_list",
+    "original_party_label": "TS",
+    "original_party_code": "TS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 2,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2004-2009/constitutive-session/index.html",
+        "sha256": "61b584f0033a94e33fde5ec565636831d1af8c12ccf50c9a70a4379ff8070c8c",
+        "source_id": "lithuania--url-383d0a7becb098a8142eeae6",
+        "locator": {
+          "html_table": 3,
+          "tbody_row": 4,
+          "party_code": "TS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-63402293e7713d406929c1d8",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2004",
+    "event_id": "event-3d387a9f91ad362847a8fb6a",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LDP",
+    "candidate_source_id": "LDP",
+    "row_kind": "party_list",
+    "original_party_label": "LDP",
+    "original_party_code": "LDP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2004-2009/constitutive-session/index.html",
+        "sha256": "61b584f0033a94e33fde5ec565636831d1af8c12ccf50c9a70a4379ff8070c8c",
+        "source_id": "lithuania--url-383d0a7becb098a8142eeae6",
+        "locator": {
+          "html_table": 3,
+          "tbody_row": 5,
+          "party_code": "LDP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-8287c26aa6a0ab1d77a47ad2",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2004",
+    "event_id": "event-3d387a9f91ad362847a8fb6a",
+    "proceeding_id": null,
+    "candidate_or_list_label": "VNDPS",
+    "candidate_source_id": "VNDPS",
+    "row_kind": "party_list",
+    "original_party_label": "VNDPS",
+    "original_party_code": "VNDPS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2004-2009/constitutive-session/index.html",
+        "sha256": "61b584f0033a94e33fde5ec565636831d1af8c12ccf50c9a70a4379ff8070c8c",
+        "source_id": "lithuania--url-383d0a7becb098a8142eeae6",
+        "locator": {
+          "html_table": 3,
+          "tbody_row": 6,
+          "party_code": "VNDPS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-72cb461c74450a7e122a70c1",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2004",
+    "event_id": "event-3d387a9f91ad362847a8fb6a",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Other parties",
+    "candidate_source_id": "Other parties",
+    "row_kind": "aggregate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2004-2009/constitutive-session/index.html",
+        "sha256": "61b584f0033a94e33fde5ec565636831d1af8c12ccf50c9a70a4379ff8070c8c",
+        "source_id": "lithuania--url-383d0a7becb098a8142eeae6",
+        "locator": {
+          "html_table": 3,
+          "tbody_row": 7,
+          "party_code": "Other parties"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": true
+    }
+  },
+  {
+    "result_row_id": "result-fe18e71c11eb10f7292673c5",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2009",
+    "event_id": "event-bb953811f91f048e4a055554",
+    "proceeding_id": null,
+    "candidate_or_list_label": "TS-LKD",
+    "candidate_source_id": "TS-LKD",
+    "row_kind": "party_list",
+    "original_party_label": "TS-LKD",
+    "original_party_code": "TS-LKD",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 26.86,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 4,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2009-2014/constitutive-session/index.html",
+        "sha256": "047369660afcf404d6548914323072c72252e315c3c1adbee532c75959b712af",
+        "source_id": "lithuania--url-c79513e79b2046333808857f",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 1,
+          "party_code": "TS-LKD"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "26.86%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "4"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-0b96743ad93918f88e65d89e",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2009",
+    "event_id": "event-bb953811f91f048e4a055554",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LSDP",
+    "candidate_source_id": "LSDP",
+    "row_kind": "party_list",
+    "original_party_label": "LSDP",
+    "original_party_code": "LSDP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 18.61,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 3,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2009-2014/constitutive-session/index.html",
+        "sha256": "047369660afcf404d6548914323072c72252e315c3c1adbee532c75959b712af",
+        "source_id": "lithuania--url-c79513e79b2046333808857f",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 2,
+          "party_code": "LSDP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "18.61%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "3"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-0ad749a4fbc0ff452b714cc5",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2009",
+    "event_id": "event-bb953811f91f048e4a055554",
+    "proceeding_id": null,
+    "candidate_or_list_label": "TT",
+    "candidate_source_id": "TT",
+    "row_kind": "party_list",
+    "original_party_label": "TT",
+    "original_party_code": "TT",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 12.22,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 2,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2009-2014/constitutive-session/index.html",
+        "sha256": "047369660afcf404d6548914323072c72252e315c3c1adbee532c75959b712af",
+        "source_id": "lithuania--url-c79513e79b2046333808857f",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 3,
+          "party_code": "TT"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "12.22%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-c319f542d6983424167798dd",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2009",
+    "event_id": "event-bb953811f91f048e4a055554",
+    "proceeding_id": null,
+    "candidate_or_list_label": "DP",
+    "candidate_source_id": "DP",
+    "row_kind": "party_list",
+    "original_party_label": "DP",
+    "original_party_code": "DP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 8.79,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2009-2014/constitutive-session/index.html",
+        "sha256": "047369660afcf404d6548914323072c72252e315c3c1adbee532c75959b712af",
+        "source_id": "lithuania--url-c79513e79b2046333808857f",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 4,
+          "party_code": "DP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "8.79%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-64b75ab7283f18629daf226b",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2009",
+    "event_id": "event-bb953811f91f048e4a055554",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LLRA",
+    "candidate_source_id": "LLRA",
+    "row_kind": "party_list",
+    "original_party_label": "LLRA",
+    "original_party_code": "LLRA",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 8.42,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2009-2014/constitutive-session/index.html",
+        "sha256": "047369660afcf404d6548914323072c72252e315c3c1adbee532c75959b712af",
+        "source_id": "lithuania--url-c79513e79b2046333808857f",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 5,
+          "party_code": "LLRA"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "8.42%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-f8580cd1ab2a93e303cc715a",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2009",
+    "event_id": "event-bb953811f91f048e4a055554",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LRLS",
+    "candidate_source_id": "LRLS",
+    "row_kind": "party_list",
+    "original_party_label": "LRLS",
+    "original_party_code": "LRLS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 7.36,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2009-2014/constitutive-session/index.html",
+        "sha256": "047369660afcf404d6548914323072c72252e315c3c1adbee532c75959b712af",
+        "source_id": "lithuania--url-c79513e79b2046333808857f",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 6,
+          "party_code": "LRLS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "7.36%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-1a50884bfa976662a0774e36",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2009",
+    "event_id": "event-bb953811f91f048e4a055554",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Other parties",
+    "candidate_source_id": "Other parties",
+    "row_kind": "aggregate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 17.74,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2009-2014/constitutive-session/index.html",
+        "sha256": "047369660afcf404d6548914323072c72252e315c3c1adbee532c75959b712af",
+        "source_id": "lithuania--url-c79513e79b2046333808857f",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 7,
+          "party_code": "Other parties"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "17.74%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": true
+    }
+  },
+  {
+    "result_row_id": "result-541578f4f003089d85bc67f4",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2014",
+    "event_id": "event-6678938eebd14c016864338d",
+    "proceeding_id": null,
+    "candidate_or_list_label": "TS-LKD",
+    "candidate_source_id": "TS-LKD",
+    "row_kind": "party_list",
+    "original_party_label": "TS-LKD",
+    "original_party_code": "TS-LKD",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 17.43,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 2,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2014-2019/constitutive-session/index.html",
+        "sha256": "cde154eb03df496819bcb3b164e0bbb2641cbf1414be0931b4fe042f83147562",
+        "source_id": "lithuania--url-1df990a1829097512c8e5d6d",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 1,
+          "party_code": "TS-LKD"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "17.43%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-794c5ac6245d8afe452ef736",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2014",
+    "event_id": "event-6678938eebd14c016864338d",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LSDP",
+    "candidate_source_id": "LSDP",
+    "row_kind": "party_list",
+    "original_party_label": "LSDP",
+    "original_party_code": "LSDP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 17.26,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 2,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2014-2019/constitutive-session/index.html",
+        "sha256": "cde154eb03df496819bcb3b164e0bbb2641cbf1414be0931b4fe042f83147562",
+        "source_id": "lithuania--url-1df990a1829097512c8e5d6d",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 2,
+          "party_code": "LSDP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "17.26%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-a77bd3865a7e106af9cfe3a7",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2014",
+    "event_id": "event-6678938eebd14c016864338d",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LRLS",
+    "candidate_source_id": "LRLS",
+    "row_kind": "party_list",
+    "original_party_label": "LRLS",
+    "original_party_code": "LRLS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 16.55,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 2,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2014-2019/constitutive-session/index.html",
+        "sha256": "cde154eb03df496819bcb3b164e0bbb2641cbf1414be0931b4fe042f83147562",
+        "source_id": "lithuania--url-1df990a1829097512c8e5d6d",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 3,
+          "party_code": "LRLS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "16.55%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-1c2ef1bc3a92faeface63ccd",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2014",
+    "event_id": "event-6678938eebd14c016864338d",
+    "proceeding_id": null,
+    "candidate_or_list_label": "TT",
+    "candidate_source_id": "TT",
+    "row_kind": "party_list",
+    "original_party_label": "TT",
+    "original_party_code": "TT",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 14.25,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 2,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2014-2019/constitutive-session/index.html",
+        "sha256": "cde154eb03df496819bcb3b164e0bbb2641cbf1414be0931b4fe042f83147562",
+        "source_id": "lithuania--url-1df990a1829097512c8e5d6d",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 4,
+          "party_code": "TT"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "14.25%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-aef8662b73ad558fd78b6df6",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2014",
+    "event_id": "event-6678938eebd14c016864338d",
+    "proceeding_id": null,
+    "candidate_or_list_label": "DP",
+    "candidate_source_id": "DP",
+    "row_kind": "party_list",
+    "original_party_label": "DP",
+    "original_party_code": "DP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 12.81,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2014-2019/constitutive-session/index.html",
+        "sha256": "cde154eb03df496819bcb3b164e0bbb2641cbf1414be0931b4fe042f83147562",
+        "source_id": "lithuania--url-1df990a1829097512c8e5d6d",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 5,
+          "party_code": "DP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "12.81%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-95433d5c4d73c420c8cf65e0",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2014",
+    "event_id": "event-6678938eebd14c016864338d",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LLRA (AWPL)",
+    "candidate_source_id": "LLRA (AWPL)",
+    "row_kind": "party_list",
+    "original_party_label": "LLRA (AWPL)",
+    "original_party_code": "LLRA (AWPL)",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 8.05,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2014-2019/constitutive-session/index.html",
+        "sha256": "cde154eb03df496819bcb3b164e0bbb2641cbf1414be0931b4fe042f83147562",
+        "source_id": "lithuania--url-1df990a1829097512c8e5d6d",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 6,
+          "party_code": "LLRA (AWPL)"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "8.05%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-b69d088add982ae1b66b16e9",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2014",
+    "event_id": "event-6678938eebd14c016864338d",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LVZS",
+    "candidate_source_id": "LVZS",
+    "row_kind": "party_list",
+    "original_party_label": "LVZS",
+    "original_party_code": "LVZS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 6.61,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2014-2019/constitutive-session/index.html",
+        "sha256": "cde154eb03df496819bcb3b164e0bbb2641cbf1414be0931b4fe042f83147562",
+        "source_id": "lithuania--url-1df990a1829097512c8e5d6d",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 7,
+          "party_code": "LVZS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "6.61%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-5e009121f1b9cdac42ba39cf",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2014",
+    "event_id": "event-6678938eebd14c016864338d",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Other parties",
+    "candidate_source_id": "Other parties",
+    "row_kind": "aggregate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 7.04,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2014-2019/constitutive-session/index.html",
+        "sha256": "cde154eb03df496819bcb3b164e0bbb2641cbf1414be0931b4fe042f83147562",
+        "source_id": "lithuania--url-1df990a1829097512c8e5d6d",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 8,
+          "party_code": "Other parties"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "7.04%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": true
+    }
+  },
+  {
+    "result_row_id": "result-e0d6d79bfa644c7352139949",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "TS-LKD",
+    "candidate_source_id": "TS-LKD",
+    "row_kind": "party_list",
+    "original_party_label": "TS-LKD",
+    "original_party_code": "TS-LKD",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 19.74,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 3,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 1,
+          "party_code": "TS-LKD"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "19.74%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "3"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-14c3db48e2aa48a5e4f14329",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LSDP",
+    "candidate_source_id": "LSDP",
+    "row_kind": "party_list",
+    "original_party_label": "LSDP",
+    "original_party_code": "LSDP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 15.88,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 2,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 2,
+          "party_code": "LSDP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "15.88%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-585dee67d04356d0d7ae16e0",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LVŽS",
+    "candidate_source_id": "LVŽS",
+    "row_kind": "party_list",
+    "original_party_label": "LVŽS",
+    "original_party_code": "LVŽS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 12.56,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 2,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 3,
+          "party_code": "LVŽS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "12.56%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-faf616e041535f26e498b6f4",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "DP",
+    "candidate_source_id": "DP",
+    "row_kind": "party_list",
+    "original_party_label": "DP",
+    "original_party_code": "DP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 8.99,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 4,
+          "party_code": "DP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "8.99%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-12f629e1ea5129abb5db5fb0",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LRLS",
+    "candidate_source_id": "LRLS",
+    "row_kind": "party_list",
+    "original_party_label": "LRLS",
+    "original_party_code": "LRLS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 6.59,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 5,
+          "party_code": "LRLS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "6.59%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-f5aece6647018d6228540818",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "VKM-AMT",
+    "candidate_source_id": "VKM-AMT",
+    "row_kind": "party_list",
+    "original_party_label": "VKM-AMT",
+    "original_party_code": "VKM-AMT",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 6.51,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 6,
+          "party_code": "VKM-AMT"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "6.51%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-e1e345663456ff061edd89a2",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LLRA-KŠS",
+    "candidate_source_id": "LLRA-KŠS",
+    "row_kind": "party_list",
+    "original_party_label": "LLRA-KŠS",
+    "original_party_code": "LLRA-KŠS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 5.5,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 7,
+          "party_code": "LLRA-KŠS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "5.50%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-3b1d4c7b9e1f90fbb69314cd",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LCP",
+    "candidate_source_id": "LCP",
+    "row_kind": "party_list",
+    "original_party_label": "LCP",
+    "original_party_code": "LCP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 5.13,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 8,
+          "party_code": "LCP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "5.13%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-dd76530a6870bf42fc61dcab",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "VKM-PRPJ",
+    "candidate_source_id": "VKM-PRPJ",
+    "row_kind": "party_list",
+    "original_party_label": "VKM-PRPJ",
+    "original_party_code": "VKM-PRPJ",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 4.0,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 9,
+          "party_code": "VKM-PRPJ"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "4.00%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-b62693b6fa89111c5099c4fb",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "VKM-VRSV",
+    "candidate_source_id": "VKM-VRSV",
+    "row_kind": "party_list",
+    "original_party_label": "VKM-VRSV",
+    "original_party_code": "VKM-VRSV",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 3.35,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 10,
+          "party_code": "VKM-VRSV"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "3.35%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-a5feebb7e71e8abb0875cb60",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "TT",
+    "candidate_source_id": "TT",
+    "row_kind": "party_list",
+    "original_party_label": "TT",
+    "original_party_code": "TT",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 2.73,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 11,
+          "party_code": "TT"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "2.73%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-951b8411bf8b5251bc012879",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LSDDP",
+    "candidate_source_id": "LSDDP",
+    "row_kind": "party_list",
+    "original_party_label": "LSDDP",
+    "original_party_code": "LSDDP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 2.36,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 12,
+          "party_code": "LSDDP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "2.36%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-0ae44423a395f214a018db00",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LŽP",
+    "candidate_source_id": "LŽP",
+    "row_kind": "party_list",
+    "original_party_label": "LŽP",
+    "original_party_code": "LŽP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 2.27,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 13,
+          "party_code": "LŽP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "2.27%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-55b777f75dd72aa358284879",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LLS",
+    "candidate_source_id": "LLS",
+    "row_kind": "party_list",
+    "original_party_label": "LLS",
+    "original_party_code": "LLS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 1.92,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 14,
+          "party_code": "LLS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "1.92%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-9e4b057458582967a6377f15",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Other parties",
+    "candidate_source_id": "Other parties",
+    "row_kind": "aggregate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 2.47,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 15,
+          "party_code": "Other parties"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "2.47%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": true
+    }
+  },
+  {
+    "result_row_id": "result-513991a00f9e6dbc199737aa",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "TS-LKD",
+    "candidate_source_id": "TS-LKD",
+    "row_kind": "party_list",
+    "original_party_label": "TS-LKD",
+    "original_party_code": "TS-LKD",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 21.33,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 3,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 1,
+          "party_code": "TS-LKD"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "21.33%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "3"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-3afa3bc52e4566be3acd98a1",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LSDP",
+    "candidate_source_id": "LSDP",
+    "row_kind": "party_list",
+    "original_party_label": "LSDP",
+    "original_party_code": "LSDP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 17.98,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 2,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 2,
+          "party_code": "LSDP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "17.98%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "2"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-b48d6ad91c28059cd2c82936",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LVŽS",
+    "candidate_source_id": "LVŽS",
+    "row_kind": "party_list",
+    "original_party_label": "LVŽS",
+    "original_party_code": "LVŽS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 9.13,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 3,
+          "party_code": "LVŽS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "9.13%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-6b2d6c664f0bd7da235c8d7f",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LP",
+    "candidate_source_id": "LP",
+    "row_kind": "party_list",
+    "original_party_label": "LP",
+    "original_party_code": "LP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 8.09,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 4,
+          "party_code": "LP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "8.09%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-73cc33dde7bad99bcc277f12",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "DSVL",
+    "candidate_source_id": "DSVL",
+    "row_kind": "party_list",
+    "original_party_label": "DSVL",
+    "original_party_code": "DSVL",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 5.95,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 5,
+          "party_code": "DSVL"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "5.95%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-5d007bdd2ae7f718a6fe8bf4",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LLRA-KŠS",
+    "candidate_source_id": "LLRA-KŠS",
+    "row_kind": "party_list",
+    "original_party_label": "LLRA-KŠS",
+    "original_party_code": "LLRA-KŠS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 5.78,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 6,
+          "party_code": "LLRA-KŠS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "5.78%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-ea57ad5a45835753b995b672",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LCP",
+    "candidate_source_id": "LCP",
+    "row_kind": "party_list",
+    "original_party_label": "LCP",
+    "original_party_code": "LCP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 5.45,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 7,
+          "party_code": "LCP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "5.45%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-ea77fd520e922dda2e304309",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LS",
+    "candidate_source_id": "LS",
+    "row_kind": "party_list",
+    "original_party_label": "LS",
+    "original_party_code": "LS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 5.41,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 8,
+          "party_code": "LS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "5.41%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "1"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-23014352d2ea38f4c8c5e3a9",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LRP",
+    "candidate_source_id": "LRP",
+    "row_kind": "party_list",
+    "original_party_label": "LRP",
+    "original_party_code": "LRP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 5.25,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 9,
+          "party_code": "LRP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "5.25%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-a10eb4e180ef80ae8f5bdb5d",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LŽP",
+    "candidate_source_id": "LŽP",
+    "row_kind": "party_list",
+    "original_party_label": "LŽP",
+    "original_party_code": "LŽP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 4.05,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 10,
+          "party_code": "LŽP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "4.05%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-d8f42c4bf7eb0f486dd08821",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "NS",
+    "candidate_source_id": "NS",
+    "row_kind": "party_list",
+    "original_party_label": "NS",
+    "original_party_code": "NS",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 3.79,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 11,
+          "party_code": "NS"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "3.79%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-1ecf85d3f21f32e0b7de8853",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "DP",
+    "candidate_source_id": "DP",
+    "row_kind": "party_list",
+    "original_party_label": "DP",
+    "original_party_code": "DP",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 1.66,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 12,
+          "party_code": "DP"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "1.66%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-0ea547d44fe7214ccd5867f0",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "LT",
+    "candidate_source_id": "LT",
+    "row_kind": "party_list",
+    "original_party_label": "LT",
+    "original_party_code": "LT",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 1.25,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 13,
+          "party_code": "LT"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "1.25%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": false
+    }
+  },
+  {
+    "result_row_id": "result-f2c736577873645fb88d5221",
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Other parties",
+    "candidate_source_id": "Other parties",
+    "row_kind": "aggregate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 4.88,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "tbody_row": 14,
+          "party_code": "Other parties"
+        }
+      }
+    ],
+    "raw": {
+      "cells": [
+        "4.88%",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "0"
+      ],
+      "aggregate_not_canonical_party": true
+    }
+  },
+  {
+    "result_row_id": "result-d22f76ba6d696a391891526f",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2008",
+    "event_id": "event-024364038286c634ce2006d9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Homeland Union – Lithuanian Christian Democrats",
+    "candidate_source_id": "Homeland Union – Lithuanian Christian Democrats",
+    "row_kind": "party_list",
+    "original_party_label": "Homeland Union – Lithuanian Christian Democrats",
+    "original_party_code": "Homeland Union – Lithuanian Christian Democrats",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 45,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/docs3/kad6/w6_istorija.show6-p_r=6111&p_k=2.html",
+        "sha256": "e2552e5402e047a7027e35877d4464ce1ac1e0bf095c3927e6cba5e5185482c6",
+        "source_id": "lithuania--url-0d848bb0e930987ce933d987",
+        "locator": {
+          "heading": "Seimas 2008–2012",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-1d4966feb27b03825246c067",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2008",
+    "event_id": "event-024364038286c634ce2006d9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Lithuanian Social Democratic Party",
+    "candidate_source_id": "Lithuanian Social Democratic Party",
+    "row_kind": "party_list",
+    "original_party_label": "Lithuanian Social Democratic Party",
+    "original_party_code": "Lithuanian Social Democratic Party",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 25,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/docs3/kad6/w6_istorija.show6-p_r=6111&p_k=2.html",
+        "sha256": "e2552e5402e047a7027e35877d4464ce1ac1e0bf095c3927e6cba5e5185482c6",
+        "source_id": "lithuania--url-0d848bb0e930987ce933d987",
+        "locator": {
+          "heading": "Seimas 2008–2012",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-3f6453fe56fc41d8d7a6411a",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2008",
+    "event_id": "event-024364038286c634ce2006d9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "National Revival Party",
+    "candidate_source_id": "National Revival Party",
+    "row_kind": "party_list",
+    "original_party_label": "National Revival Party",
+    "original_party_code": "National Revival Party",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 16,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/docs3/kad6/w6_istorija.show6-p_r=6111&p_k=2.html",
+        "sha256": "e2552e5402e047a7027e35877d4464ce1ac1e0bf095c3927e6cba5e5185482c6",
+        "source_id": "lithuania--url-0d848bb0e930987ce933d987",
+        "locator": {
+          "heading": "Seimas 2008–2012",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-35684e263cc9fb622562c02f",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2008",
+    "event_id": "event-024364038286c634ce2006d9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Order and Justice Party",
+    "candidate_source_id": "Order and Justice Party",
+    "row_kind": "party_list",
+    "original_party_label": "Order and Justice Party",
+    "original_party_code": "Order and Justice Party",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 15,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/docs3/kad6/w6_istorija.show6-p_r=6111&p_k=2.html",
+        "sha256": "e2552e5402e047a7027e35877d4464ce1ac1e0bf095c3927e6cba5e5185482c6",
+        "source_id": "lithuania--url-0d848bb0e930987ce933d987",
+        "locator": {
+          "heading": "Seimas 2008–2012",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-358fa442d51759c86d6b534a",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2008",
+    "event_id": "event-024364038286c634ce2006d9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Labour Party + Youth coalition",
+    "candidate_source_id": "Labour Party + Youth coalition",
+    "row_kind": "party_list",
+    "original_party_label": "Labour Party + Youth coalition",
+    "original_party_code": "Labour Party + Youth coalition",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 10,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/docs3/kad6/w6_istorija.show6-p_r=6111&p_k=2.html",
+        "sha256": "e2552e5402e047a7027e35877d4464ce1ac1e0bf095c3927e6cba5e5185482c6",
+        "source_id": "lithuania--url-0d848bb0e930987ce933d987",
+        "locator": {
+          "heading": "Seimas 2008–2012",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-bf9636c6122bb879fc025b8e",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2008",
+    "event_id": "event-024364038286c634ce2006d9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Liberals Movement",
+    "candidate_source_id": "Liberals Movement",
+    "row_kind": "party_list",
+    "original_party_label": "Liberals Movement",
+    "original_party_code": "Liberals Movement",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 11,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/docs3/kad6/w6_istorija.show6-p_r=6111&p_k=2.html",
+        "sha256": "e2552e5402e047a7027e35877d4464ce1ac1e0bf095c3927e6cba5e5185482c6",
+        "source_id": "lithuania--url-0d848bb0e930987ce933d987",
+        "locator": {
+          "heading": "Seimas 2008–2012",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-8ac1dee07b4884c4adb28bc8",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2008",
+    "event_id": "event-024364038286c634ce2006d9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Liberal and Centre Union",
+    "candidate_source_id": "Liberal and Centre Union",
+    "row_kind": "party_list",
+    "original_party_label": "Liberal and Centre Union",
+    "original_party_code": "Liberal and Centre Union",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 8,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/docs3/kad6/w6_istorija.show6-p_r=6111&p_k=2.html",
+        "sha256": "e2552e5402e047a7027e35877d4464ce1ac1e0bf095c3927e6cba5e5185482c6",
+        "source_id": "lithuania--url-0d848bb0e930987ce933d987",
+        "locator": {
+          "heading": "Seimas 2008–2012",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-08da5c0c529449350bbdfa26",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2008",
+    "event_id": "event-024364038286c634ce2006d9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Union of Farmers and People’s Parties",
+    "candidate_source_id": "Union of Farmers and People’s Parties",
+    "row_kind": "party_list",
+    "original_party_label": "Union of Farmers and People’s Parties",
+    "original_party_code": "Union of Farmers and People’s Parties",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 3,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/docs3/kad6/w6_istorija.show6-p_r=6111&p_k=2.html",
+        "sha256": "e2552e5402e047a7027e35877d4464ce1ac1e0bf095c3927e6cba5e5185482c6",
+        "source_id": "lithuania--url-0d848bb0e930987ce933d987",
+        "locator": {
+          "heading": "Seimas 2008–2012",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-0526f14340c465b2270a5aa8",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2008",
+    "event_id": "event-024364038286c634ce2006d9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Electoral Action of Poles in Lithuania",
+    "candidate_source_id": "Electoral Action of Poles in Lithuania",
+    "row_kind": "party_list",
+    "original_party_label": "Electoral Action of Poles in Lithuania",
+    "original_party_code": "Electoral Action of Poles in Lithuania",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 3,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/docs3/kad6/w6_istorija.show6-p_r=6111&p_k=2.html",
+        "sha256": "e2552e5402e047a7027e35877d4464ce1ac1e0bf095c3927e6cba5e5185482c6",
+        "source_id": "lithuania--url-0d848bb0e930987ce933d987",
+        "locator": {
+          "heading": "Seimas 2008–2012",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-c062421a838ccfb4b2abe00e",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2008",
+    "event_id": "event-024364038286c634ce2006d9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "New Union (Social Liberals)",
+    "candidate_source_id": "New Union (Social Liberals)",
+    "row_kind": "party_list",
+    "original_party_label": "New Union (Social Liberals)",
+    "original_party_code": "New Union (Social Liberals)",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/docs3/kad6/w6_istorija.show6-p_r=6111&p_k=2.html",
+        "sha256": "e2552e5402e047a7027e35877d4464ce1ac1e0bf095c3927e6cba5e5185482c6",
+        "source_id": "lithuania--url-0d848bb0e930987ce933d987",
+        "locator": {
+          "heading": "Seimas 2008–2012",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-44e8f96db5b3cec54d1202b6",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2008",
+    "event_id": "event-024364038286c634ce2006d9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "non-affiliated candidates",
+    "candidate_source_id": "non-affiliated candidates",
+    "row_kind": "aggregate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 4,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/docs3/kad6/w6_istorija.show6-p_r=6111&p_k=2.html",
+        "sha256": "e2552e5402e047a7027e35877d4464ce1ac1e0bf095c3927e6cba5e5185482c6",
+        "source_id": "lithuania--url-0d848bb0e930987ce933d987",
+        "locator": {
+          "heading": "Seimas 2008–2012",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-b4a3176235a7e3a8414c0a50",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2012",
+    "event_id": "event-4d903d92d04a8ec301133edd",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Lithuanian Social Democratic Party",
+    "candidate_source_id": "Lithuanian Social Democratic Party",
+    "row_kind": "party_list",
+    "original_party_label": "Lithuanian Social Democratic Party",
+    "original_party_code": "Lithuanian Social Democratic Party",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 37,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad7/kadencija2012.show7-p_r=15827&p_k=2.html",
+        "sha256": "6f8ed42353004b43592ad08a38fc0950e8ef4814fdcb09312faa1cff28922a06",
+        "source_id": "lithuania--url-1902f7b4d1a0c291dab7a264",
+        "locator": {
+          "heading": "Seimas 2012–2016",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-cd47434bcd6035538c24752c",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2012",
+    "event_id": "event-4d903d92d04a8ec301133edd",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Homeland Union - Lithuanian Christian Democrats",
+    "candidate_source_id": "Homeland Union - Lithuanian Christian Democrats",
+    "row_kind": "party_list",
+    "original_party_label": "Homeland Union - Lithuanian Christian Democrats",
+    "original_party_code": "Homeland Union - Lithuanian Christian Democrats",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 33,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad7/kadencija2012.show7-p_r=15827&p_k=2.html",
+        "sha256": "6f8ed42353004b43592ad08a38fc0950e8ef4814fdcb09312faa1cff28922a06",
+        "source_id": "lithuania--url-1902f7b4d1a0c291dab7a264",
+        "locator": {
+          "heading": "Seimas 2012–2016",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-50238765137774f12527fdc4",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2012",
+    "event_id": "event-4d903d92d04a8ec301133edd",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Labour Party",
+    "candidate_source_id": "Labour Party",
+    "row_kind": "party_list",
+    "original_party_label": "Labour Party",
+    "original_party_code": "Labour Party",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 29,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad7/kadencija2012.show7-p_r=15827&p_k=2.html",
+        "sha256": "6f8ed42353004b43592ad08a38fc0950e8ef4814fdcb09312faa1cff28922a06",
+        "source_id": "lithuania--url-1902f7b4d1a0c291dab7a264",
+        "locator": {
+          "heading": "Seimas 2012–2016",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-bfcb0af25d1436ca49dca32b",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2012",
+    "event_id": "event-4d903d92d04a8ec301133edd",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Party “Order and Justice”",
+    "candidate_source_id": "Party “Order and Justice”",
+    "row_kind": "party_list",
+    "original_party_label": "Party “Order and Justice”",
+    "original_party_code": "Party “Order and Justice”",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 11,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad7/kadencija2012.show7-p_r=15827&p_k=2.html",
+        "sha256": "6f8ed42353004b43592ad08a38fc0950e8ef4814fdcb09312faa1cff28922a06",
+        "source_id": "lithuania--url-1902f7b4d1a0c291dab7a264",
+        "locator": {
+          "heading": "Seimas 2012–2016",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-144ead65094a505d3962d460",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2012",
+    "event_id": "event-4d903d92d04a8ec301133edd",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Liberals Movement of the Republic of Lithuania",
+    "candidate_source_id": "Liberals Movement of the Republic of Lithuania",
+    "row_kind": "party_list",
+    "original_party_label": "Liberals Movement of the Republic of Lithuania",
+    "original_party_code": "Liberals Movement of the Republic of Lithuania",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 10,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad7/kadencija2012.show7-p_r=15827&p_k=2.html",
+        "sha256": "6f8ed42353004b43592ad08a38fc0950e8ef4814fdcb09312faa1cff28922a06",
+        "source_id": "lithuania--url-1902f7b4d1a0c291dab7a264",
+        "locator": {
+          "heading": "Seimas 2012–2016",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-2c05261ce114b84a10c13c37",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2012",
+    "event_id": "event-4d903d92d04a8ec301133edd",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Lithuanian Poles’ Electoral Action",
+    "candidate_source_id": "Lithuanian Poles’ Electoral Action",
+    "row_kind": "party_list",
+    "original_party_label": "Lithuanian Poles’ Electoral Action",
+    "original_party_code": "Lithuanian Poles’ Electoral Action",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 8,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad7/kadencija2012.show7-p_r=15827&p_k=2.html",
+        "sha256": "6f8ed42353004b43592ad08a38fc0950e8ef4814fdcb09312faa1cff28922a06",
+        "source_id": "lithuania--url-1902f7b4d1a0c291dab7a264",
+        "locator": {
+          "heading": "Seimas 2012–2016",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-89df3571803d75df024ab34c",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2012",
+    "event_id": "event-4d903d92d04a8ec301133edd",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Political Party “The Way of Courage”",
+    "candidate_source_id": "Political Party “The Way of Courage”",
+    "row_kind": "party_list",
+    "original_party_label": "Political Party “The Way of Courage”",
+    "original_party_code": "Political Party “The Way of Courage”",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 7,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad7/kadencija2012.show7-p_r=15827&p_k=2.html",
+        "sha256": "6f8ed42353004b43592ad08a38fc0950e8ef4814fdcb09312faa1cff28922a06",
+        "source_id": "lithuania--url-1902f7b4d1a0c291dab7a264",
+        "locator": {
+          "heading": "Seimas 2012–2016",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-1d4d6078c358505ef03aa0c5",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2012",
+    "event_id": "event-4d903d92d04a8ec301133edd",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Lithuanian Peasant and Greens Union",
+    "candidate_source_id": "Lithuanian Peasant and Greens Union",
+    "row_kind": "party_list",
+    "original_party_label": "Lithuanian Peasant and Greens Union",
+    "original_party_code": "Lithuanian Peasant and Greens Union",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad7/kadencija2012.show7-p_r=15827&p_k=2.html",
+        "sha256": "6f8ed42353004b43592ad08a38fc0950e8ef4814fdcb09312faa1cff28922a06",
+        "source_id": "lithuania--url-1902f7b4d1a0c291dab7a264",
+        "locator": {
+          "heading": "Seimas 2012–2016",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-80fc25579ebdecbcca336507",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2012",
+    "event_id": "event-4d903d92d04a8ec301133edd",
+    "proceeding_id": null,
+    "candidate_or_list_label": "self-nominated candidates",
+    "candidate_source_id": "self-nominated candidates",
+    "row_kind": "aggregate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 3,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad7/kadencija2012.show7-p_r=15827&p_k=2.html",
+        "sha256": "6f8ed42353004b43592ad08a38fc0950e8ef4814fdcb09312faa1cff28922a06",
+        "source_id": "lithuania--url-1902f7b4d1a0c291dab7a264",
+        "locator": {
+          "heading": "Seimas 2012–2016",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-135166f6f53f6be24f75ebf8",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2016",
+    "event_id": "event-0f5a78d003fd58aac869a7b5",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Lithuanian Farmers and Greens Union",
+    "candidate_source_id": "Lithuanian Farmers and Greens Union",
+    "row_kind": "party_list",
+    "original_party_label": "Lithuanian Farmers and Greens Union",
+    "original_party_code": "Lithuanian Farmers and Greens Union",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 54,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad8/files/k8.show-p_r=38243&p_k=2.html",
+        "sha256": "70b01ab72fa7d511968bc142374bbd394cb9c0242798106f035f8b65d95904a1",
+        "source_id": "lithuania--url-e5026ceccba3ed202f1b3c54",
+        "locator": {
+          "heading": "Seimas 2016–2020",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-8731577e2986b193cd8611b5",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2016",
+    "event_id": "event-0f5a78d003fd58aac869a7b5",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Homeland Union – Lithuanian Christian Democrats",
+    "candidate_source_id": "Homeland Union – Lithuanian Christian Democrats",
+    "row_kind": "party_list",
+    "original_party_label": "Homeland Union – Lithuanian Christian Democrats",
+    "original_party_code": "Homeland Union – Lithuanian Christian Democrats",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 31,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad8/files/k8.show-p_r=38243&p_k=2.html",
+        "sha256": "70b01ab72fa7d511968bc142374bbd394cb9c0242798106f035f8b65d95904a1",
+        "source_id": "lithuania--url-e5026ceccba3ed202f1b3c54",
+        "locator": {
+          "heading": "Seimas 2016–2020",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-72db5e6d83fb93872d2ea4a8",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2016",
+    "event_id": "event-0f5a78d003fd58aac869a7b5",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Lithuanian Social Democratic Party",
+    "candidate_source_id": "Lithuanian Social Democratic Party",
+    "row_kind": "party_list",
+    "original_party_label": "Lithuanian Social Democratic Party",
+    "original_party_code": "Lithuanian Social Democratic Party",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 17,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad8/files/k8.show-p_r=38243&p_k=2.html",
+        "sha256": "70b01ab72fa7d511968bc142374bbd394cb9c0242798106f035f8b65d95904a1",
+        "source_id": "lithuania--url-e5026ceccba3ed202f1b3c54",
+        "locator": {
+          "heading": "Seimas 2016–2020",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-72fac38856825d6e4f4fa99c",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2016",
+    "event_id": "event-0f5a78d003fd58aac869a7b5",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Liberals Movement of the Republic of Lithuania",
+    "candidate_source_id": "Liberals Movement of the Republic of Lithuania",
+    "row_kind": "party_list",
+    "original_party_label": "Liberals Movement of the Republic of Lithuania",
+    "original_party_code": "Liberals Movement of the Republic of Lithuania",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 14,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad8/files/k8.show-p_r=38243&p_k=2.html",
+        "sha256": "70b01ab72fa7d511968bc142374bbd394cb9c0242798106f035f8b65d95904a1",
+        "source_id": "lithuania--url-e5026ceccba3ed202f1b3c54",
+        "locator": {
+          "heading": "Seimas 2016–2020",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-ec03b4f746228c3c4e2d07e2",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2016",
+    "event_id": "event-0f5a78d003fd58aac869a7b5",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Electoral Action of Poles in Lithuania – Christian Families Alliance",
+    "candidate_source_id": "Electoral Action of Poles in Lithuania – Christian Families Alliance",
+    "row_kind": "party_list",
+    "original_party_label": "Electoral Action of Poles in Lithuania – Christian Families Alliance",
+    "original_party_code": "Electoral Action of Poles in Lithuania – Christian Families Alliance",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 8,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad8/files/k8.show-p_r=38243&p_k=2.html",
+        "sha256": "70b01ab72fa7d511968bc142374bbd394cb9c0242798106f035f8b65d95904a1",
+        "source_id": "lithuania--url-e5026ceccba3ed202f1b3c54",
+        "locator": {
+          "heading": "Seimas 2016–2020",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-37ded8056c965aa2979df55f",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2016",
+    "event_id": "event-0f5a78d003fd58aac869a7b5",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Party “Order and Justice”",
+    "candidate_source_id": "Party “Order and Justice”",
+    "row_kind": "party_list",
+    "original_party_label": "Party “Order and Justice”",
+    "original_party_code": "Party “Order and Justice”",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 8,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad8/files/k8.show-p_r=38243&p_k=2.html",
+        "sha256": "70b01ab72fa7d511968bc142374bbd394cb9c0242798106f035f8b65d95904a1",
+        "source_id": "lithuania--url-e5026ceccba3ed202f1b3c54",
+        "locator": {
+          "heading": "Seimas 2016–2020",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-1cb9b424e87dde32881e4e1d",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2016",
+    "event_id": "event-0f5a78d003fd58aac869a7b5",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Labour Party",
+    "candidate_source_id": "Labour Party",
+    "row_kind": "party_list",
+    "original_party_label": "Labour Party",
+    "original_party_code": "Labour Party",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 2,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad8/files/k8.show-p_r=38243&p_k=2.html",
+        "sha256": "70b01ab72fa7d511968bc142374bbd394cb9c0242798106f035f8b65d95904a1",
+        "source_id": "lithuania--url-e5026ceccba3ed202f1b3c54",
+        "locator": {
+          "heading": "Seimas 2016–2020",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-0d31f4805481813b1d02ddb3",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2016",
+    "event_id": "event-0f5a78d003fd58aac869a7b5",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Political Party “List of Lithuania”",
+    "candidate_source_id": "Political Party “List of Lithuania”",
+    "row_kind": "party_list",
+    "original_party_label": "Political Party “List of Lithuania”",
+    "original_party_code": "Political Party “List of Lithuania”",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad8/files/k8.show-p_r=38243&p_k=2.html",
+        "sha256": "70b01ab72fa7d511968bc142374bbd394cb9c0242798106f035f8b65d95904a1",
+        "source_id": "lithuania--url-e5026ceccba3ed202f1b3c54",
+        "locator": {
+          "heading": "Seimas 2016–2020",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-4ab5833b4ddc734e5b2aaf3f",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2016",
+    "event_id": "event-0f5a78d003fd58aac869a7b5",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Lithuanian Green Party",
+    "candidate_source_id": "Lithuanian Green Party",
+    "row_kind": "party_list",
+    "original_party_label": "Lithuanian Green Party",
+    "original_party_code": "Lithuanian Green Party",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad8/files/k8.show-p_r=38243&p_k=2.html",
+        "sha256": "70b01ab72fa7d511968bc142374bbd394cb9c0242798106f035f8b65d95904a1",
+        "source_id": "lithuania--url-e5026ceccba3ed202f1b3c54",
+        "locator": {
+          "heading": "Seimas 2016–2020",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-4bd663b9916118662436273b",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2016",
+    "event_id": "event-0f5a78d003fd58aac869a7b5",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Lithuanian Centre Party",
+    "candidate_source_id": "Lithuanian Centre Party",
+    "row_kind": "party_list",
+    "original_party_label": "Lithuanian Centre Party",
+    "original_party_code": "Lithuanian Centre Party",
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad8/files/k8.show-p_r=38243&p_k=2.html",
+        "sha256": "70b01ab72fa7d511968bc142374bbd394cb9c0242798106f035f8b65d95904a1",
+        "source_id": "lithuania--url-e5026ceccba3ed202f1b3c54",
+        "locator": {
+          "heading": "Seimas 2016–2020",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-c4401691c29876ad212ee0aa",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2016",
+    "event_id": "event-0f5a78d003fd58aac869a7b5",
+    "proceeding_id": null,
+    "candidate_or_list_label": "self-nominated candidates",
+    "candidate_source_id": "self-nominated candidates",
+    "row_kind": "aggregate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 4,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad8/files/k8.show-p_r=38243&p_k=2.html",
+        "sha256": "70b01ab72fa7d511968bc142374bbd394cb9c0242798106f035f8b65d95904a1",
+        "source_id": "lithuania--url-e5026ceccba3ed202f1b3c54",
+        "locator": {
+          "heading": "Seimas 2016–2020",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "grain": "whole-chamber seats across both electoral tiers; not list-vote seats"
+    }
+  },
+  {
+    "result_row_id": "result-af7bb62c7aa48d0ba68fc40d",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Homeland Union - Christian Democrats",
+    "candidate_source_id": "Homeland Union - Christian Democrats",
+    "row_kind": "party_list",
+    "original_party_label": "Homeland Union - Christian Democrats",
+    "original_party_code": "Homeland Union - Christian Democrats",
+    "votes": 292124,
+    "votes_status": "recorded",
+    "share": 24.86,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 50,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 1
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": 23,
+      "SMC_seats": 27,
+      "total_seats": 50,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-11f6c02402edb1408f0d6441",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Farmers and Greens Union",
+    "candidate_source_id": "Farmers and Greens Union",
+    "row_kind": "party_list",
+    "original_party_label": "Farmers and Greens Union",
+    "original_party_code": "Farmers and Greens Union",
+    "votes": 204791,
+    "votes_status": "recorded",
+    "share": 17.43,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 32,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 2
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": 16,
+      "SMC_seats": 16,
+      "total_seats": 32,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-e6c0f0efb09931640bd81dbd",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Labour Party",
+    "candidate_source_id": "Labour Party",
+    "row_kind": "party_list",
+    "original_party_label": "Labour Party",
+    "original_party_code": "Labour Party",
+    "votes": 110773,
+    "votes_status": "recorded",
+    "share": 9.43,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 10,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 3
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": 9,
+      "SMC_seats": 1,
+      "total_seats": 10,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-8a8e1ef2f6cf73fc1a9b3f88",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Social Democratic Party",
+    "candidate_source_id": "Social Democratic Party",
+    "row_kind": "party_list",
+    "original_party_label": "Social Democratic Party",
+    "original_party_code": "Social Democratic Party",
+    "votes": 108649,
+    "votes_status": "recorded",
+    "share": 9.25,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 13,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 4
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": 8,
+      "SMC_seats": 5,
+      "total_seats": 13,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-611e095e8df3c5b80126553a",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Freedom Party",
+    "candidate_source_id": "Freedom Party",
+    "row_kind": "party_list",
+    "original_party_label": "Freedom Party",
+    "original_party_code": "Freedom Party",
+    "votes": 107093,
+    "votes_status": "recorded",
+    "share": 9.11,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 11,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 5
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": 8,
+      "SMC_seats": 3,
+      "total_seats": 11,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-9d8513c9de14d8e7f79a94b3",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Liberal Movement",
+    "candidate_source_id": "Liberal Movement",
+    "row_kind": "party_list",
+    "original_party_label": "Liberal Movement",
+    "original_party_code": "Liberal Movement",
+    "votes": 79755,
+    "votes_status": "recorded",
+    "share": 6.79,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 13,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 6
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": 6,
+      "SMC_seats": 7,
+      "total_seats": 13,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-aba791575a6dcdc38b4e5c52",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Lithuanian Electoral Action of Poles – Christian Families Alliance",
+    "candidate_source_id": "Lithuanian Electoral Action of Poles – Christian Families Alliance",
+    "row_kind": "party_list",
+    "original_party_label": "Lithuanian Electoral Action of Poles – Christian Families Alliance",
+    "original_party_code": "Lithuanian Electoral Action of Poles – Christian Families Alliance",
+    "votes": 56386,
+    "votes_status": "recorded",
+    "share": 4.8,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 3,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 7
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": null,
+      "SMC_seats": 3,
+      "total_seats": 3,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-9ab1fa32d4d2d6042cd607dd",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Lithuanian Social Democratic Labor Party",
+    "candidate_source_id": "Lithuanian Social Democratic Labor Party",
+    "row_kind": "party_list",
+    "original_party_label": "Lithuanian Social Democratic Labor Party",
+    "original_party_code": "Lithuanian Social Democratic Labor Party",
+    "votes": 37197,
+    "votes_status": "recorded",
+    "share": 3.17,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 3,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 8
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": null,
+      "SMC_seats": 3,
+      "total_seats": 3,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-fd05130a6947f037c74ad3cf",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Lithuanian Centre Party",
+    "candidate_source_id": "Lithuanian Centre Party",
+    "row_kind": "party_list",
+    "original_party_label": "Lithuanian Centre Party",
+    "original_party_code": "Lithuanian Centre Party",
+    "votes": 26769,
+    "votes_status": "recorded",
+    "share": 2.28,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 9
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": null,
+      "SMC_seats": null,
+      "total_seats": 0,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-75ef7c54dffb34309bd582d6",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "National Association",
+    "candidate_source_id": "National Association",
+    "row_kind": "party_list",
+    "original_party_label": "National Association",
+    "original_party_code": "National Association",
+    "votes": 25098,
+    "votes_status": "recorded",
+    "share": 2.14,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 0,
+    "seats_status": "zero",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 10
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": null,
+      "SMC_seats": null,
+      "total_seats": 0,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-a2dec85e2c541e4a28f86e5c",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Freedom and Justice",
+    "candidate_source_id": "Freedom and Justice",
+    "row_kind": "party_list",
+    "original_party_label": "Freedom and Justice",
+    "original_party_code": "Freedom and Justice",
+    "votes": 23355,
+    "votes_status": "recorded",
+    "share": 1.99,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 11
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": null,
+      "SMC_seats": 1,
+      "total_seats": 1,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-cb55cbafcdabd4a66bf13822",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Green Party",
+    "candidate_source_id": "Green Party",
+    "row_kind": "party_list",
+    "original_party_label": "Green Party",
+    "original_party_code": "Green Party",
+    "votes": 19303,
+    "votes_status": "recorded",
+    "share": 1.64,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": 1,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 12
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": null,
+      "SMC_seats": 1,
+      "total_seats": 1,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-195a06606a462e914b500716",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Political Party ‘Way of Courage’",
+    "candidate_source_id": "Political Party ‘Way of Courage’",
+    "row_kind": "party_list",
+    "original_party_label": "Political Party ‘Way of Courage’",
+    "original_party_code": "Political Party ‘Way of Courage’",
+    "votes": 13337,
+    "votes_status": "recorded",
+    "share": 1.14,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 13
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": null,
+      "SMC_seats": null,
+      "total_seats": null,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-e6dc5598e92396f3635afc19",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Lithuania For All",
+    "candidate_source_id": "Lithuania For All",
+    "row_kind": "party_list",
+    "original_party_label": "Lithuania For All",
+    "original_party_code": "Lithuania For All",
+    "votes": 11352,
+    "votes_status": "recorded",
+    "share": 0.97,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 14
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": null,
+      "SMC_seats": null,
+      "total_seats": null,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-287a4ccbb80e517d3d710ee8",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Christian Union",
+    "candidate_source_id": "Christian Union",
+    "row_kind": "party_list",
+    "original_party_label": "Christian Union",
+    "original_party_code": "Christian Union",
+    "votes": 8825,
+    "votes_status": "recorded",
+    "share": 0.75,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 15
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": null,
+      "SMC_seats": null,
+      "total_seats": null,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-6fa121768ea7a9fa7dac73d8",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Union of Solidarity of Generations – Santalka for Lithuania",
+    "candidate_source_id": "Union of Solidarity of Generations – Santalka for Lithuania",
+    "row_kind": "party_list",
+    "original_party_label": "Union of Solidarity of Generations – Santalka for Lithuania",
+    "original_party_code": "Union of Solidarity of Generations – Santalka for Lithuania",
+    "votes": 5808,
+    "votes_status": "recorded",
+    "share": 0.49,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 16
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": null,
+      "SMC_seats": null,
+      "total_seats": null,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-0351811f268b99d9ab071a52",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "People's Party",
+    "candidate_source_id": "People's Party",
+    "row_kind": "party_list",
+    "original_party_label": "People's Party",
+    "original_party_code": "People's Party",
+    "votes": 2946,
+    "votes_status": "recorded",
+    "share": 0.25,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 17
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": null,
+      "SMC_seats": null,
+      "total_seats": null,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-d0ffb4f8fbba37fa87165701",
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": null,
+    "candidate_or_list_label": "Independents",
+    "candidate_source_id": "Independents",
+    "row_kind": "aggregate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": 4,
+    "seats_status": "recorded",
+    "elected_flag": null,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+        "sha256": "a895f0bb9be8d7686730f51d81aaf128b3a49d98ac7b0cdf158201d723ae28a9",
+        "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+        "locator": {
+          "pdf_page": 20,
+          "printed_page": 18,
+          "table": "Political Party or Coalition",
+          "row": 18
+        }
+      }
+    ],
+    "raw": {
+      "PR_seats": null,
+      "SMC_seats": 4,
+      "total_seats": 4,
+      "dash_policy": "NULL, not fabricated zero",
+      "votes_grain": "PR nationwide",
+      "seats_grain": "whole chamber; do not infer seat-vote ratio"
+    }
+  },
+  {
+    "result_row_id": "result-aba5f2db8a9d584157da8c94",
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-a9fb2536bc45cf80b6bbdcbc",
+    "candidate_or_list_label": "Ingrida Šimonytė",
+    "candidate_source_id": "Ingrida Šimonytė",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": 446719,
+    "votes_status": "recorded",
+    "share": 31.31,
+    "share_status": "disputed",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": false,
+    "evidence_status": "disputed",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 1
+        }
+      }
+    ],
+    "raw": {
+      "exact_label_preserved_even_if_typographic_error": true,
+      "source_header": "Percentage of valid votes cast",
+      "denominator_review": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected."
+    }
+  },
+  {
+    "result_row_id": "result-1da288a63af9231609710107",
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-a9fb2536bc45cf80b6bbdcbc",
+    "candidate_or_list_label": "Gitanas Nausėda",
+    "candidate_source_id": "Gitanas Nausėda",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": 441396,
+    "votes_status": "recorded",
+    "share": 30.94,
+    "share_status": "disputed",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": false,
+    "evidence_status": "disputed",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 2
+        }
+      }
+    ],
+    "raw": {
+      "exact_label_preserved_even_if_typographic_error": true,
+      "source_header": "Percentage of valid votes cast",
+      "denominator_review": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected."
+    }
+  },
+  {
+    "result_row_id": "result-45d3dd0fc5bf30deefb5e378",
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-a9fb2536bc45cf80b6bbdcbc",
+    "candidate_or_list_label": "Saulius Skvernelis",
+    "candidate_source_id": "Saulius Skvernelis",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": 279413,
+    "votes_status": "recorded",
+    "share": 19.58,
+    "share_status": "disputed",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": false,
+    "evidence_status": "disputed",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 3
+        }
+      }
+    ],
+    "raw": {
+      "exact_label_preserved_even_if_typographic_error": true,
+      "source_header": "Percentage of valid votes cast",
+      "denominator_review": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected."
+    }
+  },
+  {
+    "result_row_id": "result-a48ebf785efabbd96cd73498",
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-a9fb2536bc45cf80b6bbdcbc",
+    "candidate_or_list_label": "Vytenis Povilas Andriukaitis",
+    "candidate_source_id": "Vytenis Povilas Andriukaitis",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": 68118,
+    "votes_status": "recorded",
+    "share": 4.77,
+    "share_status": "disputed",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": false,
+    "evidence_status": "disputed",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 4
+        }
+      }
+    ],
+    "raw": {
+      "exact_label_preserved_even_if_typographic_error": true,
+      "source_header": "Percentage of valid votes cast",
+      "denominator_review": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected."
+    }
+  },
+  {
+    "result_row_id": "result-14fbd763e36613912e4b395b",
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-a9fb2536bc45cf80b6bbdcbc",
+    "candidate_or_list_label": "Arvydas Juzoaitis",
+    "candidate_source_id": "Arvydas Juzoaitis",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": 66957,
+    "votes_status": "recorded",
+    "share": 4.69,
+    "share_status": "disputed",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": false,
+    "evidence_status": "disputed",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 5
+        }
+      }
+    ],
+    "raw": {
+      "exact_label_preserved_even_if_typographic_error": true,
+      "source_header": "Percentage of valid votes cast",
+      "denominator_review": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected."
+    }
+  },
+  {
+    "result_row_id": "result-7b37e475f898fd03b744b4a3",
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-a9fb2536bc45cf80b6bbdcbc",
+    "candidate_or_list_label": "Valdemar Tomaševski",
+    "candidate_source_id": "Valdemar Tomaševski",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": 56476,
+    "votes_status": "recorded",
+    "share": 3.96,
+    "share_status": "disputed",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": false,
+    "evidence_status": "disputed",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 6
+        }
+      }
+    ],
+    "raw": {
+      "exact_label_preserved_even_if_typographic_error": true,
+      "source_header": "Percentage of valid votes cast",
+      "denominator_review": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected."
+    }
+  },
+  {
+    "result_row_id": "result-12809ffaeedf0590ebf45297",
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-a9fb2536bc45cf80b6bbdcbc",
+    "candidate_or_list_label": "Mindaugas Puidokas",
+    "candidate_source_id": "Mindaugas Puidokas",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": 37036,
+    "votes_status": "recorded",
+    "share": 2.6,
+    "share_status": "disputed",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": false,
+    "evidence_status": "disputed",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 7
+        }
+      }
+    ],
+    "raw": {
+      "exact_label_preserved_even_if_typographic_error": true,
+      "source_header": "Percentage of valid votes cast",
+      "denominator_review": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected."
+    }
+  },
+  {
+    "result_row_id": "result-007eb44c1286c7b45d1fd802",
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-a9fb2536bc45cf80b6bbdcbc",
+    "candidate_or_list_label": "Naglis Puteikis",
+    "candidate_source_id": "Naglis Puteikis",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": 11302,
+    "votes_status": "recorded",
+    "share": 0.79,
+    "share_status": "disputed",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": false,
+    "evidence_status": "disputed",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 8
+        }
+      }
+    ],
+    "raw": {
+      "exact_label_preserved_even_if_typographic_error": true,
+      "source_header": "Percentage of valid votes cast",
+      "denominator_review": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected."
+    }
+  },
+  {
+    "result_row_id": "result-6000f23b1c3f7275ce6b0d29",
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-a9fb2536bc45cf80b6bbdcbc",
+    "candidate_or_list_label": "Valentinas Mazuronis",
+    "candidate_source_id": "Valentinas Mazuronis",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": 9205,
+    "votes_status": "recorded",
+    "share": 0.65,
+    "share_status": "disputed",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": false,
+    "evidence_status": "disputed",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 9
+        }
+      }
+    ],
+    "raw": {
+      "exact_label_preserved_even_if_typographic_error": true,
+      "source_header": "Percentage of valid votes cast",
+      "denominator_review": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected."
+    }
+  },
+  {
+    "result_row_id": "result-7cabc592d9ae5be8bdbcbd02",
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-c14a7c59881496c1c079089c",
+    "candidate_or_list_label": "Gitanas Nausėda",
+    "candidate_source_id": "Gitanas Nausėda",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": 881496,
+    "votes_status": "recorded",
+    "share": 65.68,
+    "share_status": "disputed",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "disputed",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "Second Round",
+          "row": 1
+        }
+      }
+    ],
+    "raw": {
+      "exact_label_preserved_even_if_typographic_error": true,
+      "source_header": "Percentage of valid votes cast",
+      "denominator_review": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected."
+    }
+  },
+  {
+    "result_row_id": "result-6e12ddcd48dcd0611e327126",
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-c14a7c59881496c1c079089c",
+    "candidate_or_list_label": "Ingrida Šimonytė",
+    "candidate_source_id": "Ingrida Šimonytė",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": 443394,
+    "votes_status": "recorded",
+    "share": 33.04,
+    "share_status": "disputed",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": false,
+    "evidence_status": "disputed",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "Second Round",
+          "row": 2
+        }
+      }
+    ],
+    "raw": {
+      "exact_label_preserved_even_if_typographic_error": true,
+      "source_header": "Percentage of valid votes cast",
+      "denominator_review": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected."
+    }
+  },
+  {
+    "result_row_id": "result-381e84b314b4bf879188393b",
+    "office_id": "LT-lsa-4617e92357bd51e717734b81-M",
+    "history_key": "LT-lsa-4617e92357bd51e717734b81-M::SAV2019",
+    "event_id": "event-145918e7190b9b66d444ac76",
+    "proceeding_id": "proceeding-3f7abfc85c79985c06450c8b",
+    "candidate_or_list_label": "Visvaldas Matijošaitis",
+    "candidate_source_id": "Visvaldas Matijošaitis",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Visvaldas Matijošaitis"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "beveik 80",
+      "approximate_share_not_promoted": true,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-32d8fc87fa3b45fc4dc28244",
+    "office_id": "LT-lsa-9b51900bb432dfb132e5a413-M",
+    "history_key": "LT-lsa-9b51900bb432dfb132e5a413-M::SAV2019",
+    "event_id": "event-dbe31017989b3ae70769b15f",
+    "proceeding_id": "proceeding-f7a5192e40b37288f528d6b4",
+    "candidate_or_list_label": "Šarūnas Vaitkus",
+    "candidate_source_id": "Šarūnas Vaitkus",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 76,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Šarūnas Vaitkus"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "76",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-7ca8cb01561861d12831150c",
+    "office_id": "LT-lsa-7da848dbca7a50a3593dc043-M",
+    "history_key": "LT-lsa-7da848dbca7a50a3593dc043-M::SAV2019",
+    "event_id": "event-6b4f8aaf8f958c79022396f9",
+    "proceeding_id": "proceeding-87fe6a26b886eb7f46b1e3f9",
+    "candidate_or_list_label": "Zdislavas Palevičius",
+    "candidate_source_id": "Zdislavas Palevičius",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 75.06,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Zdislavas Palevičius"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "75,06",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-69779872ecdf9204ccd94e05",
+    "office_id": "LT-lsa-5ed71f409eb264bb6dfd727a-M",
+    "history_key": "LT-lsa-5ed71f409eb264bb6dfd727a-M::SAV2019",
+    "event_id": "event-92acb55dff0536d1b8b03870",
+    "proceeding_id": "proceeding-96a4a03681a448c5b92cf07e",
+    "candidate_or_list_label": "Živilė Pinskuvienė",
+    "candidate_source_id": "Živilė Pinskuvienė",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 70.81,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Živilė Pinskuvienė"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "70,81",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-ff658224b7199b4ce81f0f2a",
+    "office_id": "LT-lsa-ab0ef52353bf4d4eee179b45-M",
+    "history_key": "LT-lsa-ab0ef52353bf4d4eee179b45-M::SAV2019",
+    "event_id": "event-2ddbe8cb3e01bcf10d1d1475",
+    "proceeding_id": "proceeding-e6de2271ee81eed0f5edf6bf",
+    "candidate_or_list_label": "Ričardas Malinauskas",
+    "candidate_source_id": "Ričardas Malinauskas",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 70,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Ričardas Malinauskas"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "70",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-a7dcc6238f22af088382354b",
+    "office_id": "LT-lsa-6bbab511ccac6b18f1dbac22-M",
+    "history_key": "LT-lsa-6bbab511ccac6b18f1dbac22-M::SAV2019",
+    "event_id": "event-108a43bdbe7984f31fbb4211",
+    "proceeding_id": "proceeding-94c7802638150452e3ac9ec9",
+    "candidate_or_list_label": "Rimantas Klipčius",
+    "candidate_source_id": "Rimantas Klipčius",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 63.64,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Rimantas Klipčius"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "63,64",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-7fe42525f9f8747abcae0a6d",
+    "office_id": "LT-lsa-020b89cd0cb5735da3e73cee-M",
+    "history_key": "LT-lsa-020b89cd0cb5735da3e73cee-M::SAV2019",
+    "event_id": "event-eb76177f6fe933399e8083bb",
+    "proceeding_id": "proceeding-1ca8ac32ece7bf06c9234e90",
+    "candidate_or_list_label": "Antanas Černeckis",
+    "candidate_source_id": "Antanas Černeckis",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 62.53,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Antanas Černeckis"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "62,53",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-afd1e5b4732efc5296c6b1cf",
+    "office_id": "LT-lsa-eafc79549108de33472fc7a8-M",
+    "history_key": "LT-lsa-eafc79549108de33472fc7a8-M::SAV2019",
+    "event_id": "event-f881eb71416a69f1157bf805",
+    "proceeding_id": "proceeding-e7b1767071877bae5c4f2e6d",
+    "candidate_or_list_label": "Vitalijus Gailius",
+    "candidate_source_id": "Vitalijus Gailius",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 62,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Vitalijus Gailius"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "62",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-4b18a07611c1cc91207ac0f3",
+    "office_id": "LT-lsa-61244a98ecf1b6948da37f0c-M",
+    "history_key": "LT-lsa-61244a98ecf1b6948da37f0c-M::SAV2019",
+    "event_id": "event-52bce7faddeb10588588f894",
+    "proceeding_id": "proceeding-3eb446ff38ee5c0e98d23e83",
+    "candidate_or_list_label": "Vitalijus Mitrofanovas",
+    "candidate_source_id": "Vitalijus Mitrofanovas",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 60,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Vitalijus Mitrofanovas"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "60",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-fdaddc1e09d8e3ce57f5c252",
+    "office_id": "LT-lsa-4a5a1f93917a28e3abdb29e5-M",
+    "history_key": "LT-lsa-4a5a1f93917a28e3abdb29e5-M::SAV2019",
+    "event_id": "event-1fc7251706e07ae20f623b9e",
+    "proceeding_id": "proceeding-dd4c6f4581044d6cb4aeab12",
+    "candidate_or_list_label": "V. Makūnas",
+    "candidate_source_id": "V. Makūnas",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "V. Makūnas"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "beveik 60",
+      "approximate_share_not_promoted": true,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-c8b672804c3fea75a738079a",
+    "office_id": "LT-lsa-ac33a6ea903ac3ddb25723d2-M",
+    "history_key": "LT-lsa-ac33a6ea903ac3ddb25723d2-M::SAV2019",
+    "event_id": "event-1ab07c82b7886699a2544119",
+    "proceeding_id": "proceeding-28ac5db9e04740be813b97bc",
+    "candidate_or_list_label": "Mindaugas Sinkevičius",
+    "candidate_source_id": "Mindaugas Sinkevičius",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 57,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Mindaugas Sinkevičius"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "57",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-7e13a515b6b7f9f1dbec9d40",
+    "office_id": "LT-lsa-fd1f7e4a64386f082c7464c4-M",
+    "history_key": "LT-lsa-fd1f7e4a64386f082c7464c4-M::SAV2019",
+    "event_id": "event-c48fb9da4086dd9c60fe728c",
+    "proceeding_id": "proceeding-a340fb0972e6b0e5a4b60962",
+    "candidate_or_list_label": "Darius Jasaitis",
+    "candidate_source_id": "Darius Jasaitis",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Darius Jasaitis"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "apie 55",
+      "approximate_share_not_promoted": true,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-6c4763bd53879cc8927dda69",
+    "office_id": "LT-lsa-70d0a7ea9e5bd43d47db3666-M",
+    "history_key": "LT-lsa-70d0a7ea9e5bd43d47db3666-M::SAV2019",
+    "event_id": "event-6c325df4691739a6366a1313",
+    "proceeding_id": "proceeding-1f870b6c4701026df63f819b",
+    "candidate_or_list_label": "Nijolė Dirginčienė",
+    "candidate_source_id": "Nijolė Dirginčienė",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 54.8,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Nijolė Dirginčienė"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "54,8",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-a511bfff0c513350ed245e2d",
+    "office_id": "LT-lsa-4a0a277f22e3763c21adbd97-M",
+    "history_key": "LT-lsa-4a0a277f22e3763c21adbd97-M::SAV2019",
+    "event_id": "event-2aefb77d85e91ddf19033b9d",
+    "proceeding_id": "proceeding-406450a247cbe1c5c1ed0e51",
+    "candidate_or_list_label": "Marija Rekst",
+    "candidate_source_id": "Marija Rekst",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 52.48,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Marija Rekst"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "52,48",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-67d3387430ced7ba5b6db84a",
+    "office_id": "LT-lsa-9ba7e61990c37b0a8f072e4f-M",
+    "history_key": "LT-lsa-9ba7e61990c37b0a8f072e4f-M::SAV2019",
+    "event_id": "event-0a2e7eeb9c15f37d9f651cac",
+    "proceeding_id": "proceeding-ec776f2647c9a7559abe891c",
+    "candidate_or_list_label": "Vytautas Jareckas",
+    "candidate_source_id": "Vytautas Jareckas",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": null,
+    "share_status": "unknown",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Vytautas Jareckas"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "beveik 52",
+      "approximate_share_not_promoted": true,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-b5f98d462b31e31b7fc7ad81",
+    "office_id": "LT-lsa-952f03ad39e8e4878e0d9106-M",
+    "history_key": "LT-lsa-952f03ad39e8e4878e0d9106-M::SAV2019",
+    "event_id": "event-0c69cc4c06c0427231ad40f4",
+    "proceeding_id": "proceeding-84ad5958aab123972baf21c1",
+    "candidate_or_list_label": "Edgaras Pilypaitis",
+    "candidate_source_id": "Edgaras Pilypaitis",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 50.89,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Edgaras Pilypaitis"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "50,89",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-b80618f8a29c4054917e6145",
+    "office_id": "LT-lsa-d80e14b38b9936a6f5b8c2c0-M",
+    "history_key": "LT-lsa-d80e14b38b9936a6f5b8c2c0-M::SAV2019",
+    "event_id": "event-506133a9bd6f2e5344b29343",
+    "proceeding_id": "proceeding-6e7d388f3612fc29f3bb3391",
+    "candidate_or_list_label": "Artūras Visockas",
+    "candidate_source_id": "Artūras Visockas",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 52,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Artūras Visockas"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "52",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-69d0d393e4bbafb66ff0a629",
+    "office_id": "LT-lsa-34b428a72ccd7550bd2277d4-M",
+    "history_key": "LT-lsa-34b428a72ccd7550bd2277d4-M::SAV2019",
+    "event_id": "event-7d2a32c5cd74a2f1830e72b0",
+    "proceeding_id": "proceeding-3fc342e50591c94f46e50aa0",
+    "candidate_or_list_label": "Antanas Bezaras",
+    "candidate_source_id": "Antanas Bezaras",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 50.8,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Antanas Bezaras"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "50,8",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  },
+  {
+    "result_row_id": "result-11dff555f66d8b722a45f981",
+    "office_id": "LT-lsa-3b3c7641b01288497cc0e0c0-M",
+    "history_key": "LT-lsa-3b3c7641b01288497cc0e0c0-M::SAV2019",
+    "event_id": "event-ca427ecdbcd2ab20021f3c90",
+    "proceeding_id": "proceeding-1dfe8e305b7999827888d0c0",
+    "candidate_or_list_label": "Gintautas Gegužinskas",
+    "candidate_source_id": "Gintautas Gegužinskas",
+    "row_kind": "candidate",
+    "original_party_label": null,
+    "original_party_code": null,
+    "votes": null,
+    "votes_status": "unknown",
+    "share": 50.46,
+    "share_status": "recorded",
+    "share_unit": "percent_0_100",
+    "seats": null,
+    "seats_status": "unknown",
+    "elected_flag": true,
+    "evidence_status": "recorded",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Gintautas Gegužinskas"
+        }
+      }
+    ],
+    "raw": {
+      "share_text": "50,46",
+      "approximate_share_not_promoted": false,
+      "source_report_precision_not_certified_exact_percentage": true,
+      "winner_only": true
+    }
+  }
+]

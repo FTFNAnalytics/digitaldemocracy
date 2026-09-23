@@ -1,0 +1,87 @@
+[
+  {
+    "event_id": "event-3d387a9f91ad362847a8fb6a",
+    "check": "EP supplied seat sum",
+    "sum": 13,
+    "source_total": 13
+  },
+  {
+    "event_id": "event-bb953811f91f048e4a055554",
+    "check": "EP supplied seat sum",
+    "sum": 12,
+    "source_total": 12
+  },
+  {
+    "event_id": "event-6678938eebd14c016864338d",
+    "check": "EP supplied seat sum",
+    "sum": 11,
+    "source_total": 11
+  },
+  {
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "check": "EP supplied seat sum",
+    "sum": 11,
+    "source_total": 11
+  },
+  {
+    "event_id": "event-417276aa092699ecef86dfed",
+    "check": "EP supplied seat sum",
+    "sum": 11,
+    "source_total": 11
+  },
+  {
+    "event_id": "event-024364038286c634ce2006d9",
+    "check": "narrated election-seat subtotal",
+    "sum": 141,
+    "chamber_size_context": 141,
+    "complete_claim": true,
+    "no_balancing_rows_created": true
+  },
+  {
+    "event_id": "event-4d903d92d04a8ec301133edd",
+    "check": "narrated election-seat subtotal",
+    "sum": 139,
+    "chamber_size_context": 141,
+    "complete_claim": false,
+    "no_balancing_rows_created": true
+  },
+  {
+    "event_id": "event-0f5a78d003fd58aac869a7b5",
+    "check": "narrated election-seat subtotal",
+    "sum": 141,
+    "chamber_size_context": 141,
+    "complete_claim": true,
+    "no_balancing_rows_created": true
+  },
+  {
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "check": "PR votes",
+    "sum": 1133561,
+    "source_valid_votes": 1133561,
+    "total_ballots": 1175026
+  },
+  {
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-a9fb2536bc45cf80b6bbdcbc",
+    "check": "candidate votes vs valid",
+    "sum": 1416622,
+    "source_valid_votes": 1416622,
+    "total_ballots": 1426694,
+    "raw_invalid_text": "10,072",
+    "invalid_numeric": 10072,
+    "invalid_status": "recorded",
+    "share_sum": 99.28999999999999
+  },
+  {
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-c14a7c59881496c1c079089c",
+    "check": "candidate votes vs valid",
+    "sum": 1324890,
+    "source_valid_votes": 1324890,
+    "total_ballots": 1342094,
+    "raw_invalid_text": "1,7205",
+    "invalid_numeric": null,
+    "invalid_status": "disputed",
+    "share_sum": 98.72
+  }
+]

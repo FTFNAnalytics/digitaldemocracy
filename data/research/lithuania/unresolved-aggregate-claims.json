@@ -1,0 +1,321 @@
+[
+  {
+    "token": "LT-PRE2019-DENOMINATOR-result-aba5f2db8a9d584157da8c94",
+    "target_table": "result_row",
+    "target_key": {
+      "office_id": "LT-PRESIDENT",
+      "history_key": "LT-PRESIDENT::PRE2019",
+      "result_row_id": "result-aba5f2db8a9d584157da8c94"
+    },
+    "id_namespace": "cdd-observatory-v1",
+    "field": "share",
+    "supplied_value": 31.31,
+    "status": "disputed",
+    "reason": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected.",
+    "claims": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 1
+        }
+      }
+    ],
+    "replacement": null,
+    "decision": "needs_human_review",
+    "result_pointer": "/results/100"
+  },
+  {
+    "token": "LT-PRE2019-DENOMINATOR-result-1da288a63af9231609710107",
+    "target_table": "result_row",
+    "target_key": {
+      "office_id": "LT-PRESIDENT",
+      "history_key": "LT-PRESIDENT::PRE2019",
+      "result_row_id": "result-1da288a63af9231609710107"
+    },
+    "id_namespace": "cdd-observatory-v1",
+    "field": "share",
+    "supplied_value": 30.94,
+    "status": "disputed",
+    "reason": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected.",
+    "claims": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 2
+        }
+      }
+    ],
+    "replacement": null,
+    "decision": "needs_human_review",
+    "result_pointer": "/results/101"
+  },
+  {
+    "token": "LT-PRE2019-DENOMINATOR-result-45d3dd0fc5bf30deefb5e378",
+    "target_table": "result_row",
+    "target_key": {
+      "office_id": "LT-PRESIDENT",
+      "history_key": "LT-PRESIDENT::PRE2019",
+      "result_row_id": "result-45d3dd0fc5bf30deefb5e378"
+    },
+    "id_namespace": "cdd-observatory-v1",
+    "field": "share",
+    "supplied_value": 19.58,
+    "status": "disputed",
+    "reason": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected.",
+    "claims": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 3
+        }
+      }
+    ],
+    "replacement": null,
+    "decision": "needs_human_review",
+    "result_pointer": "/results/102"
+  },
+  {
+    "token": "LT-PRE2019-DENOMINATOR-result-a48ebf785efabbd96cd73498",
+    "target_table": "result_row",
+    "target_key": {
+      "office_id": "LT-PRESIDENT",
+      "history_key": "LT-PRESIDENT::PRE2019",
+      "result_row_id": "result-a48ebf785efabbd96cd73498"
+    },
+    "id_namespace": "cdd-observatory-v1",
+    "field": "share",
+    "supplied_value": 4.77,
+    "status": "disputed",
+    "reason": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected.",
+    "claims": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 4
+        }
+      }
+    ],
+    "replacement": null,
+    "decision": "needs_human_review",
+    "result_pointer": "/results/103"
+  },
+  {
+    "token": "LT-PRE2019-DENOMINATOR-result-14fbd763e36613912e4b395b",
+    "target_table": "result_row",
+    "target_key": {
+      "office_id": "LT-PRESIDENT",
+      "history_key": "LT-PRESIDENT::PRE2019",
+      "result_row_id": "result-14fbd763e36613912e4b395b"
+    },
+    "id_namespace": "cdd-observatory-v1",
+    "field": "share",
+    "supplied_value": 4.69,
+    "status": "disputed",
+    "reason": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected.",
+    "claims": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 5
+        }
+      }
+    ],
+    "replacement": null,
+    "decision": "needs_human_review",
+    "result_pointer": "/results/104"
+  },
+  {
+    "token": "LT-PRE2019-DENOMINATOR-result-7b37e475f898fd03b744b4a3",
+    "target_table": "result_row",
+    "target_key": {
+      "office_id": "LT-PRESIDENT",
+      "history_key": "LT-PRESIDENT::PRE2019",
+      "result_row_id": "result-7b37e475f898fd03b744b4a3"
+    },
+    "id_namespace": "cdd-observatory-v1",
+    "field": "share",
+    "supplied_value": 3.96,
+    "status": "disputed",
+    "reason": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected.",
+    "claims": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 6
+        }
+      }
+    ],
+    "replacement": null,
+    "decision": "needs_human_review",
+    "result_pointer": "/results/105"
+  },
+  {
+    "token": "LT-PRE2019-DENOMINATOR-result-12809ffaeedf0590ebf45297",
+    "target_table": "result_row",
+    "target_key": {
+      "office_id": "LT-PRESIDENT",
+      "history_key": "LT-PRESIDENT::PRE2019",
+      "result_row_id": "result-12809ffaeedf0590ebf45297"
+    },
+    "id_namespace": "cdd-observatory-v1",
+    "field": "share",
+    "supplied_value": 2.6,
+    "status": "disputed",
+    "reason": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected.",
+    "claims": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 7
+        }
+      }
+    ],
+    "replacement": null,
+    "decision": "needs_human_review",
+    "result_pointer": "/results/106"
+  },
+  {
+    "token": "LT-PRE2019-DENOMINATOR-result-007eb44c1286c7b45d1fd802",
+    "target_table": "result_row",
+    "target_key": {
+      "office_id": "LT-PRESIDENT",
+      "history_key": "LT-PRESIDENT::PRE2019",
+      "result_row_id": "result-007eb44c1286c7b45d1fd802"
+    },
+    "id_namespace": "cdd-observatory-v1",
+    "field": "share",
+    "supplied_value": 0.79,
+    "status": "disputed",
+    "reason": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected.",
+    "claims": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 8
+        }
+      }
+    ],
+    "replacement": null,
+    "decision": "needs_human_review",
+    "result_pointer": "/results/107"
+  },
+  {
+    "token": "LT-PRE2019-DENOMINATOR-result-6000f23b1c3f7275ce6b0d29",
+    "target_table": "result_row",
+    "target_key": {
+      "office_id": "LT-PRESIDENT",
+      "history_key": "LT-PRESIDENT::PRE2019",
+      "result_row_id": "result-6000f23b1c3f7275ce6b0d29"
+    },
+    "id_namespace": "cdd-observatory-v1",
+    "field": "share",
+    "supplied_value": 0.65,
+    "status": "disputed",
+    "reason": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected.",
+    "claims": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "First Round",
+          "row": 9
+        }
+      }
+    ],
+    "replacement": null,
+    "decision": "needs_human_review",
+    "result_pointer": "/results/108"
+  },
+  {
+    "token": "LT-PRE2019-DENOMINATOR-result-7cabc592d9ae5be8bdbcbd02",
+    "target_table": "result_row",
+    "target_key": {
+      "office_id": "LT-PRESIDENT",
+      "history_key": "LT-PRESIDENT::PRE2019",
+      "result_row_id": "result-7cabc592d9ae5be8bdbcbd02"
+    },
+    "id_namespace": "cdd-observatory-v1",
+    "field": "share",
+    "supplied_value": 65.68,
+    "status": "disputed",
+    "reason": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected.",
+    "claims": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "Second Round",
+          "row": 1
+        }
+      }
+    ],
+    "replacement": null,
+    "decision": "needs_human_review",
+    "result_pointer": "/results/109"
+  },
+  {
+    "token": "LT-PRE2019-DENOMINATOR-result-6e12ddcd48dcd0611e327126",
+    "target_table": "result_row",
+    "target_key": {
+      "office_id": "LT-PRESIDENT",
+      "history_key": "LT-PRESIDENT::PRE2019",
+      "result_row_id": "result-6e12ddcd48dcd0611e327126"
+    },
+    "id_namespace": "cdd-observatory-v1",
+    "field": "share",
+    "supplied_value": 33.04,
+    "status": "disputed",
+    "reason": "Percentages track total participants, not supplied valid votes; retain disputed. No alternate selected.",
+    "claims": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "table": "Second Round",
+          "row": 2
+        }
+      }
+    ],
+    "replacement": null,
+    "decision": "needs_human_review",
+    "result_pointer": "/results/110"
+  }
+]

@@ -1,0 +1,1296 @@
+{
+  "status": "draft_for_human_review",
+  "applied_changes": 0,
+  "rows": [
+    {
+      "office_id": "LT-lsa-61244a98ecf1b6948da37f0c-C",
+      "classification_json_pointer": "/classifications/0",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-61244a98ecf1b6948da37f0c-M",
+      "classification_json_pointer": "/classifications/1",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-a37cb57d1d21c13c7785d48c-C",
+      "classification_json_pointer": "/classifications/2",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-a37cb57d1d21c13c7785d48c-M",
+      "classification_json_pointer": "/classifications/3",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-3df3bd1f6878f586c8c56d39-C",
+      "classification_json_pointer": "/classifications/4",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-3df3bd1f6878f586c8c56d39-M",
+      "classification_json_pointer": "/classifications/5",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-5151ba6a411875432b99a995-C",
+      "classification_json_pointer": "/classifications/6",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-5151ba6a411875432b99a995-M",
+      "classification_json_pointer": "/classifications/7",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-70d0a7ea9e5bd43d47db3666-C",
+      "classification_json_pointer": "/classifications/8",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-70d0a7ea9e5bd43d47db3666-M",
+      "classification_json_pointer": "/classifications/9",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-9ba7e61990c37b0a8f072e4f-C",
+      "classification_json_pointer": "/classifications/10",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-9ba7e61990c37b0a8f072e4f-M",
+      "classification_json_pointer": "/classifications/11",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-ab0ef52353bf4d4eee179b45-C",
+      "classification_json_pointer": "/classifications/12",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-ab0ef52353bf4d4eee179b45-M",
+      "classification_json_pointer": "/classifications/13",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-c8b1b0002f3712a6351f5033-C",
+      "classification_json_pointer": "/classifications/14",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-c8b1b0002f3712a6351f5033-M",
+      "classification_json_pointer": "/classifications/15",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-25cdb23a5256618bd09a6a26-C",
+      "classification_json_pointer": "/classifications/16",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-25cdb23a5256618bd09a6a26-M",
+      "classification_json_pointer": "/classifications/17",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-ac33a6ea903ac3ddb25723d2-C",
+      "classification_json_pointer": "/classifications/18",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-ac33a6ea903ac3ddb25723d2-M",
+      "classification_json_pointer": "/classifications/19",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-eafc79549108de33472fc7a8-C",
+      "classification_json_pointer": "/classifications/20",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-eafc79549108de33472fc7a8-M",
+      "classification_json_pointer": "/classifications/21",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-a7f6e1ac7213d28d5c5798e0-C",
+      "classification_json_pointer": "/classifications/22",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-a7f6e1ac7213d28d5c5798e0-M",
+      "classification_json_pointer": "/classifications/23",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-7d17004fa09bf0d242147bb3-C",
+      "classification_json_pointer": "/classifications/24",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-7d17004fa09bf0d242147bb3-M",
+      "classification_json_pointer": "/classifications/25",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-8b0a44cd50b13b6c9b333169-C",
+      "classification_json_pointer": "/classifications/26",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-8b0a44cd50b13b6c9b333169-M",
+      "classification_json_pointer": "/classifications/27",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-4617e92357bd51e717734b81-C",
+      "classification_json_pointer": "/classifications/28",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-4617e92357bd51e717734b81-M",
+      "classification_json_pointer": "/classifications/29",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-4a5a1f93917a28e3abdb29e5-C",
+      "classification_json_pointer": "/classifications/30",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-4a5a1f93917a28e3abdb29e5-M",
+      "classification_json_pointer": "/classifications/31",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-86c5531b9462a95617480586-C",
+      "classification_json_pointer": "/classifications/32",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-86c5531b9462a95617480586-M",
+      "classification_json_pointer": "/classifications/33",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-5c116a270b32f7ca77ff7c26-C",
+      "classification_json_pointer": "/classifications/34",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-5c116a270b32f7ca77ff7c26-M",
+      "classification_json_pointer": "/classifications/35",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-ea75b499bb7168fb0e92352f-C",
+      "classification_json_pointer": "/classifications/36",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-ea75b499bb7168fb0e92352f-M",
+      "classification_json_pointer": "/classifications/37",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-5caa71df814d22658631829f-C",
+      "classification_json_pointer": "/classifications/38",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-5caa71df814d22658631829f-M",
+      "classification_json_pointer": "/classifications/39",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-209e7b36b381075381de7927-C",
+      "classification_json_pointer": "/classifications/40",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-209e7b36b381075381de7927-M",
+      "classification_json_pointer": "/classifications/41",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-34a2fc6f5e0178a1829c274a-C",
+      "classification_json_pointer": "/classifications/42",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-34a2fc6f5e0178a1829c274a-M",
+      "classification_json_pointer": "/classifications/43",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-255fa690d5cd5290eec34929-C",
+      "classification_json_pointer": "/classifications/44",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-255fa690d5cd5290eec34929-M",
+      "classification_json_pointer": "/classifications/45",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-c043419abfda0987ff03ad81-C",
+      "classification_json_pointer": "/classifications/46",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-c043419abfda0987ff03ad81-M",
+      "classification_json_pointer": "/classifications/47",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-d6298552d1885c933957c2cb-C",
+      "classification_json_pointer": "/classifications/48",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-d6298552d1885c933957c2cb-M",
+      "classification_json_pointer": "/classifications/49",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-b05533bac82daf8bfa953703-C",
+      "classification_json_pointer": "/classifications/50",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-b05533bac82daf8bfa953703-M",
+      "classification_json_pointer": "/classifications/51",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-c0920215ff8130e91f21f476-C",
+      "classification_json_pointer": "/classifications/52",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-c0920215ff8130e91f21f476-M",
+      "classification_json_pointer": "/classifications/53",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-fd1f7e4a64386f082c7464c4-C",
+      "classification_json_pointer": "/classifications/54",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-fd1f7e4a64386f082c7464c4-M",
+      "classification_json_pointer": "/classifications/55",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-97de1649eece489af8eead5a-C",
+      "classification_json_pointer": "/classifications/56",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-97de1649eece489af8eead5a-M",
+      "classification_json_pointer": "/classifications/57",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-7eba97ace8f6b09a1558ca61-C",
+      "classification_json_pointer": "/classifications/58",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-7eba97ace8f6b09a1558ca61-M",
+      "classification_json_pointer": "/classifications/59",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-9b51900bb432dfb132e5a413-C",
+      "classification_json_pointer": "/classifications/60",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-9b51900bb432dfb132e5a413-M",
+      "classification_json_pointer": "/classifications/61",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-626d9757333c46171af3ca13-C",
+      "classification_json_pointer": "/classifications/62",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-626d9757333c46171af3ca13-M",
+      "classification_json_pointer": "/classifications/63",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-c14c28740e06662bb42abaae-C",
+      "classification_json_pointer": "/classifications/64",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-c14c28740e06662bb42abaae-M",
+      "classification_json_pointer": "/classifications/65",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-3b3c7641b01288497cc0e0c0-C",
+      "classification_json_pointer": "/classifications/66",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-3b3c7641b01288497cc0e0c0-M",
+      "classification_json_pointer": "/classifications/67",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-6d74b5aa708195f8f43b1c86-C",
+      "classification_json_pointer": "/classifications/68",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-6d74b5aa708195f8f43b1c86-M",
+      "classification_json_pointer": "/classifications/69",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-b07e58fb52f78307281708a1-C",
+      "classification_json_pointer": "/classifications/70",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-b07e58fb52f78307281708a1-M",
+      "classification_json_pointer": "/classifications/71",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-7f640f99d3b6ab5802b3763e-C",
+      "classification_json_pointer": "/classifications/72",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-7f640f99d3b6ab5802b3763e-M",
+      "classification_json_pointer": "/classifications/73",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-20f27e897b0cc59e47c2cadc-C",
+      "classification_json_pointer": "/classifications/74",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-20f27e897b0cc59e47c2cadc-M",
+      "classification_json_pointer": "/classifications/75",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-020b89cd0cb5735da3e73cee-C",
+      "classification_json_pointer": "/classifications/76",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-020b89cd0cb5735da3e73cee-M",
+      "classification_json_pointer": "/classifications/77",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-6c0c69314d449fbc3683457a-C",
+      "classification_json_pointer": "/classifications/78",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-6c0c69314d449fbc3683457a-M",
+      "classification_json_pointer": "/classifications/79",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-8608c301a73a3cdf9b4c989a-C",
+      "classification_json_pointer": "/classifications/80",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-8608c301a73a3cdf9b4c989a-M",
+      "classification_json_pointer": "/classifications/81",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-952f03ad39e8e4878e0d9106-C",
+      "classification_json_pointer": "/classifications/82",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-952f03ad39e8e4878e0d9106-M",
+      "classification_json_pointer": "/classifications/83",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-7da848dbca7a50a3593dc043-C",
+      "classification_json_pointer": "/classifications/84",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-7da848dbca7a50a3593dc043-M",
+      "classification_json_pointer": "/classifications/85",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-d80e14b38b9936a6f5b8c2c0-C",
+      "classification_json_pointer": "/classifications/86",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-d80e14b38b9936a6f5b8c2c0-M",
+      "classification_json_pointer": "/classifications/87",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-34b428a72ccd7550bd2277d4-C",
+      "classification_json_pointer": "/classifications/88",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-34b428a72ccd7550bd2277d4-M",
+      "classification_json_pointer": "/classifications/89",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-310cee523c0dd4085c828e08-C",
+      "classification_json_pointer": "/classifications/90",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-310cee523c0dd4085c828e08-M",
+      "classification_json_pointer": "/classifications/91",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-e5061a6791000dd2352d4b2f-C",
+      "classification_json_pointer": "/classifications/92",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-e5061a6791000dd2352d4b2f-M",
+      "classification_json_pointer": "/classifications/93",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-5ed71f409eb264bb6dfd727a-C",
+      "classification_json_pointer": "/classifications/94",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-5ed71f409eb264bb6dfd727a-M",
+      "classification_json_pointer": "/classifications/95",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-6bbab511ccac6b18f1dbac22-C",
+      "classification_json_pointer": "/classifications/96",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-6bbab511ccac6b18f1dbac22-M",
+      "classification_json_pointer": "/classifications/97",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-ba767bcc6a05c047e6f72ff5-C",
+      "classification_json_pointer": "/classifications/98",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-ba767bcc6a05c047e6f72ff5-M",
+      "classification_json_pointer": "/classifications/99",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-efd08c984b832d4133488b62-C",
+      "classification_json_pointer": "/classifications/100",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-efd08c984b832d4133488b62-M",
+      "classification_json_pointer": "/classifications/101",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-193ebf889e0faaebe264cf0a-C",
+      "classification_json_pointer": "/classifications/102",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-193ebf889e0faaebe264cf0a-M",
+      "classification_json_pointer": "/classifications/103",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-ec8c492c997798adf11aa838-C",
+      "classification_json_pointer": "/classifications/104",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-ec8c492c997798adf11aa838-M",
+      "classification_json_pointer": "/classifications/105",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-2142387c013aa6cc2d8768d2-C",
+      "classification_json_pointer": "/classifications/106",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-2142387c013aa6cc2d8768d2-M",
+      "classification_json_pointer": "/classifications/107",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-f613b260d6a372a594276240-C",
+      "classification_json_pointer": "/classifications/108",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-f613b260d6a372a594276240-M",
+      "classification_json_pointer": "/classifications/109",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-36a5f7a0976fa7cc09eb3e71-C",
+      "classification_json_pointer": "/classifications/110",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-36a5f7a0976fa7cc09eb3e71-M",
+      "classification_json_pointer": "/classifications/111",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-4541300e5f5db22203b27e48-C",
+      "classification_json_pointer": "/classifications/112",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-4541300e5f5db22203b27e48-M",
+      "classification_json_pointer": "/classifications/113",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-4a0a277f22e3763c21adbd97-C",
+      "classification_json_pointer": "/classifications/114",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-4a0a277f22e3763c21adbd97-M",
+      "classification_json_pointer": "/classifications/115",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-bf558bf41011d434e6c1b84e-C",
+      "classification_json_pointer": "/classifications/116",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-bf558bf41011d434e6c1b84e-M",
+      "classification_json_pointer": "/classifications/117",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-e784b378f434904980012d7d-C",
+      "classification_json_pointer": "/classifications/118",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-lsa-e784b378f434904980012d7d-M",
+      "classification_json_pointer": "/classifications/119",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-TERRITORIAL-ID",
+        "LT-MAYOR-LAW"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-SEIMAS",
+      "classification_json_pointer": "/classifications/120",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-SEIMAS-GRAIN"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-PRESIDENT",
+      "classification_json_pointer": "/classifications/121",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-PRESIDENT-DENOMINATOR"
+      ],
+      "proposed_changes": []
+    },
+    {
+      "office_id": "LT-EP",
+      "classification_json_pointer": "/classifications/122",
+      "classification_sha256": "43933567bfa84c95d354e4b1eb9a02d43123b3a802b057eca319a0b6b1fe2e39",
+      "categories": [
+        "LT-HISTORY",
+        "LT-EP-DETAIL"
+      ],
+      "proposed_changes": []
+    }
+  ]
+}

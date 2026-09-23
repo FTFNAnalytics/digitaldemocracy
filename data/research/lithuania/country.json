@@ -1,0 +1,28 @@
+{
+  "country_id": "lithuania",
+  "country_code": "LT",
+  "name": "Lietuva",
+  "polity_kind": "sovereign_country",
+  "region_id": "europe",
+  "coverage_status": "partial",
+  "screening_as_of_label": "2026-09-21",
+  "research_snapshot_label": "2026-09-21; underlying source dates differ",
+  "research_coverage_complete": false,
+  "current_office_register_complete_against_LSA_60_roster": true,
+  "historical_office_universe_complete": false,
+  "historic_coverage_complete": false,
+  "alert_window": {
+    "from": "2026-09-08",
+    "through": "2028-03-08",
+    "affects": "upcoming alerts only"
+  },
+  "notes": [
+    "123 current offices:60 councils+60 direct mayors+Seimas+direct president+EP delegation.",
+    "0 historical office records recovered is NOT evidence that no abolished bodies existed; temporal register and merger research remain open.",
+    "Mayor direct-election first-cycle context2015; current executive role differs from pre2023 council-member mayor. Do not backfill popular contests before2015.",
+    "30 historic events,130 result claims; mayor coverage19winner observations only,0 complete mayoral vectors; no council result vectors recovered.",
+    "Presidential2019 candidate votes retained;11percentages disputed; raw malformed invalid ballot claim retained.",
+    "No appointed county governor, deputy mayor, director, prime minister, cabinet or seniunija body instantiated."
+  ],
+  "applied_changes": 0
+}

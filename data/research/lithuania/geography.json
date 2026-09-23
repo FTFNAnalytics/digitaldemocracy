@@ -1,0 +1,1699 @@
+[
+  {
+    "geography_id": "LT",
+    "name": "Lietuva",
+    "parent_geography_id": null,
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/e-seimas.lrs.lt/rs/legalact/TAD/TAIS.21892/index.html",
+        "sha256": "72a2dca3aaa3255c014ef5f1a8fc3fd9db3b7e39fbc74250a7d27866e698516a",
+        "source_id": "lithuania--url-4a857000b51090af2c4997d2",
+        "locator": {
+          "section": "Preamble"
+        }
+      }
+    ]
+  },
+  {
+    "geography_id": "LT-lsa-61244a98ecf1b6948da37f0c",
+    "name": "Akmenės r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 2,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.akmene.lt/",
+      "county_label": "Šiaulių",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-a37cb57d1d21c13c7785d48c",
+    "name": "Alytaus m.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 3,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.ams.lt/",
+      "county_label": "Alytaus",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-3df3bd1f6878f586c8c56d39",
+    "name": "Alytaus r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 4,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.arsa.lt/",
+      "county_label": "Alytaus",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-5151ba6a411875432b99a995",
+    "name": "Anykščių r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 5,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.anyksciai.lt/",
+      "county_label": "Utenos",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-70d0a7ea9e5bd43d47db3666",
+    "name": "Birštono",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 6,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.birstonas.lt/",
+      "county_label": "Kauno",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-9ba7e61990c37b0a8f072e4f",
+    "name": "Biržų r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 7,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.birzai.lt/",
+      "county_label": "Panevėžio",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-ab0ef52353bf4d4eee179b45",
+    "name": "Druskininkų",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 8,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "https://druskininkusavivaldybe.lt/",
+      "county_label": "Alytaus",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-c8b1b0002f3712a6351f5033",
+    "name": "Elektrėnų",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 9,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.elektrenai.lt/",
+      "county_label": "Vilniaus",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-25cdb23a5256618bd09a6a26",
+    "name": "Ignalinos r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 10,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.ignalina.lt/",
+      "county_label": "Utenos",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-ac33a6ea903ac3ddb25723d2",
+    "name": "Jonavos r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 11,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.jonava.lt/",
+      "county_label": "Kauno",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-eafc79549108de33472fc7a8",
+    "name": "Joniškio r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 12,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.joniskis.lt/",
+      "county_label": "Šiaulių",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-a7f6e1ac7213d28d5c5798e0",
+    "name": "Jurbarko r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 13,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.jurbarkas.lt/",
+      "county_label": "Tauragės",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-7d17004fa09bf0d242147bb3",
+    "name": "Kaišiadorių r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 14,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.kaisiadorys.lt/",
+      "county_label": "Kauno",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-8b0a44cd50b13b6c9b333169",
+    "name": "Kalvarijos",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 15,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.kalvarija.lt/",
+      "county_label": "Marijampolės",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-4617e92357bd51e717734b81",
+    "name": "Kauno m.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 16,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.kaunas.lt/",
+      "county_label": "Kauno",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-4a5a1f93917a28e3abdb29e5",
+    "name": "Kauno r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 17,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.krs.lt/",
+      "county_label": "Kauno",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-86c5531b9462a95617480586",
+    "name": "Kazlų Rūdos",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 18,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.kazluruda.lt/",
+      "county_label": "Marijampolės",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-5c116a270b32f7ca77ff7c26",
+    "name": "Kelmės r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 19,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.kelme.lt/",
+      "county_label": "Šiaulių",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-ea75b499bb7168fb0e92352f",
+    "name": "Kėdainių r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 20,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.kedainiai.lt/",
+      "county_label": "Kauno",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-5caa71df814d22658631829f",
+    "name": "Klaipėdos m.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 21,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.klaipeda.lt/",
+      "county_label": "Klaipėdos",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-209e7b36b381075381de7927",
+    "name": "Klaipėdos r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 22,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.klaipedos-r.lt/",
+      "county_label": "Klaipėdos",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-34a2fc6f5e0178a1829c274a",
+    "name": "Kretingos r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 23,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.kretinga.lt/",
+      "county_label": "Klaipėdos",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-255fa690d5cd5290eec34929",
+    "name": "Kupiškio r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 24,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.kupiskis.lt/",
+      "county_label": "Panevėžio",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-c043419abfda0987ff03ad81",
+    "name": "Lazdijų r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 25,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.lazdijai.lt/",
+      "county_label": "Alytaus",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-d6298552d1885c933957c2cb",
+    "name": "Marijampolės",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 26,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.marijampole.lt/",
+      "county_label": "Marijampolės",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-b05533bac82daf8bfa953703",
+    "name": "Mažeikių r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 27,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.mazeikiai.lt/",
+      "county_label": "Telšių",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-c0920215ff8130e91f21f476",
+    "name": "Molėtų r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 28,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.moletai.lt/",
+      "county_label": "Utenos",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-fd1f7e4a64386f082c7464c4",
+    "name": "Neringos",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 29,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.neringa.lt/",
+      "county_label": "Klaipėdos",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-97de1649eece489af8eead5a",
+    "name": "Pagėgių",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 30,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.pagegiai.lt/",
+      "county_label": "Tauragės",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-7eba97ace8f6b09a1558ca61",
+    "name": "Pakruojo r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 31,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.pakruojis.lt/",
+      "county_label": "Šiaulių",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-9b51900bb432dfb132e5a413",
+    "name": "Palangos m.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 32,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.palanga.lt/",
+      "county_label": "Klaipėdos",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-626d9757333c46171af3ca13",
+    "name": "Panevėžio m.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 33,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.panevezys.lt/",
+      "county_label": "Panevėžio",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-c14c28740e06662bb42abaae",
+    "name": "Panevėžio r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 34,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.panrs.lt/",
+      "county_label": "Panevėžio",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-3b3c7641b01288497cc0e0c0",
+    "name": "Pasvalio r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 35,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.pasvalys.lt/",
+      "county_label": "Panevėžio",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-6d74b5aa708195f8f43b1c86",
+    "name": "Plungės r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 36,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.plunge.lt/",
+      "county_label": "Telšių",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-b07e58fb52f78307281708a1",
+    "name": "Prienų r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 37,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.prienai.lt/",
+      "county_label": "Kauno",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-7f640f99d3b6ab5802b3763e",
+    "name": "Radviliškio r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 38,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.radviliskis.lt/",
+      "county_label": "Šiaulių",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-20f27e897b0cc59e47c2cadc",
+    "name": "Raseinių r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 39,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.raseiniai.lt/",
+      "county_label": "Kauno",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-020b89cd0cb5735da3e73cee",
+    "name": "Rietavo",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 40,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.rietavas.lt/",
+      "county_label": "Telšių",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-6c0c69314d449fbc3683457a",
+    "name": "Rokiškio r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 41,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.rokiskis.lt/",
+      "county_label": "Panevėžio",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-8608c301a73a3cdf9b4c989a",
+    "name": "Skuodo r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 42,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.skuodas.lt/",
+      "county_label": "Klaipėdos",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-952f03ad39e8e4878e0d9106",
+    "name": "Šakių r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 43,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.sakiai.lt/",
+      "county_label": "Marijampolės",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-7da848dbca7a50a3593dc043",
+    "name": "Šalčininkų r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 44,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.salcininkai.lt/",
+      "county_label": "Vilniaus",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-d80e14b38b9936a6f5b8c2c0",
+    "name": "Šiaulių m.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 45,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.siauliai.lt/",
+      "county_label": "Šiaulių",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-34b428a72ccd7550bd2277d4",
+    "name": "Šiaulių r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 46,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.siauliuraj.lt/",
+      "county_label": "Šiaulių",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-310cee523c0dd4085c828e08",
+    "name": "Šilalės r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 47,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.silale.lt/",
+      "county_label": "Tauragės",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-e5061a6791000dd2352d4b2f",
+    "name": "Šilutės r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 48,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.silute.lt/",
+      "county_label": "Klaipėdos",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-5ed71f409eb264bb6dfd727a",
+    "name": "Širvintų r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 49,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.sirvintos.lt/",
+      "county_label": "Vilniaus",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-6bbab511ccac6b18f1dbac22",
+    "name": "Švenčionių r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 50,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.svencionys.lt/",
+      "county_label": "Vilniaus",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-ba767bcc6a05c047e6f72ff5",
+    "name": "Tauragės r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 51,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.taurage.lt/",
+      "county_label": "Tauragės",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-efd08c984b832d4133488b62",
+    "name": "Telšių r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 52,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.telsiai.lt/",
+      "county_label": "Telšių",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-193ebf889e0faaebe264cf0a",
+    "name": "Trakų r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 53,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.trakai.lt/",
+      "county_label": "Vilniaus",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-ec8c492c997798adf11aa838",
+    "name": "Ukmergės r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 54,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.ukmerge.lt/",
+      "county_label": "Vilniaus",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-2142387c013aa6cc2d8768d2",
+    "name": "Utenos r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 55,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.utena.lt/",
+      "county_label": "Utenos",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-f613b260d6a372a594276240",
+    "name": "Varėnos r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 56,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.varena.lt/",
+      "county_label": "Alytaus",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-36a5f7a0976fa7cc09eb3e71",
+    "name": "Vilkaviškio r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 57,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.vilkaviskis.lt/",
+      "county_label": "Marijampolės",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-4541300e5f5db22203b27e48",
+    "name": "Vilniaus m.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 58,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.vilnius.lt/",
+      "county_label": "Vilniaus",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-4a0a277f22e3763c21adbd97",
+    "name": "Vilniaus r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 59,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.vrsa.lt/",
+      "county_label": "Vilniaus",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-bf558bf41011d434e6c1b84e",
+    "name": "Visagino m.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 60,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.visaginas.lt/",
+      "county_label": "Utenos",
+      "source_name_abbreviated": true
+    }
+  },
+  {
+    "geography_id": "LT-lsa-e784b378f434904980012d7d",
+    "name": "Zarasų r.",
+    "parent_geography_id": "LT",
+    "valid_from": null,
+    "valid_to": null,
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/nariai-savivaldybes/index.html",
+        "sha256": "159b262d014f1249983a1d6f41206a21fea9e91f08f8d65838ec6a6c645b8796",
+        "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+        "locator": {
+          "html_table": 1,
+          "html_row": 61,
+          "columns": [
+            "Savivaldybė",
+            "Meras",
+            "Apskritis (regionas)"
+          ]
+        }
+      }
+    ],
+    "raw": {
+      "official_website": "http://www.zarasai.lt/",
+      "county_label": "Utenos",
+      "source_name_abbreviated": true
+    }
+  }
+]

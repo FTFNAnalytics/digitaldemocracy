@@ -1,0 +1,842 @@
+[
+  {
+    "source_website": "http://www.akmene.lt/",
+    "source_name": "Akmenės r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-61244a98ecf1b6948da37f0c-C",
+    "source_row": 2
+  },
+  {
+    "source_website": "http://www.akmene.lt/",
+    "source_name": "Akmenės r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-61244a98ecf1b6948da37f0c-M",
+    "source_row": 2
+  },
+  {
+    "source_website": "http://www.ams.lt/",
+    "source_name": "Alytaus m.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-a37cb57d1d21c13c7785d48c-C",
+    "source_row": 3
+  },
+  {
+    "source_website": "http://www.ams.lt/",
+    "source_name": "Alytaus m.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-a37cb57d1d21c13c7785d48c-M",
+    "source_row": 3
+  },
+  {
+    "source_website": "http://www.arsa.lt/",
+    "source_name": "Alytaus r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-3df3bd1f6878f586c8c56d39-C",
+    "source_row": 4
+  },
+  {
+    "source_website": "http://www.arsa.lt/",
+    "source_name": "Alytaus r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-3df3bd1f6878f586c8c56d39-M",
+    "source_row": 4
+  },
+  {
+    "source_website": "http://www.anyksciai.lt/",
+    "source_name": "Anykščių r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-5151ba6a411875432b99a995-C",
+    "source_row": 5
+  },
+  {
+    "source_website": "http://www.anyksciai.lt/",
+    "source_name": "Anykščių r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-5151ba6a411875432b99a995-M",
+    "source_row": 5
+  },
+  {
+    "source_website": "http://www.birstonas.lt/",
+    "source_name": "Birštono",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-70d0a7ea9e5bd43d47db3666-C",
+    "source_row": 6
+  },
+  {
+    "source_website": "http://www.birstonas.lt/",
+    "source_name": "Birštono",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-70d0a7ea9e5bd43d47db3666-M",
+    "source_row": 6
+  },
+  {
+    "source_website": "http://www.birzai.lt/",
+    "source_name": "Biržų r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-9ba7e61990c37b0a8f072e4f-C",
+    "source_row": 7
+  },
+  {
+    "source_website": "http://www.birzai.lt/",
+    "source_name": "Biržų r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-9ba7e61990c37b0a8f072e4f-M",
+    "source_row": 7
+  },
+  {
+    "source_website": "https://druskininkusavivaldybe.lt/",
+    "source_name": "Druskininkų",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-ab0ef52353bf4d4eee179b45-C",
+    "source_row": 8
+  },
+  {
+    "source_website": "https://druskininkusavivaldybe.lt/",
+    "source_name": "Druskininkų",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-ab0ef52353bf4d4eee179b45-M",
+    "source_row": 8
+  },
+  {
+    "source_website": "http://www.elektrenai.lt/",
+    "source_name": "Elektrėnų",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-c8b1b0002f3712a6351f5033-C",
+    "source_row": 9
+  },
+  {
+    "source_website": "http://www.elektrenai.lt/",
+    "source_name": "Elektrėnų",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-c8b1b0002f3712a6351f5033-M",
+    "source_row": 9
+  },
+  {
+    "source_website": "http://www.ignalina.lt/",
+    "source_name": "Ignalinos r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-25cdb23a5256618bd09a6a26-C",
+    "source_row": 10
+  },
+  {
+    "source_website": "http://www.ignalina.lt/",
+    "source_name": "Ignalinos r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-25cdb23a5256618bd09a6a26-M",
+    "source_row": 10
+  },
+  {
+    "source_website": "http://www.jonava.lt/",
+    "source_name": "Jonavos r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-ac33a6ea903ac3ddb25723d2-C",
+    "source_row": 11
+  },
+  {
+    "source_website": "http://www.jonava.lt/",
+    "source_name": "Jonavos r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-ac33a6ea903ac3ddb25723d2-M",
+    "source_row": 11
+  },
+  {
+    "source_website": "http://www.joniskis.lt/",
+    "source_name": "Joniškio r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-eafc79549108de33472fc7a8-C",
+    "source_row": 12
+  },
+  {
+    "source_website": "http://www.joniskis.lt/",
+    "source_name": "Joniškio r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-eafc79549108de33472fc7a8-M",
+    "source_row": 12
+  },
+  {
+    "source_website": "http://www.jurbarkas.lt/",
+    "source_name": "Jurbarko r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-a7f6e1ac7213d28d5c5798e0-C",
+    "source_row": 13
+  },
+  {
+    "source_website": "http://www.jurbarkas.lt/",
+    "source_name": "Jurbarko r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-a7f6e1ac7213d28d5c5798e0-M",
+    "source_row": 13
+  },
+  {
+    "source_website": "http://www.kaisiadorys.lt/",
+    "source_name": "Kaišiadorių r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-7d17004fa09bf0d242147bb3-C",
+    "source_row": 14
+  },
+  {
+    "source_website": "http://www.kaisiadorys.lt/",
+    "source_name": "Kaišiadorių r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-7d17004fa09bf0d242147bb3-M",
+    "source_row": 14
+  },
+  {
+    "source_website": "http://www.kalvarija.lt/",
+    "source_name": "Kalvarijos",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-8b0a44cd50b13b6c9b333169-C",
+    "source_row": 15
+  },
+  {
+    "source_website": "http://www.kalvarija.lt/",
+    "source_name": "Kalvarijos",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-8b0a44cd50b13b6c9b333169-M",
+    "source_row": 15
+  },
+  {
+    "source_website": "http://www.kaunas.lt/",
+    "source_name": "Kauno m.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-4617e92357bd51e717734b81-C",
+    "source_row": 16
+  },
+  {
+    "source_website": "http://www.kaunas.lt/",
+    "source_name": "Kauno m.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-4617e92357bd51e717734b81-M",
+    "source_row": 16
+  },
+  {
+    "source_website": "http://www.krs.lt/",
+    "source_name": "Kauno r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-4a5a1f93917a28e3abdb29e5-C",
+    "source_row": 17
+  },
+  {
+    "source_website": "http://www.krs.lt/",
+    "source_name": "Kauno r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-4a5a1f93917a28e3abdb29e5-M",
+    "source_row": 17
+  },
+  {
+    "source_website": "http://www.kazluruda.lt/",
+    "source_name": "Kazlų Rūdos",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-86c5531b9462a95617480586-C",
+    "source_row": 18
+  },
+  {
+    "source_website": "http://www.kazluruda.lt/",
+    "source_name": "Kazlų Rūdos",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-86c5531b9462a95617480586-M",
+    "source_row": 18
+  },
+  {
+    "source_website": "http://www.kelme.lt/",
+    "source_name": "Kelmės r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-5c116a270b32f7ca77ff7c26-C",
+    "source_row": 19
+  },
+  {
+    "source_website": "http://www.kelme.lt/",
+    "source_name": "Kelmės r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-5c116a270b32f7ca77ff7c26-M",
+    "source_row": 19
+  },
+  {
+    "source_website": "http://www.kedainiai.lt/",
+    "source_name": "Kėdainių r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-ea75b499bb7168fb0e92352f-C",
+    "source_row": 20
+  },
+  {
+    "source_website": "http://www.kedainiai.lt/",
+    "source_name": "Kėdainių r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-ea75b499bb7168fb0e92352f-M",
+    "source_row": 20
+  },
+  {
+    "source_website": "http://www.klaipeda.lt/",
+    "source_name": "Klaipėdos m.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-5caa71df814d22658631829f-C",
+    "source_row": 21
+  },
+  {
+    "source_website": "http://www.klaipeda.lt/",
+    "source_name": "Klaipėdos m.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-5caa71df814d22658631829f-M",
+    "source_row": 21
+  },
+  {
+    "source_website": "http://www.klaipedos-r.lt/",
+    "source_name": "Klaipėdos r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-209e7b36b381075381de7927-C",
+    "source_row": 22
+  },
+  {
+    "source_website": "http://www.klaipedos-r.lt/",
+    "source_name": "Klaipėdos r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-209e7b36b381075381de7927-M",
+    "source_row": 22
+  },
+  {
+    "source_website": "http://www.kretinga.lt/",
+    "source_name": "Kretingos r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-34a2fc6f5e0178a1829c274a-C",
+    "source_row": 23
+  },
+  {
+    "source_website": "http://www.kretinga.lt/",
+    "source_name": "Kretingos r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-34a2fc6f5e0178a1829c274a-M",
+    "source_row": 23
+  },
+  {
+    "source_website": "http://www.kupiskis.lt/",
+    "source_name": "Kupiškio r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-255fa690d5cd5290eec34929-C",
+    "source_row": 24
+  },
+  {
+    "source_website": "http://www.kupiskis.lt/",
+    "source_name": "Kupiškio r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-255fa690d5cd5290eec34929-M",
+    "source_row": 24
+  },
+  {
+    "source_website": "http://www.lazdijai.lt/",
+    "source_name": "Lazdijų r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-c043419abfda0987ff03ad81-C",
+    "source_row": 25
+  },
+  {
+    "source_website": "http://www.lazdijai.lt/",
+    "source_name": "Lazdijų r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-c043419abfda0987ff03ad81-M",
+    "source_row": 25
+  },
+  {
+    "source_website": "http://www.marijampole.lt/",
+    "source_name": "Marijampolės",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-d6298552d1885c933957c2cb-C",
+    "source_row": 26
+  },
+  {
+    "source_website": "http://www.marijampole.lt/",
+    "source_name": "Marijampolės",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-d6298552d1885c933957c2cb-M",
+    "source_row": 26
+  },
+  {
+    "source_website": "http://www.mazeikiai.lt/",
+    "source_name": "Mažeikių r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-b05533bac82daf8bfa953703-C",
+    "source_row": 27
+  },
+  {
+    "source_website": "http://www.mazeikiai.lt/",
+    "source_name": "Mažeikių r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-b05533bac82daf8bfa953703-M",
+    "source_row": 27
+  },
+  {
+    "source_website": "http://www.moletai.lt/",
+    "source_name": "Molėtų r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-c0920215ff8130e91f21f476-C",
+    "source_row": 28
+  },
+  {
+    "source_website": "http://www.moletai.lt/",
+    "source_name": "Molėtų r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-c0920215ff8130e91f21f476-M",
+    "source_row": 28
+  },
+  {
+    "source_website": "http://www.neringa.lt/",
+    "source_name": "Neringos",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-fd1f7e4a64386f082c7464c4-C",
+    "source_row": 29
+  },
+  {
+    "source_website": "http://www.neringa.lt/",
+    "source_name": "Neringos",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-fd1f7e4a64386f082c7464c4-M",
+    "source_row": 29
+  },
+  {
+    "source_website": "http://www.pagegiai.lt/",
+    "source_name": "Pagėgių",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-97de1649eece489af8eead5a-C",
+    "source_row": 30
+  },
+  {
+    "source_website": "http://www.pagegiai.lt/",
+    "source_name": "Pagėgių",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-97de1649eece489af8eead5a-M",
+    "source_row": 30
+  },
+  {
+    "source_website": "http://www.pakruojis.lt/",
+    "source_name": "Pakruojo r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-7eba97ace8f6b09a1558ca61-C",
+    "source_row": 31
+  },
+  {
+    "source_website": "http://www.pakruojis.lt/",
+    "source_name": "Pakruojo r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-7eba97ace8f6b09a1558ca61-M",
+    "source_row": 31
+  },
+  {
+    "source_website": "http://www.palanga.lt/",
+    "source_name": "Palangos m.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-9b51900bb432dfb132e5a413-C",
+    "source_row": 32
+  },
+  {
+    "source_website": "http://www.palanga.lt/",
+    "source_name": "Palangos m.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-9b51900bb432dfb132e5a413-M",
+    "source_row": 32
+  },
+  {
+    "source_website": "http://www.panevezys.lt/",
+    "source_name": "Panevėžio m.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-626d9757333c46171af3ca13-C",
+    "source_row": 33
+  },
+  {
+    "source_website": "http://www.panevezys.lt/",
+    "source_name": "Panevėžio m.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-626d9757333c46171af3ca13-M",
+    "source_row": 33
+  },
+  {
+    "source_website": "http://www.panrs.lt/",
+    "source_name": "Panevėžio r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-c14c28740e06662bb42abaae-C",
+    "source_row": 34
+  },
+  {
+    "source_website": "http://www.panrs.lt/",
+    "source_name": "Panevėžio r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-c14c28740e06662bb42abaae-M",
+    "source_row": 34
+  },
+  {
+    "source_website": "http://www.pasvalys.lt/",
+    "source_name": "Pasvalio r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-3b3c7641b01288497cc0e0c0-C",
+    "source_row": 35
+  },
+  {
+    "source_website": "http://www.pasvalys.lt/",
+    "source_name": "Pasvalio r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-3b3c7641b01288497cc0e0c0-M",
+    "source_row": 35
+  },
+  {
+    "source_website": "http://www.plunge.lt/",
+    "source_name": "Plungės r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-6d74b5aa708195f8f43b1c86-C",
+    "source_row": 36
+  },
+  {
+    "source_website": "http://www.plunge.lt/",
+    "source_name": "Plungės r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-6d74b5aa708195f8f43b1c86-M",
+    "source_row": 36
+  },
+  {
+    "source_website": "http://www.prienai.lt/",
+    "source_name": "Prienų r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-b07e58fb52f78307281708a1-C",
+    "source_row": 37
+  },
+  {
+    "source_website": "http://www.prienai.lt/",
+    "source_name": "Prienų r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-b07e58fb52f78307281708a1-M",
+    "source_row": 37
+  },
+  {
+    "source_website": "http://www.radviliskis.lt/",
+    "source_name": "Radviliškio r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-7f640f99d3b6ab5802b3763e-C",
+    "source_row": 38
+  },
+  {
+    "source_website": "http://www.radviliskis.lt/",
+    "source_name": "Radviliškio r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-7f640f99d3b6ab5802b3763e-M",
+    "source_row": 38
+  },
+  {
+    "source_website": "http://www.raseiniai.lt/",
+    "source_name": "Raseinių r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-20f27e897b0cc59e47c2cadc-C",
+    "source_row": 39
+  },
+  {
+    "source_website": "http://www.raseiniai.lt/",
+    "source_name": "Raseinių r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-20f27e897b0cc59e47c2cadc-M",
+    "source_row": 39
+  },
+  {
+    "source_website": "http://www.rietavas.lt/",
+    "source_name": "Rietavo",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-020b89cd0cb5735da3e73cee-C",
+    "source_row": 40
+  },
+  {
+    "source_website": "http://www.rietavas.lt/",
+    "source_name": "Rietavo",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-020b89cd0cb5735da3e73cee-M",
+    "source_row": 40
+  },
+  {
+    "source_website": "http://www.rokiskis.lt/",
+    "source_name": "Rokiškio r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-6c0c69314d449fbc3683457a-C",
+    "source_row": 41
+  },
+  {
+    "source_website": "http://www.rokiskis.lt/",
+    "source_name": "Rokiškio r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-6c0c69314d449fbc3683457a-M",
+    "source_row": 41
+  },
+  {
+    "source_website": "http://www.skuodas.lt/",
+    "source_name": "Skuodo r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-8608c301a73a3cdf9b4c989a-C",
+    "source_row": 42
+  },
+  {
+    "source_website": "http://www.skuodas.lt/",
+    "source_name": "Skuodo r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-8608c301a73a3cdf9b4c989a-M",
+    "source_row": 42
+  },
+  {
+    "source_website": "http://www.sakiai.lt/",
+    "source_name": "Šakių r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-952f03ad39e8e4878e0d9106-C",
+    "source_row": 43
+  },
+  {
+    "source_website": "http://www.sakiai.lt/",
+    "source_name": "Šakių r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-952f03ad39e8e4878e0d9106-M",
+    "source_row": 43
+  },
+  {
+    "source_website": "http://www.salcininkai.lt/",
+    "source_name": "Šalčininkų r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-7da848dbca7a50a3593dc043-C",
+    "source_row": 44
+  },
+  {
+    "source_website": "http://www.salcininkai.lt/",
+    "source_name": "Šalčininkų r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-7da848dbca7a50a3593dc043-M",
+    "source_row": 44
+  },
+  {
+    "source_website": "http://www.siauliai.lt/",
+    "source_name": "Šiaulių m.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-d80e14b38b9936a6f5b8c2c0-C",
+    "source_row": 45
+  },
+  {
+    "source_website": "http://www.siauliai.lt/",
+    "source_name": "Šiaulių m.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-d80e14b38b9936a6f5b8c2c0-M",
+    "source_row": 45
+  },
+  {
+    "source_website": "http://www.siauliuraj.lt/",
+    "source_name": "Šiaulių r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-34b428a72ccd7550bd2277d4-C",
+    "source_row": 46
+  },
+  {
+    "source_website": "http://www.siauliuraj.lt/",
+    "source_name": "Šiaulių r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-34b428a72ccd7550bd2277d4-M",
+    "source_row": 46
+  },
+  {
+    "source_website": "http://www.silale.lt/",
+    "source_name": "Šilalės r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-310cee523c0dd4085c828e08-C",
+    "source_row": 47
+  },
+  {
+    "source_website": "http://www.silale.lt/",
+    "source_name": "Šilalės r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-310cee523c0dd4085c828e08-M",
+    "source_row": 47
+  },
+  {
+    "source_website": "http://www.silute.lt/",
+    "source_name": "Šilutės r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-e5061a6791000dd2352d4b2f-C",
+    "source_row": 48
+  },
+  {
+    "source_website": "http://www.silute.lt/",
+    "source_name": "Šilutės r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-e5061a6791000dd2352d4b2f-M",
+    "source_row": 48
+  },
+  {
+    "source_website": "http://www.sirvintos.lt/",
+    "source_name": "Širvintų r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-5ed71f409eb264bb6dfd727a-C",
+    "source_row": 49
+  },
+  {
+    "source_website": "http://www.sirvintos.lt/",
+    "source_name": "Širvintų r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-5ed71f409eb264bb6dfd727a-M",
+    "source_row": 49
+  },
+  {
+    "source_website": "http://www.svencionys.lt/",
+    "source_name": "Švenčionių r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-6bbab511ccac6b18f1dbac22-C",
+    "source_row": 50
+  },
+  {
+    "source_website": "http://www.svencionys.lt/",
+    "source_name": "Švenčionių r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-6bbab511ccac6b18f1dbac22-M",
+    "source_row": 50
+  },
+  {
+    "source_website": "http://www.taurage.lt/",
+    "source_name": "Tauragės r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-ba767bcc6a05c047e6f72ff5-C",
+    "source_row": 51
+  },
+  {
+    "source_website": "http://www.taurage.lt/",
+    "source_name": "Tauragės r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-ba767bcc6a05c047e6f72ff5-M",
+    "source_row": 51
+  },
+  {
+    "source_website": "http://www.telsiai.lt/",
+    "source_name": "Telšių r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-efd08c984b832d4133488b62-C",
+    "source_row": 52
+  },
+  {
+    "source_website": "http://www.telsiai.lt/",
+    "source_name": "Telšių r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-efd08c984b832d4133488b62-M",
+    "source_row": 52
+  },
+  {
+    "source_website": "http://www.trakai.lt/",
+    "source_name": "Trakų r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-193ebf889e0faaebe264cf0a-C",
+    "source_row": 53
+  },
+  {
+    "source_website": "http://www.trakai.lt/",
+    "source_name": "Trakų r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-193ebf889e0faaebe264cf0a-M",
+    "source_row": 53
+  },
+  {
+    "source_website": "http://www.ukmerge.lt/",
+    "source_name": "Ukmergės r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-ec8c492c997798adf11aa838-C",
+    "source_row": 54
+  },
+  {
+    "source_website": "http://www.ukmerge.lt/",
+    "source_name": "Ukmergės r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-ec8c492c997798adf11aa838-M",
+    "source_row": 54
+  },
+  {
+    "source_website": "http://www.utena.lt/",
+    "source_name": "Utenos r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-2142387c013aa6cc2d8768d2-C",
+    "source_row": 55
+  },
+  {
+    "source_website": "http://www.utena.lt/",
+    "source_name": "Utenos r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-2142387c013aa6cc2d8768d2-M",
+    "source_row": 55
+  },
+  {
+    "source_website": "http://www.varena.lt/",
+    "source_name": "Varėnos r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-f613b260d6a372a594276240-C",
+    "source_row": 56
+  },
+  {
+    "source_website": "http://www.varena.lt/",
+    "source_name": "Varėnos r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-f613b260d6a372a594276240-M",
+    "source_row": 56
+  },
+  {
+    "source_website": "http://www.vilkaviskis.lt/",
+    "source_name": "Vilkaviškio r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-36a5f7a0976fa7cc09eb3e71-C",
+    "source_row": 57
+  },
+  {
+    "source_website": "http://www.vilkaviskis.lt/",
+    "source_name": "Vilkaviškio r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-36a5f7a0976fa7cc09eb3e71-M",
+    "source_row": 57
+  },
+  {
+    "source_website": "http://www.vilnius.lt/",
+    "source_name": "Vilniaus m.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-4541300e5f5db22203b27e48-C",
+    "source_row": 58
+  },
+  {
+    "source_website": "http://www.vilnius.lt/",
+    "source_name": "Vilniaus m.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-4541300e5f5db22203b27e48-M",
+    "source_row": 58
+  },
+  {
+    "source_website": "http://www.vrsa.lt/",
+    "source_name": "Vilniaus r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-4a0a277f22e3763c21adbd97-C",
+    "source_row": 59
+  },
+  {
+    "source_website": "http://www.vrsa.lt/",
+    "source_name": "Vilniaus r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-4a0a277f22e3763c21adbd97-M",
+    "source_row": 59
+  },
+  {
+    "source_website": "http://www.visaginas.lt/",
+    "source_name": "Visagino m.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-bf558bf41011d434e6c1b84e-C",
+    "source_row": 60
+  },
+  {
+    "source_website": "http://www.visaginas.lt/",
+    "source_name": "Visagino m.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-bf558bf41011d434e6c1b84e-M",
+    "source_row": 60
+  },
+  {
+    "source_website": "http://www.zarasai.lt/",
+    "source_name": "Zarasų r.",
+    "office_type": "municipal_council",
+    "office_id": "LT-lsa-e784b378f434904980012d7d-C",
+    "source_row": 61
+  },
+  {
+    "source_website": "http://www.zarasai.lt/",
+    "source_name": "Zarasų r.",
+    "office_type": "direct_mayor",
+    "office_id": "LT-lsa-e784b378f434904980012d7d-M",
+    "source_row": 61
+  }
+]
