@@ -1,0 +1,198 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "effective_inputs_hashes",
+      "status": "PASS",
+      "detail": 67
+    },
+    {
+      "check": "fingerprint_release",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "pinned_DDL_bytes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "office_unique_set",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "current_historic_counts_and_caveat",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "body_type_universe",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "60_source_roster_rows",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "source_bound_office_ID_vectors",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "tier_exact_set_draft",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "tier_histogram",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "geography_FKs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "event_unique_FKs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "event_vectors",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "rounds_not_cycles",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "source_IDs_hashes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "all_nested_evidence_bindings",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "results_ID_FKs_numeric_status_domains",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "EP_exact_source_matrix_cells",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "11_presidential_disputed_shares",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "recovered_complete_aggregates_reconcile",
+      "status": "PASS",
+      "detail": "Arithmetic only; denominator conflicts and legal finality unresolved"
+    },
+    {
+      "check": "partial2012_not_padded",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "malformed_invalid_count_not_coerced",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "limited_mayor_winner_coverage",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "dates_honest_precision",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "vectors_complete",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no_invented_upcoming_events",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "223_column_map",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "column_names_exist_in_unchanged_DDL",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "fixtures_excluded",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "21_worked_examples",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "unchecked_approvals_and_no_mutations",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "counts": {
+    "current_offices": 123,
+    "historical_offices": 0,
+    "total_offices": 123,
+    "municipalities": 60,
+    "municipal_councils": 60,
+    "direct_mayors": 60,
+    "direct_presidents": 1,
+    "direct_executives_total": 61,
+    "councils_and_parliamentary_bodies": 62,
+    "geographies": 61,
+    "events": 30,
+    "historical_events": 30,
+    "prospective_events": 0,
+    "result_rows": 130,
+    "proceedings": 25,
+    "sources": 53,
+    "draft_tiers": {
+      "municipal": 120,
+      "national": 2,
+      "other": 1
+    },
+    "mayoral_coverage": {
+      "current_offices": 60,
+      "historic_offices_with_evidenced_results": 19,
+      "cycle": "2019",
+      "grain": "winner observations only; not complete returns",
+      "full_candidate_vectors": 0
+    },
+    "historical_office_universe_complete": false,
+    "research_coverage_complete": false
+  },
+  "applied_changes": 0,
+  "production_accepted": false,
+  "research_coverage_complete": false,
+  "historic_universe_complete": false,
+  "importer_SQLite_VPS_UI_CI": "Not run",
+  "manual_PDF_review": "ODIHR2019PDFp25 and2020PDFp20 rendered and visually checked; this validator verifies source hashes and derived consistency, not independent PDF OCR."
+}

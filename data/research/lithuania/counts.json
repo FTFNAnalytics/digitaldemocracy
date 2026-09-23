@@ -1,0 +1,32 @@
+{
+  "current_offices": 123,
+  "historical_offices": 0,
+  "total_offices": 123,
+  "municipalities": 60,
+  "municipal_councils": 60,
+  "direct_mayors": 60,
+  "direct_presidents": 1,
+  "direct_executives_total": 61,
+  "councils_and_parliamentary_bodies": 62,
+  "geographies": 61,
+  "events": 30,
+  "historical_events": 30,
+  "prospective_events": 0,
+  "result_rows": 130,
+  "proceedings": 25,
+  "sources": 53,
+  "draft_tiers": {
+    "municipal": 120,
+    "national": 2,
+    "other": 1
+  },
+  "mayoral_coverage": {
+    "current_offices": 60,
+    "historic_offices_with_evidenced_results": 19,
+    "cycle": "2019",
+    "grain": "winner observations only; not complete returns",
+    "full_candidate_vectors": 0
+  },
+  "historical_office_universe_complete": false,
+  "research_coverage_complete": false
+}

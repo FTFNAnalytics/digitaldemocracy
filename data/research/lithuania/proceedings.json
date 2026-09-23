@@ -1,0 +1,679 @@
+[
+  {
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": "proceeding-231bcd1029fb23f280429d5d",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2020-10-11",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2020,
+      "month": 10,
+      "day": 11
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/sip/portal.show__7b5729ffb0",
+        "sha256": "0e1734ce4c47f5ebe9091f71ea309cedde558bee39e133cd4c5255e9a96397c6",
+        "source_id": "lithuania--url-ec8d096f94846ac05885353e",
+        "locator": {
+          "heading": "Seimas 2020–2024",
+          "section": "Election outcome narrative"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "proceeding_id": "proceeding-ced857f0e084c7d584338dff",
+    "sequence": 2,
+    "kind": "runoff",
+    "date": {
+      "label": "2020-10-25",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2020,
+      "month": 10,
+      "day": 25
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/sip/portal.show__7b5729ffb0",
+        "sha256": "0e1734ce4c47f5ebe9091f71ea309cedde558bee39e133cd4c5255e9a96397c6",
+        "source_id": "lithuania--url-ec8d096f94846ac05885353e",
+        "locator": {
+          "heading": "Seimas 2020–2024",
+          "section": "Election outcome narrative"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2024",
+    "event_id": "event-808c5d3f18a6690850c86634",
+    "proceeding_id": "proceeding-6a91daf54e1313d46626d094",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2024-10-13",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2024,
+      "month": 10,
+      "day": 13
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/sip/portal.show__c563564e58",
+        "sha256": "772d6289e7ae7f4db5c467df44560cfc63b05bf08bc90883c7aa28297df82bdd",
+        "source_id": "lithuania--url-7da9912ed11f84144e89cf67",
+        "locator": {
+          "heading": "Seimas 2024–2028",
+          "section": "Election outcome narrative"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2024",
+    "event_id": "event-808c5d3f18a6690850c86634",
+    "proceeding_id": "proceeding-32a9ec9e562e233d98ab9293",
+    "sequence": 2,
+    "kind": "runoff",
+    "date": {
+      "label": "2024-10-27",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2024,
+      "month": 10,
+      "day": 27
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/sip/portal.show__c563564e58",
+        "sha256": "772d6289e7ae7f4db5c467df44560cfc63b05bf08bc90883c7aa28297df82bdd",
+        "source_id": "lithuania--url-7da9912ed11f84144e89cf67",
+        "locator": {
+          "heading": "Seimas 2024–2028",
+          "section": "Election outcome narrative"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-a9fb2536bc45cf80b6bbdcbc",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-05-12",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 5,
+      "day": 12
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "printed_page": 23,
+          "section": "ANNEX I – FINAL RESULTS"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "proceeding_id": "proceeding-c14a7c59881496c1c079089c",
+    "sequence": 2,
+    "kind": "runoff",
+    "date": {
+      "label": "2019-05-26",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 5,
+      "day": 26
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "printed_page": 23,
+          "section": "ANNEX I – FINAL RESULTS"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-4617e92357bd51e717734b81-M",
+    "history_key": "LT-lsa-4617e92357bd51e717734b81-M::SAV2019",
+    "event_id": "event-145918e7190b9b66d444ac76",
+    "proceeding_id": "proceeding-3f7abfc85c79985c06450c8b",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Visvaldas Matijošaitis"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-9b51900bb432dfb132e5a413-M",
+    "history_key": "LT-lsa-9b51900bb432dfb132e5a413-M::SAV2019",
+    "event_id": "event-dbe31017989b3ae70769b15f",
+    "proceeding_id": "proceeding-f7a5192e40b37288f528d6b4",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Šarūnas Vaitkus"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-7da848dbca7a50a3593dc043-M",
+    "history_key": "LT-lsa-7da848dbca7a50a3593dc043-M::SAV2019",
+    "event_id": "event-6b4f8aaf8f958c79022396f9",
+    "proceeding_id": "proceeding-87fe6a26b886eb7f46b1e3f9",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Zdislavas Palevičius"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-5ed71f409eb264bb6dfd727a-M",
+    "history_key": "LT-lsa-5ed71f409eb264bb6dfd727a-M::SAV2019",
+    "event_id": "event-92acb55dff0536d1b8b03870",
+    "proceeding_id": "proceeding-96a4a03681a448c5b92cf07e",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Živilė Pinskuvienė"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-ab0ef52353bf4d4eee179b45-M",
+    "history_key": "LT-lsa-ab0ef52353bf4d4eee179b45-M::SAV2019",
+    "event_id": "event-2ddbe8cb3e01bcf10d1d1475",
+    "proceeding_id": "proceeding-e6de2271ee81eed0f5edf6bf",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Ričardas Malinauskas"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-6bbab511ccac6b18f1dbac22-M",
+    "history_key": "LT-lsa-6bbab511ccac6b18f1dbac22-M::SAV2019",
+    "event_id": "event-108a43bdbe7984f31fbb4211",
+    "proceeding_id": "proceeding-94c7802638150452e3ac9ec9",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Rimantas Klipčius"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-020b89cd0cb5735da3e73cee-M",
+    "history_key": "LT-lsa-020b89cd0cb5735da3e73cee-M::SAV2019",
+    "event_id": "event-eb76177f6fe933399e8083bb",
+    "proceeding_id": "proceeding-1ca8ac32ece7bf06c9234e90",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Antanas Černeckis"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-eafc79549108de33472fc7a8-M",
+    "history_key": "LT-lsa-eafc79549108de33472fc7a8-M::SAV2019",
+    "event_id": "event-f881eb71416a69f1157bf805",
+    "proceeding_id": "proceeding-e7b1767071877bae5c4f2e6d",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Vitalijus Gailius"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-61244a98ecf1b6948da37f0c-M",
+    "history_key": "LT-lsa-61244a98ecf1b6948da37f0c-M::SAV2019",
+    "event_id": "event-52bce7faddeb10588588f894",
+    "proceeding_id": "proceeding-3eb446ff38ee5c0e98d23e83",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Vitalijus Mitrofanovas"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-4a5a1f93917a28e3abdb29e5-M",
+    "history_key": "LT-lsa-4a5a1f93917a28e3abdb29e5-M::SAV2019",
+    "event_id": "event-1fc7251706e07ae20f623b9e",
+    "proceeding_id": "proceeding-dd4c6f4581044d6cb4aeab12",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "V. Makūnas"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-ac33a6ea903ac3ddb25723d2-M",
+    "history_key": "LT-lsa-ac33a6ea903ac3ddb25723d2-M::SAV2019",
+    "event_id": "event-1ab07c82b7886699a2544119",
+    "proceeding_id": "proceeding-28ac5db9e04740be813b97bc",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Mindaugas Sinkevičius"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-fd1f7e4a64386f082c7464c4-M",
+    "history_key": "LT-lsa-fd1f7e4a64386f082c7464c4-M::SAV2019",
+    "event_id": "event-c48fb9da4086dd9c60fe728c",
+    "proceeding_id": "proceeding-a340fb0972e6b0e5a4b60962",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Darius Jasaitis"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-70d0a7ea9e5bd43d47db3666-M",
+    "history_key": "LT-lsa-70d0a7ea9e5bd43d47db3666-M::SAV2019",
+    "event_id": "event-6c325df4691739a6366a1313",
+    "proceeding_id": "proceeding-1f870b6c4701026df63f819b",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Nijolė Dirginčienė"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-4a0a277f22e3763c21adbd97-M",
+    "history_key": "LT-lsa-4a0a277f22e3763c21adbd97-M::SAV2019",
+    "event_id": "event-2aefb77d85e91ddf19033b9d",
+    "proceeding_id": "proceeding-406450a247cbe1c5c1ed0e51",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Marija Rekst"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-9ba7e61990c37b0a8f072e4f-M",
+    "history_key": "LT-lsa-9ba7e61990c37b0a8f072e4f-M::SAV2019",
+    "event_id": "event-0a2e7eeb9c15f37d9f651cac",
+    "proceeding_id": "proceeding-ec776f2647c9a7559abe891c",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Vytautas Jareckas"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-952f03ad39e8e4878e0d9106-M",
+    "history_key": "LT-lsa-952f03ad39e8e4878e0d9106-M::SAV2019",
+    "event_id": "event-0c69cc4c06c0427231ad40f4",
+    "proceeding_id": "proceeding-84ad5958aab123972baf21c1",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Edgaras Pilypaitis"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-d80e14b38b9936a6f5b8c2c0-M",
+    "history_key": "LT-lsa-d80e14b38b9936a6f5b8c2c0-M::SAV2019",
+    "event_id": "event-506133a9bd6f2e5344b29343",
+    "proceeding_id": "proceeding-6e7d388f3612fc29f3bb3391",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Artūras Visockas"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-34b428a72ccd7550bd2277d4-M",
+    "history_key": "LT-lsa-34b428a72ccd7550bd2277d4-M::SAV2019",
+    "event_id": "event-7d2a32c5cd74a2f1830e72b0",
+    "proceeding_id": "proceeding-3fc342e50591c94f46e50aa0",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Antanas Bezaras"
+        }
+      }
+    ]
+  },
+  {
+    "office_id": "LT-lsa-3b3c7641b01288497cc0e0c0-M",
+    "history_key": "LT-lsa-3b3c7641b01288497cc0e0c0-M::SAV2019",
+    "event_id": "event-ca427ecdbcd2ab20021f3c90",
+    "proceeding_id": "proceeding-1dfe8e305b7999827888d0c0",
+    "sequence": 1,
+    "kind": "first_round",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Gintautas Gegužinskas"
+        }
+      }
+    ]
+  }
+]

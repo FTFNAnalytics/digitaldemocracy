@@ -1,0 +1,1146 @@
+[
+  {
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2004",
+    "event_id": "event-3d387a9f91ad362847a8fb6a",
+    "cycle": "EP2004",
+    "date": {
+      "label": "2004",
+      "precision": "year",
+      "certainty": "called",
+      "year": 2004,
+      "month": null,
+      "day": null
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2004-2009/constitutive-session/index.html",
+        "sha256": "61b584f0033a94e33fde5ec565636831d1af8c12ccf50c9a70a4379ff8070c8c",
+        "source_id": "lithuania--url-383d0a7becb098a8142eeae6",
+        "locator": {
+          "html_table": 3,
+          "caption": "Composition of national seats"
+        }
+      }
+    ],
+    "raw": {
+      "result_grain": "national_party_or_other_aggregate",
+      "basis": "Published national party percentage; no vote denominator recovered",
+      "source_status": "Constitutive session / official publisher aggregation; not numeric candidate-level certification"
+    }
+  },
+  {
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2009",
+    "event_id": "event-bb953811f91f048e4a055554",
+    "cycle": "EP2009",
+    "date": {
+      "label": "2009",
+      "precision": "year",
+      "certainty": "called",
+      "year": 2009,
+      "month": null,
+      "day": null
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2009-2014/constitutive-session/index.html",
+        "sha256": "047369660afcf404d6548914323072c72252e315c3c1adbee532c75959b712af",
+        "source_id": "lithuania--url-c79513e79b2046333808857f",
+        "locator": {
+          "html_table": 5,
+          "caption": "Composition of national seats"
+        }
+      }
+    ],
+    "raw": {
+      "result_grain": "national_party_or_other_aggregate",
+      "basis": "Published national party percentage; no vote denominator recovered",
+      "source_status": "Constitutive session / official publisher aggregation; not numeric candidate-level certification"
+    }
+  },
+  {
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2014",
+    "event_id": "event-6678938eebd14c016864338d",
+    "cycle": "EP2014",
+    "date": {
+      "label": "2014",
+      "precision": "year",
+      "certainty": "called",
+      "year": 2014,
+      "month": null,
+      "day": null
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2014-2019/constitutive-session/index.html",
+        "sha256": "cde154eb03df496819bcb3b164e0bbb2641cbf1414be0931b4fe042f83147562",
+        "source_id": "lithuania--url-1df990a1829097512c8e5d6d",
+        "locator": {
+          "html_table": 5,
+          "caption": "Composition of national seats"
+        }
+      }
+    ],
+    "raw": {
+      "result_grain": "national_party_or_other_aggregate",
+      "basis": "Published national party percentage; no vote denominator recovered",
+      "source_status": "Constitutive session / official publisher aggregation; not numeric candidate-level certification"
+    }
+  },
+  {
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2019",
+    "event_id": "event-9d8b23b978be3e9231ce85a2",
+    "cycle": "EP2019",
+    "date": {
+      "label": "2019",
+      "precision": "year",
+      "certainty": "called",
+      "year": 2019,
+      "month": null,
+      "day": null
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/index.html",
+        "sha256": "93e04570872b42e3dbfe6a2007bf7f4cb1c28811d41fe3f3f4022253764dac42",
+        "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+        "locator": {
+          "html_table": 5,
+          "caption": "Composition of national seats"
+        }
+      }
+    ],
+    "raw": {
+      "result_grain": "national_party_or_other_aggregate",
+      "basis": "Published national party percentage; no vote denominator recovered",
+      "source_status": "Constitutive session / official publisher aggregation; not numeric candidate-level certification"
+    }
+  },
+  {
+    "office_id": "LT-EP",
+    "history_key": "LT-EP::EP2024",
+    "event_id": "event-417276aa092699ecef86dfed",
+    "cycle": "EP2024",
+    "date": {
+      "label": "2024",
+      "precision": "year",
+      "certainty": "called",
+      "year": 2024,
+      "month": null,
+      "day": null
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/results.elections.europa.eu/en/national-results/lithuania/2024-2029/index.html",
+        "sha256": "39e52a3c28f6d6e7f939da0dafcb942a09674ac5f1f55301f9bc63cf676d9996",
+        "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+        "locator": {
+          "html_table": 5,
+          "caption": "Composition of national seats"
+        }
+      }
+    ],
+    "raw": {
+      "result_grain": "national_party_or_other_aggregate",
+      "basis": "Published national party percentage; no vote denominator recovered",
+      "source_status": "Constitutive session / official publisher aggregation; not numeric candidate-level certification"
+    }
+  },
+  {
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2008",
+    "event_id": "event-024364038286c634ce2006d9",
+    "cycle": "SEI2008",
+    "date": {
+      "label": "2008",
+      "precision": "year",
+      "certainty": "called",
+      "year": 2008,
+      "month": null,
+      "day": null
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/docs3/kad6/w6_istorija.show6-p_r=6111&p_k=2.html",
+        "sha256": "e2552e5402e047a7027e35877d4464ce1ac1e0bf095c3927e6cba5e5185482c6",
+        "source_id": "lithuania--url-0d848bb0e930987ce933d987",
+        "locator": {
+          "heading": "Seimas 2008–2012",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "scope": "One chamber event; mixed electoral system. Constituency returns not recovered. First sitting is not election day."
+    }
+  },
+  {
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2012",
+    "event_id": "event-4d903d92d04a8ec301133edd",
+    "cycle": "SEI2012",
+    "date": {
+      "label": "2012",
+      "precision": "year",
+      "certainty": "called",
+      "year": 2012,
+      "month": null,
+      "day": null
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad7/kadencija2012.show7-p_r=15827&p_k=2.html",
+        "sha256": "6f8ed42353004b43592ad08a38fc0950e8ef4814fdcb09312faa1cff28922a06",
+        "source_id": "lithuania--url-1902f7b4d1a0c291dab7a264",
+        "locator": {
+          "heading": "Seimas 2012–2016",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "scope": "One chamber event; mixed electoral system. Constituency returns not recovered. First sitting is not election day."
+    }
+  },
+  {
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2016",
+    "event_id": "event-0f5a78d003fd58aac869a7b5",
+    "cycle": "SEI2016",
+    "date": {
+      "label": "2016-10",
+      "precision": "month",
+      "certainty": "called",
+      "year": 2016,
+      "month": 10,
+      "day": null
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/SIPIS/portal/responsive/static_pages/kad8/files/k8.show-p_r=38243&p_k=2.html",
+        "sha256": "70b01ab72fa7d511968bc142374bbd394cb9c0242798106f035f8b65d95904a1",
+        "source_id": "lithuania--url-e5026ceccba3ed202f1b3c54",
+        "locator": {
+          "heading": "Seimas 2016–2020",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "scope": "One chamber event; mixed electoral system. Constituency returns not recovered. First sitting is not election day."
+    }
+  },
+  {
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2020",
+    "event_id": "event-e1974e234ea3bdc274df62f9",
+    "cycle": "SEI2020",
+    "date": {
+      "label": "2020-10-11",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2020,
+      "month": 10,
+      "day": 11
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/sip/portal.show__7b5729ffb0",
+        "sha256": "0e1734ce4c47f5ebe9091f71ea309cedde558bee39e133cd4c5255e9a96397c6",
+        "source_id": "lithuania--url-ec8d096f94846ac05885353e",
+        "locator": {
+          "heading": "Seimas 2020–2024",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "scope": "One chamber event; mixed electoral system. Constituency returns not recovered. First sitting is not election day."
+    }
+  },
+  {
+    "office_id": "LT-SEIMAS",
+    "history_key": "LT-SEIMAS::SEI2024",
+    "event_id": "event-808c5d3f18a6690850c86634",
+    "cycle": "SEI2024",
+    "date": {
+      "label": "2024-10-13",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2024,
+      "month": 10,
+      "day": 13
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lrs.lt/sip/portal.show__c563564e58",
+        "sha256": "772d6289e7ae7f4db5c467df44560cfc63b05bf08bc90883c7aa28297df82bdd",
+        "source_id": "lithuania--url-7da9912ed11f84144e89cf67",
+        "locator": {
+          "heading": "Seimas 2024–2028",
+          "section": "Election outcome narrative"
+        }
+      }
+    ],
+    "raw": {
+      "scope": "One chamber event; mixed electoral system. Constituency returns not recovered. First sitting is not election day."
+    }
+  },
+  {
+    "office_id": "LT-PRESIDENT",
+    "history_key": "LT-PRESIDENT::PRE2019",
+    "event_id": "event-161ed64ee44d4e92e516d7de",
+    "cycle": "PRE2019",
+    "date": {
+      "label": "2019-05-12",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 5,
+      "day": 12
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 25,
+          "printed_page": 23,
+          "section": "ANNEX I – FINAL RESULTS"
+        }
+      }
+    ],
+    "raw": {
+      "percentage_header": "Percentage of valid votes cast",
+      "percentage_basis_conflict": true,
+      "no_numeric_correction_accepted": true
+    }
+  },
+  {
+    "office_id": "LT-lsa-4617e92357bd51e717734b81-M",
+    "history_key": "LT-lsa-4617e92357bd51e717734b81-M::SAV2019",
+    "event_id": "event-145918e7190b9b66d444ac76",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Visvaldas Matijošaitis"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-9b51900bb432dfb132e5a413-M",
+    "history_key": "LT-lsa-9b51900bb432dfb132e5a413-M::SAV2019",
+    "event_id": "event-dbe31017989b3ae70769b15f",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Šarūnas Vaitkus"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-7da848dbca7a50a3593dc043-M",
+    "history_key": "LT-lsa-7da848dbca7a50a3593dc043-M::SAV2019",
+    "event_id": "event-6b4f8aaf8f958c79022396f9",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Zdislavas Palevičius"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-5ed71f409eb264bb6dfd727a-M",
+    "history_key": "LT-lsa-5ed71f409eb264bb6dfd727a-M::SAV2019",
+    "event_id": "event-92acb55dff0536d1b8b03870",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Živilė Pinskuvienė"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-ab0ef52353bf4d4eee179b45-M",
+    "history_key": "LT-lsa-ab0ef52353bf4d4eee179b45-M::SAV2019",
+    "event_id": "event-2ddbe8cb3e01bcf10d1d1475",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Ričardas Malinauskas"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-6bbab511ccac6b18f1dbac22-M",
+    "history_key": "LT-lsa-6bbab511ccac6b18f1dbac22-M::SAV2019",
+    "event_id": "event-108a43bdbe7984f31fbb4211",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Rimantas Klipčius"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-020b89cd0cb5735da3e73cee-M",
+    "history_key": "LT-lsa-020b89cd0cb5735da3e73cee-M::SAV2019",
+    "event_id": "event-eb76177f6fe933399e8083bb",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Antanas Černeckis"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-eafc79549108de33472fc7a8-M",
+    "history_key": "LT-lsa-eafc79549108de33472fc7a8-M::SAV2019",
+    "event_id": "event-f881eb71416a69f1157bf805",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Vitalijus Gailius"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-61244a98ecf1b6948da37f0c-M",
+    "history_key": "LT-lsa-61244a98ecf1b6948da37f0c-M::SAV2019",
+    "event_id": "event-52bce7faddeb10588588f894",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "Vitalijus Mitrofanovas"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-4a5a1f93917a28e3abdb29e5-M",
+    "history_key": "LT-lsa-4a5a1f93917a28e3abdb29e5-M::SAV2019",
+    "event_id": "event-1fc7251706e07ae20f623b9e",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 2,
+          "candidate": "V. Makūnas"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-ac33a6ea903ac3ddb25723d2-M",
+    "history_key": "LT-lsa-ac33a6ea903ac3ddb25723d2-M::SAV2019",
+    "event_id": "event-1ab07c82b7886699a2544119",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Mindaugas Sinkevičius"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-fd1f7e4a64386f082c7464c4-M",
+    "history_key": "LT-lsa-fd1f7e4a64386f082c7464c4-M::SAV2019",
+    "event_id": "event-c48fb9da4086dd9c60fe728c",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Darius Jasaitis"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-70d0a7ea9e5bd43d47db3666-M",
+    "history_key": "LT-lsa-70d0a7ea9e5bd43d47db3666-M::SAV2019",
+    "event_id": "event-6c325df4691739a6366a1313",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Nijolė Dirginčienė"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-4a0a277f22e3763c21adbd97-M",
+    "history_key": "LT-lsa-4a0a277f22e3763c21adbd97-M::SAV2019",
+    "event_id": "event-2aefb77d85e91ddf19033b9d",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Marija Rekst"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-9ba7e61990c37b0a8f072e4f-M",
+    "history_key": "LT-lsa-9ba7e61990c37b0a8f072e4f-M::SAV2019",
+    "event_id": "event-0a2e7eeb9c15f37d9f651cac",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Vytautas Jareckas"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-952f03ad39e8e4878e0d9106-M",
+    "history_key": "LT-lsa-952f03ad39e8e4878e0d9106-M::SAV2019",
+    "event_id": "event-0c69cc4c06c0427231ad40f4",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Edgaras Pilypaitis"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-d80e14b38b9936a6f5b8c2c0-M",
+    "history_key": "LT-lsa-d80e14b38b9936a6f5b8c2c0-M::SAV2019",
+    "event_id": "event-506133a9bd6f2e5344b29343",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Artūras Visockas"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-34b428a72ccd7550bd2277d4-M",
+    "history_key": "LT-lsa-34b428a72ccd7550bd2277d4-M::SAV2019",
+    "event_id": "event-7d2a32c5cd74a2f1830e72b0",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Antanas Bezaras"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  },
+  {
+    "office_id": "LT-lsa-3b3c7641b01288497cc0e0c0-M",
+    "history_key": "LT-lsa-3b3c7641b01288497cc0e0c0-M::SAV2019",
+    "event_id": "event-ca427ecdbcd2ab20021f3c90",
+    "cycle": "SAV2019",
+    "date": {
+      "label": "2019-03-03",
+      "precision": "day",
+      "certainty": "called",
+      "year": 2019,
+      "month": 3,
+      "day": 3
+    },
+    "election_mode": "direct_popular",
+    "role": "historical",
+    "event_kind": "ordinary",
+    "legal_outcome": "unknown",
+    "origins": [
+      {
+        "input_path": "data/research/lithuania/sources/www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/index.html",
+        "sha256": "ca736de3a91c215ab90cd61a029090e72999bbfc646ffebbc824b318e36f12ea",
+        "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+        "locator": {
+          "html_p": 3,
+          "candidate": "Gintautas Gegužinskas"
+        }
+      }
+    ],
+    "raw": {
+      "coverage": "winner observation only; no full candidate vector",
+      "date_origin": {
+        "input_path": "data/research/lithuania/sources/odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+        "sha256": "a1335ba28288c9d41df53f456ba7b17214b4ca0e1172a088fcab586a0aac240f",
+        "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+        "locator": {
+          "pdf_page": 5,
+          "section": "Background; municipal elections 3 and 17 March"
+        }
+      }
+    }
+  }
+]

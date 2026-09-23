@@ -1,0 +1,842 @@
+[
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.akmene.lt/",
+    "record_key": "rec-754540e3e4700c0411642bd3caf8e67c6d0a447255526c0c852135f9ad2e9d92",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.akmene.lt/",
+    "record_key": "rec-9514dd44b1677b0f0b8491e27f8313dbac457e148cd29de83705495216d5d7c7",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.ams.lt/",
+    "record_key": "rec-55dcb6e56193a9085f37a07dc6b02817c04f2f8bb0a2793c5c800a0c39daa312",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.ams.lt/",
+    "record_key": "rec-337676129f8b02ead77b7e14531812684f7d953ca10d750d26ff09f13315a738",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.arsa.lt/",
+    "record_key": "rec-1ab689e83f7e1de88e42b58986aadbdb42c7f572cdcbca1ed2fb3009b81bb6c8",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.arsa.lt/",
+    "record_key": "rec-f6988bef74ca90b7b5b7a125c17efa12c6b4def4fb57add36163281ac5111cf2",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.anyksciai.lt/",
+    "record_key": "rec-3087c3dfaff090d6bdce58c48b0eecf8beda2cd4c9e39ecacb7bdce0ce73efa7",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.anyksciai.lt/",
+    "record_key": "rec-479e45b6b6788f3adf9eabbb0d9365c1e262a3afe59fbca93bb7b19039c12faa",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.birstonas.lt/",
+    "record_key": "rec-aa96df8f47d3cc71da9597b03fb0434621681d17c21cc11876ebcc7a492dd64d",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.birstonas.lt/",
+    "record_key": "rec-784110499b3c9b88af0b8baad86d31b0296aac3896321ba32386bfcdb5f0d747",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.birzai.lt/",
+    "record_key": "rec-c3490355bf0f1d31085e0265b2e1c9cae4aafc77eca80eaa0a5a9fc676a33918",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.birzai.lt/",
+    "record_key": "rec-c02286e1d6a8a8863f67a0caf2d1e6963885decbccd2a8d07bd81ebf931f3874",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "https://druskininkusavivaldybe.lt/",
+    "record_key": "rec-0b68ece3a574e19120028bce12f1e7707aedead25c3dc912f098d999a76c97d8",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "https://druskininkusavivaldybe.lt/",
+    "record_key": "rec-78af0bd2886a369361e2fcc04c4dfb37fff5f6ef9b99098fb99e671d82d115cb",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.elektrenai.lt/",
+    "record_key": "rec-fcc93eb5b6cf1a840667087d5641109e72cd322408c78f1d8ecd214d40be529e",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.elektrenai.lt/",
+    "record_key": "rec-9d117a2d740a9e249a74dae4c96a98e9bf1977219936ae6882d2cd5df719f3bf",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.ignalina.lt/",
+    "record_key": "rec-1ceba2ecf8558859494aced6682274e1c61e1909997290258d8556fc0e7357af",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.ignalina.lt/",
+    "record_key": "rec-b9ea2c358c95ee595f8edd7b48442f6e4d8b3b24ba6e55440517758f2d95b511",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.jonava.lt/",
+    "record_key": "rec-cc7ff86ec349c980cce7490bd3bc2e3cc98a8a7d196c8da81aafedb75233accb",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.jonava.lt/",
+    "record_key": "rec-bbbcb51ee390f709fd5e8eb6cf9bb5c44bd9c1c63e89cf37a1c1439fe2696c40",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.joniskis.lt/",
+    "record_key": "rec-d41d3fe2482ec46e9a2a15a3ac8bf2b7e68827dcd39d6510d960a35dd17891be",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.joniskis.lt/",
+    "record_key": "rec-7c0929af76bdbc38eb992543739904cba9ed65326ebe89ace999912085a43714",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.jurbarkas.lt/",
+    "record_key": "rec-c50bcfb3f6a4151b8106a08c5cff74e62dc8e1dc0774d3126cf983c400bf9693",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.jurbarkas.lt/",
+    "record_key": "rec-7aa00116d9d79e13a67fbd716fc0f484808bb9ac98691424cdd9c2632dfd25d7",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.kaisiadorys.lt/",
+    "record_key": "rec-35cf0d4d218735599be98816d909369fb1a75992b22b9469bfacfc75071fbdd7",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.kaisiadorys.lt/",
+    "record_key": "rec-ab0a60fe9c29c9a3a341dd4887eb13da3cb717b3df8cb0e84811a1893d3938c6",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.kalvarija.lt/",
+    "record_key": "rec-b52ebd9254786dc3e11637f615747da1a344d772810e02899b3f5ac2e329d9f0",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.kalvarija.lt/",
+    "record_key": "rec-2689b77faa6f20e2ec09beccd599158b7edcd731ede566a3b768c0c341c5ae3a",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.kaunas.lt/",
+    "record_key": "rec-3e8a50f2eae05589ba575c92a5f13de4551a54b9b1e4856a4f9421684151c0b6",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.kaunas.lt/",
+    "record_key": "rec-c4b087f3b1e808ef4fadb94e914d730c95e4190fa17ae80765d863ba9f479346",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.krs.lt/",
+    "record_key": "rec-6ece75873d7a2f379f24205c051f2e214e65d3103a46cb4c1c6759a9a27788de",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.krs.lt/",
+    "record_key": "rec-c1a6b40b621a42860d29a933d8f3bef55ebe5ff1242c619cedd2102ac86db6f1",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.kazluruda.lt/",
+    "record_key": "rec-1456b2125430021d94e2cbb21d4a218fba2c4baaebe627726e7f42ca0f0b7d21",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.kazluruda.lt/",
+    "record_key": "rec-ba8ea2321d30bd12be77d3dadc34ce3e2898736e95dd50fbc1aad458f3c377ab",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.kelme.lt/",
+    "record_key": "rec-9c4a83cd37ebea4a7e343b1ffdcaf43b312f39c2abdd9c52be06687893142638",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.kelme.lt/",
+    "record_key": "rec-af12923ca185d5294204d286fc7923a84bb6371a5fd3d847fb55715babe08389",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.kedainiai.lt/",
+    "record_key": "rec-6b4445ab2d8ccb8b855c016f09c0463f71ea625b73c3c1e6d5ad1758ecb013bd",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.kedainiai.lt/",
+    "record_key": "rec-409f0cca35a6ad758d49d949887e1ae71c5417899d29acb1ff2fb1a206aa3d5b",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.klaipeda.lt/",
+    "record_key": "rec-a911bcc90a0af610deeacf253acd267e137a4d47eb8a42bd95baa4e0bacc8601",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.klaipeda.lt/",
+    "record_key": "rec-0f2378361dd0d94859ff352be49097f4295f381bc8bf9556ebc1b8b6209ce11a",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.klaipedos-r.lt/",
+    "record_key": "rec-b42dd7aa47caf5494f0b5f9d0dab7933d8152b06fca641b7f27011cf574004dc",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.klaipedos-r.lt/",
+    "record_key": "rec-753a96cb4b7cbba7e0d6a9b5f5cadc7b849aee8248e33ce8677da14d6606d8c4",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.kretinga.lt/",
+    "record_key": "rec-fbac026ae3ded69c81bfff695d919557b118a15c8df5ae7684e4c54f22cb2057",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.kretinga.lt/",
+    "record_key": "rec-86afc1dc98454e79ed807e8e20bcb4ab1e796d0e4d5389cf024aeeee2829bfc0",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.kupiskis.lt/",
+    "record_key": "rec-b969f582bc7ee61d2488e900bc5278e5695219a4bd92f10c416a0194000a3623",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.kupiskis.lt/",
+    "record_key": "rec-704ef25fdc73871cddf1ab68b1f1adef5839cceae9a13bd309db57fb18133647",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.lazdijai.lt/",
+    "record_key": "rec-b7698c9bdfbc9d258e6df8cb1b61657ecddc1cfdec9a0aa665a0cbef438595df",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.lazdijai.lt/",
+    "record_key": "rec-450c53bf11a77124de9f0278fed36fe9a8a7b31f2ccbf4ad58636989c17917dc",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.marijampole.lt/",
+    "record_key": "rec-89de0a5d74b0983c481d1cf8fdbd137afe5d9bbe382ca4921d00287a7bbada09",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.marijampole.lt/",
+    "record_key": "rec-5722407e6a511689c9b306cf4156e92975563475af6512282a9fe829d79eb1ad",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.mazeikiai.lt/",
+    "record_key": "rec-ef3083471fd3dcfe86ab5f9a8ef94ff11be252a0b2cb95243a6534353813d100",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.mazeikiai.lt/",
+    "record_key": "rec-dee974c89de6fd469985293d103988a84fb2c6c993bf147214283d4349428b10",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.moletai.lt/",
+    "record_key": "rec-ce26e817bbdf5ce031264d97e4fe59cd65f450184b7c7e33ac9442ee25ac02bb",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.moletai.lt/",
+    "record_key": "rec-82747a4f81a9fe54eb3d59532bb50c6678da2fc14871a0dbce7c73354525c8f6",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.neringa.lt/",
+    "record_key": "rec-90aac2ffb032d1f5080f8ed0e628837262026a254d71fe540ee4d4b23b6f81fe",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.neringa.lt/",
+    "record_key": "rec-c1ab57e82e8a85e28d03c92967d8c50f45c359da180ea55e3617c167e5587de5",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.pagegiai.lt/",
+    "record_key": "rec-fdec39b62f62eefd950f3dd945c35766b4eff0df849f25652ac9a8a6aecd6440",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.pagegiai.lt/",
+    "record_key": "rec-d65e9a13d83b8f439470f578d9a0409707ac307c72a7c2d5d8d6ccc58ecd89e0",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.pakruojis.lt/",
+    "record_key": "rec-ba1579d9012fc9b75269899a9315fa6d7f108f61cf726a2b4b46cfc00dd32e36",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.pakruojis.lt/",
+    "record_key": "rec-bce7ee45427b38715edc02267931b9fcbf22fb201271a34df18ed41336495793",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.palanga.lt/",
+    "record_key": "rec-d2fa1a2430e010e290ef41c11f71339c59bd08c8cf5992f3b988ee7f72537b42",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.palanga.lt/",
+    "record_key": "rec-0ea1b7e52a1da340cbbe9a1ee064588ae76a006edd280f369926aa08b8f4d1b8",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.panevezys.lt/",
+    "record_key": "rec-92bc6d95c800cc9be12438069826244499713040b5f931df1538585ae5b25f72",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.panevezys.lt/",
+    "record_key": "rec-a61fde63117bf26230a128686ea6ef0fc0b113ebc05c27e062173893f8adae6e",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.panrs.lt/",
+    "record_key": "rec-0b52723e128335e94a9f47d90488dd2c5cf1f30db04e042c860fe6c728136561",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.panrs.lt/",
+    "record_key": "rec-9f0cd949133d301ee823e22f4273a82b2458b24999287a3c540f6ec6cf49ac9c",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.pasvalys.lt/",
+    "record_key": "rec-b2f2f1d6a6b202b556017d0b45894e2667df626c8ad576ea31ca02e00086160e",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.pasvalys.lt/",
+    "record_key": "rec-82de7991b5c92ad08563f5fe69648062c722a32867e190f827654d8bca53b6ce",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.plunge.lt/",
+    "record_key": "rec-7c6c3810c0df15d7f465e998cf8dc48797a10724bca2c852bbd74acf7ddeb51b",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.plunge.lt/",
+    "record_key": "rec-4a64b50ccc5d535f0cd508fd6addb24cf17c27bb3d0867226742eca8d3121ebc",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.prienai.lt/",
+    "record_key": "rec-f0812a06a95ed09bfe40d6ecdcd8a753889e145f0eddaa2cb7a575268fc3a7f0",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.prienai.lt/",
+    "record_key": "rec-c4508a13ca2bbb97e0e6d110652b39eb61c7148a9cc6684478ce02d466b138c7",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.radviliskis.lt/",
+    "record_key": "rec-aa73810a9e515993c863102c4fbe5b82f0b1b3d8989a54c0611bb8a48b0835e7",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.radviliskis.lt/",
+    "record_key": "rec-ba3026d3afb97f9493e280e9a185524786bd2d6869077572c5dde853ec52b7a9",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.raseiniai.lt/",
+    "record_key": "rec-24b641a842a9ce871302bcf83fd33254d701c8843a92c3943e3c5ba0f9e29e4e",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.raseiniai.lt/",
+    "record_key": "rec-5fdfa2cc33e453f6d2ae66a1ac4fcd0b5781c881df1234ff90b95fed3d8a77a5",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.rietavas.lt/",
+    "record_key": "rec-f77f394a08c0bee6baab365e0867a53401b46e33acecf24e1237c27b041a43cf",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.rietavas.lt/",
+    "record_key": "rec-c7a9c3eea9ca6bf6da737a640e98e3153efc1663d6615f446082c8cfa6efc6e0",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.rokiskis.lt/",
+    "record_key": "rec-fdc71ed3f9f0bc9cc86e6d364eeffe738c82bd732f2ee7c94c7a928cae9be406",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.rokiskis.lt/",
+    "record_key": "rec-091aa59cf6a48791ee7b45110e76363836c39ada76314af9df548970f2f0539d",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.skuodas.lt/",
+    "record_key": "rec-59c3f8d30d9cfece87e473a11ae42065bf5fd24966aaa6e017102bb4a9248de6",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.skuodas.lt/",
+    "record_key": "rec-0095db171c98d3293a3a75710b51c1fbbd2d3dc3c97be79b482956dec4924de1",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.sakiai.lt/",
+    "record_key": "rec-176dcf9268350777fc279af80bbf521a874d4105bbd7de7e9192ba52b303c1ac",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.sakiai.lt/",
+    "record_key": "rec-6b290cf5e57e0fc6ffcfc894ccd4462fe5a5f67952f361bb035cb7b72d051ac6",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.salcininkai.lt/",
+    "record_key": "rec-4454dc79183bc4a1d6ef6154d9dbd7f1a0fc7fc748d710399a9c431f4d5f06fb",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.salcininkai.lt/",
+    "record_key": "rec-58ad0cff5885829b06e8d930d61920804da5e17f8e356bcba28a39497b686fbc",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.siauliai.lt/",
+    "record_key": "rec-41632c2e9e49bea4a47654965b72e46737837dc80375b1ddad2e6c74429f58ba",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.siauliai.lt/",
+    "record_key": "rec-c7c313870ad8945f42de3c2039b8ed4e509dcd1a00d1f396df27df29a8671e39",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.siauliuraj.lt/",
+    "record_key": "rec-2549ccf79a61d3dae3b081dab690913eb289f03496afbc28074e2ddcac48cd28",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.siauliuraj.lt/",
+    "record_key": "rec-68c3254d6dbd1433d0a27cf48eadb2cf76d7c6110af2022b04d7567cf98b9c11",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.silale.lt/",
+    "record_key": "rec-13d858b6de67ef3eeefe24507e9f84ffa9dd0b9d5e31e0e020e55c4740f17d31",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.silale.lt/",
+    "record_key": "rec-3757b195ce08238eb74afc7a22e1c28387c6c31657fd5b464db1e464189c43c0",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.silute.lt/",
+    "record_key": "rec-6c8cad6c32fdcbad66b7b599b0bbb3a3ec52a730d619e1326d1fb2a514409ab1",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.silute.lt/",
+    "record_key": "rec-bf9baf51edd491d90cb15bc484c9565bbfcbf7804769fc4cb46300fa93784e9a",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.sirvintos.lt/",
+    "record_key": "rec-a47f31c2d303ea20f618cb08a1a7c23bfa1ff51652ab96774bc578864d4c3aa9",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.sirvintos.lt/",
+    "record_key": "rec-2875bd76065bf0d9bb2aad0556eef52bc3a5baba1c4656169d1a41a90fae80bc",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.svencionys.lt/",
+    "record_key": "rec-f967db8d6ac749cbb4a2ddff60fc611a5e8af2ece3b0141a1b9418d35a14efe9",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.svencionys.lt/",
+    "record_key": "rec-74f1610974442aef90e52a9e952e82f1ba40fc7f282a94c571c0f0ba02c6c34d",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.taurage.lt/",
+    "record_key": "rec-7f4b5302d991b372f1fffd766c1dee101515eeda34863168f112b4f34d54bd90",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.taurage.lt/",
+    "record_key": "rec-3c750809ed55ad2246c29060de31f4e767adf475ac9f862a3e598cadb7b57e65",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.telsiai.lt/",
+    "record_key": "rec-47602c4c5bfc20fd89e535b0fe542ab51cc52320d162e47c2bdbbc6b58cae88a",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.telsiai.lt/",
+    "record_key": "rec-e7d1f8dae54d405e0ebfdd76552a864fd52d90c3d1a1e4eb67d391a29786e87a",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.trakai.lt/",
+    "record_key": "rec-72dc17397857b00ac81771beaab260e76c503f8aad4477779372f1ba1b91c7af",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.trakai.lt/",
+    "record_key": "rec-892e05b66e6db37e06ddff9f6b5707382f74c25b65fb6b12e0b34f5924c2b9f3",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.ukmerge.lt/",
+    "record_key": "rec-f1f4a610e5c38b4f13d38cb6f24454d5cd85e037f83b2c4209ba71103c7b1823",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.ukmerge.lt/",
+    "record_key": "rec-74d0573d1e733cb83459f2c2243fc47772588ac9c7e2dbc6c077ebf0724dcf6d",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.utena.lt/",
+    "record_key": "rec-81ed65d0ab1b40d050061ddffcb685635b85f81f0ebd09cd8d0523ff148787f9",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.utena.lt/",
+    "record_key": "rec-c84651d3aff1482e8334e8bd052b856e3387118eda2f2aec2c6c4c774956d78a",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.varena.lt/",
+    "record_key": "rec-517983e020939c6ca05ef7193725c437b6eb32e8d0390d6ffbb9a3e718652b10",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.varena.lt/",
+    "record_key": "rec-01207f73b6157b31e17786f5e0ee0f36e2f2d8e1a4dee955cdc516ca7740b556",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.vilkaviskis.lt/",
+    "record_key": "rec-63bb0a198091a8d81334eadef3c3b812dc67af97843dbf72045146702b08e195",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.vilkaviskis.lt/",
+    "record_key": "rec-3abc5f0fc7a4fc6cfa0296e36dd88992cb80aab34946bf86e716076b9cc82c64",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.vilnius.lt/",
+    "record_key": "rec-41b9ba8caad813431a8db8428e89ed81f8b87c82519899dff9d9e365d2a09ee2",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.vilnius.lt/",
+    "record_key": "rec-e3dc5df6943846376c313ff3f9b3d5340370c4f255f5a9ac22e0195536cae411",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.vrsa.lt/",
+    "record_key": "rec-e295e8bd5ad5abead0a5fae4bfdd40431fc6aee9295246fff8d783f2a921b26a",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.vrsa.lt/",
+    "record_key": "rec-0ff015cf4e5759e53058cb67026dd0ee2b483b66ee8ae159c2c6884f6c57b271",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.visaginas.lt/",
+    "record_key": "rec-a2a2dfd6325380e3859c6f87721349448def6f6f099c84ee2c0f4a427dc0ef58",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.visaginas.lt/",
+    "record_key": "rec-d48fafc9eab45ba9cb1038f8d48d87724e1bffee8355dea5613e51495e5b2c74",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:municipal_council",
+    "upstream_id": "http://www.zarasai.lt/",
+    "record_key": "rec-0d2e998e27b6468e8efa0bbb3a03daeb9cf956af21408dccecf54d91078cd016",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  },
+  {
+    "entity_kind": "office",
+    "upstream_namespace": "lsa:municipality-website:2026-snapshot:direct_mayor",
+    "upstream_id": "http://www.zarasai.lt/",
+    "record_key": "rec-9fecef448d63e75bbc255334678957367307c26bd418e305460ec586b01750f7",
+    "reason": "Source URL alias only, not legal successor or official numerical municipality code."
+  }
+]

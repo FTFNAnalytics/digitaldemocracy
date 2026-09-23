@@ -1,0 +1,4195 @@
+{
+  "schema_version": "atlas-documentary-identity-vectors/1",
+  "lineage_id": "country-package-lithuania",
+  "id_namespace": "cdd-observatory-v1",
+  "offices": [
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/0",
+      "office_id": "LT-lsa-61244a98ecf1b6948da37f0c-C",
+      "source_code": "http://www.akmene.lt/",
+      "record_key": "rec-754540e3e4700c0411642bd3caf8e67c6d0a447255526c0c852135f9ad2e9d92"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/1",
+      "office_id": "LT-lsa-61244a98ecf1b6948da37f0c-M",
+      "source_code": "http://www.akmene.lt/",
+      "record_key": "rec-9514dd44b1677b0f0b8491e27f8313dbac457e148cd29de83705495216d5d7c7"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/2",
+      "office_id": "LT-lsa-a37cb57d1d21c13c7785d48c-C",
+      "source_code": "http://www.ams.lt/",
+      "record_key": "rec-55dcb6e56193a9085f37a07dc6b02817c04f2f8bb0a2793c5c800a0c39daa312"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/3",
+      "office_id": "LT-lsa-a37cb57d1d21c13c7785d48c-M",
+      "source_code": "http://www.ams.lt/",
+      "record_key": "rec-337676129f8b02ead77b7e14531812684f7d953ca10d750d26ff09f13315a738"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/4",
+      "office_id": "LT-lsa-3df3bd1f6878f586c8c56d39-C",
+      "source_code": "http://www.arsa.lt/",
+      "record_key": "rec-1ab689e83f7e1de88e42b58986aadbdb42c7f572cdcbca1ed2fb3009b81bb6c8"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/5",
+      "office_id": "LT-lsa-3df3bd1f6878f586c8c56d39-M",
+      "source_code": "http://www.arsa.lt/",
+      "record_key": "rec-f6988bef74ca90b7b5b7a125c17efa12c6b4def4fb57add36163281ac5111cf2"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/6",
+      "office_id": "LT-lsa-5151ba6a411875432b99a995-C",
+      "source_code": "http://www.anyksciai.lt/",
+      "record_key": "rec-3087c3dfaff090d6bdce58c48b0eecf8beda2cd4c9e39ecacb7bdce0ce73efa7"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/7",
+      "office_id": "LT-lsa-5151ba6a411875432b99a995-M",
+      "source_code": "http://www.anyksciai.lt/",
+      "record_key": "rec-479e45b6b6788f3adf9eabbb0d9365c1e262a3afe59fbca93bb7b19039c12faa"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/8",
+      "office_id": "LT-lsa-70d0a7ea9e5bd43d47db3666-C",
+      "source_code": "http://www.birstonas.lt/",
+      "record_key": "rec-aa96df8f47d3cc71da9597b03fb0434621681d17c21cc11876ebcc7a492dd64d"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/9",
+      "office_id": "LT-lsa-70d0a7ea9e5bd43d47db3666-M",
+      "source_code": "http://www.birstonas.lt/",
+      "record_key": "rec-784110499b3c9b88af0b8baad86d31b0296aac3896321ba32386bfcdb5f0d747"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/10",
+      "office_id": "LT-lsa-9ba7e61990c37b0a8f072e4f-C",
+      "source_code": "http://www.birzai.lt/",
+      "record_key": "rec-c3490355bf0f1d31085e0265b2e1c9cae4aafc77eca80eaa0a5a9fc676a33918"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/11",
+      "office_id": "LT-lsa-9ba7e61990c37b0a8f072e4f-M",
+      "source_code": "http://www.birzai.lt/",
+      "record_key": "rec-c02286e1d6a8a8863f67a0caf2d1e6963885decbccd2a8d07bd81ebf931f3874"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/12",
+      "office_id": "LT-lsa-ab0ef52353bf4d4eee179b45-C",
+      "source_code": "https://druskininkusavivaldybe.lt/",
+      "record_key": "rec-0b68ece3a574e19120028bce12f1e7707aedead25c3dc912f098d999a76c97d8"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/13",
+      "office_id": "LT-lsa-ab0ef52353bf4d4eee179b45-M",
+      "source_code": "https://druskininkusavivaldybe.lt/",
+      "record_key": "rec-78af0bd2886a369361e2fcc04c4dfb37fff5f6ef9b99098fb99e671d82d115cb"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/14",
+      "office_id": "LT-lsa-c8b1b0002f3712a6351f5033-C",
+      "source_code": "http://www.elektrenai.lt/",
+      "record_key": "rec-fcc93eb5b6cf1a840667087d5641109e72cd322408c78f1d8ecd214d40be529e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/15",
+      "office_id": "LT-lsa-c8b1b0002f3712a6351f5033-M",
+      "source_code": "http://www.elektrenai.lt/",
+      "record_key": "rec-9d117a2d740a9e249a74dae4c96a98e9bf1977219936ae6882d2cd5df719f3bf"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/16",
+      "office_id": "LT-lsa-25cdb23a5256618bd09a6a26-C",
+      "source_code": "http://www.ignalina.lt/",
+      "record_key": "rec-1ceba2ecf8558859494aced6682274e1c61e1909997290258d8556fc0e7357af"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/17",
+      "office_id": "LT-lsa-25cdb23a5256618bd09a6a26-M",
+      "source_code": "http://www.ignalina.lt/",
+      "record_key": "rec-b9ea2c358c95ee595f8edd7b48442f6e4d8b3b24ba6e55440517758f2d95b511"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/18",
+      "office_id": "LT-lsa-ac33a6ea903ac3ddb25723d2-C",
+      "source_code": "http://www.jonava.lt/",
+      "record_key": "rec-cc7ff86ec349c980cce7490bd3bc2e3cc98a8a7d196c8da81aafedb75233accb"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/19",
+      "office_id": "LT-lsa-ac33a6ea903ac3ddb25723d2-M",
+      "source_code": "http://www.jonava.lt/",
+      "record_key": "rec-bbbcb51ee390f709fd5e8eb6cf9bb5c44bd9c1c63e89cf37a1c1439fe2696c40"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/20",
+      "office_id": "LT-lsa-eafc79549108de33472fc7a8-C",
+      "source_code": "http://www.joniskis.lt/",
+      "record_key": "rec-d41d3fe2482ec46e9a2a15a3ac8bf2b7e68827dcd39d6510d960a35dd17891be"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/21",
+      "office_id": "LT-lsa-eafc79549108de33472fc7a8-M",
+      "source_code": "http://www.joniskis.lt/",
+      "record_key": "rec-7c0929af76bdbc38eb992543739904cba9ed65326ebe89ace999912085a43714"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/22",
+      "office_id": "LT-lsa-a7f6e1ac7213d28d5c5798e0-C",
+      "source_code": "http://www.jurbarkas.lt/",
+      "record_key": "rec-c50bcfb3f6a4151b8106a08c5cff74e62dc8e1dc0774d3126cf983c400bf9693"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/23",
+      "office_id": "LT-lsa-a7f6e1ac7213d28d5c5798e0-M",
+      "source_code": "http://www.jurbarkas.lt/",
+      "record_key": "rec-7aa00116d9d79e13a67fbd716fc0f484808bb9ac98691424cdd9c2632dfd25d7"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/24",
+      "office_id": "LT-lsa-7d17004fa09bf0d242147bb3-C",
+      "source_code": "http://www.kaisiadorys.lt/",
+      "record_key": "rec-35cf0d4d218735599be98816d909369fb1a75992b22b9469bfacfc75071fbdd7"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/25",
+      "office_id": "LT-lsa-7d17004fa09bf0d242147bb3-M",
+      "source_code": "http://www.kaisiadorys.lt/",
+      "record_key": "rec-ab0a60fe9c29c9a3a341dd4887eb13da3cb717b3df8cb0e84811a1893d3938c6"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/26",
+      "office_id": "LT-lsa-8b0a44cd50b13b6c9b333169-C",
+      "source_code": "http://www.kalvarija.lt/",
+      "record_key": "rec-b52ebd9254786dc3e11637f615747da1a344d772810e02899b3f5ac2e329d9f0"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/27",
+      "office_id": "LT-lsa-8b0a44cd50b13b6c9b333169-M",
+      "source_code": "http://www.kalvarija.lt/",
+      "record_key": "rec-2689b77faa6f20e2ec09beccd599158b7edcd731ede566a3b768c0c341c5ae3a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/28",
+      "office_id": "LT-lsa-4617e92357bd51e717734b81-C",
+      "source_code": "http://www.kaunas.lt/",
+      "record_key": "rec-3e8a50f2eae05589ba575c92a5f13de4551a54b9b1e4856a4f9421684151c0b6"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/29",
+      "office_id": "LT-lsa-4617e92357bd51e717734b81-M",
+      "source_code": "http://www.kaunas.lt/",
+      "record_key": "rec-c4b087f3b1e808ef4fadb94e914d730c95e4190fa17ae80765d863ba9f479346"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/30",
+      "office_id": "LT-lsa-4a5a1f93917a28e3abdb29e5-C",
+      "source_code": "http://www.krs.lt/",
+      "record_key": "rec-6ece75873d7a2f379f24205c051f2e214e65d3103a46cb4c1c6759a9a27788de"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/31",
+      "office_id": "LT-lsa-4a5a1f93917a28e3abdb29e5-M",
+      "source_code": "http://www.krs.lt/",
+      "record_key": "rec-c1a6b40b621a42860d29a933d8f3bef55ebe5ff1242c619cedd2102ac86db6f1"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/32",
+      "office_id": "LT-lsa-86c5531b9462a95617480586-C",
+      "source_code": "http://www.kazluruda.lt/",
+      "record_key": "rec-1456b2125430021d94e2cbb21d4a218fba2c4baaebe627726e7f42ca0f0b7d21"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/33",
+      "office_id": "LT-lsa-86c5531b9462a95617480586-M",
+      "source_code": "http://www.kazluruda.lt/",
+      "record_key": "rec-ba8ea2321d30bd12be77d3dadc34ce3e2898736e95dd50fbc1aad458f3c377ab"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/34",
+      "office_id": "LT-lsa-5c116a270b32f7ca77ff7c26-C",
+      "source_code": "http://www.kelme.lt/",
+      "record_key": "rec-9c4a83cd37ebea4a7e343b1ffdcaf43b312f39c2abdd9c52be06687893142638"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/35",
+      "office_id": "LT-lsa-5c116a270b32f7ca77ff7c26-M",
+      "source_code": "http://www.kelme.lt/",
+      "record_key": "rec-af12923ca185d5294204d286fc7923a84bb6371a5fd3d847fb55715babe08389"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/36",
+      "office_id": "LT-lsa-ea75b499bb7168fb0e92352f-C",
+      "source_code": "http://www.kedainiai.lt/",
+      "record_key": "rec-6b4445ab2d8ccb8b855c016f09c0463f71ea625b73c3c1e6d5ad1758ecb013bd"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/37",
+      "office_id": "LT-lsa-ea75b499bb7168fb0e92352f-M",
+      "source_code": "http://www.kedainiai.lt/",
+      "record_key": "rec-409f0cca35a6ad758d49d949887e1ae71c5417899d29acb1ff2fb1a206aa3d5b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/38",
+      "office_id": "LT-lsa-5caa71df814d22658631829f-C",
+      "source_code": "http://www.klaipeda.lt/",
+      "record_key": "rec-a911bcc90a0af610deeacf253acd267e137a4d47eb8a42bd95baa4e0bacc8601"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/39",
+      "office_id": "LT-lsa-5caa71df814d22658631829f-M",
+      "source_code": "http://www.klaipeda.lt/",
+      "record_key": "rec-0f2378361dd0d94859ff352be49097f4295f381bc8bf9556ebc1b8b6209ce11a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/40",
+      "office_id": "LT-lsa-209e7b36b381075381de7927-C",
+      "source_code": "http://www.klaipedos-r.lt/",
+      "record_key": "rec-b42dd7aa47caf5494f0b5f9d0dab7933d8152b06fca641b7f27011cf574004dc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/41",
+      "office_id": "LT-lsa-209e7b36b381075381de7927-M",
+      "source_code": "http://www.klaipedos-r.lt/",
+      "record_key": "rec-753a96cb4b7cbba7e0d6a9b5f5cadc7b849aee8248e33ce8677da14d6606d8c4"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/42",
+      "office_id": "LT-lsa-34a2fc6f5e0178a1829c274a-C",
+      "source_code": "http://www.kretinga.lt/",
+      "record_key": "rec-fbac026ae3ded69c81bfff695d919557b118a15c8df5ae7684e4c54f22cb2057"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/43",
+      "office_id": "LT-lsa-34a2fc6f5e0178a1829c274a-M",
+      "source_code": "http://www.kretinga.lt/",
+      "record_key": "rec-86afc1dc98454e79ed807e8e20bcb4ab1e796d0e4d5389cf024aeeee2829bfc0"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/44",
+      "office_id": "LT-lsa-255fa690d5cd5290eec34929-C",
+      "source_code": "http://www.kupiskis.lt/",
+      "record_key": "rec-b969f582bc7ee61d2488e900bc5278e5695219a4bd92f10c416a0194000a3623"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/45",
+      "office_id": "LT-lsa-255fa690d5cd5290eec34929-M",
+      "source_code": "http://www.kupiskis.lt/",
+      "record_key": "rec-704ef25fdc73871cddf1ab68b1f1adef5839cceae9a13bd309db57fb18133647"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/46",
+      "office_id": "LT-lsa-c043419abfda0987ff03ad81-C",
+      "source_code": "http://www.lazdijai.lt/",
+      "record_key": "rec-b7698c9bdfbc9d258e6df8cb1b61657ecddc1cfdec9a0aa665a0cbef438595df"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/47",
+      "office_id": "LT-lsa-c043419abfda0987ff03ad81-M",
+      "source_code": "http://www.lazdijai.lt/",
+      "record_key": "rec-450c53bf11a77124de9f0278fed36fe9a8a7b31f2ccbf4ad58636989c17917dc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/48",
+      "office_id": "LT-lsa-d6298552d1885c933957c2cb-C",
+      "source_code": "http://www.marijampole.lt/",
+      "record_key": "rec-89de0a5d74b0983c481d1cf8fdbd137afe5d9bbe382ca4921d00287a7bbada09"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/49",
+      "office_id": "LT-lsa-d6298552d1885c933957c2cb-M",
+      "source_code": "http://www.marijampole.lt/",
+      "record_key": "rec-5722407e6a511689c9b306cf4156e92975563475af6512282a9fe829d79eb1ad"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/50",
+      "office_id": "LT-lsa-b05533bac82daf8bfa953703-C",
+      "source_code": "http://www.mazeikiai.lt/",
+      "record_key": "rec-ef3083471fd3dcfe86ab5f9a8ef94ff11be252a0b2cb95243a6534353813d100"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/51",
+      "office_id": "LT-lsa-b05533bac82daf8bfa953703-M",
+      "source_code": "http://www.mazeikiai.lt/",
+      "record_key": "rec-dee974c89de6fd469985293d103988a84fb2c6c993bf147214283d4349428b10"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/52",
+      "office_id": "LT-lsa-c0920215ff8130e91f21f476-C",
+      "source_code": "http://www.moletai.lt/",
+      "record_key": "rec-ce26e817bbdf5ce031264d97e4fe59cd65f450184b7c7e33ac9442ee25ac02bb"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/53",
+      "office_id": "LT-lsa-c0920215ff8130e91f21f476-M",
+      "source_code": "http://www.moletai.lt/",
+      "record_key": "rec-82747a4f81a9fe54eb3d59532bb50c6678da2fc14871a0dbce7c73354525c8f6"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/54",
+      "office_id": "LT-lsa-fd1f7e4a64386f082c7464c4-C",
+      "source_code": "http://www.neringa.lt/",
+      "record_key": "rec-90aac2ffb032d1f5080f8ed0e628837262026a254d71fe540ee4d4b23b6f81fe"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/55",
+      "office_id": "LT-lsa-fd1f7e4a64386f082c7464c4-M",
+      "source_code": "http://www.neringa.lt/",
+      "record_key": "rec-c1ab57e82e8a85e28d03c92967d8c50f45c359da180ea55e3617c167e5587de5"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/56",
+      "office_id": "LT-lsa-97de1649eece489af8eead5a-C",
+      "source_code": "http://www.pagegiai.lt/",
+      "record_key": "rec-fdec39b62f62eefd950f3dd945c35766b4eff0df849f25652ac9a8a6aecd6440"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/57",
+      "office_id": "LT-lsa-97de1649eece489af8eead5a-M",
+      "source_code": "http://www.pagegiai.lt/",
+      "record_key": "rec-d65e9a13d83b8f439470f578d9a0409707ac307c72a7c2d5d8d6ccc58ecd89e0"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/58",
+      "office_id": "LT-lsa-7eba97ace8f6b09a1558ca61-C",
+      "source_code": "http://www.pakruojis.lt/",
+      "record_key": "rec-ba1579d9012fc9b75269899a9315fa6d7f108f61cf726a2b4b46cfc00dd32e36"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/59",
+      "office_id": "LT-lsa-7eba97ace8f6b09a1558ca61-M",
+      "source_code": "http://www.pakruojis.lt/",
+      "record_key": "rec-bce7ee45427b38715edc02267931b9fcbf22fb201271a34df18ed41336495793"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/60",
+      "office_id": "LT-lsa-9b51900bb432dfb132e5a413-C",
+      "source_code": "http://www.palanga.lt/",
+      "record_key": "rec-d2fa1a2430e010e290ef41c11f71339c59bd08c8cf5992f3b988ee7f72537b42"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/61",
+      "office_id": "LT-lsa-9b51900bb432dfb132e5a413-M",
+      "source_code": "http://www.palanga.lt/",
+      "record_key": "rec-0ea1b7e52a1da340cbbe9a1ee064588ae76a006edd280f369926aa08b8f4d1b8"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/62",
+      "office_id": "LT-lsa-626d9757333c46171af3ca13-C",
+      "source_code": "http://www.panevezys.lt/",
+      "record_key": "rec-92bc6d95c800cc9be12438069826244499713040b5f931df1538585ae5b25f72"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/63",
+      "office_id": "LT-lsa-626d9757333c46171af3ca13-M",
+      "source_code": "http://www.panevezys.lt/",
+      "record_key": "rec-a61fde63117bf26230a128686ea6ef0fc0b113ebc05c27e062173893f8adae6e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/64",
+      "office_id": "LT-lsa-c14c28740e06662bb42abaae-C",
+      "source_code": "http://www.panrs.lt/",
+      "record_key": "rec-0b52723e128335e94a9f47d90488dd2c5cf1f30db04e042c860fe6c728136561"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/65",
+      "office_id": "LT-lsa-c14c28740e06662bb42abaae-M",
+      "source_code": "http://www.panrs.lt/",
+      "record_key": "rec-9f0cd949133d301ee823e22f4273a82b2458b24999287a3c540f6ec6cf49ac9c"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/66",
+      "office_id": "LT-lsa-3b3c7641b01288497cc0e0c0-C",
+      "source_code": "http://www.pasvalys.lt/",
+      "record_key": "rec-b2f2f1d6a6b202b556017d0b45894e2667df626c8ad576ea31ca02e00086160e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/67",
+      "office_id": "LT-lsa-3b3c7641b01288497cc0e0c0-M",
+      "source_code": "http://www.pasvalys.lt/",
+      "record_key": "rec-82de7991b5c92ad08563f5fe69648062c722a32867e190f827654d8bca53b6ce"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/68",
+      "office_id": "LT-lsa-6d74b5aa708195f8f43b1c86-C",
+      "source_code": "http://www.plunge.lt/",
+      "record_key": "rec-7c6c3810c0df15d7f465e998cf8dc48797a10724bca2c852bbd74acf7ddeb51b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/69",
+      "office_id": "LT-lsa-6d74b5aa708195f8f43b1c86-M",
+      "source_code": "http://www.plunge.lt/",
+      "record_key": "rec-4a64b50ccc5d535f0cd508fd6addb24cf17c27bb3d0867226742eca8d3121ebc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/70",
+      "office_id": "LT-lsa-b07e58fb52f78307281708a1-C",
+      "source_code": "http://www.prienai.lt/",
+      "record_key": "rec-f0812a06a95ed09bfe40d6ecdcd8a753889e145f0eddaa2cb7a575268fc3a7f0"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/71",
+      "office_id": "LT-lsa-b07e58fb52f78307281708a1-M",
+      "source_code": "http://www.prienai.lt/",
+      "record_key": "rec-c4508a13ca2bbb97e0e6d110652b39eb61c7148a9cc6684478ce02d466b138c7"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/72",
+      "office_id": "LT-lsa-7f640f99d3b6ab5802b3763e-C",
+      "source_code": "http://www.radviliskis.lt/",
+      "record_key": "rec-aa73810a9e515993c863102c4fbe5b82f0b1b3d8989a54c0611bb8a48b0835e7"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/73",
+      "office_id": "LT-lsa-7f640f99d3b6ab5802b3763e-M",
+      "source_code": "http://www.radviliskis.lt/",
+      "record_key": "rec-ba3026d3afb97f9493e280e9a185524786bd2d6869077572c5dde853ec52b7a9"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/74",
+      "office_id": "LT-lsa-20f27e897b0cc59e47c2cadc-C",
+      "source_code": "http://www.raseiniai.lt/",
+      "record_key": "rec-24b641a842a9ce871302bcf83fd33254d701c8843a92c3943e3c5ba0f9e29e4e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/75",
+      "office_id": "LT-lsa-20f27e897b0cc59e47c2cadc-M",
+      "source_code": "http://www.raseiniai.lt/",
+      "record_key": "rec-5fdfa2cc33e453f6d2ae66a1ac4fcd0b5781c881df1234ff90b95fed3d8a77a5"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/76",
+      "office_id": "LT-lsa-020b89cd0cb5735da3e73cee-C",
+      "source_code": "http://www.rietavas.lt/",
+      "record_key": "rec-f77f394a08c0bee6baab365e0867a53401b46e33acecf24e1237c27b041a43cf"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/77",
+      "office_id": "LT-lsa-020b89cd0cb5735da3e73cee-M",
+      "source_code": "http://www.rietavas.lt/",
+      "record_key": "rec-c7a9c3eea9ca6bf6da737a640e98e3153efc1663d6615f446082c8cfa6efc6e0"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/78",
+      "office_id": "LT-lsa-6c0c69314d449fbc3683457a-C",
+      "source_code": "http://www.rokiskis.lt/",
+      "record_key": "rec-fdc71ed3f9f0bc9cc86e6d364eeffe738c82bd732f2ee7c94c7a928cae9be406"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/79",
+      "office_id": "LT-lsa-6c0c69314d449fbc3683457a-M",
+      "source_code": "http://www.rokiskis.lt/",
+      "record_key": "rec-091aa59cf6a48791ee7b45110e76363836c39ada76314af9df548970f2f0539d"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/80",
+      "office_id": "LT-lsa-8608c301a73a3cdf9b4c989a-C",
+      "source_code": "http://www.skuodas.lt/",
+      "record_key": "rec-59c3f8d30d9cfece87e473a11ae42065bf5fd24966aaa6e017102bb4a9248de6"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/81",
+      "office_id": "LT-lsa-8608c301a73a3cdf9b4c989a-M",
+      "source_code": "http://www.skuodas.lt/",
+      "record_key": "rec-0095db171c98d3293a3a75710b51c1fbbd2d3dc3c97be79b482956dec4924de1"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/82",
+      "office_id": "LT-lsa-952f03ad39e8e4878e0d9106-C",
+      "source_code": "http://www.sakiai.lt/",
+      "record_key": "rec-176dcf9268350777fc279af80bbf521a874d4105bbd7de7e9192ba52b303c1ac"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/83",
+      "office_id": "LT-lsa-952f03ad39e8e4878e0d9106-M",
+      "source_code": "http://www.sakiai.lt/",
+      "record_key": "rec-6b290cf5e57e0fc6ffcfc894ccd4462fe5a5f67952f361bb035cb7b72d051ac6"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/84",
+      "office_id": "LT-lsa-7da848dbca7a50a3593dc043-C",
+      "source_code": "http://www.salcininkai.lt/",
+      "record_key": "rec-4454dc79183bc4a1d6ef6154d9dbd7f1a0fc7fc748d710399a9c431f4d5f06fb"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/85",
+      "office_id": "LT-lsa-7da848dbca7a50a3593dc043-M",
+      "source_code": "http://www.salcininkai.lt/",
+      "record_key": "rec-58ad0cff5885829b06e8d930d61920804da5e17f8e356bcba28a39497b686fbc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/86",
+      "office_id": "LT-lsa-d80e14b38b9936a6f5b8c2c0-C",
+      "source_code": "http://www.siauliai.lt/",
+      "record_key": "rec-41632c2e9e49bea4a47654965b72e46737837dc80375b1ddad2e6c74429f58ba"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/87",
+      "office_id": "LT-lsa-d80e14b38b9936a6f5b8c2c0-M",
+      "source_code": "http://www.siauliai.lt/",
+      "record_key": "rec-c7c313870ad8945f42de3c2039b8ed4e509dcd1a00d1f396df27df29a8671e39"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/88",
+      "office_id": "LT-lsa-34b428a72ccd7550bd2277d4-C",
+      "source_code": "http://www.siauliuraj.lt/",
+      "record_key": "rec-2549ccf79a61d3dae3b081dab690913eb289f03496afbc28074e2ddcac48cd28"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/89",
+      "office_id": "LT-lsa-34b428a72ccd7550bd2277d4-M",
+      "source_code": "http://www.siauliuraj.lt/",
+      "record_key": "rec-68c3254d6dbd1433d0a27cf48eadb2cf76d7c6110af2022b04d7567cf98b9c11"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/90",
+      "office_id": "LT-lsa-310cee523c0dd4085c828e08-C",
+      "source_code": "http://www.silale.lt/",
+      "record_key": "rec-13d858b6de67ef3eeefe24507e9f84ffa9dd0b9d5e31e0e020e55c4740f17d31"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/91",
+      "office_id": "LT-lsa-310cee523c0dd4085c828e08-M",
+      "source_code": "http://www.silale.lt/",
+      "record_key": "rec-3757b195ce08238eb74afc7a22e1c28387c6c31657fd5b464db1e464189c43c0"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/92",
+      "office_id": "LT-lsa-e5061a6791000dd2352d4b2f-C",
+      "source_code": "http://www.silute.lt/",
+      "record_key": "rec-6c8cad6c32fdcbad66b7b599b0bbb3a3ec52a730d619e1326d1fb2a514409ab1"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/93",
+      "office_id": "LT-lsa-e5061a6791000dd2352d4b2f-M",
+      "source_code": "http://www.silute.lt/",
+      "record_key": "rec-bf9baf51edd491d90cb15bc484c9565bbfcbf7804769fc4cb46300fa93784e9a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/94",
+      "office_id": "LT-lsa-5ed71f409eb264bb6dfd727a-C",
+      "source_code": "http://www.sirvintos.lt/",
+      "record_key": "rec-a47f31c2d303ea20f618cb08a1a7c23bfa1ff51652ab96774bc578864d4c3aa9"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/95",
+      "office_id": "LT-lsa-5ed71f409eb264bb6dfd727a-M",
+      "source_code": "http://www.sirvintos.lt/",
+      "record_key": "rec-2875bd76065bf0d9bb2aad0556eef52bc3a5baba1c4656169d1a41a90fae80bc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/96",
+      "office_id": "LT-lsa-6bbab511ccac6b18f1dbac22-C",
+      "source_code": "http://www.svencionys.lt/",
+      "record_key": "rec-f967db8d6ac749cbb4a2ddff60fc611a5e8af2ece3b0141a1b9418d35a14efe9"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/97",
+      "office_id": "LT-lsa-6bbab511ccac6b18f1dbac22-M",
+      "source_code": "http://www.svencionys.lt/",
+      "record_key": "rec-74f1610974442aef90e52a9e952e82f1ba40fc7f282a94c571c0f0ba02c6c34d"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/98",
+      "office_id": "LT-lsa-ba767bcc6a05c047e6f72ff5-C",
+      "source_code": "http://www.taurage.lt/",
+      "record_key": "rec-7f4b5302d991b372f1fffd766c1dee101515eeda34863168f112b4f34d54bd90"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/99",
+      "office_id": "LT-lsa-ba767bcc6a05c047e6f72ff5-M",
+      "source_code": "http://www.taurage.lt/",
+      "record_key": "rec-3c750809ed55ad2246c29060de31f4e767adf475ac9f862a3e598cadb7b57e65"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/100",
+      "office_id": "LT-lsa-efd08c984b832d4133488b62-C",
+      "source_code": "http://www.telsiai.lt/",
+      "record_key": "rec-47602c4c5bfc20fd89e535b0fe542ab51cc52320d162e47c2bdbbc6b58cae88a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/101",
+      "office_id": "LT-lsa-efd08c984b832d4133488b62-M",
+      "source_code": "http://www.telsiai.lt/",
+      "record_key": "rec-e7d1f8dae54d405e0ebfdd76552a864fd52d90c3d1a1e4eb67d391a29786e87a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/102",
+      "office_id": "LT-lsa-193ebf889e0faaebe264cf0a-C",
+      "source_code": "http://www.trakai.lt/",
+      "record_key": "rec-72dc17397857b00ac81771beaab260e76c503f8aad4477779372f1ba1b91c7af"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/103",
+      "office_id": "LT-lsa-193ebf889e0faaebe264cf0a-M",
+      "source_code": "http://www.trakai.lt/",
+      "record_key": "rec-892e05b66e6db37e06ddff9f6b5707382f74c25b65fb6b12e0b34f5924c2b9f3"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/104",
+      "office_id": "LT-lsa-ec8c492c997798adf11aa838-C",
+      "source_code": "http://www.ukmerge.lt/",
+      "record_key": "rec-f1f4a610e5c38b4f13d38cb6f24454d5cd85e037f83b2c4209ba71103c7b1823"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/105",
+      "office_id": "LT-lsa-ec8c492c997798adf11aa838-M",
+      "source_code": "http://www.ukmerge.lt/",
+      "record_key": "rec-74d0573d1e733cb83459f2c2243fc47772588ac9c7e2dbc6c077ebf0724dcf6d"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/106",
+      "office_id": "LT-lsa-2142387c013aa6cc2d8768d2-C",
+      "source_code": "http://www.utena.lt/",
+      "record_key": "rec-81ed65d0ab1b40d050061ddffcb685635b85f81f0ebd09cd8d0523ff148787f9"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/107",
+      "office_id": "LT-lsa-2142387c013aa6cc2d8768d2-M",
+      "source_code": "http://www.utena.lt/",
+      "record_key": "rec-c84651d3aff1482e8334e8bd052b856e3387118eda2f2aec2c6c4c774956d78a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/108",
+      "office_id": "LT-lsa-f613b260d6a372a594276240-C",
+      "source_code": "http://www.varena.lt/",
+      "record_key": "rec-517983e020939c6ca05ef7193725c437b6eb32e8d0390d6ffbb9a3e718652b10"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/109",
+      "office_id": "LT-lsa-f613b260d6a372a594276240-M",
+      "source_code": "http://www.varena.lt/",
+      "record_key": "rec-01207f73b6157b31e17786f5e0ee0f36e2f2d8e1a4dee955cdc516ca7740b556"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/110",
+      "office_id": "LT-lsa-36a5f7a0976fa7cc09eb3e71-C",
+      "source_code": "http://www.vilkaviskis.lt/",
+      "record_key": "rec-63bb0a198091a8d81334eadef3c3b812dc67af97843dbf72045146702b08e195"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/111",
+      "office_id": "LT-lsa-36a5f7a0976fa7cc09eb3e71-M",
+      "source_code": "http://www.vilkaviskis.lt/",
+      "record_key": "rec-3abc5f0fc7a4fc6cfa0296e36dd88992cb80aab34946bf86e716076b9cc82c64"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/112",
+      "office_id": "LT-lsa-4541300e5f5db22203b27e48-C",
+      "source_code": "http://www.vilnius.lt/",
+      "record_key": "rec-41b9ba8caad813431a8db8428e89ed81f8b87c82519899dff9d9e365d2a09ee2"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/113",
+      "office_id": "LT-lsa-4541300e5f5db22203b27e48-M",
+      "source_code": "http://www.vilnius.lt/",
+      "record_key": "rec-e3dc5df6943846376c313ff3f9b3d5340370c4f255f5a9ac22e0195536cae411"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/114",
+      "office_id": "LT-lsa-4a0a277f22e3763c21adbd97-C",
+      "source_code": "http://www.vrsa.lt/",
+      "record_key": "rec-e295e8bd5ad5abead0a5fae4bfdd40431fc6aee9295246fff8d783f2a921b26a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/115",
+      "office_id": "LT-lsa-4a0a277f22e3763c21adbd97-M",
+      "source_code": "http://www.vrsa.lt/",
+      "record_key": "rec-0ff015cf4e5759e53058cb67026dd0ee2b483b66ee8ae159c2c6884f6c57b271"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/116",
+      "office_id": "LT-lsa-bf558bf41011d434e6c1b84e-C",
+      "source_code": "http://www.visaginas.lt/",
+      "record_key": "rec-a2a2dfd6325380e3859c6f87721349448def6f6f099c84ee2c0f4a427dc0ef58"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/117",
+      "office_id": "LT-lsa-bf558bf41011d434e6c1b84e-M",
+      "source_code": "http://www.visaginas.lt/",
+      "record_key": "rec-d48fafc9eab45ba9cb1038f8d48d87724e1bffee8355dea5613e51495e5b2c74"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/118",
+      "office_id": "LT-lsa-e784b378f434904980012d7d-C",
+      "source_code": "http://www.zarasai.lt/",
+      "record_key": "rec-0d2e998e27b6468e8efa0bbb3a03daeb9cf956af21408dccecf54d91078cd016"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/119",
+      "office_id": "LT-lsa-e784b378f434904980012d7d-M",
+      "source_code": "http://www.zarasai.lt/",
+      "record_key": "rec-9fecef448d63e75bbc255334678957367307c26bd418e305460ec586b01750f7"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/120",
+      "office_id": "LT-SEIMAS",
+      "source_code": "LT-SEIMAS",
+      "record_key": "rec-384e539720d6d06005b8e0aaf757fedcf23f6f0410d7f36729d897f057c03be8"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/121",
+      "office_id": "LT-PRESIDENT",
+      "source_code": "LT-PRESIDENT",
+      "record_key": "rec-0d00799f4deda496b5032298f1227fdf8e882f5fbe04245e8c35c0c4b39c018e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/office-register.json#/122",
+      "office_id": "LT-EP",
+      "source_code": "LT-EP",
+      "record_key": "rec-13a0eab569228b636e2e9b0bd0ec2d3a2d012ad179e51c9f4fc8770b32a62431"
+    }
+  ],
+  "events": [
+    {
+      "source_pointer": "data/research/lithuania/events.json#/0",
+      "office_id": "LT-EP",
+      "history_key": "LT-EP::EP2004",
+      "event_id": "event-3d387a9f91ad362847a8fb6a",
+      "record_key": "rec-af5f6f5d8ee85cdfa93cb8be4f44e9b6d6446e2cda47199890f09b9cd23213c6"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/1",
+      "office_id": "LT-EP",
+      "history_key": "LT-EP::EP2009",
+      "event_id": "event-bb953811f91f048e4a055554",
+      "record_key": "rec-8bada151fc527dc56be8e4b2b50f6089870b7ca921a55f36ad357eca8f0e2ade"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/2",
+      "office_id": "LT-EP",
+      "history_key": "LT-EP::EP2014",
+      "event_id": "event-6678938eebd14c016864338d",
+      "record_key": "rec-6fbec4be51863e84575f3f18af8d5553f39ce7b4a4299eda0916e5fb16657556"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/3",
+      "office_id": "LT-EP",
+      "history_key": "LT-EP::EP2019",
+      "event_id": "event-9d8b23b978be3e9231ce85a2",
+      "record_key": "rec-3892746a82a59a55a432e516112ea917940bba052fa3bbb99ca0b075f4f93589"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/4",
+      "office_id": "LT-EP",
+      "history_key": "LT-EP::EP2024",
+      "event_id": "event-417276aa092699ecef86dfed",
+      "record_key": "rec-c26a68e0629a2f89b2bc79b433d36505f83c94d9639048001fbc153b0a7767c4"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/5",
+      "office_id": "LT-SEIMAS",
+      "history_key": "LT-SEIMAS::SEI2008",
+      "event_id": "event-024364038286c634ce2006d9",
+      "record_key": "rec-2bbeb895b28a61f3b848b33a7327a0e03a3d1ee6612fa057297c1c6f0bbaf577"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/6",
+      "office_id": "LT-SEIMAS",
+      "history_key": "LT-SEIMAS::SEI2012",
+      "event_id": "event-4d903d92d04a8ec301133edd",
+      "record_key": "rec-017190d462c658ea7c338a5e532b2f591c61a7670c01509cd399f798ab485818"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/7",
+      "office_id": "LT-SEIMAS",
+      "history_key": "LT-SEIMAS::SEI2016",
+      "event_id": "event-0f5a78d003fd58aac869a7b5",
+      "record_key": "rec-e3da85b556c9d4e5e4ef1e3ea4dffa9db4cb1b705d4bf11c4d05aa5470779800"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/8",
+      "office_id": "LT-SEIMAS",
+      "history_key": "LT-SEIMAS::SEI2020",
+      "event_id": "event-e1974e234ea3bdc274df62f9",
+      "record_key": "rec-31e7caf355af2585b0cd74fbd58417b06b3659799c9210820f6ebea3ce87dd72"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/9",
+      "office_id": "LT-SEIMAS",
+      "history_key": "LT-SEIMAS::SEI2024",
+      "event_id": "event-808c5d3f18a6690850c86634",
+      "record_key": "rec-de303f8413df4410066d0d1684fca55ee92af6e2e77dc73317debed2f78c7cc2"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/10",
+      "office_id": "LT-PRESIDENT",
+      "history_key": "LT-PRESIDENT::PRE2019",
+      "event_id": "event-161ed64ee44d4e92e516d7de",
+      "record_key": "rec-23df05f21205615d99c26fa5bad36958ba508ffbd55608f964591b9ee8ae0d14"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/11",
+      "office_id": "LT-lsa-4617e92357bd51e717734b81-M",
+      "history_key": "LT-lsa-4617e92357bd51e717734b81-M::SAV2019",
+      "event_id": "event-145918e7190b9b66d444ac76",
+      "record_key": "rec-228027f27f78bd5356ab5ec6430fe7c854a3c38ea80acbf7eaeb6f2c4b4faebd"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/12",
+      "office_id": "LT-lsa-9b51900bb432dfb132e5a413-M",
+      "history_key": "LT-lsa-9b51900bb432dfb132e5a413-M::SAV2019",
+      "event_id": "event-dbe31017989b3ae70769b15f",
+      "record_key": "rec-2c3c4aa92311b6841410c156970291faf9833782b1cda903c173802ac21c02dc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/13",
+      "office_id": "LT-lsa-7da848dbca7a50a3593dc043-M",
+      "history_key": "LT-lsa-7da848dbca7a50a3593dc043-M::SAV2019",
+      "event_id": "event-6b4f8aaf8f958c79022396f9",
+      "record_key": "rec-1a3ecb144d9653e5a9fe9668c3c29fb64a64b457024344761514ff8e243854b6"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/14",
+      "office_id": "LT-lsa-5ed71f409eb264bb6dfd727a-M",
+      "history_key": "LT-lsa-5ed71f409eb264bb6dfd727a-M::SAV2019",
+      "event_id": "event-92acb55dff0536d1b8b03870",
+      "record_key": "rec-d0ef4d1b586ceb4ad831188dd3422cc3e98f6616ed5e8d134aee288fd03df2aa"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/15",
+      "office_id": "LT-lsa-ab0ef52353bf4d4eee179b45-M",
+      "history_key": "LT-lsa-ab0ef52353bf4d4eee179b45-M::SAV2019",
+      "event_id": "event-2ddbe8cb3e01bcf10d1d1475",
+      "record_key": "rec-6023317bae4697c9d2b0e8efb9eca6524a9234357ee911a72b29b0ce2b4ee7e8"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/16",
+      "office_id": "LT-lsa-6bbab511ccac6b18f1dbac22-M",
+      "history_key": "LT-lsa-6bbab511ccac6b18f1dbac22-M::SAV2019",
+      "event_id": "event-108a43bdbe7984f31fbb4211",
+      "record_key": "rec-86079e8738aa5103ebfdd6eddb55d115dac491deaada09ec80c39562b13ccfcd"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/17",
+      "office_id": "LT-lsa-020b89cd0cb5735da3e73cee-M",
+      "history_key": "LT-lsa-020b89cd0cb5735da3e73cee-M::SAV2019",
+      "event_id": "event-eb76177f6fe933399e8083bb",
+      "record_key": "rec-ee0f6aa8e75972864d8bfdc1d57e4f67c22078e9c6d62c53d2d413da07e5c44c"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/18",
+      "office_id": "LT-lsa-eafc79549108de33472fc7a8-M",
+      "history_key": "LT-lsa-eafc79549108de33472fc7a8-M::SAV2019",
+      "event_id": "event-f881eb71416a69f1157bf805",
+      "record_key": "rec-82ef74d85aba6e7993184b35c598e05a6fb3f70bbf056aade3c504c64d942a6f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/19",
+      "office_id": "LT-lsa-61244a98ecf1b6948da37f0c-M",
+      "history_key": "LT-lsa-61244a98ecf1b6948da37f0c-M::SAV2019",
+      "event_id": "event-52bce7faddeb10588588f894",
+      "record_key": "rec-5af7569335c5882fcb441a65421456006c73f0ded7379a45b269cfe8c96c3652"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/20",
+      "office_id": "LT-lsa-4a5a1f93917a28e3abdb29e5-M",
+      "history_key": "LT-lsa-4a5a1f93917a28e3abdb29e5-M::SAV2019",
+      "event_id": "event-1fc7251706e07ae20f623b9e",
+      "record_key": "rec-ba4e5894bb1513adfaa946a680b6ab8f1d4644eb612031c1ba04578420720aca"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/21",
+      "office_id": "LT-lsa-ac33a6ea903ac3ddb25723d2-M",
+      "history_key": "LT-lsa-ac33a6ea903ac3ddb25723d2-M::SAV2019",
+      "event_id": "event-1ab07c82b7886699a2544119",
+      "record_key": "rec-a6ba596635fa6572d18c92604095f96d1dcf0f5495990b2b1d2fa8c234459e8d"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/22",
+      "office_id": "LT-lsa-fd1f7e4a64386f082c7464c4-M",
+      "history_key": "LT-lsa-fd1f7e4a64386f082c7464c4-M::SAV2019",
+      "event_id": "event-c48fb9da4086dd9c60fe728c",
+      "record_key": "rec-22e8dc9a802c067eb2363250ebdc32c16dc17ba6bf2529b5ce868db08abef57a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/23",
+      "office_id": "LT-lsa-70d0a7ea9e5bd43d47db3666-M",
+      "history_key": "LT-lsa-70d0a7ea9e5bd43d47db3666-M::SAV2019",
+      "event_id": "event-6c325df4691739a6366a1313",
+      "record_key": "rec-127ea7f317183ad500c1189a931700cd0d0ce8e536d6fb756e63effeb260e17e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/24",
+      "office_id": "LT-lsa-4a0a277f22e3763c21adbd97-M",
+      "history_key": "LT-lsa-4a0a277f22e3763c21adbd97-M::SAV2019",
+      "event_id": "event-2aefb77d85e91ddf19033b9d",
+      "record_key": "rec-2cfcea24d3f5442c305a2ac250950d01e13c42376b74924eaad66449bb26afa9"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/25",
+      "office_id": "LT-lsa-9ba7e61990c37b0a8f072e4f-M",
+      "history_key": "LT-lsa-9ba7e61990c37b0a8f072e4f-M::SAV2019",
+      "event_id": "event-0a2e7eeb9c15f37d9f651cac",
+      "record_key": "rec-e0e5bf812229b09134c72ddf83331b4a70964bdca5e19fce38480996116dbb86"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/26",
+      "office_id": "LT-lsa-952f03ad39e8e4878e0d9106-M",
+      "history_key": "LT-lsa-952f03ad39e8e4878e0d9106-M::SAV2019",
+      "event_id": "event-0c69cc4c06c0427231ad40f4",
+      "record_key": "rec-81254db8ce4bb4ce5d5fd79078f3293db94aac00869b1ae4909ce4aaa4d109af"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/27",
+      "office_id": "LT-lsa-d80e14b38b9936a6f5b8c2c0-M",
+      "history_key": "LT-lsa-d80e14b38b9936a6f5b8c2c0-M::SAV2019",
+      "event_id": "event-506133a9bd6f2e5344b29343",
+      "record_key": "rec-cc2fa5e4d498458baa49645594f22e632d5f939a8ad1ee94d1da05196243726d"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/28",
+      "office_id": "LT-lsa-34b428a72ccd7550bd2277d4-M",
+      "history_key": "LT-lsa-34b428a72ccd7550bd2277d4-M::SAV2019",
+      "event_id": "event-7d2a32c5cd74a2f1830e72b0",
+      "record_key": "rec-2cd00ff21a9f7e514731bca63ff71a762822f6198223d915b55029b6a7927ad9"
+    },
+    {
+      "source_pointer": "data/research/lithuania/events.json#/29",
+      "office_id": "LT-lsa-3b3c7641b01288497cc0e0c0-M",
+      "history_key": "LT-lsa-3b3c7641b01288497cc0e0c0-M::SAV2019",
+      "event_id": "event-ca427ecdbcd2ab20021f3c90",
+      "record_key": "rec-b6f95685a11ed4d6ac99f85e0c337d759d0eb69bf49e1fb5264dcf1fdb976c70"
+    }
+  ],
+  "results": [
+    {
+      "source_pointer": "data/research/lithuania/results.json#/0",
+      "result_row_id": "result-0d3deb4469bf70b6269128a4",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2004",
+        "main",
+        "DP"
+      ],
+      "record_key": "rec-427e8524a56b91948a6dca7e1b0833ecf0ab8686e910fab04592b294ec4a9b73"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/1",
+      "result_row_id": "result-5132275352579180f8eb6170",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2004",
+        "main",
+        "LCS"
+      ],
+      "record_key": "rec-b2270b467f41cd94b31a926506a6bb1edf6bd660f56419e07cb3938ca7147fc9"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/2",
+      "result_row_id": "result-193c549166dee21639b470d6",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2004",
+        "main",
+        "LSDP"
+      ],
+      "record_key": "rec-4a6dc32ffaab1a696648ee80c9690c321dc75c5b6d53f9fc58d9f10c8c1b8754"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/3",
+      "result_row_id": "result-9c16d6ce8dece502bfe1ecfb",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2004",
+        "main",
+        "TS"
+      ],
+      "record_key": "rec-1a80854e32f8838a7f635995f317afb95922856af1d4d7cff1f054fdad0d1e14"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/4",
+      "result_row_id": "result-63402293e7713d406929c1d8",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2004",
+        "main",
+        "LDP"
+      ],
+      "record_key": "rec-fcf27910d1bfadcf0b7bd41a5d5d09bc2d33dad596eba4b82708dbd08e56a90d"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/5",
+      "result_row_id": "result-8287c26aa6a0ab1d77a47ad2",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2004",
+        "main",
+        "VNDPS"
+      ],
+      "record_key": "rec-14ae15ab63b98279f17cf8b99157ef1eac2fb9139fe19b52066d1cbddb97c92e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/6",
+      "result_row_id": "result-72cb461c74450a7e122a70c1",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2004",
+        "main",
+        "Other parties"
+      ],
+      "record_key": "rec-20c44c5b3e2c064df00b3e027c3b637e8394f6030d1afec1c2a4ea6b8af6ddb1"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/7",
+      "result_row_id": "result-fe18e71c11eb10f7292673c5",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2009",
+        "main",
+        "TS-LKD"
+      ],
+      "record_key": "rec-b8e87a2afdd86a99b58d615a92c5b4686cc79132a48181d940b7f67e00aadab3"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/8",
+      "result_row_id": "result-0b96743ad93918f88e65d89e",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2009",
+        "main",
+        "LSDP"
+      ],
+      "record_key": "rec-f3c13c0d1b16268a84ef63097244a3c0bb42d38868b80fffb38ea42a96682e25"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/9",
+      "result_row_id": "result-0ad749a4fbc0ff452b714cc5",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2009",
+        "main",
+        "TT"
+      ],
+      "record_key": "rec-7e0f450942f426554d1b4c3bd03877b127ef56f0df5ffd3c94652899f7713254"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/10",
+      "result_row_id": "result-c319f542d6983424167798dd",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2009",
+        "main",
+        "DP"
+      ],
+      "record_key": "rec-7167f87ccd5d90c678540ae9d259fbe47c9668d24c4c5f50ce01b6c733319823"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/11",
+      "result_row_id": "result-64b75ab7283f18629daf226b",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2009",
+        "main",
+        "LLRA"
+      ],
+      "record_key": "rec-1c5c847cb515d9720e13888f8e1b1df085071b306ecfa2e57a81643865c7ecc2"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/12",
+      "result_row_id": "result-f8580cd1ab2a93e303cc715a",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2009",
+        "main",
+        "LRLS"
+      ],
+      "record_key": "rec-7699ac9ee58f2167c7914c84350e814b86ca320b678c63b26085d597f2599b6a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/13",
+      "result_row_id": "result-1a50884bfa976662a0774e36",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2009",
+        "main",
+        "Other parties"
+      ],
+      "record_key": "rec-ddddb3a95f3b209ea1722fa40b95747ec98b21e68cb43bd0684d8f4e909b3e54"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/14",
+      "result_row_id": "result-541578f4f003089d85bc67f4",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2014",
+        "main",
+        "TS-LKD"
+      ],
+      "record_key": "rec-854c56719a35d2c425c142ffa32974344a2466521a5a2185a6ab2308eee3c6af"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/15",
+      "result_row_id": "result-794c5ac6245d8afe452ef736",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2014",
+        "main",
+        "LSDP"
+      ],
+      "record_key": "rec-4b2f24b6e1d38f44451b879d0d1066be40d5f3b37c2f77628d4de9a10f1dd80e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/16",
+      "result_row_id": "result-a77bd3865a7e106af9cfe3a7",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2014",
+        "main",
+        "LRLS"
+      ],
+      "record_key": "rec-7ccc9714d638fb49bb9bff718b87a4bb56a839132568ef9850978c6cd49bcd21"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/17",
+      "result_row_id": "result-1c2ef1bc3a92faeface63ccd",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2014",
+        "main",
+        "TT"
+      ],
+      "record_key": "rec-f1416bec54d892831499b7b0b474a9ecb2e6db9a326d536c0938bdba3d94246b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/18",
+      "result_row_id": "result-aef8662b73ad558fd78b6df6",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2014",
+        "main",
+        "DP"
+      ],
+      "record_key": "rec-5c8250b39728249415e8827ba1fd4ade620a8c45a53291ec46d4ee207ec15b01"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/19",
+      "result_row_id": "result-95433d5c4d73c420c8cf65e0",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2014",
+        "main",
+        "LLRA (AWPL)"
+      ],
+      "record_key": "rec-43f765c9d52013896ab5ecf6033b429562f51eb368d681126d6276480e3bd274"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/20",
+      "result_row_id": "result-b69d088add982ae1b66b16e9",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2014",
+        "main",
+        "LVZS"
+      ],
+      "record_key": "rec-e8d69ef4f0e56f4d48422db0eaea318a61929aefd7338672d1753e9e4755e485"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/21",
+      "result_row_id": "result-5e009121f1b9cdac42ba39cf",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2014",
+        "main",
+        "Other parties"
+      ],
+      "record_key": "rec-ea1b3aabf425d0b59847ec9348f564db37dc15c9f88d0cdfbbd1847deecf0d76"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/22",
+      "result_row_id": "result-e0d6d79bfa644c7352139949",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "TS-LKD"
+      ],
+      "record_key": "rec-2e97977098803ce648a20b34ab193ef036b0ef40042a6483878eccf7430c82de"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/23",
+      "result_row_id": "result-14c3db48e2aa48a5e4f14329",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "LSDP"
+      ],
+      "record_key": "rec-c063668a4c079067f9a68a635efc1391b98463c3dcefae4537c6e7f990dda947"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/24",
+      "result_row_id": "result-585dee67d04356d0d7ae16e0",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "LVŽS"
+      ],
+      "record_key": "rec-eb4efed8cd6e7bc2327d00034cfb3f19c5d7645531007db4dc93ba2bacce7c37"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/25",
+      "result_row_id": "result-faf616e041535f26e498b6f4",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "DP"
+      ],
+      "record_key": "rec-1a7bb043ecfbfa6c4d251aa8365c2c6cc641648a61714350596babe5976293fd"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/26",
+      "result_row_id": "result-12f629e1ea5129abb5db5fb0",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "LRLS"
+      ],
+      "record_key": "rec-32c49ce60ae16838d3bf997698ade1513e9b33bedc06b9426973a37414efa54f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/27",
+      "result_row_id": "result-f5aece6647018d6228540818",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "VKM-AMT"
+      ],
+      "record_key": "rec-bd0e1d4e1e712c820e73f701ae44cef872abc082533cb03f8a4b9b4197a89f21"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/28",
+      "result_row_id": "result-e1e345663456ff061edd89a2",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "LLRA-KŠS"
+      ],
+      "record_key": "rec-d0cbbe5be07bd850fc376dfa4d4570db920c6b5bd7ad2afab58b570900b32dad"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/29",
+      "result_row_id": "result-3b1d4c7b9e1f90fbb69314cd",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "LCP"
+      ],
+      "record_key": "rec-d87fa8beeadb6873aaa0842645c1ddd456f56f6801971575a85b49864a99b35f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/30",
+      "result_row_id": "result-dd76530a6870bf42fc61dcab",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "VKM-PRPJ"
+      ],
+      "record_key": "rec-b18bf4b1d5f499c681b390f6f25d7252effdd3e080cfe62468732efdd19498ab"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/31",
+      "result_row_id": "result-b62693b6fa89111c5099c4fb",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "VKM-VRSV"
+      ],
+      "record_key": "rec-6f5b8a576d19a57e05cc27786ebbcc6b7423759fb6598a7af06342e1dd02cd93"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/32",
+      "result_row_id": "result-a5feebb7e71e8abb0875cb60",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "TT"
+      ],
+      "record_key": "rec-d3be974841b64f7a1807e2227dddd6ef100acc006b2ab7f7c6f197ecdd3921bc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/33",
+      "result_row_id": "result-951b8411bf8b5251bc012879",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "LSDDP"
+      ],
+      "record_key": "rec-25a15327754029bdd07202b297a47ffe9d7f1faaf8b3cb024b6bf66b125db3f7"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/34",
+      "result_row_id": "result-0ae44423a395f214a018db00",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "LŽP"
+      ],
+      "record_key": "rec-5325c93276d15869a62014bd0fc3ce3e34b587c87773f97603eda7b15d5a7b83"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/35",
+      "result_row_id": "result-55b777f75dd72aa358284879",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "LLS"
+      ],
+      "record_key": "rec-a22aec456b4d47bd3430499898767a13aa476c7a1f88a9357e61e4bfca87c0ac"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/36",
+      "result_row_id": "result-9e4b057458582967a6377f15",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2019",
+        "main",
+        "Other parties"
+      ],
+      "record_key": "rec-a0c5fd254a49bc2595b97b20615818d96a2ddafed5590315c5c2dbb14dcf136f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/37",
+      "result_row_id": "result-513991a00f9e6dbc199737aa",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "TS-LKD"
+      ],
+      "record_key": "rec-c77a725a19b884b6966a04b94a1e49eed2e87f024a8e55ffcb37c8ceca34a526"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/38",
+      "result_row_id": "result-3afa3bc52e4566be3acd98a1",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "LSDP"
+      ],
+      "record_key": "rec-6798dcf2fbee8366e8d4e32fe5509107efe6990b4332f9d32a7aa4f9dec81b53"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/39",
+      "result_row_id": "result-b48d6ad91c28059cd2c82936",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "LVŽS"
+      ],
+      "record_key": "rec-e2a683a3e42b97636e8d6bed24981a0bbc1e4bfeecbc599978a7a014f0d9c72e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/40",
+      "result_row_id": "result-6b2d6c664f0bd7da235c8d7f",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "LP"
+      ],
+      "record_key": "rec-5f3f7c9ea3b225b9daa5351b6990d4467120067e3666d8dfbdb3c0218519997e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/41",
+      "result_row_id": "result-73cc33dde7bad99bcc277f12",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "DSVL"
+      ],
+      "record_key": "rec-0aad2022170a0c300d4f0979f9f7c58dbfb3dde1bf08d8dcad1acf01d8c86d6d"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/42",
+      "result_row_id": "result-5d007bdd2ae7f718a6fe8bf4",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "LLRA-KŠS"
+      ],
+      "record_key": "rec-dbf9375e0397db25bbee3963ed13529f9898f427242d25d5fe5833536d7b6284"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/43",
+      "result_row_id": "result-ea57ad5a45835753b995b672",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "LCP"
+      ],
+      "record_key": "rec-1ad3456953e4d3bf78e0b87a9eb26ffc09438f6f30e8dbb07815f2c3fd0e793b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/44",
+      "result_row_id": "result-ea77fd520e922dda2e304309",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "LS"
+      ],
+      "record_key": "rec-8c5678b7271f444f147acd577b8bbbbf6d4e02c2008561e771cd35486ad02c82"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/45",
+      "result_row_id": "result-23014352d2ea38f4c8c5e3a9",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "LRP"
+      ],
+      "record_key": "rec-02f77f418b53a840d5a454ec10fe12563df86fb4b8c980341c57e72d5642e4d6"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/46",
+      "result_row_id": "result-a10eb4e180ef80ae8f5bdb5d",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "LŽP"
+      ],
+      "record_key": "rec-7e9d48d1770c8595269abf6ac833f258f8a5ff56dbc7e51c4e063d9add683ad9"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/47",
+      "result_row_id": "result-d8f42c4bf7eb0f486dd08821",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "NS"
+      ],
+      "record_key": "rec-da351e5cd283e895c7c049ba36afb7e854590412035eaec3c9f3102edafd65ee"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/48",
+      "result_row_id": "result-1ecf85d3f21f32e0b7de8853",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "DP"
+      ],
+      "record_key": "rec-a2fadba46d82897fdb1a4c2e8e0068ef7058b143b1d7d46a8b89f30e915a6d0b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/49",
+      "result_row_id": "result-0ea547d44fe7214ccd5867f0",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "LT"
+      ],
+      "record_key": "rec-954144db0638b2e177a3a0f4431c121cfe8a8c59b4e3236b6f7812675cbd0fad"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/50",
+      "result_row_id": "result-f2c736577873645fb88d5221",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-EP",
+        "LT-EP::EP2024",
+        "main",
+        "Other parties"
+      ],
+      "record_key": "rec-d542a3c311baebb3d2609078eaaf853e5d4072590fa9e00e84b8b8f3c8b80efc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/51",
+      "result_row_id": "result-d22f76ba6d696a391891526f",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2008",
+        "main",
+        "Homeland Union – Lithuanian Christian Democrats"
+      ],
+      "record_key": "rec-90d3dc0c58e2dab553b0155befae423ae63a769ec975eee98657424850d10294"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/52",
+      "result_row_id": "result-1d4966feb27b03825246c067",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2008",
+        "main",
+        "Lithuanian Social Democratic Party"
+      ],
+      "record_key": "rec-fdcb0022f309986cc9e38486ad388232a7c8229d37d1987121d9126ba6fd9b82"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/53",
+      "result_row_id": "result-3f6453fe56fc41d8d7a6411a",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2008",
+        "main",
+        "National Revival Party"
+      ],
+      "record_key": "rec-42490b93b2d9cb3d6af7a72e268a88ffa5359ee17bdb6d2a86d5a01de8907aca"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/54",
+      "result_row_id": "result-35684e263cc9fb622562c02f",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2008",
+        "main",
+        "Order and Justice Party"
+      ],
+      "record_key": "rec-9118335d0e5135b2e9f4218a4708d8ed51bec943d8de932a38b7564052eef1c6"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/55",
+      "result_row_id": "result-358fa442d51759c86d6b534a",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2008",
+        "main",
+        "Labour Party + Youth coalition"
+      ],
+      "record_key": "rec-7810e953eb690e95ea1986c74ef0b2096d4792adc1e19d6cb4db8c5571ef0cb7"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/56",
+      "result_row_id": "result-bf9636c6122bb879fc025b8e",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2008",
+        "main",
+        "Liberals Movement"
+      ],
+      "record_key": "rec-f02120c60f1840bdce6120559ea26c9c3b7ec9ba0fe87b58f3377da5957d081b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/57",
+      "result_row_id": "result-8ac1dee07b4884c4adb28bc8",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2008",
+        "main",
+        "Liberal and Centre Union"
+      ],
+      "record_key": "rec-1fb21659254d91a316cb50bea67d610d1722847128d3ce1d89a6c280f002979e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/58",
+      "result_row_id": "result-08da5c0c529449350bbdfa26",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2008",
+        "main",
+        "Union of Farmers and People’s Parties"
+      ],
+      "record_key": "rec-94644ab88b32c0b4e6a26b7dd2d77fe947f4e09dd48aa01e37e5c8750b73ef9c"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/59",
+      "result_row_id": "result-0526f14340c465b2270a5aa8",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2008",
+        "main",
+        "Electoral Action of Poles in Lithuania"
+      ],
+      "record_key": "rec-3fff28e6fb4c2d0af2a74894c9e9303db2aeda6324dad44082bc59f884669d07"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/60",
+      "result_row_id": "result-c062421a838ccfb4b2abe00e",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2008",
+        "main",
+        "New Union (Social Liberals)"
+      ],
+      "record_key": "rec-9299d0fc39d7a43ef9812ff5704b185df5d134eb25390e3349996945db3121b6"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/61",
+      "result_row_id": "result-44e8f96db5b3cec54d1202b6",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2008",
+        "main",
+        "non-affiliated candidates"
+      ],
+      "record_key": "rec-083ea0dff97a443e054719fee5996dfb7249a09740c6b11fdc8fb25d2db833da"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/62",
+      "result_row_id": "result-b4a3176235a7e3a8414c0a50",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2012",
+        "main",
+        "Lithuanian Social Democratic Party"
+      ],
+      "record_key": "rec-5393006039500976a0b2d5bd67aca4f061aa6f420b1ee7e82d3d8f607badb090"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/63",
+      "result_row_id": "result-cd47434bcd6035538c24752c",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2012",
+        "main",
+        "Homeland Union - Lithuanian Christian Democrats"
+      ],
+      "record_key": "rec-d4506299a9695af1ac5c4d3b19e135295e7c24727cc4361249f7a9991bb7bd30"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/64",
+      "result_row_id": "result-50238765137774f12527fdc4",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2012",
+        "main",
+        "Labour Party"
+      ],
+      "record_key": "rec-5348e75e83c02e3a24ed29bf152097ea9b03cf870a3334f13d61f7abc64944bb"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/65",
+      "result_row_id": "result-bfcb0af25d1436ca49dca32b",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2012",
+        "main",
+        "Party “Order and Justice”"
+      ],
+      "record_key": "rec-debf285c433f40240f3aa2da0db249a8f4d884e7a78be84d0e353f3fb4fa6846"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/66",
+      "result_row_id": "result-144ead65094a505d3962d460",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2012",
+        "main",
+        "Liberals Movement of the Republic of Lithuania"
+      ],
+      "record_key": "rec-c399d5c280d24c4e81d4f951637082c16f59e836529b5627344ebbc4be8bdc0f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/67",
+      "result_row_id": "result-2c05261ce114b84a10c13c37",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2012",
+        "main",
+        "Lithuanian Poles’ Electoral Action"
+      ],
+      "record_key": "rec-82a6f7f1a99e78c2d868ef7dcdc727c8d4071d46bf3924acb72dea89de380f19"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/68",
+      "result_row_id": "result-89df3571803d75df024ab34c",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2012",
+        "main",
+        "Political Party “The Way of Courage”"
+      ],
+      "record_key": "rec-b29b17c76aba387c110bac2f0cf71d02187f03697090784081255248bfbd24cc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/69",
+      "result_row_id": "result-1d4d6078c358505ef03aa0c5",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2012",
+        "main",
+        "Lithuanian Peasant and Greens Union"
+      ],
+      "record_key": "rec-3d71e1d505d0769ce05bfe0e12085c68d931c4fa6082118e4e1ff332a1ec96f8"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/70",
+      "result_row_id": "result-80fc25579ebdecbcca336507",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2012",
+        "main",
+        "self-nominated candidates"
+      ],
+      "record_key": "rec-4323f053a5591ac34a8031cffa22ebe0b946275b37be5b48b61951e555990c9b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/71",
+      "result_row_id": "result-135166f6f53f6be24f75ebf8",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2016",
+        "main",
+        "Lithuanian Farmers and Greens Union"
+      ],
+      "record_key": "rec-57af9208be6faca97e9f87c56f5f810faf128d2ab78b6fa4512a0c87736debd9"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/72",
+      "result_row_id": "result-8731577e2986b193cd8611b5",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2016",
+        "main",
+        "Homeland Union – Lithuanian Christian Democrats"
+      ],
+      "record_key": "rec-072b7372229eb305cd35d8569b836617ada1e85f5b030c158096c8402c0ef179"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/73",
+      "result_row_id": "result-72db5e6d83fb93872d2ea4a8",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2016",
+        "main",
+        "Lithuanian Social Democratic Party"
+      ],
+      "record_key": "rec-5353b3d3f88ff2d730fabd70e7a1c1f115c3296ece15c9ce41b5090414479db9"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/74",
+      "result_row_id": "result-72fac38856825d6e4f4fa99c",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2016",
+        "main",
+        "Liberals Movement of the Republic of Lithuania"
+      ],
+      "record_key": "rec-59d894abace4a4293a5c657e565018bd240f625195d5b5c0ca5d113eb52b6693"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/75",
+      "result_row_id": "result-ec03b4f746228c3c4e2d07e2",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2016",
+        "main",
+        "Electoral Action of Poles in Lithuania – Christian Families Alliance"
+      ],
+      "record_key": "rec-cb016567dd463ecec5b9dc8280fa00da4ad637efcbd6707e02a8d7b6a913ed90"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/76",
+      "result_row_id": "result-37ded8056c965aa2979df55f",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2016",
+        "main",
+        "Party “Order and Justice”"
+      ],
+      "record_key": "rec-e5767d44d1fae073c7316f6d3e1453eeb777c7101e3be1b1641d580520f5e909"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/77",
+      "result_row_id": "result-1cb9b424e87dde32881e4e1d",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2016",
+        "main",
+        "Labour Party"
+      ],
+      "record_key": "rec-dda1c88f3d8500eb8d7269a1694113d92128f59482823630e625755be1dcdea1"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/78",
+      "result_row_id": "result-0d31f4805481813b1d02ddb3",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2016",
+        "main",
+        "Political Party “List of Lithuania”"
+      ],
+      "record_key": "rec-9d882d8fe6dbc51a10569b854fb0ec669a92d348ab335440b7827e83188cc906"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/79",
+      "result_row_id": "result-4ab5833b4ddc734e5b2aaf3f",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2016",
+        "main",
+        "Lithuanian Green Party"
+      ],
+      "record_key": "rec-86b38e5589bdf9a7e8d99113a2c47c11f742da00082bb66326e1867256bd48c7"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/80",
+      "result_row_id": "result-4bd663b9916118662436273b",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2016",
+        "main",
+        "Lithuanian Centre Party"
+      ],
+      "record_key": "rec-78d0a5b875d366c406659c2a8182d3f24273f2d8d44eea2ec8f53442bd8341df"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/81",
+      "result_row_id": "result-c4401691c29876ad212ee0aa",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2016",
+        "main",
+        "self-nominated candidates"
+      ],
+      "record_key": "rec-f63959ed6fff1bac6e9a93c39fc4e32bceade400a6aff22d742cf299d31abd5d"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/82",
+      "result_row_id": "result-af7bb62c7aa48d0ba68fc40d",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Homeland Union - Christian Democrats"
+      ],
+      "record_key": "rec-4b049a703366269d0df55f9662f2c9e35cb20e2c539f15cafe59d2d4cf47ccc1"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/83",
+      "result_row_id": "result-11f6c02402edb1408f0d6441",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Farmers and Greens Union"
+      ],
+      "record_key": "rec-02f9eecdabf3f78e854b26c0f9a4cc1a96dee169a7870b761f7945808ad4c1c7"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/84",
+      "result_row_id": "result-e6c0f0efb09931640bd81dbd",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Labour Party"
+      ],
+      "record_key": "rec-55753d4d720eaec8cf30bba144c4389b88da415c91eed1ecea0bb28f51aa0667"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/85",
+      "result_row_id": "result-8a8e1ef2f6cf73fc1a9b3f88",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Social Democratic Party"
+      ],
+      "record_key": "rec-dc1ff746f1af68d5fa83037d2a55baca4dde9b52823ca914fc0095b028a50e43"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/86",
+      "result_row_id": "result-611e095e8df3c5b80126553a",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Freedom Party"
+      ],
+      "record_key": "rec-8dddfc0a30ef07a35a85beb16106f2f3b88deab6666a32f904bd63123f8ec584"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/87",
+      "result_row_id": "result-9d8513c9de14d8e7f79a94b3",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Liberal Movement"
+      ],
+      "record_key": "rec-a331d02ffa2f3fe45723e747592e7723f40a6192b786110289227d4c3b271bbe"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/88",
+      "result_row_id": "result-aba791575a6dcdc38b4e5c52",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Lithuanian Electoral Action of Poles – Christian Families Alliance"
+      ],
+      "record_key": "rec-d28c91d108d6bf859c7598adabc35b4360e928b7d13b9f72ba20d8a70eafcb5d"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/89",
+      "result_row_id": "result-9ab1fa32d4d2d6042cd607dd",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Lithuanian Social Democratic Labor Party"
+      ],
+      "record_key": "rec-e7b1f39b23637e83614b6347bdc21bd906ea35bf7d3efd5a89a46581ed940846"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/90",
+      "result_row_id": "result-fd05130a6947f037c74ad3cf",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Lithuanian Centre Party"
+      ],
+      "record_key": "rec-470bf7492642d9c8fa4b703e0664434dcc55ebc3bfc6a13571dcdd918f7ac8c3"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/91",
+      "result_row_id": "result-75ef7c54dffb34309bd582d6",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "National Association"
+      ],
+      "record_key": "rec-19c73eeecd8c601da62493a23b6aa4f9aca721af77950dfa2554e050fbf26d19"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/92",
+      "result_row_id": "result-a2dec85e2c541e4a28f86e5c",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Freedom and Justice"
+      ],
+      "record_key": "rec-51b5bd5264079fec98a916e9023542ab948ba4767f821376756152b119606fe8"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/93",
+      "result_row_id": "result-cb55cbafcdabd4a66bf13822",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Green Party"
+      ],
+      "record_key": "rec-366a775f6da976e46a813b947e57417f94b351deabf2aac4f0bc82475147a274"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/94",
+      "result_row_id": "result-195a06606a462e914b500716",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Political Party ‘Way of Courage’"
+      ],
+      "record_key": "rec-c28cc0e27077208483662a022bf607a9c31769f4435fecdb88b90366d94f5609"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/95",
+      "result_row_id": "result-e6dc5598e92396f3635afc19",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Lithuania For All"
+      ],
+      "record_key": "rec-cd8aeced2f148595e8ec64c5d0b2017b95236d107cb08a44fd03864352f1913a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/96",
+      "result_row_id": "result-287a4ccbb80e517d3d710ee8",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Christian Union"
+      ],
+      "record_key": "rec-187100b49114806df31f0469f6233d371ed5698e568e2417274e569f3f28632c"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/97",
+      "result_row_id": "result-6fa121768ea7a9fa7dac73d8",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Union of Solidarity of Generations – Santalka for Lithuania"
+      ],
+      "record_key": "rec-fd5dc01db32fa5b837da971919a792ecc4b8124b3c5621441f1cc7c6e63439f6"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/98",
+      "result_row_id": "result-0351811f268b99d9ab071a52",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "People's Party"
+      ],
+      "record_key": "rec-62cef24dcc3d5dfb59c2ccf4fa357efaaa0d3a3d4a88770edae093ae44830a49"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/99",
+      "result_row_id": "result-d0ffb4f8fbba37fa87165701",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "main",
+        "Independents"
+      ],
+      "record_key": "rec-77b8b476b7818bafa8cddb8eef88b5b2400ac89777912580604cf8773b1e3c8c"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/100",
+      "result_row_id": "result-aba5f2db8a9d584157da8c94",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-PRESIDENT",
+        "LT-PRESIDENT::PRE2019",
+        "proceeding-a9fb2536bc45cf80b6bbdcbc",
+        "Ingrida Šimonytė"
+      ],
+      "record_key": "rec-4db8135b81c1054f2c148cc99deb4b19c47840fde1dc9c101e5c7baa8a26a24c"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/101",
+      "result_row_id": "result-1da288a63af9231609710107",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-PRESIDENT",
+        "LT-PRESIDENT::PRE2019",
+        "proceeding-a9fb2536bc45cf80b6bbdcbc",
+        "Gitanas Nausėda"
+      ],
+      "record_key": "rec-58e5f40dd285e7eeb86db8e289736d26640ca44f86a39929f2c7cda6dce2a101"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/102",
+      "result_row_id": "result-45d3dd0fc5bf30deefb5e378",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-PRESIDENT",
+        "LT-PRESIDENT::PRE2019",
+        "proceeding-a9fb2536bc45cf80b6bbdcbc",
+        "Saulius Skvernelis"
+      ],
+      "record_key": "rec-c08083bb47ae716112c3db4e52e12c6211f223faf53c28a1cbd74905fbcba697"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/103",
+      "result_row_id": "result-a48ebf785efabbd96cd73498",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-PRESIDENT",
+        "LT-PRESIDENT::PRE2019",
+        "proceeding-a9fb2536bc45cf80b6bbdcbc",
+        "Vytenis Povilas Andriukaitis"
+      ],
+      "record_key": "rec-08146dceafeac17fb1573fa8ead95d41bfd14f32ac4f746303f20899cc1be826"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/104",
+      "result_row_id": "result-14fbd763e36613912e4b395b",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-PRESIDENT",
+        "LT-PRESIDENT::PRE2019",
+        "proceeding-a9fb2536bc45cf80b6bbdcbc",
+        "Arvydas Juzoaitis"
+      ],
+      "record_key": "rec-df8b15a0fc70afc506e82f37bc284c1cd48d838453608433f9976c432d0738b5"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/105",
+      "result_row_id": "result-7b37e475f898fd03b744b4a3",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-PRESIDENT",
+        "LT-PRESIDENT::PRE2019",
+        "proceeding-a9fb2536bc45cf80b6bbdcbc",
+        "Valdemar Tomaševski"
+      ],
+      "record_key": "rec-d77d020f27ec0543dd5928ff57d12266e970b6bb0d2283b5f08c8d88009ef64f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/106",
+      "result_row_id": "result-12809ffaeedf0590ebf45297",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-PRESIDENT",
+        "LT-PRESIDENT::PRE2019",
+        "proceeding-a9fb2536bc45cf80b6bbdcbc",
+        "Mindaugas Puidokas"
+      ],
+      "record_key": "rec-4571d51299e331d9dfbd54ec999ce257e7a4a224cd74cf2435b90526f8c1c954"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/107",
+      "result_row_id": "result-007eb44c1286c7b45d1fd802",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-PRESIDENT",
+        "LT-PRESIDENT::PRE2019",
+        "proceeding-a9fb2536bc45cf80b6bbdcbc",
+        "Naglis Puteikis"
+      ],
+      "record_key": "rec-47f3173dadc9f349e514e121a06b89cd2b6680e9fa5773cafff5b1c0b365cbac"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/108",
+      "result_row_id": "result-6000f23b1c3f7275ce6b0d29",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-PRESIDENT",
+        "LT-PRESIDENT::PRE2019",
+        "proceeding-a9fb2536bc45cf80b6bbdcbc",
+        "Valentinas Mazuronis"
+      ],
+      "record_key": "rec-184fbdb7d340a0fe75995d21dcacb0167fba0a181c1e393f8b9249fd483ea929"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/109",
+      "result_row_id": "result-7cabc592d9ae5be8bdbcbd02",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-PRESIDENT",
+        "LT-PRESIDENT::PRE2019",
+        "proceeding-c14a7c59881496c1c079089c",
+        "Gitanas Nausėda"
+      ],
+      "record_key": "rec-ff2600e0e6ff96a439029c32fe83a1ddb449f55f12977c68d47f2db8760bd376"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/110",
+      "result_row_id": "result-6e12ddcd48dcd0611e327126",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-PRESIDENT",
+        "LT-PRESIDENT::PRE2019",
+        "proceeding-c14a7c59881496c1c079089c",
+        "Ingrida Šimonytė"
+      ],
+      "record_key": "rec-eef78f789b2716de08568fce09343316cc0f4c74bc4d3ff55c14cfda024ed58e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/111",
+      "result_row_id": "result-381e84b314b4bf879188393b",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-4617e92357bd51e717734b81-M",
+        "LT-lsa-4617e92357bd51e717734b81-M::SAV2019",
+        "proceeding-3f7abfc85c79985c06450c8b",
+        "Visvaldas Matijošaitis"
+      ],
+      "record_key": "rec-04a58e6060d627e6f6e7e10d06f9dbb497f27d61a121b224ac38f9100ed944c0"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/112",
+      "result_row_id": "result-32d8fc87fa3b45fc4dc28244",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-9b51900bb432dfb132e5a413-M",
+        "LT-lsa-9b51900bb432dfb132e5a413-M::SAV2019",
+        "proceeding-f7a5192e40b37288f528d6b4",
+        "Šarūnas Vaitkus"
+      ],
+      "record_key": "rec-560804e2749338adbf0199622991388eb0108f8cae968c3a0b4d45cfe168c35f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/113",
+      "result_row_id": "result-7ca8cb01561861d12831150c",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-7da848dbca7a50a3593dc043-M",
+        "LT-lsa-7da848dbca7a50a3593dc043-M::SAV2019",
+        "proceeding-87fe6a26b886eb7f46b1e3f9",
+        "Zdislavas Palevičius"
+      ],
+      "record_key": "rec-cd4c8cc208cdac249ad2e13f29fbc0accc55a4511e0b01fe980a52abc8150cf9"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/114",
+      "result_row_id": "result-69779872ecdf9204ccd94e05",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-5ed71f409eb264bb6dfd727a-M",
+        "LT-lsa-5ed71f409eb264bb6dfd727a-M::SAV2019",
+        "proceeding-96a4a03681a448c5b92cf07e",
+        "Živilė Pinskuvienė"
+      ],
+      "record_key": "rec-ed66e9e644c95a0979dcba4d533f6834aa3f3e5d917f310899664f366d84bd02"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/115",
+      "result_row_id": "result-ff658224b7199b4ce81f0f2a",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-ab0ef52353bf4d4eee179b45-M",
+        "LT-lsa-ab0ef52353bf4d4eee179b45-M::SAV2019",
+        "proceeding-e6de2271ee81eed0f5edf6bf",
+        "Ričardas Malinauskas"
+      ],
+      "record_key": "rec-d344140e5eae88291927d9210c0f838147d3ce7a33bd4855d66324e68ac94d83"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/116",
+      "result_row_id": "result-a7dcc6238f22af088382354b",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-6bbab511ccac6b18f1dbac22-M",
+        "LT-lsa-6bbab511ccac6b18f1dbac22-M::SAV2019",
+        "proceeding-94c7802638150452e3ac9ec9",
+        "Rimantas Klipčius"
+      ],
+      "record_key": "rec-f2e7219ca8ec62a3f53a920e81aab084abc216f76b8883409882416fd99d9789"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/117",
+      "result_row_id": "result-7fe42525f9f8747abcae0a6d",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-020b89cd0cb5735da3e73cee-M",
+        "LT-lsa-020b89cd0cb5735da3e73cee-M::SAV2019",
+        "proceeding-1ca8ac32ece7bf06c9234e90",
+        "Antanas Černeckis"
+      ],
+      "record_key": "rec-61ce9af0a0cdbcdf37934d2e4973fb2cf0f70746d90ebdc43d05f4233f530558"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/118",
+      "result_row_id": "result-afd1e5b4732efc5296c6b1cf",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-eafc79549108de33472fc7a8-M",
+        "LT-lsa-eafc79549108de33472fc7a8-M::SAV2019",
+        "proceeding-e7b1767071877bae5c4f2e6d",
+        "Vitalijus Gailius"
+      ],
+      "record_key": "rec-8df1193f419b37439fcf884d0cdc0001be99d726cdd725b44362c120d0e01a41"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/119",
+      "result_row_id": "result-4b18a07611c1cc91207ac0f3",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-61244a98ecf1b6948da37f0c-M",
+        "LT-lsa-61244a98ecf1b6948da37f0c-M::SAV2019",
+        "proceeding-3eb446ff38ee5c0e98d23e83",
+        "Vitalijus Mitrofanovas"
+      ],
+      "record_key": "rec-90817bdf17f398d200fd47b56315866d7fa6a5227a309ed6d40cecea66463d92"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/120",
+      "result_row_id": "result-fdaddc1e09d8e3ce57f5c252",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-4a5a1f93917a28e3abdb29e5-M",
+        "LT-lsa-4a5a1f93917a28e3abdb29e5-M::SAV2019",
+        "proceeding-dd4c6f4581044d6cb4aeab12",
+        "V. Makūnas"
+      ],
+      "record_key": "rec-b21be4d0ee8f3f00ef1a336b18f8342963b6c7bcd72bfd123eb4eb884db1dd84"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/121",
+      "result_row_id": "result-c8b672804c3fea75a738079a",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-ac33a6ea903ac3ddb25723d2-M",
+        "LT-lsa-ac33a6ea903ac3ddb25723d2-M::SAV2019",
+        "proceeding-28ac5db9e04740be813b97bc",
+        "Mindaugas Sinkevičius"
+      ],
+      "record_key": "rec-e04950b59268aa5baae446aaa0b0fcce82f536f73de0b0424f281204b50a17fc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/122",
+      "result_row_id": "result-7e13a515b6b7f9f1dbec9d40",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-fd1f7e4a64386f082c7464c4-M",
+        "LT-lsa-fd1f7e4a64386f082c7464c4-M::SAV2019",
+        "proceeding-a340fb0972e6b0e5a4b60962",
+        "Darius Jasaitis"
+      ],
+      "record_key": "rec-08e31db75597f684b48bda62111dd33e1d9a7f4028dfa83ad2a14b6905ea3a24"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/123",
+      "result_row_id": "result-6c4763bd53879cc8927dda69",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-70d0a7ea9e5bd43d47db3666-M",
+        "LT-lsa-70d0a7ea9e5bd43d47db3666-M::SAV2019",
+        "proceeding-1f870b6c4701026df63f819b",
+        "Nijolė Dirginčienė"
+      ],
+      "record_key": "rec-357c9571af6dc50f563e0929fe375d91923ef80149b5caba88dc19ecee2a4181"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/124",
+      "result_row_id": "result-a511bfff0c513350ed245e2d",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-4a0a277f22e3763c21adbd97-M",
+        "LT-lsa-4a0a277f22e3763c21adbd97-M::SAV2019",
+        "proceeding-406450a247cbe1c5c1ed0e51",
+        "Marija Rekst"
+      ],
+      "record_key": "rec-24dcb5fa07511c3559043c96d505acc053f93218bd2a9111b0027ede06ec30cc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/125",
+      "result_row_id": "result-67d3387430ced7ba5b6db84a",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-9ba7e61990c37b0a8f072e4f-M",
+        "LT-lsa-9ba7e61990c37b0a8f072e4f-M::SAV2019",
+        "proceeding-ec776f2647c9a7559abe891c",
+        "Vytautas Jareckas"
+      ],
+      "record_key": "rec-895d9acaa575c7d3b80e6b9d82b5cdb336a3fbf5e1a749f9bc948e44cc280c1c"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/126",
+      "result_row_id": "result-b5f98d462b31e31b7fc7ad81",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-952f03ad39e8e4878e0d9106-M",
+        "LT-lsa-952f03ad39e8e4878e0d9106-M::SAV2019",
+        "proceeding-84ad5958aab123972baf21c1",
+        "Edgaras Pilypaitis"
+      ],
+      "record_key": "rec-1d984cf5fc822eb2d5bd910ac598864e99b8a491bf495cea15a707fe8b364305"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/127",
+      "result_row_id": "result-b80618f8a29c4054917e6145",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-d80e14b38b9936a6f5b8c2c0-M",
+        "LT-lsa-d80e14b38b9936a6f5b8c2c0-M::SAV2019",
+        "proceeding-6e7d388f3612fc29f3bb3391",
+        "Artūras Visockas"
+      ],
+      "record_key": "rec-20d49129fe1cf0f9b95f11c6dab0f2c005d5dc0bdc5106dde608607924ab81fc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/128",
+      "result_row_id": "result-69d0d393e4bbafb66ff0a629",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-34b428a72ccd7550bd2277d4-M",
+        "LT-lsa-34b428a72ccd7550bd2277d4-M::SAV2019",
+        "proceeding-3fc342e50591c94f46e50aa0",
+        "Antanas Bezaras"
+      ],
+      "record_key": "rec-7d0a53f9810f9aec7bc9f02bdb71d7d02b4e5e1f222965dba47063a390deeaf1"
+    },
+    {
+      "source_pointer": "data/research/lithuania/results.json#/129",
+      "result_row_id": "result-11dff555f66d8b722a45f981",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-3b3c7641b01288497cc0e0c0-M",
+        "LT-lsa-3b3c7641b01288497cc0e0c0-M::SAV2019",
+        "proceeding-1dfe8e305b7999827888d0c0",
+        "Gintautas Gegužinskas"
+      ],
+      "record_key": "rec-597984a9bd3a4c752d105f56542c249f4ccefa12291aaa97a3891276f06c6758"
+    }
+  ],
+  "proceedings": [
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/0",
+      "proceeding_id": "proceeding-231bcd1029fb23f280429d5d",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "ballot-1"
+      ],
+      "record_key": "rec-9b3f0c56f96c1d105c91a021ee39be965ddb37449876affea57a9b786ca4de40"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/1",
+      "proceeding_id": "proceeding-ced857f0e084c7d584338dff",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2020",
+        "ballot-2"
+      ],
+      "record_key": "rec-d8c42b6985f145651489f0ae4f03449bbea7ef1295908ff5a66a5bca28dabb67"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/2",
+      "proceeding_id": "proceeding-6a91daf54e1313d46626d094",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2024",
+        "ballot-1"
+      ],
+      "record_key": "rec-345ccfac782c3a9273851c2184a64cf5db3b548ea2ee7f7f68479cb096be8647"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/3",
+      "proceeding_id": "proceeding-32a9ec9e562e233d98ab9293",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-SEIMAS",
+        "LT-SEIMAS::SEI2024",
+        "ballot-2"
+      ],
+      "record_key": "rec-7dfa789a0f76ece7f7da25c0868a15561766575c3faa558b8870f0fda4e79ab4"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/4",
+      "proceeding_id": "proceeding-a9fb2536bc45cf80b6bbdcbc",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-PRESIDENT",
+        "LT-PRESIDENT::PRE2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-80b66dceee2197f7b1c7735740e606ace63bcd5e83f0e13c5fd64c02a01a9834"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/5",
+      "proceeding_id": "proceeding-c14a7c59881496c1c079089c",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-PRESIDENT",
+        "LT-PRESIDENT::PRE2019",
+        "ballot-2"
+      ],
+      "record_key": "rec-4fdebcb784c65a00522bbb384a08341ef78d33ceb4ba4cdd53644ac9f5f50284"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/6",
+      "proceeding_id": "proceeding-3f7abfc85c79985c06450c8b",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-4617e92357bd51e717734b81-M",
+        "LT-lsa-4617e92357bd51e717734b81-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-3f8342af7a2097d20419916c346f549b5e7cddc1838f6c7387811eb83844cc2d"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/7",
+      "proceeding_id": "proceeding-f7a5192e40b37288f528d6b4",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-9b51900bb432dfb132e5a413-M",
+        "LT-lsa-9b51900bb432dfb132e5a413-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-bf127c6f9465e9ad7f46cc53c1cd756287b68dbe3ff00e5212ef0384b6973b09"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/8",
+      "proceeding_id": "proceeding-87fe6a26b886eb7f46b1e3f9",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-7da848dbca7a50a3593dc043-M",
+        "LT-lsa-7da848dbca7a50a3593dc043-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-76c9e1360cfded6044f4be207d1211b26b4db84d76847142467c49b79102df91"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/9",
+      "proceeding_id": "proceeding-96a4a03681a448c5b92cf07e",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-5ed71f409eb264bb6dfd727a-M",
+        "LT-lsa-5ed71f409eb264bb6dfd727a-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-d9f87d899d1bf27faeae0f2dc345600e7cdd2516fcc4ad74371ff1d811c3a20e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/10",
+      "proceeding_id": "proceeding-e6de2271ee81eed0f5edf6bf",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-ab0ef52353bf4d4eee179b45-M",
+        "LT-lsa-ab0ef52353bf4d4eee179b45-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-c9408825ec21a436357a5d65ada0f8519f8431265fd2faab053851bc01c82bbf"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/11",
+      "proceeding_id": "proceeding-94c7802638150452e3ac9ec9",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-6bbab511ccac6b18f1dbac22-M",
+        "LT-lsa-6bbab511ccac6b18f1dbac22-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-899e8edbf418b5895ef14c6558bef71910ef561a127660518666533a5c219d14"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/12",
+      "proceeding_id": "proceeding-1ca8ac32ece7bf06c9234e90",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-020b89cd0cb5735da3e73cee-M",
+        "LT-lsa-020b89cd0cb5735da3e73cee-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-f4d4dd76fe2eda04af5b5a98688d617afce3f88fd259550548b7d9cc486bcc02"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/13",
+      "proceeding_id": "proceeding-e7b1767071877bae5c4f2e6d",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-eafc79549108de33472fc7a8-M",
+        "LT-lsa-eafc79549108de33472fc7a8-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-c229dc45b01b7440d2bf2279d1c91944fc212230a008bbc9e58db94c636a2c5f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/14",
+      "proceeding_id": "proceeding-3eb446ff38ee5c0e98d23e83",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-61244a98ecf1b6948da37f0c-M",
+        "LT-lsa-61244a98ecf1b6948da37f0c-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-19447a5c31ca905e58dd4cd0a5a33af2d588cf930ae4ff422c3f85cb417b3b37"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/15",
+      "proceeding_id": "proceeding-dd4c6f4581044d6cb4aeab12",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-4a5a1f93917a28e3abdb29e5-M",
+        "LT-lsa-4a5a1f93917a28e3abdb29e5-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-d3ed3fcd84af3455e38dc121bc06c1eb7ad6f93c45d93e2163e77f55b9dd1b10"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/16",
+      "proceeding_id": "proceeding-28ac5db9e04740be813b97bc",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-ac33a6ea903ac3ddb25723d2-M",
+        "LT-lsa-ac33a6ea903ac3ddb25723d2-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-0c45899b40792f36488e9daf240453510f439d4c743e7233f1ad5d57ef5a4060"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/17",
+      "proceeding_id": "proceeding-a340fb0972e6b0e5a4b60962",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-fd1f7e4a64386f082c7464c4-M",
+        "LT-lsa-fd1f7e4a64386f082c7464c4-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-dddb64a50ea3b01302d043f4f083bb2c8e78e4530b958b5f7842176966611c07"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/18",
+      "proceeding_id": "proceeding-1f870b6c4701026df63f819b",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-70d0a7ea9e5bd43d47db3666-M",
+        "LT-lsa-70d0a7ea9e5bd43d47db3666-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-43b180646505d65cbab9910ba52bddb08cf94847c8d844920ed465b5362a0d0f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/19",
+      "proceeding_id": "proceeding-406450a247cbe1c5c1ed0e51",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-4a0a277f22e3763c21adbd97-M",
+        "LT-lsa-4a0a277f22e3763c21adbd97-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-34b4d6881452eb2cdd567a13549f42ac126695d26fd4801fec0c9335fc508b85"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/20",
+      "proceeding_id": "proceeding-ec776f2647c9a7559abe891c",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-9ba7e61990c37b0a8f072e4f-M",
+        "LT-lsa-9ba7e61990c37b0a8f072e4f-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-70239ea9d3fe10f7378c240df611f306bfe0491b1ddc8aab1c9493278cf6a574"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/21",
+      "proceeding_id": "proceeding-84ad5958aab123972baf21c1",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-952f03ad39e8e4878e0d9106-M",
+        "LT-lsa-952f03ad39e8e4878e0d9106-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-c50c04226b41269eda3639e56197c7a8914ffd7723ceb662eab76fcbfd16c771"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/22",
+      "proceeding_id": "proceeding-6e7d388f3612fc29f3bb3391",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-d80e14b38b9936a6f5b8c2c0-M",
+        "LT-lsa-d80e14b38b9936a6f5b8c2c0-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-c26ac7bbe799be0b0fe7409dfba2d1d058aa3822069b5bf910eee3429a919d88"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/23",
+      "proceeding_id": "proceeding-3fc342e50591c94f46e50aa0",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-34b428a72ccd7550bd2277d4-M",
+        "LT-lsa-34b428a72ccd7550bd2277d4-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-0092bf13b71f552399609b585ba88a3876f943435ca7283133ac65625aab5ff5"
+    },
+    {
+      "source_pointer": "data/research/lithuania/proceedings.json#/24",
+      "proceeding_id": "proceeding-1dfe8e305b7999827888d0c0",
+      "natural_key": [
+        "cdd-observatory-v1",
+        "LT-lsa-3b3c7641b01288497cc0e0c0-M",
+        "LT-lsa-3b3c7641b01288497cc0e0c0-M::SAV2019",
+        "ballot-1"
+      ],
+      "record_key": "rec-bbbb90e3e47061868a9d06ea38d45f531f6fa8fa02689d341a6b114a974bec94"
+    }
+  ],
+  "geographies": [
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/0",
+      "geography_id": "LT",
+      "record_key": "rec-9a95280ed1b21d33da3ea8063185e3933dfa7e7faa5d7bfbb9eec5ff691e9d95"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/1",
+      "geography_id": "LT-lsa-61244a98ecf1b6948da37f0c",
+      "record_key": "rec-3a646bfdf2688f9f21ff34dce972926a492fc5164a8f08652126d0ae22099991"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/2",
+      "geography_id": "LT-lsa-a37cb57d1d21c13c7785d48c",
+      "record_key": "rec-6cd2abc0991d8efc9440808335d83566b63061cb9b32d01caefc18d8407c696b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/3",
+      "geography_id": "LT-lsa-3df3bd1f6878f586c8c56d39",
+      "record_key": "rec-4dceff18006ad050cf02afa97c591631305676fcd4dd5079e881ef76fe2563de"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/4",
+      "geography_id": "LT-lsa-5151ba6a411875432b99a995",
+      "record_key": "rec-06b9b57ead83899557d2947e250c52aeba26a50d2d53a890fc03c642a7aff3e6"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/5",
+      "geography_id": "LT-lsa-70d0a7ea9e5bd43d47db3666",
+      "record_key": "rec-b3239d14e73ceb5f5ddb8933148a318500bd6db7a15149f438ecebfba5ff63a8"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/6",
+      "geography_id": "LT-lsa-9ba7e61990c37b0a8f072e4f",
+      "record_key": "rec-6c42c2f9573ccd2a69a5412e561133dd424ecfe2c9538b61b4a409de07bab2fc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/7",
+      "geography_id": "LT-lsa-ab0ef52353bf4d4eee179b45",
+      "record_key": "rec-8857cb86429735c68c0f79297aea01ebdd906a5046ec59250476f0c055cc510c"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/8",
+      "geography_id": "LT-lsa-c8b1b0002f3712a6351f5033",
+      "record_key": "rec-7fbe6655b38fad7f37df7a8981868ec3a90f0411f9085cdc28a178c03c8ed83c"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/9",
+      "geography_id": "LT-lsa-25cdb23a5256618bd09a6a26",
+      "record_key": "rec-c1f1c963cc4856d3d8846fe40226d7b775af4e2fb2b07380c103ab31012c55b9"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/10",
+      "geography_id": "LT-lsa-ac33a6ea903ac3ddb25723d2",
+      "record_key": "rec-cc119967772deb0b3768337c85173cd245a0705f0f9cfbd3823e54f7430d3d65"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/11",
+      "geography_id": "LT-lsa-eafc79549108de33472fc7a8",
+      "record_key": "rec-c31447ef08a944ce32f7cd7cf99a167a8f9b1870c0c847165772f8bc57b1b7f1"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/12",
+      "geography_id": "LT-lsa-a7f6e1ac7213d28d5c5798e0",
+      "record_key": "rec-caeeaddf7dfc8954793db2849b61e5a64d7f3750d21b8a4cac252ecf768c79a1"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/13",
+      "geography_id": "LT-lsa-7d17004fa09bf0d242147bb3",
+      "record_key": "rec-b7d790516adbcb063335f77cb1cd083598ac63213b8543e6443a0a1dcc6f5024"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/14",
+      "geography_id": "LT-lsa-8b0a44cd50b13b6c9b333169",
+      "record_key": "rec-2888637e36040bee55d44b50556a22425ac88f61717f58b50f50bdf2f14e5b0b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/15",
+      "geography_id": "LT-lsa-4617e92357bd51e717734b81",
+      "record_key": "rec-007af1b086d984981b6fcc8d15bd0c9b5e761e53a0fbe352fe5df54f4ff0c340"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/16",
+      "geography_id": "LT-lsa-4a5a1f93917a28e3abdb29e5",
+      "record_key": "rec-4a3a48ada0d355e4c820183d805fe52d3f0fba55f27c049a5bcc5e1328130ce9"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/17",
+      "geography_id": "LT-lsa-86c5531b9462a95617480586",
+      "record_key": "rec-945281ec5e11b3373665455a05d58aefda6cbc3a84269aa5a12c882b9b44f75d"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/18",
+      "geography_id": "LT-lsa-5c116a270b32f7ca77ff7c26",
+      "record_key": "rec-7997b21a421b8087eb4ba62870dfb7341ddcc670961e00fab574f02879d38a5a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/19",
+      "geography_id": "LT-lsa-ea75b499bb7168fb0e92352f",
+      "record_key": "rec-388ff8fc17531f485e4b614ad777916262af743fab90bc8e20590616bc866537"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/20",
+      "geography_id": "LT-lsa-5caa71df814d22658631829f",
+      "record_key": "rec-ca0017f26cd2a10c415c9430a67d5309efe136ddee49591ddad7edfb825c53a1"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/21",
+      "geography_id": "LT-lsa-209e7b36b381075381de7927",
+      "record_key": "rec-18fa0f139c4a66a3590b8fb510558f86564a3e95bd7474b1720b10adff3c1eba"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/22",
+      "geography_id": "LT-lsa-34a2fc6f5e0178a1829c274a",
+      "record_key": "rec-81876ff7215eb235e2eb85dbfac2f68f8a0a1bed16e2bfcf6c93ffea7c6161bf"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/23",
+      "geography_id": "LT-lsa-255fa690d5cd5290eec34929",
+      "record_key": "rec-a3280510235e460dbb1d58812575f39bdf16732a74558c7ae8384665b4ecf485"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/24",
+      "geography_id": "LT-lsa-c043419abfda0987ff03ad81",
+      "record_key": "rec-dc01712c4a9a2bf1220efc583969ed319a2da77cffe0b7175290c3ef06da1d6f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/25",
+      "geography_id": "LT-lsa-d6298552d1885c933957c2cb",
+      "record_key": "rec-e7b7eb31340d564c2955bb94c143cf70030a0e440b5ea6d8dadf9e7394b00fe5"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/26",
+      "geography_id": "LT-lsa-b05533bac82daf8bfa953703",
+      "record_key": "rec-7395eb889a5876747b5f1fe876896033eddc8b83ae98b11b2fd10f2ece04b01b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/27",
+      "geography_id": "LT-lsa-c0920215ff8130e91f21f476",
+      "record_key": "rec-d45a704b9767aa7454f3ad1641b4dd095e594d70901d5e6a5e2094080e3a089b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/28",
+      "geography_id": "LT-lsa-fd1f7e4a64386f082c7464c4",
+      "record_key": "rec-9c380fc6b5f310c73d27ca7a63f2f2f39c37757069b22176f79bd87b84407a67"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/29",
+      "geography_id": "LT-lsa-97de1649eece489af8eead5a",
+      "record_key": "rec-095ccfcfc9fb6e2c03f8c91fdb4139ffed924497a5160372434ee3cb7ba93b0e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/30",
+      "geography_id": "LT-lsa-7eba97ace8f6b09a1558ca61",
+      "record_key": "rec-5ed1ec15bcc3141b92aab612d06210c00c023ce47689d404c40bfd68d728b295"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/31",
+      "geography_id": "LT-lsa-9b51900bb432dfb132e5a413",
+      "record_key": "rec-5c8fb9eba4449a75ef17cf743e218ca95ec5fa2ddf193ec527cd4245e9170cda"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/32",
+      "geography_id": "LT-lsa-626d9757333c46171af3ca13",
+      "record_key": "rec-f4f5038212992fb3355c583402fa3821d61fcfe5c658861ccdcd2088ef60703a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/33",
+      "geography_id": "LT-lsa-c14c28740e06662bb42abaae",
+      "record_key": "rec-a93c8440544412e2a83136ad2dafbd552d6f147b5feb71fb5a477cb461732ea0"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/34",
+      "geography_id": "LT-lsa-3b3c7641b01288497cc0e0c0",
+      "record_key": "rec-a84e437cd6497f65fcabc720d7b6ed6bd71ee61d8c3d4578f99ffd8caee67845"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/35",
+      "geography_id": "LT-lsa-6d74b5aa708195f8f43b1c86",
+      "record_key": "rec-6f9e00a7e04f16d09b98e27070cf3e3cfc78aa0cdae51fb790334a3495878d61"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/36",
+      "geography_id": "LT-lsa-b07e58fb52f78307281708a1",
+      "record_key": "rec-2efc362ded677d3ef2593c83d99ff8dfd0476477b8434bcc39a953cede0d1f2a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/37",
+      "geography_id": "LT-lsa-7f640f99d3b6ab5802b3763e",
+      "record_key": "rec-ae673bef9711617bd489f5ef8f4f97415c66304c6d96a6cddf7ed42f2cf6a678"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/38",
+      "geography_id": "LT-lsa-20f27e897b0cc59e47c2cadc",
+      "record_key": "rec-02de920b1d9160ca1d3da134d8c81e643143856e5bf997643551daf92cdb90a4"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/39",
+      "geography_id": "LT-lsa-020b89cd0cb5735da3e73cee",
+      "record_key": "rec-a5e1a27c0dd60ea7fe1e1806926f4c10750021d7058df4ffa211eeb139bfe65b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/40",
+      "geography_id": "LT-lsa-6c0c69314d449fbc3683457a",
+      "record_key": "rec-c276f86736d2b97acc034dfe11647ec3dbe18ff497f0bab2c3ec34f6acf02e41"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/41",
+      "geography_id": "LT-lsa-8608c301a73a3cdf9b4c989a",
+      "record_key": "rec-a0cf615b0f445a15c2736d9ebd7e2a4ab95a874f9cf737e5fa1e69a45fa494c3"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/42",
+      "geography_id": "LT-lsa-952f03ad39e8e4878e0d9106",
+      "record_key": "rec-9053dfb99125992753fc2d95f9651f40954f0e79be8f07b2344d0ffd4a7ca7a3"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/43",
+      "geography_id": "LT-lsa-7da848dbca7a50a3593dc043",
+      "record_key": "rec-b02eead2740fe4fb678d8b498de7a49dea1d9dca44382c18e90b7b1e53703221"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/44",
+      "geography_id": "LT-lsa-d80e14b38b9936a6f5b8c2c0",
+      "record_key": "rec-d2e60633cb3550fa1a7e5ea93aa1d88c205797de137433715be8a6c903e26efc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/45",
+      "geography_id": "LT-lsa-34b428a72ccd7550bd2277d4",
+      "record_key": "rec-53dc094ca74e761e75bb528d0c67388f75db283d6679cc44d93ad0a264ec4f97"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/46",
+      "geography_id": "LT-lsa-310cee523c0dd4085c828e08",
+      "record_key": "rec-c11b918fc8e5a89156b5e26deeec53db3ab5daba37742378eaaca4056e3b9d7f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/47",
+      "geography_id": "LT-lsa-e5061a6791000dd2352d4b2f",
+      "record_key": "rec-e8eccfd9701137783c7aeab1c179acacc2d080ae440c592d54181a0148c92aa3"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/48",
+      "geography_id": "LT-lsa-5ed71f409eb264bb6dfd727a",
+      "record_key": "rec-3e0c0af187af9019e7287f8574387cab972689fb007cdd7666423fd20bb05e58"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/49",
+      "geography_id": "LT-lsa-6bbab511ccac6b18f1dbac22",
+      "record_key": "rec-7fabc4f66c48434eecacd417304bfbe303072883dbef34e7b5cdcbb94eaf6f35"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/50",
+      "geography_id": "LT-lsa-ba767bcc6a05c047e6f72ff5",
+      "record_key": "rec-d4d87746ca75880f395a0f64c21ea759ac915ed0f529e165636080debdb8af24"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/51",
+      "geography_id": "LT-lsa-efd08c984b832d4133488b62",
+      "record_key": "rec-12839e5c33bea0cf4029ed1985697f6008244e9d8dd28594d01dae7c9611b884"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/52",
+      "geography_id": "LT-lsa-193ebf889e0faaebe264cf0a",
+      "record_key": "rec-5ae57a4e83a687527e8c487891a0797a91421cf93450307e88af677e47ec0524"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/53",
+      "geography_id": "LT-lsa-ec8c492c997798adf11aa838",
+      "record_key": "rec-ec44fcbbb3b16a4f621e10b6918a6dfe6936e4031aad0cafd6359df9a8260681"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/54",
+      "geography_id": "LT-lsa-2142387c013aa6cc2d8768d2",
+      "record_key": "rec-8d36aa143eba03a5183257ae73a5f94a59639dd533c26eccef8adb47aab7041e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/55",
+      "geography_id": "LT-lsa-f613b260d6a372a594276240",
+      "record_key": "rec-76ddda2cbb702d8c61421f7e71b5f5d12e7be8a92969c1e9b209afafc836cea0"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/56",
+      "geography_id": "LT-lsa-36a5f7a0976fa7cc09eb3e71",
+      "record_key": "rec-0c58bf4c05d4c6cf348f2197dc95095416c4eed6e1345d21c46e6391d9e225fd"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/57",
+      "geography_id": "LT-lsa-4541300e5f5db22203b27e48",
+      "record_key": "rec-1d3d92529afad3bc0a8214b6677d4813312afebf8604ac401038cb8f6e5cd778"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/58",
+      "geography_id": "LT-lsa-4a0a277f22e3763c21adbd97",
+      "record_key": "rec-393227074a37e2ef6a047efc0a3a9c44c38f88d264089cdade0be1b0578b495a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/59",
+      "geography_id": "LT-lsa-bf558bf41011d434e6c1b84e",
+      "record_key": "rec-e3c3d71e497374018ded62b9fcfdf878734408434ac7149ff97660498f15072d"
+    },
+    {
+      "source_pointer": "data/research/lithuania/geography.json#/60",
+      "geography_id": "LT-lsa-e784b378f434904980012d7d",
+      "record_key": "rec-06c29fc0f0d4672c6ee615a396fdd06f0401326951a135ff9fa2983f2b540658"
+    }
+  ],
+  "sources": [
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/0",
+      "source_id": "lithuania--url-c1355525c260dfa0d396bf08",
+      "url": "https://api.github.com/repos/atviriduomenys/manifest/git/trees/master?recursive=1",
+      "record_key": "rec-8519d015153c03f9fb209e667db0b0fe855e81496473af8e9bdf71d9727cab7b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/1",
+      "source_id": "lithuania--url-44dcc27426373dea0d6a205e",
+      "url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.21892/asr",
+      "record_key": "rec-6e98b34714b9dbf3ef444c88935941cbf229f2952959ed1b9d016507b4831193"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/2",
+      "source_id": "lithuania--url-40b93a11702357cc8f7bd6fb",
+      "url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.477145",
+      "record_key": "rec-90f145663507e768d5e22fed79f179a5f69821bd1d7164bd464594619a55ee44"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/3",
+      "source_id": "lithuania--url-94fb2ee86cc7f38bbd41f80a",
+      "url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.5884/asr",
+      "record_key": "rec-5c52b217dd13aac4c12ad31ea70e0e77021f1fe23eafbf7a53757016b9857532"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/4",
+      "source_id": "lithuania--url-b620a02f09d0970ae12c48bb",
+      "url": "https://e-seimas.lrs.lt/rs/actualedition/TAIS.5884/fQXuVTUDDS/",
+      "record_key": "rec-ca8d215870deae9318b7b69676192ea64997985f86727d06db5680ab34a42fd6"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/5",
+      "source_id": "lithuania--url-4a857000b51090af2c4997d2",
+      "url": "https://e-seimas.lrs.lt/rs/legalact/TAD/TAIS.21892/",
+      "record_key": "rec-e91d6376041fa019e652c81fe37571b274b94e5292e46b65ca24b604393db5d8"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/6",
+      "source_id": "lithuania--url-5cb5e53db5adad8d8b716255",
+      "url": "https://odihr.osce.org/odihr/elections/lithuania/433352",
+      "record_key": "rec-d1b8c3e545ca4d14faf8c5445da2135f9caabaa19cff0f019bfdc51d5e9c4ed8"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/7",
+      "source_id": "lithuania--url-255f07c416513be3cb2784dd",
+      "url": "https://odihr.osce.org/odihr/elections/lithuania/477730",
+      "record_key": "rec-aa3cb7a44e1244dd6e34ed4ff983d9e7973ced21cd89f38d295482578e37ad37"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/8",
+      "source_id": "lithuania--url-b0c1371a4cbf9591e48e12e1",
+      "url": "https://odihr.osce.org/odihr/elections/lithuania/567193",
+      "record_key": "rec-2d4f0ae502f27d0ef6986d1ffe7768f35956407c1e809d9d1a46dae3d77eb6cc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/9",
+      "source_id": "lithuania--url-87da88d80a3baff31f5a1d29",
+      "url": "https://odihr.osce.org/sites/default/files/f/documents/a/e/433352.pdf",
+      "record_key": "rec-09b0f282bfd6ee4800efc99536239797997f04f1f593ca0c7cf1653b330b4ecd"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/10",
+      "source_id": "lithuania--url-956538ecc7a6319deaa93894",
+      "url": "https://odihr.osce.org/sites/default/files/f/documents/c/7/567193.pdf",
+      "record_key": "rec-7b999d63bd72ecf6bedc1053601d90afc21105e9da518d9b7a20cead0b2333b8"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/11",
+      "source_id": "lithuania--url-42fff0a20ce99dee2b9b0881",
+      "url": "https://odihr.osce.org/sites/default/files/f/documents/e/a/477730_0.pdf",
+      "record_key": "rec-b2b3567223ec9d4f3818f964fa28848b5ca85defea76cc5e720422c639eacef3"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/12",
+      "source_id": "lithuania--url-72d2bbd870e6621c6835299c",
+      "url": "https://raw.githubusercontent.com/atviriduomenys/manifest/master/datasets/gov/vrk/apylinkes.csv",
+      "record_key": "rec-41363a57ab40fcab88294594c25352797cf46dd52ba1408cae70060e87598e6e"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/13",
+      "source_id": "lithuania--url-b3519e40d12d4a1c80e7daa8",
+      "url": "https://raw.githubusercontent.com/atviriduomenys/manifest/master/datasets/gov/vrk/isrinkti.csv",
+      "record_key": "rec-2c318c0ff08bb3ffb1c4708b785dbf4f1120391e1b712f0a3df5c75721d8e6ae"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/14",
+      "source_id": "lithuania--url-f2e6149adae971d87f62f3fa",
+      "url": "https://raw.githubusercontent.com/atviriduomenys/manifest/master/datasets/gov/vrk/kandidatai.csv",
+      "record_key": "rec-7e948efd1516b81c30da7405ac958ca16e296f0a7b1c4fb62654b6f02c9c4b4c"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/15",
+      "source_id": "lithuania--url-5df61090aeda0a108cc06bdf",
+      "url": "https://raw.githubusercontent.com/atviriduomenys/manifest/master/datasets/gov/vrk/rezultatai.csv",
+      "record_key": "rec-b3ced71a55e654a8d1dc289ca693f5c85bdfc3fbd8ea90eb29c2b47a71868487"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/16",
+      "source_id": "lithuania--url-7bc4eca15a887dad05e337b1",
+      "url": "https://results.elections.europa.eu/en/lithuania/",
+      "record_key": "rec-9f6ff6ebbc3c9cfe3a4f0c0534d512753d4672f72862ab995f8ab53bdb9ee2dc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/17",
+      "source_id": "lithuania--url-383d0a7becb098a8142eeae6",
+      "url": "https://results.elections.europa.eu/en/national-results/lithuania/2004-2009/constitutive-session/",
+      "record_key": "rec-315b8db597e804f48f5e94fbe315a0227c4f49ea52d29470e7970b562c638367"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/18",
+      "source_id": "lithuania--url-c79513e79b2046333808857f",
+      "url": "https://results.elections.europa.eu/en/national-results/lithuania/2009-2014/constitutive-session/",
+      "record_key": "rec-063ce76c25a296974873249f9c58e7b458a6c79aa45ba7a1ab71b1b4e61aac61"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/19",
+      "source_id": "lithuania--url-1df990a1829097512c8e5d6d",
+      "url": "https://results.elections.europa.eu/en/national-results/lithuania/2014-2019/constitutive-session/",
+      "record_key": "rec-58821ad2505611fd851e81498143e9ef9e091f17eb786f92a08b3e20e424e7e2"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/20",
+      "source_id": "lithuania--url-e90501e05c06619a522f8d2a",
+      "url": "https://results.elections.europa.eu/en/national-results/lithuania/2019-2024/constitutive-session/",
+      "record_key": "rec-956881169a48f0edcfb1d854d70ccd8e25242acd178d05bfcb4203acd3f4611f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/21",
+      "source_id": "lithuania--url-a1567b6d61acedcd3c43cdee",
+      "url": "https://results.elections.europa.eu/en/national-results/lithuania/2024-2029/",
+      "record_key": "rec-70ff018d550a6253e61b0675eac9fdbeb9e627ce537c2ec9c8427f6bac96a1a3"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/22",
+      "source_id": "lithuania--url-1902f7b4d1a0c291dab7a264",
+      "url": "https://www.lrs.lt/SIPIS/portal/responsive/static_pages/kad7/kadencija2012.show7-p_r=15827&p_k=2.html",
+      "record_key": "rec-fd3088adba42a44798a85596644f1098eec949561090babdde33e87bce91b612"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/23",
+      "source_id": "lithuania--url-e5026ceccba3ed202f1b3c54",
+      "url": "https://www.lrs.lt/SIPIS/portal/responsive/static_pages/kad8/files/k8.show-p_r=38243&p_k=2.html",
+      "record_key": "rec-ec79b04d1f3d147d701da515bd375a372ac22879a6e4d017f30587c8a358a3a5"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/24",
+      "source_id": "lithuania--url-0d848bb0e930987ce933d987",
+      "url": "https://www.lrs.lt/docs3/kad6/w6_istorija.show6-p_r=6111&p_k=2.html",
+      "record_key": "rec-daeec7760a5f201626e6e8c0f6509677031d92c37ddf8d04a5e43db662ab1d8a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/25",
+      "source_id": "lithuania--url-43061dcb130f9109cef413e5",
+      "url": "https://www.lrs.lt/home/Konstitucija/Constitution.htm",
+      "record_key": "rec-a3b4383fda2f5dbfcaa2fe394ad35abca45a9d51e1bd8ce72ca5547c69c1f5fd"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/26",
+      "source_id": "lithuania--url-7f1aea8cfd0789f359830421",
+      "url": "https://www.lrs.lt/sip/portal.show?p_r=2015&p_k=2",
+      "record_key": "rec-2ecdf444e19224b632c502ff7e08bede7565eab875a0be6efbc4553b70407cbc"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/27",
+      "source_id": "lithuania--url-fca774289dd0ff78199aa886",
+      "url": "https://www.lrs.lt/sip/portal.show?p_r=35211&p_k=2",
+      "record_key": "rec-2282dc6e903802fdaabeaffc18130fc23e55037b5e9694726cf7d8dc169c36af"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/28",
+      "source_id": "lithuania--url-7da9912ed11f84144e89cf67",
+      "url": "https://www.lrs.lt/sip/portal.show?p_r=35354&p_k=2",
+      "record_key": "rec-faff4a5caa5cb7b0f5a75ff9517807673b156af04b04d695876a6f5d40cc8797"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/29",
+      "source_id": "lithuania--url-046558243e58c2480fb794ae",
+      "url": "https://www.lrs.lt/sip/portal.show?p_r=35354&p_k=2&p_a=2",
+      "record_key": "rec-9079baac92b424704314230dcd32099b0108d71e680a66c18906f4ae7b552f60"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/30",
+      "source_id": "lithuania--url-808957f15c19d397b92f1272",
+      "url": "https://www.lrs.lt/sip/portal.show?p_r=35357&p_k=2",
+      "record_key": "rec-c6408fb6f0eb347c82780a28dc009783ce5c9ec5a041c59c039e2365a4ee1afd"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/31",
+      "source_id": "lithuania--url-6dc7e43d7555fd5dd3379e4b",
+      "url": "https://www.lrs.lt/sip/portal.show?p_r=35357&p_k=2&p_a=2",
+      "record_key": "rec-35f5c8fea87aef1667ca2acdaacbd20becf7df9cdc2e348d7e9515554855f30b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/32",
+      "source_id": "lithuania--url-bc6905170e215026cd2237c7",
+      "url": "https://www.lrs.lt/sip/portal.show?p_r=35403&p_k=2",
+      "record_key": "rec-6c5157bcf7ab01d5f3bd6825184df357e154ca70c2bfae6d84a11deea198633a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/33",
+      "source_id": "lithuania--url-ec8d096f94846ac05885353e",
+      "url": "https://www.lrs.lt/sip/portal.show?p_r=40554&p_k=2",
+      "record_key": "rec-879fc37cff952001509e767072bd866c05e030a36aedbd08a0783dd714d91070"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/34",
+      "source_id": "lithuania--url-443267cd68a40de548965547",
+      "url": "https://www.lrs.lt/sip/portal.show?p_r=40554&p_k=2&p_a=2",
+      "record_key": "rec-4c05a920a4eb0239634a20fa57f0806e0731904bf29f023478847ef74f77b685"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/35",
+      "source_id": "lithuania--url-cd155b26f8ce3548daa9478d",
+      "url": "https://www.lsa.lt/?s=2015",
+      "record_key": "rec-70ef39a0bf7154b7e14c046a468b410bca07f924bad515e8e55bd387c0040398"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/36",
+      "source_id": "lithuania--url-53d978f788be230b2094179b",
+      "url": "https://www.lsa.lt/?s=2015+mer%C5%B3+rinkim%C5%B3",
+      "record_key": "rec-66c9cdcca01345cd4c4a40b91962a2e28b9e5c8c9e310d9f78a58cfa16570baa"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/37",
+      "source_id": "lithuania--url-4d9bfa0b94d73433909ce542",
+      "url": "https://www.lsa.lt/?s=2015+rinkimai",
+      "record_key": "rec-fe9c9a1241b6b0decd6d948ad41517ea40e486a073a30b22e2d69d732de364e7"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/38",
+      "source_id": "lithuania--url-e4ef25eadec17aeeca888dab",
+      "url": "https://www.lsa.lt/?s=2019+rinkim%C5%B3",
+      "record_key": "rec-939d9ecd71078bc40e6a2d86252ccd0572b303e57f122cde13107f8abd5e8656"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/39",
+      "source_id": "lithuania--url-936983c9c18bcfeaa283511f",
+      "url": "https://www.lsa.lt/?s=2023+mer%C5%B3",
+      "record_key": "rec-43201956af70acc85b69ff4f72938f177c6581c87fe2fc12aa9824d9ad57442c"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/40",
+      "source_id": "lithuania--url-bc96b32f5efdc45316b09628",
+      "url": "https://www.lsa.lt/?s=2023+merai",
+      "record_key": "rec-b4f2a22fbdb268c2b12b11764bafb5260d789bcd0f9585c4ea15bedd03151788"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/41",
+      "source_id": "lithuania--url-7fc9bbcc3ad34f2a4e4e5b66",
+      "url": "https://www.lsa.lt/?s=2023+rinkim%C5%B3",
+      "record_key": "rec-82b3ae5baabf370bdc51d65ea2dfae1e00c61a72bb735914ce4ce040e4866053"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/42",
+      "source_id": "lithuania--url-43c8fdecd6f6163f480dbc4c",
+      "url": "https://www.lsa.lt/?s=2023+rinkimai",
+      "record_key": "rec-6d51e9766cc7c19caeedc296299d2c106241bd493d8a30439c1a2dc6cce4cb2a"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/43",
+      "source_id": "lithuania--url-3724b942fbb2e354f006c71b",
+      "url": "https://www.lsa.lt/?s=mer%C5%B3+rinkim%C5%B3+rezultatai",
+      "record_key": "rec-f3639ac30727c528c1dc83a4b28fd35648512b59c58719b8f9eaa7294983b0bf"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/44",
+      "source_id": "lithuania--url-b3e0874bc95551889c29465f",
+      "url": "https://www.lsa.lt/?s=tiesioginiai",
+      "record_key": "rec-59ec42de4c9f50596e1ce31dd93ebd3406e8c22f97f8bfb748d2bcf0d18e2d54"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/45",
+      "source_id": "lithuania--url-c9a57db9367261e56a9f37ce",
+      "url": "https://www.lsa.lt/en/",
+      "record_key": "rec-70c06d38e6467f7a9f08975b569bc174adda8c983ca9b29a40733fe20a000e16"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/46",
+      "source_id": "lithuania--url-202f5f0e48e2fa72f67d6d3e",
+      "url": "https://www.lsa.lt/nariai-savivaldybes/",
+      "record_key": "rec-0d0c6b0d293d6d21db7c63c8b9b6eb87678e5d5d5d2d41405331f4df6dd29985"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/47",
+      "source_id": "lithuania--url-ccd0725dd7c6f154dd198447",
+      "url": "https://www.lsa.lt/naujienos/2015/04/27/tiesiogiai-pirma-karta-lietuvoje-isrinkti-merai-susitiko-su-prezidente/",
+      "record_key": "rec-dd5a5ac0f9fc81bc9d17da21a5d213e4b989aef1c706a0a8f95f0be1012b4d87"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/48",
+      "source_id": "lithuania--url-8e96a5864455a85f6d40c89c",
+      "url": "https://www.lsa.lt/naujienos/2019/03/05/per-pirmaji-tura-isrinkti-19-meru/",
+      "record_key": "rec-e4db8f170679a82b84a3a2ecf5e8235badd10bba05844e4f4f3c8bdb080d640f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/49",
+      "source_id": "lithuania--url-4e452749678619de57398992",
+      "url": "https://www.lsa.lt/naujienos/2019/03/18/isrinkti-visu-savivaldybiu-merai/",
+      "record_key": "rec-73dc04f721dae8ea8f5007f9d9bf7ff1a2a61f10fa885a494df1d9daf9c9e27f"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/50",
+      "source_id": "lithuania--url-168167a9e4c88a364dc2f8cb",
+      "url": "https://www.lsa.lt/naujienos/2021/04/21/lietuvos-savivaldybiu-asociacija-islaikyti-tiesioginius-meru-rinkimus-butina/",
+      "record_key": "rec-e02b14aa2fd8770aa0fe465f9731f16186cfbb034f17636e2d1e6124df6e239b"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/51",
+      "source_id": "lithuania--url-ed4baa0449c73071d36308b3",
+      "url": "https://www.lsa.lt/naujienos/2023/03/24/komentaras_vsi/",
+      "record_key": "rec-d174e562f3e4fd9e85c622d46cf327f108c07190301d8089806f4528e6813251"
+    },
+    {
+      "source_pointer": "data/research/lithuania/sources.json#/52",
+      "source_id": "lithuania--url-d1e26c99a56835c19dba44b9",
+      "url": "https://www.osce.org/odihr/elections/lithuania",
+      "record_key": "rec-3ea31414cf45a9bdff575e5a23f7152df5abee1b29d2df80d84dd858c1982655"
+    }
+  ],
+  "research_dates": [
+    {
+      "owner": "event",
+      "owner_id": "event-3d387a9f91ad362847a8fb6a",
+      "slot": "election",
+      "date_id": "date-22630a7c5ba8c4cc98a670b91805a3675f83646404d13dadc3cd5fddabcf6128",
+      "value": {
+        "label": "2004",
+        "precision": "year",
+        "certainty": "called",
+        "year": 2004,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-bb953811f91f048e4a055554",
+      "slot": "election",
+      "date_id": "date-4ea9ce8124b12b3edbf21ac14c13580d3503c0608c71efc52303c01c5ebdd57d",
+      "value": {
+        "label": "2009",
+        "precision": "year",
+        "certainty": "called",
+        "year": 2009,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-6678938eebd14c016864338d",
+      "slot": "election",
+      "date_id": "date-0f742078a72f23d47b9448f2b21edfa9f2e4fd2d5c4b8dbe8f4bf30a4878ff93",
+      "value": {
+        "label": "2014",
+        "precision": "year",
+        "certainty": "called",
+        "year": 2014,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-9d8b23b978be3e9231ce85a2",
+      "slot": "election",
+      "date_id": "date-be1f479ad9d61d38e16cb36832fb118be86de6259596cb8cb6c83da344115dbf",
+      "value": {
+        "label": "2019",
+        "precision": "year",
+        "certainty": "called",
+        "year": 2019,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-417276aa092699ecef86dfed",
+      "slot": "election",
+      "date_id": "date-907c52dac0ee4f277f228d6b107d589933c861c2e175ab2628ce640e18dfb234",
+      "value": {
+        "label": "2024",
+        "precision": "year",
+        "certainty": "called",
+        "year": 2024,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-024364038286c634ce2006d9",
+      "slot": "election",
+      "date_id": "date-b916c7193182a7f79e0d132e773b6924a20ea5a7a241386e739115ce66d24a0c",
+      "value": {
+        "label": "2008",
+        "precision": "year",
+        "certainty": "called",
+        "year": 2008,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-4d903d92d04a8ec301133edd",
+      "slot": "election",
+      "date_id": "date-342512889754f57b01b58040130a3e735cac3fcfe9c8c506ede85e5a53691284",
+      "value": {
+        "label": "2012",
+        "precision": "year",
+        "certainty": "called",
+        "year": 2012,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-0f5a78d003fd58aac869a7b5",
+      "slot": "election",
+      "date_id": "date-c84d9915f1490b96953b0820779019b62741b114e69112b798cdd71fd0dbc589",
+      "value": {
+        "label": "2016-10",
+        "precision": "month",
+        "certainty": "called",
+        "year": 2016,
+        "month": 10,
+        "day": null
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-e1974e234ea3bdc274df62f9",
+      "slot": "election",
+      "date_id": "date-23625e005b66e42202da4651ff9d05b91b6937ef562d3381ca63a95e89971e7c",
+      "value": {
+        "label": "2020-10-11",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2020,
+        "month": 10,
+        "day": 11
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-808c5d3f18a6690850c86634",
+      "slot": "election",
+      "date_id": "date-e4f642fdacd2e636b53d820b2ba414257a912a5e2f704bc542815395b94fde7a",
+      "value": {
+        "label": "2024-10-13",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2024,
+        "month": 10,
+        "day": 13
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-161ed64ee44d4e92e516d7de",
+      "slot": "election",
+      "date_id": "date-684a8042789992f1c9d122ea83a2e9434e0aac1d7b31a6b1d26b4776defc3ec3",
+      "value": {
+        "label": "2019-05-12",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 5,
+        "day": 12
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-145918e7190b9b66d444ac76",
+      "slot": "election",
+      "date_id": "date-5df5ab6ed6b6125d4a523cdf79811a12d2b79f95f11377b859bfe107f7d7083c",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-dbe31017989b3ae70769b15f",
+      "slot": "election",
+      "date_id": "date-1a72a5774c3ba046b6aeccb18b2132ec2d6f47a03a4e59d5415e9ee5571151f1",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-6b4f8aaf8f958c79022396f9",
+      "slot": "election",
+      "date_id": "date-a91b7bfa1fe62e3a792e34debc3842ebb80e95214f689589d52b5cb26ca33f00",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-92acb55dff0536d1b8b03870",
+      "slot": "election",
+      "date_id": "date-2a4e9f66cdbce8bdd0f2c5acc902c5b94155de3c2b69e8757c2b2f59494f5618",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-2ddbe8cb3e01bcf10d1d1475",
+      "slot": "election",
+      "date_id": "date-89912bc0c36d66536fb21e67dfcd6425185b726d5c53261809a3455370bd2005",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-108a43bdbe7984f31fbb4211",
+      "slot": "election",
+      "date_id": "date-85921d080b3c542c50dedca2c395d9cddd78f5ec2f9bb41b3f4ebd5cb5632f4a",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-eb76177f6fe933399e8083bb",
+      "slot": "election",
+      "date_id": "date-e0dd703654fe91b3d6deaba023a46664aacd37deaa314c62209a8bc085d58f4a",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-f881eb71416a69f1157bf805",
+      "slot": "election",
+      "date_id": "date-12163f237f6a27b2e7ea88237e9bc953c2c3feeb630fc25a10f5dd70c443d22b",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-52bce7faddeb10588588f894",
+      "slot": "election",
+      "date_id": "date-8beae901000ce930289ee45659711dfc4f8d342d8f267ed03db5ee2c0e649c90",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-1fc7251706e07ae20f623b9e",
+      "slot": "election",
+      "date_id": "date-b630c683bfb5f393d57bb7e9d195e100aede0152cd940d3e8489dbe70f6bd77d",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-1ab07c82b7886699a2544119",
+      "slot": "election",
+      "date_id": "date-7c8fc7aeb058c7a402f223e147260b6d7dc43b8444a22179f549fa0872e501fc",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-c48fb9da4086dd9c60fe728c",
+      "slot": "election",
+      "date_id": "date-ae2b8d6ccf40235e73ad53b4287359f46505880d1fa953cc3d174daa9e54f25e",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-6c325df4691739a6366a1313",
+      "slot": "election",
+      "date_id": "date-c1aa51dcc27ef6f14225ff8ff33d6c907b33c2dba04183f85b202e3a1c210667",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-2aefb77d85e91ddf19033b9d",
+      "slot": "election",
+      "date_id": "date-611bbe0be519a215384dc3fd6f672aeda18807cecca370d8e8f8d6fee50385b5",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-0a2e7eeb9c15f37d9f651cac",
+      "slot": "election",
+      "date_id": "date-a7ef970395a62d8deaba5e617d1025d3b62afec7ad7df0aedbb81344c301ad21",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-0c69cc4c06c0427231ad40f4",
+      "slot": "election",
+      "date_id": "date-b36387edb7fb9743c2b8e2b018c7bc178d9882d67de06c7dda9f1c0b89177090",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-506133a9bd6f2e5344b29343",
+      "slot": "election",
+      "date_id": "date-3f286d55f30ef3c103fb355400977d8d70557005b10f63e7e8ef3416626354b8",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-7d2a32c5cd74a2f1830e72b0",
+      "slot": "election",
+      "date_id": "date-551b7f3cd39c970295effcc19c8951692929545fb555813b4231cf544db3282b",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "event",
+      "owner_id": "event-ca427ecdbcd2ab20021f3c90",
+      "slot": "election",
+      "date_id": "date-24e6d7631d8d2478a950f93b976adff4b06c405f221dbf213045b2d7a0b95692",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-231bcd1029fb23f280429d5d",
+      "slot": "ballot",
+      "date_id": "date-d43639e746e7b0e1f0c75bdd22c75a4bfdc8bb13e3ee0fc31e8bffb36497b800",
+      "value": {
+        "label": "2020-10-11",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2020,
+        "month": 10,
+        "day": 11
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-ced857f0e084c7d584338dff",
+      "slot": "ballot",
+      "date_id": "date-8756a14c2c3b7dfd51c1596f4a91c414860db24a7ba0d6e8d80af7d188c2e18c",
+      "value": {
+        "label": "2020-10-25",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2020,
+        "month": 10,
+        "day": 25
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-6a91daf54e1313d46626d094",
+      "slot": "ballot",
+      "date_id": "date-f2b6a09819b0188898c101f5a92b5b1483b376ac268dd9c4078db74a1cdfa0f5",
+      "value": {
+        "label": "2024-10-13",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2024,
+        "month": 10,
+        "day": 13
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-32a9ec9e562e233d98ab9293",
+      "slot": "ballot",
+      "date_id": "date-465e3ca864f96e3c974d1a2f8989b63ea550fe16dde24bc03c020ba024ef4b5e",
+      "value": {
+        "label": "2024-10-27",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2024,
+        "month": 10,
+        "day": 27
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-a9fb2536bc45cf80b6bbdcbc",
+      "slot": "ballot",
+      "date_id": "date-ea8d9fa46aeabc14397b337acc065329c043b53f93338d369798e09022763d12",
+      "value": {
+        "label": "2019-05-12",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 5,
+        "day": 12
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-c14a7c59881496c1c079089c",
+      "slot": "ballot",
+      "date_id": "date-16eb46ebedeeb68328efd5fdaf7271917c8e97c029029127ba3e24069aecdf98",
+      "value": {
+        "label": "2019-05-26",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 5,
+        "day": 26
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-3f7abfc85c79985c06450c8b",
+      "slot": "ballot",
+      "date_id": "date-307e6f1252c5df9a6a94caa6935014206b6a40a55e594f4173d62ac86026d92e",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-f7a5192e40b37288f528d6b4",
+      "slot": "ballot",
+      "date_id": "date-06500b4351897b26a2cfc8003407d0b303d653fb6b82a29886a87d6712694bde",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-87fe6a26b886eb7f46b1e3f9",
+      "slot": "ballot",
+      "date_id": "date-3df54b6cd147ddb67f14731213a38dada5d94ffc5491bff7b8a80ece929234a3",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-96a4a03681a448c5b92cf07e",
+      "slot": "ballot",
+      "date_id": "date-e2a2d293bd37a3cd018951b6f03569e2686c13fd25d398a9838ff40fd70c23fa",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-e6de2271ee81eed0f5edf6bf",
+      "slot": "ballot",
+      "date_id": "date-7cf8e2b0774ba0fd6647b8ba8d14c96db598b5c5a96deb9047e0e0cffb15a38f",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-94c7802638150452e3ac9ec9",
+      "slot": "ballot",
+      "date_id": "date-586e96db860666ab208945784febb4d28faa6f78edecf04792826d3ca6ca1b37",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-1ca8ac32ece7bf06c9234e90",
+      "slot": "ballot",
+      "date_id": "date-ffd3dfd196df43d24f343e5d77323a8017c00e4588d647ea393b1fee2a0174ce",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-e7b1767071877bae5c4f2e6d",
+      "slot": "ballot",
+      "date_id": "date-5dbc64840cd42d1938c55cb2f38083e581ff8287e35d3460b4d765ff18ddba94",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-3eb446ff38ee5c0e98d23e83",
+      "slot": "ballot",
+      "date_id": "date-724d0e4fd874f45a3a3c924da3cba5de9d0248d771c9a94a18decf059b5fa723",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-dd4c6f4581044d6cb4aeab12",
+      "slot": "ballot",
+      "date_id": "date-b7b92cd72141e2be10faf5f3ad943a1ea13526bbb6b6236a7b953ada68890bb5",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-28ac5db9e04740be813b97bc",
+      "slot": "ballot",
+      "date_id": "date-db73205b0a5a46357653f0395152d2ce8300f7a96a40529055b5262ec2c34269",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-a340fb0972e6b0e5a4b60962",
+      "slot": "ballot",
+      "date_id": "date-c574d394d75c3e72d66b6c3024daf5d32237596b47ff9fc6ebacf64de7caef3b",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-1f870b6c4701026df63f819b",
+      "slot": "ballot",
+      "date_id": "date-1a0b643741a409534d2517e9de660cc90802239ed86b514bc6d383e0531d31f5",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-406450a247cbe1c5c1ed0e51",
+      "slot": "ballot",
+      "date_id": "date-1174eef3e654432450863e1ec598acf604a9637f516beeeb323b157debcee0f8",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-ec776f2647c9a7559abe891c",
+      "slot": "ballot",
+      "date_id": "date-173f2d31e95d1bbadd4449449cb8b5004fb58a0f1e03539178da8e500e19cfc8",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-84ad5958aab123972baf21c1",
+      "slot": "ballot",
+      "date_id": "date-43d558480ad5e0407e12ac647d36cad4d7bd694548378b22d666ddea8dfdb1cb",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-6e7d388f3612fc29f3bb3391",
+      "slot": "ballot",
+      "date_id": "date-d4160344ff9eaa8d8d54aeb3dd6ebcb79cb1dbd23b3244372b6dd47861508568",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-3fc342e50591c94f46e50aa0",
+      "slot": "ballot",
+      "date_id": "date-e29ac61e65519f2865aad147e79b582847e758f4f03eea89b215332759a374bf",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    },
+    {
+      "owner": "proceeding",
+      "owner_id": "proceeding-1dfe8e305b7999827888d0c0",
+      "slot": "ballot",
+      "date_id": "date-974bbcf239bf0d2011c843ebc0ef329b7257b7bd5c3e58e15b2b2416860a3bb4",
+      "value": {
+        "label": "2019-03-03",
+        "precision": "day",
+        "certainty": "called",
+        "year": 2019,
+        "month": 3,
+        "day": 3
+      }
+    }
+  ]
+}
