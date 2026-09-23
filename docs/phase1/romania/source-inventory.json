@@ -1,0 +1,108 @@
+{
+  "captured": "2026-09-22",
+  "inputs": [
+    {
+      "path": "README.md",
+      "bytes": 1869,
+      "sha256": "3aeea258beaff10437b81dd861adba5afbc83edbb1e1213c1ca37dd6210b4bfd"
+    },
+    {
+      "path": "data/research/romania/events.json.gz",
+      "bytes": 126392,
+      "sha256": "bc7f7284e8abbc844cff5a53caa4766e26b71e812339b0d4b7714983775c2344"
+    },
+    {
+      "path": "data/research/romania/geographies.json",
+      "bytes": 590235,
+      "sha256": "3150e9740fc101dd3fb5b5be338c5b7a226fecad837a6cdc9320856ff189583c"
+    },
+    {
+      "path": "data/research/romania/office-register.json",
+      "bytes": 3150303,
+      "sha256": "7e37135581523739beb5c0f69027ae173f6916484ee53df65acc70320a190f05"
+    },
+    {
+      "path": "data/research/romania/research-gaps.json",
+      "bytes": 1575,
+      "sha256": "232ce1f4ead67e25b8c6e6ef33cd9a7c2e95caaaa5cf6254e8707ba331ea69df"
+    },
+    {
+      "path": "data/research/romania/results.json",
+      "bytes": 5572,
+      "sha256": "3076ca44ca50274dd6cbdcdcf5dbd8fc4dd1e7ca7b8914950d9bf4615b08ece1"
+    },
+    {
+      "path": "data/research/romania/siruta_s1_2025.csv",
+      "bytes": 1204101,
+      "sha256": "757fc7e5d228acad8a9abe99dfa522f30f476562dc1fa92af734a315d554ae02"
+    },
+    {
+      "path": "data/research/romania/sources.json",
+      "bytes": 2056,
+      "sha256": "ab3208c39c269fbaa8ba0aa2071d56fc666d6d012f13a560f734d679f1f026e1"
+    },
+    {
+      "path": "docs/phase1/romania/JUSTIN_REPORT.md",
+      "bytes": 688,
+      "sha256": "6d370beb967e38bb6ed7ec9cb1d7426dddd3e65b91e74abb0865f4ab073df6e6"
+    },
+    {
+      "path": "docs/phase1/romania/Romania_Acceptance_Examples.md",
+      "bytes": 1560,
+      "sha256": "44ab54cf33e6bf7cca1a8568dbd27b94f90a01961bcb88a688889106cbbbe1d3"
+    },
+    {
+      "path": "docs/phase1/romania/Romania_Field_Map.md",
+      "bytes": 627,
+      "sha256": "3a3fa7011954272689e31ce94a7f22f08a5e16bec4bc4dc1bc60cf2a08040790"
+    },
+    {
+      "path": "docs/phase1/romania/Romania_Identity_Rules.md",
+      "bytes": 1093,
+      "sha256": "0888423b5071e8ddef3388714cd502862b0517c0e5bb011b755d5a134fa9b9d2"
+    },
+    {
+      "path": "docs/phase1/romania/Romania_Research_Gaps.md",
+      "bytes": 1191,
+      "sha256": "c2121f3cfbd16d054e76945069ee25f236b4698336bf9649a180063073a3d8f7"
+    },
+    {
+      "path": "docs/phase1/romania/column-map.json",
+      "bytes": 27825,
+      "sha256": "fe8acec774c95f3c584d72aa8f0557322f520ef3fa63c5ab95d803e01a1811d7"
+    },
+    {
+      "path": "docs/phase1/romania/contracts/0001_atlas_attempt_log.sql",
+      "bytes": 4226,
+      "sha256": "e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1"
+    },
+    {
+      "path": "docs/phase1/romania/contracts/0002_atlas_master.sql",
+      "bytes": 35131,
+      "sha256": "1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da"
+    },
+    {
+      "path": "docs/phase1/romania/counts.json",
+      "bytes": 660,
+      "sha256": "1a6894cdf5ce00e916fc558cc44c059acf46355a753f03ce2583684dd476880b"
+    },
+    {
+      "path": "schemas/atlas/tiers/romania.json",
+      "bytes": 1128008,
+      "sha256": "eb64c80668c2f079f33bbfeee765aa63948143f4d273371caa3e35a52ee005ce"
+    },
+    {
+      "path": "scripts/validate_romania_pack.py",
+      "bytes": 1733,
+      "sha256": "b56cfad199b723d24b5ea79aaafc6f2a20cec5ee51b6d8943fb87ef67394efba"
+    }
+  ],
+  "source_urls": [
+    "https://insse.ro/cms/ro/siruta",
+    "https://www.roaep.ro/prezentare/baze-de-date-alegeri-electorale/",
+    "https://prezidentiale2025.bec.ro/rezultate/",
+    "https://parlamentare2024.bec.ro/",
+    "https://results.elections.europa.eu/en/national-results/romania/2024-2029/",
+    "https://www.roaep.ro/legislatie/legislatie-electorala/"
+  ]
+}

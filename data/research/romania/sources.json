@@ -1,0 +1,52 @@
+[
+  {
+    "source_id": "RO-SIRUTA-2025",
+    "title": "SIRUTA S1 2025 official territorial register mirror",
+    "publisher": "Institutul Național de Statistică",
+    "url": "https://insse.ro/cms/ro/siruta",
+    "mirror_url": "https://github.com/ionelmc/django-siruta/blob/master/data/siruta_s1_2025.csv",
+    "captured": "2026-09-22",
+    "sha256": "757fc7e5d228acad8a9abe99dfa522f30f476562dc1fa92af734a315d554ae02",
+    "status": "official-origin mirror; exact bytes bundled"
+  },
+  {
+    "source_id": "RO-AEP-DATABASES",
+    "title": "Baze de date alegeri electorale",
+    "publisher": "Autoritatea Electorală Permanentă",
+    "url": "https://www.roaep.ro/prezentare/baze-de-date-alegeri-electorale/",
+    "captured": "2026-09-22",
+    "status": "official catalogue; detailed local result projection open"
+  },
+  {
+    "source_id": "RO-BEC-PRES-2025",
+    "title": "Alegerile pentru Președintele României 2025 — results",
+    "publisher": "Biroul Electoral Central",
+    "url": "https://prezidentiale2025.bec.ro/rezultate/",
+    "captured": "2026-09-22",
+    "status": "official"
+  },
+  {
+    "source_id": "RO-BEC-PARL-2024",
+    "title": "Final 2024 parliamentary results",
+    "publisher": "Biroul Electoral Central",
+    "url": "https://parlamentare2024.bec.ro/",
+    "captured": "2026-09-22",
+    "status": "official result as publicly announced; numeric transcription flagged for recheck against signed protocol"
+  },
+  {
+    "source_id": "RO-EP-RESULTS",
+    "title": "Romania — 2024 European election official results",
+    "publisher": "European Parliament",
+    "url": "https://results.elections.europa.eu/en/national-results/romania/2024-2029/",
+    "captured": "2026-09-22",
+    "status": "official results"
+  },
+  {
+    "source_id": "RO-LOCAL-LAW",
+    "title": "Local election institutional mode research gate",
+    "publisher": "Romanian legal/official sources",
+    "url": "https://www.roaep.ro/legislatie/legislatie-electorala/",
+    "captured": "2026-09-22",
+    "status": "law consolidation and article-level pin open"
+  }
+]
