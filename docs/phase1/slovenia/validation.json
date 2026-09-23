@@ -1,0 +1,238 @@
+{
+  "status": "PASS",
+  "validation_scope": "Research pack only; no importer/SQLite/VPS/UI execution",
+  "checks": [
+    {
+      "check": "pin recorded",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "unchanged authoritative DDL reference hashes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "all retained effective input bytes",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "fingerprint exact canonical descriptors",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "tier exact ID set; draft status; no approval",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "proposed tier histogram",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "source register hash/bytes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "212 unique current municipality bindings",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "current codes exact source roster equality",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "municipal two-body universe",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "national/EP offices and indirect mode",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "historical only not invented",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "unique typed identities",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "office/geography/event/result/proceeding FKs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "every resolved origin binds real source/path/hash",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "numeric/status/unit domains; missing differs zero",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "all result claims source-round-tripped",
+      "status": "PASS",
+      "detail": {
+        "JSON": 4128,
+        "HTML table": 9474,
+        "PDF table": 17,
+        "HTML electoral college": 207,
+        "Visually verified PDF transcription": 4
+      }
+    },
+    {
+      "check": "national2026 party total from final Gazette",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "National Council shares never fabricated",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no media fixture result projection",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "fixture office/event IDs absent",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "historical events/calls exactly accounted",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "calls have no fabricated returns",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "missing2018Ribnica council remains explicit",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "corrupted label queue exact",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "all vectors exact counts",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "deterministic complete identity vectors",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "date IDs unique and deterministic",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "DS date ranges explicit endpoints",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "all223 exact contract columns documented",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "at least15 acceptance examples",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "applied_changes0; Justin false",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "failures": [],
+  "applied_changes": 0,
+  "execution_ci": "Not run",
+  "Justin_accepted": false,
+  "counts": {
+    "current_offices": 428,
+    "historical_only_offices_recovered": 0,
+    "municipalities": 212,
+    "municipal_councils": 212,
+    "direct_mayors": 212,
+    "direct_president": 1,
+    "direct_executives": 213,
+    "councils_chambers_delegation": 215,
+    "national_assembly": 1,
+    "indirect_national_council": 1,
+    "ep_delegation": 1,
+    "geographies": 213,
+    "events": 1706,
+    "historical_events": 1282,
+    "prospective_events": 424,
+    "results": 13830,
+    "proceedings": 801,
+    "events_by_cycle": {
+      "LV2022": 424,
+      "LV2014": 424,
+      "LV2018": 423,
+      "LV2026": 424,
+      "DZ2018": 1,
+      "DZ2022": 1,
+      "EP2019": 1,
+      "EP2024": 1,
+      "PRE2017": 1,
+      "PRE2022": 1,
+      "PRE2012": 1,
+      "EP2014": 1,
+      "DZ2026": 1,
+      "DS2022": 1,
+      "DS2017": 1
+    },
+    "results_by_cycle": {
+      "LV2022": 4037,
+      "LV2014": 4837,
+      "LV2018": 4616,
+      "DZ2018": 25,
+      "DZ2022": 21,
+      "EP2019": 14,
+      "EP2024": 11,
+      "PRE2017": 11,
+      "PRE2022": 9,
+      "PRE2012": 5,
+      "EP2014": 16,
+      "DZ2026": 17,
+      "DS2022": 102,
+      "DS2017": 109
+    },
+    "tier_histogram": {
+      "municipal": 424,
+      "national": 3,
+      "other": 1
+    },
+    "result_labels_with_source_replacement_character": 1172,
+    "sources": 821
+  },
+  "checksum_protocol": "SHA256SUMS covers every other packed file, including this report. Finalizer verifies exact ZIP member equality, hashes and CRC after writing ZIP; external receipt records the ZIP hash. Manifest is deliberately not self-hashed.",
+  "no_execution_claim": "Only this research validator ran; importer/SQLite/VPS/UI CI Not run.",
+  "protected_bytes": "All retained-source and authoritative-contract hashes match inventory. No repository or other-country mutation performed."
+}

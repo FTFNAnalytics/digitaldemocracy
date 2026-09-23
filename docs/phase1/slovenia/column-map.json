@@ -1,0 +1,1603 @@
+{
+  "dataset_lineage": {
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "L",
+      "deterministic_identity_rule": "PK lineage_id=L.",
+      "evidence_fk_rule": "None.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "provenance_kind": {
+      "source_locator": "constant",
+      "conversion_and_null_policy": "country_package",
+      "deterministic_identity_rule": "PK lineage_id=L.",
+      "evidence_fk_rule": "None.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "description": {
+      "source_locator": "C.notes",
+      "conversion_and_null_policy": "New sourced Slovenia research; historical and research coverage partial.",
+      "deterministic_identity_rule": "PK lineage_id=L.",
+      "evidence_fk_rule": "None.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "dataset_release": {
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "PK(L,R); R=L--sha256--fingerprint in conceptual notation; actual literal is L+\"--sha256-\"+H(hash_inputs).",
+      "evidence_fk_rule": "dataset_lineage(L).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "PK(L,R); R=L--sha256--fingerprint in conceptual notation; actual literal is L+\"--sha256-\"+H(hash_inputs).",
+      "evidence_fk_rule": "dataset_lineage(L).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "fingerprint_sha256": {
+      "source_locator": "I.fingerprint_sha256",
+      "conversion_and_null_policy": "H(I.hash_inputs), not ZIP/filemtime/attempt time.",
+      "deterministic_identity_rule": "PK(L,R); R=L--sha256--fingerprint in conceptual notation; actual literal is L+\"--sha256-\"+H(hash_inputs).",
+      "evidence_fk_rule": "dataset_lineage(L).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "hash_inputs_json": {
+      "source_locator": "I.hash_inputs",
+      "conversion_and_null_policy": "Canonical UTF-8 sorted-key JSON including effective inputs, tiers, overrides=[], adapter/method/schema and DDL hashes.",
+      "deterministic_identity_rule": "PK(L,R); R=L--sha256--fingerprint in conceptual notation; actual literal is L+\"--sha256-\"+H(hash_inputs).",
+      "evidence_fk_rule": "dataset_lineage(L).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "adapter_version": {
+      "source_locator": "I.hash_inputs.adapter_version",
+      "conversion_and_null_policy": "atlas-slovenia-full-register/1",
+      "deterministic_identity_rule": "PK(L,R); R=L--sha256--fingerprint in conceptual notation; actual literal is L+\"--sha256-\"+H(hash_inputs).",
+      "evidence_fk_rule": "dataset_lineage(L).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "method_version": {
+      "source_locator": "I.hash_inputs.method_version",
+      "conversion_and_null_policy": "atlas-preserve-evidence/1",
+      "deterministic_identity_rule": "PK(L,R); R=L--sha256--fingerprint in conceptual notation; actual literal is L+\"--sha256-\"+H(hash_inputs).",
+      "evidence_fk_rule": "dataset_lineage(L).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "schema_version": {
+      "source_locator": "I.hash_inputs.schema_version",
+      "conversion_and_null_policy": "atlas-master/1",
+      "deterministic_identity_rule": "PK(L,R); R=L--sha256--fingerprint in conceptual notation; actual literal is L+\"--sha256-\"+H(hash_inputs).",
+      "evidence_fk_rule": "dataset_lineage(L).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "research_snapshot_label": {
+      "source_locator": "C.research_snapshot_label",
+      "conversion_and_null_policy": "2026-09-21 retrieval label; not election date.",
+      "deterministic_identity_rule": "PK(L,R); R=L--sha256--fingerprint in conceptual notation; actual literal is L+\"--sha256-\"+H(hash_inputs).",
+      "evidence_fk_rule": "dataset_lineage(L).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "upstream_release_id": {
+      "source_locator": "no previous public Slovenia alias",
+      "conversion_and_null_policy": "NULL; do not borrow another country/LatAm alias.",
+      "deterministic_identity_rule": "PK(L,R); R=L--sha256--fingerprint in conceptual notation; actual literal is L+\"--sha256-\"+H(hash_inputs).",
+      "evidence_fk_rule": "dataset_lineage(L).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "validated_counts_json": {
+      "source_locator": "K, future verified counts",
+      "conversion_and_null_policy": "Canonical counts after future import validation; this pack is not a publication receipt.",
+      "deterministic_identity_rule": "PK(L,R); R=L--sha256--fingerprint in conceptual notation; actual literal is L+\"--sha256-\"+H(hash_inputs).",
+      "evidence_fk_rule": "dataset_lineage(L).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "research_coverage_complete": {
+      "source_locator": "C.research_coverage_complete",
+      "conversion_and_null_policy": "0; earlier historical register, complete certification/repeats, damaged labels and retained-only preference/minority detail remain open.",
+      "deterministic_identity_rule": "PK(L,R); R=L--sha256--fingerprint in conceptual notation; actual literal is L+\"--sha256-\"+H(hash_inputs).",
+      "evidence_fk_rule": "dataset_lineage(L).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns.",
+      "deterministic_identity_rule": "PK(L,R); R=L--sha256--fingerprint in conceptual notation; actual literal is L+\"--sha256-\"+H(hash_inputs).",
+      "evidence_fk_rule": "dataset_lineage(L).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "publication_release": {
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "One selected(L,R)per lineage; retain every unrelated member.",
+      "evidence_fk_rule": "dataset_release(L,R).",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "One selected(L,R)per lineage; retain every unrelated member.",
+      "evidence_fk_rule": "dataset_release(L,R).",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    }
+  },
+  "publication_receipt": {
+    "singleton": {
+      "source_locator": "runtime",
+      "conversion_and_null_policy": "1",
+      "deterministic_identity_rule": "singleton1; real runtime attempt differs from R.",
+      "evidence_fk_rule": "Serving set chosen by future publication; ledger is separate DB.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "last_publish_attempt_id": {
+      "source_locator": "ledger current attempt",
+      "conversion_and_null_policy": "Fresh runtime attempt ID; different from release ID.",
+      "deterministic_identity_rule": "singleton1; real runtime attempt differs from R.",
+      "evidence_fk_rule": "Serving set chosen by future publication; ledger is separate DB.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "attempted_lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "L",
+      "deterministic_identity_rule": "singleton1; real runtime attempt differs from R.",
+      "evidence_fk_rule": "Serving set chosen by future publication; ledger is separate DB.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "attempted_release_id": {
+      "source_locator": "candidate selected release",
+      "conversion_and_null_policy": "R after validated staging.",
+      "deterministic_identity_rule": "singleton1; real runtime attempt differs from R.",
+      "evidence_fk_rule": "Serving set chosen by future publication; ledger is separate DB.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    }
+  },
+  "retained_input": {
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "PK(L,R,input_path); input_kind belongs to descriptor.",
+      "evidence_fk_rule": "dataset_release(L,R).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "PK(L,R,input_path); input_kind belongs to descriptor.",
+      "evidence_fk_rule": "dataset_release(L,R).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "input_path": {
+      "source_locator": "I.hash_inputs.inputs[].input_path",
+      "conversion_and_null_policy": "Exact relative path.",
+      "deterministic_identity_rule": "PK(L,R,input_path); input_kind belongs to descriptor.",
+      "evidence_fk_rule": "dataset_release(L,R).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "input_kind": {
+      "source_locator": "I.hash_inputs.inputs[].input_kind",
+      "conversion_and_null_policy": "artifact/package/tier_classification as declared.",
+      "deterministic_identity_rule": "PK(L,R,input_path); input_kind belongs to descriptor.",
+      "evidence_fk_rule": "dataset_release(L,R).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "sha256": {
+      "source_locator": "I.hash_inputs.inputs[].sha256",
+      "conversion_and_null_policy": "Exact file byte hash; verify before parsing.",
+      "deterministic_identity_rule": "PK(L,R,input_path); input_kind belongs to descriptor.",
+      "evidence_fk_rule": "dataset_release(L,R).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "byte_count": {
+      "source_locator": "I.hash_inputs.inputs[].byte_count",
+      "conversion_and_null_policy": "Exact byte length.",
+      "deterministic_identity_rule": "PK(L,R,input_path); input_kind belongs to descriptor.",
+      "evidence_fk_rule": "dataset_release(L,R).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "recovery_locator": {
+      "source_locator": "immutable accepted pack + input_path",
+      "conversion_and_null_policy": "Recover exact bytes; source URL plus ZIP member also retained. Do not claim local paths as URLs.",
+      "deterministic_identity_rule": "PK(L,R,input_path); input_kind belongs to descriptor.",
+      "evidence_fk_rule": "dataset_release(L,R).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "payload_json": {
+      "source_locator": "parsed JSON inputs",
+      "conversion_and_null_policy": "Canonical full JSON for JSON inputs; NULL for CSV/XLSX/PDF/HTML/ZIP with exact bytes retained. No script execution.",
+      "deterministic_identity_rule": "PK(L,R,input_path); input_kind belongs to descriptor.",
+      "evidence_fk_rule": "dataset_release(L,R).",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "country": {
+    "country_id": {
+      "source_locator": "C.country_id",
+      "conversion_and_null_policy": "Literal slovenia.",
+      "deterministic_identity_rule": "PK slovenia.",
+      "evidence_fk_rule": "Owning lineage/release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "country_code": {
+      "source_locator": "C.country_code",
+      "conversion_and_null_policy": "SI",
+      "deterministic_identity_rule": "PK slovenia.",
+      "evidence_fk_rule": "Owning lineage/release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "name": {
+      "source_locator": "C.name",
+      "conversion_and_null_policy": "Slovenija",
+      "deterministic_identity_rule": "PK slovenia.",
+      "evidence_fk_rule": "Owning lineage/release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "polity_kind": {
+      "source_locator": "C.polity_kind",
+      "conversion_and_null_policy": "sovereign_country",
+      "deterministic_identity_rule": "PK slovenia.",
+      "evidence_fk_rule": "Owning lineage/release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "region_id": {
+      "source_locator": "C.region_id",
+      "conversion_and_null_policy": "europe; not a tier.",
+      "deterministic_identity_rule": "PK slovenia.",
+      "evidence_fk_rule": "Owning lineage/release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "coverage_status": {
+      "source_locator": "C.coverage_status",
+      "conversion_and_null_policy": "partial",
+      "deterministic_identity_rule": "PK slovenia.",
+      "evidence_fk_rule": "Owning lineage/release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "screening_as_of_label": {
+      "source_locator": "C.screening_as_of_label",
+      "conversion_and_null_policy": "2026-09-21",
+      "deterministic_identity_rule": "PK slovenia.",
+      "evidence_fk_rule": "Owning lineage/release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "notes": {
+      "source_locator": "C.notes + research-gaps.json",
+      "conversion_and_null_policy": "Preserve all named holds in readable notes and raw_json; coverage remains partial.",
+      "deterministic_identity_rule": "PK slovenia.",
+      "evidence_fk_rule": "Owning lineage/release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "PK slovenia.",
+      "evidence_fk_rule": "Owning lineage/release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "PK slovenia.",
+      "evidence_fk_rule": "Owning lineage/release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns.",
+      "deterministic_identity_rule": "PK slovenia.",
+      "evidence_fk_rule": "Owning lineage/release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "geography": {
+    "country_id": {
+      "source_locator": "C.country_id",
+      "conversion_and_null_policy": "Literal slovenia.",
+      "deterministic_identity_rule": "PK(slovenia,G); parent nullable.",
+      "evidence_fk_rule": "country, owning release, nullable parent geography in same country.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "geography_id": {
+      "source_locator": "G.geography_id / O.geography_id",
+      "conversion_and_null_policy": "Exact country-scoped geography key.",
+      "deterministic_identity_rule": "PK(slovenia,G); parent nullable.",
+      "evidence_fk_rule": "country, owning release, nullable parent geography in same country.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "name": {
+      "source_locator": "G.name",
+      "conversion_and_null_policy": "Government directory official Slovenian orthography; original electoral labels retained separately.",
+      "deterministic_identity_rule": "PK(slovenia,G); parent nullable.",
+      "evidence_fk_rule": "country, owning release, nullable parent geography in same country.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "parent_geography_id": {
+      "source_locator": "G.parent_geography_id",
+      "conversion_and_null_policy": "SI for212municipal geographies; NULL for country. No statistical-region office or guessed historical successor.",
+      "deterministic_identity_rule": "PK(slovenia,G); parent nullable.",
+      "evidence_fk_rule": "country, owning release, nullable parent geography in same country.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "effective_from_label": {
+      "source_locator": "G.valid_from",
+      "conversion_and_null_policy": "NULL; directory snapshot is not a founding date.",
+      "deterministic_identity_rule": "PK(slovenia,G); parent nullable.",
+      "evidence_fk_rule": "country, owning release, nullable parent geography in same country.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "effective_to_label": {
+      "source_locator": "G.valid_to",
+      "conversion_and_null_policy": "NULL; absence in an incomplete refresh is not abolition.",
+      "deterministic_identity_rule": "PK(slovenia,G); parent nullable.",
+      "evidence_fk_rule": "country, owning release, nullable parent geography in same country.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "PK(slovenia,G); parent nullable.",
+      "evidence_fk_rule": "country, owning release, nullable parent geography in same country.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "PK(slovenia,G); parent nullable.",
+      "evidence_fk_rule": "country, owning release, nullable parent geography in same country.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns.",
+      "deterministic_identity_rule": "PK(slovenia,G); parent nullable.",
+      "evidence_fk_rule": "country, owning release, nullable parent geography in same country.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "research_date": {
+    "date_id": {
+      "source_locator": "V.research_dates[].date_id",
+      "conversion_and_null_policy": "date-+H([N,ownerType,ownerID,slot]); event/election, office/next, proceeding/ballot.",
+      "deterministic_identity_rule": "date-+H([N,ownerType,ownerID,slot]); endpoints use slot/range_start/end.",
+      "evidence_fk_rule": "Range endpoints must exist and be valid non-range dates.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "label": {
+      "source_locator": "O.next_date/E.date/Pp.date.label",
+      "conversion_and_null_policy": "Exact derived ISO form from the source date label, or explicit range. Original Slovenian wording stays in origin/raw.",
+      "deterministic_identity_rule": "date-+H([N,ownerType,ownerID,slot]); endpoints use slot/range_start/end.",
+      "evidence_fk_rule": "Range endpoints must exist and be valid non-range dates.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "precision": {
+      "source_locator": "date.precision",
+      "conversion_and_null_policy": "day for sourced ballots/calls; range for initial DS2017/2022 two-day electoral-college dates. Never fill missing day=1.",
+      "deterministic_identity_rule": "date-+H([N,ownerType,ownerID,slot]); endpoints use slot/range_start/end.",
+      "evidence_fk_rule": "Range endpoints must exist and be valid non-range dates.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "certainty": {
+      "source_locator": "date.certainty",
+      "conversion_and_null_policy": "called for explicit calls/occurred ballots; future expected/conditional/unknown claims retain that value.",
+      "deterministic_identity_rule": "date-+H([N,ownerType,ownerID,slot]); endpoints use slot/range_start/end.",
+      "evidence_fk_rule": "Range endpoints must exist and be valid non-range dates.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "year": {
+      "source_locator": "date.year",
+      "conversion_and_null_policy": "Source component or NULL for range/unknown.",
+      "deterministic_identity_rule": "date-+H([N,ownerType,ownerID,slot]); endpoints use slot/range_start/end.",
+      "evidence_fk_rule": "Range endpoints must exist and be valid non-range dates.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "month": {
+      "source_locator": "date.month",
+      "conversion_and_null_policy": "Source component or NULL for lower precision/range.",
+      "deterministic_identity_rule": "date-+H([N,ownerType,ownerID,slot]); endpoints use slot/range_start/end.",
+      "evidence_fk_rule": "Range endpoints must exist and be valid non-range dates.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "day": {
+      "source_locator": "date.day",
+      "conversion_and_null_policy": "Source day only; NULL for month/year/range/unknown.",
+      "deterministic_identity_rule": "date-+H([N,ownerType,ownerID,slot]); endpoints use slot/range_start/end.",
+      "evidence_fk_rule": "Range endpoints must exist and be valid non-range dates.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "range_start_id": {
+      "source_locator": "V.research_dates[].range_start_id",
+      "conversion_and_null_policy": "Exact separately sourced day endpoint, owner slot election/range_start. NULL for non-range.",
+      "deterministic_identity_rule": "date-+H([N,ownerType,ownerID,slot]); endpoints use slot/range_start/end.",
+      "evidence_fk_rule": "Range endpoints must exist and be valid non-range dates.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "range_end_id": {
+      "source_locator": "V.research_dates[].range_end_id",
+      "conversion_and_null_policy": "Exact separately sourced day endpoint, owner slot election/range_end; never inferred latest repeat date.",
+      "deterministic_identity_rule": "date-+H([N,ownerType,ownerID,slot]); endpoints use slot/range_start/end.",
+      "evidence_fk_rule": "Range endpoints must exist and be valid non-range dates.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "date-+H([N,ownerType,ownerID,slot]); endpoints use slot/range_start/end.",
+      "evidence_fk_rule": "Range endpoints must exist and be valid non-range dates.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "date-+H([N,ownerType,ownerID,slot]); endpoints use slot/range_start/end.",
+      "evidence_fk_rule": "Range endpoints must exist and be valid non-range dates.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns.",
+      "deterministic_identity_rule": "date-+H([N,ownerType,ownerID,slot]); endpoints use slot/range_start/end.",
+      "evidence_fk_rule": "Range endpoints must exist and be valid non-range dates.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "office": {
+    "id_namespace": {
+      "source_locator": "O/E/Rr.id_namespace",
+      "conversion_and_null_policy": "Literal cdd-observatory-v1; include in every office/event/result FK.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "office_id": {
+      "source_locator": "O/E/Rr/Pp.office_id",
+      "conversion_and_null_policy": "Exact documentary SI office ID; source municipality code remains body-qualified. No random IDs, date-based office IDs or guessed predecessors.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "country_id": {
+      "source_locator": "C.country_id",
+      "conversion_and_null_policy": "Literal slovenia.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "geography_id": {
+      "source_locator": "G.geography_id / O.geography_id",
+      "conversion_and_null_policy": "Exact country-scoped geography key.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "name": {
+      "source_locator": "O.office_name",
+      "conversion_and_null_policy": "Source jurisdiction plus disclosed statutory body descriptor. Preserve original sources; do not claim synthesized display label is an official register ID.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "office_type": {
+      "source_locator": "O.office_type",
+      "conversion_and_null_policy": "municipal_council, direct_mayor, national_assembly, national_council, direct_president, ep_delegation. Tier and election mechanism are separate.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "office_status": {
+      "source_locator": "O.office_status",
+      "conversion_and_null_policy": "current for428sourced bodies. Historical-only recovery0 is an open earlier-register gate, not proof none existed.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "record_state": {
+      "source_locator": "adapter constant",
+      "conversion_and_null_policy": "active. Absence in an incomplete refresh does not withdraw.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "state_note": {
+      "source_locator": "adapter constant",
+      "conversion_and_null_policy": "NULL while active; explicit withdrawal requires sourced nonempty reason.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "registry_qualified": {
+      "source_locator": "draft review state",
+      "conversion_and_null_policy": "0 pending Justin acceptance and applicable identity/evidence gates.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "next_date_id": {
+      "source_locator": "O.next_date / V.research_dates",
+      "conversion_and_null_policy": "Deterministic office/next date ID for424municipal bodies; NULL for4national/EP bodies.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "next_date_resolution": {
+      "source_locator": "O.next_date",
+      "conversion_and_null_policy": "resolved when supplied; unknown otherwise. Future conflicting claims withhold pointer and use conflicting.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "next_history_key": {
+      "source_locator": "O.next_cycle",
+      "conversion_and_null_policy": "office_id::LV2026 for424actual municipal bodies; exact event FK. NULL otherwise.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns.",
+      "deterministic_identity_rule": "PK(N,O).",
+      "evidence_fk_rule": "country, geography, release, next_date and next_event when resolved.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "office_tier_classification": {
+    "id_namespace": {
+      "source_locator": "O/E/Rr.id_namespace",
+      "conversion_and_null_policy": "Literal cdd-observatory-v1; include in every office/event/result FK.",
+      "deterministic_identity_rule": "PK(N,O), exact approved-or-draft byte provenance.",
+      "evidence_fk_rule": "office(N,O) and retained tier input exact path/kind/hash.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "office_id": {
+      "source_locator": "O/E/Rr/Pp.office_id",
+      "conversion_and_null_policy": "Exact documentary SI office ID; source municipality code remains body-qualified. No random IDs, date-based office IDs or guessed predecessors.",
+      "deterministic_identity_rule": "PK(N,O), exact approved-or-draft byte provenance.",
+      "evidence_fk_rule": "office(N,O) and retained tier input exact path/kind/hash.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "tier": {
+      "source_locator": "T.classifications[].tier",
+      "conversion_and_null_policy": "national→national_context; municipal/other unchanged. regional0. Unknown future classification→NULL/unknown, never other.",
+      "deterministic_identity_rule": "PK(N,O), exact approved-or-draft byte provenance.",
+      "evidence_fk_rule": "office(N,O) and retained tier input exact path/kind/hash.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "review_status": {
+      "source_locator": "T.status / row flags",
+      "conversion_and_null_policy": "needs_review for every known draft tier, even focused flag=false; never approved in this pack.",
+      "deterministic_identity_rule": "PK(N,O), exact approved-or-draft byte provenance.",
+      "evidence_fk_rule": "office(N,O) and retained tier input exact path/kind/hash.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "rationale": {
+      "source_locator": "T.classifications[].rationale",
+      "conversion_and_null_policy": "Exact nonempty wording and evidence.",
+      "deterministic_identity_rule": "PK(N,O), exact approved-or-draft byte provenance.",
+      "evidence_fk_rule": "office(N,O) and retained tier input exact path/kind/hash.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "PK(N,O), exact approved-or-draft byte provenance.",
+      "evidence_fk_rule": "office(N,O) and retained tier input exact path/kind/hash.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "PK(N,O), exact approved-or-draft byte provenance.",
+      "evidence_fk_rule": "office(N,O) and retained tier input exact path/kind/hash.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "classification_path": {
+      "source_locator": "constant",
+      "conversion_and_null_policy": "schemas/atlas/tiers/slovenia.json",
+      "deterministic_identity_rule": "PK(N,O), exact approved-or-draft byte provenance.",
+      "evidence_fk_rule": "office(N,O) and retained tier input exact path/kind/hash.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "classification_kind": {
+      "source_locator": "constant",
+      "conversion_and_null_policy": "tier_classification",
+      "deterministic_identity_rule": "PK(N,O), exact approved-or-draft byte provenance.",
+      "evidence_fk_rule": "office(N,O) and retained tier input exact path/kind/hash.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "classification_sha256": {
+      "source_locator": "I.tier_file.sha256",
+      "conversion_and_null_policy": "17a836af07d10fa5ec3c0560c8281f67d60e17cd76b727360aa823b40ab201ee",
+      "deterministic_identity_rule": "PK(N,O), exact approved-or-draft byte provenance.",
+      "evidence_fk_rule": "office(N,O) and retained tier input exact path/kind/hash.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns.",
+      "deterministic_identity_rule": "PK(N,O), exact approved-or-draft byte provenance.",
+      "evidence_fk_rule": "office(N,O) and retained tier input exact path/kind/hash.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "election_event": {
+    "id_namespace": {
+      "source_locator": "O/E/Rr.id_namespace",
+      "conversion_and_null_policy": "Literal cdd-observatory-v1; include in every office/event/result FK.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "office_id": {
+      "source_locator": "O/E/Rr/Pp.office_id",
+      "conversion_and_null_policy": "Exact documentary SI office ID; source municipality code remains body-qualified. No random IDs, date-based office IDs or guessed predecessors.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "history_key": {
+      "source_locator": "E/Rr/Pp.history_key",
+      "conversion_and_null_policy": "Exact office_id::cycle, round-independent; never date-derived.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "event_id": {
+      "source_locator": "E.event_id",
+      "conversion_and_null_policy": "key(event,[N,office_id,history_key]); namespace and office qualified; date corrections retain ID.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "date_id": {
+      "source_locator": "E.date",
+      "conversion_and_null_policy": "date-+H([N,event,E.event_id,election]); actual row required even for unknown date.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "date_resolution": {
+      "source_locator": "E.date.precision",
+      "conversion_and_null_policy": "resolved for day/range values here. Future unknown date requires an explicit unknown research_date; conflicting uses NULL pointer.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "event_kind": {
+      "source_locator": "E.event_kind",
+      "conversion_and_null_policy": "ordinary for popular cycles; indirect for the National Council. Repeat component is a proceeding within its chamber cycle, not a new chamber office.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "selected_history_role": {
+      "source_locator": "E.selected_history_role",
+      "conversion_and_null_policy": "selected for1282recovered historical cycles; none for424prospective calls. Selected is not complete/certified. The801proceedings are not additional cycles.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "electoral_system": {
+      "source_locator": "E.electoral_system + Rr.ballot_component",
+      "conversion_and_null_policy": "direct_popular or indirect_functional_and_local_electors. Preserve council mode/district/minority details in raw; do not mix list votes and candidate marks.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "comparability": {
+      "source_locator": "E.coverage + Rr.source_return_status/ballot_component",
+      "conversion_and_null_policy": "Preserve unofficial/archived-final/gazette distinctions; no aggregation across electoral colleges or preference/list/minority components.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "ballot_basis": {
+      "source_locator": "E.ballot_basis",
+      "conversion_and_null_policy": "valid_votes for executives; list_votes for national/EP; list_votes or candidate_marks for uncomplicated2022 councils; unknown for mixed/minority or HTML councils; electors for National Council.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "share_unit": {
+      "source_locator": "E/Rr.share_unit",
+      "conversion_and_null_policy": "proportion_0_1 for JSON archive vectors; percent_0_100 for HTML/PDF printed percentages. No numeric rescaling; NULL share keeps declared source-event unit.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "legal_outcome": {
+      "source_locator": "E/Pp.legal_outcome",
+      "conversion_and_null_policy": "preliminary for source-labelled unofficial2014/2018 local returns; unknown otherwise. Final publication does not invent judicial certification; DS component-repeat claims remain raw.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "record_state": {
+      "source_locator": "adapter constant",
+      "conversion_and_null_policy": "active. Absence in an incomplete refresh does not withdraw.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "state_note": {
+      "source_locator": "adapter constant",
+      "conversion_and_null_policy": "NULL while active; explicit withdrawal requires sourced nonempty reason.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns.",
+      "deterministic_identity_rule": "PK(N,O,HK), namespace-qualified event_id unique.",
+      "evidence_fk_rule": "office(N,O), research_date unless conflicting, owning release.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "proceeding": {
+    "id_namespace": {
+      "source_locator": "O/E/Rr.id_namespace",
+      "conversion_and_null_policy": "Literal cdd-observatory-v1; include in every office/event/result FK.",
+      "deterministic_identity_rule": "PK(N,O,HK,P); same-event supersedes only if evidenced.",
+      "evidence_fk_rule": "event(N,O,HK), nullable same-event supersedes proceeding.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "office_id": {
+      "source_locator": "O/E/Rr/Pp.office_id",
+      "conversion_and_null_policy": "Exact documentary SI office ID; source municipality code remains body-qualified. No random IDs, date-based office IDs or guessed predecessors.",
+      "deterministic_identity_rule": "PK(N,O,HK,P); same-event supersedes only if evidenced.",
+      "evidence_fk_rule": "event(N,O,HK), nullable same-event supersedes proceeding.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "history_key": {
+      "source_locator": "E/Rr/Pp.history_key",
+      "conversion_and_null_policy": "Exact office_id::cycle, round-independent; never date-derived.",
+      "deterministic_identity_rule": "PK(N,O,HK,P); same-event supersedes only if evidenced.",
+      "evidence_fk_rule": "event(N,O,HK), nullable same-event supersedes proceeding.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "proceeding_id": {
+      "source_locator": "Pp.proceeding_id / Rr.proceeding_id",
+      "conversion_and_null_policy": "Exact round key when supplied; NULL on single-round result rows.",
+      "deterministic_identity_rule": "PK(N,O,HK,P); same-event supersedes only if evidenced.",
+      "evidence_fk_rule": "event(N,O,HK), nullable same-event supersedes proceeding.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "kind": {
+      "source_locator": "Pp.kind",
+      "conversion_and_null_policy": "first_round/runoff for supplied executive ballots; repeat for evidenced culture/sport2018 and2023 components. No invented certification/annulment proceeding.",
+      "deterministic_identity_rule": "PK(N,O,HK,P); same-event supersedes only if evidenced.",
+      "evidence_fk_rule": "event(N,O,HK), nullable same-event supersedes proceeding.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "sequence_no": {
+      "source_locator": "Pp.sequence",
+      "conversion_and_null_policy": "1/2 for first/runoff,3 for repeat in this documentary cycle ordering. Does not imply three popular rounds.",
+      "deterministic_identity_rule": "PK(N,O,HK,P); same-event supersedes only if evidenced.",
+      "evidence_fk_rule": "event(N,O,HK), nullable same-event supersedes proceeding.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "supersedes_id": {
+      "source_locator": "Pp.supersedes_id",
+      "conversion_and_null_policy": "NULL. No invented supersedes edge; original component and repeat bindings are explicit in raw. Runoff is continuation.",
+      "deterministic_identity_rule": "PK(N,O,HK,P); same-event supersedes only if evidenced.",
+      "evidence_fk_rule": "event(N,O,HK), nullable same-event supersedes proceeding.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "legal_outcome": {
+      "source_locator": "E/Pp.legal_outcome",
+      "conversion_and_null_policy": "preliminary for source-labelled unofficial2014/2018 local returns; unknown otherwise. Final publication does not invent judicial certification; DS component-repeat claims remain raw.",
+      "deterministic_identity_rule": "PK(N,O,HK,P); same-event supersedes only if evidenced.",
+      "evidence_fk_rule": "event(N,O,HK), nullable same-event supersedes proceeding.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "PK(N,O,HK,P); same-event supersedes only if evidenced.",
+      "evidence_fk_rule": "event(N,O,HK), nullable same-event supersedes proceeding.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "PK(N,O,HK,P); same-event supersedes only if evidenced.",
+      "evidence_fk_rule": "event(N,O,HK), nullable same-event supersedes proceeding.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns.",
+      "deterministic_identity_rule": "PK(N,O,HK,P); same-event supersedes only if evidenced.",
+      "evidence_fk_rule": "event(N,O,HK), nullable same-event supersedes proceeding.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "source": {
+    "country_id": {
+      "source_locator": "C.country_id",
+      "conversion_and_null_policy": "Literal slovenia.",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "source_namespace": {
+      "source_locator": "S.source_namespace",
+      "conversion_and_null_policy": "Literal L; source key always (slovenia,L,source_id).",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "source_id": {
+      "source_locator": "S.source_id / origin.source_id",
+      "conversion_and_null_policy": "key(src,[L,exact acquisition URL,null]); verify country/source namespace tuple. Hash is byte provenance, not source identity.",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "publisher": {
+      "source_locator": "S.publisher",
+      "conversion_and_null_policy": "DVK, Slovenian government, SURS or Official Gazette/PISRS, as evidenced by host/document. No fabricated catalogue alias.",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "title": {
+      "source_locator": "S.title",
+      "conversion_and_null_policy": "NULL where title not separately transcribed; URL is not a fabricated title.",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "url": {
+      "source_locator": "S.url",
+      "conversion_and_null_policy": "Exact acquisition URL. Extracted members retain container URL plus member identity.",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "checked_as_of_label": {
+      "source_locator": "S.checked_as_of_label",
+      "conversion_and_null_policy": "2026-09-21 acquisition, not election date.",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "evidence_grade": {
+      "source_locator": "S.evidence_grade",
+      "conversion_and_null_policy": "official_publication; role of each source is declared in source-projection.json, not all files supply returns.",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "file_sha256": {
+      "source_locator": "S.sha256",
+      "conversion_and_null_policy": "Exact retained bytes; member hash differs from parent ZIP hash.",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "locator": {
+      "source_locator": "S.input_path + origins",
+      "conversion_and_null_policy": "Exact byte path/hash and actual JSON pointer, HTML element/table/row or PDF page/table/row. No fake JSON pointer into PDF.",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "data_rights": {
+      "source_locator": "S.data_rights",
+      "conversion_and_null_policy": "unknown; no licence assertion invented.",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns.",
+      "deterministic_identity_rule": "PK(slovenia,L,sourceID).",
+      "evidence_fk_rule": "country and owning release; exact byte evidence.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "party_mapping": {
+    "country_id": {
+      "source_locator": "C.country_id",
+      "conversion_and_null_policy": "Literal slovenia.",
+      "deterministic_identity_rule": "No rows; later PK(slovenia,partyNamespace,mappingID).",
+      "evidence_fk_rule": "No fabricated party mapping FK; result fields NULL.",
+      "validation_assertion": "No rows emitted; NULL references; future claims require evidence."
+    },
+    "party_namespace": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "NULL for results; no party_mapping rows emitted.",
+      "deterministic_identity_rule": "No rows; later PK(slovenia,partyNamespace,mappingID).",
+      "evidence_fk_rule": "No fabricated party mapping FK; result fields NULL.",
+      "validation_assertion": "No rows emitted; NULL references; future claims require evidence."
+    },
+    "mapping_id": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row emitted. Future sourced mapping gets a deterministic scoped key.",
+      "deterministic_identity_rule": "No rows; later PK(slovenia,partyNamespace,mappingID).",
+      "evidence_fk_rule": "No fabricated party mapping FK; result fields NULL.",
+      "validation_assertion": "No rows emitted; NULL references; future claims require evidence."
+    },
+    "source_context": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row; if later supplied, source document and locator required.",
+      "deterministic_identity_rule": "No rows; later PK(slovenia,partyNamespace,mappingID).",
+      "evidence_fk_rule": "No fabricated party mapping FK; result fields NULL.",
+      "validation_assertion": "No rows emitted; NULL references; future claims require evidence."
+    },
+    "election_context": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row; never unscoped national party equivalence.",
+      "deterministic_identity_rule": "No rows; later PK(slovenia,partyNamespace,mappingID).",
+      "evidence_fk_rule": "No fabricated party mapping FK; result fields NULL.",
+      "validation_assertion": "No rows emitted; NULL references; future claims require evidence."
+    },
+    "original_label": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row; raw party labels remain on result_row.",
+      "deterministic_identity_rule": "No rows; later PK(slovenia,partyNamespace,mappingID).",
+      "evidence_fk_rule": "No fabricated party mapping FK; result fields NULL.",
+      "validation_assertion": "No rows emitted; NULL references; future claims require evidence."
+    },
+    "original_code": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row; event-scoped source codes remain on result_row.",
+      "deterministic_identity_rule": "No rows; later PK(slovenia,partyNamespace,mappingID).",
+      "evidence_fk_rule": "No fabricated party mapping FK; result fields NULL.",
+      "validation_assertion": "No rows emitted; NULL references; future claims require evidence."
+    },
+    "mapped_group": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row; no coalition splitting, successor equivalence or invented canonical party.",
+      "deterministic_identity_rule": "No rows; later PK(slovenia,partyNamespace,mappingID).",
+      "evidence_fk_rule": "No fabricated party mapping FK; result fields NULL.",
+      "validation_assertion": "No rows emitted; NULL references; future claims require evidence."
+    },
+    "uncertainty": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "No row; any later uncertain mapping must be explicit.",
+      "deterministic_identity_rule": "No rows; later PK(slovenia,partyNamespace,mappingID).",
+      "evidence_fk_rule": "No fabricated party mapping FK; result fields NULL.",
+      "validation_assertion": "No rows emitted; NULL references; future claims require evidence."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "No rows; later PK(slovenia,partyNamespace,mappingID).",
+      "evidence_fk_rule": "No fabricated party mapping FK; result fields NULL.",
+      "validation_assertion": "No rows emitted; NULL references; future claims require evidence."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "No rows; later PK(slovenia,partyNamespace,mappingID).",
+      "evidence_fk_rule": "No fabricated party mapping FK; result fields NULL.",
+      "validation_assertion": "No rows emitted; NULL references; future claims require evidence."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns.",
+      "deterministic_identity_rule": "No rows; later PK(slovenia,partyNamespace,mappingID).",
+      "evidence_fk_rule": "No fabricated party mapping FK; result fields NULL.",
+      "validation_assertion": "No rows emitted; NULL references; future claims require evidence."
+    }
+  },
+  "result_row": {
+    "id_namespace": {
+      "source_locator": "O/E/Rr.id_namespace",
+      "conversion_and_null_policy": "Literal cdd-observatory-v1; include in every office/event/result FK.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "office_id": {
+      "source_locator": "O/E/Rr/Pp.office_id",
+      "conversion_and_null_policy": "Exact documentary SI office ID; source municipality code remains body-qualified. No random IDs, date-based office IDs or guessed predecessors.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "history_key": {
+      "source_locator": "E/Rr/Pp.history_key",
+      "conversion_and_null_policy": "Exact office_id::cycle, round-independent; never date-derived.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "result_row_id": {
+      "source_locator": "Rr.result_row_id",
+      "conversion_and_null_policy": "Exact result key; includes namespace,office,cycle,round,candidate source key.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "proceeding_id": {
+      "source_locator": "Pp.proceeding_id / Rr.proceeding_id",
+      "conversion_and_null_policy": "Exact round key when supplied; NULL on single-round result rows.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "country_id": {
+      "source_locator": "C.country_id",
+      "conversion_and_null_policy": "Literal slovenia.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "candidate_or_list_label": {
+      "source_locator": "Rr.candidate_or_list_label",
+      "conversion_and_null_policy": "Exact source label; PDF wrapped lines joined with spaces. Damaged U+FFFD characters remain with review flags; no guessed spelling.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "original_party_label": {
+      "source_locator": "Rr.original_party_label",
+      "conversion_and_null_policy": "Exact nominator/list string; not automatically a political party or cross-election equivalence. NULL for unprovided national executive affiliations.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "original_party_code": {
+      "source_locator": "Rr.original_party_code",
+      "conversion_and_null_policy": "Source code scoped to office/cycle/component; NULL when absent. Do not remap official catalogue IDs.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "party_namespace": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "NULL for results; no party_mapping rows emitted.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "party_mapping_id": {
+      "source_locator": "party-mappings.json=[]",
+      "conversion_and_null_policy": "NULL; no cross-party equivalence inferred.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "votes": {
+      "source_locator": "Rr.votes",
+      "conversion_and_null_policy": "Exact nonnegative integer from gl/glasov or printed votes; dot grouping and comma decimal parsing for printed tables. No votes inferred from percentages.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "votes_status": {
+      "source_locator": "Rr.votes_status",
+      "conversion_and_null_policy": "unknown for NULL, zero for explicitly supplied0, recorded for positive.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "share": {
+      "source_locator": "Rr.share",
+      "conversion_and_null_policy": "Exact supplied prc/procent fraction or printed percent. Preserve unit; no clamp/renormalization/denominator replacement.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "share_status": {
+      "source_locator": "Rr.share_status",
+      "conversion_and_null_policy": "unknown/zero/recorded paired with original numeric presence.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "share_unit": {
+      "source_locator": "E/Rr.share_unit",
+      "conversion_and_null_policy": "proportion_0_1 for JSON archive vectors; percent_0_100 for HTML/PDF printed percentages. No numeric rescaling; NULL share keeps declared source-event unit.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "seats": {
+      "source_locator": "Rr.seats",
+      "conversion_and_null_policy": "man only where supplied (JSON party mandate counts;2022 presidential final marker is a supplied numeric man). Printed council mandates preserved. Missing seats remain NULL, never winner→seat1.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "seats_status": {
+      "source_locator": "Rr.seats_status",
+      "conversion_and_null_policy": "unknown/zero/recorded paired with original numeric presence.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "elected_flag": {
+      "source_locator": "Rr.elected_flag",
+      "conversion_and_null_policy": "true only for explicit tip_izv=1 or2023gazette named winner; otherwise NULL. No rank-based winner inference.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "is_substitute": {
+      "source_locator": "no normalized substitution claims",
+      "conversion_and_null_policy": "NULL; raw markers retained.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "evidence_status": {
+      "source_locator": "Rr.evidence_status",
+      "conversion_and_null_policy": "recorded means source claim, not certified or complete. Disputed future claims require explicit status/accepted override.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns.",
+      "deterministic_identity_rule": "PK(N,O,HK,resultID); result key includes component/round/source candidate key.",
+      "evidence_fk_rule": "event, optional proceeding, optional party mapping; resolved evidence via target locator/source.",
+      "validation_assertion": "Compare exact numeric/name/null claim against Rr.origins/raw; validate value/status/unit domains and no source/district duplicate."
+    }
+  },
+  "record_locator": {
+    "record_key": {
+      "source_locator": "V.*[].record_key; input/country rules in identity doc",
+      "conversion_and_null_policy": "rec-+H([entityKind,...typedKeyParts]); not a public replacement ID.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "entity_kind": {
+      "source_locator": "projected typed record kind",
+      "conversion_and_null_policy": "One of country/geography/office/event/proceeding/result_row/source/input; party_mapping empty.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "country_id": {
+      "source_locator": "typed target field country_id",
+      "conversion_and_null_policy": "Populate only for country, geography, office, event, proceeding, result_row, party_mapping, source; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "geography_id": {
+      "source_locator": "typed target field geography_id",
+      "conversion_and_null_policy": "Populate only for geography; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "id_namespace": {
+      "source_locator": "typed target field id_namespace",
+      "conversion_and_null_policy": "Populate only for office, event, proceeding, result_row; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "office_id": {
+      "source_locator": "O/E/Rr/Pp.office_id",
+      "conversion_and_null_policy": "Exact documentary SI office ID; source municipality code remains body-qualified. No random IDs, date-based office IDs or guessed predecessors.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "history_key": {
+      "source_locator": "typed target field history_key",
+      "conversion_and_null_policy": "Populate only for event, proceeding, result_row; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "proceeding_id": {
+      "source_locator": "typed target field proceeding_id",
+      "conversion_and_null_policy": "Populate only for proceeding; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "result_row_id": {
+      "source_locator": "typed target field result_row_id",
+      "conversion_and_null_policy": "Populate only for result_row; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "party_namespace": {
+      "source_locator": "typed target field party_namespace",
+      "conversion_and_null_policy": "Populate only for party_mapping; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "party_mapping_id": {
+      "source_locator": "typed target field party_mapping_id",
+      "conversion_and_null_policy": "Populate only for party_mapping; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "source_namespace": {
+      "source_locator": "typed target field source_namespace",
+      "conversion_and_null_policy": "Populate only for source; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "source_id": {
+      "source_locator": "S.source_id / origin.source_id",
+      "conversion_and_null_policy": "key(src,[L,exact acquisition URL,null]); verify country/source namespace tuple. Hash is byte provenance, not source identity.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "input_path": {
+      "source_locator": "typed target field input_path",
+      "conversion_and_null_policy": "Populate only for input; NULL for every other kind. Result locators keep proceeding_id NULL even when result_row has one.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "source_row_locator": {
+      "source_locator": "derived file JSON pointer + origin",
+      "conversion_and_null_policy": "Canonical exact documentary pointer plus real source locator; JSON arrays0-based; HTML indices0-based; PDF pages1-based and table/row indices0-based.",
+      "deterministic_identity_rule": "rec-+H([entityKind,...typedPK]); sparse columns per DDL.",
+      "evidence_fk_rule": "Only kind-specific typed target keys populated; all other typed columns NULL.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "evidence_link": {
+    "evidence_id": {
+      "source_locator": "target record_key + source tuple + occurrence + claim kind",
+      "conversion_and_null_policy": "ev-+H([record_key,[slovenia,L,source_id],occurrenceIdentity,claim_kind]); full hash; occurrence convention in identity document.",
+      "deterministic_identity_rule": "ev- full hash of target/source/occurrence/claim.",
+      "evidence_fk_rule": "Real record_locator,source(slovenia,L,S), optional actual research_date claim.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "record_key": {
+      "source_locator": "typed target V record key",
+      "conversion_and_null_policy": "Must resolve to record_locator.",
+      "deterministic_identity_rule": "ev- full hash of target/source/occurrence/claim.",
+      "evidence_fk_rule": "Real record_locator,source(slovenia,L,S), optional actual research_date claim.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "source_country_id": {
+      "source_locator": "constant",
+      "conversion_and_null_policy": "slovenia",
+      "deterministic_identity_rule": "ev- full hash of target/source/occurrence/claim.",
+      "evidence_fk_rule": "Real record_locator,source(slovenia,L,S), optional actual research_date claim.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "source_namespace": {
+      "source_locator": "S.source_namespace",
+      "conversion_and_null_policy": "Literal L; source key always (slovenia,L,source_id).",
+      "deterministic_identity_rule": "ev- full hash of target/source/occurrence/claim.",
+      "evidence_fk_rule": "Real record_locator,source(slovenia,L,S), optional actual research_date claim.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "source_id": {
+      "source_locator": "S.source_id / origin.source_id",
+      "conversion_and_null_policy": "key(src,[L,exact acquisition URL,null]); verify country/source namespace tuple. Hash is byte provenance, not source identity.",
+      "deterministic_identity_rule": "ev- full hash of target/source/occurrence/claim.",
+      "evidence_fk_rule": "Real record_locator,source(slovenia,L,S), optional actual research_date claim.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "source_locator": {
+      "source_locator": "O/G/E/Rr origins and date.origins",
+      "conversion_and_null_policy": "Canonical retained path+SHA+JSON pointer or HTML tag/index/table/row or PDF page/table/row. Every resolved source tuple must exist; no raw textual gap token becomes a source FK.",
+      "deterministic_identity_rule": "ev- full hash of target/source/occurrence/claim.",
+      "evidence_fk_rule": "Real record_locator,source(slovenia,L,S), optional actual research_date claim.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "claim_kind": {
+      "source_locator": "projected field role",
+      "conversion_and_null_policy": "identity/geography/date/result/provenance; no certification fabricated.",
+      "deterministic_identity_rule": "ev- full hash of target/source/occurrence/claim.",
+      "evidence_fk_rule": "Real record_locator,source(slovenia,L,S), optional actual research_date claim.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "date_claim_id": {
+      "source_locator": "date evidence only",
+      "conversion_and_null_policy": "Matching V research_date ID; NULL for non-date evidence. Proceeding dates link here and remain raw; DDL has no proceeding.date_id.",
+      "deterministic_identity_rule": "ev- full hash of target/source/occurrence/claim.",
+      "evidence_fk_rule": "Real record_locator,source(slovenia,L,S), optional actual research_date claim.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "claim_json": {
+      "source_locator": "full supplied claim and raw source cells",
+      "conversion_and_null_policy": "Canonical full claim; disputed alternatives stay separately retained.",
+      "deterministic_identity_rule": "ev- full hash of target/source/occurrence/claim.",
+      "evidence_fk_rule": "Real record_locator,source(slovenia,L,S), optional actual research_date claim.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "ev- full hash of target/source/occurrence/claim.",
+      "evidence_fk_rule": "Real record_locator,source(slovenia,L,S), optional actual research_date claim.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "ev- full hash of target/source/occurrence/claim.",
+      "evidence_fk_rule": "Real record_locator,source(slovenia,L,S), optional actual research_date claim.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "unresolved_evidence": {
+    "unresolved_id": {
+      "source_locator": "unresolved-evidence.json=[]",
+      "conversion_and_null_policy": "No literal unresolved citation tokens normalized. Future unres-+H([record_key,occurrenceIdentity,original_token]); gaps are not fabricated tokens.",
+      "deterministic_identity_rule": "No rows here; unres- full hash when actual unresolved token supplied.",
+      "evidence_fk_rule": "Real record_locator only; unresolved text is not a source FK.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "record_key": {
+      "source_locator": "future unresolved target",
+      "conversion_and_null_policy": "Must reference a real locator, never a fabricated source row.",
+      "deterministic_identity_rule": "No rows here; unres- full hash when actual unresolved token supplied.",
+      "evidence_fk_rule": "Real record_locator only; unresolved text is not a source FK.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "original_token": {
+      "source_locator": "future exact unresolved citation token",
+      "conversion_and_null_policy": "Preserve nonempty token verbatim; do not invent tokens to represent ordinary research gaps.",
+      "deterministic_identity_rule": "No rows here; unres- full hash when actual unresolved token supplied.",
+      "evidence_fk_rule": "Real record_locator only; unresolved text is not a source FK.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "source_locator": {
+      "source_locator": "future original token occurrence",
+      "conversion_and_null_policy": "Required retained path+hash+location.",
+      "deterministic_identity_rule": "No rows here; unres- full hash when actual unresolved token supplied.",
+      "evidence_fk_rule": "Real record_locator only; unresolved text is not a source FK.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "reason": {
+      "source_locator": "future failure-to-resolve evidence reason",
+      "conversion_and_null_policy": "Nonempty reason. Broken known source FK is an error, never reclassified as unresolved.",
+      "deterministic_identity_rule": "No rows here; unres- full hash when actual unresolved token supplied.",
+      "evidence_fk_rule": "Real record_locator only; unresolved text is not a source FK.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "No rows here; unres- full hash when actual unresolved token supplied.",
+      "evidence_fk_rule": "Real record_locator only; unresolved text is not a source FK.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "No rows here; unres- full hash when actual unresolved token supplied.",
+      "evidence_fk_rule": "Real record_locator only; unresolved text is not a source FK.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns.",
+      "deterministic_identity_rule": "No rows here; unres- full hash when actual unresolved token supplied.",
+      "evidence_fk_rule": "Real record_locator only; unresolved text is not a source FK.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "identity_crosswalk": {
+    "entity_kind": {
+      "source_locator": "X.entity_kind",
+      "conversion_and_null_policy": "office",
+      "deterministic_identity_rule": "Entity kind + upstream namespace/ID uniquely binds actual record_key.",
+      "evidence_fk_rule": "Real record_locator; alias is not a successor link.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "upstream_namespace": {
+      "source_locator": "X.upstream_namespace",
+      "conversion_and_null_policy": "dvk.si:municipality-code:council or :mayor; body-qualified aliases.",
+      "deterministic_identity_rule": "Entity kind + upstream namespace/ID uniquely binds actual record_key.",
+      "evidence_fk_rule": "Real record_locator; alias is not a successor link.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "upstream_id": {
+      "source_locator": "X.upstream_id",
+      "conversion_and_null_policy": "Exact3-digit documentary form of source municipality code. Government/source-label alias evidence in roster-bindings and historic-roster-bindings.",
+      "deterministic_identity_rule": "Entity kind + upstream namespace/ID uniquely binds actual record_key.",
+      "evidence_fk_rule": "Real record_locator; alias is not a successor link.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "record_key": {
+      "source_locator": "X.record_key",
+      "conversion_and_null_policy": "FK to real office record locator.",
+      "deterministic_identity_rule": "Entity kind + upstream namespace/ID uniquely binds actual record_key.",
+      "evidence_fk_rule": "Real record_locator; alias is not a successor link.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "reason": {
+      "source_locator": "X.reason",
+      "conversion_and_null_policy": "Source-code binding only; no guessed legal merger/split edge.2018LUŽE→LUČE is explicit link-path/2014-roster reconciliation pending review.",
+      "deterministic_identity_rule": "Entity kind + upstream namespace/ID uniquely binds actual record_key.",
+      "evidence_fk_rule": "Real record_locator; alias is not a successor link.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "Entity kind + upstream namespace/ID uniquely binds actual record_key.",
+      "evidence_fk_rule": "Real record_locator; alias is not a successor link.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "release_id": {
+      "source_locator": "I.candidate_release_id",
+      "conversion_and_null_policy": "Candidate only; mint public release only after future validated publication.",
+      "deterministic_identity_rule": "Entity kind + upstream namespace/ID uniquely binds actual record_key.",
+      "evidence_fk_rule": "Real record_locator; alias is not a successor link.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    },
+    "raw_json": {
+      "source_locator": "Entire source-bound object + origins + raw columns/values",
+      "conversion_and_null_policy": "Canonical JSON retaining all unknown fields, original claims, holds and source row; never drop columns.",
+      "deterministic_identity_rule": "Entity kind + upstream namespace/ID uniquely binds actual record_key.",
+      "evidence_fk_rule": "Real record_locator; alias is not a successor link.",
+      "validation_assertion": "Exact mapped field or explicitly stated NULL/default; verify typed identity/FK, source hash and current-vs-historic scope. No inferred date/office."
+    }
+  },
+  "ingest_attempt": {
+    "attempt_id": {
+      "source_locator": "future runtime",
+      "conversion_and_null_policy": "Fresh attempt-UUID every run, excluded from fingerprint; no attempt minted here.",
+      "deterministic_identity_rule": "Fresh runtime attempt UUID; excluded from release fingerprint.",
+      "evidence_fk_rule": "Separate durable ledger; no cross-file SQLite FK assumed.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "lineage_id": {
+      "source_locator": "I.lineage_id",
+      "conversion_and_null_policy": "Literal country-package-slovenia; preserve row ownership.",
+      "deterministic_identity_rule": "Fresh runtime attempt UUID; excluded from release fingerprint.",
+      "evidence_fk_rule": "Separate durable ledger; no cross-file SQLite FK assumed.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "operator": {
+      "source_locator": "future authenticated operator",
+      "conversion_and_null_policy": "Required actual operator, not Justin approval inferred.",
+      "deterministic_identity_rule": "Fresh runtime attempt UUID; excluded from release fingerprint.",
+      "evidence_fk_rule": "Separate durable ledger; no cross-file SQLite FK assumed.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "script_version": {
+      "source_locator": "future executable version",
+      "conversion_and_null_policy": "Actual importer version; documentation adapter contract is not execution.",
+      "deterministic_identity_rule": "Fresh runtime attempt UUID; excluded from release fingerprint.",
+      "evidence_fk_rule": "Separate durable ledger; no cross-file SQLite FK assumed.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "started_at": {
+      "source_locator": "runtime UTC",
+      "conversion_and_null_policy": "Before staging begins; durable sibling ledger.",
+      "deterministic_identity_rule": "Fresh runtime attempt UUID; excluded from release fingerprint.",
+      "evidence_fk_rule": "Separate durable ledger; no cross-file SQLite FK assumed.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "finished_at": {
+      "source_locator": "runtime UTC",
+      "conversion_and_null_policy": "NULL while started; actual finish on terminal state.",
+      "deterministic_identity_rule": "Fresh runtime attempt UUID; excluded from release fingerprint.",
+      "evidence_fk_rule": "Separate durable ledger; no cross-file SQLite FK assumed.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "status": {
+      "source_locator": "runtime outcome",
+      "conversion_and_null_policy": "started→succeeded/failed; not run in this pack.",
+      "deterministic_identity_rule": "Fresh runtime attempt UUID; excluded from release fingerprint.",
+      "evidence_fk_rule": "Separate durable ledger; no cross-file SQLite FK assumed.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "input_inventory_json": {
+      "source_locator": "I + effective inherited descriptors",
+      "conversion_and_null_policy": "Canonical exact inputs to this attempt.",
+      "deterministic_identity_rule": "Fresh runtime attempt UUID; excluded from release fingerprint.",
+      "evidence_fk_rule": "Separate durable ledger; no cross-file SQLite FK assumed.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "successful_release_id": {
+      "source_locator": "future success",
+      "conversion_and_null_policy": "R only after publication/recovery confirms success; NULL on failure.",
+      "deterministic_identity_rule": "Fresh runtime attempt UUID; excluded from release fingerprint.",
+      "evidence_fk_rule": "Separate durable ledger; no cross-file SQLite FK assumed.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "publication_set_json": {
+      "source_locator": "future entire selected release set",
+      "conversion_and_null_policy": "Retain all unrelated lineage/release pairs unchanged.",
+      "deterministic_identity_rule": "Fresh runtime attempt UUID; excluded from release fingerprint.",
+      "evidence_fk_rule": "Separate durable ledger; no cross-file SQLite FK assumed.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "row_counts_json": {
+      "source_locator": "future actual validated counts",
+      "conversion_and_null_policy": "Not documentary expectations alone.",
+      "deterministic_identity_rule": "Fresh runtime attempt UUID; excluded from release fingerprint.",
+      "evidence_fk_rule": "Separate durable ledger; no cross-file SQLite FK assumed.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    },
+    "error_text": {
+      "source_locator": "future error",
+      "conversion_and_null_policy": "NULL on success; preserved failure reason on rollback.",
+      "deterministic_identity_rule": "Fresh runtime attempt UUID; excluded from release fingerprint.",
+      "evidence_fk_rule": "Separate durable ledger; no cross-file SQLite FK assumed.",
+      "validation_assertion": "Runtime CI Not run; future state must satisfy this column contract and fail closed on poison/partial publication."
+    }
+  }
+}
