@@ -1,0 +1,36 @@
+{
+  "current_offices": 306,
+  "historical_only_offices": 40,
+  "total_offices": 346,
+  "events": 937,
+  "results": 918,
+  "prospective_2026_events": 19,
+  "completed_or_annulled_events": 918,
+  "draft_tier_histogram": {
+    "municipal": 327,
+    "national": 4,
+    "regional": 15
+  },
+  "current_level_breakout": {
+    "state": 4,
+    "entity": 5,
+    "canton": 10,
+    "municipal": 287
+  },
+  "current_state": 4,
+  "current_entity": 5,
+  "current_canton": 10,
+  "current_municipal_local": 287,
+  "current_local_councils_assemblies": 145,
+  "current_local_direct_executives": 142,
+  "current_direct_executive_offices_all_levels": 148,
+  "current_councils_chambers_assemblies": 158,
+  "ep_offices": 0,
+  "source_extracts": 26,
+  "applied_changes": 0,
+  "justin_approvals_checked": 0,
+  "result_state_rows": 918,
+  "prompt_o_detailed_numeric_rows_referenced": 749,
+  "prompt_o_detailed_history_events_referenced": 39,
+  "research_gaps": 9
+}

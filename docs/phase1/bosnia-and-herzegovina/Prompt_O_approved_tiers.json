@@ -1,0 +1,748 @@
+{
+  "schema_version": "atlas-tier-classification/1",
+  "status": "approved",
+  "approval": {
+    "by": "product_owner",
+    "accepted_by": "Justin",
+    "date": "2026-09-17",
+    "timezone": "America/Edmonton",
+    "notes": "Justin approved 2026-09-17: all 13 offices regional (10 cantonal assemblies + Federation HoR + RS National Assembly + RS President). Retain open research notes: RS presidential replacement/repeat events (BA-G), governing coalition histories, calendar certainty on 2026-10-04, and no Brčko/municipal offices in register. Geographic tier approval only."
+  },
+  "predecessor_draft_sha256": "3d0be674f3d5b77b3a92362b82815d7bd3305473820e3279999fc82e5f3c51c1",
+  "country_slug": "bosnia-and-herzegovina",
+  "country_id": "bosnia-and-herzegovina",
+  "lineage_id": "country-package-bosnia-and-herzegovina",
+  "prompt": "prompt_o",
+  "source_register": {
+    "path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+    "archive_entry": "tables/master/office-register.json",
+    "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+    "bytes": 5386,
+    "payload_sha256": "5fb08d2c43f2fff0526c7aa3e95bbd00186aa6a401f409346dd3dbd11ce09c89"
+  },
+  "source_inputs": [
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+      "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4"
+    },
+    {
+      "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+      "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556"
+    }
+  ],
+  "classification_vocabulary": [
+    "national",
+    "regional",
+    "municipal",
+    "council",
+    "other"
+  ],
+  "schema_compatibility": {
+    "national": "national_context",
+    "regional": "regional",
+    "municipal": "municipal",
+    "council": "council",
+    "other": "other"
+  },
+  "schema_compatibility_note": "council mirrors unused legacy Europe metadata; unchanged Atlas DDL does not accept council as a geographic tier. No row emits it. A future explicit hold uses tier null/review_status unknown and review flags; never unknown→other.",
+  "counts_by_proposed_tier": {
+    "national": 0,
+    "regional": 13,
+    "municipal": 0,
+    "council": 0,
+    "other": 0
+  },
+  "rules": [
+    {
+      "id": "bosnia-entity-jurisdiction",
+      "statement": "BA-F / BA-R / BA-G are entity institutions by register jurisdiction+office and country notes; proposed regional, not country-wide national_context."
+    },
+    {
+      "id": "bosnia-cantonal-assemblies",
+      "statement": "BA-201 through BA-210 are ten supplied Cantonal assembly rows; proposed regional, not municipal."
+    },
+    {
+      "id": "bosnia-no-cohort-classification",
+      "statement": "Only this checked-in classification file drives tier. Calendar Regional / municipal wording is not evidence of office tier."
+    },
+    {
+      "id": "bosnia-approval-gate",
+      "statement": "All13 rows remain draft pending Justin. Three entity rows have focused review flags; none is tier_uncertain on supplied wording. Research gaps remain separately open."
+    }
+  ],
+  "notes": [
+    {
+      "scope": "presidential_event_reconciliation",
+      "status": "open",
+      "office_ids": [
+        "BA-G"
+      ],
+      "note": "Republika Srpska replacement/repeat presidential events still require reconciliation. Preserve the three supplied regular-cycle histories; no new dates, proceedings or results are created.",
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/7",
+          "sheet": "Office register",
+          "source_row": 2249,
+          "column": null,
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "scope": "governing_coalition_history",
+      "status": "open",
+      "office_ids": [
+        "BA-205",
+        "BA-210",
+        "BA-206",
+        "BA-F",
+        "BA-207",
+        "BA-202",
+        "BA-R",
+        "BA-G",
+        "BA-209",
+        "BA-203",
+        "BA-201",
+        "BA-208",
+        "BA-204"
+      ],
+      "note": "Governing coalition histories require reconciliation. Historical leaders/results are not current governing control; no control observations supplied.",
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "scope": "calendar_certainty",
+      "status": "open",
+      "office_ids": [
+        "BA-205",
+        "BA-210",
+        "BA-206",
+        "BA-F",
+        "BA-207",
+        "BA-202",
+        "BA-R",
+        "BA-G",
+        "BA-209",
+        "BA-203",
+        "BA-201",
+        "BA-208",
+        "BA-204"
+      ],
+      "note": "All source register rows give 2026-10-04. Preserve day precision with expected certainty from Scheduled cycle / expected; details vary. No claim of a freshly verified legal call.",
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/election-calendar.json",
+          "archive_entry": "tables/master/election-calendar.json",
+          "sha256": "d0498141997f7437cd61d67959617cf7b2f52ebc94afe0fe44b005f5a6d468fd",
+          "json_pointer": "/rows/0/6",
+          "sheet": "Election calendar",
+          "source_row": 21,
+          "column": "Date status",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "scope": "not_supplied",
+      "status": "open",
+      "office_ids": [],
+      "note": "No Brčko office or municipal office appears in the register. Do not create a dummy office or reinterpret BA-G. No explicit parent-geography relationships are supplied; retain institution scope and jurisdiction with nullable parents.",
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "",
+          "sheet": "Office register",
+          "source_row": null,
+          "column": null,
+          "html_anchor_index": null
+        }
+      ]
+    }
+  ],
+  "classifications": [
+    {
+      "office_id": "BA-205",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "jurisdiction": "Bosnian-Podrinje Goražde",
+      "office": "Cantonal assembly",
+      "institution_scope": "canton",
+      "rationale": "Register identifies Bosnian-Podrinje Goražde / Cantonal assembly. This explicitly subnational cantonal institution is proposed regional; no municipal office is supplied under this ID. Calendar Tier/cohort strings are excluded from classification.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/0/3",
+          "sheet": "Office register",
+          "source_row": 2242,
+          "column": "Office",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/0/2",
+          "sheet": "Office register",
+          "source_row": 2242,
+          "column": "Jurisdiction",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "office_id": "BA-210",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "jurisdiction": "Canton 10",
+      "office": "Cantonal assembly",
+      "institution_scope": "canton",
+      "rationale": "Register identifies Canton 10 / Cantonal assembly. This explicitly subnational cantonal institution is proposed regional; no municipal office is supplied under this ID. Calendar Tier/cohort strings are excluded from classification.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/1/3",
+          "sheet": "Office register",
+          "source_row": 2243,
+          "column": "Office",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/1/2",
+          "sheet": "Office register",
+          "source_row": 2243,
+          "column": "Jurisdiction",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "office_id": "BA-206",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "jurisdiction": "Central Bosnia",
+      "office": "Cantonal assembly",
+      "institution_scope": "canton",
+      "rationale": "Register identifies Central Bosnia / Cantonal assembly. This explicitly subnational cantonal institution is proposed regional; no municipal office is supplied under this ID. Calendar Tier/cohort strings are excluded from classification.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/2/3",
+          "sheet": "Office register",
+          "source_row": 2244,
+          "column": "Office",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/2/2",
+          "sheet": "Office register",
+          "source_row": 2244,
+          "column": "Jurisdiction",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "office_id": "BA-F",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "jurisdiction": "Federation of Bosnia and Herzegovina",
+      "office": "House of Representatives",
+      "institution_scope": "entity",
+      "rationale": "Register jurisdiction is Federation of Bosnia and Herzegovina and office is House of Representatives. Country notes explicitly describe entity offices. This is the Federation entity institution, proposed regional; the national country is the separate country row. Calendar Tier/cohort strings are excluded from classification.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/3/3",
+          "sheet": "Office register",
+          "source_row": 2245,
+          "column": "Office",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/3/2",
+          "sheet": "Office register",
+          "source_row": 2245,
+          "column": "Jurisdiction",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "office_id": "BA-207",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "jurisdiction": "Herzegovina-Neretva",
+      "office": "Cantonal assembly",
+      "institution_scope": "canton",
+      "rationale": "Register identifies Herzegovina-Neretva / Cantonal assembly. This explicitly subnational cantonal institution is proposed regional; no municipal office is supplied under this ID. Calendar Tier/cohort strings are excluded from classification.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/4/3",
+          "sheet": "Office register",
+          "source_row": 2246,
+          "column": "Office",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/4/2",
+          "sheet": "Office register",
+          "source_row": 2246,
+          "column": "Jurisdiction",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "office_id": "BA-202",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "jurisdiction": "Posavina",
+      "office": "Cantonal assembly",
+      "institution_scope": "canton",
+      "rationale": "Register identifies Posavina / Cantonal assembly. This explicitly subnational cantonal institution is proposed regional; no municipal office is supplied under this ID. Calendar Tier/cohort strings are excluded from classification.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/5/3",
+          "sheet": "Office register",
+          "source_row": 2247,
+          "column": "Office",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/5/2",
+          "sheet": "Office register",
+          "source_row": 2247,
+          "column": "Jurisdiction",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "office_id": "BA-R",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "jurisdiction": "Republika Srpska",
+      "office": "National Assembly",
+      "institution_scope": "entity",
+      "rationale": "Register jurisdiction is Republika Srpska and office is National Assembly. Country notes describe entity offices. Geographic tier is proposed regional: National in the institution name does not make it Bosnia-wide national_context. Calendar Tier/cohort strings are excluded from classification.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/6/3",
+          "sheet": "Office register",
+          "source_row": 2248,
+          "column": "Office",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/6/2",
+          "sheet": "Office register",
+          "source_row": 2248,
+          "column": "Jurisdiction",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "office_id": "BA-G",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "jurisdiction": "Republika Srpska",
+      "office": "President",
+      "institution_scope": "entity",
+      "rationale": "Register jurisdiction is Republika Srpska and office is President. This is the entity president, proposed regional; BA-G is not Brčko and not the country-wide presidency. Missing replacement/repeat events do not alter the supplied office identity. Calendar Tier/cohort strings are excluded from classification.",
+      "human_review_required": true,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/7/3",
+          "sheet": "Office register",
+          "source_row": 2249,
+          "column": "Office",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/7/2",
+          "sheet": "Office register",
+          "source_row": 2249,
+          "column": "Jurisdiction",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "office_id": "BA-209",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "jurisdiction": "Sarajevo",
+      "office": "Cantonal assembly",
+      "institution_scope": "canton",
+      "rationale": "Register identifies Sarajevo / Cantonal assembly. This explicitly subnational cantonal institution is proposed regional; no municipal office is supplied under this ID. Calendar Tier/cohort strings are excluded from classification.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/8/3",
+          "sheet": "Office register",
+          "source_row": 2250,
+          "column": "Office",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/8/2",
+          "sheet": "Office register",
+          "source_row": 2250,
+          "column": "Jurisdiction",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "office_id": "BA-203",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "jurisdiction": "Tuzla",
+      "office": "Cantonal assembly",
+      "institution_scope": "canton",
+      "rationale": "Register identifies Tuzla / Cantonal assembly. This explicitly subnational cantonal institution is proposed regional; no municipal office is supplied under this ID. Calendar Tier/cohort strings are excluded from classification.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/9/3",
+          "sheet": "Office register",
+          "source_row": 2251,
+          "column": "Office",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/9/2",
+          "sheet": "Office register",
+          "source_row": 2251,
+          "column": "Jurisdiction",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "office_id": "BA-201",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "jurisdiction": "Una-Sana",
+      "office": "Cantonal assembly",
+      "institution_scope": "canton",
+      "rationale": "Register identifies Una-Sana / Cantonal assembly. This explicitly subnational cantonal institution is proposed regional; no municipal office is supplied under this ID. Calendar Tier/cohort strings are excluded from classification.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/10/3",
+          "sheet": "Office register",
+          "source_row": 2252,
+          "column": "Office",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/10/2",
+          "sheet": "Office register",
+          "source_row": 2252,
+          "column": "Jurisdiction",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "office_id": "BA-208",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "jurisdiction": "West Herzegovina",
+      "office": "Cantonal assembly",
+      "institution_scope": "canton",
+      "rationale": "Register identifies West Herzegovina / Cantonal assembly. This explicitly subnational cantonal institution is proposed regional; no municipal office is supplied under this ID. Calendar Tier/cohort strings are excluded from classification.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/11/3",
+          "sheet": "Office register",
+          "source_row": 2253,
+          "column": "Office",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/11/2",
+          "sheet": "Office register",
+          "source_row": 2253,
+          "column": "Jurisdiction",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    },
+    {
+      "office_id": "BA-204",
+      "tier": "regional",
+      "schema_v1_tier": "regional",
+      "jurisdiction": "Zenica-Doboj",
+      "office": "Cantonal assembly",
+      "institution_scope": "canton",
+      "rationale": "Register identifies Zenica-Doboj / Cantonal assembly. This explicitly subnational cantonal institution is proposed regional; no municipal office is supplied under this ID. Calendar Tier/cohort strings are excluded from classification.",
+      "human_review_required": false,
+      "tier_uncertain": false,
+      "evidence": [
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/12/3",
+          "sheet": "Office register",
+          "source_row": 2254,
+          "column": "Office",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json",
+          "archive_entry": "tables/master/office-register.json",
+          "sha256": "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4",
+          "json_pointer": "/rows/12/2",
+          "sheet": "Office register",
+          "source_row": 2254,
+          "column": "Jurisdiction",
+          "html_anchor_index": null
+        },
+        {
+          "input_path": "data/countries/bosnia-and-herzegovina/unpacked/tables/master/country-notes.json",
+          "archive_entry": "tables/master/country-notes.json",
+          "sha256": "b6bd5d27606758b3962441c2c61e002e78e594bd70040d5698487be880153556",
+          "json_pointer": "/rows/0/1",
+          "sheet": "Country notes",
+          "source_row": 10,
+          "column": "Scope and remaining gaps",
+          "html_anchor_index": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "status": "retained_prior_research_reference_not_retranscribed",
+  "prior_prompt": "O",
+  "identity_vector_repo_path": "docs/phase1/bosnia-and-herzegovina/Bosnia_Identity_Vectors.json",
+  "identity_vector_git_blob_sha": "5228f504e759b24e5b6fe36a1ad56db5b0874f29",
+  "identity_vector_byte_count": 1159136,
+  "prior_detailed_result_rows": 749,
+  "prior_historical_events": 39,
+  "prior_offices": 13,
+  "underlying_detailed_returns_sha256": "7d3123dcded64515eafd3d0d2041181bef236d868750964f4e0858576440e479",
+  "underlying_history_index_sha256": "833cfe5104faf5d506b12f4407629b1ee4531fb2df6bfa59c5ecd0961ba3082f",
+  "note": "Prompt AW preserves and cross-references the previously accepted detailed numeric rows rather than fabricating or silently discarding them. They cover 2014/2018/2022 for FBiH HoR, RS National Assembly, RS President and ten canton assemblies. AW result-state rows cover all completed contests; numeric coverage outside this retained set remains BA-AW-G01.",
+  "office_crosswalk": {
+    "BA-F": "BA-REG-FBIH-HOR",
+    "BA-R": "BA-REG-RS-NA",
+    "BA-G": "BA-REG-RS-PRES",
+    "BA-201": "BA-REG-CANTON-01",
+    "BA-202": "BA-REG-CANTON-02",
+    "BA-203": "BA-REG-CANTON-03",
+    "BA-204": "BA-REG-CANTON-04",
+    "BA-205": "BA-REG-CANTON-05",
+    "BA-206": "BA-REG-CANTON-06",
+    "BA-207": "BA-REG-CANTON-07",
+    "BA-208": "BA-REG-CANTON-08",
+    "BA-209": "BA-REG-CANTON-09",
+    "BA-210": "BA-REG-CANTON-10"
+  },
+  "cycle_years": [
+    2014,
+    2018,
+    2022
+  ],
+  "retranscription_policy": "Do not duplicate rows into AW unless exact retained bytes are materialized and revalidated; this crosswalk is documentary continuity, not a new import."
+}

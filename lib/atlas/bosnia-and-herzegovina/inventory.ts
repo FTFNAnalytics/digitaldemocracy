@@ -13,6 +13,8 @@ import { sha256 as adapterSha256 } from "../../observatory/adapters/tar";
 import { zipTable, type TableRow, type WorkbookTable } from "../../observatory/adapters/tables";
 import {
   ADAPTER_VERSION,
+  APPROVED_TIER_PATH,
+  APPROVED_TIER_SHA256,
   EXPECTED_COUNTS,
   LINEAGE_ID,
   METHOD_VERSION,
@@ -321,6 +323,7 @@ export function scanBosniaInventory(options: {
     ? path.relative(root, packageDir).replace(/\\/g, "/") || PACKAGE_PREFIX
     : PACKAGE_PREFIX;
   const tierAbs = options.tierPath ?? path.join(root, TIER_PATH);
+  const readingCheckedInSchema = !options.tierPath;
   const gitCommit = gitHead(root);
 
   const schemaAttempt = path.join(root, ATLAS_MIGRATIONS_DIR, ATLAS_ATTEMPT_LOG_FILENAME);
@@ -492,9 +495,39 @@ export function scanBosniaInventory(options: {
     );
   }
 
+  if (readingCheckedInSchema) {
+    if (tierMeta.sha256 !== TIER_SHA256) {
+      throw new BosniaPreflightError(
+        "tier_hash_mismatch",
+        `Bosnia and Herzegovina schema-path tier SHA-256 mismatch; expected ${TIER_SHA256}.`,
+        intendedInventory,
+      );
+    }
+  }
+
+  const classificationAbs = readingCheckedInSchema ? path.join(root, APPROVED_TIER_PATH) : tierAbs;
+  let classificationBytes = tierBytes;
+  if (readingCheckedInSchema) {
+    if (!existsSync(classificationAbs)) {
+      throw new BosniaPreflightError(
+        "missing_tier",
+        `Prompt O approved Bosnia tier file is missing at ${APPROVED_TIER_PATH}.`,
+        intendedInventory,
+      );
+    }
+    classificationBytes = readFileSync(classificationAbs);
+    if (adapterSha256(classificationBytes) !== APPROVED_TIER_SHA256) {
+      throw new BosniaPreflightError(
+        "tier_hash_mismatch",
+        `Prompt O approved Bosnia tier SHA-256 mismatch; expected ${APPROVED_TIER_SHA256}.`,
+        intendedInventory,
+      );
+    }
+  }
+
   let tierJson: BosniaInventory["tiers"];
   try {
-    tierJson = JSON.parse(tierBytes!.toString("utf8")) as BosniaInventory["tiers"];
+    tierJson = JSON.parse(classificationBytes!.toString("utf8")) as BosniaInventory["tiers"];
   } catch (error) {
     throw new BosniaPreflightError(
       "tier_unreadable",
@@ -502,8 +535,10 @@ export function scanBosniaInventory(options: {
       intendedInventory,
     );
   }
-  tierMeta.status = tierJson.status;
-  intendedInventory.tier = tierMeta;
+  if (!readingCheckedInSchema) {
+    tierMeta.status = tierJson.status;
+    intendedInventory.tier = tierMeta;
+  }
 
   if (tierJson.status !== "approved") {
     throw new BosniaPreflightError(
@@ -512,10 +547,10 @@ export function scanBosniaInventory(options: {
       intendedInventory,
     );
   }
-  if (tierMeta.sha256 !== TIER_SHA256) {
+  if (!readingCheckedInSchema && adapterSha256(classificationBytes!) !== APPROVED_TIER_SHA256) {
     throw new BosniaPreflightError(
       "tier_hash_mismatch",
-      `Approved Bosnia and Herzegovina tier SHA-256 mismatch; expected ${TIER_SHA256}.`,
+      `Bosnia and Herzegovina tier SHA-256 mismatch; expected ${APPROVED_TIER_SHA256}.`,
       intendedInventory,
     );
   }

@@ -18,6 +18,7 @@ import {
   GORAZDE_2022_EVENT_ID,
   GORAZDE_2022_SOURCE_ID,
   GORAZDE_NEXT_EVENT_ID,
+  APPROVED_TIER_PATH,
   LINEAGE_ID,
   METHOD_V2_FINGERPRINT,
   OFFICE_NAMESPACE,
@@ -156,7 +157,7 @@ describe("Bosnia and Herzegovina identity anchors", () => {
     expect(looksLikeBrcko("BA-205")).toBe(false);
   });
 
-  it("hashes the approved Bosnia tier file bytes without rewriting them", () => {
+  it("hashes the checked-in Bosnia schema-path tier bytes without rewriting them", () => {
     expect(hashFile(TIER_PATH)).toBe(TIER_SHA256);
   });
 
@@ -384,7 +385,7 @@ describe("Prompt O Bosnia and Herzegovina import gates", () => {
     expect(existsSync(options.sqlitePath)).toBe(false);
 
     const draftPath = path.join(dir, "draft-bosnia.json");
-    const approved = JSON.parse(readFileSync(path.join(repoRoot, TIER_PATH), "utf8")) as { status: string };
+    const approved = JSON.parse(readFileSync(path.join(repoRoot, APPROVED_TIER_PATH), "utf8")) as { status: string };
     approved.status = "draft_for_human_review";
     writeFileSync(draftPath, `${JSON.stringify(approved, null, 2)}\n`);
     expect(() => importBosnia({ ...options, tierPath: draftPath })).toThrow(/status is "draft_for_human_review"/);

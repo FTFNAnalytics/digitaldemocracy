@@ -1,0 +1,56 @@
+[
+  {
+    "gap_id": "BA-AW-G01",
+    "status": "open",
+    "topic": "candidate/list numeric result vectors",
+    "detail": "Contest coverage and official result/certification state are represented for every completed event, but this pack does not claim exhaustive candidate/list vote/share/seat transcription for all 918 completed event records. Missing numeric fields are NULL/not_transcribed, never zero."
+  },
+  {
+    "gap_id": "BA-AW-G02",
+    "status": "open",
+    "topic": "historical city-status legal effective dates",
+    "detail": "Twenty CIK basic constituencies move from municipal to city category between 2016, 2020 and 2024 rosters. Historical office rows are retained, but no legal successor edge/effective date is asserted without the specific legal act."
+  },
+  {
+    "gap_id": "BA-AW-G03",
+    "status": "open",
+    "topic": "Republika Srpska vice-president stable identity",
+    "detail": "There are two vice-president offices. Internal slots 01/02 avoid inventing permanent constituent-people seats; 2022 official selected pair is retained only at aggregate outcome level."
+  },
+  {
+    "gap_id": "BA-AW-G04",
+    "status": "documented_gate",
+    "topic": "House of Peoples / indirect chambers",
+    "detail": "BiH House of Peoples, FBiH House of Peoples and RS Council of Peoples are documented as indirectly elected and excluded from the direct-popular office register."
+  },
+  {
+    "gap_id": "BA-AW-G05",
+    "status": "documented_gate",
+    "topic": "Brčko executive",
+    "detail": "Brčko Assembly is included; Brčko mayor is council/assembly-selected and no direct executive row is created."
+  },
+  {
+    "gap_id": "BA-AW-G06",
+    "status": "documented_gate",
+    "topic": "Sarajevo / Mostar executives",
+    "detail": "Sarajevo and Mostar mayors are council-selected; no direct-executive rows are created. Sarajevo City Council itself is retained as an indirect elected body."
+  },
+  {
+    "gap_id": "BA-AW-G07",
+    "status": "documented_gate",
+    "topic": "European Parliament",
+    "detail": "Zero EP offices. Bosnia and Herzegovina is an EU candidate, not a member state."
+  },
+  {
+    "gap_id": "BA-AW-G08",
+    "status": "open",
+    "topic": "pre-2014 local territorial history",
+    "detail": "Prompt AW provides three local cycles (2016/2020/2024) and three completed general cycles (2014/2018/2022). Older municipal boundary/successor history is not inferred and remains a future historical-depth task."
+  },
+  {
+    "gap_id": "BA-AW-G09",
+    "status": "source_discrepancy",
+    "topic": "2024 direct-mayor aggregate count",
+    "detail": "CEC 8 May 2024 English call page enumerates 111 municipal mayors + 31 city mayors but also states 143 total; the 4 October CEC basic-information page says 32 city mayors and 143 total. Prompt AW does not create an unidentified 143rd direct office. It retains 142 direct local executives identified by the direct-office roster and separately documents council-selected Sarajevo, Mostar and Brčko mayors."
+  }
+]
