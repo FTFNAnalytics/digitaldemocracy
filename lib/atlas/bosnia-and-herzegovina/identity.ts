@@ -44,22 +44,24 @@ export const ADAPTER_VERSION = "atlas-bosnia-and-herzegovina-field-map/1";
 export const METHOD_VERSION = "atlas-preserve-evidence/1";
 export { SCHEMA_VERSION, CANONICALIZATION, HASH_ALGORITHM };
 export const TIER_PATH = "schemas/atlas/tiers/bosnia-and-herzegovina.json";
+export const APPROVED_TIER_PATH = "docs/phase1/bosnia-and-herzegovina/Prompt_O_approved_tiers.json";
 export const PACKAGE_PREFIX = "data/countries/bosnia-and-herzegovina";
 export const UNPACKED_PREFIX = "data/countries/bosnia-and-herzegovina/unpacked";
 export const REGISTER_RELATIVE =
   "data/countries/bosnia-and-herzegovina/unpacked/tables/master/office-register.json";
 export const REGISTER_SHA256 = "504673d6437f951aa7cd1dda8aee03d8da23c30885c405aa67ef9df4597d86e4";
-export const TIER_SHA256 = "2ff154bf5c47e46c1a13385690466ee11e6b25f9ff5465384b5ce5570d429501";
+export const TIER_SHA256 = "96c7372d9395b1a35caa8ccbe68cffa95a8324d2d05081b9aea29706651e45a9";
+export const APPROVED_TIER_SHA256 = "2ff154bf5c47e46c1a13385690466ee11e6b25f9ff5465384b5ce5570d429501";
 export const DRAFT_TIER_SHA256 = "3d0be674f3d5b77b3a92362b82815d7bd3305473820e3279999fc82e5f3c51c1";
 export const REGIONAL_CALENDAR_LABEL =
   "13 regional offices (10 cantonal assemblies + Federation House of Representatives + RS National Assembly + RS President). Research holds remain open: RS presidential replacement/repeat, governing coalitions, and 2026-10-04 calendar certainty. No Brčko or municipal offices are supplied.";
-export const CANDIDATE_FINGERPRINT = "86ae70ae7c8105e19080763862778e2b602079e07d4cf39966fffe2ecb81d500";
+export const CANDIDATE_FINGERPRINT = "529a7a2e0fc7d77df4acc0b70fc1409d318257167f4501fb2280ac0bae24b5d2";
 export const CANDIDATE_RELEASE_ID =
-  "country-package-bosnia-and-herzegovina--sha256-86ae70ae7c8105e19080763862778e2b602079e07d4cf39966fffe2ecb81d500";
+  "country-package-bosnia-and-herzegovina--sha256-529a7a2e0fc7d77df4acc0b70fc1409d318257167f4501fb2280ac0bae24b5d2";
 export const DRAFT_FINGERPRINT = "a51de5f8c31439521fb50220dabe3ea6c742095983ced8892a932235752dc99b";
 export const DRAFT_RELEASE_ID =
   "country-package-bosnia-and-herzegovina--sha256-a51de5f8c31439521fb50220dabe3ea6c742095983ced8892a932235752dc99b";
-export const METHOD_V2_FINGERPRINT = "8f261f4dbadba47fea1dfa85d2177a15be61079453de570d2bd82b297761a8f8";
+export const METHOD_V2_FINGERPRINT = "568c9e8a3778a5306e6fd6ac92696bd6d5d3094523d9efa15487031b20d30351";
 export const DRAFT_METHOD_V2_FINGERPRINT = "57371f03f479f2830285d41557afb7a103155541ef86d1924838be65c9b4eeb2";
 export const CEC_HOMEPAGE_URL = "https://www.izbori.ba/";
 export const SCREENING_URL = "https://en.wikipedia.org/wiki/List_of_elections_in_2027";

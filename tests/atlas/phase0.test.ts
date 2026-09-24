@@ -412,7 +412,7 @@ describe("Phase 0 tier-classification drafts", () => {
         notes?: Array<{ scope?: string; status?: string; office_ids?: string[] }>;
         source_register: { path: string; sha256: string; payload_sha256?: string };
       }
-    >("schemas/atlas/tiers/bosnia-and-herzegovina.json");
+    >("docs/phase1/bosnia-and-herzegovina/Prompt_O_approved_tiers.json");
     expect(bosnia.status).toBe("approved");
     expect(bosnia.country_slug).toBe("bosnia-and-herzegovina");
     expect(bosnia.approval).toMatchObject({
@@ -427,7 +427,7 @@ describe("Phase 0 tier-classification drafts", () => {
     expect(bosnia.predecessor_draft_sha256).toBe(
       "3d0be674f3d5b77b3a92362b82815d7bd3305473820e3279999fc82e5f3c51c1",
     );
-    expect(sha256("schemas/atlas/tiers/bosnia-and-herzegovina.json")).toBe(
+    expect(sha256("docs/phase1/bosnia-and-herzegovina/Prompt_O_approved_tiers.json")).toBe(
       "2ff154bf5c47e46c1a13385690466ee11e6b25f9ff5465384b5ce5570d429501",
     );
     expect(bosnia.classifications).toHaveLength(13);
@@ -502,6 +502,31 @@ describe("Phase 0 tier-classification drafts", () => {
     expect(packed.payloadSha256).toBe(
       "5fb08d2c43f2fff0526c7aa3e95bbd00186aa6a401f409346dd3dbd11ce09c89",
     );
+  });
+
+  it("pins the Bosnia schema path to the Prompt AW draft checksum", () => {
+    const rows = readJson<
+      Array<{
+        office_id: string;
+        tier: string;
+        justin_approved: boolean;
+        review_status: string;
+      }>
+    >("schemas/atlas/tiers/bosnia-and-herzegovina.json");
+    expect(sha256("schemas/atlas/tiers/bosnia-and-herzegovina.json")).toBe(
+      "96c7372d9395b1a35caa8ccbe68cffa95a8324d2d05081b9aea29706651e45a9",
+    );
+    expect(rows).toHaveLength(346);
+    expect(rows.every((row) => row.justin_approved === false)).toBe(true);
+    expect(rows.every((row) => row.review_status === "draft_for_human_review")).toBe(true);
+    const histogram = { national: 0, regional: 0, municipal: 0 };
+    for (const row of rows) {
+      if (row.tier !== "national" && row.tier !== "regional" && row.tier !== "municipal") {
+        throw new Error(`Unexpected Bosnia tier ${row.tier}`);
+      }
+      histogram[row.tier] += 1;
+    }
+    expect(histogram).toEqual({ national: 4, regional: 15, municipal: 327 });
   });
 
   it("keeps Bulgaria 530 municipality-wide accepted and 3067 submunicipal held", () => {
