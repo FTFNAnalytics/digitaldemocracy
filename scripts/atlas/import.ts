@@ -7,6 +7,7 @@
  * Latvia is not part of `all`; use `ATLAS_IMPORT_SCOPE=latvia`.
  * Lithuania is not part of `all`; use `ATLAS_IMPORT_SCOPE=lithuania`.
  * Hungary is scoped-only (`ATLAS_IMPORT_SCOPE=hungary`) and is not part of `all`.
+ * Romania is not part of `all`; use `ATLAS_IMPORT_SCOPE=romania`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -515,6 +516,31 @@ function main() {
       console.log(`hungary_needs_review=${result.hungary.counts.needs_review_classifications}`);
       console.log(`hungary_council_assembly_offices=${result.hungary.counts.council_assembly_offices}`);
       console.log(`hungary_current_direct_executive_offices=${result.hungary.counts.current_direct_executive_offices}`);
+    }
+    if (result.romania) {
+      console.log("lineage=country-package-romania");
+      console.log(`romania_attempt_id=${result.romania.attemptId}`);
+      console.log(`romania_release_id=${result.romania.releaseId}`);
+      console.log(`romania_fingerprint_sha256=${result.romania.fingerprint}`);
+      console.log(`romania_reused_release=${result.romania.reusedRelease ? "yes" : "no"}`);
+      console.log(`romania_offices=${result.romania.counts.offices}`);
+      console.log(`romania_current=${result.romania.counts.current_offices}`);
+      console.log(`romania_historical=${result.romania.counts.historical_offices}`);
+      console.log(`romania_municipal=${result.romania.counts.municipal_offices}`);
+      console.log(`romania_regional=${result.romania.counts.regional_offices}`);
+      console.log(`romania_national=${result.romania.counts.national_offices}`);
+      console.log(`romania_other=${result.romania.counts.other_offices}`);
+      console.log(`romania_selected_histories=${result.romania.counts.selected_histories}`);
+      console.log(`romania_prospective_events=${result.romania.counts.prospective_events}`);
+      console.log(`romania_result_rows=${result.romania.counts.result_rows}`);
+      console.log(`romania_proceedings=${result.romania.counts.proceedings}`);
+      console.log(`romania_sources=${result.romania.counts.sources}`);
+      console.log(`romania_unresolved=${result.romania.counts.unresolved_evidence}`);
+      console.log(`romania_approved=${result.romania.counts.approved_classifications}`);
+      console.log(`romania_needs_review=${result.romania.counts.needs_review_classifications}`);
+      console.log(`romania_current_councils=${result.romania.counts.council_assembly_offices}`);
+      console.log(`romania_current_direct_executive_offices=${result.romania.counts.direct_executive_offices}`);
+      console.log(`romania_geographies=${result.romania.counts.geographies}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
