@@ -1,0 +1,991 @@
+[
+  {
+    "geography_id": "IS",
+    "name": "Iceland",
+    "type": "country",
+    "status": "current",
+    "source_ids": [
+      "IS-S07"
+    ]
+  },
+  {
+    "geography_id": "IS-GEO-f6722b1217c9",
+    "name": "Municipal council — Akraneskaupstaður",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-8a513d8b0665",
+    "name": "Municipal council — Akureyrarbær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-af81e978c814",
+    "name": "Municipal council — Árneshreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-cf42879a5979",
+    "name": "Municipal council — Ásahreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-95066eb31376",
+    "name": "Municipal council — Bláskógabyggð",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-27a595aecec0",
+    "name": "Municipal council — Bolungarvíkurkaupstaður",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-f643fd53c2ba",
+    "name": "Municipal council — Dalabyggð",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-0ecd7f0a4c33",
+    "name": "Municipal council — Dalvíkurbyggð",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-904f43de916e",
+    "name": "Municipal council — Eyja- og Miklaholtshreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-c5855a164718",
+    "name": "Municipal council — Eyjafjarðarsveit",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-ba5afe40e672",
+    "name": "Municipal council — Fjallabyggð",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-8211014a02c1",
+    "name": "Municipal council — Fjarðabyggð",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-505ed49db48d",
+    "name": "Municipal council — Fljótsdalshreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-fb20ad55b38a",
+    "name": "Municipal council — Flóahreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-3f6ab74f0e63",
+    "name": "Municipal council — Garðabær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-0468e56dc8a7",
+    "name": "Municipal council — Grindavíkurbær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-8e4efe138909",
+    "name": "Municipal council — Grímsnes- og Grafningshreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-43e34d1496cf",
+    "name": "Municipal council — Grundarfjarðarbær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-3e37a77d522a",
+    "name": "Municipal council — Grýtubakkahreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-2287510ca450",
+    "name": "Municipal council — Hafnarfjarðarbær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-fc53c9764819",
+    "name": "Municipal council — Hrunamannahreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-50feff9bdc99",
+    "name": "Municipal council — Húnabyggð",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-9aac9db87fba",
+    "name": "Municipal council — Húnaþing vestra",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-cd3646729da3",
+    "name": "Municipal council — Hvalfjarðarsveit",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-b8b43ad1028c",
+    "name": "Municipal council — Hveragerðisbær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-2c83703d0b24",
+    "name": "Municipal council — Hörgársveit",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-365a12a813d5",
+    "name": "Municipal council — Ísafjarðarbær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-51f04cf81202",
+    "name": "Municipal council — Kaldrananeshreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-b6dfe4884b8c",
+    "name": "Municipal council — Kjósarhreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-b2a810534fd6",
+    "name": "Municipal council — Kópavogsbær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-c39be6dcfb57",
+    "name": "Municipal council — Langanesbyggð",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-c01affe2774b",
+    "name": "Municipal council — Mosfellsbær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-f15f2848f228",
+    "name": "Municipal council — Múlaþing",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-98a94798c552",
+    "name": "Municipal council — Mýrdalshreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-3730090250f1",
+    "name": "Municipal council — Norðurþing",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-b892ad6a728c",
+    "name": "Municipal council — Rangárþing eystra",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-053b2c7f7a7a",
+    "name": "Municipal council — Rangárþing ytra",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-e2bad07bd839",
+    "name": "Municipal council — Reykhólahreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-fbd7fb4e83f2",
+    "name": "Municipal council — Reykjanesbær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-1f51f3df6ba8",
+    "name": "Municipal council — Reykjavíkurborg",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-e7e6f1c9da3f",
+    "name": "Municipal council — Borgarbyggð",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06",
+      "IS-S22",
+      "IS-S23"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-cf1c499760a4",
+    "name": "Municipal council — Seltjarnarnesbær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-207caff6c20c",
+    "name": "Municipal council — Skaftárhreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-d48472a7cdf9",
+    "name": "Municipal council — Skagafjörður",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-34e162c6fcec",
+    "name": "Municipal council — Skeiða- og Gnúpverjahreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-be1e103563cb",
+    "name": "Municipal council — Snæfellsbær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-411261507f70",
+    "name": "Municipal council — Strandabyggð",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-c49d5eef158c",
+    "name": "Municipal council — Suðurnesjabær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-f3f64724a9bd",
+    "name": "Municipal council — Súðavíkurhreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-374d13d3f1fc",
+    "name": "Municipal council — Svalbarðsstrandarhreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-a901f4a4d011",
+    "name": "Municipal council — Sveitarfélagið Árborg",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-2a40100e7e12",
+    "name": "Municipal council — Sveitarfélagið Hornafjörður",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-701a98d8db10",
+    "name": "Municipal council — Sveitarfélagið Skagaströnd",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-0fa15d0c1438",
+    "name": "Municipal council — Sveitarfélagið Stykkishólmur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-c7a50922d28e",
+    "name": "Municipal council — Sveitarfélagið Vogar",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-63deeb8218be",
+    "name": "Municipal council — Sveitarfélagið Ölfus",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-7d6714ff1b88",
+    "name": "Municipal council — Tjörneshreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-f6ece4698122",
+    "name": "Municipal council — Vestmannaeyjabær",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-65ef7a93ce0b",
+    "name": "Municipal council — Vesturbyggð",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-94e2ba1bb63a",
+    "name": "Municipal council — Vopnafjarðarhreppur",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-20dcda0d976c",
+    "name": "Municipal council — Þingeyjarsveit",
+    "type": "municipality",
+    "status": "current",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-28585967b105",
+    "name": "Borgarbyggð",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S22",
+      "IS-S23"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-7536e6284289",
+    "name": "Skorradalshreppur",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S22",
+      "IS-S23"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-6e2148516d51",
+    "name": "Vesturbyggð",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S45"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-24ad2cba7c18",
+    "name": "Tálknafjarðarhreppur",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S45"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-888d765b5a04",
+    "name": "Húnabyggð",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S44"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-56b5ba478704",
+    "name": "Skagabyggð",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S44"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-9cc0cc76da7d",
+    "name": "Stykkishólmur",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-67d641290db0",
+    "name": "Helgafellssveit",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-4519c76ba168",
+    "name": "Blönduósbær",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-c540ab64a47a",
+    "name": "Húnavatnshreppur",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-7debde1d6ac7",
+    "name": "Sveitarfélagið Skagafjörður",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-f49c984518ec",
+    "name": "Akrahreppur",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-f7039a93aa34",
+    "name": "Þingeyjarsveit",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-871d5b2a9b59",
+    "name": "Skútustaðahreppur",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-49e520e4196f",
+    "name": "Langanesbyggð",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-1d1976f89bbf",
+    "name": "Svalbarðshreppur",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-c8bcfd595be0",
+    "name": "Fljótsdalshérað",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-002837d3d0ad",
+    "name": "Seyðisfjörður",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-51ca41a80c27",
+    "name": "Borgarfjarðarhreppur",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-c9999f287a61",
+    "name": "Djúpavogshreppur",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-d45ac4b114b7",
+    "name": "Fjarðabyggð",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S40",
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-4600406c99ec",
+    "name": "Breiðdalshreppur",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S40",
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-861857b5d475",
+    "name": "Sandgerði",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S39",
+      "IS-S42"
+    ],
+    "aliases": []
+  },
+  {
+    "geography_id": "IS-GEO-HIST-22b88b3047f0",
+    "name": "Sveitarfélagið Garður",
+    "type": "municipality",
+    "status": "historical_only",
+    "source_ids": [
+      "IS-S39",
+      "IS-S42"
+    ],
+    "aliases": []
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "IS-D01",
+    "event_id": "IS-EVT-f1c52544092f",
+    "topic": "2024 presidential preliminary versus final",
+    "views": [
+      {
+        "source_id": "IS-S11",
+        "status": "preliminary",
+        "valid": 214318,
+        "winner_votes": 73182,
+        "electoral_roll": 266935
+      },
+      {
+        "source_id": "IS-S10",
+        "status": "final_statistics",
+        "valid": 214320,
+        "winner_votes": 73184,
+        "electoral_roll": 266778
+      }
+    ],
+    "resolution": "Final Statistics Iceland vector is used for result rows; preliminary view retained as evidence only."
+  },
+  {
+    "id": "IS-D02",
+    "event_id": "IS-EVT-41c44b67b80a",
+    "topic": "2021 Althingi votes-cast source views",
+    "views": [
+      {
+        "source_id": "IS-S14",
+        "votes_cast": 203978
+      },
+      {
+        "source_id": "IS-S15",
+        "votes_cast": 203898
+      }
+    ],
+    "resolution": "Both official source views retained; no arithmetic reconciliation invented."
+  },
+  {
+    "id": "IS-D03",
+    "event_id": "IS-EVT-b6b0a2b508a6",
+    "topic": "2024 Althingi votes-cast source views",
+    "views": [
+      {
+        "source_id": "IS-S17",
+        "votes_cast": 215216
+      },
+      {
+        "source_id": "IS-S16",
+        "votes_cast": 215395
+      }
+    ],
+    "resolution": "Both official source views retained; no arithmetic reconciliation invented."
+  }
+]

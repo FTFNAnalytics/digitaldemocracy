@@ -1,0 +1,89 @@
+# Iceland office register
+
+- `IS-NAT-ALTHINGI` — Alþingi — current — national
+- `IS-NAT-PRESIDENT` — President of Iceland — current — national
+- `IS-MUNI-f6722b1217c9` — Municipal council — Akraneskaupstaður — current — municipal
+- `IS-MUNI-8a513d8b0665` — Municipal council — Akureyrarbær — current — municipal
+- `IS-MUNI-af81e978c814` — Municipal council — Árneshreppur — current — municipal
+- `IS-MUNI-cf42879a5979` — Municipal council — Ásahreppur — current — municipal
+- `IS-MUNI-95066eb31376` — Municipal council — Bláskógabyggð — current — municipal
+- `IS-MUNI-27a595aecec0` — Municipal council — Bolungarvíkurkaupstaður — current — municipal
+- `IS-MUNI-f643fd53c2ba` — Municipal council — Dalabyggð — current — municipal
+- `IS-MUNI-0ecd7f0a4c33` — Municipal council — Dalvíkurbyggð — current — municipal
+- `IS-MUNI-904f43de916e` — Municipal council — Eyja- og Miklaholtshreppur — current — municipal
+- `IS-MUNI-c5855a164718` — Municipal council — Eyjafjarðarsveit — current — municipal
+- `IS-MUNI-ba5afe40e672` — Municipal council — Fjallabyggð — current — municipal
+- `IS-MUNI-8211014a02c1` — Municipal council — Fjarðabyggð — current — municipal
+- `IS-MUNI-505ed49db48d` — Municipal council — Fljótsdalshreppur — current — municipal
+- `IS-MUNI-fb20ad55b38a` — Municipal council — Flóahreppur — current — municipal
+- `IS-MUNI-3f6ab74f0e63` — Municipal council — Garðabær — current — municipal
+- `IS-MUNI-0468e56dc8a7` — Municipal council — Grindavíkurbær — current — municipal
+- `IS-MUNI-8e4efe138909` — Municipal council — Grímsnes- og Grafningshreppur — current — municipal
+- `IS-MUNI-43e34d1496cf` — Municipal council — Grundarfjarðarbær — current — municipal
+- `IS-MUNI-3e37a77d522a` — Municipal council — Grýtubakkahreppur — current — municipal
+- `IS-MUNI-2287510ca450` — Municipal council — Hafnarfjarðarbær — current — municipal
+- `IS-MUNI-fc53c9764819` — Municipal council — Hrunamannahreppur — current — municipal
+- `IS-MUNI-50feff9bdc99` — Municipal council — Húnabyggð — current — municipal
+- `IS-MUNI-9aac9db87fba` — Municipal council — Húnaþing vestra — current — municipal
+- `IS-MUNI-cd3646729da3` — Municipal council — Hvalfjarðarsveit — current — municipal
+- `IS-MUNI-b8b43ad1028c` — Municipal council — Hveragerðisbær — current — municipal
+- `IS-MUNI-2c83703d0b24` — Municipal council — Hörgársveit — current — municipal
+- `IS-MUNI-365a12a813d5` — Municipal council — Ísafjarðarbær — current — municipal
+- `IS-MUNI-51f04cf81202` — Municipal council — Kaldrananeshreppur — current — municipal
+- `IS-MUNI-b6dfe4884b8c` — Municipal council — Kjósarhreppur — current — municipal
+- `IS-MUNI-b2a810534fd6` — Municipal council — Kópavogsbær — current — municipal
+- `IS-MUNI-c39be6dcfb57` — Municipal council — Langanesbyggð — current — municipal
+- `IS-MUNI-c01affe2774b` — Municipal council — Mosfellsbær — current — municipal
+- `IS-MUNI-f15f2848f228` — Municipal council — Múlaþing — current — municipal
+- `IS-MUNI-98a94798c552` — Municipal council — Mýrdalshreppur — current — municipal
+- `IS-MUNI-3730090250f1` — Municipal council — Norðurþing — current — municipal
+- `IS-MUNI-b892ad6a728c` — Municipal council — Rangárþing eystra — current — municipal
+- `IS-MUNI-053b2c7f7a7a` — Municipal council — Rangárþing ytra — current — municipal
+- `IS-MUNI-e2bad07bd839` — Municipal council — Reykhólahreppur — current — municipal
+- `IS-MUNI-fbd7fb4e83f2` — Municipal council — Reykjanesbær — current — municipal
+- `IS-MUNI-1f51f3df6ba8` — Municipal council — Reykjavíkurborg — current — municipal
+- `IS-MUNI-e7e6f1c9da3f` — Municipal council — Borgarbyggð — current — municipal
+- `IS-MUNI-cf1c499760a4` — Municipal council — Seltjarnarnesbær — current — municipal
+- `IS-MUNI-207caff6c20c` — Municipal council — Skaftárhreppur — current — municipal
+- `IS-MUNI-d48472a7cdf9` — Municipal council — Skagafjörður — current — municipal
+- `IS-MUNI-34e162c6fcec` — Municipal council — Skeiða- og Gnúpverjahreppur — current — municipal
+- `IS-MUNI-be1e103563cb` — Municipal council — Snæfellsbær — current — municipal
+- `IS-MUNI-411261507f70` — Municipal council — Strandabyggð — current — municipal
+- `IS-MUNI-c49d5eef158c` — Municipal council — Suðurnesjabær — current — municipal
+- `IS-MUNI-f3f64724a9bd` — Municipal council — Súðavíkurhreppur — current — municipal
+- `IS-MUNI-374d13d3f1fc` — Municipal council — Svalbarðsstrandarhreppur — current — municipal
+- `IS-MUNI-a901f4a4d011` — Municipal council — Sveitarfélagið Árborg — current — municipal
+- `IS-MUNI-2a40100e7e12` — Municipal council — Sveitarfélagið Hornafjörður — current — municipal
+- `IS-MUNI-701a98d8db10` — Municipal council — Sveitarfélagið Skagaströnd — current — municipal
+- `IS-MUNI-0fa15d0c1438` — Municipal council — Sveitarfélagið Stykkishólmur — current — municipal
+- `IS-MUNI-c7a50922d28e` — Municipal council — Sveitarfélagið Vogar — current — municipal
+- `IS-MUNI-63deeb8218be` — Municipal council — Sveitarfélagið Ölfus — current — municipal
+- `IS-MUNI-7d6714ff1b88` — Municipal council — Tjörneshreppur — current — municipal
+- `IS-MUNI-f6ece4698122` — Municipal council — Vestmannaeyjabær — current — municipal
+- `IS-MUNI-65ef7a93ce0b` — Municipal council — Vesturbyggð — current — municipal
+- `IS-MUNI-94e2ba1bb63a` — Municipal council — Vopnafjarðarhreppur — current — municipal
+- `IS-MUNI-20dcda0d976c` — Municipal council — Þingeyjarsveit — current — municipal
+- `IS-MUNI-HIST-28585967b105` — Borgarbyggð — historical_only — municipal
+- `IS-MUNI-HIST-7536e6284289` — Skorradalshreppur — historical_only — municipal
+- `IS-MUNI-HIST-6e2148516d51` — Vesturbyggð — historical_only — municipal
+- `IS-MUNI-HIST-24ad2cba7c18` — Tálknafjarðarhreppur — historical_only — municipal
+- `IS-MUNI-HIST-888d765b5a04` — Húnabyggð — historical_only — municipal
+- `IS-MUNI-HIST-56b5ba478704` — Skagabyggð — historical_only — municipal
+- `IS-MUNI-HIST-9cc0cc76da7d` — Stykkishólmur — historical_only — municipal
+- `IS-MUNI-HIST-67d641290db0` — Helgafellssveit — historical_only — municipal
+- `IS-MUNI-HIST-4519c76ba168` — Blönduósbær — historical_only — municipal
+- `IS-MUNI-HIST-c540ab64a47a` — Húnavatnshreppur — historical_only — municipal
+- `IS-MUNI-HIST-7debde1d6ac7` — Sveitarfélagið Skagafjörður — historical_only — municipal
+- `IS-MUNI-HIST-f49c984518ec` — Akrahreppur — historical_only — municipal
+- `IS-MUNI-HIST-f7039a93aa34` — Þingeyjarsveit — historical_only — municipal
+- `IS-MUNI-HIST-871d5b2a9b59` — Skútustaðahreppur — historical_only — municipal
+- `IS-MUNI-HIST-49e520e4196f` — Langanesbyggð — historical_only — municipal
+- `IS-MUNI-HIST-1d1976f89bbf` — Svalbarðshreppur — historical_only — municipal
+- `IS-MUNI-HIST-c8bcfd595be0` — Fljótsdalshérað — historical_only — municipal
+- `IS-MUNI-HIST-002837d3d0ad` — Seyðisfjörður — historical_only — municipal
+- `IS-MUNI-HIST-51ca41a80c27` — Borgarfjarðarhreppur — historical_only — municipal
+- `IS-MUNI-HIST-c9999f287a61` — Djúpavogshreppur — historical_only — municipal
+- `IS-MUNI-HIST-d45ac4b114b7` — Fjarðabyggð — historical_only — municipal
+- `IS-MUNI-HIST-4600406c99ec` — Breiðdalshreppur — historical_only — municipal
+- `IS-MUNI-HIST-861857b5d475` — Sandgerði — historical_only — municipal
+- `IS-MUNI-HIST-22b88b3047f0` — Sveitarfélagið Garður — historical_only — municipal

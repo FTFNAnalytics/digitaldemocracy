@@ -1,0 +1,38 @@
+[
+  {
+    "gap_id": "IS-G01",
+    "topic": "municipal numeric vectors",
+    "status": "open_nonblocking_for_office_event_register",
+    "detail": "2014/2018/2022/2026 municipality office and event universes are complete at source-supported cycle counts. Per-list/per-candidate numeric vectors are retained where already transcribed; other numeric values remain null/not_transcribed rather than zero. Official Statistics Iceland/Landskjörstjórn result tables remain the recovery source."
+  },
+  {
+    "gap_id": "IS-G02",
+    "topic": "municipal amalgamations 2014-current",
+    "status": "closed_for_cycle_reconciliation",
+    "detail": "Source-identified 2017/2018/2020/2022/2024/2026 merger edges required to reconcile 74→72→64→61 cycle universes are represented. No earlier comprehensive pre-2014 graph is claimed."
+  },
+  {
+    "gap_id": "IS-G03",
+    "topic": "mayor vs council-selected executive",
+    "status": "closed",
+    "detail": "No direct municipal executive office emitted; Local Authorities Act provides council chair election and council hiring of executive manager."
+  },
+  {
+    "gap_id": "IS-G04",
+    "topic": "European Parliament",
+    "status": "closed",
+    "detail": "Zero EP offices. Iceland is not an EU member."
+  },
+  {
+    "gap_id": "IS-G05",
+    "topic": "presidential popular election",
+    "status": "closed",
+    "detail": "President retained as directly popularly elected single-round plurality office; no runoff invented."
+  },
+  {
+    "gap_id": "IS-G06",
+    "topic": "2018 turnout source views",
+    "status": "open_documented_discrepancy",
+    "detail": "Official 2018 publication reports 167,622 votes cast on summary page; other Statistics Iceland release/table views may differ slightly. Source views remain distinct; no forced reconciliation."
+  }
+]

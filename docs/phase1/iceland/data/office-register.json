@@ -1,0 +1,2364 @@
+[
+  {
+    "office_id": "IS-NAT-ALTHINGI",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS",
+    "name": "Alþingi",
+    "jurisdiction_name": "Iceland",
+    "office_type": "legislature",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "national",
+    "source_ids": [
+      "IS-S12",
+      "IS-S13",
+      "IS-S16"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "National parliament; no PM/cabinet popular office created."
+  },
+  {
+    "office_id": "IS-NAT-PRESIDENT",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS",
+    "name": "President of Iceland",
+    "jurisdiction_name": "Iceland",
+    "office_type": "direct_executive",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": true,
+    "tier_draft": "national",
+    "source_ids": [
+      "IS-S07"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "June or July 2028",
+      "precision": "month_range",
+      "certainty": "constitutional_window"
+    },
+    "state_note": "Direct secret plurality election; no runoff is provided by Constitution Article 5."
+  },
+  {
+    "office_id": "IS-MUNI-f6722b1217c9",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-f6722b1217c9",
+    "name": "Municipal council — Akraneskaupstaður",
+    "jurisdiction_name": "Akraneskaupstaður",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-8a513d8b0665",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-8a513d8b0665",
+    "name": "Municipal council — Akureyrarbær",
+    "jurisdiction_name": "Akureyrarbær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-af81e978c814",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-af81e978c814",
+    "name": "Municipal council — Árneshreppur",
+    "jurisdiction_name": "Árneshreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-cf42879a5979",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-cf42879a5979",
+    "name": "Municipal council — Ásahreppur",
+    "jurisdiction_name": "Ásahreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "unrestricted",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-95066eb31376",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-95066eb31376",
+    "name": "Municipal council — Bláskógabyggð",
+    "jurisdiction_name": "Bláskógabyggð",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-27a595aecec0",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-27a595aecec0",
+    "name": "Municipal council — Bolungarvíkurkaupstaður",
+    "jurisdiction_name": "Bolungarvíkurkaupstaður",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-f643fd53c2ba",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-f643fd53c2ba",
+    "name": "Municipal council — Dalabyggð",
+    "jurisdiction_name": "Dalabyggð",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "unrestricted",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-0ecd7f0a4c33",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-0ecd7f0a4c33",
+    "name": "Municipal council — Dalvíkurbyggð",
+    "jurisdiction_name": "Dalvíkurbyggð",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-904f43de916e",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-904f43de916e",
+    "name": "Municipal council — Eyja- og Miklaholtshreppur",
+    "jurisdiction_name": "Eyja- og Miklaholtshreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "unrestricted",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-c5855a164718",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-c5855a164718",
+    "name": "Municipal council — Eyjafjarðarsveit",
+    "jurisdiction_name": "Eyjafjarðarsveit",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-ba5afe40e672",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-ba5afe40e672",
+    "name": "Municipal council — Fjallabyggð",
+    "jurisdiction_name": "Fjallabyggð",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-8211014a02c1",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-8211014a02c1",
+    "name": "Municipal council — Fjarðabyggð",
+    "jurisdiction_name": "Fjarðabyggð",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-505ed49db48d",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-505ed49db48d",
+    "name": "Municipal council — Fljótsdalshreppur",
+    "jurisdiction_name": "Fljótsdalshreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "unrestricted",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-fb20ad55b38a",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-fb20ad55b38a",
+    "name": "Municipal council — Flóahreppur",
+    "jurisdiction_name": "Flóahreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-3f6ab74f0e63",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-3f6ab74f0e63",
+    "name": "Municipal council — Garðabær",
+    "jurisdiction_name": "Garðabær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-0468e56dc8a7",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-0468e56dc8a7",
+    "name": "Municipal council — Grindavíkurbær",
+    "jurisdiction_name": "Grindavíkurbær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-8e4efe138909",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-8e4efe138909",
+    "name": "Municipal council — Grímsnes- og Grafningshreppur",
+    "jurisdiction_name": "Grímsnes- og Grafningshreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-43e34d1496cf",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-43e34d1496cf",
+    "name": "Municipal council — Grundarfjarðarbær",
+    "jurisdiction_name": "Grundarfjarðarbær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-3e37a77d522a",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-3e37a77d522a",
+    "name": "Municipal council — Grýtubakkahreppur",
+    "jurisdiction_name": "Grýtubakkahreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "unrestricted",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-2287510ca450",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-2287510ca450",
+    "name": "Municipal council — Hafnarfjarðarbær",
+    "jurisdiction_name": "Hafnarfjarðarbær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-fc53c9764819",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-fc53c9764819",
+    "name": "Municipal council — Hrunamannahreppur",
+    "jurisdiction_name": "Hrunamannahreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-50feff9bdc99",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-50feff9bdc99",
+    "name": "Municipal council — Húnabyggð",
+    "jurisdiction_name": "Húnabyggð",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-9aac9db87fba",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-9aac9db87fba",
+    "name": "Municipal council — Húnaþing vestra",
+    "jurisdiction_name": "Húnaþing vestra",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-cd3646729da3",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-cd3646729da3",
+    "name": "Municipal council — Hvalfjarðarsveit",
+    "jurisdiction_name": "Hvalfjarðarsveit",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-b8b43ad1028c",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-b8b43ad1028c",
+    "name": "Municipal council — Hveragerðisbær",
+    "jurisdiction_name": "Hveragerðisbær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-2c83703d0b24",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-2c83703d0b24",
+    "name": "Municipal council — Hörgársveit",
+    "jurisdiction_name": "Hörgársveit",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-365a12a813d5",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-365a12a813d5",
+    "name": "Municipal council — Ísafjarðarbær",
+    "jurisdiction_name": "Ísafjarðarbær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-51f04cf81202",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-51f04cf81202",
+    "name": "Municipal council — Kaldrananeshreppur",
+    "jurisdiction_name": "Kaldrananeshreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "unrestricted",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-b6dfe4884b8c",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-b6dfe4884b8c",
+    "name": "Municipal council — Kjósarhreppur",
+    "jurisdiction_name": "Kjósarhreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "unopposed_no_poll",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-b2a810534fd6",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-b2a810534fd6",
+    "name": "Municipal council — Kópavogsbær",
+    "jurisdiction_name": "Kópavogsbær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-c39be6dcfb57",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-c39be6dcfb57",
+    "name": "Municipal council — Langanesbyggð",
+    "jurisdiction_name": "Langanesbyggð",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "unrestricted",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-c01affe2774b",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-c01affe2774b",
+    "name": "Municipal council — Mosfellsbær",
+    "jurisdiction_name": "Mosfellsbær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-f15f2848f228",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-f15f2848f228",
+    "name": "Municipal council — Múlaþing",
+    "jurisdiction_name": "Múlaþing",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-98a94798c552",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-98a94798c552",
+    "name": "Municipal council — Mýrdalshreppur",
+    "jurisdiction_name": "Mýrdalshreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-3730090250f1",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-3730090250f1",
+    "name": "Municipal council — Norðurþing",
+    "jurisdiction_name": "Norðurþing",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-b892ad6a728c",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-b892ad6a728c",
+    "name": "Municipal council — Rangárþing eystra",
+    "jurisdiction_name": "Rangárþing eystra",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-053b2c7f7a7a",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-053b2c7f7a7a",
+    "name": "Municipal council — Rangárþing ytra",
+    "jurisdiction_name": "Rangárþing ytra",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-e2bad07bd839",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-e2bad07bd839",
+    "name": "Municipal council — Reykhólahreppur",
+    "jurisdiction_name": "Reykhólahreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-fbd7fb4e83f2",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-fbd7fb4e83f2",
+    "name": "Municipal council — Reykjanesbær",
+    "jurisdiction_name": "Reykjanesbær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-1f51f3df6ba8",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-1f51f3df6ba8",
+    "name": "Municipal council — Reykjavíkurborg",
+    "jurisdiction_name": "Reykjavíkurborg",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-e7e6f1c9da3f",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-e7e6f1c9da3f",
+    "name": "Municipal council — Borgarbyggð",
+    "jurisdiction_name": "Borgarbyggð",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06",
+      "IS-S22",
+      "IS-S23"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Current name confirmed by new council 11 June 2026; 2026 election source used provisional merged-municipality label."
+  },
+  {
+    "office_id": "IS-MUNI-cf1c499760a4",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-cf1c499760a4",
+    "name": "Municipal council — Seltjarnarnesbær",
+    "jurisdiction_name": "Seltjarnarnesbær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-207caff6c20c",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-207caff6c20c",
+    "name": "Municipal council — Skaftárhreppur",
+    "jurisdiction_name": "Skaftárhreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-d48472a7cdf9",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-d48472a7cdf9",
+    "name": "Municipal council — Skagafjörður",
+    "jurisdiction_name": "Skagafjörður",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-34e162c6fcec",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-34e162c6fcec",
+    "name": "Municipal council — Skeiða- og Gnúpverjahreppur",
+    "jurisdiction_name": "Skeiða- og Gnúpverjahreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-be1e103563cb",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-be1e103563cb",
+    "name": "Municipal council — Snæfellsbær",
+    "jurisdiction_name": "Snæfellsbær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "unopposed_no_poll",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-411261507f70",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-411261507f70",
+    "name": "Municipal council — Strandabyggð",
+    "jurisdiction_name": "Strandabyggð",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-c49d5eef158c",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-c49d5eef158c",
+    "name": "Municipal council — Suðurnesjabær",
+    "jurisdiction_name": "Suðurnesjabær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-f3f64724a9bd",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-f3f64724a9bd",
+    "name": "Municipal council — Súðavíkurhreppur",
+    "jurisdiction_name": "Súðavíkurhreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-374d13d3f1fc",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-374d13d3f1fc",
+    "name": "Municipal council — Svalbarðsstrandarhreppur",
+    "jurisdiction_name": "Svalbarðsstrandarhreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-a901f4a4d011",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-a901f4a4d011",
+    "name": "Municipal council — Sveitarfélagið Árborg",
+    "jurisdiction_name": "Sveitarfélagið Árborg",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-2a40100e7e12",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-2a40100e7e12",
+    "name": "Municipal council — Sveitarfélagið Hornafjörður",
+    "jurisdiction_name": "Sveitarfélagið Hornafjörður",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-701a98d8db10",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-701a98d8db10",
+    "name": "Municipal council — Sveitarfélagið Skagaströnd",
+    "jurisdiction_name": "Sveitarfélagið Skagaströnd",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-0fa15d0c1438",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-0fa15d0c1438",
+    "name": "Municipal council — Sveitarfélagið Stykkishólmur",
+    "jurisdiction_name": "Sveitarfélagið Stykkishólmur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-c7a50922d28e",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-c7a50922d28e",
+    "name": "Municipal council — Sveitarfélagið Vogar",
+    "jurisdiction_name": "Sveitarfélagið Vogar",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-63deeb8218be",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-63deeb8218be",
+    "name": "Municipal council — Sveitarfélagið Ölfus",
+    "jurisdiction_name": "Sveitarfélagið Ölfus",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-7d6714ff1b88",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-7d6714ff1b88",
+    "name": "Municipal council — Tjörneshreppur",
+    "jurisdiction_name": "Tjörneshreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "unopposed_no_poll",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-f6ece4698122",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-f6ece4698122",
+    "name": "Municipal council — Vestmannaeyjabær",
+    "jurisdiction_name": "Vestmannaeyjabær",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-65ef7a93ce0b",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-65ef7a93ce0b",
+    "name": "Municipal council — Vesturbyggð",
+    "jurisdiction_name": "Vesturbyggð",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-94e2ba1bb63a",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-94e2ba1bb63a",
+    "name": "Municipal council — Vopnafjarðarhreppur",
+    "jurisdiction_name": "Vopnafjarðarhreppur",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "unopposed_no_poll",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-20dcda0d976c",
+    "id_namespace": "iceland-research-av-v1",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-20dcda0d976c",
+    "name": "Municipal council — Þingeyjarsveit",
+    "jurisdiction_name": "Þingeyjarsveit",
+    "office_type": "municipal_council",
+    "status": "current",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S01",
+      "IS-S02",
+      "IS-S06"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": {
+      "label": "2030-05-18",
+      "precision": "day",
+      "certainty": "official_scheduled",
+      "alert_window": "outside_current_18_month_window"
+    },
+    "election_mode_2026": "restricted_proportional_list",
+    "state_note": "Municipal executive manager is hired by council; council chair/oddviti is elected by council, not a separate popular office."
+  },
+  {
+    "office_id": "IS-MUNI-HIST-28585967b105",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-28585967b105",
+    "name": "Borgarbyggð",
+    "jurisdiction_name": "Borgarbyggð",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S22",
+      "IS-S23"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018, 2022. Successor link is source-identified: IS-MUNI-e7e6f1c9da3f.",
+    "successor_office_id": "IS-MUNI-e7e6f1c9da3f",
+    "observed_cycles": [
+      2014,
+      2018,
+      2022
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-7536e6284289",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-7536e6284289",
+    "name": "Skorradalshreppur",
+    "jurisdiction_name": "Skorradalshreppur",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S22",
+      "IS-S23"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018, 2022. Successor link is source-identified: IS-MUNI-e7e6f1c9da3f.",
+    "successor_office_id": "IS-MUNI-e7e6f1c9da3f",
+    "observed_cycles": [
+      2014,
+      2018,
+      2022
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-6e2148516d51",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-6e2148516d51",
+    "name": "Vesturbyggð",
+    "jurisdiction_name": "Vesturbyggð",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S45"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018, 2022. Successor link is source-identified: IS-MUNI-65ef7a93ce0b.",
+    "successor_office_id": "IS-MUNI-65ef7a93ce0b",
+    "observed_cycles": [
+      2014,
+      2018,
+      2022
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-24ad2cba7c18",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-24ad2cba7c18",
+    "name": "Tálknafjarðarhreppur",
+    "jurisdiction_name": "Tálknafjarðarhreppur",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S45"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018, 2022. Successor link is source-identified: IS-MUNI-65ef7a93ce0b.",
+    "successor_office_id": "IS-MUNI-65ef7a93ce0b",
+    "observed_cycles": [
+      2014,
+      2018,
+      2022
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-888d765b5a04",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-888d765b5a04",
+    "name": "Húnabyggð",
+    "jurisdiction_name": "Húnabyggð",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S44"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2022. Successor link is source-identified: IS-MUNI-50feff9bdc99.",
+    "successor_office_id": "IS-MUNI-50feff9bdc99",
+    "observed_cycles": [
+      2022
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-56b5ba478704",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-56b5ba478704",
+    "name": "Skagabyggð",
+    "jurisdiction_name": "Skagabyggð",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S44"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018, 2022. Successor link is source-identified: IS-MUNI-50feff9bdc99.",
+    "successor_office_id": "IS-MUNI-50feff9bdc99",
+    "observed_cycles": [
+      2014,
+      2018,
+      2022
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-9cc0cc76da7d",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-9cc0cc76da7d",
+    "name": "Stykkishólmur",
+    "jurisdiction_name": "Stykkishólmur",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-0fa15d0c1438.",
+    "successor_office_id": "IS-MUNI-0fa15d0c1438",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-67d641290db0",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-67d641290db0",
+    "name": "Helgafellssveit",
+    "jurisdiction_name": "Helgafellssveit",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-0fa15d0c1438.",
+    "successor_office_id": "IS-MUNI-0fa15d0c1438",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-4519c76ba168",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-4519c76ba168",
+    "name": "Blönduósbær",
+    "jurisdiction_name": "Blönduósbær",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-HIST-888d765b5a04.",
+    "successor_office_id": "IS-MUNI-HIST-888d765b5a04",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-c540ab64a47a",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-c540ab64a47a",
+    "name": "Húnavatnshreppur",
+    "jurisdiction_name": "Húnavatnshreppur",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-HIST-888d765b5a04.",
+    "successor_office_id": "IS-MUNI-HIST-888d765b5a04",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-7debde1d6ac7",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-7debde1d6ac7",
+    "name": "Sveitarfélagið Skagafjörður",
+    "jurisdiction_name": "Sveitarfélagið Skagafjörður",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-d48472a7cdf9.",
+    "successor_office_id": "IS-MUNI-d48472a7cdf9",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-f49c984518ec",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-f49c984518ec",
+    "name": "Akrahreppur",
+    "jurisdiction_name": "Akrahreppur",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-d48472a7cdf9.",
+    "successor_office_id": "IS-MUNI-d48472a7cdf9",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-f7039a93aa34",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-f7039a93aa34",
+    "name": "Þingeyjarsveit",
+    "jurisdiction_name": "Þingeyjarsveit",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-20dcda0d976c.",
+    "successor_office_id": "IS-MUNI-20dcda0d976c",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-871d5b2a9b59",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-871d5b2a9b59",
+    "name": "Skútustaðahreppur",
+    "jurisdiction_name": "Skútustaðahreppur",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-20dcda0d976c.",
+    "successor_office_id": "IS-MUNI-20dcda0d976c",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-49e520e4196f",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-49e520e4196f",
+    "name": "Langanesbyggð",
+    "jurisdiction_name": "Langanesbyggð",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-c39be6dcfb57.",
+    "successor_office_id": "IS-MUNI-c39be6dcfb57",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-1d1976f89bbf",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-1d1976f89bbf",
+    "name": "Svalbarðshreppur",
+    "jurisdiction_name": "Svalbarðshreppur",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-c39be6dcfb57.",
+    "successor_office_id": "IS-MUNI-c39be6dcfb57",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-c8bcfd595be0",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-c8bcfd595be0",
+    "name": "Fljótsdalshérað",
+    "jurisdiction_name": "Fljótsdalshérað",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-f15f2848f228.",
+    "successor_office_id": "IS-MUNI-f15f2848f228",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-002837d3d0ad",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-002837d3d0ad",
+    "name": "Seyðisfjörður",
+    "jurisdiction_name": "Seyðisfjörður",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-f15f2848f228.",
+    "successor_office_id": "IS-MUNI-f15f2848f228",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-51ca41a80c27",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-51ca41a80c27",
+    "name": "Borgarfjarðarhreppur",
+    "jurisdiction_name": "Borgarfjarðarhreppur",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-f15f2848f228.",
+    "successor_office_id": "IS-MUNI-f15f2848f228",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-c9999f287a61",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-c9999f287a61",
+    "name": "Djúpavogshreppur",
+    "jurisdiction_name": "Djúpavogshreppur",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014, 2018. Successor link is source-identified: IS-MUNI-f15f2848f228.",
+    "successor_office_id": "IS-MUNI-f15f2848f228",
+    "observed_cycles": [
+      2014,
+      2018
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-d45ac4b114b7",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-d45ac4b114b7",
+    "name": "Fjarðabyggð",
+    "jurisdiction_name": "Fjarðabyggð",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S40",
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014. Successor link is source-identified: IS-MUNI-8211014a02c1.",
+    "successor_office_id": "IS-MUNI-8211014a02c1",
+    "observed_cycles": [
+      2014
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-4600406c99ec",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-4600406c99ec",
+    "name": "Breiðdalshreppur",
+    "jurisdiction_name": "Breiðdalshreppur",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S40",
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014. Successor link is source-identified: IS-MUNI-8211014a02c1.",
+    "successor_office_id": "IS-MUNI-8211014a02c1",
+    "observed_cycles": [
+      2014
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-861857b5d475",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-861857b5d475",
+    "name": "Sandgerði",
+    "jurisdiction_name": "Sandgerði",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S39",
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014. Successor link is source-identified: IS-MUNI-c49d5eef158c.",
+    "successor_office_id": "IS-MUNI-c49d5eef158c",
+    "observed_cycles": [
+      2014
+    ]
+  },
+  {
+    "office_id": "IS-MUNI-HIST-22b88b3047f0",
+    "id_namespace": "iceland-research-av-v2",
+    "country_id": "IS",
+    "geography_id": "IS-GEO-HIST-22b88b3047f0",
+    "name": "Sveitarfélagið Garður",
+    "jurisdiction_name": "Sveitarfélagið Garður",
+    "office_type": "municipal_council",
+    "status": "historical_only",
+    "popular_selection": "direct",
+    "direct_executive": false,
+    "tier_draft": "municipal",
+    "source_ids": [
+      "IS-S39",
+      "IS-S42"
+    ],
+    "record_state": "draft_research",
+    "registry_qualified": false,
+    "next_date": null,
+    "state_note": "Source-identified historical municipal council; observed cycle membership: 2014. Successor link is source-identified: IS-MUNI-c49d5eef158c.",
+    "successor_office_id": "IS-MUNI-c49d5eef158c",
+    "observed_cycles": [
+      2014
+    ]
+  }
+]
