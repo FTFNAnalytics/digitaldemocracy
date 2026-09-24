@@ -1,6 +1,7 @@
 #!/usr/bin/env npx tsx
 /**
  * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * Latvia and Lithuania are not part of `all`. Lithuania is then imported with scope `lithuania` into the same database.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -23,6 +24,7 @@ import { LINEAGE_ID as CROATIA_LINEAGE } from "../../lib/atlas/croatia/identity"
 import { LINEAGE_ID as CZECHIA_LINEAGE } from "../../lib/atlas/czechia/identity";
 import { LINEAGE_ID as DENMARK_LINEAGE } from "../../lib/atlas/denmark/identity";
 import { LINEAGE_ID as ESTONIA_LINEAGE } from "../../lib/atlas/estonia/identity";
+import { LINEAGE_ID as LITHUANIA_LINEAGE } from "../../lib/atlas/lithuania/identity";
 import { LINEAGE_ID as FINLAND_LINEAGE } from "../../lib/atlas/finland/identity";
 import { LINEAGE_ID as IRELAND_LINEAGE } from "../../lib/atlas/ireland/identity";
 import { LINEAGE_ID as POLAND_LINEAGE } from "../../lib/atlas/poland/identity";
@@ -526,6 +528,61 @@ function main() {
     if (result.estonia?.counts.unresolved_evidence !== 9) {
       fail(`Estonia unresolved ${String(result.estonia?.counts.unresolved_evidence)}`);
     }
+    if (result.latvia || result.lithuania) {
+      fail("all imported a scoped Baltic lineage");
+    }
+    const lithuania = importAtlasLineages(
+      { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
+      "lithuania",
+    );
+    if (lithuania.latvia) {
+      fail("lithuania scope imported Latvia");
+    }
+    if (lithuania.lithuania?.counts.offices !== 123) {
+      fail(`Lithuania offices ${String(lithuania.lithuania?.counts.offices)}`);
+    }
+    if (lithuania.lithuania?.counts.current_offices !== 123) {
+      fail(`Lithuania current ${String(lithuania.lithuania?.counts.current_offices)}`);
+    }
+    if (lithuania.lithuania?.counts.historical_offices !== 0) {
+      fail(`Lithuania historical ${String(lithuania.lithuania?.counts.historical_offices)}`);
+    }
+    if (lithuania.lithuania?.counts.municipal_offices !== 120) {
+      fail(`Lithuania municipal ${String(lithuania.lithuania?.counts.municipal_offices)}`);
+    }
+    if (lithuania.lithuania?.counts.regional_offices !== 0) {
+      fail(`Lithuania regional ${String(lithuania.lithuania?.counts.regional_offices)}`);
+    }
+    if (lithuania.lithuania?.counts.national_offices !== 2) {
+      fail(`Lithuania national ${String(lithuania.lithuania?.counts.national_offices)}`);
+    }
+    if (lithuania.lithuania?.counts.other_offices !== 1) {
+      fail(`Lithuania other ${String(lithuania.lithuania?.counts.other_offices)}`);
+    }
+    if (lithuania.lithuania?.counts.current_councils !== 60) {
+      fail(`Lithuania councils ${String(lithuania.lithuania?.counts.current_councils)}`);
+    }
+    if (lithuania.lithuania?.counts.current_direct_executive_offices !== 61) {
+      fail(`Lithuania direct executives ${String(lithuania.lithuania?.counts.current_direct_executive_offices)}`);
+    }
+    if (lithuania.lithuania?.counts.result_rows !== 130) {
+      fail(`Lithuania results ${String(lithuania.lithuania?.counts.result_rows)}`);
+    }
+    if (lithuania.lithuania?.counts.proceedings !== 25) {
+      fail(`Lithuania proceedings ${String(lithuania.lithuania?.counts.proceedings)}`);
+    }
+    if (lithuania.lithuania?.counts.prospective_events !== 0) {
+      fail(`Lithuania prospective ${String(lithuania.lithuania?.counts.prospective_events)}`);
+    }
+    if (lithuania.lithuania?.counts.unresolved_evidence !== 21) {
+      fail(`Lithuania unresolved ${String(lithuania.lithuania?.counts.unresolved_evidence)}`);
+    }
+    if (lithuania.lithuania?.counts.needs_review_classifications !== 123) {
+      fail(`Lithuania needs_review ${String(lithuania.lithuania?.counts.needs_review_classifications)}`);
+    }
+    if (lithuania.lithuania?.counts.approved_classifications !== 0) {
+      fail(`Lithuania approved ${String(lithuania.lithuania?.counts.approved_classifications)}`);
+    }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
     if (result.nz?.counts.events !== 7) fail(`NZ events ${String(result.nz?.counts.events)}`);
@@ -1007,6 +1064,7 @@ function main() {
         CROATIA_LINEAGE,
         DENMARK_LINEAGE,
         ESTONIA_LINEAGE,
+        LITHUANIA_LINEAGE,
         FINLAND_LINEAGE,
         IRELAND_LINEAGE,
         NETHERLANDS_LINEAGE,
@@ -1028,7 +1086,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 croatia=1245 portugal=18834 spain=8208 estonia=281 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 croatia=1245 portugal=18834 spain=8208 estonia=281 lithuania=123 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

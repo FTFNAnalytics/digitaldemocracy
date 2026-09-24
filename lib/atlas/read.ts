@@ -4,6 +4,7 @@ import type { AtlasExplorerFilters } from "./filters";
 import { emptyAtlasExplorerFilters } from "./filters";
 import { resolveAtlasSqlitePath } from "./paths";
 import { REGIONAL_CALENDAR_LABEL as LATVIA_REGIONAL_CALENDAR_LABEL } from "./latvia/identity";
+import { REGIONAL_CALENDAR_LABEL as LITHUANIA_REGIONAL_CALENDAR_LABEL } from "./lithuania/identity";
 import { REGIONAL_CALENDAR_LABEL as SPAIN_REGIONAL_CALENDAR_LABEL } from "./spain/identity";
 import { openAtlasDatabase, tableExists } from "./sqlite";
 
@@ -623,6 +624,14 @@ export function listAtlasRegionalCalendar(
       offices,
       count: offices.length,
       label: LATVIA_REGIONAL_CALENDAR_LABEL,
+      denominatorKnown: false,
+    };
+  }
+  if (countryId === "lithuania") {
+    return {
+      offices,
+      count: offices.length,
+      label: LITHUANIA_REGIONAL_CALENDAR_LABEL,
       denominatorKnown: false,
     };
   }

@@ -5,6 +5,7 @@
  * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
  * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia (`ATLAS_IMPORT_SCOPE=all`).
  * Latvia is not part of `all`; use `ATLAS_IMPORT_SCOPE=latvia`.
+ * Lithuania is not part of `all`; use `ATLAS_IMPORT_SCOPE=lithuania`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -464,6 +465,30 @@ function main() {
       console.log(`latvia_needs_review=${result.latvia.counts.needs_review_classifications}`);
       console.log(`latvia_current_councils=${result.latvia.counts.current_councils}`);
       console.log(`latvia_current_direct_executive_offices=${result.latvia.counts.current_direct_executive_offices}`);
+    }
+    if (result.lithuania) {
+      console.log("lineage=country-package-lithuania");
+      console.log(`lithuania_attempt_id=${result.lithuania.attemptId}`);
+      console.log(`lithuania_release_id=${result.lithuania.releaseId}`);
+      console.log(`lithuania_fingerprint_sha256=${result.lithuania.fingerprint}`);
+      console.log(`lithuania_reused_release=${result.lithuania.reusedRelease ? "yes" : "no"}`);
+      console.log(`lithuania_offices=${result.lithuania.counts.offices}`);
+      console.log(`lithuania_current=${result.lithuania.counts.current_offices}`);
+      console.log(`lithuania_historical=${result.lithuania.counts.historical_offices}`);
+      console.log(`lithuania_municipal=${result.lithuania.counts.municipal_offices}`);
+      console.log(`lithuania_regional=${result.lithuania.counts.regional_offices}`);
+      console.log(`lithuania_national=${result.lithuania.counts.national_offices}`);
+      console.log(`lithuania_other=${result.lithuania.counts.other_offices}`);
+      console.log(`lithuania_selected_histories=${result.lithuania.counts.selected_histories}`);
+      console.log(`lithuania_prospective_events=${result.lithuania.counts.prospective_events}`);
+      console.log(`lithuania_result_rows=${result.lithuania.counts.result_rows}`);
+      console.log(`lithuania_proceedings=${result.lithuania.counts.proceedings}`);
+      console.log(`lithuania_sources=${result.lithuania.counts.sources}`);
+      console.log(`lithuania_unresolved=${result.lithuania.counts.unresolved_evidence}`);
+      console.log(`lithuania_approved=${result.lithuania.counts.approved_classifications}`);
+      console.log(`lithuania_needs_review=${result.lithuania.counts.needs_review_classifications}`);
+      console.log(`lithuania_current_councils=${result.lithuania.counts.current_councils}`);
+      console.log(`lithuania_current_direct_executive_offices=${result.lithuania.counts.current_direct_executive_offices}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
