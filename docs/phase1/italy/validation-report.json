@@ -1,0 +1,256 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_RESEARCH_GAPS",
+  "applied_changes": 0,
+  "justin_approved": false,
+  "checks_passed": 47,
+  "checks": [
+    {
+      "check": "unique office/event/reporting-unit/source identities",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "all current territories and core municipal offices",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "council and direct mayor per current comune",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "current Vallecrosia al mare name",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "Valle d Aosta joint-ticket deputy mayors",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "20 regional councils and 18 direct presidents",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "TAA composite regional council",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "two autonomous provinces, Trento direct president only",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "FVG transition remains separately pending",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "ordinary provinces/metropolitan bodies not invented popular",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "all current ISTAT provincial-level units dispositioned",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "Firenze five councils and direct presidents",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "distinct national offices and EP",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "indirect President",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "13 source-numbered winning presidential ballots",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "no presidential popular universe",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "historic extinctions only from explicit ES source rows",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "territorial recoding is not a guessed merger",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "tier bijection and unchecked approvals",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "draft tier histogram",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "office and event approvals false",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "applied changes zero and all approvals false",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "all Markdown approval boxes unchecked",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "exact inherited 223-column 20-table contract",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "field-map complete 1 to 1",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "event office/source/unit references and date precision",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "joint events cannot duplicate votes",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "ten EP cycles, year-only historic precision",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "17 Bolzano historical council polls",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "TAA 282 documents, 281 attachments, no invented Lana values",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "result IDs, foreign keys and nonnegative integer/null values",
+      "status": "pass",
+      "detail": 606051
+    },
+    {
+      "check": "quarantined June export contributes no rows",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "explicit missing/zero distinction",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "result-kind and vote-type histograms",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "round-two mayor figures do not create second-round list votes",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "capacity separate from party seat allocations",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "every normalized CSV numeric observation matches its original source cell",
+      "status": "pass",
+      "detail": 604434
+    },
+    {
+      "check": "EP raw votes absent, supplied shares/seats and statuses exact",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "published arithmetic discrepancies preserved and flagged",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "missing office history is explicit, not zero contests",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "all current and pending offices survive alert horizon",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "count summary agrees with artifacts",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "current executive and collective-body counts",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "regional municipality counts sum exactly",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "research incompleteness explicit",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "at least 15 distinct evidence-backed acceptance examples",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "every source byte hash and length",
+      "status": "pass",
+      "detail": 409
+    }
+  ],
+  "offices_current": 15917,
+  "offices_historical": 696,
+  "offices_pending": 8,
+  "events": 515,
+  "results": 606051,
+  "source_files_verified": 409,
+  "csv_observations_verified": 604434,
+  "manifest_checked": false,
+  "manifest_files_verified": 0,
+  "known_source_arithmetic_discrepancies": 7,
+  "full_requested_scope_complete": false,
+  "limitations": "Validation checks the stated documentary invariants and source bytes. It does not certify elections, approve the pack, or close missing research.",
+  "validation_stage": "pre_seal_data_and_source_checks"
+}

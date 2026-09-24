@@ -1,0 +1,5 @@
+# Italy — source inventory
+
+Exact URL, retained path, format, byte count, SHA-256, evidence grade and disposition for all 409 files are in `data/source-inventory.json`. Every retained file is also covered by `SHA256SUMS`. Primary families: ISTAT/SITUAS territory and reforms; Ministero dell’Interno electoral CSVs through published dati.gov.it delivery; Quirinale Constitution and presidential ballots; Camera institutional electoral-law evidence; regional statutes and official election services; Bolzano council archives; Firenze open data; European Parliament national returns.
+
+Search-rendered extracts are hashed as the returned extraction object, not mislabelled as original HTML. The underlying official URLs are embedded. Application shells, failed-format landing responses and unprocessed references remain clearly classified. The June 2024 municipal mismatch and older ISTAT CSV contribute no normalized observations. No retention hash claims that a changing online page is still byte-identical today.

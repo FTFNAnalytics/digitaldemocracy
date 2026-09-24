@@ -1,0 +1,258 @@
+[
+  {
+    "example_id": "IT-A01",
+    "check_key": "current_roster",
+    "input_case": "SITUAS report 61 at 2026-09-23",
+    "expected": "7,894 current territories; one council and one direct mayor per current comune; no alert-window filtering.",
+    "evidence": "data/territorial-register.jsonl",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A02",
+    "check_key": "current_name",
+    "input_case": "Official SITUAS rename of Vallecrosia",
+    "expected": "Use the current published name Vallecrosia al mare without creating an abolished/new pair from a rename.",
+    "evidence": "data/official-territorial-changes.jsonl",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A03",
+    "check_key": "historic_extinction",
+    "input_case": "348 explicit ISTAT ES relationships",
+    "expected": "696 historical-only council/mayor rows; territorial relations do not assert office succession.",
+    "evidence": "data/successor-crosswalk.jsonl",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A04",
+    "check_key": "sardinia_codes",
+    "input_case": "2026 Sardinian administrative recoding",
+    "expected": "Retain current codes; an AP/RN code change is not a merger edge.",
+    "evidence": "sources/istat-sardinia-recode.zip",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A05",
+    "check_key": "councils_mayors",
+    "input_case": "Every current comune",
+    "expected": "7,894 municipal councils and 7,894 mayor offices; no duplicate mayor for a runoff.",
+    "evidence": "data/office-register.jsonl",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A06",
+    "check_key": "vda_deputies",
+    "input_case": "Valle d’Aosta joint popular mayor/deputy mode",
+    "expected": "74 additional deputy-mayor offices, with no independent deputy ballot universe.",
+    "evidence": "sources/vda-municipal-mode.html",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A07",
+    "check_key": "president_indirect",
+    "input_case": "Constitution art 83 and Quirinale winning ballots",
+    "expected": "One indirect national office; all presidential result events use indirect_assembly_ballot.",
+    "evidence": "sources/constitution.pdf",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A08",
+    "check_key": "president_history",
+    "input_case": "Quirinale 1948–2022 winning-ballot tables",
+    "expected": "13 events; no absent preceding-ballot candidate totals or popular votes are generated.",
+    "evidence": "data/events.jsonl",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A09",
+    "check_key": "two_chambers",
+    "input_case": "Camera and Senato 2022 source files",
+    "expected": "Two separate national offices/events; no inference of life-senator popular votes.",
+    "evidence": "sources/camera-2022-Italia-livcomune.csv",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A10",
+    "check_key": "mixed_vote",
+    "input_case": "Repeated candidate total next to coalition list rows",
+    "expected": "Keep separate list/candidate vote types and deduplicate identical candidate totals within the source reporting unit.",
+    "evidence": "data/results.jsonl.gz",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A11",
+    "check_key": "regional_roster",
+    "input_case": "20 regioni including five special statutes",
+    "expected": "20 councils and 18 direct presidents; no direct VDA or TAA regional-president row.",
+    "evidence": "data/office-register.jsonl",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A12",
+    "check_key": "taa_composite",
+    "input_case": "TAA council composed of provincial councillors",
+    "expected": "One regional council office; no invented separate current regional ballot.",
+    "evidence": "sources/taa-council-mode.html",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A13",
+    "check_key": "autonomous_provinces",
+    "input_case": "Trento and Bolzano selection modes",
+    "expected": "Two provincial councils; only Trento has a direct provincial president.",
+    "evidence": "sources/special-statute-web-extracts.json",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A14",
+    "check_key": "delrio",
+    "input_case": "Ordinary province/metropolitan second-degree election",
+    "expected": "No ordinary popular provincial council/president rows; disposition records document exclusion.",
+    "evidence": "data/provincial-metropolitan-dispositions.jsonl",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A15",
+    "check_key": "fvg_transition",
+    "input_case": "FVG LR 7/2026 arts 18,20,27,45,78",
+    "expected": "Eight statutory pending offices, not eight current elected offices or invented first-election results.",
+    "evidence": "sources/fvg-law2026.pdf",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A16",
+    "check_key": "ep_history",
+    "input_case": "Ten EP national party tables 1979–2024",
+    "expected": "Ten cycles; earlier dates remain year-only; absent national raw votes stay null.",
+    "evidence": "data/events.jsonl",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A17",
+    "check_key": "ep_grain",
+    "input_case": "2024 EP national shares/seats plus domestic municipal lists",
+    "expected": "Never sum national party observations and municipal observations as two sets of votes.",
+    "evidence": "data/reporting-units.jsonl",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A18",
+    "check_key": "wrong_export",
+    "input_case": "comunali-20240609.csv payload mismatch",
+    "expected": "Quarantine all values; no normalized row cites this as a municipal return.",
+    "evidence": "sources/comunali-20240609.csv",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A19",
+    "check_key": "july_poll",
+    "input_case": "Corte Palasio 2024-07-28 source return",
+    "expected": "Preserve the supplied date; do not label it a repeat without a repeat notice.",
+    "evidence": "sources/comunali-20240728.csv",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A20",
+    "check_key": "taa_attachments",
+    "input_case": "282 official document objects, 281 attachments",
+    "expected": "Keep Lana date-only events; absent mayor or list totals are not zero.",
+    "evidence": "data/taa-extraction-audit.json",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A21",
+    "check_key": "taa_joint_ballot",
+    "input_case": "Explicit joint list/mayor table",
+    "expected": "Link the council event to the mayor office without duplicating votes.",
+    "evidence": "data/event-office-links.jsonl",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A22",
+    "check_key": "round2_list",
+    "input_case": "TAA runoff document repeats list context and reports seats",
+    "expected": "Record mayor runoff votes; list seats may reference first round, never a second-round list vote universe.",
+    "evidence": "data/results.jsonl.gz",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A23",
+    "check_key": "firenze_quartieri",
+    "input_case": "Official Firenze 2024 neighbourhood returns",
+    "expected": "Five councils and five direct presidents; no inferred nationwide uniform class.",
+    "evidence": "sources/firenze2024-subdivisions.csv",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A24",
+    "check_key": "publication_date",
+    "input_case": "Firenze publication timestamps on June 10",
+    "expected": "Keep publication timestamp in raw data, not as the June 8–9 poll date.",
+    "evidence": "sources/firenze2024-mayor.csv",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A25",
+    "check_key": "bolzano_history",
+    "input_case": "17 Bolzano council tables 1948–2023",
+    "expected": "17 actual dated events; early provincial components link to regional office without double counting.",
+    "evidence": "data/events.jsonl",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A26",
+    "check_key": "printed_conflict",
+    "input_case": "Seven Bolzano sum-versus-total discrepancies",
+    "expected": "Keep both source observations unchanged, set event numeric-quality flag, and report arithmetic warning.",
+    "evidence": "data/arithmetic-audit.json",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A27",
+    "check_key": "null_seats",
+    "input_case": "Dash or blank in source seat column",
+    "expected": "Null remains null; only explicit numeric zero becomes zero.",
+    "evidence": "data/results.jsonl.gz",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A28",
+    "check_key": "capacity",
+    "input_case": "Consiglieri da eleggere in TAA PDF",
+    "expected": "Capacity is a metric kind, not an additional party seat allocation.",
+    "evidence": "data/results.jsonl.gz",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A29",
+    "check_key": "tier_bijection",
+    "input_case": "All current/historical/pending office rows",
+    "expected": "Exactly one unapproved draft tier per office; no missing or duplicate classification.",
+    "evidence": "data/draft-tiers.jsonl",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A30",
+    "check_key": "contract",
+    "input_case": "Inherited Germany pack column inventory",
+    "expected": "Byte-identical 20-table/223-column contract and exact 1:1 field map.",
+    "evidence": "contract/columns.json",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A31",
+    "check_key": "hashes",
+    "input_case": "Retained sources and generated artifacts",
+    "expected": "Exact bytes match inventory and SHA256SUMS; ZIP has a separate external SHA-256.",
+    "evidence": "data/source-inventory.json",
+    "justin_approved": false
+  },
+  {
+    "example_id": "IT-A32",
+    "check_key": "approval",
+    "input_case": "Research-only instruction",
+    "expected": "applied_changes=0 and every Justin approval remains false/unchecked.",
+    "evidence": "data/approval-state.json",
+    "justin_approved": false
+  }
+]
