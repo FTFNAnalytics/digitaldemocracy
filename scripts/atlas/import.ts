@@ -15,6 +15,7 @@
  * France is not part of `all`; use `ATLAS_IMPORT_SCOPE=france`.
  * Germany is not part of `all`; use `ATLAS_IMPORT_SCOPE=germany`.
  * The United Kingdom is not part of `all`; use `ATLAS_IMPORT_SCOPE=united_kingdom`.
+ * Italy is not part of `all`; use `ATLAS_IMPORT_SCOPE=italy`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -796,6 +797,49 @@ function main() {
       console.log(`united_kingdom_explicit_predecessor_edges=${result.unitedKingdom.counts.explicit_predecessor_edges}`);
       console.log(`united_kingdom_research_dates=${result.unitedKingdom.counts.research_dates}`);
       console.log(`united_kingdom_geographies=${result.unitedKingdom.counts.geographies}`);
+    }
+    if (result.italy) {
+      console.log("lineage=country-package-italy");
+      console.log(`italy_attempt_id=${result.italy.attemptId}`);
+      console.log(`italy_release_id=${result.italy.releaseId}`);
+      console.log(`italy_fingerprint_sha256=${result.italy.fingerprint}`);
+      console.log(`italy_reused_release=${result.italy.reusedRelease ? "yes" : "no"}`);
+      console.log(`italy_offices=${result.italy.counts.offices}`);
+      console.log(`italy_current=${result.italy.counts.current_offices}`);
+      console.log(`italy_historical=${result.italy.counts.historical_offices}`);
+      console.log(`italy_pending_fvg=${result.italy.counts.pending_fvg_offices}`);
+      console.log(`italy_draft_tier_1=${result.italy.counts.draft_tier_1}`);
+      console.log(`italy_draft_tier_2=${result.italy.counts.draft_tier_2}`);
+      console.log(`italy_draft_tier_3=${result.italy.counts.draft_tier_3}`);
+      console.log(`italy_draft_tier_4=${result.italy.counts.draft_tier_4}`);
+      console.log(`italy_schema_national=${result.italy.counts.schema_national}`);
+      console.log(`italy_schema_regional=${result.italy.counts.schema_regional}`);
+      console.log(`italy_schema_municipal=${result.italy.counts.schema_municipal}`);
+      console.log(`italy_schema_other=${result.italy.counts.schema_other}`);
+      console.log(`italy_selected_histories=${result.italy.counts.selected_histories}`);
+      console.log(`italy_prospective_events=${result.italy.counts.prospective_events}`);
+      console.log(`italy_result_rows=${result.italy.counts.result_rows}`);
+      console.log(`italy_event_rows=${result.italy.counts.total_events}`);
+      console.log(`italy_sources=${result.italy.counts.sources}`);
+      console.log(`italy_unresolved=${result.italy.counts.unresolved_evidence}`);
+      console.log(`italy_approved=${result.italy.counts.approved_classifications}`);
+      console.log(`italy_needs_review=${result.italy.counts.needs_review_classifications}`);
+      console.log(`italy_current_municipal_councils=${result.italy.counts.current_municipal_councils}`);
+      console.log(`italy_current_direct_mayors=${result.italy.counts.current_direct_mayors}`);
+      console.log(`italy_deputy_mayors=${result.italy.counts.deputy_mayors}`);
+      console.log(`italy_regional_councils=${result.italy.counts.regional_councils}`);
+      console.log(`italy_direct_regional_presidents=${result.italy.counts.direct_regional_presidents}`);
+      console.log(`italy_autonomous_provincial_councils=${result.italy.counts.autonomous_provincial_councils}`);
+      console.log(`italy_direct_autonomous_provincial_presidents=${result.italy.counts.direct_autonomous_provincial_presidents}`);
+      console.log(`italy_firenze_quartiere_offices=${result.italy.counts.firenze_quartiere_offices}`);
+      console.log(`italy_ordinary_provincial_popular_offices=${result.italy.counts.ordinary_provincial_popular_offices}`);
+      console.log(`italy_direct_executive_offices=${result.italy.counts.direct_executive_offices}`);
+      console.log(`italy_current_collective_bodies=${result.italy.counts.current_collective_bodies}`);
+      console.log(`italy_historical_direct_executives=${result.italy.counts.historical_direct_executives}`);
+      console.log(`italy_pending_direct_executives=${result.italy.counts.pending_direct_executives}`);
+      console.log(`italy_explicit_predecessor_edges=${result.italy.counts.explicit_predecessor_edges}`);
+      console.log(`italy_research_dates=${result.italy.counts.research_dates}`);
+      console.log(`italy_geographies=${result.italy.counts.geographies}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");

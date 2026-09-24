@@ -1,7 +1,7 @@
 #!/usr/bin/env npx tsx
 /**
  * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
- * Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, and the United Kingdom are not part of `all`. Lithuania is then imported with scope `lithuania`, then Romania with scope `romania`, then Greece with scope `greece`, then Luxembourg with scope `luxembourg`, then Malta with scope `malta`, then Cyprus with scope `cyprus`, then France with scope `france`, then Germany with scope `germany`, then the United Kingdom with scope `united_kingdom`, into the same database.
+ * Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, the United Kingdom, and Italy are not part of `all`. Lithuania is then imported with scope `lithuania`, then Romania with scope `romania`, then Greece with scope `greece`, then Luxembourg with scope `luxembourg`, then Malta with scope `malta`, then Cyprus with scope `cyprus`, then France with scope `france`, then Germany with scope `germany`, then the United Kingdom with scope `united_kingdom`, then Italy with scope `italy`, into the same database.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -31,6 +31,7 @@ import { LINEAGE_ID as CYPRUS_LINEAGE } from "../../lib/atlas/cyprus/identity";
 import { LINEAGE_ID as FRANCE_LINEAGE } from "../../lib/atlas/france/identity";
 import { LINEAGE_ID as GERMANY_LINEAGE } from "../../lib/atlas/germany/identity";
 import { LINEAGE_ID as UNITED_KINGDOM_LINEAGE } from "../../lib/atlas/united-kingdom/identity";
+import { LINEAGE_ID as ITALY_LINEAGE } from "../../lib/atlas/italy/identity";
 import { LINEAGE_ID as MALTA_LINEAGE } from "../../lib/atlas/malta/identity";
 import { LINEAGE_ID as ROMANIA_LINEAGE } from "../../lib/atlas/romania/identity";
 import { LINEAGE_ID as FINLAND_LINEAGE } from "../../lib/atlas/finland/identity";
@@ -91,6 +92,9 @@ function main() {
     }
     if (result.unitedKingdom) {
       fail("ATLAS_IMPORT_SCOPE=all must not be the United Kingdom path");
+    }
+    if (result.italy) {
+      fail("ATLAS_IMPORT_SCOPE=all must not be the Italy path");
     }
     if (result.albania?.counts.current_offices !== 122) {
       fail(`Albania offices ${String(result.albania?.counts.current_offices)}`);
@@ -563,7 +567,7 @@ function main() {
     if (result.estonia?.counts.unresolved_evidence !== 9) {
       fail(`Estonia unresolved ${String(result.estonia?.counts.unresolved_evidence)}`);
     }
-    if (result.latvia || result.lithuania || result.hungary || result.romania || result.greece || result.luxembourg || result.malta || result.cyprus || result.france || result.germany || result.unitedKingdom) {
+    if (result.latvia || result.lithuania || result.hungary || result.romania || result.greece || result.luxembourg || result.malta || result.cyprus || result.france || result.germany || result.unitedKingdom || result.italy) {
       fail("all imported a scoped lineage");
     }
     const lithuania = importAtlasLineages(
@@ -825,7 +829,7 @@ function main() {
       { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
       "france",
     );
-    if (france.latvia || france.lithuania || france.hungary || france.romania || france.greece || france.luxembourg || france.malta || france.cyprus || france.germany || france.unitedKingdom) {
+    if (france.latvia || france.lithuania || france.hungary || france.romania || france.greece || france.luxembourg || france.malta || france.cyprus || france.germany || france.unitedKingdom || france.italy) {
       fail("france scope imported another scoped lineage");
     }
     if (france.france?.counts.offices !== 37850) fail(`France offices ${String(france.france?.counts.offices)}`);
@@ -862,7 +866,7 @@ function main() {
       { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
       "germany",
     );
-    if (germany.latvia || germany.lithuania || germany.hungary || germany.romania || germany.greece || germany.luxembourg || germany.malta || germany.cyprus || germany.france || germany.unitedKingdom) {
+    if (germany.latvia || germany.lithuania || germany.hungary || germany.romania || germany.greece || germany.luxembourg || germany.malta || germany.cyprus || germany.france || germany.unitedKingdom || germany.italy) {
       fail("germany scope imported another scoped lineage");
     }
     if (germany.germany?.counts.offices !== 22630) fail(`Germany offices ${String(germany.germany?.counts.offices)}`);
@@ -913,7 +917,8 @@ function main() {
       unitedKingdom.malta ||
       unitedKingdom.cyprus ||
       unitedKingdom.france ||
-      unitedKingdom.germany
+      unitedKingdom.germany ||
+      unitedKingdom.italy
     ) {
       fail("united_kingdom scope imported another scoped lineage");
     }
@@ -958,6 +963,63 @@ function main() {
     }
     if (unitedKingdom.unitedKingdom?.counts.approved_classifications !== 0) {
       fail(`UK approved ${String(unitedKingdom.unitedKingdom?.counts.approved_classifications)}`);
+    }
+    const italy = importAtlasLineages(
+      { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
+      "italy",
+    );
+    if (
+      italy.latvia ||
+      italy.lithuania ||
+      italy.hungary ||
+      italy.romania ||
+      italy.greece ||
+      italy.luxembourg ||
+      italy.malta ||
+      italy.cyprus ||
+      italy.france ||
+      italy.germany ||
+      italy.unitedKingdom
+    ) {
+      fail("italy scope imported another scoped lineage");
+    }
+    if (italy.italy?.counts.offices !== 16621) fail(`Italy offices ${String(italy.italy?.counts.offices)}`);
+    if (italy.italy?.counts.current_offices !== 15917) fail(`Italy current ${String(italy.italy?.counts.current_offices)}`);
+    if (italy.italy?.counts.historical_offices !== 696) fail(`Italy historical ${String(italy.italy?.counts.historical_offices)}`);
+    if (italy.italy?.counts.pending_fvg_offices !== 8) fail(`Italy pending ${String(italy.italy?.counts.pending_fvg_offices)}`);
+    if (italy.italy?.counts.draft_tier_1 !== 4) fail(`Italy tier 1 ${String(italy.italy?.counts.draft_tier_1)}`);
+    if (italy.italy?.counts.draft_tier_2 !== 38) fail(`Italy tier 2 ${String(italy.italy?.counts.draft_tier_2)}`);
+    if (italy.italy?.counts.draft_tier_3 !== 11) fail(`Italy tier 3 ${String(italy.italy?.counts.draft_tier_3)}`);
+    if (italy.italy?.counts.draft_tier_4 !== 16568) fail(`Italy tier 4 ${String(italy.italy?.counts.draft_tier_4)}`);
+    if (italy.italy?.counts.schema_national !== 4) fail(`Italy national ${String(italy.italy?.counts.schema_national)}`);
+    if (italy.italy?.counts.schema_regional !== 49) fail(`Italy regional ${String(italy.italy?.counts.schema_regional)}`);
+    if (italy.italy?.counts.schema_municipal !== 16568) fail(`Italy municipal ${String(italy.italy?.counts.schema_municipal)}`);
+    if (italy.italy?.counts.schema_other !== 0) fail(`Italy other ${String(italy.italy?.counts.schema_other)}`);
+    if (italy.italy?.counts.total_events !== 0) fail(`Italy events ${String(italy.italy?.counts.total_events)}`);
+    if (italy.italy?.counts.result_rows !== 0) fail(`Italy results ${String(italy.italy?.counts.result_rows)}`);
+    if (italy.italy?.counts.documented_result_rows_omitted != null) {
+      fail("Italy must not invent documented omitted result totals");
+    }
+    if (italy.italy?.counts.documented_event_rows_omitted != null) {
+      fail("Italy must not invent documented omitted event totals");
+    }
+    if (italy.italy?.counts.explicit_predecessor_edges !== 0) {
+      fail(`Italy predecessor edges ${String(italy.italy?.counts.explicit_predecessor_edges)}`);
+    }
+    if (italy.italy?.counts.direct_executive_offices !== 7992) {
+      fail(`Italy direct executives ${String(italy.italy?.counts.direct_executive_offices)}`);
+    }
+    if (italy.italy?.counts.research_dates !== 0) {
+      fail(`Italy research dates ${String(italy.italy?.counts.research_dates)}`);
+    }
+    if (italy.italy?.counts.prospective_events !== 0) {
+      fail(`Italy prospective ${String(italy.italy?.counts.prospective_events)}`);
+    }
+    if (italy.italy?.counts.needs_review_classifications !== 16621) {
+      fail(`Italy needs_review ${String(italy.italy?.counts.needs_review_classifications)}`);
+    }
+    if (italy.italy?.counts.approved_classifications !== 0) {
+      fail(`Italy approved ${String(italy.italy?.counts.approved_classifications)}`);
     }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
@@ -1449,6 +1511,7 @@ function main() {
         FRANCE_LINEAGE,
         GERMANY_LINEAGE,
         UNITED_KINGDOM_LINEAGE,
+        ITALY_LINEAGE,
         FINLAND_LINEAGE,
         IRELAND_LINEAGE,
         NETHERLANDS_LINEAGE,
