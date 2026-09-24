@@ -13,6 +13,7 @@ import { REGIONAL_CALENDAR_LABEL as FRANCE_REGIONAL_CALENDAR_LABEL } from "./fra
 import { REGIONAL_CALENDAR_LABEL as GERMANY_REGIONAL_CALENDAR_LABEL } from "./germany/identity";
 import { REGIONAL_CALENDAR_LABEL as UNITED_KINGDOM_REGIONAL_CALENDAR_LABEL } from "./united-kingdom/identity";
 import { REGIONAL_CALENDAR_LABEL as ITALY_REGIONAL_CALENDAR_LABEL } from "./italy/identity";
+import { REGIONAL_CALENDAR_LABEL as ICELAND_REGIONAL_CALENDAR_LABEL } from "./iceland/identity";
 import { REGIONAL_CALENDAR_LABEL as MALTA_REGIONAL_CALENDAR_LABEL } from "./malta/identity";
 import { REGIONAL_CALENDAR_LABEL as ROMANIA_REGIONAL_CALENDAR_LABEL } from "./romania/identity";
 import { REGIONAL_CALENDAR_LABEL as SPAIN_REGIONAL_CALENDAR_LABEL } from "./spain/identity";
@@ -722,6 +723,14 @@ export function listAtlasRegionalCalendar(
       offices,
       count: offices.length,
       label: ITALY_REGIONAL_CALENDAR_LABEL,
+      denominatorKnown: false,
+    };
+  }
+  if (countryId === "iceland") {
+    return {
+      offices,
+      count: offices.length,
+      label: ICELAND_REGIONAL_CALENDAR_LABEL,
       denominatorKnown: false,
     };
   }

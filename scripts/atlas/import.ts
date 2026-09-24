@@ -16,6 +16,7 @@
  * Germany is not part of `all`; use `ATLAS_IMPORT_SCOPE=germany`.
  * The United Kingdom is not part of `all`; use `ATLAS_IMPORT_SCOPE=united_kingdom`.
  * Italy is not part of `all`; use `ATLAS_IMPORT_SCOPE=italy`.
+ * Iceland is not part of `all`; use `ATLAS_IMPORT_SCOPE=iceland`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -840,6 +841,40 @@ function main() {
       console.log(`italy_explicit_predecessor_edges=${result.italy.counts.explicit_predecessor_edges}`);
       console.log(`italy_research_dates=${result.italy.counts.research_dates}`);
       console.log(`italy_geographies=${result.italy.counts.geographies}`);
+    }
+    if (result.iceland) {
+      console.log("lineage=country-package-iceland");
+      console.log(`iceland_attempt_id=${result.iceland.attemptId}`);
+      console.log(`iceland_release_id=${result.iceland.releaseId}`);
+      console.log(`iceland_fingerprint_sha256=${result.iceland.fingerprint}`);
+      console.log(`iceland_reused_release=${result.iceland.reusedRelease ? "yes" : "no"}`);
+      console.log(`iceland_offices=${result.iceland.counts.offices}`);
+      console.log(`iceland_current=${result.iceland.counts.current_offices}`);
+      console.log(`iceland_historical=${result.iceland.counts.historical_offices}`);
+      console.log(`iceland_draft_tier_national=${result.iceland.counts.draft_tier_national}`);
+      console.log(`iceland_draft_tier_municipal=${result.iceland.counts.draft_tier_municipal}`);
+      console.log(`iceland_schema_national=${result.iceland.counts.schema_national}`);
+      console.log(`iceland_schema_regional=${result.iceland.counts.schema_regional}`);
+      console.log(`iceland_schema_municipal=${result.iceland.counts.schema_municipal}`);
+      console.log(`iceland_schema_other=${result.iceland.counts.schema_other}`);
+      console.log(`iceland_selected_histories=${result.iceland.counts.selected_histories}`);
+      console.log(`iceland_prospective_events=${result.iceland.counts.prospective_events}`);
+      console.log(`iceland_result_rows=${result.iceland.counts.result_rows}`);
+      console.log(`iceland_event_rows=${result.iceland.counts.total_events}`);
+      console.log(`iceland_sources=${result.iceland.counts.sources}`);
+      console.log(`iceland_unresolved=${result.iceland.counts.unresolved_evidence}`);
+      console.log(`iceland_open_holds=${result.iceland.counts.named_open_holds}`);
+      console.log(`iceland_closed_gaps=${result.iceland.counts.closed_gaps}`);
+      console.log(`iceland_approved=${result.iceland.counts.approved_classifications}`);
+      console.log(`iceland_needs_review=${result.iceland.counts.needs_review_classifications}`);
+      console.log(`iceland_current_municipal_councils=${result.iceland.counts.current_municipal_councils}`);
+      console.log(`iceland_historical_municipal_councils=${result.iceland.counts.historical_municipal_councils}`);
+      console.log(`iceland_direct_executive_offices=${result.iceland.counts.direct_executive_offices}`);
+      console.log(`iceland_direct_municipal_executive_offices=${result.iceland.counts.direct_municipal_executive_offices}`);
+      console.log(`iceland_ep_offices=${result.iceland.counts.ep_offices}`);
+      console.log(`iceland_explicit_predecessor_edges=${result.iceland.counts.explicit_predecessor_edges}`);
+      console.log(`iceland_research_dates=${result.iceland.counts.research_dates}`);
+      console.log(`iceland_geographies=${result.iceland.counts.geographies}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");

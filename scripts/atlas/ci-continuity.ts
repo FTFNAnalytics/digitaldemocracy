@@ -96,6 +96,9 @@ function main() {
     if (result.italy) {
       fail("ATLAS_IMPORT_SCOPE=all must not be the Italy path");
     }
+    if (result.iceland) {
+      fail("ATLAS_IMPORT_SCOPE=all must not be the Iceland path");
+    }
     if (result.albania?.counts.current_offices !== 122) {
       fail(`Albania offices ${String(result.albania?.counts.current_offices)}`);
     }
