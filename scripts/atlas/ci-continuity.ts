@@ -1,7 +1,7 @@
 #!/usr/bin/env npx tsx
 /**
  * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
- * Latvia, Lithuania, and Hungary are not part of `all`. Lithuania is then imported with scope `lithuania` into the same database.
+ * Latvia, Lithuania, Hungary, and Romania are not part of `all`. Lithuania is then imported with scope `lithuania`, then Romania with scope `romania`, into the same database.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -25,6 +25,7 @@ import { LINEAGE_ID as CZECHIA_LINEAGE } from "../../lib/atlas/czechia/identity"
 import { LINEAGE_ID as DENMARK_LINEAGE } from "../../lib/atlas/denmark/identity";
 import { LINEAGE_ID as ESTONIA_LINEAGE } from "../../lib/atlas/estonia/identity";
 import { LINEAGE_ID as LITHUANIA_LINEAGE } from "../../lib/atlas/lithuania/identity";
+import { LINEAGE_ID as ROMANIA_LINEAGE } from "../../lib/atlas/romania/identity";
 import { LINEAGE_ID as FINLAND_LINEAGE } from "../../lib/atlas/finland/identity";
 import { LINEAGE_ID as IRELAND_LINEAGE } from "../../lib/atlas/ireland/identity";
 import { LINEAGE_ID as POLAND_LINEAGE } from "../../lib/atlas/poland/identity";
@@ -59,6 +60,9 @@ function main() {
     );
     if (result.hungary) {
       fail("ATLAS_IMPORT_SCOPE=all must not be the Hungary path");
+    }
+    if (result.romania) {
+      fail("ATLAS_IMPORT_SCOPE=all must not be the Romania path");
     }
     if (result.albania?.counts.current_offices !== 122) {
       fail(`Albania offices ${String(result.albania?.counts.current_offices)}`);
@@ -531,7 +535,7 @@ function main() {
     if (result.estonia?.counts.unresolved_evidence !== 9) {
       fail(`Estonia unresolved ${String(result.estonia?.counts.unresolved_evidence)}`);
     }
-    if (result.latvia || result.lithuania || result.hungary) {
+    if (result.latvia || result.lithuania || result.hungary || result.romania) {
       fail("all imported a scoped lineage");
     }
     const lithuania = importAtlasLineages(
@@ -588,6 +592,67 @@ function main() {
     }
     if (lithuania.lithuania?.counts.approved_classifications !== 0) {
       fail(`Lithuania approved ${String(lithuania.lithuania?.counts.approved_classifications)}`);
+    }
+    if (lithuania.romania) {
+      fail("lithuania scope imported Romania");
+    }
+    const romania = importAtlasLineages(
+      { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
+      "romania",
+    );
+    if (romania.latvia || romania.lithuania) {
+      fail("romania scope imported a Baltic lineage");
+    }
+    if (romania.hungary) {
+      fail("romania scope imported Hungary");
+    }
+    if (romania.romania?.counts.offices !== 6460) {
+      fail(`Romania offices ${String(romania.romania?.counts.offices)}`);
+    }
+    if (romania.romania?.counts.current_offices !== 6460) {
+      fail(`Romania current ${String(romania.romania?.counts.current_offices)}`);
+    }
+    if (romania.romania?.counts.historical_offices !== 0) {
+      fail(`Romania historical ${String(romania.romania?.counts.historical_offices)}`);
+    }
+    if (romania.romania?.counts.municipal_offices !== 6372) {
+      fail(`Romania municipal ${String(romania.romania?.counts.municipal_offices)}`);
+    }
+    if (romania.romania?.counts.regional_offices !== 84) {
+      fail(`Romania regional ${String(romania.romania?.counts.regional_offices)}`);
+    }
+    if (romania.romania?.counts.national_offices !== 3) {
+      fail(`Romania national ${String(romania.romania?.counts.national_offices)}`);
+    }
+    if (romania.romania?.counts.other_offices !== 1) {
+      fail(`Romania other ${String(romania.romania?.counts.other_offices)}`);
+    }
+    if (romania.romania?.counts.total_events !== 19343) {
+      fail(`Romania events ${String(romania.romania?.counts.total_events)}`);
+    }
+    if (romania.romania?.counts.result_rows !== 23) {
+      fail(`Romania results ${String(romania.romania?.counts.result_rows)}`);
+    }
+    if (romania.romania?.counts.proceedings !== 0) {
+      fail(`Romania proceedings ${String(romania.romania?.counts.proceedings)}`);
+    }
+    if (romania.romania?.counts.prospective_events !== 0) {
+      fail(`Romania prospective ${String(romania.romania?.counts.prospective_events)}`);
+    }
+    if (romania.romania?.counts.unresolved_evidence !== 7) {
+      fail(`Romania unresolved ${String(romania.romania?.counts.unresolved_evidence)}`);
+    }
+    if (romania.romania?.counts.needs_review_classifications !== 6460) {
+      fail(`Romania needs_review ${String(romania.romania?.counts.needs_review_classifications)}`);
+    }
+    if (romania.romania?.counts.approved_classifications !== 0) {
+      fail(`Romania approved ${String(romania.romania?.counts.approved_classifications)}`);
+    }
+    if (romania.romania?.counts.direct_executive_offices !== 3229) {
+      fail(`Romania direct executives ${String(romania.romania?.counts.direct_executive_offices)}`);
+    }
+    if (romania.romania?.counts.council_assembly_offices !== 3230) {
+      fail(`Romania councils ${String(romania.romania?.counts.council_assembly_offices)}`);
     }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
@@ -1071,6 +1136,7 @@ function main() {
         DENMARK_LINEAGE,
         ESTONIA_LINEAGE,
         LITHUANIA_LINEAGE,
+        ROMANIA_LINEAGE,
         FINLAND_LINEAGE,
         IRELAND_LINEAGE,
         NETHERLANDS_LINEAGE,
@@ -1092,7 +1158,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 croatia=1245 portugal=18834 spain=8208 estonia=281 lithuania=123 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 croatia=1245 portugal=18834 spain=8208 estonia=281 lithuania=123 romania=6460 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });
