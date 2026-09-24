@@ -2,6 +2,8 @@
 
 Reference date: **23 September 2026**. Research/documentation only. **applied_changes=0**. All Justin approvals remain unchecked.
 
+The follow-up importer is `ATLAS_IMPORT_SCOPE=italy` — see [Italy_Import.md](Italy_Import.md). It publishes 15,917 current + 696 historical + 8 statutory pending FVG offices, **0 election events**, and **0 result rows**. It does not emit documented-omitted totals for the omitted event and result files. Holds IT-G01–IT-G19 stay open. `ATLAS_IMPORT_SCOPE=all` does not import Italy. VPS deploy is out of scope.
+
 The current municipal, regional, autonomous-provincial, national and EP core is enumerated from official territorial and electoral evidence. This pack does **not** claim complete nationwide historical or submunicipal coverage. The named gaps are part of the handoff, not silent zeroes. No office is omitted because its next ordinary cycle lies beyond the approximate 18-month alert window.
 
 | Measure | Count |
