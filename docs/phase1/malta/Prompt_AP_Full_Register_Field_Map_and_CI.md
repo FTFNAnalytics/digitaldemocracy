@@ -1,6 +1,6 @@
 # Prompt AP — field map and CI checklist
 
-Mapping work is documented for the supplied research projection; the gates in `Malta_Research_Gaps.md` remain open. Justin accepted the pack with those holds on 2026-09-22. No importer was run.
+Mapping work is documented for the supplied research projection; the gates in `Malta_Research_Gaps.md` remain open. Justin accepted the pack with those holds on 2026-09-22. The importer is `ATLAS_IMPORT_SCOPE=malta` only — see [Malta_Import.md](Malta_Import.md). `all` does not publish Malta.
 
 | Item | Status | Pointer |
 |---|---|---|
@@ -14,7 +14,7 @@ Mapping work is documented for the supplied research projection; the gates in `M
 | Source inventory and full-pack hash manifest | Done | source-inventory.json / SHA256SUMS |
 | Offline validator | Done | validate.py / validation.json (pre-acceptance PASS) |
 | Justin accept-with-holds receipt | Done | JUSTIN_ACCEPTANCE.md |
-| Importer, SQLite, VPS, UI | Not run | No `lib/atlas/malta/` |
+| Importer / publication CI | Landed | `ATLAS_IMPORT_SCOPE=malta` only; not part of `all`. 0 result rows. See [Malta_Import.md](Malta_Import.md) |
 
 ## Future importer/publication gates
 
@@ -31,4 +31,4 @@ Mapping work is documented for the supplied research projection; the gates in `M
 
 - [x] Justin accepts this handoff with named holds (2026-09-22).
 - [x] Justin approves draft tiers as accepted-with-holds (no per-office `review_status` flip).
-- [ ] Justin authorizes implementation.
+- [x] Justin authorizes implementation (`ATLAS_IMPORT_SCOPE=malta`; not part of `all`).
