@@ -12,6 +12,7 @@
  * Luxembourg is not part of `all`; use `ATLAS_IMPORT_SCOPE=luxembourg`.
  * Malta is not part of `all`; use `ATLAS_IMPORT_SCOPE=malta`.
  * Cyprus is not part of `all`; use `ATLAS_IMPORT_SCOPE=cyprus`.
+ * France is not part of `all`; use `ATLAS_IMPORT_SCOPE=france`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -674,6 +675,42 @@ function main() {
       console.log(`cyprus_year_only_events=${result.cyprus.counts.year_only_events}`);
       console.log(`cyprus_offices_without_events=${result.cyprus.counts.offices_without_events}`);
       console.log(`cyprus_geographies=${result.cyprus.counts.geographies}`);
+    }
+    if (result.france) {
+      console.log("lineage=country-package-france");
+      console.log(`france_attempt_id=${result.france.attemptId}`);
+      console.log(`france_release_id=${result.france.releaseId}`);
+      console.log(`france_fingerprint_sha256=${result.france.fingerprint}`);
+      console.log(`france_reused_release=${result.france.reusedRelease ? "yes" : "no"}`);
+      console.log(`france_offices=${result.france.counts.offices}`);
+      console.log(`france_current=${result.france.counts.current_offices}`);
+      console.log(`france_historical=${result.france.counts.historical_offices}`);
+      console.log(`france_municipal=${result.france.counts.municipal_offices}`);
+      console.log(`france_regional=${result.france.counts.regional_offices}`);
+      console.log(`france_national=${result.france.counts.national_offices}`);
+      console.log(`france_other=${result.france.counts.other_offices}`);
+      console.log(`france_selected_histories=${result.france.counts.selected_histories}`);
+      console.log(`france_prospective_events=${result.france.counts.prospective_events}`);
+      console.log(`france_result_rows=${result.france.counts.result_rows}`);
+      console.log(`france_documented_result_rows_omitted=${result.france.counts.documented_result_rows_omitted}`);
+      console.log(`france_documented_event_rows_omitted=${result.france.counts.documented_event_rows_omitted}`);
+      console.log(`france_documented_reporting_units_omitted=${result.france.counts.documented_reporting_units_omitted}`);
+      console.log(`france_sources=${result.france.counts.sources}`);
+      console.log(`france_unresolved=${result.france.counts.unresolved_evidence}`);
+      console.log(`france_approved=${result.france.counts.approved_classifications}`);
+      console.log(`france_needs_review=${result.france.counts.needs_review_classifications}`);
+      console.log(`france_current_municipal_councils=${result.france.counts.current_municipal_councils}`);
+      console.log(`france_current_departmental_councils=${result.france.counts.current_departmental_councils}`);
+      console.log(`france_current_regional_councils=${result.france.counts.current_regional_councils}`);
+      console.log(`france_current_single_territorial_assemblies=${result.france.counts.current_single_territorial_assemblies}`);
+      console.log(`france_current_metropolitan_councils=${result.france.counts.current_metropolitan_councils}`);
+      console.log(`france_current_sector_councils=${result.france.counts.current_sector_councils}`);
+      console.log(`france_direct_executive_offices=${result.france.counts.direct_executive_offices}`);
+      console.log(`france_historical_direct_executives=${result.france.counts.historical_direct_executives}`);
+      console.log(`france_explicit_predecessor_edges=${result.france.counts.explicit_predecessor_edges}`);
+      console.log(`france_research_dates=${result.france.counts.research_dates}`);
+      console.log(`france_calendar_called_days=${result.france.counts.calendar_called_days}`);
+      console.log(`france_geographies=${result.france.counts.geographies}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");

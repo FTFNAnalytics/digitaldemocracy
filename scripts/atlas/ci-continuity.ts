@@ -1,7 +1,7 @@
 #!/usr/bin/env npx tsx
 /**
  * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
- * Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, and Cyprus are not part of `all`. Lithuania is then imported with scope `lithuania`, then Romania with scope `romania`, then Greece with scope `greece`, then Luxembourg with scope `luxembourg`, then Malta with scope `malta`, then Cyprus with scope `cyprus`, into the same database.
+ * Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, and France are not part of `all`. Lithuania is then imported with scope `lithuania`, then Romania with scope `romania`, then Greece with scope `greece`, then Luxembourg with scope `luxembourg`, then Malta with scope `malta`, then Cyprus with scope `cyprus`, then France with scope `france`, into the same database.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -28,6 +28,7 @@ import { LINEAGE_ID as LITHUANIA_LINEAGE } from "../../lib/atlas/lithuania/ident
 import { LINEAGE_ID as GREECE_LINEAGE } from "../../lib/atlas/greece/identity";
 import { LINEAGE_ID as LUXEMBOURG_LINEAGE } from "../../lib/atlas/luxembourg/identity";
 import { LINEAGE_ID as CYPRUS_LINEAGE } from "../../lib/atlas/cyprus/identity";
+import { LINEAGE_ID as FRANCE_LINEAGE } from "../../lib/atlas/france/identity";
 import { LINEAGE_ID as MALTA_LINEAGE } from "../../lib/atlas/malta/identity";
 import { LINEAGE_ID as ROMANIA_LINEAGE } from "../../lib/atlas/romania/identity";
 import { LINEAGE_ID as FINLAND_LINEAGE } from "../../lib/atlas/finland/identity";
@@ -79,6 +80,9 @@ function main() {
     }
     if (result.cyprus) {
       fail("ATLAS_IMPORT_SCOPE=all must not be the Cyprus path");
+    }
+    if (result.france) {
+      fail("ATLAS_IMPORT_SCOPE=all must not be the France path");
     }
     if (result.albania?.counts.current_offices !== 122) {
       fail(`Albania offices ${String(result.albania?.counts.current_offices)}`);
@@ -551,7 +555,7 @@ function main() {
     if (result.estonia?.counts.unresolved_evidence !== 9) {
       fail(`Estonia unresolved ${String(result.estonia?.counts.unresolved_evidence)}`);
     }
-    if (result.latvia || result.lithuania || result.hungary || result.romania || result.greece || result.luxembourg || result.malta || result.cyprus) {
+    if (result.latvia || result.lithuania || result.hungary || result.romania || result.greece || result.luxembourg || result.malta || result.cyprus || result.france) {
       fail("all imported a scoped lineage");
     }
     const lithuania = importAtlasLineages(
@@ -808,6 +812,43 @@ function main() {
     }
     if (cyprus.cyprus?.counts.approved_classifications !== 0) {
       fail(`Cyprus approved ${String(cyprus.cyprus?.counts.approved_classifications)}`);
+    }
+    const france = importAtlasLineages(
+      { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
+      "france",
+    );
+    if (france.latvia || france.lithuania || france.hungary || france.romania || france.greece || france.luxembourg || france.malta || france.cyprus) {
+      fail("france scope imported another scoped lineage");
+    }
+    if (france.france?.counts.offices !== 37850) fail(`France offices ${String(france.france?.counts.offices)}`);
+    if (france.france?.counts.current_offices !== 35112) fail(`France current ${String(france.france?.counts.current_offices)}`);
+    if (france.france?.counts.historical_offices !== 2738) fail(`France historical ${String(france.france?.counts.historical_offices)}`);
+    if (france.france?.counts.municipal_offices !== 37705) fail(`France municipal ${String(france.france?.counts.municipal_offices)}`);
+    if (france.france?.counts.regional_offices !== 141) fail(`France regional ${String(france.france?.counts.regional_offices)}`);
+    if (france.france?.counts.national_offices !== 4) fail(`France national ${String(france.france?.counts.national_offices)}`);
+    if (france.france?.counts.other_offices !== 0) fail(`France other ${String(france.france?.counts.other_offices)}`);
+    if (france.france?.counts.total_events !== 0) fail(`France events ${String(france.france?.counts.total_events)}`);
+    if (france.france?.counts.result_rows !== 0) fail(`France results ${String(france.france?.counts.result_rows)}`);
+    if (france.france?.counts.documented_result_rows_omitted !== 1193657) {
+      fail(`France omitted results ${String(france.france?.counts.documented_result_rows_omitted)}`);
+    }
+    if (france.france?.counts.documented_event_rows_omitted !== 119554) {
+      fail(`France omitted events ${String(france.france?.counts.documented_event_rows_omitted)}`);
+    }
+    if (france.france?.counts.explicit_predecessor_edges !== 0) {
+      fail(`France predecessor edges ${String(france.france?.counts.explicit_predecessor_edges)}`);
+    }
+    if (france.france?.counts.direct_executive_offices !== 1) {
+      fail(`France direct executives ${String(france.france?.counts.direct_executive_offices)}`);
+    }
+    if (france.france?.counts.prospective_events !== 0) {
+      fail(`France prospective ${String(france.france?.counts.prospective_events)}`);
+    }
+    if (france.france?.counts.needs_review_classifications !== 37850) {
+      fail(`France needs_review ${String(france.france?.counts.needs_review_classifications)}`);
+    }
+    if (france.france?.counts.approved_classifications !== 0) {
+      fail(`France approved ${String(france.france?.counts.approved_classifications)}`);
     }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
@@ -1296,6 +1337,7 @@ function main() {
         LUXEMBOURG_LINEAGE,
         MALTA_LINEAGE,
         CYPRUS_LINEAGE,
+        FRANCE_LINEAGE,
         FINLAND_LINEAGE,
         IRELAND_LINEAGE,
         NETHERLANDS_LINEAGE,
