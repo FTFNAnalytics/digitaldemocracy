@@ -4,6 +4,7 @@
  *
  * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
  * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia (`ATLAS_IMPORT_SCOPE=all`).
+ * Latvia is not part of `all`; use `ATLAS_IMPORT_SCOPE=latvia`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -439,6 +440,30 @@ function main() {
       console.log(`estonia_needs_review=${result.estonia.counts.needs_review_classifications}`);
       console.log(`estonia_current_councils=${result.estonia.counts.current_councils}`);
       console.log(`estonia_current_direct_executive_offices=${result.estonia.counts.current_direct_executive_offices}`);
+    }
+    if (result.latvia) {
+      console.log("lineage=country-package-latvia");
+      console.log(`latvia_attempt_id=${result.latvia.attemptId}`);
+      console.log(`latvia_release_id=${result.latvia.releaseId}`);
+      console.log(`latvia_fingerprint_sha256=${result.latvia.fingerprint}`);
+      console.log(`latvia_reused_release=${result.latvia.reusedRelease ? "yes" : "no"}`);
+      console.log(`latvia_offices=${result.latvia.counts.offices}`);
+      console.log(`latvia_current=${result.latvia.counts.current_offices}`);
+      console.log(`latvia_historical=${result.latvia.counts.historical_offices}`);
+      console.log(`latvia_municipal=${result.latvia.counts.municipal_offices}`);
+      console.log(`latvia_regional=${result.latvia.counts.regional_offices}`);
+      console.log(`latvia_national=${result.latvia.counts.national_offices}`);
+      console.log(`latvia_other=${result.latvia.counts.other_offices}`);
+      console.log(`latvia_selected_histories=${result.latvia.counts.selected_histories}`);
+      console.log(`latvia_prospective_events=${result.latvia.counts.prospective_events}`);
+      console.log(`latvia_result_rows=${result.latvia.counts.result_rows}`);
+      console.log(`latvia_proceedings=${result.latvia.counts.proceedings}`);
+      console.log(`latvia_sources=${result.latvia.counts.sources}`);
+      console.log(`latvia_unresolved=${result.latvia.counts.unresolved_evidence}`);
+      console.log(`latvia_approved=${result.latvia.counts.approved_classifications}`);
+      console.log(`latvia_needs_review=${result.latvia.counts.needs_review_classifications}`);
+      console.log(`latvia_current_councils=${result.latvia.counts.current_councils}`);
+      console.log(`latvia_current_direct_executive_offices=${result.latvia.counts.current_direct_executive_offices}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
