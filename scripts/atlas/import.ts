@@ -14,6 +14,7 @@
  * Cyprus is not part of `all`; use `ATLAS_IMPORT_SCOPE=cyprus`.
  * France is not part of `all`; use `ATLAS_IMPORT_SCOPE=france`.
  * Germany is not part of `all`; use `ATLAS_IMPORT_SCOPE=germany`.
+ * The United Kingdom is not part of `all`; use `ATLAS_IMPORT_SCOPE=united_kingdom`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -755,6 +756,46 @@ function main() {
       console.log(`germany_explicit_predecessor_edges=${result.germany.counts.explicit_predecessor_edges}`);
       console.log(`germany_research_dates=${result.germany.counts.research_dates}`);
       console.log(`germany_geographies=${result.germany.counts.geographies}`);
+    }
+    if (result.unitedKingdom) {
+      console.log("lineage=country-package-united-kingdom");
+      console.log(`united_kingdom_attempt_id=${result.unitedKingdom.attemptId}`);
+      console.log(`united_kingdom_release_id=${result.unitedKingdom.releaseId}`);
+      console.log(`united_kingdom_fingerprint_sha256=${result.unitedKingdom.fingerprint}`);
+      console.log(`united_kingdom_reused_release=${result.unitedKingdom.reusedRelease ? "yes" : "no"}`);
+      console.log(`united_kingdom_offices=${result.unitedKingdom.counts.offices}`);
+      console.log(`united_kingdom_current=${result.unitedKingdom.counts.current_offices}`);
+      console.log(`united_kingdom_current_shadow=${result.unitedKingdom.counts.current_shadow_offices}`);
+      console.log(`united_kingdom_historical=${result.unitedKingdom.counts.historical_offices}`);
+      console.log(`united_kingdom_draft_tier_1=${result.unitedKingdom.counts.draft_tier_1}`);
+      console.log(`united_kingdom_draft_tier_2=${result.unitedKingdom.counts.draft_tier_2}`);
+      console.log(`united_kingdom_draft_tier_3=${result.unitedKingdom.counts.draft_tier_3}`);
+      console.log(`united_kingdom_draft_tier_4=${result.unitedKingdom.counts.draft_tier_4}`);
+      console.log(`united_kingdom_schema_national=${result.unitedKingdom.counts.schema_national}`);
+      console.log(`united_kingdom_schema_regional=${result.unitedKingdom.counts.schema_regional}`);
+      console.log(`united_kingdom_schema_municipal=${result.unitedKingdom.counts.schema_municipal}`);
+      console.log(`united_kingdom_schema_other=${result.unitedKingdom.counts.schema_other}`);
+      console.log(`united_kingdom_selected_histories=${result.unitedKingdom.counts.selected_histories}`);
+      console.log(`united_kingdom_prospective_events=${result.unitedKingdom.counts.prospective_events}`);
+      console.log(`united_kingdom_result_rows=${result.unitedKingdom.counts.result_rows}`);
+      console.log(`united_kingdom_event_rows=${result.unitedKingdom.counts.total_events}`);
+      console.log(`united_kingdom_sources=${result.unitedKingdom.counts.sources}`);
+      console.log(`united_kingdom_unresolved=${result.unitedKingdom.counts.unresolved_evidence}`);
+      console.log(`united_kingdom_approved=${result.unitedKingdom.counts.approved_classifications}`);
+      console.log(`united_kingdom_needs_review=${result.unitedKingdom.counts.needs_review_classifications}`);
+      console.log(`united_kingdom_principal_councils=${result.unitedKingdom.counts.principal_councils}`);
+      console.log(`united_kingdom_england_principal=${result.unitedKingdom.counts.england_principal}`);
+      console.log(`united_kingdom_northern_ireland_principal=${result.unitedKingdom.counts.northern_ireland_principal}`);
+      console.log(`united_kingdom_scotland_principal=${result.unitedKingdom.counts.scotland_principal}`);
+      console.log(`united_kingdom_wales_principal=${result.unitedKingdom.counts.wales_principal}`);
+      console.log(`united_kingdom_direct_executive_offices=${result.unitedKingdom.counts.direct_executive_offices}`);
+      console.log(`united_kingdom_direct_mayors=${result.unitedKingdom.counts.direct_mayors}`);
+      console.log(`united_kingdom_standalone_pcc=${result.unitedKingdom.counts.standalone_pcc}`);
+      console.log(`united_kingdom_parish_town_councils=${result.unitedKingdom.counts.parish_town_councils}`);
+      console.log(`united_kingdom_historical_direct_executives=${result.unitedKingdom.counts.historical_direct_executives}`);
+      console.log(`united_kingdom_explicit_predecessor_edges=${result.unitedKingdom.counts.explicit_predecessor_edges}`);
+      console.log(`united_kingdom_research_dates=${result.unitedKingdom.counts.research_dates}`);
+      console.log(`united_kingdom_geographies=${result.unitedKingdom.counts.geographies}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
