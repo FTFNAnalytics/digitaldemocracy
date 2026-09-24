@@ -1,6 +1,6 @@
 # Continuity import — approved packs
 
-Justin authorized full proceed on 2026-09-16. `npm run import:atlas` loads **Albania**, **Andorra**, **Alderney**, **Armenia**, **Austria**, **Belgium**, **Bosnia and Herzegovina**, **Bulgaria**, **Netherlands**, **Switzerland**, **Denmark**, **Sweden**, **Finland**, **Norway**, **Ireland**, **Poland**, **Czechia**, **Croatia**, **Portugal**, **Spain**, and **approved** LatAm/NZ packs into the Atlas SQLite master. It does **not** import the remaining residual-heavy draft packs, deploy to the VPS, or declare cutover.
+Justin authorized full proceed on 2026-09-16. `npm run import:atlas` loads **Albania**, **Andorra**, **Alderney**, **Armenia**, **Austria**, **Belgium**, **Bosnia and Herzegovina**, **Bulgaria**, **Netherlands**, **Switzerland**, **Denmark**, **Sweden**, **Finland**, **Norway**, **Ireland**, **Poland**, **Czechia**, **Croatia**, **Portugal**, **Spain**, **Estonia**, and **approved** LatAm/NZ packs into the Atlas SQLite master. **Latvia** (`ATLAS_IMPORT_SCOPE=latvia`) and **Lithuania** (`ATLAS_IMPORT_SCOPE=lithuania`) are scoped importers; the default `all` scope does not import them. It does **not** import the remaining residual-heavy draft packs, deploy to the VPS, or declare cutover.
 
 ## How to run
 
@@ -17,7 +17,7 @@ Scopes:
 
 | `ATLAS_IMPORT_SCOPE` | What loads |
 | --- | --- |
-| `all` (default) | Albania, Andorra, Alderney, Armenia, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Netherlands, Switzerland, then approved LatAm, then New Zealand, then Denmark, then Sweden, then Finland, then Norway, then Ireland, then Poland, then Czechia, then Croatia, then Portugal, then Spain |
+| `all` (default) | Albania, Andorra, Alderney, Armenia, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Netherlands, Switzerland, then approved LatAm, then New Zealand, then Denmark, then Sweden, then Finland, then Norway, then Ireland, then Poland, then Czechia, then Croatia, then Portugal, then Spain, then Estonia. Does not load Latvia or Lithuania |
 | `albania` | Frozen Albania package only |
 | `andorra` | Frozen Andorra package only (7 municipal / 0 regional) |
 | `alderney` | Frozen Alderney package only (2 other / 0 regional; conditional 2026 dates) |
@@ -35,6 +35,9 @@ Scopes:
 | `croatia` | Prompt W research pack only (**1,234 current + 11 historical**; 1,187 municipal / 55 regional / 2 national / 1 other) |
 | `portugal` | Prompt AD research pack only (**10,666 current + 8,168 historical**; 927 municipal / 2 regional / 2 national / 17,903 other; parish bodies stay other) |
 | `spain` | Prompt AE slim pack only (**8,204 current + 4 historical**; 8,133 municipal / 68 regional / 2 national / 5 other; omitted results and sources are not invented) |
+| `estonia` | Prompt AF slim pack only (**81 current + 200 historical**; 278 municipal / 0 regional / 2 national / 1 other; omitted results stay 0 rows) |
+| `latvia` | Prompt AG pack only (**45 current + 121 historical**; 163 municipal / 0 regional / 2 national / 1 other; 1,383 result rows). Not part of `all` |
+| `lithuania` | Prompt AH slim pack only (**123 current + 0 historical**; 120 municipal / 0 regional / 2 national / 1 other; draft tiers stay `needs_review`; 130 result rows). Not part of `all` |
 | `netherlands` | Prompt T research pack only (432 current + 69 historical; 414 municipal / 12 regional / 3 national / 72 other) |
 | `norway` | Prompt AA research pack only (**389 current + 537 historical**; 876 municipal / 32 regional / 1 national / 17 other; named holds retained) |
 | `switzerland` | Prompt U research pack only (**2,805 current + 11 historical**; 2,402 municipal / 52 regional / 2 national / 360 other; 308 commune executives held) |
@@ -71,6 +74,9 @@ Approved continuity countries (14 packs):
 - Croatia is Prompt W (`country-package-croatia`; **1,234 current + 11 historical**). 1,187 municipal / 55 regional / 2 national / 1 other. Named holds stay open (current roster validity, Zagreb dual, deputy eligibility, territorial reforms, special/supplementary returns, missing Biskupija 2017, Tar-Vabriga placeholder, seats/legal finality, Sabor minority basis, party identity, EP detail, dates/next cycles, excluded auxiliary). Zagreb stays one dual city/county pair. No invented successors, seat allocations, or zero-filled missing returns. Run with `ATLAS_IMPORT_SCOPE=croatia`. Do **not** use `SCOPE=all` on the VPS unless you intend a full re-import. See [Croatia_Import.md](../phase1/croatia/Croatia_Import.md).
 - Portugal is Prompt AD (`country-package-portugal`; **10,666 current + 8,168 historical**). 927 municipal / 2 regional / 2 national / 17,903 other. Historical rows are unresolved aliases, not proved abolitions. Parish assemblies, juntas, and parish presidents stay other while PARISH-TIER is open. All 17 named holds stay open. No second mayoral ballot, plenary assembly, or popular regional-government president. Run with `ATLAS_IMPORT_SCOPE=portugal`. Do **not** use `SCOPE=all` on the VPS unless you intend a full re-import. See [Portugal README](../phase1/portugal/README.md).
 - Spain is Prompt AE (`country-package-spain`; **8,204 current + 4 historical**). 8,133 municipal / 68 regional / 2 national / 5 other. The 68 regional rows are 17 autonomous-community parliaments + 38 ordinary provincial councils + 3 Basque foral assemblies + 10 additional island councils. Ceuta, Melilla, Formentera, and Aran stay other. 78 concejo-abierto direct executives stay on the same municipal mandate. Diputaciones have no inferred constitution events. Slim land omits results and sources; those rows are not invented. Holds ES-G01–ES-G12 stay open. Run with `ATLAS_IMPORT_SCOPE=spain`. Do **not** use `SCOPE=all` on the VPS unless you intend a full re-import. See [Spain_Import.md](../phase1/spain/Spain_Import.md).
+- Estonia is Prompt AF (`country-package-estonia`; **81 current + 200 historical**). 278 municipal / 0 regional / 2 national / 1 other. Holds EE-G01–EE-G09 stay open. Slim land omits results; imported result rows stay 0. Run with `ATLAS_IMPORT_SCOPE=estonia`. `all` also publishes Estonia. See [Estonia README](../phase1/estonia/README.md).
+- Latvia is Prompt AG (`country-package-latvia`; **45 current + 121 historical**). 163 municipal / 0 regional / 2 national / 1 other. Holds LV-G01–LV-G09 stay open. Historical 121 rows are identity records, not abolished councils. Run with `ATLAS_IMPORT_SCOPE=latvia` only. `all` does not import Latvia. See [Latvia_Import.md](../phase1/latvia/Latvia_Import.md).
+- Lithuania is Prompt AH (`country-package-lithuania`; **123 current + 0 historical**). 120 municipal / 0 regional / 2 national / 1 other. Draft tiers stay `needs_review`. Holds LT-HISTORY, LT-TERRITORIAL-ID, LT-MAYOR-LAW, LT-PRESIDENT-DENOMINATOR, LT-SEIMAS-GRAIN, LT-EP-DETAIL, LT-PARTY-PRECISION, LT-NEXT-AND-LEGAL, and LT-EXCLUSIONS stay open. Run with `ATLAS_IMPORT_SCOPE=lithuania` only. `all` does not import Lithuania. See [Lithuania_Import.md](../phase1/lithuania/Lithuania_Import.md).
 
 Mexico result rows that violate `percent_0_100` are **withheld** using the accepted override `data/overrides/atlas/latin-america-fe5e91689def/mexico-share-domain.json` (share NULL / share_status unknown / evidence_status disputed). Original values stay in `raw_json`. Denominators are not invented.
 
@@ -110,6 +116,9 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 - Croatia 1,245 offices (1,234 current + 11 historical) / 1,187 municipal / 55 regional / 2 national / 1 other / 3,834 events / 15,907 results / 2,418 proceedings / 13 named holds
 - Portugal 18,834 offices (10,666 current + 8,168 historical) / 927 municipal / 2 regional / 2 national / 17,903 other / 19,820 events / 66,283 results / 2 proceedings / 17 named holds / 0 list-head events
 - Spain 8,208 offices (8,204 current + 4 historical) / 8,133 municipal / 68 regional / 2 national / 5 other / 20,401 events / 0 result rows / 0 proceedings / 12 named holds / 0 diputación events
+- Estonia 281 offices (81 current + 200 historical) / 278 municipal / 0 regional / 2 national / 1 other / 0 result rows / 24 proceedings
+- Latvia is scoped (`ATLAS_IMPORT_SCOPE=latvia`) and is not part of the `all` proof
+- Lithuania is scoped (`ATLAS_IMPORT_SCOPE=lithuania`) and is proved after the `all` import: 123 offices / 120 municipal / 0 regional / 2 national / 1 other / 130 result rows / 25 proceedings
 - 10,227 approved LatAm offices (Batch A+B + El Salvador + Argentina)
 - New Zealand 4 offices / 7 events / 36 historical results
 - draft country offices absent
@@ -117,7 +126,7 @@ Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain
 
 The full import is a dedicated CI script rather than a Vitest case so the ~3 minute LatAm projection does not trip Vitest's worker RPC timeout.
 
-The existing Albania CLI test uses `ATLAS_IMPORT_SCOPE=albania` so it stays a fast Albania-only proof. Andorra uses `ATLAS_IMPORT_SCOPE=andorra`. Alderney uses `ATLAS_IMPORT_SCOPE=alderney`. Armenia uses `ATLAS_IMPORT_SCOPE=armenia`. Austria uses `ATLAS_IMPORT_SCOPE=austria`. Belgium uses `ATLAS_IMPORT_SCOPE=belgium`. Bosnia uses `ATLAS_IMPORT_SCOPE=bosnia`. Bulgaria uses `ATLAS_IMPORT_SCOPE=bulgaria`. Netherlands uses `ATLAS_IMPORT_SCOPE=netherlands`. Switzerland uses `ATLAS_IMPORT_SCOPE=switzerland`. Denmark uses `ATLAS_IMPORT_SCOPE=denmark` in `tests/atlas/cli-denmark.test.ts`. Sweden uses `ATLAS_IMPORT_SCOPE=sweden`. Finland uses `ATLAS_IMPORT_SCOPE=finland`. Norway uses `ATLAS_IMPORT_SCOPE=norway`. Ireland uses `ATLAS_IMPORT_SCOPE=ireland`. Poland uses `ATLAS_IMPORT_SCOPE=poland` in `tests/atlas/cli-poland.test.ts`. Czechia uses `ATLAS_IMPORT_SCOPE=czechia` in `tests/atlas/cli-czechia.test.ts`. Croatia uses `ATLAS_IMPORT_SCOPE=croatia` in `tests/atlas/cli-croatia.test.ts`. Portugal uses `ATLAS_IMPORT_SCOPE=portugal` in `tests/atlas/cli-portugal.test.ts`. Spain uses `ATLAS_IMPORT_SCOPE=spain` in `tests/atlas/cli-spain.test.ts`:
+The existing Albania CLI test uses `ATLAS_IMPORT_SCOPE=albania` so it stays a fast Albania-only proof. Andorra uses `ATLAS_IMPORT_SCOPE=andorra`. Alderney uses `ATLAS_IMPORT_SCOPE=alderney`. Armenia uses `ATLAS_IMPORT_SCOPE=armenia`. Austria uses `ATLAS_IMPORT_SCOPE=austria`. Belgium uses `ATLAS_IMPORT_SCOPE=belgium`. Bosnia uses `ATLAS_IMPORT_SCOPE=bosnia`. Bulgaria uses `ATLAS_IMPORT_SCOPE=bulgaria`. Netherlands uses `ATLAS_IMPORT_SCOPE=netherlands`. Switzerland uses `ATLAS_IMPORT_SCOPE=switzerland`. Denmark uses `ATLAS_IMPORT_SCOPE=denmark` in `tests/atlas/cli-denmark.test.ts`. Sweden uses `ATLAS_IMPORT_SCOPE=sweden`. Finland uses `ATLAS_IMPORT_SCOPE=finland`. Norway uses `ATLAS_IMPORT_SCOPE=norway`. Ireland uses `ATLAS_IMPORT_SCOPE=ireland`. Poland uses `ATLAS_IMPORT_SCOPE=poland` in `tests/atlas/cli-poland.test.ts`. Czechia uses `ATLAS_IMPORT_SCOPE=czechia` in `tests/atlas/cli-czechia.test.ts`. Croatia uses `ATLAS_IMPORT_SCOPE=croatia` in `tests/atlas/cli-croatia.test.ts`. Portugal uses `ATLAS_IMPORT_SCOPE=portugal` in `tests/atlas/cli-portugal.test.ts`. Spain uses `ATLAS_IMPORT_SCOPE=spain` in `tests/atlas/cli-spain.test.ts`. Estonia uses `ATLAS_IMPORT_SCOPE=estonia` in `tests/atlas/cli-estonia.test.ts`. Latvia uses `ATLAS_IMPORT_SCOPE=latvia` in `tests/atlas/cli-latvia.test.ts`. Lithuania uses `ATLAS_IMPORT_SCOPE=lithuania` in `tests/atlas/cli-lithuania.test.ts`:
 
 ```bash
 export ATLAS_SQLITE_PATH=/tmp/atlas.sqlite
@@ -139,9 +148,12 @@ ATLAS_IMPORT_SCOPE=czechia npm run import:atlas
 ATLAS_IMPORT_SCOPE=croatia npm run import:atlas
 ATLAS_IMPORT_SCOPE=portugal npm run import:atlas
 ATLAS_IMPORT_SCOPE=spain npm run import:atlas
+ATLAS_IMPORT_SCOPE=estonia npm run import:atlas
+ATLAS_IMPORT_SCOPE=latvia npm run import:atlas
+ATLAS_IMPORT_SCOPE=lithuania npm run import:atlas
 ```
 
-Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of several minutes (Austria 16k results + Belgium S2 + LatAm projection + ~146k result rows + Bulgaria unpack + Switzerland). Denmark (25k results), Sweden (41k results), Finland (37k results), Norway (59k results), Ireland (7k results), Poland (16k events, 0 invented result rows), Czechia (46k events, 0 invented result rows), Croatia (16k results), Portugal (66k results), and Spain (20k events, 0 invented result or source rows) run last on `all` so LatAm does not copy those lineages into staging. Use `albania`, `andorra`, `alderney`, `armenia`, `austria`, `belgium`, `bosnia`, `bulgaria`, `croatia`, `czechia`, `denmark`, `finland`, `ireland`, `netherlands`, `norway`, `poland`, `portugal`, `spain`, `sweden`, `switzerland`, or `nz` when you only need those lineages.
+Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of several minutes (Austria 16k results + Belgium S2 + LatAm projection + ~146k result rows + Bulgaria unpack + Switzerland). Denmark (25k results), Sweden (41k results), Finland (37k results), Norway (59k results), Ireland (7k results), Poland (16k events, 0 invented result rows), Czechia (46k events, 0 invented result rows), Croatia (16k results), Portugal (66k results), and Spain (20k events, 0 invented result or source rows) run last on `all`, then Estonia, so LatAm does not copy those lineages into staging. Latvia and Lithuania are not part of `all`. Use `albania`, `andorra`, `alderney`, `armenia`, `austria`, `belgium`, `bosnia`, `bulgaria`, `croatia`, `czechia`, `denmark`, `estonia`, `finland`, `ireland`, `latvia`, `lithuania`, `netherlands`, `norway`, `poland`, `portugal`, `spain`, `sweden`, `switzerland`, or `nz` when you only need those lineages.
 
 ## VPS — Bosnia scoped import only
 
