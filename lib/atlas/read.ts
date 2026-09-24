@@ -8,6 +8,7 @@ import { REGIONAL_CALENDAR_LABEL as LATVIA_REGIONAL_CALENDAR_LABEL } from "./lat
 import { REGIONAL_CALENDAR_LABEL as LITHUANIA_REGIONAL_CALENDAR_LABEL } from "./lithuania/identity";
 import { REGIONAL_CALENDAR_LABEL as GREECE_REGIONAL_CALENDAR_LABEL } from "./greece/identity";
 import { REGIONAL_CALENDAR_LABEL as LUXEMBOURG_REGIONAL_CALENDAR_LABEL } from "./luxembourg/identity";
+import { REGIONAL_CALENDAR_LABEL as MALTA_REGIONAL_CALENDAR_LABEL } from "./malta/identity";
 import { REGIONAL_CALENDAR_LABEL as ROMANIA_REGIONAL_CALENDAR_LABEL } from "./romania/identity";
 import { REGIONAL_CALENDAR_LABEL as SPAIN_REGIONAL_CALENDAR_LABEL } from "./spain/identity";
 import { openAtlasDatabase, tableExists } from "./sqlite";
@@ -668,6 +669,14 @@ export function listAtlasRegionalCalendar(
       offices,
       count: offices.length,
       label: LUXEMBOURG_REGIONAL_CALENDAR_LABEL,
+      denominatorKnown: false,
+    };
+  }
+  if (countryId === "malta") {
+    return {
+      offices,
+      count: offices.length,
+      label: MALTA_REGIONAL_CALENDAR_LABEL,
       denominatorKnown: false,
     };
   }

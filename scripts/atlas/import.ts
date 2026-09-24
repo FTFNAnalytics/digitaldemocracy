@@ -10,6 +10,7 @@
  * Romania is not part of `all`; use `ATLAS_IMPORT_SCOPE=romania`.
  * Greece is not part of `all`; use `ATLAS_IMPORT_SCOPE=greece`.
  * Luxembourg is not part of `all`; use `ATLAS_IMPORT_SCOPE=luxembourg`.
+ * Malta is not part of `all`; use `ATLAS_IMPORT_SCOPE=malta`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -601,6 +602,40 @@ function main() {
       console.log(`luxembourg_direct_executive_offices=${result.luxembourg.counts.direct_executive_offices}`);
       console.log(`luxembourg_explicit_predecessor_edges=${result.luxembourg.counts.explicit_predecessor_edges}`);
       console.log(`luxembourg_geographies=${result.luxembourg.counts.geographies}`);
+    }
+    if (result.malta) {
+      console.log("lineage=country-package-malta");
+      console.log(`malta_attempt_id=${result.malta.attemptId}`);
+      console.log(`malta_release_id=${result.malta.releaseId}`);
+      console.log(`malta_fingerprint_sha256=${result.malta.fingerprint}`);
+      console.log(`malta_reused_release=${result.malta.reusedRelease ? "yes" : "no"}`);
+      console.log(`malta_offices=${result.malta.counts.offices}`);
+      console.log(`malta_current=${result.malta.counts.current_offices}`);
+      console.log(`malta_historical=${result.malta.counts.historical_offices}`);
+      console.log(`malta_municipal=${result.malta.counts.municipal_offices}`);
+      console.log(`malta_regional=${result.malta.counts.regional_offices}`);
+      console.log(`malta_national=${result.malta.counts.national_offices}`);
+      console.log(`malta_other=${result.malta.counts.other_offices}`);
+      console.log(`malta_selected_histories=${result.malta.counts.selected_histories}`);
+      console.log(`malta_prospective_events=${result.malta.counts.prospective_events}`);
+      console.log(`malta_result_rows=${result.malta.counts.result_rows}`);
+      console.log(`malta_documented_result_rows_omitted=${result.malta.counts.documented_result_rows_omitted}`);
+      console.log(`malta_documented_stv_count_observations_omitted=${result.malta.counts.documented_stv_count_observations_omitted}`);
+      console.log(`malta_documented_numeric_first_preference_rows_omitted=${result.malta.counts.documented_numeric_first_preference_rows_omitted}`);
+      console.log(`malta_sources=${result.malta.counts.sources}`);
+      console.log(`malta_unresolved=${result.malta.counts.unresolved_evidence}`);
+      console.log(`malta_approved=${result.malta.counts.approved_classifications}`);
+      console.log(`malta_needs_review=${result.malta.counts.needs_review_classifications}`);
+      console.log(`malta_current_local_councils=${result.malta.counts.current_local_councils}`);
+      console.log(`malta_malta_local_councils=${result.malta.counts.malta_local_councils}`);
+      console.log(`malta_gozo_local_councils=${result.malta.counts.gozo_local_councils}`);
+      console.log(`malta_current_mayors=${result.malta.counts.current_mayors}`);
+      console.log(`malta_current_deputy_mayors=${result.malta.counts.current_deputy_mayors}`);
+      console.log(`malta_current_indirect_regional_presidents=${result.malta.counts.current_indirect_regional_presidents}`);
+      console.log(`malta_direct_executive_offices=${result.malta.counts.direct_executive_offices}`);
+      console.log(`malta_explicit_predecessor_edges=${result.malta.counts.explicit_predecessor_edges}`);
+      console.log(`malta_regional_nominations=${result.malta.counts.regional_nominations}`);
+      console.log(`malta_geographies=${result.malta.counts.geographies}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
