@@ -1,7 +1,7 @@
 #!/usr/bin/env npx tsx
 /**
  * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
- * Latvia and Lithuania are not part of `all`. Lithuania is then imported with scope `lithuania` into the same database.
+ * Latvia, Lithuania, and Hungary are not part of `all`. Lithuania is then imported with scope `lithuania` into the same database.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -57,6 +57,9 @@ function main() {
       { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
       "all",
     );
+    if (result.hungary) {
+      fail("ATLAS_IMPORT_SCOPE=all must not be the Hungary path");
+    }
     if (result.albania?.counts.current_offices !== 122) {
       fail(`Albania offices ${String(result.albania?.counts.current_offices)}`);
     }
@@ -528,8 +531,8 @@ function main() {
     if (result.estonia?.counts.unresolved_evidence !== 9) {
       fail(`Estonia unresolved ${String(result.estonia?.counts.unresolved_evidence)}`);
     }
-    if (result.latvia || result.lithuania) {
-      fail("all imported a scoped Baltic lineage");
+    if (result.latvia || result.lithuania || result.hungary) {
+      fail("all imported a scoped lineage");
     }
     const lithuania = importAtlasLineages(
       { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
@@ -537,6 +540,9 @@ function main() {
     );
     if (lithuania.latvia) {
       fail("lithuania scope imported Latvia");
+    }
+    if (lithuania.hungary) {
+      fail("lithuania scope imported Hungary");
     }
     if (lithuania.lithuania?.counts.offices !== 123) {
       fail(`Lithuania offices ${String(lithuania.lithuania?.counts.offices)}`);

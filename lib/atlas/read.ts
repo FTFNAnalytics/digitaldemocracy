@@ -3,6 +3,7 @@ import type { DatabaseSync } from "node:sqlite";
 import type { AtlasExplorerFilters } from "./filters";
 import { emptyAtlasExplorerFilters } from "./filters";
 import { resolveAtlasSqlitePath } from "./paths";
+import { REGIONAL_CALENDAR_LABEL as HUNGARY_REGIONAL_CALENDAR_LABEL } from "./hungary/identity";
 import { REGIONAL_CALENDAR_LABEL as LATVIA_REGIONAL_CALENDAR_LABEL } from "./latvia/identity";
 import { REGIONAL_CALENDAR_LABEL as LITHUANIA_REGIONAL_CALENDAR_LABEL } from "./lithuania/identity";
 import { REGIONAL_CALENDAR_LABEL as SPAIN_REGIONAL_CALENDAR_LABEL } from "./spain/identity";
@@ -632,6 +633,14 @@ export function listAtlasRegionalCalendar(
       offices,
       count: offices.length,
       label: LITHUANIA_REGIONAL_CALENDAR_LABEL,
+      denominatorKnown: false,
+    };
+  }
+  if (countryId === "hungary") {
+    return {
+      offices,
+      count: offices.length,
+      label: HUNGARY_REGIONAL_CALENDAR_LABEL,
       denominatorKnown: false,
     };
   }

@@ -6,6 +6,7 @@
  * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia (`ATLAS_IMPORT_SCOPE=all`).
  * Latvia is not part of `all`; use `ATLAS_IMPORT_SCOPE=latvia`.
  * Lithuania is not part of `all`; use `ATLAS_IMPORT_SCOPE=lithuania`.
+ * Hungary is scoped-only (`ATLAS_IMPORT_SCOPE=hungary`) and is not part of `all`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -489,6 +490,31 @@ function main() {
       console.log(`lithuania_needs_review=${result.lithuania.counts.needs_review_classifications}`);
       console.log(`lithuania_current_councils=${result.lithuania.counts.current_councils}`);
       console.log(`lithuania_current_direct_executive_offices=${result.lithuania.counts.current_direct_executive_offices}`);
+    }
+    if (result.hungary) {
+      console.log("lineage=country-package-hungary");
+      console.log(`hungary_attempt_id=${result.hungary.attemptId}`);
+      console.log(`hungary_release_id=${result.hungary.releaseId}`);
+      console.log(`hungary_fingerprint_sha256=${result.hungary.fingerprint}`);
+      console.log(`hungary_reused_release=${result.hungary.reusedRelease ? "yes" : "no"}`);
+      console.log(`hungary_offices=${result.hungary.counts.offices}`);
+      console.log(`hungary_current=${result.hungary.counts.current_offices}`);
+      console.log(`hungary_historical=${result.hungary.counts.historical_offices}`);
+      console.log(`hungary_municipal=${result.hungary.counts.municipal_offices}`);
+      console.log(`hungary_regional=${result.hungary.counts.regional_offices}`);
+      console.log(`hungary_national=${result.hungary.counts.national_offices}`);
+      console.log(`hungary_other=${result.hungary.counts.other_offices}`);
+      console.log(`hungary_selected_histories=${result.hungary.counts.selected_histories}`);
+      console.log(`hungary_prospective_events=${result.hungary.counts.prospective_events}`);
+      console.log(`hungary_result_rows=${result.hungary.counts.result_rows}`);
+      console.log(`hungary_documented_result_rows_omitted=${result.hungary.counts.documented_result_rows_omitted}`);
+      console.log(`hungary_proceedings=${result.hungary.counts.proceedings}`);
+      console.log(`hungary_sources=${result.hungary.counts.sources}`);
+      console.log(`hungary_unresolved=${result.hungary.counts.unresolved_evidence}`);
+      console.log(`hungary_approved=${result.hungary.counts.approved_classifications}`);
+      console.log(`hungary_needs_review=${result.hungary.counts.needs_review_classifications}`);
+      console.log(`hungary_council_assembly_offices=${result.hungary.counts.council_assembly_offices}`);
+      console.log(`hungary_current_direct_executive_offices=${result.hungary.counts.current_direct_executive_offices}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
