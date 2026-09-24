@@ -9,6 +9,7 @@ import { REGIONAL_CALENDAR_LABEL as LITHUANIA_REGIONAL_CALENDAR_LABEL } from "./
 import { REGIONAL_CALENDAR_LABEL as GREECE_REGIONAL_CALENDAR_LABEL } from "./greece/identity";
 import { REGIONAL_CALENDAR_LABEL as LUXEMBOURG_REGIONAL_CALENDAR_LABEL } from "./luxembourg/identity";
 import { REGIONAL_CALENDAR_LABEL as CYPRUS_REGIONAL_CALENDAR_LABEL } from "./cyprus/identity";
+import { REGIONAL_CALENDAR_LABEL as FRANCE_REGIONAL_CALENDAR_LABEL } from "./france/identity";
 import { REGIONAL_CALENDAR_LABEL as MALTA_REGIONAL_CALENDAR_LABEL } from "./malta/identity";
 import { REGIONAL_CALENDAR_LABEL as ROMANIA_REGIONAL_CALENDAR_LABEL } from "./romania/identity";
 import { REGIONAL_CALENDAR_LABEL as SPAIN_REGIONAL_CALENDAR_LABEL } from "./spain/identity";
@@ -686,6 +687,14 @@ export function listAtlasRegionalCalendar(
       offices,
       count: offices.length,
       label: CYPRUS_REGIONAL_CALENDAR_LABEL,
+      denominatorKnown: false,
+    };
+  }
+  if (countryId === "france") {
+    return {
+      offices,
+      count: offices.length,
+      label: FRANCE_REGIONAL_CALENDAR_LABEL,
       denominatorKnown: false,
     };
   }

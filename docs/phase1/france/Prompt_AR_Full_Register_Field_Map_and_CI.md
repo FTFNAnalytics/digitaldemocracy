@@ -1,6 +1,6 @@
 # Prompt AR — field map and CI checklist
 
-Mapping work is complete for the supplied research projection; research gaps remain open. Justin accepted the register and draft tiers with holds G01–G21 left open. No importer execution is claimed.
+Mapping work is complete for the supplied research projection; holds G01–G21 remain open. Justin accepted the pack with those holds on 2026-09-22. The importer is `ATLAS_IMPORT_SCOPE=france` only — see [France_Import.md](France_Import.md). `all` does not publish France.
 
 | Item | Status | Pointer |
 |---|---|---|
@@ -15,19 +15,19 @@ Mapping work is complete for the supplied research projection; research gaps rem
 | Named holds left open | Done | Research_Gaps.md; JUSTIN_ACCEPTANCE.md |
 | 36 acceptance examples | Done | Acceptance_Examples.md |
 | Structural validator receipt | Done | validation-report.json PASS; SHA256SUMS |
-| Importer / SQLite / VPS / UI | Not run | No `lib/atlas/france/`; package.json import scripts unchanged |
+| Importer / publication CI | Landed | `ATLAS_IMPORT_SCOPE=france` only; not part of `all`. 0 result rows and 0 event rows. See [France_Import.md](France_Import.md). VPS deploy was not run |
 
 ## Future importer / publication gates
 
 | Gate | Execution status |
 |---|---|
-| `import:atlas` France / SQLite migration | Not run |
-| Unchanged reimport | Not run |
-| Tier file drives classification; `national` maps to `national_context` | Not run |
-| Missing ≠ zero | Not run |
-| No office filtering by the ~18-month alert window | Not run |
+| `import:atlas` France / SQLite migration | Landed (`ATLAS_IMPORT_SCOPE=france` only) |
+| Unchanged reimport | Landed (same fingerprint reuses the release) |
+| Tier file drives classification; `national` maps to `national_context` | Landed (`FR-EP` stays `national_context`) |
+| Missing ≠ zero | Landed (0 published result rows and 0 published events) |
+| No office filtering by the ~18-month alert window | Landed |
 | VPS / UI / `/electiondatabase` redirects | Not run |
 
 - [x] Justin accepts this handoff with named holds (2026-09-22).
 - [x] Justin accepts draft tiers with G01–G21 retained (2026-09-22).
-- [ ] Justin separately authorizes implementation.
+- [x] Justin separately authorizes implementation (`ATLAS_IMPORT_SCOPE=france`; not part of `all`).
