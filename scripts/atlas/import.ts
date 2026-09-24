@@ -13,6 +13,7 @@
  * Malta is not part of `all`; use `ATLAS_IMPORT_SCOPE=malta`.
  * Cyprus is not part of `all`; use `ATLAS_IMPORT_SCOPE=cyprus`.
  * France is not part of `all`; use `ATLAS_IMPORT_SCOPE=france`.
+ * Germany is not part of `all`; use `ATLAS_IMPORT_SCOPE=germany`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -711,6 +712,49 @@ function main() {
       console.log(`france_research_dates=${result.france.counts.research_dates}`);
       console.log(`france_calendar_called_days=${result.france.counts.calendar_called_days}`);
       console.log(`france_geographies=${result.france.counts.geographies}`);
+    }
+    if (result.germany) {
+      console.log("lineage=country-package-germany");
+      console.log(`germany_attempt_id=${result.germany.attemptId}`);
+      console.log(`germany_release_id=${result.germany.releaseId}`);
+      console.log(`germany_fingerprint_sha256=${result.germany.fingerprint}`);
+      console.log(`germany_reused_release=${result.germany.reusedRelease ? "yes" : "no"}`);
+      console.log(`germany_offices=${result.germany.counts.offices}`);
+      console.log(`germany_current=${result.germany.counts.current_offices}`);
+      console.log(`germany_historical=${result.germany.counts.historical_offices}`);
+      console.log(`germany_draft_tier_1=${result.germany.counts.draft_tier_1}`);
+      console.log(`germany_draft_tier_2=${result.germany.counts.draft_tier_2}`);
+      console.log(`germany_draft_tier_3=${result.germany.counts.draft_tier_3}`);
+      console.log(`germany_draft_tier_4=${result.germany.counts.draft_tier_4}`);
+      console.log(`germany_schema_national=${result.germany.counts.schema_national}`);
+      console.log(`germany_schema_regional=${result.germany.counts.schema_regional}`);
+      console.log(`germany_schema_municipal=${result.germany.counts.schema_municipal}`);
+      console.log(`germany_schema_other=${result.germany.counts.schema_other}`);
+      console.log(`germany_selected_histories=${result.germany.counts.selected_histories}`);
+      console.log(`germany_prospective_events=${result.germany.counts.prospective_events}`);
+      console.log(`germany_result_rows=${result.germany.counts.result_rows}`);
+      console.log(`germany_event_rows=${result.germany.counts.total_events}`);
+      console.log(`germany_sources=${result.germany.counts.sources}`);
+      console.log(`germany_unresolved=${result.germany.counts.unresolved_evidence}`);
+      console.log(`germany_approved=${result.germany.counts.approved_classifications}`);
+      console.log(`germany_needs_review=${result.germany.counts.needs_review_classifications}`);
+      console.log(`germany_current_municipal_councils=${result.germany.counts.current_municipal_councils}`);
+      console.log(`germany_current_municipal_mayors=${result.germany.counts.current_municipal_mayors}`);
+      console.log(`germany_current_kreis_councils=${result.germany.counts.current_kreis_councils}`);
+      console.log(`germany_current_kreis_executives=${result.germany.counts.current_kreis_executives}`);
+      console.log(`germany_current_association_councils=${result.germany.counts.current_association_councils}`);
+      console.log(`germany_current_association_executives=${result.germany.counts.current_association_executives}`);
+      console.log(`germany_current_land_parliaments=${result.germany.counts.current_land_parliaments}`);
+      console.log(`germany_current_local_councils=${result.germany.counts.current_local_councils}`);
+      console.log(`germany_direct_executive_offices=${result.germany.counts.direct_executive_offices}`);
+      console.log(`germany_historical_direct_executives=${result.germany.counts.historical_direct_executives}`);
+      console.log(`germany_historical_council_codes=${result.germany.counts.historical_council_codes}`);
+      console.log(`germany_historical_mayor_codes=${result.germany.counts.historical_mayor_codes}`);
+      console.log(`germany_historical_assemblies=${result.germany.counts.historical_assemblies}`);
+      console.log(`germany_schleswig_holstein_direct_mayors=${result.germany.counts.schleswig_holstein_direct_mayors}`);
+      console.log(`germany_explicit_predecessor_edges=${result.germany.counts.explicit_predecessor_edges}`);
+      console.log(`germany_research_dates=${result.germany.counts.research_dates}`);
+      console.log(`germany_geographies=${result.germany.counts.geographies}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
