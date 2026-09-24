@@ -50,6 +50,7 @@ describe("France Atlas importer", () => {
     expect(scopeImportsFrance("luxembourg")).toBe(false);
     expect(scopeImportsFrance("malta")).toBe(false);
     expect(scopeImportsFrance("cyprus")).toBe(false);
+    expect(scopeImportsFrance("germany")).toBe(false);
     expect(scopeImportsCyprus("france")).toBe(false);
     expect(scopeImportsCyprus("all")).toBe(false);
   });

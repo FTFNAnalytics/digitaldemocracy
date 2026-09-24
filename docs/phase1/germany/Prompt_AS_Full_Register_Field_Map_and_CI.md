@@ -1,6 +1,6 @@
 # Prompt AS — field map and CI checklist
 
-Mapping work is documented for the supplied research projection; holds DE-G01–DE-G23 remain open. Justin accepted the pack with those holds. No importer was run. `research_coverage_complete` stays false.
+Mapping work is documented for the supplied research projection; holds DE-G01–DE-G23 remain open. Justin accepted the pack with those holds. `research_coverage_complete` stays false. The importer is `ATLAS_IMPORT_SCOPE=germany` only — see [Germany_Import.md](Germany_Import.md). `all` does not publish Germany.
 
 | Item | Status | Pointer |
 |---|---|---|
@@ -13,20 +13,20 @@ Mapping work is documented for the supplied research projection; holds DE-G01–
 | Named holds DE-G01–DE-G23 left open | Done | Research_Gaps.md / JUSTIN_ACCEPTANCE.md |
 | Full-pack hash manifest | Included | SHA256SUMS (omitted bulky paths stay listed) |
 | Justin accept-with-holds receipt | Done | JUSTIN_ACCEPTANCE.md |
-| Importer, SQLite, VPS, UI | Not run | No `lib/atlas/germany/` |
+| Importer / publication CI | Landed | `ATLAS_IMPORT_SCOPE=germany` only; not part of `all`. 0 result rows and 0 event rows. See [Germany_Import.md](Germany_Import.md). VPS deploy was not run |
 
 ## Future importer/publication gates
 
 | Gate | Execution status |
 |---|---|
-| Office register and results loaded from retained bytes | Not run (omitted from this land) |
-| Tier file is sole classifier | Not run |
-| Missing SH mayors stay uninvented (DE-G06) | Not run |
-| Subdivision rosters stay uninvented (DE-G10) | Not run |
-| Successor edges stay unasserted (DE-G09) | Not run |
-| Withheld seat panels stay unrepaired (DE-G23) | Not run |
-| Other country lineages unchanged | Not run |
-| No office/history filtering by the upcoming 18-month window | Not run |
+| Office register and results loaded from retained bytes | Landed from the supplied tier file only. Omitted register, results, and events stay unpublished (0 result rows, 0 events) |
+| Tier file is sole classifier | Landed. Numeric tiers stay on the row. Schema column is the required interchange |
+| Missing SH mayors stay uninvented (DE-G06) | Landed (86 verified direct mayors) |
+| Subdivision rosters stay uninvented (DE-G10) | Landed |
+| Successor edges stay unasserted (DE-G09) | Landed (0 identity crosswalk rows) |
+| Withheld seat panels stay unrepaired (DE-G23) | Landed (no result rows) |
+| Other country lineages unchanged | Landed (`germany` does not load them; `all` does not load Germany) |
+| No office/history filtering by the upcoming 18-month window | Landed (0 research dates; no prospective events) |
 
 - [x] Justin accepts this handoff with named holds DE-G01–DE-G23 left open.
-- [ ] Justin authorizes implementation.
+- [x] Justin authorizes implementation (`ATLAS_IMPORT_SCOPE=germany`; not part of `all`).
