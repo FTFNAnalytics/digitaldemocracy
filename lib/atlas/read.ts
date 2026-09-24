@@ -3,6 +3,7 @@ import type { DatabaseSync } from "node:sqlite";
 import type { AtlasExplorerFilters } from "./filters";
 import { emptyAtlasExplorerFilters } from "./filters";
 import { resolveAtlasSqlitePath } from "./paths";
+import { REGIONAL_CALENDAR_LABEL as LATVIA_REGIONAL_CALENDAR_LABEL } from "./latvia/identity";
 import { REGIONAL_CALENDAR_LABEL as SPAIN_REGIONAL_CALENDAR_LABEL } from "./spain/identity";
 import { openAtlasDatabase, tableExists } from "./sqlite";
 
@@ -614,6 +615,14 @@ export function listAtlasRegionalCalendar(
       count: offices.length,
       label:
         "0 regional offices. County statistical groupings are not elected regional bodies. 78 current municipal councils. Named holds EE-G01–EE-G09 stay open. No mayor, county-governor, cabinet, or Tallinn district office. The presidency stays indirect except the evidenced 1992 popular-ballot exception.",
+      denominatorKnown: false,
+    };
+  }
+  if (countryId === "latvia") {
+    return {
+      offices,
+      count: offices.length,
+      label: LATVIA_REGIONAL_CALENDAR_LABEL,
       denominatorKnown: false,
     };
   }
