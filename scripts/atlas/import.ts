@@ -9,6 +9,7 @@
  * Hungary is scoped-only (`ATLAS_IMPORT_SCOPE=hungary`) and is not part of `all`.
  * Romania is not part of `all`; use `ATLAS_IMPORT_SCOPE=romania`.
  * Greece is not part of `all`; use `ATLAS_IMPORT_SCOPE=greece`.
+ * Luxembourg is not part of `all`; use `ATLAS_IMPORT_SCOPE=luxembourg`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -572,6 +573,34 @@ function main() {
       console.log(`greece_current_governors=${result.greece.counts.current_governors}`);
       console.log(`greece_geographies=${result.greece.counts.geographies}`);
       console.log(`greece_distinct_observations=${result.greece.counts.distinct_observations}`);
+    }
+    if (result.luxembourg) {
+      console.log("lineage=country-package-luxembourg");
+      console.log(`luxembourg_attempt_id=${result.luxembourg.attemptId}`);
+      console.log(`luxembourg_release_id=${result.luxembourg.releaseId}`);
+      console.log(`luxembourg_fingerprint_sha256=${result.luxembourg.fingerprint}`);
+      console.log(`luxembourg_reused_release=${result.luxembourg.reusedRelease ? "yes" : "no"}`);
+      console.log(`luxembourg_offices=${result.luxembourg.counts.offices}`);
+      console.log(`luxembourg_current=${result.luxembourg.counts.current_offices}`);
+      console.log(`luxembourg_historical=${result.luxembourg.counts.historical_offices}`);
+      console.log(`luxembourg_municipal=${result.luxembourg.counts.municipal_offices}`);
+      console.log(`luxembourg_regional=${result.luxembourg.counts.regional_offices}`);
+      console.log(`luxembourg_national=${result.luxembourg.counts.national_offices}`);
+      console.log(`luxembourg_other=${result.luxembourg.counts.other_offices}`);
+      console.log(`luxembourg_selected_histories=${result.luxembourg.counts.selected_histories}`);
+      console.log(`luxembourg_prospective_events=${result.luxembourg.counts.prospective_events}`);
+      console.log(`luxembourg_result_rows=${result.luxembourg.counts.result_rows}`);
+      console.log(`luxembourg_documented_result_rows_omitted=${result.luxembourg.counts.documented_result_rows_omitted}`);
+      console.log(`luxembourg_observation_envelopes=${result.luxembourg.counts.observation_envelopes}`);
+      console.log(`luxembourg_sources=${result.luxembourg.counts.sources}`);
+      console.log(`luxembourg_unresolved=${result.luxembourg.counts.unresolved_evidence}`);
+      console.log(`luxembourg_approved=${result.luxembourg.counts.approved_classifications}`);
+      console.log(`luxembourg_needs_review=${result.luxembourg.counts.needs_review_classifications}`);
+      console.log(`luxembourg_current_communal_councils=${result.luxembourg.counts.current_communal_councils}`);
+      console.log(`luxembourg_historical_communal_councils=${result.luxembourg.counts.historical_communal_councils}`);
+      console.log(`luxembourg_direct_executive_offices=${result.luxembourg.counts.direct_executive_offices}`);
+      console.log(`luxembourg_explicit_predecessor_edges=${result.luxembourg.counts.explicit_predecessor_edges}`);
+      console.log(`luxembourg_geographies=${result.luxembourg.counts.geographies}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");

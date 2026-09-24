@@ -1,6 +1,6 @@
 # Prompt AO — field map and CI checklist
 
-Mapping work is documented for the supplied research projection; research holds LU-G03–LU-G11 remain open. Justin accepted the pack with those holds on 2026-09-22. No importer was run.
+Mapping work is documented for the supplied research projection; research holds LU-G03–LU-G11 remain open. Justin accepted the pack with those holds on 2026-09-22. The importer is `ATLAS_IMPORT_SCOPE=luxembourg` only — see [Luxembourg_Import.md](Luxembourg_Import.md). `all` does not publish Luxembourg.
 
 | Item | Status | Pointer |
 |---|---|---|
@@ -14,7 +14,7 @@ Mapping work is documented for the supplied research projection; research holds 
 | Source inventory and full-pack hash manifest | Done | source-inventory.json / SHA256SUMS |
 | Offline validator | Done | validate.py / validation.json (pre-acceptance PASS) |
 | Justin accept-with-holds receipt | Done | JUSTIN_ACCEPTANCE.md |
-| Importer, SQLite, VPS, UI | Not run | No `lib/atlas/luxembourg/` |
+| Importer / publication CI | Landed | `ATLAS_IMPORT_SCOPE=luxembourg` only; not part of `all`. 0 result rows. See [Luxembourg_Import.md](Luxembourg_Import.md) |
 
 ## Future importer/publication gates
 
@@ -31,4 +31,4 @@ Mapping work is documented for the supplied research projection; research holds 
 
 - [x] Justin accepts this handoff with named holds (2026-09-22).
 - [x] Justin approves draft tiers as accepted-with-holds (no per-office `review_status` flip).
-- [ ] Justin authorizes implementation.
+- [x] Justin authorizes implementation (`ATLAS_IMPORT_SCOPE=luxembourg`; not part of `all`).
