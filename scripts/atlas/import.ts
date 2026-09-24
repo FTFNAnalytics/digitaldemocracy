@@ -8,6 +8,7 @@
  * Lithuania is not part of `all`; use `ATLAS_IMPORT_SCOPE=lithuania`.
  * Hungary is scoped-only (`ATLAS_IMPORT_SCOPE=hungary`) and is not part of `all`.
  * Romania is not part of `all`; use `ATLAS_IMPORT_SCOPE=romania`.
+ * Greece is not part of `all`; use `ATLAS_IMPORT_SCOPE=greece`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -541,6 +542,36 @@ function main() {
       console.log(`romania_current_councils=${result.romania.counts.council_assembly_offices}`);
       console.log(`romania_current_direct_executive_offices=${result.romania.counts.direct_executive_offices}`);
       console.log(`romania_geographies=${result.romania.counts.geographies}`);
+    }
+    if (result.greece) {
+      console.log("lineage=country-package-greece");
+      console.log(`greece_attempt_id=${result.greece.attemptId}`);
+      console.log(`greece_release_id=${result.greece.releaseId}`);
+      console.log(`greece_fingerprint_sha256=${result.greece.fingerprint}`);
+      console.log(`greece_reused_release=${result.greece.reusedRelease ? "yes" : "no"}`);
+      console.log(`greece_offices=${result.greece.counts.offices}`);
+      console.log(`greece_current=${result.greece.counts.current_offices}`);
+      console.log(`greece_historical=${result.greece.counts.historical_offices}`);
+      console.log(`greece_municipal=${result.greece.counts.municipal_offices}`);
+      console.log(`greece_regional=${result.greece.counts.regional_offices}`);
+      console.log(`greece_national=${result.greece.counts.national_offices}`);
+      console.log(`greece_other=${result.greece.counts.other_offices}`);
+      console.log(`greece_selected_histories=${result.greece.counts.selected_histories}`);
+      console.log(`greece_prospective_events=${result.greece.counts.prospective_events}`);
+      console.log(`greece_result_rows=${result.greece.counts.result_rows}`);
+      console.log(`greece_proceedings=${result.greece.counts.proceedings}`);
+      console.log(`greece_sources=${result.greece.counts.sources}`);
+      console.log(`greece_unresolved=${result.greece.counts.unresolved_evidence}`);
+      console.log(`greece_approved=${result.greece.counts.approved_classifications}`);
+      console.log(`greece_needs_review=${result.greece.counts.needs_review_classifications}`);
+      console.log(`greece_current_direct_executive_offices=${result.greece.counts.current_direct_executive_offices}`);
+      console.log(`greece_historical_direct_executive_offices=${result.greece.counts.historical_direct_executive_offices}`);
+      console.log(`greece_current_municipal_councils=${result.greece.counts.current_municipal_councils}`);
+      console.log(`greece_current_mayors=${result.greece.counts.current_mayors}`);
+      console.log(`greece_current_regional_councils=${result.greece.counts.current_regional_councils}`);
+      console.log(`greece_current_governors=${result.greece.counts.current_governors}`);
+      console.log(`greece_geographies=${result.greece.counts.geographies}`);
+      console.log(`greece_distinct_observations=${result.greece.counts.distinct_observations}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");

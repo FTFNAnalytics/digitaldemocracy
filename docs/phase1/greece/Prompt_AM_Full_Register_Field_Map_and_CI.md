@@ -14,7 +14,7 @@ Mapping work is complete for the supplied research projection; research gaps rem
 | 14 local source holds preserved | Done | `data/research/greece/source-holds.json` |
 | Structural validation PASS, coverage incomplete | Done | [validation.json](validation.json) |
 | Justin accept-with-holds receipt | Done | [JUSTIN_ACCEPTANCE.md](JUSTIN_ACCEPTANCE.md) |
-| Importer / publication CI | Not run | no `lib/atlas/greece/` |
+| Importer / publication CI | Landed | `ATLAS_IMPORT_SCOPE=greece` only; not part of `all`. See [Greece_Import.md](Greece_Import.md) |
 
 ## Destination coverage
 
