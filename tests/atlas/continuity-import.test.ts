@@ -293,9 +293,13 @@ describe("multi-lineage continuity import", () => {
       attemptsPath,
       operator: "albania-bosnia-test",
     });
-    expect(bosnia.counts.current_offices).toBe(13);
-    expect(bosnia.counts.regional_offices).toBe(13);
-    expect(bosnia.counts.municipal_offices).toBe(0);
+    expect(bosnia.counts.offices).toBe(346);
+    expect(bosnia.counts.current_offices).toBe(306);
+    expect(bosnia.counts.historical_offices).toBe(40);
+    expect(bosnia.counts.total_events).toBe(0);
+    expect(bosnia.counts.result_rows).toBe(0);
+    expect(bosnia.counts.schema_regional).toBe(15);
+    expect(bosnia.counts.schema_municipal).toBe(327);
     const db = new DatabaseSync(sqlitePath, { readOnly: true });
     try {
       expect(
@@ -303,7 +307,7 @@ describe("multi-lineage continuity import", () => {
       ).toBe(122);
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(BOSNIA_LINEAGE)?.n),
-      ).toBe(13);
+      ).toBe(346);
       const lineages = db
         .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")
         .all()

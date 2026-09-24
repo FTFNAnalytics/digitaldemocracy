@@ -2,22 +2,24 @@ import { existsSync } from "node:fs";
 import { DatabaseSync } from "node:sqlite";
 import { DEFAULT_OPERATOR, SCRIPT_VERSION, newAttemptId } from "../identity";
 import {
+  BRCKO_ASSEMBLY_ID,
   CANDIDATE_FINGERPRINT,
   CANDIDATE_RELEASE_ID,
-  CEC_HOMEPAGE_SOURCE_ID,
-  CEC_HOMEPAGE_URL,
-  ENTITY_OFFICE_IDS,
+  COUNTRY_CODE,
+  COUNTRY_NAME,
+  CURRENT_NAMESPACE,
   EXPECTED_COUNTS,
-  EXPECTED_OFFICES,
-  GORAZDE_2022_EVENT_ID,
-  GORAZDE_2022_SOURCE_ID,
-  GORAZDE_2022_URL_ALIAS,
-  GORAZDE_NEXT_EVENT_ID,
+  GAP_STATUS,
+  IDENTITY_VECTOR_GIT_BLOB,
+  IDENTITY_VECTORS_RELATIVE,
+  IDENTITY_VECTORS_SHA256,
   LINEAGE_ID as BOSNIA_LINEAGE,
-  NEXT_POLLING_DATE,
-  RS_PRESIDENT_2022_EVENT_ID,
-  SCREENING_SOURCE_ID,
-  SCREENING_URL,
+  OMITTED_RESEARCH_DIR,
+  OPEN_HOLD_IDS,
+  PROMPT_O_OFFICE_CROSSWALK,
+  PROMPT_O_REFERENCE_RELATIVE,
+  RS_PRESIDENT_ID,
+  RS_VP_IDS,
   TIER_PATH,
   TIER_SHA256,
 } from "./identity";
@@ -41,7 +43,6 @@ export type ImportBosniaOptions = {
   sqlitePath: string;
   attemptsPath: string;
   operator?: string;
-  packageDir?: string;
   tierPath?: string;
   requireGitTrackedPackage?: boolean;
   poisonAfterWrite?: (db: DatabaseSync, projection: BosniaProjection) => void;
@@ -78,9 +79,7 @@ export function importBosnia(options: ImportBosniaOptions): ImportBosniaResult {
 
   const finishFailure = (error: unknown): never => {
     if (lockFd != null) discardStaging(options.sqlitePath);
-    if (started) {
-      failAttempt(options.attemptsPath, attemptId, errorText(error));
-    }
+    if (started) failAttempt(options.attemptsPath, attemptId, errorText(error));
     throw error;
   };
 
@@ -93,7 +92,6 @@ export function importBosnia(options: ImportBosniaOptions): ImportBosniaResult {
     try {
       inventory = scanBosniaInventory({
         root: options.root,
-        packageDir: options.packageDir,
         tierPath: options.tierPath,
         requireGitTrackedPackage: options.requireGitTrackedPackage,
       });
@@ -121,6 +119,12 @@ export function importBosnia(options: ImportBosniaOptions): ImportBosniaResult {
       inputInventory: inventoryJson,
     });
     started = true;
+
+    if (inventory.fingerprint !== CANDIDATE_FINGERPRINT || inventory.releaseId !== CANDIDATE_RELEASE_ID) {
+      throw new Error(
+        `Slim Bosnia fingerprint ${inventory.fingerprint} does not match the pinned candidate release ${CANDIDATE_FINGERPRINT}`,
+      );
+    }
 
     if (fixtureEnvEnabled() && !options.allowFixtures) {
       throw new Error("OBSERVATORY_FIXTURES=1 cannot inject production Atlas rows");
@@ -155,9 +159,7 @@ export function importBosnia(options: ImportBosniaOptions): ImportBosniaResult {
       staging.close();
     }
 
-    if (options.failBeforeRename) {
-      throw new Error("Injected failure before rename");
-    }
+    if (options.failBeforeRename) throw new Error("Injected failure before rename");
 
     publishStaging(options.sqlitePath);
 
@@ -194,280 +196,215 @@ export function importBosnia(options: ImportBosniaOptions): ImportBosniaResult {
 
 export function assertBosniaFidelity(db: DatabaseSync, projection?: BosniaProjection): void {
   const offices = countRows(db, "office", "lineage_id = ?", [BOSNIA_LINEAGE]);
+  const current = countRows(db, "office", "lineage_id = ? AND office_status = 'current'", [BOSNIA_LINEAGE]);
+  const historical = countRows(db, "office", "lineage_id = ? AND office_status = 'historical'", [BOSNIA_LINEAGE]);
   const events = countRows(db, "election_event", "lineage_id = ?", [BOSNIA_LINEAGE]);
-  const selected = countRows(
-    db,
-    "election_event",
-    "lineage_id = ? AND selected_history_role = 'selected'",
-    [BOSNIA_LINEAGE],
-  );
-  const prospective = countRows(
-    db,
-    "election_event",
-    "lineage_id = ? AND selected_history_role = 'none'",
-    [BOSNIA_LINEAGE],
-  );
   const results = countRows(db, "result_row", "lineage_id = ?", [BOSNIA_LINEAGE]);
   const geos = countRows(db, "geography", "lineage_id = ?", [BOSNIA_LINEAGE]);
   const municipal = countRows(db, "office_tier_classification", "lineage_id = ? AND tier = 'municipal'", [BOSNIA_LINEAGE]);
   const regional = countRows(db, "office_tier_classification", "lineage_id = ? AND tier = 'regional'", [BOSNIA_LINEAGE]);
-  const approved = countRows(
-    db,
-    "office_tier_classification",
-    "lineage_id = ? AND review_status = 'approved'",
-    [BOSNIA_LINEAGE],
-  );
-  const needsReview = countRows(
-    db,
-    "office_tier_classification",
-    "lineage_id = ? AND review_status = 'needs_review'",
-    [BOSNIA_LINEAGE],
-  );
+  const national = countRows(db, "office_tier_classification", "lineage_id = ? AND tier = 'national_context'", [BOSNIA_LINEAGE]);
+  const otherTier = countRows(db, "office_tier_classification", "lineage_id = ? AND tier = 'other'", [BOSNIA_LINEAGE]);
+  const approved = countRows(db, "office_tier_classification", "lineage_id = ? AND review_status = 'approved'", [BOSNIA_LINEAGE]);
+  const needsReview = countRows(db, "office_tier_classification", "lineage_id = ? AND review_status = 'needs_review'", [BOSNIA_LINEAGE]);
   const sources = countRows(db, "source", "lineage_id = ?", [BOSNIA_LINEAGE]);
-  const proceedings = countRows(db, "proceeding", "lineage_id = ?", [BOSNIA_LINEAGE]);
-  const parties = countRows(db, "party_mapping", "lineage_id = ?", [BOSNIA_LINEAGE]);
+  const unresolved = countRows(db, "unresolved_evidence", "lineage_id = ?", [BOSNIA_LINEAGE]);
+  const crosswalks = countRows(db, "identity_crosswalk", "lineage_id = ?", [BOSNIA_LINEAGE]);
   const dates = countRows(db, "research_date", "lineage_id = ?", [BOSNIA_LINEAGE]);
-  const yearDates = countRows(
-    db,
-    "research_date",
-    "lineage_id = ? AND precision = 'year' AND certainty = 'unknown'",
-    [BOSNIA_LINEAGE],
-  );
-  const expectedDates = countRows(
-    db,
-    "research_date",
-    "lineage_id = ? AND precision = 'day' AND certainty = 'expected'",
-    [BOSNIA_LINEAGE],
-  );
-  const calledDates = countRows(
-    db,
-    "research_date",
-    "lineage_id = ? AND certainty = 'called'",
-    [BOSNIA_LINEAGE],
-  );
-  if (offices !== EXPECTED_COUNTS.current_offices) throw new Error(`office count ${offices}`);
-  if (events !== EXPECTED_COUNTS.total_events) throw new Error(`event count ${events}`);
-  if (selected !== EXPECTED_COUNTS.selected_histories) throw new Error(`selected histories ${selected}`);
-  if (prospective !== EXPECTED_COUNTS.prospective_events) throw new Error(`prospective events ${prospective}`);
-  if (results !== EXPECTED_COUNTS.result_rows) throw new Error(`result count ${results}`);
+
+  if (offices !== EXPECTED_COUNTS.offices) throw new Error(`office count ${offices}`);
+  if (current !== EXPECTED_COUNTS.current_offices) throw new Error(`current office count ${current}`);
+  if (historical !== EXPECTED_COUNTS.historical_offices) throw new Error(`historical office count ${historical}`);
+  if (events !== 0) throw new Error(`event count ${events}; slim land must publish 0 event rows`);
+  if (results !== 0) throw new Error(`result count ${results}; slim land must publish 0 result rows`);
   if (geos !== EXPECTED_COUNTS.geographies) throw new Error(`geography count ${geos}`);
-  if (municipal !== 0) throw new Error(`municipal count ${municipal}`);
-  if (regional !== EXPECTED_COUNTS.regional_offices) throw new Error(`regional count ${regional}`);
-  if (approved !== EXPECTED_COUNTS.approved_classifications) throw new Error(`approved classification count ${approved}`);
+  if (municipal !== EXPECTED_COUNTS.schema_municipal) throw new Error(`municipal interchange count ${municipal}`);
+  if (regional !== EXPECTED_COUNTS.schema_regional) throw new Error(`regional interchange count ${regional}`);
+  if (national !== EXPECTED_COUNTS.schema_national) throw new Error(`national interchange count ${national}`);
+  if (otherTier !== 0) throw new Error(`other tier count ${otherTier}`);
+  if (approved !== 0) throw new Error(`approved classification count ${approved}; holds stay needs_review`);
   if (needsReview !== EXPECTED_COUNTS.needs_review_classifications) throw new Error(`needs_review count ${needsReview}`);
-  if (sources !== EXPECTED_COUNTS.sources) throw new Error(`source count ${sources}`);
-  if (proceedings !== 0 || parties !== 0) throw new Error("proceedings/party_mappings must be 0");
-  if (dates !== 52 || yearDates !== 39 || expectedDates !== 13 || calledDates !== 0) {
-    throw new Error(`date certainty counts ${dates}/${yearDates}/${expectedDates}/${calledDates}`);
+  if (sources !== 0) throw new Error("omitted source extracts must not be invented");
+  if (unresolved !== EXPECTED_COUNTS.unresolved_evidence) throw new Error(`unresolved count ${unresolved}`);
+  if (crosswalks !== 0) throw new Error(`successor edge count ${crosswalks}; historical transitions stay unasserted`);
+  if (dates !== 0) throw new Error(`research dates ${dates}; null next dates must not be coerced`);
+  if (countRows(db, "proceeding", "lineage_id = ?", [BOSNIA_LINEAGE]) !== 0) throw new Error("proceedings must stay 0");
+  if (countRows(db, "party_mapping", "lineage_id = ?", [BOSNIA_LINEAGE]) !== 0) throw new Error("party mappings must stay 0");
+  if (countRows(db, "evidence_link", "lineage_id = ?", [BOSNIA_LINEAGE]) !== 0) throw new Error("evidence links must stay 0");
+  if (
+    countRows(db, "geography", "lineage_id = ? AND (effective_from_label IS NOT NULL OR effective_to_label IS NOT NULL)", [
+      BOSNIA_LINEAGE,
+    ]) !== 0
+  ) {
+    throw new Error("Bosnia geographies must not gain effective dates");
+  }
+  if (countRows(db, "retained_input", "lineage_id = ? AND input_path LIKE ?", [BOSNIA_LINEAGE, `${OMITTED_RESEARCH_DIR}%`]) !== 0) {
+    throw new Error("omitted research bytes must not be a retained input");
+  }
+  if (countRows(db, "retained_input", "lineage_id = ? AND input_path LIKE ?", [BOSNIA_LINEAGE, "data/countries/bosnia-and-herzegovina%"]) !== 0) {
+    throw new Error("The Prompt O country package must not be the publish source");
+  }
+  if (countRows(db, "office", "lineage_id = ? AND next_history_key IS NOT NULL", [BOSNIA_LINEAGE]) !== 0) {
+    throw new Error("Bosnia offices must not gain prospective history keys");
+  }
+  if (countRows(db, "office", "lineage_id = ? AND next_date_resolution != 'unknown'", [BOSNIA_LINEAGE]) !== 0) {
+    throw new Error("Bosnia offices must not gain a coerced next date");
+  }
+  if (countRows(db, "office", "lineage_id = ? AND next_date_id IS NOT NULL", [BOSNIA_LINEAGE]) !== 0) {
+    throw new Error("Bosnia next_date_id must stay null");
+  }
+  if (countRows(db, "office", "lineage_id = ? AND id_namespace != ?", [BOSNIA_LINEAGE, CURRENT_NAMESPACE]) !== 0) {
+    throw new Error("Bosnia offices must keep bosnia-herzegovina-research-aw-v1");
   }
 
-  const brcko = db
-    .prepare(
-      `SELECT office_id FROM office WHERE country_id = 'bosnia-and-herzegovina' AND (
-         office_id LIKE '%BRC%' OR office_id LIKE '%BRCKO%' OR name LIKE '%Brčko%' OR name LIKE '%Brcko%'
-       )`,
-    )
-    .all();
-  if (brcko.length !== 0) throw new Error("Brčko office must not be invented");
+  for (const priorId of Object.keys(PROMPT_O_OFFICE_CROSSWALK)) {
+    if (countRows(db, "office", "lineage_id = ? AND office_id = ?", [BOSNIA_LINEAGE, priorId]) !== 0) {
+      throw new Error(`Prompt O subset id ${priorId} must not be published as an AW office`);
+    }
+    const target = PROMPT_O_OFFICE_CROSSWALK[priorId];
+    if (!target || countRows(db, "office", "lineage_id = ? AND office_id = ?", [BOSNIA_LINEAGE, target]) !== 1) {
+      throw new Error(`Prompt O crosswalk target ${target ?? priorId} must stay in the AW register`);
+    }
+  }
+
+  for (const token of OPEN_HOLD_IDS) {
+    const row = db
+      .prepare(
+        `SELECT json_extract(raw_json, '$.row.status') AS status,
+                json_extract(raw_json, '$.row.closed') AS closed
+         FROM unresolved_evidence WHERE lineage_id = ? AND original_token = ?`,
+      )
+      .get(BOSNIA_LINEAGE, token) as { status?: unknown; closed?: unknown } | undefined;
+    if (!row || String(row.status) !== GAP_STATUS[token] || Number(row.closed) !== 0) {
+      throw new Error(`Named hold ${token} must stay open as ${GAP_STATUS[token]}`);
+    }
+  }
 
   const country = db
-    .prepare("SELECT country_code, polity_kind, region_id FROM country WHERE country_id = 'bosnia-and-herzegovina'")
-    .get();
+    .prepare("SELECT country_code, polity_kind, region_id, coverage_status, name FROM country WHERE country_id = 'bosnia-and-herzegovina'")
+    .get() as
+    | { country_code?: unknown; polity_kind?: unknown; region_id?: unknown; coverage_status?: unknown; name?: unknown }
+    | undefined;
   if (
     !country ||
-    String(country.country_code) !== "BA" ||
+    String(country.country_code) !== COUNTRY_CODE ||
     String(country.polity_kind) !== "sovereign_country" ||
-    String(country.region_id) !== "europe"
+    String(country.region_id) !== "europe" ||
+    String(country.coverage_status) !== "partial" ||
+    String(country.name) !== COUNTRY_NAME
   ) {
     throw new Error("Bosnia and Herzegovina country projection mismatch");
   }
 
-  const president = db.prepare("SELECT office_type, geography_id FROM office WHERE office_id = ?").get("BA-G");
-  if (!president || String(president.office_type) !== "President") {
-    throw new Error("BA-G must remain the Republika Srpska President");
-  }
-  if (String(president.geography_id) !== EXPECTED_OFFICES["BA-G"]!.geographyId) {
-    throw new Error("BA-G geography mismatch");
-  }
-  const assembly = db.prepare("SELECT office_type, geography_id FROM office WHERE office_id = ?").get("BA-R");
+  const president = db
+    .prepare(
+      `SELECT o.office_type, o.office_status, o.id_namespace, t.tier, t.review_status,
+              json_extract(t.raw_json, '$.row.tier') AS draft_tier,
+              json_extract(t.raw_json, '$.row.review_status') AS file_status,
+              json_extract(t.raw_json, '$.row.justin_approved') AS approved,
+              json_extract(o.raw_json, '$.supplemental.direct_executive') AS direct_executive
+       FROM office o JOIN office_tier_classification t USING (id_namespace, office_id) WHERE o.office_id = ?`,
+    )
+    .get(RS_PRESIDENT_ID) as Record<string, unknown> | undefined;
   if (
-    !assembly ||
-    String(assembly.office_type) !== "National Assembly" ||
-    String(assembly.geography_id) === String(president.geography_id)
+    !president ||
+    String(president.office_type) !== "entity_direct_executive" ||
+    String(president.office_status) !== "current" ||
+    String(president.id_namespace) !== CURRENT_NAMESPACE ||
+    String(president.tier) !== "regional" ||
+    String(president.review_status) !== "needs_review" ||
+    String(president.draft_tier) !== "regional" ||
+    String(president.file_status) !== "draft_for_human_review" ||
+    Number(president.approved) !== 0 ||
+    Number(president.direct_executive) !== 1
   ) {
-    throw new Error("BA-R must remain a distinct RS National Assembly geography");
+    throw new Error("The RS President must stay draft tier regional, needs_review, and a direct executive");
   }
 
-  for (const [officeId, expected] of Object.entries(EXPECTED_OFFICES)) {
-    const office = db.prepare("SELECT geography_id, office_type FROM office WHERE office_id = ?").get(officeId);
-    if (!office || String(office.geography_id) !== expected.geographyId || String(office.office_type) !== expected.officeType) {
-      throw new Error(`${officeId} geography/type mismatch`);
+  for (const vpId of RS_VP_IDS) {
+    const vp = db
+      .prepare("SELECT name, office_type, office_status FROM office WHERE office_id = ?")
+      .get(vpId) as { name?: unknown; office_type?: unknown; office_status?: unknown } | undefined;
+    if (
+      !vp ||
+      String(vp.office_type) !== "entity_direct_executive" ||
+      String(vp.office_status) !== "current" ||
+      !/constitutional office/.test(String(vp.name)) ||
+      /bosniak|croat|serb/i.test(String(vp.name))
+    ) {
+      throw new Error(`${vpId} must stay the supplied RS vice-president placeholder`);
     }
   }
 
-  for (const officeId of ENTITY_OFFICE_IDS) {
-    const row = db
-      .prepare("SELECT review_status FROM office_tier_classification WHERE office_id = ?")
-      .get(officeId);
-    if (!row || String(row.review_status) !== "needs_review") {
-      throw new Error(`${officeId} focused review must stay needs_review`);
-    }
+  const brcko = db
+    .prepare("SELECT office_type, office_status, name FROM office WHERE office_id = ?")
+    .get(BRCKO_ASSEMBLY_ID) as { office_type?: unknown; office_status?: unknown; name?: unknown } | undefined;
+  if (!brcko || String(brcko.office_type) !== "district_assembly" || String(brcko.office_status) !== "current") {
+    throw new Error("Brčko Assembly must stay the current district assembly");
   }
-
-  const next = db
-    .prepare("SELECT next_date_id, next_date_resolution, next_history_key FROM office WHERE office_id = ?")
-    .get("BA-205");
-  if (!next || String(next.next_date_resolution) !== "resolved" || next.next_history_key == null) {
-    throw new Error("BA-205 next-event pointer mismatch");
-  }
-  const expected = db
-    .prepare("SELECT label, precision, certainty, year, month, day FROM research_date WHERE date_id = ?")
-    .get(String(next.next_date_id));
   if (
-    !expected ||
-    String(expected.label) !== NEXT_POLLING_DATE ||
-    String(expected.precision) !== "day" ||
-    String(expected.certainty) !== "expected" ||
-    Number(expected.year) !== 2026 ||
-    Number(expected.month) !== 10 ||
-    Number(expected.day) !== 4
+    countRows(
+      db,
+      "office",
+      "lineage_id = ? AND (name LIKE '%Mayor of Brčko%' OR name LIKE '%Mayor of Brcko%' OR office_id LIKE '%BRCKO-MAYOR%' OR office_id LIKE '%BRC-MAYOR%')",
+      [BOSNIA_LINEAGE],
+    ) !== 0
   ) {
-    throw new Error("BA-205 expected date mismatch");
+    throw new Error("No Brčko mayor may be invented");
   }
-
-  const historical = db
-    .prepare("SELECT event_id, history_key, event_kind, selected_history_role FROM election_event WHERE event_id = ?")
-    .get(GORAZDE_2022_EVENT_ID);
   if (
-    !historical ||
-    String(historical.history_key) !== "BA-205::2022::" ||
-    String(historical.event_kind) !== "unknown" ||
-    String(historical.selected_history_role) !== "selected"
+    countRows(
+      db,
+      "office",
+      "lineage_id = ? AND (office_id LIKE '%-EP%' OR office_id LIKE 'EP-%' OR name LIKE '%European Parliament%' OR office_type LIKE '%european%')",
+      [BOSNIA_LINEAGE],
+    ) !== 0
   ) {
-    throw new Error("BA-205 2022 selected event mismatch");
+    throw new Error("No European Parliament office may be invented");
   }
-  const nextEvent = db.prepare("SELECT event_id, history_key FROM election_event WHERE event_id = ?").get(GORAZDE_NEXT_EVENT_ID);
-  if (!nextEvent || String(nextEvent.history_key) !== GORAZDE_NEXT_EVENT_ID) {
-    throw new Error("BA-205 next event identity mismatch");
-  }
-  if (String(next.next_history_key) !== GORAZDE_NEXT_EVENT_ID) {
-    throw new Error("BA-205 next_history_key must stay the documented next-event id");
-  }
-
-  const seatsOnly = db
-    .prepare(
-      "SELECT candidate_or_list_label, votes, votes_status, share, share_status, seats, seats_status FROM result_row WHERE result_row_id = ?",
-    )
-    .get(`${GORAZDE_2022_EVENT_ID}-r0`);
   if (
-    !seatsOnly ||
-    String(seatsOnly.candidate_or_list_label) !== "SDA - STRANKA DEMOKRATSKE AKCIJE" ||
-    Number(seatsOnly.votes) !== 2128 ||
-    String(seatsOnly.votes_status) !== "recorded" ||
-    Number(seatsOnly.share) !== 15.155615696887686 ||
-    Number(seatsOnly.seats) !== 5 ||
-    String(seatsOnly.seats_status) !== "recorded"
+    countRows(
+      db,
+      "office",
+      "lineage_id = ? AND (name LIKE '%House of Peoples%' OR name LIKE '%Council of Peoples%' OR name LIKE '%Council of Ministers%' OR name LIKE '%Mayor of Sarajevo%' OR name LIKE '%Mayor of Mostar%')",
+      [BOSNIA_LINEAGE],
+    ) !== 0
   ) {
-    throw new Error("BA-205 2022 r0 mismatch");
+    throw new Error("Excluded indirect chambers and mayors must stay out of the register");
   }
 
-  const zeroSeat = db
-    .prepare("SELECT seats, seats_status FROM result_row WHERE result_row_id = ?")
-    .get(`${GORAZDE_2022_EVENT_ID}-r13`);
-  if (!zeroSeat || Number(zeroSeat.seats) !== 0 || String(zeroSeat.seats_status) !== "zero") {
-    throw new Error("Zero-seat status mismatch");
-  }
-  const unknownSeat = db
-    .prepare("SELECT candidate_or_list_label, seats, seats_status FROM result_row WHERE result_row_id = ?")
-    .get(`${RS_PRESIDENT_2022_EVENT_ID}-r0`);
-  if (
-    !unknownSeat ||
-    String(unknownSeat.candidate_or_list_label) !== "MILORAD DODIK" ||
-    unknownSeat.seats != null ||
-    String(unknownSeat.seats_status) !== "unknown"
-  ) {
-    throw new Error("BA-G missing-seat status mismatch");
+  const draftDrift = countRows(
+    db,
+    "office_tier_classification",
+    "lineage_id = ? AND json_extract(raw_json, '$.row.review_status') != 'draft_for_human_review'",
+    [BOSNIA_LINEAGE],
+  );
+  if (draftDrift !== 0) throw new Error("Per-office file review_status must stay draft_for_human_review");
+  const numericDrift = countRows(
+    db,
+    "office_tier_classification",
+    `lineage_id = ? AND (
+      (tier = 'national_context' AND json_extract(raw_json, '$.row.tier') != 'national') OR
+      (tier = 'regional' AND json_extract(raw_json, '$.row.tier') != 'regional') OR
+      (tier = 'municipal' AND json_extract(raw_json, '$.row.tier') != 'municipal')
+    )`,
+    [BOSNIA_LINEAGE],
+  );
+  if (numericDrift !== 0) throw new Error("Bosnia draft tiers must stay on the classification row");
+
+  const stateHor = db
+    .prepare("SELECT tier FROM office_tier_classification WHERE office_id = 'BA-NAT-HOR'")
+    .get() as { tier?: unknown } | undefined;
+  if (!stateHor || String(stateHor.tier) !== "national_context") {
+    throw new Error("The state House of Representatives must interchange to national_context");
   }
 
-  const others = db
-    .prepare("SELECT votes, share, seats FROM result_row WHERE result_row_id = ?")
-    .get("event-b3192e9a1f294ef5deebd1c7-r0");
-  if (!others || Number(others.votes) !== 3373 || Number(others.share) !== 23.859 || Number(others.seats) !== 5) {
-    throw new Error("Published Others row mismatch");
-  }
-
-  const extraGap = db
-    .prepare(
-      "SELECT COUNT(*) AS n FROM election_event WHERE office_id = 'BA-G' AND selected_history_role = 'selected'",
-    )
-    .get();
-  if (Number(extraGap?.n) !== 3) {
-    throw new Error("BA-G must keep exactly three supplied histories");
-  }
-
-  const alias = db
-    .prepare(
-      "SELECT record_key FROM identity_crosswalk WHERE entity_kind = 'source' AND upstream_namespace = 'observatory:bosnia-and-herzegovina' AND upstream_id = ?",
-    )
-    .get(GORAZDE_2022_URL_ALIAS);
-  const canonicalSource = db
-    .prepare(
-      "SELECT record_key FROM identity_crosswalk WHERE entity_kind = 'source' AND upstream_namespace = 'bosnia-and-herzegovina:source-catalogue' AND upstream_id = ?",
-    )
-    .get("S7dc4e82fd3");
-  if (!alias || !canonicalSource || String(alias.record_key) !== String(canonicalSource.record_key)) {
-    throw new Error("Catalogue URL alias does not resolve to S7dc4e82fd3");
-  }
-
-  const source = db
-    .prepare("SELECT publisher, title, url, data_rights FROM source WHERE source_id = ?")
-    .get(GORAZDE_2022_SOURCE_ID);
-  if (
-    !source ||
-    source.publisher != null ||
-    String(source.title) !== "CEC Bosnia and Herzegovina: certified 2022 Bosnian-Podrinje Goražde Cantonal assembly" ||
-    String(source.url) !== "https://www.izbori.ba/Rezultati_izbora/?resId=32&langId=3#/7/205/0/0/0" ||
-    String(source.data_rights) !== "unknown"
-  ) {
-    throw new Error("S7dc4e82fd3 source projection mismatch");
-  }
-
-  const homepage = db
-    .prepare("SELECT title, publisher, checked_as_of_label, evidence_grade, url FROM source WHERE source_id = ?")
-    .get(CEC_HOMEPAGE_SOURCE_ID);
-  if (
-    !homepage ||
-    homepage.title != null ||
-    homepage.publisher != null ||
-    homepage.checked_as_of_label != null ||
-    homepage.evidence_grade != null ||
-    String(homepage.url) !== CEC_HOMEPAGE_URL
-  ) {
-    throw new Error("Inline CEC homepage source mismatch");
-  }
-  const screening = db
-    .prepare("SELECT title, publisher, checked_as_of_label, evidence_grade, url FROM source WHERE source_id = ?")
-    .get(SCREENING_SOURCE_ID);
-  if (
-    !screening ||
-    screening.title != null ||
-    screening.publisher != null ||
-    screening.checked_as_of_label != null ||
-    screening.evidence_grade != null ||
-    String(screening.url) !== SCREENING_URL
-  ) {
-    throw new Error("Inline 2027 screening source mismatch");
-  }
-
-  const fingerprintRow = db
-    .prepare("SELECT fingerprint_sha256 FROM dataset_release WHERE lineage_id = ?")
-    .get(BOSNIA_LINEAGE);
   if (projection) {
     const hashes = db
       .prepare(
-        "SELECT DISTINCT adapter_version, method_version, schema_version, hash_inputs_json, fingerprint_sha256, release_id FROM dataset_release WHERE lineage_id = ? AND release_id = ?",
+        "SELECT adapter_version, method_version, schema_version, hash_inputs_json, fingerprint_sha256, release_id FROM dataset_release WHERE lineage_id = ? AND release_id = ?",
       )
-      .get(BOSNIA_LINEAGE, projection.release.release_id);
+      .get(BOSNIA_LINEAGE, projection.release.release_id) as Record<string, unknown> | undefined;
     const parsed = JSON.parse(String(hashes?.hash_inputs_json));
     if (
       parsed.adapter_version !== hashes?.adapter_version ||
@@ -476,27 +413,51 @@ export function assertBosniaFidelity(db: DatabaseSync, projection?: BosniaProjec
     ) {
       throw new Error("Release version columns must match hash_inputs_json");
     }
-    if (!Array.isArray(parsed.schema_inputs) || parsed.schema_inputs[0]?.input_path !== "0001_atlas_attempt_log.sql") {
-      throw new Error("schema_inputs must use checked-in migration filenames");
-    }
-    if (String(hashes?.release_id) === CANDIDATE_RELEASE_ID && String(hashes?.fingerprint_sha256) !== CANDIDATE_FINGERPRINT) {
-      throw new Error("Candidate release ID does not match documented fingerprint");
+    if (String(hashes?.fingerprint_sha256) !== CANDIDATE_FINGERPRINT || String(hashes?.release_id) !== CANDIDATE_RELEASE_ID) {
+      throw new Error(
+        `Slim Bosnia fingerprint ${String(hashes?.fingerprint_sha256)} does not match the pinned candidate release ${CANDIDATE_FINGERPRINT}`,
+      );
     }
     const tierInput = db
       .prepare("SELECT sha256, input_kind FROM retained_input WHERE lineage_id = ? AND input_path = ?")
-      .get(BOSNIA_LINEAGE, TIER_PATH);
+      .get(BOSNIA_LINEAGE, TIER_PATH) as { sha256?: unknown; input_kind?: unknown } | undefined;
     if (!tierInput || String(tierInput.sha256) !== TIER_SHA256 || String(tierInput.input_kind) !== "tier_classification") {
-      throw new Error("Approved Bosnia tier retained-input hash mismatch");
+      throw new Error("Bosnia tier retained-input hash mismatch");
     }
-    if (String(hashes?.fingerprint_sha256) === CANDIDATE_FINGERPRINT && String(hashes?.release_id) !== CANDIDATE_RELEASE_ID) {
-      throw new Error("Documented fingerprint must mint the candidate release ID");
+    const vectors = db
+      .prepare("SELECT sha256, byte_count FROM retained_input WHERE lineage_id = ? AND input_path = ?")
+      .get(BOSNIA_LINEAGE, IDENTITY_VECTORS_RELATIVE) as { sha256?: unknown; byte_count?: unknown } | undefined;
+    if (!vectors || String(vectors.sha256) !== IDENTITY_VECTORS_SHA256 || Number(vectors.byte_count) !== 1159136) {
+      throw new Error("Prompt O identity-vector retained input drifted");
     }
+    const reference = db
+      .prepare("SELECT sha256 FROM retained_input WHERE lineage_id = ? AND input_path = ?")
+      .get(BOSNIA_LINEAGE, PROMPT_O_REFERENCE_RELATIVE) as { sha256?: unknown } | undefined;
+    if (!reference) throw new Error("Prompt O detailed-results reference must stay a retained input");
     const retained = countRows(db, "retained_input", "lineage_id = ?", [BOSNIA_LINEAGE]);
-    if (retained !== EXPECTED_COUNTS.retained_inputs) {
-      throw new Error(`retained_input count ${retained}`);
+    if (retained !== EXPECTED_COUNTS.retained_inputs) throw new Error(`retained_input count ${retained}`);
+    const coverage = db
+      .prepare("SELECT research_coverage_complete FROM dataset_release WHERE lineage_id = ? AND release_id = ?")
+      .get(BOSNIA_LINEAGE, projection.release.release_id) as { research_coverage_complete?: unknown } | undefined;
+    if (Number(coverage?.research_coverage_complete) !== 0) throw new Error("research_coverage_complete must stay false");
+    const countryRaw = db.prepare("SELECT raw_json FROM country WHERE country_id = 'bosnia-and-herzegovina'").get() as
+      | { raw_json?: unknown }
+      | undefined;
+    const supplemental = JSON.parse(String(countryRaw?.raw_json))?.supplemental;
+    if (
+      supplemental?.prompt_o_office_crosswalk_imported_as_edges !== false ||
+      supplemental?.prompt_o_result_rows_imported !== 0 ||
+      supplemental?.identity_vector_git_blob !== IDENTITY_VECTOR_GIT_BLOB ||
+      supplemental?.successor_edges !== 0
+    ) {
+      throw new Error("Prompt O continuity must stay documentary and must not import result rows or successor edges");
     }
-  } else if (String(fingerprintRow?.fingerprint_sha256) === CANDIDATE_FINGERPRINT) {
-    const unresolved = countRows(db, "unresolved_evidence", "lineage_id = ?", [BOSNIA_LINEAGE]);
-    if (unresolved !== 0) throw new Error(`Frozen baseline unresolved_evidence ${unresolved}`);
+    if (
+      projection.validatedCounts.documented_result_rows_omitted != null ||
+      projection.validatedCounts.documented_event_rows_omitted != null ||
+      projection.validatedCounts.documented_sources_omitted != null
+    ) {
+      throw new Error("Bosnia slim import must not invent documented omitted totals");
+    }
   }
 }

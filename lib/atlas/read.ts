@@ -14,6 +14,7 @@ import { REGIONAL_CALENDAR_LABEL as GERMANY_REGIONAL_CALENDAR_LABEL } from "./ge
 import { REGIONAL_CALENDAR_LABEL as UNITED_KINGDOM_REGIONAL_CALENDAR_LABEL } from "./united-kingdom/identity";
 import { REGIONAL_CALENDAR_LABEL as ITALY_REGIONAL_CALENDAR_LABEL } from "./italy/identity";
 import { REGIONAL_CALENDAR_LABEL as ICELAND_REGIONAL_CALENDAR_LABEL } from "./iceland/identity";
+import { REGIONAL_CALENDAR_LABEL as BOSNIA_REGIONAL_CALENDAR_LABEL } from "./bosnia-and-herzegovina/identity";
 import { REGIONAL_CALENDAR_LABEL as MALTA_REGIONAL_CALENDAR_LABEL } from "./malta/identity";
 import { REGIONAL_CALENDAR_LABEL as ROMANIA_REGIONAL_CALENDAR_LABEL } from "./romania/identity";
 import { REGIONAL_CALENDAR_LABEL as SPAIN_REGIONAL_CALENDAR_LABEL } from "./spain/identity";
@@ -500,8 +501,7 @@ export function listAtlasRegionalCalendar(
     return {
       offices,
       count: offices.length,
-      label:
-        "13 regional offices (10 cantonal assemblies + Federation House of Representatives + RS National Assembly + RS President). Research holds remain open: RS presidential replacement/repeat, governing coalitions, and 2026-10-04 calendar certainty. No Brčko or municipal offices are supplied.",
+      label: BOSNIA_REGIONAL_CALENDAR_LABEL,
       denominatorKnown: false,
     };
   }
