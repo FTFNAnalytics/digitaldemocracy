@@ -54,7 +54,7 @@ summarized at the top of [atlas-plan.md](atlas-plan.md).
 | Hungary Prompt AK field map | [docs/phase1/hungary/](phase1/hungary/Prompt_AK_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=hungary` only, not `all`; **6,378 current + 0 historical**; 0 result rows; omitted `results.json` is not invented; holds stay open) |
 | Romania Prompt AL field map | [docs/phase1/romania/](phase1/romania/Prompt_AL_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=romania` only, not `all`; **6,460 current + 0 historical**; 19,343 events; 23 result rows; holds RO-G01–RO-G07 open) |
 | Greece Prompt AM field map | [docs/phase1/greece/](phase1/greece/Prompt_AM_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=greece` only, not `all`; **693 current + 10 historical**; 2,774 events; 3,555 proceedings; 14,004 result rows; holds GR-G01–GR-G10 open) |
-| Luxembourg Prompt AO field map | [docs/phase1/luxembourg/](phase1/luxembourg/Prompt_AO_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer CI **Not run** (research at `data/research/luxembourg/`; **102 current + 28 historical accepted with holds**; Atlas importer waits) |
+| Luxembourg Prompt AO field map | [docs/phase1/luxembourg/](phase1/luxembourg/Prompt_AO_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=luxembourg` only, not `all`; **102 current + 28 historical**; 438 events; 0 result rows; holds LU-G03–LU-G11 open) |
 | France Prompt AR field map | [docs/phase1/france/](phase1/france/Prompt_AR_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer CI **Not run** (research at `data/research/france/`; **35,112 current + 2,738 historical accepted with holds**; Atlas importer waits) |
 | Cyprus Prompt AQ field map | [docs/phase1/cyprus/](phase1/cyprus/Prompt_AQ_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer CI **Not run** (research at `data/research/cyprus/`; **714 current + 174 historical accepted with holds**; Atlas importer waits) |
 | Malta Prompt AP field map | [docs/phase1/malta/](phase1/malta/Prompt_AP_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer CI **Not run** (research at `data/research/malta/`; **213 current + 2 historical accepted with holds**; Atlas importer waits) |
@@ -483,7 +483,7 @@ Slim pack omitted `sources/`, `results.jsonl`, `events.jsonl`, and
 
 Luxembourg Prompt AO docs are in
 [docs/phase1/luxembourg/](phase1/luxembourg/README.md)
-(mapping Done; execution CI Not run). Justin accepted **102 current + 28
+(mapping Done; importer landed, `ATLAS_IMPORT_SCOPE=luxembourg` only, not `all`). Justin accepted **102 current + 28
 historical** offices on 2026-09-22 with named holds. Standing policy
 retains offices and historic rows outside the ~18-month alert window. HOLD:
 LU-G03, LU-G04, LU-G05, LU-G06, LU-G07, LU-G08, LU-G09, LU-G10, and
@@ -495,7 +495,7 @@ delegation. Direct executives 0. Regional offices 0. Draft tiers are
 1994 Grevenmacher EP LSAP block stays missing. Do not invent a Grand
 Duke or mayor popular contest, a guessed merger edge, omitted
 `sources/` bytes, `results.json`, or missing 1994 EP votes. Research
-tables land at `data/research/luxembourg/`; Atlas importer waits.
+tables land at `data/research/luxembourg/`. Import with `ATLAS_IMPORT_SCOPE=luxembourg` only; `all` does not publish Luxembourg. Published result rows stay 0.
 Slim pack omitted `sources/` and `results.json`. Do not invent omitted
 bytes.
 
@@ -737,7 +737,7 @@ Deferred Prompt C rows above are **not** waived. They remain required before cla
 | Hungary Prompt AK field map | **Documentation complete** in [docs/phase1/hungary/](phase1/hungary/README.md). Mapping Done; importer landed (`ATLAS_IMPORT_SCOPE=hungary`, not `all`). Research at `data/research/hungary/`. `hungary.json` is 6,378 current + 0 historical accepted with holds (6,355 municipal / 20 regional / 2 national / 1 other). Results, identity vectors, and raw sources omitted from the slim land; imported result rows stay 0. |
 | Romania Prompt AL field map | **Documentation complete** in [docs/phase1/romania/](phase1/romania/README.md). Mapping Done; importer landed (`ATLAS_IMPORT_SCOPE=romania`, not `all`). Research at `data/research/romania/`. `romania.json` is 6,460 current + 0 historical accepted with holds (6,372 municipal / 84 regional / 3 national / 1 other). Classifications stay `needs_review`. 23 national/EP result rows retained; local vectors absent. |
 | Greece Prompt AM field map | **Documentation complete** in [docs/phase1/greece/](phase1/greece/README.md). Mapping Done; importer landed (`ATLAS_IMPORT_SCOPE=greece`, not `all`). Research at `data/research/greece/`. `greece.json` is 693 current + 10 historical accepted with holds (674 municipal / 26 regional / 2 national / 1 other). Classifications stay `needs_review`. 14,004 result rows retained; omitted `sources/` are not invented. Historical numeric coverage stays incomplete. |
-| Luxembourg Prompt AO field map | **Documentation complete** in [docs/phase1/luxembourg/](phase1/luxembourg/README.md). Mapping Done; importer CI Not run. Research at `data/research/luxembourg/`. `luxembourg.json` is 102 current + 28 historical accepted with holds (128 municipal / 0 regional / 1 national / 1 other). `results.json` and raw sources omitted from the slim land. |
+| Luxembourg Prompt AO field map | **Documentation complete** in [docs/phase1/luxembourg/](phase1/luxembourg/README.md). Mapping Done; importer landed (`ATLAS_IMPORT_SCOPE=luxembourg`, not `all`). Research at `data/research/luxembourg/`. `luxembourg.json` is 102 current + 28 historical accepted with holds (128 municipal / 0 regional / 1 national / 1 other). Classifications stay `needs_review`. Published result rows stay 0; omitted `results.json` (48,197) and raw sources are not invented. |
 | France Prompt AR field map | **Documentation complete** in [docs/phase1/france/](phase1/france/README.md). Mapping Done; importer CI Not run. Research at `data/research/france/`. `france.json` is 35,112 current + 2,738 historical accepted with holds (draft T1 4 / T2 45 / T3 96 / T4 37,705). Results, events, reporting units, and raw sources omitted from the slim land. |
 | Cyprus Prompt AQ field map | **Documentation complete** in [docs/phase1/cyprus/](phase1/cyprus/README.md). Mapping Done; importer CI Not run. Research at `data/research/cyprus/`. `cyprus.json` is 714 current + 174 historical accepted with holds (877 municipal / 5 regional / 5 national / 1 other). `results.json` and raw sources omitted from the slim land. |
 | Malta Prompt AP field map | **Documentation complete** in [docs/phase1/malta/](phase1/malta/README.md). Mapping Done; importer CI Not run. Research at `data/research/malta/`. `malta.json` is 213 current + 2 historical accepted with holds (204 municipal / 8 regional / 2 national / 1 other). `stv-counts.json`, `results.json`, and raw sources omitted from the slim land. |
