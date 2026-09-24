@@ -6,6 +6,7 @@ import { resolveAtlasSqlitePath } from "./paths";
 import { REGIONAL_CALENDAR_LABEL as HUNGARY_REGIONAL_CALENDAR_LABEL } from "./hungary/identity";
 import { REGIONAL_CALENDAR_LABEL as LATVIA_REGIONAL_CALENDAR_LABEL } from "./latvia/identity";
 import { REGIONAL_CALENDAR_LABEL as LITHUANIA_REGIONAL_CALENDAR_LABEL } from "./lithuania/identity";
+import { REGIONAL_CALENDAR_LABEL as GREECE_REGIONAL_CALENDAR_LABEL } from "./greece/identity";
 import { REGIONAL_CALENDAR_LABEL as ROMANIA_REGIONAL_CALENDAR_LABEL } from "./romania/identity";
 import { REGIONAL_CALENDAR_LABEL as SPAIN_REGIONAL_CALENDAR_LABEL } from "./spain/identity";
 import { openAtlasDatabase, tableExists } from "./sqlite";
@@ -650,6 +651,14 @@ export function listAtlasRegionalCalendar(
       offices,
       count: offices.length,
       label: ROMANIA_REGIONAL_CALENDAR_LABEL,
+      denominatorKnown: false,
+    };
+  }
+  if (countryId === "greece") {
+    return {
+      offices,
+      count: offices.length,
+      label: GREECE_REGIONAL_CALENDAR_LABEL,
       denominatorKnown: false,
     };
   }
