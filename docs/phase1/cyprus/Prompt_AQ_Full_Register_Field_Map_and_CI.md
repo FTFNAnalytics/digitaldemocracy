@@ -1,6 +1,6 @@
 # Prompt AQ — field map and CI checklist
 
-Mapping work is documented for the supplied research projection; holds CY-G01–CY-G15 remain open. Justin accepted the pack with those holds on 2026-09-22. No importer was run.
+Mapping work is documented for the supplied research projection; holds CY-G01–CY-G15 remain open. Justin accepted the pack with those holds on 2026-09-22. The importer is `ATLAS_IMPORT_SCOPE=cyprus` only — see [Cyprus_Import.md](Cyprus_Import.md). `all` does not publish Cyprus.
 
 | Item | Status | Pointer |
 |---|---|---|
@@ -16,7 +16,7 @@ Mapping work is documented for the supplied research projection; holds CY-G01–
 | Source inventory and full-pack hash manifest | Done | source-inventory.json / SHA256SUMS |
 | Offline validator | Done | validate.py / validation.json (pre-acceptance PASS) |
 | Justin accept-with-holds receipt | Done | JUSTIN_ACCEPTANCE.md |
-| Importer, SQLite, VPS, UI | Not run | No `lib/atlas/cyprus/` |
+| Importer / publication CI | Landed | `ATLAS_IMPORT_SCOPE=cyprus` only; not part of `all`. 0 result rows. See [Cyprus_Import.md](Cyprus_Import.md). VPS deploy was not run |
 
 ## Future importer/publication gates
 
@@ -33,4 +33,4 @@ Mapping work is documented for the supplied research projection; holds CY-G01–
 
 - [x] Justin accepts this handoff with named holds (2026-09-22).
 - [x] Justin approves draft tiers as accepted-with-holds (no per-office `review_status` flip).
-- [ ] Justin authorizes implementation.
+- [x] Justin authorizes implementation (`ATLAS_IMPORT_SCOPE=cyprus`; not part of `all`).
