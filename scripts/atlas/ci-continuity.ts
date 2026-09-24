@@ -1,7 +1,7 @@
 #!/usr/bin/env npx tsx
 /**
  * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
- * Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, and Germany are not part of `all`. Lithuania is then imported with scope `lithuania`, then Romania with scope `romania`, then Greece with scope `greece`, then Luxembourg with scope `luxembourg`, then Malta with scope `malta`, then Cyprus with scope `cyprus`, then France with scope `france`, then Germany with scope `germany`, into the same database.
+ * Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, and the United Kingdom are not part of `all`. Lithuania is then imported with scope `lithuania`, then Romania with scope `romania`, then Greece with scope `greece`, then Luxembourg with scope `luxembourg`, then Malta with scope `malta`, then Cyprus with scope `cyprus`, then France with scope `france`, then Germany with scope `germany`, then the United Kingdom with scope `united_kingdom`, into the same database.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -30,6 +30,7 @@ import { LINEAGE_ID as LUXEMBOURG_LINEAGE } from "../../lib/atlas/luxembourg/ide
 import { LINEAGE_ID as CYPRUS_LINEAGE } from "../../lib/atlas/cyprus/identity";
 import { LINEAGE_ID as FRANCE_LINEAGE } from "../../lib/atlas/france/identity";
 import { LINEAGE_ID as GERMANY_LINEAGE } from "../../lib/atlas/germany/identity";
+import { LINEAGE_ID as UNITED_KINGDOM_LINEAGE } from "../../lib/atlas/united-kingdom/identity";
 import { LINEAGE_ID as MALTA_LINEAGE } from "../../lib/atlas/malta/identity";
 import { LINEAGE_ID as ROMANIA_LINEAGE } from "../../lib/atlas/romania/identity";
 import { LINEAGE_ID as FINLAND_LINEAGE } from "../../lib/atlas/finland/identity";
@@ -87,6 +88,9 @@ function main() {
     }
     if (result.germany) {
       fail("ATLAS_IMPORT_SCOPE=all must not be the Germany path");
+    }
+    if (result.unitedKingdom) {
+      fail("ATLAS_IMPORT_SCOPE=all must not be the United Kingdom path");
     }
     if (result.albania?.counts.current_offices !== 122) {
       fail(`Albania offices ${String(result.albania?.counts.current_offices)}`);
@@ -559,7 +563,7 @@ function main() {
     if (result.estonia?.counts.unresolved_evidence !== 9) {
       fail(`Estonia unresolved ${String(result.estonia?.counts.unresolved_evidence)}`);
     }
-    if (result.latvia || result.lithuania || result.hungary || result.romania || result.greece || result.luxembourg || result.malta || result.cyprus || result.france || result.germany) {
+    if (result.latvia || result.lithuania || result.hungary || result.romania || result.greece || result.luxembourg || result.malta || result.cyprus || result.france || result.germany || result.unitedKingdom) {
       fail("all imported a scoped lineage");
     }
     const lithuania = importAtlasLineages(
@@ -821,7 +825,7 @@ function main() {
       { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
       "france",
     );
-    if (france.latvia || france.lithuania || france.hungary || france.romania || france.greece || france.luxembourg || france.malta || france.cyprus || france.germany) {
+    if (france.latvia || france.lithuania || france.hungary || france.romania || france.greece || france.luxembourg || france.malta || france.cyprus || france.germany || france.unitedKingdom) {
       fail("france scope imported another scoped lineage");
     }
     if (france.france?.counts.offices !== 37850) fail(`France offices ${String(france.france?.counts.offices)}`);
@@ -858,7 +862,7 @@ function main() {
       { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
       "germany",
     );
-    if (germany.latvia || germany.lithuania || germany.hungary || germany.romania || germany.greece || germany.luxembourg || germany.malta || germany.cyprus || germany.france) {
+    if (germany.latvia || germany.lithuania || germany.hungary || germany.romania || germany.greece || germany.luxembourg || germany.malta || germany.cyprus || germany.france || germany.unitedKingdom) {
       fail("germany scope imported another scoped lineage");
     }
     if (germany.germany?.counts.offices !== 22630) fail(`Germany offices ${String(germany.germany?.counts.offices)}`);
@@ -894,6 +898,66 @@ function main() {
     }
     if (germany.germany?.counts.approved_classifications !== 0) {
       fail(`Germany approved ${String(germany.germany?.counts.approved_classifications)}`);
+    }
+    const unitedKingdom = importAtlasLineages(
+      { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
+      "united_kingdom",
+    );
+    if (
+      unitedKingdom.latvia ||
+      unitedKingdom.lithuania ||
+      unitedKingdom.hungary ||
+      unitedKingdom.romania ||
+      unitedKingdom.greece ||
+      unitedKingdom.luxembourg ||
+      unitedKingdom.malta ||
+      unitedKingdom.cyprus ||
+      unitedKingdom.france ||
+      unitedKingdom.germany
+    ) {
+      fail("united_kingdom scope imported another scoped lineage");
+    }
+    if (unitedKingdom.unitedKingdom?.counts.offices !== 510) fail(`UK offices ${String(unitedKingdom.unitedKingdom?.counts.offices)}`);
+    if (unitedKingdom.unitedKingdom?.counts.current_offices !== 482) fail(`UK current ${String(unitedKingdom.unitedKingdom?.counts.current_offices)}`);
+    if (unitedKingdom.unitedKingdom?.counts.current_shadow_offices !== 2) {
+      fail(`UK shadow ${String(unitedKingdom.unitedKingdom?.counts.current_shadow_offices)}`);
+    }
+    if (unitedKingdom.unitedKingdom?.counts.historical_offices !== 26) {
+      fail(`UK historical ${String(unitedKingdom.unitedKingdom?.counts.historical_offices)}`);
+    }
+    if (unitedKingdom.unitedKingdom?.counts.draft_tier_1 !== 2) fail(`UK tier 1 ${String(unitedKingdom.unitedKingdom?.counts.draft_tier_1)}`);
+    if (unitedKingdom.unitedKingdom?.counts.draft_tier_2 !== 5) fail(`UK tier 2 ${String(unitedKingdom.unitedKingdom?.counts.draft_tier_2)}`);
+    if (unitedKingdom.unitedKingdom?.counts.draft_tier_3 !== 76) fail(`UK tier 3 ${String(unitedKingdom.unitedKingdom?.counts.draft_tier_3)}`);
+    if (unitedKingdom.unitedKingdom?.counts.draft_tier_4 !== 427) fail(`UK tier 4 ${String(unitedKingdom.unitedKingdom?.counts.draft_tier_4)}`);
+    if (unitedKingdom.unitedKingdom?.counts.schema_national !== 2) fail(`UK national ${String(unitedKingdom.unitedKingdom?.counts.schema_national)}`);
+    if (unitedKingdom.unitedKingdom?.counts.schema_regional !== 81) fail(`UK regional ${String(unitedKingdom.unitedKingdom?.counts.schema_regional)}`);
+    if (unitedKingdom.unitedKingdom?.counts.schema_municipal !== 427) fail(`UK municipal ${String(unitedKingdom.unitedKingdom?.counts.schema_municipal)}`);
+    if (unitedKingdom.unitedKingdom?.counts.schema_other !== 0) fail(`UK other ${String(unitedKingdom.unitedKingdom?.counts.schema_other)}`);
+    if (unitedKingdom.unitedKingdom?.counts.total_events !== 0) fail(`UK events ${String(unitedKingdom.unitedKingdom?.counts.total_events)}`);
+    if (unitedKingdom.unitedKingdom?.counts.result_rows !== 0) fail(`UK results ${String(unitedKingdom.unitedKingdom?.counts.result_rows)}`);
+    if (unitedKingdom.unitedKingdom?.counts.documented_result_rows_omitted != null) {
+      fail("United Kingdom must not invent documented omitted result totals");
+    }
+    if (unitedKingdom.unitedKingdom?.counts.documented_event_rows_omitted != null) {
+      fail("United Kingdom must not invent documented omitted event totals");
+    }
+    if (unitedKingdom.unitedKingdom?.counts.explicit_predecessor_edges !== 0) {
+      fail(`UK predecessor edges ${String(unitedKingdom.unitedKingdom?.counts.explicit_predecessor_edges)}`);
+    }
+    if (unitedKingdom.unitedKingdom?.counts.direct_executive_offices !== 64) {
+      fail(`UK direct executives ${String(unitedKingdom.unitedKingdom?.counts.direct_executive_offices)}`);
+    }
+    if (unitedKingdom.unitedKingdom?.counts.principal_councils !== 382) {
+      fail(`UK principal councils ${String(unitedKingdom.unitedKingdom?.counts.principal_councils)}`);
+    }
+    if (unitedKingdom.unitedKingdom?.counts.prospective_events !== 0) {
+      fail(`UK prospective ${String(unitedKingdom.unitedKingdom?.counts.prospective_events)}`);
+    }
+    if (unitedKingdom.unitedKingdom?.counts.needs_review_classifications !== 510) {
+      fail(`UK needs_review ${String(unitedKingdom.unitedKingdom?.counts.needs_review_classifications)}`);
+    }
+    if (unitedKingdom.unitedKingdom?.counts.approved_classifications !== 0) {
+      fail(`UK approved ${String(unitedKingdom.unitedKingdom?.counts.approved_classifications)}`);
     }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
@@ -1384,6 +1448,7 @@ function main() {
         CYPRUS_LINEAGE,
         FRANCE_LINEAGE,
         GERMANY_LINEAGE,
+        UNITED_KINGDOM_LINEAGE,
         FINLAND_LINEAGE,
         IRELAND_LINEAGE,
         NETHERLANDS_LINEAGE,

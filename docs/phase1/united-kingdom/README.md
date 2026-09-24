@@ -1,6 +1,8 @@
 # United Kingdom — Atlas Prompt AU research pack
 
-As of **2026-09-23**. **Research/documentation only. applied_changes=0. All Justin approvals are unchecked.**
+As of **2026-09-23**. **applied_changes=0 on the research receipt. Holds G01–G27 stay open.**
+
+The follow-up importer is `ATLAS_IMPORT_SCOPE=united_kingdom` — see [United_Kingdom_Import.md](United_Kingdom_Import.md). It publishes 482 current + 2 shadow + 26 historical-only offices, **0 election events**, and **0 result rows**. It does not emit documented-omitted totals for the omitted event and result files. `ATLAS_IMPORT_SCOPE=all` does not import the United Kingdom. VPS deploy is out of scope.
 
 The current core office register covers the Commons, all three devolved legislatures, GLA institutions, all 382 operational principal councils, all 27 direct mayors and all 37 standalone PCC/PFCC offices. It also distinguishes two elected Surrey shadow authorities, four special elected components and a source-identified subset of 27 parish/town councils. There are 26 explicitly evidenced historical-only offices.
 
