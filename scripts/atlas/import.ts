@@ -11,6 +11,7 @@
  * Greece is not part of `all`; use `ATLAS_IMPORT_SCOPE=greece`.
  * Luxembourg is not part of `all`; use `ATLAS_IMPORT_SCOPE=luxembourg`.
  * Malta is not part of `all`; use `ATLAS_IMPORT_SCOPE=malta`.
+ * Cyprus is not part of `all`; use `ATLAS_IMPORT_SCOPE=cyprus`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -636,6 +637,43 @@ function main() {
       console.log(`malta_explicit_predecessor_edges=${result.malta.counts.explicit_predecessor_edges}`);
       console.log(`malta_regional_nominations=${result.malta.counts.regional_nominations}`);
       console.log(`malta_geographies=${result.malta.counts.geographies}`);
+    }
+    if (result.cyprus) {
+      console.log("lineage=country-package-cyprus");
+      console.log(`cyprus_attempt_id=${result.cyprus.attemptId}`);
+      console.log(`cyprus_release_id=${result.cyprus.releaseId}`);
+      console.log(`cyprus_fingerprint_sha256=${result.cyprus.fingerprint}`);
+      console.log(`cyprus_reused_release=${result.cyprus.reusedRelease ? "yes" : "no"}`);
+      console.log(`cyprus_offices=${result.cyprus.counts.offices}`);
+      console.log(`cyprus_current=${result.cyprus.counts.current_offices}`);
+      console.log(`cyprus_historical=${result.cyprus.counts.historical_offices}`);
+      console.log(`cyprus_municipal=${result.cyprus.counts.municipal_offices}`);
+      console.log(`cyprus_regional=${result.cyprus.counts.regional_offices}`);
+      console.log(`cyprus_national=${result.cyprus.counts.national_offices}`);
+      console.log(`cyprus_other=${result.cyprus.counts.other_offices}`);
+      console.log(`cyprus_selected_histories=${result.cyprus.counts.selected_histories}`);
+      console.log(`cyprus_prospective_events=${result.cyprus.counts.prospective_events}`);
+      console.log(`cyprus_result_rows=${result.cyprus.counts.result_rows}`);
+      console.log(`cyprus_documented_result_rows_omitted=${result.cyprus.counts.documented_result_rows_omitted}`);
+      console.log(`cyprus_sources=${result.cyprus.counts.sources}`);
+      console.log(`cyprus_unresolved=${result.cyprus.counts.unresolved_evidence}`);
+      console.log(`cyprus_approved=${result.cyprus.counts.approved_classifications}`);
+      console.log(`cyprus_needs_review=${result.cyprus.counts.needs_review_classifications}`);
+      console.log(`cyprus_current_local_councils=${result.cyprus.counts.current_local_councils}`);
+      console.log(`cyprus_current_municipal_councils=${result.cyprus.counts.current_municipal_councils}`);
+      console.log(`cyprus_current_mayors=${result.cyprus.counts.current_mayors}`);
+      console.log(`cyprus_current_deputy_mayors=${result.cyprus.counts.current_deputy_mayors}`);
+      console.log(`cyprus_current_community_councils=${result.cyprus.counts.current_community_councils}`);
+      console.log(`cyprus_current_community_leaders=${result.cyprus.counts.current_community_leaders}`);
+      console.log(`cyprus_current_dlgo_presidents=${result.cyprus.counts.current_dlgo_presidents}`);
+      console.log(`cyprus_direct_executive_offices=${result.cyprus.counts.direct_executive_offices}`);
+      console.log(`cyprus_historical_direct_executives=${result.cyprus.counts.historical_direct_executives}`);
+      console.log(`cyprus_explicit_predecessor_edges=${result.cyprus.counts.explicit_predecessor_edges}`);
+      console.log(`cyprus_named_communities=${result.cyprus.counts.named_communities}`);
+      console.log(`cyprus_ministry_overview_communities=${result.cyprus.counts.ministry_overview_communities}`);
+      console.log(`cyprus_year_only_events=${result.cyprus.counts.year_only_events}`);
+      console.log(`cyprus_offices_without_events=${result.cyprus.counts.offices_without_events}`);
+      console.log(`cyprus_geographies=${result.cyprus.counts.geographies}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");

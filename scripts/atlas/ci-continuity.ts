@@ -1,7 +1,7 @@
 #!/usr/bin/env npx tsx
 /**
  * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
- * Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, and Malta are not part of `all`. Lithuania is then imported with scope `lithuania`, then Romania with scope `romania`, then Greece with scope `greece`, then Luxembourg with scope `luxembourg`, then Malta with scope `malta`, into the same database.
+ * Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, and Cyprus are not part of `all`. Lithuania is then imported with scope `lithuania`, then Romania with scope `romania`, then Greece with scope `greece`, then Luxembourg with scope `luxembourg`, then Malta with scope `malta`, then Cyprus with scope `cyprus`, into the same database.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -27,6 +27,7 @@ import { LINEAGE_ID as ESTONIA_LINEAGE } from "../../lib/atlas/estonia/identity"
 import { LINEAGE_ID as LITHUANIA_LINEAGE } from "../../lib/atlas/lithuania/identity";
 import { LINEAGE_ID as GREECE_LINEAGE } from "../../lib/atlas/greece/identity";
 import { LINEAGE_ID as LUXEMBOURG_LINEAGE } from "../../lib/atlas/luxembourg/identity";
+import { LINEAGE_ID as CYPRUS_LINEAGE } from "../../lib/atlas/cyprus/identity";
 import { LINEAGE_ID as MALTA_LINEAGE } from "../../lib/atlas/malta/identity";
 import { LINEAGE_ID as ROMANIA_LINEAGE } from "../../lib/atlas/romania/identity";
 import { LINEAGE_ID as FINLAND_LINEAGE } from "../../lib/atlas/finland/identity";
@@ -75,6 +76,9 @@ function main() {
     }
     if (result.malta) {
       fail("ATLAS_IMPORT_SCOPE=all must not be the Malta path");
+    }
+    if (result.cyprus) {
+      fail("ATLAS_IMPORT_SCOPE=all must not be the Cyprus path");
     }
     if (result.albania?.counts.current_offices !== 122) {
       fail(`Albania offices ${String(result.albania?.counts.current_offices)}`);
@@ -547,7 +551,7 @@ function main() {
     if (result.estonia?.counts.unresolved_evidence !== 9) {
       fail(`Estonia unresolved ${String(result.estonia?.counts.unresolved_evidence)}`);
     }
-    if (result.latvia || result.lithuania || result.hungary || result.romania || result.greece || result.luxembourg || result.malta) {
+    if (result.latvia || result.lithuania || result.hungary || result.romania || result.greece || result.luxembourg || result.malta || result.cyprus) {
       fail("all imported a scoped lineage");
     }
     const lithuania = importAtlasLineages(
@@ -673,7 +677,7 @@ function main() {
       { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
       "greece",
     );
-    if (greece.latvia || greece.lithuania || greece.hungary || greece.romania || greece.luxembourg || greece.malta) {
+    if (greece.latvia || greece.lithuania || greece.hungary || greece.romania || greece.luxembourg || greece.malta || greece.cyprus) {
       fail("greece scope imported another scoped lineage");
     }
     if (greece.greece?.counts.offices !== 703) fail(`Greece offices ${String(greece.greece?.counts.offices)}`);
@@ -703,7 +707,7 @@ function main() {
       { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
       "luxembourg",
     );
-    if (luxembourg.latvia || luxembourg.lithuania || luxembourg.hungary || luxembourg.romania || luxembourg.greece || luxembourg.malta) {
+    if (luxembourg.latvia || luxembourg.lithuania || luxembourg.hungary || luxembourg.romania || luxembourg.greece || luxembourg.malta || luxembourg.cyprus) {
       fail("luxembourg scope imported another scoped lineage");
     }
     if (luxembourg.luxembourg?.counts.offices !== 130) fail(`Luxembourg offices ${String(luxembourg.luxembourg?.counts.offices)}`);
@@ -741,7 +745,7 @@ function main() {
       { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
       "malta",
     );
-    if (malta.latvia || malta.lithuania || malta.hungary || malta.romania || malta.greece || malta.luxembourg) {
+    if (malta.latvia || malta.lithuania || malta.hungary || malta.romania || malta.greece || malta.luxembourg || malta.cyprus) {
       fail("malta scope imported another scoped lineage");
     }
     if (malta.malta?.counts.offices !== 215) fail(`Malta offices ${String(malta.malta?.counts.offices)}`);
@@ -770,6 +774,40 @@ function main() {
     }
     if (malta.malta?.counts.needs_review_classifications !== 215) {
       fail(`Malta needs_review ${String(malta.malta?.counts.needs_review_classifications)}`);
+    }
+    const cyprus = importAtlasLineages(
+      { root, sqlitePath, attemptsPath, operator: "atlas-ci-import" },
+      "cyprus",
+    );
+    if (cyprus.latvia || cyprus.lithuania || cyprus.hungary || cyprus.romania || cyprus.greece || cyprus.luxembourg || cyprus.malta) {
+      fail("cyprus scope imported another scoped lineage");
+    }
+    if (cyprus.cyprus?.counts.offices !== 888) fail(`Cyprus offices ${String(cyprus.cyprus?.counts.offices)}`);
+    if (cyprus.cyprus?.counts.current_offices !== 714) fail(`Cyprus current ${String(cyprus.cyprus?.counts.current_offices)}`);
+    if (cyprus.cyprus?.counts.historical_offices !== 174) fail(`Cyprus historical ${String(cyprus.cyprus?.counts.historical_offices)}`);
+    if (cyprus.cyprus?.counts.municipal_offices !== 877) fail(`Cyprus municipal ${String(cyprus.cyprus?.counts.municipal_offices)}`);
+    if (cyprus.cyprus?.counts.regional_offices !== 5) fail(`Cyprus regional ${String(cyprus.cyprus?.counts.regional_offices)}`);
+    if (cyprus.cyprus?.counts.national_offices !== 5) fail(`Cyprus national ${String(cyprus.cyprus?.counts.national_offices)}`);
+    if (cyprus.cyprus?.counts.other_offices !== 1) fail(`Cyprus other ${String(cyprus.cyprus?.counts.other_offices)}`);
+    if (cyprus.cyprus?.counts.total_events !== 1599) fail(`Cyprus events ${String(cyprus.cyprus?.counts.total_events)}`);
+    if (cyprus.cyprus?.counts.result_rows !== 0) fail(`Cyprus results ${String(cyprus.cyprus?.counts.result_rows)}`);
+    if (cyprus.cyprus?.counts.documented_result_rows_omitted !== 11112) {
+      fail(`Cyprus omitted results ${String(cyprus.cyprus?.counts.documented_result_rows_omitted)}`);
+    }
+    if (cyprus.cyprus?.counts.explicit_predecessor_edges !== 0) {
+      fail(`Cyprus predecessor edges ${String(cyprus.cyprus?.counts.explicit_predecessor_edges)}`);
+    }
+    if (cyprus.cyprus?.counts.direct_executive_offices !== 404) {
+      fail(`Cyprus direct executives ${String(cyprus.cyprus?.counts.direct_executive_offices)}`);
+    }
+    if (cyprus.cyprus?.counts.prospective_events !== 0) {
+      fail(`Cyprus prospective ${String(cyprus.cyprus?.counts.prospective_events)}`);
+    }
+    if (cyprus.cyprus?.counts.needs_review_classifications !== 888) {
+      fail(`Cyprus needs_review ${String(cyprus.cyprus?.counts.needs_review_classifications)}`);
+    }
+    if (cyprus.cyprus?.counts.approved_classifications !== 0) {
+      fail(`Cyprus approved ${String(cyprus.cyprus?.counts.approved_classifications)}`);
     }
     if (result.latam?.counts.offices !== 10227) fail(`LatAm offices ${String(result.latam?.counts.offices)}`);
     if (result.nz?.counts.offices !== 4) fail(`NZ offices ${String(result.nz?.counts.offices)}`);
@@ -1257,6 +1295,7 @@ function main() {
         GREECE_LINEAGE,
         LUXEMBOURG_LINEAGE,
         MALTA_LINEAGE,
+        CYPRUS_LINEAGE,
         FINLAND_LINEAGE,
         IRELAND_LINEAGE,
         NETHERLANDS_LINEAGE,
@@ -1278,7 +1317,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 croatia=1245 portugal=18834 spain=8208 estonia=281 lithuania=123 romania=6460 greece=703 luxembourg=130 malta=215 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 croatia=1245 portugal=18834 spain=8208 estonia=281 lithuania=123 romania=6460 greece=703 luxembourg=130 malta=215 cyprus=888 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });
