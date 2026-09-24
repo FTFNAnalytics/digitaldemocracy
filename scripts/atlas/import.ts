@@ -2,7 +2,7 @@
 /**
  * Import approved Atlas lineages into SQLite.
  *
- * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina +
+ * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium +
  * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia (`ATLAS_IMPORT_SCOPE=all`).
  * Latvia is not part of `all`; use `ATLAS_IMPORT_SCOPE=latvia`.
  * Lithuania is not part of `all`; use `ATLAS_IMPORT_SCOPE=lithuania`.
@@ -17,6 +17,7 @@
  * The United Kingdom is not part of `all`; use `ATLAS_IMPORT_SCOPE=united_kingdom`.
  * Italy is not part of `all`; use `ATLAS_IMPORT_SCOPE=italy`.
  * Iceland is not part of `all`; use `ATLAS_IMPORT_SCOPE=iceland`.
+ * Bosnia and Herzegovina is not part of `all`; use `ATLAS_IMPORT_SCOPE=bosnia`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
@@ -136,15 +137,35 @@ function main() {
       console.log(`bosnia_release_id=${result.bosnia.releaseId}`);
       console.log(`bosnia_fingerprint_sha256=${result.bosnia.fingerprint}`);
       console.log(`bosnia_reused_release=${result.bosnia.reusedRelease ? "yes" : "no"}`);
-      console.log(`bosnia_offices=${result.bosnia.counts.current_offices}`);
-      console.log(`bosnia_regional=${result.bosnia.counts.regional_offices}`);
-      console.log(`bosnia_municipal=${result.bosnia.counts.municipal_offices}`);
+      console.log(`bosnia_offices=${result.bosnia.counts.offices}`);
+      console.log(`bosnia_current=${result.bosnia.counts.current_offices}`);
+      console.log(`bosnia_historical=${result.bosnia.counts.historical_offices}`);
+      console.log(`bosnia_draft_tier_national=${result.bosnia.counts.draft_tier_national}`);
+      console.log(`bosnia_draft_tier_regional=${result.bosnia.counts.draft_tier_regional}`);
+      console.log(`bosnia_draft_tier_municipal=${result.bosnia.counts.draft_tier_municipal}`);
+      console.log(`bosnia_schema_national=${result.bosnia.counts.schema_national}`);
+      console.log(`bosnia_schema_regional=${result.bosnia.counts.schema_regional}`);
+      console.log(`bosnia_schema_municipal=${result.bosnia.counts.schema_municipal}`);
+      console.log(`bosnia_schema_other=${result.bosnia.counts.schema_other}`);
       console.log(`bosnia_selected_histories=${result.bosnia.counts.selected_histories}`);
       console.log(`bosnia_prospective_events=${result.bosnia.counts.prospective_events}`);
       console.log(`bosnia_result_rows=${result.bosnia.counts.result_rows}`);
+      console.log(`bosnia_event_rows=${result.bosnia.counts.total_events}`);
       console.log(`bosnia_sources=${result.bosnia.counts.sources}`);
+      console.log(`bosnia_unresolved=${result.bosnia.counts.unresolved_evidence}`);
+      console.log(`bosnia_open_holds=${result.bosnia.counts.named_open_holds}`);
       console.log(`bosnia_approved=${result.bosnia.counts.approved_classifications}`);
       console.log(`bosnia_needs_review=${result.bosnia.counts.needs_review_classifications}`);
+      console.log(`bosnia_direct_executive_offices=${result.bosnia.counts.direct_executive_offices}`);
+      console.log(`bosnia_current_councils_chambers_assemblies=${result.bosnia.counts.current_councils_chambers_assemblies}`);
+      console.log(`bosnia_current_state=${result.bosnia.counts.current_state}`);
+      console.log(`bosnia_current_entity=${result.bosnia.counts.current_entity}`);
+      console.log(`bosnia_current_canton=${result.bosnia.counts.current_canton}`);
+      console.log(`bosnia_current_municipal_local=${result.bosnia.counts.current_municipal_local}`);
+      console.log(`bosnia_ep_offices=${result.bosnia.counts.ep_offices}`);
+      console.log(`bosnia_explicit_predecessor_edges=${result.bosnia.counts.explicit_predecessor_edges}`);
+      console.log(`bosnia_research_dates=${result.bosnia.counts.research_dates}`);
+      console.log(`bosnia_geographies=${result.bosnia.counts.geographies}`);
     }
     if (result.bulgaria) {
       console.log("lineage=country-package-bulgaria");

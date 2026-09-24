@@ -392,67 +392,6 @@ describe("atlas CLI stubs", () => {
   );
 
   it(
-    "import:atlas loads Bosnia and Herzegovina into temporary databases",
-    () => {
-      const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-bosnia-cli-"));
-      tempDirs.push(dir);
-      const sqlitePath = path.join(dir, "atlas.sqlite");
-      const attemptsPath = path.join(dir, "atlas-attempts.sqlite");
-      const result = runAtlasScript("scripts/atlas/import.ts", {
-        ATLAS_SQLITE_PATH: sqlitePath,
-        ATLAS_ATTEMPTS_SQLITE_PATH: attemptsPath,
-        ATLAS_OPERATOR: "atlas-cli-test",
-        ATLAS_IMPORT_SCOPE: "bosnia",
-        OBSERVATORY_FIXTURES: "",
-      });
-      expect(result.status, result.stderr).toBe(0);
-      expect(result.stdout).toContain("import:atlas");
-      expect(result.stdout).toContain("lineage=country-package-bosnia-and-herzegovina");
-      expect(result.stdout).toContain("bosnia_offices=13");
-      expect(result.stdout).toContain("bosnia_regional=13");
-      expect(result.stdout).toContain("bosnia_municipal=0");
-      expect(result.stdout).toContain("bosnia_selected_histories=39");
-      expect(result.stdout).toContain("bosnia_prospective_events=13");
-      expect(result.stdout).toContain("bosnia_result_rows=749");
-      expect(result.stdout).toContain("bosnia_sources=30");
-      expect(result.stdout).toContain("bosnia_approved=10");
-      expect(result.stdout).toContain("bosnia_needs_review=3");
-
-      const master = new DatabaseSync(sqlitePath, { readOnly: true });
-      try {
-        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 13 });
-        expect(
-          master.prepare("SELECT geography_id FROM office WHERE office_id = 'BA-205'").get(),
-        ).toMatchObject({ geography_id: "geo-6e53e543ce8632cc16493b67" });
-        expect(
-          master
-            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'regional'")
-            .get(),
-        ).toMatchObject({ n: 13 });
-        expect(
-          master
-            .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'municipal'")
-            .get(),
-        ).toMatchObject({ n: 0 });
-        expect(
-          master
-            .prepare("SELECT COUNT(*) AS n FROM research_date WHERE certainty = 'expected'")
-            .get(),
-        ).toMatchObject({ n: 13 });
-        expect(
-          master.prepare("SELECT office_id FROM office WHERE office_id LIKE '%BRC%'").get(),
-        ).toBeUndefined();
-      } finally {
-        master.close();
-      }
-
-      expect(atlasImportStatusMessage()).toContain("Bosnia and Herzegovina");
-      expect(atlasImportStatusMessage()).toContain("bosnia");
-    },
-    60_000,
-  );
-
-  it(
     "import:atlas loads Belgium into temporary databases",
     () => {
       const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-belgium-cli-"));

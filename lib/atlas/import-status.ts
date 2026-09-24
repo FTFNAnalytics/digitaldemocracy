@@ -15,7 +15,7 @@ export function atlasImportStatusMessage(
   return [
     "Election Atlas Albania import is available.",
     "",
-    "npm run import:atlas loads Albania, Andorra, Alderney, Armenia, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Netherlands, Switzerland, Denmark, Sweden, Finland, Norway, Ireland, Poland, Czechia, Croatia, Portugal, Spain, Estonia, and approved continuity packs into SQLite (atomic publish + durable attempt ledger).",
+    "npm run import:atlas loads Albania, Andorra, Alderney, Armenia, Austria, Belgium, Bulgaria, Netherlands, Switzerland, Denmark, Sweden, Finland, Norway, Ireland, Poland, Czechia, Croatia, Portugal, Spain, Estonia, and approved continuity packs into SQLite (atomic publish + durable attempt ledger).",
     "ATLAS_IMPORT_SCOPE=albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|croatia|czechia|denmark|estonia|latvia|lithuania|romania|greece|luxembourg|malta|cyprus|france|germany|united_kingdom|italy|iceland|hungary|finland|ireland|netherlands|norway|poland|portugal|spain|sweden|switzerland|latam|nz|all (default all). Draft residual-heavy packs are skipped.",
     "Latvia is ATLAS_IMPORT_SCOPE=latvia only. The default all scope does not import Latvia.",
     "Lithuania is ATLAS_IMPORT_SCOPE=lithuania only. The default all scope does not import Lithuania.",
@@ -30,6 +30,7 @@ export function atlasImportStatusMessage(
     "The United Kingdom is ATLAS_IMPORT_SCOPE=united_kingdom only. The default all scope does not import the United Kingdom.",
     "Italy is ATLAS_IMPORT_SCOPE=italy only. The default all scope does not import Italy.",
     "Iceland is ATLAS_IMPORT_SCOPE=iceland only. The default all scope does not import Iceland.",
+    "Bosnia and Herzegovina is ATLAS_IMPORT_SCOPE=bosnia only. The default all scope does not import Bosnia and Herzegovina.",
     "Use ATLAS_SQLITE_PATH and ATLAS_ATTEMPTS_SQLITE_PATH. CI/tests must use temporary paths, never the VPS production DB.",
     "Public UI: /atlas (SQLite MVP). Observatory catalogue remains at /electiondatabase.",
     "",

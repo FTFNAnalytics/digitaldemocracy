@@ -198,9 +198,6 @@ export function importAtlasLineages(
   if (scope === "belgium" || scope === "all") {
     result.belgium = runImport("belgium", () => importBelgium(options));
   }
-  if (scope === "bosnia" || scope === "all") {
-    result.bosnia = runImport("bosnia", () => importBosnia(options));
-  }
   if (scope === "bulgaria" || scope === "all") {
     result.bulgaria = runImport("bulgaria", () => importBulgaria(options));
   }
@@ -219,7 +216,7 @@ export function importAtlasLineages(
   // Denmark through Estonia last on `all`: large result tables and Poland/Czechia/Croatia/Portugal/Spain
   // events would otherwise sit in the published DB that LatAm copies into staging.
   // Estonia has no result rows in the slim pack and follows Spain.
-  // Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, the United Kingdom, Italy, and Iceland stay scoped. `all` does not publish those lineages.
+  // Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, the United Kingdom, Italy, Iceland, and Bosnia and Herzegovina stay scoped. `all` does not publish those lineages.
   if (scope === "denmark" || scope === "all") {
     result.denmark = runImport("denmark", () => importDenmark(options));
   }
@@ -302,6 +299,10 @@ export function importAtlasLineages(
   if (scopeImportsIceland(scope)) {
     result.iceland = runImport("iceland", () => importIceland(options));
   }
+  // Bosnia and Herzegovina stays scoped. `all` does not publish this lineage.
+  if (scopeImportsBosnia(scope)) {
+    result.bosnia = runImport("bosnia", () => importBosnia(options));
+  }
   return result;
 }
 
@@ -358,4 +359,9 @@ export function scopeImportsItaly(scope: ImportScope): boolean {
 /** True only for `ATLAS_IMPORT_SCOPE=iceland`. Never true for `all`. */
 export function scopeImportsIceland(scope: ImportScope): boolean {
   return scope === "iceland";
+}
+
+/** True only for `ATLAS_IMPORT_SCOPE=bosnia`. Never true for `all`. */
+export function scopeImportsBosnia(scope: ImportScope): boolean {
+  return scope === "bosnia";
 }

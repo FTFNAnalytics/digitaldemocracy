@@ -1,7 +1,7 @@
 #!/usr/bin/env npx tsx
 /**
- * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bosnia and Herzegovina + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
- * Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, the United Kingdom, and Italy are not part of `all`. Lithuania is then imported with scope `lithuania`, then Romania with scope `romania`, then Greece with scope `greece`, then Luxembourg with scope `luxembourg`, then Malta with scope `malta`, then Cyprus with scope `cyprus`, then France with scope `france`, then Germany with scope `germany`, then the United Kingdom with scope `united_kingdom`, then Italy with scope `italy`, into the same database.
+ * CI proof: import Albania + Andorra + Alderney + Armenia + Austria + Belgium + Bulgaria + Netherlands + Switzerland + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia + approved continuity packs (Batch A+B + ES/AR) into a temp SQLite.
+ * Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, the United Kingdom, Italy, Iceland, and Bosnia and Herzegovina are not part of `all`. Lithuania is then imported with scope `lithuania`, then Romania with scope `romania`, then Greece with scope `greece`, then Luxembourg with scope `luxembourg`, then Malta with scope `malta`, then Cyprus with scope `cyprus`, then France with scope `france`, then Germany with scope `germany`, then the United Kingdom with scope `united_kingdom`, then Italy with scope `italy`, into the same database.
  * Kept out of Vitest because the LatAm projection exceeds Vitest's 60s worker RPC timeout.
  */
 import { mkdtempSync, rmSync } from "node:fs";
@@ -99,6 +99,9 @@ function main() {
     if (result.iceland) {
       fail("ATLAS_IMPORT_SCOPE=all must not be the Iceland path");
     }
+    if (result.bosnia) {
+      fail("ATLAS_IMPORT_SCOPE=all must not be the Bosnia and Herzegovina path");
+    }
     if (result.albania?.counts.current_offices !== 122) {
       fail(`Albania offices ${String(result.albania?.counts.current_offices)}`);
     }
@@ -147,21 +150,6 @@ function main() {
     if (result.austria?.counts.selected_histories !== 5956) {
       fail(`Austria events ${String(result.austria?.counts.selected_histories)}`);
     }
-    if (result.bosnia?.counts.current_offices !== 13) {
-      fail(`Bosnia offices ${String(result.bosnia?.counts.current_offices)}`);
-    }
-    if (result.bosnia?.counts.regional_offices !== 13) {
-      fail(`Bosnia regional ${String(result.bosnia?.counts.regional_offices)}`);
-    }
-    if (result.bosnia?.counts.municipal_offices !== 0) {
-      fail(`Bosnia municipal ${String(result.bosnia?.counts.municipal_offices)}`);
-    }
-    if (result.bosnia?.counts.selected_histories !== 39) {
-      fail(`Bosnia events ${String(result.bosnia?.counts.selected_histories)}`);
-    }
-    if (result.bosnia?.counts.approved_classifications !== 10) {
-      fail(`Bosnia approved ${String(result.bosnia?.counts.approved_classifications)}`);
-    }
     if (result.belgium?.counts.offices !== 1234) {
       fail(`Belgium offices ${String(result.belgium?.counts.offices)}`);
     }
@@ -188,9 +176,6 @@ function main() {
     }
     if (result.belgium?.counts.prospective_events !== 0) {
       fail(`Belgium prospective ${String(result.belgium?.counts.prospective_events)}`);
-    }
-    if (result.bosnia?.counts.needs_review_classifications !== 3) {
-      fail(`Bosnia needs_review ${String(result.bosnia?.counts.needs_review_classifications)}`);
     }
     if (result.bulgaria?.counts.current_offices !== 530) {
       fail(`Bulgaria offices ${String(result.bulgaria?.counts.current_offices)}`);
@@ -1064,8 +1049,8 @@ function main() {
       ) {
         fail("Belgium historical office rows");
       }
-      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BOSNIA_LINEAGE]) !== 13) {
-        fail("Bosnia office rows");
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BOSNIA_LINEAGE]) !== 0) {
+        fail("Bosnia must stay out of ATLAS_IMPORT_SCOPE=all");
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BULGARIA_LINEAGE]) !== 530) {
         fail("Bulgaria office rows");
@@ -1381,51 +1366,6 @@ function main() {
       if (
         count(
           db,
-          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'regional'",
-          [BOSNIA_LINEAGE],
-        ) !== 13
-      ) {
-        fail("Bosnia regional rows");
-      }
-      if (
-        count(
-          db,
-          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND tier = 'municipal'",
-          [BOSNIA_LINEAGE],
-        ) !== 0
-      ) {
-        fail("Bosnia municipal rows");
-      }
-      if (
-        count(
-          db,
-          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND review_status = 'approved'",
-          [BOSNIA_LINEAGE],
-        ) !== 10
-      ) {
-        fail("Bosnia approved classification rows");
-      }
-      if (
-        count(
-          db,
-          "SELECT COUNT(*) AS n FROM office_tier_classification WHERE lineage_id = ? AND review_status = 'needs_review'",
-          [BOSNIA_LINEAGE],
-        ) !== 3
-      ) {
-        fail("Bosnia needs_review classification rows");
-      }
-      if (
-        count(
-          db,
-          "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ? AND (office_id LIKE '%BRC%' OR name LIKE '%Brčko%' OR name LIKE '%Brcko%')",
-          [BOSNIA_LINEAGE],
-        ) !== 0
-      ) {
-        fail("Bosnia invented Brčko office");
-      }
-      if (
-        count(
-          db,
           "SELECT COUNT(*) AS n FROM research_date WHERE lineage_id = ? AND certainty = 'conditional'",
           [ALDERNEY_LINEAGE],
         ) !== 2
@@ -1500,7 +1440,6 @@ function main() {
         ARMENIA_LINEAGE,
         AUSTRIA_LINEAGE,
         BELGIUM_LINEAGE,
-        BOSNIA_LINEAGE,
         BULGARIA_LINEAGE,
         CROATIA_LINEAGE,
         DENMARK_LINEAGE,
@@ -1536,7 +1475,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=13 bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 croatia=1245 portugal=18834 spain=8208 estonia=281 lithuania=123 romania=6460 greece=703 luxembourg=130 malta=215 cyprus=888 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=not-in-all bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 croatia=1245 portugal=18834 spain=8208 estonia=281 lithuania=123 romania=6460 greece=703 luxembourg=130 malta=215 cyprus=888 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });
