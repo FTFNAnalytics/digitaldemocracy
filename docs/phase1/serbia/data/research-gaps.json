@@ -1,0 +1,68 @@
+[
+  {
+    "gap_id": "RS-AX-G01",
+    "status": "open",
+    "topic": "local_numeric_vectors",
+    "detail": "The current office register and three official local contest observations per current local assembly are present, but exhaustive candidate/list vote/seat vectors for every 2016-series, 2020-series and latest local contest have not been transcribed. Numeric omissions are NULL/not_transcribed, never zero."
+  },
+  {
+    "gap_id": "RS-AX-G02",
+    "status": "documented",
+    "topic": "presidential_runoff",
+    "detail": "President is directly elected. First-round majority rule and statutory second round are preserved; 2012 first and second rounds are separate events."
+  },
+  {
+    "gap_id": "RS-AX-G03",
+    "status": "documented",
+    "topic": "vojvodina_executive",
+    "detail": "Vojvodina Assembly is an elected office. The Provincial Government is elected by the Assembly; no direct provincial executive office is created."
+  },
+  {
+    "gap_id": "RS-AX-G04",
+    "status": "documented",
+    "topic": "mayors",
+    "detail": "Municipal presidents and city mayors are selected by elected assemblies under the local system represented by the SORS bulletins. No current direct local executive office is created, including Belgrade mayor."
+  },
+  {
+    "gap_id": "RS-AX-G05",
+    "status": "scope_gate",
+    "topic": "kosovo",
+    "detail": "Kosovo municipal/parallel registers are excluded from this Serbia pack under the standing Atlas gate. SORS local-election bulletins also state Kosovo data are outside their totals. No dual-sovereignty rows are created."
+  },
+  {
+    "gap_id": "RS-AX-G06",
+    "status": "documented",
+    "topic": "european_parliament",
+    "detail": "Serbia is not an EU Member State; zero European Parliament offices are created."
+  },
+  {
+    "gap_id": "RS-AX-G08",
+    "status": "open",
+    "topic": "2020_local_dates",
+    "detail": "The SORS 2020 publication/result series is retained as a historical contest observation, but per-office poll dates are not transcribed. Event dates are explicitly unknown rather than assigned the national 2020 election day."
+  },
+  {
+    "gap_id": "RS-AX-G09",
+    "status": "documented",
+    "topic": "source_bytes",
+    "detail": "Source files in sources/ are normalized research extracts created for this handoff. Their SHA-256 hashes authenticate those extracts, not the original remote web/PDF bytes."
+  },
+  {
+    "gap_id": "RS-AX-G10",
+    "status": "documented",
+    "topic": "city_municipality_filter",
+    "detail": "The statistical register counts 28 city municipalities in the relevant Serbia structure, but election tables show no separate elected councillors for the central same-name Užice, Požarevac and Vranje statistical units. Sevojno, Kostolac and Vranjska Banja are included; the central statistical rows are not offices."
+  },
+  {
+    "gap_id": "RS-AX-G07",
+    "status": "documented_partial",
+    "topic": "historical_status_reforms",
+    "detail": "Five source-identified municipality→city status transitions are now modeled: Vršac, Kikinda, Pirot (2016) and Bor, Prokuplje (2018). RZS states no administrative-territorial boundary change in those releases. Older merger/split history remains unbuilt and no edge is guessed."
+  },
+  {
+    "gap_id": "RS-AX-G11",
+    "status": "open",
+    "topic": "2026_local_numeric_finality",
+    "detail": "Ten 29 March 2026 local/city-municipality contests are registered. Kladovo has an identified final-report link; exhaustive numeric/finality reconciliation remains open for the ten-unit set."
+  }
+]

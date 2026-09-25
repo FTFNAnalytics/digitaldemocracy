@@ -1,0 +1,22 @@
+{
+  "prompt": "AX",
+  "country": "Serbia",
+  "research_snapshot": "2026-09-23",
+  "id_namespace": "serbia-research-ax-v1",
+  "lineage_id": "country-package-serbia",
+  "status": "draft_for_human_review",
+  "applied_changes": 0,
+  "justin_approvals": {
+    "register": false,
+    "tiers": false,
+    "history_and_gaps": false,
+    "implementation": false
+  },
+  "scope_note": "Kosovo municipal/parallel register excluded and explicitly gated; no EP offices.",
+  "coverage_note": "Current office register complete for the evidenced Serbia scope outside Kosovo. Historical contests are structured from official national/provincial and three local source series; exhaustive local candidate/list numeric vectors remain an explicit open research gap.",
+  "current_offices": 173,
+  "historical_only_offices": 5,
+  "events": 531,
+  "results": 671,
+  "retry_rebuilt": true
+}

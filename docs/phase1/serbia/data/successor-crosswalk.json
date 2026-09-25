@@ -1,0 +1,47 @@
+[
+  {
+    "predecessor_office_id": "RS-HIST-MUN-VRSAC",
+    "successor_office_id": "RS-LSG-VRSAC",
+    "relationship": "same_territory_status_change",
+    "effective_label": "2016-03-01",
+    "source_id": "RS-S26",
+    "boundary_change_claim": false,
+    "note": "Explicit legal/status transformation; no guessed merger edge."
+  },
+  {
+    "predecessor_office_id": "RS-HIST-MUN-KIKINDA",
+    "successor_office_id": "RS-LSG-KIKINDA",
+    "relationship": "same_territory_status_change",
+    "effective_label": "2016-03-01",
+    "source_id": "RS-S26",
+    "boundary_change_claim": false,
+    "note": "Explicit legal/status transformation; no guessed merger edge."
+  },
+  {
+    "predecessor_office_id": "RS-HIST-MUN-PIROT",
+    "successor_office_id": "RS-LSG-PIROT",
+    "relationship": "same_territory_status_change",
+    "effective_label": "2016-03-01",
+    "source_id": "RS-S26",
+    "boundary_change_claim": false,
+    "note": "Explicit legal/status transformation; no guessed merger edge."
+  },
+  {
+    "predecessor_office_id": "RS-HIST-MUN-BOR",
+    "successor_office_id": "RS-LSG-BOR",
+    "relationship": "same_territory_status_change",
+    "effective_label": "2018-06-20",
+    "source_id": "RS-S27",
+    "boundary_change_claim": false,
+    "note": "Explicit legal/status transformation; no guessed merger edge."
+  },
+  {
+    "predecessor_office_id": "RS-HIST-MUN-PROKUPLJE",
+    "successor_office_id": "RS-LSG-PROKUPLJE",
+    "relationship": "same_territory_status_change",
+    "effective_label": "2018-06-20",
+    "source_id": "RS-S27",
+    "boundary_change_claim": false,
+    "note": "Explicit legal/status transformation; no guessed merger edge."
+  }
+]

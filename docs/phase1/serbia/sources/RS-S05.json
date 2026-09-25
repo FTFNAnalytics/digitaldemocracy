@@ -1,0 +1,14 @@
+{
+  "source_id": "RS-S05",
+  "publisher": "Statistical Office of the Republic of Serbia",
+  "title": "Local elections data portal",
+  "url": "https://www.stat.gov.rs/sr-latn/oblasti/izbori/lokalni-izbori/",
+  "checked_as_of": "2026-09-23",
+  "evidence_grade": "official_primary",
+  "capture_kind": "normalized_research_extract",
+  "remote_original_bytes_retained": false,
+  "claims": [
+    "Official data portal exposes local-election datasets including 2016, 2020 and 2024."
+  ],
+  "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes."
+}
