@@ -1,5 +1,7 @@
 # Montenegro full office register + historic contests — Prompt AY
 
+The scoped importer is `ATLAS_IMPORT_SCOPE=montenegro` — see [Montenegro_Import.md](Montenegro_Import.md). `all` does not import this lineage. It publishes **27 current + 2 historical** offices, **0 events**, **0 result rows**, and **0 sources**. Holds ME-AY-G01 through ME-AY-G11 stay open. No VPS deploy.
+
 Research/documentation only. **`applied_changes=0`**. All Justin approvals are **unchecked**.
 
 ## Snapshot summary

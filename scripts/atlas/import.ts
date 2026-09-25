@@ -18,6 +18,7 @@
  * The United Kingdom is not part of `all`; use `ATLAS_IMPORT_SCOPE=united_kingdom`.
  * Italy is not part of `all`; use `ATLAS_IMPORT_SCOPE=italy`.
  * Iceland is not part of `all`; use `ATLAS_IMPORT_SCOPE=iceland`.
+ * Montenegro is not part of `all`; use `ATLAS_IMPORT_SCOPE=montenegro`.
  * Bosnia and Herzegovina is not part of `all`; use `ATLAS_IMPORT_SCOPE=bosnia`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
@@ -917,6 +918,39 @@ function main() {
       console.log(`iceland_explicit_predecessor_edges=${result.iceland.counts.explicit_predecessor_edges}`);
       console.log(`iceland_research_dates=${result.iceland.counts.research_dates}`);
       console.log(`iceland_geographies=${result.iceland.counts.geographies}`);
+    }
+    if (result.montenegro) {
+      console.log("lineage=country-package-montenegro");
+      console.log(`montenegro_attempt_id=${result.montenegro.attemptId}`);
+      console.log(`montenegro_release_id=${result.montenegro.releaseId}`);
+      console.log(`montenegro_fingerprint_sha256=${result.montenegro.fingerprint}`);
+      console.log(`montenegro_reused_release=${result.montenegro.reusedRelease ? "yes" : "no"}`);
+      console.log(`montenegro_offices=${result.montenegro.counts.offices}`);
+      console.log(`montenegro_current=${result.montenegro.counts.current_offices}`);
+      console.log(`montenegro_historical=${result.montenegro.counts.historical_offices}`);
+      console.log(`montenegro_draft_tier_national=${result.montenegro.counts.draft_tier_national}`);
+      console.log(`montenegro_draft_tier_municipal=${result.montenegro.counts.draft_tier_municipal}`);
+      console.log(`montenegro_schema_national=${result.montenegro.counts.schema_national}`);
+      console.log(`montenegro_schema_regional=${result.montenegro.counts.schema_regional}`);
+      console.log(`montenegro_schema_municipal=${result.montenegro.counts.schema_municipal}`);
+      console.log(`montenegro_schema_other=${result.montenegro.counts.schema_other}`);
+      console.log(`montenegro_selected_histories=${result.montenegro.counts.selected_histories}`);
+      console.log(`montenegro_prospective_events=${result.montenegro.counts.prospective_events}`);
+      console.log(`montenegro_result_rows=${result.montenegro.counts.result_rows}`);
+      console.log(`montenegro_event_rows=${result.montenegro.counts.total_events}`);
+      console.log(`montenegro_sources=${result.montenegro.counts.sources}`);
+      console.log(`montenegro_unresolved=${result.montenegro.counts.unresolved_evidence}`);
+      console.log(`montenegro_open_holds=${result.montenegro.counts.named_open_holds}`);
+      console.log(`montenegro_approved=${result.montenegro.counts.approved_classifications}`);
+      console.log(`montenegro_needs_review=${result.montenegro.counts.needs_review_classifications}`);
+      console.log(`montenegro_current_local_assemblies=${result.montenegro.counts.current_local_assemblies}`);
+      console.log(`montenegro_historical_nested_assemblies=${result.montenegro.counts.historical_nested_assemblies}`);
+      console.log(`montenegro_direct_executive_offices=${result.montenegro.counts.direct_executive_offices}`);
+      console.log(`montenegro_direct_local_executive_offices=${result.montenegro.counts.direct_local_executive_offices}`);
+      console.log(`montenegro_ep_offices=${result.montenegro.counts.ep_offices}`);
+      console.log(`montenegro_explicit_predecessor_edges=${result.montenegro.counts.explicit_predecessor_edges}`);
+      console.log(`montenegro_research_dates=${result.montenegro.counts.research_dates}`);
+      console.log(`montenegro_geographies=${result.montenegro.counts.geographies}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
