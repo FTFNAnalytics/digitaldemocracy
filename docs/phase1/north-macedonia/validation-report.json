@@ -1,0 +1,205 @@
+{
+  "ok": true,
+  "checks_passed": 39,
+  "checks_total": 39,
+  "applied_changes": 0,
+  "all_justin_approvals_unchecked": true,
+  "scope": "Offline structure, provenance and policy validation; does not certify source election results.",
+  "checks": [
+    {
+      "check": "A01_full_register",
+      "pass": true,
+      "detail": "164 current + 8 source-identified historical-only"
+    },
+    {
+      "check": "A02_unique_keys",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A03_national_local_breakout",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A04_local_councils_and_mayors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A05_popular_executives",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A06_skopje_nesting",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A07_no_EP_regions_PM_or_parties",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A08_historical_source_gate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A09_no_guessed_successors_or_rename_duplicates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A10_tiers_one_to_one",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A11_tier_histogram",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A12_zero_changes_unchecked_approvals",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A13_referential_integrity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A14_source_links",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A15_presidential_rounds_separate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A16_independence_and_indirect_1991_gate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A17_failed_turnout_not_a_winner",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A18_repeat_events_2026",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A19_upcoming_window_not_register_filter",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A20_all_current_local_2025_vote_vectors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A21_2025_runoff_count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A22_null_status_consistency",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A23_explicit_zero_vs_dash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A24_aggregate_not_candidate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A25_2014_conflict_not_silently_repaired",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A26_debar_date_conflict",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A27_revote_not_double_counted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A28_live_portal_not_certified",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A29_exact_223_column_map",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A30_operational_tables_not_written",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A31_coverage_claim_honest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A32_numeric_domains",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A33_elected_roster_derivations",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A34_arithmetic_diagnostics_not_repairs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A35_acceptance_examples",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A36_counts_recomputed",
+      "pass": true,
+      "detail": "{\"council_2025_elected_roster_vectors\": 82, \"events\": 813, \"events_national\": 27, \"offices_current\": 164, \"offices_historical_only\": 8, \"offices_total\": 172, \"results\": 1700, \"results_national\": 86, \"sources\": 222}"
+    },
+    {
+      "check": "A37_source_extract_hashes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A38_manifest_completeness",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "A39_manifest_hashes",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}
