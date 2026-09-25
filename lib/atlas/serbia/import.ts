@@ -273,7 +273,7 @@ export function assertSerbiaFidelity(db: DatabaseSync, projection?: SerbiaProjec
     countRows(
       db,
       "office",
-      "lineage_id = ? AND (name LIKE '%Kosov%' OR name LIKE '%Metohij%' OR office_id LIKE '%KOSOV%' OR office_id LIKE '%EP%')",
+      "lineage_id = ? AND (name LIKE '%Kosov%' OR name LIKE '%Metohij%' OR office_id LIKE '%KOSOV%' OR office_id LIKE '%-EP%' OR office_id LIKE 'EP-%' OR name LIKE '%European Parliament%' OR office_type LIKE '%european%')",
       [SERBIA_LINEAGE],
     ) !== 0
   ) {
