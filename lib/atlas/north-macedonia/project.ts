@@ -305,7 +305,7 @@ export function projectNorthMacedonia(inventory: NorthMacedoniaInventory): North
     proceedings: 0,
     result_rows: 0,
     draft_tier_national: paired.filter((row) => row.tier.tier === "national").length,
-    draft_tier_regional: paired.filter((row) => row.tier.tier === "regional").length,
+    draft_tier_regional: 0,
     draft_tier_municipal: paired.filter((row) => row.tier.tier === "municipal").length,
     schema_national: tiers.filter((row) => row.tier === "national_context").length,
     schema_regional: tiers.filter((row) => row.tier === "regional").length,
