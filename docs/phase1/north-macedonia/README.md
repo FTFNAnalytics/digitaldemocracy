@@ -1,8 +1,10 @@
 # North Macedonia full register — Prompt AZ / ACCEPTED WITH HOLDS
 
+The scoped importer is `ATLAS_IMPORT_SCOPE=north_macedonia` — see [North_Macedonia_Import.md](North_Macedonia_Import.md). `all` does not import this lineage. It publishes **164 current + 8 historical** offices, **0 events**, **0 result rows**, and **0 sources**. Holds MK-AZ-G01, MK-AZ-G04, MK-AZ-G05, MK-AZ-G09 through MK-AZ-G12, MK-AZ-G14 through MK-AZ-G17, and MK-AZ-G19 through MK-AZ-G23 stay open. No VPS deploy.
+
 **164 current + 8 historical-only offices (172 total); 813 events; 1700 result records in the full pack.** Draft tiers: 170 municipal / 2 national (172 rows, 1:1). Justin accepted 2026-09-25 (America/Edmonton) with the open and partly resolved pack gaps left open.
 
-Start: [JUSTIN_ACCEPTANCE.md](JUSTIN_ACCEPTANCE.md) and [JUSTIN_REPORT.md](JUSTIN_REPORT.md). Tiers: `schemas/atlas/tiers/north-macedonia.json` (included as supplied). This land is docs and draft tiers only. There is no `data/research/north-macedonia/` tree and no importer.
+Start: [JUSTIN_ACCEPTANCE.md](JUSTIN_ACCEPTANCE.md) and [JUSTIN_REPORT.md](JUSTIN_REPORT.md). Tiers: `schemas/atlas/tiers/north-macedonia.json` (included as supplied). There is no `data/research/north-macedonia/` tree. `sources/`, `data/events.jsonl`, and `data/results.jsonl` stay omitted.
 
 `research_coverage_complete` stays false. Current offices are Parliament, the popularly elected President, 81 councils, and 81 popularly elected mayors (80 municipalities plus the City of Skopje). Historical-only offices are four councils and four mayors for Drugovo, Vraneshtica, Zajas, and Oslomej. Current direct executives are 82. European Parliament offices are 0. Regional offices are 0. `office_successor_edges` stays empty. The 2013 Kichevo territorial claim is not an office identity. The 2019 country rename does not create a new office.
 

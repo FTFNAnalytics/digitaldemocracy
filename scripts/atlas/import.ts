@@ -20,6 +20,7 @@
  * Iceland is not part of `all`; use `ATLAS_IMPORT_SCOPE=iceland`.
  * Montenegro is not part of `all`; use `ATLAS_IMPORT_SCOPE=montenegro`.
  * Serbia is not part of `all`; use `ATLAS_IMPORT_SCOPE=serbia`.
+ * North Macedonia is not part of `all`; use `ATLAS_IMPORT_SCOPE=north_macedonia`.
  * Bosnia and Herzegovina is not part of `all`; use `ATLAS_IMPORT_SCOPE=bosnia`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
@@ -985,6 +986,38 @@ function main() {
       console.log(`serbia_ep_offices=${result.serbia.counts.ep_offices}`);
       console.log(`serbia_explicit_predecessor_edges=${result.serbia.counts.explicit_predecessor_edges}`);
       console.log(`serbia_geographies=${result.serbia.counts.geographies}`);
+    }
+    if (result.northMacedonia) {
+      console.log("lineage=country-package-north-macedonia");
+      console.log(`north_macedonia_attempt_id=${result.northMacedonia.attemptId}`);
+      console.log(`north_macedonia_release_id=${result.northMacedonia.releaseId}`);
+      console.log(`north_macedonia_fingerprint_sha256=${result.northMacedonia.fingerprint}`);
+      console.log(`north_macedonia_reused_release=${result.northMacedonia.reusedRelease ? "yes" : "no"}`);
+      console.log(`north_macedonia_offices=${result.northMacedonia.counts.offices}`);
+      console.log(`north_macedonia_current=${result.northMacedonia.counts.current_offices}`);
+      console.log(`north_macedonia_historical=${result.northMacedonia.counts.historical_offices}`);
+      console.log(`north_macedonia_draft_tier_national=${result.northMacedonia.counts.draft_tier_national}`);
+      console.log(`north_macedonia_draft_tier_municipal=${result.northMacedonia.counts.draft_tier_municipal}`);
+      console.log(`north_macedonia_schema_national=${result.northMacedonia.counts.schema_national}`);
+      console.log(`north_macedonia_schema_regional=${result.northMacedonia.counts.schema_regional}`);
+      console.log(`north_macedonia_schema_municipal=${result.northMacedonia.counts.schema_municipal}`);
+      console.log(`north_macedonia_schema_other=${result.northMacedonia.counts.schema_other}`);
+      console.log(`north_macedonia_result_rows=${result.northMacedonia.counts.result_rows}`);
+      console.log(`north_macedonia_event_rows=${result.northMacedonia.counts.total_events}`);
+      console.log(`north_macedonia_sources=${result.northMacedonia.counts.sources}`);
+      console.log(`north_macedonia_unresolved=${result.northMacedonia.counts.unresolved_evidence}`);
+      console.log(`north_macedonia_open_holds=${result.northMacedonia.counts.named_open_holds}`);
+      console.log(`north_macedonia_closed_gaps=${result.northMacedonia.counts.closed_gaps}`);
+      console.log(`north_macedonia_approved=${result.northMacedonia.counts.approved_classifications}`);
+      console.log(`north_macedonia_needs_review=${result.northMacedonia.counts.needs_review_classifications}`);
+      console.log(`north_macedonia_current_direct_executives=${result.northMacedonia.counts.current_direct_executives}`);
+      console.log(`north_macedonia_current_local_direct_executives=${result.northMacedonia.counts.current_local_direct_executives}`);
+      console.log(`north_macedonia_current_councils=${result.northMacedonia.counts.current_councils}`);
+      console.log(`north_macedonia_current_mayors=${result.northMacedonia.counts.current_mayors}`);
+      console.log(`north_macedonia_ep_offices=${result.northMacedonia.counts.ep_offices}`);
+      console.log(`north_macedonia_regional_offices=${result.northMacedonia.counts.regional_offices}`);
+      console.log(`north_macedonia_explicit_predecessor_edges=${result.northMacedonia.counts.explicit_predecessor_edges}`);
+      console.log(`north_macedonia_geographies=${result.northMacedonia.counts.geographies}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");
