@@ -19,6 +19,7 @@
  * Italy is not part of `all`; use `ATLAS_IMPORT_SCOPE=italy`.
  * Iceland is not part of `all`; use `ATLAS_IMPORT_SCOPE=iceland`.
  * Montenegro is not part of `all`; use `ATLAS_IMPORT_SCOPE=montenegro`.
+ * Serbia is not part of `all`; use `ATLAS_IMPORT_SCOPE=serbia`.
  * Bosnia and Herzegovina is not part of `all`; use `ATLAS_IMPORT_SCOPE=bosnia`.
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
@@ -951,6 +952,39 @@ function main() {
       console.log(`montenegro_explicit_predecessor_edges=${result.montenegro.counts.explicit_predecessor_edges}`);
       console.log(`montenegro_research_dates=${result.montenegro.counts.research_dates}`);
       console.log(`montenegro_geographies=${result.montenegro.counts.geographies}`);
+    }
+    if (result.serbia) {
+      console.log("lineage=country-package-serbia");
+      console.log(`serbia_attempt_id=${result.serbia.attemptId}`);
+      console.log(`serbia_release_id=${result.serbia.releaseId}`);
+      console.log(`serbia_fingerprint_sha256=${result.serbia.fingerprint}`);
+      console.log(`serbia_reused_release=${result.serbia.reusedRelease ? "yes" : "no"}`);
+      console.log(`serbia_offices=${result.serbia.counts.offices}`);
+      console.log(`serbia_current=${result.serbia.counts.current_offices}`);
+      console.log(`serbia_historical=${result.serbia.counts.historical_offices}`);
+      console.log(`serbia_draft_tier_national=${result.serbia.counts.draft_tier_national}`);
+      console.log(`serbia_draft_tier_regional=${result.serbia.counts.draft_tier_regional}`);
+      console.log(`serbia_draft_tier_municipal=${result.serbia.counts.draft_tier_municipal}`);
+      console.log(`serbia_schema_national=${result.serbia.counts.schema_national}`);
+      console.log(`serbia_schema_regional=${result.serbia.counts.schema_regional}`);
+      console.log(`serbia_schema_municipal=${result.serbia.counts.schema_municipal}`);
+      console.log(`serbia_schema_other=${result.serbia.counts.schema_other}`);
+      console.log(`serbia_result_rows=${result.serbia.counts.result_rows}`);
+      console.log(`serbia_event_rows=${result.serbia.counts.total_events}`);
+      console.log(`serbia_sources=${result.serbia.counts.sources}`);
+      console.log(`serbia_unresolved=${result.serbia.counts.unresolved_evidence}`);
+      console.log(`serbia_open_holds=${result.serbia.counts.named_open_holds}`);
+      console.log(`serbia_approved=${result.serbia.counts.approved_classifications}`);
+      console.log(`serbia_needs_review=${result.serbia.counts.needs_review_classifications}`);
+      console.log(`serbia_direct_executive_offices=${result.serbia.counts.direct_executive_offices}`);
+      console.log(`serbia_direct_local_executive_offices=${result.serbia.counts.direct_local_executive_offices}`);
+      console.log(`serbia_direct_provincial_executive_offices=${result.serbia.counts.direct_provincial_executive_offices}`);
+      console.log(`serbia_current_local_assemblies=${result.serbia.counts.current_local_assemblies}`);
+      console.log(`serbia_city_municipality_assemblies=${result.serbia.counts.city_municipality_assemblies}`);
+      console.log(`serbia_kosovo_scope_offices=${result.serbia.counts.kosovo_scope_offices}`);
+      console.log(`serbia_ep_offices=${result.serbia.counts.ep_offices}`);
+      console.log(`serbia_explicit_predecessor_edges=${result.serbia.counts.explicit_predecessor_edges}`);
+      console.log(`serbia_geographies=${result.serbia.counts.geographies}`);
     }
     if (result.latam) {
       console.log("lineage=latin-america-fe5e91689def");

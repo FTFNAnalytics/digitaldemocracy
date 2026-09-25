@@ -1,5 +1,7 @@
 # Serbia full office register + historic contests — Prompt AX
 
+The scoped importer is `ATLAS_IMPORT_SCOPE=serbia` — see [Serbia_Import.md](Serbia_Import.md). `all` does not import this lineage. It publishes **173 current + 5 historical** offices, **0 events**, **0 result rows**, and **0 sources**. Holds RS-AX-G01 through RS-AX-G11 stay open. Kosovo-scope offices stay 0. No VPS deploy.
+
 **DRAFT FOR HUMAN REVIEW. Research/documentation only. `applied_changes=0`. All Justin approvals remain unchecked.**
 
 ## Headline counts
