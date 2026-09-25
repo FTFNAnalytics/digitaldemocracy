@@ -14,6 +14,7 @@ import { REGIONAL_CALENDAR_LABEL as GERMANY_REGIONAL_CALENDAR_LABEL } from "./ge
 import { REGIONAL_CALENDAR_LABEL as UNITED_KINGDOM_REGIONAL_CALENDAR_LABEL } from "./united-kingdom/identity";
 import { REGIONAL_CALENDAR_LABEL as ITALY_REGIONAL_CALENDAR_LABEL } from "./italy/identity";
 import { REGIONAL_CALENDAR_LABEL as ICELAND_REGIONAL_CALENDAR_LABEL } from "./iceland/identity";
+import { REGIONAL_CALENDAR_LABEL as MONTENEGRO_REGIONAL_CALENDAR_LABEL } from "./montenegro/identity";
 import { REGIONAL_CALENDAR_LABEL as BOSNIA_REGIONAL_CALENDAR_LABEL } from "./bosnia-and-herzegovina/identity";
 import { REGIONAL_CALENDAR_LABEL as ALBANIA_REGIONAL_CALENDAR_LABEL } from "./albania/identity";
 import { REGIONAL_CALENDAR_LABEL as MALTA_REGIONAL_CALENDAR_LABEL } from "./malta/identity";
@@ -740,6 +741,14 @@ export function listAtlasRegionalCalendar(
       offices,
       count: offices.length,
       label: ICELAND_REGIONAL_CALENDAR_LABEL,
+      denominatorKnown: false,
+    };
+  }
+  if (countryId === "montenegro") {
+    return {
+      offices,
+      count: offices.length,
+      label: MONTENEGRO_REGIONAL_CALENDAR_LABEL,
       denominatorKnown: false,
     };
   }
