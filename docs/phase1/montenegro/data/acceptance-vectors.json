@@ -1,0 +1,127 @@
+[
+  {
+    "example_id": "ME-AY-EX01",
+    "expected": "Exactly 25 current local assembly offices, matching the official local-government register.",
+    "title": "Current local universe"
+  },
+  {
+    "example_id": "ME-AY-EX02",
+    "expected": "One current Parliament; Prime Minister/cabinet are not separate popular offices.",
+    "title": "National Parliament"
+  },
+  {
+    "example_id": "ME-AY-EX03",
+    "expected": "One current President office with direct popular majority/runoff election.",
+    "title": "Direct President"
+  },
+  {
+    "example_id": "ME-AY-EX04",
+    "expected": "Zero direct local executive rows; municipal presidents are assembly-elected.",
+    "title": "No direct local mayors"
+  },
+  {
+    "example_id": "ME-AY-EX05",
+    "expected": "Current Capital City assembly exists; no direct mayor office fabricated.",
+    "title": "Podgorica"
+  },
+  {
+    "example_id": "ME-AY-EX06",
+    "expected": "Current Royal Capital assembly exists as a local representative body.",
+    "title": "Cetinje"
+  },
+  {
+    "example_id": "ME-AY-EX07",
+    "expected": "Historical Tuzi-within-Podgorica remains separate from current independent Tuzi.",
+    "title": "Historical Tuzi"
+  },
+  {
+    "example_id": "ME-AY-EX08",
+    "expected": "Historical Golubovci remains historical-only; Zeta context does not become a guessed successor edge.",
+    "title": "Historical Golubovci"
+  },
+  {
+    "example_id": "ME-AY-EX09",
+    "expected": "2013-11-16 event is source-supported after municipal status.",
+    "title": "Petnjica"
+  },
+  {
+    "example_id": "ME-AY-EX10",
+    "expected": "Current Zeta and its 2022 election are retained without rewriting Golubovci identity.",
+    "title": "Zeta"
+  },
+  {
+    "example_id": "ME-AY-EX11",
+    "expected": "No Serbia-and-Montenegro federal office is entered as a Montenegro national office.",
+    "title": "Independence gate"
+  },
+  {
+    "example_id": "ME-AY-EX12",
+    "expected": "Vujanović exceeded half of valid votes; no runoff invented.",
+    "title": "2008 President"
+  },
+  {
+    "example_id": "ME-AY-EX13",
+    "expected": "Vujanović exceeded half; no runoff invented.",
+    "title": "2013 President"
+  },
+  {
+    "example_id": "ME-AY-EX14",
+    "expected": "Đukanović received 53.90%; no runoff invented.",
+    "title": "2018 President"
+  },
+  {
+    "example_id": "ME-AY-EX15",
+    "expected": "No candidate exceeded half; distinct first-round event.",
+    "title": "2023 President R1"
+  },
+  {
+    "example_id": "ME-AY-EX16",
+    "expected": "2023-04-02 is a distinct runoff event; Milatović elected by higher vote total.",
+    "title": "2023 President R2"
+  },
+  {
+    "example_id": "ME-AY-EX17",
+    "expected": "Unresolved/incomplete event with no fabricated final result.",
+    "title": "Šavnik 2022"
+  },
+  {
+    "example_id": "ME-AY-EX18",
+    "expected": "Fourteen source-named local elections use documented 2022-10-23 date.",
+    "title": "2022 local cohort"
+  },
+  {
+    "example_id": "ME-AY-EX19",
+    "expected": "Three official rows total 2,334 votes and 31 seats.",
+    "title": "Žabljak 2018"
+  },
+  {
+    "example_id": "ME-AY-EX20",
+    "expected": "May 26 and November 17 are distinct contests, not a deduplicated year row.",
+    "title": "Budva 2024"
+  },
+  {
+    "example_id": "ME-AY-EX21",
+    "expected": "EP office count is zero.",
+    "title": "No European Parliament"
+  },
+  {
+    "example_id": "ME-AY-EX22",
+    "expected": "Untranscribed vote/share/seat values are NULL/status-coded, never zero.",
+    "title": "Missing numeric semantics"
+  },
+  {
+    "example_id": "ME-AY-EX23",
+    "expected": "Exactly one draft tier row per office; every Justin flag false.",
+    "title": "Draft tiers"
+  },
+  {
+    "example_id": "ME-AY-EX24",
+    "expected": "Transition context uses successor_office_id=null.",
+    "title": "No guessed successor links"
+  },
+  {
+    "example_id": "ME-AY-EX25",
+    "expected": "Source-stated 338,835 valid ballots and 338,833 summed list votes coexist; no correction invented.",
+    "title": "2006 arithmetic discrepancy"
+  }
+]

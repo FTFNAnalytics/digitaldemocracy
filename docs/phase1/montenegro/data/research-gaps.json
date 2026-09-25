@@ -1,0 +1,68 @@
+[
+  {
+    "detail": "Every researched local contest has an event/result-state row, but exhaustive list/candidate vote/share/seat vectors remain untranscribed except detailed Žabljak 2018. Missing numeric values are null/status-coded, never zero.",
+    "gap_id": "ME-AY-G01",
+    "status": "open",
+    "topic": "local_numeric_depth"
+  },
+  {
+    "detail": "The 2022 Šavnik local process remained incomplete in later official proceedings. No final result is asserted.",
+    "gap_id": "ME-AY-G02",
+    "status": "open",
+    "topic": "savnik_2022"
+  },
+  {
+    "detail": "Local archive depth before the documented cycles is uneven. No older contests are invented to force a three-cycle pattern.",
+    "gap_id": "ME-AY-G03",
+    "status": "open",
+    "topic": "older_local_history"
+  },
+  {
+    "detail": "Historical Tuzi-within-Podgorica and Golubovci identities are separate from current Tuzi/Zeta; no guessed successor edges.",
+    "gap_id": "ME-AY-G04",
+    "status": "open",
+    "topic": "nested_local_transitions"
+  },
+  {
+    "detail": "National history begins with post-independence Montenegro; Serbia-and-Montenegro federal offices are excluded.",
+    "gap_id": "ME-AY-G05",
+    "status": "open",
+    "topic": "independence_state_union_gate"
+  },
+  {
+    "detail": "Assemblies are directly elected; municipal presidents/mayors are elected by assemblies. Direct local executive count = 0.",
+    "gap_id": "ME-AY-G06",
+    "status": "resolved_scope_rule",
+    "topic": "mayor_selection"
+  },
+  {
+    "detail": "DIK final-result archive establishes the 2016 parliamentary contest, but list-level numeric vector is not transcribed.",
+    "gap_id": "ME-AY-G07",
+    "status": "open",
+    "topic": "parliament_2016_numeric"
+  },
+  {
+    "detail": "Montenegro is an EU candidate, not a Member State. EP offices = 0.",
+    "gap_id": "ME-AY-G08",
+    "status": "resolved_scope_rule",
+    "topic": "european_parliament"
+  },
+  {
+    "detail": "No prospective unified local-election event is created without an authoritative called/scheduled office binding.",
+    "gap_id": "ME-AY-G09",
+    "status": "open",
+    "topic": "future_local_calendar"
+  },
+  {
+    "detail": "Source hashes authenticate normalized evidence extracts retained in this pack, not remote official source bytes.",
+    "gap_id": "ME-AY-G10",
+    "status": "open_methodological",
+    "topic": "source_hash_scope"
+  },
+  {
+    "detail": "The 2006 final return states 338,835 valid ballots, while the twelve listed vote figures transcribed from it sum to 338,833. Both source claims are preserved; no two-vote correction is invented.",
+    "gap_id": "ME-AY-G11",
+    "status": "source_discrepancy",
+    "topic": "2006_source_arithmetic"
+  }
+]
