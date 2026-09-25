@@ -2,7 +2,7 @@
 
 **123 current + 768 historical-only offices (891 total); 1,180 events; 8,229 results in the full pack.** Draft tiers: 1 national / 868 municipal / 22 other (891 rows, 1:1). Justin accepted 2026-09-25 (America/Edmonton) with holds **AL-BA-G01 through AL-BA-G21** left open.
 
-Start: [JUSTIN_ACCEPTANCE.md](JUSTIN_ACCEPTANCE.md) and [JUSTIN_REPORT.md](JUSTIN_REPORT.md). Tiers: `schemas/atlas/tiers/albania.json` (Prompt BA draft, included as supplied). Phase 1 approved classifier bytes stay at [Phase1_approved_tiers.json](Phase1_approved_tiers.json) (SHA-256 `53a31d441761952a9f511c58a397e7877616c0ad6af30dce7587bcb6bcbbd93d`; 122 municipal). The existing Albania importer still classifies those 122 rows. This land does not add an import scope and does not publish the 891 draft offices.
+Start: [JUSTIN_ACCEPTANCE.md](JUSTIN_ACCEPTANCE.md) and [JUSTIN_REPORT.md](JUSTIN_REPORT.md). Tiers: `schemas/atlas/tiers/albania.json` (Prompt BA draft, included as supplied). Phase 1 approved classifier bytes stay at [Phase1_approved_tiers.json](Phase1_approved_tiers.json) (SHA-256 `53a31d441761952a9f511c58a397e7877616c0ad6af30dce7587bcb6bcbbd93d`; 122 municipal) as a documentary reference. The live importer publishes the Prompt BA register — see [Albania_Import.md](Albania_Import.md). `ATLAS_IMPORT_SCOPE=albania` only; `all` does not import this lineage.
 
 `research_coverage_complete` stays false. Current offices are the Assembly, 61 municipal councils, and 61 directly elected mayors. The President is Assembly-elected; there is no popular president office. European Parliament offices are 0. Popular qark and prefecture offices are 0. Historical-only rows are 768 source-vintage 2011 identities, not 768 proved abolitions. `office_successor_edges` stays empty. Dimal remains the sourced rename of Ura Vajgurore on AL-05-M/C. Untranscribed vote and seat cells stay null, never 0.
 
@@ -16,7 +16,7 @@ Checked-in tier bytes: `38534cec38c039c6807c4b2347fb46bf172ea20aa2252735ca6a6d26
 
 - [x] Justin accepts the register with holds AL-BA-G01–AL-BA-G21 left open (2026-09-25).
 - [x] Justin accepts the supplied draft tiers (1 national / 868 municipal / 22 other; every `justin_approved` stays false).
-- [ ] Justin separately authorizes implementation.
+- [x] Justin separately authorizes implementation (`ATLAS_IMPORT_SCOPE=albania`; not part of `all`).
 
 ## Pack README (pre-acceptance research text)
 

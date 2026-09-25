@@ -180,7 +180,8 @@ export function importAtlasLineages(
   scope: ImportScope = parseImportScope(),
 ): MultiLineageImportResult {
   const result: MultiLineageImportResult = {};
-  if (scope === "albania" || scope === "all") {
+  // Albania Prompt BA stays scoped. `all` does not publish this lineage.
+  if (scopeImportsAlbania(scope)) {
     result.albania = runImport("albania", () => importAlbania(options));
   }
   if (scope === "andorra" || scope === "all") {
@@ -216,7 +217,7 @@ export function importAtlasLineages(
   // Denmark through Estonia last on `all`: large result tables and Poland/Czechia/Croatia/Portugal/Spain
   // events would otherwise sit in the published DB that LatAm copies into staging.
   // Estonia has no result rows in the slim pack and follows Spain.
-  // Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, the United Kingdom, Italy, Iceland, and Bosnia and Herzegovina stay scoped. `all` does not publish those lineages.
+  // Albania, Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, the United Kingdom, Italy, Iceland, and Bosnia and Herzegovina stay scoped. `all` does not publish those lineages.
   if (scope === "denmark" || scope === "all") {
     result.denmark = runImport("denmark", () => importDenmark(options));
   }
@@ -304,6 +305,11 @@ export function importAtlasLineages(
     result.bosnia = runImport("bosnia", () => importBosnia(options));
   }
   return result;
+}
+
+/** True only for `ATLAS_IMPORT_SCOPE=albania`. Never true for `all`. */
+export function scopeImportsAlbania(scope: ImportScope): boolean {
+  return scope === "albania";
 }
 
 /** True only for `ATLAS_IMPORT_SCOPE=hungary`. Never true for `all`. */

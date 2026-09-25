@@ -36,7 +36,7 @@ describe("Netherlands and Switzerland continuity import", () => {
       attemptsPath,
       operator: "albania-netherlands-test",
     });
-    expect(albania.counts.current_offices).toBe(122);
+    expect(albania.counts.current_offices).toBe(123);
     const netherlands = importNetherlands({
       root: repoRoot,
       sqlitePath,
@@ -50,7 +50,7 @@ describe("Netherlands and Switzerland continuity import", () => {
     try {
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
-      ).toBe(122);
+      ).toBe(891);
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(NETHERLANDS_LINEAGE)?.n),
       ).toBe(501);
@@ -75,7 +75,7 @@ describe("Netherlands and Switzerland continuity import", () => {
       attemptsPath,
       operator: "albania-switzerland-test",
     });
-    expect(albania.counts.current_offices).toBe(122);
+    expect(albania.counts.current_offices).toBe(123);
     const switzerland = importSwitzerland({
       root: repoRoot,
       sqlitePath,
@@ -89,7 +89,7 @@ describe("Netherlands and Switzerland continuity import", () => {
     try {
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
-      ).toBe(122);
+      ).toBe(891);
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(SWITZERLAND_LINEAGE)?.n),
       ).toBe(2816);

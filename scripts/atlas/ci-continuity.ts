@@ -102,8 +102,8 @@ function main() {
     if (result.bosnia) {
       fail("ATLAS_IMPORT_SCOPE=all must not be the Bosnia and Herzegovina path");
     }
-    if (result.albania?.counts.current_offices !== 122) {
-      fail(`Albania offices ${String(result.albania?.counts.current_offices)}`);
+    if (result.albania) {
+      fail("ATLAS_IMPORT_SCOPE=all must not be the Albania path");
     }
     if (result.andorra?.counts.current_offices !== 7) {
       fail(`Andorra offices ${String(result.andorra?.counts.current_offices)}`);
@@ -1025,8 +1025,8 @@ function main() {
 
     const db = new DatabaseSync(sqlitePath, { readOnly: true });
     try {
-      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ALBANIA_LINEAGE]) !== 122) {
-        fail("Albania office rows");
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ALBANIA_LINEAGE]) !== 0) {
+        fail("Albania must stay out of ATLAS_IMPORT_SCOPE=all");
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [ANDORRA_LINEAGE]) !== 7) {
         fail("Andorra office rows");
@@ -1434,7 +1434,6 @@ function main() {
         .all()
         .map((row) => String(row.lineage_id));
       const expectedLineages = [
-        ALBANIA_LINEAGE,
         ALDERNEY_LINEAGE,
         ANDORRA_LINEAGE,
         ARMENIA_LINEAGE,
@@ -1475,7 +1474,7 @@ function main() {
     }
     console.log("test:atlas-import ok");
     console.log(
-      `loaded albania=122 andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=not-in-all bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 croatia=1245 portugal=18834 spain=8208 estonia=281 lithuania=123 romania=6460 greece=703 luxembourg=130 malta=215 cyprus=888 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
+      `loaded albania=not-in-all andorra=7 alderney=2 armenia=71 austria=2038 belgium=1234 bosnia=not-in-all bulgaria=530 netherlands=501 switzerland=2816 denmark=346 sweden=320 finland=503 norway=926 ireland=122 poland=5312 czechia=6424 croatia=1245 portugal=18834 spain=8208 estonia=281 lithuania=123 romania=6460 greece=703 luxembourg=130 malta=215 cyprus=888 latam=10227 nz=4 skipped_drafts=${skipped.length} mexico_withholds=67`,
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

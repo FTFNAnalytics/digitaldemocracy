@@ -15,8 +15,9 @@ export function atlasImportStatusMessage(
   return [
     "Election Atlas Albania import is available.",
     "",
-    "npm run import:atlas loads Albania, Andorra, Alderney, Armenia, Austria, Belgium, Bulgaria, Netherlands, Switzerland, Denmark, Sweden, Finland, Norway, Ireland, Poland, Czechia, Croatia, Portugal, Spain, Estonia, and approved continuity packs into SQLite (atomic publish + durable attempt ledger).",
+    "npm run import:atlas loads Andorra, Alderney, Armenia, Austria, Belgium, Bulgaria, Netherlands, Switzerland, Denmark, Sweden, Finland, Norway, Ireland, Poland, Czechia, Croatia, Portugal, Spain, Estonia, and approved continuity packs into SQLite (atomic publish + durable attempt ledger).",
     "ATLAS_IMPORT_SCOPE=albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|croatia|czechia|denmark|estonia|latvia|lithuania|romania|greece|luxembourg|malta|cyprus|france|germany|united_kingdom|italy|iceland|hungary|finland|ireland|netherlands|norway|poland|portugal|spain|sweden|switzerland|latam|nz|all (default all). Draft residual-heavy packs are skipped.",
+    "Albania is ATLAS_IMPORT_SCOPE=albania only. The default all scope does not import Albania.",
     "Latvia is ATLAS_IMPORT_SCOPE=latvia only. The default all scope does not import Latvia.",
     "Lithuania is ATLAS_IMPORT_SCOPE=lithuania only. The default all scope does not import Lithuania.",
     "ATLAS_IMPORT_SCOPE=hungary loads Hungary only. Hungary is not part of all.",

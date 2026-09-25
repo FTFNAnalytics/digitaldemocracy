@@ -168,10 +168,13 @@ describe("atlas CLI stubs", () => {
       });
       expect(result.status, result.stderr).toBe(0);
       expect(result.stdout).toContain("import:atlas");
-      expect(result.stdout).toContain("offices=122");
-      expect(result.stdout).toContain("selected_histories=366");
-      expect(result.stdout).toContain("result_rows=3843");
-      expect(result.stdout).toContain("regional=0");
+      expect(result.stdout).toContain("scope=albania");
+      expect(result.stdout).toContain("albania_offices=891");
+      expect(result.stdout).toContain("albania_current=123");
+      expect(result.stdout).toContain("albania_historical=768");
+      expect(result.stdout).toContain("albania_result_rows=0");
+      expect(result.stdout).toContain("albania_event_rows=0");
+      expect(result.stdout).toContain("albania_schema_regional=0");
       expect(result.stderr).not.toContain("Election Atlas import is not available yet");
 
       const attempts = new DatabaseSync(attemptsPath, { readOnly: true });
@@ -185,7 +188,9 @@ describe("atlas CLI stubs", () => {
 
       const master = new DatabaseSync(sqlitePath, { readOnly: true });
       try {
-        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 122 });
+        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 891 });
+        expect(master.prepare("SELECT COUNT(*) AS n FROM election_event").get()).toMatchObject({ n: 0 });
+        expect(master.prepare("SELECT COUNT(*) AS n FROM result_row").get()).toMatchObject({ n: 0 });
         expect(
           master.prepare("SELECT geography_id FROM office WHERE office_id = 'AL-13-M'").get(),
         ).toMatchObject({ geography_id: "geo-99a7b8d0e325a448c5e7c7ca" });
