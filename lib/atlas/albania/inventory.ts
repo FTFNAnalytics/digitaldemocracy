@@ -5,6 +5,9 @@ import {
   ATTEMPT_LOG_SCHEMA_PATH,
   ATTEMPT_LOG_SHA256,
   ADAPTER_VERSION,
+  APPROVED_TIER_PATH,
+  APPROVED_TIER_SHA256,
+  DRAFT_TIER_SHA256,
   EXPECTED_COUNTS,
   HashInputDescriptor,
   LINEAGE_ID,
@@ -193,6 +196,7 @@ export function scanAlbaniaInventory(options: {
   const packagePrefix = options.packageDir
     ? path.relative(root, packageDir).replace(/\\/g, "/") || PACKAGE_PREFIX
     : PACKAGE_PREFIX;
+  const readingCheckedInSchema = !options.tierPath;
   const tierAbs = options.tierPath ?? path.join(root, TIER_PATH);
   const gitCommit = gitHead(root);
 
@@ -300,9 +304,78 @@ export function scanAlbaniaInventory(options: {
     );
   }
 
+  let classificationBytes = tierBytes!;
+  if (readingCheckedInSchema) {
+    if (tierMeta.sha256 !== DRAFT_TIER_SHA256) {
+      throw new AlbaniaPreflightError(
+        "tier_hash_mismatch",
+        `Albania schema-path tier SHA-256 mismatch; expected ${DRAFT_TIER_SHA256}.`,
+        intendedInventory,
+      );
+    }
+    let draftRows: Array<{ tier?: string; justin_approved?: boolean; review_status?: string }>;
+    try {
+      const parsed = JSON.parse(tierBytes!.toString("utf8")) as unknown;
+      if (!Array.isArray(parsed)) throw new Error("tier file is not an array");
+      draftRows = parsed as Array<{ tier?: string; justin_approved?: boolean; review_status?: string }>;
+    } catch (error) {
+      throw new AlbaniaPreflightError(
+        "tier_unreadable",
+        `Albania schema-path tier file is not a valid tier array: ${error instanceof Error ? error.message : String(error)}`,
+        intendedInventory,
+      );
+    }
+    const histogram = { national: 0, municipal: 0, other: 0 };
+    for (const row of draftRows) {
+      if (row.justin_approved !== false || row.review_status !== "draft_unapproved") {
+        throw new AlbaniaPreflightError(
+          "tier_not_approved",
+          "Prompt BA draft rows must stay justin_approved false and draft_unapproved.",
+          intendedInventory,
+        );
+      }
+      if (row.tier !== "national" && row.tier !== "municipal" && row.tier !== "other") {
+        throw new AlbaniaPreflightError(
+          "tier_unreadable",
+          `Unexpected Albania draft tier ${JSON.stringify(row.tier)}.`,
+          intendedInventory,
+        );
+      }
+      histogram[row.tier] += 1;
+    }
+    if (
+      draftRows.length !== 891 ||
+      histogram.national !== 1 ||
+      histogram.municipal !== 868 ||
+      histogram.other !== 22
+    ) {
+      throw new AlbaniaPreflightError(
+        "office_count",
+        `Albania Prompt BA draft histogram ${draftRows.length} ${JSON.stringify(histogram)} is not 891 (1/868/22).`,
+        intendedInventory,
+      );
+    }
+    const approvedAbs = path.join(root, APPROVED_TIER_PATH);
+    if (!existsSync(approvedAbs)) {
+      throw new AlbaniaPreflightError(
+        "missing_tier",
+        `Phase 1 approved Albania tier file is missing at ${APPROVED_TIER_PATH}.`,
+        intendedInventory,
+      );
+    }
+    classificationBytes = readFileSync(approvedAbs);
+    if (adapterSha256(classificationBytes) !== APPROVED_TIER_SHA256) {
+      throw new AlbaniaPreflightError(
+        "tier_hash_mismatch",
+        `Phase 1 approved Albania tier SHA-256 mismatch; expected ${APPROVED_TIER_SHA256}.`,
+        intendedInventory,
+      );
+    }
+  }
+
   let tierJson: AlbaniaInventory["tiers"];
   try {
-    tierJson = JSON.parse(tierBytes!.toString("utf8")) as AlbaniaInventory["tiers"];
+    tierJson = JSON.parse(classificationBytes.toString("utf8")) as AlbaniaInventory["tiers"];
   } catch (error) {
     throw new AlbaniaPreflightError(
       "tier_unreadable",

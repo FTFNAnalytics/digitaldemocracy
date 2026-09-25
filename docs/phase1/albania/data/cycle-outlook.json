@@ -1,0 +1,24 @@
+[
+  {
+    "scope": "all 61 municipalities, councils and mayors",
+    "expected_ordinary_year": 2027,
+    "exact_polling_date": null,
+    "status": "cycle_expectation_not_scheduled_event",
+    "source_ids": [
+      "constitution",
+      "electoral-code"
+    ],
+    "window_effect": "Does not filter office existence or history"
+  },
+  {
+    "scope": "Assembly",
+    "expected_ordinary_year": 2029,
+    "exact_polling_date": null,
+    "status": "cycle_expectation_not_scheduled_event",
+    "source_ids": [
+      "constitution",
+      "cec-2025-final"
+    ],
+    "window_effect": "Retained even outside alert horizon"
+  }
+]

@@ -16,6 +16,11 @@ export const SCHEMA_VERSION = "atlas-master/1";
 export const CANONICALIZATION = "atlas-c14n/1";
 export const HASH_ALGORITHM = "sha256";
 export const TIER_PATH = "schemas/atlas/tiers/albania.json";
+/** Phase 1 storage-proof classifier. The schema path now holds the Prompt BA draft. */
+export const APPROVED_TIER_PATH = "docs/phase1/albania/Phase1_approved_tiers.json";
+export const APPROVED_TIER_SHA256 = "53a31d441761952a9f511c58a397e7877616c0ad6af30dce7587bcb6bcbbd93d";
+/** Checked-in Prompt BA draft at TIER_PATH. Not the published classification set. */
+export const DRAFT_TIER_SHA256 = "38534cec38c039c6807c4b2347fb46bf172ea20aa2252735ca6a6d26a362c8ae";
 export const PACKAGE_PREFIX = "data/countries/albania";
 export const REGISTER_RELATIVE = "data/countries/albania/tables/office-register.json";
 export const REGISTER_SHA256 = "7d5a3735e83f95ee82deb76c60c6d391fa5faadfd3f660fe71ca8ca0ca05ad62";

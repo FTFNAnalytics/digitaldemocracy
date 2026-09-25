@@ -6,6 +6,9 @@ import path from "node:path";
 import { importAlbania, assertAlbaniaFidelity } from "../../lib/atlas/albania/import";
 import { AlbaniaPreflightError } from "../../lib/atlas/albania/inventory";
 import {
+  APPROVED_TIER_PATH,
+  APPROVED_TIER_SHA256,
+  DRAFT_TIER_SHA256,
   LINEAGE_ID,
   OFFICE_NAMESPACE,
   TIER_PATH,
@@ -18,7 +21,6 @@ import { countRows, openAtlasDatabase } from "../../lib/atlas/sqlite";
 import { migrateMasterDatabase } from "../../lib/atlas/apply-migrations";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
-const APPROVED_TIER_SHA256 = "53a31d441761952a9f511c58a397e7877616c0ad6af30dce7587bcb6bcbbd93d";
 
 function hashFile(relative: string): string {
   return createHash("sha256")
@@ -60,7 +62,8 @@ describe("Albania identity anchors", () => {
   });
 
   it("hashes the approved Albania tier file bytes", () => {
-    expect(hashFile(TIER_PATH)).toBe(APPROVED_TIER_SHA256);
+    expect(hashFile(APPROVED_TIER_PATH)).toBe(APPROVED_TIER_SHA256);
+    expect(hashFile(TIER_PATH)).toBe(DRAFT_TIER_SHA256);
   });
 });
 
@@ -196,7 +199,7 @@ describe("Prompt C Albania import gates", () => {
         const tierInput = master
           .prepare("SELECT sha256, input_kind FROM retained_input WHERE input_path = ?")
           .get(TIER_PATH);
-        expect(tierInput).toMatchObject({ sha256: APPROVED_TIER_SHA256, input_kind: "tier_classification" });
+        expect(tierInput).toMatchObject({ sha256: DRAFT_TIER_SHA256, input_kind: "tier_classification" });
 
         const control = master
           .prepare("SELECT payload_json FROM retained_input WHERE input_path = 'data/countries/albania/tables/governing-control.json'")
@@ -335,7 +338,7 @@ describe("Prompt C Albania import gates", () => {
     expect(existsSync(options.sqlitePath)).toBe(false);
 
     const draftPath = path.join(dir, "draft-albania.json");
-    const approved = JSON.parse(readFileSync(path.join(repoRoot, TIER_PATH), "utf8")) as { status: string };
+    const approved = JSON.parse(readFileSync(path.join(repoRoot, APPROVED_TIER_PATH), "utf8")) as { status: string };
     approved.status = "draft_for_human_review";
     writeFileSync(draftPath, `${JSON.stringify(approved, null, 2)}\n`);
     expect(() => importAlbania({ ...options, tierPath: draftPath })).toThrow(/status is "draft_for_human_review"/);

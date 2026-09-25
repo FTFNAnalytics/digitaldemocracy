@@ -1,0 +1,20 @@
+{
+  "office_successor_edges": [],
+  "rename": {
+    "office_ids": [
+      "AL-05-M",
+      "AL-05-C"
+    ],
+    "old_name": "Ura Vajgurore",
+    "new_name": "Dimal",
+    "type": "same_unit_rename",
+    "source_id": "dimal-law",
+    "creates_new_office": false
+  },
+  "reform": {
+    "law": "115/2014",
+    "new_map_first_elections": 2015,
+    "old_rows": "2011 source-vintage historical records; not an assertion that each was abolished or lacks continuity",
+    "continuity_crosswalk_status": "unresolved; no guessed merger or successor links"
+  }
+}
