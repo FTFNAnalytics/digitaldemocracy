@@ -1,0 +1,229 @@
+# Montenegro → Atlas 223-column field map
+
+**Documentation only. `applied_changes=0`.** Exact destination-name inventory: 20 tables / 223 columns. No importer or database release.
+
+| Table | Column | Proposed Montenegro disposition |
+|---|---|---|
+| `dataset_lineage` | `lineage_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_lineage` | `provenance_kind` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_lineage` | `description` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_release` | `lineage_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_release` | `release_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_release` | `fingerprint_sha256` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_release` | `hash_inputs_json` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_release` | `adapter_version` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_release` | `method_version` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_release` | `schema_version` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_release` | `research_snapshot_label` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_release` | `upstream_release_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_release` | `validated_counts_json` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_release` | `research_coverage_complete` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `dataset_release` | `raw_json` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `retained_input` | `lineage_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `retained_input` | `release_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `retained_input` | `input_path` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `retained_input` | `input_kind` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `retained_input` | `sha256` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `retained_input` | `byte_count` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `retained_input` | `recovery_locator` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `retained_input` | `payload_json` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `country` | `country_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `country` | `country_code` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `country` | `name` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `country` | `polity_kind` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `country` | `region_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `country` | `coverage_status` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `country` | `screening_as_of_label` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `country` | `notes` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `country` | `lineage_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `country` | `release_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `country` | `raw_json` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `geography` | `country_id` | Use source-named current/historical local identity; no guessed parent/effective dates. |
+| `geography` | `geography_id` | Use source-named current/historical local identity; no guessed parent/effective dates. |
+| `geography` | `name` | Use source-named current/historical local identity; no guessed parent/effective dates. |
+| `geography` | `parent_geography_id` | Use source-named current/historical local identity; no guessed parent/effective dates. |
+| `geography` | `effective_from_label` | Use source-named current/historical local identity; no guessed parent/effective dates. |
+| `geography` | `effective_to_label` | Use source-named current/historical local identity; no guessed parent/effective dates. |
+| `geography` | `lineage_id` | Use source-named current/historical local identity; no guessed parent/effective dates. |
+| `geography` | `release_id` | Use source-named current/historical local identity; no guessed parent/effective dates. |
+| `geography` | `raw_json` | Use source-named current/historical local identity; no guessed parent/effective dates. |
+| `office` | `id_namespace` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `office_id` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `country_id` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `geography_id` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `name` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `office_type` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `office_status` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `record_state` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `state_note` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `registry_qualified` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `next_date_id` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `next_date_resolution` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `next_history_key` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `lineage_id` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `release_id` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office` | `raw_json` | Map from `data/office-register.jsonl` where supported; preserve status and selection mode; unknown remains NULL. |
+| `office_tier_classification` | `id_namespace` | Map from `data/draft-tiers.jsonl`; draft_for_human_review only; Justin approval false. |
+| `office_tier_classification` | `office_id` | Map from `data/draft-tiers.jsonl`; draft_for_human_review only; Justin approval false. |
+| `office_tier_classification` | `tier` | Map from `data/draft-tiers.jsonl`; draft_for_human_review only; Justin approval false. |
+| `office_tier_classification` | `review_status` | Map from `data/draft-tiers.jsonl`; draft_for_human_review only; Justin approval false. |
+| `office_tier_classification` | `rationale` | Map from `data/draft-tiers.jsonl`; draft_for_human_review only; Justin approval false. |
+| `office_tier_classification` | `lineage_id` | Map from `data/draft-tiers.jsonl`; draft_for_human_review only; Justin approval false. |
+| `office_tier_classification` | `release_id` | Map from `data/draft-tiers.jsonl`; draft_for_human_review only; Justin approval false. |
+| `office_tier_classification` | `classification_path` | Map from `data/draft-tiers.jsonl`; draft_for_human_review only; Justin approval false. |
+| `office_tier_classification` | `classification_kind` | Map from `data/draft-tiers.jsonl`; draft_for_human_review only; Justin approval false. |
+| `office_tier_classification` | `classification_sha256` | Map from `data/draft-tiers.jsonl`; draft_for_human_review only; Justin approval false. |
+| `office_tier_classification` | `raw_json` | Map from `data/draft-tiers.jsonl`; draft_for_human_review only; Justin approval false. |
+| `research_date` | `date_id` | Derive only from source-supported day/year labels; year-only dates are not padded to January 1. |
+| `research_date` | `label` | Derive only from source-supported day/year labels; year-only dates are not padded to January 1. |
+| `research_date` | `precision` | Derive only from source-supported day/year labels; year-only dates are not padded to January 1. |
+| `research_date` | `certainty` | Derive only from source-supported day/year labels; year-only dates are not padded to January 1. |
+| `research_date` | `year` | Derive only from source-supported day/year labels; year-only dates are not padded to January 1. |
+| `research_date` | `month` | Derive only from source-supported day/year labels; year-only dates are not padded to January 1. |
+| `research_date` | `day` | Derive only from source-supported day/year labels; year-only dates are not padded to January 1. |
+| `research_date` | `range_start_id` | Derive only from source-supported day/year labels; year-only dates are not padded to January 1. |
+| `research_date` | `range_end_id` | Derive only from source-supported day/year labels; year-only dates are not padded to January 1. |
+| `research_date` | `lineage_id` | Derive only from source-supported day/year labels; year-only dates are not padded to January 1. |
+| `research_date` | `release_id` | Derive only from source-supported day/year labels; year-only dates are not padded to January 1. |
+| `research_date` | `raw_json` | Derive only from source-supported day/year labels; year-only dates are not padded to January 1. |
+| `election_event` | `id_namespace` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `office_id` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `history_key` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `event_id` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `date_id` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `date_resolution` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `event_kind` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `selected_history_role` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `electoral_system` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `comparability` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `ballot_basis` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `share_unit` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `legal_outcome` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `record_state` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `state_note` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `lineage_id` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `release_id` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `election_event` | `raw_json` | Map from `data/events.jsonl`; preserve date precision, presidential round, certification and Šavnik incomplete state. |
+| `proceeding` | `id_namespace` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `proceeding` | `office_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `proceeding` | `history_key` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `proceeding` | `proceeding_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `proceeding` | `kind` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `proceeding` | `sequence_no` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `proceeding` | `supersedes_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `proceeding` | `legal_outcome` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `proceeding` | `lineage_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `proceeding` | `release_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `proceeding` | `raw_json` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `result_row` | `id_namespace` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `office_id` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `history_key` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `result_row_id` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `proceeding_id` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `country_id` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `candidate_or_list_label` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `original_party_label` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `original_party_code` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `party_namespace` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `party_mapping_id` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `votes` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `votes_status` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `share` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `share_status` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `share_unit` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `seats` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `seats_status` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `elected_flag` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `is_substitute` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `evidence_status` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `lineage_id` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `release_id` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `result_row` | `raw_json` | Map from `data/results.jsonl`; missing/untranscribed numeric values remain NULL with explicit status; no zero-fill. |
+| `party_mapping` | `country_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `party_mapping` | `party_namespace` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `party_mapping` | `mapping_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `party_mapping` | `source_context` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `party_mapping` | `election_context` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `party_mapping` | `original_label` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `party_mapping` | `original_code` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `party_mapping` | `mapped_group` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `party_mapping` | `uncertainty` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `party_mapping` | `lineage_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `party_mapping` | `release_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `party_mapping` | `raw_json` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `source` | `country_id` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `source` | `source_namespace` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `source` | `source_id` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `source` | `publisher` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `source` | `title` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `source` | `url` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `source` | `checked_as_of_label` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `source` | `evidence_grade` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `source` | `file_sha256` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `source` | `locator` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `source` | `data_rights` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `source` | `lineage_id` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `source` | `release_id` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `source` | `raw_json` | Map source metadata; file hash is retained normalized-extract hash, explicitly not remote-file hash. |
+| `record_locator` | `record_key` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `entity_kind` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `country_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `geography_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `id_namespace` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `office_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `history_key` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `proceeding_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `result_row_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `party_namespace` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `party_mapping_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `source_namespace` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `source_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `input_path` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `lineage_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `release_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `record_locator` | `source_row_locator` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `evidence_link` | `evidence_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `evidence_link` | `record_key` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `evidence_link` | `source_country_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `evidence_link` | `source_namespace` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `evidence_link` | `source_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `evidence_link` | `source_locator` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `evidence_link` | `claim_kind` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `evidence_link` | `date_claim_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `evidence_link` | `claim_json` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `evidence_link` | `lineage_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `evidence_link` | `release_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `unresolved_evidence` | `unresolved_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `unresolved_evidence` | `record_key` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `unresolved_evidence` | `original_token` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `unresolved_evidence` | `source_locator` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `unresolved_evidence` | `reason` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `unresolved_evidence` | `lineage_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `unresolved_evidence` | `release_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `unresolved_evidence` | `raw_json` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `identity_crosswalk` | `entity_kind` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `identity_crosswalk` | `upstream_namespace` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `identity_crosswalk` | `upstream_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `identity_crosswalk` | `record_key` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `identity_crosswalk` | `reason` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `identity_crosswalk` | `lineage_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `identity_crosswalk` | `release_id` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `identity_crosswalk` | `raw_json` | Documentary projection from retained research records where supported; otherwise NULL/no row; raw evidence retained. |
+| `publication_release` | `lineage_id` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `publication_release` | `release_id` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `publication_receipt` | `singleton` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `publication_receipt` | `last_publish_attempt_id` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `publication_receipt` | `attempted_lineage_id` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `publication_receipt` | `attempted_release_id` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `ingest_attempt` | `attempt_id` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `ingest_attempt` | `lineage_id` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `ingest_attempt` | `operator` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `ingest_attempt` | `script_version` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `ingest_attempt` | `started_at` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `ingest_attempt` | `finished_at` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `ingest_attempt` | `status` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `ingest_attempt` | `input_inventory_json` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `ingest_attempt` | `successful_release_id` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `ingest_attempt` | `publication_set_json` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `ingest_attempt` | `row_counts_json` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |
+| `ingest_attempt` | `error_text` | NOT EXECUTED. Operational publication/ingest field; this research pack creates no operational row. |

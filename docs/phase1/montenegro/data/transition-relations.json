@@ -1,0 +1,26 @@
+[
+  {
+    "effective_label": "2018-09-01",
+    "historical_office_id": "ME-HIST-PODGORICA-TUZI-ASM",
+    "note": "Historical nested office and current independent municipality remain separate identities.",
+    "related_current_office_id": "ME-LOC-TUZI-ASM",
+    "relation_id": "ME-REL-TUZI-2018",
+    "relation_kind": "source_identified_territorial_status_transition_not_identity_merge",
+    "source_ids": [
+      "gov-tuzi-transition"
+    ],
+    "successor_office_id": null
+  },
+  {
+    "effective_label": "2022",
+    "historical_office_id": "ME-HIST-PODGORICA-GOLUBOVCI-ASM",
+    "note": "Source contrasts prior Golubovci electoral-roll context with new Zeta election; no legal identity edge inferred.",
+    "related_current_office_id": "ME-LOC-ZETA-ASM",
+    "relation_id": "ME-REL-GOLUBOVCI-ZETA-2022",
+    "relation_kind": "source_identified_territorial_transition_context_not_identity_merge",
+    "source_ids": [
+      "mup-local-2022"
+    ],
+    "successor_office_id": null
+  }
+]
