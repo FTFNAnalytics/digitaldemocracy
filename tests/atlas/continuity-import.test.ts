@@ -131,7 +131,7 @@ describe("multi-lineage continuity import", () => {
       },
       "albania",
     );
-    expect(result.albania?.counts.current_offices).toBe(122);
+    expect(result.albania?.counts.current_offices).toBe(123);
     const nz = importAtlasLineages(
       {
         root: repoRoot,
@@ -146,7 +146,7 @@ describe("multi-lineage continuity import", () => {
     try {
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
-      ).toBe(122);
+      ).toBe(891);
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(NZ_LINEAGE_ID)?.n),
       ).toBe(4);
@@ -171,7 +171,7 @@ describe("multi-lineage continuity import", () => {
       attemptsPath,
       operator: "albania-andorra-test",
     });
-    expect(albania.counts.current_offices).toBe(122);
+    expect(albania.counts.current_offices).toBe(123);
     const andorra = importAndorra({
       root: repoRoot,
       sqlitePath,
@@ -184,7 +184,7 @@ describe("multi-lineage continuity import", () => {
     try {
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
-      ).toBe(122);
+      ).toBe(891);
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ANDORRA_LINEAGE)?.n),
       ).toBe(7);
@@ -209,7 +209,7 @@ describe("multi-lineage continuity import", () => {
       attemptsPath,
       operator: "albania-alderney-test",
     });
-    expect(albania.counts.current_offices).toBe(122);
+    expect(albania.counts.current_offices).toBe(123);
     const alderney = importAlderney({
       root: repoRoot,
       sqlitePath,
@@ -222,7 +222,7 @@ describe("multi-lineage continuity import", () => {
     try {
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
-      ).toBe(122);
+      ).toBe(891);
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALDERNEY_LINEAGE)?.n),
       ).toBe(2);
@@ -247,7 +247,7 @@ describe("multi-lineage continuity import", () => {
       attemptsPath,
       operator: "albania-armenia-test",
     });
-    expect(albania.counts.current_offices).toBe(122);
+    expect(albania.counts.current_offices).toBe(123);
     const armenia = importArmenia({
       root: repoRoot,
       sqlitePath,
@@ -261,7 +261,7 @@ describe("multi-lineage continuity import", () => {
     try {
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
-      ).toBe(122);
+      ).toBe(891);
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ARMENIA_LINEAGE)?.n),
       ).toBe(71);
@@ -286,7 +286,7 @@ describe("multi-lineage continuity import", () => {
       attemptsPath,
       operator: "albania-bosnia-test",
     });
-    expect(albania.counts.current_offices).toBe(122);
+    expect(albania.counts.current_offices).toBe(123);
     const bosnia = importBosnia({
       root: repoRoot,
       sqlitePath,
@@ -304,7 +304,7 @@ describe("multi-lineage continuity import", () => {
     try {
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
-      ).toBe(122);
+      ).toBe(891);
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(BOSNIA_LINEAGE)?.n),
       ).toBe(346);
@@ -329,7 +329,7 @@ describe("multi-lineage continuity import", () => {
       attemptsPath,
       operator: "albania-belgium-test",
     });
-    expect(albania.counts.current_offices).toBe(122);
+    expect(albania.counts.current_offices).toBe(123);
     const belgium = importBelgium({
       root: repoRoot,
       sqlitePath,
@@ -343,7 +343,7 @@ describe("multi-lineage continuity import", () => {
     try {
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
-      ).toBe(122);
+      ).toBe(891);
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(BELGIUM_LINEAGE)?.n),
       ).toBe(1234);
@@ -368,7 +368,7 @@ describe("multi-lineage continuity import", () => {
       attemptsPath,
       operator: "albania-only-test",
     });
-    expect(result.counts.current_offices).toBe(122);
+    expect(result.counts.current_offices).toBe(123);
     expect(result.counts.regional_offices).toBe(0);
   });
 });

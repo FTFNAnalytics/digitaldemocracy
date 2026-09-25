@@ -170,7 +170,7 @@ describe("Spain Atlas importer", () => {
       attemptsPath,
       operator: "albania-spain-test",
     });
-    expect(albania.counts.current_offices).toBe(122);
+    expect(albania.counts.current_offices).toBe(123);
     const spain = importSpain({
       root: repoRoot,
       sqlitePath,
@@ -181,7 +181,7 @@ describe("Spain Atlas importer", () => {
     expect(spain.counts.result_rows).toBe(0);
     const db = new DatabaseSync(sqlitePath, { readOnly: true });
     try {
-      expect(Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n)).toBe(122);
+      expect(Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n)).toBe(891);
       expect(Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(LINEAGE_ID)?.n)).toBe(8208);
       const lineages = db
         .prepare("SELECT lineage_id FROM publication_release ORDER BY lineage_id")

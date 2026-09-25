@@ -1,5 +1,5 @@
 import type { DatabaseSync } from "node:sqlite";
-import { LINEAGE_ID } from "../identity";
+import { LINEAGE_ID } from "./identity";
 import { insertRow } from "../sqlite";
 import type { AlbaniaProjection, SqlRow } from "./project";
 

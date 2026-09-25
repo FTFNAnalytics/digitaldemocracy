@@ -36,7 +36,7 @@ describe("heavy multi-lineage continuity import", () => {
       attemptsPath,
       operator: "albania-austria-test",
     });
-    expect(albania.counts.current_offices).toBe(122);
+    expect(albania.counts.current_offices).toBe(123);
     const austria = importAustria({
       root: repoRoot,
       sqlitePath,
@@ -50,7 +50,7 @@ describe("heavy multi-lineage continuity import", () => {
     try {
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
-      ).toBe(122);
+      ).toBe(891);
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(AUSTRIA_LINEAGE)?.n),
       ).toBe(2038);
@@ -75,7 +75,7 @@ describe("heavy multi-lineage continuity import", () => {
       attemptsPath,
       operator: "albania-bulgaria-test",
     });
-    expect(albania.counts.current_offices).toBe(122);
+    expect(albania.counts.current_offices).toBe(123);
     const bulgaria = importBulgaria({
       root: repoRoot,
       sqlitePath,
@@ -90,7 +90,7 @@ describe("heavy multi-lineage continuity import", () => {
     try {
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(ALBANIA_LINEAGE)?.n),
-      ).toBe(122);
+      ).toBe(891);
       expect(
         Number(db.prepare("SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?").get(BULGARIA_LINEAGE)?.n),
       ).toBe(530);

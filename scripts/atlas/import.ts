@@ -2,8 +2,9 @@
 /**
  * Import approved Atlas lineages into SQLite.
  *
- * Default scope is Albania + Andorra + Alderney + Armenia + Austria + Belgium +
+ * Default scope is Andorra + Alderney + Armenia + Austria + Belgium +
  * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia (`ATLAS_IMPORT_SCOPE=all`).
+ * Albania is not part of `all`; use `ATLAS_IMPORT_SCOPE=albania`.
  * Latvia is not part of `all`; use `ATLAS_IMPORT_SCOPE=latvia`.
  * Lithuania is not part of `all`; use `ATLAS_IMPORT_SCOPE=lithuania`.
  * Hungary is scoped-only (`ATLAS_IMPORT_SCOPE=hungary`) and is not part of `all`.
@@ -46,16 +47,36 @@ function main() {
     console.log(`ATLAS_SQLITE_PATH=${sqlitePath}`);
     if (result.albania) {
       console.log("lineage=country-package-albania");
-      console.log(`attempt_id=${result.albania.attemptId}`);
-      console.log(`release_id=${result.albania.releaseId}`);
-      console.log(`fingerprint_sha256=${result.albania.fingerprint}`);
-      console.log(`reused_release=${result.albania.reusedRelease ? "yes" : "no"}`);
-      console.log(`offices=${result.albania.counts.current_offices}`);
-      console.log(`selected_histories=${result.albania.counts.selected_histories}`);
-      console.log(`result_rows=${result.albania.counts.result_rows}`);
-      console.log(`sources=${result.albania.counts.sources}`);
-      console.log(`municipal=${result.albania.counts.municipal_offices}`);
-      console.log(`regional=${result.albania.counts.regional_offices}`);
+      console.log(`albania_attempt_id=${result.albania.attemptId}`);
+      console.log(`albania_release_id=${result.albania.releaseId}`);
+      console.log(`albania_fingerprint_sha256=${result.albania.fingerprint}`);
+      console.log(`albania_reused_release=${result.albania.reusedRelease ? "yes" : "no"}`);
+      console.log(`albania_offices=${result.albania.counts.offices}`);
+      console.log(`albania_current=${result.albania.counts.current_offices}`);
+      console.log(`albania_historical=${result.albania.counts.historical_offices}`);
+      console.log(`albania_draft_tier_national=${result.albania.counts.draft_tier_national}`);
+      console.log(`albania_draft_tier_municipal=${result.albania.counts.draft_tier_municipal}`);
+      console.log(`albania_draft_tier_other=${result.albania.counts.draft_tier_other}`);
+      console.log(`albania_schema_national=${result.albania.counts.schema_national}`);
+      console.log(`albania_schema_regional=${result.albania.counts.schema_regional}`);
+      console.log(`albania_schema_municipal=${result.albania.counts.schema_municipal}`);
+      console.log(`albania_schema_other=${result.albania.counts.schema_other}`);
+      console.log(`albania_selected_histories=${result.albania.counts.selected_histories}`);
+      console.log(`albania_prospective_events=${result.albania.counts.prospective_events}`);
+      console.log(`albania_result_rows=${result.albania.counts.result_rows}`);
+      console.log(`albania_event_rows=${result.albania.counts.total_events}`);
+      console.log(`albania_sources=${result.albania.counts.sources}`);
+      console.log(`albania_unresolved=${result.albania.counts.unresolved_evidence}`);
+      console.log(`albania_open_holds=${result.albania.counts.named_open_holds}`);
+      console.log(`albania_approved=${result.albania.counts.approved_classifications}`);
+      console.log(`albania_needs_review=${result.albania.counts.needs_review_classifications}`);
+      console.log(`albania_current_direct_executives=${result.albania.counts.current_direct_executives}`);
+      console.log(`albania_historical_direct_executives=${result.albania.counts.historical_direct_executives}`);
+      console.log(`albania_current_mayors=${result.albania.counts.current_mayors}`);
+      console.log(`albania_current_councils=${result.albania.counts.current_councils}`);
+      console.log(`albania_ep_offices=${result.albania.counts.ep_offices}`);
+      console.log(`albania_explicit_predecessor_edges=${result.albania.counts.explicit_predecessor_edges}`);
+      console.log(`albania_geographies=${result.albania.counts.geographies}`);
     }
     if (result.andorra) {
       console.log("lineage=country-package-andorra");

@@ -15,6 +15,7 @@ import { REGIONAL_CALENDAR_LABEL as UNITED_KINGDOM_REGIONAL_CALENDAR_LABEL } fro
 import { REGIONAL_CALENDAR_LABEL as ITALY_REGIONAL_CALENDAR_LABEL } from "./italy/identity";
 import { REGIONAL_CALENDAR_LABEL as ICELAND_REGIONAL_CALENDAR_LABEL } from "./iceland/identity";
 import { REGIONAL_CALENDAR_LABEL as BOSNIA_REGIONAL_CALENDAR_LABEL } from "./bosnia-and-herzegovina/identity";
+import { REGIONAL_CALENDAR_LABEL as ALBANIA_REGIONAL_CALENDAR_LABEL } from "./albania/identity";
 import { REGIONAL_CALENDAR_LABEL as MALTA_REGIONAL_CALENDAR_LABEL } from "./malta/identity";
 import { REGIONAL_CALENDAR_LABEL as ROMANIA_REGIONAL_CALENDAR_LABEL } from "./romania/identity";
 import { REGIONAL_CALENDAR_LABEL as SPAIN_REGIONAL_CALENDAR_LABEL } from "./spain/identity";
@@ -494,6 +495,14 @@ export function listAtlasRegionalCalendar(
       count: offices.length,
       label:
         "15 regional offices (10 provincial councils + Flemish, Walloon, Brussels, German-speaking Community, and French Community parliaments). Historic regional depth is not a forthcoming alert. Remaining-universe notes stay open; no invented municipal or indirect rows beyond the accepted S2 pack.",
+      denominatorKnown: false,
+    };
+  }
+  if (countryId === "albania") {
+    return {
+      offices,
+      count: offices.length,
+      label: ALBANIA_REGIONAL_CALENDAR_LABEL,
       denominatorKnown: false,
     };
   }
