@@ -1,0 +1,236 @@
+[
+  {
+    "id": "A01",
+    "case": "full_register",
+    "expected": "164 current and8 historical-only",
+    "rule": "Retain offices outside alert window."
+  },
+  {
+    "id": "A02",
+    "case": "unique_keys",
+    "expected": "172 unique office IDs",
+    "rule": "No council/mayor or rename collisions."
+  },
+  {
+    "id": "A03",
+    "case": "national_local",
+    "expected": "2 national +162 local current",
+    "rule": "No party organizations or government office."
+  },
+  {
+    "id": "A04",
+    "case": "councils_mayors",
+    "expected": "81 councils +81 popular mayors",
+    "rule": "City of Skopje adds a separate pair."
+  },
+  {
+    "id": "A05",
+    "case": "executives",
+    "expected": "82 current direct executives",
+    "rule": "81 mayors plus President."
+  },
+  {
+    "id": "A06",
+    "case": "skopje",
+    "expected": "20 component-municipality offices +2 city-wide",
+    "rule": "Parent relation is geographic only."
+  },
+  {
+    "id": "A07",
+    "case": "zero_ep",
+    "expected": "EP0 and regional0",
+    "rule": "EU candidate and statistical regions create no offices."
+  },
+  {
+    "id": "A08",
+    "case": "historic_units",
+    "expected": "Drugovo,Vraneshtica,Zajas,Oslomej;8 offices",
+    "rule": "Retain named historical-only units."
+  },
+  {
+    "id": "A09",
+    "case": "successor_gate",
+    "expected": "0 office successor edges",
+    "rule": "Do not guess links from territorial incorporation."
+  },
+  {
+    "id": "A10",
+    "case": "tier_one_to_one",
+    "expected": "172 tiers for172 offices",
+    "rule": "No orphan or missing draft classification."
+  },
+  {
+    "id": "A11",
+    "case": "tier_histogram",
+    "expected": "national2;municipal170",
+    "rule": "Historical offices count in draft tiers."
+  },
+  {
+    "id": "A12",
+    "case": "approvals",
+    "expected": "All false;applied_changes0",
+    "rule": "Research pack never authorizes implementation."
+  },
+  {
+    "id": "A13",
+    "case": "references",
+    "expected": "Every event/result resolves",
+    "rule": "No result on fabricated office."
+  },
+  {
+    "id": "A14",
+    "case": "evidence",
+    "expected": "All source IDs resolve",
+    "rule": "Every numeric row has a source locator."
+  },
+  {
+    "id": "A15",
+    "case": "presidential_rounds",
+    "expected": "2024-04-24 R1 and2024-05-08 R2",
+    "rule": "Do not collapse runoff into first round."
+  },
+  {
+    "id": "A16",
+    "case": "independence",
+    "expected": "No pre1994 popular events",
+    "rule": "No invented popular1991 President."
+  },
+  {
+    "id": "A17",
+    "case": "failed_turnout",
+    "expected": "4 invalid2025 mayor events",
+    "rule": "Votes do not establish an elected mayor."
+  },
+  {
+    "id": "A18",
+    "case": "repeat2026",
+    "expected": "4 events on2026-01-11",
+    "rule": "No missing totals treated as zero."
+  },
+  {
+    "id": "A19",
+    "case": "upcoming",
+    "expected": "Brvenica2026-10-18 only",
+    "rule": "Alert filtering does not delete offices."
+  },
+  {
+    "id": "A20",
+    "case": "2025_coverage",
+    "expected": "81 council and81 first-round mayor vote vectors",
+    "rule": "Separate city-wide and municipal results."
+  },
+  {
+    "id": "A21",
+    "case": "runoffs",
+    "expected": "33 mayor runoff events",
+    "rule": "No guessed runoffs for all81 offices."
+  },
+  {
+    "id": "A22",
+    "case": "null_semantics",
+    "expected": "Reported status requires a number",
+    "rule": "Conflicting or missing remains null."
+  },
+  {
+    "id": "A23",
+    "case": "zero_dash",
+    "expected": "Explicit0 differs from--",
+    "rule": "2024 parliamentary dash seats are null."
+  },
+  {
+    "id": "A24",
+    "case": "aggregate_units",
+    "expected": "2017/2021 local rows are party_group_aggregate",
+    "rule": "Independent/Other is not a candidate name."
+  },
+  {
+    "id": "A25",
+    "case": "2014_conflict",
+    "expected": "Pendarovski runoff votes null",
+    "rule": "No silent fix of contradictory sources."
+  },
+  {
+    "id": "A26",
+    "case": "debar_date",
+    "expected": "14November2021 runoff",
+    "rule": "Retain annex14October typo in note."
+  },
+  {
+    "id": "A27",
+    "case": "partial_revote",
+    "expected": "ShutoNov2 vector is cumulative",
+    "rule": "Never add October andNovember municipal totals."
+  },
+  {
+    "id": "A28",
+    "case": "certification",
+    "expected": "Live SEC portals unconfirmed finality",
+    "rule": "100% processed is not certification."
+  },
+  {
+    "id": "A29",
+    "case": "contract",
+    "expected": "20 tables;223 exact mappings",
+    "rule": "Inherited contract names remain unchanged."
+  },
+  {
+    "id": "A30",
+    "case": "operational",
+    "expected": "No writes to operational tables",
+    "rule": "No ingest/publish receipt simulated."
+  },
+  {
+    "id": "A31",
+    "case": "coverage_claim",
+    "expected": "current complete;history partial",
+    "rule": "Research coverage flag remains false."
+  },
+  {
+    "id": "A32",
+    "case": "numeric_domains",
+    "expected": "Nonnegative votes/seats;shares0–100",
+    "rule": "Do not parse footnote115 as vote digits."
+  },
+  {
+    "id": "A33",
+    "case": "seats",
+    "expected": "81 first-round rosters plus re-vote",
+    "rule": "Recompute positive seats by ballot-list position."
+  },
+  {
+    "id": "A34",
+    "case": "arithmetic",
+    "expected": "Source differences retained",
+    "rule": "Diagnostics never rewrite reported figures."
+  },
+  {
+    "id": "A35",
+    "case": "acceptances",
+    "expected": "At least15 examples",
+    "rule": "This pack has39."
+  },
+  {
+    "id": "A36",
+    "case": "counts",
+    "expected": "Recompute totals from data",
+    "rule": "Report matches JSONL records."
+  },
+  {
+    "id": "A37",
+    "case": "source_hashes",
+    "expected": "Every extract hash and byte count verified",
+    "rule": "Raw PDF hashes labelled separately."
+  },
+  {
+    "id": "A38",
+    "case": "manifest_coverage",
+    "expected": "Every payload file listed",
+    "rule": "SHA256SUMS itself excluded to avoid recursion."
+  },
+  {
+    "id": "A39",
+    "case": "manifest_integrity",
+    "expected": "Every listed digest matches",
+    "rule": "Tampering or missing files fail validation."
+  }
+]

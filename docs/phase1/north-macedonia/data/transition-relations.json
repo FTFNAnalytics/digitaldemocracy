@@ -1,0 +1,31 @@
+{
+  "country_rename": {
+    "aliases": [
+      "Republic of Macedonia",
+      "the former Yugoslav Republic of Macedonia",
+      "Republic of North Macedonia"
+    ],
+    "creates_new_office": false,
+    "effective_label": "2019-02-12",
+    "source_id": "un-rename"
+  },
+  "office_successor_edges": [],
+  "reason": "No office-successor equivalence is asserted. Territorial reform is recorded as source claims, not guessed office links.",
+  "territorial_claims": [
+    {
+      "effective_label": "2013 local elections",
+      "former_units": [
+        "Drugovo",
+        "Vraneshtica",
+        "Zajas",
+        "Oslomej"
+      ],
+      "receiving_territory_label": "Kichevo",
+      "relation_kind": "documented_territorial_reorganization_not_office_identity",
+      "source_ids": [
+        "sso-2013",
+        "odihr-local2013"
+      ]
+    }
+  ]
+}

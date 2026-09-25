@@ -1,0 +1,1786 @@
+[
+  {
+    "applied": false,
+    "column": "country_id",
+    "mapping": "MK research country key; not an assigned production ID",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "country"
+  },
+  {
+    "applied": false,
+    "column": "country_code",
+    "mapping": "MK",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "country"
+  },
+  {
+    "applied": false,
+    "column": "name",
+    "mapping": "corresponding office or geography name; preserve source spelling",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "country"
+  },
+  {
+    "applied": false,
+    "column": "polity_kind",
+    "mapping": "independent republic",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "country"
+  },
+  {
+    "applied": false,
+    "column": "region_id",
+    "mapping": "null; no production region mapping assigned",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "country"
+  },
+  {
+    "applied": false,
+    "column": "coverage_status",
+    "mapping": "full current office register; partial historical numeric coverage",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "country"
+  },
+  {
+    "applied": false,
+    "column": "screening_as_of_label",
+    "mapping": "2026-09-24",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "country"
+  },
+  {
+    "applied": false,
+    "column": "notes",
+    "mapping": "metadata.json.notes",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "country"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "country"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "country"
+  },
+  {
+    "applied": false,
+    "column": "raw_json",
+    "mapping": "retain the complete originating research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "country"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_lineage"
+  },
+  {
+    "applied": false,
+    "column": "provenance_kind",
+    "mapping": "documentation_research_only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_lineage"
+  },
+  {
+    "applied": false,
+    "column": "description",
+    "mapping": "research descriptive text only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_lineage"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_release"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_release"
+  },
+  {
+    "applied": false,
+    "column": "fingerprint_sha256",
+    "mapping": "external ZIP SHA256; no self-referential ZIP hash inside ZIP",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_release"
+  },
+  {
+    "applied": false,
+    "column": "hash_inputs_json",
+    "mapping": "SHA256SUMS inventory",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_release"
+  },
+  {
+    "applied": false,
+    "column": "adapter_version",
+    "mapping": "null; no adapter written",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_release"
+  },
+  {
+    "applied": false,
+    "column": "method_version",
+    "mapping": "AZ research-v1",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_release"
+  },
+  {
+    "applied": false,
+    "column": "schema_version",
+    "mapping": "inherited20tables223columns",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_release"
+  },
+  {
+    "applied": false,
+    "column": "research_snapshot_label",
+    "mapping": "2026-09-24",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_release"
+  },
+  {
+    "applied": false,
+    "column": "upstream_release_id",
+    "mapping": "null; no single upstream release",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_release"
+  },
+  {
+    "applied": false,
+    "column": "validated_counts_json",
+    "mapping": "data/counts.json",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_release"
+  },
+  {
+    "applied": false,
+    "column": "research_coverage_complete",
+    "mapping": "false",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_release"
+  },
+  {
+    "applied": false,
+    "column": "raw_json",
+    "mapping": "retain the complete originating research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "dataset_release"
+  },
+  {
+    "applied": false,
+    "column": "id_namespace",
+    "mapping": "north-macedonia-research-az-v1",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "office_id",
+    "mapping": "data/office-register.jsonl.office_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "history_key",
+    "mapping": "data/events.jsonl.history_key (shared by source cycle; rounds are separate events)",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "event_id",
+    "mapping": "data/events.jsonl.event_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "date_id",
+    "mapping": "prospective date key for event.date_label",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "date_resolution",
+    "mapping": "event.date_precision",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "event_kind",
+    "mapping": "event.event_kind",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "selected_history_role",
+    "mapping": "round / partial repeat / cumulative return; no automatic latest-final selection",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "electoral_system",
+    "mapping": "event.electoral_system, with historical-law gate",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "comparability",
+    "mapping": "event.comparability; territorial and ballot-basis gates apply",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "ballot_basis",
+    "mapping": "result.share_basis; unknown stays unknown",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "share_unit",
+    "mapping": "percent if reported, otherwise null",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "legal_outcome",
+    "mapping": "event.legal_outcome",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "record_state",
+    "mapping": "research_draft",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "state_note",
+    "mapping": "originating record.state_note",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "raw_json",
+    "mapping": "retain the complete originating research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "election_event"
+  },
+  {
+    "applied": false,
+    "column": "evidence_id",
+    "mapping": "prospective typed link, no operational ID",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "evidence_link"
+  },
+  {
+    "applied": false,
+    "column": "record_key",
+    "mapping": "research local typed key; never a fabricated production row ID",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "evidence_link"
+  },
+  {
+    "applied": false,
+    "column": "source_country_id",
+    "mapping": "MK",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "evidence_link"
+  },
+  {
+    "applied": false,
+    "column": "source_namespace",
+    "mapping": "research-source-id only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "evidence_link"
+  },
+  {
+    "applied": false,
+    "column": "source_id",
+    "mapping": "data/source-inventory.json.source_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "evidence_link"
+  },
+  {
+    "applied": false,
+    "column": "source_locator",
+    "mapping": "result.source_locator or source URL and annex page",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "evidence_link"
+  },
+  {
+    "applied": false,
+    "column": "claim_kind",
+    "mapping": "office scope, selection, date, result, or territorial claim",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "evidence_link"
+  },
+  {
+    "applied": false,
+    "column": "date_claim_id",
+    "mapping": "null; source date labels retained",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "evidence_link"
+  },
+  {
+    "applied": false,
+    "column": "claim_json",
+    "mapping": "normalized source extract and linked research records",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "evidence_link"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "evidence_link"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "evidence_link"
+  },
+  {
+    "applied": false,
+    "column": "country_id",
+    "mapping": "MK research country key; not an assigned production ID",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "geography"
+  },
+  {
+    "applied": false,
+    "column": "geography_id",
+    "mapping": "data/office-register.jsonl.geography_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "geography"
+  },
+  {
+    "applied": false,
+    "column": "name",
+    "mapping": "corresponding office or geography name; preserve source spelling",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "geography"
+  },
+  {
+    "applied": false,
+    "column": "parent_geography_id",
+    "mapping": "Skopje component -> City of Skopje; all other municipalities -> MK; city -> MK",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "geography"
+  },
+  {
+    "applied": false,
+    "column": "effective_from_label",
+    "mapping": "null unless exact commencement is sourced; do not use election date as automatic creation date",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "geography"
+  },
+  {
+    "applied": false,
+    "column": "effective_to_label",
+    "mapping": "historical four: 2013 local elections, label precision; current null",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "geography"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "geography"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "geography"
+  },
+  {
+    "applied": false,
+    "column": "raw_json",
+    "mapping": "retain the complete originating research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "geography"
+  },
+  {
+    "applied": false,
+    "column": "entity_kind",
+    "mapping": "geography spelling alias or country-name alias only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "identity_crosswalk"
+  },
+  {
+    "applied": false,
+    "column": "upstream_namespace",
+    "mapping": "source publisher/site",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "identity_crosswalk"
+  },
+  {
+    "applied": false,
+    "column": "upstream_id",
+    "mapping": "null unless directly observed (URL preserved, not assumed permanent key)",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "identity_crosswalk"
+  },
+  {
+    "applied": false,
+    "column": "record_key",
+    "mapping": "research local typed key; never a fabricated production row ID",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "identity_crosswalk"
+  },
+  {
+    "applied": false,
+    "column": "reason",
+    "mapping": "observed same source geography or documented name change; no office succession guessed",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "identity_crosswalk"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "identity_crosswalk"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "identity_crosswalk"
+  },
+  {
+    "applied": false,
+    "column": "raw_json",
+    "mapping": "retain the complete originating research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "identity_crosswalk"
+  },
+  {
+    "applied": false,
+    "column": "attempt_id",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "ingest_attempt"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "ingest_attempt"
+  },
+  {
+    "applied": false,
+    "column": "operator",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "ingest_attempt"
+  },
+  {
+    "applied": false,
+    "column": "script_version",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "ingest_attempt"
+  },
+  {
+    "applied": false,
+    "column": "started_at",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "ingest_attempt"
+  },
+  {
+    "applied": false,
+    "column": "finished_at",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "ingest_attempt"
+  },
+  {
+    "applied": false,
+    "column": "status",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "ingest_attempt"
+  },
+  {
+    "applied": false,
+    "column": "input_inventory_json",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "ingest_attempt"
+  },
+  {
+    "applied": false,
+    "column": "successful_release_id",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "ingest_attempt"
+  },
+  {
+    "applied": false,
+    "column": "publication_set_json",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "ingest_attempt"
+  },
+  {
+    "applied": false,
+    "column": "row_counts_json",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "ingest_attempt"
+  },
+  {
+    "applied": false,
+    "column": "error_text",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "ingest_attempt"
+  },
+  {
+    "applied": false,
+    "column": "id_namespace",
+    "mapping": "north-macedonia-research-az-v1",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "office_id",
+    "mapping": "data/office-register.jsonl.office_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "country_id",
+    "mapping": "MK research country key; not an assigned production ID",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "geography_id",
+    "mapping": "data/office-register.jsonl.geography_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "name",
+    "mapping": "corresponding office or geography name; preserve source spelling",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "office_type",
+    "mapping": "office.office_type",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "office_status",
+    "mapping": "office.status: current or historical_only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "record_state",
+    "mapping": "research_draft",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "state_note",
+    "mapping": "originating record.state_note",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "registry_qualified",
+    "mapping": "draft scope established from primary sources; not an operational approval",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "next_date_id",
+    "mapping": "null; draft next-date label only Brvenica2026-10-18",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "next_date_resolution",
+    "mapping": "day only for explicitly scheduled Brvenica; otherwise unknown",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "next_history_key",
+    "mapping": "null; no future ordinary contest key invented",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "raw_json",
+    "mapping": "retain the complete originating research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office"
+  },
+  {
+    "applied": false,
+    "column": "id_namespace",
+    "mapping": "north-macedonia-research-az-v1",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office_tier_classification"
+  },
+  {
+    "applied": false,
+    "column": "office_id",
+    "mapping": "data/office-register.jsonl.office_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office_tier_classification"
+  },
+  {
+    "applied": false,
+    "column": "tier",
+    "mapping": "draft-tier.tier",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office_tier_classification"
+  },
+  {
+    "applied": false,
+    "column": "review_status",
+    "mapping": "draft_for_human_review",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office_tier_classification"
+  },
+  {
+    "applied": false,
+    "column": "rationale",
+    "mapping": "draft-tier.rationale",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office_tier_classification"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office_tier_classification"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office_tier_classification"
+  },
+  {
+    "applied": false,
+    "column": "classification_path",
+    "mapping": "data/draft-tiers.jsonl",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office_tier_classification"
+  },
+  {
+    "applied": false,
+    "column": "classification_kind",
+    "mapping": "research_draft",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office_tier_classification"
+  },
+  {
+    "applied": false,
+    "column": "classification_sha256",
+    "mapping": "manifest hash of draft-tiers file",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office_tier_classification"
+  },
+  {
+    "applied": false,
+    "column": "raw_json",
+    "mapping": "retain the complete originating research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "office_tier_classification"
+  },
+  {
+    "applied": false,
+    "column": "country_id",
+    "mapping": "MK research country key; not an assigned production ID",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "party_mapping"
+  },
+  {
+    "applied": false,
+    "column": "party_namespace",
+    "mapping": "null; mapping deferred",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "party_mapping"
+  },
+  {
+    "applied": false,
+    "column": "mapping_id",
+    "mapping": "null; none assigned",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "party_mapping"
+  },
+  {
+    "applied": false,
+    "column": "source_context",
+    "mapping": "source_id and source_locator",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "party_mapping"
+  },
+  {
+    "applied": false,
+    "column": "election_context",
+    "mapping": "event_id + round + year; no cross-cycle coalition identity merge",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "party_mapping"
+  },
+  {
+    "applied": false,
+    "column": "original_label",
+    "mapping": "source party/list spelling",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "party_mapping"
+  },
+  {
+    "applied": false,
+    "column": "original_code",
+    "mapping": "null; no source party code transcribed",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "party_mapping"
+  },
+  {
+    "applied": false,
+    "column": "mapped_group",
+    "mapping": "null; no ideology/group guess",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "party_mapping"
+  },
+  {
+    "applied": false,
+    "column": "uncertainty",
+    "mapping": "unmapped_pending_review",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "party_mapping"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "party_mapping"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "party_mapping"
+  },
+  {
+    "applied": false,
+    "column": "raw_json",
+    "mapping": "retain the complete originating research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "party_mapping"
+  },
+  {
+    "applied": false,
+    "column": "id_namespace",
+    "mapping": "north-macedonia-research-az-v1",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "proceeding"
+  },
+  {
+    "applied": false,
+    "column": "office_id",
+    "mapping": "data/office-register.jsonl.office_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "proceeding"
+  },
+  {
+    "applied": false,
+    "column": "history_key",
+    "mapping": "data/events.jsonl.history_key (shared by source cycle; rounds are separate events)",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "proceeding"
+  },
+  {
+    "applied": false,
+    "column": "proceeding_id",
+    "mapping": "no operational proceedings emitted; event.event_id can identify draft round/repeat evidence",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "proceeding"
+  },
+  {
+    "applied": false,
+    "column": "kind",
+    "mapping": "event.event_kind",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "proceeding"
+  },
+  {
+    "applied": false,
+    "column": "sequence_no",
+    "mapping": "event.round only if source establishes order",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "proceeding"
+  },
+  {
+    "applied": false,
+    "column": "supersedes_id",
+    "mapping": "null; no guessed successor or supersession edges",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "proceeding"
+  },
+  {
+    "applied": false,
+    "column": "legal_outcome",
+    "mapping": "event.legal_outcome",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "proceeding"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "proceeding"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "proceeding"
+  },
+  {
+    "applied": false,
+    "column": "raw_json",
+    "mapping": "retain the complete originating research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "proceeding"
+  },
+  {
+    "applied": false,
+    "column": "singleton",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "publication_receipt"
+  },
+  {
+    "applied": false,
+    "column": "last_publish_attempt_id",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "publication_receipt"
+  },
+  {
+    "applied": false,
+    "column": "attempted_lineage_id",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "publication_receipt"
+  },
+  {
+    "applied": false,
+    "column": "attempted_release_id",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "publication_receipt"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "publication_release"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "NOT WRITTEN: operational table excluded by applied_changes=0",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "prohibited_operational_write",
+    "table": "publication_release"
+  },
+  {
+    "applied": false,
+    "column": "record_key",
+    "mapping": "research local typed key; never a fabricated production row ID",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "entity_kind",
+    "mapping": "office / event / result / source typed research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "country_id",
+    "mapping": "MK research country key; not an assigned production ID",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "geography_id",
+    "mapping": "data/office-register.jsonl.geography_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "id_namespace",
+    "mapping": "north-macedonia-research-az-v1",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "office_id",
+    "mapping": "data/office-register.jsonl.office_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "history_key",
+    "mapping": "data/events.jsonl.history_key (shared by source cycle; rounds are separate events)",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "proceeding_id",
+    "mapping": "result.event_id as draft relation only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "result_row_id",
+    "mapping": "result.result_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "party_namespace",
+    "mapping": "null",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "party_mapping_id",
+    "mapping": "null",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "source_namespace",
+    "mapping": "research-source-id only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "source_id",
+    "mapping": "data/source-inventory.json.source_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "input_path",
+    "mapping": "source.retained_extract_path",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "source_row_locator",
+    "mapping": "result.source_locator",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "record_locator"
+  },
+  {
+    "applied": false,
+    "column": "date_id",
+    "mapping": "prospective key from exact date_label; not written",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "research_date"
+  },
+  {
+    "applied": false,
+    "column": "label",
+    "mapping": "event.date_label; source literal date retained in note",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "research_date"
+  },
+  {
+    "applied": false,
+    "column": "precision",
+    "mapping": "event.date_precision",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "research_date"
+  },
+  {
+    "applied": false,
+    "column": "certainty",
+    "mapping": "source-supported or unresolved, never inferred exact date",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "research_date"
+  },
+  {
+    "applied": false,
+    "column": "year",
+    "mapping": "parse only from sourced date_label",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "research_date"
+  },
+  {
+    "applied": false,
+    "column": "month",
+    "mapping": "parse only if precision permits",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "research_date"
+  },
+  {
+    "applied": false,
+    "column": "day",
+    "mapping": "parse only if precision permits",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "research_date"
+  },
+  {
+    "applied": false,
+    "column": "range_start_id",
+    "mapping": "null unless a sourced date range requires it",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "research_date"
+  },
+  {
+    "applied": false,
+    "column": "range_end_id",
+    "mapping": "null unless a sourced date range requires it",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "research_date"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "research_date"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "research_date"
+  },
+  {
+    "applied": false,
+    "column": "raw_json",
+    "mapping": "retain the complete originating research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "research_date"
+  },
+  {
+    "applied": false,
+    "column": "id_namespace",
+    "mapping": "north-macedonia-research-az-v1",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "office_id",
+    "mapping": "data/office-register.jsonl.office_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "history_key",
+    "mapping": "data/events.jsonl.history_key (shared by source cycle; rounds are separate events)",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "result_row_id",
+    "mapping": "result.result_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "proceeding_id",
+    "mapping": "draft link via result.event_id; no production proceeding assigned",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "country_id",
+    "mapping": "MK research country key; not an assigned production ID",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "candidate_or_list_label",
+    "mapping": "result.candidate_or_list_label; party_group_aggregate is NOT a candidate",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "original_party_label",
+    "mapping": "result.original_party_label or group label; no normalized ideology assigned",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "original_party_code",
+    "mapping": "null; ballot position is not party code",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "party_namespace",
+    "mapping": "null; no production party mapping",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "party_mapping_id",
+    "mapping": "null; unresolved by design",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "votes",
+    "mapping": "result.votes",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "votes_status",
+    "mapping": "result.votes_status",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "share",
+    "mapping": "result.share; source percentage, not 0–1 fraction",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "share_status",
+    "mapping": "result.share_status",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "share_unit",
+    "mapping": "result.share_unit",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "seats",
+    "mapping": "result.seats; reported or counted elected roster only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "seats_status",
+    "mapping": "result.seats_status",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "elected_flag",
+    "mapping": "null unless source explicitly establishes winner; never max-votes shortcut",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "is_substitute",
+    "mapping": "null; no substitute appointments modeled",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "evidence_status",
+    "mapping": "result.evidence_status",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "raw_json",
+    "mapping": "retain the complete originating research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "result_row"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "retained_input"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "retained_input"
+  },
+  {
+    "applied": false,
+    "column": "input_path",
+    "mapping": "source.retained_extract_path",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "retained_input"
+  },
+  {
+    "applied": false,
+    "column": "input_kind",
+    "mapping": "normalized_source_extract",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "retained_input"
+  },
+  {
+    "applied": false,
+    "column": "sha256",
+    "mapping": "source.retained_extract_sha256",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "retained_input"
+  },
+  {
+    "applied": false,
+    "column": "byte_count",
+    "mapping": "source.retained_extract_byte_count",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "retained_input"
+  },
+  {
+    "applied": false,
+    "column": "recovery_locator",
+    "mapping": "source.url",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "retained_input"
+  },
+  {
+    "applied": false,
+    "column": "payload_json",
+    "mapping": "normalized factual extract",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "retained_input"
+  },
+  {
+    "applied": false,
+    "column": "country_id",
+    "mapping": "MK research country key; not an assigned production ID",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "source_namespace",
+    "mapping": "research-source-id only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "source_id",
+    "mapping": "data/source-inventory.json.source_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "publisher",
+    "mapping": "source.publisher",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "title",
+    "mapping": "source.title",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "url",
+    "mapping": "source.url",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "checked_as_of_label",
+    "mapping": "source.checked_as_of_label",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "evidence_grade",
+    "mapping": "source.evidence_grade",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "file_sha256",
+    "mapping": "retained_extract_sha256 for bundled extract; original_file_sha256 separately in raw_json",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "locator",
+    "mapping": "source.retained_extract_path",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "data_rights",
+    "mapping": "factual extracts with attribution; original reports not redistributed",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "raw_json",
+    "mapping": "retain the complete originating research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "source"
+  },
+  {
+    "applied": false,
+    "column": "unresolved_id",
+    "mapping": "data/research-gaps.json.gap_id",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "unresolved_evidence"
+  },
+  {
+    "applied": false,
+    "column": "record_key",
+    "mapping": "research local typed key; never a fabricated production row ID",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "unresolved_evidence"
+  },
+  {
+    "applied": false,
+    "column": "original_token",
+    "mapping": "result.raw_tokens or documented conflict tokens",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "unresolved_evidence"
+  },
+  {
+    "applied": false,
+    "column": "source_locator",
+    "mapping": "result.source_locator or source URL and annex page",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "unresolved_evidence"
+  },
+  {
+    "applied": false,
+    "column": "reason",
+    "mapping": "gap.description",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "unresolved_evidence"
+  },
+  {
+    "applied": false,
+    "column": "lineage_id",
+    "mapping": "null; prospective research lineage only",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "unresolved_evidence"
+  },
+  {
+    "applied": false,
+    "column": "release_id",
+    "mapping": "null; no operational release created",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "unresolved_evidence"
+  },
+  {
+    "applied": false,
+    "column": "raw_json",
+    "mapping": "retain the complete originating research record",
+    "null_policy": "Missing, untranscribed, ambiguous or unmapped stays null with evidence/status; only explicit source zero is reported zero.",
+    "status": "documented_mapping_only",
+    "table": "unresolved_evidence"
+  }
+]
