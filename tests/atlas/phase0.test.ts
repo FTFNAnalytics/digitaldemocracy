@@ -172,7 +172,7 @@ function expectExactIds(file: TierFile, expected: string[]) {
 }
 
 describe("Phase 0 tier-classification drafts", () => {
-  const albania = readJson<TierFile>("schemas/atlas/tiers/albania.json");
+  const albania = readJson<TierFile>("docs/phase1/albania/Phase1_approved_tiers.json");
   const andorra = readJson<TierFile>("schemas/atlas/tiers/andorra.json");
   const alderney = readJson<TierFile>("schemas/atlas/tiers/alderney.json");
   const armenia = readJson<TierFile>("schemas/atlas/tiers/armenia.json");
@@ -264,6 +264,34 @@ describe("Phase 0 tier-classification drafts", () => {
       expect(row.human_review).toBeUndefined();
       expect(row).not.toHaveProperty("tier_uncertain");
     }
+    expect(sha256("docs/phase1/albania/Phase1_approved_tiers.json")).toBe(
+      "53a31d441761952a9f511c58a397e7877616c0ad6af30dce7587bcb6bcbbd93d",
+    );
+  });
+
+  it("pins the Albania schema path to the Prompt BA draft checksum", () => {
+    const rows = readJson<
+      Array<{
+        office_id: string;
+        tier: string;
+        justin_approved: boolean;
+        review_status: string;
+      }>
+    >("schemas/atlas/tiers/albania.json");
+    expect(sha256("schemas/atlas/tiers/albania.json")).toBe(
+      "38534cec38c039c6807c4b2347fb46bf172ea20aa2252735ca6a6d26a362c8ae",
+    );
+    expect(rows).toHaveLength(891);
+    expect(rows.every((row) => row.justin_approved === false)).toBe(true);
+    expect(rows.every((row) => row.review_status === "draft_unapproved")).toBe(true);
+    const histogram = { national: 0, municipal: 0, other: 0 };
+    for (const row of rows) {
+      if (row.tier !== "national" && row.tier !== "municipal" && row.tier !== "other") {
+        throw new Error(`Unexpected Albania tier ${row.tier}`);
+      }
+      histogram[row.tier] += 1;
+    }
+    expect(histogram).toEqual({ national: 1, municipal: 868, other: 22 });
   });
 
   it("keeps approved Alderney other without human-review flags", () => {

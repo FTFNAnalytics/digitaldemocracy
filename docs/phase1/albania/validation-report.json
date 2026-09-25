@@ -1,0 +1,293 @@
+{
+  "pack": "Prompt BA — Albania",
+  "as_of": "2026-09-24",
+  "mode": "read_only_research_validation",
+  "applied_changes": 0,
+  "checks_passed": 70,
+  "checks_total": 70,
+  "passed": true,
+  "research_holds_cleared": false,
+  "justin_approved": false,
+  "checks": [
+    {
+      "check": "office_counts_and_unique_ids",
+      "passed": true
+    },
+    {
+      "check": "current_national_local_breakout",
+      "passed": true
+    },
+    {
+      "check": "only_sourced_office_types",
+      "passed": true
+    },
+    {
+      "check": "current_selection_modes",
+      "passed": true
+    },
+    {
+      "check": "current_61_mayor_council_pairs",
+      "passed": true
+    },
+    {
+      "check": "official_61_register_reconciled",
+      "passed": true
+    },
+    {
+      "check": "president_ep_regional_exclusions",
+      "passed": true
+    },
+    {
+      "check": "full_scope_limit_is_explicit",
+      "passed": true
+    },
+    {
+      "check": "historic_types_65_308_11_pairs",
+      "passed": true
+    },
+    {
+      "check": "historic_direct_executives_and_councils",
+      "passed": true
+    },
+    {
+      "check": "historic_borough_parents_sourced",
+      "passed": true
+    },
+    {
+      "check": "legacy_office_id_binding",
+      "passed": true
+    },
+    {
+      "check": "all_122_retained_identity_crosswalks",
+      "passed": true
+    },
+    {
+      "check": "no_guessed_successor_edges",
+      "passed": true
+    },
+    {
+      "check": "dimal_same_unit_rename",
+      "passed": true
+    },
+    {
+      "check": "draft_tiers_bijection",
+      "passed": true
+    },
+    {
+      "check": "draft_tier_histogram",
+      "passed": true
+    },
+    {
+      "check": "event_and_result_counts",
+      "passed": true
+    },
+    {
+      "check": "event_foreign_keys",
+      "passed": true
+    },
+    {
+      "check": "event_source_references",
+      "passed": true
+    },
+    {
+      "check": "result_source_references",
+      "passed": true
+    },
+    {
+      "check": "gap_source_references",
+      "passed": true
+    },
+    {
+      "check": "deterministic_event_keys",
+      "passed": true
+    },
+    {
+      "check": "deterministic_result_rows",
+      "passed": true
+    },
+    {
+      "check": "legacy_known_event",
+      "passed": true
+    },
+    {
+      "check": "result_counts_per_event",
+      "passed": true
+    },
+    {
+      "check": "national_local_event_result_breakout",
+      "passed": true
+    },
+    {
+      "check": "date_precision_and_scheduled_role",
+      "passed": true
+    },
+    {
+      "check": "numeric_types",
+      "passed": true
+    },
+    {
+      "check": "share_units_and_range",
+      "passed": true
+    },
+    {
+      "check": "null_is_not_zero",
+      "passed": true
+    },
+    {
+      "check": "explicit_zero_status",
+      "passed": true
+    },
+    {
+      "check": "baseline_3843_rows_366_events",
+      "passed": true
+    },
+    {
+      "check": "baseline_null_zero_preservation",
+      "passed": true
+    },
+    {
+      "check": "2015_full_mayor_restoration",
+      "passed": true
+    },
+    {
+      "check": "all_current_map_ordinary_cycles",
+      "passed": true
+    },
+    {
+      "check": "2019_votes_stay_preliminary",
+      "passed": true
+    },
+    {
+      "check": "2011_winner_only_null_fields",
+      "passed": true
+    },
+    {
+      "check": "2011_nonblank_council_seats",
+      "passed": true
+    },
+    {
+      "check": "2011_blank_cells_retained",
+      "passed": true
+    },
+    {
+      "check": "2011_cycle_aggregate_date_honesty",
+      "passed": true
+    },
+    {
+      "check": "2011_cancelled_and_repeat_separate",
+      "passed": true
+    },
+    {
+      "check": "council_cycle_seat_totals",
+      "passed": true
+    },
+    {
+      "check": "ten_post1991_national_cycles",
+      "passed": true
+    },
+    {
+      "check": "no_pre1992_national_inference",
+      "passed": true
+    },
+    {
+      "check": "national_cycle_seat_totals",
+      "passed": true
+    },
+    {
+      "check": "early_national_phases_separate",
+      "passed": true
+    },
+    {
+      "check": "transcribed_national_vote_sums",
+      "passed": true
+    },
+    {
+      "check": "2021_arithmetic_hold",
+      "passed": true
+    },
+    {
+      "check": "2025_final_primary_and_preliminary_separate",
+      "passed": true
+    },
+    {
+      "check": "rrogozhine_annulled_recount",
+      "passed": true
+    },
+    {
+      "check": "rrogozhine_repeat_and_certificate",
+      "passed": true
+    },
+    {
+      "check": "tirana_cancelled_schedule_has_no_results",
+      "passed": true
+    },
+    {
+      "check": "five_actual_november_2025_replacements",
+      "passed": true
+    },
+    {
+      "check": "diber_2016_calendar_only",
+      "passed": true
+    },
+    {
+      "check": "repeat_links_reference_same_office",
+      "passed": true
+    },
+    {
+      "check": "no_invented_future_days",
+      "passed": true
+    },
+    {
+      "check": "223_column_exact_coverage",
+      "passed": true
+    },
+    {
+      "check": "all_field_mappings_unapplied",
+      "passed": true
+    },
+    {
+      "check": "acceptance_examples_and_gates",
+      "passed": true
+    },
+    {
+      "check": "all_approvals_unchecked",
+      "passed": true
+    },
+    {
+      "check": "applied_changes_zero",
+      "passed": true
+    },
+    {
+      "check": "no_implementation_artifacts",
+      "passed": true
+    },
+    {
+      "check": "source_inventory_unique",
+      "passed": true
+    },
+    {
+      "check": "retained_extract_hashes",
+      "passed": true
+    },
+    {
+      "check": "original_hash_scope_honest",
+      "passed": true
+    },
+    {
+      "check": "counts_json_consistent",
+      "passed": true
+    },
+    {
+      "check": "other_country_work_remains_pending",
+      "passed": true
+    },
+    {
+      "check": "manifest_complete_safe_unique",
+      "passed": true
+    },
+    {
+      "check": "all_bundled_file_hashes",
+      "passed": true
+    }
+  ]
+}

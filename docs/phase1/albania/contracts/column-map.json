@@ -1,0 +1,1786 @@
+[
+  {
+    "table": "country",
+    "column": "country_id",
+    "mapping": "Literal albania; metadata.json.country_id; do not allocate another country identity.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "country_code",
+    "mapping": "Literal AL; metadata.json.country_code.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "name",
+    "mapping": "Albania.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "polity_kind",
+    "mapping": "Republic; post-1991 identity gate applies.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "region_id",
+    "mapping": "Null; no production region ID allocated.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "coverage_status",
+    "mapping": "Current national/municipal register complete; nested advisory census and historic numeric coverage incomplete.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "screening_as_of_label",
+    "mapping": "2026-09-24 from metadata.json.as_of.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "notes",
+    "mapping": "metadata.json.notes and applicable coverage/identity/research-gap narrative.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "raw_json",
+    "mapping": "Entire originating research record, including null-status, source IDs and coverage qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "provenance_kind",
+    "mapping": "Research/documentation recovery and fresh public-source transcription; reference only.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "description",
+    "mapping": "Prompt BA Albania pack; no ingestion or publication.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "fingerprint_sha256",
+    "mapping": "Unassigned: ZIP SHA is an artifact digest, not a production release fingerprint.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "hash_inputs_json",
+    "mapping": "data/input-inventory.json plus source-inventory and SHA256SUMS; no operational hash-input contract claimed.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "adapter_version",
+    "mapping": "Null; no adapter written or run.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "method_version",
+    "mapping": "Research method documented in README, Coverage and Identity Rules; no production method release.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "schema_version",
+    "mapping": "Inherited 20-table/223-column reference; no database schema version assigned.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_snapshot_label",
+    "mapping": "2026-09-24.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "upstream_release_id",
+    "mapping": "Null; recovered briefing/workbook are source artifacts, not a proven release binding.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "validated_counts_json",
+    "mapping": "data/counts.json after successful read-only validation.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_coverage_complete",
+    "mapping": "False; see metadata.json and data/research-gaps.json.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "raw_json",
+    "mapping": "Entire originating research record, including null-status, source IDs and coverage qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "id_namespace",
+    "mapping": "Inherited reference cdd-observatory-v1; newly allocated research IDs remain unapproved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "office_id",
+    "mapping": "data/office-register.jsonl.office_id; events/results/tiers reference the same exact ID.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "history_key",
+    "mapping": "data/events.jsonl.history_key; join result.event_id to event. Preserve inherited date keys.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "event_id",
+    "mapping": "data/events.jsonl.event_id.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "date_id",
+    "mapping": "Unassigned research-date identity; event.date/date_label/date_precision/range fields retain evidence.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "date_resolution",
+    "mapping": "event.date_precision and date_role; scheduled day is not actual polling.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "event_kind",
+    "mapping": "event.event_kind; cycle_result is a summary, not an additional poll.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "selected_history_role",
+    "mapping": "All sourced BA events retained; prior three-selected-event role is recovery context only.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "electoral_system",
+    "mapping": "Office.selection_mode plus dated cycle source; mixed-system cycle seats and list votes kept distinct.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "comparability",
+    "mapping": "event.comparability and gap G21; no swing score inferred.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "ballot_basis",
+    "mapping": "event.result_scope and result.vote_basis / seat_basis; no merging list and single-member votes.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "share_unit",
+    "mapping": "Percent when share present; percent labels never imply raw vote totals.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "legal_outcome",
+    "mapping": "data/events.jsonl.legal_outcome, including annulled, cancelled schedule and unresolved phases.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "record_state",
+    "mapping": "Research documented; future application/binding unapproved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "state_note",
+    "mapping": "event.note, coverage_note, result_coverage and legal_outcome.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "raw_json",
+    "mapping": "Entire originating research record, including null-status, source IDs and coverage qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "evidence_id",
+    "mapping": "Unassigned; research source references are in events/results/offices.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "record_key",
+    "mapping": "Research reference to office_id, event_id, result_id, source_id or gap_id; production record locator not assigned.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_country_id",
+    "mapping": "albania.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_namespace",
+    "mapping": "albania research-source context; recovered legacy source IDs retained without claiming the full frozen catalogue.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_id",
+    "mapping": "data/source-inventory.json.source_id; result.source_id or event.source_ids identifies supporting source.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_locator",
+    "mapping": "Result.origin, source factual-extract locator or source note; preserve document body/page/section distinctions.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_kind",
+    "mapping": "Office identity, selection law, date, vote, seat, winner or legal outcome as stated in factual extract.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "date_claim_id",
+    "mapping": "Null unless a separately established dated claim exists; no fabricated key.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_json",
+    "mapping": "Applicable normalized factual-extract object plus record status and locator.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "country_id",
+    "mapping": "Literal albania; metadata.json.country_id; do not allocate another country identity.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "geography_id",
+    "mapping": "office-register.geography_id for inherited offices; null for unbound new historical/national research geographies.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "name",
+    "mapping": "office.geography and original qark/district/unit labels; Dimal alias preserved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "parent_geography_id",
+    "mapping": "Null: parent office references for historical boroughs do not invent production geography hierarchy IDs.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "effective_from_label",
+    "mapping": "Sourced territorial vintage only; exact day null unless explicitly established.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "effective_to_label",
+    "mapping": "Null for unresolved unit continuity; no blanket abolition day inferred from reform.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "raw_json",
+    "mapping": "Entire originating research record, including null-status, source IDs and coverage qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "entity_kind",
+    "mapping": "data/identity-crosswalk.json.entity_kind (office for retained legacy bindings).",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_namespace",
+    "mapping": "Recovered Albania office-ID context; not an assumed production namespace.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_id",
+    "mapping": "data/identity-crosswalk.json.upstream_id.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "record_key",
+    "mapping": "Research reference to office_id, event_id, result_id, source_id or gap_id; production record locator not assigned.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "reason",
+    "mapping": "data/identity-crosswalk.json.reason; no guessed merger edges.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "raw_json",
+    "mapping": "Entire originating research record, including null-status, source IDs and coverage qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "attempt_id",
+    "mapping": "No row emitted. attempt_id is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "lineage_id",
+    "mapping": "No row emitted. lineage_id is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "operator",
+    "mapping": "No row emitted. operator is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "script_version",
+    "mapping": "No row emitted. script_version is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "started_at",
+    "mapping": "No row emitted. started_at is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "finished_at",
+    "mapping": "No row emitted. finished_at is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "status",
+    "mapping": "No row emitted. status is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "input_inventory_json",
+    "mapping": "No row emitted. input_inventory_json is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "successful_release_id",
+    "mapping": "No row emitted. successful_release_id is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "publication_set_json",
+    "mapping": "No row emitted. publication_set_json is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "row_counts_json",
+    "mapping": "No row emitted. row_counts_json is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "error_text",
+    "mapping": "No row emitted. error_text is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "id_namespace",
+    "mapping": "Inherited reference cdd-observatory-v1; newly allocated research IDs remain unapproved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "office_id",
+    "mapping": "data/office-register.jsonl.office_id; events/results/tiers reference the same exact ID.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "country_id",
+    "mapping": "Literal albania; metadata.json.country_id; do not allocate another country identity.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "geography_id",
+    "mapping": "office-register.geography_id for inherited offices; null for unbound new historical/national research geographies.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "name",
+    "mapping": "office-register.name, preserving source spelling/vintage.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "office_type",
+    "mapping": "office-register.office_type; national_legislature, municipal_council, mayor or historical borough variants.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "office_status",
+    "mapping": "office-register.status: current or historical_only; historical_only does not prove abolition.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "record_state",
+    "mapping": "Research draft; existing IDs retained, new bindings unapproved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "state_note",
+    "mapping": "office.identity_status and territory_vintage; gaps G03/G05/G20.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "registry_qualified",
+    "mapping": "True for sourced national/municipal elected-body inventory; not implementation approval or exhaustive community-body coverage.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "next_date_id",
+    "mapping": "Null; expected cycle year is not a scheduled date.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "next_date_resolution",
+    "mapping": "Unresolved exact polling date; see cycle-outlook.json.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "next_history_key",
+    "mapping": "Null; no upcoming event key fabricated.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "raw_json",
+    "mapping": "Entire originating research record, including null-status, source IDs and coverage qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "id_namespace",
+    "mapping": "Inherited reference cdd-observatory-v1; newly allocated research IDs remain unapproved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "office_id",
+    "mapping": "data/office-register.jsonl.office_id; events/results/tiers reference the same exact ID.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "tier",
+    "mapping": "draft-tiers.tier; research national corresponds to inherited national_context, municipal to municipal, other to other.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "review_status",
+    "mapping": "draft_unapproved; all justin_approved=false.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "rationale",
+    "mapping": "draft-tiers.rationale.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_path",
+    "mapping": "data/draft-tiers.jsonl.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_kind",
+    "mapping": "Research draft, 1:1 with office register.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_sha256",
+    "mapping": "SHA256SUMS digest of data/draft-tiers.jsonl; not a deployed classification release.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "raw_json",
+    "mapping": "Entire originating research record, including null-status, source IDs and coverage qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "country_id",
+    "mapping": "Literal albania; metadata.json.country_id; do not allocate another country identity.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "party_namespace",
+    "mapping": "Unassigned; no cross-cycle party namespace or mapping approved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapping_id",
+    "mapping": "Null; no party-mapping rows proposed.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "source_context",
+    "mapping": "Result.source_id and source original label.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "election_context",
+    "mapping": "Result.event_id, joined office and history_key.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_label",
+    "mapping": "Result.original_party_label if present, otherwise party_label; retain coalition text.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_code",
+    "mapping": "Result.original_party_code when explicitly provided, else null.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapped_group",
+    "mapping": "Null; no inferred family, ideological group or coalition continuity.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "uncertainty",
+    "mapping": "Gap G21; aggregates and cross-cycle equivalence unresolved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "raw_json",
+    "mapping": "Entire originating research record, including null-status, source IDs and coverage qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "id_namespace",
+    "mapping": "Inherited reference cdd-observatory-v1; newly allocated research IDs remain unapproved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "office_id",
+    "mapping": "data/office-register.jsonl.office_id; events/results/tiers reference the same exact ID.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "history_key",
+    "mapping": "data/events.jsonl.history_key; join result.event_id to event. Preserve inherited date keys.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "proceeding_id",
+    "mapping": "Unassigned; events document legal outcomes but no operational proceeding row is allocated.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "kind",
+    "mapping": "Proposed evidence from event.event_kind/legal_outcome; actual proceeding identity not allocated.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "sequence_no",
+    "mapping": "Only source-established chronological order; null where phase order/date unresolved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "supersedes_id",
+    "mapping": "Null; repeats_event_id is an event repeat relation, not automatic legal supersession.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "legal_outcome",
+    "mapping": "data/events.jsonl.legal_outcome, including annulled, cancelled schedule and unresolved phases.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "raw_json",
+    "mapping": "Entire originating research record, including null-status, source IDs and coverage qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "publication_receipt",
+    "column": "singleton",
+    "mapping": "No row emitted. singleton is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "publication_receipt",
+    "column": "last_publish_attempt_id",
+    "mapping": "No row emitted. last_publish_attempt_id is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_lineage_id",
+    "mapping": "No row emitted. attempted_lineage_id is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_release_id",
+    "mapping": "No row emitted. attempted_release_id is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "publication_release",
+    "column": "lineage_id",
+    "mapping": "No row emitted. lineage_id is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "publication_release",
+    "column": "release_id",
+    "mapping": "No row emitted. release_id is unassigned; no ingestion attempt, publication receipt or publication release exists in this research task.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "record_key",
+    "mapping": "Research reference to office_id, event_id, result_id, source_id or gap_id; production record locator not assigned.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "entity_kind",
+    "mapping": "Research artifact record kind: office, event, result, source, gap or tier.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "country_id",
+    "mapping": "Literal albania; metadata.json.country_id; do not allocate another country identity.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "geography_id",
+    "mapping": "office-register.geography_id for inherited offices; null for unbound new historical/national research geographies.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "id_namespace",
+    "mapping": "Inherited reference cdd-observatory-v1; newly allocated research IDs remain unapproved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "office_id",
+    "mapping": "data/office-register.jsonl.office_id; events/results/tiers reference the same exact ID.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "history_key",
+    "mapping": "data/events.jsonl.history_key; join result.event_id to event. Preserve inherited date keys.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "proceeding_id",
+    "mapping": "Unassigned; events document legal outcomes but no operational proceeding row is allocated.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "result_row_id",
+    "mapping": "Result.result_id; exact existing zero-based row identity preserved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "party_namespace",
+    "mapping": "Unassigned; no cross-cycle party namespace or mapping approved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "party_mapping_id",
+    "mapping": "Null: party/coalition identity unresolved across cycles.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "source_namespace",
+    "mapping": "albania research-source context; recovered legacy source IDs retained without claiming the full frozen catalogue.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "source_id",
+    "mapping": "data/source-inventory.json.source_id; result.source_id or event.source_ids identifies supporting source.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "input_path",
+    "mapping": "Retained relative path from data/source-inventory.json or SHA256SUMS; original remote files are not bundled.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "source_row_locator",
+    "mapping": "Result.origin including workbook_row or source_line where recovered; otherwise explicit document/section locator.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "date_id",
+    "mapping": "Unassigned; no operational research_date rows generated.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "label",
+    "mapping": "Event.date_label, date or range, preserving scheduled/certification distinctions.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "precision",
+    "mapping": "Event.date_precision: day, year or range; no invented missing month/day.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "certainty",
+    "mapping": "Sourced date, source range, cycle year, or unscheduled expectation as documented.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "year",
+    "mapping": "event.cycle_year or sourced research-date year; no inferred polling day.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "month",
+    "mapping": "Month only from an exact sourced day; null for year/range summaries.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "day",
+    "mapping": "Day only from an exact sourced day; null for year/range summaries.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "range_start_id",
+    "mapping": "Unassigned; event.date_start retains actual sourced range boundary.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "range_end_id",
+    "mapping": "Unassigned; event.date_end retains actual sourced range boundary.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "raw_json",
+    "mapping": "Entire originating research record, including null-status, source IDs and coverage qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "id_namespace",
+    "mapping": "Inherited reference cdd-observatory-v1; newly allocated research IDs remain unapproved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "office_id",
+    "mapping": "data/office-register.jsonl.office_id; events/results/tiers reference the same exact ID.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "history_key",
+    "mapping": "data/events.jsonl.history_key; join result.event_id to event. Preserve inherited date keys.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "result_row_id",
+    "mapping": "data/results.jsonl.result_id (event ID + -r + zero-based index).",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "proceeding_id",
+    "mapping": "Unassigned; events document legal outcomes but no operational proceeding row is allocated.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "country_id",
+    "mapping": "Literal albania; metadata.json.country_id; do not allocate another country identity.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "candidate_or_list_label",
+    "mapping": "Result.candidate_or_list_label; aggregates remain explicitly labelled.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_label",
+    "mapping": "Result.original_party_label if present, else party_label; no party inference.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_code",
+    "mapping": "Result.original_party_code when sourced; otherwise null.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "party_namespace",
+    "mapping": "Unassigned; no cross-cycle party namespace or mapping approved.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "party_mapping_id",
+    "mapping": "Null: party/coalition identity unresolved across cycles.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "votes",
+    "mapping": "Result.votes; integer or null. No share-to-vote back-calculation.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "votes_status",
+    "mapping": "Result.votes_status; explicit reported/source_zero or untranscribed.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "share",
+    "mapping": "Result.share; source percentage or explicitly derived inherited vector share; null unchanged.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "share_status",
+    "mapping": "Result.share_status plus share_basis. Derived is not source-reported.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "share_unit",
+    "mapping": "Result.share_unit = percent; not a fraction.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "seats",
+    "mapping": "Result.seats; explicit/inherited allocation or null. No one-seat fabrication for a mayor.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "seats_status",
+    "mapping": "Result.seats_status, including inherited_recorded_zero; 2011 blanks omitted and audited.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "elected_flag",
+    "mapping": "Result.elected; true only if established, false for annulled Rrogozhinë mandate, otherwise null.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "is_substitute",
+    "mapping": "Null; no substitute classification transcribed.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "evidence_status",
+    "mapping": "data/results.jsonl.evidence_status or event.evidence_status; never promote preliminary to certified.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "raw_json",
+    "mapping": "Entire originating research record, including null-status, source IDs and coverage qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "input_path",
+    "mapping": "Retained relative path from data/source-inventory.json or SHA256SUMS; original remote files are not bundled.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "input_kind",
+    "mapping": "Normalized factual extract, reference contract or research data; originals marked not redistributed.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "sha256",
+    "mapping": "SHA256SUMS digest for the exact retained file; original_source_sha256 is a different reference.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "byte_count",
+    "mapping": "Exact retained file length where supplied; original_byte_count is a separate attribute.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "recovery_locator",
+    "mapping": "Source URL and inventory input role; not a local path promised inside ZIP for excluded originals.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "payload_json",
+    "mapping": "Normalized facts in sources/normalized or complete applicable research record.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "country_id",
+    "mapping": "Literal albania; metadata.json.country_id; do not allocate another country identity.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "source_namespace",
+    "mapping": "albania research-source context; recovered legacy source IDs retained without claiming the full frozen catalogue.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "source_id",
+    "mapping": "data/source-inventory.json.source_id; result.source_id or event.source_ids identifies supporting source.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "publisher",
+    "mapping": "Infer only from explicit issuing institution/title/URL; authority grade retained. No source publisher ID invented.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "title",
+    "mapping": "source-inventory.title.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "url",
+    "mapping": "source-inventory.url.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "checked_as_of_label",
+    "mapping": "source-inventory.accessed; original legacy access date remains in note.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "evidence_grade",
+    "mapping": "source-inventory.evidence_grade and record-level qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "file_sha256",
+    "mapping": "retained_extract_sha256 for retained extract; original_sha256 only for original bytes, separately labelled.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "locator",
+    "mapping": "retained_extract_path plus source URL and page/section in facts.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "data_rights",
+    "mapping": "Public factual extraction; original reports/HTML not redistributed; no blanket license assertion.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "raw_json",
+    "mapping": "Entire originating research record, including null-status, source IDs and coverage qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "unresolved_id",
+    "mapping": "data/research-gaps.json.gap_id or separately described diagnostic; research identifier only.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "record_key",
+    "mapping": "Research reference to office_id, event_id, result_id, source_id or gap_id; production record locator not assigned.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "original_token",
+    "mapping": "Unresolved source unit, date, total or party label preserved in diagnostic/gap, not guessed.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "source_locator",
+    "mapping": "Result.origin, source factual-extract locator or source note; preserve document body/page/section distinctions.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "reason",
+    "mapping": "Gap finding/next_evidence, arithmetic diagnostic or unresolved proceedings issue.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "lineage_id",
+    "mapping": "Reference country-package-albania only; no operational lineage row written.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "release_id",
+    "mapping": "Unassigned / null; no operational release created.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "raw_json",
+    "mapping": "Entire originating research record, including null-status, source IDs and coverage qualifications.",
+    "status": "documented_mapping_only",
+    "null_policy": "Missing/untranscribed/unresolved stays null with status. No missing-to-zero conversion. Source zeros and inherited recorded zeros keep separate evidence qualifications.",
+    "applied": false
+  }
+]

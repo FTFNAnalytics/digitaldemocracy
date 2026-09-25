@@ -1,0 +1,260 @@
+[
+  {
+    "gap_id": "AL-BA-G01",
+    "topic": "presidential_selection",
+    "status": "policy_confirmed",
+    "finding": "President is elected by the Assembly under Constitution Article 87. Zero popular presidential offices.",
+    "next_evidence": "Reopen only if a sourced law changes the selection mode.",
+    "source_ids": [
+      "constitution"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G02",
+    "topic": "mayor_selection",
+    "status": "policy_confirmed",
+    "finding": "Municipal mayors are directly elected by plurality; Article 166 uses a public lot for exact ties. No invented general runoff.",
+    "next_evidence": "Retain dated historical selection rules separately; indirect acting appointments do not change the popular office.",
+    "source_ids": [
+      "constitution",
+      "electoral-code"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G03",
+    "topic": "2014_2015_reform",
+    "status": "research_hold",
+    "finding": "2011 organs continued until constitution of new 2015 organs. Historical register is source-vintage; continuity and exact effect dates for each unit are not established.",
+    "next_evidence": "Obtain dated statutory unit annexes and explicit continuity evidence before any merger/successor edge.",
+    "source_ids": [
+      "territorial-law",
+      "cec-2011-winners",
+      "cec-2011-council-seats"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G04",
+    "topic": "dimal_rename",
+    "status": "partial_resolution",
+    "finding": "Law 34/2021 renames Ura Vajgurore to Dimal, not a new office or proven boundary change. Exact Gazette effective day untranscribed.",
+    "next_evidence": "Preserve AL-05-M/C and old labels; retrieve the Gazette publication before assigning an exact effective date.",
+    "source_ids": [
+      "dimal-law",
+      "dimal-decree",
+      "instat-register"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G05",
+    "topic": "nested_local_bodies",
+    "status": "research_hold",
+    "finding": "2011 Tirana boroughs are distinct elected bodies. Current administrative heads are appointed; Articles 68–70 also provide voluntary neighbourhood structures and elected advisory village headships. No locality-specific current census is established.",
+    "next_evidence": "Research actual municipal decisions, current village boards and competence before creating any additional elected advisory-body rows. No blanket claim that nested elected bodies do not exist.",
+    "source_ids": [
+      "odihr-2011-local",
+      "territorial-law",
+      "local-government-law"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G06",
+    "topic": "no_popular_regional_tier",
+    "status": "policy_confirmed",
+    "finding": "Qark councils exist but are composed indirectly; prefects are appointed. No qark/prefecture popular assemblies are emitted.",
+    "next_evidence": "Maintain distinction between administrative geography and popular elected office.",
+    "source_ids": [
+      "constitution",
+      "local-government-law"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G07",
+    "topic": "no_ep",
+    "status": "policy_confirmed",
+    "finding": "Albania is an EU candidate, not a Member State. EP offices and EP contests are zero.",
+    "next_evidence": "Reopen only on documented membership/election competence.",
+    "source_ids": [
+      "eu-candidate"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G08",
+    "topic": "rrogozhine_annulment_repeat",
+    "status": "partial_resolution",
+    "finding": "May 2023 recounted vector and July repeat are separate. Final mandate evidence does not certify every vote in a secondary numeric report.",
+    "next_evidence": "Retrieve primary signed summary tables for both phases; retain existing event IDs and qualification.",
+    "source_ids": [
+      "Sfaae00802d",
+      "rrogozhine-recount",
+      "cec-2023-report",
+      "cec-rrogozhine-certificate"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G09",
+    "topic": "replacement_contests",
+    "status": "research_hold",
+    "finding": "Selected 2016–2025 replacements are documented. Dibër 11 September 2016 is calendar-only. Some other returns rely on secondary reports or dashboards.",
+    "next_evidence": "Recover official signed returns and a complete historical by-election census; do not infer absent totals.",
+    "source_ids": [
+      "cec-diber-2016",
+      "cec-2025-final"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G10",
+    "topic": "tirana_2025_cancelled_schedule",
+    "status": "policy_confirmed",
+    "finding": "9 November 2025 Tirana mayor poll was scheduled but not held; the decree was suspended then annulled. No result or successor event.",
+    "next_evidence": "Retain scheduled date role and court chronology separately from polling days.",
+    "source_ids": [
+      "cec-2025-final",
+      "court-tirana-2025"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G11",
+    "topic": "2011_repeat_phases",
+    "status": "research_hold",
+    "finding": "Final CEC cycle tables are not phase-specific. Paper/Pishaj cancelled mayor polls and undated repeats are distinct. Other repeat bindings remain unresolved.",
+    "next_evidence": "Obtain primary decisions and dates for Molles, Shllak, Armen, Kolsh, Finiq, Shalle and Qendar before ballot-level mapping.",
+    "source_ids": [
+      "odihr-2011-local",
+      "cec-2011-winners"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G12",
+    "topic": "1991_republic_gate",
+    "status": "research_hold",
+    "finding": "March–April 1991 polling preceded the 29 April interim constitutional transition. This pack does not force that election into the post-1991 Republic office.",
+    "next_evidence": "Resolve exact institutional legal identity before adding 1991; no communist-era identity duplicates.",
+    "source_ids": [
+      "ipu-1991-gate"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G13",
+    "topic": "early_national_numeric_coverage",
+    "status": "research_hold",
+    "finding": "1992/1996 shares and seats, 1997/2001 seats, and 2005 list votes/final seats are available; many raw and phase-specific votes are missing.",
+    "next_evidence": "Recover CEC/Gazette returns. Do not backsolve votes from percentages or treat aggregate Others as a party.",
+    "source_ids": [
+      "ipu-1992",
+      "ipu-1996",
+      "ipu-1997",
+      "odihr-2001",
+      "odihr-2005"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G14",
+    "topic": "2021_arithmetic",
+    "status": "research_hold",
+    "finding": "Observer annex row votes sum to 1,578,117 but printed valid-vote summary is 1,661,176. No silent repair or inferred denominator.",
+    "next_evidence": "Recover primary CEC certified table and explicitly record any correction/version.",
+    "source_ids": [
+      "odihr-2021"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G15",
+    "topic": "2025_final_vs_preliminary",
+    "status": "partial_resolution",
+    "finding": "CEC final table takes precedence. ODIHR footnote 131 identifies its copied figures as preliminary. They remain a separate comparison, not additional result rows.",
+    "next_evidence": "Maintain final return and preliminary provenance as separate states; no overwriting without an audit.",
+    "source_ids": [
+      "cec-2025-final",
+      "odihr-2025"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G16",
+    "topic": "inherited_result_certification",
+    "status": "research_hold",
+    "finding": "3,843 inherited rows retain original numbers, including 1,876 recorded seat zeros. Workbook/HTML equality and fresh 2023 vote-vector matches do not certify every seat or candidate binding.",
+    "next_evidence": "Use primary signed tables for any cell-level upgrade; preserve existing row order and missingness.",
+    "source_ids": [
+      "cec-2019-final-bulletin",
+      "S22239c4c5c",
+      "Sfaae00802d",
+      "Sda58eaa90c"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G17",
+    "topic": "older_local_history",
+    "status": "research_hold",
+    "finding": "2011 is the historical full-unit census in this pack. Earlier post-1991 local cycles and all later repeat phases are not exhaustively transcribed.",
+    "next_evidence": "Recover historical CEC/Gazette registers and returns without guessing continuity to current offices.",
+    "source_ids": [
+      "cec-2011-winners",
+      "cec-2011-council-seats"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G18",
+    "topic": "future_cycles_and_reform",
+    "status": "research_hold",
+    "finding": "61 current municipalities retained; proposed later reforms are not treated as enacted. Ordinary cycle expectations are 2027 local and 2029 national, with no verified exact day recorded.",
+    "next_evidence": "Check enacted territorial changes and election decrees before alert scheduling; never use the window to delete offices/history.",
+    "source_ids": [
+      "territorial-law",
+      "instat-current",
+      "constitution"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G19",
+    "topic": "source_retrieval_and_hash_scope",
+    "status": "research_hold",
+    "finding": "Some primary/legacy URLs are inaccessible; web-text-only sources lack original-byte hashes. Every retained normalized extract has a hash. Original files are not redistributed.",
+    "next_evidence": "Re-fetch missing originals where available; do not present normalized-extract digests as remote-file digests.",
+    "source_ids": [
+      "dimal-decree",
+      "eu-candidate"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G20",
+    "topic": "identity_contract_recovery",
+    "status": "research_hold",
+    "finding": "122 office IDs and 366 event keys are recovered and preserved. Prior production shard bindings and complete 182-entry frozen source catalogue are not recreated from the 137-source briefing subset.",
+    "next_evidence": "Require independent repository/release evidence in a separately authorised implementation task; do not assign release IDs or certify operational hashes here.",
+    "source_ids": [
+      "constitution"
+    ],
+    "justin_approved": false
+  },
+  {
+    "gap_id": "AL-BA-G21",
+    "topic": "party_and_coalition_comparability",
+    "status": "research_hold",
+    "finding": "Party labels and event-local coalitions remain source-specific. No cross-cycle group identity or swing score is inferred; 2019 boycott limits comparability.",
+    "next_evidence": "Resolve documented parties/coalitions and a method before quantitative swing classification.",
+    "source_ids": [
+      "electoral-code",
+      "cec-2019-final-bulletin"
+    ],
+    "justin_approved": false
+  }
+]

@@ -1,0 +1,274 @@
+[
+  {
+    "example_id": "AL-BA-A01",
+    "scenario": "Current register",
+    "input": "61 municipal units",
+    "expected": "123 current offices: 61 mayors, 61 councils, one Assembly.",
+    "validator_or_gate": "current_register",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A02",
+    "scenario": "Paired local bodies",
+    "input": "Any current municipality",
+    "expected": "Separate M and C IDs; neither is a party/candidate.",
+    "validator_or_gate": "paired_offices",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A03",
+    "scenario": "President",
+    "input": "Constitution Article 87",
+    "expected": "No popular presidential office; selection recorded as Assembly election.",
+    "validator_or_gate": "president_exclusion",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A04",
+    "scenario": "Mayor selection",
+    "input": "Electoral Code Article 166",
+    "expected": "Direct plurality; tie by lot; no invented general runoff.",
+    "validator_or_gate": "mayor_mode",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A05",
+    "scenario": "Regional tier",
+    "input": "Qark and prefect labels",
+    "expected": "No popular regional office rows.",
+    "validator_or_gate": "regional_exclusion",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A06",
+    "scenario": "European Parliament",
+    "input": "EU candidate status",
+    "expected": "EP office and event count zero.",
+    "validator_or_gate": "ep_exclusion",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A07",
+    "scenario": "Alert horizon",
+    "input": "Expected Assembly cycle 2029",
+    "expected": "Retain office/history; exact next day null.",
+    "validator_or_gate": "alert_policy",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A08",
+    "scenario": "Legacy Belsh binding",
+    "input": "AL-13-M",
+    "expected": "Retained Belsh ID; do not reassign it to Cërrik.",
+    "validator_or_gate": "legacy_binding",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A09",
+    "scenario": "Legacy geography",
+    "input": "AL-13-M",
+    "expected": "geo-99a7b8d0e325a448c5e7c7ca retained.",
+    "validator_or_gate": "legacy_geography",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A10",
+    "scenario": "Legacy event identity",
+    "input": "AL-13-M::2023::2023-05-14",
+    "expected": "event-9b7cd1a6a6d27850e712e6a7 retained.",
+    "validator_or_gate": "legacy_event",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A11",
+    "scenario": "Rename",
+    "input": "Ura Vajgurore / Dimal",
+    "expected": "AL-05-M/C retained; no successor or extra current rows.",
+    "validator_or_gate": "rename",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A12",
+    "scenario": "Reform vintage",
+    "input": "2011 CEC register",
+    "expected": "768 historical rows sourced; no automatic current continuity.",
+    "validator_or_gate": "historical_register",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A13",
+    "scenario": "Tirana nesting",
+    "input": "11 historical boroughs",
+    "expected": "22 historical office rows with historical Tirana parent references.",
+    "validator_or_gate": "historical_boroughs",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A14",
+    "scenario": "Nested community scope",
+    "input": "Law 139/2015 Articles 68–70",
+    "expected": "Keep locality-specific advisory-board census as an explicit hold.",
+    "validator_or_gate": "nested_scope_hold",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A15",
+    "scenario": "2011 winner only",
+    "input": "A CEC elected head",
+    "expected": "elected=true; votes/share/seats null, not 0 or 1.",
+    "validator_or_gate": "winner_only_nulls",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A16",
+    "scenario": "2011 council blank",
+    "input": "Blank party cell",
+    "expected": "No zero-result row generated; blank audited separately.",
+    "validator_or_gate": "blank_cells",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A17",
+    "scenario": "2011 council total",
+    "input": "CEC seat allocations",
+    "expected": "3,775 nonblank rows, 6,152 seats.",
+    "validator_or_gate": "historical_seats",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A18",
+    "scenario": "Cancelled Paper/Pishaj",
+    "input": "8 May 2011 mayor ballot errors",
+    "expected": "Cancelled poll and undated repeat separate; neither assigned final cycle totals.",
+    "validator_or_gate": "cancelled_repeat",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A19",
+    "scenario": "Mixed national system",
+    "input": "1992–2005 early cycles",
+    "expected": "Final allocation attached to cycle summary; phases remain separate.",
+    "validator_or_gate": "national_phases",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A20",
+    "scenario": "Historic chamber size",
+    "input": "1997 national allocation",
+    "expected": "155 seats retained rather than forced to current 140.",
+    "validator_or_gate": "historic_chamber_size",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A21",
+    "scenario": "National transition",
+    "input": "March–April 1991",
+    "expected": "Gate identity; do not create post-1991 Republic results by assumption.",
+    "validator_or_gate": "republic_gate",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A22",
+    "scenario": "Full 2015 restoration",
+    "input": "Prior selection omitted 15 mayor contests",
+    "expected": "Restore them from primary bulletin; keep all earlier IDs/results.",
+    "validator_or_gate": "restore_2015",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A23",
+    "scenario": "Inherited result order",
+    "input": "3,843 recovered baseline rows",
+    "expected": "Preserve vote/seat vectors and row index; do not sort by winner.",
+    "validator_or_gate": "baseline_vectors",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A24",
+    "scenario": "2019 preliminary",
+    "input": "Official preliminary vote table",
+    "expected": "Do not relabel final merely because later final material was found.",
+    "validator_or_gate": "preliminary_status",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A25",
+    "scenario": "Rrogozhinë May 2023",
+    "input": "Annulled recounted return",
+    "expected": "Two reported vote rows 5,129/5,108; no winning mandate.",
+    "validator_or_gate": "annulled_return",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A26",
+    "scenario": "Rrogozhinë July 2023",
+    "input": "23 July repeat",
+    "expected": "Separate event with sourced repeat link and mandate certificate date 1 August.",
+    "validator_or_gate": "repeat_identity",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A27",
+    "scenario": "Tirana November 2025",
+    "input": "Scheduled election cancelled",
+    "expected": "Scheduled date preserved, zero result rows; no zero-vote candidate invented.",
+    "validator_or_gate": "tirana_cancelled",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A28",
+    "scenario": "Dibër September 2016",
+    "input": "Calendar/candidacy source",
+    "expected": "Event retained with no invented return.",
+    "validator_or_gate": "diber_calendar",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A29",
+    "scenario": "2021 discrepancy",
+    "input": "Annex rows versus summary",
+    "expected": "Keep diagnostic; reported shares unchanged, no false denominator.",
+    "validator_or_gate": "arithmetic_hold",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A30",
+    "scenario": "2025 final return",
+    "input": "CEC final national table",
+    "expected": "11 main rows; 1,606,057 votes; 140 seats. Preliminary comparison outside main results.",
+    "validator_or_gate": "final_2025",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A31",
+    "scenario": "Draft tiers",
+    "input": "891 office rows",
+    "expected": "Exactly one unapproved tier row per office; histogram 1/868/22.",
+    "validator_or_gate": "draft_tiers",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A32",
+    "scenario": "Source hashes",
+    "input": "Retained extract vs original PDF",
+    "expected": "Hash both separately when original available; missing original digest stays null.",
+    "validator_or_gate": "source_hashes",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A33",
+    "scenario": "No mutation",
+    "input": "Run validator",
+    "expected": "Read-only output, applied_changes=0, all approvals false.",
+    "validator_or_gate": "no_mutation",
+    "justin_approved": false
+  },
+  {
+    "example_id": "AL-BA-A34",
+    "scenario": "Other prompts",
+    "input": "AY and AX reminders",
+    "expected": "ME-AY-G01–G11 remain held; no Serbia validation or acceptance claimed.",
+    "validator_or_gate": "other_work_pending",
+    "justin_approved": false
+  }
+]

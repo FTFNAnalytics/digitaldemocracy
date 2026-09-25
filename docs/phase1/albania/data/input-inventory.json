@@ -1,0 +1,44 @@
+[
+  {
+    "path": "ba_prior/europe/Europe_Albania_to_Moldova.xlsx",
+    "sha256": "f0c9503ea99e2e70272a91cc27c48d9f7ed384c05fa6ad069deba75ea519cb6f",
+    "byte_count": 10261332,
+    "role": "prior recovery workbook",
+    "retained_in_zip": false
+  },
+  {
+    "path": "ba_prior/europe/Office_Briefings/albania.html",
+    "sha256": "544302d627fea25327fd88eb264aaf4b0a0c6172da5e803316b863524bd5d23f",
+    "byte_count": 1518152,
+    "role": "prior recovery briefing JSON",
+    "retained_in_zip": false
+  },
+  {
+    "path": "ba_prior/review/Albania_Field_Map_Review_Pack/Albania_Identity_Rules.md",
+    "sha256": "def15d98a8bf41cad8623bc09b65ee55af499edb2dc1c4c65a41216d95ed4d0c",
+    "byte_count": 23297,
+    "role": "frozen prior identity contract",
+    "retained_in_zip": false
+  },
+  {
+    "path": "ba_research/cec_2011_winners.pdf",
+    "sha256": "c100f32fd750ce47a678fdc43d6c0e143b916e4b960c38788abf1e73fa27c56a",
+    "byte_count": 87933,
+    "role": "fresh 2011 source",
+    "retained_in_zip": false
+  },
+  {
+    "path": "ba_research/cec_2011_seats_36.htm",
+    "sha256": "d884df6f74f7a97a94b79dd498e4edd012b84cd2d0fa76cc90f9e77eae2d764c",
+    "byte_count": 672972,
+    "role": "fresh 2011 seat register",
+    "retained_in_zip": false
+  },
+  {
+    "path": "ba_research/cec_2025_election_report.pdf",
+    "sha256": "a43fa6f3b5fbcfe00237a803a1bf20cab850be25881e23869b0bb78e9d293d8e",
+    "byte_count": 3429904,
+    "role": "fresh 2025 final return",
+    "retained_in_zip": false
+  }
+]

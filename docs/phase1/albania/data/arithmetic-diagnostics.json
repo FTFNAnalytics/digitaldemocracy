@@ -1,0 +1,9 @@
+[
+  {
+    "event_id": "event-7efd2069873665aa68c65e2c",
+    "issue": "ODIHR Annex I candidate/list vector sums to 1,578,117; its printed valid-vote summary is 1,661,176. The discrepancy is retained; neither number is silently repaired.",
+    "candidate_sum": 1578117,
+    "printed_valid_votes": 1661176,
+    "action": "Do not use the inconsistent summary as a share denominator; shares retained as reported."
+  }
+]
