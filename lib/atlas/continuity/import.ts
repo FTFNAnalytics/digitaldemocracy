@@ -1,5 +1,5 @@
 import { writeSync } from "node:fs";
-import { importAlbania, type ImportAlbaniaOptions, type ImportAlbaniaResult } from "../albania/import";
+import { importAlbania, type ImportAlbaniaResult } from "../albania/import";
 import { importAlderney, type ImportAlderneyResult } from "../alderney/import";
 import { importAndorra, type ImportAndorraResult } from "../andorra/import";
 import { importArmenia, type ImportArmeniaResult } from "../armenia/import";
@@ -175,8 +175,11 @@ function runImport<T>(label: string, load: () => T): T {
   return value;
 }
 
+// Keep this ContinuityImportOptions only. Intersecting a country Import*Options
+// (for example ImportAlbaniaOptions) leaks that country's poisonAfterWrite into
+// every other importer and breaks the production typecheck.
 export function importAtlasLineages(
-  options: ContinuityImportOptions & ImportAlbaniaOptions,
+  options: ContinuityImportOptions,
   scope: ImportScope = parseImportScope(),
 ): MultiLineageImportResult {
   const result: MultiLineageImportResult = {};
