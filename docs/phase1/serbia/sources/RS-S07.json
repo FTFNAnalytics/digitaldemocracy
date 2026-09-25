@@ -1,0 +1,14 @@
+{
+  "source_id": "RS-S07",
+  "publisher": "Statistical Office of the Republic of Serbia",
+  "title": "Local Elections 2016 aggregate data",
+  "url": "https://data.stat.gov.rs/Home/Result/07030601?languageCode=sr-Latn",
+  "checked_as_of": "2026-09-23",
+  "evidence_grade": "official_primary",
+  "capture_kind": "normalized_research_extract",
+  "remote_original_bytes_retained": false,
+  "claims": [
+    "Republic total 6,530 council seats; 1,428 lists; 859 lists with elected councillors; Kosovo excluded."
+  ],
+  "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes."
+}

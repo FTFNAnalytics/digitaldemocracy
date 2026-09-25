@@ -1,0 +1,514 @@
+[
+  {
+    "source_id": "RS-S01",
+    "publisher": "Statistical Office of the Republic of Serbia",
+    "title": "Administrative-territorial division and NSTJ levels 1, 2, 3",
+    "url": "https://stat.gov.rs/sr-latn/oblasti/registar-prostornih-jedinica-i-gis/administrativno-teritorijalna-podela-i-nstj-nivoi-1-2-3/",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Territorial register used to reconcile current local-self-government and city-municipality counts; Kosovo is separately gated in this pack."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S01.json",
+    "sha256": "20958911c57e7812f938556b4be6534495d0dc5f109fabce6b098ad37e52393f",
+    "byte_count": 743
+  },
+  {
+    "source_id": "RS-S02",
+    "publisher": "Statistical Office of the Republic of Serbia",
+    "title": "Changes in settlements, municipalities/city municipalities and cities, 2025",
+    "url": "https://publikacije.stat.gov.rs/G2026/HtmlL/G20261014.html",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "As of 1 January 2026 the reported 2025 change was a settlement rename; no municipality/city/city-municipality structural change was reported."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S02.json",
+    "sha256": "91af9f998466ba77d4b8b09f74c882ed9f527337771fa4d390d4b2d620ff6004",
+    "byte_count": 692
+  },
+  {
+    "source_id": "RS-S03",
+    "publisher": "Statistical Office of the Republic of Serbia",
+    "title": "Local Elections 2024 — final results",
+    "url": "https://publikacije.stat.gov.rs/G2024/Pdf/G20246012.pdf",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Final local-election statistical bulletin; Appendix 1 supplies jurisdiction-specific election dates spanning 2021–2024; mayors/municipal presidents are selected by councillors after assembly constitution; Kosovo data excluded."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S03.json",
+    "sha256": "6b19adb75b6bd7f31f89d527f747c078473171833a7416a93f29fb5f01f1f460",
+    "byte_count": 739
+  },
+  {
+    "source_id": "RS-S04",
+    "publisher": "Statistical Office of the Republic of Serbia",
+    "title": "Local Elections 2020 publication",
+    "url": "https://www.stat.gov.rs/sr-Latn/publikacije/publication/?p=12779",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Official 2020 local-election publication; per-jurisdiction poll dates are not transcribed into this pack."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S04.json",
+    "sha256": "71dad47670ae446cdb14d1f3d0a987049130b7617f248a90c4484575825323ae",
+    "byte_count": 619
+  },
+  {
+    "source_id": "RS-S05",
+    "publisher": "Statistical Office of the Republic of Serbia",
+    "title": "Local elections data portal",
+    "url": "https://www.stat.gov.rs/sr-latn/oblasti/izbori/lokalni-izbori/",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Official data portal exposes local-election datasets including 2016, 2020 and 2024."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S05.json",
+    "sha256": "12f19daa4e39f9f1846fcb1c7801677512f3cc9072aa86743ea9b638a97c7a43",
+    "byte_count": 590
+  },
+  {
+    "source_id": "RS-S06",
+    "publisher": "Statistical Office of the Republic of Serbia",
+    "title": "Local Elections 2016 — corrected final results",
+    "url": "https://publikacije.stat.gov.rs/G2016/Pdf/G20166005.pdf",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Main local elections held 24 April 2016; bulletin also identifies named off-cycle 2013, 2014 and 2015 jurisdictions and Belgrade 2014; mayors/municipal presidents selected by councillors after constitution; Kosovo excluded."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S06.json",
+    "sha256": "c2b15efd629b042d2d64e41792c1ed758ea6f5931f7bf780c0978612924df9ea",
+    "byte_count": 744
+  },
+  {
+    "source_id": "RS-S07",
+    "publisher": "Statistical Office of the Republic of Serbia",
+    "title": "Local Elections 2016 aggregate data",
+    "url": "https://data.stat.gov.rs/Home/Result/07030601?languageCode=sr-Latn",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Republic total 6,530 council seats; 1,428 lists; 859 lists with elected councillors; Kosovo excluded."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S07.json",
+    "sha256": "8a1be13096e911ff486d9c132fc9980c233c19bbfe39d1bdbd8669e136751d93",
+    "byte_count": 620
+  },
+  {
+    "source_id": "RS-S08",
+    "publisher": "Republic Electoral Commission (RIK)",
+    "title": "National Assembly elections information/results portal",
+    "url": "https://www.rik.parlament.gov.rs/",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "National Assembly election authority and official results archive."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S08.json",
+    "sha256": "558b3e05335100731e542a5b5ada855298410d181f836f938202f8cb06b870f8",
+    "byte_count": 562
+  },
+  {
+    "source_id": "RS-S09",
+    "publisher": "Republic Electoral Commission (RIK)",
+    "title": "On elections for President of the Republic",
+    "url": "https://www.rik.parlament.gov.rs/tekst/sr/78/o-izborima-za-predsednika-republike.php",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "President directly elected; first-round majority required; if no majority, a second round is held between the two leading candidates."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S09.json",
+    "sha256": "ea69ccafe63a3e45694e91a7b0acf8c32ce1d47ce384d686e71c7ac662e4980e",
+    "byte_count": 668
+  },
+  {
+    "source_id": "RS-S10",
+    "publisher": "Republic Electoral Commission archive",
+    "title": "2012 presidential election sessions/results",
+    "url": "https://arhiva.rik.parlament.gov.rs/latinica/arhiva-sednice-2012-3.php",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Final 2012 presidential first- and second-round result series; Tomislav Nikolić elected in the runoff."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S10.json",
+    "sha256": "4d6db61bcc5dd1dbcac211e61d46c36ed3e73a2694e75a37b47cf201542b4084",
+    "byte_count": 627
+  },
+  {
+    "source_id": "RS-S11",
+    "publisher": "Republic Electoral Commission archive",
+    "title": "2017 presidential election archive",
+    "url": "https://arhiva.rik.parlament.gov.rs/latinica/arhiva-sednice-2017.php",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Final 2017 presidential candidate result series."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S11.json",
+    "sha256": "cac9ec6a45b0a8f3ff780088ccbb0476d8f68a1db3ebc5697f868da05b8724d6",
+    "byte_count": 561
+  },
+  {
+    "source_id": "RS-S12",
+    "publisher": "Republic Electoral Commission",
+    "title": "2022 presidential election final results session",
+    "url": "https://www.rik.parlament.gov.rs/vest/317359/70-sednica-republicke-izborne-komisije.php",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Final 2022 presidential result series."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S12.json",
+    "sha256": "89610da5939c2fa49b9dd923ac0572693b7eddb0a5724244b2e6f2d4a963ec55",
+    "byte_count": 576
+  },
+  {
+    "source_id": "RS-S13",
+    "publisher": "Republic Electoral Commission",
+    "title": "2020 National Assembly final results",
+    "url": "https://www.rik.parlament.gov.rs/vest/sr/9479/172-sednica-republicke-izborne-komisije.php",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Final 2020 National Assembly list votes and mandates."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S13.json",
+    "sha256": "8c85241d46f3375dca5be3d55fae290a197994dcf1d2dfae84ae4bdfa22dd5b1",
+    "byte_count": 581
+  },
+  {
+    "source_id": "RS-S14",
+    "publisher": "Republic Electoral Commission",
+    "title": "2022 National Assembly final results",
+    "url": "https://www.rik.parlament.gov.rs/vest/sr/324925/79-sednica-republicke-izborne-komisije.php",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Final 2022 National Assembly list votes and mandates."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S14.json",
+    "sha256": "2bcce81adc91bba951c0ea9c295a08888a6ec8a93649a2862b6b605391300e6e",
+    "byte_count": 582
+  },
+  {
+    "source_id": "RS-S15",
+    "publisher": "Republic Electoral Commission",
+    "title": "2023 National Assembly final results",
+    "url": "https://www.rik.parlament.gov.rs/vest/sr/564488/51-sednica-republicke-izborne-komisije.php",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Final 2023 National Assembly list votes and mandates."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S15.json",
+    "sha256": "9dd12436d35f996d35a0fae1c89b6b6e32f457f27ab34ac24a010f48cffc6c65",
+    "byte_count": 582
+  },
+  {
+    "source_id": "RS-S16",
+    "publisher": "Provincial Electoral Commission of Vojvodina",
+    "title": "Election archive",
+    "url": "https://pik.skupstinavojvodine.gov.rs/",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Official archive includes Vojvodina Assembly elections 2016, 2020 and 2023."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S16.json",
+    "sha256": "80b4af35ca36e80d109f1b6d2f8140eed5829abbe2d8364ad9c3ddc0a4367b9b",
+    "byte_count": 547
+  },
+  {
+    "source_id": "RS-S17",
+    "publisher": "Provincial Electoral Commission of Vojvodina",
+    "title": "2016 final Vojvodina Assembly results",
+    "url": "https://pik.skupstinavojvodine.gov.rs/sadrzaj/2016KonacniRezultati.pdf",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Final result report for election held 24 April 2016."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S17.json",
+    "sha256": "e36abf0b1e966698dfce2caf6b040fabd798343a0f08b5a7355affeef72bbd38",
+    "byte_count": 577
+  },
+  {
+    "source_id": "RS-S18",
+    "publisher": "Provincial Electoral Commission of Vojvodina",
+    "title": "2020 Vojvodina Assembly results",
+    "url": "https://pik.skupstinavojvodine.gov.rs/Strana/rezultati?izbori=2020",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Official 2020 provincial result source."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S18.json",
+    "sha256": "9dbf89d993c82c0c7e942629ae606fcf0a592c0a248aed7ebe9fee05b86ed7e5",
+    "byte_count": 554
+  },
+  {
+    "source_id": "RS-S19",
+    "publisher": "Provincial Electoral Commission of Vojvodina",
+    "title": "2023 Vojvodina Assembly results",
+    "url": "https://pik.skupstinavojvodine.gov.rs/Strana/rezultati?izbori=2023",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Official 2023 results page links final report covering original and repeat voting in December 2023."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S19.json",
+    "sha256": "e2f0b584d14c9e7b102687dbbb62f0079524c63b75955e7ecd7bc62ffa5113d1",
+    "byte_count": 614
+  },
+  {
+    "source_id": "RS-S20",
+    "publisher": "Assembly of the Autonomous Province of Vojvodina",
+    "title": "Statute of the Autonomous Province of Vojvodina",
+    "url": "https://www.skupstinavojvodine.gov.rs/Strana.aspx?j=SRL&s=statut",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Provincial Government president, vice-presidents and members are elected by the Assembly, not by a separate popular ballot."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S20.json",
+    "sha256": "f6d236d6a7980d89b65d7ede2c9c46948522204858f4ae60fd1b23ab24e80f47",
+    "byte_count": 656
+  },
+  {
+    "source_id": "RS-S21",
+    "publisher": "City of Belgrade",
+    "title": "Belgrade 2024 final city election report/news release",
+    "url": "https://www.beograd.rs/lat/beoinfo-vesti/a103829/Gradska-izborna-komisija-usvojila-Ukupan-izvestaj-o-rezultatima-izbora.html",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Final 2 June 2024 Belgrade City Assembly list vote/mandate series."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S21.json",
+    "sha256": "323d54f199b4c6275270c82b6fc57915cf522fab64a1bee6b5ab9773df6c0e9f",
+    "byte_count": 633
+  },
+  {
+    "source_id": "RS-S22",
+    "publisher": "Statistical Office of the Republic of Serbia",
+    "title": "Local Elections 2020 aggregate councillor count",
+    "url": "https://data.stat.gov.rs/Home/Result/07030703?languageCode=sr-Latn",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Republic total 6,174 councillors in the 2020 local-election dataset; Kosovo excluded."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S22.json",
+    "sha256": "fc7e19431eb7443e54043ecb853e9e8b0929e1d097382ef40c0a48b5e167d351",
+    "byte_count": 616
+  },
+  {
+    "source_id": "RS-S23",
+    "publisher": "Statistical Office of the Republic of Serbia",
+    "title": "Local Elections 2024 aggregate data",
+    "url": "https://data.stat.gov.rs/Home/Result/07030801?languageCode=sr-Latn",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Republic total 6,127 council seats; 876 lists; 741 lists with elected councillors; Kosovo excluded."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S23.json",
+    "sha256": "c90e5c84c08c008f432828397f88f5a2e0826934407b1b187040bdabbb0c3a80",
+    "byte_count": 618
+  },
+  {
+    "source_id": "RS-S24",
+    "publisher": "European Commission",
+    "title": "Serbia — EU enlargement country page",
+    "url": "https://enlargement.ec.europa.eu/countries/serbia_en",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Serbia is an EU candidate country, not an EU Member State; no Serbian European Parliament delegation."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S24.json",
+    "sha256": "570f9031929165c5581fa1d81e708c5267100c6cade7a708f510b7c6ec513427",
+    "byte_count": 584
+  },
+  {
+    "source_id": "RS-S25",
+    "publisher": "Statistical Office of the Republic of Serbia",
+    "title": "2024 local election bulletin current assembly evidence",
+    "url": "https://publikacije.stat.gov.rs/G2024/Pdf/G20246012.pdf",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Election tables distinguish separately elected city-municipality assemblies from statistical subunits with no councillor seats, including central same-name Užice, Požarevac and Vranje rows."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S25.json",
+    "sha256": "3b68b1783b3f7f0568885d63d44367ecf99061c26363e5ca797657bad1dca533",
+    "byte_count": 718
+  },
+  {
+    "source_id": "RS-S26",
+    "publisher": "Statistical Office of the Republic of Serbia",
+    "title": "Changes in settlements, municipalities and cities, 2016",
+    "url": "https://publikacije.stat.gov.rs/g2017/pdfe/G20171012.pdf",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Vršac, Kikinda and Pirot received city status under Official Gazette RS 18/2016, 1 March 2016.",
+      "The release states there were no administrative-territorial changes during 2016."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S26.json",
+    "sha256": "b49299fbfeab5f151253203dc97ffce100c7e5b5587243d297b4e1b0f984da15",
+    "byte_count": 712
+  },
+  {
+    "source_id": "RS-S27",
+    "publisher": "Statistical Office of the Republic of Serbia",
+    "title": "Changes in settlements, municipalities and cities, 2018",
+    "url": "https://publikacije.stat.gov.rs/G2019/PdfE/G20191012.pdf",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_primary",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Bor and Prokuplje received city status under Official Gazette RS 47/2018, 20 June 2018.",
+      "The release states there were no administrative-territorial changes during 2018."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S27.json",
+    "sha256": "548fd7284fdb8c58549a4072ad3ceeeb47b6c84495ab55f1e4b34ec38233a87f",
+    "byte_count": 704
+  },
+  {
+    "source_id": "RS-S28",
+    "publisher": "Republic Electoral Commission (RIK)",
+    "title": "National Assembly elections, April 2016 — final results",
+    "url": "https://arhiva.rik.parlament.gov.rs/doc/izbori-2016/rezultati/izbori%20za%20no2016.pdf",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_final",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Final 24 April 2016 National Assembly list vote/seat results."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S28.json",
+    "sha256": "4960b82671574d0ad88a4a79e0fa51fe179745fada72e2227ca776f0c1824a7e",
+    "byte_count": 611
+  },
+  {
+    "source_id": "RS-S29",
+    "publisher": "Republic Electoral Commission (RIK)",
+    "title": "2026 local-election records index",
+    "url": "https://www.rik.parlament.gov.rs/tekst/sr/3194/pristupacnost-birackih-mesta.php",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_index",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "RIK currently links records for 2026 local elections and 2026 city-municipality elections."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S29.json",
+    "sha256": "3b48192072c37beba606460cff46b4fb302c9c170d67f1f97cb738a07634488b",
+    "byte_count": 609
+  },
+  {
+    "source_id": "RS-S30",
+    "publisher": "Municipality of Kladovo",
+    "title": "2026 local election — final report link",
+    "url": "https://kladovo.org.rs/mapa-sajta/?pismo=lat",
+    "checked_as_of": "2026-09-23",
+    "evidence_grade": "official_local",
+    "capture_kind": "normalized_research_extract",
+    "remote_original_bytes_retained": false,
+    "claims": [
+      "Municipal site exposes a final report for the 29 March 2026 Kladovo local election."
+    ],
+    "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes.",
+    "input_path": "sources/RS-S30.json",
+    "sha256": "9a857f450c8e586409117a4a2197645d478d3aad0f51cb578b3e729a385afd19",
+    "byte_count": 563
+  }
+]

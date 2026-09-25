@@ -1,0 +1,14 @@
+{
+  "source_id": "RS-S01",
+  "publisher": "Statistical Office of the Republic of Serbia",
+  "title": "Administrative-territorial division and NSTJ levels 1, 2, 3",
+  "url": "https://stat.gov.rs/sr-latn/oblasti/registar-prostornih-jedinica-i-gis/administrativno-teritorijalna-podela-i-nstj-nivoi-1-2-3/",
+  "checked_as_of": "2026-09-23",
+  "evidence_grade": "official_primary",
+  "capture_kind": "normalized_research_extract",
+  "remote_original_bytes_retained": false,
+  "claims": [
+    "Territorial register used to reconcile current local-self-government and city-municipality counts; Kosovo is separately gated in this pack."
+  ],
+  "hash_note": "SHA-256 authenticates this retained normalized extract JSON, not the remote source bytes."
+}
