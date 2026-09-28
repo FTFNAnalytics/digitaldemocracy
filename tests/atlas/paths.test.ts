@@ -94,6 +94,7 @@ describe("Atlas migrations", () => {
     expect(migrations).toEqual([
       { version: 1, name: "atlas_attempt_log", filename: ATLAS_ATTEMPT_LOG_FILENAME },
       { version: 2, name: "atlas_master", filename: ATLAS_MASTER_FILENAME },
+      { version: 5, name: "atlas_boundary", filename: "0005_atlas_boundary.sql" },
     ]);
   });
 });

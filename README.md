@@ -31,7 +31,10 @@ The observatory is being restructured as the **Election Atlas** at `/atlas`, wit
 | `npm test` | Adapter and semantic tests; fixtures are test-only |
 | `npm run import:data` | Import the Latin America zip (fails clearly if missing) |
 | `npm run import:countries` | Inventory and validate `data/countries/*` standalone packages |
-| `npm run migrate:atlas` | Apply `0001_atlas_attempt_log.sql` to `ATLAS_ATTEMPTS_SQLITE_PATH` and `0002_atlas_master.sql` to `ATLAS_SQLITE_PATH` |
+| `npm run migrate:atlas` | Apply `0001_atlas_attempt_log.sql` to `ATLAS_ATTEMPTS_SQLITE_PATH`, then `0002_atlas_master.sql` and later master files (including `0005_atlas_boundary.sql`) to `ATLAS_SQLITE_PATH` |
+| `npm run boundaries:fetch` | Download boundary sources in `data/boundaries/manifest.json` into gitignored `data/boundaries/incoming/` after checksum |
+| `npm run boundaries:match` | Propose a draft crosswalk (`--country`, `--lau-csv`). Does not approve rows or write shapes |
+| `npm run boundaries:build` | Emit TopoJSON and PMTiles for an approved crosswalk only |
 | `npm run import:atlas` | Ingest approved Atlas lineages into SQLite (`ATLAS_IMPORT_SCOPE=albania\|andorra\|alderney\|armenia\|austria\|belgium\|bosnia\|bulgaria\|croatia\|czechia\|denmark\|finland\|ireland\|netherlands\|norway\|poland\|sweden\|switzerland\|latam\|nz\|all`; temp paths in CI; never the VPS DB unless set) |
 | `npm run import:data -- --countries` | Same country-package import when the Latin America zip is absent |
 | `npm run validate:data` | Validate Latin America records, country packages, and the merged dataset |
