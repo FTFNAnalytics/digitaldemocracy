@@ -15,23 +15,25 @@
 }
 
 /*
-  Atlas reading palette (canvas). Marketing keeps --navy #0a192f and --accent #a2ff00.
-  A navy-and-lime Atlas is a six-token swap of paper, card, ink, ink-2, line, and accent:
+  Atlas reading palette. Justin chose Center navy + lime (six-token swap applied).
+  Marketing tokens --navy and --accent are unchanged.
     --atlas-paper: #0a192f;
     --atlas-card: #112240;
     --atlas-ink: #f5f7fb;
     --atlas-ink-2: #c5d0de;
     --atlas-line: #1d3a5c;
     --atlas-accent: #a2ff00;
+  --atlas-on-accent matches marketing --accent-ink (#142200) so lime buttons stay readable.
   Tint, amber, map, and bar tokens stay. Do not hard-code these hexes in components.
+  prefers-color-scheme: dark keeps the same navy + lime paper, card, ink, line, and accent.
 */
 :root {
-  --atlas-paper: #f5f2ea;
-  --atlas-card: #fffdf8;
-  --atlas-ink: #1c2230;
-  --atlas-ink-2: #4a5263;
-  --atlas-line: #dad5c8;
-  --atlas-accent: #1f4e8c;
+  --atlas-paper: #0a192f;
+  --atlas-card: #112240;
+  --atlas-ink: #f5f7fb;
+  --atlas-ink-2: #c5d0de;
+  --atlas-line: #1d3a5c;
+  --atlas-accent: #a2ff00;
   --atlas-tint: #dce6f3;
   --atlas-amber: #9a5416;
   --atlas-map: #e6e1d4;
@@ -40,7 +42,7 @@
   --atlas-map-none: #f0ede5;
   --atlas-bar-2: #8e9bb0;
   --atlas-bar-3: #c5ccd8;
-  --atlas-on-accent: #fffdf8;
+  --atlas-on-accent: #142200;
 }
 
 @theme inline {
@@ -377,12 +379,12 @@ body {
 
 @media (prefers-color-scheme: dark) {
   .atlas {
-    --atlas-paper: #141820;
-    --atlas-card: #1c2330;
-    --atlas-ink: #f3efe6;
-    --atlas-ink-2: #c5cdd8;
-    --atlas-line: #3a4252;
-    --atlas-accent: #9ecaf5;
+    --atlas-paper: #0a192f;
+    --atlas-card: #112240;
+    --atlas-ink: #f5f7fb;
+    --atlas-ink-2: #c5d0de;
+    --atlas-line: #1d3a5c;
+    --atlas-accent: #a2ff00;
     --atlas-tint: #243044;
     --atlas-amber: #e7b07a;
     --atlas-map: #2a303a;
@@ -391,7 +393,7 @@ body {
     --atlas-map-none: #22262e;
     --atlas-bar-2: #8e9bb0;
     --atlas-bar-3: #5c6574;
-    --atlas-on-accent: #141820;
+    --atlas-on-accent: #142200;
     --atlas-coverage-1: color-mix(in oklab, var(--atlas-accent) 18%, var(--atlas-map-none));
     --atlas-coverage-2: color-mix(in oklab, var(--atlas-accent) 40%, var(--atlas-map-none));
     --atlas-coverage-3: color-mix(in oklab, var(--atlas-accent) 64%, var(--atlas-map-none));
