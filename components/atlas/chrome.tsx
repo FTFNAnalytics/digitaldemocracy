@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Logo } from "@/components/brand";
 import { Container } from "@/components/container";
 import { org } from "@/lib/content";
+import { SearchPalette } from "@/components/atlas/search-palette";
 import { atlasRoutes } from "@/lib/atlas/routes";
 
 export function AtlasBanner() {
@@ -29,6 +30,7 @@ export function AtlasHeader() {
           <Link href={atlasRoutes.explorer} className="text-sm font-semibold text-atlas-accent hover:underline">
             Explorer
           </Link>
+          <SearchPalette />
           <Link href="/" className="obs-btn">
             Back to the Center
           </Link>
@@ -46,6 +48,10 @@ export function AtlasFooter() {
         <p>
           <Link href={atlasRoutes.explorer} className="font-semibold text-atlas-accent hover:underline">
             Explorer
+          </Link>
+          {" · "}
+          <Link href={atlasRoutes.search} className="font-semibold text-atlas-accent hover:underline">
+            Search
           </Link>
           {" · "}
           <Link href={atlasRoutes.releases} className="font-semibold text-atlas-accent hover:underline">

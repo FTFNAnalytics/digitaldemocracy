@@ -126,8 +126,8 @@ function fsyncPath(filePath: string, directory = false): void {
  */
 export function publishStaging(masterPath: string): void {
   const staging = stagingPathFor(masterPath);
-  // Derived rows are rebuilt in the staged file so the atomic rename publishes them
-  // with the master. deriveAtlas does not write master tables.
+  // Derived rows and search indexes are rebuilt in the staged file so the atomic
+  // rename publishes them with the master. deriveAtlas does not edit master entity rows.
   rebuildDerivedInFile(staging);
   checkpointAndCloseForPublish(staging);
   fsyncPath(staging);

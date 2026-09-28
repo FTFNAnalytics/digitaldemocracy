@@ -1,5 +1,6 @@
 import { existsSync } from "node:fs";
 import type { DatabaseSync } from "node:sqlite";
+import { ensureSearchSchema } from "../search/schema";
 import { assertIntegrity, insertMany, openAtlasDatabase } from "../sqlite";
 import {
   projectDerived,
@@ -14,6 +15,7 @@ import {
   type SeatRow,
   type UnplacedRow,
 } from "./project";
+import { rebuildSearchIndexes } from "../search/rebuild";
 import {
   emptyOfficeSlugMeanings,
   officeIdentity,
@@ -26,6 +28,7 @@ import { emptySlugMeanings, type PublishedSlugMeanings } from "./slug";
 
 export type DeriveStats = {
   schema: "applied" | "skipped";
+  searchSchema: "applied" | "skipped";
   jurisdictions: number;
   aliases: number;
   seats: number;
@@ -34,6 +37,9 @@ export type DeriveStats = {
   cycles: number;
   unplaced: number;
   coverage: number;
+  searchSeats: number;
+  searchCycles: number;
+  searchCandidates: number;
 };
 
 function text(value: unknown): string {
@@ -227,7 +233,7 @@ function insertDerived(
 }
 
 /** Rebuild derived tables from the master. Does not write master rows. */
-export function deriveAtlas(db: DatabaseSync): Omit<DeriveStats, "schema"> {
+export function deriveAtlas(db: DatabaseSync): Omit<DeriveStats, "schema" | "searchSchema"> {
   ensureOfficeSlugSchema(db);
   db.exec("BEGIN IMMEDIATE;");
   try {
@@ -236,6 +242,7 @@ export function deriveAtlas(db: DatabaseSync): Omit<DeriveStats, "schema"> {
     const projected = projectDerived(master, prior.jurisdictions, prior.offices);
     deleteDerived(db);
     insertDerived(db, projected);
+    const search = rebuildSearchIndexes(db);
     db.exec("COMMIT;");
     return {
       jurisdictions: projected.jurisdictions.length,
@@ -246,6 +253,9 @@ export function deriveAtlas(db: DatabaseSync): Omit<DeriveStats, "schema"> {
       cycles: projected.cycles.length,
       unplaced: projected.unplaced.length,
       coverage: projected.coverage.length,
+      searchSeats: search.searchSeats,
+      searchCycles: search.searchCycles,
+      searchCandidates: search.searchCandidates,
     };
   } catch (error) {
     try {
@@ -264,9 +274,10 @@ export function rebuildDerivedInFile(sqlitePath: string): DeriveStats {
   const db = openAtlasDatabase(sqlitePath);
   try {
     const schema = ensureDerivedSchema(db);
+    const searchSchema = ensureSearchSchema(db);
     const stats = deriveAtlas(db);
     assertIntegrity(db);
-    return { schema, ...stats };
+    return { schema, searchSchema, ...stats };
   } finally {
     db.close();
   }

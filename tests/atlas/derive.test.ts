@@ -618,7 +618,8 @@ describe("Albania derived projection", () => {
     const afterRename = tableHashes(sqlitePath);
     expect(afterRename.geography).not.toBe(beforeRename.geography);
     for (const [table, hash] of Object.entries(beforeRename)) {
-      if (table === "geography") continue;
+      // A place rename changes the search projection. Master entity tables stay put.
+      if (table === "geography" || table.startsWith("search_")) continue;
       expect(afterRename[table]).toBe(hash);
     }
     const renamedDerived = contentHash(sqlitePath, "derived");

@@ -14,6 +14,7 @@ import {
   ATLAS_ATTEMPT_LOG_FILENAME,
   ATLAS_DERIVED_FILENAME,
   ATLAS_MASTER_FILENAME,
+  ATLAS_SEARCH_FILENAME,
   listAtlasMigrations,
   parseMigrationFilename,
 } from "../../lib/atlas/migrations";
@@ -101,6 +102,7 @@ describe("Atlas migrations", () => {
       { version: 1, name: "atlas_attempt_log", filename: ATLAS_ATTEMPT_LOG_FILENAME },
       { version: 2, name: "atlas_master", filename: ATLAS_MASTER_FILENAME },
       { version: 3, name: "atlas_derived", filename: ATLAS_DERIVED_FILENAME },
+      { version: 4, name: "atlas_search", filename: ATLAS_SEARCH_FILENAME },
       { version: 5, name: "atlas_boundary", filename: "0005_atlas_boundary.sql" },
       { version: 6, name: "atlas_office_slug", filename: "0006_atlas_office_slug.sql" },
     ]);

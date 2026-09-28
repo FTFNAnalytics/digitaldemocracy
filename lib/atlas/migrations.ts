@@ -13,6 +13,9 @@ export const ATLAS_MASTER_FILENAME = "0002_atlas_master.sql";
 /** Derived tables on the master/staging DB, after 0002. Never applied to the attempt ledger. */
 export const ATLAS_DERIVED_FILENAME = "0003_atlas_derived.sql";
 
+/** Search indexes on the master/staging DB, after 0003. Rebuilt by derive:atlas. */
+export const ATLAS_SEARCH_FILENAME = "0004_atlas_search.sql";
+
 const MIGRATION_FILE = /^(\d{4})_([a-z0-9_]+)\.sql$/;
 
 export type AtlasMigration = {
