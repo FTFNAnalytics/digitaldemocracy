@@ -10,4 +10,4 @@ The builder and the SQL loader ignore anything that is not fully approved and ke
 
 | File | Rows | Review |
 | --- | ---: | --- |
-| [`albania.json`](albania.json) | 61 | **Draft.** 59 exact folded names, 2 fuzzy spellings (`AL151` Fushë-Arrëz, `AL155` Vau-Dejës). `jurisdiction_key` is null until OV-01. Not a shape authorisation. |
+| [`albania.json`](albania.json) | 61 | **Approved** 2026-09-28 (Justin via Genevieve) after the current-executive place dedupe. 59 exact folded names, 2 fuzzy spellings (`AL151` Fushë-Arrëz, `AL155` Vau-Dejës). Each row has `jurisdiction_key` and `parent_key` `country:albania`. Historical pairs are excluded. Council geographies are not a second row. |

@@ -10,7 +10,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
-import { parseCrosswalk, serializeCrosswalk } from "../../lib/atlas/boundaries/crosswalk";
+import { crosswalkLinksAgree, parseCrosswalk, serializeCrosswalk } from "../../lib/atlas/boundaries/crosswalk";
 import { loadAlbaniaMunicipalityPlaces, matchPlaces, readLauAttributeCsv } from "../../lib/atlas/boundaries/match";
 import { loadPlacesFromDerived } from "../../lib/atlas/boundaries/places";
 import type { JurisdictionPlace } from "../../lib/atlas/boundaries/types";
@@ -98,8 +98,21 @@ function main(): void {
   const serialized = serializeCrosswalk(file);
   if (flag("--check")) {
     if (!existsSync(outPath)) throw new Error(`no crosswalk to check at ${outPath}`);
-    const existing = readFileSync(outPath, "utf8");
-    if (existing !== serialized) {
+    const existingText = readFileSync(outPath, "utf8");
+    const existing = parseCrosswalk(JSON.parse(existingText) as unknown);
+    const approved =
+      existing.review_status === "approved" && existing.rows.every((row) => row.review_status === "approved");
+    if (approved) {
+      if (!crosswalkLinksAgree(existing, file)) {
+        throw new Error(`approved crosswalk at ${outPath} does not match this proposal`);
+      }
+      if (existing.rows.some((row) => !row.jurisdiction_key || !row.parent_key)) {
+        throw new Error(`approved crosswalk at ${outPath} is missing jurisdiction_key or parent_key`);
+      }
+      console.log(`check ok ${outPath}`);
+      return;
+    }
+    if (existingText !== serialized) {
       throw new Error(`crosswalk at ${outPath} does not match this proposal`);
     }
     console.log(`check ok ${outPath}`);

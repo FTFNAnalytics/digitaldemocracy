@@ -4,11 +4,11 @@ import { mkdtempSync, readFileSync, rmSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
-import { afterEach, describe, expect, it } from "vitest";
+import { afterAll, afterEach, beforeAll, describe, expect, it } from "vitest";
 import { applyMasterMigrations } from "../../lib/atlas/apply-migrations";
 import { ATTRIBUTIONS } from "../../lib/atlas/boundaries/attribution";
-import { buildBoundaryFiles, readCrosswalkFile } from "../../lib/atlas/boundaries/build";
-import { approvedCrosswalkSha256, serializeCrosswalk } from "../../lib/atlas/boundaries/crosswalk";
+import { buildBoundaryFiles, parentKeyFileName } from "../../lib/atlas/boundaries/build";
+import { approvedCrosswalkSha256, markCrosswalkApproved, serializeCrosswalk } from "../../lib/atlas/boundaries/crosswalk";
 import {
   buildEuropeLauPmtiles,
   countMvtPolygons,
@@ -21,9 +21,10 @@ import {
 } from "../../lib/atlas/boundaries/geometry";
 import { loadApprovedCrosswalk } from "../../lib/atlas/boundaries/load";
 import { assertNotGadm, hashBuffer, parseManifest } from "../../lib/atlas/boundaries/manifest";
+import { importAlbania } from "../../lib/atlas/albania/import";
 import { loadAlbaniaMunicipalityPlaces, matchPlaces, readLauAttributeCsv } from "../../lib/atlas/boundaries/match";
 import { loadPlacesFromDerived } from "../../lib/atlas/boundaries/places";
-import type { BoundaryName, CrosswalkFile, CrosswalkRow, JurisdictionPlace } from "../../lib/atlas/boundaries/types";
+import { ALBANIA_BOUNDARY_APPROVAL_NOTE, type BoundaryName, type CrosswalkFile, type CrosswalkRow, type JurisdictionPlace } from "../../lib/atlas/boundaries/types";
 import { tableExists } from "../../lib/atlas/sqlite";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
@@ -93,13 +94,39 @@ function approvedRow(partial: Partial<CrosswalkRow> & Pick<CrosswalkRow, "bounda
 }
 
 describe("Albania boundary crosswalk", () => {
-  it("round-trips the 61-municipality fixture as a draft", () => {
+  const keptDirs: string[] = [];
+  let sqlitePath = "";
+
+  beforeAll(() => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-boundaries-al-"));
+    keptDirs.push(dir);
+    sqlitePath = path.join(dir, "atlas.sqlite");
+    const previousFixtures = process.env.OBSERVATORY_FIXTURES;
+    delete process.env.OBSERVATORY_FIXTURES;
+    try {
+      importAlbania({
+        root: repoRoot,
+        sqlitePath,
+        attemptsPath: path.join(dir, "atlas-attempts.sqlite"),
+        operator: "albania-boundary-rematch",
+      });
+    } finally {
+      if (previousFixtures === undefined) delete process.env.OBSERVATORY_FIXTURES;
+      else process.env.OBSERVATORY_FIXTURES = previousFixtures;
+    }
+  });
+
+  afterAll(() => {
+    for (const dir of keptDirs.splice(0)) rmSync(dir, { recursive: true, force: true });
+  });
+
+  it("proposes 61 draft mayor rows when derived_jurisdiction is absent", () => {
     const file = albaniaProposal();
     expect(file.rows).toHaveLength(61);
     expect(file.unmatched).toEqual([]);
     expect(file.review_status).toBe("draft_for_human_review");
     expect(file.rows.every((row) => row.review_status === "draft_for_human_review")).toBe(true);
-    expect(file.rows.every((row) => row.jurisdiction_key === null)).toBe(true);
+    expect(file.rows.every((row) => row.jurisdiction_key === null && row.parent_key === null)).toBe(true);
     expect(file.rows.filter((row) => row.match_method === "name_parent_exact")).toHaveLength(59);
     const fuzzy = file.rows.filter((row) => row.match_method === "name_parent_fuzzy");
     expect(fuzzy.map((row) => [row.boundary_code, row.name, row.confidence])).toEqual([
@@ -107,11 +134,59 @@ describe("Albania boundary crosswalk", () => {
       ["AL155", "Vau-Dejës", 0.8],
     ]);
     expect(approvedCrosswalkSha256(file)).toBeNull();
-    const committed = readFileSync(path.join(repoRoot, "schemas/atlas/boundaries/albania.json"), "utf8");
-    expect(serializeCrosswalk(file)).toBe(committed);
   });
 
-  it("check mode matches the committed file", () => {
+  it("approves the 61 current executive places and leaves historical pairs out", () => {
+    const db = new DatabaseSync(sqlitePath, { readOnly: true });
+    let places: JurisdictionPlace[] = [];
+    try {
+      expect(db.prepare("SELECT COUNT(*) AS n FROM derived_jurisdiction WHERE country_id = 'albania' AND level_label = 'municipality'").get()).toMatchObject({
+        n: 868,
+      });
+      places = loadPlacesFromDerived(db, "albania", "municipality");
+    } finally {
+      db.close();
+    }
+
+    const register = loadAlbaniaMunicipalityPlaces(repoRoot);
+    expect(places).toHaveLength(61);
+    expect(places.map((place) => place.binding_geography_id).sort()).toEqual(
+      register.map((place) => place.binding_geography_id).sort(),
+    );
+    expect(
+      places.every(
+        (place) =>
+          place.parent_name === null &&
+          place.parent_key === "country:albania" &&
+          place.jurisdiction_key === `geo:albania:${place.binding_geography_id}`,
+      ),
+    ).toBe(true);
+
+    const csv = readFileSync(path.join(repoRoot, "tests/fixtures/boundaries/lau-albania-2023.csv"), "utf8");
+    const proposal = matchPlaces({
+      countryId: "albania",
+      places,
+      features: readLauAttributeCsv(csv).filter((feature) => feature.country_code === "AL"),
+      sourceManifestId: "gisco-lau-2023-4326-csv",
+      boundarySource: "gisco_lau",
+      boundaryVersion: "2023",
+    });
+    expect(proposal.unmatched).toEqual([]);
+    expect(proposal.rows).toHaveLength(61);
+    expect(proposal.rows.filter((row) => row.match_method === "name_parent_exact")).toHaveLength(59);
+    expect(proposal.rows.filter((row) => row.match_method === "name_parent_fuzzy").map((row) => [row.boundary_code, row.name, row.confidence])).toEqual([
+      ["AL151", "Fushë-Arrëz", 0.9],
+      ["AL155", "Vau-Dejës", 0.8],
+    ]);
+    const approved = markCrosswalkApproved(proposal, ALBANIA_BOUNDARY_APPROVAL_NOTE);
+    expect(approved.review_status).toBe("approved");
+    expect(approved.rows.every((row) => row.review_status === "approved" && row.reviewer_note === ALBANIA_BOUNDARY_APPROVAL_NOTE)).toBe(true);
+    expect(approvedCrosswalkSha256(approved)).toMatch(/^[a-f0-9]{64}$/);
+    const committedPath = path.join(repoRoot, "schemas/atlas/boundaries/albania.json");
+    expect(readFileSync(committedPath, "utf8")).toBe(serializeCrosswalk(approved));
+  });
+
+  it("check mode matches the approved file against derived places", () => {
     const result = spawnSync(
       process.execPath,
       [
@@ -126,10 +201,11 @@ describe("Albania boundary crosswalk", () => {
         "tests/fixtures/boundaries/lau-albania-2023.csv",
         "--check",
       ],
-      { cwd: repoRoot, encoding: "utf8", env: { ...process.env, ATLAS_SQLITE_PATH: path.join(tempDir(), "missing.sqlite") } },
+      { cwd: repoRoot, encoding: "utf8", env: { ...process.env, ATLAS_SQLITE_PATH: sqlitePath } },
     );
-    expect(result.status, result.stderr).toBe(0);
+    expect(result.status, result.stderr || result.stdout).toBe(0);
     expect(result.stdout).toContain("match rate 61/61");
+    expect(result.stdout).toContain("places: 61 municipality rows from derived_jurisdiction");
     expect(result.stdout).toContain("check ok");
   });
 });
@@ -198,6 +274,123 @@ describe("name and parent matching", () => {
   });
 });
 
+describe("current executive place dedupe", () => {
+  function openFixture(): DatabaseSync {
+    const db = new DatabaseSync(":memory:");
+    db.exec(`CREATE TABLE derived_jurisdiction (
+      jurisdiction_key TEXT PRIMARY KEY,
+      country_id TEXT NOT NULL,
+      geography_id TEXT,
+      parent_key TEXT,
+      name TEXT NOT NULL,
+      level_label TEXT NOT NULL
+    )`);
+    db.exec(`CREATE TABLE office (
+      country_id TEXT NOT NULL,
+      geography_id TEXT NOT NULL,
+      office_type TEXT NOT NULL,
+      office_status TEXT NOT NULL
+    )`);
+    return db;
+  }
+
+  function insertPlace(
+    db: DatabaseSync,
+    key: string,
+    geographyId: string | null,
+    name: string,
+    parentKey: string | null,
+    level = "municipality",
+  ): void {
+    db.prepare(
+      "INSERT INTO derived_jurisdiction (jurisdiction_key, country_id, geography_id, parent_key, name, level_label) VALUES (?, 'albania', ?, ?, ?, ?)",
+    ).run(key, geographyId, parentKey, name, level);
+  }
+
+  it("keeps the current mayor and drops the council sibling and historical pairs", () => {
+    const db = openFixture();
+    insertPlace(db, "country:albania", null, "Albania", null, "country");
+    insertPlace(db, "geo:albania:mayor", "geo-mayor", "Berat", "country:albania");
+    insertPlace(db, "geo:albania:council", "geo-council", "Berat", "country:albania");
+    insertPlace(db, "geo:albania:hist-mayor", "geo-hist-mayor", "BASHKIA BERAT", "country:albania");
+    insertPlace(db, "geo:albania:hist-council", "geo-hist-council", "BASHKIA BERAT", "country:albania");
+    insertPlace(db, "geo:albania:region", "geo-region", "Dibër", null, "region");
+    insertPlace(db, "geo:albania:diber-mayor", "geo-diber", "Dibër", "geo:albania:region");
+    const insertOffice = db.prepare(
+      "INSERT INTO office (country_id, geography_id, office_type, office_status) VALUES ('albania', ?, ?, ?)",
+    );
+    insertOffice.run("geo-mayor", "mayor", "current");
+    insertOffice.run("geo-council", "municipal_council", "current");
+    insertOffice.run("geo-hist-mayor", "mayor", "historical");
+    insertOffice.run("geo-hist-council", "municipal_council", "historical");
+    insertOffice.run("geo-diber", "mayor", "current");
+
+    const places = loadPlacesFromDerived(db, "albania", "municipality");
+    expect(places.map((place) => place.binding_geography_id).sort()).toEqual(["geo-diber", "geo-mayor"]);
+    expect(places.find((place) => place.name === "Berat")).toMatchObject({
+      jurisdiction_key: "geo:albania:mayor",
+      parent_name: null,
+      parent_key: "country:albania",
+    });
+    expect(places.find((place) => place.name === "Dibër")).toMatchObject({
+      parent_name: "Dibër",
+      parent_key: "geo:albania:region",
+    });
+
+    const blocked = matchPlaces({
+      countryId: "albania",
+      places: places.filter((place) => place.name === "Dibër"),
+      features: [lau("ALX", "Dibër", null)],
+      sourceManifestId: "gisco-lau-2023-4326-csv",
+      boundarySource: "gisco_lau",
+      boundaryVersion: "2023",
+    });
+    expect(blocked.rows).toEqual([]);
+    expect(blocked.unmatched[0]?.reason).toBe("parent name is supplied on only one side");
+    db.close();
+  });
+
+  it("does not collapse two current executive geographies that share a name", () => {
+    const db = openFixture();
+    insertPlace(db, "country:albania", null, "Albania", null, "country");
+    insertPlace(db, "geo:albania:a", "geo-a", "Belsh", "country:albania");
+    insertPlace(db, "geo:albania:b", "geo-b", "Belsh", "country:albania");
+    const insertOffice = db.prepare(
+      "INSERT INTO office (country_id, geography_id, office_type, office_status) VALUES ('albania', ?, 'mayor', 'current')",
+    );
+    insertOffice.run("geo-a");
+    insertOffice.run("geo-b");
+    const places = loadPlacesFromDerived(db, "albania", "municipality");
+    expect(places).toHaveLength(2);
+    const file = matchPlaces({
+      countryId: "albania",
+      places,
+      features: [lau("AL3", "Belsh")],
+      sourceManifestId: "gisco-lau-2023-4326-csv",
+      boundarySource: "gisco_lau",
+      boundaryVersion: "2023",
+    });
+    expect(file.rows).toEqual([]);
+    expect(file.unmatched.every((row) => row.reason.includes("ambiguous jurisdiction"))).toBe(true);
+    db.close();
+  });
+
+  it("does not drop a sibling that is not a collective office", () => {
+    const db = openFixture();
+    insertPlace(db, "country:albania", null, "Albania", null, "country");
+    insertPlace(db, "geo:albania:mayor", "geo-mayor", "Klos", "country:albania");
+    insertPlace(db, "geo:albania:other", "geo-other", "Klos", "country:albania");
+    const insertOffice = db.prepare(
+      "INSERT INTO office (country_id, geography_id, office_type, office_status) VALUES ('albania', ?, ?, 'current')",
+    );
+    insertOffice.run("geo-mayor", "mayor");
+    insertOffice.run("geo-other", "village_unit");
+    const places = loadPlacesFromDerived(db, "albania", "municipality");
+    expect(places).toHaveLength(2);
+    db.close();
+  });
+});
+
 describe("boundary builder", () => {
   const geometry = JSON.parse(
     readFileSync(path.join(repoRoot, "tests/fixtures/boundaries/two-children.geojson"), "utf8"),
@@ -222,11 +415,20 @@ describe("boundary builder", () => {
     };
   }
 
-  it("refuses the Albania draft and writes nothing", async () => {
+  it("refuses a draft crosswalk and writes nothing", async () => {
     const outDir = path.join(tempDir(), "geo");
-    const draft = readCrosswalkFile(readFileSync(path.join(repoRoot, "schemas/atlas/boundaries/albania.json"), "utf8"));
+    const draft = albaniaProposal();
     await expect(buildBoundaryFiles({ crosswalk: draft, geometry, outDir })).rejects.toThrow(/draft_for_human_review/);
     expect(() => readFileSync(path.join(outDir, "parent-al.json"))).toThrow();
+  });
+
+  it("turns a colon in the parent key into an underscore file name", async () => {
+    const outDir = path.join(tempDir(), "geo");
+    const file = approvedFile();
+    file.rows = file.rows.map((row) => ({ ...row, parent_key: "country:albania" }));
+    expect(parentKeyFileName("country:albania")).toBe("country_albania");
+    await buildBoundaryFiles({ crosswalk: file, geometry, outDir });
+    expect(readFileSync(path.join(outDir, "country_albania.json"), "utf8")).toContain("Topology");
   });
 
   it("refuses a mixed or rejected file", async () => {

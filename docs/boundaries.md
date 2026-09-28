@@ -6,18 +6,19 @@ This pipeline does not change `geography` rows. It does not add map UI (that is 
 
 ## Dependency on OV-01
 
-`0005_atlas_boundary.sql` stores `jurisdiction_key` and does not declare a foreign key. `derived_jurisdiction` is not on main yet (`0003` is reserved for OV-01, `0004` for OV-02).
+`0005_atlas_boundary.sql` stores `jurisdiction_key` and does not declare a foreign key to `derived_jurisdiction`. OV-01 is on main (`0003_atlas_derived.sql`). Search is `0004`. Office slugs are `0006`.
 
-Until that table exists:
+`npm run boundaries:match` reads `derived_jurisdiction` when the table is present (`jurisdiction_key`, `country_id`, `geography_id`, `parent_key`, `name`, `level_label`). A missing required column throws. The matcher does not guess a schema. Albania, when that table is absent, still falls back to the 61 current mayor rows in `docs/phase1/albania/data/office-register.jsonl`. That fallback leaves `jurisdiction_key` null.
 
-- Albania proposals are built from the 61 current mayor rows in `docs/phase1/albania/data/office-register.jsonl`.
-- `jurisdiction_key` stays null. `binding_geography_id` is the mayor geography id.
-- The loader and the builder refuse a row with a null key, so no shape is written from the committed Albania file.
-- `npm run boundaries:match` reads `derived_jurisdiction` when the table is present (`jurisdiction_key`, `country_id`, `geography_id`, `parent_key`, `name`, `level_label`). Parent name is the parent row's `name`. A missing required column throws. The matcher does not guess a schema.
+OV-01 stays one jurisdiction per geography. Mayor and council offices keep distinct `geography_id` values, and seat pages keep both. Derive does not collapse them. Boundary matching needs one place per municipality, so `loadPlacesFromDerived` applies a structural rule only when the `office` table is present:
 
-Mayor and council offices for the same municipality have different `geography_id` values. The register fallback uses mayor rows only. After OV-01, two derived rows that share a folded name, parent, and level stay unmatched. Re-run match before asking for approval. Do not join LAU codes by name alone onto both geographies.
+- A geography whose offices are all historical is not a current place and is left out of the match. Albania's 373 historical bashki/komuna pairs stay out. They are not approved and they do not get shapes.
+- A folded name + parent + level group that is exactly one current executive geography (single-seat office type, such as `mayor`) plus collective siblings (council, assembly, and the other multi-seat types) keeps the executive geography. The council geography does not get a second LAU row. Its shape is the approved executive place's key.
+- Any other duplicate group is returned whole. Two current executive geographies that share a name stay ambiguous, and so does an executive paired with an office type that is not collective. The matcher still refuses those.
 
-Research `territorial_unit_id` values such as `AL-13` are not INSTAT or LAU codes. They are stored as `binding_territorial_unit_id` and are not used as `code_supplied`.
+A parent name is the parent row's name when that parent is subnational. A parent whose level is `country` is the file's country scope, the same scope as `CNTR_CODE`, so the boundary parent name is null while `parent_key` stays the country key (`country:albania` for Albania). The matcher is unchanged: a subnational parent supplied on only one side stays unmatched, and two supplied parent names must still fold-equal.
+
+Research `territorial_unit_id` values such as `AL-13` are not INSTAT or LAU codes. The derived place does not carry them, so `binding_territorial_unit_id` is null. They are not used as `code_supplied`.
 
 ## Sources and licences
 
@@ -54,25 +55,25 @@ npm run boundaries:match -- --country albania --lau-csv tests/fixtures/boundarie
 npm run boundaries:build -- --crosswalk schemas/atlas/boundaries/albania.json --geometry path/to.geojson
 ```
 
-`boundaries:match` always writes `review_status` `draft_for_human_review`. It prints the match rate and every unmatched jurisdiction. It refuses to overwrite a file that already contains an approved row. `--check` regenerates the proposal and compares it to the checked-in JSON.
+`boundaries:match` always writes `review_status` `draft_for_human_review`. It prints the match rate and every unmatched jurisdiction. It refuses to overwrite a file that already contains an approved row. `--check` regenerates the proposal. A draft file must match that proposal byte for byte. An approved file must match the proposal's links (keys, codes, names, parents, method) and must keep non-null `jurisdiction_key` and `parent_key`. Approval notes are allowed to differ from the draft proposal.
 
 `boundaries:build` throws before writing if the file or any row is not `approved`, or if `jurisdiction_key` or `parent_key` is null. Approved rows become:
 
-- `public/atlas/geo/{parent_key}.json` — children TopoJSON (mapshaper `keep-shapes`, quantization `1e5`, about one vertex per 50 m at region level and per 10 m at municipal level). Region files over 300 KB are refused. These files are gitignored.
+- `public/atlas/geo/{parent_key}.json` — children TopoJSON (mapshaper `keep-shapes`, quantization `1e5`, about one vertex per 50 m at region level and per 10 m at municipal level). A colon in the parent key becomes an underscore in the file name (`country:albania` → `country_albania.json`). Region files over 300 KB are refused. These files are gitignored.
 - `public/atlas/geo/europe-lau.pmtiles` — one PMTiles v3 archive with a single z0 Mapbox Vector Tile of the approved `gisco_lau` features. It is not a full zoom pyramid. OV-08 can ask for a pyramid later. The tile is gzip-compressed. Features that are not `gisco_lau` are left out of this archive.
 
 Bbox and centroid are computed from the source GeoJSON (mean of the largest exterior ring) and written with `UPDATE` onto an existing `derived_jurisdiction` row. The builder does not insert derived rows. If the table is absent, those fields stay pending and the shape files are still written for approved rows.
 
 `approvedCrosswalkSha256` is null until the file and every row are `approved` and every `jurisdiction_key` is set. That hash is the derive input once Justin approves a country.
 
-## Albania fixture
+## Albania
 
-`schemas/atlas/boundaries/albania.json` is a draft, in the same acceptance style as tier files: nothing in it authorises a shape.
+`schemas/atlas/boundaries/albania.json` is approved. Justin's 2026-09-28 discretion (via Genevieve) covers this file after the current-executive dedupe above. Every row uses the current mayor `jurisdiction_key` (`geo:albania:{geography_id}`) and `parent_key` `country:albania`.
 
-- 61 current municipalities, one row each, bound to the mayor `geography_id`.
-- 59 `name_parent_exact` (folded name, and both parent names empty).
+- 61 current municipalities. Historical bashki/komuna pairs are excluded from the match.
+- 59 `name_parent_exact`.
 - 2 `name_parent_fuzzy`: Fushë-Arrëz ↔ LAU `Fushë Arrës` (`AL151`, distance 1); Vau-Dejës ↔ LAU `Vau I Dejës` (`AL155`, distance 2).
-- Dimal matches the LAU name Dimal. The territorial-unit ids on the rows are research ids, not LAU codes.
-- `jurisdiction_key` is null on every row.
+- Dimal matches the LAU name Dimal.
+- `binding_territorial_unit_id` is null. The boundary code is the LAU id.
 
-CI round-trips this file against `tests/fixtures/boundaries/lau-albania-2023.csv` (the 61 Albania rows of the attribute table, not the raw Europe download). A two-polygon GeoJSON fixture checks TopoJSON parsing, feature count, and the PMTiles archive without a live GIS download.
+CI checks this file with `--check` against a database built by `ATLAS_IMPORT_SCOPE=albania` (migrations through 0006, derive during import). The register fallback, used only when `derived_jurisdiction` is absent, is still a 61-row draft with null keys and is not the committed file. A two-polygon GeoJSON fixture checks TopoJSON parsing, feature count, and the PMTiles archive without a live GIS download.

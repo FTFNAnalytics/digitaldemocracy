@@ -65,13 +65,25 @@ const SINGLE_EXACT = new Set([
   "district_mayor",
 ]);
 
+function officeTypeTokens(officeType: string): string[] {
+  const normalized = officeType.trim().toLowerCase().replace(/[\s-]+/g, "_");
+  if (!normalized) return [];
+  return normalized.split("_").filter((token) => token.length > 0);
+}
+
 export function isSingleSeatOfficeType(officeType: string): boolean {
   const normalized = officeType.trim().toLowerCase().replace(/[\s-]+/g, "_");
   if (!normalized) return false;
   if (SINGLE_EXACT.has(normalized)) return true;
-  const tokens = normalized.split("_").filter((token) => token.length > 0);
+  const tokens = officeTypeTokens(officeType);
   if (tokens.some((token) => MULTI_TOKENS.has(token))) return false;
   return tokens.some((token) => SINGLE_TOKENS.has(token));
+}
+
+/** Council, assembly, and other multi-seat types. A single-seat type is never collective. */
+export function isCollectiveOfficeType(officeType: string): boolean {
+  if (isSingleSeatOfficeType(officeType)) return false;
+  return officeTypeTokens(officeType).some((token) => MULTI_TOKENS.has(token));
 }
 
 export type SelectedEventFacts = {
