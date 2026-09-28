@@ -1,4 +1,4 @@
-export const SEARCH_MODES = ["seat", "cycle", "candidate"] as const;
+export const SEARCH_MODES = ["seat", "cycle", "candidate", "person"] as const;
 export type SearchMode = (typeof SEARCH_MODES)[number];
 
 export const SEARCH_QUERY_MAX = 200;
@@ -48,7 +48,7 @@ function readParam(
 function parseMode(value: string): SearchMode {
   if (!value) return "seat";
   if ((SEARCH_MODES as readonly string[]).includes(value)) return value as SearchMode;
-  throw new SearchInputError("mode must be seat, cycle, or candidate.");
+  throw new SearchInputError("mode must be seat, cycle, candidate, or person.");
 }
 
 function parseYear(value: string, label: string): number | undefined {
@@ -98,5 +98,6 @@ export function parseAtlasSearchParams(
 export function searchModeLabel(mode: SearchMode): string {
   if (mode === "seat") return "Seats";
   if (mode === "cycle") return "Election days";
+  if (mode === "person") return "Person";
   return "Candidates";
 }

@@ -105,6 +105,7 @@ describe("Atlas migrations", () => {
       { version: 4, name: "atlas_search", filename: ATLAS_SEARCH_FILENAME },
       { version: 5, name: "atlas_boundary", filename: "0005_atlas_boundary.sql" },
       { version: 6, name: "atlas_office_slug", filename: "0006_atlas_office_slug.sql" },
+      { version: 7, name: "atlas_person", filename: "0007_atlas_person.sql" },
     ]);
   });
 });

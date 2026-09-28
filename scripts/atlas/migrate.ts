@@ -3,7 +3,7 @@
  * Apply checked-in Atlas SQL migrations to two databases:
  *   - 0001_atlas_attempt_log.sql → ATLAS_ATTEMPTS_SQLITE_PATH
  *   - 0002_atlas_master.sql and later master files (0003 derived,
- *     0004 search, 0005 boundary, 0006 office slugs) → ATLAS_SQLITE_PATH
+ *     0004 search, 0005 boundary, 0006 office slugs, 0007 persons) → ATLAS_SQLITE_PATH
  *
  * Each SQL file already contains BEGIN IMMEDIATE / COMMIT and must be
  * executed outside an existing transaction. Do not wrap exec in BEGIN.

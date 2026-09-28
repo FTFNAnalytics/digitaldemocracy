@@ -127,7 +127,8 @@ function fsyncPath(filePath: string, directory = false): void {
 export function publishStaging(masterPath: string): void {
   const staging = stagingPathFor(masterPath);
   // Derived rows and search indexes are rebuilt in the staged file so the atomic
-  // rename publishes them with the master. deriveAtlas does not edit master entity rows.
+  // rename publishes them with the master. Approved person proposals are reloaded
+  // into person and person_alias. Other master entity rows are not edited.
   rebuildDerivedInFile(staging);
   checkpointAndCloseForPublish(staging);
   fsyncPath(staging);

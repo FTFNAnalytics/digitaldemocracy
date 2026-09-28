@@ -32,6 +32,8 @@ const MASTER_TABLES = [
   "office",
   "office_tier_classification",
   "party_mapping",
+  "person",
+  "person_alias",
   "proceeding",
   "publication_receipt",
   "publication_release",
@@ -112,6 +114,7 @@ describe("atlas CLI stubs", () => {
     expect(first.stdout).toContain("Applied to master DB: 0004_atlas_search");
     expect(first.stdout).toContain("Applied to master DB: 0005_atlas_boundary");
     expect(first.stdout).toContain("Applied to master DB: 0006_atlas_office_slug");
+    expect(first.stdout).toContain("Applied to master DB: 0007_atlas_person");
     expect(first.stdout).not.toContain("import:atlas remains blocked");
 
     expect(tableNames(attemptsPath)).toEqual(["ingest_attempt", "schema_migration"]);
@@ -138,6 +141,7 @@ describe("atlas CLI stubs", () => {
         { version: 4, description: "Atlas search indexes" },
         { version: 5, description: "Atlas boundary crosswalk" },
         { version: 6, description: "Atlas office slugs" },
+        { version: 7, description: "Atlas person entities" },
       ]);
       expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 0 });
       expect(master.prepare("SELECT COUNT(*) AS n FROM country").get()).toMatchObject({ n: 0 });
@@ -157,6 +161,7 @@ describe("atlas CLI stubs", () => {
     expect(second.stdout).toContain("Already applied to master DB: 0004_atlas_search");
     expect(second.stdout).toContain("Already applied to master DB: 0005_atlas_boundary");
     expect(second.stdout).toContain("Already applied to master DB: 0006_atlas_office_slug");
+    expect(second.stdout).toContain("Already applied to master DB: 0007_atlas_person");
   });
 
   it("migrate:atlas refuses an unexpected existing schema", () => {
