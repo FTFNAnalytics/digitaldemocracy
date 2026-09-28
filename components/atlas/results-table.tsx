@@ -61,9 +61,15 @@ export function ResultsTable({
             const tone = barTone(row, runnerUp);
             const width = scale != null && row.share != null && scale > 0 ? Math.max(0, Math.min(100, (row.share / scale) * 100)) : 0;
             return (
-              <tr key={row.id} className="border-b border-atlas-line align-top last:border-0">
+              <tr key={row.id} data-result-row={row.id} className="border-b border-atlas-line align-top last:border-0">
                 <td className="px-3 py-2.5">
-                  <div className="font-medium">{row.label ?? "not supplied"}</div>
+                  {row.labelHref && row.label ? (
+                    <a href={row.labelHref} className="font-medium text-atlas-accent hover:underline">
+                      {row.label}
+                    </a>
+                  ) : (
+                    <div className="font-medium">{row.label ?? "not supplied"}</div>
+                  )}
                   {row.elected ? (
                     <span className="mt-1 inline-flex rounded-full bg-atlas-accent px-2 py-0.5 text-xs font-semibold text-atlas-on-accent">
                       Elected

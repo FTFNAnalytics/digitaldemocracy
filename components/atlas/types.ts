@@ -42,6 +42,7 @@ export type CycleChip = {
 export type ResultBarRow = {
   id: string;
   label: string | null;
+  labelHref?: string | null;
   partyLabel: string | null;
   votes: number | null;
   votesStatus: string;

@@ -163,15 +163,15 @@ function pairFromObject(value: unknown): { registered: number; ballots: number }
   return { registered, ballots };
 }
 
-export function turnoutFromEventRaw(rawJson: string | null): number | null {
-  if (!rawJson) return null;
+function eventRawObjects(rawJson: string | null): unknown[] {
+  if (!rawJson) return [];
   let parsed: unknown;
   try {
     parsed = JSON.parse(rawJson);
   } catch {
-    return null;
+    return [];
   }
-  if (!parsed || typeof parsed !== "object") return null;
+  if (!parsed || typeof parsed !== "object") return [];
   const row = (parsed as { row?: unknown }).row;
   const objects: unknown[] = [row];
   if (row && typeof row === "object" && !Array.isArray(row)) {
@@ -181,12 +181,53 @@ export function turnoutFromEventRaw(rawJson: string | null): number | null {
       objects.push((extensions as { raw?: unknown }).raw);
     }
   }
-  for (const object of objects) {
+  return objects;
+}
+
+export function turnoutFromEventRaw(rawJson: string | null): number | null {
+  for (const object of eventRawObjects(rawJson)) {
     const pair = pairFromObject(object);
     if (!pair) continue;
     return turnoutPercent(pair.registered, pair.ballots);
   }
   return null;
+}
+
+/**
+ * Counts present on one raw object. A field that is absent stays null.
+ * Counts are not copied from a nested object once an outer object names either field.
+ */
+export function suppliedCountsFromEventRaw(rawJson: string | null): { registered: number | null; ballots: number | null } {
+  const empty = { registered: null, ballots: null };
+  for (const object of eventRawObjects(rawJson)) {
+    if (!object || typeof object !== "object" || Array.isArray(object)) continue;
+    const record = object as Record<string, unknown>;
+    const hasRegistered = REGISTERED_KEYS.some((key) => key in record);
+    const hasBallots = BALLOT_KEYS.some((key) => key in record);
+    if (!hasRegistered && !hasBallots) continue;
+    let registered: number | null = null;
+    let ballots: number | null = null;
+    if (hasRegistered) {
+      for (const key of REGISTERED_KEYS) {
+        const count = finiteCount(record[key]);
+        if (count != null) {
+          registered = count;
+          break;
+        }
+      }
+    }
+    if (hasBallots) {
+      for (const key of BALLOT_KEYS) {
+        const count = finiteCount(record[key]);
+        if (count != null) {
+          ballots = count;
+          break;
+        }
+      }
+    }
+    return { registered, ballots };
+  }
+  return empty;
 }
 
 export function termYearsFromOfficeRaw(rawJson: string | null): number | null {

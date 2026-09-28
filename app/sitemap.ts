@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { listCyclePublicPaths } from "@/lib/atlas/cycle/read";
 import { buildSitemapChunks, listJurisdictionSlugPaths } from "@/lib/atlas/jurisdiction";
 import { getCountries } from "@/lib/observatory/load";
 import { obsRoutes } from "@/lib/observatory/routes";
@@ -26,6 +27,7 @@ function loadChunks() {
   return buildSitemapChunks({
     staticEntries,
     jurisdictionPaths: listJurisdictionSlugPaths(),
+    cyclePaths: listCyclePublicPaths(),
     origin: SITE_URL,
   });
 }

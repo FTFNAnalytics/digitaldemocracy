@@ -19,7 +19,21 @@ export const atlasRoutes = {
   event: (eventId: string) => `${ATLAS_BASE}/elections/${encodeURIComponent(eventId)}`,
   jurisdiction: (slugPath: string) => `${ATLAS_BASE}/${encodedSlugPath(slugPath)}`,
   seat: (slugPath: string) => `${ATLAS_BASE}/${encodedSlugPath(slugPath)}`,
+  candidateSearch: (label: string) =>
+    `${ATLAS_BASE}/search?${new URLSearchParams({ mode: "candidate", q: label }).toString()}`,
 } as const;
+
+/** /atlas/{country}/elections/{YYYY-MM-DD} or /{YYYY}, plus an optional place scope. */
+export function cyclePublicPath(countrySlug: string, dateToken: string, scopeSegments: string[] = []): string {
+  const head = `${ATLAS_BASE}/${encodeURIComponent(countrySlug)}/elections/${encodeURIComponent(dateToken)}`;
+  if (scopeSegments.length === 0) return head;
+  return `${head}/${scopeSegments.map((segment) => encodeURIComponent(segment)).join("/")}`;
+}
+
+/** Full-day CSV. Every contest on that resolved day, not a scoped subset. */
+export function cycleCsvPath(countrySlug: string, isoDate: string): string {
+  return `${ATLAS_BASE}/${encodeURIComponent(countrySlug)}/elections/${encodeURIComponent(isoDate)}.csv`;
+}
 
 /** Public seat alias: /atlas/{jurisdiction slug_path}/seats/{office-slug}. */
 export function parseSeatAliasPath(
