@@ -1,0 +1,96 @@
+{
+  "pack": "Prompt BC — Moldova",
+  "snapshot": "2026-09-28",
+  "country_id": "moldova",
+  "country_name": "Republic of Moldova",
+  "scope_gate": "Moldova institutions only; no parallel Transnistrian institutions or invented dual sovereignty.",
+  "applied_changes": 0,
+  "research_coverage_complete": false,
+  "current_register_reconciled": true,
+  "history_coverage": "partial; source-identified events/results with named holds",
+  "current_register_basis": "898 CEC 2023/May 2024 units minus five separately abolished units in the two 2025 amalgamations = 893 local jurisdictions; two national, two autonomous, 32 raion offices additional.",
+  "approvals": {
+    "justin_scope": false,
+    "justin_office_register": false,
+    "justin_history": false,
+    "justin_tiers": false,
+    "justin_field_map": false,
+    "justin_import": false,
+    "justin_publication": false
+  },
+  "executed_operations": "Research, local artifact generation, read-only validation, deliverable saving only. No importer/SQLite/VPS/UI/repository/service changes.",
+  "successor_links": 0,
+  "counts": {
+    "current_offices": 1822,
+    "historical_only_offices": 14,
+    "office_rows": 1836,
+    "events": 3882,
+    "historical_event_records": 3874,
+    "upcoming_event_records": 8,
+    "dated_historical_event_records": 273,
+    "cycle_or_snapshot_event_records": 3601,
+    "results": 9843,
+    "current_direct_executives": 895,
+    "current_local_mayors": 893,
+    "current_local_councils": 893,
+    "current_raion_councils": 32,
+    "current_autonomous_assemblies": 1,
+    "current_national_assemblies": 1,
+    "current_representative_bodies": 927,
+    "historical_direct_executives": 7,
+    "historical_local_councils": 7,
+    "ep_offices": 0,
+    "transnistria_parallel_offices": 0,
+    "draft_tier_histogram": {
+      "national": 2,
+      "autonomous": 2,
+      "raion": 32,
+      "municipal": 1800
+    },
+    "scope_breakout": [
+      {
+        "scope": "national",
+        "current_offices": 2,
+        "historical_only_offices": 0,
+        "events": 71,
+        "results": 224,
+        "current_direct_executives": 1,
+        "current_representative_bodies": 1
+      },
+      {
+        "scope": "gagauzia",
+        "current_offices": 2,
+        "historical_only_offices": 0,
+        "events": 180,
+        "results": 597,
+        "current_direct_executives": 1,
+        "current_representative_bodies": 1
+      },
+      {
+        "scope": "raion",
+        "current_offices": 32,
+        "historical_only_offices": 0,
+        "events": 32,
+        "results": 224,
+        "current_direct_executives": 0,
+        "current_representative_bodies": 32
+      },
+      {
+        "scope": "local",
+        "current_offices": 1786,
+        "historical_only_offices": 14,
+        "events": 3599,
+        "results": 8798,
+        "current_direct_executives": 893,
+        "current_representative_bodies": 893
+      }
+    ],
+    "source_inventory_entries": 110,
+    "results_with_votes": 810,
+    "results_with_share": 873,
+    "results_with_seats": 7232
+  },
+  "draft_tier_semantics": "Institutional labels proposed for review, not approved Atlas production classifications.",
+  "field_map_columns": 223,
+  "field_map_tables": 20
+}

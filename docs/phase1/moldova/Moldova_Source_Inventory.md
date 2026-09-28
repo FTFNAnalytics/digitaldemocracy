@@ -1,0 +1,116 @@
+# Source inventory
+
+Original-response hashes identify bytes retrieved on 2026-09-28. They do not certify the contents. `retained_original_path` marks which originals are bundled; other pages have recorded original-byte hashes and, where used for tables, retained factual extracts. Failed downloads have no invented original-file hash. IPU and EU text-only retrievals are labelled separately. All bundled files are covered by SHA256SUMS.
+
+| ID | Publisher / title | Status | Original SHA-256 |
+|---|---|---|---|
+| S32378be566 | [Gagauzia governor 2023 results](https://alegeri.md/w/Alegerile_din_2023_a_guvernatorului_G%C4%83g%C4%83uziei) | ok | 0b0ad84788bf7df07327271325abc64f521555ad077e2e885e2dafc7a518ca13 |
+| S0afd98d653 | [Gagauzia governor 2019 results](https://alegeri.md/w/Alegerile_din_2019_a_guvernatorului_G%C4%83g%C4%83uziei) | ok | 55aff960aed0a08b80fe478fe814a8886741d6387b31f365b38a158478ca2ffd |
+| S63f5f197e8 | [Gagauzia governor 2015 results](https://alegeri.md/w/Alegerile_din_2015_a_guvernatorului_G%C4%83g%C4%83uziei) | ok | 67aae143dfa51a45eb39c6c41a462708adfa62609493bdcd930d9619ecb8cbfa |
+| S527228fdad | [Gagauzia assembly 2021 constituency results and subsequent by-elections](https://alegeri.md/w/Alegerile_%C3%AEn_Adunarea_Popular%C4%83_a_G%C4%83g%C4%83uziei_din_2021) | ok | 7d4cba40d302f181d876741e89bff5a29903456ba659bb074021b9f39b0e93ea |
+| S59fee24f67 | [Gagauzia assembly 2016 constituency results and subsequent by-elections](https://alegeri.md/w/Alegerile_%C3%AEn_Adunarea_Popular%C4%83_a_G%C4%83g%C4%83uziei_din_2016) | ok | 7c991f3b44ea3afcd0a30c65ebe6a6f7e02b24b2010797e97f992b1f3c77999a |
+| S9047812167 | [Gagauzia assembly 2012 constituency results and subsequent by-elections](https://alegeri.md/w/Alegerile_%C3%AEn_Adunarea_Popular%C4%83_a_G%C4%83g%C4%83uziei_din_2012) | ok | 99e7d0987850c2e86e4ef7529c2a06cf0818b22c7fcc6e1ed95bb1cd69b857cc |
+| Sa29b098764 | [Novosiolovca mayor, CEC report for 5 November 2023](https://web.archive.org/web/20231222154855/https://rezultate.cec.md/api/api/GetReport?electionCircumscriptionId=5764&electionId=10064&electionRoundId=20134) | ok | c3a6dce6e3862bcea2c89565816d87a259f5efbb01fa088761ea209801f2833f |
+| S4b7f15a719 | [CEC elected mayor register for the 2023 general local elections](https://a.cec.md/storage/ckfinder/files/ALG_05.11.2023/Rezultate/C2_Lista%20primarilor%20ale%C8%99i_ALG%202023_plasat%20pe%20sait.xlsx) | ok | 51addef99d18adb9ac2abc5d69c015fed14179f4ef61921cf67746b4513fab7a |
+| S8dd6a9478b | [CEC elected mayor register for the 2019 general local elections](https://a.cec.md/storage/ckfinder/files/lista%20primarilor%20ale%C8%99i(1).xlsx) | ok | ed0abcb477d6f96ceab828cbffd4757f4ce808e6311a69f9b249dc12d59c27d8 |
+| S1dd65323aa | [CEC elected local councillors in 2015](https://a.cec.md/storage/old_site_files/files/files/Alegeri%20locale%202015/Lista%20Consilieri%20Locali%20ALG%202015.xlsx) | ok | 1a0fcf1e82e2ff61ea7903776220ff2c10c0956eefbf77e584a99108654090b2 |
+| S20620b6e42 | [ADEPT 2019 local elected bodies in Raionul Șoldănești](https://alegeri.md/w/Raionul_%C8%98old%C4%83ne%C8%99ti) | ok | f12ee00770c7eab6398d28feee7e4905efa51fc82c434cb824f47dfe0e805273 |
+| Sdb2b6a34af | [ADEPT 2019 local elected bodies in Raionul Ștefan Vodă](https://alegeri.md/w/Raionul_%C8%98tefan_Vod%C4%83) | ok | 3a6209b48389cc72aafcf0b8352aa7c458d4150bb8df01bb2fac087d26185271 |
+| Sf403d53619 | [ADEPT 2019 local elected bodies in Raionul Anenii Noi](https://alegeri.md/w/Raionul_Anenii_Noi) | ok | 1a2048911ed16c4308ce883152171c5d1ecbc5aeac94c9495a20653536dcdef0 |
+| S315ec699b0 | [ADEPT 2019 local elected bodies in Raionul Basarabeasca](https://alegeri.md/w/Raionul_Basarabeasca) | ok | 174a0e9e7e0c213fea8c896a1def76881b703d91680588895d522e161815bea0 |
+| S5536464462 | [ADEPT 2019 local elected bodies in Raionul Briceni](https://alegeri.md/w/Raionul_Briceni) | ok | 74d6f5ffeeb6a3e51887e0f41e088f930d4a7e309c125881a4cfb37a9808154e |
+| S3c40c68f64 | [ADEPT 2019 local elected bodies in Raionul Călărași](https://alegeri.md/w/Raionul_C%C4%83l%C4%83ra%C8%99i) | ok | 353e57ed31153fea14b76737c0dbe4853dab302f38e1ececbe50d2ecd85930ce |
+| S28e0e6c340 | [ADEPT 2019 local elected bodies in Raionul Căușeni](https://alegeri.md/w/Raionul_C%C4%83u%C8%99eni) | ok | 0272bcd1a302287a4c341ed3645f290b81e838d5484e8adb04676a73ba27e631 |
+| S3da5f6b2ab | [ADEPT 2019 local elected bodies in Raionul Cahul](https://alegeri.md/w/Raionul_Cahul) | ok | 3c675a12ac3adbb2a338888a756fab4c590f1d3337dca9b936ac701dff6ed3e2 |
+| Sf7a8d62445 | [ADEPT 2019 local elected bodies in Raionul Cantemir](https://alegeri.md/w/Raionul_Cantemir) | ok | 3dda888e6951d10b0eac632a7bb6ed15f7d8043a3454459eac101c683e736720 |
+| S654e463751 | [ADEPT 2019 local elected bodies in Raionul Cimișlia](https://alegeri.md/w/Raionul_Cimi%C8%99lia) | ok | afc6da217f1b7009183462c0bb623e13a35cf6ce3b710517d16a7b36be3ec3c7 |
+| Sc96c61329c | [ADEPT 2019 local elected bodies in Raionul Criuleni](https://alegeri.md/w/Raionul_Criuleni) | ok | a7f9f045811f2bc1ac088d9088631cb59a311471ac7744657ada7a94aab8dfec |
+| S7b6c27ef11 | [ADEPT 2019 local elected bodies in Raionul Dondușeni](https://alegeri.md/w/Raionul_Dondu%C8%99eni) | ok | 26afe80bd27c0d2707e945078bfe1f1350ee0cbf25ec548759f1a5e64b0b3218 |
+| S23c8d5bf2d | [ADEPT 2019 local elected bodies in Raionul Drochia](https://alegeri.md/w/Raionul_Drochia) | ok | ba911da2364d7e5db58e9f700a7056b1a1e8f88881f1b9c472a057abf93a89a3 |
+| S9c3aa03330 | [ADEPT 2019 local elected bodies in Raionul Dubăsari](https://alegeri.md/w/Raionul_Dub%C4%83sari) | ok | a138b8be5ade704c8963c3bdbb4e8026c7f347400cc9a0a1a3936ae44217d620 |
+| S1dd40951e1 | [ADEPT 2019 local elected bodies in Raionul Edineț](https://alegeri.md/w/Raionul_Edine%C8%9B) | ok | 4305eaef36e48dcd3a4624eb5c9d2963ecccbcf388eaf666b479fe8d2210c69a |
+| S8cf774ad96 | [ADEPT 2019 local elected bodies in Raionul Fălești](https://alegeri.md/w/Raionul_F%C4%83le%C8%99ti) | ok | 847bb9f76baa2444bf8ff79ad1998fa60900981aecedfa832a7e76bade09c0cc |
+| S835279c762 | [ADEPT 2019 local elected bodies in Raionul Florești](https://alegeri.md/w/Raionul_Flore%C8%99ti) | ok | 6fe56a778ca2169b4e99f1e16a71b1bac18a7a397beabdcbca18c60264d82206 |
+| S41a55b2ffc | [ADEPT 2019 local elected bodies in Raionul Glodeni](https://alegeri.md/w/Raionul_Glodeni) | ok | 33eeb13214ebec25b39b8f1916539942292ec06ba3e414bfff16e3172458bf73 |
+| Sf14ed8355a | [ADEPT 2019 local elected bodies in Raionul Hîncești](https://alegeri.md/w/Raionul_H%C3%AEnce%C8%99ti) | ok | a31221ccf136105bf74c63a6ce379f539df99f4fd78fdaf3e25fd3f229c4614c |
+| S4cbc8f7d31 | [ADEPT 2019 local elected bodies in Raionul Ialoveni](https://alegeri.md/w/Raionul_Ialoveni) | ok | f8ecd616c64f4afd7739ef58bbfd2a66c92b77415b8f8c177fe1a0a23d4e6d0f |
+| S773feca362 | [ADEPT 2019 local elected bodies in Raionul Leova](https://alegeri.md/w/Raionul_Leova) | ok | 05f358997473dca9e865d8c429e8d4e519cfb808432980a93eddeb15e47a536a |
+| Sfa73fc12af | [ADEPT 2019 local elected bodies in Raionul Nisporeni](https://alegeri.md/w/Raionul_Nisporeni) | ok | 0d2bdfbf85121a2211d0a70fbeb88154ba5a25dc170fa740ba57d7678a901e27 |
+| Sf2a497658d | [ADEPT 2019 local elected bodies in Raionul Ocnița](https://alegeri.md/w/Raionul_Ocni%C8%9Ba) | ok | adcb3446640efa3b4b5044af2bdf640ddd84a19a5b552d7e500f0122e24ad70d |
+| S19f5bfbea6 | [ADEPT 2019 local elected bodies in Raionul Orhei](https://alegeri.md/w/Raionul_Orhei) | ok | 28431f7b6575ebcfd8cf69e7e74bf4b87f6d6a58bc8db7291183ea08f940c0f2 |
+| S957453d81f | [ADEPT 2019 local elected bodies in Raionul Rîșcani](https://alegeri.md/w/Raionul_R%C3%AE%C8%99cani) | ok | 07f5f22da8391b1b3fd79528e5fc33806a335e9b0e67da2fc58a9c24792ea8eb |
+| S8a5b194722 | [ADEPT 2019 local elected bodies in Raionul Rezina](https://alegeri.md/w/Raionul_Rezina) | ok | 032bc35b841ebeca4db4ef26e54fb790dbc8d893678b900bfe0a276493f2f232 |
+| Sc4feb63c75 | [ADEPT 2019 local elected bodies in Raionul Sîngerei](https://alegeri.md/w/Raionul_S%C3%AEngerei) | ok | fb90e0211b1ff5e539dd5ed619cad1fbd673e2d91d7e9dfa49b9b6737e1f4d15 |
+| S86d5f73d5e | [ADEPT 2019 local elected bodies in Raionul Soroca](https://alegeri.md/w/Raionul_Soroca) | ok | 2a700368da73ae2e1a788623875e86290eb5914d5895d2a04e218d2da97daa63 |
+| Sb7cbecb9b1 | [ADEPT 2019 local elected bodies in Raionul Strășeni](https://alegeri.md/w/Raionul_Str%C4%83%C8%99eni) | ok | e092f49d1ca706f06220665467bd89406a71a6cde9e7c55ef8ef549147a8ea10 |
+| S9b061fdcb3 | [ADEPT 2019 local elected bodies in Raionul Taraclia](https://alegeri.md/w/Raionul_Taraclia) | ok | d1f6f359d89c334a782c77d96566befc8ef3de53b5e4bca207c64a3f351bdb0b |
+| Sd9617e9cae | [ADEPT 2019 local elected bodies in Raionul Telenești](https://alegeri.md/w/Raionul_Telene%C8%99ti) | ok | 0e3d20ae5816fc38e1a8164209f5fb093ff8a22a33c409af5b4b635e75f7443c |
+| S0fc3ce0ab8 | [ADEPT 2019 local elected bodies in Raionul Ungheni](https://alegeri.md/w/Raionul_Ungheni) | ok | f3eeb88d84ac7d7ace42f5d5f92a99eff35a57988af5ead7b78f3520a8aedda2 |
+| S2b3902b749 | [ADEPT Gagauzia local council composition after the 2023 elections](https://alegeri.md/w/UTA_G%C4%83g%C4%83uzia) | ok | 9b79a24193c89dc08c632a64bee3deeaa78b4e383aa9baf0f79c96fba36e9518 |
+| S6802addfdf | [Hăsnășenii Mari official 2015 runoff return](https://www.voteaza.md/r/rez_t2_2015/59/58/ro5019.png) | ok | c588a998461eaeb38f2056019dd2f13fca19f1babcf1ce4ca2a0b4cbd7a35307 |
+| S71e9068673 | [Costești official 2015 runoff return](https://www.voteaza.md/r/rez_t2_2015/59/71/ro5649.png) | ok | aed4d1f16731df9e62225144851df3a64d68fba0b9b2b35b134302179a093bbf |
+| S00aba5212f | [Cairaclia official 2015 runoff return](https://www.voteaza.md/r/rez_t2_2015/59/77/ro5874.png) | ok | 31c466b3e3254e7cb5acb0d607a4255e1b64ad7a433c341e0227bc37c0947f3c |
+| See0d839ad6 | [Novosiolovca official 2015 first-round return](https://www.voteaza.md/r/rez_t1_2015/54/77/ro5885.png) | ok | 125330bdcde34770a55e2040578c7e29023c99add2ce0b261d6af17e43d83f53 |
+| S628b875fa2 | [Chirsova official 2015 first-round return](https://www.voteaza.md/r/rez_t1_2015/54/80/ro6032.png) | ok | 1a9b9091e41f3cc3ec9925f063fe5ad15053f77055d0aa77a119da504e3f0eed |
+| S3d019b5306 | [Tomai 2015 local council complete candidate/list return](https://www.voteaza.md/r/rez_t1_2015/55/80/ro6049.png) | ok | 440d3b8007c574ac4e4f414c784e6ca77b4a514ac12f782c40b840ccc7351c51 |
+| S5f7b08bc58 | [CUATM 2025 official classifier](https://statistica.gov.md/files/files/Clasificatoare/CUATM_25.xlsx) | ok | 21ff5525a7f22f04f0d3f1517ebc1f02401613665fdfe385258aa4c35c92d705 |
+| Sc40f4e4d10 | [CEC report general local elections 2023](https://a.cec.md/storage/ckfinder/files/2355_Anexa_Raport%20ALG%205%20nov%202023.pdf) | ok | 8244f4d6b94fe2c0da4e1c23e55c53af424467f3aaf1b24dfa0eb2e03f2e4e4d |
+| S8195ddf135 | [Law 145 of 2025 amalgamation amendments](https://amalgamare.gov.md/sites/default/files/2025-11/Modificarea%20Legii%20privind%20organizarea%20administrativ-teritorial%C4%83%20a%20Republicii%20Moldova.pdf) | ok | 54130dbdde8c31fec93881df8b4f7787116aedcdd0db99ce21e2105d88bbe26a |
+| S896e173a8d | [Government completed amalgamations October 2025](https://gov.md/ro/comunicate-de-presa-cancelaria-de-stat/amalgamarea-voluntara-primele-doua-clustere-teritoriale-au) | ok | e73c667cb65285e1e21d6f1b37b66360d4d6104b500798d540b3e3f6b0862b74 |
+| Sa07fe9cba3 | [Parliament 2026 amalgamation law](https://multimedia.parlament.md/adoptat-de-parlament-mecanismul-de-amalgamare-voluntara-a-unitatilor-administrativ-teritoriale-a-fost-imbunatatit/) | fetch_failed | null — original bytes unavailable |
+| S4f5ee93dee | [ADEPT November 2025 local elections](https://alegeri.md/w/Alegerile_locale_noi_din_16_noiembrie_2025) | ok | 5acb0604d09cc4fca0671b8f7f212ecb8270c84add5ddd4c24e41eb84603e145 |
+| Sb5b36c9a06 | [ADEPT amalgamation register](https://alegeri.md/w/Unit%C4%83%C8%9Bile_administrativ-teritoriale_%C3%AEn_proces_de_amalgamare_voluntar%C4%83) | ok | a493b3fc9e65cb4e42598ddec0b93ecc8183ac1f05de8320a4fbb3b2a9ac9196 |
+| Safc5acc4a7 | [BNS CUATM amendment October 2025](https://statistica.gov.md/ro/clasificatorul-unitatilor-administrativ-teritoriale-al-republicii-moldova-cuatm--12_62048.html) | ok | 1b8a622e107cc36877e486d9aaa2ada84a0a982ddf7fe924bc1e535aec18e696 |
+| Sbc6457c376 | [Moldova parliamentary election index ADEPT](https://alegeri.md/w/Alegeri_parlamentare_%C3%AEn_Republica_Moldova) | ok | 0365c7043881a288d124ec9154cad03e7dd593240eb1cf15f90f1be98b7357fe |
+| S75b4ee0d7e | [Moldova presidential election index ADEPT](https://alegeri.md/w/Alegeri_preziden%C8%9Biale_%C3%AEn_Republica_Moldova) | ok | 0e6f098b22dfd2fe86a994fc4a9918c4017c5c16bc99fb718109cfe9b94a103a |
+| S40fb7a226e | [Moldova 2025 parliament results ADEPT](https://alegeri.md/w/Alegerile_parlamentare_din_2025_%C3%AEn_Republica_Moldova) | ok | f19080ebba19eea0fdc847b0641acd505e9f459ff19c51137df26ad14c076822 |
+| S1c563af612 | [CEC 2025 parliamentary certified allocation](https://diaspora.cec.md/ro/alegeri/alegeri-parlamentare-28-septembrie-2025-2025/rezultate-alegeri) | ok | ace46a7fb171a3223c1e56674b2996588cbe1baabd90b621509bbaa65e6251ef |
+| Sb838464942 | [Constitution presidential administration PDF](https://presedinte.md/app/webroot/Constitutia_RM/Constitutia_RM_RO.pdf) | ok | 8b26c7265328fdfbb637caee27fd6b43769dc446488250a6040e0950dff39057 |
+| S94a35b6340 | [Constitutional Court 2016 presidential mode judgment](https://constcourt.md/ccdocview.php?docid=558&l=ro&tip=hotariri) | ok | d1ede04e13c2db162bde9627e16c1452f7bc7a8305960e578394974fe4914a57 |
+| Sd9c2f2f0b7 | [Constitutional Court 2026 Gagauzia electoral powers judgment](https://constcourt.md/ccdocview.php?docid=895&l=ro&tip=hotariri) | ok | 80ad366141f1469d74b9dd3e475307a61dd92718554a0acc4fc81539e289d055 |
+| S933381458b | [Constitutional Court 2024 presidential certification](https://new.constcourt.md/ccdocview.php?docid=867&l=ro&tip=hotariri) | ok | 9c8e1ad1cd6c2134b132dc5886ffe33fb5058e299482885f66dc892e27014fa1 |
+| S12acc86b7d | [Constitutional Court 2016 presidential certification](https://constcourt.md/ccdocview.php?docid=602&l=ro&tip=hotariri) | ok | e57345cd303b224c9a2c449fa4b24992b176891c46547cbece7274bbe4923bef |
+| S240e67cea2 | [CEC Gagauzia 2026 Bashkan direct election notice](https://cece.cec.md/ro/alegerile-regionale-din-15-noiembrie-2026-conditiile-pentru-candidatii-la-functia-de-guvernator) | ok | 0a281646753ded69c7726f473bfa8a5f32ee3d8f1c7e88b47a1990071f8f67c7 |
+| S4330e20a42 | [CEC Gagauzia 2026 Assembly election notice](https://cece.cec.md/en/cec-informs-about-conditions-participation-elections-peoples-assembly-gagauzia-november-15-2026) | ok | 68dd135c73d9039fcc64fc64a3e4ff86da94876984bcf9cb02f811afc12c47ce |
+| S6c2d98e2da | [Gagauzia special status Law 344](https://www.mskgagauzia.md/wp-content/uploads/2020/02/LEGE-344.pdf) | ok | 1d53d6a87c3151fdba6e110b48f6245d415b496ae61af0f7b99eeb0917ec104f |
+| S25bf2e53cd | [ODIHR local election final report 2023](https://cdn.osce.org/sites/default/files/f/documents/2/5/564925.pdf) | ok | b589ea307de8ad794d62d3b13ba755391349a38bf2ede1aa052e7791f2b78636 |
+| Sfaede98bdf | [Electoral Code reference index e-lex](https://e-lex.md/eli/md/cod/2022/325/ro) | ok | bdd803fa81eed7aeb1c5909442f4ea8ceb73e5e043ef6df19ec4d33f4c86f3dd |
+| S827f42e162 | [Local government law 436 legal register](https://www.legis.md/cautare/getResults?doc_id=138962&lang=ro) | fetch_failed | null — original bytes unavailable |
+| Sf3f1da0baf | [Territorial law 764 legal register](https://www.legis.md/cautare/getResults?doc_id=138831&lang=ro) | fetch_failed | null — original bytes unavailable |
+| S9ee0ade153 | [EU Moldova accession status 2026](https://www.consilium.europa.eu/en/policies/moldova/) | web_text_retrieved | null — original bytes unavailable |
+| Se934e25fa3 | [Alegeri prezidențiale din 2024 în Republica Moldova](https://alegeri.md/w/Alegeri_preziden%C8%9Biale_din_2024_%C3%AEn_Republica_Moldova) | ok | 18b9b318636527cc39c7be581cc605d866b0f9475f99d451465c39a49191283f |
+| S1665afc043 | [Alegeri parlamentare 2021](https://alegeri.md/w/Alegerile_parlamentare_din_2021_%C3%AEn_Republica_Moldova) | ok | 0f27263fbffaa29a1c0fe49082fe8eadb72d996428c1ac7ba9db8f0c1ccad2ea |
+| S0f70f3d558 | [Alegerile parlamentare din 2019 în Republica Moldova](https://alegeri.md/w/Alegerile_parlamentare_din_2019_%C3%AEn_Republica_Moldova) | ok | 73e71497d4bb8c72d969393e15efc343bc59d77d1e7229a28e5d1d465603cc77 |
+| Sd36240eab7 | [Alegerile parlamentare din 2014 în Republica Moldova](https://alegeri.md/w/Alegerile_parlamentare_din_2014_%C3%AEn_Republica_Moldova) | ok | 063d2a9bd2dd5de66b4d9c5d2143417471a4a0b8cf1787046c6eaba6b9e9fe10 |
+| Sef64a49a98 | [Alegerile parlamentare din 2019 în Republica Moldova](https://alegeri.md/w/Alegerile_parlamentare_din_2019_%C3%AEn_Republica_Moldova#Circumscrip.C8.9Bia_na.C8.9Bional.C4.83) | ok | e52839434c368c43514f412e9fc74914cb434e91072c547ca5740da5dee9760e |
+| S231f5c6f25 | [Alegerile prezidențiale din 1991 în Republica Moldova](https://alegeri.md/w/Alegerile_preziden%C8%9Biale_din_1991_%C3%AEn_Republica_Moldova) | ok | d22b03a660325b2805950d2184c5aa9c1dd022bf1bb6d99f6bfe2b65ebca767c |
+| Sd1a784d638 | [Alegerile prezidențiale din 1996 în Republica Moldova](https://alegeri.md/w/Alegerile_preziden%C8%9Biale_din_1996_%C3%AEn_Republica_Moldova) | ok | 8e0799c1d24050dea688288c2ff5a3c116577427f5bdba5dd5763e1564f346d5 |
+| S22eb21c92b | [Alegerile prezidențiale din 2016 în Republica Moldova](https://alegeri.md/w/Alegerile_preziden%C8%9Biale_din_2016_%C3%AEn_Republica_Moldova) | ok | 8d5445fdc2a60f95b7664f4f88eb6079a7234856ec7e0cb2cdfedf572b89c549 |
+| S460757d862 | [Alegerile prezidențiale din 2020 în Republica Moldova](https://alegeri.md/w/Alegerile_preziden%C8%9Biale_din_2020_%C3%AEn_Republica_Moldova) | ok | b205ff5008a8482294eb7a8120a510e7615b897960df154426670962527b7b23 |
+| Scce5131144 | [2020 presidential confirmation judgment](https://constcourt.md/ccdocview.php?docid=751&l=ro&tip=hotariri) | ok | b949042cddc84c6c13e82be8c59a4128048f92b9487628a04e9bcac0ee542c5c |
+| Saeef70c56f | [CEC November 2026 two Taraclia mayors](https://cece.cec.md/ro/program-calendaristic-pentru-alegeri-locale-noi-din-1-noiembrie-2026) | ok | a85cf409a5ab05ae1840d3be2843c1bbde7bf18a4ee7f336adf72d64d421287d |
+| S9f665c7deb | [CICDE November 2026 election training](https://cicde.md/2026/09/formatorii-cicde-au-organizat-instruiri-pentru-organele-electorale-implicate-in-scrutinele-din-1-noiembrie-2026/) | ok | 451caa3e4521f998bc66d85f0aeb188a2d9a87d016ab4730d3ea9ded700f8159 |
+| S82eafad6a8 | [2025 parliamentary constitutional certification](https://new.constcourt.md/ccdocview.php?docid=882&l=ro&tip=hotariri) | ok | 1557143087132c202d05eb7ff8181ae77d8d13039f0de7b672ae6b5de79fec21 |
+| S9fb4e8b479 | [Electoral Code Parliament publication](https://old.parlament.md/CadrulLegal/Codulelectoral/tabid/153/language/ro-RO/Default.aspx) | fetch_failed | null — original bytes unavailable |
+| S4a62579157 | [CEC CICDE electoral legislation compendium 2025](https://cicde.md/wp-content/uploads/2025/06/Culegere-de-acte-normative_CEC_2025.pdf) | ok | dd34882790030c86441712f9eccb76fbd4018fba8ac44a8480e3ec376a9f6520 |
+| Sd9cfb01bed | [Law 436 local government official IDSI reproduction](https://idsi.md/files/Lege_nr_436_din_28_12_2006.pdf) | fetch_failed | null — original bytes unavailable |
+| S873f81c284 | [IPU parliamentary results 1994](https://data.ipu.org/election-summary/HTML/2215_94.htm) | web_text_retrieved | null — original bytes unavailable |
+| Sded7c73486 | [CEC Electoral code legal register PDF](https://www.legis.md/cautare/downloadpdf/148963) | fetch_failed | null — original bytes unavailable |
+| S45e5d5e313 | [Electoral Code official Parliament PDF July 2024 consolidation](https://old.parlament.md/LinkClick.aspx?fileticket=IC8UOOruM3Q%3D&language=ro-RO&tabid=153) | fetch_failed | null — original bytes unavailable |
+| Sa9a8f4a846 | [Government controlled-area voting Causeni 2023](https://www.gov.md/en/comunicate-de-presa-bpr/information-voters-villages-chitcani-cremenciug-gisca-merenesti-and-zahorna) | ok | fedbf00f35adf55d4189a1896b21dea416a0abb0ec725540938abcb7618edd8c |
+| S2b93f2291e | [CEC 20 years official historical compendium](https://old.cec.md/files/files/20%20ani%20CEC/Cartea_Cec_20_ani_eng_compressed.pdf) | fetch_failed | null — original bytes unavailable |
+| S08da39d3d8 | [CEC November 2026 local calendar](https://a.cec.md/informatii-privind-organizarea-si-desfasurarea-alegerilor-locale-noi-din-1-noiem-21551.html) | ok | 5ddbc1fc5b9d87ca056cf923a5b6502fd72ed588383c5fadf01a3396a73d3988 |
+| S24b6c4801e | [CEC Electoral code national provisions current mirror](https://legi.md/LP_325-2022) | ok | 35ec2e7795c1c68f2086e4b244d305c3575d89e1c95e6db307570b594b1f157f |
+| S9da07dfebc | [ODIHR April 2009 parliamentary final report](https://cdn.osce.org/sites/default/files/f/documents/b/1/37568.pdf) | ok | 6cd78df36b25414390fcf3f1797be590c81f362bf3dae70cc440f5bbdc45b2cb |
+| S48c25b48ff | [ODIHR July 2009 parliamentary final report](https://cdn.osce.org/sites/default/files/f/documents/1/4/39799.pdf) | ok | 0742de549c96785a2e4592d87c7848c59e138b5974bd4525ff6a6140191695b7 |
+| Sc207eb3323 | [ADEPT May June 2018 local new elections](https://alegeri.md/w/Alegerile_locale_noi_din_20_mai_2018) | ok | 5e771f8f1aa05df15c883049338e6d71967bf6ef4200288feeddc14a8dacb9ba |
+| S4ed1e45b81 | [Chisinau 2018 annulment judgment reproduced CRJM](https://crjm.org/wp-content/uploads/2018/06/2018-06-22-hot-jud-Centru.pdf) | ok | ca6cc6788d04d57dd0566c6004e57f27fee648ba930c5aa2f4dc17ae905c0f03 |
+| S66ca34305b | [ADEPT October 2019 Chisinau reversal chronology](https://alegeri.md/w/%C8%98tiri_despre_alegerile_locale_generale_2019) | ok | 0caf2b5303077f4741b5c8e696338a35f982f1ede872f84dd37d4f00b0652a6d |
+| S515bb2b5b4 | [Constitutional Court 2019 Parliament certification](https://constcourt.md/ccdocview.php?docid=714&l=ro&tip=hotariri) | ok | 42bf2155bb68f71105ec82a6a3b257f4c09183001d276731f490f0f3ecd9f5fd |
+| Sd84110dd38 | [Government April 2026 simplified amalgamation future map](https://gov.md/index.php/ro/comunicate-de-presa/procesul-de-amalgamare-voluntara-simplificat-de-guvern) | ok | d9cc4674f0a544426eba86e427ec20480bff65592fdcdcf0c75f8c7c92817a69 |
+| S6d0ae21420 | [ANI official raion president selection explanation](https://www.ani.md/ro/comunicate-de-presa/validarea-mandatului-de-presedinte-si-vicepresedinte-raional?gvas=red) | web_search_text_retrieved | null — original bytes unavailable |
+| Sf931f0cbd9 | [IPU parliamentary results 1998](https://data.ipu.org/election-summary/HTML/2215_98.htm) | web_text_retrieved | null — original bytes unavailable |
+| Sf885316c62 | [IPU parliamentary results 2001](https://data.ipu.org/election-summary/HTML/2215_01.htm) | web_text_retrieved | null — original bytes unavailable |
+| See6db80662 | [IPU parliamentary results 2005](https://data.ipu.org/election-summary/HTML/2215_05.htm) | web_text_retrieved | null — original bytes unavailable |
+| Se68dac7c28 | [IPU parliamentary results 2010](https://data.ipu.org/election-summary/HTML/2215_10.htm) | web_text_retrieved | null — original bytes unavailable |
+| MD-INPUT-LEGACY | User-owned Moldova Elections and Legacy Reference workbook | retained_reference | 2010ae6a09e450c327804c7b7b07b8a41131a7ea81a8f030cef0a9300f923fd7 |

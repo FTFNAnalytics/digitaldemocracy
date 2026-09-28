@@ -1,0 +1,229 @@
+{
+  "validator": "Moldova Prompt BC read-only validator v1",
+  "snapshot": "2026-09-28",
+  "status": "PASS",
+  "applied_changes": 0,
+  "historical_coverage_complete": false,
+  "approval_effect": "none; all Justin boxes remain unchecked",
+  "checks_run": 41,
+  "checks_passed": 41,
+  "failed_checks": [],
+  "counts": {
+    "offices": 1836,
+    "current": 1822,
+    "historical_only": 14,
+    "events": 3882,
+    "results": 9843,
+    "sources": 110
+  },
+  "checks": [
+    {
+      "check": "current_register",
+      "status": "PASS",
+      "detail": "1,822 current + 14 source-identified historical-only offices; keys unique."
+    },
+    {
+      "check": "tiers",
+      "status": "PASS",
+      "detail": "Exact 1:1 unapproved draft tiers; institutional-level histogram checked."
+    },
+    {
+      "check": "national",
+      "status": "PASS",
+      "detail": "Only Parliament and direct-era President."
+    },
+    {
+      "check": "presidential_era",
+      "status": "PASS",
+      "detail": "No popular presidential poll in the parliamentary-selection interval."
+    },
+    {
+      "check": "presidential_rounds",
+      "status": "PASS",
+      "detail": "All nine sourced popular rounds retained separately."
+    },
+    {
+      "check": "presidential_conflict",
+      "status": "PASS",
+      "detail": "Primary court vector retained; no spliced secondary shares."
+    },
+    {
+      "check": "no_ep",
+      "status": "PASS",
+      "detail": "Zero European Parliament offices; event foreign keys constrain events to registered offices."
+    },
+    {
+      "check": "no_parallel",
+      "status": "PASS",
+      "detail": "Moldova-scope register only; no parallel institutions."
+    },
+    {
+      "check": "raions",
+      "status": "PASS",
+      "detail": "32 elected raion councils; no popularly invented raion executive."
+    },
+    {
+      "check": "gagauzia",
+      "status": "PASS",
+      "detail": "Two autonomous institutions and 26 separate local council/mayor pairs."
+    },
+    {
+      "check": "nested",
+      "status": "PASS",
+      "detail": "18 Chișinău subordinate pairs; two Bălți subordinate pairs."
+    },
+    {
+      "check": "no_sectors",
+      "status": "PASS",
+      "detail": "No administrative sector converted into an elected office."
+    },
+    {
+      "check": "amalgamation",
+      "status": "PASS",
+      "detail": "893 complete current pairs; seven source-identified historical pairs."
+    },
+    {
+      "check": "no_successors",
+      "status": "PASS",
+      "detail": "No inferred successor/merger graph."
+    },
+    {
+      "check": "expanded_centers",
+      "status": "PASS",
+      "detail": "Current expanded Leova/Călinești and their old territories are distinct; mandate expiry not invented."
+    },
+    {
+      "check": "cornesti",
+      "status": "PASS",
+      "detail": "Ambiguous Cornești members remain unassigned."
+    },
+    {
+      "check": "member_counts",
+      "status": "PASS",
+      "detail": "10,540 assigned + 24 held = 10,564 source councillors; seat-count derivation explicit."
+    },
+    {
+      "check": "mayor_rosters",
+      "status": "PASS",
+      "detail": "Winner-only rosters have no manufactured date, votes, shares or executive seats."
+    },
+    {
+      "check": "mixed_2019",
+      "status": "PASS",
+      "detail": "50-seat list component plus 51 SMD events under one Parliament office."
+    },
+    {
+      "check": "parliament_1994",
+      "status": "PASS",
+      "detail": "1994 historical allocation not forced to 101."
+    },
+    {
+      "check": "april_2009",
+      "status": "PASS",
+      "detail": "Final recount column checked against CEC figures reproduced by ODIHR."
+    },
+    {
+      "check": "july_2009",
+      "status": "PASS",
+      "detail": "No vote counts reconstructed from rounded percentages."
+    },
+    {
+      "check": "zero",
+      "status": "PASS",
+      "detail": "Explicit Novosiolovca zero retained; missing votes not coerced to zero."
+    },
+    {
+      "check": "homonyms",
+      "status": "PASS",
+      "detail": "Two homonymous Tomai candidates retain distinct ordinal identities."
+    },
+    {
+      "check": "gaga_repeat",
+      "status": "PASS",
+      "detail": "Annulled runoff and subsequent repeat remain separate."
+    },
+    {
+      "check": "aluatu",
+      "status": "PASS",
+      "detail": "Three separately sourced Aluatu polls; invalid-turnout status retained."
+    },
+    {
+      "check": "field_map",
+      "status": "PASS",
+      "detail": "All 223 inherited columns appear once in documentation; no applied mapping."
+    },
+    {
+      "check": "sources",
+      "status": "PASS",
+      "detail": "All embedded provenance references resolve; bundled source and factual-extract hashes match."
+    },
+    {
+      "check": "no_changes",
+      "status": "PASS",
+      "detail": "No applied changes and all Justin approval booleans/checkboxes unapproved."
+    },
+    {
+      "check": "coverage_honesty",
+      "status": "PASS",
+      "detail": "Historical completeness is not claimed; 24 named research gates remain explicit."
+    },
+    {
+      "check": "foreign_keys",
+      "status": "PASS",
+      "detail": "Unique event/result identities and office/event foreign-key closure."
+    },
+    {
+      "check": "numeric_domains",
+      "status": "PASS",
+      "detail": "Nonnegative integer votes/seats; shares 0–100; missing values remain JSON null."
+    },
+    {
+      "check": "no_executive_seats",
+      "status": "PASS",
+      "detail": "No synthetic winner=1 or loser=0 seat values for direct executive results."
+    },
+    {
+      "check": "upcoming",
+      "status": "PASS",
+      "detail": "Eight source-confirmed upcoming events, with no future results."
+    },
+    {
+      "check": "national_cycles",
+      "status": "PASS",
+      "detail": "All eleven source-identified post-independence parliamentary cycles represented."
+    },
+    {
+      "check": "2025_parliament_total",
+      "status": "PASS",
+      "detail": "2025 transcribed candidate votes and mandate allocation match the cited certified totals."
+    },
+    {
+      "check": "november_2025_office_identity",
+      "status": "PASS",
+      "detail": "November 2025 Ustia is Glodeni, and Cremenciug is a mayoral replacement; no homonym or council substitution."
+    },
+    {
+      "check": "geography_closure",
+      "status": "PASS",
+      "detail": "Every office resolves to a research geography; no duplicate geographic IDs."
+    },
+    {
+      "check": "count_summary",
+      "status": "PASS",
+      "detail": "Metadata count summary recomputes from records."
+    },
+    {
+      "check": "acceptance_examples",
+      "status": "PASS",
+      "detail": "Thirty acceptance cases are bound to executed checks."
+    },
+    {
+      "check": "manifest",
+      "status": "PASS",
+      "detail": {
+        "retained_files": 117,
+        "errors": []
+      }
+    }
+  ]
+}
