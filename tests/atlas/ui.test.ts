@@ -583,9 +583,11 @@ describe("Atlas reading surface", () => {
       } catch (error) {
         countryRedirect = error;
       }
-      expect(isRedirectError(countryRedirect)).toBe(true);
-      expect(getURLFromRedirectError(countryRedirect as Error & { digest: string })).toBe("/atlas/albania");
-      expect(getRedirectStatusCodeFromError(countryRedirect as Error & { digest: string })).toBe(308);
+      if (!isRedirectError(countryRedirect)) {
+        throw new Error("expected the country alias to redirect");
+      }
+      expect(getURLFromRedirectError(countryRedirect)).toBe("/atlas/albania");
+      expect(getRedirectStatusCodeFromError(countryRedirect)).toBe(308);
       const countryHtml = markup(
         await AtlasJurisdictionPage({
           params: Promise.resolve({ country: "albania" }),
