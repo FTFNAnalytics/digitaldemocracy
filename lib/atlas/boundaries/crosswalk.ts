@@ -141,6 +141,62 @@ export function serializeCrosswalk(file: CrosswalkFile): string {
   return `${JSON.stringify(body, null, 2)}\n`;
 }
 
+const LINK_ROW_KEYS = ROW_KEYS.filter((key) => key !== "review_status" && key !== "reviewer_note");
+
+/**
+ * True when two files name the same boundary links.
+ * Review status and reviewer notes are ignored so an approved file can be
+ * checked against a regenerated draft proposal.
+ */
+export function crosswalkLinksAgree(left: CrosswalkFile, right: CrosswalkFile): boolean {
+  if (left.schema !== right.schema) return false;
+  if (left.country_id !== right.country_id) return false;
+  if (left.jurisdiction_key_dependency !== right.jurisdiction_key_dependency) return false;
+  if (left.boundary_source !== right.boundary_source) return false;
+  if (left.boundary_version !== right.boundary_version) return false;
+  if (left.source_manifest_id !== right.source_manifest_id) return false;
+  if (left.rows.length !== right.rows.length || left.unmatched.length !== right.unmatched.length) return false;
+  for (let index = 0; index < left.rows.length; index += 1) {
+    const a = left.rows[index]!;
+    const b = right.rows[index]!;
+    for (const key of LINK_ROW_KEYS) {
+      if (a[key] !== b[key]) return false;
+    }
+  }
+  for (let index = 0; index < left.unmatched.length; index += 1) {
+    const a = left.unmatched[index]!;
+    const b = right.unmatched[index]!;
+    if (
+      a.name !== b.name ||
+      a.binding_geography_id !== b.binding_geography_id ||
+      a.level !== b.level ||
+      a.reason !== b.reason
+    ) {
+      return false;
+    }
+  }
+  return true;
+}
+
+export function markCrosswalkApproved(file: CrosswalkFile, reviewerNote: string): CrosswalkFile {
+  if (file.rows.length === 0) throw new Error("refusing to approve a crosswalk with no rows");
+  if (file.unmatched.length > 0) throw new Error("refusing to approve a crosswalk that still has unmatched places");
+  if (file.rows.some((row) => !row.jurisdiction_key || !row.parent_key)) {
+    throw new Error("refusing to approve a crosswalk row without jurisdiction_key and parent_key");
+  }
+  const rows = file.rows.map((row) => ({
+    ...row,
+    review_status: "approved" as const,
+    reviewer_note: reviewerNote,
+  }));
+  return {
+    ...file,
+    review_status: "approved",
+    matched: rows.length,
+    rows,
+  };
+}
+
 /** SHA-256 of the canonical file. Null until every row is approved and keyed. */
 export function approvedCrosswalkSha256(file: CrosswalkFile): string | null {
   if (file.review_status !== "approved") return null;

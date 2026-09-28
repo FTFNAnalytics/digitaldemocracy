@@ -83,7 +83,10 @@ export type BoundaryName = {
 };
 
 export const JURISDICTION_KEY_DEPENDENCY =
-  "OV-01 derived_jurisdiction.jurisdiction_key is not on this branch. Rows keep binding_geography_id and leave jurisdiction_key null until that table exists. No foreign key is declared.";
+  "jurisdiction_key and parent_key are copied from derived_jurisdiction when that table is present. The register fallback leaves jurisdiction_key null. boundary_crosswalk does not declare a foreign key.";
+
+export const ALBANIA_BOUNDARY_APPROVAL_NOTE =
+  "Approved 2026-09-28 by Justin via Genevieve discretion after OV-01 rematch and municipality place dedupe";
 
 export function isReviewStatus(value: unknown): value is ReviewStatus {
   return typeof value === "string" && (REVIEW_STATUSES as readonly string[]).includes(value);

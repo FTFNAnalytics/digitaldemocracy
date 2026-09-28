@@ -22,6 +22,15 @@ export type BuildReport = {
   derivedJurisdiction: "absent" | "updated";
 };
 
+/** OV-01 keys use colons (`country:albania`). Those become underscores in the file name. */
+export function parentKeyFileName(parentKey: string): string {
+  const fileName = parentKey.replace(/:/g, "_");
+  if (!/^[A-Za-z0-9._-]+$/.test(fileName)) {
+    throw new Error(`parent jurisdiction_key cannot be a file name: ${parentKey}`);
+  }
+  return fileName;
+}
+
 export function assertApprovedForBuild(file: CrosswalkFile): void {
   if (file.review_status !== "approved") {
     throw new Error(`refusing to emit shapes: crosswalk review_status is ${file.review_status}`);
@@ -57,11 +66,9 @@ export async function buildBoundaryFiles(options: {
   const outputs: { relative: string; body: string | Buffer; count: number }[] = [];
   const featureCounts: Record<string, number> = {};
   for (const [parentKey, rows] of groups) {
-    if (!/^[A-Za-z0-9._-]+$/.test(parentKey)) {
-      throw new Error(`parent jurisdiction_key cannot be a file name: ${parentKey}`);
-    }
+    const fileName = parentKeyFileName(parentKey);
     const body = await childrenTopojson(rows, features);
-    const relative = `${parentKey}.json`;
+    const relative = `${fileName}.json`;
     outputs.push({ relative, body, count: rows.length });
     featureCounts[relative] = rows.length;
   }
