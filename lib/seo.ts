@@ -127,7 +127,7 @@ export const staticPageSeo = {
   atlas: {
     title: `Election Atlas · ${SITE_NAME}`,
     description:
-      "Europe-first Election Atlas MVP: countries and offices loaded from the Atlas SQLite master, with tier and election listings. Latin America is not the launch vertical.",
+      "Europe-first Election Atlas: countries and offices that are loaded, with election listings. Coverage outside Europe does not change that focus.",
     path: "/atlas",
     image: "atlas",
     absoluteTitle: true,
@@ -136,7 +136,7 @@ export const staticPageSeo = {
   atlasExplorer: {
     title: `Election explorer · Election Atlas · ${SITE_NAME}`,
     description:
-      "Search Atlas SQLite offices by query, country, tier, and region. Europe-first Election Atlas explorer; Latin America is not the launch vertical.",
+      "Filter Election Atlas offices by name, country, level, and region. Europe is listed first.",
     path: "/atlas/explorer",
     image: "atlas-explorer",
     absoluteTitle: true,

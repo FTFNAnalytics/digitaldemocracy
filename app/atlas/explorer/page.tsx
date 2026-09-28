@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  paginate,
-  Pagination,
-  type Query,
-} from "@/components/observatory/pagination";
+import { DatabaseUnavailable } from "@/components/atlas/database-state";
+import { PageHeader } from "@/components/atlas/page-header";
+import { PlainTable } from "@/components/atlas/plain-table";
+import { paginate, Pagination, type Query } from "@/components/observatory/pagination";
 import { UrlFilterForm } from "@/components/observatory/filters";
-import { AtlasPageHeader } from "@/components/atlas/chrome";
-import { EmptyState } from "@/components/observatory/status";
-import { DataTable } from "@/components/observatory/table";
 import { parseAtlasExplorerFilters } from "@/lib/atlas/filters";
 import {
   formatAtlasDate,
@@ -33,17 +29,12 @@ export default async function AtlasExplorerPage({ searchParams }: Props) {
   if (catalog.status !== "ready") {
     return (
       <>
-        <AtlasPageHeader
-          eyebrow="Search"
-          title="Election explorer"
-          description="Filter Atlas SQLite offices by query, country, tier, and region. Europe is the launch vertical; Latin America is not."
+        <PageHeader
+          name="Election explorer"
+          level="Search"
+          facts={[{ label: "Focus", value: "Europe first" }]}
         />
-        <EmptyState title="Atlas database is not loaded">
-          <p>{catalog.message}</p>
-          <p className="mt-2">
-            Resolved path: <code className="text-navy">{catalog.sqlitePath}</code>
-          </p>
-        </EmptyState>
+        <DatabaseUnavailable message={catalog.message} sqlitePath={catalog.sqlitePath} />
       </>
     );
   }
@@ -55,14 +46,17 @@ export default async function AtlasExplorerPage({ searchParams }: Props) {
 
   return (
     <>
-      <AtlasPageHeader
-        eyebrow="Search"
-        title="Election explorer"
-        description="Filter Atlas SQLite offices by query, country, tier, and region. Results sort Europe first. Filters persist in the URL so a view can be shared. This is not a cutover of /electiondatabase/explorer."
+      <PageHeader
+        name="Election explorer"
+        level="Search"
+        facts={[{ label: "Offices in this view", value: offices.length.toLocaleString() }]}
       />
+      <p className="mb-6 max-w-3xl text-sm leading-relaxed text-atlas-ink-2">
+        Filter offices by name, country, level, and region. Europe is listed first. The address of this page keeps the filters. The observatory at /electiondatabase remains available.
+      </p>
       <UrlFilterForm
         fields={[
-          { key: "q", label: "Search", placeholder: "Office, id, or place" },
+          { key: "q", label: "Search", placeholder: "Office or place" },
           {
             key: "region",
             label: "Region",
@@ -71,31 +65,28 @@ export default async function AtlasExplorerPage({ searchParams }: Props) {
           },
           {
             key: "country",
-            label: "Country / territory",
+            label: "Country",
             type: "select",
             options: facets.countries,
           },
           {
             key: "tier",
-            label: "Tier",
+            label: "Level",
             type: "select",
             options: facets.tiers,
           },
         ]}
       />
-      <p className="mb-3 text-sm text-navy/65">
-        {offices.length.toLocaleString()} offices in this view.
-      </p>
       <Pagination result={paged} params={params} />
-      <DataTable
-        caption="Filtered Atlas offices"
-        columns={["Office", "Country", "Region", "Tier", "Next date"]}
+      <PlainTable
+        caption="Filtered offices"
+        columns={["Office", "Country", "Region", "Level", "Next election"]}
         empty="No offices match these filters."
         rows={paged.items.map((office) => [
-          <Link key={office.officeId} href={atlasRoutes.office(office.officeId)} className="obs-link">
+          <Link key={office.officeId} href={atlasRoutes.office(office.officeId)} className="font-semibold text-atlas-accent hover:underline">
             {office.name}
           </Link>,
-          <Link key={`${office.officeId}-c`} href={atlasRoutes.country(office.countryId)} className="obs-link">
+          <Link key={`${office.officeId}-c`} href={atlasRoutes.country(office.countryId)} className="font-semibold text-atlas-accent hover:underline">
             {office.countryName}
           </Link>,
           formatAtlasRegion(office.regionId),

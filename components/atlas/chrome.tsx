@@ -6,33 +6,27 @@ import { atlasRoutes } from "@/lib/atlas/routes";
 
 export function AtlasBanner() {
   return (
-    <div className="bg-navy-800 px-4 py-2 text-center text-xs text-white/80">
-      <p>
-        <span className="mr-2 inline-flex rounded-full bg-accent px-2 py-0.5 text-[0.65rem] font-bold uppercase tracking-wider text-accent-ink">
-          Atlas MVP
-        </span>
-        Europe-first Election Atlas reading the SQLite master. Loaded countries are listed as imported; Latin America is not the launch vertical.
-      </p>
+    <div className="border-b border-atlas-line bg-atlas-tint px-4 py-2 text-center text-xs text-atlas-ink">
+      <p>Europe-first Election Atlas. This site lists the countries that are loaded.</p>
     </div>
   );
 }
 
 export function AtlasHeader() {
   return (
-    <header className="obs-chrome relative bg-navy/95 backdrop-blur-md">
+    <header className="obs-chrome border-b border-atlas-line bg-atlas-card/95 backdrop-blur-md">
       <Container className="flex flex-wrap items-center justify-between gap-3 py-3">
         <div className="flex flex-wrap items-center gap-4">
-          <Logo href="/" />
-          <span className="hidden h-8 w-px bg-white/15 sm:block" aria-hidden />
-          <Link href={atlasRoutes.home} className="text-sm font-bold text-white hover:text-accent">
+          <div className="rounded-full bg-navy px-3 py-1">
+            <Logo href="/" />
+          </div>
+          <span className="hidden h-8 w-px bg-atlas-line sm:block" aria-hidden />
+          <Link href={atlasRoutes.home} className="text-sm font-bold text-atlas-ink hover:text-atlas-accent">
             Election Atlas
           </Link>
         </div>
         <div className="flex flex-wrap items-center gap-3">
-          <Link
-            href={atlasRoutes.explorer}
-            className="text-sm font-semibold text-white/80 hover:text-accent"
-          >
+          <Link href={atlasRoutes.explorer} className="text-sm font-semibold text-atlas-accent hover:underline">
             Explorer
           </Link>
           <Link href="/" className="obs-btn">
@@ -46,46 +40,19 @@ export function AtlasHeader() {
 
 export function AtlasFooter() {
   return (
-    <footer className="obs-chrome mt-16 bg-navy-800 text-white">
-      <Container className="flex flex-col gap-3 py-8 text-sm text-white/70 sm:flex-row sm:justify-between">
+    <footer className="obs-chrome mt-16 border-t border-atlas-line bg-atlas-card text-atlas-ink-2">
+      <Container className="flex flex-col gap-3 py-8 text-sm sm:flex-row sm:justify-between">
+        <p>{org.name} · Election Atlas. Public reading; no login required.</p>
         <p>
-          {org.name} · Election Atlas MVP. Public reading of imported SQLite
-          records; no login required.
-        </p>
-        <p>
-          <Link href={atlasRoutes.explorer} className="font-semibold text-accent hover:text-accent-soft">
+          <Link href={atlasRoutes.explorer} className="font-semibold text-atlas-accent hover:underline">
             Explorer
           </Link>
           {" · "}
-          <Link href="/" className="font-semibold text-accent hover:text-accent-soft">
+          <Link href="/" className="font-semibold text-atlas-accent hover:underline">
             Center home
           </Link>
         </p>
       </Container>
     </footer>
-  );
-}
-
-export function AtlasPageHeader({
-  eyebrow,
-  title,
-  description,
-  children,
-}: {
-  eyebrow?: string;
-  title: string;
-  description?: string;
-  children?: React.ReactNode;
-}) {
-  return (
-    <header className="mb-8 border-b border-navy/10 pb-6">
-      <div className="mb-4 h-1 w-12 rounded-full bg-accent" />
-      {eyebrow ? <p className="obs-kicker">{eyebrow}</p> : null}
-      <h1 className="obs-heading text-3xl tracking-tight sm:text-4xl">{title}</h1>
-      {description ? (
-        <p className="mt-3 max-w-3xl text-[1.02rem] leading-relaxed text-muted">{description}</p>
-      ) : null}
-      {children}
-    </header>
   );
 }
