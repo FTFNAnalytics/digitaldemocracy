@@ -465,6 +465,9 @@ describe("Albania atlas twins", () => {
       const body = (await list.json()) as { available: boolean; items: Array<{ personId: string; history: unknown[] }> };
       expect(body.available).toBe(true);
       expect(body.items.map((item) => item.personId)).toEqual(["person-kept"]);
+      const unknown = await call(peopleGET, "http://127.0.0.1/api/atlas/people/someone", ["someone"]);
+      expect(unknown.status).toBe(404);
+      expect(await unknown.json()).toEqual({ error: "not_found" });
       const detail = await call(peopleGET, "http://127.0.0.1/api/atlas/people/person-kept", ["person-kept"]);
       const person = await detail.json();
       expect(JSON.stringify(person)).toContain(keptLabel);

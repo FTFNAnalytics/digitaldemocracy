@@ -162,14 +162,15 @@ function cycleDetail(segments: string[], format: "json" | "csv"): Detail {
 
 function personDetail(segments: string[], format: "json" | "csv"): Detail {
   const slug = segments.join("/");
-  const person = readPersonExport(slug);
-  if (!person) {
+  const hit = readPersonExport(slug);
+  if (hit.status === "unavailable") {
     return {
       kind: "missing",
       status: 404,
       body: { available: false, dependency: PERSON_DEPENDENCY, person: null },
     };
   }
-  if (format === "csv") return { kind: "csv", body: personCsv(person), filename: safeFilename([person.slug]) };
-  return { kind: "json", body: person };
+  if (hit.status === "missing") return { kind: "missing", status: 404, body: { error: "not_found" } };
+  if (format === "csv") return { kind: "csv", body: personCsv(hit.person), filename: safeFilename([hit.person.slug]) };
+  return { kind: "json", body: hit.person };
 }

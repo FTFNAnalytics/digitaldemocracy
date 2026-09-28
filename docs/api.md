@@ -295,7 +295,7 @@ Until those tables exist the list is HTTP 200:
 }
 ```
 
-A detail request is HTTP 404:
+A detail request while those tables are absent is HTTP 404:
 
 ```json
 {
@@ -304,6 +304,8 @@ A detail request is HTTP 404:
   "person": null
 }
 ```
+
+Once the tables exist, an unknown slug is HTTP 404 `{ "error": "not_found" }`.
 
 When a person is published, the body is:
 

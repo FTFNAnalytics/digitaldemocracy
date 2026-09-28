@@ -885,9 +885,15 @@ export function listPersonExport(
   });
 }
 
-export function readPersonExport(slug: string, sqlitePath = resolveAtlasSqlitePath()): PersonExport | null {
-  return withDb(sqlitePath, null, (db) => {
-    if (!personTablesReady(db) || !slug) return null;
+export type PersonRead =
+  | { status: "unavailable" }
+  | { status: "missing" }
+  | { status: "ready"; person: PersonExport };
+
+export function readPersonExport(slug: string, sqlitePath = resolveAtlasSqlitePath()): PersonRead {
+  return withDb(sqlitePath, { status: "unavailable" } as PersonRead, (db) => {
+    if (!personTablesReady(db)) return { status: "unavailable" };
+    if (!slug) return { status: "missing" };
     const slugSelect = personSlugColumn(db) ? "slug" : "person_id AS slug";
     const row = personSlugColumn(db)
       ? db
@@ -902,8 +908,8 @@ export function readPersonExport(slug: string, sqlitePath = resolveAtlasSqlitePa
              FROM person WHERE review_status = 'approved' AND person_id = ?`,
           )
           .get(slug);
-    if (!row) return null;
-    return readPersonRow(db, row);
+    if (!row) return { status: "missing" };
+    return { status: "ready", person: readPersonRow(db, row) };
   });
 }
 
