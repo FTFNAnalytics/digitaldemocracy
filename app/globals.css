@@ -14,6 +14,35 @@
   --muted: #5b6b80;
 }
 
+/*
+  Atlas reading palette (canvas). Marketing keeps --navy #0a192f and --accent #a2ff00.
+  A navy-and-lime Atlas is a six-token swap of paper, card, ink, ink-2, line, and accent:
+    --atlas-paper: #0a192f;
+    --atlas-card: #112240;
+    --atlas-ink: #f5f7fb;
+    --atlas-ink-2: #c5d0de;
+    --atlas-line: #1d3a5c;
+    --atlas-accent: #a2ff00;
+  Tint, amber, map, and bar tokens stay. Do not hard-code these hexes in components.
+*/
+:root {
+  --atlas-paper: #f5f2ea;
+  --atlas-card: #fffdf8;
+  --atlas-ink: #1c2230;
+  --atlas-ink-2: #4a5263;
+  --atlas-line: #dad5c8;
+  --atlas-accent: #1f4e8c;
+  --atlas-tint: #dce6f3;
+  --atlas-amber: #9a5416;
+  --atlas-map: #e6e1d4;
+  --atlas-map-hover: #c9d8ee;
+  --atlas-map-selected: #a9c1e6;
+  --atlas-map-none: #f0ede5;
+  --atlas-bar-2: #8e9bb0;
+  --atlas-bar-3: #c5ccd8;
+  --atlas-on-accent: #fffdf8;
+}
+
 @theme inline {
   --color-navy: var(--navy);
   --color-navy-800: var(--navy-800);
@@ -26,7 +55,24 @@
   --color-paper: var(--paper);
   --color-ink: var(--ink);
   --color-muted: var(--muted);
+  --color-atlas-paper: var(--atlas-paper);
+  --color-atlas-card: var(--atlas-card);
+  --color-atlas-ink: var(--atlas-ink);
+  --color-atlas-ink-2: var(--atlas-ink-2);
+  --color-atlas-line: var(--atlas-line);
+  --color-atlas-accent: var(--atlas-accent);
+  --color-atlas-tint: var(--atlas-tint);
+  --color-atlas-amber: var(--atlas-amber);
+  --color-atlas-map: var(--atlas-map);
+  --color-atlas-map-hover: var(--atlas-map-hover);
+  --color-atlas-map-selected: var(--atlas-map-selected);
+  --color-atlas-map-none: var(--atlas-map-none);
+  --color-atlas-bar-2: var(--atlas-bar-2);
+  --color-atlas-bar-3: var(--atlas-bar-3);
+  --color-atlas-on-accent: var(--atlas-on-accent);
   --font-sans: var(--font-plus-jakarta);
+  --font-atlas-heading: var(--font-newsreader), "Newsreader", ui-serif, Georgia, serif;
+  --font-atlas-body: var(--font-public-sans), "Public Sans", ui-sans-serif, system-ui, sans-serif;
   --shadow-card: 0 18px 40px -24px rgb(10 25 47 / 0.35);
 }
 
@@ -172,6 +218,117 @@ body {
   .observatory {
     background: white;
     color: black;
+  }
+}
+
+.atlas {
+  background: var(--atlas-paper);
+  color: var(--atlas-ink);
+  color-scheme: light;
+  font-family: var(--font-public-sans), "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.atlas :is(h1, h2, h3) {
+  font-family: var(--font-newsreader), "Newsreader", ui-serif, Georgia, serif;
+}
+
+.atlas :focus-visible {
+  outline: 2px solid var(--atlas-accent);
+  outline-offset: 2px;
+}
+
+.atlas ::selection {
+  background: var(--atlas-tint);
+  color: var(--atlas-ink);
+}
+
+.atlas .obs-btn {
+  background: var(--atlas-accent);
+  color: var(--atlas-on-accent);
+}
+
+.atlas .obs-btn:hover {
+  background: var(--atlas-accent);
+}
+
+.atlas .obs-btn:focus-visible {
+  outline-color: var(--atlas-accent);
+}
+
+.atlas .obs-btn-secondary {
+  border-color: var(--atlas-line);
+  color: var(--atlas-ink);
+}
+
+.atlas .obs-btn-secondary:hover {
+  border-color: var(--atlas-ink);
+}
+
+.atlas .obs-link {
+  color: var(--atlas-accent);
+}
+
+.atlas .obs-link:hover {
+  color: var(--atlas-accent);
+}
+
+.atlas .obs-heading {
+  color: var(--atlas-ink);
+  font-family: var(--font-newsreader), "Newsreader", ui-serif, Georgia, serif;
+}
+
+.atlas .obs-kicker {
+  color: var(--atlas-ink-2);
+}
+
+.atlas .obs-card {
+  border-color: var(--atlas-line);
+  background: var(--atlas-card);
+  box-shadow: none;
+}
+
+.atlas .obs-input {
+  border-color: var(--atlas-line);
+  background: var(--atlas-paper);
+  color: var(--atlas-ink);
+}
+
+.atlas .obs-input:focus {
+  box-shadow: 0 0 0 2px var(--atlas-accent);
+}
+
+.atlas .obs-table thead tr {
+  background: var(--atlas-ink);
+  color: var(--atlas-paper);
+}
+
+.atlas .obs-table td {
+  color: var(--atlas-ink);
+}
+
+.atlas [class*="text-navy"] {
+  color: var(--atlas-ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  .atlas {
+    --atlas-paper: #141820;
+    --atlas-card: #1c2330;
+    --atlas-ink: #f3efe6;
+    --atlas-ink-2: #c5cdd8;
+    --atlas-line: #3a4252;
+    --atlas-accent: #9ecaf5;
+    --atlas-tint: #243044;
+    --atlas-amber: #e7b07a;
+    --atlas-map: #2a303a;
+    --atlas-map-hover: #3a4e68;
+    --atlas-map-selected: #4d6584;
+    --atlas-map-none: #22262e;
+    --atlas-bar-2: #8e9bb0;
+    --atlas-bar-3: #5c6574;
+    --atlas-on-accent: #141820;
+    color-scheme: dark;
   }
 }
 

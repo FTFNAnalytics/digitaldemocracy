@@ -1,15 +1,28 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AtlasPageHeader } from "@/components/atlas/chrome";
-import { EmptyState } from "@/components/observatory/status";
-import { DataTable } from "@/components/observatory/table";
+import { AmbiguousIdentifier } from "@/components/atlas/ambiguous";
+import { Breadcrumb } from "@/components/atlas/breadcrumb";
+import { DatabaseUnavailable } from "@/components/atlas/database-state";
+import { EmptyState } from "@/components/atlas/empty-state";
+import { listingRoleLabel, present, shareUnitLabel, statusPhrase } from "@/components/atlas/labels";
+import { PageHeader } from "@/components/atlas/page-header";
+import { PlainTable } from "@/components/atlas/plain-table";
+import { ProvenanceFooter } from "@/components/atlas/provenance-footer";
+import { RecordDetails } from "@/components/atlas/record-details";
+import { ResultsTable } from "@/components/atlas/results-table";
+import type { ResultBarRow } from "@/components/atlas/types";
 import {
   formatAtlasDate,
+  getAtlasCountry,
   listAtlasProceedings,
   listAtlasResults,
   loadAtlasCatalog,
   lookupAtlasEvent,
+  lookupAtlasOffice,
+  type AtlasEventDetail,
+  type AtlasProceedingRow,
+  type AtlasResultRow,
 } from "@/lib/atlas/read";
 import { atlasRoutes } from "@/lib/atlas/routes";
 
@@ -17,9 +30,20 @@ type Props = {
   params: Promise<{ eventId: string }>;
 };
 
-function formatShare(share: number | null, status: string): string {
-  if (share == null) return status === "unknown" ? "not supplied" : status.replaceAll("_", " ");
-  return `${share}% (${status})`;
+function toResultRows(rows: AtlasResultRow[]): ResultBarRow[] {
+  return rows.map((row) => ({
+    id: row.resultRowId,
+    label: row.label,
+    partyLabel: row.partyLabel,
+    votes: row.votes,
+    votesStatus: row.votesStatus,
+    share: row.share,
+    shareStatus: row.shareStatus,
+    seats: row.seats,
+    seatsStatus: row.seatsStatus,
+    elected: row.electedFlag === 1,
+    evidenceStatus: row.evidenceStatus,
+  }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -30,8 +54,122 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   return {
     title: `${lookup.record.officeName} · ${formatAtlasDate(lookup.record)} · Election Atlas`,
-    description: `Imported Atlas election listing for ${lookup.record.officeName} (${lookup.record.eventId}).`,
+    description: `Results on file for ${lookup.record.officeName}.`,
   };
+}
+
+export function FoundEventPage({
+  event,
+  results,
+  proceedings,
+  snapshotLabel,
+  releaseId,
+  lineageId,
+  countryName,
+}: {
+  event: AtlasEventDetail;
+  results: AtlasResultRow[];
+  proceedings: AtlasProceedingRow[];
+  snapshotLabel: string | null;
+  releaseId: string | null;
+  lineageId: string | null;
+  countryName: string | null;
+}) {
+  const bars = toResultRows(results);
+  return (
+    <>
+      <Breadcrumb
+        items={[
+          { label: "World", href: atlasRoutes.home },
+          {
+            label: countryName ?? event.countryId,
+            href: event.countryId ? atlasRoutes.country(event.countryId) : undefined,
+          },
+          { label: event.officeName, href: atlasRoutes.office(event.officeId) },
+          { label: formatAtlasDate(event) },
+        ]}
+      />
+      <PageHeader
+        name={formatAtlasDate(event)}
+        level={listingRoleLabel(event.selectedHistoryRole)}
+        facts={[
+          { label: "Office", value: event.officeName },
+          { label: "Vote basis", value: statusPhrase(event.ballotBasis) },
+          { label: "Share unit", value: shareUnitLabel(event.shareUnit) },
+          { label: "Electoral system", value: present(event.electoralSystem) ?? "not supplied" },
+          { label: "Comparability", value: present(event.comparability) ?? "not supplied" },
+        ]}
+      />
+
+      <section className="mb-8">
+        <h2 className="font-atlas-heading text-2xl text-atlas-ink">Last result</h2>
+        {bars.length === 0 ? (
+          <div className="mt-4">
+            <EmptyState variant="not_supplied" title="Results were not supplied">
+              <p>Missing results are not shown as zero.</p>
+            </EmptyState>
+          </div>
+        ) : (
+          <div className="mt-4">
+            <ResultsTable caption={`Results for ${event.officeName}`} rows={bars} shareUnit={event.shareUnit} />
+          </div>
+        )}
+        <ProvenanceFooter
+          publisher={null}
+          title={null}
+          url={null}
+          snapshotLabel={snapshotLabel}
+          evidenceGrade={null}
+          recordId={event.eventId}
+        />
+      </section>
+
+      <section className="mb-8">
+        <h2 className="font-atlas-heading text-2xl text-atlas-ink">Proceedings</h2>
+        {proceedings.length === 0 ? (
+          <div className="mt-4">
+            <EmptyState variant="not_supplied" title="No proceedings on file">
+              <p>No proceedings were supplied for this election.</p>
+            </EmptyState>
+          </div>
+        ) : (
+          <div className="mt-4">
+            <PlainTable
+              caption="Proceedings"
+              columns={["Kind", "Sequence", "Legal outcome", "Supersedes"]}
+              rows={proceedings.map((row) => [
+                row.kind.replaceAll("_", " "),
+                row.sequenceNo == null ? "not supplied" : String(row.sequenceNo),
+                row.legalOutcome.replaceAll("_", " "),
+                row.supersedesId ?? "not supplied",
+              ])}
+            />
+          </div>
+        )}
+      </section>
+
+      <p className="text-sm">
+        <Link href={atlasRoutes.office(event.officeId)} className="font-semibold text-atlas-accent hover:underline">
+          {event.officeName}
+        </Link>
+        {" · "}
+        <Link href={atlasRoutes.explorer} className="font-semibold text-atlas-accent hover:underline">
+          Explorer
+        </Link>
+        {" · "}
+        <Link href={atlasRoutes.home} className="font-semibold text-atlas-accent hover:underline">
+          Atlas
+        </Link>
+      </p>
+      <RecordDetails
+        officeId={event.officeId}
+        idNamespace={event.idNamespace}
+        lineageId={lineageId}
+        releaseId={releaseId}
+        historyKey={event.historyKey}
+      />
+    </>
+  );
 }
 
 export default async function AtlasEventPage({ params }: Props) {
@@ -39,124 +177,30 @@ export default async function AtlasEventPage({ params }: Props) {
   const eventId = decodeURIComponent(rawId);
   const catalog = loadAtlasCatalog();
   if (catalog.status !== "ready") {
-    return (
-      <EmptyState title="Atlas database is not loaded">
-        <p>{catalog.message}</p>
-        <p className="mt-2">
-          Resolved path: <code className="text-navy">{catalog.sqlitePath}</code>
-        </p>
-      </EmptyState>
-    );
+    return <DatabaseUnavailable message={catalog.message} sqlitePath={catalog.sqlitePath} />;
   }
 
   const lookup = lookupAtlasEvent(eventId);
   if (lookup.status === "missing") notFound();
   if (lookup.status === "ambiguous") {
-    return (
-      <EmptyState title="Public event ID is namespace-ambiguous">
-        <p>
-          Prompt B uniqueness for <code className="text-navy">event_id</code> is{" "}
-          <code className="text-navy">(id_namespace, event_id)</code>, not a global public ID. This
-          bare observatory ID matches {lookup.namespaces.length} namespaces (
-          {lookup.namespaces.join(", ")}
-          ) and is not silently resolved.
-        </p>
-      </EmptyState>
-    );
+    return <AmbiguousIdentifier kind="election" namespaces={lookup.namespaces} />;
   }
 
   const event = lookup.record;
-  const results = listAtlasResults(event.officeId, event.historyKey);
-  const proceedings = listAtlasProceedings(event.officeId, event.historyKey);
+  const office = lookupAtlasOffice(event.officeId);
+  const lineageId = office.status === "found" ? office.record.lineageId : null;
+  const publication = lineageId ? catalog.lineages.find((row) => row.lineageId === lineageId) : undefined;
+  const country = event.countryId ? getAtlasCountry(event.countryId) : null;
 
   return (
-    <>
-      <AtlasPageHeader
-        eyebrow="Election / event"
-        title={formatAtlasDate(event)}
-        description={`${event.eventKind} · ${event.selectedHistoryRole} history · legal ${event.legalOutcome}`}
-      >
-        <p className="mt-3 text-sm text-navy/70">
-          <Link href={atlasRoutes.office(event.officeId)} className="obs-link">
-            {event.officeName}
-          </Link>
-          {event.countryName ? ` · ${event.countryName}` : ""}
-          <span className="ml-2 font-mono text-xs">{event.eventId}</span>
-        </p>
-      </AtlasPageHeader>
-
-      <dl className="mb-8 grid gap-3 sm:grid-cols-2">
-        <Fact label="Vote basis" value={event.ballotBasis.replaceAll("_", " ")} />
-        <Fact label="Share unit" value={event.shareUnit.replaceAll("_", " ") || "not supplied"} />
-        <Fact label="Electoral system" value={event.electoralSystem ?? "not supplied"} />
-        <Fact label="Comparability" value={event.comparability ?? "not supplied"} />
-        <Fact label="Selected-history role" value={event.selectedHistoryRole} />
-        <Fact label="History key" value={event.historyKey} />
-      </dl>
-
-      <section className="mb-8">
-        <h2 className="obs-heading text-2xl">Candidate and list results</h2>
-        {results.length === 0 ? (
-          <p className="mt-3 text-sm text-navy/70">
-            No result rows — this event has not been held or returns were not supplied. Missing is
-            not treated as zero.
-          </p>
-        ) : (
-          <div className="mt-4">
-            <DataTable
-              caption={`Results for ${event.eventId}`}
-              columns={["Candidate / list", "Party", "Votes", "Share", "Seats", "Evidence"]}
-              empty="No result rows attached to this event."
-              rows={results.map((row) => [
-                row.label ?? "label not supplied",
-                row.partyLabel ?? "—",
-                row.votes == null ? row.votesStatus.replaceAll("_", " ") : row.votes.toLocaleString(),
-                formatShare(row.share, row.shareStatus),
-                row.seats == null ? row.seatsStatus.replaceAll("_", " ") : String(row.seats),
-                row.evidenceStatus.replaceAll("_", " "),
-              ])}
-            />
-          </div>
-        )}
-      </section>
-
-      <section className="mb-8">
-        <h2 className="obs-heading text-2xl">Proceedings</h2>
-        {proceedings.length === 0 ? (
-          <p className="mt-3 text-sm text-navy/70">No proceedings attached in Atlas SQLite.</p>
-        ) : (
-          <DataTable
-            caption="Proceedings"
-            columns={["Kind", "Sequence", "Legal outcome", "Supersedes"]}
-            rows={proceedings.map((row) => [
-              row.kind,
-              row.sequenceNo == null ? "—" : String(row.sequenceNo),
-              row.legalOutcome,
-              row.supersedesId ?? "—",
-            ])}
-          />
-        )}
-      </section>
-
-      <p className="text-sm">
-        <Link href={atlasRoutes.explorer} className="obs-link">
-          Atlas explorer
-        </Link>
-        {" · "}
-        <Link href={atlasRoutes.home} className="obs-link">
-          Atlas index
-        </Link>
-        {" · observatory catalogue unchanged at /electiondatabase"}
-      </p>
-    </>
-  );
-}
-
-function Fact({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="obs-card px-3 py-2">
-      <dt className="text-xs font-semibold uppercase tracking-wider text-navy/55">{label}</dt>
-      <dd className="mt-1 text-navy">{value}</dd>
-    </div>
+    <FoundEventPage
+      event={event}
+      results={listAtlasResults(event.officeId, event.historyKey)}
+      proceedings={listAtlasProceedings(event.officeId, event.historyKey)}
+      snapshotLabel={publication?.snapshotLabel ?? null}
+      releaseId={publication?.releaseId ?? null}
+      lineageId={lineageId}
+      countryName={country?.name ?? event.countryName}
+    />
   );
 }
