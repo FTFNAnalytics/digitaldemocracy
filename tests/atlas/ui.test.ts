@@ -539,7 +539,7 @@ describe("Atlas reading surface", () => {
     expect(readingKitMetadata.robots).toEqual({ index: false, follow: false });
     const proxy = readFileSync(path.join(repoRoot, "proxy.ts"), "utf8");
     expect(proxy).toContain('pathname === "/atlas/_kit"');
-    expect(proxy).toContain('url.pathname = "/atlas/reading-kit"');
+    expect(proxy).toContain('rewriteInternally(request, "/atlas/reading-kit")');
     const nextConfig = readFileSync(path.join(repoRoot, "next.config.ts"), "utf8");
     expect(nextConfig).not.toMatch(/destination:\s*["']\/atlas/);
 

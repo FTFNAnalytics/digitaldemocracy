@@ -8,6 +8,27 @@ import {
   isStaticAtlasRoot,
 } from "@/lib/atlas/jurisdiction";
 
+const LOOPBACK_HOSTS = new Set(["localhost", "127.0.0.1", "::1"]);
+
+/**
+ * nginx terminates TLS and sets X-Forwarded-Proto. Next then builds the proxy
+ * URL as https://<bind-host>:<port>, and NextURL rewrites 127.0.0.1 to
+ * localhost, so the rewrite no longer matches the in-process origin. Next
+ * fetches that absolute URL and the TLS handshake fails (EPROTO) against the
+ * HTTP listener. Speak HTTP on that loopback hop. Direct HTTPS (no forwarded
+ * proto) and any non-loopback host keep the request scheme.
+ */
+function rewriteInternally(request: NextRequest, pathname: string) {
+  const url = request.nextUrl.clone();
+  url.pathname = pathname;
+  const forwarded = request.headers.get("x-forwarded-proto") ?? "";
+  const forwardedHttps = forwarded.split(",").some((value) => value.trim().toLowerCase() === "https");
+  if (forwardedHttps && url.protocol === "https:" && LOOPBACK_HOSTS.has(url.hostname)) {
+    url.protocol = "http:";
+  }
+  return NextResponse.rewrite(url);
+}
+
 /**
  * Next.js treats a folder named `_kit` as private and will not route it.
  * `/atlas/_kit` rewrites to the gated reading-kit page.
@@ -17,30 +38,22 @@ import {
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   if (pathname === "/atlas/_kit") {
-    const url = request.nextUrl.clone();
-    url.pathname = "/atlas/reading-kit";
-    return NextResponse.rewrite(url);
+    return rewriteInternally(request, "/atlas/reading-kit");
   }
 
   const csv = pathname.match(/^\/atlas\/offices\/([^/]+)\.csv$/);
   if (csv?.[1]) {
-    const url = request.nextUrl.clone();
-    url.pathname = `/atlas/offices/${csv[1]}/csv`;
-    return NextResponse.rewrite(url);
+    return rewriteInternally(request, `/atlas/offices/${csv[1]}/csv`);
   }
 
   const cycleCsv = pathname.match(/^\/atlas\/([^/]+)\/elections\/(\d{4}-\d{2}-\d{2})\.csv$/);
   if (cycleCsv?.[1] && cycleCsv[2]) {
-    const url = request.nextUrl.clone();
-    url.pathname = `/atlas/${cycleCsv[1]}/elections/${cycleCsv[2]}/csv`;
-    return NextResponse.rewrite(url);
+    return rewriteInternally(request, `/atlas/${cycleCsv[1]}/elections/${cycleCsv[2]}/csv`);
   }
 
   const seat = pathname.match(/^\/atlas\/(.+)\/seats\/([^/]+)$/);
   if (seat?.[1] && seat[2] && !seat[1].split("/").includes("seats")) {
-    const url = request.nextUrl.clone();
-    url.pathname = `/atlas/seat-alias/${seat[1]}/${seat[2]}`;
-    return NextResponse.rewrite(url);
+    return rewriteInternally(request, `/atlas/seat-alias/${seat[1]}/${seat[2]}`);
   }
 
   const url = request.nextUrl;
