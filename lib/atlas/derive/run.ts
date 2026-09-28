@@ -1,0 +1,245 @@
+import { existsSync } from "node:fs";
+import type { DatabaseSync } from "node:sqlite";
+import { assertIntegrity, insertMany, openAtlasDatabase } from "../sqlite";
+import {
+  projectDerived,
+  type CoverageRow,
+  type CycleRow,
+  type EventInput,
+  type GeographyInput,
+  type JurisdictionRow,
+  type MasterSnapshot,
+  type OfficeInput,
+  type ResultInput,
+  type SeatRow,
+  type UnplacedRow,
+} from "./project";
+import { ensureDerivedSchema } from "./schema";
+import { emptySlugMeanings, type PublishedSlugMeanings } from "./slug";
+
+export type DeriveStats = {
+  schema: "applied" | "skipped";
+  jurisdictions: number;
+  aliases: number;
+  seats: number;
+  cycles: number;
+  unplaced: number;
+  coverage: number;
+};
+
+function text(value: unknown): string {
+  return value == null ? "" : String(value);
+}
+
+function textOrNull(value: unknown): string | null {
+  if (value == null) return null;
+  const next = String(value);
+  return next === "" ? null : next;
+}
+
+function numOrNull(value: unknown): number | null {
+  if (value == null) return null;
+  const n = Number(value);
+  return Number.isFinite(n) ? n : null;
+}
+
+function loadPrior(db: DatabaseSync): PublishedSlugMeanings {
+  const prior = emptySlugMeanings();
+  if (!db.prepare("SELECT 1 AS ok FROM sqlite_master WHERE type = 'table' AND name = 'derived_jurisdiction'").get()) {
+    return prior;
+  }
+  for (const row of db.prepare("SELECT jurisdiction_key, slug_path FROM derived_jurisdiction").all()) {
+    prior.meaning.set(text(row.slug_path), text(row.jurisdiction_key));
+  }
+  for (const row of db.prepare("SELECT slug_path, jurisdiction_key, reason FROM derived_slug_alias").all()) {
+    prior.meaning.set(text(row.slug_path), text(row.jurisdiction_key));
+    prior.aliasReason.set(text(row.slug_path), text(row.reason));
+  }
+  return prior;
+}
+
+function loadMaster(db: DatabaseSync): MasterSnapshot {
+  const countries = db
+    .prepare("SELECT country_id, name, coverage_status FROM country ORDER BY country_id")
+    .all()
+    .map((row) => ({
+      countryId: text(row.country_id),
+      name: text(row.name),
+      coverageStatus: text(row.coverage_status),
+    }));
+  const geographies: GeographyInput[] = db
+    .prepare(
+      "SELECT country_id, geography_id, name, parent_geography_id FROM geography ORDER BY country_id, geography_id",
+    )
+    .all()
+    .map((row) => ({
+      countryId: text(row.country_id),
+      geographyId: text(row.geography_id),
+      name: text(row.name),
+      parentGeographyId: textOrNull(row.parent_geography_id),
+    }));
+  const offices: OfficeInput[] = db
+    .prepare(
+      `SELECT o.id_namespace, o.office_id, o.country_id, o.geography_id, o.office_type,
+              o.next_date_id, o.next_date_resolution, t.tier
+       FROM office o
+       LEFT JOIN office_tier_classification t
+         ON t.id_namespace = o.id_namespace AND t.office_id = o.office_id
+       ORDER BY o.id_namespace, o.office_id`,
+    )
+    .all()
+    .map((row) => ({
+      idNamespace: text(row.id_namespace),
+      officeId: text(row.office_id),
+      countryId: text(row.country_id),
+      geographyId: text(row.geography_id),
+      officeType: text(row.office_type),
+      nextDateId: textOrNull(row.next_date_id),
+      nextDateResolution: text(row.next_date_resolution),
+      tier: textOrNull(row.tier),
+    }));
+  const events: EventInput[] = db
+    .prepare(
+      `SELECT e.id_namespace, e.office_id, e.history_key, e.event_id, o.country_id, o.geography_id, t.tier,
+              e.date_id, e.date_resolution, e.event_kind, e.selected_history_role, e.legal_outcome, e.record_state,
+              d.precision, d.year, d.month, d.day
+       FROM election_event e
+       JOIN office o ON o.id_namespace = e.id_namespace AND o.office_id = e.office_id
+       LEFT JOIN office_tier_classification t
+         ON t.id_namespace = o.id_namespace AND t.office_id = o.office_id
+       LEFT JOIN research_date d ON d.date_id = e.date_id`,
+    )
+    .all()
+    .map((row) => ({
+      idNamespace: text(row.id_namespace),
+      officeId: text(row.office_id),
+      historyKey: text(row.history_key),
+      eventId: text(row.event_id),
+      countryId: text(row.country_id),
+      geographyId: text(row.geography_id),
+      tier: textOrNull(row.tier),
+      dateId: textOrNull(row.date_id),
+      dateResolution: text(row.date_resolution),
+      eventKind: text(row.event_kind),
+      selectedHistoryRole: text(row.selected_history_role),
+      legalOutcome: text(row.legal_outcome),
+      recordState: text(row.record_state),
+      precision: textOrNull(row.precision),
+      year: numOrNull(row.year),
+      month: numOrNull(row.month),
+      day: numOrNull(row.day),
+    }));
+  const results: ResultInput[] = db
+    .prepare(
+      `SELECT r.id_namespace, r.office_id, r.history_key, r.result_row_id, r.proceeding_id,
+              r.candidate_or_list_label, r.original_party_label, r.share, r.share_status, r.share_unit,
+              r.elected_flag, r.evidence_status, p.legal_outcome AS proceeding_outcome
+       FROM result_row r
+       LEFT JOIN proceeding p
+         ON p.id_namespace = r.id_namespace AND p.office_id = r.office_id
+        AND p.history_key = r.history_key AND p.proceeding_id = r.proceeding_id`,
+    )
+    .all()
+    .map((row) => ({
+      idNamespace: text(row.id_namespace),
+      officeId: text(row.office_id),
+      historyKey: text(row.history_key),
+      resultRowId: text(row.result_row_id),
+      proceedingId: textOrNull(row.proceeding_id),
+      proceedingOutcome: textOrNull(row.proceeding_outcome),
+      label: textOrNull(row.candidate_or_list_label),
+      partyLabel: textOrNull(row.original_party_label),
+      share: numOrNull(row.share),
+      shareStatus: text(row.share_status),
+      shareUnit: text(row.share_unit),
+      electedFlag: numOrNull(row.elected_flag),
+      evidenceStatus: text(row.evidence_status),
+    }));
+  const snapshots = db
+    .prepare(
+      `SELECT c.country_id, r.research_snapshot_label
+       FROM country c
+       JOIN publication_release p ON p.lineage_id = c.lineage_id
+       JOIN dataset_release r ON r.lineage_id = p.lineage_id AND r.release_id = p.release_id
+       ORDER BY c.country_id`,
+    )
+    .all()
+    .map((row) => ({
+      countryId: text(row.country_id),
+      label: textOrNull(row.research_snapshot_label),
+    }));
+  return { countries, geographies, offices, events, results, snapshots };
+}
+
+function deleteDerived(db: DatabaseSync): void {
+  db.exec(`
+    DELETE FROM derived_slug_alias;
+    DELETE FROM derived_coverage;
+    DELETE FROM derived_cycle_unplaced;
+    DELETE FROM derived_cycle;
+    DELETE FROM derived_seat_status;
+    DELETE FROM derived_jurisdiction;
+  `);
+}
+
+function insertDerived(
+  db: DatabaseSync,
+  rows: {
+    jurisdictions: JurisdictionRow[];
+    aliases: Array<{ slug_path: string; jurisdiction_key: string; reason: string }>;
+    seats: SeatRow[];
+    cycles: CycleRow[];
+    unplaced: UnplacedRow[];
+    coverage: CoverageRow[];
+  },
+): void {
+  insertMany(db, "derived_jurisdiction", rows.jurisdictions);
+  insertMany(db, "derived_slug_alias", rows.aliases);
+  insertMany(db, "derived_seat_status", rows.seats);
+  insertMany(db, "derived_cycle", rows.cycles);
+  insertMany(db, "derived_cycle_unplaced", rows.unplaced);
+  insertMany(db, "derived_coverage", rows.coverage);
+}
+
+/** Rebuild derived tables from the master. Does not write master rows. */
+export function deriveAtlas(db: DatabaseSync): Omit<DeriveStats, "schema"> {
+  db.exec("BEGIN IMMEDIATE;");
+  try {
+    const prior = loadPrior(db);
+    const master = loadMaster(db);
+    const projected = projectDerived(master, prior);
+    deleteDerived(db);
+    insertDerived(db, projected);
+    db.exec("COMMIT;");
+    return {
+      jurisdictions: projected.jurisdictions.length,
+      aliases: projected.aliases.length,
+      seats: projected.seats.length,
+      cycles: projected.cycles.length,
+      unplaced: projected.unplaced.length,
+      coverage: projected.coverage.length,
+    };
+  } catch (error) {
+    try {
+      db.exec("ROLLBACK;");
+    } catch {
+      // The transaction may already be closed.
+    }
+    throw error;
+  }
+}
+
+export function rebuildDerivedInFile(sqlitePath: string): DeriveStats {
+  if (!existsSync(sqlitePath)) {
+    throw new Error(`No Atlas database at ${sqlitePath}. Run npm run migrate:atlas first.`);
+  }
+  const db = openAtlasDatabase(sqlitePath);
+  try {
+    const schema = ensureDerivedSchema(db);
+    const stats = deriveAtlas(db);
+    assertIntegrity(db);
+    return { schema, ...stats };
+  } finally {
+    db.close();
+  }
+}

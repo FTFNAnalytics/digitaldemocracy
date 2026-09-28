@@ -12,6 +12,7 @@ import {
 } from "node:fs";
 import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
+import { rebuildDerivedInFile } from "./derive/run";
 import { openAtlasDatabase } from "./sqlite";
 
 export function lockPathFor(masterPath: string): string {
@@ -124,6 +125,9 @@ function fsyncPath(filePath: string, directory = false): void {
  */
 export function publishStaging(masterPath: string): void {
   const staging = stagingPathFor(masterPath);
+  // Derived rows are rebuilt in the staged file so the atomic rename publishes them
+  // with the master. deriveAtlas does not write master tables.
+  rebuildDerivedInFile(staging);
   checkpointAndCloseForPublish(staging);
   fsyncPath(staging);
   for (const suffix of ["-wal", "-shm", "-journal"]) {

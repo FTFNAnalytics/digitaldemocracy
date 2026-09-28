@@ -2,6 +2,7 @@ import { mkdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
 import { BOUNDARY_SCHEMA_DESCRIPTION, BOUNDARY_SCHEMA_VERSION } from "./boundaries/types";
+import { DERIVED_MIGRATION_DESCRIPTION, DERIVED_SCHEMA_VERSION } from "./derive/schema";
 import {
   ATLAS_ATTEMPT_LOG_FILENAME,
   ATLAS_MASTER_FILENAME,
@@ -101,14 +102,15 @@ function schemaVersions(db: DatabaseSync): Map<number, string> {
 }
 
 const FOLLOW_ON_DESCRIPTIONS: Record<number, string> = {
+  [DERIVED_SCHEMA_VERSION]: DERIVED_MIGRATION_DESCRIPTION,
   [BOUNDARY_SCHEMA_VERSION]: BOUNDARY_SCHEMA_DESCRIPTION,
 };
 
 /**
  * Follow-on master files (0003+) run after 0002 on a database that already
  * has schema_migration version 1. Each file must INSERT its filename version.
- * 0003 and 0004 are reserved for OV-01 and OV-02 and are applied in order
- * when those files exist.
+ * 0003 is derived projections. 0004 stays reserved for OV-02 search.
+ * 0005 is the boundary crosswalk. Files are applied in filename order.
  */
 function applyFollowOnMigration(root: string, filePath: string, migration: AtlasMigration): "applied" | "skipped" {
   const db = openDatabase(filePath);

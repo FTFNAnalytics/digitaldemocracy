@@ -2,8 +2,8 @@
 /**
  * Apply checked-in Atlas SQL migrations to two databases:
  *   - 0001_atlas_attempt_log.sql → ATLAS_ATTEMPTS_SQLITE_PATH
- *   - 0002_atlas_master.sql and later master files (0005_atlas_boundary.sql
- *     today; 0003 and 0004 reserved) → ATLAS_SQLITE_PATH
+ *   - 0002_atlas_master.sql, 0003_atlas_derived.sql, and later master files
+ *     (0005_atlas_boundary.sql today; 0004 reserved) → ATLAS_SQLITE_PATH
  *
  * Each SQL file already contains BEGIN IMMEDIATE / COMMIT and must be
  * executed outside an existing transaction. Do not wrap exec in BEGIN.

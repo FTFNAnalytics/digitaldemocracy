@@ -1073,3 +1073,25 @@ export function listAtlasExplorerOffices(
     return [];
   }
 }
+
+export type {
+  AtlasCoverage,
+  AtlasCycle,
+  AtlasJurisdiction,
+  AtlasJurisdictionMatch,
+  AtlasSeatStatus,
+  AtlasSlugAlias,
+  AtlasUnplacedCycle,
+} from "./derive/read";
+export {
+  getAtlasCoverage,
+  getAtlasJurisdiction,
+  getAtlasJurisdictionBySlug,
+  getAtlasSeatStatus,
+  listAtlasCoverage,
+  listAtlasCycles,
+  listAtlasJurisdictions,
+  listAtlasSeatStatuses,
+  listAtlasSlugAliases,
+  listAtlasUnplacedCycles,
+} from "./derive/read";

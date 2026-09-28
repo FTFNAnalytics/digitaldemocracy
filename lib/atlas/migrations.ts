@@ -10,6 +10,9 @@ export const ATLAS_ATTEMPT_LOG_FILENAME = "0001_atlas_attempt_log.sql";
 /** Apply only to the master/staging DB (`ATLAS_SQLITE_PATH`). */
 export const ATLAS_MASTER_FILENAME = "0002_atlas_master.sql";
 
+/** Derived tables on the master/staging DB, after 0002. Never applied to the attempt ledger. */
+export const ATLAS_DERIVED_FILENAME = "0003_atlas_derived.sql";
+
 const MIGRATION_FILE = /^(\d{4})_([a-z0-9_]+)\.sql$/;
 
 export type AtlasMigration = {
