@@ -20,6 +20,7 @@ const RESERVED_ATLAS_ROOTS = new Set([
   "search",
   "reading-kit",
   "countries",
+  "downloads",
   "seat-alias",
   "_kit",
 ]);

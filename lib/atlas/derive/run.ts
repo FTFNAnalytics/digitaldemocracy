@@ -1,5 +1,6 @@
 import { existsSync } from "node:fs";
 import type { DatabaseSync } from "node:sqlite";
+import { atlasDownloadsDir, shouldWriteDownloadBundles, writeCountryBundles } from "../downloads";
 import { ensureSearchSchema } from "../search/schema";
 import { assertIntegrity, insertMany, openAtlasDatabase } from "../sqlite";
 import {
@@ -267,7 +268,7 @@ export function deriveAtlas(db: DatabaseSync): Omit<DeriveStats, "schema" | "sea
   }
 }
 
-export function rebuildDerivedInFile(sqlitePath: string): DeriveStats {
+export function rebuildDerivedInFile(sqlitePath: string): DeriveStats & { downloads: number } {
   if (!existsSync(sqlitePath)) {
     throw new Error(`No Atlas database at ${sqlitePath}. Run npm run migrate:atlas first.`);
   }
@@ -277,7 +278,8 @@ export function rebuildDerivedInFile(sqlitePath: string): DeriveStats {
     const searchSchema = ensureSearchSchema(db);
     const stats = deriveAtlas(db);
     assertIntegrity(db);
-    return { schema, searchSchema, ...stats };
+    const downloads = shouldWriteDownloadBundles() ? writeCountryBundles(db, atlasDownloadsDir()) : 0;
+    return { schema, searchSchema, ...stats, downloads };
   } finally {
     db.close();
   }

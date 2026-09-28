@@ -30,6 +30,7 @@ async function main() {
   console.log(`search_candidates=${stats.searchCandidates}`);
   console.log(`search_engine=${SEARCH_ENGINE}`);
   console.log(`fts5=${sqliteFts5Enabled() ? 1 : 0}`);
+  console.log(`downloads=${stats.downloads}`);
   console.log(`publication_tag=${revalidated.tag} revalidate=${revalidated.status}`);
 }
 

@@ -120,3 +120,24 @@ npm run smoke -- http://localhost:3000
 ```
 
 `npm start` listens on port 3000 unless `PORT` is set. Point smoke at that same origin.
+
+## API rate limit
+
+The Atlas read API is Next.js route handlers under `/api/atlas/`. It is not a separate service. Responses send `Cache-Control: public, no-cache`, an `ETag` for the current publication, and `X-Robots-Tag: noindex`. `derive:atlas` drops the server cache by revalidating the `atlas-derived` tag (`POST /api/atlas/revalidate` when `ATLAS_REVALIDATE_URL` and `ATLAS_REVALIDATE_SECRET` are set). Clients should send `If-None-Match`.
+
+`/api/` should be rate limited at nginx, in front of the standalone server. This is a recommendation for the VPS config. This repository does not apply it and does not SSH. A starting point, using the same `proxy_pass` upstream as the rest of the site:
+
+```nginx
+limit_req_zone $binary_remote_addr zone=atlas_api:10m rate=10r/s;
+
+location /api/ {
+    limit_req zone=atlas_api burst=20 nodelay;
+    limit_req_status 429;
+    proxy_pass http://127.0.0.1:3000;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+}
+```
+
+`limit_req_zone` belongs in the `http` block. `location /api/` belongs in the server that proxies to Node. `sudo nginx -t && sudo systemctl reload nginx` after editing. Country CSV bundles under `/atlas/downloads/` are static files from `public/atlas/downloads/` (copied into the standalone tree by `prepare-standalone`) and are not part of this limit. `npm run derive:atlas` rewrites those zips; run it before `npm run build` when a publication should ship inside the standalone `public/` tree, or copy `public/atlas/downloads/` into `.next/standalone/public/atlas/downloads/` after a later derive.
