@@ -29,6 +29,13 @@ export function proxy(request: NextRequest) {
     return NextResponse.rewrite(url);
   }
 
+  const cycleCsv = pathname.match(/^\/atlas\/([^/]+)\/elections\/(\d{4}-\d{2}-\d{2})\.csv$/);
+  if (cycleCsv?.[1] && cycleCsv[2]) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/atlas/${cycleCsv[1]}/elections/${cycleCsv[2]}/csv`;
+    return NextResponse.rewrite(url);
+  }
+
   const seat = pathname.match(/^\/atlas\/(.+)\/seats\/([^/]+)$/);
   if (seat?.[1] && seat[2] && !seat[1].split("/").includes("seats")) {
     const url = request.nextUrl.clone();

@@ -1,6 +1,7 @@
 import { existsSync } from "node:fs";
 import type { DatabaseSync } from "node:sqlite";
-import { isSingleSeatOfficeType } from "./derive/seat";
+import { cyclePublicPath } from "./routes";
+import { isSingleSeatOfficeType, WITHHELD_EVIDENCE } from "./derive/seat";
 import type { AtlasCoverage, AtlasJurisdiction } from "./derive/read";
 import { resolveAtlasSqlitePath } from "./paths";
 import { RESERVED_SLUG_SEGMENTS } from "./derive/slug";
@@ -257,18 +258,19 @@ export function filterPlaces<T extends { name: string; level: string }>(
   });
 }
 
-/** Until OV-06, a one-contest cycle links to that event. Several contests filter this place's seats by day. */
+/** Cycle chips open the election-day page. A deeper place keeps that place as the scope. */
 export function cycleListHref(args: {
   contestCount: number;
   eventId: string | null;
   isoDate: string;
   slugPath: string;
 }): string {
-  if (args.contestCount === 1 && args.eventId) {
-    return `/atlas/elections/${encodeURIComponent(args.eventId)}`;
+  const segments = args.slugPath.split("/").filter((segment) => segment.length > 0);
+  const country = segments[0];
+  if (!country || !args.isoDate) {
+    return args.eventId ? `/atlas/elections/${encodeURIComponent(args.eventId)}` : "/atlas";
   }
-  const params = new URLSearchParams({ date: args.isoDate });
-  return `${jurisdictionPublicPath(args.slugPath)}?${params.toString()}`;
+  return cyclePublicPath(country, args.isoDate, segments.slice(1));
 }
 
 export function jurisdictionFacts(
@@ -524,7 +526,75 @@ function loadSeats(db: DatabaseSync, countryId: string, geographyId: string | nu
 
 function loadCycles(db: DatabaseSync, jurisdictionKey: string, countryId: string): JurisdictionCycle[] {
   if (!tableExists(db, "derived_cycle")) return [];
-  const cycles = db
+  const canMatchContests =
+    tableExists(db, "election_event") && tableExists(db, "research_date") && tableExists(db, "office");
+  const cycles = (
+    canMatchContests
+      ? db
+          .prepare(
+            `WITH RECURSIVE descent AS (
+               SELECT jurisdiction_key FROM derived_jurisdiction WHERE jurisdiction_key = ?
+               UNION ALL
+               SELECT j.jurisdiction_key
+               FROM derived_jurisdiction j
+               JOIN descent d ON j.parent_key = d.jurisdiction_key
+             )
+             SELECT DISTINCT c.cycle_key, c.iso_date, c.contest_count, c.label
+             FROM derived_cycle c
+             JOIN election_event e ON e.date_resolution = 'resolved'
+             JOIN research_date d ON d.date_id = e.date_id
+               AND d.precision = 'day'
+               AND printf('%04d-%02d-%02d', d.year, d.month, d.day) = c.iso_date
+             JOIN office o ON o.id_namespace = e.id_namespace AND o.office_id = e.office_id AND o.country_id = c.country_id
+             JOIN derived_jurisdiction place
+               ON place.country_id = o.country_id AND place.geography_id = o.geography_id
+             WHERE c.country_id = ?
+               AND place.jurisdiction_key IN (SELECT jurisdiction_key FROM descent)
+             ORDER BY c.iso_date, c.cycle_key`,
+          )
+          .all(jurisdictionKey, countryId)
+      : db
+          .prepare(
+            `WITH RECURSIVE descent AS (
+               SELECT jurisdiction_key FROM derived_jurisdiction WHERE jurisdiction_key = ?
+               UNION ALL
+               SELECT j.jurisdiction_key
+               FROM derived_jurisdiction j
+               JOIN descent d ON j.parent_key = d.jurisdiction_key
+             )
+             SELECT c.cycle_key, c.iso_date, c.contest_count, c.label
+             FROM derived_cycle c
+             WHERE c.country_id = ?
+               AND c.scope_key IN (SELECT jurisdiction_key FROM descent)
+             ORDER BY c.iso_date, c.cycle_key`,
+          )
+          .all(jurisdictionKey, countryId)
+  ).map((row) => ({
+    id: text(row.cycle_key),
+    isoDate: text(row.iso_date),
+    year: text(row.iso_date).slice(0, 4),
+    contestCount: num(row.contest_count),
+    label: text(row.label),
+    hasResults: false,
+    eventId: null as string | null,
+  }));
+  if (cycles.length === 0 || !canMatchContests) return cycles;
+
+  const hasResultTable = tableExists(db, "result_row");
+  const dates = cycles.map((cycle) => cycle.isoDate);
+  const placeholders = dates.map(() => "?").join(", ");
+  const withheld = [...WITHHELD_EVIDENCE];
+  const withheldPlaceholders = withheld.map(() => "?").join(", ");
+  const hasRowSql = hasResultTable
+    ? `EXISTS (
+                SELECT 1 FROM result_row r
+                WHERE r.id_namespace = e.id_namespace
+                  AND r.office_id = e.office_id
+                  AND r.history_key = e.history_key
+                  AND r.evidence_status NOT IN (${withheldPlaceholders})
+              )`
+    : "0";
+  const events = db
     .prepare(
       `WITH RECURSIVE descent AS (
          SELECT jurisdiction_key FROM derived_jurisdiction WHERE jurisdiction_key = ?
@@ -533,49 +603,21 @@ function loadCycles(db: DatabaseSync, jurisdictionKey: string, countryId: string
          FROM derived_jurisdiction j
          JOIN descent d ON j.parent_key = d.jurisdiction_key
        )
-       SELECT c.cycle_key, c.iso_date, c.contest_count, c.label
-       FROM derived_cycle c
-       WHERE c.country_id = ?
-         AND c.scope_key IN (SELECT jurisdiction_key FROM descent)
-       ORDER BY c.iso_date, c.cycle_key`,
-    )
-    .all(jurisdictionKey, countryId)
-    .map((row) => ({
-      id: text(row.cycle_key),
-      isoDate: text(row.iso_date),
-      year: text(row.iso_date).slice(0, 4),
-      contestCount: num(row.contest_count),
-      label: text(row.label),
-      hasResults: false,
-      eventId: null as string | null,
-    }));
-  if (cycles.length === 0 || !tableExists(db, "election_event") || !tableExists(db, "research_date")) return cycles;
-
-  const hasResultTable = tableExists(db, "result_row");
-  const dates = cycles.map((cycle) => cycle.isoDate);
-  const placeholders = dates.map(() => "?").join(", ");
-  const hasRowSql = hasResultTable
-    ? `EXISTS (
-                SELECT 1 FROM result_row r
-                WHERE r.id_namespace = e.id_namespace
-                  AND r.office_id = e.office_id
-                  AND r.history_key = e.history_key
-              )`
-    : "0";
-  const events = db
-    .prepare(
-      `SELECT printf('%04d-%02d-%02d', d.year, d.month, d.day) AS iso_date,
+       SELECT printf('%04d-%02d-%02d', d.year, d.month, d.day) AS iso_date,
               e.event_id,
               ${hasRowSql} AS has_row
        FROM election_event e
        JOIN office o ON o.id_namespace = e.id_namespace AND o.office_id = e.office_id
        JOIN research_date d ON d.date_id = e.date_id
+       JOIN derived_jurisdiction place
+         ON place.country_id = o.country_id AND place.geography_id = o.geography_id
        WHERE o.country_id = ?
+         AND place.jurisdiction_key IN (SELECT jurisdiction_key FROM descent)
          AND e.date_resolution = 'resolved'
          AND d.precision = 'day'
          AND printf('%04d-%02d-%02d', d.year, d.month, d.day) IN (${placeholders})`,
     )
-    .all(countryId, ...dates);
+    .all(jurisdictionKey, ...(hasResultTable ? withheld : []), countryId, ...dates);
 
   const byDate = new Map<string, { eventIds: string[]; hasResults: boolean }>();
   for (const row of events) {
@@ -675,16 +717,22 @@ export function listCountryCards(sqlitePath = resolveAtlasSqlitePath()): Country
 export function buildSitemapChunks(args: {
   staticEntries: SitemapEntry[];
   jurisdictionPaths: string[];
+  cyclePaths?: string[];
   origin: string;
   limit?: number;
 }): SitemapEntry[][] {
   const limit = args.limit ?? SITEMAP_URL_LIMIT;
   const jurisdictionEntries: SitemapEntry[] = args.jurisdictionPaths.map((slugPath) => ({
     url: `${args.origin}${jurisdictionPublicPath(slugPath)}`,
-    changeFrequency: "weekly",
+    changeFrequency: "weekly" as const,
     priority: slugPath.includes("/") ? 0.5 : 0.6,
   }));
-  const all = [...args.staticEntries, ...jurisdictionEntries];
+  const cycleEntries: SitemapEntry[] = (args.cyclePaths ?? []).map((cyclePath) => ({
+    url: `${args.origin}${cyclePath}`,
+    changeFrequency: "weekly" as const,
+    priority: 0.4,
+  }));
+  const all = [...args.staticEntries, ...jurisdictionEntries, ...cycleEntries];
   if (all.length <= limit) return [all];
   const chunks: SitemapEntry[][] = [];
   for (let index = 0; index < all.length; index += limit) {

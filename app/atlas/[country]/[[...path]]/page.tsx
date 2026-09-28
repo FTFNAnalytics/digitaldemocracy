@@ -114,6 +114,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function AtlasJurisdictionPage({ params, searchParams }: Props) {
   const { country, path } = await params;
   const query = await searchParams;
+  // Dated cycle pages are the sibling elections/[date] route. A bare reserved segment is not a place.
   if (reservedSegment(country, path)) notFound();
 
   const hit = resolveJurisdictionPath(country, path);

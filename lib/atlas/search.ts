@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import type { DatabaseSync } from "node:sqlite";
 import { resolveAtlasSqlitePath } from "./paths";
-import { atlasRoutes } from "./routes";
+import { atlasRoutes, cyclePublicPath } from "./routes";
 import {
   SEARCH_DEFAULT_LIMIT,
   type SearchMode,
@@ -50,6 +50,16 @@ const MODE_TABLE = {
   cycle: { table: "search_cycle", trigram: "search_cycle_trigram" },
   candidate: { table: "search_candidate", trigram: "search_candidate_trigram" },
 } as const;
+
+function cycleResultHref(row: Record<string, unknown>, countryId: string): string {
+  const isoDate = text(row.iso_date);
+  const slugPath = textOrNull(row.slug_path);
+  if (!isoDate || !slugPath) return atlasRoutes.country(countryId);
+  const segments = slugPath.split("/").filter((segment) => segment.length > 0);
+  const countrySlug = segments[0];
+  if (!countrySlug) return atlasRoutes.country(countryId);
+  return cyclePublicPath(countrySlug, isoDate, segments.slice(1));
+}
 
 function text(value: unknown): string {
   return value == null ? "" : String(value);
@@ -188,7 +198,7 @@ function mapRow(mode: SearchMode, row: Record<string, unknown>): Doc {
       regionId: text(row.region_id),
       year: numOrNull(row.event_year),
       tokenCount: Number(row.token_count),
-      href: atlasRoutes.country(countryId),
+      href: cycleResultHref(row, countryId),
       officeId: null,
       joinKey: text(row.cycle_key),
     };
@@ -218,7 +228,7 @@ function mapRow(mode: SearchMode, row: Record<string, unknown>): Doc {
 const SELECT_LIST: Record<SearchMode, string> = {
   seat: `search_id, id_namespace, office_id, office_name, office_type, geography_name, country_name,
          country_id, region_id, disambiguation, event_year, folded, token_count`,
-  cycle: `search_id, cycle_key, label, country_id, country_name, region_id, disambiguation, event_year, folded, token_count`,
+  cycle: `search_id, cycle_key, label, country_id, country_name, region_id, iso_date, slug_path, disambiguation, event_year, folded, token_count`,
   candidate: `search_id, label, country_id, country_name, region_id, party_key, offices_json, disambiguation,
               event_year, folded, token_count`,
 };

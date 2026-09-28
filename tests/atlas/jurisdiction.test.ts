@@ -116,16 +116,19 @@ describe("jurisdiction route helpers", () => {
     });
   });
 
-  it("links a single contest to its event and a multi-contest day to the seat list", () => {
+  it("links cycle chips to the election-day page, keeping a deeper place as the scope", () => {
     expect(
       cycleListHref({ contestCount: 1, eventId: "evt-1", isoDate: "2023-05-14", slugPath: "albania/tirane" }),
-    ).toBe("/atlas/elections/evt-1");
+    ).toBe("/atlas/albania/elections/2023-05-14/tirane");
     expect(cycleListHref({ contestCount: 1, eventId: null, isoDate: "2023-05-14", slugPath: "albania" })).toBe(
-      "/atlas/albania?date=2023-05-14",
+      "/atlas/albania/elections/2023-05-14",
     );
     expect(cycleListHref({ contestCount: 4, eventId: "evt-1", isoDate: "2023-05-14", slugPath: "albania/berat" })).toBe(
-      "/atlas/albania/berat?date=2023-05-14",
+      "/atlas/albania/elections/2023-05-14/berat",
     );
+    expect(
+      cycleListHref({ contestCount: 2, eventId: null, isoDate: "2019-06-30", slugPath: "albania/qark/dimal" }),
+    ).toBe("/atlas/albania/elections/2019-06-30/qark/dimal");
   });
 
   it("lists executive seats first and pages them at 50", () => {

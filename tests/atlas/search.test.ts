@@ -376,5 +376,6 @@ describe("Atlas search index", () => {
     expect(cycle).toHaveLength(1);
     expect(cycle[0]?.disambiguation).toBe("2019-05-14 · 1 contest");
     expect(cycle[0]?.countryId).toBe("albania");
+    expect(cycle[0]?.href).toMatch(/^\/atlas\/albania\/elections\/2019-05-14(\/|$)/);
   });
 });

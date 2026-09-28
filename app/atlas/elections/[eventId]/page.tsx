@@ -24,6 +24,7 @@ import {
   type AtlasProceedingRow,
   type AtlasResultRow,
 } from "@/lib/atlas/read";
+import { cyclePathForEvent } from "@/lib/atlas/cycle/read";
 import { atlasRoutes } from "@/lib/atlas/routes";
 
 export const dynamic = "force-dynamic";
@@ -68,6 +69,7 @@ export function FoundEventPage({
   releaseId,
   lineageId,
   countryName,
+  cycleHref = null,
 }: {
   event: AtlasEventDetail;
   results: AtlasResultRow[];
@@ -76,6 +78,7 @@ export function FoundEventPage({
   releaseId: string | null;
   lineageId: string | null;
   countryName: string | null;
+  cycleHref?: string | null;
 }) {
   const bars = toResultRows(results);
   return (
@@ -154,6 +157,14 @@ export function FoundEventPage({
         <Link href={atlasRoutes.office(event.officeId)} className="font-semibold text-atlas-accent hover:underline">
           {event.officeName}
         </Link>
+        {cycleHref ? (
+          <>
+            {" · "}
+            <Link href={cycleHref} className="font-semibold text-atlas-accent hover:underline">
+              All contests on this date
+            </Link>
+          </>
+        ) : null}
         {" · "}
         <Link href={atlasRoutes.explorer} className="font-semibold text-atlas-accent hover:underline">
           Explorer
@@ -203,6 +214,7 @@ export default async function AtlasEventPage({ params }: Props) {
       releaseId={publication?.releaseId ?? null}
       lineageId={lineageId}
       countryName={country?.name ?? event.countryName}
+      cycleHref={cyclePathForEvent(event.idNamespace, event.eventId)}
     />
   );
 }
