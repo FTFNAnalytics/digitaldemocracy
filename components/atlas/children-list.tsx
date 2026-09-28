@@ -21,10 +21,18 @@ function filterHref(filter: PlaceFilter, kind: string): string {
   return query ? `${filter.path}?${query}` : filter.path;
 }
 
-export function ChildrenList({ places, filter }: { places: JurisdictionChild[]; filter: PlaceFilter }) {
+export function ChildrenList({
+  places,
+  filter,
+  map,
+}: {
+  places: JurisdictionChild[];
+  filter: PlaceFilter;
+  map?: React.ReactNode;
+}) {
   const selected = filter.kind || "all";
   return (
-    <MapSlot>
+    <MapSlot map={map}>
       {filter.show ? (
         <div className="mb-3 space-y-2">
           <form method="get" action={filter.path} className="flex flex-wrap items-end gap-2">

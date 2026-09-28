@@ -1,5 +1,5 @@
 /**
- * Attribution strings shown later in the map corner (OV-08).
+ * Attribution strings shown in the map corner.
  * docs/boundaries.md must contain each of these verbatim.
  */
 export const ATTRIBUTIONS = {
