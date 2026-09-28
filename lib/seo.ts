@@ -142,6 +142,15 @@ export const staticPageSeo = {
     absoluteTitle: true,
     keywords: ["election atlas", "election explorer", "Europe elections"],
   },
+  atlasSearch: {
+    title: `Search · Election Atlas · ${SITE_NAME}`,
+    description:
+      "Search Election Atlas seats, election days, and candidate labels. Europe is listed first when scores match.",
+    path: "/atlas/search",
+    image: "atlas-search",
+    absoluteTitle: true,
+    keywords: ["election atlas", "election search", "candidate search"],
+  },
   observatoryAbout: {
     title: `About the observatory · ${OBSERVATORY_NAME}`,
     description:
@@ -237,6 +246,7 @@ export const STATIC_SITEMAP_PATHS = [
   staticPageSeo.observatory.path,
   staticPageSeo.atlas.path,
   staticPageSeo.atlasExplorer.path,
+  staticPageSeo.atlasSearch.path,
   staticPageSeo.observatoryAbout.path,
   staticPageSeo.regions.path,
   staticPageSeo.explorer.path,

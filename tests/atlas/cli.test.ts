@@ -40,6 +40,14 @@ const MASTER_TABLES = [
   "result_row",
   "retained_input",
   "schema_migration",
+  "search_candidate",
+  "search_candidate_trigram",
+  "search_cycle",
+  "search_cycle_trigram",
+  "search_meta",
+  "search_seat",
+  "search_seat_trigram",
+  "search_token",
   "source",
   "unresolved_evidence",
 ];
@@ -101,6 +109,7 @@ describe("atlas CLI stubs", () => {
     expect(first.stdout).toContain("0001_atlas_attempt_log");
     expect(first.stdout).toContain("0002_atlas_master");
     expect(first.stdout).toContain("Applied to master DB: 0003_atlas_derived");
+    expect(first.stdout).toContain("Applied to master DB: 0004_atlas_search");
     expect(first.stdout).toContain("Applied to master DB: 0005_atlas_boundary");
     expect(first.stdout).toContain("Applied to master DB: 0006_atlas_office_slug");
     expect(first.stdout).not.toContain("import:atlas remains blocked");
@@ -126,6 +135,7 @@ describe("atlas CLI stubs", () => {
       expect(versions).toEqual([
         { version: 1, description: "Atlas Phase 1 master draft" },
         { version: 3, description: "Atlas derived projections" },
+        { version: 4, description: "Atlas search indexes" },
         { version: 5, description: "Atlas boundary crosswalk" },
         { version: 6, description: "Atlas office slugs" },
       ]);
@@ -144,6 +154,7 @@ describe("atlas CLI stubs", () => {
     expect(second.stdout).toContain("Already applied to attempts DB: 0001_atlas_attempt_log");
     expect(second.stdout).toContain("Already applied to master DB: 0002_atlas_master");
     expect(second.stdout).toContain("Already applied to master DB: 0003_atlas_derived");
+    expect(second.stdout).toContain("Already applied to master DB: 0004_atlas_search");
     expect(second.stdout).toContain("Already applied to master DB: 0005_atlas_boundary");
     expect(second.stdout).toContain("Already applied to master DB: 0006_atlas_office_slug");
   });

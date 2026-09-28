@@ -1,6 +1,6 @@
 -- Derived office slugs for readable seat aliases (OV-05).
--- Apply to the master database after 0003_atlas_derived.sql.
--- 0004 stays reserved for OV-02 search. 0005 is the boundary crosswalk.
+-- Apply to the master database after 0005_atlas_boundary.sql.
+-- 0004 is the search index. 0005 is the boundary crosswalk.
 -- This file creates empty tables only. It does not insert, update, or delete
 -- master rows. Rebuild rows with `npm run derive:atlas`.
 -- schema_migration version matches this filename (0006 → 6).

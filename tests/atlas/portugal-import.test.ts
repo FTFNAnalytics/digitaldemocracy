@@ -123,6 +123,9 @@ describe("Portugal Atlas importer", () => {
       expect(calendar.label).toMatch(/Açores/);
       expect(calendar.label).toMatch(/PARISH-TIER/);
 
+      // Search rebuilds on both publications. Yield so the worker can ack
+      // onTaskUpdate before the second synchronous import.
+      await new Promise((resolve) => setImmediate(resolve));
       const second = importPortugal({
         root: repoRoot,
         sqlitePath,

@@ -5,6 +5,7 @@
  * before the atomic publish swap.
  */
 import { rebuildDerivedInFile } from "../../lib/atlas/derive/run";
+import { SEARCH_ENGINE, sqliteFts5Enabled } from "../../lib/atlas/search/schema";
 import { resolveAtlasSqlitePath } from "../../lib/atlas/paths";
 import { revalidateAtlasDerivedTag } from "../../lib/atlas/publication";
 
@@ -23,6 +24,12 @@ async function main() {
   console.log(`cycles=${stats.cycles}`);
   console.log(`unplaced=${stats.unplaced}`);
   console.log(`coverage=${stats.coverage}`);
+  console.log(`search_schema=${stats.searchSchema}`);
+  console.log(`search_seats=${stats.searchSeats}`);
+  console.log(`search_cycles=${stats.searchCycles}`);
+  console.log(`search_candidates=${stats.searchCandidates}`);
+  console.log(`search_engine=${SEARCH_ENGINE}`);
+  console.log(`fts5=${sqliteFts5Enabled() ? 1 : 0}`);
   console.log(`publication_tag=${revalidated.tag} revalidate=${revalidated.status}`);
 }
 

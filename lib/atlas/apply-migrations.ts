@@ -8,6 +8,7 @@ import {
   OFFICE_SLUG_MIGRATION_DESCRIPTION,
   OFFICE_SLUG_SCHEMA_VERSION,
 } from "./derive/schema";
+import { SEARCH_MIGRATION_DESCRIPTION, SEARCH_SCHEMA_VERSION } from "./search/schema";
 import {
   ATLAS_ATTEMPT_LOG_FILENAME,
   ATLAS_MASTER_FILENAME,
@@ -108,6 +109,7 @@ function schemaVersions(db: DatabaseSync): Map<number, string> {
 
 const FOLLOW_ON_DESCRIPTIONS: Record<number, string> = {
   [DERIVED_SCHEMA_VERSION]: DERIVED_MIGRATION_DESCRIPTION,
+  [SEARCH_SCHEMA_VERSION]: SEARCH_MIGRATION_DESCRIPTION,
   [BOUNDARY_SCHEMA_VERSION]: BOUNDARY_SCHEMA_DESCRIPTION,
   [OFFICE_SLUG_SCHEMA_VERSION]: OFFICE_SLUG_MIGRATION_DESCRIPTION,
 };
@@ -115,7 +117,7 @@ const FOLLOW_ON_DESCRIPTIONS: Record<number, string> = {
 /**
  * Follow-on master files (0003+) run after 0002 on a database that already
  * has schema_migration version 1. Each file must INSERT its filename version.
- * 0003 is derived projections. 0004 stays reserved for OV-02 search.
+ * 0003 is derived projections. 0004 is the search index.
  * 0005 is the boundary crosswalk. 0006 is office slugs for seat aliases.
  * Files are applied in filename order.
  */

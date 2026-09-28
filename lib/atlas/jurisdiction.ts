@@ -15,6 +15,7 @@ const RESERVED_ATLAS_ROOTS = new Set([
   "offices",
   "elections",
   "releases",
+  "search",
   "reading-kit",
   "countries",
   "seat-alias",

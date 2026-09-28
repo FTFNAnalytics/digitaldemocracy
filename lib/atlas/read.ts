@@ -22,6 +22,8 @@ import { REGIONAL_CALENDAR_LABEL as ALBANIA_REGIONAL_CALENDAR_LABEL } from "./al
 import { REGIONAL_CALENDAR_LABEL as MALTA_REGIONAL_CALENDAR_LABEL } from "./malta/identity";
 import { REGIONAL_CALENDAR_LABEL as ROMANIA_REGIONAL_CALENDAR_LABEL } from "./romania/identity";
 import { REGIONAL_CALENDAR_LABEL as SPAIN_REGIONAL_CALENDAR_LABEL } from "./spain/identity";
+import { SEARCH_QUERY_MAX } from "./search-params";
+import { searchDatabase } from "./search";
 import { openAtlasDatabase, tableExists } from "./sqlite";
 
 export type AtlasLoadStatus = "ready" | "missing" | "empty" | "unavailable";
@@ -1045,7 +1047,14 @@ export function listAtlasExplorerOffices(
           ...mapOfficeRow(row),
           countryName: text(row.country_name),
           regionId: text(row.region_id),
+          idNamespace: text(row.id_namespace),
         }));
+
+      const useSearchSeat = Boolean(filters.q) && filters.q.length <= SEARCH_QUERY_MAX && tableExists(db, "search_seat");
+      const searchKeys = useSearchSeat
+        ? new Set(searchDatabase(db, { mode: "seat", q: filters.q, limit: 5000 }).map((hit) => hit.joinKey))
+        : null;
+      if (filters.q.length > SEARCH_QUERY_MAX) return [];
 
       return rows
         .filter((office) => {
@@ -1056,8 +1065,12 @@ export function listAtlasExplorerOffices(
             if (tier !== filters.tier) return false;
           }
           if (filters.q) {
-            const blob = `${office.officeId} ${office.name} ${office.countryId} ${office.countryName} ${office.geographyName ?? ""}`;
-            if (!includesInsensitive(blob, filters.q)) return false;
+            if (searchKeys) {
+              if (!searchKeys.has(`${office.idNamespace}\u0000${office.officeId}`)) return false;
+            } else {
+              const blob = `${office.officeId} ${office.name} ${office.countryId} ${office.countryName} ${office.geographyName ?? ""}`;
+              if (!includesInsensitive(blob, filters.q)) return false;
+            }
           }
           return true;
         })
@@ -1067,7 +1080,12 @@ export function listAtlasExplorerOffices(
             a.countryName.localeCompare(b.countryName) ||
             a.name.localeCompare(b.name) ||
             a.officeId.localeCompare(b.officeId),
-        );
+        )
+        .map((office) => {
+          const { idNamespace, ...rest } = office;
+          void idNamespace;
+          return rest;
+        });
     });
   } catch {
     return [];
