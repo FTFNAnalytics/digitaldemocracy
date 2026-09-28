@@ -6,7 +6,6 @@ import {
   STATIC_SITEMAP_PATHS,
   countryPageMeta,
   eventPageMeta,
-  marketingHashSections,
   officePageMeta,
   pageMeta,
   staticPageSeo,
@@ -52,9 +51,13 @@ describe("seo helpers", () => {
     expect(STATIC_SITEMAP_PATHS).not.toContain("/electiondatabase/elections");
   });
 
-  it("documents marketing hash sections with committed OG assets", () => {
-    for (const section of marketingHashSections) {
-      expect(existsSync(`public/og/${section.image}.png`)).toBe(true);
+  it("ships an OG image for every static page, including the Center pages", () => {
+    expect(STATIC_SITEMAP_PATHS).toContain("/about");
+    expect(STATIC_SITEMAP_PATHS).toContain("/methodology");
+    expect(STATIC_SITEMAP_PATHS).toContain("/data");
+    expect(STATIC_SITEMAP_PATHS).toContain("/corrections");
+    for (const page of Object.values(staticPageSeo)) {
+      expect(existsSync(`public/og/${page.image}.png`)).toBe(true);
     }
   });
 
@@ -113,11 +116,19 @@ describe("seo helpers", () => {
 });
 
 describe("json-ld", () => {
-  it("points site search at the Atlas explorer", () => {
+  it("points site search at Atlas search", () => {
     const site = websiteJsonLd();
     expect(site.potentialAction.target.urlTemplate).toBe(
-      `${SITE_URL}/atlas/explorer?q={search_term_string}`,
+      `${SITE_URL}/atlas/search?mode=seat&q={search_term_string}`,
     );
+  });
+
+  it("omits address and phone until they are confirmed", () => {
+    const org = organizationJsonLd();
+    expect(org).not.toHaveProperty("address");
+    expect(org).not.toHaveProperty("telephone");
+    expect(org).not.toHaveProperty("email");
+    expect(JSON.stringify(org)).not.toContain("[CONFIRM:");
   });
 
   it("does not claim research coverage is complete", () => {

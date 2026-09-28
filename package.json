@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "node --experimental-sqlite --no-warnings ./node_modules/next/dist/bin/next dev",
-    "build": "node --experimental-sqlite --no-warnings ./node_modules/next/dist/bin/next build && node scripts/prepare-standalone.mjs",
+    "build": "node scripts/check-content-placeholders.mjs && node --experimental-sqlite --no-warnings ./node_modules/next/dist/bin/next build && node scripts/prepare-standalone.mjs",
+    "check:content": "node scripts/check-content-placeholders.mjs",
     "start": "node --experimental-sqlite --no-warnings .next/standalone/server.js",
     "preview": "npm start",
     "smoke": "node scripts/smoke-assets.mjs",
@@ -46,6 +47,7 @@
     "eslint-config-next": "16.3.5",
     "mapshaper": "^0.6.110",
     "tailwindcss": "^4",
+    "sharp": "^0.35.4",
     "tsx": "^4.20.6",
     "typescript": "^5",
     "vitest": "^3.2.4"

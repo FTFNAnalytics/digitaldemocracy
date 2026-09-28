@@ -14,8 +14,7 @@ export default function NotFound() {
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-accent">404</p>
         <h1 className="mt-4 text-3xl font-bold">Page not found</h1>
         <p className="mt-3 max-w-md text-white/70">
-          That URL is not part of the {org.name} prototype. Return home to the live
-          single-page site.
+          That URL is not on the {org.name} site.
         </p>
         <Link
           href="/"

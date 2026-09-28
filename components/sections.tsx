@@ -1,116 +1,89 @@
 import Link from "next/link";
-import {
-  about,
-  events,
-  focusAreas,
-  org,
-  pillars,
-  publications,
-  researchCards,
-  social,
-} from "@/lib/content";
-import { Icon, Logo } from "@/components/brand";
+import { WorldMap } from "@/components/atlas/map/WorldMap";
 import { Container, SectionHeading } from "@/components/container";
-import { NetworkGlobe } from "@/components/network-globe";
-import { ContactForm, NewsletterForm } from "@/components/interactive";
+import { Logo } from "@/components/brand";
+import type { CenterCoverageTotals, CenterFrontDoor, CenterSnapshot } from "@/lib/center/front-door";
+import { footerLinks, github, org, unconfirmed } from "@/lib/content";
+import { ATTRIBUTIONS } from "@/lib/atlas/boundaries/attribution";
+import { atlasRoutes } from "@/lib/atlas/routes";
+import { SEARCH_MODES, searchModeLabel } from "@/lib/atlas/search-params";
 
-export function PrototypeBanner() {
-  return (
-    <div className="bg-navy-800 px-4 py-2 text-center text-xs text-white/80">
-      <span className="mr-2 inline-flex rounded-full bg-accent px-2 py-0.5 text-[0.65rem] font-bold uppercase tracking-wider text-accent-ink">
-        Prototype
-      </span>
-      Design mockup of the Center for Digital Democracy. Forms validate locally and do not
-      send email.
-    </div>
-  );
+function formatCount(value: number): string {
+  return value.toLocaleString("en-US");
 }
 
 export function Hero() {
   return (
-    <section id="home" className="relative isolate overflow-hidden bg-navy">
-      <NetworkGlobe />
-      <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/88 to-navy/20" />
-      <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-navy/40" />
-      <Container className="relative z-10 flex min-h-[88vh] flex-col justify-center py-24">
+    <section className="relative isolate overflow-hidden bg-navy" aria-labelledby="center-hero-title">
+      <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/40 to-navy/20" />
+      <Container className="relative z-10 flex min-h-[78vh] flex-col justify-center py-20">
         <div className="max-w-2xl">
           <div className="mb-5 h-1 w-12 rounded-full bg-accent" />
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-accent">
-            {org.kicker}
+            {org.name}
           </p>
-          <h1 className="text-4xl font-extrabold leading-[1.12] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1
+            id="center-hero-title"
+            className="text-4xl font-extrabold leading-[1.12] tracking-tight text-white sm:text-5xl lg:text-6xl"
+          >
             {org.headline}
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/75">{org.lede}</p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href="#about"
-              className="inline-flex items-center rounded-full bg-accent px-6 py-3 text-sm font-bold text-accent-ink transition hover:bg-accent-soft"
-            >
-              Explore the Center
-            </a>
-            <a
-              href="#events"
+          <form action={atlasRoutes.search} method="get" className="mt-8 max-w-xl" role="search">
+            <fieldset className="border-0 p-0">
+              <legend className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+                Search mode
+              </legend>
+              <div className="flex flex-wrap gap-2">
+                {SEARCH_MODES.map((mode) => (
+                  <label
+                    key={mode}
+                    className="inline-flex items-center gap-2 rounded-full border border-white/25 px-3 py-1.5 text-sm font-semibold text-white"
+                  >
+                    <input
+                      type="radio"
+                      name="mode"
+                      value={mode}
+                      defaultChecked={mode === "seat"}
+                      className="accent-accent"
+                    />
+                    {searchModeLabel(mode)}
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+            <label htmlFor="center-search-q" className="mt-4 block text-sm font-medium text-white">
+              Search
+            </label>
+            <div className="mt-2 flex flex-col gap-2 sm:flex-row">
+              <input
+                id="center-search-q"
+                name="q"
+                maxLength={200}
+                placeholder="Name, place, or date"
+                className="min-w-0 flex-1 rounded-full border border-white/20 bg-navy-800 px-4 py-3 text-sm text-white outline-none ring-accent/40 placeholder:text-white/40 focus:ring-2"
+              />
+              <button
+                type="submit"
+                className="rounded-full bg-accent px-6 py-3 text-sm font-bold text-accent-ink transition hover:bg-accent-soft"
+              >
+                Search the Atlas
+              </button>
+            </div>
+          </form>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              href="/atlas"
               className="inline-flex items-center rounded-full border border-white/25 px-6 py-3 text-sm font-bold text-white transition hover:border-accent hover:text-accent"
             >
-              Upcoming events
-            </a>
-          </div>
-        </div>
-      </Container>
-    </section>
-  );
-}
-
-export function FocusStrip() {
-  return (
-    <section className="bg-paper py-16" aria-label="Focus areas">
-      <Container>
-        <div className="grid gap-6 md:grid-cols-3">
-          {focusAreas.map((item) => (
-            <article
-              key={item.title}
-              className="rounded-2xl border border-navy/8 bg-white p-6 shadow-[var(--shadow-card)]"
+              Browse countries
+            </Link>
+            <Link
+              href="/atlas/explorer"
+              className="inline-flex items-center rounded-full border border-white/25 px-6 py-3 text-sm font-bold text-white transition hover:border-accent hover:text-accent"
             >
-              <span className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-navy text-accent">
-                <Icon name={item.icon} />
-              </span>
-              <h3 className="text-lg font-bold text-navy">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{item.body}</p>
-            </article>
-          ))}
-        </div>
-      </Container>
-    </section>
-  );
-}
-
-export function About() {
-  return (
-    <section id="about" className="bg-white py-20">
-      <Container>
-        <div className="grid items-start gap-12 lg:grid-cols-2">
-          <div>
-            <SectionHeading eyebrow="Who we are" title="About the Center" />
-            <div className="space-y-4 text-[0.95rem] leading-relaxed text-muted">
-              {about.mission.map((para) => (
-                <p key={para.slice(0, 32)}>{para}</p>
-              ))}
-            </div>
-          </div>
-          <div>
-            <SectionHeading eyebrow="Priorities" title="What we fight for" />
-            <ul className="space-y-4">
-              {about.priorities.map((item) => (
-                <li key={item.title} className="flex gap-3 rounded-2xl border border-navy/8 p-4">
-                  <Icon name="check" className="mt-0.5 h-6 w-6 shrink-0" />
-                  <div>
-                    <p className="font-semibold text-navy">{item.title}</p>
-                    <p className="mt-1 text-sm text-muted">{item.body}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
+              Explorer
+            </Link>
           </div>
         </div>
       </Container>
@@ -118,149 +91,167 @@ export function About() {
   );
 }
 
-export function Research() {
+export function WorldSection({ door }: { door: CenterFrontDoor }) {
+  const note =
+    door.status === "missing" || door.status === "unavailable"
+      ? door.message
+      : door.markers.length === 0
+        ? "No loaded country has a coverage marker on this map."
+        : "Marker size follows result rows on file. Colour follows coverage.";
   return (
-    <section id="research" className="bg-mist py-20">
+    <section className="bg-white py-16" aria-labelledby="center-map-title">
       <Container>
-        <div className="circuit-panel mb-12 overflow-hidden rounded-3xl p-8 sm:p-12">
-          <div className="max-w-xl">
-            <SectionHeading
-              eyebrow="Library"
-              title="Policy research and publications"
-            />
-            <p className="text-muted">
-              Briefs, working papers, and datasets for lawmakers, journalists, and
-              coalitions building the next generation of digital public-interest rules.
-            </p>
-            <a
-              href="#connect"
-              className="mt-6 inline-flex rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-accent-ink hover:bg-accent-soft"
-            >
-              Request a briefing
-            </a>
-          </div>
-          <ul className="mt-8 divide-y divide-navy/10 border-t border-navy/10">
-            {publications.map((pub) => (
-              <li key={pub.title} className="flex flex-wrap items-baseline justify-between gap-2 py-4">
-                <p className="font-semibold text-navy">{pub.title}</p>
-                <p className="text-sm text-muted">
-                  {pub.type} · {pub.date}
+        <SectionHeading eyebrow="Map" title="Coverage" />
+        <p id="center-map-title" className="sr-only">
+          World map
+        </p>
+        <p className="max-w-2xl text-sm leading-relaxed text-muted" data-center-map-note={door.status}>
+          {note}
+        </p>
+        <WorldMap markers={door.markers} />
+      </Container>
+    </section>
+  );
+}
+
+export function SnapshotStrip({ snapshots }: { snapshots: CenterSnapshot[] }) {
+  return (
+    <section className="bg-mist py-16" aria-label="Latest results ingested">
+      <Container>
+        <SectionHeading eyebrow="Ingested" title="Latest results ingested" />
+        {snapshots.length === 0 ? (
+          <p className="text-sm text-muted">No snapshot labels are loaded.</p>
+        ) : (
+          <ul className="grid gap-3">
+            {snapshots.map((row) => (
+              <li
+                key={`${row.lineageId}:${row.releaseId}`}
+                data-center-snapshot={row.snapshotLabel ?? ""}
+                className="rounded-2xl border border-navy/10 bg-white px-4 py-3"
+              >
+                <p className="font-semibold text-navy">
+                  {row.snapshotLabel ?? "Snapshot label not supplied"}
                 </p>
               </li>
             ))}
           </ul>
-        </div>
-        <div className="mb-12 rounded-3xl border border-navy/10 bg-white p-6 sm:p-8">
-          <p className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-navy-600">
-            New product area
-          </p>
-          <h3 className="mt-2 text-2xl font-bold text-navy">Election Atlas</h3>
-          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-            Europe-first searchable election research at{" "}
-            <span className="font-semibold text-navy">/atlas</span>. Browse loaded
-            countries and offices, or open the explorer to filter by country, tier,
-            and region.
-          </p>
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Link
-              href="/atlas"
-              className="inline-flex rounded-full bg-navy px-5 py-2.5 text-sm font-bold text-white hover:bg-navy-700"
-            >
-              Open Election Atlas
-            </Link>
-            <Link
-              href="/atlas/explorer"
-              className="inline-flex rounded-full border border-navy/20 px-5 py-2.5 text-sm font-bold text-navy hover:border-navy"
-            >
-              Open the explorer
-            </Link>
-          </div>
-        </div>
-        <SectionHeading eyebrow="Workstreams" title="Research" />
-        <div className="grid gap-6 sm:grid-cols-2">
-          {researchCards.map((card) => (
-            <article
-              key={card.title}
-              className="rounded-2xl bg-white p-6 shadow-[var(--shadow-card)]"
-            >
-              <span className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-navy text-accent">
-                <Icon name={card.icon} />
-              </span>
-              <h3 className="text-xl font-bold text-navy">{card.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{card.body}</p>
-            </article>
-          ))}
-        </div>
+        )}
+        <p className="mt-4 text-sm">
+          <Link href={atlasRoutes.releases} className="font-semibold text-navy hover:text-navy-600">
+            Snapshot list
+          </Link>
+        </p>
       </Container>
     </section>
   );
 }
 
-export function Initiatives() {
+const COVERAGE_FACTS: Array<{ key: keyof CenterCoverageTotals; label: string; attr: string }> = [
+  { key: "countries", label: "Countries", attr: "data-center-countries" },
+  { key: "offices", label: "Offices", attr: "data-center-offices" },
+  { key: "officesWithResults", label: "Offices with results", attr: "data-center-offices-with-results" },
+  { key: "events", label: "Elections", attr: "data-center-events" },
+  { key: "eventsWithResults", label: "Elections with results", attr: "data-center-events-with-results" },
+];
+
+export function CoverageSection({ coverage }: { coverage: CenterCoverageTotals | null }) {
   return (
-    <section id="initiatives" className="bg-navy py-20">
+    <section className="bg-white py-16" aria-label="What the Atlas covers">
       <Container>
-        <SectionHeading
-          eyebrow="How we work"
-          title="Four pillars of the program"
-          light
-        />
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {pillars.map((pillar) => (
-            <article key={pillar.title}>
-              <h3 className="text-xl font-bold text-white">{pillar.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-white/70">{pillar.body}</p>
-              <a
-                href="#research"
-                className="mt-4 inline-flex text-sm font-semibold text-accent hover:text-accent-soft"
+        <SectionHeading eyebrow="What is loaded" title="What the Atlas covers" />
+        <p className="max-w-2xl text-sm leading-relaxed text-muted">
+          These counts are country totals from the Atlas coverage tables. A place with no ingested
+          records is not shown as zero coverage of a complete register.
+        </p>
+        {coverage ? (
+          <dl className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {COVERAGE_FACTS.map((fact) => (
+              <div
+                key={fact.key}
+                {...{ [fact.attr]: String(coverage[fact.key]) }}
+                className="rounded-2xl border border-navy/8 bg-paper p-5 shadow-[var(--shadow-card)]"
               >
-                More information →
-              </a>
-            </article>
-          ))}
+                <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-navy-600">
+                  {fact.label}
+                </dt>
+                <dd className="mt-2 text-3xl font-bold text-navy">{formatCount(coverage[fact.key])}</dd>
+              </div>
+            ))}
+          </dl>
+        ) : (
+          <p className="mt-8 text-sm text-muted" data-center-coverage="not-supplied">
+            not supplied
+          </p>
+        )}
+      </Container>
+    </section>
+  );
+}
+
+export function MethodologyBrief() {
+  return (
+    <section className="bg-mist py-16" aria-label="Methodology in brief">
+      <Container>
+        <SectionHeading eyebrow="How to read a record" title="Methodology in brief" />
+        <div className="max-w-2xl space-y-4 text-sm leading-relaxed text-muted">
+          <p>
+            A missing number is not a zero. A recorded zero stays zero. Dates keep the precision
+            they were given: a month is not the first day of that month.
+          </p>
+          <p>
+            Preliminary figures stay preliminary. A withheld value stays withheld. When two sources
+            disagree and neither is adopted, the resolved value is not supplied.
+          </p>
+          <p>
+            <Link href="/methodology" className="font-semibold text-navy hover:text-navy-600">
+              Read the methodology
+            </Link>
+          </p>
         </div>
       </Container>
     </section>
   );
 }
 
-export function EventsAndConnect() {
+export function CiteBrief() {
   return (
-    <div className="bg-[#d7dee8]">
-      <Container className="grid gap-10 py-20 lg:grid-cols-[1.1fr_0.9fr]">
-        <section id="events">
-          <SectionHeading eyebrow="Calendar" title="Events" />
-          <div className="grid gap-4 sm:grid-cols-2">
-            {events.map((event) => (
-              <article
-                key={event.title}
-                className="flex flex-col rounded-2xl bg-white p-5 shadow-[var(--shadow-card)]"
-              >
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-navy-600">
-                  {event.type} · {event.date}
-                </p>
-                <h3 className="mt-2 text-lg font-bold text-navy">{event.title}</h3>
-                <p className="mt-1 text-sm text-muted">{event.detail}</p>
-                <a
-                  href="#connect"
-                  className="mt-4 text-sm font-semibold text-navy hover:text-navy-600"
-                >
-                  {event.cta} →
-                </a>
-              </article>
-            ))}
-          </div>
-        </section>
-        <section id="connect" className="rounded-3xl bg-navy p-6 sm:p-8">
-          <SectionHeading eyebrow="Inbox" title="Contact" light />
-          <p className="mb-6 text-sm text-white/70">
-            Briefing requests, partnership ideas, and press inquiries. This is a
-            front-end prototype — submissions stay in your browser.
+    <section className="bg-white py-16" aria-label="Cite and download">
+      <Container>
+        <SectionHeading eyebrow="Use the records" title="Cite and download" />
+        <div className="max-w-2xl space-y-4 text-sm leading-relaxed text-muted">
+          <p>
+            Cite the Center for Digital Democracy, the Election Atlas, the page address, and the
+            snapshot label on the record. If that label is not supplied, say so. Do not invent a date.
           </p>
-          <ContactForm />
-        </section>
+          <p>
+            <Link href="/data" className="font-semibold text-navy hover:text-navy-600">
+              Downloads and the search API
+            </Link>
+          </p>
+        </div>
       </Container>
-    </div>
+    </section>
+  );
+}
+
+export function AboutBrief() {
+  return (
+    <section className="bg-navy py-16" aria-label="About the Center">
+      <Container>
+        <SectionHeading eyebrow="Publisher" title="About the Center" light />
+        <div className="max-w-2xl space-y-4 text-sm leading-relaxed text-white/75">
+          <p>
+            {org.name} publishes the Election Atlas on this website. Staff, funders, partners, and
+            events are not listed until they are supplied.
+          </p>
+          <p>
+            <Link href="/about" className="font-semibold text-accent hover:text-accent-soft">
+              About the Center
+            </Link>
+          </p>
+        </div>
+      </Container>
+    </section>
   );
 }
 
@@ -269,58 +260,52 @@ export function Footer() {
     <footer className="bg-navy-800 text-white">
       <Container className="grid gap-10 py-14 md:grid-cols-3">
         <div>
-          <h3 className="text-lg font-bold">Events</h3>
-          <p className="mt-3 text-sm text-white/65">
-            Workshops, briefings, and the annual convening on platform power and
-            democratic speech. RSVP through the prototype contact form.
+          <h2 className="text-lg font-bold">{org.name}</h2>
+          <p className="mt-3 text-sm leading-relaxed text-white/65">
+            Election Atlas. Public reading of ingested records.
           </p>
-          <a href="#events" className="mt-3 inline-block text-sm font-semibold text-accent">
-            View the calendar →
-          </a>
-        </div>
-        <div>
-          <h3 className="text-lg font-bold">Office</h3>
-          <address className="mt-3 not-italic text-sm leading-relaxed text-white/65">
-            {org.addressLines.map((line) => (
-              <span key={line} className="block">
-                {line}
-              </span>
-            ))}
-          </address>
-        </div>
-        <div>
-          <h3 className="text-lg font-bold">Connect</h3>
-          <p className="mt-3 text-sm text-white/65">
-            {org.email}
+          <p className="mt-4 text-sm text-white/65">
+            Email
             <br />
-            {org.phone}
+            <span data-center-contact-email="">{unconfirmed.contactEmail}</span>
           </p>
-          <div className="mt-5">
-            <NewsletterForm variant="footer" />
-          </div>
+          <p className="mt-3">
+            <a href={github.newIssue} className="text-sm font-semibold text-accent hover:text-accent-soft">
+              Open a GitHub issue
+            </a>
+          </p>
+        </div>
+        <div>
+          <h2 className="text-lg font-bold">Pages</h2>
+          <ul className="mt-3 space-y-2 text-sm">
+            {footerLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="text-white/75 hover:text-accent">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h2 className="text-lg font-bold">Licence</h2>
+          <p className="mt-3 text-sm leading-relaxed text-white/65" data-center-licence="">
+            {unconfirmed.licence}
+          </p>
+          <h2 className="mt-6 text-lg font-bold">Attribution</h2>
+          <p className="mt-3 text-sm leading-relaxed text-white/65">{ATTRIBUTIONS.natural_earth}</p>
+          <p className="mt-3 text-sm leading-relaxed text-white/65">
+            A public source address is not a licence to republish the file. Rights stay unknown
+            unless a source states them.
+          </p>
         </div>
       </Container>
       <div className="border-t border-white/10">
         <Container className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between">
-          <Logo />
-          <ul className="flex flex-wrap gap-4 text-sm text-white/60">
-            <li>
-              <Link href="/atlas" className="hover:text-accent">
-                Election Atlas
-              </Link>
-            </li>
-            {social.map((item) => (
-              <li key={item.label}>
-                <a href={item.href} className="hover:text-accent">
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </Container>
-        <Container className="pb-8 text-xs text-white/45">
-          © {new Date().getFullYear()} {org.name}. Design prototype — not an official
-          live organization site. Forms do not transmit data.
+          <Logo href="/" />
+          <p className="text-xs text-white/45">
+            © {new Date().getFullYear()} {org.name}
+          </p>
         </Container>
       </div>
     </footer>

@@ -1,10 +1,10 @@
 # Center for Digital Democracy
 
-Front-end design prototype for the **Center for Digital Democracy** — a think-tank presence focused on tech policy, civic AI, data rights, platform governance, and election integrity.
+Public site for the **Center for Digital Democracy**. The live product is the **Election Atlas**.
 
-The visual system follows the attached mockups: deep navy (`#0a192f`) with bright lime (`#a2ff00`) accents, a tech-network globe hero, rounded calls to action, and a single-page information architecture.
+The marketing chrome is navy (`#0a192f`) with lime (`#a2ff00`). Atlas reading pages keep their own tokens in `app/globals.css`.
 
-> This is a **design prototype**. Contact and newsletter forms validate in the browser and show a success state. They do not send email or persist data.
+Organisational facts that are not yet supplied are printed as visible placeholders (`[CONFIRM: …]`). `npm run build` fails while any placeholder remains in `app/`, `components/`, or `lib/` unless `CONTENT_ALLOW_PLACEHOLDERS=1`.
 
 ## Run locally
 
@@ -17,14 +17,14 @@ Open [http://localhost:3000](http://localhost:3000).
 
 The public research product is the **Election Atlas** at [`/atlas`](/atlas) (browse UI at [`/atlas/explorer`](/atlas/explorer)). `/electiondatabase` remains as a back-compat catalogue until cutover; it is not advertised in Center nav. Research pages load the versioned Latin America release plus standalone country packages under `data/countries/*` (Europe and New Zealand as supplied). Research coverage remains partial. See [integration status](docs/electiondatabase-progress.md) and [country-package mapping](docs/electiondatabase-country-packages.md). The original implementation brief is preserved in [`docs/implementation-brief.md`](docs/implementation-brief.md).
 
-The observatory is being restructured as the **Election Atlas** at `/atlas`, with SQLite on the VPS as the master store, Europe as the first vertical, and regional calendars/indexes shipping before municipal completeness. `/electiondatabase` stays live until **cutover**, when working `/atlas` destinations exist and redirects plus SEO ship together; office and event URLs will not bounce to Atlas home. The plan is [`docs/atlas-plan.md`](docs/atlas-plan.md). Phase 1 (paths, gitignore, migrate/import, Prompt B DDL, Prompt C Albania docs, Albania `import:atlas`) is described in [`docs/atlas-phase1.md`](docs/atlas-phase1.md). Prompt B rationale, the Prompt C checklist, and Albania field map / identity / acceptance docs are in [`docs/phase1/`](docs/phase1/Phase1_DDL_Rationale.md). Prompt D LatAm/NZ continuity documentation is in [`docs/phase2/`](docs/phase2/README.md) (documentation complete; importer CI not run). There is still **no** `/atlas` route.
+The observatory is being restructured as the **Election Atlas** at `/atlas`, with SQLite on the VPS as the master store, Europe as the first vertical, and regional calendars/indexes shipping before municipal completeness. `/electiondatabase` stays live until **cutover**, when working `/atlas` destinations exist and redirects plus SEO ship together; office and event URLs will not bounce to Atlas home. The plan is [`docs/atlas-plan.md`](docs/atlas-plan.md). Phase 1 (paths, gitignore, migrate/import, Prompt B DDL, Prompt C Albania docs, Albania `import:atlas`) is described in [`docs/atlas-phase1.md`](docs/atlas-phase1.md). Prompt B rationale, the Prompt C checklist, and Albania field map / identity / acceptance docs are in [`docs/phase1/`](docs/phase1/Phase1_DDL_Rationale.md). Prompt D LatAm/NZ continuity documentation is in [`docs/phase2/`](docs/phase2/README.md) (documentation complete; importer CI not run).
 
 ## Scripts
 
 | Command | What it does |
 | --- | --- |
 | `npm run dev` | Start the Next.js dev server |
-| `npm run build` | Production build (must succeed). Copies `.next/static` and `public/` into the standalone tree and fails if that copy has no CSS chunk or a short file count |
+| `npm run build` | Fails while a `[CONFIRM: …]` placeholder remains unless `CONTENT_ALLOW_PLACEHOLDERS=1`, then builds and copies `.next/static` and `public/` into the standalone tree |
 | `npm start` / `npm run preview` | Serve the production build |
 | `npm run smoke -- <base-url>` | Fetch the page and every `/_next/static` asset it references; exit non-zero unless each is HTTP 200. See [docs/deploy.md](docs/deploy.md) |
 | `npm run lint` | ESLint |
@@ -47,19 +47,18 @@ The observatory is being restructured as the **Election Atlas** at `/atlas`, wit
 - [Next.js](https://nextjs.org) App Router
 - TypeScript
 - Tailwind CSS
-- React (client components for the header, forms, back-to-top, observatory nav, and URL filters)
+- React (client components for the header, back-to-top, observatory nav, and URL filters)
 
 ## Site map
 
-Marketing homepage with in-page anchors:
+Center pages:
 
-1. **Home** — hero, headline *Advancing Tech Policy for Better Democratic Outcomes*
-2. **About** — mission copy and checkmark priorities
-3. **Research** — publications strip and four research cards
-4. **Initiatives** — four pillars on a dark band
-5. **Events** — upcoming briefings and workshops
-6. **Connect** — contact form and newsletter signup
-7. **Election Atlas** — `/atlas` (explorer at `/atlas/explorer`)
+1. **Home** (`/`) — Election Atlas front door: search, coverage map, ingested snapshot labels, live coverage counts
+2. **Atlas** — `/atlas` (search at `/atlas/search`, explorer at `/atlas/explorer`)
+3. **Data** — `/data`
+4. **Methodology** — `/methodology`
+5. **About** — `/about`
+6. **Corrections** — `/corrections`
 
 Observatory routes (nested under `/electiondatabase`): home, regions, countries, explorer, offices, elections, compare, calendar, polling, coverage, sources, downloads, methodology, releases, about.
 

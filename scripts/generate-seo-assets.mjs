@@ -188,15 +188,45 @@ function encodeIco(pngs) {
 const OG_PAGES = [
   {
     file: "home",
-    title: "Center for Digital Democracy",
-    subtitle: "Advancing tech policy for better democratic outcomes.",
+    title: "Election Atlas",
+    subtitle: "Search seats, election days, and candidate labels.",
     badge: "HOME",
   },
   {
     file: "about",
     title: "About the Center",
-    subtitle: "Independent research on platforms, data rights, civic AI, and elections.",
+    subtitle: "The Center publishes the Election Atlas. Unconfirmed details are marked.",
     badge: "ABOUT",
+  },
+  {
+    file: "center-methodology",
+    title: "Methodology",
+    subtitle: "Missing numbers stay missing. Dates keep their precision.",
+    badge: "METHODOLOGY",
+  },
+  {
+    file: "data",
+    title: "Data",
+    subtitle: "Cite a page, download a record, or use the search API.",
+    badge: "DATA",
+  },
+  {
+    file: "corrections",
+    title: "Corrections",
+    subtitle: "Report a wrong record with a source. Holds stay open.",
+    badge: "CORRECTIONS",
+  },
+  {
+    file: "atlas-explorer",
+    title: "Election explorer",
+    subtitle: "Filter Election Atlas offices. Europe is listed first.",
+    badge: "EXPLORER",
+  },
+  {
+    file: "atlas-search",
+    title: "Search the Atlas",
+    subtitle: "Seats, election days, and candidate labels.",
+    badge: "SEARCH",
   },
   {
     file: "research",
@@ -318,12 +348,27 @@ const root = process.cwd();
 const ogDir = path.join(root, "public/og");
 mkdirSync(ogDir, { recursive: true });
 
-for (const page of OG_PAGES) {
+const only = (process.env.OG_ONLY ?? "")
+  .split(",")
+  .map((value) => value.trim())
+  .filter(Boolean);
+const pages = only.length ? OG_PAGES.filter((page) => only.includes(page.file)) : OG_PAGES;
+if (only.length && pages.length !== only.length) {
+  const found = new Set(pages.map((page) => page.file));
+  const missing = only.filter((file) => !found.has(file));
+  throw new Error(`Unknown OG page: ${missing.join(", ")}`);
+}
+
+for (const page of pages) {
   const svg = ogSvg(page);
   const out = path.join(ogDir, `${page.file}.png`);
   await sharp(Buffer.from(svg)).png({ compressionLevel: 9 }).toFile(out);
   console.log("wrote", path.relative(root, out));
 }
+
+if (only.length) {
+  console.log("skipped icons; OG_ONLY is set");
+} else {
 
 await sharp(Buffer.from(markSvg(32)))
   .png()
@@ -339,3 +384,4 @@ for (const size of [16, 32, 48]) {
 }
 writeFileSync(path.join(root, "app/favicon.ico"), encodeIco(icoPngs));
 console.log("wrote app/icon.png, app/apple-icon.png, app/favicon.ico");
+}
