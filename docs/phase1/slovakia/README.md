@@ -8,11 +8,11 @@ Current scope is 2,887 municipal council/mayor pairs, 39 Bratislava/Košice city
 
 Named holds stay open: SK-HISTORICAL-UNIVERSE, SK-LOCAL-OLDER-VECTORS, SK-LOCAL-MISSING-CYCLES, SK-REPEATS-CERTIFICATION, SK-VUC-INTRODUCTION, SK-CITY-PART-TIER, SK-EP, SK-HOMONYMS-UNKEYED, SK-2026-CALL, and SK-AGGREGATES. City-part offices stay drafted `other` (SK-CITY-PART-TIER). EP stays drafted `other` (SK-EP). 44 missing local office-cycle bindings stay absent. 2014/2018 council rows stay elected-only.
 
-`applied_changes=0` for importer/SQLite/VPS/UI. No importer or executable override. Execution CI **Not run**. This land is docs + tiers only (see [SOURCES_NOTE.md](SOURCES_NOTE.md)). `docs/phase1/slovakia/validation.json` is the pre-acceptance PASS receipt. `docs/phase1/slovakia/SHA256SUMS` is the full review-pack manifest, including omitted members. `validate_pack.py` expects the full pack root and the pre-acceptance draft flags. It is not an npm script and was not re-run after this accept-with-holds. Do not invent omitted research, results, sources, or identity vectors. PASS does not mean complete research or permission to publish.
+Justin authorized the scoped importer on 2026-09-28. `ATLAS_IMPORT_SCOPE=slovakia` publishes **5,871 current + 0 historical** offices. Published events, result rows, and sources stay 0. `all` does not import this lineage. Holds stay open. `research_coverage_complete` stays false. See [Slovakia_Import.md](Slovakia_Import.md). No VPS deploy. This directory remains the docs + tiers land (see [SOURCES_NOTE.md](SOURCES_NOTE.md)). `docs/phase1/slovakia/validation.json` is the pre-acceptance PASS receipt. `docs/phase1/slovakia/SHA256SUMS` is the full review-pack manifest, including omitted members. `validate_pack.py` expects the full pack root and the pre-acceptance draft flags. It is not an npm script and was not re-run after this accept-with-holds. Do not invent omitted research, results, sources, or identity vectors. PASS does not mean complete research.
 
 Approved tier bytes: `847c8880342a0cc633b03306b3fac57f04cf93d4da98d4e0854e81db3e3c4010` (predecessor draft `ce8c24f7fcc2f41439f16fca0ad428312de913815c542d3c5c46e28275559770`). Full review ZIP SHA-256 `f1fdbec0350399ee0621cb0489a59627b1113f87f7c7f0fe0d5451f12cf25a62`.
 
 - [x] Justin accepts register scope and named holds (2026-09-22, with named holds).
 - [x] Justin accepts draft tiers, including city parts and EP as `other` (2026-09-22; SK-CITY-PART-TIER and SK-EP retained).
 - [x] Justin accepts the named research holds as open (2026-09-22).
-- [ ] Justin separately authorizes implementation.
+- [x] Justin separately authorizes implementation (2026-09-28 catch-up; `ATLAS_IMPORT_SCOPE=slovakia` only, not `all`).

@@ -20,6 +20,7 @@
  * Iceland is not part of `all`; use `ATLAS_IMPORT_SCOPE=iceland`.
  * Montenegro is not part of `all`; use `ATLAS_IMPORT_SCOPE=montenegro`.
  * Serbia is not part of `all`; use `ATLAS_IMPORT_SCOPE=serbia`.
+ * Slovakia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovakia`.
  * North Macedonia is not part of `all`; use `ATLAS_IMPORT_SCOPE=north_macedonia`.
  * Bosnia and Herzegovina is not part of `all`; use `ATLAS_IMPORT_SCOPE=bosnia`.
  * Draft residual-heavy packs are skipped.
@@ -986,6 +987,45 @@ function main() {
       console.log(`serbia_ep_offices=${result.serbia.counts.ep_offices}`);
       console.log(`serbia_explicit_predecessor_edges=${result.serbia.counts.explicit_predecessor_edges}`);
       console.log(`serbia_geographies=${result.serbia.counts.geographies}`);
+    }
+    if (result.slovakia) {
+      console.log("lineage=country-package-slovakia");
+      console.log(`slovakia_attempt_id=${result.slovakia.attemptId}`);
+      console.log(`slovakia_release_id=${result.slovakia.releaseId}`);
+      console.log(`slovakia_fingerprint_sha256=${result.slovakia.fingerprint}`);
+      console.log(`slovakia_reused_release=${result.slovakia.reusedRelease ? "yes" : "no"}`);
+      console.log(`slovakia_offices=${result.slovakia.counts.offices}`);
+      console.log(`slovakia_current=${result.slovakia.counts.current_offices}`);
+      console.log(`slovakia_historical=${result.slovakia.counts.historical_offices}`);
+      console.log(`slovakia_draft_tier_municipal=${result.slovakia.counts.draft_tier_municipal}`);
+      console.log(`slovakia_draft_tier_regional=${result.slovakia.counts.draft_tier_regional}`);
+      console.log(`slovakia_draft_tier_national=${result.slovakia.counts.draft_tier_national}`);
+      console.log(`slovakia_draft_tier_other=${result.slovakia.counts.draft_tier_other}`);
+      console.log(`slovakia_schema_national=${result.slovakia.counts.schema_national}`);
+      console.log(`slovakia_schema_regional=${result.slovakia.counts.schema_regional}`);
+      console.log(`slovakia_schema_municipal=${result.slovakia.counts.schema_municipal}`);
+      console.log(`slovakia_schema_other=${result.slovakia.counts.schema_other}`);
+      console.log(`slovakia_selected_histories=${result.slovakia.counts.selected_histories}`);
+      console.log(`slovakia_prospective_events=${result.slovakia.counts.prospective_events}`);
+      console.log(`slovakia_result_rows=${result.slovakia.counts.result_rows}`);
+      console.log(`slovakia_event_rows=${result.slovakia.counts.total_events}`);
+      console.log(`slovakia_sources=${result.slovakia.counts.sources}`);
+      console.log(`slovakia_unresolved=${result.slovakia.counts.unresolved_evidence}`);
+      console.log(`slovakia_open_holds=${result.slovakia.counts.named_open_holds}`);
+      console.log(`slovakia_approved=${result.slovakia.counts.approved_classifications}`);
+      console.log(`slovakia_needs_review=${result.slovakia.counts.needs_review_classifications}`);
+      console.log(`slovakia_direct_executive_offices=${result.slovakia.counts.direct_executive_offices}`);
+      console.log(`slovakia_councils_assemblies_chambers_delegation=${result.slovakia.counts.councils_assemblies_chambers_delegation}`);
+      console.log(`slovakia_municipal_councils=${result.slovakia.counts.municipal_councils}`);
+      console.log(`slovakia_municipal_mayors=${result.slovakia.counts.municipal_mayors}`);
+      console.log(`slovakia_city_part_councils=${result.slovakia.counts.city_part_councils}`);
+      console.log(`slovakia_city_part_mayors=${result.slovakia.counts.city_part_mayors}`);
+      console.log(`slovakia_vuc_assemblies=${result.slovakia.counts.vuc_assemblies}`);
+      console.log(`slovakia_vuc_chairs=${result.slovakia.counts.vuc_chairs}`);
+      console.log(`slovakia_ep_offices=${result.slovakia.counts.ep_offices}`);
+      console.log(`slovakia_explicit_predecessor_edges=${result.slovakia.counts.explicit_predecessor_edges}`);
+      console.log(`slovakia_research_dates=${result.slovakia.counts.research_dates}`);
+      console.log(`slovakia_geographies=${result.slovakia.counts.geographies}`);
     }
     if (result.northMacedonia) {
       console.log("lineage=country-package-north-macedonia");
