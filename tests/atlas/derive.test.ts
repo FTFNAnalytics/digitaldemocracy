@@ -454,6 +454,15 @@ describe("Albania derived projection", () => {
         .prepare("SELECT slug_path, COUNT(*) AS n FROM derived_jurisdiction GROUP BY slug_path HAVING n > 1")
         .all();
       expect(slugDupes).toEqual([]);
+      const officeSlugCount = read.prepare("SELECT COUNT(*) AS n FROM derived_office_slug").get();
+      const officeCount = read.prepare("SELECT COUNT(*) AS n FROM office").get();
+      expect(Number(officeSlugCount?.n)).toBe(Number(officeCount?.n));
+      const officeSlugDupes = read
+        .prepare(
+          "SELECT jurisdiction_key, slug, COUNT(*) AS n FROM derived_office_slug GROUP BY jurisdiction_key, slug HAVING n > 1",
+        )
+        .all();
+      expect(officeSlugDupes).toEqual([]);
       const aliasClash = read
         .prepare(
           `SELECT COUNT(*) AS n FROM derived_slug_alias a

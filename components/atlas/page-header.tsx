@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import type { HeaderFact } from "./types";
 
 export function PageHeader({
@@ -5,11 +6,13 @@ export function PageHeader({
   level,
   facts = [],
   nextElection,
+  summary,
 }: {
   name: string;
   level?: string | null;
   facts?: HeaderFact[];
   nextElection?: { label: string } | null;
+  summary?: ReactNode;
 }) {
   return (
     <header className="mb-8 border-b border-atlas-line pb-6">
@@ -31,6 +34,7 @@ export function PageHeader({
           ))}
         </dl>
       ) : null}
+      {summary ? <div className="mt-4 text-atlas-ink">{summary}</div> : null}
       {nextElection !== undefined ? (
         <p className="mt-4">
           {nextElection ? (

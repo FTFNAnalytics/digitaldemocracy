@@ -31,7 +31,7 @@ The observatory is being restructured as the **Election Atlas** at `/atlas`, wit
 | `npm test` | Adapter and semantic tests; fixtures are test-only |
 | `npm run import:data` | Import the Latin America zip (fails clearly if missing) |
 | `npm run import:countries` | Inventory and validate `data/countries/*` standalone packages |
-| `npm run migrate:atlas` | Apply `0001_atlas_attempt_log.sql` to `ATLAS_ATTEMPTS_SQLITE_PATH`, then `0002_atlas_master.sql` and later master files (including `0005_atlas_boundary.sql`) to `ATLAS_SQLITE_PATH` |
+| `npm run migrate:atlas` | Apply `0001_atlas_attempt_log.sql` to `ATLAS_ATTEMPTS_SQLITE_PATH`, then `0002_atlas_master.sql` and later master files (including `0005_atlas_boundary.sql` and `0006_atlas_office_slug.sql`) to `ATLAS_SQLITE_PATH` |
 | `npm run boundaries:fetch` | Download boundary sources in `data/boundaries/manifest.json` into gitignored `data/boundaries/incoming/` after checksum |
 | `npm run boundaries:match` | Propose a draft crosswalk (`--country`, `--lau-csv`). Does not approve rows or write shapes |
 | `npm run boundaries:build` | Emit TopoJSON and PMTiles for an approved crosswalk only |
