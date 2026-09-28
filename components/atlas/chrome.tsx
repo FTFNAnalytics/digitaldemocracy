@@ -54,6 +54,10 @@ export function AtlasFooter() {
             Search
           </Link>
           {" · "}
+          <Link href={atlasRoutes.downloads} className="font-semibold text-atlas-accent hover:underline">
+            Downloads
+          </Link>
+          {" · "}
           <Link href={atlasRoutes.releases} className="font-semibold text-atlas-accent hover:underline">
             Releases
           </Link>

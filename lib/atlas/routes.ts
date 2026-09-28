@@ -13,6 +13,7 @@ export const atlasRoutes = {
   explorer: `${ATLAS_BASE}/explorer`,
   releases: `${ATLAS_BASE}/releases`,
   search: `${ATLAS_BASE}/search`,
+  downloads: `${ATLAS_BASE}/downloads`,
   country: (countryId: string) => `${ATLAS_BASE}/countries/${encodeURIComponent(countryId)}`,
   office: (officeId: string) => `${ATLAS_BASE}/offices/${encodeURIComponent(officeId)}`,
   officeCsv: (officeId: string) => `${ATLAS_BASE}/offices/${encodeURIComponent(officeId)}.csv`,

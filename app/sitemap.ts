@@ -18,6 +18,11 @@ function loadChunks() {
       changeFrequency: "monthly" as const,
       priority: 0.5,
     },
+    {
+      url: `${SITE_URL}${atlasRoutes.downloads}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    },
     ...getCountries().map((country) => ({
       url: `${SITE_URL}${obsRoutes.country(country.id)}`,
       changeFrequency: "weekly" as const,
