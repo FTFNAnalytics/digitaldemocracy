@@ -28,6 +28,8 @@ async function main() {
   console.log(`search_seats=${stats.searchSeats}`);
   console.log(`search_cycles=${stats.searchCycles}`);
   console.log(`search_candidates=${stats.searchCandidates}`);
+  console.log(`persons=${stats.persons}`);
+  console.log(`person_aliases=${stats.personAliases}`);
   console.log(`search_engine=${SEARCH_ENGINE}`);
   console.log(`fts5=${sqliteFts5Enabled() ? 1 : 0}`);
   console.log(`downloads=${stats.downloads}`);

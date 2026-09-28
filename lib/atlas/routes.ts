@@ -22,6 +22,7 @@ export const atlasRoutes = {
   seat: (slugPath: string) => `${ATLAS_BASE}/${encodedSlugPath(slugPath)}`,
   candidateSearch: (label: string) =>
     `${ATLAS_BASE}/search?${new URLSearchParams({ mode: "candidate", q: label }).toString()}`,
+  person: (personSlug: string) => `${ATLAS_BASE}/people/${encodeURIComponent(personSlug)}`,
 } as const;
 
 /** /atlas/{country}/elections/{YYYY-MM-DD} or /{YYYY}, plus an optional place scope. */

@@ -8,6 +8,7 @@ import {
   OFFICE_SLUG_MIGRATION_DESCRIPTION,
   OFFICE_SLUG_SCHEMA_VERSION,
 } from "./derive/schema";
+import { PERSON_MIGRATION_DESCRIPTION, PERSON_SCHEMA_VERSION } from "./people/schema";
 import { SEARCH_MIGRATION_DESCRIPTION, SEARCH_SCHEMA_VERSION } from "./search/schema";
 import {
   ATLAS_ATTEMPT_LOG_FILENAME,
@@ -112,6 +113,7 @@ const FOLLOW_ON_DESCRIPTIONS: Record<number, string> = {
   [SEARCH_SCHEMA_VERSION]: SEARCH_MIGRATION_DESCRIPTION,
   [BOUNDARY_SCHEMA_VERSION]: BOUNDARY_SCHEMA_DESCRIPTION,
   [OFFICE_SLUG_SCHEMA_VERSION]: OFFICE_SLUG_MIGRATION_DESCRIPTION,
+  [PERSON_SCHEMA_VERSION]: PERSON_MIGRATION_DESCRIPTION,
 };
 
 /**
@@ -119,6 +121,7 @@ const FOLLOW_ON_DESCRIPTIONS: Record<number, string> = {
  * has schema_migration version 1. Each file must INSERT its filename version.
  * 0003 is derived projections. 0004 is the search index.
  * 0005 is the boundary crosswalk. 0006 is office slugs for seat aliases.
+ * 0007 is person and person_alias. 0006 is not the person migration.
  * Files are applied in filename order.
  */
 function applyFollowOnMigration(root: string, filePath: string, migration: AtlasMigration): "applied" | "skipped" {

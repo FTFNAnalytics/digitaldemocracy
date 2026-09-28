@@ -24,6 +24,8 @@ import {
   type OfficeSlugMeanings,
   type OfficeSlugRow,
 } from "../seat/slug";
+import { loadApprovedPeople, resolvePeopleDir } from "../people/load";
+import { ensurePersonSchema } from "../people/schema";
 import { ensureDerivedSchema, ensureOfficeSlugSchema } from "./schema";
 import { emptySlugMeanings, type PublishedSlugMeanings } from "./slug";
 
@@ -41,6 +43,8 @@ export type DeriveStats = {
   searchSeats: number;
   searchCycles: number;
   searchCandidates: number;
+  persons: number;
+  personAliases: number;
 };
 
 function text(value: unknown): string {
@@ -236,6 +240,7 @@ function insertDerived(
 /** Rebuild derived tables from the master. Does not write master rows. */
 export function deriveAtlas(db: DatabaseSync): Omit<DeriveStats, "schema" | "searchSchema"> {
   ensureOfficeSlugSchema(db);
+  ensurePersonSchema(db);
   db.exec("BEGIN IMMEDIATE;");
   try {
     const prior = loadPrior(db);
@@ -244,6 +249,7 @@ export function deriveAtlas(db: DatabaseSync): Omit<DeriveStats, "schema" | "sea
     deleteDerived(db);
     insertDerived(db, projected);
     const search = rebuildSearchIndexes(db);
+    const people = loadApprovedPeople(db, resolvePeopleDir());
     db.exec("COMMIT;");
     return {
       jurisdictions: projected.jurisdictions.length,
@@ -257,6 +263,8 @@ export function deriveAtlas(db: DatabaseSync): Omit<DeriveStats, "schema" | "sea
       searchSeats: search.searchSeats,
       searchCycles: search.searchCycles,
       searchCandidates: search.searchCandidates,
+      persons: people.persons,
+      personAliases: people.aliases,
     };
   } catch (error) {
     try {

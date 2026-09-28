@@ -1,5 +1,6 @@
 import { existsSync } from "node:fs";
 import type { DatabaseSync } from "node:sqlite";
+import { approvedAliasKeys, searchApprovedPersons } from "./people/search";
 import { resolveAtlasSqlitePath } from "./paths";
 import { atlasRoutes, cyclePublicPath } from "./routes";
 import {
@@ -51,6 +52,8 @@ const MODE_TABLE = {
   candidate: { table: "search_candidate", trigram: "search_candidate_trigram" },
 } as const;
 
+type IndexMode = Exclude<SearchMode, "person">;
+
 function cycleResultHref(row: Record<string, unknown>, countryId: string): string {
   const isoDate = text(row.iso_date);
   const slugPath = textOrNull(row.slug_path);
@@ -97,7 +100,7 @@ function trigramIds(db: DatabaseSync, table: string, grams: string[]): number[] 
   return rows.map((row) => Number(row.search_id));
 }
 
-function candidateIds(db: DatabaseSync, mode: SearchMode, queryTokens: string[]): number[] | null {
+function candidateIds(db: DatabaseSync, mode: IndexMode, queryTokens: string[]): number[] | null {
   const table = MODE_TABLE[mode].trigram;
   let selected: Set<number> | null = null;
   for (const token of queryTokens) {
@@ -113,7 +116,7 @@ function candidateIds(db: DatabaseSync, mode: SearchMode, queryTokens: string[])
   return selected == null ? null : [...selected];
 }
 
-function filterClause(mode: SearchMode): { sql: string; bind: (query: SearchQuery) => unknown[] } {
+function filterClause(mode: IndexMode): { sql: string; bind: (query: SearchQuery) => unknown[] } {
   const country = "(? IS NULL OR country_id = ?)";
   if (mode === "candidate") {
     return {
@@ -163,7 +166,7 @@ function filterClause(mode: SearchMode): { sql: string; bind: (query: SearchQuer
   };
 }
 
-function mapRow(mode: SearchMode, row: Record<string, unknown>): Doc {
+function mapRow(mode: IndexMode, row: Record<string, unknown>): Doc {
   if (mode === "seat") {
     const officeName = text(row.office_name);
     const geography = textOrNull(row.geography_name);
@@ -225,7 +228,7 @@ function mapRow(mode: SearchMode, row: Record<string, unknown>): Doc {
   };
 }
 
-const SELECT_LIST: Record<SearchMode, string> = {
+const SELECT_LIST: Record<IndexMode, string> = {
   seat: `search_id, id_namespace, office_id, office_name, office_type, geography_name, country_name,
          country_id, region_id, disambiguation, event_year, folded, token_count`,
   cycle: `search_id, cycle_key, label, country_id, country_name, region_id, iso_date, slug_path, disambiguation, event_year, folded, token_count`,
@@ -233,7 +236,7 @@ const SELECT_LIST: Record<SearchMode, string> = {
               event_year, folded, token_count`,
 };
 
-function loadDocs(db: DatabaseSync, mode: SearchMode, query: SearchQuery, ids: number[] | null): Doc[] {
+function loadDocs(db: DatabaseSync, mode: IndexMode, query: SearchQuery, ids: number[] | null): Doc[] {
   if (ids && ids.length === 0) return [];
   const filter = filterClause(mode);
   const table = MODE_TABLE[mode].table;
@@ -249,7 +252,7 @@ function loadDocs(db: DatabaseSync, mode: SearchMode, query: SearchQuery, ids: n
   return docs;
 }
 
-function loadTerms(db: DatabaseSync, mode: SearchMode, ids: number[]): Map<number, Map<string, number>> {
+function loadTerms(db: DatabaseSync, mode: IndexMode, ids: number[]): Map<number, Map<string, number>> {
   const terms = new Map<number, Map<string, number>>();
   for (const group of chunks(ids, 400)) {
     if (group.length === 0) continue;
@@ -269,7 +272,7 @@ function loadTerms(db: DatabaseSync, mode: SearchMode, ids: number[]): Map<numbe
   return terms;
 }
 
-function documentFrequency(db: DatabaseSync, mode: SearchMode, token: string): number {
+function documentFrequency(db: DatabaseSync, mode: IndexMode, token: string): number {
   const row = db
     .prepare(
       `SELECT COUNT(DISTINCT search_id) AS n FROM search_token
@@ -279,8 +282,38 @@ function documentFrequency(db: DatabaseSync, mode: SearchMode, token: string): n
   return Number(row?.n ?? 0);
 }
 
+const UNREVIEWED_LABEL = "unreviewed label";
+
+function searchPersonMode(db: DatabaseSync, query: SearchQuery): SearchHit[] {
+  const persons = searchApprovedPersons(db, query).map((hit) => ({
+    mode: "person" as const,
+    title: hit.title,
+    snippet: hit.snippet,
+    disambiguation: hit.disambiguation,
+    href: hit.href,
+    countryId: hit.countryId,
+    countryName: hit.countryName,
+    year: hit.year,
+    officeId: null,
+    joinKey: hit.personId,
+  }));
+  const approved = approvedAliasKeys(db);
+  const labelLimit = Math.min(200, Math.max(query.limit * 5, query.limit));
+  const labels = searchDatabase(db, { ...query, mode: "candidate", limit: labelLimit });
+  const unreviewed = labels
+    .filter((hit) => !approved.has(`${hit.countryId}\u0000${hit.title}`))
+    .map((hit) => ({
+      ...hit,
+      mode: "person" as const,
+      disambiguation: hit.disambiguation ? `${UNREVIEWED_LABEL} · ${hit.disambiguation}` : UNREVIEWED_LABEL,
+    }));
+  const limit = query.limit > 0 ? query.limit : SEARCH_DEFAULT_LIMIT;
+  return [...persons, ...unreviewed].slice(0, limit);
+}
+
 export function searchDatabase(db: DatabaseSync, query: SearchQuery): SearchHit[] {
-  const mode = query.mode;
+  if (query.mode === "person") return searchPersonMode(db, query);
+  const mode: IndexMode = query.mode;
   if (!tableExists(db, MODE_TABLE[mode].table)) return [];
   const foldedQuery = foldSearchText(query.q);
   const queryTokens = searchTokens(foldedQuery);

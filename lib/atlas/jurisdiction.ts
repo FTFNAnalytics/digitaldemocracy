@@ -22,6 +22,7 @@ const RESERVED_ATLAS_ROOTS = new Set([
   "countries",
   "downloads",
   "seat-alias",
+  "people",
   "_kit",
 ]);
 
