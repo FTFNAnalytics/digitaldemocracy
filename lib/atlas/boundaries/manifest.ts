@@ -3,6 +3,7 @@ import { createReadStream, createWriteStream, existsSync, mkdirSync } from "node
 import { rename, rm } from "node:fs/promises";
 import path from "node:path";
 import { Readable } from "node:stream";
+import type { ReadableStream as NodeReadableStream } from "node:stream/web";
 import { pipeline } from "node:stream/promises";
 import { BOUNDARY_SOURCES, type BoundarySource } from "./types";
 
@@ -131,7 +132,7 @@ export async function downloadManifestSource(source: ManifestSource, incomingDir
   if (!response.ok || !response.body) {
     throw new Error(`download failed for ${source.id}: HTTP ${response.status}`);
   }
-  await pipeline(Readable.fromWeb(response.body), createWriteStream(temporary));
+  await pipeline(Readable.fromWeb(response.body as NodeReadableStream), createWriteStream(temporary));
   const hashed = await hashFile(temporary);
   if (hashed.sha256 !== source.sha256 || hashed.bytes !== source.bytes) {
     await rm(temporary, { force: true });
