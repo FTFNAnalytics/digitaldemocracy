@@ -20,6 +20,7 @@
     "boundaries:match": "node --experimental-sqlite --no-warnings --import tsx scripts/boundaries/match.ts",
     "boundaries:build": "node --experimental-sqlite --no-warnings --import tsx scripts/boundaries/build.ts",
     "import:atlas": "node --experimental-sqlite --no-warnings --import tsx scripts/atlas/import.ts",
+    "derive:atlas": "node --experimental-sqlite --no-warnings --import tsx scripts/atlas/derive.ts",
     "validate:data": "node --import tsx scripts/validate/cli.ts",
     "validate:evidence": "node --import tsx scripts/validate/release-evidence.ts"
   },

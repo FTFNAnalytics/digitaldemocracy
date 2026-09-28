@@ -322,12 +322,16 @@ describe("boundary_crosswalk migration", () => {
       version: 1,
       description: "Atlas Phase 1 master draft",
     });
+    expect(db.prepare("SELECT version, description FROM schema_migration WHERE version = 3").get()).toMatchObject({
+      version: 3,
+      description: "Atlas derived projections",
+    });
     expect(db.prepare("SELECT version, description FROM schema_migration WHERE version = 5").get()).toMatchObject({
       version: 5,
       description: "Atlas boundary crosswalk",
     });
     expect(tableExists(db, "boundary_crosswalk")).toBe(true);
-    expect(tableExists(db, "derived_jurisdiction")).toBe(false);
+    expect(tableExists(db, "derived_jurisdiction")).toBe(true);
 
     const draft = albaniaProposal();
     expect(() => loadApprovedCrosswalk(db, draft)).toThrow(/not fully approved/);

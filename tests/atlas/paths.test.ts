@@ -12,6 +12,7 @@ import {
 } from "../../lib/atlas/paths";
 import {
   ATLAS_ATTEMPT_LOG_FILENAME,
+  ATLAS_DERIVED_FILENAME,
   ATLAS_MASTER_FILENAME,
   listAtlasMigrations,
   parseMigrationFilename,
@@ -86,6 +87,11 @@ describe("Atlas migrations", () => {
       name: "atlas_master",
       filename: ATLAS_MASTER_FILENAME,
     });
+    expect(parseMigrationFilename(ATLAS_DERIVED_FILENAME)).toEqual({
+      version: 3,
+      name: "atlas_derived",
+      filename: ATLAS_DERIVED_FILENAME,
+    });
     expect(parseMigrationFilename("README.md")).toBeNull();
   });
 
@@ -94,6 +100,7 @@ describe("Atlas migrations", () => {
     expect(migrations).toEqual([
       { version: 1, name: "atlas_attempt_log", filename: ATLAS_ATTEMPT_LOG_FILENAME },
       { version: 2, name: "atlas_master", filename: ATLAS_MASTER_FILENAME },
+      { version: 3, name: "atlas_derived", filename: ATLAS_DERIVED_FILENAME },
       { version: 5, name: "atlas_boundary", filename: "0005_atlas_boundary.sql" },
     ]);
   });
