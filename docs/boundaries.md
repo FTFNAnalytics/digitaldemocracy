@@ -6,16 +6,15 @@ This pipeline does not change `geography` rows. It does not add map UI (that is 
 
 ## Dependency on OV-01
 
-`0005_atlas_boundary.sql` stores `jurisdiction_key` and does not declare a foreign key. `derived_jurisdiction` is not on main yet (`0003` is reserved for OV-01, `0004` for OV-02).
+`0005_atlas_boundary.sql` stores `jurisdiction_key` and does not declare a foreign key to `derived_jurisdiction`. OV-01 is on main (`0003_atlas_derived.sql`). Search is `0004`. Office slugs are `0006`.
 
-Until that table exists:
+`npm run boundaries:match` reads `derived_jurisdiction` when the table is present (`jurisdiction_key`, `country_id`, `geography_id`, `parent_key`, `name`, `level_label`). Parent name is the parent row's `name`. A missing required column throws. The matcher does not guess a schema. Albania, when that table is absent, still falls back to the 61 current mayor rows in `docs/phase1/albania/data/office-register.jsonl`. That fallback leaves `jurisdiction_key` null and sets `binding_geography_id` to the mayor geography id. The loader and the builder refuse a null key, so the committed Albania file does not emit a shape.
 
-- Albania proposals are built from the 61 current mayor rows in `docs/phase1/albania/data/office-register.jsonl`.
-- `jurisdiction_key` stays null. `binding_geography_id` is the mayor geography id.
-- The loader and the builder refuse a row with a null key, so no shape is written from the committed Albania file.
-- `npm run boundaries:match` reads `derived_jurisdiction` when the table is present (`jurisdiction_key`, `country_id`, `geography_id`, `parent_key`, `name`, `level_label`). Parent name is the parent row's `name`. A missing required column throws. The matcher does not guess a schema.
+Albania master geographies are one row per office, and `parent_geography_id` stays null. Derive therefore does not dedupe a municipality. A 2026-09-28 rematch imported the phase 1 pack with `ATLAS_IMPORT_SCOPE=albania`, applied migrations through 0006, and ran `derive:atlas`. `loadPlacesFromDerived` then returned 868 `level_label = municipality` rows. Every parent is Albania (`parent_key` `country:albania`). Folded name + parent + level forms 434 pairs and 0 unique names. Each pair is one mayor geography and one municipal-council geography: 61 current pairs and 373 historical bashki/komuna pairs. `boundaries:match` against `tests/fixtures/boundaries/lau-albania-2023.csv` reported `0/868`. Every unmatched reason is `ambiguous jurisdiction: more than one row shares folded name, parent, and level`, including Fushë-Arrëz and Vau-Dejës. No LAU code was copied onto either geography.
 
-Mayor and council offices for the same municipality have different `geography_id` values. The register fallback uses mayor rows only. After OV-01, two derived rows that share a folded name, parent, and level stay unmatched. Re-run match before asking for approval. Do not join LAU codes by name alone onto both geographies.
+The matcher was not changed. A parent supplied on only one side stays unmatched, and two supplied parents must still fold-equal. The LAU fixture has no parent column, so `readLauAttributeCsv` sets `parent_name` null. A unique derived place whose parent is Albania would also stay unmatched on that one-sided rule. Albania never reached that gate, because no municipality name is unique. Discretion to approve after a clean rematch does not cover this file.
+
+The committed `schemas/atlas/boundaries/albania.json` stays that register-fallback draft. Replacing it with the derived proposal would drop the 61 LAU codes and would still not authorise a shape. Do not pick the mayor row, or any other row, in order to force a name join across the duplicate geographies.
 
 Research `territorial_unit_id` values such as `AL-13` are not INSTAT or LAU codes. They are stored as `binding_territorial_unit_id` and are not used as `code_supplied`.
 
@@ -69,10 +68,10 @@ Bbox and centroid are computed from the source GeoJSON (mean of the largest exte
 
 `schemas/atlas/boundaries/albania.json` is a draft, in the same acceptance style as tier files: nothing in it authorises a shape.
 
-- 61 current municipalities, one row each, bound to the mayor `geography_id`.
+- 61 current municipalities, one row each, bound to the mayor `geography_id` from the register fallback.
 - 59 `name_parent_exact` (folded name, and both parent names empty).
 - 2 `name_parent_fuzzy`: Fushë-Arrëz ↔ LAU `Fushë Arrës` (`AL151`, distance 1); Vau-Dejës ↔ LAU `Vau I Dejës` (`AL155`, distance 2).
 - Dimal matches the LAU name Dimal. The territorial-unit ids on the rows are research ids, not LAU codes.
-- `jurisdiction_key` is null on every row.
+- `jurisdiction_key` is null on every row. The derived rematch above did not fill those keys.
 
-CI round-trips this file against `tests/fixtures/boundaries/lau-albania-2023.csv` (the 61 Albania rows of the attribute table, not the raw Europe download). A two-polygon GeoJSON fixture checks TopoJSON parsing, feature count, and the PMTiles archive without a live GIS download.
+CI round-trips this file against `tests/fixtures/boundaries/lau-albania-2023.csv` when `derived_jurisdiction` is absent (the 61 Albania rows of the attribute table, not the raw Europe download). The same `--check` against the derived Albania database fails, because the proposal is 0/868. A two-polygon GeoJSON fixture checks TopoJSON parsing, feature count, and the PMTiles archive without a live GIS download.

@@ -21,6 +21,7 @@ import {
 } from "../../lib/atlas/boundaries/geometry";
 import { loadApprovedCrosswalk } from "../../lib/atlas/boundaries/load";
 import { assertNotGadm, hashBuffer, parseManifest } from "../../lib/atlas/boundaries/manifest";
+import { importAlbania } from "../../lib/atlas/albania/import";
 import { loadAlbaniaMunicipalityPlaces, matchPlaces, readLauAttributeCsv } from "../../lib/atlas/boundaries/match";
 import { loadPlacesFromDerived } from "../../lib/atlas/boundaries/places";
 import type { BoundaryName, CrosswalkFile, CrosswalkRow, JurisdictionPlace } from "../../lib/atlas/boundaries/types";
@@ -131,6 +132,114 @@ describe("Albania boundary crosswalk", () => {
     expect(result.status, result.stderr).toBe(0);
     expect(result.stdout).toContain("match rate 61/61");
     expect(result.stdout).toContain("check ok");
+  });
+
+  it("leaves the committed draft unapproved when derived municipalities are mayor/council pairs", () => {
+    const dir = tempDir();
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    const previousFixtures = process.env.OBSERVATORY_FIXTURES;
+    delete process.env.OBSERVATORY_FIXTURES;
+    try {
+      importAlbania({
+        root: repoRoot,
+        sqlitePath,
+        attemptsPath: path.join(dir, "atlas-attempts.sqlite"),
+        operator: "albania-boundary-rematch",
+      });
+    } finally {
+      if (previousFixtures === undefined) delete process.env.OBSERVATORY_FIXTURES;
+      else process.env.OBSERVATORY_FIXTURES = previousFixtures;
+    }
+    const db = new DatabaseSync(sqlitePath, { readOnly: true });
+    let places: JurisdictionPlace[] = [];
+    try {
+      expect(db.prepare("SELECT version FROM schema_migration WHERE version >= 5").all()).toEqual(
+        expect.arrayContaining([{ version: 5 }, { version: 6 }]),
+      );
+      places = loadPlacesFromDerived(db, "albania", "municipality");
+      const offices = db
+        .prepare(
+          `SELECT j.name AS name, o.office_type AS office_type, o.office_status AS office_status
+           FROM derived_jurisdiction j
+           JOIN office o ON o.country_id = j.country_id AND o.geography_id = j.geography_id
+           WHERE j.country_id = 'albania' AND j.level_label = 'municipality'`,
+        )
+        .all() as { name: string; office_type: string; office_status: string }[];
+      const byName = new Map<string, string[]>();
+      for (const office of offices) {
+        const list = byName.get(office.name) ?? [];
+        list.push(`${office.office_type}:${office.office_status}`);
+        byName.set(office.name, list);
+      }
+      let currentPairs = 0;
+      let historicalPairs = 0;
+      for (const pair of byName.values()) {
+        const signature = [...pair].sort().join(",");
+        if (signature === "mayor:current,municipal_council:current") currentPairs += 1;
+        else if (signature === "mayor:historical,municipal_council:historical") historicalPairs += 1;
+        else throw new Error(`unexpected municipality pair ${signature}`);
+      }
+      expect(currentPairs).toBe(61);
+      expect(historicalPairs).toBe(373);
+      expect(byName.size).toBe(434);
+    } finally {
+      db.close();
+    }
+
+    expect(places).toHaveLength(868);
+    expect(places.every((place) => place.parent_name === "Albania" && place.parent_key === "country:albania")).toBe(true);
+    expect(places.every((place) => place.jurisdiction_key && place.jurisdiction_key.length > 0)).toBe(true);
+    const csv = readFileSync(path.join(repoRoot, "tests/fixtures/boundaries/lau-albania-2023.csv"), "utf8");
+    const derived = matchPlaces({
+      countryId: "albania",
+      places,
+      features: readLauAttributeCsv(csv).filter((feature) => feature.country_code === "AL"),
+      sourceManifestId: "gisco-lau-2023-4326-csv",
+      boundarySource: "gisco_lau",
+      boundaryVersion: "2023",
+    });
+    expect(derived.rows).toEqual([]);
+    expect(derived.unmatched).toHaveLength(868);
+    expect(derived.review_status).toBe("draft_for_human_review");
+    expect(
+      derived.unmatched.every((row) => row.reason === "ambiguous jurisdiction: more than one row shares folded name, parent, and level"),
+    ).toBe(true);
+    for (const name of ["Fushë-Arrëz", "Vau-Dejës"]) {
+      expect(derived.unmatched.filter((row) => row.name === name)).toHaveLength(2);
+    }
+    const draftNames = new Set(albaniaProposal().rows.map((row) => row.name));
+    expect(draftNames.size).toBe(61);
+    for (const name of draftNames) {
+      expect(places.filter((place) => place.name === name)).toHaveLength(2);
+    }
+
+    const committedPath = path.join(repoRoot, "schemas/atlas/boundaries/albania.json");
+    const committed = readCrosswalkFile(readFileSync(committedPath, "utf8"));
+    expect(committed.review_status).toBe("draft_for_human_review");
+    expect(committed.rows).toHaveLength(61);
+    expect(committed.rows.every((row) => row.jurisdiction_key === null && row.review_status === "draft_for_human_review")).toBe(true);
+    expect(approvedCrosswalkSha256(committed)).toBeNull();
+
+    const check = spawnSync(
+      process.execPath,
+      [
+        "--experimental-sqlite",
+        "--no-warnings",
+        "--import",
+        "tsx",
+        "scripts/boundaries/match.ts",
+        "--country",
+        "albania",
+        "--lau-csv",
+        "tests/fixtures/boundaries/lau-albania-2023.csv",
+        "--check",
+      ],
+      { cwd: repoRoot, encoding: "utf8", env: { ...process.env, ATLAS_SQLITE_PATH: sqlitePath } },
+    );
+    expect(check.status, check.stdout).not.toBe(0);
+    expect(check.stdout).toContain("match rate 0/868");
+    expect(check.stderr).toContain("does not match this proposal");
+    expect(readFileSync(committedPath, "utf8")).toBe(serializeCrosswalk(albaniaProposal()));
   });
 });
 

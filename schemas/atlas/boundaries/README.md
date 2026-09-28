@@ -10,4 +10,4 @@ The builder and the SQL loader ignore anything that is not fully approved and ke
 
 | File | Rows | Review |
 | --- | ---: | --- |
-| [`albania.json`](albania.json) | 61 | **Draft.** 59 exact folded names, 2 fuzzy spellings (`AL151` Fushë-Arrëz, `AL155` Vau-Dejës). `jurisdiction_key` is null until OV-01. Not a shape authorisation. |
+| [`albania.json`](albania.json) | 61 | **Draft.** Register-fallback proposal: 59 exact folded names, 2 fuzzy spellings (`AL151` Fushë-Arrëz, `AL155` Vau-Dejës). `jurisdiction_key` stays null. A 2026-09-28 rematch against live `derived_jurisdiction` was 0/868 because every municipality name is a mayor/council pair under Albania. Not a shape authorisation. |
