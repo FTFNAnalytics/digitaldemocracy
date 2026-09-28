@@ -17,6 +17,7 @@ import { REGIONAL_CALENDAR_LABEL as ICELAND_REGIONAL_CALENDAR_LABEL } from "./ic
 import { REGIONAL_CALENDAR_LABEL as MONTENEGRO_REGIONAL_CALENDAR_LABEL } from "./montenegro/identity";
 import { REGIONAL_CALENDAR_LABEL as SERBIA_REGIONAL_CALENDAR_LABEL } from "./serbia/identity";
 import { REGIONAL_CALENDAR_LABEL as SLOVAKIA_REGIONAL_CALENDAR_LABEL } from "./slovakia/identity";
+import { REGIONAL_CALENDAR_LABEL as SLOVENIA_REGIONAL_CALENDAR_LABEL } from "./slovenia/identity";
 import { REGIONAL_CALENDAR_LABEL as NORTH_MACEDONIA_REGIONAL_CALENDAR_LABEL } from "./north-macedonia/identity";
 import { REGIONAL_CALENDAR_LABEL as BOSNIA_REGIONAL_CALENDAR_LABEL } from "./bosnia-and-herzegovina/identity";
 import { REGIONAL_CALENDAR_LABEL as ALBANIA_REGIONAL_CALENDAR_LABEL } from "./albania/identity";
@@ -770,6 +771,14 @@ export function listAtlasRegionalCalendar(
       offices,
       count: offices.length,
       label: SLOVAKIA_REGIONAL_CALENDAR_LABEL,
+      denominatorKnown: false,
+    };
+  }
+  if (countryId === "slovenia") {
+    return {
+      offices,
+      count: offices.length,
+      label: SLOVENIA_REGIONAL_CALENDAR_LABEL,
       denominatorKnown: false,
     };
   }

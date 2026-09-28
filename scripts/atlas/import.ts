@@ -21,6 +21,7 @@
  * Montenegro is not part of `all`; use `ATLAS_IMPORT_SCOPE=montenegro`.
  * Serbia is not part of `all`; use `ATLAS_IMPORT_SCOPE=serbia`.
  * Slovakia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovakia`.
+ * Slovenia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovenia`.
  * North Macedonia is not part of `all`; use `ATLAS_IMPORT_SCOPE=north_macedonia`.
  * Bosnia and Herzegovina is not part of `all`; use `ATLAS_IMPORT_SCOPE=bosnia`.
  * Draft residual-heavy packs are skipped.
@@ -1026,6 +1027,44 @@ function main() {
       console.log(`slovakia_explicit_predecessor_edges=${result.slovakia.counts.explicit_predecessor_edges}`);
       console.log(`slovakia_research_dates=${result.slovakia.counts.research_dates}`);
       console.log(`slovakia_geographies=${result.slovakia.counts.geographies}`);
+    }
+    if (result.slovenia) {
+      console.log("lineage=country-package-slovenia");
+      console.log(`slovenia_attempt_id=${result.slovenia.attemptId}`);
+      console.log(`slovenia_release_id=${result.slovenia.releaseId}`);
+      console.log(`slovenia_fingerprint_sha256=${result.slovenia.fingerprint}`);
+      console.log(`slovenia_reused_release=${result.slovenia.reusedRelease ? "yes" : "no"}`);
+      console.log(`slovenia_offices=${result.slovenia.counts.offices}`);
+      console.log(`slovenia_current=${result.slovenia.counts.current_offices}`);
+      console.log(`slovenia_historical=${result.slovenia.counts.historical_offices}`);
+      console.log(`slovenia_draft_tier_municipal=${result.slovenia.counts.draft_tier_municipal}`);
+      console.log(`slovenia_draft_tier_regional=${result.slovenia.counts.draft_tier_regional}`);
+      console.log(`slovenia_draft_tier_national=${result.slovenia.counts.draft_tier_national}`);
+      console.log(`slovenia_draft_tier_other=${result.slovenia.counts.draft_tier_other}`);
+      console.log(`slovenia_schema_national=${result.slovenia.counts.schema_national}`);
+      console.log(`slovenia_schema_regional=${result.slovenia.counts.schema_regional}`);
+      console.log(`slovenia_schema_municipal=${result.slovenia.counts.schema_municipal}`);
+      console.log(`slovenia_schema_other=${result.slovenia.counts.schema_other}`);
+      console.log(`slovenia_selected_histories=${result.slovenia.counts.selected_histories}`);
+      console.log(`slovenia_prospective_events=${result.slovenia.counts.prospective_events}`);
+      console.log(`slovenia_result_rows=${result.slovenia.counts.result_rows}`);
+      console.log(`slovenia_event_rows=${result.slovenia.counts.total_events}`);
+      console.log(`slovenia_sources=${result.slovenia.counts.sources}`);
+      console.log(`slovenia_unresolved=${result.slovenia.counts.unresolved_evidence}`);
+      console.log(`slovenia_open_holds=${result.slovenia.counts.named_open_holds}`);
+      console.log(`slovenia_approved=${result.slovenia.counts.approved_classifications}`);
+      console.log(`slovenia_needs_review=${result.slovenia.counts.needs_review_classifications}`);
+      console.log(`slovenia_direct_executive_offices=${result.slovenia.counts.direct_executive_offices}`);
+      console.log(`slovenia_councils_chambers_delegation=${result.slovenia.counts.councils_chambers_delegation}`);
+      console.log(`slovenia_municipal_councils=${result.slovenia.counts.municipal_councils}`);
+      console.log(`slovenia_municipal_mayors=${result.slovenia.counts.municipal_mayors}`);
+      console.log(`slovenia_national_assembly_offices=${result.slovenia.counts.national_assembly_offices}`);
+      console.log(`slovenia_national_council_offices=${result.slovenia.counts.national_council_offices}`);
+      console.log(`slovenia_president_offices=${result.slovenia.counts.president_offices}`);
+      console.log(`slovenia_ep_offices=${result.slovenia.counts.ep_offices}`);
+      console.log(`slovenia_explicit_predecessor_edges=${result.slovenia.counts.explicit_predecessor_edges}`);
+      console.log(`slovenia_research_dates=${result.slovenia.counts.research_dates}`);
+      console.log(`slovenia_geographies=${result.slovenia.counts.geographies}`);
     }
     if (result.northMacedonia) {
       console.log("lineage=country-package-north-macedonia");
