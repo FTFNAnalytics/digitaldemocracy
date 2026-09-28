@@ -1,0 +1,28 @@
+# Moldova identity and event rules
+
+1. Country scope is the Republic of Moldova. No parallel PMR/Transnistrian institution is inserted into a Moldova office row or a second country. Scope/control questions are research holds, not diplomatic conclusions.
+2. The unit of office identity is an elected institution, not each councillor, constituency, party or incumbent. Parliament, Gagauzia’s Assembly and all municipal/raion councils each get one body row. Council and direct mayor are separate institutions.
+3. Current municipal identities are joined from the CEC 898-unit source roster to official CUATM code/name/context, then updated only for the two source-identified 2025 amalgamations. Homonyms require district and status, not name alone.
+4. `MD-MUN-<CUATM>-C/M` is a research key, not a production ID or a claim that CUATM codes never change. `-PRE2025` identifies seven source-identified pre-amalgamation territories. Five retired units receive historical rows only; Leova and Călinești also have current expanded rows. No predecessor/successor fields are populated.
+5. Law 145/2025’s territorial effective date is 2025-06-28. It is not substituted for an untranscribed mayor/council mandate end. The new local election is 2025-11-16. No guessed merger graph is supplied.
+6. Hîncești village in Fălești (4318) is not Hîncești raion or its municipality. Costești town in Rîșcani is not every locality called Costești. Source diacritics, CUATM codes, rural/town qualifiers and district context resolve the rows.
+7. Ghindești/Mărculești town-prefixed and rural entries remain separate. Cornești’s undifferentiated 2015 24-person list stays unassigned to either town/village council; source members remain preserved for review.
+8. A same-territory town/commune status label (including Stăuceni) does not create a twin office. Proposed amalgamation clusters and prospective 2027 arrangements do not remove current rows.
+9. Chișinău and Bălți city councils/mayors coexist with evidenced elected subordinate municipalities. Administrative sectors are not invented elected assemblies. Gagauzia’s electoral administrative districts are not raion councils.
+10. The popular presidential office has one current identity. Sourced direct-election eras are 1991/1996 and since 2016-03-04. Parliamentary selection introduced by the 2000 amendment is an excluded popular-vote era; there are no popular presidential contests between those gates. Pre-independence Soviet/Bessarabian/kingdom offices are not included.
+11. First rounds, runoffs, repeats, partial and replacement polls have distinct events when the source distinguishes them. A later annulment or reversal does not overwrite the reported ballot vector or imply the leader acquired a valid mandate.
+12. The 2019 national-list PR ballot (50 seats) and 51 SMD components belong to one Parliament. Their shares use different denominators. They do not create 51 extra offices or a synthetic combined national party vote total.
+13. Gagauzia assembly constituencies also remain event components under one autonomous Assembly. The 2016 source rollup includes a 2018 by-election; it is not relabelled as the initial 2016 result.
+14. Dated official returns, primary legal confirmations, official elected-person/member rosters, reported secondary tables and current-composition snapshots retain different evidence statuses. A source page’s current retrieval date is not the ballot date.
+15. The 2023-cycle mayor roster has source_as_of 2024-05-19. Its unknown local rounds/dates remain null. A person listed as elected gives elected_flag=true; it does not create votes, shares, a one-seat mayor tally or inferred loser zeros.
+16. Councillor names in the 2015 CEC list are counted into explicit `derived_count_of_official_named_members` seat groups. Votes and shares stay null. The underlying member rows and aggregation source-row lists are retained.
+17. Original party labels/codes are contextual. No merger, common ideological family, rebranding or party successor is inferred. `CI`, `Candidați independenți` and `Alte formațiuni` can be pools, not registered parties.
+18. Result identities use source/event ordinals. Two Tomai candidates named TOPCIU DMITRI remain separate rows; matching names alone do not establish person identity.
+19. Only source-printed percentages enter share fields. Bar widths, calculated shares and seat percentages are not vote shares. In particular, July 2009 shares do not generate candidate vote counts. The 2023 Novosiolovca report’s total 100% is not copied into a missing candidate-share field.
+20. Missing/untranscribed/conflicting values are null, never zero. Explicit zero votes or seats remain zero. No national allocation is derived from the sum of incomplete municipal returns.
+21. The 2024 presidential runoff uses the court-certified vote pair; conflicting secondary totals live in the audit hold. Certified votes are not mixed with a different secondary vector.
+22. A current office exists independently of the next alert window. Exactly one unapproved draft institutional tier is attached to every current and historical row. All approval booleans remain false.
+23. The column map documents possible field correspondence only. No importer, database migration, release, service or UI action is part of the pack. applied_changes=0.
+24. Original-byte source hashes, normalized factual-extract hashes and the ZIP hash have different meanings. The inventory labels them; the validator proves local integrity and listed invariants, not historical completeness or authenticity.
+
+Source anchors: S5f7b08bc58, S4b7f15a719, S8195ddf135, S94a35b6340, S933381458b. See the inventory and record-specific locators for the full source trail.
