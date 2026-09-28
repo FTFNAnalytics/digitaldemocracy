@@ -11,14 +11,14 @@ On the VPS, in the deployed repository root (the directory that contains `packag
 ```bash
 git pull
 npm ci
-npm run build
+CONTENT_ALLOW_PLACEHOLDERS=1 npm run build
 sudo systemctl restart <unit>
 npm run smoke -- https://center4digitaldemocracy.com
 ```
 
 `<unit>` is the systemd unit whose process is `node .next/standalone/server.js`. It is not named in this repository; find it with the commands in the next section before restarting.
 
-`npm run build` is `next build && node scripts/prepare-standalone.mjs`. Restart only after that command exits 0. Restarting between the two halves serves HTML from the new build against a static tree that was not copied yet, which is the hash-mismatch failure in checklist step b.
+`npm run build` runs `scripts/check-content-placeholders.mjs`, then `next build`, then `scripts/prepare-standalone.mjs`. The placeholder check exits non-zero when `app/`, `components/`, or `lib/` still contain a visible `[CONFIRM: …]` fact, unless `CONTENT_ALLOW_PLACEHOLDERS=1`. Those placeholders are the public copy until the fact is supplied. A production build that should keep them on the page must export that variable. CI sets it. Restart only after `npm run build` exits 0. Restarting between `next build` and the copy step serves HTML from the new build against a static tree that was not copied yet, which is the hash-mismatch failure in checklist step b.
 
 `npm run smoke` fetches the homepage, then every `/_next/static/...` `href` and `src` it references, prints a table of status and body bytes, and exits non-zero if the homepage or any of those assets is not HTTP 200, or if the page references no stylesheet.
 

@@ -5,6 +5,7 @@ import type {
   ElectionEvent,
   OfficeRecord,
 } from "@/schemas/v1/normalized";
+import { org } from "@/lib/content";
 import { formatResearchDate } from "@/lib/observatory/dates";
 import { eventKindLabel } from "@/lib/observatory/format";
 import { obsRoutes } from "@/lib/observatory/routes";
@@ -80,36 +81,50 @@ function coveragePhrase(status: CoverageStatus): string {
   return status.replaceAll("_", " ");
 }
 
-/**
- * Marketing homepage hashes are not distinct crawlable URLs. Branded OG
- * still lives under `public/og/` so the visual system is ready if those
- * sections become standalone routes.
- */
-export const marketingHashSections = [
-  { hash: "#home", title: "Home", image: "home" },
-  { hash: "#about", title: "About", image: "about" },
-  { hash: "#research", title: "Research", image: "research" },
-  { hash: "#initiatives", title: "Initiatives", image: "initiatives" },
-  { hash: "#events", title: "Events", image: "events" },
-  { hash: "#connect", title: "Connect", image: "connect" },
-] as const;
-
 export const staticPageSeo = {
   home: {
     title: SITE_NAME,
-    description:
-      "Independent research and policy design at the intersection of digital platforms, data rights, civic AI, and election integrity.",
+    description: org.lede,
     path: "/",
     image: "home",
     absoluteTitle: true,
-    keywords: [
-      "digital democracy",
-      "tech policy",
-      "civic AI",
-      "election integrity",
-      "platform governance",
-      "data rights",
-    ],
+    keywords: ["election atlas", "Center for Digital Democracy", "subnational elections"],
+  },
+  about: {
+    title: `About · ${SITE_NAME}`,
+    description:
+      "The Center for Digital Democracy publishes the Election Atlas. Contact details that are not confirmed are marked on this page.",
+    path: "/about",
+    image: "about",
+    absoluteTitle: true,
+    keywords: ["Center for Digital Democracy", "Election Atlas"],
+  },
+  centerMethodology: {
+    title: `Methodology · ${SITE_NAME}`,
+    description:
+      "How the Election Atlas treats missing values, dates, evidence, holds, and corrections. A missing number is not zero.",
+    path: "/methodology",
+    image: "center-methodology",
+    absoluteTitle: true,
+    keywords: ["election atlas methodology", "missing values", "election evidence"],
+  },
+  data: {
+    title: `Data · ${SITE_NAME}`,
+    description:
+      "How to cite the Election Atlas, download a seat or election-day file, and call the read-only search API.",
+    path: "/data",
+    image: "data",
+    absoluteTitle: true,
+    keywords: ["election atlas data", "election atlas API", "election downloads"],
+  },
+  corrections: {
+    title: `Corrections · ${SITE_NAME}`,
+    description:
+      "How holds, withholds, and corrections work in the Election Atlas, and how to report a wrong record with a source.",
+    path: "/corrections",
+    image: "corrections",
+    absoluteTitle: true,
+    keywords: ["election atlas corrections", "research correction"],
   },
   observatory: {
     title: `${OBSERVATORY_NAME} · ${SITE_NAME}`,
@@ -243,6 +258,10 @@ export const staticPageSeo = {
 
 export const STATIC_SITEMAP_PATHS = [
   staticPageSeo.home.path,
+  staticPageSeo.about.path,
+  staticPageSeo.centerMethodology.path,
+  staticPageSeo.data.path,
+  staticPageSeo.corrections.path,
   staticPageSeo.observatory.path,
   staticPageSeo.atlas.path,
   staticPageSeo.atlasExplorer.path,
