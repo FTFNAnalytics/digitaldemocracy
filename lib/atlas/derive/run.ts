@@ -14,7 +14,14 @@ import {
   type SeatRow,
   type UnplacedRow,
 } from "./project";
-import { ensureDerivedSchema } from "./schema";
+import {
+  emptyOfficeSlugMeanings,
+  officeIdentity,
+  type OfficeSlugAlias,
+  type OfficeSlugMeanings,
+  type OfficeSlugRow,
+} from "../seat/slug";
+import { ensureDerivedSchema, ensureOfficeSlugSchema } from "./schema";
 import { emptySlugMeanings, type PublishedSlugMeanings } from "./slug";
 
 export type DeriveStats = {
@@ -22,6 +29,8 @@ export type DeriveStats = {
   jurisdictions: number;
   aliases: number;
   seats: number;
+  officeSlugs: number;
+  officeSlugAliases: number;
   cycles: number;
   unplaced: number;
   coverage: number;
@@ -43,19 +52,28 @@ function numOrNull(value: unknown): number | null {
   return Number.isFinite(n) ? n : null;
 }
 
-function loadPrior(db: DatabaseSync): PublishedSlugMeanings {
-  const prior = emptySlugMeanings();
-  if (!db.prepare("SELECT 1 AS ok FROM sqlite_master WHERE type = 'table' AND name = 'derived_jurisdiction'").get()) {
-    return prior;
+function loadPrior(db: DatabaseSync): { jurisdictions: PublishedSlugMeanings; offices: OfficeSlugMeanings } {
+  const jurisdictions = emptySlugMeanings();
+  const offices = emptyOfficeSlugMeanings();
+  if (db.prepare("SELECT 1 AS ok FROM sqlite_master WHERE type = 'table' AND name = 'derived_jurisdiction'").get()) {
+    for (const row of db.prepare("SELECT jurisdiction_key, slug_path FROM derived_jurisdiction").all()) {
+      jurisdictions.meaning.set(text(row.slug_path), text(row.jurisdiction_key));
+    }
+    for (const row of db.prepare("SELECT slug_path, jurisdiction_key, reason FROM derived_slug_alias").all()) {
+      jurisdictions.meaning.set(text(row.slug_path), text(row.jurisdiction_key));
+      jurisdictions.aliasReason.set(text(row.slug_path), text(row.reason));
+    }
   }
-  for (const row of db.prepare("SELECT jurisdiction_key, slug_path FROM derived_jurisdiction").all()) {
-    prior.meaning.set(text(row.slug_path), text(row.jurisdiction_key));
+  if (db.prepare("SELECT 1 AS ok FROM sqlite_master WHERE type = 'table' AND name = 'derived_office_slug'").get()) {
+    for (const row of db.prepare("SELECT id_namespace, office_id, slug_path FROM derived_office_slug").all()) {
+      offices.meaning.set(text(row.slug_path), officeIdentity(text(row.id_namespace), text(row.office_id)));
+    }
+    for (const row of db.prepare("SELECT slug_path, id_namespace, office_id, reason FROM derived_office_slug_alias").all()) {
+      offices.meaning.set(text(row.slug_path), officeIdentity(text(row.id_namespace), text(row.office_id)));
+      offices.aliasReason.set(text(row.slug_path), text(row.reason));
+    }
   }
-  for (const row of db.prepare("SELECT slug_path, jurisdiction_key, reason FROM derived_slug_alias").all()) {
-    prior.meaning.set(text(row.slug_path), text(row.jurisdiction_key));
-    prior.aliasReason.set(text(row.slug_path), text(row.reason));
-  }
-  return prior;
+  return { jurisdictions, offices };
 }
 
 function loadMaster(db: DatabaseSync): MasterSnapshot {
@@ -80,7 +98,7 @@ function loadMaster(db: DatabaseSync): MasterSnapshot {
     }));
   const offices: OfficeInput[] = db
     .prepare(
-      `SELECT o.id_namespace, o.office_id, o.country_id, o.geography_id, o.office_type,
+      `SELECT o.id_namespace, o.office_id, o.country_id, o.geography_id, o.name, o.office_type,
               o.next_date_id, o.next_date_resolution, t.tier
        FROM office o
        LEFT JOIN office_tier_classification t
@@ -93,6 +111,7 @@ function loadMaster(db: DatabaseSync): MasterSnapshot {
       officeId: text(row.office_id),
       countryId: text(row.country_id),
       geographyId: text(row.geography_id),
+      name: text(row.name),
       officeType: text(row.office_type),
       nextDateId: textOrNull(row.next_date_id),
       nextDateResolution: text(row.next_date_resolution),
@@ -173,6 +192,8 @@ function loadMaster(db: DatabaseSync): MasterSnapshot {
 
 function deleteDerived(db: DatabaseSync): void {
   db.exec(`
+    DELETE FROM derived_office_slug_alias;
+    DELETE FROM derived_office_slug;
     DELETE FROM derived_slug_alias;
     DELETE FROM derived_coverage;
     DELETE FROM derived_cycle_unplaced;
@@ -188,6 +209,8 @@ function insertDerived(
     jurisdictions: JurisdictionRow[];
     aliases: Array<{ slug_path: string; jurisdiction_key: string; reason: string }>;
     seats: SeatRow[];
+    officeSlugs: OfficeSlugRow[];
+    officeSlugAliases: OfficeSlugAlias[];
     cycles: CycleRow[];
     unplaced: UnplacedRow[];
     coverage: CoverageRow[];
@@ -196,6 +219,8 @@ function insertDerived(
   insertMany(db, "derived_jurisdiction", rows.jurisdictions);
   insertMany(db, "derived_slug_alias", rows.aliases);
   insertMany(db, "derived_seat_status", rows.seats);
+  insertMany(db, "derived_office_slug", rows.officeSlugs);
+  insertMany(db, "derived_office_slug_alias", rows.officeSlugAliases);
   insertMany(db, "derived_cycle", rows.cycles);
   insertMany(db, "derived_cycle_unplaced", rows.unplaced);
   insertMany(db, "derived_coverage", rows.coverage);
@@ -203,11 +228,12 @@ function insertDerived(
 
 /** Rebuild derived tables from the master. Does not write master rows. */
 export function deriveAtlas(db: DatabaseSync): Omit<DeriveStats, "schema"> {
+  ensureOfficeSlugSchema(db);
   db.exec("BEGIN IMMEDIATE;");
   try {
     const prior = loadPrior(db);
     const master = loadMaster(db);
-    const projected = projectDerived(master, prior);
+    const projected = projectDerived(master, prior.jurisdictions, prior.offices);
     deleteDerived(db);
     insertDerived(db, projected);
     db.exec("COMMIT;");
@@ -215,6 +241,8 @@ export function deriveAtlas(db: DatabaseSync): Omit<DeriveStats, "schema"> {
       jurisdictions: projected.jurisdictions.length,
       aliases: projected.aliases.length,
       seats: projected.seats.length,
+      officeSlugs: projected.officeSlugs.length,
+      officeSlugAliases: projected.officeSlugAliases.length,
       cycles: projected.cycles.length,
       unplaced: projected.unplaced.length,
       coverage: projected.coverage.length,

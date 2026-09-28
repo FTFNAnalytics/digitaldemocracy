@@ -1,3 +1,4 @@
+import { assignOfficeSlugs, type OfficeSlugAlias, type OfficeSlugMeanings, type OfficeSlugRow } from "../seat/slug";
 import { cycleKey, cycleLabel, lowestCommonAncestor, placeEvent } from "./cycle";
 import { classifyJurisdictionLevel } from "./level";
 import { deriveSeatStatus, pickLatestSelectedEvent, type ResultFacts, type SelectedEventFacts } from "./seat";
@@ -21,6 +22,7 @@ export type OfficeInput = {
   officeId: string;
   countryId: string;
   geographyId: string;
+  name: string;
   officeType: string;
   nextDateId: string | null;
   nextDateResolution: string;
@@ -138,6 +140,8 @@ export type DerivedProjection = {
   jurisdictions: JurisdictionRow[];
   aliases: Array<{ slug_path: string; jurisdiction_key: string; reason: string }>;
   seats: SeatRow[];
+  officeSlugs: OfficeSlugRow[];
+  officeSlugAliases: OfficeSlugAlias[];
   cycles: CycleRow[];
   unplaced: UnplacedRow[];
   coverage: CoverageRow[];
@@ -193,7 +197,11 @@ function sortedJson(values: Array<string | null>): string {
   return JSON.stringify(unique);
 }
 
-export function projectDerived(master: MasterSnapshot, prior: PublishedSlugMeanings): DerivedProjection {
+export function projectDerived(
+  master: MasterSnapshot,
+  prior: PublishedSlugMeanings,
+  officePrior: OfficeSlugMeanings,
+): DerivedProjection {
   const countryById = new Map(master.countries.map((country) => [country.countryId, country]));
   const geosByCountry = new Map<string, GeographyInput[]>();
   for (const geography of master.geographies) {
@@ -398,11 +406,31 @@ export function projectDerived(master: MasterSnapshot, prior: PublishedSlugMeani
   );
   const seats = deriveSeats(master.offices, eventsByOffice, resultsByEvent);
   const { cycles, unplaced } = deriveCycles(master.events, countryById, jurisdictionByGeo, pathByKey);
+  const slugPathByJurisdiction = new Map(jurisdictions.map((row) => [row.jurisdiction_key, row.slug_path]));
+  const officeSlugs = assignOfficeSlugs(
+    master.offices.map((office) => {
+      const jurisdictionKey = jurisdictionByGeo.get(`${office.countryId}\n${office.geographyId}`);
+      const jurisdictionSlugPath = jurisdictionKey ? slugPathByJurisdiction.get(jurisdictionKey) : undefined;
+      if (!jurisdictionKey || !jurisdictionSlugPath) {
+        throw new Error(`No jurisdiction slug for office ${office.idNamespace}/${office.officeId}`);
+      }
+      return {
+        idNamespace: office.idNamespace,
+        officeId: office.officeId,
+        name: office.name,
+        jurisdictionKey,
+        jurisdictionSlugPath,
+      };
+    }),
+    officePrior,
+  );
 
   return {
     jurisdictions: sortJurisdictions(jurisdictions),
     aliases: sortAliases(aliases),
     seats,
+    officeSlugs: officeSlugs.rows,
+    officeSlugAliases: officeSlugs.aliases,
     cycles,
     unplaced,
     coverage,

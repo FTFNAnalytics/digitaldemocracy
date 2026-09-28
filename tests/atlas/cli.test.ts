@@ -21,6 +21,8 @@ const MASTER_TABLES = [
   "derived_cycle",
   "derived_cycle_unplaced",
   "derived_jurisdiction",
+  "derived_office_slug",
+  "derived_office_slug_alias",
   "derived_seat_status",
   "derived_slug_alias",
   "election_event",
@@ -100,6 +102,7 @@ describe("atlas CLI stubs", () => {
     expect(first.stdout).toContain("0002_atlas_master");
     expect(first.stdout).toContain("Applied to master DB: 0003_atlas_derived");
     expect(first.stdout).toContain("Applied to master DB: 0005_atlas_boundary");
+    expect(first.stdout).toContain("Applied to master DB: 0006_atlas_office_slug");
     expect(first.stdout).not.toContain("import:atlas remains blocked");
 
     expect(tableNames(attemptsPath)).toEqual(["ingest_attempt", "schema_migration"]);
@@ -124,6 +127,7 @@ describe("atlas CLI stubs", () => {
         { version: 1, description: "Atlas Phase 1 master draft" },
         { version: 3, description: "Atlas derived projections" },
         { version: 5, description: "Atlas boundary crosswalk" },
+        { version: 6, description: "Atlas office slugs" },
       ]);
       expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 0 });
       expect(master.prepare("SELECT COUNT(*) AS n FROM country").get()).toMatchObject({ n: 0 });
@@ -141,6 +145,7 @@ describe("atlas CLI stubs", () => {
     expect(second.stdout).toContain("Already applied to master DB: 0002_atlas_master");
     expect(second.stdout).toContain("Already applied to master DB: 0003_atlas_derived");
     expect(second.stdout).toContain("Already applied to master DB: 0005_atlas_boundary");
+    expect(second.stdout).toContain("Already applied to master DB: 0006_atlas_office_slug");
   });
 
   it("migrate:atlas refuses an unexpected existing schema", () => {

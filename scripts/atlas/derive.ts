@@ -16,6 +16,8 @@ function main() {
   console.log(`jurisdictions=${stats.jurisdictions}`);
   console.log(`slug_aliases=${stats.aliases}`);
   console.log(`seat_status=${stats.seats}`);
+  console.log(`office_slugs=${stats.officeSlugs}`);
+  console.log(`office_slug_aliases=${stats.officeSlugAliases}`);
   console.log(`cycles=${stats.cycles}`);
   console.log(`unplaced=${stats.unplaced}`);
   console.log(`coverage=${stats.coverage}`);
