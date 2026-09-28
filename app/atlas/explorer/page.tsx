@@ -17,6 +17,8 @@ import {
 import { atlasRoutes } from "@/lib/atlas/routes";
 import { pageMeta, staticPageSeo } from "@/lib/seo";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = pageMeta(staticPageSeo.atlasExplorer);
 
 type Props = {

@@ -1,17 +1,19 @@
 import Link from "next/link";
 import { Breadcrumb } from "./breadcrumb";
+import { ChildrenList, type PlaceFilter } from "./children-list";
 import { ChildrenPanel } from "./children-panel";
 import { EmptyState } from "./empty-state";
 import { NOT_SUPPLIED } from "./labels";
+import { MapSlot } from "./map-slot";
 import { PageHeader } from "./page-header";
 import { PlainTable } from "./plain-table";
 import type { Crumb, CycleChip, HeaderFact, JurisdictionChild, SeatRow } from "./types";
 
-export function SeatsAtLevel({ seats }: { seats: SeatRow[] }) {
+export function SeatsAtLevel({ seats, emptyTitle }: { seats: SeatRow[]; emptyTitle?: string }) {
   if (seats.length === 0) {
     return (
-      <EmptyState variant="not_supplied" title="No seats at this level">
-        <p>No seats are listed here.</p>
+      <EmptyState variant="not_supplied" title={emptyTitle ?? "No seats at this level"}>
+        <p>{emptyTitle ? "No seats are listed for this date." : "No seats are listed here."}</p>
       </EmptyState>
     );
   }
@@ -71,6 +73,9 @@ export function JurisdictionTemplate({
   places,
   seats,
   cycles,
+  placeFilter,
+  seatPagination,
+  seatsEmptyTitle,
 }: {
   breadcrumb: Crumb[];
   name: string;
@@ -80,6 +85,9 @@ export function JurisdictionTemplate({
   places: JurisdictionChild[];
   seats: SeatRow[];
   cycles: CycleChip[];
+  placeFilter?: PlaceFilter;
+  seatPagination?: React.ReactNode;
+  seatsEmptyTitle?: string;
 }) {
   return (
     <article>
@@ -89,16 +97,11 @@ export function JurisdictionTemplate({
         <h2 id="atlas-children-heading" className="mb-3 font-atlas-heading text-2xl text-atlas-ink">
           Places
         </h2>
-        {places.length === 0 ? (
+        {placeFilter ? (
+          <ChildrenList places={places} filter={placeFilter} />
+        ) : places.length === 0 ? (
           <div className="grid gap-4 lg:grid-cols-2">
-            <div
-              id="atlas-map-slot"
-              data-atlas-map-slot="true"
-              className="min-h-48 rounded-2xl border border-dashed border-atlas-line bg-atlas-map p-4"
-            >
-              <p className="text-sm font-semibold text-atlas-ink">Map pending boundary review</p>
-              <div id="atlas-map-mount" data-atlas-map-mount="" />
-            </div>
+            <MapSlot />
             <EmptyState variant="not_supplied" title="No places listed">
               <p>No child places are listed here.</p>
             </EmptyState>
@@ -111,7 +114,8 @@ export function JurisdictionTemplate({
         <h2 id="atlas-seats-heading" className="mb-3 font-atlas-heading text-2xl text-atlas-ink">
           Seats
         </h2>
-        <SeatsAtLevel seats={seats} />
+        {seatPagination}
+        <SeatsAtLevel seats={seats} emptyTitle={seatsEmptyTitle} />
       </section>
       <section aria-labelledby="atlas-cycles-heading">
         <h2 id="atlas-cycles-heading" className="mb-3 font-atlas-heading text-2xl text-atlas-ink">

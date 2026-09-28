@@ -11,6 +11,7 @@ function encodedSlugPath(slugPath: string): string {
 export const atlasRoutes = {
   home: ATLAS_BASE,
   explorer: `${ATLAS_BASE}/explorer`,
+  releases: `${ATLAS_BASE}/releases`,
   country: (countryId: string) => `${ATLAS_BASE}/countries/${encodeURIComponent(countryId)}`,
   office: (officeId: string) => `${ATLAS_BASE}/offices/${encodeURIComponent(officeId)}`,
   officeCsv: (officeId: string) => `${ATLAS_BASE}/offices/${encodeURIComponent(officeId)}.csv`,

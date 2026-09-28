@@ -48,6 +48,10 @@ export function AtlasFooter() {
             Explorer
           </Link>
           {" · "}
+          <Link href={atlasRoutes.releases} className="font-semibold text-atlas-accent hover:underline">
+            Releases
+          </Link>
+          {" · "}
           <Link href="/" className="font-semibold text-atlas-accent hover:underline">
             Center home
           </Link>

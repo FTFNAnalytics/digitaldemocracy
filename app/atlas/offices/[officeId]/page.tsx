@@ -7,6 +7,8 @@ import { loadAtlasCatalog, lookupAtlasOffice } from "@/lib/atlas/read";
 import { atlasRoutes } from "@/lib/atlas/routes";
 import { listOfficeCandidates, readSeatPage } from "@/lib/atlas/seat/read";
 
+export const dynamic = "force-dynamic";
+
 type Props = {
   params: Promise<{ officeId: string }>;
 };
