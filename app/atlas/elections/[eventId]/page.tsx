@@ -26,6 +26,8 @@ import {
 } from "@/lib/atlas/read";
 import { atlasRoutes } from "@/lib/atlas/routes";
 
+export const dynamic = "force-dynamic";
+
 type Props = {
   params: Promise<{ eventId: string }>;
 };

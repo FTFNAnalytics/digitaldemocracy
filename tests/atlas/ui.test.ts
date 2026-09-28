@@ -35,6 +35,9 @@ import { ResultsTable } from "../../components/atlas/results-table";
 import type { AtlasCoverageSnapshot } from "../../components/atlas/types";
 import AtlasIndexPage from "../../app/atlas/page";
 import AtlasCountryPage from "../../app/atlas/countries/[countryId]/page";
+import AtlasJurisdictionPage from "../../app/atlas/[country]/[[...path]]/page";
+import { getRedirectStatusCodeFromError, getURLFromRedirectError } from "next/dist/client/components/redirect";
+import { isRedirectError } from "next/dist/client/components/redirect-error";
 import AtlasOfficePage from "../../app/atlas/offices/[officeId]/page";
 import AtlasEventPage, { FoundEventPage } from "../../app/atlas/elections/[eventId]/page";
 import ReadingKitPage, { metadata as readingKitMetadata } from "../../app/atlas/reading-kit/page";
@@ -571,9 +574,23 @@ describe("Atlas reading surface", () => {
       });
 
       const indexHtml = markup(await AtlasIndexPage());
-      const countryHtml = markup(
+      let countryRedirect: unknown;
+      try {
         await AtlasCountryPage({
           params: Promise.resolve({ countryId: "albania" }),
+          searchParams: Promise.resolve({}),
+        });
+      } catch (error) {
+        countryRedirect = error;
+      }
+      if (!isRedirectError(countryRedirect)) {
+        throw new Error("expected the country alias to redirect");
+      }
+      expect(getURLFromRedirectError(countryRedirect)).toBe("/atlas/albania");
+      expect(getRedirectStatusCodeFromError(countryRedirect)).toBe(308);
+      const countryHtml = markup(
+        await AtlasJurisdictionPage({
+          params: Promise.resolve({ country: "albania" }),
           searchParams: Promise.resolve({}),
         }),
       );

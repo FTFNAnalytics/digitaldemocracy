@@ -13,6 +13,7 @@ import {
 import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
 import { rebuildDerivedInFile } from "./derive/run";
+import { revalidateAtlasDerivedTag } from "./publication";
 import { openAtlasDatabase } from "./sqlite";
 
 export function lockPathFor(masterPath: string): string {
@@ -136,4 +137,5 @@ export function publishStaging(masterPath: string): void {
   }
   renameSync(staging, masterPath);
   fsyncPath(path.dirname(masterPath), true);
+  void revalidateAtlasDerivedTag();
 }

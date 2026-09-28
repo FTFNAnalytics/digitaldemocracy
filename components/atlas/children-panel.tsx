@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { CoverageBar } from "./coverage";
+import { MapSlot } from "./map-slot";
 import type { JurisdictionChild } from "./types";
 
 export function ChildrenPanel({ places }: { places: JurisdictionChild[] }) {
@@ -22,56 +23,46 @@ export function ChildrenPanel({ places }: { places: JurisdictionChild[] }) {
   });
 
   return (
-    <div className="grid gap-4 lg:grid-cols-2">
-      <div
-        id="atlas-map-slot"
-        data-atlas-map-slot="true"
-        className="min-h-48 rounded-2xl border border-dashed border-atlas-line bg-atlas-map p-4"
-      >
-        <p className="text-sm font-semibold text-atlas-ink">Map pending boundary review</p>
-        <div id="atlas-map-mount" data-atlas-map-mount="" />
-      </div>
-      <div>
-        {showFilters ? (
-          <div className="mb-3 space-y-2">
-            <label className="block text-sm text-atlas-ink">
-              <span className="mb-1 block font-semibold">Filter places</span>
-              <input
-                type="search"
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                className="w-full rounded-xl border border-atlas-line bg-atlas-card px-3 py-2 text-atlas-ink"
-              />
-            </label>
-            <div className="flex flex-wrap gap-2" role="group" aria-label="Place types">
-              <TypeChip label="All" pressed={kind === "all"} onClick={() => setKind("all")} />
-              {kinds.map((value) => (
-                <TypeChip key={value} label={value} pressed={kind === value} onClick={() => setKind(value)} />
-              ))}
-            </div>
+    <MapSlot>
+      {showFilters ? (
+        <div className="mb-3 space-y-2">
+          <label className="block text-sm text-atlas-ink">
+            <span className="mb-1 block font-semibold">Filter places</span>
+            <input
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              className="w-full rounded-xl border border-atlas-line bg-atlas-card px-3 py-2 text-atlas-ink"
+            />
+          </label>
+          <div className="flex flex-wrap gap-2" role="group" aria-label="Place types">
+            <TypeChip label="All" pressed={kind === "all"} onClick={() => setKind("all")} />
+            {kinds.map((value) => (
+              <TypeChip key={value} label={value} pressed={kind === value} onClick={() => setKind(value)} />
+            ))}
           </div>
-        ) : null}
-        <ul aria-label="Places" className="space-y-2">
-          {visible.length === 0 ? (
-            <li className="text-sm text-atlas-ink-2">No places match this filter.</li>
-          ) : (
-            visible.map((place) => (
-              <li key={place.id} className="rounded-xl border border-atlas-line bg-atlas-card px-3 py-2">
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <Link href={place.href} className="font-semibold text-atlas-accent hover:underline">
-                    {place.name}
-                  </Link>
-                  <span className="rounded-full border border-atlas-line px-2 py-0.5 text-xs text-atlas-ink">{place.level}</span>
-                </div>
-                <div className="mt-2">
-                  <CoverageBar coverage={place.coverage} />
-                </div>
-              </li>
-            ))
-          )}
-        </ul>
-      </div>
-    </div>
+        </div>
+      ) : null}
+      <ul aria-label="Places" className="space-y-2">
+        {visible.length === 0 ? (
+          <li className="text-sm text-atlas-ink-2">No places match this filter.</li>
+        ) : (
+          visible.map((place) => (
+            <li key={place.id} className="rounded-xl border border-atlas-line bg-atlas-card px-3 py-2">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <Link href={place.href} className="font-semibold text-atlas-accent hover:underline">
+                  {place.name}
+                </Link>
+                <span className="rounded-full border border-atlas-line px-2 py-0.5 text-xs text-atlas-ink">{place.level}</span>
+              </div>
+              <div className="mt-2">
+                <CoverageBar coverage={place.coverage} />
+              </div>
+            </li>
+          ))
+        )}
+      </ul>
+    </MapSlot>
   );
 }
 

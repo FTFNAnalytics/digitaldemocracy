@@ -6,10 +6,12 @@
  */
 import { rebuildDerivedInFile } from "../../lib/atlas/derive/run";
 import { resolveAtlasSqlitePath } from "../../lib/atlas/paths";
+import { revalidateAtlasDerivedTag } from "../../lib/atlas/publication";
 
-function main() {
+async function main() {
   const sqlitePath = resolveAtlasSqlitePath();
   const stats = rebuildDerivedInFile(sqlitePath);
+  const revalidated = await revalidateAtlasDerivedTag();
   console.log("derive:atlas");
   console.log(`ATLAS_SQLITE_PATH=${sqlitePath}`);
   console.log(`schema=${stats.schema}`);
@@ -21,6 +23,7 @@ function main() {
   console.log(`cycles=${stats.cycles}`);
   console.log(`unplaced=${stats.unplaced}`);
   console.log(`coverage=${stats.coverage}`);
+  console.log(`publication_tag=${revalidated.tag} revalidate=${revalidated.status}`);
 }
 
-main();
+void main();
