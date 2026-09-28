@@ -6,7 +6,7 @@ import { CoverageBar } from "./coverage";
 import { MapSlot } from "./map-slot";
 import type { JurisdictionChild } from "./types";
 
-export function ChildrenPanel({ places }: { places: JurisdictionChild[] }) {
+export function ChildrenPanel({ places, map }: { places: JurisdictionChild[]; map?: React.ReactNode }) {
   const [query, setQuery] = useState("");
   const [kind, setKind] = useState("all");
   const showFilters = places.length > 12;
@@ -23,7 +23,7 @@ export function ChildrenPanel({ places }: { places: JurisdictionChild[] }) {
   });
 
   return (
-    <MapSlot>
+    <MapSlot map={map}>
       {showFilters ? (
         <div className="mb-3 space-y-2">
           <label className="block text-sm text-atlas-ink">

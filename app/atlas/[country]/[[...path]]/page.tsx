@@ -4,7 +4,10 @@ import { JsonLd } from "@/components/json-ld";
 import { DatabaseUnavailable } from "@/components/atlas/database-state";
 import { JurisdictionTemplate } from "@/components/atlas/jurisdiction-template";
 import { shareLabel } from "@/components/atlas/labels";
+import { DynamicJurisdictionMap } from "@/components/atlas/map/jurisdiction-map-dynamic";
 import type { CycleChip, JurisdictionChild, SeatRow } from "@/components/atlas/types";
+import type { MapPlace } from "@/lib/atlas/map/model";
+import { attributionForCountry, publishedChildrenTopojsonUrl } from "@/lib/atlas/map/publish";
 import {
   cycleListHref,
   filterPlaces,
@@ -68,6 +71,34 @@ function toChild(place: JurisdictionPlace): JurisdictionChild {
     level: jurisdictionLevelLabel(place.level),
     kind: place.level,
     coverage: placeCoverage(place),
+    seatsTracked: place.officeCount,
+    firstEventYear: place.firstEventYear,
+    lastEventYear: place.lastEventYear,
+    nextDateId: place.nextDateId,
+    nextYear: place.nextYear,
+    turnout: place.turnout,
+    margin: place.margin,
+    marginUnit: place.marginUnit,
+  };
+}
+
+function toMapPlace(place: JurisdictionPlace): MapPlace {
+  const child = toChild(place);
+  return {
+    id: child.id,
+    name: child.name,
+    href: child.href,
+    level: child.level,
+    levelKey: place.level,
+    seatsTracked: place.officeCount,
+    firstEventYear: place.firstEventYear,
+    lastEventYear: place.lastEventYear,
+    coverage: child.coverage,
+    nextDateId: place.nextDateId,
+    nextYear: place.nextYear,
+    turnout: place.turnout,
+    margin: place.margin,
+    marginUnit: place.marginUnit,
   };
 }
 
@@ -140,6 +171,8 @@ export default async function AtlasJurisdictionPage({ params, searchParams }: Pr
   const useServerFilter = view.children.length > 12 || q.length > 0 || kind.length > 0;
   const datedSeats = filterSeatsByDate(view.seats, date);
   const paged = paginate(datedSeats, query, "page", SEAT_PAGE_SIZE);
+  const topojsonUrl = publishedChildrenTopojsonUrl(view.jurisdiction.jurisdictionKey);
+  const mapPlaces = view.children.map(toMapPlace);
   const cycles: CycleChip[] = view.cycles.map((cycle) => ({
     id: cycle.id,
     year: cycle.year,
@@ -181,6 +214,17 @@ export default async function AtlasJurisdictionPage({ params, searchParams }: Pr
                 date: date || undefined,
               }
             : undefined
+        }
+        map={
+          topojsonUrl ? (
+            <DynamicJurisdictionMap
+              parentLevel={view.jurisdiction.levelLabel}
+              topojsonUrl={topojsonUrl}
+              attribution={attributionForCountry(view.jurisdiction.countryId)}
+              asOfYear={new Date().getUTCFullYear()}
+              places={mapPlaces}
+            />
+          ) : undefined
         }
         seats={paged.items.map(toSeat)}
         seatsEmptyTitle={date ? "No seats on this date" : undefined}

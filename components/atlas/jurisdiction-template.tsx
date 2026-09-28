@@ -76,6 +76,7 @@ export function JurisdictionTemplate({
   placeFilter,
   seatPagination,
   seatsEmptyTitle,
+  map,
 }: {
   breadcrumb: Crumb[];
   name: string;
@@ -88,6 +89,7 @@ export function JurisdictionTemplate({
   placeFilter?: PlaceFilter;
   seatPagination?: React.ReactNode;
   seatsEmptyTitle?: string;
+  map?: React.ReactNode;
 }) {
   return (
     <article>
@@ -98,16 +100,16 @@ export function JurisdictionTemplate({
           Places
         </h2>
         {placeFilter ? (
-          <ChildrenList places={places} filter={placeFilter} />
+          <ChildrenList places={places} filter={placeFilter} map={map} />
         ) : places.length === 0 ? (
           <div className="grid gap-4 lg:grid-cols-2">
-            <MapSlot />
+            <MapSlot map={map} />
             <EmptyState variant="not_supplied" title="No places listed">
               <p>No child places are listed here.</p>
             </EmptyState>
           </div>
         ) : (
-          <ChildrenPanel places={places} />
+          <ChildrenPanel places={places} map={map} />
         )}
       </section>
       <section className="mb-10" aria-labelledby="atlas-seats-heading">

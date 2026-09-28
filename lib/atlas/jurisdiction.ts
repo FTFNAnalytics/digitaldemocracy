@@ -5,6 +5,7 @@ import { isSingleSeatOfficeType, WITHHELD_EVIDENCE } from "./derive/seat";
 import type { AtlasCoverage, AtlasJurisdiction } from "./derive/read";
 import { resolveAtlasSqlitePath } from "./paths";
 import { RESERVED_SLUG_SEGMENTS } from "./derive/slug";
+import { loadPlaceMetrics } from "./map/child-facts";
 import { openAtlasDatabase, tableExists } from "./sqlite";
 
 export const SEAT_PAGE_SIZE = 50;
@@ -105,6 +106,14 @@ export type JurisdictionPlace = {
   eventsWithResults: number | null;
   notSuppliedNextDates: number | null;
   latestSnapshotLabel: string | null;
+  officeCount: number | null;
+  firstEventYear: number | null;
+  lastEventYear: number | null;
+  nextDateId: string | null;
+  nextYear: number | null;
+  margin: number | null;
+  marginUnit: string | null;
+  turnout: number | null;
 };
 
 export type JurisdictionSeat = {
@@ -427,9 +436,11 @@ function loadAncestors(
 }
 
 function loadChildren(db: DatabaseSync, parentKey: string): JurisdictionPlace[] {
+  const metrics = loadPlaceMetrics(db, parentKey);
   const rows = db
     .prepare(
       `SELECT j.jurisdiction_key, j.name, j.slug_path, j.level_label,
+              j.office_count, j.first_event_year, j.last_event_year,
               c.offices, c.offices_with_any_event, c.offices_with_results,
               c.events_total, c.events_with_results, c.not_supplied_next_dates, c.latest_snapshot_label
        FROM derived_jurisdiction j
@@ -438,19 +449,31 @@ function loadChildren(db: DatabaseSync, parentKey: string): JurisdictionPlace[] 
        ORDER BY j.name COLLATE NOCASE, j.slug_path`,
     )
     .all(parentKey);
-  return rows.map((row) => ({
-    id: text(row.jurisdiction_key),
-    name: text(row.name),
-    slugPath: text(row.slug_path),
-    level: text(row.level_label),
-    offices: numOrNull(row.offices),
-    officesWithAnyEvent: numOrNull(row.offices_with_any_event),
-    officesWithResults: numOrNull(row.offices_with_results),
-    eventsTotal: numOrNull(row.events_total),
-    eventsWithResults: numOrNull(row.events_with_results),
-    notSuppliedNextDates: numOrNull(row.not_supplied_next_dates),
-    latestSnapshotLabel: textOrNull(row.latest_snapshot_label),
-  }));
+  return rows.map((row) => {
+    const id = text(row.jurisdiction_key);
+    const metric = metrics.get(id);
+    return {
+      id,
+      name: text(row.name),
+      slugPath: text(row.slug_path),
+      level: text(row.level_label),
+      offices: numOrNull(row.offices),
+      officesWithAnyEvent: numOrNull(row.offices_with_any_event),
+      officesWithResults: numOrNull(row.offices_with_results),
+      eventsTotal: numOrNull(row.events_total),
+      eventsWithResults: numOrNull(row.events_with_results),
+      notSuppliedNextDates: numOrNull(row.not_supplied_next_dates),
+      latestSnapshotLabel: textOrNull(row.latest_snapshot_label),
+      officeCount: numOrNull(row.office_count),
+      firstEventYear: numOrNull(row.first_event_year),
+      lastEventYear: numOrNull(row.last_event_year),
+      nextDateId: metric?.nextDateId ?? null,
+      nextYear: metric?.nextYear ?? null,
+      margin: metric?.margin ?? null,
+      marginUnit: metric?.marginUnit ?? null,
+      turnout: metric?.turnout ?? null,
+    };
+  });
 }
 
 function geographyClause(geographyId: string | null): { sql: string; params: Array<string | null> } {

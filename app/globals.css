@@ -227,6 +227,10 @@ body {
   color-scheme: light;
   font-family: var(--font-public-sans), "Public Sans", ui-sans-serif, system-ui, sans-serif;
   font-variant-numeric: tabular-nums;
+  --atlas-coverage-1: color-mix(in oklab, var(--atlas-accent) 18%, var(--atlas-map-none));
+  --atlas-coverage-2: color-mix(in oklab, var(--atlas-accent) 40%, var(--atlas-map-none));
+  --atlas-coverage-3: color-mix(in oklab, var(--atlas-accent) 64%, var(--atlas-map-none));
+  --atlas-coverage-4: color-mix(in oklab, var(--atlas-accent) 88%, var(--atlas-map-none));
 }
 
 .atlas :is(h1, h2, h3) {
@@ -311,6 +315,66 @@ body {
   color: var(--atlas-ink);
 }
 
+.atlas-map-tooltip {
+  display: none;
+}
+
+.atlas-map-shape:hover .atlas-map-tooltip,
+.atlas-map-shape:focus .atlas-map-tooltip,
+.atlas-map-tooltip-live {
+  display: flex;
+  position: absolute;
+  z-index: 5;
+  width: max-content;
+  max-width: 16rem;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid var(--atlas-line);
+  border-radius: 0.75rem;
+  background: var(--atlas-card);
+  color: var(--atlas-ink);
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.atlas-map-tooltip-live {
+  left: 0.75rem;
+  top: 0.75rem;
+}
+
+.atlas-swatch-hatch {
+  background-color: var(--atlas-map-none);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--atlas-ink-2) 0 1px,
+    transparent 1px 6px
+  );
+}
+
+[data-atlas-maplibre="ready"] [data-atlas-map-svg] {
+  pointer-events: none;
+}
+
+[data-atlas-maplibre="ready"] #atlas-map-mount {
+  pointer-events: auto;
+}
+
+@media print {
+  [data-atlas-map-panel] {
+    display: block !important;
+  }
+
+  [data-atlas-maplibre="ready"] [data-atlas-map-svg] {
+    display: block !important;
+    pointer-events: none;
+  }
+
+  .maplibregl-map {
+    display: none !important;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .atlas {
     --atlas-paper: #141820;
@@ -328,6 +392,10 @@ body {
     --atlas-bar-2: #8e9bb0;
     --atlas-bar-3: #5c6574;
     --atlas-on-accent: #141820;
+    --atlas-coverage-1: color-mix(in oklab, var(--atlas-accent) 18%, var(--atlas-map-none));
+    --atlas-coverage-2: color-mix(in oklab, var(--atlas-accent) 40%, var(--atlas-map-none));
+    --atlas-coverage-3: color-mix(in oklab, var(--atlas-accent) 64%, var(--atlas-map-none));
+    --atlas-coverage-4: color-mix(in oklab, var(--atlas-accent) 88%, var(--atlas-map-none));
     color-scheme: dark;
   }
 }

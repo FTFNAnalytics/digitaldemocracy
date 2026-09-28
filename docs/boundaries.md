@@ -2,7 +2,7 @@
 
 Geometry is evidence. A shape is emitted only when a reviewed crosswalk row has `review_status` `approved`, a `jurisdiction_key`, and a parent key. A name match is a draft proposal. It is not approval.
 
-This pipeline does not change `geography` rows. It does not add map UI (that is OV-08). GADM is not used. Its licence is non-commercial.
+This pipeline does not change `geography` rows. It writes the shape files. OV-08 draws them. GADM is not used. Its licence is non-commercial.
 
 ## Dependency on OV-01
 
@@ -60,7 +60,7 @@ npm run boundaries:build -- --crosswalk schemas/atlas/boundaries/albania.json --
 `boundaries:build` throws before writing if the file or any row is not `approved`, or if `jurisdiction_key` or `parent_key` is null. Approved rows become:
 
 - `public/atlas/geo/{parent_key}.json` — children TopoJSON (mapshaper `keep-shapes`, quantization `1e5`, about one vertex per 50 m at region level and per 10 m at municipal level). A colon in the parent key becomes an underscore in the file name (`country:albania` → `country_albania.json`). Region files over 300 KB are refused. These files are gitignored.
-- `public/atlas/geo/europe-lau.pmtiles` — one PMTiles v3 archive with a single z0 Mapbox Vector Tile of the approved `gisco_lau` features. It is not a full zoom pyramid. OV-08 can ask for a pyramid later. The tile is gzip-compressed. Features that are not `gisco_lau` are left out of this archive.
+- `public/atlas/geo/europe-lau.pmtiles` — one PMTiles v3 archive with a single z0 Mapbox Vector Tile of the approved `gisco_lau` features. It is not a full zoom pyramid. The tile is gzip-compressed. Features that are not `gisco_lau` are left out of this archive. OV-08 loads this archive only for a Europe-wide zoom. A jurisdiction page loads the TopoJSON file for that parent (`country:albania` → `/atlas/geo/country_albania.json`) and does not request the PMTiles archive. The world index does not use either file: it draws a simplified Natural Earth 110m outline (`lib/atlas/map/world-land.json`).
 
 Bbox and centroid are computed from the source GeoJSON (mean of the largest exterior ring) and written with `UPDATE` onto an existing `derived_jurisdiction` row. The builder does not insert derived rows. If the table is absent, those fields stay pending and the shape files are still written for approved rows.
 

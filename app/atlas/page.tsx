@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { CoverageBar, CoverageChip } from "@/components/atlas/coverage";
 import { DatabaseUnavailable } from "@/components/atlas/database-state";
+import { WorldMap } from "@/components/atlas/map/WorldMap";
 import { PageHeader } from "@/components/atlas/page-header";
 import { formatAtlasRegion, loadAtlasCatalog } from "@/lib/atlas/read";
 import { jurisdictionPublicPath, listCountryCards } from "@/lib/atlas/jurisdiction";
+import { resolveAtlasSqlitePath } from "@/lib/atlas/paths";
+import { buildWorldMarkers, countResultRowsByCountry, type WorldMarkerInput } from "@/lib/atlas/map/world";
 import { atlasRoutes } from "@/lib/atlas/routes";
 import type { AtlasCoverageSnapshot } from "@/components/atlas/types";
 
@@ -30,6 +33,20 @@ export default function AtlasIndexPage() {
   }
 
   const cards = new Map(listCountryCards().map((card) => [card.countryId, card]));
+  const resultRows = countResultRowsByCountry(resolveAtlasSqlitePath());
+  const markerInputs: WorldMarkerInput[] = catalog.countries.map((country) => {
+    const card = cards.get(country.countryId);
+    const snapshot = card ? coverageSnapshot(card) : null;
+    return {
+      countryId: country.countryId,
+      countryCode: country.countryCode,
+      name: country.name,
+      href: card ? jurisdictionPublicPath(card.slugPath) : atlasRoutes.country(country.countryId),
+      resultRows: resultRows.get(country.countryId) ?? 0,
+      coverage: snapshot,
+    };
+  });
+  const markers = buildWorldMarkers(markerInputs);
   const groups: Array<{ regionId: string; label: string; countries: typeof catalog.countries }> = [];
   for (const country of catalog.countries) {
     const current = groups[groups.length - 1];
@@ -51,6 +68,7 @@ export default function AtlasIndexPage() {
           { label: "Elections", value: catalog.totals.events.toLocaleString() },
         ]}
       />
+      <WorldMap markers={markers} />
       <section className="rounded-3xl border border-atlas-line bg-atlas-card p-6 sm:p-8">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-atlas-accent">Europe first</p>
         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-atlas-ink-2">

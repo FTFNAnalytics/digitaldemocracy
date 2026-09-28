@@ -20,6 +20,14 @@ export type JurisdictionChild = {
   level: string;
   kind: string | null;
   coverage: AtlasCoverageSnapshot | null;
+  seatsTracked?: number | null;
+  firstEventYear?: number | null;
+  lastEventYear?: number | null;
+  nextDateId?: string | null;
+  nextYear?: number | null;
+  turnout?: number | null;
+  margin?: number | null;
+  marginUnit?: string | null;
 };
 
 export type SeatRow = {

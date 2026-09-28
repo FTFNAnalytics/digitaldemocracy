@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { atlasGeoCacheHeaders } from "./lib/atlas/map/headers";
 
 const nextConfig: NextConfig = {
   agentRules: false,
@@ -6,6 +7,9 @@ const nextConfig: NextConfig = {
   experimental: { cpus: 2 },
   outputFileTracingIncludes: {
     "/electiondatabase/**/*": ["./data/research/**/*", "./data/countries/**/*"],
+  },
+  async headers() {
+    return atlasGeoCacheHeaders();
   },
 };
 
