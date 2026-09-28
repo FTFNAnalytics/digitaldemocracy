@@ -24,6 +24,7 @@ import { importUnitedKingdom, type ImportUnitedKingdomResult } from "../united-k
 import { importItaly, type ImportItalyResult } from "../italy/import";
 import { importIceland, type ImportIcelandResult } from "../iceland/import";
 import { importMontenegro, type ImportMontenegroResult } from "../montenegro/import";
+import { importMoldova, type ImportMoldovaResult } from "../moldova/import";
 import { importSerbia, type ImportSerbiaResult } from "../serbia/import";
 import { importSlovakia, type ImportSlovakiaResult } from "../slovakia/import";
 import { importSlovenia, type ImportSloveniaResult } from "../slovenia/import";
@@ -68,6 +69,7 @@ export type ImportScope =
   | "italy"
   | "iceland"
   | "montenegro"
+  | "moldova"
   | "serbia"
   | "slovakia"
   | "slovenia"
@@ -114,6 +116,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     raw === "italy" ||
     raw === "iceland" ||
     raw === "montenegro" ||
+    raw === "moldova" ||
     raw === "serbia" ||
     raw === "slovakia" ||
     raw === "slovenia" ||
@@ -135,7 +138,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     return raw;
   }
   throw new Error(
-    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|croatia|czechia|denmark|estonia|latvia|lithuania|romania|greece|luxembourg|malta|cyprus|france|germany|united_kingdom|italy|iceland|montenegro|serbia|slovakia|slovenia|north_macedonia|hungary|finland|ireland|netherlands|norway|poland|portugal|spain|sweden|switzerland|latam|nz|all`,
+    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|croatia|czechia|denmark|estonia|latvia|lithuania|romania|greece|luxembourg|malta|cyprus|france|germany|united_kingdom|italy|iceland|montenegro|moldova|serbia|slovakia|slovenia|north_macedonia|hungary|finland|ireland|netherlands|norway|poland|portugal|spain|sweden|switzerland|latam|nz|all`,
   );
 }
 
@@ -165,6 +168,7 @@ export type MultiLineageImportResult = {
   italy?: ImportItalyResult;
   iceland?: ImportIcelandResult;
   montenegro?: ImportMontenegroResult;
+  moldova?: ImportMoldovaResult;
   serbia?: ImportSerbiaResult;
   slovakia?: ImportSlovakiaResult;
   slovenia?: ImportSloveniaResult;
@@ -327,6 +331,10 @@ export function importAtlasLineages(
   if (scopeImportsMontenegro(scope)) {
     result.montenegro = runImport("montenegro", () => importMontenegro(options));
   }
+  // Moldova stays scoped. `all` does not publish this lineage.
+  if (scopeImportsMoldova(scope)) {
+    result.moldova = runImport("moldova", () => importMoldova(options));
+  }
   // Serbia stays scoped. `all` does not publish this lineage.
   if (scopeImportsSerbia(scope)) {
     result.serbia = runImport("serbia", () => importSerbia(options));
@@ -413,6 +421,11 @@ export function scopeImportsIceland(scope: ImportScope): boolean {
 /** True only for `ATLAS_IMPORT_SCOPE=montenegro`. Never true for `all`. */
 export function scopeImportsMontenegro(scope: ImportScope): boolean {
   return scope === "montenegro";
+}
+
+/** True only for `ATLAS_IMPORT_SCOPE=moldova`. Never true for `all`. */
+export function scopeImportsMoldova(scope: ImportScope): boolean {
+  return scope === "moldova";
 }
 
 /** True only for `ATLAS_IMPORT_SCOPE=serbia`. Never true for `all`. */

@@ -19,6 +19,7 @@
  * Italy is not part of `all`; use `ATLAS_IMPORT_SCOPE=italy`.
  * Iceland is not part of `all`; use `ATLAS_IMPORT_SCOPE=iceland`.
  * Montenegro is not part of `all`; use `ATLAS_IMPORT_SCOPE=montenegro`.
+ * Moldova is not part of `all`; use `ATLAS_IMPORT_SCOPE=moldova`.
  * Serbia is not part of `all`; use `ATLAS_IMPORT_SCOPE=serbia`.
  * Slovakia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovakia`.
  * Slovenia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovenia`.
@@ -955,6 +956,43 @@ function main() {
       console.log(`montenegro_explicit_predecessor_edges=${result.montenegro.counts.explicit_predecessor_edges}`);
       console.log(`montenegro_research_dates=${result.montenegro.counts.research_dates}`);
       console.log(`montenegro_geographies=${result.montenegro.counts.geographies}`);
+    }
+    if (result.moldova) {
+      console.log("lineage=country-package-moldova");
+      console.log(`moldova_attempt_id=${result.moldova.attemptId}`);
+      console.log(`moldova_release_id=${result.moldova.releaseId}`);
+      console.log(`moldova_fingerprint_sha256=${result.moldova.fingerprint}`);
+      console.log(`moldova_reused_release=${result.moldova.reusedRelease ? "yes" : "no"}`);
+      console.log(`moldova_offices=${result.moldova.counts.offices}`);
+      console.log(`moldova_current=${result.moldova.counts.current_offices}`);
+      console.log(`moldova_historical=${result.moldova.counts.historical_offices}`);
+      console.log(`moldova_draft_tier_national=${result.moldova.counts.draft_tier_national}`);
+      console.log(`moldova_draft_tier_autonomous=${result.moldova.counts.draft_tier_autonomous}`);
+      console.log(`moldova_draft_tier_raion=${result.moldova.counts.draft_tier_raion}`);
+      console.log(`moldova_draft_tier_municipal=${result.moldova.counts.draft_tier_municipal}`);
+      console.log(`moldova_schema_national=${result.moldova.counts.schema_national}`);
+      console.log(`moldova_schema_regional=${result.moldova.counts.schema_regional}`);
+      console.log(`moldova_schema_municipal=${result.moldova.counts.schema_municipal}`);
+      console.log(`moldova_schema_other=${result.moldova.counts.schema_other}`);
+      console.log(`moldova_selected_histories=${result.moldova.counts.selected_histories}`);
+      console.log(`moldova_prospective_events=${result.moldova.counts.prospective_events}`);
+      console.log(`moldova_result_rows=${result.moldova.counts.result_rows}`);
+      console.log(`moldova_event_rows=${result.moldova.counts.total_events}`);
+      console.log(`moldova_sources=${result.moldova.counts.sources}`);
+      console.log(`moldova_unresolved=${result.moldova.counts.unresolved_evidence}`);
+      console.log(`moldova_open_holds=${result.moldova.counts.named_open_holds}`);
+      console.log(`moldova_approved=${result.moldova.counts.approved_classifications}`);
+      console.log(`moldova_needs_review=${result.moldova.counts.needs_review_classifications}`);
+      console.log(`moldova_current_direct_executives=${result.moldova.counts.current_direct_executives}`);
+      console.log(`moldova_historical_direct_executives=${result.moldova.counts.historical_direct_executives}`);
+      console.log(`moldova_current_local_mayors=${result.moldova.counts.current_local_mayors}`);
+      console.log(`moldova_current_local_councils=${result.moldova.counts.current_local_councils}`);
+      console.log(`moldova_current_raion_councils=${result.moldova.counts.current_raion_councils}`);
+      console.log(`moldova_ep_offices=${result.moldova.counts.ep_offices}`);
+      console.log(`moldova_transnistria_parallel_offices=${result.moldova.counts.transnistria_parallel_offices}`);
+      console.log(`moldova_explicit_predecessor_edges=${result.moldova.counts.explicit_predecessor_edges}`);
+      console.log(`moldova_research_dates=${result.moldova.counts.research_dates}`);
+      console.log(`moldova_geographies=${result.moldova.counts.geographies}`);
     }
     if (result.serbia) {
       console.log("lineage=country-package-serbia");
