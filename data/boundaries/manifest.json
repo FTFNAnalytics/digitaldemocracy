@@ -1,0 +1,93 @@
+{
+  "note": "Checksums are SHA-256 of the file bytes. Raw downloads belong in data/boundaries/incoming/ and are gitignored. CI uses tests/fixtures/boundaries/ and does not download these files. geoBoundaries CGAZ GeoJSON objects are Git LFS on GitHub; the sha256 values are the LFS object ids of those file bytes. GADM is not a source.",
+  "sources": [
+    {
+      "id": "gisco-lau-2023-4326-csv",
+      "boundary_source": "gisco_lau",
+      "boundary_version": "2023",
+      "url": "https://gisco-services.ec.europa.eu/distribution/v2/lau/csv/LAU_RG_01M_2023_4326.csv",
+      "filename": "LAU_RG_01M_2023_4326.csv",
+      "sha256": "a164ad1e5cc2753c1d0920d08fbf81aecd635f95846f69e903a41d053ca37179",
+      "bytes": 6805560,
+      "role": "attributes",
+      "licence": "Eurostat GISCO LAU 2023 attribute table. Administrative boundaries copyright EuroGeographics. Free to use when the attribution is kept.",
+      "attribution": "© EuroGeographics for the administrative boundaries. Source: Eurostat – GISCO, LAU 2023."
+    },
+    {
+      "id": "gisco-lau-2023-4326-geojson",
+      "boundary_source": "gisco_lau",
+      "boundary_version": "2023",
+      "url": "https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2023_4326.geojson",
+      "filename": "LAU_RG_01M_2023_4326.geojson",
+      "sha256": "c0636cb1010ea5e1c6b336c60a469af80d7919033ccfac35a4aa4bdddf100e29",
+      "bytes": 127457720,
+      "role": "geometry",
+      "licence": "Eurostat GISCO LAU 2023, 1:1 million, EPSG:4326 GeoJSON. Administrative boundaries copyright EuroGeographics. Free to use when the attribution is kept.",
+      "attribution": "© EuroGeographics for the administrative boundaries. Source: Eurostat – GISCO, LAU 2023."
+    },
+    {
+      "id": "gisco-nuts-2024-10m-4326-geojson",
+      "boundary_source": "gisco_nuts",
+      "boundary_version": "2024",
+      "url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_10M_2024_4326.geojson",
+      "filename": "NUTS_RG_10M_2024_4326.geojson",
+      "sha256": "e8826ecea9a4ccc6b0b1f34fc8eb48a255a68c73389bacc381edb409482cbe02",
+      "bytes": 4929970,
+      "role": "geometry",
+      "licence": "Eurostat GISCO NUTS 2024, 1:10 million, EPSG:4326 GeoJSON (all NUTS levels). Administrative boundaries copyright EuroGeographics. Free to use when the attribution is kept.",
+      "attribution": "© EuroGeographics for the administrative boundaries. Source: Eurostat – GISCO, NUTS 2024."
+    },
+    {
+      "id": "geoboundaries-cgaz-adm0-geojson",
+      "boundary_source": "geoboundaries",
+      "boundary_version": "CGAZ",
+      "url": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/CGAZ/geoBoundariesCGAZ_ADM0.geojson",
+      "filename": "geoBoundariesCGAZ_ADM0.geojson",
+      "sha256": "5e97632703209f192d87724c3c02c3ed70eccec32ebddb605af9647002b65d67",
+      "bytes": 401198724,
+      "role": "geometry",
+      "licence": "geoBoundaries CGAZ ADM0, CC BY 4.0.",
+      "attribution": "geoBoundaries CGAZ (William & Mary geoLab), licensed CC BY 4.0. https://www.geoboundaries.org",
+      "checksum_note": "sha256 is the Git LFS oid of the file bytes"
+    },
+    {
+      "id": "geoboundaries-cgaz-adm1-geojson",
+      "boundary_source": "geoboundaries",
+      "boundary_version": "CGAZ",
+      "url": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/CGAZ/geoBoundariesCGAZ_ADM1.geojson",
+      "filename": "geoBoundariesCGAZ_ADM1.geojson",
+      "sha256": "d1a7905b9eeb6cdd61f391d811a07e36a74335bcd3cb72024c135d3d6e64b7bf",
+      "bytes": 360526180,
+      "role": "geometry",
+      "licence": "geoBoundaries CGAZ ADM1, CC BY 4.0.",
+      "attribution": "geoBoundaries CGAZ (William & Mary geoLab), licensed CC BY 4.0. https://www.geoboundaries.org",
+      "checksum_note": "sha256 is the Git LFS oid of the file bytes"
+    },
+    {
+      "id": "geoboundaries-cgaz-adm2-geojson",
+      "boundary_source": "geoboundaries",
+      "boundary_version": "CGAZ",
+      "url": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/CGAZ/geoBoundariesCGAZ_ADM2.geojson",
+      "filename": "geoBoundariesCGAZ_ADM2.geojson",
+      "sha256": "0bc1bc5dfc94101ac4a216084f1537dba10ce626e59d9c81fb82c1df004880f4",
+      "bytes": 550446979,
+      "role": "geometry",
+      "licence": "geoBoundaries CGAZ ADM2, CC BY 4.0.",
+      "attribution": "geoBoundaries CGAZ (William & Mary geoLab), licensed CC BY 4.0. https://www.geoboundaries.org",
+      "checksum_note": "sha256 is the Git LFS oid of the file bytes"
+    },
+    {
+      "id": "natural-earth-50m-admin-0-countries-zip",
+      "boundary_source": "natural_earth",
+      "boundary_version": "50m",
+      "url": "https://naciscdn.org/naturalearth/50m/cultural/ne_50m_admin_0_countries.zip",
+      "filename": "ne_50m_admin_0_countries.zip",
+      "sha256": "5fed433373581fa648920435f937d95f2d3c0200e067409c6478dcdf1b853139",
+      "bytes": 799734,
+      "role": "geometry",
+      "licence": "Natural Earth 1:50m admin-0 countries. Public domain.",
+      "attribution": "Made with Natural Earth. Free vector and raster map data at naturalearthdata.com. Public domain.",
+      "checksum_note": "The build reads GeoJSON. This zip is checksummed and is not parsed into shapes."
+    }
+  ]
+}

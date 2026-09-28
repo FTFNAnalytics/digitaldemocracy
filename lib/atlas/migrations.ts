@@ -32,9 +32,10 @@ export function parseMigrationFilename(filename: string): AtlasMigration | null 
 
 export function atlasMigrationTarget(filename: string): AtlasMigrationTarget {
   if (filename === ATLAS_ATTEMPT_LOG_FILENAME) return "attempts";
-  if (filename === ATLAS_MASTER_FILENAME) return "master";
+  const parsed = parseMigrationFilename(filename);
+  if (parsed && parsed.version >= 2) return "master";
   throw new Error(
-    `Unknown Atlas migration ${filename}. Prompt B applies ${ATLAS_ATTEMPT_LOG_FILENAME} to the attempts DB and ${ATLAS_MASTER_FILENAME} to the master DB.`,
+    `Unknown Atlas migration ${filename}. ${ATLAS_ATTEMPT_LOG_FILENAME} applies to the attempts DB. Master migrations start at ${ATLAS_MASTER_FILENAME}.`,
   );
 }
 

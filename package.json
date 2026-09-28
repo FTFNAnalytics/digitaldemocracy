@@ -16,6 +16,9 @@
     "import:data": "node --import tsx scripts/import/cli.ts",
     "import:countries": "node --import tsx scripts/import/countries.ts",
     "migrate:atlas": "node --experimental-sqlite --no-warnings --import tsx scripts/atlas/migrate.ts",
+    "boundaries:fetch": "node --experimental-sqlite --no-warnings --import tsx scripts/boundaries/fetch.ts",
+    "boundaries:match": "node --experimental-sqlite --no-warnings --import tsx scripts/boundaries/match.ts",
+    "boundaries:build": "node --experimental-sqlite --no-warnings --import tsx scripts/boundaries/build.ts",
     "import:atlas": "node --experimental-sqlite --no-warnings --import tsx scripts/atlas/import.ts",
     "validate:data": "node --import tsx scripts/validate/cli.ts",
     "validate:evidence": "node --import tsx scripts/validate/release-evidence.ts"
@@ -35,6 +38,7 @@
     "@types/sanitize-html": "^2.16.1",
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
+    "mapshaper": "^0.6.110",
     "tailwindcss": "^4",
     "tsx": "^4.20.6",
     "typescript": "^5",

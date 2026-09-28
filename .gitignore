@@ -62,3 +62,12 @@ next-env.d.ts
 !/data/master/.gitkeep
 !/data/master/README.md
 /data/exports/
+
+# Boundary pipeline: checksum manifest is committed; raw GIS downloads are not
+/data/boundaries/incoming/*
+!/data/boundaries/incoming/.gitkeep
+!/data/boundaries/incoming/README.md
+
+# Built map files (OV-07). Regenerated from an approved crosswalk.
+/public/atlas/geo/*
+!/public/atlas/geo/.gitkeep

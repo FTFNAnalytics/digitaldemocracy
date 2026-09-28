@@ -13,6 +13,7 @@ import {
 const repoRoot = path.join(import.meta.dirname, "../..");
 
 const MASTER_TABLES = [
+  "boundary_crosswalk",
   "country",
   "dataset_lineage",
   "dataset_release",
@@ -91,6 +92,7 @@ describe("atlas CLI stubs", () => {
     expect(first.stdout).toContain(attemptsPath);
     expect(first.stdout).toContain("0001_atlas_attempt_log");
     expect(first.stdout).toContain("0002_atlas_master");
+    expect(first.stdout).toContain("Applied to master DB: 0005_atlas_boundary");
     expect(first.stdout).not.toContain("import:atlas remains blocked");
 
     expect(tableNames(attemptsPath)).toEqual(["ingest_attempt", "schema_migration"]);
@@ -110,10 +112,16 @@ describe("atlas CLI stubs", () => {
 
     const master = new DatabaseSync(sqlitePath, { readOnly: true });
     try {
-      const version = master.prepare("SELECT version, description FROM schema_migration").get();
+      const version = master.prepare("SELECT version, description FROM schema_migration WHERE version = 1").get();
       expect(version).toMatchObject({
         version: 1,
         description: "Atlas Phase 1 master draft",
+      });
+      expect(
+        master.prepare("SELECT version, description FROM schema_migration WHERE version = 5").get(),
+      ).toMatchObject({
+        version: 5,
+        description: "Atlas boundary crosswalk",
       });
       expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 0 });
       expect(master.prepare("SELECT COUNT(*) AS n FROM country").get()).toMatchObject({ n: 0 });
@@ -129,6 +137,7 @@ describe("atlas CLI stubs", () => {
     expect(second.status, second.stderr).toBe(0);
     expect(second.stdout).toContain("Already applied to attempts DB: 0001_atlas_attempt_log");
     expect(second.stdout).toContain("Already applied to master DB: 0002_atlas_master");
+    expect(second.stdout).toContain("Already applied to master DB: 0005_atlas_boundary");
   });
 
   it("migrate:atlas refuses an unexpected existing schema", () => {
