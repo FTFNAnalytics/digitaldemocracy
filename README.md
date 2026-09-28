@@ -24,8 +24,9 @@ The observatory is being restructured as the **Election Atlas** at `/atlas`, wit
 | Command | What it does |
 | --- | --- |
 | `npm run dev` | Start the Next.js dev server |
-| `npm run build` | Production build (must succeed) |
+| `npm run build` | Production build (must succeed). Copies `.next/static` and `public/` into the standalone tree and fails if that copy has no CSS chunk or a short file count |
 | `npm start` / `npm run preview` | Serve the production build |
+| `npm run smoke -- <base-url>` | Fetch the page and every `/_next/static` asset it references; exit non-zero unless each is HTTP 200. See [docs/deploy.md](docs/deploy.md) |
 | `npm run lint` | ESLint |
 | `npm test` | Adapter and semantic tests; fixtures are test-only |
 | `npm run import:data` | Import the Latin America zip (fails clearly if missing) |

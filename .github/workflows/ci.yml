@@ -22,3 +22,5 @@ jobs:
       - run: npm run validate:data
       - run: npm run validate:evidence
       - run: npm run build
+      - name: Smoke standalone static assets
+        run: node scripts/ci-smoke-standalone.mjs
