@@ -22,6 +22,7 @@
  * Moldova is not part of `all`; use `ATLAS_IMPORT_SCOPE=moldova`.
  * Ukraine is not part of `all`; use `ATLAS_IMPORT_SCOPE=ukraine`.
  * Uruguay is not part of `all`; use `ATLAS_IMPORT_SCOPE=uruguay`.
+ * Georgia is not part of `all`; use `ATLAS_IMPORT_SCOPE=georgia`.
  * Serbia is not part of `all`; use `ATLAS_IMPORT_SCOPE=serbia`.
  * Slovakia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovakia`.
  * Slovenia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovenia`.
@@ -1075,6 +1076,46 @@ function main() {
       console.log(`uruguay_research_dates=${result.uruguay.counts.research_dates}`);
       console.log(`uruguay_applied_calendar_rows=${result.uruguay.counts.applied_calendar_rows}`);
       console.log(`uruguay_geographies=${result.uruguay.counts.geographies}`);
+    }
+    if (result.georgia) {
+      console.log("lineage=country-package-georgia");
+      console.log(`georgia_attempt_id=${result.georgia.attemptId}`);
+      console.log(`georgia_release_id=${result.georgia.releaseId}`);
+      console.log(`georgia_fingerprint_sha256=${result.georgia.fingerprint}`);
+      console.log(`georgia_reused_release=${result.georgia.reusedRelease ? "yes" : "no"}`);
+      console.log(`georgia_offices=${result.georgia.counts.offices}`);
+      console.log(`georgia_current=${result.georgia.counts.current_offices}`);
+      console.log(`georgia_ordinary_cycle=${result.georgia.counts.ordinary_cycle_offices}`);
+      console.log(`georgia_statutory_continuation=${result.georgia.counts.statutory_continuation_offices}`);
+      console.log(`georgia_historical=${result.georgia.counts.historical_offices}`);
+      console.log(`georgia_draft_tier_national=${result.georgia.counts.draft_tier_national}`);
+      console.log(`georgia_draft_tier_regional=${result.georgia.counts.draft_tier_regional}`);
+      console.log(`georgia_draft_tier_local=${result.georgia.counts.draft_tier_local}`);
+      console.log(`georgia_schema_national=${result.georgia.counts.schema_national}`);
+      console.log(`georgia_schema_regional=${result.georgia.counts.schema_regional}`);
+      console.log(`georgia_schema_municipal=${result.georgia.counts.schema_municipal}`);
+      console.log(`georgia_schema_other=${result.georgia.counts.schema_other}`);
+      console.log(`georgia_selected_histories=${result.georgia.counts.selected_histories}`);
+      console.log(`georgia_prospective_events=${result.georgia.counts.prospective_events}`);
+      console.log(`georgia_result_rows=${result.georgia.counts.result_rows}`);
+      console.log(`georgia_event_rows=${result.georgia.counts.total_events}`);
+      console.log(`georgia_sources=${result.georgia.counts.sources}`);
+      console.log(`georgia_unresolved=${result.georgia.counts.unresolved_evidence}`);
+      console.log(`georgia_open_holds=${result.georgia.counts.named_open_holds}`);
+      console.log(`georgia_approved=${result.georgia.counts.approved_classifications}`);
+      console.log(`georgia_needs_review=${result.georgia.counts.needs_review_classifications}`);
+      console.log(`georgia_current_direct_executives=${result.georgia.counts.current_direct_executives}`);
+      console.log(`georgia_historical_direct_executives=${result.georgia.counts.historical_direct_executives}`);
+      console.log(`georgia_current_mayors=${result.georgia.counts.current_mayors}`);
+      console.log(`georgia_current_municipal_councils=${result.georgia.counts.current_municipal_councils}`);
+      console.log(`georgia_parliament=${result.georgia.counts.parliament_offices}`);
+      console.log(`georgia_adjara_supreme_council=${result.georgia.counts.adjara_supreme_council_offices}`);
+      console.log(`georgia_ep_offices=${result.georgia.counts.ep_offices}`);
+      console.log(`georgia_parallel_institution_offices=${result.georgia.counts.parallel_institution_offices}`);
+      console.log(`georgia_explicit_predecessor_edges=${result.georgia.counts.explicit_predecessor_edges}`);
+      console.log(`georgia_research_dates=${result.georgia.counts.research_dates}`);
+      console.log(`georgia_applied_calendar_rows=${result.georgia.counts.applied_calendar_rows}`);
+      console.log(`georgia_geographies=${result.georgia.counts.geographies}`);
     }
     if (result.serbia) {
       console.log("lineage=country-package-serbia");
