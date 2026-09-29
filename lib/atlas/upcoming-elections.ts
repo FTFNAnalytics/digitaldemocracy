@@ -2,6 +2,7 @@ import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { repoRoot } from "./paths";
 import { UPCOMING_CALENDAR_RELATIVE as GEORGIA_CALENDAR } from "./georgia/identity";
+import { UPCOMING_CALENDAR_RELATIVE as KOSOVO_CALENDAR } from "./kosovo/identity";
 import { UPCOMING_CALENDAR_RELATIVE as URUGUAY_CALENDAR } from "./uruguay/identity";
 
 /**
@@ -15,6 +16,7 @@ const ISO_DAY = /\b\d{4}-\d{2}-\d{2}\b/;
 const CALENDAR_FILES = {
   uruguay: URUGUAY_CALENDAR,
   georgia: GEORGIA_CALENDAR,
+  kosovo: KOSOVO_CALENDAR,
 } as const;
 
 export type UpcomingElectionCountryId = keyof typeof CALENDAR_FILES;
@@ -48,12 +50,14 @@ const INTRO: Record<UpcomingElectionCountryId, string> = {
     "Ordinary contest families for Uruguay. Each date is a constitutional or statutory formula and year. Exact calendar days are not asserted, and a formal convocatoria remains pending.",
   georgia:
     "Ordinary contest families for Georgia (GE). Each date is a constitutional or statutory formula and year. Exact calendar days are not asserted, and formal calls remain pending.",
+  kosovo:
+    "Ordinary contest families for Kosovo. Each date is a constitutional or statutory formula and year. Exact calendar days are not asserted, and formal calls remain pending.",
 };
 
 const cache = new Map<string, UpcomingElectionsModel | null>();
 
 function isCountryId(value: string): value is UpcomingElectionCountryId {
-  return value === "uruguay" || value === "georgia";
+  return value === "uruguay" || value === "georgia" || value === "kosovo";
 }
 
 function sentence(value: string): string {
@@ -80,7 +84,7 @@ function readCalendar(relativePath: string, root: string): unknown[] {
 }
 
 function yearOf(row: Record<string, unknown>, countryId: UpcomingElectionCountryId): number | null {
-  const value = countryId === "uruguay" ? row.next_occurrence_year : row.next_year;
+  const value = countryId === "georgia" ? row.next_year : row.next_occurrence_year;
   if (value == null) return null;
   if (typeof value !== "number" || !Number.isInteger(value)) {
     throw new Error(`Upcoming calendar ${String(row.calendar_id ?? "")} year is not an integer`);
@@ -89,14 +93,20 @@ function yearOf(row: Record<string, unknown>, countryId: UpcomingElectionCountry
 }
 
 function prominent(row: Record<string, unknown>, countryId: UpcomingElectionCountryId): boolean {
+  // Uruguay uses must_surface_prominently_on_country_surface. Georgia and Kosovo use country_surface_prominent.
   return countryId === "uruguay"
     ? row.must_surface_prominently_on_country_surface === true
     : row.country_surface_prominent === true;
 }
 
 function isResearchHold(row: Record<string, unknown>, countryId: UpcomingElectionCountryId): boolean {
-  if (countryId !== "georgia") return false;
-  return row.date_formula == null || row.next_year == null || row.date_basis === "research hold";
+  if (countryId === "georgia") {
+    return row.date_formula == null || row.next_year == null || row.date_basis === "research hold";
+  }
+  if (countryId === "kosovo") {
+    return row.date_formula == null || row.next_occurrence_year == null || row.date_basis === "research_hold";
+  }
+  return false;
 }
 
 function kindOf(row: Record<string, unknown>, countryId: UpcomingElectionCountryId): UpcomingElectionKind {

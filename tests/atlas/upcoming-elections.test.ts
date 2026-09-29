@@ -9,6 +9,8 @@ import { JurisdictionTemplate } from "../../components/atlas/jurisdiction-templa
 import AtlasJurisdictionPage from "../../app/atlas/[country]/[[...path]]/page";
 import { importGeorgia } from "../../lib/atlas/georgia/import";
 import { UPCOMING_CALENDAR_RELATIVE as GEORGIA_CALENDAR } from "../../lib/atlas/georgia/identity";
+import { importKosovo } from "../../lib/atlas/kosovo/import";
+import { UPCOMING_CALENDAR_RELATIVE as KOSOVO_CALENDAR } from "../../lib/atlas/kosovo/identity";
 import { importUruguay } from "../../lib/atlas/uruguay/import";
 import { UPCOMING_CALENDAR_RELATIVE as URUGUAY_CALENDAR } from "../../lib/atlas/uruguay/identity";
 import { openAtlasDatabase } from "../../lib/atlas/sqlite";
@@ -133,8 +135,113 @@ describe("documentary upcoming elections", () => {
     expect(JSON.stringify(projected)).not.toContain("2029-10-28");
     expect(upcomingElectionsForCountry("albania", repoRoot)).toBeNull();
     expect(upcomingElectionsForCountry("united-states", repoRoot)).toBeNull();
+    expect(upcomingElectionsForCountry("serbia", repoRoot)).toBeNull();
     expect(upcomingElectionsForJurisdiction({ countryId: "uruguay", levelLabel: "municipality" }, repoRoot)).toBeNull();
     expect(upcomingElectionsForJurisdiction({ countryId: "georgia", levelLabel: "region" }, repoRoot)).toBeNull();
+    expect(upcomingElectionsForJurisdiction({ countryId: "kosovo", levelLabel: "municipality" }, repoRoot)).toBeNull();
+  });
+
+  it("projects Kosovo ordinary families and research holds without exact days", () => {
+    const rows = calendarRows(KOSOVO_CALENDAR);
+    const model = upcomingElectionsForCountry("kosovo", repoRoot);
+    expect(model?.countryId).toBe("kosovo");
+    expect(rows).toHaveLength(9);
+    expect(model?.families.map((item) => item.id)).toEqual(["XK-BH-C01", "XK-BH-C03", "XK-BH-C04", "XK-BH-C05"]);
+    expect(model?.holds.map((item) => item.id)).toEqual(["XK-BH-C02", "XK-BH-C06", "XK-BH-C07", "XK-BH-C08", "XK-BH-C09"]);
+    expect(model?.intro).toContain("Kosovo");
+    expect(model?.intro).toContain("formula and year");
+    expect(model?.intro).toContain("Exact calendar days are not asserted");
+    expect(model?.intro).toContain("formal calls remain pending");
+    for (const row of rows) {
+      expect(row.scheduled_date).toBeNull();
+      expect(row.country_surface_prominent).toBe(true);
+      expect(String(row.date_formula ?? "")).not.toMatch(ISO_DAY);
+    }
+    expect(model?.families.find((item) => item.id === "XK-BH-C01")).toMatchObject({
+      label: "Assembly of Kosovo",
+      kind: "ordinary",
+      when: "Sunday 60–30 days before expiry of the four-year term beginning at the 2026 constitutive session, 2030",
+      basis: "Constitutional_statutory_formula; pending_or_not_retained",
+      condition: null,
+    });
+    expect(model?.families.find((item) => item.id === "XK-BH-C03")).toMatchObject({
+      label: "Municipal assemblies (38)",
+      kind: "ordinary",
+      when: "Sunday in statutory window: 60 days before to 30 days after four-year mandate expiry; article 5 ties expiry month to regular election month, 2029",
+    });
+    expect(model?.families.find((item) => item.id === "XK-BH-C04")?.when).toContain("2029");
+    expect(model?.families.find((item) => item.id === "XK-BH-C04")?.label).toBe("Popular mayors (38)");
+    expect(model?.families.find((item) => item.id === "XK-BH-C05")).toMatchObject({
+      label: "Conditional mayoral runoffs",
+      kind: "conditional",
+      when: "Sunday four weeks after first round, only where required, 2029",
+      condition: null,
+    });
+    expect(model?.holds.find((item) => item.id === "XK-BH-C02")).toMatchObject({
+      label: "President — indirect Assembly selection",
+    });
+    expect(model?.holds.find((item) => item.id === "XK-BH-C02")?.note).toContain("Research hold");
+    expect(model?.holds.find((item) => item.id === "XK-BH-C02")?.note).toContain("Do not defer presidential selection until 2030");
+    expect(model?.holds.find((item) => item.id === "XK-BH-C06")?.label).toBe("Early Assembly election contingency");
+    expect(model?.holds.find((item) => item.id === "XK-BH-C07")?.label).toBe("Early/repeat/replacement local contingency");
+    expect(model?.holds.find((item) => item.id === "XK-BH-C08")?.note).toContain("Inherited BB G07");
+    expect(model?.holds.find((item) => item.id === "XK-BH-C09")?.note).toContain("Inherited BB G08");
+    const serialized = JSON.stringify(model);
+    expect(serialized).not.toMatch(ISO_DAY);
+    expect(serialized).not.toContain("scheduled_date");
+    for (const row of rows) {
+      if (typeof row.last_comparable_contest === "string") {
+        expect(serialized).not.toContain(row.last_comparable_contest);
+      }
+    }
+    expectNoExactDays(model!);
+
+    const ignoredDay = projectUpcomingCalendar("kosovo", [
+      {
+        calendar_id: "XK-TEST",
+        office_family: "Fixture family",
+        date_formula: "Sunday in the statutory window",
+        next_occurrence_year: 2029,
+        scheduled_date: "2029-10-12",
+        date_basis: "statutory_formula",
+        formal_call_status: "pending_or_not_retained",
+        country_surface_prominent: true,
+      },
+    ]);
+    expect(ignoredDay?.families[0]?.when).toBe("Sunday in the statutory window, 2029");
+    expect(JSON.stringify(ignoredDay)).not.toContain("2029-10-12");
+
+    expect(() =>
+      projectUpcomingCalendar("kosovo", [
+        {
+          calendar_id: "XK-TEST-ISO",
+          office_family: "Fixture family",
+          date_formula: "2029-10-12",
+          next_occurrence_year: 2029,
+          scheduled_date: null,
+          date_basis: "statutory_formula",
+          formal_call_status: "pending_or_not_retained",
+          country_surface_prominent: true,
+        },
+      ]),
+    ).toThrow(/exact day/);
+
+    const heldDespiteYear = projectUpcomingCalendar("kosovo", [
+      {
+        calendar_id: "XK-TEST-HOLD",
+        office_family: "Held family",
+        date_formula: "No ordinary polling day",
+        next_occurrence_year: 2030,
+        scheduled_date: null,
+        date_basis: "research_hold",
+        formal_call_status: "research_hold",
+        notes: "Held even when a year is present.",
+        country_surface_prominent: true,
+      },
+    ]);
+    expect(heldDespiteYear?.families).toEqual([]);
+    expect(heldDespiteYear?.holds).toHaveLength(1);
+    expect(JSON.stringify(heldDespiteYear)).not.toMatch(ISO_DAY);
   });
 
   it("renders the callout above places and labels conditional and indirect rows", () => {
@@ -183,7 +290,7 @@ describe("documentary upcoming elections", () => {
   });
 });
 
-describe("Uruguay and Georgia country pages", () => {
+describe("Uruguay, Georgia, and Kosovo country pages", () => {
   const previousFixtures = process.env.OBSERVATORY_FIXTURES;
   const previousSqlite = process.env.ATLAS_SQLITE_PATH;
   let dir = "";
@@ -204,6 +311,12 @@ describe("Uruguay and Georgia country pages", () => {
       root: repoRoot,
       sqlitePath,
       attemptsPath: path.join(dir, "georgia-attempts.sqlite"),
+      operator: "upcoming-elections-test",
+    });
+    importKosovo({
+      root: repoRoot,
+      sqlitePath,
+      attemptsPath: path.join(dir, "kosovo-attempts.sqlite"),
       operator: "upcoming-elections-test",
     });
   });
@@ -315,12 +428,63 @@ describe("Uruguay and Georgia country pages", () => {
           `SELECT COUNT(*) AS n
            FROM election_event e
            JOIN office o ON o.id_namespace = e.id_namespace AND o.office_id = e.office_id
-           WHERE o.country_id IN ('uruguay', 'georgia')`,
+           WHERE o.country_id IN ('uruguay', 'georgia', 'kosovo')`,
         )
         .get() as { n: number };
       expect(Number(events.n)).toBe(0);
     } finally {
       db.close();
     }
+  });
+
+  it("shows Kosovo families and holds on the country page and not on a child place", async () => {
+    const html = markup(
+      await AtlasJurisdictionPage({
+        params: Promise.resolve({ country: "kosovo" }),
+        searchParams: Promise.resolve({}),
+      }),
+    );
+    expect(html).toContain('data-atlas-upcoming-elections="kosovo"');
+    expect(html).toContain("Upcoming elections");
+    expect(html).toContain("Ordinary contest families for Kosovo");
+    expect(html).toContain("formal calls remain pending");
+    expect(html).toContain("Assembly of Kosovo");
+    expect(html).toContain(
+      "Sunday 60–30 days before expiry of the four-year term beginning at the 2026 constitutive session, 2030",
+    );
+    expect(html).toContain("Municipal assemblies (38)");
+    expect(html).toContain("Popular mayors (38)");
+    expect(html).toContain("Conditional mayoral runoffs");
+    expect(html).toContain("Sunday four weeks after first round, only where required, 2029");
+    expect(html).toContain("Conditional");
+    expect(html).toContain("President — indirect Assembly selection");
+    expect(html).toContain("Early Assembly election contingency");
+    expect(html).toContain("Early/repeat/replacement local contingency");
+    expect(html).toContain("Village/urban-quarter advisory councils");
+    expect(html).toContain("Joint Mitrovica board scope question");
+    expect(html).toContain("Research hold");
+    expect(html).toContain("Do not defer presidential selection until 2030");
+    expect(html).not.toContain("Next election not supplied");
+    expect(html).not.toMatch(/2029-\d{2}-\d{2}/);
+    expect(html).not.toMatch(/2030-\d{2}-\d{2}/);
+    expect(html).not.toContain("2026-06-07");
+    expect(html).not.toContain("2025-10-12");
+    expect(html).not.toContain("2025-11-09");
+    expect(html).not.toContain("2021-04-04");
+    expect(html).not.toContain("2023-04-23");
+    const holdAt = html.indexOf('data-atlas-upcoming-hold-id="XK-BH-C02"');
+    const placesAt = html.indexOf('id="atlas-children-heading"');
+    expect(holdAt).toBeGreaterThan(html.indexOf('data-atlas-upcoming-family="XK-BH-C01"'));
+    expect(holdAt).toBeLessThan(placesAt);
+    expect(html.indexOf('id="atlas-upcoming-elections-heading"')).toBeGreaterThan(html.indexOf("Kosovo*"));
+
+    const child = childSlug("kosovo").split("/");
+    const childHtml = markup(
+      await AtlasJurisdictionPage({
+        params: Promise.resolve({ country: child[0]!, path: child.slice(1) }),
+        searchParams: Promise.resolve({}),
+      }),
+    );
+    expect(childHtml).not.toContain("data-atlas-upcoming-elections");
   });
 });

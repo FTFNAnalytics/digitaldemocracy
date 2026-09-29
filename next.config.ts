@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
     "/atlas/**/*": [
       "./docs/phase1/uruguay/data/upcoming-calendar.jsonl",
       "./docs/phase1/georgia/data/upcoming-calendar.jsonl",
+      "./docs/phase1/kosovo/data/upcoming-calendar.jsonl",
     ],
   },
   async headers() {
