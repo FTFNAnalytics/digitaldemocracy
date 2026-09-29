@@ -91,6 +91,7 @@ describe("approved-pack gate", () => {
     expect(parseImportScope("ukraine")).toBe("ukraine");
     expect(parseImportScope("uruguay")).toBe("uruguay");
     expect(parseImportScope("georgia")).toBe("georgia");
+    expect(parseImportScope("kosovo")).toBe("kosovo");
     expect(parseImportScope("hungary")).toBe("hungary");
     expect(parseImportScope("finland")).toBe("finland");
     expect(parseImportScope("ireland")).toBe("ireland");
