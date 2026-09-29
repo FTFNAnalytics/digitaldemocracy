@@ -7,12 +7,14 @@ import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { UpcomingElectionsCallout } from "../../components/atlas/upcoming-elections-callout";
 import { JurisdictionTemplate } from "../../components/atlas/jurisdiction-template";
 import AtlasJurisdictionPage from "../../app/atlas/[country]/[[...path]]/page";
+import { UPCOMING_CALENDAR_RELATIVE as BULGARIA_CALENDAR } from "../../lib/atlas/bulgaria/identity";
 import { importGeorgia } from "../../lib/atlas/georgia/import";
 import { UPCOMING_CALENDAR_RELATIVE as GEORGIA_CALENDAR } from "../../lib/atlas/georgia/identity";
 import { importKosovo } from "../../lib/atlas/kosovo/import";
 import { UPCOMING_CALENDAR_RELATIVE as KOSOVO_CALENDAR } from "../../lib/atlas/kosovo/identity";
 import { importUruguay } from "../../lib/atlas/uruguay/import";
 import { UPCOMING_CALENDAR_RELATIVE as URUGUAY_CALENDAR } from "../../lib/atlas/uruguay/identity";
+import { migrateMasterDatabase } from "../../lib/atlas/apply-migrations";
 import { openAtlasDatabase } from "../../lib/atlas/sqlite";
 import {
   projectUpcomingCalendar,
@@ -34,6 +36,12 @@ function calendarRows(relativePath: string): Array<Record<string, unknown>> {
     .map((line) => line.trim())
     .filter((line) => line.length > 0)
     .map((line) => JSON.parse(line) as Record<string, unknown>);
+}
+
+function calendarCards(relativePath: string): Array<Record<string, unknown>> {
+  const parsed = JSON.parse(readFileSync(path.join(repoRoot, relativePath), "utf8")) as unknown;
+  if (!Array.isArray(parsed)) throw new Error(`${relativePath} is not a cards array`);
+  return parsed as Array<Record<string, unknown>>;
 }
 
 function expectNoExactDays(model: UpcomingElectionsModel): void {
@@ -242,6 +250,221 @@ describe("documentary upcoming elections", () => {
     expect(heldDespiteYear?.families).toEqual([]);
     expect(heldDespiteYear?.holds).toHaveLength(1);
     expect(JSON.stringify(heldDespiteYear)).not.toMatch(ISO_DAY);
+  });
+
+  it("projects Bulgaria families from the cards array and keeps holds off exact days", () => {
+    const rows = calendarCards(BULGARIA_CALENDAR);
+    const model = upcomingElectionsForCountry("bulgaria", repoRoot);
+    expect(model?.countryId).toBe("bulgaria");
+    expect(rows).toHaveLength(11);
+    expect(model?.families.map((item) => item.id)).toEqual([
+      "BI-CAL-NA",
+      "BI-CAL-PRES",
+      "BI-CAL-PRES-R2",
+      "BI-CAL-EP",
+      "BI-CAL-COUNCIL",
+      "BI-CAL-MAYOR",
+      "BI-CAL-MAYOR-R2",
+      "BI-CAL-TRAMBESH",
+      "BI-CAL-TRAMBESH-R2",
+    ]);
+    expect(model?.holds.map((item) => item.id)).toEqual(["BI-CAL-NA-EARLY", "BI-CAL-GNA"]);
+    expect(model?.intro).toContain("Bulgaria");
+    expect(model?.intro).toContain("Official calls already recorded in the pack");
+    expect(model?.intro).toContain("No polling day is invented beyond those calls");
+    expect(model?.intro).not.toContain("Exact calendar days are not asserted");
+
+    for (const row of rows) {
+      expect(row.country_surface_prominent).toBe(true);
+      const comparable = typeof row.last_comparable === "string" ? row.last_comparable : "";
+      if (row.date_basis === "research hold") {
+        expect(row.scheduled_date).toBeNull();
+        expect(row.next_year).toBeNull();
+        const hold = model?.holds.find((item) => item.id === row.calendar_id);
+        expect(hold?.label).toBe(row.contest_name);
+        expect(hold?.note).toContain("Research hold");
+        expect(hold?.note).toContain(String(row.next_label));
+        expect(hold?.note).not.toContain(comparable);
+        continue;
+      }
+      const family = model?.families.find((item) => item.id === row.calendar_id);
+      expect(family?.label).toBe(row.contest_name);
+      expect(family?.when).toBe(row.next_label);
+      expect(family?.when).not.toContain(comparable);
+      if (row.formal_call === "issued") {
+        expect(row.date_precision).toBe("day");
+        expect(row.scheduled_date).toMatch(ISO_DAY);
+        expect(family?.basis).toBe("CIK / official call / decree; issued");
+      } else {
+        expect(row.scheduled_date).toBeNull();
+        expect(family?.basis).toBe("Constitutional/statutory formula; pending_or_not_established");
+      }
+    }
+
+    expect(model?.families.find((item) => item.id === "BI-CAL-NA")).toMatchObject({
+      label: "National Assembly / Народно събрание",
+      kind: "ordinary",
+      when: "Four-year term; next ordinary occurrence 2030, no later than one month before expiry of current Assembly powers (Article 64). Exact day and formal call pending.",
+      condition: null,
+    });
+    expect(model?.families.find((item) => item.id === "BI-CAL-PRES")).toMatchObject({
+      label: "President and Vice-President — first ballot",
+      kind: "ordinary",
+      when: "25 October 2026",
+      condition: null,
+    });
+    expect(model?.families.find((item) => item.id === "BI-CAL-PRES-R2")).toMatchObject({
+      kind: "conditional",
+      when: "Within seven days of the first ballot if no candidate is elected (Article 93(4)); exact second-ballot call pending in this evidence set.",
+      condition: "No first-round winner under Article 93(3).",
+    });
+    expect(model?.families.find((item) => item.id === "BI-CAL-EP")?.when).toContain("2029");
+    expect(model?.families.find((item) => item.id === "BI-CAL-EP")?.when).toContain("polling day not established");
+    expect(model?.families.find((item) => item.id === "BI-CAL-COUNCIL")?.when).toContain("2027");
+    expect(model?.families.find((item) => item.id === "BI-CAL-MAYOR")?.when).toContain("2027");
+    expect(model?.families.find((item) => item.id === "BI-CAL-MAYOR-R2")).toMatchObject({
+      kind: "conditional",
+      condition: "No first-ballot winner; no council runoff is inferred.",
+    });
+    expect(model?.families.find((item) => item.id === "BI-CAL-TRAMBESH")?.when).toBe(
+      "18 October 2026 (Decree 155 of 13 May 2026; CIK Decision 126-MI)",
+    );
+    expect(model?.families.find((item) => item.id === "BI-CAL-TRAMBESH-R2")).toMatchObject({
+      kind: "conditional",
+      when: "25 October 2026, only if a second ballot is needed",
+      condition: "CIK Decision 126-MI explicitly describes a possible second ballot.",
+    });
+    expect(model?.holds.find((item) => item.id === "BI-CAL-NA-EARLY")).toMatchObject({
+      label: "Early / snap parliamentary contingency",
+    });
+    expect(model?.holds.find((item) => item.id === "BI-CAL-NA-EARLY")?.note).toContain(
+      "Only if the constitutional early-election procedure is triggered",
+    );
+    expect(model?.holds.find((item) => item.id === "BI-CAL-GNA")?.label).toBe(
+      "Grand National Assembly — constitutional extraordinary path",
+    );
+
+    const serialized = JSON.stringify(model);
+    expect(serialized).not.toMatch(ISO_DAY);
+    expect(serialized).not.toContain("2026-10-25");
+    expect(serialized).not.toContain("2026-10-18");
+    expect(serialized).not.toContain("2026-09-29");
+    expect(serialized).not.toContain("http");
+    expect(serialized).not.toMatch(/village/i);
+    expect(serialized).not.toContain("19 April 2026");
+    expect(serialized).not.toContain("27 October 2024");
+    expect(serialized).not.toContain("14 November 2021");
+    expect(serialized).not.toContain("21 November 2021");
+    expect(serialized).not.toContain("9 June 2024");
+    expect(serialized).not.toContain("29 October 2023");
+    expect(serialized).not.toContain("5 November 2023");
+    expect(serialized).not.toContain("June 1990");
+    for (const row of rows) {
+      if (typeof row.last_comparable === "string") {
+        expect(serialized).not.toContain(row.last_comparable);
+      }
+    }
+
+    const official = projectUpcomingCalendar("bulgaria", [
+      {
+        calendar_id: "BG-TEST-CALL",
+        contest_name: "Fixture official call",
+        next_label: "25 October 2026",
+        date_basis: "CIK / official call / decree",
+        next_year: 2026,
+        scheduled_date: "2026-10-25",
+        date_precision: "day",
+        formal_call: "issued",
+        conditional: null,
+        country_surface_prominent: true,
+      },
+    ]);
+    expect(official?.families[0]?.when).toBe("25 October 2026");
+    expect(JSON.stringify(official)).not.toContain("2026-10-25");
+
+    expect(
+      projectUpcomingCalendar("bulgaria", [
+        {
+          calendar_id: "BG-VILLAGE",
+          contest_name: "Village mayor by-election",
+          next_label: "18 October 2026",
+          date_basis: "CIK / official call / decree",
+          next_year: 2026,
+          scheduled_date: "2026-10-18",
+          date_precision: "day",
+          formal_call: "issued",
+          country_surface_prominent: false,
+        },
+      ]),
+    ).toBeNull();
+
+    const heldDespiteYear = projectUpcomingCalendar("bulgaria", [
+      {
+        calendar_id: "BG-TEST-HOLD",
+        contest_name: "Held family",
+        next_label: "No next date established.",
+        date_basis: "research hold",
+        next_year: 2030,
+        scheduled_date: null,
+        date_precision: "unknown_or_conditional",
+        formal_call: "pending_or_not_established",
+        country_surface_prominent: true,
+      },
+    ]);
+    expect(heldDespiteYear?.families).toEqual([]);
+    expect(heldDespiteYear?.holds).toHaveLength(1);
+    expect(JSON.stringify(heldDespiteYear)).not.toMatch(ISO_DAY);
+
+    expect(() =>
+      projectUpcomingCalendar("bulgaria", [
+        {
+          calendar_id: "BG-TEST-ISO",
+          contest_name: "Fixture family",
+          next_label: "2029-10-12",
+          date_basis: "constitutional/statutory formula",
+          next_year: 2029,
+          scheduled_date: null,
+          date_precision: "year_or_formula",
+          formal_call: "pending_or_not_established",
+          country_surface_prominent: true,
+        },
+      ]),
+    ).toThrow(/exact day/);
+
+    expect(() =>
+      projectUpcomingCalendar("bulgaria", [
+        {
+          calendar_id: "BG-TEST-STATED",
+          contest_name: "Fixture family",
+          next_label: "25 October 2029",
+          date_basis: "constitutional/statutory formula",
+          next_year: 2029,
+          scheduled_date: null,
+          date_precision: "year_or_formula",
+          formal_call: "pending_or_not_established",
+          country_surface_prominent: true,
+        },
+      ]),
+    ).toThrow(/exact day/);
+
+    expect(upcomingElectionsForJurisdiction({ countryId: "bulgaria", levelLabel: "municipality" }, repoRoot)).toBeNull();
+    expect(upcomingElectionsForJurisdiction({ countryId: "bulgaria", levelLabel: "country" }, repoRoot)?.countryId).toBe(
+      "bulgaria",
+    );
+    expect(upcomingElectionsForCountry("serbia", repoRoot)).toBeNull();
+
+    const html = markup(createElement(UpcomingElectionsCallout, { model: model! }));
+    expect(html).toContain('data-atlas-upcoming-elections="bulgaria"');
+    expect(html).toContain("25 October 2026");
+    expect(html).toContain("18 October 2026");
+    expect(html).toContain("Conditional");
+    expect(html).toContain('data-atlas-upcoming-hold-id="BI-CAL-NA-EARLY"');
+    expect(html).toContain('data-atlas-upcoming-hold-id="BI-CAL-GNA"');
+    expect(html.indexOf('data-atlas-upcoming-family="BI-CAL-NA"')).toBeLessThan(
+      html.indexOf('data-atlas-upcoming-hold-id="BI-CAL-NA-EARLY"'),
+    );
+    expect(html).not.toMatch(ISO_DAY);
+    expect(html).not.toMatch(/village/i);
   });
 
   it("renders the callout above places and labels conditional and indirect rows", () => {
@@ -482,6 +705,141 @@ describe("Uruguay, Georgia, and Kosovo country pages", () => {
     const childHtml = markup(
       await AtlasJurisdictionPage({
         params: Promise.resolve({ country: child[0]!, path: child.slice(1) }),
+        searchParams: Promise.resolve({}),
+      }),
+    );
+    expect(childHtml).not.toContain("data-atlas-upcoming-elections");
+  });
+});
+
+describe("Bulgaria country page", () => {
+  const previousFixtures = process.env.OBSERVATORY_FIXTURES;
+  const previousSqlite = process.env.ATLAS_SQLITE_PATH;
+  let dir = "";
+  let sqlitePath = "";
+
+  beforeAll(() => {
+    delete process.env.OBSERVATORY_FIXTURES;
+    dir = mkdtempSync(path.join(os.tmpdir(), "atlas-upcoming-bulgaria-"));
+    sqlitePath = path.join(dir, "atlas.sqlite");
+    process.env.ATLAS_SQLITE_PATH = sqlitePath;
+    // The landed BI tier is still draft. This PR does not change importer preflight,
+    // so the page test uses an empty jurisdiction index rather than importBulgaria.
+    migrateMasterDatabase(repoRoot, sqlitePath);
+    const db = openAtlasDatabase(sqlitePath);
+    try {
+      const lineage = "country-package-bulgaria";
+      const release = "bulgaria-upcoming-page-fixture";
+      const fingerprint = "a".repeat(64);
+      db.exec("BEGIN");
+      db.prepare(
+        `INSERT INTO dataset_lineage (lineage_id, provenance_kind, description)
+         VALUES (?, 'country_package', 'Upcoming-elections page fixture')`,
+      ).run(lineage);
+      db.prepare(
+        `INSERT INTO dataset_release (
+           lineage_id, release_id, fingerprint_sha256, hash_inputs_json, adapter_version,
+           method_version, schema_version, validated_counts_json, research_coverage_complete
+         ) VALUES (?, ?, ?, '{}', 'test', 'test', 'test', '{}', 0)`,
+      ).run(lineage, release, fingerprint);
+      db.prepare(`INSERT INTO publication_release (lineage_id, release_id) VALUES (?, ?)`).run(lineage, release);
+      db.prepare(
+        `INSERT INTO country (
+           country_id, country_code, name, polity_kind, region_id, coverage_status, lineage_id, release_id
+         ) VALUES ('bulgaria', 'BG', 'Bulgaria', 'sovereign_country', 'europe', 'partial', ?, ?)`,
+      ).run(lineage, release);
+      db.prepare(
+        `INSERT INTO geography (country_id, geography_id, name, lineage_id, release_id)
+         VALUES ('bulgaria', 'geo-bg-fixture', 'Аврен', ?, ?)`,
+      ).run(lineage, release);
+      db.prepare(
+        `INSERT INTO derived_jurisdiction (
+           jurisdiction_key, country_id, geography_id, parent_key, depth, level_label, name,
+           slug, slug_path, office_count, event_count, coverage_status, ambiguous
+         ) VALUES
+           ('bg-country', 'bulgaria', NULL, NULL, 0, 'country', 'Bulgaria', 'bulgaria', 'bulgaria', 0, 0, 'partial', 0),
+           ('bg-child', 'bulgaria', 'geo-bg-fixture', 'bg-country', 1, 'municipality', 'Аврен', 'avren', 'bulgaria/avren', 0, 0, 'partial', 0)`,
+      ).run();
+      db.exec("COMMIT");
+    } finally {
+      db.close();
+    }
+  });
+
+  afterAll(() => {
+    if (previousFixtures === undefined) delete process.env.OBSERVATORY_FIXTURES;
+    else process.env.OBSERVATORY_FIXTURES = previousFixtures;
+    if (previousSqlite === undefined) delete process.env.ATLAS_SQLITE_PATH;
+    else process.env.ATLAS_SQLITE_PATH = previousSqlite;
+    if (dir) rmSync(dir, { recursive: true, force: true });
+  });
+
+  it("shows Bulgaria families and holds on the country page and not on a child place", async () => {
+    const html = markup(
+      await AtlasJurisdictionPage({
+        params: Promise.resolve({ country: "bulgaria" }),
+        searchParams: Promise.resolve({}),
+      }),
+    );
+    const calloutStart = html.indexOf('data-atlas-upcoming-elections="bulgaria"');
+    const placesAt = html.indexOf('id="atlas-children-heading"');
+    const callout = html.slice(calloutStart, placesAt);
+    expect(calloutStart).toBeGreaterThan(html.indexOf("Bulgaria"));
+    expect(placesAt).toBeGreaterThan(calloutStart);
+    expect(callout).toContain("Upcoming elections");
+    expect(callout).toContain("Documentary contest families for Bulgaria");
+    expect(callout).toContain("Official calls already recorded in the pack");
+    expect(callout).toContain("National Assembly / Народно събрание");
+    expect(callout).toContain("next ordinary occurrence 2030");
+    expect(callout).toContain("President and Vice-President — first ballot");
+    expect(callout).toContain("25 October 2026");
+    expect(callout).toContain("exact second-ballot call pending");
+    expect(callout).toContain("European Parliament — Bulgaria");
+    expect(callout).toContain("next election year 2029");
+    expect(callout).toContain("Municipal councils — all 265 municipalities");
+    expect(callout).toContain("Municipality-wide directly elected mayors — all 265 municipalities");
+    expect(callout).toContain("conditional ordinary runoff");
+    expect(callout).toContain("Polski Trambesh municipality mayor — by-election");
+    expect(callout).toContain("18 October 2026");
+    expect(callout).toContain("25 October 2026, only if a second ballot is needed");
+    expect(callout).toContain("Conditional");
+    expect(callout).toContain("Early / snap parliamentary contingency");
+    expect(callout).toContain("Grand National Assembly — constitutional extraordinary path");
+    expect(callout).toContain("Research hold");
+    expect(callout).toContain('data-atlas-upcoming-family="BI-CAL-PRES"');
+    expect(callout).toContain('data-atlas-upcoming-hold-id="BI-CAL-NA-EARLY"');
+    expect(callout).toContain('data-atlas-upcoming-hold-id="BI-CAL-GNA"');
+    expect(callout.indexOf('data-atlas-upcoming-family="BI-CAL-NA"')).toBeLessThan(
+      callout.indexOf('data-atlas-upcoming-hold-id="BI-CAL-NA-EARLY"'),
+    );
+    expect(callout).not.toMatch(ISO_DAY);
+    expect(callout).not.toContain("2026-10-25");
+    expect(callout).not.toContain("2026-10-18");
+    expect(callout).not.toContain("2026-09-29");
+    expect(callout).not.toMatch(/village/i);
+    expect(callout).not.toContain("19 April 2026");
+    expect(callout).not.toContain("29 October 2023");
+    expect(html).not.toContain("Next election not supplied");
+
+    const db = openAtlasDatabase(sqlitePath, { readOnly: true });
+    let child = "";
+    try {
+      const row = db
+        .prepare(
+          `SELECT slug_path FROM derived_jurisdiction
+           WHERE country_id = 'bulgaria' AND level_label != 'country'
+           ORDER BY slug_path LIMIT 1`,
+        )
+        .get() as { slug_path?: string } | undefined;
+      expect(row?.slug_path).toBeTruthy();
+      child = String(row?.slug_path);
+    } finally {
+      db.close();
+    }
+    const parts = child.split("/");
+    const childHtml = markup(
+      await AtlasJurisdictionPage({
+        params: Promise.resolve({ country: parts[0]!, path: parts.slice(1) }),
         searchParams: Promise.resolve({}),
       }),
     );
