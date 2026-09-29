@@ -27,6 +27,7 @@ import {
 } from "@/lib/atlas/jurisdiction";
 import { readAtlasDerived } from "@/lib/atlas/publication";
 import { atlasRoutes } from "@/lib/atlas/routes";
+import { upcomingElectionsForJurisdiction } from "@/lib/atlas/upcoming-elections";
 import { paginate, Pagination, type Query } from "@/components/observatory/pagination";
 
 /**
@@ -165,6 +166,10 @@ export default async function AtlasJurisdictionPage({ params, searchParams }: Pr
   const date = isoDateParam(one(query.date));
   const level = jurisdictionLevelLabel(view.jurisdiction.levelLabel);
   const facts = jurisdictionFacts(view.jurisdiction, view.coverage);
+  const upcomingElections = upcomingElectionsForJurisdiction({
+    countryId: view.jurisdiction.countryId,
+    levelLabel: view.jurisdiction.levelLabel,
+  });
   const pathName = jurisdictionPublicPath(view.jurisdiction.slugPath);
   const filteredPlaces = filterPlaces(view.children, { q, kind });
   const kinds = [...new Set(view.children.map((place) => place.level))].sort((a, b) => a.localeCompare(b));
@@ -201,7 +206,10 @@ export default async function AtlasJurisdictionPage({ params, searchParams }: Pr
         name={view.jurisdiction.name}
         level={level}
         facts={facts}
-        nextElection={view.nextElectionLabel ? { label: view.nextElectionLabel } : null}
+        nextElection={
+          view.nextElectionLabel ? { label: view.nextElectionLabel } : upcomingElections ? undefined : null
+        }
+        upcomingElections={upcomingElections}
         places={filteredPlaces.map(toChild)}
         placeFilter={
           useServerFilter
