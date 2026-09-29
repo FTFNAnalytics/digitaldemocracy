@@ -1,0 +1,2009 @@
+[
+  {
+    "ordinal": 1,
+    "table": "country",
+    "column": "country_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "Ukraine research scope (no production numeric ID)",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 2,
+    "table": "country",
+    "column": "country_code",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 3,
+    "table": "country",
+    "column": "name",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 4,
+    "table": "country",
+    "column": "polity_kind",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 5,
+    "table": "country",
+    "column": "region_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 6,
+    "table": "country",
+    "column": "coverage_status",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 7,
+    "table": "country",
+    "column": "screening_as_of_label",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 8,
+    "table": "country",
+    "column": "notes",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 9,
+    "table": "country",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 10,
+    "table": "country",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 11,
+    "table": "country",
+    "column": "raw_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "Source-qualified research record / capture",
+    "rule": "Raw evidence is retained in sources; not a production JSON payload."
+  },
+  {
+    "ordinal": 12,
+    "table": "dataset_lineage",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 13,
+    "table": "dataset_lineage",
+    "column": "provenance_kind",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 14,
+    "table": "dataset_lineage",
+    "column": "description",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 15,
+    "table": "dataset_release",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 16,
+    "table": "dataset_release",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 17,
+    "table": "dataset_release",
+    "column": "fingerprint_sha256",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "SHA256SUMS",
+    "mapping": "Per-file SHA-256; external ZIP hash",
+    "rule": "No recursive self-hash or invented production release fingerprint."
+  },
+  {
+    "ordinal": 18,
+    "table": "dataset_release",
+    "column": "hash_inputs_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "SHA256SUMS",
+    "mapping": "Per-file SHA-256; external ZIP hash",
+    "rule": "No recursive self-hash or invented production release fingerprint."
+  },
+  {
+    "ordinal": 19,
+    "table": "dataset_release",
+    "column": "adapter_version",
+    "disposition": "documented_no_release",
+    "research_path": "manifest.json",
+    "mapping": "See manifest.json; adapters/schema release are not implemented",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 20,
+    "table": "dataset_release",
+    "column": "method_version",
+    "disposition": "documented_no_release",
+    "research_path": "manifest.json",
+    "mapping": "See manifest.json; adapters/schema release are not implemented",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 21,
+    "table": "dataset_release",
+    "column": "schema_version",
+    "disposition": "documented_no_release",
+    "research_path": "manifest.json",
+    "mapping": "See manifest.json; adapters/schema release are not implemented",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 22,
+    "table": "dataset_release",
+    "column": "research_snapshot_label",
+    "disposition": "documented_no_release",
+    "research_path": "manifest.json",
+    "mapping": "See manifest.json; adapters/schema release are not implemented",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 23,
+    "table": "dataset_release",
+    "column": "upstream_release_id",
+    "disposition": "documented_no_release",
+    "research_path": "manifest.json",
+    "mapping": "See manifest.json; adapters/schema release are not implemented",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 24,
+    "table": "dataset_release",
+    "column": "validated_counts_json",
+    "disposition": "documented_no_release",
+    "research_path": "manifest.json",
+    "mapping": "See manifest.json; adapters/schema release are not implemented",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 25,
+    "table": "dataset_release",
+    "column": "research_coverage_complete",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": false,
+    "rule": "Full territorial/current register accounting; historical vectors are incomplete."
+  },
+  {
+    "ordinal": 26,
+    "table": "dataset_release",
+    "column": "raw_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "Source-qualified research record / capture",
+    "rule": "Raw evidence is retained in sources; not a production JSON payload."
+  },
+  {
+    "ordinal": 27,
+    "table": "election_event",
+    "column": "id_namespace",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-research",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 28,
+    "table": "election_event",
+    "column": "office_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/events.jsonl",
+    "mapping": "office_id",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 29,
+    "table": "election_event",
+    "column": "history_key",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/events.jsonl",
+    "mapping": "event_id (research key only)",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 30,
+    "table": "election_event",
+    "column": "event_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/events.jsonl",
+    "mapping": "event_id",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 31,
+    "table": "election_event",
+    "column": "date_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/events.jsonl",
+    "mapping": "event_date (documented ISO label; no generated production date ID)",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 32,
+    "table": "election_event",
+    "column": "date_resolution",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/events.jsonl",
+    "mapping": "day, or explicit multi-date cycle in 1994",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 33,
+    "table": "election_event",
+    "column": "event_kind",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/events.jsonl",
+    "mapping": "event_kind",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 34,
+    "table": "election_event",
+    "column": "selected_history_role",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/events.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 35,
+    "table": "election_event",
+    "column": "electoral_system",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "data/events.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 36,
+    "table": "election_event",
+    "column": "comparability",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "data/events.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 37,
+    "table": "election_event",
+    "column": "ballot_basis",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/events.jsonl",
+    "mapping": "component and result vote_basis",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 38,
+    "table": "election_event",
+    "column": "share_unit",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/events.jsonl",
+    "mapping": "percent",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 39,
+    "table": "election_event",
+    "column": "legal_outcome",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/events.jsonl",
+    "mapping": "event_status / legal_outcome",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 40,
+    "table": "election_event",
+    "column": "record_state",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/events.jsonl",
+    "mapping": "result_coverage / certification_status",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 41,
+    "table": "election_event",
+    "column": "state_note",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/events.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 42,
+    "table": "election_event",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 43,
+    "table": "election_event",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 44,
+    "table": "election_event",
+    "column": "raw_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/events.jsonl",
+    "mapping": "Source-qualified research record / capture",
+    "rule": "Raw evidence is retained in sources; not a production JSON payload."
+  },
+  {
+    "ordinal": 45,
+    "table": "evidence_link",
+    "column": "evidence_id",
+    "disposition": "mapped_research_provenance",
+    "research_path": "source_ids/source_id and source_locator in research records",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 46,
+    "table": "evidence_link",
+    "column": "record_key",
+    "disposition": "mapped_research_provenance",
+    "research_path": "source_ids/source_id and source_locator in research records",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 47,
+    "table": "evidence_link",
+    "column": "source_country_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "Ukraine research scope (no production numeric ID)",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 48,
+    "table": "evidence_link",
+    "column": "source_namespace",
+    "disposition": "mapped_research_provenance",
+    "research_path": "source_ids/source_id and source_locator in research records",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 49,
+    "table": "evidence_link",
+    "column": "source_id",
+    "disposition": "mapped_research_provenance",
+    "research_path": "source_ids/source_id and source_locator in research records",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 50,
+    "table": "evidence_link",
+    "column": "source_locator",
+    "disposition": "mapped_research_provenance",
+    "research_path": "source_ids/source_id and source_locator in research records",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 51,
+    "table": "evidence_link",
+    "column": "claim_kind",
+    "disposition": "mapped_research_provenance",
+    "research_path": "source_ids/source_id and source_locator in research records",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 52,
+    "table": "evidence_link",
+    "column": "date_claim_id",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "source_ids/source_id and source_locator in research records",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 53,
+    "table": "evidence_link",
+    "column": "claim_json",
+    "disposition": "mapped_research_provenance",
+    "research_path": "source_ids/source_id and source_locator in research records",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 54,
+    "table": "evidence_link",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 55,
+    "table": "evidence_link",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 56,
+    "table": "geography",
+    "column": "country_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "Ukraine research scope (no production numeric ID)",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 57,
+    "table": "geography",
+    "column": "geography_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/territorial-register.jsonl",
+    "mapping": "territory_code",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 58,
+    "table": "geography",
+    "column": "name",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/territorial-register.jsonl",
+    "mapping": "name",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 59,
+    "table": "geography",
+    "column": "parent_geography_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/territorial-register.jsonl",
+    "mapping": "region_code/raion_code/hromada_code according to category",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 60,
+    "table": "geography",
+    "column": "effective_from_label",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "data/territorial-register.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 61,
+    "table": "geography",
+    "column": "effective_to_label",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "data/territorial-register.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 62,
+    "table": "geography",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 63,
+    "table": "geography",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 64,
+    "table": "geography",
+    "column": "raw_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/territorial-register.jsonl",
+    "mapping": "Source-qualified research record / capture",
+    "rule": "Raw evidence is retained in sources; not a production JSON payload."
+  },
+  {
+    "ordinal": 65,
+    "table": "identity_crosswalk",
+    "column": "entity_kind",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/identity-notes.jsonl",
+    "mapping": "CVK namespace/body ID ↔ KATOTTG territory plus explicit identity notes",
+    "rule": "A geography cross-reference is not a successor edge."
+  },
+  {
+    "ordinal": 66,
+    "table": "identity_crosswalk",
+    "column": "upstream_namespace",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/identity-notes.jsonl",
+    "mapping": "CVK namespace/body ID ↔ KATOTTG territory plus explicit identity notes",
+    "rule": "A geography cross-reference is not a successor edge."
+  },
+  {
+    "ordinal": 67,
+    "table": "identity_crosswalk",
+    "column": "upstream_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/identity-notes.jsonl",
+    "mapping": "CVK namespace/body ID ↔ KATOTTG territory plus explicit identity notes",
+    "rule": "A geography cross-reference is not a successor edge."
+  },
+  {
+    "ordinal": 68,
+    "table": "identity_crosswalk",
+    "column": "record_key",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/identity-notes.jsonl",
+    "mapping": "CVK namespace/body ID ↔ KATOTTG territory plus explicit identity notes",
+    "rule": "A geography cross-reference is not a successor edge."
+  },
+  {
+    "ordinal": 69,
+    "table": "identity_crosswalk",
+    "column": "reason",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/identity-notes.jsonl",
+    "mapping": "CVK namespace/body ID ↔ KATOTTG territory plus explicit identity notes",
+    "rule": "A geography cross-reference is not a successor edge."
+  },
+  {
+    "ordinal": 70,
+    "table": "identity_crosswalk",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 71,
+    "table": "identity_crosswalk",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 72,
+    "table": "identity_crosswalk",
+    "column": "raw_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/identity-notes.jsonl",
+    "mapping": "Source-qualified research record / capture",
+    "rule": "Raw evidence is retained in sources; not a production JSON payload."
+  },
+  {
+    "ordinal": 73,
+    "table": "ingest_attempt",
+    "column": "attempt_id",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 74,
+    "table": "ingest_attempt",
+    "column": "lineage_id",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 75,
+    "table": "ingest_attempt",
+    "column": "operator",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 76,
+    "table": "ingest_attempt",
+    "column": "script_version",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 77,
+    "table": "ingest_attempt",
+    "column": "started_at",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 78,
+    "table": "ingest_attempt",
+    "column": "finished_at",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 79,
+    "table": "ingest_attempt",
+    "column": "status",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 80,
+    "table": "ingest_attempt",
+    "column": "input_inventory_json",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 81,
+    "table": "ingest_attempt",
+    "column": "successful_release_id",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 82,
+    "table": "ingest_attempt",
+    "column": "publication_set_json",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 83,
+    "table": "ingest_attempt",
+    "column": "row_counts_json",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 84,
+    "table": "ingest_attempt",
+    "column": "error_text",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 85,
+    "table": "office",
+    "column": "id_namespace",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-research",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 86,
+    "table": "office",
+    "column": "office_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/office-register.jsonl",
+    "mapping": "office_id",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 87,
+    "table": "office",
+    "column": "country_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "Ukraine research scope (no production numeric ID)",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 88,
+    "table": "office",
+    "column": "geography_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/office-register.jsonl",
+    "mapping": "territory_code",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 89,
+    "table": "office",
+    "column": "name",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/office-register.jsonl",
+    "mapping": "name_local",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 90,
+    "table": "office",
+    "column": "office_type",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/office-register.jsonl",
+    "mapping": "office_kind",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 91,
+    "table": "office",
+    "column": "office_status",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/office-register.jsonl",
+    "mapping": "office_status",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 92,
+    "table": "office",
+    "column": "record_state",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/office-register.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 93,
+    "table": "office",
+    "column": "state_note",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/office-register.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 94,
+    "table": "office",
+    "column": "registry_qualified",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/office-register.jsonl",
+    "mapping": "office_status and research-gaps (not import-approved)",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 95,
+    "table": "office",
+    "column": "next_date_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/office-register.jsonl",
+    "mapping": "NULL — martial-law upcoming gate",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 96,
+    "table": "office",
+    "column": "next_date_resolution",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/office-register.jsonl",
+    "mapping": "NULL — no invented upcoming date",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 97,
+    "table": "office",
+    "column": "next_history_key",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/office-register.jsonl",
+    "mapping": "NULL — no invented next contest",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 98,
+    "table": "office",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 99,
+    "table": "office",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 100,
+    "table": "office",
+    "column": "raw_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/office-register.jsonl",
+    "mapping": "Source-qualified research record / capture",
+    "rule": "Raw evidence is retained in sources; not a production JSON payload."
+  },
+  {
+    "ordinal": 101,
+    "table": "office_tier_classification",
+    "column": "id_namespace",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-research",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 102,
+    "table": "office_tier_classification",
+    "column": "office_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/draft-tiers.jsonl",
+    "mapping": "office_id",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 103,
+    "table": "office_tier_classification",
+    "column": "tier",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/draft-tiers.jsonl",
+    "mapping": "draft_tier",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 104,
+    "table": "office_tier_classification",
+    "column": "review_status",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/draft-tiers.jsonl",
+    "mapping": "status / justin_approved=false",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 105,
+    "table": "office_tier_classification",
+    "column": "rationale",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/draft-tiers.jsonl",
+    "mapping": "basis",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 106,
+    "table": "office_tier_classification",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 107,
+    "table": "office_tier_classification",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 108,
+    "table": "office_tier_classification",
+    "column": "classification_path",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/draft-tiers.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 109,
+    "table": "office_tier_classification",
+    "column": "classification_kind",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/draft-tiers.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 110,
+    "table": "office_tier_classification",
+    "column": "classification_sha256",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "SHA256SUMS",
+    "mapping": "Per-file SHA-256; external ZIP hash",
+    "rule": "No recursive self-hash or invented production release fingerprint."
+  },
+  {
+    "ordinal": 111,
+    "table": "office_tier_classification",
+    "column": "raw_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/draft-tiers.jsonl",
+    "mapping": "Source-qualified research record / capture",
+    "rule": "Raw evidence is retained in sources; not a production JSON payload."
+  },
+  {
+    "ordinal": 112,
+    "table": "party_mapping",
+    "column": "country_id",
+    "disposition": "held_unmapped",
+    "research_path": "data/results.jsonl",
+    "mapping": "Original labels retained; mapping IDs/group/code NULL",
+    "rule": "No party-family or successor mapping invented."
+  },
+  {
+    "ordinal": 113,
+    "table": "party_mapping",
+    "column": "party_namespace",
+    "disposition": "held_unmapped",
+    "research_path": "data/results.jsonl",
+    "mapping": "Original labels retained; mapping IDs/group/code NULL",
+    "rule": "No party-family or successor mapping invented."
+  },
+  {
+    "ordinal": 114,
+    "table": "party_mapping",
+    "column": "mapping_id",
+    "disposition": "held_unmapped",
+    "research_path": "data/results.jsonl",
+    "mapping": "Original labels retained; mapping IDs/group/code NULL",
+    "rule": "No party-family or successor mapping invented."
+  },
+  {
+    "ordinal": 115,
+    "table": "party_mapping",
+    "column": "source_context",
+    "disposition": "held_unmapped",
+    "research_path": "data/results.jsonl",
+    "mapping": "Original labels retained; mapping IDs/group/code NULL",
+    "rule": "No party-family or successor mapping invented."
+  },
+  {
+    "ordinal": 116,
+    "table": "party_mapping",
+    "column": "election_context",
+    "disposition": "held_unmapped",
+    "research_path": "data/results.jsonl",
+    "mapping": "Original labels retained; mapping IDs/group/code NULL",
+    "rule": "No party-family or successor mapping invented."
+  },
+  {
+    "ordinal": 117,
+    "table": "party_mapping",
+    "column": "original_label",
+    "disposition": "held_unmapped",
+    "research_path": "data/results.jsonl",
+    "mapping": "Original labels retained; mapping IDs/group/code NULL",
+    "rule": "No party-family or successor mapping invented."
+  },
+  {
+    "ordinal": 118,
+    "table": "party_mapping",
+    "column": "original_code",
+    "disposition": "held_unmapped",
+    "research_path": "data/results.jsonl",
+    "mapping": "Original labels retained; mapping IDs/group/code NULL",
+    "rule": "No party-family or successor mapping invented."
+  },
+  {
+    "ordinal": 119,
+    "table": "party_mapping",
+    "column": "mapped_group",
+    "disposition": "held_unmapped",
+    "research_path": "data/results.jsonl",
+    "mapping": "Original labels retained; mapping IDs/group/code NULL",
+    "rule": "No party-family or successor mapping invented."
+  },
+  {
+    "ordinal": 120,
+    "table": "party_mapping",
+    "column": "uncertainty",
+    "disposition": "held_unmapped",
+    "research_path": "data/results.jsonl",
+    "mapping": "Original labels retained; mapping IDs/group/code NULL",
+    "rule": "No party-family or successor mapping invented."
+  },
+  {
+    "ordinal": 121,
+    "table": "party_mapping",
+    "column": "lineage_id",
+    "disposition": "held_unmapped",
+    "research_path": "data/results.jsonl",
+    "mapping": "Original labels retained; mapping IDs/group/code NULL",
+    "rule": "No party-family or successor mapping invented."
+  },
+  {
+    "ordinal": 122,
+    "table": "party_mapping",
+    "column": "release_id",
+    "disposition": "held_unmapped",
+    "research_path": "data/results.jsonl",
+    "mapping": "Original labels retained; mapping IDs/group/code NULL",
+    "rule": "No party-family or successor mapping invented."
+  },
+  {
+    "ordinal": 123,
+    "table": "party_mapping",
+    "column": "raw_json",
+    "disposition": "held_unmapped",
+    "research_path": "data/results.jsonl",
+    "mapping": "Original labels retained; mapping IDs/group/code NULL",
+    "rule": "No party-family or successor mapping invented."
+  },
+  {
+    "ordinal": 124,
+    "table": "proceeding",
+    "column": "id_namespace",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-research",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 125,
+    "table": "proceeding",
+    "column": "office_id",
+    "disposition": "documented_no_proceeding_insert",
+    "research_path": "event_kind/round/event_status in data/events.jsonl",
+    "mapping": "Source event type/round/status; no separate production proceeding created",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 126,
+    "table": "proceeding",
+    "column": "history_key",
+    "disposition": "documented_no_proceeding_insert",
+    "research_path": "event_kind/round/event_status in data/events.jsonl",
+    "mapping": "Source event type/round/status; no separate production proceeding created",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 127,
+    "table": "proceeding",
+    "column": "proceeding_id",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "event_kind/round/event_status in data/events.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 128,
+    "table": "proceeding",
+    "column": "kind",
+    "disposition": "documented_no_proceeding_insert",
+    "research_path": "event_kind/round/event_status in data/events.jsonl",
+    "mapping": "Source event type/round/status; no separate production proceeding created",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 129,
+    "table": "proceeding",
+    "column": "sequence_no",
+    "disposition": "documented_no_proceeding_insert",
+    "research_path": "event_kind/round/event_status in data/events.jsonl",
+    "mapping": "Source event type/round/status; no separate production proceeding created",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 130,
+    "table": "proceeding",
+    "column": "supersedes_id",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "event_kind/round/event_status in data/events.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 131,
+    "table": "proceeding",
+    "column": "legal_outcome",
+    "disposition": "documented_no_proceeding_insert",
+    "research_path": "event_kind/round/event_status in data/events.jsonl",
+    "mapping": "Source event type/round/status; no separate production proceeding created",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 132,
+    "table": "proceeding",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 133,
+    "table": "proceeding",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 134,
+    "table": "proceeding",
+    "column": "raw_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "event_kind/round/event_status in data/events.jsonl",
+    "mapping": "Source-qualified research record / capture",
+    "rule": "Raw evidence is retained in sources; not a production JSON payload."
+  },
+  {
+    "ordinal": 135,
+    "table": "publication_receipt",
+    "column": "singleton",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 136,
+    "table": "publication_receipt",
+    "column": "last_publish_attempt_id",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 137,
+    "table": "publication_receipt",
+    "column": "attempted_lineage_id",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 138,
+    "table": "publication_receipt",
+    "column": "attempted_release_id",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 139,
+    "table": "publication_release",
+    "column": "lineage_id",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 140,
+    "table": "publication_release",
+    "column": "release_id",
+    "disposition": "excluded_no_application",
+    "research_path": null,
+    "mapping": "Not created",
+    "rule": "Research only; applied_changes=0; no ingestion or publication attempt/receipt."
+  },
+  {
+    "ordinal": 141,
+    "table": "record_locator",
+    "column": "record_key",
+    "disposition": "mapped_research_provenance",
+    "research_path": "record IDs and source_locator in data/*.jsonl",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 142,
+    "table": "record_locator",
+    "column": "entity_kind",
+    "disposition": "mapped_research_provenance",
+    "research_path": "record IDs and source_locator in data/*.jsonl",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 143,
+    "table": "record_locator",
+    "column": "country_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "Ukraine research scope (no production numeric ID)",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 144,
+    "table": "record_locator",
+    "column": "geography_id",
+    "disposition": "mapped_research_provenance",
+    "research_path": "record IDs and source_locator in data/*.jsonl",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 145,
+    "table": "record_locator",
+    "column": "id_namespace",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-research",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 146,
+    "table": "record_locator",
+    "column": "office_id",
+    "disposition": "mapped_research_provenance",
+    "research_path": "record IDs and source_locator in data/*.jsonl",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 147,
+    "table": "record_locator",
+    "column": "history_key",
+    "disposition": "mapped_research_provenance",
+    "research_path": "record IDs and source_locator in data/*.jsonl",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 148,
+    "table": "record_locator",
+    "column": "proceeding_id",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "record IDs and source_locator in data/*.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 149,
+    "table": "record_locator",
+    "column": "result_row_id",
+    "disposition": "mapped_research_provenance",
+    "research_path": "record IDs and source_locator in data/*.jsonl",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 150,
+    "table": "record_locator",
+    "column": "party_namespace",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "record IDs and source_locator in data/*.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 151,
+    "table": "record_locator",
+    "column": "party_mapping_id",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "record IDs and source_locator in data/*.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 152,
+    "table": "record_locator",
+    "column": "source_namespace",
+    "disposition": "mapped_research_provenance",
+    "research_path": "record IDs and source_locator in data/*.jsonl",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 153,
+    "table": "record_locator",
+    "column": "source_id",
+    "disposition": "mapped_research_provenance",
+    "research_path": "record IDs and source_locator in data/*.jsonl",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 154,
+    "table": "record_locator",
+    "column": "input_path",
+    "disposition": "mapped_research_provenance",
+    "research_path": "record IDs and source_locator in data/*.jsonl",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 155,
+    "table": "record_locator",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 156,
+    "table": "record_locator",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 157,
+    "table": "record_locator",
+    "column": "source_row_locator",
+    "disposition": "mapped_research_provenance",
+    "research_path": "record IDs and source_locator in data/*.jsonl",
+    "mapping": "Research record IDs, source IDs, artifact paths and locators",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 158,
+    "table": "research_date",
+    "column": "date_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "event_date/event_date_end/appointment_date in data/events.jsonl and data/results.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 159,
+    "table": "research_date",
+    "column": "label",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "event_date/event_date_end/appointment_date in data/events.jsonl and data/results.jsonl",
+    "mapping": "event_date, event_date_end, poll_dates or appointment_date with distinct roles",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 160,
+    "table": "research_date",
+    "column": "precision",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "event_date/event_date_end/appointment_date in data/events.jsonl and data/results.jsonl",
+    "mapping": "day for transcribed exact source dates",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 161,
+    "table": "research_date",
+    "column": "certainty",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "event_date/event_date_end/appointment_date in data/events.jsonl and data/results.jsonl",
+    "mapping": "source qualified; no estimated next date",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 162,
+    "table": "research_date",
+    "column": "year",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "event_date/event_date_end/appointment_date in data/events.jsonl and data/results.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 163,
+    "table": "research_date",
+    "column": "month",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "event_date/event_date_end/appointment_date in data/events.jsonl and data/results.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 164,
+    "table": "research_date",
+    "column": "day",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "event_date/event_date_end/appointment_date in data/events.jsonl and data/results.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 165,
+    "table": "research_date",
+    "column": "range_start_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "event_date/event_date_end/appointment_date in data/events.jsonl and data/results.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 166,
+    "table": "research_date",
+    "column": "range_end_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "event_date/event_date_end/appointment_date in data/events.jsonl and data/results.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 167,
+    "table": "research_date",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 168,
+    "table": "research_date",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 169,
+    "table": "research_date",
+    "column": "raw_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "event_date/event_date_end/appointment_date in data/events.jsonl and data/results.jsonl",
+    "mapping": "Source-qualified research record / capture",
+    "rule": "Raw evidence is retained in sources; not a production JSON payload."
+  },
+  {
+    "ordinal": 170,
+    "table": "result_row",
+    "column": "id_namespace",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-research",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 171,
+    "table": "result_row",
+    "column": "office_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "office_id",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 172,
+    "table": "result_row",
+    "column": "history_key",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 173,
+    "table": "result_row",
+    "column": "result_row_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "result_id",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 174,
+    "table": "result_row",
+    "column": "proceeding_id",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "data/results.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 175,
+    "table": "result_row",
+    "column": "country_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "Ukraine research scope (no production numeric ID)",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 176,
+    "table": "result_row",
+    "column": "candidate_or_list_label",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "contestant_name",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 177,
+    "table": "result_row",
+    "column": "original_party_label",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "nomination_label or party contestant_name",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 178,
+    "table": "result_row",
+    "column": "original_party_code",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "data/results.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 179,
+    "table": "result_row",
+    "column": "party_namespace",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "data/results.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 180,
+    "table": "result_row",
+    "column": "party_mapping_id",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "data/results.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 181,
+    "table": "result_row",
+    "column": "votes",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "votes",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 182,
+    "table": "result_row",
+    "column": "votes_status",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "null_not_zero / source-populated",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 183,
+    "table": "result_row",
+    "column": "share",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "vote_share_percent (string decimal)",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 184,
+    "table": "result_row",
+    "column": "share_status",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "null if not transcribed; decimal as published",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 185,
+    "table": "result_row",
+    "column": "share_unit",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "percent",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 186,
+    "table": "result_row",
+    "column": "seats",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "seats",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 187,
+    "table": "result_row",
+    "column": "seats_status",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "null if not transcribed; source value otherwise",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 188,
+    "table": "result_row",
+    "column": "elected_flag",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "outcome if positively reported; no inferred losing false",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 189,
+    "table": "result_row",
+    "column": "is_substitute",
+    "disposition": "held_null_unless_explicit_source",
+    "research_path": "data/results.jsonl",
+    "mapping": "NULL / source-qualified narrative",
+    "rule": "No guessed effective date, party ID, proceeding chain, status or comparability conversion."
+  },
+  {
+    "ordinal": 190,
+    "table": "result_row",
+    "column": "evidence_status",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "certification_status",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 191,
+    "table": "result_row",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 192,
+    "table": "result_row",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 193,
+    "table": "result_row",
+    "column": "raw_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "data/results.jsonl",
+    "mapping": "Source-qualified research record / capture",
+    "rule": "Raw evidence is retained in sources; not a production JSON payload."
+  },
+  {
+    "ordinal": 194,
+    "table": "retained_input",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 195,
+    "table": "retained_input",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 196,
+    "table": "retained_input",
+    "column": "input_path",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "artifact_path",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 197,
+    "table": "retained_input",
+    "column": "input_kind",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "artifact_kind",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 198,
+    "table": "retained_input",
+    "column": "sha256",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "sha256",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 199,
+    "table": "retained_input",
+    "column": "byte_count",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "bytes",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 200,
+    "table": "retained_input",
+    "column": "recovery_locator",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "url",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 201,
+    "table": "retained_input",
+    "column": "payload_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 202,
+    "table": "source",
+    "column": "country_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "Ukraine research scope (no production numeric ID)",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 203,
+    "table": "source",
+    "column": "source_namespace",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 204,
+    "table": "source",
+    "column": "source_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "source_id",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 205,
+    "table": "source",
+    "column": "publisher",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 206,
+    "table": "source",
+    "column": "title",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "title",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 207,
+    "table": "source",
+    "column": "url",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "url",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 208,
+    "table": "source",
+    "column": "checked_as_of_label",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "retrieved_utc",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 209,
+    "table": "source",
+    "column": "evidence_grade",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "publisher_grade / retrieval_status / record certification_status",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 210,
+    "table": "source",
+    "column": "file_sha256",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "sha256",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 211,
+    "table": "source",
+    "column": "locator",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "artifact_path",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 212,
+    "table": "source",
+    "column": "data_rights",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 213,
+    "table": "source",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 214,
+    "table": "source",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 215,
+    "table": "source",
+    "column": "raw_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "sources/source-inventory.jsonl",
+    "mapping": "Source-qualified research record / capture",
+    "rule": "Raw evidence is retained in sources; not a production JSON payload."
+  },
+  {
+    "ordinal": 216,
+    "table": "unresolved_evidence",
+    "column": "unresolved_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "research-gaps.json",
+    "mapping": "gap_id",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 217,
+    "table": "unresolved_evidence",
+    "column": "record_key",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "research-gaps.json",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 218,
+    "table": "unresolved_evidence",
+    "column": "original_token",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "research-gaps.json",
+    "mapping": "See sidecar fields; unestablished production values remain NULL",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 219,
+    "table": "unresolved_evidence",
+    "column": "source_locator",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "research-gaps.json",
+    "mapping": "source_locator",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 220,
+    "table": "unresolved_evidence",
+    "column": "reason",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "research-gaps.json",
+    "mapping": "finding / remaining_hold",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 221,
+    "table": "unresolved_evidence",
+    "column": "lineage_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "UA-BD-RESEARCH",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 222,
+    "table": "unresolved_evidence",
+    "column": "release_id",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "manifest.json",
+    "mapping": "2026-09-28-draft",
+    "rule": "Documentation mapping only; no production row generated."
+  },
+  {
+    "ordinal": 223,
+    "table": "unresolved_evidence",
+    "column": "raw_json",
+    "disposition": "mapped_research_sidecar",
+    "research_path": "research-gaps.json",
+    "mapping": "Source-qualified research record / capture",
+    "rule": "Raw evidence is retained in sources; not a production JSON payload."
+  }
+]

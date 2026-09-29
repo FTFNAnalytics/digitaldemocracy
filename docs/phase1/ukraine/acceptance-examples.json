@@ -1,0 +1,268 @@
+[
+  {
+    "example_id": "UA-BD-A01",
+    "case": "National parliament",
+    "input_or_locator": "UA-NAT-PARL",
+    "expected": "One unicameral legislature; no PM office.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A02",
+    "case": "Popular president",
+    "input_or_locator": "UA-NAT-PRES",
+    "expected": "One direct office; 13 sourced historical presidential events.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A03",
+    "case": "Kyiv nesting",
+    "input_or_locator": "CVK region 80",
+    "expected": "One city council and mayor; Kyiv oblast remains separate.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A04",
+    "case": "Oblast coverage",
+    "input_or_locator": "KATOTTG O",
+    "expected": "22 current evidenced oblast councils; Donetsk/Luhansk scope holds.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A05",
+    "case": "Raion coverage",
+    "input_or_locator": "KATOTTG P",
+    "expected": "136 territorial rows = 119 council offices + 17 holds.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A06",
+    "case": "Hromada accounting",
+    "input_or_locator": "KATOTTG H",
+    "expected": "1772 H records = 1420 elected pairs + 352 holds; Kyiv adds one K pair.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A07",
+    "case": "Nested elected bodies",
+    "input_or_locator": "15 city districts",
+    "expected": "15 councils only; no city-district popular executives.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A08",
+    "case": "Non-elected administrative districts",
+    "input_or_locator": "108 KATOTTG B rows",
+    "expected": "93 additional divisions do not create councils from geography alone.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A09",
+    "case": "Olyka continuity",
+    "input_or_locator": "CVK 63929",
+    "expected": "One council/head pair survives settlement-to-city status change.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A10",
+    "case": "Slobozhanske continuity",
+    "input_or_locator": "CVK 64337",
+    "expected": "Kharkiv/Chuhuiv unit retained once; not confused with Dnipro namesake.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A11",
+    "case": "Pre-2020 raion",
+    "input_or_locator": "UA-HIST-VM2015-06528-C",
+    "expected": "Historical office distinct from current 63553; successor remains null.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A12",
+    "case": "Crimea",
+    "input_or_locator": "303 H territorial entries",
+    "expected": "Held geography; no occupying-power legislature or synthetic polls.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A13",
+    "case": "Sevastopol",
+    "input_or_locator": "UA-HIST-SEVASTOPOL-C",
+    "expected": "Ukrainian historical council only; no invented popular city executive.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A14",
+    "case": "Whole-community deferrals",
+    "input_or_locator": "18 CVK161 hromadas",
+    "expected": "No current office pair or zero-result 2020 event invented.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A15",
+    "case": "Partial deferral",
+    "input_or_locator": "Novoaidar five stations",
+    "expected": "Partial hold coexists with evidenced community council/head.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A16",
+    "case": "Presidential runoff",
+    "input_or_locator": "2019-03-31 / 2019-04-21",
+    "expected": "39 first-round and two runoff candidate rows kept separate.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A17",
+    "case": "Annulled runoff",
+    "input_or_locator": "2004-11-21",
+    "expected": "Two reported figures are invalidated, never effective victory.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A18",
+    "case": "Repeat runoff",
+    "input_or_locator": "2004-12-26",
+    "expected": "Separate event, not a second presidency or additive vote total.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A19",
+    "case": "Earlier incomplete cycle",
+    "input_or_locator": "1994-06-26",
+    "expected": "Known poll date retained with no invented result rows.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A20",
+    "case": "Certified notice",
+    "input_or_locator": "2014-05-25",
+    "expected": "21 candidate rows from certified CVK notice.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A21",
+    "case": "PR/constituency split",
+    "input_or_locator": "2019 parliament",
+    "expected": "22 national parties plus 3084 candidate rows in 199 SMDs; 225 PR seats.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A22",
+    "case": "Unheld constituency",
+    "input_or_locator": "2019 non-contested SMDs",
+    "expected": "No fabricated zero-result district rows.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A23",
+    "case": "Snapshot not full return",
+    "input_or_locator": "43,351 local XML rows",
+    "expected": "Elected-member evidence only; no party vote/seat totals inferred.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A24",
+    "case": "Missing head name",
+    "input_or_locator": "23 XML head nodes",
+    "expected": "Office retained; no winner or vote total synthesized.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A25",
+    "case": "Missing numeric field",
+    "input_or_locator": "F58/F50 blank",
+    "expected": "Null remains null; zero only if source explicitly says zero.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A26",
+    "case": "Malformed source field",
+    "input_or_locator": "Starobilsk city CVK2096",
+    "expected": "One parse repair; appointment date null; source typo retained.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A27",
+    "case": "Appointment date",
+    "input_or_locator": "Local DATE_OF_APPOINTMENT",
+    "expected": "Not reused as election date.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A28",
+    "case": "Repeat terminology",
+    "input_or_locator": "Повторні / Повторне голосування",
+    "expected": "Repeat election differs from repeat voting; no guessed prior event.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A29",
+    "case": "Wartime future dates",
+    "input_or_locator": "UA-BD-G03",
+    "expected": "No invented ordinary dates or not-held result rows after 2022.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A30",
+    "case": "Historic direct head rules",
+    "input_or_locator": "2010 vs 2020",
+    "expected": "Relative majority historical rule not overwritten by later threshold.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A31",
+    "case": "Indirect officials",
+    "input_or_locator": "council chairs / starostas / administrations",
+    "expected": "No current popular offices created for indirectly selected/appointed roles.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A32",
+    "case": "EP exclusion",
+    "input_or_locator": "All rows",
+    "expected": "EP offices/events/results = 0.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A33",
+    "case": "Scope exclusion",
+    "input_or_locator": "All rows",
+    "expected": "No parallel-state, twin president or occupying-power office.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A34",
+    "case": "Draft tier coverage",
+    "input_or_locator": "3005 office rows",
+    "expected": "Exactly one unapproved tier per current/historical office.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A35",
+    "case": "Contract completeness",
+    "input_or_locator": "20 tables / 223 columns",
+    "expected": "Every inherited column appears exactly once in the map.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A36",
+    "case": "No implementation",
+    "input_or_locator": "Manifest / approvals",
+    "expected": "applied_changes=0 and Justin approval boxes unchecked.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A37",
+    "case": "Source integrity",
+    "input_or_locator": "Sources and SHA256SUMS",
+    "expected": "Retained original bytes and retrieval snapshots have verifiable hashes.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UA-BD-A38",
+    "case": "Alert window",
+    "input_or_locator": "All current/history rows",
+    "expected": "No current or historical coverage filtered by next-cycle timing.",
+    "justin_approved": false
+  }
+]

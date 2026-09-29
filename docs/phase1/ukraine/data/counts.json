@@ -1,0 +1,132 @@
+{
+  "current_offices": 3000,
+  "historical_only_offices": 5,
+  "total_offices": 3005,
+  "events": 3322,
+  "results": 46800,
+  "draft_tier_histogram": {
+    "national": 2,
+    "regional": 24,
+    "raion": 120,
+    "local": 2843,
+    "city_district": 15,
+    "autonomous": 1
+  },
+  "current_draft_tier_histogram": {
+    "national": 2,
+    "regional": 22,
+    "raion": 119,
+    "local": 2842,
+    "city_district": 15
+  },
+  "current_councils": 1577,
+  "current_national_legislatures": 1,
+  "current_direct_executives": 1422,
+  "current_municipal_head_offices": 1421,
+  "current_hromada_councils": 1421,
+  "scope_breakout": [
+    {
+      "scope": "national",
+      "current_offices": 2,
+      "historical_only_offices": 0,
+      "current_councils": 0,
+      "current_direct_executives": 1,
+      "events": 21,
+      "results": 3428
+    },
+    {
+      "scope": "oblast",
+      "current_offices": 22,
+      "historical_only_offices": 2,
+      "current_councils": 22,
+      "current_direct_executives": 0,
+      "events": 24,
+      "results": 1617
+    },
+    {
+      "scope": "autonomous",
+      "current_offices": 0,
+      "historical_only_offices": 1,
+      "current_councils": 0,
+      "current_direct_executives": 0,
+      "events": 1,
+      "results": 0
+    },
+    {
+      "scope": "raion",
+      "current_offices": 119,
+      "historical_only_offices": 1,
+      "current_councils": 119,
+      "current_direct_executives": 0,
+      "events": 120,
+      "results": 5214
+    },
+    {
+      "scope": "hromada",
+      "current_offices": 2842,
+      "historical_only_offices": 0,
+      "current_councils": 1421,
+      "current_direct_executives": 1421,
+      "events": 3140,
+      "results": 35986
+    },
+    {
+      "scope": "city_district",
+      "current_offices": 15,
+      "historical_only_offices": 0,
+      "current_councils": 15,
+      "current_direct_executives": 0,
+      "events": 15,
+      "results": 555
+    },
+    {
+      "scope": "special_city",
+      "current_offices": 0,
+      "historical_only_offices": 1,
+      "current_councils": 0,
+      "current_direct_executives": 0,
+      "events": 1,
+      "results": 0
+    }
+  ],
+  "territorial_register_rows": 1935,
+  "territorial_hold_rows": 374,
+  "hold_reasons": {
+    "Crimea_occupied_scope_no_postreform_Ukrainian_poll_identified": 314,
+    "oblast_election_deferred_2015_2020_current_operation_gated": 2,
+    "whole_hromada_2020_poll_not_held_CVK_161": 18,
+    "post2020_raion_no_Ukrainian_elected_council_evidenced": 7,
+    "occupied_2014_hromada_no_2020_Ukrainian_election": 31,
+    "Sevastopol_special_status_occupied_scope_hold": 1,
+    "Five polling stations excluded in 2020; community offices remain because voting elsewhere occurred": 1
+  },
+  "local_snapshot_results": 43351,
+  "local_snapshot_events": 3292,
+  "results_with_votes": 25083,
+  "results_with_null_votes": 21717,
+  "events_with_no_transcribed_results": 5,
+  "ep_offices": 0,
+  "occupying_power_offices": 0,
+  "applied_changes": 0,
+  "total_councils": 1582,
+  "historical_only_councils": 5,
+  "total_direct_executives": 1422,
+  "total_legislatures": 1,
+  "full_territorial_holds": 373,
+  "partial_territorial_holds": 1,
+  "current_national_offices": 2,
+  "current_subnational_offices": 2998,
+  "national_events": 21,
+  "national_results": 3428,
+  "subnational_events": 3301,
+  "subnational_results": 43372,
+  "local_hold_units": {
+    "H_category_units": 352,
+    "special_city_Sevastopol": 1,
+    "partial_Novoaidar": 1
+  },
+  "overlapping_upper_tier_hold_units": {
+    "raion": 17,
+    "regional": 3
+  }
+}
