@@ -1,0 +1,40 @@
+{
+  "pack": "Georgia Prompt BG",
+  "supersedes": "Georgia Prompt BE",
+  "country_id": "georgia",
+  "country_code": "GE",
+  "research_as_of": "2026-09-29",
+  "purpose": "research_documentation_only",
+  "applied_changes": 0,
+  "approvals_all_unchecked": true,
+  "application_writes": false,
+  "importer_supplied": false,
+  "repo_changes": false,
+  "EP_offices": 0,
+  "parallel_institution_offices": 0,
+  "successor_edges": 0,
+  "canonical_field_count": 223,
+  "field_contract_sha256": "8d785531d31da3123be64db2a3c3d79183e039ad4f5d99abc505374f17da51ae",
+  "research_coverage_complete": false,
+  "BE_archive_comparison": "not_available_hold_GE-BG-G01",
+  "calendar_policy": "all ordinary families prominent at country level regardless of 18-month global alert window",
+  "draft_tier_histogram": {
+    "national": 3,
+    "regional": 5,
+    "local": 168
+  },
+  "slim_land": true,
+  "slim_root": "docs/ + schemas/",
+  "omitted_from_slim": [
+    "data/events.jsonl",
+    "data/results.jsonl",
+    "sources/",
+    "heavy evidence and audit extracts"
+  ],
+  "first_import": {
+    "events": 0,
+    "results": 0,
+    "sources": 0
+  },
+  "production_state_changed": false
+}

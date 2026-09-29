@@ -1,0 +1,66 @@
+{
+  "pack": "Prompt BG — Georgia",
+  "country_id": "georgia",
+  "country_code": "GE",
+  "country_name": "Georgia",
+  "snapshot": "2026-09-29",
+  "decision": "accept_with_holds",
+  "acceptance": "Accepted with all GE-BG-G01 through GE-BG-G21 holds left open.",
+  "open_holds": [
+    "GE-BG-G01",
+    "GE-BG-G02",
+    "GE-BG-G03",
+    "GE-BG-G04",
+    "GE-BG-G05",
+    "GE-BG-G06",
+    "GE-BG-G07",
+    "GE-BG-G08",
+    "GE-BG-G09",
+    "GE-BG-G10",
+    "GE-BG-G11",
+    "GE-BG-G12",
+    "GE-BG-G13",
+    "GE-BG-G14",
+    "GE-BG-G15",
+    "GE-BG-G16",
+    "GE-BG-G17",
+    "GE-BG-G18",
+    "GE-BG-G19",
+    "GE-BG-G20",
+    "GE-BG-G21"
+  ],
+  "full_pack_zip_sha256": "62e66da9de141f9bc3d634725d2eafc44a0ac75b21dd596ed3293a0db34b8289",
+  "status": "research_only_unapproved_slim_land",
+  "applied_changes": 0,
+  "production_state_changed": false,
+  "justin_approved": false,
+  "current_register_complete": true,
+  "historical_numeric_coverage_complete": false,
+  "first_import": {
+    "events": 0,
+    "results": 0,
+    "sources": 0
+  },
+  "counts": {
+    "ordinary_current_offices": 130,
+    "statutory_continuation_holds": 5,
+    "historical_only_offices": 41,
+    "office_rows": 176,
+    "draft_tiers": 176,
+    "draft_tier_histogram": {
+      "national": 3,
+      "regional": 5,
+      "local": 168
+    },
+    "upcoming_calendar_rows": 7,
+    "open_holds": 21,
+    "events_omitted": 710,
+    "results_omitted": 4543,
+    "source_inventory_rows_omitted": 170
+  },
+  "land_paths": [
+    "docs/phase1/georgia/",
+    "schemas/atlas/tiers/georgia.json"
+  ],
+  "executed_operations": "Slim land artifact generation and read-only validation only; no importer, SQLite, VPS, UI, repository, service, or PR changes."
+}

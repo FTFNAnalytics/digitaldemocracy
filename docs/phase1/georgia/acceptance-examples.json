@@ -1,0 +1,191 @@
+[
+  {
+    "example_id": "GE-BG-A01",
+    "name": "GE and scope",
+    "expected": "Country fields are georgia / GE, never US-GA; no parallel-institution office IDs.",
+    "validator_check": "country_scope",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A02",
+    "name": "Current inventory",
+    "expected": "64 ordinary municipal councils + 64 popular mayors + Parliament + Adjara = 130 ordinary-cycle offices.",
+    "validator_check": "current_inventory",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A03",
+    "name": "Five continued councils",
+    "expected": "Exactly five current_scope_hold council offices under article164; no direct gamgebeli rows for them.",
+    "validator_check": "continuation",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A04",
+    "name": "Tbilisi nesting",
+    "expected": "DECs 1–10 combine into one city council and one mayor; no district popular offices.",
+    "validator_check": "tbilisi",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A05",
+    "name": "EP exclusion",
+    "expected": "EP offices = 0.",
+    "validator_check": "ep_zero",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A06",
+    "name": "Indirect President",
+    "expected": "No current popular president; indirect calendar context has no office IDs.",
+    "validator_check": "president_mode",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A07",
+    "name": "President rounds",
+    "expected": "2018 first round and runoff have 25 and 2 published candidate rows, respectively.",
+    "validator_check": "president_rounds",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A08",
+    "name": "1992 chair",
+    "expected": "1992 popular head-of-state/Chair is separate from President and Parliament votes.",
+    "validator_check": "chair_1992",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A09",
+    "name": "Adjara history",
+    "expected": "2001 lower chamber, upper chamber and popular head are separate historical offices; no current popular regional head.",
+    "validator_check": "adjara_eras",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A10",
+    "name": "Municipal reform",
+    "expected": "14 historical 2014 geographies × 2 offices plus seven pre-2014 councils; no successor links.",
+    "validator_check": "reform",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A11",
+    "name": "Draft tiers",
+    "expected": "Exactly one draft unapproved tier per each office, including holds/history.",
+    "validator_check": "tiers",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A12",
+    "name": "Upcoming prominence",
+    "expected": "Every calendar row country_surface_prominent=true; outside-window ordinary formulas are retained.",
+    "validator_check": "calendar",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A13",
+    "name": "No invented days",
+    "expected": "Every future exact_date remains null; formula years use sourced terms.",
+    "validator_check": "date_precision",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A14",
+    "name": "Current code",
+    "expected": "Calendar uses replacement Election Code; no current council runoff invented from 2021 rules.",
+    "validator_check": "current_code",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A15",
+    "name": "Blank votes",
+    "expected": "Source blanks are null; partial sums are audit-only.",
+    "validator_check": "missing_values",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A16",
+    "name": "Runoff nonparticipants",
+    "expected": "Zero/absent columns do not create runoff candidates; Tbilisi 2021 has exactly two runoff candidates.",
+    "validator_check": "runoff_participants",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A17",
+    "name": "Subtotal exclusion",
+    "expected": "2017 Tbilisi Kaladze vote total is 204061, not doubled by district total rows.",
+    "validator_check": "subtotal",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A18",
+    "name": "Independent aggregate",
+    "expected": "2014 Tbilisi runoff official aggregates 84350 and 222066 do not fill blank precinct cells.",
+    "validator_check": "published_aggregate",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A19",
+    "name": "2003 annulment",
+    "expected": "Annulled 2003 PR component has no result rows; 2004 repeat is separate.",
+    "validator_check": "annulment",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A20",
+    "name": "Missing 2004 total",
+    "expected": "United Communist Party in 2004 PR repeat has votes=null, never zero.",
+    "validator_check": "absent_total",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A21",
+    "name": "Signed Adjara 2024",
+    "expected": "11 protocol rows; explicit seat awards sum21; blank seat cells remain null.",
+    "validator_check": "adjara_signed",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A22",
+    "name": "2021 seats",
+    "expected": "All64 council final seat vectors total2068; distinct result kind prevents treating them as PR-only.",
+    "validator_check": "council_seats",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A23",
+    "name": "1992 component seats",
+    "expected": "The 24 published multi-member allocations sum150; no total-chamber seat figure inferred.",
+    "validator_check": "source_1992",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A24",
+    "name": "Source hashes",
+    "expected": "Every retained source has exact byte length and SHA-256 plus URL; failed retrieval is not a source absence assertion.",
+    "validator_check": "sources",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A25",
+    "name": "223 contract",
+    "expected": "Exactly223 unique table.column entries match the retained contract in original order.",
+    "validator_check": "field_map",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A26",
+    "name": "Approval state",
+    "expected": "All Justin approvals false and all Markdown boxes unchecked; applied_changes=0.",
+    "validator_check": "approvals",
+    "justin_approved": false
+  },
+  {
+    "example_id": "GE-BG-A27",
+    "name": "Offline integrity",
+    "expected": "Validator reads pack only, checks foreign keys, identifiers, counts, dates and every checksum.",
+    "validator_check": "integrity",
+    "justin_approved": false
+  }
+]
