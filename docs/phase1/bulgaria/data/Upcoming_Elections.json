@@ -1,0 +1,303 @@
+[
+  {
+    "calendar_id": "BI-CAL-NA",
+    "office_family": "national_assembly",
+    "contest_name": "National Assembly / Народно събрание",
+    "next_label": "Four-year term; next ordinary occurrence 2030, no later than one month before expiry of current Assembly powers (Article 64). Exact day and formal call pending.",
+    "date_basis": "constitutional/statutory formula",
+    "next_year": 2030,
+    "scheduled_date": null,
+    "date_precision": "year_or_formula",
+    "last_comparable": "19 April 2026 (early)",
+    "formal_call": "pending_or_not_established",
+    "conditional": null,
+    "office_id": "BG-NATIONAL-ASSEMBLY",
+    "scope": "country_family",
+    "source_ids": [
+      "BI-turn60view1",
+      "BI-turn21view1"
+    ],
+    "source_urls": [
+      "https://www.constcourt.bg/bg/legal-info-92",
+      "https://results.cik.bg/pe202604/rezultati/"
+    ],
+    "country_surface_prominent": true,
+    "global_alert_window_controls_country_visibility": false,
+    "research_snapshot": "2026-09-29",
+    "justin_approved": false
+  },
+  {
+    "calendar_id": "BI-CAL-NA-EARLY",
+    "office_family": "national_assembly",
+    "contest_name": "Early / snap parliamentary contingency",
+    "next_label": "No next snap date established. Article 99(5) provides an early-election path within two months after failed government formation under its procedure; assess against the current constitutional text and any new decree.",
+    "date_basis": "research hold",
+    "next_year": null,
+    "scheduled_date": null,
+    "date_precision": "unknown_or_conditional",
+    "last_comparable": "19 April 2026 (early); preceding early contest 27 October 2024",
+    "formal_call": "pending_or_not_established",
+    "conditional": "Only if the constitutional early-election procedure is triggered; no assumed dissolution date.",
+    "office_id": "BG-NATIONAL-ASSEMBLY",
+    "scope": "country_family",
+    "source_ids": [
+      "BI-turn61view1",
+      "BI-turn57view0",
+      "BI-turn15view0"
+    ],
+    "source_urls": [
+      "https://www.constcourt.bg/bg/legal-info-92",
+      "https://data.ipu.org/parliament/BG/BG-LC01/election/BG-LC01-E20260419/",
+      "https://results.cik.bg/pe202410_ks/rezultati/index.html"
+    ],
+    "country_surface_prominent": true,
+    "global_alert_window_controls_country_visibility": false,
+    "research_snapshot": "2026-09-29",
+    "justin_approved": false
+  },
+  {
+    "calendar_id": "BI-CAL-PRES",
+    "office_family": "presidential_ticket",
+    "contest_name": "President and Vice-President — first ballot",
+    "next_label": "25 October 2026",
+    "date_basis": "CIK / official call / decree",
+    "next_year": 2026,
+    "scheduled_date": "2026-10-25",
+    "date_precision": "day",
+    "last_comparable": "14 November 2021 first ballot",
+    "formal_call": "issued",
+    "conditional": null,
+    "office_id": "BG-PRESIDENT-JOINT-TICKET",
+    "scope": "country_family",
+    "source_ids": [
+      "BI-turn25view3",
+      "BI-turn26view0"
+    ],
+    "source_urls": [
+      "https://www.cik.bg/bg/decisions/92/2026-09-03",
+      "https://results.cik.bg/pvrns2021/tur1/rezultati/"
+    ],
+    "country_surface_prominent": true,
+    "global_alert_window_controls_country_visibility": false,
+    "research_snapshot": "2026-09-29",
+    "justin_approved": false
+  },
+  {
+    "calendar_id": "BI-CAL-PRES-R2",
+    "office_family": "presidential_ticket",
+    "contest_name": "President and Vice-President — conditional runoff",
+    "next_label": "Within seven days of the first ballot if no candidate is elected (Article 93(4)); exact second-ballot call pending in this evidence set.",
+    "date_basis": "constitutional/statutory formula",
+    "next_year": 2026,
+    "scheduled_date": null,
+    "date_precision": "year_or_formula",
+    "last_comparable": "21 November 2021 runoff",
+    "formal_call": "pending_or_not_established",
+    "conditional": "No first-round winner under Article 93(3).",
+    "office_id": "BG-PRESIDENT-JOINT-TICKET",
+    "scope": "country_family",
+    "source_ids": [
+      "BI-turn61view2",
+      "BI-turn37view2"
+    ],
+    "source_urls": [
+      "https://www.constcourt.bg/en/legal-info-92",
+      "https://results.cik.bg/pvrns2021/tur2/rezultati/"
+    ],
+    "country_surface_prominent": true,
+    "global_alert_window_controls_country_visibility": false,
+    "research_snapshot": "2026-09-29",
+    "justin_approved": false
+  },
+  {
+    "calendar_id": "BI-CAL-EP",
+    "office_family": "european_parliament",
+    "contest_name": "European Parliament — Bulgaria",
+    "next_label": "Five-year electoral cycle; next election year 2029. EU period and Bulgarian polling day not established here; formal national call pending.",
+    "date_basis": "constitutional/statutory formula",
+    "next_year": 2029,
+    "scheduled_date": null,
+    "date_precision": "year_or_formula",
+    "last_comparable": "9 June 2024",
+    "formal_call": "pending_or_not_established",
+    "conditional": null,
+    "office_id": "BG-EUROPEAN-PARLIAMENT",
+    "scope": "country_family",
+    "source_ids": [
+      "BI-turn57view1",
+      "BI-turn15view2"
+    ],
+    "source_urls": [
+      "https://elections.europa.eu/en/easy-to-read/",
+      "https://results.cik.bg/europe2024/rezultati/"
+    ],
+    "country_surface_prominent": true,
+    "global_alert_window_controls_country_visibility": false,
+    "research_snapshot": "2026-09-29",
+    "justin_approved": false
+  },
+  {
+    "calendar_id": "BI-CAL-COUNCIL",
+    "office_family": "municipal_council",
+    "contest_name": "Municipal councils — all 265 municipalities",
+    "next_label": "Four-year 2023–2027 cycle; next ordinary occurrence 2027. Exact day pending presidential call.",
+    "date_basis": "constitutional/statutory formula",
+    "next_year": 2027,
+    "scheduled_date": null,
+    "date_precision": "year_or_formula",
+    "last_comparable": "29 October 2023",
+    "formal_call": "pending_or_not_established",
+    "conditional": null,
+    "office_id": null,
+    "scope": "country_family",
+    "source_ids": [
+      "BI-turn43view1",
+      "BI-turn36search24",
+      "BI-turn34search3"
+    ],
+    "source_urls": [
+      "https://www.constcourt.bg/en/legal-info-92",
+      "https://oik0208.cik.bg/mi2023",
+      "https://oik0426.cik.bg/mi2023/decisions/143/2023-11-02"
+    ],
+    "country_surface_prominent": true,
+    "global_alert_window_controls_country_visibility": false,
+    "research_snapshot": "2026-09-29",
+    "justin_approved": false
+  },
+  {
+    "calendar_id": "BI-CAL-MAYOR",
+    "office_family": "municipal_mayor",
+    "contest_name": "Municipality-wide directly elected mayors — all 265 municipalities",
+    "next_label": "Four-year 2023–2027 cycle; next ordinary occurrence 2027. Exact day pending presidential call.",
+    "date_basis": "constitutional/statutory formula",
+    "next_year": 2027,
+    "scheduled_date": null,
+    "date_precision": "year_or_formula",
+    "last_comparable": "29 October 2023 first ballot; 5 November 2023 where runoff required",
+    "formal_call": "pending_or_not_established",
+    "conditional": null,
+    "office_id": null,
+    "scope": "country_family",
+    "source_ids": [
+      "BI-turn43view1",
+      "BI-turn59search36",
+      "BI-turn36search24",
+      "BI-turn34search3"
+    ],
+    "source_urls": [
+      "https://www.constcourt.bg/en/legal-info-92",
+      "https://www.cik.bg/upload/156762/IZBOREN_KODEKS.pdf",
+      "https://oik0208.cik.bg/mi2023",
+      "https://oik0426.cik.bg/mi2023/decisions/143/2023-11-02"
+    ],
+    "country_surface_prominent": true,
+    "global_alert_window_controls_country_visibility": false,
+    "research_snapshot": "2026-09-29",
+    "justin_approved": false
+  },
+  {
+    "calendar_id": "BI-CAL-MAYOR-R2",
+    "office_family": "municipal_mayor",
+    "contest_name": "Municipality-wide mayors — conditional ordinary runoff",
+    "next_label": "Non-working day within seven days of the first ballot where required by Election Code Article 452(4); 2027 first-ballot date not yet established.",
+    "date_basis": "constitutional/statutory formula",
+    "next_year": 2027,
+    "scheduled_date": null,
+    "date_precision": "year_or_formula",
+    "last_comparable": "5 November 2023",
+    "formal_call": "pending_or_not_established",
+    "conditional": "No first-ballot winner; no council runoff is inferred.",
+    "office_id": null,
+    "scope": "country_family",
+    "source_ids": [
+      "BI-turn34search3",
+      "BI-turn58view1"
+    ],
+    "source_urls": [
+      "https://oik0426.cik.bg/mi2023/decisions/143/2023-11-02",
+      "https://www.cik.bg/bg/decisions/126/2026-09-04"
+    ],
+    "country_surface_prominent": true,
+    "global_alert_window_controls_country_visibility": false,
+    "research_snapshot": "2026-09-29",
+    "justin_approved": false
+  },
+  {
+    "calendar_id": "BI-CAL-TRAMBESH",
+    "office_family": "municipal_mayor",
+    "contest_name": "Polski Trambesh municipality mayor — by-election",
+    "next_label": "18 October 2026 (Decree 155 of 13 May 2026; CIK Decision 126-MI)",
+    "date_basis": "CIK / official call / decree",
+    "next_year": 2026,
+    "scheduled_date": "2026-10-18",
+    "date_precision": "day",
+    "last_comparable": "29 October 2023 ordinary local first ballot (orientation; not asserted to be the last intervening by-election)",
+    "formal_call": "issued",
+    "conditional": null,
+    "office_id": "BG-VTR26-M",
+    "scope": "single_municipality",
+    "source_ids": [
+      "BI-turn58view1"
+    ],
+    "source_urls": [
+      "https://www.cik.bg/bg/decisions/126/2026-09-04"
+    ],
+    "country_surface_prominent": true,
+    "global_alert_window_controls_country_visibility": false,
+    "research_snapshot": "2026-09-29",
+    "justin_approved": false
+  },
+  {
+    "calendar_id": "BI-CAL-TRAMBESH-R2",
+    "office_family": "municipal_mayor",
+    "contest_name": "Polski Trambesh municipality mayor — conditional by-election runoff",
+    "next_label": "25 October 2026, only if a second ballot is needed",
+    "date_basis": "CIK / official call / decree",
+    "next_year": 2026,
+    "scheduled_date": "2026-10-25",
+    "date_precision": "day",
+    "last_comparable": "5 November 2023 ordinary mayoral runoff family (orientation only)",
+    "formal_call": "issued",
+    "conditional": "CIK Decision 126-MI explicitly describes a possible second ballot.",
+    "office_id": "BG-VTR26-M",
+    "scope": "single_municipality",
+    "source_ids": [
+      "BI-turn58view1"
+    ],
+    "source_urls": [
+      "https://www.cik.bg/bg/decisions/126/2026-09-04"
+    ],
+    "country_surface_prominent": true,
+    "global_alert_window_controls_country_visibility": false,
+    "research_snapshot": "2026-09-29",
+    "justin_approved": false
+  },
+  {
+    "calendar_id": "BI-CAL-GNA",
+    "office_family": "grand_national_assembly",
+    "contest_name": "Grand National Assembly — constitutional extraordinary path",
+    "next_label": "No ordinary periodic election or next year. Article 160 requires a two-thirds Assembly resolution, then a presidential call within three months. No such next call established here.",
+    "date_basis": "research hold",
+    "next_year": null,
+    "scheduled_date": null,
+    "date_precision": "unknown_or_conditional",
+    "last_comparable": "10 and 17 June 1990",
+    "formal_call": "pending_or_not_established",
+    "conditional": null,
+    "office_id": "BG-GRAND-NATIONAL-ASSEMBLY-1990",
+    "scope": "conditional_constituent_path",
+    "source_ids": [
+      "BI-turn61view2",
+      "BI-turn40view2"
+    ],
+    "source_urls": [
+      "https://www.constcourt.bg/en/legal-info-92",
+      "https://data.ipu.org/election-summary/HTML/2045_90.htm"
+    ],
+    "country_surface_prominent": true,
+    "global_alert_window_controls_country_visibility": false,
+    "research_snapshot": "2026-09-29",
+    "justin_approved": false
+  }
+]

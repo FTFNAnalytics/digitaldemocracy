@@ -1,0 +1,254 @@
+[
+  {
+    "case_id": "A01",
+    "scenario": "Exactly 533 current in-scope, 1 historical-only, 3067 held offices",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A01",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A02",
+    "scenario": "All 530 accepted P IDs and original labels/geography preserved",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A02",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A03",
+    "scenario": "3067 held identities never promoted",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A03",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A04",
+    "scenario": "265 mayor/council pairs survive duplicate municipality labels",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A04",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A05",
+    "scenario": "Tier records 1:1 and use the frozen P vocabulary",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A05",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A06",
+    "scenario": "New BI approvals false, all Justin boxes unchecked",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A06",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A07",
+    "scenario": "P event vectors preserved without any changed original field",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A07",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A08",
+    "scenario": "P result vectors preserved without any changed original field",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A08",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A09",
+    "scenario": "All 10337 first-round/unresolved observations retained",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A09",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A10",
+    "scenario": "Gradec 2015 remains six first-round plus two unresolved observations",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A10",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A11",
+    "scenario": "P missing votes and explicit zeros remain distinct",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A11",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A12",
+    "scenario": "Inherited history counts retain accepted/held separation",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A12",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A13",
+    "scenario": "New event/result IDs unique and referentially complete",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A13",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A14",
+    "scenario": "Eight distinct parliamentary contests from 2021 through April 2026",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A14",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A15",
+    "scenario": "Court correction stays on October 2024 contest, never new 2025 ballot",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A15",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A16",
+    "scenario": "1997 untranscribed results remain zero rows, not zero-valued results",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A16",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A17",
+    "scenario": "EP begins in 2007 and all five contest years retained",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A17",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A18",
+    "scenario": "Presidential joint family and separate rounds; invalid votes never seats",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A18",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A19",
+    "scenario": "Distinct historical GNA, 400 total seats across two explicit polling dates",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A19",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A20",
+    "scenario": "All five ordinary calendar families present and country-visible",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A20",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A21",
+    "scenario": "2027/2029/2030 formula cards do not invent exact days",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A21",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A22",
+    "scenario": "Presidential official first ballot and formula-only conditional runoff",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A22",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A23",
+    "scenario": "Called Polski Trambesh by-election stays on existing mayor ID",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A23",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A24",
+    "scenario": "Early Assembly contingency has no fabricated future day/year",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A24",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A25",
+    "scenario": "All 223 destination columns mapped exactly once, 20 tables",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A25",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A26",
+    "scenario": "No regional offices, guessed successors or applied changes",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A26",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A27",
+    "scenario": "All BI typed/calendar/gap source IDs resolve",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A27",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A28",
+    "scenario": "Saved-source hashes match, extraction hashes never pretend to be raw",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A28",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A29",
+    "scenario": "Original register, tiers, vectors and payload hashes unchanged",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A29",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A30",
+    "scenario": "Original archive member hashes and lengths verified without extraction",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A30",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A31",
+    "scenario": "Published aggregate conflicts explicitly retained and arithmetic reproducible",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A31",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A32",
+    "scenario": "Typed numeric and historical date domains valid",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A32",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A33",
+    "scenario": "Counts reconcile including held history and source-only observations",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A33",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A34",
+    "scenario": "README/report/dedicated calendar each contain first-class calendar",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A34",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A35",
+    "scenario": "At least fifteen concrete acceptance examples with unique IDs",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A35",
+    "Justin_approval": false
+  },
+  {
+    "case_id": "A36",
+    "scenario": "SHA256SUMS covers every packaged file and every hash matches",
+    "expected": "The corresponding named assertion in validate_pack.py is true; any failed preservation or scope condition fails the pack audit.",
+    "automated_check": "A36",
+    "Justin_approval": false
+  }
+]

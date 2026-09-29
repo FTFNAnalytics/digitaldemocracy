@@ -1,197 +1,54 @@
-# Bulgaria → Atlas master field map
+# Bulgaria — 223-column documentary field map
 
-**Prompt P: documentation and accepted-with-hold tiers.** Main contracts `00c2ea7458ad7705aad487c4a7665d9d343b5554`; frozen PR #16 `de3541276cd37ca749b740c229cee67475f0d317` (`codex/europe-bulgaria`). Justin accepted 530 municipality-wide rows on 2026-09-19 and held 3,067 district/village rows. No importer, SQLite, VPS, UI, redirects or Mexico/continuity edits. Governing plan/DDL/identity files and prior Europe field maps were read from pinned main; locked decisions remain unchanged.
+Exactly **223 columns across 20 tables**, keyed by the frozen contract in `contracts/columns.json`. Every P destination mapping is retained below and in the machine-readable map, with a BI-specific rule. This is documentation, not executable import code. New BI research IDs are not asserted to be live Atlas IDs. `schema_migration` is outside this country map; no migrations run.
 
-T=`schemas/atlas/tiers/bulgaria.json`, pack status **approved** with hold, SHA `9a6718fe301f440511cc9e9f9b4139b3a1e0332ef2e3e6c9b3063f67f04652ab` (predecessor draft `cff8fcabb12716230a314309162a40c72a3d7d13fe1aa4469cfb1655767c48f0`). Register SHA `00ddcca3c48141302a7432f97effd017a009fee3d64fb7f9000a72ef79663559` (1309333 bytes). Exact 3597 offices:265 Mayor, 265 Municipal council, 35 District mayor, 3032 Village mayor. **Proposed municipal 3597 / regional 0**. **Production-approved 530** (Mayor + Municipal council). **Held 3067** district/village (`human_review_required: true`, `review_category: submunicipal_scope`). Future importer loads only the 530 accepted rows unless policy changes. No geographic tier from calendar labels.
+P source locator abbreviations and raw-envelope definition remain in `baseline/Prompt_P/Bulgaria_Field_Map.md`. The historical approval in that archived map applies to the 530 P municipality-wide offices only. BI calendar evidence supplements P's null next-date cells without changing the archived cells.
 
-The map covers all 223 destination columns across 20 research/ledger tables and every column of 15 payload tables. schema_migration.version/description are migration-owned constants, not country mappings; migrations are not run. [Identity Rules](Bulgaria_Identity_Rules.md), [Acceptance Examples](Bulgaria_Acceptance_Examples.md), [Input Inventory](Bulgaria_Input_Inventory.json), [complete Vectors](Bulgaria_Identity_Vectors.json), [CI checklist](Prompt_P_Tiers_Field_Map_and_CI.md).
+## country
 
-## Verified baseline and reconciliation
+Country BG / bulgaria, existing scope retained; coverage remains partial.
 
-| Measure | Count / rule |
+| Column | BI source / conversion / null policy |
 | --- | --- |
-| Register / companion register | 3597 each; every field and row equal |
-| Master history table | Absent; do not invent one |
-| Companion H / standalone IX | 8661 each; exact key and normalized-field equality; one event set |
-| Detailed returns D | 25817; every row binds H by full source HK |
-| First-round rows F | 7746; retained input only, no additional typed results or completed events |
-| Unresolved rows X | 2591; retained input only, 559 office/date/phase groups |
-| Prospective events / regional offices proposed | 0 / 0 |
-| Sources | 3971 catalogue IDs +2 inline-only URLs=3973 |
-| Input descriptors | 54 outer +3617 members +T=3672 |
+| country_id | bulgaria / BG as appropriate; no extra country identity. |
+| country_code | bulgaria / BG as appropriate; no extra country identity. |
+| name | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Country BG / bulgaria, existing scope retained; coverage remains partial. |
+| polity_kind | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Country BG / bulgaria, existing scope retained; coverage remains partial. |
+| region_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Country BG / bulgaria, existing scope retained; coverage remains partial. |
+| coverage_status | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Country BG / bulgaria, existing scope retained; coverage remains partial. |
+| screening_as_of_label | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Country BG / bulgaria, existing scope retained; coverage remains partial. |
+| notes | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Country BG / bulgaria, existing scope retained; coverage remains partial. |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| raw_json | Complete original object/source_raw plus locator; no source field dropped or normalized in place. |
 
-A selected source history can carry an incomplete-certificate caveat. Selection is not certification. No F/X event, proceeding, result or date row is minted by this minimum adapter. This is a deliberate documented projection boundary, not loss of those datasets: every byte, row, phase, value and source is retained and every row has a Vectors binding entry. Future stage projection requires a separate accepted identity contract; do not turn 7746 candidates into7746 cycles.
+Inherited P mapping (unchanged documentary rules):
 
-7740 F rows share a unique (Office ID,Year) with H; these are **candidate context links only**, not proof that year alone uniquely establishes election stage. Six F rows at /rows/1665…1670 for BG-SLV11-b88d0d4475-V (Градец2015) have no selected H. X contains the corresponding two unresolved qualification-change runoff rows. Both datasets stay outside completed histories. X shares no Office ID+ballot-year group with selected H baseline. Do not force a nearest-date match, invent an HK or use unresolved rows as missing third histories.
-
-All 3597 next-date cells and both Cal date cells are NULL. Expected autumn 2027 narrative stays raw; no next event/date. All 8661 historical ballot cells are actual ISO days; certainty remains unknown. 587 D rows across 221 H events have shares but no vote counts. D has 26 zero votes, 28 zero shares, 14247 zero seats; preserve missing versus zero and printed rounding without recalculation. Original current-control count 0 is an inventory count, not zero control/risk. No poll/control collection supplied.
-
-## Source notation and exact retention
-
-P=`data/countries/bulgaria/`; V=P+unpacked/ is a virtual member path, not a committed directory. JSON pointers are zero-based RFC6901; sheet/source_rows are original spreadsheet locators. Every file/member SHA and length is in Inventory. Reconstruct the 48 XZ chunks in manifest order; verify chunk hashes/lengths and concat hash, decompress, reject links/duplicate/absolute/traversal/unlisted tar members, verify inventory.json then all 3616 other members. The frozen extractor reproduced exact pinned chunk bytes from the original Europe archive; no frozen bytes were changed.
-
-| Alias | Path |
-| --- | --- |
-| M / Cov | P+manifest.json / coverage.json |
-| O / J | V+tables/master/office-register.json / V+tables/companion/office-register.json |
-| H / IX | V+tables/companion/history-index.json / V+history-index.json |
-| D | V+tables/companion/detailed-returns.json |
-| F / X | V+tables/companion/first-round-returns.json / V+tables/companion/unresolved-history.json |
-| S=SM/SC | V+tables/master/sources.json / V+tables/companion/sources.json |
-| Cal / Nts | V+tables/master/election-calendar.json / V+tables/master/country-notes.json |
-| BF | V+Office_Briefings/Offices/<exact office_id>.html; country HTML also retained |
-| T | schemas/atlas/tiers/bulgaria.json |
-
-Canonical raw envelope: {origin:locator,row:original row/object,columns:original columns or null,values:original array or null,supplemental:related raw values/locators}. Locator contains input_path, sha256, json_pointer, sheet, source_row, column, html_anchor_index with explicit nulls when absent. Store JSON values unaltered; hash original bytes, not raw reserialization. Keep all unknown keys and original strings, including combined party/coalition labels. HTML/scripts/formulas are inert artifact bytes; never execute. Shared workbook originals remain in checksummed archive, not supplied as payload workbooks. Recovery locators must name immutable commit/member/content hash, not a scratch path.
-
-## Geographic identity exception
-
-Name+office-type bridge geography formula yields 3239 unique keys for 3597 offices:272 ambiguous groups cover 630 office rows (358 collisions beyond first members). Example: two Абланица village mayors BG-BLG52-fc5837f6a1-V and BG-PAZ08-fc5837f6a1-V. Use **G=key("geo",[CID,exact office_id])** for all Bulgaria rows, preserving supplied jurisdiction/type as labels. This avoids merging distinct places and uses no invented political office. No parent inferred from province-like prefixes. Legacy name/type key is retained in Vectors; alias it only when its office target is unique. Ambiguous legacy key must not redirect to any arbitrary office/geography. No Bulgaria public geography IDs were established by this handoff.
-
-## Source-column coverage
-
-Every entire table, including sheet/columns/source_rows/rows and unknown keys, is retained. The following table adds typed projection/disposition for every source column. i is exact zero-based row index; original sheet row=source_rows[i].
-
-| Source table | Column | Locator | Projection / retention |
-| --- | --- | --- | --- |
-| V+tables/companion/detailed-returns.json | Office ID | /rows/i/0; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/detailed-returns.json | Country | /rows/i/1; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/detailed-returns.json | Jurisdiction | /rows/i/2; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/detailed-returns.json | Year | /rows/i/3; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/detailed-returns.json | Ballot date if recorded | /rows/i/4; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/detailed-returns.json | Electoral unit | /rows/i/5; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/detailed-returns.json | Candidate or list | /rows/i/6; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/detailed-returns.json | Party or proposer | /rows/i/7; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/detailed-returns.json | Votes or marks | /rows/i/8; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/detailed-returns.json | Share on stated basis | /rows/i/9; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/detailed-returns.json | Seats | /rows/i/10; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/detailed-returns.json | Result coverage | /rows/i/11; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/detailed-returns.json | Vote basis | /rows/i/12; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/detailed-returns.json | Source URL | /rows/i/13; Detailed returns, source_rows[i] | D result_row and exact H binding; full row raw |
-| V+tables/companion/first-round-returns.json | Office ID | /rows/i/0; First round returns, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/first-round-returns.json | Country | /rows/i/1; First round returns, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/first-round-returns.json | Jurisdiction | /rows/i/2; First round returns, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/first-round-returns.json | Year | /rows/i/3; First round returns, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/first-round-returns.json | Candidate or list | /rows/i/4; First round returns, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/first-round-returns.json | Party | /rows/i/5; First round returns, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/first-round-returns.json | Votes | /rows/i/6; First round returns, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/first-round-returns.json | Share on source basis | /rows/i/7; First round returns, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/first-round-returns.json | Coverage | /rows/i/8; First round returns, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/first-round-returns.json | Source URL | /rows/i/9; First round returns, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/history-index.json | Office ID | /rows/i/0; History index, source_rows[i] | H primary event/date; all coverage/comparability preserved; no summary-to-result duplication |
-| V+tables/companion/history-index.json | Country | /rows/i/1; History index, source_rows[i] | H primary event/date; all coverage/comparability preserved; no summary-to-result duplication |
-| V+tables/companion/history-index.json | Jurisdiction | /rows/i/2; History index, source_rows[i] | H primary event/date; all coverage/comparability preserved; no summary-to-result duplication |
-| V+tables/companion/history-index.json | Ballot date if recorded | /rows/i/3; History index, source_rows[i] | H primary event/date; all coverage/comparability preserved; no summary-to-result duplication |
-| V+tables/companion/history-index.json | Year | /rows/i/4; History index, source_rows[i] | H primary event/date; all coverage/comparability preserved; no summary-to-result duplication |
-| V+tables/companion/history-index.json | Leading candidate or party | /rows/i/5; History index, source_rows[i] | H primary event/date; all coverage/comparability preserved; no summary-to-result duplication |
-| V+tables/companion/history-index.json | Leader share | /rows/i/6; History index, source_rows[i] | H primary event/date; all coverage/comparability preserved; no summary-to-result duplication |
-| V+tables/companion/history-index.json | Runner-up candidate or party | /rows/i/7; History index, source_rows[i] | H primary event/date; all coverage/comparability preserved; no summary-to-result duplication |
-| V+tables/companion/history-index.json | Runner-up share | /rows/i/8; History index, source_rows[i] | H primary event/date; all coverage/comparability preserved; no summary-to-result duplication |
-| V+tables/companion/history-index.json | Vote basis | /rows/i/9; History index, source_rows[i] | H primary event/date; all coverage/comparability preserved; no summary-to-result duplication |
-| V+tables/companion/history-index.json | Coverage | /rows/i/10; History index, source_rows[i] | H primary event/date; all coverage/comparability preserved; no summary-to-result duplication |
-| V+tables/companion/history-index.json | Comparability status | /rows/i/11; History index, source_rows[i] | H primary event/date; all coverage/comparability preserved; no summary-to-result duplication |
-| V+tables/companion/history-index.json | Source URL | /rows/i/12; History index, source_rows[i] | H primary event/date; all coverage/comparability preserved; no summary-to-result duplication |
-| V+tables/companion/office-register.json | Office ID | /rows/i/0; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Country | /rows/i/1; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Jurisdiction | /rows/i/2; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Office | /rows/i/3; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Next polling date | /rows/i/4; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | History entries | /rows/i/5; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Latest eligible gap pp | /rows/i/6; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Middle gap pp | /rows/i/7; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Oldest gap pp | /rows/i/8; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Weighted gap pp | /rows/i/9; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Competition score | /rows/i/10; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Historical competition screen | /rows/i/11; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Pedersen interval 1 pp | /rows/i/12; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Pedersen interval 2 pp | /rows/i/13; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Mean Pedersen pp | /rows/i/14; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Margin dispersion pp | /rows/i/15; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Volatility interpretation | /rows/i/16; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Polling and government watch | /rows/i/17; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Historical coverage | /rows/i/18; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Detailed workbook | /rows/i/19; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/office-register.json | Calendar evidence | /rows/i/20; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/companion/parameters.json | Assumption | /rows/i/0; Parameters, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/companion/parameters.json | Value | /rows/i/1; Parameters, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/companion/parameters.json | Definition | /rows/i/2; Parameters, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/companion/read-me.json | Topic | /rows/i/0; Read me, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/companion/read-me.json | Use and interpretation | /rows/i/1; Read me, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/companion/sources.json | Source ID | /rows/i/0; Sources, source_rows[i] | source catalogue with equal-ID dedup and both origins; exact metadata/URL |
-| V+tables/companion/sources.json | Title | /rows/i/1; Sources, source_rows[i] | source catalogue with equal-ID dedup and both origins; exact metadata/URL |
-| V+tables/companion/sources.json | Source URL | /rows/i/2; Sources, source_rows[i] | source catalogue with equal-ID dedup and both origins; exact metadata/URL |
-| V+tables/companion/sources.json | Evidence grade | /rows/i/3; Sources, source_rows[i] | source catalogue with equal-ID dedup and both origins; exact metadata/URL |
-| V+tables/companion/sources.json | Accessed | /rows/i/4; Sources, source_rows[i] | source catalogue with equal-ID dedup and both origins; exact metadata/URL |
-| V+tables/companion/unresolved-history.json | Office ID | /rows/i/0; Unresolved history, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/unresolved-history.json | Jurisdiction | /rows/i/1; Unresolved history, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/unresolved-history.json | Ballot date | /rows/i/2; Unresolved history, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/unresolved-history.json | Phase | /rows/i/3; Unresolved history, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/unresolved-history.json | Candidate | /rows/i/4; Unresolved history, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/unresolved-history.json | Party | /rows/i/5; Unresolved history, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/unresolved-history.json | Votes | /rows/i/6; Unresolved history, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/unresolved-history.json | Share | /rows/i/7; Unresolved history, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/unresolved-history.json | Missing evidence | /rows/i/8; Unresolved history, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/unresolved-history.json | Vote basis | /rows/i/9; Unresolved history, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/companion/unresolved-history.json | Source URL | /rows/i/10; Unresolved history, source_rows[i] | retained input only; per-row origin/source/context binding in Vectors; no selected event/result/proceeding |
-| V+tables/master/country-coverage.json | Country or territory | /rows/i/0; Country coverage, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/country-coverage.json | Office records | /rows/i/1; Country coverage, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/country-coverage.json | Historical entries | /rows/i/2; Country coverage, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/country-coverage.json | Three entries | /rows/i/3; Country coverage, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/country-coverage.json | Competition scores | /rows/i/4; Country coverage, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/country-coverage.json | Grouped volatility scores | /rows/i/5; Country coverage, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/country-coverage.json | Sourced current control | /rows/i/6; Country coverage, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/country-coverage.json | Calendar cohorts | /rows/i/7; Country coverage, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/country-notes.json | Country or territory | /rows/i/0; Country notes, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/country-notes.json | Scope and remaining gaps | /rows/i/1; Country notes, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/country-notes.json | Election calendar | /rows/i/2; Country notes, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/country-notes.json | Detailed workbook | /rows/i/3; Country notes, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/country-notes.json | Screen evidence | /rows/i/4; Country notes, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/election-calendar.json | Cohort ID | /rows/i/0; Election calendar, source_rows[i] | retained calendar context only; no next event or tier from text |
-| V+tables/master/election-calendar.json | Country | /rows/i/1; Election calendar, source_rows[i] | retained calendar context only; no next event or tier from text |
-| V+tables/master/election-calendar.json | Election cohort | /rows/i/2; Election calendar, source_rows[i] | retained calendar context only; no next event or tier from text |
-| V+tables/master/election-calendar.json | Tier | /rows/i/3; Election calendar, source_rows[i] | retained calendar context only; no next event or tier from text |
-| V+tables/master/election-calendar.json | First or scheduled date | /rows/i/4; Election calendar, source_rows[i] | retained calendar context only; no next event or tier from text |
-| V+tables/master/election-calendar.json | End or runoff date | /rows/i/5; Election calendar, source_rows[i] | retained calendar context only; no next event or tier from text |
-| V+tables/master/election-calendar.json | Date status | /rows/i/6; Election calendar, source_rows[i] | retained calendar context only; no next event or tier from text |
-| V+tables/master/election-calendar.json | Historical cycles | /rows/i/7; Election calendar, source_rows[i] | retained calendar context only; no next event or tier from text |
-| V+tables/master/election-calendar.json | Coverage and timing | /rows/i/8; Election calendar, source_rows[i] | retained calendar context only; no next event or tier from text |
-| V+tables/master/election-calendar.json | Prior-call units if known | /rows/i/9; Election calendar, source_rows[i] | retained calendar context only; no next event or tier from text |
-| V+tables/master/election-calendar.json | Source URL | /rows/i/10; Election calendar, source_rows[i] | retained calendar context only; no next event or tier from text |
-| V+tables/master/office-register.json | Office ID | /rows/i/0; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Country | /rows/i/1; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Jurisdiction | /rows/i/2; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Office | /rows/i/3; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Next polling date | /rows/i/4; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | History entries | /rows/i/5; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Latest eligible gap pp | /rows/i/6; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Middle gap pp | /rows/i/7; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Oldest gap pp | /rows/i/8; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Weighted gap pp | /rows/i/9; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Competition score | /rows/i/10; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Historical competition screen | /rows/i/11; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Pedersen interval 1 pp | /rows/i/12; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Pedersen interval 2 pp | /rows/i/13; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Mean Pedersen pp | /rows/i/14; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Margin dispersion pp | /rows/i/15; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Volatility interpretation | /rows/i/16; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Polling and government watch | /rows/i/17; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Historical coverage | /rows/i/18; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Detailed workbook | /rows/i/19; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/office-register.json | Calendar evidence | /rows/i/20; Office register, source_rows[i] | O primary office/geography; J exact reconciliation only; all score/coverage fields retained raw |
-| V+tables/master/parameters.json | Assumption | /rows/i/0; Parameters, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/parameters.json | Value | /rows/i/1; Parameters, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/parameters.json | Definition | /rows/i/2; Parameters, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/read-me.json | Topic | /rows/i/0; Read me, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/read-me.json | Use and interpretation | /rows/i/1; Read me, source_rows[i] | retained_input.payload_json and owning raw envelope; no inferred metric/event |
-| V+tables/master/sources.json | Source ID | /rows/i/0; Sources, source_rows[i] | source catalogue with equal-ID dedup and both origins; exact metadata/URL |
-| V+tables/master/sources.json | Title | /rows/i/1; Sources, source_rows[i] | source catalogue with equal-ID dedup and both origins; exact metadata/URL |
-| V+tables/master/sources.json | Source URL | /rows/i/2; Sources, source_rows[i] | source catalogue with equal-ID dedup and both origins; exact metadata/URL |
-| V+tables/master/sources.json | Evidence grade | /rows/i/3; Sources, source_rows[i] | source catalogue with equal-ID dedup and both origins; exact metadata/URL |
-| V+tables/master/sources.json | Accessed | /rows/i/4; Sources, source_rows[i] | source catalogue with equal-ID dedup and both origins; exact metadata/URL |
-
-Parameters/Read me are methodological context; regional aggregate totals cannot create Bulgarian rows. Cov string counts stay strings in raw and are parsed only for count checks. Full source fields remain available even where the typed projection is intentionally absent.
+| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
+| --- | --- | --- | --- | --- |
+| country_id | M.country + declared package slug | Literal bulgaria. | country_id | No new country from shared Read me text. |
+| country_code | extract.py CODE constant | BG; frozen extract.py CODE constant. | country_id | Do not convert province-like ID fragments into regional offices. |
+| name | M.country | Copy `Bulgaria`. | country_id | Nonempty. |
+| polity_kind | Country Bulgaria in M and accepted Europe plan | sovereign_country. | country_id | No new country or territorial parent from other-country regional methodology. |
+| region_id | Accepted Europe package/plan | europe. | country_id | Geographic landing region, not office tier. |
+| coverage_status | coverage.status/remaining + Nts. Scope and remaining gaps | partial. | country_id | Explicit remaining gaps, not a nonexistent M.coverage_complete field. |
+| screening_as_of_label | No separate Bulgaria screening-as-of field | NULL; no separately supplied screening-as-of date. | country_id | NULL; M.research_snapshot belongs to dataset_release. |
+| notes | Nts.rows[0][Scope and remaining gaps] | Verbatim; no fallback rewrite in baseline. | country_id | Preserve archived CIK gaps, original certificates, decisive outcomes, 2027 village eligibility and post-28-August replacement snapshot caveat. |
+| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
+| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
+| raw_json | M + coverage.json + Nts row | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Original JSON/row equality; original byte hash and location remain recoverable; no researcher claims added. |
 
 ## dataset_lineage
+
+Existing P lineage contract retained as proposal; BI is documentary evidence, no live lineage insert.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| provenance_kind | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Existing P lineage contract retained as proposal; BI is documentary evidence, no live lineage insert. |
+| description | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Existing P lineage contract retained as proposal; BI is documentary evidence, no live lineage insert. |
+
+Inherited P mapping (unchanged documentary rules):
 
 | Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
 | --- | --- | --- | --- | --- |
@@ -200,6 +57,25 @@ Parameters/Read me are methodological context; regional aggregate totals cannot 
 | description | M.country | `Bulgaria frozen country package`; operational description. | L | Does not claim completeness. |
 
 ## dataset_release
+
+Documentation release only; actual importer/release record absent. BI snapshot 2026-09-29; P snapshot retained in baseline.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| fingerprint_sha256 | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentation release only; actual importer/release record absent. BI snapshot 2026-09-29; P snapshot retained in baseline. |
+| hash_inputs_json | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentation release only; actual importer/release record absent. BI snapshot 2026-09-29; P snapshot retained in baseline. |
+| adapter_version | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentation release only; actual importer/release record absent. BI snapshot 2026-09-29; P snapshot retained in baseline. |
+| method_version | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentation release only; actual importer/release record absent. BI snapshot 2026-09-29; P snapshot retained in baseline. |
+| schema_version | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentation release only; actual importer/release record absent. BI snapshot 2026-09-29; P snapshot retained in baseline. |
+| research_snapshot_label | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentation release only; actual importer/release record absent. BI snapshot 2026-09-29; P snapshot retained in baseline. |
+| upstream_release_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentation release only; actual importer/release record absent. BI snapshot 2026-09-29; P snapshot retained in baseline. |
+| validated_counts_json | Bulgaria_Counts.json with current/historical/held and event/result scope breakdown. |
+| research_coverage_complete | false; named archival and roster gaps persist. |
+| raw_json | Complete original object/source_raw plus locator; no source field dropped or normalized in place. |
+
+Inherited P mapping (unchanged documentary rules):
 
 | Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
 | --- | --- | --- | --- | --- |
@@ -216,104 +92,32 @@ Parameters/Read me are methodological context; regional aggregate totals cannot 
 | research_coverage_complete | coverage.status/remaining and Nts. Scope and remaining gaps | 0, from explicit remaining coverage gaps; M has no coverage_complete boolean. | R | No invented coverage_complete source property; coverage remains partial. |
 | raw_json | M entire object; coverage.json entire object | Raw envelope with both unchanged JSON objects and byte hashes. | R | Preserve M.website_ingestion=pending and original coverage gaps; documentation is not live publication status. |
 
-## retained_input
-
-| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
-| --- | --- | --- | --- | --- |
-| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
-| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
-| input_path | 54 outer +3617 unpacked members +draft T | P paths for outer files; V= P+unpacked/ followed by exact tar member path for members; T unchanged logical path. Inherited paths per Identity Rules. | (L,R,input_path) | 3672 distinct candidate inputs. Draft approval gate blocks publication. |
-| input_kind | Path class | T=tier_classification; HTML/XLSX/payload chunks=artifact; other outer/member files=package; accepted future overrides=override. | (L,R,input_path) | No content discarded because not projected. |
-| sha256 | Original file bytes | SHA-256, lowercase hex; never hash reserialized JSON. | (L,R,input_path) | 48 ordered XZ chunks, concat payload SHA, inventory and all 3617 members hash-match. |
-| byte_count | Original file bytes | Exact byte length, nonnegative integer. | (L,R,input_path) | Compare manifest bytes where supplied. |
-| recovery_locator | Verified immutable input store + original repo commit/path | sha256:<sha256> immutable content store; virtual member also records payload hash, exact archive_entry and pinned outer chunks in inventory. | (L,R,input_path) | All bytes recoverable and rehashed before publication; no dependency on temporary unpack directory. |
-| payload_json | Entire JSON file, including rows/columns/source_rows; T; overrides | For *.json: original UTF-8 JSON text after validity check; otherwise NULL. Never evaluate formulas/scripts/HTML. | (L,R,input_path) | All JSON including F/X, original score gates/coverage, parameters and caches retained losslessly. HTML scripts and formulas never execute. |
-
-## country
-
-| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
-| --- | --- | --- | --- | --- |
-| country_id | M.country + declared package slug | Literal bulgaria. | country_id | No new country from shared Read me text. |
-| country_code | extract.py CODE constant | BG; frozen extract.py CODE constant. | country_id | Do not convert province-like ID fragments into regional offices. |
-| name | M.country | Copy `Bulgaria`. | country_id | Nonempty. |
-| polity_kind | Country Bulgaria in M and accepted Europe plan | sovereign_country. | country_id | No new country or territorial parent from other-country regional methodology. |
-| region_id | Accepted Europe package/plan | europe. | country_id | Geographic landing region, not office tier. |
-| coverage_status | coverage.status/remaining + Nts. Scope and remaining gaps | partial. | country_id | Explicit remaining gaps, not a nonexistent M.coverage_complete field. |
-| screening_as_of_label | No separate Bulgaria screening-as-of field | NULL; no separately supplied screening-as-of date. | country_id | NULL; M.research_snapshot belongs to dataset_release. |
-| notes | Nts.rows[0][Scope and remaining gaps] | Verbatim; no fallback rewrite in baseline. | country_id | Preserve archived CIK gaps, original certificates, decisive outcomes, 2027 village eligibility and post-28-August replacement snapshot caveat. |
-| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
-| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
-| raw_json | M + coverage.json + Nts row | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Original JSON/row equality; original byte hash and location remain recoverable; no researcher claims added. |
-
-## geography
-
-| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
-| --- | --- | --- | --- | --- |
-| country_id | O. Country + M.country | `bulgaria`, after exact country-label check. | (country_id,geography_id) | FK country; never cross-country. |
-| geography_id | O. Office ID plus country ID | G=key("geo",[CID,exact office_id]); country-specific disambiguated binding. | (country_id,G) | 3597 unique Gs. Legacy name/type keys have272 collision groups covering630 offices; never merge those places. |
-| name | O. Jurisdiction | Verbatim (all supplied); reject empty baseline. | (country_id,G) | No synthetic municipality spelling. |
-| parent_geography_id | Not supplied | NULL. | (country_id,G) | No parent geography supplied; NULL. No province/geometry fabrication. |
-| effective_from_label | Not supplied | NULL. | (country_id,G) | No reform dates invented. |
-| effective_to_label | Not supplied | NULL. | (country_id,G) | No implicit expiry. |
-| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
-| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
-| raw_json | O row +exact Office ID/type/jurisdiction +old name/type key | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Original names and legacy collision group retained. No guessed municipality/province parents or geometry. |
-
-## office
-
-| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
-| --- | --- | --- | --- | --- |
-| id_namespace | Identity contract | `N = cdd-observatory-v1` (stable identity space; not a release). | (N,O. Office ID) | No release hash in namespace. |
-| office_id | O. Office ID | Exact string, no trim/case/diacritic normalization. | (N,office_id) | Exact 3597 O IDs; O/J sets and rows equal. 265 Mayor +265 Municipal council +35 District mayor +3032 Village mayor. |
-| country_id | O. Country + M.country | `bulgaria`; exact Bulgaria label required. | (N,office_id) | FK country via same-country geography. |
-| geography_id | O. Office ID | G bound to exact office ID as above. | (N,office_id) | Same-country FK; two same-name villages retain separate Gs. No legacy ambiguous alias. |
-| name | O. Jurisdiction + O. Office | Exact concatenation `Jurisdiction + " — " + Office`. | (N,office_id) | Both inputs retained raw. |
-| office_type | O. Office | Exact Mayor / Municipal council / District mayor / Village mayor. | (N,office_id) | Institution type stays separate from proposed geographic grouping; district/village scope explicitly reviewed. |
-| office_status | O membership in current register | `current`; baseline only. | (N,office_id) | Describes office, not present holder tenure. |
-| record_state | O membership; explicit later override if any | `active`; omission cannot withdraw. | (N,office_id) | Nonactive requires sourced state_note and retained override. |
-| state_note | No withdrawal/supersession supplied | NULL. | (N,office_id) | Never populate merely because incomplete refresh omits a row. |
-| registry_qualified | No registry qualification assertion | NULL; competition screen is not qualification. | (N,office_id) | Unknown ≠ false. |
-| next_date_id | O. Next polling date | NULL for 3597. | (N,office_id) | Cal dates also NULL; no date from expected autumn 2027 briefing prose. |
-| next_date_resolution | Same date inputs | unknown for 3597. | (N,office_id) | Pending date is not an in-window confirmed event. |
-| next_history_key | No explicit O next date | NULL baseline. | (N,office_id) | No prospective event created. Preserve existing future binding on incomplete refresh. |
-| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
-| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
-| raw_json | O row +identical J counterpart locators +BF artifact +T review scope | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Retain all score/eligibility/coverage fields, including null/zero; no current-control inference. |
-
-## office_tier_classification
-
-| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
-| --- | --- | --- | --- | --- |
-| id_namespace | T.classifications[].office_id | `N = cdd-observatory-v1` (stable identity space; not a release). | (N,office_id) | Same namespace as office. |
-| office_id | T.classifications[].office_id | Exact ID; join O. Office ID. | (N,office_id) | Set equality, no missing/extra/duplicate IDs. |
-| tier | T.classifications[].tier | municipal→municipal for 3597 draft proposals. | (N,office_id) | 0 regional/national/council/other. 3067 submunicipal assignments flagged; no calendar classifier. Legacy council metadata not emitted to DDL. |
-| review_status | T.status + row.tier / human_review_required / tier_uncertain | needs_review for all 3597 because pack is draft; explicit future null-tier hold→unknown. | (N,office_id) | 3067 human_review_required/tier_uncertain=true; 530 municipality-wide rows still need pack approval. |
-| rationale | T.classifications[].rationale | Verbatim, nonempty. | (N,office_id) | Must cite office/geography evidence, never calendar cohort alone. |
-| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
-| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
-| classification_path | T logical path | `schemas/atlas/tiers/bulgaria.json`. | (N,office_id) | Deliverable draft only, not claimed committed or approved. |
-| classification_kind | Mapping contract | `tier_classification`. | (N,office_id) | Composite FK to retained_input kind/hash. |
-| classification_sha256 | Exact T bytes | cff8fcabb12716230a314309162a40c72a3d7d13fe1aa4469cfb1655767c48f0 | (N,office_id) | Exact candidate retained-input hash; approval/revision changes T and fingerprint. |
-| raw_json | T.classifications[] original object | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Original JSON/row equality; original byte hash and location remain recoverable; no researcher claims added. |
-
-## research_date
-
-| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
-| --- | --- | --- | --- | --- |
-| date_id | H event ballot owner | date-+SHA(C([N,"event",event_id,"ballot"])). | date_id | 8661  date owners, one per selected event; no office-next date rows. |
-| label | H. Ballot date if recorded | Exact supplied ISO day for 8661. | date_id | No fallbacks needed baseline. Partial-date examples are explicitly isolated future CI mutations. |
-| precision | Full-string date grammar | day for 8661; source cells all full ISO dates. | date_id | Future month/year/range/unknown preserves precision; no invented day1. |
-| certainty | No separate historical certainty field | unknown for 8661. | date_id | Supplied day does not establish certification or statutory certainty. |
-| year | Parsed H. Ballot date if recorded | Integer 1.. 9999; NULL if unknown or range. | date_id | Actual Gregorian date validation; H. Year remains cycle identity field. |
-| month | Parsed month component | 1.. 12 for day/month; otherwise NULL. | date_id | Year precision cannot gain a month. |
-| day | Parsed day component | Actual Gregorian day for day precision only; otherwise NULL. | date_id | Leap/month-length validation. |
-| range_start_id | Explicit paired endpoints only; absent baseline | NULL baseline; future explicitly supplied endpoint gets slot ballot/start. | date_id | No cohort range inferred; Cal End or runoff date isNULL. |
-| range_end_id | Explicit paired endpoints only; absent baseline | NULL baseline; future explicitly supplied endpoint gets slot ballot/end. | date_id | Endpoints must be ordered/noncyclic actual claims, not day1 padding. |
-| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
-| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
-| raw_json | H date/Year +IX counterpart with exact locators | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | No next date inferred from Cal expected wording or snapshot. |
-
 ## election_event
+
+data/BI_New_Events.json, distinct event_id by office/date/round; raw result revision is not a new polling event.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| id_namespace | P: cdd-observatory-v1 unchanged. BI research IDs are proposals, not a claimed live namespace. |
+| office_id | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| history_key | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| event_id | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| date_id | Not materialized: retain date/date_end from documentary event and its source; future Atlas date ID requires reviewed namespace. |
+| date_resolution | day for called/past exact dates; explicit two-day GNA range retained. Year/formula calendar never padded. |
+| event_kind | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. data/BI_New_Events.json, distinct event_id by office/date/round; raw result revision is not a new polling event. |
+| selected_history_role | BI research draft; P selected remains original. |
+| electoral_system | electoral_system or NULL; era-specific details not extrapolated. |
+| comparability | coverage and quality_hold; no scoring performed. |
+| ballot_basis | Use result share_basis; ambiguous source denominator remains held. |
+| share_unit | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. data/BI_New_Events.json, distinct event_id by office/date/round; raw result revision is not a new polling event. |
+| legal_outcome | result_status with certification/revision distinction; original P unknown outcomes unchanged. |
+| record_state | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. data/BI_New_Events.json, distinct event_id by office/date/round; raw result revision is not a new polling event. |
+| state_note | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. data/BI_New_Events.json, distinct event_id by office/date/round; raw result revision is not a new polling event. |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| raw_json | Complete original object/source_raw plus locator; no source field dropped or normalized in place. |
+
+Inherited P mapping (unchanged documentary rules):
 
 | Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
 | --- | --- | --- | --- | --- |
@@ -336,7 +140,267 @@ Parameters/Read me are methodological context; regional aggregate totals cannot 
 | release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
 | raw_json | H row +IX counterpart +F/X retained-reference pointers +BF locator | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Do not merge unresolved numeric claims into H. No separate event from HTML duplicate. |
 
+## evidence_link
+
+Event/result/calendar source_ids and source_locator, plus original P evidence links unchanged.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| evidence_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Event/result/calendar source_ids and source_locator, plus original P evidence links unchanged. |
+| record_key | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Event/result/calendar source_ids and source_locator, plus original P evidence links unchanged. |
+| source_country_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Event/result/calendar source_ids and source_locator, plus original P evidence links unchanged. |
+| source_namespace | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Event/result/calendar source_ids and source_locator, plus original P evidence links unchanged. |
+| source_id | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| source_locator | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| claim_kind | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Event/result/calendar source_ids and source_locator, plus original P evidence links unchanged. |
+| date_claim_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Event/result/calendar source_ids and source_locator, plus original P evidence links unchanged. |
+| claim_json | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Event/result/calendar source_ids and source_locator, plus original P evidence links unchanged. |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+
+Inherited P mapping (unchanged documentary rules):
+
+| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
+| --- | --- | --- | --- | --- |
+| evidence_id | Resolved citation occurrence + target + claim kind | `ev-`+SHA256(C([record_key,source tuple,occurrence identity,claim_kind])); exclude value/R. | evidence_id | No duplicates/collision reassignment; changed claims retain occurrence identity. |
+| record_key | Actual supported record or retained input | Use typed locator; unresolved target is a broken reference, not unresolved evidence. | evidence_id | FK record_locator. |
+| source_country_id | Resolved source country | bulgaria. | evidence_id | Exact source FK. |
+| source_namespace | Resolved source namespace | country-package-bulgaria. | evidence_id | Exact source FK. |
+| source_id | Exact catalogue token/URL resolver | Canonical ID under source rules. | evidence_id | Must exist; known source omitted from stage fails closed. |
+| source_locator | Original citation field/HTML anchor occurrence | C(locator), retaining original field, index and token; remote page only if actually supplied. | evidence_id | Reopens original retained bytes; no fictitious PDF page. |
+| claim_kind | Field purpose | H/IX event and date; D result; O calendar_context; Cal input calendar_context; Nts country screening; F/X input stage_observation; HTML input artifact_reference. | evidence_id | Stage citations target retained input, never fabricate an event FK. Source table catalogue rows retained with original metadata. |
+| date_claim_id | H/IX selected event date where claim_kind=date | Own date_id for date claim;otherwise NULL. | evidence_id | F/X date text stays retained input; no typed date claim without a real event binding. |
+| claim_json | Original row/claim and source token; optional override decision | Raw evidence envelope; original and resolved claim separated, original input/hash preserved. | evidence_id | Keep both claims on conflict; never just overwrite losing claim. |
+| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
+| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
+
+## geography
+
+P geography IDs unchanged; new national/EP geography binding held for Atlas identity review; no inferred regional parents.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| country_id | bulgaria / BG as appropriate; no extra country identity. |
+| geography_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. P geography IDs unchanged; new national/EP geography binding held for Atlas identity review; no inferred regional parents. |
+| name | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. P geography IDs unchanged; new national/EP geography binding held for Atlas identity review; no inferred regional parents. |
+| parent_geography_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. P geography IDs unchanged; new national/EP geography binding held for Atlas identity review; no inferred regional parents. |
+| effective_from_label | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. P geography IDs unchanged; new national/EP geography binding held for Atlas identity review; no inferred regional parents. |
+| effective_to_label | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. P geography IDs unchanged; new national/EP geography binding held for Atlas identity review; no inferred regional parents. |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| raw_json | Complete original object/source_raw plus locator; no source field dropped or normalized in place. |
+
+Inherited P mapping (unchanged documentary rules):
+
+| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
+| --- | --- | --- | --- | --- |
+| country_id | O. Country + M.country | `bulgaria`, after exact country-label check. | (country_id,geography_id) | FK country; never cross-country. |
+| geography_id | O. Office ID plus country ID | G=key("geo",[CID,exact office_id]); country-specific disambiguated binding. | (country_id,G) | 3597 unique Gs. Legacy name/type keys have272 collision groups covering630 offices; never merge those places. |
+| name | O. Jurisdiction | Verbatim (all supplied); reject empty baseline. | (country_id,G) | No synthetic municipality spelling. |
+| parent_geography_id | Not supplied | NULL. | (country_id,G) | No parent geography supplied; NULL. No province/geometry fabrication. |
+| effective_from_label | Not supplied | NULL. | (country_id,G) | No reform dates invented. |
+| effective_to_label | Not supplied | NULL. | (country_id,G) | No implicit expiry. |
+| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
+| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
+| raw_json | O row +exact Office ID/type/jurisdiction +old name/type key | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Original names and legacy collision group retained. No guessed municipality/province parents or geometry. |
+
+## identity_crosswalk
+
+P exact aliases retained; BI-to-live crosswalk held; no successor links.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| entity_kind | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. P exact aliases retained; BI-to-live crosswalk held; no successor links. |
+| upstream_namespace | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. P exact aliases retained; BI-to-live crosswalk held; no successor links. |
+| upstream_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. P exact aliases retained; BI-to-live crosswalk held; no successor links. |
+| record_key | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. P exact aliases retained; BI-to-live crosswalk held; no successor links. |
+| reason | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. P exact aliases retained; BI-to-live crosswalk held; no successor links. |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| raw_json | Complete original object/source_raw plus locator; no source field dropped or normalized in place. |
+
+Inherited P mapping (unchanged documentary rules):
+
+| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
+| --- | --- | --- | --- | --- |
+| entity_kind | Preserved source/bridge alias type | Same supported locator entity_kind. | (entity_kind,upstream_namespace,upstream_id) | Typed FK target exists; no release/entity mismatch. |
+| upstream_namespace | Identity Rules alias namespaces | Exact namespace per alias family; no release hashes. | Crosswalk PK | Country/election scoped when IDs reuse. |
+| upstream_id | Original O/H/event/G/result/source ID or row binding | Verbatim ID; row-binding aliases use canonical tuple string. | Crosswalk PK | No ambiguous old geography alias. Legacy collision groups remain non-executable provenance in Inventory; exact office-code binding is canonical. |
+| record_key | Canonical typed target | Existing locator key. | Crosswalk PK | Same entity kind; source URL alias points to catalogue when matched. |
+| reason | Alias transformation | preserved_package_id, proposed_bridge_compatible_id, package_source_id, exact_url_catalogue_alias, baseline_row_binding, documented_identity_correction. | Crosswalk PK | Geography disambiguation is a documented new country rule; event/result IDs preserve current bridge formulas. No claim of already-public Bulgarian IDs. |
+| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
+| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
+| raw_json | original alias tuple and binding origin | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Original JSON/row equality; original byte hash and location remain recoverable; no researcher claims added. |
+
+## ingest_attempt
+
+NO ROW: no importer or database action performed.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| attempt_id | NO ROW: no importer or database action performed. |
+| lineage_id | NO ROW: no importer or database action performed. |
+| operator | NO ROW: no importer or database action performed. |
+| script_version | NO ROW: no importer or database action performed. |
+| started_at | NO ROW: no importer or database action performed. |
+| finished_at | NO ROW: no importer or database action performed. |
+| status | NO ROW: no importer or database action performed. |
+| input_inventory_json | NO ROW: no importer or database action performed. |
+| successful_release_id | NO ROW: no importer or database action performed. |
+| publication_set_json | NO ROW: no importer or database action performed. |
+| row_counts_json | NO ROW: no importer or database action performed. |
+| error_text | NO ROW: no importer or database action performed. |
+
+Inherited P mapping (unchanged documentary rules):
+
+| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
+| --- | --- | --- | --- | --- |
+| attempt_id | Operational invocation | `attempt-` + lowercase UUIDv4; one fresh unique value per run. This is the only random identifier. | attempt_id | New on unchanged import; never public research identity. |
+| lineage_id | Requested country identity | L. | attempt_id | Logical link, no cross-DB FK. |
+| operator | Authenticated operator/service identity | Actual value, nonempty; not invented name. | attempt_id | Required preflight input. |
+| script_version | Actual importer build identity | Actual immutable build/version; field-map contract version alone is not executing script version. | attempt_id | Record even failed input attempts; exclude from hash except semantic adapter version. |
+| started_at | UTC clock at invocation | RFC3339 UTC timestamp with Z; operational only. | attempt_id | Commit started row before staging writes. |
+| finished_at | UTC clock at terminal transition | NULL while started; real timestamp when terminal. | attempt_id | Never backdate research. |
+| status | Publication state machine | started→succeeded after verified durable swap, or failed before publication; recover ambiguous swap first. | attempt_id | Terminal immutable; no replace/delete. |
+| input_inventory_json | Preflight scan of intended inputs / versions | Canonical JSON manifest with known hashes/bytes, missing entries as null hash + error; include intended T path. Immutable after started. | attempt_id | Inventory cannot invent hash for missing T; reverify bytes after logging. |
+| successful_release_id | Verified published release | NULL started/failed; R succeeded. | attempt_id | Must match master receipt and selected release logically. |
+| publication_set_json | Verified master.publication_release | NULL started/failed; sorted array of {lineage_id,release_id} succeeded. | attempt_id | Entire set, not only Bulgaria. |
+| row_counts_json | Validated candidate counts / partial failure diagnostics | NULL initially; counts object on success; failure may retain diagnostics clearly labelled partial. | attempt_id | Success counts equal dataset_release validated counts. |
+| error_text | Actual failure exception and input/constraint location | NULL started/succeeded; nonempty failed. | attempt_id | No success pointer on failure; redact secrets without losing actionable diagnostic. |
+
+## office
+
+Bulgaria_Office_Register.json; retain all P IDs and scope dispositions; four explicit new research IDs.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| id_namespace | P: cdd-observatory-v1 unchanged. BI research IDs are proposals, not a claimed live namespace. |
+| office_id | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| country_id | bulgaria / BG as appropriate; no extra country identity. |
+| geography_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Office_Register.json; retain all P IDs and scope dispositions; four explicit new research IDs. |
+| name | office string |
+| office_type | family string; mapping to production enum pending |
+| office_status | lifecycle; production enum review pending |
+| record_state | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Office_Register.json; retain all P IDs and scope dispositions; four explicit new research IDs. |
+| state_note | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Office_Register.json; retain all P IDs and scope dispositions; four explicit new research IDs. |
+| registry_qualified | No new true flag: BI additions draft, P held rows unqualified for production. |
+| next_date_id | NULL in inherited P bytes; new calendar stays separate with explicit formula precision; no live ID minted. |
+| next_date_resolution | Use Upcoming_Elections.date_basis/date_precision only after calendar identity review; no forced exact day. |
+| next_history_key | NULL: calendar is separate research, not a published next-event pointer. |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| raw_json | Complete original object/source_raw plus locator; no source field dropped or normalized in place. |
+
+Inherited P mapping (unchanged documentary rules):
+
+| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
+| --- | --- | --- | --- | --- |
+| id_namespace | Identity contract | `N = cdd-observatory-v1` (stable identity space; not a release). | (N,O. Office ID) | No release hash in namespace. |
+| office_id | O. Office ID | Exact string, no trim/case/diacritic normalization. | (N,office_id) | Exact 3597 O IDs; O/J sets and rows equal. 265 Mayor +265 Municipal council +35 District mayor +3032 Village mayor. |
+| country_id | O. Country + M.country | `bulgaria`; exact Bulgaria label required. | (N,office_id) | FK country via same-country geography. |
+| geography_id | O. Office ID | G bound to exact office ID as above. | (N,office_id) | Same-country FK; two same-name villages retain separate Gs. No legacy ambiguous alias. |
+| name | O. Jurisdiction + O. Office | Exact concatenation `Jurisdiction + " — " + Office`. | (N,office_id) | Both inputs retained raw. |
+| office_type | O. Office | Exact Mayor / Municipal council / District mayor / Village mayor. | (N,office_id) | Institution type stays separate from proposed geographic grouping; district/village scope explicitly reviewed. |
+| office_status | O membership in current register | `current`; baseline only. | (N,office_id) | Describes office, not present holder tenure. |
+| record_state | O membership; explicit later override if any | `active`; omission cannot withdraw. | (N,office_id) | Nonactive requires sourced state_note and retained override. |
+| state_note | No withdrawal/supersession supplied | NULL. | (N,office_id) | Never populate merely because incomplete refresh omits a row. |
+| registry_qualified | No registry qualification assertion | NULL; competition screen is not qualification. | (N,office_id) | Unknown ≠ false. |
+| next_date_id | O. Next polling date | NULL for 3597. | (N,office_id) | Cal dates also NULL; no date from expected autumn 2027 briefing prose. |
+| next_date_resolution | Same date inputs | unknown for 3597. | (N,office_id) | Pending date is not an in-window confirmed event. |
+| next_history_key | No explicit O next date | NULL baseline. | (N,office_id) | No prospective event created. Preserve existing future binding on incomplete refresh. |
+| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
+| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
+| raw_json | O row +identical J counterpart locators +BF artifact +T review scope | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Retain all score/eligibility/coverage fields, including null/zero; no current-control inference. |
+
+## office_tier_classification
+
+Bulgaria_Draft_Tiers.json, exactly one classification per register row; no BI approval.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| id_namespace | P: cdd-observatory-v1 unchanged. BI research IDs are proposals, not a claimed live namespace. |
+| office_id | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| tier | Draft national / other (EP supranational scope) / municipal; no regional rows. |
+| review_status | Inherited P acceptance is provenance; new BI classifications unapproved; 3,067 submunicipal hold. |
+| rationale | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Draft_Tiers.json, exactly one classification per register row; no BI approval. |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| classification_path | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Draft_Tiers.json, exactly one classification per register row; no BI approval. |
+| classification_kind | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Draft_Tiers.json, exactly one classification per register row; no BI approval. |
+| classification_sha256 | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Draft_Tiers.json, exactly one classification per register row; no BI approval. |
+| raw_json | Complete original object/source_raw plus locator; no source field dropped or normalized in place. |
+
+Inherited P mapping (unchanged documentary rules):
+
+| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
+| --- | --- | --- | --- | --- |
+| id_namespace | T.classifications[].office_id | `N = cdd-observatory-v1` (stable identity space; not a release). | (N,office_id) | Same namespace as office. |
+| office_id | T.classifications[].office_id | Exact ID; join O. Office ID. | (N,office_id) | Set equality, no missing/extra/duplicate IDs. |
+| tier | T.classifications[].tier | municipal→municipal for 3597 draft proposals. | (N,office_id) | 0 regional/national/council/other. 3067 submunicipal assignments flagged; no calendar classifier. Legacy council metadata not emitted to DDL. |
+| review_status | T.status + row.tier / human_review_required / tier_uncertain | needs_review for all 3597 because pack is draft; explicit future null-tier hold→unknown. | (N,office_id) | 3067 human_review_required/tier_uncertain=true; 530 municipality-wide rows still need pack approval. |
+| rationale | T.classifications[].rationale | Verbatim, nonempty. | (N,office_id) | Must cite office/geography evidence, never calendar cohort alone. |
+| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
+| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
+| classification_path | T logical path | `schemas/atlas/tiers/bulgaria.json`. | (N,office_id) | Deliverable draft only, not claimed committed or approved. |
+| classification_kind | Mapping contract | `tier_classification`. | (N,office_id) | Composite FK to retained_input kind/hash. |
+| classification_sha256 | Exact T bytes | cff8fcabb12716230a314309162a40c72a3d7d13fe1aa4469cfb1655767c48f0 | (N,office_id) | Exact candidate retained-input hash; approval/revision changes T and fingerprint. |
+| raw_json | T.classifications[] original object | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Original JSON/row equality; original byte hash and location remain recoverable; no researcher claims added. |
+
+## party_mapping
+
+NO NEW ROW; no researched cross-year party equivalence. Source labels preserved.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| country_id | NO NEW ROW; no researched cross-year party equivalence. Source labels preserved. |
+| party_namespace | NO NEW ROW; no researched cross-year party equivalence. Source labels preserved. |
+| mapping_id | NO NEW ROW; no researched cross-year party equivalence. Source labels preserved. |
+| source_context | NO NEW ROW; no researched cross-year party equivalence. Source labels preserved. |
+| election_context | NO NEW ROW; no researched cross-year party equivalence. Source labels preserved. |
+| original_label | NO NEW ROW; no researched cross-year party equivalence. Source labels preserved. |
+| original_code | NO NEW ROW; no researched cross-year party equivalence. Source labels preserved. |
+| mapped_group | NO NEW ROW; no researched cross-year party equivalence. Source labels preserved. |
+| uncertainty | NO NEW ROW; no researched cross-year party equivalence. Source labels preserved. |
+| lineage_id | NO NEW ROW; no researched cross-year party equivalence. Source labels preserved. |
+| release_id | NO NEW ROW; no researched cross-year party equivalence. Source labels preserved. |
+| raw_json | NO NEW ROW; no researched cross-year party equivalence. Source labels preserved. |
+
+Inherited P mapping (unchanged documentary rules):
+
+| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
+| --- | --- | --- | --- | --- |
+| country_id | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
+| party_namespace | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
+| mapping_id | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
+| source_context | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
+| election_context | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
+| original_label | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
+| original_code | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
+| mapped_group | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
+| uncertainty | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
+| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
+| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
+| raw_json | No baseline source collection | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Original JSON/row equality; original byte hash and location remain recoverable; no researcher claims added. |
+
 ## proceeding
+
+NO NEW ROW; BI rounds are explicit event records; P F/X projection requires separately reviewed stage identity.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| id_namespace | NO NEW ROW; BI rounds are explicit event records; P F/X projection requires separately reviewed stage identity. |
+| office_id | NO NEW ROW; BI rounds are explicit event records; P F/X projection requires separately reviewed stage identity. |
+| history_key | NO NEW ROW; BI rounds are explicit event records; P F/X projection requires separately reviewed stage identity. |
+| proceeding_id | NO NEW ROW; BI rounds are explicit event records; P F/X projection requires separately reviewed stage identity. |
+| kind | NO NEW ROW; BI rounds are explicit event records; P F/X projection requires separately reviewed stage identity. |
+| sequence_no | NO NEW ROW; BI rounds are explicit event records; P F/X projection requires separately reviewed stage identity. |
+| supersedes_id | NO NEW ROW; BI rounds are explicit event records; P F/X projection requires separately reviewed stage identity. |
+| legal_outcome | NO NEW ROW; BI rounds are explicit event records; P F/X projection requires separately reviewed stage identity. |
+| lineage_id | NO NEW ROW; BI rounds are explicit event records; P F/X projection requires separately reviewed stage identity. |
+| release_id | NO NEW ROW; BI rounds are explicit event records; P F/X projection requires separately reviewed stage identity. |
+| raw_json | NO NEW ROW; BI rounds are explicit event records; P F/X projection requires separately reviewed stage identity. |
+
+Inherited P mapping (unchanged documentary rules):
 
 | Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
 | --- | --- | --- | --- | --- |
@@ -352,7 +416,156 @@ Parameters/Read me are methodological context; regional aggregate totals cannot 
 | release_id | F/X and HTML phase narratives | NO ROW in this minimum projection; all stage observations retained losslessly and indexed in Vectors. No invented proceeding IDs or sequence. | None baseline | 0 typed proceedings. A separate reviewed stage binding is required before future projection; F/X never inflate completed counts. |
 | raw_json | F/X and HTML phase narratives | NO ROW in this minimum projection; all stage observations retained losslessly and indexed in Vectors. No invented proceeding IDs or sequence. | None baseline | 0 typed proceedings. A separate reviewed stage binding is required before future projection; F/X never inflate completed counts. |
 
+## publication_receipt
+
+NO ROW: no publication attempted.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| singleton | NO ROW: no publication attempted. |
+| last_publish_attempt_id | NO ROW: no publication attempted. |
+| attempted_lineage_id | NO ROW: no publication attempted. |
+| attempted_release_id | NO ROW: no publication attempted. |
+
+Inherited P mapping (unchanged documentary rules):
+
+| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
+| --- | --- | --- | --- | --- |
+| singleton | Operational protocol | 1. | singleton | One receipt for physical publication. |
+| last_publish_attempt_id | Current ledger attempt ID | Copy actual started attempt ID; not R. | singleton | Logical cross-file match during recovery. |
+| attempted_lineage_id | Current attempt lineage | L. | singleton | FK selected publication pair. |
+| attempted_release_id | Current validated staged release | R, including unchanged re-import. | singleton | Physical receipt persisted before swap; compare ledger after restart. |
+
+## publication_release
+
+NO ROW: nothing published.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| lineage_id | NO ROW: nothing published. |
+| release_id | NO ROW: nothing published. |
+
+Inherited P mapping (unchanged documentary rules):
+
+| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
+| --- | --- | --- | --- | --- |
+| lineage_id | Validated staged lineage plus prior publication set | L for this import; retain every unrelated selected lineage. | lineage_id | One selected release per lineage; no Europe-only filter. |
+| release_id | Successful candidate fingerprint or unchanged prior release | R; unchanged inputs reuse existing metadata row. | lineage_id | Deferred FK dataset_release; failure leaves prior selection. |
+
+## record_locator
+
+Documentary JSON pointer/source locator proposal; no operational locator rows minted.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| record_key | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentary JSON pointer/source locator proposal; no operational locator rows minted. |
+| entity_kind | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentary JSON pointer/source locator proposal; no operational locator rows minted. |
+| country_id | bulgaria / BG as appropriate; no extra country identity. |
+| geography_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentary JSON pointer/source locator proposal; no operational locator rows minted. |
+| id_namespace | P: cdd-observatory-v1 unchanged. BI research IDs are proposals, not a claimed live namespace. |
+| office_id | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| history_key | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| proceeding_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentary JSON pointer/source locator proposal; no operational locator rows minted. |
+| result_row_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentary JSON pointer/source locator proposal; no operational locator rows minted. |
+| party_namespace | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentary JSON pointer/source locator proposal; no operational locator rows minted. |
+| party_mapping_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentary JSON pointer/source locator proposal; no operational locator rows minted. |
+| source_namespace | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentary JSON pointer/source locator proposal; no operational locator rows minted. |
+| source_id | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| input_path | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentary JSON pointer/source locator proposal; no operational locator rows minted. |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| source_row_locator | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Documentary JSON pointer/source locator proposal; no operational locator rows minted. |
+
+Inherited P mapping (unchanged documentary rules):
+
+| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
+| --- | --- | --- | --- | --- |
+| record_key | Typed target key | `rec-`+SHA256(C([entity_kind,...ordered target PK components])); input key includes L,input_path but excludes R. | record_key | No public URL replacement; collision guard compares full target tuple. |
+| entity_kind | Target table | country/geography/office/event/proceeding/result_row/party_mapping/source/input per shape below. | record_key | No unsupported date/tier/metric entity kind. |
+| country_id | Typed target country | bulgaria except input=NULL. | record_key | Country FK and exact target shape. |
+| geography_id | G only for geography target | G or NULL for every other kind. | record_key | Exact shape/FK. |
+| id_namespace | Office/event/result/proceeding target | N for those kinds; otherwise NULL. | record_key | Never partial namespaced key. |
+| office_id | Office/event/result/proceeding target | Exact target office ID; otherwise NULL. | record_key | FK real typed row. |
+| history_key | Event/result/proceeding target | Exact target HK; otherwise NULL. | record_key | FK full event tuple. |
+| proceeding_id | Proceeding target only | NULL baseline; never fill for result target even if later result has proceeding. | record_key | DDL one-target shape. |
+| result_row_id | Result target only | Exact result ID; otherwise NULL. | record_key | FK exact result tuple. |
+| party_namespace | Party-mapping target only | NULL baseline; source result party label does not make party locator. | record_key | No party_mapping target; result party labels remain election-scoped source context. |
+| party_mapping_id | Party-mapping target only | NULL baseline. | record_key | No baseline target of this kind. |
+| source_namespace | Source target only | country-package-bulgaria for source; otherwise NULL. | record_key | All source key components present together. |
+| source_id | Source target only | Canonical source ID; otherwise NULL. | record_key | FK existing catalogue/inline row. |
+| input_path | Input target only | retained_input.input_path; otherwise NULL. | record_key | FK (L,R,input_path). |
+| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
+| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
+| source_row_locator | Owning source row/field or artifact | C(locator) defined in Source notation; includes member archive_entry, exact source_rows[i], pointer and SHA. | record_key | Exact original input path, SHA, sheet, source_rows and pointer; HTML anchor index if applicable. No invented archive_entry field required. |
+
+## research_date
+
+data/BI_New_Events.json and data/Upcoming_Elections.json preserve day, range, year/formula or unknown precision.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| date_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. data/BI_New_Events.json and data/Upcoming_Elections.json preserve day, range, year/formula or unknown precision. |
+| label | Exact event date/date_end or calendar next_label; not a derived exact day. |
+| precision | day / explicit two-poll range / year_or_formula / unknown_or_conditional. |
+| certainty | Official call vs formula vs research hold, separate from granularity. |
+| year | Source day year, or explicit term-derived next_year; unknown remains null. |
+| month | NULL for formula/year-only; only parse a source-supported ISO day. |
+| day | NULL for formula/year-only; never 1 as padding. |
+| range_start_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. data/BI_New_Events.json and data/Upcoming_Elections.json preserve day, range, year/formula or unknown precision. |
+| range_end_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. data/BI_New_Events.json and data/Upcoming_Elections.json preserve day, range, year/formula or unknown precision. |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| raw_json | Complete original object/source_raw plus locator; no source field dropped or normalized in place. |
+
+Inherited P mapping (unchanged documentary rules):
+
+| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
+| --- | --- | --- | --- | --- |
+| date_id | H event ballot owner | date-+SHA(C([N,"event",event_id,"ballot"])). | date_id | 8661  date owners, one per selected event; no office-next date rows. |
+| label | H. Ballot date if recorded | Exact supplied ISO day for 8661. | date_id | No fallbacks needed baseline. Partial-date examples are explicitly isolated future CI mutations. |
+| precision | Full-string date grammar | day for 8661; source cells all full ISO dates. | date_id | Future month/year/range/unknown preserves precision; no invented day1. |
+| certainty | No separate historical certainty field | unknown for 8661. | date_id | Supplied day does not establish certification or statutory certainty. |
+| year | Parsed H. Ballot date if recorded | Integer 1.. 9999; NULL if unknown or range. | date_id | Actual Gregorian date validation; H. Year remains cycle identity field. |
+| month | Parsed month component | 1.. 12 for day/month; otherwise NULL. | date_id | Year precision cannot gain a month. |
+| day | Parsed day component | Actual Gregorian day for day precision only; otherwise NULL. | date_id | Leap/month-length validation. |
+| range_start_id | Explicit paired endpoints only; absent baseline | NULL baseline; future explicitly supplied endpoint gets slot ballot/start. | date_id | No cohort range inferred; Cal End or runoff date isNULL. |
+| range_end_id | Explicit paired endpoints only; absent baseline | NULL baseline; future explicitly supplied endpoint gets slot ballot/end. | date_id | Endpoints must be ordered/noncyclic actual claims, not day1 padding. |
+| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
+| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
+| raw_json | H date/Year +IX counterpart with exact locators | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | No next date inferred from Cal expected wording or snapshot. |
+
 ## result_row
+
+data/BI_New_Results.json; exact source labels/numbers, null missing values; source order identities frozen for this evidence version.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| id_namespace | P: cdd-observatory-v1 unchanged. BI research IDs are proposals, not a claimed live namespace. |
+| office_id | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| history_key | Exact owning event history_key via event_id; never year-only join. |
+| result_row_id | result_id proposed BI identifier; P result_row_id unchanged. |
+| proceeding_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. data/BI_New_Results.json; exact source labels/numbers, null missing values; source order identities frozen for this evidence version. |
+| country_id | bulgaria / BG as appropriate; no extra country identity. |
+| candidate_or_list_label | label copied verbatim; aggregate_other_parties / none_of_above row_kind retained. |
+| original_party_label | Retain full source label/source_raw; separate party extraction unreviewed. |
+| original_party_code | NULL for BI additions unless source separately supplies a code; do not convert a name into a government code. |
+| party_namespace | Research proposal: BG plus full event_id; no cross-cycle equivalence. |
+| party_mapping_id | NULL; no invented party mapping. |
+| votes | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| votes_status | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| share | share_percent exactly as published, percent_0_100; no recalculation. |
+| share_status | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| share_unit | percent_0_100 for supplied numeric percentages. |
+| seats | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| seats_status | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| elected_flag | NULL unless explicit source statement; not derived from votes or seats. |
+| is_substitute | NULL; no false default. |
+| evidence_status | result_status plus owning event quality_hold; recorded is not automatically certified. |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| raw_json | Complete original object/source_raw plus locator; no source field dropped or normalized in place. |
+
+Inherited P mapping (unchanged documentary rules):
 
 | Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
 | --- | --- | --- | --- | --- |
@@ -381,24 +594,56 @@ Parameters/Read me are methodological context; regional aggregate totals cannot 
 | release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
 | raw_json | D original row | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Original JSON/row equality; original byte hash and location remain recoverable; no researcher claims added. |
 
-## party_mapping
+## retained_input
+
+Exact files named in SHA256SUMS and source inventory; original payload and expanded tables retained.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| input_path | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Exact files named in SHA256SUMS and source inventory; original payload and expanded tables retained. |
+| input_kind | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Exact files named in SHA256SUMS and source inventory; original payload and expanded tables retained. |
+| sha256 | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Exact files named in SHA256SUMS and source inventory; original payload and expanded tables retained. |
+| byte_count | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Exact files named in SHA256SUMS and source inventory; original payload and expanded tables retained. |
+| recovery_locator | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Exact files named in SHA256SUMS and source inventory; original payload and expanded tables retained. |
+| payload_json | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Exact files named in SHA256SUMS and source inventory; original payload and expanded tables retained. |
+
+Inherited P mapping (unchanged documentary rules):
 
 | Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
 | --- | --- | --- | --- | --- |
-| country_id | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
-| party_namespace | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
-| mapping_id | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
-| source_context | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
-| election_context | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
-| original_label | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
-| original_code | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
-| mapped_group | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
-| uncertainty | No separate concordance collection in frozen package | NO ROW. D labels are retained in result_row. Later sourced mapping must name its country/source/election context and uncertainty; no inferred successor group. | No baseline mapping identity | 0 rows; all result.party_mapping_id NULL. Briefing nomination narrative alone is not a label-equivalence table. |
 | lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
 | release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
-| raw_json | No baseline source collection | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Original JSON/row equality; original byte hash and location remain recoverable; no researcher claims added. |
+| input_path | 54 outer +3617 unpacked members +draft T | P paths for outer files; V= P+unpacked/ followed by exact tar member path for members; T unchanged logical path. Inherited paths per Identity Rules. | (L,R,input_path) | 3672 distinct candidate inputs. Draft approval gate blocks publication. |
+| input_kind | Path class | T=tier_classification; HTML/XLSX/payload chunks=artifact; other outer/member files=package; accepted future overrides=override. | (L,R,input_path) | No content discarded because not projected. |
+| sha256 | Original file bytes | SHA-256, lowercase hex; never hash reserialized JSON. | (L,R,input_path) | 48 ordered XZ chunks, concat payload SHA, inventory and all 3617 members hash-match. |
+| byte_count | Original file bytes | Exact byte length, nonnegative integer. | (L,R,input_path) | Compare manifest bytes where supplied. |
+| recovery_locator | Verified immutable input store + original repo commit/path | sha256:<sha256> immutable content store; virtual member also records payload hash, exact archive_entry and pinned outer chunks in inventory. | (L,R,input_path) | All bytes recoverable and rehashed before publication; no dependency on temporary unpack directory. |
+| payload_json | Entire JSON file, including rows/columns/source_rows; T; overrides | For *.json: original UTF-8 JSON text after validity check; otherwise NULL. Never evaluate formulas/scripts/HTML. | (L,R,input_path) | All JSON including F/X, original score gates/coverage, parameters and caches retained losslessly. HTML scripts and formulas never execute. |
 
 ## source
+
+Bulgaria_Source_Inventory.json; raw download hash or extraction hash explicitly distinguished.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| country_id | bulgaria / BG as appropriate; no extra country identity. |
+| source_namespace | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Source_Inventory.json; raw download hash or extraction hash explicitly distinguished. |
+| source_id | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| publisher | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Source_Inventory.json; raw download hash or extraction hash explicitly distinguished. |
+| title | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Source_Inventory.json; raw download hash or extraction hash explicitly distinguished. |
+| url | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| checked_as_of_label | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Source_Inventory.json; raw download hash or extraction hash explicitly distinguished. |
+| evidence_grade | retrieval_status/snapshot_kind plus event-specific result_status; baseline P evidence grade retained. |
+| file_sha256 | file_sha256 only for exact saved bytes. remote_original_sha256 null when original not downloaded. |
+| locator | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Source_Inventory.json; raw download hash or extraction hash explicitly distinguished. |
+| data_rights | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Source_Inventory.json; raw download hash or extraction hash explicitly distinguished. |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| raw_json | Complete original object/source_raw plus locator; no source field dropped or normalized in place. |
+
+Inherited P mapping (unchanged documentary rules):
 
 | Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
 | --- | --- | --- | --- | --- |
@@ -417,45 +662,22 @@ Parameters/Read me are methodological context; regional aggregate totals cannot 
 | release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
 | raw_json | Every SM/SC original row/origin or inline occurrence list | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Equal duplicate catalogue IDs merged, not counted twice; conflicting future metadata fails review. |
 
-## record_locator
-
-| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
-| --- | --- | --- | --- | --- |
-| record_key | Typed target key | `rec-`+SHA256(C([entity_kind,...ordered target PK components])); input key includes L,input_path but excludes R. | record_key | No public URL replacement; collision guard compares full target tuple. |
-| entity_kind | Target table | country/geography/office/event/proceeding/result_row/party_mapping/source/input per shape below. | record_key | No unsupported date/tier/metric entity kind. |
-| country_id | Typed target country | bulgaria except input=NULL. | record_key | Country FK and exact target shape. |
-| geography_id | G only for geography target | G or NULL for every other kind. | record_key | Exact shape/FK. |
-| id_namespace | Office/event/result/proceeding target | N for those kinds; otherwise NULL. | record_key | Never partial namespaced key. |
-| office_id | Office/event/result/proceeding target | Exact target office ID; otherwise NULL. | record_key | FK real typed row. |
-| history_key | Event/result/proceeding target | Exact target HK; otherwise NULL. | record_key | FK full event tuple. |
-| proceeding_id | Proceeding target only | NULL baseline; never fill for result target even if later result has proceeding. | record_key | DDL one-target shape. |
-| result_row_id | Result target only | Exact result ID; otherwise NULL. | record_key | FK exact result tuple. |
-| party_namespace | Party-mapping target only | NULL baseline; source result party label does not make party locator. | record_key | No party_mapping target; result party labels remain election-scoped source context. |
-| party_mapping_id | Party-mapping target only | NULL baseline. | record_key | No baseline target of this kind. |
-| source_namespace | Source target only | country-package-bulgaria for source; otherwise NULL. | record_key | All source key components present together. |
-| source_id | Source target only | Canonical source ID; otherwise NULL. | record_key | FK existing catalogue/inline row. |
-| input_path | Input target only | retained_input.input_path; otherwise NULL. | record_key | FK (L,R,input_path). |
-| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
-| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
-| source_row_locator | Owning source row/field or artifact | C(locator) defined in Source notation; includes member archive_entry, exact source_rows[i], pointer and SHA. | record_key | Exact original input path, SHA, sheet, source_rows and pointer; HTML anchor index if applicable. No invented archive_entry field required. |
-
-## evidence_link
-
-| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
-| --- | --- | --- | --- | --- |
-| evidence_id | Resolved citation occurrence + target + claim kind | `ev-`+SHA256(C([record_key,source tuple,occurrence identity,claim_kind])); exclude value/R. | evidence_id | No duplicates/collision reassignment; changed claims retain occurrence identity. |
-| record_key | Actual supported record or retained input | Use typed locator; unresolved target is a broken reference, not unresolved evidence. | evidence_id | FK record_locator. |
-| source_country_id | Resolved source country | bulgaria. | evidence_id | Exact source FK. |
-| source_namespace | Resolved source namespace | country-package-bulgaria. | evidence_id | Exact source FK. |
-| source_id | Exact catalogue token/URL resolver | Canonical ID under source rules. | evidence_id | Must exist; known source omitted from stage fails closed. |
-| source_locator | Original citation field/HTML anchor occurrence | C(locator), retaining original field, index and token; remote page only if actually supplied. | evidence_id | Reopens original retained bytes; no fictitious PDF page. |
-| claim_kind | Field purpose | H/IX event and date; D result; O calendar_context; Cal input calendar_context; Nts country screening; F/X input stage_observation; HTML input artifact_reference. | evidence_id | Stage citations target retained input, never fabricate an event FK. Source table catalogue rows retained with original metadata. |
-| date_claim_id | H/IX selected event date where claim_kind=date | Own date_id for date claim;otherwise NULL. | evidence_id | F/X date text stays retained input; no typed date claim without a real event binding. |
-| claim_json | Original row/claim and source token; optional override decision | Raw evidence envelope; original and resolved claim separated, original input/hash preserved. | evidence_id | Keep both claims on conflict; never just overwrite losing claim. |
-| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
-| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
-
 ## unresolved_evidence
+
+Bulgaria_Research_Gaps.json and data/Result_Reconciliation_Holds.json; P retained observations lossless.
+
+| Column | BI source / conversion / null policy |
+| --- | --- |
+| unresolved_id | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Research_Gaps.json and data/Result_Reconciliation_Holds.json; P retained observations lossless. |
+| record_key | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Research_Gaps.json and data/Result_Reconciliation_Holds.json; P retained observations lossless. |
+| original_token | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Research_Gaps.json and data/Result_Reconciliation_Holds.json; P retained observations lossless. |
+| source_locator | Copy same-named documentary field; absence stays NULL/unknown; preserve explicit zero and exact identifier. |
+| reason | Keep original P mapping for inherited rows. BI: only source-explicit same-named evidence may populate this field; otherwise NULL / no row pending field-level review. Bulgaria_Research_Gaps.json and data/Result_Reconciliation_Holds.json; P retained observations lossless. |
+| lineage_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| release_id | No live value minted. Retain P contract as provenance; any BI projection requires a separately approved release fingerprint. |
+| raw_json | Complete original object/source_raw plus locator; no source field dropped or normalized in place. |
+
+Inherited P mapping (unchanged documentary rules):
 
 | Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
 | --- | --- | --- | --- | --- |
@@ -468,62 +690,3 @@ Parameters/Read me are methodological context; regional aggregate totals cannot 
 | release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
 | raw_json | unmatched original occurrence | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Original JSON/row equality; original byte hash and location remain recoverable; no researcher claims added. |
 
-## identity_crosswalk
-
-| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
-| --- | --- | --- | --- | --- |
-| entity_kind | Preserved source/bridge alias type | Same supported locator entity_kind. | (entity_kind,upstream_namespace,upstream_id) | Typed FK target exists; no release/entity mismatch. |
-| upstream_namespace | Identity Rules alias namespaces | Exact namespace per alias family; no release hashes. | Crosswalk PK | Country/election scoped when IDs reuse. |
-| upstream_id | Original O/H/event/G/result/source ID or row binding | Verbatim ID; row-binding aliases use canonical tuple string. | Crosswalk PK | No ambiguous old geography alias. Legacy collision groups remain non-executable provenance in Inventory; exact office-code binding is canonical. |
-| record_key | Canonical typed target | Existing locator key. | Crosswalk PK | Same entity kind; source URL alias points to catalogue when matched. |
-| reason | Alias transformation | preserved_package_id, proposed_bridge_compatible_id, package_source_id, exact_url_catalogue_alias, baseline_row_binding, documented_identity_correction. | Crosswalk PK | Geography disambiguation is a documented new country rule; event/result IDs preserve current bridge formulas. No claim of already-public Bulgarian IDs. |
-| lineage_id | Owning package M / staged lineage | `L = country-package-bulgaria`. | Owning table PK | FK selected publication pair for active projection; dataset_release FK lineage only. For empty proceeding/party_mapping: NO ROW. |
-| release_id | Validated effective-input fingerprint | `R = L + "--sha256-" + fingerprint_sha256`. | Owning table PK | Every active Bulgaria row points to same selected R. Carry-forward retains original origin inside raw_json; empty tables: NO ROW. |
-| raw_json | original alias tuple and binding origin | Raw envelope defined above, preserving every original value; empty proceeding/party_mapping: NO ROW. | Owning table PK | Original JSON/row equality; original byte hash and location remain recoverable; no researcher claims added. |
-
-## publication_release
-
-| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
-| --- | --- | --- | --- | --- |
-| lineage_id | Validated staged lineage plus prior publication set | L for this import; retain every unrelated selected lineage. | lineage_id | One selected release per lineage; no Europe-only filter. |
-| release_id | Successful candidate fingerprint or unchanged prior release | R; unchanged inputs reuse existing metadata row. | lineage_id | Deferred FK dataset_release; failure leaves prior selection. |
-
-## publication_receipt
-
-| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
-| --- | --- | --- | --- | --- |
-| singleton | Operational protocol | 1. | singleton | One receipt for physical publication. |
-| last_publish_attempt_id | Current ledger attempt ID | Copy actual started attempt ID; not R. | singleton | Logical cross-file match during recovery. |
-| attempted_lineage_id | Current attempt lineage | L. | singleton | FK selected publication pair. |
-| attempted_release_id | Current validated staged release | R, including unchanged re-import. | singleton | Physical receipt persisted before swap; compare ledger after restart. |
-
-## ingest_attempt
-
-| Destination column | Source locator | Conversion / null policy | Identity / FK scope | Validation assertion |
-| --- | --- | --- | --- | --- |
-| attempt_id | Operational invocation | `attempt-` + lowercase UUIDv4; one fresh unique value per run. This is the only random identifier. | attempt_id | New on unchanged import; never public research identity. |
-| lineage_id | Requested country identity | L. | attempt_id | Logical link, no cross-DB FK. |
-| operator | Authenticated operator/service identity | Actual value, nonempty; not invented name. | attempt_id | Required preflight input. |
-| script_version | Actual importer build identity | Actual immutable build/version; field-map contract version alone is not executing script version. | attempt_id | Record even failed input attempts; exclude from hash except semantic adapter version. |
-| started_at | UTC clock at invocation | RFC3339 UTC timestamp with Z; operational only. | attempt_id | Commit started row before staging writes. |
-| finished_at | UTC clock at terminal transition | NULL while started; real timestamp when terminal. | attempt_id | Never backdate research. |
-| status | Publication state machine | started→succeeded after verified durable swap, or failed before publication; recover ambiguous swap first. | attempt_id | Terminal immutable; no replace/delete. |
-| input_inventory_json | Preflight scan of intended inputs / versions | Canonical JSON manifest with known hashes/bytes, missing entries as null hash + error; include intended T path. Immutable after started. | attempt_id | Inventory cannot invent hash for missing T; reverify bytes after logging. |
-| successful_release_id | Verified published release | NULL started/failed; R succeeded. | attempt_id | Must match master receipt and selected release logically. |
-| publication_set_json | Verified master.publication_release | NULL started/failed; sorted array of {lineage_id,release_id} succeeded. | attempt_id | Entire set, not only Bulgaria. |
-| row_counts_json | Validated candidate counts / partial failure diagnostics | NULL initially; counts object on success; failure may retain diagnostics clearly labelled partial. | attempt_id | Success counts equal dataset_release validated counts. |
-| error_text | Actual failure exception and input/constraint location | NULL started/succeeded; nonempty failed. | attempt_id | No success pointer on failure; redact secrets without losing actionable diagnostic. |
-
-## Evidence occurrences and exact targets
-
-Create one record_locator per typed country/geography/office/event/result/source row and per retained_input. No locator kind exists for date/tier/release; dates cite their owning event, tiers use classification-input FK. F/X source claims target their retained-input member locator, with exact row pointer in evidence source_locator and original phase in claim_json. No nonexistent event target is allowed. Source catalogue union preserves 3971 IDs and exact metadata; identical 2809 duplicated rows have two origins. URLs are unique per catalogue ID; two real inline URLs receive URL-derived sources, metadata NULL. No remote page bytes were downloaded: file_sha256=NULL; publisher=NULL; data_rights=unknown.
-
-Deterministic citation enumeration: H. Source URL→event claim and date claim (same occurrence, distinct claim_kind); IX. Source URL→event reconciliation claim (distinct original path, no new event); D. Source URL→result claim; O. Calendar evidence→office calendar_context (no next-date claim); Cal. Source URL→Cal retained-input context; Nts. Screen evidence→country screening; F/X. Source URL→retained-input stage_observation. For each country/office HTML, enumerate literal external http/https anchors in document order (html_anchor_index counts all literal anchors starting at0); target its retained-input artifact_reference. Local navigation/script-generated templates are not sources. Catalogue metadata itself remains source.raw_json and retained inputs. Keep occurrence IDs distinct; duplicate citations do not imply independent verification.
-
-Resolve exact source token then unique URL. All baseline designated source URLs are present in catalogue or the two actual inline URLs. Future unmatched/malformed/ambiguous token becomes unresolved_evidence against a real locator with exact token/reason. Missing already-resolved source FK is fatal, never downgraded to unresolved to pass CI. Open research gaps are not fake unresolved citations. Preserve all source claims on conflict, withhold single resolved date/metric; never average or silently choose newest.
-
-## Publication and refresh requirements — not executed
-
-Stage from a consistent backup of published master on the same filesystem. Commit started attempt in separate durable ledger before staging; one writer lock. Preserve unrelated lineage rows and release IDs. Validate tier approval/effective office coverage, hashes, semantic refs, fixtures, value/status pairs and full FK/integrity checks before committing candidate release. Off-VPS backup before publication; checkpoint WAL completely, close connections, fsync staged file, atomic rename, fsync directory, reopen read-only readers. Receipt and publication set live inside staged master. Success logged only after verified swap; failed pre-swap attempt keeps last good serving and durable failure ledger. Crash after rename requires receipt reconciliation.
-
-Incomplete refresh cannot delete prior offices/events/results/tier/source/evidence/aliases. Carry original immutable inputs at collision-safe inherited paths and include them in effective fingerprint; reviewed withdrawal required for removal. Citation uses each row's lineage release, not last publication receipt. No DDL changes, importer implementation, SQLite execution, VPS/UI deployment, metrics or redirects in this task.

@@ -1,0 +1,19 @@
+{
+  "pinned_main": "c8c3eb9f730e04ecf9b58b7038897c47162e4139",
+  "P_office_ids_preserved": 3597,
+  "P_accepted_ids_preserved": 530,
+  "P_holds_preserved": 3067,
+  "P_register_sha256": "00ddcca3c48141302a7432f97effd017a009fee3d64fb7f9000a72ef79663559",
+  "P_tiers_sha256": "9a6718fe301f440511cc9e9f9b4139b3a1e0332ef2e3e6c9b3063f67f04652ab",
+  "P_vectors_sha256": "2d8bb80b9e47d056f798da4d9912430f78e4096448cbe82661c59869314cdffc",
+  "municipal_adds": [],
+  "municipal_removes": [],
+  "successor_edges": [],
+  "new_BI_office_ids": [
+    "BG-NATIONAL-ASSEMBLY",
+    "BG-PRESIDENT-JOINT-TICKET",
+    "BG-EUROPEAN-PARLIAMENT",
+    "BG-GRAND-NATIONAL-ASSEMBLY-1990"
+  ],
+  "roster_validation": "P exact 265 municipality-wide pairs retained; latest NSI aggregate 265 checked, but a complete dated 2026 name/code roster was not downloaded. No unsupported churn asserted. 2027 eligibility roster pending."
+}

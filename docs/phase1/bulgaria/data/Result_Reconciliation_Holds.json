@@ -1,0 +1,57 @@
+[
+  {
+    "event_id": "BI-BG-NATIONAL-ASSEMBLY-2023-04-02",
+    "issue": "aggregate_conflict_as_retrieved",
+    "source_id": "BI-turn40view1",
+    "source_locator": "L56",
+    "published_headline_candidate_or_valid_votes": 2529233,
+    "transcribed_candidate_vector_sum": 2529129,
+    "difference_vector_minus_headline": -104,
+    "resolution": "retain both observations; no zero-fill or arithmetic correction; recheck original signed national protocol before scoring",
+    "status": "research_hold"
+  },
+  {
+    "event_id": "BI-BG-PRESIDENT-JOINT-TICKET-2021-11-21-r2",
+    "issue": "aggregate_conflict_as_retrieved",
+    "source_id": "BI-turn37view2",
+    "source_locator": "L57",
+    "published_headline_candidate_or_valid_votes": 2273048,
+    "transcribed_candidate_vector_sum": 2273441,
+    "difference_vector_minus_headline": 393,
+    "resolution": "retain both observations; no zero-fill or arithmetic correction; recheck original signed national protocol before scoring",
+    "status": "research_hold"
+  },
+  {
+    "event_id": "BI-BG-PRESIDENT-JOINT-TICKET-2016-11-06-r1",
+    "issue": "aggregate_conflict_as_retrieved",
+    "source_id": "BI-turn46view0",
+    "source_locator": "L84",
+    "published_headline_candidate_or_valid_votes": 3609654,
+    "transcribed_candidate_vector_sum": 3613556,
+    "difference_vector_minus_headline": 3902,
+    "resolution": "retain both observations; no zero-fill or arithmetic correction; recheck original signed national protocol before scoring",
+    "status": "research_hold"
+  },
+  {
+    "event_id": "BI-BG-PRESIDENT-JOINT-TICKET-2011-10-23-r1",
+    "issue": "aggregate_conflict_as_retrieved",
+    "source_id": "BI-turn48view1",
+    "source_locator": "L117",
+    "published_headline_candidate_or_valid_votes": 3364078,
+    "transcribed_candidate_vector_sum": 3364084,
+    "difference_vector_minus_headline": 6,
+    "resolution": "retain both observations; no zero-fill or arithmetic correction; recheck original signed national protocol before scoring",
+    "status": "research_hold"
+  },
+  {
+    "event_id": "BI-BG-PRESIDENT-JOINT-TICKET-2006-10-22-r1",
+    "issue": "aggregate_conflict_as_retrieved",
+    "source_id": "BI-turn42search1",
+    "source_locator": "table item 14",
+    "published_headline_candidate_or_valid_votes": 2779381,
+    "transcribed_candidate_vector_sum": 2779373,
+    "difference_vector_minus_headline": -8,
+    "resolution": "retain both observations; no zero-fill or arithmetic correction; recheck original signed national protocol before scoring",
+    "status": "research_hold"
+  }
+]

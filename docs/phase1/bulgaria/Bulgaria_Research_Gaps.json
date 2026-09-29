@@ -1,0 +1,197 @@
+[
+  {
+    "hold_id": "G01",
+    "title": "Early/snap Assembly and constitutional-era gate",
+    "finding": "Current ordinary cycle is term-derived 2030. Article 99 early path can overtake it. Do not mint a snap date or assume the same dissolution mechanism across pre/post-2023 constitutional eras.",
+    "release_condition": "A new official decree and applicable constitutional text, dated to the event.",
+    "source_ids": [
+      "BI-turn60view1",
+      "BI-turn61view1",
+      "BI-turn57view0"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G02",
+    "title": "Presidential selection / runoff / founding years",
+    "finding": "Current President/VP is popular joint ticket. 2006/2011/2016/2021 rounds transcribed; 1992/1996/2001 archives and the 1989–1991 transition remain incomplete. No indirect transition selection is represented as a popular vote.",
+    "release_condition": "CIK archived decisions and protocols for each missing round; date-specific transition act.",
+    "source_ids": [
+      "BI-turn61view2",
+      "BI-turn42search3"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G03",
+    "title": "Submunicipal_scope policy hold",
+    "finding": "Retain 3,067 P identities: 35 district and 3,032 village mayor rows. Their result data do not confer production acceptance or 2027 eligibility.",
+    "release_condition": "Justin policy change plus a dated official 2027-or-later eligible-office roster.",
+    "source_ids": [
+      "BI-turn60view0",
+      "BI-turn58view1"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G04",
+    "title": "Градец 2015 unresolved qualification change",
+    "finding": "BG-SLV11-b88d0d4475-V retains six first-round and two unresolved runoff observations. No 2015 selected completed event, fabricated withdrawal, correction, or replacement election.",
+    "release_condition": "Original competent election/qualification/court decision linking the precise candidate and stage.",
+    "source_ids": [
+      "BI-turn59search36"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G05",
+    "title": "Municipal roster / consolidations / same-territory changes",
+    "finding": "All P 530 accepted IDs retained. NSI confirms 265 municipalities as of end-2025. Full dated 2026 name/code comparison and older municipal reform mapping remain incomplete; no adds/removes or guessed successor links.",
+    "release_condition": "Official EKATTE changes and electoral registers, including both old and new unit identity.",
+    "source_ids": [
+      "BI-turn60view0"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G06",
+    "title": "Stefan Stambolovo / Gradina settlement rename",
+    "finding": "NSI identifies same official settlement code 17467 and a December 2025 rename. Keep the possible P village-office match held and original label lossless; do not mint a second office.",
+    "release_condition": "Authoritative office-to-settlement crosswalk and dated eligibility evidence; no successor edge needed solely for same-code rename.",
+    "source_ids": [
+      "BI-turn60view0"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G07",
+    "title": "EP era and incomplete losing-list votes",
+    "finding": "Five election years retained. 2007 selected winners only, BSP votes untranscribed; 2009–2024 EP summary percentages/seats, raw votes absent. Initial allocation is distinct from treaty or later membership composition.",
+    "release_condition": "CIK certified full national vote vectors and dated EP seat-allocation/composition acts.",
+    "source_ids": [
+      "BI-turn56search0",
+      "BI-turn41search38",
+      "BI-turn15view2"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G08",
+    "title": "1989–1991 / Grand National Assembly",
+    "finding": "Sourced seventh Grand National Assembly is a distinct historical body, combined 1990 election allocation. No kingdom or People’s Republic office is equated with today’s ordinary Assembly; no guessed successor edge.",
+    "release_condition": "Dated constituting and termination acts before any added historical identity or edge.",
+    "source_ids": [
+      "BI-turn40view2",
+      "BI-turn39search3"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G09",
+    "title": "Published aggregate inconsistencies",
+    "finding": "Five event vectors disagree with retrieved headline aggregates; all numeric observations retained, review flagged. April 2021 independent-candidate denominator also requires scope review.",
+    "release_condition": "Original signed protocols and correction decisions; no arithmetic imputation.",
+    "source_ids": [
+      "BI-turn40view1",
+      "BI-turn37view2",
+      "BI-turn46view0"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G10",
+    "title": "Certification / annex / raw-source access",
+    "finding": "Many CIK pages were indexed and extractable but direct downloads returned 403. Saved text hashes are extraction hashes, not raw HTML/PDF hashes. P local histories include third-party public CIK republication caveats.",
+    "release_condition": "Original national/municipal certification documents and raw bytes when accessible.",
+    "source_ids": [
+      "BI-turn52view2",
+      "BI-turn55view0"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G11",
+    "title": "Earlier parliamentary partiality",
+    "finding": "1997 date-only; 2001/2005 summaries omit losing lists; 2009/2013/2014 seats-only; 2017 seats not transcribed. Missing fields stay null.",
+    "release_condition": "CIK/Parliament archival full tables and certified seat allocations.",
+    "source_ids": [
+      "BI-turn51search0",
+      "BI-turn50view2",
+      "BI-turn54view1",
+      "BI-turn33view0"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G12",
+    "title": "Annulled / corrected / repeat / replacement",
+    "finding": "27 October 2024 court-corrected result is a result revision, not a new 2025 election. 2009–2010 court/composition changes remain separately described. P unresolved local outcomes are not promoted; any genuine repeat ballot requires its own sourced event.",
+    "release_condition": "Court order, amended certificate and explicit repeat/replacement call as separate source records.",
+    "source_ids": [
+      "BI-turn15view0",
+      "BI-turn55view1"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G13",
+    "title": "No invented regional elected layer",
+    "finding": "Regional governor office is appointed under Article 143; NUTS regions are not a reason to create elected offices. Regional elected count remains zero.",
+    "release_condition": "A new law establishing a distinct popular elected body would be required.",
+    "source_ids": [
+      "BI-turn43view1",
+      "BI-turn60view0"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G14",
+    "title": "Calendar beyond global alert horizon",
+    "finding": "All ordinary families remain on country calendar even if next ordinary elections are beyond about 18 months; 2029/2030 are recorded without fabricated days.",
+    "release_condition": "Official calls update precision; they do not determine whether the family exists.",
+    "source_ids": [
+      "BI-turn57view1",
+      "BI-turn60view1"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G15",
+    "title": "English/Bulgarian constitutional translation conflict",
+    "finding": "Article 64(3) Bulgarian says before expiry; retrieved English says after. Calendar follows Bulgarian text, with no inferred precise expiry-day election.",
+    "release_condition": "Use the promulgated Bulgarian text for operative dates; retain translation conflict.",
+    "source_ids": [
+      "BI-turn60view1",
+      "BI-turn43view1"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  },
+  {
+    "hold_id": "G16",
+    "title": "Latest-law version and mayor-era gate",
+    "finding": "Current direct municipal mayor ballots are established by Election Code and electoral practice. Article 139 permits statutory direct/indirect arrangements; current mode must not be back-projected across every earlier era or municipality class.",
+    "release_condition": "Dated Election Code/local-government amendments and original contests for each historical extension.",
+    "source_ids": [
+      "BI-turn59search36",
+      "BI-turn58view1",
+      "BI-turn43view1"
+    ],
+    "status": "research_hold",
+    "justin_approved": false
+  }
+]
