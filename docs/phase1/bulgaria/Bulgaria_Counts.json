@@ -1,0 +1,51 @@
+{
+  "applied_changes": 0,
+  "research_snapshot": "2026-09-29",
+  "current_in_scope_offices": 533,
+  "inherited_P_accepted_municipality_wide": 530,
+  "municipal_councils": 265,
+  "municipal_direct_mayors": 265,
+  "new_current_national": 2,
+  "new_current_EP": 1,
+  "historical_only_offices": 1,
+  "held_submunicipal": 3067,
+  "held_district_mayors": 35,
+  "held_village_mayors": 3032,
+  "office_register_rows": 3601,
+  "draft_tier_histogram": {
+    "municipal": 3597,
+    "national": 3,
+    "other": 1
+  },
+  "new_events": 31,
+  "inherited_events": 8661,
+  "historical_event_total": 8692,
+  "new_result_rows": 421,
+  "inherited_result_rows": 25817,
+  "result_row_total": 26238,
+  "retained_observations_not_events_or_results": 10337,
+  "inherited_event_scope_histogram": {
+    "hold_submunicipal_scope": 7071,
+    "inherited_P_accepted": 1590
+  },
+  "inherited_result_scope_histogram": {
+    "hold_submunicipal_scope": 15474,
+    "inherited_P_accepted": 10343
+  },
+  "BI_event_family_histogram": {
+    "BG-NATIONAL-ASSEMBLY": 17,
+    "BG-PRESIDENT-JOINT-TICKET": 8,
+    "BG-GRAND-NATIONAL-ASSEMBLY-1990": 1,
+    "BG-EUROPEAN-PARLIAMENT": 5
+  },
+  "BI_result_family_histogram": {
+    "BG-NATIONAL-ASSEMBLY": 297,
+    "BG-PRESIDENT-JOINT-TICKET": 81,
+    "BG-GRAND-NATIONAL-ASSEMBLY-1990": 8,
+    "BG-EUROPEAN-PARLIAMENT": 35
+  },
+  "regional_offices": 0,
+  "successor_links": 0,
+  "all_BI_approvals_unchecked": true,
+  "research_coverage_complete": false
+}

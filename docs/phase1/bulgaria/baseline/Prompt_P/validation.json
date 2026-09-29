@@ -1,0 +1,683 @@
+{
+  "status": "accepted_530_held_3067",
+  "applied_changes": 0,
+  "main_commit": "00c2ea7458ad7705aad487c4a7665d9d343b5554",
+  "package_commit": "de3541276cd37ca749b740c229cee67475f0d317",
+  "package_validator": {
+    "exit_code": 0,
+    "stdout": "PASS: Bulgaria: 3597 offices, 8661 history entries, 3617 verified payload files"
+  },
+  "verified_counts": {
+    "current_offices": 3597,
+    "geographies": 3597,
+    "mayors": 265,
+    "municipal_councils": 265,
+    "district_mayors": 35,
+    "village_mayors": 3032,
+    "municipal_offices_proposed": 3597,
+    "regional_offices_proposed": 0,
+    "focused_tier_reviews": 3067,
+    "companion_offices": 3597,
+    "master_history_rows": 0,
+    "companion_histories": 8661,
+    "index_histories": 8661,
+    "overlap_histories": 8661,
+    "total_events": 8661,
+    "prospective_events": 0,
+    "unknown_next_dates": 3597,
+    "research_dates": 8661,
+    "historical_dates_day": 8661,
+    "calendar_cohorts": 1,
+    "result_rows": 25817,
+    "first_round_retained_rows": 7746,
+    "first_round_office_year_groups": 1482,
+    "first_round_candidate_bound_rows": 7740,
+    "first_round_unbound_rows": 6,
+    "unresolved_retained_rows": 2591,
+    "unresolved_office_date_phase_groups": 559,
+    "master_catalogue_rows": 2809,
+    "companion_catalogue_rows": 3971,
+    "overlapping_catalogue_ids": 2809,
+    "distinct_catalogue_sources": 3971,
+    "inline_only_sources": 2,
+    "sources": 3973,
+    "office_briefings": 3597,
+    "country_briefings": 1,
+    "poll_records_supplied": 0,
+    "control_observations_supplied": 0,
+    "proceedings": 0,
+    "party_mappings": 0,
+    "outer_package_files": 54,
+    "payload_member_files": 3617,
+    "retained_inputs": 3672,
+    "legacy_geography_name_type_unique": 3239,
+    "legacy_geography_colliding_groups": 272,
+    "legacy_geography_colliding_offices": 630
+  },
+  "tier_candidate_sha256": "cff8fcabb12716230a314309162a40c72a3d7d13fe1aa4469cfb1655767c48f0",
+  "accepted_tier_sha256": "9a6718fe301f440511cc9e9f9b4139b3a1e0332ef2e3e6c9b3063f67f04652ab",
+  "predecessor_draft_sha256": "cff8fcabb12716230a314309162a40c72a3d7d13fe1aa4469cfb1655767c48f0",
+  "source_register": {
+    "path": "data/countries/bulgaria/unpacked/tables/master/office-register.json",
+    "archive_entry": "tables/master/office-register.json",
+    "package_dir": "data/countries/bulgaria",
+    "sha256": "00ddcca3c48141302a7432f97effd017a009fee3d64fb7f9000a72ef79663559",
+    "bytes": 1309333,
+    "payload_sha256": "0b6b2c05dd8906f7e7a19927e847d4bc0aa83da8769e70ebbef012b13d0d287e"
+  },
+  "justin_tier_approval": {
+    "date": "2026-09-19",
+    "timezone": "America/Edmonton",
+    "municipality_wide_accepted": true,
+    "accepted_count": 530,
+    "accepted_office_types": ["Mayor", "Municipal council"],
+    "submunicipal_policy": "hold",
+    "held_count": 3067,
+    "held_office_types": ["District mayor", "Village mayor"],
+    "held_review_category": "submunicipal_scope",
+    "regional_invented": false,
+    "importer_loads": "approved_530_only"
+  },
+  "importer": "Not run",
+  "sqlite": "Not run",
+  "vps": "Not run",
+  "ui": "Not run",
+  "documentation_checks": {
+    "pinned_main_and_package": true,
+    "complete_trees": true,
+    "Bulgaria_absent_main": true,
+    "all_pinned_blobs_match": true,
+    "48_ordered_chunks": true,
+    "payload_sha": true,
+    "3617_safe_exact_members": true,
+    "member_set": true,
+    "all_member_hashes_lengths": true,
+    "original_archive_hash": true,
+    "original_workbook_hashes": true,
+    "exact3597_tier_set": true,
+    "tier_draft_municipal_no_regional": true,
+    "3067_focused_scope_flags": true,
+    "notes_existing_IDs_only": true,
+    "O_equals_J": true,
+    "office_type_counts": true,
+    "265_pairs": true,
+    "register_hash_and_length": true,
+    "tier_hash": true,
+    "8661_H_IX_unique_overlap": true,
+    "no_master_history": true,
+    "all_overlap_values_equal": true,
+    "all_D_bind_fullHK": true,
+    "no_future_dates": true,
+    "8661events_dates_only": true,
+    "date_precision_certainty": true,
+    "geography_unique3597": true,
+    "collision_groups272_630": true,
+    "all_sources_unique": true,
+    "all_citation_URLs_resolve": true,
+    "source_inventory_urls_equal": true,
+    "all25817_value_status_domain": true,
+    "25817_result_unique": true,
+    "missing587_zero26_votes": true,
+    "221_percentage_only_events": true,
+    "28_zero_shares_two_missing_vote_counts": true,
+    "seats_zero_positive": true,
+    "10337retained_stage_rows": true,
+    "no_stage_promotion": true,
+    "six_unbound_rows": true,
+    "all_stage_offices_existing": true,
+    "retained_stage_raw_exact": true,
+    "559_unresolved_groups": true,
+    "3672_input_descriptors": true,
+    "independent_js_vectors": true,
+    "all_origins_resolve": true,
+    "223columns20tables": true,
+    "all_DDL_column_sets": true,
+    "all15_source_table_columns": true,
+    "17_examples": true,
+    "22_done21_notrun": true,
+    "unchecked_approvals_links_valid": true,
+    "one_page_summary": true,
+    "frozen_validator_PASS": true,
+    "repository_unchanged_clean": true
+  },
+  "check_count": 56,
+  "resolved_source_locators": 92258,
+  "protected_files": [
+    {
+      "path": "data/countries/bulgaria/.gitattributes",
+      "sha256": "8ff6b62cc6e8936633815df991e3490e578e76834ab971d7a3431ea945cacbb1",
+      "bytes": 23
+    },
+    {
+      "path": "data/countries/bulgaria/README.md",
+      "sha256": "b0f83ae72136d67e1c0206b65123f0cc5918c904d757cee302b6bd149b19365f",
+      "bytes": 4185
+    },
+    {
+      "path": "data/countries/bulgaria/coverage.json",
+      "sha256": "e1276bd05095744d4a066158dc60e33da21158d32959134e981a3975c8ef2048",
+      "bytes": 1093
+    },
+    {
+      "path": "data/countries/bulgaria/extract.py",
+      "sha256": "61ce3c8c4699a6c93e16017fe2b8bf7830d8855783042ad6156859728355fe22",
+      "bytes": 12475
+    },
+    {
+      "path": "data/countries/bulgaria/manifest.json",
+      "sha256": "bddffea007e2938bfa9ef144678b46e6f350e973f52e5371af979854ca623cbb",
+      "bytes": 8001
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part001",
+      "sha256": "7bc6b5b013cd42eb5ea906c82672790ed70baf3c1a41dbee2ce58b9942ea209a",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part002",
+      "sha256": "bf86003f7fa2803d22078345e6b0369014f908d873502a9e1f014ff533fa99fb",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part003",
+      "sha256": "5ec140d8bfc6a7856065f2ffa7619ef7a3f3344607bad51f8a09562db04e242d",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part004",
+      "sha256": "5012c7e6fb72d06e31dfa44127666ab37ab82d9a8e4b7f1aea2432e96870598f",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part005",
+      "sha256": "5b550810caf4411e588ca25fe675b6d8ec4b8598fcb0968287dee901b625a56d",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part006",
+      "sha256": "aa6e3d8a82693fc788e4687f5590e88c64e19cbc334cbf4dda62cbe94f35e7f6",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part007",
+      "sha256": "7f1cdcea2ba92319b40b3a417d4cb257e5a3d2af78e75ee0108383b693d2f8b4",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part008",
+      "sha256": "1a7f09c1572affb10466d23be888441c6dc9caf2040d96a4fd8806983fe5ab6e",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part009",
+      "sha256": "c9eedcc54d157571baddc5d2bc1a595867c64e57cce03457dedc53534862d17c",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part010",
+      "sha256": "911dca6ab7ff8425733c3f77057d4f92fcffc8cce784b948ed0323af52a549e0",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part011",
+      "sha256": "da169bdda56df4c785de39ddd5532b5f762b89871110df1295330e812ec86d15",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part012",
+      "sha256": "9b9d08ff601a92621d4923e2b83dd1f227e6fd4ef1346117f260735116a7103c",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part013",
+      "sha256": "dadde07d3b91277e31b4212057e45d6eb614cc7e310a2ae740abb6248379d3fa",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part014",
+      "sha256": "4953cb9cc332e2a33d21df060f22914717a9c6a8b4ddcfd342ecb2580fa91601",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part015",
+      "sha256": "9315647c4b6dbea5f4057167fcfdb2798c0755d24762c80b4c75e177ea36f77a",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part016",
+      "sha256": "b2c0f62b5339fc7e46a20aca0de8f786080287625ec8c123429b28f3e183088f",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part017",
+      "sha256": "786e05fe4cc948944bc452715c6d20abdacb7da2725e7c01de53e27309673c8c",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part018",
+      "sha256": "2868f8a0b72c50088afd40d51c4219d8888f8ec015bdd0d285fc079b8c5ef31e",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part019",
+      "sha256": "7836285cbc47588ea04b33a42efb9d3ff3f27f4c1a7177fef021e2992ba15835",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part020",
+      "sha256": "16438dbbabe50c91a62a68ea14dabd88cfadb19eec37d1b86d89bf2b6789e00d",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part021",
+      "sha256": "a3f31e809a9a2ee95db22a86cf9cd7ba16bdc34d46a9452d4fdebd3727444a3c",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part022",
+      "sha256": "d28457efc1d090bf7aa326a9b7fde52e79437a450cce13fc464a2b1b3ba6c641",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part023",
+      "sha256": "273b994af4ebeadc7355caf6f38e54d175cb0ae5816f1bf35dae26560dafc542",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part024",
+      "sha256": "68d22e32bd9f3ec6a5a71face94f80bb8e9afc2f30e71d832fd51c2d5e74d4a0",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part025",
+      "sha256": "8d2622752b73b92de8f4951138accabcf35584f841a7b8795f7d97c0a41586f9",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part026",
+      "sha256": "916aa0eb0903f3b51baa6afc140bca514b489364125bcc529786e00dc8b82e83",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part027",
+      "sha256": "14341757b4ec2f7714c82b728334346bb169861e37cdf8fed814ec6f08a59f78",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part028",
+      "sha256": "5b77707160eeb75e9ef76f1725c10509dcdc53c940972283849422ab55bf1377",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part029",
+      "sha256": "838efa2b1a05820a9263aa128b0ab647040f7d625a7f23ef5d4092d713e73099",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part030",
+      "sha256": "abb5b73a0951b5b3a353ae90ed9353f79a4ea08054a16f07f129760eba4b7149",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part031",
+      "sha256": "46b7e8eed4bc9e70f0d7c23b4673d7dd60cc6b48ae451142f70a0f58ab7c3aee",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part032",
+      "sha256": "8bea25601eec46c4a2cc15401a7465b9db13200de433675532e57b7e16ba1611",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part033",
+      "sha256": "2a1fba1f3816f82cfe0f31d9633d850c193080b978f1abdbc6f799fb0a144239",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part034",
+      "sha256": "6985f4509914b85aedf9109eb09853bf96f817b52fe76253cf510133c23f6d31",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part035",
+      "sha256": "e399d7449ebc392ff83d061099bb69f9c10ebfd6ca771ebc958b0f8a55a9e041",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part036",
+      "sha256": "ad2f55823c384ca42316cc9fcc181aaec73a0a1825d786b8bfdc34fcb7d9a6f4",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part037",
+      "sha256": "0f044989c182c59c75a26ad3be6c32091f1df67e4e0e97cdc54c063aa097314b",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part038",
+      "sha256": "dc1a446ea51b438930c4d4d4252a335924d61886ca768671f6f33da657b2f0d0",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part039",
+      "sha256": "4e60fb8bb84e5be5c735657d8cc2a73ad87364fb5dbbc296adbd585eea604ff2",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part040",
+      "sha256": "6c212d99468c412e25c281e4eb9f336874fc5fe2f4b278b959ff7d25c75eb978",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part041",
+      "sha256": "b42dda13e99f0127d5fdd09f8840e32f0dc6b45feb5720cf0bc6ab95c3568c77",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part042",
+      "sha256": "5870113ca9ced43fcb424ce89078c0ce92ca43fba6b01418f1bee478e0ddab87",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part043",
+      "sha256": "418026b759d13983888ed7994a62da77849351ba049a1786e6e9bd15a975638a",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part044",
+      "sha256": "9143f257901d78f163e1dc3cf9976637a7bec0a9c78efb17a8ac40bb439d89f5",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part045",
+      "sha256": "38dde5ee1ec7762e0b8627399f0e75bda35a874bb67e603c657e0493f6daf17d",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part046",
+      "sha256": "05b44d7a5ee1b2dbcee9b33110cd8da956ec330dd892488dc7f24f84b20e8ab4",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part047",
+      "sha256": "8231d926414cfa24071c0ebccd70d910a0359c50109fe216a111d5573024a0db",
+      "bytes": 98304
+    },
+    {
+      "path": "data/countries/bulgaria/payload/data.tar.xz.part048",
+      "sha256": "7baba3d77d3233a2fd6fae2e701f38adc1b7faade370a88c406cd3b241c01f91",
+      "bytes": 88076
+    },
+    {
+      "path": "data/countries/bulgaria/validate.py",
+      "sha256": "3101dc95312dd3e926ba2d02aee4d1563828ee2649ba2a2c123b7a35d5e20c5e",
+      "bytes": 3021
+    },
+    {
+      "path": "docs/atlas-plan.md",
+      "sha256": "558667ed9cc8fa8aa0cda78f3f1b90faec5e7f7bd2378dd41e3ff19b0235002f",
+      "bytes": 62474
+    },
+    {
+      "path": "docs/phase1/Albania_Acceptance_Examples.md",
+      "sha256": "43cca0f54e46afb8eda65713c14c1d0ac7a9f406ac34ad069530411c6da46b40",
+      "bytes": 14032
+    },
+    {
+      "path": "docs/phase1/Albania_Field_Map.md",
+      "sha256": "b2386dc56c19fccb13f91c8acd2b07a1f662a6a6f7b8da5abe55149b3e4c27fb",
+      "bytes": 69740
+    },
+    {
+      "path": "docs/phase1/Albania_Identity_Rules.md",
+      "sha256": "def15d98a8bf41cad8623bc09b65ee55af499edb2dc1c4c65a41216d95ed4d0c",
+      "bytes": 23297
+    },
+    {
+      "path": "docs/phase1/Phase1_DDL_Rationale.md",
+      "sha256": "90bb905e8303812c92f861f8e6a7571e570dab653360f2965e681e84fc652806",
+      "bytes": 3811
+    },
+    {
+      "path": "docs/phase1/Prompt_C_Field_Map_and_CI.md",
+      "sha256": "db6aacce8f3d353b730339e06c79027bd27f543eb1f913f0d9be4655b671239d",
+      "bytes": 20049
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Acceptance_Examples.md",
+      "sha256": "ac4fb64b1a803d3b24c9f88459fa55b60e3f70291c021d4253f6f400e4482f69",
+      "bytes": 19104
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Field_Map.md",
+      "sha256": "27b19c201b7e9516bde710575731c06336db4e0d87ddb380bf9c1583ced4acf0",
+      "bytes": 77203
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Identity_Rules.md",
+      "sha256": "70d7d8bb32e1aff5c2e8114ecda98689f56253611cb38d90c4fc84bc710516ff",
+      "bytes": 16799
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Identity_Vectors.json",
+      "sha256": "f72120451c361dd9dd607ee91a619e42be638757466a22119c68a8534f49f525",
+      "bytes": 28778
+    },
+    {
+      "path": "docs/phase1/alderney/Alderney_Input_Inventory.json",
+      "sha256": "f59eb0ae26cbeafa7504872f4003db112d4b0d3cc6cb5c000b0b9e66750df18e",
+      "bytes": 12688
+    },
+    {
+      "path": "docs/phase1/alderney/Prompt_K_Field_Map_and_CI.md",
+      "sha256": "6f7ee2cd5c75c26434377dcea3ecb2f5a8549182fe1ab50dd5cbe1ae6c86bab1",
+      "bytes": 10911
+    },
+    {
+      "path": "docs/phase1/alderney/README.md",
+      "sha256": "a1bb05f5f92c5f1a3f9211f05e39b436ac1230e59ba62245b6ad057ecdc6a09f",
+      "bytes": 619
+    },
+    {
+      "path": "docs/phase1/alderney/validation.json",
+      "sha256": "368203ecad35c7177aa3ad24d87d9c6c17e82d096e7d602d933c616335f36f57",
+      "bytes": 12883
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Acceptance_Examples.md",
+      "sha256": "884e3ecdf80323b63f888ac52567e0b9465101edf444c42c332f015954661354",
+      "bytes": 18327
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Field_Map.md",
+      "sha256": "689a4f9fe6878747617b2d8e1939e5cf1e1a21196cfb6e989fc6b1fbceb8a95a",
+      "bytes": 78040
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Identity_Rules.md",
+      "sha256": "0fdbe91ba08b0a93df0d9d5986e7a7c2311fcd6333440325c610ae24648b14cf",
+      "bytes": 15940
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Identity_Vectors.json",
+      "sha256": "f6816fd1dd008d6900f7240f0e2e20f89dc020ad0ab879de813bd48687c94dae",
+      "bytes": 52247
+    },
+    {
+      "path": "docs/phase1/andorra/Andorra_Input_Inventory.json",
+      "sha256": "edbe91f086c50be5d8e6cf1a41822ae38656ee14b2ea5b40dac1c5c4e9a5e502",
+      "bytes": 14148
+    },
+    {
+      "path": "docs/phase1/andorra/Prompt_J_Field_Map_and_CI.md",
+      "sha256": "a54957388301689ef62e3f2e8d070816a36a482725dddcce7e29bea38a38fa57",
+      "bytes": 11523
+    },
+    {
+      "path": "docs/phase1/andorra/README.md",
+      "sha256": "f1a45b115b129a0ed6b95b8ce6a63258ee07fa94144d23e36da95913bf5537b1",
+      "bytes": 582
+    },
+    {
+      "path": "docs/phase1/andorra/validation.json",
+      "sha256": "e024b82a73fd87423c3b6a433335926bca54d8eced0275cbf1c290d7200d73e4",
+      "bytes": 14409
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Acceptance_Examples.md",
+      "sha256": "b4a0f73099edf06d988fc798e31ba0bd8827009613b27b82995ddddc44bf343e",
+      "bytes": 18738
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Field_Map.md",
+      "sha256": "d9009d6f594b6f416fab5732891d33ae888b593483f8bf6b31c296b66e92d390",
+      "bytes": 84391
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Identity_Rules.md",
+      "sha256": "9d076e4641556d4b1b5bd03656bc7190b4c9af3c9d937ac79bf9ddc4de147858",
+      "bytes": 16808
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Identity_Vectors.json",
+      "sha256": "6ac9dc488252bacace33e6324be331f716dbfcf29acc1a3e43c6b75d8e702b0f",
+      "bytes": 270746
+    },
+    {
+      "path": "docs/phase1/armenia/Armenia_Input_Inventory.json",
+      "sha256": "b4a97e07a0ac118570f293baf208ff6679763f740950ec46ba640a94322a27cd",
+      "bytes": 64794
+    },
+    {
+      "path": "docs/phase1/armenia/Prompt_L_Tiers_Field_Map_and_CI.md",
+      "sha256": "1a3faba9097ecb80a5ea5da59d61f400e40537902f9764943ca1f5f0fdba6fd8",
+      "bytes": 9580
+    },
+    {
+      "path": "docs/phase1/armenia/README.md",
+      "sha256": "5c3f453d0b0972c0818e25aac422a3a9689c32f4bd06f4f433709dce001d39c7",
+      "bytes": 721
+    },
+    {
+      "path": "docs/phase1/armenia/validation.json",
+      "sha256": "44fbf7c4ce250c1d264197c8d2de1bee442ce3b6f3fa2ebd3b609dc303da81ad",
+      "bytes": 42754
+    },
+    {
+      "path": "docs/phase1/austria/Austria_Acceptance_Examples.md",
+      "sha256": "9e46261715ac9e99ac8d456c8d478110b9e1b1cb32412101f459566e92a9b010",
+      "bytes": 20964
+    },
+    {
+      "path": "docs/phase1/austria/Austria_Field_Map.md",
+      "sha256": "2be121b5c3b2fdb0158dee2404fd6fec4c4e0f148df9bbb85d11e5e07b3868b5",
+      "bytes": 87463
+    },
+    {
+      "path": "docs/phase1/austria/Austria_Identity_Rules.md",
+      "sha256": "2e878dd3792fc4ed773e026f296f578d684b0304f84cef795869e85a1303dfca",
+      "bytes": 17350
+    },
+    {
+      "path": "docs/phase1/austria/Prompt_N_Austria_Tiers_Accepted.md",
+      "sha256": "eed79ca6bb1590a24389d841208646d64bb09ad99a03de9d18486c93131f3955",
+      "bytes": 874
+    },
+    {
+      "path": "docs/phase1/austria/Prompt_N_Tiers_Field_Map_and_CI.md",
+      "sha256": "2d4859350bc315e40970e516c1f5e35c255755899d8bc050ef2658c75ecb8bcc",
+      "bytes": 7743
+    },
+    {
+      "path": "docs/phase1/austria/README.md",
+      "sha256": "6da813211e603a57faf3e6ea03ded40161babaa4f03f39ba6611c7a8682a8330",
+      "bytes": 1182
+    },
+    {
+      "path": "docs/phase1/bosnia-and-herzegovina/Bosnia_Acceptance_Examples.md",
+      "sha256": "a171fea5b6be665fdc4b638f0461590cff9340098695df65051bf87952e86a76",
+      "bytes": 19709
+    },
+    {
+      "path": "docs/phase1/bosnia-and-herzegovina/Bosnia_Field_Map.md",
+      "sha256": "7b75eb871e35d8cda4f0d04c1ca48031386d12bfb6415074e744f889551b438f",
+      "bytes": 78693
+    },
+    {
+      "path": "docs/phase1/bosnia-and-herzegovina/Bosnia_Identity_Rules.md",
+      "sha256": "87de266d45ce0dd3d43542e267b6d79a15231f0c2706f87d4d22050d29403c03",
+      "bytes": 16853
+    },
+    {
+      "path": "docs/phase1/bosnia-and-herzegovina/Prompt_O_Bosnia_Tiers_Accepted.md",
+      "sha256": "4ae01f12cde0eb1654c3e718686bb750cc8b1d1a02afe96516f481c00fe27303",
+      "bytes": 589
+    },
+    {
+      "path": "docs/phase1/bosnia-and-herzegovina/Prompt_O_Tiers_Field_Map_and_CI.md",
+      "sha256": "c3839740b3c644077d24119734b1f10628d3acb94b793b3f085873825170557e",
+      "bytes": 7623
+    },
+    {
+      "path": "docs/phase1/bosnia-and-herzegovina/README.md",
+      "sha256": "0ac85c8738bb91ac6d92c4ad9d231ce7d9097ed5e4ee34424d65d05d7be3c1d9",
+      "bytes": 1460
+    },
+    {
+      "path": "lib/atlas/identity.ts",
+      "sha256": "8be58bfe59a32110cfe6635c7d51ca73cd469b984179a7ab6083522698626444",
+      "bytes": 7941
+    },
+    {
+      "path": "lib/observatory/adapters/armenia.ts",
+      "sha256": "bf4d7747186e788a8d775a100ebe15c4b4dc3d8cfe8f0cc45b1c1edba9b8b6ac",
+      "bytes": 13626
+    },
+    {
+      "path": "lib/observatory/adapters/europe.ts",
+      "sha256": "031b031fe8dbb08d906925be0701e9c3e9d39fca667fd1e03d906cef58e8bb4c",
+      "bytes": 20888
+    },
+    {
+      "path": "lib/observatory/adapters/inventory.ts",
+      "sha256": "988d9c6efe5c94b78c2f6b7f5037d8b5636e1d55f47b772fade979dbb6e1e6f8",
+      "bytes": 3939
+    },
+    {
+      "path": "lib/observatory/adapters/tables.ts",
+      "sha256": "fd2c8e73e0aacd5739f06801eabd96d7e5c403b8abf7b8e2a0ac68e1fc3a5109",
+      "bytes": 2632
+    },
+    {
+      "path": "schemas/atlas/migrations/0001_atlas_attempt_log.sql",
+      "sha256": "e36a15fa7952a1561c17ee663b2544bc43544a7bf1d2e3688ceabf648a8ff4d1",
+      "bytes": 4226
+    },
+    {
+      "path": "schemas/atlas/migrations/0002_atlas_master.sql",
+      "sha256": "1c59e81705d2f6172ca4c0e4aea9b4e390c6fa7606ba305a244756ff7e7af8da",
+      "bytes": 35131
+    },
+    {
+      "path": "schemas/atlas/migrations/README.md",
+      "sha256": "ac339efd00bd5d8df8827d9aaf4a9a09ff66cd696848c095658178170afe94bd",
+      "bytes": 1398
+    },
+    {
+      "path": "schemas/atlas/tiers/albania.json",
+      "sha256": "53a31d441761952a9f511c58a397e7877616c0ad6af30dce7587bcb6bcbbd93d",
+      "bytes": 63443
+    },
+    {
+      "path": "schemas/atlas/tiers/armenia.json",
+      "sha256": "2905af1a2a1465f32e457657f5a900c556757b7964f37c8c57adeb86d4a80b7a",
+      "bytes": 53447
+    },
+    {
+      "path": "scripts/import/normalize.ts",
+      "sha256": "54450ad61e54d14aa142a69a205ebd42d2b4fac8165da91e55a62f298ba3f06a",
+      "bytes": 22236
+    }
+  ],
+  "manifest_rule": "SHA256SUMS covers every other ZIP member; no recursive self-hash. ZIP/manifest digests in external receipt."
+}

@@ -578,7 +578,7 @@ describe("Phase 0 tier-classification drafts", () => {
         notes?: Array<{ scope?: string; status?: string; office_ids?: string[]; note?: string }>;
         source_register: { path: string; sha256: string; payload_sha256?: string };
       }
-    >("schemas/atlas/tiers/bulgaria.json");
+    >("docs/phase1/bulgaria/baseline/Prompt_P/Accepted_Tiers.json");
     expect(bulgaria.status).toBe("approved");
     expect(bulgaria.country_slug).toBe("bulgaria");
     expect(bulgaria.approval).toMatchObject({
@@ -593,7 +593,7 @@ describe("Phase 0 tier-classification drafts", () => {
     expect(bulgaria.predecessor_draft_sha256).toBe(
       "cff8fcabb12716230a314309162a40c72a3d7d13fe1aa4469cfb1655767c48f0",
     );
-    expect(sha256("schemas/atlas/tiers/bulgaria.json")).toBe(
+    expect(sha256("docs/phase1/bulgaria/baseline/Prompt_P/Accepted_Tiers.json")).toBe(
       "9a6718fe301f440511cc9e9f9b4139b3a1e0332ef2e3e6c9b3063f67f04652ab",
     );
     expect(bulgaria.classifications).toHaveLength(3597);
@@ -664,6 +664,76 @@ describe("Phase 0 tier-classification drafts", () => {
     expect(packed.payloadSha256).toBe(
       "0b6b2c05dd8906f7e7a19927e847d4bc0aa83da8769e70ebbef012b13d0d287e",
     );
+  });
+
+  it("pins the Bulgaria schema path to the Prompt BI draft and preserves inherited identities", () => {
+    const preserved = readJson<TierFile>("docs/phase1/bulgaria/baseline/Prompt_P/Accepted_Tiers.json");
+    const bulgaria = readJson<
+      TierFile & {
+        status: string;
+        applied_changes?: number;
+        counts_by_production_disposition?: Record<string, number>;
+        classifications: Array<
+          TierFile["classifications"][number] & {
+            production_disposition?: string;
+            justin_approved?: boolean;
+            applied?: boolean;
+            draft_tier?: string;
+          }
+        >;
+      }
+    >("schemas/atlas/tiers/bulgaria.json");
+    expect(bulgaria.status).toBe("draft");
+    expect(bulgaria.applied_changes).toBe(0);
+    expect(sha256("schemas/atlas/tiers/bulgaria.json")).toBe(
+      "82af6120d5372e97c73fb84df294ed99d44c1ccc433a1feaf8637f92b00dcae3",
+    );
+    expect(bulgaria.classifications).toHaveLength(3601);
+    expect(bulgaria.counts_by_proposed_tier).toEqual({
+      municipal: 3597,
+      national: 3,
+      other: 1,
+    });
+    expect(bulgaria.counts_by_production_disposition).toEqual({
+      inherited_P_accepted: 530,
+      draft_pending_Justin: 4,
+      hold: 3067,
+    });
+    expect(bulgaria.classifications.every((row) => row.justin_approved === false)).toBe(true);
+    expect(bulgaria.classifications.every((row) => row.applied === false)).toBe(true);
+    expect(bulgaria.classifications.some((row) => row.tier === "regional" || row.draft_tier === "regional")).toBe(
+      false,
+    );
+    const preservedAccepted = new Set(
+      preserved.classifications.filter((row) => row.human_review_required === false).map((row) => row.office_id),
+    );
+    const preservedHeld = new Set(
+      preserved.classifications.filter((row) => row.human_review_required === true).map((row) => row.office_id),
+    );
+    const inherited = new Set(
+      bulgaria.classifications
+        .filter((row) => row.production_disposition === "inherited_P_accepted")
+        .map((row) => row.office_id),
+    );
+    const held = new Set(
+      bulgaria.classifications.filter((row) => row.production_disposition === "hold").map((row) => row.office_id),
+    );
+    expect(preservedAccepted.size).toBe(530);
+    expect(preservedHeld.size).toBe(3067);
+    expect(inherited).toEqual(preservedAccepted);
+    expect(held).toEqual(preservedHeld);
+    expect(held.has("BG-SLV11-b88d0d4475-V")).toBe(true);
+    expect(
+      bulgaria.classifications
+        .filter((row) => row.production_disposition === "draft_pending_Justin")
+        .map((row) => row.office_id)
+        .sort(),
+    ).toEqual([
+      "BG-EUROPEAN-PARLIAMENT",
+      "BG-GRAND-NATIONAL-ASSEMBLY-1990",
+      "BG-NATIONAL-ASSEMBLY",
+      "BG-PRESIDENT-JOINT-TICKET",
+    ]);
   });
 
   it("keeps Belgium Prompt S2 1179 current / 55 historical fully accepted", () => {
