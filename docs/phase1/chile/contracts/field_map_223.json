@@ -1,0 +1,1563 @@
+[
+  {
+    "table": "country",
+    "column": "country_id",
+    "documentary_mapping": "constant chile",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "country",
+    "column": "country_code",
+    "documentary_mapping": "constant CL",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "country",
+    "column": "name",
+    "documentary_mapping": "sourced country, geography or office name",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "country",
+    "column": "polity_kind",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "country",
+    "column": "region_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "country",
+    "column": "coverage_status",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "country",
+    "column": "screening_as_of_label",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "country",
+    "column": "notes",
+    "documentary_mapping": "documentary notes and named research holds",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "country",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "country",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "country",
+    "column": "raw_json",
+    "documentary_mapping": "lossless source facts / retained summary cells / record metadata",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "provenance_kind",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "description",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_release",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_release",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_release",
+    "column": "fingerprint_sha256",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_release",
+    "column": "hash_inputs_json",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_release",
+    "column": "adapter_version",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_release",
+    "column": "method_version",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_release",
+    "column": "schema_version",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_snapshot_label",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_release",
+    "column": "upstream_release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_release",
+    "column": "validated_counts_json",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_coverage_complete",
+    "documentary_mapping": "false: named result, alias, era and repeat gates remain",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "dataset_release",
+    "column": "raw_json",
+    "documentary_mapping": "lossless source facts / retained summary cells / record metadata",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "id_namespace",
+    "documentary_mapping": "proposed documentary namespace atlasresearch-cl-bj; no production minting",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "office_id",
+    "documentary_mapping": "office_register.office_id; pending aliases remain null",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "history_key",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "event_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "date_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "date_resolution",
+    "documentary_mapping": "formula/year, exact historical day, two-day range or research hold",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "event_kind",
+    "documentary_mapping": "events.event_kind; distinguish runoff, partial repeat, partial annulment and final-dataset hold",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "selected_history_role",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "electoral_system",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "comparability",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "ballot_basis",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "share_unit",
+    "documentary_mapping": "fraction where explicitly retained; null otherwise",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "legal_outcome",
+    "documentary_mapping": "only sourced legal decision; null otherwise",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "record_state",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "state_note",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "election_event",
+    "column": "raw_json",
+    "documentary_mapping": "lossless source facts / retained summary cells / record metadata",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "evidence_link",
+    "column": "evidence_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "evidence_link",
+    "column": "record_key",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_country_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_namespace",
+    "documentary_mapping": "official publisher namespace; documentary proposal only",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_locator",
+    "documentary_mapping": "source_refs or source_aggregate_refs and article locator",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_kind",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "evidence_link",
+    "column": "date_claim_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_json",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "evidence_link",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "evidence_link",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "geography",
+    "column": "country_id",
+    "documentary_mapping": "constant chile",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "geography",
+    "column": "geography_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "geography",
+    "column": "name",
+    "documentary_mapping": "sourced country, geography or office name",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "geography",
+    "column": "parent_geography_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "geography",
+    "column": "effective_from_label",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "geography",
+    "column": "effective_to_label",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "geography",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "geography",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "geography",
+    "column": "raw_json",
+    "documentary_mapping": "lossless source facts / retained summary cells / record metadata",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "entity_kind",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_namespace",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "record_key",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "reason",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "raw_json",
+    "documentary_mapping": "lossless source facts / retained summary cells / record metadata",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "attempt_id",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "lineage_id",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "operator",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "script_version",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "started_at",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "finished_at",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "status",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "input_inventory_json",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "successful_release_id",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "publication_set_json",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "row_counts_json",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "error_text",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "id_namespace",
+    "documentary_mapping": "proposed documentary namespace atlasresearch-cl-bj; no production minting",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "office_id",
+    "documentary_mapping": "office_register.office_id; pending aliases remain null",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "country_id",
+    "documentary_mapping": "constant chile",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "geography_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "name",
+    "documentary_mapping": "sourced country, geography or office name",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "office_type",
+    "documentary_mapping": "office_register.office_family; target enum review required",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "office_status",
+    "documentary_mapping": "current / historical_only from office register",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "record_state",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "state_note",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "registry_qualified",
+    "documentary_mapping": "documentary office evidence; does not imply approved production publication",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "next_date_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "next_date_resolution",
+    "documentary_mapping": "formula_year; pending formal call",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "next_history_key",
+    "documentary_mapping": "upcoming_calendar_id (documentary association only)",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office",
+    "column": "raw_json",
+    "documentary_mapping": "lossless source facts / retained summary cells / record metadata",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "id_namespace",
+    "documentary_mapping": "proposed documentary namespace atlasresearch-cl-bj; no production minting",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "office_id",
+    "documentary_mapping": "office_register.office_id; pending aliases remain null",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "tier",
+    "documentary_mapping": "draft_tiers.tier: national_context, regional, municipal",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "review_status",
+    "documentary_mapping": "unreviewed; Justin approval false",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "rationale",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_path",
+    "documentary_mapping": "data/draft_tiers.json",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_kind",
+    "documentary_mapping": "draft_research",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_sha256",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "raw_json",
+    "documentary_mapping": "lossless source facts / retained summary cells / record metadata",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "party_mapping",
+    "column": "country_id",
+    "documentary_mapping": "constant chile",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "party_mapping",
+    "column": "party_namespace",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapping_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "party_mapping",
+    "column": "source_context",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "party_mapping",
+    "column": "election_context",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_label",
+    "documentary_mapping": "source party label, unchanged",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_code",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapped_group",
+    "documentary_mapping": "null; no party-family classification undertaken",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "party_mapping",
+    "column": "uncertainty",
+    "documentary_mapping": "explicit named research gap",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "party_mapping",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "party_mapping",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "party_mapping",
+    "column": "raw_json",
+    "documentary_mapping": "lossless source facts / retained summary cells / record metadata",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "proceeding",
+    "column": "id_namespace",
+    "documentary_mapping": "proposed documentary namespace atlasresearch-cl-bj; no production minting",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "proceeding",
+    "column": "office_id",
+    "documentary_mapping": "office_register.office_id; pending aliases remain null",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "proceeding",
+    "column": "history_key",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "proceeding",
+    "column": "proceeding_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "proceeding",
+    "column": "kind",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "proceeding",
+    "column": "sequence_no",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "proceeding",
+    "column": "supersedes_id",
+    "documentary_mapping": "null unless exact legal proceeding relation independently sourced; no guessed edge",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "proceeding",
+    "column": "legal_outcome",
+    "documentary_mapping": "only sourced legal decision; null otherwise",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "proceeding",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "proceeding",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "proceeding",
+    "column": "raw_json",
+    "documentary_mapping": "lossless source facts / retained summary cells / record metadata",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "publication_receipt",
+    "column": "singleton",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "publication_receipt",
+    "column": "last_publish_attempt_id",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_lineage_id",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_release_id",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "publication_release",
+    "column": "lineage_id",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "publication_release",
+    "column": "release_id",
+    "documentary_mapping": "Not instantiated: no ingestion, publication, successful release or receipt occurred (applied_changes=0).",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "record_key",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "entity_kind",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "country_id",
+    "documentary_mapping": "constant chile",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "geography_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "id_namespace",
+    "documentary_mapping": "proposed documentary namespace atlasresearch-cl-bj; no production minting",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "office_id",
+    "documentary_mapping": "office_register.office_id; pending aliases remain null",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "history_key",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "proceeding_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "result_row_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "party_namespace",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "party_mapping_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "source_namespace",
+    "documentary_mapping": "official publisher namespace; documentary proposal only",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "source_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "input_path",
+    "documentary_mapping": "retained pack-relative file path",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "record_locator",
+    "column": "source_row_locator",
+    "documentary_mapping": "source_refs or source_aggregate_refs; non-contiguous spans require predicate",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "research_date",
+    "column": "date_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "research_date",
+    "column": "label",
+    "documentary_mapping": "source date/formula; not guessed exact future day",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "research_date",
+    "column": "precision",
+    "documentary_mapping": "formula_year / day / range / unknown",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "research_date",
+    "column": "certainty",
+    "documentary_mapping": "statutory_formula / official_historical / research_hold",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "research_date",
+    "column": "year",
+    "documentary_mapping": "sourced year or explicitly derived next ordinary occurrence year",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "research_date",
+    "column": "month",
+    "documentary_mapping": "null for uncalled upcoming formulas; only sourced exact historical dates",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "research_date",
+    "column": "day",
+    "documentary_mapping": "null for uncalled upcoming formulas; only sourced exact historical dates",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "research_date",
+    "column": "range_start_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "research_date",
+    "column": "range_end_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "research_date",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "research_date",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "research_date",
+    "column": "raw_json",
+    "documentary_mapping": "lossless source facts / retained summary cells / record metadata",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "id_namespace",
+    "documentary_mapping": "proposed documentary namespace atlasresearch-cl-bj; no production minting",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "office_id",
+    "documentary_mapping": "office_register.office_id; pending aliases remain null",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "history_key",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "result_row_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "proceeding_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "country_id",
+    "documentary_mapping": "constant chile",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "candidate_or_list_label",
+    "documentary_mapping": "results.candidate_or_label; result_kind separates candidates and totals",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_label",
+    "documentary_mapping": "party_source_label losslessly; no ideological assignment",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_code",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "party_namespace",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "party_mapping_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "votes",
+    "documentary_mapping": "results.votes; sum only explicitly sourced components",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "votes_status",
+    "documentary_mapping": "source_reported / derived_sum / missing; no missing-to-zero coercion",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "share",
+    "documentary_mapping": "results.share, never infer from absent votes",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "share_status",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "share_unit",
+    "documentary_mapping": "fraction where explicitly retained; null otherwise",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "seats",
+    "documentary_mapping": "explicit winner indicator permits 1 per elected candidate; otherwise null",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "seats_status",
+    "documentary_mapping": "explicit_elected_candidate or missing, no chamber-total allocation",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "elected_flag",
+    "documentary_mapping": "explicit source marker / elected sheet; absence stays null",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "is_substitute",
+    "documentary_mapping": "null except explicit source; parenthetical alternatives not merged as primary people",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "evidence_status",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "result_row",
+    "column": "raw_json",
+    "documentary_mapping": "lossless source facts / retained summary cells / record metadata",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "retained_input",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "retained_input",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "retained_input",
+    "column": "input_path",
+    "documentary_mapping": "retained pack-relative file path",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "retained_input",
+    "column": "input_kind",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "retained_input",
+    "column": "sha256",
+    "documentary_mapping": "retained file byte SHA-256",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "retained_input",
+    "column": "byte_count",
+    "documentary_mapping": "retained file byte_count",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "retained_input",
+    "column": "recovery_locator",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "retained_input",
+    "column": "payload_json",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "country_id",
+    "documentary_mapping": "constant chile",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "source_namespace",
+    "documentary_mapping": "official publisher namespace; documentary proposal only",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "source_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "publisher",
+    "documentary_mapping": "Source_Inventory.publisher",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "title",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "url",
+    "documentary_mapping": "Source_Inventory.url or source_aliases.url",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "checked_as_of_label",
+    "documentary_mapping": "2026-09-29 research snapshot",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "evidence_grade",
+    "documentary_mapping": "certified_TRICEL, certified_TER_published_SERvel, official historical or hold",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "file_sha256",
+    "documentary_mapping": "retained source SHA-256 with hash_semantics",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "locator",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "data_rights",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "source",
+    "column": "raw_json",
+    "documentary_mapping": "lossless source facts / retained summary cells / record metadata",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "unresolved_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "record_key",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "original_token",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "source_locator",
+    "documentary_mapping": "source_refs or source_aggregate_refs and article locator",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "reason",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "lineage_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "release_id",
+    "documentary_mapping": "No value supplied in this research pack; target application metadata or unresolved mapping. Do not fabricate or default.",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "raw_json",
+    "documentary_mapping": "lossless source facts / retained summary cells / record metadata",
+    "disposition": "documentation_only",
+    "missing_policy": "null_or_hold_never_invent"
+  }
+]

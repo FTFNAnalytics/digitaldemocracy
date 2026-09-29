@@ -1,0 +1,242 @@
+{
+  "pack": "Chile Prompt BJ",
+  "read_only": true,
+  "applied_changes": 0,
+  "passed": true,
+  "checks_total": 58,
+  "checks_passed": 58,
+  "checks": [
+    {
+      "check": "required_documents",
+      "passed": true
+    },
+    {
+      "check": "no_applied_changes",
+      "passed": true
+    },
+    {
+      "check": "approvals_all_false",
+      "passed": true
+    },
+    {
+      "check": "approval_boxes_unchecked",
+      "passed": true
+    },
+    {
+      "check": "country_identity",
+      "passed": true
+    },
+    {
+      "check": "office_ids_unique",
+      "passed": true
+    },
+    {
+      "check": "full_current_count",
+      "passed": true
+    },
+    {
+      "check": "historical_extraordinary_count",
+      "passed": true
+    },
+    {
+      "check": "family_histogram",
+      "passed": true
+    },
+    {
+      "check": "tier_one_to_one",
+      "passed": true
+    },
+    {
+      "check": "tier_vocabulary",
+      "passed": true
+    },
+    {
+      "check": "tier_histogram",
+      "passed": true
+    },
+    {
+      "check": "comuna_inventory_346",
+      "passed": true
+    },
+    {
+      "check": "shared_municipal_group_345",
+      "passed": true
+    },
+    {
+      "check": "all_municipal_bodies_present",
+      "passed": true
+    },
+    {
+      "check": "excluded_offices_zero",
+      "passed": true
+    },
+    {
+      "check": "no_successor_edges",
+      "passed": true
+    },
+    {
+      "check": "event_ids_unique",
+      "passed": true
+    },
+    {
+      "check": "result_ids_unique",
+      "passed": true
+    },
+    {
+      "check": "result_event_references",
+      "passed": true
+    },
+    {
+      "check": "office_references",
+      "passed": true
+    },
+    {
+      "check": "unlinked_offices_explicit_hold",
+      "passed": true
+    },
+    {
+      "check": "missing_numbers_not_zero_filled",
+      "passed": true
+    },
+    {
+      "check": "nonnegative_observed_votes",
+      "passed": true
+    },
+    {
+      "check": "share_fraction_range",
+      "passed": true
+    },
+    {
+      "check": "source_elected_seats_only",
+      "passed": true
+    },
+    {
+      "check": "candidate_names_not_ballot_totals",
+      "passed": true
+    },
+    {
+      "check": "source_review_warnings_retained",
+      "passed": true
+    },
+    {
+      "check": "unlabelled_codes_not_interpreted",
+      "passed": true
+    },
+    {
+      "check": "certified_senate_cohorts",
+      "passed": true
+    },
+    {
+      "check": "certified_deputies_totals",
+      "passed": true
+    },
+    {
+      "check": "certified_convention_total",
+      "passed": true
+    },
+    {
+      "check": "presidential_2025_national_reconciliation",
+      "passed": true
+    },
+    {
+      "check": "separate_2025_presidential_rounds",
+      "passed": true
+    },
+    {
+      "check": "governor_2024_runoff_11_regions",
+      "passed": true
+    },
+    {
+      "check": "separate_annulled_repeat_events",
+      "passed": true
+    },
+    {
+      "check": "1992_conflict_retained",
+      "passed": true
+    },
+    {
+      "check": "no_early_popular_governors",
+      "passed": true
+    },
+    {
+      "check": "no_pre2013_popular_core",
+      "passed": true
+    },
+    {
+      "check": "no_2013_or_2017_nuble_core",
+      "passed": true
+    },
+    {
+      "check": "every_current_office_has_calendar",
+      "passed": true
+    },
+    {
+      "check": "all_ordinary_calendar_families",
+      "passed": true
+    },
+    {
+      "check": "no_invented_exact_upcoming_days",
+      "passed": true
+    },
+    {
+      "check": "calendar_sources_and_basis",
+      "passed": true
+    },
+    {
+      "check": "country_calendar_outside_alert_window",
+      "passed": true
+    },
+    {
+      "check": "calendar_first_class_three_documents",
+      "passed": true
+    },
+    {
+      "check": "exact_223_map_one_to_one",
+      "passed": true
+    },
+    {
+      "check": "contract_matches_pinned_ddl",
+      "passed": true
+    },
+    {
+      "check": "acceptance_examples_at_least_15",
+      "passed": true
+    },
+    {
+      "check": "source_hashes",
+      "passed": true
+    },
+    {
+      "check": "hash_semantics_explicit",
+      "passed": true
+    },
+    {
+      "check": "office_sources_resolve",
+      "passed": true
+    },
+    {
+      "check": "source_urls_present",
+      "passed": true
+    },
+    {
+      "check": "event_sources_resolve",
+      "passed": true
+    },
+    {
+      "check": "result_sources_resolve",
+      "passed": true
+    },
+    {
+      "check": "sha256_manifest_integrity",
+      "passed": true
+    },
+    {
+      "check": "sha256_manifest_complete",
+      "passed": true
+    },
+    {
+      "check": "coverage_holds_not_hidden",
+      "passed": true
+    }
+  ]
+}
