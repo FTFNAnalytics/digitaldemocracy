@@ -1,0 +1,230 @@
+[
+  {
+    "example_id": "XK-BB-A01",
+    "case": "Current core",
+    "expected": "1 Assembly + 38 municipal assemblies + 38 direct mayors = 77, independent of alert horizon.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A02",
+    "case": "No popular President",
+    "expected": "Assembly selection under Article 86 produces no public presidential row.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A03",
+    "case": "Direct mayors",
+    "expected": "38 sourced direct mayor offices, each paired with one municipal assembly.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A04",
+    "case": "No EP",
+    "expected": "Zero current or historical EP offices.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A05",
+    "case": "AX separation",
+    "expected": "BB kosovo only; audited AX has zero Kosovo offices and remains unmodified.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A06",
+    "case": "Party is not office",
+    "expected": "Srpska Lista labels cannot create an institutional/Serbia row.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A07",
+    "case": "Mitrovica units",
+    "expected": "Two sourced current municipalities, four local offices; no extra capital/joint-board public office.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A08",
+    "case": "Provisional Assembly",
+    "expected": "2001 returns bind to historical PISG identity, not automatically current Assembly.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A09",
+    "case": "Historical not abolished",
+    "expected": "61 historical rows imply neither 61 abolition dates nor successor edges.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A10",
+    "case": "2000 missing certification",
+    "expected": "Three northern events have no result vector, not zero vote vectors.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A11",
+    "case": "2001 true zeros",
+    "expected": "Explicit zero seats retain source_zero.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A12",
+    "case": "2002 matrix",
+    "expected": "30 municipal vectors sum to 699399 votes and 920 explicit seats.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A13",
+    "case": "2007 rounds",
+    "expected": "23 runoff events on 8 December distinct from first rounds.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A14",
+    "case": "Malformed percent",
+    "expected": "2007 Fushë Kosovë SKMS 0.00594 raw token retained; canonical share null.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A15",
+    "case": "2010 discrepancy",
+    "expected": "698751 vector vs 673884 valid-total conflict retained; shares/valid_votes null.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A16",
+    "case": "2010 repeats",
+    "expected": "December 12 / January 9 / January 23 distinct from cycle aggregate.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A17",
+    "case": "2014 versions",
+    "expected": "EU represented-list return used; derivative conflicting full vector held separately.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A18",
+    "case": "2013 North repeat",
+    "expected": "Original and 17 November rerun separate; consolidated vector phase-held.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A19",
+    "case": "2013 Zvecan",
+    "expected": "Two missing files neither remove offices nor create zeros; repeat scope remains held.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A20",
+    "case": "2017 Partesh",
+    "expected": "Archive RunOff label cannot override legal first-round repeat.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A21",
+    "case": "2017 Istog",
+    "expected": "Annulled 19 November and 17 December repeat remain separate.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A22",
+    "case": "2021 Dragash",
+    "expected": "Postal repeat remains a subset with untranscribed date.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A23",
+    "case": "Elected labels",
+    "expected": "Source-cycle Elected flags never automatically elect first-round candidates.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A24",
+    "case": "Zero padding",
+    "expected": "8651 zero party cells without established local candidacy excluded.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A25",
+    "case": "Certified vectors",
+    "expected": "2017/2019/February 2025 totals 727986/841275/938010, each 120 mandates.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A26",
+    "case": "2023 scope",
+    "expected": "Four mayor and only two municipal-assembly events.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A27",
+    "case": "2024 recall",
+    "expected": "Four failed recalls are questions, not candidate contests.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A28",
+    "case": "2025 finality",
+    "expected": "Cycle certification does not upgrade earlier announced/preliminary snapshots.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A29",
+    "case": "2026 conflict",
+    "expected": "PDK 19.24/19.44 source conflict gives null canonical share, 22 sourced seats.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A30",
+    "case": "Nested census",
+    "expected": "77-core completeness does not assert complete advisory-body coverage.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A31",
+    "case": "223 columns",
+    "expected": "Every inherited table.column exactly once, no importer or target writes.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BB-A32",
+    "case": "Approvals and integrity",
+    "expected": "All approval flags false; validator verifies references/arithmetic/hashes only.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BH-A33",
+    "case": "National formula",
+    "expected": "2030 is conditional; no exact June anniversary or constitutional session day invented.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BH-A34",
+    "case": "Local legal window",
+    "expected": "60 days before to 30 days AFTER local mandate expiry; do not copy Assembly before/before window.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BH-A35",
+    "case": "Indirect path",
+    "expected": "Current Assembly can select President before 2030; no presidential popular office or guessed date.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BH-A36",
+    "case": "Runoff",
+    "expected": "Sunday four weeks later remains conditional; municipalities and results unknown.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BH-A37",
+    "case": "Prominent calendar",
+    "expected": "README, Justin report and dedicated calendar include all families beyond global alert window.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "XK-BH-A38",
+    "case": "Unresolved nested bodies",
+    "expected": "Advisory census and Mitrovica selection remain explicit calendar holds, not invented offices.",
+    "justin_approved": false
+  }
+]

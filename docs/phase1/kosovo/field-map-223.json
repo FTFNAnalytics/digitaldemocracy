@@ -1,0 +1,1786 @@
+[
+  {
+    "table": "country",
+    "column": "country_id",
+    "mapping": "metadata.country_id=kosovo; Atlas scope only.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "country_code",
+    "mapping": "XK, user-assigned research marker, not an ISO claim.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "name",
+    "mapping": "Kosovo*; scope gate, no diplomatic conclusion.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "polity_kind",
+    "mapping": "NULL: diplomatic classification not inferred.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "region_id",
+    "mapping": "NULL: region target not supplied.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "coverage_status",
+    "mapping": "Core complete; nested, history and numeric incomplete.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "screening_as_of_label",
+    "mapping": "2026-09-29 calendar refresh; historical data inherited from BB 2026-09-25.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "notes",
+    "mapping": "metadata.scope_gate and research-gaps.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "country",
+    "column": "raw_json",
+    "mapping": "Corresponding normalized research object; preserve evidence and null statuses.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "provenance_kind",
+    "mapping": "Fresh primary-source research and labelled derivative preservation.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_lineage",
+    "column": "description",
+    "mapping": "Prompt BH Kosovo research documentation; supersedes BB, preserving inherited IDs.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "fingerprint_sha256",
+    "mapping": "External final ZIP SHA; no operational release fingerprint.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "hash_inputs_json",
+    "mapping": "SHA256SUMS and source inventory, preserving hash scope.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "adapter_version",
+    "mapping": "NULL: no importer.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "method_version",
+    "mapping": "bb-research-doc-v1.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "schema_version",
+    "mapping": "Inherited 20-table / 223-column contract; no schema change.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_snapshot_label",
+    "mapping": "2026-09-29 calendar refresh; historical data inherited from BB 2026-09-25.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "upstream_release_id",
+    "mapping": "NULL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "validated_counts_json",
+    "mapping": "data/counts.json, research row counts.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "research_coverage_complete",
+    "mapping": "false.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "dataset_release",
+    "column": "raw_json",
+    "mapping": "Corresponding normalized research object; preserve evidence and null statuses.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "id_namespace",
+    "mapping": "metadata.id_namespace=kosovo-research-bb-v1.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "office_id",
+    "mapping": "office-register.office_id; source-vintage IDs distinct from current IDs.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "history_key",
+    "mapping": "events.history_key; includes phase/kind, not date alone.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "event_id",
+    "mapping": "events.event_id, deterministic country/history-key hash.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "date_id",
+    "mapping": "NULL: no target date ID; explicit events.date remains.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "date_resolution",
+    "mapping": "events.date_precision.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "event_kind",
+    "mapping": "events.event_kind; repeat, recall and snapshot distinguished.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "selected_history_role",
+    "mapping": "NULL: history selector not applied.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "electoral_system",
+    "mapping": "office.selection_mode + legal source; preserve historic regime gate.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "comparability",
+    "mapping": "events.comparability and applicable research gap.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "ballot_basis",
+    "mapping": "events.result_scope and valid_votes_basis.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "share_unit",
+    "mapping": "percent; no aggregate event share invented.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "legal_outcome",
+    "mapping": "events.legal_outcome.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "record_state",
+    "mapping": "research_draft.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "state_note",
+    "mapping": "events.coverage_note/evidence_status.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "election_event",
+    "column": "raw_json",
+    "mapping": "Corresponding normalized research object; preserve evidence and null statuses.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "evidence_id",
+    "mapping": "NULL: no target evidence identity; normalized facts link research records.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "record_key",
+    "mapping": "office_id/event_id/result_id as applicable.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_country_id",
+    "mapping": "kosovo.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_namespace",
+    "mapping": "kosovo-research-sources-bb-v1; documentation label.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_id",
+    "mapping": "source-inventory.source_id.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "source_locator",
+    "mapping": "source URL + result.origin table/page/cell/metadata key.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_kind",
+    "mapping": "Existence, selection, calendar, certification or numerical return; kept distinct.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "date_claim_id",
+    "mapping": "NULL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "claim_json",
+    "mapping": "sources/normalized/<source_id>.json factual records.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "evidence_link",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "country_id",
+    "mapping": "metadata.country_id=kosovo; Atlas scope only.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "geography_id",
+    "mapping": "office-register.geography_id; internal territorial-vintage research key.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "name",
+    "mapping": "office.geography / identity-crosswalk municipality lookup.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "parent_geography_id",
+    "mapping": "NULL: no inferred regional hierarchy.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "effective_from_label",
+    "mapping": "NULL until office-specific legal date established.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "effective_to_label",
+    "mapping": "NULL: historical-only does not imply abolition.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "geography",
+    "column": "raw_json",
+    "mapping": "Corresponding normalized research object; preserve evidence and null statuses.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "entity_kind",
+    "mapping": "Office/geography or source archive code.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_namespace",
+    "mapping": "OSCE early matrix or Dplus archive; not assumed official ballot namespace.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "upstream_id",
+    "mapping": "identity-crosswalk source-code lookup or result.origin.archive_entity_id.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "record_key",
+    "mapping": "Research office/result key.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "reason",
+    "mapping": "Source-specific matching only; no automatic successor relation.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "identity_crosswalk",
+    "column": "raw_json",
+    "mapping": "Corresponding normalized research object; preserve evidence and null statuses.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "attempt_id",
+    "mapping": "NULL: no ingest.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "operator",
+    "mapping": "NULL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "script_version",
+    "mapping": "NULL: validator is research-only.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "started_at",
+    "mapping": "NULL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "finished_at",
+    "mapping": "NULL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "status",
+    "mapping": "not_attempted.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "input_inventory_json",
+    "mapping": "reference/input-artifacts.json for research audit only.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "successful_release_id",
+    "mapping": "NULL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "publication_set_json",
+    "mapping": "NULL: no publication.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "row_counts_json",
+    "mapping": "Research counts only, not ingestion counts.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "ingest_attempt",
+    "column": "error_text",
+    "mapping": "NULL: no attempt.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "id_namespace",
+    "mapping": "metadata.id_namespace=kosovo-research-bb-v1.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "office_id",
+    "mapping": "office-register.office_id; source-vintage IDs distinct from current IDs.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "country_id",
+    "mapping": "metadata.country_id=kosovo; Atlas scope only.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "geography_id",
+    "mapping": "office-register.geography_id; internal territorial-vintage research key.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "name",
+    "mapping": "office-register.name.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "office_type",
+    "mapping": "national_legislature / municipal_assembly / mayor only.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "office_status",
+    "mapping": "office-register.status.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "record_state",
+    "mapping": "draft_unapproved.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "state_note",
+    "mapping": "territory_vintage and identity_status.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "registry_qualified",
+    "mapping": "Source-qualified core row, not Justin acceptance.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "next_date_id",
+    "mapping": "NULL: no confirmed next polling day.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "next_date_resolution",
+    "mapping": "unconfirmed.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "next_history_key",
+    "mapping": "NULL: no future event fabricated.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office",
+    "column": "raw_json",
+    "mapping": "Corresponding normalized research object; preserve evidence and null statuses.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "id_namespace",
+    "mapping": "metadata.id_namespace=kosovo-research-bb-v1.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "office_id",
+    "mapping": "office-register.office_id; source-vintage IDs distinct from current IDs.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "tier",
+    "mapping": "draft-tiers.draft_tier: national or municipal.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "review_status",
+    "mapping": "draft_unapproved.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "rationale",
+    "mapping": "draft-tiers.basis; institutional level independent of horizon.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_path",
+    "mapping": "data/draft-tiers.jsonl.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_kind",
+    "mapping": "research_draft_1_to_1.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "classification_sha256",
+    "mapping": "Manifest hash of data/draft-tiers.jsonl.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "office_tier_classification",
+    "column": "raw_json",
+    "mapping": "Corresponding normalized research object; preserve evidence and null statuses.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "country_id",
+    "mapping": "metadata.country_id=kosovo; Atlas scope only.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "party_namespace",
+    "mapping": "NULL: no global party namespace.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapping_id",
+    "mapping": "NULL: no party identity allocated.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "source_context",
+    "mapping": "Result source ID / source vintage.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "election_context",
+    "mapping": "Result event_id.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_label",
+    "mapping": "result.party_label or reported candidate/list label.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "original_code",
+    "mapping": "result.origin source_ballot_id or archive_entity_id with namespace.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "mapped_group",
+    "mapping": "NULL: no party-family or successor assignment.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "uncertainty",
+    "mapping": "Original labels and provenance gates; no guessed coalition edge.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "party_mapping",
+    "column": "raw_json",
+    "mapping": "Corresponding normalized research object; preserve evidence and null statuses.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "id_namespace",
+    "mapping": "metadata.id_namespace=kosovo-research-bb-v1.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "office_id",
+    "mapping": "office-register.office_id; source-vintage IDs distinct from current IDs.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "history_key",
+    "mapping": "events.history_key; includes phase/kind, not date alone.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "proceeding_id",
+    "mapping": "NULL: target ID not allocated; phase proceedings retained in events.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "kind",
+    "mapping": "events.event_kind where applicable.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "sequence_no",
+    "mapping": "NULL unless explicit phase evidence; never from folder labels.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "supersedes_id",
+    "mapping": "NULL: no guessed supersession edge.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "legal_outcome",
+    "mapping": "events.legal_outcome or not_assessed.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "proceeding",
+    "column": "raw_json",
+    "mapping": "Corresponding normalized research object; preserve evidence and null statuses.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "publication_receipt",
+    "column": "singleton",
+    "mapping": "NULL: no publication receipt.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "publication_receipt",
+    "column": "last_publish_attempt_id",
+    "mapping": "NULL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_lineage_id",
+    "mapping": "NULL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "publication_receipt",
+    "column": "attempted_release_id",
+    "mapping": "NULL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "publication_release",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "publication_release",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "record_key",
+    "mapping": "Research office_id/event_id/result_id.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "entity_kind",
+    "mapping": "office/event/result/source.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "country_id",
+    "mapping": "metadata.country_id=kosovo; Atlas scope only.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "geography_id",
+    "mapping": "office-register.geography_id; internal territorial-vintage research key.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "id_namespace",
+    "mapping": "metadata.id_namespace=kosovo-research-bb-v1.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "office_id",
+    "mapping": "office-register.office_id; source-vintage IDs distinct from current IDs.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "history_key",
+    "mapping": "events.history_key; includes phase/kind, not date alone.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "proceeding_id",
+    "mapping": "NULL: target ID not allocated; phase proceedings retained in events.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "result_row_id",
+    "mapping": "results.result_id; research field alias only.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "party_namespace",
+    "mapping": "NULL: no global party namespace.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "party_mapping_id",
+    "mapping": "NULL: no party mapping.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "source_namespace",
+    "mapping": "kosovo-research-sources-bb-v1; documentation label.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "source_id",
+    "mapping": "source-inventory.source_id.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "input_path",
+    "mapping": "Relevant data JSONL or normalized source fact file.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "record_locator",
+    "column": "source_row_locator",
+    "mapping": "result.origin, source metadata key, PDF page/cell or table locator.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "date_id",
+    "mapping": "NULL: no target date allocation.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "label",
+    "mapping": "events.date_label or separately identified source date; never interchangeable.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "precision",
+    "mapping": "events.date_precision.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "certainty",
+    "mapping": "Source day, or year-only held snapshot.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "year",
+    "mapping": "Cycle year is events.cycle_year; poll year only from explicit date.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "month",
+    "mapping": "Explicit date month only; else NULL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "day",
+    "mapping": "Explicit date day only; else NULL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "range_start_id",
+    "mapping": "NULL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "range_end_id",
+    "mapping": "NULL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "research_date",
+    "column": "raw_json",
+    "mapping": "Corresponding normalized research object; preserve evidence and null statuses.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "id_namespace",
+    "mapping": "metadata.id_namespace=kosovo-research-bb-v1.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "office_id",
+    "mapping": "office-register.office_id; source-vintage IDs distinct from current IDs.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "history_key",
+    "mapping": "events.history_key; includes phase/kind, not date alone.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "result_row_id",
+    "mapping": "results.result_id.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "proceeding_id",
+    "mapping": "NULL: target ID not allocated; phase proceedings retained in events.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "country_id",
+    "mapping": "metadata.country_id=kosovo; Atlas scope only.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "candidate_or_list_label",
+    "mapping": "results.candidate_or_list_label.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_label",
+    "mapping": "results.party_label; null for unbound affiliation.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "original_party_code",
+    "mapping": "origin.source_party_id/source_ballot_id with source namespace.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "party_namespace",
+    "mapping": "NULL: no global party namespace.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "party_mapping_id",
+    "mapping": "NULL: no party mapping.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "votes",
+    "mapping": "results.votes; missing remains null.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "votes_status",
+    "mapping": "reported / source_zero / untranscribed.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "share",
+    "mapping": "results.share in percent; conflicting value null.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "share_status",
+    "mapping": "reported / derived_from_reported_valid_total / untranscribed / source_conflict_withheld.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "share_unit",
+    "mapping": "percent.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "seats",
+    "mapping": "results.seats; explicit printed cells only.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "seats_status",
+    "mapping": "reported / source_zero / untranscribed; blank/hyphen not zero.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "elected_flag",
+    "mapping": "results.elected; not archive Elected or preliminary_leader.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "is_substitute",
+    "mapping": "NULL: not inferred.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "evidence_status",
+    "mapping": "results.evidence_status; independent of cycle certification date.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "result_row",
+    "column": "raw_json",
+    "mapping": "Corresponding normalized research object; preserve evidence and null statuses.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "input_path",
+    "mapping": "Pack-relative normalized fact/reference path.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "input_kind",
+    "mapping": "research_facts/reference_metadata; original reports not redistributed.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "sha256",
+    "mapping": "Normalized hash for bundled fact bytes; original hash for original downloaded bytes, distinct scope.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "byte_count",
+    "mapping": "Byte length for the corresponding hash scope.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "recovery_locator",
+    "mapping": "Source URL / original filename / normalized path.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "retained_input",
+    "column": "payload_json",
+    "mapping": "Normalized factual transcription.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "country_id",
+    "mapping": "metadata.country_id=kosovo; Atlas scope only.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "source_namespace",
+    "mapping": "kosovo-research-sources-bb-v1; documentation label.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "source_id",
+    "mapping": "source-inventory.source_id.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "publisher",
+    "mapping": "source-inventory.publisher_class and source URL.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "title",
+    "mapping": "source-inventory.title.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "url",
+    "mapping": "source-inventory.url.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "checked_as_of_label",
+    "mapping": "Per-source retrieved_on: inherited 2026-09-25 or BH calendar 2026-09-29; no blanket history recertification.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "evidence_grade",
+    "mapping": "Publisher class + retrieval status; numerical finality separately qualified.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "file_sha256",
+    "mapping": "original_sha256 if downloaded; NULL for web-only; normalized_sha256 is a different hash.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "locator",
+    "mapping": "normalized_path and result.origin.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "data_rights",
+    "mapping": "No blanket rights assertion; factual transcriptions only, no full reports.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "source",
+    "column": "raw_json",
+    "mapping": "Corresponding normalized research object; preserve evidence and null statuses.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "unresolved_id",
+    "mapping": "research-gaps.gap_id or explicit diagnostic key.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "record_key",
+    "mapping": "Relevant office/event/result key or named gap scope.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "original_token",
+    "mapping": "Retained malformed token, blank/hyphen, conflicting share or archive phase label.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "source_locator",
+    "mapping": "URL/PDF page/metadata ID from source fact or diagnostic.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "reason",
+    "mapping": "research-gaps.detail/closure_requirement.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "lineage_id",
+    "mapping": "Research reference country-package-kosovo; no operational lineage created.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "release_id",
+    "mapping": "NULL: no operational release.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  },
+  {
+    "table": "unresolved_evidence",
+    "column": "raw_json",
+    "mapping": "Corresponding normalized research object; preserve evidence and null statuses.",
+    "status": "documentation_only; no target write",
+    "null_policy": "Missing, untranscribed and conflicting remain null. Only explicit source zero is zero.",
+    "applied": false
+  }
+]
