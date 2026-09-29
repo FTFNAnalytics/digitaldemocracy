@@ -1,0 +1,83 @@
+{
+  "current_offices": 314,
+  "historical_only_offices": 24,
+  "office_rows": 338,
+  "events": 1451,
+  "held_events": 1451,
+  "results": 4328,
+  "draft_tiers": 338,
+  "draft_tier_histogram": {
+    "national": 6,
+    "regional": 57,
+    "local": 275
+  },
+  "current_tier_histogram": {
+    "national": 4,
+    "regional": 38,
+    "local": 272
+  },
+  "current_scope_breakout": {
+    "national": 4,
+    "departmental": 38,
+    "municipal": 272
+  },
+  "historical_scope_breakout": {
+    "national": 2,
+    "departmental": 19,
+    "municipal": 3
+  },
+  "current_office_kinds": {
+    "direct_executive": 157,
+    "legislature": 2,
+    "council": 155
+  },
+  "historical_office_kinds": {
+    "collective_executive": 21,
+    "council": 3
+  },
+  "current_popular_executive_roles": 157,
+  "current_national_departmental_direct_executives": 21,
+  "current_municipal_list_selected_alcaldes": 136,
+  "current_councils": 155,
+  "current_national_chambers": 2,
+  "current_departments": 19,
+  "current_municipalities": 136,
+  "municipalities_by_department": {
+    "Montevideo": 8,
+    "Canelones": 32,
+    "Maldonado": 8,
+    "Rocha": 4,
+    "Treinta y Tres": 6,
+    "Cerro Largo": 16,
+    "Rivera": 3,
+    "Artigas": 3,
+    "Salto": 6,
+    "Paysandú": 9,
+    "Río Negro": 3,
+    "Soriano": 5,
+    "Colonia": 13,
+    "San José": 4,
+    "Flores": 1,
+    "Florida": 3,
+    "Durazno": 2,
+    "Lavalleja": 6,
+    "Tacuarembó": 4
+  },
+  "municipal_cycle_counts": {
+    "2010": 89,
+    "2015": 112,
+    "2020": 125,
+    "2025": 136
+  },
+  "upcoming_calendar_family_rows": 8,
+  "ep_offices": 0,
+  "mercosur_offices": 0,
+  "party_organ_offices": 0,
+  "successor_edges": 0,
+  "source_records": 163,
+  "retained_original_sources": 147,
+  "applied_changes": 0,
+  "approved_boxes": 0,
+  "fully_transcribed_election_history": false,
+  "current_register_complete_for_BF_enumerated_scope": true
+}

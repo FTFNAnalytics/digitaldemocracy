@@ -1,0 +1,2232 @@
+[
+  {
+    "ordinal": 1,
+    "table": "country",
+    "column": "country_id",
+    "source_file": "manifest.json",
+    "documentary_mapping": "constant:uruguay",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 2,
+    "table": "country",
+    "column": "country_code",
+    "source_file": "manifest.json",
+    "documentary_mapping": "constant:UY",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 3,
+    "table": "country",
+    "column": "name",
+    "source_file": "manifest.json",
+    "documentary_mapping": "country_scope",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 4,
+    "table": "country",
+    "column": "polity_kind",
+    "source_file": "manifest.json",
+    "documentary_mapping": "constitutional elected institutions within BF scope",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 5,
+    "table": "country",
+    "column": "region_id",
+    "source_file": "manifest.json",
+    "documentary_mapping": "null; geographic grouping not asserted",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 6,
+    "table": "country",
+    "column": "coverage_status",
+    "source_file": "manifest.json",
+    "documentary_mapping": "coverage_status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 7,
+    "table": "country",
+    "column": "screening_as_of_label",
+    "source_file": "manifest.json",
+    "documentary_mapping": "as_of_utc",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 8,
+    "table": "country",
+    "column": "notes",
+    "source_file": "manifest.json",
+    "documentary_mapping": "description",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 9,
+    "table": "country",
+    "column": "lineage_id",
+    "source_file": "manifest.json",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 10,
+    "table": "country",
+    "column": "release_id",
+    "source_file": "manifest.json",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 11,
+    "table": "country",
+    "column": "raw_json",
+    "source_file": "manifest.json",
+    "documentary_mapping": "entire documentary source row, preserving nulls, aliases, modes, ballot links and evidence status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 12,
+    "table": "dataset_lineage",
+    "column": "lineage_id",
+    "source_file": "manifest.json",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 13,
+    "table": "dataset_lineage",
+    "column": "provenance_kind",
+    "source_file": "manifest.json",
+    "documentary_mapping": "constant:public_source_documentary_research",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 14,
+    "table": "dataset_lineage",
+    "column": "description",
+    "source_file": "manifest.json",
+    "documentary_mapping": "manifest.description",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 15,
+    "table": "dataset_release",
+    "column": "lineage_id",
+    "source_file": "manifest.json",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 16,
+    "table": "dataset_release",
+    "column": "release_id",
+    "source_file": "manifest.json",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 17,
+    "table": "dataset_release",
+    "column": "fingerprint_sha256",
+    "source_file": "manifest.json",
+    "documentary_mapping": "SHA256SUMS file digest; package ZIP SHA is supplied separately",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 18,
+    "table": "dataset_release",
+    "column": "hash_inputs_json",
+    "source_file": "manifest.json",
+    "documentary_mapping": "SHA256SUMS entries; no circular self-hash",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 19,
+    "table": "dataset_release",
+    "column": "adapter_version",
+    "source_file": "manifest.json",
+    "documentary_mapping": "null; no importer",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 20,
+    "table": "dataset_release",
+    "column": "method_version",
+    "source_file": "manifest.json",
+    "documentary_mapping": "constant:UY-BF-documentary-v1",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 21,
+    "table": "dataset_release",
+    "column": "schema_version",
+    "source_file": "manifest.json",
+    "documentary_mapping": "contracts/inheritance.json inherited_sha256",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 22,
+    "table": "dataset_release",
+    "column": "research_snapshot_label",
+    "source_file": "manifest.json",
+    "documentary_mapping": "as_of_utc",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 23,
+    "table": "dataset_release",
+    "column": "upstream_release_id",
+    "source_file": "manifest.json",
+    "documentary_mapping": "null; multiple sources, not one asserted release",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 24,
+    "table": "dataset_release",
+    "column": "validated_counts_json",
+    "source_file": "manifest.json",
+    "documentary_mapping": "counts.json",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 25,
+    "table": "dataset_release",
+    "column": "research_coverage_complete",
+    "source_file": "manifest.json",
+    "documentary_mapping": "false: current register complete, historic numerics incomplete",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 26,
+    "table": "dataset_release",
+    "column": "raw_json",
+    "source_file": "manifest.json",
+    "documentary_mapping": "entire documentary source row, preserving nulls, aliases, modes, ballot links and evidence status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 27,
+    "table": "election_event",
+    "column": "id_namespace",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "constant:UY-BF-research",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 28,
+    "table": "election_event",
+    "column": "office_id",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "office_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 29,
+    "table": "election_event",
+    "column": "history_key",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "office_id + event_id documentary composite, never guessed cross-era identity",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 30,
+    "table": "election_event",
+    "column": "event_id",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "event_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 31,
+    "table": "election_event",
+    "column": "date_id",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "event_date -> UY-DATE-{event_date}",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 32,
+    "table": "election_event",
+    "column": "date_resolution",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "constant:day",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 33,
+    "table": "election_event",
+    "column": "event_kind",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "null; not supplied or not applicable",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 34,
+    "table": "election_event",
+    "column": "selected_history_role",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "event_kind and shared_ballot_event_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 35,
+    "table": "election_event",
+    "column": "electoral_system",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "electoral_system / vote_basis; null if not transcribed",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 36,
+    "table": "election_event",
+    "column": "comparability",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "vote_basis + era gate + shared ballot group",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 37,
+    "table": "election_event",
+    "column": "ballot_basis",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "vote_basis",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 38,
+    "table": "election_event",
+    "column": "share_unit",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "percent only if actually transcribed; all shares here null",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 39,
+    "table": "election_event",
+    "column": "legal_outcome",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "event_status, not automatic certification",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 40,
+    "table": "election_event",
+    "column": "record_state",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "constant:draft_unapproved",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 41,
+    "table": "election_event",
+    "column": "state_note",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "result_coverage / certification_status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 42,
+    "table": "election_event",
+    "column": "lineage_id",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 43,
+    "table": "election_event",
+    "column": "release_id",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 44,
+    "table": "election_event",
+    "column": "raw_json",
+    "source_file": "data/events.jsonl",
+    "documentary_mapping": "entire documentary source row, preserving nulls, aliases, modes, ballot links and evidence status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 45,
+    "table": "evidence_link",
+    "column": "evidence_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "evidence_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 46,
+    "table": "evidence_link",
+    "column": "record_key",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "record_key",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 47,
+    "table": "evidence_link",
+    "column": "source_country_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "constant:uruguay",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 48,
+    "table": "evidence_link",
+    "column": "source_namespace",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "constant:uruguay_BF_research",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 49,
+    "table": "evidence_link",
+    "column": "source_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "source_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 50,
+    "table": "evidence_link",
+    "column": "source_locator",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "source_locator",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 51,
+    "table": "evidence_link",
+    "column": "claim_kind",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "claim_kind",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 52,
+    "table": "evidence_link",
+    "column": "date_claim_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "null; source record identifies date, no invented standalone claim ID",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 53,
+    "table": "evidence_link",
+    "column": "claim_json",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "entire evidence record",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 54,
+    "table": "evidence_link",
+    "column": "lineage_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 55,
+    "table": "evidence_link",
+    "column": "release_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 56,
+    "table": "geography",
+    "column": "country_id",
+    "source_file": "data/geography.jsonl",
+    "documentary_mapping": "constant:uruguay",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 57,
+    "table": "geography",
+    "column": "geography_id",
+    "source_file": "data/geography.jsonl",
+    "documentary_mapping": "geography_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 58,
+    "table": "geography",
+    "column": "name",
+    "source_file": "data/geography.jsonl",
+    "documentary_mapping": "name",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 59,
+    "table": "geography",
+    "column": "parent_geography_id",
+    "source_file": "data/geography.jsonl",
+    "documentary_mapping": "parent_geography_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 60,
+    "table": "geography",
+    "column": "effective_from_label",
+    "source_file": "data/geography.jsonl",
+    "documentary_mapping": "null; not supplied or not applicable",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 61,
+    "table": "geography",
+    "column": "effective_to_label",
+    "source_file": "data/geography.jsonl",
+    "documentary_mapping": "null; not supplied or not applicable",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 62,
+    "table": "geography",
+    "column": "lineage_id",
+    "source_file": "data/geography.jsonl",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 63,
+    "table": "geography",
+    "column": "release_id",
+    "source_file": "data/geography.jsonl",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 64,
+    "table": "geography",
+    "column": "raw_json",
+    "source_file": "data/geography.jsonl",
+    "documentary_mapping": "entire documentary source row, preserving nulls, aliases, modes, ballot links and evidence status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 65,
+    "table": "identity_crosswalk",
+    "column": "entity_kind",
+    "source_file": "data/identity-crosswalk.jsonl",
+    "documentary_mapping": "entity_kind",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 66,
+    "table": "identity_crosswalk",
+    "column": "upstream_namespace",
+    "source_file": "data/identity-crosswalk.jsonl",
+    "documentary_mapping": "upstream_namespace",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 67,
+    "table": "identity_crosswalk",
+    "column": "upstream_id",
+    "source_file": "data/identity-crosswalk.jsonl",
+    "documentary_mapping": "upstream_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 68,
+    "table": "identity_crosswalk",
+    "column": "record_key",
+    "source_file": "data/identity-crosswalk.jsonl",
+    "documentary_mapping": "record_key",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 69,
+    "table": "identity_crosswalk",
+    "column": "reason",
+    "source_file": "data/identity-crosswalk.jsonl",
+    "documentary_mapping": "reason",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 70,
+    "table": "identity_crosswalk",
+    "column": "lineage_id",
+    "source_file": "data/identity-crosswalk.jsonl",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 71,
+    "table": "identity_crosswalk",
+    "column": "release_id",
+    "source_file": "data/identity-crosswalk.jsonl",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 72,
+    "table": "identity_crosswalk",
+    "column": "raw_json",
+    "source_file": "data/identity-crosswalk.jsonl",
+    "documentary_mapping": "entire documentary source row, preserving nulls, aliases, modes, ballot links and evidence status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 73,
+    "table": "ingest_attempt",
+    "column": "attempt_id",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 74,
+    "table": "ingest_attempt",
+    "column": "lineage_id",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 75,
+    "table": "ingest_attempt",
+    "column": "operator",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 76,
+    "table": "ingest_attempt",
+    "column": "script_version",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 77,
+    "table": "ingest_attempt",
+    "column": "started_at",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 78,
+    "table": "ingest_attempt",
+    "column": "finished_at",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 79,
+    "table": "ingest_attempt",
+    "column": "status",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 80,
+    "table": "ingest_attempt",
+    "column": "input_inventory_json",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 81,
+    "table": "ingest_attempt",
+    "column": "successful_release_id",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 82,
+    "table": "ingest_attempt",
+    "column": "publication_set_json",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 83,
+    "table": "ingest_attempt",
+    "column": "row_counts_json",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 84,
+    "table": "ingest_attempt",
+    "column": "error_text",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 85,
+    "table": "office",
+    "column": "id_namespace",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "constant:UY-BF-research",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 86,
+    "table": "office",
+    "column": "office_id",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "office_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 87,
+    "table": "office",
+    "column": "country_id",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "constant:uruguay",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 88,
+    "table": "office",
+    "column": "geography_id",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "geography_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 89,
+    "table": "office",
+    "column": "name",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "name_local",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 90,
+    "table": "office",
+    "column": "office_type",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "office_kind",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 91,
+    "table": "office",
+    "column": "office_status",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "office_status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 92,
+    "table": "office",
+    "column": "record_state",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "constant:draft_unapproved",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 93,
+    "table": "office",
+    "column": "state_note",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "selection_note / era_gate / seat_count_note",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 94,
+    "table": "office",
+    "column": "registry_qualified",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "current_register_complete_for_BF_enumerated_scope; historical_only separately tagged",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 95,
+    "table": "office",
+    "column": "next_date_id",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "next_calendar_ids[0] -> research-dates.date_id; all options in raw_json",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 96,
+    "table": "office",
+    "column": "next_date_resolution",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "constant:formula_and_year; null for historical_only",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 97,
+    "table": "office",
+    "column": "next_history_key",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "null; no future held event invented",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 98,
+    "table": "office",
+    "column": "lineage_id",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 99,
+    "table": "office",
+    "column": "release_id",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 100,
+    "table": "office",
+    "column": "raw_json",
+    "source_file": "data/office-register.jsonl",
+    "documentary_mapping": "entire documentary source row, preserving nulls, aliases, modes, ballot links and evidence status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 101,
+    "table": "office_tier_classification",
+    "column": "id_namespace",
+    "source_file": "data/draft-tiers.jsonl",
+    "documentary_mapping": "constant:UY-BF-research",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 102,
+    "table": "office_tier_classification",
+    "column": "office_id",
+    "source_file": "data/draft-tiers.jsonl",
+    "documentary_mapping": "office_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 103,
+    "table": "office_tier_classification",
+    "column": "tier",
+    "source_file": "data/draft-tiers.jsonl",
+    "documentary_mapping": "draft_tier",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 104,
+    "table": "office_tier_classification",
+    "column": "review_status",
+    "source_file": "data/draft-tiers.jsonl",
+    "documentary_mapping": "status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 105,
+    "table": "office_tier_classification",
+    "column": "rationale",
+    "source_file": "data/draft-tiers.jsonl",
+    "documentary_mapping": "basis",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 106,
+    "table": "office_tier_classification",
+    "column": "lineage_id",
+    "source_file": "data/draft-tiers.jsonl",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 107,
+    "table": "office_tier_classification",
+    "column": "release_id",
+    "source_file": "data/draft-tiers.jsonl",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 108,
+    "table": "office_tier_classification",
+    "column": "classification_path",
+    "source_file": "data/draft-tiers.jsonl",
+    "documentary_mapping": "data/draft-tiers.jsonl",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 109,
+    "table": "office_tier_classification",
+    "column": "classification_kind",
+    "source_file": "data/draft-tiers.jsonl",
+    "documentary_mapping": "constant:draft_institutional_level",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 110,
+    "table": "office_tier_classification",
+    "column": "classification_sha256",
+    "source_file": "data/draft-tiers.jsonl",
+    "documentary_mapping": "SHA256SUMS entry for data/draft-tiers.jsonl",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 111,
+    "table": "office_tier_classification",
+    "column": "raw_json",
+    "source_file": "data/draft-tiers.jsonl",
+    "documentary_mapping": "entire documentary source row, preserving nulls, aliases, modes, ballot links and evidence status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 112,
+    "table": "party_mapping",
+    "column": "country_id",
+    "source_file": null,
+    "documentary_mapping": "null; source-local party labels retained in results, no harmonized mapping asserted",
+    "disposition": "HELD_NO_SYNTHETIC_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 113,
+    "table": "party_mapping",
+    "column": "party_namespace",
+    "source_file": null,
+    "documentary_mapping": "null; source-local party labels retained in results, no harmonized mapping asserted",
+    "disposition": "HELD_NO_SYNTHETIC_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 114,
+    "table": "party_mapping",
+    "column": "mapping_id",
+    "source_file": null,
+    "documentary_mapping": "null; source-local party labels retained in results, no harmonized mapping asserted",
+    "disposition": "HELD_NO_SYNTHETIC_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 115,
+    "table": "party_mapping",
+    "column": "source_context",
+    "source_file": null,
+    "documentary_mapping": "null; source-local party labels retained in results, no harmonized mapping asserted",
+    "disposition": "HELD_NO_SYNTHETIC_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 116,
+    "table": "party_mapping",
+    "column": "election_context",
+    "source_file": null,
+    "documentary_mapping": "null; source-local party labels retained in results, no harmonized mapping asserted",
+    "disposition": "HELD_NO_SYNTHETIC_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 117,
+    "table": "party_mapping",
+    "column": "original_label",
+    "source_file": null,
+    "documentary_mapping": "null; source-local party labels retained in results, no harmonized mapping asserted",
+    "disposition": "HELD_NO_SYNTHETIC_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 118,
+    "table": "party_mapping",
+    "column": "original_code",
+    "source_file": null,
+    "documentary_mapping": "null; source-local party labels retained in results, no harmonized mapping asserted",
+    "disposition": "HELD_NO_SYNTHETIC_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 119,
+    "table": "party_mapping",
+    "column": "mapped_group",
+    "source_file": null,
+    "documentary_mapping": "null; source-local party labels retained in results, no harmonized mapping asserted",
+    "disposition": "HELD_NO_SYNTHETIC_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 120,
+    "table": "party_mapping",
+    "column": "uncertainty",
+    "source_file": null,
+    "documentary_mapping": "null; source-local party labels retained in results, no harmonized mapping asserted",
+    "disposition": "HELD_NO_SYNTHETIC_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 121,
+    "table": "party_mapping",
+    "column": "lineage_id",
+    "source_file": null,
+    "documentary_mapping": "null; source-local party labels retained in results, no harmonized mapping asserted",
+    "disposition": "HELD_NO_SYNTHETIC_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 122,
+    "table": "party_mapping",
+    "column": "release_id",
+    "source_file": null,
+    "documentary_mapping": "null; source-local party labels retained in results, no harmonized mapping asserted",
+    "disposition": "HELD_NO_SYNTHETIC_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 123,
+    "table": "party_mapping",
+    "column": "raw_json",
+    "source_file": null,
+    "documentary_mapping": "null; source-local party labels retained in results, no harmonized mapping asserted",
+    "disposition": "HELD_NO_SYNTHETIC_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 124,
+    "table": "proceeding",
+    "column": "id_namespace",
+    "source_file": "data/proceedings.jsonl",
+    "documentary_mapping": "constant:UY-BF-research",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 125,
+    "table": "proceeding",
+    "column": "office_id",
+    "source_file": "data/proceedings.jsonl",
+    "documentary_mapping": "office_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 126,
+    "table": "proceeding",
+    "column": "history_key",
+    "source_file": "data/proceedings.jsonl",
+    "documentary_mapping": "office_id + event_id documentary composite, never guessed cross-era identity",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 127,
+    "table": "proceeding",
+    "column": "proceeding_id",
+    "source_file": "data/proceedings.jsonl",
+    "documentary_mapping": "proceeding_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 128,
+    "table": "proceeding",
+    "column": "kind",
+    "source_file": "data/proceedings.jsonl",
+    "documentary_mapping": "kind",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 129,
+    "table": "proceeding",
+    "column": "sequence_no",
+    "source_file": "data/proceedings.jsonl",
+    "documentary_mapping": "null; no fabricated proceeding sequence",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 130,
+    "table": "proceeding",
+    "column": "supersedes_id",
+    "source_file": "data/proceedings.jsonl",
+    "documentary_mapping": "null; no successor/supersession inference",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 131,
+    "table": "proceeding",
+    "column": "legal_outcome",
+    "source_file": "data/proceedings.jsonl",
+    "documentary_mapping": "tie_break_draw, not a new poll",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 132,
+    "table": "proceeding",
+    "column": "lineage_id",
+    "source_file": "data/proceedings.jsonl",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 133,
+    "table": "proceeding",
+    "column": "release_id",
+    "source_file": "data/proceedings.jsonl",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 134,
+    "table": "proceeding",
+    "column": "raw_json",
+    "source_file": "data/proceedings.jsonl",
+    "documentary_mapping": "entire documentary source row, preserving nulls, aliases, modes, ballot links and evidence status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 135,
+    "table": "publication_receipt",
+    "column": "singleton",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 136,
+    "table": "publication_receipt",
+    "column": "last_publish_attempt_id",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 137,
+    "table": "publication_receipt",
+    "column": "attempted_lineage_id",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 138,
+    "table": "publication_receipt",
+    "column": "attempted_release_id",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 139,
+    "table": "publication_release",
+    "column": "lineage_id",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 140,
+    "table": "publication_release",
+    "column": "release_id",
+    "source_file": null,
+    "documentary_mapping": null,
+    "disposition": "NO_OPERATION_NO_ROW",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 141,
+    "table": "record_locator",
+    "column": "record_key",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "record_key",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 142,
+    "table": "record_locator",
+    "column": "entity_kind",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "claim_kind -> office/event/result documentary entity",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 143,
+    "table": "record_locator",
+    "column": "country_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "constant:uruguay",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 144,
+    "table": "record_locator",
+    "column": "geography_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "geography_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 145,
+    "table": "record_locator",
+    "column": "id_namespace",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "constant:UY-BF-research",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 146,
+    "table": "record_locator",
+    "column": "office_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "office_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 147,
+    "table": "record_locator",
+    "column": "history_key",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "office_id + event_id documentary composite, never guessed cross-era identity",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 148,
+    "table": "record_locator",
+    "column": "proceeding_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "null; not supplied or not applicable",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 149,
+    "table": "record_locator",
+    "column": "result_row_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "null; not supplied or not applicable",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 150,
+    "table": "record_locator",
+    "column": "party_namespace",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "source-local lema context; no international party group map",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 151,
+    "table": "record_locator",
+    "column": "party_mapping_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "null; not supplied or not applicable",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 152,
+    "table": "record_locator",
+    "column": "source_namespace",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "constant:uruguay_BF_research",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 153,
+    "table": "record_locator",
+    "column": "source_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "source_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 154,
+    "table": "record_locator",
+    "column": "input_path",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "source_id -> source inventory artifact_path",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 155,
+    "table": "record_locator",
+    "column": "lineage_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 156,
+    "table": "record_locator",
+    "column": "release_id",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 157,
+    "table": "record_locator",
+    "column": "source_row_locator",
+    "source_file": "data/evidence-links.jsonl",
+    "documentary_mapping": "source_locator",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 158,
+    "table": "research_date",
+    "column": "date_id",
+    "source_file": "data/research-dates.jsonl",
+    "documentary_mapping": "date_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 159,
+    "table": "research_date",
+    "column": "label",
+    "source_file": "data/research-dates.jsonl",
+    "documentary_mapping": "label",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 160,
+    "table": "research_date",
+    "column": "precision",
+    "source_file": "data/research-dates.jsonl",
+    "documentary_mapping": "precision",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 161,
+    "table": "research_date",
+    "column": "certainty",
+    "source_file": "data/research-dates.jsonl",
+    "documentary_mapping": "certainty",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 162,
+    "table": "research_date",
+    "column": "year",
+    "source_file": "data/research-dates.jsonl",
+    "documentary_mapping": "year",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 163,
+    "table": "research_date",
+    "column": "month",
+    "source_file": "data/research-dates.jsonl",
+    "documentary_mapping": "month",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 164,
+    "table": "research_date",
+    "column": "day",
+    "source_file": "data/research-dates.jsonl",
+    "documentary_mapping": "day",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 165,
+    "table": "research_date",
+    "column": "range_start_id",
+    "source_file": "data/research-dates.jsonl",
+    "documentary_mapping": "null; not supplied or not applicable",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 166,
+    "table": "research_date",
+    "column": "range_end_id",
+    "source_file": "data/research-dates.jsonl",
+    "documentary_mapping": "null; not supplied or not applicable",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 167,
+    "table": "research_date",
+    "column": "lineage_id",
+    "source_file": "data/research-dates.jsonl",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 168,
+    "table": "research_date",
+    "column": "release_id",
+    "source_file": "data/research-dates.jsonl",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 169,
+    "table": "research_date",
+    "column": "raw_json",
+    "source_file": "data/research-dates.jsonl",
+    "documentary_mapping": "entire documentary source row, preserving nulls, aliases, modes, ballot links and evidence status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 170,
+    "table": "result_row",
+    "column": "id_namespace",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "constant:UY-BF-research",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 171,
+    "table": "result_row",
+    "column": "office_id",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "office_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 172,
+    "table": "result_row",
+    "column": "history_key",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "office_id + event_id documentary composite, never guessed cross-era identity",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 173,
+    "table": "result_row",
+    "column": "result_row_id",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "result_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 174,
+    "table": "result_row",
+    "column": "proceeding_id",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "null; not supplied or not applicable",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 175,
+    "table": "result_row",
+    "column": "country_id",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "constant:uruguay",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 176,
+    "table": "result_row",
+    "column": "candidate_or_list_label",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "contestant_name",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 177,
+    "table": "result_row",
+    "column": "original_party_label",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "original_party_label or source-local party-lema label; no cross-era merge",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 178,
+    "table": "result_row",
+    "column": "original_party_code",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "null; not normalized",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 179,
+    "table": "result_row",
+    "column": "party_namespace",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "source-local lema context; no international party group map",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 180,
+    "table": "result_row",
+    "column": "party_mapping_id",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "null; no asserted durable party identity",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 181,
+    "table": "result_row",
+    "column": "votes",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "votes",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 182,
+    "table": "result_row",
+    "column": "votes_status",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "votes_status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 183,
+    "table": "result_row",
+    "column": "share",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "vote_share_percent (null)",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 184,
+    "table": "result_row",
+    "column": "share_status",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "share_status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 185,
+    "table": "result_row",
+    "column": "share_unit",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "percent only if actually transcribed; all shares here null",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 186,
+    "table": "result_row",
+    "column": "seats",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "seats",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 187,
+    "table": "result_row",
+    "column": "seats_status",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "seats_status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 188,
+    "table": "result_row",
+    "column": "elected_flag",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "elected_flag; only explicit winner/proclaimed identity",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 189,
+    "table": "result_row",
+    "column": "is_substitute",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "null; substitute candidate vectors not imported",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 190,
+    "table": "result_row",
+    "column": "evidence_status",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "certification_status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 191,
+    "table": "result_row",
+    "column": "lineage_id",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 192,
+    "table": "result_row",
+    "column": "release_id",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 193,
+    "table": "result_row",
+    "column": "raw_json",
+    "source_file": "data/results.jsonl",
+    "documentary_mapping": "entire documentary source row, preserving nulls, aliases, modes, ballot links and evidence status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 194,
+    "table": "retained_input",
+    "column": "lineage_id",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 195,
+    "table": "retained_input",
+    "column": "release_id",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 196,
+    "table": "retained_input",
+    "column": "input_path",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "artifact_path",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 197,
+    "table": "retained_input",
+    "column": "input_kind",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "artifact_kind",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 198,
+    "table": "retained_input",
+    "column": "sha256",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "sha256",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 199,
+    "table": "retained_input",
+    "column": "byte_count",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "bytes",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 200,
+    "table": "retained_input",
+    "column": "recovery_locator",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "url",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 201,
+    "table": "retained_input",
+    "column": "payload_json",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "entire source inventory record",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 202,
+    "table": "source",
+    "column": "country_id",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "constant:uruguay",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 203,
+    "table": "source",
+    "column": "source_namespace",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "constant:uruguay_BF_research",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 204,
+    "table": "source",
+    "column": "source_id",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "source_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 205,
+    "table": "source",
+    "column": "publisher",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "publisher",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 206,
+    "table": "source",
+    "column": "title",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "title",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 207,
+    "table": "source",
+    "column": "url",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "url",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 208,
+    "table": "source",
+    "column": "checked_as_of_label",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "retrieved_utc",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 209,
+    "table": "source",
+    "column": "evidence_grade",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "artifact_kind + record-specific certification status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 210,
+    "table": "source",
+    "column": "file_sha256",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "sha256",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 211,
+    "table": "source",
+    "column": "locator",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "artifact_path",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 212,
+    "table": "source",
+    "column": "data_rights",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "license",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 213,
+    "table": "source",
+    "column": "lineage_id",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 214,
+    "table": "source",
+    "column": "release_id",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 215,
+    "table": "source",
+    "column": "raw_json",
+    "source_file": "sources/source-inventory.jsonl",
+    "documentary_mapping": "entire documentary source row, preserving nulls, aliases, modes, ballot links and evidence status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 216,
+    "table": "unresolved_evidence",
+    "column": "unresolved_id",
+    "source_file": "research-gaps.json",
+    "documentary_mapping": "gap_id",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 217,
+    "table": "unresolved_evidence",
+    "column": "record_key",
+    "source_file": "research-gaps.json",
+    "documentary_mapping": "gap-specific scope / referenced rows",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 218,
+    "table": "unresolved_evidence",
+    "column": "original_token",
+    "source_file": "research-gaps.json",
+    "documentary_mapping": "detail; source raw label retained where relevant",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 219,
+    "table": "unresolved_evidence",
+    "column": "source_locator",
+    "source_file": "research-gaps.json",
+    "documentary_mapping": "source_ids + linked gap detail",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 220,
+    "table": "unresolved_evidence",
+    "column": "reason",
+    "source_file": "research-gaps.json",
+    "documentary_mapping": "required_research_or_rule",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 221,
+    "table": "unresolved_evidence",
+    "column": "lineage_id",
+    "source_file": "research-gaps.json",
+    "documentary_mapping": "constant:UY-PROMPT-BF-RESEARCH",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 222,
+    "table": "unresolved_evidence",
+    "column": "release_id",
+    "source_file": "research-gaps.json",
+    "documentary_mapping": "constant:UY-BF-2026-09-29-DRAFT",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  },
+  {
+    "ordinal": 223,
+    "table": "unresolved_evidence",
+    "column": "raw_json",
+    "source_file": "research-gaps.json",
+    "documentary_mapping": "entire documentary source row, preserving nulls, aliases, modes, ballot links and evidence status",
+    "disposition": "DOCUMENTATION_ONLY",
+    "null_rule": "Do not coerce absent/blank/held values to zero or fabricate IDs, dates, votes, seats or lineage links.",
+    "target_write_permitted": false
+  }
+]

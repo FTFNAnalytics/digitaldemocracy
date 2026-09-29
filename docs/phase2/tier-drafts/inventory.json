@@ -411,10 +411,27 @@
     "saint-lucia",
     "saint-vincent-and-the-grenadines",
     "suriname",
-    "uruguay",
     "venezuela",
     "french-guiana",
     "falkland-islands-islas-malvinas",
     "south-georgia-and-the-south-sandwich-islands"
+  ],
+  "researched_full_pack_docs_and_draft_tiers": [
+    {
+      "country_id": "uruguay",
+      "status": "researched_full_pack_accept_with_holds",
+      "prior_coverage_status": "screened_out",
+      "coverage_status": "partial",
+      "docs": "docs/phase1/uruguay/",
+      "tier_file": "schemas/atlas/tiers/uruguay.json",
+      "current_offices": 314,
+      "historical_only_offices": 24,
+      "draft_tiers": {
+        "national": 6,
+        "regional": 57,
+        "local": 275
+      },
+      "note": "Prompt BF 2026-09-29. Unapproved draft tiers; justin_approved false. Not a continuity office shard. Slim land 0 events / 0 results / 0 sources. Holds remain open. No dummy continuity office."
+    }
   ]
 }
