@@ -1,0 +1,2009 @@
+[
+  {
+    "ordinal": 1,
+    "table": "country",
+    "column": "country_id",
+    "research_pointer": "manifest.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 2,
+    "table": "country",
+    "column": "country_code",
+    "research_pointer": "manifest.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 3,
+    "table": "country",
+    "column": "name",
+    "research_pointer": "manifest.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 4,
+    "table": "country",
+    "column": "polity_kind",
+    "research_pointer": "manifest.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 5,
+    "table": "country",
+    "column": "region_id",
+    "research_pointer": "manifest.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 6,
+    "table": "country",
+    "column": "coverage_status",
+    "research_pointer": "manifest.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 7,
+    "table": "country",
+    "column": "screening_as_of_label",
+    "research_pointer": "manifest.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 8,
+    "table": "country",
+    "column": "notes",
+    "research_pointer": "manifest.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 9,
+    "table": "country",
+    "column": "lineage_id",
+    "research_pointer": "manifest.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 10,
+    "table": "country",
+    "column": "release_id",
+    "research_pointer": "manifest.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 11,
+    "table": "country",
+    "column": "raw_json",
+    "research_pointer": "manifest.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 12,
+    "table": "dataset_lineage",
+    "column": "lineage_id",
+    "research_pointer": "manifest.json (research lineage only)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 13,
+    "table": "dataset_lineage",
+    "column": "provenance_kind",
+    "research_pointer": "manifest.json (research lineage only)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 14,
+    "table": "dataset_lineage",
+    "column": "description",
+    "research_pointer": "manifest.json (research lineage only)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 15,
+    "table": "dataset_release",
+    "column": "lineage_id",
+    "research_pointer": "manifest.json and SHA256SUMS (no live release)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 16,
+    "table": "dataset_release",
+    "column": "release_id",
+    "research_pointer": "manifest.json and SHA256SUMS (no live release)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 17,
+    "table": "dataset_release",
+    "column": "fingerprint_sha256",
+    "research_pointer": "manifest.json and SHA256SUMS (no live release)",
+    "mapping_status": "documentary_draft",
+    "rule": "Use digest of the exact retained bytes/defined hash input; never hash a URL and call it the source file digest.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 18,
+    "table": "dataset_release",
+    "column": "hash_inputs_json",
+    "research_pointer": "manifest.json and SHA256SUMS (no live release)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 19,
+    "table": "dataset_release",
+    "column": "adapter_version",
+    "research_pointer": "manifest.json and SHA256SUMS (no live release)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 20,
+    "table": "dataset_release",
+    "column": "method_version",
+    "research_pointer": "manifest.json and SHA256SUMS (no live release)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 21,
+    "table": "dataset_release",
+    "column": "schema_version",
+    "research_pointer": "manifest.json and SHA256SUMS (no live release)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 22,
+    "table": "dataset_release",
+    "column": "research_snapshot_label",
+    "research_pointer": "manifest.json and SHA256SUMS (no live release)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 23,
+    "table": "dataset_release",
+    "column": "upstream_release_id",
+    "research_pointer": "manifest.json and SHA256SUMS (no live release)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 24,
+    "table": "dataset_release",
+    "column": "validated_counts_json",
+    "research_pointer": "manifest.json and SHA256SUMS (no live release)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 25,
+    "table": "dataset_release",
+    "column": "research_coverage_complete",
+    "research_pointer": "manifest.json and SHA256SUMS (no live release)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 26,
+    "table": "dataset_release",
+    "column": "raw_json",
+    "research_pointer": "manifest.json and SHA256SUMS (no live release)",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 27,
+    "table": "election_event",
+    "column": "id_namespace",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 28,
+    "table": "election_event",
+    "column": "office_id",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 29,
+    "table": "election_event",
+    "column": "history_key",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 30,
+    "table": "election_event",
+    "column": "event_id",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 31,
+    "table": "election_event",
+    "column": "date_id",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 32,
+    "table": "election_event",
+    "column": "date_resolution",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 33,
+    "table": "election_event",
+    "column": "event_kind",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 34,
+    "table": "election_event",
+    "column": "selected_history_role",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 35,
+    "table": "election_event",
+    "column": "electoral_system",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 36,
+    "table": "election_event",
+    "column": "comparability",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 37,
+    "table": "election_event",
+    "column": "ballot_basis",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 38,
+    "table": "election_event",
+    "column": "share_unit",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 39,
+    "table": "election_event",
+    "column": "legal_outcome",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 40,
+    "table": "election_event",
+    "column": "record_state",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 41,
+    "table": "election_event",
+    "column": "state_note",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 42,
+    "table": "election_event",
+    "column": "lineage_id",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 43,
+    "table": "election_event",
+    "column": "release_id",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 44,
+    "table": "election_event",
+    "column": "raw_json",
+    "research_pointer": "data/events.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 45,
+    "table": "evidence_link",
+    "column": "evidence_id",
+    "research_pointer": "source_ids + source_locator on research records",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 46,
+    "table": "evidence_link",
+    "column": "record_key",
+    "research_pointer": "source_ids + source_locator on research records",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 47,
+    "table": "evidence_link",
+    "column": "source_country_id",
+    "research_pointer": "source_ids + source_locator on research records",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 48,
+    "table": "evidence_link",
+    "column": "source_namespace",
+    "research_pointer": "source_ids + source_locator on research records",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 49,
+    "table": "evidence_link",
+    "column": "source_id",
+    "research_pointer": "source_ids + source_locator on research records",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 50,
+    "table": "evidence_link",
+    "column": "source_locator",
+    "research_pointer": "source_ids + source_locator on research records",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 51,
+    "table": "evidence_link",
+    "column": "claim_kind",
+    "research_pointer": "source_ids + source_locator on research records",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 52,
+    "table": "evidence_link",
+    "column": "date_claim_id",
+    "research_pointer": "source_ids + source_locator on research records",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 53,
+    "table": "evidence_link",
+    "column": "claim_json",
+    "research_pointer": "source_ids + source_locator on research records",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 54,
+    "table": "evidence_link",
+    "column": "lineage_id",
+    "research_pointer": "source_ids + source_locator on research records",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 55,
+    "table": "evidence_link",
+    "column": "release_id",
+    "research_pointer": "source_ids + source_locator on research records",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 56,
+    "table": "geography",
+    "column": "country_id",
+    "research_pointer": "audit/current_municipality_crosswalk.json and office geography/era fields",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 57,
+    "table": "geography",
+    "column": "geography_id",
+    "research_pointer": "audit/current_municipality_crosswalk.json and office geography/era fields",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 58,
+    "table": "geography",
+    "column": "name",
+    "research_pointer": "audit/current_municipality_crosswalk.json and office geography/era fields",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 59,
+    "table": "geography",
+    "column": "parent_geography_id",
+    "research_pointer": "audit/current_municipality_crosswalk.json and office geography/era fields",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 60,
+    "table": "geography",
+    "column": "effective_from_label",
+    "research_pointer": "audit/current_municipality_crosswalk.json and office geography/era fields",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 61,
+    "table": "geography",
+    "column": "effective_to_label",
+    "research_pointer": "audit/current_municipality_crosswalk.json and office geography/era fields",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 62,
+    "table": "geography",
+    "column": "lineage_id",
+    "research_pointer": "audit/current_municipality_crosswalk.json and office geography/era fields",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 63,
+    "table": "geography",
+    "column": "release_id",
+    "research_pointer": "audit/current_municipality_crosswalk.json and office geography/era fields",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 64,
+    "table": "geography",
+    "column": "raw_json",
+    "research_pointer": "audit/current_municipality_crosswalk.json and office geography/era fields",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 65,
+    "table": "identity_crosswalk",
+    "column": "entity_kind",
+    "research_pointer": "data/identity_crosswalk.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 66,
+    "table": "identity_crosswalk",
+    "column": "upstream_namespace",
+    "research_pointer": "data/identity_crosswalk.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 67,
+    "table": "identity_crosswalk",
+    "column": "upstream_id",
+    "research_pointer": "data/identity_crosswalk.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 68,
+    "table": "identity_crosswalk",
+    "column": "record_key",
+    "research_pointer": "data/identity_crosswalk.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 69,
+    "table": "identity_crosswalk",
+    "column": "reason",
+    "research_pointer": "data/identity_crosswalk.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 70,
+    "table": "identity_crosswalk",
+    "column": "lineage_id",
+    "research_pointer": "data/identity_crosswalk.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 71,
+    "table": "identity_crosswalk",
+    "column": "release_id",
+    "research_pointer": "data/identity_crosswalk.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 72,
+    "table": "identity_crosswalk",
+    "column": "raw_json",
+    "research_pointer": "data/identity_crosswalk.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 73,
+    "table": "ingest_attempt",
+    "column": "attempt_id",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 74,
+    "table": "ingest_attempt",
+    "column": "lineage_id",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 75,
+    "table": "ingest_attempt",
+    "column": "operator",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 76,
+    "table": "ingest_attempt",
+    "column": "script_version",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 77,
+    "table": "ingest_attempt",
+    "column": "started_at",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 78,
+    "table": "ingest_attempt",
+    "column": "finished_at",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 79,
+    "table": "ingest_attempt",
+    "column": "status",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 80,
+    "table": "ingest_attempt",
+    "column": "input_inventory_json",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 81,
+    "table": "ingest_attempt",
+    "column": "successful_release_id",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 82,
+    "table": "ingest_attempt",
+    "column": "publication_set_json",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 83,
+    "table": "ingest_attempt",
+    "column": "row_counts_json",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 84,
+    "table": "ingest_attempt",
+    "column": "error_text",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 85,
+    "table": "office",
+    "column": "id_namespace",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 86,
+    "table": "office",
+    "column": "office_id",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 87,
+    "table": "office",
+    "column": "country_id",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 88,
+    "table": "office",
+    "column": "geography_id",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 89,
+    "table": "office",
+    "column": "name",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 90,
+    "table": "office",
+    "column": "office_type",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 91,
+    "table": "office",
+    "column": "office_status",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 92,
+    "table": "office",
+    "column": "record_state",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 93,
+    "table": "office",
+    "column": "state_note",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 94,
+    "table": "office",
+    "column": "registry_qualified",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 95,
+    "table": "office",
+    "column": "next_date_id",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Reference source-cited formula/year calendar only; no exact day or future contest event fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 96,
+    "table": "office",
+    "column": "next_date_resolution",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Reference source-cited formula/year calendar only; no exact day or future contest event fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 97,
+    "table": "office",
+    "column": "next_history_key",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Reference source-cited formula/year calendar only; no exact day or future contest event fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 98,
+    "table": "office",
+    "column": "lineage_id",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 99,
+    "table": "office",
+    "column": "release_id",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 100,
+    "table": "office",
+    "column": "raw_json",
+    "research_pointer": "data/office_register.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 101,
+    "table": "office_tier_classification",
+    "column": "id_namespace",
+    "research_pointer": "data/draft_tiers.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 102,
+    "table": "office_tier_classification",
+    "column": "office_id",
+    "research_pointer": "data/draft_tiers.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 103,
+    "table": "office_tier_classification",
+    "column": "tier",
+    "research_pointer": "data/draft_tiers.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 104,
+    "table": "office_tier_classification",
+    "column": "review_status",
+    "research_pointer": "data/draft_tiers.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 105,
+    "table": "office_tier_classification",
+    "column": "rationale",
+    "research_pointer": "data/draft_tiers.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 106,
+    "table": "office_tier_classification",
+    "column": "lineage_id",
+    "research_pointer": "data/draft_tiers.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 107,
+    "table": "office_tier_classification",
+    "column": "release_id",
+    "research_pointer": "data/draft_tiers.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 108,
+    "table": "office_tier_classification",
+    "column": "classification_path",
+    "research_pointer": "data/draft_tiers.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 109,
+    "table": "office_tier_classification",
+    "column": "classification_kind",
+    "research_pointer": "data/draft_tiers.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 110,
+    "table": "office_tier_classification",
+    "column": "classification_sha256",
+    "research_pointer": "data/draft_tiers.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Use digest of the exact retained bytes/defined hash input; never hash a URL and call it the source file digest.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 111,
+    "table": "office_tier_classification",
+    "column": "raw_json",
+    "research_pointer": "data/draft_tiers.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 112,
+    "table": "party_mapping",
+    "column": "country_id",
+    "research_pointer": "result labels and ballot codes only; enduring mappings held",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 113,
+    "table": "party_mapping",
+    "column": "party_namespace",
+    "research_pointer": "result labels and ballot codes only; enduring mappings held",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 114,
+    "table": "party_mapping",
+    "column": "mapping_id",
+    "research_pointer": "result labels and ballot codes only; enduring mappings held",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 115,
+    "table": "party_mapping",
+    "column": "source_context",
+    "research_pointer": "result labels and ballot codes only; enduring mappings held",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 116,
+    "table": "party_mapping",
+    "column": "election_context",
+    "research_pointer": "result labels and ballot codes only; enduring mappings held",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 117,
+    "table": "party_mapping",
+    "column": "original_label",
+    "research_pointer": "result labels and ballot codes only; enduring mappings held",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 118,
+    "table": "party_mapping",
+    "column": "original_code",
+    "research_pointer": "result labels and ballot codes only; enduring mappings held",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 119,
+    "table": "party_mapping",
+    "column": "mapped_group",
+    "research_pointer": "result labels and ballot codes only; enduring mappings held",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 120,
+    "table": "party_mapping",
+    "column": "uncertainty",
+    "research_pointer": "result labels and ballot codes only; enduring mappings held",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 121,
+    "table": "party_mapping",
+    "column": "lineage_id",
+    "research_pointer": "result labels and ballot codes only; enduring mappings held",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 122,
+    "table": "party_mapping",
+    "column": "release_id",
+    "research_pointer": "result labels and ballot codes only; enduring mappings held",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 123,
+    "table": "party_mapping",
+    "column": "raw_json",
+    "research_pointer": "result labels and ballot codes only; enduring mappings held",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 124,
+    "table": "proceeding",
+    "column": "id_namespace",
+    "research_pointer": "event_kind, ballot_component, round, legal_outcome",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 125,
+    "table": "proceeding",
+    "column": "office_id",
+    "research_pointer": "event_kind, ballot_component, round, legal_outcome",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 126,
+    "table": "proceeding",
+    "column": "history_key",
+    "research_pointer": "event_kind, ballot_component, round, legal_outcome",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 127,
+    "table": "proceeding",
+    "column": "proceeding_id",
+    "research_pointer": "event_kind, ballot_component, round, legal_outcome",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 128,
+    "table": "proceeding",
+    "column": "kind",
+    "research_pointer": "event_kind, ballot_component, round, legal_outcome",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 129,
+    "table": "proceeding",
+    "column": "sequence_no",
+    "research_pointer": "event_kind, ballot_component, round, legal_outcome",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 130,
+    "table": "proceeding",
+    "column": "supersedes_id",
+    "research_pointer": "event_kind, ballot_component, round, legal_outcome",
+    "mapping_status": "documentary_draft",
+    "rule": "No identity/replacement link without specific source; unasserted links remain null.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 131,
+    "table": "proceeding",
+    "column": "legal_outcome",
+    "research_pointer": "event_kind, ballot_component, round, legal_outcome",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 132,
+    "table": "proceeding",
+    "column": "lineage_id",
+    "research_pointer": "event_kind, ballot_component, round, legal_outcome",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 133,
+    "table": "proceeding",
+    "column": "release_id",
+    "research_pointer": "event_kind, ballot_component, round, legal_outcome",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 134,
+    "table": "proceeding",
+    "column": "raw_json",
+    "research_pointer": "event_kind, ballot_component, round, legal_outcome",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 135,
+    "table": "publication_receipt",
+    "column": "singleton",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 136,
+    "table": "publication_receipt",
+    "column": "last_publish_attempt_id",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 137,
+    "table": "publication_receipt",
+    "column": "attempted_lineage_id",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 138,
+    "table": "publication_receipt",
+    "column": "attempted_release_id",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 139,
+    "table": "publication_release",
+    "column": "lineage_id",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 140,
+    "table": "publication_release",
+    "column": "release_id",
+    "research_pointer": "No instantiated operational record",
+    "mapping_status": "prohibited_operational_write",
+    "rule": "Not instantiated: importer/publication prohibited; no operational ID, receipt, status or timestamp fabricated.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 141,
+    "table": "record_locator",
+    "column": "record_key",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 142,
+    "table": "record_locator",
+    "column": "entity_kind",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 143,
+    "table": "record_locator",
+    "column": "country_id",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 144,
+    "table": "record_locator",
+    "column": "geography_id",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 145,
+    "table": "record_locator",
+    "column": "id_namespace",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 146,
+    "table": "record_locator",
+    "column": "office_id",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 147,
+    "table": "record_locator",
+    "column": "history_key",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 148,
+    "table": "record_locator",
+    "column": "proceeding_id",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 149,
+    "table": "record_locator",
+    "column": "result_row_id",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 150,
+    "table": "record_locator",
+    "column": "party_namespace",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 151,
+    "table": "record_locator",
+    "column": "party_mapping_id",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 152,
+    "table": "record_locator",
+    "column": "source_namespace",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 153,
+    "table": "record_locator",
+    "column": "source_id",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 154,
+    "table": "record_locator",
+    "column": "input_path",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 155,
+    "table": "record_locator",
+    "column": "lineage_id",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 156,
+    "table": "record_locator",
+    "column": "release_id",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 157,
+    "table": "record_locator",
+    "column": "source_row_locator",
+    "research_pointer": "pack-local IDs and source_locator",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 158,
+    "table": "research_date",
+    "column": "date_id",
+    "research_pointer": "event_date/date_precision and data/upcoming_calendar.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 159,
+    "table": "research_date",
+    "column": "label",
+    "research_pointer": "event_date/date_precision and data/upcoming_calendar.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 160,
+    "table": "research_date",
+    "column": "precision",
+    "research_pointer": "event_date/date_precision and data/upcoming_calendar.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 161,
+    "table": "research_date",
+    "column": "certainty",
+    "research_pointer": "event_date/date_precision and data/upcoming_calendar.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 162,
+    "table": "research_date",
+    "column": "year",
+    "research_pointer": "event_date/date_precision and data/upcoming_calendar.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 163,
+    "table": "research_date",
+    "column": "month",
+    "research_pointer": "event_date/date_precision and data/upcoming_calendar.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 164,
+    "table": "research_date",
+    "column": "day",
+    "research_pointer": "event_date/date_precision and data/upcoming_calendar.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 165,
+    "table": "research_date",
+    "column": "range_start_id",
+    "research_pointer": "event_date/date_precision and data/upcoming_calendar.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 166,
+    "table": "research_date",
+    "column": "range_end_id",
+    "research_pointer": "event_date/date_precision and data/upcoming_calendar.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 167,
+    "table": "research_date",
+    "column": "lineage_id",
+    "research_pointer": "event_date/date_precision and data/upcoming_calendar.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 168,
+    "table": "research_date",
+    "column": "release_id",
+    "research_pointer": "event_date/date_precision and data/upcoming_calendar.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 169,
+    "table": "research_date",
+    "column": "raw_json",
+    "research_pointer": "event_date/date_precision and data/upcoming_calendar.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 170,
+    "table": "result_row",
+    "column": "id_namespace",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 171,
+    "table": "result_row",
+    "column": "office_id",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 172,
+    "table": "result_row",
+    "column": "history_key",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 173,
+    "table": "result_row",
+    "column": "result_row_id",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 174,
+    "table": "result_row",
+    "column": "proceeding_id",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 175,
+    "table": "result_row",
+    "column": "country_id",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 176,
+    "table": "result_row",
+    "column": "candidate_or_list_label",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 177,
+    "table": "result_row",
+    "column": "original_party_label",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 178,
+    "table": "result_row",
+    "column": "original_party_code",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 179,
+    "table": "result_row",
+    "column": "party_namespace",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 180,
+    "table": "result_row",
+    "column": "party_mapping_id",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 181,
+    "table": "result_row",
+    "column": "votes",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Preserve sourced value and evidence status; missing/untranscribed remains null. No arithmetic imputation or default false/zero.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 182,
+    "table": "result_row",
+    "column": "votes_status",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 183,
+    "table": "result_row",
+    "column": "share",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Preserve sourced value and evidence status; missing/untranscribed remains null. No arithmetic imputation or default false/zero.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 184,
+    "table": "result_row",
+    "column": "share_status",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 185,
+    "table": "result_row",
+    "column": "share_unit",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 186,
+    "table": "result_row",
+    "column": "seats",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Preserve sourced value and evidence status; missing/untranscribed remains null. No arithmetic imputation or default false/zero.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 187,
+    "table": "result_row",
+    "column": "seats_status",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 188,
+    "table": "result_row",
+    "column": "elected_flag",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Preserve sourced value and evidence status; missing/untranscribed remains null. No arithmetic imputation or default false/zero.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 189,
+    "table": "result_row",
+    "column": "is_substitute",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Preserve sourced value and evidence status; missing/untranscribed remains null. No arithmetic imputation or default false/zero.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 190,
+    "table": "result_row",
+    "column": "evidence_status",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 191,
+    "table": "result_row",
+    "column": "lineage_id",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 192,
+    "table": "result_row",
+    "column": "release_id",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 193,
+    "table": "result_row",
+    "column": "raw_json",
+    "research_pointer": "data/results.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 194,
+    "table": "retained_input",
+    "column": "lineage_id",
+    "research_pointer": "sources/source_inventory.jsonl + SHA256SUMS",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 195,
+    "table": "retained_input",
+    "column": "release_id",
+    "research_pointer": "sources/source_inventory.jsonl + SHA256SUMS",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 196,
+    "table": "retained_input",
+    "column": "input_path",
+    "research_pointer": "sources/source_inventory.jsonl + SHA256SUMS",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 197,
+    "table": "retained_input",
+    "column": "input_kind",
+    "research_pointer": "sources/source_inventory.jsonl + SHA256SUMS",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 198,
+    "table": "retained_input",
+    "column": "sha256",
+    "research_pointer": "sources/source_inventory.jsonl + SHA256SUMS",
+    "mapping_status": "documentary_draft",
+    "rule": "Use digest of the exact retained bytes/defined hash input; never hash a URL and call it the source file digest.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 199,
+    "table": "retained_input",
+    "column": "byte_count",
+    "research_pointer": "sources/source_inventory.jsonl + SHA256SUMS",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 200,
+    "table": "retained_input",
+    "column": "recovery_locator",
+    "research_pointer": "sources/source_inventory.jsonl + SHA256SUMS",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 201,
+    "table": "retained_input",
+    "column": "payload_json",
+    "research_pointer": "sources/source_inventory.jsonl + SHA256SUMS",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 202,
+    "table": "source",
+    "column": "country_id",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 203,
+    "table": "source",
+    "column": "source_namespace",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 204,
+    "table": "source",
+    "column": "source_id",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 205,
+    "table": "source",
+    "column": "publisher",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 206,
+    "table": "source",
+    "column": "title",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 207,
+    "table": "source",
+    "column": "url",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 208,
+    "table": "source",
+    "column": "checked_as_of_label",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 209,
+    "table": "source",
+    "column": "evidence_grade",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 210,
+    "table": "source",
+    "column": "file_sha256",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Use digest of the exact retained bytes/defined hash input; never hash a URL and call it the source file digest.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 211,
+    "table": "source",
+    "column": "locator",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 212,
+    "table": "source",
+    "column": "data_rights",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 213,
+    "table": "source",
+    "column": "lineage_id",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 214,
+    "table": "source",
+    "column": "release_id",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 215,
+    "table": "source",
+    "column": "raw_json",
+    "research_pointer": "sources/source_inventory.jsonl",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 216,
+    "table": "unresolved_evidence",
+    "column": "unresolved_id",
+    "research_pointer": "data/research_gaps.jsonl; audit/local_extraction.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 217,
+    "table": "unresolved_evidence",
+    "column": "record_key",
+    "research_pointer": "data/research_gaps.jsonl; audit/local_extraction.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 218,
+    "table": "unresolved_evidence",
+    "column": "original_token",
+    "research_pointer": "data/research_gaps.jsonl; audit/local_extraction.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 219,
+    "table": "unresolved_evidence",
+    "column": "source_locator",
+    "research_pointer": "data/research_gaps.jsonl; audit/local_extraction.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 220,
+    "table": "unresolved_evidence",
+    "column": "reason",
+    "research_pointer": "data/research_gaps.jsonl; audit/local_extraction.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 221,
+    "table": "unresolved_evidence",
+    "column": "lineage_id",
+    "research_pointer": "data/research_gaps.jsonl; audit/local_extraction.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 222,
+    "table": "unresolved_evidence",
+    "column": "release_id",
+    "research_pointer": "data/research_gaps.jsonl; audit/local_extraction.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  },
+  {
+    "ordinal": 223,
+    "table": "unresolved_evidence",
+    "column": "raw_json",
+    "research_pointer": "data/research_gaps.jsonl; audit/local_extraction.json",
+    "mapping_status": "documentary_draft",
+    "rule": "Documentary mapping only; use matching research value when evidenced; otherwise null/unresolved, never an invented default.",
+    "justin_approved": false
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "country_id": "georgia",
+  "country_code": "GE",
+  "office_rows": 176,
+  "current_offices": 135,
+  "current_ordinary_cycle_offices": 130,
+  "current_scope_hold_offices": 5,
+  "historical_offices": 41,
+  "events": 710,
+  "results": 4543,
+  "numeric_vote_rows": 3960,
+  "null_vote_rows": 583,
+  "numeric_share_rows": 57,
+  "numeric_seat_rows": 319,
+  "draft_tier_histogram": {
+    "national": 3,
+    "regional": 5,
+    "local": 168
+  },
+  "current_direct_executive_offices": 64,
+  "historical_direct_executive_offices": 17,
+  "current_municipal_councils": 69,
+  "historical_municipal_councils": 21,
+  "EP_offices": 0,
+  "parallel_institution_offices": 0,
+  "successor_edges": 0,
+  "current_breakout": {
+    "national": 1,
+    "Adjara": 1,
+    "municipal": 133
+  },
+  "historical_breakout": {
+    "municipal": 35,
+    "national": 2,
+    "Adjara": 4
+  },
+  "source_inventory_rows": 170,
+  "retained_sources": 160,
+  "open_research_holds": 21,
+  "upcoming_calendar_rows": 7,
+  "unassigned_observations": 2,
+  "applied_changes": 0,
+  "justin_approvals_checked": 0,
+  "research_coverage_complete": false,
+  "current_register_coverage": "64 modern electoral municipalities plus five statutory-continuation Georgian councils; national Parliament and Adjara Supreme Council",
+  "slim_first_import": {
+    "events": 0,
+    "results": 0,
+    "sources": 0
+  },
+  "omitted_full_pack": {
+    "events": 710,
+    "results": 4543,
+    "source_inventory_rows": 170
+  }
+}

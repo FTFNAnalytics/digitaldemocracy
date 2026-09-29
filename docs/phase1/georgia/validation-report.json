@@ -1,0 +1,74 @@
+{
+  "validation_status": "pass",
+  "validator_mode": "offline_read_only",
+  "applied_changes": 0,
+  "checks_passed": 13,
+  "checks_total": 13,
+  "checks": [
+    {
+      "check": "country_scope",
+      "status": "pass",
+      "note": "Georgia GE only; not US-GA."
+    },
+    {
+      "check": "office_counts",
+      "status": "pass",
+      "note": "130 ordinary + 5 statutory holds + 41 historical = 176."
+    },
+    {
+      "check": "tiers",
+      "status": "pass",
+      "note": "Exactly 176 unapproved tier rows with requested fields."
+    },
+    {
+      "check": "calendar",
+      "status": "pass",
+      "note": "Seven prominent calendar rows; exact future dates remain null."
+    },
+    {
+      "check": "calendar_docs",
+      "status": "pass",
+      "note": "Upcoming calendar is first-class in required documents."
+    },
+    {
+      "check": "holds",
+      "status": "pass",
+      "note": "GE-BG-G01 through GE-BG-G21 remain open and unapproved."
+    },
+    {
+      "check": "contract",
+      "status": "pass",
+      "note": "Inherited documentary contract has 223 fields."
+    },
+    {
+      "check": "metadata_counts",
+      "status": "pass",
+      "note": "Counts match source research accounting."
+    },
+    {
+      "check": "omissions",
+      "status": "pass",
+      "note": "No events.jsonl, results.jsonl, or sources/ in slim payload."
+    },
+    {
+      "check": "no_heavy_evidence",
+      "status": "pass",
+      "note": "Heavy evidence, audit extracts, and tables omitted."
+    },
+    {
+      "check": "acceptance",
+      "status": "pass",
+      "note": "Acceptance examples remain unapproved."
+    },
+    {
+      "check": "no_production_writes",
+      "status": "pass",
+      "note": "Documentation-only; no production state changed."
+    },
+    {
+      "check": "integrity",
+      "status": "pass",
+      "note": "Every docs file except SHA256SUMS has a verified checksum."
+    }
+  ]
+}
