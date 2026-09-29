@@ -47,6 +47,8 @@ export const TIER_PATH = "schemas/atlas/tiers/bulgaria.json";
 export const PACKAGE_PREFIX = "data/countries/bulgaria";
 export const UNPACKED_PREFIX = "data/countries/bulgaria/unpacked";
 export const REGISTER_RELATIVE = "data/countries/bulgaria/unpacked/tables/master/office-register.json";
+/** Documentary country-surface calendar. Not an importer input. */
+export const UPCOMING_CALENDAR_RELATIVE = "docs/phase1/bulgaria/data/Upcoming_Elections.json";
 export const REGISTER_SHA256 = "00ddcca3c48141302a7432f97effd017a009fee3d64fb7f9000a72ef79663559";
 export const TIER_SHA256 = "9a6718fe301f440511cc9e9f9b4139b3a1e0332ef2e3e6c9b3063f67f04652ab";
 export const DRAFT_TIER_SHA256 = "cff8fcabb12716230a314309162a40c72a3d7d13fe1aa4469cfb1655767c48f0";
