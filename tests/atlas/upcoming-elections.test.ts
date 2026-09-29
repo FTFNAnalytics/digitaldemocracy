@@ -7,7 +7,6 @@ import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { UpcomingElectionsCallout } from "../../components/atlas/upcoming-elections-callout";
 import { JurisdictionTemplate } from "../../components/atlas/jurisdiction-template";
 import AtlasJurisdictionPage from "../../app/atlas/[country]/[[...path]]/page";
-import { importBulgaria } from "../../lib/atlas/bulgaria/import";
 import { UPCOMING_CALENDAR_RELATIVE as BULGARIA_CALENDAR } from "../../lib/atlas/bulgaria/identity";
 import { importGeorgia } from "../../lib/atlas/georgia/import";
 import { UPCOMING_CALENDAR_RELATIVE as GEORGIA_CALENDAR } from "../../lib/atlas/georgia/identity";
@@ -15,6 +14,7 @@ import { importKosovo } from "../../lib/atlas/kosovo/import";
 import { UPCOMING_CALENDAR_RELATIVE as KOSOVO_CALENDAR } from "../../lib/atlas/kosovo/identity";
 import { importUruguay } from "../../lib/atlas/uruguay/import";
 import { UPCOMING_CALENDAR_RELATIVE as URUGUAY_CALENDAR } from "../../lib/atlas/uruguay/identity";
+import { migrateMasterDatabase } from "../../lib/atlas/apply-migrations";
 import { openAtlasDatabase } from "../../lib/atlas/sqlite";
 import {
   projectUpcomingCalendar,
@@ -334,8 +334,11 @@ describe("documentary upcoming elections", () => {
       when: "25 October 2026, only if a second ballot is needed",
       condition: "CIK Decision 126-MI explicitly describes a possible second ballot.",
     });
-    expect(model?.holds.find((item) => item.id === "BI-CAL-NA-EARLY")?.label).toBe(
-      "Early / snap parliamentary contingency",
+    expect(model?.holds.find((item) => item.id === "BI-CAL-NA-EARLY")).toMatchObject({
+      label: "Early / snap parliamentary contingency",
+    });
+    expect(model?.holds.find((item) => item.id === "BI-CAL-NA-EARLY")?.note).toContain(
+      "Only if the constitutional early-election procedure is triggered",
     );
     expect(model?.holds.find((item) => item.id === "BI-CAL-GNA")?.label).toBe(
       "Grand National Assembly — constitutional extraordinary path",
@@ -720,12 +723,47 @@ describe("Bulgaria country page", () => {
     dir = mkdtempSync(path.join(os.tmpdir(), "atlas-upcoming-bulgaria-"));
     sqlitePath = path.join(dir, "atlas.sqlite");
     process.env.ATLAS_SQLITE_PATH = sqlitePath;
-    importBulgaria({
-      root: repoRoot,
-      sqlitePath,
-      attemptsPath: path.join(dir, "bulgaria-attempts.sqlite"),
-      operator: "upcoming-elections-test",
-    });
+    // The landed BI tier is still draft. This PR does not change importer preflight,
+    // so the page test uses an empty jurisdiction index rather than importBulgaria.
+    migrateMasterDatabase(repoRoot, sqlitePath);
+    const db = openAtlasDatabase(sqlitePath);
+    try {
+      const lineage = "country-package-bulgaria";
+      const release = "bulgaria-upcoming-page-fixture";
+      const fingerprint = "a".repeat(64);
+      db.exec("BEGIN");
+      db.prepare(
+        `INSERT INTO dataset_lineage (lineage_id, provenance_kind, description)
+         VALUES (?, 'country_package', 'Upcoming-elections page fixture')`,
+      ).run(lineage);
+      db.prepare(
+        `INSERT INTO dataset_release (
+           lineage_id, release_id, fingerprint_sha256, hash_inputs_json, adapter_version,
+           method_version, schema_version, validated_counts_json, research_coverage_complete
+         ) VALUES (?, ?, ?, '{}', 'test', 'test', 'test', '{}', 0)`,
+      ).run(lineage, release, fingerprint);
+      db.prepare(`INSERT INTO publication_release (lineage_id, release_id) VALUES (?, ?)`).run(lineage, release);
+      db.prepare(
+        `INSERT INTO country (
+           country_id, country_code, name, polity_kind, region_id, coverage_status, lineage_id, release_id
+         ) VALUES ('bulgaria', 'BG', 'Bulgaria', 'sovereign_country', 'europe', 'partial', ?, ?)`,
+      ).run(lineage, release);
+      db.prepare(
+        `INSERT INTO geography (country_id, geography_id, name, lineage_id, release_id)
+         VALUES ('bulgaria', 'geo-bg-fixture', 'Аврен', ?, ?)`,
+      ).run(lineage, release);
+      db.prepare(
+        `INSERT INTO derived_jurisdiction (
+           jurisdiction_key, country_id, geography_id, parent_key, depth, level_label, name,
+           slug, slug_path, office_count, event_count, coverage_status, ambiguous
+         ) VALUES
+           ('bg-country', 'bulgaria', NULL, NULL, 0, 'country', 'Bulgaria', 'bulgaria', 'bulgaria', 0, 0, 'partial', 0),
+           ('bg-child', 'bulgaria', 'geo-bg-fixture', 'bg-country', 1, 'municipality', 'Аврен', 'avren', 'bulgaria/avren', 0, 0, 'partial', 0)`,
+      ).run();
+      db.exec("COMMIT");
+    } finally {
+      db.close();
+    }
   });
 
   afterAll(() => {

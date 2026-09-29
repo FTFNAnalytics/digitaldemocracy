@@ -214,10 +214,12 @@ function holdNote(row: Record<string, unknown>, countryId: UpcomingElectionCount
     }
     const status = sentence(requireString(row, "formal_call", id)).replace(/\.$/, "");
     const detail = typeof row.next_label === "string" ? row.next_label.trim() : "";
-    if (inventedDay(detail)) {
+    const extra = typeof row.conditional === "string" ? row.conditional.trim() : "";
+    if (inventedDay(detail) || (extra !== "" && inventedDay(extra))) {
       throw new Error(`Upcoming calendar ${id} research hold includes an exact day`);
     }
-    return detail ? `Research hold. ${status}. ${detail}` : `Research hold. ${status}.`;
+    const body = [detail, extra && !detail.includes(extra) ? extra : ""].filter((part) => part !== "").join(" ");
+    return body ? `Research hold. ${status}. ${body}` : `Research hold. ${status}.`;
   }
   const status = sentence(requireString(row, "formal_call_status", id)).replace(/\.$/, "");
   const notes = typeof row.notes === "string" ? row.notes.trim() : "";
@@ -247,7 +249,8 @@ export function projectUpcomingCalendar(countryId: string, rows: unknown[]): Upc
     }
     const when =
       countryId === "bulgaria" ? bulgariaWhen(row, id) : whenOf(requireString(row, "date_formula", id), year, id);
-    const condition = typeof row.condition === "string" && row.condition.trim() ? row.condition.trim() : null;
+    const conditionSource = countryId === "bulgaria" ? row.conditional : row.condition;
+    const condition = typeof conditionSource === "string" && conditionSource.trim() ? conditionSource.trim() : null;
     families.push({
       id,
       label,
