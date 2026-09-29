@@ -53,7 +53,7 @@ Source additions are the 23 actual `base.countries[].extensions.raw.screen.sourc
 
 The manifest owns shard membership; do not glob in Europe/NZ. Read B0 once, each country shard once; ignore duplicated `.release` as row collections. Original Data/*.json and decoded objects reconcile/supply raw evidence but **do not become a second office/event/result load**. Histories `_key` match existing E.historyKey; all IDs come from committed derivatives. Original briefing bytes differ from sanitized BF strings; preserve and hash both representations, never claim sanitized text has original-byte SHA.
 
-Key committed SHA-256s: manifest `010001d254827c882f028c4e118fa322ddaa0ef75f32aead9886a634e43f21e1`; base `7920209e27dbe40397bd1de50a93534a4a9ebe4e4de625de4e160c9ac1d189ed`; legacy-links `bc07c833a2479d1f445c941dc2a1945093a141210631669cee7e3c42571a55e9`.
+Key committed SHA-256s: manifest `7fb105f412bc07b87308e3ec024a5f4750b1f24f42e89fb6af94fdb09956fc11`; base `f8e51c71b1e76103a759e22e799245f85f081ec621c08c28557228dae7ba8fd3`; legacy-links `bc07c833a2479d1f445c941dc2a1945093a141210631669cee7e3c42571a55e9`. Prompt BF (2026-09-29) rewrote `base.json.gz` only to rescind Uruguay `screened_out` (`coverageStatus` partial). The previous base hash was `7920209e27dbe40397bd1de50a93534a4a9ebe4e4de625de4e160c9ac1d189ed`. No Uruguay offices, events, results, or sources were added. The 2026-09-13 screen text stays in `extensions.raw`.
 
 ## Mapping conventions
 
@@ -116,7 +116,7 @@ Accepted file format: `schema_version:"atlas-tier-classification/1"`, `lineage_i
 | name | C.names.official | Verbatim. | country_id | Aliases/short name retained raw. |
 | polity_kind | C.kind | Copy sovereign_country or territory. | country_id | 33 sovereign +3 territory; no status-only dummy offices. |
 | region_id | C.regionId | Copy exact supplied region string. | country_id | Do not apply legacy regions[].isDefaultLanding to Atlas configuration. |
-| coverage_status | C.coverageStatus | Copy partial / screened_out. | country_id | 24 partial,12 screened_out; partial territory may have zero offices. |
+| coverage_status | C.coverageStatus | Copy partial / screened_out. | country_id | 25 partial, 11 screened_out after Prompt BF. Uruguay coverageStatus is partial (researched full pack; the 2026-09-13 screen is rescinded). Partial territory may have zero offices. Uruguay still has zero continuity offices. |
 | screening_as_of_label | C.screening.asOfLabel | Copy when supplied; else NULL. | country_id | Not defaulted from import clock. |
 | notes | C.notes | Verbatim; blank→NULL with original raw retained. | country_id | Preserve scope/qualification; zero imported offices ≠ no elections ever. |
 | lineage_id | Owning lineage input | Exact L for this row; no latest-import default. | country_id | FK to selected lineage/release for active projection; dataset_release references dataset_lineage. Empty baseline tables: NO ROW. |
@@ -425,7 +425,7 @@ All125 artifact descriptors have a retained ZIP/member target under this invento
 
 ## Status-only country continuity
 
-The 15 base entries are barbados, bolivia, chile, grenada, honduras, nicaragua, panama, saint-lucia, saint-vincent-and-the-grenadines, suriname, uruguay, venezuela, french-guiana, falkland-islands-islas-malvinas, south-georgia-and-the-south-sandwich-islands. Each has zero imported offices/events. Copy existing country kind/status/notes/screening and preserve its page/citation identity. Twelve are screened_out sovereign records; the three territories are partial. Do not turn partial into a zero-percent coverage claim or load territorial supplement offices that are not present in the current derivative identity set. Original supplementary research remains retained evidence.
+The 15 base entries are barbados, bolivia, chile, grenada, honduras, nicaragua, panama, saint-lucia, saint-vincent-and-the-grenadines, suriname, uruguay, venezuela, french-guiana, falkland-islands-islas-malvinas, south-georgia-and-the-south-sandwich-islands. Each has zero imported offices/events in this continuity lineage. Copy existing country kind/status/notes/screening and preserve its page/citation identity. Eleven are screened_out sovereign records; Uruguay and the three territories are partial. Prompt BF (2026-09-29) rescinds the Uruguay screened_out classification: coverageStatus is partial, and the researched full pack is docs at docs/phase1/uruguay/ (314 current + 24 historical-only; draft tiers national 6 / regional 57 / local 275; holds open). Do not invent continuity offices for Uruguay. The 2026-09-13 screen text stays in extensions.raw. Do not turn partial into a zero-percent coverage claim or load territorial supplement offices that are not present in the current derivative identity set. Original supplementary research remains retained evidence.
 
 ## Publication coexistence and validation
 

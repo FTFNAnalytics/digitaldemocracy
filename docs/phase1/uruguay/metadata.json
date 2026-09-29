@@ -1,0 +1,62 @@
+{
+  "pack": "Prompt BF — Uruguay",
+  "country_id": "uruguay",
+  "country_code": "UY",
+  "country_name": "Oriental Republic of Uruguay",
+  "snapshot": "2026-09-29",
+  "decision": "accept_with_holds",
+  "acceptance": "Accepted with historical transcription limits; named research holds remain open.",
+  "open_holds": [
+    "UY-BF-G03",
+    "UY-BF-G05",
+    "UY-BF-G08",
+    "UY-BF-G11",
+    "UY-BF-G12",
+    "UY-BF-G13",
+    "UY-BF-G17",
+    "UY-BF-G18",
+    "UY-BF-G19",
+    "UY-BF-G22",
+    "UY-BF-G01",
+    "UY-BF-G04",
+    "UY-BF-G09",
+    "UY-BF-G20"
+  ],
+  "documented_not_implemented": [
+    "UY-BF-G06"
+  ],
+  "full_pack_zip_sha256": "a5d1f57aeaa5eb64bc7f3857c22296b627a4d36d3b12f0a4eb9546086882aed2",
+  "status": "research_only_unapproved_slim_land",
+  "applied_changes": 0,
+  "production_state_changed": false,
+  "justin_approved": false,
+  "current_register_complete": true,
+  "historical_numeric_coverage_complete": false,
+  "first_import": {
+    "events": 0,
+    "results": 0,
+    "sources": 0
+  },
+  "counts": {
+    "current_offices": 314,
+    "historical_only_offices": 24,
+    "office_rows": 338,
+    "draft_tiers": 338,
+    "events_omitted": 1451,
+    "results_omitted": 4328,
+    "source_records_omitted": 163,
+    "draft_tier_histogram": {
+      "national": 6,
+      "regional": 57,
+      "local": 275
+    },
+    "upcoming_calendar_family_rows": 8,
+    "open_holds": 14,
+    "documented_not_implemented_holds": 1
+  },
+  "land_paths": [
+    "docs/phase1/uruguay/",
+    "schemas/atlas/tiers/uruguay.json"
+  ],
+  "executed_operations": "Slim land artifact generation and read-only validation only; no importer, SQLite, VPS, UI, repository, service, or PR changes."
+}

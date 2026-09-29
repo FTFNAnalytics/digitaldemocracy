@@ -68,7 +68,7 @@ Review handling:
 
 ## Status-only entries
 
-These 15 existing LatAm country/territory records get no tier file and no dummy office: `barbados`, `bolivia`, `chile`, `grenada`, `honduras`, `nicaragua`, `panama`, `saint-lucia`, `saint-vincent-and-the-grenadines`, `suriname`, `uruguay`, `venezuela`, `french-guiana`, `falkland-islands-islas-malvinas`, `south-georgia-and-the-south-sandwich-islands`. Their country pages and provenance remain a Phase 2 continuity requirement.
+These 14 existing LatAm country/territory records get no tier file and no dummy office: `barbados`, `bolivia`, `chile`, `grenada`, `honduras`, `nicaragua`, `panama`, `saint-lucia`, `saint-vincent-and-the-grenadines`, `suriname`, `venezuela`, `french-guiana`, `falkland-islands-islas-malvinas`, `south-georgia-and-the-south-sandwich-islands`. Their country pages and provenance remain a Phase 2 continuity requirement. Uruguay is no longer in this list. Prompt BF (2026-09-29) lands a researched full pack at `docs/phase1/uruguay/` and unapproved draft `schemas/atlas/tiers/uruguay.json` (338 rows; national 6 / regional 57 / local 275). The prior `screened_out` continuity screen is rescinded. No dummy continuity office is added.
 
 ## Draft file SHA-256
 

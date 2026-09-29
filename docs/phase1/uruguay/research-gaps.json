@@ -1,0 +1,312 @@
+[
+  {
+    "gap_id": "UY-BF-G01",
+    "title": "Full municipal inventory by departamento",
+    "status": "resolved_current_inventory_history_boundaries_open",
+    "detail": "Signed Circular 12208 identifies 136 municipios; all match 2025 CEC return groups and OPP’s 2025–2030 count. Department counts are in counts.json and municipal-register.jsonl. Historical return inventories reconcile to 89/112/125/136 in 2010/2015/2020/2025. First evidenced election is not the creation date.",
+    "source_ids": [
+      "municipal-annex",
+      "OPP-2025",
+      "92d7ca7b-32f1-4cde-b607-d94aef825c4d"
+    ],
+    "required_research_or_rule": "Recheck dated creation/boundary acts for any changes after the evidenced cycle; do not project present units into past years.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G02",
+    "title": "Alcalde versus concejal selection",
+    "status": "resolved_rule_exception_documented",
+    "detail": "Law 19.272 arts. 9 and 11: five elected members; first titular of the most-voted list of the most-voted lema is alcalde; four others are concejales. Not council-selected; not a separately voted executive. Substitution and statutory tie rules matter.",
+    "source_ids": [
+      "law-19272",
+      "procl-108"
+    ],
+    "required_research_or_rule": "Retain two office roles per municipio with one shared ballot group; never six seats or fabricated personal votes.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G03",
+    "title": "Localities outside a municipio",
+    "status": "open_exhaustive_locality_inventory",
+    "detail": "Art.8 explicitly permits departmental administration of territory with no municipio. The 136 elected units are complete for the signed election annex; an exhaustive census of all non-municipalized localities is not supplied.",
+    "source_ids": [
+      "law-19272",
+      "municipal-annex"
+    ],
+    "required_research_or_rule": "Do not create municipio offices merely because a settlement, department capital, population threshold or GIS point exists.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G04",
+    "title": "Balotaje, co-election and majority denominator",
+    "status": "resolved_current_rule_history_transcription_open",
+    "detail": "President and Vice President are jointly and directly elected; absolute majority of voters; top-two runoff on the last Sunday in November if necessary. Actual 1999/2009/2014/2019/2024 runoffs are distinct from first rounds. No 2004 runoff is invented.",
+    "source_ids": [
+      "constitution-151",
+      "arc-55c8770e1855",
+      "national-e8d3892617"
+    ],
+    "required_research_or_rule": "Keep joint-ticket totals in the President event and link the VP event; do not sum shared ballot votes across offices.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G05",
+    "title": "Internas / formal party primaries",
+    "status": "excluded_pending_peer_pack_policy",
+    "detail": "Corte publication lists formal internas on 30 June 2024. The user conditions inclusion on peer-pack policy; no available prior-context evidence established that condition. Internas therefore have no office, event or result rows in this pack. This is a scope choice, not a denial that the formal contests exist.",
+    "source_ids": [
+      "cycles-2024-2025"
+    ],
+    "required_research_or_rule": "If Justin later establishes the peer policy, add documentary primary contests with sourced dates, without inventing party-organ public offices. Internas are contextual, outside the eight in-scope ordinary calendar family rows.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G06",
+    "title": "Calendar beyond 18 months / Uruguay rescope",
+    "status": "resolved_documentation_only",
+    "detail": "Next ordinary national cycle is 2029, local cycle 2030, with conditional 2029 runoff. These remain first-class country-calendar entries despite falling beyond the global 18-month alert horizon. Uruguay is no longer screened_out in this research pack for lack of a near-term election.",
+    "source_ids": [
+      "constitution-77",
+      "constitution-151",
+      "register-2029-2030"
+    ],
+    "required_research_or_rule": "Prominent country-calendar display is documented, not implemented. Formal convocatoria pending; exact dates null; no production coverage flip performed.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G07",
+    "title": "European Parliament and regional exclusions",
+    "status": "resolved_scope",
+    "detail": "EP offices=0. Uruguay is not an EU Member State. No MERCOSUR / regional parliament, regional government above departamento, cabinet, minister or party-organization office rows are invented. Juntas Electorales appearing in archival data are election-administration bodies outside BF’s enumerated jurisdictional-government scope; their figures are not mislabeled as Juntas Departamentales.",
+    "source_ids": [
+      "constitutional-eras",
+      "cycles-2024-2025"
+    ],
+    "required_research_or_rule": "Maintain zero EP and MERCOSUR office counts; do not silently expand the specified office families.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G08",
+    "title": "Constitutional eras 1918 / 1934 / 1942 / 1952 / 1967 / 1997",
+    "status": "partly_transcribed_historical_hold",
+    "detail": "Parliament’s constitutional history identifies the 1918 President + Consejo Nacional de Administración arrangement; 1934 single executive changes; 1942 Senate representation changes; 1952 national and departmental collegiate executives; 1967 restoration of President/VP and Intendentes; and the 1996 plebiscite / 1997 reform gate. Current runoff and seat rules are not back-projected. Twenty-one historical collective executive bodies are retained. Colonial/pre-independence institutions are excluded.",
+    "source_ids": [
+      "constitutional-eras",
+      "arc-c677795df98c",
+      "arc-bf3038b928c8",
+      "arc-f9872f8b1155",
+      "arc-73c9760b3080"
+    ],
+    "required_research_or_rule": "Historic CNA poll series, earlier constitutional cycles and exact term boundaries remain untranscribed. No guessed predecessor/successor edges. Do not invent President/VP popular contests during the 1952 collegiate era.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G09",
+    "title": "Municipalization and later expansions",
+    "status": "resolved_observed_poll_inventory_legal_creation_dates_open",
+    "detail": "Law 18.567 and Law 18.653 establish the 2009–2010 gate; Law 19.272 governs the current system. Election return groups establish 89/112/125/136 observed municipal electorates. Three older elected Juntas Locales are source-identified separately.",
+    "source_ids": [
+      "law-18567",
+      "law-18653",
+      "law-19272",
+      "arc-266479fd2bba",
+      "arc-8a7955f8a8b8"
+    ],
+    "required_research_or_rule": "Do not assign legal creation dates from the first observed vote year. Do not infer merger edges from an identical place name.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G10",
+    "title": "Concurrent versus staggered calendars / 2020 exception",
+    "status": "resolved_rule",
+    "detail": "Earlier national and departmental archive contests are concurrent. Modern ordinary departmental/municipal contests fall in May following the national year. Law 19.875 and Circular 10853 postponed 10 May 2020 to 27 September 2020.",
+    "source_ids": [
+      "constitution-77",
+      "law-19875",
+      "circular-10853"
+    ],
+    "required_research_or_rule": "The original scheduled date is a deferred-calendar hold, not a held zero-vote event. Counts include only the actual September 2020 election.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G11",
+    "title": "Annulment / repeat / replacement and San Bautista tie",
+    "status": "partly_documented_exception_coverage_open",
+    "detail": "San Bautista’s 2025 alcalde proclamation explicitly refers to a 21 May 2025 draw, Acta 21. That is an adjudication, not a repeat vote. Historical Intendente tables record deaths/resignations and substitutions; notably Flores 2005 elected Walter Raúl Echeverría García died before taking office, while the row names a replacement.",
+    "source_ids": [
+      "procl-108",
+      "arc-284e05a07e71",
+      "arc-a86c030f674d",
+      "arc-0d72cd01dcf9"
+    ],
+    "required_research_or_rule": "No exhaustive national repeat/annulment register was retained. Do not assert that no exceptions ever occurred. Add source-identified annulled/repeated events separately when located; holder replacement alone creates no popular contest.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G12",
+    "title": "1954/1962 archival conflicts",
+    "status": "open_numeric_hold",
+    "detail": "1954 national workbook title/date context differs from its section 4 heading stating 1958; national collegiate seat allocation contradicts the party vote narrative. Departmental 1954/1962 vote tables contain labeling/column ambiguities. These numeric vote vectors and 1954 CNG allocation are held rather than silently corrected; unambiguous chamber/Junta allocations remain.",
+    "source_ids": [
+      "arc-c677795df98c",
+      "arc-f9872f8b1155",
+      "arc-73c9760b3080"
+    ],
+    "required_research_or_rule": "Obtain contemporaneous certified returns before releasing conflicting numerical fields. Archive existence does not confer cell-level certification.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G13",
+    "title": "1994 archive / source disagreement",
+    "status": "open_numeric_hold",
+    "detail": "IPU records the 27 November 1994 election and lower-house 32/31/31/5 allocation. Its Senate presentation totals 31, needing separation of elected mandates from ex-officio membership; secondary presidential vote figures also conflict. The pack retains the event context and IPU lower-house seat report, with other numerics held. The original 1967 Constitution arts. 77(9),94 and 151 supports joint popular President/VP and concurrent chambers for that era; it is not used to back-project the current runoff rule.",
+    "source_ids": [
+      "web-1994-2019-history",
+      "web-national-validation",
+      "constitution-1967-original-pdf"
+    ],
+    "required_research_or_rule": "Retrieve primary Corte return for candidate formulas, votes and Senate mandates. Do not force a 31-seat report into 30 or treat grouped party data as personal candidate votes.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G14",
+    "title": "2009 official archive date errors",
+    "status": "resolved_with_independent_primary_dates",
+    "detail": "The summary PDF prints 31 October for the first round and 28 November for the runoff. Circular 8408 identifies 25 October 2009; the official Presidency biography identifies 29 November 2009. Those primary-supported dates are used; the original PDF is retained unchanged.",
+    "source_ids": [
+      "arc-0cbcbaa829aa",
+      "rules-2009",
+      "presidency-2009"
+    ],
+    "required_research_or_rule": "Retain the conflicting headings in evidence; never silently propagate them to event dates.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G15",
+    "title": "Current GIS and historical label defects",
+    "status": "resolved_audited_aliases",
+    "detail": "Official map JSON has corrupted accents/names and assigns Atlántida letter C, conflicting with the signed annex’s Ñ. The signed annex controls.2015 summary says Florida “FRAY BENTOS”; the detailed source explicitly says Fray Marcos.2010“CAP.JUAN ARTIGAS” is matched to Barros Blancos using Law 18.136 and the 2010 municipal law, not a merger guess. Salinas 2025: the allocation paragraph prints FRENTE AMPIO for hoja 141-K; the following member proclamation explicitly calls that same list FRENTE AMPLIO. PDF pages 8–9 were visually checked. The raw spelling is retained in the audit; the normalized allocation is Frente Amplio 3, Coalición Republicana 2.",
+    "source_ids": [
+      "municipal-map",
+      "municipal-annex",
+      "arc-8a7955f8a8b8",
+      "arc-a13aa51f329a",
+      "law-18136",
+      "law-18653",
+      "procl-108"
+    ],
+    "required_research_or_rule": "Preserve source labels and narrowly scoped aliases; no extra Atlántida/Pando or Florida/Fray Bentos offices.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G16",
+    "title": "Nulls / blank source cells / explicit zeros",
+    "status": "resolved_rule",
+    "detail": "2015 Villa del Carmen’s Asamblea Popular cell is blank and stays null. Explicit published zeros in early summary grids are retained as source zeros, without inventing candidate participation. A missing party or untranscribed seat field is not converted to zero.",
+    "source_ids": [
+      "arc-8a7955f8a8b8"
+    ],
+    "required_research_or_rule": "Validator rejects null-to-zero coercion; all normalized shares remain null because percentage denominator transcription is incomplete.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G17",
+    "title": "2025 candidate-integration resource incomplete",
+    "status": "open_upstream_dataset_hold",
+    "detail": "The retained integration CSV contains 639 rows confined to Artigas/Cabildo Abierto, although its catalogue presentation suggests broader coverage. It is not used as the countrywide winner inventory.",
+    "source_ids": [
+      "7b775c22-3a59-490b-b8a0-6a8f8efd33bc",
+      "proclamations-2025"
+    ],
+    "required_research_or_rule": "Use signed proclamations for winners. Do not infer missing offices or candidates from this incomplete resource.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G18",
+    "title": "Return stage versus certification / turnout fields",
+    "status": "open_remaining_proclamation_transcription",
+    "detail": "2019/2024 national chamber allocations and 2024 runoff have signed-proclamation evidence. All 32 Canelones 2025 municipal vote vectors reconcile with the signed act. Other published return aggregates are labeled as such; proclamation PDFs for all 19 departments are retained. Some runoff CSV turnout/observed-vote fields reflect mixed processing stages, so no denominator is fabricated.",
+    "source_ids": [
+      "acta-10035-2019",
+      "acta-10037-2019",
+      "national-5e0782cd3f",
+      "national-5028502b52",
+      "national-e8d3892617",
+      "proclamations-2025"
+    ],
+    "required_research_or_rule": "Complete all historical certificate/candidate/seat transcriptions before claiming exhaustive certified results. OCR-assisted draft transcriptions are distinguished from source certification.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G19",
+    "title": "Full history versus available archive coverage",
+    "status": "open_explicit_coverage_limit",
+    "detail": "Full current enumerated-office coverage is established. Historic numeric coverage is not exhaustive:1958 and earlier complete series, 1994 primary returns, many losing-candidate formula totals, detailed council/municipal allocations and exception proceedings remain open. Source-held numeric fields stay null.",
+    "source_ids": [
+      "statistics-index",
+      "constitutional-eras"
+    ],
+    "required_research_or_rule": "Read history-coverage.md. A passing validator certifies pack consistency and guardrails, not the completeness or legal truth of every historical source.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G20",
+    "title": "Pre-1997 lema / formula comparability",
+    "status": "resolved_model_history_detail_open",
+    "detail": "Before the modern single-ticket and runoff rule, a party could carry several presidential formulas. Lema totals in the pack are labeled as aggregates, not personal candidate votes;1971 cannot be resolved by simply selecting the candidate with the largest personal total across parties.",
+    "source_ids": [
+      "arc-fa27692f56c7",
+      "arc-cba96e7ccd03",
+      "constitution-151"
+    ],
+    "required_research_or_rule": "Do not compare pre-1997 party aggregates with runoff candidate shares as though they used one electoral system. Missing formula splits remain untranscribed.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G21",
+    "title": "Elected membership versus ex-officio / holder replacement",
+    "status": "resolved_rule",
+    "detail": "Current Senate is 30 elected senators plus the Vice President ex officio. The 1952-era summaries identify 31 elected senators. Municipal councils have five members including the alcalde. Source holder succession is not an additional elected mandate or a new office.",
+    "source_ids": [
+      "constitution-94",
+      "arc-bf3038b928c8",
+      "law-19272"
+    ],
+    "required_research_or_rule": "Keep event-level seat totals by era. Never add the alcalde’s role a second time when totaling council seats.",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UY-BF-G22",
+    "title": "2025 mayor and seat transcription completeness",
+    "status": "open_person_level_transcription",
+    "detail": "All 136 municipal council party vectors and all 19 departmental party vectors are normalized. All 19 proclaimed Intendente winner identities are included; only 53 of 136 alcalde proclamations have normalized winner identities. The full 125 municipio 2020 OPP holder roster is documented as a post-election government roster, not an original Corte certificate.",
+    "source_ids": [
+      "proclamations-2025",
+      "opp-2020-mayors"
+    ],
+    "required_research_or_rule": "Retained original proclamations permit follow-up. Do not label untranscribed winners, votes, seats or substitutes as zero. The office register is complete independently of person-level transcription.",
+    "justin_approved": false,
+    "applied": false
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "example_id": "UY-BF-AC01",
+    "check_id": "scope_current",
+    "expectation": "314 current offices: 4 national, 38 departmental and 272 municipal.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC02",
+    "check_id": "scope_historical",
+    "expectation": "24 source-identified historical bodies remain historical-only.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC03",
+    "check_id": "tiers",
+    "expectation": "338 unapproved draft tier rows, exactly one per office.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC04",
+    "check_id": "territory",
+    "expectation": "136 municipios across 19 departments, each with a council and an alcalde role.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC05",
+    "check_id": "canelones_32",
+    "expectation": "32 current municipios and 64 municipal office roles in Canelones.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC06",
+    "check_id": "montevideo_8",
+    "expectation": "Eight Montevideo municipios, plus a distinct departmental Intendente and Junta.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC07",
+    "check_id": "duplicate_names",
+    "expectation": "La Paz, Quebracho and Cerro Chato names in different departments retain distinct identifiers.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC08",
+    "check_id": "alcalde_mode",
+    "expectation": "136 alcaldes are selected by the popular municipal list result, with no separate executive ballot.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC09",
+    "check_id": "five_seats",
+    "expectation": "Each municipal council has five members, including its alcalde; the alcalde is not a sixth seat.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC10",
+    "check_id": "national_modes",
+    "expectation": "President and VP are jointly elected; Senate has 30 elected members plus the VP ex officio; Representatives has 99 seats.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC11",
+    "check_id": "historical_senate",
+    "expectation": "1954 and 1962 Senate allocations each total 31 elected seats; the 2024 allocation totals 30.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC12",
+    "check_id": "calendar_current",
+    "expectation": "Every current office links to a prominent upcoming calendar entry.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC13",
+    "check_id": "calendar_hist",
+    "expectation": "No historical-only office has an upcoming ordinary election.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC14",
+    "check_id": "calendar_formulas",
+    "expectation": "Eight calendar entries use sourced formulas and occurrence years; exact dates remain null.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC15",
+    "check_id": "calendar_alerts",
+    "expectation": "Every calendar entry requires country-page prominence and remains included outside the alert window.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC16",
+    "check_id": "calendar_years",
+    "expectation": "The next national and conditional runoff cycle is 2029; the departmental and municipal cycle is 2030.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC17",
+    "check_id": "runoffs",
+    "expectation": "Held runoffs in 1999, 2009, 2014, 2019 and 2024 remain separate from first rounds.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC18",
+    "check_id": "no_2004_runoff",
+    "expectation": "The 2004 winning ticket is documented without a fabricated runoff.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC19",
+    "check_id": "joint_votes",
+    "expectation": "Every VP event references the joint presidential ballot; no independent VP vote vector exists.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC20",
+    "check_id": "deferral",
+    "expectation": "The postponed 10 May 2020 schedule has no result rows; the held 27 September contests are retained.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC21",
+    "check_id": "municipal_history",
+    "expectation": "The four municipal election inventories contain 89, 112, 125 and 136 observed units respectively.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC22",
+    "check_id": "blank_not_zero",
+    "expectation": "The blank 2015 Villa del Carmen / Asamblea Popular vote cell remains null.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC23",
+    "check_id": "explicit_zero",
+    "expectation": "Explicit source zeros remain distinguishable from null values.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC24",
+    "check_id": "source_links",
+    "expectation": "Office, event and result records link to retained evidence; all foreign keys resolve.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC25",
+    "check_id": "raw_hashes",
+    "expectation": "Every retained source matches its recorded byte count and SHA-256 digest.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC26",
+    "check_id": "contract_223",
+    "expectation": "223 field mappings match the inherited 20-table contract exactly.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC27",
+    "check_id": "no_writes",
+    "expectation": "Applied changes and importer, SQLite, VPS, UI and repository changes all remain zero.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC28",
+    "check_id": "approvals",
+    "expectation": "Every Justin approval field is false and every approval checkbox is unchecked.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC29",
+    "check_id": "ep_zero",
+    "expectation": "European Parliament offices: zero.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC30",
+    "check_id": "mercosur_zero",
+    "expectation": "No MERCOSUR, regional parliament or party-organization office is created.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC31",
+    "check_id": "successors_zero",
+    "expectation": "No predecessor or successor edge is invented.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC32",
+    "check_id": "municipal_aliases",
+    "expectation": "Atlántida retains electoral letter Ñ; the Florida source typo does not create a Fray Bentos office.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC33",
+    "check_id": "CNG_gate",
+    "expectation": "1954 and 1962 identify the collegiate national executive, with no invented President or VP contest.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC34",
+    "check_id": "canelones_certified",
+    "expectation": "All 32 Canelones municipal party vote vectors reconcile to the signed 2025 proclamation.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC35",
+    "check_id": "national_2024",
+    "expectation": "2024 chamber allocations match Senate 16/9/5 and Representatives 48/29/17/2/2/1.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC36",
+    "check_id": "runoff_2024",
+    "expectation": "The signed 2024 runoff ticket vote totals are 1,212,833 and 1,119,537.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC37",
+    "check_id": "tie_proceeding",
+    "expectation": "The 2025 San Bautista draw is a proceeding, not another election.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC38",
+    "check_id": "history_limits",
+    "expectation": "The manifest explicitly marks historical numerical transcription incomplete.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC39",
+    "check_id": "source_candidates_partial",
+    "expectation": "The partial 2025 candidate-integration CSV does not establish office completeness.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  },
+  {
+    "example_id": "UY-BF-AC40",
+    "check_id": "alcalde_winners",
+    "expectation": "125 alcalde identities from the 2020 OPP roster and 53 from 2025 proclamations retain distinct evidence statuses.",
+    "status": "expected_pass_in_validator",
+    "justin_approved": false
+  }
+]

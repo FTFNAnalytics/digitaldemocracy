@@ -6,17 +6,17 @@
     "package_sha256": "fe5e91689def5b3e6824c761b5ffb8fb2118847b9f3e0811fb76ba093453b23f",
     "manifest": {
       "path": "data/research/manifest.json",
-      "sha256": "010001d254827c882f028c4e118fa322ddaa0ef75f32aead9886a634e43f21e1",
+      "sha256": "7fb105f412bc07b87308e3ec024a5f4750b1f24f42e89fb6af94fdb09956fc11",
       "bytes": 5616423
     },
     "base": {
       "path": "data/research/base.json.gz",
-      "sha256": "7920209e27dbe40397bd1de50a93534a4a9ebe4e4de625de4e160c9ac1d189ed",
-      "bytes": 382144,
-      "manifest_sha256": "7920209e27dbe40397bd1de50a93534a4a9ebe4e4de625de4e160c9ac1d189ed",
+      "sha256": "f8e51c71b1e76103a759e22e799245f85f081ec621c08c28557228dae7ba8fd3",
+      "bytes": 388142,
+      "manifest_sha256": "f8e51c71b1e76103a759e22e799245f85f081ec621c08c28557228dae7ba8fd3",
       "checksum_verified": true,
       "offices": 0,
-      "note": "base.json.gz holds screens/territories/queue metadata, not office shards"
+      "note": "base.json.gz holds screens/territories/queue metadata, not office shards. Prompt BF (2026-09-29) sets Uruguay coverageStatus to partial and rescinds screened_out. No Uruguay offices, events, or results were added."
     },
     "totals": {
       "manifest_validatedCounts": {
