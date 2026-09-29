@@ -1,0 +1,38 @@
+{
+  "pack": "Prompt BD — Ukraine",
+  "country_code": "UA",
+  "country_scope": "Ukraine",
+  "as_of": "2026-09-28",
+  "lineage_id": "UA-BD-RESEARCH",
+  "release_id": "2026-09-28-draft",
+  "status": "research_only_unapproved",
+  "applied_changes": 0,
+  "justin_approvals": {
+    "scope": false,
+    "tiers": false,
+    "history": false,
+    "import": false,
+    "publication": false
+  },
+  "current_register_accounting_complete": true,
+  "research_coverage_complete": false,
+  "historical_coverage": "partial_source_qualified",
+  "ep_offices": 0,
+  "occupying_power_offices": 0,
+  "guessed_successor_edges": 0,
+  "production_mutations": [],
+  "contract_tables": 20,
+  "contract_columns": 223,
+  "counts_file": "counts.json",
+  "sources_file": "sources/source-inventory.jsonl",
+  "field_map": "field-map-223.json",
+  "validator": "validate.py",
+  "alert_window_policy": "Upcoming/alerts only; never excludes current offices or history",
+  "selection_modes": {
+    "president": "direct_popular",
+    "mayors_village_settlement_heads": "direct_popular_where_evidenced",
+    "council_chairs": "indirect_not_separate_popular_offices",
+    "military_administrations": "appointed_excluded",
+    "current_starostas": "council_approved_excluded"
+  }
+}

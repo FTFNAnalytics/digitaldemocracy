@@ -1,0 +1,255 @@
+[
+  {
+    "gap_id": "UA-BD-G01",
+    "title": "Ukraine scope and independence",
+    "finding": "Ukraine institutions only. No occupying-power, unrecognized republic, dual-state or pre-independence Soviet office identities. The 1991 independence and 1996 constitutional transitions are scope gates, not new duplicate national office rows.",
+    "remaining_hold": "Do not infer legal founding dates from an election date. Historical 1990 Soviet elections excluded.",
+    "source_ids": [
+      "UA-W-legal_modes",
+      "UA-W-1991primary"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G02",
+    "title": "Presidential selection and rounds",
+    "finding": "President is directly popularly elected. CVK explains a first-round majority of participating voters and, if needed, two-candidate repeat voting. A two-candidate runoff is decided by the higher vote count; a tied runoff does not elect a winner. Do not impose a 50% vote share on all historical second-round victories.",
+    "remaining_hold": "1999, 2004, 2010 and 2019 rounds are separate. 2004-11-21 was held and subsequently invalidated; its reported figures remain quarantined as annulled. 2004-12-26 is the repeat runoff. Neither is an office-successor link.",
+    "source_ids": [
+      "UA-W-legal_modes",
+      "UA-R-36476f7fac5eb69e"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G03",
+    "title": "Martial-law prohibition and upcoming dates",
+    "finding": "Article 19 of Law 389-VIII prohibits presidential, parliamentary, ARC and local elections during martial law. The Rada notice dated 14 July 2026 reports extension from 05:30 on 2 August 2026 for 90 days. This covers the 28 September research date.",
+    "remaining_hold": "No fabricated 2024, 2025, 2026 or postwar election events. No calculated next ordinary polling dates. Nationwide upcoming-date hold is separate from territorial holds. Source notice is retained; a complete amended electoral calendar is not asserted.",
+    "source_ids": [
+      "UA-R-6b6754c78b53b124",
+      "UA-R-24f22ea4725e117f"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G04",
+    "title": "Occupation, deferred elections and control",
+    "finding": "KATOTTG geography is not proof of an election. There are 373 fully held territorial rows: 352 H-category units, 17 raions, three regional units and Sevastopol. H units comprise 303 in Crimea, 31 marked occupied since 2014 in the territorial portal, and 18 whole-community 2020 deferrals.",
+    "remaining_hold": "One additional partial hold covers five Novoaidar polling stations; its elected offices remain. These are dated election/scope holds, not an exhaustive September 2026 control map. Current office rows can also be under occupation or military administration. No invented zero-vote contests.",
+    "source_ids": [
+      "UA-R-a9aa07cc19f4c923",
+      "UA-W-CVK161direct",
+      "UA-R-eead2ab6f6eebfcb"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G05",
+    "title": "2020 hromada and raion reform",
+    "finding": "Latest retained KATOTTG is 7 July 2026, Order 1321. It has 136 raions and 1,772 H-category units, including 303 Crimea entries. The election export evidences 119 elected post-2020 raion councils. Every registered raion is accounted for; 17 are holds.",
+    "remaining_hold": "Pre-2020 Vinnytsia raion CVK2015 code 6528 is a historical territorial identity. Current Vinnytsia raion code 63553 is distinct. No merger, successor, boundary-equality or asset-succession edge has been guessed.",
+    "source_ids": [
+      "UA-R-a9aa07cc19f4c923",
+      "UA-W-historicVinnytsia2015",
+      "UA-S-LOCAL-XML"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G06",
+    "title": "Kyiv and nested city councils",
+    "finding": "Kyiv has one evidenced city council and one popularly elected city mayor. Kyiv city is not Kyiv oblast. The local export establishes 15 separately elected city-district councils: seven Kryvyi Rih, two Kropyvnytskyi, three Poltava and three Kherson.",
+    "remaining_hold": "KATOTTG contains 108 administrative city districts; only 15 have elected-body evidence in the current register. Election commissions, Kyiv city districts and administrative divisions are not automatically elected offices. Nested parent links are territorial nesting only.",
+    "source_ids": [
+      "UA-S-LOCAL-XML",
+      "UA-R-a9aa07cc19f4c923"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G07",
+    "title": "Mayor and other executive selection modes",
+    "finding": "Local self-government law Art. 12 and CVK guidance establish direct election of village, settlement and city heads. For 2020, cities below 75,000 voters use relative majority; cities with at least 75,000 voters use absolute majority and conditional runoff. The threshold counts voters, not residents.",
+    "remaining_hold": "Oblast/raion/city-district council chairs, council secretaries, appointed administrations and Prime Minister are not additional popular executive offices. Starostas are council-approved under current Art. 54-1; separately elected historical starostas shown in the 2015 archive remain untranscribed history, not invented current offices. The 2010 book describes the older relative-majority head-election rule.",
+    "source_ids": [
+      "UA-W-legal_modes",
+      "UA-R-16a33fb51f5f3840",
+      "UA-W-2010_intro_results"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G08",
+    "title": "National historical completeness",
+    "finding": "Eight parliamentary cycles (1994–2019) and seven presidential cycles (1991–2019), represented by 13 presidential polling events, are retained. All retrieved presidential candidate tables for 1999 onward are transcribed; 1991 is winner-only, 1994 first round date-only and 1994 runoff relies on a public-library retrospective.",
+    "remaining_hold": "Earlier certified protocols remain a hold. 1994 parliamentary seats are a post-April 338-seat snapshot, not 450 elected seats or first-round-only seats. IPU round labeling conflicts with its narrative and is documented. 1998/2002/2012/2014 constituency results, later parliamentary by-elections and many older local returns remain untranscribed. 2006/2007 seat allocations are not inferred from votes.",
+    "source_ids": [
+      "UA-W-ipu1994_search",
+      "UA-W-national1998full",
+      "UA-W-parl2002full",
+      "UA-W-parl2006table",
+      "UA-W-parl_2007",
+      "UA-W-parl_2012",
+      "UA-W-parl_2014"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G09",
+    "title": "Current member roster versus original local results",
+    "finding": "43,351 local export rows identify 41,955 councillors and 1,396 heads. This is the 22 September 2026 surviving elected-person snapshot, with election process labels through 16 January 2022. It is not the original complete candidate, party or mandate vector.",
+    "remaining_hold": "23 head nodes have no named person. Their offices remain evidenced but no winner or zero total is invented. F58/F50 blanks remain null; no party total is reconstructed by adding individual votes. Appointment dates are not polling dates. Neither current membership counts nor source nulls establish statutory seat capacities.",
+    "source_ids": [
+      "UA-S-LOCAL-XML"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G10",
+    "title": "Malformed local XML date",
+    "finding": "The original has exactly one malformed DATE_OF_APPOINTMENT tag in Сергієнко Альона Анатоліївна, Старобільська міська рада, CVK 2096. Original bytes and hash are retained.",
+    "remaining_hold": "A separate parse view makes one structural replacement to an empty date element. The normalized date remains null. The source spelling of her nomination label is preserved. Tolerant parse recovery was rejected because it truncates the dataset.",
+    "source_ids": [
+      "UA-S-LOCAL-XML",
+      "UA-D-PARSE-VIEW"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G11",
+    "title": "Olyka and Slobozhanske status changes",
+    "finding": "The latest CVK XML omits two former settlement-council entries; its summary marks two councils liquidated. Olyka became a city under Rada resolution 4372-IX of 17 April 2025; municipal decision 45/3 of 30 April 2025 changes names. Slobozhanske, Chuhuiv raion, became a city under 4317-IX of 13 March 2025; city-council decision 3092-VIII of 24 July 2025 explicitly changes the founder name from settlement to city council.",
+    "remaining_hold": "Retain one office pair each, with name/status history, not four invented successor pairs. Slobozhanske now has a recovered eight-party original allocation (26 seats); the separate surviving-member section reports 25. These are different measures, not a fabricated missing seat. Slobozhanske in Dnipropetrovsk oblast is a different unit.",
+    "source_ids": [
+      "UA-R-4e34a6d71635f386",
+      "UA-R-a82d8577291d7b89",
+      "UA-W-mayorsVolyn",
+      "UA-W-mayorsKharkiv",
+      "UA-W-olykaCouncilResults",
+      "UA-W-slobozhanskeCouncilVerified",
+      "UA-W-bd_olyka2"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G12",
+    "title": "Name variants and territory matching",
+    "finding": "CVK codes are namespaced by election system; name alone is never an office identifier. Exact region/name joins are disambiguated using raion and centre category. Pivdennomiska in CVK is the Pivdenna territorial/council naming variant, supported by current government budget/tax evidence and the legal-entity continuity reference.",
+    "remaining_hold": "This crosswalk is a research link, not a boundary-change or successor assertion. Effective dates remain null unless individually established. Renames shown by current sources do not generate twin offices.",
+    "source_ids": [
+      "UA-W-pivdenna_council",
+      "UA-W-pivdenna_proof",
+      "UA-R-3d4b3aa941f3a894",
+      "UA-R-a9aa07cc19f4c923"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G13",
+    "title": "2019 parliamentary export format and components",
+    "finding": "The resource named od_result_xsd_24042026.zip contains XML results, not a ZIP or XSD: 22 national party rows and candidate returns for 199 contested single-member constituencies, with PR seat allocations totaling 225.",
+    "remaining_hold": "Original bytes retained under their source suffix. The separate registered-MP export is a 2026 roster; its 393 rows are not the 2019 seat total. Only the actual vote-return XML is transcribed. No zero results are created for unheld constituencies.",
+    "source_ids": [
+      "UA-R-543f9ab9b3d7f7fa",
+      "UA-W-parl_2019"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G14",
+    "title": "No European Parliament",
+    "finding": "Ukraine is outside the EU Member State office scope. EP offices = 0, EP events = 0 and EP result rows = 0.",
+    "remaining_hold": "Candidate status is a scope note only; it creates no elected EP office.",
+    "source_ids": [
+      "UA-W-current_eu"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G15",
+    "title": "Contract and application boundary",
+    "finding": "The inherited field contract has 20 tables and exactly 223 named columns. Every column has a research disposition in the field map.",
+    "remaining_hold": "Documentation sidecars are not importer payloads. No schema, importer, SQLite, VPS, UI, repository or publication changes. applied_changes=0. All Justin approvals remain false/unchecked.",
+    "source_ids": [],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G16",
+    "title": "Legal office versus active authority",
+    "finding": "Current means the evidence-supported elected-office register, including statutory continuity while elections are barred; it does not certify an active council, surviving incumbent or present territorial control.",
+    "remaining_hold": "Military/civil administrations and acting executives may exercise powers without creating popular offices. A locality-by-locality census of current delegation or suspension of powers is still required before operational publication. Donetsk/Luhansk regional offices and Crimea/Sevastopol are historical-evidence rows with current scope holds.",
+    "source_ids": [
+      "UA-S-LOCAL-XML",
+      "UA-R-6b6754c78b53b124"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G17",
+    "title": "Historic special territories",
+    "finding": "The CVK 2010 publication identifies Ukrainian regional/local elections, including the ARC representative body, oblast councils other than Ternopil in that cycle, and Sevastopol. Four historical-scope rows preserve the named Ukrainian institutions.",
+    "remaining_hold": "No 2010 result vectors are invented. historical_only is the pack evidence status and does not assert legal abolition. No occupying-power elections, president, parliament, city government or successor links enter this pack.",
+    "source_ids": [
+      "UA-W-2010_council_sizes",
+      "UA-W-2010_intro_results"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G18",
+    "title": "Legacy coverage and alert window",
+    "finding": "The inherited Europe_Moldova_to_End workbook has zero Ukraine office/event/result rows. This research restores coverage independently; the approximately 18-month window is only an upcoming/alert filter.",
+    "remaining_hold": "The legacy workbook is not a territorial authority. No current or historical office is excluded merely because its next ordinary cycle lies outside an alert window.",
+    "source_ids": [],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  },
+  {
+    "gap_id": "UA-BD-G19",
+    "title": "Repeats, replacement contests and unmatched rounds",
+    "finding": "Local source PROCESS labels distinguish ordinary, intermediate/by-election, extraordinary, repeat election and repeat voting. They remain separate office/date/type events.",
+    "remaining_hold": "Not every earlier failed poll, first round, losing candidate or vacated mandate is in the surviving-member export. No absent base event, annulment, parent-child proceeding or successor relation is guessed. These are explicit history gaps, not zero-vote events.",
+    "source_ids": [
+      "UA-S-LOCAL-XML"
+    ],
+    "status": "open_research_or_policy_gate",
+    "justin_approved": false,
+    "applied": false
+  }
+]

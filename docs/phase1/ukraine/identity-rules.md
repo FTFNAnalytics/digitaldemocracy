@@ -1,0 +1,18 @@
+# Identity and selection rules
+
+1. `country_scope=Ukraine` is the only jurisdiction register here. Occupying-power or parallel institutions have no office, event or result rows.
+2. National office IDs represent the independent Ukrainian institutions; no Soviet-era result is relabelled into these histories. The independence/1996 constitutional gates do not create duplicate national offices.
+3. A council and a directly elected head are separate offices. Council members are results within their council, not additional offices. Parliament is one unicameral legislature; its 199 single-member constituencies in the 2019 return are result components, not 199 extra offices.
+4. CVK2020 identifiers are namespaced as `UA-CVK2020-#####-C/H`. KATOTTG identifiers identify territory, not a vote, an office-holder or a successor. Similar names across regions, raions or locality types cannot be joined on name alone.
+5. All current CVK bodies have exact audited KATOTTG matches, using region, council name, raion and centre category where required. The Pivdennomiska/Pivdenna exception is explicit. The 15 nested district rows use the additional KATOTTG level and retain their city parent.
+6. Olyka and Slobozhanske (Chuhuiv) undergo same-territory status/name changes. There is one council and one head per unit, with old names retained. A CVK removed-roster flag is not treated as proof of legal abolition.
+7. The pre-2020 Vinnytsia raion has its own historical territorial ID. No predecessor/successor is populated for it or any other office. Same-name historical and current raions are not assumed territorially identical.
+8. ARC, Donetsk/Luhansk oblast and Sevastopol historical rows refer only to Ukrainian institutions. Their historical-only evidence status does not certify present operation or abolition. Current scope holds remain in the territorial audit.
+9. Only source-confirmed electoral process dates produce events. `DATE_OF_APPOINTMENT` does not become a poll date. Empty totals and untranscribed fields are null. A named elected person is a positive reported outcome, not evidence of a full original return.
+10. Presidential ordinary, runoff, annulled runoff and repeat runoff events are separate. November and December 2004 figures are never added. The annulled event cannot become an effective winner or legal mandate.
+11. Local `Повторні` (repeat elections) and `Повторне голосування` (repeat voting/runoff) are distinct types. Missing base contests or proceeding links are not created to fill a timeline. Parliamentary 1994 is a dated cycle aggregate covering its identified April rounds, not a single-round seat result.
+12. PR votes and seats are separate from single-member constituency votes. The 2019 PR vector is read once, from national district 0. Regional replications and the later MP roster are not additional national votes.
+13. Party/list labels are source labels; no international party-family mapping, party successor or membership inference is made. Source spelling and historical aliases are retained.
+14. Direct municipal head election is grounded in the local-government law and CVK rules. Council chairs, acting officials, military administrations, Prime Minister and current council-appointed starostas are excluded as separate popular offices.
+15. `current` is an evidence-supported legal-office inventory, not a present holder/control/operation certification. Wartime constraints and occupation do not create zero-result polls or emergency elected offices.
+16. Draft tiers are 1:1 with all office rows, structurally proposed and unapproved. No EP office, inferred term-expiry election date, merger edge or automatic alert-window exclusion is permitted.
