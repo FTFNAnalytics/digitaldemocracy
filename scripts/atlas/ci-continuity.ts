@@ -19,6 +19,7 @@ import { LINEAGE_ID as ARMENIA_LINEAGE } from "../../lib/atlas/armenia/identity"
 import { LINEAGE_ID as AUSTRIA_LINEAGE } from "../../lib/atlas/austria/identity";
 import { LINEAGE_ID as BELGIUM_LINEAGE } from "../../lib/atlas/belgium/identity";
 import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzegovina/identity";
+import { LINEAGE_ID as KOSOVO_LINEAGE } from "../../lib/atlas/kosovo/identity";
 import { LINEAGE_ID as BULGARIA_LINEAGE } from "../../lib/atlas/bulgaria/identity";
 import { LINEAGE_ID as CROATIA_LINEAGE } from "../../lib/atlas/croatia/identity";
 import { LINEAGE_ID as CZECHIA_LINEAGE } from "../../lib/atlas/czechia/identity";
@@ -104,6 +105,9 @@ function main() {
     }
     if (result.albania) {
       fail("ATLAS_IMPORT_SCOPE=all must not be the Albania path");
+    }
+    if (result.kosovo) {
+      fail("ATLAS_IMPORT_SCOPE=all must not be the Kosovo path");
     }
     if (result.andorra?.counts.current_offices !== 7) {
       fail(`Andorra offices ${String(result.andorra?.counts.current_offices)}`);
@@ -1051,6 +1055,9 @@ function main() {
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BOSNIA_LINEAGE]) !== 0) {
         fail("Bosnia must stay out of ATLAS_IMPORT_SCOPE=all");
+      }
+      if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [KOSOVO_LINEAGE]) !== 0) {
+        fail("Kosovo must stay out of ATLAS_IMPORT_SCOPE=all");
       }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BULGARIA_LINEAGE]) !== 530) {
         fail("Bulgaria office rows");

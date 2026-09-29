@@ -23,6 +23,7 @@
  * Ukraine is not part of `all`; use `ATLAS_IMPORT_SCOPE=ukraine`.
  * Uruguay is not part of `all`; use `ATLAS_IMPORT_SCOPE=uruguay`.
  * Georgia is not part of `all`; use `ATLAS_IMPORT_SCOPE=georgia`.
+ * Kosovo is not part of `all`; use `ATLAS_IMPORT_SCOPE=kosovo`.
  * Serbia is not part of `all`; use `ATLAS_IMPORT_SCOPE=serbia`.
  * Slovakia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovakia`.
  * Slovenia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovenia`.
@@ -1116,6 +1117,45 @@ function main() {
       console.log(`georgia_research_dates=${result.georgia.counts.research_dates}`);
       console.log(`georgia_applied_calendar_rows=${result.georgia.counts.applied_calendar_rows}`);
       console.log(`georgia_geographies=${result.georgia.counts.geographies}`);
+    }
+    if (result.kosovo) {
+      console.log("lineage=country-package-kosovo");
+      console.log(`kosovo_attempt_id=${result.kosovo.attemptId}`);
+      console.log(`kosovo_release_id=${result.kosovo.releaseId}`);
+      console.log(`kosovo_fingerprint_sha256=${result.kosovo.fingerprint}`);
+      console.log(`kosovo_reused_release=${result.kosovo.reusedRelease ? "yes" : "no"}`);
+      console.log(`kosovo_offices=${result.kosovo.counts.offices}`);
+      console.log(`kosovo_current=${result.kosovo.counts.current_offices}`);
+      console.log(`kosovo_historical=${result.kosovo.counts.historical_offices}`);
+      console.log(`kosovo_draft_tier_national=${result.kosovo.counts.draft_tier_national}`);
+      console.log(`kosovo_draft_tier_municipal=${result.kosovo.counts.draft_tier_municipal}`);
+      console.log(`kosovo_schema_national=${result.kosovo.counts.schema_national}`);
+      console.log(`kosovo_schema_regional=${result.kosovo.counts.schema_regional}`);
+      console.log(`kosovo_schema_municipal=${result.kosovo.counts.schema_municipal}`);
+      console.log(`kosovo_schema_other=${result.kosovo.counts.schema_other}`);
+      console.log(`kosovo_selected_histories=${result.kosovo.counts.selected_histories}`);
+      console.log(`kosovo_prospective_events=${result.kosovo.counts.prospective_events}`);
+      console.log(`kosovo_result_rows=${result.kosovo.counts.result_rows}`);
+      console.log(`kosovo_event_rows=${result.kosovo.counts.total_events}`);
+      console.log(`kosovo_sources=${result.kosovo.counts.sources}`);
+      console.log(`kosovo_unresolved=${result.kosovo.counts.unresolved_evidence}`);
+      console.log(`kosovo_open_holds=${result.kosovo.counts.named_open_holds}`);
+      console.log(`kosovo_approved=${result.kosovo.counts.approved_classifications}`);
+      console.log(`kosovo_needs_review=${result.kosovo.counts.needs_review_classifications}`);
+      console.log(`kosovo_current_direct_executives=${result.kosovo.counts.current_direct_executives}`);
+      console.log(`kosovo_historical_direct_executives=${result.kosovo.counts.historical_direct_executives}`);
+      console.log(`kosovo_current_mayors=${result.kosovo.counts.current_mayors}`);
+      console.log(`kosovo_current_municipal_assemblies=${result.kosovo.counts.current_municipal_assemblies}`);
+      console.log(`kosovo_assembly=${result.kosovo.counts.assembly_offices}`);
+      console.log(`kosovo_historical_assembly=${result.kosovo.counts.historical_assembly_offices}`);
+      console.log(`kosovo_ep_offices=${result.kosovo.counts.ep_offices}`);
+      console.log(`kosovo_serbia_scope_offices=${result.kosovo.counts.serbia_scope_offices}`);
+      console.log(`kosovo_popular_president_offices=${result.kosovo.counts.popular_president_offices}`);
+      console.log(`kosovo_popular_regional_offices=${result.kosovo.counts.popular_regional_offices}`);
+      console.log(`kosovo_explicit_predecessor_edges=${result.kosovo.counts.explicit_predecessor_edges}`);
+      console.log(`kosovo_research_dates=${result.kosovo.counts.research_dates}`);
+      console.log(`kosovo_applied_calendar_rows=${result.kosovo.counts.applied_calendar_rows}`);
+      console.log(`kosovo_geographies=${result.kosovo.counts.geographies}`);
     }
     if (result.serbia) {
       console.log("lineage=country-package-serbia");
