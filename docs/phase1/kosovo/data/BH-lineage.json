@@ -1,0 +1,15 @@
+{
+  "supersedes": "BB",
+  "source_zip": "Kosovo_Prompt_BB_2026-09-25.zip",
+  "sha256": "292a5fc94bb0f3e9537ffe8ca0e6fa666964ba6c615488a6ee23bd79f1aa45e5",
+  "unchanged_files": {
+    "data/office-register.jsonl": "bb9ec3de19b0df56103aab44149e01ad72f60685396380d4341e861095d74e27",
+    "data/events.jsonl": "b7c9ff1f7ff090f0f86dd85498a5f9f65456804a26847cc927846e76e2eaf8c4",
+    "data/results.jsonl": "f73f850bca66dd17b4518afed087d212b7bc5c3e87b23de3b3ba51c9b15a62c4",
+    "data/draft-tiers.jsonl": "11ee44a62e119525f33b8cbd7d448e9f0b04304a5109e682f2a814489db8cc25",
+    "contracts/columns.json": "8d785531d31da3123be64db2a3c3d79183e039ad4f5d99abc505374f17da51ae",
+    "reference/serbia-ax-scope-audit.json": "b537b1c80ff6c3bbaeb7073edb2c9412cc6649ee42e37afe2e89936876869c74"
+  },
+  "AX_verification": "Inherited dated audit of recovered AX artifact, not a claim about later repository state",
+  "applied_changes": 0
+}

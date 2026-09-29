@@ -1,0 +1,213 @@
+{
+  "pack": "Kosovo Prompt BH slim land",
+  "as_of": "2026-09-29",
+  "full_pack_sha256": "336cb6798d286ecf9264e5498f3026de80953c0041eda772867f9de8900c6738",
+  "file_count": 41,
+  "files": [
+    {
+      "path": "SLIM_LAND_NOTE.md",
+      "sha256": "69f95ba596c7b5aef090dfff82cb18aab43978b3ed159943472845c60cb43606",
+      "bytes": 699
+    },
+    {
+      "path": "docs/phase1/kosovo/JUSTIN_ACCEPTANCE.md",
+      "sha256": "9665d2f83a5d4b24fd3de5cdaefb2b86eac77612cd670666e4331e17909bff3a",
+      "bytes": 2353
+    },
+    {
+      "path": "docs/phase1/kosovo/JUSTIN_REPORT.md",
+      "sha256": "64bb3e477f9d417c78198390c43767ff37ecab25933709e13369b3c09324453b",
+      "bytes": 9882
+    },
+    {
+      "path": "docs/phase1/kosovo/Kosovo_Acceptance_Examples.md",
+      "sha256": "65f95a003379b1c44be507978a6a20385ddc5a80f0d0d9cce985bf0068a1afba",
+      "bytes": 5250
+    },
+    {
+      "path": "docs/phase1/kosovo/Kosovo_Coverage.md",
+      "sha256": "854a279a955ace8e70a3bfc1b432011eb4f62f54f76619f068ac4b16990acbfd",
+      "bytes": 2752
+    },
+    {
+      "path": "docs/phase1/kosovo/Kosovo_Field_Map.md",
+      "sha256": "75ea4c31cac4718d50e83525430bb12bfa1431114d17615b65245c2e7be4aaae",
+      "bytes": 19785
+    },
+    {
+      "path": "docs/phase1/kosovo/Kosovo_Identity_Rules.md",
+      "sha256": "de781c1534fc3a3cbaa4bdfa5fd627488a77df494683d47f16823c9829015a7e",
+      "bytes": 3067
+    },
+    {
+      "path": "docs/phase1/kosovo/Kosovo_Office_Register.md",
+      "sha256": "fb53b0291dc4910c38403e15829011d2622c233084f92f0db84ee33ae73f3c8b",
+      "bytes": 23313
+    },
+    {
+      "path": "docs/phase1/kosovo/Kosovo_Research_Gaps.md",
+      "sha256": "027c51f953d1c7c350b8deb06a92cfe12df286598f5398dc9ce34092358a49bf",
+      "bytes": 14090
+    },
+    {
+      "path": "docs/phase1/kosovo/Kosovo_Upcoming_Elections.md",
+      "sha256": "f3ea9375d0acfa36d8301978556d144dc2d4a6154402f441843e22e76e771502",
+      "bytes": 6956
+    },
+    {
+      "path": "docs/phase1/kosovo/Prompt_BB_Full_Register_Field_Map_and_CI.md",
+      "sha256": "170cc9bbf4843f2d298cc9ee6fcd84bd432e2a67bf4beef34d9cea179773e4fa",
+      "bytes": 794
+    },
+    {
+      "path": "docs/phase1/kosovo/README.md",
+      "sha256": "b70a6a5b4dab36af3dd655ef668de4456addb20d5c1d099a69c47c6a669a1776",
+      "bytes": 11631
+    },
+    {
+      "path": "docs/phase1/kosovo/SLIM_LAND_NOTE.md",
+      "sha256": "69f95ba596c7b5aef090dfff82cb18aab43978b3ed159943472845c60cb43606",
+      "bytes": 699
+    },
+    {
+      "path": "docs/phase1/kosovo/acceptance-examples.json",
+      "sha256": "64dd436ae0e512b18ba5e15b430d451bce419d2a5c1735b50c2be2105c2c0ed7",
+      "bytes": 7320
+    },
+    {
+      "path": "docs/phase1/kosovo/acceptance-examples.md",
+      "sha256": "65f95a003379b1c44be507978a6a20385ddc5a80f0d0d9cce985bf0068a1afba",
+      "bytes": 5250
+    },
+    {
+      "path": "docs/phase1/kosovo/contract/column-map.json",
+      "sha256": "3a6653ecd04fd645ad2bdd5e36058a875778e9a5d8875b1709963a5c8104e942",
+      "bytes": 70863
+    },
+    {
+      "path": "docs/phase1/kosovo/contract/columns.json",
+      "sha256": "8d785531d31da3123be64db2a3c3d79183e039ad4f5d99abc505374f17da51ae",
+      "bytes": 4905
+    },
+    {
+      "path": "docs/phase1/kosovo/contract/inheritance.json",
+      "sha256": "96a34ac35ba5b9b2d7806319758bb6c523d94e7cd8d7f65f4e8a999ad9baddbb",
+      "bytes": 274
+    },
+    {
+      "path": "docs/phase1/kosovo/contracts/column-map.json",
+      "sha256": "3a6653ecd04fd645ad2bdd5e36058a875778e9a5d8875b1709963a5c8104e942",
+      "bytes": 70863
+    },
+    {
+      "path": "docs/phase1/kosovo/contracts/columns.json",
+      "sha256": "8d785531d31da3123be64db2a3c3d79183e039ad4f5d99abc505374f17da51ae",
+      "bytes": 4905
+    },
+    {
+      "path": "docs/phase1/kosovo/contracts/inheritance.json",
+      "sha256": "96a34ac35ba5b9b2d7806319758bb6c523d94e7cd8d7f65f4e8a999ad9baddbb",
+      "bytes": 274
+    },
+    {
+      "path": "docs/phase1/kosovo/counts.json",
+      "sha256": "9ca00b3951dd063804c499c7e5464ac199a6e48b309637883ccf7d2120d7bb37",
+      "bytes": 1518
+    },
+    {
+      "path": "docs/phase1/kosovo/data/BH-lineage.json",
+      "sha256": "09be3193fa57e8df1291283a4f203a7b2e1ae87753cfa85b0f38259f1d9450be",
+      "bytes": 917
+    },
+    {
+      "path": "docs/phase1/kosovo/data/approval-state.json",
+      "sha256": "937c6c79dd97d7bd904abf368f322fc628b1c7f2d42ffc0aa2784508386773b9",
+      "bytes": 198
+    },
+    {
+      "path": "docs/phase1/kosovo/data/counts.json",
+      "sha256": "9ca00b3951dd063804c499c7e5464ac199a6e48b309637883ccf7d2120d7bb37",
+      "bytes": 1518
+    },
+    {
+      "path": "docs/phase1/kosovo/data/draft-tiers.jsonl",
+      "sha256": "11ee44a62e119525f33b8cbd7d448e9f0b04304a5109e682f2a814489db8cc25",
+      "bytes": 24647
+    },
+    {
+      "path": "docs/phase1/kosovo/data/holds.jsonl",
+      "sha256": "0eb68e67d0858f8d0b5ec4dd1edbf04de12ad411cf15f22bf073dd60f1885a42",
+      "bytes": 14528
+    },
+    {
+      "path": "docs/phase1/kosovo/data/identity-crosswalk.json",
+      "sha256": "dd30151aa932a7e63bc641d959e028b97fb4fed651fb095bd8fb2d1e876d2894",
+      "bytes": 8745
+    },
+    {
+      "path": "docs/phase1/kosovo/data/office-register.jsonl",
+      "sha256": "bb9ec3de19b0df56103aab44149e01ad72f60685396380d4341e861095d74e27",
+      "bytes": 107026
+    },
+    {
+      "path": "docs/phase1/kosovo/data/research-gaps.json",
+      "sha256": "72dafb69a947a07dfb805d0045eb7551c5bbad50fbb9b01cdd6f571fd90acd24",
+      "bytes": 16300
+    },
+    {
+      "path": "docs/phase1/kosovo/data/serbia-ax-scope-audit.json",
+      "sha256": "b537b1c80ff6c3bbaeb7073edb2c9412cc6649ee42e37afe2e89936876869c74",
+      "bytes": 5386
+    },
+    {
+      "path": "docs/phase1/kosovo/data/upcoming-calendar.jsonl",
+      "sha256": "0c838851448f58837a4b69997ea2257af7812b9f3e382d48741c79879e2d93be",
+      "bytes": 8198
+    },
+    {
+      "path": "docs/phase1/kosovo/field-map-223.json",
+      "sha256": "3a6653ecd04fd645ad2bdd5e36058a875778e9a5d8875b1709963a5c8104e942",
+      "bytes": 70863
+    },
+    {
+      "path": "docs/phase1/kosovo/field-map-223.md",
+      "sha256": "75ea4c31cac4718d50e83525430bb12bfa1431114d17615b65245c2e7be4aaae",
+      "bytes": 19785
+    },
+    {
+      "path": "docs/phase1/kosovo/history-coverage.md",
+      "sha256": "854a279a955ace8e70a3bfc1b432011eb4f62f54f76619f068ac4b16990acbfd",
+      "bytes": 2752
+    },
+    {
+      "path": "docs/phase1/kosovo/identity-rules.md",
+      "sha256": "de781c1534fc3a3cbaa4bdfa5fd627488a77df494683d47f16823c9829015a7e",
+      "bytes": 3067
+    },
+    {
+      "path": "docs/phase1/kosovo/metadata.json",
+      "sha256": "b1027bb5c84b556c21e50ca3d189ed9e1fab62053a45fdcea3dff8606c68c809",
+      "bytes": 1466
+    },
+    {
+      "path": "docs/phase1/kosovo/research-gaps.json",
+      "sha256": "72dafb69a947a07dfb805d0045eb7551c5bbad50fbb9b01cdd6f571fd90acd24",
+      "bytes": 16300
+    },
+    {
+      "path": "docs/phase1/kosovo/research-gaps.md",
+      "sha256": "027c51f953d1c7c350b8deb06a92cfe12df286598f5398dc9ce34092358a49bf",
+      "bytes": 14090
+    },
+    {
+      "path": "docs/phase1/kosovo/validation-report.json",
+      "sha256": "d48cb06e09b38fc76110edb43792c128850861ff9d67e92713f092616c444d2a",
+      "bytes": 1841
+    },
+    {
+      "path": "schemas/atlas/tiers/kosovo.json",
+      "sha256": "3ba7f40b73ca81ad2d155d5b03176ed99c3aa12d7e92ca6111985b647fed7504",
+      "bytes": 33894
+    }
+  ]
+}

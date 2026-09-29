@@ -1,0 +1,298 @@
+# Research gaps and gates
+
+All Justin approvals unchecked. Resolved exclusion rules remain listed to prevent invented offices.
+
+## XK-BB-G01 — Kosovo* scope and Serbia AX separation
+
+Status: **scope_rule_enforced**.
+
+Atlas Kosovo* jurisdiction scope only. No diplomatic conclusion, dual-state identity or Serbian parallel office. Srpska Lista is a party label inside Kosovo-administered contests, not an office or Serbia AX institution. BB Serbia-scope offices=0; recovered AX Kosovo-scope offices=0.
+
+Closure: Any future parallel structure needs an individual Kosovo-pack hold, not a copied Serbia municipality.
+
+Sources: law-boundaries, eu-2013-local, eu-kosovo-status.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G02 — President selection
+
+Status: **resolved_exclusion**.
+
+Constitution Article 86: President elected by Assembly secret ballot; two-thirds of all deputies in first two ballots, majority of all deputies in a third ballot between the top two. Popular President offices=0.
+
+Closure: Reopen only for a sourced legal change establishing popular election.
+
+Sources: constitution.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G03 — Mayor selection and rounds
+
+Status: **resolved_inclusion**.
+
+Law 03/L-040 Article 56 and Law 03/L-072 Article 9 establish direct mayor election. Article 9.5 uses more than 50 percent plus one vote; Article 9.6 provides a top-two runoff four weeks later. Include 38 current mayor offices. Historical 2007 direct contests are separately identified.
+
+Closure: No indirect executive row. Archive cycle Elected labels do not establish first-round victory.
+
+Sources: law-local-government, law-local-elections, osce-38261, osce-38327.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G04 — Founding institutions and 2008 transition
+
+Status: **identity_hold**.
+
+Thirty early municipal assemblies, thirty 2007 direct mayor contests and one provisional Assembly are historical-only. These 61 source-vintage rows are not 61 proven abolitions. No pre-1999 row; no silent binding to current constitutional offices. The 2008-06-15 constitutional transition is a gate, not a successor edge.
+
+Closure: Check founding regulations and office-specific continuity before any cross-vintage edge or legal start/end date.
+
+Sources: constitution, osce-local-2000, osce-nat-2001, osce-38263.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G05 — Municipal reforms and staggered establishment
+
+Status: **identity_hold**.
+
+Law 03/L-041 specifies continuation of 28 units except Mitrovica, Novo Brdo expansion and North/South Mitrovica organisation. Amendments 03/L-089 and 04/L-115 checked. This does not establish all office implementation dates. No guessed mergers or old-code/new-code identity.
+
+Closure: Municipality-level legal/CEC implementation chronology, including 2009–2013 phased establishment.
+
+Sources: law-boundaries, law-amend-2008, law-amend-2012, cec-2025-municipal-register.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G06 — 2013 Brussels-related and northern arrangements
+
+Status: **scope_and_history_hold**.
+
+EU report documents Kosovo-law elections across 38 municipalities. North Mitrovica interrupted 3 November poll and 17 November partial rerun remain separate; combined archive vectors are phase-held. A 2014 replacement followed the elected mayor’s failure to take the oath. No extra capital or cross-state office.
+
+Closure: Direct certificates and proceedings to bind numeric snapshots to the proper phases.
+
+Sources: eu-2013-local, law-boundaries.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G07 — Elected village and urban-quarter advisory councils
+
+Status: **open_scope_census**.
+
+MLGA Instruction 02/2019 establishes elected advisory councils with 5–9 members, sometimes covering several settlements. A full municipal-regulation/locality census was not recovered. Core national/municipal coverage is complete; nested elected-body coverage is not. English Article 3.1 says appointed where Albanian/Serbian and other provisions describe election.
+
+Closure: Obtain municipal formation regulations, locality groupings and election records; resolve Atlas scope per distinct advisory body and the translation discrepancy.
+
+Sources: law-local-boards, law-local-government.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G08 — Joint Mitrovica board, including 2026 act
+
+Status: **open_selection_text**.
+
+Law 03/L-041 Articles 7–8 and amendment 04/L-115 concern an intermunicipal board. Gazette indexes MAPL-01/2026-UA, published 29 April 2026; operative text was not recovered. No separate popular ballot established and no board office invented.
+
+Closure: Retrieve operative 2026 selection rules; distinguish institutional appointment/election from popular election.
+
+Sources: law-boundaries, law-amend-2012, law-joint-board-2026.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G09 — 2000 and 2007 certification
+
+Status: **certification_hold**.
+
+2000 table recommends certification in 27 municipalities but not Leposaviq, Zubin Potok or Zveçan. Missing vectors are not zero. 2007 Leposaviq, Shtërpcë, Zubin Potok and Zveçan require separate mandate/certification review despite published low/zero cells.
+
+Closure: Retrieve final CEC/SRSG certifications and body-constitution records; do not infer a winner from turnout.
+
+Sources: osce-local-2000, osce-38261, osce-38263, osce-38327.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G10 — 2009 local cycle and other replacement contests
+
+Status: **open_history**.
+
+ENEMO preliminary report documents 15 November and 13 December 2009. Full territory-vintage binding and final vectors remain held; current 38-unit map is not retrojected. Intervening special-election census, including 2010/2012/2016, remains incomplete.
+
+Closure: Recover complete CEC cycle/special-election registers and final returns.
+
+Sources: enemo-local-2009, eu-2013-local.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G11 — 2010 national denominator and 2011 repeats
+
+Status: **numeric_conflict_hold**.
+
+Preserved party votes sum to 698751; archive Valid.Total is 673884, difference 24867. Canonical valid_votes and shares are null. December 2010 and January 2011 poll/repeats are separate from the cycle aggregate. ENEMO gives 7 February 2011 certification but does not independently certify this archive vector.
+
+Closure: Direct certified ballot-category and party tables; reconcile denominator and mandate allocations.
+
+Sources: dplus-NationalAssembly-2010-National, enemo-nat-2010-real.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G12 — 2014 national competing snapshots
+
+Status: **numeric_conflict_hold**.
+
+EU versus Dplus votes differ: LDK 184596/184594, VV 99397/99398, NISMA 37681/37680. Canonical results use EU represented-list table; derivative all-list file stays in alternative-return-holds, not silently merged.
+
+Closure: Direct CEC certificate/corrigenda to reconcile and restore full vector.
+
+Sources: eu-nat-2014, dplus-NationalAssembly-2014-National.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G13 — Archive zero padding, aliases and Elected flags
+
+Status: **provenance_hold**.
+
+8651 zero party cells are omitted because local candidacy is not established. Candidate metadata joins explicit IDs; Elected can mean cycle winner. Serbian names for Mamushë and Hani i Elezit are swapped in archive config; not propagated. Archive IDs are not official ballot codes.
+
+Closure: CEC candidacy lists and municipal metadata; no automatic first-round winner, zero candidate or party-successor mapping.
+
+Sources: dplus-portal, dplus-app, law-boundaries.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G14 — Zveçan 2013 missing files and repeat scope
+
+Status: **open_history**.
+
+Both municipality-29 files return 404. Ordinary council/mayor events remain with no numeric results. EU report mentions a three-station repeat; exact date/body applicability is held rather than invented as two office-specific repeats.
+
+Closure: CEC Zveçan returns and repeat decision identifying date, bodies and stations.
+
+Sources: eu-2013-local.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G15 — Partesh, Istog and Dragash repeats
+
+Status: **phase_binding_hold**.
+
+Partesh 2013 runoff/15 December partial repeat remain separate. Partesh 2017 first round annulled and repeated 19 November; archive RunOff is not accepted as a legal runoff. Istog 19 November runoff annulled/repeated 17 December. Dragash 2021 postal revote is a subset. Ambiguous archived vectors are separate undated snapshots.
+
+Closure: Decisions and phase-specific certified vectors; no folder-name/date guess.
+
+Sources: eu-2013-local, eu-2017-local, cec-2017-mayor-calendar, eu-2021-local.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G16 — 2023 extraordinary polls and 2024 recall
+
+Status: **contested_local_scope_gate**.
+
+CEC identifies four mayoral and only two assembly elections on 23 April 2023. Four 21 April 2024 recalls failed; they are questions, not candidate elections. Boycott/contested context is retained. No parallel Serbian institutional rows.
+
+Closure: Direct final vectors; never convert turnout to yes/removal votes.
+
+Sources: cec-2023-northern-polls, cec-2024-northern-recall.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G17 — 2025 local numeric finality
+
+Status: **numeric_coverage_hold**.
+
+Kallxo 3 November announcement supplies 37 council seat vectors, omitting Gllogoc. CEC later certified 37 councils on 21 November and Istog on 4 December. Twenty first-round winners and 17 preliminary runoff party leaders are retained without invented votes. Final cycle certification does not upgrade earlier snapshots.
+
+Closure: Direct final files for 38 councils, 38 first-round mayor polls and 18 runoffs; reconcile changed seats and missing Gllogoc.
+
+Sources: kallxo-local-2025, rferl-local-2025, cec-2025-runoff-geography, cec-2025-local-certification, cec-2025-istog-closure.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G18 — 2026 national source conflicts
+
+Status: **numeric_conflict_hold**.
+
+PACE gives 7 June 2026 poll and 8 July certification. PDK share is 19.24 in table versus 19.44 in paragraph 46: canonical share null. December table header 2028 conflicts with independent CEC 28 December 2025 calendar. PACE February KDTP mandates conflict with EU annex, so February comparative column unused. Recent represented-list tables omit losing lists and most votes.
+
+Closure: Direct December/June certified all-list tables and corrigenda; no arithmetic patching.
+
+Sources: pace-2026-report, cec-2026-certification, cec-2025-december-calendar, eu-nat-2025-feb.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G19 — No EP or invented regional/executive tier
+
+Status: **resolved_exclusion**.
+
+Kosovo is not an EU Member State: EP=0. No popular President, PM, regional/prefecture assembly, party office, duplicate capital or second President.
+
+Closure: Reopen only for source-identified legal changes.
+
+Sources: eu-kosovo-status, constitution, law-local-government.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G20 — Alert horizon and future cycles
+
+Status: **scope_rule_enforced**.
+
+18-month window filters upcoming alerts only. All 77 current core offices remain. No exact 2029/2030 date is invented from term length; repeated early Assembly elections are not an ordinary-cycle schedule.
+
+Closure: Competent dated election announcement before populating next_polling_date.
+
+Sources: law-local-elections, constitution, cec-2026-certification.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G21 — Direct CEC access and archive provenance
+
+Status: **source_access_hold**.
+
+Direct CEC pages showed human verification. Indexed text, primary OSCE/observer documents and independent Democracy Plus preservation used; no challenge bypass. Indexed-only sources have null original-byte hashes and separate normalized-fact hashes. Derivative CEC-origin data is not labelled direct certified data.
+
+Closure: Authorized direct documents or user-supplied certified files before evidence promotion.
+
+Sources: dplus-LocalAssembly-2013-Party, cec-2025-local-calendar.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G22 — Blank cells, Other and malformed percentage
+
+Status: **numeric_semantics_hold**.
+
+Early blank seats remain null. Aggregate Other wedges are not parties. Fushë Kosovë 2007 SKMS token 0.00594 lacks percent sign and is retained raw with canonical share null. Printed national 2001 zero seats are source_zero.
+
+Closure: Original certificate/corrigendum before filling or rescaling any uncertain field.
+
+Sources: osce-local-2000, osce-local-2002, osce-38263, osce-38260, osce-nat-2004, osce-nat-2001.
+
+- [ ] Justin accepts disposition
+
+## XK-BB-G23 — Inherited 223-column contract
+
+Status: **implementation_hold**.
+
+All 223 columns across 20 inherited tables documented. Operational ingest/release/publication/party mapping fields remain unallocated. No importer, SQLite, VPS, UI or repo change. All Justin approvals false.
+
+Closure: Separate authorized implementation design after review; no action performed here.
+
+Sources: constitution.
+
+- [ ] Justin accepts disposition
+
+## BH calendar update
+
+{
+  "gap_id": "XK-BH-G24",
+  "title": "2026 indirect presidential selection and Assembly term anchor",
+  "status": "open_calendar_hold",
+  "detail": "14 September official statement says presidential issue unresolved; Presidency 24 September entries name Acting President. Current Assembly may elect President before next ordinary Assembly election. Exact future sitting, operative term-start day and any subsequent court-triggered election call not established. 2030 Assembly is full-term formula only.",
+  "source_ids": [
+    "bh-constitution",
+    "bh-government-september",
+    "bh-presidency-september",
+    "bh-general-art5"
+  ],
+  "closure_requirement": "Retrieve Assembly minutes, presidential-selection resolution and all subsequent applicable court orders/calls; do not invent a presidential popular date.",
+  "justin_approved": false
+}
+
+G20 is superseded by the first-class calendar: conditional 2030 Assembly, 2029 municipal cycle, no invented exact days. See Kosovo_Upcoming_Elections.md. Total research gates: 24.
