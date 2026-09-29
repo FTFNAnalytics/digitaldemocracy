@@ -1,0 +1,304 @@
+[
+  {
+    "calendar_id": "president2029",
+    "office_family_label": "President — first round",
+    "office_families": [
+      "president"
+    ],
+    "next_occurrence_year": 2029,
+    "date_formula": "Third Sunday of November 2029",
+    "exact_date": null,
+    "date_basis": "constitutional_formula",
+    "formal_call_status": "pending_or_not_verified",
+    "last_comparable_contest": "2025-11-16",
+    "source_urls": [
+      "https://www.bcn.cl/leychile/navegar?idNorma=242302",
+      "https://tribunalcalificador.cl/resultados_de_elecciones/"
+    ],
+    "notes": "Constitution arts 25–26. Four-year term begins 11 March 2026; no exact day represented as officially called.",
+    "condition": null,
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  },
+  {
+    "calendar_id": "president2029runoff",
+    "office_family_label": "President — conditional second round",
+    "office_families": [
+      "president"
+    ],
+    "next_occurrence_year": 2029,
+    "date_formula": "Fourth Sunday after the first round, in 2029",
+    "exact_date": null,
+    "date_basis": "constitutional_formula_conditional",
+    "formal_call_status": "pending_or_not_verified",
+    "last_comparable_contest": "2025-12-14",
+    "source_urls": [
+      "https://www.bcn.cl/leychile/navegar?idNorma=242302",
+      "https://tribunalcalificador.cl/resultados_de_elecciones/"
+    ],
+    "notes": "Article 26; two highest candidates.",
+    "condition": "More than two candidates and none exceeds half of valid votes",
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  },
+  {
+    "calendar_id": "deputies2029",
+    "office_family_label": "Cámara de Diputados",
+    "office_families": [
+      "deputies"
+    ],
+    "next_occurrence_year": 2029,
+    "date_formula": "Third Sunday of November 2029; full four-year renewal",
+    "exact_date": null,
+    "date_basis": "constitutional_formula",
+    "formal_call_status": "pending_or_not_verified",
+    "last_comparable_contest": "2025-11-16",
+    "source_urls": [
+      "https://www.bcn.cl/leychile/navegar?idNorma=242302",
+      "https://tribunalcalificador.cl/resultados_de_elecciones/"
+    ],
+    "notes": "155 current seats; arts 26,47,51; do not project old binomial districts.",
+    "condition": null,
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  },
+  {
+    "calendar_id": "senate2029",
+    "office_family_label": "Senado — next renewal cohort",
+    "office_families": [
+      "senate"
+    ],
+    "next_occurrence_year": 2029,
+    "date_formula": "Third Sunday of November 2029; 2021 cohort reaches its next ordinary election",
+    "exact_date": null,
+    "date_basis": "constitutional_formula",
+    "formal_call_status": "pending_or_not_verified",
+    "last_comparable_contest": "2021-11-21 (same cohort); 2025-11-16 (most recent Senate contest)",
+    "source_urls": [
+      "https://www.bcn.cl/leychile/navegar?idNorma=242302",
+      "https://tribunalcalificador.cl/resultados_de_elecciones/"
+    ],
+    "notes": "Eight-year terms, staggered every four years. Certified 2021 sheets cover 27 seats in nine constituencies; 2025 sheets cover 23 seats in seven. The 2025 cohort next renews in 2033 under the same November formula; not all 50 seats in 2029.",
+    "condition": null,
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  },
+  {
+    "calendar_id": "governor2028",
+    "office_family_label": "Gobernadores regionales",
+    "office_families": [
+      "governor"
+    ],
+    "next_occurrence_year": 2028,
+    "date_formula": "Last Sunday of October 2028, concurrently with municipal elections",
+    "exact_date": null,
+    "date_basis": "statutory_formula",
+    "formal_call_status": "pending_or_not_verified",
+    "last_comparable_contest": "2024-10-26–27",
+    "source_urls": [
+      "https://www.leychile.cl/leychile/Navegar/imprimir?idNorma=243771&idVersion=2026-02-16",
+      "https://www.bcn.cl/leychile/navegar?idNorma=251693&idParte=8402454&idVersion=2025-01-01",
+      "https://www.servel.cl/biblioteca-de-documentos/procesos-electorales/elecciones-2024/documentos-elecciones-2024/"
+    ],
+    "notes": "Law 19.175 art83 + Law18.695 art106. The two-day 2024 exception is not carried forward.",
+    "condition": null,
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  },
+  {
+    "calendar_id": "governor2028runoff",
+    "office_family_label": "Governors — conditional second round",
+    "office_families": [
+      "governor"
+    ],
+    "next_occurrence_year": 2028,
+    "date_formula": "Fourth Sunday after the first round, in 2028",
+    "exact_date": null,
+    "date_basis": "statutory_formula_conditional",
+    "formal_call_status": "pending_or_not_verified",
+    "last_comparable_contest": "2024-11-24",
+    "source_urls": [
+      "https://www.leychile.cl/leychile/Navegar/imprimir?idNorma=243771&idVersion=2026-02-16",
+      "https://www.bcn.cl/leychile/navegar?idNorma=242302",
+      "https://tribunalcalificador.cl/resultados_de_elecciones/"
+    ],
+    "notes": "Law19.175 art98bis; the 2024 second ballot covered 11 regions, not all 16.",
+    "condition": "More than two candidates and none reaches 40% of valid votes",
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  },
+  {
+    "calendar_id": "core2028",
+    "office_family_label": "Consejos regionales (CORE)",
+    "office_families": [
+      "core"
+    ],
+    "next_occurrence_year": 2028,
+    "date_formula": "Last Sunday of October 2028, concurrently with municipal elections",
+    "exact_date": null,
+    "date_basis": "statutory_formula",
+    "formal_call_status": "pending_or_not_verified",
+    "last_comparable_contest": "2024-10-26–27",
+    "source_urls": [
+      "https://www.leychile.cl/leychile/Navegar/imprimir?idNorma=243771&idVersion=2026-02-16",
+      "https://www.bcn.cl/leychile/navegar?idNorma=251693&idParte=8402454&idVersion=2025-01-01",
+      "https://www.servel.cl/biblioteca-de-documentos/procesos-electorales/elecciones-2024/documentos-elecciones-2024/"
+    ],
+    "notes": "Direct popular layer; 2021 CORE vote was in November, separately from May governors/municipalities.",
+    "condition": null,
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  },
+  {
+    "calendar_id": "mayor2028",
+    "office_family_label": "Alcaldes — 345 municipal administrations",
+    "office_families": [
+      "mayor"
+    ],
+    "next_occurrence_year": 2028,
+    "date_formula": "Last Sunday of October 2028",
+    "exact_date": null,
+    "date_basis": "statutory_formula",
+    "formal_call_status": "pending_or_not_verified",
+    "last_comparable_contest": "2024-10-26–27",
+    "source_urls": [
+      "https://www.bcn.cl/leychile/navegar?idNorma=251693&idParte=8402454&idVersion=2025-01-01",
+      "https://www.servel.cl/biblioteca-de-documentos/procesos-electorales/elecciones-2024/documentos-elecciones-2024/",
+      "https://www.bcn.cl/leychile/navegar?idNorma=242302"
+    ],
+    "notes": "Popular municipal ballot. No general mayoral runoff is invented; lawful tie or court-repeat paths require their own evidence.",
+    "condition": null,
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  },
+  {
+    "calendar_id": "council2028",
+    "office_family_label": "Concejales — 345 municipal councils",
+    "office_families": [
+      "council"
+    ],
+    "next_occurrence_year": 2028,
+    "date_formula": "Last Sunday of October 2028",
+    "exact_date": null,
+    "date_basis": "statutory_formula",
+    "formal_call_status": "pending_or_not_verified",
+    "last_comparable_contest": "2024-10-26–27",
+    "source_urls": [
+      "https://www.bcn.cl/leychile/navegar?idNorma=251693&idParte=8402454&idVersion=2025-01-01",
+      "https://www.servel.cl/biblioteca-de-documentos/procesos-electorales/elecciones-2024/documentos-elecciones-2024/",
+      "https://www.bcn.cl/leychile/navegar?idNorma=242302"
+    ],
+    "notes": "All 346 comunas covered; Cabo de Hornos–Antártica shares one administration under Law19726.",
+    "condition": null,
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  },
+  {
+    "calendar_id": "nationalprimaries2029",
+    "office_family_label": "Formal national / pact primaries — conditional documentary hold",
+    "office_families": [],
+    "next_occurrence_year": 2029,
+    "date_formula": "Twentieth Sunday before the presidential election in 2029",
+    "exact_date": null,
+    "date_basis": "statutory_formula_plus_policy_hold",
+    "formal_call_status": "pending_or_not_verified",
+    "last_comparable_contest": "Presidential primary: 2025-06-29",
+    "source_urls": [
+      "https://www.leychile.cl/navegar?idNorma=1107657&idParte=9831452",
+      "https://www.servel.cl/primarias2025-votoexterior/"
+    ],
+    "notes": "Peer Atlas treatment not established from supplied prompts; no primary office or accepted primary event minted. Parliamentary participation is conditional.",
+    "condition": "Qualifying parties or pacts participate under the primary law",
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  },
+  {
+    "calendar_id": "localprimaries2028",
+    "office_family_label": "Formal mayor / governor primaries — conditional documentary hold",
+    "office_families": [],
+    "next_occurrence_year": 2028,
+    "date_formula": "Twentieth Sunday before municipal elections in 2028",
+    "exact_date": null,
+    "date_basis": "statutory_formula_plus_policy_hold",
+    "formal_call_status": "pending_or_not_verified",
+    "last_comparable_contest": "2024-06-09",
+    "source_urls": [
+      "https://www.leychile.cl/navegar?idNorma=1107657&idParte=9831452",
+      "https://www.servel.cl/biblioteca-de-documentos/procesos-electorales/elecciones-2024/documentos-elecciones-2024/"
+    ],
+    "notes": "No primary contests for CORE or concejales invented; pact/territory roster pending.",
+    "condition": "Qualifying parties or pacts participate",
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  },
+  {
+    "calendar_id": "extraordinary",
+    "office_family_label": "Constitutional process / any new extraordinary elected body",
+    "office_families": [],
+    "next_occurrence_year": null,
+    "date_formula": "No next ordinary recurrence established; require a new legal act",
+    "exact_date": null,
+    "date_basis": "research_hold",
+    "formal_call_status": "not_called_or_not_applicable",
+    "last_comparable_contest": "Convention: 2021-05-15–16; Council: 2023-05-07",
+    "source_urls": [
+      "https://www.bcn.cl/leychile/navegar?idNorma=242302",
+      "https://www.servel.cl/biblioteca-de-documentos/procesos-electorales/eleccion-consejo-constitucional-2023/"
+    ],
+    "notes": "The two historic bodies are not successor chambers of Congress. Plebiscites are not offices.",
+    "condition": null,
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  },
+  {
+    "calendar_id": "presidentialvacancy",
+    "office_family_label": "Presidential vacancy / candidate-death contingency",
+    "office_families": [],
+    "next_occurrence_year": null,
+    "date_formula": "No triggered date. Article29: call within 10 days; popular vote 120 days after call (next Sunday if needed) when at least two years remain before next presidential election. Article26 candidate death: new call within 10 days, vote 90 days later or next Sunday.",
+    "exact_date": null,
+    "date_basis": "research_hold",
+    "formal_call_status": "not_called_or_not_applicable",
+    "last_comparable_contest": "2025 presidential ordinary rounds are orientation only; not evidence of this contingency",
+    "source_urls": [
+      "https://www.bcn.cl/leychile/navegar?idNorma=242302"
+    ],
+    "notes": "If less than two years remain, Congress selects a replacement; no new popular or vice-presidential office. Article28 absolute inability of president-elect is another 90-day path.",
+    "condition": null,
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  },
+  {
+    "calendar_id": "repeat",
+    "office_family_label": "Court annulment / repeat; purported snap or dissolved-Congress path",
+    "office_families": [],
+    "next_occurrence_year": null,
+    "date_formula": "No future repeat or snap date verified; require competent act and exact affected scope",
+    "exact_date": null,
+    "date_basis": "research_hold",
+    "formal_call_status": "not_called_or_not_applicable",
+    "last_comparable_contest": "San Ramón partial municipal repeat: 2021-07-11",
+    "source_urls": [
+      "https://www.bcn.cl/leychile/navegar?idNorma=242302",
+      "https://www.bcn.cl/leychile/navegar?idNorma=1162103"
+    ],
+    "notes": "No current general congressional dissolution/snap mechanism established. Article51 vacancies use replacement rules; never manufacture a national snap calendar. San Ramón original and repeat kept separate.",
+    "condition": null,
+    "country_surface_required": true,
+    "global_alert_window_changes_coverage": false,
+    "production_applied": false
+  }
+]

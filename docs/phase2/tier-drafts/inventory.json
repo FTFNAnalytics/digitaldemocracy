@@ -403,7 +403,6 @@
   "status_only_countries_without_tier_file": [
     "barbados",
     "bolivia",
-    "chile",
     "grenada",
     "honduras",
     "nicaragua",
@@ -432,6 +431,24 @@
         "local": 275
       },
       "note": "Prompt BF 2026-09-29. Unapproved draft tiers; justin_approved false. Not a continuity office shard. Slim land 0 events / 0 results / 0 sources. Holds remain open. No dummy continuity office."
+    },
+    {
+      "country_id": "chile",
+      "status": "researched_full_pack_accept_with_holds",
+      "prior_coverage_status": "screened_out",
+      "coverage_status_live_stub": "screened_out",
+      "docs": "docs/phase1/chile/",
+      "tier_file": "schemas/atlas/tiers/chile.json",
+      "current_offices": 725,
+      "historical_only_offices": 2,
+      "comunas": 346,
+      "municipal_administrations": 345,
+      "draft_tiers": {
+        "national_context": 5,
+        "regional": 32,
+        "municipal": 690
+      },
+      "note": "Prompt BJ 2026-09-29. Unapproved draft tiers; justin_approved false; applied false. Empty-stub filter rescinded in docs only. Live continuity stub stays screened_out with 0 offices. base.json.gz unchanged. Not a continuity office shard. Slim land 0 events / 0 results / 0 sources. Holds CL-BJ-G01–CL-BJ-G20 remain open. No dummy continuity office."
     }
   ]
 }
