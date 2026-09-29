@@ -290,6 +290,7 @@ describe("Albania jurisdiction pages", () => {
     expect(countryHtml).toContain("No election cycles");
     expect(countryHtml).toContain("AdministrativeArea");
     expect(countryHtml).not.toContain("containedInPlace");
+    expect(countryHtml).not.toContain("data-atlas-upcoming-elections");
     expect(countryHtml).not.toMatch(/prompt b|lineage|namespace/i);
 
     const filtered = markup(

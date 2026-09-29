@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
   experimental: { cpus: 2 },
   outputFileTracingIncludes: {
     "/electiondatabase/**/*": ["./data/research/**/*", "./data/countries/**/*"],
+    "/atlas/**/*": [
+      "./docs/phase1/uruguay/data/upcoming-calendar.jsonl",
+      "./docs/phase1/georgia/data/upcoming-calendar.jsonl",
+    ],
   },
   async headers() {
     return atlasGeoCacheHeaders();

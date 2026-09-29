@@ -8,6 +8,8 @@ import { MapSlot } from "./map-slot";
 import { PageHeader } from "./page-header";
 import { PlainTable } from "./plain-table";
 import type { Crumb, CycleChip, HeaderFact, JurisdictionChild, SeatRow } from "./types";
+import { UpcomingElectionsCallout } from "./upcoming-elections-callout";
+import type { UpcomingElectionsModel } from "@/lib/atlas/upcoming-elections";
 
 export function SeatsAtLevel({ seats, emptyTitle }: { seats: SeatRow[]; emptyTitle?: string }) {
   if (seats.length === 0) {
@@ -70,6 +72,7 @@ export function JurisdictionTemplate({
   level,
   facts,
   nextElection,
+  upcomingElections,
   places,
   seats,
   cycles,
@@ -83,6 +86,7 @@ export function JurisdictionTemplate({
   level?: string | null;
   facts?: HeaderFact[];
   nextElection?: { label: string } | null;
+  upcomingElections?: UpcomingElectionsModel | null;
   places: JurisdictionChild[];
   seats: SeatRow[];
   cycles: CycleChip[];
@@ -95,6 +99,7 @@ export function JurisdictionTemplate({
     <article>
       <Breadcrumb items={breadcrumb} />
       <PageHeader name={name} level={level} facts={facts} nextElection={nextElection} />
+      {upcomingElections ? <UpcomingElectionsCallout model={upcomingElections} /> : null}
       <section className="mb-10" aria-labelledby="atlas-children-heading">
         <h2 id="atlas-children-heading" className="mb-3 font-atlas-heading text-2xl text-atlas-ink">
           Places
