@@ -21,6 +21,7 @@
  * Montenegro is not part of `all`; use `ATLAS_IMPORT_SCOPE=montenegro`.
  * Moldova is not part of `all`; use `ATLAS_IMPORT_SCOPE=moldova`.
  * Ukraine is not part of `all`; use `ATLAS_IMPORT_SCOPE=ukraine`.
+ * Uruguay is not part of `all`; use `ATLAS_IMPORT_SCOPE=uruguay`.
  * Serbia is not part of `all`; use `ATLAS_IMPORT_SCOPE=serbia`.
  * Slovakia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovakia`.
  * Slovenia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovenia`.
@@ -1035,6 +1036,45 @@ function main() {
       console.log(`ukraine_explicit_predecessor_edges=${result.ukraine.counts.explicit_predecessor_edges}`);
       console.log(`ukraine_research_dates=${result.ukraine.counts.research_dates}`);
       console.log(`ukraine_geographies=${result.ukraine.counts.geographies}`);
+    }
+    if (result.uruguay) {
+      console.log("lineage=country-package-uruguay");
+      console.log(`uruguay_attempt_id=${result.uruguay.attemptId}`);
+      console.log(`uruguay_release_id=${result.uruguay.releaseId}`);
+      console.log(`uruguay_fingerprint_sha256=${result.uruguay.fingerprint}`);
+      console.log(`uruguay_reused_release=${result.uruguay.reusedRelease ? "yes" : "no"}`);
+      console.log(`uruguay_offices=${result.uruguay.counts.offices}`);
+      console.log(`uruguay_current=${result.uruguay.counts.current_offices}`);
+      console.log(`uruguay_historical=${result.uruguay.counts.historical_offices}`);
+      console.log(`uruguay_draft_tier_national=${result.uruguay.counts.draft_tier_national}`);
+      console.log(`uruguay_draft_tier_regional=${result.uruguay.counts.draft_tier_regional}`);
+      console.log(`uruguay_draft_tier_local=${result.uruguay.counts.draft_tier_local}`);
+      console.log(`uruguay_schema_national=${result.uruguay.counts.schema_national}`);
+      console.log(`uruguay_schema_regional=${result.uruguay.counts.schema_regional}`);
+      console.log(`uruguay_schema_municipal=${result.uruguay.counts.schema_municipal}`);
+      console.log(`uruguay_schema_other=${result.uruguay.counts.schema_other}`);
+      console.log(`uruguay_selected_histories=${result.uruguay.counts.selected_histories}`);
+      console.log(`uruguay_prospective_events=${result.uruguay.counts.prospective_events}`);
+      console.log(`uruguay_result_rows=${result.uruguay.counts.result_rows}`);
+      console.log(`uruguay_event_rows=${result.uruguay.counts.total_events}`);
+      console.log(`uruguay_sources=${result.uruguay.counts.sources}`);
+      console.log(`uruguay_unresolved=${result.uruguay.counts.unresolved_evidence}`);
+      console.log(`uruguay_open_holds=${result.uruguay.counts.named_open_holds}`);
+      console.log(`uruguay_documented_not_implemented=${result.uruguay.counts.documented_not_implemented_holds}`);
+      console.log(`uruguay_approved=${result.uruguay.counts.approved_classifications}`);
+      console.log(`uruguay_needs_review=${result.uruguay.counts.needs_review_classifications}`);
+      console.log(`uruguay_current_popular_executive_roles=${result.uruguay.counts.current_popular_executive_roles}`);
+      console.log(`uruguay_current_list_selected_alcaldes=${result.uruguay.counts.current_list_selected_alcaldes}`);
+      console.log(`uruguay_current_councils=${result.uruguay.counts.current_councils}`);
+      console.log(`uruguay_current_national_chambers=${result.uruguay.counts.current_national_chambers}`);
+      console.log(`uruguay_current_intendentes=${result.uruguay.counts.current_intendentes}`);
+      console.log(`uruguay_separate_executive_ballot_offices=${result.uruguay.counts.separate_executive_ballot_offices}`);
+      console.log(`uruguay_ep_offices=${result.uruguay.counts.ep_offices}`);
+      console.log(`uruguay_mercosur_offices=${result.uruguay.counts.mercosur_offices}`);
+      console.log(`uruguay_explicit_predecessor_edges=${result.uruguay.counts.explicit_predecessor_edges}`);
+      console.log(`uruguay_research_dates=${result.uruguay.counts.research_dates}`);
+      console.log(`uruguay_applied_calendar_rows=${result.uruguay.counts.applied_calendar_rows}`);
+      console.log(`uruguay_geographies=${result.uruguay.counts.geographies}`);
     }
     if (result.serbia) {
       console.log("lineage=country-package-serbia");
