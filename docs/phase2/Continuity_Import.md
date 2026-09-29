@@ -1,6 +1,6 @@
 # Continuity import — approved packs
 
-Justin authorized full proceed on 2026-09-16. `npm run import:atlas` loads **Albania**, **Andorra**, **Alderney**, **Armenia**, **Austria**, **Belgium**, **Bosnia and Herzegovina**, **Bulgaria**, **Netherlands**, **Switzerland**, **Denmark**, **Sweden**, **Finland**, **Norway**, **Ireland**, **Poland**, **Czechia**, **Croatia**, **Portugal**, **Spain**, **Estonia**, and **approved** LatAm/NZ packs into the Atlas SQLite master. **Latvia** (`ATLAS_IMPORT_SCOPE=latvia`), **Lithuania** (`ATLAS_IMPORT_SCOPE=lithuania`), **Hungary** (`ATLAS_IMPORT_SCOPE=hungary`), **Romania** (`ATLAS_IMPORT_SCOPE=romania`), **Greece** (`ATLAS_IMPORT_SCOPE=greece`), **Luxembourg** (`ATLAS_IMPORT_SCOPE=luxembourg`), **Malta** (`ATLAS_IMPORT_SCOPE=malta`), **Cyprus** (`ATLAS_IMPORT_SCOPE=cyprus`), **France** (`ATLAS_IMPORT_SCOPE=france`), **Germany** (`ATLAS_IMPORT_SCOPE=germany`), the **United Kingdom** (`ATLAS_IMPORT_SCOPE=united_kingdom`), and **Italy** (`ATLAS_IMPORT_SCOPE=italy`) are scoped importers; the default `all` scope does not import them. It does **not** import the remaining residual-heavy draft packs, deploy to the VPS, or declare cutover.
+Justin authorized full proceed on 2026-09-16. `npm run import:atlas` loads **Albania**, **Andorra**, **Alderney**, **Armenia**, **Austria**, **Belgium**, **Bosnia and Herzegovina**, **Bulgaria**, **Netherlands**, **Switzerland**, **Denmark**, **Sweden**, **Finland**, **Norway**, **Ireland**, **Poland**, **Czechia**, **Croatia**, **Portugal**, **Spain**, **Estonia**, and **approved** LatAm/NZ packs into the Atlas SQLite master. **Latvia** (`ATLAS_IMPORT_SCOPE=latvia`), **Lithuania** (`ATLAS_IMPORT_SCOPE=lithuania`), **Hungary** (`ATLAS_IMPORT_SCOPE=hungary`), **Romania** (`ATLAS_IMPORT_SCOPE=romania`), **Greece** (`ATLAS_IMPORT_SCOPE=greece`), **Luxembourg** (`ATLAS_IMPORT_SCOPE=luxembourg`), **Malta** (`ATLAS_IMPORT_SCOPE=malta`), **Cyprus** (`ATLAS_IMPORT_SCOPE=cyprus`), **France** (`ATLAS_IMPORT_SCOPE=france`), **Germany** (`ATLAS_IMPORT_SCOPE=germany`), the **United Kingdom** (`ATLAS_IMPORT_SCOPE=united_kingdom`), **Italy** (`ATLAS_IMPORT_SCOPE=italy`), and **Ukraine** (`ATLAS_IMPORT_SCOPE=ukraine`) are scoped importers; the default `all` scope does not import them. It does **not** import the remaining residual-heavy draft packs, deploy to the VPS, or declare cutover.
 
 ## How to run
 
@@ -17,7 +17,7 @@ Scopes:
 
 | `ATLAS_IMPORT_SCOPE` | What loads |
 | --- | --- |
-| `all` (default) | Albania, Andorra, Alderney, Armenia, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Netherlands, Switzerland, then approved LatAm, then New Zealand, then Denmark, then Sweden, then Finland, then Norway, then Ireland, then Poland, then Czechia, then Croatia, then Portugal, then Spain, then Estonia. Does not load Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, the United Kingdom, or Italy |
+| `all` (default) | Albania, Andorra, Alderney, Armenia, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Netherlands, Switzerland, then approved LatAm, then New Zealand, then Denmark, then Sweden, then Finland, then Norway, then Ireland, then Poland, then Czechia, then Croatia, then Portugal, then Spain, then Estonia. Does not load Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, the United Kingdom, Italy, or Ukraine |
 | `albania` | Frozen Albania package only |
 | `andorra` | Frozen Andorra package only (7 municipal / 0 regional) |
 | `alderney` | Frozen Alderney package only (2 other / 0 regional; conditional 2026 dates) |
@@ -51,6 +51,7 @@ Scopes:
 | `netherlands` | Prompt T research pack only (432 current + 69 historical; 414 municipal / 12 regional / 3 national / 72 other) |
 | `norway` | Prompt AA research pack only (**389 current + 537 historical**; 876 municipal / 32 regional / 1 national / 17 other; named holds retained) |
 | `switzerland` | Prompt U research pack only (**2,805 current + 11 historical**; 2,402 municipal / 52 regional / 2 national / 360 other; 308 commune executives held) |
+| `ukraine` | Prompt BD slim pack only (**3,000 current + 5 historical-only**; draft tiers national 2 / regional 24 / autonomous 1 / raion 120 / local 2,843 / city-district 15; every classification stays `needs_review`; 0 events; 0 result rows; 0 sources). Not part of `all` |
 | `latam` | Approved Latin America packs + Mexico withhold-all-67 override |
 | `nz` | Approved New Zealand package |
 

@@ -25,6 +25,7 @@ import { importItaly, type ImportItalyResult } from "../italy/import";
 import { importIceland, type ImportIcelandResult } from "../iceland/import";
 import { importMontenegro, type ImportMontenegroResult } from "../montenegro/import";
 import { importMoldova, type ImportMoldovaResult } from "../moldova/import";
+import { importUkraine, type ImportUkraineResult } from "../ukraine/import";
 import { importSerbia, type ImportSerbiaResult } from "../serbia/import";
 import { importSlovakia, type ImportSlovakiaResult } from "../slovakia/import";
 import { importSlovenia, type ImportSloveniaResult } from "../slovenia/import";
@@ -70,6 +71,7 @@ export type ImportScope =
   | "iceland"
   | "montenegro"
   | "moldova"
+  | "ukraine"
   | "serbia"
   | "slovakia"
   | "slovenia"
@@ -117,6 +119,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     raw === "iceland" ||
     raw === "montenegro" ||
     raw === "moldova" ||
+    raw === "ukraine" ||
     raw === "serbia" ||
     raw === "slovakia" ||
     raw === "slovenia" ||
@@ -138,7 +141,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     return raw;
   }
   throw new Error(
-    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|croatia|czechia|denmark|estonia|latvia|lithuania|romania|greece|luxembourg|malta|cyprus|france|germany|united_kingdom|italy|iceland|montenegro|moldova|serbia|slovakia|slovenia|north_macedonia|hungary|finland|ireland|netherlands|norway|poland|portugal|spain|sweden|switzerland|latam|nz|all`,
+    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|croatia|czechia|denmark|estonia|latvia|lithuania|romania|greece|luxembourg|malta|cyprus|france|germany|united_kingdom|italy|iceland|montenegro|moldova|ukraine|serbia|slovakia|slovenia|north_macedonia|hungary|finland|ireland|netherlands|norway|poland|portugal|spain|sweden|switzerland|latam|nz|all`,
   );
 }
 
@@ -169,6 +172,7 @@ export type MultiLineageImportResult = {
   iceland?: ImportIcelandResult;
   montenegro?: ImportMontenegroResult;
   moldova?: ImportMoldovaResult;
+  ukraine?: ImportUkraineResult;
   serbia?: ImportSerbiaResult;
   slovakia?: ImportSlovakiaResult;
   slovenia?: ImportSloveniaResult;
@@ -244,7 +248,7 @@ export function importAtlasLineages(
   // Denmark through Estonia last on `all`: large result tables and Poland/Czechia/Croatia/Portugal/Spain
   // events would otherwise sit in the published DB that LatAm copies into staging.
   // Estonia has no result rows in the slim pack and follows Spain.
-  // Albania, Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, the United Kingdom, Italy, Iceland, and Bosnia and Herzegovina stay scoped. `all` does not publish those lineages.
+  // Albania, Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, the United Kingdom, Italy, Iceland, Montenegro, Moldova, Ukraine, Serbia, Slovakia, Slovenia, North Macedonia, and Bosnia and Herzegovina stay scoped. `all` does not publish those lineages.
   if (scope === "denmark" || scope === "all") {
     result.denmark = runImport("denmark", () => importDenmark(options));
   }
@@ -334,6 +338,10 @@ export function importAtlasLineages(
   // Moldova stays scoped. `all` does not publish this lineage.
   if (scopeImportsMoldova(scope)) {
     result.moldova = runImport("moldova", () => importMoldova(options));
+  }
+  // Ukraine stays scoped. `all` does not publish this lineage.
+  if (scopeImportsUkraine(scope)) {
+    result.ukraine = runImport("ukraine", () => importUkraine(options));
   }
   // Serbia stays scoped. `all` does not publish this lineage.
   if (scopeImportsSerbia(scope)) {
@@ -426,6 +434,11 @@ export function scopeImportsMontenegro(scope: ImportScope): boolean {
 /** True only for `ATLAS_IMPORT_SCOPE=moldova`. Never true for `all`. */
 export function scopeImportsMoldova(scope: ImportScope): boolean {
   return scope === "moldova";
+}
+
+/** True only for `ATLAS_IMPORT_SCOPE=ukraine`. Never true for `all`. */
+export function scopeImportsUkraine(scope: ImportScope): boolean {
+  return scope === "ukraine";
 }
 
 /** True only for `ATLAS_IMPORT_SCOPE=serbia`. Never true for `all`. */
