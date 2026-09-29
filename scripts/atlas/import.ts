@@ -20,6 +20,7 @@
  * Iceland is not part of `all`; use `ATLAS_IMPORT_SCOPE=iceland`.
  * Montenegro is not part of `all`; use `ATLAS_IMPORT_SCOPE=montenegro`.
  * Moldova is not part of `all`; use `ATLAS_IMPORT_SCOPE=moldova`.
+ * Ukraine is not part of `all`; use `ATLAS_IMPORT_SCOPE=ukraine`.
  * Serbia is not part of `all`; use `ATLAS_IMPORT_SCOPE=serbia`.
  * Slovakia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovakia`.
  * Slovenia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovenia`.
@@ -993,6 +994,47 @@ function main() {
       console.log(`moldova_explicit_predecessor_edges=${result.moldova.counts.explicit_predecessor_edges}`);
       console.log(`moldova_research_dates=${result.moldova.counts.research_dates}`);
       console.log(`moldova_geographies=${result.moldova.counts.geographies}`);
+    }
+    if (result.ukraine) {
+      console.log("lineage=country-package-ukraine");
+      console.log(`ukraine_attempt_id=${result.ukraine.attemptId}`);
+      console.log(`ukraine_release_id=${result.ukraine.releaseId}`);
+      console.log(`ukraine_fingerprint_sha256=${result.ukraine.fingerprint}`);
+      console.log(`ukraine_reused_release=${result.ukraine.reusedRelease ? "yes" : "no"}`);
+      console.log(`ukraine_offices=${result.ukraine.counts.offices}`);
+      console.log(`ukraine_current=${result.ukraine.counts.current_offices}`);
+      console.log(`ukraine_historical=${result.ukraine.counts.historical_offices}`);
+      console.log(`ukraine_draft_tier_national=${result.ukraine.counts.draft_tier_national}`);
+      console.log(`ukraine_draft_tier_regional=${result.ukraine.counts.draft_tier_regional}`);
+      console.log(`ukraine_draft_tier_autonomous=${result.ukraine.counts.draft_tier_autonomous}`);
+      console.log(`ukraine_draft_tier_raion=${result.ukraine.counts.draft_tier_raion}`);
+      console.log(`ukraine_draft_tier_local=${result.ukraine.counts.draft_tier_local}`);
+      console.log(`ukraine_draft_tier_city_district=${result.ukraine.counts.draft_tier_city_district}`);
+      console.log(`ukraine_schema_national=${result.ukraine.counts.schema_national}`);
+      console.log(`ukraine_schema_regional=${result.ukraine.counts.schema_regional}`);
+      console.log(`ukraine_schema_municipal=${result.ukraine.counts.schema_municipal}`);
+      console.log(`ukraine_schema_other=${result.ukraine.counts.schema_other}`);
+      console.log(`ukraine_selected_histories=${result.ukraine.counts.selected_histories}`);
+      console.log(`ukraine_prospective_events=${result.ukraine.counts.prospective_events}`);
+      console.log(`ukraine_result_rows=${result.ukraine.counts.result_rows}`);
+      console.log(`ukraine_event_rows=${result.ukraine.counts.total_events}`);
+      console.log(`ukraine_sources=${result.ukraine.counts.sources}`);
+      console.log(`ukraine_unresolved=${result.ukraine.counts.unresolved_evidence}`);
+      console.log(`ukraine_open_holds=${result.ukraine.counts.named_open_holds}`);
+      console.log(`ukraine_approved=${result.ukraine.counts.approved_classifications}`);
+      console.log(`ukraine_needs_review=${result.ukraine.counts.needs_review_classifications}`);
+      console.log(`ukraine_current_direct_executives=${result.ukraine.counts.current_direct_executives}`);
+      console.log(`ukraine_historical_direct_executives=${result.ukraine.counts.historical_direct_executives}`);
+      console.log(`ukraine_current_local_mayors=${result.ukraine.counts.current_local_mayors}`);
+      console.log(`ukraine_current_local_councils=${result.ukraine.counts.current_local_councils}`);
+      console.log(`ukraine_current_raion_councils=${result.ukraine.counts.current_raion_councils}`);
+      console.log(`ukraine_current_councils=${result.ukraine.counts.current_councils}`);
+      console.log(`ukraine_current_legislatures=${result.ukraine.counts.current_legislatures}`);
+      console.log(`ukraine_ep_offices=${result.ukraine.counts.ep_offices}`);
+      console.log(`ukraine_occupying_power_offices=${result.ukraine.counts.occupying_power_offices}`);
+      console.log(`ukraine_explicit_predecessor_edges=${result.ukraine.counts.explicit_predecessor_edges}`);
+      console.log(`ukraine_research_dates=${result.ukraine.counts.research_dates}`);
+      console.log(`ukraine_geographies=${result.ukraine.counts.geographies}`);
     }
     if (result.serbia) {
       console.log("lineage=country-package-serbia");
