@@ -16,7 +16,7 @@
       "manifest_sha256": "f8e51c71b1e76103a759e22e799245f85f081ec621c08c28557228dae7ba8fd3",
       "checksum_verified": true,
       "offices": 0,
-      "note": "base.json.gz holds screens/territories/queue metadata, not office shards. Prompt BF (2026-09-29) sets Uruguay coverageStatus to partial and rescinds screened_out. No Uruguay offices, events, or results were added. Prompt BJ (2026-09-29) rescinds the Chile empty-stub filter in docs only. base.json.gz is unchanged. Chile coverageStatus stays screened_out. Chile offices, events, and results in this continuity lineage stay 0."
+      "note": "base.json.gz holds screens/territories/queue metadata, not office shards. Prompt BF (2026-09-29) sets Uruguay coverageStatus to partial and rescinds screened_out. No Uruguay offices, events, or results were added. Prompt BJ (2026-09-29) leaves base.json.gz unchanged. Chile coverageStatus in this continuity lineage stays screened_out. Chile offices, events, and results in this continuity lineage stay 0. ATLAS_IMPORT_SCOPE=chile replaces that empty stub in SQLite with partial draft coverage and does not rewrite this file."
     },
     "totals": {
       "manifest_validatedCounts": {
