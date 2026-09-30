@@ -44,6 +44,11 @@ export const ADAPTER_VERSION = "atlas-bulgaria-field-map/1";
 export const METHOD_VERSION = "atlas-preserve-evidence/1";
 export { SCHEMA_VERSION, CANONICALIZATION, HASH_ALGORITHM };
 export const TIER_PATH = "schemas/atlas/tiers/bulgaria.json";
+/**
+ * Prompt P approved classifier. `ATLAS_IMPORT_SCOPE=all` loads these bytes.
+ * The schema path above is the Prompt BI draft and is not this classifier.
+ */
+export const APPROVED_TIER_PATH = "docs/phase1/bulgaria/baseline/Prompt_P/Accepted_Tiers.json";
 export const PACKAGE_PREFIX = "data/countries/bulgaria";
 export const UNPACKED_PREFIX = "data/countries/bulgaria/unpacked";
 export const REGISTER_RELATIVE = "data/countries/bulgaria/unpacked/tables/master/office-register.json";
@@ -52,6 +57,72 @@ export const UPCOMING_CALENDAR_RELATIVE = "docs/phase1/bulgaria/data/Upcoming_El
 export const REGISTER_SHA256 = "00ddcca3c48141302a7432f97effd017a009fee3d64fb7f9000a72ef79663559";
 export const TIER_SHA256 = "9a6718fe301f440511cc9e9f9b4139b3a1e0332ef2e3e6c9b3063f67f04652ab";
 export const DRAFT_TIER_SHA256 = "cff8fcabb12716230a314309162a40c72a3d7d13fe1aa4469cfb1655767c48f0";
+/** Checked-in Prompt BI draft at TIER_PATH. Not the `all` classifier. */
+export const BI_SCHEMA_TIER_SHA256 = "82af6120d5372e97c73fb84df294ed99d44c1ccc433a1feaf8637f92b00dcae3";
+export const BI_ADAPTER_VERSION = "atlas-bulgaria-prompt-bi/1";
+export const BI_DRAFT_OFFICE_IDS = [
+  "BG-EUROPEAN-PARLIAMENT",
+  "BG-GRAND-NATIONAL-ASSEMBLY-1990",
+  "BG-NATIONAL-ASSEMBLY",
+  "BG-PRESIDENT-JOINT-TICKET",
+] as const;
+export const BI_OFFICE_REGISTER_RELATIVE = "docs/phase1/bulgaria/Bulgaria_Office_Register.json";
+export const BI_COUNTS_RELATIVE = "docs/phase1/bulgaria/Bulgaria_Counts.json";
+export const BI_RESEARCH_GAPS_RELATIVE = "docs/phase1/bulgaria/Bulgaria_Research_Gaps.json";
+export const BI_ACCEPTANCE_RELATIVE = "docs/phase1/bulgaria/JUSTIN_ACCEPTANCE.md";
+export const BI_SLIM_NOTE_RELATIVE = "docs/phase1/bulgaria/SLIM_LAND_NOTE.md";
+export const BI_RECONCILIATION_RELATIVE = "docs/phase1/bulgaria/Bulgaria_Reconciliation.json";
+export const BI_SUCCESSOR_LINKS_RELATIVE = "docs/phase1/bulgaria/data/Successor_Links.json";
+export const BI_OMITTED_EVENT_PATHS = [
+  "docs/phase1/bulgaria/data/BI_New_Events.json",
+  "docs/phase1/bulgaria/data/BI_New_Results.json",
+  "docs/phase1/bulgaria/data/P_Inherited_Events.json",
+  "docs/phase1/bulgaria/data/P_Inherited_Results.json",
+  "docs/phase1/bulgaria/data/P_Retained_Observations.json",
+  "docs/phase1/bulgaria/sources",
+] as const;
+
+export const BI_OFFICE_REGISTER_SHA256 = "4f50225c919fb5895bb186eb00fd0ccae5f40f5801dba50fa8f4c1a1e5f25894";
+export const BI_COUNTS_SHA256 = "4627ae19f6beff367dff827bea0487dd99b984ecf86e3ef9c39a8602afed0f57";
+export const BI_RESEARCH_GAPS_SHA256 = "7b16164516a77ee7240a6ee2f0bd8f1daa9d8c749373bf6e4eacc9c8155622eb";
+export const BI_ACCEPTANCE_SHA256 = "0b49429d67e5d30f9c83b51839b498b564ff1ae1ee815497b10833501c59e4f8";
+export const BI_SLIM_NOTE_SHA256 = "ac85654305f141e7d60c65e217724be5ffa4159004976c19e66f3ea0777fb3b5";
+export const BI_RECONCILIATION_SHA256 = "376f155a1466fe6ecc028dbed923231603746b3eddb474b63a5b6369a97ba511";
+export const BI_SUCCESSOR_LINKS_SHA256 = "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570";
+export const BI_UPCOMING_CALENDAR_SHA256 = "f9cd33c444b9a0d452cb103cbe0246d44b8b29decceb7befd8bf30082d63d2d4";
+
+/**
+ * Prompt BI scoped publication. Documentary full-pack event and result totals
+ * are not counters here.
+ */
+export const BI_EXPECTED_COUNTS = {
+  register_rows: 3601,
+  offices: 534,
+  current_offices: 533,
+  historical_offices: 1,
+  inherited_offices: 530,
+  draft_offices: 4,
+  held_offices: 3067,
+  municipal_offices: 530,
+  national_offices: 3,
+  other_offices: 1,
+  regional_offices: 0,
+  mayor_offices: 265,
+  municipal_council_offices: 265,
+  approved_classifications: 530,
+  needs_review_classifications: 4,
+  geographies: 534,
+  selected_histories: 0,
+  prospective_events: 0,
+  total_events: 0,
+  result_rows: 0,
+  sources: 0,
+  named_open_holds: 16,
+  upcoming_calendar_rows: 11,
+  applied_calendar_rows: 0,
+  successor_links: 0,
+  retained_inputs: 10,
+} as const;
 export const DRAFT_FINGERPRINT = "51cb9381de3e680a9332fd7aaeff3035246f55f9512c723d874a25fb2447afba";
 export const DRAFT_RELEASE_ID = "country-package-bulgaria--sha256-51cb9381de3e680a9332fd7aaeff3035246f55f9512c723d874a25fb2447afba";
 export const REGIONAL_EMPTY_LABEL =

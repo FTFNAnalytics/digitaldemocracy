@@ -16,7 +16,7 @@ import {
   OFFICE_NAMESPACE,
   PACKAGE_PREFIX,
   SOURCE_NAMESPACE,
-  TIER_PATH,
+  BI_DRAFT_OFFICE_IDS,
   UNPACKED_PREFIX,
   canonical,
   catalogueSourceId,
@@ -331,6 +331,11 @@ export function projectBulgaria(inventory: BulgariaInventory): BulgariaProjectio
   if (approvedIds.has(GRADEC_OFFICE_ID)) {
     throw new Error("Градец village office must remain held");
   }
+  for (const officeId of BI_DRAFT_OFFICE_IDS) {
+    if (classById.has(officeId) || approvedIds.has(officeId)) {
+      throw new Error(`Prompt P classifier must not contain BI draft ${officeId}`);
+    }
+  }
 
   const geographies: SqlRow[] = [];
   const officeMeta: Array<{
@@ -460,7 +465,7 @@ export function projectBulgaria(inventory: BulgariaInventory): BulgariaProjectio
     throw new Error("Ablanitsa collision group was lost");
   }
 
-  const tierSha = inventory.byPath.get(TIER_PATH)!.sha256;
+  const tierSha = inventory.byPath.get(inventory.tierPath)!.sha256;
   const tiers: SqlRow[] = [];
   for (const office of publishedOffices) {
     const classification = classById.get(office.officeId)!;
@@ -479,12 +484,12 @@ export function projectBulgaria(inventory: BulgariaInventory): BulgariaProjectio
       rationale: classification.row.rationale,
       lineage_id: L,
       release_id: R,
-      classification_path: TIER_PATH,
+      classification_path: inventory.tierPath,
       classification_kind: "tier_classification",
       classification_sha256: tierSha,
       raw_json: rawEnvelope({
         origin: locator({
-          input_path: TIER_PATH,
+          input_path: inventory.tierPath,
           sha256: tierSha,
           json_pointer: `/classifications/${classification.index}`,
         }),

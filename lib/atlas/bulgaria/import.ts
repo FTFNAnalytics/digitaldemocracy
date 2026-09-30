@@ -8,8 +8,9 @@ import {
   EXPECTED_OFFICES,
   GRADEC_OFFICE_ID,
   HELD_EXAMPLE_OFFICE_IDS,
+  APPROVED_TIER_PATH,
+  BI_DRAFT_OFFICE_IDS,
   LINEAGE_ID as BULGARIA_LINEAGE,
-  TIER_PATH,
   TIER_SHA256,
 } from "./identity";
 import { failAttempt, reconcileStartedAttempts, startAttempt, succeedAttempt } from "../ledger";
@@ -64,7 +65,7 @@ export function importBulgaria(options: ImportBulgariaOptions): ImportBulgariaRe
   let lockFd: number | undefined;
   let inventoryJson: Record<string, unknown> = {
     lineage_id: BULGARIA_LINEAGE,
-    intended_tier_path: options.tierPath ?? TIER_PATH,
+    intended_tier_path: options.tierPath ?? APPROVED_TIER_PATH,
   };
 
   const finishFailure = (error: unknown): never => {
@@ -231,6 +232,10 @@ export function assertBulgariaFidelity(db: DatabaseSync, projection?: BulgariaPr
   }
   const gradecOffice = db.prepare("SELECT office_id FROM office WHERE office_id = ?").get(GRADEC_OFFICE_ID);
   if (gradecOffice) throw new Error("Градец village office must not publish");
+  for (const officeId of BI_DRAFT_OFFICE_IDS) {
+    const draftOffice = db.prepare("SELECT office_id FROM office WHERE office_id = ?").get(officeId);
+    if (draftOffice) throw new Error(`Prompt BI draft ${officeId} must not publish on the approved path`);
+  }
   const gradecEvents = countRows(db, "election_event", "office_id = ?", [GRADEC_OFFICE_ID]);
   if (gradecEvents !== 0) throw new Error("Градец must not mint typed events");
 
@@ -303,9 +308,15 @@ export function assertBulgariaFidelity(db: DatabaseSync, projection?: BulgariaPr
     }
     const tierInput = db
       .prepare("SELECT sha256, input_kind FROM retained_input WHERE lineage_id = ? AND input_path = ?")
-      .get(BULGARIA_LINEAGE, TIER_PATH);
+      .get(BULGARIA_LINEAGE, APPROVED_TIER_PATH);
     if (!tierInput || String(tierInput.sha256) !== TIER_SHA256 || String(tierInput.input_kind) !== "tier_classification") {
       throw new Error("Approved Bulgaria tier retained-input hash mismatch");
+    }
+    const biSchema = db
+      .prepare("SELECT 1 AS ok FROM retained_input WHERE lineage_id = ? AND input_path = 'schemas/atlas/tiers/bulgaria.json'")
+      .get(BULGARIA_LINEAGE);
+    if (biSchema) {
+      throw new Error("Approved Bulgaria import must not retain the Prompt BI schema tier");
     }
     if (String(hashes?.fingerprint_sha256) === CANDIDATE_FINGERPRINT && String(hashes?.release_id) !== CANDIDATE_RELEASE_ID) {
       throw new Error("Documented fingerprint must mint the candidate release ID");

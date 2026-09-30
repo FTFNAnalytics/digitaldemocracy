@@ -3,7 +3,8 @@
  * Import approved Atlas lineages into SQLite.
  *
  * Default scope is Andorra + Alderney + Armenia + Austria + Belgium +
- * Bulgaria + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria Prompt P + Netherlands + Switzerland + approved LatAm packs + New Zealand + Denmark + Sweden + Finland + Norway + Ireland + Poland + Czechia + Croatia + Portugal + Spain + Estonia (`ATLAS_IMPORT_SCOPE=all`).
+ * Bulgaria Prompt BI drafts are not part of `all`; use `ATLAS_IMPORT_SCOPE=bulgaria`.
  * Albania is not part of `all`; use `ATLAS_IMPORT_SCOPE=albania`.
  * Latvia is not part of `all`; use `ATLAS_IMPORT_SCOPE=latvia`.
  * Lithuania is not part of `all`; use `ATLAS_IMPORT_SCOPE=lithuania`.
@@ -204,12 +205,18 @@ function main() {
       console.log(`bulgaria_release_id=${result.bulgaria.releaseId}`);
       console.log(`bulgaria_fingerprint_sha256=${result.bulgaria.fingerprint}`);
       console.log(`bulgaria_reused_release=${result.bulgaria.reusedRelease ? "yes" : "no"}`);
-      console.log(`bulgaria_offices=${result.bulgaria.counts.current_offices}`);
+      console.log(`bulgaria_offices=${result.bulgaria.counts.offices ?? result.bulgaria.counts.current_offices}`);
+      console.log(`bulgaria_current=${result.bulgaria.counts.current_offices}`);
+      console.log(`bulgaria_historical=${result.bulgaria.counts.historical_offices ?? 0}`);
       console.log(`bulgaria_municipal=${result.bulgaria.counts.municipal_offices}`);
+      console.log(`bulgaria_inherited=${result.bulgaria.counts.inherited_offices ?? result.bulgaria.counts.current_offices}`);
+      console.log(`bulgaria_needs_review=${result.bulgaria.counts.needs_review_classifications ?? 0}`);
+      console.log(`bulgaria_approved=${result.bulgaria.counts.approved_classifications ?? result.bulgaria.counts.current_offices}`);
       console.log(`bulgaria_selected_histories=${result.bulgaria.counts.selected_histories}`);
       console.log(`bulgaria_prospective_events=${result.bulgaria.counts.prospective_events}`);
       console.log(`bulgaria_result_rows=${result.bulgaria.counts.result_rows}`);
-      console.log(`bulgaria_sources=${result.bulgaria.counts.sources}`);
+      console.log(`bulgaria_event_rows=${result.bulgaria.counts.total_events ?? result.bulgaria.counts.selected_histories}`);
+      console.log(`bulgaria_sources=${result.bulgaria.counts.sources ?? 0}`);
       console.log(`bulgaria_regional=${result.bulgaria.counts.regional_offices}`);
       console.log(`bulgaria_held_offices=${result.bulgaria.counts.held_offices}`);
     }

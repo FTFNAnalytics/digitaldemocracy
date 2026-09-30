@@ -12,6 +12,7 @@ import { sha256 as adapterSha256 } from "../../observatory/adapters/tar";
 import { zipTable, type TableRow, type WorkbookTable } from "../../observatory/adapters/tables";
 import {
   ADAPTER_VERSION,
+  APPROVED_TIER_PATH,
   EXPECTED_COUNTS,
   LINEAGE_ID,
   METHOD_VERSION,
@@ -166,7 +167,7 @@ function loadWorkbook(bytes: Buffer, relativePath: string, archiveEntry: string 
 }
 
 function inputKindFor(inputPath: string): HashInputDescriptor["input_kind"] {
-  if (inputPath === TIER_PATH) return "tier_classification";
+  if (inputPath === TIER_PATH || inputPath === APPROVED_TIER_PATH) return "tier_classification";
   if (inputPath.endsWith(".html") || inputPath.endsWith(".xlsx") || inputPath.includes("/payload/")) {
     return "artifact";
   }
@@ -331,7 +332,14 @@ export function scanBulgariaInventory(options: {
   const packagePrefix = options.packageDir
     ? path.relative(root, packageDir).replace(/\\/g, "/") || PACKAGE_PREFIX
     : PACKAGE_PREFIX;
-  const tierAbs = options.tierPath ?? path.join(root, TIER_PATH);
+  const tierInputPath = options.tierPath
+    ? options.tierPath.replace(/\\/g, "/")
+    : APPROVED_TIER_PATH;
+  const tierAbs = options.tierPath
+    ? path.isAbsolute(options.tierPath)
+      ? options.tierPath
+      : path.join(root, options.tierPath)
+    : path.join(root, APPROVED_TIER_PATH);
   const gitCommit = gitHead(root);
 
   const schemaAttempt = path.join(root, ATLAS_MIGRATIONS_DIR, ATLAS_ATTEMPT_LOG_FILENAME);
@@ -410,7 +418,7 @@ export function scanBulgariaInventory(options: {
       buildIntendedInventory({
         gitCommit,
         packageFiles: packageFilesMeta,
-        tier: { input_path: TIER_PATH, sha256: null, byte_count: null, status: null },
+        tier: { input_path: tierInputPath, sha256: null, byte_count: null, status: null },
       }),
     );
   }
@@ -425,7 +433,7 @@ export function scanBulgariaInventory(options: {
       buildIntendedInventory({
         gitCommit,
         packageFiles: packageFilesMeta,
-        tier: { input_path: TIER_PATH, sha256: null, byte_count: null, status: null },
+        tier: { input_path: tierInputPath, sha256: null, byte_count: null, status: null },
       }),
     );
   }
@@ -446,7 +454,7 @@ export function scanBulgariaInventory(options: {
           buildIntendedInventory({
             gitCommit,
             packageFiles: packageFilesMeta,
-            tier: { input_path: TIER_PATH, sha256: null, byte_count: null, status: null },
+            tier: { input_path: tierInputPath, sha256: null, byte_count: null, status: null },
           }),
         );
       }
@@ -469,11 +477,11 @@ export function scanBulgariaInventory(options: {
     byte_count: number | null;
     error?: string;
     status?: string | null;
-  } = { input_path: TIER_PATH, sha256: null, byte_count: null, status: null };
+  } = { input_path: tierInputPath, sha256: null, byte_count: null, status: null };
   let tierBytes: Buffer | undefined;
   if (!existsSync(tierAbs)) {
     tierMeta = {
-      input_path: TIER_PATH,
+      input_path: tierInputPath,
       sha256: null,
       byte_count: null,
       status: null,
@@ -482,7 +490,7 @@ export function scanBulgariaInventory(options: {
   } else {
     tierBytes = readFileSync(tierAbs);
     tierMeta = {
-      input_path: TIER_PATH,
+      input_path: tierInputPath,
       sha256: adapterSha256(tierBytes),
       byte_count: tierBytes.length,
       status: null,
@@ -498,7 +506,7 @@ export function scanBulgariaInventory(options: {
   if (tierMeta.error === "missing_tier_file") {
     throw new BulgariaPreflightError(
       "missing_tier",
-      `Approved Bulgaria tier file is missing at ${TIER_PATH}.`,
+      `Approved Bulgaria tier file is missing at ${tierInputPath}.`,
       intendedInventory,
     );
   }
@@ -567,7 +575,7 @@ export function scanBulgariaInventory(options: {
   }
 
   const tierInput: TrackedInput = {
-    input_path: TIER_PATH,
+    input_path: tierInputPath,
     input_kind: "tier_classification",
     sha256: tierMeta.sha256!,
     byte_count: tierMeta.byte_count!,
@@ -615,10 +623,10 @@ export function scanBulgariaInventory(options: {
     root,
     packageDir,
     packagePrefix,
-    tierPath: TIER_PATH,
+    tierPath: tierInputPath,
     gitCommit,
     tracked: allInputs,
-    byPath: new Map([...byPath, [TIER_PATH, tierInput]]),
+    byPath: new Map([...byPath, [tierInputPath, tierInput]]),
     fingerprint,
     releaseId,
     hashInputsJson: canonical(hashInputs),

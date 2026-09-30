@@ -1062,6 +1062,16 @@ function main() {
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [BULGARIA_LINEAGE]) !== 530) {
         fail("Bulgaria office rows");
       }
+      for (const draftId of [
+        "BG-NATIONAL-ASSEMBLY",
+        "BG-PRESIDENT-JOINT-TICKET",
+        "BG-EUROPEAN-PARLIAMENT",
+        "BG-GRAND-NATIONAL-ASSEMBLY-1990",
+      ]) {
+        if (count(db, "SELECT COUNT(*) AS n FROM office WHERE office_id = ?", [draftId]) !== 0) {
+          fail(`ATLAS_IMPORT_SCOPE=all imported Bulgaria BI draft ${draftId}`);
+        }
+      }
       if (count(db, "SELECT COUNT(*) AS n FROM office WHERE lineage_id = ?", [NETHERLANDS_LINEAGE]) !== 501) {
         fail("Netherlands office rows");
       }

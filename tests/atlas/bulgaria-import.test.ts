@@ -7,12 +7,13 @@ import { BulgariaPreflightError, scanBulgariaInventory } from "../../lib/atlas/b
 import {
   AVREN_MAYOR_2023_EVENT_ID,
   AVREN_MAYOR_2023_HISTORY_KEY,
+  APPROVED_TIER_PATH,
+  BI_DRAFT_OFFICE_IDS,
   DRAFT_TIER_SHA256,
   EXPECTED_COUNTS,
   GRADEC_OFFICE_ID,
   HELD_EXAMPLE_OFFICE_IDS,
   LINEAGE_ID,
-  TIER_PATH,
   TIER_SHA256,
   geographyIdFor,
 } from "../../lib/atlas/bulgaria/identity";
@@ -90,6 +91,9 @@ describe("Bulgaria Atlas importer", () => {
       for (const officeId of HELD_EXAMPLE_OFFICE_IDS) {
         expect(db.prepare("SELECT office_id FROM office WHERE office_id = ?").get(officeId)).toBeUndefined();
       }
+      for (const officeId of BI_DRAFT_OFFICE_IDS) {
+        expect(db.prepare("SELECT office_id FROM office WHERE office_id = ?").get(officeId)).toBeUndefined();
+      }
       expect(
         db.prepare("SELECT event_id, selected_history_role FROM election_event WHERE history_key = ?").get(
           AVREN_MAYOR_2023_HISTORY_KEY,
@@ -111,7 +115,7 @@ describe("Bulgaria Atlas importer", () => {
       expect(
         db
           .prepare("SELECT sha256 FROM retained_input WHERE lineage_id = ? AND input_path = ?")
-          .get(LINEAGE_ID, TIER_PATH),
+          .get(LINEAGE_ID, APPROVED_TIER_PATH),
       ).toMatchObject({ sha256: TIER_SHA256 });
     } finally {
       db.close();

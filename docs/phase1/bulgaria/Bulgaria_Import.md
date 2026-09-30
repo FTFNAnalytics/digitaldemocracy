@@ -18,26 +18,35 @@ export ATLAS_OPERATOR=genevieve
 # this host has never run migrate:atlas / import:atlas.
 # npm run migrate:atlas
 
-# Staging import of Bulgaria only. Other published lineages stay in place.
+# Staging import of the Prompt BI additive scope only. Other published lineages stay in place.
+# This adds 4 needs_review drafts and keeps the 530 Prompt P office IDs. It does not promote holds.
+# Slim land: 0 events, 0 results, 0 sources. It does not deploy this host.
 ATLAS_IMPORT_SCOPE=bulgaria npm run import:atlas
 ```
 
-Do **not** run `ATLAS_IMPORT_SCOPE=all` unless you intend a full re-import of Albania, Andorra, Alderney, Armenia, Bosnia and Herzegovina, LatAm, and New Zealand as well.
+`ATLAS_IMPORT_SCOPE=all` stays on the Prompt P approved classifier at `baseline/Prompt_P/Accepted_Tiers.json` (530 offices, with the Prompt P events and results). It does **not** import the four BI drafts and does **not** promote holds. Do **not** run `all` unless you intend a full re-import of the other approved lineages as well.
 
-Expected Bulgaria lines:
+Expected Bulgaria lines for `ATLAS_IMPORT_SCOPE=bulgaria`:
 
 ```
 lineage=country-package-bulgaria
-bulgaria_offices=530
+bulgaria_offices=534
+bulgaria_current=533
+bulgaria_historical=1
 bulgaria_municipal=530
-bulgaria_selected_histories=1590
+bulgaria_inherited=530
+bulgaria_needs_review=4
+bulgaria_approved=530
+bulgaria_selected_histories=0
 bulgaria_prospective_events=0
-bulgaria_result_rows=10343
+bulgaria_result_rows=0
+bulgaria_event_rows=0
+bulgaria_sources=0
 bulgaria_regional=0
 bulgaria_held_offices=3067
 ```
 
-A second run with unchanged package + approved `schemas/atlas/tiers/bulgaria.json` reuses the same release and writes a new attempt UUID.
+The 530 inherited office IDs stay the Prompt P municipality-wide IDs. The four drafts (`BG-NATIONAL-ASSEMBLY`, `BG-PRESIDENT-JOINT-TICKET`, `BG-EUROPEAN-PARLIAMENT`, `BG-GRAND-NATIONAL-ASSEMBLY-1990`) publish as `needs_review` with `justin_approved` and `applied` still false. The 3,067 hold rows, including Градец, stay unpublished. A second run with unchanged BI inputs reuses the same release and writes a new attempt UUID.
 
 Local / CI proof (never the VPS DB):
 
