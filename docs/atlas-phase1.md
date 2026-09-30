@@ -35,7 +35,7 @@ summarized at the top of [atlas-plan.md](atlas-plan.md).
 | Armenia Prompt L field map | [docs/phase1/armenia/](phase1/armenia/Prompt_L_Tiers_Field_Map_and_CI.md) — Europe #4 mapping **Done**; importer landed (PR #26) |
 | Austria Prompt N field map | [docs/phase1/austria/](phase1/austria/Prompt_N_Tiers_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=austria`; 2,038 offices) |
 | Bosnia Prompt O field map | [docs/phase1/bosnia-and-herzegovina/](phase1/bosnia-and-herzegovina/Prompt_O_Tiers_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=bosnia`) |
-| Bulgaria Prompt P field map | [docs/phase1/bulgaria/](phase1/bulgaria/Prompt_P_Tiers_Field_Map_and_CI.md) — mapping **Done**; importer loads **530** accepted municipal offices only (`ATLAS_IMPORT_SCOPE=bulgaria`; package PR #16 head `de354127`; 3,067 submunicipal held) |
+| Bulgaria Prompt P field map | [docs/phase1/bulgaria/](phase1/bulgaria/Prompt_P_Tiers_Field_Map_and_CI.md) — mapping **Done**; `ATLAS_IMPORT_SCOPE=all` loads **530** accepted municipal offices only (package PR #16 head `de354127`; 3,067 submunicipal held). `ATLAS_IMPORT_SCOPE=bulgaria` is the Prompt BI additive importer |
 | Belgium Prompt S2 field map | [docs/phase1/belgium-s2/](phase1/belgium-s2/Prompt_S2_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=belgium`; **1,179 current + 55 historical**) |
 | Netherlands Prompt T field map | [docs/phase1/netherlands/](phase1/netherlands/Prompt_T_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=netherlands`; **432 current + 69 historical**) |
 | Switzerland Prompt U field map | [docs/phase1/switzerland/](phase1/switzerland/Prompt_U_Full_Register_Field_Map_and_CI.md) — mapping **Done**; importer landed (`ATLAS_IMPORT_SCOPE=switzerland`; **2,805 current + 11 historical**; 308 commune-executive holds retained; full-register certification OPEN) |
@@ -131,13 +131,14 @@ Bulgaria Prompt P docs are in
 (mapping Done; importer landed). Justin accepted **530** municipality-wide
 municipal rows (265 Mayor + 265 Municipal council) on 2026-09-19 and **held
 3,067** district/village rows for submunicipal policy. Regional count is 0; do
-not invent a regional layer. `ATLAS_IMPORT_SCOPE=bulgaria` loads only the 530
-accepted rows unless policy changes. Градец / qualification-change notes remain
+not invent a regional layer. `ATLAS_IMPORT_SCOPE=all` loads only the 530
+accepted rows. `ATLAS_IMPORT_SCOPE=bulgaria` is the Prompt BI additive importer
+below. Градец / qualification-change notes remain
 open. The country package is the PR #16 tree (`de354127`). See
 [Bulgaria_Import.md](phase1/bulgaria/Bulgaria_Import.md).
 Bulgaria Prompt BI docs are in
 [docs/phase1/bulgaria/](phase1/bulgaria/JUSTIN_ACCEPTANCE.md)
-(mapping Done; docs and draft tiers only). Justin / Genevieve accepted with
+(mapping Done; additive importer is `ATLAS_IMPORT_SCOPE=bulgaria` only). Justin / Genevieve accepted with
 holds **G01–G16** on 2026-09-29 (America/Edmonton). BI supersedes Prompt P
 coverage and preserves the **530** municipality-wide identities (265 Mayor +
 265 Municipal council) and the **3,067** submunicipal holds, including
@@ -941,7 +942,7 @@ Deferred Prompt C rows above are **not** waived. They remain required before cla
 | Alderney Prompt K / Armenia Prompt L | Importers landed (PRs #24 / #26). Tiers approved. |
 | Austria Prompt N field map | **Documentation complete** in [docs/phase1/austria/](phase1/austria/README.md). Mapping Done; importer landed (`ATLAS_IMPORT_SCOPE=austria`; 2,038 offices). Package on main via PR #11. Approved `austria.json` is 2,034 municipal / 4 regional. |
 | Bosnia Prompt O field map | **Documentation complete** in [docs/phase1/bosnia-and-herzegovina/](phase1/bosnia-and-herzegovina/Prompt_O_README.md). Mapping Done; importer landed (`ATLAS_IMPORT_SCOPE=bosnia`). Package on main via PR #15. Approved 13 regional bytes are preserved at `Prompt_O_approved_tiers.json` (SHA `2ff154bf5c47e46c1a13385690466ee11e6b25f9ff5465384b5ce5570d429501`). The importer schema-path pin is the Prompt AW draft SHA `96c7372d9395b1a35caa8ccbe68cffa95a8324d2d05081b9aea29706651e45a9`; classifications stay the 13 regional Prompt O rows. |
-| Bulgaria Prompt P field map | **Importer landed** in [docs/phase1/bulgaria/](phase1/bulgaria/README.md). Mapping Done. `ATLAS_IMPORT_SCOPE=bulgaria` publishes 530 accepted municipal offices / 0 regional. Package PR #16 head `de354127`. 3,067 district/village rows stay held. |
+| Bulgaria Prompt P field map | **Importer landed** in [docs/phase1/bulgaria/](phase1/bulgaria/README.md). Mapping Done. `ATLAS_IMPORT_SCOPE=all` publishes 530 accepted municipal offices / 0 regional. Package PR #16 head `de354127`. 3,067 district/village rows stay held. `ATLAS_IMPORT_SCOPE=bulgaria` is the Prompt BI additive importer (530 inherited + 4 `needs_review` drafts). |
 | Belgium Prompt S2 field map | **Documentation complete** in [docs/phase1/belgium-s2/](phase1/belgium-s2/README.md). Mapping Done; importer landed (`ATLAS_IMPORT_SCOPE=belgium`). Research at `data/research/belgium-s2/`. `belgium.json` is 1,179 current + 55 historical accepted (1,185 municipal / 15 regional / 2 national / 32 other). |
 | Netherlands Prompt T field map | **Importer landed** in [docs/phase1/netherlands/](phase1/netherlands/README.md). Mapping Done. `ATLAS_IMPORT_SCOPE=netherlands` publishes 432 current + 69 historical offices. Hilversum/Wijdemeren and 147 focused-tier reviews stay open. |
 | Switzerland Prompt U field map | **Importer landed** in [docs/phase1/switzerland/](phase1/switzerland/README.md). Mapping Done. `ATLAS_IMPORT_SCOPE=switzerland` publishes 2,805 current + 11 historical accepted offices. Research at `data/research/switzerland/`. `switzerland.json` is 2,402 municipal / 52 regional / 2 national / 360 other. 308 commune-executive holds remain unpublished. Full-register certification OPEN. |

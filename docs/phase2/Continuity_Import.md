@@ -25,7 +25,7 @@ Scopes:
 | `austria` | Frozen Austria package only (2,034 municipal / 4 regional; 0 prospective dates; St. Georgen 2015 hold retained) |
 | `belgium` | Prompt S2 research pack only (1,179 current + 55 historical; 1,185 municipal / 15 regional / 2 national / 32 other) |
 | `bosnia` | Frozen Bosnia and Herzegovina package only (13 regional / 0 municipal; 10 approved + 3 needs_review entity holds) |
-| `bulgaria` | Frozen Bulgaria package only (**530** accepted municipal / 0 regional; 3,067 held district/village rows unpublished) |
+| `bulgaria` | Prompt BI additive import only (**530** inherited municipal + **4** `needs_review` drafts / 0 regional; 3,067 holds unpublished; 0 events, 0 results, 0 sources). Not `all` |
 | `denmark` | Prompt X research pack only (**106 current + 240 historical**; 324 municipal / 20 regional / 1 national / 1 other) |
 | `sweden` | Prompt Y research pack only (**313 current + 7 historical**; 292 municipal / 25 regional / 1 national / 2 other) |
 | `finland` | Prompt Z research pack only (**333 current + 170 historical**; 478 municipal / 22 regional / 2 national / 1 other) |
