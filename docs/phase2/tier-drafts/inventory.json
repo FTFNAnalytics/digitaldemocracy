@@ -448,7 +448,7 @@
         "regional": 32,
         "municipal": 690
       },
-      "note": "Prompt BJ 2026-09-29. Unapproved draft tiers; justin_approved false; applied false. Empty-stub filter rescinded in docs only. Live continuity stub stays screened_out with 0 offices. base.json.gz unchanged. Not a continuity office shard. Slim land 0 events / 0 results / 0 sources. Holds CL-BJ-G01–CL-BJ-G20 remain open. No dummy continuity office."
+      "note": "Prompt BJ 2026-09-29. Unapproved draft tiers; justin_approved false; applied false. ATLAS_IMPORT_SCOPE=chile replaces an empty screened_out stub with partial draft coverage. base.json.gz unchanged, so all still publishes the stub. Not a continuity office shard. Slim land 0 events / 0 results / 0 sources. Holds CL-BJ-G01–CL-BJ-G20 remain open. No dummy continuity office."
     }
   ]
 }

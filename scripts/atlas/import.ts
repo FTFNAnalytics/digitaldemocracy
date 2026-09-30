@@ -24,6 +24,7 @@
  * Uruguay is not part of `all`; use `ATLAS_IMPORT_SCOPE=uruguay`.
  * Georgia is not part of `all`; use `ATLAS_IMPORT_SCOPE=georgia`.
  * Kosovo is not part of `all`; use `ATLAS_IMPORT_SCOPE=kosovo`.
+ * Chile is not part of `all`; use `ATLAS_IMPORT_SCOPE=chile`.
  * Serbia is not part of `all`; use `ATLAS_IMPORT_SCOPE=serbia`.
  * Slovakia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovakia`.
  * Slovenia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovenia`.
@@ -1156,6 +1157,50 @@ function main() {
       console.log(`kosovo_research_dates=${result.kosovo.counts.research_dates}`);
       console.log(`kosovo_applied_calendar_rows=${result.kosovo.counts.applied_calendar_rows}`);
       console.log(`kosovo_geographies=${result.kosovo.counts.geographies}`);
+    }
+    if (result.chile) {
+      console.log("lineage=country-package-chile");
+      console.log(`chile_attempt_id=${result.chile.attemptId}`);
+      console.log(`chile_release_id=${result.chile.releaseId}`);
+      console.log(`chile_fingerprint_sha256=${result.chile.fingerprint}`);
+      console.log(`chile_reused_release=${result.chile.reusedRelease ? "yes" : "no"}`);
+      console.log(`chile_offices=${result.chile.counts.offices}`);
+      console.log(`chile_current=${result.chile.counts.current_offices}`);
+      console.log(`chile_historical=${result.chile.counts.historical_offices}`);
+      console.log(`chile_draft_tier_national_context=${result.chile.counts.draft_tier_national_context}`);
+      console.log(`chile_draft_tier_regional=${result.chile.counts.draft_tier_regional}`);
+      console.log(`chile_draft_tier_municipal=${result.chile.counts.draft_tier_municipal}`);
+      console.log(`chile_schema_national=${result.chile.counts.schema_national}`);
+      console.log(`chile_schema_regional=${result.chile.counts.schema_regional}`);
+      console.log(`chile_schema_municipal=${result.chile.counts.schema_municipal}`);
+      console.log(`chile_schema_other=${result.chile.counts.schema_other}`);
+      console.log(`chile_selected_histories=${result.chile.counts.selected_histories}`);
+      console.log(`chile_prospective_events=${result.chile.counts.prospective_events}`);
+      console.log(`chile_result_rows=${result.chile.counts.result_rows}`);
+      console.log(`chile_event_rows=${result.chile.counts.total_events}`);
+      console.log(`chile_sources=${result.chile.counts.sources}`);
+      console.log(`chile_unresolved=${result.chile.counts.unresolved_evidence}`);
+      console.log(`chile_open_holds=${result.chile.counts.named_open_holds}`);
+      console.log(`chile_approved=${result.chile.counts.approved_classifications}`);
+      console.log(`chile_needs_review=${result.chile.counts.needs_review_classifications}`);
+      console.log(`chile_current_direct_executives=${result.chile.counts.current_direct_executives}`);
+      console.log(`chile_current_councils=${result.chile.counts.current_councils}`);
+      console.log(`chile_current_national_chambers=${result.chile.counts.current_national_chambers}`);
+      console.log(`chile_current_mayors=${result.chile.counts.current_mayors}`);
+      console.log(`chile_current_municipal_councils=${result.chile.counts.current_municipal_councils}`);
+      console.log(`chile_current_governors=${result.chile.counts.current_governors}`);
+      console.log(`chile_current_core=${result.chile.counts.current_core}`);
+      console.log(`chile_ep_offices=${result.chile.counts.ep_offices}`);
+      console.log(`chile_provincial_elected_offices=${result.chile.counts.provincial_elected_offices}`);
+      console.log(`chile_mercosur_offices=${result.chile.counts.mercosur_offices}`);
+      console.log(`chile_andean_offices=${result.chile.counts.andean_offices}`);
+      console.log(`chile_appointed_intendente_offices=${result.chile.counts.appointed_intendente_offices}`);
+      console.log(`chile_comunas=${result.chile.counts.comunas}`);
+      console.log(`chile_municipal_administrations=${result.chile.counts.municipal_administrations}`);
+      console.log(`chile_explicit_predecessor_edges=${result.chile.counts.explicit_predecessor_edges}`);
+      console.log(`chile_research_dates=${result.chile.counts.research_dates}`);
+      console.log(`chile_applied_calendar_rows=${result.chile.counts.applied_calendar_rows}`);
+      console.log(`chile_geographies=${result.chile.counts.geographies}`);
     }
     if (result.serbia) {
       console.log("lineage=country-package-serbia");
