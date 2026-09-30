@@ -17,6 +17,7 @@ import { UPCOMING_CALENDAR_RELATIVE as URUGUAY_CALENDAR } from "../../lib/atlas/
 import { migrateMasterDatabase } from "../../lib/atlas/apply-migrations";
 import { openAtlasDatabase } from "../../lib/atlas/sqlite";
 import {
+  CHILE_UPCOMING_CALENDAR_RELATIVE,
   projectUpcomingCalendar,
   upcomingElectionsForCountry,
   upcomingElectionsForJurisdiction,
@@ -147,6 +148,8 @@ describe("documentary upcoming elections", () => {
     expect(upcomingElectionsForJurisdiction({ countryId: "uruguay", levelLabel: "municipality" }, repoRoot)).toBeNull();
     expect(upcomingElectionsForJurisdiction({ countryId: "georgia", levelLabel: "region" }, repoRoot)).toBeNull();
     expect(upcomingElectionsForJurisdiction({ countryId: "kosovo", levelLabel: "municipality" }, repoRoot)).toBeNull();
+    expect(upcomingElectionsForJurisdiction({ countryId: "chile", levelLabel: "municipality" }, repoRoot)).toBeNull();
+    expect(upcomingElectionsForJurisdiction({ countryId: "chile", levelLabel: "region" }, repoRoot)).toBeNull();
   });
 
   it("projects Kosovo ordinary families and research holds without exact days", () => {
@@ -465,6 +468,311 @@ describe("documentary upcoming elections", () => {
     );
     expect(html).not.toMatch(ISO_DAY);
     expect(html).not.toMatch(/village/i);
+  });
+
+  it("projects Chile families from pack formulas and keeps holds off exact days", () => {
+    const rows = calendarCards(CHILE_UPCOMING_CALENDAR_RELATIVE);
+    const model = upcomingElectionsForCountry("chile", repoRoot);
+    expect(model?.countryId).toBe("chile");
+    expect(rows).toHaveLength(14);
+    expect(model?.families.map((item) => item.id)).toEqual([
+      "president2029",
+      "president2029runoff",
+      "deputies2029",
+      "senate2029",
+      "governor2028",
+      "governor2028runoff",
+      "core2028",
+      "mayor2028",
+      "council2028",
+    ]);
+    expect(model?.holds.map((item) => item.id)).toEqual([
+      "nationalprimaries2029",
+      "localprimaries2028",
+      "extraordinary",
+      "presidentialvacancy",
+      "repeat",
+    ]);
+    expect(model?.intro).toContain("Chile");
+    expect(model?.intro).toContain("formal calls remain unverified");
+    expect(model?.intro).toContain("Policy and research rows stay holds");
+    expect(model?.intro).not.toContain("Official calls already recorded");
+
+    for (const row of rows) {
+      expect(row.country_surface_required).toBe(true);
+      expect(row).not.toHaveProperty("country_surface_prominent");
+      expect(Array.isArray(row.office_families)).toBe(true);
+      expect(row.exact_date).toBeNull();
+      expect(typeof row.date_formula).toBe("string");
+      expect(typeof row.date_basis).toBe("string");
+      expect(typeof row.formal_call_status).toBe("string");
+      expect(typeof row.last_comparable_contest).toBe("string");
+      expect(typeof row.notes).toBe("string");
+      expect(row.condition === null || typeof row.condition === "string").toBe(true);
+      expect(Array.isArray(row.source_urls)).toBe(true);
+      expect(row.global_alert_window_changes_coverage).toBe(false);
+      expect(row.production_applied).toBe(false);
+      expect(row.next_occurrence_year === null || Number.isInteger(row.next_occurrence_year)).toBe(true);
+      const comparable = typeof row.last_comparable_contest === "string" ? row.last_comparable_contest : "";
+      const basis = typeof row.date_basis === "string" ? row.date_basis : "";
+      if (basis.includes("research_hold") || basis.includes("policy_hold")) {
+        const hold = model?.holds.find((item) => item.id === row.calendar_id);
+        expect(hold?.label).toBe(row.office_family_label);
+        expect(hold?.note).toContain(basis.includes("policy_hold") ? "Policy hold" : "Research hold");
+        expect(hold?.note).toContain(String(row.date_formula));
+        if (comparable) expect(hold?.note).not.toContain(comparable);
+        expect(model?.families.find((item) => item.id === row.calendar_id)).toBeUndefined();
+        continue;
+      }
+      const family = model?.families.find((item) => item.id === row.calendar_id);
+      expect(family?.label).toBe(row.office_family_label);
+      expect(family?.when).toBe(row.date_formula);
+      expect(family?.when).toContain(String(row.next_occurrence_year));
+      expect(family?.when).not.toMatch(ISO_DAY);
+      if (comparable) expect(family?.when).not.toContain(comparable);
+      expect(family?.basis).toContain("pending or not verified");
+    }
+
+    expect(model?.families.find((item) => item.id === "president2029")).toMatchObject({
+      label: "President — first round",
+      kind: "ordinary",
+      when: "Third Sunday of November 2029",
+      condition: null,
+      basis: "Constitutional formula; pending or not verified",
+    });
+    expect(model?.families.find((item) => item.id === "president2029runoff")).toMatchObject({
+      label: "President — conditional second round",
+      kind: "conditional",
+      when: "Fourth Sunday after the first round, in 2029",
+      condition: "More than two candidates and none exceeds half of valid votes",
+    });
+    expect(model?.families.find((item) => item.id === "deputies2029")?.when).toBe(
+      "Third Sunday of November 2029; full four-year renewal",
+    );
+    expect(model?.families.find((item) => item.id === "senate2029")).toMatchObject({
+      label: "Senado — next renewal cohort",
+      kind: "ordinary",
+      when: "Third Sunday of November 2029; 2021 cohort reaches its next ordinary election",
+    });
+    expect(model?.families.find((item) => item.id === "senate2029")?.basis).toContain("not all 50 seats in 2029");
+    expect(model?.families.find((item) => item.id === "senate2029")?.basis).toContain("2033");
+    expect(model?.families.find((item) => item.id === "senate2029")?.when).not.toContain("2033");
+    expect(model?.families.find((item) => item.id === "governor2028")?.when).toBe(
+      "Last Sunday of October 2028, concurrently with municipal elections",
+    );
+    expect(model?.families.find((item) => item.id === "governor2028runoff")).toMatchObject({
+      kind: "conditional",
+      when: "Fourth Sunday after the first round, in 2028",
+      condition: "More than two candidates and none reaches 40% of valid votes",
+    });
+    expect(model?.families.find((item) => item.id === "core2028")?.label).toBe("Consejos regionales (CORE)");
+    expect(model?.families.find((item) => item.id === "mayor2028")?.when).toBe("Last Sunday of October 2028");
+    expect(model?.families.find((item) => item.id === "council2028")?.label).toBe("Concejales — 345 municipal councils");
+    expect(model?.families.some((item) => item.when.includes("2033"))).toBe(false);
+    expect(model?.families.some((item) => /European Parliament|\bEP\b/.test(item.label))).toBe(false);
+
+    expect(model?.holds.find((item) => item.id === "nationalprimaries2029")?.note).toContain(
+      "Twentieth Sunday before the presidential election in 2029",
+    );
+    expect(model?.holds.find((item) => item.id === "nationalprimaries2029")?.note).toContain(
+      "Qualifying parties or pacts participate under the primary law",
+    );
+    expect(model?.holds.find((item) => item.id === "localprimaries2028")?.note).toContain(
+      "Twentieth Sunday before municipal elections in 2028",
+    );
+    expect(model?.holds.find((item) => item.id === "extraordinary")?.note).toContain(
+      "No next ordinary recurrence established",
+    );
+    expect(model?.holds.find((item) => item.id === "presidentialvacancy")?.note).toContain("No triggered date");
+    expect(model?.holds.find((item) => item.id === "repeat")?.note).toContain("No future repeat or snap date");
+
+    const serialized = JSON.stringify(model);
+    expect(serialized).not.toMatch(ISO_DAY);
+    expect(serialized).not.toContain("http");
+    expect(serialized).not.toContain("11 March 2026");
+    expect(serialized).not.toContain("16 November 2025");
+    expect(serialized).not.toContain("2025-11-16");
+    expect(serialized).not.toContain("2025-12-14");
+    expect(serialized).not.toContain("2021-11-21");
+    expect(serialized).not.toContain("2024-10-26");
+    expect(serialized).not.toContain("2024-11-24");
+    expect(serialized).not.toContain("2025-06-29");
+    expect(serialized).not.toContain("2024-06-09");
+    expect(serialized).not.toContain("2021-05-15");
+    expect(serialized).not.toContain("2023-05-07");
+    expect(serialized).not.toContain("2021-07-11");
+    for (const row of rows) {
+      if (typeof row.last_comparable_contest === "string") {
+        expect(serialized).not.toContain(row.last_comparable_contest);
+      }
+    }
+
+    const formulaOnly = projectUpcomingCalendar("chile", [
+      {
+        calendar_id: "CL-TEST-FORMULA",
+        office_family_label: "Fixture family",
+        date_formula: "Third Sunday of November 2029",
+        next_occurrence_year: 2029,
+        exact_date: null,
+        date_basis: "constitutional_formula",
+        formal_call_status: "pending_or_not_verified",
+        country_surface_required: true,
+        country_surface_prominent: true,
+        global_alert_window_changes_coverage: false,
+        production_applied: false,
+      },
+    ]);
+    expect(formulaOnly?.families[0]?.when).toBe("Third Sunday of November 2029");
+    expect(JSON.stringify(formulaOnly)).not.toContain("exact_date");
+    expect(JSON.stringify(formulaOnly)).not.toMatch(ISO_DAY);
+
+    expect(
+      projectUpcomingCalendar("chile", [
+        {
+          calendar_id: "CL-HIDDEN",
+          office_family_label: "Hidden family",
+          date_formula: "Third Sunday of November 2029",
+          next_occurrence_year: 2029,
+          exact_date: null,
+          date_basis: "constitutional_formula",
+          formal_call_status: "pending_or_not_verified",
+          country_surface_required: false,
+          country_surface_prominent: true,
+        },
+      ]),
+    ).toBeNull();
+
+    const researchHoldWithYear = projectUpcomingCalendar("chile", [
+      {
+        calendar_id: "CL-TEST-RESEARCH",
+        office_family_label: "Research hold fixture",
+        date_formula: "No triggered date",
+        next_occurrence_year: 2030,
+        exact_date: null,
+        date_basis: "vacancy_research_hold",
+        formal_call_status: "not_called_or_not_applicable",
+        country_surface_required: true,
+      },
+    ]);
+    expect(researchHoldWithYear?.families).toEqual([]);
+    expect(researchHoldWithYear?.holds[0]?.note).toContain("Research hold");
+    expect(researchHoldWithYear?.holds[0]?.note).toContain("No triggered date");
+
+    const heldDespiteYear = projectUpcomingCalendar("chile", [
+      {
+        calendar_id: "CL-TEST-POLICY",
+        office_family_label: "Policy hold fixture",
+        date_formula: "Twentieth Sunday before the presidential election in 2029",
+        next_occurrence_year: 2029,
+        exact_date: null,
+        date_basis: "statutory_formula_plus_policy_hold",
+        formal_call_status: "pending_or_not_verified",
+        country_surface_required: true,
+      },
+    ]);
+    expect(heldDespiteYear?.families).toEqual([]);
+    expect(heldDespiteYear?.holds).toHaveLength(1);
+    expect(heldDespiteYear?.holds[0]?.note).toContain("Policy hold");
+    expect(JSON.stringify(heldDespiteYear)).not.toMatch(ISO_DAY);
+
+    expect(() =>
+      projectUpcomingCalendar("chile", [
+        {
+          calendar_id: "CL-TEST-ISO",
+          office_family_label: "Fixture family",
+          date_formula: "2029-11-18",
+          next_occurrence_year: 2029,
+          exact_date: null,
+          date_basis: "constitutional_formula",
+          formal_call_status: "pending_or_not_verified",
+          country_surface_required: true,
+        },
+      ]),
+    ).toThrow(/exact day/);
+
+    expect(() =>
+      projectUpcomingCalendar("chile", [
+        {
+          calendar_id: "CL-TEST-STATED",
+          office_family_label: "Fixture family",
+          date_formula: "16 November 2029",
+          next_occurrence_year: 2029,
+          exact_date: null,
+          date_basis: "constitutional_formula",
+          formal_call_status: "pending_or_not_verified",
+          country_surface_required: true,
+        },
+      ]),
+    ).toThrow(/exact day/);
+
+    expect(() =>
+      projectUpcomingCalendar("chile", [
+        {
+          calendar_id: "CL-TEST-EXACT",
+          office_family_label: "Fixture family",
+          date_formula: "Third Sunday of November 2029",
+          next_occurrence_year: 2029,
+          exact_date: "2029-11-18",
+          date_basis: "constitutional_formula",
+          formal_call_status: "pending_or_not_verified",
+          country_surface_required: true,
+        },
+      ]),
+    ).toThrow(/exact day/);
+
+    expect(() =>
+      projectUpcomingCalendar("chile", [
+        {
+          calendar_id: "CL-TEST-APPLIED",
+          office_family_label: "Fixture family",
+          date_formula: "Third Sunday of November 2029",
+          next_occurrence_year: 2029,
+          exact_date: null,
+          date_basis: "constitutional_formula",
+          formal_call_status: "pending_or_not_verified",
+          country_surface_required: true,
+          production_applied: true,
+        },
+      ]),
+    ).toThrow(/production applied/);
+
+    expect(() =>
+      projectUpcomingCalendar("chile", [
+        {
+          calendar_id: "CL-TEST-WINDOW",
+          office_family_label: "Fixture family",
+          date_formula: "Third Sunday of November 2029",
+          next_occurrence_year: 2029,
+          exact_date: null,
+          date_basis: "constitutional_formula",
+          formal_call_status: "pending_or_not_verified",
+          country_surface_required: true,
+          global_alert_window_changes_coverage: true,
+        },
+      ]),
+    ).toThrow(/alert-window coverage/);
+
+    expect(upcomingElectionsForJurisdiction({ countryId: "chile", levelLabel: "municipality" }, repoRoot)).toBeNull();
+    expect(upcomingElectionsForJurisdiction({ countryId: "chile", levelLabel: "region" }, repoRoot)).toBeNull();
+    expect(upcomingElectionsForJurisdiction({ countryId: "chile", levelLabel: "country" }, repoRoot)?.countryId).toBe(
+      "chile",
+    );
+
+    const html = markup(createElement(UpcomingElectionsCallout, { model: model! }));
+    expect(html).toContain('data-atlas-upcoming-elections="chile"');
+    expect(html).toContain("Third Sunday of November 2029");
+    expect(html).toContain("Last Sunday of October 2028");
+    expect(html).toContain("Conditional");
+    expect(html).toContain('data-atlas-upcoming-hold-id="nationalprimaries2029"');
+    expect(html).toContain('data-atlas-upcoming-hold-id="extraordinary"');
+    expect(html).toContain("Policy hold");
+    expect(html).toContain("Research hold");
+    expect(html.indexOf('data-atlas-upcoming-family="president2029"')).toBeLessThan(
+      html.indexOf('data-atlas-upcoming-hold-id="nationalprimaries2029"'),
+    );
+    expect(html).not.toMatch(ISO_DAY);
+    expect(html).not.toContain("11 March 2026");
+    expect(html).not.toContain("2025-11-16");
   });
 
   it("renders the callout above places and labels conditional and indirect rows", () => {
@@ -844,5 +1152,153 @@ describe("Bulgaria country page", () => {
       }),
     );
     expect(childHtml).not.toContain("data-atlas-upcoming-elections");
+  });
+});
+
+describe("Chile country page", () => {
+  const previousFixtures = process.env.OBSERVATORY_FIXTURES;
+  const previousSqlite = process.env.ATLAS_SQLITE_PATH;
+  let dir = "";
+  let sqlitePath = "";
+
+  beforeAll(() => {
+    delete process.env.OBSERVATORY_FIXTURES;
+    dir = mkdtempSync(path.join(os.tmpdir(), "atlas-upcoming-chile-"));
+    sqlitePath = path.join(dir, "atlas.sqlite");
+    process.env.ATLAS_SQLITE_PATH = sqlitePath;
+    // The landed BJ tier is still draft and the live continuity stub stays screened_out.
+    // This PR does not add a Chile importer, so the page test uses a screened_out jurisdiction.
+    migrateMasterDatabase(repoRoot, sqlitePath);
+    const db = openAtlasDatabase(sqlitePath);
+    try {
+      const lineage = "chile-upcoming-page-fixture";
+      const release = "chile-upcoming-page-fixture";
+      const fingerprint = "b".repeat(64);
+      db.exec("BEGIN");
+      db.prepare(
+        `INSERT INTO dataset_lineage (lineage_id, provenance_kind, description)
+         VALUES (?, 'country_package', 'Upcoming-elections page fixture')`,
+      ).run(lineage);
+      db.prepare(
+        `INSERT INTO dataset_release (
+           lineage_id, release_id, fingerprint_sha256, hash_inputs_json, adapter_version,
+           method_version, schema_version, validated_counts_json, research_coverage_complete
+         ) VALUES (?, ?, ?, '{}', 'test', 'test', 'test', '{}', 0)`,
+      ).run(lineage, release, fingerprint);
+      db.prepare(`INSERT INTO publication_release (lineage_id, release_id) VALUES (?, ?)`).run(lineage, release);
+      db.prepare(
+        `INSERT INTO country (
+           country_id, country_code, name, polity_kind, region_id, coverage_status, lineage_id, release_id
+         ) VALUES ('chile', 'CL', 'Chile', 'sovereign_country', 'americas', 'screened_out', ?, ?)`,
+      ).run(lineage, release);
+      db.prepare(
+        `INSERT INTO geography (country_id, geography_id, name, lineage_id, release_id)
+         VALUES ('chile', 'geo-cl-fixture', 'Providencia', ?, ?)`,
+      ).run(lineage, release);
+      db.prepare(
+        `INSERT INTO derived_jurisdiction (
+           jurisdiction_key, country_id, geography_id, parent_key, depth, level_label, name,
+           slug, slug_path, office_count, event_count, coverage_status, ambiguous
+         ) VALUES
+           ('cl-country', 'chile', NULL, NULL, 0, 'country', 'Chile', 'chile', 'chile', 0, 0, 'screened_out', 0),
+           ('cl-child', 'chile', 'geo-cl-fixture', 'cl-country', 1, 'municipality', 'Providencia', 'providencia', 'chile/providencia', 0, 0, 'screened_out', 0)`,
+      ).run();
+      db.exec("COMMIT");
+    } finally {
+      db.close();
+    }
+  });
+
+  afterAll(() => {
+    if (previousFixtures === undefined) delete process.env.OBSERVATORY_FIXTURES;
+    else process.env.OBSERVATORY_FIXTURES = previousFixtures;
+    if (previousSqlite === undefined) delete process.env.ATLAS_SQLITE_PATH;
+    else process.env.ATLAS_SQLITE_PATH = previousSqlite;
+    if (dir) rmSync(dir, { recursive: true, force: true });
+  });
+
+  it("shows Chile families and holds on the country page and not on a child place", async () => {
+    const html = markup(
+      await AtlasJurisdictionPage({
+        params: Promise.resolve({ country: "chile" }),
+        searchParams: Promise.resolve({}),
+      }),
+    );
+    const calloutStart = html.indexOf('data-atlas-upcoming-elections="chile"');
+    const placesAt = html.indexOf('id="atlas-children-heading"');
+    const callout = html.slice(calloutStart, placesAt);
+    expect(calloutStart).toBeGreaterThan(html.indexOf("Chile"));
+    expect(placesAt).toBeGreaterThan(calloutStart);
+    expect(callout).toContain("Upcoming elections");
+    expect(callout).toContain("Documentary contest families for Chile");
+    expect(callout).toContain("formal calls remain unverified");
+    expect(callout).toContain("President — first round");
+    expect(callout).toContain("Third Sunday of November 2029");
+    expect(callout).toContain("President — conditional second round");
+    expect(callout).toContain("Fourth Sunday after the first round, in 2029");
+    expect(callout).toContain("Cámara de Diputados");
+    expect(callout).toContain("Senado — next renewal cohort");
+    expect(callout).toContain("2021 cohort");
+    expect(callout).toContain("not all 50 seats in 2029");
+    expect(callout).toContain("Gobernadores regionales");
+    expect(callout).toContain("Last Sunday of October 2028");
+    expect(callout).toContain("Governors — conditional second round");
+    expect(callout).toContain("Consejos regionales (CORE)");
+    expect(callout).toContain("Alcaldes — 345 municipal administrations");
+    expect(callout).toContain("Concejales — 345 municipal councils");
+    expect(callout).toContain("Conditional");
+    expect(callout).toContain("Formal national / pact primaries — conditional documentary hold");
+    expect(callout).toContain("Formal mayor / governor primaries — conditional documentary hold");
+    expect(callout).toContain("Policy hold");
+    expect(callout).toContain("Constitutional process / any new extraordinary elected body");
+    expect(callout).toContain("Presidential vacancy / candidate-death contingency");
+    expect(callout).toContain("Court annulment / repeat; purported snap or dissolved-Congress path");
+    expect(callout).toContain("Research hold");
+    expect(callout).toContain('data-atlas-upcoming-family="president2029"');
+    expect(callout).toContain('data-atlas-upcoming-family="senate2029"');
+    expect(callout).toContain('data-atlas-upcoming-hold-id="nationalprimaries2029"');
+    expect(callout).toContain('data-atlas-upcoming-hold-id="localprimaries2028"');
+    expect(callout).toContain('data-atlas-upcoming-hold-id="extraordinary"');
+    expect(callout).toContain('data-atlas-upcoming-hold-id="presidentialvacancy"');
+    expect(callout).toContain('data-atlas-upcoming-hold-id="repeat"');
+    expect(callout.indexOf('data-atlas-upcoming-family="president2029"')).toBeLessThan(
+      callout.indexOf('data-atlas-upcoming-hold-id="nationalprimaries2029"'),
+    );
+    expect(callout).not.toMatch(ISO_DAY);
+    expect(callout).not.toContain("2025-11-16");
+    expect(callout).not.toContain("11 March 2026");
+    expect(callout).not.toContain("2021-07-11");
+    expect(html).not.toContain("Next election not supplied");
+
+    const db = openAtlasDatabase(sqlitePath, { readOnly: true });
+    let child = "";
+    try {
+      const events = db.prepare("SELECT COUNT(*) AS n FROM election_event").get() as { n: number };
+      const results = db.prepare("SELECT COUNT(*) AS n FROM result_row").get() as { n: number };
+      const sources = db.prepare("SELECT COUNT(*) AS n FROM source").get() as { n: number };
+      expect(Number(events.n)).toBe(0);
+      expect(Number(results.n)).toBe(0);
+      expect(Number(sources.n)).toBe(0);
+      const row = db
+        .prepare(
+          `SELECT slug_path FROM derived_jurisdiction
+           WHERE country_id = 'chile' AND level_label != 'country'
+           ORDER BY slug_path LIMIT 1`,
+        )
+        .get() as { slug_path?: string } | undefined;
+      expect(row?.slug_path).toBeTruthy();
+      child = String(row?.slug_path);
+    } finally {
+      db.close();
+    }
+    const parts = child.split("/");
+    const childHtml = markup(
+      await AtlasJurisdictionPage({
+        params: Promise.resolve({ country: parts[0]!, path: parts.slice(1) }),
+        searchParams: Promise.resolve({}),
+      }),
+    );
+    expect(childHtml).not.toContain("data-atlas-upcoming-elections");
+    expect(childHtml).toContain("Providencia");
   });
 });
