@@ -138,7 +138,7 @@ function isResearchHold(row: Record<string, unknown>, countryId: UpcomingElectio
   }
   if (countryId === "chile") {
     const basis = typeof row.date_basis === "string" ? row.date_basis : "";
-    return basis === "research_hold" || basis.includes("policy_hold") || row.next_occurrence_year == null;
+    return basis.includes("policy_hold") || basis.includes("research_hold");
   }
   return false;
 }
@@ -239,19 +239,24 @@ function whenOf(formula: string, year: number, id: string): string {
   return when;
 }
 
-function chileWhen(row: Record<string, unknown>, id: string): string {
+/** Chile display dates are the pack date_formula. exact_date is never copied or invented. */
+function assertChileDocumentaryCard(row: Record<string, unknown>, id: string): void {
   if (row.exact_date != null) {
-    throw new Error(`Upcoming calendar ${id} formula row records an exact day`);
+    throw new Error(`Upcoming calendar ${id} records an exact day`);
   }
+  if (row.production_applied === true) {
+    throw new Error(`Upcoming calendar ${id} is marked production applied`);
+  }
+  if (row.global_alert_window_changes_coverage === true) {
+    throw new Error(`Upcoming calendar ${id} changes alert-window coverage`);
+  }
+}
+
+function chileWhen(row: Record<string, unknown>, id: string): string {
   const formula = requireString(row, "date_formula", id);
   if (inventedDay(formula)) {
     throw new Error(`Upcoming calendar ${id} formula includes an exact day`);
   }
-  const year = yearOf(row, "chile");
-  if (year == null) {
-    throw new Error(`Upcoming calendar ${id} has no year`);
-  }
-  if (!formula.includes(String(year))) return whenOf(formula, year, id);
   return formula;
 }
 
@@ -309,6 +314,7 @@ export function projectUpcomingCalendar(countryId: string, rows: unknown[]): Upc
     }
     const row = rowUnknown as Record<string, unknown>;
     const id = requireString(row, "calendar_id", countryId);
+    if (countryId === "chile") assertChileDocumentaryCard(row, id);
     if (!prominent(row, countryId)) continue;
     const label = labelOf(row, countryId, id);
     if (isResearchHold(row, countryId)) {

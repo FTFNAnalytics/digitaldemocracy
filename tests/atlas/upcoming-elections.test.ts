@@ -500,10 +500,22 @@ describe("documentary upcoming elections", () => {
 
     for (const row of rows) {
       expect(row.country_surface_required).toBe(true);
+      expect(row).not.toHaveProperty("country_surface_prominent");
+      expect(Array.isArray(row.office_families)).toBe(true);
       expect(row.exact_date).toBeNull();
+      expect(typeof row.date_formula).toBe("string");
+      expect(typeof row.date_basis).toBe("string");
+      expect(typeof row.formal_call_status).toBe("string");
+      expect(typeof row.last_comparable_contest).toBe("string");
+      expect(typeof row.notes).toBe("string");
+      expect(row.condition === null || typeof row.condition === "string").toBe(true);
+      expect(Array.isArray(row.source_urls)).toBe(true);
+      expect(row.global_alert_window_changes_coverage).toBe(false);
+      expect(row.production_applied).toBe(false);
+      expect(row.next_occurrence_year === null || Number.isInteger(row.next_occurrence_year)).toBe(true);
       const comparable = typeof row.last_comparable_contest === "string" ? row.last_comparable_contest : "";
       const basis = typeof row.date_basis === "string" ? row.date_basis : "";
-      if (basis === "research_hold" || basis.includes("policy_hold")) {
+      if (basis.includes("research_hold") || basis.includes("policy_hold")) {
         const hold = model?.holds.find((item) => item.id === row.calendar_id);
         expect(hold?.label).toBe(row.office_family_label);
         expect(hold?.note).toContain(basis.includes("policy_hold") ? "Policy hold" : "Research hold");
@@ -595,20 +607,24 @@ describe("documentary upcoming elections", () => {
       }
     }
 
-    const appended = projectUpcomingCalendar("chile", [
+    const formulaOnly = projectUpcomingCalendar("chile", [
       {
-        calendar_id: "CL-TEST-YEAR",
+        calendar_id: "CL-TEST-FORMULA",
         office_family_label: "Fixture family",
-        date_formula: "Third Sunday of November",
+        date_formula: "Third Sunday of November 2029",
         next_occurrence_year: 2029,
         exact_date: null,
         date_basis: "constitutional_formula",
         formal_call_status: "pending_or_not_verified",
         country_surface_required: true,
+        country_surface_prominent: true,
+        global_alert_window_changes_coverage: false,
+        production_applied: false,
       },
     ]);
-    expect(appended?.families[0]?.when).toBe("Third Sunday of November, 2029");
-    expect(JSON.stringify(appended)).not.toMatch(ISO_DAY);
+    expect(formulaOnly?.families[0]?.when).toBe("Third Sunday of November 2029");
+    expect(JSON.stringify(formulaOnly)).not.toContain("exact_date");
+    expect(JSON.stringify(formulaOnly)).not.toMatch(ISO_DAY);
 
     expect(
       projectUpcomingCalendar("chile", [
@@ -621,9 +637,26 @@ describe("documentary upcoming elections", () => {
           date_basis: "constitutional_formula",
           formal_call_status: "pending_or_not_verified",
           country_surface_required: false,
+          country_surface_prominent: true,
         },
       ]),
     ).toBeNull();
+
+    const researchHoldWithYear = projectUpcomingCalendar("chile", [
+      {
+        calendar_id: "CL-TEST-RESEARCH",
+        office_family_label: "Research hold fixture",
+        date_formula: "No triggered date",
+        next_occurrence_year: 2030,
+        exact_date: null,
+        date_basis: "vacancy_research_hold",
+        formal_call_status: "not_called_or_not_applicable",
+        country_surface_required: true,
+      },
+    ]);
+    expect(researchHoldWithYear?.families).toEqual([]);
+    expect(researchHoldWithYear?.holds[0]?.note).toContain("Research hold");
+    expect(researchHoldWithYear?.holds[0]?.note).toContain("No triggered date");
 
     const heldDespiteYear = projectUpcomingCalendar("chile", [
       {
@@ -686,6 +719,38 @@ describe("documentary upcoming elections", () => {
         },
       ]),
     ).toThrow(/exact day/);
+
+    expect(() =>
+      projectUpcomingCalendar("chile", [
+        {
+          calendar_id: "CL-TEST-APPLIED",
+          office_family_label: "Fixture family",
+          date_formula: "Third Sunday of November 2029",
+          next_occurrence_year: 2029,
+          exact_date: null,
+          date_basis: "constitutional_formula",
+          formal_call_status: "pending_or_not_verified",
+          country_surface_required: true,
+          production_applied: true,
+        },
+      ]),
+    ).toThrow(/production applied/);
+
+    expect(() =>
+      projectUpcomingCalendar("chile", [
+        {
+          calendar_id: "CL-TEST-WINDOW",
+          office_family_label: "Fixture family",
+          date_formula: "Third Sunday of November 2029",
+          next_occurrence_year: 2029,
+          exact_date: null,
+          date_basis: "constitutional_formula",
+          formal_call_status: "pending_or_not_verified",
+          country_surface_required: true,
+          global_alert_window_changes_coverage: true,
+        },
+      ]),
+    ).toThrow(/alert-window coverage/);
 
     expect(upcomingElectionsForJurisdiction({ countryId: "chile", levelLabel: "municipality" }, repoRoot)).toBeNull();
     expect(upcomingElectionsForJurisdiction({ countryId: "chile", levelLabel: "region" }, repoRoot)).toBeNull();
