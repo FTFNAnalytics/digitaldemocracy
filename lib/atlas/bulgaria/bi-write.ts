@@ -167,11 +167,7 @@ function writeAdditive(db: DatabaseSync, projection: BulgariaProjection, attempt
       else updateMatching(db, "country", projection.country, "country_id");
 
       let insertedOffices = 0;
-      for (const row of projection.retainedInputs) insertIfMissing(db, "retained_input", row, "lineage_id = ? AND release_id = ? AND input_path = ?", [
-        row.lineage_id,
-        row.release_id,
-        row.input_path,
-      ]);
+      upsertRetainedInputs(db, projection.retainedInputs);
       for (const row of projection.geographies) {
         insertIfMissing(db, "geography", row, "country_id = ? AND geography_id = ?", [row.country_id, row.geography_id]);
       }
@@ -435,6 +431,121 @@ function updateMatching(db: DatabaseSync, table: string, row: SqlRow, key: strin
   const columns = Object.keys(row).filter((column) => column !== key);
   const sql = `UPDATE ${table} SET ${columns.map((column) => `${column} = ?`).join(", ")} WHERE ${key} = ?`;
   db.prepare(sql).run(...columns.map((column) => row[column] ?? null), row[key] ?? null);
+}
+
+/**
+ * Prompt P stored the approved classifier at `schemas/atlas/tiers/bulgaria.json`.
+ * That path is now the BI draft, with a different sha. `retained_input`'s primary
+ * key is (lineage, release, path), so insert-if-missing keeps the old sha and the
+ * new tier rows (and any retargeted release_id) no longer match. Move citations
+ * of the old composite onto the preserved classifier, then replace the schema-path
+ * row with the draft bytes.
+ */
+function upsertRetainedInputs(db: DatabaseSync, rows: SqlRow[]): void {
+  const find = db.prepare(
+    `SELECT input_kind, sha256 FROM retained_input WHERE lineage_id = ? AND release_id = ? AND input_path = ?`,
+  );
+  const pending: Array<{ row: SqlRow; inputKind: string; sha256: string }> = [];
+  for (const row of rows) {
+    const existing = find.get(row.lineage_id, row.release_id, row.input_path) as
+      | { input_kind?: string; sha256?: string }
+      | undefined;
+    if (!existing) {
+      insertRow(db, "retained_input", row);
+      continue;
+    }
+    const inputKind = String(existing.input_kind ?? "");
+    const sha256 = String(existing.sha256 ?? "");
+    if (inputKind === String(row.input_kind) && sha256 === String(row.sha256)) continue;
+    pending.push({ row, inputKind, sha256 });
+  }
+  for (const item of pending) {
+    rehomeTierCitations(db, rows, item.row, item.inputKind, item.sha256);
+    db.prepare(
+      `UPDATE retained_input
+       SET input_kind = ?, sha256 = ?, byte_count = ?, recovery_locator = ?, payload_json = ?
+       WHERE lineage_id = ? AND release_id = ? AND input_path = ?`,
+    ).run(
+      item.row.input_kind ?? null,
+      item.row.sha256 ?? null,
+      item.row.byte_count ?? null,
+      item.row.recovery_locator ?? null,
+      item.row.payload_json ?? null,
+      item.row.lineage_id ?? null,
+      item.row.release_id ?? null,
+      item.row.input_path ?? null,
+    );
+    note(
+      `retained_input ${String(item.row.input_path)} sha ${item.sha256} -> ${String(item.row.sha256)}`,
+    );
+  }
+}
+
+function rehomeTierCitations(
+  db: DatabaseSync,
+  projected: SqlRow[],
+  colliding: SqlRow,
+  oldKind: string,
+  oldSha: string,
+): void {
+  const lineageId = String(colliding.lineage_id);
+  const releaseId = String(colliding.release_id);
+  const oldPath = String(colliding.input_path);
+  const cited = db
+    .prepare(
+      `SELECT COUNT(*) AS n FROM office_tier_classification
+       WHERE lineage_id = ? AND release_id = ?
+         AND classification_path = ? AND classification_kind = ? AND classification_sha256 = ?`,
+    )
+    .get(lineageId, releaseId, oldPath, oldKind, oldSha) as { n?: number } | undefined;
+  if (Number(cited?.n ?? 0) === 0) return;
+  const home = projected.find(
+    (row) =>
+      String(row.sha256) === oldSha &&
+      String(row.input_kind) === "tier_classification" &&
+      String(row.input_path) !== oldPath,
+  );
+  if (!home) {
+    throw new Error(
+      `office_tier_classification still cites retained_input ${oldPath} ${oldKind} ${oldSha}, which this release replaces`,
+    );
+  }
+  const homeRow = db
+    .prepare(
+      `SELECT input_kind, sha256 FROM retained_input WHERE lineage_id = ? AND release_id = ? AND input_path = ?`,
+    )
+    .get(home.lineage_id, home.release_id, home.input_path) as
+    | { input_kind?: string; sha256?: string }
+    | undefined;
+  if (
+    !homeRow ||
+    String(homeRow.input_kind) !== String(home.input_kind) ||
+    String(homeRow.sha256) !== String(home.sha256)
+  ) {
+    throw new Error(
+      `Cannot retarget tier citations from ${oldPath} onto ${String(home.input_path)}; preserved classifier is not loaded`,
+    );
+  }
+  const updated = db
+    .prepare(
+      `UPDATE office_tier_classification
+       SET classification_path = ?, classification_kind = ?, classification_sha256 = ?
+       WHERE lineage_id = ? AND release_id = ?
+         AND classification_path = ? AND classification_kind = ? AND classification_sha256 = ?`,
+    )
+    .run(
+      home.input_path ?? null,
+      home.input_kind ?? null,
+      home.sha256 ?? null,
+      lineageId,
+      releaseId,
+      oldPath,
+      oldKind,
+      oldSha,
+    );
+  note(
+    `retarget office_tier_classification rows=${Number(updated.changes)} ${oldPath} -> ${String(home.input_path)}`,
+  );
 }
 
 function insertIfMissing(db: DatabaseSync, table: string, row: SqlRow, whereSql: string, params: unknown[]): boolean {

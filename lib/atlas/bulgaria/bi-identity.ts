@@ -98,7 +98,7 @@ export const OPEN_HOLD_IDS = [
 export const RESEARCH_SNAPSHOT_LABEL = "2026-09-29";
 
 /** Pinned slim-land fingerprint. The full-pack ZIP SHA is not this release. */
-export const BI_CANDIDATE_FINGERPRINT = "868335736a62df8cacd2245924be49b66945abfa045d778cacc9b6462cbfe39b";
+export const BI_CANDIDATE_FINGERPRINT = "589023069166df181afac95971b757447693d4b87e5d8eee14359593be2c9d2a";
 export const BI_CANDIDATE_RELEASE_ID = `${LINEAGE_ID}--sha256-${BI_CANDIDATE_FINGERPRINT}`;
 
 export const EXPECTED_BI_COUNTS = {
@@ -148,7 +148,9 @@ export function schemaInterchangeTier(draftTier: string): "national_context" | "
 }
 
 export function inputKindFor(inputPath: string): HashInputDescriptor["input_kind"] {
-  if (inputPath === TIER_PATH) return "tier_classification";
+  // The preserved Prompt P classifier moved off TIER_PATH, but office_tier_classification
+  // can only cite input_kind tier_classification. Both files are classifiers.
+  if (inputPath === TIER_PATH || inputPath === PROMPT_P_TIER_PATH) return "tier_classification";
   return "package";
 }
 
