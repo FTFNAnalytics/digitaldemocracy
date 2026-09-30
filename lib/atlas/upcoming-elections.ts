@@ -6,6 +6,9 @@ import { UPCOMING_CALENDAR_RELATIVE as KOSOVO_CALENDAR } from "./kosovo/identity
 import { repoRoot } from "./paths";
 import { UPCOMING_CALENDAR_RELATIVE as URUGUAY_CALENDAR } from "./uruguay/identity";
 
+/** Documentary Chile country-surface calendar. Not an importer input. */
+export const CHILE_UPCOMING_CALENDAR_RELATIVE = "docs/phase1/chile/data/upcoming_calendar.json";
+
 /**
  * Documentary next-cycle families for country surfaces.
  * Reads the landed upcoming-calendar files. Does not create election events,
@@ -22,6 +25,7 @@ const CALENDAR_FILES = {
   georgia: GEORGIA_CALENDAR,
   kosovo: KOSOVO_CALENDAR,
   bulgaria: BULGARIA_CALENDAR,
+  chile: CHILE_UPCOMING_CALENDAR_RELATIVE,
 } as const;
 
 export type UpcomingElectionCountryId = keyof typeof CALENDAR_FILES;
@@ -59,12 +63,14 @@ const INTRO: Record<UpcomingElectionCountryId, string> = {
     "Ordinary contest families for Kosovo. Each date is a constitutional or statutory formula and year. Exact calendar days are not asserted, and formal calls remain pending.",
   bulgaria:
     "Documentary contest families for Bulgaria. Formula rows state a constitutional or statutory formula and year, and their formal calls remain pending. Official calls already recorded in the pack are shown as stated. No polling day is invented beyond those calls.",
+  chile:
+    "Documentary contest families for Chile. Ordinary rows state a constitutional or statutory formula and year from the pack. Exact calendar days are not asserted, and formal calls remain unverified. Policy and research rows stay holds rather than ordinary production dates.",
 };
 
 const cache = new Map<string, UpcomingElectionsModel | null>();
 
 function isCountryId(value: string): value is UpcomingElectionCountryId {
-  return value === "uruguay" || value === "georgia" || value === "kosovo" || value === "bulgaria";
+  return value === "uruguay" || value === "georgia" || value === "kosovo" || value === "bulgaria" || value === "chile";
 }
 
 function sentence(value: string): string {
@@ -85,7 +91,7 @@ function readCalendar(relativePath: string, root: string): unknown[] {
   if (!existsSync(absPath)) return [];
   const text = readFileSync(absPath, "utf8").replace(/^\uFEFF/, "").trim();
   if (!text) return [];
-  // Bulgaria BI lands a cards array. Uruguay, Georgia, and Kosovo stay JSONL.
+  // Bulgaria BI and Chile BJ land cards arrays. Uruguay, Georgia, and Kosovo stay JSONL.
   if (text.startsWith("[")) {
     const parsed = JSON.parse(text) as unknown;
     if (!Array.isArray(parsed)) {
@@ -101,7 +107,10 @@ function readCalendar(relativePath: string, root: string): unknown[] {
 }
 
 function yearOf(row: Record<string, unknown>, countryId: UpcomingElectionCountryId): number | null {
-  const value = countryId === "uruguay" || countryId === "kosovo" ? row.next_occurrence_year : row.next_year;
+  const value =
+    countryId === "uruguay" || countryId === "kosovo" || countryId === "chile"
+      ? row.next_occurrence_year
+      : row.next_year;
   if (value == null) return null;
   if (typeof value !== "number" || !Number.isInteger(value)) {
     throw new Error(`Upcoming calendar ${String(row.calendar_id ?? "")} year is not an integer`);
@@ -110,10 +119,11 @@ function yearOf(row: Record<string, unknown>, countryId: UpcomingElectionCountry
 }
 
 function prominent(row: Record<string, unknown>, countryId: UpcomingElectionCountryId): boolean {
-  // Uruguay uses must_surface_prominently_on_country_surface. Georgia, Kosovo, and Bulgaria use country_surface_prominent.
-  return countryId === "uruguay"
-    ? row.must_surface_prominently_on_country_surface === true
-    : row.country_surface_prominent === true;
+  // Uruguay uses must_surface_prominently_on_country_surface. Chile BJ uses country_surface_required.
+  // Georgia, Kosovo, and Bulgaria use country_surface_prominent.
+  if (countryId === "uruguay") return row.must_surface_prominently_on_country_surface === true;
+  if (countryId === "chile") return row.country_surface_required === true;
+  return row.country_surface_prominent === true;
 }
 
 function isResearchHold(row: Record<string, unknown>, countryId: UpcomingElectionCountryId): boolean {
@@ -125,6 +135,10 @@ function isResearchHold(row: Record<string, unknown>, countryId: UpcomingElectio
   }
   if (countryId === "bulgaria") {
     return row.date_basis === "research hold" || row.next_year == null;
+  }
+  if (countryId === "chile") {
+    const basis = typeof row.date_basis === "string" ? row.date_basis : "";
+    return basis === "research_hold" || basis.includes("policy_hold") || row.next_occurrence_year == null;
   }
   return false;
 }
@@ -166,6 +180,10 @@ function bulgariaWhen(row: Record<string, unknown>, id: string): string {
 }
 
 function kindOf(row: Record<string, unknown>, countryId: UpcomingElectionCountryId): UpcomingElectionKind {
+  if (countryId === "chile") {
+    const basis = typeof row.date_basis === "string" ? row.date_basis : "";
+    return basis.includes("conditional") ? "conditional" : "ordinary";
+  }
   if (countryId === "bulgaria") {
     return typeof row.conditional === "string" && row.conditional.trim() !== "" ? "conditional" : "ordinary";
   }
@@ -179,7 +197,12 @@ function kindOf(row: Record<string, unknown>, countryId: UpcomingElectionCountry
 
 function labelOf(row: Record<string, unknown>, countryId: UpcomingElectionCountryId, id: string): string {
   if (countryId === "bulgaria") return requireString(row, "contest_name", id);
+  if (countryId === "chile") return requireString(row, "office_family_label", id);
   return requireString(row, "office_family", id);
+}
+
+function humanPhrase(value: string): string {
+  return value.trim().replaceAll("_", " ");
 }
 
 function basisOf(row: Record<string, unknown>, countryId: UpcomingElectionCountryId, id: string): string {
@@ -194,6 +217,15 @@ function basisOf(row: Record<string, unknown>, countryId: UpcomingElectionCountr
     const call = typeof row.formal_call === "string" ? row.formal_call.trim() : "";
     return call ? `${sentence(basis)}; ${call}` : sentence(basis);
   }
+  if (countryId === "chile") {
+    const basis = sentence(humanPhrase(requireString(row, "date_basis", id)));
+    const call = typeof row.formal_call_status === "string" ? humanPhrase(row.formal_call_status) : "";
+    const head = call ? `${basis}; ${call}` : basis;
+    const notes = typeof row.notes === "string" ? row.notes.trim() : "";
+    // Term-start and comparable days in notes are not polling calls. Drop them rather than surface a day.
+    if (notes === "" || inventedDay(notes)) return head;
+    return `${head}. ${notes}`;
+  }
   const basis = requireString(row, "date_basis", id);
   const call = typeof row.formal_call_status === "string" ? row.formal_call_status.trim() : "";
   return call ? `${sentence(basis)}; ${call}` : sentence(basis);
@@ -207,7 +239,47 @@ function whenOf(formula: string, year: number, id: string): string {
   return when;
 }
 
+function chileWhen(row: Record<string, unknown>, id: string): string {
+  if (row.exact_date != null) {
+    throw new Error(`Upcoming calendar ${id} formula row records an exact day`);
+  }
+  const formula = requireString(row, "date_formula", id);
+  if (inventedDay(formula)) {
+    throw new Error(`Upcoming calendar ${id} formula includes an exact day`);
+  }
+  const year = yearOf(row, "chile");
+  if (year == null) {
+    throw new Error(`Upcoming calendar ${id} has no year`);
+  }
+  if (!formula.includes(String(year))) return whenOf(formula, year, id);
+  return formula;
+}
+
+function chileHoldNote(row: Record<string, unknown>, id: string): string {
+  if (row.exact_date != null) {
+    throw new Error(`Upcoming calendar ${id} hold records an exact day`);
+  }
+  const basis = requireString(row, "date_basis", id);
+  const prefix = basis.includes("policy_hold") ? "Policy hold" : "Research hold";
+  const status = sentence(humanPhrase(requireString(row, "formal_call_status", id))).replace(/\.$/, "");
+  const formula = typeof row.date_formula === "string" ? row.date_formula.trim() : "";
+  const notes = typeof row.notes === "string" ? row.notes.trim() : "";
+  const condition = typeof row.condition === "string" ? row.condition.trim() : "";
+  const bodyParts: string[] = [];
+  for (const part of [formula, notes, condition]) {
+    if (part === "") continue;
+    if (bodyParts.some((existing) => existing.includes(part))) continue;
+    if (inventedDay(part)) {
+      throw new Error(`Upcoming calendar ${id} hold includes an exact day`);
+    }
+    bodyParts.push(part);
+  }
+  const body = bodyParts.join(" ");
+  return body ? `${prefix}. ${status}. ${body}` : `${prefix}. ${status}.`;
+}
+
 function holdNote(row: Record<string, unknown>, countryId: UpcomingElectionCountryId, id: string): string {
+  if (countryId === "chile") return chileHoldNote(row, id);
   if (countryId === "bulgaria") {
     if (row.scheduled_date != null) {
       throw new Error(`Upcoming calendar ${id} research hold records a scheduled day`);
@@ -248,7 +320,11 @@ export function projectUpcomingCalendar(countryId: string, rows: unknown[]): Upc
       throw new Error(`Upcoming calendar ${id} has no year`);
     }
     const when =
-      countryId === "bulgaria" ? bulgariaWhen(row, id) : whenOf(requireString(row, "date_formula", id), year, id);
+      countryId === "bulgaria"
+        ? bulgariaWhen(row, id)
+        : countryId === "chile"
+          ? chileWhen(row, id)
+          : whenOf(requireString(row, "date_formula", id), year, id);
     const conditionSource = countryId === "bulgaria" ? row.conditional : row.condition;
     const condition = typeof conditionSource === "string" && conditionSource.trim() ? conditionSource.trim() : null;
     families.push({
