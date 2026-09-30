@@ -19,6 +19,7 @@ import {
   REGISTER_RELATIVE,
   REGISTER_SHA256,
   SCHEMA_VERSION,
+  PROMPT_P_TIER_PATH,
   TIER_PATH,
   TIER_SHA256,
   UNPACKED_PREFIX,
@@ -166,7 +167,7 @@ function loadWorkbook(bytes: Buffer, relativePath: string, archiveEntry: string 
 }
 
 function inputKindFor(inputPath: string): HashInputDescriptor["input_kind"] {
-  if (inputPath === TIER_PATH) return "tier_classification";
+  if (inputPath === TIER_PATH || inputPath === PROMPT_P_TIER_PATH) return "tier_classification";
   if (inputPath.endsWith(".html") || inputPath.endsWith(".xlsx") || inputPath.includes("/payload/")) {
     return "artifact";
   }
@@ -331,7 +332,9 @@ export function scanBulgariaInventory(options: {
   const packagePrefix = options.packageDir
     ? path.relative(root, packageDir).replace(/\\/g, "/") || PACKAGE_PREFIX
     : PACKAGE_PREFIX;
-  const tierAbs = options.tierPath ?? path.join(root, TIER_PATH);
+  const usingPreservedClassifier = options.tierPath == null;
+  const classifierPath = usingPreservedClassifier ? PROMPT_P_TIER_PATH : TIER_PATH;
+  const tierAbs = options.tierPath ?? path.join(root, classifierPath);
   const gitCommit = gitHead(root);
 
   const schemaAttempt = path.join(root, ATLAS_MIGRATIONS_DIR, ATLAS_ATTEMPT_LOG_FILENAME);
@@ -410,7 +413,7 @@ export function scanBulgariaInventory(options: {
       buildIntendedInventory({
         gitCommit,
         packageFiles: packageFilesMeta,
-        tier: { input_path: TIER_PATH, sha256: null, byte_count: null, status: null },
+        tier: { input_path: classifierPath, sha256: null, byte_count: null, status: null },
       }),
     );
   }
@@ -425,7 +428,7 @@ export function scanBulgariaInventory(options: {
       buildIntendedInventory({
         gitCommit,
         packageFiles: packageFilesMeta,
-        tier: { input_path: TIER_PATH, sha256: null, byte_count: null, status: null },
+        tier: { input_path: classifierPath, sha256: null, byte_count: null, status: null },
       }),
     );
   }
@@ -446,7 +449,7 @@ export function scanBulgariaInventory(options: {
           buildIntendedInventory({
             gitCommit,
             packageFiles: packageFilesMeta,
-            tier: { input_path: TIER_PATH, sha256: null, byte_count: null, status: null },
+            tier: { input_path: classifierPath, sha256: null, byte_count: null, status: null },
           }),
         );
       }
@@ -469,11 +472,11 @@ export function scanBulgariaInventory(options: {
     byte_count: number | null;
     error?: string;
     status?: string | null;
-  } = { input_path: TIER_PATH, sha256: null, byte_count: null, status: null };
+  } = { input_path: classifierPath, sha256: null, byte_count: null, status: null };
   let tierBytes: Buffer | undefined;
   if (!existsSync(tierAbs)) {
     tierMeta = {
-      input_path: TIER_PATH,
+      input_path: classifierPath,
       sha256: null,
       byte_count: null,
       status: null,
@@ -482,7 +485,7 @@ export function scanBulgariaInventory(options: {
   } else {
     tierBytes = readFileSync(tierAbs);
     tierMeta = {
-      input_path: TIER_PATH,
+      input_path: classifierPath,
       sha256: adapterSha256(tierBytes),
       byte_count: tierBytes.length,
       status: null,
@@ -498,7 +501,7 @@ export function scanBulgariaInventory(options: {
   if (tierMeta.error === "missing_tier_file") {
     throw new BulgariaPreflightError(
       "missing_tier",
-      `Approved Bulgaria tier file is missing at ${TIER_PATH}.`,
+      `Approved Bulgaria tier file is missing at ${classifierPath}.`,
       intendedInventory,
     );
   }
@@ -529,6 +532,28 @@ export function scanBulgariaInventory(options: {
       `Approved Bulgaria tier SHA-256 mismatch; expected ${TIER_SHA256}.`,
       intendedInventory,
     );
+  }
+
+  if (usingPreservedClassifier) {
+    const schemaAbs = path.join(root, TIER_PATH);
+    const draftSchema: Record<string, unknown> = {
+      input_path: TIER_PATH,
+      ignored: true,
+      classifier: PROMPT_P_TIER_PATH,
+    };
+    if (!existsSync(schemaAbs)) {
+      draftSchema.error = "missing";
+    } else {
+      try {
+        const schemaBytes = readFileSync(schemaAbs);
+        const parsed = JSON.parse(schemaBytes.toString("utf8")) as { status?: unknown };
+        draftSchema.sha256 = adapterSha256(schemaBytes);
+        draftSchema.status = typeof parsed.status === "string" ? parsed.status : null;
+      } catch {
+        draftSchema.error = "unreadable";
+      }
+    }
+    intendedInventory.draft_schema_not_classifier = draftSchema;
   }
 
   const byPath = new Map(tracked.map((item) => [item.input_path, item]));
@@ -567,7 +592,7 @@ export function scanBulgariaInventory(options: {
   }
 
   const tierInput: TrackedInput = {
-    input_path: TIER_PATH,
+    input_path: classifierPath,
     input_kind: "tier_classification",
     sha256: tierMeta.sha256!,
     byte_count: tierMeta.byte_count!,
@@ -615,10 +640,10 @@ export function scanBulgariaInventory(options: {
     root,
     packageDir,
     packagePrefix,
-    tierPath: TIER_PATH,
+    tierPath: classifierPath,
     gitCommit,
     tracked: allInputs,
-    byPath: new Map([...byPath, [TIER_PATH, tierInput]]),
+    byPath: new Map([...byPath, [classifierPath, tierInput]]),
     fingerprint,
     releaseId,
     hashInputsJson: canonical(hashInputs),

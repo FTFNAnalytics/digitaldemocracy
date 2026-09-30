@@ -44,6 +44,8 @@ export const ADAPTER_VERSION = "atlas-bulgaria-field-map/1";
 export const METHOD_VERSION = "atlas-preserve-evidence/1";
 export { SCHEMA_VERSION, CANONICALIZATION, HASH_ALGORITHM };
 export const TIER_PATH = "schemas/atlas/tiers/bulgaria.json";
+/** Prompt P approved classifier. `all` loads this file so the BI draft schema cannot abort preflight. */
+export const PROMPT_P_TIER_PATH = "docs/phase1/bulgaria/baseline/Prompt_P/Accepted_Tiers.json";
 export const PACKAGE_PREFIX = "data/countries/bulgaria";
 export const UNPACKED_PREFIX = "data/countries/bulgaria/unpacked";
 export const REGISTER_RELATIVE = "data/countries/bulgaria/unpacked/tables/master/office-register.json";
@@ -52,6 +54,8 @@ export const UPCOMING_CALENDAR_RELATIVE = "docs/phase1/bulgaria/data/Upcoming_El
 export const REGISTER_SHA256 = "00ddcca3c48141302a7432f97effd017a009fee3d64fb7f9000a72ef79663559";
 export const TIER_SHA256 = "9a6718fe301f440511cc9e9f9b4139b3a1e0332ef2e3e6c9b3063f67f04652ab";
 export const DRAFT_TIER_SHA256 = "cff8fcabb12716230a314309162a40c72a3d7d13fe1aa4469cfb1655767c48f0";
+/** Checked-in Prompt BI draft at `schemas/atlas/tiers/bulgaria.json`. Not the Prompt P classifier. */
+export const BI_SCHEMA_TIER_SHA256 = "82af6120d5372e97c73fb84df294ed99d44c1ccc433a1feaf8637f92b00dcae3";
 export const DRAFT_FINGERPRINT = "51cb9381de3e680a9332fd7aaeff3035246f55f9512c723d874a25fb2447afba";
 export const DRAFT_RELEASE_ID = "country-package-bulgaria--sha256-51cb9381de3e680a9332fd7aaeff3035246f55f9512c723d874a25fb2447afba";
 export const REGIONAL_EMPTY_LABEL =

@@ -16,7 +16,6 @@ import {
   OFFICE_NAMESPACE,
   PACKAGE_PREFIX,
   SOURCE_NAMESPACE,
-  TIER_PATH,
   UNPACKED_PREFIX,
   canonical,
   catalogueSourceId,
@@ -460,7 +459,8 @@ export function projectBulgaria(inventory: BulgariaInventory): BulgariaProjectio
     throw new Error("Ablanitsa collision group was lost");
   }
 
-  const tierSha = inventory.byPath.get(TIER_PATH)!.sha256;
+  const tierPath = inventory.tierPath;
+  const tierSha = inventory.byPath.get(tierPath)!.sha256;
   const tiers: SqlRow[] = [];
   for (const office of publishedOffices) {
     const classification = classById.get(office.officeId)!;
@@ -479,12 +479,12 @@ export function projectBulgaria(inventory: BulgariaInventory): BulgariaProjectio
       rationale: classification.row.rationale,
       lineage_id: L,
       release_id: R,
-      classification_path: TIER_PATH,
+      classification_path: tierPath,
       classification_kind: "tier_classification",
       classification_sha256: tierSha,
       raw_json: rawEnvelope({
         origin: locator({
-          input_path: TIER_PATH,
+          input_path: tierPath,
           sha256: tierSha,
           json_pointer: `/classifications/${classification.index}`,
         }),

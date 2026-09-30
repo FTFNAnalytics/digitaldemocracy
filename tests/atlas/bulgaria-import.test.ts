@@ -12,6 +12,7 @@ import {
   GRADEC_OFFICE_ID,
   HELD_EXAMPLE_OFFICE_IDS,
   LINEAGE_ID,
+  PROMPT_P_TIER_PATH,
   TIER_PATH,
   TIER_SHA256,
   geographyIdFor,
@@ -111,8 +112,11 @@ describe("Bulgaria Atlas importer", () => {
       expect(
         db
           .prepare("SELECT sha256 FROM retained_input WHERE lineage_id = ? AND input_path = ?")
-          .get(LINEAGE_ID, TIER_PATH),
+          .get(LINEAGE_ID, PROMPT_P_TIER_PATH),
       ).toMatchObject({ sha256: TIER_SHA256 });
+      expect(
+        db.prepare("SELECT input_path FROM retained_input WHERE lineage_id = ? AND input_path = ?").get(LINEAGE_ID, TIER_PATH),
+      ).toBeUndefined();
     } finally {
       db.close();
     }

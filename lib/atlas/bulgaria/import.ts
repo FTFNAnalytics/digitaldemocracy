@@ -9,7 +9,7 @@ import {
   GRADEC_OFFICE_ID,
   HELD_EXAMPLE_OFFICE_IDS,
   LINEAGE_ID as BULGARIA_LINEAGE,
-  TIER_PATH,
+  PROMPT_P_TIER_PATH,
   TIER_SHA256,
 } from "./identity";
 import { failAttempt, reconcileStartedAttempts, startAttempt, succeedAttempt } from "../ledger";
@@ -64,7 +64,7 @@ export function importBulgaria(options: ImportBulgariaOptions): ImportBulgariaRe
   let lockFd: number | undefined;
   let inventoryJson: Record<string, unknown> = {
     lineage_id: BULGARIA_LINEAGE,
-    intended_tier_path: options.tierPath ?? TIER_PATH,
+    intended_tier_path: options.tierPath ?? PROMPT_P_TIER_PATH,
   };
 
   const finishFailure = (error: unknown): never => {
@@ -303,7 +303,7 @@ export function assertBulgariaFidelity(db: DatabaseSync, projection?: BulgariaPr
     }
     const tierInput = db
       .prepare("SELECT sha256, input_kind FROM retained_input WHERE lineage_id = ? AND input_path = ?")
-      .get(BULGARIA_LINEAGE, TIER_PATH);
+      .get(BULGARIA_LINEAGE, PROMPT_P_TIER_PATH);
     if (!tierInput || String(tierInput.sha256) !== TIER_SHA256 || String(tierInput.input_kind) !== "tier_classification") {
       throw new Error("Approved Bulgaria tier retained-input hash mismatch");
     }

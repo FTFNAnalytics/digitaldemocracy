@@ -496,7 +496,7 @@ describe("atlas CLI stubs", () => {
   );
 
   it(
-    "import:atlas loads only the 530 approved Bulgaria offices",
+    "import:atlas bulgaria scope publishes 534 offices and leaves holds unpublished",
     () => {
       const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-import-bulgaria-cli-"));
       tempDirs.push(dir);
@@ -512,23 +512,31 @@ describe("atlas CLI stubs", () => {
       expect(result.status, result.stderr).toBe(0);
       expect(result.stdout).toContain("import:atlas");
       expect(result.stdout).toContain("lineage=country-package-bulgaria");
-      expect(result.stdout).toContain("bulgaria_offices=530");
+      expect(result.stdout).toContain("bulgaria_offices=534");
+      expect(result.stdout).toContain("bulgaria_current=533");
+      expect(result.stdout).toContain("bulgaria_historical=1");
       expect(result.stdout).toContain("bulgaria_municipal=530");
-      expect(result.stdout).toContain("bulgaria_selected_histories=1590");
+      expect(result.stdout).toContain("bulgaria_needs_review=4");
+      expect(result.stdout).toContain("bulgaria_approved=530");
+      expect(result.stdout).toContain("bulgaria_selected_histories=0");
       expect(result.stdout).toContain("bulgaria_prospective_events=0");
-      expect(result.stdout).toContain("bulgaria_result_rows=10343");
+      expect(result.stdout).toContain("bulgaria_result_rows=0");
+      expect(result.stdout).toContain("bulgaria_sources=0");
       expect(result.stdout).toContain("bulgaria_regional=0");
       expect(result.stdout).toContain("bulgaria_held_offices=3067");
 
       const master = new DatabaseSync(sqlitePath, { readOnly: true });
       try {
-        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 530 });
+        expect(master.prepare("SELECT COUNT(*) AS n FROM office").get()).toMatchObject({ n: 534 });
         expect(
           master.prepare("SELECT geography_id FROM office WHERE office_id = 'BG-VAR01-M'").get(),
         ).toMatchObject({ geography_id: "geo-0f253e2855d47274f7fda71e" });
         expect(
           master.prepare("SELECT office_id FROM office WHERE office_id = 'BG-SLV11-b88d0d4475-V'").get(),
         ).toBeUndefined();
+        expect(
+          master.prepare("SELECT review_status FROM office_tier_classification WHERE office_id = 'BG-NATIONAL-ASSEMBLY'").get(),
+        ).toMatchObject({ review_status: "needs_review" });
         expect(
           master
             .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'regional'")
@@ -539,6 +547,9 @@ describe("atlas CLI stubs", () => {
             .prepare("SELECT COUNT(*) AS n FROM office_tier_classification WHERE tier = 'municipal'")
             .get(),
         ).toMatchObject({ n: 530 });
+        expect(master.prepare("SELECT COUNT(*) AS n FROM election_event").get()).toMatchObject({ n: 0 });
+        expect(master.prepare("SELECT COUNT(*) AS n FROM result_row").get()).toMatchObject({ n: 0 });
+        expect(master.prepare("SELECT COUNT(*) AS n FROM source").get()).toMatchObject({ n: 0 });
       } finally {
         master.close();
       }
