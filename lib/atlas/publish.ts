@@ -124,12 +124,14 @@ function fsyncPath(filePath: string, directory = false): void {
  * published master, fsync the parent directory. Never serves a WAL-backed
  * half-published file.
  */
-export function publishStaging(masterPath: string): void {
+export function publishStaging(masterPath: string, options?: { rebuildDerived?: boolean }): void {
   const staging = stagingPathFor(masterPath);
   // Derived rows and search indexes are rebuilt in the staged file so the atomic
   // rename publishes them with the master. Approved person proposals are reloaded
   // into person and person_alias. Other master entity rows are not edited.
-  rebuildDerivedInFile(staging);
+  // Callers that already patched derived rows for a small lineage delta can skip
+  // the rebuild. The default still rebuilds.
+  if (options?.rebuildDerived !== false) rebuildDerivedInFile(staging);
   checkpointAndCloseForPublish(staging);
   fsyncPath(staging);
   for (const suffix of ["-wal", "-shm", "-journal"]) {

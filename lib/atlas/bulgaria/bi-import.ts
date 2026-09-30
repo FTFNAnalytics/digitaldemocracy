@@ -29,7 +29,7 @@ import {
   stagingPathFor,
 } from "../publish";
 import { assertIntegrity, countRows, openAtlasDatabase } from "../sqlite";
-import { writeBulgariaProjection } from "./write";
+import { assertBulgariaBiForeignKeys, writeBulgariaBiRelease, type BulgariaBiWriteMode } from "./bi-write";
 import type { BulgariaProjection } from "./project";
 import { geographyIdFor } from "./identity";
 
@@ -48,6 +48,8 @@ export type ImportBulgariaBiResult = {
   releaseId: string;
   fingerprint: string;
   reusedRelease: boolean;
+  /** fresh inserts the slim projection; additive keeps the 530 office rows; reuse only writes the receipt. */
+  writeMode: BulgariaBiWriteMode;
   counts: Record<string, number>;
 };
 
@@ -140,10 +142,16 @@ export function importBulgariaBi(options: ImportBulgariaBiOptions): ImportBulgar
     }
 
     const staging = openAtlasDatabase(stagingPathFor(options.sqlitePath));
+    let writeMode: BulgariaBiWriteMode = "fresh";
     try {
-      writeBulgariaProjection(staging, projection, attemptId, { reuseRelease: reusedRelease });
+      writeMode = writeBulgariaBiRelease(staging, projection, attemptId, { reuseRelease: reusedRelease });
       options.poisonAfterWrite?.(staging, projection);
-      assertIntegrity(staging);
+      // A full integrity_check reads every page of the staged atlas. On the
+      // live multi-gigabyte file that is a second long silent scan. Fresh
+      // databases stay small. Additive upgrades already ran a targeted
+      // foreign_key_check; reuse only updates the receipt.
+      if (writeMode === "fresh" || options.poisonAfterWrite) assertIntegrity(staging);
+      else if (writeMode === "additive") assertBulgariaBiForeignKeys(staging);
       assertBulgariaBiFidelity(staging);
     } finally {
       staging.close();
@@ -151,12 +159,14 @@ export function importBulgariaBi(options: ImportBulgariaBiOptions): ImportBulgar
 
     if (options.failBeforeRename) throw new Error("Injected failure before rename");
 
-    publishStaging(options.sqlitePath);
+    // Rebuilding derived rows and search postings rewrites the whole atlas.
+    // The additive upgrade patches Bulgaria derived pointers in place.
+    publishStaging(options.sqlitePath, { rebuildDerived: writeMode === "fresh" });
 
     const published = openAtlasDatabase(options.sqlitePath, { readOnly: true });
     let publicationSet: { lineage_id: string; release_id: string }[] = [];
     try {
-      assertIntegrity(published);
+      if (writeMode === "fresh" || options.poisonAfterWrite) assertIntegrity(published);
       publicationSet = published
         .prepare("SELECT lineage_id, release_id FROM publication_release ORDER BY lineage_id")
         .all()
@@ -175,6 +185,7 @@ export function importBulgariaBi(options: ImportBulgariaBiOptions): ImportBulgar
       releaseId: inventory.releaseId,
       fingerprint: inventory.fingerprint,
       reusedRelease,
+      writeMode,
       counts: projection.validatedCounts,
     };
   } catch (error) {

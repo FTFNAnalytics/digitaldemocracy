@@ -208,6 +208,7 @@ function main() {
       console.log(`bulgaria_fingerprint_sha256=${result.bulgaria.fingerprint}`);
       console.log(`bulgaria_reused_release=${result.bulgaria.reusedRelease ? "yes" : "no"}`);
       if (result.bulgaria.counts.prompt_bi === 1) {
+        if ("writeMode" in result.bulgaria) console.log(`bulgaria_write_mode=${result.bulgaria.writeMode}`);
         console.log(`bulgaria_offices=${result.bulgaria.counts.offices}`);
         console.log(`bulgaria_current=${result.bulgaria.counts.current_offices}`);
         console.log(`bulgaria_historical=${result.bulgaria.counts.historical_offices}`);
