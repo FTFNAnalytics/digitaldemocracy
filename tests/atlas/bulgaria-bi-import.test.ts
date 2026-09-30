@@ -19,8 +19,10 @@ import {
   OFFICE_NAMESPACE,
   OMITTED_PATHS,
   OPEN_HOLD_IDS,
+  PROMPT_P_TIER_PATH,
   SAMPLE_MAYOR_ID,
   TIER_PATH,
+  TIER_SHA256,
 } from "../../lib/atlas/bulgaria/bi-identity";
 import { importBulgaria } from "../../lib/atlas/bulgaria/import";
 import { geographyIdFor } from "../../lib/atlas/bulgaria/identity";
@@ -180,6 +182,20 @@ describe("Bulgaria Prompt BI additive importer", () => {
         if (draftIds.has(String(row.office_id))) continue;
         insertRow(db, "office_tier_classification", retarget(row, oldRelease));
       }
+      // Live Prompt P cited schemas/atlas/tiers/bulgaria.json at the approved hash.
+      // That path is now the BI draft. The preserved classifier is a different path
+      // and was not a retained_input on that release.
+      db.prepare("DELETE FROM retained_input WHERE lineage_id = ? AND input_path = ?").run(LINEAGE_ID, PROMPT_P_TIER_PATH);
+      db.prepare(
+        `UPDATE retained_input
+         SET input_kind = 'tier_classification', sha256 = ?, byte_count = 1, recovery_locator = ?
+         WHERE lineage_id = ? AND input_path = ?`,
+      ).run(TIER_SHA256, `sha256:${TIER_SHA256}`, LINEAGE_ID, TIER_PATH);
+      db.prepare(
+        `UPDATE office_tier_classification
+         SET classification_path = ?, classification_kind = 'tier_classification', classification_sha256 = ?
+         WHERE lineage_id = ?`,
+      ).run(TIER_PATH, TIER_SHA256, LINEAGE_ID);
       for (const row of projection.offices) {
         if (draftIds.has(String(row.office_id))) continue;
         insertRow(
@@ -600,11 +616,64 @@ describe("Bulgaria Prompt BI additive importer", () => {
         1,
       );
       expect(published.prepare("SELECT office_id FROM office WHERE office_id = ?").get(GRADEC_OFFICE_ID)).toBeUndefined();
+      expect(
+        published
+          .prepare(
+            `SELECT classification_path, classification_kind, classification_sha256, review_status
+             FROM office_tier_classification WHERE office_id = ?`,
+          )
+          .get(SAMPLE_MAYOR_ID),
+      ).toMatchObject({
+        classification_path: PROMPT_P_TIER_PATH,
+        classification_kind: "tier_classification",
+        classification_sha256: TIER_SHA256,
+        review_status: "approved",
+      });
+      expect(
+        Number(
+          published
+            .prepare(
+              `SELECT COUNT(*) AS n FROM office_tier_classification
+               WHERE lineage_id = ? AND classification_path = ? AND classification_sha256 = ? AND review_status = 'approved'`,
+            )
+            .get(LINEAGE_ID, PROMPT_P_TIER_PATH, TIER_SHA256)?.n,
+        ),
+      ).toBe(530);
+      expect(
+        published.prepare("SELECT sha256, input_kind FROM retained_input WHERE lineage_id = ? AND input_path = ?").get(
+          LINEAGE_ID,
+          TIER_PATH,
+        ),
+      ).toMatchObject({ sha256: BI_SCHEMA_TIER_SHA256, input_kind: "tier_classification" });
+      expect(
+        published.prepare("SELECT sha256, input_kind FROM retained_input WHERE lineage_id = ? AND input_path = ?").get(
+          LINEAGE_ID,
+          PROMPT_P_TIER_PATH,
+        ),
+      ).toMatchObject({ sha256: TIER_SHA256, input_kind: "tier_classification" });
+      expect(published.prepare("PRAGMA foreign_key_check(office_tier_classification)").all()).toEqual([]);
       for (const officeId of BI_DRAFT_OFFICE_IDS) {
         expect(
-          published.prepare("SELECT review_status FROM office_tier_classification WHERE office_id = ?").get(officeId),
-        ).toMatchObject({ review_status: "needs_review" });
+          published
+            .prepare(
+              `SELECT review_status, classification_path, classification_kind, classification_sha256
+               FROM office_tier_classification WHERE office_id = ?`,
+            )
+            .get(officeId),
+        ).toMatchObject({
+          review_status: "needs_review",
+          classification_path: TIER_PATH,
+          classification_kind: "tier_classification",
+          classification_sha256: BI_SCHEMA_TIER_SHA256,
+        });
       }
+      expect(
+        published.prepare("SELECT classification_path, classification_sha256, release_id FROM office_tier_classification WHERE office_id = 'SN-1'").get(),
+      ).toMatchObject({
+        classification_path: "sentinel/tiers.json",
+        classification_sha256: "cd".repeat(32),
+        release_id: sentinelRelease,
+      });
       expect(Number(published.prepare("SELECT COUNT(*) AS n FROM election_event WHERE lineage_id = ?").get(LINEAGE_ID)?.n)).toBe(
         0,
       );
