@@ -7,6 +7,7 @@ import { importAustria, type ImportAustriaResult } from "../austria/import";
 import { importBelgium, type ImportBelgiumResult } from "../belgium/import";
 import { importBosnia, type ImportBosniaResult } from "../bosnia-and-herzegovina/import";
 import { importBulgaria, type ImportBulgariaResult } from "../bulgaria/import";
+import { importBulgariaBi, type ImportBulgariaBiResult } from "../bulgaria/bi-import";
 import { importCroatia, type ImportCroatiaResult } from "../croatia/import";
 import { importCzechia, type ImportCzechiaResult } from "../czechia/import";
 import { importDenmark, type ImportDenmarkResult } from "../denmark/import";
@@ -165,7 +166,7 @@ export type MultiLineageImportResult = {
   austria?: ImportAustriaResult;
   belgium?: ImportBelgiumResult;
   bosnia?: ImportBosniaResult;
-  bulgaria?: ImportBulgariaResult;
+  bulgaria?: ImportBulgariaResult | ImportBulgariaBiResult;
   croatia?: ImportCroatiaResult;
   czechia?: ImportCzechiaResult;
   denmark?: ImportDenmarkResult;
@@ -246,8 +247,14 @@ export function importAtlasLineages(
   if (scope === "belgium" || scope === "all") {
     result.belgium = runImport("belgium", () => importBelgium(options));
   }
-  if (scope === "bulgaria" || scope === "all") {
+  // Prompt P stays on `all` and loads the preserved accepted classifier.
+  // The checked-in BI draft must not abort this path or add the four drafts.
+  if (scope === "all") {
     result.bulgaria = runImport("bulgaria", () => importBulgaria(options));
+  }
+  // Prompt BI is additive and scoped. `all` must not promote drafts or holds.
+  if (scopeImportsBulgariaBi(scope)) {
+    result.bulgaria = runImport("bulgaria-bi", () => importBulgariaBi(options));
   }
   if (scope === "netherlands" || scope === "all") {
     result.netherlands = runImport("netherlands", () => importNetherlands(options));
@@ -491,6 +498,11 @@ export function scopeImportsKosovo(scope: ImportScope): boolean {
 /** True only for `ATLAS_IMPORT_SCOPE=chile`. Never true for `all`. */
 export function scopeImportsChile(scope: ImportScope): boolean {
   return scope === "chile";
+}
+
+/** True only for `ATLAS_IMPORT_SCOPE=bulgaria` Prompt BI. Never true for `all`. */
+export function scopeImportsBulgariaBi(scope: ImportScope): boolean {
+  return scope === "bulgaria";
 }
 
 /** True only for `ATLAS_IMPORT_SCOPE=serbia`. Never true for `all`. */

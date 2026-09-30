@@ -25,6 +25,8 @@
  * Georgia is not part of `all`; use `ATLAS_IMPORT_SCOPE=georgia`.
  * Kosovo is not part of `all`; use `ATLAS_IMPORT_SCOPE=kosovo`.
  * Chile is not part of `all`; use `ATLAS_IMPORT_SCOPE=chile`.
+ * Bulgaria Prompt BI is not part of `all`; use `ATLAS_IMPORT_SCOPE=bulgaria`.
+ * `all` still loads Prompt P Bulgaria only (530 offices) and does not promote BI drafts or holds.
  * Serbia is not part of `all`; use `ATLAS_IMPORT_SCOPE=serbia`.
  * Slovakia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovakia`.
  * Slovenia is not part of `all`; use `ATLAS_IMPORT_SCOPE=slovenia`.
@@ -205,14 +207,31 @@ function main() {
       console.log(`bulgaria_release_id=${result.bulgaria.releaseId}`);
       console.log(`bulgaria_fingerprint_sha256=${result.bulgaria.fingerprint}`);
       console.log(`bulgaria_reused_release=${result.bulgaria.reusedRelease ? "yes" : "no"}`);
-      console.log(`bulgaria_offices=${result.bulgaria.counts.current_offices}`);
-      console.log(`bulgaria_municipal=${result.bulgaria.counts.municipal_offices}`);
-      console.log(`bulgaria_selected_histories=${result.bulgaria.counts.selected_histories}`);
-      console.log(`bulgaria_prospective_events=${result.bulgaria.counts.prospective_events}`);
-      console.log(`bulgaria_result_rows=${result.bulgaria.counts.result_rows}`);
-      console.log(`bulgaria_sources=${result.bulgaria.counts.sources}`);
-      console.log(`bulgaria_regional=${result.bulgaria.counts.regional_offices}`);
-      console.log(`bulgaria_held_offices=${result.bulgaria.counts.held_offices}`);
+      if (result.bulgaria.counts.prompt_bi === 1) {
+        console.log(`bulgaria_offices=${result.bulgaria.counts.offices}`);
+        console.log(`bulgaria_current=${result.bulgaria.counts.current_offices}`);
+        console.log(`bulgaria_historical=${result.bulgaria.counts.historical_offices}`);
+        console.log(`bulgaria_municipal=${result.bulgaria.counts.municipal_offices}`);
+        console.log(`bulgaria_national=${result.bulgaria.counts.national_offices}`);
+        console.log(`bulgaria_other=${result.bulgaria.counts.other_offices}`);
+        console.log(`bulgaria_approved=${result.bulgaria.counts.approved_classifications}`);
+        console.log(`bulgaria_needs_review=${result.bulgaria.counts.needs_review_classifications}`);
+        console.log(`bulgaria_selected_histories=${result.bulgaria.counts.selected_histories}`);
+        console.log(`bulgaria_prospective_events=${result.bulgaria.counts.prospective_events}`);
+        console.log(`bulgaria_result_rows=${result.bulgaria.counts.result_rows}`);
+        console.log(`bulgaria_sources=${result.bulgaria.counts.sources}`);
+        console.log(`bulgaria_regional=${result.bulgaria.counts.regional_offices}`);
+        console.log(`bulgaria_held_offices=${result.bulgaria.counts.held_offices}`);
+      } else {
+        console.log(`bulgaria_offices=${result.bulgaria.counts.current_offices}`);
+        console.log(`bulgaria_municipal=${result.bulgaria.counts.municipal_offices}`);
+        console.log(`bulgaria_selected_histories=${result.bulgaria.counts.selected_histories}`);
+        console.log(`bulgaria_prospective_events=${result.bulgaria.counts.prospective_events}`);
+        console.log(`bulgaria_result_rows=${result.bulgaria.counts.result_rows}`);
+        console.log(`bulgaria_sources=${result.bulgaria.counts.sources}`);
+        console.log(`bulgaria_regional=${result.bulgaria.counts.regional_offices}`);
+        console.log(`bulgaria_held_offices=${result.bulgaria.counts.held_offices}`);
+      }
     }
     if (result.netherlands) {
       console.log("lineage=country-package-netherlands");
