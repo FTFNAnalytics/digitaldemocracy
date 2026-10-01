@@ -1,8 +1,11 @@
 import { mkdirSync } from "node:fs";
 import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
+import { borrowLiveDatabase, shouldSkipFullIntegrityCheck } from "./live-session";
 
 export function openAtlasDatabase(filePath: string, options?: { readOnly?: boolean }): DatabaseSync {
+  const borrowed = borrowLiveDatabase(filePath, options?.readOnly);
+  if (borrowed) return borrowed;
   if (!options?.readOnly) {
     mkdirSync(path.dirname(filePath), { recursive: true });
   }
@@ -28,6 +31,10 @@ export function pragmaValue(db: DatabaseSync, pragma: string): unknown {
 }
 
 export function assertIntegrity(db: DatabaseSync): void {
+  // A scoped live publish already enforces foreign keys on each write.
+  // integrity_check and an unbounded foreign_key_check read every page of the
+  // multi-GB master. Skip both while that session is open.
+  if (shouldSkipFullIntegrityCheck()) return;
   const fkOn = pragmaValue(db, "foreign_keys");
   if (Number(fkOn) !== 1) {
     throw new Error(`foreign_keys=${String(fkOn)}; expected 1`);

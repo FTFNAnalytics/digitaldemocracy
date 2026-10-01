@@ -35,10 +35,17 @@
  * Draft residual-heavy packs are skipped.
  * Does not deploy to VPS or merge publication cutover.
  *
+ * A named ATLAS_IMPORT_SCOPE publishes into an existing master in WAL mode
+ * and rebuilds derived/search rows for that country only. It does not
+ * VACUUM INTO a second copy of the file. Unset scope, scope `all`, and
+ * ATLAS_PUBLISH_RESTAGE=1 keep the full-file restage. Do not follow a
+ * one-country import with `npm run derive:atlas`.
+ *
  * See docs/phase2/Continuity_Import.md.
  */
 import { importAtlasLineages, parseImportScope } from "../../lib/atlas/continuity/import";
 import { resolveAtlasAttemptsSqlitePath, resolveAtlasSqlitePath } from "../../lib/atlas/paths";
+import { describeAtlasPublishMode } from "../../lib/atlas/publish-mode";
 
 function main() {
   const sqlitePath = resolveAtlasSqlitePath();
@@ -56,6 +63,7 @@ function main() {
     );
     console.log("import:atlas");
     console.log(`scope=${scope}`);
+    console.log(describeAtlasPublishMode());
     console.log(`ATLAS_ATTEMPTS_SQLITE_PATH=${attemptsPath}`);
     console.log(`ATLAS_SQLITE_PATH=${sqlitePath}`);
     if (result.albania) {

@@ -10,7 +10,9 @@ export ATLAS_SQLITE_PATH=/tmp/atlas.sqlite
 export ATLAS_ATTEMPTS_SQLITE_PATH=/tmp/atlas-attempts.sqlite
 
 npm run migrate:atlas   # optional; import applies migrations itself
-npm run import:atlas    # default ATLAS_IMPORT_SCOPE=all
+# Unset ATLAS_IMPORT_SCOPE is the full-master restage (VACUUM INTO + full derive).
+# A one-country update sets ATLAS_IMPORT_SCOPE to that country. See "VPS publish mode".
+npm run import:atlas
 ```
 
 Scopes:
@@ -200,6 +202,45 @@ ATLAS_IMPORT_SCOPE=italy npm run import:atlas
 ```
 
 Full `ATLAS_IMPORT_SCOPE=all` against a cold temp SQLite is on the order of several minutes (Austria 16k results + Belgium S2 + LatAm projection + ~146k result rows + Bulgaria unpack + Switzerland). Denmark (25k results), Sweden (41k results), Finland (37k results), Norway (59k results), Ireland (7k results), Poland (16k events, 0 invented result rows), Czechia (46k events, 0 invented result rows), Croatia (16k results), Portugal (66k results), and Spain (20k events, 0 invented result or source rows) run last on `all`, then Estonia, so LatAm does not copy those lineages into staging. Latvia, Lithuania, Hungary, Romania, Greece, Luxembourg, Malta, Cyprus, France, Germany, the United Kingdom, and Italy are not part of `all`. Use `albania`, `andorra`, `alderney`, `armenia`, `austria`, `belgium`, `bosnia`, `bulgaria`, `croatia`, `czechia`, `denmark`, `estonia`, `finland`, `france`, `germany`, `greece`, `hungary`, `ireland`, `italy`, `latvia`, `lithuania`, `luxembourg`, `malta`, `cyprus`, `romania`, `netherlands`, `norway`, `poland`, `portugal`, `spain`, `sweden`, `switzerland`, `united_kingdom`, or `nz` when you only need those lineages.
+
+## VPS publish mode
+
+Production Atlas is `/var/lib/cdd/atlas.sqlite` (about 6GB). A one-country add must not copy that file and must not rebuild every country's derived rows.
+
+When `ATLAS_IMPORT_SCOPE` is a single country (`austria`, `bulgaria`, `united_kingdom`, `nz`, and the other named scopes) and the master file already exists, `import:atlas` publishes **in place**:
+
+- Journal mode is WAL. The country write and that country's derived/search rebuild commit in one transaction. Concurrent Next.js readers keep using the previous snapshot until commit. The writer takes a reserved lock, not a long exclusive lock.
+- There is no `VACUUM INTO` staging copy and no atomic rename of the whole file.
+- Derived tables and search postings are deleted and rewritten only for that `country_id`. Other countries stay.
+- `integrity_check` is not run. Foreign keys stay on for the write (Bulgaria's additive upgrade still turns them off only for its own child delete, then runs its targeted check).
+- Stdout includes `publish_mode=live vacuum_into=no` and `publish_mode=live committed derive=<country_id>`.
+- Do **not** run `npm run derive:atlas` after this. That command still rebuilds the whole master.
+
+`latam` is the same live path, then a country derive for each country on lineage `latin-america-fe5e91689def`.
+
+A missing master file is created from scratch (there is nothing multi-GB to copy). The next import into that file uses the live path.
+
+Full-file restage (`VACUUM INTO` a sibling, full `derive`, then rename) runs only when:
+
+- `ATLAS_IMPORT_SCOPE` is unset or `all` (the full-master rebuild), or
+- the operator sets `ATLAS_PUBLISH_RESTAGE=1`.
+
+Full derived rebuild, including `integrity_check`, is `npm run derive:atlas` with no country filter. Use that for a night job or after a full restage. One country is `npm run derive:atlas:country -- --country=<country_id>` (or `ATLAS_DERIVE_COUNTRY`). A scoped import already does that country slice.
+
+The first live publish has to switch the file from DELETE journal mode to WAL. If the Next.js server still has the file open, the import refuses and leaves the master unchanged. Stop the site, run the scoped import once, then start the site. Later scoped imports leave the WAL sidecars (`atlas.sqlite-wal`, `atlas.sqlite-shm`) in place. The web user must be able to read those files. Do not delete them while the site is up.
+
+```bash
+export ATLAS_SQLITE_PATH=/var/lib/cdd/atlas.sqlite
+export ATLAS_ATTEMPTS_SQLITE_PATH=/var/lib/cdd/atlas-attempts.sqlite
+export ATLAS_OPERATOR=genevieve
+
+# One country. No VACUUM staging. No full derive.
+ATLAS_IMPORT_SCOPE=austria npm run import:atlas
+
+# Explicit full copy + full derive. Not for a one-country add.
+# ATLAS_PUBLISH_RESTAGE=1 ATLAS_IMPORT_SCOPE=austria npm run import:atlas
+# npm run derive:atlas
+```
 
 ## VPS — Bosnia scoped import only
 

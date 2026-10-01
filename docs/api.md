@@ -27,7 +27,7 @@ Every response sets:
 - `X-Atlas-Publication` — the publication stamp (not the per-URL ETag).
 - `X-Robots-Tag: noindex`
 
-`npm run derive:atlas` rebuilds derived tables and calls `revalidateTag("atlas-derived")`. A running server is flushed when `ATLAS_REVALIDATE_URL` and `ATLAS_REVALIDATE_SECRET` are set (`POST /api/atlas/revalidate`). After that stamp changes, the ETag changes and a conditional request gets a new body. A matching `If-None-Match` on a successful representation returns 304.
+`npm run derive:atlas` rebuilds derived tables for every country and calls `revalidateTag("atlas-derived")`. A one-country import already rebuilds that country's rows; do not run the full command after it. `npm run derive:atlas:country -- --country=<country_id>` rebuilds one country. A running server is flushed when `ATLAS_REVALIDATE_URL` and `ATLAS_REVALIDATE_SECRET` are set (`POST /api/atlas/revalidate`). After that stamp changes, the ETag changes and a conditional request gets a new body. A matching `If-None-Match` on a successful representation returns 304.
 
 Nginx should rate-limit `/api/`. The recommended block is in [docs/deploy.md](deploy.md#api-rate-limit).
 
