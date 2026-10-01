@@ -24,7 +24,7 @@ export ATLAS_OPERATOR=genevieve
 # this host has never run migrate:atlas / import:atlas.
 # npm run migrate:atlas
 
-# Staging import of Greece only. Other published lineages stay in place.
+# Scoped live publish (WAL, no full-file VACUUM) of Greece only. Other countries' derived and search rows stay in place. Do not run npm run derive:atlas after this.
 ATLAS_IMPORT_SCOPE=greece npm run import:atlas
 ```
 

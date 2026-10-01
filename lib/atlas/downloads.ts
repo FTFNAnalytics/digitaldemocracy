@@ -63,10 +63,11 @@ function writeAtomic(filePath: string, bytes: Uint8Array | string): void {
  * that copies data_rights from the source table. A sibling {slug}.zip.sha256
  * is the checksum of the zip bytes.
  */
-export function writeCountryBundles(db: DatabaseSync, directory: string): number {
+export function writeCountryBundles(db: DatabaseSync, directory: string, countryId?: string): number {
   if (!tableExists(db, "derived_jurisdiction")) return 0;
   mkdirSync(directory, { recursive: true });
-  const countries = listCountryIds(db);
+  const only = countryId?.trim();
+  const countries = listCountryIds(db).filter((country) => !only || country.countryId === only);
   for (const country of countries) {
     const files = countryBundleFiles(db, country.countryId);
     const sums = Object.keys(files)

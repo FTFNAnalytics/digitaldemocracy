@@ -49,7 +49,7 @@ function clearSearch(db: DatabaseSync): void {
   `);
 }
 
-function writePostings(db: DatabaseSync, mode: string, docs: PendingDoc[]): void {
+function writePostings(db: DatabaseSync, mode: string, docs: PendingDoc[], skipMeta = false): void {
   const trigramTable =
     mode === "seat" ? "search_seat_trigram" : mode === "cycle" ? "search_cycle_trigram" : "search_candidate_trigram";
   const trigram = db.prepare(`INSERT INTO ${trigramTable} (trigram, search_id) VALUES (?, ?)`);
@@ -63,9 +63,46 @@ function writePostings(db: DatabaseSync, mode: string, docs: PendingDoc[]): void
     for (const gram of documentTrigrams(doc.folded)) trigram.run(gram, doc.searchId);
     for (const [term, tf] of counts) token.run(mode, term, doc.searchId, tf);
   }
+  if (skipMeta) return;
   const docCount = docs.length;
   const avg = docCount === 0 ? 1 : Math.max(tokenSum / docCount, 1);
   db.prepare("INSERT INTO search_meta (mode, doc_count, avg_tokens) VALUES (?, ?, ?)").run(mode, docCount, avg);
+}
+
+function refreshSearchMeta(db: DatabaseSync, mode: string): void {
+  const row = db
+    .prepare(
+      `SELECT COUNT(DISTINCT search_id) AS docs, COALESCE(SUM(tf), 0) AS tokens
+       FROM search_token WHERE mode = ?`,
+    )
+    .get(mode) as { docs?: number; tokens?: number } | undefined;
+  const docs = Number(row?.docs ?? 0);
+  const tokens = Number(row?.tokens ?? 0);
+  const avg = docs === 0 ? 1 : Math.max(tokens / docs, 1);
+  db.prepare("DELETE FROM search_meta WHERE mode = ?").run(mode);
+  db.prepare("INSERT INTO search_meta (mode, doc_count, avg_tokens) VALUES (?, ?, ?)").run(mode, docs, avg);
+}
+
+function nextSearchId(db: DatabaseSync, table: "search_seat" | "search_cycle" | "search_candidate"): number {
+  const row = db.prepare(`SELECT COALESCE(MAX(search_id), 0) AS n FROM ${table}`).get() as { n?: number } | undefined;
+  return Number(row?.n ?? 0);
+}
+
+function deleteCountrySearch(db: DatabaseSync, countryId: string): void {
+  const tables = [
+    ["seat", "search_seat"],
+    ["cycle", "search_cycle"],
+    ["candidate", "search_candidate"],
+  ] as const;
+  for (const [mode, table] of tables) {
+    db.prepare(
+      `DELETE FROM search_token WHERE mode = ? AND search_id IN (SELECT search_id FROM ${table} WHERE country_id = ?)`,
+    ).run(mode, countryId);
+    db.prepare(`DELETE FROM ${table}_trigram WHERE search_id IN (SELECT search_id FROM ${table} WHERE country_id = ?)`).run(
+      countryId,
+    );
+    db.prepare(`DELETE FROM ${table} WHERE country_id = ?`).run(countryId);
+  }
 }
 
 function holderLine(holder: string | null): string {
@@ -89,7 +126,7 @@ function candidateLine(countryName: string, offices: OfficeRef[], years: number[
   return `${countryName} · ${officeText} · ${yearText}`;
 }
 
-function rebuildSeats(db: DatabaseSync): PendingDoc[] {
+function rebuildSeats(db: DatabaseSync, countryId?: string): PendingDoc[] {
   const rows = db
     .prepare(
       `SELECT o.id_namespace, o.office_id, o.name AS office_name, o.office_type,
@@ -112,9 +149,10 @@ function rebuildSeats(db: DatabaseSync): PendingDoc[] {
          ON t.id_namespace = o.id_namespace AND t.office_id = o.office_id
        LEFT JOIN derived_seat_status s
          ON s.id_namespace = o.id_namespace AND s.office_id = o.office_id
+       ${countryId ? "WHERE o.country_id = ?" : ""}
        ORDER BY o.id_namespace, o.office_id`,
     )
-    .all() as Array<Record<string, unknown>>;
+    .all(...(countryId ? [countryId] : [])) as Array<Record<string, unknown>>;
   const insert = db.prepare(
     `INSERT INTO search_seat (
        search_id, id_namespace, office_id, country_id, region_id, level_label, tier, slug_path,
@@ -123,8 +161,9 @@ function rebuildSeats(db: DatabaseSync): PendingDoc[] {
      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
   );
   const docs: PendingDoc[] = [];
+  const searchBase = nextSearchId(db, "search_seat");
   rows.forEach((row, index) => {
-    const searchId = index + 1;
+    const searchId = searchBase + index + 1;
     const officeName = text(row.office_name);
     const officeType = text(row.office_type);
     const geographyName = textOrNull(row.geography_name);
@@ -158,11 +197,11 @@ function rebuildSeats(db: DatabaseSync): PendingDoc[] {
     );
     docs.push({ searchId, folded });
   });
-  writePostings(db, "seat", docs);
+  writePostings(db, "seat", docs, countryId != null);
   return docs;
 }
 
-function rebuildCycles(db: DatabaseSync): PendingDoc[] {
+function rebuildCycles(db: DatabaseSync, countryId?: string): PendingDoc[] {
   const rows = db
     .prepare(
       `SELECT y.cycle_key, y.country_id, y.iso_date, y.contest_count, y.tiers_json, y.label,
@@ -171,9 +210,10 @@ function rebuildCycles(db: DatabaseSync): PendingDoc[] {
        FROM derived_cycle y
        JOIN derived_jurisdiction j ON j.jurisdiction_key = y.scope_key
        JOIN country c ON c.country_id = y.country_id
+       ${countryId ? "WHERE y.country_id = ?" : ""}
        ORDER BY y.cycle_key`,
     )
-    .all() as Array<Record<string, unknown>>;
+    .all(...(countryId ? [countryId] : [])) as Array<Record<string, unknown>>;
   const insert = db.prepare(
     `INSERT INTO search_cycle (
        search_id, cycle_key, country_id, region_id, country_name, level_label, iso_date, event_year, label,
@@ -181,8 +221,9 @@ function rebuildCycles(db: DatabaseSync): PendingDoc[] {
      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
   );
   const docs: PendingDoc[] = [];
+  const searchBase = nextSearchId(db, "search_cycle");
   rows.forEach((row, index) => {
-    const searchId = index + 1;
+    const searchId = searchBase + index + 1;
     const label = text(row.label);
     const isoDate = text(row.iso_date);
     const year = Number(isoDate.slice(0, 4));
@@ -212,7 +253,7 @@ function rebuildCycles(db: DatabaseSync): PendingDoc[] {
     );
     docs.push({ searchId, folded });
   });
-  writePostings(db, "cycle", docs);
+  writePostings(db, "cycle", docs, countryId != null);
   return docs;
 }
 
@@ -228,7 +269,7 @@ type CandidateGroup = {
   levels: Set<string>;
 };
 
-function rebuildCandidates(db: DatabaseSync): PendingDoc[] {
+function rebuildCandidates(db: DatabaseSync, countryId?: string): PendingDoc[] {
   const withheld = [...WITHHELD_EVIDENCE];
   const placeholders = withheld.map(() => "?").join(", ");
   const rows = db
@@ -247,9 +288,10 @@ function rebuildCandidates(db: DatabaseSync): PendingDoc[] {
        WHERE r.candidate_or_list_label IS NOT NULL
          AND length(trim(r.candidate_or_list_label)) > 0
          AND r.evidence_status NOT IN (${placeholders})
+         ${countryId ? "AND r.country_id = ?" : ""}
        ORDER BY r.country_id, r.candidate_or_list_label, r.original_party_label, r.office_id`,
     )
-    .all(...withheld) as Array<Record<string, unknown>>;
+    .all(...withheld, ...(countryId ? [countryId] : [])) as Array<Record<string, unknown>>;
 
   const groups = new Map<string, CandidateGroup>();
   for (const row of rows) {
@@ -293,8 +335,9 @@ function rebuildCandidates(db: DatabaseSync): PendingDoc[] {
      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
   );
   const docs: PendingDoc[] = [];
+  const searchBase = nextSearchId(db, "search_candidate");
   ordered.forEach((group, index) => {
-    const searchId = index + 1;
+    const searchId = searchBase + index + 1;
     const offices = [...group.offices.values()].sort((a, b) => a.officeId.localeCompare(b.officeId) || a.name.localeCompare(b.name));
     const years = [...group.years].sort((a, b) => a - b);
     const levels = [...group.levels].sort((a, b) => a.localeCompare(b));
@@ -322,19 +365,26 @@ function rebuildCandidates(db: DatabaseSync): PendingDoc[] {
     );
     docs.push({ searchId, folded });
   });
-  writePostings(db, "candidate", docs);
+  writePostings(db, "candidate", docs, countryId != null);
   return docs;
 }
 
 /** Replace search rows from the master and derived tables. Caller owns the transaction. */
-export function rebuildSearchIndexes(db: DatabaseSync): SearchRebuildCounts {
+export function rebuildSearchIndexes(db: DatabaseSync, options?: { countryId?: string }): SearchRebuildCounts {
   if (!tableExists(db, "search_seat") || !tableExists(db, "derived_jurisdiction")) {
     throw new Error("Search schema is missing. Run npm run migrate:atlas before derive:atlas.");
   }
-  clearSearch(db);
-  const seats = rebuildSeats(db);
-  const cycles = rebuildCycles(db);
-  const candidates = rebuildCandidates(db);
+  const countryId = options?.countryId?.trim() || undefined;
+  if (countryId) deleteCountrySearch(db, countryId);
+  else clearSearch(db);
+  const seats = rebuildSeats(db, countryId);
+  const cycles = rebuildCycles(db, countryId);
+  const candidates = rebuildCandidates(db, countryId);
+  if (countryId) {
+    refreshSearchMeta(db, "seat");
+    refreshSearchMeta(db, "cycle");
+    refreshSearchMeta(db, "candidate");
+  }
   return {
     searchSeats: seats.length,
     searchCycles: cycles.length,

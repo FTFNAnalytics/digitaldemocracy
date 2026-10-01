@@ -26,11 +26,11 @@ export ATLAS_OPERATOR=genevieve
 ATLAS_IMPORT_SCOPE=bulgaria npm run import:atlas
 ```
 
-On a database that already has the Prompt P Bulgaria release, this command copies `atlas.sqlite` to the staging file and then **upgrades that copy in place**. It keeps the 530 office rows, inserts the 4 drafts, and deletes only Bulgaria events, results, sources, and dates. It does not clear the office table and it does not rebuild derived rows or search postings for the rest of the atlas. The first run should log `bulgaria_write_mode=additive` and then finish. A second run with the same inputs logs `bulgaria_write_mode=reuse`.
+On a database that already has the Prompt P Bulgaria release, this command opens the live master in WAL mode and **upgrades Bulgaria in place**. It does not `VACUUM INTO` a second copy of `atlas.sqlite`. It keeps the 530 office rows, inserts the 4 drafts, and deletes only Bulgaria events, results, sources, and dates. It does not clear the office table. It rebuilds `derived_*` and search rows for `country_id=bulgaria` only. The first run should log `publish_mode=live vacuum_into=no`, `bulgaria_write_mode=additive`, and `committed derive=bulgaria`, then finish. A second run with the same inputs logs `bulgaria_write_mode=reuse`.
 
-Do not wait out a multi-tens-of-minutes silent `pread64` after the staging file appears. That pattern was the old clear-and-reload: SQLite scanned global child tables once per deleted Bulgaria office, with the rollback journal stuck around the size of those Bulgaria rows, and then failed a foreign key check against derived seat rows.
+Do not wait out a multi-tens-of-minutes silent `pread64`. That pattern was the old clear-and-reload: a full-file staging copy, then SQLite scanned global child tables once per deleted Bulgaria office. It is not this path.
 
-Seat slugs and search text for the 4 new drafts are not rebuilt here. The office count does not depend on that rebuild. `npm run derive:atlas` still rewrites derived tables for the whole database; it is not part of this upgrade.
+Do **not** run `npm run derive:atlas` after this upgrade. That still rewrites derived tables for the whole database. The import already country-derives Bulgaria. A full rebuild is only for a full restage (`ATLAS_PUBLISH_RESTAGE=1` or a full-master import). See [Continuity import — VPS publish mode](../../phase2/Continuity_Import.md#vps-publish-mode).
 
 Do **not** run `ATLAS_IMPORT_SCOPE=all` to promote BI drafts or holds. `all` reloads Prompt P only (530 offices) and also re-imports the other published lineages.
 

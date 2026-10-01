@@ -86,6 +86,8 @@ summarized at the top of [atlas-plan.md](atlas-plan.md).
 
 CI and local tests **must** set `ATLAS_SQLITE_PATH` / `ATLAS_ATTEMPTS_SQLITE_PATH` to temporary files. Never point them at the VPS production paths unless deliberately operating production.
 
+A named `ATLAS_IMPORT_SCOPE` against an existing master publishes in WAL mode and rebuilds derived/search rows for that country only. It does not `VACUUM INTO` the multi-GB file. Unset scope and `ATLAS_PUBLISH_RESTAGE=1` keep the full restage. Do not run `npm run derive:atlas` after a one-country VPS import. See [VPS publish mode](phase2/Continuity_Import.md#vps-publish-mode).
+
 **Albania Phase 1 tiers stay approved** at
 `docs/phase1/albania/Phase1_approved_tiers.json` (Justin, 2026-09-16; 122
 municipal offices; regional=0 by design; SHA-256

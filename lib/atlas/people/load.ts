@@ -44,12 +44,16 @@ function reviewedOn(file: PeopleProposalFile, person: PersonProposal): string | 
 export function loadApprovedPeople(
   db: DatabaseSync,
   dir = resolvePeopleDir(),
+  options?: { countryId?: string },
 ): { persons: number; aliases: number; skippedDrafts: number } {
   if (!tableExists(db, "person") || !tableExists(db, "person_alias")) {
     throw new Error("Person schema is missing. Run npm run migrate:atlas before derive:atlas.");
   }
+  const countryId = options?.countryId?.trim() || undefined;
   const paths = listPeopleProposalFiles(dir);
-  const files = paths.map((filePath) => readPeopleProposalFile(filePath));
+  const files = paths
+    .map((filePath) => readPeopleProposalFile(filePath))
+    .filter((file) => !countryId || file.country_id === countryId);
   validatePeopleProposals(files);
 
   const approved: PeopleProposalFile[] = [];
@@ -84,7 +88,16 @@ export function loadApprovedPeople(
     }
   }
 
-  db.exec("DELETE FROM person_alias; DELETE FROM person;");
+  if (countryId) {
+    db.prepare(
+      `DELETE FROM person_alias WHERE country_id = ? OR person_id IN (
+         SELECT person_id FROM person WHERE country_id = ?
+       )`,
+    ).run(countryId, countryId);
+    db.prepare("DELETE FROM person WHERE country_id = ?").run(countryId);
+  } else {
+    db.exec("DELETE FROM person_alias; DELETE FROM person;");
+  }
   const insertPerson = db.prepare(
     `INSERT INTO person (
        person_id, canonical_label, country_id, review_status, created_from_release_id, reviewed_on

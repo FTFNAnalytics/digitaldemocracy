@@ -159,8 +159,10 @@ export function importBulgariaBi(options: ImportBulgariaBiOptions): ImportBulgar
 
     if (options.failBeforeRename) throw new Error("Injected failure before rename");
 
-    // Rebuilding derived rows and search postings rewrites the whole atlas.
-    // The additive upgrade patches Bulgaria derived pointers in place.
+    // Restage still skips the global derived rebuild for additive and reuse.
+    // A scoped live publish (the default when ATLAS_IMPORT_SCOPE=bulgaria and
+    // the master already exists) country-derives Bulgaria inside the same
+    // transaction and does not VACUUM the rest of the atlas.
     publishStaging(options.sqlitePath, { rebuildDerived: writeMode === "fresh" });
 
     const published = openAtlasDatabase(options.sqlitePath, { readOnly: true });
