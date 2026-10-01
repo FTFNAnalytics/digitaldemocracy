@@ -84,7 +84,7 @@ export const FULL_PACK_DOCUMENTED_RESULTS = 103648;
  * Pinned after the slim-pack inventory scan. The review ZIP hash is not this release.
  * Tests fail closed if the bytes drift.
  */
-export const CANDIDATE_FINGERPRINT = "3c7784c2dfaefc2dd134cbf7674161b8a56afd308c1e7398d5db79460b53c996";
+export const CANDIDATE_FINGERPRINT = "19a7b985ab661a7ced9600ff9d7a4db20c6558d567e7fb15ecbf9ee3ab121454";
 export const CANDIDATE_RELEASE_ID = `${LINEAGE_ID}--sha256-${CANDIDATE_FINGERPRINT}`;
 
 export const RESEARCH_SNAPSHOT_LABEL = "2026-09-23";
@@ -102,7 +102,7 @@ export const PINNED_INPUTS: Readonly<Record<string, string>> = {
   "docs/phase1/united-kingdom/JUSTIN_REPORT.md": "2b2e79eb52da46dbed086d2150d7171984f3d7f18c3a35b13625f3c4b73b8b19",
   "docs/phase1/united-kingdom/OFFICE_REGISTER.md": "6b3a8f9c9375e901d017c8ea5349d2d44b6ab9f9dea7e2926e091d20c0de20d2",
   "docs/phase1/united-kingdom/README.md": "7e880f8db8cbef237d052e092cc8cf87d6249f631161bf102395d7e4652030c8",
-  "docs/phase1/united-kingdom/United_Kingdom_Import.md": "668998ae4c188a3a885537bccd6d0dc8a0c7957cc480ead1281b6119a302fb49",
+  "docs/phase1/united-kingdom/United_Kingdom_Import.md": "c44dec3643f5999c605ac8caba6bbd7a9a3bbf093a5dc8db4f38b3125ad04019",
   "docs/phase1/united-kingdom/RESEARCH_GAPS.md": "34e478ec5ee81b6943c3e358bdbfae47f5813d4e6249265a986eb198b0b9d413",
   "docs/phase1/united-kingdom/SHA256SUMS": "ba5d92e30e514eb0b5a8c0777b6d6dfdd75b86df83ed5aa66b72c84da65c907a",
   "docs/phase1/united-kingdom/SLIM_LAND_NOTE.md": "ab808337dd53e189862f1e935e50cafa39335628626d7966c76920219b08df41",
