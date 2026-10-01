@@ -417,36 +417,22 @@ describe("Albania atlas twins", () => {
     expect(html).not.toContain(SENTINEL);
   });
 
-  it("stubs person endpoints until the person tables exist, then hides withheld aliases", async () => {
-    const missing = await call(peopleGET, "http://127.0.0.1/api/atlas/people");
-    expect(missing.status).toBe(200);
-    expect(await missing.json()).toEqual({
-      available: false,
-      dependency: "OV-09",
+  it("serves person endpoints after 0007 and hides withheld aliases", async () => {
+    const empty = await call(peopleGET, "http://127.0.0.1/api/atlas/people");
+    expect(empty.status).toBe(200);
+    expect(await empty.json()).toEqual({
+      available: true,
+      dependency: null,
       items: [],
       pageSize: 200,
       nextCursor: null,
     });
     const missingOne = await call(peopleGET, "http://127.0.0.1/api/atlas/people/someone", ["someone"]);
     expect(missingOne.status).toBe(404);
+    expect(await missingOne.json()).toEqual({ error: "not_found" });
 
     const db = openAtlasDatabase(sqlitePath);
     try {
-      db.exec(`
-        CREATE TABLE person (
-          person_id TEXT PRIMARY KEY,
-          canonical_label TEXT NOT NULL,
-          country_id TEXT NOT NULL,
-          review_status TEXT NOT NULL
-        );
-        CREATE TABLE person_alias (
-          person_id TEXT NOT NULL,
-          country_id TEXT NOT NULL,
-          candidate_or_list_label TEXT NOT NULL,
-          office_scope TEXT,
-          review_status TEXT NOT NULL
-        );
-      `);
       db.prepare(`INSERT INTO person (person_id, canonical_label, country_id, review_status) VALUES (?, ?, 'albania', 'approved')`).run(
         "person-kept",
         keptLabel,
@@ -454,11 +440,11 @@ describe("Albania atlas twins", () => {
       db.prepare(`INSERT INTO person (person_id, canonical_label, country_id, review_status) VALUES ('person-draft', 'Draft Person', 'albania', 'draft_for_human_review')`).run();
       db.prepare(
         `INSERT INTO person_alias (person_id, country_id, candidate_or_list_label, office_scope, review_status)
-         VALUES ('person-kept', 'albania', ?, NULL, 'approved')`,
+         VALUES ('person-kept', 'albania', ?, 'albania', 'approved')`,
       ).run(keptLabel);
       db.prepare(
         `INSERT INTO person_alias (person_id, country_id, candidate_or_list_label, office_scope, review_status)
-         VALUES ('person-kept', 'albania', ?, NULL, 'approved')`,
+         VALUES ('person-kept', 'albania', ?, 'albania', 'approved')`,
       ).run(SENTINEL);
 
       const list = await call(peopleGET, "http://127.0.0.1/api/atlas/people?country=albania");
@@ -478,7 +464,8 @@ describe("Albania atlas twins", () => {
       expect(csvText).toContain(keptLabel);
       expect(csvText).not.toContain(SENTINEL);
     } finally {
-      db.exec(`DROP TABLE IF EXISTS person_alias; DROP TABLE IF EXISTS person;`);
+      db.prepare("DELETE FROM person_alias WHERE person_id IN ('person-kept', 'person-draft')").run();
+      db.prepare("DELETE FROM person WHERE person_id IN ('person-kept', 'person-draft')").run();
       db.close();
     }
   });

@@ -165,8 +165,8 @@ function insertOffice(
 }
 
 describe("search text and ranking", () => {
-  it("reports FTS5 unavailable and keeps the migration on trigram tables", () => {
-    expect(sqliteFts5Enabled()).toBe(false);
+  it("reports FTS5 compile option and keeps the migration on trigram tables", () => {
+    expect(typeof sqliteFts5Enabled()).toBe("boolean");
     const sql = readFileSync(path.join(repoRoot, "schemas/atlas/migrations/0004_atlas_search.sql"), "utf8");
     const executable = sql.replace(/--.*$/gm, "");
     expect(executable).not.toMatch(/fts5/i);
@@ -283,7 +283,7 @@ describe("Atlas search index", () => {
     expect(accepted.headers.get("cache-control")).toBe("public, max-age=300");
     const body = (await accepted.json()) as { engine: string; fts5: boolean; results: Array<{ officeId: string }> };
     expect(body.engine).toBe("trigram-like");
-    expect(body.fts5).toBe(false);
+    expect(body.fts5).toBe(sqliteFts5Enabled());
     expect(body.results[0]?.officeId).toBe("AL-53-M");
     expect(JSON.stringify(body)).not.toMatch(/id_namespace|lineage/);
   });

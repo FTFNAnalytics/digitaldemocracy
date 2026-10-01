@@ -93,7 +93,7 @@ export const FULL_PACK_DOCUMENTED_RESULTS = 606051;
  * Pinned after the slim-pack inventory scan. The review ZIP hash is not this release.
  * Tests fail closed if the bytes drift.
  */
-export const CANDIDATE_FINGERPRINT = "d5c6c67d68d4f009e45fcfeeb284df74fe6daf75f81b1526627c32b74b38c2c2";
+export const CANDIDATE_FINGERPRINT = "95aec48aad775d7e38a8b9df4eb7d946507a78a7c1c2bb8dde41fbb515e11904";
 export const CANDIDATE_RELEASE_ID = `${LINEAGE_ID}--sha256-${CANDIDATE_FINGERPRINT}`;
 
 export const RESEARCH_SNAPSHOT_LABEL = "2026-09-23";
@@ -101,7 +101,7 @@ export const COUNTRY_NAME = "Italy";
 export const HOLD_STATUS = "open";
 
 export const PINNED_INPUTS: Readonly<Record<string, string>> = {
-  "docs/phase1/italy/Italy_Import.md": "70ada52ff49717824512b71edd107957405ef6ffc7868ff7386bf4190b53560d",
+  "docs/phase1/italy/Italy_Import.md": "44de846210444e9d47f75851464f2e777328eb9279f42b05b94fc46148924e39",
   "docs/phase1/italy/JUSTIN_ACCEPTANCE.md": "7d68a73d8b7044b9bbd44340cb58c9661382c339b9597aa064fa21e96e6bef0a",
   "docs/phase1/italy/README.md": "46225eaaccc8aaa6390e1587192fa553afef8f1e9ce242238a0029ec9d16c297",
   "docs/phase1/italy/SHA256SUMS": "5f2eaf8b9a59ac4ff9bc2f2b694b81722c8b4095cbdaa1a518b19c1acd282241",
