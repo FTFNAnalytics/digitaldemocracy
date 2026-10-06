@@ -14,6 +14,13 @@
 
 export type AtlasPublishMode = "live" | "restage";
 
+/**
+ * Next.js declares `NODE_ENV` required on `NodeJS.ProcessEnv`, so a fixture
+ * that only sets `ATLAS_IMPORT_SCOPE` is not a `ProcessEnv`. These helpers
+ * read two variables and accept a partial env, including `process.env`.
+ */
+type AtlasPublishEnv = Partial<NodeJS.ProcessEnv>;
+
 const SCOPE_COUNTRY_ID: Record<string, string> = {
   united_kingdom: "united-kingdom",
   bosnia: "bosnia-and-herzegovina",
@@ -25,13 +32,13 @@ const SCOPE_COUNTRY_ID: Record<string, string> = {
 export const LATAM_LINEAGE_ID = "latin-america-fe5e91689def";
 
 export function atlasPublishRestageRequested(
-  env: NodeJS.ProcessEnv = process.env,
+  env: AtlasPublishEnv = process.env,
 ): boolean {
   const flag = (env.ATLAS_PUBLISH_RESTAGE ?? "").trim().toLowerCase();
   return flag === "1" || flag === "true" || flag === "yes";
 }
 
-export function resolveAtlasPublishMode(env: NodeJS.ProcessEnv = process.env): AtlasPublishMode {
+export function resolveAtlasPublishMode(env: AtlasPublishEnv = process.env): AtlasPublishMode {
   if (atlasPublishRestageRequested(env)) return "restage";
   const scope = (env.ATLAS_IMPORT_SCOPE ?? "").trim().toLowerCase();
   // Unset scope is the full-master rebuild path (the CLI treats that as every
@@ -51,7 +58,7 @@ export function countryIdForImportScope(scope: string | undefined | null): strin
   return SCOPE_COUNTRY_ID[raw] ?? raw;
 }
 
-export function describeAtlasPublishMode(env: NodeJS.ProcessEnv = process.env): string {
+export function describeAtlasPublishMode(env: AtlasPublishEnv = process.env): string {
   const mode = resolveAtlasPublishMode(env);
   // An empty env is the full-master path. import:atlas names that path `all`.
   const scope = (env.ATLAS_IMPORT_SCOPE ?? "").trim() || "all";
