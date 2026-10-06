@@ -249,6 +249,12 @@ describe("country derive leaves other countries", () => {
             "SELECT office_id, current_holder_label FROM derived_seat_status WHERE country_id = 'alderney' ORDER BY office_id",
           )
           .all();
+        const summaryBefore = db
+          .prepare(
+            "SELECT offices, events, result_rows FROM derived_country_summary WHERE country_id = 'alderney'",
+          )
+          .all();
+        expect(summaryBefore.length).toBe(1);
         db.prepare("UPDATE office SET name = name || ' x' WHERE country_id = 'andorra'").run();
         deriveCountry(db, "andorra");
         expect(
@@ -258,6 +264,20 @@ describe("country derive leaves other countries", () => {
             )
             .all(),
         ).toEqual(before);
+        expect(
+          db
+            .prepare("SELECT offices, events, result_rows FROM derived_country_summary WHERE country_id = 'alderney'")
+            .all(),
+        ).toEqual(summaryBefore);
+        expect(
+          Number(
+            (
+              db.prepare("SELECT COUNT(*) AS n FROM derived_country_summary WHERE country_id = 'andorra'").get() as {
+                n?: number;
+              }
+            ).n,
+          ),
+        ).toBe(1);
         const renamed = db
           .prepare("SELECT COUNT(*) AS n FROM search_seat WHERE country_id = 'andorra' AND office_name LIKE '% x'")
           .get() as { n?: number };

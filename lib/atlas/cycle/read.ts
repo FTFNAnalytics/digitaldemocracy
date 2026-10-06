@@ -5,6 +5,7 @@ import { resolveAtlasSqlitePath } from "../paths";
 import { atlasRoutes, cycleCsvPath, cyclePublicPath } from "../routes";
 import { WITHHELD_EVIDENCE } from "../derive/seat";
 import { suppliedCountsFromEventRaw, turnoutPercent, proceedingKindLabel, readerStatus } from "../seat/history";
+import { countryHasSummary } from "../summary/read";
 import { openAtlasDatabase, tableExists } from "../sqlite";
 import { cycleCsv, type CycleCsvContest } from "./csv";
 import {
@@ -59,6 +60,8 @@ export type CycleContest = {
   methodChips: string[];
   shareUnit: string;
   results: CycleContestResult[];
+  /** Visible result rows for this contest. May be larger than `results` when the page is capped. */
+  resultCount: number;
   proceedings: CycleProceedingView[];
   provenance: {
     publisher: string | null;
@@ -99,6 +102,8 @@ export type CyclePageModel = {
   ballots: number | null;
   turnout: number | null;
   contests: CycleContest[];
+  /** Full contest count. `contests` may be a page of that list. */
+  contestCount: number;
   switcher: CycleSwitcherChip[];
   queued: boolean;
   countryNotes: string | null;
@@ -109,6 +114,12 @@ export type CycleLoad =
   | { status: "alias"; path: string }
   | { status: "not_found" }
   | { status: "unavailable"; message: string; sqlitePath: string };
+
+/** Result rows rendered on one contest panel. Further rows use `results=` pages. */
+export const CYCLE_RESULT_PAGE_SIZE = 40;
+
+/** Contest names rendered on one election page. Further names use `list=` pages. */
+export const CYCLE_CONTEST_PAGE_SIZE = 100;
 
 const UNAVAILABLE_MESSAGE =
   "No Atlas SQLite file was found. Import approved packs locally with npm run import:atlas, or set ATLAS_SQLITE_PATH (production expects /var/lib/cdd/atlas.sqlite).";
@@ -231,24 +242,19 @@ function lookupPlace(db: DatabaseSync, slugPath: string): { place: PlaceRow; ali
 
 function descendantKeys(db: DatabaseSync, jurisdictionKey: string): Set<string> {
   const rows = db
-    .prepare(`SELECT jurisdiction_key, parent_key FROM derived_jurisdiction`)
-    .all();
-  const children = new Map<string, string[]>();
-  for (const row of rows) {
-    const parent = textOrNull(row.parent_key);
-    if (!parent) continue;
-    const list = children.get(parent) ?? [];
-    list.push(text(row.jurisdiction_key));
-    children.set(parent, list);
-  }
-  const keys = new Set<string>();
-  const stack = [jurisdictionKey];
-  while (stack.length > 0) {
-    const key = stack.pop();
-    if (!key || keys.has(key)) continue;
-    keys.add(key);
-    for (const child of children.get(key) ?? []) stack.push(child);
-  }
+    .prepare(
+      `WITH RECURSIVE descent AS (
+         SELECT jurisdiction_key FROM derived_jurisdiction WHERE jurisdiction_key = ?
+         UNION ALL
+         SELECT j.jurisdiction_key
+         FROM derived_jurisdiction j
+         JOIN descent d ON j.parent_key = d.jurisdiction_key
+       )
+       SELECT jurisdiction_key FROM descent`,
+    )
+    .all(jurisdictionKey);
+  const keys = new Set(rows.map((row) => text(row.jurisdiction_key)));
+  keys.add(jurisdictionKey);
   return keys;
 }
 
@@ -391,61 +397,111 @@ function eventKey(event: EventFacts): string {
   return `${event.idNamespace}\n${event.officeId}\n${event.historyKey}`;
 }
 
-function loadResults(db: DatabaseSync, countryId: string, events: EventFacts[]): ResultBucket {
+const RESULT_KEY_CHUNK = 40;
+
+function chunkEvents<T>(events: T[], size: number): T[][] {
+  const chunks: T[][] = [];
+  for (let index = 0; index < events.length; index += size) chunks.push(events.slice(index, index + size));
+  return chunks;
+}
+
+function eventKeyParams(events: EventFacts[]): string[] {
+  return events.flatMap((event) => [event.idNamespace, event.officeId, event.historyKey]);
+}
+
+/** Primary-key lookups. Does not scan result_row by country. */
+function loadResults(db: DatabaseSync, events: EventFacts[]): ResultBucket {
   const bucket: ResultBucket = new Map();
   if (!tableExists(db, "result_row") || events.length === 0) return bucket;
-  const wanted = new Set(events.map(eventKey));
-  const rows = db
-    .prepare(
-      `SELECT id_namespace, office_id, history_key, result_row_id, candidate_or_list_label, original_party_label,
-              votes, votes_status, share, share_status, share_unit, seats, seats_status, elected_flag, evidence_status
-       FROM result_row
-       WHERE country_id = ?
-       ORDER BY result_row_id`,
-    )
-    .all(countryId);
-  for (const row of rows) {
-    const key = `${text(row.id_namespace)}\n${text(row.office_id)}\n${text(row.history_key)}`;
-    if (!wanted.has(key)) continue;
-    const evidence = text(row.evidence_status);
-    if (WITHHELD_EVIDENCE.has(evidence)) continue;
-    const list = bucket.get(key) ?? [];
-    list.push({
-      id: text(row.result_row_id),
-      label: textOrNull(row.candidate_or_list_label),
-      partyLabel: textOrNull(row.original_party_label),
-      votes: numOrNull(row.votes),
-      votesStatus: text(row.votes_status),
-      share: numOrNull(row.share),
-      shareStatus: text(row.share_status),
-      shareUnit: text(row.share_unit),
-      seats: numOrNull(row.seats),
-      seatsStatus: text(row.seats_status),
-      elected: num(row.elected_flag) === 1,
-      evidenceStatus: evidence,
-    });
-    bucket.set(key, list);
+  for (const slice of chunkEvents(events, RESULT_KEY_CHUNK)) {
+    const tuples = slice.map(() => "(?, ?, ?)").join(", ");
+    const rows = db
+      .prepare(
+        `SELECT id_namespace, office_id, history_key, result_row_id, candidate_or_list_label, original_party_label,
+                votes, votes_status, share, share_status, share_unit, seats, seats_status, elected_flag, evidence_status
+         FROM result_row
+         WHERE (id_namespace, office_id, history_key) IN (${tuples})
+         ORDER BY result_row_id`,
+      )
+      .all(...eventKeyParams(slice));
+    for (const row of rows) {
+      const key = `${text(row.id_namespace)}\n${text(row.office_id)}\n${text(row.history_key)}`;
+      const evidence = text(row.evidence_status);
+      if (WITHHELD_EVIDENCE.has(evidence)) continue;
+      const list = bucket.get(key) ?? [];
+      list.push({
+        id: text(row.result_row_id),
+        label: textOrNull(row.candidate_or_list_label),
+        partyLabel: textOrNull(row.original_party_label),
+        votes: numOrNull(row.votes),
+        votesStatus: text(row.votes_status),
+        share: numOrNull(row.share),
+        shareStatus: text(row.share_status),
+        shareUnit: text(row.share_unit),
+        seats: numOrNull(row.seats),
+        seatsStatus: text(row.seats_status),
+        elected: num(row.elected_flag) === 1,
+        evidenceStatus: evidence,
+      });
+      bucket.set(key, list);
+    }
   }
   return bucket;
+}
+
+function visibleCounts(db: DatabaseSync, countryId: string, events: EventFacts[]): Map<string, number> {
+  const counts = new Map<string, number>();
+  if (events.length === 0) return counts;
+  const useSummary = countryHasSummary(db, countryId) && tableExists(db, "derived_event_result_count");
+  const withheld = [...WITHHELD_EVIDENCE];
+  for (const slice of chunkEvents(events, RESULT_KEY_CHUNK)) {
+    const tuples = slice.map(() => "(?, ?, ?)").join(", ");
+    const keys = eventKeyParams(slice);
+    const rows = useSummary
+      ? db
+          .prepare(
+            `SELECT id_namespace, office_id, history_key, visible_count
+             FROM derived_event_result_count
+             WHERE (id_namespace, office_id, history_key) IN (${tuples})`,
+          )
+          .all(...keys)
+      : tableExists(db, "result_row")
+        ? db
+            .prepare(
+              `SELECT id_namespace, office_id, history_key, COUNT(*) AS visible_count
+               FROM result_row
+               WHERE evidence_status NOT IN (${withheld.map(() => "?").join(", ")})
+                 AND (id_namespace, office_id, history_key) IN (${tuples})
+               GROUP BY id_namespace, office_id, history_key`,
+            )
+            .all(...withheld, ...keys)
+        : [];
+    for (const row of rows) {
+      counts.set(`${text(row.id_namespace)}\n${text(row.office_id)}\n${text(row.history_key)}`, num(row.visible_count));
+    }
+  }
+  return counts;
 }
 
 function loadProceedings(db: DatabaseSync, events: EventFacts[]): ProceedingBucket {
   const bucket: ProceedingBucket = new Map();
   if (!tableExists(db, "proceeding") || events.length === 0) return bucket;
-  const wanted = new Set(events.map(eventKey));
-  const rows = db
-    .prepare(
-      `SELECT id_namespace, office_id, history_key, proceeding_id, kind, sequence_no, legal_outcome
-       FROM proceeding`,
-    )
-    .all();
   const grouped = new Map<string, Array<Record<string, unknown>>>();
-  for (const row of rows) {
-    const key = `${text(row.id_namespace)}\n${text(row.office_id)}\n${text(row.history_key)}`;
-    if (!wanted.has(key)) continue;
-    const list = grouped.get(key) ?? [];
-    list.push(row);
-    grouped.set(key, list);
+  for (const slice of chunkEvents(events, RESULT_KEY_CHUNK)) {
+    const tuples = slice.map(() => "(?, ?, ?)").join(", ");
+    const rows = db
+      .prepare(
+        `SELECT id_namespace, office_id, history_key, proceeding_id, kind, sequence_no, legal_outcome
+         FROM proceeding
+         WHERE (id_namespace, office_id, history_key) IN (${tuples})`,
+      )
+      .all(...eventKeyParams(slice));
+    for (const row of rows) {
+      const key = `${text(row.id_namespace)}\n${text(row.office_id)}\n${text(row.history_key)}`;
+      const list = grouped.get(key) ?? [];
+      list.push(row);
+      grouped.set(key, list);
+    }
   }
   for (const [key, list] of grouped) {
     list.sort((a, b) => {
@@ -477,27 +533,29 @@ function loadSources(db: DatabaseSync, events: EventFacts[]): SourceBucket {
   if (!tableExists(db, "evidence_link") || !tableExists(db, "record_locator") || !tableExists(db, "source")) {
     return bucket;
   }
-  const wanted = new Set(events.map(eventKey));
-  const rows = db
-    .prepare(
-      `SELECT l.id_namespace, l.office_id, l.history_key, s.publisher, s.title, s.url, s.evidence_grade
-       FROM record_locator l
-       JOIN evidence_link e ON e.record_key = l.record_key
-       JOIN source s
-         ON s.country_id = e.source_country_id
-        AND s.source_namespace = e.source_namespace
-        AND s.source_id = e.source_id
-       WHERE l.entity_kind = 'event'
-       ORDER BY s.source_id`,
-    )
-    .all();
   const grouped = new Map<string, Array<Record<string, unknown>>>();
-  for (const row of rows) {
-    const key = `${text(row.id_namespace)}\n${text(row.office_id)}\n${text(row.history_key)}`;
-    if (!wanted.has(key)) continue;
-    const list = grouped.get(key) ?? [];
-    list.push(row);
-    grouped.set(key, list);
+  for (const slice of chunkEvents(events, RESULT_KEY_CHUNK)) {
+    const tuples = slice.map(() => "(?, ?, ?)").join(", ");
+    const rows = db
+      .prepare(
+        `SELECT l.id_namespace, l.office_id, l.history_key, s.publisher, s.title, s.url, s.evidence_grade
+         FROM record_locator l
+         JOIN evidence_link e ON e.record_key = l.record_key
+         JOIN source s
+           ON s.country_id = e.source_country_id
+          AND s.source_namespace = e.source_namespace
+          AND s.source_id = e.source_id
+         WHERE l.entity_kind = 'event'
+           AND (l.id_namespace, l.office_id, l.history_key) IN (${tuples})
+         ORDER BY s.source_id`,
+      )
+      .all(...eventKeyParams(slice));
+    for (const row of rows) {
+      const key = `${text(row.id_namespace)}\n${text(row.office_id)}\n${text(row.history_key)}`;
+      const list = grouped.get(key) ?? [];
+      list.push(row);
+      grouped.set(key, list);
+    }
   }
   for (const [key, list] of grouped) {
     bucket.set(key, {
@@ -515,9 +573,11 @@ function toContest(
   results: ResultBucket,
   proceedings: ProceedingBucket,
   sources: SourceBucket,
+  resultCount?: number,
 ): CycleContest {
   const key = eventKey(event);
   const source = sources.get(key);
+  const rows = results.get(key) ?? [];
   return {
     eventId: event.eventId,
     officeId: event.officeId,
@@ -541,7 +601,8 @@ function toContest(
       eventKind: event.eventKind,
     }),
     shareUnit: event.shareUnit,
-    results: results.get(key) ?? [],
+    results: rows,
+    resultCount: resultCount ?? rows.length,
     proceedings: proceedings.get(key) ?? [],
     provenance: {
       publisher: source?.publisher ?? null,
@@ -561,13 +622,9 @@ function toContest(
   };
 }
 
-function hasVisibleResult(results: ResultBucket, event: EventFacts): boolean {
-  return (results.get(eventKey(event))?.length ?? 0) > 0;
-}
-
 function switcherFromEvents(args: {
   events: EventFacts[];
-  results: ResultBucket;
+  visible: Set<string>;
   keys: Set<string>;
   countrySlug: string;
   scopeSegments: string[];
@@ -582,7 +639,7 @@ function switcherFromEvents(args: {
     if (args.kind === "year" && page.kind === "day") continue;
     const token = dateTokenFor(page);
     const group = groups.get(token) ?? { hasResults: false };
-    if (hasVisibleResult(args.results, event)) group.hasResults = true;
+    if (args.visible.has(eventKey(event))) group.hasResults = true;
     groups.set(token, group);
   }
   return [...groups.entries()]
@@ -597,6 +654,69 @@ function switcherFromEvents(args: {
     .sort((a, b) => a.sortKey.localeCompare(b.sortKey) || a.id.localeCompare(b.id));
 }
 
+function daySwitcherChips(
+  db: DatabaseSync,
+  args: {
+    countryId: string;
+    scopeKey: string;
+    countrySlug: string;
+    scopeSegments: string[];
+    currentToken: string;
+  },
+): CycleSwitcherChip[] {
+  const useSummary = countryHasSummary(db, args.countryId) && tableExists(db, "derived_event_result_count");
+  const withheld = [...WITHHELD_EVIDENCE];
+  const hasExpr = useSummary
+    ? "CASE WHEN COALESCE(c.visible_count, 0) > 0 THEN 1 ELSE 0 END"
+    : `CASE WHEN EXISTS (
+         SELECT 1 FROM result_row r
+         WHERE r.id_namespace = e.id_namespace AND r.office_id = e.office_id AND r.history_key = e.history_key
+           AND r.evidence_status NOT IN (${withheld.map(() => "?").join(", ")})
+       ) THEN 1 ELSE 0 END`;
+  const join = useSummary
+    ? `LEFT JOIN derived_event_result_count c
+         ON c.id_namespace = e.id_namespace AND c.office_id = e.office_id AND c.history_key = e.history_key`
+    : "";
+  const params = useSummary ? [args.scopeKey, args.countryId] : [args.scopeKey, ...withheld, args.countryId];
+  const rows = db
+    .prepare(
+      `WITH RECURSIVE descent AS (
+         SELECT jurisdiction_key FROM derived_jurisdiction WHERE jurisdiction_key = ?
+         UNION ALL
+         SELECT j.jurisdiction_key
+         FROM derived_jurisdiction j
+         JOIN descent d ON j.parent_key = d.jurisdiction_key
+       )
+       SELECT printf('%04d-%02d-%02d', d.year, d.month, d.day) AS token,
+              MAX(${hasExpr}) AS has_results
+       FROM election_event e
+       JOIN office o ON o.id_namespace = e.id_namespace AND o.office_id = e.office_id
+       JOIN research_date d ON d.date_id = e.date_id
+       JOIN derived_jurisdiction place
+         ON place.country_id = o.country_id AND place.geography_id = o.geography_id
+       ${join}
+       WHERE o.country_id = ?
+         AND place.jurisdiction_key IN (SELECT jurisdiction_key FROM descent)
+         AND e.date_resolution = 'resolved'
+         AND d.precision = 'day'
+         AND d.year IS NOT NULL AND d.month IS NOT NULL AND d.day IS NOT NULL
+       GROUP BY token
+       ORDER BY token`,
+    )
+    .all(...params) as Array<Record<string, unknown>>;
+  return rows.map((row) => {
+    const token = text(row.token);
+    return {
+      id: token,
+      sortKey: token,
+      label: token,
+      href: cyclePublicPath(args.countrySlug, token, args.scopeSegments),
+      hasResults: num(row.has_results) === 1,
+      current: token === args.currentToken,
+    };
+  });
+}
+
 function coverageOffices(db: DatabaseSync, jurisdictionKey: string): number {
   if (!tableExists(db, "derived_coverage")) return 0;
   const row = db.prepare("SELECT offices FROM derived_coverage WHERE jurisdiction_key = ?").get(jurisdictionKey);
@@ -609,7 +729,7 @@ function countryNotes(db: DatabaseSync, countryId: string): { name: string; note
 }
 
 export function loadCyclePage(
-  args: { country: string; dateToken: string; scope?: string[] },
+  args: { country: string; dateToken: string; scope?: string[]; resultMode?: "full" | "shell" },
   sqlitePath = resolveAtlasSqlitePath(),
 ): CycleLoad {
   const token = parseCycleDateToken(args.dateToken);
@@ -617,7 +737,7 @@ export function loadCyclePage(
   const scopeSegments = (args.scope ?? []).filter((segment) => segment.length > 0);
   if (!existsSync(sqlitePath)) return unavailable(sqlitePath);
   return withRead(sqlitePath, unavailable(sqlitePath, true), (db) =>
-    loadFromDatabase(db, args.country, token, scopeSegments, sqlitePath),
+    loadFromDatabase(db, args.country, token, scopeSegments, sqlitePath, args.resultMode ?? "full"),
   );
 }
 
@@ -627,6 +747,7 @@ function loadFromDatabase(
   token: CycleDateToken,
   scopeSegments: string[],
   sqlitePath: string,
+  resultMode: "full" | "shell",
 ): CycleLoad {
   if (!tableExists(db, "derived_jurisdiction") || !tableExists(db, "derived_cycle") || !tableExists(db, "election_event")) {
     return unavailable(sqlitePath, true);
@@ -664,17 +785,16 @@ function loadFromDatabase(
     const events = loadDayEvents(db, country.countryId, token.isoDate).filter((event) => inScope(event, keys));
     if (events.length === 0) return { status: "not_found" };
     const filterKey = scopeSegments.length > 0 ? scope.jurisdictionKey : text(cycle.scope_key);
-    const filterKeys = descendantKeys(db, filterKey);
-    const allDayEvents = loadDayEventsForSwitcher(db, country.countryId);
-    const results = loadResults(db, country.countryId, allDayEvents);
-    const proceedings = loadProceedings(db, events);
-    const sources = loadSources(db, events);
+    const results = resultMode === "full" ? loadResults(db, events) : new Map<string, CycleContestResult[]>();
+    const proceedings = resultMode === "full" ? loadProceedings(db, events) : new Map();
+    const sources = resultMode === "full" ? loadSources(db, events) : new Map();
+    const counts = resultMode === "shell" ? visibleCounts(db, country.countryId, events) : null;
     const contests = events
-      .map((event) => toContest(event, results, proceedings, sources))
+      .map((event) => toContest(event, results, proceedings, sources, counts?.get(eventKey(event))))
       .sort(compareContests);
-    const counts = cycleLevelCounts(events.map((event) => suppliedCountsFromEventRaw(event.rawJson)));
+    const supplied = cycleLevelCounts(events.map((event) => suppliedCountsFromEventRaw(event.rawJson)));
     const turnout =
-      counts.registered != null && counts.ballots != null ? turnoutPercent(counts.registered, counts.ballots) : null;
+      supplied.registered != null && supplied.ballots != null ? turnoutPercent(supplied.registered, supplied.ballots) : null;
     const tiers = [...new Set(contests.map((contest) => contest.tier).filter((tier): tier is string => Boolean(tier)))].sort();
     const label = dayCycleLabel({
       isoDate: token.isoDate,
@@ -684,7 +804,7 @@ function loadFromDatabase(
     });
     const path = cyclePublicPath(country.slug, token.isoDate, scopeSegments);
     const offices = coverageOffices(db, scope.jurisdictionKey);
-    const queued = offices > 0 && contests.every((contest) => contest.results.length === 0);
+    const queued = offices > 0 && contests.every((contest) => contest.resultCount === 0);
     return {
       status: "ready",
       model: {
@@ -697,17 +817,16 @@ function loadFromDatabase(
         countryName: notes.name,
         placeName: scope.name,
         crumbs: [{ label: "World", href: atlasRoutes.home }, ...ancestorCrumbs(db, scope.jurisdictionKey), { label: token.isoDate }],
-        ballots: counts.ballots,
+        ballots: supplied.ballots,
         turnout,
         contests,
-        switcher: switcherFromEvents({
-          events: allDayEvents,
-          results,
-          keys: filterKeys,
+        contestCount: contests.length,
+        switcher: daySwitcherChips(db, {
+          countryId: country.countryId,
+          scopeKey: filterKey,
           countrySlug: country.slug,
           scopeSegments,
           currentToken: token.isoDate,
-          kind: "day",
         }),
         queued,
         countryNotes: notes.notes,
@@ -722,10 +841,17 @@ function loadFromDatabase(
     return dateTokenFor(page) === dateTokenFor(token);
   });
   if (matched.length === 0) return { status: "not_found" };
-  const results = loadResults(db, country.countryId, unplaced);
-  const proceedings = loadProceedings(db, matched);
-  const sources = loadSources(db, matched);
-  const contests = matched.map((event) => toContest(event, results, proceedings, sources)).sort(compareContests);
+  const visibleMap = visibleCounts(db, country.countryId, unplaced);
+  const visible = new Set<string>();
+  for (const [key, count] of visibleMap) {
+    if (count > 0) visible.add(key);
+  }
+  const results = resultMode === "full" ? loadResults(db, matched) : new Map<string, CycleContestResult[]>();
+  const proceedings = resultMode === "full" ? loadProceedings(db, matched) : new Map();
+  const sources = resultMode === "full" ? loadSources(db, matched) : new Map();
+  const contests = matched
+    .map((event) => toContest(event, results, proceedings, sources, resultMode === "shell" ? (visibleMap.get(eventKey(event)) ?? 0) : undefined))
+    .sort(compareContests);
   const yearLabel = token.kind === "year" ? String(token.year) : "Date not supplied";
   const label = unplacedCycleLabel({
     yearLabel,
@@ -734,7 +860,7 @@ function loadFromDatabase(
   });
   const path = cyclePublicPath(country.slug, dateTokenFor(token), scopeSegments);
   const offices = coverageOffices(db, scope.jurisdictionKey);
-  const queued = offices > 0 && contests.every((contest) => contest.results.length === 0);
+  const queued = offices > 0 && contests.every((contest) => contest.resultCount === 0);
   const counts = cycleLevelCounts(matched.map((event) => suppliedCountsFromEventRaw(event.rawJson)));
   const turnout =
     counts.registered != null && counts.ballots != null ? turnoutPercent(counts.registered, counts.ballots) : null;
@@ -753,9 +879,10 @@ function loadFromDatabase(
       ballots: counts.ballots,
       turnout,
       contests,
+      contestCount: contests.length,
       switcher: switcherFromEvents({
         events: unplaced,
-        results,
+        visible,
         keys,
         countrySlug: country.slug,
         scopeSegments,
@@ -768,17 +895,146 @@ function loadFromDatabase(
   };
 }
 
-function loadDayEventsForSwitcher(db: DatabaseSync, countryId: string): EventFacts[] {
-  return db
-    .prepare(
-      `${EVENT_SELECT}
-       WHERE o.country_id = ?
-         AND e.date_resolution = 'resolved'
-         AND d.precision = 'day'
-         AND d.year IS NOT NULL AND d.month IS NOT NULL AND d.day IS NOT NULL`,
-    )
-    .all(countryId)
-    .map((row) => mapEvent(row));
+export type ContestPanel = {
+  results: CycleContestResult[];
+  resultCount: number;
+  page: number;
+  pageSize: number;
+  proceedings: CycleProceedingView[];
+  methodChips: string[];
+  provenance: CycleContest["provenance"];
+};
+
+/** One contest, one page of result rows. Uses the result_row primary key. */
+export function loadContestPanel(
+  args: {
+    idNamespace: string;
+    officeId: string;
+    historyKey: string;
+    eventId: string;
+    snapshotLabel: string | null;
+    page: number;
+  },
+  sqlitePath = resolveAtlasSqlitePath(),
+): ContestPanel {
+  const page = Number.isInteger(args.page) && args.page > 0 ? args.page : 1;
+  const empty: ContestPanel = {
+    results: [],
+    resultCount: 0,
+    page,
+    pageSize: CYCLE_RESULT_PAGE_SIZE,
+    proceedings: [],
+    methodChips: [],
+    provenance: {
+      publisher: null,
+      title: null,
+      url: null,
+      snapshotLabel: args.snapshotLabel,
+      evidenceGrade: null,
+      recordId: args.eventId,
+    },
+  };
+  if (!existsSync(sqlitePath)) return empty;
+  return withRead(sqlitePath, empty, (db) => {
+    const event: EventFacts = {
+      eventId: args.eventId,
+      historyKey: args.historyKey,
+      idNamespace: args.idNamespace,
+      officeId: args.officeId,
+      officeName: "",
+      bodyName: "",
+      jurisdictionKey: null,
+      tier: null,
+      seatSlug: null,
+      eventKind: "",
+      electoralSystem: null,
+      ballotBasis: "",
+      shareUnit: "",
+      lineageId: null,
+      releaseId: null,
+      rawJson: null,
+      snapshotLabel: args.snapshotLabel,
+      precision: null,
+      label: null,
+      year: null,
+      month: null,
+      day: null,
+      rangeStartLabel: null,
+      rangeEndLabel: null,
+      rangeStartYear: null,
+      rangeEndYear: null,
+      dateResolution: "",
+    };
+    const withheld = [...WITHHELD_EVIDENCE];
+    const totalRow = tableExists(db, "result_row")
+      ? db
+          .prepare(
+            `SELECT COUNT(*) AS n FROM result_row
+             WHERE id_namespace = ? AND office_id = ? AND history_key = ?
+               AND evidence_status NOT IN (${withheld.map(() => "?").join(", ")})`,
+          )
+          .get(args.idNamespace, args.officeId, args.historyKey, ...withheld)
+      : undefined;
+    const total = num(totalRow?.n);
+    const offset = (page - 1) * CYCLE_RESULT_PAGE_SIZE;
+    const rows = tableExists(db, "result_row")
+      ? db
+          .prepare(
+            `SELECT result_row_id, candidate_or_list_label, original_party_label,
+                    votes, votes_status, share, share_status, share_unit, seats, seats_status, elected_flag, evidence_status
+             FROM result_row
+             WHERE id_namespace = ? AND office_id = ? AND history_key = ?
+               AND evidence_status NOT IN (${withheld.map(() => "?").join(", ")})
+             ORDER BY votes IS NULL, votes DESC, result_row_id
+             LIMIT ? OFFSET ?`,
+          )
+          .all(args.idNamespace, args.officeId, args.historyKey, ...withheld, CYCLE_RESULT_PAGE_SIZE, offset)
+      : [];
+    const proceedings = loadProceedings(db, [event]).get(eventKey(event)) ?? [];
+    const source = loadSources(db, [event]).get(eventKey(event));
+    const meta = tableExists(db, "election_event")
+      ? (db
+          .prepare(
+            `SELECT electoral_system, ballot_basis, event_kind
+             FROM election_event
+             WHERE id_namespace = ? AND office_id = ? AND history_key = ?`,
+          )
+          .get(args.idNamespace, args.officeId, args.historyKey) as Record<string, unknown> | undefined)
+      : undefined;
+    return {
+      results: rows.map((row) => ({
+        id: text(row.result_row_id),
+        label: textOrNull(row.candidate_or_list_label),
+        partyLabel: textOrNull(row.original_party_label),
+        votes: numOrNull(row.votes),
+        votesStatus: text(row.votes_status),
+        share: numOrNull(row.share),
+        shareStatus: text(row.share_status),
+        shareUnit: text(row.share_unit),
+        seats: numOrNull(row.seats),
+        seatsStatus: text(row.seats_status),
+        elected: num(row.elected_flag) === 1,
+        evidenceStatus: text(row.evidence_status),
+      })),
+      resultCount: total,
+      page,
+      pageSize: CYCLE_RESULT_PAGE_SIZE,
+      proceedings,
+      methodChips: methodChips({
+        electoralSystem: textOrNull(meta?.electoral_system),
+        ballotBasis: text(meta?.ballot_basis),
+        eventKind: text(meta?.event_kind),
+      }),
+      provenance: {
+        publisher: source?.publisher ?? null,
+        title: source?.title ?? null,
+        url: source?.url ?? null,
+        snapshotLabel: args.snapshotLabel,
+        evidenceGrade: source?.evidenceGrade ?? null,
+        recordId: args.eventId,
+      },
+    };
+  });
 }
 
 export function cycleCsvForDay(countrySlug: string, isoDate: string, sqlitePath = resolveAtlasSqlitePath()): string | null {

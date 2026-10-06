@@ -6,6 +6,7 @@ import type { AtlasCoverage, AtlasJurisdiction } from "./derive/read";
 import { resolveAtlasSqlitePath } from "./paths";
 import { RESERVED_SLUG_SEGMENTS } from "./derive/slug";
 import { loadPlaceMetrics } from "./map/child-facts";
+import { countryHasSummary } from "./summary/read";
 import { openAtlasDatabase, tableExists } from "./sqlite";
 
 export const SEAT_PAGE_SIZE = 50;
@@ -606,19 +607,28 @@ function loadCycles(db: DatabaseSync, jurisdictionKey: string, countryId: string
   if (cycles.length === 0 || !canMatchContests) return cycles;
 
   const hasResultTable = tableExists(db, "result_row");
+  const useSummary = countryHasSummary(db, countryId) && tableExists(db, "derived_event_result_count");
   const dates = cycles.map((cycle) => cycle.isoDate);
   const placeholders = dates.map(() => "?").join(", ");
   const withheld = [...WITHHELD_EVIDENCE];
   const withheldPlaceholders = withheld.map(() => "?").join(", ");
-  const hasRowSql = hasResultTable
+  const hasRowSql = useSummary
     ? `EXISTS (
+                SELECT 1 FROM derived_event_result_count c
+                WHERE c.id_namespace = e.id_namespace
+                  AND c.office_id = e.office_id
+                  AND c.history_key = e.history_key
+                  AND c.visible_count > 0
+              )`
+    : hasResultTable
+      ? `EXISTS (
                 SELECT 1 FROM result_row r
                 WHERE r.id_namespace = e.id_namespace
                   AND r.office_id = e.office_id
                   AND r.history_key = e.history_key
                   AND r.evidence_status NOT IN (${withheldPlaceholders})
               )`
-    : "0";
+      : "0";
   const events = db
     .prepare(
       `WITH RECURSIVE descent AS (
@@ -642,7 +652,7 @@ function loadCycles(db: DatabaseSync, jurisdictionKey: string, countryId: string
          AND d.precision = 'day'
          AND printf('%04d-%02d-%02d', d.year, d.month, d.day) IN (${placeholders})`,
     )
-    .all(jurisdictionKey, ...(hasResultTable ? withheld : []), countryId, ...dates);
+    .all(jurisdictionKey, ...(useSummary || !hasResultTable ? [] : withheld), countryId, ...dates);
 
   const byDate = new Map<string, { eventIds: string[]; hasResults: boolean }>();
   for (const row of events) {

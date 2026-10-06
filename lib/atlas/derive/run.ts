@@ -27,6 +27,8 @@ import {
 import { loadApprovedPeople, resolvePeopleDir } from "../people/load";
 import { ensurePersonSchema } from "../people/schema";
 import { ensureDerivedSchema, ensureOfficeSlugSchema } from "./schema";
+import { ensureCatalogSummarySchema } from "../summary/schema";
+import { deleteCatalogSummary, insertCatalogSummary, summarizeSnapshot } from "../summary/write";
 import { emptySlugMeanings, type PublishedSlugMeanings } from "./slug";
 
 export type DeriveStats = {
@@ -113,7 +115,7 @@ function loadMaster(db: DatabaseSync, countryId?: string): MasterSnapshot {
   const offices: OfficeInput[] = db
     .prepare(
       `SELECT o.id_namespace, o.office_id, o.country_id, o.geography_id, o.name, o.office_type,
-              o.next_date_id, o.next_date_resolution, t.tier
+              o.next_date_id, o.next_date_resolution, o.lineage_id, t.tier
        FROM office o
        LEFT JOIN office_tier_classification t
          ON t.id_namespace = o.id_namespace AND t.office_id = o.office_id
@@ -131,6 +133,7 @@ function loadMaster(db: DatabaseSync, countryId?: string): MasterSnapshot {
       nextDateId: textOrNull(row.next_date_id),
       nextDateResolution: text(row.next_date_resolution),
       tier: textOrNull(row.tier),
+      lineageId: text(row.lineage_id),
     }));
   const events: EventInput[] = db
     .prepare(
@@ -219,6 +222,7 @@ function deleteDerived(db: DatabaseSync): void {
     DELETE FROM derived_seat_status;
     DELETE FROM derived_jurisdiction;
   `);
+  deleteCatalogSummary(db);
 }
 
 /** Delete derived rows for one country. Other countries stay. */
@@ -250,6 +254,7 @@ function deleteCountryDerived(db: DatabaseSync, countryId: string): void {
   ).run(countryId);
   db.prepare("DELETE FROM derived_seat_status WHERE country_id = ?").run(countryId);
   db.prepare("DELETE FROM derived_jurisdiction WHERE country_id = ?").run(countryId);
+  deleteCatalogSummary(db, countryId);
 }
 
 function insertDerived(
@@ -282,6 +287,7 @@ export function deriveAtlas(
 ): Omit<DeriveStats, "schema" | "searchSchema"> {
   ensureOfficeSlugSchema(db);
   ensurePersonSchema(db);
+  ensureCatalogSummarySchema(db);
   const countryId = options?.countryId?.trim() || undefined;
   db.exec("BEGIN IMMEDIATE;");
   try {
@@ -291,6 +297,7 @@ export function deriveAtlas(
     if (countryId) deleteCountryDerived(db, countryId);
     else deleteDerived(db);
     insertDerived(db, projected);
+    insertCatalogSummary(db, summarizeSnapshot(master));
     const search = rebuildSearchIndexes(db, countryId ? { countryId } : undefined);
     const people = loadApprovedPeople(db, resolvePeopleDir(), countryId ? { countryId } : undefined);
     db.exec("COMMIT;");

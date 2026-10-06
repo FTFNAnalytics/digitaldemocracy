@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { existsSync } from "node:fs";
 import type { DatabaseSync } from "node:sqlite";
 import { resolveAtlasSqlitePath } from "../paths";
+import { catalogSummaryReady } from "../summary/read";
 import { openAtlasDatabase, tableExists } from "../sqlite";
 
 /**
@@ -31,7 +32,17 @@ export function publicationEtag(sqlitePath = resolveAtlasSqlitePath()): string {
         );
       }
     }
-    if (tableExists(db, "result_row")) {
+    if (catalogSummaryReady(db) && tableExists(db, "derived_evidence_count")) {
+      const evidence = db
+        .prepare(
+          `SELECT evidence_status, SUM(n) AS n
+           FROM derived_evidence_count
+           GROUP BY evidence_status
+           ORDER BY evidence_status`,
+        )
+        .all();
+      for (const row of evidence) parts.push(`evidence\t${row.evidence_status}\t${row.n}`);
+    } else if (tableExists(db, "result_row")) {
       const evidence = db
         .prepare(`SELECT evidence_status, COUNT(*) AS n FROM result_row GROUP BY evidence_status ORDER BY evidence_status`)
         .all();

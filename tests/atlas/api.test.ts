@@ -83,7 +83,14 @@ describe("atlas api contracts", () => {
     const disallow = Array.isArray(rules) ? rules.flatMap((rule) => rule.disallow ?? []) : (rules.disallow ?? []);
     const blocked = Array.isArray(disallow) ? disallow : [disallow];
     expect(blocked).toContain("/api/");
+    expect(blocked).toContain("/*?contest=");
+    expect(blocked).toContain("/*?*contest=");
+    expect(blocked).toContain("/atlas/search");
+    expect(blocked).toContain("/electiondatabase/sources");
     expect(blocked).not.toContain("/atlas/downloads");
+    expect(blocked).not.toContain("/atlas");
+    const crawlDelay = Array.isArray(rules) ? rules[0]?.crawlDelay : rules.crawlDelay;
+    expect(crawlDelay).toBe(10);
     expect(STATIC_SITEMAP_PATHS).toContain("/electiondatabase/downloads");
     const entries = await sitemap({ id: Promise.resolve("0") });
     expect(entries.some((entry) => entry.url === "https://center4digitaldemocracy.com/atlas/downloads")).toBe(true);
@@ -97,6 +104,8 @@ describe("atlas api contracts", () => {
     const deploy = readFileSync(path.join(repoRoot, "docs/deploy.md"), "utf8");
     expect(deploy).toContain("limit_req_zone $binary_remote_addr zone=atlas_api:10m rate=10r/s;");
     expect(deploy).toContain("location /api/");
+    expect(deploy).toContain("npm run backfill:catalog-summary");
+    expect(deploy).toContain("Do not run `npm run derive:atlas`");
     expect(shouldWriteDownloadBundles({ VITEST: "1" })).toBe(false);
     expect(shouldWriteDownloadBundles({ VITEST: "1", ATLAS_DOWNLOADS_DIR: "/tmp/atlas-downloads" })).toBe(true);
     expect(shouldWriteDownloadBundles({})).toBe(true);

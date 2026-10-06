@@ -27,6 +27,7 @@ export type OfficeInput = {
   nextDateId: string | null;
   nextDateResolution: string;
   tier: string | null;
+  lineageId: string;
 };
 
 export type EventInput = {

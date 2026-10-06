@@ -28,6 +28,10 @@ import { REGIONAL_CALENDAR_LABEL as ROMANIA_REGIONAL_CALENDAR_LABEL } from "./ro
 import { REGIONAL_CALENDAR_LABEL as SPAIN_REGIONAL_CALENDAR_LABEL } from "./spain/identity";
 import { SEARCH_QUERY_MAX } from "./search-params";
 import { searchDatabase } from "./search";
+import { summaryTotals } from "./summary/read";
+
+/** Result rows serialized on one public event page. */
+export const ATLAS_EVENT_RESULT_CAP = 40;
 import { openAtlasDatabase, tableExists } from "./sqlite";
 
 export type AtlasLoadStatus = "ready" | "missing" | "empty" | "unavailable";
@@ -321,9 +325,17 @@ export function loadAtlasCatalog(sqlitePath = resolveAtlasSqlitePath()): AtlasCa
         };
       }
 
+      const summed = summaryTotals(db);
       const lineages = db
         .prepare(
-          `SELECT l.lineage_id, l.description, l.provenance_kind, p.release_id, r.research_snapshot_label,
+          summed
+            ? `SELECT l.lineage_id, l.description, l.provenance_kind, p.release_id, r.research_snapshot_label,
+                  COALESCE((SELECT SUM(s.offices) FROM derived_lineage_office s WHERE s.lineage_id = l.lineage_id), 0) AS office_count
+           FROM dataset_lineage l
+           JOIN publication_release p ON p.lineage_id = l.lineage_id
+           LEFT JOIN dataset_release r ON r.lineage_id = p.lineage_id AND r.release_id = p.release_id
+           ORDER BY l.lineage_id`
+            : `SELECT l.lineage_id, l.description, l.provenance_kind, p.release_id, r.research_snapshot_label,
                   (SELECT COUNT(*) FROM office o WHERE o.lineage_id = l.lineage_id) AS office_count
            FROM dataset_lineage l
            JOIN publication_release p ON p.lineage_id = l.lineage_id
@@ -343,7 +355,13 @@ export function loadAtlasCatalog(sqlitePath = resolveAtlasSqlitePath()): AtlasCa
 
       const allCountries = db
         .prepare(
-          `SELECT c.country_id, c.name, c.country_code, c.region_id, c.coverage_status, c.polity_kind, c.notes, c.lineage_id,
+          summed
+            ? `SELECT c.country_id, c.name, c.country_code, c.region_id, c.coverage_status, c.polity_kind, c.notes, c.lineage_id,
+                  COALESCE(s.offices, 0) AS office_count,
+                  COALESCE(s.events, 0) AS event_count
+           FROM country c
+           LEFT JOIN derived_country_summary s ON s.country_id = c.country_id`
+            : `SELECT c.country_id, c.name, c.country_code, c.region_id, c.coverage_status, c.polity_kind, c.notes, c.lineage_id,
                   (SELECT COUNT(*) FROM office o WHERE o.country_id = c.country_id) AS office_count,
                   (SELECT COUNT(*) FROM election_event e JOIN office o ON o.id_namespace = e.id_namespace AND o.office_id = e.office_id
                    WHERE o.country_id = c.country_id) AS event_count
@@ -371,14 +389,21 @@ export function loadAtlasCatalog(sqlitePath = resolveAtlasSqlitePath()): AtlasCa
 
       const countries = allCountries.filter((row) => row.officeCount > 0);
       const statusOnlyCountries = allCountries.filter((row) => row.officeCount === 0);
-      const totals = {
-        countriesWithOffices: countries.length,
-        offices: num(db.prepare("SELECT COUNT(*) AS n FROM office").get()?.n),
-        events: num(db.prepare("SELECT COUNT(*) AS n FROM election_event").get()?.n),
-        resultRows: tableExists(db, "result_row")
-          ? num(db.prepare("SELECT COUNT(*) AS n FROM result_row").get()?.n)
-          : 0,
-      };
+      const totals = summed
+        ? {
+            countriesWithOffices: countries.length,
+            offices: summed.offices,
+            events: summed.events,
+            resultRows: summed.resultRows,
+          }
+        : {
+            countriesWithOffices: countries.length,
+            offices: num(db.prepare("SELECT COUNT(*) AS n FROM office").get()?.n),
+            events: num(db.prepare("SELECT COUNT(*) AS n FROM election_event").get()?.n),
+            resultRows: tableExists(db, "result_row")
+              ? num(db.prepare("SELECT COUNT(*) AS n FROM result_row").get()?.n)
+              : 0,
+          };
 
       if (lineages.length === 0 && countries.length === 0) {
         return {
@@ -425,14 +450,27 @@ export function getAtlasCountry(
   if (catalog.status !== "ready") return null;
   try {
     return withDatabase(sqlitePath, (db) => {
+      const summarized = tableExists(db, "derived_country_summary");
       const row = db
         .prepare(
-          `SELECT c.country_id, c.name, c.country_code, c.region_id, c.coverage_status, c.polity_kind, c.notes,
-                  c.lineage_id, c.screening_as_of_label,
-                  (SELECT COUNT(*) FROM office o WHERE o.country_id = c.country_id) AS office_count,
-                  (SELECT COUNT(*) FROM election_event e JOIN office o ON o.id_namespace = e.id_namespace AND o.office_id = e.office_id
-                   WHERE o.country_id = c.country_id) AS event_count
-           FROM country c WHERE c.country_id = ?`,
+          summarized
+            ? `SELECT c.country_id, c.name, c.country_code, c.region_id, c.coverage_status, c.polity_kind, c.notes,
+                      c.lineage_id, c.screening_as_of_label,
+                      CASE WHEN s.country_id IS NOT NULL THEN s.offices
+                           ELSE (SELECT COUNT(*) FROM office o WHERE o.country_id = c.country_id) END AS office_count,
+                      CASE WHEN s.country_id IS NOT NULL THEN s.events
+                           ELSE (SELECT COUNT(*) FROM election_event e
+                                 JOIN office o ON o.id_namespace = e.id_namespace AND o.office_id = e.office_id
+                                 WHERE o.country_id = c.country_id) END AS event_count
+               FROM country c
+               LEFT JOIN derived_country_summary s ON s.country_id = c.country_id
+               WHERE c.country_id = ?`
+            : `SELECT c.country_id, c.name, c.country_code, c.region_id, c.coverage_status, c.polity_kind, c.notes,
+                      c.lineage_id, c.screening_as_of_label,
+                      (SELECT COUNT(*) FROM office o WHERE o.country_id = c.country_id) AS office_count,
+                      (SELECT COUNT(*) FROM election_event e JOIN office o ON o.id_namespace = e.id_namespace AND o.office_id = e.office_id
+                       WHERE o.country_id = c.country_id) AS event_count
+               FROM country c WHERE c.country_id = ?`,
         )
         .get(countryId);
       if (!row) return null;
@@ -905,20 +943,28 @@ export function listAtlasResults(
   officeId: string,
   historyKey: string,
   sqlitePath = resolveAtlasSqlitePath(),
+  options?: { idNamespace?: string; limit?: number },
 ): AtlasResultRow[] {
   if (!existsSync(sqlitePath)) return [];
+  const limit = options?.limit ?? ATLAS_EVENT_RESULT_CAP;
+  const namespace = options?.idNamespace?.trim() || "";
   try {
     return withDatabase(sqlitePath, (db) => {
       if (!tableExists(db, "result_row")) return [];
+      const where = namespace
+        ? "id_namespace = ? AND office_id = ? AND history_key = ?"
+        : "office_id = ? AND history_key = ?";
+      const params = namespace ? [namespace, officeId, historyKey, limit] : [officeId, historyKey, limit];
       return db
         .prepare(
           `SELECT result_row_id, candidate_or_list_label, original_party_label, votes, votes_status,
                   share, share_status, seats, seats_status, elected_flag, evidence_status
            FROM result_row
-           WHERE office_id = ? AND history_key = ?
-           ORDER BY result_row_id`,
+           WHERE ${where}
+           ORDER BY votes IS NULL, votes DESC, result_row_id
+           LIMIT ?`,
         )
-        .all(officeId, historyKey)
+        .all(...params)
         .map((row) => ({
           resultRowId: text(row.result_row_id),
           label: textOrNull(row.candidate_or_list_label),
@@ -998,19 +1044,25 @@ export function listAtlasProceedings(
   officeId: string,
   historyKey: string,
   sqlitePath = resolveAtlasSqlitePath(),
+  options?: { idNamespace?: string },
 ): AtlasProceedingRow[] {
   if (!existsSync(sqlitePath)) return [];
+  const namespace = options?.idNamespace?.trim() || "";
   try {
     return withDatabase(sqlitePath, (db) => {
       if (!tableExists(db, "proceeding")) return [];
+      const where = namespace
+        ? "id_namespace = ? AND office_id = ? AND history_key = ?"
+        : "office_id = ? AND history_key = ?";
+      const params = namespace ? [namespace, officeId, historyKey] : [officeId, historyKey];
       return db
         .prepare(
           `SELECT proceeding_id, kind, sequence_no, supersedes_id, legal_outcome
            FROM proceeding
-           WHERE office_id = ? AND history_key = ?
+           WHERE ${where}
            ORDER BY sequence_no, proceeding_id`,
         )
-        .all(officeId, historyKey)
+        .all(...params)
         .map((row) => ({
           proceedingId: text(row.proceeding_id),
           kind: text(row.kind),
