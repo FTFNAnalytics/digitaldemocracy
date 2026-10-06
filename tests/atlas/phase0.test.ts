@@ -669,12 +669,12 @@ describe("Phase 0 tier-classification drafts", () => {
   it("pins the Bulgaria schema path to the Prompt BI draft and preserves inherited identities", () => {
     const preserved = readJson<TierFile>("docs/phase1/bulgaria/baseline/Prompt_P/Accepted_Tiers.json");
     const bulgaria = readJson<
-      TierFile & {
+      Omit<TierFile, "classifications"> & {
         status: string;
         applied_changes?: number;
         counts_by_production_disposition?: Record<string, number>;
         classifications: Array<
-          TierFile["classifications"][number] & {
+          Classification & {
             production_disposition?: string;
             justin_approved?: boolean;
             applied?: boolean;
