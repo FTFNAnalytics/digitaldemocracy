@@ -23,6 +23,7 @@
     "import:atlas": "node --experimental-sqlite --no-warnings --import tsx scripts/atlas/import.ts",
     "derive:atlas": "node --experimental-sqlite --no-warnings --import tsx scripts/atlas/derive.ts",
     "derive:atlas:country": "node --experimental-sqlite --no-warnings --import tsx scripts/atlas/derive.ts",
+    "backfill:catalog-summary": "node --experimental-sqlite --no-warnings --import tsx scripts/atlas/backfill-catalog-summary.ts",
     "people:propose": "node --experimental-sqlite --no-warnings --import tsx scripts/people/propose.ts",
     "validate:data": "node --import tsx scripts/validate/cli.ts",
     "validate:evidence": "node --import tsx scripts/validate/release-evidence.ts"

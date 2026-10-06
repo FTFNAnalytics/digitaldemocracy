@@ -20,7 +20,9 @@ import {
   listAtlasSeatStatuses,
   listAtlasUnplacedCycles,
 } from "../../lib/atlas/read";
+import { loadAtlasCatalog } from "../../lib/atlas/read";
 import { openAtlasDatabase } from "../../lib/atlas/sqlite";
+import { backfillCatalogSummary } from "../../lib/atlas/summary/write";
 
 const repoRoot = path.join(import.meta.dirname, "../..");
 
@@ -557,6 +559,64 @@ describe("Albania derived projection", () => {
       const coverageRows = read.prepare("SELECT COUNT(*) AS n FROM derived_coverage").get();
       const jurisdictionRows = read.prepare("SELECT COUNT(*) AS n FROM derived_jurisdiction").get();
       expect(coverageRows?.n).toBe(jurisdictionRows?.n);
+
+      const summaryGap = read
+        .prepare(
+          `SELECT COUNT(*) AS n
+           FROM derived_country_summary s
+           WHERE s.offices != (SELECT COUNT(*) FROM office o WHERE o.country_id = s.country_id)
+              OR s.events != (
+                   SELECT COUNT(*) FROM election_event e
+                   JOIN office o ON o.id_namespace = e.id_namespace AND o.office_id = e.office_id
+                   WHERE o.country_id = s.country_id
+                 )
+              OR s.result_rows != (SELECT COUNT(*) FROM result_row r WHERE r.country_id = s.country_id)`,
+        )
+        .get() as { n?: number };
+      expect(Number(summaryGap?.n)).toBe(0);
+      const visibleGap = read
+        .prepare(
+          `WITH live AS (
+             SELECT id_namespace, office_id, history_key, COUNT(*) AS n
+             FROM result_row
+             WHERE evidence_status NOT IN (
+               'preliminary', 'disputed', 'superseded', 'structurally_unavailable', 'not_applicable'
+             )
+             GROUP BY id_namespace, office_id, history_key
+           )
+           SELECT COUNT(*) AS n
+           FROM live
+           LEFT JOIN derived_event_result_count c
+             ON c.id_namespace = live.id_namespace
+            AND c.office_id = live.office_id
+            AND c.history_key = live.history_key
+           WHERE c.visible_count IS NULL OR c.visible_count != live.n`,
+        )
+        .get() as { n?: number };
+      expect(Number(visibleGap?.n)).toBe(0);
+
+      const catalogBefore = loadAtlasCatalog(sqlitePath);
+      expect(catalogBefore.status).toBe("ready");
+      const summaryWriter = openAtlasDatabase(sqlitePath);
+      try {
+        summaryWriter
+          .prepare("UPDATE derived_country_summary SET result_rows = result_rows + 9 WHERE country_id = 'albania'")
+          .run();
+        const catalogSentinel = loadAtlasCatalog(sqlitePath);
+        expect(catalogSentinel.totals.resultRows).toBe(catalogBefore.totals.resultRows + 9);
+        summaryWriter
+          .prepare("UPDATE derived_country_summary SET result_rows = result_rows - 9 WHERE country_id = 'albania'")
+          .run();
+        expect(loadAtlasCatalog(sqlitePath).totals.resultRows).toBe(catalogBefore.totals.resultRows);
+        const filled = backfillCatalogSummary(summaryWriter, "albania");
+        expect(filled.countries).toBeGreaterThan(0);
+      } finally {
+        summaryWriter.close();
+      }
+      const catalogAfterBackfill = loadAtlasCatalog(sqlitePath);
+      expect(catalogAfterBackfill.totals.offices).toBe(catalogBefore.totals.offices);
+      expect(catalogAfterBackfill.totals.events).toBe(catalogBefore.totals.events);
+      expect(catalogAfterBackfill.totals.resultRows).toBe(catalogBefore.totals.resultRows);
 
       const levels = read
         .prepare("SELECT level_label, ambiguous, COUNT(*) AS n FROM derived_jurisdiction GROUP BY level_label, ambiguous ORDER BY level_label")

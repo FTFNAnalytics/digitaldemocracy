@@ -15,6 +15,7 @@ import type { ResultBarRow } from "@/components/atlas/types";
 import {
   formatAtlasDate,
   getAtlasCountry,
+  ATLAS_EVENT_RESULT_CAP,
   listAtlasProceedings,
   listAtlasResults,
   loadAtlasCatalog,
@@ -117,6 +118,21 @@ export function FoundEventPage({
         ) : (
           <div className="mt-4">
             <ResultsTable caption={`Results for ${event.officeName}`} rows={bars} shareUnit={event.shareUnit} />
+            {event.resultCount > results.length ? (
+              <p className="mt-3 text-sm text-atlas-ink-2">
+                Showing {results.length.toLocaleString("en-US")} of {event.resultCount.toLocaleString("en-US")} result
+                rows.
+                {cycleHref ? (
+                  <>
+                    {" "}
+                    <Link href={cycleHref} className="font-semibold text-atlas-accent hover:underline">
+                      Open the election date
+                    </Link>{" "}
+                    for the paged contest.
+                  </>
+                ) : null}
+              </p>
+            ) : null}
           </div>
         )}
         <ProvenanceFooter
@@ -208,8 +224,13 @@ export default async function AtlasEventPage({ params }: Props) {
   return (
     <FoundEventPage
       event={event}
-      results={listAtlasResults(event.officeId, event.historyKey)}
-      proceedings={listAtlasProceedings(event.officeId, event.historyKey)}
+      results={listAtlasResults(event.officeId, event.historyKey, catalog.sqlitePath, {
+        idNamespace: event.idNamespace,
+        limit: ATLAS_EVENT_RESULT_CAP,
+      })}
+      proceedings={listAtlasProceedings(event.officeId, event.historyKey, catalog.sqlitePath, {
+        idNamespace: event.idNamespace,
+      })}
       snapshotLabel={publication?.snapshotLabel ?? null}
       releaseId={publication?.releaseId ?? null}
       lineageId={lineageId}

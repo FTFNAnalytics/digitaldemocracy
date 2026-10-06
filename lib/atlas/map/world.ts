@@ -2,6 +2,7 @@ import { existsSync } from "node:fs";
 import type { DatabaseSync } from "node:sqlite";
 import { coverageState } from "@/components/atlas/labels";
 import type { AtlasCoverageSnapshot } from "@/components/atlas/types";
+import { summaryResultRowsByCountry } from "../summary/read";
 import { openAtlasDatabase, tableExists } from "../sqlite";
 import { coveragePaint } from "./model";
 import worldLand from "./world-land.json";
@@ -67,6 +68,8 @@ export function countResultRowsByCountry(sqlitePath: string): Map<string, number
   let db: DatabaseSync | null = null;
   try {
     db = openAtlasDatabase(sqlitePath, { readOnly: true });
+    const summarized = summaryResultRowsByCountry(db);
+    if (summarized) return summarized;
     if (!tableExists(db, "result_row")) return new Map();
     const counts = new Map<string, number>();
     for (const row of db.prepare("SELECT country_id, COUNT(*) AS n FROM result_row GROUP BY country_id").all() as Array<{

@@ -43,12 +43,14 @@ function ContestList({
   q,
   selectedId,
   showPrecision,
+  listPage,
 }: {
   contests: CycleContest[];
   path: string;
   q: string;
   selectedId: string | null;
   showPrecision: boolean;
+  listPage: number;
 }) {
   const groups: Array<{ heading: string; bodies: Array<{ name: string; contests: CycleContest[] }> }> = [];
   for (const contest of contests) {
@@ -84,7 +86,7 @@ function ContestList({
                     return (
                       <li key={contest.eventId}>
                         <Link
-                          href={contestHref(path, contest.eventId, q)}
+                          href={contestHref(path, contest.eventId, q, { list: listPage })}
                           data-contest={contest.eventId}
                           aria-current={current ? "page" : undefined}
                           className={
@@ -111,7 +113,21 @@ function ContestList({
   );
 }
 
-function ContestPanel({ contest }: { contest: CycleContest }) {
+function ContestPanel({
+  contest,
+  path,
+  q,
+  listPage,
+  resultPage,
+  resultPageSize,
+}: {
+  contest: CycleContest;
+  path: string;
+  q: string;
+  listPage: number;
+  resultPage: number;
+  resultPageSize: number;
+}) {
   return (
     <section data-selected-contest={contest.eventId} aria-labelledby="cycle-contest-heading">
       <h2 id="cycle-contest-heading" className="font-atlas-heading text-2xl text-atlas-ink">
@@ -157,11 +173,40 @@ function ContestPanel({ contest }: { contest: CycleContest }) {
             <p>Missing results are not shown as zero.</p>
           </EmptyState>
         ) : (
-          <ResultsTable
-            caption={`Results for ${contest.officeName}`}
-            rows={toBars(contest.results)}
-            shareUnit={contest.shareUnit}
-          />
+          <>
+            <ResultsTable
+              caption={`Results for ${contest.officeName}`}
+              rows={toBars(contest.results)}
+              shareUnit={contest.shareUnit}
+            />
+            {contest.resultCount > resultPageSize ? (
+              <p className="mt-3 text-sm text-atlas-ink-2">
+                Showing {((resultPage - 1) * resultPageSize + 1).toLocaleString("en-US")}–
+                {((resultPage - 1) * resultPageSize + contest.results.length).toLocaleString("en-US")} of{" "}
+                {contest.resultCount.toLocaleString("en-US")} result rows.
+              </p>
+            ) : null}
+            {contest.resultCount > resultPageSize ? (
+              <p className="mt-2 flex flex-wrap gap-4 text-sm">
+                {resultPage > 1 ? (
+                  <Link
+                    href={contestHref(path, contest.eventId, q, { list: listPage, results: resultPage - 1 })}
+                    className="font-semibold text-atlas-accent hover:underline"
+                  >
+                    Previous results
+                  </Link>
+                ) : null}
+                {(resultPage - 1) * resultPageSize + contest.results.length < contest.resultCount ? (
+                  <Link
+                    href={contestHref(path, contest.eventId, q, { list: listPage, results: resultPage + 1 })}
+                    className="font-semibold text-atlas-accent hover:underline"
+                  >
+                    Show more results
+                  </Link>
+                ) : null}
+              </p>
+            ) : null}
+          </>
         )}
       </div>
       <ProvenanceFooter
@@ -183,13 +228,37 @@ function ContestPanel({ contest }: { contest: CycleContest }) {
   );
 }
 
-export function CyclePageView({ model, contest, q }: { model: CyclePageModel; contest: string; q: string }) {
+export function CyclePageView({
+  model,
+  contest,
+  q,
+  listPage = 1,
+  listPageSize = model.contests.length || 1,
+  listTotal,
+  contestsPaged = false,
+  resultPage = 1,
+  resultPageSize = 40,
+}: {
+  model: CyclePageModel;
+  contest: string;
+  q: string;
+  listPage?: number;
+  listPageSize?: number;
+  /** Full filtered contest count when `model.contests` is already one page. */
+  listTotal?: number;
+  contestsPaged?: boolean;
+  resultPage?: number;
+  resultPageSize?: number;
+}) {
   const selectedId = selectedContestId(
     model.contests.map((item) => item.eventId),
     contest,
   );
   const selected = model.contests.find((item) => item.eventId === selectedId) ?? null;
-  const visible = model.contests.filter((item) => filterContestText(item.officeName, item.bodyName, q));
+  const filtered = model.contests.filter((item) => filterContestText(item.officeName, item.bodyName, q));
+  const listStart = Math.max(0, (listPage - 1) * listPageSize);
+  const visible = contestsPaged ? filtered : filtered.slice(listStart, listStart + listPageSize);
+  const listPages = Math.max(1, Math.ceil((listTotal ?? filtered.length) / listPageSize));
   const turnout = model.turnout == null ? null : readerTurnout(model.turnout);
 
   return (
@@ -199,7 +268,7 @@ export function CyclePageView({ model, contest, q }: { model: CyclePageModel; co
         name={model.label}
         level={model.dateChip}
         facts={[
-          { label: "Contests", value: model.contests.length.toLocaleString("en-US") },
+          { label: "Contests", value: model.contestCount.toLocaleString("en-US") },
           { label: "Place", value: model.placeName },
         ]}
         summary={
@@ -266,7 +335,28 @@ export function CyclePageView({ model, contest, q }: { model: CyclePageModel; co
             q={q}
             selectedId={selectedId}
             showPrecision={model.kind !== "day"}
+            listPage={listPage}
           />
+          {listPages > 1 ? (
+            <p className="mt-3 flex flex-wrap gap-4 text-sm">
+              {listPage > 1 ? (
+                <Link
+                  href={contestHref(model.path, selectedId, q, { list: listPage - 1 })}
+                  className="font-semibold text-atlas-accent hover:underline"
+                >
+                  Previous contests
+                </Link>
+              ) : null}
+              {listPage < listPages ? (
+                <Link
+                  href={contestHref(model.path, selectedId, q, { list: listPage + 1 })}
+                  className="font-semibold text-atlas-accent hover:underline"
+                >
+                  More contests
+                </Link>
+              ) : null}
+            </p>
+          ) : null}
         </aside>
         <div className="min-w-0">
           {model.queued ? (
@@ -285,7 +375,14 @@ export function CyclePageView({ model, contest, q }: { model: CyclePageModel; co
               ) : null}
             </div>
           ) : selected ? (
-            <ContestPanel contest={selected} />
+            <ContestPanel
+              contest={selected}
+              path={model.path}
+              q={q}
+              listPage={listPage}
+              resultPage={resultPage}
+              resultPageSize={resultPageSize}
+            />
           ) : null}
         </div>
       </div>

@@ -141,3 +141,27 @@ location /api/ {
 ```
 
 `limit_req_zone` belongs in the `http` block. `location /api/` belongs in the server that proxies to Node. `sudo nginx -t && sudo systemctl reload nginx` after editing. Country CSV bundles under `/atlas/downloads/` are static files from `public/atlas/downloads/` (copied into the standalone tree by `prepare-standalone`) and are not part of this limit. `npm run derive:atlas` rewrites every country's zip; run it before `npm run build` when a full publication should ship inside the standalone `public/` tree, or copy `public/atlas/downloads/` into `.next/standalone/public/atlas/downloads/` after a later full derive. A one-country VPS import already rebuilds that country's derived rows and zip. Do not follow it with `npm run derive:atlas`. Country-only rebuild: `npm run derive:atlas:country -- --country=<country_id>`. See [VPS publish mode](phase2/Continuity_Import.md#vps-publish-mode).
+
+## Catalog summary rollout
+
+Home, `/atlas`, and the map read `derived_country_summary` instead of `COUNT(*)` on `result_row`. Election date pages cache a contest shell with no result rows and load one contest page (40 rows) by primary key. `app/robots.ts` asks crawlers to skip `?contest=`, `?results=`, `?list=`, `/atlas/search`, and `/electiondatabase/sources`.
+
+Apply this once on the VPS, against the existing master. Do not run `npm run derive:atlas`. Do not set `ATLAS_IMPORT_SCOPE=all`.
+
+```bash
+cd /ABSOLUTE/APP_ROOT
+git pull
+npm ci
+ATLAS_SQLITE_PATH=/var/lib/cdd/atlas.sqlite npm run migrate:atlas
+ATLAS_SQLITE_PATH=/var/lib/cdd/atlas.sqlite npm run backfill:catalog-summary
+CONTENT_ALLOW_PLACEHOLDERS=1 npm run build
+sudo systemctl restart <unit>
+```
+
+`migrate:atlas` applies `0008_atlas_catalog_summary.sql` (empty summary tables, plus indexes on `office(office_id)`, `election_event(event_id)`, and event record locators). It does not build an index on `result_row`. Run the backfill before restarting Node. Until every country that has offices has a summary row, catalog and map reads fall back to a full `result_row` scan.
+
+The backfill is one SQL aggregate per statement. It sets a 16MB page cache, turns mmap off, and stores temp tables in a file. It can run while the old server is up: readers on the previous snapshot keep going until the backfill commits. The script prints `countries=`, `events_with_visible_results=`, and `elapsed_ms=`.
+
+After this, a country import or `npm run derive:atlas:country -- --country=<country_id>` refreshes that country's summary slice. A later `npm run backfill:catalog-summary -- --country=<country_id>` repairs one slice and still scans `result_row` (there is no `country_id` index). Prefer the no-country form for the one-time fill.
+
+`/electiondatabase` reads the gzip JSON dataset, not this SQLite scan. It stays on its own routes. The first request after a restart still parses that JSON. Later requests reuse the process cache.

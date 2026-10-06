@@ -210,11 +210,18 @@ function sharedCount(values: Array<number | null>): number | null {
   return first;
 }
 
-export function contestHref(path: string, contestId: string | null, q: string): string {
+export function contestHref(
+  path: string,
+  contestId: string | null,
+  q: string,
+  extra?: { results?: number; list?: number },
+): string {
   const params = new URLSearchParams();
   const query = q.trim();
   if (query) params.set("q", query);
   if (contestId) params.set("contest", contestId);
+  if (extra?.list && extra.list > 1) params.set("list", String(extra.list));
+  if (extra?.results && extra.results > 1) params.set("results", String(extra.results));
   const text = params.toString();
   return text ? `${path}?${text}` : path;
 }
