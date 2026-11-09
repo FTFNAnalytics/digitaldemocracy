@@ -41,17 +41,57 @@
  * ATLAS_PUBLISH_RESTAGE=1 keep the full-file restage. Do not follow a
  * one-country import with `npm run derive:atlas`.
  *
+ * Full research ZIPs stay outside git. Pass one country's ZIP with
+ * ATLAS_PACK_ZIP or --pack= after ATLAS_IMPORT_SCOPE is that country.
+ * Scope `all` is refused. Peru Prompt BK is ZIP-only here (offices land separately).
+ *
  * See docs/phase2/Continuity_Import.md.
  */
 import { importAtlasLineages, parseImportScope } from "../../lib/atlas/continuity/import";
+import { loadCountryPackResults, packReportLines } from "../../lib/atlas/pack-results/load";
 import { resolveAtlasAttemptsSqlitePath, resolveAtlasSqlitePath } from "../../lib/atlas/paths";
 import { describeAtlasPublishMode } from "../../lib/atlas/publish-mode";
 
-function main() {
+function packRequest(): { zip: string | null; dryRun: boolean } {
+  let zip = process.env.ATLAS_PACK_ZIP?.trim() ?? "";
+  let dryRun = ["1", "true", "yes"].includes((process.env.ATLAS_PACK_DRY_RUN ?? "").trim().toLowerCase());
+  for (const arg of process.argv.slice(2)) {
+    if (arg === "--dry-run") dryRun = true;
+    else if (arg.startsWith("--pack=")) zip = arg.slice("--pack=".length).trim();
+  }
+  return { zip: zip || null, dryRun };
+}
+
+async function main() {
   const sqlitePath = resolveAtlasSqlitePath();
   const attemptsPath = resolveAtlasAttemptsSqlitePath();
   const scope = parseImportScope();
+  const pack = packRequest();
   try {
+    if ((pack.zip || pack.dryRun) && scope === "all") {
+      throw new Error(
+        "Refusing a research ZIP when ATLAS_IMPORT_SCOPE is all or unset. Set ATLAS_IMPORT_SCOPE to one country.",
+      );
+    }
+    if (scope === "peru" && !pack.zip) {
+      throw new Error(
+        "ATLAS_IMPORT_SCOPE=peru loads events and results from a full research ZIP (--pack= or ATLAS_PACK_ZIP). It is not part of ATLAS_IMPORT_SCOPE=all, and this command does not import Peru offices.",
+      );
+    }
+    if (pack.dryRun) {
+      if (!pack.zip) throw new Error("Pack --dry-run requires --pack=<zip> or ATLAS_PACK_ZIP.");
+      const report = await loadCountryPackResults({
+        scope,
+        zipPath: pack.zip,
+        sqlitePath,
+        dryRun: true,
+        derive: false,
+      });
+      console.log("import:atlas");
+      console.log(`scope=${scope}`);
+      for (const line of packReportLines(report)) console.log(line);
+      return;
+    }
     const result = importAtlasLineages(
       {
         root: process.cwd(),
@@ -1389,6 +1429,16 @@ function main() {
       console.log(`nz_events=${result.nz.counts.events}`);
       console.log(`nz_result_rows=${result.nz.counts.result_rows}`);
     }
+    if (pack.zip) {
+      const report = await loadCountryPackResults({
+        scope,
+        zipPath: pack.zip,
+        sqlitePath,
+        dryRun: false,
+        derive: true,
+      });
+      for (const line of packReportLines(report)) console.log(line);
+    }
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     console.error(`import:atlas failed: ${message}`);
@@ -1396,4 +1446,4 @@ function main() {
   }
 }
 
-main();
+void main();

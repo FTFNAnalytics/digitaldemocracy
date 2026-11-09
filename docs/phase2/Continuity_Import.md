@@ -242,6 +242,53 @@ ATLAS_IMPORT_SCOPE=austria npm run import:atlas
 # npm run derive:atlas
 ```
 
+## VPS — full research ZIP (events and results)
+
+Slim lands for the United Kingdom, Italy, Germany, and France publish offices and **0** events and **0** result rows. The full research ZIPs stay outside git. Peru Prompt BK is the first ZIP on disk (`Peru_Prompt_BK_2026-10-31.zip`); its office/tier land is a separate change, so this command does not create Peru offices.
+
+The loader is scoped. `ATLAS_IMPORT_SCOPE=all` is refused when a ZIP is set. It replaces only that country's events and results. Offices stay as the scoped office import published them. A pack office register whose SHA-256 does not match the pinned full-pack register aborts before any write. Rows that do not reference a published office, event, reporting unit, place, or ticket component are listed in a rejects file and are not guessed. Incomplete votes (null, blank, `missing_vote_components` > 0, or `votes_incomplete`) stay null, not zero. An explicit numeric zero stays zero.
+
+Backup with SQLite's online backup, then import, then derive only that country. Do not run `npm run derive:atlas`.
+
+```bash
+export ATLAS_SQLITE_PATH=/var/lib/cdd/atlas.sqlite
+export ATLAS_ATTEMPTS_SQLITE_PATH=/var/lib/cdd/atlas-attempts.sqlite
+export ATLAS_OPERATOR=genevieve
+
+mkdir -p /var/lib/cdd/backups /var/lib/cdd/packs
+sqlite3 "$ATLAS_SQLITE_PATH" ".backup /var/lib/cdd/backups/atlas-before-united-kingdom-pack.sqlite"
+
+# Dry run. Reads the ZIP and the master. Does not write events, results, or offices.
+ATLAS_IMPORT_SCOPE=united_kingdom \
+  ATLAS_PACK_ZIP=/var/lib/cdd/packs/united-kingdom.zip \
+  npm run import:atlas -- --dry-run
+
+# Scoped office import (already-live countries) plus pack events and results.
+# Re-running replaces that country's events and results only.
+ATLAS_IMPORT_SCOPE=united_kingdom \
+  ATLAS_PACK_ZIP=/var/lib/cdd/packs/united-kingdom.zip \
+  npm run import:atlas
+
+npm run derive:atlas:country -- --country=united-kingdom
+
+sqlite3 "$ATLAS_SQLITE_PATH" "SELECT COUNT(*) FROM election_event e JOIN office o ON o.id_namespace=e.id_namespace AND o.office_id=e.office_id WHERE o.country_id='united-kingdom';"
+sqlite3 "$ATLAS_SQLITE_PATH" "SELECT COUNT(*) FROM result_row WHERE country_id='united-kingdom';"
+```
+
+Use the same sequence for the other packs. Change the scope, the ZIP path, the backup name, and the `--country=` id together:
+
+| Scope | Country id | ZIP members the loader reads |
+| --- | --- | --- |
+| `united_kingdom` | `united-kingdom` | `data/events.jsonl`, `data/results.jsonl.gz`, `data/counts.json`, `data/reporting-units.jsonl`, `data/office-register.jsonl`, `SHA256SUMS`. Prompt AU pins: 899 events, 103,648 results |
+| `italy` | `italy` | `data/events.jsonl`, `data/results.jsonl.gz`, `data/counts.json`, `data/reporting-units.jsonl`, `data/office-register.jsonl`, `SHA256SUMS`. Prompt AT pins: 515 events, 606,051 results |
+| `germany` | `germany` | `data/events.jsonl`, `data/results.jsonl`, `data/counts.json`, `data/reporting-units.jsonl`, `data/office-register.jsonl`, `SHA256SUMS`. Prompt AS pins: 13,845 events, 1,299,670 results |
+| `france` | `france` | `data/events.jsonl`, `data/results.jsonl`, `data/counts.json`, `data/reporting-units.jsonl`, `data/office-register.jsonl`, `SHA256SUMS`. Prompt AR pins: 119,554 events, 1,193,657 results |
+| `peru` | `peru` | Top of `Peru_Prompt_BK_2026-10-31/`: `events.jsonl` (12,460), `results.jsonl` (97,260, including 108 incomplete vote rows that stay null), optional `SHA256SUMS`. `ticket_components.json`, `successor_edges.json`, and `upcoming_calendar.json` are checked and not turned into offices or successor edges. `validate.py` and `sources/raw/**`, `sources/text/**` are not loaded |
+
+A single top directory in the ZIP is stripped. Europe packs may use that wrapper or sit at the ZIP root, as long as the paths above are the paths inside the pack. Production loads must match the pinned counts and, where a SHA-256 is pinned, the pinned bytes. `ATLAS_PACK_FIXTURE=1` is refused for `/var/lib/cdd/atlas.sqlite`.
+
+Stdout includes `pack_events_accepted`, `pack_results_accepted`, `pack_events_rejected`, and `pack_rejects_file`. Compare the accepted counts with the pack pins. Read the rejects file before treating the load as complete. A checksum or count mismatch leaves the database unchanged.
+
 ## VPS — Bosnia scoped import only
 
 To add Bosnia and Herzegovina to an existing production Atlas SQLite, run a **scoped** import. Do **not** use `ATLAS_IMPORT_SCOPE=all` on the VPS for this lineage: `all` re-projects LatAm (~10k offices) and is not required to publish the 13 regional Bosnia offices.

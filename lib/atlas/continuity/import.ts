@@ -91,6 +91,7 @@ export type ImportScope =
   | "netherlands"
   | "norway"
   | "poland"
+  | "peru"
   | "portugal"
   | "spain"
   | "sweden"
@@ -143,6 +144,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     raw === "netherlands" ||
     raw === "norway" ||
     raw === "poland" ||
+    raw === "peru" ||
     raw === "portugal" ||
     raw === "spain" ||
     raw === "sweden" ||
@@ -154,7 +156,7 @@ export function parseImportScope(value = process.env.ATLAS_IMPORT_SCOPE): Import
     return raw;
   }
   throw new Error(
-    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|croatia|czechia|denmark|estonia|latvia|lithuania|romania|greece|luxembourg|malta|cyprus|france|germany|united_kingdom|italy|iceland|montenegro|moldova|ukraine|uruguay|georgia|kosovo|chile|serbia|slovakia|slovenia|north_macedonia|hungary|finland|ireland|netherlands|norway|poland|portugal|spain|sweden|switzerland|latam|nz|all`,
+    `Unknown ATLAS_IMPORT_SCOPE ${JSON.stringify(value)}; use albania|andorra|alderney|armenia|austria|belgium|bosnia|bulgaria|croatia|czechia|denmark|estonia|latvia|lithuania|romania|greece|luxembourg|malta|cyprus|france|germany|united_kingdom|italy|iceland|montenegro|moldova|ukraine|uruguay|georgia|kosovo|chile|serbia|slovakia|slovenia|north_macedonia|hungary|finland|ireland|netherlands|norway|poland|peru|portugal|spain|sweden|switzerland|latam|nz|all`,
   );
 }
 
