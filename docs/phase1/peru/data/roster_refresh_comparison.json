@@ -1,0 +1,208 @@
+{
+  "as_of": "2026-10-31",
+  "source_date": "2026-10-14",
+  "prior_date": "2026-09-02",
+  "count": 1893,
+  "adds": [],
+  "removes": [],
+  "successor_edges": [],
+  "raw_label_differences": [
+    {
+      "ubigeo": "060405",
+      "old": {
+        "department": "Cajamarca",
+        "province": "Chota",
+        "district": "Chimbán",
+        "source_office_title": "Alcalde Distrital"
+      },
+      "new": {
+        "department": "Cajamarca",
+        "province": "Chota",
+        "district": "Chimbán ",
+        "source_office_title": "Alcalde Distrital"
+      }
+    },
+    {
+      "ubigeo": "090714",
+      "old": {
+        "department": "Huancavelica",
+        "province": "Tayacaja",
+        "district": "Salcabamba",
+        "source_office_title": "Alcalde Distrital"
+      },
+      "new": {
+        "department": "Huancavelica",
+        "province": "Tayacaja",
+        "district": "Salcabamba ",
+        "source_office_title": "Alcalde Distrital"
+      }
+    },
+    {
+      "ubigeo": "020902",
+      "old": {
+        "department": "Áncash",
+        "province": "Corongo",
+        "district": "Aco",
+        "source_office_title": "Alcalde Distrital"
+      },
+      "new": {
+        "department": "Áncash",
+        "province": "Corongo",
+        "district": "Aco ",
+        "source_office_title": "Alcalde Distrital"
+      }
+    },
+    {
+      "ubigeo": "120307",
+      "old": {
+        "department": "Junín",
+        "province": "Chanchamayo",
+        "district": "Sangani",
+        "source_office_title": "Alcalde Distrital"
+      },
+      "new": {
+        "department": "Junín",
+        "province": "Chanchamayo",
+        "district": "Sangani 4/",
+        "source_office_title": "Alcalde Distrital"
+      }
+    },
+    {
+      "ubigeo": "160405",
+      "old": {
+        "department": "Loreto",
+        "province": "Mariscal Ramón Castilla",
+        "district": "Santa Rosa de Loreto",
+        "source_office_title": "Alcalde Distrital"
+      },
+      "new": {
+        "department": "Loreto",
+        "province": "Mariscal Ramón Castilla",
+        "district": "Santa Rosa de Loreto 3/",
+        "source_office_title": "Alcalde Distrital"
+      }
+    },
+    {
+      "ubigeo": "060414",
+      "old": {
+        "department": "Cajamarca",
+        "province": "Chota",
+        "district": "Pion",
+        "source_office_title": "Alcalde Distrital"
+      },
+      "new": {
+        "department": "Cajamarca",
+        "province": "Chota",
+        "district": "Pion 2/",
+        "source_office_title": "Alcalde Distrital"
+      }
+    },
+    {
+      "ubigeo": "040510",
+      "old": {
+        "department": "Arequipa",
+        "province": "Caylloma",
+        "district": "Lari",
+        "source_office_title": "Alcalde Distrital"
+      },
+      "new": {
+        "department": "Arequipa",
+        "province": "Caylloma",
+        "district": "Lari ",
+        "source_office_title": "Alcalde Distrital"
+      }
+    },
+    {
+      "ubigeo": "010308",
+      "old": {
+        "department": "Amazonas",
+        "province": "Bongará",
+        "district": "Recta",
+        "source_office_title": "Alcalde Distrital"
+      },
+      "new": {
+        "department": "Amazonas",
+        "province": "Bongará",
+        "district": "Recta ",
+        "source_office_title": "Alcalde Distrital"
+      }
+    },
+    {
+      "ubigeo": "130112",
+      "old": {
+        "department": "La Libertad",
+        "province": "Trujillo",
+        "district": "Alto Trujillo",
+        "source_office_title": "Alcalde Distrital"
+      },
+      "new": {
+        "department": "La Libertad",
+        "province": "Trujillo",
+        "district": "Alto Trujillo 1/",
+        "source_office_title": "Alcalde Distrital"
+      }
+    },
+    {
+      "ubigeo": "150403",
+      "old": {
+        "department": "Lima",
+        "province": "Canta",
+        "district": "Huamantanga",
+        "source_office_title": "Alcalde Distrital"
+      },
+      "new": {
+        "department": "Lima",
+        "province": "Canta",
+        "district": "Huamantanga ",
+        "source_office_title": "Alcalde Distrital"
+      }
+    },
+    {
+      "ubigeo": "101104",
+      "old": {
+        "department": "Huánuco",
+        "province": "Yarowilca",
+        "district": "Aparicio Pomares",
+        "source_office_title": "Alcalde Distrital"
+      },
+      "new": {
+        "department": "Huánuco",
+        "province": "Yarowilca",
+        "district": "Aparicio Pomares ",
+        "source_office_title": "Alcalde Distrital"
+      }
+    },
+    {
+      "ubigeo": "090503",
+      "old": {
+        "department": "Huancavelica",
+        "province": "Churcampa",
+        "district": "Chinchihuasi",
+        "source_office_title": "Alcalde Distrital"
+      },
+      "new": {
+        "department": "Huancavelica",
+        "province": "Churcampa",
+        "district": "Chinchihuasi ",
+        "source_office_title": "Alcalde Distrital"
+      }
+    },
+    {
+      "ubigeo": "020506",
+      "old": {
+        "department": "Áncash",
+        "province": "Bolognesi",
+        "district": "Canis",
+        "source_office_title": "Alcalde Distrital"
+      },
+      "new": {
+        "department": "Áncash",
+        "province": "Bolognesi",
+        "district": "Canis ",
+        "source_office_title": "Alcalde Distrital"
+      }
+    }
+  ],
+  "identity_changes": [],
+  "normalization": "Trim whitespace and isolate printed footnote markers; original labels retained in source_district_raw. No legal rename or successor is inferred."
+}

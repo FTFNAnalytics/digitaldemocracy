@@ -114,7 +114,9 @@ Status-only LatAm countries from `base.json.gz` (no offices) are imported as cou
 
 Draft residual-heavy packs are **not** imported:
 
-antigua-and-barbuda, costa-rica, ecuador, guyana, haiti, peru, saint-kitts-and-nevis, trinidad-and-tobago.
+antigua-and-barbuda, costa-rica, ecuador, guyana, haiti, saint-kitts-and-nevis, trinidad-and-tobago.
+
+Peru is no longer in that residual set. Prompt BK replaces `schemas/atlas/tiers/peru.json`. The Phase 2 classifier (5,039 offices, SHA-256 `9483875e4e6aabdf938324aa1849549519962bfe26dde5b359ca00b4e23addfd`) is preserved at `docs/phase1/peru/Phase2_prerequisite_tiers.json` and is not imported. Run Peru with `ATLAS_IMPORT_SCOPE=peru` only. `all` and `latam` do not publish the BK register. The slim office import publishes 0 events, 0 result rows, and 0 sources. Passing `ATLAS_PACK_ZIP` on that same scope streams events and results from the full research ZIP after the offices are written. Sangani stays held. October 2026 ERM results stay out. Centros poblados offices stay 0.
 
 Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain out of scope.
 
@@ -244,7 +246,7 @@ ATLAS_IMPORT_SCOPE=austria npm run import:atlas
 
 ## VPS — full research ZIP (events and results)
 
-Slim lands for the United Kingdom, Italy, Germany, and France publish offices and **0** events and **0** result rows. The full research ZIPs stay outside git. Peru Prompt BK is the first ZIP on disk (`Peru_Prompt_BK_2026-10-31.zip`); its office/tier land is a separate change, so this command does not create Peru offices.
+Slim lands for the United Kingdom, Italy, Germany, France, and Peru publish offices and **0** events and **0** result rows when no ZIP is passed. The full research ZIPs stay outside git. Peru Prompt BK offices are `ATLAS_IMPORT_SCOPE=peru`. The same command, with `ATLAS_PACK_ZIP` set to `Peru_Prompt_BK_2026-10-31.zip`, writes those offices and then streams `events.jsonl` and `results.jsonl`.
 
 The loader is scoped. `ATLAS_IMPORT_SCOPE=all` is refused when a ZIP is set. It replaces only that country's events and results. Offices stay as the scoped office import published them. A pack office register whose SHA-256 does not match the pinned full-pack register aborts before any write. Rows that do not reference a published office, event, reporting unit, place, or ticket component are listed in a rejects file and are not guessed. Incomplete votes (null, blank, `missing_vote_components` > 0, or `votes_incomplete`) stay null, not zero. An explicit numeric zero stays zero.
 
@@ -283,7 +285,7 @@ Use the same sequence for the other packs. Change the scope, the ZIP path, the b
 | `italy` | `italy` | `Italy_Atlas_Prompt_AT/data/events.jsonl`, `data/event-office-links.jsonl`, `data/results.jsonl.gz`, and `data/result-audit.json`. Links are kept on the event and do not copy votes (`vote_duplication_permitted` must be false). `result_rows` in the audit must match the streamed results. Pins: 515 events, 606,051 results |
 | `germany` | `germany` | `Germany_Atlas_Prompt_AS/data/events.jsonl`, `data/results.jsonl` (plain JSONL, hundreds of MB), and `data/result-audit.json`. Pins: 13,845 events, 1,299,670 results |
 | `france` | `france` | `France_Atlas_Prompt_AR/data/events.jsonl` and `data/results.jsonl` (plain JSONL). Pins: 119,554 events, 1,193,657 results |
-| `peru` | `peru` | `events.jsonl` and `results.jsonl` at the pack root (12,460 events, 97,260 results, incomplete votes stay null) |
+| `peru` | `peru` | `events.jsonl` and `results.jsonl` at the pack root (12,460 events, 97,260 results, incomplete votes stay null). Publish Prompt BK offices first with `ATLAS_IMPORT_SCOPE=peru` and no ZIP. A ZIP dry run reads those offices from the master and does not write them. A later run with `ATLAS_PACK_ZIP` keeps the offices and streams events and results |
 
 `.jsonl` and `.jsonl.gz` are read from the ZIP in a stream. The archive is not unpacked onto disk. `data/result-audit.json`, where the pack has one, is the result-count check. `data/event-office-links.jsonl`, where the pack has one, is applied without a second copy of the result rows.
 

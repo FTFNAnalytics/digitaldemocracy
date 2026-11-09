@@ -1,0 +1,206 @@
+[
+  {
+    "example_id": "BK-A01",
+    "scenario": "Full current register",
+    "expected": "3,840 current rows comprise 3,838 research-accepted offices and two Sangani holds; one historical unicameral office is separate.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A02",
+    "scenario": "Provincial level",
+    "expected": "Each of the 196 source provincial municipalities has one mayor and one council row.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A03",
+    "scenario": "District level",
+    "expected": "Each of the 1,697 source district municipalities has two rows; 1,696 pairs are accepted for the 2026 scope and Sangani’s pair is held.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A04",
+    "scenario": "Lima capital",
+    "expected": "Lima capital has no duplicate district municipality: the provincial municipality and 42 district municipalities are represented.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A05",
+    "scenario": "Callao",
+    "expected": "Callao’s regional executive and council, provincial municipality and district municipalities remain distinct.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A06",
+    "scenario": "Vice Presidents",
+    "expected": "Two national vice-presidential components attach to the presidential ticket; no independent VP ballots exist.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A07",
+    "scenario": "Vicegovernors",
+    "expected": "Twenty-five vicegovernor components attach to 25 regional executive tickets; no independent vicegovernor ballots are invented.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A08",
+    "scenario": "Chamber eras",
+    "expected": "The Senate and Deputies are current; the unicameral Congress row is historical only.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A09",
+    "scenario": "Andean",
+    "expected": "One popular Peruvian Andean delegation has five titular seats and ten alternates. EP and MERCOSUR office counts are zero.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A10",
+    "scenario": "Upcoming beyond window",
+    "expected": "2030 regional/municipal and 2031 national formulas appear prominently in README, Justin report and dedicated calendar despite the global alert window.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A11",
+    "scenario": "Official local date",
+    "expected": "4 October 2026 is a past comparable poll as of 31 October; ordinary local/regional next-cycle rows use the 2030 formula and no invented exact day.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A12",
+    "scenario": "No fabricated future day",
+    "expected": "The 2031 exact-date field remains null and the second-Sunday-of-April formula is retained.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A13",
+    "scenario": "Presidential runoff",
+    "expected": "Presidential first and second rounds are separate events. The future second round uses the conditional 30-day rule, without an invented June date.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A14",
+    "scenario": "Senate ballots",
+    "expected": "The two Senate ballots are distinct. The combined threshold vote total is not a third ballot.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A15",
+    "scenario": "Final allocation",
+    "expected": "Pre-threshold tables headed “alcanzaría” are not used as final seat allocations.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A16",
+    "scenario": "Shared municipal ballot",
+    "expected": "One shared municipal ballot event references mayor and council offices without duplicating its party votes.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A17",
+    "scenario": "Missing is not zero",
+    "expected": "A missing constituent makes the complete vote total null; the observed numeric sum remains separately qualified.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A18",
+    "scenario": "Sourced zero",
+    "expected": "The PTE–Perú zero in the 2026 first-round table is explicit JNE evidence, not a default value.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A19",
+    "scenario": "Source identity",
+    "expected": "The download labeled 1625 contains 1610; the official-gazette 1625 return supplies certified runoff figures.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A20",
+    "scenario": "Null-vote discrepancy",
+    "expected": "The certificate’s 1,167,836 null votes is used, while the news release’s 1,167,863 is retained as a discrepancy.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A21",
+    "scenario": "Year mislink",
+    "expected": "2001 catalog pages with byte-identical 2000 resources are quarantined instead of inventing 2001 returns.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A22",
+    "scenario": "Namespaced geography",
+    "expected": "Legacy ONPE codes are not blindly joined to current INEI codes; native codes and exact name matches remain inspectable.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A23",
+    "scenario": "Unmatched history",
+    "expected": "Unmatched historical geography remains a hold, with no invented successor or merger edge.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A24",
+    "scenario": "Repeat independence",
+    "expected": "The 2014 segunda-elección CORE dataset remains distinct; no ordinary council-runoff law is inferred.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A25",
+    "scenario": "No application writes",
+    "expected": "applied_changes remains zero, all approval boxes remain unchecked, and no importer, SQL or application change is included.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A26",
+    "scenario": "Hash integrity",
+    "expected": "SHA 256 SUMS covers all pack files except itself. The ZIP checksum is provided outside the ZIP.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A27",
+    "scenario": "Exact contract",
+    "expected": "Exactly 223 distinct target table/column pairs match the retained DDL references without padding invented columns.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A28",
+    "scenario": "Primaries",
+    "expected": "Past formal primary dates are documented; future schedule and peer-pack treatment remain held, with no party office rows.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A29",
+    "scenario": "Regional runoff date revision",
+    "expected": "6 December 2026 is the JNE-fixed date;29 November is retained only as superseded planning history, with no invented extra election event.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A30",
+    "scenario": "Formal call versus schedule",
+    "expected": "The JNE scheduling agreement is not mislabeled as an Executive convocatoria; the regional scope and formal call remain held.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A31",
+    "scenario": "Roster continuity",
+    "expected": "The 14 October official roster has 1893 municipalities and no identity adds/removes versusSeptember. Whitespace and footnote labels do not create successor edges.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A32",
+    "scenario": "Submunicipal exact date",
+    "expected": "Centros poblados 1 November 2026 is sourced; its calendar visibility does not promote unsourced office identities into the accepted register.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A33",
+    "scenario": "Separate coverage dates",
+    "expected": "A current calendar refresh does not claim that October 2026 results have been normalized or certified.",
+    "justin_approved": false
+  },
+  {
+    "example_id": "BK-A34",
+    "scenario": "No past upcoming dates",
+    "expected": "All calendar rows with exact_date have dates after the 31 October 2026 research cutoff.",
+    "justin_approved": false
+  }
+]

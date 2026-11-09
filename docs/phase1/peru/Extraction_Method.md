@@ -1,0 +1,17 @@
+# Historical extraction method
+
+The supplied research scripts read official files and generate documentary artifacts only. They contain no importer, SQL execution, repository mutation or application deployment. Their original scratch paths are retained for audit; the raw sources in this pack correspond to `bk_research/raw` in the scripts.
+
+ONPE CSV resources contribute 33,381,714 source rows before the catalog-year quarantine. Archives remain compressed and lossless. Party/list totals use only the named list-vote column; candidate preference columns are not added. President-wide columns are named using their paired official dictionaries. Missing constituents produce null complete totals and a separately qualified observed sum. Source choice codes are scoped to their event.
+
+Most CSV resources use semicolons. The December 2017 file uses tabs; the 2025 complementary file is UTF-16 with commas. Decoding is checked across the entire stream. The 2010 files have CRLF record boundaries but bare LF inside unquoted party labels. The parser joins those physical fragments into one logical record while preserving the embedded newline in the party label. This removes no votes and fabricates no values. Source row locators for these files refer to logical CSV records, starting with header row 1. DOS EOF markers are not data rows.
+
+Two genuinely incomplete 2022 records remain in extraction_audit.json: one CORE record in Pisco and one district ballot record in Chicama. Only the affected territorial aggregates are flagged; missing cells and absent choices are not invented. Source-row ranges are bounding ranges, not a claim that all rows inside a range belong to one aggregate. Reproduction requires the event's source geography and source choice predicate as well as the raw member and column.
+
+Source-native ONPE codes are retained separately from current INEI codes. Exact normalized name tuples identify documentary same-place matches; 63 unmatched name tuples across 175 historical events stay held. Older Putumayo/Maynas and other changed-parent observations are retained without a guessed transition. This is not a boundary-continuity certification.
+
+Official dataset titles are taken from the HTML title. The El Collao resource filename says 2024, but its catalog identifies the 2004 contest; the event follows that source-defined year and preserves the conflicting original filename. Municipal 2002 resources contain a copied gubernatorial TIPO_ELECCION label; their distinct official municipal dataset titles establish documentary family, and raw cells remain intact. The 2001 first-round and Congress catalog resources are byte-identical to the 2000 files, so the ambiguous 2001 attribution and corresponding observations are separately quarantined.
+
+2026 final results come from JNE proclamations. National and multiple-district Senate ballots remain separate. Final Senate seats use the PDF's dispositive allocation and the complete roster of 30 territorial winners, not the earlier pre-threshold “alcanzaría” table. Deputies and Andean seats use final allocation tables. Candidate preferences and alternate conditions are separate result grains and cannot be added to party totals.
+
+Raw archives also retain untranscribed preference votes and repeated mesa control fields. This pack does not claim to normalize all such columns or to certify historical results. The 2018 regional runoff date is source-established in research, but its detailed return is not normalized here. Research completeness remains false.

@@ -25,7 +25,7 @@ import { LINEAGE_ID as BOSNIA_LINEAGE } from "../../lib/atlas/bosnia-and-herzego
 const repoRoot = path.join(import.meta.dirname, "../..");
 
 describe("approved-pack gate", () => {
-  it("exposes 14 approved continuity packs and 8 residual drafts", () => {
+  it("exposes 14 approved continuity packs and 7 residual drafts", () => {
     expect(approvedContinuityPacks(repoRoot).map((pack) => pack.countryId).sort()).toEqual([
       "argentina",
       "bahamas",
@@ -48,7 +48,6 @@ describe("approved-pack gate", () => {
       "ecuador",
       "guyana",
       "haiti",
-      "peru",
       "saint-kitts-and-nevis",
       "trinidad-and-tobago",
     ]);
@@ -93,13 +92,13 @@ describe("approved-pack gate", () => {
     expect(parseImportScope("georgia")).toBe("georgia");
     expect(parseImportScope("kosovo")).toBe("kosovo");
     expect(parseImportScope("chile")).toBe("chile");
+    expect(parseImportScope("peru")).toBe("peru");
     expect(parseImportScope("hungary")).toBe("hungary");
     expect(parseImportScope("finland")).toBe("finland");
     expect(parseImportScope("ireland")).toBe("ireland");
     expect(parseImportScope("netherlands")).toBe("netherlands");
     expect(parseImportScope("norway")).toBe("norway");
     expect(parseImportScope("poland")).toBe("poland");
-    expect(parseImportScope("peru")).toBe("peru");
     expect(parseImportScope("portugal")).toBe("portugal");
     expect(parseImportScope("spain")).toBe("spain");
     expect(parseImportScope("sweden")).toBe("sweden");

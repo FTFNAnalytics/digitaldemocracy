@@ -541,7 +541,7 @@ describe("full research ZIP results", () => {
     still.close();
   });
 
-  it("refuses scope all and a Peru run without a ZIP", () => {
+  it("refuses a research ZIP when scope is all", () => {
     const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-pack-cli-"));
     tempDirs.push(dir);
     const sqlitePath = path.join(dir, "atlas.sqlite");
@@ -554,8 +554,5 @@ describe("full research ZIP results", () => {
     const all = run({ ATLAS_IMPORT_SCOPE: "all", ATLAS_PACK_ZIP: path.join(dir, "missing.zip") });
     expect(all.status).not.toBe(0);
     expect(all.stderr).toContain("ATLAS_IMPORT_SCOPE is all");
-    const bare = run({ ATLAS_IMPORT_SCOPE: "peru" });
-    expect(bare.status).not.toBe(0);
-    expect(bare.stderr).toContain("full research ZIP");
   });
 });

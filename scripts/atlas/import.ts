@@ -25,6 +25,7 @@
  * Georgia is not part of `all`; use `ATLAS_IMPORT_SCOPE=georgia`.
  * Kosovo is not part of `all`; use `ATLAS_IMPORT_SCOPE=kosovo`.
  * Chile is not part of `all`; use `ATLAS_IMPORT_SCOPE=chile`.
+ * Peru is not part of `all`; use `ATLAS_IMPORT_SCOPE=peru`.
  * Bulgaria Prompt BI is not part of `all`; use `ATLAS_IMPORT_SCOPE=bulgaria`.
  * `all` still loads Prompt P Bulgaria only (530 offices) and does not promote BI drafts or holds.
  * Serbia is not part of `all`; use `ATLAS_IMPORT_SCOPE=serbia`.
@@ -42,8 +43,11 @@
  * one-country import with `npm run derive:atlas`.
  *
  * Full research ZIPs stay outside git. Pass one country's ZIP with
- * ATLAS_PACK_ZIP or --pack= after ATLAS_IMPORT_SCOPE is that country.
- * Scope `all` is refused. Peru Prompt BK is ZIP-only here (offices land separately).
+ * ATLAS_PACK_ZIP or --pack= when ATLAS_IMPORT_SCOPE is that country.
+ * Scope `all` is refused. The ZIP is optional. Without it, the scoped
+ * office import still runs. With it, that country's events and results
+ * are streamed after the offices. Peru offices are Prompt BK
+ * (`ATLAS_IMPORT_SCOPE=peru`); the full ZIP adds events and results.
  *
  * See docs/phase2/Continuity_Import.md.
  */
@@ -71,11 +75,6 @@ async function main() {
     if ((pack.zip || pack.dryRun) && scope === "all") {
       throw new Error(
         "Refusing a research ZIP when ATLAS_IMPORT_SCOPE is all or unset. Set ATLAS_IMPORT_SCOPE to one country.",
-      );
-    }
-    if (scope === "peru" && !pack.zip) {
-      throw new Error(
-        "ATLAS_IMPORT_SCOPE=peru loads events and results from a full research ZIP (--pack= or ATLAS_PACK_ZIP). It is not part of ATLAS_IMPORT_SCOPE=all, and this command does not import Peru offices.",
       );
     }
     if (pack.dryRun) {
@@ -1269,6 +1268,51 @@ async function main() {
       console.log(`chile_research_dates=${result.chile.counts.research_dates}`);
       console.log(`chile_applied_calendar_rows=${result.chile.counts.applied_calendar_rows}`);
       console.log(`chile_geographies=${result.chile.counts.geographies}`);
+    }
+    if (result.peru) {
+      console.log("lineage=country-package-peru");
+      console.log(`peru_attempt_id=${result.peru.attemptId}`);
+      console.log(`peru_release_id=${result.peru.releaseId}`);
+      console.log(`peru_fingerprint_sha256=${result.peru.fingerprint}`);
+      console.log(`peru_reused_release=${result.peru.reusedRelease ? "yes" : "no"}`);
+      console.log(`peru_offices=${result.peru.counts.offices}`);
+      console.log(`peru_current=${result.peru.counts.current_offices}`);
+      console.log(`peru_historical=${result.peru.counts.historical_offices}`);
+      console.log(`peru_current_research_accepted=${result.peru.counts.current_research_accepted}`);
+      console.log(`peru_current_held=${result.peru.counts.current_held}`);
+      console.log(`peru_draft_tier_national_context=${result.peru.counts.draft_tier_national_context}`);
+      console.log(`peru_draft_tier_regional=${result.peru.counts.draft_tier_regional}`);
+      console.log(`peru_draft_tier_municipal=${result.peru.counts.draft_tier_municipal}`);
+      console.log(`peru_schema_national=${result.peru.counts.schema_national}`);
+      console.log(`peru_schema_regional=${result.peru.counts.schema_regional}`);
+      console.log(`peru_schema_municipal=${result.peru.counts.schema_municipal}`);
+      console.log(`peru_schema_other=${result.peru.counts.schema_other}`);
+      console.log(`peru_result_rows=${result.peru.counts.result_rows}`);
+      console.log(`peru_event_rows=${result.peru.counts.total_events}`);
+      console.log(`peru_sources=${result.peru.counts.sources}`);
+      console.log(`peru_unresolved=${result.peru.counts.unresolved_evidence}`);
+      console.log(`peru_open_holds=${result.peru.counts.named_open_holds}`);
+      console.log(`peru_approved=${result.peru.counts.approved_classifications}`);
+      console.log(`peru_needs_review=${result.peru.counts.needs_review_classifications}`);
+      console.log(`peru_current_direct_executives=${result.peru.counts.current_direct_executives}`);
+      console.log(`peru_accepted_direct_executives=${result.peru.counts.accepted_direct_executives}`);
+      console.log(`peru_current_councils=${result.peru.counts.current_councils}`);
+      console.log(`peru_accepted_councils=${result.peru.counts.accepted_councils}`);
+      console.log(`peru_current_national_chambers=${result.peru.counts.current_national_chambers}`);
+      console.log(`peru_current_mayors=${result.peru.counts.current_mayors}`);
+      console.log(`peru_current_municipal_councils=${result.peru.counts.current_municipal_councils}`);
+      console.log(`peru_current_governors=${result.peru.counts.current_governors}`);
+      console.log(`peru_current_regional_councils=${result.peru.counts.current_regional_councils}`);
+      console.log(`peru_andean_offices=${result.peru.counts.andean_offices}`);
+      console.log(`peru_ep_offices=${result.peru.counts.ep_offices}`);
+      console.log(`peru_mercosur_offices=${result.peru.counts.mercosur_offices}`);
+      console.log(`peru_centros_poblados_offices=${result.peru.counts.centros_poblados_offices}`);
+      console.log(`peru_explicit_predecessor_edges=${result.peru.counts.explicit_predecessor_edges}`);
+      console.log(`peru_research_dates=${result.peru.counts.research_dates}`);
+      console.log(`peru_applied_calendar_rows=${result.peru.counts.applied_calendar_rows}`);
+      console.log(`peru_upcoming_calendar_rows=${result.peru.counts.upcoming_calendar_rows}`);
+      console.log(`peru_geographies=${result.peru.counts.geographies}`);
+      console.log(`peru_municipalities=${result.peru.counts.municipalities}`);
     }
     if (result.serbia) {
       console.log("lineage=country-package-serbia");

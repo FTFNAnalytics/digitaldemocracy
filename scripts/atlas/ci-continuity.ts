@@ -112,6 +112,9 @@ function main() {
     if (result.chile) {
       fail("ATLAS_IMPORT_SCOPE=all must not be the Chile path");
     }
+    if (result.peru) {
+      fail("ATLAS_IMPORT_SCOPE=all must not be the Peru path");
+    }
     if (result.andorra?.counts.current_offices !== 7) {
       fail(`Andorra offices ${String(result.andorra?.counts.current_offices)}`);
     }
