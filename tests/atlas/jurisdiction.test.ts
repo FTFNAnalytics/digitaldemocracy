@@ -17,6 +17,7 @@ import {
   cycleListHref,
   filterPlaces,
   filterSeatsByDate,
+  countryResultsPending,
   jurisdictionDescription,
   jurisdictionFacts,
   jurisdictionJsonLd,
@@ -77,32 +78,81 @@ describe("jurisdiction route helpers", () => {
   it("builds titles, facts, and honest administrative JSON-LD", () => {
     expect(jurisdictionTitle("Tiranë", "Albania")).toBe("Tiranë · Albania · Election Atlas");
     expect(jurisdictionTitle("Albania", "Albania")).toBe("Albania · Albania · Election Atlas");
-    const facts = jurisdictionFacts(
-      {
-        jurisdictionKey: "country:albania",
-        countryId: "albania",
-        geographyId: null,
-        parentKey: null,
-        depth: 0,
-        levelLabel: "country",
-        name: "Albania",
-        slug: "albania",
-        slugPath: "albania",
-        officeCount: 2,
-        eventCount: 0,
-        firstEventYear: null,
-        lastEventYear: null,
-        coverageStatus: "partial",
-        ambiguous: 0,
-      },
-      null,
+    const country = {
+      jurisdictionKey: "country:albania",
+      countryId: "albania",
+      geographyId: null,
+      parentKey: null,
+      depth: 0,
+      levelLabel: "country",
+      name: "Albania",
+      slug: "albania",
+      slugPath: "albania",
+      officeCount: 2,
+      eventCount: 0,
+      firstEventYear: null,
+      lastEventYear: null,
+      coverageStatus: "partial",
+      ambiguous: 0,
+    };
+    expect(countryResultsPending(country, null)).toBe(true);
+    const facts = jurisdictionFacts(country, null);
+    expect(facts).toContainEqual({ label: "Offices", value: "2" });
+    expect(facts).toContainEqual({ label: "Elections", value: "not yet ingested" });
+    expect(facts).toContainEqual({ label: "Results span", value: "not yet ingested" });
+    expect(facts).toContainEqual({ label: "Offices with results", value: "not yet ingested" });
+    expect(facts).not.toContainEqual({ label: "Elections", value: "0" });
+    expect(jurisdictionTitle("Albania", "Albania", true)).toBe("Albania — offices register; results coming soon");
+    const description = jurisdictionDescription("Albania", "Albania", "Country", facts, true);
+    expect(description).toBe(
+      "Albania — offices register; results coming soon. 2 offices are on file. Election events and result rows are not yet ingested.",
     );
-    expect(facts).toContainEqual({ label: "Elections", value: "0" });
-    expect(facts).toContainEqual({ label: "Results span", value: "not supplied" });
-    expect(facts).toContainEqual({ label: "Offices with results", value: "not supplied" });
-    const description = jurisdictionDescription("Albania", "Albania", "Country", facts);
-    expect(description).toContain("Offices: 2");
-    expect(description).toContain("not supplied");
+    expect(description).not.toMatch(/0 result/);
+    const withResults = {
+      jurisdictionKey: "country:albania",
+      countryId: "albania",
+      offices: 2,
+      officesWithAnyEvent: 2,
+      officesWithResults: 2,
+      eventsTotal: 3,
+      eventsWithResults: 3,
+      notSuppliedNextDates: 0,
+      latestSnapshotLabel: null,
+    };
+    const recorded = jurisdictionFacts(
+      { ...country, eventCount: 3, firstEventYear: 2009, lastEventYear: 2024 },
+      withResults,
+    );
+    expect(countryResultsPending({ ...country, eventCount: 3 }, withResults)).toBe(false);
+    expect(recorded).toContainEqual({ label: "Elections", value: "3" });
+    expect(recorded).toContainEqual({ label: "Offices with results", value: "2" });
+    expect(recorded).toContainEqual({ label: "Results span", value: "2009–2024" });
+    expect(jurisdictionDescription("Albania", "Albania", "Country", recorded)).toContain("Offices: 2");
+    expect(jurisdictionDescription("Albania", "Albania", "Country", recorded)).toContain("Elections: 3");
+    const eventsOnly = {
+      jurisdictionKey: "country:albania",
+      countryId: "albania",
+      offices: 4,
+      officesWithAnyEvent: 4,
+      officesWithResults: 0,
+      eventsTotal: 12,
+      eventsWithResults: 0,
+      notSuppliedNextDates: 0,
+      latestSnapshotLabel: null,
+    };
+    expect(countryResultsPending({ ...country, officeCount: 4, eventCount: 12 }, eventsOnly)).toBe(false);
+    expect(jurisdictionFacts({ ...country, officeCount: 4, eventCount: 12 }, eventsOnly)).toContainEqual({
+      label: "Elections",
+      value: "12",
+    });
+    expect(jurisdictionFacts({ ...country, officeCount: 4, eventCount: 12 }, eventsOnly)).toContainEqual({
+      label: "Offices with results",
+      value: "0",
+    });
+    const childFacts = jurisdictionFacts({ ...country, depth: 1, name: "Tiranë", slugPath: "albania/tirane" }, null);
+    expect(countryResultsPending({ ...country, depth: 1 }, null)).toBe(false);
+    expect(childFacts).toContainEqual({ label: "Elections", value: "0" });
+    expect(childFacts).toContainEqual({ label: "Offices with results", value: "not supplied" });
     expect(jurisdictionJsonLd("Albania", null)).toEqual({
       "@context": "https://schema.org",
       "@type": "AdministrativeArea",
@@ -274,6 +324,17 @@ describe("Albania jurisdiction pages", () => {
     expect(meta.description).toContain("Offices:");
     expect(meta.alternates?.canonical).toBe("/atlas/albania/tirane");
 
+    const countryMeta = await generateMetadata({
+      params: Promise.resolve({ country: "albania" }),
+      searchParams: Promise.resolve({}),
+    });
+    expect(countryMeta.title).toEqual({
+      absolute: `${country.jurisdiction.name} — offices register; results coming soon`,
+    });
+    expect(countryMeta.description).toContain("not yet ingested");
+    expect(countryMeta.description).not.toContain("Elections: 0");
+    expect(countryMeta.description).not.toMatch(/0 result rows/);
+
     const countryHtml = markup(
       await AtlasJurisdictionPage({
         params: Promise.resolve({ country: "albania" }),
@@ -288,6 +349,9 @@ describe("Albania jurisdiction pages", () => {
     expect(countryHtml).toContain("Tiran");
     expect(countryHtml).toContain("No seats at this level");
     expect(countryHtml).toContain("No election cycles");
+    expect(countryHtml).toContain("not yet ingested");
+    expect(countryHtml).not.toContain("0 result rows");
+    expect(countryHtml).not.toContain("0 of ");
     expect(countryHtml).toContain("AdministrativeArea");
     expect(countryHtml).not.toContain("containedInPlace");
     expect(countryHtml).not.toContain("data-atlas-upcoming-elections");

@@ -1,49 +1,18 @@
 import type { MetadataRoute } from "next";
-import { listCyclePublicPaths } from "@/lib/atlas/cycle/read";
-import { buildSitemapChunks, listJurisdictionSlugPaths } from "@/lib/atlas/jurisdiction";
-import { getCountries } from "@/lib/observatory/load";
-import { obsRoutes } from "@/lib/observatory/routes";
-import { SITE_URL, STATIC_SITEMAP_PATHS } from "@/lib/seo";
-import { atlasRoutes } from "@/lib/atlas/routes";
+import { loadPublicSitemap } from "@/lib/atlas/sitemap";
+import { readAtlasDerived } from "@/lib/atlas/publication";
 
-function loadChunks() {
-  const staticEntries = [
-    ...STATIC_SITEMAP_PATHS.map((path) => ({
-      url: `${SITE_URL}${path}`,
-      changeFrequency: path === "/" ? ("weekly" as const) : ("monthly" as const),
-      priority: path === "/" ? 1 : path === "/electiondatabase" ? 0.9 : 0.7,
-    })),
-    {
-      url: `${SITE_URL}${atlasRoutes.releases}`,
-      changeFrequency: "monthly" as const,
-      priority: 0.5,
-    },
-    {
-      url: `${SITE_URL}${atlasRoutes.downloads}`,
-      changeFrequency: "weekly" as const,
-      priority: 0.6,
-    },
-    ...getCountries().map((country) => ({
-      url: `${SITE_URL}${obsRoutes.country(country.id)}`,
-      changeFrequency: "weekly" as const,
-      priority: 0.6,
-    })),
-  ];
-  return buildSitemapChunks({
-    staticEntries,
-    jurisdictionPaths: listJurisdictionSlugPaths(),
-    cyclePaths: listCyclePublicPaths(),
-    origin: SITE_URL,
-  });
-}
+/**
+ * One document at /sitemap.xml.
+ * `generateSitemaps` only published /sitemap/[id].xml and left /sitemap.xml as
+ * a 404, while also walking every derived place. This list is the static
+ * pages plus Atlas countries from derived_country_summary, cached with the
+ * other derived reads until derive revalidates that tag.
+ * Rendered per request so a build without the master DB does not freeze an
+ * empty country list; the summary read itself stays on the derived cache.
+ */
+export const dynamic = "force-dynamic";
 
-export async function generateSitemaps() {
-  const chunks = loadChunks();
-  return chunks.map((_, id) => ({ id }));
-}
-
-export default async function sitemap(props: { id: Promise<string> }): Promise<MetadataRoute.Sitemap> {
-  const id = Number(await props.id);
-  const chunks = loadChunks();
-  return chunks[id] ?? [];
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  return readAtlasDerived("public-sitemap", () => loadPublicSitemap());
 }

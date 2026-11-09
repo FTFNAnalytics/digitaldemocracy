@@ -382,6 +382,14 @@ describe("world index map", () => {
         coverage: null,
       },
       {
+        countryId: "france",
+        countryCode: "FR",
+        name: "France",
+        href: "/atlas/france",
+        resultRows: 0,
+        coverage: { ...recorded, officesWithResults: 0, eventsTotal: 0, eventsWithResults: 0 },
+      },
+      {
         countryId: "unknown-land",
         countryCode: "ZZ",
         name: "No shape",
@@ -390,7 +398,7 @@ describe("world index map", () => {
         coverage: recorded,
       },
     ]);
-    expect(markers.map((marker) => marker.countryId).sort()).toEqual(["albania", "austria"]);
+    expect(markers.map((marker) => marker.countryId).sort()).toEqual(["albania", "austria", "france"]);
     const albania = markers.find((marker) => marker.countryId === "albania")!;
     const austria = markers.find((marker) => marker.countryId === "austria")!;
     expect(albania.radius).toBeGreaterThan(austria.radius);
@@ -401,6 +409,11 @@ describe("world index map", () => {
     expect(html).toContain('data-atlas-country="albania"');
     expect(html).toContain('data-atlas-result-rows="100"');
     expect(html).toContain('data-atlas-result-rows="1"');
+    expect(html).toContain('data-atlas-result-rows="0"');
+    expect(html).toContain("Albania, 100 result rows");
+    expect(html).toContain("Austria, 1 result rows");
+    expect(html).toContain("France — offices register; results coming soon");
+    expect(html).not.toContain("France, 0 result rows");
     expect(html).not.toContain("unknown-land");
     expect(html).not.toContain("maplibre");
     const dynamic = readFileSync(path.join(repoRoot, "components/atlas/map/jurisdiction-map-dynamic.tsx"), "utf8");

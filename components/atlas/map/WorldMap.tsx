@@ -1,4 +1,5 @@
 import { ATTRIBUTIONS } from "@/lib/atlas/boundaries/attribution";
+import { markerResultTitle } from "@/lib/atlas/coverage-copy";
 import type { WorldMarker } from "@/lib/atlas/map/world";
 import { WORLD_LAND } from "@/lib/atlas/map/world";
 
@@ -42,7 +43,7 @@ export function WorldMap({ markers }: { markers: WorldMarker[] }) {
               data-atlas-result-rows={marker.resultRows}
               data-atlas-coverage={marker.coverageState}
             >
-              <title>{`${marker.name}, ${marker.resultRows} result rows`}</title>
+              <title>{markerResultTitle(marker.name, marker.resultRows)}</title>
             </circle>
           </a>
         ))}

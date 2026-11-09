@@ -488,6 +488,15 @@ describe("Atlas reading surface", () => {
     const bar = markup(createElement(CoverageBar, { coverage: null }));
     expect(bar).toContain("Not supplied");
     expect(bar).not.toContain('role="meter"');
+    const queuedBar = markup(
+      createElement(CoverageBar, {
+        coverage: { ...recorded, officesWithResults: 0, eventsTotal: 0, eventsWithResults: 0 },
+      }),
+    );
+    expect(queuedBar).toContain("Not yet ingested");
+    expect(queuedBar).toContain('data-atlas-coverage-bar="queued"');
+    expect(queuedBar).not.toContain("0 of ");
+    expect(queuedBar).not.toContain('role="meter"');
     const meter = markup(createElement(CoverageBar, { coverage: recorded }));
     expect(meter).toContain('role="meter"');
     expect(meter).toContain("2 of 4 offices with results");

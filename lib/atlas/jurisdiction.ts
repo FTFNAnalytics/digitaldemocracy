@@ -3,6 +3,7 @@ import type { DatabaseSync } from "node:sqlite";
 import { cyclePublicPath } from "./routes";
 import { isSingleSeatOfficeType, WITHHELD_EVIDENCE } from "./derive/seat";
 import type { AtlasCoverage, AtlasJurisdiction } from "./derive/read";
+import { RESULTS_NOT_YET_INGESTED, resultsComingSoonDescription, resultsComingSoonTitle } from "./coverage-copy";
 import { resolveAtlasSqlitePath } from "./paths";
 import { RESERVED_SLUG_SEGMENTS } from "./derive/slug";
 import { loadPlaceMetrics } from "./map/child-facts";
@@ -50,7 +51,8 @@ export function jurisdictionLevelLabel(level: string): string {
   return trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
 }
 
-export function jurisdictionTitle(name: string, countryName: string): string {
+export function jurisdictionTitle(name: string, countryName: string, resultsPending = false): string {
+  if (resultsPending) return resultsComingSoonTitle(name);
   return `${name} · ${countryName} · Election Atlas`;
 }
 
@@ -59,9 +61,31 @@ export function jurisdictionDescription(
   countryName: string,
   levelLabel: string,
   facts: Array<{ label: string; value: string }>,
+  resultsPending = false,
 ): string {
+  if (resultsPending) {
+    return resultsComingSoonDescription(name, facts.find((fact) => fact.label === "Offices")?.value ?? null);
+  }
   const body = facts.map((fact) => `${fact.label}: ${fact.value}`).join(". ");
   return `${name} · ${levelLabel} · ${countryName}. ${body}.`;
+}
+
+/**
+ * Country page whose register is loaded and whose event and result counts are both zero.
+ * A zero here means those rows have not been ingested. Places inside a country, and
+ * countries that already have events or results, keep the numeric facts.
+ */
+export function countryResultsPending(
+  jurisdiction: Pick<AtlasJurisdiction, "depth" | "officeCount" | "eventCount">,
+  coverage: AtlasCoverage | null,
+): boolean {
+  if (jurisdiction.depth !== 0) return false;
+  const offices = coverage?.offices ?? jurisdiction.officeCount;
+  if (offices <= 0) return false;
+  const events = coverage?.eventsTotal ?? jurisdiction.eventCount;
+  if (events !== 0) return false;
+  if (!coverage) return true;
+  return coverage.eventsWithResults === 0 && coverage.officesWithResults === 0;
 }
 
 export function jurisdictionJsonLd(name: string, parentName: string | null): Record<string, unknown> {
@@ -291,6 +315,14 @@ export function jurisdictionFacts(
 ): Array<{ label: string; value: string }> {
   const offices = coverage?.offices ?? jurisdiction.officeCount;
   const events = coverage?.eventsTotal ?? jurisdiction.eventCount;
+  if (countryResultsPending(jurisdiction, coverage)) {
+    return [
+      { label: "Offices", value: offices.toLocaleString() },
+      { label: "Elections", value: RESULTS_NOT_YET_INGESTED },
+      { label: "Offices with results", value: RESULTS_NOT_YET_INGESTED },
+      { label: "Results span", value: RESULTS_NOT_YET_INGESTED },
+    ];
+  }
   const withResults = coverage ? coverage.officesWithResults.toLocaleString() : "not supplied";
   let span = "not supplied";
   if (jurisdiction.firstEventYear != null && jurisdiction.lastEventYear != null) {

@@ -9,6 +9,7 @@ import type { CycleChip, JurisdictionChild, SeatRow } from "@/components/atlas/t
 import type { MapPlace } from "@/lib/atlas/map/model";
 import { attributionForCountry, publishedChildrenTopojsonUrl } from "@/lib/atlas/map/publish";
 import {
+  countryResultsPending,
   cycleListHref,
   filterPlaces,
   filterSeatsByDate,
@@ -133,8 +134,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!view) return { title: "Atlas place not found", robots: { index: false, follow: true } };
   const level = jurisdictionLevelLabel(view.jurisdiction.levelLabel);
   const facts = jurisdictionFacts(view.jurisdiction, view.coverage);
-  const title = jurisdictionTitle(view.jurisdiction.name, view.countryName);
-  const description = jurisdictionDescription(view.jurisdiction.name, view.countryName, level, facts);
+  const resultsPending = countryResultsPending(view.jurisdiction, view.coverage);
+  const title = jurisdictionTitle(view.jurisdiction.name, view.countryName, resultsPending);
+  const description = jurisdictionDescription(
+    view.jurisdiction.name,
+    view.countryName,
+    level,
+    facts,
+    resultsPending,
+  );
   return {
     title: { absolute: title },
     description,
