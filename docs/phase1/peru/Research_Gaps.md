@@ -1,0 +1,75 @@
+# Peru research gaps and gates
+
+`applied_changes=0`; all gates remain unapproved. **Coverage dates:** calendar checked to **31 October 2026**; full municipal roster reconciled to INEI’s **14 October 2026** workbook; normalized historical event/result data retained from **30 September 2026**. The 4 October 2026 poll is now a past comparable contest. Its detailed results are **not transcribed** here, and are never represented as zero or certified by inference.
+
+## BK-G01 — Historical breadth
+
+Historical result coverage is nonexhaustive. Detailed pre-2000 national and pre-2002 municipal returns, 1980 s and 1990 s chamber identities, and any extraordinary constituent body require further primary-source identification. No colonial or appointed office is backfilled.
+
+## BK-G02 — Bicameral restoration
+
+Law 31988 and the revised organic election law restore the Senate and Chamber of Deputies for 2026. The current 60/130 totals describe the 2026 allocation; 2031 apportionment is not invented. The 1995–2026 unicameral office remains historical. Its earlier 120-seat and later 130-seat eras require cycle-specific allocations, not a blanket seat total.
+
+## BK-G03 — Presidential runoff and succession
+
+Constitution article 111 requires a majority of valid votes; otherwise the two leading presidential tickets compete again. LOE article 18 places that second election within 30 days of official proclamation. Articles 113–115 govern vacancy, suspension and succession; they do not create a fixed popular election date. Revised article 134 permits conditional dissolution of the Chamber of Deputies, while the Senate cannot be dissolved. The 2020 extraordinary unicameral election remains a separate historical event.
+
+## BK-G04 — Regional popularization / labels
+
+Direct regional institutions are supported by the 2002 source contests. Some historical datasets use the modern gobernador label for 2002 and 2006; preserve that source label without backdating the 2015 title change. Pre-2002 appointed or differently organized institutions remain held. Law 29470 of 2009 changed regional council voting and introduced the current regional runoff arrangement. Older joint-ticket seat allocations remain untranscribed.
+
+## BK-G05 — Lima / Callao
+
+The 25 regional government units include Callao and Departamento de Lima. Metropolitan Lima exercises special regional functions through its municipal institutions; no separate popular regional governor or regional council is invented. Provincial-capital districts have provincial municipal bodies, not duplicate district municipal bodies.
+
+## BK-G06 — Full territorial inventory / Sangani
+
+INEI’s directory updated 14 October 2026 lists 196 provincial and 1,697 district municipalities. ONPE’s 2026 election scope lists 196 and 1,696. Law 32729 creates Sangani; INEI footnote 4 leaves its first electoral process undetermined. Its two office rows remain held. Alto Trujillo (Law 31644) and Santa Rosa de Loreto (Law 32403) are first-time electoral jurisdictions in 2026; no earlier results are invented. The October roster was reconciled with September: zero identity additions, removals or substantive renames. Printed footnote markers and whitespace are retained separately. The directory’s generic pending-election footnotes for AltoTrujillo and SantaRosa deLoreto do not override ONPE’s sourced 2026 participation; winners are not inferred.
+
+## BK-G07 — Pion / repeat / nullity
+
+INEI flags Pion for electoral nullity and a pending complementary election. The official 2023, 2024 and 2025 complementary datasets are retained, but they do not resolve that note without a matched JNE outcome. The 2014 segunda-elección council dataset is preserved separately with its repeat/replacement characterization held; it does not establish an ordinary regional council runoff rule. This is a retained directory discrepancy, not proof that Pion lacked an October 2026 ballot or that a newly dated complementary call exists.
+
+## BK-G08 — Identity crosswalk and reform gate
+
+Earlier ONPE and current INEI geographic codes differ, including for Lima. Exact normalized name tuples support documentary same-place matches. Boundary continuity and unmatched historical names remain held. Native geography is retained; no guessed successor edges are emitted.
+
+## BK-G09 — Official data versus certified returns
+
+The 2026 national event segments use JNE proclamation evidence. Older ONPE files are official published observations; certification is not assumed without a certified return. Any missing constituent cell prevents a complete-vote claim, while the observed numeric sum is retained separately. Historical candidate preferences, local seat allocations and winner tables are not exhaustively normalized.
+
+## BK-G10 — Catalog and source identity defects
+
+The 2001 Congress and presidential first-round catalog resources are byte-identical to their 2000 counterparts; the ambiguous 2001 attribution is quarantined. A gov.pe download labeled resolution 1625 actually contains resolution 1610. The official gazette supplies resolution 1625’s runoff return. JNE’s news release states 1,167,863 null votes; the certified table states 1,167,836. The certificate is used and the discrepancy is preserved.
+
+## BK-G11 — Primaries
+
+ONPE/JNE formal primaries are established for 2025 and 2026. Peer-pack policy for separate documentary primary events has not been established for this pack, so they remain calendar and process context without party-organ office rows. The cycle-specific transitional dates are not copied into 2030 or 2031 as perpetual formulas.
+
+## BK-G12 — Centros poblados
+
+Popular elections for submunicipal centros poblados are source-established and visible in the calendar. BK’s requested accepted municipal scope is provincial and district bodies. A complete eligibility roster, municipal calls and Atlas submunicipal policy remain held; no speculative submunicipal office register is created. The national timetable fixes 1 November 2026 (JNE agreement 28 October, published 29 October). The published aggregate of 3398 circumscriptions is not a normalized identity roster and does not justify inventing 6796 office rows.
+
+## BK-G13 — Andean / noEP / noMercosur
+
+Law 28360 establishes five popularly elected titular representatives and ten alternates to the Andean Parliament for the constitutional period. One Peruvian delegation office is included. EP offices and MERCOSUR offices are both zero. Observer accreditation of a foreign parliament does not establish an elected Peruvian office.
+
+## BK-G14 — Calendar beyond alert window
+
+Peru’s empty documentary stub filter is rescinded. Next ordinary national 2031 and regional/municipal 2030 formulas remain prominent beyond approximately 18 months, with formal calls pending. The JNE fixed 6 December 2026 for required regional runoffs; executive convocatoria and participating regions are unverified in retained evidence. Centros poblados 1 November 2026 is visible as a scope-held family. No invented early, vacancy or repeat date.
+
+## BK-G15 — Remaining transcription
+
+Full current office identity coverage does not imply complete council-seat, candidate, incumbent or historical-year coverage. Untranscribed seats stay null. Two incomplete 2022 source records remain flagged in the extraction audit and qualify the affected aggregates. Older contest dates remain year-only where exact call evidence is untranscribed. Detailed 2018 regional runoff results are not normalized in this pack.
+
+## BK-G16 — 223-column target contract
+
+Both repository DDL references were read only. All 223 columns are mapped; release, publication and ingest lifecycle fields remain inapplicable because nothing is written. A documentary mapping is not an importer. Shared ballots with multiple office references and source-specific party IDs require a later reviewed projection policy.
+
+## BK-G17 — October 2026 results and certification coverage
+
+The calendar and roster were refreshed to 31 October 2026, but the normalized 12,460 events and 97,260 results retain the 30 September extraction cutoff. Detailed 4 October 2026 regional/municipal results and certifications are not added or presumed zero. The previous complete raw archives remain retained. Current office completeness is not exhaustive historical completeness.
+
+## BK-G18 — Regional runoff formal call and regions
+
+JNE agreement 7 October 2026, operative paragraph 2, fixes 6 December and replaces the previous 29 November planning date. It expressly contemplates requesting the Executive convocatoria. No Executive decree or definitive participating-region roster was verified for this refresh. Date revision does not create an annulled 29 November election event.

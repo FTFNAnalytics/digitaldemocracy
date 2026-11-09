@@ -1,0 +1,65 @@
+[
+  {
+    "file": "jne-ser2026-date.html",
+    "url": "https://busquedas.elperuano.pe/dispositivo/NL/2563351-1",
+    "status": 200,
+    "bytes": 128055
+  },
+  {
+    "file": "jne-erm2026-proclamations.html",
+    "url": "https://portal.jne.gob.pe/portal/Pagina/Nota/21823",
+    "status": 200,
+    "bytes": 23194
+  },
+  {
+    "file": "jne-erm2026-credentials.html",
+    "url": "https://portal.jne.gob.pe/portal/Pagina/Nota/21840",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "file": "inei-2026-renamu.html",
+    "url": "https://www.gob.pe/institucion/inei/campa%C3%B1as/9115-registro-nacional-de-municipalidades-2026",
+    "status": 200,
+    "bytes": 64701
+  },
+  {
+    "file": "inei-directory-current.html",
+    "url": "https://www.gob.pe/institucion/inei/informes-publicaciones/3908763-directorio-nacional-de-municipalidades-provinciales-y-distritales",
+    "status": 200,
+    "bytes": 30825
+  },
+  {
+    "file": "jne-erm2026-formula.html",
+    "url": "https://busquedas.elperuano.pe/dispositivo/NL/2464390-1",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "file": "inei-october-2026.xlsx",
+    "url": "https://cdn.www.gob.pe/uploads/document/file/4147047/3908763-directorio-nacional-de-municipalidades-provinciales-y-distritales-octubre-2026.xlsx?v=1792100251",
+    "status": 200,
+    "bytes": 238376
+  },
+  {
+    "file": "jne-centros-poblados-2026.html",
+    "url": "https://busquedas.elperuano.pe/dispositivo/EX/2569727-1",
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "file": "jne-ser2026-date-body.html",
+    "url": "https://busquedas.elperuano.pe/api/visor_html/2563351-1",
+    "status": 200,
+    "bytes": 15562
+  },
+  {
+    "file": "jne-erm2026-formula-body.html",
+    "url": "https://busquedas.elperuano.pe/api/visor_html/2464390-1",
+    "status": 200,
+    "bytes": 10088
+  },
+  {
+    "file": "jne-centros-poblados-2026-body.html",
+    "url": "https://busquedas.elperuano.pe/api/visor_html/2569727-1",
+    "status": 200,
+    "bytes": 10986
+  }
+]

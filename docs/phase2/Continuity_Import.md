@@ -114,7 +114,9 @@ Status-only LatAm countries from `base.json.gz` (no offices) are imported as cou
 
 Draft residual-heavy packs are **not** imported:
 
-antigua-and-barbuda, costa-rica, ecuador, guyana, haiti, peru, saint-kitts-and-nevis, trinidad-and-tobago.
+antigua-and-barbuda, costa-rica, ecuador, guyana, haiti, saint-kitts-and-nevis, trinidad-and-tobago.
+
+Peru is no longer in that residual set. Prompt BK replaces `schemas/atlas/tiers/peru.json`. The Phase 2 classifier (5,039 offices, SHA-256 `9483875e4e6aabdf938324aa1849549519962bfe26dde5b359ca00b4e23addfd`) is preserved at `docs/phase1/peru/Phase2_prerequisite_tiers.json` and is not imported. Run Peru with `ATLAS_IMPORT_SCOPE=peru` only. `all` and `latam` do not publish the BK register. Published events, results, and sources stay 0. Sangani stays held. October 2026 ERM results stay out. Centros poblados offices stay 0.
 
 Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain out of scope.
 

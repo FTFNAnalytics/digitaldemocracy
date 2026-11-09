@@ -328,24 +328,6 @@
       "sha256": "244f2ef218ffe089ee72e3f05fd360e76e8da4f59188d9e6f9f783af00b920a3"
     },
     {
-      "country_id": "peru",
-      "lineage_id": "latin-america-fe5e91689def",
-      "file": "schemas/atlas/tiers/peru.json",
-      "office_count": 5039,
-      "current_offices": 5028,
-      "historical_offices": 11,
-      "counts_by_proposed_tier": {
-        "national": 0,
-        "regional": 50,
-        "municipal": 1903,
-        "other": 3086,
-        "unknown": 0
-      },
-      "focused_review_offices": 3097,
-      "tier_uncertain_offices": 3086,
-      "sha256": "dc99659216d9ca3229fc0405961bbe07ff7819df6077f309a50e78985d70f190"
-    },
-    {
       "country_id": "saint-kitts-and-nevis",
       "lineage_id": "latin-america-fe5e91689def",
       "file": "schemas/atlas/tiers/saint-kitts-and-nevis.json",
@@ -449,6 +431,25 @@
         "municipal": 690
       },
       "note": "Prompt BJ 2026-09-29. Unapproved draft tiers; justin_approved false; applied false. ATLAS_IMPORT_SCOPE=chile replaces an empty screened_out stub with partial draft coverage. base.json.gz unchanged, so all still publishes the stub. Not a continuity office shard. Slim land 0 events / 0 results / 0 sources. Holds CL-BJ-G01–CL-BJ-G20 remain open. No dummy continuity office."
+    },
+    {
+      "country_id": "peru",
+      "status": "researched_full_pack_accept_with_holds",
+      "prior_classifier": "docs/phase1/peru/Phase2_prerequisite_tiers.json",
+      "prior_classifier_sha256": "9483875e4e6aabdf938324aa1849549519962bfe26dde5b359ca00b4e23addfd",
+      "prior_office_count": 5039,
+      "docs": "docs/phase1/peru/",
+      "tier_file": "schemas/atlas/tiers/peru.json",
+      "current_offices": 3840,
+      "current_research_accepted": 3838,
+      "current_held": 2,
+      "historical_only_offices": 1,
+      "draft_tiers": {
+        "national_context": 5,
+        "regional": 50,
+        "municipal": 3786
+      },
+      "note": "Prompt BK 2026-10-31. Unapproved draft tiers; review_status needs_review; justin_approved false. Phase 2 latin-america classifier preserved and not imported. Not part of ATLAS_IMPORT_SCOPE=all or latam. ATLAS_IMPORT_SCOPE=peru publishes 3841 offices, 0 events, 0 results, 0 sources. Holds BK-G01–BK-G18 remain open. Sangani stays held. October 2026 ERM results stay out. Centros poblados offices stay 0."
     }
   ]
 }

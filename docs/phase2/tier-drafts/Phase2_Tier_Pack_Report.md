@@ -38,6 +38,8 @@ All IDs are exact existing office IDs; LatAm includes historical offices. File s
 | new-zealand | 4 | 4 | 0 | 0 | 0 | 3 | 1 | 0 | 1 |
 | TOTAL | 18647 | 18233 | 414 | 0 | 393 | 12194 | 5961 | 99 | 6851 |
 
+Prompt BK (2026-11-09) replaces the live `schemas/atlas/tiers/peru.json` with the BK draft (3,841 rows). The Phase 2 classifier in this table (5,039 offices) is preserved at `docs/phase1/peru/Phase2_prerequisite_tiers.json` (SHA-256 `9483875e4e6aabdf938324aa1849549519962bfe26dde5b359ca00b4e23addfd`) and is not imported. This table stays the Phase 2 baseline.
+
 ## Classification rationale and human-review queue
 
 Clear municipal institutions and council ward seats are proposed municipal. Explicit provincial/state/departmental/regional executives and chambers follow the institution, including seats elected in smaller constituencies. Island bodies are conservatively other pending regional-versus-other review. Distinct submunicipal bodies are conservatively other pending the scope decision; this includes Peru populated-centre municipal slates despite the municipal word in their office type. School districts are other, with scope review. Generic unlinked historical institutions are unknown. These group decisions are not silently applied at import: every office has an explicit row with rationale and hashed evidence.
