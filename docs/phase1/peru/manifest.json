@@ -1,0 +1,71 @@
+{
+  "prompt": "BK",
+  "country_id": "peru",
+  "country_code": "PE",
+  "name": "República del Perú",
+  "as_of": "2026-10-31",
+  "coverage": "full_current_in_scope_office_register_with_explicit_territorial_hold_and_nonexhaustive_historical_results",
+  "research_coverage_complete": false,
+  "coverage_empty_stub_rescinded": true,
+  "applied_changes": 0,
+  "production_approved": false,
+  "justin_approvals": {
+    "scope": false,
+    "identities": false,
+    "tiers": false,
+    "history": false,
+    "calendar": false,
+    "production": false
+  },
+  "counts": {
+    "office_rows": 3841,
+    "current_office_rows": 3840,
+    "current_research_accepted": 3838,
+    "current_held": 2,
+    "historical_office_rows": 1,
+    "events": 12460,
+    "results": 97260,
+    "event_processes": 76,
+    "certified_events": 6,
+    "certified_results": 197,
+    "accepted_by_level": {
+      "national": 4,
+      "regional": 50,
+      "provincial_municipal": 392,
+      "district_municipal": 3392
+    },
+    "held_by_level": {
+      "district_municipal": 2
+    },
+    "current_direct_executive_offices": 1918,
+    "current_councils": 1917,
+    "current_national_chambers": 2,
+    "current_andean_delegation_offices": 1,
+    "vice_presidential_ticket_components": 2,
+    "regional_vicegovernor_ticket_components": 25,
+    "draft_tiers": {
+      "national_context": 5,
+      "regional": 50,
+      "municipal": 3786
+    },
+    "results_with_votes": 97152,
+    "results_missing_or_incomplete_votes": 108,
+    "events_identity_held": 175,
+    "result_rows_with_seats": 28,
+    "municipalities_inei": 1893,
+    "provincial_municipalities": 196,
+    "district_municipalities_inei": 1697,
+    "district_municipalities_erm2026": 1696,
+    "ep_offices": 0,
+    "mercosur_offices": 0,
+    "applied_changes": 0
+  },
+  "calendar_prominent_on_country_surface": true,
+  "alert_window_months_approx": 18,
+  "alert_window_filters_only_global_homepage_and_alerts": true,
+  "calendar_as_of": "2026-10-31",
+  "municipal_roster_as_of": "2026-10-14",
+  "historical_normalization_as_of": "2026-09-30",
+  "previous_zip_sha256": "b2acb2916b2061da2e790e0e972f1adb8cdb3aa35e8ae029a3e98b9aaa88efa0",
+  "refresh_scope": "Recovered pack; current calendar and official municipal roster refreshed. Prior normalized event/result bytes preserved; October2026 returns remain untranscribed."
+}

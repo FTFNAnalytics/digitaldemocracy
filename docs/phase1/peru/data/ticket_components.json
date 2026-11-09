@@ -1,0 +1,299 @@
+[
+  {
+    "component_id": "pe-vice-president-1",
+    "parent_office_id": "pe-president-ticket",
+    "role": "1 vicepresidencia",
+    "selection_mode": "joint_presidential_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "compendio2026-2.pdf"
+    ],
+    "legal_locator": "Constitution article 111; LOE articles 16–19"
+  },
+  {
+    "component_id": "pe-vice-president-2",
+    "parent_office_id": "pe-president-ticket",
+    "role": "2 vicepresidencia",
+    "selection_mode": "joint_presidential_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "compendio2026-2.pdf"
+    ],
+    "legal_locator": "Constitution article 111; LOE articles 16–19"
+  },
+  {
+    "component_id": "pe-region-amazonas-vicegovernor",
+    "parent_office_id": "pe-region-amazonas-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-ancash-vicegovernor",
+    "parent_office_id": "pe-region-ancash-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-apurimac-vicegovernor",
+    "parent_office_id": "pe-region-apurimac-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-arequipa-vicegovernor",
+    "parent_office_id": "pe-region-arequipa-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-ayacucho-vicegovernor",
+    "parent_office_id": "pe-region-ayacucho-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-cajamarca-vicegovernor",
+    "parent_office_id": "pe-region-cajamarca-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-callao-vicegovernor",
+    "parent_office_id": "pe-region-callao-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-cusco-vicegovernor",
+    "parent_office_id": "pe-region-cusco-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-lima-vicegovernor",
+    "parent_office_id": "pe-region-lima-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-huancavelica-vicegovernor",
+    "parent_office_id": "pe-region-huancavelica-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-huanuco-vicegovernor",
+    "parent_office_id": "pe-region-huanuco-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-ica-vicegovernor",
+    "parent_office_id": "pe-region-ica-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-junin-vicegovernor",
+    "parent_office_id": "pe-region-junin-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-la-libertad-vicegovernor",
+    "parent_office_id": "pe-region-la-libertad-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-lambayeque-vicegovernor",
+    "parent_office_id": "pe-region-lambayeque-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-loreto-vicegovernor",
+    "parent_office_id": "pe-region-loreto-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-madre-de-dios-vicegovernor",
+    "parent_office_id": "pe-region-madre-de-dios-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-moquegua-vicegovernor",
+    "parent_office_id": "pe-region-moquegua-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-pasco-vicegovernor",
+    "parent_office_id": "pe-region-pasco-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-piura-vicegovernor",
+    "parent_office_id": "pe-region-piura-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-puno-vicegovernor",
+    "parent_office_id": "pe-region-puno-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-san-martin-vicegovernor",
+    "parent_office_id": "pe-region-san-martin-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-tacna-vicegovernor",
+    "parent_office_id": "pe-region-tacna-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-tumbes-vicegovernor",
+    "parent_office_id": "pe-region-tumbes-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  },
+  {
+    "component_id": "pe-region-ucayali-vicegovernor",
+    "parent_office_id": "pe-region-ucayali-executive",
+    "role": "Vicegobernador regional",
+    "selection_mode": "joint_regional_ticket",
+    "independent_ballot": false,
+    "source_files": [
+      "regional-law.pdf"
+    ],
+    "legal_locator": "Law 27683 article 5"
+  }
+]
