@@ -28,8 +28,6 @@ ATLAS_IMPORT_SCOPE=united_kingdom npm run import:atlas
 
 Do **not** run `ATLAS_IMPORT_SCOPE=all`. That command re-imports the other approved lineages and does not publish the United Kingdom.
 
-Offices-only import stays 0 events and 0 result rows. The pilot full ZIP is `United_Kingdom_Atlas_Prompt_AU/` with `data/events.jsonl` and gzipped `data/results.jsonl.gz` (899 events / 103,648 results). Put it outside git and follow [full research ZIP](../../phase2/Continuity_Import.md#vps--full-research-zip-events-and-results): backup, `ATLAS_IMPORT_SCOPE=united_kingdom` with `ATLAS_PACK_ZIP` or `--pack=`, then `npm run derive:atlas:country -- --country=united-kingdom`. The loader streams those members out of the ZIP. Do not run `npm run derive:atlas`.
-
 Expected United Kingdom lines:
 
 ```

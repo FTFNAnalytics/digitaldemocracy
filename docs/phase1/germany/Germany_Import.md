@@ -28,8 +28,6 @@ ATLAS_IMPORT_SCOPE=germany npm run import:atlas
 
 Do **not** run `ATLAS_IMPORT_SCOPE=all`. That command re-imports the other approved lineages and does not publish Germany.
 
-Offices-only import stays 0 events and 0 result rows. To load the full Prompt AS ZIP (13,845 events / 1,299,670 results in `data/events.jsonl` and `data/results.jsonl`), put it outside git and follow [full research ZIP](../../phase2/Continuity_Import.md#vps--full-research-zip-events-and-results): backup, `ATLAS_IMPORT_SCOPE=germany` with `ATLAS_PACK_ZIP` or `--pack=`, then `npm run derive:atlas:country -- --country=germany`. Do not run `npm run derive:atlas`.
-
 Expected Germany lines:
 
 ```

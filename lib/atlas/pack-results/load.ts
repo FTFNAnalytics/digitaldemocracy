@@ -8,7 +8,6 @@ import { insertMany, openAtlasDatabase, tableExists } from "../sqlite";
 import {
   mapPackEvent,
   mapPackResult,
-  packDateId,
   parsePackObject,
   type MappedEvent,
   type MappedResult,
