@@ -11,9 +11,12 @@
  * runs when the scope is unset or `all`, or when the operator sets
  * `ATLAS_PUBLISH_RESTAGE=1`.
  *
- * `ATLAS_PUBLISH_LIVE=1` forces the live path even for scope `all`. The
- * continuity CI script sets it so each country is not a `VACUUM INTO` of the
- * growing file. `ATLAS_PUBLISH_RESTAGE=1` still wins.
+ * `ATLAS_PUBLISH_LIVE=1` forces the live path even for scope `all`, and skips
+ * the derived rebuild. The continuity CI script sets it. That script checks
+ * master rows only. Rebuilding derived rows would full-scan `result_row` once
+ * per country (no `country_id` index); LatAm did that until the step timed out.
+ * `ATLAS_PUBLISH_RESTAGE=1` still wins. Production `import:atlas` does not set
+ * this flag, so a named scope still derives that country.
  */
 
 export type AtlasPublishMode = "live" | "restage";

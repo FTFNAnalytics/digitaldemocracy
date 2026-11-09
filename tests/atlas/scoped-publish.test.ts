@@ -104,7 +104,7 @@ describe("Atlas publish mode", () => {
       expect(publishDiagnostics.vacuumInto).toBe(0);
       expect(publishDiagnostics.liveSessions).toBe(1);
       expect(publishDiagnostics.fullDerives).toBe(0);
-      expect(publishDiagnostics.countryDerives).toEqual(["alderney"]);
+      expect(publishDiagnostics.countryDerives).toEqual([]);
       expect(existsSync(`${sqlitePath}.staging`)).toBe(false);
     } finally {
       endLiveSession();
