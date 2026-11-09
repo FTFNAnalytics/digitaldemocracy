@@ -22,9 +22,17 @@ export type PackProfile = {
    * single top directory such as `Peru_Prompt_BK_2026-10-31/`.
    */
   layout: "data-dir" | "pack-root";
+  /** Directory at the root of the research ZIP, without a trailing slash. */
+  topDirectory: string | null;
   eventsPath: string;
   resultsPath: string;
   countsPath: string | null;
+  /** Present for Italy. Honoured wherever the file is in the ZIP. */
+  eventOfficeLinksPath: string | null;
+  eventOfficeLinksRequired: boolean;
+  /** Italy and Germany. `result_rows` is the count check for the results stream. */
+  resultAuditPath: string | null;
+  resultAuditRequired: boolean;
   reportingUnitsPath: string | null;
   officeRegisterPath: string | null;
   officeRegisterSha256: string | null;
@@ -47,9 +55,14 @@ export const PACK_PROFILES: readonly PackProfile[] = [
     idNamespace: "cdd-atlas-gb-research-v1",
     prompt: "AU",
     layout: "data-dir",
+    topDirectory: "United_Kingdom_Atlas_Prompt_AU",
     eventsPath: "data/events.jsonl",
     resultsPath: "data/results.jsonl.gz",
     countsPath: "data/counts.json",
+    eventOfficeLinksPath: null,
+    eventOfficeLinksRequired: false,
+    resultAuditPath: null,
+    resultAuditRequired: false,
     reportingUnitsPath: "data/reporting-units.jsonl",
     officeRegisterPath: "data/office-register.jsonl",
     officeRegisterSha256: "0a7583b5b220c293d7d307ab5fde325772a99e740468029343451f1ddcea12a9",
@@ -68,9 +81,14 @@ export const PACK_PROFILES: readonly PackProfile[] = [
     idNamespace: "cdd-atlas-it-research-v1",
     prompt: "AT",
     layout: "data-dir",
+    topDirectory: "Italy_Atlas_Prompt_AT",
     eventsPath: "data/events.jsonl",
     resultsPath: "data/results.jsonl.gz",
     countsPath: "data/counts.json",
+    eventOfficeLinksPath: "data/event-office-links.jsonl",
+    eventOfficeLinksRequired: true,
+    resultAuditPath: "data/result-audit.json",
+    resultAuditRequired: true,
     reportingUnitsPath: "data/reporting-units.jsonl",
     officeRegisterPath: "data/office-register.jsonl",
     officeRegisterSha256: "6eb39d5dde93ede9b1199d67bb123af8241de10c237c02d65cc3c17c7f6e1ff8",
@@ -89,9 +107,14 @@ export const PACK_PROFILES: readonly PackProfile[] = [
     idNamespace: "cdd-atlas-de-research-v1",
     prompt: "AS",
     layout: "data-dir",
+    topDirectory: "Germany_Atlas_Prompt_AS",
     eventsPath: "data/events.jsonl",
     resultsPath: "data/results.jsonl",
     countsPath: "data/counts.json",
+    eventOfficeLinksPath: "data/event-office-links.jsonl",
+    eventOfficeLinksRequired: false,
+    resultAuditPath: "data/result-audit.json",
+    resultAuditRequired: true,
     reportingUnitsPath: "data/reporting-units.jsonl",
     officeRegisterPath: "data/office-register.jsonl",
     officeRegisterSha256: "99563c5ab6afa8b07c1e976a49576476fc94e808549eae6926700483cddd5dd1",
@@ -110,9 +133,14 @@ export const PACK_PROFILES: readonly PackProfile[] = [
     idNamespace: "cdd-atlas-fr-research-v1",
     prompt: "AR",
     layout: "data-dir",
+    topDirectory: "France_Atlas_Prompt_AR",
     eventsPath: "data/events.jsonl",
     resultsPath: "data/results.jsonl",
     countsPath: "data/counts.json",
+    eventOfficeLinksPath: null,
+    eventOfficeLinksRequired: false,
+    resultAuditPath: null,
+    resultAuditRequired: false,
     reportingUnitsPath: "data/reporting-units.jsonl",
     officeRegisterPath: "data/office-register.jsonl",
     officeRegisterSha256: "8801b85152572cb326750b04207e12559b4d0cea3ebb19e2769126f0892b7d58",
@@ -131,9 +159,14 @@ export const PACK_PROFILES: readonly PackProfile[] = [
     idNamespace: "cdd-atlas-pe-research-v1",
     prompt: "BK",
     layout: "pack-root",
+    topDirectory: null,
     eventsPath: "events.jsonl",
     resultsPath: "results.jsonl",
     countsPath: null,
+    eventOfficeLinksPath: null,
+    eventOfficeLinksRequired: false,
+    resultAuditPath: null,
+    resultAuditRequired: false,
     reportingUnitsPath: null,
     officeRegisterPath: null,
     officeRegisterSha256: null,

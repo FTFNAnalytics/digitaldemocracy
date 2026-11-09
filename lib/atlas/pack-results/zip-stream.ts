@@ -178,6 +178,26 @@ export function memberAt(members: ZipMember[], prefix: string, relative: string)
   return members.find((member) => member.name === full) ?? null;
 }
 
+/**
+ * Find a pack file inside a ZIP. Prefers `topDirectory/relative` (the on-disk
+ * research folders), then the same relative path at the ZIP root. Members are
+ * not extracted; callers stream the compressed range.
+ */
+export function locatePackMember(members: ZipMember[], topDirectory: string | null, relative: string): ZipMember | null {
+  const relativePath = relative.replace(/^\.\//, "").replace(/^\/+/, "");
+  const top = topDirectory?.replace(/\/+$/, "") ?? "";
+  const preferred = top ? `${top}/${relativePath}` : relativePath;
+  const exact = members.find((member) => member.name === preferred);
+  if (exact) return exact;
+  if (preferred !== relativePath) {
+    const atRoot = members.find((member) => member.name === relativePath);
+    if (atRoot) return atRoot;
+  }
+  const suffix = `/${relativePath}`;
+  const hits = members.filter((member) => member.name === relativePath || member.name.endsWith(suffix));
+  return hits.length === 1 ? hits[0]! : null;
+}
+
 function memberByteStream(filePath: string, member: ZipMember): Readable {
   if (member.method !== 0 && member.method !== 8) {
     throw new Error(`Unsupported ZIP method ${member.method} for ${member.name}`);
@@ -231,7 +251,10 @@ export async function readZipMemberText(filePath: string, member: ZipMember, max
   return text;
 }
 
-/** Unzip one member and gunzip it when the pack stored a `.gz` file. */
+/**
+ * Stream one member as text. A `.jsonl.gz` member is inflated from the ZIP and
+ * gunzipped in the same pipe. Nothing is written to disk.
+ */
 export function openZipMemberTextStream(filePath: string, member: ZipMember): Readable {
   const bytes = memberByteStream(filePath, member);
   if (member.name.endsWith(".gz")) return bytes.pipe(createGunzip());

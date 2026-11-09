@@ -1,6 +1,6 @@
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { mkdtempSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { deflateRawSync, gzipSync } from "node:zlib";
 import os from "node:os";
 import path from "node:path";
@@ -392,7 +392,7 @@ describe("full research ZIP results", () => {
       "data/counts.json": Buffer.from(JSON.stringify({ events: 2, results: 3 })),
       "data/reporting-units.jsonl": Buffer.from(JSON.stringify({ reporting_unit_id: "U1", event_id: "GB-E-1" }) + "\n"),
     };
-    const ukZip = packZip(dir, "uk-full/", ukFiles);
+    const ukZip = packZip(dir, "United_Kingdom_Atlas_Prompt_AU/", ukFiles);
     const uk = await loadCountryPackResults({
       scope: "united_kingdom",
       zipPath: ukZip,
@@ -400,9 +400,13 @@ describe("full research ZIP results", () => {
       fixture: true,
       derive: false,
     });
+    expect(uk.eventsFile).toBe("United_Kingdom_Atlas_Prompt_AU/data/events.jsonl");
+    expect(uk.resultsFile).toBe("United_Kingdom_Atlas_Prompt_AU/data/results.jsonl.gz");
     expect(uk.eventsAccepted).toBe(1);
     expect(uk.resultsAccepted).toBe(1);
     expect(uk.resultsRejected).toBe(2);
+    expect(uk.eventOfficeLinks).toBe(0);
+    expect(uk.resultAuditRows).toBeNull();
     const ukCheck = new DatabaseSync(sqlitePath, { readOnly: true });
     const ukRow = ukCheck.prepare("SELECT votes, share, share_unit FROM result_row WHERE result_row_id = 'GB-R-1'").get();
     expect(ukRow).toEqual({ votes: 10, share: 55, share_unit: "percent_0_100" });
@@ -421,6 +425,120 @@ describe("full research ZIP results", () => {
     expect(derive.status, derive.stderr).toBe(0);
     expect(derive.stdout).toContain("derive:atlas:country");
     expect(derive.stdout).toContain("country_id=peru");
+  });
+
+  it("streams an Italy Prompt AT zip, honours event-office links, and checks result-audit", async () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-pack-italy-"));
+    tempDirs.push(dir);
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    migrateMasterDatabase(repoRoot, sqlitePath);
+    const db = new DatabaseSync(sqlitePath);
+    seedCountry(db, {
+      countryId: "italy",
+      code: "IT",
+      lineageId: "country-package-italy",
+      releaseId: "rel-it",
+      namespace: "ns-it",
+      officeId: "IT-MAYOR",
+      geographyId: "IT-GEO",
+    });
+    db.exec("BEGIN IMMEDIATE;");
+    db.prepare(
+      `INSERT INTO office_tier_classification (
+         id_namespace, office_id, tier, review_status, rationale, lineage_id, release_id,
+         classification_path, classification_kind, classification_sha256
+       ) VALUES ('ns-it', 'IT-COUNCIL', 'municipal', 'needs_review', 'fixture', 'country-package-italy', 'rel-it', 'schemas/atlas/tiers/fixture.json', 'tier_classification', ?)`,
+    ).run(SHA);
+    db.prepare(
+      `INSERT INTO office (
+         id_namespace, office_id, country_id, geography_id, name, office_type, office_status,
+         record_state, next_date_resolution, lineage_id, release_id
+       ) VALUES ('ns-it', 'IT-COUNCIL', 'italy', 'IT-GEO', 'Fixture council', 'council', 'current', 'active', 'unknown', 'country-package-italy', 'rel-it')`,
+    ).run();
+    db.exec("COMMIT;");
+    db.close();
+
+    const events =
+      JSON.stringify({
+        event_id: "IT-E-1",
+        office_id: "IT-MAYOR",
+        date: "2024-06-09",
+        date_precision: "day",
+        event_kind: "municipal",
+      }) + "\n";
+    const links = [
+      JSON.stringify({
+        event_id: "IT-E-1",
+        office_id: "IT-COUNCIL",
+        relationship: "same_joint_list_mayor_ballot",
+        vote_duplication_permitted: false,
+      }),
+      JSON.stringify({
+        event_id: "IT-E-1",
+        office_id: "IT-MISSING",
+        relationship: "same_joint_list_mayor_ballot",
+        vote_duplication_permitted: false,
+      }),
+      JSON.stringify({
+        event_id: "IT-E-1",
+        office_id: "IT-COUNCIL",
+        relationship: "same_joint_list_mayor_ballot",
+        vote_duplication_permitted: true,
+      }),
+    ].join("\n") + "\n";
+    const results =
+      [
+        JSON.stringify({ result_id: "IT-R-1", event_id: "IT-E-1", votes: 10, votes_status: "reported", label: "Ada" }),
+        JSON.stringify({
+          result_id: "IT-R-2",
+          event_id: "IT-E-1",
+          votes: null,
+          missing_vote_components: 1,
+          label: "Gap",
+        }),
+      ].join("\n") + "\n";
+    const files: Record<string, Buffer> = {
+      "data/events.jsonl": Buffer.from(events),
+      "data/event-office-links.jsonl": Buffer.from(links),
+      "data/results.jsonl.gz": gzipSync(Buffer.from(results)),
+      "data/result-audit.json": Buffer.from(JSON.stringify({ result_rows: 2, result_kinds: { contestant: 2 } })),
+      "data/counts.json": Buffer.from(JSON.stringify({ events: 1, results: 2 })),
+    };
+    const zipPath = packZip(dir, "Italy_Atlas_Prompt_AT/", files);
+    const loaded = await loadCountryPackResults({
+      scope: "italy",
+      zipPath,
+      sqlitePath,
+      fixture: true,
+      derive: false,
+    });
+    expect(loaded.eventsFile).toBe("Italy_Atlas_Prompt_AT/data/events.jsonl");
+    expect(loaded.resultsFile).toBe("Italy_Atlas_Prompt_AT/data/results.jsonl.gz");
+    expect(loaded.eventOfficeLinks).toBe(1);
+    expect(loaded.eventOfficeLinksRejected).toBe(2);
+    expect(loaded.resultAuditRows).toBe(2);
+    expect(loaded.resultsAccepted).toBe(2);
+
+    const check = new DatabaseSync(sqlitePath, { readOnly: true });
+    expect(countWhere(check, "result_row", "office_id = ?", "IT-MAYOR")).toBe(2);
+    expect(countWhere(check, "result_row", "office_id = ?", "IT-COUNCIL")).toBe(0);
+    const raw = String(check.prepare("SELECT raw_json FROM election_event WHERE event_id = 'IT-E-1'").get()?.raw_json);
+    expect(raw).toContain("same_joint_list_mayor_ballot");
+    expect(raw).toContain("IT-COUNCIL");
+    expect(raw).not.toContain("vote_duplication_permitted\":true");
+    const gap = check.prepare("SELECT votes FROM result_row WHERE result_row_id = 'IT-R-2'").get();
+    expect(gap?.votes).toBeNull();
+    check.close();
+    expect(readdirSync(dir).some((name) => name === "events.jsonl" || name === "results.jsonl")).toBe(false);
+
+    const badAudit = { ...files, "data/result-audit.json": Buffer.from(JSON.stringify({ result_rows: 99 })) };
+    const badZip = packZip(dir, "Italy_Atlas_Prompt_AT/", badAudit);
+    await expect(
+      loadCountryPackResults({ scope: "italy", zipPath: badZip, sqlitePath, fixture: true, derive: false }),
+    ).rejects.toThrow(/result-audit.json result_rows=99/);
+    const still = new DatabaseSync(sqlitePath, { readOnly: true });
+    expect(countWhere(still, "result_row", "office_id = ?", "IT-MAYOR")).toBe(2);
+    still.close();
   });
 
   it("refuses scope all and a Peru run without a ZIP", () => {

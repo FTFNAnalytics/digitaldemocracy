@@ -277,13 +277,15 @@ sqlite3 "$ATLAS_SQLITE_PATH" "SELECT COUNT(*) FROM result_row WHERE country_id='
 
 Use the same sequence for the other packs. Change the scope, the ZIP path, the backup name, and the `--country=` id together:
 
-| Scope | Country id | ZIP members the loader reads |
+| Scope | Country id | ZIP layout the loader streams |
 | --- | --- | --- |
-| `united_kingdom` | `united-kingdom` | `data/events.jsonl`, `data/results.jsonl.gz`, `data/counts.json`, `data/reporting-units.jsonl`, `data/office-register.jsonl`, `SHA256SUMS`. Prompt AU pins: 899 events, 103,648 results |
-| `italy` | `italy` | `data/events.jsonl`, `data/results.jsonl.gz`, `data/counts.json`, `data/reporting-units.jsonl`, `data/office-register.jsonl`, `SHA256SUMS`. Prompt AT pins: 515 events, 606,051 results |
-| `germany` | `germany` | `data/events.jsonl`, `data/results.jsonl`, `data/counts.json`, `data/reporting-units.jsonl`, `data/office-register.jsonl`, `SHA256SUMS`. Prompt AS pins: 13,845 events, 1,299,670 results |
-| `france` | `france` | `data/events.jsonl`, `data/results.jsonl`, `data/counts.json`, `data/reporting-units.jsonl`, `data/office-register.jsonl`, `SHA256SUMS`. Prompt AR pins: 119,554 events, 1,193,657 results |
-| `peru` | `peru` | Top of `Peru_Prompt_BK_2026-10-31/`: `events.jsonl` (12,460), `results.jsonl` (97,260, including 108 incomplete vote rows that stay null), optional `SHA256SUMS`. `ticket_components.json`, `successor_edges.json`, and `upcoming_calendar.json` are checked and not turned into offices or successor edges. `validate.py` and `sources/raw/**`, `sources/text/**` are not loaded |
+| `united_kingdom` | `united-kingdom` | `United_Kingdom_Atlas_Prompt_AU/data/events.jsonl` and `data/results.jsonl.gz` (gzipped). Prompt AU pins: 899 events, 103,648 results. This is the pilot |
+| `italy` | `italy` | `Italy_Atlas_Prompt_AT/data/events.jsonl`, `data/event-office-links.jsonl`, `data/results.jsonl.gz`, and `data/result-audit.json`. Links are kept on the event and do not copy votes (`vote_duplication_permitted` must be false). `result_rows` in the audit must match the streamed results. Pins: 515 events, 606,051 results |
+| `germany` | `germany` | `Germany_Atlas_Prompt_AS/data/events.jsonl`, `data/results.jsonl` (plain JSONL, hundreds of MB), and `data/result-audit.json`. Pins: 13,845 events, 1,299,670 results |
+| `france` | `france` | `France_Atlas_Prompt_AR/data/events.jsonl` and `data/results.jsonl` (plain JSONL). Pins: 119,554 events, 1,193,657 results |
+| `peru` | `peru` | `events.jsonl` and `results.jsonl` at the pack root (12,460 events, 97,260 results, incomplete votes stay null) |
+
+`.jsonl` and `.jsonl.gz` are read from the ZIP in a stream. The archive is not unpacked onto disk. `data/result-audit.json`, where the pack has one, is the result-count check. `data/event-office-links.jsonl`, where the pack has one, is applied without a second copy of the result rows.
 
 A single top directory in the ZIP is stripped. Europe packs may use that wrapper or sit at the ZIP root, as long as the paths above are the paths inside the pack. Production loads must match the pinned counts and, where a SHA-256 is pinned, the pinned bytes. `ATLAS_PACK_FIXTURE=1` is refused for `/var/lib/cdd/atlas.sqlite`.
 

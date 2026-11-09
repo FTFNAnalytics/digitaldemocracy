@@ -1,5 +1,6 @@
 import { appendFileSync, mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
+import { StringDecoder } from "node:string_decoder";
 import type { DatabaseSync } from "node:sqlite";
 import { deleteCountryDerived, rebuildDerivedCountryInFile } from "../derive/run";
 import { PRODUCTION_ATLAS_SQLITE_PATH } from "../paths";
@@ -18,9 +19,8 @@ import {
   forEachTextLine,
   hashZipMember,
   listZipMembers,
-  memberAt,
+  locatePackMember,
   openZipMemberTextStream,
-  packPrefix,
   readZipMemberText,
   type ZipMember,
 } from "./zip-stream";
@@ -57,6 +57,9 @@ export type PackResultsReport = {
   successorEdgesNoted: number | null;
   upcomingCalendarNoted: number | null;
   ticketComponents: number | null;
+  eventOfficeLinks: number;
+  eventOfficeLinksRejected: number;
+  resultAuditRows: number | null;
   rejectsFile: string;
   derivedCycles: number | null;
   wrote: boolean;
@@ -197,7 +200,7 @@ function readPublished(
 async function notePackCompanions(
   zipPath: string,
   members: ZipMember[],
-  prefix: string,
+  topDirectory: string | null,
   manifest: Map<string, string> | null,
 ): Promise<{
   successorEdges: number | null;
@@ -206,7 +209,7 @@ async function notePackCompanions(
   ticketComponents: Set<string> | null;
 }> {
   const readListed = async (relative: string): Promise<unknown | null> => {
-    const member = memberAt(members, prefix, relative);
+    const member = locatePackMember(members, topDirectory, relative);
     if (!member) return null;
     if (manifest?.has(relative)) await hashed(zipPath, member, manifest, relative);
     let value: unknown;
@@ -231,7 +234,13 @@ async function notePackCompanions(
   };
 }
 
-function envelope(relative: string, sha: string, line: number, row: unknown): string {
+type OfficeLink = {
+  eventId: string;
+  officeId: string;
+  relationship: string;
+};
+
+function envelope(relative: string, sha: string, line: number, row: unknown, links: OfficeLink[] = []): string {
   return JSON.stringify({
     pack_results: true,
     origin: {
@@ -246,8 +255,38 @@ function envelope(relative: string, sha: string, line: number, row: unknown): st
     row,
     columns: null,
     values: null,
-    supplemental: { pack_results: true },
+    supplemental: {
+      pack_results: true,
+      event_office_links: links,
+    },
   });
+}
+
+/** Read a count from a JSON member without keeping the member in memory. */
+async function streamJsonCount(filePath: string, member: ZipMember, keys: string[]): Promise<number | null> {
+  const stream = openZipMemberTextStream(filePath, member);
+  const decoder = new StringDecoder("utf8");
+  const pattern = new RegExp(`"(${keys.join("|")})"\\s*:\\s*(\\d+)`, "g");
+  const found = new Map<string, number>();
+  let window = "";
+  try {
+    for await (const chunk of stream) {
+      window += decoder.write(chunk as Buffer);
+      for (const match of window.matchAll(pattern)) {
+        const key = match[1];
+        if (key && !found.has(key)) found.set(key, Number(match[2]));
+      }
+      if (keys.every((key) => found.has(key))) break;
+      if (window.length > 8192) window = window.slice(-256);
+    }
+  } finally {
+    stream.destroy();
+  }
+  for (const key of keys) {
+    const value = found.get(key);
+    if (value != null) return value;
+  }
+  return null;
 }
 
 function inTransaction(db: DatabaseSync, fn: () => void): void {
@@ -358,7 +397,14 @@ function clearCountryResults(db: DatabaseSync, lineageId: string, countryId: str
   );
 }
 
-function eventRow(profile: PackProfile, releaseId: string, sha: string, line: number, mapped: MappedEvent): {
+function eventRow(
+  profile: PackProfile,
+  releaseId: string,
+  sha: string,
+  line: number,
+  mapped: MappedEvent,
+  links: OfficeLink[],
+): {
   date: Record<string, unknown> | null;
   event: Record<string, unknown>;
 } {
@@ -397,7 +443,7 @@ function eventRow(profile: PackProfile, releaseId: string, sha: string, line: nu
       state_note: mapped.stateNote,
       lineage_id: profile.lineageId,
       release_id: releaseId,
-      raw_json: envelope(profile.eventsPath, sha, line, mapped.source),
+      raw_json: envelope(profile.eventsPath, sha, line, mapped.source, links),
     },
   };
 }
@@ -563,6 +609,55 @@ async function scanResults(
   return { inFile, accepted, rejected };
 }
 
+async function readOfficeLinks(
+  zipPath: string,
+  member: ZipMember,
+  events: Map<string, { officeId: string; historyKey: string }>,
+  offices: Set<string>,
+  rejects: RejectLog,
+): Promise<{ byEvent: Map<string, OfficeLink[]>; accepted: number; rejected: number }> {
+  const byEvent = new Map<string, OfficeLink[]>();
+  let accepted = 0;
+  let rejected = 0;
+  await forEachTextLine(openZipMemberTextStream(zipPath, member), (line, lineNumber) => {
+    const parsed = parsePackObject(line);
+    const reject = (reason: string, eventId?: string, officeId?: string) => {
+      rejected += 1;
+      rejects.add({ file: member.name, line: lineNumber, reason, event_id: eventId, office_id: officeId });
+    };
+    if ("reason" in parsed && typeof parsed.reason === "string" && Object.keys(parsed).length === 1) {
+      reject(parsed.reason);
+      return;
+    }
+    const row = parsed as Record<string, unknown>;
+    const eventId = typeof row.event_id === "string" ? row.event_id.trim() : "";
+    const officeId = typeof row.office_id === "string" ? row.office_id.trim() : "";
+    const relationship = typeof row.relationship === "string" ? row.relationship.trim() : "";
+    if (!eventId || !officeId || !relationship) {
+      reject("event_office_link_missing_field", eventId || undefined, officeId || undefined);
+      return;
+    }
+    if (!events.has(eventId)) {
+      reject("event_office_link_unknown_event", eventId, officeId);
+      return;
+    }
+    if (!offices.has(officeId)) {
+      reject("event_office_link_office_not_published", eventId, officeId);
+      return;
+    }
+    if (row.vote_duplication_permitted !== false) {
+      reject("event_office_link_would_duplicate_votes", eventId, officeId);
+      return;
+    }
+    const link = { eventId, officeId, relationship };
+    const list = byEvent.get(eventId) ?? [];
+    list.push(link);
+    byEvent.set(eventId, list);
+    accepted += 1;
+  });
+  return { byEvent, accepted, rejected };
+}
+
 export function packReportLines(report: PackResultsReport): string[] {
   return [
     `pack_zip=${report.zipPath}`,
@@ -576,6 +671,9 @@ export function packReportLines(report: PackResultsReport): string[] {
     `pack_successor_edges_noted=${report.successorEdgesNoted ?? ""}`,
     `pack_upcoming_calendar_noted=${report.upcomingCalendarNoted ?? ""}`,
     `pack_ticket_components=${report.ticketComponents ?? ""}`,
+    `pack_event_office_links=${report.eventOfficeLinks}`,
+    `pack_event_office_links_rejected=${report.eventOfficeLinksRejected}`,
+    `pack_result_audit_rows=${report.resultAuditRows ?? ""}`,
     `pack_offices_published=${report.officesPublished}`,
     `pack_events_file=${report.eventsFile}`,
     `pack_events_sha256=${report.eventsSha256}`,
@@ -615,14 +713,14 @@ export async function loadCountryPackResults(options: LoadPackResultsOptions): P
     path.join(path.dirname(options.sqlitePath), `pack-rejects-${profile.countryId}.jsonl`);
 
   const members = listZipMembers(options.zipPath);
-  const prefix = packPrefix(members);
-  const manifestMember = memberAt(members, prefix, "SHA256SUMS");
+  const locate = (relative: string) => locatePackMember(members, profile.topDirectory, relative);
+  const manifestMember = locate("SHA256SUMS");
   if (!manifestMember && profile.requireManifest) {
     throw new PackResultsError("SHA256SUMS is missing from the research ZIP. No rows were written.");
   }
   const manifest = manifestMember ? parseManifest(await readZipMemberText(options.zipPath, manifestMember)) : null;
-  const eventsMember = memberAt(members, prefix, profile.eventsPath);
-  const resultsMember = memberAt(members, prefix, profile.resultsPath);
+  const eventsMember = locate(profile.eventsPath);
+  const resultsMember = locate(profile.resultsPath);
   if (!eventsMember || !resultsMember) {
     throw new PackResultsError(
       `ZIP is missing ${profile.eventsPath} or ${profile.resultsPath} for the ${profile.layout} pack. No rows were written.`,
@@ -639,17 +737,15 @@ export async function loadCountryPackResults(options: LoadPackResultsOptions): P
   }
 
   const countsMember = profile.countsPath
-    ? memberAt(members, prefix, profile.countsPath)
-    : memberAt(members, prefix, "counts.json") ??
-      memberAt(members, prefix, "data/counts.json") ??
-      memberAt(members, prefix, "Count_Summary.json");
+    ? locate(profile.countsPath)
+    : locate("counts.json") ?? locate("data/counts.json") ?? locate("Count_Summary.json");
   if (profile.countsPath && !countsMember) {
     throw new PackResultsError(`ZIP is missing ${profile.countsPath}. No rows were written.`);
   }
   let expectedEvents: number | null = fixture ? null : profile.expectedEvents;
   let expectedResults: number | null = fixture ? null : profile.expectedResults;
   if (countsMember) {
-    const countsRelative = countsMember.name.slice(prefix.length);
+    const countsRelative = profile.countsPath ?? "counts.json";
     await hashed(options.zipPath, countsMember, manifest, countsRelative);
     let countsJson: unknown;
     try {
@@ -671,9 +767,34 @@ export async function loadCountryPackResults(options: LoadPackResultsOptions): P
     expectedResults = fileResults;
   }
 
+  const auditMember = profile.resultAuditPath ? locate(profile.resultAuditPath) : locate("data/result-audit.json");
+  if (profile.resultAuditRequired && !auditMember) {
+    throw new PackResultsError(
+      `${profile.resultAuditPath ?? "data/result-audit.json"} is missing. No rows were written.`,
+    );
+  }
+  let resultAuditRows: number | null = null;
+  if (auditMember) {
+    if (manifest?.has(profile.resultAuditPath ?? "data/result-audit.json")) {
+      await hashed(options.zipPath, auditMember, manifest, profile.resultAuditPath ?? "data/result-audit.json");
+    }
+    resultAuditRows = await streamJsonCount(options.zipPath, auditMember, ["result_rows", "results", "result_count"]);
+    if (resultAuditRows == null) {
+      throw new PackResultsError(
+        `${auditMember.name} has no result_rows count. No rows were written.`,
+      );
+    }
+    if (expectedResults != null && expectedResults !== resultAuditRows) {
+      throw new PackResultsError(
+        `result-audit.json result_rows=${resultAuditRows} does not match the pack result count ${expectedResults}. No rows were written.`,
+      );
+    }
+    expectedResults = resultAuditRows;
+  }
+
   let officeRegister: "absent" | "match" = "absent";
   if (profile.officeRegisterPath) {
-    const officeMember = memberAt(members, prefix, profile.officeRegisterPath);
+    const officeMember = locate(profile.officeRegisterPath);
     if (officeMember) {
       const actual = await hashed(options.zipPath, officeMember, manifest, profile.officeRegisterPath);
       if (profile.officeRegisterSha256 && actual !== profile.officeRegisterSha256) {
@@ -687,14 +808,14 @@ export async function loadCountryPackResults(options: LoadPackResultsOptions): P
 
   let units: Map<string, string> | null = null;
   if (profile.reportingUnitsPath) {
-    const unitsMember = memberAt(members, prefix, profile.reportingUnitsPath);
+    const unitsMember = locate(profile.reportingUnitsPath);
     if (unitsMember) {
       await hashed(options.zipPath, unitsMember, manifest, profile.reportingUnitsPath);
       units = await indexUnits(options.zipPath, unitsMember);
     }
   }
 
-  const noted = await notePackCompanions(options.zipPath, members, prefix, manifest);
+  const noted = await notePackCompanions(options.zipPath, members, profile.topDirectory, manifest);
   const ticketComponents = noted.ticketComponents;
 
   const db = openAtlasDatabase(options.sqlitePath, dryRun ? { readOnly: true } : undefined);
@@ -735,6 +856,15 @@ export async function loadCountryPackResults(options: LoadPackResultsOptions): P
       events: events.accepted,
       shareConvention: runtime.shareConvention,
     };
+    const linksMember = locate(profile.eventOfficeLinksPath ?? "data/event-office-links.jsonl");
+    if (profile.eventOfficeLinksRequired && !linksMember) {
+      throw new PackResultsError(
+        `${profile.eventOfficeLinksPath} is missing. No rows were written.`,
+      );
+    }
+    const officeLinks = linksMember
+      ? await readOfficeLinks(options.zipPath, linksMember, events.accepted, offices, rejects)
+      : { byEvent: new Map<string, OfficeLink[]>(), accepted: 0, rejected: 0 };
     const results = await scanResults(options.zipPath, resultsMember, runtime, context, rejects);
     if (expectedResults != null && results.inFile !== expectedResults) {
       throw new PackResultsError(
@@ -750,8 +880,8 @@ export async function loadCountryPackResults(options: LoadPackResultsOptions): P
       countryId: profile.countryId,
       lineageId: runtime.lineageId,
       zipPath: options.zipPath,
-      eventsFile: `${prefix}${profile.eventsPath}`,
-      resultsFile: `${prefix}${profile.resultsPath}`,
+      eventsFile: eventsMember.name,
+      resultsFile: resultsMember.name,
       eventsSha256,
       resultsSha256,
       eventsInFile: events.inFile,
@@ -765,6 +895,9 @@ export async function loadCountryPackResults(options: LoadPackResultsOptions): P
       successorEdgesNoted: noted.successorEdges,
       upcomingCalendarNoted: noted.upcomingCalendar,
       ticketComponents: noted.ticketCount,
+      eventOfficeLinks: officeLinks.accepted,
+      eventOfficeLinksRejected: officeLinks.rejected,
+      resultAuditRows,
       rejectsFile: rejects.filePath,
       derivedCycles: null,
       wrote: false,
@@ -784,7 +917,18 @@ export async function loadCountryPackResults(options: LoadPackResultsOptions): P
 
     try {
       clearCountryResults(db, runtime.lineageId, runtime.countryId);
-      await writeEvents(db, options.zipPath, eventsMember, runtime, releaseId, eventsSha256, offices, geographies, events.accepted);
+      await writeEvents(
+        db,
+        options.zipPath,
+        eventsMember,
+        runtime,
+        releaseId,
+        eventsSha256,
+        offices,
+        geographies,
+        events.accepted,
+        officeLinks.byEvent,
+      );
       await writeResults(db, options.zipPath, resultsMember, runtime, releaseId, resultsSha256, context);
     } catch (error) {
       try {
@@ -823,6 +967,7 @@ async function writeEvents(
   offices: Set<string>,
   geographies: Set<string>,
   accepted: Map<string, AcceptEvent>,
+  links: Map<string, OfficeLink[]>,
 ): Promise<void> {
   let dates: Record<string, unknown>[] = [];
   let events: Record<string, unknown>[] = [];
@@ -852,7 +997,7 @@ async function writeEvents(
       throw new PackResultsError(`Event ${parsed.event_id} was accepted and then rejected (${mapped.reason})`);
     }
     pending.delete(mapped.eventId);
-    const row = eventRow(profile, releaseId, sha, lineNumber, mapped);
+    const row = eventRow(profile, releaseId, sha, lineNumber, mapped, links.get(mapped.eventId) ?? []);
     if (row.date) dates.push(row.date);
     events.push(row.event);
     if (events.length >= BATCH) flush();
