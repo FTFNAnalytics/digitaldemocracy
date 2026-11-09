@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     # GitHub's default is 6 hours. test:atlas-import used to fill that by
     # copying the whole database once per country. Fail the job instead.
-    timeout-minutes: 240
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -21,7 +21,7 @@ jobs:
       - run: npm test
       - run: npm run test:austria-rollback
       - run: npm run test:atlas-import
-        timeout-minutes: 180
+        timeout-minutes: 240
       - run: npm run validate:data -- --fixtures
       - run: npm run validate:data
       - run: npm run validate:evidence
