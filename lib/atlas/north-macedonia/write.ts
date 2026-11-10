@@ -1,7 +1,7 @@
 import type { DatabaseSync } from "node:sqlite";
 import { LINEAGE_ID } from "./identity";
 import { insertMany, insertRow } from "../sqlite";
-import type { NorthMacedoniaProjection, SqlRow } from "./project";
+import type { NorthMacedoniaProjection } from "./project";
 
 const NORTH_MACEDONIA_PROJECTION_TABLES = [
   "evidence_link",

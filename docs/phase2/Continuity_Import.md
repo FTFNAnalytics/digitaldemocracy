@@ -116,7 +116,7 @@ Draft residual-heavy packs are **not** imported:
 
 antigua-and-barbuda, costa-rica, ecuador, guyana, haiti, saint-kitts-and-nevis, trinidad-and-tobago.
 
-Peru is no longer in that residual set. Prompt BK replaces `schemas/atlas/tiers/peru.json`. The Phase 2 classifier (5,039 offices, SHA-256 `9483875e4e6aabdf938324aa1849549519962bfe26dde5b359ca00b4e23addfd`) is preserved at `docs/phase1/peru/Phase2_prerequisite_tiers.json` and is not imported. Run Peru with `ATLAS_IMPORT_SCOPE=peru` only. `all` and `latam` do not publish the BK register. Published events, results, and sources stay 0. Sangani stays held. October 2026 ERM results stay out. Centros poblados offices stay 0.
+Peru is no longer in that residual set. Prompt BK replaces `schemas/atlas/tiers/peru.json`. The Phase 2 classifier (5,039 offices, SHA-256 `9483875e4e6aabdf938324aa1849549519962bfe26dde5b359ca00b4e23addfd`) is preserved at `docs/phase1/peru/Phase2_prerequisite_tiers.json` and is not imported. Run Peru with `ATLAS_IMPORT_SCOPE=peru` only. `all` and `latam` do not publish the BK register. The slim office import publishes 0 events, 0 result rows, and 0 sources. Passing `ATLAS_PACK_ZIP` on that same scope streams events and results from the full research ZIP after the offices are written. Sangani stays held. October 2026 ERM results stay out. Centros poblados offices stay 0.
 
 Haiti keep-open residuals, Mexico’s 95 sibling shares, and live cutover remain out of scope.
 
@@ -243,6 +243,55 @@ ATLAS_IMPORT_SCOPE=austria npm run import:atlas
 # ATLAS_PUBLISH_RESTAGE=1 ATLAS_IMPORT_SCOPE=austria npm run import:atlas
 # npm run derive:atlas
 ```
+
+## VPS — full research ZIP (events and results)
+
+Slim lands for the United Kingdom, Italy, Germany, France, and Peru publish offices and **0** events and **0** result rows when no ZIP is passed. The full research ZIPs stay outside git. Peru Prompt BK offices are `ATLAS_IMPORT_SCOPE=peru`. The same command, with `ATLAS_PACK_ZIP` set to `Peru_Prompt_BK_2026-10-31.zip`, writes those offices and then streams `events.jsonl` and `results.jsonl`.
+
+The loader is scoped. `ATLAS_IMPORT_SCOPE=all` is refused when a ZIP is set. It replaces only that country's events and results. Offices stay as the scoped office import published them. A pack office register whose SHA-256 does not match the pinned full-pack register aborts before any write. Rows that do not reference a published office, event, reporting unit, place, or ticket component are listed in a rejects file and are not guessed. Incomplete votes (null, blank, `missing_vote_components` > 0, or `votes_incomplete`) stay null, not zero. An explicit numeric zero stays zero.
+
+Backup with SQLite's online backup, then import, then derive only that country. Do not run `npm run derive:atlas`.
+
+```bash
+export ATLAS_SQLITE_PATH=/var/lib/cdd/atlas.sqlite
+export ATLAS_ATTEMPTS_SQLITE_PATH=/var/lib/cdd/atlas-attempts.sqlite
+export ATLAS_OPERATOR=genevieve
+
+mkdir -p /var/lib/cdd/backups /var/lib/cdd/packs
+sqlite3 "$ATLAS_SQLITE_PATH" ".backup /var/lib/cdd/backups/atlas-before-united-kingdom-pack.sqlite"
+
+# Dry run. Reads the ZIP and the master. Does not write events, results, or offices.
+ATLAS_IMPORT_SCOPE=united_kingdom \
+  ATLAS_PACK_ZIP=/var/lib/cdd/packs/united-kingdom.zip \
+  npm run import:atlas -- --dry-run
+
+# Scoped office import (already-live countries) plus pack events and results.
+# Re-running replaces that country's events and results only.
+ATLAS_IMPORT_SCOPE=united_kingdom \
+  ATLAS_PACK_ZIP=/var/lib/cdd/packs/united-kingdom.zip \
+  npm run import:atlas
+
+npm run derive:atlas:country -- --country=united-kingdom
+
+sqlite3 "$ATLAS_SQLITE_PATH" "SELECT COUNT(*) FROM election_event e JOIN office o ON o.id_namespace=e.id_namespace AND o.office_id=e.office_id WHERE o.country_id='united-kingdom';"
+sqlite3 "$ATLAS_SQLITE_PATH" "SELECT COUNT(*) FROM result_row WHERE country_id='united-kingdom';"
+```
+
+Use the same sequence for the other packs. Change the scope, the ZIP path, the backup name, and the `--country=` id together:
+
+| Scope | Country id | ZIP layout the loader streams |
+| --- | --- | --- |
+| `united_kingdom` | `united-kingdom` | `United_Kingdom_Atlas_Prompt_AU/data/events.jsonl` and `data/results.jsonl.gz` (gzipped). Prompt AU pins: 899 events, 103,648 results. This is the pilot |
+| `italy` | `italy` | `Italy_Atlas_Prompt_AT/data/events.jsonl`, `data/event-office-links.jsonl`, `data/results.jsonl.gz`, and `data/result-audit.json`. Links are kept on the event and do not copy votes (`vote_duplication_permitted` must be false). `result_rows` in the audit must match the streamed results. Pins: 515 events, 606,051 results |
+| `germany` | `germany` | `Germany_Atlas_Prompt_AS/data/events.jsonl`, `data/results.jsonl` (plain JSONL, hundreds of MB), and `data/result-audit.json`. Pins: 13,845 events, 1,299,670 results |
+| `france` | `france` | `France_Atlas_Prompt_AR/data/events.jsonl` and `data/results.jsonl` (plain JSONL). Pins: 119,554 events, 1,193,657 results |
+| `peru` | `peru` | `events.jsonl` and `results.jsonl` at the pack root (12,460 events, 97,260 results, incomplete votes stay null). Publish Prompt BK offices first with `ATLAS_IMPORT_SCOPE=peru` and no ZIP. A ZIP dry run reads those offices from the master and does not write them. A later run with `ATLAS_PACK_ZIP` keeps the offices and streams events and results |
+
+`.jsonl` and `.jsonl.gz` are read from the ZIP in a stream. The archive is not unpacked onto disk. `data/result-audit.json`, where the pack has one, is the result-count check. `data/event-office-links.jsonl`, where the pack has one, is applied without a second copy of the result rows.
+
+A single top directory in the ZIP is stripped. Europe packs may use that wrapper or sit at the ZIP root, as long as the paths above are the paths inside the pack. Production loads must match the pinned counts and, where a SHA-256 is pinned, the pinned bytes. `ATLAS_PACK_FIXTURE=1` is refused for `/var/lib/cdd/atlas.sqlite`.
+
+Stdout includes `pack_events_accepted`, `pack_results_accepted`, `pack_events_rejected`, and `pack_rejects_file`. Compare the accepted counts with the pack pins. Read the rejects file before treating the load as complete. A checksum or count mismatch leaves the database unchanged.
 
 ## VPS — Bosnia scoped import only
 

@@ -42,7 +42,6 @@ import {
   SOURCE_INVENTORY_RELATIVE,
   STATUS_CHANGE_EDGES,
   TIER_PATH,
-  TIER_SHA256,
   VOJVODINA_ID,
   assertAllowedOfficeIdentity,
   assertKnownRegisterKeys,

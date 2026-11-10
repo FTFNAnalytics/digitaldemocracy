@@ -226,7 +226,7 @@ function deleteDerived(db: DatabaseSync): void {
 }
 
 /** Delete derived rows for one country. Other countries stay. */
-function deleteCountryDerived(db: DatabaseSync, countryId: string): void {
+export function deleteCountryDerived(db: DatabaseSync, countryId: string): void {
   db.prepare(
     `DELETE FROM derived_coverage WHERE jurisdiction_key IN (
        SELECT jurisdiction_key FROM derived_jurisdiction WHERE country_id = ?
