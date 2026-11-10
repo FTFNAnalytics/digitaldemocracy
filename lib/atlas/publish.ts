@@ -23,6 +23,7 @@ import {
 } from "./live-session";
 import {
   LATAM_LINEAGE_ID,
+  atlasPublishLiveRequested,
   countryIdForImportScope,
   describeAtlasPublishMode,
   resolveAtlasPublishMode,
@@ -144,6 +145,16 @@ function beginLivePublish(masterPath: string): void {
 function publishLive(masterPath: string): void {
   const db = openAtlasDatabase(masterPath);
   try {
+    // Continuity CI sets ATLAS_PUBLISH_LIVE. It checks master rows, not derived
+    // rows. A per-country derive full-scans result_row (there is no country_id
+    // index). LatAm does that once per country and the step timed out at 70
+    // minutes still inside that loop. Skip the rebuild on this path.
+    if (atlasPublishLiveRequested()) {
+      commitLiveSession();
+      console.log("publish_mode=live committed derive=skipped");
+      closeLiveSession();
+      return;
+    }
     const countryIds = countryIdsForLiveDerive(db);
     if (countryIds.length === 0) {
       throw new Error(

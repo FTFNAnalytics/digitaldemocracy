@@ -23,27 +23,28 @@ export function CoverageChip({
 export function CoverageBar({ coverage }: { coverage: AtlasCoverageSnapshot | null }) {
   const state = coverageState(coverage);
   const label = coverageStateLabel(state);
+  const counted = state === "partial" || state === "recorded" ? coverage : null;
   if (
-    state === "not_supplied" ||
-    coverage == null ||
-    coverage.offices == null ||
-    coverage.officesWithResults == null ||
-    coverage.offices <= 0
+    counted == null ||
+    counted.offices == null ||
+    counted.officesWithResults == null ||
+    counted.offices <= 0 ||
+    counted.officesWithResults <= 0
   ) {
     return (
-      <p className="text-sm text-atlas-ink-2" data-atlas-coverage-bar="not_supplied">
+      <p className="text-sm text-atlas-ink-2" data-atlas-coverage-bar={state}>
         {label}
       </p>
     );
   }
 
-  const width = Math.max(0, Math.min(100, (coverage.officesWithResults / coverage.offices) * 100));
+  const width = Math.max(0, Math.min(100, (counted.officesWithResults / counted.offices) * 100));
   return (
     <div data-atlas-coverage-bar={state}>
       <div className="flex justify-between gap-3 text-xs text-atlas-ink-2">
         <span>{label}</span>
         <span>
-          {coverage.officesWithResults.toLocaleString()} of {coverage.offices.toLocaleString()} offices with results
+          {counted.officesWithResults.toLocaleString()} of {counted.offices.toLocaleString()} offices with results
         </span>
       </div>
       <div
@@ -51,14 +52,11 @@ export function CoverageBar({ coverage }: { coverage: AtlasCoverageSnapshot | nu
         role="meter"
         aria-label="Offices with results"
         aria-valuemin={0}
-        aria-valuemax={coverage.offices}
-        aria-valuenow={coverage.officesWithResults}
+        aria-valuemax={counted.offices}
+        aria-valuenow={counted.officesWithResults}
         aria-valuetext={label}
       >
-        <div
-          className={state === "queued" ? "h-2 border border-dashed border-atlas-ink-2 bg-transparent" : "h-2 bg-atlas-accent"}
-          style={{ width: `${width}%` }}
-        />
+        <div className="h-2 bg-atlas-accent" style={{ width: `${width}%` }} />
       </div>
     </div>
   );

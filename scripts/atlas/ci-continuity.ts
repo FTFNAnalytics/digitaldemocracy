@@ -57,6 +57,11 @@ function count(db: DatabaseSync, sql: string, params: unknown[] = []): number {
 function main() {
   delete process.env.OBSERVATORY_FIXTURES;
   process.env.ATLAS_IMPORT_PROGRESS = "1";
+  // Scope `all` otherwise VACUUM INTOs the whole file and integrity-checks it
+  // on every country. That copy grows for hours and hits the 6 hour job cap.
+  // Live publish writes the country in place. Restage stays the production
+  // path for `import:atlas` when this flag is unset.
+  process.env.ATLAS_PUBLISH_LIVE = "1";
   const root = process.cwd();
   const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-ci-continuity-"));
   const sqlitePath = path.join(dir, "atlas.sqlite");

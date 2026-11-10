@@ -10,6 +10,13 @@
  * uses `live` when the master file already exists. The full-master restage
  * runs when the scope is unset or `all`, or when the operator sets
  * `ATLAS_PUBLISH_RESTAGE=1`.
+ *
+ * `ATLAS_PUBLISH_LIVE=1` forces the live path even for scope `all`, and skips
+ * the derived rebuild. The continuity CI script sets it. That script checks
+ * master rows only. Rebuilding derived rows would full-scan `result_row` once
+ * per country (no `country_id` index); LatAm did that until the step timed out.
+ * `ATLAS_PUBLISH_RESTAGE=1` still wins. Production `import:atlas` does not set
+ * this flag, so a named scope still derives that country.
  */
 
 export type AtlasPublishMode = "live" | "restage";
@@ -38,8 +45,14 @@ export function atlasPublishRestageRequested(
   return flag === "1" || flag === "true" || flag === "yes";
 }
 
+export function atlasPublishLiveRequested(env: AtlasPublishEnv = process.env): boolean {
+  const flag = (env.ATLAS_PUBLISH_LIVE ?? "").trim().toLowerCase();
+  return flag === "1" || flag === "true" || flag === "yes";
+}
+
 export function resolveAtlasPublishMode(env: AtlasPublishEnv = process.env): AtlasPublishMode {
   if (atlasPublishRestageRequested(env)) return "restage";
+  if (atlasPublishLiveRequested(env)) return "live";
   const scope = (env.ATLAS_IMPORT_SCOPE ?? "").trim().toLowerCase();
   // Unset scope is the full-master rebuild path (the CLI treats that as every
   // lineage in the default set). A named country scope publishes in place.

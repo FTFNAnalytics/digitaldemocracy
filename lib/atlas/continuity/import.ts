@@ -217,11 +217,31 @@ function noteImport(label: string): void {
   writeSync(1, `import:atlas ${label} ${new Date().toISOString()}\n`);
 }
 
-function runImport<T>(label: string, load: () => T): T {
+function livePublishRequested(): boolean {
+  const flag = (process.env.ATLAS_PUBLISH_LIVE ?? "").trim().toLowerCase();
+  return flag === "1" || flag === "true" || flag === "yes";
+}
+
+/**
+ * Under `ATLAS_PUBLISH_LIVE=1`, name the country being written so publish
+ * derives that country instead of treating an outer scope of `all` as a
+ * full-file restage. Production `import:atlas` does not set the flag.
+ */
+function runImport<T>(label: string, load: () => T, publishScope = label): T {
   noteImport(`start ${label}`);
-  const value = load();
-  noteImport(`done ${label}`);
-  return value;
+  const live = livePublishRequested();
+  const previous = process.env.ATLAS_IMPORT_SCOPE;
+  if (live) process.env.ATLAS_IMPORT_SCOPE = publishScope;
+  try {
+    const value = load();
+    noteImport(`done ${label}`);
+    return value;
+  } finally {
+    if (live) {
+      if (previous === undefined) delete process.env.ATLAS_IMPORT_SCOPE;
+      else process.env.ATLAS_IMPORT_SCOPE = previous;
+    }
+  }
 }
 
 // Keep this ContinuityImportOptions only. Intersecting a country Import*Options
@@ -258,7 +278,7 @@ export function importAtlasLineages(
   }
   // Prompt BI is additive and scoped. `all` must not promote drafts or holds.
   if (scopeImportsBulgariaBi(scope)) {
-    result.bulgaria = runImport("bulgaria-bi", () => importBulgariaBi(options));
+    result.bulgaria = runImport("bulgaria-bi", () => importBulgariaBi(options), "bulgaria");
   }
   if (scope === "netherlands" || scope === "all") {
     result.netherlands = runImport("netherlands", () => importNetherlands(options));

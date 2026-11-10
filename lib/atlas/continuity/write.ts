@@ -1,6 +1,12 @@
+import { writeSync } from "node:fs";
 import type { DatabaseSync } from "node:sqlite";
 import { insertMany, insertRow } from "../sqlite";
 import type { ContinuityProjection } from "./types";
+
+function noteWrite(message: string): void {
+  if (process.env.ATLAS_IMPORT_PROGRESS !== "1") return;
+  writeSync(1, `import:atlas ${message} ${new Date().toISOString()}\n`);
+}
 
 const PROJECTION_TABLES = [
   "evidence_link",
@@ -71,7 +77,9 @@ export function writeContinuityProjection(
     insertMany(db, "election_event", projection.events);
     insertMany(db, "proceeding", projection.proceedings);
     insertMany(db, "source", projection.sources);
+    noteWrite(`write results ${projection.results.length}`);
     insertMany(db, "result_row", projection.results);
+    noteWrite(`wrote results ${projection.results.length}`);
     insertMany(db, "record_locator", projection.locators);
     insertMany(db, "evidence_link", projection.evidence);
     insertMany(db, "unresolved_evidence", projection.unresolved);

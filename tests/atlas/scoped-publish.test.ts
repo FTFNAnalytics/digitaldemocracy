@@ -4,6 +4,7 @@ import path from "node:path";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { importAlderney } from "../../lib/atlas/alderney/import";
 import { importAndorra } from "../../lib/atlas/andorra/import";
+import { importAtlasLineages } from "../../lib/atlas/continuity/import";
 import { migrateMasterDatabase } from "../../lib/atlas/apply-migrations";
 import { deriveCountry } from "../../lib/atlas/derive/run";
 import { endLiveSession, setSkipFullIntegrityCheck } from "../../lib/atlas/live-session";
@@ -22,11 +23,13 @@ const repoRoot = path.join(import.meta.dirname, "../..");
 
 let previousScope: string | undefined;
 let previousRestage: string | undefined;
+let previousLive: string | undefined;
 let previousFixtures: string | undefined;
 
 beforeEach(() => {
   previousScope = process.env.ATLAS_IMPORT_SCOPE;
   previousRestage = process.env.ATLAS_PUBLISH_RESTAGE;
+  previousLive = process.env.ATLAS_PUBLISH_LIVE;
   previousFixtures = process.env.OBSERVATORY_FIXTURES;
   delete process.env.OBSERVATORY_FIXTURES;
   resetPublishDiagnostics();
@@ -41,6 +44,8 @@ afterEach(() => {
   else process.env.ATLAS_IMPORT_SCOPE = previousScope;
   if (previousRestage === undefined) delete process.env.ATLAS_PUBLISH_RESTAGE;
   else process.env.ATLAS_PUBLISH_RESTAGE = previousRestage;
+  if (previousLive === undefined) delete process.env.ATLAS_PUBLISH_LIVE;
+  else process.env.ATLAS_PUBLISH_LIVE = previousLive;
   if (previousFixtures === undefined) delete process.env.OBSERVATORY_FIXTURES;
   else process.env.OBSERVATORY_FIXTURES = previousFixtures;
 });
@@ -70,6 +75,11 @@ describe("Atlas publish mode", () => {
     expect(resolveAtlasPublishMode({ ATLAS_IMPORT_SCOPE: "latam" })).toBe("live");
     expect(resolveAtlasPublishMode({})).toBe("restage");
     expect(resolveAtlasPublishMode({ ATLAS_IMPORT_SCOPE: "all" })).toBe("restage");
+    expect(resolveAtlasPublishMode({ ATLAS_IMPORT_SCOPE: "all", ATLAS_PUBLISH_LIVE: "1" })).toBe("live");
+    expect(resolveAtlasPublishMode({ ATLAS_PUBLISH_LIVE: "1" })).toBe("live");
+    expect(
+      resolveAtlasPublishMode({ ATLAS_IMPORT_SCOPE: "all", ATLAS_PUBLISH_LIVE: "1", ATLAS_PUBLISH_RESTAGE: "1" }),
+    ).toBe("restage");
     expect(resolveAtlasPublishMode({ ATLAS_IMPORT_SCOPE: "austria", ATLAS_PUBLISH_RESTAGE: "1" })).toBe("restage");
     expect(countryIdForImportScope("united_kingdom")).toBe("united-kingdom");
     expect(countryIdForImportScope("bosnia")).toBe("bosnia-and-herzegovina");
@@ -78,6 +88,28 @@ describe("Atlas publish mode", () => {
     expect(countryIdForImportScope("andorra")).toBe("andorra");
     expect(countryIdForImportScope("all")).toBeNull();
     expect(countryIdForImportScope("latam")).toBeNull();
+  });
+
+  it("does not VACUUM the accumulated file when the continuity script forces live publish", () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-live-continuity-"));
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    const attemptsPath = path.join(dir, "attempts.sqlite");
+    process.env.ATLAS_PUBLISH_LIVE = "1";
+    delete process.env.ATLAS_PUBLISH_RESTAGE;
+    delete process.env.ATLAS_IMPORT_SCOPE;
+    try {
+      importAtlasLineages({ root: repoRoot, sqlitePath, attemptsPath, operator: "live-ci" }, "andorra");
+      resetPublishDiagnostics();
+      importAtlasLineages({ root: repoRoot, sqlitePath, attemptsPath, operator: "live-ci" }, "alderney");
+      expect(publishDiagnostics.vacuumInto).toBe(0);
+      expect(publishDiagnostics.liveSessions).toBe(1);
+      expect(publishDiagnostics.fullDerives).toBe(0);
+      expect(publishDiagnostics.countryDerives).toEqual([]);
+      expect(existsSync(`${sqlitePath}.staging`)).toBe(false);
+    } finally {
+      endLiveSession();
+      rmSync(dir, { recursive: true, force: true });
+    }
   });
 
   it("does not VACUUM INTO a staging file for a scoped live publish", () => {
