@@ -98,11 +98,24 @@ export type MappedResult = {
   source: Record<string, unknown>;
 };
 
+/**
+ * One reporting-units.jsonl row.
+ * `eventId` is set only when that row names an event (Italy, Germany, France).
+ * It stays null for an office/boundary unit (United Kingdom). The events for a
+ * null unit are the result rows that cite its id. This loader does not invent one.
+ */
+export type IndexedReportingUnit = {
+  id: string;
+  /** `label`, or `name` when the pack uses that field. Null when neither is set. */
+  label: string | null;
+  eventId: string | null;
+};
+
 export type PublishedContext = {
   offices: Set<string>;
   geographies: Set<string>;
-  /** reporting-unit id -> event id. Null when the pack has no units file. */
-  units: Map<string, string> | null;
+  /** reporting-unit id -> unit. Null when the pack has no units file. */
+  units: Map<string, IndexedReportingUnit> | null;
   /** Ticket-component ids from ticket_components.json. Null when that file is absent. */
   ticketComponents: Set<string> | null;
   events: Map<string, { officeId: string; historyKey: string }>;
@@ -161,6 +174,59 @@ function firstPresent(row: Record<string, unknown>, keys: string[]): string | nu
     return text(row, key);
   }
   return null;
+}
+
+/** First non-blank alias. Two non-blank values that differ are a reject. */
+function oneAlias(
+  row: Record<string, unknown>,
+  keys: readonly string[],
+  disagreeReason: string,
+): string | null | RejectReason {
+  const found: string[] = [];
+  for (const key of keys) {
+    if (!Object.prototype.hasOwnProperty.call(row, key)) continue;
+    const value = text(row, key);
+    if (typeof value === "object" && value && "reason" in value) return value;
+    if (typeof value === "string" && value.trim()) found.push(value.trim());
+  }
+  if (found.length === 0) return null;
+  if (new Set(found).size > 1) return { reason: disagreeReason };
+  return found[0]!;
+}
+
+const REPORTING_UNIT_ID_KEYS = ["reporting_unit_id", "unit_id"] as const;
+const REPORTING_UNIT_LABEL_KEYS = ["label", "name"] as const;
+
+/** Result rows cite a unit with `reporting_unit_id` or `unit_id`. Absent is not an error. */
+export function reportingUnitId(row: Record<string, unknown>): string | null | RejectReason {
+  return oneAlias(row, REPORTING_UNIT_ID_KEYS, "reporting_unit_ambiguous");
+}
+
+function optionalEventId(row: Record<string, unknown>): string | null | RejectReason {
+  if (!Object.prototype.hasOwnProperty.call(row, "event_id")) return null;
+  const value = row.event_id;
+  if (value == null || value === "") return null;
+  if (typeof value !== "string") return { reason: "event_id_not_a_string" };
+  const trimmed = value.trim();
+  return trimmed ? trimmed : null;
+}
+
+/** Read one reporting-units.jsonl object. A missing event id is office/boundary scope, not a failure. */
+export function readReportingUnit(row: Record<string, unknown>): IndexedReportingUnit | RejectReason {
+  const id = oneAlias(row, REPORTING_UNIT_ID_KEYS, "reporting_unit_ambiguous");
+  if (typeof id !== "string") {
+    if (id && typeof id === "object" && "reason" in id) return id;
+    return { reason: "missing_reporting_unit_id" };
+  }
+  const label = oneAlias(row, REPORTING_UNIT_LABEL_KEYS, "reporting_unit_label_disagrees");
+  if (typeof label === "object" && label && "reason" in label) return label;
+  const eventId = optionalEventId(row);
+  if (typeof eventId === "object" && eventId && "reason" in eventId) return eventId;
+  return {
+    id,
+    label: typeof label === "string" ? label : null,
+    eventId: typeof eventId === "string" ? eventId : null,
+  };
 }
 
 function enumOrUnknown(value: unknown, allowed: Set<string>): string {
@@ -534,18 +600,14 @@ export function mapPackResult(
   }
 
   if (context.units) {
-    const unitA = Object.prototype.hasOwnProperty.call(row, "reporting_unit_id") ? text(row, "reporting_unit_id") : null;
-    const unitB = Object.prototype.hasOwnProperty.call(row, "unit_id") ? text(row, "unit_id") : null;
-    if (typeof unitA === "object" && unitA && "reason" in unitA) return unitA;
-    if (typeof unitB === "object" && unitB && "reason" in unitB) return unitB;
-    const left = typeof unitA === "string" && unitA.trim() ? unitA.trim() : null;
-    const right = typeof unitB === "string" && unitB.trim() ? unitB.trim() : null;
-    if (left && right && left !== right) return { reason: "reporting_unit_ambiguous" };
-    const unit = left ?? right;
-    if (unit) {
+    const unit = reportingUnitId(row);
+    if (typeof unit === "object" && unit && "reason" in unit) return unit;
+    if (typeof unit === "string") {
       const owner = context.units.get(unit);
       if (!owner) return { reason: "reporting_unit_unknown" };
-      if (owner !== eventId) return { reason: "reporting_unit_event_mismatch" };
+      // A unit file that names an event must agree with the result. A unit with
+      // no event_id is office/boundary scoped: this result's event_id is the link.
+      if (owner.eventId != null && owner.eventId !== eventId) return { reason: "reporting_unit_event_mismatch" };
     }
   }
 
