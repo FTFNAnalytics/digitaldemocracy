@@ -7,7 +7,7 @@ import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
 import { afterEach, describe, expect, it } from "vitest";
 import { migrateMasterDatabase } from "../../lib/atlas/apply-migrations";
-import { readReportingUnit, reportingUnitId, votesAreIncomplete } from "../../lib/atlas/pack-results/map";
+import { parsePercentString, readReportingUnit, reportingUnitId, votesAreIncomplete } from "../../lib/atlas/pack-results/map";
 import { loadCountryPackResults } from "../../lib/atlas/pack-results/load";
 import { PACK_PROFILES } from "../../lib/atlas/pack-results/profiles";
 
@@ -1574,5 +1574,344 @@ describe("full research ZIP results", () => {
       votes_status: "unknown",
     });
     franceCheck.close();
+  });
+
+  it("parses European percent strings and does not reject an unparseable share", () => {
+    expect(parsePercentString("67,60%")).toBeCloseTo(67.6, 5);
+    expect(parsePercentString("27,80 %")).toBeCloseTo(27.8, 5);
+    expect(parsePercentString("not a percent")).toBeNull();
+  });
+
+  it("resolves a Germany result event from its reporting unit", async () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-pack-de-unit-event-"));
+    tempDirs.push(dir);
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    migrateMasterDatabase(repoRoot, sqlitePath);
+    const db = new DatabaseSync(sqlitePath);
+    seedCountry(db, {
+      countryId: "germany",
+      code: "DE",
+      lineageId: "country-package-germany",
+      releaseId: "rel-de",
+      namespace: "cdd-atlas-de-research-v1",
+      officeId: "DE-BT",
+      geographyId: "DE-GEO",
+    });
+    db.close();
+    const eventId = "DE-BT:1949-08-14:ordinary";
+    const unitId = "DE-BT:1949-08-14:ordinary/U/published-001";
+    const results = [
+      {
+        result_id: "DE-R-000000001",
+        unit_id: unitId,
+        label: "Wahlberechtigte",
+        result_kind: "metric",
+        vote_type: "single_vote",
+        votes: 117513,
+        seats: null,
+        source_id: "DE-S-btw_kerg.zip",
+        raw: "117513",
+        source_member: "btw1949_kerg.csv",
+        source_row: 9,
+      },
+      {
+        result_id: "DE-R-unknown-unit",
+        unit_id: "DE-U-missing",
+        label: "Missing",
+        result_kind: "contestant",
+        vote_type: "first_vote",
+        votes: 1,
+      },
+      {
+        result_id: "DE-R-unit-without-event",
+        unit_id: "DE-U-OPEN",
+        label: "Open",
+        result_kind: "contestant",
+        vote_type: "first_vote",
+        votes: 1,
+      },
+    ];
+    const zipPath = packZip(dir, "Germany_Atlas_Prompt_AS/", {
+      "data/events.jsonl": jsonl([pollEvent(eventId, "DE-BT", "1949-08-14")]),
+      "data/results.jsonl": jsonl(results),
+      "data/reporting-units.jsonl": jsonl([
+        {
+          unit_id: unitId,
+          event_id: eventId,
+          label: "Husum – Südtondern – Eiderstedt",
+          source_id: "DE-S-btw_kerg.zip",
+        },
+        { unit_id: "DE-U-OPEN", label: "Open aggregate" },
+      ]),
+      "data/result-audit.json": Buffer.from(JSON.stringify({ result_rows: results.length })),
+      "data/counts.json": Buffer.from(JSON.stringify({ events: 1, results: results.length })),
+    });
+    const loaded = await loadCountryPackResults({
+      scope: "germany",
+      zipPath,
+      sqlitePath,
+      fixture: true,
+      derive: false,
+    });
+    expect(loaded.resultsAccepted).toBe(1);
+    expect(loaded.resultsRejected).toBe(2);
+    expect(rejectReasons(loaded.rejectsFile).sort()).toEqual(
+      ["reporting_unit_has_no_event", "reporting_unit_unknown"].sort(),
+    );
+    const check = new DatabaseSync(sqlitePath, { readOnly: true });
+    const row = check
+      .prepare(
+        `SELECT history_key, votes, votes_status, seats, seats_status, candidate_or_list_label, raw_json
+         FROM result_row WHERE result_row_id = 'DE-R-000000001'`,
+      )
+      .get() as {
+      history_key: string;
+      votes: number;
+      votes_status: string;
+      seats: number | null;
+      seats_status: string;
+      candidate_or_list_label: string | null;
+      raw_json: string;
+    };
+    expect(row.history_key).toBe(eventId);
+    expect(row.votes).toBe(117513);
+    expect(row.votes_status).toBe("recorded");
+    expect(row.seats).toBeNull();
+    expect(row.seats_status).toBe("unknown");
+    expect(row.candidate_or_list_label).toBeNull();
+    const raw = JSON.parse(row.raw_json) as { row: Record<string, unknown> };
+    expect(raw.row.event_id).toBeUndefined();
+    expect(raw.row.unit_id).toBe(unitId);
+    expect(raw.row.label).toBe("Wahlberechtigte");
+    expect(raw.row.vote_type).toBe("single_vote");
+    check.close();
+  });
+
+  it("keeps Italy and France rows whose share is a European percent string", async () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-pack-percent-"));
+    tempDirs.push(dir);
+
+    const italyPath = path.join(dir, "italy.sqlite");
+    migrateMasterDatabase(repoRoot, italyPath);
+    const italyDb = new DatabaseSync(italyPath);
+    seedCountry(italyDb, {
+      countryId: "italy",
+      code: "IT",
+      lineageId: "country-package-italy",
+      releaseId: "rel-it",
+      namespace: "cdd-atlas-it-research-v1",
+      officeId: "IT-MAYOR",
+      geographyId: "IT-GEO",
+    });
+    italyDb.close();
+    const italyResults = [
+      {
+        result_id: "IT-R-00604713",
+        event_id: "IT-E-c44fa69edb66e606d2a7",
+        reporting_unit_id: "IT-U-c319e5aef6c13d62f92e",
+        label: "Südtiroler Volkspartei",
+        result_kind: "contestant",
+        vote_type: "provincial_list",
+        votes: 107249,
+        seats: 13,
+        published_percent_raw: "67,60%",
+        seat_literal: "13",
+      },
+      {
+        result_id: "IT-R-unparsed",
+        event_id: "IT-E-c44fa69edb66e606d2a7",
+        label: "Unparsed",
+        result_kind: "contestant",
+        vote_type: "provincial_list",
+        votes: 4,
+        published_percent_raw: "see note",
+      },
+    ];
+    const italyZip = packZip(dir, "Italy_Atlas_Prompt_AT/", {
+      "data/events.jsonl": jsonl([pollEvent("IT-E-c44fa69edb66e606d2a7", "IT-MAYOR", "2023-10-22")]),
+      "data/event-office-links.jsonl": Buffer.from(""),
+      "data/results.jsonl.gz": gzipSync(jsonl(italyResults)),
+      "data/reporting-units.jsonl": jsonl([
+        {
+          reporting_unit_id: "IT-U-c319e5aef6c13d62f92e",
+          event_id: "IT-E-c44fa69edb66e606d2a7",
+          label: "Bolzano",
+        },
+      ]),
+      "data/result-audit.json": Buffer.from(JSON.stringify({ result_rows: italyResults.length })),
+      "data/counts.json": Buffer.from(JSON.stringify({ events: 1, results: italyResults.length })),
+    });
+    const italy = await loadCountryPackResults({
+      scope: "italy",
+      zipPath: italyZip,
+      sqlitePath: italyPath,
+      fixture: true,
+      derive: false,
+    });
+    expect(italy.resultsAccepted).toBe(2);
+    expect(italy.resultsRejected).toBe(0);
+    const italyCheck = new DatabaseSync(italyPath, { readOnly: true });
+    const svp = italyCheck
+      .prepare(
+        `SELECT candidate_or_list_label, votes, seats, share, share_status, share_unit
+         FROM result_row WHERE result_row_id = 'IT-R-00604713'`,
+      )
+      .get() as { share: number; share_status: string; share_unit: string; votes: number; seats: number; candidate_or_list_label: string };
+    expect(svp.candidate_or_list_label).toBe("Südtiroler Volkspartei");
+    expect(svp.votes).toBe(107249);
+    expect(svp.seats).toBe(13);
+    expect(svp.share).toBeCloseTo(67.6, 5);
+    expect(svp.share_status).toBe("recorded");
+    expect(svp.share_unit).toBe("percent_0_100");
+    expect(
+      italyCheck.prepare("SELECT share, share_status, votes FROM result_row WHERE result_row_id = 'IT-R-unparsed'").get(),
+    ).toEqual({ share: null, share_status: "unknown", votes: 4 });
+    italyCheck.close();
+
+    const francePath = path.join(dir, "france.sqlite");
+    migrateMasterDatabase(repoRoot, francePath);
+    const franceDb = new DatabaseSync(francePath);
+    seedCountry(franceDb, {
+      countryId: "france",
+      code: "FR",
+      lineageId: "country-package-france",
+      releaseId: "rel-fr",
+      namespace: "cdd-atlas-fr-research-v1",
+      officeId: "FR-EP",
+      geographyId: "FR-GEO",
+    });
+    franceDb.close();
+    const franceResults = [
+      {
+        result_id: "FR-EP@2009-R1|FR-NATIONAL-SHARES|1",
+        event_id: "FR-EP@2009-R1",
+        unit_id: "FR-EP@2009-R1|FR-NATIONAL-SHARES",
+        contestant_label: "UMP",
+        result_kind: "party_share_and_seats",
+        votes: null,
+        votes_status: "not_supplied",
+        seats: 29,
+        vote_percentage_source: "27,80 %",
+      },
+    ];
+    const franceZip = packZip(dir, "France_Atlas_Prompt_AR/", {
+      "data/events.jsonl": jsonl([pollEvent("FR-EP@2009-R1", "FR-EP", "2009-06-07")]),
+      "data/results.jsonl": jsonl(franceResults),
+      "data/reporting-units.jsonl": jsonl([
+        {
+          unit_id: "FR-EP@2009-R1|FR-NATIONAL-SHARES",
+          event_id: "FR-EP@2009-R1",
+          label: "France",
+        },
+      ]),
+      "data/counts.json": Buffer.from(JSON.stringify({ events: 1, results: franceResults.length })),
+    });
+    const france = await loadCountryPackResults({
+      scope: "france",
+      zipPath: franceZip,
+      sqlitePath: francePath,
+      fixture: true,
+      derive: false,
+    });
+    expect(france.resultsAccepted).toBe(1);
+    expect(france.resultsRejected).toBe(0);
+    const franceCheck = new DatabaseSync(francePath, { readOnly: true });
+    const ump = franceCheck
+      .prepare(
+        `SELECT candidate_or_list_label, votes, votes_status, seats, share, share_status, share_unit
+         FROM result_row WHERE result_row_id = 'FR-EP@2009-R1|FR-NATIONAL-SHARES|1'`,
+      )
+      .get() as {
+      candidate_or_list_label: string;
+      votes: number | null;
+      votes_status: string;
+      seats: number;
+      share: number;
+      share_status: string;
+      share_unit: string;
+    };
+    expect(ump.candidate_or_list_label).toBe("UMP");
+    expect(ump.votes).toBeNull();
+    expect(ump.votes_status).toBe("unknown");
+    expect(ump.seats).toBe(29);
+    expect(ump.share).toBeCloseTo(27.8, 5);
+    expect(ump.share_status).toBe("recorded");
+    expect(ump.share_unit).toBe("percent_0_100");
+    franceCheck.close();
+  });
+
+  it("keeps a UK row whose party_label is numeric 0 and notes it", async () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-pack-uk-party-"));
+    tempDirs.push(dir);
+    const sqlitePath = path.join(dir, "atlas.sqlite");
+    migrateMasterDatabase(repoRoot, sqlitePath);
+    const db = new DatabaseSync(sqlitePath);
+    seedCountry(db, {
+      countryId: "united-kingdom",
+      code: "GB",
+      lineageId: "country-package-united-kingdom",
+      releaseId: "rel-gb",
+      namespace: "cdd-atlas-gb-research-v1",
+      officeId: "GB.COMMONS",
+      geographyId: "GB-GEO",
+    });
+    db.close();
+    const results = [
+      {
+        result_row_id: "GB-NI-2023-sperrin-barr",
+        event_id: "GB-E-NI-2023",
+        office_id: "GB.COMMONS",
+        label: "Barr, Raymond",
+        party_label: 0,
+        result_kind: "contestant",
+        vote_type: "first_preferences",
+        votes: 985,
+        votes_status: "explicit_source_value",
+      },
+    ];
+    const zipPath = packZip(dir, "United_Kingdom_Atlas_Prompt_AU/", {
+      "data/events.jsonl": jsonl([pollEvent("GB-E-NI-2023", "GB.COMMONS", "2023-05-18")]),
+      "data/results.jsonl.gz": gzipSync(jsonl(results)),
+      "data/counts.json": Buffer.from(JSON.stringify({ events: 1, results: 1 })),
+    });
+    const loaded = await loadCountryPackResults({
+      scope: "united_kingdom",
+      zipPath,
+      sqlitePath,
+      fixture: true,
+      derive: false,
+    });
+    expect(loaded.resultsAccepted).toBe(1);
+    expect(loaded.resultsRejected).toBe(0);
+    const notes = readFileSync(loaded.rejectsFile, "utf8")
+      .trim()
+      .split("\n")
+      .map((line) => JSON.parse(line) as { reason: string; kept?: boolean; result_id?: string });
+    expect(notes).toEqual([
+      {
+        file: "data/results.jsonl.gz",
+        line: 1,
+        reason: "party_label_not_a_string",
+        kept: true,
+        event_id: "GB-E-NI-2023",
+        result_id: "GB-NI-2023-sperrin-barr",
+        office_id: "GB.COMMONS",
+      },
+    ]);
+    const check = new DatabaseSync(sqlitePath, { readOnly: true });
+    expect(
+      check
+        .prepare(
+          `SELECT candidate_or_list_label, original_party_label, votes, votes_status
+           FROM result_row WHERE result_row_id = 'GB-NI-2023-sperrin-barr'`,
+        )
+        .get(),
+    ).toEqual({
+      candidate_or_list_label: "Barr, Raymond",
+      original_party_label: null,
+      votes: 985,
+      votes_status: "recorded",
+    });
+    check.close();
   });
 });

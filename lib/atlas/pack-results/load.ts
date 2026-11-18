@@ -608,6 +608,17 @@ async function scanResults(
     }
     seen.add(mapped.resultId);
     accepted += 1;
+    for (const flag of mapped.flags) {
+      rejects.add({
+        file: profile.resultsPath,
+        line: lineNumber,
+        reason: flag,
+        kept: true,
+        event_id: mapped.eventId,
+        result_id: mapped.resultId,
+        office_id: mapped.officeId,
+      });
+    }
   });
   return { inFile, accepted, rejected };
 }

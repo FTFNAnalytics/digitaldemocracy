@@ -57,6 +57,34 @@ function readShare(row: Record<string, unknown>): { value: unknown; fromPercentF
   return { value: null, fromPercentField: false };
 }
 
+/** "67,60%" and "27,80 %" are percents. Unparseable text returns null. */
+export function parsePercentString(raw: string): number | null {
+  let text = raw.trim().replace(/\u00a0/g, " ");
+  if (text.endsWith("%")) text = text.slice(0, -1).trim();
+  text = text.replace(/\s+/g, "");
+  if (!text) return null;
+  const comma = text.lastIndexOf(",");
+  const dot = text.lastIndexOf(".");
+  let normalized = text;
+  if (comma >= 0 && dot >= 0) {
+    normalized = comma > dot ? text.replace(/\./g, "").replace(",", ".") : text.replace(/,/g, "");
+  } else if (comma >= 0) {
+    normalized = text.replace(/,/g, ".");
+  }
+  if (!/^\d+(\.\d+)?$/.test(normalized)) return null;
+  const value = Number(normalized);
+  if (!Number.isFinite(value) || value < 0) return null;
+  return value;
+}
+
+function coerceShare(value: unknown): { value: unknown; percentMarked: boolean; unparsed: boolean } {
+  if (typeof value !== "string") return { value, percentMarked: false, unparsed: false };
+  const percentMarked = value.trim().endsWith("%");
+  const parsed = parsePercentString(value);
+  if (parsed == null) return { value: null, percentMarked, unparsed: true };
+  return { value: parsed, percentMarked, unparsed: false };
+}
+
 export type RejectReason = { reason: string };
 
 export type ShareConvention = "explicit" | "proportion_0_1";
@@ -107,6 +135,8 @@ export type MappedResult = {
   electedFlag: number | null;
   isSubstitute: number | null;
   evidenceStatus: string;
+  /** Data-quality notes. The row is still accepted. */
+  flags: string[];
   source: Record<string, unknown>;
 };
 
@@ -594,14 +624,33 @@ export function mapPackEvent(
   };
 }
 
+function suppliedEventId(row: Record<string, unknown>): string | null | RejectReason {
+  if (!Object.prototype.hasOwnProperty.call(row, "event_id") || row.event_id == null || row.event_id === "") return null;
+  return requiredId(row, ["event_id"]);
+}
+
 export function mapPackResult(
   row: Record<string, unknown>,
   context: PublishedContext,
 ): MappedResult | RejectReason {
   const resultId = requiredId(row, ["result_row_id", "result_id"]);
   if (typeof resultId !== "string") return resultId;
-  const eventId = requiredId(row, ["event_id"]);
-  if (typeof eventId !== "string") return eventId;
+  const explicitEvent = suppliedEventId(row);
+  if (typeof explicitEvent === "object" && explicitEvent && "reason" in explicitEvent) return explicitEvent;
+  const unit = context.units ? reportingUnitId(row) : null;
+  if (typeof unit === "object" && unit && "reason" in unit) return unit;
+  let eventId: string;
+  if (typeof explicitEvent === "string") {
+    eventId = explicitEvent;
+  } else if (typeof unit === "string" && context.units) {
+    // Germany results name a unit and not an event. The unit file supplies the event.
+    const owner = context.units.get(unit);
+    if (!owner) return { reason: "reporting_unit_unknown" };
+    if (owner.eventId == null) return { reason: "reporting_unit_has_no_event" };
+    eventId = owner.eventId;
+  } else {
+    return { reason: "missing_event_id" };
+  }
   const event = context.events.get(eventId);
   if (!event) return { reason: "event_not_in_pack" };
 
@@ -647,15 +696,21 @@ export function mapPackResult(
   const seats = mapScalar(row.seats, row.seats_status, "seats");
   if ("reason" in seats) return seats;
   const shareRead = readShare(row);
-  const shareStatusSource = Object.prototype.hasOwnProperty.call(row, "share_status") ? row.share_status : null;
-  const share = mapScalar(shareRead.value, shareStatusSource, "share");
+  const coercedShare = coerceShare(shareRead.value);
+  // An unparseable percent string stays on raw_json. The typed share is unknown.
+  const shareStatusSource = coercedShare.unparsed
+    ? null
+    : Object.prototype.hasOwnProperty.call(row, "share_status")
+      ? row.share_status
+      : null;
+  const share = mapScalar(coercedShare.value, shareStatusSource, "share");
   if ("reason" in share) return share;
-  // published_percent / percent_raw / vote_percentage_source are already percentages.
-  // A bare `share` with no unit stays unmapped.
+  // published_percent / percent_raw / vote_percentage_source, and a string marked
+  // with %, are already percentages. A bare numeric `share` with no unit stays unmapped.
   const shareUnitToken =
     row.share_unit != null && row.share_unit !== ""
       ? row.share_unit
-      : shareRead.fromPercentField && share.value != null
+      : (shareRead.fromPercentField || coercedShare.percentMarked) && share.value != null
         ? "percent"
         : row.share_unit;
   const shareUnit = mapShareUnit(shareUnitToken, share.value, context.shareConvention);
@@ -669,8 +724,8 @@ export function mapPackResult(
   const label =
     NON_CANDIDATE_KINDS.has(kind) || typeof labelValue !== "string" || !labelValue.trim() ? null : labelValue;
 
-  const partyLabel = optionalString(firstPresent(row, ["party_label", "original_party_label"]));
-  if (typeof partyLabel === "object" && partyLabel && "reason" in partyLabel) return partyLabel;
+  const party = readPartyLabel(row);
+  const partyLabel = party.value;
   const partyCode = optionalString(firstPresent(row, ["original_party_code", "political_nuance", "party_code"]));
   if (typeof partyCode === "object" && partyCode && "reason" in partyCode) return partyCode;
   const partyNamespace = optionalString(firstPresent(row, ["party_namespace"]));
@@ -700,6 +755,20 @@ export function mapPackResult(
     electedFlag,
     isSubstitute,
     evidenceStatus: enumOrUnknown(row.evidence_status, EVIDENCE),
+    flags: party.flag ? [party.flag] : [],
     source: row,
   };
+}
+
+/** A non-string party label, including numeric 0, is not a party name. */
+function readPartyLabel(row: Record<string, unknown>): { value: string | null; flag: string | null } {
+  for (const key of ["party_label", "original_party_label"]) {
+    if (!Object.prototype.hasOwnProperty.call(row, key)) continue;
+    const value = row[key];
+    if (value == null || value === "") return { value: null, flag: null };
+    if (typeof value !== "string") return { value: null, flag: `${key}_not_a_string` };
+    const trimmed = value.trim();
+    return { value: trimmed || null, flag: null };
+  }
+  return { value: null, flag: null };
 }
