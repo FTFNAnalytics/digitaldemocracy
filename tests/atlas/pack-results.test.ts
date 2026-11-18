@@ -1102,4 +1102,477 @@ describe("full research ZIP results", () => {
       }),
     ).rejects.toThrow(/both event-scoped and office\/boundary-scoped/);
   });
+
+  it("accepts the real UK, Italy, Germany, and France result vocabularies", async () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), "atlas-pack-vocab-"));
+    tempDirs.push(dir);
+
+    const ukKinds = [
+      "contestant",
+      "party_list",
+      "party_aggregate",
+      "party_share_and_constitutive_seats",
+      "party_summary",
+      "published_positive_seat_allocation",
+      "published_seat_allocation",
+      "unopposed_return",
+      "count_stage_result",
+    ];
+    const ukVoteTypes = [
+      "candidate_marks_not_voters",
+      "candidate_votes",
+      "regional_list_votes",
+      "first_preferences",
+      "constituency_candidate_votes",
+      "national_party_vote_share",
+      "seat_allocation",
+      "first_preference_share_and_published_seats",
+      "published_seat_allocation",
+      "no_poll_unopposed",
+      "london_wide_list_votes",
+      "SV_first_preference",
+    ];
+    const ukAccepted = [
+      ...ukKinds.map((kind, index) => ({
+        result_row_id: `GB-K-${index}`,
+        event_id: "GB-E-1",
+        office_id: "GB.COMMONS",
+        label: kind,
+        result_kind: kind,
+        vote_type: ukVoteTypes[index],
+        votes: 10,
+        votes_status: "explicit_source_value",
+        share: 12.5,
+        share_status: "explicit_source_value",
+        share_unit: "percent",
+        seats: 1,
+        seats_status: "explicit_source_value",
+        elected: true,
+      })),
+      ...ukVoteTypes.slice(ukKinds.length).map((voteType, index) => ({
+        result_row_id: `GB-V-${index}`,
+        event_id: "GB-E-1",
+        office_id: "GB.COMMONS",
+        label: voteType,
+        result_kind: "contestant",
+        vote_type: voteType,
+        votes: 4,
+        votes_status: "explicit_source_value",
+        share: 51.9187,
+        share_status: "explicit_source_value",
+        share_unit: "percent",
+        seats: null,
+        seats_status: "missing",
+      })),
+      {
+        result_row_id: "GB-ZERO",
+        event_id: "GB-E-1",
+        office_id: "GB.COMMONS",
+        label: "Zero",
+        result_kind: "contestant",
+        vote_type: "candidate_votes",
+        votes: 0,
+        votes_status: "explicit_source_value",
+        share: 0,
+        share_status: "explicit_source_value",
+        share_unit: "percent",
+        seats: 0,
+        seats_status: "explicit_source_value",
+      },
+      {
+        result_row_id: "GB-MISSING",
+        event_id: "GB-E-1",
+        office_id: "GB.COMMONS",
+        label: "Absent",
+        result_kind: "party_summary",
+        vote_type: "national_party_vote_share",
+        votes: null,
+        votes_status: "missing",
+        share: null,
+        share_status: "missing",
+        seats: null,
+        seats_status: "missing",
+      },
+      {
+        result_row_id: "GB-UNLISTED",
+        event_id: "GB-E-1",
+        office_id: "GB.COMMONS",
+        label: "Kept",
+        result_kind: "unlisted_kind",
+        vote_type: "unlisted_vote",
+        votes: 6,
+        votes_status: "explicit_source_value",
+        seats: null,
+        seats_status: "missing",
+      },
+    ];
+    const ukRejected = [
+      {
+        result_row_id: "GB-BAD-VOTES",
+        event_id: "GB-E-1",
+        office_id: "GB.COMMONS",
+        label: "Bad votes",
+        result_kind: "contestant",
+        vote_type: "candidate_votes",
+        votes: 4,
+        votes_status: "missing",
+      },
+      {
+        result_row_id: "GB-BAD-SEATS",
+        event_id: "GB-E-1",
+        office_id: "GB.COMMONS",
+        label: "Bad seats",
+        result_kind: "contestant",
+        vote_type: "seat_allocation",
+        votes: 1,
+        votes_status: "explicit_source_value",
+        seats: 2,
+        seats_status: "missing",
+      },
+      {
+        result_row_id: "GB-BAD-SHARE",
+        event_id: "GB-E-1",
+        office_id: "GB.COMMONS",
+        label: "Bad share",
+        result_kind: "party_share_and_constitutive_seats",
+        vote_type: "national_party_vote_share",
+        votes: 1,
+        votes_status: "explicit_source_value",
+        share: 2,
+        share_status: "missing",
+        share_unit: "percent",
+      },
+      {
+        result_row_id: "GB-BAD-EXPLICIT",
+        event_id: "GB-E-1",
+        office_id: "GB.COMMONS",
+        label: "Explicit null",
+        result_kind: "contestant",
+        vote_type: "candidate_votes",
+        votes: null,
+        votes_status: "explicit_source_value",
+      },
+    ];
+    const ukPath = path.join(dir, "uk.sqlite");
+    migrateMasterDatabase(repoRoot, ukPath);
+    const ukDb = new DatabaseSync(ukPath);
+    seedCountry(ukDb, {
+      countryId: "united-kingdom",
+      code: "GB",
+      lineageId: "country-package-united-kingdom",
+      releaseId: "rel-gb",
+      namespace: "cdd-atlas-gb-research-v1",
+      officeId: "GB.COMMONS",
+      geographyId: "GB-GEO",
+    });
+    ukDb.close();
+    const ukResults = [...ukAccepted, ...ukRejected];
+    const ukZip = packZip(dir, "United_Kingdom_Atlas_Prompt_AU/", {
+      "data/events.jsonl": jsonl([pollEvent("GB-E-1", "GB.COMMONS", "2010-05-06")]),
+      "data/results.jsonl.gz": gzipSync(jsonl(ukResults)),
+      "data/counts.json": Buffer.from(JSON.stringify({ events: 1, results: ukResults.length })),
+    });
+    const uk = await loadCountryPackResults({
+      scope: "united_kingdom",
+      zipPath: ukZip,
+      sqlitePath: ukPath,
+      fixture: true,
+      derive: false,
+    });
+    expect(uk.resultsAccepted).toBe(ukAccepted.length);
+    expect(uk.resultsRejected).toBe(ukRejected.length);
+    expect(rejectReasons(uk.rejectsFile).sort()).toEqual(
+      [
+        "votes_status_missing_has_value",
+        "seats_status_missing_has_value",
+        "share_status_missing_has_value",
+        "votes_status_explicit_source_value_is_null",
+      ].sort(),
+    );
+    const ukCheck = new DatabaseSync(ukPath, { readOnly: true });
+    const sourced = ukCheck
+      .prepare(
+        `SELECT votes, votes_status, share, share_status, seats, seats_status, candidate_or_list_label
+         FROM result_row WHERE result_row_id = 'GB-K-0'`,
+      )
+      .get();
+    expect(sourced).toEqual({
+      votes: 10,
+      votes_status: "recorded",
+      share: 12.5,
+      share_status: "recorded",
+      seats: 1,
+      seats_status: "recorded",
+      candidate_or_list_label: "contestant",
+    });
+    const zero = ukCheck
+      .prepare("SELECT votes, votes_status, share, share_status, seats, seats_status FROM result_row WHERE result_row_id = 'GB-ZERO'")
+      .get();
+    expect(zero).toEqual({
+      votes: 0,
+      votes_status: "zero",
+      share: 0,
+      share_status: "zero",
+      seats: 0,
+      seats_status: "zero",
+    });
+    const missing = ukCheck
+      .prepare("SELECT votes, votes_status, share_status, seats_status, candidate_or_list_label FROM result_row WHERE result_row_id = 'GB-MISSING'")
+      .get();
+    expect(missing).toEqual({
+      votes: null,
+      votes_status: "unknown",
+      share_status: "unknown",
+      seats_status: "unknown",
+      candidate_or_list_label: "Absent",
+    });
+    const storedKinds = new Set(
+      ukCheck
+        .prepare("SELECT raw_json FROM result_row")
+        .all()
+        .map((row) => String((JSON.parse(String(row.raw_json)) as { row: { result_kind: string } }).row.result_kind)),
+    );
+    for (const kind of [...ukKinds, "unlisted_kind"]) expect(storedKinds.has(kind)).toBe(true);
+    const storedVotes = new Set(
+      ukCheck
+        .prepare("SELECT raw_json FROM result_row")
+        .all()
+        .map((row) => String((JSON.parse(String(row.raw_json)) as { row: { vote_type: string } }).row.vote_type)),
+    );
+    for (const voteType of [...ukVoteTypes, "unlisted_vote"]) expect(storedVotes.has(voteType)).toBe(true);
+    ukCheck.close();
+
+    const italyPath = path.join(dir, "italy.sqlite");
+    migrateMasterDatabase(repoRoot, italyPath);
+    const italyDb = new DatabaseSync(italyPath);
+    seedCountry(italyDb, {
+      countryId: "italy",
+      code: "IT",
+      lineageId: "country-package-italy",
+      releaseId: "rel-it",
+      namespace: "cdd-atlas-it-research-v1",
+      officeId: "IT-MAYOR",
+      geographyId: "IT-GEO",
+    });
+    italyDb.close();
+    const italyResults = [
+      {
+        result_id: "IT-R-contestant",
+        event_id: "IT-E-1",
+        label: "Ada",
+        result_kind: "contestant",
+        vote_type: "published_list_votes",
+        votes: 11,
+        published_percent: 22.5,
+      },
+      {
+        result_id: "IT-R-zero",
+        event_id: "IT-E-1",
+        label: "Zero",
+        result_kind: "contestant",
+        vote_type: "published_uninominal_candidate_votes",
+        votes: 0,
+        seats: 0,
+      },
+      {
+        result_id: "IT-R-metric",
+        event_id: "IT-E-1",
+        label: "Papers",
+        result_kind: "metric",
+        vote_type: "reported_turnout_or_papers",
+        votes: null,
+        seats: null,
+      },
+      {
+        result_id: "IT-R-unknown",
+        event_id: "IT-E-1",
+        label: "Kept",
+        result_kind: "unlisted_kind",
+        vote_type: "unlisted_vote",
+        votes: 3,
+      },
+    ];
+    const italyZip = packZip(dir, "Italy_Atlas_Prompt_AT/", {
+      "data/events.jsonl": jsonl([pollEvent("IT-E-1", "IT-MAYOR", "2024-06-09")]),
+      "data/event-office-links.jsonl": Buffer.from(""),
+      "data/results.jsonl.gz": gzipSync(jsonl(italyResults)),
+      "data/result-audit.json": Buffer.from(JSON.stringify({ result_rows: italyResults.length })),
+      "data/counts.json": Buffer.from(JSON.stringify({ events: 1, results: italyResults.length })),
+    });
+    const italy = await loadCountryPackResults({
+      scope: "italy",
+      zipPath: italyZip,
+      sqlitePath: italyPath,
+      fixture: true,
+      derive: false,
+    });
+    expect(italy.resultsAccepted).toBe(italyResults.length);
+    expect(italy.resultsRejected).toBe(0);
+    const italyCheck = new DatabaseSync(italyPath, { readOnly: true });
+    expect(
+      italyCheck
+        .prepare("SELECT votes, votes_status, share, share_status, share_unit FROM result_row WHERE result_row_id = 'IT-R-contestant'")
+        .get(),
+    ).toEqual({ votes: 11, votes_status: "recorded", share: 22.5, share_status: "recorded", share_unit: "percent_0_100" });
+    expect(
+      italyCheck.prepare("SELECT votes, votes_status, seats, seats_status FROM result_row WHERE result_row_id = 'IT-R-zero'").get(),
+    ).toEqual({ votes: 0, votes_status: "zero", seats: 0, seats_status: "zero" });
+    const metric = italyCheck
+      .prepare("SELECT candidate_or_list_label, votes, votes_status, raw_json FROM result_row WHERE result_row_id = 'IT-R-metric'")
+      .get() as { candidate_or_list_label: string | null; votes: number | null; votes_status: string; raw_json: string };
+    expect(metric.candidate_or_list_label).toBeNull();
+    expect(metric.votes).toBeNull();
+    expect(metric.votes_status).toBe("unknown");
+    expect((JSON.parse(metric.raw_json) as { row: { label: string; result_kind: string } }).row).toMatchObject({
+      label: "Papers",
+      result_kind: "metric",
+      vote_type: "reported_turnout_or_papers",
+    });
+    italyCheck.close();
+
+    const germanyVoteTypes = ["first_vote", "second_vote", "list_vote", "electorate_metric", "single_vote"];
+    const germanyResults = germanyVoteTypes.map((voteType, index) => ({
+      result_id: `DE-R-${index}`,
+      event_id: "DE-E-1",
+      label: voteType,
+      result_kind: index === 0 ? "metric" : "contestant",
+      vote_type: voteType,
+      votes: index === 0 ? null : 8,
+      ...(index === 1 ? { percent_raw: 15 } : {}),
+    }));
+    germanyResults.push({
+      result_id: "DE-R-unknown",
+      event_id: "DE-E-1",
+      label: "Kept",
+      result_kind: "unlisted_kind",
+      vote_type: "unlisted_vote",
+      votes: 2,
+    });
+    const germanyPath = path.join(dir, "germany.sqlite");
+    migrateMasterDatabase(repoRoot, germanyPath);
+    const germanyDb = new DatabaseSync(germanyPath);
+    seedCountry(germanyDb, {
+      countryId: "germany",
+      code: "DE",
+      lineageId: "country-package-germany",
+      releaseId: "rel-de",
+      namespace: "cdd-atlas-de-research-v1",
+      officeId: "DE-BT",
+      geographyId: "DE-GEO",
+    });
+    germanyDb.close();
+    const germanyZip = packZip(dir, "Germany_Atlas_Prompt_AS/", {
+      "data/events.jsonl": jsonl([pollEvent("DE-E-1", "DE-BT", "1949-08-14")]),
+      "data/results.jsonl": jsonl(germanyResults),
+      "data/result-audit.json": Buffer.from(JSON.stringify({ result_rows: germanyResults.length })),
+      "data/counts.json": Buffer.from(JSON.stringify({ events: 1, results: germanyResults.length })),
+    });
+    const germany = await loadCountryPackResults({
+      scope: "germany",
+      zipPath: germanyZip,
+      sqlitePath: germanyPath,
+      fixture: true,
+      derive: false,
+    });
+    expect(germany.resultsAccepted).toBe(germanyResults.length);
+    expect(germany.resultsRejected).toBe(0);
+    const germanyCheck = new DatabaseSync(germanyPath, { readOnly: true });
+    expect(
+      germanyCheck
+        .prepare("SELECT votes, votes_status, share, share_unit, candidate_or_list_label FROM result_row WHERE result_row_id = 'DE-R-1'")
+        .get(),
+    ).toEqual({
+      votes: 8,
+      votes_status: "recorded",
+      share: 15,
+      share_unit: "percent_0_100",
+      candidate_or_list_label: "second_vote",
+    });
+    const deKinds = new Set(
+      germanyCheck
+        .prepare("SELECT raw_json FROM result_row")
+        .all()
+        .map((row) => String((JSON.parse(String(row.raw_json)) as { row: { result_kind: string } }).row.result_kind)),
+    );
+    expect([...deKinds].sort()).toEqual(["contestant", "metric", "unlisted_kind"]);
+    germanyCheck.close();
+
+    const franceResults = [
+      {
+        result_id: "FR-R-1",
+        event_id: "FR-E-1",
+        result_kind: "candidate_mark_multi_vote",
+        contestant_label: "Martin",
+        votes: 15,
+        votes_status: "reported",
+        seats: 2,
+      },
+      {
+        result_id: "FR-R-2",
+        event_id: "FR-E-1",
+        result_kind: "list_ballot",
+        contestant_label: "Liste",
+        votes: 0,
+        votes_status: "reported",
+        vote_percentage_source: 40,
+      },
+      {
+        result_id: "FR-R-3",
+        event_id: "FR-E-1",
+        result_kind: "list_ballot",
+        contestant_label: "Absent",
+        votes: null,
+        votes_status: "not_supplied",
+      },
+      {
+        result_id: "FR-R-4",
+        event_id: "FR-E-1",
+        result_kind: "unlisted_kind",
+        contestant_label: "Kept",
+        votes: 6,
+        votes_status: "reported",
+      },
+    ];
+    const francePath = path.join(dir, "france.sqlite");
+    migrateMasterDatabase(repoRoot, francePath);
+    const franceDb = new DatabaseSync(francePath);
+    seedCountry(franceDb, {
+      countryId: "france",
+      code: "FR",
+      lineageId: "country-package-france",
+      releaseId: "rel-fr",
+      namespace: "cdd-atlas-fr-research-v1",
+      officeId: "FR-MUN-01001",
+      geographyId: "FR-GEO",
+    });
+    franceDb.close();
+    const franceZip = packZip(dir, "France_Atlas_Prompt_AR/", {
+      "data/events.jsonl": jsonl([pollEvent("FR-E-1", "FR-MUN-01001", "2026-03-15")]),
+      "data/results.jsonl": jsonl(franceResults),
+      "data/counts.json": Buffer.from(JSON.stringify({ events: 1, results: franceResults.length })),
+    });
+    const france = await loadCountryPackResults({
+      scope: "france",
+      zipPath: franceZip,
+      sqlitePath: francePath,
+      fixture: true,
+      derive: false,
+    });
+    expect(france.resultsAccepted).toBe(franceResults.length);
+    expect(france.resultsRejected).toBe(0);
+    const franceCheck = new DatabaseSync(francePath, { readOnly: true });
+    expect(
+      franceCheck
+        .prepare("SELECT votes, votes_status, seats, seats_status, candidate_or_list_label FROM result_row WHERE result_row_id = 'FR-R-1'")
+        .get(),
+    ).toEqual({ votes: 15, votes_status: "recorded", seats: 2, seats_status: "recorded", candidate_or_list_label: "Martin" });
+    expect(
+      franceCheck.prepare("SELECT votes, votes_status, share, share_unit FROM result_row WHERE result_row_id = 'FR-R-2'").get(),
+    ).toEqual({ votes: 0, votes_status: "zero", share: 40, share_unit: "percent_0_100" });
+    expect(franceCheck.prepare("SELECT votes, votes_status FROM result_row WHERE result_row_id = 'FR-R-3'").get()).toEqual({
+      votes: null,
+      votes_status: "unknown",
+    });
+    franceCheck.close();
+  });
 });

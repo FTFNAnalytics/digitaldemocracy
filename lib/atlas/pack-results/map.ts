@@ -7,9 +7,10 @@ import { canonical, sha256Hex } from "../identity";
  * published database or the pack are rejected. Vote, seat, and share numbers
  * are copied only when the pack already stores them. Enum columns that the
  * pack does not speak (`local`, `completed`, `reported`) stay `unknown` or the
- * schema's name for a supplied number (`recorded` / `zero`). The original
- * object is kept on raw_json. Nothing is inferred from a label, a share, or a
- * neighbouring row.
+ * schema's name for a supplied number (`recorded` / `zero`). `explicit_source_value`
+ * is that sourced number. `missing` is a null value. Result kind and vote type
+ * stay on raw_json and do not reject the row. Nothing is inferred from a
+ * candidate label or a neighbouring row.
  */
 
 const EVENT_KINDS = new Set(["ordinary", "special", "repeated", "indirect", "unknown"]);
@@ -44,6 +45,17 @@ const EVIDENCE = new Set([
 ]);
 const NULL_SCALAR = new Set(["unknown", "not_applicable", "structurally_unavailable", "not_supplied", "missing"]);
 const NON_CANDIDATE_KINDS = new Set(["metric", "council_capacity", "published_capacity", "turnout"]);
+const PERCENT_SHARE_FIELDS = ["published_percent", "published_percent_raw", "vote_percentage_source", "percent_raw"] as const;
+
+function readShare(row: Record<string, unknown>): { value: unknown; fromPercentField: boolean } {
+  if (Object.prototype.hasOwnProperty.call(row, "share")) return { value: row.share, fromPercentField: false };
+  for (const key of PERCENT_SHARE_FIELDS) {
+    if (!Object.prototype.hasOwnProperty.call(row, key)) continue;
+    const value = row[key];
+    if (value != null && value !== "") return { value, fromPercentField: true };
+  }
+  return { value: null, fromPercentField: false };
+}
 
 export type RejectReason = { reason: string };
 
@@ -457,6 +469,11 @@ function mapScalar(
   }
   const rawStatus = status == null || status === "" ? null : status;
   if (typeof rawStatus === "string" || rawStatus == null) {
+    // UK: `missing` is a null cell. A number beside it is invalid, not a zero.
+    if (rawStatus === "missing") {
+      if (value != null) return { reason: `${name}_status_missing_has_value` };
+      return { value: null, status: "unknown" };
+    }
     if (value == null) {
       if (rawStatus == null || NULL_SCALAR.has(rawStatus)) {
         if (rawStatus === "not_applicable" || rawStatus === "structurally_unavailable") {
@@ -464,9 +481,17 @@ function mapScalar(
         }
         return { value: null, status: "unknown" };
       }
+      if (rawStatus === "explicit_source_value") return { reason: `${name}_status_explicit_source_value_is_null` };
       return { reason: `${name}_status_contradicts_null` };
     }
-    if (rawStatus == null || rawStatus === "reported" || rawStatus === "recorded") {
+    // `reported` (France) and `explicit_source_value` (UK) are sourced numbers.
+    // An absent status (Italy, Germany) is the same: the value itself is the source.
+    if (
+      rawStatus == null ||
+      rawStatus === "reported" ||
+      rawStatus === "recorded" ||
+      rawStatus === "explicit_source_value"
+    ) {
       return { value, status: value === 0 ? "zero" : "recorded" };
     }
     if (rawStatus === "zero") {
@@ -621,19 +646,19 @@ export function mapPackResult(
   if ("reason" in votes) return votes;
   const seats = mapScalar(row.seats, row.seats_status, "seats");
   if ("reason" in seats) return seats;
-  const shareSource = Object.prototype.hasOwnProperty.call(row, "share")
-    ? row.share
-    : Object.prototype.hasOwnProperty.call(row, "published_percent")
-      ? row.published_percent
-      : Object.prototype.hasOwnProperty.call(row, "vote_percentage_source")
-        ? row.vote_percentage_source
-        : Object.prototype.hasOwnProperty.call(row, "percent_raw")
-          ? row.percent_raw
-          : null;
+  const shareRead = readShare(row);
   const shareStatusSource = Object.prototype.hasOwnProperty.call(row, "share_status") ? row.share_status : null;
-  const share = mapScalar(shareSource, shareStatusSource, "share");
+  const share = mapScalar(shareRead.value, shareStatusSource, "share");
   if ("reason" in share) return share;
-  const shareUnit = mapShareUnit(row.share_unit, share.value, context.shareConvention);
+  // published_percent / percent_raw / vote_percentage_source are already percentages.
+  // A bare `share` with no unit stays unmapped.
+  const shareUnitToken =
+    row.share_unit != null && row.share_unit !== ""
+      ? row.share_unit
+      : shareRead.fromPercentField && share.value != null
+        ? "percent"
+        : row.share_unit;
+  const shareUnit = mapShareUnit(shareUnitToken, share.value, context.shareConvention);
   if (typeof shareUnit !== "string") return shareUnit;
   if (share.value != null && shareUnit === "percent_0_100" && share.value > 100) return { reason: "share_above_100" };
   if (share.value != null && shareUnit === "proportion_0_1" && share.value > 1) return { reason: "share_above_1" };
