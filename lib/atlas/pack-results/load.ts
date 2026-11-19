@@ -9,6 +9,8 @@ import {
   mapPackEvent,
   mapPackResult,
   parsePackObject,
+  readReportingUnit,
+  type IndexedReportingUnit,
   type MappedEvent,
   type MappedResult,
   type PublishedContext,
@@ -484,26 +486,28 @@ function idText(row: Record<string, unknown>, key: string): string | undefined {
 async function indexUnits(
   zipPath: string,
   member: ZipMember,
-): Promise<Map<string, string>> {
-  const units = new Map<string, string>();
+): Promise<Map<string, IndexedReportingUnit>> {
+  const units = new Map<string, IndexedReportingUnit>();
   await forEachTextLine(openZipMemberTextStream(zipPath, member), (line, lineNumber) => {
     const parsed = parsePackObject(line);
     if ("reason" in parsed) {
       throw new PackResultsError(`reporting-units.jsonl line ${lineNumber} is ${parsed.reason}`);
     }
-    const eventId = parsed.event_id;
-    if (typeof eventId !== "string" || !eventId) {
-      throw new PackResultsError(`reporting-units.jsonl line ${lineNumber} has no event_id`);
+    const read = readReportingUnit(parsed);
+    if ("reason" in read) {
+      throw new PackResultsError(`reporting-units.jsonl line ${lineNumber} is ${read.reason}`);
     }
-    for (const key of ["reporting_unit_id", "unit_id"]) {
-      const id = parsed[key];
-      if (typeof id !== "string" || !id) continue;
-      const existing = units.get(id);
-      if (existing && existing !== eventId) {
-        throw new PackResultsError(`reporting unit ${id} is attached to two events`);
-      }
-      units.set(id, eventId);
+    const existing = units.get(read.id);
+    if (existing && existing.eventId !== read.eventId) {
+      throw new PackResultsError(
+        existing.eventId && read.eventId
+          ? `reporting unit ${read.id} is attached to two events`
+          : `reporting unit ${read.id} is both event-scoped and office/boundary-scoped`,
+      );
     }
+    // A repeated boundary unit, or the same event twice, stays. No event id is added.
+    if (!existing) units.set(read.id, read);
+    else if (existing.label == null && read.label != null) units.set(read.id, { ...existing, label: read.label });
   });
   return units;
 }
@@ -604,6 +608,17 @@ async function scanResults(
     }
     seen.add(mapped.resultId);
     accepted += 1;
+    for (const flag of mapped.flags) {
+      rejects.add({
+        file: profile.resultsPath,
+        line: lineNumber,
+        reason: flag,
+        kept: true,
+        event_id: mapped.eventId,
+        result_id: mapped.resultId,
+        office_id: mapped.officeId,
+      });
+    }
   });
   return { inFile, accepted, rejected };
 }
@@ -805,7 +820,7 @@ export async function loadCountryPackResults(options: LoadPackResultsOptions): P
     }
   }
 
-  let units: Map<string, string> | null = null;
+  let units: Map<string, IndexedReportingUnit> | null = null;
   if (profile.reportingUnitsPath) {
     const unitsMember = locate(profile.reportingUnitsPath);
     if (unitsMember) {

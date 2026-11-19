@@ -7,9 +7,10 @@ import { canonical, sha256Hex } from "../identity";
  * published database or the pack are rejected. Vote, seat, and share numbers
  * are copied only when the pack already stores them. Enum columns that the
  * pack does not speak (`local`, `completed`, `reported`) stay `unknown` or the
- * schema's name for a supplied number (`recorded` / `zero`). The original
- * object is kept on raw_json. Nothing is inferred from a label, a share, or a
- * neighbouring row.
+ * schema's name for a supplied number (`recorded` / `zero`). `explicit_source_value`
+ * is that sourced number. `missing` is a null value. Result kind and vote type
+ * stay on raw_json and do not reject the row. Nothing is inferred from a
+ * candidate label or a neighbouring row.
  */
 
 const EVENT_KINDS = new Set(["ordinary", "special", "repeated", "indirect", "unknown"]);
@@ -44,6 +45,45 @@ const EVIDENCE = new Set([
 ]);
 const NULL_SCALAR = new Set(["unknown", "not_applicable", "structurally_unavailable", "not_supplied", "missing"]);
 const NON_CANDIDATE_KINDS = new Set(["metric", "council_capacity", "published_capacity", "turnout"]);
+const PERCENT_SHARE_FIELDS = ["published_percent", "published_percent_raw", "vote_percentage_source", "percent_raw"] as const;
+
+function readShare(row: Record<string, unknown>): { value: unknown; fromPercentField: boolean } {
+  if (Object.prototype.hasOwnProperty.call(row, "share")) return { value: row.share, fromPercentField: false };
+  for (const key of PERCENT_SHARE_FIELDS) {
+    if (!Object.prototype.hasOwnProperty.call(row, key)) continue;
+    const value = row[key];
+    if (value != null && value !== "") return { value, fromPercentField: true };
+  }
+  return { value: null, fromPercentField: false };
+}
+
+/** "67,60%" and "27,80 %" are percents. Unparseable text returns null. */
+export function parsePercentString(raw: string): number | null {
+  let text = raw.trim().replace(/\u00a0/g, " ");
+  if (text.endsWith("%")) text = text.slice(0, -1).trim();
+  text = text.replace(/\s+/g, "");
+  if (!text) return null;
+  const comma = text.lastIndexOf(",");
+  const dot = text.lastIndexOf(".");
+  let normalized = text;
+  if (comma >= 0 && dot >= 0) {
+    normalized = comma > dot ? text.replace(/\./g, "").replace(",", ".") : text.replace(/,/g, "");
+  } else if (comma >= 0) {
+    normalized = text.replace(/,/g, ".");
+  }
+  if (!/^\d+(\.\d+)?$/.test(normalized)) return null;
+  const value = Number(normalized);
+  if (!Number.isFinite(value) || value < 0) return null;
+  return value;
+}
+
+function coerceShare(value: unknown): { value: unknown; percentMarked: boolean; unparsed: boolean } {
+  if (typeof value !== "string") return { value, percentMarked: false, unparsed: false };
+  const percentMarked = value.trim().endsWith("%");
+  const parsed = parsePercentString(value);
+  if (parsed == null) return { value: null, percentMarked, unparsed: true };
+  return { value: parsed, percentMarked, unparsed: false };
+}
 
 export type RejectReason = { reason: string };
 
@@ -95,14 +135,29 @@ export type MappedResult = {
   electedFlag: number | null;
   isSubstitute: number | null;
   evidenceStatus: string;
+  /** Data-quality notes. The row is still accepted. */
+  flags: string[];
   source: Record<string, unknown>;
+};
+
+/**
+ * One reporting-units.jsonl row.
+ * `eventId` is set only when that row names an event (Italy, Germany, France).
+ * It stays null for an office/boundary unit (United Kingdom). The events for a
+ * null unit are the result rows that cite its id. This loader does not invent one.
+ */
+export type IndexedReportingUnit = {
+  id: string;
+  /** `label`, or `name` when the pack uses that field. Null when neither is set. */
+  label: string | null;
+  eventId: string | null;
 };
 
 export type PublishedContext = {
   offices: Set<string>;
   geographies: Set<string>;
-  /** reporting-unit id -> event id. Null when the pack has no units file. */
-  units: Map<string, string> | null;
+  /** reporting-unit id -> unit. Null when the pack has no units file. */
+  units: Map<string, IndexedReportingUnit> | null;
   /** Ticket-component ids from ticket_components.json. Null when that file is absent. */
   ticketComponents: Set<string> | null;
   events: Map<string, { officeId: string; historyKey: string }>;
@@ -161,6 +216,59 @@ function firstPresent(row: Record<string, unknown>, keys: string[]): string | nu
     return text(row, key);
   }
   return null;
+}
+
+/** First non-blank alias. Two non-blank values that differ are a reject. */
+function oneAlias(
+  row: Record<string, unknown>,
+  keys: readonly string[],
+  disagreeReason: string,
+): string | null | RejectReason {
+  const found: string[] = [];
+  for (const key of keys) {
+    if (!Object.prototype.hasOwnProperty.call(row, key)) continue;
+    const value = text(row, key);
+    if (typeof value === "object" && value && "reason" in value) return value;
+    if (typeof value === "string" && value.trim()) found.push(value.trim());
+  }
+  if (found.length === 0) return null;
+  if (new Set(found).size > 1) return { reason: disagreeReason };
+  return found[0]!;
+}
+
+const REPORTING_UNIT_ID_KEYS = ["reporting_unit_id", "unit_id"] as const;
+const REPORTING_UNIT_LABEL_KEYS = ["label", "name"] as const;
+
+/** Result rows cite a unit with `reporting_unit_id` or `unit_id`. Absent is not an error. */
+export function reportingUnitId(row: Record<string, unknown>): string | null | RejectReason {
+  return oneAlias(row, REPORTING_UNIT_ID_KEYS, "reporting_unit_ambiguous");
+}
+
+function optionalEventId(row: Record<string, unknown>): string | null | RejectReason {
+  if (!Object.prototype.hasOwnProperty.call(row, "event_id")) return null;
+  const value = row.event_id;
+  if (value == null || value === "") return null;
+  if (typeof value !== "string") return { reason: "event_id_not_a_string" };
+  const trimmed = value.trim();
+  return trimmed ? trimmed : null;
+}
+
+/** Read one reporting-units.jsonl object. A missing event id is office/boundary scope, not a failure. */
+export function readReportingUnit(row: Record<string, unknown>): IndexedReportingUnit | RejectReason {
+  const id = oneAlias(row, REPORTING_UNIT_ID_KEYS, "reporting_unit_ambiguous");
+  if (typeof id !== "string") {
+    if (id && typeof id === "object" && "reason" in id) return id;
+    return { reason: "missing_reporting_unit_id" };
+  }
+  const label = oneAlias(row, REPORTING_UNIT_LABEL_KEYS, "reporting_unit_label_disagrees");
+  if (typeof label === "object" && label && "reason" in label) return label;
+  const eventId = optionalEventId(row);
+  if (typeof eventId === "object" && eventId && "reason" in eventId) return eventId;
+  return {
+    id,
+    label: typeof label === "string" ? label : null,
+    eventId: typeof eventId === "string" ? eventId : null,
+  };
 }
 
 function enumOrUnknown(value: unknown, allowed: Set<string>): string {
@@ -391,6 +499,11 @@ function mapScalar(
   }
   const rawStatus = status == null || status === "" ? null : status;
   if (typeof rawStatus === "string" || rawStatus == null) {
+    // UK: `missing` is a null cell. A number beside it is invalid, not a zero.
+    if (rawStatus === "missing") {
+      if (value != null) return { reason: `${name}_status_missing_has_value` };
+      return { value: null, status: "unknown" };
+    }
     if (value == null) {
       if (rawStatus == null || NULL_SCALAR.has(rawStatus)) {
         if (rawStatus === "not_applicable" || rawStatus === "structurally_unavailable") {
@@ -398,9 +511,17 @@ function mapScalar(
         }
         return { value: null, status: "unknown" };
       }
+      if (rawStatus === "explicit_source_value") return { reason: `${name}_status_explicit_source_value_is_null` };
       return { reason: `${name}_status_contradicts_null` };
     }
-    if (rawStatus == null || rawStatus === "reported" || rawStatus === "recorded") {
+    // `reported` (France) and `explicit_source_value` (UK) are sourced numbers.
+    // An absent status (Italy, Germany) is the same: the value itself is the source.
+    if (
+      rawStatus == null ||
+      rawStatus === "reported" ||
+      rawStatus === "recorded" ||
+      rawStatus === "explicit_source_value"
+    ) {
       return { value, status: value === 0 ? "zero" : "recorded" };
     }
     if (rawStatus === "zero") {
@@ -503,14 +624,33 @@ export function mapPackEvent(
   };
 }
 
+function suppliedEventId(row: Record<string, unknown>): string | null | RejectReason {
+  if (!Object.prototype.hasOwnProperty.call(row, "event_id") || row.event_id == null || row.event_id === "") return null;
+  return requiredId(row, ["event_id"]);
+}
+
 export function mapPackResult(
   row: Record<string, unknown>,
   context: PublishedContext,
 ): MappedResult | RejectReason {
   const resultId = requiredId(row, ["result_row_id", "result_id"]);
   if (typeof resultId !== "string") return resultId;
-  const eventId = requiredId(row, ["event_id"]);
-  if (typeof eventId !== "string") return eventId;
+  const explicitEvent = suppliedEventId(row);
+  if (typeof explicitEvent === "object" && explicitEvent && "reason" in explicitEvent) return explicitEvent;
+  const unit = context.units ? reportingUnitId(row) : null;
+  if (typeof unit === "object" && unit && "reason" in unit) return unit;
+  let eventId: string;
+  if (typeof explicitEvent === "string") {
+    eventId = explicitEvent;
+  } else if (typeof unit === "string" && context.units) {
+    // Germany results name a unit and not an event. The unit file supplies the event.
+    const owner = context.units.get(unit);
+    if (!owner) return { reason: "reporting_unit_unknown" };
+    if (owner.eventId == null) return { reason: "reporting_unit_has_no_event" };
+    eventId = owner.eventId;
+  } else {
+    return { reason: "missing_event_id" };
+  }
   const event = context.events.get(eventId);
   if (!event) return { reason: "event_not_in_pack" };
 
@@ -534,18 +674,14 @@ export function mapPackResult(
   }
 
   if (context.units) {
-    const unitA = Object.prototype.hasOwnProperty.call(row, "reporting_unit_id") ? text(row, "reporting_unit_id") : null;
-    const unitB = Object.prototype.hasOwnProperty.call(row, "unit_id") ? text(row, "unit_id") : null;
-    if (typeof unitA === "object" && unitA && "reason" in unitA) return unitA;
-    if (typeof unitB === "object" && unitB && "reason" in unitB) return unitB;
-    const left = typeof unitA === "string" && unitA.trim() ? unitA.trim() : null;
-    const right = typeof unitB === "string" && unitB.trim() ? unitB.trim() : null;
-    if (left && right && left !== right) return { reason: "reporting_unit_ambiguous" };
-    const unit = left ?? right;
-    if (unit) {
+    const unit = reportingUnitId(row);
+    if (typeof unit === "object" && unit && "reason" in unit) return unit;
+    if (typeof unit === "string") {
       const owner = context.units.get(unit);
       if (!owner) return { reason: "reporting_unit_unknown" };
-      if (owner !== eventId) return { reason: "reporting_unit_event_mismatch" };
+      // A unit file that names an event must agree with the result. A unit with
+      // no event_id is office/boundary scoped: this result's event_id is the link.
+      if (owner.eventId != null && owner.eventId !== eventId) return { reason: "reporting_unit_event_mismatch" };
     }
   }
 
@@ -559,19 +695,25 @@ export function mapPackResult(
   if ("reason" in votes) return votes;
   const seats = mapScalar(row.seats, row.seats_status, "seats");
   if ("reason" in seats) return seats;
-  const shareSource = Object.prototype.hasOwnProperty.call(row, "share")
-    ? row.share
-    : Object.prototype.hasOwnProperty.call(row, "published_percent")
-      ? row.published_percent
-      : Object.prototype.hasOwnProperty.call(row, "vote_percentage_source")
-        ? row.vote_percentage_source
-        : Object.prototype.hasOwnProperty.call(row, "percent_raw")
-          ? row.percent_raw
-          : null;
-  const shareStatusSource = Object.prototype.hasOwnProperty.call(row, "share_status") ? row.share_status : null;
-  const share = mapScalar(shareSource, shareStatusSource, "share");
+  const shareRead = readShare(row);
+  const coercedShare = coerceShare(shareRead.value);
+  // An unparseable percent string stays on raw_json. The typed share is unknown.
+  const shareStatusSource = coercedShare.unparsed
+    ? null
+    : Object.prototype.hasOwnProperty.call(row, "share_status")
+      ? row.share_status
+      : null;
+  const share = mapScalar(coercedShare.value, shareStatusSource, "share");
   if ("reason" in share) return share;
-  const shareUnit = mapShareUnit(row.share_unit, share.value, context.shareConvention);
+  // published_percent / percent_raw / vote_percentage_source, and a string marked
+  // with %, are already percentages. A bare numeric `share` with no unit stays unmapped.
+  const shareUnitToken =
+    row.share_unit != null && row.share_unit !== ""
+      ? row.share_unit
+      : (shareRead.fromPercentField || coercedShare.percentMarked) && share.value != null
+        ? "percent"
+        : row.share_unit;
+  const shareUnit = mapShareUnit(shareUnitToken, share.value, context.shareConvention);
   if (typeof shareUnit !== "string") return shareUnit;
   if (share.value != null && shareUnit === "percent_0_100" && share.value > 100) return { reason: "share_above_100" };
   if (share.value != null && shareUnit === "proportion_0_1" && share.value > 1) return { reason: "share_above_1" };
@@ -582,8 +724,8 @@ export function mapPackResult(
   const label =
     NON_CANDIDATE_KINDS.has(kind) || typeof labelValue !== "string" || !labelValue.trim() ? null : labelValue;
 
-  const partyLabel = optionalString(firstPresent(row, ["party_label", "original_party_label"]));
-  if (typeof partyLabel === "object" && partyLabel && "reason" in partyLabel) return partyLabel;
+  const party = readPartyLabel(row);
+  const partyLabel = party.value;
   const partyCode = optionalString(firstPresent(row, ["original_party_code", "political_nuance", "party_code"]));
   if (typeof partyCode === "object" && partyCode && "reason" in partyCode) return partyCode;
   const partyNamespace = optionalString(firstPresent(row, ["party_namespace"]));
@@ -613,6 +755,20 @@ export function mapPackResult(
     electedFlag,
     isSubstitute,
     evidenceStatus: enumOrUnknown(row.evidence_status, EVIDENCE),
+    flags: party.flag ? [party.flag] : [],
     source: row,
   };
+}
+
+/** A non-string party label, including numeric 0, is not a party name. */
+function readPartyLabel(row: Record<string, unknown>): { value: string | null; flag: string | null } {
+  for (const key of ["party_label", "original_party_label"]) {
+    if (!Object.prototype.hasOwnProperty.call(row, key)) continue;
+    const value = row[key];
+    if (value == null || value === "") return { value: null, flag: null };
+    if (typeof value !== "string") return { value: null, flag: `${key}_not_a_string` };
+    const trimmed = value.trim();
+    return { value: trimmed || null, flag: null };
+  }
+  return { value: null, flag: null };
 }
